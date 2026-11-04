@@ -12,6 +12,8 @@
   and lists nothing that isn't there.
 - Every marker named under "markers" (besides "default") is a grammar meaning
   in meaning/meanings.jsonl.
+- Every key under "cases" is a meaning there, and every value a grammar
+  meaning.
 """
 import json
 import sys
@@ -36,6 +38,14 @@ def grammar_meanings(root):
         return set()
     lines = path.read_text(encoding="utf-8").splitlines()[1:]
     return {m["id"] for m in map(json.loads, filter(None, lines)) if m.get("kind") == "grammar"}
+
+
+def all_meanings(root):
+    path = root / "meaning" / "meanings.jsonl"
+    if not path.is_file():
+        return set()
+    lines = path.read_text(encoding="utf-8").splitlines()[1:]
+    return {json.loads(line)["id"] for line in lines if line.strip()}
 
 
 def check(root=lib.ROOT):
@@ -69,6 +79,12 @@ def check(root=lib.ROOT):
         for marker in sorted(set(meta.get("markers") or {}) - {"default"}):
             if marker not in grammar:
                 problems.append(f"{rel}: markers names {marker!r}, which isn't a grammar meaning in meaning/meanings.jsonl")
+        known = all_meanings(root)
+        for key, case in sorted((meta.get("cases") or {}).items()):
+            if key not in known:
+                problems.append(f"{rel}: cases names {key!r}, which isn't a meaning in meaning/meanings.jsonl")
+            if case not in grammar:
+                problems.append(f"{rel}: cases gives {key!r} the case {case!r}, which isn't a grammar meaning")
 
         vdir = folder / "varieties"
         found = sorted(p.name for p in vdir.iterdir() if p.is_dir()) if vdir.is_dir() else []

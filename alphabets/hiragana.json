@@ -343,7 +343,7 @@
     },
     {
       "title": "Y row",
-      "note": "Only three sounds. The gaps are where yi and ye would be.",
+      "note": "Only three sounds. Japanese has no yi, and its old ye sound merged with e over a thousand years ago, so both cells stay empty.",
       "group": "Basic hiragana",
       "chars": [
         {
@@ -423,7 +423,7 @@
     },
     {
       "title": "W row and ん",
-      "note": "を is used only as the object particle. ん is the one kana with no vowel.",
+      "note": "を is used only as the object particle. ん is the one kana with no vowel. The empty cells once held ゐ and ゑ, which modern spelling no longer uses: see Historical kana.",
       "group": "Basic hiragana",
       "chars": [
         {
@@ -948,6 +948,30 @@
           "meaning": "hopping"
         }
       ]
+    },
+    {
+      "title": "Historical: ゐ and ゑ",
+      "note": "Kana that modern spelling dropped in 1946. You will still meet them in old books, names and shop signs, but you never need to write them. Both are said like い and え today.",
+      "group": "Historical kana",
+      "cols": 2,
+      "chars": [
+        {
+          "char": "ゐ",
+          "roman": "wi",
+          "hint": "historical; said i today, like い",
+          "example": "ゐど",
+          "exampleRoman": "ido",
+          "meaning": "a well (old spelling of いど)"
+        },
+        {
+          "char": "ゑ",
+          "roman": "we",
+          "hint": "historical; said e today, like え",
+          "example": "こゑ",
+          "exampleRoman": "koe",
+          "meaning": "voice (old spelling of こえ)"
+        }
+      ]
     }
   ],
   "articles": [
@@ -1010,6 +1034,10 @@
     {
       "title": "Punctuation and vertical writing",
       "body": "<p>Japanese punctuation is full width, one square like a kana:</p>\n<table>\n<tr><td lang=\"ja\">。</td><td>full stop (maru)</td></tr>\n<tr><td lang=\"ja\">、</td><td>comma (ten)</td></tr>\n<tr><td lang=\"ja\">「 」</td><td>quotation marks (kagi-kakko)</td></tr>\n<tr><td lang=\"ja\">・</td><td>middle dot, between foreign names: <span lang=\"ja\">ジョン・スミス</span></td></tr>\n<tr><td lang=\"ja\">〜</td><td>wave dash, for ranges: <span lang=\"ja\">3〜5</span></td></tr>\n</table>\n<p>Books, newspapers and manga are often written vertically: columns run top to bottom, and the columns go from right to left. Small kana sit in the upper right of their square, and the long-vowel bar turns vertical. The shapes of the kana do not change.</p>"
+    },
+    {
+      "title": "ゐ, ゑ and the missing ye",
+      "body": "<p>The W row once had five kana. Two of them, <span lang=\"ja\">ゐ</span> (wi) and <span lang=\"ja\">ゑ</span> (we), lost their w sound by about the 1200s and came to sound just like <span lang=\"ja\">い</span> and <span lang=\"ja\">え</span>. Writers kept spelling the old way for centuries, until the 1946 spelling reform replaced them with <span lang=\"ja\">い</span> and <span lang=\"ja\">え</span>. The same reform kept <span lang=\"ja\">を</span>, but only for the particle.</p>\n<table>\n<tr><td lang=\"ja\">ゐ ヰ</td><td>wi, now said i. Hiragana from 為, katakana from 井</td></tr>\n<tr><td lang=\"ja\">ゑ ヱ</td><td>we, now said e. Both from 恵</td></tr>\n</table>\n<p>Old spellings you may see: <span lang=\"ja\">ゐど</span> ido (well), <span lang=\"ja\">こゑ</span> koe (voice), <span lang=\"ja\">ゐる</span> iru (to be), and the katakana on bottles of <span lang=\"ja\">ウヰスキー</span> and <span lang=\"ja\">ヱビス</span>. Read them as if they were い and え.</p>\n<h3>What about ye?</h3>\n<p>Japanese did once have a separate ye sound. Eighth-century texts keep e and ye apart, but the two had merged before the end of the 900s, before hiragana settled into its standard set. So there has never been a standard kana for ye. Some Meiji-era textbooks made up shapes to fill the gap in the chart, and Unicode encodes them as archaic letters, but most fonts can't show them and no one writes with them.</p>\n<p>The merged sound was said ye for a long time afterwards, which is why old Western books write Yedo for Edo. Today a ye sound in a foreign word is written <span lang=\"ja\">イェ</span>.</p>"
     }
   ]
 }
