@@ -42,9 +42,9 @@ python3 tools/fmt.py        # format every content file in place
 | `check_strokes.py` | Stroke files: the set matches the file name, no character is listed twice, every stroke is path data a browser draws to the end and stays in the box, KanjiVG sets have a label per stroke, and stroke counts match the shared CJK table. The rendered check against a font runs in LanguageStudentDesk. |
 | `gen_strokes.py` | Generates the SquirrelGo apps' stroke files (Alphabets, Kana, Kanji, Bopomofo, Klingon, and the Android copies apps commit) from `strokes/`. `--check` reports drift. |
 | `migrate/lsd_strokes.py` | The one-time conversion of the apps' stroke files to `strokes@1` (needs node). |
-| `check_alphabets.py` | SquirrelGo Alphabets courses: the id matches the file name, no character is taught twice, every character has strokes in `strokes/<id>.jsonl`, and joined letter forms only go with right-to-left scripts. |
-| `gen_alphabets.py` | Generates SquirrelGo Alphabets' `www/data/<id>.js` course files from `alphabets/`. `--check` reports drift. |
-| `migrate/lsd_alphabets.py` | The one-time conversion of SquirrelGo Alphabets' course files to `alphabet@1` (needs node). |
+| `check_alphabets.py` | The character apps' courses: the id matches the file name, no character is taught twice, every character has strokes in `strokes/<id>.jsonl`, and joined letter forms only go with right-to-left scripts. Klingon letters also need a unique pIqaD code point and IPA. |
+| `gen_alphabets.py` | Generates the course files of SquirrelGo Alphabets (`www/data/<id>.js`), Kana (`kana.js`), Bopomofo (`bopomofo.js`, and its Android copy) and Klingon (`klingon.js`) from `alphabets/`. `--check` reports drift. |
+| `migrate/lsd_alphabets.py` | The one-time conversion of the character apps' course files to `alphabet@1` and `klingon@1` (needs node). |
 | `check_meaning.py` | The meaning matrix: meaning and sentence ids are unique, sentences and phrasings point at content meanings, and every language column renders known sentences with known meanings, carrying exactly each sentence's meanings. Reports unused meanings and sentences no column renders yet. |
 | `gen_meaning.py` | Generates LanguageStudentDesk's `translation-learner/data/matrix.js` and one `<language>.js` column per file in `meaning/columns/`. `--check` reports drift. |
 | `migrate/lsd_meaning.py` | The one-time conversion of LanguageStudentDesk's Translation Learner matrix and columns to `meaning@1`, `sentences@1`, `phrasings@1` and `columns@1` (needs node). |
