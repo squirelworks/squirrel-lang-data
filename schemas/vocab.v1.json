@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/squirelworks/squirrel-lang-data/schemas/vocab.v1.json",
+  "title": "vocab@1: a language's vocabulary decks",
+  "description": "languages/<id>/vocab.jsonl. The first line is the header, naming the language and its decks in teaching order; every later line is one word, in teaching order within its deck.",
+  "type": "object",
+  "properties": {
+    "header": {
+      "type": "object",
+      "required": ["schema", "language", "decks"],
+      "additionalProperties": false,
+      "properties": {
+        "schema": { "const": "vocab@1" },
+        "language": { "description": "The language (or variety) id; must match the folder.", "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+        "notes": { "description": "How the words are written and where they come from, one sentence or line each.", "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "source": { "description": "For imported words: the source, as listed in SOURCES.md.", "type": "string", "minLength": 1 },
+        "license": { "description": "For imported words: the source's license.", "type": "string", "minLength": 1 },
+        "decks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["id", "title"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+              "title": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "required": ["id", "deck", "word", "meaning"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "description": "Unique in the file: the deck id, a slash, and the word.", "type": "string", "minLength": 3 },
+        "deck": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "word": { "description": "The word as it is usually written.", "type": "string", "minLength": 1 },
+        "reading": { "description": "Romanization or kana reading. Languages written in the Latin alphabet leave it out.", "type": "string" },
+        "meaning": { "description": "English meaning; alternatives separated by semicolons.", "type": "string", "minLength": 1 },
+        "note": { "type": "string", "minLength": 1 },
+        "level": {
+          "description": "Level in each system that grades the word, e.g. {\"jlpt\": \"N5\"}, {\"hsk\": \"1\"}, {\"cefr\": \"A1\"}.",
+          "type": "object",
+          "additionalProperties": { "type": "string", "minLength": 1 }
+        },
+        "freq": { "description": "How common the word is.", "enum": ["core", "common", "rare"] },
+        "varieties": { "description": "Varieties the word belongs to, when it isn't the standard language's.", "type": "array", "items": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" }, "uniqueItems": true }
+      }
+    }
+  }
+}
