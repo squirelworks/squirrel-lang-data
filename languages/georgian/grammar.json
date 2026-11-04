@@ -1,0 +1,911 @@
+{
+  "schema": "grammar@1",
+  "language": "georgian",
+  "notes": [
+    "Georgian first grammar for the Grammar Learner. Written for this project.",
+    "Examples are [Georgian, romanization, English]; {braces} mark the point of the lesson.",
+    "Drills are { q, en, options, answer, why }; ＿ is the blank.",
+    "",
+    "Sources (open / educational; attested Georgian constructions — original example sentences):",
+    "- Wiktionary Georgian lemmas and conjugations (CC BY-SA): აქვს / მაქვს / გაქვს,",
+    "  უნდა / მინდა / გინდა, მიყვარს, შემიძლია, ყოფნა past ვიყავი / იყო / იყვნენ,",
+    "  დაწერს present/future/aorist (ვწერ, დავწერ, დავწერე / დაწერა) and ergative მან.",
+    "- Wikipedia “Georgian grammar”, “Georgian language” (CC BY-SA) for beginner overview",
+    "  of inverted (Class IV) verbs, screeves (present / future / aorist), and the ergative",
+    "  (-მა) case switch in the aorist series.",
+    "- In-repo languages/georgian/reference.json (cases, postpositions, to-be, inverted",
+    "  feelings/have/want) and vocab.js — same Desk pack lemmas; national romanization",
+    "  with apostrophe for ejectives matches lessons 1–6.",
+    "Lessons 1–6 unchanged; 7–12 deepen the same seam (have, want, can/love, past of “to",
+    "be”, aorist + -მა, future with preverb)."
+  ],
+  "title": "Georgian first grammar",
+  "intro": "Georgian has no articles and no grammatical gender: ის means he, she and it alike. Instead it packs a lot into the verb, which marks who does what with prefixes and endings, and it adds case endings and postpositions to nouns where English uses prepositions. Lessons 1–6 cover “to be”, this and that, plurals, the present tense, places with -ში, -ზე and -დან, and saying no and asking questions. Lessons 7–12 add “have” and “want”, can and love, the past of “to be”, the simple past with -მა, and the future with a preverb. The romanization is the national system; an apostrophe marks an ejective consonant (k', p', t', ts', ch', q'), and kh, gh are throaty sounds.",
+  "lessons": [
+    {
+      "id": "var",
+      "title": "ვარ, ხარ, არის — “to be”",
+      "particle": "ვარ",
+      "summary": "“Am / are / is”, which usually goes at the end.",
+      "sections": [
+        {
+          "p": "The verb “to be”: <b>ვარ</b> I am, <b>ხარ</b> you are, <b>არის</b> he/she/it is. It usually comes after the word it describes. Pronouns (მე I, შენ you, ის he/she) are often dropped.",
+          "examples": [
+            ["მე სტუდენტი {ვარ}.", "Me st'udent'i var.", "I am a student."],
+            ["სად {ხარ}?", "Sad khar?", "Where are you?"],
+            ["ის ექიმი {არის}.", "Is ekimi aris.", "He / she is a doctor."]
+          ]
+        },
+        {
+          "h": "Plural, and the short -ა",
+          "p": "<b>ვართ</b> we are, <b>ხართ</b> you are (several, or polite), <b>არიან</b> they are. In speech არის is often shortened to <b>-ა</b> on the end of the word: ეს წიგნი არის → ეს წიგნია.",
+          "examples": [
+            [
+              "ჩვენ მეგობრები {ვართ}.",
+              "Chven megobrebi vart.",
+              "We are friends."
+            ],
+            ["ეს ჩაი{ა}.", "Es chai-a.", "This is tea."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "მე ქართველი ＿.",
+          "en": "I am Georgian.",
+          "options": ["ვარ", "ხარ", "არის", "ვართ"],
+          "answer": "ვარ",
+          "why": "“I am” is ვარ."
+        },
+        {
+          "q": "შენ სად ＿?",
+          "en": "Where are you?",
+          "options": ["ხარ", "ვარ", "არის", "არიან"],
+          "answer": "ხარ",
+          "why": "“You are” (one person) is ხარ."
+        },
+        {
+          "q": "ნინო მასწავლებელი ＿.",
+          "en": "Nino is a teacher.",
+          "options": ["არის", "ვარ", "ხართ", "ვართ"],
+          "answer": "არის",
+          "why": "He or she: არის."
+        },
+        {
+          "q": "ისინი სახლში ＿.",
+          "en": "They are at home.",
+          "options": ["არიან", "არის", "ვართ", "ხარ"],
+          "answer": "არიან",
+          "why": "“They are” is არიან."
+        },
+        {
+          "q": "What does «ეს ყავაა» mean?",
+          "en": "ყავა = coffee",
+          "options": [
+            "This is coffee.",
+            "This coffee.",
+            "Is this coffee?",
+            "There is no coffee."
+          ],
+          "answer": "This is coffee.",
+          "why": "The final -ა is the short form of არის."
+        }
+      ]
+    },
+    {
+      "id": "es-is",
+      "title": "ეს, ის and “my”",
+      "particle": "ეს ის",
+      "summary": "No articles, no gender: this, that, and the possessives.",
+      "sections": [
+        {
+          "p": "Georgian has no word for “a” or “the”, and no he/she difference. <b>ეს</b> means “this”, and <b>ის</b> means “that” and also “he, she, it”.",
+          "examples": [
+            ["{ეს} რა არის?", "Es ra aris?", "What is this?"],
+            ["{ის} ჩემი ძმაა.", "Is chemi dzmaa.", "He is my brother."],
+            ["{ის} ჩემი დაა.", "Is chemi daa.", "She is my sister."]
+          ]
+        },
+        {
+          "h": "My, your, his",
+          "p": "<b>ჩემი</b> my, <b>შენი</b> your, <b>მისი</b> his / her, <b>ჩვენი</b> our, <b>თქვენი</b> your (plural, polite), <b>მათი</b> their. They come before the noun.",
+          "examples": [
+            [
+              "{ჩემი} სახელია ნინო.",
+              "Chemi sakhelia Nino.",
+              "My name is Nino."
+            ],
+            [
+              "{თქვენი} სახლი ლამაზია.",
+              "Tkveni sakhli lamazia.",
+              "Your house is beautiful."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ჩემი წიგნია.",
+          "en": "This is my book.",
+          "options": ["ეს", "ის", "რა", "ვინ"],
+          "answer": "ეს",
+          "why": "ეს = this."
+        },
+        {
+          "q": "How do you say “he” in Georgian?",
+          "en": "",
+          "options": ["ის", "ეს", "მე", "შენ"],
+          "answer": "ის",
+          "why": "ის covers he, she, it and “that”."
+        },
+        {
+          "q": "＿ მეგობარი",
+          "en": "your friend (to one friend)",
+          "options": ["შენი", "ჩემი", "მისი", "მათი"],
+          "answer": "შენი",
+          "why": "შენი = your (one person)."
+        },
+        {
+          "q": "＿ სახელი რა არის?",
+          "en": "What is your name? (polite)",
+          "options": ["თქვენი", "შენი", "ჩემი", "მისი"],
+          "answer": "თქვენი",
+          "why": "Polite “your” is თქვენი."
+        },
+        {
+          "q": "How do you say “the city” (ქალაქი)?",
+          "en": "",
+          "options": ["ქალაქი", "ეს ქალაქი ის", "ის-ქალაქი", "ქალაქმა"],
+          "answer": "ქალაქი",
+          "why": "No articles: ქალაქი is both “a city” and “the city”."
+        }
+      ]
+    },
+    {
+      "id": "plural",
+      "title": "Plurals with -ები",
+      "particle": "-ები",
+      "summary": "Drop the final -ი and add -ები; after a number, keep the singular.",
+      "sections": [
+        {
+          "p": "Most nouns make the plural with <b>-ები</b>. A noun in -ი drops it first; a noun in -ა keeps it.",
+          "examples": [
+            ["წიგნი → წიგნ{ები}", "ts'igni → ts'ignebi", "book → books"],
+            ["ბავშვი → ბავშვ{ები}", "bavshvi → bavshvebi", "child → children"],
+            ["მაგიდა → მაგიდ{ები}", "magida → magidebi", "table → tables"]
+          ]
+        },
+        {
+          "h": "Numbers take the singular",
+          "p": "After a number, or a word like რამდენი (how many) or ბევრი (many), the noun stays singular: <b>ორი წიგნი</b> “two books”.",
+          "examples": [
+            ["{ორი} ბავშვი", "ori bavshvi", "two children"],
+            [
+              "{სამი} ყავა, თუ შეიძლება.",
+              "Sami q'ava, tu sheidzleba.",
+              "Three coffees, please."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "კაცი → ＿",
+          "en": "man → men",
+          "options": ["კაცები", "კაციები", "კაცი", "კაცებია"],
+          "answer": "კაცები",
+          "why": "Drop -ი and add -ები."
+        },
+        {
+          "q": "ქალი → ＿",
+          "en": "woman → women",
+          "options": ["ქალები", "ქალიები", "ქალი", "ქალეი"],
+          "answer": "ქალები",
+          "why": "Same rule: ქალ + ები."
+        },
+        {
+          "q": "ხუთი ＿",
+          "en": "five books",
+          "options": ["წიგნი", "წიგნები", "წიგნებს", "წიგნია"],
+          "answer": "წიგნი",
+          "why": "After a number the noun stays singular."
+        },
+        {
+          "q": "ეს ჩემი ＿ არიან.",
+          "en": "These are my friends. (მეგობარი)",
+          "options": ["მეგობრები", "მეგობარები", "მეგობარი", "მეგობრი"],
+          "answer": "მეგობრები",
+          "why": "მეგობარი loses its last vowel before the ending: მეგობრები."
+        },
+        {
+          "q": "Which is “many books”?",
+          "en": "ბევრი = many",
+          "options": ["ბევრი წიგნი", "ბევრი წიგნები", "წიგნები ბევრი", "ბევრები წიგნი"],
+          "answer": "ბევრი წიგნი",
+          "why": "Like numbers, ბევრი takes a singular noun."
+        }
+      ]
+    },
+    {
+      "id": "present",
+      "title": "The present tense",
+      "particle": "ვ- -ს -თ",
+      "summary": "ვ- marks “I” at the front; -ს, -თ and -ენ mark the others at the end.",
+      "sections": [
+        {
+          "p": "Many verbs follow one pattern. For წერ “write”: <b>ვ</b>წერ I write, წერ you write, წერ<b>ს</b> he/she writes, <b>ვ</b>წერ<b>თ</b> we write, წერ<b>თ</b> you write (plural), წერ<b>ენ</b> they write.",
+          "examples": [
+            [
+              "{ვ}ცხოვრობ თბილისში.",
+              "Vtskhovrob Tbilisshi.",
+              "I live in Tbilisi."
+            ],
+            [
+              "ის ქართულად ლაპარაკობ{ს}.",
+              "Is kartulad lap'arak'obs.",
+              "He / she speaks Georgian."
+            ],
+            [
+              "ბავშვები თამაშობ{ენ}.",
+              "Bavshvebi tamashoben.",
+              "The children are playing."
+            ]
+          ]
+        },
+        {
+          "h": "Asking with “you”",
+          "p": "The “you” form has no marker at all, so the bare stem is a question to one person: <b>ლაპარაკობ ინგლისურად?</b> “Do you speak English?” Add -თ for polite or plural you.",
+          "examples": [
+            [
+              "ინგლისურად ლაპარაკობ{თ}?",
+              "Inglisurad lap'arak'obt?",
+              "Do you speak English? (polite)"
+            ],
+            ["ყავას {ვ}სვამ.", "Q'avas vsvam.", "I am drinking coffee."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "მე წერილს ＿.",
+          "en": "I am writing a letter.",
+          "options": ["ვწერ", "წერ", "წერს", "წერენ"],
+          "answer": "ვწერ",
+          "why": "ვ- at the front marks “I”."
+        },
+        {
+          "q": "ნიკა ჩაის ＿.",
+          "en": "Nika drinks tea.",
+          "options": ["სვამს", "ვსვამ", "სვამ", "სვამენ"],
+          "answer": "სვამს",
+          "why": "He or she: -ს at the end."
+        },
+        {
+          "q": "ჩვენ ქუთაისში ＿.",
+          "en": "We live in Kutaisi.",
+          "options": ["ვცხოვრობთ", "ვცხოვრობ", "ცხოვრობს", "ცხოვრობენ"],
+          "answer": "ვცხოვრობთ",
+          "why": "We: ვ- at the front and -თ at the end."
+        },
+        {
+          "q": "ისინი ქართულად ＿.",
+          "en": "They speak Georgian.",
+          "options": ["ლაპარაკობენ", "ლაპარაკობს", "ვლაპარაკობ", "ლაპარაკობთ"],
+          "answer": "ლაპარაკობენ",
+          "why": "They: -ენ."
+        },
+        {
+          "q": "შენ რას ＿?",
+          "en": "What are you eating? (ჭამ-)",
+          "options": ["ჭამ", "ვჭამ", "ჭამს", "ჭამენ"],
+          "answer": "ჭამ",
+          "why": "“You” (one person) is the bare stem."
+        }
+      ]
+    },
+    {
+      "id": "places",
+      "title": "In, on and from: -ში, -ზე, -დან",
+      "particle": "-ში -ზე",
+      "summary": "Where English uses a preposition, Georgian adds an ending to the noun.",
+      "sections": [
+        {
+          "p": "<b>-ში</b> means “in” or “to”, and <b>-ზე</b> means “on” or “about”. A noun in -ი drops it first: სახლი → სახლ<b>ში</b>. A noun in -ა keeps it: მაგიდა → მაგიდა<b>ზე</b>.",
+          "examples": [
+            [
+              "თბილის{ში} ვცხოვრობ.",
+              "Tbilisshi vtskhovrob.",
+              "I live in Tbilisi."
+            ],
+            [
+              "წიგნი მაგიდა{ზე}ა.",
+              "Ts'igni magidazea.",
+              "The book is on the table."
+            ],
+            [
+              "სკოლა{ში} მივდივარ.",
+              "Sk'olashi mivdivar.",
+              "I'm going to school."
+            ]
+          ]
+        },
+        {
+          "h": "From: -დან",
+          "p": "<b>-დან</b> means “from”. It follows the -ი that most names and nouns end in: თბილისი → თბილისი<b>დან</b>, ლონდონი → ლონდონი<b>დან</b>. საიდან? means “from where?”.",
+          "examples": [
+            [
+              "საიდან ხარ? — ბათუმი{დან}.",
+              "Saidan khar? — Batumidan.",
+              "Where are you from? — From Batumi."
+            ],
+            ["ლონდონი{დან} ვარ.", "Londonidan var.", "I'm from London."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ის სახლ＿ არის.",
+          "en": "She is at home (in the house).",
+          "options": ["ში", "ზე", "დან", "ს"],
+          "answer": "ში",
+          "why": "-ში = in."
+        },
+        {
+          "q": "ჩანთა სკამ＿ა.",
+          "en": "The bag is on the chair. (სკამი)",
+          "options": ["ზე", "ში", "დან", "ებს"],
+          "answer": "ზე",
+          "why": "-ზე = on; სკამი drops its -ი."
+        },
+        {
+          "q": "მე ბერლინი＿ ვარ.",
+          "en": "I am from Berlin.",
+          "options": ["დან", "ში", "ზე", "ს"],
+          "answer": "დან",
+          "why": "-დან = from."
+        },
+        {
+          "q": "How do you say “in the city” (ქალაქი)?",
+          "en": "",
+          "options": ["ქალაქში", "ქალაქიში", "ქალაქზე", "ქალაქიდან"],
+          "answer": "ქალაქში",
+          "why": "Drop -ი, add -ში."
+        },
+        {
+          "q": "საიდან ხარ?",
+          "en": "What is this question?",
+          "options": [
+            "Where are you from?",
+            "Where are you?",
+            "Who are you?",
+            "How are you?"
+          ],
+          "answer": "Where are you from?",
+          "why": "საიდან = from where; სად alone is “where”."
+        }
+      ]
+    },
+    {
+      "id": "ar-questions",
+      "title": "არ, ვერ and questions",
+      "particle": "არ ვერ",
+      "summary": "არ is “not”, ვერ is “can't”, and question words go before the verb.",
+      "sections": [
+        {
+          "p": "Put <b>არ</b> just before the verb for “not”. <b>ვერ</b> means “cannot”. The answers yes and no are <b>კი</b> (or polite <b>დიახ</b>) and <b>არა</b>.",
+          "examples": [
+            ["{არ} ვიცი.", "Ar vitsi.", "I don't know."],
+            ["{არ} მესმის.", "Ar mesmis.", "I don't understand."],
+            ["{ვერ} მოვდივარ.", "Ver movdivar.", "I can't come."]
+          ]
+        },
+        {
+          "h": "Question words",
+          "p": "<b>რა</b> what, <b>ვინ</b> who, <b>სად</b> where, <b>როდის</b> when, <b>რატომ</b> why, <b>როგორ</b> how, <b>რამდენი</b> how many / how much. A yes/no question is a statement with a rising voice.",
+          "examples": [
+            ["{როგორ} ხარ?", "Rogor khar?", "How are you?"],
+            ["{რამდენი} ღირს?", "Ramdeni ghirs?", "How much does it cost?"],
+            ["{ვინ} არის ეს?", "Vin aris es?", "Who is this?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "მე ＿ მესმის.",
+          "en": "I don't understand.",
+          "options": ["არ", "არა", "ვერ", "კი"],
+          "answer": "არ",
+          "why": "არ before the verb = not. არა is the answer “no”."
+        },
+        {
+          "q": "＿ ხარ?",
+          "en": "How are you?",
+          "options": ["როგორ", "სად", "ვინ", "რა"],
+          "answer": "როგორ",
+          "why": "როგორ = how."
+        },
+        {
+          "q": "ტუალეტი ＿ არის?",
+          "en": "Where is the toilet?",
+          "options": ["სად", "როდის", "რატომ", "რამდენი"],
+          "answer": "სად",
+          "why": "სად = where."
+        },
+        {
+          "q": "Polite “yes” is…",
+          "en": "",
+          "options": ["დიახ", "არა", "არ", "ვერ"],
+          "answer": "დიახ",
+          "why": "დიახ is polite yes; კი is everyday yes."
+        },
+        {
+          "q": "ის დღეს ＿ მოდის.",
+          "en": "He isn't coming today.",
+          "options": ["არ", "არა", "კი", "დიახ"],
+          "answer": "არ",
+          "why": "არ goes right before the verb. არა and კი are answers on their own."
+        }
+      ]
+    },
+    {
+      "id": "makvs",
+      "title": "მაქვს — “I have”",
+      "particle": "მაქვს",
+      "summary": "Having is an inverted verb: the prefix marks the owner, not a nominative “I”.",
+      "sections": [
+        {
+          "p": "Georgian does not conjugate “have” like English. <b>მაქვს</b> is “I have”, <b>გაქვს</b> “you have”, <b>აქვს</b> “he / she has”. The thing owned stays nominative: მე წიგნი მაქვს, literally “to me a book is-had”. Pronouns are often dropped.",
+          "examples": [
+            ["წიგნი {მაქვს}.", "Ts'igni makvs.", "I have a book."],
+            ["ყავა {გაქვს}?", "Q'ava gakvs?", "Do you have coffee?"],
+            [
+              "ნინოს მანქანა {აქვს}.",
+              "Ninos mankana akvs.",
+              "Nino has a car."
+            ]
+          ]
+        },
+        {
+          "h": "We, you (plural), they — and “not have”",
+          "p": "<b>გვაქვს</b> we have, <b>გაქვთ</b> you have (plural or polite), <b>აქვთ</b> they have. Put <b>არ</b> before the verb for “don't have”: არ მაქვს.",
+          "examples": [
+            ["ბილეთები {გვაქვს}.", "Biletebi gvakvs.", "We have tickets."],
+            ["დრო {არ} მაქვს.", "Dro ar makvs.", "I don't have time."],
+            ["კითხვები {აქვთ}.", "K'itkhvebi akvt.", "They have questions."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "მე სახლი ＿.",
+          "en": "I have a house.",
+          "options": ["მაქვს", "გაქვს", "აქვს", "გვაქვს"],
+          "answer": "მაქვს",
+          "why": "მ- marks “me” as the owner: მაქვს."
+        },
+        {
+          "q": "შენ ფული ＿?",
+          "en": "Do you have money?",
+          "options": ["გაქვს", "მაქვს", "აქვს", "აქვთ"],
+          "answer": "გაქვს",
+          "why": "გ- marks “you”: გაქვს."
+        },
+        {
+          "q": "ის დრო ＿.",
+          "en": "He / she has time.",
+          "options": ["აქვს", "მაქვს", "გაქვს", "გვაქვს"],
+          "answer": "აქვს",
+          "why": "Third person singular “has” is აქვს."
+        },
+        {
+          "q": "ჩვენ ბილეთები ＿.",
+          "en": "We have tickets.",
+          "options": ["გვაქვს", "მაქვს", "აქვს", "გაქვს"],
+          "answer": "გვაქვს",
+          "why": "გვ- marks “us”: გვაქვს."
+        },
+        {
+          "q": "დრო ＿ მაქვს.",
+          "en": "I don't have time.",
+          "options": ["არ", "არა", "ვერ", "კი"],
+          "answer": "არ",
+          "why": "არ before მაქვს negates “have”."
+        }
+      ]
+    },
+    {
+      "id": "minda",
+      "title": "მინდა — “I want”",
+      "particle": "მინდა",
+      "summary": "Wanting uses the same inverted pattern; the thing wanted can be a noun or a verbal noun.",
+      "sections": [
+        {
+          "p": "<b>მინდა</b> I want, <b>გინდა</b> you want, <b>უნდა</b> he / she wants. Like მაქვს, the experiencer is marked on the verb. You can want a thing: მინდა ყავა.",
+          "examples": [
+            ["ყავა {მინდა}.", "Q'ava minda.", "I want coffee."],
+            ["რა {გინდა}?", "Ra ginda?", "What do you want?"],
+            [
+              "ნიკას წყალი {უნდა}.",
+              "Nik'as ts'q'ali unda.",
+              "Nika wants water."
+            ]
+          ]
+        },
+        {
+          "h": "Wanting to do something — and “must”",
+          "p": "After მინდა you can put a verbal noun (masdar): <b>მინდა წასვლა</b> “I want to go”, <b>მინდა ჭამა</b> “I want to eat”. The same word <b>უნდა</b> also works as “must / should” before a verb: უნდა წავიდე “I must go”. Context tells which reading is meant.",
+          "examples": [
+            ["{მინდა} წასვლა.", "Minda ts'asvla.", "I want to go."],
+            ["{გინდა} ჭამა?", "Ginda ch'ama?", "Do you want to eat?"],
+            ["{უნდა} წავიდე.", "Unda ts'avide.", "I must / should go."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "მე ჩაი ＿.",
+          "en": "I want tea.",
+          "options": ["მინდა", "გინდა", "უნდა", "მაქვს"],
+          "answer": "მინდა",
+          "why": "მინდა = I want."
+        },
+        {
+          "q": "შენ რა ＿?",
+          "en": "What do you want?",
+          "options": ["გინდა", "მინდა", "მაქვს", "გაქვს"],
+          "answer": "გინდა",
+          "why": "გინდა = you want."
+        },
+        {
+          "q": "ის წყალს ＿.",
+          "en": "He / she wants water.",
+          "options": ["უნდა", "მინდა", "გინდა", "აქვს"],
+          "answer": "უნდა",
+          "why": "უნდა is “he / she wants” (and can also mean “must”)."
+        },
+        {
+          "q": "მინდა ＿.",
+          "en": "I want to go. (წასვლა)",
+          "options": ["წასვლა", "მივდივარ", "წავედი", "სად"],
+          "answer": "წასვლა",
+          "why": "After მინდა, use the verbal noun წასვლა."
+        },
+        {
+          "q": "What does «უნდა წავიდე» mean?",
+          "en": "",
+          "options": ["I must go.", "I went.", "I have gone.", "I don't go."],
+          "answer": "I must go.",
+          "why": "უნდა before a verb often means must / should."
+        }
+      ]
+    },
+    {
+      "id": "shemidzlia",
+      "title": "შემიძლია and მიყვარს — can and love",
+      "particle": "შემიძლია",
+      "summary": "Ability and feelings are inverted too: the prefix marks who can, or who loves.",
+      "sections": [
+        {
+          "p": "<b>შემიძლია</b> I can / I am able, <b>შეგიძლია</b> you can, <b>შეუძლია</b> he / she can. Put a verbal noun after it, or an optative verb form: შემიძლია ქართულად ლაპარაკი “I can speak Georgian”.",
+          "examples": [
+            [
+              "ქართულად ლაპარაკი {შემიძლია}.",
+              "Kartulad lap'arak'i shemidzlia.",
+              "I can speak Georgian."
+            ],
+            [
+              "დახმარება {შეგიძლია}?",
+              "Dakhmaraba shegidzlia?",
+              "Can you help?"
+            ],
+            [
+              "ქართულად სიმღერა {შეუძლია}.",
+              "Kartulad simghera sheudzlia.",
+              "He / she can sing in Georgian."
+            ]
+          ]
+        },
+        {
+          "h": "Love: მიყვარს",
+          "p": "<b>მიყვარს</b> I love, <b>გიყვარს</b> you love, <b>უყვარს</b> he / she loves. The loved person or thing is nominative: მიყვარს საქართველო. Negate with არ: არ მიყვარს.",
+          "examples": [
+            [
+              "საქართველო {მიყვარს}.",
+              "Sakartvelo miq'vars.",
+              "I love Georgia."
+            ],
+            [
+              "რომანი {გიყვარს}?",
+              "Romani giq'vars?",
+              "Do you love the novel? / Do you like the novel?"
+            ],
+            [
+              "ნინოს ძმა {უყვარს}.",
+              "Ninos dzma uq'vars.",
+              "Nino loves her brother."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ინგლისურად ლაპარაკი ＿.",
+          "en": "I can speak English.",
+          "options": ["შემიძლია", "შეგიძლია", "შეუძლია", "მინდა"],
+          "answer": "შემიძლია",
+          "why": "შემიძლია = I can."
+        },
+        {
+          "q": "დახმარება ＿?",
+          "en": "Can you help?",
+          "options": ["შეგიძლია", "შემიძლია", "შეუძლია", "გინდა"],
+          "answer": "შეგიძლია",
+          "why": "შეგიძლია = you can."
+        },
+        {
+          "q": "საქართველო ＿.",
+          "en": "I love Georgia.",
+          "options": ["მიყვარს", "გიყვარს", "უყვარს", "მაქვს"],
+          "answer": "მიყვარს",
+          "why": "მიყვარს = I love."
+        },
+        {
+          "q": "ნიკას ეს ქალაქი ＿.",
+          "en": "Nika loves this city.",
+          "options": ["უყვარს", "მიყვარს", "გიყვარს", "აქვს"],
+          "answer": "უყვარს",
+          "why": "უყვარს = he / she loves."
+        },
+        {
+          "q": "How do you say “I can't”?",
+          "en": "use არ + შემიძლია",
+          "options": ["არ შემიძლია", "არა შემიძლია", "ვერ მინდა", "არ მიყვარს"],
+          "answer": "არ შემიძლია",
+          "why": "არ before შემიძლია negates ability."
+        }
+      ]
+    },
+    {
+      "id": "iqo",
+      "title": "იყო — “was” and “were”",
+      "particle": "იყო",
+      "summary": "The past of “to be” changes for person; იყო is he / she / it was.",
+      "sections": [
+        {
+          "p": "Past of “to be”: <b>ვიყავი</b> I was, <b>იყავი</b> you were, <b>იყო</b> he / she / it was. Place and description still follow the same pattern as the present, only the verb changes.",
+          "examples": [
+            [
+              "გუშინ სახლში {ვიყავი}.",
+              "Gushin sakhlshi viq'avi.",
+              "Yesterday I was at home."
+            ],
+            ["სად {იყავი}?", "Sad iq'avi?", "Where were you?"],
+            [
+              "ის მასწავლებელი {იყო}.",
+              "Is masts'avlebeli iq'o.",
+              "He / she was a teacher."
+            ]
+          ]
+        },
+        {
+          "h": "Plural “were”",
+          "p": "<b>ვიყავით</b> we were, <b>იყავით</b> you were (plural or polite), <b>იყვნენ</b> they were (people). For things, third-person plural often stays <b>იყო</b>.",
+          "examples": [
+            [
+              "ჩვენ მეგობრები {ვიყავით}.",
+              "Chven megobrebi viq'avit.",
+              "We were friends."
+            ],
+            [
+              "ისინი თბილისში {იყვნენ}.",
+              "Isini Tbilisshi iq'vnen.",
+              "They were in Tbilisi."
+            ],
+            [
+              "წიგნები მაგიდაზე {იყო}.",
+              "Ts'ignebi magidaze iq'o.",
+              "The books were on the table."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "გუშინ სახლში ＿.",
+          "en": "Yesterday I was at home.",
+          "options": ["ვიყავი", "იყავი", "იყო", "ვარ"],
+          "answer": "ვიყავი",
+          "why": "ვიყავი = I was."
+        },
+        {
+          "q": "შენ სად ＿?",
+          "en": "Where were you?",
+          "options": ["იყავი", "ვიყავი", "იყო", "ხარ"],
+          "answer": "იყავი",
+          "why": "იყავი = you were (one person)."
+        },
+        {
+          "q": "ნინო ექიმი ＿.",
+          "en": "Nino was a doctor.",
+          "options": ["იყო", "ვიყავი", "არის", "იყვნენ"],
+          "answer": "იყო",
+          "why": "იყო = he / she was."
+        },
+        {
+          "q": "ჩვენ სტუდენტები ＿.",
+          "en": "We were students.",
+          "options": ["ვიყავით", "ვიყავი", "იყავით", "იყვნენ"],
+          "answer": "ვიყავით",
+          "why": "ვიყავით = we were."
+        },
+        {
+          "q": "ისინი ბათუმში ＿.",
+          "en": "They were in Batumi.",
+          "options": ["იყვნენ", "იყო", "ვიყავით", "არიან"],
+          "answer": "იყვნენ",
+          "why": "იყვნენ = they (people) were."
+        }
+      ]
+    },
+    {
+      "id": "aorist-ma",
+      "title": "დაწერა and -მა — the simple past",
+      "particle": "-მა",
+      "summary": "The aorist finishes an action; the subject of many past verbs takes -მა.",
+      "sections": [
+        {
+          "p": "The aorist is Georgian's everyday “did it” past. For “write” with the preverb და-: <b>დავწერე</b> I wrote, <b>დაწერე</b> you wrote, <b>დაწერა</b> he / she wrote. The same preverb shows up again in the future lesson.",
+          "examples": [
+            ["წერილი {დავწერე}.", "Ts'erili davts'ere.", "I wrote a letter."],
+            ["რა {დაწერე}?", "Ra dats'ere?", "What did you write?"],
+            [
+              "ნიკამ წერილი {დაწერა}.",
+              "Nik'am ts'erili dats'era.",
+              "Nika wrote a letter."
+            ]
+          ]
+        },
+        {
+          "h": "The ergative -მა",
+          "p": "In the aorist of most transitive verbs, the subject takes <b>-მა</b> (or <b>-მ</b> after a vowel): კაცი → <b>კაცმა</b>, ნინო → <b>ნინომ</b>. The pronoun ის becomes <b>მან</b> “he / she (did)”. Present-tense subjects stay nominative; this case switch is new in the past.",
+          "examples": [
+            [
+              "{კაცმა} წიგნი დაწერა.",
+              "K'atsma ts'igni dats'era.",
+              "The man wrote a book."
+            ],
+            [
+              "{მან} გუშინ დაწერა.",
+              "Man gushin dats'era.",
+              "He / she wrote yesterday."
+            ],
+            [
+              "{ნინომ} სახელი დაწერა.",
+              "Ninom sakheli dats'era.",
+              "Nino wrote the name."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "მე წერილი ＿.",
+          "en": "I wrote a letter.",
+          "options": ["დავწერე", "დაწერა", "ვწერ", "დავწერ"],
+          "answer": "დავწერე",
+          "why": "დავწერე is “I wrote” (aorist)."
+        },
+        {
+          "q": "ის / მან წერილი ＿.",
+          "en": "He / she wrote a letter.",
+          "options": ["დაწერა", "დავწერე", "წერს", "დაწერს"],
+          "answer": "დაწერა",
+          "why": "დაწერა is “he / she wrote”."
+        },
+        {
+          "q": "＿ წიგნი დაწერა.",
+          "en": "The man wrote a book. (კაცი)",
+          "options": ["კაცმა", "კაცი", "კაცს", "კაცის"],
+          "answer": "კაცმა",
+          "why": "Aorist transitive subject takes -მა: კაცმა."
+        },
+        {
+          "q": "How do you say “he / she” as past subject?",
+          "en": "not ის here",
+          "options": ["მან", "ის", "მას", "მისი"],
+          "answer": "მან",
+          "why": "Ergative of ის is მან."
+        },
+        {
+          "q": "ნინო → ＿ დაწერა.",
+          "en": "Nino wrote…",
+          "options": ["ნინომ", "ნინო", "ნინოს", "ნინოში"],
+          "answer": "ნინომ",
+          "why": "After a vowel the ergative is often -მ: ნინომ."
+        }
+      ]
+    },
+    {
+      "id": "future",
+      "title": "დავწერ — the future",
+      "particle": "და-",
+      "summary": "Many futures keep the present person markers and add a preverb such as და-.",
+      "sections": [
+        {
+          "p": "The future of “write” adds the preverb <b>და-</b> to the present pattern: <b>დავწერ</b> I will write, <b>დაწერ</b> you will write, <b>დაწერს</b> he / she will write. Compare present ვწერ “I write” with future დავწერ “I will write”.",
+          "examples": [
+            [
+              "ხვალ წერილს {დავწერ}.",
+              "Khval ts'erils davts'er.",
+              "Tomorrow I will write a letter."
+            ],
+            ["რას {დაწერ}?", "Ras dats'er?", "What will you write?"],
+            [
+              "ის წიგნს {დაწერს}.",
+              "Is ts'igns dats'ers.",
+              "He / she will write a book."
+            ]
+          ]
+        },
+        {
+          "h": "We / they — and “will not”",
+          "p": "<b>დავწერთ</b> we will write, <b>დაწერთ</b> you will write (plural), <b>დაწერენ</b> they will write. Negate with <b>არ</b> before the verb: არ დავწერ. The subject stays nominative in the future (no -მა).",
+          "examples": [
+            [
+              "ჩვენ ერთად {დავწერთ}.",
+              "Chven ertad davts'ert.",
+              "We will write together."
+            ],
+            [
+              "ისინი პასუხს {დაწერენ}.",
+              "Isini p'asukhs dats'eren.",
+              "They will write the answer."
+            ],
+            [
+              "დღეს {არ} დავწერ.",
+              "Dghes ar davts'er.",
+              "I will not write today."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ხვალ წერილს ＿.",
+          "en": "Tomorrow I will write a letter.",
+          "options": ["დავწერ", "დავწერე", "ვწერ", "დაწერა"],
+          "answer": "დავწერ",
+          "why": "დავწერ = I will write."
+        },
+        {
+          "q": "ის წიგნს ＿.",
+          "en": "He / she will write a book.",
+          "options": ["დაწერს", "დაწერა", "წერს", "დავწერ"],
+          "answer": "დაწერს",
+          "why": "დაწერს = he / she will write."
+        },
+        {
+          "q": "ჩვენ ერთად ＿.",
+          "en": "We will write together.",
+          "options": ["დავწერთ", "დავწერ", "დავწერეთ", "ვწერთ"],
+          "answer": "დავწერთ",
+          "why": "დავწერთ = we will write."
+        },
+        {
+          "q": "ისინი პასუხს ＿.",
+          "en": "They will write the answer.",
+          "options": ["დაწერენ", "დაწერეს", "წერენ", "დაწერს"],
+          "answer": "დაწერენ",
+          "why": "დაწერენ = they will write."
+        },
+        {
+          "q": "დღეს ＿ დავწერ.",
+          "en": "I will not write today.",
+          "options": ["არ", "არა", "ვერ", "მა"],
+          "answer": "არ",
+          "why": "არ before the future verb means “will not”."
+        }
+      ]
+    }
+  ]
+}

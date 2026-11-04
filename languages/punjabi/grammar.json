@@ -1,0 +1,441 @@
+{
+  "schema": "grammar@1",
+  "language": "punjabi",
+  "notes": [
+    "Punjabi first grammar for the Grammar Learner. Written for this project.",
+    "Examples are [Punjabi in Gurmukhi, transliteration, English]; {braces} mark the point of the lesson.",
+    "Drills are { q, en, options, answer, why }; ＿ is the blank."
+  ],
+  "title": "Punjabi first grammar",
+  "intro": "Punjabi puts the verb at the end, uses postpositions after the noun, and gives every noun a gender that adjectives and verbs follow. It is also tonal: a few letters (ਘ, ਝ, ਢ, ਧ, ਭ and ਹ inside a word) change the pitch of the syllable instead of being said with a breath. These lessons cover “to be”, word order and questions, gender, the present tense, postpositions, and ਦਾ / ਦੀ / ਦੇ for “of”. The transliteration is simplified: a long vowel is doubled (aa, ii, uu) and n after a vowel marks a nasal sound.",
+  "lessons": [
+    {
+      "id": "hona",
+      "title": "ਹਾਂ, ਹੈ, ਹੋ, ਹਨ — “to be”",
+      "particle": "ਹੋਣਾ",
+      "summary": "“Am / is / are” changes with the subject and goes at the end.",
+      "sections": [
+        {
+          "p": "The verb ਹੋਣਾ (to be) comes last and agrees with the subject: <b>ਮੈਂ … ਹਾਂ</b> I am, <b>ਤੂੰ … ਹੈਂ</b> you are (intimate), <b>ਉਹ … ਹੈ</b> he/she is, <b>ਅਸੀਂ … ਹਾਂ</b> we are, <b>ਤੁਸੀਂ … ਹੋ</b> you are (polite or plural), <b>ਉਹ … ਹਨ</b> they are.",
+          "examples": [
+            [
+              "ਮੈਂ ਵਿਦਿਆਰਥੀ {ਹਾਂ}।",
+              "Main vidiaarthii haan.",
+              "I am a student."
+            ],
+            [
+              "ਤੁਸੀਂ ਕਿੱਥੋਂ {ਹੋ}?",
+              "Tusiin kitthon ho?",
+              "Where are you from?"
+            ],
+            ["ਉਹ ਡਾਕਟਰ {ਹੈ}।", "Uh daaktar hai.", "He / she is a doctor."]
+          ]
+        },
+        {
+          "h": "Polite “you”",
+          "p": "<b>ਤੁਸੀਂ</b> is the polite “you”, used for one person or several, and takes ਹੋ. Use it with anyone you don't know well. Plural or respectful “he / she” takes ਹਨ.",
+          "examples": [
+            ["ਤੁਸੀਂ ਕਿਵੇਂ {ਹੋ}?", "Tusiin kiven ho?", "How are you?"],
+            [
+              "ਉਹ ਮੇਰੇ ਦੋਸਤ {ਹਨ}।",
+              "Uh mere dost han.",
+              "They are my friends."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ਮੈਂ ਪੰਜਾਬੀ ＿।",
+          "en": "I am Punjabi.",
+          "options": ["ਹਾਂ", "ਹੈ", "ਹੋ", "ਹਨ"],
+          "answer": "ਹਾਂ",
+          "why": "ਮੈਂ (I) takes ਹਾਂ."
+        },
+        {
+          "q": "ਇਹ ਮੇਰਾ ਘਰ ＿।",
+          "en": "This is my house.",
+          "options": ["ਹੈ", "ਹਾਂ", "ਹੋ", "ਹਨ"],
+          "answer": "ਹੈ",
+          "why": "One thing: ਹੈ."
+        },
+        {
+          "q": "ਤੁਸੀਂ ਠੀਕ ＿?",
+          "en": "Are you well?",
+          "options": ["ਹੋ", "ਹੈ", "ਹਾਂ", "ਹਨ"],
+          "answer": "ਹੋ",
+          "why": "ਤੁਸੀਂ always takes ਹੋ."
+        },
+        {
+          "q": "ਅਸੀਂ ਭਰਾ ＿।",
+          "en": "We are brothers.",
+          "options": ["ਹਾਂ", "ਹਨ", "ਹੋ", "ਹੈ"],
+          "answer": "ਹਾਂ",
+          "why": "ਅਸੀਂ (we) takes ਹਾਂ, like ਮੈਂ."
+        },
+        {
+          "q": "ਬੱਚੇ ਸਕੂਲ ਵਿੱਚ ＿।",
+          "en": "The children are at school.",
+          "options": ["ਹਨ", "ਹੈ", "ਹਾਂ", "ਹੋ"],
+          "answer": "ਹਨ",
+          "why": "They: ਹਨ."
+        }
+      ]
+    },
+    {
+      "id": "word-order",
+      "title": "Word order and questions",
+      "particle": "ਕੀ",
+      "summary": "Subject, object, verb; ਕੀ at the start makes a yes/no question.",
+      "sections": [
+        {
+          "p": "A Punjabi sentence runs subject – object – verb, with the form of ਹੋਣਾ at the very end. To say “not”, put <b>ਨਹੀਂ</b> before the verb.",
+          "examples": [
+            [
+              "ਮੈਂ ਚਾਹ ਪੀਂਦਾ ਹਾਂ।",
+              "Main chaah piinda haan.",
+              "I drink tea. (a man)"
+            ],
+            [
+              "ਮੈਂ {ਨਹੀਂ} ਜਾਣਦਾ।",
+              "Main nahiin jaanda.",
+              "I don't know. (a man)"
+            ]
+          ]
+        },
+        {
+          "h": "Questions",
+          "p": "Put <b>ਕੀ</b> at the start for a yes/no question. Question words go just before the verb: <b>ਕੀ</b> what, <b>ਕੌਣ</b> who, <b>ਕਿੱਥੇ</b> where, <b>ਕਦੋਂ</b> when, <b>ਕਿਉਂ</b> why, <b>ਕਿਵੇਂ</b> how, <b>ਕਿੰਨਾ</b> how much.",
+          "examples": [
+            [
+              "{ਕੀ} ਤੁਸੀਂ ਅੰਗਰੇਜ਼ੀ ਬੋਲਦੇ ਹੋ?",
+              "Kii tusiin angrezii bolde ho?",
+              "Do you speak English?"
+            ],
+            [
+              "ਤੁਹਾਡਾ ਨਾਮ {ਕੀ} ਹੈ?",
+              "Tuhaada naam kii hai?",
+              "What is your name?"
+            ],
+            [
+              "ਗੁਰਦੁਆਰਾ {ਕਿੱਥੇ} ਹੈ?",
+              "Gurduaaraa kitthe hai?",
+              "Where is the gurdwara?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ਬੱਸ ਅੱਡਾ ＿ ਹੈ?",
+          "en": "Where is the bus station?",
+          "options": ["ਕਿੱਥੇ", "ਕੀ", "ਕੌਣ", "ਕਦੋਂ"],
+          "answer": "ਕਿੱਥੇ",
+          "why": "ਕਿੱਥੇ = where."
+        },
+        {
+          "q": "ਉਹ ＿ ਹੈ?",
+          "en": "Who is he?",
+          "options": ["ਕੌਣ", "ਕਿੱਥੇ", "ਕਿਉਂ", "ਕਿੰਨਾ"],
+          "answer": "ਕੌਣ",
+          "why": "ਕੌਣ = who."
+        },
+        {
+          "q": "How do you turn «ਤੁਸੀਂ ਪੰਜਾਬ ਤੋਂ ਹੋ» into a question?",
+          "en": "",
+          "options": [
+            "ਕੀ ਤੁਸੀਂ ਪੰਜਾਬ ਤੋਂ ਹੋ?",
+            "ਤੁਸੀਂ ਕੀ ਪੰਜਾਬ ਹੋ ਤੋਂ?",
+            "ਹੋ ਤੁਸੀਂ ਪੰਜਾਬ ਤੋਂ?",
+            "ਤੁਸੀਂ ਪੰਜਾਬ ਤੋਂ ਕੀ ਕੀ?"
+          ],
+          "answer": "ਕੀ ਤੁਸੀਂ ਪੰਜਾਬ ਤੋਂ ਹੋ?",
+          "why": "Add ਕੀ at the start; nothing else moves."
+        },
+        {
+          "q": "ਮੈਂ ਮੀਟ ＿ ਖਾਂਦਾ।",
+          "en": "I don't eat meat.",
+          "options": ["ਨਹੀਂ", "ਕੀ", "ਹਾਂ", "ਹੈ"],
+          "answer": "ਨਹੀਂ",
+          "why": "ਨਹੀਂ before the verb; ਹਾਂ is often dropped after it."
+        },
+        {
+          "q": "ਇਹ ＿ ਦਾ ਹੈ?",
+          "en": "How much is this?",
+          "options": ["ਕਿੰਨੇ", "ਕੌਣ", "ਕਦੋਂ", "ਕਿਵੇਂ"],
+          "answer": "ਕਿੰਨੇ",
+          "why": "ਇਹ ਕਿੰਨੇ ਦਾ ਹੈ? asks the price; ਕਿੰਨਾ / ਕਿੰਨੇ = how much."
+        }
+      ]
+    },
+    {
+      "id": "gender",
+      "title": "Masculine and feminine",
+      "particle": "-ਾ / -ੀ",
+      "summary": "Nouns in -ā are often masculine and in -ī feminine; adjectives in -ā change to match.",
+      "sections": [
+        {
+          "p": "Every noun is masculine or feminine. A good first guess: <b>-ਾ</b> (-aa) is masculine, <b>-ੀ</b> (-ii) feminine: ਮੁੰਡਾ boy, ਕੁੜੀ girl. Many words break the rule, so learn each noun with an adjective.",
+          "examples": [
+            ["ਮੁੰਡਾ / ਕੁੜੀ", "munda / kurii", "boy / girl"],
+            ["ਕਮਰਾ", "kamraa", "room (masculine)"],
+            ["ਕਿਤਾਬ", "kitaab", "book (feminine)"]
+          ]
+        },
+        {
+          "h": "Adjectives in -ā change",
+          "p": "Adjectives in -ā take <b>-ā</b> with a masculine noun, <b>-ī</b> with a feminine one and <b>-e</b> with a masculine plural. Adjectives ending in a consonant, like ਲਾਲ (red), never change.",
+          "examples": [
+            ["{ਚੰਗਾ} ਮੁੰਡਾ", "changa munda", "a good boy"],
+            ["{ਚੰਗੀ} ਕੁੜੀ", "changii kurii", "a good girl"],
+            ["{ਚੰਗੇ} ਮੁੰਡੇ", "change munde", "good boys"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ਕੁੜੀ",
+          "en": "a tall girl (tall = ਲੰਮਾ)",
+          "options": ["ਲੰਮੀ", "ਲੰਮਾ", "ਲੰਮੇ"],
+          "answer": "ਲੰਮੀ",
+          "why": "ਕੁੜੀ is feminine: -ā becomes -ī."
+        },
+        {
+          "q": "＿ ਕਮਰਾ",
+          "en": "a big room (big = ਵੱਡਾ)",
+          "options": ["ਵੱਡਾ", "ਵੱਡੀ", "ਵੱਡੇ"],
+          "answer": "ਵੱਡਾ",
+          "why": "ਕਮਰਾ is masculine singular."
+        },
+        {
+          "q": "＿ ਕਿਤਾਬ",
+          "en": "a new book (new = ਨਵਾਂ)",
+          "options": ["ਨਵੀਂ", "ਨਵਾਂ", "ਨਵੇਂ"],
+          "answer": "ਨਵੀਂ",
+          "why": "ਕਿਤਾਬ is feminine."
+        },
+        {
+          "q": "＿ ਮੁੰਡੇ",
+          "en": "good boys",
+          "options": ["ਚੰਗੇ", "ਚੰਗਾ", "ਚੰਗੀ"],
+          "answer": "ਚੰਗੇ",
+          "why": "Masculine plural: -e."
+        },
+        {
+          "q": "Which adjective never changes?",
+          "en": "",
+          "options": ["ਲਾਲ", "ਚੰਗਾ", "ਵੱਡਾ", "ਛੋਟਾ"],
+          "answer": "ਲਾਲ",
+          "why": "Only adjectives ending in -ā change."
+        }
+      ]
+    },
+    {
+      "id": "present",
+      "title": "The present tense",
+      "particle": "-ਦਾ ਹਾਂ",
+      "summary": "Stem + -ਦਾ / -ਦੀ / -ਦੇ for the subject's gender and number, then ਹਾਂ, ਹੈ, ਹੋ or ਹਨ.",
+      "sections": [
+        {
+          "p": "Take the verb stem and add <b>-ਦਾ</b> (man), <b>-ਦੀ</b> (woman) or <b>-ਦੇ</b> (men, or polite), then the right form of “to be”. ਬੋਲਣਾ (to speak): <b>ਮੈਂ ਬੋਲਦਾ ਹਾਂ</b> (a man), <b>ਮੈਂ ਬੋਲਦੀ ਹਾਂ</b> (a woman).",
+          "examples": [
+            [
+              "ਮੈਂ ਪੰਜਾਬੀ ਬੋਲ{ਦਾ} ਹਾਂ।",
+              "Main panjaabii bolda haan.",
+              "I speak Punjabi. (a man)"
+            ],
+            [
+              "ਉਹ ਦਿੱਲੀ ਰਹਿੰ{ਦੀ} ਹੈ।",
+              "Uh dillii rahindii hai.",
+              "She lives in Delhi."
+            ],
+            ["ਤੁਸੀਂ ਕੀ ਕਰ{ਦੇ} ਹੋ?", "Tusiin kii karde ho?", "What do you do?"]
+          ]
+        },
+        {
+          "h": "Stems ending in a vowel",
+          "p": "After a vowel the ending takes a nasal: ਖਾ (eat) → ਖਾਂਦਾ, ਪੀ (drink) → ਪੀਂਦਾ, ਜਾ (go) → ਜਾਂਦਾ.",
+          "examples": [
+            [
+              "ਮੈਂ ਰੋਟੀ ਖਾਂ{ਦੀ} ਹਾਂ।",
+              "Main rotii khaandii haan.",
+              "I eat roti. (a woman)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ਮੈਂ ਕੰਮ ਕਰ＿ ਹਾਂ।",
+          "en": "I work. (a man)",
+          "options": ["ਦਾ", "ਦੀ", "ਦੇ", "ਨਾ"],
+          "answer": "ਦਾ",
+          "why": "A man speaking: -ਦਾ."
+        },
+        {
+          "q": "ਸਿਮਰਨ ਗਾਉਂ＿ ਹੈ।",
+          "en": "Simran sings.",
+          "options": ["ਦੀ", "ਦਾ", "ਦੇ", "ਣਾ"],
+          "answer": "ਦੀ",
+          "why": "Simran is a woman here: -ਦੀ."
+        },
+        {
+          "q": "ਅਸੀਂ ਚਾਹ ਪੀਂਦੇ ＿।",
+          "en": "We drink tea.",
+          "options": ["ਹਾਂ", "ਹੈ", "ਹੋ", "ਹਨ"],
+          "answer": "ਹਾਂ",
+          "why": "We: ਹਾਂ."
+        },
+        {
+          "q": "ਤੁਸੀਂ ਕਿੱਥੇ ਰਹਿੰ＿ ਹੋ?",
+          "en": "Where do you live?",
+          "options": ["ਦੇ", "ਦਾ", "ਦੀ", "ਣਾ"],
+          "answer": "ਦੇ",
+          "why": "Polite ਤੁਸੀਂ takes the plural -ਦੇ."
+        },
+        {
+          "q": "ਉਹ ਸਕੂਲ ＿ ਹੈ।",
+          "en": "He goes to school. (ਜਾ)",
+          "options": ["ਜਾਂਦਾ", "ਜਾਦਾ", "ਜਾਣਾ", "ਜਾਂਦੇ"],
+          "answer": "ਜਾਂਦਾ",
+          "why": "After a vowel the ending is nasal: ਜਾਂਦਾ."
+        }
+      ]
+    },
+    {
+      "id": "postpositions",
+      "title": "ਵਿੱਚ, ਉੱਤੇ, ਤੋਂ, ਨੂੰ",
+      "particle": "ਵਿੱਚ ਤੋਂ",
+      "summary": "In, on, from and to come after the noun.",
+      "sections": [
+        {
+          "p": "Punjabi says “the house in” instead of “in the house”: <b>ਵਿੱਚ</b> in, <b>ਉੱਤੇ / ਤੇ</b> on, <b>ਤੋਂ</b> from, <b>ਨੂੰ</b> to (a person), <b>ਨਾਲ</b> with.",
+          "examples": [
+            ["ਘਰ {ਵਿੱਚ}", "ghar vich", "in the house"],
+            ["ਮੇਜ਼ {ਉੱਤੇ}", "mez utte", "on the table"],
+            ["ਲਾਹੌਰ {ਤੋਂ}", "Laahaur ton", "from Lahore"],
+            ["ਮਾਂ {ਨੂੰ}", "maan nuun", "to mother"]
+          ]
+        },
+        {
+          "h": "Before a postposition",
+          "p": "A masculine noun in -ā changes to -e before a postposition: ਕਮਰਾ → <b>ਕਮਰੇ ਵਿੱਚ</b>, “in the room”.",
+          "examples": [
+            ["ਉਹ ਕਮਰੇ {ਵਿੱਚ} ਹੈ।", "Uh kamre vich hai.", "He is in the room."],
+            [
+              "ਮੈਂ ਦੋਸਤ {ਨਾਲ} ਜਾਂਦਾ ਹਾਂ।",
+              "Main dost naal jaanda haan.",
+              "I go with a friend."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ਬੱਚੇ ਬਾਗ਼ ＿ ਹਨ।",
+          "en": "The children are in the garden.",
+          "options": ["ਵਿੱਚ", "ਤੋਂ", "ਨੂੰ", "ਨਾਲ"],
+          "answer": "ਵਿੱਚ",
+          "why": "“In” is ਵਿੱਚ."
+        },
+        {
+          "q": "ਮੈਂ ਕੈਨੇਡਾ ＿ ਹਾਂ।",
+          "en": "I am from Canada.",
+          "options": ["ਤੋਂ", "ਵਿੱਚ", "ਉੱਤੇ", "ਨੂੰ"],
+          "answer": "ਤੋਂ",
+          "why": "“From” is ਤੋਂ."
+        },
+        {
+          "q": "ਕਿਤਾਬ ਮੇਜ਼ ＿ ਹੈ।",
+          "en": "The book is on the table.",
+          "options": ["ਉੱਤੇ", "ਤੋਂ", "ਨਾਲ", "ਨੂੰ"],
+          "answer": "ਉੱਤੇ",
+          "why": "“On” is ਉੱਤੇ."
+        },
+        {
+          "q": "ਉਹ ＿ ਵਿੱਚ ਹੈ।",
+          "en": "She is in the room. (ਕਮਰਾ)",
+          "options": ["ਕਮਰੇ", "ਕਮਰਾ", "ਕਮਰੀ", "ਕਮਰਿਆਂ"],
+          "answer": "ਕਮਰੇ",
+          "why": "-ā becomes -e before a postposition."
+        },
+        {
+          "q": "ਮੈਂ ਭੈਣ ＿ ਗੱਲ ਕਰਦਾ ਹਾਂ।",
+          "en": "I talk with my sister.",
+          "options": ["ਨਾਲ", "ਤੋਂ", "ਵਿੱਚ", "ਉੱਤੇ"],
+          "answer": "ਨਾਲ",
+          "why": "“With” is ਨਾਲ."
+        }
+      ]
+    },
+    {
+      "id": "da-di-de",
+      "title": "ਦਾ, ਦੀ, ਦੇ — of",
+      "particle": "ਦਾ ਦੀ ਦੇ",
+      "summary": "“X’s Y”: the word for “of” matches Y, the thing owned.",
+      "sections": [
+        {
+          "p": "<b>ਦਾ</b> before a masculine noun, <b>ਦੀ</b> before a feminine one, <b>ਦੇ</b> before a masculine plural. It agrees with the thing owned, not the owner.",
+          "examples": [
+            ["ਰਾਮ {ਦਾ} ਘਰ", "Raam daa ghar", "Ram's house"],
+            ["ਰਾਮ {ਦੀ} ਕਿਤਾਬ", "Raam dii kitaab", "Ram's book"],
+            ["ਰਾਮ {ਦੇ} ਬੱਚੇ", "Raam de bachche", "Ram's children"]
+          ]
+        },
+        {
+          "h": "My, your",
+          "p": "The possessives work the same way: <b>ਮੇਰਾ / ਮੇਰੀ / ਮੇਰੇ</b> my, <b>ਤੁਹਾਡਾ / ਤੁਹਾਡੀ / ਤੁਹਾਡੇ</b> your (polite), <b>ਸਾਡਾ</b> our.",
+          "examples": [
+            [
+              "{ਮੇਰਾ} ਨਾਮ ਜੱਸੀ ਹੈ।",
+              "Meraa naam Jassii hai.",
+              "My name is Jassi."
+            ],
+            [
+              "{ਤੁਹਾਡੀ} ਭੈਣ ਕਿੱਥੇ ਹੈ?",
+              "Tuhaadii bhain kitthe hai?",
+              "Where is your sister?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ਸੀਤਾ ＿ ਭਰਾ",
+          "en": "Sita's brother",
+          "options": ["ਦਾ", "ਦੀ", "ਦੇ"],
+          "answer": "ਦਾ",
+          "why": "ਭਰਾ (brother) is masculine."
+        },
+        {
+          "q": "ਮੁੰਡੇ ＿ ਮਾਂ",
+          "en": "the boy's mother",
+          "options": ["ਦੀ", "ਦਾ", "ਦੇ"],
+          "answer": "ਦੀ",
+          "why": "It agrees with ਮਾਂ, which is feminine."
+        },
+        {
+          "q": "＿ ਨਾਮ ਕੀ ਹੈ?",
+          "en": "What is your name?",
+          "options": ["ਤੁਹਾਡਾ", "ਤੁਹਾਡੀ", "ਮੇਰਾ", "ਤੁਸੀਂ"],
+          "answer": "ਤੁਹਾਡਾ",
+          "why": "ਨਾਮ is masculine: ਤੁਹਾਡਾ."
+        },
+        {
+          "q": "＿ ਗੱਡੀ ਲਾਲ ਹੈ।",
+          "en": "My car is red.",
+          "options": ["ਮੇਰੀ", "ਮੇਰਾ", "ਮੇਰੇ"],
+          "answer": "ਮੇਰੀ",
+          "why": "ਗੱਡੀ is feminine."
+        },
+        {
+          "q": "ਪਿੰਡ ＿ ਲੋਕ",
+          "en": "the village's people",
+          "options": ["ਦੇ", "ਦਾ", "ਦੀ"],
+          "answer": "ਦੇ",
+          "why": "ਲੋਕ (people) is masculine plural."
+        }
+      ]
+    }
+  ]
+}

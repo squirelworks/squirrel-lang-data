@@ -1,0 +1,474 @@
+{
+  "schema": "grammar@1",
+  "language": "german",
+  "notes": [
+    "German first grammar for the Grammar Learner. Written for this project.",
+    "Examples are [German, word by word, English]; {braces} mark the point of the lesson.",
+    "Drills are { q, en, options, answer, why }; ＿ is the blank.",
+    "",
+    "Sources (open / educational; standard forms, original example sentences):",
+    "- Hammer's German Grammar and Usage (overview of sein, the present, gender,",
+    "  verb-second order, the accusative, nicht and kein).",
+    "- DW Learn German (https://learngerman.dw.com) A1 patterns: bin/bist/ist,",
+    "  der/die/das, den, and verb-second statements.",
+    "- Wiktionary German entries (CC BY-SA): sein, machen, haben, der/die/das, kein.",
+    "- Wikipedia “German grammar”, “German articles”, “German verbs” (CC BY-SA)."
+  ],
+  "title": "German first grammar",
+  "intro": "German puts the verb in a fixed place, and it marks gender on the article rather than on the noun's ending alone. These lessons cover sein, the present tense, der/die/das, verb-second word order, the accusative, and nicht versus kein. Nouns are written with a capital letter.",
+  "lessons": [
+    {
+      "id": "sein",
+      "title": "sein — “to be”",
+      "particle": "sein",
+      "summary": "bin, bist, ist, and the plural.",
+      "sections": [
+        {
+          "p": "<b>sein</b> is irregular, and you learn it first because almost every introduction uses it. <b>ich bin</b> “I am”, <b>du bist</b> “you are” (one person you know), <b>er ist</b> / <b>sie ist</b> / <b>es ist</b> “he / she / it is”.",
+          "examples": [
+            ["Ich {bin} Anna.", "I · am · Anna", "I am Anna."],
+            ["Du {bist} müde.", "you · are · tired", "You are tired."],
+            [
+              "Das Kind {ist} klein.",
+              "the · child · is · small",
+              "The child is small."
+            ]
+          ]
+        },
+        {
+          "h": "We, you all, and they",
+          "p": "<b>wir sind</b> “we are”, <b>ihr seid</b> “you are” (several people you know), <b>sie sind</b> “they are”. The polite “you”, to a stranger, is <b>Sie sind</b> — the same form as “they”, but written with a capital S.",
+          "examples": [
+            ["Wir {sind} Freunde.", "we · are · friends", "We are friends."],
+            [
+              "{Sind} Sie Herr Meier?",
+              "are · you · Mr · Meier",
+              "Are you Mr Meier?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ich ＿ müde.",
+          "en": "I am tired.",
+          "options": ["bin", "bist", "ist", "sind"],
+          "answer": "bin",
+          "why": "“I am” is ich bin."
+        },
+        {
+          "q": "Du ＿ freundlich.",
+          "en": "You are friendly.",
+          "options": ["bist", "bin", "seid", "ist"],
+          "answer": "bist",
+          "why": "To one person you know: du bist."
+        },
+        {
+          "q": "Wir ＿ hier.",
+          "en": "We are here.",
+          "options": ["sind", "seid", "ist", "bin"],
+          "answer": "sind",
+          "why": "“We are” is wir sind."
+        },
+        {
+          "q": "＿ Sie Frau Berg?",
+          "en": "Are you Ms Berg? (polite)",
+          "options": ["Sind", "Bist", "Seid", "Bin"],
+          "answer": "Sind",
+          "why": "Polite Sie takes sind, and the verb comes first in a yes/no question."
+        },
+        {
+          "q": "Das Kind ＿ klein.",
+          "en": "The child is small.",
+          "options": ["ist", "bin", "bist", "seid"],
+          "answer": "ist",
+          "why": "er / sie / es: ist."
+        }
+      ]
+    },
+    {
+      "id": "present",
+      "title": "The present tense",
+      "particle": "-e -st -t",
+      "summary": "Regular endings on a verb like machen.",
+      "sections": [
+        {
+          "p": "Most verbs add an ending to the stem (machen → mach-). <b>ich mache</b>, <b>du machst</b>, <b>er macht</b>, <b>wir machen</b>, <b>ihr macht</b>, <b>sie machen</b>. The polite Sie uses the wir form: <b>Sie machen</b>.",
+          "examples": [
+            [
+              "Ich {lerne} Deutsch.",
+              "I · learn · German",
+              "I am learning German."
+            ],
+            [
+              "Du {wohnst} in Berlin.",
+              "you · live · in · Berlin",
+              "You live in Berlin."
+            ],
+            [
+              "Anna {arbeitet} hier.",
+              "Anna · works · here",
+              "Anna works here."
+            ]
+          ]
+        },
+        {
+          "h": "One form, two English tenses",
+          "p": "German has one present. <b>ich lerne</b> is both “I learn” and “I am learning”.",
+          "examples": [
+            [
+              "Wir {kochen} heute.",
+              "we · cook · today",
+              "We are cooking today."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ich wohn＿ in Wien.",
+          "en": "I live in Vienna.",
+          "options": ["e", "st", "t", "en"],
+          "answer": "e",
+          "why": "ich takes -e: wohne."
+        },
+        {
+          "q": "Du lern＿ Deutsch.",
+          "en": "You are learning German.",
+          "options": ["st", "e", "t", "en"],
+          "answer": "st",
+          "why": "du takes -st: lernst."
+        },
+        {
+          "q": "Er arbeit＿ hier.",
+          "en": "He works here.",
+          "options": ["et", "e", "st", "en"],
+          "answer": "et",
+          "why": "er/sie/es takes -t, and arbeiten keeps the e: arbeitet."
+        },
+        {
+          "q": "Wir mach＿ das.",
+          "en": "We are doing that.",
+          "options": ["en", "t", "st", "e"],
+          "answer": "en",
+          "why": "wir takes -en: machen."
+        },
+        {
+          "q": "What does «Ich lerne Deutsch» mean?",
+          "en": "",
+          "options": [
+            "I am learning German.",
+            "I learned German.",
+            "Learn German!",
+            "Do you learn German?"
+          ],
+          "answer": "I am learning German.",
+          "why": "The present covers “I learn” and “I am learning”."
+        }
+      ]
+    },
+    {
+      "id": "articles",
+      "title": "der, die, das",
+      "particle": "der die das",
+      "summary": "Three genders, and the indefinite article.",
+      "sections": [
+        {
+          "p": "Every noun is masculine, feminine or neuter, and the article shows it. Nominative (the subject): <b>der Mann</b>, <b>die Frau</b>, <b>das Kind</b>. Plural subjects take <b>die</b> whatever the gender: <b>die Kinder</b>. Nouns are capitalized.",
+          "examples": [
+            [
+              "{Der} Mann ist hier.",
+              "the · man · is · here",
+              "The man is here."
+            ],
+            [
+              "{Die} Frau ist Ärztin.",
+              "the · woman · is · doctor",
+              "The woman is a doctor."
+            ],
+            [
+              "{Das} Kind ist klein.",
+              "the · child · is · small",
+              "The child is small."
+            ]
+          ]
+        },
+        {
+          "h": "ein, eine",
+          "p": "“A” is <b>ein</b> with masculine and neuter, <b>eine</b> with feminine. German often leaves “a” out with professions: <b>sie ist Ärztin</b> “she is a doctor”.",
+          "examples": [
+            ["Das ist {ein} Buch.", "that · is · a · book", "That is a book."],
+            [
+              "Das ist {eine} Frage.",
+              "that · is · a · question",
+              "That is a question."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ Mann ist hier.",
+          "en": "The man is here.",
+          "options": ["Der", "Die", "Das", "Den"],
+          "answer": "Der",
+          "why": "Mann is masculine: der Mann."
+        },
+        {
+          "q": "＿ Frau ist Ärztin.",
+          "en": "The woman is a doctor.",
+          "options": ["Die", "Der", "Das", "Den"],
+          "answer": "Die",
+          "why": "Frau is feminine: die Frau."
+        },
+        {
+          "q": "＿ Kind ist klein.",
+          "en": "The child is small.",
+          "options": ["Das", "Der", "Die", "Den"],
+          "answer": "Das",
+          "why": "Kind is neuter: das Kind."
+        },
+        {
+          "q": "Das ist ＿ Buch.",
+          "en": "That is a book. (neuter)",
+          "options": ["ein", "eine", "der", "den"],
+          "answer": "ein",
+          "why": "ein with masculine and neuter."
+        },
+        {
+          "q": "Das ist ＿ Frage.",
+          "en": "That is a question. (feminine)",
+          "options": ["eine", "ein", "das", "den"],
+          "answer": "eine",
+          "why": "eine with feminine nouns."
+        }
+      ]
+    },
+    {
+      "id": "verb-second",
+      "title": "The verb in second place",
+      "particle": "Verbzweit",
+      "summary": "Statements keep the verb second; yes/no questions put it first.",
+      "sections": [
+        {
+          "p": "In a statement the conjugated verb is the second idea, not necessarily the second word. <b>Ich lerne heute Deutsch</b> and <b>Heute lerne ich Deutsch</b> are both fine. If something else starts the sentence, the subject slips in after the verb.",
+          "examples": [
+            [
+              "Ich {lerne} heute Deutsch.",
+              "I · learn · today · German",
+              "I am learning German today."
+            ],
+            [
+              "Heute {lerne} ich Deutsch.",
+              "today · learn · I · German",
+              "Today I am learning German."
+            ]
+          ]
+        },
+        {
+          "h": "Yes/no questions",
+          "p": "A yes/no question starts with the verb: <b>Lernst du Deutsch?</b> Question words stay first, and the verb is still second: <b>Wo wohnst du?</b>",
+          "examples": [
+            [
+              "{Lernst} du Deutsch?",
+              "learn · you · German",
+              "Are you learning German?"
+            ],
+            ["Wo {wohnst} du?", "where · live · you", "Where do you live?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Heute ＿ ich Deutsch.",
+          "en": "Today I am learning German.",
+          "options": ["lerne", "ich lerne", "lernen", "lernst"],
+          "answer": "lerne",
+          "why": "Heute takes the first slot, so the verb comes next and ich follows it."
+        },
+        {
+          "q": "＿ du in Berlin?",
+          "en": "Do you live in Berlin?",
+          "options": ["Wohnst", "Du wohnst", "Wohnen", "Wohnt"],
+          "answer": "Wohnst",
+          "why": "A yes/no question starts with the verb."
+        },
+        {
+          "q": "Wo ＿ du?",
+          "en": "Where do you live?",
+          "options": ["wohnst", "du wohnst", "wohnen", "wohne"],
+          "answer": "wohnst",
+          "why": "Wo is first; the verb is second."
+        },
+        {
+          "q": "Which is a normal statement?",
+          "en": "",
+          "options": [
+            "Ich lerne Deutsch.",
+            "Lerne ich Deutsch.",
+            "Ich Deutsch lerne.",
+            "Deutsch ich lerne."
+          ],
+          "answer": "Ich lerne Deutsch.",
+          "why": "Subject, then the verb, then the rest."
+        },
+        {
+          "q": "Morgen ＿ wir früh.",
+          "en": "Tomorrow we are leaving early. (fahren)",
+          "options": ["fahren", "wir fahren", "fährst", "fahre"],
+          "answer": "fahren",
+          "why": "Morgen is first; wir fahren keeps the verb second."
+        }
+      ]
+    },
+    {
+      "id": "accusative",
+      "title": "The accusative",
+      "particle": "den einen",
+      "summary": "The direct object, and the one article that changes.",
+      "sections": [
+        {
+          "p": "The direct object is in the accusative. Feminine <b>die</b> and neuter <b>das</b> look the same as the subject. Masculine <b>der</b> becomes <b>den</b>, and <b>ein</b> becomes <b>einen</b>.",
+          "examples": [
+            ["Ich sehe {den} Mann.", "I · see · the · man", "I see the man."],
+            [
+              "Sie liest {das} Buch.",
+              "she · reads · the · book",
+              "She is reading the book."
+            ],
+            [
+              "Er hat {einen} Apfel.",
+              "he · has · an · apple",
+              "He has an apple."
+            ]
+          ]
+        },
+        {
+          "h": "Subject or object",
+          "p": "Word order is free enough that the article, not the position, tells you the job. <b>Den Mann sieht die Frau</b> still means the woman sees the man, because den is the object.",
+          "examples": [
+            [
+              "{Den} Mann sieht die Frau.",
+              "the · man · sees · the · woman",
+              "The woman sees the man."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ich sehe ＿ Mann.",
+          "en": "I see the man.",
+          "options": ["den", "der", "die", "das"],
+          "answer": "den",
+          "why": "Masculine object: der → den."
+        },
+        {
+          "q": "Er hat ＿ Apfel.",
+          "en": "He has an apple. (masculine)",
+          "options": ["einen", "ein", "eine", "der"],
+          "answer": "einen",
+          "why": "ein → einen in the accusative."
+        },
+        {
+          "q": "Sie liest ＿ Buch.",
+          "en": "She is reading the book. (neuter)",
+          "options": ["das", "den", "der", "des"],
+          "answer": "das",
+          "why": "Neuter das does not change."
+        },
+        {
+          "q": "Ich kenne ＿ Frau.",
+          "en": "I know the woman.",
+          "options": ["die", "den", "der", "das"],
+          "answer": "die",
+          "why": "Feminine die does not change."
+        },
+        {
+          "q": "Den Mann sieht die Frau. Who sees whom?",
+          "en": "",
+          "options": [
+            "The woman sees the man.",
+            "The man sees the woman.",
+            "The man is a woman.",
+            "They see each other."
+          ],
+          "answer": "The woman sees the man.",
+          "why": "den Mann is the object; die Frau is the subject."
+        }
+      ]
+    },
+    {
+      "id": "negation",
+      "title": "nicht and kein",
+      "particle": "nicht kein",
+      "summary": "Saying no to a verb, and “no” plus a noun.",
+      "sections": [
+        {
+          "p": "<b>nicht</b> negates the verb or the whole sentence, and it usually sits late: <b>Ich trinke nicht</b> “I don't drink”, <b>Ich lerne heute nicht</b>.",
+          "examples": [
+            ["Ich trinke {nicht}.", "I · drink · not", "I don't drink."],
+            [
+              "Das ist {nicht} teuer.",
+              "that · is · not · expensive",
+              "That is not expensive."
+            ]
+          ]
+        },
+        {
+          "h": "kein",
+          "p": "<b>kein</b> means “not a / no” and replaces ein. It takes the same endings: <b>kein</b> Kaffee, <b>keine</b> Milch, <b>keinen</b> Apfel (masculine object).",
+          "examples": [
+            [
+              "Ich habe {keinen} Kaffee.",
+              "I · have · no · coffee",
+              "I don't have any coffee."
+            ],
+            [
+              "Sie hat {keine} Zeit.",
+              "she · has · no · time",
+              "She has no time."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ich trinke ＿.",
+          "en": "I don't drink.",
+          "options": ["nicht", "kein", "keine", "keinen"],
+          "answer": "nicht",
+          "why": "Negating the verb: nicht."
+        },
+        {
+          "q": "Ich habe ＿ Kaffee.",
+          "en": "I don't have any coffee. (masculine object)",
+          "options": ["keinen", "kein", "nicht", "keine"],
+          "answer": "keinen",
+          "why": "kein replaces ein, and the masculine object takes -en."
+        },
+        {
+          "q": "Sie hat ＿ Zeit.",
+          "en": "She has no time. (feminine)",
+          "options": ["keine", "keinen", "kein", "nicht"],
+          "answer": "keine",
+          "why": "Zeit is feminine: keine Zeit."
+        },
+        {
+          "q": "Das ist ＿ teuer.",
+          "en": "That is not expensive.",
+          "options": ["nicht", "kein", "keine", "keinen"],
+          "answer": "nicht",
+          "why": "An adjective is negated with nicht."
+        },
+        {
+          "q": "Wir haben ＿ Milch.",
+          "en": "We have no milk. (feminine)",
+          "options": ["keine", "keinen", "nicht", "kein"],
+          "answer": "keine",
+          "why": "Milch is feminine: keine Milch."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,426 @@
+{
+  "schema": "grammar@1",
+  "language": "telugu",
+  "notes": [
+    "Telugu first grammar for the Grammar Learner. Written for this project.",
+    "Examples are [Telugu, transliteration, English]; {braces} mark the point of the lesson.",
+    "Drills are { q, en, options, answer, why }; ＿ is the blank."
+  ],
+  "title": "Telugu first grammar",
+  "intro": "Telugu is a Dravidian language in which nearly every native word ends in a vowel, which gives it a flowing sound. The verb comes last and its ending says who did it; postpositions and case endings join the end of the noun. These lessons cover sentences without “is”, the present tense, కాదు and లేదు for “not”, questions, case endings, and “my” and plurals. The transliteration is simplified: a long vowel is doubled (aa, ii, uu).",
+  "lessons": [
+    {
+      "id": "pronouns",
+      "title": "నేను, మీరు — no “is”",
+      "particle": "నేను",
+      "summary": "Saying what someone is needs no verb; the pronouns show politeness.",
+      "sections": [
+        {
+          "p": "“He is a doctor” is just <b>ఆయన డాక్టర్</b>, with no verb. The pronouns: <b>నేను</b> I, <b>నువ్వు</b> you (intimate), <b>మీరు</b> you (polite or plural), <b>అతను / ఆయన</b> he (ఆయన is respectful), <b>ఆమె / ఆవిడ</b> she.",
+          "examples": [
+            [
+              "{ఆయన} మా నాన్నగారు.",
+              "Aayana maa naannagaaru.",
+              "He is my father."
+            ],
+            ["{ఆమె} టీచర్.", "Aame tiichar.", "She is a teacher."],
+            ["{మీరు} ఎవరు?", "Miiru evaru?", "Who are you?"]
+          ]
+        },
+        {
+          "h": "Plural, and two kinds of “we”",
+          "p": "<b>మేము</b> means “we, but not you” and <b>మనం</b> “we, including you”. <b>వాళ్ళు</b> is “they”.",
+          "examples": [
+            [
+              "{మనం} స్నేహితులం.",
+              "Manam snehitulam.",
+              "We (you and I) are friends."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ఎక్కడ నుండి?",
+          "en": "Where are you from? (polite)",
+          "options": ["మీరు", "నేను", "ఆమె", "మనం"],
+          "answer": "మీరు",
+          "why": "Polite “you” is మీరు."
+        },
+        {
+          "q": "＿ నా అక్క.",
+          "en": "She is my elder sister.",
+          "options": ["ఆమె", "ఆయన", "నేను", "మేము"],
+          "answer": "ఆమె",
+          "why": "ఆమె = she."
+        },
+        {
+          "q": "Which “we” includes the listener?",
+          "en": "",
+          "options": ["మనం", "మేము", "మీరు", "వాళ్ళు"],
+          "answer": "మనం",
+          "why": "మనం is “we, you included”."
+        },
+        {
+          "q": "Which means “He is a doctor” (respectful)?",
+          "en": "",
+          "options": [
+            "ఆయన డాక్టర్.",
+            "ఆయన ఉంది డాక్టర్.",
+            "డాక్టర్ ఆయనకు.",
+            "ఆయనలో డాక్టర్."
+          ],
+          "answer": "ఆయన డాక్టర్.",
+          "why": "No verb is needed to say what someone is."
+        },
+        {
+          "q": "＿ ఇక్కడ ఉన్నారు.",
+          "en": "They are here.",
+          "options": ["వాళ్ళు", "నేను", "నువ్వు", "ఆమె"],
+          "answer": "వాళ్ళు",
+          "why": "వాళ్ళు = they."
+        }
+      ]
+    },
+    {
+      "id": "present",
+      "title": "The present: -తున్నాను",
+      "particle": "-తున్నా-",
+      "summary": "Stem + -తున్న- + an ending for who is doing it.",
+      "sections": [
+        {
+          "p": "For something happening now, add <b>-తున్న-</b> to the stem, then the person ending. For చదువు (read): <b>చదువుతున్నాను</b> I, <b>చదువుతున్నావు</b> you, <b>చదువుతున్నారు</b> you (polite) / they, <b>చదువుతున్నాడు</b> he, <b>చదువుతోంది</b> she, <b>చదువుతున్నాము</b> we.",
+          "examples": [
+            [
+              "నేను తెలుగు నేర్చుకుం{టున్నాను}.",
+              "Nenu telugu nerchukuntunnaanu.",
+              "I am learning Telugu."
+            ],
+            [
+              "అతను పని చేస్{తున్నాడు}.",
+              "Atanu pani chestunnaadu.",
+              "He is working."
+            ],
+            [
+              "మీరు ఏం చేస్{తున్నారు}?",
+              "Miiru em chestunnaaru?",
+              "What are you doing?"
+            ]
+          ]
+        },
+        {
+          "h": "The habitual and future",
+          "p": "For habits and the future Telugu uses <b>-తాను</b>: నేను కాఫీ <b>తాగుతాను</b>, “I drink coffee” or “I will drink coffee”. In speech the final -ను is often dropped: తాగుతా.",
+          "examples": [
+            [
+              "నేను రేపు {వస్తాను}.",
+              "Nenu repu vastaanu.",
+              "I'll come tomorrow."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "నేను అన్నం తింటున్నా＿.",
+          "en": "I am eating rice.",
+          "options": ["ను", "వు", "డు", "రు"],
+          "answer": "ను",
+          "why": "“I” ends in -ను."
+        },
+        {
+          "q": "అతను పాట పాడుతున్నా＿.",
+          "en": "He is singing.",
+          "options": ["డు", "ను", "రు", "ము"],
+          "answer": "డు",
+          "why": "“He” ends in -డు."
+        },
+        {
+          "q": "మీరు ఎక్కడికి వెళ్తున్నా＿?",
+          "en": "Where are you going? (polite)",
+          "options": ["రు", "ను", "డు", "వు"],
+          "answer": "రు",
+          "why": "Polite “you” ends in -రు."
+        },
+        {
+          "q": "మేము టీవీ చూస్తున్నా＿.",
+          "en": "We are watching TV.",
+          "options": ["ము", "ను", "డు", "రు"],
+          "answer": "ము",
+          "why": "“We” ends in -ము."
+        },
+        {
+          "q": "నేను రేపు ＿.",
+          "en": "I'll come tomorrow.",
+          "options": ["వస్తాను", "వస్తున్నాడు", "వచ్చారు", "వస్తోంది"],
+          "answer": "వస్తాను",
+          "why": "Future: -తాను, for “I”."
+        }
+      ]
+    },
+    {
+      "id": "kaadu-ledu",
+      "title": "కాదు and లేదు",
+      "particle": "కాదు లేదు",
+      "summary": "కాదు: is not (something). లేదు: is not there, or didn't.",
+      "sections": [
+        {
+          "p": "<b>కాదు</b> denies what something is: <b>ఇది కాఫీ కాదు</b>, “this isn't coffee”. <b>ఉంది</b> (is there) has the opposite <b>లేదు</b> (isn't there): ఆయన ఇంట్లో <b>లేరు</b>, “he isn't at home” (లేరు is the polite form).",
+          "examples": [
+            [
+              "నేను డాక్టర్‌ని {కాదు}.",
+              "Nenu daaktarni kaadu.",
+              "I'm not a doctor."
+            ],
+            [
+              "ఇక్కడ బస్సు {లేదు}.",
+              "Ikkada bassu ledu.",
+              "There's no bus here."
+            ],
+            [
+              "ఇంట్లో పాలు {ఉన్నాయి}.",
+              "Intlo paalu unnaayi.",
+              "There is milk at home."
+            ]
+          ]
+        },
+        {
+          "h": "Having",
+          "p": "Telugu says “to me there is”: <b>నాకు</b> (to me) + noun + ఉంది / లేదు. “I don't know” is <b>నాకు తెలియదు</b>. Yes is <b>అవును</b>, no is <b>లేదు</b> or <b>కాదు</b>.",
+          "examples": [
+            [
+              "{నాకు} ఒక అన్నయ్య ఉన్నాడు.",
+              "Naaku oka annayya unnaadu.",
+              "I have an elder brother."
+            ],
+            ["{నాకు} సమయం లేదు.", "Naaku samayam ledu.", "I don't have time."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ఇది నా పుస్తకం ＿.",
+          "en": "This isn't my book.",
+          "options": ["కాదు", "లేదు", "ఉంది", "అవును"],
+          "answer": "కాదు",
+          "why": "“Is not (something)” is కాదు."
+        },
+        {
+          "q": "ఫ్రిజ్‌లో నీళ్ళు ＿.",
+          "en": "There's no water in the fridge.",
+          "options": ["లేవు", "కాదు", "ఉన్నాయి", "అవును"],
+          "answer": "లేవు",
+          "why": "“There isn't” is లేదు; for plural things like water, లేవు."
+        },
+        {
+          "q": "＿ తెలియదు.",
+          "en": "I don't know.",
+          "options": ["నాకు", "నేను", "నా", "మేము"],
+          "answer": "నాకు",
+          "why": "Knowing uses నాకు, “to me”."
+        },
+        {
+          "q": "The Telugu for “yes” is…",
+          "en": "",
+          "options": ["అవును", "కాదు", "లేదు", "ఏమిటి"],
+          "answer": "అవును",
+          "why": "అవును = yes."
+        },
+        {
+          "q": "నాకు కారు ＿.",
+          "en": "I don't have a car.",
+          "options": ["లేదు", "కాదు", "ఉంది", "అవును"],
+          "answer": "లేదు",
+          "why": "Not having: నాకు … లేదు."
+        }
+      ]
+    },
+    {
+      "id": "questions",
+      "title": "Asking questions",
+      "particle": "-ఆ",
+      "summary": "Add -ఆ to the end for yes or no; question words stay where the answer goes.",
+      "sections": [
+        {
+          "p": "Add <b>-ఆ</b> to the last word for a yes/no question: మాట్లాడతారు → <b>మాట్లాడతారా?</b> Question words: <b>ఏమిటి / ఏం</b> what, <b>ఎవరు</b> who, <b>ఎక్కడ</b> where, <b>ఎప్పుడు</b> when, <b>ఎందుకు</b> why, <b>ఎలా</b> how, <b>ఎంత</b> how much.",
+          "examples": [
+            [
+              "మీరు ఇంగ్లీష్ మాట్లాడతార{ా}?",
+              "Miiru ingliish maatlaadataaraa?",
+              "Do you speak English?"
+            ],
+            ["మీ పేరు {ఏమిటి}?", "Mii peru emiti?", "What is your name?"],
+            ["ఇది {ఎంత}?", "Idi enta?", "How much is this?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "బాత్రూమ్ ＿?",
+          "en": "Where is the bathroom?",
+          "options": ["ఎక్కడ", "ఏమిటి", "ఎవరు", "ఎందుకు"],
+          "answer": "ఎక్కడ",
+          "why": "ఎక్కడ = where."
+        },
+        {
+          "q": "మీరు ＿ ఉన్నారు?",
+          "en": "How are you?",
+          "options": ["ఎలా", "ఎక్కడ", "ఎవరు", "ఎంత"],
+          "answer": "ఎలా",
+          "why": "ఎలా = how."
+        },
+        {
+          "q": "ఆయన ＿?",
+          "en": "Who is he?",
+          "options": ["ఎవరు", "ఏమిటి", "ఎప్పుడు", "ఎందుకు"],
+          "answer": "ఎవరు",
+          "why": "ఎవరు = who."
+        },
+        {
+          "q": "Make «ఇది మీ ఇల్లు» a question:",
+          "en": "Is this your house?",
+          "options": [
+            "ఇది మీ ఇల్లా?",
+            "ఆ ఇది మీ ఇల్లు?",
+            "ఇది మీ ఎవరు ఇల్లు?",
+            "ఇది మీ ఇల్లు ఏమిటి?"
+          ],
+          "answer": "ఇది మీ ఇల్లా?",
+          "why": "Add -ఆ to the last word."
+        },
+        {
+          "q": "రైలు ＿ వస్తుంది?",
+          "en": "When will the train come?",
+          "options": ["ఎప్పుడు", "ఎక్కడ", "ఎందుకు", "ఎవరు"],
+          "answer": "ఎప్పుడు",
+          "why": "ఎప్పుడు = when."
+        }
+      ]
+    },
+    {
+      "id": "cases",
+      "title": "In, from, to: -లో, నుండి, -కి",
+      "particle": "-లో -కి",
+      "summary": "Endings and postpositions join the noun.",
+      "sections": [
+        {
+          "p": "<b>-లో</b> means “in”, <b>నుండి</b> (or -నుంచి) “from”, <b>-కి / -కు</b> “to, for”. Some nouns change shape first: ఇల్లు → <b>ఇంట్లో</b> (at home), ఇంటికి (to home).",
+          "examples": [
+            [
+              "నేను హైదరాబాద్‌{లో} ఉంటాను.",
+              "Nenu haidaraabaadlo untaanu.",
+              "I live in Hyderabad."
+            ],
+            [
+              "ఆమె చెన్నై {నుండి} వచ్చింది.",
+              "Aame chennai nundi vachchindi.",
+              "She came from Chennai."
+            ],
+            [
+              "నేను బజారు{కి} వెళ్తున్నాను.",
+              "Nenu bajaaruki veltunnaanu.",
+              "I'm going to the market."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "పుస్తకం సంచి＿ ఉంది.",
+          "en": "The book is in the bag.",
+          "options": ["లో", "కి", "నుండి", "లు"],
+          "answer": "లో",
+          "why": "-లో = in."
+        },
+        {
+          "q": "నేను లండన్ ＿ వచ్చాను.",
+          "en": "I came from London.",
+          "options": ["నుండి", "లో", "కి", "ని"],
+          "answer": "నుండి",
+          "why": "నుండి = from."
+        },
+        {
+          "q": "నేను బడి＿ వెళ్తాను.",
+          "en": "I go to school.",
+          "options": ["కి", "లో", "నుండి", "లు"],
+          "answer": "కి",
+          "why": "-కి = to."
+        },
+        {
+          "q": "ఆయన ＿ ఉన్నారు.",
+          "en": "He is at home.",
+          "options": ["ఇంట్లో", "ఇల్లులో", "ఇంటికి", "ఇల్లు"],
+          "answer": "ఇంట్లో",
+          "why": "ఇల్లు changes to ఇంట్లో, “at home”."
+        },
+        {
+          "q": "అమ్మ＿ ఒక బహుమతి",
+          "en": "a present for Mum",
+          "options": ["కి", "లో", "నుండి", "లు"],
+          "answer": "కి",
+          "why": "-కి = for, to."
+        }
+      ]
+    },
+    {
+      "id": "naa-lu",
+      "title": "My, and plurals with -లు",
+      "particle": "నా -లు",
+      "summary": "నా, మీ before the noun; -లు makes a plural.",
+      "sections": [
+        {
+          "p": "<b>నా</b> my, <b>నీ</b> your (intimate), <b>మీ</b> your (polite), <b>అతని / ఆయన</b> his, <b>ఆమె</b> her, <b>మా</b> our (not yours), <b>మన</b> our (including yours).",
+          "examples": [
+            ["{నా} పేరు రవి.", "Naa peru Ravi.", "My name is Ravi."],
+            ["{మీ} ఊరు ఏది?", "Mii uuru edi?", "Which is your home town?"]
+          ]
+        },
+        {
+          "h": "Plurals",
+          "p": "Add <b>-లు</b>. Nouns in -ం change it to -ా-: పుస్తకం → <b>పుస్తకాలు</b>, books. Some words have their own plural: పిల్లవాడు → పిల్లలు, children.",
+          "examples": [
+            ["స్నేహితు{లు}", "snehitulu", "friends"],
+            ["పుస్తకా{లు}", "pustakaalu", "books"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ అమ్మ టీచర్.",
+          "en": "My mother is a teacher.",
+          "options": ["నా", "నేను", "నాకు", "మీ"],
+          "answer": "నా",
+          "why": "నా = my."
+        },
+        {
+          "q": "＿ పేరు ఏమిటి?",
+          "en": "What is your name? (polite)",
+          "options": ["మీ", "నా", "నీ", "మా"],
+          "answer": "మీ",
+          "why": "Polite “your” is మీ."
+        },
+        {
+          "q": "పండు → ＿",
+          "en": "fruit → fruits",
+          "options": ["పండ్లు", "పండులు", "పండం", "పండా"],
+          "answer": "పండ్లు",
+          "why": "పండు + లు contracts to పండ్లు."
+        },
+        {
+          "q": "కాగితం → ＿",
+          "en": "paper → papers",
+          "options": ["కాగితాలు", "కాగితంలు", "కాగితలో", "కాగితా"],
+          "answer": "కాగితాలు",
+          "why": "-ం becomes -ా before -లు."
+        },
+        {
+          "q": "Which “our” includes the listener?",
+          "en": "",
+          "options": ["మన", "మా", "మీ", "నా"],
+          "answer": "మన",
+          "why": "మన = our, yours included."
+        }
+      ]
+    }
+  ]
+}

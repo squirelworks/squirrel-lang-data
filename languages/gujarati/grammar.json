@@ -1,0 +1,435 @@
+{
+  "schema": "grammar@1",
+  "language": "gujarati",
+  "notes": [
+    "Gujarati first grammar for the Grammar Learner. Written for this project.",
+    "Examples are [Gujarati, transliteration, English]; {braces} mark the point of the lesson.",
+    "Drills are { q, en, options, answer, why }; ＿ is the blank."
+  ],
+  "title": "Gujarati first grammar",
+  "intro": "Gujarati puts the verb at the end and joins its postpositions straight onto the noun. It has three genders, masculine, feminine and neuter, and adjectives that end in a vowel change to match. These lessons cover “to be”, questions and saying no, the three genders, the present tense, in / on / from, and નો / ની / નું for “of”. The transliteration is simplified: a long vowel is doubled (aa, ii, uu) and n after a vowel marks a nasal sound.",
+  "lessons": [
+    {
+      "id": "chhe",
+      "title": "છું, છે, છો — “to be”",
+      "particle": "છે",
+      "summary": "“Am / is / are” changes with the subject and goes at the end.",
+      "sections": [
+        {
+          "p": "<b>હું … છું</b> I am, <b>તું … છે</b> you are (intimate), <b>તે … છે</b> he/she/it is, <b>અમે … છીએ</b> we are, <b>તમે … છો</b> you are (polite or plural), <b>તેઓ … છે</b> they are.",
+          "examples": [
+            [
+              "હું વિદ્યાર્થી {છું}.",
+              "Hun vidyaarthii chhun.",
+              "I am a student."
+            ],
+            [
+              "તમે ક્યાંથી {છો}?",
+              "Tame kyaanthii chho?",
+              "Where are you from?"
+            ],
+            ["આ મારું ઘર {છે}.", "Aa maarun ghar chhe.", "This is my house."]
+          ]
+        },
+        {
+          "h": "Two kinds of “we”",
+          "p": "<b>અમે</b> means “we, but not you”, and <b>આપણે</b> means “we, including you”. Both take છીએ.",
+          "examples": [
+            [
+              "{અમે} ભારતથી છીએ.",
+              "Ame bhaaratthii chhiie.",
+              "We are from India. (not you)"
+            ],
+            [
+              "{આપણે} મિત્રો છીએ.",
+              "Aapane mitro chhiie.",
+              "We (you and I) are friends."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "હું ગુજરાતી ＿.",
+          "en": "I am Gujarati.",
+          "options": ["છું", "છે", "છો", "છીએ"],
+          "answer": "છું",
+          "why": "હું takes છું."
+        },
+        {
+          "q": "તમે કેમ ＿?",
+          "en": "How are you?",
+          "options": ["છો", "છે", "છું", "છીએ"],
+          "answer": "છો",
+          "why": "Polite તમે takes છો."
+        },
+        {
+          "q": "તે ડૉક્ટર ＿.",
+          "en": "She is a doctor.",
+          "options": ["છે", "છું", "છો", "છીએ"],
+          "answer": "છે",
+          "why": "He / she: છે."
+        },
+        {
+          "q": "અમે ભાઈઓ ＿.",
+          "en": "We are brothers.",
+          "options": ["છીએ", "છે", "છો", "છું"],
+          "answer": "છીએ",
+          "why": "We: છીએ."
+        },
+        {
+          "q": "Which “we” includes the listener?",
+          "en": "",
+          "options": ["આપણે", "અમે", "તમે", "તેઓ"],
+          "answer": "આપણે",
+          "why": "આપણે is “we, you included”."
+        }
+      ]
+    },
+    {
+      "id": "questions",
+      "title": "Questions and નથી",
+      "particle": "શું નથી",
+      "summary": "શું at the start asks yes or no; નથી replaces છે to say “not”.",
+      "sections": [
+        {
+          "p": "Put <b>શું</b> at the start for a yes/no question. Question words go just before the verb: <b>શું</b> what, <b>કોણ</b> who, <b>ક્યાં</b> where, <b>ક્યારે</b> when, <b>કેમ</b> why / how, <b>કેટલું</b> how much.",
+          "examples": [
+            [
+              "{શું} તમે અંગ્રેજી બોલો છો?",
+              "Shun tame angrejii bolo chho?",
+              "Do you speak English?"
+            ],
+            [
+              "તમારું નામ {શું} છે?",
+              "Tamaarun naam shun chhe?",
+              "What is your name?"
+            ],
+            [
+              "બસ સ્ટેન્ડ {ક્યાં} છે?",
+              "Bas stend kyaan chhe?",
+              "Where is the bus stand?"
+            ]
+          ]
+        },
+        {
+          "h": "નથી",
+          "p": "For “not”, <b>નથી</b> replaces છે, છું, છો and the rest, for every person: હું જાણતો <b>નથી</b>, “I don't know”.",
+          "examples": [
+            ["હું ડૉક્ટર {નથી}.", "Hun daoktar nathii.", "I am not a doctor."],
+            ["તે ઘરે {નથી}.", "Te ghare nathii.", "He isn't at home."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "તે ＿ છે?",
+          "en": "Who is he?",
+          "options": ["કોણ", "ક્યાં", "શું", "કેટલું"],
+          "answer": "કોણ",
+          "why": "કોણ = who."
+        },
+        {
+          "q": "આ ＿ છે?",
+          "en": "How much is this?",
+          "options": ["કેટલાનું", "કોણ", "ક્યારે", "શું"],
+          "answer": "કેટલાનું",
+          "why": "Prices are asked with કેટલાનું છે? (of how much)."
+        },
+        {
+          "q": "હું થાકેલો ＿.",
+          "en": "I'm not tired. (a man)",
+          "options": ["નથી", "છું", "ના", "છે"],
+          "answer": "નથી",
+          "why": "નથી replaces છું."
+        },
+        {
+          "q": "＿ તમે ચા પીશો?",
+          "en": "Will you have tea?",
+          "options": ["શું", "કોણ", "નથી", "ક્યાં"],
+          "answer": "શું",
+          "why": "શું at the start makes a yes/no question."
+        },
+        {
+          "q": "તમે ＿ રહો છો?",
+          "en": "Where do you live?",
+          "options": ["ક્યાં", "કોણ", "કેમ", "શું"],
+          "answer": "ક્યાં",
+          "why": "ક્યાં = where."
+        }
+      ]
+    },
+    {
+      "id": "gender",
+      "title": "Three genders",
+      "particle": "-ો -ી -ું",
+      "summary": "Masculine -ો, feminine -ી, neuter -ું; adjectives in a vowel match.",
+      "sections": [
+        {
+          "p": "Many nouns show their gender by their ending: <b>-ો</b> (-o) masculine, <b>-ી</b> (-ii) feminine, <b>-ું</b> (-un) neuter. છોકરો boy, છોકરી girl, છોકરું child.",
+          "examples": [
+            ["છોકર{ો}", "chhokro", "boy (masculine)"],
+            ["છોકર{ી}", "chhokrii", "girl (feminine)"],
+            ["છોકર{ું}", "chhokrun", "child (neuter)"]
+          ]
+        },
+        {
+          "h": "Adjectives",
+          "p": "Adjectives ending in a vowel change the same way: <b>સારો</b> છોકરો, <b>સારી</b> છોકરી, <b>સારું</b> ઘર. Plural masculine and neuter take <b>-ા</b>: સારા છોકરા. Adjectives ending in a consonant (સુંદર, beautiful) never change.",
+          "examples": [
+            ["{મોટો} ભાઈ", "moto bhaaii", "elder brother (big brother)"],
+            ["{મોટી} બહેન", "motii bahen", "elder sister"],
+            ["{મોટું} ઘર", "motun ghar", "a big house"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ છોકરી",
+          "en": "a good girl (સારો)",
+          "options": ["સારી", "સારો", "સારું", "સારા"],
+          "answer": "સારી",
+          "why": "Feminine: -ી."
+        },
+        {
+          "q": "＿ ઘર",
+          "en": "a new house (નવો)",
+          "options": ["નવું", "નવો", "નવી", "નવા"],
+          "answer": "નવું",
+          "why": "ઘર is neuter: -ું."
+        },
+        {
+          "q": "＿ દીકરો",
+          "en": "a small son (નાનો)",
+          "options": ["નાનો", "નાની", "નાનું", "નાના"],
+          "answer": "નાનો",
+          "why": "દીકરો is masculine: -ો."
+        },
+        {
+          "q": "Which ending usually marks a neuter noun?",
+          "en": "",
+          "options": ["-ું", "-ો", "-ી", "-ા"],
+          "answer": "-ું",
+          "why": "Neuter nouns often end in -un."
+        },
+        {
+          "q": "＿ છોકરી",
+          "en": "a beautiful girl",
+          "options": ["સુંદર", "સુંદરી", "સુંદરો", "સુંદરું"],
+          "answer": "સુંદર",
+          "why": "Adjectives ending in a consonant never change."
+        }
+      ]
+    },
+    {
+      "id": "present",
+      "title": "The present tense",
+      "particle": "-ું છું",
+      "summary": "Stem + a person ending, then the matching form of છે.",
+      "sections": [
+        {
+          "p": "For બોલવું (to speak): <b>હું બોલું છું</b>, <b>તું બોલે છે</b>, <b>તે બોલે છે</b>, <b>અમે બોલીએ છીએ</b>, <b>તમે બોલો છો</b>, <b>તેઓ બોલે છે</b>. The ending matches the ending of “to be”.",
+          "examples": [
+            [
+              "હું ગુજરાતી શીખ{ું} છું.",
+              "Hun gujaraatii shiikhun chhun.",
+              "I am learning Gujarati."
+            ],
+            [
+              "તે અમદાવાદમાં રહ{ે} છે.",
+              "Te amdaavaadmaan rahe chhe.",
+              "She lives in Ahmedabad."
+            ],
+            ["તમે શું કર{ો} છો?", "Tame shun karo chho?", "What do you do?"]
+          ]
+        },
+        {
+          "h": "Not",
+          "p": "In the negative, the verb takes -તો / -તી / -તું for the subject's gender, then નથી: હું જાણ<b>તો નથી</b> (a man), હું જાણ<b>તી નથી</b> (a woman).",
+          "examples": [
+            [
+              "હું સમજ{તો} નથી.",
+              "Hun samajto nathii.",
+              "I don't understand. (a man)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "હું ચા પી＿ છું.",
+          "en": "I drink tea.",
+          "options": ["ઉં", "ે", "ો", "ીએ"],
+          "answer": "ઉં",
+          "why": "હું takes -ઉં: પીઉં છું."
+        },
+        {
+          "q": "તમે ક્યાં રહ＿ છો?",
+          "en": "Where do you live?",
+          "options": ["ો", "ું", "ે", "ીએ"],
+          "answer": "ો",
+          "why": "તમે takes -ો, matching છો."
+        },
+        {
+          "q": "અમે ગુજરાતી બોલ＿ છીએ.",
+          "en": "We speak Gujarati.",
+          "options": ["ીએ", "ો", "ે", "ું"],
+          "answer": "ીએ",
+          "why": "We: -ીએ, matching છીએ."
+        },
+        {
+          "q": "તે કામ કર＿ છે.",
+          "en": "He works.",
+          "options": ["ે", "ો", "ું", "ીએ"],
+          "answer": "ે",
+          "why": "He / she: -ે, matching છે."
+        },
+        {
+          "q": "હું જાણતી ＿.",
+          "en": "I don't know. (a woman)",
+          "options": ["નથી", "છું", "ના", "નહીં"],
+          "answer": "નથી",
+          "why": "Negative present: -તી + નથી."
+        }
+      ]
+    },
+    {
+      "id": "places",
+      "title": "In, on, from: -માં, -પર, -થી",
+      "particle": "-માં -થી",
+      "summary": "Postpositions join the noun as endings.",
+      "sections": [
+        {
+          "p": "<b>-માં</b> in, <b>-પર</b> (or ઉપર) on, <b>-થી</b> from or by, <b>-ને</b> to (a person) or the object, <b>-ની સાથે</b> with. They are written joined to the noun: ઘરમાં, in the house.",
+          "examples": [
+            ["ઘર{માં}", "gharmaan", "in the house"],
+            ["ટેબલ {પર}", "tebal par", "on the table"],
+            ["મુંબઈ{થી}", "mumbaiithii", "from Mumbai"]
+          ]
+        },
+        {
+          "h": "Before an ending",
+          "p": "A noun in -ો usually changes to -ા before a postposition: છોકરો → છોકરા<b>ને</b>, to the boy. “At home” is ઘરે.",
+          "examples": [
+            [
+              "હું છોકરા{ને} પુસ્તક આપું છું.",
+              "Hun chhokraane pustak aapun chhun.",
+              "I give the book to the boy."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "બાળકો બગીચા＿ છે.",
+          "en": "The children are in the garden.",
+          "options": ["માં", "થી", "ને", "પર"],
+          "answer": "માં",
+          "why": "-માં = in."
+        },
+        {
+          "q": "હું લંડન＿ છું.",
+          "en": "I am from London.",
+          "options": ["થી", "માં", "ને", "પર"],
+          "answer": "થી",
+          "why": "-થી = from."
+        },
+        {
+          "q": "ચાવી ટેબલ ＿ છે.",
+          "en": "The key is on the table.",
+          "options": ["પર", "થી", "ને", "માં"],
+          "answer": "પર",
+          "why": "પર = on."
+        },
+        {
+          "q": "માને ફોન કરો.",
+          "en": "What does -ને do here?",
+          "options": [
+            "Marks “to” mother",
+            "Means “from”",
+            "Means “in”",
+            "Makes it plural"
+          ],
+          "answer": "Marks “to” mother",
+          "why": "-ને marks the person you call, give or tell."
+        },
+        {
+          "q": "તે ઑફિસ＿ કામ કરે છે.",
+          "en": "She works in an office.",
+          "options": ["માં", "થી", "ને", "પર"],
+          "answer": "માં",
+          "why": "-માં = in."
+        }
+      ]
+    },
+    {
+      "id": "no-ni-nu",
+      "title": "નો, ની, નું — of",
+      "particle": "નો ની નું",
+      "summary": "“X’s Y”: the ending matches Y, the thing owned.",
+      "sections": [
+        {
+          "p": "Add <b>-નો</b> before a masculine noun, <b>-ની</b> before a feminine one, <b>-નું</b> before a neuter one, and <b>-ના</b> before a plural: રામ<b>નો</b> ભાઈ, રામ<b>ની</b> બહેન, રામ<b>નું</b> ઘર.",
+          "examples": [
+            ["રામ{નો} ભાઈ", "raamno bhaaii", "Ram's brother"],
+            ["રામ{ની} બહેન", "raamnii bahen", "Ram's sister"],
+            ["રામ{નું} ઘર", "raamnun ghar", "Ram's house"]
+          ]
+        },
+        {
+          "h": "My, your",
+          "p": "<b>મારો / મારી / મારું</b> my, <b>તમારો / તમારી / તમારું</b> your (polite), <b>અમારો</b> our. They agree in the same way.",
+          "examples": [
+            [
+              "{મારું} નામ પ્રિયા છે.",
+              "Maarun naam Priyaa chhe.",
+              "My name is Priya."
+            ],
+            [
+              "{તમારી} ટ્રેન ક્યારે છે?",
+              "Tamaarii tren kyaare chhe?",
+              "When is your train?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "સીતા＿ ભાઈ",
+          "en": "Sita's brother",
+          "options": ["નો", "ની", "નું", "ના"],
+          "answer": "નો",
+          "why": "ભાઈ is masculine."
+        },
+        {
+          "q": "＿ નામ શું છે?",
+          "en": "What is your name?",
+          "options": ["તમારું", "તમારો", "તમારી", "તમે"],
+          "answer": "તમારું",
+          "why": "નામ is neuter."
+        },
+        {
+          "q": "＿ માતા",
+          "en": "my mother",
+          "options": ["મારી", "મારો", "મારું", "મારા"],
+          "answer": "મારી",
+          "why": "માતા is feminine."
+        },
+        {
+          "q": "ગામ＿ લોકો",
+          "en": "the village's people",
+          "options": ["ના", "નો", "ની", "નું"],
+          "answer": "ના",
+          "why": "Plural: -ના."
+        },
+        {
+          "q": "શિક્ષક＿ પુસ્તક",
+          "en": "the teacher's book",
+          "options": ["નું", "નો", "ની", "ના"],
+          "answer": "નું",
+          "why": "પુસ્તક (book) is neuter."
+        }
+      ]
+    }
+  ]
+}

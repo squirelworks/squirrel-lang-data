@@ -1,0 +1,444 @@
+{
+  "schema": "grammar@1",
+  "language": "french",
+  "notes": [
+    "French first grammar for the Grammar Learner. Written for this project.",
+    "Examples are [French, word by word, English]; {braces} mark the point of the lesson.",
+    "Drills are { q, en, options, answer, why }; ＿ is the blank.",
+    "",
+    "Sources (open / educational; standard forms, original example sentences):",
+    "- Français interactif (University of Texas at Austin, https://www.laits.utexas.edu/fi/):",
+    "  être, avoir, articles, -er verbs, ne…pas.",
+    "- Wiktionary French entries (CC BY-SA): être, avoir, parler, le/la/un/une.",
+    "- Wikipedia “French grammar”, “French verbs”, “French articles” (CC BY-SA)."
+  ],
+  "title": "French first grammar",
+  "intro": "French marks the subject with a pronoun you almost never drop, and it marks gender on the article. These lessons cover être, avoir, le/la/un/une, regular -er verbs, negation with ne…pas, and a simple question. Silent letters are left for the pronunciation cards; the forms here are the ones you write.",
+  "lessons": [
+    {
+      "id": "etre",
+      "title": "être — “to be”",
+      "particle": "être",
+      "summary": "suis, es, est, and the plural.",
+      "sections": [
+        {
+          "p": "<b>être</b> is irregular. <b>je suis</b> “I am”, <b>tu es</b> “you are” (one person you know), <b>il est</b> / <b>elle est</b> “he is / she is”. The pronoun stays: French does not drop it.",
+          "examples": [
+            ["Je {suis} Anne.", "I · am · Anne", "I am Anne."],
+            [
+              "Tu {es} fatigué.",
+              "you · are · tired",
+              "You are tired. (to a man)"
+            ],
+            ["Elle {est} ici.", "she · is · here", "She is here."]
+          ]
+        },
+        {
+          "h": "We, you, and they",
+          "p": "<b>nous sommes</b> “we are”, <b>vous êtes</b> “you are” (polite, or several people), <b>ils sont</b> “they are” (a group with at least one man), <b>elles sont</b> (a group of women).",
+          "examples": [
+            ["Nous {sommes} amis.", "we · are · friends", "We are friends."],
+            [
+              "Vous {êtes} Madame Martin?",
+              "you · are · Mrs · Martin",
+              "Are you Mrs Martin?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Je ＿ Anne.",
+          "en": "I am Anne.",
+          "options": ["suis", "es", "est", "sommes"],
+          "answer": "suis",
+          "why": "“I am” is je suis."
+        },
+        {
+          "q": "Tu ＿ ici.",
+          "en": "You are here.",
+          "options": ["es", "suis", "est", "êtes"],
+          "answer": "es",
+          "why": "To one person you know: tu es."
+        },
+        {
+          "q": "Nous ＿ amis.",
+          "en": "We are friends.",
+          "options": ["sommes", "sont", "êtes", "suis"],
+          "answer": "sommes",
+          "why": "“We are” is nous sommes."
+        },
+        {
+          "q": "Vous ＿ Madame Martin?",
+          "en": "Are you Mrs Martin?",
+          "options": ["êtes", "es", "est", "sommes"],
+          "answer": "êtes",
+          "why": "Polite vous: vous êtes."
+        },
+        {
+          "q": "Elles ＿ ici.",
+          "en": "They (women) are here.",
+          "options": ["sont", "sommes", "êtes", "es"],
+          "answer": "sont",
+          "why": "ils and elles both take sont."
+        }
+      ]
+    },
+    {
+      "id": "avoir",
+      "title": "avoir — “to have”",
+      "particle": "avoir",
+      "summary": "j'ai, tu as, il a.",
+      "sections": [
+        {
+          "p": "<b>avoir</b> is the other verb you need on day one. <b>j'ai</b> (je + ai drops the e), <b>tu as</b>, <b>il a</b> / <b>elle a</b>, <b>nous avons</b>, <b>vous avez</b>, <b>ils ont</b> / <b>elles ont</b>.",
+          "examples": [
+            ["J'{ai} un livre.", "I have · a · book", "I have a book."],
+            [
+              "Tu {as} une question.",
+              "you · have · a · question",
+              "You have a question."
+            ],
+            [
+              "Nous {avons} le temps.",
+              "we · have · the · time",
+              "We have time."
+            ]
+          ]
+        },
+        {
+          "h": "Age uses avoir",
+          "p": "Age is something you have: <b>j'ai vingt ans</b> “I am twenty”. Not je suis.",
+          "examples": [
+            [
+              "Elle {a} vingt ans.",
+              "she · has · twenty · years",
+              "She is twenty."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "J'＿ un livre.",
+          "en": "I have a book.",
+          "options": ["ai", "as", "a", "avons"],
+          "answer": "ai",
+          "why": "je + ai → j'ai."
+        },
+        {
+          "q": "Tu ＿ une question.",
+          "en": "You have a question.",
+          "options": ["as", "ai", "a", "avez"],
+          "answer": "as",
+          "why": "tu as."
+        },
+        {
+          "q": "Elle ＿ vingt ans.",
+          "en": "She is twenty.",
+          "options": ["a", "ai", "est", "as"],
+          "answer": "a",
+          "why": "Age uses avoir: elle a vingt ans."
+        },
+        {
+          "q": "Nous ＿ le temps.",
+          "en": "We have time.",
+          "options": ["avons", "avez", "ont", "ai"],
+          "answer": "avons",
+          "why": "nous avons."
+        },
+        {
+          "q": "Ils ＿ un chat.",
+          "en": "They have a cat.",
+          "options": ["ont", "ont pas", "avez", "sommes"],
+          "answer": "ont",
+          "why": "ils/elles ont."
+        }
+      ]
+    },
+    {
+      "id": "articles",
+      "title": "le, la, un, une",
+      "particle": "le la",
+      "summary": "Gender, and “the” versus “a”.",
+      "sections": [
+        {
+          "p": "Nouns are masculine or feminine. “The” is <b>le</b> (masculine) and <b>la</b> (feminine). Before a vowel sound both become <b>l'</b>: <b>l'ami</b>, <b>l'école</b>. Plural “the” is <b>les</b> for both genders.",
+          "examples": [
+            [
+              "{Le} livre est ici.",
+              "the · book · is · here",
+              "The book is here."
+            ],
+            [
+              "{La} table est grande.",
+              "the · table · is · big",
+              "The table is big."
+            ],
+            [
+              "{Les} livres sont ici.",
+              "the · books · are · here",
+              "The books are here."
+            ]
+          ]
+        },
+        {
+          "h": "un and une",
+          "p": "“A” is <b>un</b> (masculine) and <b>une</b> (feminine). Professions after être often drop it: <b>elle est médecin</b> “she is a doctor”.",
+          "examples": [
+            ["C'est {un} livre.", "it is · a · book", "It's a book."],
+            [
+              "C'est {une} question.",
+              "it is · a · question",
+              "It's a question."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ livre est ici.",
+          "en": "The book is here. (masculine)",
+          "options": ["Le", "La", "Les", "Une"],
+          "answer": "Le",
+          "why": "livre is masculine: le livre."
+        },
+        {
+          "q": "＿ table est grande.",
+          "en": "The table is big. (feminine)",
+          "options": ["La", "Le", "Les", "Un"],
+          "answer": "La",
+          "why": "table is feminine: la table."
+        },
+        {
+          "q": "＿ livres sont ici.",
+          "en": "The books are here.",
+          "options": ["Les", "Le", "La", "Des"],
+          "answer": "Les",
+          "why": "Plural “the” is les."
+        },
+        {
+          "q": "C'est ＿ livre.",
+          "en": "It's a book.",
+          "options": ["un", "une", "la", "le"],
+          "answer": "un",
+          "why": "un with a masculine noun."
+        },
+        {
+          "q": "C'est ＿ question.",
+          "en": "It's a question.",
+          "options": ["une", "un", "le", "les"],
+          "answer": "une",
+          "why": "une with a feminine noun."
+        }
+      ]
+    },
+    {
+      "id": "er-verbs",
+      "title": "Verbs in -er",
+      "particle": "-er",
+      "summary": "parler, aimer, habiter.",
+      "sections": [
+        {
+          "p": "The biggest group of verbs ends in -er. Drop -er and add: <b>je parle</b>, <b>tu parles</b>, <b>il parle</b>, <b>nous parlons</b>, <b>vous parlez</b>, <b>ils parlent</b>. The last consonant of -ent is silent; je/tu/il sound alike in speech.",
+          "examples": [
+            ["Je {parle} français.", "I · speak · French", "I speak French."],
+            [
+              "Tu {habites} à Paris.",
+              "you · live · in · Paris",
+              "You live in Paris."
+            ],
+            [
+              "Nous {aimons} le café.",
+              "we · like · the · coffee",
+              "We like coffee."
+            ]
+          ]
+        },
+        {
+          "h": "je before a vowel",
+          "p": "Before a vowel sound, je becomes j': <b>j'habite</b>, <b>j'aime</b>.",
+          "examples": [
+            ["J'{habite} ici.", "I live · here", "I live here."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Je parl＿ français.",
+          "en": "I speak French.",
+          "options": ["e", "es", "ons", "ez"],
+          "answer": "e",
+          "why": "je parle."
+        },
+        {
+          "q": "Tu habit＿ à Paris.",
+          "en": "You live in Paris.",
+          "options": ["es", "e", "ons", "ent"],
+          "answer": "es",
+          "why": "tu habites. The -es is written, not heard."
+        },
+        {
+          "q": "Nous aim＿ le café.",
+          "en": "We like coffee.",
+          "options": ["ons", "ez", "ent", "e"],
+          "answer": "ons",
+          "why": "nous aimons."
+        },
+        {
+          "q": "Vous parl＿ français?",
+          "en": "Do you speak French?",
+          "options": ["ez", "es", "ons", "ent"],
+          "answer": "ez",
+          "why": "vous parlez."
+        },
+        {
+          "q": "J'＿ ici.",
+          "en": "I live here. (habiter)",
+          "options": ["habite", "habites", "habitons", "suis"],
+          "answer": "habite",
+          "why": "je + habite → j'habite."
+        }
+      ]
+    },
+    {
+      "id": "negation",
+      "title": "ne…pas",
+      "particle": "ne pas",
+      "summary": "The verb sits between ne and pas.",
+      "sections": [
+        {
+          "p": "Negation wraps the verb: <b>je ne parle pas</b> “I don't speak”, <b>nous n'avons pas</b> (ne becomes n' before a vowel). <b>pas</b> comes right after the verb in these simple sentences.",
+          "examples": [
+            [
+              "Je {ne} parle {pas} anglais.",
+              "I · not · speak · not · English",
+              "I don't speak English."
+            ],
+            [
+              "Elle {n'}a {pas} de voiture.",
+              "she · not · has · not · of · car",
+              "She doesn't have a car."
+            ]
+          ]
+        },
+        {
+          "h": "pas de",
+          "p": "After a negated verb, “a” or “some” becomes <b>de</b> (d' before a vowel): <b>je n'ai pas de livre</b>, <b>pas d'amis</b>.",
+          "examples": [
+            [
+              "Je n'ai pas {de} livre.",
+              "I not have not · of · book",
+              "I don't have a book."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Je ne parle ＿.",
+          "en": "I don't speak.",
+          "options": ["pas", "ne", "de", "un"],
+          "answer": "pas",
+          "why": "ne…pas: pas follows the verb."
+        },
+        {
+          "q": "Elle ＿ a pas de voiture.",
+          "en": "She doesn't have a car.",
+          "options": ["n'", "ne", "pas", "de"],
+          "answer": "n'",
+          "why": "ne becomes n' before a vowel: n'a."
+        },
+        {
+          "q": "Je n'ai pas ＿ livre.",
+          "en": "I don't have a book.",
+          "options": ["de", "un", "le", "une"],
+          "answer": "de",
+          "why": "After ne…pas, un/une becomes de."
+        },
+        {
+          "q": "Nous ne ＿ pas.",
+          "en": "We don't speak. (parler)",
+          "options": ["parlons", "parle", "parles", "parlez"],
+          "answer": "parlons",
+          "why": "nous parlons, wrapped in ne…pas."
+        },
+        {
+          "q": "Tu n'＿ pas français.",
+          "en": "You don't speak French. (parler)",
+          "options": ["parles", "parle", "parlons", "es"],
+          "answer": "parles",
+          "why": "tu parles: tu ne parles pas."
+        }
+      ]
+    },
+    {
+      "id": "questions",
+      "title": "Questions and agreement",
+      "particle": "est-ce que",
+      "summary": "Asking, and adjectives that agree.",
+      "sections": [
+        {
+          "p": "The simplest question adds <b>est-ce que</b> in front of a statement: <b>Est-ce que tu parles français?</b> You can also just raise your voice: <b>Tu parles français?</b> Question words come first: <b>Où habites-tu?</b>",
+          "examples": [
+            [
+              "{Est-ce que} tu parles français?",
+              "is it that · you · speak · French",
+              "Do you speak French?"
+            ],
+            ["{Où} habites-tu?", "where · live-you", "Where do you live?"]
+          ]
+        },
+        {
+          "h": "Adjectives",
+          "p": "An adjective agrees with the noun. Add -e for a feminine singular when the masculine does not already end in -e: <b>petit / petite</b>, <b>grand / grande</b>. <b>un livre intéressant</b>, <b>une maison intéressante</b>.",
+          "examples": [
+            ["une {petite} maison", "a · small · house", "a small house"],
+            [
+              "un livre {intéressant}",
+              "a · book · interesting",
+              "an interesting book"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ tu parles français?",
+          "en": "Do you speak French?",
+          "options": ["Est-ce que", "Où", "Pas", "Une"],
+          "answer": "Est-ce que",
+          "why": "est-ce que turns a statement into a yes/no question."
+        },
+        {
+          "q": "＿ habites-tu?",
+          "en": "Where do you live?",
+          "options": ["Où", "Est-ce que", "Qui", "Une"],
+          "answer": "Où",
+          "why": "où = where."
+        },
+        {
+          "q": "une ＿ maison",
+          "en": "a small house",
+          "options": ["petite", "petit", "petits", "intéressant"],
+          "answer": "petite",
+          "why": "maison is feminine: petite."
+        },
+        {
+          "q": "un livre ＿",
+          "en": "an interesting book",
+          "options": ["intéressant", "intéressante", "petite", "grand"],
+          "answer": "intéressant",
+          "why": "livre is masculine, so no extra -e."
+        },
+        {
+          "q": "une maison ＿",
+          "en": "an interesting house",
+          "options": ["intéressante", "intéressant", "petit", "un"],
+          "answer": "intéressante",
+          "why": "maison is feminine: intéressante."
+        }
+      ]
+    }
+  ]
+}

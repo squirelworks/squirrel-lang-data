@@ -1,0 +1,955 @@
+{
+  "schema": "grammar@1",
+  "language": "greek",
+  "notes": [
+    "Modern Greek first grammar for the Grammar Learner. Written for this project.",
+    "Examples are [Greek, romanization, English]; {braces} mark the point of the lesson.",
+    "Drills are { q, en, options, answer, why }; ＿ is the blank.",
+    "",
+    "Sources (open / educational; attested Modern Greek — original example sentences):",
+    "- Wiktionary Modern Greek lemmas and grammar notes (CC BY-SA): είμαι, έχω;",
+    "  enclitic possessives μου/σου/του/της/μας/σας/τους; weak object clitics",
+    "  με/σε/τον/την/το/μας/σας/τους; future particle θα; να-clauses with θέλω /",
+    "  μπορώ / πρέπει; aorist stems έγραψα, μίλησα, πήγα, είδα, είπα, ήρθα.",
+    "- Wikipedia “Modern Greek grammar”, “Greek language”, “Modern Greek” (CC BY-SA)",
+    "  for beginner overview of possessives, clitic pronouns, θα-future, subjunctive",
+    "  with να, and aorist (perfective past) vs present.",
+    "- In-repo languages/greek/reference.json and vocab.js — same Desk pack lemmas",
+    "  and romanization style (accent on the stressed vowel). Lessons 1–6 unchanged;",
+    "  7–12 deepen the same seam (possessives, object clitics, έχω, θα, να, aorist)."
+  ],
+  "title": "Greek first grammar",
+  "intro": "Modern Greek marks the subject on the verb, so “I” and “you” are usually left out. Every noun is masculine, feminine or neuter, and the article in front of it shows which, and changes when the noun is the object. These lessons cover “to be”, the article and gender, the present tense, saying no and asking questions, the object form, plurals, possessives, weak object pronouns, “to have”, the future with θα, wanting and ability with να, and the simple past. The romanization follows modern pronunciation, with an accent on the stressed vowel.",
+  "lessons": [
+    {
+      "id": "eimai",
+      "title": "Είμαι, είσαι, είναι — “to be”",
+      "particle": "είμαι",
+      "summary": "The verb “to be”, and why Greek leaves out “I” and “you”.",
+      "sections": [
+        {
+          "p": "The ending of the verb already says who: <b>είμαι</b> “I am”, <b>είσαι</b> “you are”, <b>είναι</b> “he, she, it is”. So εγώ (I) and εσύ (you) are only added for emphasis.",
+          "examples": [
+            ["{Είμαι} φοιτητής.", "Íme fititís.", "I am a student."],
+            ["Πού {είσαι};", "Pu íse?", "Where are you?"],
+            [
+              "Η Μαρία {είναι} γιατρός.",
+              "I María íne giatrós.",
+              "Maria is a doctor."
+            ]
+          ]
+        },
+        {
+          "h": "The plural",
+          "p": "<b>είμαστε</b> “we are”, <b>είστε</b> “you are” (several people, or one person politely), <b>είναι</b> “they are”. Note that είναι serves for both “is” and “are”.",
+          "examples": [
+            ["{Είμαστε} φίλοι.", "Ímaste fíli.", "We are friends."],
+            [
+              "Από πού {είστε};",
+              "Apó pu íste?",
+              "Where are you from? (polite)"
+            ],
+            [
+              "Τα παιδιά {είναι} στο σπίτι.",
+              "Ta pediá íne sto spíti.",
+              "The children are at home."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ από την Αθήνα.",
+          "en": "I am from Athens.",
+          "options": ["Είμαι", "Είσαι", "Είναι", "Είμαστε"],
+          "answer": "Είμαι",
+          "why": "“I am” is είμαι; no εγώ is needed."
+        },
+        {
+          "q": "Ο Νίκος ＿ δάσκαλος.",
+          "en": "Nikos is a teacher.",
+          "options": ["είναι", "είμαι", "είσαι", "είστε"],
+          "answer": "είναι",
+          "why": "He, she or it: είναι."
+        },
+        {
+          "q": "Τι κάνετε; ＿ καλά;",
+          "en": "How are you? Are you well? (polite)",
+          "options": ["Είστε", "Είσαι", "Είμαστε", "Είμαι"],
+          "answer": "Είστε",
+          "why": "Polite “you” uses the plural, είστε."
+        },
+        {
+          "q": "＿ Έλληνες.",
+          "en": "We are Greeks.",
+          "options": ["Είμαστε", "Είναι", "Είστε", "Είμαι"],
+          "answer": "Είμαστε",
+          "why": "“We are” is είμαστε."
+        },
+        {
+          "q": "Τα σπίτια ＿ μεγάλα.",
+          "en": "The houses are big.",
+          "options": ["είναι", "είμαστε", "είσαι", "είμαι"],
+          "answer": "είναι",
+          "why": "“They are” is also είναι."
+        }
+      ]
+    },
+    {
+      "id": "articles",
+      "title": "Ο, η, το — the article and gender",
+      "particle": "ο η το",
+      "summary": "Three genders, each with its own word for “the”, and the endings that give them away.",
+      "sections": [
+        {
+          "p": "“The” is <b>ο</b> before a masculine noun, <b>η</b> before a feminine one and <b>το</b> before a neuter one. The ending is a strong clue: masculine nouns usually end in <b>-ος, -ας, -ης</b>, feminine in <b>-α, -η</b>, neuter in <b>-ο, -ι, -μα</b>.",
+          "examples": [
+            [
+              "{ο} δρόμος, {ο} άντρας",
+              "o drómos, o ándras",
+              "the street, the man"
+            ],
+            [
+              "{η} πόλη, {η} θάλασσα",
+              "i póli, i thálassa",
+              "the town, the sea"
+            ],
+            [
+              "{το} νερό, {το} σπίτι, {το} όνομα",
+              "to neró, to spíti, to ónoma",
+              "the water, the house, the name"
+            ]
+          ]
+        },
+        {
+          "h": "“A”",
+          "p": "The word for “a” also has a gender: <b>ένας</b> (masculine), <b>μία / μια</b> (feminine), <b>ένα</b> (neuter). They are also the number “one”. Adjectives take the matching ending: καλός, καλή, καλό (good).",
+          "examples": [
+            ["{ένας} καλός φίλος", "énas kalós fílos", "a good friend"],
+            ["{μια} μεγάλη πόλη", "mia megáli póli", "a big city"],
+            ["{ένα} μικρό παιδί", "éna mikró pedí", "a small child"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ θάλασσα είναι ζεστή.",
+          "en": "The sea is warm.",
+          "options": ["Η", "Ο", "Το"],
+          "answer": "Η",
+          "why": "θάλασσα ends in -α, a feminine ending: η."
+        },
+        {
+          "q": "＿ δρόμος είναι μακρύς.",
+          "en": "The road is long.",
+          "options": ["Ο", "Η", "Το"],
+          "answer": "Ο",
+          "why": "-ος is the usual masculine ending: ο."
+        },
+        {
+          "q": "＿ σπίτι είναι μικρό.",
+          "en": "The house is small.",
+          "options": ["Το", "Ο", "Η"],
+          "answer": "Το",
+          "why": "Nouns in -ι are neuter: το."
+        },
+        {
+          "q": "Έχω ＿ αδερφή.",
+          "en": "I have a sister.",
+          "options": ["μια", "ένας", "ένα"],
+          "answer": "μια",
+          "why": "αδερφή is feminine, so “a” is μια."
+        },
+        {
+          "q": "＿ καφές, παρακαλώ.",
+          "en": "A coffee, please.",
+          "options": ["Ένας", "Μια", "Ένα"],
+          "answer": "Ένας",
+          "why": "καφές ends in -ές, masculine: ένας."
+        }
+      ]
+    },
+    {
+      "id": "present",
+      "title": "The present tense",
+      "particle": "-ω -εις -ει",
+      "summary": "Six endings that say who does it, in the two main verb groups.",
+      "sections": [
+        {
+          "p": "Most verbs end in <b>-ω</b>. Keep the stem and change the ending: <b>-ω</b> (I), <b>-εις</b> (you), <b>-ει</b> (he/she), <b>-ουμε</b> (we), <b>-ετε</b> (you all), <b>-ουν</b> (they). For γράφω, to write: γράφω, γράφεις, γράφει, γράφουμε, γράφετε, γράφουν.",
+          "examples": [
+            ["{Μένω} στην Αθήνα.", "Méno stin Athína.", "I live in Athens."],
+            ["Τι {διαβάζεις};", "Ti diavázis?", "What are you reading?"],
+            [
+              "Τα παιδιά {παίζουν} έξω.",
+              "Ta pediá pézun éxo.",
+              "The children are playing outside."
+            ]
+          ]
+        },
+        {
+          "h": "Verbs stressed on the end",
+          "p": "A second group is stressed on the ending, like <b>μιλάω</b> (to speak): μιλάω, μιλάς, μιλάει, μιλάμε, μιλάτε, μιλάνε. Αγαπάω (love), ρωτάω (ask) and πεινάω (be hungry) go the same way. One present form covers both “I speak” and “I am speaking”.",
+          "examples": [
+            ["{Μιλάτε} αγγλικά;", "Miláte angliká?", "Do you speak English?"],
+            [
+              "{Μιλάω} λίγα ελληνικά.",
+              "Miláo líga elliniká.",
+              "I speak a little Greek."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Εγώ ＿ καφέ.",
+          "en": "I drink coffee. (πίνω)",
+          "options": ["πίνω", "πίνεις", "πίνει", "πίνουν"],
+          "answer": "πίνω",
+          "why": "“I” takes -ω."
+        },
+        {
+          "q": "Εσύ τι ＿;",
+          "en": "What do you want? (θέλω)",
+          "options": ["θέλεις", "θέλω", "θέλει", "θέλουμε"],
+          "answer": "θέλεις",
+          "why": "“You” (one person) takes -εις."
+        },
+        {
+          "q": "Εμείς ＿ στη Θεσσαλονίκη.",
+          "en": "We live in Thessaloniki. (μένω)",
+          "options": ["μένουμε", "μένουν", "μένετε", "μένει"],
+          "answer": "μένουμε",
+          "why": "“We” takes -ουμε."
+        },
+        {
+          "q": "Η Άννα ＿ γαλλικά.",
+          "en": "Anna speaks French. (μιλάω)",
+          "options": ["μιλάει", "μιλάω", "μιλάμε", "μιλάνε"],
+          "answer": "μιλάει",
+          "why": "In the μιλάω group, he/she is μιλάει."
+        },
+        {
+          "q": "Οι φίλοι μου ＿ μουσική.",
+          "en": "My friends listen to music. (ακούω)",
+          "options": ["ακούνε", "ακούει", "ακούω", "ακούμε"],
+          "answer": "ακούνε",
+          "why": "“They” takes -ουν, or -ουνε / -νε in speech; ακούω gives ακούνε."
+        }
+      ]
+    },
+    {
+      "id": "den-questions",
+      "title": "Δεν, and asking questions",
+      "particle": "δεν ;",
+      "summary": "Put δεν before the verb to say no; a question needs only a rising voice and a “;”.",
+      "sections": [
+        {
+          "p": "To make a verb negative, put <b>δεν</b> right before it. The word order does not change.",
+          "examples": [
+            ["{Δεν} καταλαβαίνω.", "Den katalavéno.", "I don't understand."],
+            [
+              "Ο Πέτρος {δεν} είναι εδώ.",
+              "O Pétros den íne edó.",
+              "Petros isn't here."
+            ]
+          ]
+        },
+        {
+          "h": "Questions",
+          "p": "A yes/no question is the same sentence said with a rising voice. Greek writes the question mark as <b>;</b>, which looks like an English semicolon. The question words go first: <b>τι</b> (what), <b>πού</b> (where), <b>πότε</b> (when), <b>ποιος</b> (who), <b>γιατί</b> (why), <b>πώς</b> (how), <b>πόσο</b> (how much).",
+          "examples": [
+            ["Είσαι καλά{;}", "Íse kalá?", "Are you well?"],
+            [
+              "{Πού} είναι η τουαλέτα;",
+              "Pu íne i tualéta?",
+              "Where is the toilet?"
+            ],
+            ["{Πόσο} κάνει;", "Póso káni?", "How much is it?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ θέλω ψωμί.",
+          "en": "I don't want bread.",
+          "options": ["Δεν", "Όχι", "Μη", "Ναι"],
+          "answer": "Δεν",
+          "why": "δεν goes right before the verb. όχι is the word “no” on its own."
+        },
+        {
+          "q": "＿ είναι το μουσείο;",
+          "en": "Where is the museum?",
+          "options": ["Πού", "Τι", "Πότε", "Ποιος"],
+          "answer": "Πού",
+          "why": "πού = where."
+        },
+        {
+          "q": "＿ είναι αυτός;",
+          "en": "Who is he?",
+          "options": ["Ποιος", "Πού", "Πώς", "Πόσο"],
+          "answer": "Ποιος",
+          "why": "ποιος = who."
+        },
+        {
+          "q": "Which sentence is a question?",
+          "en": "",
+          "options": [
+            "Μιλάς ελληνικά;",
+            "Μιλάς ελληνικά.",
+            "Μιλάς ελληνικά,",
+            "Μιλάς ελληνικά!"
+          ],
+          "answer": "Μιλάς ελληνικά;",
+          "why": "The Greek question mark is ;."
+        },
+        {
+          "q": "＿ σε λένε;",
+          "en": "What's your name? (How do they call you?)",
+          "options": ["Πώς", "Πού", "Γιατί", "Πότε"],
+          "answer": "Πώς",
+          "why": "Greeks ask “how do they call you?”: Πώς σε λένε;"
+        }
+      ]
+    },
+    {
+      "id": "accusative",
+      "title": "The object: τον, την, το",
+      "particle": "τον την",
+      "summary": "When a noun is the object, or comes after a preposition, its article and ending change.",
+      "sections": [
+        {
+          "p": "The object of a verb takes the accusative. The article changes: <b>ο → τον</b>, <b>η → την</b>, and <b>το</b> stays. Masculine nouns drop their final -ς: ο φίλος → τον φίλο, ο άντρας → τον άντρα.",
+          "examples": [
+            [
+              "Βλέπω {τον} φίλο μου.",
+              "Vlépo ton fílo mu.",
+              "I see my friend."
+            ],
+            ["Ξέρεις {την} Ελένη;", "Xéris tin Eléni?", "Do you know Eleni?"],
+            [
+              "Πίνω {τον} καφέ.",
+              "Píno ton kafé.",
+              "I am drinking the coffee."
+            ]
+          ]
+        },
+        {
+          "h": "σε + the article: στο, στη, στον",
+          "p": "<b>σε</b> (to, at, in) joins the article: <b>στον</b> (masculine), <b>στη(ν)</b> (feminine), <b>στο</b> (neuter). Prepositions like από (from), με (with) and για (for) also take the accusative.",
+          "examples": [
+            ["Πάω {στο} σπίτι.", "Páo sto spíti.", "I'm going home."],
+            ["Μένει {στην} Κρήτη.", "Méni stin Kríti.", "She lives in Crete."],
+            [
+              "Μιλάω με {τον} Γιάννη.",
+              "Miláo me ton Giánni.",
+              "I'm talking with Giannis."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Αγαπώ ＿ θάλασσα.",
+          "en": "I love the sea.",
+          "options": ["την", "η", "τον", "το"],
+          "answer": "την",
+          "why": "Feminine object: η becomes την."
+        },
+        {
+          "q": "Περιμένω ＿ λεωφορείο.",
+          "en": "I'm waiting for the bus.",
+          "options": ["το", "τον", "την", "ο"],
+          "answer": "το",
+          "why": "λεωφορείο is neuter; το stays the same."
+        },
+        {
+          "q": "Ξέρω τον ＿.",
+          "en": "I know the teacher. (ο δάσκαλος)",
+          "options": ["δάσκαλο", "δάσκαλος", "δάσκαλοι", "δασκάλου"],
+          "answer": "δάσκαλο",
+          "why": "A masculine object loses its final -ς."
+        },
+        {
+          "q": "Πάμε ＿ παραλία;",
+          "en": "Shall we go to the beach? (η παραλία)",
+          "options": ["στην", "στον", "στο", "σε η"],
+          "answer": "στην",
+          "why": "σε + την = στην."
+        },
+        {
+          "q": "Είμαι ＿ γραφείο.",
+          "en": "I'm at the office. (το γραφείο)",
+          "options": ["στο", "στον", "στη", "το"],
+          "answer": "στο",
+          "why": "σε + το = στο."
+        }
+      ]
+    },
+    {
+      "id": "plural",
+      "title": "Plurals: οι and τα",
+      "particle": "οι τα",
+      "summary": "Masculine and feminine plurals take οι; neuter plurals take τα.",
+      "sections": [
+        {
+          "p": "“The” in the plural is <b>οι</b> for masculine and feminine nouns and <b>τα</b> for neuter ones. Common endings: -ος → <b>-οι</b>, -ας and -ης → <b>-ες</b>, -α and -η → <b>-ες</b>, -ο → <b>-α</b>, -ι → <b>-ια</b>, -μα → <b>-ματα</b>.",
+          "examples": [
+            ["{οι} φίλοι", "i fíli", "the friends (ο φίλος)"],
+            ["{οι} γυναίκες", "i ginékes", "the women (η γυναίκα)"],
+            [
+              "{τα} βιβλία, {τα} παιδιά",
+              "ta vivlía, ta pediá",
+              "the books, the children"
+            ],
+            ["{τα} ονόματα", "ta onómata", "the names (το όνομα)"]
+          ]
+        },
+        {
+          "h": "Adjectives follow",
+          "p": "Adjectives take a plural ending too: καλοί (masculine), καλές (feminine), καλά (neuter). And the verb is plural: τα παιδιά είναι, οι φίλοι μένουν.",
+          "examples": [
+            [
+              "Τα σπίτια είναι {μεγάλα}.",
+              "Ta spítia íne megála.",
+              "The houses are big."
+            ],
+            [
+              "Οι μέρες είναι {ζεστές}.",
+              "I méres íne zestés.",
+              "The days are hot."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ παιδιά παίζουν.",
+          "en": "The children are playing.",
+          "options": ["Τα", "Οι", "Το", "Η"],
+          "answer": "Τα",
+          "why": "παιδί is neuter; neuter plurals take τα."
+        },
+        {
+          "q": "Οι ＿ είναι εδώ.",
+          "en": "The friends are here. (ο φίλος)",
+          "options": ["φίλοι", "φίλος", "φίλα", "φίλες"],
+          "answer": "φίλοι",
+          "why": "-ος becomes -οι."
+        },
+        {
+          "q": "Δύο ＿, παρακαλώ.",
+          "en": "Two coffees, please. (ο καφές)",
+          "options": ["καφέδες", "καφέ", "καφές", "καφέα"],
+          "answer": "καφέδες",
+          "why": "Some masculines in -ές add -δες; ask for δύο καφέδες."
+        },
+        {
+          "q": "Τα ＿ μου είναι στην τσάντα.",
+          "en": "My books are in the bag. (το βιβλίο)",
+          "options": ["βιβλία", "βιβλίοι", "βιβλίες", "βιβλίο"],
+          "answer": "βιβλία",
+          "why": "Neuter -ο becomes -α."
+        },
+        {
+          "q": "Οι πόλεις είναι ＿.",
+          "en": "The cities are beautiful. (ωραίος, -α, -ο)",
+          "options": ["ωραίες", "ωραίοι", "ωραία", "ωραίος"],
+          "answer": "ωραίες",
+          "why": "πόλη is feminine; feminine plural adjectives end in -ες."
+        }
+      ]
+    },
+    {
+      "id": "possessives",
+      "title": "Μου, σου, του — mine, yours, his",
+      "particle": "μου σου του",
+      "summary": "Little words after the noun say whose it is.",
+      "sections": [
+        {
+          "p": "Possession rides after the noun: το σπίτι <b>μου</b> “my house”. The set is <b>μου</b> (my), <b>σου</b> (your, one person), <b>του</b> (his / its), <b>της</b> (her). They do not change with the gender of the thing owned.",
+          "examples": [
+            [
+              "Το όνομά {μου} είναι Νίκος.",
+              "To ónomá mu íne Níkos.",
+              "My name is Nikos."
+            ],
+            [
+              "Πού είναι η τσάντα {σου};",
+              "Pu íne i tsánda su?",
+              "Where is your bag?"
+            ],
+            [
+              "Ο πατέρας {του} είναι γιατρός.",
+              "O patéras tu íne giatrós.",
+              "His father is a doctor."
+            ],
+            [
+              "Η μητέρα {της} μένει εδώ.",
+              "I mitéra tis méni edó.",
+              "Her mother lives here."
+            ]
+          ]
+        },
+        {
+          "h": "Ours, yours, theirs",
+          "p": "For more than one owner: <b>μας</b> (our), <b>σας</b> (your, polite or plural), <b>τους</b> (their). Same place — right after the noun.",
+          "examples": [
+            [
+              "Το σπίτι {μας} είναι μικρό.",
+              "To spíti mas íne mikró.",
+              "Our house is small."
+            ],
+            [
+              "Πώς σας λένε; Το όνομά {σας};",
+              "Pós sas léne? To ónomá sas?",
+              "What's your name? Your name?"
+            ],
+            [
+              "Οι φίλοι {τους} είναι εδώ.",
+              "I fíli tus íne edó.",
+              "Their friends are here."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Το βιβλίο ＿ είναι εδώ.",
+          "en": "My book is here.",
+          "options": ["μου", "σου", "του", "μας"],
+          "answer": "μου",
+          "why": "μου = my, after the noun."
+        },
+        {
+          "q": "Πού είναι η αδερφή ＿;",
+          "en": "Where is your sister? (one friend)",
+          "options": ["σου", "σας", "μου", "της"],
+          "answer": "σου",
+          "why": "σου = your (one familiar person)."
+        },
+        {
+          "q": "Η μητέρα ＿ είναι δασκάλα.",
+          "en": "Her mother is a teacher.",
+          "options": ["της", "του", "τους", "μας"],
+          "answer": "της",
+          "why": "της = her."
+        },
+        {
+          "q": "Το αυτοκίνητο ＿ είναι κόκκινο.",
+          "en": "Our car is red.",
+          "options": ["μας", "μου", "σας", "τους"],
+          "answer": "μας",
+          "why": "μας = our."
+        },
+        {
+          "q": "Οι γονείς ＿ μένουν στην Αθήνα.",
+          "en": "Their parents live in Athens.",
+          "options": ["τους", "της", "του", "σας"],
+          "answer": "τους",
+          "why": "τους = their."
+        }
+      ]
+    },
+    {
+      "id": "object-clitics",
+      "title": "Με, σε, τον — me, you, him",
+      "particle": "με σε τον",
+      "summary": "Short object pronouns sit right before the verb.",
+      "sections": [
+        {
+          "p": "When the object is a pronoun, use the weak forms before the verb: <b>με</b> (me), <b>σε</b> (you, one person), <b>τον</b> (him), <b>την</b> (her), <b>το</b> (it). So Με λένε Νίκο “They call me Nikos”.",
+          "examples": [
+            [
+              "{Με} λένε Μαρία.",
+              "Me léne María.",
+              "My name is Maria. (They call me Maria.)"
+            ],
+            ["{Σε} βλέπω.", "Se vlépo.", "I see you."],
+            ["{Τον} ξέρω.", "Ton xéro.", "I know him."],
+            ["{Την} περιμένω.", "Tin periméno.", "I'm waiting for her."],
+            ["{Το} θέλω.", "To thélo.", "I want it."]
+          ]
+        },
+        {
+          "h": "Us, you (pl.), them",
+          "p": "<b>μας</b> (us), <b>σας</b> (you, polite or plural), and <b>τους</b> (them, masculine or mixed) go in the same slot before the verb. Feminine “them” is <b>τις</b>.",
+          "examples": [
+            ["{Μας} καλούν.", "Mas kalún.", "They are calling us."],
+            [
+              "{Σας} καταλαβαίνω.",
+              "Sas katalavéno.",
+              "I understand you (polite)."
+            ],
+            [
+              "{Τους} βλέπω κάθε μέρα.",
+              "Tus vlépo káthe méra.",
+              "I see them every day."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ λένε Γιάννη.",
+          "en": "They call me Giannis. / My name is Giannis.",
+          "options": ["Με", "Σε", "Τον", "Μας"],
+          "answer": "Με",
+          "why": "με = me, before the verb."
+        },
+        {
+          "q": "＿ ξέρω καλά.",
+          "en": "I know you well. (one friend)",
+          "options": ["Σε", "Με", "Τον", "Σας"],
+          "answer": "Σε",
+          "why": "σε = you (singular object)."
+        },
+        {
+          "q": "＿ περιμένω στο καφέ.",
+          "en": "I'm waiting for him at the café.",
+          "options": ["Τον", "Την", "Το", "Με"],
+          "answer": "Τον",
+          "why": "τον = him."
+        },
+        {
+          "q": "＿ θέλω πολύ.",
+          "en": "I want it a lot. (neuter)",
+          "options": ["Το", "Τον", "Την", "Σε"],
+          "answer": "Το",
+          "why": "το = it (neuter object)."
+        },
+        {
+          "q": "＿ βλέπετε;",
+          "en": "Do you see us?",
+          "options": ["Μας", "Σας", "Τους", "Με"],
+          "answer": "Μας",
+          "why": "μας = us before the verb."
+        }
+      ]
+    },
+    {
+      "id": "echo",
+      "title": "Έχω — “to have”",
+      "particle": "έχω",
+      "summary": "Six endings for “have”, and how it differs from είμαι.",
+      "sections": [
+        {
+          "p": "<b>Έχω</b> means “I have”. The endings match the present group you already know: έχω, έχεις, έχει, έχουμε, έχετε, έχουν. Use it for things you own or hold, not for “I am a …”.",
+          "examples": [
+            ["{Έχω} έναν αδερφό.", "Écho énan aderfó.", "I have a brother."],
+            ["{Έχεις} χρόνο;", "Échis chróno?", "Do you have time?"],
+            [
+              "Η Άννα {έχει} ένα αυτοκίνητο.",
+              "I Ánna échi éna aftokínito.",
+              "Anna has a car."
+            ]
+          ]
+        },
+        {
+          "h": "We, you, they — and “there is”",
+          "p": "<b>Έχουμε</b>, <b>έχετε</b>, <b>έχουν</b> follow the same pattern. The fixed phrase <b>υπάρχει</b> / <b>υπάρχουν</b> means “there is / there are”; beginners also meet <b>έχει</b> in that sense in speech (“there is”), but the verb still conjugates for a real owner.",
+          "examples": [
+            [
+              "{Έχουμε} δύο παιδιά.",
+              "Échume dío pediá.",
+              "We have two children."
+            ],
+            ["{Έχετε} νερό;", "Échete neró?", "Do you have water? (polite)"],
+            [
+              "Οι γείτονες {έχουν} σκύλο.",
+              "I gítones échun skílo.",
+              "The neighbours have a dog."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ένα βιβλίο.",
+          "en": "I have a book.",
+          "options": ["Έχω", "Είμαι", "Έχεις", "Έχουν"],
+          "answer": "Έχω",
+          "why": "έχω = I have; είμαι is “I am”."
+        },
+        {
+          "q": "＿ αδερφή;",
+          "en": "Do you have a sister? (one friend)",
+          "options": ["Έχεις", "Έχω", "Έχει", "Έχετε"],
+          "answer": "Έχεις",
+          "why": "“You have” (singular) is έχεις."
+        },
+        {
+          "q": "Ο Νίκος ＿ αυτοκίνητο.",
+          "en": "Nikos has a car.",
+          "options": ["έχει", "έχω", "είναι", "έχουν"],
+          "answer": "έχει",
+          "why": "He/she/it has: έχει."
+        },
+        {
+          "q": "＿ χρόνο σήμερα.",
+          "en": "We have time today.",
+          "options": ["Έχουμε", "Έχετε", "Έχουν", "Έχω"],
+          "answer": "Έχουμε",
+          "why": "“We have” is έχουμε."
+        },
+        {
+          "q": "Which sentence means “I am a student”, not “I have”?",
+          "en": "",
+          "options": [
+            "Είμαι φοιτητής.",
+            "Έχω φοιτητή.",
+            "Έχεις φοιτητής.",
+            "Έχουν φοιτητής."
+          ],
+          "answer": "Είμαι φοιτητής.",
+          "why": "Identity uses είμαι; έχω is for possession."
+        }
+      ]
+    },
+    {
+      "id": "tha-future",
+      "title": "Θα — the future",
+      "particle": "θα",
+      "summary": "Put θα before the verb to talk about what will happen.",
+      "sections": [
+        {
+          "p": "The everyday future is <b>θα</b> plus a verb form. For many verbs that form looks like the present: θα γράφω / θα γράψω patterns exist, but beginners can start with common set forms: <b>θα πάω</b> “I will go”, <b>θα δω</b> “I will see”, <b>θα έρθω</b> “I will come”.",
+          "examples": [
+            [
+              "{Θα} πάω στην Αθήνα αύριο.",
+              "Tha páo stin Athína ávrio.",
+              "I will go to Athens tomorrow."
+            ],
+            [
+              "{Θα} σε δω το βράδυ.",
+              "Tha se do to vrádi.",
+              "I will see you in the evening."
+            ],
+            ["{Θα} μείνουμε εδώ.", "Tha mínume edó.", "We will stay here."]
+          ]
+        },
+        {
+          "h": "Negation and questions",
+          "p": "Negate with <b>δεν θα</b> before the verb: Δεν θα έρθω “I will not come”. A question is the same words with rising voice and <b>;</b>: Θα έρθεις; “Will you come?”",
+          "examples": [
+            [
+              "{Δεν θα} φύγω σήμερα.",
+              "Den tha fígo símera.",
+              "I will not leave today."
+            ],
+            [
+              "{Θα} έρθεις μαζί μας;",
+              "Tha érthis mazí mas?",
+              "Will you come with us?"
+            ],
+            [
+              "Τι {θα} κάνετε αύριο;",
+              "Ti tha kánete ávrio?",
+              "What will you do tomorrow? (polite)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ πάω στο σπίτι.",
+          "en": "I will go home.",
+          "options": ["Θα", "Να", "Δεν", "Έχω"],
+          "answer": "Θα",
+          "why": "θα before the verb marks the future."
+        },
+        {
+          "q": "＿ θα έρθω.",
+          "en": "I will not come.",
+          "options": ["Δεν", "Ναι", "Όχι", "Θα"],
+          "answer": "Δεν",
+          "why": "δεν θα + verb: Δεν θα έρθω."
+        },
+        {
+          "q": "Θα ＿ αύριο;",
+          "en": "Will you come tomorrow? (one friend)",
+          "options": ["έρθεις", "έρχεσαι", "ήρθες", "έρθουμε"],
+          "answer": "έρθεις",
+          "why": "θα έρθεις is “will you come?” (singular)."
+        },
+        {
+          "q": "What does «Θα σε δω» mean?",
+          "en": "",
+          "options": [
+            "I will see you.",
+            "I see you.",
+            "I saw you.",
+            "I want to see you."
+          ],
+          "answer": "I will see you.",
+          "why": "θα + δω = future “I will see”; σε = you."
+        },
+        {
+          "q": "＿ μείνουμε στην Κρήτη.",
+          "en": "We will stay in Crete.",
+          "options": ["Θα", "Να", "Με", "Δεν"],
+          "answer": "Θα",
+          "why": "θα μείνουμε = we will stay."
+        }
+      ]
+    },
+    {
+      "id": "na-clauses",
+      "title": "Να — want, can, must",
+      "particle": "να",
+      "summary": "θέλω να, μπορώ να, πρέπει να introduce a second verb.",
+      "sections": [
+        {
+          "p": "After <b>θέλω</b> (I want), <b>μπορώ</b> (I can) and <b>πρέπει</b> (one must / I have to), Greek uses <b>να</b> plus another verb. Common forms: να πάω, να δω, να φάω, να μιλήσω — often a perfective stem, not always the everyday present.",
+          "examples": [
+            ["{Θέλω να} φάω.", "Thélo na fáo.", "I want to eat."],
+            ["{Μπορώ να} βοηθήσω;", "Boró na voithíso?", "Can I help?"],
+            ["{Πρέπει να} φύγω.", "Prépi na fígo.", "I have to leave."]
+          ]
+        },
+        {
+          "h": "Same person, two verbs",
+          "p": "The first verb shows the person; the να-verb usually matches: Θέλεις να έρθεις; “Do you want to come?” Δεν μπορώ να καταλάβω “I can't understand”.",
+          "examples": [
+            [
+              "{Θέλεις να} έρθεις μαζί μας;",
+              "Thélis na érthis mazí mas?",
+              "Do you want to come with us?"
+            ],
+            ["{Δεν μπορώ να} μείνω.", "Den boró na míno.", "I can't stay."],
+            [
+              "{Πρέπει να} μιλήσουμε ελληνικά.",
+              "Prépi na milísume elliniká.",
+              "We have to speak Greek."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Θέλω ＿ καφέ.",
+          "en": "I want to drink coffee. (πιω = drink, perfective)",
+          "options": ["να πιω", "θα πιω", "πίνω", "έχω πιει"],
+          "answer": "να πιω",
+          "why": "θέλω να + verb: Θέλω να πιω καφέ."
+        },
+        {
+          "q": "＿ να βοηθήσω;",
+          "en": "Can I help?",
+          "options": ["Μπορώ", "Θέλω", "Πρέπει", "Έχω"],
+          "answer": "Μπορώ",
+          "why": "μπορώ να = I can …"
+        },
+        {
+          "q": "Πρέπει ＿ τώρα.",
+          "en": "I have to leave now.",
+          "options": ["να φύγω", "θα φύγω", "φεύγω", "έφυγα"],
+          "answer": "να φύγω",
+          "why": "πρέπει να + verb."
+        },
+        {
+          "q": "What does «Θέλεις να έρθεις;» mean?",
+          "en": "",
+          "options": [
+            "Do you want to come?",
+            "Will you come?",
+            "Can you come?",
+            "Did you come?"
+          ],
+          "answer": "Do you want to come?",
+          "why": "θέλεις να έρθεις = do you want to come?"
+        },
+        {
+          "q": "Δεν μπορώ ＿.",
+          "en": "I can't understand.",
+          "options": ["να καταλάβω", "θα καταλάβω", "καταλαβαίνω", "κατάλαβα"],
+          "answer": "να καταλάβω",
+          "why": "μπορώ / δεν μπορώ να + verb."
+        }
+      ]
+    },
+    {
+      "id": "aorist",
+      "title": "The simple past — έγραψα, πήγα",
+      "particle": "έγραψα",
+      "summary": "A finished action yesterday: the aorist (perfective past).",
+      "sections": [
+        {
+          "p": "The <b>aorist</b> is a completed past: “I wrote”, “I went”. Many verbs add an έ- at the front and change the stem: γράφω → <b>έγραψα</b>, μιλάω → <b>μίλησα</b>. Endings: -α, -ες, -ε, -αμε, -ατε, -αν.",
+          "examples": [
+            [
+              "Χθες {έγραψα} ένα γράμμα.",
+              "Chthes égrapsa éna grámma.",
+              "Yesterday I wrote a letter."
+            ],
+            [
+              "{Μίλησα} με τον Γιάννη.",
+              "Mílisa me ton Giánni.",
+              "I spoke with Giannis."
+            ],
+            ["Τι {είπες};", "Ti ípes?", "What did you say?"]
+          ]
+        },
+        {
+          "h": "Very common irregulars",
+          "p": "Learn these as wholes: <b>πήγα</b> (I went), <b>είδα</b> (I saw), <b>ήρθα</b> (I came), <b>έφαγα</b> (I ate), <b>ήπια</b> (I drank). They still take the same -α -ες -ε person endings.",
+          "examples": [
+            [
+              "{Πήγα} στην παραλία.",
+              "Píga stin paralía.",
+              "I went to the beach."
+            ],
+            [
+              "{Είδα} την Ελένη χθες.",
+              "Ída tin Eléni chthes.",
+              "I saw Eleni yesterday."
+            ],
+            ["{Ήρθα} στις οκτώ.", "Írtha stis októ.", "I came at eight."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Χθες ＿ ένα μήνυμα.",
+          "en": "Yesterday I wrote a message. (γράφω)",
+          "options": ["έγραψα", "γράφω", "θα γράψω", "έγραφα"],
+          "answer": "έγραψα",
+          "why": "Aorist of γράφω: έγραψα."
+        },
+        {
+          "q": "＿ στην Αθήνα.",
+          "en": "I went to Athens.",
+          "options": ["Πήγα", "Πάω", "Θα πάω", "Πηγαίνω"],
+          "answer": "Πήγα",
+          "why": "πήγα is the aorist “I went”."
+        },
+        {
+          "q": "Τι ＿;",
+          "en": "What did you (sg.) say?",
+          "options": ["είπες", "λες", "πες", "είπαμε"],
+          "answer": "είπες",
+          "why": "είπες = you said (aorist of λέω)."
+        },
+        {
+          "q": "What does «Είδα τον φίλο μου» mean?",
+          "en": "",
+          "options": [
+            "I saw my friend.",
+            "I see my friend.",
+            "I will see my friend.",
+            "I want to see my friend."
+          ],
+          "answer": "I saw my friend.",
+          "why": "είδα is aorist “I saw”."
+        },
+        {
+          "q": "＿ στις δέκα.",
+          "en": "I came at ten.",
+          "options": ["Ήρθα", "Έρχομαι", "Θα έρθω", "Να έρθω"],
+          "answer": "Ήρθα",
+          "why": "ήρθα = I came (aorist of έρχομαι)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,899 @@
+{
+  "schema": "grammar@1",
+  "language": "thai",
+  "notes": [
+    "Thai first grammar for the Grammar Learner. Written for this project.",
+    "Examples are [Thai, romanization, English]; {braces} mark the point of the lesson.",
+    "Drills are { q, en, options, answer, why }; ＿ is the blank.",
+    "",
+    "Sources (open / educational; attested Thai constructions — original example sentences):",
+    "- Wiktionary Thai lemmas and grammar notes (CC BY-SA): ได้ (ability / permission after",
+    "  the verb), อยาก / อยากได้, ชอบ, ต้อง / ไม่ต้อง, ควร, ห้าม, ให้ (give; let; for),",
+    "  กว่า, ที่สุด, directional ไป / มา after verbs.",
+    "- Wikipedia “Thai language”, “Thai grammar” (CC BY-SA) for beginner overview of",
+    "  analytic verbs, serial verb constructions, and post-verbal ได้ vs pre-verbal modals.",
+    "- In-repo languages/thai/reference.json (markers, classifiers, pronouns) and vocab.js —",
+    "  same Desk pack lemmas; romanization without tone marks matches lessons 1–6.",
+    "Lessons 1–6 unchanged; 7–12 deepen the same beginner seam (ability, want/like, must,",
+    "ให้, comparison, directionals)."
+  ],
+  "title": "Thai first grammar",
+  "intro": "Thai words never change their form: no endings for tense, person, plural or gender. Instead, word order and small helper words carry the meaning, and the speaker's own gender shows up in the polite word at the end of a sentence. Lessons 1–6 cover pronouns and ครับ / ค่ะ, เป็น / อยู่ / มี, word order and describing words, ไม่ and ไหม, time words, and classifiers. Lessons 7–12 add ได้, อยาก / ชอบ, ต้อง / ควร, ให้, กว่า / ที่สุด, and directional ไป / มา. The romanization is a simple one without tone marks; listen to each word with text to speech to hear the tone.",
+  "lessons": [
+    {
+      "id": "polite",
+      "title": "I, you, and ครับ / ค่ะ",
+      "particle": "ครับ ค่ะ",
+      "summary": "Which “I” to use, and the polite word that ends most sentences.",
+      "sections": [
+        {
+          "p": "A man says <b>ผม</b> (phom) for “I”, and a woman usually says <b>ฉัน</b> (chan) or ดิฉัน (formal). “You” is <b>คุณ</b> (khun), and “he, she, they” is <b>เขา</b> (khao).",
+          "examples": [
+            [
+              "{ผม}ชื่อสมชาย",
+              "Phom chue Somchai.",
+              "My name is Somchai. (a man)"
+            ],
+            [
+              "{ฉัน}มาจากอังกฤษ",
+              "Chan ma chak Angkrit.",
+              "I come from England. (a woman)"
+            ],
+            ["{คุณ}ชื่ออะไร", "Khun chue arai?", "What is your name?"]
+          ]
+        },
+        {
+          "h": "Polite endings",
+          "p": "End a sentence with <b>ครับ</b> (khrap) if you are a man and <b>ค่ะ</b> (kha) if you are a woman; in a question a woman says <b>คะ</b> (kha, with a rising tone). They make speech polite, and on their own they mean “yes”.",
+          "examples": [
+            ["สวัสดี{ครับ}", "Sawatdi khrap.", "Hello. (a man)"],
+            ["ขอบคุณ{ค่ะ}", "Khop khun kha.", "Thank you. (a woman)"],
+            [
+              "คุณชื่ออะไร{คะ}",
+              "Khun chue arai kha?",
+              "What's your name? (a woman asking)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ชื่อเดวิดครับ",
+          "en": "My name is David. (a man)",
+          "options": ["ผม", "ฉัน", "คุณ", "เขา"],
+          "answer": "ผม",
+          "why": "A man says ผม for “I”, and ends with ครับ."
+        },
+        {
+          "q": "ขอบคุณ＿",
+          "en": "Thank you. (a woman)",
+          "options": ["ค่ะ", "ครับ", "คะ", "ไหม"],
+          "answer": "ค่ะ",
+          "why": "A woman ends a statement with ค่ะ."
+        },
+        {
+          "q": "＿เป็นครู",
+          "en": "She is a teacher.",
+          "options": ["เขา", "คุณ", "ผม", "ฉัน"],
+          "answer": "เขา",
+          "why": "เขา = he, she or they."
+        },
+        {
+          "q": "สบายดีไหม＿",
+          "en": "How are you? (a woman asking)",
+          "options": ["คะ", "ค่ะ", "ครับ", "ผม"],
+          "answer": "คะ",
+          "why": "In a question, a woman uses คะ."
+        },
+        {
+          "q": "Which word means “you”?",
+          "en": "",
+          "options": ["คุณ", "เขา", "ผม", "ครับ"],
+          "answer": "คุณ",
+          "why": "คุณ is the everyday polite “you”."
+        }
+      ]
+    },
+    {
+      "id": "pen-yuu-mii",
+      "title": "เป็น, อยู่ and มี",
+      "particle": "เป็น อยู่ มี",
+      "summary": "Three verbs for “is”, “is at” and “has”, and adjectives that need no verb.",
+      "sections": [
+        {
+          "p": "<b>เป็น</b> (pen) is “to be” for what someone is: a job, a nationality. <b>อยู่</b> (yu) is “to be” for where something is. <b>มี</b> (mi) is “to have” and “there is”.",
+          "examples": [
+            ["ผม{เป็น}นักเรียน", "Phom pen nakrian.", "I am a student."],
+            ["เขา{อยู่}ที่บ้าน", "Khao yu thi ban.", "He is at home."],
+            ["ฉัน{มี}แมวสองตัว", "Chan mi maeo song tua.", "I have two cats."]
+          ]
+        },
+        {
+          "h": "Adjectives are verbs",
+          "p": "With a describing word, no “is” is needed: <b>อาหารอร่อย</b> “the food (is) delicious”. Using เป็น there would be wrong.",
+          "examples": [
+            ["อาหาร{อร่อย}", "Ahan aroi.", "The food is delicious."],
+            ["วันนี้{ร้อน}", "Wan ni ron.", "It's hot today."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "เขา＿หมอ",
+          "en": "He is a doctor.",
+          "options": ["เป็น", "อยู่", "มี", "—"],
+          "answer": "เป็น",
+          "why": "Saying what someone is: เป็น."
+        },
+        {
+          "q": "ห้องน้ำ＿ที่ไหน",
+          "en": "Where is the toilet?",
+          "options": ["อยู่", "เป็น", "มี", "ไป"],
+          "answer": "อยู่",
+          "why": "Saying where something is: อยู่."
+        },
+        {
+          "q": "คุณ＿พี่น้องไหม",
+          "en": "Do you have brothers and sisters?",
+          "options": ["มี", "เป็น", "อยู่", "ไม่"],
+          "answer": "มี",
+          "why": "มี = to have."
+        },
+        {
+          "q": "Which sentence means “The room is big”?",
+          "en": "ห้อง = room, ใหญ่ = big",
+          "options": ["ห้องใหญ่", "ห้องเป็นใหญ่", "ห้องอยู่ใหญ่", "ห้องมีใหญ่"],
+          "answer": "ห้องใหญ่",
+          "why": "A describing word needs no verb in front of it."
+        },
+        {
+          "q": "ผม＿ที่กรุงเทพฯ",
+          "en": "I live (am) in Bangkok.",
+          "options": ["อยู่", "เป็น", "มี", "จะ"],
+          "answer": "อยู่",
+          "why": "อยู่ is “to be at” and also “to live (somewhere)”."
+        }
+      ]
+    },
+    {
+      "id": "word-order",
+      "title": "Word order and describing words",
+      "particle": "SVO",
+      "summary": "Subject, verb, object, like English; but the describing word comes after the noun.",
+      "sections": [
+        {
+          "p": "A Thai sentence runs subject – verb – object, as in English, and the verb never changes. A describing word comes <b>after</b> its noun: บ้าน<b>ใหญ่</b> “big house”, รถ<b>สีแดง</b> “red car”.",
+          "examples": [
+            ["ฉันกินข้าว", "Chan kin khao.", "I eat rice. / I'm eating."],
+            ["บ้าน{ใหญ่}", "ban yai", "a big house"],
+            ["รถ{สีแดง}", "rot si daeng", "a red car"]
+          ]
+        },
+        {
+          "h": "This, that, and whose",
+          "p": "<b>นี้</b> (this) and <b>นั้น</b> (that) also follow the noun: หนังสือเล่มนี้, “this book”. <b>ของ</b> means “of / belonging to”: บ้านของผม, “my house”; in speech ของ is often dropped.",
+          "examples": [
+            ["ร้าน{นี้}", "ran ni", "this shop"],
+            ["เพื่อน{ของ}ฉัน", "phuean khong chan", "my friend"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Which means “a small dog”?",
+          "en": "หมา = dog, เล็ก = small",
+          "options": ["หมาเล็ก", "เล็กหมา", "หมาเป็นเล็ก", "เล็กของหมา"],
+          "answer": "หมาเล็ก",
+          "why": "The describing word comes after the noun."
+        },
+        {
+          "q": "Which means “I drink coffee”?",
+          "en": "ดื่ม = drink, กาแฟ = coffee",
+          "options": ["ฉันดื่มกาแฟ", "ฉันกาแฟดื่ม", "ดื่มฉันกาแฟ", "กาแฟฉันดื่ม"],
+          "answer": "ฉันดื่มกาแฟ",
+          "why": "Subject – verb – object, as in English."
+        },
+        {
+          "q": "ร้านอาหาร＿อร่อย",
+          "en": "This restaurant is tasty.",
+          "options": ["นี้", "ของ", "เป็น", "มี"],
+          "answer": "นี้",
+          "why": "นี้ (this) follows the noun."
+        },
+        {
+          "q": "แม่＿ผม",
+          "en": "my mother",
+          "options": ["ของ", "นี้", "อยู่", "เป็น"],
+          "answer": "ของ",
+          "why": "ของ = of, belonging to."
+        },
+        {
+          "q": "How does “eat” change for “she ate”?",
+          "en": "กิน = eat",
+          "options": [
+            "It doesn't change.",
+            "It takes a past ending.",
+            "It changes its tone.",
+            "It doubles: กินกิน"
+          ],
+          "answer": "It doesn't change.",
+          "why": "Thai verbs never change form; time words show when."
+        }
+      ]
+    },
+    {
+      "id": "mai-questions",
+      "title": "ไม่, and asking questions",
+      "particle": "ไม่ ไหม",
+      "summary": "ไม่ before the verb is “not”; ไหม at the end makes a yes/no question.",
+      "sections": [
+        {
+          "p": "Put <b>ไม่</b> (mai) before the verb or describing word to make it negative. To answer “no” you repeat the verb with ไม่: ไม่ชอบ “(I) don't like (it)”.",
+          "examples": [
+            ["ผม{ไม่}เข้าใจ", "Phom mai khao chai.", "I don't understand."],
+            ["{ไม่}เผ็ด", "Mai phet.", "Not spicy."],
+            ["{ไม่}เป็นไร", "Mai pen rai.", "Never mind. / It's fine."]
+          ]
+        },
+        {
+          "h": "Questions",
+          "p": "Add <b>ไหม</b> (mai, rising tone) to the end for a yes/no question. Question words stay where the answer would go, usually at the end: <b>อะไร</b> what, <b>ที่ไหน</b> where, <b>ใคร</b> who, <b>เมื่อไร</b> when, <b>ทำไม</b> why, <b>เท่าไร</b> how much.",
+          "examples": [
+            [
+              "คุณพูดภาษาอังกฤษได้{ไหม}",
+              "Khun phut phasa Angkrit dai mai?",
+              "Can you speak English?"
+            ],
+            ["อันนี้{เท่าไร}", "An ni thao rai?", "How much is this?"],
+            [
+              "ห้องน้ำอยู่{ที่ไหน}",
+              "Hong nam yu thi nai?",
+              "Where is the toilet?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ผม＿ชอบเผ็ด",
+          "en": "I don't like spicy food.",
+          "options": ["ไม่", "ไหม", "อะไร", "ครับ"],
+          "answer": "ไม่",
+          "why": "ไม่ before the verb = not."
+        },
+        {
+          "q": "อร่อย＿",
+          "en": "Is it tasty?",
+          "options": ["ไหม", "ไม่", "ที่ไหน", "ใคร"],
+          "answer": "ไหม",
+          "why": "ไหม at the end makes a yes/no question."
+        },
+        {
+          "q": "นี่คือ＿",
+          "en": "What is this?",
+          "options": ["อะไร", "ใคร", "ที่ไหน", "เท่าไร"],
+          "answer": "อะไร",
+          "why": "อะไร = what."
+        },
+        {
+          "q": "คุณไป＿",
+          "en": "Where are you going?",
+          "options": ["ที่ไหน", "อะไร", "เมื่อไร", "ไหม"],
+          "answer": "ที่ไหน",
+          "why": "ที่ไหน = where."
+        },
+        {
+          "q": "เขาเป็น＿",
+          "en": "Who is he?",
+          "options": ["ใคร", "ทำไม", "เท่าไร", "ไม่"],
+          "answer": "ใคร",
+          "why": "ใคร = who, in the place of the answer."
+        }
+      ]
+    },
+    {
+      "id": "time",
+      "title": "Past, present and future",
+      "particle": "จะ แล้ว",
+      "summary": "Small words before or after the verb show when: จะ, กำลัง, แล้ว, เคย.",
+      "sections": [
+        {
+          "p": "The verb stays the same; a helper word shows the time. <b>จะ</b> (ja) before the verb: will. <b>กำลัง</b> (kamlang) before the verb: in the middle of doing. <b>แล้ว</b> (laeo) at the end: already, done.",
+          "examples": [
+            [
+              "พรุ่งนี้ผม{จะ}ไปเชียงใหม่",
+              "Phrung ni phom ja pai Chiang Mai.",
+              "Tomorrow I will go to Chiang Mai."
+            ],
+            [
+              "เขา{กำลัง}ทำงาน",
+              "Khao kamlang tham ngan.",
+              "He is working right now."
+            ],
+            [
+              "ฉันกินข้าว{แล้ว}",
+              "Chan kin khao laeo.",
+              "I have already eaten."
+            ]
+          ]
+        },
+        {
+          "h": "Ever, and time words",
+          "p": "<b>เคย</b> (khoei) before a verb means “have ever”. Often a time word alone is enough: เมื่อวาน (yesterday), วันนี้ (today), พรุ่งนี้ (tomorrow).",
+          "examples": [
+            [
+              "คุณ{เคย}ไปญี่ปุ่นไหม",
+              "Khun khoei pai Yipun mai?",
+              "Have you ever been to Japan?"
+            ],
+            ["{เมื่อวาน}ฝนตก", "Muea wan fon tok.", "It rained yesterday."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ผม＿ไปตลาดพรุ่งนี้",
+          "en": "I will go to the market tomorrow.",
+          "options": ["จะ", "แล้ว", "เคย", "กำลัง"],
+          "answer": "จะ",
+          "why": "จะ before the verb = will."
+        },
+        {
+          "q": "เขา＿อาบน้ำ",
+          "en": "She is (in the middle of) taking a shower.",
+          "options": ["กำลัง", "จะ", "แล้ว", "เคย"],
+          "answer": "กำลัง",
+          "why": "กำลัง = right now, in progress."
+        },
+        {
+          "q": "ฉันทำการบ้าน＿",
+          "en": "I have already done my homework.",
+          "options": ["แล้ว", "จะ", "กำลัง", "ไหม"],
+          "answer": "แล้ว",
+          "why": "แล้ว at the end = already, done."
+        },
+        {
+          "q": "คุณ＿กินทุเรียนไหม",
+          "en": "Have you ever eaten durian?",
+          "options": ["เคย", "จะ", "แล้ว", "กำลัง"],
+          "answer": "เคย",
+          "why": "เคย = have ever."
+        },
+        {
+          "q": "＿ผมไปทะเล",
+          "en": "Yesterday I went to the sea.",
+          "options": ["เมื่อวาน", "พรุ่งนี้", "จะ", "กำลัง"],
+          "answer": "เมื่อวาน",
+          "why": "A time word is enough to show the past."
+        }
+      ]
+    },
+    {
+      "id": "classifiers",
+      "title": "Counting with classifiers",
+      "particle": "ตัว คน เล่ม",
+      "summary": "Noun, number, then a counting word that depends on the kind of thing.",
+      "sections": [
+        {
+          "p": "To count, say the noun, the number, and a <b>classifier</b>: แมว สอง <b>ตัว</b> “two cats” (cat two body). Each kind of thing has its own: <b>คน</b> for people, <b>ตัว</b> for animals and clothes, <b>เล่ม</b> for books, <b>อัน</b> for small things in general.",
+          "examples": [
+            ["นักเรียนห้า{คน}", "nakrian ha khon", "five students"],
+            ["แมวสอง{ตัว}", "maeo song tua", "two cats"],
+            ["หนังสือสาม{เล่ม}", "nangsue sam lem", "three books"]
+          ]
+        },
+        {
+          "h": "Containers and “this one”",
+          "p": "Drinks are counted by their container: กาแฟสอง<b>แก้ว</b> (two glasses / cups of coffee), น้ำหนึ่ง<b>ขวด</b> (a bottle of water). The classifier also goes with นี้: แมว<b>ตัว</b>นี้, “this cat”.",
+          "examples": [
+            ["กาแฟสอง{แก้ว}", "kafae song kaeo", "two coffees"],
+            ["น้ำหนึ่ง{ขวด}", "nam nueng khuat", "a bottle of water"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ผมมีน้องสาวสอง＿",
+          "en": "I have two younger sisters.",
+          "options": ["คน", "ตัว", "เล่ม", "แก้ว"],
+          "answer": "คน",
+          "why": "People are counted with คน."
+        },
+        {
+          "q": "หมาสาม＿",
+          "en": "three dogs",
+          "options": ["ตัว", "คน", "เล่ม", "ขวด"],
+          "answer": "ตัว",
+          "why": "Animals are counted with ตัว."
+        },
+        {
+          "q": "ขอเบียร์สอง＿",
+          "en": "Two bottles of beer, please.",
+          "options": ["ขวด", "ตัว", "คน", "เล่ม"],
+          "answer": "ขวด",
+          "why": "ขวด = bottle."
+        },
+        {
+          "q": "Which means “four books”?",
+          "en": "หนังสือ = book, สี่ = four",
+          "options": ["หนังสือสี่เล่ม", "สี่หนังสือ", "สี่เล่มหนังสือ", "หนังสือเล่มสี่"],
+          "answer": "หนังสือสี่เล่ม",
+          "why": "Noun, number, classifier."
+        },
+        {
+          "q": "เสื้อ＿นี้สวย",
+          "en": "This shirt is pretty.",
+          "options": ["ตัว", "คน", "เล่ม", "แก้ว"],
+          "answer": "ตัว",
+          "why": "Clothes use ตัว, which also goes before นี้."
+        }
+      ]
+    },
+    {
+      "id": "dai",
+      "title": "ได้ — can, and able to",
+      "particle": "ได้",
+      "summary": "After the verb for ability or permission; ไม่ได้ for “cannot”.",
+      "sections": [
+        {
+          "p": "<b>ได้</b> (dai) after a verb phrase means “can / be able to / be allowed to”: พูดไทยได้ “can speak Thai”. The main verb stays bare; ได้ does not change for person or tense.",
+          "examples": [
+            [
+              "ผมพูดภาษาไทย{ได้}",
+              "Phom phut phasa Thai dai.",
+              "I can speak Thai."
+            ],
+            ["คุณขับรถ{ได้}ไหม", "Khun khap rot dai mai?", "Can you drive?"],
+            ["นั่งตรงนี้{ได้}", "Nang trong ni dai.", "You may sit here."]
+          ]
+        },
+        {
+          "h": "ไม่ได้ — cannot",
+          "p": "Negate with <b>ไม่ได้</b> after the verb: ไปไม่ได้ “cannot go”. Do not put ได้ before the verb for ability (that position is a different, past-like reading).",
+          "examples": [
+            ["ผมไป{ไม่ได้}", "Phom pai mai dai.", "I can't go."],
+            [
+              "เขากินเผ็ด{ไม่ได้}",
+              "Khao kin phet mai dai.",
+              "He can't eat spicy food."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ฉันว่ายน้ำ＿",
+          "en": "I can swim.",
+          "options": ["ได้", "ต้อง", "อยาก", "จะ"],
+          "answer": "ได้",
+          "why": "Ability: verb + ได้."
+        },
+        {
+          "q": "คุณพูดอังกฤษ＿ไหม",
+          "en": "Can you speak English?",
+          "options": ["ได้", "เป็น", "มี", "แล้ว"],
+          "answer": "ได้",
+          "why": "ได้ after the verb asks about ability."
+        },
+        {
+          "q": "วันนี้ผมไป＿",
+          "en": "I can't go today.",
+          "options": ["ไม่ได้", "ไม่ต้อง", "ไม่เคย", "ไม่ไหม"],
+          "answer": "ไม่ได้",
+          "why": "ไม่ได้ after the verb = cannot."
+        },
+        {
+          "q": "Where does ได้ go for “can read”?",
+          "en": "อ่าน = read",
+          "options": [
+            "After อ่าน",
+            "Before อ่าน",
+            "At the start of the sentence",
+            "Instead of อ่าน"
+          ],
+          "answer": "After อ่าน",
+          "why": "Ability ได้ follows the verb phrase."
+        },
+        {
+          "q": "เปิดหน้าต่าง＿ไหม",
+          "en": "May I open the window?",
+          "options": ["ได้", "กำลัง", "เคย", "ของ"],
+          "answer": "ได้",
+          "why": "ได้ also covers permission: “may / allowed to”."
+        }
+      ]
+    },
+    {
+      "id": "yak-chop",
+      "title": "อยาก and ชอบ — want and like",
+      "particle": "อยาก ชอบ",
+      "summary": "อยาก before a verb for “want to”; อยากได้ before a noun; ชอบ for “like”.",
+      "sections": [
+        {
+          "p": "<b>อยาก</b> (yak) before a verb means “want to”: อยากกิน “want to eat”. Before a noun, Thai usually says <b>อยากได้</b> (yak dai), “want to get / want (a thing)”. Negate desire with ไม่อยาก.",
+          "examples": [
+            [
+              "ผม{อยาก}เรียนภาษาไทย",
+              "Phom yak rian phasa Thai.",
+              "I want to study Thai."
+            ],
+            [
+              "คุณ{อยาก}ไปไหน",
+              "Khun yak pai nai?",
+              "Where do you want to go?"
+            ],
+            [
+              "ฉัน{อยากได้}กาแฟ",
+              "Chan yak dai kafae.",
+              "I want (some) coffee."
+            ]
+          ]
+        },
+        {
+          "h": "ชอบ — like",
+          "p": "<b>ชอบ</b> (chop) is “to like”: ชอบกินข้าวผัด “like (to eat) fried rice”. It takes a noun or a verb phrase after it, and needs no “to” word.",
+          "examples": [
+            ["เขา{ชอบ}ชาเขียว", "Khao chop cha khiao.", "He likes green tea."],
+            [
+              "ฉัน{ชอบ}อ่านหนังสือ",
+              "Chan chop an nangsue.",
+              "I like reading books."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ผม＿ไปทะเล",
+          "en": "I want to go to the sea.",
+          "options": ["อยาก", "ได้", "ต้อง", "แล้ว"],
+          "answer": "อยาก",
+          "why": "อยาก before a verb = want to."
+        },
+        {
+          "q": "ฉัน＿น้ำส้ม",
+          "en": "I want orange juice.",
+          "options": ["อยากได้", "อยาก", "ได้", "ชอบได้"],
+          "answer": "อยากได้",
+          "why": "Before a noun, use อยากได้."
+        },
+        {
+          "q": "เขา＿ดนตรีไทย",
+          "en": "She likes Thai music.",
+          "options": ["ชอบ", "อยาก", "ต้อง", "เป็น"],
+          "answer": "ชอบ",
+          "why": "ชอบ = like."
+        },
+        {
+          "q": "ผม＿รอ",
+          "en": "I don't want to wait.",
+          "options": ["ไม่อยาก", "ไม่ได้", "ไม่ต้อง", "ไม่เคย"],
+          "answer": "ไม่อยาก",
+          "why": "ไม่อยาก = don't want to."
+        },
+        {
+          "q": "คุณ＿กินอะไร",
+          "en": "What do you want to eat?",
+          "options": ["อยาก", "ได้", "กำลัง", "ของ"],
+          "answer": "อยาก",
+          "why": "อยาก + verb: want to eat."
+        }
+      ]
+    },
+    {
+      "id": "tong-khuan",
+      "title": "ต้อง and ควร — must and should",
+      "particle": "ต้อง ควร",
+      "summary": "ต้อง before the verb for “must”; ควร for “should”; ไม่ต้อง means “need not”.",
+      "sections": [
+        {
+          "p": "<b>ต้อง</b> (tong) before a verb means “must / have to”: ต้องทำงาน “have to work”. <b>ควร</b> (khuan) is softer “should / ought to”: ควรพัก “should rest”.",
+          "examples": [
+            [
+              "ผม{ต้อง}ไปทำงาน",
+              "Phom tong pai tham ngan.",
+              "I have to go to work."
+            ],
+            [
+              "คุณ{ต้อง}รอที่นี่",
+              "Khun tong ro thi ni.",
+              "You have to wait here."
+            ],
+            [
+              "เขา{ควร}นอนเร็ว",
+              "Khao khuan non reo.",
+              "He should go to bed early."
+            ]
+          ]
+        },
+        {
+          "h": "ไม่ต้อง and ห้าม",
+          "p": "<b>ไม่ต้อง</b> means “don't have to / need not”, not “must not”. For “must not / forbidden”, Thai uses <b>ห้าม</b> (ham): ห้ามสูบบุหรี่ “no smoking”.",
+          "examples": [
+            ["คุณ{ไม่ต้อง}มา", "Khun mai tong ma.", "You don't have to come."],
+            [
+              "{ห้าม}ถ่ายรูป",
+              "Ham thai rup.",
+              "No photos. / Photography forbidden."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "พรุ่งนี้ผม＿ตื่นเช้า",
+          "en": "Tomorrow I have to wake up early.",
+          "options": ["ต้อง", "ได้", "อยาก", "เคย"],
+          "answer": "ต้อง",
+          "why": "ต้อง before the verb = must / have to."
+        },
+        {
+          "q": "คุณ＿พักผ่อน",
+          "en": "You should rest.",
+          "options": ["ควร", "ได้", "ไหม", "แล้ว"],
+          "answer": "ควร",
+          "why": "ควร = should."
+        },
+        {
+          "q": "คุณ＿ซื้อของขวัญ",
+          "en": "You don't have to buy a gift.",
+          "options": ["ไม่ต้อง", "ไม่ได้", "ไม่อยาก", "ห้าม"],
+          "answer": "ไม่ต้อง",
+          "why": "ไม่ต้อง = need not, not “must not”."
+        },
+        {
+          "q": "＿จอดรถที่นี่",
+          "en": "No parking here. / Parking forbidden.",
+          "options": ["ห้าม", "ต้อง", "ควร", "ได้"],
+          "answer": "ห้าม",
+          "why": "ห้าม = must not / forbidden."
+        },
+        {
+          "q": "เด็ก ๆ ＿ทำการบ้าน",
+          "en": "The children have to do homework.",
+          "options": ["ต้อง", "อยากได้", "กำลัง", "ของ"],
+          "answer": "ต้อง",
+          "why": "ต้อง + verb for obligation."
+        }
+      ]
+    },
+    {
+      "id": "hai",
+      "title": "ให้ — give, for, and let",
+      "particle": "ให้",
+      "summary": "Give something to someone; do something for someone; let someone do.",
+      "sections": [
+        {
+          "p": "<b>ให้</b> (hai) as a main verb is “to give”: ให้เงิน “give money”. The receiver often comes right after ให้: ให้เขาหนังสือ “give him a book”.",
+          "examples": [
+            ["ผม{ให้}เขาเงิน", "Phom hai khao ngern.", "I give him money."],
+            [
+              "แม่{ให้}ฉันนาฬิกา",
+              "Mae hai chan nalika.",
+              "Mother gave me a watch."
+            ]
+          ]
+        },
+        {
+          "h": "For someone, and let someone",
+          "p": "After another verb, ให้ marks who benefits: ซื้อให้เพื่อน “buy for a friend”. ให้ + person + verb also means “let / have someone do”: ให้ผมดู “let me see”.",
+          "examples": [
+            [
+              "ฉันซื้อของ{ให้}แม่",
+              "Chan sue khong hai mae.",
+              "I bought something for Mum."
+            ],
+            ["{ให้}ผมช่วย", "Hai phom chuai.", "Let me help."],
+            [
+              "ครู{ให้}นักเรียนอ่าน",
+              "Khru hai nakrian an.",
+              "The teacher has the students read."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ผม＿น้องสาวหนังสือ",
+          "en": "I give my younger sister a book.",
+          "options": ["ให้", "ได้", "ต้อง", "ของ"],
+          "answer": "ให้",
+          "why": "ให้ = give; the receiver follows ให้."
+        },
+        {
+          "q": "เขาทำอาหาร＿ผม",
+          "en": "He cooked for me.",
+          "options": ["ให้", "ได้", "ไหม", "แล้ว"],
+          "answer": "ให้",
+          "why": "Verb + ให้ + person = for someone's benefit."
+        },
+        {
+          "q": "＿ฉันดูหน่อย",
+          "en": "Let me take a look.",
+          "options": ["ให้", "อยาก", "กำลัง", "เคย"],
+          "answer": "ให้",
+          "why": "ให้ + person + verb = let someone do."
+        },
+        {
+          "q": "แม่＿ลูกไปโรงเรียน",
+          "en": "Mum lets / has the child go to school.",
+          "options": ["ให้", "เป็น", "อยู่", "มี"],
+          "answer": "ให้",
+          "why": "Causative ให้: have someone do."
+        },
+        {
+          "q": "Which means “buy a gift for a friend”?",
+          "en": "ซื้อ = buy, ของขวัญ = gift, เพื่อน = friend",
+          "options": [
+            "ซื้อของขวัญให้เพื่อน",
+            "ให้ซื้อเพื่อนของขวัญ",
+            "เพื่อนให้ซื้อของขวัญ",
+            "ซื้อให้ของขวัญเพื่อน"
+          ],
+          "answer": "ซื้อของขวัญให้เพื่อน",
+          "why": "Action, then ให้ + beneficiary."
+        }
+      ]
+    },
+    {
+      "id": "kwa-thisut",
+      "title": "กว่า and ที่สุด — comparing",
+      "particle": "กว่า ที่สุด",
+      "summary": "Adjective + กว่า for “more … than”; adjective + ที่สุด for “the most”.",
+      "sections": [
+        {
+          "p": "The describing word never changes. Put <b>กว่า</b> (kwa) after it for “more … than”: ใหญ่กว่า “bigger”. Name what you compare after กว่า: บ้านนี้ใหญ่กว่าบ้านนั้น.",
+          "examples": [
+            [
+              "พี่สูง{กว่า}น้อง",
+              "Phi sung kwa nong.",
+              "The older sibling is taller than the younger."
+            ],
+            [
+              "วันนี้ร้อน{กว่า}เมื่อวาน",
+              "Wan ni ron kwa muea wan.",
+              "Today is hotter than yesterday."
+            ],
+            ["อันนี้ดี{กว่า}", "An ni di kwa.", "This one is better."]
+          ]
+        },
+        {
+          "h": "ที่สุด — the most",
+          "p": "<b>ที่สุด</b> (thi sut) after a describing word means “the most / -est”: อร่อยที่สุด “the most delicious”. Do not stack มาก or กว่า with ที่สุด.",
+          "examples": [
+            [
+              "ร้านนี้{อร่อยที่สุด}",
+              "Ran ni aroi thi sut.",
+              "This shop is the most delicious."
+            ],
+            [
+              "เขาเก่ง{ที่สุด}ในห้อง",
+              "Khao keng thi sut nai hong.",
+              "He is the best in the class."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "รถคันนี้แพง＿คันนั้น",
+          "en": "This car is more expensive than that one.",
+          "options": ["กว่า", "ที่สุด", "ได้", "ไหม"],
+          "answer": "กว่า",
+          "why": "Adjective + กว่า (+ B) = more … than."
+        },
+        {
+          "q": "ภูเขานี้สูง＿",
+          "en": "This mountain is the tallest.",
+          "options": ["ที่สุด", "กว่า", "มากกว่า", "กำลัง"],
+          "answer": "ที่สุด",
+          "why": "Adjective + ที่สุด = the most."
+        },
+        {
+          "q": "Which means “My house is bigger than his”?",
+          "en": "บ้าน = house, ใหญ่ = big",
+          "options": [
+            "บ้านฉันใหญ่กว่าบ้านเขา",
+            "บ้านฉันกว่าใหญ่บ้านเขา",
+            "บ้านฉันใหญ่ที่สุดบ้านเขา",
+            "บ้านฉันเป็นใหญ่กว่าเขา"
+          ],
+          "answer": "บ้านฉันใหญ่กว่าบ้านเขา",
+          "why": "Adjective stays bare; กว่า follows it."
+        },
+        {
+          "q": "ชาเขียว＿กาแฟ",
+          "en": "Green tea is better than coffee. (ดี = good)",
+          "options": ["ดีกว่า", "ดีที่สุด", "ได้ดี", "ต้องดี"],
+          "answer": "ดีกว่า",
+          "why": "ดี + กว่า for “better than”."
+        },
+        {
+          "q": "อาหารไทย＿",
+          "en": "Thai food is the most delicious.",
+          "options": ["อร่อยที่สุด", "อร่อยกว่า", "อร่อยได้", "อร่อยต้อง"],
+          "answer": "อร่อยที่สุด",
+          "why": "ที่สุด marks the superlative."
+        }
+      ]
+    },
+    {
+      "id": "pai-ma",
+      "title": "ไป and มา after verbs — direction",
+      "particle": "ไป มา",
+      "summary": "After another verb, ไป is away from the speaker and มา is toward the speaker.",
+      "sections": [
+        {
+          "p": "<b>ไป</b> (pai) and <b>มา</b> (ma) are full verbs (“go” / “come”), but Thai also puts them after another verb to show direction. เดินไป “walk away (that way)”; เดินมา “walk over here”.",
+          "examples": [
+            [
+              "เขานำหนังสือ{ไป}",
+              "Khao nam nangsue pai.",
+              "He took the book away."
+            ],
+            [
+              "เพื่อนเดิน{มา}",
+              "Phuean doen ma.",
+              "A friend walked over (toward me)."
+            ],
+            [
+              "เอาแก้วน้ำ{มา}หน่อย",
+              "Ao kaeo nam ma noi.",
+              "Bring a glass of water (here), please."
+            ]
+          ]
+        },
+        {
+          "h": "Serial verbs: go and …",
+          "p": "Thai often stacks verbs with nothing between them: <b>ไปซื้อ</b>ของ “go (and) buy things”, <b>มาหา</b>ผม “come (and) see me”. The order is the order of events.",
+          "examples": [
+            [
+              "ผม{ไปซื้อ}ข้าว",
+              "Phom pai sue khao.",
+              "I'm going to buy rice / food."
+            ],
+            ["{มาหา}ผมหน่อย", "Ma ha phom noi.", "Come see me a moment."],
+            ["เรา{ไปกิน}ข้าวกัน", "Rao pai kin khao kan.", "Let's go eat."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "เขานำกระเป๋า＿",
+          "en": "He took the bag away.",
+          "options": ["ไป", "มา", "ได้", "แล้ว"],
+          "answer": "ไป",
+          "why": "ไป after the verb = away from the speaker."
+        },
+        {
+          "q": "ใครเดิน＿",
+          "en": "Who is walking this way?",
+          "options": ["มา", "ไป", "ต้อง", "ของ"],
+          "answer": "มา",
+          "why": "มา = toward the speaker."
+        },
+        {
+          "q": "เอาหนังสือ＿ให้ฉัน",
+          "en": "Bring the book to me.",
+          "options": ["มา", "ไป", "ไหม", "เคย"],
+          "answer": "มา",
+          "why": "เอามา = bring here."
+        },
+        {
+          "q": "Which means “go buy fruit”?",
+          "en": "ซื้อ = buy, ผลไม้ = fruit",
+          "options": ["ไปซื้อผลไม้", "ซื้อไปผลไม้", "ผลไม้ไปซื้อ", "ไปผลไม้ซื้อ"],
+          "answer": "ไปซื้อผลไม้",
+          "why": "Serial verbs: go, then buy."
+        },
+        {
+          "q": "เรากลับ＿บ้านแล้ว",
+          "en": "We have come back home (here).",
+          "options": ["มา", "ไป", "ได้", "ควร"],
+          "answer": "มา",
+          "why": "กลับมา = come back (toward here)."
+        }
+      ]
+    }
+  ]
+}

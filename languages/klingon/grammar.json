@@ -1,0 +1,583 @@
+{
+  "schema": "grammar@1",
+  "language": "klingon",
+  "notes": [
+    "Klingon verbs and nouns for the Grammar Learner. Written for this project.",
+    "Examples are [Klingon, gloss, English]; {braces} mark the prefix.",
+    "Lessons with `generate` get drills built from the prefix grid below."
+  ],
+  "title": "Klingon verbs and nouns",
+  "intro": "A Klingon verb starts with a prefix that says who does the action and, at the same time, who it is done to. One syllable carries what English splits across a subject and an object. Learn the grid once and every verb opens up. Later lessons add the everyday verb suffixes, plural and possessive nouns, places, and “to be”. Romanization is the standard Latin spelling; tick “Show pIqaD” to see each example in Klingon script.",
+  "lessons": [
+    {
+      "id": "shape",
+      "title": "How a Klingon verb is built",
+      "particle": "verb",
+      "summary": "prefix + verb + suffixes, and the object comes first.",
+      "sections": [
+        {
+          "p": "A Klingon verb is built like a train: <b>prefix</b> (who → whom) + <b>verb</b> + optional <b>suffixes</b> (not, can, question...). The prefix is required for the meaning; pronouns like jIH (I) are usually left out because the prefix already says it.",
+          "examples": [
+            ["{jI}Qong", "jI- (I) + Qong (sleep)", "I sleep."],
+            [
+              "{jI}yajbe'",
+              "jI- + yaj (understand) + -be' (not)",
+              "I don't understand."
+            ]
+          ]
+        },
+        {
+          "h": "Word order: object, verb, subject",
+          "p": "When nouns are spelled out, the object comes <i>before</i> the verb and the subject <i>after</i> it — the reverse of English. Read “puq legh yaS” as “the child — sees — the officer”: the officer sees the child.",
+          "examples": [
+            [
+              "puq legh yaS",
+              "child | sees | officer",
+              "The officer sees the child."
+            ],
+            [
+              "yaS legh puq",
+              "officer | sees | child",
+              "The child sees the officer."
+            ]
+          ]
+        },
+        {
+          "h": "Verbs that describe",
+          "p": "Klingon has no separate adjectives. “Be big”, “be good” are verbs and take the same prefixes: {jI}tIn, “I am big”."
+        }
+      ],
+      "drills": [
+        {
+          "q": "In “Duj legh HoD”, who sees whom?",
+          "en": "Duj = ship, HoD = captain",
+          "options": ["The captain sees the ship.", "The ship sees the captain."],
+          "answer": "The captain sees the ship.",
+          "why": "Object first, subject last: Duj (object) legh HoD (subject)."
+        },
+        {
+          "q": "Which part of “jIQong” means “I”?",
+          "en": "",
+          "options": ["jI", "Qong", "Both together", "Neither"],
+          "answer": "jI",
+          "why": "jI- is the prefix for “I” with no object; Qong is “sleep”."
+        },
+        {
+          "q": "In “jagh Suv SuvwI'”, who fights?",
+          "en": "jagh = enemy, SuvwI' = warrior",
+          "options": ["The warrior", "The enemy"],
+          "answer": "The warrior",
+          "why": "The subject comes after the verb: SuvwI'."
+        }
+      ]
+    },
+    {
+      "id": "no-object",
+      "title": "Prefixes with no object",
+      "particle": "jI- bI- ma- Su-",
+      "summary": "I, you, we, you all, he/she, they — when the action has no object.",
+      "table": "none",
+      "sections": [
+        {
+          "p": "When nothing receives the action (sleeping, fighting, being big), the prefix only names the subject. He/she/it and they take <b>no prefix at all</b>: the bare verb.",
+          "examples": [
+            ["{jI}Qong", "I sleep", "I sleep."],
+            ["{bI}Qong", "you sleep", "You sleep."],
+            ["Qong", "(no prefix)", "He/she sleeps, or they sleep."],
+            ["{ma}Qong", "we sleep", "We sleep."],
+            ["{Su}Qong", "you all sleep", "You (all) sleep."]
+          ]
+        }
+      ],
+      "generate": {
+        "kind": "none",
+        "count": 8
+      }
+    },
+    {
+      "id": "with-object",
+      "title": "Prefixes with an object",
+      "particle": "qa- vI- mu- Da-…",
+      "summary": "One prefix for “who does it to whom”.",
+      "table": "all",
+      "sections": [
+        {
+          "p": "When the action has an object, the prefix encodes both people at once. The grid below lists every combination; you will meet the most useful ones first.",
+          "examples": [
+            ["{qa}legh", "I → you", "I see you."],
+            ["{vI}legh", "I → him/her/them", "I see him (or her, or them)."],
+            [
+              "{mu}legh",
+              "he/she/they → me",
+              "He/she sees me, or they see me."
+            ],
+            [
+              "{Da}legh",
+              "you → him/her/them",
+              "You see him (or her, or them)."
+            ],
+            ["{cho}legh", "you → me", "You see me."],
+            ["{wI}legh", "we → him/her", "We see him or her."],
+            ["{DI}legh", "we → them", "We see them."],
+            ["{lu}legh", "they → him/her", "They see him or her."]
+          ]
+        },
+        {
+          "h": "Patterns that help",
+          "p": "Several prefixes are shared: mu- and nu- (→ me, → us) and lI- (→ you all) work for both he/she and they. vI- and Da- work for both him/her and them. The grid's empty cells (I → me, we → us) need the suffix -'egh “oneself” instead: jIlegh'egh, “I see myself”."
+        }
+      ],
+      "generate": {
+        "kind": "object",
+        "count": 10
+      }
+    },
+    {
+      "id": "empty",
+      "title": "When there is no prefix",
+      "particle": "∅",
+      "summary": "The bare verb: he/she/it/they, with no object or a third-person one.",
+      "table": "all",
+      "sections": [
+        {
+          "p": "A verb with no prefix has a third-person subject (he, she, it, they) and either no object or a third-person object (him, her, it, them). The nouns or the conversation tell you which.",
+          "examples": [
+            [
+              "legh",
+              "(no prefix)",
+              "He sees her / she sees it / they see them…"
+            ],
+            [
+              "Duj legh HoD",
+              "ship | sees | captain",
+              "The captain sees the ship."
+            ]
+          ]
+        },
+        {
+          "p": "The one exception is they → him/her, which has its own prefix lu-: <b>{lu}legh</b> “they see him”."
+        }
+      ],
+      "generate": {
+        "kind": "all",
+        "count": 10
+      }
+    },
+    {
+      "id": "imperative",
+      "title": "Commands",
+      "particle": "yI- pe- HI- gho- tI-",
+      "summary": "Telling someone to do something.",
+      "table": "imperative",
+      "sections": [
+        {
+          "p": "Commands have their own prefixes. With no object: <b>yI-</b> to one person, <b>pe-</b> to several. With an object, the prefix names the object, whether you speak to one person or many.",
+          "examples": [
+            ["{yI}Qong!", "(you) sleep!", "Sleep!"],
+            ["{pe}Qong!", "(you all) sleep!", "Sleep, all of you!"],
+            ["{HI}legh!", "(you) → me", "Look at me!"],
+            ["{gho}ja'!", "(you) → us", "Tell us!"],
+            ["{yI}Suv!", "(you) fight!", "Fight!"],
+            ["{tI}legh!", "(you) → them", "Look at them!"]
+          ]
+        }
+      ],
+      "generate": {
+        "kind": "imperative",
+        "count": 8
+      }
+    },
+    {
+      "id": "verb-suffixes",
+      "title": "Not, can, and questions",
+      "particle": "-be' -laH -'a'",
+      "summary": "Three verb suffixes you will use every day.",
+      "sections": [
+        {
+          "p": "Suffixes go after the verb in a fixed order. <b>-laH</b> means “can”, <b>-be'</b> means “not” and follows whatever it negates, and <b>-'a'</b> makes a yes/no question. -'a' always comes last.",
+          "examples": [
+            [
+              "jIyaj{be'}",
+              "jI- + yaj (understand) + -be'",
+              "I don't understand."
+            ],
+            ["jIjatlh{laH}", "jI- + jatlh (speak) + -laH", "I can speak."],
+            ["bIyaj{'a'}?", "bI- + yaj + -'a'", "Do you understand?"]
+          ]
+        },
+        {
+          "h": "Stacking them",
+          "p": "-laH comes before -be': jIQong<b>laHbe'</b> “I can't sleep”. Put -'a' on the end of the whole verb: tlhIngan Hol Dajatlh<b>laH'a'</b>? “Can you speak Klingon?”",
+          "examples": [
+            ["jIQong{laHbe'}", "jI- + Qong + -laH + -be'", "I can't sleep."],
+            [
+              "tlhIngan Hol Dajatlh{'a'}?",
+              "Klingon language · you speak it?",
+              "Do you speak Klingon?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "jIyaj＿",
+          "en": "I don't understand.",
+          "options": ["be'", "'a'", "laH", "pu'"],
+          "answer": "be'",
+          "why": "-be' means “not”."
+        },
+        {
+          "q": "bIQong＿?",
+          "en": "Are you sleeping?",
+          "options": ["'a'", "be'", "laH", "Daq"],
+          "answer": "'a'",
+          "why": "-'a' makes a yes/no question."
+        },
+        {
+          "q": "What does jISuvlaH mean?",
+          "en": "Suv = fight",
+          "options": ["I can fight.", "I can't fight.", "Can I fight?", "I fought."],
+          "answer": "I can fight.",
+          "why": "jI- (I) + Suv + -laH (can)."
+        },
+        {
+          "q": "How do you say “I can't speak”?",
+          "en": "jatlh = speak",
+          "options": ["jIjatlhlaHbe'", "jIjatlhbe'laH", "jIjatlh'a'laH", "jIjatlhlaH'a'"],
+          "answer": "jIjatlhlaHbe'",
+          "why": "-laH comes first, then -be' negates it."
+        },
+        {
+          "q": "Which one is a question?",
+          "en": "",
+          "options": ["bIyaj'a'?", "bIyajbe'", "bIyajlaH", "jIyaj"],
+          "answer": "bIyaj'a'?",
+          "why": "Only -'a' asks a question."
+        }
+      ]
+    },
+    {
+      "id": "noun-plural",
+      "title": "Plural nouns",
+      "particle": "-pu' -Du' -mey",
+      "summary": "Three plural endings, chosen by what the noun is.",
+      "sections": [
+        {
+          "p": "Klingon has three plural suffixes. <b>-pu'</b> is for beings that can speak a language, <b>-Du'</b> for body parts, and <b>-mey</b> for everything else. A noun without one can be singular or plural: the verb prefix often tells you which.",
+          "examples": [
+            ["tlhIngan{pu'}", "Klingon + -pu'", "Klingons"],
+            ["mIn{Du'}", "eye + -Du'", "eyes"],
+            ["Duj{mey}", "ship + -mey", "ships"]
+          ]
+        },
+        {
+          "h": "Scattered all over",
+          "p": "Putting -mey on a word for a speaking being means “scattered all over”: puq<b>mey</b> “children all over the place”.",
+          "examples": [
+            ["puq{pu'}", "child + -pu'", "children"],
+            ["Hov{mey}", "star + -mey", "stars"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "yaS＿",
+          "en": "officers",
+          "options": ["pu'", "Du'", "mey"],
+          "answer": "pu'",
+          "why": "Officers speak a language: -pu'."
+        },
+        {
+          "q": "qam＿",
+          "en": "feet",
+          "options": ["Du'", "pu'", "mey"],
+          "answer": "Du'",
+          "why": "A body part: -Du'."
+        },
+        {
+          "q": "nuH＿",
+          "en": "weapons",
+          "options": ["mey", "pu'", "Du'"],
+          "answer": "mey",
+          "why": "Weapons are things: -mey."
+        },
+        {
+          "q": "What does jupmey mean?",
+          "en": "jup = friend",
+          "options": ["friends scattered all over", "friends", "my friend", "a friend"],
+          "answer": "friends scattered all over",
+          "why": "-mey on a speaking being means “all over the place”; plain “friends” is juppu'."
+        },
+        {
+          "q": "The plural of Duj (ship) is…",
+          "en": "",
+          "options": ["Dujmey", "Dujpu'", "DujDu'"],
+          "answer": "Dujmey",
+          "why": "Ships take the general plural -mey."
+        }
+      ]
+    },
+    {
+      "id": "possession",
+      "title": "My, your, his",
+      "particle": "-wIj -lIj -Daj",
+      "summary": "Possession is a suffix on the noun.",
+      "sections": [
+        {
+          "p": "“My ship” is Duj<b>wIj</b>. The suffixes are <b>-wIj</b> my, <b>-lIj</b> your, <b>-Daj</b> his or her, <b>-maj</b> our, <b>-raj</b> your (several), <b>-chaj</b> their.",
+          "examples": [
+            ["Duj{wIj}", "ship + my", "my ship"],
+            ["juH{lIj}", "home + your", "your home"],
+            ["nuH{chaj}", "weapon + their", "their weapon"]
+          ]
+        },
+        {
+          "h": "People take -wI' and -lI'",
+          "p": "For beings that can speak, “my” and “your” are <b>-wI'</b> and <b>-lI'</b>. A plural comes before the possessive: puq<b>pu'wI'</b> “my children”.",
+          "examples": [
+            ["jup{wI'}", "friend + my", "my friend"],
+            ["puq{lI'}", "child + your", "your child"],
+            ["puqpu'{wI'}", "child + plural + my", "my children"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Duj＿",
+          "en": "your ship",
+          "options": ["lIj", "wIj", "Daj", "lI'"],
+          "answer": "lIj",
+          "why": "“Your” on a thing is -lIj."
+        },
+        {
+          "q": "jup＿",
+          "en": "my friend",
+          "options": ["wI'", "wIj", "lI'", "maj"],
+          "answer": "wI'",
+          "why": "A friend can speak, so “my” is -wI'."
+        },
+        {
+          "q": "What does juHmaj mean?",
+          "en": "juH = home",
+          "options": ["our home", "my home", "their home", "your home"],
+          "answer": "our home",
+          "why": "-maj = our."
+        },
+        {
+          "q": "How do you say “my children”?",
+          "en": "puq = child",
+          "options": ["puqpu'wI'", "puqwI'pu'", "puqmeywIj", "puqwIjpu'"],
+          "answer": "puqpu'wI'",
+          "why": "The plural comes first, then the possessive; people take -pu' and -wI'."
+        },
+        {
+          "q": "nuH＿",
+          "en": "his weapon",
+          "options": ["Daj", "chaj", "lIj", "wIj"],
+          "answer": "Daj",
+          "why": "-Daj = his or her."
+        }
+      ]
+    },
+    {
+      "id": "locative",
+      "title": "In, at and from",
+      "particle": "-Daq -vo' -vaD",
+      "summary": "Place and purpose are noun suffixes too.",
+      "sections": [
+        {
+          "p": "<b>-Daq</b> marks where: “in, at, on”, and also “to” with verbs of motion. <b>-vo'</b> means “from”. They go after any plural or possessive, and the place usually comes at the start of the sentence.",
+          "examples": [
+            [
+              "pa'{Daq} jIQong.",
+              "room + in · I sleep",
+              "I sleep in the room."
+            ],
+            ["DujwIj{Daq}", "ship + my + on", "on my ship"],
+            [
+              "juH{vo'} jIleng.",
+              "home + from · I travel",
+              "I travel from home."
+            ]
+          ]
+        },
+        {
+          "h": "For someone",
+          "p": "<b>-vaD</b> means “for” or “to” a person you give or say something to.",
+          "examples": [
+            ["jupwI'{vaD}", "friend + my + for", "for my friend"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Duj＿ jIQong.",
+          "en": "I sleep on the ship.",
+          "options": ["Daq", "vo'", "vaD", "mey"],
+          "answer": "Daq",
+          "why": "Where something happens: -Daq."
+        },
+        {
+          "q": "yuQ＿ jIleng.",
+          "en": "I travel from the planet.",
+          "options": ["vo'", "Daq", "vaD", "wIj"],
+          "answer": "vo'",
+          "why": "“From” is -vo'."
+        },
+        {
+          "q": "How do you say “in my room”?",
+          "en": "pa' = room",
+          "options": ["pa'wIjDaq", "pa'DaqwIj", "Daqpa'wIj", "pa'vo'wIj"],
+          "answer": "pa'wIjDaq",
+          "why": "The possessive comes before -Daq."
+        },
+        {
+          "q": "What does puqvaD mean?",
+          "en": "puq = child",
+          "options": [
+            "for the child",
+            "from the child",
+            "at the child's",
+            "the children"
+          ],
+          "answer": "for the child",
+          "why": "-vaD = for."
+        }
+      ]
+    },
+    {
+      "id": "to-be",
+      "title": "“I am a Klingon”",
+      "particle": "jIH SoH ghaH",
+      "summary": "No verb “to be”: the pronoun does the job.",
+      "sections": [
+        {
+          "p": "Klingon has no verb “to be”. Instead the pronoun works as the verb, after the noun: tlhIngan <b>jIH</b> “I am a Klingon”, yaS <b>SoH</b> “you are an officer”, Duj <b>'oH</b> “it is a ship”.",
+          "examples": [
+            ["tlhIngan {jIH}.", "Klingon · I-am", "I am a Klingon."],
+            ["SuvwI' {ghaH}.", "warrior · he/she-is", "He is a warrior."],
+            ["Duj {'oH}.", "ship · it-is", "It's a ship."]
+          ]
+        },
+        {
+          "h": "Questions",
+          "p": "Add -'a' to the pronoun to ask: tlhIngan <b>SoH'a'</b>? “Are you a Klingon?” For several people, use <b>chaH</b> “they are”.",
+          "examples": [
+            ["tlhIngan {SoH'a'}?", "Klingon · you-are?", "Are you a Klingon?"],
+            ["SuvwI' {chaH}.", "warrior · they-are", "They are warriors."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "tlhIngan ＿.",
+          "en": "I am a Klingon.",
+          "options": ["jIH", "SoH", "ghaH", "jI"],
+          "answer": "jIH",
+          "why": "The pronoun jIH works as “I am”."
+        },
+        {
+          "q": "yaS ＿?",
+          "en": "Are you an officer?",
+          "options": ["SoH'a'", "SoH", "jIH'a'", "bI'a'"],
+          "answer": "SoH'a'",
+          "why": "SoH (you) + -'a' (question)."
+        },
+        {
+          "q": "What does «HoD ghaH» mean?",
+          "en": "HoD = captain",
+          "options": [
+            "He is the captain.",
+            "I am the captain.",
+            "Captain!",
+            "His captain."
+          ],
+          "answer": "He is the captain.",
+          "why": "ghaH = he/she, used as “is”."
+        },
+        {
+          "q": "nuH ＿.",
+          "en": "It's a weapon.",
+          "options": ["'oH", "ghaH", "chaH", "jIH"],
+          "answer": "'oH",
+          "why": "For a thing, “it is” is 'oH."
+        }
+      ]
+    }
+  ],
+  "drillData": {
+    "SUBJECTS": ["I", "you", "he/she", "we", "you all", "they"],
+    "OBJECTS": ["none", "me", "you", "him/her", "us", "you all", "them"],
+    "PREFIXES": {
+      "I": {
+        "none": "jI",
+        "you": "qa",
+        "him/her": "vI",
+        "you all": "Sa",
+        "them": "vI"
+      },
+      "you": {
+        "none": "bI",
+        "me": "cho",
+        "him/her": "Da",
+        "us": "ju",
+        "them": "Da"
+      },
+      "he/she": {
+        "none": "",
+        "me": "mu",
+        "you": "Du",
+        "him/her": "",
+        "us": "nu",
+        "you all": "lI",
+        "them": ""
+      },
+      "we": {
+        "none": "ma",
+        "you": "pI",
+        "him/her": "wI",
+        "you all": "re",
+        "them": "DI"
+      },
+      "you all": {
+        "none": "Su",
+        "me": "tu",
+        "him/her": "bo",
+        "us": "che",
+        "them": "bo"
+      },
+      "they": {
+        "none": "",
+        "me": "mu",
+        "you": "nI",
+        "him/her": "lu",
+        "us": "nu",
+        "you all": "lI",
+        "them": ""
+      }
+    },
+    "IMPERATIVES": {
+      "none": ["yI", "pe"],
+      "me": ["HI", "HI"],
+      "him/her": ["yI", "yI"],
+      "us": ["gho", "gho"],
+      "them": ["tI", "tI"]
+    },
+    "TRANSITIVE": [
+      ["legh", "see", "sees"],
+      ["qIp", "hit", "hits"],
+      ["ghel", "ask", "asks"],
+      ["ja'", "tell", "tells"],
+      ["Qoy", "hear", "hears"],
+      ["HoH", "kill", "kills"],
+      ["noH", "judge", "judges"]
+    ],
+    "INTRANSITIVE": [
+      ["Qong", "sleep", "sleeps"],
+      ["Suv", "fight", "fights"],
+      ["jatlh", "speak", "speaks"],
+      ["Qagh", "make a mistake", "makes a mistake"],
+      ["yIn", "live", "lives"]
+    ]
+  }
+}

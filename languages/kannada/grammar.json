@@ -1,0 +1,418 @@
+{
+  "schema": "grammar@1",
+  "language": "kannada",
+  "notes": [
+    "Kannada first grammar for the Grammar Learner. Written for this project.",
+    "Examples are [Kannada, transliteration, English]; {braces} mark the point of the lesson.",
+    "Drills are { q, en, options, answer, why }; ＿ is the blank."
+  ],
+  "title": "Kannada first grammar",
+  "intro": "Kannada is a Dravidian language: the verb comes last, its ending shows who did it (including he, she or it), and case endings join the end of the noun. These lessons cover sentences without “is”, the present tense, ಇಲ್ಲ and ಅಲ್ಲ for “not”, questions, case endings, and “my” and plurals. The transliteration is simplified: a long vowel is doubled (aa, ii, uu).",
+  "lessons": [
+    {
+      "id": "pronouns",
+      "title": "ನಾನು, ನೀವು — no “is”",
+      "particle": "ನಾನು",
+      "summary": "Saying what someone is needs no verb; pronouns show gender and politeness.",
+      "sections": [
+        {
+          "p": "“He is a doctor” is just <b>ಅವರು ಡಾಕ್ಟರ್</b>. The pronouns: <b>ನಾನು</b> I, <b>ನೀನು</b> you (intimate), <b>ನೀವು</b> you (polite or plural), <b>ಅವನು</b> he, <b>ಅವಳು</b> she, <b>ಅವರು</b> he / she (polite) or they, <b>ಅದು</b> it.",
+          "examples": [
+            ["{ನಾನು} ವಿದ್ಯಾರ್ಥಿ.", "Naanu vidyaarthi.", "I am a student."],
+            [
+              "{ಅವಳು} ನನ್ನ ತಂಗಿ.",
+              "Avalu nanna tangi.",
+              "She is my younger sister."
+            ],
+            ["{ನೀವು} ಯಾರು?", "Niivu yaaru?", "Who are you?"]
+          ]
+        },
+        {
+          "h": "We",
+          "p": "<b>ನಾವು</b> is “we”. A polite ending -ಉ on ನೀವು and ಅವರು is used for anyone older or a stranger.",
+          "examples": [
+            ["{ನಾವು} ಸ್ನೇಹಿತರು.", "Naavu snehitaru.", "We are friends."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ಎಲ್ಲಿಂದ ಬಂದಿದ್ದೀರಿ?",
+          "en": "Where have you come from? (polite)",
+          "options": ["ನೀವು", "ನಾನು", "ಅವಳು", "ಅದು"],
+          "answer": "ನೀವು",
+          "why": "Polite “you” is ನೀವು."
+        },
+        {
+          "q": "＿ ನನ್ನ ಅಣ್ಣ.",
+          "en": "He is my elder brother.",
+          "options": ["ಅವನು", "ಅವಳು", "ಅದು", "ನಾವು"],
+          "answer": "ಅವನು",
+          "why": "ಅವನು = he."
+        },
+        {
+          "q": "＿ ಒಳ್ಳೆಯ ಪುಸ್ತಕ.",
+          "en": "It is a good book.",
+          "options": ["ಅದು", "ಅವನು", "ಅವಳು", "ನಾನು"],
+          "answer": "ಅದು",
+          "why": "ಅದು = it, that."
+        },
+        {
+          "q": "Which means “She is a teacher”?",
+          "en": "ಶಿಕ್ಷಕಿ = (woman) teacher",
+          "options": [
+            "ಅವಳು ಶಿಕ್ಷಕಿ.",
+            "ಅವಳು ಇದೆ ಶಿಕ್ಷಕಿ.",
+            "ಶಿಕ್ಷಕಿಗೆ ಅವಳು.",
+            "ಅವಳಲ್ಲಿ ಶಿಕ್ಷಕಿ."
+          ],
+          "answer": "ಅವಳು ಶಿಕ್ಷಕಿ.",
+          "why": "No verb is needed to say what someone is."
+        },
+        {
+          "q": "＿ ಭಾರತೀಯರು.",
+          "en": "We are Indians.",
+          "options": ["ನಾವು", "ನಾನು", "ಅದು", "ನೀನು"],
+          "answer": "ನಾವು",
+          "why": "ನಾವು = we."
+        }
+      ]
+    },
+    {
+      "id": "present",
+      "title": "The present tense: -ತ್ತ-",
+      "particle": "-ತ್ತೇನೆ",
+      "summary": "Stem + -ತ್ತ- + an ending for who does it; the same form also covers the future.",
+      "sections": [
+        {
+          "p": "Add <b>-ತ್ತ-</b> to the stem, then the person ending. For ಮಾಡು (do): <b>ಮಾಡುತ್ತೇನೆ</b> I, <b>ಮಾಡುತ್ತೀಯ</b> you, <b>ಮಾಡುತ್ತೀರಿ</b> you (polite), <b>ಮಾಡುತ್ತಾನೆ</b> he, <b>ಮಾಡುತ್ತಾಳೆ</b> she, <b>ಮಾಡುತ್ತಾರೆ</b> they / polite he, she, <b>ಮಾಡುತ್ತದೆ</b> it, <b>ಮಾಡುತ್ತೇವೆ</b> we. It means “I do” and “I will do”.",
+          "examples": [
+            [
+              "ನಾನು ಕನ್ನಡ ಕಲಿಯು{ತ್ತೇನೆ}.",
+              "Naanu kannada kaliyuttene.",
+              "I am learning Kannada. / I will learn Kannada."
+            ],
+            ["ಅವಳು ಹಾಡು{ತ್ತಾಳೆ}.", "Avalu haaduttaale.", "She sings."],
+            [
+              "ನೀವು ಎಲ್ಲಿ ಇರು{ತ್ತೀರಿ}?",
+              "Niivu elli iruttiiri?",
+              "Where do you live?"
+            ]
+          ]
+        },
+        {
+          "h": "Happening now",
+          "p": "For “I am doing it right now”, Kannada adds ಇದ್ದೇನೆ: <b>ಮಾಡುತ್ತಿದ್ದೇನೆ</b>. In speech the forms are shortened: ಮಾಡ್ತೀನಿ for ಮಾಡುತ್ತೇನೆ.",
+          "examples": [
+            [
+              "ನಾನು ಊಟ ಮಾಡು{ತ್ತಿದ್ದೇನೆ}.",
+              "Naanu uuta maaduttiddene.",
+              "I am having a meal right now."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನಾನು ಕಾಫಿ ಕುಡಿಯುತ್ತ＿.",
+          "en": "I drink coffee.",
+          "options": ["ೇನೆ", "ಾನೆ", "ಾಳೆ", "ೇವೆ"],
+          "answer": "ೇನೆ",
+          "why": "“I” takes -ಏನೆ."
+        },
+        {
+          "q": "ಅವನು ಕೆಲಸ ಮಾಡುತ್ತ＿.",
+          "en": "He works.",
+          "options": ["ಾನೆ", "ಾಳೆ", "ೇನೆ", "ದೆ"],
+          "answer": "ಾನೆ",
+          "why": "“He” takes -ಆನೆ."
+        },
+        {
+          "q": "ಅವಳು ಶಾಲೆಗೆ ಹೋಗುತ್ತ＿.",
+          "en": "She goes to school.",
+          "options": ["ಾಳೆ", "ಾನೆ", "ೇವೆ", "ೀರಿ"],
+          "answer": "ಾಳೆ",
+          "why": "“She” takes -ಆಳೆ."
+        },
+        {
+          "q": "ನಾವು ಕನ್ನಡ ಮಾತಾಡುತ್ತ＿.",
+          "en": "We speak Kannada.",
+          "options": ["ೇವೆ", "ೇನೆ", "ಾರೆ", "ದೆ"],
+          "answer": "ೇವೆ",
+          "why": "“We” takes -ಏವೆ."
+        },
+        {
+          "q": "ಬಸ್ ಬರುತ್ತ＿.",
+          "en": "The bus is coming / will come.",
+          "options": ["ದೆ", "ಾನೆ", "ಾಳೆ", "ೇನೆ"],
+          "answer": "ದೆ",
+          "why": "“It” takes -ದೆ: ಬರುತ್ತದೆ."
+        }
+      ]
+    },
+    {
+      "id": "illa-alla",
+      "title": "ಇದೆ, ಇಲ್ಲ and ಅಲ್ಲ",
+      "particle": "ಇಲ್ಲ ಅಲ್ಲ",
+      "summary": "ಇದೆ: is there. ಇಲ್ಲ: isn't there. ಅಲ್ಲ: is not (something).",
+      "sections": [
+        {
+          "p": "<b>ಇದೆ</b> means “is there” and <b>ಇಲ್ಲ</b> “isn't there”. For people the verb agrees: ಅವರು ಮನೆಯಲ್ಲಿ <b>ಇದ್ದಾರೆ</b>, “he is at home”. <b>ಅಲ್ಲ</b> denies what something is: ಇದು ಕಾಫಿ <b>ಅಲ್ಲ</b>, “this isn't coffee”.",
+          "examples": [
+            [
+              "ಇಲ್ಲಿ ಒಂದು ಅಂಗಡಿ {ಇದೆ}.",
+              "Illi ondu angadi ide.",
+              "There is a shop here."
+            ],
+            [
+              "ಅಪ್ಪ ಮನೆಯಲ್ಲಿ {ಇಲ್ಲ}.",
+              "Appa maneyalli illa.",
+              "Dad isn't at home."
+            ],
+            [
+              "ಇದು ನನ್ನ ಚೀಲ {ಅಲ್ಲ}.",
+              "Idu nanna chiila alla.",
+              "This isn't my bag."
+            ]
+          ]
+        },
+        {
+          "h": "Having",
+          "p": "Kannada says “to me there is”: <b>ನನಗೆ</b> + noun + ಇದೆ / ಇಲ್ಲ. “I don't know” is <b>ನನಗೆ ಗೊತ್ತಿಲ್ಲ</b>. Yes is <b>ಹೌದು</b>, no is <b>ಇಲ್ಲ</b>.",
+          "examples": [
+            ["{ನನಗೆ} ಸಮಯ ಇಲ್ಲ.", "Nanage samaya illa.", "I don't have time."],
+            ["{ನನಗೆ} ಗೊತ್ತಿಲ್ಲ.", "Nanage gottilla.", "I don't know."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಇದು ಟೀ ＿, ಕಾಫಿ.",
+          "en": "This isn't tea, it's coffee.",
+          "options": ["ಅಲ್ಲ", "ಇಲ್ಲ", "ಇದೆ", "ಹೌದು"],
+          "answer": "ಅಲ್ಲ",
+          "why": "“Is not (something)” is ಅಲ್ಲ."
+        },
+        {
+          "q": "ಫ್ರಿಜ್‌ನಲ್ಲಿ ಹಾಲು ＿.",
+          "en": "There's no milk in the fridge.",
+          "options": ["ಇಲ್ಲ", "ಅಲ್ಲ", "ಇದೆ", "ಹೌದು"],
+          "answer": "ಇಲ್ಲ",
+          "why": "“There isn't” is ಇಲ್ಲ."
+        },
+        {
+          "q": "＿ ಗೊತ್ತಿಲ್ಲ.",
+          "en": "I don't know.",
+          "options": ["ನನಗೆ", "ನಾನು", "ನನ್ನ", "ನಾವು"],
+          "answer": "ನನಗೆ",
+          "why": "Knowing uses ನನಗೆ, “to me”."
+        },
+        {
+          "q": "The Kannada for “yes” is…",
+          "en": "",
+          "options": ["ಹೌದು", "ಇಲ್ಲ", "ಅಲ್ಲ", "ಏನು"],
+          "answer": "ಹೌದು",
+          "why": "ಹೌದು = yes."
+        },
+        {
+          "q": "ನನಗೆ ಒಬ್ಬ ಅಣ್ಣ ＿.",
+          "en": "I have an elder brother.",
+          "options": ["ಇದ್ದಾನೆ", "ಇಲ್ಲ", "ಅಲ್ಲ", "ಇದ್ದೇನೆ"],
+          "answer": "ಇದ್ದಾನೆ",
+          "why": "A brother is a he: ಇದ್ದಾನೆ."
+        }
+      ]
+    },
+    {
+      "id": "questions",
+      "title": "Asking questions",
+      "particle": "-ಆ",
+      "summary": "Add -ಆ to the end for yes or no; question words stay where the answer goes.",
+      "sections": [
+        {
+          "p": "Add <b>-ಆ</b> to the last word for a yes/no question: ಮಾತಾಡುತ್ತೀರಿ → <b>ಮಾತಾಡುತ್ತೀರಾ?</b> Question words: <b>ಏನು</b> what, <b>ಯಾರು</b> who, <b>ಎಲ್ಲಿ</b> where, <b>ಯಾವಾಗ</b> when, <b>ಯಾಕೆ</b> why, <b>ಹೇಗೆ</b> how, <b>ಎಷ್ಟು</b> how much.",
+          "examples": [
+            [
+              "ನೀವು ಇಂಗ್ಲಿಷ್ ಮಾತಾಡುತ್ತೀರ{ಾ}?",
+              "Niivu inglish maataaduttiiraa?",
+              "Do you speak English?"
+            ],
+            ["ನಿಮ್ಮ ಹೆಸರು {ಏನು}?", "Nimma hesaru enu?", "What is your name?"],
+            ["ಇದು {ಎಷ್ಟು}?", "Idu eshtu?", "How much is this?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಬಸ್ ನಿಲ್ದಾಣ ＿ ಇದೆ?",
+          "en": "Where is the bus stop?",
+          "options": ["ಎಲ್ಲಿ", "ಏನು", "ಯಾರು", "ಯಾಕೆ"],
+          "answer": "ಎಲ್ಲಿ",
+          "why": "ಎಲ್ಲಿ = where."
+        },
+        {
+          "q": "ನೀವು ＿ ಇದ್ದೀರಿ?",
+          "en": "How are you?",
+          "options": ["ಹೇಗೆ", "ಎಲ್ಲಿ", "ಯಾರು", "ಎಷ್ಟು"],
+          "answer": "ಹೇಗೆ",
+          "why": "ಹೇಗೆ = how."
+        },
+        {
+          "q": "ಅವರು ＿?",
+          "en": "Who is he?",
+          "options": ["ಯಾರು", "ಏನು", "ಯಾವಾಗ", "ಯಾಕೆ"],
+          "answer": "ಯಾರು",
+          "why": "ಯಾರು = who."
+        },
+        {
+          "q": "Make «ಇದು ನಿಮ್ಮ ಮನೆ» a question:",
+          "en": "Is this your house?",
+          "options": [
+            "ಇದು ನಿಮ್ಮ ಮನೆಯಾ?",
+            "ಆ ಇದು ನಿಮ್ಮ ಮನೆ?",
+            "ಇದು ಯಾರು ನಿಮ್ಮ ಮನೆ?",
+            "ಇದು ನಿಮ್ಮ ಮನೆ ಏನು ಏನು?"
+          ],
+          "answer": "ಇದು ನಿಮ್ಮ ಮನೆಯಾ?",
+          "why": "Add -ಆ to the last word; a y slips in after the vowel."
+        },
+        {
+          "q": "ರೈಲು ＿ ಬರುತ್ತದೆ?",
+          "en": "When will the train come?",
+          "options": ["ಯಾವಾಗ", "ಎಲ್ಲಿ", "ಯಾಕೆ", "ಯಾರು"],
+          "answer": "ಯಾವಾಗ",
+          "why": "ಯಾವಾಗ = when."
+        }
+      ]
+    },
+    {
+      "id": "cases",
+      "title": "In, from, to: -ಅಲ್ಲಿ, -ಇಂದ, -ಗೆ",
+      "particle": "-ಅಲ್ಲಿ -ಗೆ",
+      "summary": "Case endings join the noun where English uses prepositions.",
+      "sections": [
+        {
+          "p": "<b>-ಅಲ್ಲಿ</b> (-alli) means “in, at”, <b>-ಇಂದ</b> (-inda) “from”, <b>-ಗೆ / -ಕ್ಕೆ</b> “to, for”. A y or n slips in after some vowels: ಮನೆ → ಮನೆಯಲ್ಲಿ, at home; ಬೆಂಗಳೂರು → ಬೆಂಗಳೂರಿನಲ್ಲಿ.",
+          "examples": [
+            [
+              "ನಾನು ಬೆಂಗಳೂರಿನ{ಲ್ಲಿ} ಇರುತ್ತೇನೆ.",
+              "Naanu bengaluurinalli iruttene.",
+              "I live in Bengaluru."
+            ],
+            [
+              "ಅವರು ಮೈಸೂರಿನ{ಿಂದ} ಬಂದರು.",
+              "Avaru maisuurininda bandaru.",
+              "He came from Mysuru."
+            ],
+            [
+              "ನಾನು ಅಂಗಡಿ{ಗೆ} ಹೋಗುತ್ತೇನೆ.",
+              "Naanu angadige hoguttene.",
+              "I'm going to the shop."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಪುಸ್ತಕ ಚೀಲದ＿ ಇದೆ.",
+          "en": "The book is in the bag.",
+          "options": ["ಲ್ಲಿ", "ಗೆ", "ಿಂದ", "ಳು"],
+          "answer": "ಲ್ಲಿ",
+          "why": "-ಅಲ್ಲಿ = in."
+        },
+        {
+          "q": "ನಾನು ಲಂಡನ್‌ನ＿ ಬಂದೆ.",
+          "en": "I came from London.",
+          "options": ["ಿಂದ", "ಲ್ಲಿ", "ಗೆ", "ಳು"],
+          "answer": "ಿಂದ",
+          "why": "-ಇಂದ = from."
+        },
+        {
+          "q": "ನಾನು ಶಾಲೆ＿ ಹೋಗುತ್ತೇನೆ.",
+          "en": "I go to school.",
+          "options": ["ಗೆ", "ಯಲ್ಲಿ", "ಯಿಂದ", "ಗಳು"],
+          "answer": "ಗೆ",
+          "why": "-ಗೆ = to."
+        },
+        {
+          "q": "ಅವರು ＿ ಇದ್ದಾರೆ.",
+          "en": "He is at home.",
+          "options": ["ಮನೆಯಲ್ಲಿ", "ಮನೆಗೆ", "ಮನೆಯಿಂದ", "ಮನೆ"],
+          "answer": "ಮನೆಯಲ್ಲಿ",
+          "why": "“At home” is ಮನೆಯಲ್ಲಿ."
+        },
+        {
+          "q": "ಅಮ್ಮನಿ＿ ಒಂದು ಉಡುಗೊರೆ",
+          "en": "a present for Mum",
+          "options": ["ಗೆ", "ಲ್ಲಿ", "ಂದ", "ಳು"],
+          "answer": "ಗೆ",
+          "why": "-ಗೆ = to, for."
+        }
+      ]
+    },
+    {
+      "id": "nanna-galu",
+      "title": "My, and plurals with -ಗಳು",
+      "particle": "ನನ್ನ -ಗಳು",
+      "summary": "ನನ್ನ, ನಿಮ್ಮ before the noun; -ಗಳು makes a plural.",
+      "sections": [
+        {
+          "p": "<b>ನನ್ನ</b> my, <b>ನಿನ್ನ</b> your (intimate), <b>ನಿಮ್ಮ</b> your (polite), <b>ಅವನ</b> his, <b>ಅವಳ</b> her, <b>ನಮ್ಮ</b> our. Kannadigas often say ನಮ್ಮ (our) where English says my: ನಮ್ಮ ಮನೆ, “our / my house”.",
+          "examples": [
+            ["{ನನ್ನ} ಹೆಸರು ಅನು.", "Nanna hesaru Anu.", "My name is Anu."],
+            [
+              "{ನಿಮ್ಮ} ಊರು ಯಾವುದು?",
+              "Nimma uuru yaavudu?",
+              "Which is your home town?"
+            ]
+          ]
+        },
+        {
+          "h": "Plurals",
+          "p": "Add <b>-ಗಳು</b> for things: ಪುಸ್ತಕ → ಪುಸ್ತಕಗಳು, books. People often take <b>-ರು</b>: ಹುಡುಗ → ಹುಡುಗರು, boys.",
+          "examples": [
+            ["ಪುಸ್ತಕ{ಗಳು}", "pustakagalu", "books"],
+            ["ಸ್ನೇಹಿತ{ರು}", "snehitaru", "friends"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ಅಮ್ಮ ಡಾಕ್ಟರ್.",
+          "en": "My mother is a doctor.",
+          "options": ["ನನ್ನ", "ನಾನು", "ನನಗೆ", "ನಿಮ್ಮ"],
+          "answer": "ನನ್ನ",
+          "why": "ನನ್ನ = my."
+        },
+        {
+          "q": "＿ ಹೆಸರು ಏನು?",
+          "en": "What is your name? (polite)",
+          "options": ["ನಿಮ್ಮ", "ನನ್ನ", "ನಿನ್ನ", "ಅವಳ"],
+          "answer": "ನಿಮ್ಮ",
+          "why": "Polite “your” is ನಿಮ್ಮ."
+        },
+        {
+          "q": "ಮರ → ＿",
+          "en": "tree → trees",
+          "options": ["ಮರಗಳು", "ಮರರು", "ಮರದಲ್ಲಿ", "ಮರಾ"],
+          "answer": "ಮರಗಳು",
+          "why": "Things take -ಗಳು."
+        },
+        {
+          "q": "ಹುಡುಗಿ → ＿",
+          "en": "girl → girls",
+          "options": ["ಹುಡುಗಿಯರು", "ಹುಡುಗಿಗಳು", "ಹುಡುಗಿಗೆ", "ಹುಡುಗಿಯಲ್ಲಿ"],
+          "answer": "ಹುಡುಗಿಯರು",
+          "why": "People take -ರು; a y slips in after -ಇ."
+        },
+        {
+          "q": "＿ ಊರು ಮೈಸೂರು.",
+          "en": "Our town is Mysuru.",
+          "options": ["ನಮ್ಮ", "ನಿಮ್ಮ", "ನನಗೆ", "ಅವನ"],
+          "answer": "ನಮ್ಮ",
+          "why": "ನಮ್ಮ = our."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,412 @@
+{
+  "schema": "grammar@1",
+  "language": "tibetan",
+  "notes": [
+    "Tibetan first grammar for the Grammar Learner. Written for this project.",
+    "Spoken Lhasa (Central) Tibetan in Uchen script. Examples are [Tibetan, romanization, English];",
+    "{braces} mark the point of the lesson. Drills are { q, en, options, answer, why }; ＿ is the blank."
+  ],
+  "title": "Tibetan first grammar",
+  "intro": "These lessons teach the spoken Tibetan of Lhasa. The verb comes last, and the small word at the very end of a sentence carries a lot: it says “is” or “has”, and also whether you are talking about yourself or someone else. The lessons cover pronouns and polite words, ཡིན and རེད, ཡོད and འདུག, saying no, asking questions, and talking about now, tomorrow and yesterday. The romanization is a simple guide to the Lhasa pronunciation, which is very different from the spelling.",
+  "lessons": [
+    {
+      "id": "pronouns",
+      "title": "I, you, and polite words",
+      "particle": "ང ཁྱེད་རང ཁོང",
+      "summary": "The pronouns, the polite forms, and how to say “my” and “your”.",
+      "sections": [
+        {
+          "p": "<b>ང</b> (nga) is “I”, <b>ཁྱེད་རང</b> (khyerang) is the polite “you”, and <b>ཁྱོད</b> (khyö) is the casual one. <b>ཁོ</b> (kho) is “he”, <b>མོ</b> (mo) “she”, and <b>ཁོང</b> (khong) a respectful “he” or “she”. Add <b>ཚོ</b> (tso) for the plural: <b>ང་ཚོ</b> (ngatso) we, <b>ཁོ་ཚོ</b> (khotso) they.",
+          "examples": [
+            ["{ང་}བསྟན་འཛིན་ཡིན།", "Nga Tenzin yin.", "I am Tenzin."],
+            [
+              "{ཁྱེད་རང་}ག་པར་ཕེབས་ཀྱི་ཡིན།",
+              "Khyerang kaba phep kyi yin?",
+              "Where are you going? (polite)"
+            ],
+            [
+              "{ཁོང་}ང་ཚོའི་དགེ་རྒན་རེད།",
+              "Khong ngatsö gegen re.",
+              "She is our teacher."
+            ]
+          ]
+        },
+        {
+          "h": "My, your, his",
+          "p": "“My” is <b>ངའི</b> (ngé), “your” is <b>ཁྱེད་རང་གི</b> (khyerang gi), “his” <b>ཁོའི</b> (khö), “her” <b>མོའི</b> (mö), “our” <b>ང་ཚོའི</b> (ngatsö). Add <b>ལགས</b> (la) after a name or a title to be polite: པདྨ་ལགས, Pema-la.",
+          "examples": [
+            [
+              "{ངའི་}མིང་ལ་པདྨ་ཟེར།",
+              "Ngé ming la Pema zer.",
+              "My name is Pema."
+            ],
+            [
+              "{ཁྱེད་རང་གི་}མིང་ལ་ག་རེ་ཟེར།",
+              "Khyerang gi ming la kare zer?",
+              "What is your name?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿་བསྟན་འཛིན་ཡིན།",
+          "en": "I am Tenzin.",
+          "options": ["ང", "ཁོ", "མོ", "ཁོང"],
+          "answer": "ང",
+          "why": "ང = I."
+        },
+        {
+          "q": "＿་སྨན་པ་རེད།",
+          "en": "She is a doctor.",
+          "options": ["མོ", "ང", "ཁྱེད་རང", "ང་ཚོ"],
+          "answer": "མོ",
+          "why": "མོ = she."
+        },
+        {
+          "q": "＿་མིང་ལ་པདྨ་ཟེར།",
+          "en": "My name is Pema.",
+          "options": ["ངའི", "ང", "ཁོའི", "ཁྱེད་རང་གི"],
+          "answer": "ངའི",
+          "why": "ངའི = my."
+        },
+        {
+          "q": "＿་གི་མིང་ལ་ག་རེ་ཟེར།",
+          "en": "What is your name? (polite)",
+          "options": ["ཁྱེད་རང", "ཁྱོད", "ང", "ཁོ"],
+          "answer": "ཁྱེད་རང",
+          "why": "ཁྱེད་རང is the polite “you”; ཁྱེད་རང་གི = your."
+        },
+        {
+          "q": "＿་ང་ཚོའི་དགེ་རྒན་རེད།",
+          "en": "He is our teacher. (respectful)",
+          "options": ["ཁོང", "ཁོ", "ང", "ཁྱོད"],
+          "answer": "ཁོང",
+          "why": "ཁོང is the respectful “he” or “she”."
+        }
+      ]
+    },
+    {
+      "id": "yin-re",
+      "title": "ཡིན and རེད: “is”",
+      "particle": "ཡིན རེད",
+      "summary": "ཡིན when you talk about yourself, རེད when you talk about others.",
+      "sections": [
+        {
+          "p": "Tibetan has two words for “is” that link two things (“I am a student”, “that is tea”). <b>ཡིན</b> (yin) is for yourself, <b>རེད</b> (re) for anyone or anything else. The word for “is” goes at the very end.",
+          "examples": [
+            ["ང་སློབ་ཕྲུག་{ཡིན}།", "Nga loptruk yin.", "I am a student."],
+            ["ཁོ་སྨན་པ་{རེད}།", "Kho menpa re.", "He is a doctor."],
+            ["དེ་བོད་ཇ་{རེད}།", "De pöja re.", "That is butter tea."]
+          ]
+        },
+        {
+          "h": "Asking “you”",
+          "p": "When you ask someone about themselves, use the form they will answer with: <b>ཡིན</b>. The question ending is <b>པས</b> (pe): ཁྱེད་རང་བོད་པ་<b>ཡིན་པས</b>? “Are you Tibetan?” The answer is ཡིན (yes) or མིན (no).",
+          "examples": [
+            [
+              "ཁྱེད་རང་ཨིན་ཇི་{ཡིན}་པས།",
+              "Khyerang inji yinpe?",
+              "Are you English?"
+            ],
+            ["ང་ལྷ་ས་ནས་{ཡིན}།", "Nga Lhasa ne yin.", "I'm from Lhasa."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ང་དགེ་རྒན་＿།",
+          "en": "I am a teacher.",
+          "options": ["ཡིན", "རེད", "ཡོད", "འདུག"],
+          "answer": "ཡིན",
+          "why": "About yourself: ཡིན."
+        },
+        {
+          "q": "མོ་སྨན་པ་＿།",
+          "en": "She is a doctor.",
+          "options": ["རེད", "ཡིན", "ཡོད", "པས"],
+          "answer": "རེད",
+          "why": "About someone else: རེད."
+        },
+        {
+          "q": "འདི་ཇ་＿།",
+          "en": "This is tea.",
+          "options": ["རེད", "ཡིན", "ལ", "ནས"],
+          "answer": "རེད",
+          "why": "About a thing: རེད."
+        },
+        {
+          "q": "ང་ལྷ་ས་ནས་＿།",
+          "en": "I am from Lhasa.",
+          "options": ["ཡིན", "རེད", "ཡོད་རེད", "འདུག"],
+          "answer": "ཡིན",
+          "why": "About yourself: ཡིན. ནས = from."
+        },
+        {
+          "q": "ཁྱེད་རང་བོད་པ་＿་པས།",
+          "en": "Are you Tibetan?",
+          "options": ["ཡིན", "རེད", "མ་རེད", "ཡོད"],
+          "answer": "ཡིན",
+          "why": "Asking “you”, use ཡིན, the form the answer will use."
+        }
+      ]
+    },
+    {
+      "id": "yod-duk",
+      "title": "ཡོད and འདུག: “there is”, “have”",
+      "particle": "ཡོད འདུག",
+      "summary": "ཡོད for what you know about yourself, ཡོད་རེད for known facts, འདུག for what you can see.",
+      "sections": [
+        {
+          "p": "To say “there is” or “has”, use <b>ཡོད</b> (yö). The owner takes <b>ལ</b> (la): ང་ལ་ … ཡོད, “to me … there is”, which is “I have”. For general facts about others, say <b>ཡོད་རེད</b> (yöre).",
+          "examples": [
+            ["ང་ལ་དེབ་གཅིག་{ཡོད}།", "Nga la dep chik yö.", "I have a book."],
+            ["ཁོ་ལ་མོ་ཊ་{ཡོད་རེད}།", "Kho la mota yöre.", "He has a car."]
+          ]
+        },
+        {
+          "h": "What you can see: འདུག",
+          "p": "<b>འདུག</b> (du) is “there is” for something you see or experience right now. It is common when describing food, weather and places in front of you.",
+          "examples": [
+            [
+              "ཕ་གིར་ཚོང་ཁང་ཞིག་{འདུག}།",
+              "Phagir tsongkhang shik du.",
+              "There's a shop over there."
+            ],
+            ["ཁ་ལག་ཞིམ་པོ་{འདུག}།", "Khalak shimpo du.", "The food is tasty."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ང་ལ་བུ་མོ་གཅིག་＿།",
+          "en": "I have one daughter.",
+          "options": ["ཡོད", "ཡིན", "རེད", "ནས"],
+          "answer": "ཡོད",
+          "why": "Your own possessions: ཡོད."
+        },
+        {
+          "q": "ཁོ་ལ་མོ་ཊ་ཡོད་＿།",
+          "en": "He has a car.",
+          "options": ["རེད", "ཡིན", "འདུག", "པས"],
+          "answer": "རེད",
+          "why": "A fact about someone else: ཡོད་རེད."
+        },
+        {
+          "q": "ཕ་གིར་ཁྱི་ཞིག་＿།",
+          "en": "Look, there's a dog over there!",
+          "options": ["འདུག", "ཡིན", "རེད", "ལ"],
+          "answer": "འདུག",
+          "why": "Something you can see right now: འདུག."
+        },
+        {
+          "q": "ང་＿་ཁང་པ་ཡོད།",
+          "en": "I have a house.",
+          "options": ["ལ", "ནས", "ཚོ", "པས"],
+          "answer": "ལ",
+          "why": "The owner takes ལ: ང་ལ."
+        },
+        {
+          "q": "ཁ་ལག་ཞིམ་པོ་＿།",
+          "en": "The food is tasty. (said while eating)",
+          "options": ["འདུག", "ཡིན", "ཡོད", "ལ"],
+          "answer": "འདུག",
+          "why": "Describing what you taste right now: འདུག."
+        }
+      ]
+    },
+    {
+      "id": "negation",
+      "title": "Saying no",
+      "particle": "མིན མ་རེད མེད",
+      "summary": "Each “is” word has its own negative.",
+      "sections": [
+        {
+          "p": "The negatives are: <b>ཡིན → མིན</b> (min), <b>རེད → མ་རེད</b> (mare), <b>ཡོད → མེད</b> (me), <b>ཡོད་རེད → ཡོད་མ་རེད</b> (yö mare), <b>འདུག → མི་འདུག</b> (mindu).",
+          "examples": [
+            ["ང་བོད་པ་{མིན}།", "Nga pöpa min.", "I'm not Tibetan."],
+            ["ཁོ་སྨན་པ་{མ་རེད}།", "Kho menpa mare.", "He isn't a doctor."],
+            ["ང་ལ་དངུལ་{མེད}།", "Nga la ngül me.", "I have no money."],
+            ["ཤ་{མི་འདུག}།", "Sha mindu.", "There's no meat."]
+          ]
+        },
+        {
+          "h": "With verbs",
+          "p": "The same pattern works with verbs: ང་ཤ་ཟ་གི་<b>ཡོད</b>, “I eat meat”, becomes ང་ཤ་ཟ་གི་<b>མེད</b>, “I don't eat meat”.",
+          "examples": [
+            ["ང་ཤ་ཟ་གི་{མེད}།", "Nga sha sa gi me.", "I don't eat meat."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ང་སློབ་ཕྲུག་＿།",
+          "en": "I'm not a student.",
+          "options": ["མིན", "མ་རེད", "མེད", "མི་འདུག"],
+          "answer": "མིན",
+          "why": "The negative of ཡིན is མིན."
+        },
+        {
+          "q": "མོ་དགེ་རྒན་＿།",
+          "en": "She isn't a teacher.",
+          "options": ["མ་རེད", "མིན", "མེད", "ཡིན"],
+          "answer": "མ་རེད",
+          "why": "The negative of རེད is མ་རེད."
+        },
+        {
+          "q": "ང་ལ་དུས་ཚོད་＿།",
+          "en": "I don't have time.",
+          "options": ["མེད", "མིན", "མ་རེད", "ཡོད"],
+          "answer": "མེད",
+          "why": "The negative of ཡོད is མེད."
+        },
+        {
+          "q": "ཁོ་ལ་མོ་ཊ་ཡོད་＿།",
+          "en": "He doesn't have a car.",
+          "options": ["མ་རེད", "མིན", "མེད", "མི་འདུག"],
+          "answer": "མ་རེད",
+          "why": "ཡོད་རེད becomes ཡོད་མ་རེད."
+        },
+        {
+          "q": "ང་ཤ་ཟ་གི་＿།",
+          "en": "I don't eat meat.",
+          "options": ["མེད", "མིན", "མ་རེད", "ཡོད"],
+          "answer": "མེད",
+          "why": "The negative of གི་ཡོད is གི་མེད."
+        }
+      ]
+    },
+    {
+      "id": "questions",
+      "title": "Asking questions",
+      "particle": "པས ག་རེ སུ",
+      "summary": "Add པས for yes/no questions; question words need no ending.",
+      "sections": [
+        {
+          "p": "For a yes/no question, add <b>པས</b> (pe) after the “is” word: <b>ཡིན་པས</b> (yinpe), <b>རེད་པས</b> (repe), <b>ཡོད་པས</b> (yöpe). A question with a question word needs no ending. Question words: <b>ག་རེ</b> (kare) what, <b>སུ</b> (su) who, <b>ག་པར</b> (kaba) where, <b>ག་དུས</b> (kadü) when, <b>ག་ཚོད</b> (katsö) how much.",
+          "examples": [
+            [
+              "ཁྱེད་རང་སྐུ་གཟུགས་བདེ་པོ་{ཡིན་པས}།",
+              "Khyerang kusuk depo yinpe?",
+              "How are you? (Are you well?)"
+            ],
+            [
+              "ཁྱེད་རང་ལ་དུས་ཚོད་{ཡོད་པས}།",
+              "Khyerang la dütsö yöpe?",
+              "Do you have time?"
+            ],
+            ["འདི་{ག་རེ}་རེད།", "Di kare re?", "What is this?"],
+            ["གོང་{ག་ཚོད}་རེད།", "Gong katsö re?", "How much is it?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ཁྱེད་རང་བོད་པ་ཡིན་＿།",
+          "en": "Are you Tibetan?",
+          "options": ["པས", "ག་རེ", "སུ", "ལ"],
+          "answer": "པས",
+          "why": "A yes/no question ends in པས."
+        },
+        {
+          "q": "འདི་＿་རེད།",
+          "en": "What is this?",
+          "options": ["ག་རེ", "སུ", "ག་པར", "ག་ཚོད"],
+          "answer": "ག་རེ",
+          "why": "ག་རེ = what."
+        },
+        {
+          "q": "ཁོང་＿་རེད།",
+          "en": "Who is she?",
+          "options": ["སུ", "ག་རེ", "ག་དུས", "ག་ཚོད"],
+          "answer": "སུ",
+          "why": "སུ = who."
+        },
+        {
+          "q": "གོང་＿་རེད།",
+          "en": "How much is it?",
+          "options": ["ག་ཚོད", "སུ", "ག་པར", "ག་དུས"],
+          "answer": "ག་ཚོད",
+          "why": "ག་ཚོད = how much; གོང = price."
+        },
+        {
+          "q": "ཟ་ཁང་＿་ཡོད་རེད།",
+          "en": "Where is the restaurant?",
+          "options": ["ག་པར", "ག་རེ", "སུ", "ག་དུས"],
+          "answer": "ག་པར",
+          "why": "ག་པར = where."
+        }
+      ]
+    },
+    {
+      "id": "verbs",
+      "title": "Doing things: now, tomorrow, yesterday",
+      "particle": "གི་ཡོད གི་ཡིན པ་ཡིན",
+      "summary": "Endings after the verb show the time, and whether it's you or someone else.",
+      "sections": [
+        {
+          "p": "The verb comes last and an ending follows it. Talking about yourself: <b>verb + གི་ཡོད</b> (gi yö) for now or usually, <b>verb + གི་ཡིན</b> (gi yin) for the future, and <b>past verb + པ་ཡིན</b> (pa yin) for the past. For other people, use <b>གི་ཡོད་རེད</b> and <b>པ་རེད</b>. གི is spelled ཀྱི after ད, བ and ས, and གྱི after ན, མ, ར and ལ.",
+          "examples": [
+            [
+              "ང་ཇ་འཐུང་{གི་ཡོད}།",
+              "Nga ja thung gi yö.",
+              "I drink tea. / I'm drinking tea."
+            ],
+            [
+              "ཁོ་བོད་སྐད་སློབ་སྦྱོང་བྱེད་{ཀྱི་ཡོད་རེད}།",
+              "Kho pöke lopjong che kyi yöre.",
+              "He is learning Tibetan."
+            ],
+            [
+              "ང་སང་ཉིན་ལྷ་སར་འགྲོ་{གི་ཡིན}།",
+              "Nga sangnyin Lhasar dro gi yin.",
+              "I'll go to Lhasa tomorrow."
+            ],
+            [
+              "ང་ཁ་སང་ལྷ་སར་ཕྱིན་{པ་ཡིན}།",
+              "Nga khasang Lhasar chinpa yin.",
+              "I went to Lhasa yesterday."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ང་ཇ་འཐུང་གི་＿།",
+          "en": "I'm drinking tea.",
+          "options": ["ཡོད", "ཡིན", "རེད", "པས"],
+          "answer": "ཡོད",
+          "why": "Now, about yourself: གི་ཡོད."
+        },
+        {
+          "q": "ང་སང་ཉིན་ཟ་ཁང་ལ་འགྲོ་གི་＿།",
+          "en": "I'll go to the restaurant tomorrow.",
+          "options": ["ཡིན", "ཡོད", "རེད", "མེད"],
+          "answer": "ཡིན",
+          "why": "The future, about yourself: གི་ཡིན."
+        },
+        {
+          "q": "ཁོ་ཇ་འཐུང་གི་ཡོད་＿།",
+          "en": "He is drinking tea.",
+          "options": ["རེད", "ཡིན", "པས", "ལ"],
+          "answer": "རེད",
+          "why": "About someone else: གི་ཡོད་རེད."
+        },
+        {
+          "q": "ང་ཁ་སང་ཕྱིན་པ་＿།",
+          "en": "I went yesterday.",
+          "options": ["ཡིན", "རེད", "ཡོད", "གི"],
+          "answer": "ཡིན",
+          "why": "The past, about yourself: པ་ཡིན."
+        },
+        {
+          "q": "ཁོ་ཁ་སང་ཕྱིན་པ་＿།",
+          "en": "He went yesterday.",
+          "options": ["རེད", "ཡིན", "ཡོད", "མེད"],
+          "answer": "རེད",
+          "why": "The past, about someone else: པ་རེད."
+        }
+      ]
+    }
+  ]
+}
