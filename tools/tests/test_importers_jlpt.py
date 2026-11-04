@@ -58,6 +58,27 @@ class Import(unittest.TestCase):
         again = jlpt_tanos.build(head, out, lists, lambda w: "common")
         self.assertEqual(again[1], out)
 
+    def test_kana_rows_and_greetings(self):
+        header = {"schema": "vocab@1", "language": "japanese", "notes": [], "decks": [{"id": "food", "title": "Food"}]}
+        entries = [
+            {"id": "food/美味しい", "deck": "food", "word": "美味しい", "reading": "oishii", "meaning": "delicious",
+             "note": "おいしい", "level": {"jlpt": "N1"}},
+            {"id": "food/三", "deck": "food", "word": "三", "reading": "san", "meaning": "three", "note": "さん"},
+            {"id": "food/こんにちは", "deck": "food", "word": "こんにちは", "reading": "konnichiwa", "meaning": "hello"},
+        ]
+        row = lambda kana, kanji, d: {"kana": kana, "kanji": kanji, "waller_definition": d}  # noqa: E731
+        lists = {5: [row("おいしい", "", "delicious"), row("さん", "", "Mr or Mrs")], 4: [],
+                 3: [row("こんにちは", "", "hello"), row("ありがとう", "", "Thank you")], 2: [],
+                 1: [row("おいしい", "美味しい", "delicious,tasty"), row("こんにちは", "今日は", "hello")]}
+        head, out, _ = jlpt_tanos.build(header, entries, lists, lambda w: "common")
+        by_id = {e["id"]: e for e in out}
+        self.assertEqual(by_id["food/美味しい"]["level"], {"jlpt": "N5"})
+        self.assertNotIn("level", by_id["food/三"])
+        self.assertIn("jlpt-n5/さん", by_id)
+        self.assertEqual(by_id["food/こんにちは"]["level"], {"jlpt": "N5"})
+        self.assertIn("jlpt-n5/ありがとう", by_id)
+        self.assertEqual(by_id["jlpt-n1/今日は"]["reading"], "konnichiwa")
+
 
 if __name__ == "__main__":
     unittest.main()
