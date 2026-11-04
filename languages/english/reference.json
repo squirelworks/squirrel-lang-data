@@ -1,0 +1,445 @@
+{
+  "schema": "reference@1",
+  "language": "english",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "English at a glance",
+      "body": [
+        "English is a Germanic language that took in a huge amount of French and Latin vocabulary, so it often has two words for one idea: ask and inquire, freedom and liberty.",
+        "It has very little inflection: nouns only change for plural and possession, and verbs have at most five forms (go, goes, went, gone, going). Word order, subject then verb then object, does most of the grammatical work, so it is strict.",
+        "Spelling preserves older pronunciations and many borrowings, so it is a poor guide to sound."
+      ],
+      "examples": [
+        {
+          "t": "The dog bit the man. · The man bit the dog.",
+          "e": "Swapping the order swaps who did what."
+        }
+      ],
+      "tags": ["SVO", "Germanic"]
+    },
+    {
+      "id": "spelling",
+      "topic": "sounds",
+      "title": "Spelling and sound don't match",
+      "body": "The same letters can spell different sounds, and the same sound can be spelled many ways. Learn the pronunciation together with each new word, and use a dictionary's phonetic spelling when unsure.",
+      "examples": [
+        {
+          "t": "th{ough} · thr{ough} · t{ough} · c{ough} · b{ough}",
+          "r": "/oʊ/ · /uː/ · /ʌf/ · /ɒf/ · /aʊ/",
+          "e": "one spelling, five sounds"
+        },
+        {
+          "t": "{k}night · {w}rite · i{s}land · lam{b}",
+          "e": "silent letters"
+        },
+        {
+          "t": "s{ee} · s{ea} · p{ie}ce · rec{ei}ve · m{e}",
+          "e": "one sound, five spellings"
+        }
+      ],
+      "tags": ["pronunciation", "spelling"]
+    },
+    {
+      "id": "stress-schwa",
+      "topic": "sounds",
+      "title": "Stress and the schwa",
+      "body": [
+        "English is stress-timed: stressed syllables are long and loud, and unstressed ones shrink, usually to the weak vowel schwa /ə/, the most common sound in English.",
+        "Stress can change the word class. Many two-syllable words are nouns with stress on the first syllable and verbs with stress on the second."
+      ],
+      "examples": [
+        {
+          "t": "a REcord · to reCORD",
+          "e": "noun · verb"
+        },
+        {
+          "t": "a PREsent · to preSENT",
+          "e": "noun · verb"
+        },
+        {
+          "t": "PHOtograph · phoTOgraphy · photoGRAPHic",
+          "e": "the stress moves, and the other vowels become schwa"
+        }
+      ],
+      "tags": ["pronunciation", "stress"]
+    },
+    {
+      "id": "endings",
+      "topic": "sounds",
+      "title": "Saying -ed and -s endings",
+      "body": "The past ending -ed and the plural or third-person -s each have three pronunciations, decided by the sound before them.",
+      "table": {
+        "head": ["Ending", "After", "Sound", "Examples"],
+        "rows": [
+          ["-ed", "t, d", "/ɪd/ (extra syllable)", "wanted, needed"],
+          [
+            "-ed",
+            "voiceless sounds: p, k, s, sh, ch, f",
+            "/t/",
+            "walked, stopped, washed"
+          ],
+          ["-ed", "voiced sounds and vowels", "/d/", "played, called, lived"],
+          [
+            "-s",
+            "s, z, sh, ch, j sounds",
+            "/ɪz/ (extra syllable)",
+            "buses, watches, pages"
+          ],
+          ["-s", "voiceless sounds: p, t, k, f", "/s/", "cats, books, laughs"],
+          ["-s", "voiced sounds and vowels", "/z/", "dogs, days, runs"]
+        ]
+      },
+      "tags": ["pronunciation", "endings"]
+    },
+    {
+      "id": "th",
+      "topic": "sounds",
+      "title": "The two th sounds",
+      "body": "Put the tip of the tongue lightly between the teeth and blow. Voiceless /θ/ is just air; voiced /ð/ adds the voice. The voiced one is in the most common words: the, this, that, they, there, then.",
+      "examples": [
+        {
+          "t": "{th}ink · {th}ree · ba{th}",
+          "r": "/θ/",
+          "e": "voiceless"
+        },
+        {
+          "t": "{th}is · mo{th}er · ba{th}e",
+          "r": "/ð/",
+          "e": "voiced"
+        }
+      ],
+      "tags": ["pronunciation", "consonants"]
+    },
+    {
+      "id": "articles",
+      "topic": "grammar",
+      "title": "a, an and the",
+      "body": [
+        "Use {a / an} for one countable thing that is new to the listener. Choose by sound, not letter: an before a vowel sound, a before a consonant sound.",
+        "Use {the} when the listener knows which one you mean: it was mentioned, it is unique, or the context makes it clear. Use no article for things in general in the plural or uncountable."
+      ],
+      "examples": [
+        {
+          "t": "{an} hour · {a} university · {an} MP · {a} one-way ticket",
+          "e": "the sound decides, not the letter"
+        },
+        {
+          "t": "I saw a cat. {The} cat was black.",
+          "e": "second mention takes the"
+        },
+        {
+          "t": "Cats like milk.",
+          "e": "cats and milk in general: no article"
+        }
+      ],
+      "tags": ["articles"]
+    },
+    {
+      "id": "countable",
+      "topic": "grammar",
+      "title": "Countable and uncountable nouns",
+      "body": "Uncountable nouns have no plural and don't take a / an. Some that are countable in other languages are uncountable in English: advice, information, furniture, luggage, news, homework, bread. Count them with a piece of, a slice of, a bottle of.",
+      "table": {
+        "head": ["", "Countable", "Uncountable"],
+        "rows": [
+          ["how much?", "how many books?", "how much water?"],
+          [
+            "a lot",
+            "many books",
+            "much water (mostly in questions and negatives)"
+          ],
+          ["a small amount", "a few books", "a little water"],
+          ["one unit", "a book", "a glass of water; a piece of advice"]
+        ]
+      },
+      "tags": ["nouns", "quantifiers"]
+    },
+    {
+      "id": "tenses",
+      "topic": "verbs",
+      "title": "The four tenses you use most",
+      "examples": [
+        {
+          "t": "I {have lost} my keys.",
+          "e": "They are still lost now."
+        },
+        {
+          "t": "I {lost} my keys yesterday.",
+          "e": "A finished time: present perfect is not possible with yesterday."
+        }
+      ],
+      "table": {
+        "head": ["Tense", "Use", "Example"],
+        "rows": [
+          [
+            "present simple",
+            "habits, facts, timetables",
+            "She works in a bank. Water boils at 100 °C."
+          ],
+          [
+            "present continuous",
+            "happening now; temporary; arranged future",
+            "She's working from home this week."
+          ],
+          [
+            "past simple",
+            "finished action at a stated or understood time",
+            "I saw that film last year."
+          ],
+          [
+            "present perfect",
+            "past action with present relevance; no stated time; up to now",
+            "I've seen that film. I've lived here for ten years."
+          ]
+        ]
+      },
+      "tags": ["verbs", "tenses"]
+    },
+    {
+      "id": "irregular-verbs",
+      "topic": "verbs",
+      "title": "Common irregular verbs",
+      "body": "Around 200 verbs are irregular, and they are the most frequent ones. Learn three forms of each: base, past and past participle.",
+      "table": {
+        "head": ["Base", "Past", "Past participle"],
+        "rows": [
+          ["be", "was / were", "been"],
+          ["have", "had", "had"],
+          ["do", "did", "done"],
+          ["go", "went", "gone"],
+          ["say", "said", "said"],
+          ["get", "got", "got (US also gotten)"],
+          ["make", "made", "made"],
+          ["know", "knew", "known"],
+          ["take", "took", "taken"],
+          ["see", "saw", "seen"],
+          ["come", "came", "come"],
+          ["think", "thought", "thought"]
+        ]
+      },
+      "tags": ["verbs", "irregular"]
+    },
+    {
+      "id": "do-support",
+      "topic": "grammar",
+      "title": "Questions and negatives with do",
+      "body": "Most verbs need the helper do (does, did) to make questions and negatives; the main verb goes back to its base form. Be, modal verbs (can, must, will…) and other helpers (have in perfect tenses) swap places with the subject instead.",
+      "examples": [
+        {
+          "t": "{Do} you like tea? · She {doesn't} work here.",
+          "e": "do and does carry the tense and the -s"
+        },
+        {
+          "t": "{Did} they go? (not: Did they went?)",
+          "e": "the main verb is in the base form"
+        },
+        {
+          "t": "{Are} you ready? · {Can} you swim? · {Have} you eaten?",
+          "e": "be, modals and helpers just swap"
+        }
+      ],
+      "tags": ["questions", "negation"]
+    },
+    {
+      "id": "time-prepositions",
+      "topic": "grammar",
+      "title": "at, on, in for time",
+      "examples": [
+        {
+          "t": "See you {on} Friday {at} six.",
+          "e": ""
+        },
+        {
+          "t": "next week · last year · this morning",
+          "e": "no preposition before next, last, this, every"
+        }
+      ],
+      "table": {
+        "head": ["Preposition", "Used with", "Examples"],
+        "rows": [
+          [
+            "at",
+            "clock times, mealtimes, festivals, night",
+            "at 7 o'clock, at lunch, at Christmas, at night"
+          ],
+          ["on", "days and dates", "on Monday, on 4 July, on my birthday"],
+          [
+            "in",
+            "months, years, seasons, parts of the day, longer periods",
+            "in May, in 2026, in winter, in the morning"
+          ]
+        ]
+      },
+      "tags": ["prepositions", "time"]
+    },
+    {
+      "id": "modals",
+      "topic": "verbs",
+      "title": "Modal verbs",
+      "body": "Modals never take -s, are followed by the base form without to, and form questions and negatives on their own.",
+      "table": {
+        "head": ["Modal", "Typical meaning", "Example"],
+        "rows": [
+          [
+            "can · could",
+            "ability, permission, possibility",
+            "Can I sit here? I could swim when I was five."
+          ],
+          [
+            "may · might",
+            "possibility; formal permission",
+            "It might rain. May I come in?"
+          ],
+          [
+            "must",
+            "strong obligation, certainty",
+            "You must wear a seatbelt. She must be tired."
+          ],
+          ["should", "advice, expectation", "You should see a doctor."],
+          [
+            "will · would",
+            "future, willingness; polite, hypothetical",
+            "I'll help. Would you like tea?"
+          ]
+        ]
+      },
+      "tags": ["verbs", "modals"]
+    },
+    {
+      "id": "phrasal-verbs",
+      "topic": "verbs",
+      "title": "Phrasal verbs",
+      "body": "A verb plus a small word (up, out, off, on…) often has a meaning you can't guess from the parts. They are everywhere in speech, where a phrasal verb usually replaces a more formal Latin-based verb.",
+      "table": {
+        "head": ["Phrasal verb", "Meaning", "Formal equivalent"],
+        "rows": [
+          ["give up", "stop trying", "abandon, quit"],
+          ["look after", "take care of", "care for"],
+          ["turn down", "refuse; lower the volume", "decline"],
+          ["run into", "meet by chance", "encounter"],
+          ["find out", "discover a fact", "discover"],
+          ["put off", "delay", "postpone"]
+        ]
+      },
+      "tags": ["verbs", "phrasal verbs", "idioms"]
+    },
+    {
+      "id": "adjective-order",
+      "topic": "grammar",
+      "title": "Order of adjectives",
+      "body": "When several adjectives come before a noun, native speakers follow a fixed order without thinking about it: opinion, size, age, shape, colour, origin, material, purpose. In practice, more than two or three is rare.",
+      "examples": [
+        {
+          "t": "a {lovely} {little} {old} {red} {Italian} car",
+          "e": "opinion · size · age · colour · origin"
+        },
+        {
+          "t": "a big black leather sofa",
+          "e": "not: a leather black big sofa"
+        }
+      ],
+      "tags": ["adjectives", "word order"]
+    },
+    {
+      "id": "politeness",
+      "topic": "phrases",
+      "title": "Polite requests",
+      "body": "English signals politeness with indirect forms rather than special pronouns. A bare imperative (Give me…) can sound rude even with please.",
+      "examples": [
+        {
+          "t": "Could you pass the salt, please?",
+          "e": "neutral polite request"
+        },
+        {
+          "t": "Would you mind closing the window?",
+          "e": "more polite; answer No, not at all to agree"
+        },
+        {
+          "t": "I was wondering if you could help me.",
+          "e": "very polite, for bigger favours"
+        },
+        {
+          "t": "Sorry? · Pardon?",
+          "e": "Could you say that again?"
+        },
+        {
+          "t": "Excuse me, …",
+          "e": "to get attention or get past someone"
+        }
+      ],
+      "tags": ["politeness", "requests"]
+    },
+    {
+      "id": "conditionals",
+      "topic": "grammar",
+      "title": "If sentences",
+      "body": "English conditionals follow four common patterns. The tense in the if-clause is one step back from the meaning: if I had (now), if I had had (then).",
+      "table": {
+        "head": ["Type", "Pattern", "Example"],
+        "rows": [
+          [
+            "zero: always true",
+            "if + present, present",
+            "If you heat ice, it melts."
+          ],
+          [
+            "first: real future",
+            "if + present, will",
+            "If it rains, I'll stay home."
+          ],
+          [
+            "second: unreal now",
+            "if + past, would",
+            "If I had a car, I would drive."
+          ],
+          [
+            "third: unreal past",
+            "if + past perfect, would have",
+            "If I had known, I would have come."
+          ]
+        ]
+      },
+      "tags": ["conditionals", "grammar"]
+    },
+    {
+      "id": "for-since",
+      "topic": "verbs",
+      "title": "for and since",
+      "body": "With the present perfect, {for} gives a length of time and {since} gives the starting point. Many languages use the present tense here; English doesn't.",
+      "examples": [
+        {
+          "t": "I've lived here {for} three years.",
+          "e": "a length of time"
+        },
+        {
+          "t": "I've lived here {since} 2023.",
+          "e": "a starting point"
+        },
+        {
+          "t": "not: I live here since 2023.",
+          "e": "a common learner mistake"
+        }
+      ],
+      "tags": ["present perfect", "prepositions"]
+    },
+    {
+      "id": "used-to",
+      "topic": "verbs",
+      "title": "used to",
+      "body": "used to + base verb describes past habits or states that are no longer true. The question and negative are did you use to / didn't use to. Don't confuse it with be used to + -ing, which means be accustomed to.",
+      "examples": [
+        {
+          "t": "I {used to} play the piano.",
+          "e": "I don't any more."
+        },
+        {
+          "t": "I'm {used to} getting up early.",
+          "e": "It isn't hard for me."
+        }
+      ],
+      "tags": ["past", "habits"]
+    }
+  ]
+}

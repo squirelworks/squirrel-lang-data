@@ -1,0 +1,215 @@
+{
+  "schema": "reference@1",
+  "language": "georgian",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Georgian at a glance",
+      "body": [
+        "Georgian is the language of Georgia, spoken by about four million people. It belongs to the Kartvelian family, which is related to no other language family; its close relatives are Mingrelian, Laz and Svan.",
+        "There are no articles and no grammatical gender. Nouns take case endings and postpositions, and the verb carries prefixes and suffixes for both subject and object. Words can start with long clusters of consonants: გვფრცქვნი (gvprtskvni), “you peel us”."
+      ],
+      "examples": [
+        {
+          "t": "{მიყვარს} საქართველო.",
+          "r": "Miq'vars Sakartvelo.",
+          "e": "I love Georgia."
+        }
+      ],
+      "tags": ["Kartvelian", "no gender", "agglutinative"]
+    },
+    {
+      "id": "mkhedruli",
+      "topic": "script",
+      "title": "Mkhedruli",
+      "body": [
+        "Modern Georgian is written in Mkhedruli, an alphabet of 33 letters with no capitals. Each letter has one sound, and each sound one letter, so spelling is regular.",
+        "Two older Georgian scripts, Asomtavruli and Nuskhuri, are still used in the church. Asomtavruli letters (Mtavruli) are sometimes used in titles as if they were capitals."
+      ],
+      "table": {
+        "head": ["Letter", "Sound", "Letter", "Sound"],
+        "rows": [
+          ["ა", "a", "ბ", "b"],
+          ["გ", "g", "დ", "d"],
+          ["ე", "e", "ვ", "v"],
+          ["ზ", "z", "თ", "t"],
+          ["ი", "i", "კ", "k'"],
+          ["ლ", "l", "მ", "m"],
+          ["ნ", "n", "ო", "o"],
+          ["პ", "p'", "ჟ", "zh"],
+          ["რ", "r", "ს", "s"],
+          ["ტ", "t'", "უ", "u"],
+          ["ფ", "p", "ქ", "k"],
+          ["ღ", "gh", "ყ", "q'"],
+          ["შ", "sh", "ჩ", "ch"],
+          ["ც", "ts", "ძ", "dz"],
+          ["წ", "ts'", "ჭ", "ch'"],
+          ["ხ", "kh", "ჯ", "j"],
+          ["ჰ", "h", "", ""]
+        ]
+      },
+      "tags": ["script", "letters"]
+    },
+    {
+      "id": "ejectives",
+      "topic": "sounds",
+      "title": "Three kinds of consonant",
+      "body": "Georgian has three versions of many stops: voiced (b, d, g), breathy (p, t, k, said with a puff of air as in English) and ejective (p', t', k', said with a closed throat and a pop, with no puff). The apostrophe in the romanization marks the ejective one, and mixing them up changes the word.",
+      "table": {
+        "head": ["Voiced", "Breathy", "Ejective"],
+        "rows": [
+          ["ბ b", "ფ p", "პ p'"],
+          ["დ d", "თ t", "ტ t'"],
+          ["გ g", "ქ k", "კ k'"],
+          ["ძ dz", "ც ts", "წ ts'"],
+          ["ჯ j", "ჩ ch", "ჭ ch'"]
+        ]
+      },
+      "tags": ["pronunciation", "ejectives"]
+    },
+    {
+      "id": "cases",
+      "topic": "grammar",
+      "title": "Main cases",
+      "body": "Georgian has seven cases. Here are the forms of კაცი (man) and ქალაქი (city). Which case the subject takes depends on the verb's tense: the ergative -მა is used for the subject of most past-tense verbs.",
+      "table": {
+        "head": ["Case", "Ending", "კაცი", "Use"],
+        "rows": [
+          ["Nominative", "-ი", "კაცი", "subject (present)"],
+          ["Ergative", "-მა", "კაცმა", "subject (past)"],
+          ["Dative", "-ს", "კაცს", "object; to"],
+          ["Genitive", "-ის", "კაცის", "of"],
+          ["Instrumental", "-ით", "კაცით", "with, by means of"],
+          ["Adverbial", "-ად", "კაცად", "as; in the role of"],
+          ["Vocative", "-ო", "კაცო", "calling someone"]
+        ]
+      },
+      "tags": ["cases", "ergative"]
+    },
+    {
+      "id": "postpositions",
+      "topic": "grammar",
+      "title": "Postpositions",
+      "body": "Where English has prepositions, Georgian adds an ending to the noun. Most attach to the dative (-ს), which then drops its ს.",
+      "table": {
+        "head": ["Ending", "Meaning", "Example"],
+        "rows": [
+          ["-ში", "in, into", "თბილისში, in Tbilisi"],
+          ["-ზე", "on, about", "მაგიდაზე, on the table"],
+          ["-თან", "at, near, with (a person)", "მეგობართან, at a friend's"],
+          ["-დან", "from", "თბილისიდან, from Tbilisi"],
+          ["-ისთვის", "for", "შენთვის, for you"],
+          ["-ივით", "like", "ბავშვივით, like a child"]
+        ]
+      },
+      "tags": ["postpositions", "cases"]
+    },
+    {
+      "id": "to-be",
+      "topic": "verbs",
+      "title": "“To be”",
+      "body": "In the present, “to be” is very regular. In speech არის (is) often shrinks to -ა on the end of the word before it.",
+      "examples": [
+        {
+          "t": "ეს ჩემი სახლი{ა}.",
+          "r": "Es chemi sakhlia.",
+          "e": "This is my house."
+        }
+      ],
+      "table": {
+        "head": ["", "Singular", "Plural"],
+        "rows": [
+          ["1st", "ვარ var", "ვართ vart"],
+          ["2nd", "ხარ khar", "ხართ khart"],
+          ["3rd", "არის aris", "არიან arian"]
+        ]
+      },
+      "tags": ["verbs", "to be"]
+    },
+    {
+      "id": "inverted",
+      "topic": "verbs",
+      "title": "Feelings take the dative",
+      "body": "Verbs of feeling, wanting and having treat the person as the object: მიყვარს is literally “(it) is loved to me”. The prefix shows who: მ- me, გ- you, ∅/ს- him or her.",
+      "table": {
+        "head": ["", "I", "you", "he / she"],
+        "rows": [
+          ["want", "მინდა minda", "გინდა ginda", "უნდა unda"],
+          ["love", "მიყვარს miq'vars", "გიყვარს giq'vars", "უყვარს uq'vars"],
+          ["have (a thing)", "მაქვს makvs", "გაქვს gakvs", "აქვს akvs"]
+        ]
+      },
+      "tags": ["verbs", "inversion"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Counting in twenties",
+      "body": "Above twenty, Georgian counts in twenties, like French quatre-vingts: 30 is “twenty and ten”, 40 is “two twenties”, 50 is “two twenties and ten”. A noun after a number stays singular.",
+      "table": {
+        "head": ["", "Georgian", "Literally"],
+        "rows": [
+          ["1", "ერთი erti", ""],
+          ["2", "ორი ori", ""],
+          ["3", "სამი sami", ""],
+          ["4", "ოთხი otkhi", ""],
+          ["5", "ხუთი khuti", ""],
+          ["10", "ათი ati", ""],
+          ["20", "ოცი otsi", ""],
+          ["30", "ოცდაათი otsdaati", "twenty and ten"],
+          ["40", "ორმოცი ormotsi", "two twenties"],
+          ["60", "სამოცი samotsi", "three twenties"],
+          ["80", "ოთხმოცი otkhmotsi", "four twenties"],
+          ["100", "ასი asi", ""]
+        ]
+      },
+      "tags": ["numbers", "vigesimal"]
+    },
+    {
+      "id": "phrases",
+      "topic": "phrases",
+      "title": "Everyday phrases",
+      "examples": [
+        {
+          "t": "გამარჯობა!",
+          "r": "Gamarjoba!",
+          "e": "Hello!"
+        },
+        {
+          "t": "დიდი მადლობა.",
+          "r": "Didi madloba.",
+          "e": "Thank you very much."
+        },
+        {
+          "t": "ბოდიში, არ მესმის.",
+          "r": "Bodishi, ar mesmis.",
+          "e": "Sorry, I don't understand."
+        },
+        {
+          "t": "ინგლისურად ლაპარაკობთ?",
+          "r": "Inglisurad lap'arak'obt?",
+          "e": "Do you speak English?"
+        },
+        {
+          "t": "რა ღირს?",
+          "r": "Ra ghirs?",
+          "e": "How much is it?"
+        },
+        {
+          "t": "გაუმარჯოს!",
+          "r": "Gaumarjos!",
+          "e": "Cheers!"
+        }
+      ],
+      "tags": ["phrases", "travel"]
+    },
+    {
+      "id": "supra",
+      "topic": "culture",
+      "title": "The supra",
+      "body": "A supra is a Georgian feast. A tamada (თამადა, toastmaster) leads a long series of toasts: to peace, to the hosts, to parents, to those who have died, to friendship. Guests drink when the tamada finishes a toast, and wine is the usual drink; beer is traditionally reserved for toasting enemies.",
+      "tags": ["culture", "food", "wine"]
+    }
+  ]
+}

@@ -1,0 +1,426 @@
+{
+  "schema": "reference@1",
+  "language": "arabic",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Arabic at a glance",
+      "body": [
+        "Arabic is a Semitic language written from right to left. Most words are built from a root of three consonants that carries a core meaning, shaped by patterns of vowels and extra letters.",
+        "Modern Standard Arabic (al-fuṣḥā) is used in writing, news and formal speech across the Arab world. Everyday speech uses regional dialects such as Egyptian, Levantine or Gulf Arabic, which differ a lot from each other and from the standard."
+      ],
+      "examples": [
+        {
+          "t": "العربية",
+          "r": "al-ʿarabiyya",
+          "e": "Arabic (the language)"
+        }
+      ],
+      "tags": ["Semitic", "MSA", "dialects"]
+    },
+    {
+      "id": "letter-forms",
+      "topic": "script",
+      "title": "Letter forms",
+      "body": "The alphabet has 28 letters, all consonants or long vowels. Letters join to their neighbours within a word, so most have four shapes depending on position: isolated, initial, medial and final.",
+      "table": {
+        "head": ["Letter", "Isolated", "Initial", "Medial", "Final"],
+        "rows": [
+          ["bāʾ (b)", "ب", "بـ", "ـبـ", "ـب"],
+          ["ʿayn (ʿ)", "ع", "عـ", "ـعـ", "ـع"],
+          ["hāʾ (h)", "ه", "هـ", "ـهـ", "ـه"],
+          ["kāf (k)", "ك", "كـ", "ـكـ", "ـك"],
+          ["mīm (m)", "م", "مـ", "ـمـ", "ـم"]
+        ]
+      },
+      "tags": ["script", "forms"]
+    },
+    {
+      "id": "non-connectors",
+      "topic": "script",
+      "title": "Letters that don't join forward",
+      "body": "Six letters connect to the letter before them but never to the one after, so they leave a small gap in the word. The letter that follows them takes its initial or isolated form.",
+      "examples": [
+        {
+          "t": "ا د ذ ر ز و",
+          "r": "alif · dāl · dhāl · rāʾ · zāy · wāw",
+          "e": "the six non-connecting letters"
+        },
+        {
+          "t": "{د}{ا}{ر}",
+          "r": "dār",
+          "e": "house: none of these letters join forward"
+        },
+        {
+          "t": "و{ر}{د}ة",
+          "r": "warda",
+          "e": "rose"
+        }
+      ],
+      "tags": ["script", "joining"]
+    },
+    {
+      "id": "harakat",
+      "topic": "script",
+      "title": "Short vowel marks",
+      "body": "Short vowels are written as small marks above or below a letter. Everyday texts leave them out and readers supply them from knowledge; the Qurʾan, children's books and textbooks show them.",
+      "examples": [
+        {
+          "t": "كتب · كَتَبَ",
+          "r": "kataba",
+          "e": "he wrote, without and with vowel marks"
+        }
+      ],
+      "table": {
+        "head": ["Mark", "Name", "Sound"],
+        "rows": [
+          ["بَ", "fatḥa", "ba"],
+          ["بِ", "kasra", "bi"],
+          ["بُ", "ḍamma", "bu"],
+          ["بْ", "sukūn", "b with no vowel"],
+          ["بّ", "shadda", "bb, a doubled consonant"],
+          ["بً", "tanwīn fatḥa", "ban (indefinite ending)"]
+        ]
+      },
+      "tags": ["script", "vowels", "harakat"]
+    },
+    {
+      "id": "special-letters",
+      "topic": "script",
+      "title": "Tāʾ marbūṭa, alif maqṣūra and hamza",
+      "body": [
+        "{ة} (tāʾ marbūṭa) appears only at the end of a word and usually marks a feminine noun. It is said as -a, but as -at when a word follows in a possessive phrase.",
+        "{ى} (alif maqṣūra) is an ā at the end of a word written with a dotless yāʾ.",
+        "{ء} (hamza) is a glottal stop. It sits alone or on a carrier letter: أ إ ؤ ئ."
+      ],
+      "examples": [
+        {
+          "t": "مدرسة",
+          "r": "madrasa",
+          "e": "school"
+        },
+        {
+          "t": "مدرسة البنات",
+          "r": "madrasat al-banāt",
+          "e": "the girls' school"
+        },
+        {
+          "t": "على",
+          "r": "ʿalā",
+          "e": "on"
+        },
+        {
+          "t": "سؤال",
+          "r": "suʾāl",
+          "e": "question"
+        }
+      ],
+      "tags": ["script", "spelling"]
+    },
+    {
+      "id": "sounds",
+      "topic": "sounds",
+      "title": "Sounds English doesn't have",
+      "table": {
+        "head": ["Letter", "Name", "Sound"],
+        "rows": [
+          ["ع", "ʿayn", "a tightening deep in the throat, voiced"],
+          [
+            "ح",
+            "ḥāʾ",
+            "a breathy h from the throat, like fogging a mirror hard"
+          ],
+          ["خ", "khāʾ", "as in Scottish loch"],
+          ["غ", "ghayn", "a gargled r, like French r"],
+          ["ق", "qāf", "k made far back, at the uvula"],
+          [
+            "ص ض ط ظ",
+            "emphatics",
+            "s, d, t, dh with the back of the tongue raised; they darken nearby vowels"
+          ]
+        ]
+      },
+      "tags": ["pronunciation"]
+    },
+    {
+      "id": "sun-moon",
+      "topic": "grammar",
+      "title": "The article al- and sun letters",
+      "body": [
+        "The definite article is {ال} (al-), written joined to the noun. Before the 14 sun letters, made with the tongue tip, the l is not said and the next consonant is doubled instead. Before moon letters, the l is said.",
+        "Sun letters: ت ث د ذ ر ز س ش ص ض ط ظ ل ن. The spelling never changes, only the sound."
+      ],
+      "examples": [
+        {
+          "t": "الشمس",
+          "r": "ash-shams",
+          "e": "the sun (sun letter: the l assimilates)"
+        },
+        {
+          "t": "القمر",
+          "r": "al-qamar",
+          "e": "the moon (moon letter: the l is pronounced)"
+        },
+        {
+          "t": "النور",
+          "r": "an-nūr",
+          "e": "the light"
+        }
+      ],
+      "tags": ["article", "pronunciation"]
+    },
+    {
+      "id": "roots",
+      "topic": "grammar",
+      "title": "Roots and patterns",
+      "body": "Learn a root and you can guess dozens of words. The root k-t-b is about writing; patterns turn it into a place, a person, an object or an action.",
+      "examples": [
+        {
+          "t": "كَتَبَ",
+          "r": "kataba",
+          "e": "he wrote"
+        },
+        {
+          "t": "كِتاب",
+          "r": "kitāb",
+          "e": "book"
+        },
+        {
+          "t": "كاتِب",
+          "r": "kātib",
+          "e": "writer (pattern CāCiC: one who does)"
+        },
+        {
+          "t": "مَكْتَب",
+          "r": "maktab",
+          "e": "office, desk (pattern maCCaC: place)"
+        },
+        {
+          "t": "مَكْتَبة",
+          "r": "maktaba",
+          "e": "library, bookshop"
+        },
+        {
+          "t": "مَكْتوب",
+          "r": "maktūb",
+          "e": "written; a letter (pattern maCCūC: done to)"
+        }
+      ],
+      "tags": ["roots", "morphology"]
+    },
+    {
+      "id": "nominal-sentences",
+      "topic": "grammar",
+      "title": "Sentences without is",
+      "body": "In the present tense Arabic has no verb to be. A definite subject followed by an indefinite word makes a complete sentence. If both are definite, it is a phrase: the big house.",
+      "examples": [
+        {
+          "t": "البيت كبير.",
+          "r": "al-bayt kabīr",
+          "e": "The house is big."
+        },
+        {
+          "t": "البيت الكبير",
+          "r": "al-bayt al-kabīr",
+          "e": "the big house"
+        },
+        {
+          "t": "أنا طالب.",
+          "r": "anā ṭālib",
+          "e": "I am a student."
+        }
+      ],
+      "tags": ["sentences", "to be"]
+    },
+    {
+      "id": "gender-agreement",
+      "topic": "grammar",
+      "title": "Gender and agreement",
+      "body": "Nouns are masculine or feminine; ة usually marks feminine. Adjectives follow the noun and match it in gender, number and definiteness. Plurals of things (not people) take feminine singular adjectives.",
+      "examples": [
+        {
+          "t": "ولد طويل",
+          "r": "walad ṭawīl",
+          "e": "a tall boy"
+        },
+        {
+          "t": "بنت طويل{ة}",
+          "r": "bint ṭawīla",
+          "e": "a tall girl"
+        },
+        {
+          "t": "سيارات جديد{ة}",
+          "r": "sayyārāt jadīda",
+          "e": "new cars (non-human plural takes feminine singular)"
+        }
+      ],
+      "tags": ["gender", "adjectives"]
+    },
+    {
+      "id": "pronouns",
+      "topic": "grammar",
+      "title": "Personal pronouns and possessive endings",
+      "body": "You is different for a man and a woman. Possession is a suffix on the noun.",
+      "table": {
+        "head": ["Person", "Pronoun", "my / your / his… book"],
+        "rows": [
+          ["I", "أنا anā", "كتابي kitābī"],
+          ["you (m)", "أنتَ anta", "كتابكَ kitābuka"],
+          ["you (f)", "أنتِ anti", "كتابكِ kitābuki"],
+          ["he", "هو huwa", "كتابه kitābuhu"],
+          ["she", "هي hiya", "كتابها kitābuhā"],
+          ["we", "نحن naḥnu", "كتابنا kitābunā"],
+          ["you (pl)", "أنتم antum", "كتابكم kitābukum"],
+          ["they", "هم hum", "كتابهم kitābuhum"]
+        ]
+      },
+      "tags": ["pronouns", "possession"]
+    },
+    {
+      "id": "past-present",
+      "topic": "verbs",
+      "title": "Past and present: katab, yaktub",
+      "body": "The past tense adds suffixes to the stem; the present adds prefixes (and some suffixes). The basic word order in formal Arabic is verb, subject, object, but subject first is also common.",
+      "table": {
+        "head": ["Person", "Past", "Present"],
+        "rows": [
+          ["I", "كتبتُ katabtu", "أكتب aktubu"],
+          ["you (m)", "كتبتَ katabta", "تكتب taktubu"],
+          ["you (f)", "كتبتِ katabti", "تكتبين taktubīna"],
+          ["he", "كتب kataba", "يكتب yaktubu"],
+          ["she", "كتبت katabat", "تكتب taktubu"],
+          ["we", "كتبنا katabnā", "نكتب naktubu"],
+          ["they (m)", "كتبوا katabū", "يكتبون yaktubūna"]
+        ]
+      },
+      "tags": ["verbs", "conjugation"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Numbers and digits",
+      "body": [
+        "Many Arab countries write digits in the Eastern Arabic form. Numbers are written left to right even inside right-to-left text: ٢٠٢٦ is 2026.",
+        "The words for 3 to 10 take the opposite gender ending to the noun they count, one of the famous quirks of Arabic grammar."
+      ],
+      "table": {
+        "head": ["Digit", "Word", ""],
+        "rows": [
+          ["١ · 1", "واحد", "wāḥid"],
+          ["٢ · 2", "اثنان", "ithnān"],
+          ["٣ · 3", "ثلاثة", "thalātha"],
+          ["٤ · 4", "أربعة", "arbaʿa"],
+          ["٥ · 5", "خمسة", "khamsa"],
+          ["٦ · 6", "ستة", "sitta"],
+          ["٧ · 7", "سبعة", "sabʿa"],
+          ["٨ · 8", "ثمانية", "thamāniya"],
+          ["٩ · 9", "تسعة", "tisʿa"],
+          ["١٠ · 10", "عشرة", "ʿashara"]
+        ]
+      },
+      "tags": ["numbers", "digits"]
+    },
+    {
+      "id": "phrases",
+      "topic": "phrases",
+      "title": "Everyday phrases",
+      "examples": [
+        {
+          "t": "السلام عليكم",
+          "r": "as-salāmu ʿalaykum",
+          "e": "Peace be upon you. (hello)"
+        },
+        {
+          "t": "وعليكم السلام",
+          "r": "wa-ʿalaykum as-salām",
+          "e": "And upon you peace. (the reply)"
+        },
+        {
+          "t": "مرحبا",
+          "r": "marḥaban",
+          "e": "Hello."
+        },
+        {
+          "t": "شكرا",
+          "r": "shukran",
+          "e": "Thank you."
+        },
+        {
+          "t": "عفوا",
+          "r": "ʿafwan",
+          "e": "You're welcome. Excuse me."
+        },
+        {
+          "t": "من فضلك",
+          "r": "min faḍlik",
+          "e": "Please."
+        },
+        {
+          "t": "إن شاء الله",
+          "r": "in shāʾ allāh",
+          "e": "God willing. (said of anything in the future)"
+        },
+        {
+          "t": "مع السلامة",
+          "r": "maʿa s-salāma",
+          "e": "Goodbye."
+        }
+      ],
+      "tags": ["greetings"]
+    },
+    {
+      "id": "plurals",
+      "topic": "grammar",
+      "title": "Sound and broken plurals",
+      "body": [
+        "Some nouns take a regular {sound plural}: -ūn (or -īn) for male people, -āt for most feminine nouns. Many more have a {broken plural}, where the vowels inside the root change. Broken plurals must be learned with each noun.",
+        "Arabic also has a dual for exactly two: -ān (or -ayn)."
+      ],
+      "table": {
+        "head": ["Singular", "Plural", "Type"],
+        "rows": [
+          [
+            "مهندس muhandis · engineer",
+            "مهندسون muhandisūn",
+            "sound masculine"
+          ],
+          [
+            "معلمة muʿallima · teacher (f)",
+            "معلمات muʿallimāt",
+            "sound feminine"
+          ],
+          ["كتاب kitāb · book", "كتب kutub", "broken"],
+          ["ولد walad · boy", "أولاد awlād", "broken"],
+          ["بيت bayt · house", "بيوت buyūt", "broken"],
+          ["كتاب kitāb · book", "كتابان kitābān · two books", "dual"]
+        ]
+      },
+      "tags": ["plurals", "dual"]
+    },
+    {
+      "id": "idafa",
+      "topic": "grammar",
+      "title": "Iḍāfa: X of Y",
+      "body": "To say the student's book or the door of the house, put the two nouns side by side: the thing owned first, without al-, then the owner. Only the last noun takes al-, but the whole phrase is definite.",
+      "examples": [
+        {
+          "t": "كتاب الطالب",
+          "r": "kitāb aṭ-ṭālib",
+          "e": "the student's book"
+        },
+        {
+          "t": "باب البيت",
+          "r": "bāb al-bayt",
+          "e": "the door of the house"
+        },
+        {
+          "t": "مدينة نيويورك",
+          "r": "madīnat nyū yūrk",
+          "e": "New York City (ة is said -at here)"
+        }
+      ],
+      "tags": ["possession", "idafa"]
+    }
+  ]
+}

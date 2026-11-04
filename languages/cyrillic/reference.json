@@ -1,0 +1,507 @@
+{
+  "schema": "reference@1",
+  "language": "cyrillic",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Russian at a glance",
+      "body": [
+        "Russian is an East Slavic language written in Cyrillic. Nouns, adjectives and pronouns change for six cases, and there are three genders. There are no articles, and no word for is in the present tense.",
+        "Because endings show who does what, word order is flexible and is used for emphasis: the new or important information usually comes last.",
+        "Verbs come in pairs of imperfective and perfective aspect, which matters more than tense."
+      ],
+      "examples": [
+        {
+          "t": "Я студент.",
+          "r": "Ya student.",
+          "e": "I am a student."
+        },
+        {
+          "t": "Маша читает книгу.",
+          "r": "Masha chitayet knigu.",
+          "e": "Masha is reading a book."
+        }
+      ],
+      "tags": ["Slavic", "cases", "aspect"]
+    },
+    {
+      "id": "false-friends",
+      "topic": "script",
+      "title": "Letters that look Latin but aren't",
+      "body": "Several Cyrillic letters look like Latin ones with a different sound. These cause the most mistakes at the start.",
+      "table": {
+        "head": ["Letter", "Sound", "Example"],
+        "rows": [
+          ["В в", "v", "вода · voda · water"],
+          ["Н н", "n", "нет · net · no"],
+          ["Р р", "r (rolled)", "река · reka · river"],
+          ["С с", "s", "сок · sok · juice"],
+          ["У у", "u", "утро · utro · morning"],
+          ["Х х", "kh, as in loch", "хлеб · khleb · bread"],
+          ["Е е", "ye", "есть · yest' · to eat; there is"]
+        ]
+      },
+      "tags": ["script", "alphabet"]
+    },
+    {
+      "id": "vowel-pairs",
+      "topic": "script",
+      "title": "Vowel pairs and the two signs",
+      "body": [
+        "Each vowel has a hard and a soft partner. The soft vowels make the consonant before them soft (palatalized), and at the start of a word they add a y sound.",
+        "Two letters have no sound of their own: {ь} (the soft sign) softens the consonant before it, and {ъ} (the hard sign) keeps a consonant hard before a soft vowel."
+      ],
+      "examples": [
+        {
+          "t": "мат · мат{ь}",
+          "r": "mat · mat'",
+          "e": "checkmate · mother"
+        },
+        {
+          "t": "под{ъ}езд",
+          "r": "pod'yezd",
+          "e": "entrance (of a building)"
+        }
+      ],
+      "table": {
+        "head": ["Hard", "Soft", "Example"],
+        "rows": [
+          ["а · a", "я · ya", "мясо · myaso · meat"],
+          ["э · e", "е · ye", "лето · leto · summer"],
+          ["ы · y", "и · i", "быть · byt' · to be; бить · bit' · to hit"],
+          ["о · o", "ё · yo", "ёж · yozh · hedgehog"],
+          ["у · u", "ю · yu", "юг · yug · south"]
+        ]
+      },
+      "tags": ["script", "vowels", "soft sign"]
+    },
+    {
+      "id": "stress-reduction",
+      "topic": "sounds",
+      "title": "Stress and vowel reduction",
+      "body": [
+        "Stress can fall on any syllable and has to be learned with each word. Only the stressed vowel is said fully: an unstressed о sounds like a, and unstressed е and я sound close to i. Textbooks mark stress with an accent; normal text does not.",
+        "{ё} is always stressed, but it is often printed as е."
+      ],
+      "examples": [
+        {
+          "t": "молоко́",
+          "r": "malakó",
+          "e": "milk: two unstressed о said as a"
+        },
+        {
+          "t": "хорошо́",
+          "r": "kharashó",
+          "e": "good, well"
+        },
+        {
+          "t": "за́мок · замо́к",
+          "r": "zámak · zamók",
+          "e": "castle · lock"
+        }
+      ],
+      "tags": ["pronunciation", "stress"]
+    },
+    {
+      "id": "devoicing",
+      "topic": "sounds",
+      "title": "Final devoicing",
+      "body": "At the end of a word, and before a voiceless consonant, voiced consonants lose their voice: б → p, в → f, г → k, д → t, ж → sh, з → s.",
+      "examples": [
+        {
+          "t": "хлеб",
+          "r": "khlep",
+          "e": "bread"
+        },
+        {
+          "t": "го́род",
+          "r": "górat",
+          "e": "city"
+        },
+        {
+          "t": "в{т}о́рник",
+          "r": "ftórnik",
+          "e": "Tuesday (в before т)"
+        }
+      ],
+      "tags": ["pronunciation"]
+    },
+    {
+      "id": "gender",
+      "topic": "grammar",
+      "title": "Gender from the ending",
+      "body": "You can tell a noun's gender from its ending almost every time. Nouns in -ь can be either and need to be learned; men's names and words like папа are masculine even though they end in -а.",
+      "table": {
+        "head": ["Gender", "Ending", "Examples"],
+        "rows": [
+          ["masculine", "consonant, -й", "стол · table; музей · museum"],
+          ["feminine", "-а, -я", "книга · book; неделя · week"],
+          ["neuter", "-о, -е", "окно · window; море · sea"],
+          ["either", "-ь", "день · day (m); ночь · night (f)"]
+        ]
+      },
+      "tags": ["nouns", "gender"]
+    },
+    {
+      "id": "cases",
+      "topic": "grammar",
+      "title": "The six cases",
+      "body": "Each case answers its own question word. Learn them with the questions, as Russian schoolchildren do.",
+      "table": {
+        "head": ["Case", "Question", "Main uses", "книга"],
+        "rows": [
+          ["Nominative", "кто? что?", "subject", "книга"],
+          [
+            "Genitive",
+            "кого? чего?",
+            "of, none of, after numbers, у (by, at)",
+            "книги"
+          ],
+          [
+            "Dative",
+            "кому? чему?",
+            "to, for; indirect object; age; мне нравится",
+            "книге"
+          ],
+          [
+            "Accusative",
+            "кого? что?",
+            "direct object; motion into (в, на)",
+            "книгу"
+          ],
+          [
+            "Instrumental",
+            "кем? чем?",
+            "with, by means of; after с (with)",
+            "книгой"
+          ],
+          [
+            "Prepositional",
+            "о ком? о чём?",
+            "about (о); location (в, на)",
+            "о книге"
+          ]
+        ]
+      },
+      "tags": ["cases", "nouns"]
+    },
+    {
+      "id": "to-be-have",
+      "topic": "grammar",
+      "title": "To be and to have",
+      "body": [
+        "There is no present tense of to be: just put the two nouns side by side. In writing, a dash may stand in its place.",
+        "To have is said as at me there is: у + genitive + есть."
+      ],
+      "examples": [
+        {
+          "t": "Это мой дом.",
+          "r": "Eto moy dom.",
+          "e": "This is my house."
+        },
+        {
+          "t": "Москва — столица России.",
+          "r": "Moskva — stolitsa Rossii.",
+          "e": "Moscow is the capital of Russia."
+        },
+        {
+          "t": "{У меня есть} кот.",
+          "r": "U menya yest' kot.",
+          "e": "I have a cat."
+        },
+        {
+          "t": "{У меня нет} кота.",
+          "r": "U menya net kota.",
+          "e": "I don't have a cat. (нет + genitive)"
+        }
+      ],
+      "tags": ["to be", "to have"]
+    },
+    {
+      "id": "pronouns",
+      "topic": "grammar",
+      "title": "Pronouns and ты / вы",
+      "body": "{ты} is you to one friend, family member, child or animal. {вы} is you to several people, and the polite you to anyone you'd call by name and patronymic. When in doubt, use вы.",
+      "table": {
+        "head": ["", "Singular", "Plural"],
+        "rows": [
+          ["1st", "я · I", "мы · we"],
+          ["2nd", "ты · you", "вы · you (plural, polite)"],
+          ["3rd", "он · he; она · she; оно · it", "они · they"]
+        ]
+      },
+      "tags": ["pronouns", "politeness"]
+    },
+    {
+      "id": "present-tense",
+      "topic": "verbs",
+      "title": "Present tense: two conjugations",
+      "body": "Most verbs follow one of two patterns. First conjugation verbs have -е- in their endings; second conjugation verbs, mostly those ending in -ить, have -и-.",
+      "table": {
+        "head": ["Person", "читать (read)", "говорить (speak)"],
+        "rows": [
+          ["я", "читаю", "говорю"],
+          ["ты", "читаешь", "говоришь"],
+          ["он · она", "читает", "говорит"],
+          ["мы", "читаем", "говорим"],
+          ["вы", "читаете", "говорите"],
+          ["они", "читают", "говорят"]
+        ]
+      },
+      "tags": ["verbs", "conjugation"]
+    },
+    {
+      "id": "past-tense",
+      "topic": "verbs",
+      "title": "Past tense agrees in gender",
+      "body": "The past tense is the easiest: drop -ть and add -л, then a gender and number ending. It agrees with the subject's gender, not with person.",
+      "examples": [
+        {
+          "t": "Он чита{л}.",
+          "r": "On chital.",
+          "e": "He was reading. / He read."
+        },
+        {
+          "t": "Она чита{ла}.",
+          "r": "Ona chitala.",
+          "e": "She was reading."
+        },
+        {
+          "t": "Оно чита{ло}.",
+          "r": "Ono chitalo.",
+          "e": "It was reading."
+        },
+        {
+          "t": "Они чита{ли}.",
+          "r": "Oni chitali.",
+          "e": "They were reading."
+        }
+      ],
+      "tags": ["verbs", "past"]
+    },
+    {
+      "id": "aspect",
+      "topic": "verbs",
+      "title": "Aspect: imperfective and perfective",
+      "body": "Most verbs come in pairs. The {imperfective} describes a process, a repeated action or the action in general. The {perfective} describes one completed action with a result. Perfective verbs have no present tense: their present-looking forms mean the future.",
+      "examples": [
+        {
+          "t": "Я {читал} книгу.",
+          "r": "Ya chital knigu.",
+          "e": "I was reading a book. / I read a book (at some point)."
+        },
+        {
+          "t": "Я {прочитал} книгу.",
+          "r": "Ya prochital knigu.",
+          "e": "I read the book (to the end)."
+        },
+        {
+          "t": "Я {прочитаю} книгу.",
+          "r": "Ya prochitayu knigu.",
+          "e": "I will read the book."
+        }
+      ],
+      "table": {
+        "head": ["Imperfective", "Perfective", "Meaning"],
+        "rows": [
+          ["делать", "сделать", "do, make"],
+          ["писать", "написать", "write"],
+          ["читать", "прочитать", "read"],
+          ["говорить", "сказать", "say"],
+          ["покупать", "купить", "buy"]
+        ]
+      },
+      "tags": ["verbs", "aspect"]
+    },
+    {
+      "id": "motion",
+      "topic": "verbs",
+      "title": "Verbs of motion",
+      "body": "Going has separate verbs for on foot and by vehicle, and each comes in two forms: one for a single trip in one direction, one for round trips, habits and general movement.",
+      "examples": [
+        {
+          "t": "Я {иду} в школу.",
+          "r": "Ya idu v shkolu.",
+          "e": "I'm on my way to school."
+        },
+        {
+          "t": "Я {хожу} в школу каждый день.",
+          "r": "Ya khozhu v shkolu kazhdyy den'.",
+          "e": "I go to school every day."
+        },
+        {
+          "t": "Мы {едем} в Москву.",
+          "r": "My yedem v Moskvu.",
+          "e": "We're travelling to Moscow."
+        }
+      ],
+      "table": {
+        "head": ["", "One way, now", "Habitual, there and back"],
+        "rows": [
+          ["on foot", "идти", "ходить"],
+          ["by vehicle", "ехать", "ездить"]
+        ]
+      },
+      "tags": ["verbs", "motion"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Numbers and the noun after them",
+      "body": "один, два, три, четыре, пять, шесть, семь, восемь, девять, десять. The noun after a number changes case: after 1 it stays nominative singular, after 2–4 it takes genitive singular, after 5–20 genitive plural. The last digit decides above 20: 21 год, 22 года, 25 лет.",
+      "examples": [
+        {
+          "t": "один год",
+          "r": "odin god",
+          "e": "one year"
+        },
+        {
+          "t": "два год{а}",
+          "r": "dva goda",
+          "e": "two years"
+        },
+        {
+          "t": "пять {лет}",
+          "r": "pyat' let",
+          "e": "five years"
+        }
+      ],
+      "tags": ["numbers", "cases"]
+    },
+    {
+      "id": "phrases",
+      "topic": "phrases",
+      "title": "Everyday phrases",
+      "examples": [
+        {
+          "t": "Здравствуйте",
+          "r": "Zdravstvuyte",
+          "e": "Hello. (polite; the first в is silent)"
+        },
+        {
+          "t": "Привет",
+          "r": "Privet",
+          "e": "Hi. (to friends)"
+        },
+        {
+          "t": "Спасибо",
+          "r": "Spasibo",
+          "e": "Thank you."
+        },
+        {
+          "t": "Пожалуйста",
+          "r": "Pozhaluysta",
+          "e": "Please. You're welcome."
+        },
+        {
+          "t": "Извините",
+          "r": "Izvinite",
+          "e": "Excuse me. Sorry."
+        },
+        {
+          "t": "Как дела?",
+          "r": "Kak dela?",
+          "e": "How are things?"
+        },
+        {
+          "t": "Я не понимаю",
+          "r": "Ya ne ponimayu",
+          "e": "I don't understand."
+        },
+        {
+          "t": "До свидания",
+          "r": "Do svidaniya",
+          "e": "Goodbye."
+        },
+        {
+          "t": "Пока",
+          "r": "Poka",
+          "e": "Bye. (to friends)"
+        }
+      ],
+      "tags": ["greetings"]
+    },
+    {
+      "id": "adjectives",
+      "topic": "grammar",
+      "title": "Adjective endings",
+      "body": "Adjectives agree with the noun in gender, number and case, and come before it. The dictionary form is masculine nominative. Soft-stem adjectives like синий (dark blue) use the soft vowels.",
+      "table": {
+        "head": ["", "Masculine", "Feminine", "Neuter", "Plural"],
+        "rows": [
+          [
+            "новый · new",
+            "новый дом",
+            "новая книга",
+            "новое окно",
+            "новые дома"
+          ],
+          [
+            "синий · blue",
+            "синий дом",
+            "синяя книга",
+            "синее окно",
+            "синие дома"
+          ],
+          [
+            "большой · big",
+            "большой дом",
+            "большая книга",
+            "большое окно",
+            "большие дома"
+          ]
+        ]
+      },
+      "tags": ["adjectives", "agreement"]
+    },
+    {
+      "id": "where-whither",
+      "topic": "grammar",
+      "title": "в / на: where vs where to",
+      "body": "в and на take the {prepositional} for location (where?) and the {accusative} for direction (where to?). Some places use на rather than в: work, the post office, concerts, the street.",
+      "examples": [
+        {
+          "t": "Я {в школе}.",
+          "r": "Ya v shkole.",
+          "e": "I'm at school. (где? prepositional)"
+        },
+        {
+          "t": "Я иду {в школу}.",
+          "r": "Ya idu v shkolu.",
+          "e": "I'm going to school. (куда? accusative)"
+        },
+        {
+          "t": "Она {на работе}.",
+          "r": "Ona na rabote.",
+          "e": "She's at work."
+        }
+      ],
+      "tags": ["prepositions", "cases"]
+    },
+    {
+      "id": "like",
+      "topic": "grammar",
+      "title": "I like: мне нравится",
+      "body": "Russian says it pleases me. The liked thing is the subject, and the person who likes it is in the dative. The verb agrees with the thing.",
+      "examples": [
+        {
+          "t": "{Мне} нравится музыка.",
+          "r": "Mne nravitsya muzyka.",
+          "e": "I like music."
+        },
+        {
+          "t": "{Ему} нравятся кошки.",
+          "r": "Yemu nravyatsya koshki.",
+          "e": "He likes cats. (plural verb for plural cats)"
+        },
+        {
+          "t": "{Мне} нравилось там.",
+          "r": "Mne nravilos' tam.",
+          "e": "I liked it there."
+        }
+      ],
+      "tags": ["dative", "verbs"]
+    }
+  ]
+}

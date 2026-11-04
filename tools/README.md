@@ -15,6 +15,7 @@ python3 tools/fmt.py        # format every content file in place
 | `check_meta.py` | Languages and varieties: ids match folders and are unique, every variety's parent chain ends at its language, and each language lists its varieties. |
 | `check_vocab.py` | Vocabulary: words sit in listed decks in header order, ids are unique, readings are given for every word or none. Reports words with no level or frequency tag yet. |
 | `check_grammar.py` | Grammar courses: lesson ids are unique, drill answers are among their options, planned points link to real lessons, generated drills have their data. Reports lessons with no level yet. |
+| `check_reference.py` | Reference cards: ids are unique, table rows match their head, card sources are in `SOURCES.md`. Reports cards with no level yet. |
 | `check_tools.py` | The tools' own tests in `tests/`. |
 | `fmt.py` | Formats content files: keys in schema order, two-space indent, short lists on one line, JSONL one entry per line. |
 | `schema.py` | The JSON Schema validator the checks use. It rejects any keyword it doesn't support, so a schema can't be skipped silently. |
@@ -25,3 +26,5 @@ python3 tools/fmt.py        # format every content file in place
 | `migrate/lsd_vocab.py` | The one-time conversion of LanguageStudentDesk's `vocab.js` decks to `vocab@1` (needs node). |
 | `gen_grammar.py` | Generates LanguageStudentDesk's `languages/<id>/grammar.js` courses from `grammar.json`. `--check` reports drift. |
 | `migrate/lsd_grammar.py` | The one-time conversion of LanguageStudentDesk's `grammar.js` courses to `grammar@1` (needs node). |
+| `gen_reference.py` | Generates LanguageStudentDesk's `languages/<id>/reference.json` cards. `--check` reports drift. |
+| `migrate/lsd_reference.py` | The one-time conversion of LanguageStudentDesk's reference cards to `reference@1`. |
