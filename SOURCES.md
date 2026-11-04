@@ -17,6 +17,7 @@ only imported when its license fits that.
 | yomitan-jlpt-vocab (Stephen Kraus), the cleaned-up copy of Waller's lists the import reads | Japanese JLPT vocabulary (common spellings checked against JMdict) | CC BY-SA 4.0 | https://github.com/stephenmk/yomitan-jlpt-vocab |
 | National Institute of Korean Language, Basic Korean Dictionary (한국어기초사전) | Korean graded vocabulary decks (beginner, intermediate, advanced) and level tags | CC BY-SA 2.0 KR (adaptations shared under CC BY-SA 4.0, as it allows) | 국립국어원 한국어기초사전, https://krdict.korean.go.kr, read via https://github.com/spellcheck-ko/korean-dict-nikl-krdict |
 | CC-CEDICT (MDBG and contributors) | Chinese pinyin and English meanings for the most-common-words decks | CC BY-SA 4.0 | CC-CEDICT, https://cc-cedict.org, read from the cc-cedict npm package |
+| TOPIK level descriptors | The National Institute for International Education's description of each TOPIK level: short quotations on the Korean reference card | Quoted with attribution; not under this repo's license | Read via https://en.wikipedia.org/wiki/Test_of_Proficiency_in_Korean (official site: https://www.topik.go.kr) |
 | wordfreq (Robyn Speer and contributors) | Frequency tags (core, common, rare) on vocabulary | CC BY-SA 4.0 (data) | https://github.com/rspeer/wordfreq |
 
 Content written for this project is marked as original in its file and isn't
