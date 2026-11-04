@@ -91,8 +91,9 @@ def variety_ids(pack):
     return out
 
 
-from . import folder  # noqa: E402
+from . import folder, sqlite  # noqa: E402
 
 FORMATS = {
     "folder": folder,
+    "sqlite": sqlite,
 }
