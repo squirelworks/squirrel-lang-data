@@ -7,8 +7,19 @@ only imported when its license fits that.
 
 | Source | Used for | License | Attribution |
 |---|---|---|---|
+| Wiktionary | Lemmas and grammar notes behind the grammar courses (examples are original) | CC BY-SA 4.0 | Wiktionary contributors, https://www.wiktionary.org |
+| Wikipedia and Simple English Wikipedia | Grammar overviews behind the grammar courses (examples are original) | CC BY-SA 4.0 | Wikipedia contributors, https://www.wikipedia.org |
+| Wikibooks, "Modern Meitei/Common phrases" | Manipuri grammar course phrases | CC BY-SA 4.0 | Wikibooks contributors, https://en.wikibooks.org/wiki/Modern_Meitei |
+| FSI Amharic Basic Course; FSI Italian | Amharic and Italian grammar courses | Public domain (US government work) | Foreign Service Institute |
+| Allen and Greenough, *New Latin Grammar* (1903) | Latin grammar course | Public domain | via Perseus and Dickinson College Commentaries |
+| A. J. Primrose, *A Manipuri Grammar, Vocabulary, and Phrase Book* (1888) | Manipuri grammar course | Public domain | |
 
 Content written for this project is marked as original in its file and isn't
 listed here.
+
+Some courses also checked facts (no text) against copyrighted grammars, which
+their `notes` cite as further reading: S. L. Chelliah, *A Grammar of Meithei*
+(1997), and N. Sanatombi Devi, "Earlier Works on Tense and Aspect in Manipuri
+(Meeteilon)", *Language in India* 16:10 (2016).
 
 Apps that ship this data show these credits, for example on an About screen.

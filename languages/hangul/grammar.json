@@ -1,0 +1,4709 @@
+{
+  "schema": "grammar@1",
+  "language": "hangul",
+  "notes": [
+    "Korean grammar for the Grammar Learner, one level on every lesson. Written for this project.",
+    "Examples are [Korean, romanization, English]; {braces} mark the particle or ending.",
+    "Drills are { q, en, options, answer, why }; ＿ is the blank.",
+    "",
+    "Sources (open / educational; attested constructions — original example sentences):",
+    "- National Institute of Korean Language (국립국어원) grammar notes and 표준국어대사전",
+    "  entries for particles, -았/었-, 안/못, -고 싶다, -(으)ㄹ 것이다, -고 있다, -고/-지만/-아서·어서",
+    "  (public educational reference material).",
+    "- Wiktionary Korean lemmas and “Korean grammar” overview (CC BY-SA): 은/는, 이/가, 을/를,",
+    "  에/에서, -아요/-어요, 이다, past, negation, desire, prospective, progressive, connectors.",
+    "- Wikipedia “Korean grammar” / “Revised Romanization of Korean” (CC BY-SA) for overview",
+    "  and romanization; romanization in this file follows RR.",
+    "- In-repo languages/hangul/reference.json past-negative, want, future, connectors cards",
+    "  (same beginner seam; examples here are original).",
+    "- National Institute of Korean Language educational grammar for 받침 (seven final",
+    "  sounds and liaison), -(으)시-, humble 드리다/여쭙다/뵙다, 한다체, and written",
+    "  -(으)며 / -(으)나 / -(으)므로. Example sentences are original.",
+    "Each lesson has a level: absolute-beginner, beginner, beginner-intermediate,",
+    "intermediate, advanced-intermediate, advanced. The drill shape is unchanged."
+  ],
+  "title": "Korean grammar",
+  "intro": "Korean puts the verb last and marks each noun with a particle. Every lesson has a level. Absolute beginner is Hangul: consonants, vowels, and syllable blocks with no final letter. Beginner is batchim (받침), the particles 은/는, 이/가, 을/를, and 에/에서, and 이에요/예요. Beginner-intermediate is 해요체: -아요/-어요, the polite past, 안 and 못, -고 싶어요, -(으)ㄹ 거예요, and -고 있어요. Intermediate is connective endings. Advanced-intermediate is honorifics. Advanced is the plain written style used in news. Romanization follows the Revised Romanization of Korean.",
+  "lessons": [
+    {
+      "id": "hangul-consonants",
+      "title": "Hangul consonants",
+      "particle": "ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ ㅈ ㅊ ㅋ ㅌ ㅍ ㅎ",
+      "summary": "Fourteen basic consonants. ㅇ is silent at the start of a syllable. An extra stroke marks a puff of air.",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "Hangul is an alphabet: each letter is a sound, and the letters stack into one block per syllable. The fourteen basic consonants are <b>ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ ㅈ ㅊ ㅋ ㅌ ㅍ ㅎ</b>. At the start of a syllable, ㄱ ㄷ ㅂ ㅈ are plain (a light start, little air), and ㅋ ㅌ ㅍ ㅊ are the same mouth positions with a strong puff of air.",
+          "examples": [
+            ["ㄱ ㄴ ㄷ ㄹ ㅁ", "g, n, d, r, m", "The first five basic consonants."],
+            [
+              "ㅂ ㅅ ㅇ ㅈ ㅎ",
+              "b, s, ng, j, h",
+              "ㅇ is silent when a syllable starts with a vowel."
+            ],
+            ["ㅋ ㅌ ㅍ ㅊ", "k, t, p, ch", "Aspirated: a clear puff of air."]
+          ]
+        },
+        {
+          "h": "Plain, aspirated, and silent ㅇ",
+          "p": "ㄱ and ㅋ are both a “k” place, but only ㅋ sends a puff of air. The same pairs are ㄷ/ㅌ, ㅂ/ㅍ, and ㅈ/ㅊ. Doubled ㄲ ㄸ ㅃ ㅆ ㅉ are tense; leave them until the fourteen above are easy. <b>ㅇ</b> at the start of a block is only a placeholder, so a vowel has something to sit with. It is not “ng” there.",
+          "examples": [
+            ["가 / 카", "ga / ka", "ㄱ versus ㅋ, both with ㅏ."],
+            ["다 / 타", "da / ta", "ㄷ versus ㅌ."],
+            ["아", "a", "Silent ㅇ plus ㅏ."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Which letter is silent at the start of a syllable?",
+          "en": "",
+          "options": ["ㅇ", "ㅎ", "ㄱ", "ㅁ"],
+          "answer": "ㅇ",
+          "why": "Initial ㅇ is a placeholder. It is silent before a vowel."
+        },
+        {
+          "q": "Which consonant is a strong puff of air (aspirated k)?",
+          "en": "",
+          "options": ["ㅋ", "ㄱ", "ㄴ", "ㅅ"],
+          "answer": "ㅋ",
+          "why": "ㅋ is aspirated. ㄱ is the plain partner, with little air."
+        },
+        {
+          "q": "ㄴ is which sound?",
+          "en": "",
+          "options": ["n", "m", "ng", "r"],
+          "answer": "n",
+          "why": "ㄴ is n, as in 나 na."
+        },
+        {
+          "q": "How many basic consonants does Hangul have?",
+          "en": "",
+          "options": ["14", "10", "24", "7"],
+          "answer": "14",
+          "why": "Fourteen basic consonants, and ten basic vowels. Doubled letters come later."
+        },
+        {
+          "q": "Which of these is a vowel, not a consonant?",
+          "en": "",
+          "options": ["ㅏ", "ㅁ", "ㅅ", "ㅎ"],
+          "answer": "ㅏ",
+          "why": "ㅏ is the vowel a. The others are consonants."
+        },
+        {
+          "q": "ㅂ and ㅍ differ by…",
+          "en": "",
+          "options": [
+            "a puff of air",
+            "the vowel that follows",
+            "being silent",
+            "a final letter only"
+          ],
+          "answer": "a puff of air",
+          "why": "ㅍ is aspirated; ㅂ is plain. The mouth position is the same."
+        }
+      ]
+    },
+    {
+      "id": "hangul-vowels",
+      "title": "Hangul vowels",
+      "particle": "ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ ㅑ ㅕ ㅛ ㅠ",
+      "summary": "Ten basic vowels. Tall vowels sit to the right of the consonant; flat ones sit below it.",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "The ten basic vowels are <b>ㅏ a, ㅑ ya, ㅓ eo, ㅕ yeo, ㅗ o, ㅛ yo, ㅜ u, ㅠ yu, ㅡ eu, ㅣ i</b>. ㅓ is “eo”, an open “uh”, not the “o” of ㅗ. ㅡ is “eu”: lips flat, no rounding. ㅐ and ㅔ are compounds (ㅏ+ㅣ and ㅓ+ㅣ). In modern Seoul speech both sound like “e”, and you will meet ㅔ immediately in the particle 에.",
+          "examples": [
+            ["아 어 오 우", "a, eo, o, u", "Four vowels you will see constantly."],
+            [
+              "야 여 요 유",
+              "ya, yeo, yo, yu",
+              "A y- glide: one extra short stroke."
+            ],
+            [
+              "에 / 애",
+              "e / ae",
+              "ㅔ and ㅐ. Seoul speech treats them as almost the same e."
+            ]
+          ]
+        },
+        {
+          "h": "Where the vowel sits",
+          "p": "A <b>tall</b> vowel (ㅏ ㅑ ㅓ ㅕ ㅣ, and ㅐ ㅔ) stands to the right of the first consonant: 가, 너, 미. A <b>flat</b> vowel (ㅗ ㅛ ㅜ ㅠ ㅡ) lies under it: 고, 무, 스. When the syllable starts with a vowel sound, write silent ㅇ first: 오 is ㅇ plus ㅗ, not a bare ㅗ.",
+          "examples": [
+            ["가", "ga", "ㄱ on the left, tall ㅏ on the right."],
+            ["고", "go", "ㄱ on top, flat ㅗ underneath."],
+            ["우유", "uyu", "Two blocks: 우 (u) and 유 (yu)."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ㅓ is romanized…",
+          "en": "",
+          "options": ["eo", "o", "eu", "u"],
+          "answer": "eo",
+          "why": "ㅓ is eo, the open vowel in 어. ㅗ is o."
+        },
+        {
+          "q": "ㅡ is romanized…",
+          "en": "",
+          "options": ["eu", "u", "eo", "i"],
+          "answer": "eu",
+          "why": "ㅡ is eu, unrounded. ㅜ is u."
+        },
+        {
+          "q": "Where does tall ㅏ sit in 가?",
+          "en": "",
+          "options": ["To the right of ㄱ", "Under ㄱ", "On top of ㄱ", "It replaces ㄱ"],
+          "answer": "To the right of ㄱ",
+          "why": "Tall vowels stand to the right of the first consonant."
+        },
+        {
+          "q": "Where does flat ㅗ sit in 고?",
+          "en": "",
+          "options": [
+            "Under ㄱ",
+            "To the right of ㄱ",
+            "Before ㄱ as its own block",
+            "It is silent"
+          ],
+          "answer": "Under ㄱ",
+          "why": "Flat vowels lie under the first consonant."
+        },
+        {
+          "q": "How do you write the syllable “a” by itself?",
+          "en": "",
+          "options": ["아", "ㅏ", "가", "오"],
+          "answer": "아",
+          "why": "A syllable cannot start with a bare vowel. Silent ㅇ plus ㅏ is 아."
+        },
+        {
+          "q": "에 is which vowel letter?",
+          "en": "",
+          "options": ["ㅔ", "ㅐ", "ㅓ", "ㅗ"],
+          "answer": "ㅔ",
+          "why": "에 is silent ㅇ plus ㅔ. 애 is ㅐ. Both sound like e in Seoul speech."
+        }
+      ]
+    },
+    {
+      "id": "hangul-blocks",
+      "title": "Reading syllable blocks",
+      "particle": "consonant + vowel",
+      "summary": "Read a block as first consonant, then vowel. These blocks have no final letter yet.",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "Every syllable is one block. Read the first consonant, then the vowel. <b>나</b> is ㄴ plus ㅏ, “na”. <b>무</b> is ㅁ plus ㅜ, “mu”. A word is blocks in a row: <b>나무</b> is na-mu, “tree”.",
+          "examples": [
+            ["나무", "namu", "tree — 나 plus 무."],
+            ["모자", "moja", "hat — 모 plus 자."],
+            ["아기", "agi", "baby — 아 plus 기."]
+          ]
+        },
+        {
+          "h": "No final letter yet",
+          "p": "These blocks end when the vowel ends. A letter sitting under the vowel is a final consonant, 받침, and it changes the sound. That is the next lesson. For now, if you only see a consonant and a vowel, say both and stop: 바다 is ba-da, “sea”. 가게 is ga-ge, “shop”, with ㅔ on the right.",
+          "examples": [
+            ["바다", "bada", "sea."],
+            ["가수", "gasu", "singer."],
+            ["가게", "gage", "shop."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "나 is which sounds?",
+          "en": "",
+          "options": ["ㄴ + ㅏ", "ㄴ + ㅓ", "ㅁ + ㅏ", "ㅇ + ㅏ"],
+          "answer": "ㄴ + ㅏ",
+          "why": "나 is n plus a."
+        },
+        {
+          "q": "Read 모자.",
+          "en": "",
+          "options": ["moja (hat)", "namu (tree)", "bada (sea)", "uyu (milk)"],
+          "answer": "moja (hat)",
+          "why": "모 is mo, 자 is ja."
+        },
+        {
+          "q": "Read 우유.",
+          "en": "",
+          "options": ["uyu (milk)", "agi (baby)", "gage (shop)", "gasu (singer)"],
+          "answer": "uyu (milk)",
+          "why": "우 is u, 유 is yu."
+        },
+        {
+          "q": "Which block is “na”?",
+          "en": "",
+          "options": ["나", "너", "무", "가"],
+          "answer": "나",
+          "why": "나 = ㄴ + ㅏ. 너 is neo."
+        },
+        {
+          "q": "아기 splits into…",
+          "en": "",
+          "options": ["아 + 기", "아가 + 이", "ㅇ + 아기", "아ㄱ + ㅣ"],
+          "answer": "아 + 기",
+          "why": "Two blocks: silent ㅇ plus ㅏ, then ㄱ plus ㅣ."
+        },
+        {
+          "q": "A block with only a consonant and a vowel…",
+          "en": "",
+          "options": [
+            "has no batchim yet",
+            "always ends in ㅇ",
+            "is two syllables",
+            "cannot be a word"
+          ],
+          "answer": "has no batchim yet",
+          "why": "Batchim is a final consonant under the vowel. These blocks stop after the vowel."
+        }
+      ]
+    },
+    {
+      "id": "batchim",
+      "title": "받침 — final consonants",
+      "particle": "받침",
+      "summary": "A letter under the vowel is batchim. At the end of a word it is one of seven sounds, and it picks 은/는, 이/가, and 을/를.",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "받침 (batchim) is the consonant at the bottom of a block: 한 is ㅎ + ㅏ + ㄴ. At the end of a word, Korean pronounces batchim as one of <b>seven</b> sounds, however it is spelled. ㄱ ㅋ ㄲ are an unreleased k; ㄷ ㅅ ㅆ ㅈ ㅊ ㅌ ㅎ are an unreleased t; ㅂ ㅍ are an unreleased p; and ㄴ ㄹ ㅁ ㅇ stay n, l, m, and ng.",
+          "examples": [
+            ["국", "guk", "soup — final ㄱ is k."],
+            ["옷", "ot", "clothes — spelled with ㅅ, but the final sound is t."],
+            ["강, 물, 밥", "gang, mul, bap", "ng, l, and p."]
+          ]
+        },
+        {
+          "h": "The final moves onto a following vowel",
+          "p": "When the next syllable starts with silent ㅇ, the batchim is pronounced at the start of that syllable. 한국어 is said “한구거”: the ㄱ of 국 moves onto 어. 꽃이 is “꼬치”: before 이, ㅊ is “ch”, not the final t. Particles look at the spelling. A block with any batchim takes 은, 이, 을; a block with none takes 는, 가, 를.",
+          "examples": [
+            ["한국어", "hangugeo", "The ㄱ of 국 is heard on 어."],
+            ["꽃이", "kkochi", "Before 이, ㅊ is ch, not a final t."],
+            [
+              "책은 / 나는",
+              "chaekeun / naneun",
+              "책 has batchim, so 은; 나 has none, so 는."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "국 ends with which sound?",
+          "en": "",
+          "options": ["k", "n", "t", "ng"],
+          "answer": "k",
+          "why": "Final ㄱ is the unreleased k of the seven batchim sounds."
+        },
+        {
+          "q": "옷 is spelled with ㅅ. The final sound is…",
+          "en": "",
+          "options": ["t", "s", "ch", "n"],
+          "answer": "t",
+          "why": "ㅅ, ㅆ, ㅈ, ㅊ, ㅌ, ㅎ, and ㄷ are all an unreleased t at the end of a word."
+        },
+        {
+          "q": "강 ends with…",
+          "en": "",
+          "options": ["ng", "n", "k", "m"],
+          "answer": "ng",
+          "why": "Final ㅇ is ng. Initial ㅇ is silent; final ㅇ is not."
+        },
+        {
+          "q": "In 한국어, the ㄱ of 국 is pronounced…",
+          "en": "",
+          "options": ["at the start of 어", "as a final k", "not at all", "as ng"],
+          "answer": "at the start of 어",
+          "why": "Before a vowel, batchim moves forward: hangugeo."
+        },
+        {
+          "q": "꽃이 is pronounced…",
+          "en": "",
+          "options": ["kkochi", "kkot-i", "kkoni", "kkosi"],
+          "answer": "kkochi",
+          "why": "ㅊ before 이 is ch. The final-t rule applies only when nothing follows."
+        },
+        {
+          "q": "책 takes 은 rather than 는 because…",
+          "en": "",
+          "options": [
+            "it has batchim",
+            "it is the topic",
+            "책 means book",
+            "은 is always correct"
+          ],
+          "answer": "it has batchim",
+          "why": "Any final consonant takes the consonant shape: 은, 이, 을."
+        }
+      ]
+    },
+    {
+      "id": "eun-neun",
+      "title": "은/는 — the topic",
+      "particle": "은 / 는",
+      "summary": "What the sentence is about: 은 after a consonant, 는 after a vowel.",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "은/는 marks the topic: “as for X, …”. Use <b>는</b> when the noun ends in a vowel and <b>은</b> when it ends in a consonant (the block has a bottom letter).",
+          "examples": [
+            [
+              "저{는} 학생이에요.",
+              "Jeo-neun haksaeng-ieyo.",
+              "I am a student. (As for me, student.)"
+            ],
+            ["이름{은} 민준이에요.", "Ireum-eun Minjun-ieyo.", "My name is Minjun."],
+            ["오늘{은} 추워요.", "Oneul-eun chuwoyo.", "It's cold today."]
+          ]
+        },
+        {
+          "h": "Contrast",
+          "p": "Like Japanese は, 은/는 also contrasts: “this one, but not that one”.",
+          "examples": [
+            [
+              "커피{는} 좋아해요. 차{는} 안 좋아해요.",
+              "Keopi-neun joahaeyo. Cha-neun an joahaeyo.",
+              "Coffee I like. Tea I don't."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "저＿ 의사예요.",
+          "en": "I am a doctor.",
+          "options": ["는", "은", "를", "에"],
+          "answer": "는",
+          "why": "저 ends in a vowel, so the topic particle is 는."
+        },
+        {
+          "q": "책＿ 비싸요.",
+          "en": "The book is expensive.",
+          "options": ["은", "는", "를", "에서"],
+          "answer": "은",
+          "why": "책 ends in the consonant ㄱ, so the topic particle is 은."
+        },
+        {
+          "q": "한국어＿ 재미있어요.",
+          "en": "Korean is fun.",
+          "options": ["는", "은", "을", "에"],
+          "answer": "는",
+          "why": "한국어 ends in 어, a vowel: 는."
+        },
+        {
+          "q": "서울＿ 커요.",
+          "en": "Seoul is big.",
+          "options": ["은", "는", "이에요", "를"],
+          "answer": "은",
+          "why": "서울 ends in ㄹ, a consonant: 은."
+        },
+        {
+          "q": "Which noun takes 은 rather than 는?",
+          "en": "",
+          "options": ["물 (water)", "나 (I)", "학교 (school)", "커피 (coffee)"],
+          "answer": "물 (water)",
+          "why": "물 ends in the consonant ㄹ; the others end in vowels."
+        }
+      ]
+    },
+    {
+      "id": "i-ga",
+      "title": "이/가 — the subject",
+      "particle": "이 / 가",
+      "summary": "Who or what does it, especially new information: 이 after a consonant, 가 after a vowel.",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "이/가 marks the subject. Reach for it when something is new to the conversation, when you say something exists or is missing (있어요, 없어요), and with question words like 누가 (who).",
+          "examples": [
+            ["고양이{가} 있어요.", "Goyang-i-ga isseoyo.", "There is a cat."],
+            ["물{이} 없어요.", "Mur-i eopseoyo.", "There's no water."],
+            ["누{가} 왔어요?", "Nu-ga wasseoyo?", "Who came?"]
+          ]
+        },
+        {
+          "h": "은/는 or 이/가?",
+          "p": "은/는 says “talking about X…”; 이/가 points at X as the one. A question word is never the topic, so it always takes 이/가 — and so does the answer to it.",
+          "examples": [
+            [
+              "민지{가} 왔어요.",
+              "Minji-ga wasseoyo.",
+              "Minji came. (Minji is the one who came.)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "시간＿ 없어요.",
+          "en": "There's no time.",
+          "options": ["이", "가", "를", "에"],
+          "answer": "이",
+          "why": "시간 ends in ㄴ, a consonant, and 없어요 (there isn't) takes the subject particle: 이."
+        },
+        {
+          "q": "친구＿ 있어요.",
+          "en": "I have a friend. (A friend exists.)",
+          "options": ["가", "이", "을", "는"],
+          "answer": "가",
+          "why": "친구 ends in a vowel: 가. Existence with 있어요 uses the subject particle."
+        },
+        {
+          "q": "누＿ 전화했어요?",
+          "en": "Who called?",
+          "options": ["가", "는", "를", "에"],
+          "answer": "가",
+          "why": "Question words take the subject particle: 누가. They are never the topic."
+        },
+        {
+          "q": "가방＿ 무거워요.",
+          "en": "The bag is heavy.",
+          "options": ["이", "가", "을", "에서"],
+          "answer": "이",
+          "why": "가방 ends in ㅇ, a consonant: 이."
+        },
+        {
+          "q": "Someone asks “Who is the teacher?” The best answer starts…",
+          "en": "",
+          "options": ["제가 선생님이에요.", "저는 선생님이에요."],
+          "answer": "제가 선생님이에요.",
+          "why": "The answer to “who?” is new information, so it takes 이/가 (저 + 가 becomes 제가)."
+        }
+      ]
+    },
+    {
+      "id": "eul-reul",
+      "title": "을/를 — the object",
+      "particle": "을 / 를",
+      "summary": "What the action is done to: 을 after a consonant, 를 after a vowel.",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "을/를 marks the direct object. The usual order is subject – object – verb, with the verb always at the end.",
+          "examples": [
+            ["빵{을} 먹어요.", "Ppang-eul meogeoyo.", "I eat bread."],
+            ["커피{를} 마셔요.", "Keopi-reul masyeoyo.", "I drink coffee."],
+            [
+              "저는 영화{를} 봐요.",
+              "Jeo-neun yeonghwa-reul bwayo.",
+              "I watch a movie."
+            ]
+          ]
+        },
+        {
+          "h": "Free word order",
+          "p": "Because the particles carry the roles, the nouns can move around as long as the verb stays last: 커피를 민지가 마셔요 still means “Minji drinks coffee”."
+        }
+      ],
+      "drills": [
+        {
+          "q": "물＿ 마셔요.",
+          "en": "I drink water.",
+          "options": ["을", "를", "이", "에"],
+          "answer": "을",
+          "why": "물 ends in ㄹ, a consonant, and it is what you drink: 을."
+        },
+        {
+          "q": "사과＿ 먹어요.",
+          "en": "I eat an apple.",
+          "options": ["를", "을", "가", "에서"],
+          "answer": "를",
+          "why": "사과 ends in a vowel: 를."
+        },
+        {
+          "q": "한국어＿ 공부해요.",
+          "en": "I study Korean.",
+          "options": ["를", "을", "는", "에"],
+          "answer": "를",
+          "why": "한국어 ends in a vowel and is the object of study: 를."
+        },
+        {
+          "q": "책＿ 읽어요.",
+          "en": "I read a book.",
+          "options": ["을", "를", "이", "에"],
+          "answer": "을",
+          "why": "책 ends in ㄱ: 을."
+        },
+        {
+          "q": "In “음악을 민수가 들어요”, who listens?",
+          "en": "음악 = music, 듣다 = listen",
+          "options": ["민수", "음악"],
+          "answer": "민수",
+          "why": "가 marks the subject (민수); 을 marks the object (음악), whatever the order."
+        }
+      ]
+    },
+    {
+      "id": "e-eseo",
+      "title": "에 and 에서 — where and when",
+      "particle": "에 / 에서",
+      "summary": "에 for where you go, where something is, and the time. 에서 for where an action happens.",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>에</b> points at a destination, a place where something simply is, or a time. It has one shape for every noun.",
+          "examples": [
+            ["학교{에} 가요.", "Hakgyo-e gayo.", "I go to school."],
+            ["집{에} 있어요.", "Jib-e isseoyo.", "I'm at home."],
+            ["세 시{에} 만나요.", "Se si-e mannayo.", "Let's meet at three."]
+          ]
+        },
+        {
+          "h": "에서: where the action happens",
+          "p": "<b>에서</b> marks the place where you <i>do</i> something. Being somewhere takes 에; doing something there takes 에서. 에서 also means “from” a place.",
+          "examples": [
+            [
+              "도서관{에서} 공부해요.",
+              "Doseogwan-eseo gongbuhaeyo.",
+              "I study at the library."
+            ],
+            ["부산{에서} 왔어요.", "Busan-eseo wasseoyo.", "I came from Busan."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "회사＿ 가요.",
+          "en": "I go to the office.",
+          "options": ["에", "에서", "를", "은"],
+          "answer": "에",
+          "why": "A destination after 가다 (go) takes 에."
+        },
+        {
+          "q": "식당＿ 밥을 먹어요.",
+          "en": "I eat at a restaurant.",
+          "options": ["에서", "에", "이", "를"],
+          "answer": "에서",
+          "why": "Eating is an action, and the restaurant is where it happens: 에서."
+        },
+        {
+          "q": "고양이가 방＿ 있어요.",
+          "en": "The cat is in the room.",
+          "options": ["에", "에서", "을", "는"],
+          "answer": "에",
+          "why": "있어요 just says where something is, so it takes 에."
+        },
+        {
+          "q": "일곱 시＿ 일어나요.",
+          "en": "I get up at seven.",
+          "options": ["에", "에서", "가", "를"],
+          "answer": "에",
+          "why": "Times take 에."
+        },
+        {
+          "q": "공원＿ 운동해요.",
+          "en": "I exercise in the park.",
+          "options": ["에서", "에", "은", "이"],
+          "answer": "에서",
+          "why": "Exercising is an action done in the park: 에서."
+        },
+        {
+          "q": "미국＿ 왔어요.",
+          "en": "I came from America.",
+          "options": ["에서", "에", "를", "이"],
+          "answer": "에서",
+          "why": "“From” a place is 에서."
+        }
+      ]
+    },
+    {
+      "id": "copula",
+      "title": "이에요/예요 — “to be” a thing",
+      "particle": "이에요 / 예요 / 아니에요",
+      "summary": "“X is a Y”: 이에요 after a consonant, 예요 after a vowel. “Is not” is 아니에요.",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "To say what something <i>is</i>, attach the polite copula straight to the noun: <b>이에요</b> after a consonant, <b>예요</b> after a vowel.",
+          "examples": [
+            ["저는 학생{이에요}.", "Jeo-neun haksaeng-ieyo.", "I am a student."],
+            ["이건 커피{예요}.", "Igeon keopi-yeyo.", "This is coffee."]
+          ]
+        },
+        {
+          "h": "Saying “is not”",
+          "p": "The negative is a separate word, <b>아니에요</b>, and the noun before it takes 이/가.",
+          "examples": [
+            [
+              "저는 학생이 {아니에요}.",
+              "Jeo-neun haksaeng-i anieyo.",
+              "I am not a student."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "저는 선생님＿.",
+          "en": "I am a teacher.",
+          "options": ["이에요", "예요", "아니에요", "을"],
+          "answer": "이에요",
+          "why": "선생님 ends in the consonant ㅁ: 이에요."
+        },
+        {
+          "q": "이건 우유＿.",
+          "en": "This is milk.",
+          "options": ["예요", "이에요", "를", "에"],
+          "answer": "예요",
+          "why": "우유 ends in a vowel: 예요."
+        },
+        {
+          "q": "저는 의사＿ 아니에요.",
+          "en": "I'm not a doctor.",
+          "options": ["가", "이", "를", "예요"],
+          "answer": "가",
+          "why": "Before 아니에요 the noun takes 이/가; 의사 ends in a vowel, so 가."
+        },
+        {
+          "q": "여기는 서울＿.",
+          "en": "This is Seoul.",
+          "options": ["이에요", "예요", "에", "을"],
+          "answer": "이에요",
+          "why": "서울 ends in ㄹ, a consonant: 이에요."
+        },
+        {
+          "q": "Which means “It's not water”?",
+          "en": "물 = water",
+          "options": ["물이 아니에요.", "물이에요.", "물을 아니에요.", "물예요."],
+          "answer": "물이 아니에요.",
+          "why": "Negative copula: noun + 이/가 + 아니에요."
+        }
+      ]
+    },
+    {
+      "id": "ayo-eoyo",
+      "title": "-아요/-어요 — the polite present",
+      "particle": "-아요 / -어요 / -해요",
+      "summary": "Drop -다, then add -아요 or -어요 depending on the last vowel. 하다 becomes 해요.",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Dictionary forms end in -다. Remove it to get the stem. If the stem's last vowel is <b>ㅏ or ㅗ</b>, add -아요; otherwise add -어요. Any verb ending in 하다 becomes <b>해요</b>. The same form is a statement or, with rising intonation, a question.",
+          "examples": [
+            ["좋다 → 좋{아요}", "jota → joayo", "It's good."],
+            ["먹다 → 먹{어요}", "meokda → meogeoyo", "I eat."],
+            ["공부하다 → 공부{해요}", "gongbuhada → gongbuhaeyo", "I study."]
+          ]
+        },
+        {
+          "h": "Vowels that merge",
+          "p": "When the stem ends in a vowel, the two vowels squeeze together: 가 + 아요 → 가요, 오 + 아요 → 와요, 마시 + 어요 → 마셔요, 주 + 어요 → 줘요.",
+          "examples": [
+            ["가다 → {가요}", "gada → gayo", "I go."],
+            ["오다 → {와요}", "oda → wayo", "I come."],
+            ["마시다 → {마셔요}", "masida → masyeoyo", "I drink."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "앉다 (sit) → ？",
+          "en": "Polite present",
+          "options": ["앉아요", "앉어요", "앉해요", "앉요"],
+          "answer": "앉아요",
+          "why": "The stem 앉 has ㅏ, so it takes -아요."
+        },
+        {
+          "q": "읽다 (read) → ？",
+          "en": "Polite present",
+          "options": ["읽어요", "읽아요", "읽해요", "읽요"],
+          "answer": "읽어요",
+          "why": "The stem 읽 has ㅣ, not ㅏ or ㅗ: -어요."
+        },
+        {
+          "q": "일하다 (work) → ？",
+          "en": "Polite present",
+          "options": ["일해요", "일하어요", "일하아요", "일어요"],
+          "answer": "일해요",
+          "why": "Every 하다 verb becomes 해요."
+        },
+        {
+          "q": "보다 (see) → ？",
+          "en": "Polite present",
+          "options": ["봐요", "보어요", "벼요", "보해요"],
+          "answer": "봐요",
+          "why": "ㅗ takes -아요, and 보 + 아요 merges into 봐요."
+        },
+        {
+          "q": "마시다 (drink) → ？",
+          "en": "Polite present",
+          "options": ["마셔요", "마시아요", "마사요", "마시해요"],
+          "answer": "마셔요",
+          "why": "ㅣ takes -어요, and 시 + 어 merges into 셔: 마셔요."
+        },
+        {
+          "q": "How do you ask “Do you eat?” politely?",
+          "en": "",
+          "options": ["먹어요?", "먹다?", "먹어?요", "먹요?"],
+          "answer": "먹어요?",
+          "why": "The polite form doubles as a question: same ending, rising voice."
+        }
+      ]
+    },
+    {
+      "id": "past",
+      "title": "-았어요/-었어요 — the polite past",
+      "particle": "-았어요 / -었어요 / -했어요",
+      "summary": "Same vowel rule as the present: ㅏ/ㅗ stems take -았어요; others take -었어요. 하다 becomes 했어요.",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "To talk about the past in the polite -요 style, replace -아요/-어요 with <b>-았어요/-었어요</b>. The vowel rule is the same as the present: last vowel <b>ㅏ or ㅗ</b> → -았어요; otherwise → -었어요. Every 하다 verb becomes <b>했어요</b>.",
+          "examples": [
+            [
+              "어제 영화를 {봤어요}.",
+              "Eoje yeonghwa-reul bwasseoyo.",
+              "I watched a film yesterday."
+            ],
+            ["밥을 {먹었어요}.", "Bab-eul meogeosseoyo.", "I ate (a meal)."],
+            ["공부{했어요}.", "Gongbuhaesseoyo.", "I studied."]
+          ]
+        },
+        {
+          "h": "Vowels that merge",
+          "p": "Stems that end in a vowel squeeze the same way as in the present: 가 + 았어요 → 갔어요, 오 + 았어요 → 왔어요, 보 + 았어요 → 봤어요, 마시 + 었어요 → 마셨어요.",
+          "examples": [
+            ["학교에 {갔어요}.", "Hakgyo-e gasseoyo.", "I went to school."],
+            ["친구가 {왔어요}.", "Chingu-ga wasseoyo.", "A friend came."],
+            ["커피를 {마셨어요}.", "Keopi-reul masyeosseoyo.", "I drank coffee."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "앉다 (sit) → ？",
+          "en": "Polite past",
+          "options": ["앉았어요", "앉었어요", "앉했어요", "앉아요"],
+          "answer": "앉았어요",
+          "why": "Stem 앉 has ㅏ, so the past is -았어요."
+        },
+        {
+          "q": "읽다 (read) → ？",
+          "en": "Polite past",
+          "options": ["읽었어요", "읽았어요", "읽했어요", "읽어요"],
+          "answer": "읽었어요",
+          "why": "Stem 읽 has ㅣ: -었어요."
+        },
+        {
+          "q": "일하다 (work) → ？",
+          "en": "Polite past",
+          "options": ["일했어요", "일하았어요", "일하었어요", "일해요"],
+          "answer": "일했어요",
+          "why": "Every 하다 verb becomes 했어요 in the past."
+        },
+        {
+          "q": "보다 (see) → ？",
+          "en": "Polite past",
+          "options": ["봤어요", "보았어요", "보었어요", "봤아요"],
+          "answer": "봤어요",
+          "why": "보 + 았어요 merges to 봤어요."
+        },
+        {
+          "q": "How do you say “I went” politely?",
+          "en": "가다 = go",
+          "options": ["갔어요", "가요", "갈 거예요", "가고 있어요"],
+          "answer": "갔어요",
+          "why": "가 + 았어요 → 갔어요."
+        }
+      ]
+    },
+    {
+      "id": "an-mot",
+      "title": "안 and 못 — not, and can't",
+      "particle": "안 / 못 / -지 않아요",
+      "summary": "안 before the verb means “not”; 못 means “can't / couldn't”. -지 않아요 is a longer “not”.",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Put <b>안</b> right before the verb to negate it: 안 가요 “I'm not going”. A longer equivalent is stem + <b>-지 않아요</b>: 가지 않아요. With 하다 verbs, 안 usually sits before 하다: 공부 안 해요.",
+          "examples": [
+            ["오늘 {안} 가요.", "Oneul an gayo.", "I'm not going today."],
+            ["고기를 먹{지 않아요}.", "Gogi-reul meokji anayo.", "I don't eat meat."],
+            ["공부 {안} 해요.", "Gongbu an haeyo.", "I'm not studying."]
+          ]
+        },
+        {
+          "h": "못 — can't",
+          "p": "<b>못</b> before the verb means you are unable to do it (or couldn't): 못 가요 “I can't go”. Do not mix 안 and 못 for the same meaning — 안 is refusal or simple negation; 못 is inability.",
+          "examples": [
+            ["수영을 {못} 해요.", "Suyeong-eul mot haeyo.", "I can't swim."],
+            [
+              "어제 회의에 {못} 갔어요.",
+              "Eoje hoeui-e mot gasseoyo.",
+              "I couldn't go to the meeting yesterday."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "오늘 영화를 ＿ 봐요.",
+          "en": "I'm not watching a film today.",
+          "options": ["안", "못", "을", "도"],
+          "answer": "안",
+          "why": "Simple “not”: 안 before the verb."
+        },
+        {
+          "q": "한국어를 잘 ＿ 해요.",
+          "en": "I can't speak Korean well. (unable)",
+          "options": ["못", "안", "은", "를"],
+          "answer": "못",
+          "why": "Inability: 못."
+        },
+        {
+          "q": "고기를 먹＿.",
+          "en": "I don't eat meat. (long form)",
+          "options": ["지 않아요", "고 싶어요", "고 있어요", "을 거예요"],
+          "answer": "지 않아요",
+          "why": "Stem + -지 않아요 is the long negation."
+        },
+        {
+          "q": "How do you say “I'm not studying” with 하다?",
+          "en": "",
+          "options": ["공부 안 해요.", "안 공부해요.", "공부 못 안 해요.", "공부해요 안."],
+          "answer": "공부 안 해요.",
+          "why": "With 하다, 안 goes before 하다: 공부 안 해요."
+        },
+        {
+          "q": "Which means “I couldn't go”?",
+          "en": "",
+          "options": ["못 갔어요.", "안 가요.", "갈 거예요.", "가고 싶어요."],
+          "answer": "못 갔어요.",
+          "why": "못 + past: couldn't."
+        }
+      ]
+    },
+    {
+      "id": "go-sipeoyo",
+      "title": "-고 싶어요 — want to",
+      "particle": "-고 싶어요",
+      "summary": "Add -고 싶어요 to the verb stem for what you want to do. For other people, use -고 싶어해요.",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Drop -다 from the dictionary form and add <b>-고 싶어요</b> to say what <i>you</i> want to do. The object still takes 을/를 when there is one.",
+          "examples": [
+            [
+              "비빔밥을 먹{고 싶어요}.",
+              "Bibimbap-eul meokgo sipeoyo.",
+              "I want to eat bibimbap."
+            ],
+            [
+              "한국에 가{고 싶어요}.",
+              "Hangug-e gago sipeoyo.",
+              "I want to go to Korea."
+            ],
+            [
+              "한국어를 배우{고 싶어요}.",
+              "Hangugeo-reul baeugo sipeoyo.",
+              "I want to learn Korean."
+            ]
+          ]
+        },
+        {
+          "h": "Other people's wants",
+          "p": "For someone else's desire, Korean prefers <b>-고 싶어해요</b>: 민수가 가고 싶어해요 “Minsu wants to go”. Negate with 안 before 싶어요: 가고 싶지 않아요 / 안 가고 싶어요.",
+          "examples": [
+            [
+              "민수가 커피를 마시{고 싶어해요}.",
+              "Minsu-ga keopi-reul masigo sipeohaeyo.",
+              "Minsu wants to drink coffee."
+            ],
+            [
+              "지금 자고 싶{지 않아요}.",
+              "Jigeum jago sipji anayo.",
+              "I don't want to sleep right now."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "물을 마시＿.",
+          "en": "I want to drink water.",
+          "options": ["고 싶어요", "고 있어요", "을 거예요", "지 않아요"],
+          "answer": "고 싶어요",
+          "why": "Stem + -고 싶어요 = want to."
+        },
+        {
+          "q": "집에 가＿.",
+          "en": "I want to go home.",
+          "options": ["고 싶어요", "았어요", "고 있어요", "지만"],
+          "answer": "고 싶어요",
+          "why": "가다 → 가고 싶어요."
+        },
+        {
+          "q": "How do you say “I want to study”?",
+          "en": "공부하다 = study",
+          "options": ["공부하고 싶어요.", "공부 안 해요.", "공부했어요.", "공부할 거예요."],
+          "answer": "공부하고 싶어요.",
+          "why": "하다 stem + -고 싶어요."
+        },
+        {
+          "q": "친구가 피자를 먹＿.",
+          "en": "My friend wants to eat pizza.",
+          "options": ["고 싶어해요", "고 싶어요", "고 있어요", "었어요"],
+          "answer": "고 싶어해요",
+          "why": "Other people's wants: -고 싶어해요."
+        },
+        {
+          "q": "What does 영화를 보고 싶어요 mean?",
+          "en": "",
+          "options": [
+            "I want to watch a film.",
+            "I am watching a film.",
+            "I watched a film.",
+            "I will watch a film."
+          ],
+          "answer": "I want to watch a film.",
+          "why": "보고 싶어요 = want to see/watch."
+        }
+      ]
+    },
+    {
+      "id": "eul-geoyeyo",
+      "title": "-(으)ㄹ 거예요 — will / going to",
+      "particle": "-(으)ㄹ 거예요",
+      "summary": "-ㄹ 거예요 after a vowel stem, -을 거예요 after a consonant. Plans and near future.",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "For “will” or “am going to”, add <b>-ㄹ 거예요</b> to a stem that ends in a vowel and <b>-을 거예요</b> to one that ends in a consonant. 하다 becomes <b>할 거예요</b>.",
+          "examples": [
+            ["내일 갈 {거예요}.", "Naeil gal geoyeyo.", "I'll go tomorrow."],
+            [
+              "점심에 김밥을 먹을 {거예요}.",
+              "Jeomsim-e gimbap-eul meogeul geoyeyo.",
+              "I'm going to eat gimbap for lunch."
+            ],
+            [
+              "주말에 공부할 {거예요}.",
+              "Jumal-e gongbuhal geoyeyo.",
+              "I'll study on the weekend."
+            ]
+          ]
+        },
+        {
+          "h": "Batchim ㄹ",
+          "p": "If the stem already ends in ㄹ, just add -거예요 (do not write 을): 살다 → 살 거예요 “I'll live / stay”. This form is for plans and likely future, not a hard promise.",
+          "examples": [
+            [
+              "서울에서 살 {거예요}.",
+              "Seoul-eseo sal geoyeyo.",
+              "I'm going to live in Seoul."
+            ],
+            [
+              "내일 만날 {거예요}.",
+              "Naeil mannal geoyeyo.",
+              "I'll meet (them) tomorrow."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "가다 → ？",
+          "en": "will / going to (polite)",
+          "options": ["갈 거예요", "갈어요", "가고 있어요", "갔어요"],
+          "answer": "갈 거예요",
+          "why": "Vowel stem: -ㄹ 거예요."
+        },
+        {
+          "q": "먹다 → ？",
+          "en": "will / going to (polite)",
+          "options": ["먹을 거예요", "먹ㄹ 거예요", "먹고 싶어요", "먹었어요"],
+          "answer": "먹을 거예요",
+          "why": "Consonant stem: -을 거예요."
+        },
+        {
+          "q": "하다 → ？",
+          "en": "will / going to (polite)",
+          "options": ["할 거예요", "하을 거예요", "했어요", "해요"],
+          "answer": "할 거예요",
+          "why": "하다 → 할 거예요."
+        },
+        {
+          "q": "살다 (live) → ？",
+          "en": "will live",
+          "options": ["살 거예요", "살을 거예요", "살고 싶어요", "살았어요"],
+          "answer": "살 거예요",
+          "why": "Stem already ends in ㄹ: just -거예요."
+        },
+        {
+          "q": "How do you say “I'll drink coffee”?",
+          "en": "마시다 = drink",
+          "options": ["커피를 마실 거예요.", "커피를 마시고 있어요.", "커피를 마셨어요.", "커피를 안 마셔요."],
+          "answer": "커피를 마실 거예요.",
+          "why": "마시- ends in a vowel: 마실 거예요."
+        }
+      ]
+    },
+    {
+      "id": "go-isseoyo",
+      "title": "-고 있어요 — doing now",
+      "particle": "-고 있어요",
+      "summary": "Stem + -고 있어요 for an action in progress, like English “-ing”.",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Add <b>-고 있어요</b> to the verb stem for something happening now: 먹고 있어요 “I'm eating”. 있다 here is the existence verb used as an auxiliary; the polite form is 있어요.",
+          "examples": [
+            [
+              "지금 밥을 먹{고 있어요}.",
+              "Jigeum bab-eul meokgo isseoyo.",
+              "I'm eating right now."
+            ],
+            [
+              "한국어를 배우{고 있어요}.",
+              "Hangugeo-reul baeugo isseoyo.",
+              "I'm learning Korean."
+            ],
+            ["비가 오{고 있어요}.", "Bi-ga ogo isseoyo.", "It's raining."]
+          ]
+        },
+        {
+          "h": "Past progressive",
+          "p": "For “was doing”, use <b>-고 있었어요</b>: 자고 있었어요 “I was sleeping”. Negate with 안 before 고 or with -지 않아요 on 있다: 안 먹고 있어요 / 먹고 있지 않아요.",
+          "examples": [
+            [
+              "전화했을 때 공부{하고 있었어요}.",
+              "Jeonhwahaesseul ttae gongbuhago isseosseoyo.",
+              "When you called, I was studying."
+            ],
+            [
+              "지금은 운동{안} 하고 있어요.",
+              "Jigeum-eun undong an hago isseoyo.",
+              "I'm not exercising right now."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "책을 읽＿.",
+          "en": "I'm reading a book.",
+          "options": ["고 있어요", "고 싶어요", "을 거예요", "었어요"],
+          "answer": "고 있어요",
+          "why": "Stem + -고 있어요 = progressive."
+        },
+        {
+          "q": "친구를 기다리＿.",
+          "en": "I'm waiting for a friend.",
+          "options": ["고 있어요", "고 싶어요", "지 않아요", "았어요"],
+          "answer": "고 있어요",
+          "why": "기다리다 → 기다리고 있어요."
+        },
+        {
+          "q": "How do you say “I'm studying”?",
+          "en": "공부하다",
+          "options": ["공부하고 있어요.", "공부할 거예요.", "공부했어요.", "공부하고 싶어요."],
+          "answer": "공부하고 있어요.",
+          "why": "하다 → 하고 있어요."
+        },
+        {
+          "q": "어제 여덟 시에 자＿.",
+          "en": "I was sleeping at eight yesterday.",
+          "options": ["고 있었어요", "고 있어요", "고 싶어요", "을 거예요"],
+          "answer": "고 있었어요",
+          "why": "Past progressive: -고 있었어요."
+        },
+        {
+          "q": "What does 음악을 듣고 있어요 mean?",
+          "en": "듣다 = listen",
+          "options": [
+            "I'm listening to music.",
+            "I want to listen to music.",
+            "I listened to music.",
+            "I'll listen to music."
+          ],
+          "answer": "I'm listening to music.",
+          "why": "듣고 있어요 = listening (now)."
+        }
+      ]
+    },
+    {
+      "id": "connectors",
+      "title": "-고, -지만, -아서/어서 — joining clauses",
+      "particle": "-고 / -지만 / -아서 · -어서",
+      "summary": "Link clauses on the first verb: -고 “and”, -지만 “but”, -아서/어서 “so / and then”. Tense usually sits only on the last verb.",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Korean joins clauses with endings on the first verb, not with separate little words. <b>-고</b> means “and (then)”. <b>-지만</b> means “but”. Put tense and politeness on the <i>last</i> verb.",
+          "examples": [
+            [
+              "밥을 먹{고} 공부했어요.",
+              "Bab-eul meokgo gongbuhaesseoyo.",
+              "I ate and (then) studied."
+            ],
+            ["비싸{지만} 좋아요.", "Bissajiman joayo.", "It's expensive but good."],
+            [
+              "샤워하{고} 나갔어요.",
+              "Syawohago nagasseoyo.",
+              "I showered and went out."
+            ]
+          ]
+        },
+        {
+          "h": "-아서 / -어서 — so, because; and then",
+          "p": "Use the same ㅏ/ㅗ rule as -아요/-어요: <b>-아서</b> after ㅏ/ㅗ, <b>-어서</b> otherwise; 하다 → <b>해서</b>. It gives a reason (“so / because”) or a natural next step.",
+          "examples": [
+            [
+              "배가 고파{서} 먹었어요.",
+              "Bae-ga gopaseo meogeosseoyo.",
+              "I was hungry, so I ate."
+            ],
+            [
+              "친구를 만나{서} 영화를 봤어요.",
+              "Chingu-reul mannaseo yeonghwa-reul bwasseoyo.",
+              "I met a friend and (then) watched a film."
+            ],
+            [
+              "바빠{서} 못 갔어요.",
+              "Bappaseo mot gasseoyo.",
+              "I was busy, so I couldn't go."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "커피를 마시＿ 책을 읽어요.",
+          "en": "I drink coffee and read a book.",
+          "options": ["고", "지만", "서", "을"],
+          "answer": "고",
+          "why": "-고 links actions: and (then)."
+        },
+        {
+          "q": "날씨가 좋＿ 바람이 세요.",
+          "en": "The weather is nice but the wind is strong.",
+          "options": ["지만", "고", "아서", "어요"],
+          "answer": "지만",
+          "why": "-지만 = but."
+        },
+        {
+          "q": "피곤＿ 일찍 잤어요.",
+          "en": "I was tired, so I went to bed early.",
+          "options": ["해서", "하고", "하지만", "고 있어요"],
+          "answer": "해서",
+          "why": "하다 → 해서 for “so / because”."
+        },
+        {
+          "q": "학교에 가＿ 공부해요.",
+          "en": "I go to school and study.",
+          "options": ["고", "지만", "을 거예요", "안"],
+          "answer": "고",
+          "why": "Sequence with -고; tense on the last verb."
+        },
+        {
+          "q": "Which ending means “but”?",
+          "en": "",
+          "options": ["-지만", "-고", "-아서", "-고 있어요"],
+          "answer": "-지만",
+          "why": "-지만 contrasts two clauses."
+        }
+      ]
+    },
+    {
+      "id": "myeon",
+      "title": "-(으)면 — if and when",
+      "particle": "-(으)면",
+      "summary": "Add -면 after a vowel or ㄹ, and -으면 after any other consonant. It means “if” or “when”.",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "-(으)면 on the first verb sets a condition: “if” or “whenever”. A stem ending in a vowel takes <b>-면</b> (가면, 오면). A stem ending in a consonant takes <b>-으면</b> (먹으면, 읽으면). A stem that already ends in ㄹ just takes <b>-면</b>: 살면, not 살으면. 하다 becomes <b>하면</b>. Tense and 요 sit on the last verb.",
+          "examples": [
+            [
+              "비가 오{면} 집에 있어요.",
+              "Bi-ga omyeon jib-e isseoyo.",
+              "If it rains, I'll stay home."
+            ],
+            [
+              "시간이 없{으면} 나중에 해요.",
+              "Sigan-i eopseumyeon najung-e haeyo.",
+              "If there is no time, do it later."
+            ],
+            [
+              "한국에서 살{면} 한국어를 배워요.",
+              "Hanguk-eseo salmyeon hangugeo-reul baewoyo.",
+              "If you live in Korea, you learn Korean."
+            ]
+          ]
+        },
+        {
+          "h": "Not a reason",
+          "p": "-아서/어서 gives a reason (“so, because”). -(으)면 gives a condition. 바빠서 못 갔어요 means you were busy, so you didn't go. 바쁘면 안 가요 means if you are busy, you don't go. A stem-final ㅡ stays before -면: 바쁘면. It drops only before a vowel ending, which is why the polite present is 바빠요.",
+          "examples": [
+            [
+              "바쁘{면} 안 가요.",
+              "Bappeumyeon an gayo.",
+              "If I'm busy, I don't go."
+            ],
+            [
+              "배고프{면} 먹어요.",
+              "Baegopeumyeon meogeoyo.",
+              "If you're hungry, eat."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "비가 오＿ 집에 있어요.",
+          "en": "If it rains, I stay home.",
+          "options": ["면", "으면", "지만", "고"],
+          "answer": "면",
+          "why": "오다 ends in a vowel: -면."
+        },
+        {
+          "q": "시간이 없＿ 나중에 해요.",
+          "en": "If there is no time, do it later.",
+          "options": ["으면", "면", "어서", "고 있어요"],
+          "answer": "으면",
+          "why": "없 ends in a consonant: -으면."
+        },
+        {
+          "q": "한국에서 살＿ 한국어를 배워요.",
+          "en": "If you live in Korea, you learn Korean.",
+          "options": ["면", "으면", "지만", "아서"],
+          "answer": "면",
+          "why": "A stem that already ends in ㄹ takes -면: 살면."
+        },
+        {
+          "q": "하다 → ？",
+          "en": "if (someone) does",
+          "options": ["하면", "하으면", "하고", "하지만"],
+          "answer": "하면",
+          "why": "하다 drops 다 and adds -면."
+        },
+        {
+          "q": "Which ending means “if”, not “because”?",
+          "en": "",
+          "options": ["-(으)면", "-아서/어서", "-고 있어요", "-지만"],
+          "answer": "-(으)면",
+          "why": "-(으)면 is the condition. -아서/어서 is the reason."
+        },
+        {
+          "q": "읽다 → ？",
+          "en": "if (someone) reads",
+          "options": ["읽으면", "읽면", "읽어면", "읽고"],
+          "answer": "읽으면",
+          "why": "읽 ends in a consonant other than ㄹ: -으면."
+        }
+      ]
+    },
+    {
+      "id": "neunde",
+      "title": "-는데 / -은데 — background",
+      "particle": "-는데 / -은데 / -인데",
+      "summary": "Set the scene or a contrast: -는데 on action verbs, -ㄴ데 or -은데 on adjectives, -인데 on nouns.",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "-는데 gives the listener some background, then the real point. On an <b>action</b> verb it is always <b>-는데</b>, whether the stem ends in a vowel or a consonant: 가는데, 먹는데. A stem in ㄹ drops ㄹ: 살다 → 사는데. 하다 → 하는데. The second clause carries the tense and the 요.",
+          "examples": [
+            [
+              "지금 밥을 먹{는데} 나중에 전화해요.",
+              "Jigeum bab-eul meokneunde najung-e jeonhwahaeyo.",
+              "I'm eating now, so call later."
+            ],
+            [
+              "한국어를 배우{는데} 재미있어요.",
+              "Hangugeo-reul baeuneunde jaemiisseoyo.",
+              "I'm learning Korean, and it's fun."
+            ],
+            [
+              "서울에 사{는데} 공원이 있어요.",
+              "Seoul-e saneunde gongwon-i isseoyo.",
+              "I live in Seoul, and there are parks."
+            ]
+          ]
+        },
+        {
+          "h": "Adjectives and nouns",
+          "p": "Adjectives take <b>-ㄴ데</b> after a vowel and <b>-은데</b> after a consonant: 큰데, 작은데. A stem-final ㅡ drops before ㄴ, so 크다 → 큰데. 좋다 ends in ㅎ, so it is spelled 좋은데. Nouns take <b>-인데</b> after either a vowel or a consonant: 학생인데, 의사인데.",
+          "examples": [
+            [
+              "집은 {큰데} 조용해요.",
+              "Jib-eun keunde joyonghaeyo.",
+              "The house is big, but it's quiet."
+            ],
+            [
+              "방이 작{은데} 조용해요.",
+              "Bang-i jageunde joyonghaeyo.",
+              "The room is small, but it's quiet."
+            ],
+            [
+              "날씨가 좋{은데} 바람이 강해요.",
+              "Nalssi-ga joeunde baram-i ganghaeyo.",
+              "The weather is nice, but the wind is strong."
+            ],
+            [
+              "학생{인데} 일을 안 해요.",
+              "Haksaeng-inde ireul an haeyo.",
+              "They're a student, but they don't work."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "지금 밥을 먹＿ 나중에 전화해요.",
+          "en": "I'm eating, so call later.",
+          "options": ["는데", "은데", "인데", "면"],
+          "answer": "는데",
+          "why": "먹다 is an action verb: -는데."
+        },
+        {
+          "q": "서울에 사＿ 공원이 있어요.",
+          "en": "I live in Seoul, and there are parks.",
+          "options": ["는데", "은데", "으면", "러"],
+          "answer": "는데",
+          "why": "살다 drops ㄹ before ㄴ: 사는데."
+        },
+        {
+          "q": "크다 → ？",
+          "en": "adjective background",
+          "options": ["큰데", "크은데", "크는데", "크인데"],
+          "answer": "큰데",
+          "why": "크다 ends in ㅡ, which drops before ㄴ: 큰데."
+        },
+        {
+          "q": "방이 작＿ 조용해요.",
+          "en": "The room is small, but quiet.",
+          "options": ["은데", "는데", "인데", "아서"],
+          "answer": "은데",
+          "why": "작다 is an adjective ending in a consonant: 작은데."
+        },
+        {
+          "q": "저는 학생＿ 일을 해요.",
+          "en": "I'm a student, and I work.",
+          "options": ["인데", "는데", "은데", "예요데"],
+          "answer": "인데",
+          "why": "Nouns take -인데, after a vowel or a consonant."
+        },
+        {
+          "q": "공부하＿ 재미있어요.",
+          "en": "I'm studying, and it's fun.",
+          "options": ["는데", "은데", "인데", "면"],
+          "answer": "는데",
+          "why": "하다 is an action verb, so -는데: 하는데."
+        }
+      ]
+    },
+    {
+      "id": "purpose",
+      "title": "-(으)러 and -(으)려고 — purpose",
+      "particle": "-(으)러 / -(으)려고",
+      "summary": "-(으)러 goes only with a verb of going or coming. -(으)려고 is “intending to”, before any verb.",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-(으)러</b> means “in order to”, and the next verb must be a motion verb such as 가다, 오다, or 다니다. Vowel stems and 하다 take <b>-러</b>: 보러, 만나러, 하러. Other consonant stems take <b>-으러</b>: 먹으러, 읽으러. A stem in ㄹ takes <b>-러</b>: 살러, not 살으러.",
+          "examples": [
+            [
+              "점심을 먹{으러} 식당에 가요.",
+              "Jeomsim-eul meogeureo sikdang-e gayo.",
+              "I'm going to a restaurant to eat lunch."
+            ],
+            [
+              "친구를 만나{러} 서울에 가요.",
+              "Chingu-reul mannareo Seoul-e gayo.",
+              "I'm going to Seoul to meet a friend."
+            ],
+            [
+              "책을 읽{으러} 도서관에 가요.",
+              "Chaeg-eul ilgeureo doseogwan-e gayo.",
+              "I'm going to the library to read."
+            ]
+          ]
+        },
+        {
+          "h": "-(으)려고 — intending to",
+          "p": "<b>-(으)려고</b> is the intention itself, so the next verb can be anything, often 하다: 먹으려고 해요 “I'm planning to eat”. Same shape rule: vowel <b>-려고</b>, consonant <b>-으려고</b>, ㄹ stem <b>-려고</b> (살려고, not 살으려고). Do not put -러 in front of 먹다 or 하다.",
+          "examples": [
+            [
+              "내일 영화를 보{려고} 해요.",
+              "Naeil yeonghwa-reul boryeogo haeyo.",
+              "I'm planning to see a film tomorrow."
+            ],
+            [
+              "물을 마시{려고} 일어났어요.",
+              "Mur-eul masiryeogo ireonasseoyo.",
+              "I got up intending to drink water."
+            ],
+            [
+              "서울에 살{려고} 해요.",
+              "Seoul-e sallyeogo haeyo.",
+              "I'm planning to live in Seoul."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "점심을 먹＿ 식당에 가요.",
+          "en": "I'm going to a restaurant to eat lunch.",
+          "options": ["으러", "러", "려고", "고"],
+          "answer": "으러",
+          "why": "먹다 ends in a consonant, and 가요 is a motion verb: -으러."
+        },
+        {
+          "q": "친구를 만나＿ 서울에 가요.",
+          "en": "I'm going to Seoul to meet a friend.",
+          "options": ["러", "으러", "으려고", "지만"],
+          "answer": "러",
+          "why": "만나다 ends in a vowel: -러."
+        },
+        {
+          "q": "한국어를 공부하＿ 도서관에 가요.",
+          "en": "I'm going to the library to study Korean.",
+          "options": ["러", "으러", "은데", "면"],
+          "answer": "러",
+          "why": "하다 takes -러: 하러."
+        },
+        {
+          "q": "내일 영화를 보＿ 해요.",
+          "en": "I'm planning to see a film tomorrow.",
+          "options": ["려고", "러", "으러", "는데"],
+          "answer": "려고",
+          "why": "The next verb is 해요, not a motion verb, so -려고."
+        },
+        {
+          "q": "서울에 살＿ 해요.",
+          "en": "I'm planning to live in Seoul.",
+          "options": ["려고", "으려고", "으러", "으면"],
+          "answer": "려고",
+          "why": "ㄹ stems take -려고, not -으려고: 살려고."
+        },
+        {
+          "q": "Which sentence is wrong?",
+          "en": "",
+          "options": ["밥을 먹으러 먹어요.", "밥을 먹으러 가요.", "밥을 먹으려고 해요.", "밥을 먹으러 식당에 와요."],
+          "answer": "밥을 먹으러 먹어요.",
+          "why": "-(으)러 needs 가다, 오다, or 다니다. 먹어요 is not a motion verb."
+        }
+      ]
+    },
+    {
+      "id": "honorific-si",
+      "title": "-(으)시- — the subject honorific",
+      "particle": "-(으)세요",
+      "summary": "Raise the person who does the action: -세요 after a vowel or ㄹ, -으세요 after a consonant. Never put it on yourself.",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "-(으)시- honors the <b>subject</b>, the person doing the verb. In the polite 요 style the present is <b>-(으)세요</b>. A vowel stem takes -세요 (가세요, 오세요). A consonant stem takes -으세요 (읽으세요, 앉으세요). A stem in ㄹ drops ㄹ: 만들다 → 만드세요. 하다 becomes <b>하세요</b>. The past is <b>-(으)셨어요</b>: 가셨어요, 읽으셨어요.",
+          "examples": [
+            [
+              "선생님이 교실에 가{세요}.",
+              "Seonsaengnim-i gyosil-e gaseyo.",
+              "The teacher is going to the classroom."
+            ],
+            [
+              "할머니가 신문을 읽{으세요}.",
+              "Halmeoni-ga sinmun-eul ilgeuseyo.",
+              "Grandmother is reading the newspaper."
+            ],
+            [
+              "어제 할아버지가 오{셨어요}.",
+              "Eoje harabeoji-ga osyeosseoyo.",
+              "Grandfather came yesterday."
+            ]
+          ]
+        },
+        {
+          "h": "Special verbs, and not for yourself",
+          "p": "A few everyday verbs have their own honorific word. 먹다 and 마시다 become <b>드시다</b> (드세요), 자다 becomes <b>주무시다</b> (주무세요), and 있다 for a person becomes <b>계시다</b> (계세요). 시 honors someone else. 저는 가세요 is wrong; say 저는 가요.",
+          "examples": [
+            [
+              "할머니가 밥을 드{세요}.",
+              "Halmeoni-ga bab-eul deuseyo.",
+              "Grandmother is eating."
+            ],
+            [
+              "아버지가 지금 주무{세요}.",
+              "Abeoji-ga jigeum jumuseyo.",
+              "Father is sleeping now."
+            ],
+            [
+              "선생님이 교실에 계{세요}?",
+              "Seonsaengnim-i gyosil-e gyeseyo?",
+              "Is the teacher in the classroom?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "선생님이 교실에 ＿.",
+          "en": "The teacher goes to the classroom. (honorific present)",
+          "options": ["가세요", "가요", "가", "가셨어요"],
+          "answer": "가세요",
+          "why": "Honor the subject: 가다 → 가세요."
+        },
+        {
+          "q": "할머니가 신문을 ＿.",
+          "en": "Grandmother reads the paper.",
+          "options": ["읽으세요", "읽어요", "읽세요", "읽으셨어요"],
+          "answer": "읽으세요",
+          "why": "읽 ends in a consonant: -으세요."
+        },
+        {
+          "q": "하다 → ？",
+          "en": "honorific polite present",
+          "options": ["하세요", "하으세요", "하셔요", "해요"],
+          "answer": "하세요",
+          "why": "하다 becomes 하세요, not 하으세요."
+        },
+        {
+          "q": "할머니가 지금 ＿.",
+          "en": "Grandmother is sleeping. (honorific)",
+          "options": ["주무세요", "자요", "자세요", "잤어요"],
+          "answer": "주무세요",
+          "why": "The honorific of 자다 is 주무시다: 주무세요."
+        },
+        {
+          "q": "How do you say “I go”, with yourself as the subject?",
+          "en": "",
+          "options": ["저는 가요.", "저는 가세요.", "저는 가셨어요.", "저는 주무세요."],
+          "answer": "저는 가요.",
+          "why": "-(으)시- honors someone else. Do not put it on 저."
+        },
+        {
+          "q": "어제 할아버지가 ＿.",
+          "en": "Grandfather came yesterday.",
+          "options": ["오셨어요", "오세요", "왔어요", "오셨어요요"],
+          "answer": "오셨어요",
+          "why": "Honorific past: 오다 → 오셨어요."
+        }
+      ]
+    },
+    {
+      "id": "honorific-nouns",
+      "title": "께서, 께, and honorific nouns",
+      "particle": "께서 / 께 / 분",
+      "summary": "Honored people take 께서 as the subject and 께 as “to”. A few nouns swap in: 분, 성함, 연세, 진지, 댁.",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "When the subject is someone you honor, <b>께서</b> replaces 이/가: 할머니께서 오세요. When you give or say something <b>to</b> that person, <b>께</b> replaces 에게: 선생님께 드려요. The person noun itself is often <b>분</b> rather than 사람: 이분이 선생님이에요.",
+          "examples": [
+            [
+              "할머니{께서} 오세요.",
+              "Halmeoni-kkeseo oseyo.",
+              "Grandmother is coming."
+            ],
+            [
+              "선생님{께} 편지를 드려요.",
+              "Seonsaengnim-kke pyeonji-reul deuryeoyo.",
+              "I give a letter to the teacher."
+            ],
+            [
+              "이{분}이 선생님이에요.",
+              "Ibun-i seonsaengnim-ieyo.",
+              "This person is a teacher."
+            ]
+          ]
+        },
+        {
+          "h": "Name, age, meal, house",
+          "p": "A few nouns change when they belong to someone you honor. <b>성함</b> is a name (이름), <b>연세</b> is age (나이), <b>진지</b> is a meal (밥), and <b>댁</b> is a house (집). The verb beside them is honorific too: 성함이 어떻게 되세요?",
+          "examples": [
+            [
+              "성함이 어떻게 되세요?",
+              "Seongham-i eotteoke doeseyo?",
+              "What is your name? (honorific)"
+            ],
+            [
+              "연세가 어떻게 되세요?",
+              "Yeonse-ga eotteoke doeseyo?",
+              "How old are you? (honorific)"
+            ],
+            ["진지 드세요.", "Jinji deuseyo.", "Please have your meal."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "할머니＿ 오세요.",
+          "en": "Grandmother is coming. (honorific subject)",
+          "options": ["께서", "께", "이", "을"],
+          "answer": "께서",
+          "why": "께서 marks an honored subject. 이/가 is the plain subject marker."
+        },
+        {
+          "q": "선생님＿ 편지를 드려요.",
+          "en": "I give a letter to the teacher.",
+          "options": ["께", "께서", "에서", "을"],
+          "answer": "께",
+          "why": "께 is “to” an honored person. 께서 is the subject marker."
+        },
+        {
+          "q": "Which noun honors the person you mean?",
+          "en": "",
+          "options": ["이분", "이 사람", "이 아이", "이 친구"],
+          "answer": "이분",
+          "why": "분 is the honorific word for a person. 사람 is neutral."
+        },
+        {
+          "q": "The honorific word for “name” is…",
+          "en": "",
+          "options": ["성함", "연세", "진지", "이름"],
+          "answer": "성함",
+          "why": "성함 replaces 이름. 연세 is age, 진지 is a meal."
+        },
+        {
+          "q": "연세가 어떻게 되세요? asks…",
+          "en": "",
+          "options": [
+            "age, politely",
+            "a name, politely",
+            "where someone lives",
+            "what someone ate"
+          ],
+          "answer": "age, politely",
+          "why": "연세 is honorific “age”."
+        },
+        {
+          "q": "진지 pairs with which verb?",
+          "en": "",
+          "options": ["드시다", "먹다", "자다", "가다"],
+          "answer": "드시다",
+          "why": "진지 드세요: the honorific meal with the honorific “eat”."
+        }
+      ]
+    },
+    {
+      "id": "humble",
+      "title": "Humble verbs — 드리다, 여쭙다, 뵙다",
+      "particle": "드리다 / 여쭙다 / 뵙다",
+      "summary": "Lower yourself toward someone higher: 드리다 “give”, 여쭙다 “ask”, 뵙다 “see”. Their actions still take -(으)시-.",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Honorific -(으)시- raises the subject. Humble verbs lower <b>you</b>. When you give something to someone honored, 주다 becomes <b>드리다</b>: 선생님께 드려요. When that person gives something to you, they are the subject, so the verb is <b>주시다</b>, not 드리다: 선생님께서 주셨어요.",
+          "examples": [
+            [
+              "제가 선생님께 꽃을 드{려요}.",
+              "Jega seonsaengnim-kke kkot-eul deuryeoyo.",
+              "I give flowers to the teacher."
+            ],
+            [
+              "선생님께서 책을 주{셨어요}.",
+              "Seonsaengnim-kkeseo chaeg-eul jusyeosseoyo.",
+              "The teacher gave me a book."
+            ],
+            [
+              "어머니께 선물을 드{렸어요}.",
+              "Eomeoni-kke seonmul-eul deuryeosseoyo.",
+              "I gave a present to my mother."
+            ]
+          ]
+        },
+        {
+          "h": "Asking and seeing",
+          "p": "묻다 “ask” becomes <b>여쭙다</b> (여쭤요) when you ask someone honored. 보다 “see or meet” becomes <b>뵙다</b> (봬요). 뵙다's ㅂ drops before a vowel ending, so “going in order to see” is 뵈러 가요, not 뵙으러 가요. You still mark the person with 께 or 을/를. Do not put -(으)시- on your own humble verb: 여쭈세요 would honor you.",
+          "examples": [
+            [
+              "선생님께 이름을 여{쭤요}.",
+              "Seonsaengnim-kke ireum-eul yeojjwoyo.",
+              "I ask the teacher the name."
+            ],
+            [
+              "내일 교수님을 {뵈러} 가요.",
+              "Naeil gyosunim-eul boereo gayo.",
+              "I'm going to see the professor tomorrow."
+            ],
+            [
+              "저는 {해요}.",
+              "Jeo-neun haeyo.",
+              "I do it. No 시, because the subject is me."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "제가 선생님께 꽃을 ＿.",
+          "en": "I give flowers to the teacher.",
+          "options": ["드려요", "줘요", "주세요", "드세요"],
+          "answer": "드려요",
+          "why": "You are the giver and the teacher is higher: humble 드리다."
+        },
+        {
+          "q": "선생님께서 책을 ＿.",
+          "en": "The teacher gave me a book.",
+          "options": ["주셨어요", "드렸어요", "줬어요", "드셨어요"],
+          "answer": "주셨어요",
+          "why": "The teacher is the subject who gives, so honor them with 주시다: past 주셨어요."
+        },
+        {
+          "q": "선생님께 이름을 ＿.",
+          "en": "I ask the teacher the name.",
+          "options": ["여쭤요", "물어요", "물어 보세요", "여쭈세요"],
+          "answer": "여쭤요",
+          "why": "Humble “ask” is 여쭙다 → 여쭤요. 여쭈세요 would honor yourself."
+        },
+        {
+          "q": "내일 교수님을 ＿ 가요.",
+          "en": "I'm going to see the professor tomorrow.",
+          "options": ["뵈러", "보러", "뵙으러", "여쭤"],
+          "answer": "뵈러",
+          "why": "뵙다 with 가다: 뵈러 가요. The ㅂ drops before the vowel ending."
+        },
+        {
+          "q": "Which verb humbles the speaker?",
+          "en": "",
+          "options": ["드리다", "주시다", "드시다", "주무시다"],
+          "answer": "드리다",
+          "why": "드리다 lowers the giver, you. 주시다, 드시다, and 주무시다 honor the subject."
+        },
+        {
+          "q": "제가 선생님을 ＿.",
+          "en": "I see the teacher. (humble)",
+          "options": ["봬요", "보세요", "봐요", "뵈세요"],
+          "answer": "봬요",
+          "why": "뵙다 → 봬요. 보세요 would honor the subject, which here is you."
+        }
+      ]
+    },
+    {
+      "id": "plain-style",
+      "title": "한다체 — the plain written style",
+      "particle": "-ㄴ다 / -는다 / -다",
+      "summary": "News, diaries, and narration end in the plain style: 간다, 먹는다, 좋다, 학생이다. No 요.",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "The plain style (한다체) is what articles, diaries, and narration use. An <b>action</b> verb ending in a vowel takes <b>-ㄴ다</b>: 간다, 온다, 한다. One ending in a consonant takes <b>-는다</b>: 먹는다, 읽는다. A stem in ㄹ drops ㄹ: 살다 → 산다. There is no 요.",
+          "examples": [
+            [
+              "민수가 학교에 {간다}.",
+              "Minsu-ga hakgyo-e ganda.",
+              "Minsu goes to school."
+            ],
+            [
+              "학생이 밥을 {먹는다}.",
+              "Haksaeng-i bab-eul meokneunda.",
+              "The student eats."
+            ],
+            [
+              "그들은 서울에 {산다}.",
+              "Geudeul-eun Seoul-e sanda.",
+              "They live in Seoul."
+            ]
+          ]
+        },
+        {
+          "h": "Adjectives, nouns, and the past",
+          "p": "An adjective does not take -는다. Its plain present is the dictionary form: 좋다, 작다. A noun uses <b>이다</b> after a consonant and <b>다</b> after a vowel: 학생이다, 커피다. The past is the -았/었- you already know, with -다 instead of -어요: 갔다, 먹었다, 했다, 왔다.",
+          "examples": [
+            ["날씨가 {좋다}.", "Nalssi-ga jota.", "The weather is good."],
+            [
+              "그는 학생{이다}. 이것은 커피{다}.",
+              "Geu-neun haksaeng-ida. Igeot-eun keopi-da.",
+              "He is a student. This is coffee."
+            ],
+            ["어제 비가 {왔다}.", "Eoje bi-ga watda.", "It rained yesterday."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "가다 → ？",
+          "en": "plain present",
+          "options": ["간다", "가는다", "가다요", "가요"],
+          "answer": "간다",
+          "why": "Vowel-stem action verb: -ㄴ다."
+        },
+        {
+          "q": "먹다 → ？",
+          "en": "plain present",
+          "options": ["먹는다", "먹ㄴ다", "먹는다요", "먹어요"],
+          "answer": "먹는다",
+          "why": "Consonant-stem action verb: -는다."
+        },
+        {
+          "q": "좋다 → ？",
+          "en": "plain present",
+          "options": ["좋다", "좋는다", "좋은다", "좋아요"],
+          "answer": "좋다",
+          "why": "Adjectives stay in the dictionary form. They do not take -는다."
+        },
+        {
+          "q": "하다 → ？",
+          "en": "plain present",
+          "options": ["한다", "하는다", "한는다", "해요"],
+          "answer": "한다",
+          "why": "하다 → 한다."
+        },
+        {
+          "q": "살다 → ？",
+          "en": "plain present",
+          "options": ["산다", "살는다", "살ㄴ다", "산는다"],
+          "answer": "산다",
+          "why": "ㄹ drops before ㄴ: 산다."
+        },
+        {
+          "q": "Which is “This is coffee” in the plain style?",
+          "en": "",
+          "options": ["이것은 커피다.", "이것은 커피이다.", "이것은 커피예요.", "이것은 커피는다."],
+          "answer": "이것은 커피다.",
+          "why": "After a vowel, 이다 is written 다. After a consonant it stays 이다: 학생이다."
+        }
+      ]
+    },
+    {
+      "id": "news-report",
+      "title": "News reports — 다고 and 에 따르면",
+      "particle": "-다고 / -에 따르면 / -(으)ㄴ 것으로",
+      "summary": "Articles quote a claim with -다고 밝혔다, cite a source with -에 따르면, and report a finding with -(으)ㄴ 것으로 나타났다.",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "A news sentence names a source, then a plain-style clause. <b>-에 따르면</b> means “according to”. A quoted statement adds <b>-다고</b> to the plain form and a reporting verb such as 밝혔다 “announced” or 전했다 “reported”: 간다고 밝혔다, 먹는다고 전했다, 좋다고 했다. A past quote is -았/었다고: 올랐다고.",
+          "examples": [
+            [
+              "기상청{에 따르면} 오후에 비가 온다.",
+              "Gisangcheong-e ttareumyeon ohu-e bi-ga onda.",
+              "According to the weather office, it rains in the afternoon."
+            ],
+            [
+              "정부는 내일 회의를 연{다고} 밝혔다.",
+              "Jeongbu-neun naeil hoeui-reul yeondago bakhyeotda.",
+              "The government announced it would hold a meeting tomorrow."
+            ],
+            [
+              "물가가 올랐{다고} 전했다.",
+              "Mulga-ga ollatdago jeonhaetda.",
+              "They reported that prices had risen."
+            ]
+          ]
+        },
+        {
+          "h": "것으로 나타났다, and 이다",
+          "p": "A finding is often <b>-(으)ㄴ 것으로 나타났다</b> “it turned out that”. A past action or an adjective uses the modifier <b>-ㄴ / -은</b>: 내린 것으로, 좋은 것으로. A noun is quoted with <b>-(이)라고</b>, not -다고: 학생이라고 after a consonant, 의사라고 after a vowel.",
+          "examples": [
+            [
+              "가격이 내린 {것으로} 나타났다.",
+              "Gagyeok-i naerin geoseuro natanatda.",
+              "It turned out that the price had fallen."
+            ],
+            [
+              "그는 학생{이라고} 밝혔다.",
+              "Geu-neun haksaeng-irago bakhyeotda.",
+              "They announced that he is a student."
+            ],
+            [
+              "그것은 사실{이라고} 전했다.",
+              "Geugeot-eun sasil-irago jeonhaetda.",
+              "They reported that it is a fact."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "기상청＿ 오후에 비가 온다.",
+          "en": "According to the weather office, it rains this afternoon.",
+          "options": ["에 따르면", "을 따르면", "라고", "으로"],
+          "answer": "에 따르면",
+          "why": "A source plus 에 따르면 means “according to”."
+        },
+        {
+          "q": "정부는 회의를 연＿ 밝혔다.",
+          "en": "The government announced it would hold a meeting.",
+          "options": ["다고", "라고", "으로", "고"],
+          "answer": "다고",
+          "why": "열다 → 연다, then -다고 for a quoted statement: 연다고."
+        },
+        {
+          "q": "물가가 올랐＿ 전했다.",
+          "en": "They reported that prices rose.",
+          "options": ["다고", "이라고", "는다고", "러"],
+          "answer": "다고",
+          "why": "The plain past 올랐다 is quoted as 올랐다고. The final 다 becomes 다고."
+        },
+        {
+          "q": "가격이 내린 ＿ 나타났다.",
+          "en": "It turned out that the price fell.",
+          "options": ["것으로", "다고로", "다고", "으면"],
+          "answer": "것으로",
+          "why": "The past modifier 내린 plus 것으로 나타났다."
+        },
+        {
+          "q": "그는 학생＿ 밝혔다.",
+          "en": "They announced that he is a student.",
+          "options": ["이라고", "다고", "라고", "은다고"],
+          "answer": "이라고",
+          "why": "이다 after a consonant is quoted with -이라고, not -다고."
+        },
+        {
+          "q": "민수는 의사＿ 전했다.",
+          "en": "They reported that Minsu is a doctor.",
+          "options": ["라고", "이라고", "다고", "는다고"],
+          "answer": "라고",
+          "why": "의사 ends in a vowel, so 이다 is quoted as -라고: 의사라고."
+        }
+      ]
+    },
+    {
+      "id": "written-connectives",
+      "title": "-(으)며, -(으)나, -(으)므로 — written connectors",
+      "particle": "-(으)며 / -(으)나 / -(으)므로",
+      "summary": "The written partners of -고, -지만, and -아서: -(으)며 “and”, -(으)나 “but”, -(으)므로 “because”. The sentence still ends in plain style.",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "Writing uses connectors that 해요체 rarely does. <b>-(으)며</b> links facts (“and”): a vowel or ㄹ takes -며 (크며, 살며), and any other consonant takes -으며 (먹으며, 높으며). <b>-(으)나</b> is the written “but”: 가나, 먹으나, 비싸나. The sentence ends in 한다체, not -요.",
+          "examples": [
+            [
+              "산은 높{으며} 물은 맑다.",
+              "San-eun nopeumyeo mul-eun makda.",
+              "The mountain is high, and the water is clear."
+            ],
+            [
+              "값은 비싸{나} 품질이 좋다.",
+              "Gaps-eun bissana pumjil-i jota.",
+              "The price is high, but the quality is good."
+            ],
+            [
+              "사람들은 일하{며} 공부한다.",
+              "Saramdeul-eun ilhamyeo gongbuhanda.",
+              "People work and study."
+            ]
+          ]
+        },
+        {
+          "h": "-(으)므로 — because",
+          "p": "<b>-(으)므로</b> is the written “because”: a vowel takes -므로 (오므로), a consonant takes -으므로 (없으므로), and a stem in ㄹ takes -므로 (살므로, not 살으므로). It states a reason the writer takes as given. Spoken Korean still uses -아서/어서 for the same job.",
+          "examples": [
+            [
+              "비가 오{므로} 경기가 취소됐다.",
+              "Bi-ga omeuro gyeonggi-ga chwisodoetda.",
+              "Because it is raining, the match was cancelled."
+            ],
+            [
+              "시간이 없{으므로} 회의를 미룬다.",
+              "Sigan-i eopseumeuro hoeui-reul mirunda.",
+              "Because there is no time, they postpone the meeting."
+            ],
+            [
+              "여기 살{므로} 길이 익숙하다.",
+              "Yeogi salmeuro giri iksukhada.",
+              "Because they live here, the road is familiar."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "산은 높＿ 물은 맑다.",
+          "en": "The mountain is high, and the water is clear.",
+          "options": ["으며", "며", "으나", "므로"],
+          "answer": "으며",
+          "why": "높다 ends in a consonant: -으며. This sentence is plain style, so not -고."
+        },
+        {
+          "q": "사람들은 일하＿ 공부한다.",
+          "en": "People work and study.",
+          "options": ["며", "으며", "지만", "어서"],
+          "answer": "며",
+          "why": "하다 → 하며, the written “and”."
+        },
+        {
+          "q": "값은 비싸＿ 품질이 좋다.",
+          "en": "It is expensive, but the quality is good.",
+          "options": ["나", "으나", "며", "아서"],
+          "answer": "나",
+          "why": "비싸다 ends in a vowel: -나, the written “but”."
+        },
+        {
+          "q": "시간이 없＿ 회의를 미룬다.",
+          "en": "Because there is no time, they postpone the meeting.",
+          "options": ["으므로", "므로", "으며", "지만"],
+          "answer": "으므로",
+          "why": "없 ends in a consonant: -으므로."
+        },
+        {
+          "q": "비가 오＿ 경기가 취소됐다.",
+          "en": "Because it is raining, the match was cancelled.",
+          "options": ["므로", "으므로", "나", "고"],
+          "answer": "므로",
+          "why": "오다 ends in a vowel: -므로."
+        },
+        {
+          "q": "여기 살＿ 길이 익숙하다.",
+          "en": "Because they live here, the road is familiar.",
+          "options": ["므로", "으므로", "으나", "는다"],
+          "answer": "므로",
+          "why": "ㄹ stems take -므로: 살므로, not 살으므로."
+        }
+      ]
+    },
+    {
+      "id": "hangul-tense",
+      "title": "Doubled consonants",
+      "particle": "ㄲ ㄸ ㅃ ㅆ ㅉ",
+      "summary": "Five tense doubles: no puff of air, a tight start.",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "Doubled <b>ㄲ ㄸ ㅃ ㅆ ㅉ</b> sit in the same mouth positions as ㄱ ㄷ ㅂ ㅅ ㅈ but the start is tight, with almost no air. English has nothing quite like them; keep the mouth small and the start short.",
+          "examples": [
+            ["따뜻하다", "ttatteuthada", "warm (starts with ㄸ)"],
+            ["쌀", "ssal", "rice (uncooked)"],
+            ["집", "jip", "house — compare ㅂ in 받침 later"]
+          ]
+        },
+        {
+          "h": "Not the same as aspiration",
+          "p": "Do not confuse ㅋ with ㄲ: ㅋ is a puff, ㄲ is tense. In these lessons romanization uses doubled letters: tt, ss, pp, jj, kk."
+        }
+      ],
+      "drills": [
+        {
+          "q": "Which is the tense (doubled) t?",
+          "en": "",
+          "options": ["ㄸ", "ㄷ", "ㅌ", "ㄴ"],
+          "answer": "ㄸ",
+          "why": "ㄸ is doubled ㄷ, not aspirated ㅌ."
+        },
+        {
+          "q": "쌀 starts with which letter?",
+          "en": "",
+          "options": ["ㅆ", "ㅅ", "ㅊ", "ㅉ"],
+          "answer": "ㅆ",
+          "why": "쌀 is ssal, rice."
+        },
+        {
+          "q": "ㄲ is the partner of…",
+          "en": "",
+          "options": ["ㄱ", "ㅋ", "ㄴ", "ㅎ"],
+          "answer": "ㄱ",
+          "why": "ㄲ is tense; ㅋ is aspirated."
+        },
+        {
+          "q": "Which pair is plain versus tense?",
+          "en": "",
+          "options": ["ㅂ / ㅃ", "ㅂ / ㅍ", "ㄷ / ㅌ", "ㅈ / ㅊ"],
+          "answer": "ㅂ / ㅃ",
+          "why": "ㅃ is the tense partner of ㅂ."
+        },
+        {
+          "q": "Read 집.",
+          "en": "",
+          "options": ["jip (house)", "ssal (rice)", "ttal (daughter)", "ppang (bread)"],
+          "answer": "jip (house)",
+          "why": "집 is jip, one ㅈ not doubled."
+        }
+      ]
+    },
+    {
+      "id": "hangul-yot",
+      "title": "Combined vowels",
+      "particle": "ㅘ ㅙ ㅚ ㅝ ㅞ ㅟ ㅢ",
+      "summary": "Vowels built from two parts; yot marks ㅑ ㅕ ㅛ ㅠ inside a bigger vowel.",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "After a consonant, <b>ㅘ wa, ㅙ wae, ㅚ oe, ㅝ wo, ㅞ we, ㅟ wi, ㅢ ui</b> are one vowel sound in one block. ㅚ and ㅟ are often pronounced like we and wi in modern Seoul speech.",
+          "examples": [
+            ["과", "gwa", "and / suffix"],
+            ["왜", "wae", "why"],
+            ["의", "ui", "of / doctor"]
+          ]
+        },
+        {
+          "h": "Where they sit",
+          "p": "Like simple vowels, combined vowels are tall and stand to the right: 과 is ㄱ + ㅘ."
+        }
+      ],
+      "drills": [
+        {
+          "q": "과 is…",
+          "en": "",
+          "options": ["ㄱ + ㅘ", "ㄱ + ㅗ", "ㄱ + ㅜ", "ㅇ + ㅏ"],
+          "answer": "ㄱ + ㅘ",
+          "why": "과 stacks ㄱ with the combined vowel ㅘ."
+        },
+        {
+          "q": "왜 means…",
+          "en": "",
+          "options": ["why", "water", "doctor", "and"],
+          "answer": "why",
+          "why": "왜 wae is why."
+        },
+        {
+          "q": "ㅢ in 의사 is romanized…",
+          "en": "",
+          "options": ["ui", "wi", "we", "u"],
+          "answer": "ui",
+          "why": "의사 uisa is doctor."
+        },
+        {
+          "q": "Which block has ㅝ?",
+          "en": "",
+          "options": ["wo", "wa", "wi", "ui"],
+          "answer": "wo",
+          "why": "ㅝ is wo, as in the question word (rare alone)."
+        },
+        {
+          "q": "Combined vowels in a block sit…",
+          "en": "",
+          "options": [
+            "to the right of the first consonant",
+            "under the consonant",
+            "before the consonant",
+            "only at word end"
+          ],
+          "answer": "to the right of the first consonant",
+          "why": "They are tall vowels."
+        }
+      ]
+    },
+    {
+      "id": "hangul-numbers",
+      "title": "Numbers 1–10",
+      "particle": "하나 … 열",
+      "summary": "Native Korean numbers for counting small things and telling age in speech.",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>하나, 둘, 셋, 넷, 다섯, 여섯, 일곱, 여덟, 아홉, 열</b> are the native numbers one to ten. Before a counter they shorten: 한, 두, 세, 네 (하나→한, 둘→두…).",
+          "examples": [
+            ["하나, 둘, 셋", "hana, dul, set", "one, two, three"],
+            ["사과 세 개", "sagwa se gae", "three apples (세 + counter)"],
+            ["열 살", "yeol sal", "ten years old"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Three (before a counter) is…",
+          "en": "",
+          "options": ["세", "셋", "삼", "서"],
+          "answer": "세",
+          "why": "셋 becomes 세 before a counter."
+        },
+        {
+          "q": "열 is…",
+          "en": "",
+          "options": ["ten", "nine", "eleven", "one"],
+          "answer": "ten",
+          "why": "열 yeol is ten."
+        },
+        {
+          "q": "사과 두 개 means…",
+          "en": "",
+          "options": ["two apples", "three apples", "two people", "two books"],
+          "answer": "two apples",
+          "why": "두 is two + counter 개."
+        },
+        {
+          "q": "Which is the native word for four?",
+          "en": "",
+          "options": ["넷", "사", "다섯", "사십"],
+          "answer": "넷",
+          "why": "넷 net is four (native)."
+        },
+        {
+          "q": "아홉 is…",
+          "en": "",
+          "options": ["nine", "eight", "seven", "six"],
+          "answer": "nine",
+          "why": "아홉 ahop is nine."
+        }
+      ]
+    },
+    {
+      "id": "hangul-sino-numbers",
+      "title": "Sino-Korean numbers",
+      "particle": "일 이 삼 …",
+      "summary": "Chinese-origin numbers for dates, money, floors and phone digits.",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>일, 이, 삼, 사, 오, 육, 칠, 팔, 구, 십</b> are the Sino-Korean digits. They combine for larger numbers: 십일 eleven, 이십 twenty, 삼십오 thirty-five.",
+          "examples": [
+            ["오월", "owol", "May (month five)"],
+            ["삼천 원", "samcheon won", "three thousand won"],
+            ["이층", "icheung", "second floor"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "May is…",
+          "en": "",
+          "options": ["오월", "오일", "오년", "오시"],
+          "answer": "오월",
+          "why": "Month five: 오월."
+        },
+        {
+          "q": "이십 is…",
+          "en": "",
+          "options": ["twenty", "twelve", "two", "thirty"],
+          "answer": "twenty",
+          "why": "이 + 십 = twenty."
+        },
+        {
+          "q": "Which is Sino-Korean for seven?",
+          "en": "",
+          "options": ["칠", "일곱", "구", "셋"],
+          "answer": "칠",
+          "why": "칠 chil is seven (Sino)."
+        },
+        {
+          "q": "삼천 원 is…",
+          "en": "",
+          "options": [
+            "three thousand won",
+            "three hundred won",
+            "thirty won",
+            "three won"
+          ],
+          "answer": "three thousand won",
+          "why": "천 is thousand."
+        },
+        {
+          "q": "Second floor is often…",
+          "en": "",
+          "options": ["이층", "이 살", "둘 층", "이번"],
+          "answer": "이층",
+          "why": "층 is floor; 이층 second floor."
+        }
+      ]
+    },
+    {
+      "id": "hangul-greetings",
+      "title": "Greetings",
+      "particle": "안녕하세요",
+      "summary": "Hello, goodbye and thank you in polite speech.",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>안녕하세요</b> is hello. <b>안녕히 가세요</b> says goodbye to someone leaving; <b>안녕히 계세요</b> to someone staying. <b>감사합니다</b> is thank you; <b>천만에요</b> answers it.",
+          "examples": [
+            ["{안녕하세요}.", "annyeonghaseyo.", "Hello."],
+            ["{감사합니다}.", "gamsahamnida.", "Thank you."],
+            ["{안녕히} 가세요.", "annyeonghi gaseyo.", "Goodbye (you are going)."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Polite hello is…",
+          "en": "",
+          "options": ["안녕하세요", "안녕", "감사합니다", "죄송합니다"],
+          "answer": "안녕하세요",
+          "why": "안녕하세요 is the everyday polite hello."
+        },
+        {
+          "q": "You thank someone with…",
+          "en": "",
+          "options": ["감사합니다", "미안합니다", "안녕히 계세요", "네"],
+          "answer": "감사합니다",
+          "why": "감사합니다 is thank you."
+        },
+        {
+          "q": "Someone leaves your shop. You say…",
+          "en": "",
+          "options": ["안녕히 가세요", "안녕히 계세요", "안녕하세요", "들어오세요"],
+          "answer": "안녕히 가세요",
+          "why": "They go, so 가세요."
+        },
+        {
+          "q": "You stay; the guest leaves. They say to you…",
+          "en": "",
+          "options": ["안녕히 계세요", "안녕히 가세요", "감사합니다", "안녕"],
+          "answer": "안녕히 계세요",
+          "why": "You stay: 계세요."
+        },
+        {
+          "q": "Answer to 감사합니다 is often…",
+          "en": "",
+          "options": ["천만에요", "안녕하세요", "네", "아니요"],
+          "answer": "천만에요",
+          "why": "천만에요 or 아니에요: you're welcome."
+        }
+      ]
+    },
+    {
+      "id": "hangul-ne-aniyo",
+      "title": "Yes and no",
+      "particle": "네 / 아니요",
+      "summary": "Short answers in polite conversation.",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>네</b> (often pronounced ne or e) means yes. <b>아니요</b> means no. <b>아니에요</b> softens “that's not so” or “I'm not”.",
+          "examples": [
+            ["{네}, 맞아요.", "Ne, majayo.", "Yes, that's right."],
+            ["{아니요}, 괜찮아요.", "Aniyo, gwaenchanayo.", "No, it's fine."],
+            [
+              "저는 학생이 {아니에요}.",
+              "Jeoneun haksaeng-i anieyo.",
+              "I'm not a student."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Polite yes is…",
+          "en": "",
+          "options": ["네", "예", "아니요", "네요"],
+          "answer": "네",
+          "why": "네 is yes in everyday polite speech."
+        },
+        {
+          "q": "Polite no is…",
+          "en": "",
+          "options": ["아니요", "네", "아니에요", "안"],
+          "answer": "아니요",
+          "why": "아니요 is no."
+        },
+        {
+          "q": "I'm not a teacher uses…",
+          "en": "",
+          "options": ["아니에요", "아니요", "네", "없어요"],
+          "answer": "아니에요",
+          "why": "Copula negative: 아니에요."
+        },
+        {
+          "q": "Answer “Is this coffee?” — Yes.",
+          "en": "",
+          "options": ["네, 커피예요.", "아니요, 커피예요.", "네, 커피를.", "아니에요, 커피."],
+          "answer": "네, 커피예요.",
+          "why": "네 confirms; 커피예요 it's coffee."
+        },
+        {
+          "q": "괜찮아요? — I'm fine, thanks.",
+          "en": "",
+          "options": ["네, 괜찮아요.", "아니요, 괜찮아요.", "네, 안 괜찮아요.", "아니에요, 괜찮아요."],
+          "answer": "네, 괜찮아요.",
+          "why": "네 affirms: it's fine."
+        }
+      ]
+    },
+    {
+      "id": "hangul-read-body",
+      "title": "Reading: body and health",
+      "particle": "머리 손 발",
+      "summary": "Common body words in Hangul blocks.",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "Read each block left to right, top to bottom: <b>머리</b> meori head, <b>손</b> son hand, <b>발</b> bal foot, <b>눈</b> nun eye, <b>귀</b> gwi ear.",
+          "examples": [
+            ["머리", "meori", "head"],
+            ["손", "son", "hand"],
+            ["발", "bal", "foot"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Read 손.",
+          "en": "",
+          "options": ["son (hand)", "bal (foot)", "nun (eye)", "meori (head)"],
+          "answer": "son (hand)",
+          "why": "손 is son."
+        },
+        {
+          "q": "발 is…",
+          "en": "",
+          "options": ["foot", "hand", "head", "ear"],
+          "answer": "foot",
+          "why": "발 bal is foot."
+        },
+        {
+          "q": "눈 means…",
+          "en": "",
+          "options": ["eye", "ear", "snow", "hand"],
+          "answer": "eye",
+          "why": "눈 nun is eye (context also snow)."
+        },
+        {
+          "q": "Which is “head”?",
+          "en": "",
+          "options": ["머리", "목", "배", "손"],
+          "answer": "머리",
+          "why": "머리 meori is head."
+        },
+        {
+          "q": "귀 is…",
+          "en": "",
+          "options": ["ear", "eye", "mouth", "nose"],
+          "answer": "ear",
+          "why": "귀 gwi is ear."
+        }
+      ]
+    },
+    {
+      "id": "hangul-read-food",
+      "title": "Reading: food words",
+      "particle": "밥 물 김치",
+      "summary": "Everyday food vocabulary in syllable blocks.",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>밥</b> bap cooked rice/meal, <b>물</b> mul water, <b>김치</b> gimchi kimchi, <b>불고기</b> bulgogi, <b>빵</b> ppang bread.",
+          "examples": [
+            ["밥", "bap", "rice / meal"],
+            ["물", "mul", "water"],
+            ["김치", "gimchi", "kimchi"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Read 물.",
+          "en": "",
+          "options": ["mul (water)", "bap (rice)", "ppang (bread)", "gimchi"],
+          "answer": "mul (water)",
+          "why": "물 is mul."
+        },
+        {
+          "q": "밥 is…",
+          "en": "",
+          "options": ["rice / meal", "water", "bread", "meat"],
+          "answer": "rice / meal",
+          "why": "밥 bap is cooked rice or a meal."
+        },
+        {
+          "q": "빵 starts with…",
+          "en": "",
+          "options": ["ㅃ", "ㅂ", "ㅍ", "ㅌ"],
+          "answer": "ㅃ",
+          "why": "빵 ppang has tense ㅃ."
+        },
+        {
+          "q": "김치 has how many blocks?",
+          "en": "",
+          "options": ["two", "one", "three", "four"],
+          "answer": "two",
+          "why": "김 + 치."
+        },
+        {
+          "q": "Which is bread?",
+          "en": "",
+          "options": ["빵", "밥", "물", "김"],
+          "answer": "빵",
+          "why": "빵 ppang is bread."
+        }
+      ]
+    },
+    {
+      "id": "hangul-read-places",
+      "title": "Reading: places",
+      "particle": "집 학교 병원",
+      "summary": "Home, school and public places.",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>집</b> jip home, <b>학교</b> hakgyo school, <b>병원</b> byeongwon hospital, <b>공원</b> gongwon park, <b>회사</b> hoesa company.",
+          "examples": [
+            ["집", "jip", "home"],
+            ["학교", "hakgyo", "school"],
+            ["병원", "byeongwon", "hospital"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "학교 is…",
+          "en": "",
+          "options": ["school", "home", "hospital", "company"],
+          "answer": "school",
+          "why": "학교 hakgyo is school."
+        },
+        {
+          "q": "Read 집.",
+          "en": "",
+          "options": ["jip (home)", "jip (house)", "hakgyo", "byeongwon"],
+          "answer": "jip (home)",
+          "why": "집 jip is home."
+        },
+        {
+          "q": "병원 means…",
+          "en": "",
+          "options": ["hospital", "school", "park", "office"],
+          "answer": "hospital",
+          "why": "병원 byeongwon is hospital."
+        },
+        {
+          "q": "Which is park?",
+          "en": "",
+          "options": ["공원", "회사", "병원", "학교"],
+          "answer": "공원",
+          "why": "공원 gongwon is park."
+        },
+        {
+          "q": "회사 is…",
+          "en": "",
+          "options": ["company / office", "school", "home", "hospital"],
+          "answer": "company / office",
+          "why": "회사 hoesa is company."
+        }
+      ]
+    },
+    {
+      "id": "do-particle",
+      "title": "도 — also, too",
+      "particle": "도",
+      "summary": "Adds “also” or “even” after a noun.",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>도</b> after a noun means also, too, or even. It replaces 은/는 or 을/를 when those roles apply: 저도 “me too”, 커피도 “coffee too”.",
+          "examples": [
+            ["저{도} 학생이에요.", "Jeodo haksaeng-ieyo.", "I'm a student too."],
+            ["물{도} 마셔요.", "Mul-do masyeoyo.", "I drink water too."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "I like coffee too: 커피＿.",
+          "en": "",
+          "options": ["도", "는", "만", "에"],
+          "answer": "도",
+          "why": "도 adds also."
+        },
+        {
+          "q": "What does 저도 mean?",
+          "en": "",
+          "options": ["me too", "only me", "not me", "I"],
+          "answer": "me too",
+          "why": "저 + 도 = me too."
+        },
+        {
+          "q": "Which adds “even Minji”?",
+          "en": "",
+          "options": ["민지도", "민지만", "민지는", "민지를"],
+          "answer": "민지도",
+          "why": "민지 + 도."
+        },
+        {
+          "q": "도 replaces which pair when marking also on a topic?",
+          "en": "",
+          "options": ["은/는", "이/가", "을/를", "에"],
+          "answer": "은/는",
+          "why": "Topic also: noun + 도 instead of 는."
+        },
+        {
+          "q": "물도 마셔요 means…",
+          "en": "",
+          "options": [
+            "I drink water too.",
+            "I only drink water.",
+            "I don't drink water.",
+            "Water drinks me."
+          ],
+          "answer": "I drink water too.",
+          "why": "도 is also."
+        }
+      ]
+    },
+    {
+      "id": "man-particle",
+      "title": "만 — only",
+      "particle": "만",
+      "summary": "Limits to just that thing.",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>만</b> means only or just: 커피만 “only coffee”, 오늘만 “only today”.",
+          "examples": [
+            ["커피{만} 마셔요.", "Keopiman masyeoyo.", "I only drink coffee."],
+            ["오늘{만} 쉬어요.", "Oneulman swieoyo.", "I rest only today."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Only coffee: 커피＿.",
+          "en": "",
+          "options": ["만", "도", "은", "를"],
+          "answer": "만",
+          "why": "만 is only."
+        },
+        {
+          "q": "오늘만 means…",
+          "en": "",
+          "options": ["only today", "today also", "not today", "today"],
+          "answer": "only today",
+          "why": "만 limits to today only."
+        },
+        {
+          "q": "Which means “only me”?",
+          "en": "",
+          "options": ["저만", "저도", "저는", "저를"],
+          "answer": "저만",
+          "why": "저 + 만."
+        },
+        {
+          "q": "커피만 마셔요 implies…",
+          "en": "",
+          "options": ["nothing else to drink", "coffee also", "no coffee", "all drinks"],
+          "answer": "nothing else to drink",
+          "why": "만 excludes other drinks."
+        },
+        {
+          "q": "만 versus 도: which excludes others?",
+          "en": "",
+          "options": ["만", "도", "은", "에"],
+          "answer": "만",
+          "why": "만 is only; 도 is also."
+        }
+      ]
+    },
+    {
+      "id": "ege-ge",
+      "title": "에게 / 한테 — to a person",
+      "particle": "에게 / 한테",
+      "summary": "Direction toward someone in speech.",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>에게</b> (written) and <b>한테</b> (spoken) mark the person who receives an action: 친구에게 전화해요 “I call a friend”. Animals and very polite speech use different words; start with people.",
+          "examples": [
+            [
+              "친구{에게} 선물을 줬어요.",
+              "Chingu-ege seommul-eul jwosseoyo.",
+              "I gave a gift to a friend."
+            ],
+            ["엄마{한테} 말했어요.", "Eomma-hante malhaesseoyo.", "I told Mom."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "To a friend (spoken): 친구＿.",
+          "en": "",
+          "options": ["한테", "에게", "에서", "으로"],
+          "answer": "한테",
+          "why": "한테 is spoken to a person."
+        },
+        {
+          "q": "친구에게 means…",
+          "en": "",
+          "options": ["to a friend", "from a friend", "at a friend", "with a friend"],
+          "answer": "to a friend",
+          "why": "에게 marks the recipient."
+        },
+        {
+          "q": "Which is more spoken?",
+          "en": "",
+          "options": ["한테", "에게", "에서", "와"],
+          "answer": "한테",
+          "why": "한테 is colloquial; 에게 is neutral/written."
+        },
+        {
+          "q": "I gave Mom a gift: 엄마＿ 선물.",
+          "en": "",
+          "options": ["한테", "에서", "을", "는"],
+          "answer": "한테",
+          "why": "Recipient: 한테."
+        },
+        {
+          "q": "전화하다 often takes…",
+          "en": "",
+          "options": ["에게/한테", "에서", "으로", "만"],
+          "answer": "에게/한테",
+          "why": "You call to someone."
+        }
+      ]
+    },
+    {
+      "id": "eseo-time",
+      "title": "에 — time and schedule",
+      "particle": "에",
+      "summary": "Clock time and fixed appointments take 에.",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Hours and days take <b>에</b>: 세 시에 at three, 월요일에 on Monday, 내일에 tomorrow (often 내일 alone).",
+          "examples": [
+            ["아홉 시{에} 만나요.", "Ahop si-e mannayo.", "Let's meet at nine."],
+            [
+              "월요일{에} 시험이 있어요.",
+              "Woryoil-e siheom-i isseoyo.",
+              "There's an exam on Monday."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "At eight o'clock: 여덟 시＿.",
+          "en": "",
+          "options": ["에", "에서", "부터", "까지"],
+          "answer": "에",
+          "why": "Clock time takes 에."
+        },
+        {
+          "q": "월요일에 means…",
+          "en": "",
+          "options": ["on Monday", "from Monday", "until Monday", "at Monday's place"],
+          "answer": "on Monday",
+          "why": "Day + 에 = on that day."
+        },
+        {
+          "q": "Which is “at three”?",
+          "en": "",
+          "options": ["세 시에", "세 시에서", "세 시를", "세 시는"],
+          "answer": "세 시에",
+          "why": "Time: 시 + 에."
+        },
+        {
+          "q": "Meeting time uses…",
+          "en": "",
+          "options": ["에", "에서", "으로", "도"],
+          "answer": "에",
+          "why": "Fixed time point: 에."
+        },
+        {
+          "q": "내일 만나요 often drops…",
+          "en": "",
+          "options": ["에 (optional)", "the verb", "the subject", "the object"],
+          "answer": "에 (optional)",
+          "why": "내일 can stand without 에 in speech."
+        }
+      ]
+    },
+    {
+      "id": "question-words",
+      "title": "Question words",
+      "particle": "뭐 어디 누구 언제",
+      "summary": "What, where, who, when in basic questions.",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>뭐</b> (무엇) what, <b>어디</b> where, <b>누구</b> who, <b>언제</b> when. They stay in the sentence; the verb still ends the clause.",
+          "examples": [
+            ["{뭐} 먹어요?", "Mwo meogeoyo?", "What are you eating?"],
+            ["{어디} 가요?", "Eodi gayo?", "Where are you going?"],
+            ["{누구}예요?", "Nugu-yeyo?", "Who is it?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "What are you eating?",
+          "en": "",
+          "options": ["뭐 먹어요?", "어디 먹어요?", "누구 먹어요?", "언제 먹어요?"],
+          "answer": "뭐 먹어요?",
+          "why": "뭐 is what."
+        },
+        {
+          "q": "어디 가요? means…",
+          "en": "",
+          "options": [
+            "Where are you going?",
+            "What are you going?",
+            "Who goes?",
+            "When go?"
+          ],
+          "answer": "Where are you going?",
+          "why": "어디 = where."
+        },
+        {
+          "q": "Who is it? (polite)",
+          "en": "",
+          "options": ["누구예요?", "뭐예요?", "어디예요?", "언제예요?"],
+          "answer": "누구예요?",
+          "why": "누구 + 예요."
+        },
+        {
+          "q": "언제 is…",
+          "en": "",
+          "options": ["when", "where", "what", "who"],
+          "answer": "when",
+          "why": "언제 eonje is when."
+        },
+        {
+          "q": "Question word for place…",
+          "en": "",
+          "options": ["어디", "뭐", "누구", "언제"],
+          "answer": "어디",
+          "why": "어디 eodi is where."
+        }
+      ]
+    },
+    {
+      "id": "iryo-juseyo",
+      "title": "주세요 and 죄송합니다",
+      "particle": "주세요",
+      "summary": "Please give me… and a basic apology.",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>주세요</b> is please give (me): 커피 주세요 “Coffee, please.” <b>죄송합니다</b> is I'm sorry (polite). <b>미안합니다</b> is also sorry, slightly less formal in some settings.",
+          "examples": [
+            ["커피 {주세요}.", "Keopi juseyo.", "Coffee, please."],
+            ["{죄송합니다}.", "Joesonghamnida.", "I'm sorry."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Coffee, please.",
+          "en": "",
+          "options": ["커피 주세요.", "커피 마셔요.", "커피 있어요.", "커피예요."],
+          "answer": "커피 주세요.",
+          "why": "주세요 asks them to give/serve."
+        },
+        {
+          "q": "Polite strong apology…",
+          "en": "",
+          "options": ["죄송합니다", "감사합니다", "안녕하세요", "네"],
+          "answer": "죄송합니다",
+          "why": "죄송합니다 is sorry."
+        },
+        {
+          "q": "Water, please: 물＿.",
+          "en": "",
+          "options": ["주세요", "마셔요", "있어요", "예요"],
+          "answer": "주세요",
+          "why": "물 주세요."
+        },
+        {
+          "q": "주세요 attaches to…",
+          "en": "",
+          "options": ["a noun you want", "only verbs", "only people", "only places"],
+          "answer": "a noun you want",
+          "why": "Noun + 주세요."
+        },
+        {
+          "q": "After bumping someone you say…",
+          "en": "",
+          "options": ["죄송합니다", "감사합니다", "안녕히 가세요", "네"],
+          "answer": "죄송합니다",
+          "why": "Apology."
+        }
+      ]
+    },
+    {
+      "id": "juseyo-request",
+      "title": "-아/어 주세요 — please do for me",
+      "particle": "-아/어 주세요",
+      "summary": "Ask someone to do something for you politely.",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Stem + <b>-아/어 주세요</b> asks a favor: 앉아 주세요 means please sit. The same vowel rule as -아요/-어요.",
+          "examples": [
+            ["앉{아} 주세요.", "Anja juseyo.", "Please sit."],
+            ["기다려 {주세요}.", "Gidaryeo juseyo.", "Please wait."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Please sit: 앉＿ 주세요.",
+          "en": "",
+          "options": ["아", "어", "해", "요"],
+          "answer": "아",
+          "why": "Stem 앉 has ㅏ."
+        },
+        {
+          "q": "기다려 주세요 means…",
+          "en": "",
+          "options": ["Please wait.", "I wait.", "Please give.", "Waited."],
+          "answer": "Please wait.",
+          "why": "주세요 is please do."
+        },
+        {
+          "q": "Please open",
+          "en": "",
+          "options": ["열어 주세요", "열 주세요", "열아 주세요", "열해 주세요"],
+          "answer": "열어 주세요",
+          "why": "열다 → 열어 주세요."
+        },
+        {
+          "q": "-아/어 주세요 attaches to…",
+          "en": "",
+          "options": ["verb stem", "noun only", "past", "question"],
+          "answer": "verb stem",
+          "why": "Stem + 주세요."
+        },
+        {
+          "q": "Polite favor ending…",
+          "en": "",
+          "options": ["-아/어 주세요", "-고 싶어요", "-을 거예요", "-지 않아요"],
+          "answer": "-아/어 주세요",
+          "why": "Request pattern."
+        }
+      ]
+    },
+    {
+      "id": "te-form-intro",
+      "title": "-아/어서 — and so / because (spoken)",
+      "particle": "-아/어서",
+      "summary": "Spoken reason and sequence; same vowel rule as -아요.",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>-아서 / -어서</b> links clauses in speech. Tense goes on the final verb only.",
+          "examples": [
+            [
+              "배가 고파{서} 먹었어요.",
+              "Baega gopaseo meogeosseoyo.",
+              "I was hungry, so I ate."
+            ],
+            [
+              "피곤{해서} 일찍 잤어요.",
+              "Pigophaeseo iljjik jasseoyo.",
+              "I was tired, so I slept early."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Because I'm tired: 피곤＿.",
+          "en": "",
+          "options": ["해서", "고", "지만", "면"],
+          "answer": "해서",
+          "why": "하다 → 해서."
+        },
+        {
+          "q": "배가 고파서 means…",
+          "en": "",
+          "options": [
+            "because (I) was hungry",
+            "although hungry",
+            "before hungry",
+            "if hungry"
+          ],
+          "answer": "because (I) was hungry",
+          "why": "Reason."
+        },
+        {
+          "q": "Because it rained",
+          "en": "",
+          "options": ["비가 와서", "비가 와고", "비가 왔지만", "비가 오면"],
+          "answer": "비가 와서",
+          "why": "오다 → 와서."
+        },
+        {
+          "q": "Tense usually sits on…",
+          "en": "",
+          "options": ["the last verb", "both verbs", "first only", "neither"],
+          "answer": "the last verb",
+          "why": "One tense at end."
+        },
+        {
+          "q": "Spoken because ending…",
+          "en": "",
+          "options": ["-아/어서", "-(으)며", "-(으)므로", "-고"],
+          "answer": "-아/어서",
+          "why": "Spoken causal."
+        }
+      ]
+    },
+    {
+      "id": "comparison-de",
+      "title": "더 — more",
+      "particle": "더",
+      "summary": "Put 더 before an adjective for comparison.",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>더</b> before an adjective means more. A보다 marks the standard in comparisons.",
+          "examples": [
+            ["{더} 비싸요.", "Deo bissayo.", "It is more expensive."],
+            [
+              "서울이 부산{보다} 커요.",
+              "Seoul-i Busan-boda keoyo.",
+              "Seoul is bigger than Busan."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "More expensive: ＿ 비싸요.",
+          "en": "",
+          "options": ["더", "만", "도", "는"],
+          "answer": "더",
+          "why": "더 = more."
+        },
+        {
+          "q": "서울이 부산보다 커요 means…",
+          "en": "",
+          "options": [
+            "Seoul is bigger than Busan.",
+            "Busan is bigger.",
+            "Same size.",
+            "Seoul is Busan."
+          ],
+          "answer": "Seoul is bigger than Busan.",
+          "why": "보다 comparison."
+        },
+        {
+          "q": "Which uses 보다?",
+          "en": "",
+          "options": ["comparison", "only past", "only future", "only questions"],
+          "answer": "comparison",
+          "why": "A보다 B."
+        },
+        {
+          "q": "더 sits…",
+          "en": "",
+          "options": [
+            "before the adjective",
+            "after verb",
+            "sentence end",
+            "after object"
+          ],
+          "answer": "before the adjective",
+          "why": "더 + adjective."
+        },
+        {
+          "q": "더 커요 means…",
+          "en": "",
+          "options": ["It is bigger.", "Only big.", "Less big.", "Was big."],
+          "answer": "It is bigger.",
+          "why": "더 is more."
+        }
+      ]
+    },
+    {
+      "id": "permission",
+      "title": "-아/어도 돼요 — may I?",
+      "particle": "-아/어도 돼요",
+      "summary": "Asking and giving permission.",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>-아/어도 돼요?</b> asks permission. <b>안 돼요</b> is not allowed.",
+          "examples": [
+            ["앉{아}도 돼요?", "Anjado dwaeyo?", "May I sit?"],
+            [
+              "여기서 담배 피우{면} 안 돼요.",
+              "Yeogiseo dambae piumyeon an dwaeyo.",
+              "You must not smoke here."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "May I sit?",
+          "en": "",
+          "options": ["앉아도 돼요?", "앉아 주세요?", "앉고 싶어요?", "앉았어요?"],
+          "answer": "앉아도 돼요?",
+          "why": "Permission question."
+        },
+        {
+          "q": "안 돼요 means…",
+          "en": "",
+          "options": ["not allowed", "please do", "thank you", "hello"],
+          "answer": "not allowed",
+          "why": "Not OK."
+        },
+        {
+          "q": "Forbids smoking here",
+          "en": "",
+          "options": ["피우면 안 돼요", "피워도 돼요", "피우고 싶어요", "피웠어요"],
+          "answer": "피우면 안 돼요",
+          "why": "Conditional + 안 돼요."
+        },
+        {
+          "q": "Permission ending…",
+          "en": "",
+          "options": ["-아/어도 돼요", "-고 싶어요", "-을 거예요", "-고 있어요"],
+          "answer": "-아/어도 돼요",
+          "why": "May I pattern."
+        },
+        {
+          "q": "Yes, you may sit",
+          "en": "",
+          "options": ["네, 앉아도 돼요.", "아니요, 앉아도 돼요.", "네, 안 돼요.", "앉아 주세요."],
+          "answer": "네, 앉아도 돼요.",
+          "why": "Affirm permission."
+        }
+      ]
+    },
+    {
+      "id": "sequential-geondae",
+      "title": "그런데 / 그리고 — by the way, and",
+      "particle": "그런데",
+      "summary": "Link sentences in conversation.",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>그리고</b> adds another fact. <b>그런데</b> changes topic or adds contrast.",
+          "examples": [
+            [
+              "밥을 먹었어요. {그리고} 커피를 마셨어요.",
+              "Babeul meogeosseoyo. Geurigo keopi-reul masyeosseoyo.",
+              "I ate and drank coffee."
+            ],
+            [
+              "{그런데} 시간이 없어요.",
+              "Geureonde sigan-i eopseoyo.",
+              "But there is no time."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Adds another fact",
+          "en": "",
+          "options": ["그리고", "그런데", "하지만", "그래서"],
+          "answer": "그리고",
+          "why": "And also."
+        },
+        {
+          "q": "그런데 often…",
+          "en": "",
+          "options": [
+            "changes topic or contrasts",
+            "only means and",
+            "ends sentence",
+            "marks past"
+          ],
+          "answer": "changes topic or contrasts",
+          "why": "BTW / but."
+        },
+        {
+          "q": "I ate and drank coffee",
+          "en": "",
+          "options": ["그리고", "그런데", "그러면", "그래서"],
+          "answer": "그리고",
+          "why": "Sequence."
+        },
+        {
+          "q": "But there is no time",
+          "en": "",
+          "options": ["그런데 시간이 없어요", "그리고 …", "그래서 …", "그러면 …"],
+          "answer": "그런데 시간이 없어요",
+          "why": "Contrast."
+        },
+        {
+          "q": "Spoken and then…",
+          "en": "",
+          "options": ["그리고", "-(으)며", "-고", "-지만"],
+          "answer": "그리고",
+          "why": "Discourse word."
+        }
+      ]
+    },
+    {
+      "id": "try-eoboda",
+      "title": "-아/어 보다 — try doing",
+      "particle": "-아/어 보다",
+      "summary": "Try an action to see what it is like.",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Stem + <b>-아/어 보다</b> tries something. Past: 먹어 봤어요 I tried eating.",
+          "examples": [
+            ["한번 먹{어} 보세요.", "Hanbeon meogeo boseyo.", "Try eating it once."],
+            [
+              "한국어를 배워 {봤어요}.",
+              "Hangugeo-reul baewo bwasseoyo.",
+              "I tried learning Korean."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Try eating once: 한번 먹＿ 보세요.",
+          "en": "",
+          "options": ["어", "아", "고", "서"],
+          "answer": "어",
+          "why": "먹다 → 먹어 보세요."
+        },
+        {
+          "q": "먹어 보세요 means…",
+          "en": "",
+          "options": ["Please try eating.", "I ate.", "Don't eat.", "Eating now."],
+          "answer": "Please try eating.",
+          "why": "Try (polite)."
+        },
+        {
+          "q": "I tried learning",
+          "en": "",
+          "options": ["배워 봤어요", "will learn", "hate learning", "learning now"],
+          "answer": "배워 봤어요",
+          "why": "Past try."
+        },
+        {
+          "q": "Try doing pattern",
+          "en": "",
+          "options": ["-아/어 보다", "-고 싶다", "-고 있다", "-을 거다"],
+          "answer": "-아/어 보다",
+          "why": "Experience try."
+        },
+        {
+          "q": "Often pairs with…",
+          "en": "",
+          "options": ["한번 (once)", "only past", "only future", "never"],
+          "answer": "한번 (once)",
+          "why": "Common collocation."
+        }
+      ]
+    },
+    {
+      "id": "indirect-quote",
+      "title": "-다고 — reported speech",
+      "particle": "-다고",
+      "summary": "Report what someone said.",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Pattern in context: <b>-다고</b>. Example: 민수가 온{다고} 했어요..",
+          "examples": [
+            ["민수가 온다고 했어요.", "…", "They said he is coming."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Fill: 민수가 온＿다고 했어요.",
+          "en": "",
+          "options": ["다고", "라고", "고", "면"],
+          "answer": "다고",
+          "why": "Statement quote."
+        },
+        {
+          "q": "Pattern level",
+          "en": "",
+          "options": [
+            "intermediate",
+            "absolute-beginner",
+            "advanced only",
+            "honorific only"
+          ],
+          "answer": "intermediate",
+          "why": "Mid-level connector."
+        },
+        {
+          "q": "Example meaning",
+          "en": "",
+          "options": ["They said he is coming.", "opposite", "future only", "noun only"],
+          "answer": "They said he is coming.",
+          "why": "Sense of example."
+        },
+        {
+          "q": "Korean puts…",
+          "en": "",
+          "options": [
+            "verb last",
+            "verb first",
+            "topic first always",
+            "object last only"
+          ],
+          "answer": "verb last",
+          "why": "SOV."
+        },
+        {
+          "q": "Particle/end focus",
+          "en": "",
+          "options": ["-다고", "-요 only", "English -ing", "none"],
+          "answer": "-다고",
+          "why": "Lesson focus."
+        }
+      ]
+    },
+    {
+      "id": "before-jeon",
+      "title": "-기 전에 — before",
+      "particle": "-기 전에",
+      "summary": "Before an action.",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Pattern in context: <b>-기 전에</b>. Example: 먹{기 전에}.",
+          "examples": [
+            ["먹기 전에", "…", "before eating"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Fill: 먹＿기 전에",
+          "en": "",
+          "options": ["기 전에", "고 나서", "면", "서"],
+          "answer": "기 전에",
+          "why": "Stem + 기 전에."
+        },
+        {
+          "q": "Pattern level",
+          "en": "",
+          "options": [
+            "intermediate",
+            "absolute-beginner",
+            "advanced only",
+            "honorific only"
+          ],
+          "answer": "intermediate",
+          "why": "Mid-level connector."
+        },
+        {
+          "q": "Example meaning",
+          "en": "",
+          "options": ["before eating", "opposite", "future only", "noun only"],
+          "answer": "before eating",
+          "why": "Sense of example."
+        },
+        {
+          "q": "Korean puts…",
+          "en": "",
+          "options": [
+            "verb last",
+            "verb first",
+            "topic first always",
+            "object last only"
+          ],
+          "answer": "verb last",
+          "why": "SOV."
+        },
+        {
+          "q": "Particle/end focus",
+          "en": "",
+          "options": ["-기", "-요 only", "English -ing", "none"],
+          "answer": "-기",
+          "why": "Lesson focus."
+        }
+      ]
+    },
+    {
+      "id": "after-naseo",
+      "title": "-고 나서 — after",
+      "particle": "-고 나서",
+      "summary": "After finishing.",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Pattern in context: <b>-고 나서</b>. Example: 먹{고 나서}.",
+          "examples": [
+            ["먹고 나서", "…", "after eating"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Fill: 먹＿고 나서",
+          "en": "",
+          "options": ["고 나서", "기 전에", "면", "서"],
+          "answer": "고 나서",
+          "why": "After completion."
+        },
+        {
+          "q": "Pattern level",
+          "en": "",
+          "options": [
+            "intermediate",
+            "absolute-beginner",
+            "advanced only",
+            "honorific only"
+          ],
+          "answer": "intermediate",
+          "why": "Mid-level connector."
+        },
+        {
+          "q": "Example meaning",
+          "en": "",
+          "options": ["after eating", "opposite", "future only", "noun only"],
+          "answer": "after eating",
+          "why": "Sense of example."
+        },
+        {
+          "q": "Korean puts…",
+          "en": "",
+          "options": [
+            "verb last",
+            "verb first",
+            "topic first always",
+            "object last only"
+          ],
+          "answer": "verb last",
+          "why": "SOV."
+        },
+        {
+          "q": "Particle/end focus",
+          "en": "",
+          "options": ["-고", "-요 only", "English -ing", "none"],
+          "answer": "-고",
+          "why": "Lesson focus."
+        }
+      ]
+    },
+    {
+      "id": "while-neurado",
+      "title": "-는데 — background",
+      "particle": "-는데",
+      "summary": "Background in speech.",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Pattern in context: <b>-는데</b>. Example: 비가 오{는데}.",
+          "examples": [
+            ["비가 오는데", "…", "it is raining and…"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Fill: 비가 오＿는데",
+          "en": "",
+          "options": ["는데", "고", "면", "서"],
+          "answer": "는데",
+          "why": "Background."
+        },
+        {
+          "q": "Pattern level",
+          "en": "",
+          "options": [
+            "intermediate",
+            "absolute-beginner",
+            "advanced only",
+            "honorific only"
+          ],
+          "answer": "intermediate",
+          "why": "Mid-level connector."
+        },
+        {
+          "q": "Example meaning",
+          "en": "",
+          "options": ["it is raining and…", "opposite", "future only", "noun only"],
+          "answer": "it is raining and…",
+          "why": "Sense of example."
+        },
+        {
+          "q": "Korean puts…",
+          "en": "",
+          "options": [
+            "verb last",
+            "verb first",
+            "topic first always",
+            "object last only"
+          ],
+          "answer": "verb last",
+          "why": "SOV."
+        },
+        {
+          "q": "Particle/end focus",
+          "en": "",
+          "options": ["-는데", "-요 only", "English -ing", "none"],
+          "answer": "-는데",
+          "why": "Lesson focus."
+        }
+      ]
+    },
+    {
+      "id": "durak-eo",
+      "title": "-니까 — because",
+      "particle": "-니까",
+      "summary": "Reason you assume shared.",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Pattern in context: <b>-니까</b>. Example: 바쁘{니까}.",
+          "examples": [
+            ["바쁘니까", "…", "because busy"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Fill: 바쁘＿니까",
+          "en": "",
+          "options": ["니까", "고", "면", "서"],
+          "answer": "니까",
+          "why": "Reason."
+        },
+        {
+          "q": "Pattern level",
+          "en": "",
+          "options": [
+            "intermediate",
+            "absolute-beginner",
+            "advanced only",
+            "honorific only"
+          ],
+          "answer": "intermediate",
+          "why": "Mid-level connector."
+        },
+        {
+          "q": "Example meaning",
+          "en": "",
+          "options": ["because busy", "opposite", "future only", "noun only"],
+          "answer": "because busy",
+          "why": "Sense of example."
+        },
+        {
+          "q": "Korean puts…",
+          "en": "",
+          "options": [
+            "verb last",
+            "verb first",
+            "topic first always",
+            "object last only"
+          ],
+          "answer": "verb last",
+          "why": "SOV."
+        },
+        {
+          "q": "Particle/end focus",
+          "en": "",
+          "options": ["-니까", "-요 only", "English -ing", "none"],
+          "answer": "-니까",
+          "why": "Lesson focus."
+        }
+      ]
+    },
+    {
+      "id": "more-myeon",
+      "title": "-면 — if/when",
+      "particle": "-면",
+      "summary": "Condition.",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Pattern in context: <b>-면</b>. Example: 시간이 있{으면}.",
+          "examples": [
+            ["시간이 있으면", "…", "if there is time"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Fill: 시간이 있＿으면",
+          "en": "",
+          "options": ["으면", "면 wrong", "니까", "서"],
+          "answer": "으면",
+          "why": "Conditional."
+        },
+        {
+          "q": "Pattern level",
+          "en": "",
+          "options": [
+            "intermediate",
+            "absolute-beginner",
+            "advanced only",
+            "honorific only"
+          ],
+          "answer": "intermediate",
+          "why": "Mid-level connector."
+        },
+        {
+          "q": "Example meaning",
+          "en": "",
+          "options": ["if there is time", "opposite", "future only", "noun only"],
+          "answer": "if there is time",
+          "why": "Sense of example."
+        },
+        {
+          "q": "Korean puts…",
+          "en": "",
+          "options": [
+            "verb last",
+            "verb first",
+            "topic first always",
+            "object last only"
+          ],
+          "answer": "verb last",
+          "why": "SOV."
+        },
+        {
+          "q": "Particle/end focus",
+          "en": "",
+          "options": ["-면", "-요 only", "English -ing", "none"],
+          "answer": "-면",
+          "why": "Lesson focus."
+        }
+      ]
+    },
+    {
+      "id": "verb-noun",
+      "title": "-기 — nominalizer",
+      "particle": "-기",
+      "summary": "Verb as noun phrase.",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Pattern in context: <b>-기</b>. Example: {먹기}.",
+          "examples": [
+            ["먹기", "…", "eating"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Fill: ＿먹기",
+          "en": "",
+          "options": ["먹기", "먹어", "먹고", "먹은"],
+          "answer": "먹기",
+          "why": "Stem + 기."
+        },
+        {
+          "q": "Pattern level",
+          "en": "",
+          "options": [
+            "intermediate",
+            "absolute-beginner",
+            "advanced only",
+            "honorific only"
+          ],
+          "answer": "intermediate",
+          "why": "Mid-level connector."
+        },
+        {
+          "q": "Example meaning",
+          "en": "",
+          "options": ["eating", "opposite", "future only", "noun only"],
+          "answer": "eating",
+          "why": "Sense of example."
+        },
+        {
+          "q": "Korean puts…",
+          "en": "",
+          "options": [
+            "verb last",
+            "verb first",
+            "topic first always",
+            "object last only"
+          ],
+          "answer": "verb last",
+          "why": "SOV."
+        },
+        {
+          "q": "Particle/end focus",
+          "en": "",
+          "options": ["-기", "-요 only", "English -ing", "none"],
+          "answer": "-기",
+          "why": "Lesson focus."
+        }
+      ]
+    },
+    {
+      "id": "passive-ish",
+      "title": "Passive partners",
+      "particle": "-이/히",
+      "summary": "열리다 / 보이다 pairs.",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Pattern in context: <b>-이/히</b>. Example: 문이 {열렸어요}.",
+          "examples": [
+            ["문이 열렸어요", "…", "door opened"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Fill: 문이 ＿열렸어요",
+          "en": "",
+          "options": ["문이 열렸어요", "문을 열렸어요", "문이 열었어요", "문을 열어요"],
+          "answer": "문이 열렸어요",
+          "why": "Passive partner."
+        },
+        {
+          "q": "Pattern level",
+          "en": "",
+          "options": [
+            "intermediate",
+            "absolute-beginner",
+            "advanced only",
+            "honorific only"
+          ],
+          "answer": "intermediate",
+          "why": "Mid-level connector."
+        },
+        {
+          "q": "Example meaning",
+          "en": "",
+          "options": ["door opened", "opposite", "future only", "noun only"],
+          "answer": "door opened",
+          "why": "Sense of example."
+        },
+        {
+          "q": "Korean puts…",
+          "en": "",
+          "options": [
+            "verb last",
+            "verb first",
+            "topic first always",
+            "object last only"
+          ],
+          "answer": "verb last",
+          "why": "SOV."
+        },
+        {
+          "q": "Particle/end focus",
+          "en": "",
+          "options": ["-이/히", "-요 only", "English -ing", "none"],
+          "answer": "-이/히",
+          "why": "Lesson focus."
+        }
+      ]
+    },
+    {
+      "id": "honorific-gyesip",
+      "title": "-(으)시- honorific",
+      "particle": "-(으)시-",
+      "summary": "Respected subject in verb.",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Use <b>-(으)시-</b> for elder/subject honorific: 오{세요}.",
+          "examples": [
+            ["선생님이 오{셨어요}.", "Osyeosseoyo.", "The teacher came."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Teacher comes",
+          "en": "",
+          "options": ["오세요", "와요", "오고", "오니까"],
+          "answer": "오세요",
+          "why": "Honorific."
+        },
+        {
+          "q": "Never on yourself",
+          "en": "",
+          "options": ["저는 가세요 (wrong)", "선생님이 가세요", "할머니가 드세요", "사장님이 오세요"],
+          "answer": "저는 가세요 (wrong)",
+          "why": "Wrong for self."
+        },
+        {
+          "q": "Marks",
+          "en": "",
+          "options": ["respected subject", "object", "location", "yourself"],
+          "answer": "respected subject",
+          "why": "Subject honorific."
+        },
+        {
+          "q": "Consonant stem",
+          "en": "",
+          "options": ["-(으)시-", "always -시-", "-세요 only", "-ㅂ니다 only"],
+          "answer": "-(으)시-",
+          "why": "Batchim rule."
+        },
+        {
+          "q": "오셨어요",
+          "en": "",
+          "options": ["respected came", "I came", "will come", "please come"],
+          "answer": "respected came",
+          "why": "Honorific past."
+        }
+      ]
+    },
+    {
+      "id": "honorific-jusim",
+      "title": "주시다",
+      "particle": "주시다",
+      "summary": "Honorific giving.",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>주시다</b> honorific of 주다.",
+          "examples": [
+            ["선생님이 책을 {주셨어요}.", "Jusyeosseoyo.", "Teacher gave."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Teacher gave",
+          "en": "",
+          "options": ["주셨어요", "줬어요", "주세요", "주고"],
+          "answer": "주셨어요",
+          "why": "Honorific give."
+        },
+        {
+          "q": "도와 주세요",
+          "en": "",
+          "options": ["Please help (polite)", "I help you", "He helped", "Don't help"],
+          "answer": "Please help (polite)",
+          "why": "Polite favor."
+        },
+        {
+          "q": "Replaces",
+          "en": "",
+          "options": ["주다 for respected giver", "먹다", "가다", "있다"],
+          "answer": "주다 for respected giver",
+          "why": "Give."
+        },
+        {
+          "q": "Giver",
+          "en": "",
+          "options": ["teacher/elder", "yourself", "child only", "object"],
+          "answer": "teacher/elder",
+          "why": "Agent."
+        },
+        {
+          "q": "Object marker",
+          "en": "",
+          "options": ["을/를", "만", "도", "에서"],
+          "answer": "을/를",
+          "why": "Book object."
+        }
+      ]
+    },
+    {
+      "id": "honorific-drinks",
+      "title": "드시다",
+      "particle": "드시다",
+      "summary": "Honorific eat/drink.",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>드시다</b> replaces 먹다 for elders.",
+          "examples": [
+            ["할아버지가 밥을 {드세요}.", "Deuseyo.", "Grandfather eats."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Grandfather eats",
+          "en": "",
+          "options": ["드세요", "먹어요", "드리세요", "잡수세요"],
+          "answer": "드세요",
+          "why": "Honorific eat."
+        },
+        {
+          "q": "Replaces",
+          "en": "",
+          "options": ["먹다 for elder subject", "마시다 always", "하다", "가다"],
+          "answer": "먹다 for elder subject",
+          "why": "Eat."
+        },
+        {
+          "q": "Subject",
+          "en": "",
+          "options": ["할머니", "제가", "너", "친구"],
+          "answer": "할머니",
+          "why": "Elder."
+        },
+        {
+          "q": "Formal meal verb",
+          "en": "",
+          "options": ["잡수시다", "casual", "past only", "written only"],
+          "answer": "잡수시다",
+          "why": "Formal."
+        },
+        {
+          "q": "I eat plain",
+          "en": "",
+          "options": ["먹어요", "드세요", "잡수세요", "주세요"],
+          "answer": "먹어요",
+          "why": "Plain self."
+        }
+      ]
+    },
+    {
+      "id": "humble-bojigi",
+      "title": "드리다 / 여쭙다",
+      "particle": "드리다",
+      "summary": "Humble to elders.",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>드리다</b> humble give; <b>여쭙다</b> humble ask.",
+          "examples": [
+            ["선생님께 {드렸어요}.", "Deuryeosseoyo.", "I gave (humble)."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "I gave humble",
+          "en": "",
+          "options": ["드렸어요", "줬어요", "주셨어요", "드세요"],
+          "answer": "드렸어요",
+          "why": "Humble."
+        },
+        {
+          "q": "May I ask humble",
+          "en": "",
+          "options": ["여쭤봐도 될까요?", "Answer me.", "I told you.", "Don't ask."],
+          "answer": "여쭤봐도 될까요?",
+          "why": "Humble question."
+        },
+        {
+          "q": "Direction",
+          "en": "",
+          "options": [
+            "toward respected person",
+            "from teacher",
+            "objects only",
+            "past only"
+          ],
+          "answer": "toward respected person",
+          "why": "To elder."
+        },
+        {
+          "q": "Humble verb",
+          "en": "",
+          "options": ["드리다", "주다 to elder about self", "먹다 for elder", "가다 for elder"],
+          "answer": "드리다",
+          "why": "Humble."
+        },
+        {
+          "q": "To teacher giving",
+          "en": "",
+          "options": ["드리다", "주시다", "받다", "드시다"],
+          "answer": "드리다",
+          "why": "Speaker humble."
+        }
+      ]
+    },
+    {
+      "id": "nim-title",
+      "title": "-님 title",
+      "particle": "님",
+      "summary": "Respect on names/roles.",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>-님</b> after roles: 선생님, 사장님.",
+          "examples": [
+            ["{선생님}, 질문 있어요.", "Seonsaengnim…", "Teacher, a question."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Respectful teacher",
+          "en": "",
+          "options": ["선생님", "선생", "선생들", "선생이"],
+          "answer": "선생님",
+          "why": "님."
+        },
+        {
+          "q": "Attaches to",
+          "en": "",
+          "options": ["name or role", "verbs", "particles", "yourself"],
+          "answer": "name or role",
+          "why": "Title."
+        },
+        {
+          "q": "Polite address",
+          "en": "",
+          "options": ["어머님", "엄마 to stranger", "너", " 야"],
+          "answer": "어머님",
+          "why": "Formal."
+        },
+        {
+          "q": "사장님",
+          "en": "",
+          "options": ["boss (polite)", "employee", "student", "child"],
+          "answer": "boss (polite)",
+          "why": "Role."
+        },
+        {
+          "q": "Never",
+          "en": "",
+          "options": ["저님", "선생님", "사장님", "할머님"],
+          "answer": "저님",
+          "why": "No self honorific."
+        }
+      ]
+    },
+    {
+      "id": "kke-respect",
+      "title": "께 / 께서",
+      "particle": "께",
+      "summary": "Honorific particles.",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>께</b> to person; <b>께서</b> subject honorific.",
+          "examples": [
+            ["선생님{께} {드렸어요}.", "…", "To teacher (humble give)."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "To teacher particle",
+          "en": "",
+          "options": ["께", "에게", "한테", "에서"],
+          "answer": "께",
+          "why": "Honorific to."
+        },
+        {
+          "q": "께서 is",
+          "en": "",
+          "options": ["honorific subject", "object", "topic only", "past only"],
+          "answer": "honorific subject",
+          "why": "Subject."
+        },
+        {
+          "q": "선생님께 드렸어요",
+          "en": "",
+          "options": ["humble give + 께", "주셨어요", "먹었어요", "가세요"],
+          "answer": "humble give + 께",
+          "why": "Combo."
+        },
+        {
+          "q": "Honorific subject marker",
+          "en": "",
+          "options": ["께서", "이", "가", "은"],
+          "answer": "께서",
+          "why": "Replaces 이/가."
+        },
+        {
+          "q": "Friend plain",
+          "en": "",
+          "options": ["한테", "께", "께서", "님께서 only"],
+          "answer": "한테",
+          "why": "Plain."
+        }
+      ]
+    },
+    {
+      "id": "malssum",
+      "title": "말씀",
+      "particle": "말씀",
+      "summary": "Honorific speech word.",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>말씀</b> for respected speech.",
+          "examples": [
+            ["{말씀}해 주세요.", "Malssumhae juseyo.", "Please tell me."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Teacher spoke",
+          "en": "",
+          "options": ["말씀하셨어요", "말했어요", "말해요", "말씀드렸어요"],
+          "answer": "말씀하셨어요",
+          "why": "Honorific."
+        },
+        {
+          "q": "말씀하세요",
+          "en": "",
+          "options": ["Please speak (respect)", "I speak", "Don't speak", "plain"],
+          "answer": "Please speak (respect)",
+          "why": "Request."
+        },
+        {
+          "q": "Replaces",
+          "en": "",
+          "options": ["말 for respected speech", "물", "책", "학교"],
+          "answer": "말 for respected speech",
+          "why": "Speech noun."
+        },
+        {
+          "q": "Your story",
+          "en": "",
+          "options": ["말했어요", "말씀하셨어요", "드세요", "주세요"],
+          "answer": "말했어요",
+          "why": "Plain self."
+        },
+        {
+          "q": "Please tell me",
+          "en": "",
+          "options": ["말씀해 주세요", "말해 주세요 to CEO", "말씀하세요", "말했어요"],
+          "answer": "말씀해 주세요",
+          "why": "Polite."
+        }
+      ]
+    },
+    {
+      "id": "age-respect",
+      "title": "연세 / 성함",
+      "particle": "연세",
+      "summary": "Formal questions.",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Ask age with <b>연세</b>, name with <b>성함</b>.",
+          "examples": [
+            ["{연세}가 어떻게 되세요?", "…", "May I ask your age?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Formal age",
+          "en": "",
+          "options": ["연세", "나이 to CEO rude", "몇 살 to CEO", "번호"],
+          "answer": "연세",
+          "why": "Formal."
+        },
+        {
+          "q": "성함 is",
+          "en": "",
+          "options": ["honorific name", "age", "job", "address"],
+          "answer": "honorific name",
+          "why": "Name."
+        },
+        {
+          "q": "To CEO name",
+          "en": "",
+          "options": ["성함이 어떻게 되세요?", "이름이 뭐야?", "너 누구?", "몇 살?"],
+          "answer": "성함이 어떻게 되세요?",
+          "why": "Formal."
+        },
+        {
+          "q": "연세 replaces",
+          "en": "",
+          "options": ["나이 in formal speech", "물", "시", "집"],
+          "answer": "나이 in formal speech",
+          "why": "Age word."
+        },
+        {
+          "q": "어떻게 되세요",
+          "en": "",
+          "options": ["formal copula question", "only past", "commands", "slang"],
+          "answer": "formal copula question",
+          "why": "Formula."
+        }
+      ]
+    },
+    {
+      "id": "business-greet",
+      "title": "Business phrases",
+      "particle": "처음 뵙겠습니다",
+      "summary": "First meeting formal.",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>처음 뵙겠습니다</b>; <b>잘 부탁드립니다</b>.",
+          "examples": [
+            ["{처음 뵙겠습니다}.", "…", "Nice to meet you (formal)."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "First meeting formal",
+          "en": "",
+          "options": ["처음 뵙겠습니다", "안녕 only", "잘 가", "반가워"],
+          "answer": "처음 뵙겠습니다",
+          "why": "Business."
+        },
+        {
+          "q": "잘 부탁드립니다",
+          "en": "",
+          "options": ["starting cooperation", "ending", "coffee order", "goodbye"],
+          "answer": "starting cooperation",
+          "why": "Work together."
+        },
+        {
+          "q": "뵙겠습니다",
+          "en": "",
+          "options": ["humble meet/see", "plain 보다", "먹다", "가다"],
+          "answer": "humble meet/see",
+          "why": "Humble."
+        },
+        {
+          "q": "Cooperation phrase",
+          "en": "",
+          "options": ["잘 부탁드립니다", "잘 자", "맛있게", "안녕히"],
+          "answer": "잘 부탁드립니다",
+          "why": "Business."
+        },
+        {
+          "q": "Register",
+          "en": "",
+          "options": ["formal honorific", "slang", "only news", "only kids"],
+          "answer": "formal honorific",
+          "why": "Formal."
+        }
+      ]
+    },
+    {
+      "id": "plain-declare",
+      "title": "Plain -(ㄴ)다",
+      "particle": "-(ㄴ)다",
+      "summary": "Written blunt statement.",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "Plain present <b>-ㄴ다/-는다</b>.",
+          "examples": [
+            ["비가 온{다}.", "Onda.", "It rains."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "It rains plain",
+          "en": "",
+          "options": ["비가 온다", "비가 와요", "비가 옵니다", "비가 와서"],
+          "answer": "비가 온다",
+          "why": "Plain."
+        },
+        {
+          "q": "읽는다",
+          "en": "",
+          "options": ["consonant stem", "vowel only", "noun", "past"],
+          "answer": "consonant stem",
+          "why": "Consonant."
+        },
+        {
+          "q": "Appears in",
+          "en": "",
+          "options": [
+            "news and writing",
+            "only baby talk",
+            "only honorific",
+            "only questions"
+          ],
+          "answer": "news and writing",
+          "why": "Written."
+        },
+        {
+          "q": "Everyday polite",
+          "en": "",
+          "options": ["-아/어요", "-(ㄴ)다", "-ㅂ니다", "-시-"],
+          "answer": "-아/어요",
+          "why": "Contrast."
+        },
+        {
+          "q": "온다",
+          "en": "",
+          "options": ["plain present", "past", "future", "honorific"],
+          "answer": "plain present",
+          "why": "Present plain."
+        }
+      ]
+    },
+    {
+      "id": "formal-nida",
+      "title": "Formal -ㅂ니다",
+      "particle": "-ㅂ니다",
+      "summary": "Announcements.",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "Formal <b>-ㅂ니다/-습니다</b>.",
+          "examples": [
+            ["학교에 {갑니다}.", "Gamnida.", "I go (formal)."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Formal go",
+          "en": "",
+          "options": ["갑니다", "가요", "간다", "가세요"],
+          "answer": "갑니다",
+          "why": "Formal."
+        },
+        {
+          "q": "-습니다",
+          "en": "",
+          "options": ["consonant stem", "vowel only", "past only", "nouns"],
+          "answer": "consonant stem",
+          "why": "Consonant."
+        },
+        {
+          "q": "Formal question",
+          "en": "",
+          "options": ["-ㅂ니까 / -습니까", "-요?", "-다?", "-니?"],
+          "answer": "-ㅂ니까 / -습니까",
+          "why": "Question."
+        },
+        {
+          "q": "Station announcement",
+          "en": "",
+          "options": ["-ㅂ니다", "-ㅋㅋ", "-야", "-네"],
+          "answer": "-ㅂ니다",
+          "why": "Public."
+        },
+        {
+          "q": "드십니까",
+          "en": "",
+          "options": ["formal honorific eat Q", "plain", "past only", "written only"],
+          "answer": "formal honorific eat Q",
+          "why": "Formal honorific."
+        }
+      ]
+    },
+    {
+      "id": "passive-written",
+      "title": "Passive -되다",
+      "particle": "-되다",
+      "summary": "News passives.",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "News uses <b>-되다</b> passives.",
+          "examples": [
+            ["안건이 {통과}됐다.", "Tonggwadoetda.", "Bill passed."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Bill passed",
+          "en": "",
+          "options": ["통과됐다", "통과했다 active", "통과하다", "통과니까"],
+          "answer": "통과됐다",
+          "why": "Passive."
+        },
+        {
+          "q": "발표됐다",
+          "en": "",
+          "options": [
+            "was announced",
+            "announced actively",
+            "will announce",
+            "don't announce"
+          ],
+          "answer": "was announced",
+          "why": "Passive news."
+        },
+        {
+          "q": "Passive helper",
+          "en": "",
+          "options": ["되다", "하다 only", "있다", "싶다"],
+          "answer": "되다",
+          "why": "되다."
+        },
+        {
+          "q": "Active announce",
+          "en": "",
+          "options": ["발표했다", "발표됐다", "발표되다", "발표니까"],
+          "answer": "발표했다",
+          "why": "Active."
+        },
+        {
+          "q": "News prefers",
+          "en": "",
+          "options": ["plain past -됐다", "-어요", "-ㅋ", "-세요"],
+          "answer": "plain past -됐다",
+          "why": "Written plain."
+        }
+      ]
+    },
+    {
+      "id": "headline-style",
+      "title": "Headline omissions",
+      "particle": "headline",
+      "summary": "Telegraphic titles.",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "Headlines drop particles.",
+          "examples": [
+            ["정부, {새} 정책 발표", "…", "Government announces new policy."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Headlines omit",
+          "en": "",
+          "options": ["particles", "all verbs", "all nouns", "subjects"],
+          "answer": "particles",
+          "why": "Drop particles."
+        },
+        {
+          "q": "정부, 새 정책 발표",
+          "en": "",
+          "options": ["gov announces policy", "question", "spoken only", "past only"],
+          "answer": "gov announces policy",
+          "why": "Telegraphic."
+        },
+        {
+          "q": "Looks like headline",
+          "en": "",
+          "options": ["비, 전국 강수", "비가 전국에 강수합니다.", "비 와요", "비니까"],
+          "answer": "비, 전국 강수",
+          "why": "Comma style."
+        },
+        {
+          "q": "Full sentence adds",
+          "en": "",
+          "options": ["particles and endings", "English", "honorific only", "slang"],
+          "answer": "particles and endings",
+          "why": "Grammar."
+        },
+        {
+          "q": "Register",
+          "en": "",
+          "options": ["written news", "casual chat", "baby talk", "honorific speech"],
+          "answer": "written news",
+          "why": "News."
+        }
+      ]
+    },
+    {
+      "id": "formal-contrast-ya",
+      "title": "바로 / 즉",
+      "particle": "바로",
+      "summary": "Formal emphasis.",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>바로</b> precisely; <b>즉</b> that is.",
+          "examples": [
+            ["{바로} 그 지점이다.", "…", "That is the point."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Precisely that point",
+          "en": "",
+          "options": ["바로 그 지점", "그냥", "아주", "조금"],
+          "answer": "바로 그 지점",
+          "why": "바로."
+        },
+        {
+          "q": "즉 means",
+          "en": "",
+          "options": ["that is / i.e.", "because", "but", "if"],
+          "answer": "that is / i.e.",
+          "why": "Defines."
+        },
+        {
+          "q": "Formal emphasis",
+          "en": "",
+          "options": ["바로", "slang ya", "ㅋ", "음"],
+          "answer": "바로",
+          "why": "News."
+        },
+        {
+          "q": "Copula ending",
+          "en": "",
+          "options": ["plain -이다", "-예요", "-ㅂ니다 only", "-네"],
+          "answer": "plain -이다",
+          "why": "Plain."
+        },
+        {
+          "q": "Restate connector",
+          "en": "",
+          "options": ["즉", "그런데", "그리고", "그래서"],
+          "answer": "즉",
+          "why": "i.e."
+        }
+      ]
+    },
+    {
+      "id": "editorial-we",
+      "title": "Editorial judgment",
+      "particle": "것으로 보인다",
+      "summary": "Cautious stance.",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>…것으로 보인다</b>; <b>…알려졌다</b>.",
+          "examples": [
+            ["원인은 {실수}로 보인다.", "…", "Cause appears to be error."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Appears error",
+          "en": "",
+          "options": ["실수로 보인다", "실수다 only", "실수요", "실수니까"],
+          "answer": "실수로 보인다",
+          "why": "Tentative."
+        },
+        {
+          "q": "알려졌다",
+          "en": "",
+          "options": ["was reported", "I know", "definitely", "never"],
+          "answer": "was reported",
+          "why": "Reported."
+        },
+        {
+          "q": "Cautious judgment",
+          "en": "",
+          "options": ["-(으)로 보인다", "-고 싶다", "-ㅋ", "-야"],
+          "answer": "-(으)로 보인다",
+          "why": "Appears."
+        },
+        {
+          "q": "알려졌다 structure",
+          "en": "",
+          "options": ["reported to be", "command", "question", "honorific only"],
+          "answer": "reported to be",
+          "why": "Indirect."
+        },
+        {
+          "q": "Tone",
+          "en": "",
+          "options": ["plain written", "casual", "emoji", "spoken only"],
+          "answer": "plain written",
+          "why": "News."
+        }
+      ]
+    },
+    {
+      "id": "relative-clause",
+      "title": "Relative -(으)ㄴ / -는",
+      "particle": "-(으)ㄴ",
+      "summary": "Modify nouns.",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "Modifiers before nouns: <b>읽는 책</b>.",
+          "examples": [
+            ["{읽는} 책", "Ingneun chaek", "book being read"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Book being read",
+          "en": "",
+          "options": ["읽는 책", "읽기 책", "읽고 책", "읽어 책"],
+          "answer": "읽는 책",
+          "why": "Relative -는."
+        },
+        {
+          "q": "좋은 날",
+          "en": "",
+          "options": ["adjective -(으)ㄴ", "-는 only", "-기", "-고"],
+          "answer": "adjective -(으)ㄴ",
+          "why": "Adjective mod."
+        },
+        {
+          "q": "Modifier position",
+          "en": "",
+          "options": ["before noun", "after verb", "end", "speech only"],
+          "answer": "before noun",
+          "why": "Pre-noun."
+        },
+        {
+          "q": "읽는",
+          "en": "",
+          "options": ["present modifier", "past", "future", "nominalizer"],
+          "answer": "present modifier",
+          "why": "Modifier."
+        },
+        {
+          "q": "Full sentence",
+          "en": "",
+          "options": ["verb last", "noun last", "modifier last", "particle first"],
+          "answer": "verb last",
+          "why": "SOV."
+        }
+      ]
+    },
+    {
+      "id": "formal-because-muro",
+      "title": "Formal -(으)므로",
+      "particle": "-(으)므로",
+      "summary": "Official notices.",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "Notices use <b>-(으)므로</b>.",
+          "examples": [
+            ["이용이 제한되므로 양해 바랍니다.", "…", "Use restricted, please understand."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Formal because",
+          "en": "",
+          "options": ["-(으)므로", "-아서 only", "-니까 only", "-고"],
+          "answer": "-(으)므로",
+          "why": "Written reason."
+        },
+        {
+          "q": "양해 바랍니다",
+          "en": "",
+          "options": ["please understand (formal)", "hello", "goodbye", "thanks"],
+          "answer": "please understand (formal)",
+          "why": "Formal."
+        },
+        {
+          "q": "Notice style",
+          "en": "",
+          "options": ["plain + formal endings", "-ㅋ", "-야", "-네 only"],
+          "answer": "plain + formal endings",
+          "why": "Official."
+        },
+        {
+          "q": "제한되므로",
+          "en": "",
+          "options": ["because restricted", "if use", "although", "after"],
+          "answer": "because restricted",
+          "why": "Reason."
+        },
+        {
+          "q": "Casual because",
+          "en": "",
+          "options": ["-아/어서", "-(으)므로 in chat", "-ㅂ니다", "-다니까 always"],
+          "answer": "-아/어서",
+          "why": "Speech vs notice."
+        }
+      ]
+    },
+    {
+      "id": "written-quote-da",
+      "title": "Plain quoting -다고",
+      "particle": "-다고",
+      "summary": "Written reports.",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "Plain reports use <b>-다고</b> with plain matrix.",
+          "examples": [
+            ["정부는 정책을 발표{한다고} 밝혔다.", "…", "Gov said it will announce."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Gov said announce",
+          "en": "",
+          "options": ["한다고", "해요", "하세요", "하니까"],
+          "answer": "한다고",
+          "why": "Plain quote."
+        },
+        {
+          "q": "Matrix verb",
+          "en": "",
+          "options": ["plain past 밝혔다", "-어요", "-ㅂ니다", "-시-"],
+          "answer": "plain past 밝혔다",
+          "why": "Written."
+        },
+        {
+          "q": "Quote marker",
+          "en": "",
+          "options": ["-다고", "-라고 only always", "-고 only", "-면"],
+          "answer": "-다고",
+          "why": "Indirect."
+        },
+        {
+          "q": "Register pair",
+          "en": "",
+          "options": ["plain + plain", "해요 + plain", "honorific mix", "slang"],
+          "answer": "plain + plain",
+          "why": "News."
+        },
+        {
+          "q": "Lesson focus",
+          "en": "",
+          "options": ["written reporting", "spoken only", "Hangul only", "numbers"],
+          "answer": "written reporting",
+          "why": "Advanced writing."
+        }
+      ]
+    }
+  ]
+}

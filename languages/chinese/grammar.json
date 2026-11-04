@@ -1,0 +1,869 @@
+{
+  "schema": "grammar@1",
+  "language": "chinese",
+  "notes": [
+    "Mandarin Chinese first grammar for the Grammar Learner. Written for this project.",
+    "Examples are [characters, pinyin, English]; {braces} mark the point of the lesson.",
+    "Drills are { q, en, options, answer, why }; ＿ is the blank.",
+    "",
+    "Sources (open / educational; attested textbook constructions — original example sentences):",
+    "- Li, Charles N. & Thompson, Sandra A. (1981), Mandarin Chinese: A Functional Reference",
+    "  Grammar (University of California Press): 了 aspect/change, 在 location and progressive,",
+    "  会/能/可以 ability and permission, 过 experiential, 比 comparatives.",
+    "- Wiktionary Mandarin entries and Chinese grammar lemmas (CC BY-SA): 了, 在, 正在, 会,",
+    "  能, 可以, 想, 要, 过, 比, 没有, measure words, 的.",
+    "- Wikipedia “Chinese grammar” / “Chinese particles” (CC BY-SA) for particle overview.",
+    "- HSK Standard Course vocabulary bands 1–2 for common lemma choice only (examples original).",
+    "Lessons 1–6 unchanged; 7–12 deepen the same beginner seam (aspect, place, modals, want,",
+    "experience, comparison). Pinyin marks tones; tone sandhi is written as spoken (bú shì, etc.)."
+  ],
+  "title": "Mandarin first grammar",
+  "intro": "Chinese words never change their form: there are no endings for tense, number or gender. Meaning is carried by word order and by a handful of small words. Lessons 1–6 cover 是, 很 with adjectives, 不 and 没, 吗, 的, and measure words. Lessons 7–12 add 了, 在, 会・能・可以, 想・要, 过, and 比.",
+  "lessons": [
+    {
+      "id": "shi",
+      "title": "是 — “to be” between nouns",
+      "particle": "是",
+      "summary": "A is B, when B is a noun.",
+      "sections": [
+        {
+          "p": "<b>是</b> (shì) links two nouns: “I am a student”, “this is tea”. It never changes: 我是, 你是, 他是 are all just 是. Chinese has no “a” or “the”.",
+          "examples": [
+            ["我{是}学生。", "Wǒ shì xuésheng.", "I am a student."],
+            ["他{是}老师。", "Tā shì lǎoshī.", "He is a teacher."],
+            ["这{是}茶。", "Zhè shì chá.", "This is tea."]
+          ]
+        },
+        {
+          "h": "Not with adjectives",
+          "p": "是 is only for nouns. “I am tired” or “she is tall” do not use 是; the next lesson shows how they work.",
+          "examples": [
+            ["我{是}中国人。", "Wǒ shì Zhōngguó rén.", "I am Chinese."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我＿医生。",
+          "en": "I am a doctor.",
+          "options": ["是", "很", "的", "有"],
+          "answer": "是",
+          "why": "医生 (doctor) is a noun, so it is linked with 是."
+        },
+        {
+          "q": "她＿我的朋友。",
+          "en": "She is my friend.",
+          "options": ["是", "很", "吗", "不"],
+          "answer": "是",
+          "why": "朋友 is a noun: 是."
+        },
+        {
+          "q": "How do you say “they are teachers”?",
+          "en": "他们 = they",
+          "options": ["他们是老师。", "他们是老师们是。", "他们老师是。", "是他们老师。"],
+          "answer": "他们是老师。",
+          "why": "Subject + 是 + noun. 是 never changes."
+        },
+        {
+          "q": "What does 这是水 mean?",
+          "en": "水 = water",
+          "options": [
+            "This is water.",
+            "This water.",
+            "Is this water?",
+            "Water is here."
+          ],
+          "answer": "This is water.",
+          "why": "这 (this) + 是 (is) + 水 (water)."
+        },
+        {
+          "q": "Which sentence is wrong?",
+          "en": "",
+          "options": ["我是累。", "我是美国人。", "这是书。", "他是哥哥。"],
+          "answer": "我是累。",
+          "why": "累 (tired) is an adjective, so 是 is not used: 我很累."
+        }
+      ]
+    },
+    {
+      "id": "hen",
+      "title": "很 — adjectives without “is”",
+      "particle": "很",
+      "summary": "Adjectives act like verbs; 很 fills the gap.",
+      "sections": [
+        {
+          "p": "An adjective follows the subject directly, with no 是. In a plain statement Chinese puts <b>很</b> (hěn) in front of it. 很 literally means “very”, but here it is so weak that 我很好 is just “I'm fine”.",
+          "examples": [
+            ["我{很}好。", "Wǒ hěn hǎo.", "I'm well."],
+            ["今天{很}冷。", "Jīntiān hěn lěng.", "It's cold today."],
+            ["这个{很}贵。", "Zhège hěn guì.", "This one is expensive."]
+          ]
+        },
+        {
+          "h": "Stronger than 很",
+          "p": "For a real “very”, use 非常 (fēicháng) or 太…了 (tài…le, “too”, often just “so”).",
+          "examples": [
+            [
+              "汉语{非常}有意思。",
+              "Hànyǔ fēicháng yǒuyìsi.",
+              "Chinese is really interesting."
+            ],
+            ["{太}好{了}！", "Tài hǎo le!", "Great!"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "她＿高。",
+          "en": "She is tall.",
+          "options": ["很", "是", "的", "吗"],
+          "answer": "很",
+          "why": "高 (tall) is an adjective: subject + 很 + adjective, no 是."
+        },
+        {
+          "q": "How do you say “I'm busy”?",
+          "en": "忙 = busy",
+          "options": ["我很忙。", "我是忙。", "我忙是。", "我的忙。"],
+          "answer": "我很忙。",
+          "why": "Adjectives take 很, not 是."
+        },
+        {
+          "q": "What does 天气很热 mean?",
+          "en": "天气 = weather, 热 = hot",
+          "options": [
+            "The weather is hot.",
+            "The weather is very, very hot.",
+            "Is the weather hot?",
+            "Hot weather."
+          ],
+          "answer": "The weather is hot.",
+          "why": "很 is the normal link with an adjective; it hardly adds “very”."
+        },
+        {
+          "q": "＿贵了！",
+          "en": "That's far too expensive!",
+          "options": ["太", "很", "是", "不"],
+          "answer": "太",
+          "why": "太…了 means “too…” or “so…”."
+        },
+        {
+          "q": "Which sentence is right?",
+          "en": "My room is small.",
+          "options": ["我的房间很小。", "我的房间是小。", "我的房间小是。", "我是房间小。"],
+          "answer": "我的房间很小。",
+          "why": "小 is an adjective, so 很 + 小."
+        }
+      ]
+    },
+    {
+      "id": "bu-mei",
+      "title": "不 and 没 — saying no",
+      "particle": "不・没",
+      "summary": "不 for now, habits and wishes; 没 for “have” and the past.",
+      "sections": [
+        {
+          "p": "<b>不</b> (bù) goes before a verb or adjective to deny it in the present or future, or as a habit or choice.",
+          "examples": [
+            ["我{不}是老师。", "Wǒ bú shì lǎoshī.", "I'm not a teacher."],
+            ["我{不}喝咖啡。", "Wǒ bù hē kāfēi.", "I don't drink coffee."],
+            ["今天{不}冷。", "Jīntiān bù lěng.", "It isn't cold today."]
+          ]
+        },
+        {
+          "h": "没 for having and for the past",
+          "p": "<b>没</b> (méi) is the only negative of 有 (to have, there is): 没有. It also says something did not happen. 不 becomes bú before a fourth tone, as in 不是.",
+          "examples": [
+            ["我{没}有钱。", "Wǒ méiyǒu qián.", "I have no money."],
+            ["他昨天{没}来。", "Tā zuótiān méi lái.", "He didn't come yesterday."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我＿有时间。",
+          "en": "I don't have time.",
+          "options": ["没", "不", "很", "是"],
+          "answer": "没",
+          "why": "有 is always denied with 没: 没有."
+        },
+        {
+          "q": "她＿吃肉。",
+          "en": "She doesn't eat meat. (ever)",
+          "options": ["不", "没", "很", "吗"],
+          "answer": "不",
+          "why": "A habit or choice: 不."
+        },
+        {
+          "q": "我昨天＿去。",
+          "en": "I didn't go yesterday.",
+          "options": ["没", "不", "是", "很"],
+          "answer": "没",
+          "why": "Something that did not happen in the past: 没."
+        },
+        {
+          "q": "这＿是我的。",
+          "en": "This isn't mine.",
+          "options": ["不", "没", "很", "的"],
+          "answer": "不",
+          "why": "是 is denied with 不 (said bú before the fourth tone of shì)."
+        },
+        {
+          "q": "我明天＿去。",
+          "en": "I won't go tomorrow.",
+          "options": ["不", "没", "了", "很"],
+          "answer": "不",
+          "why": "The future, or a decision: 不."
+        },
+        {
+          "q": "How is 不 said in 不是?",
+          "en": "",
+          "options": ["bú", "bù", "bǔ", "bū"],
+          "answer": "bú",
+          "why": "Before a fourth tone (shì), 不 changes to the second tone."
+        }
+      ]
+    },
+    {
+      "id": "ma",
+      "title": "吗 — yes/no questions",
+      "particle": "吗",
+      "summary": "Add 吗 to the end of a statement.",
+      "sections": [
+        {
+          "p": "To make a yes/no question, put <b>吗</b> (ma) at the end of the statement. Nothing else moves. Answer by repeating the verb, or its negative: 是 / 不是, 有 / 没有.",
+          "examples": [
+            ["你是学生{吗}？", "Nǐ shì xuésheng ma?", "Are you a student?"],
+            ["你喜欢茶{吗}？", "Nǐ xǐhuan chá ma?", "Do you like tea?"],
+            ["你有哥哥{吗}？", "Nǐ yǒu gēge ma?", "Do you have an older brother?"]
+          ]
+        },
+        {
+          "h": "Question words stay in place",
+          "p": "With 什么 (what), 谁 (who), 哪儿 (where), the question word sits where the answer would go, and 吗 is not used.",
+          "examples": [
+            ["你叫{什么}名字？", "Nǐ jiào shénme míngzi?", "What's your name?"],
+            ["厕所在{哪儿}？", "Cèsuǒ zài nǎr?", "Where is the toilet?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "你忙＿？",
+          "en": "Are you busy?",
+          "options": ["吗", "的", "很", "不"],
+          "answer": "吗",
+          "why": "A yes/no question ends in 吗."
+        },
+        {
+          "q": "How do you ask “Is he Chinese?”",
+          "en": "",
+          "options": ["他是中国人吗？", "吗他是中国人？", "他吗是中国人？", "他是吗中国人？"],
+          "answer": "他是中国人吗？",
+          "why": "吗 goes at the very end; the rest stays as a statement."
+        },
+        {
+          "q": "你喜欢咖啡吗？ — Yes.",
+          "en": "Do you like coffee?",
+          "options": ["喜欢。", "是。", "吗。", "很。"],
+          "answer": "喜欢。",
+          "why": "Answer “yes” by repeating the verb."
+        },
+        {
+          "q": "Which question is wrong?",
+          "en": "",
+          "options": ["你叫什么名字吗？", "你叫什么名字？", "你是老师吗？", "他在哪儿？"],
+          "answer": "你叫什么名字吗？",
+          "why": "With a question word like 什么, 吗 is left out."
+        },
+        {
+          "q": "你有车吗？ — No.",
+          "en": "Do you have a car?",
+          "options": ["没有。", "不有。", "不是。", "没是。"],
+          "answer": "没有。",
+          "why": "有 is denied with 没: 没有."
+        }
+      ]
+    },
+    {
+      "id": "de",
+      "title": "的 — of, ’s and describing",
+      "particle": "的",
+      "summary": "The describer comes first, then 的, then the thing.",
+      "sections": [
+        {
+          "p": "<b>的</b> (de) joins a describer to a noun, the describer first: 我的书 “my book”, 老师的车 “the teacher's car”. It works like English ’s, but for everything.",
+          "examples": [
+            ["我{的}书", "wǒ de shū", "my book"],
+            ["妈妈{的}手机", "māma de shǒujī", "Mum's phone"],
+            ["很贵{的}衣服", "hěn guì de yīfu", "very expensive clothes"]
+          ]
+        },
+        {
+          "h": "When 的 is left out",
+          "p": "With close family, and in fixed pairs, 的 is usually dropped: 我妈妈 (my mum), 中国人 (a Chinese person).",
+          "examples": [
+            ["我妈妈", "wǒ māma", "my mum"],
+            ["这本书是{我的}。", "Zhè běn shū shì wǒ de.", "This book is mine."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "这是你＿茶。",
+          "en": "This is your tea.",
+          "options": ["的", "吗", "很", "是"],
+          "answer": "的",
+          "why": "你 + 的 + 茶: your tea."
+        },
+        {
+          "q": "How do you say “my friend's house”?",
+          "en": "朋友 = friend, 家 = home",
+          "options": ["我朋友的家", "家的我朋友", "我的家朋友", "朋友我的家"],
+          "answer": "我朋友的家",
+          "why": "The owner comes first, then 的, then the thing."
+        },
+        {
+          "q": "What does 这是他的 mean?",
+          "en": "",
+          "options": ["This is his.", "This is him.", "Is this his?", "He has this."],
+          "answer": "This is his.",
+          "why": "他的 alone means “his”."
+        },
+        {
+          "q": "Which is the most natural way to say “my dad”?",
+          "en": "爸爸 = dad",
+          "options": ["我爸爸", "爸爸我", "爸爸的我", "我是爸爸"],
+          "answer": "我爸爸",
+          "why": "With close family, 的 is usually dropped."
+        },
+        {
+          "q": "红色＿车",
+          "en": "a red car",
+          "options": ["的", "吗", "了", "不"],
+          "answer": "的",
+          "why": "A describer + 的 + noun."
+        }
+      ]
+    },
+    {
+      "id": "measure",
+      "title": "Measure words",
+      "particle": "个 本 杯",
+      "summary": "Between a number and a noun there is always a measure word.",
+      "sections": [
+        {
+          "p": "You cannot say “three books” directly. A <b>measure word</b> goes between the number (or 这 this, 那 that) and the noun. <b>个</b> (gè) is the general one and is always understood.",
+          "examples": [
+            ["一{个}人", "yí ge rén", "one person"],
+            ["三{本}书", "sān běn shū", "three books"],
+            ["两{杯}咖啡", "liǎng bēi kāfēi", "two cups of coffee"],
+            ["这{个}", "zhège", "this one"]
+          ]
+        },
+        {
+          "h": "Two is 两",
+          "p": "Before a measure word, “two” is <b>两</b> (liǎng), not 二. Other common measure words: 张 (zhāng) for flat things, 只 (zhī) for many animals, 件 (jiàn) for clothes and matters.",
+          "examples": [
+            ["{两}张票", "liǎng zhāng piào", "two tickets"],
+            ["一{只}猫", "yì zhī māo", "a cat"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我有三＿朋友。",
+          "en": "I have three friends.",
+          "options": ["个", "本", "杯", "的"],
+          "answer": "个",
+          "why": "个 is the measure word for people (and the general one)."
+        },
+        {
+          "q": "一＿书",
+          "en": "one book",
+          "options": ["本", "杯", "张", "只"],
+          "answer": "本",
+          "why": "本 is for books and bound things."
+        },
+        {
+          "q": "＿杯茶",
+          "en": "two cups of tea",
+          "options": ["两", "二", "二个", "两个"],
+          "answer": "两",
+          "why": "Before a measure word, two is 两."
+        },
+        {
+          "q": "How do you say “this person”?",
+          "en": "",
+          "options": ["这个人", "这人个", "个这人", "这的人"],
+          "answer": "这个人",
+          "why": "这 + measure word + noun."
+        },
+        {
+          "q": "一＿票",
+          "en": "one ticket",
+          "options": ["张", "本", "只", "杯"],
+          "answer": "张",
+          "why": "张 is for flat things: tickets, paper, tables."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": ["三书", "三本书", "三个人", "一杯水"],
+          "answer": "三书",
+          "why": "A number cannot go straight onto a noun: 三本书."
+        }
+      ]
+    },
+    {
+      "id": "le",
+      "title": "了 — done, or a new situation",
+      "particle": "了",
+      "summary": "After the verb for “already happened”; at the end for a change.",
+      "sections": [
+        {
+          "p": "<b>了</b> (le) after a verb marks that the action is complete: 我吃了 “I ate / I’ve eaten”. Time words like 昨天 (yesterday) often sit with it, but 了 itself is not past tense — it is aspect.",
+          "examples": [
+            ["我吃{了}饭。", "Wǒ chī le fàn.", "I've eaten (a meal)."],
+            ["他买{了}一本书。", "Tā mǎi le yì běn shū.", "He bought a book."],
+            [
+              "我昨天看{了}电影。",
+              "Wǒ zuótiān kàn le diànyǐng.",
+              "I watched a film yesterday."
+            ]
+          ]
+        },
+        {
+          "h": "Sentence-final 了 — a new situation",
+          "p": "了 at the end of the sentence often marks a change of state: 下雨了 “it’s raining (now)”, 我累了 “I’m tired (now)”. Negating a completed action uses 没, not 不了: 我没吃.",
+          "examples": [
+            ["下雨{了}。", "Xià yǔ le.", "It's raining (now)."],
+            ["我累{了}。", "Wǒ lèi le.", "I'm tired (now)."],
+            ["我{没}吃。", "Wǒ méi chī.", "I didn't eat / haven't eaten."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我看＿这本书。",
+          "en": "I've read this book. (finished)",
+          "options": ["了", "过", "的", "吗"],
+          "answer": "了",
+          "why": "Verb + 了 marks a completed action."
+        },
+        {
+          "q": "How do you say “She bought coffee”?",
+          "en": "买 = buy",
+          "options": ["她买了咖啡。", "她买过咖啡了是。", "她是买咖啡。", "她买咖啡了没。"],
+          "answer": "她买了咖啡。",
+          "why": "买 + 了 + object."
+        },
+        {
+          "q": "下雨＿。",
+          "en": "It's raining now (it wasn't before).",
+          "options": ["了", "吗", "的", "很"],
+          "answer": "了",
+          "why": "Sentence-final 了 marks a new situation."
+        },
+        {
+          "q": "我昨天＿去。",
+          "en": "I didn't go yesterday.",
+          "options": ["没", "不", "了", "很"],
+          "answer": "没",
+          "why": "A past event that did not happen: 没, not 不."
+        },
+        {
+          "q": "What does 我好了 mean?",
+          "en": "",
+          "options": [
+            "I'm fine now / I'm better.",
+            "I am always fine.",
+            "Was I fine?",
+            "I will be fine."
+          ],
+          "answer": "I'm fine now / I'm better.",
+          "why": "Final 了: a change — now I'm fine (again)."
+        },
+        {
+          "q": "Which is wrong for “I haven't eaten”?",
+          "en": "",
+          "options": ["我不吃了饭。", "我没吃饭。", "我没吃。", "我还没吃。"],
+          "answer": "我不吃了饭。",
+          "why": "Completed action denied with 没; 不 + 了 is not the pattern here."
+        }
+      ]
+    },
+    {
+      "id": "zai",
+      "title": "在 — where, and “-ing”",
+      "particle": "在",
+      "summary": "Place with 在; ongoing action with 在 / 正在.",
+      "sections": [
+        {
+          "p": "<b>在</b> (zài) before a place means “at / in / on”: 我在家 “I’m at home”. The place comes right after 在, before the rest of the sentence.",
+          "examples": [
+            ["我{在}家。", "Wǒ zài jiā.", "I'm at home."],
+            ["书{在}桌子上。", "Shū zài zhuōzi shàng.", "The book is on the table."],
+            ["他{在}北京工作。", "Tā zài Běijīng gōngzuò.", "He works in Beijing."]
+          ]
+        },
+        {
+          "h": "在 / 正在 + verb — happening now",
+          "p": "在 or 正在 before a verb marks an action in progress: 我在看书 “I’m reading”. 正在 is a little stronger. Do not put 了 after a plain progressive 在 + verb.",
+          "examples": [
+            ["我{在}看书。", "Wǒ zài kàn shū.", "I'm reading."],
+            [
+              "她{正在}打电话。",
+              "Tā zhèngzài dǎ diànhuà.",
+              "She's on the phone right now."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我＿学校。",
+          "en": "I'm at school.",
+          "options": ["在", "是", "的", "了"],
+          "answer": "在",
+          "why": "Place after 在: 在 + place."
+        },
+        {
+          "q": "How do you say “The keys are on the table”?",
+          "en": "钥匙 = keys, 桌子上 = on the table",
+          "options": ["钥匙在桌子上。", "钥匙是桌子上。", "钥匙桌子上在。", "在钥匙桌子上。"],
+          "answer": "钥匙在桌子上。",
+          "why": "Thing + 在 + place."
+        },
+        {
+          "q": "他＿吃饭。",
+          "en": "He's eating (right now).",
+          "options": ["在", "了", "过", "的"],
+          "answer": "在",
+          "why": "在 + verb = action in progress."
+        },
+        {
+          "q": "What does 我在学习汉语 mean?",
+          "en": "",
+          "options": [
+            "I'm studying Chinese.",
+            "I studied Chinese.",
+            "I will study Chinese.",
+            "I can study Chinese."
+          ],
+          "answer": "I'm studying Chinese.",
+          "why": "在 + 学习: progressive."
+        },
+        {
+          "q": "Which sentence is right?",
+          "en": "She's working in Shanghai.",
+          "options": ["她在上海工作。", "她工作在上海是。", "她是在工作上海。", "她上海在工作了过。"],
+          "answer": "她在上海工作。",
+          "why": "在 + place + verb."
+        }
+      ]
+    },
+    {
+      "id": "hui-neng-keyi",
+      "title": "会・能・可以 — can and may",
+      "particle": "会・能・可以",
+      "summary": "会 for skill or future; 能 for ability; 可以 for permission.",
+      "sections": [
+        {
+          "p": "<b>会</b> (huì) is “know how to” after learning a skill, and also a soft “will” for the future: 我会说中文, 明天会下雨. <b>能</b> (néng) is “be able to” — capacity or circumstance: 我能去.",
+          "examples": [
+            ["我{会}说中文。", "Wǒ huì shuō Zhōngwén.", "I can speak Chinese."],
+            ["明天{会}下雨。", "Míngtiān huì xià yǔ.", "It will rain tomorrow."],
+            ["我今天{能}去。", "Wǒ jīntiān néng qù.", "I can go today."]
+          ]
+        },
+        {
+          "h": "可以 — allowed to",
+          "p": "<b>可以</b> (kěyǐ) asks or gives permission: 我可以进来吗？ “May I come in?”. Negatives: 不会 / 不能 / 不可以. 不能 and 不可以 often overlap for “mustn’t / can’t”.",
+          "examples": [
+            ["我{可以}坐这儿吗？", "Wǒ kěyǐ zuò zhèr ma?", "May I sit here?"],
+            ["这儿{不}可以停车。", "Zhèr bù kěyǐ tíng chē.", "You can't park here."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我＿游泳。",
+          "en": "I can swim. (I learned how)",
+          "options": ["会", "在", "了", "的"],
+          "answer": "会",
+          "why": "A learned skill: 会."
+        },
+        {
+          "q": "明天＿下雨吗？",
+          "en": "Will it rain tomorrow?",
+          "options": ["会", "能", "过", "很"],
+          "answer": "会",
+          "why": "会 also marks a likely future."
+        },
+        {
+          "q": "我病了，不＿去。",
+          "en": "I'm ill, so I can't go.",
+          "options": ["能", "会", "的", "吗"],
+          "answer": "能",
+          "why": "Circumstance blocks ability: 不能."
+        },
+        {
+          "q": "How do you ask “May I look?”?",
+          "en": "看 = look",
+          "options": ["我可以看吗？", "我会看吗了？", "我能过看？", "我看可以是吗？"],
+          "answer": "我可以看吗？",
+          "why": "Permission: 可以 + verb + 吗."
+        },
+        {
+          "q": "What does 他会开车 mean?",
+          "en": "开 = drive",
+          "options": [
+            "He can drive / knows how to drive.",
+            "He is driving now.",
+            "He drove once.",
+            "He may please drive."
+          ],
+          "answer": "He can drive / knows how to drive.",
+          "why": "会 + skill verb."
+        },
+        {
+          "q": "这儿＿抽烟。",
+          "en": "You may not smoke here.",
+          "options": ["不可以", "不会", "没有", "不是"],
+          "answer": "不可以",
+          "why": "不可以 denies permission."
+        }
+      ]
+    },
+    {
+      "id": "xiang-yao",
+      "title": "想 and 要 — want, feel like, going to",
+      "particle": "想・要",
+      "summary": "想 for “feel like / think”; 要 for “want” and near future.",
+      "sections": [
+        {
+          "p": "<b>想</b> (xiǎng) before a verb is “would like to / feel like”: 我想喝茶. Alone it also means “to miss” or “to think”: 我想你, 我想他是对的.",
+          "examples": [
+            ["我{想}喝茶。", "Wǒ xiǎng hē chá.", "I'd like some tea."],
+            ["我{想}回家。", "Wǒ xiǎng huí jiā.", "I want to go home."],
+            ["你{想}什么？", "Nǐ xiǎng shénme?", "What are you thinking?"]
+          ]
+        },
+        {
+          "h": "要 — want, need, about to",
+          "p": "<b>要</b> (yào) is a stronger “want” or “need”, and with a time word it often means “be going to”: 我要走了 “I’m about to leave”. 不要 is “don’t (do)…”.",
+          "examples": [
+            ["我{要}一杯水。", "Wǒ yào yì bēi shuǐ.", "I want a glass of water."],
+            ["我{要}走了。", "Wǒ yào zǒu le.", "I'm about to leave."],
+            ["{不要}着急。", "Bú yào zhāojí.", "Don't worry / don't rush."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我＿睡觉。",
+          "en": "I'd like to sleep / I feel like sleeping.",
+          "options": ["想", "在", "了", "的"],
+          "answer": "想",
+          "why": "想 + verb = feel like doing."
+        },
+        {
+          "q": "How do you say “I want two tickets”?",
+          "en": "票 = ticket",
+          "options": ["我要两张票。", "我想两张票是。", "我两张票要了。", "我过要两票。"],
+          "answer": "我要两张票。",
+          "why": "要 + noun for ordering or wanting something."
+        },
+        {
+          "q": "＿关门！",
+          "en": "Don't close the door!",
+          "options": ["不要", "不想", "没有", "不会"],
+          "answer": "不要",
+          "why": "不要 + verb = don't…"
+        },
+        {
+          "q": "What does 我要出发了 mean?",
+          "en": "出发 = set off",
+          "options": [
+            "I'm about to set off.",
+            "I set off yesterday.",
+            "I can set off.",
+            "May I set off?"
+          ],
+          "answer": "I'm about to set off.",
+          "why": "要…了 marks a near future / about to."
+        },
+        {
+          "q": "你＿去哪儿？",
+          "en": "Where would you like to go?",
+          "options": ["想", "了", "过", "吗"],
+          "answer": "想",
+          "why": "想 + verb for a preference."
+        }
+      ]
+    },
+    {
+      "id": "guo",
+      "title": "过 — have (ever) done",
+      "particle": "过",
+      "summary": "Verb + 过 for experience at some time before now.",
+      "sections": [
+        {
+          "p": "<b>过</b> (guo, neutral tone) after a verb marks experience: you have done it at least once. 我去过中国 “I’ve been to China”. It is not the same as 了, which focuses on a completed instance.",
+          "examples": [
+            ["我去{过}中国。", "Wǒ qù guo Zhōngguó.", "I've been to China."],
+            [
+              "你看{过}这部电影吗？",
+              "Nǐ kàn guo zhè bù diànyǐng ma?",
+              "Have you seen this film?"
+            ],
+            [
+              "我吃{过}北京烤鸭。",
+              "Wǒ chī guo Běijīng kǎoyā.",
+              "I've eaten Peking duck."
+            ]
+          ]
+        },
+        {
+          "h": "没…过 — never (yet)",
+          "p": "Deny experience with 没…过: 我没去过 “I’ve never been”. 过 usually sits right after the verb, before the object.",
+          "examples": [
+            ["我{没}去{过}。", "Wǒ méi qù guo.", "I've never been."],
+            [
+              "他{没}学{过}汉语。",
+              "Tā méi xué guo Hànyǔ.",
+              "He's never studied Chinese."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "你去＿上海吗？",
+          "en": "Have you (ever) been to Shanghai?",
+          "options": ["过", "了", "在", "的"],
+          "answer": "过",
+          "why": "Verb + 过 asks about experience."
+        },
+        {
+          "q": "How do you say “I've read that book” (at some point)?",
+          "en": "",
+          "options": ["我看过那本书。", "我在看那本书。", "我看是那本书。", "我过看那本书了吗。"],
+          "answer": "我看过那本书。",
+          "why": "看 + 过 + object."
+        },
+        {
+          "q": "我＿吃过日本菜。",
+          "en": "I've never eaten Japanese food.",
+          "options": ["没", "不", "很", "是"],
+          "answer": "没",
+          "why": "Experience is denied with 没…过."
+        },
+        {
+          "q": "What does 她学过法语 mean?",
+          "en": "",
+          "options": [
+            "She has studied French (before).",
+            "She is studying French now.",
+            "She will study French.",
+            "She must study French."
+          ],
+          "answer": "She has studied French (before).",
+          "why": "学过 = experiential."
+        },
+        {
+          "q": "了 or 过? “I ate just now.”",
+          "en": "",
+          "options": ["我刚吃了。", "我刚吃过了是。", "我过吃刚。", "我吃在刚。"],
+          "answer": "我刚吃了。",
+          "why": "A specific completed event: 了 (过 is “ever / before”)."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": ["我过没去中国。", "我没去过中国。", "你去过吗？", "我去过两次。"],
+          "answer": "我过没去中国。",
+          "why": "没 comes before the verb: 没 + verb + 过."
+        }
+      ]
+    },
+    {
+      "id": "bi",
+      "title": "比 — comparing A and B",
+      "particle": "比",
+      "summary": "A 比 B + adjective: A is more … than B.",
+      "sections": [
+        {
+          "p": "To compare, put <b>比</b> (bǐ) between the two things: A 比 B + adjective. 他比我高 “he is taller than me”. Do not put 很 before the adjective in a plain 比 sentence.",
+          "examples": [
+            ["他{比}我高。", "Tā bǐ wǒ gāo.", "He is taller than me."],
+            [
+              "今天{比}昨天冷。",
+              "Jīntiān bǐ zuótiān lěng.",
+              "Today is colder than yesterday."
+            ],
+            [
+              "汉语{比}英语难。",
+              "Hànyǔ bǐ Yīngyǔ nán.",
+              "Chinese is harder than English."
+            ]
+          ]
+        },
+        {
+          "h": "Not as … as; much more",
+          "p": "A 没有 B + adjective means “A is not as … as B”: 我没有他高. For “much more”, add 多了 or 一点儿 after the adjective: 贵多了 “much more expensive”.",
+          "examples": [
+            ["我{没有}他高。", "Wǒ méiyǒu tā gāo.", "I'm not as tall as him."],
+            [
+              "这个{比}那个贵多了。",
+              "Zhège bǐ nàge guì duō le.",
+              "This is much more expensive than that."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "她＿我忙。",
+          "en": "She is busier than me.",
+          "options": ["比", "在", "过", "的"],
+          "answer": "比",
+          "why": "A 比 B + adjective."
+        },
+        {
+          "q": "How do you say “This book is cheaper than that one”?",
+          "en": "便宜 = cheap",
+          "options": ["这本书比那本便宜。", "这本书很比那本便宜。", "这本书是比便宜那本。", "比这本书那本便宜。"],
+          "answer": "这本书比那本便宜。",
+          "why": "A 比 B + adj; no 很 in the basic pattern."
+        },
+        {
+          "q": "我＿你高。",
+          "en": "I'm not as tall as you.",
+          "options": ["没有", "不是", "不会", "不要"],
+          "answer": "没有",
+          "why": "A 没有 B + adj = not as … as."
+        },
+        {
+          "q": "What does 火车比飞机慢 mean?",
+          "en": "",
+          "options": [
+            "Trains are slower than planes.",
+            "Planes are slower than trains.",
+            "Trains and planes are slow.",
+            "The train was slow."
+          ],
+          "answer": "Trains are slower than planes.",
+          "why": "A 比 B + 慢."
+        },
+        {
+          "q": "Which sentence is wrong?",
+          "en": "",
+          "options": ["他比我很高。", "他比我高。", "今天比昨天热。", "我没有他高。"],
+          "answer": "他比我很高。",
+          "why": "In a plain 比 sentence, drop 很 before the adjective."
+        }
+      ]
+    }
+  ]
+}

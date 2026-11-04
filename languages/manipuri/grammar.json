@@ -1,0 +1,479 @@
+{
+  "schema": "grammar@1",
+  "language": "manipuri",
+  "notes": [
+    "Manipuri (Meitei / Meeteilon) first grammar for the Grammar Learner. Written for this project.",
+    "Examples are [Meetei Mayek, romanization, English]; {braces} mark the point of the lesson.",
+    "Drills are { q, en, options, answer, why }; ＿ is the blank.",
+    "",
+    "Sources (open / educational; accuracy over volume — no invented forms):",
+    "- Arthur John Primrose, A Manipuri Grammar, Vocabulary, and Phrase Book",
+    "  (Assam Secretariat Press, 1888; public domain). Case endings -na/-gi/-da/-bu/-dagi;",
+    "  pronouns ei/nang/ma(+hak), eigi/nanggi, eikhoi/makhoi; relative “ngarang lakpa mi adu",
+    "  ngasi chatkani”; participles and futures chatkani / haigani; negative toude, chatloi,",
+    "  chatlaroi; interrogative toubra, chatlibra, chatpra. Summarised on Wikipedia /",
+    "  Simple English Wikipedia “Meitei grammar” (CC BY-SA).",
+    "- Shobhana L. Chelliah, A Grammar of Meithei (Mouton, 1997), as reviewed in",
+    "  Ningombam Sanatombi Devi, “Earlier Works on Tense and Aspect in Manipuri (Meeteilon)”,",
+    "  Language in India 16:10 (2016), https://www.languageinindia.com/oct2016/meitheitenseandaspectfinal.pdf",
+    "  — assertive/non-future -i; progressive -li/-ri; perfect -le (often with assertive);",
+    "  future -kani/-gani; examples əy cak cà-y, əy càk cà-li, əŋɑŋ-du cɑk cɑ-ri, məhak lɑk-le,",
+    "  cɑgəni / lak-kani.",
+    "- Traditional school paradigms in the same Language in India review (Kalachand Shastri,",
+    "  Nandalal Sharma, M. S. Ningomba): cai / cari / carε / cɑgəni; thək-li; cabəni with",
+    "  auxiliary -ni; interrogatives on -ba forms.",
+    "- Wikibooks “Modern Meitei/Common phrases” (CC BY-SA): ꯆꯠꯂꯦ chatle; ꯐꯔꯦ phare;",
+    "  ꯉꯝꯗꯦ ngamde; ꯉꯥꯡꯕꯔꯥ ngangbara; ꯅꯠꯇꯦ natte; name phrases with ꯑꯩꯒꯤ ꯃꯤꯡ.",
+    "- This repo’s languages/manipuri/vocab.js and reference.json (greetings, people, verbs in",
+    "  -ba/-pa, case-ready nouns, kari / kana / kadai, eigi ming … ni).",
+    "After a vowel, -li/-le often surface as -ri/-re; after a voiceless stop, -gani is -kani",
+    "(Primrose chatkani; Chelliah/Ningomba lak-kani). Romanization matches the Desk vocab",
+    "(no tone marks)."
+  ],
+  "title": "Manipuri first grammar",
+  "intro": "Manipuri (ꯃꯤꯇꯩꯂꯣꯟ, Meeteilon) puts the verb at the end. Small endings on nouns mark who does it, where, and what is affected, and endings on the verb mark aspect more than tense. These lessons cover SOV order, the copula ‑ni, case markers ‑na / ‑da / ‑bu, verb aspect ‑i / ‑le / ‑gani, questions with ‑bra, and negation with ‑de / ‑loi. Examples use Meetei Mayek with a plain romanization; tone is not marked.",
+  "lessons": [
+    {
+      "id": "sov",
+      "title": "The verb comes last",
+      "particle": "SOV",
+      "summary": "Subject, then object, then the verb; the everyday pronouns.",
+      "sections": [
+        {
+          "p": "Manipuri is <b>verb-final</b>: say who, then what, then the action. <b>ꯑꯩ</b> (ei) I, <b>ꯅꯪ</b> (nang) you, <b>ꯃꯍꯥꯛ</b> (mahak) he or she, <b>ꯑꯩꯈꯣꯏ</b> (eikhoi) we, <b>ꯃꯈꯣꯏ</b> (makhoi) they. A polite “you” is <b>ꯅꯍꯥꯛ</b> (nahak). The dictionary form of a verb ends in <b>-ba</b> or <b>-pa</b>: <b>ꯆꯥꯕꯥ</b> (chaba) to eat, <b>ꯆꯠꯄꯥ</b> (chatpa) to go.",
+          "examples": [
+            ["{ꯑꯩ} ꯆꯥꯛ ꯆꯥꯏ.", "Ei chak chai.", "I eat rice. (meal)"],
+            [
+              "{ꯅꯪ} ꯏꯁꯤꯡ ꯊꯛꯂꯤ.",
+              "Nang ising thakli.",
+              "You are drinking water."
+            ],
+            [
+              "{ꯃꯍꯥꯛ} ꯀꯩꯊꯦꯜ ꯆꯠꯂꯤ.",
+              "Mahak keithel chatli.",
+              "He or she is going to the market."
+            ]
+          ]
+        },
+        {
+          "h": "Time words stay before the verb",
+          "p": "Words like <b>ꯉꯁꯤ</b> (ngasi) today, <b>ꯉꯔꯥꯡ</b> (ngarang) yesterday and <b>ꯍꯌꯦꯡ</b> (hayeng) tomorrow usually come early in the sentence. The verb still finishes it.",
+          "examples": [
+            [
+              "ꯑꯩ {ꯉꯔꯥꯡ} ꯀꯩꯊꯦꯜ ꯆꯠꯂꯦ.",
+              "Ei ngarang keithel chatle.",
+              "Yesterday I went to the market."
+            ],
+            [
+              "ꯑꯩ {ꯍꯌꯦꯡ} ꯀꯩꯊꯦꯜ ꯆꯠꯀꯅꯤ.",
+              "Ei hayeng keithel chatkani.",
+              "Tomorrow I will go to the market."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ꯆꯥꯛ ꯆꯥꯏ.",
+          "en": "I eat rice.",
+          "options": ["ꯑꯩ", "ꯅꯪ", "ꯃꯍꯥꯛ", "ꯃꯈꯣꯏ"],
+          "answer": "ꯑꯩ",
+          "why": "ꯑꯩ (ei) = I."
+        },
+        {
+          "q": "ꯑꯩ ꯆꯥꯛ ＿.",
+          "en": "I eat rice. (verb last)",
+          "options": ["ꯆꯥꯏ", "ꯆꯥꯛ ꯑꯩ", "ꯑꯩꯒꯤ", "ꯍꯣꯏ"],
+          "answer": "ꯆꯥꯏ",
+          "why": "The verb finishes the sentence."
+        },
+        {
+          "q": "＿ ꯏꯁꯤꯡ ꯊꯛꯂꯤ.",
+          "en": "You are drinking water.",
+          "options": ["ꯅꯪ", "ꯑꯩ", "ꯑꯩꯈꯣꯏ", "ꯃꯈꯣꯏ"],
+          "answer": "ꯅꯪ",
+          "why": "ꯅꯪ (nang) = you."
+        },
+        {
+          "q": "ꯑꯩ ＿ ꯀꯩꯊꯦꯜ ꯆꯠꯂꯦ.",
+          "en": "Yesterday I went to the market.",
+          "options": ["ꯉꯔꯥꯡ", "ꯍꯌꯦꯡ", "ꯉꯁꯤ", "ꯍꯧꯖꯤꯛ"],
+          "answer": "ꯉꯔꯥꯡ",
+          "why": "ꯉꯔꯥꯡ (ngarang) = yesterday."
+        },
+        {
+          "q": "＿ = we",
+          "en": "",
+          "options": ["ꯑꯩꯈꯣꯏ", "ꯑꯩ", "ꯃꯍꯥꯛ", "ꯅꯪ"],
+          "answer": "ꯑꯩꯈꯣꯏ",
+          "why": "Plural “we” adds -khoi: eikhoi."
+        }
+      ]
+    },
+    {
+      "id": "ni",
+      "title": "‑ni — “is” and naming",
+      "particle": "-ni",
+      "summary": "Equational sentences and “my name is …” with the copula ‑ni.",
+      "sections": [
+        {
+          "p": "To say what something <b>is</b>, Manipuri often ends the sentence with <b>ꯅꯤ</b> (-ni). A common pattern for names is <b>ꯑꯩꯒꯤ ꯃꯤꯡ … ꯅꯤ</b> (eigi ming … ni) “my name is …”. The same ‑ni can sit after a verb’s dictionary form: <b>ꯆꯥꯕꯥꯅꯤ</b> (chabani) “it is eating / one who eats”, used in school grammars as an equational “eats” form.",
+          "examples": [
+            [
+              "ꯑꯩꯒꯤ ꯃꯤꯡ ꯇꯣꯝꯕꯥ {ꯅꯤ}.",
+              "Eigi ming Tomba ni.",
+              "My name is Tomba."
+            ],
+            ["ꯃꯁꯤ ꯌꯨꯝ {ꯅꯤ}.", "Masi yum ni.", "This is a house."],
+            ["ꯃꯍꯥꯛ ꯃꯔꯨꯞ {ꯅꯤ}.", "Mahak marup ni.", "He or she is a friend."]
+          ]
+        },
+        {
+          "h": "“My” and “your” before the noun",
+          "p": "<b>ꯑꯩꯒꯤ</b> (eigi) my and <b>ꯅꯪꯒꯤ</b> (nanggi) your are the genitive of ei and nang. They come before the thing owned: eigi yum “my house”, nanggi ming “your name”.",
+          "examples": [
+            [
+              "{ꯑꯩꯒꯤ} ꯌꯨꯝ ꯑꯆꯧꯕꯥ ꯅꯤ.",
+              "Eigi yum achouba ni.",
+              "My house is big."
+            ],
+            ["{ꯅꯪꯒꯤ} ꯃꯤꯡ ꯀꯔꯤꯅꯣ?", "Nanggi ming karino?", "What is your name?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ꯑꯩꯒꯤ ꯃꯤꯡ ꯇꯣꯝꯕꯥ ＿.",
+          "en": "My name is Tomba.",
+          "options": ["ꯅꯤ", "ꯅꯠꯇꯦ", "ꯍꯣꯏ", "ꯆꯥꯏ"],
+          "answer": "ꯅꯤ",
+          "why": "Equational “is” is ‑ni at the end."
+        },
+        {
+          "q": "＿ ꯃꯤꯡ ꯇꯣꯝꯕꯥ ꯅꯤ.",
+          "en": "My name is Tomba.",
+          "options": ["ꯑꯩꯒꯤ", "ꯅꯪꯒꯤ", "ꯃꯍꯥꯛ", "ꯀꯔꯤ"],
+          "answer": "ꯑꯩꯒꯤ",
+          "why": "ꯑꯩꯒꯤ (eigi) = my."
+        },
+        {
+          "q": "ꯃꯁꯤ ꯌꯨꯝ ＿.",
+          "en": "This is a house.",
+          "options": ["ꯅꯤ", "ꯆꯠꯂꯤ", "ꯊꯛꯂꯤ", "ꯅꯠꯇꯦ"],
+          "answer": "ꯅꯤ",
+          "why": "Link the thing to what it is with ‑ni."
+        },
+        {
+          "q": "＿ ꯃꯤꯡ ꯀꯔꯤꯅꯣ?",
+          "en": "What is your name?",
+          "options": ["ꯅꯪꯒꯤ", "ꯑꯩꯒꯤ", "ꯃꯈꯣꯏ", "ꯉꯁꯤ"],
+          "answer": "ꯅꯪꯒꯤ",
+          "why": "ꯅꯪꯒꯤ (nanggi) = your."
+        },
+        {
+          "q": "ꯃꯍꯥꯛ ꯃꯔꯨꯞ ＿.",
+          "en": "He or she is a friend.",
+          "options": ["ꯅꯤ", "ꯕꯨ", "ꯗꯥ", "ꯂꯣꯏ"],
+          "answer": "ꯅꯤ",
+          "why": "Person + role + ‑ni."
+        }
+      ]
+    },
+    {
+      "id": "cases",
+      "title": "‑na, ‑da, ‑bu — who, where, whom",
+      "particle": "-na -da -bu",
+      "summary": "Nominative ‑na, locative/dative ‑da, accusative ‑bu, and a look at ‑gi.",
+      "sections": [
+        {
+          "p": "Noun endings (from Primrose’s paradigm on <b>ꯃꯤ</b> mi “person”) mark role in the sentence: <b>-na</b> for the one who does it (nominative), <b>-da</b> for “to / in / at” (dative and locative), <b>-bu</b> for the one affected (accusative), <b>-gi</b> for “of” (genitive), <b>-dagi</b> for “from”. Pronouns take the same endings: <b>ꯑꯩꯅꯥ</b> (eina), <b>ꯅꯪꯅꯥ</b> (nangna), <b>ꯑꯩꯕꯨ</b> (eibu).",
+          "examples": [
+            ["{ꯑꯩꯅꯥ} ꯆꯥꯛ ꯆꯥꯏ.", "Eina chak chai.", "I (as subject) eat rice."],
+            [
+              "ꯃꯤ{-ꯅꯥ}, ꯃꯤ{-ꯒꯤ}, ꯃꯤ{-ꯕꯨ}",
+              "mi-na, mi-gi, mi-bu",
+              "a person (subject); of a person; a person (object)"
+            ],
+            [
+              "ꯑꯩ {ꯌꯨꯝꯗꯥ} ꯂꯩ.",
+              "Ei yumda lei.",
+              "I am at home. (in the house)"
+            ]
+          ]
+        },
+        {
+          "h": "Place and object",
+          "p": "Add <b>-da</b> to a place: <b>ꯀꯩꯊꯦꯜꯗꯥ</b> (keithelda) at/to the market, <b>ꯃꯁꯤꯗꯥ</b> (masida) here / in this. Add <b>-bu</b> when someone is the object: nangbu “you (object)”. The plain noun is often enough when the role is clear; the ending makes it explicit.",
+          "examples": [
+            [
+              "ꯑꯩ {ꯀꯩꯊꯦꯜꯗꯥ} ꯆꯠꯂꯤ.",
+              "Ei keithelda chatli.",
+              "I am going to the market."
+            ],
+            ["ꯃꯍꯥꯛꯅꯥ {ꯑꯩꯕꯨ} ꯎꯏ.", "Mahakna eibu ui.", "He or she sees me."],
+            [
+              "ꯃꯁꯤ{ꯗꯥ} ꯃꯤ ꯂꯩꯕꯔꯥ?",
+              "Masida mi leibara?",
+              "Is there a person here?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ꯆꯥꯛ ꯆꯥꯏ.",
+          "en": "I (marked as subject) eat rice.",
+          "options": ["ꯑꯩꯅꯥ", "ꯑꯩꯕꯨ", "ꯑꯩꯒꯤ", "ꯑꯩꯗꯥ"],
+          "answer": "ꯑꯩꯅꯥ",
+          "why": "‑na marks the subject."
+        },
+        {
+          "q": "ꯑꯩ ＿ ꯆꯠꯂꯤ.",
+          "en": "I am going to the market.",
+          "options": ["ꯀꯩꯊꯦꯜꯗꯥ", "ꯀꯩꯊꯦꯜꯅꯥ", "ꯀꯩꯊꯦꯜꯕꯨ", "ꯀꯩꯊꯦꯜꯒꯤ"],
+          "answer": "ꯀꯩꯊꯦꯜꯗꯥ",
+          "why": "‑da marks place / “to”."
+        },
+        {
+          "q": "ꯃꯤ‑＿ = of a person",
+          "en": "",
+          "options": ["ꯒꯤ", "ꯅꯥ", "ꯕꯨ", "ꯗꯥ"],
+          "answer": "ꯒꯤ",
+          "why": "‑gi is the genitive “of”."
+        },
+        {
+          "q": "ꯃꯍꯥꯛꯅꯥ ＿ ꯎꯏ.",
+          "en": "He or she sees me.",
+          "options": ["ꯑꯩꯕꯨ", "ꯑꯩꯅꯥ", "ꯑꯩꯒꯤ", "ꯑꯩꯗꯥ"],
+          "answer": "ꯑꯩꯕꯨ",
+          "why": "‑bu marks the object (patient)."
+        },
+        {
+          "q": "ꯑꯩ ＿ ꯂꯩ.",
+          "en": "I am at home.",
+          "options": ["ꯌꯨꯝꯗꯥ", "ꯌꯨꯝꯅꯥ", "ꯌꯨꯝꯕꯨ", "ꯌꯨꯝꯒꯤ"],
+          "answer": "ꯌꯨꯝꯗꯥ",
+          "why": "yum + ‑da = in/at the house."
+        }
+      ]
+    },
+    {
+      "id": "aspect",
+      "title": "‑i, ‑le, ‑gani — how the action stands",
+      "particle": "-i -le -gani",
+      "summary": "Non-future ‑i, progressive ‑li/‑ri, perfect ‑le/‑re, and future ‑gani/‑kani.",
+      "sections": [
+        {
+          "p": "Manipuri marks <b>aspect</b> on the verb more than tense. A simple non-future / habitual form ends in <b>-i</b>: <b>ꯆꯥꯏ</b> (chai) “eats”. The progressive is <b>-li</b> (after a consonant) or <b>-ri</b> (after a vowel): <b>ꯆꯠꯂꯤ</b> (chatli) “is going”, <b>ꯆꯥꯔꯤ</b> (chari) “is eating”, <b>ꯊꯛꯂꯤ</b> (thakli) “is drinking”.",
+          "examples": [
+            [
+              "ꯑꯩ ꯆꯥꯛ {ꯆꯥꯏ}.",
+              "Ei chak chai.",
+              "I eat rice. (non-future / habitual)"
+            ],
+            [
+              "ꯑꯉꯥꯡꯗꯨ ꯆꯥꯛ {ꯆꯥꯔꯤ}.",
+              "Angangdu chak chari.",
+              "The child is eating rice."
+            ],
+            ["ꯑꯩ ꯏꯁꯤꯡ {ꯊꯛꯂꯤ}.", "Ei ising thakli.", "I am drinking water."]
+          ]
+        },
+        {
+          "h": "Done, and not yet",
+          "p": "The perfect / completive is <b>-le</b> or <b>-re</b>: <b>ꯆꯠꯂꯦ</b> (chatle) “has gone”, <b>ꯂꯥꯛꯂꯦ</b> (lakle) “has come”, <b>ꯐꯔꯦ</b> (phare) “is fine / has become good”. The future takes <b>-gani</b> or <b>-kani</b> (‑kani after a voiceless stop): <b>ꯆꯥꯒꯅꯤ</b> (chagani) “will eat”, <b>ꯆꯠꯀꯅꯤ</b> (chatkani) “will go”, <b>ꯂꯥꯛꯀꯅꯤ</b> (lakkani) “will come”.",
+          "examples": [
+            ["ꯃꯍꯥꯛ {ꯂꯥꯛꯂꯦ}.", "Mahak lakle.", "He or she has come."],
+            [
+              "ꯑꯩ ꯍꯌꯦꯡ ꯆꯥꯛ {ꯆꯥꯒꯅꯤ}.",
+              "Ei hayeng chak chagani.",
+              "Tomorrow I will eat rice."
+            ],
+            [
+              "ꯉꯔꯥꯡ ꯂꯥꯛꯄꯥ ꯃꯤ ꯑꯗꯨ ꯉꯁꯤ {ꯆꯠꯀꯅꯤ}.",
+              "Ngarang lakpa mi adu ngasi chatkani.",
+              "The person who came yesterday will go today."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ꯑꯩ ꯆꯥꯛ ＿.",
+          "en": "I eat rice. (habitual / non-future)",
+          "options": ["ꯆꯥꯏ", "ꯆꯥꯒꯅꯤ", "ꯆꯠꯂꯣꯏ", "ꯅꯠꯇꯦ"],
+          "answer": "ꯆꯥꯏ",
+          "why": "‑i is the simple non-future ending."
+        },
+        {
+          "q": "ꯑꯉꯥꯡꯗꯨ ꯆꯥꯛ ＿.",
+          "en": "The child is eating rice.",
+          "options": ["ꯆꯥꯔꯤ", "ꯆꯥꯏ", "ꯆꯥꯒꯅꯤ", "ꯆꯥꯕꯥ"],
+          "answer": "ꯆꯥꯔꯤ",
+          "why": "Progressive after a vowel is ‑ri."
+        },
+        {
+          "q": "ꯃꯍꯥꯛ ＿.",
+          "en": "He or she has come.",
+          "options": ["ꯂꯥꯛꯂꯦ", "ꯂꯥꯛꯀꯅꯤ", "ꯂꯥꯛꯄꯥ", "ꯂꯥꯛꯂꯣꯏ"],
+          "answer": "ꯂꯥꯛꯂꯦ",
+          "why": "Perfect ‑le: lakle."
+        },
+        {
+          "q": "ꯑꯩ ꯍꯌꯦꯡ ꯀꯩꯊꯦꯜ ＿.",
+          "en": "Tomorrow I will go to the market.",
+          "options": ["ꯆꯠꯀꯅꯤ", "ꯆꯠꯂꯤ", "ꯆꯠꯂꯦ", "ꯆꯠꯄꯥ"],
+          "answer": "ꯆꯠꯀꯅꯤ",
+          "why": "Future after chat‑ is ‑kani."
+        },
+        {
+          "q": "ꯑꯩ ꯏꯁꯤꯡ ＿.",
+          "en": "I am drinking water.",
+          "options": ["ꯊꯛꯂꯤ", "ꯊꯛꯄꯥ", "ꯊꯛꯀꯅꯤ", "ꯆꯥꯏ"],
+          "answer": "ꯊꯛꯂꯤ",
+          "why": "Progressive after a consonant is ‑li: thakli."
+        }
+      ]
+    },
+    {
+      "id": "questions",
+      "title": "‑bra — asking",
+      "particle": "-bra",
+      "summary": "Yes/no questions with ‑bra, and the question words kari, kana, kadai.",
+      "sections": [
+        {
+          "p": "A yes/no question can take an interrogative ending such as <b>-bra</b> / <b>-pra</b> on the verb (Primrose: <b>toubra</b> “do/does …?”, <b>chatlibra</b> “is … going?”, <b>chatpra</b>). On a dictionary ‑ba form you also hear <b>-ra</b>: Wikibooks <b>ꯉꯥꯡꯕꯔꯥ</b> (ngangbara) “do you speak?”. Rising voice still matters; the ending makes the question clear in writing.",
+          "examples": [
+            ["ꯅꯪ ꯆꯠꯂꯤ{ꯕꯔꯥ}?", "Nang chatlibara?", "Are you going?"],
+            [
+              "ꯅꯪ ꯏꯪꯂꯤꯁ ꯉꯥꯡ{ꯕꯔꯥ}?",
+              "Nang English ngangbara?",
+              "Do you speak English?"
+            ],
+            [
+              "ꯃꯁꯤꯗꯥ ꯃꯤ ꯂꯩ{ꯕꯔꯥ}?",
+              "Masida mi leibara?",
+              "Is there someone here?"
+            ]
+          ]
+        },
+        {
+          "h": "Who, what, where",
+          "p": "<b>ꯀꯔꯤ</b> (kari) what, <b>ꯀꯅꯥ</b> (kana) who, <b>ꯀꯗꯥꯏ</b> (kadai) where, <b>ꯀꯔꯝꯅꯥ</b> (karamna) how. They usually stand where the answer would stand. “What is your name?” is <b>ꯅꯪꯒꯤ ꯃꯤꯡ ꯀꯔꯤꯅꯣ?</b> (nanggi ming karino?).",
+          "examples": [
+            ["ꯅꯪꯒꯤ ꯃꯤꯡ {ꯀꯔꯤ}ꯅꯣ?", "Nanggi ming karino?", "What is your name?"],
+            ["{ꯀꯅꯥ} ꯂꯥꯛꯂꯤ?", "Kana lakli?", "Who is coming?"],
+            ["ꯌꯨꯝ {ꯀꯗꯥꯏ}ꯗꯥ ꯂꯩ?", "Yum kadaida lei?", "Where is the house?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ꯅꯪ ꯏꯪꯂꯤꯁ ꯉꯥꯡ＿?",
+          "en": "Do you speak English?",
+          "options": ["ꯕꯔꯥ", "ꯂꯣꯏ", "ꯗꯦ", "ꯅꯤ"],
+          "answer": "ꯕꯔꯥ",
+          "why": "Yes/no on a ‑ba verb often ends in ‑bara / ‑bra."
+        },
+        {
+          "q": "ꯅꯪꯒꯤ ꯃꯤꯡ ＿?",
+          "en": "What is your name?",
+          "options": ["ꯀꯔꯤꯅꯣ", "ꯀꯅꯥ", "ꯍꯣꯏ", "ꯅꯠꯇꯦ"],
+          "answer": "ꯀꯔꯤꯅꯣ",
+          "why": "ꯀꯔꯤ (kari) = what."
+        },
+        {
+          "q": "＿ ꯂꯥꯛꯂꯤ?",
+          "en": "Who is coming?",
+          "options": ["ꯀꯅꯥ", "ꯀꯔꯤ", "ꯀꯗꯥꯏ", "ꯀꯌꯥ"],
+          "answer": "ꯀꯅꯥ",
+          "why": "ꯀꯅꯥ (kana) = who."
+        },
+        {
+          "q": "ꯌꯨꯝ ＿ ꯂꯩ?",
+          "en": "Where is the house?",
+          "options": ["ꯀꯗꯥꯏꯗꯥ", "ꯀꯔꯤꯅꯣ", "ꯀꯅꯥ", "ꯍꯧꯖꯤꯛ"],
+          "answer": "ꯀꯗꯥꯏꯗꯥ",
+          "why": "ꯀꯗꯥꯏ (kadai) = where; ‑da for location."
+        },
+        {
+          "q": "ꯅꯪ ꯆꯠꯂꯤ＿?",
+          "en": "Are you going?",
+          "options": ["ꯕꯔꯥ", "ꯒꯅꯤ", "ꯂꯦ", "ꯅꯤ"],
+          "answer": "ꯕꯔꯥ",
+          "why": "Interrogative ‑bra / ‑bara on the progressive."
+        }
+      ]
+    },
+    {
+      "id": "negation",
+      "title": "‑de, ‑loi — saying no",
+      "particle": "-de -loi",
+      "summary": "Negatives on the verb, and the word natte.",
+      "sections": [
+        {
+          "p": "Primrose’s everyday negatives for “do” and “go” include <b>toude</b> “does not do” and <b>chatloi</b> “does not go”. The ending <b>-de</b> (or ‑te after some consonants) negates many present stems; <b>-loi</b> / <b>-roi</b> appears on others, and the future negative of “go” is <b>chatlaroi</b>. Wikibooks has <b>ꯉꯝꯗꯦ</b> (ngamde) “cannot”. Standing alone, <b>ꯅꯠꯇꯦ</b> (natte) means “no; it isn’t”.",
+          "examples": [
+            ["ꯑꯩ ꯆꯠ{ꯂꯣꯏ}.", "Ei chatloi.", "I do not go / am not going."],
+            ["ꯑꯩ ꯉꯥꯡꯕꯥ ꯉꯝ{ꯗꯦ}.", "Ei ngangba ngamde.", "I cannot speak (it)."],
+            ["{ꯅꯠꯇꯦ}.", "Natte.", "No; it isn’t."]
+          ]
+        },
+        {
+          "h": "Yes, no, and not yet",
+          "p": "<b>ꯍꯣꯏ</b> (hoi) is “yes”. Use <b>natte</b> to deny a whole claim. To refuse a future trip Primrose lists <b>chatlaroi</b> “will not go”. Keep the verb at the end; only the ending changes polarity.",
+          "examples": [
+            ["ꯍꯣꯏ, ꯑꯩ ꯆꯠꯂꯤ.", "Hoi, ei chatli.", "Yes, I am going."],
+            [
+              "ꯑꯩ ꯍꯌꯦꯡ ꯆꯠ{ꯂꯥꯔꯣꯏ}.",
+              "Ei hayeng chatlaroi.",
+              "I will not go tomorrow."
+            ],
+            [
+              "ꯃꯁꯤ ꯌꯨꯝ ꯅꯤ? {ꯅꯠꯇꯦ}.",
+              "Masi yum ni? Natte.",
+              "Is this a house? No."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ꯑꯩ ꯆꯠ＿.",
+          "en": "I do not go.",
+          "options": ["ꯂꯣꯏ", "ꯂꯤ", "ꯀꯅꯤ", "ꯅꯤ"],
+          "answer": "ꯂꯣꯏ",
+          "why": "chatloi is Primrose’s negative of chat‑."
+        },
+        {
+          "q": "ꯑꯩ ꯉꯥꯡꯕꯥ ꯉꯝ＿.",
+          "en": "I cannot speak (it).",
+          "options": ["ꯗꯦ", "ꯂꯤ", "ꯕꯔꯥ", "ꯒꯅꯤ"],
+          "answer": "ꯗꯦ",
+          "why": "ngamde: ability negated with ‑de."
+        },
+        {
+          "q": "＿",
+          "en": "No; it isn’t.",
+          "options": ["ꯅꯠꯇꯦ", "ꯍꯣꯏ", "ꯅꯤ", "ꯀꯔꯤ"],
+          "answer": "ꯅꯠꯇꯦ",
+          "why": "ꯅꯠꯇꯦ (natte) is the standalone “no”."
+        },
+        {
+          "q": "ꯑꯩ ꯍꯌꯦꯡ ꯆꯠ＿.",
+          "en": "I will not go tomorrow.",
+          "options": ["ꯂꯥꯔꯣꯏ", "ꯀꯅꯤ", "ꯂꯤ", "ꯂꯦ"],
+          "answer": "ꯂꯥꯔꯣꯏ",
+          "why": "Future negative chatlaroi (Primrose)."
+        },
+        {
+          "q": "＿, ꯑꯩ ꯆꯠꯂꯤ.",
+          "en": "Yes, I am going.",
+          "options": ["ꯍꯣꯏ", "ꯅꯠꯇꯦ", "ꯀꯅꯥ", "ꯂꯣꯏ"],
+          "answer": "ꯍꯣꯏ",
+          "why": "ꯍꯣꯏ (hoi) = yes."
+        }
+      ]
+    }
+  ]
+}

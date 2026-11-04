@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/squirelworks/squirrel-lang-data/schemas/grammar.v1.json",
+  "title": "grammar@1: a language's grammar course",
+  "description": "languages/<id>/grammar.json: the lessons in teaching order, plus the grammar points still to be written.",
+  "type": "object",
+  "required": ["schema", "language", "title", "intro", "lessons"],
+  "additionalProperties": false,
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "level": {
+      "description": "How far into the language a learner is when this lesson fits.",
+      "enum": ["absolute-beginner", "beginner", "beginner-intermediate", "intermediate", "advanced-intermediate", "advanced"]
+    }
+  },
+  "properties": {
+    "schema": { "const": "grammar@1" },
+    "language": { "description": "The language (or variety) id; must match the folder.", "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "notes": { "description": "How the course is written and what it draws on, one line each, as in the original file's comment.", "type": "array", "items": { "type": "string" } },
+    "title": { "type": "string", "minLength": 1 },
+    "intro": { "type": "string", "minLength": 1 },
+    "lessons": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "sections"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "title": { "type": "string", "minLength": 1 },
+          "particle": { "description": "The word or ending the lesson is about.", "type": "string" },
+          "summary": { "type": "string" },
+          "level": { "$ref": "#/$defs/level" },
+          "table": { "description": "A drill table the app draws for this lesson, by name.", "type": "string", "minLength": 1 },
+          "sections": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "h": { "description": "Heading.", "type": "string", "minLength": 1 },
+                "p": { "description": "Paragraph; may hold <b> and <i>.", "type": "string", "minLength": 1 },
+                "examples": {
+                  "description": "[sentence, reading or gloss, English]; {braces} mark the point of the lesson.",
+                  "type": "array",
+                  "items": { "type": "array", "minItems": 3, "items": { "type": "string" } }
+                }
+              }
+            }
+          },
+          "drills": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["q", "options", "answer"],
+              "additionalProperties": false,
+              "properties": {
+                "q": { "description": "The question; ＿ is the blank.", "type": "string", "minLength": 1 },
+                "en": { "type": "string" },
+                "options": { "type": "array", "minItems": 2, "items": { "type": "string" }, "uniqueItems": true },
+                "answer": { "type": "string" },
+                "why": { "type": "string" }
+              }
+            }
+          },
+          "generate": {
+            "description": "Drills the app builds from drillData instead of listing them.",
+            "type": "object",
+            "required": ["kind", "count"],
+            "additionalProperties": false,
+            "properties": {
+              "kind": { "type": "string", "minLength": 1 },
+              "count": { "type": "integer" }
+            }
+          }
+        }
+      }
+    },
+    "drillData": {
+      "description": "Tables that generated drills are built from (for example Klingon's verb prefix grid).",
+      "type": "object"
+    },
+    "plan": {
+      "description": "Grammar points not written yet, in the order they'd be taught, so a course map can show what's coming.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "title": { "type": "string", "minLength": 1 },
+          "level": { "$ref": "#/$defs/level" },
+          "after": { "description": "Ids of the lessons or planned points it builds on.", "type": "array", "items": { "$ref": "#/$defs/id" }, "uniqueItems": true }
+        }
+      }
+    }
+  }
+}

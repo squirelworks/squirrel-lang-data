@@ -1,0 +1,403 @@
+{
+  "schema": "grammar@1",
+  "language": "italian",
+  "notes": [
+    "Italian first grammar for the Grammar Learner. Written for this project.",
+    "Examples are [Italian, word by word, English]; {braces} mark the point of the lesson.",
+    "Drills are { q, en, options, answer, why }; ＿ is the blank.",
+    "",
+    "Sources (open / educational; standard forms, original example sentences):",
+    "- FSI Italian (public domain) and standard pedagogical grammars: essere, avere,",
+    "  the article, -are verbs, non, and adjective agreement.",
+    "- Wiktionary Italian entries (CC BY-SA): essere, avere, parlare, il/lo/la, un/uno/una.",
+    "- Wikipedia “Italian grammar”, “Italian conjugation”, “Italian articles” (CC BY-SA)."
+  ],
+  "title": "Italian first grammar",
+  "intro": "Italian usually keeps the subject pronoun out, because the verb ending already says who. These lessons cover essere, avere, the articles, regular -are verbs, non, and adjectives that agree. The written accent marks a stressed final vowel, as in è and città.",
+  "lessons": [
+    {
+      "id": "essere",
+      "title": "essere — “to be”",
+      "particle": "essere",
+      "summary": "sono, sei, è.",
+      "sections": [
+        {
+          "p": "<b>essere</b> is irregular. <b>sono</b> “I am”, <b>sei</b> “you are” (one person you know), <b>è</b> “he / she / it is” — the accent on è matters, because <b>e</b> without it means “and”. The pronoun is optional: <b>(io) sono Anna</b>.",
+          "examples": [
+            ["{Sono} Anna.", "am · Anna", "I am Anna."],
+            ["{Sei} stanco.", "are · tired", "You are tired. (to a man)"],
+            ["Maria {è} qui.", "Maria · is · here", "Maria is here."]
+          ]
+        },
+        {
+          "h": "The plural",
+          "p": "<b>siamo</b> “we are”, <b>siete</b> “you are” (several, or polite in older style), <b>sono</b> “they are” — the same word as “I am”. Context, or the pronoun <b>loro</b>, tells them apart.",
+          "examples": [
+            ["{Siamo} amici.", "are · friends", "We are friends."],
+            ["Loro {sono} qui.", "they · are · here", "They are here."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ Anna.",
+          "en": "I am Anna.",
+          "options": ["Sono", "Sei", "È", "Siamo"],
+          "answer": "Sono",
+          "why": "“I am” is sono."
+        },
+        {
+          "q": "＿ stanco.",
+          "en": "You are tired.",
+          "options": ["Sei", "Sono", "È", "Siete"],
+          "answer": "Sei",
+          "why": "To one person you know: sei."
+        },
+        {
+          "q": "Maria ＿ qui.",
+          "en": "Maria is here.",
+          "options": ["è", "e", "sei", "sono"],
+          "answer": "è",
+          "why": "“is” is è, with the accent. e means “and”."
+        },
+        {
+          "q": "＿ amici.",
+          "en": "We are friends.",
+          "options": ["Siamo", "Sono", "Siete", "Sei"],
+          "answer": "Siamo",
+          "why": "“We are” is siamo."
+        },
+        {
+          "q": "Loro ＿ qui.",
+          "en": "They are here.",
+          "options": ["sono", "siamo", "siete", "sei"],
+          "answer": "sono",
+          "why": "“They are” is also sono."
+        }
+      ]
+    },
+    {
+      "id": "avere",
+      "title": "avere — “to have”",
+      "particle": "avere",
+      "summary": "ho, hai, ha.",
+      "sections": [
+        {
+          "p": "<b>avere</b>: <b>ho</b>, <b>hai</b>, <b>ha</b>, <b>abbiamo</b>, <b>avete</b>, <b>hanno</b>. The h is silent; it keeps ho and ha from looking like o and a. Age uses avere: <b>ho vent'anni</b> “I am twenty”.",
+          "examples": [
+            ["{Ho} un libro.", "have · a · book", "I have a book."],
+            [
+              "{Hai} una domanda?",
+              "have · a · question",
+              "Do you have a question?"
+            ],
+            [
+              "Lei {ha} vent'anni.",
+              "she · has · twenty years",
+              "She is twenty."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ un libro.",
+          "en": "I have a book.",
+          "options": ["Ho", "Hai", "Ha", "Sono"],
+          "answer": "Ho",
+          "why": "“I have” is ho."
+        },
+        {
+          "q": "＿ una domanda?",
+          "en": "Do you have a question?",
+          "options": ["Hai", "Ho", "Ha", "Sei"],
+          "answer": "Hai",
+          "why": "“You have” is hai."
+        },
+        {
+          "q": "Lei ＿ vent'anni.",
+          "en": "She is twenty.",
+          "options": ["ha", "è", "ho", "hai"],
+          "answer": "ha",
+          "why": "Age uses avere: ha vent'anni."
+        },
+        {
+          "q": "＿ un gatto.",
+          "en": "We have a cat.",
+          "options": ["Abbiamo", "Avete", "Hanno", "Ho"],
+          "answer": "Abbiamo",
+          "why": "“We have” is abbiamo."
+        },
+        {
+          "q": "Loro ＿ fame.",
+          "en": "They are hungry. (avere fame)",
+          "options": ["hanno", "hanno pas", "abbiamo", "sono"],
+          "answer": "hanno",
+          "why": "“To be hungry” is avere fame: loro hanno fame."
+        }
+      ]
+    },
+    {
+      "id": "articles",
+      "title": "il, la, un, una",
+      "particle": "il la",
+      "summary": "The article that matches the noun.",
+      "sections": [
+        {
+          "p": "“The” is <b>il</b> for most masculine nouns and <b>la</b> for feminine ones. Plural: <b>i libri</b>, <b>le case</b>. Before s + consonant, z, gn, ps and a few others, masculine “the” is <b>lo</b> (plural <b>gli</b>): <b>lo studente</b>, <b>gli studenti</b>.",
+          "examples": [
+            [
+              "{Il} libro è qui.",
+              "the · book · is · here",
+              "The book is here."
+            ],
+            [
+              "{La} casa è grande.",
+              "the · house · is · big",
+              "The house is big."
+            ],
+            [
+              "{Lo} studente è qui.",
+              "the · student · is · here",
+              "The (male) student is here."
+            ]
+          ]
+        },
+        {
+          "h": "un, uno, una",
+          "p": "“A” is <b>un</b> (il libro), <b>uno</b> (lo studente), <b>una</b> (la casa). Before a vowel, una may drop the a: <b>un'amica</b>.",
+          "examples": [
+            ["È {un} libro.", "is · a · book", "It's a book."],
+            ["È {una} casa.", "is · a · house", "It's a house."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ libro è qui.",
+          "en": "The book is here.",
+          "options": ["Il", "Lo", "La", "I"],
+          "answer": "Il",
+          "why": "libro takes il."
+        },
+        {
+          "q": "＿ casa è grande.",
+          "en": "The house is big.",
+          "options": ["La", "Il", "Le", "Lo"],
+          "answer": "La",
+          "why": "casa is feminine: la casa."
+        },
+        {
+          "q": "＿ studente è qui.",
+          "en": "The (male) student is here.",
+          "options": ["Lo", "Il", "La", "Gli"],
+          "answer": "Lo",
+          "why": "studente starts with s + consonant: lo studente."
+        },
+        {
+          "q": "È ＿ libro.",
+          "en": "It's a book.",
+          "options": ["un", "uno", "una", "il"],
+          "answer": "un",
+          "why": "un libro, matching il."
+        },
+        {
+          "q": "È ＿ casa.",
+          "en": "It's a house.",
+          "options": ["una", "un", "uno", "la"],
+          "answer": "una",
+          "why": "una casa."
+        }
+      ]
+    },
+    {
+      "id": "are-verbs",
+      "title": "Verbs in -are",
+      "particle": "-are",
+      "summary": "parlare, abitare, amare.",
+      "sections": [
+        {
+          "p": "The largest group ends in -are. Drop -are and add: <b>parlo</b>, <b>parli</b>, <b>parla</b>, <b>parliamo</b>, <b>parlate</b>, <b>parlano</b>. The subject pronoun is usually left out.",
+          "examples": [
+            ["{Parlo} italiano.", "speak · Italian", "I speak Italian."],
+            ["{Abiti} a Roma?", "live · in · Rome", "Do you live in Rome?"],
+            ["{Parliamo} italiano.", "speak · Italian", "We speak Italian."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Parl＿ italiano.",
+          "en": "I speak Italian.",
+          "options": ["o", "i", "a", "iamo"],
+          "answer": "o",
+          "why": "“I” takes -o: parlo."
+        },
+        {
+          "q": "Abit＿ a Roma?",
+          "en": "Do you live in Rome?",
+          "options": ["i", "o", "a", "ate"],
+          "answer": "i",
+          "why": "“You” takes -i: abiti."
+        },
+        {
+          "q": "Maria parl＿ italiano.",
+          "en": "Maria speaks Italian.",
+          "options": ["a", "o", "ano", "iamo"],
+          "answer": "a",
+          "why": "he/she takes -a: parla."
+        },
+        {
+          "q": "Parl＿ italiano.",
+          "en": "We speak Italian.",
+          "options": ["iamo", "ate", "ano", "o"],
+          "answer": "iamo",
+          "why": "“We” takes -iamo: parliamo."
+        },
+        {
+          "q": "Loro parl＿ inglese.",
+          "en": "They speak English.",
+          "options": ["ano", "a", "iamo", "ate"],
+          "answer": "ano",
+          "why": "“They” takes -ano: parlano."
+        }
+      ]
+    },
+    {
+      "id": "negation",
+      "title": "non",
+      "particle": "non",
+      "summary": "non sits right before the verb.",
+      "sections": [
+        {
+          "p": "<b>non</b> goes immediately before the verb: <b>non parlo</b> “I don't speak”, <b>non ho</b> “I don't have”. Nothing else is required — there is no second piece like French pas.",
+          "examples": [
+            [
+              "{Non} parlo inglese.",
+              "not · speak · English",
+              "I don't speak English."
+            ],
+            [
+              "{Non} ho una macchina.",
+              "not · have · a · car",
+              "I don't have a car."
+            ]
+          ]
+        },
+        {
+          "h": "Questions",
+          "p": "A question is often just the statement with a rising voice, or with the pronoun added: <b>Parli italiano?</b> <b>Tu parli italiano?</b>",
+          "examples": [
+            ["{Parli} italiano?", "speak · Italian", "Do you speak Italian?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ parlo inglese.",
+          "en": "I don't speak English.",
+          "options": ["Non", "No", "Né", "Non ho"],
+          "answer": "Non",
+          "why": "non directly before the verb."
+        },
+        {
+          "q": "Non ＿ una macchina.",
+          "en": "I don't have a car.",
+          "options": ["ho", "hai", "sono", "parlo"],
+          "answer": "ho",
+          "why": "non ho."
+        },
+        {
+          "q": "＿ italiano?",
+          "en": "Do you speak Italian? (parlare)",
+          "options": ["Parli", "Parlo", "Non", "Parla"],
+          "answer": "Parli",
+          "why": "The you-form with a rising question: parli?"
+        },
+        {
+          "q": "Maria ＿ parla inglese.",
+          "en": "Maria doesn't speak English.",
+          "options": ["non", "no", "né", "un"],
+          "answer": "non",
+          "why": "non parla."
+        },
+        {
+          "q": "Non ＿ amici.",
+          "en": "We are not friends. (essere)",
+          "options": ["siamo", "sono", "ho", "avete"],
+          "answer": "siamo",
+          "why": "non siamo amici."
+        }
+      ]
+    },
+    {
+      "id": "agreement",
+      "title": "Adjectives that agree",
+      "particle": "-o -a",
+      "summary": "bello, bella, and where the adjective sits.",
+      "sections": [
+        {
+          "p": "Most adjectives end in -o for masculine and -a for feminine, -i and -e in the plural: <b>bello, bella, belli, belle</b>. A few end in -e for both genders in the singular: <b>interessante</b>, plural <b>interessanti</b>.",
+          "examples": [
+            ["un libro {bello}", "a · book · beautiful", "a beautiful book"],
+            ["una casa {bella}", "a · house · beautiful", "a beautiful house"],
+            [
+              "una casa {interessante}",
+              "a · house · interesting",
+              "an interesting house"
+            ]
+          ]
+        },
+        {
+          "h": "A few come first",
+          "p": "Most adjectives follow the noun. A small set often comes first, including bello, buono, and grande: <b>una bella casa</b>, <b>un grande libro</b>.",
+          "examples": [
+            ["{una bella} casa", "a beautiful · house", "a beautiful house"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "un libro ＿",
+          "en": "a beautiful book",
+          "options": ["bello", "bella", "belle", "interessante"],
+          "answer": "bello",
+          "why": "libro is masculine: bello."
+        },
+        {
+          "q": "una casa ＿",
+          "en": "a beautiful house",
+          "options": ["bella", "bello", "belli", "belle"],
+          "answer": "bella",
+          "why": "casa is feminine: bella."
+        },
+        {
+          "q": "una casa ＿",
+          "en": "an interesting house",
+          "options": ["interessante", "interessanti", "bella", "bello"],
+          "answer": "interessante",
+          "why": "Adjectives in -e do not change for gender in the singular."
+        },
+        {
+          "q": "i libri ＿",
+          "en": "the beautiful books",
+          "options": ["belli", "bello", "belle", "bella"],
+          "answer": "belli",
+          "why": "Masculine plural: belli."
+        },
+        {
+          "q": "Which is the usual order?",
+          "en": "an interesting book",
+          "options": [
+            "un libro interessante",
+            "un interessante libro",
+            "interessante un libro",
+            "libro un interessante"
+          ],
+          "answer": "un libro interessante",
+          "why": "Most adjectives follow the noun."
+        }
+      ]
+    }
+  ]
+}

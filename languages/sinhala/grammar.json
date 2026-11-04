@@ -1,0 +1,415 @@
+{
+  "schema": "grammar@1",
+  "language": "sinhala",
+  "notes": [
+    "Sinhala first grammar for the Grammar Learner. Written for this project.",
+    "Examples are [Sinhala, transliteration, English]; {braces} mark the point of the lesson.",
+    "Drills are { q, en, options, answer, why }; ＿ is the blank."
+  ],
+  "title": "Sinhala first grammar",
+  "intro": "Sinhala, the main language of Sri Lanka, is an Indo-Aryan language that has lived for two thousand years next to Tamil, and like it puts the verb last. Written Sinhala and spoken Sinhala are quite different; these lessons use the everyday spoken forms, where the verb does not even change for I, you or they. They cover sentences without “is”, the present with -නවා, saying no, questions with ද, the two verbs for “there is”, and to, from and “my”. The transliteration is simplified: a long vowel is doubled.",
+  "lessons": [
+    {
+      "id": "no-to-be",
+      "title": "මම ශිෂ්‍යයෙක් — no “is”",
+      "particle": "මම",
+      "summary": "Saying what someone is needs no verb.",
+      "sections": [
+        {
+          "p": "“I am a student” is just <b>මම ශිෂ්‍යයෙක්</b>. The spoken pronouns: <b>මම</b> I, <b>ඔයා</b> you, <b>එයා</b> he / she, <b>අපි</b> we, <b>එයාලා</b> they. In writing and formal speech “you” is ඔබ.",
+          "examples": [
+            ["{මම} ගුරුවරයෙක්.", "Mama guruvarayek.", "I am a teacher."],
+            [
+              "{එයා} මගේ නංගී.",
+              "Eyaa mage nangii.",
+              "She is my younger sister."
+            ],
+            ["මේ මගේ ගෙදර.", "Me mage gedara.", "This is my house."]
+          ]
+        },
+        {
+          "h": "A, one: -එක් / -ක්",
+          "p": "“A” is an ending: a person takes <b>-එක්</b> (ශිෂ්‍යයෙක්, a student) and a thing <b>-ක්</b> (පොතක්, a book).",
+          "examples": [
+            ["පොත{ක්}", "pothak", "a book"],
+            ["යාළුවෙ{ක්}", "yaaluvek", "a friend"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ලංකාවේ.",
+          "en": "I'm from Sri Lanka. (I [am] of Lanka)",
+          "options": ["මම", "ඔයා", "එයාලා", "අපි"],
+          "answer": "මම",
+          "why": "මම = I."
+        },
+        {
+          "q": "＿ කවුද?",
+          "en": "Who are you?",
+          "options": ["ඔයා", "මම", "අපි", "මේ"],
+          "answer": "ඔයා",
+          "why": "Spoken “you” is ඔයා."
+        },
+        {
+          "q": "Which means “He is a doctor”?",
+          "en": "දොස්තර = doctor",
+          "options": [
+            "එයා දොස්තර කෙනෙක්.",
+            "එයා ඉන්නවා දොස්තර.",
+            "දොස්තරට එයා.",
+            "එයාගේ දොස්තර."
+          ],
+          "answer": "එයා දොස්තර කෙනෙක්.",
+          "why": "No verb; කෙනෙක් means “a (person)”."
+        },
+        {
+          "q": "පොත＿",
+          "en": "a book",
+          "options": ["ක්", "එක්", "ට", "ගේ"],
+          "answer": "ක්",
+          "why": "Things take -ක් for “a”."
+        },
+        {
+          "q": "＿ යාළුවෝ.",
+          "en": "We are friends.",
+          "options": ["අපි", "මම", "ඔයා", "එයා"],
+          "answer": "අපි",
+          "why": "අපි = we."
+        }
+      ]
+    },
+    {
+      "id": "present",
+      "title": "The present: -නවා",
+      "particle": "-නවා",
+      "summary": "Spoken Sinhala adds -නවා to the stem, the same for every person.",
+      "sections": [
+        {
+          "p": "Add <b>-නවා</b> to the stem: යනවා (go), කනවා (eat), බොනවා (drink), කරනවා (do). It means “I do” or “I am doing” and also the near future, and it doesn't change: <b>මම යනවා</b>, <b>ඔයා යනවා</b>, <b>එයාලා යනවා</b>.",
+          "examples": [
+            [
+              "මම සිංහල ඉගෙන ගන්{නවා}.",
+              "Mama sinhala igena gannavaa.",
+              "I am learning Sinhala."
+            ],
+            ["එයා වැඩ කර{නවා}.", "Eyaa vada karanavaa.", "He / she works."],
+            ["අපි හෙට එ{නවා}.", "Api heta enavaa.", "We're coming tomorrow."]
+          ]
+        },
+        {
+          "h": "Wanting and liking",
+          "p": "“Want” is <b>ඕනේ</b> with මට (to me): <b>මට වතුර ඕනේ</b>, “I want water”. “Like” is <b>කැමතියි</b>: මම තේ වලට කැමතියි, “I like tea”.",
+          "examples": [
+            ["{මට} තේ එකක් ඕනේ.", "Mata the ekak one.", "I want a tea."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "මම කෝපි බො＿.",
+          "en": "I drink coffee.",
+          "options": ["නවා", "ද", "නෑ", "ක්"],
+          "answer": "නවා",
+          "why": "Present: -නවා."
+        },
+        {
+          "q": "එයාලා කොළඹ ය＿.",
+          "en": "They are going to Colombo.",
+          "options": ["නවා", "නවාලා", "නවාද", "ක්"],
+          "answer": "නවා",
+          "why": "-නවා is the same for every person."
+        },
+        {
+          "q": "＿ වතුර ඕනේ.",
+          "en": "I want water.",
+          "options": ["මට", "මම", "මගේ", "අපි"],
+          "answer": "මට",
+          "why": "ඕනේ goes with මට, “to me”."
+        },
+        {
+          "q": "Does spoken Sinhala change the verb for “he” and “they”?",
+          "en": "",
+          "options": ["No", "Yes, -නවාලා for they", "Yes, -නවායි for he", "Only for “I”"],
+          "answer": "No",
+          "why": "In speech the -නවා form is the same for everyone."
+        },
+        {
+          "q": "ඔයා මොකද කර＿?",
+          "en": "What are you doing?",
+          "options": ["න්නේ", "නවා", "ක්", "ට"],
+          "answer": "න්නේ",
+          "why": "With a question word, -නවා becomes -න්නේ: මොකද කරන්නේ?"
+        }
+      ]
+    },
+    {
+      "id": "nae",
+      "title": "නෑ and නෙවෙයි — saying no",
+      "particle": "නෑ",
+      "summary": "-න්නේ නෑ for “don't”; නෙවෙයි for “is not (something)”.",
+      "sections": [
+        {
+          "p": "To make a verb negative, change -නවා to <b>-න්නේ නෑ</b>: යනවා → <b>යන්නේ නෑ</b>, “don't go”. On its own, <b>නෑ</b> means “no” or “there isn't”. “Yes” is <b>ඔව්</b>.",
+          "examples": [
+            ["මම මස් කන්{නේ නෑ}.", "Mama mas kanne nae.", "I don't eat meat."],
+            ["මට තේරෙන්{නේ නෑ}.", "Mata therenne nae.", "I don't understand."]
+          ]
+        },
+        {
+          "h": "Not this, but that",
+          "p": "To say something is not a thing, add <b>නෙවෙයි</b>: ඒ කෝපි <b>නෙවෙයි</b>, තේ. “That isn't coffee, it's tea.”",
+          "examples": [
+            [
+              "මේ මගේ බෑග් එක {නෙවෙයි}.",
+              "Me mage baeg eka nevei.",
+              "This isn't my bag."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "මම අද යන්නේ ＿.",
+          "en": "I'm not going today.",
+          "options": ["නෑ", "නෙවෙයි", "ඔව්", "ද"],
+          "answer": "නෑ",
+          "why": "-න්නේ නෑ = don't, not."
+        },
+        {
+          "q": "ඒ කෝපි ＿, තේ.",
+          "en": "That isn't coffee, it's tea.",
+          "options": ["නෙවෙයි", "නෑ", "ඔව්", "නවා"],
+          "answer": "නෙවෙයි",
+          "why": "“Is not (something)” is නෙවෙයි."
+        },
+        {
+          "q": "බොනවා → ＿",
+          "en": "drink → don't drink",
+          "options": ["බොන්නේ නෑ", "බොනවා නෑ", "නෑ බොනවා", "බොනවද"],
+          "answer": "බොන්නේ නෑ",
+          "why": "-නවා becomes -න්නේ, then නෑ."
+        },
+        {
+          "q": "The Sinhala for “yes” is…",
+          "en": "",
+          "options": ["ඔව්", "නෑ", "නෙවෙයි", "මොකක්ද"],
+          "answer": "ඔව්",
+          "why": "ඔව් = yes."
+        },
+        {
+          "q": "මට තේරෙන්නේ ＿.",
+          "en": "I don't understand.",
+          "options": ["නෑ", "ඔව්", "නෙවෙයි", "ද"],
+          "answer": "නෑ",
+          "why": "මට තේරෙන්නේ නෑ: “to me it doesn't become clear”."
+        }
+      ]
+    },
+    {
+      "id": "questions",
+      "title": "Questions with ද",
+      "particle": "ද",
+      "summary": "ද at the end makes a yes/no question; question words end in ද too.",
+      "sections": [
+        {
+          "p": "Add <b>ද</b> (da) to the end for a yes/no question: ඔයා යනවා → <b>ඔයා යනවද?</b> Most question words carry ද: <b>මොකක්ද</b> what, <b>කවුද</b> who, <b>කොහෙද</b> where, <b>කවදද</b> when, <b>ඇයි</b> why, <b>කොහොමද</b> how, <b>කීයද</b> how much.",
+          "examples": [
+            [
+              "ඔයාට ඉංග්‍රීසි පුළුවන්{ද}?",
+              "Oyaata ingriisi puluvanda?",
+              "Can you (speak) English?"
+            ],
+            [
+              "ඔයාගේ නම {මොකක්ද}?",
+              "Oyaage nama mokakda?",
+              "What is your name?"
+            ],
+            ["මේක {කීයද}?", "Meka kiiyada?", "How much is this?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "වැසිකිළිය ＿?",
+          "en": "Where is the toilet?",
+          "options": ["කොහෙද", "මොකක්ද", "කවුද", "ඇයි"],
+          "answer": "කොහෙද",
+          "why": "කොහෙද = where."
+        },
+        {
+          "q": "＿ ඉන්නේ?",
+          "en": "How are you? (How [do you] stay?)",
+          "options": ["කොහොමද", "කොහෙද", "කවුද", "කීයද"],
+          "answer": "කොහොමද",
+          "why": "කොහොමද = how."
+        },
+        {
+          "q": "එයා ＿?",
+          "en": "Who is he?",
+          "options": ["කවුද", "මොකක්ද", "කවදද", "ඇයි"],
+          "answer": "කවුද",
+          "why": "කවුද = who."
+        },
+        {
+          "q": "Make «ඔයා එනවා» a question:",
+          "en": "Are you coming?",
+          "options": ["ඔයා එනවද?", "ද ඔයා එනවා?", "ඔයා එනවා නෑ?", "ඔයා කවුද එනවා?"],
+          "answer": "ඔයා එනවද?",
+          "why": "Add ද to the end."
+        },
+        {
+          "q": "කෝච්චිය ＿ එන්නේ?",
+          "en": "When does the train come?",
+          "options": ["කීයටද", "කොහෙද", "කවුද", "මොකක්ද"],
+          "answer": "කීයටද",
+          "why": "කීයටද = at what time."
+        }
+      ]
+    },
+    {
+      "id": "inna-thiyena",
+      "title": "ඉන්නවා and තියෙනවා",
+      "particle": "ඉන්නවා",
+      "summary": "Two verbs for “there is”: one for living things, one for everything else.",
+      "sections": [
+        {
+          "p": "Sinhala has two verbs for “be there, exist”. Use <b>ඉන්නවා</b> for people and animals and <b>තියෙනවා</b> for things. With මට (to me) they mean “I have”.",
+          "examples": [
+            [
+              "අම්මා ගෙදර {ඉන්නවා}.",
+              "Ammaa gedara innavaa.",
+              "Mum is at home."
+            ],
+            [
+              "මේසෙ උඩ පොතක් {තියෙනවා}.",
+              "Mese uda pothak thiyenavaa.",
+              "There is a book on the table."
+            ],
+            [
+              "මට අයියා කෙනෙක් {ඉන්නවා}.",
+              "Mata ayiyaa kenek innavaa.",
+              "I have an elder brother."
+            ]
+          ]
+        },
+        {
+          "h": "Not there",
+          "p": "For both, “isn't there / don't have” is simply <b>නෑ</b>: මට සල්ලි <b>නෑ</b>, “I have no money”.",
+          "examples": [
+            ["එයා ගෙදර {නෑ}.", "Eyaa gedara nae.", "He isn't at home."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "මට බල්ලෙක් ＿.",
+          "en": "I have a dog.",
+          "options": ["ඉන්නවා", "තියෙනවා", "නෙවෙයි", "ද"],
+          "answer": "ඉන්නවා",
+          "why": "A dog is alive: ඉන්නවා."
+        },
+        {
+          "q": "මට කාර් එකක් ＿.",
+          "en": "I have a car.",
+          "options": ["තියෙනවා", "ඉන්නවා", "නෙවෙයි", "ද"],
+          "answer": "තියෙනවා",
+          "why": "A car is a thing: තියෙනවා."
+        },
+        {
+          "q": "මට වෙලාව ＿.",
+          "en": "I don't have time.",
+          "options": ["නෑ", "නෙවෙයි", "ඔව්", "ඉන්නවා"],
+          "answer": "නෑ",
+          "why": "“Don't have” is නෑ."
+        },
+        {
+          "q": "තාත්තා කාමරේ ＿.",
+          "en": "Dad is in the room.",
+          "options": ["ඉන්නවා", "තියෙනවා", "නෙවෙයි", "කීයද"],
+          "answer": "ඉන්නවා",
+          "why": "A person: ඉන්නවා."
+        },
+        {
+          "q": "ළඟ කඩයක් ＿ද?",
+          "en": "Is there a shop nearby?",
+          "options": ["තියෙනවද", "ඉන්නවද", "නෙවෙයිද", "නෑද"],
+          "answer": "තියෙනවද",
+          "why": "A shop is a thing: තියෙනවා, with ද for the question."
+        }
+      ]
+    },
+    {
+      "id": "cases",
+      "title": "To, from and “my”",
+      "particle": "-ට -ගේ",
+      "summary": "-ට means to; ඉඳන් means from; -ගේ means 's.",
+      "sections": [
+        {
+          "p": "<b>-ට</b> means “to”: කොළඹ<b>ට</b>, to Colombo. <b>ඉඳන්</b> after a place means “from”: මහනුවර <b>ඉඳන්</b>, from Kandy. Many place words need no ending for “in, at”: ගෙදර, at home.",
+          "examples": [
+            [
+              "මම කොළඹ{ට} යනවා.",
+              "Mama kolambata yanavaa.",
+              "I'm going to Colombo."
+            ],
+            [
+              "එයා ගාල්ල {ඉඳන්} ආවා.",
+              "Eyaa gaalla indan aavaa.",
+              "He came from Galle."
+            ]
+          ]
+        },
+        {
+          "h": "My, your",
+          "p": "<b>-ගේ</b> means “'s, of”: <b>මගේ</b> my, <b>ඔයාගේ</b> your, <b>එයාගේ</b> his / her, <b>අපේ</b> our. A name works the same way: නිමල්ගේ ගෙදර, Nimal's house.",
+          "examples": [
+            ["{මගේ} නම අනූෂා.", "Mage nama Anuushaa.", "My name is Anusha."],
+            [
+              "{ඔයාගේ} ගම කොහෙද?",
+              "Oyaage gama koheda?",
+              "Where is your home village?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "මම ඉස්කෝලෙ＿ යනවා.",
+          "en": "I'm going to school.",
+          "options": ["ට", "ගේ", "ඉඳන්", "ද"],
+          "answer": "ට",
+          "why": "-ට = to."
+        },
+        {
+          "q": "එයා ලන්ඩන් ＿ ආවා.",
+          "en": "She came from London.",
+          "options": ["ඉඳන්", "ට", "ගේ", "ක්"],
+          "answer": "ඉඳන්",
+          "why": "ඉඳන් = from."
+        },
+        {
+          "q": "＿ අම්මා ගුරුවරියක්.",
+          "en": "My mother is a teacher.",
+          "options": ["මගේ", "මම", "මට", "ඔයා"],
+          "answer": "මගේ",
+          "why": "මගේ = my."
+        },
+        {
+          "q": "＿ නම මොකක්ද?",
+          "en": "What is your name?",
+          "options": ["ඔයාගේ", "මගේ", "ඔයාට", "එයා"],
+          "answer": "ඔයාගේ",
+          "why": "ඔයාගේ = your."
+        },
+        {
+          "q": "නිමල්＿ කාර් එක",
+          "en": "Nimal's car",
+          "options": ["ගේ", "ට", "ඉඳන්", "ද"],
+          "answer": "ගේ",
+          "why": "-ගේ = 's."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "schema": "grammar@1",
+  "language": "malayalam",
+  "notes": [
+    "Malayalam first grammar for the Grammar Learner. Written for this project.",
+    "Examples are [Malayalam, transliteration, English]; {braces} mark the point of the lesson.",
+    "Drills are { q, en, options, answer, why }; ＿ is the blank."
+  ],
+  "title": "Malayalam first grammar",
+  "intro": "Malayalam, the language of Kerala, is a Dravidian language with an unusually simple verb: unlike its neighbours, it does not change the verb for I, you, he or they. The tense ending does all the work, the verb comes last, and case endings join the end of the noun. These lessons cover “to be” with ആണ്, the present tense, ഇല്ല and അല്ല for “not”, questions, case endings, and “my” and plurals. The transliteration is simplified: a long vowel is doubled (aa, ii, uu).",
+  "lessons": [
+    {
+      "id": "aanu",
+      "title": "ആണ് — “is”",
+      "particle": "ആണ്",
+      "summary": "ആണ് means am / is / are for everyone, and goes at the end.",
+      "sections": [
+        {
+          "p": "<b>ആണ്</b> (aanu) means “am, is, are”, with no change for the subject. The pronouns: <b>ഞാൻ</b> I, <b>നീ</b> you (intimate), <b>നിങ്ങൾ</b> you (polite or plural), <b>അവൻ</b> he, <b>അവൾ</b> she, <b>അദ്ദേഹം</b> he (respectful), <b>അവർ</b> they or she (respectful).",
+          "examples": [
+            [
+              "ഞാൻ വിദ്യാർത്ഥി {ആണ്}.",
+              "Njaan vidyaarthi aanu.",
+              "I am a student."
+            ],
+            [
+              "അവൾ എന്റെ അനിയത്തി {ആണ്}.",
+              "Aval ente aniyathi aanu.",
+              "She is my younger sister."
+            ],
+            [
+              "ഇത് എന്റെ വീട് {ആണ്}.",
+              "Ithu ente viidu aanu.",
+              "This is my house."
+            ]
+          ]
+        },
+        {
+          "h": "In speech",
+          "p": "ആണ് often joins the word before it: വീടാണ് (viidaanu). <b>ഞങ്ങൾ</b> means “we, but not you”, and <b>നമ്മൾ</b> “we, including you”.",
+          "examples": [
+            [
+              "{നമ്മൾ} സുഹൃത്തുക്കളാണ്.",
+              "Nammal suhruthukkalaanu.",
+              "We (you and I) are friends."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ഞാൻ ഇന്ത്യക്കാരൻ ＿.",
+          "en": "I am Indian. (a man)",
+          "options": ["ആണ്", "ഇല്ല", "ഉണ്ട്", "അല്ല"],
+          "answer": "ആണ്",
+          "why": "“Am” is ആണ്."
+        },
+        {
+          "q": "അവർ ഡോക്ടർ ＿.",
+          "en": "They are doctors.",
+          "options": ["ആണ്", "ആണോ", "ഇല്ല", "ഉണ്ട്"],
+          "answer": "ആണ്",
+          "why": "ആണ് is the same for every subject."
+        },
+        {
+          "q": "＿ എന്റെ ചേട്ടൻ ആണ്.",
+          "en": "He is my elder brother.",
+          "options": ["അവൻ", "അവൾ", "ഞാൻ", "നമ്മൾ"],
+          "answer": "അവൻ",
+          "why": "അവൻ = he."
+        },
+        {
+          "q": "Which “we” includes the listener?",
+          "en": "",
+          "options": ["നമ്മൾ", "ഞങ്ങൾ", "നിങ്ങൾ", "അവർ"],
+          "answer": "നമ്മൾ",
+          "why": "നമ്മൾ is “we, you included”."
+        },
+        {
+          "q": "＿ ആരാണ്?",
+          "en": "Who are you? (polite)",
+          "options": ["നിങ്ങൾ", "ഞാൻ", "അവൾ", "നമ്മൾ"],
+          "answer": "നിങ്ങൾ",
+          "why": "Polite “you” is നിങ്ങൾ."
+        }
+      ]
+    },
+    {
+      "id": "present",
+      "title": "The present tense: -ഉന്നു",
+      "particle": "-ഉന്നു",
+      "summary": "Stem + -ഉന്നു, the same for every person.",
+      "sections": [
+        {
+          "p": "Add <b>-ഉന്നു</b> (-unnu) to the stem for the present: വായിക്കുക (to read) → <b>വായിക്കുന്നു</b>. It does not change for the person: ഞാൻ വായിക്കുന്നു, അവൾ വായിക്കുന്നു, അവർ വായിക്കുന്നു.",
+          "examples": [
+            [
+              "ഞാൻ മലയാളം പഠിക്ക{ുന്നു}.",
+              "Njaan malayaalam padikkunnu.",
+              "I am learning Malayalam."
+            ],
+            ["അവൾ പാട{ുന്നു}.", "Aval paadunnu.", "She sings."],
+            [
+              "നിങ്ങൾ എവിടെ താമസിക്ക{ുന്നു}?",
+              "Ningal evide thaamasikkunnu?",
+              "Where do you live?"
+            ]
+          ]
+        },
+        {
+          "h": "Happening now, and the future",
+          "p": "For “right now” add <b>-ഉണ്ട്</b>: <b>വായിക്കുന്നുണ്ട്</b>. For the future use <b>-ഉം</b>: ഞാൻ നാളെ <b>വരും</b>, “I'll come tomorrow”.",
+          "examples": [
+            ["ഞാൻ നാളെ {വരും}.", "Njaan naale varum.", "I'll come tomorrow."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ഞാൻ കാപ്പി കുടിക്ക＿.",
+          "en": "I drink coffee.",
+          "options": ["ുന്നു", "ും", "ണം", "ില്ല"],
+          "answer": "ുന്നു",
+          "why": "Present: -ഉന്നു."
+        },
+        {
+          "q": "അവൻ ജോലി ചെയ്യ＿.",
+          "en": "He works.",
+          "options": ["ുന്നു", "ുന്നാൻ", "ുന്നാൾ", "ുന്നേൻ"],
+          "answer": "ുന്നു",
+          "why": "The ending is the same for he, she and I."
+        },
+        {
+          "q": "ഞാൻ നാളെ പോക＿.",
+          "en": "I will go tomorrow.",
+          "options": ["ും", "ുന്നു", "ില്ല", "ണം"],
+          "answer": "ും",
+          "why": "Future: -ഉം."
+        },
+        {
+          "q": "Does the Malayalam verb change for “he” and “she”?",
+          "en": "",
+          "options": ["No", "Yes, -ആൻ / -ആൾ", "Only in the past", "Only for “I”"],
+          "answer": "No",
+          "why": "Modern Malayalam verbs do not mark the person at all."
+        },
+        {
+          "q": "അവർ മലയാളം സംസാരിക്ക＿.",
+          "en": "They speak Malayalam.",
+          "options": ["ുന്നു", "ും", "ുന്നില്ല", "ണം"],
+          "answer": "ുന്നു",
+          "why": "Present: -ഉന്നു."
+        }
+      ]
+    },
+    {
+      "id": "illa-alla",
+      "title": "ഉണ്ട്, ഇല്ല and അല്ല",
+      "particle": "ഇല്ല അല്ല",
+      "summary": "ഉണ്ട്: is there. ഇല്ല: isn't there, or “not” after a verb. അല്ല: is not (something).",
+      "sections": [
+        {
+          "p": "<b>ഉണ്ട്</b> means “is there, exists”, and <b>ഇല്ല</b> “isn't there”. <b>ഇല്ല</b> after a verb also makes it negative: വായിക്കുന്നില്ല, “doesn't read”. <b>അല്ല</b> is the negative of ആണ്: ഇത് ചായ <b>അല്ല</b>, “this isn't tea”.",
+          "examples": [
+            [
+              "ഇവിടെ ഒരു കട {ഉണ്ട്}.",
+              "Ivide oru kada undu.",
+              "There is a shop here."
+            ],
+            [
+              "അച്ഛൻ വീട്ടിൽ {ഇല്ല}.",
+              "Achan viittil illa.",
+              "Dad isn't at home."
+            ],
+            [
+              "ഇത് എന്റെ ബാഗ് {അല്ല}.",
+              "Ithu ente baag alla.",
+              "This isn't my bag."
+            ]
+          ]
+        },
+        {
+          "h": "Having",
+          "p": "Malayalam says “to me there is”: <b>എനിക്ക്</b> + noun + ഉണ്ട് / ഇല്ല. “I don't know” is <b>എനിക്ക് അറിയില്ല</b>. Yes is <b>അതെ</b>, no is <b>ഇല്ല</b> or <b>അല്ല</b>.",
+          "examples": [
+            [
+              "{എനിക്ക്} ഒരു ചേട്ടൻ ഉണ്ട്.",
+              "Enikku oru chettan undu.",
+              "I have an elder brother."
+            ],
+            ["{എനിക്ക്} അറിയില്ല.", "Enikku ariyilla.", "I don't know."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ഇത് കാപ്പി ＿, ചായ ആണ്.",
+          "en": "This isn't coffee, it's tea.",
+          "options": ["അല്ല", "ഇല്ല", "ഉണ്ട്", "അതെ"],
+          "answer": "അല്ല",
+          "why": "The negative of ആണ് is അല്ല."
+        },
+        {
+          "q": "ഫ്രിഡ്ജിൽ പാൽ ＿.",
+          "en": "There's no milk in the fridge.",
+          "options": ["ഇല്ല", "അല്ല", "ഉണ്ട്", "ആണ്"],
+          "answer": "ഇല്ല",
+          "why": "“There isn't” is ഇല്ല."
+        },
+        {
+          "q": "＿ സമയം ഇല്ല.",
+          "en": "I don't have time.",
+          "options": ["എനിക്ക്", "ഞാൻ", "എന്റെ", "നമ്മൾ"],
+          "answer": "എനിക്ക്",
+          "why": "Having uses എനിക്ക്, “to me”."
+        },
+        {
+          "q": "ഞാൻ മീൻ കഴിക്കുന്ന＿.",
+          "en": "I don't eat fish.",
+          "options": ["ില്ല", "ല്ല", "ുണ്ട്", "ാണ്"],
+          "answer": "ില്ല",
+          "why": "-ഇല്ല after the verb: കഴിക്കുന്നില്ല."
+        },
+        {
+          "q": "The Malayalam for “yes” is…",
+          "en": "",
+          "options": ["അതെ", "ഇല്ല", "അല്ല", "എന്ത്"],
+          "answer": "അതെ",
+          "why": "അതെ = yes."
+        }
+      ]
+    },
+    {
+      "id": "questions",
+      "title": "Asking questions",
+      "particle": "-ഓ",
+      "summary": "Add -ഓ to the end for yes or no; question words stay where the answer goes.",
+      "sections": [
+        {
+          "p": "Add <b>-ഓ</b> to the last word for a yes/no question: ആണ് → <b>ആണോ?</b>, ഉണ്ട് → <b>ഉണ്ടോ?</b> Question words: <b>എന്ത്</b> what, <b>ആര്</b> who, <b>എവിടെ</b> where, <b>എപ്പോൾ</b> when, <b>എന്തിന് / എന്തുകൊണ്ട്</b> why, <b>എങ്ങനെ</b> how, <b>എത്ര</b> how much.",
+          "examples": [
+            [
+              "നിങ്ങൾക്ക് ഇംഗ്ലീഷ് അറിയാമ{ോ}?",
+              "Ningalkku ingliish ariyaamo?",
+              "Do you know English?"
+            ],
+            [
+              "നിങ്ങളുടെ പേര് {എന്താണ്}?",
+              "Ningalude peru enthaanu?",
+              "What is your name?"
+            ],
+            ["ഇതിന് {എത്ര} ആണ്?", "Ithinu ethra aanu?", "How much is this?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ബസ് സ്റ്റാൻഡ് ＿ ആണ്?",
+          "en": "Where is the bus stand?",
+          "options": ["എവിടെ", "എന്ത്", "ആര്", "എത്ര"],
+          "answer": "എവിടെ",
+          "why": "എവിടെ = where."
+        },
+        {
+          "q": "സുഖം ആണ＿?",
+          "en": "Are you well?",
+          "options": ["ോ", "ും", "ില്ല", "ുന്നു"],
+          "answer": "ോ",
+          "why": "-ഓ makes a yes/no question: സുഖമാണോ?"
+        },
+        {
+          "q": "അത് ＿ ആണ്?",
+          "en": "Who is that?",
+          "options": ["ആര്", "എന്ത്", "എപ്പോൾ", "എവിടെ"],
+          "answer": "ആര്",
+          "why": "ആര് = who."
+        },
+        {
+          "q": "നിങ്ങൾ ＿ ഉണ്ട്?",
+          "en": "How are you?",
+          "options": ["എങ്ങനെ", "എവിടെ", "എത്ര", "ആര്"],
+          "answer": "എങ്ങനെ",
+          "why": "എങ്ങനെ = how."
+        },
+        {
+          "q": "ട്രെയിൻ ＿ വരും?",
+          "en": "When will the train come?",
+          "options": ["എപ്പോൾ", "എവിടെ", "എന്തിന്", "ആര്"],
+          "answer": "എപ്പോൾ",
+          "why": "എപ്പോൾ = when."
+        }
+      ]
+    },
+    {
+      "id": "cases",
+      "title": "In, from, to: -ഇൽ, -ഇൽ നിന്ന്, -ക്ക്",
+      "particle": "-ഇൽ -ക്ക്",
+      "summary": "Case endings join the noun where English uses prepositions.",
+      "sections": [
+        {
+          "p": "<b>-ഇൽ</b> means “in, at”, <b>-ഇൽ നിന്ന്</b> “from”, <b>-ക്ക് / -ന്</b> “to, for”, and <b>-ഇലേക്ക്</b> “towards, to (a place)”. വീട് → <b>വീട്ടിൽ</b>, at home.",
+          "examples": [
+            [
+              "ഞാൻ കൊച്ചി{യിൽ} താമസിക്കുന്നു.",
+              "Njaan kochiyil thaamasikkunnu.",
+              "I live in Kochi."
+            ],
+            [
+              "അവർ ദുബായി{ൽ നിന്ന്} വന്നു.",
+              "Avar dubaayil ninnu vannu.",
+              "They came from Dubai."
+            ],
+            [
+              "ഞാൻ കട{യിലേക്ക്} പോകുന്നു.",
+              "Njaan kadayilekku pokunnu.",
+              "I'm going to the shop."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "പുസ്തകം ബാഗ＿ ഉണ്ട്.",
+          "en": "The book is in the bag.",
+          "options": ["ിൽ", "ിൽ നിന്ന്", "ിലേക്ക്", "കൾ"],
+          "answer": "ിൽ",
+          "why": "-ഇൽ = in."
+        },
+        {
+          "q": "ഞാൻ ലണ്ടന＿ വന്നു.",
+          "en": "I came from London.",
+          "options": ["ിൽ നിന്ന്", "ിൽ", "ിലേക്ക്", "ക്ക്"],
+          "answer": "ിൽ നിന്ന്",
+          "why": "-ഇൽ നിന്ന് = from."
+        },
+        {
+          "q": "ഞാൻ സ്കൂള＿ പോകുന്നു.",
+          "en": "I go to school.",
+          "options": ["ിലേക്ക്", "ിൽ", "ിൽ നിന്ന്", "കൾ"],
+          "answer": "ിലേക്ക്",
+          "why": "-ഇലേക്ക് = to (a place)."
+        },
+        {
+          "q": "അവൻ ＿ ഉണ്ട്.",
+          "en": "He is at home.",
+          "options": ["വീട്ടിൽ", "വീടിലേക്ക്", "വീട്ടിൽ നിന്ന്", "വീട്"],
+          "answer": "വീട്ടിൽ",
+          "why": "“At home” is വീട്ടിൽ."
+        },
+        {
+          "q": "അമ്മ＿ ഒരു സമ്മാനം",
+          "en": "a present for Mum",
+          "options": ["ക്ക്", "യിൽ", "യിൽ നിന്ന്", "മാർ"],
+          "answer": "ക്ക്",
+          "why": "-ക്ക് = for, to: അമ്മയ്ക്ക്."
+        }
+      ]
+    },
+    {
+      "id": "ente-kal",
+      "title": "My, and plurals with -കൾ",
+      "particle": "എന്റെ -കൾ",
+      "summary": "എന്റെ, നിങ്ങളുടെ before the noun; -കൾ makes a plural.",
+      "sections": [
+        {
+          "p": "<b>എന്റെ</b> my, <b>നിന്റെ</b> your (intimate), <b>നിങ്ങളുടെ</b> your (polite), <b>അവന്റെ</b> his, <b>അവളുടെ</b> her, <b>ഞങ്ങളുടെ / നമ്മുടെ</b> our. For a name add <b>-ന്റെ / -ഉടെ</b>: രാമന്റെ വീട്, Raman's house.",
+          "examples": [
+            ["{എന്റെ} പേര് മീര.", "Ente peru Miira.", "My name is Meera."],
+            [
+              "{നിങ്ങളുടെ} നാട് ഏതാണ്?",
+              "Ningalude naadu ethaanu?",
+              "Where is your home place?"
+            ]
+          ]
+        },
+        {
+          "h": "Plurals",
+          "p": "Add <b>-കൾ</b>: പുസ്തകം → <b>പുസ്തകങ്ങൾ</b>, books (-ം becomes -ങ്ങ-). Some people nouns take <b>-മാർ</b>: അമ്മ → അമ്മമാർ, mothers.",
+          "examples": [
+            ["കുട്ടി{കൾ}", "kuttikal", "children"],
+            ["പുസ്തക{ങ്ങൾ}", "pusthakangal", "books"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ അമ്മ ടീച്ചർ ആണ്.",
+          "en": "My mother is a teacher.",
+          "options": ["എന്റെ", "ഞാൻ", "എനിക്ക്", "നിങ്ങളുടെ"],
+          "answer": "എന്റെ",
+          "why": "എന്റെ = my."
+        },
+        {
+          "q": "＿ പേര് എന്താണ്?",
+          "en": "What is your name? (polite)",
+          "options": ["നിങ്ങളുടെ", "എന്റെ", "നിന്റെ", "അവളുടെ"],
+          "answer": "നിങ്ങളുടെ",
+          "why": "Polite “your” is നിങ്ങളുടെ."
+        },
+        {
+          "q": "മരം → ＿",
+          "en": "tree → trees",
+          "options": ["മരങ്ങൾ", "മരംകൾ", "മരത്തിൽ", "മരമാർ"],
+          "answer": "മരങ്ങൾ",
+          "why": "-ം becomes -ങ്ങ- before -ൾ."
+        },
+        {
+          "q": "കുട്ടി → ＿",
+          "en": "child → children",
+          "options": ["കുട്ടികൾ", "കുട്ടിമാർ", "കുട്ടിയിൽ", "കുട്ടിക്ക്"],
+          "answer": "കുട്ടികൾ",
+          "why": "Add -കൾ."
+        },
+        {
+          "q": "അവള＿ കാർ",
+          "en": "her car",
+          "options": ["ുടെ", "ിൽ", "ക്ക്", "കൾ"],
+          "answer": "ുടെ",
+          "why": "-ഉടെ = 's, of: അവളുടെ."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,932 @@
+{
+  "schema": "grammar@1",
+  "language": "cyrillic",
+  "notes": [
+    "Russian first grammar for the Grammar Learner. Written for this project.",
+    "Examples are [Russian, transliteration, English]; {braces} mark the point of the lesson.",
+    "Drills are { q, en, options, answer, why }; ＿ is the blank.",
+    "",
+    "Sources (open / educational; attested constructions — original example sentences):",
+    "- Wiktionary Russian lemmas and grammar notes (CC BY-SA): это, gender, читать conjugations,",
+    "  accusative/prepositional endings, plurals, у + genitive + есть, нет + genitive, past -л,",
+    "  куда + accusative, идти/ехать, нравиться + dative, буду + infinitive.",
+    "- Wikipedia “Russian grammar”, “Grammatical case”, “Russian verbs of motion”,",
+    "  “Grammatical aspect” (CC BY-SA) for case uses and beginner overview.",
+    "- In-repo languages/cyrillic/reference.json cards (to-be-have, past-tense, where-whither,",
+    "  motion, like, cases) — same beginner seam; examples here are original.",
+    "Lessons 1–6 unchanged; 7–12 deepen the same seam (have/нет, past, direction, motion,",
+    "liking with the dative, compound future)."
+  ],
+  "title": "Russian first grammar",
+  "intro": "Russian has no words for “a” or “the”, usually drops “is” in the present, and shows a noun's job by changing its ending. Lessons 1–6 cover это, gender, the present tense, the object ending, в / на for location, and plurals. Lessons 7–12 add “to have” with нет + genitive, the past, куда? (where to), идти / ехать, мне нравится, and the compound future with буду.",
+  "lessons": [
+    {
+      "id": "eto",
+      "title": "Это and the missing “is”",
+      "particle": "это",
+      "summary": "“This is …”, and sentences with no verb at all.",
+      "sections": [
+        {
+          "p": "<b>Это</b> means “this is” or “that is”, and it never changes. Russian has no “a” or “the”, so “это книга” is simply “this is a book”.",
+          "examples": [
+            ["{Это} книга.", "Eto kniga.", "This is a book."],
+            ["{Это} мой брат.", "Eto moy brat.", "This is my brother."],
+            ["Что {это}?", "Chto eto?", "What is this?"]
+          ]
+        },
+        {
+          "h": "No “is” in the present",
+          "p": "In the present tense “am / is / are” is left out. In writing a dash sometimes stands in its place between two nouns.",
+          "examples": [
+            ["Я студент.", "Ya student.", "I am a student."],
+            [
+              "Москва — столица России.",
+              "Moskva — stolitsa Rossii.",
+              "Moscow is the capital of Russia."
+            ],
+            ["Он дома.", "On doma.", "He is at home."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "What does «Это стол» mean?",
+          "en": "стол = table",
+          "options": [
+            "This is a table.",
+            "This table.",
+            "It's on the table.",
+            "Is this a table?"
+          ],
+          "answer": "This is a table.",
+          "why": "Это = “this is”; there is no word for “a”."
+        },
+        {
+          "q": "How do you say “I am a doctor”?",
+          "en": "врач = doctor",
+          "options": ["Я врач.", "Я есть врач.", "Я это врач.", "Мне врач."],
+          "answer": "Я врач.",
+          "why": "The present-tense “am” is simply left out."
+        },
+        {
+          "q": "＿ моя мама.",
+          "en": "This is my mum.",
+          "options": ["Это", "Эта", "Этот", "Есть"],
+          "answer": "Это",
+          "why": "In “this is …” sentences it is always это, whatever the gender."
+        },
+        {
+          "q": "How do you ask “What is this?”",
+          "en": "",
+          "options": ["Что это?", "Кто это?", "Это что есть?", "Что есть?"],
+          "answer": "Что это?",
+          "why": "Что = what; кто would be “who”."
+        },
+        {
+          "q": "What does «Она дома» mean?",
+          "en": "она = she",
+          "options": [
+            "She is at home.",
+            "Her house.",
+            "She has a house.",
+            "She goes home."
+          ],
+          "answer": "She is at home.",
+          "why": "No verb is needed: она (she) + дома (at home)."
+        }
+      ]
+    },
+    {
+      "id": "gender",
+      "title": "He, she, it: noun gender",
+      "particle": "он / она / оно",
+      "summary": "The ending of a noun tells you its gender.",
+      "sections": [
+        {
+          "p": "Every noun is masculine, feminine or neuter, and you can nearly always tell from the last letter. <b>Consonant</b> or -й: masculine (он). <b>-а / -я</b>: feminine (она). <b>-о / -е</b>: neuter (оно).",
+          "examples": [
+            ["дом → {он}", "dom → on", "house: masculine"],
+            ["книга → {она}", "kniga → ona", "book: feminine"],
+            ["окно → {оно}", "okno → ono", "window: neuter"]
+          ]
+        },
+        {
+          "h": "My: мой, моя, моё",
+          "p": "Words that go with a noun take the same gender: мой дом, моя книга, моё окно. Nouns ending in -ь can be either gender and are learned one by one; a few male people end in -а (папа, “dad”) and are masculine anyway.",
+          "examples": [
+            ["{мой} дом", "moy dom", "my house"],
+            ["{моя} книга", "moya kniga", "my book"],
+            ["{моё} окно", "moyo okno", "my window"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "машина (car) is…",
+          "en": "",
+          "options": ["feminine", "masculine", "neuter"],
+          "answer": "feminine",
+          "why": "It ends in -а: feminine (она)."
+        },
+        {
+          "q": "письмо (letter) is…",
+          "en": "",
+          "options": ["neuter", "masculine", "feminine"],
+          "answer": "neuter",
+          "why": "It ends in -о: neuter (оно)."
+        },
+        {
+          "q": "＿ телефон",
+          "en": "my phone",
+          "options": ["мой", "моя", "моё"],
+          "answer": "мой",
+          "why": "телефон ends in a consonant: masculine, so мой."
+        },
+        {
+          "q": "＿ сестра",
+          "en": "my sister",
+          "options": ["моя", "мой", "моё"],
+          "answer": "моя",
+          "why": "сестра ends in -а: feminine, so моя."
+        },
+        {
+          "q": "＿ море",
+          "en": "my sea",
+          "options": ["моё", "мой", "моя"],
+          "answer": "моё",
+          "why": "море ends in -е: neuter, so моё."
+        },
+        {
+          "q": "Where is the book? — ＿ здесь.",
+          "en": "It is here. (книга = book)",
+          "options": ["Она", "Он", "Оно"],
+          "answer": "Она",
+          "why": "книга is feminine, so “it” is она."
+        }
+      ]
+    },
+    {
+      "id": "present",
+      "title": "The present tense",
+      "particle": "-ю -ешь -ет",
+      "summary": "One verb pattern that covers a huge number of verbs: читать, to read.",
+      "sections": [
+        {
+          "p": "Take the infinitive, drop <b>-ть</b>, and add an ending for the person. This pattern fits most verbs ending in -ать and -ять.",
+          "examples": [
+            ["я чита{ю}", "ya chitayu", "I read"],
+            ["ты чита{ешь}", "ty chitayesh'", "you read (one friend)"],
+            ["он / она чита{ет}", "on / ona chitayet", "he / she reads"],
+            ["мы чита{ем}", "my chitayem", "we read"],
+            ["вы чита{ете}", "vy chitayete", "you read (several, or polite)"],
+            ["они чита{ют}", "oni chitayut", "they read"]
+          ]
+        },
+        {
+          "h": "The same pattern",
+          "p": "знать (know), делать (do), работать (work), понимать (understand) and гулять (walk) all behave the same way. One present tense covers “I read”, “I am reading” and “I do read”.",
+          "examples": [
+            ["Я не {понимаю}.", "Ya ne ponimayu.", "I don't understand."],
+            ["Что ты {делаешь}?", "Chto ty delayesh'?", "What are you doing?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Я ＿ .",
+          "en": "I know. (знать)",
+          "options": ["знаю", "знает", "знаешь", "знать"],
+          "answer": "знаю",
+          "why": "я takes -ю: знаю."
+        },
+        {
+          "q": "Она ＿ в банке.",
+          "en": "She works at a bank. (работать)",
+          "options": ["работает", "работаю", "работают", "работаешь"],
+          "answer": "работает",
+          "why": "он / она takes -ет."
+        },
+        {
+          "q": "Мы ＿ по-русски.",
+          "en": "We read Russian. (читать)",
+          "options": ["читаем", "читают", "читаешь", "читаете"],
+          "answer": "читаем",
+          "why": "мы takes -ем."
+        },
+        {
+          "q": "Ты ＿ ?",
+          "en": "Do you understand? (понимать)",
+          "options": ["понимаешь", "понимаю", "понимает", "понимать"],
+          "answer": "понимаешь",
+          "why": "ты takes -ешь."
+        },
+        {
+          "q": "Они ＿ в парке.",
+          "en": "They walk in the park. (гулять)",
+          "options": ["гуляют", "гуляет", "гуляем", "гуляю"],
+          "answer": "гуляют",
+          "why": "они takes -ют."
+        },
+        {
+          "q": "Вы ＿ ?",
+          "en": "What are you doing? (делать)",
+          "options": ["делаете", "делаем", "делают", "делаешь"],
+          "answer": "делаете",
+          "why": "вы takes -ете."
+        }
+      ]
+    },
+    {
+      "id": "accusative",
+      "title": "The object: -у and -ю",
+      "particle": "-а → -у",
+      "summary": "Feminine nouns change -а to -у when they are the object.",
+      "sections": [
+        {
+          "p": "When a noun is the thing you read, see or buy, it goes into the <b>accusative</b>. For feminine nouns, -а becomes <b>-у</b> and -я becomes <b>-ю</b>.",
+          "examples": [
+            ["Я читаю книг{у}.", "Ya chitayu knigu.", "I'm reading a book."],
+            ["Он любит Анн{у}.", "On lyubit Annu.", "He loves Anna."],
+            [
+              "Мы ждём Тан{ю}.",
+              "My zhdyom Tanyu.",
+              "We're waiting for Tanya."
+            ]
+          ]
+        },
+        {
+          "h": "Things that don't change",
+          "p": "Masculine nouns for things, and all neuter nouns, stay exactly as they are. (Masculine nouns for people and animals do change; that comes later.)",
+          "examples": [
+            ["Я вижу дом.", "Ya vizhu dom.", "I see a house."],
+            ["Она пьёт молоко.", "Ona p'yot moloko.", "She drinks milk."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Я читаю ＿ .",
+          "en": "I'm reading a newspaper. (газета)",
+          "options": ["газету", "газета", "газете", "газеты"],
+          "answer": "газету",
+          "why": "Feminine object: -а → -у."
+        },
+        {
+          "q": "Он пьёт ＿ .",
+          "en": "He drinks water. (вода)",
+          "options": ["воду", "вода", "воде", "воды"],
+          "answer": "воду",
+          "why": "вода is feminine and the object: воду."
+        },
+        {
+          "q": "Мы смотрим ＿ .",
+          "en": "We're watching a film. (фильм)",
+          "options": ["фильм", "фильму", "фильма", "фильме"],
+          "answer": "фильм",
+          "why": "Masculine things don't change in the accusative."
+        },
+        {
+          "q": "Я знаю ＿ .",
+          "en": "I know Olya. (Оля)",
+          "options": ["Олю", "Оля", "Олу", "Оле"],
+          "answer": "Олю",
+          "why": "-я becomes -ю."
+        },
+        {
+          "q": "Она открывает ＿ .",
+          "en": "She opens the window. (окно)",
+          "options": ["окно", "окну", "окна", "окне"],
+          "answer": "окно",
+          "why": "Neuter nouns don't change in the accusative."
+        }
+      ]
+    },
+    {
+      "id": "prepositional",
+      "title": "в and на: where things are",
+      "particle": "в / на + -е",
+      "summary": "“In” and “at” take the prepositional case, usually ending in -е.",
+      "sections": [
+        {
+          "p": "To say where something is, use <b>в</b> (in) or <b>на</b> (on, at) and change the noun's ending, most often to <b>-е</b>. Consonant: add -е. -а / -я / -о: replace with -е.",
+          "examples": [
+            ["в парк{е}", "v parke", "in the park (парк)"],
+            ["в школ{е}", "v shkole", "at school (школа)"],
+            ["на стол{е}", "na stole", "on the table (стол)"],
+            ["в Москв{е}", "v Moskve", "in Moscow (Москва)"]
+          ]
+        },
+        {
+          "h": "Places that take на",
+          "p": "Some places use на where English says “at”: на работе (at work), на почте (at the post office), на улице (outside, “on the street”). Learn them as you meet them.",
+          "examples": [
+            ["Папа {на} работе.", "Papa na rabote.", "Dad is at work."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Книга на ＿ .",
+          "en": "The book is on the table. (стол)",
+          "options": ["столе", "стол", "столу", "стола"],
+          "answer": "столе",
+          "why": "After на for a location, add -е: столе."
+        },
+        {
+          "q": "Я живу в ＿ .",
+          "en": "I live in London. (Лондон)",
+          "options": ["Лондоне", "Лондон", "Лондону", "Лондона"],
+          "answer": "Лондоне",
+          "why": "в + location: Лондоне."
+        },
+        {
+          "q": "Дети в ＿ .",
+          "en": "The children are at school. (школа)",
+          "options": ["школе", "школа", "школу", "школы"],
+          "answer": "школе",
+          "why": "-а is replaced by -е."
+        },
+        {
+          "q": "Она на ＿ .",
+          "en": "She is at work. (работа)",
+          "options": ["работе", "работа", "работу", "работы"],
+          "answer": "работе",
+          "why": "на работе: -а → -е."
+        },
+        {
+          "q": "Мы в ＿ .",
+          "en": "We're in the city. (город)",
+          "options": ["городе", "город", "городу", "города"],
+          "answer": "городе",
+          "why": "Consonant ending: add -е."
+        }
+      ]
+    },
+    {
+      "id": "plural",
+      "title": "Plurals: -ы and -и",
+      "particle": "-ы / -и / -а",
+      "summary": "Most masculine and feminine nouns add -ы or -и; neuters end in -а.",
+      "sections": [
+        {
+          "p": "Masculine nouns add <b>-ы</b>; feminine nouns swap -а for <b>-ы</b>. After г, к, х, ж, ш, ч, щ (and for -я / -ь endings) the ending is <b>-и</b> instead, because Russian spelling never writes ы after those letters.",
+          "examples": [
+            ["стол → стол{ы}", "stol → stoly", "table → tables"],
+            ["мама → мам{ы}", "mama → mamy", "mum → mums"],
+            ["книга → книг{и}", "kniga → knigi", "book → books"],
+            ["неделя → недел{и}", "nedelya → nedeli", "week → weeks"]
+          ]
+        },
+        {
+          "h": "Neuter plurals",
+          "p": "Neuter -о becomes <b>-а</b>, and -е becomes <b>-я</b>. The stress often moves too.",
+          "examples": [
+            ["окно → окн{а}", "okno → okna", "window → windows"],
+            ["море → мор{я}", "more → morya", "sea → seas"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "журнал → ？",
+          "en": "magazine → magazines",
+          "options": ["журналы", "журнали", "журнала", "журналя"],
+          "answer": "журналы",
+          "why": "Masculine, ending in л: add -ы."
+        },
+        {
+          "q": "собака → ？",
+          "en": "dog → dogs",
+          "options": ["собаки", "собакы", "собаку", "собака"],
+          "answer": "собаки",
+          "why": "After к the ending is -и, never -ы."
+        },
+        {
+          "q": "лампа → ？",
+          "en": "lamp → lamps",
+          "options": ["лампы", "лампи", "лампу", "лампе"],
+          "answer": "лампы",
+          "why": "Feminine -а becomes -ы after п."
+        },
+        {
+          "q": "место → ？",
+          "en": "place → places",
+          "options": ["места", "месты", "мести", "месте"],
+          "answer": "места",
+          "why": "Neuter -о becomes -а."
+        },
+        {
+          "q": "нож → ？",
+          "en": "knife → knives",
+          "options": ["ножи", "ножы", "ножа", "ноже"],
+          "answer": "ножи",
+          "why": "After ж, Russian writes и, not ы."
+        }
+      ]
+    },
+    {
+      "id": "have-net",
+      "title": "У меня есть and нет",
+      "particle": "у … есть / нет",
+      "summary": "“I have” is “at me there is”; “I don't have” uses нет and the genitive.",
+      "sections": [
+        {
+          "p": "Russian says <b>у</b> + person + <b>есть</b> + thing for “have”: у меня есть книга. The person after у is in the <b>genitive</b>: меня, тебя, него, неё, нас, вас, них. The thing stays nominative when there is есть.",
+          "examples": [
+            ["{У меня есть} кот.", "U menya yest' kot.", "I have a cat."],
+            [
+              "{У тебя есть} время?",
+              "U tebya yest' vremya?",
+              "Do you have time?"
+            ],
+            [
+              "{У него есть} машина.",
+              "U nego yest' mashina.",
+              "He has a car."
+            ]
+          ]
+        },
+        {
+          "h": "нет + genitive",
+          "p": "To say there isn't / I don't have, drop есть and use <b>нет</b>. The thing switches to the genitive: masculine consonant → <b>-а / -я</b>, feminine -а / -я → <b>-ы / -и</b>, neuter -о / -е → <b>-а / -я</b>.",
+          "examples": [
+            [
+              "У меня {нет} кота.",
+              "U menya net kota.",
+              "I don't have a cat. (кот → кота)"
+            ],
+            [
+              "У нас {нет} книги.",
+              "U nas net knigi.",
+              "We don't have a book. (книга → книги)"
+            ],
+            [
+              "Здесь {нет} молока.",
+              "Zdes' net moloka.",
+              "There's no milk here. (молоко → молока)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "How do you say “I have a brother”?",
+          "en": "брат = brother",
+          "options": [
+            "У меня есть брат.",
+            "Я есть брат.",
+            "Мне есть брат.",
+            "Я имею брат."
+          ],
+          "answer": "У меня есть брат.",
+          "why": "Have = у + genitive person + есть + thing."
+        },
+        {
+          "q": "У тебя ＿ время?",
+          "en": "Do you have time?",
+          "options": ["есть", "нет", "это", "был"],
+          "answer": "есть",
+          "why": "Questions about having still use есть."
+        },
+        {
+          "q": "У меня нет ＿ .",
+          "en": "I don't have a dog. (собака)",
+          "options": ["собаки", "собака", "собаку", "собаке"],
+          "answer": "собаки",
+          "why": "нет takes the genitive: -а → -ы/-и."
+        },
+        {
+          "q": "У неё нет ＿ .",
+          "en": "She doesn't have a house. (дом)",
+          "options": ["дома", "дом", "дому", "доме"],
+          "answer": "дома",
+          "why": "Masculine consonant → -а after нет."
+        },
+        {
+          "q": "What does «У нас нет молока» mean?",
+          "en": "",
+          "options": [
+            "We don't have milk.",
+            "We have milk.",
+            "The milk is with us.",
+            "We drink milk."
+          ],
+          "answer": "We don't have milk.",
+          "why": "нет + genitive молока = there is no milk / we don't have milk."
+        }
+      ]
+    },
+    {
+      "id": "past",
+      "title": "The past: -л, -ла, -ло, -ли",
+      "particle": "-л / -ла / -ло / -ли",
+      "summary": "Drop -ть and add -л; then match the subject's gender and number.",
+      "sections": [
+        {
+          "p": "The past is built from the infinitive: drop <b>-ть</b> and add <b>-л</b>. Then add nothing for masculine, <b>-а</b> for feminine, <b>-о</b> for neuter, and <b>-и</b> for plural. Person (я / ты / он) does not change the ending — only gender and number do.",
+          "examples": [
+            ["Он чита{л}.", "On chital.", "He was reading. / He read."],
+            ["Она чита{ла}.", "Ona chitala.", "She was reading."],
+            [
+              "Окно стоя{ло} открытым.",
+              "Okno stoyalo otkrytym.",
+              "The window stood open."
+            ],
+            ["Они чита{ли}.", "Oni chitali.", "They were reading."]
+          ]
+        },
+        {
+          "h": "был, была, было, были",
+          "p": "The past of “to be” is <b>был / была / было / были</b>. Unlike the present, the past of “to be” is said out loud. With я and ты, pick the ending that matches the speaker or the person you mean.",
+          "examples": [
+            ["Я {был} дома.", "Ya byl doma.", "I was at home. (man speaking)"],
+            [
+              "Я {была} дома.",
+              "Ya byla doma.",
+              "I was at home. (woman speaking)"
+            ],
+            ["Мы {были} в парке.", "My byli v parke.", "We were in the park."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Она вчера ＿ .",
+          "en": "She worked yesterday. (работать)",
+          "options": ["работала", "работал", "работало", "работали"],
+          "answer": "работала",
+          "why": "Feminine subject: -ла."
+        },
+        {
+          "q": "Он ＿ книгу.",
+          "en": "He read a book. (читать)",
+          "options": ["читал", "читала", "читало", "читали"],
+          "answer": "читал",
+          "why": "Masculine subject: -л with no extra vowel."
+        },
+        {
+          "q": "Мы ＿ по-русски.",
+          "en": "We spoke Russian. (говорить)",
+          "options": ["говорили", "говорил", "говорила", "говорило"],
+          "answer": "говорили",
+          "why": "Plural subject: -ли."
+        },
+        {
+          "q": "Я ＿ студентом.",
+          "en": "I was a student. (man speaking)",
+          "options": ["был", "была", "было", "были"],
+          "answer": "был",
+          "why": "Male speaker with past of быть: был."
+        },
+        {
+          "q": "Она ＿ дома.",
+          "en": "She was at home.",
+          "options": ["была", "был", "было", "были"],
+          "answer": "была",
+          "why": "Feminine subject: была."
+        }
+      ]
+    },
+    {
+      "id": "kuda",
+      "title": "куда?: в and на with the object ending",
+      "particle": "куда? в / на + acc.",
+      "summary": "Where to? uses the accusative; where? keeps the prepositional from lesson 5.",
+      "sections": [
+        {
+          "p": "Ask <b>где?</b> (where?) for location — в / на + prepositional, as in lesson 5. Ask <b>куда?</b> (where to?) for direction — the same в / на, but the noun takes the <b>accusative</b>: feminine -а → <b>-у</b>, -я → <b>-ю</b>; many masculine and neuter things stay unchanged.",
+          "examples": [
+            [
+              "Я в школ{е}.",
+              "Ya v shkole.",
+              "I'm at school. (где? prepositional)"
+            ],
+            [
+              "Я иду в школ{у}.",
+              "Ya idu v shkolu.",
+              "I'm going to school. (куда? accusative)"
+            ],
+            [
+              "Книга на стол{е}.",
+              "Kniga na stole.",
+              "The book is on the table."
+            ],
+            [
+              "Я кладу книгу на стол.",
+              "Ya kladu knigu na stol.",
+              "I'm putting the book on the table."
+            ]
+          ]
+        },
+        {
+          "h": "Places that keep на",
+          "p": "Places that use на for location keep на for direction too: на работу (to work), на почту (to the post office), на улицу (out onto the street).",
+          "examples": [
+            [
+              "Она идёт {на} работу.",
+              "Ona idyot na rabotu.",
+              "She's going to work."
+            ],
+            [
+              "Мы едем {на} почту.",
+              "My yedem na pochtu.",
+              "We're going to the post office."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Я иду в ＿ .",
+          "en": "I'm going to school. (школа)",
+          "options": ["школу", "школе", "школа", "школы"],
+          "answer": "школу",
+          "why": "куда? takes the accusative: -а → -у."
+        },
+        {
+          "q": "Она в ＿ .",
+          "en": "She is at school. (школа)",
+          "options": ["школе", "школу", "школа", "школы"],
+          "answer": "школе",
+          "why": "где? keeps the prepositional -е."
+        },
+        {
+          "q": "Мы едем в ＿ .",
+          "en": "We're going to Moscow. (Москва)",
+          "options": ["Москву", "Москве", "Москва", "Москвы"],
+          "answer": "Москву",
+          "why": "Direction: Москва → Москву."
+        },
+        {
+          "q": "Он идёт ＿ работу.",
+          "en": "He's going to work.",
+          "options": ["на", "в", "у", "с"],
+          "answer": "на",
+          "why": "Work takes на for both location and direction."
+        },
+        {
+          "q": "What does «Куда ты идёшь?» mean?",
+          "en": "",
+          "options": [
+            "Where are you going?",
+            "Where are you?",
+            "Who are you?",
+            "What are you doing?"
+          ],
+          "answer": "Where are you going?",
+          "why": "куда? asks for destination, not location."
+        }
+      ]
+    },
+    {
+      "id": "motion",
+      "title": "идти and ехать — going somewhere",
+      "particle": "идти / ехать",
+      "summary": "идти is on foot; ехать is by vehicle. Both describe one trip underway.",
+      "sections": [
+        {
+          "p": "<b>идти</b> means to be going on foot, right now, in one direction. Its present is irregular: я ид{у}, ты ид{ёшь}, он ид{ёт}, мы ид{ём}, вы ид{ёте}, они ид{ут}.",
+          "examples": [
+            [
+              "Я {иду} в магазин.",
+              "Ya idu v magazin.",
+              "I'm walking to the shop."
+            ],
+            [
+              "Куда ты {идёшь}?",
+              "Kuda ty idyosh'?",
+              "Where are you going (on foot)?"
+            ],
+            ["Они {идут} домой.", "Oni idut domoy.", "They're walking home."]
+          ]
+        },
+        {
+          "h": "ехать — by transport",
+          "p": "<b>ехать</b> is the same idea by vehicle (bus, train, car, bike). Present: я ед{у}, ты ед{ешь}, он ед{ет}, мы ед{ем}, вы ед{ете}, они ед{ут}. Use в / на + accusative for the destination, as in the куда? lesson.",
+          "examples": [
+            [
+              "Мы {едем} в Москву.",
+              "My yedem v Moskvu.",
+              "We're travelling to Moscow."
+            ],
+            [
+              "Он {едет} на работу на автобусе.",
+              "On yedet na rabotu na avtobuse.",
+              "He's going to work by bus."
+            ],
+            [
+              "Вы {едете} на поезде?",
+              "Vy yedete na poyezde?",
+              "Are you going by train?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Я ＿ в парк.",
+          "en": "I'm walking to the park. (on foot)",
+          "options": ["иду", "еду", "хожу", "ехал"],
+          "answer": "иду",
+          "why": "On foot, one trip now: иду."
+        },
+        {
+          "q": "Мы ＿ в Лондон.",
+          "en": "We're travelling to London. (by transport)",
+          "options": ["едем", "идём", "ездим", "ходили"],
+          "answer": "едем",
+          "why": "By vehicle: ехать → едем."
+        },
+        {
+          "q": "Куда ты ＿ ?",
+          "en": "Where are you going on foot?",
+          "options": ["идёшь", "едешь", "ходишь", "ехал"],
+          "answer": "идёшь",
+          "why": "ты + идти: идёшь."
+        },
+        {
+          "q": "Она ＿ на работу на метро.",
+          "en": "She's going to work by metro.",
+          "options": ["едет", "идёт", "ходит", "ехала"],
+          "answer": "едет",
+          "why": "Transport: ехать → едет."
+        },
+        {
+          "q": "Они ＿ домой.",
+          "en": "They're walking home.",
+          "options": ["идут", "едут", "ходят", "ехали"],
+          "answer": "идут",
+          "why": "они + идти: идут."
+        }
+      ]
+    },
+    {
+      "id": "nravitsya",
+      "title": "мне нравится — “I like”",
+      "particle": "мне нравится",
+      "summary": "Russian says “it pleases me”: the liker is dative, the liked thing is the subject.",
+      "sections": [
+        {
+          "p": "The person who likes something goes in the <b>dative</b>: мне, тебе, ему, ей, нам, вам, им. The verb is <b>нравится</b> (singular) or <b>нравятся</b> (plural), and it agrees with the thing liked, not with the person.",
+          "examples": [
+            [
+              "{Мне} нравится музыка.",
+              "Mne nravitsya muzyka.",
+              "I like music."
+            ],
+            [
+              "{Ему} нравится этот город.",
+              "Yemu nravitsya etot gorod.",
+              "He likes this city."
+            ],
+            ["{Нам} нравится чай.", "Nam nravitsya chay.", "We like tea."]
+          ]
+        },
+        {
+          "h": "Plural things, and questions",
+          "p": "When the liked thing is plural, use <b>нравятся</b>. Questions keep the same shape: что тебе нравится?",
+          "examples": [
+            [
+              "{Мне} нравятся кошки.",
+              "Mne nravyatsya koshki.",
+              "I like cats."
+            ],
+            [
+              "Что {тебе} нравится?",
+              "Chto tebe nravitsya?",
+              "What do you like?"
+            ],
+            [
+              "{Ей} нравятся эти книги.",
+              "Yey nravyatsya eti knigi.",
+              "She likes these books."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ нравится кофе.",
+          "en": "I like coffee.",
+          "options": ["Мне", "Я", "Меня", "Мной"],
+          "answer": "Мне",
+          "why": "The liker is dative: мне."
+        },
+        {
+          "q": "Ему ＿ эта песня.",
+          "en": "He likes this song.",
+          "options": ["нравится", "нравятся", "нравлюсь", "нравиться"],
+          "answer": "нравится",
+          "why": "песня is singular, so нравится."
+        },
+        {
+          "q": "Мне ＿ собаки.",
+          "en": "I like dogs.",
+          "options": ["нравятся", "нравится", "нравлюсь", "нравиться"],
+          "answer": "нравятся",
+          "why": "собаки is plural: нравятся."
+        },
+        {
+          "q": "Что ＿ нравится?",
+          "en": "What do you like? (to one friend)",
+          "options": ["тебе", "ты", "тебя", "тобой"],
+          "answer": "тебе",
+          "why": "ты → dative тебе."
+        },
+        {
+          "q": "How do you say “We like this film”?",
+          "en": "фильм = film",
+          "options": [
+            "Нам нравится этот фильм.",
+            "Мы нравится этот фильм.",
+            "Нас нравится этот фильм.",
+            "Мы нравятся этот фильм."
+          ],
+          "answer": "Нам нравится этот фильм.",
+          "why": "нам (dative) + нравится + singular subject."
+        }
+      ]
+    },
+    {
+      "id": "future",
+      "title": "буду + infinitive — the compound future",
+      "particle": "буду читать",
+      "summary": "For ongoing or habitual future actions, use the present of быть plus the infinitive.",
+      "sections": [
+        {
+          "p": "Imperfective verbs form a future with <b>быть</b> in the present + the infinitive: я буд{у} читать, ты буд{ешь} читать, он / она буд{ет} читать, мы буд{ем} читать, вы буд{ете} читать, они буд{ут} читать. This covers “I will read / I'll be reading”.",
+          "examples": [
+            [
+              "Завтра я {буду} работать.",
+              "Zavtra ya budu rabotat'.",
+              "Tomorrow I will work / be working."
+            ],
+            [
+              "Что ты {будешь} делать?",
+              "Chto ty budesh' delat'?",
+              "What will you do / be doing?"
+            ],
+            [
+              "Мы {будем} жить здесь.",
+              "My budem zhit' zdes'.",
+              "We will live here."
+            ]
+          ]
+        },
+        {
+          "h": "Not for a single finished act",
+          "p": "A one-off completed future (“I'll finish the book”) usually uses a perfective verb's present-looking form instead (прочитаю). The буду + infinitive pattern is the open-ended / process future you need first.",
+          "examples": [
+            [
+              "Вечером она {будет} читать.",
+              "Vecherom ona budet chitat'.",
+              "In the evening she will be reading."
+            ],
+            [
+              "Они не {будут} ждать.",
+              "Oni ne budut zhdat'.",
+              "They will not wait."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Завтра я ＿ работать.",
+          "en": "Tomorrow I will work.",
+          "options": ["буду", "будешь", "будет", "будут"],
+          "answer": "буду",
+          "why": "я takes буду."
+        },
+        {
+          "q": "Что ты ＿ делать?",
+          "en": "What will you do?",
+          "options": ["будешь", "буду", "будем", "будут"],
+          "answer": "будешь",
+          "why": "ты takes будешь."
+        },
+        {
+          "q": "Мы ＿ жить в Москве.",
+          "en": "We will live in Moscow.",
+          "options": ["будем", "буду", "будет", "будете"],
+          "answer": "будем",
+          "why": "мы takes будем."
+        },
+        {
+          "q": "Она ＿ читать вечером.",
+          "en": "She will be reading in the evening.",
+          "options": ["будет", "буду", "будешь", "будут"],
+          "answer": "будет",
+          "why": "он / она takes будет."
+        },
+        {
+          "q": "Они не ＿ ждать.",
+          "en": "They will not wait.",
+          "options": ["будут", "будет", "будем", "буду"],
+          "answer": "будут",
+          "why": "они takes будут; не goes before it."
+        }
+      ]
+    }
+  ]
+}
