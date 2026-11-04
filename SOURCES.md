@@ -15,6 +15,7 @@ only imported when its license fits that.
 | A. J. Primrose, *A Manipuri Grammar, Vocabulary, and Phrase Book* (1888) | Manipuri grammar course | Public domain | |
 | Jonathan Waller, JLPT Resources (tanos.co.uk) | Japanese JLPT N5 to N1 vocabulary decks and level tags | CC BY | Jonathan Waller, http://www.tanos.co.uk/jlpt/ |
 | yomitan-jlpt-vocab (Stephen Kraus), the cleaned-up copy of Waller's lists the import reads | Japanese JLPT vocabulary (common spellings checked against JMdict) | CC BY-SA 4.0 | https://github.com/stephenmk/yomitan-jlpt-vocab |
+| JLPT official site | Level summaries and FAQ by the Japan Foundation and JEES: short quotations of the official JLPT level descriptions on the Japanese reference card | Quoted with attribution; not under this repo's license | https://www.jlpt.jp/e/about/levelsummary.html, https://www.jlpt.jp/e/faq/ |
 | wordfreq (Robyn Speer and contributors) | Frequency tags (core, common, rare) on vocabulary | CC BY-SA 4.0 (data) | https://github.com/rspeer/wordfreq |
 
 Content written for this project is marked as original in its file and isn't
