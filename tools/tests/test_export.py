@@ -2,6 +2,7 @@
 import contextlib
 import io
 import json
+import sqlite3
 import sys
 import tempfile
 import unittest
@@ -103,11 +104,39 @@ class Export(unittest.TestCase):
         with self.assertRaises(FileExistsError):
             self.write()
 
+    def test_sqlite(self):
+        dest = packs.FORMATS["sqlite"].write(packs.load("greek", self.root), self.out)
+        db = sqlite3.connect(dest)
+        self.assertEqual(db.execute("SELECT id, kind FROM languages ORDER BY id").fetchall(),
+                         [("greek", "language"), ("koine", "historical")])
+        self.assertEqual(db.execute("SELECT language, word, position FROM words ORDER BY language, position").fetchall(),
+                         [("greek", "γεια", 1), ("greek", "ψωμί", 2), ("koine", "γεια", 1)])
+        self.assertEqual(db.execute("SELECT word_id FROM word_levels WHERE system='cefr' AND level='A1'").fetchall(),
+                         [("food/ψωμί",)])
+        self.assertEqual(db.execute("SELECT id FROM lessons ORDER BY position").fetchall(), [("articles",), ("verbs",)])
+        self.assertEqual(json.loads(db.execute("SELECT content FROM files WHERE path='reference.json'").fetchone()[0]), CARDS)
+        self.assertEqual(dict(db.execute("SELECT key, value FROM pack"))["format"], "squirrel-pack@1")
+        db.close()
+        self.assertEqual(packs.FORMATS["sqlite"].check(packs.load("greek", self.root), dest, self.root), [])
+
+    def test_sqlite_check_catches_damage(self):
+        fmt = packs.FORMATS["sqlite"]
+        pack = packs.load("greek", self.root)
+        dest = fmt.write(pack, self.out)
+        db = sqlite3.connect(dest)
+        db.execute("DELETE FROM words WHERE id='food/ψωμί'")
+        db.execute("DELETE FROM files WHERE path='strokes/greek.jsonl'")
+        db.commit()
+        db.close()
+        problems = "\n".join(fmt.check(pack, dest, self.root))
+        self.assertIn("1 rows in words for 2 words", problems)
+        self.assertIn("strokes/greek.jsonl is missing", problems)
+
     def test_cli(self):
         with contextlib.redirect_stdout(io.StringIO()) as out:
             self.assertEqual(export.main(["--list"]), 0)
             self.assertEqual(export.main(["no-such-language"]), 2)
-        self.assertIn("folder", out.getvalue())
+        self.assertIn("folder, sqlite", out.getvalue())
 
 
 if __name__ == "__main__":
