@@ -31,12 +31,12 @@ Already on `main`:
       vocabulary (#17)
 - [x] Korean and Chinese grammar levels (#19, #21)
 
-Still to merge (or be deliberately left out, with the reason in the notes):
+Merged since the plan was written:
 
-- [ ] Meaning matrix moved from LanguageStudentDesk (#14)
-- [ ] Japanese grammar levels and JLPT plan (#16)
-- [ ] JLPT, TOPIK and HSK level reference cards (#18, #20, #22)
-- [ ] Aramaic reference cards (#23)
+- [x] Meaning matrix moved from LanguageStudentDesk (#14)
+- [x] Japanese grammar levels and JLPT plan (#16)
+- [x] JLPT, TOPIK and HSK level reference cards (#18, #20, #22)
+- [x] Aramaic reference cards (#23)
 
 Also in v0.1.0, because it merged before the freeze: the character tables
 (#25).
