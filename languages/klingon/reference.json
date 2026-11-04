@@ -1,0 +1,373 @@
+{
+  "schema": "reference@1",
+  "language": "klingon",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Klingon at a glance",
+      "body": [
+        "Klingon (tlhIngan Hol) was designed by the linguist Marc Okrand for Star Trek and published in The Klingon Dictionary (1985). It was built to feel alien: the word order is object, verb, subject, and verbs and nouns stack long chains of prefixes and suffixes.",
+        "Spelling is case-sensitive and exactly phonetic: every letter is always pronounced the same way, and q and Q are different sounds."
+      ],
+      "examples": [
+        {
+          "t": "tlhIngan Hol {Dajatlh'a'}?",
+          "e": "Do you speak Klingon?"
+        },
+        {
+          "t": "Heghlu'meH QaQ jajvam.",
+          "e": "Today is a good day to die."
+        }
+      ],
+      "tags": ["OVS", "Okrand"]
+    },
+    {
+      "id": "piqad",
+      "topic": "script",
+      "title": "pIqaD",
+      "body": [
+        "pIqaD is the Klingon writing system. It has one letter for each of the 26 sounds of the romanization, including the digraphs ch, gh, ng and the trigraph tlh, plus its own digits.",
+        "pIqaD is not in official Unicode. Fonts place it in the private-use block U+F8D0–U+F8FF following the ConScript Unicode Registry, which is what the Desk uses. Turn on Show pIqaD in this tool to see examples in it."
+      ],
+      "examples": [
+        {
+          "t": "tlhIngan Hol",
+          "e": "the Klingon language"
+        },
+        {
+          "t": "Qapla'",
+          "e": "success"
+        }
+      ],
+      "tags": ["script", "pIqaD"]
+    },
+    {
+      "id": "sounds",
+      "topic": "sounds",
+      "title": "Sounds of the romanization",
+      "body": "Most letters sound as in English. These are the ones to learn. The apostrophe is a real consonant, a glottal stop as in the middle of uh-oh, and it counts as a letter.",
+      "table": {
+        "head": ["Letter", "Sound"],
+        "rows": [
+          ["q", "k made far back in the throat, at the uvula"],
+          ["Q", "q followed by a harsh H, like a growl: qH"],
+          ["H", "rough h as in German Bach or Scottish loch"],
+          ["gh", "the voiced version of H, a gargle"],
+          ["tlh", "t released into a breathy l, one sound"],
+          ["D", "d with the tongue tip curled up to the roof of the mouth"],
+          ["S", "sh-like s, tongue curled back"],
+          ["ch · j", "as in church · judge"],
+          ["'", "glottal stop"],
+          ["a · e · I · o · u", "father · bet · bit · note · rule"]
+        ]
+      },
+      "tags": ["pronunciation"]
+    },
+    {
+      "id": "ovs",
+      "topic": "grammar",
+      "title": "Word order: object, verb, subject",
+      "body": "A Klingon sentence puts the object first, then the verb, then the subject. Read the English backwards to check yourself.",
+      "examples": [
+        {
+          "t": "{puq} legh {yaS}",
+          "e": "The officer sees the child. (child sees officer)"
+        },
+        {
+          "t": "{yaS} legh {puq}",
+          "e": "The child sees the officer."
+        },
+        {
+          "t": "Qagh {vIlegh}",
+          "e": "I see the mistake. (the prefix vI- means I → it)"
+        }
+      ],
+      "tags": ["word order", "OVS"]
+    },
+    {
+      "id": "verb-prefixes",
+      "topic": "verbs",
+      "title": "Verb prefixes",
+      "body": "One prefix on the verb says who does what to whom. The subject and the object are both packed into it, so a single verb can be a whole sentence. No prefix (—) means a third-person subject with a third-person object or none.",
+      "examples": [
+        {
+          "t": "{jI}Qong",
+          "e": "I sleep."
+        },
+        {
+          "t": "{qa}legh",
+          "e": "I see you."
+        },
+        {
+          "t": "{mu}legh",
+          "e": "He / she sees me."
+        }
+      ],
+      "table": {
+        "head": [
+          "Subject",
+          "no object",
+          "→ me",
+          "→ you",
+          "→ him / her / it",
+          "→ us",
+          "→ you all",
+          "→ them"
+        ],
+        "rows": [
+          ["I", "jI-", "", "qa-", "vI-", "", "Sa-", "vI-"],
+          ["you", "bI-", "cho-", "", "Da-", "ju-", "", "Da-"],
+          ["he / she / it", "—", "mu-", "Du-", "—", "nu-", "lI-", "—"],
+          ["we", "ma-", "", "pI-", "wI-", "", "re-", "DI-"],
+          ["you all", "Su-", "tu-", "", "bo-", "che-", "", "bo-"],
+          ["they", "—", "mu-", "nI-", "lu-", "nu-", "lI-", "—"]
+        ]
+      },
+      "tags": ["verbs", "prefixes"]
+    },
+    {
+      "id": "verb-suffixes",
+      "topic": "verbs",
+      "title": "Common verb suffixes",
+      "body": "Suffixes add meaning after the verb root. Klingon has no tense, only aspect: whether the action is complete or ongoing. Time comes from words like wa'Hu' (yesterday).",
+      "table": {
+        "head": ["Suffix", "Meaning", "Example"],
+        "rows": [
+          ["-'a'", "yes-no question", "Dajatlh'a' · do you speak (it)?"],
+          ["-be'", "not", "jIyajbe' · I don't understand"],
+          ["-laH", "can, able to", "jIjatlhlaH · I can speak"],
+          ["-pu'", "has done (completed)", "vIleghpu' · I have seen it"],
+          ["-taH", "is doing (ongoing)", "jIQongtaH · I am sleeping"],
+          ["-lu'", "someone, unspecified subject", "Heghlu' · someone dies"],
+          ["-meH", "in order to", "Heghlu'meH · for dying"]
+        ]
+      },
+      "tags": ["verbs", "suffixes"]
+    },
+    {
+      "id": "to-be",
+      "topic": "grammar",
+      "title": "There is no verb to be",
+      "body": [
+        "Pronouns double as verbs meaning to be. Put the noun first and the pronoun after it.",
+        "When the subject is a noun rather than I or you, use the pronoun ghaH (he / she) or 'oH (it), and mark the subject with the suffix -'e'."
+      ],
+      "examples": [
+        {
+          "t": "tlhIngan {jIH}",
+          "e": "I am a Klingon."
+        },
+        {
+          "t": "yaS {SoH}",
+          "e": "You are an officer."
+        },
+        {
+          "t": "la' {ghaH} yaS{'e'}",
+          "e": "The officer is a commander."
+        }
+      ],
+      "tags": ["pronouns", "to be"]
+    },
+    {
+      "id": "noun-plurals",
+      "topic": "grammar",
+      "title": "Noun plurals",
+      "body": "Plural is optional when the number is clear, and the suffix depends on what kind of thing the noun is.",
+      "table": {
+        "head": ["Suffix", "For", "Example"],
+        "rows": [
+          [
+            "-pu'",
+            "beings capable of language",
+            "tlhInganpu' · Klingons; jaghpu' · enemies"
+          ],
+          ["-Du'", "body parts", "mInDu' · eyes"],
+          [
+            "-mey",
+            "everything else; with beings, scattered all over",
+            "Hovmey · stars"
+          ]
+        ]
+      },
+      "tags": ["nouns", "plural"]
+    },
+    {
+      "id": "noun-suffixes",
+      "topic": "grammar",
+      "title": "Possession and location suffixes",
+      "body": "Nouns take suffixes where English uses my, your, at, from or for. They go in a fixed order, with possession before location.",
+      "examples": [
+        {
+          "t": "juH{wIjDaq}",
+          "e": "at my home"
+        }
+      ],
+      "table": {
+        "head": ["Suffix", "Meaning", "Example"],
+        "rows": [
+          ["-wIj", "my", "juHwIj · my home"],
+          ["-lIj", "your", "juHlIj · your home"],
+          ["-Daj", "his, her", "juHDaj · her home"],
+          ["-Daq", "at, in, to (place)", "juHDaq · at home"],
+          ["-vo'", "from", "juHvo' · from home"],
+          ["-vaD", "for, to (someone)", "yaSvaD · for the officer"],
+          ["-mo'", "because of", "Qaghmo' · because of the mistake"]
+        ]
+      },
+      "tags": ["nouns", "suffixes"]
+    },
+    {
+      "id": "questions",
+      "topic": "grammar",
+      "title": "Question words",
+      "body": "Yes-no questions use the suffix -'a' on the verb. Question words take the place of what they ask about.",
+      "examples": [
+        {
+          "t": "{nuqDaq} 'oH puchpa''e'?",
+          "e": "Where is the bathroom?"
+        },
+        {
+          "t": "bIyaj{'a'}?",
+          "e": "Do you understand?"
+        }
+      ],
+      "table": {
+        "head": ["Word", "Meaning"],
+        "rows": [
+          ["nuq", "what"],
+          ["'Iv", "who"],
+          ["nuqDaq", "where"],
+          ["ghorgh", "when"],
+          ["chay'", "how"],
+          ["qatlh", "why"],
+          ["'ar", "how many"]
+        ]
+      },
+      "tags": ["questions"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Numbers",
+      "body": "Klingon counts in tens. Add -maH for tens, -vatlh for hundreds and -SaD or -SanID for thousands, then string the parts together. -DIch makes an ordinal.",
+      "table": {
+        "head": ["1–5", "6–10", "Built"],
+        "rows": [
+          ["wa' · 1", "jav · 6", "cha'maH · 20"],
+          ["cha' · 2", "Soch · 7", "cha'maH wej · 23"],
+          ["wej · 3", "chorgh · 8", "wa'vatlh · 100"],
+          ["loS · 4", "Hut · 9", "wa'SaD · 1,000"],
+          ["vagh · 5", "wa'maH · 10", "wa'DIch · first"]
+        ]
+      },
+      "tags": ["numbers"]
+    },
+    {
+      "id": "phrases",
+      "topic": "phrases",
+      "title": "Useful phrases",
+      "body": "Klingons do not say hello or goodbye. A conversation simply starts with nuqneH and ends when it is over, or with Qapla'.",
+      "examples": [
+        {
+          "t": "nuqneH",
+          "e": "What do you want? (the usual greeting)"
+        },
+        {
+          "t": "Qapla'",
+          "e": "Success! (also a farewell)"
+        },
+        {
+          "t": "HIja' · HISlaH",
+          "e": "Yes."
+        },
+        {
+          "t": "ghobe'",
+          "e": "No."
+        },
+        {
+          "t": "jIyajbe'",
+          "e": "I don't understand."
+        },
+        {
+          "t": "majQa'",
+          "e": "Well done."
+        },
+        {
+          "t": "tlhIngan Hol vIjatlhlaHbe'",
+          "e": "I can't speak Klingon."
+        }
+      ],
+      "tags": ["greetings"]
+    },
+    {
+      "id": "adjectives",
+      "topic": "grammar",
+      "title": "Adjectives are verbs",
+      "body": "Klingon has no separate adjectives. Verbs of quality like tIn (be big) follow the noun to describe it, and -qu' (emphatic) makes them stronger. Used on their own, they are verbs: be big.",
+      "examples": [
+        {
+          "t": "Duj {tIn}",
+          "e": "a big ship"
+        },
+        {
+          "t": "Duj {tInqu'}",
+          "e": "a very big ship"
+        },
+        {
+          "t": "tIn Duj",
+          "e": "The ship is big."
+        }
+      ],
+      "tags": ["adjectives", "verbs"]
+    },
+    {
+      "id": "noun-noun",
+      "topic": "grammar",
+      "title": "Noun-noun: the possessor comes first",
+      "body": "Put two nouns side by side to say of: the first noun owns or describes the second. It is the same order as English enemy's ship, just without the 's.",
+      "examples": [
+        {
+          "t": "jagh Duj",
+          "e": "the enemy's ship"
+        },
+        {
+          "t": "tlhIngan Hol",
+          "e": "the Klingon language (Klingon language)"
+        }
+      ],
+      "tags": ["nouns", "possession"]
+    },
+    {
+      "id": "imperatives",
+      "topic": "verbs",
+      "title": "Commands",
+      "body": "Commands use their own prefixes. Klingon commands are blunt; there is no please.",
+      "examples": [
+        {
+          "t": "{yI}jatlh!",
+          "e": "Speak!"
+        },
+        {
+          "t": "{pe}jatlh!",
+          "e": "Speak, all of you!"
+        },
+        {
+          "t": "{yI}Qong!",
+          "e": "Sleep!"
+        }
+      ],
+      "table": {
+        "head": ["Prefix", "Command to", "Object"],
+        "rows": [
+          ["yI-", "you", "none, or him / her / it"],
+          ["tI-", "you", "them"],
+          ["HI-", "you", "me"],
+          ["gho-", "you", "us"],
+          ["pe-", "you all", "none"]
+        ]
+      },
+      "tags": ["verbs", "imperative"]
+    }
+  ]
+}

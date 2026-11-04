@@ -1,0 +1,127 @@
+{
+  "schema": "reference@1",
+  "language": "german",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "German at a glance",
+      "body": [
+        "German is a West Germanic language, close to English and Dutch, and the official language of Germany, Austria and much of Switzerland. Nouns are capitalized. The verb in a simple statement sits in second place.",
+        "Articles carry the gender: der (masculine), die (feminine), das (neuter). The plural article is die for every gender."
+      ],
+      "examples": [
+        {
+          "t": "Ich {lerne} Deutsch.",
+          "e": "I am learning German."
+        },
+        {
+          "t": "Heute {lerne} ich Deutsch.",
+          "e": "Today I am learning German."
+        }
+      ],
+      "tags": ["word order", "gender"]
+    },
+    {
+      "id": "sounds",
+      "topic": "sounds",
+      "title": "Umlauts, ß and ch",
+      "body": [
+        "ä, ö and ü are separate vowels, not decorations. ä is near the vowel in “bed”, ö and ü are rounded (say “ee” with rounded lips for ü). ß is a sharp s, used after a long vowel or diphthong: Fuß, Straße. Switzerland writes ss instead.",
+        "ch after a, o, u and au is the sound in Bach. After e, i, ä, ö, ü and the consonants it is softer, as in ich."
+      ],
+      "table": {
+        "head": ["Spelling", "Roughly"],
+        "rows": [
+          ["ä", "as in bed"],
+          ["ö", "like the vowel in French feu"],
+          ["ü", "like the vowel in French tu"],
+          ["ß", "ss: Straße “street”"],
+          ["ch (ich)", "a soft hiss"],
+          ["ch (Bach)", "as in Scottish loch"],
+          ["w", "like English v"],
+          ["v", "often like English f: Vater"]
+        ]
+      },
+      "tags": ["pronunciation"]
+    },
+    {
+      "id": "articles",
+      "topic": "grammar",
+      "title": "der, die, das in the nominative and accusative",
+      "body": "Learn each noun with its article. In the accusative (the direct object) only the masculine changes: der → den, ein → einen. die and das stay as they are.",
+      "table": {
+        "head": ["", "Masculine", "Feminine", "Neuter", "Plural"],
+        "rows": [
+          ["Subject", "der Mann", "die Frau", "das Kind", "die Kinder"],
+          ["Object", "den Mann", "die Frau", "das Kind", "die Kinder"],
+          ["“a”, object", "einen Apfel", "eine Frage", "ein Buch", "—"]
+        ]
+      },
+      "tags": ["articles", "case"]
+    },
+    {
+      "id": "present",
+      "topic": "verbs",
+      "title": "The present tense",
+      "body": "One present covers “I learn” and “I am learning”. Regular verbs add -e, -st, -t, -en, -t, -en. sein and haben are irregular and come up constantly.",
+      "table": {
+        "head": ["", "machen", "sein", "haben"],
+        "rows": [
+          ["ich", "mache", "bin", "habe"],
+          ["du", "machst", "bist", "hast"],
+          ["er/sie/es", "macht", "ist", "hat"],
+          ["wir / Sie", "machen", "sind", "haben"],
+          ["ihr", "macht", "seid", "habt"],
+          ["sie", "machen", "sind", "haben"]
+        ]
+      },
+      "tags": ["verbs"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Numbers",
+      "body": "From twenty-one upward, German names the units first: einundzwanzig is “one-and-twenty”. The noun after a number stays singular in the sense that the number itself carries the plural: zwei Bücher, with the noun in the plural form.",
+      "examples": [
+        {
+          "t": "{einundzwanzig}",
+          "e": "twenty-one"
+        },
+        {
+          "t": "zwei {Bücher}",
+          "e": "two books"
+        }
+      ],
+      "tags": ["numbers"]
+    },
+    {
+      "id": "please-thanks",
+      "topic": "phrases",
+      "title": "Please, thanks, and the bill",
+      "body": "bitte covers both “please” and “you're welcome”. danke is “thank you”. In a café, bitte zahlen or die Rechnung, bitte asks for the bill.",
+      "examples": [
+        {
+          "t": "{Danke} schön.",
+          "e": "Thank you very much."
+        },
+        {
+          "t": "{Bitte}.",
+          "e": "You're welcome. / Please."
+        },
+        {
+          "t": "Die {Rechnung}, bitte.",
+          "e": "The bill, please."
+        }
+      ],
+      "tags": ["politeness"]
+    },
+    {
+      "id": "regions",
+      "topic": "culture",
+      "title": "Where German is spoken",
+      "body": "Standard German (Hochdeutsch) is what courses teach. Everyday speech in Bavaria, Austria and Switzerland can sound quite different, and Swiss German is a set of dialects rather than a separate spelling system. Written German is shared, with small differences (ss for ß in Switzerland).",
+      "tags": ["dialects"]
+    }
+  ]
+}

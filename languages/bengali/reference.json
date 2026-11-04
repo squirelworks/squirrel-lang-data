@@ -1,0 +1,205 @@
+{
+  "schema": "reference@1",
+  "language": "bengali",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Bengali at a glance",
+      "body": [
+        "Bengali (Bangla) is an Indo-Aryan language with around 270 million speakers, the national language of Bangladesh and the language of West Bengal, Tripura and parts of Assam in India. It has a long literary tradition; Rabindranath Tagore wrote in Bengali, including the national anthems of both Bangladesh and India.",
+        "The verb comes last, there is no grammatical gender, and verbs change for person and for three levels of politeness. Postpositions and case endings follow the noun."
+      ],
+      "examples": [
+        {
+          "t": "আমি বাংলা {শিখছি}।",
+          "r": "Ami bangla shikhchhi.",
+          "e": "I am learning Bengali."
+        }
+      ],
+      "tags": ["Indo-Aryan", "SOV", "no gender"]
+    },
+    {
+      "id": "script",
+      "topic": "script",
+      "title": "How the script works",
+      "body": [
+        "Bengali is written in the Bengali–Assamese script, an abugida like Devanagari: each consonant carries a built-in short vowel, said o (ক = ko), and other vowels are marks around the consonant. A full vowel letter is used at the start of a word.",
+        "Most letters hang from a line along the top. The hasanta ্ removes the built-in vowel, and consonant clusters are often written as joined letters (যুক্তাক্ষর)."
+      ],
+      "table": {
+        "head": ["Vowel", "Letter", "With ক"],
+        "rows": [
+          ["o (built in)", "অ", "ক ko"],
+          ["a", "আ", "কা ka"],
+          ["i", "ই", "কি ki"],
+          ["i (long)", "ঈ", "কী ki"],
+          ["u", "উ", "কু ku"],
+          ["u (long)", "ঊ", "কূ ku"],
+          ["ri", "ঋ", "কৃ kri"],
+          ["e", "এ", "কে ke"],
+          ["oi", "ঐ", "কৈ koi"],
+          ["o", "ও", "কো ko"],
+          ["ou", "ঔ", "কৌ kou"]
+        ]
+      },
+      "tags": ["script", "abugida", "vowel signs"]
+    },
+    {
+      "id": "sounds",
+      "topic": "sounds",
+      "title": "Sounds to watch",
+      "body": "The built-in vowel অ is said like the o in “hot”, not like Hindi's a. Long and short vowels are written differently but usually sound the same. Bengali has breathy consonants (kh, gh, ch, jh, th, dh, ph, bh) and retroflex ones made with the tongue curled back (ট, ড). শ, ষ and স are usually all said sh.",
+      "examples": [
+        {
+          "t": "কল · খল",
+          "r": "kol · khol",
+          "e": "tap · villain: the puff of air changes the word"
+        }
+      ],
+      "tags": ["pronunciation", "aspiration"]
+    },
+    {
+      "id": "politeness",
+      "topic": "grammar",
+      "title": "Pronouns and politeness",
+      "body": "“You” and “he / she” come in levels of respect, and the verb ending follows the level. There is no he / she difference.",
+      "table": {
+        "head": ["", "Intimate", "Familiar", "Polite"],
+        "rows": [
+          ["you", "তুই tui", "তুমি tumi", "আপনি apni"],
+          ["he, she", "", "সে she / ও o", "তিনি tini / উনি uni"],
+          ["verb (করা)", "করিস koris", "করো koro", "করেন koren"]
+        ]
+      },
+      "tags": ["pronouns", "politeness"]
+    },
+    {
+      "id": "present",
+      "topic": "verbs",
+      "title": "The simple present",
+      "body": "Verbs are listed by their verbal noun (করা, to do). Take off -া and add the ending. The verb does not change for plural subjects.",
+      "table": {
+        "head": ["Subject", "করা, do", "বলা, say", "খাওয়া, eat"],
+        "rows": [
+          ["আমি, আমরা", "করি", "বলি", "খাই"],
+          ["তুমি, তোমরা", "করো", "বলো", "খাও"],
+          ["আপনি, আপনারা", "করেন", "বলেন", "খান"],
+          ["সে, তারা", "করে", "বলে", "খায়"]
+        ]
+      },
+      "tags": ["verbs", "present"]
+    },
+    {
+      "id": "endings",
+      "topic": "grammar",
+      "title": "Noun endings",
+      "body": "Endings attach directly to the noun. -টা / -টি make it definite, and the case endings follow.",
+      "table": {
+        "head": ["Ending", "Meaning", "Example"],
+        "rows": [
+          ["-টা / -টি", "the (one thing)", "বইটা, the book"],
+          ["-রা / -এরা", "plural (people)", "ছেলেরা, the boys"],
+          ["-গুলো", "plural (things)", "বইগুলো, the books"],
+          ["-র / -এর", "of, 's", "রামের, Ram's"],
+          ["-কে", "to (a person); object", "রামকে, to Ram"],
+          ["-তে / -এ", "in, at, to", "বাড়িতে, at home"],
+          ["থেকে", "from (after the noun)", "ঢাকা থেকে, from Dhaka"]
+        ]
+      },
+      "tags": ["cases", "classifiers", "postpositions"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Numbers and Bengali digits",
+      "body": "Bengali has its own digits, used on signs, prices and dates alongside 0–9. Numbers up to a hundred each have their own word and are best learned one by one.",
+      "table": {
+        "head": ["", "Digit", "Word", "Transliteration"],
+        "rows": [
+          ["1", "১", "এক", "ek"],
+          ["2", "২", "দুই", "dui"],
+          ["3", "৩", "তিন", "tin"],
+          ["4", "৪", "চার", "char"],
+          ["5", "৫", "পাঁচ", "panch"],
+          ["6", "৬", "ছয়", "chhoy"],
+          ["7", "৭", "সাত", "sat"],
+          ["8", "৮", "আট", "at"],
+          ["9", "৯", "নয়", "noy"],
+          ["10", "১০", "দশ", "dosh"],
+          ["100", "১০০", "একশো", "eksho"]
+        ]
+      },
+      "tags": ["numbers", "digits"]
+    },
+    {
+      "id": "phrases",
+      "topic": "phrases",
+      "title": "Everyday phrases",
+      "examples": [
+        {
+          "t": "নমস্কার, কেমন আছেন?",
+          "r": "Nomoshkar, kemon achhen?",
+          "e": "Hello, how are you?"
+        },
+        {
+          "t": "ভালো আছি, ধন্যবাদ।",
+          "r": "Bhalo achhi, dhonnobad.",
+          "e": "I'm fine, thank you."
+        },
+        {
+          "t": "আমি বুঝি না।",
+          "r": "Ami bujhi na.",
+          "e": "I don't understand."
+        },
+        {
+          "t": "এটার দাম কত?",
+          "r": "Etar dam koto?",
+          "e": "How much is this?"
+        },
+        {
+          "t": "আস্তে বলুন, প্লিজ।",
+          "r": "Aste bolun, pliz.",
+          "e": "Please speak slowly."
+        },
+        {
+          "t": "বাথরুম কোথায়?",
+          "r": "Bathrum kothay?",
+          "e": "Where is the bathroom?"
+        }
+      ],
+      "tags": ["phrases", "travel"]
+    },
+    {
+      "id": "ekushey",
+      "topic": "culture",
+      "title": "Language Movement Day",
+      "body": "On 21 February 1952 students in Dhaka were killed while demonstrating for Bengali to be an official language of Pakistan. The day, Ekushey February, is remembered in Bangladesh at the Shaheed Minar, and UNESCO made 21 February International Mother Language Day.",
+      "tags": ["culture", "history"]
+    },
+    {
+      "id": "negation",
+      "topic": "grammar",
+      "title": "Negation with না",
+      "body": "Put না (na) after the verb to negate it. In the past, নি (ni) often replaces না after a conjugated form. There is no change to the verb stem itself.",
+      "examples": [
+        {
+          "t": "আমি বুঝি {না}।",
+          "r": "Ami bujhi na.",
+          "e": "I don't understand."
+        },
+        {
+          "t": "সে যায় {না}।",
+          "r": "Se jay na.",
+          "e": "He / she doesn't go."
+        },
+        {
+          "t": "আমি যাই {নি}।",
+          "r": "Ami jai ni.",
+          "e": "I didn't go."
+        }
+      ],
+      "tags": ["negation"]
+    }
+  ]
+}

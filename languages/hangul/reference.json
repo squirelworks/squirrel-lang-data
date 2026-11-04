@@ -1,0 +1,440 @@
+{
+  "schema": "reference@1",
+  "language": "hangul",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Korean at a glance",
+      "body": [
+        "Korean puts the verb last (subject, object, verb) and marks each noun's role with a particle after it, much like Japanese. Endings stack onto verbs to show tense, politeness and mood.",
+        "Hangul was created under King Sejong and published in 1446 so that ordinary people could read and write. It is an alphabet whose letters are grouped into one block per syllable."
+      ],
+      "examples": [
+        {
+          "t": "저는 {사과를} 먹어요.",
+          "r": "jeoneun sagwareul meogeoyo",
+          "e": "I eat an apple."
+        }
+      ],
+      "tags": ["SOV", "particles", "Sejong"]
+    },
+    {
+      "id": "syllable-blocks",
+      "topic": "script",
+      "title": "Syllable blocks",
+      "body": [
+        "Every block starts with a consonant; ㅇ is silent at the start of a block so that a syllable can begin with a vowel. Tall vowels (ㅏ ㅓ ㅣ) go to the right of the first consonant, flat ones (ㅗ ㅜ ㅡ) go below. A final consonant (batchim) sits at the bottom.",
+        "There are 14 basic consonants and 10 basic vowels, plus doubled consonants and combined vowels."
+      ],
+      "examples": [
+        {
+          "t": "한 = ㅎ + ㅏ + ㄴ",
+          "r": "han",
+          "e": "consonant, tall vowel to the right, final at the bottom"
+        },
+        {
+          "t": "국 = ㄱ + ㅜ + ㄱ",
+          "r": "guk",
+          "e": "consonant, flat vowel below, final at the bottom"
+        },
+        {
+          "t": "아 = ㅇ + ㅏ",
+          "r": "a",
+          "e": "silent ㅇ in front of a vowel"
+        }
+      ],
+      "tags": ["script", "blocks"]
+    },
+    {
+      "id": "letter-design",
+      "topic": "script",
+      "title": "Why the letters look the way they do",
+      "body": [
+        "The basic consonants are drawn after the speech organs that make them, and extra strokes add aspiration: ㄱ → ㅋ, ㄷ → ㅌ, ㅈ → ㅊ.",
+        "The vowels are built from three symbols: a dot for heaven, a flat line (ㅡ) for earth and an upright line (ㅣ) for people. The dot has become a short stroke: ㅏ ㅓ ㅗ ㅜ."
+      ],
+      "table": {
+        "head": ["Letter", "Shape shows"],
+        "rows": [
+          ["ㄱ (g)", "the back of the tongue touching the soft palate"],
+          ["ㄴ (n)", "the tongue tip touching the ridge behind the teeth"],
+          ["ㅁ (m)", "the closed mouth"],
+          ["ㅅ (s)", "a tooth"],
+          ["ㅇ (ng)", "the open throat"]
+        ]
+      },
+      "tags": ["script", "history"]
+    },
+    {
+      "id": "three-way",
+      "topic": "sounds",
+      "title": "Plain, aspirated and tense consonants",
+      "body": "Korean splits stops into three: plain (lightly breathy), aspirated (a strong puff of air) and tense (tight throat, no puff). English speakers need to practise hearing the difference.",
+      "examples": [
+        {
+          "t": "달 · 탈 · 딸",
+          "r": "dal · tal · ttal",
+          "e": "moon · mask · daughter"
+        },
+        {
+          "t": "불 · 풀 · 뿔",
+          "r": "bul · pul · ppul",
+          "e": "fire · grass · horn"
+        }
+      ],
+      "table": {
+        "head": ["Plain", "Aspirated", "Tense"],
+        "rows": [
+          ["ㄱ g/k", "ㅋ k", "ㄲ kk"],
+          ["ㄷ d/t", "ㅌ t", "ㄸ tt"],
+          ["ㅂ b/p", "ㅍ p", "ㅃ pp"],
+          ["ㅈ j", "ㅊ ch", "ㅉ jj"],
+          ["ㅅ s", "", "ㅆ ss"]
+        ]
+      },
+      "tags": ["pronunciation", "consonants"]
+    },
+    {
+      "id": "batchim",
+      "topic": "sounds",
+      "title": "Final consonants and linking",
+      "body": [
+        "At the end of a syllable, consonants are not released and collapse to seven sounds: k, n, t, l, m, p, ng. So 옷, 옫 and 옺 all sound like ot.",
+        "When the next syllable starts with silent ㅇ, the final consonant slides over and is said in full."
+      ],
+      "examples": [
+        {
+          "t": "옷",
+          "r": "ot",
+          "e": "clothes"
+        },
+        {
+          "t": "옷이",
+          "r": "o-si",
+          "e": "clothes (+ subject particle): ㅅ moves over"
+        },
+        {
+          "t": "한국어",
+          "r": "han-gu-geo",
+          "e": "Korean language"
+        },
+        {
+          "t": "음악",
+          "r": "eu-mak",
+          "e": "music"
+        }
+      ],
+      "tags": ["pronunciation", "batchim"]
+    },
+    {
+      "id": "topic-subject",
+      "topic": "grammar",
+      "title": "은/는 and 이/가",
+      "body": [
+        "Particles have one form after a consonant and another after a vowel. {은/는} marks the topic, often for contrast or known information. {이/가} marks the subject, especially new information or the answer to who or what.",
+        "Use the first form after a final consonant (책은, 책이) and the second after a vowel (저는, 친구가)."
+      ],
+      "examples": [
+        {
+          "t": "저{는} 학생이에요.",
+          "r": "jeoneun haksaeng-ieyo",
+          "e": "I am a student. (as for me…)"
+        },
+        {
+          "t": "누{가} 왔어요?",
+          "r": "nuga wasseoyo?",
+          "e": "Who came?"
+        },
+        {
+          "t": "친구{가} 왔어요.",
+          "r": "chinguga wasseoyo",
+          "e": "A friend came."
+        }
+      ],
+      "tags": ["particles", "topic", "subject"]
+    },
+    {
+      "id": "more-particles",
+      "topic": "grammar",
+      "title": "을/를, 에, 에서, 도, 하고",
+      "table": {
+        "head": ["Particle", "Marks", "Example"],
+        "rows": [
+          [
+            "을 / 를",
+            "direct object",
+            "밥을 먹어요 · eat a meal; 커피를 마셔요 · drink coffee"
+          ],
+          [
+            "에",
+            "destination, time, where something is",
+            "학교에 가요 · go to school; 세 시에 · at three"
+          ],
+          [
+            "에서",
+            "where an action happens; from",
+            "도서관에서 공부해요 · study at the library"
+          ],
+          ["도", "also, too (replaces 은/는, 이/가, 을/를)", "저도 가요 · I'm going too"],
+          ["하고 / 와 · 과", "and, with", "친구하고 · with a friend"],
+          ["의", "possession (said e)", "제 친구의 집 · my friend's house"]
+        ]
+      },
+      "tags": ["particles"]
+    },
+    {
+      "id": "speech-levels",
+      "topic": "grammar",
+      "title": "Speech levels",
+      "body": "Korean verbs end differently depending on who you're talking to. The polite -요 style is the safe default with adults you don't know well. The formal -ㅂ니다 style is for news, announcements, presentations and the army. Casual speech (drop -요) is for close friends, younger people and family.",
+      "table": {
+        "head": ["Style", "Thank you", "I go"],
+        "rows": [
+          ["formal", "감사합니다", "갑니다"],
+          ["polite", "고마워요", "가요"],
+          ["casual", "고마워", "가"]
+        ]
+      },
+      "tags": ["politeness", "speech levels"]
+    },
+    {
+      "id": "yo-form",
+      "topic": "verbs",
+      "title": "The polite present: -아요 / -어요",
+      "body": "Take the dictionary form, drop -다, and add -아요 if the last vowel of the stem is ㅏ or ㅗ, or -어요 otherwise. Vowels merge where they meet, and every 하다 verb becomes 해요.",
+      "table": {
+        "head": ["Dictionary", "Polite present", "Meaning"],
+        "rows": [
+          ["가다", "가요", "go"],
+          ["오다", "와요", "come"],
+          ["먹다", "먹어요", "eat"],
+          ["마시다", "마셔요", "drink"],
+          ["배우다", "배워요", "learn"],
+          ["공부하다", "공부해요", "study"]
+        ]
+      },
+      "tags": ["verbs", "conjugation"]
+    },
+    {
+      "id": "past-negative",
+      "topic": "verbs",
+      "title": "Past tense and negatives",
+      "body": [
+        "Past: replace -아요 / -어요 with -았어요 / -었어요; 해요 becomes 했어요.",
+        "Not: put {안} before the verb, or add {-지 않아요} to the stem. Can't: put {못} before the verb, or add -지 못해요. With 하다 verbs, 안 and 못 go before 하다: 공부 안 해요."
+      ],
+      "examples": [
+        {
+          "t": "어제 영화를 봤어요.",
+          "r": "eoje yeonghwareul bwasseoyo",
+          "e": "I watched a film yesterday."
+        },
+        {
+          "t": "{안} 가요. · 가{지 않아요}.",
+          "r": "an gayo · gaji anayo",
+          "e": "I'm not going."
+        },
+        {
+          "t": "수영 {못} 해요.",
+          "r": "suyeong mot haeyo",
+          "e": "I can't swim."
+        }
+      ],
+      "tags": ["verbs", "past", "negation"]
+    },
+    {
+      "id": "copula",
+      "topic": "grammar",
+      "title": "To be: 이에요 / 예요 and 아니에요",
+      "body": "Attach 이에요 to a noun ending in a consonant and 예요 to a noun ending in a vowel. The negative is 아니에요, with 이/가 on the noun.",
+      "examples": [
+        {
+          "t": "학생{이에요}.",
+          "r": "haksaeng-ieyo",
+          "e": "(I'm) a student."
+        },
+        {
+          "t": "의사{예요}.",
+          "r": "uisayeyo",
+          "e": "(She's) a doctor."
+        },
+        {
+          "t": "학생이 {아니에요}.",
+          "r": "haksaeng-i anieyo",
+          "e": "(I'm) not a student."
+        }
+      ],
+      "tags": ["copula", "to be"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Two number systems",
+      "body": [
+        "{Sino-Korean} numbers (from Chinese) are used for dates, money, minutes, phone numbers and floors. {Native Korean} numbers are used for counting things and people, age and hours, up to 99.",
+        "Before a counter, 하나, 둘, 셋, 넷 and 스물 shorten to 한, 두, 세, 네 and 스무."
+      ],
+      "examples": [
+        {
+          "t": "{한} 시 {삼십} 분",
+          "r": "han si samsip bun",
+          "e": "1:30 (native hours, Sino minutes)"
+        },
+        {
+          "t": "사과 {세} 개",
+          "r": "sagwa se gae",
+          "e": "three apples"
+        },
+        {
+          "t": "{만} 원",
+          "r": "man won",
+          "e": "10,000 won"
+        }
+      ],
+      "table": {
+        "head": ["", "Sino-Korean", "Native"],
+        "rows": [
+          ["1", "일", "하나 (한)"],
+          ["2", "이", "둘 (두)"],
+          ["3", "삼", "셋 (세)"],
+          ["4", "사", "넷 (네)"],
+          ["5", "오", "다섯"],
+          ["6", "육", "여섯"],
+          ["7", "칠", "일곱"],
+          ["8", "팔", "여덟"],
+          ["9", "구", "아홉"],
+          ["10", "십", "열"]
+        ]
+      },
+      "tags": ["numbers", "counters"]
+    },
+    {
+      "id": "honorifics",
+      "topic": "culture",
+      "title": "Honorifics",
+      "body": [
+        "Korean shows respect to the person you talk about as well as to the listener. Add {-시-} to a verb when its subject deserves respect, and use 씨 or 님 after names and titles rather than the bare name.",
+        "Some words have their own honorific forms: 드시다 (eat), 주무시다 (sleep), 계시다 (be, stay), 연세 (age), 성함 (name)."
+      ],
+      "examples": [
+        {
+          "t": "선생님이 가{세}요.",
+          "r": "seonsaengnim-i gaseyo",
+          "e": "The teacher is going."
+        },
+        {
+          "t": "민수 {씨}",
+          "r": "Minsu ssi",
+          "e": "Minsu (polite)"
+        },
+        {
+          "t": "할머니께서 {주무세요}.",
+          "r": "halmeonikkeseo jumuseyo",
+          "e": "Grandmother is sleeping."
+        }
+      ],
+      "tags": ["politeness", "honorifics"]
+    },
+    {
+      "id": "phrases",
+      "topic": "phrases",
+      "title": "Everyday phrases",
+      "examples": [
+        {
+          "t": "안녕하세요",
+          "r": "annyeonghaseyo",
+          "e": "Hello."
+        },
+        {
+          "t": "감사합니다",
+          "r": "gamsahamnida",
+          "e": "Thank you."
+        },
+        {
+          "t": "죄송합니다",
+          "r": "joesonghamnida",
+          "e": "I'm sorry."
+        },
+        {
+          "t": "네 · 아니요",
+          "r": "ne · aniyo",
+          "e": "Yes · No"
+        },
+        {
+          "t": "잘 먹겠습니다",
+          "r": "jal meokgetseumnida",
+          "e": "Said before eating."
+        },
+        {
+          "t": "안녕히 가세요",
+          "r": "annyeonghi gaseyo",
+          "e": "Goodbye (to someone leaving)."
+        },
+        {
+          "t": "안녕히 계세요",
+          "r": "annyeonghi gyeseyo",
+          "e": "Goodbye (to someone staying, when you leave)."
+        }
+      ],
+      "tags": ["greetings"]
+    },
+    {
+      "id": "want",
+      "topic": "verbs",
+      "title": "Want to: -고 싶어요",
+      "body": "Add -고 싶어요 to a verb stem to say what you want to do. For other people, use -고 싶어해요.",
+      "examples": [
+        {
+          "t": "비빔밥을 먹{고 싶어요}.",
+          "r": "bibimbabeul meokgo sipeoyo",
+          "e": "I want to eat bibimbap."
+        },
+        {
+          "t": "한국에 가{고 싶어요}.",
+          "r": "hanguge gago sipeoyo",
+          "e": "I want to go to Korea."
+        }
+      ],
+      "tags": ["verbs", "desire"]
+    },
+    {
+      "id": "future",
+      "topic": "verbs",
+      "title": "Future: -(으)ㄹ 거예요",
+      "body": "Add -ㄹ 거예요 to a stem ending in a vowel and -을 거예요 to one ending in a consonant. It means will or am going to.",
+      "examples": [
+        {
+          "t": "내일 {갈 거예요}.",
+          "r": "naeil gal geoyeyo",
+          "e": "I'll go tomorrow."
+        },
+        {
+          "t": "점심에 김밥을 {먹을 거예요}.",
+          "r": "jeomsime gimbabeul meogeul geoyeyo",
+          "e": "I'm going to eat gimbap for lunch."
+        }
+      ],
+      "tags": ["verbs", "future"]
+    },
+    {
+      "id": "connectors",
+      "topic": "grammar",
+      "title": "Joining clauses: -고, -지만, -아서/어서",
+      "body": "Korean links clauses with endings on the first verb, not separate words. The tense usually goes only on the last verb.",
+      "table": {
+        "head": ["Ending", "Meaning", "Example"],
+        "rows": [
+          ["-고", "and (then)", "밥을 먹고 공부했어요 · I ate and studied"],
+          ["-지만", "but", "비싸지만 좋아요 · it's expensive but good"],
+          [
+            "-아서 / -어서",
+            "so, because; and then (sequence)",
+            "배가 고파서 먹었어요 · I was hungry, so I ate"
+          ]
+        ]
+      },
+      "tags": ["connectors", "clauses"]
+    }
+  ]
+}

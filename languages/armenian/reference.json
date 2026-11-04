@@ -1,0 +1,215 @@
+{
+  "schema": "reference@1",
+  "language": "armenian",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Armenian at a glance",
+      "body": [
+        "Armenian forms its own branch of the Indo-European family. It has two standard forms: Eastern Armenian, spoken in Armenia and Iran, which these cards follow, and Western Armenian, spoken mostly in the diaspora.",
+        "There is no grammatical gender. “The” is an ending (-ը or -ն), nouns take case endings instead of prepositions, and most verb tenses are a participle plus a helper verb: գրում եմ, “I write”."
+      ],
+      "examples": [
+        {
+          "t": "Ես հայերեն եմ {սովորում}։",
+          "r": "Yes hayeren em sovorum.",
+          "e": "I am learning Armenian."
+        }
+      ],
+      "tags": ["Indo-European", "Eastern Armenian", "no gender"]
+    },
+    {
+      "id": "alphabet",
+      "topic": "script",
+      "title": "The alphabet",
+      "body": [
+        "The Armenian alphabet was created by Mesrop Mashtots around 405 AD with 36 letters; two more, Օ and Ֆ, were added later. Each letter has a capital and a small form.",
+        "The sound ու (u) is written with two letters, and և (yev, “and”) is a ligature of ե and ւ."
+      ],
+      "table": {
+        "head": ["Letter", "Sound", "Letter", "Sound"],
+        "rows": [
+          ["Ա ա", "a", "Բ բ", "b"],
+          ["Գ գ", "g", "Դ դ", "d"],
+          ["Ե ե", "ye / e", "Զ զ", "z"],
+          ["Է է", "e", "Ը ը", "ë (uh)"],
+          ["Թ թ", "t'", "Ժ ժ", "zh"],
+          ["Ի ի", "i", "Լ լ", "l"],
+          ["Խ խ", "kh", "Ծ ծ", "ts"],
+          ["Կ կ", "k", "Հ հ", "h"],
+          ["Ձ ձ", "dz", "Ղ ղ", "gh"],
+          ["Ճ ճ", "ch", "Մ մ", "m"],
+          ["Յ յ", "y", "Ն ն", "n"],
+          ["Շ շ", "sh", "Ո ո", "vo / o"],
+          ["Չ չ", "ch'", "Պ պ", "p"],
+          ["Ջ ջ", "j", "Ռ ռ", "r (rolled)"],
+          ["Ս ս", "s", "Վ վ", "v"],
+          ["Տ տ", "t", "Ր ր", "r"],
+          ["Ց ց", "ts'", "Ւ ւ", "v (in ու)"],
+          ["Փ փ", "p'", "Ք ք", "k'"],
+          ["Օ օ", "o", "Ֆ ֆ", "f"]
+        ]
+      },
+      "tags": ["script", "letters", "Mashtots"]
+    },
+    {
+      "id": "consonants",
+      "topic": "sounds",
+      "title": "Three kinds of consonant",
+      "body": "Like Georgian, Armenian has three versions of many stops. Plain ones (կ, պ, տ) have no puff of air and can sound almost like g, b, d to English ears. Aspirated ones (ք, փ, թ, marked with an apostrophe here) have a strong puff. Voiced ones are like English b, d, g.",
+      "table": {
+        "head": ["Voiced", "Plain", "Aspirated"],
+        "rows": [
+          ["բ b", "պ p", "փ p'"],
+          ["դ d", "տ t", "թ t'"],
+          ["գ g", "կ k", "ք k'"],
+          ["ձ dz", "ծ ts", "ց ts'"],
+          ["ջ j", "ճ ch", "չ ch'"]
+        ]
+      },
+      "tags": ["pronunciation", "consonants"]
+    },
+    {
+      "id": "punctuation",
+      "topic": "script",
+      "title": "Punctuation",
+      "body": "Armenian marks are placed inside the word. The question mark ՞ and the exclamation mark ՜ sit over the stressed vowel of the word being asked or exclaimed. The full stop is ։ (verjaket), the comma is the same as in English, and ՝ (called but) marks a short pause.",
+      "examples": [
+        {
+          "t": "Որտե՞ղ ես։",
+          "r": "Vortegh es?",
+          "e": "Where are you?"
+        },
+        {
+          "t": "Ի՜նչ գեղեցիկ է։",
+          "r": "Inch geghets'ik e!",
+          "e": "How beautiful it is!"
+        }
+      ],
+      "tags": ["punctuation"]
+    },
+    {
+      "id": "to-be",
+      "topic": "verbs",
+      "title": "The helper verb “to be”",
+      "body": "These forms mean “am, is, are” on their own, and they also build the present and other tenses. The negative adds չ-; for “is not” the form is չի.",
+      "table": {
+        "head": ["", "Positive", "Negative"],
+        "rows": [
+          ["I", "եմ em", "չեմ chem"],
+          ["you", "ես es", "չես ches"],
+          ["he, she", "է e", "չի chi"],
+          ["we", "ենք enk'", "չենք chenk'"],
+          ["you (pl.)", "եք ek'", "չեք chek'"],
+          ["they", "են en", "չեն chen"]
+        ]
+      },
+      "tags": ["verbs", "to be", "negation"]
+    },
+    {
+      "id": "present",
+      "topic": "verbs",
+      "title": "The present tense",
+      "body": "Replace the infinitive's -ել or -ալ with -ում and add the helper. In a negative sentence the negative helper comes first: չեմ գրում, “I don't write”.",
+      "table": {
+        "head": ["Infinitive", "Present (I)", "Meaning"],
+        "rows": [
+          ["գրել", "գրում եմ", "I write"],
+          ["խոսել", "խոսում եմ", "I speak"],
+          ["կարդալ", "կարդում եմ", "I read"],
+          ["ապրել", "ապրում եմ", "I live"],
+          ["գալ", "գալիս եմ", "I come (irregular)"]
+        ]
+      },
+      "tags": ["verbs", "present"]
+    },
+    {
+      "id": "cases",
+      "topic": "grammar",
+      "title": "Main cases",
+      "body": "Nouns take endings for their role. These are the forms of քաղաք (city).",
+      "table": {
+        "head": ["Case", "Ending", "Example", "Meaning"],
+        "rows": [
+          ["Nominative", "–", "քաղաք", "a city"],
+          ["Genitive / dative", "-ի", "քաղաքի", "of / to a city"],
+          ["Ablative", "-ից", "քաղաքից", "from a city"],
+          ["Instrumental", "-ով", "քաղաքով", "by, through a city"],
+          ["Locative", "-ում", "քաղաքում", "in a city"]
+        ]
+      },
+      "tags": ["cases"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Numbers",
+      "body": "Eleven to nineteen are ten plus the unit: տասնմեկ (11), տասներկու (12). A noun after a number usually stays singular.",
+      "table": {
+        "head": ["", "Armenian", "Romanization"],
+        "rows": [
+          ["1", "մեկ", "mek"],
+          ["2", "երկու", "yerku"],
+          ["3", "երեք", "yerek'"],
+          ["4", "չորս", "ch'ors"],
+          ["5", "հինգ", "hing"],
+          ["6", "վեց", "vets'"],
+          ["7", "յոթ", "yot'"],
+          ["8", "ութ", "ut'"],
+          ["9", "ինը", "inë"],
+          ["10", "տասը", "tasë"],
+          ["20", "քսան", "k'san"],
+          ["100", "հարյուր", "haryur"],
+          ["1000", "հազար", "hazar"]
+        ]
+      },
+      "tags": ["numbers"]
+    },
+    {
+      "id": "phrases",
+      "topic": "phrases",
+      "title": "Everyday phrases",
+      "examples": [
+        {
+          "t": "Բարև Ձեզ։",
+          "r": "Barev dzez.",
+          "e": "Hello. (polite)"
+        },
+        {
+          "t": "Շնորհակալություն։",
+          "r": "Shnorhakalut'yun.",
+          "e": "Thank you."
+        },
+        {
+          "t": "Ներեցեք, չեմ հասկանում։",
+          "r": "Neretsek', chem haskanum.",
+          "e": "Excuse me, I don't understand."
+        },
+        {
+          "t": "Անգլերեն խոսու՞մ եք։",
+          "r": "Angleren khosum ek'?",
+          "e": "Do you speak English?"
+        },
+        {
+          "t": "Ինչքա՞ն արժե։",
+          "r": "Inchk'an arzhe?",
+          "e": "How much does it cost?"
+        },
+        {
+          "t": "Կենացդ։",
+          "r": "Kenats'd!",
+          "e": "Cheers! (to your life)"
+        }
+      ],
+      "tags": ["phrases", "travel"]
+    },
+    {
+      "id": "ararat",
+      "topic": "culture",
+      "title": "Ararat and the apricot",
+      "body": "Mount Ararat, visible from Yerevan across the Turkish border, is the national symbol of Armenia and appears on its coat of arms. The apricot (ծիրան) is thought of as the national fruit, and its colour is in the flag: red, blue and apricot-orange.",
+      "tags": ["culture", "symbols"]
+    }
+  ]
+}

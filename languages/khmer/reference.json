@@ -1,0 +1,187 @@
+{
+  "schema": "reference@1",
+  "language": "khmer",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Khmer at a glance",
+      "body": [
+        "Khmer is the official language of Cambodia, with about 17 million speakers. It is an Austroasiatic language, related to Mon and Vietnamese rather than to Thai or Lao, though centuries of contact mean they share many words.",
+        "Unlike its neighbours, Khmer is not tonal. It has a large set of vowel sounds and many two-consonant clusters at the start of words. Words never change form."
+      ],
+      "examples": [
+        {
+          "t": "ខ្ញុំ{កំពុង}រៀនភាសាខ្មែរ",
+          "r": "Khnhom kampung rien pheasa khmae.",
+          "e": "I am learning Khmer."
+        }
+      ],
+      "tags": ["Austroasiatic", "non-tonal", "analytic"]
+    },
+    {
+      "id": "script",
+      "topic": "script",
+      "title": "How Khmer script works",
+      "body": [
+        "Khmer script has 33 consonant letters and is written without spaces between words. Each consonant belongs to one of two series, and the series changes how the vowel after it is said: the same vowel mark gives aa after a first-series consonant and ea after a second-series one.",
+        "When two consonants meet with no vowel between them, the second is written below the first as a subscript (ជើង, “foot”), as in ខ្ញុំ (khnhom)."
+      ],
+      "table": {
+        "head": ["Mark", "After 1st series (ក)", "After 2nd series (គ)"],
+        "rows": [
+          ["(none)", "ក kâ", "គ kô"],
+          ["ា", "កា kaa", "គា kea"],
+          ["ិ", "កិ kĕ", "គិ kĭ"],
+          ["ី", "កី kei", "គី kii"],
+          ["ុ", "កុ kŏ", "គុ kŭ"],
+          ["ូ", "កូ kou", "គូ kuu"],
+          ["េ", "កេ kae", "គេ ke"]
+        ]
+      },
+      "tags": ["script", "two series", "subscripts"]
+    },
+    {
+      "id": "markers",
+      "topic": "verbs",
+      "title": "Time and aspect words",
+      "table": {
+        "head": ["Word", "Place", "Meaning"],
+        "rows": [
+          ["នឹង nung", "before the verb", "will"],
+          ["កំពុង kampung", "before the verb", "is doing now"],
+          ["បាន baan", "before the verb", "did (past)"],
+          ["ហើយ haey", "at the end", "already"],
+          ["ធ្លាប់ thloap", "before the verb", "have ever"],
+          ["មិន / អត់ … ទេ", "around the verb", "not"]
+        ]
+      },
+      "tags": ["verbs", "tense", "negation"]
+    },
+    {
+      "id": "classifiers",
+      "topic": "grammar",
+      "title": "Classifiers",
+      "table": {
+        "head": ["Classifier", "Used for", "Example"],
+        "rows": [
+          ["នាក់ neak", "people", "មិត្តពីរនាក់, two friends"],
+          ["ក្បាល kbal", "animals, books", "ឆ្មាបីក្បាល, three cats"],
+          ["គ្រឿង kreung", "machines, vehicles", "ឡានមួយគ្រឿង, one car"],
+          ["កែវ kaev", "glasses", "កាហ្វេពីរកែវ, two coffees"],
+          ["ដប dop", "bottles", "ទឹកមួយដប, a bottle of water"]
+        ]
+      },
+      "tags": ["classifiers", "counting"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Numbers and Khmer digits",
+      "body": "Six to nine are built on five: ប្រាំមួយ (5 + 1) is six. Khmer digits are used everywhere, alongside 0–9.",
+      "table": {
+        "head": ["", "Digit", "Word", "Romanization"],
+        "rows": [
+          ["1", "១", "មួយ", "muoy"],
+          ["2", "២", "ពីរ", "pii"],
+          ["3", "៣", "បី", "bei"],
+          ["4", "៤", "បួន", "buon"],
+          ["5", "៥", "ប្រាំ", "pram"],
+          ["6", "៦", "ប្រាំមួយ", "pram muoy"],
+          ["7", "៧", "ប្រាំពីរ", "pram pii"],
+          ["8", "៨", "ប្រាំបី", "pram bei"],
+          ["9", "៩", "ប្រាំបួន", "pram buon"],
+          ["10", "១០", "ដប់", "dop"],
+          ["20", "២០", "ម្ភៃ", "mphey"],
+          ["100", "១០០", "មួយរយ", "muoy roy"]
+        ]
+      },
+      "tags": ["numbers", "digits"]
+    },
+    {
+      "id": "phrases",
+      "topic": "phrases",
+      "title": "Everyday phrases",
+      "examples": [
+        {
+          "t": "ជំរាបសួរ! សុខសប្បាយទេ?",
+          "r": "Chumreap suor! Sok sabay te?",
+          "e": "Hello! How are you?"
+        },
+        {
+          "t": "អរគុណច្រើន",
+          "r": "Arkun chraen.",
+          "e": "Thank you very much."
+        },
+        {
+          "t": "ខ្ញុំមិនយល់ទេ",
+          "r": "Khnhom min yol te.",
+          "e": "I don't understand."
+        },
+        {
+          "t": "នេះថ្លៃប៉ុន្មាន?",
+          "r": "Nih thlay ponman?",
+          "e": "How much is this?"
+        },
+        {
+          "t": "កុំដាក់ហឹរ",
+          "r": "Kom dak huer.",
+          "e": "Don't make it spicy."
+        },
+        {
+          "t": "សូមនិយាយយឺតៗ",
+          "r": "Som niyeay yeut yeut.",
+          "e": "Please speak slowly."
+        }
+      ],
+      "tags": ["phrases", "travel"]
+    },
+    {
+      "id": "sampeah",
+      "topic": "culture",
+      "title": "The sampeah",
+      "body": "The sampeah (សំពះ) is the Cambodian greeting: palms pressed together with a slight bow. The higher the hands, the more respect, from chest height for friends to the forehead for monks and the king. Cambodian New Year, Choul Chnam Thmey, falls in mid-April.",
+      "tags": ["culture", "greetings"]
+    },
+    {
+      "id": "sounds",
+      "topic": "sounds",
+      "title": "Two series of consonants",
+      "body": "Khmer is not a tonal language. Consonants fall into two series; the series changes how the written vowel is said, so the same vowel sign can sound different after different letters.",
+      "examples": [
+        {
+          "t": "កា · គា",
+          "r": "kaa · kie",
+          "e": "same vowel sign, different series → different sound"
+        }
+      ],
+      "tags": ["pronunciation", "registers"]
+    },
+    {
+      "id": "word-order",
+      "topic": "grammar",
+      "title": "Word order",
+      "body": "Everyday Khmer is subject–verb–object. Negation wraps the verb with មិន … ទេ (mɨn … tei), and questions often keep the same order with a rising tone or a final particle such as ទេ.",
+      "examples": [
+        {
+          "t": "ខ្ញុំ {រៀន} ភាសាខ្មែរ។",
+          "r": "Knyom rien phisaa khmae.",
+          "e": "I learn Khmer."
+        },
+        {
+          "t": "ខ្ញុំ {មិន} យល់ {ទេ}។",
+          "r": "Knyom mɨn yɨl tei.",
+          "e": "I don't understand."
+        }
+      ],
+      "tags": ["word order", "negation"]
+    },
+    {
+      "id": "bon-om-touk",
+      "topic": "culture",
+      "title": "Bon Om Touk",
+      "body": "Bon Om Touk (បុណ្យអុំទូក), the water festival, is held at the full moon in late October or early November, when the Tonlé Sap river reverses its flow. Boat races, lighted floats and thanksgiving fill Phnom Penh and other towns for three days.",
+      "tags": ["festivals"]
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+{
+  "schema": "reference@1",
+  "language": "latin",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Latin at a glance",
+      "body": [
+        "Latin shows who did what with word endings rather than word order. Nouns change their ending for case and number, verbs for person, number, tense, mood and voice. Because the endings carry the grammar, words can be moved around for emphasis; the verb most often comes last.",
+        "There are no articles: puella can mean a girl or the girl. Nouns have three genders, masculine, feminine and neuter."
+      ],
+      "examples": [
+        {
+          "t": "Puella {canem} videt.",
+          "e": "The girl sees the dog."
+        },
+        {
+          "t": "{Canem} puella videt.",
+          "e": "The girl sees the dog. (same meaning: canem is still the object)"
+        }
+      ],
+      "tags": ["inflection", "word order"]
+    },
+    {
+      "id": "pronunciation",
+      "topic": "sounds",
+      "title": "Classical and Church pronunciation",
+      "body": [
+        "Classical pronunciation reconstructs how educated Romans spoke around the 1st century BC. Ecclesiastical (Church) pronunciation follows modern Italian and is used in choral music and the Catholic Church.",
+        "Vowels can be short or long; long ones are marked with a macron in textbooks (ā, ē, ī, ō, ū) and are held about twice as long."
+      ],
+      "table": {
+        "head": ["Spelling", "Classical", "Ecclesiastical"],
+        "rows": [
+          [
+            "c",
+            "always k: Cicerō = KI-ke-ro",
+            "ch before e, i, ae, oe: CHI-che-ro"
+          ],
+          ["g", "always hard g", "soft (as in gem) before e, i"],
+          ["v", "w: vēnī = WAY-nee", "v"],
+          ["ae", "as in eye", "as in bet"],
+          ["ti + vowel", "ti", "tsi: nātiō = NAH-tsi-o"]
+        ]
+      },
+      "tags": ["pronunciation"]
+    },
+    {
+      "id": "stress",
+      "topic": "sounds",
+      "title": "Where the stress falls",
+      "body": "Words of two syllables are stressed on the first. In longer words, stress the second-to-last syllable if it is heavy (it has a long vowel or ends in a consonant); otherwise stress the third-to-last.",
+      "examples": [
+        {
+          "t": "a{mī}cus",
+          "e": "friend · -mī- is long, so it takes the stress"
+        },
+        {
+          "t": "{dō}minus",
+          "e": "master · -mi- is short and open, so the stress moves back"
+        },
+        {
+          "t": "pu{el}la",
+          "e": "girl · -el- ends in a consonant, so it is heavy"
+        }
+      ],
+      "tags": ["pronunciation", "stress"]
+    },
+    {
+      "id": "cases",
+      "topic": "grammar",
+      "title": "The cases",
+      "body": "A noun's case shows its job in the sentence. Latin has six main cases, plus a locative for the names of towns and a few other words (Rōmae, at Rome; domī, at home).",
+      "table": {
+        "head": ["Case", "Job", "Example"],
+        "rows": [
+          [
+            "Nominative",
+            "subject; complement of to be",
+            "{Puella} cantat. · The girl sings."
+          ],
+          ["Genitive", "of; possession", "liber {puellae} · the girl's book"],
+          [
+            "Dative",
+            "to, for; indirect object",
+            "{Puellae} librum dō. · I give the girl a book."
+          ],
+          [
+            "Accusative",
+            "direct object; motion towards",
+            "{Puellam} videō. · I see the girl."
+          ],
+          [
+            "Ablative",
+            "by, with, from, in; means and time",
+            "{Puellā} cantante · while the girl sings"
+          ],
+          ["Vocative", "addressing someone", "{Mārce}, venī! · Marcus, come!"]
+        ]
+      },
+      "tags": ["grammar", "cases"]
+    },
+    {
+      "id": "declensions",
+      "topic": "grammar",
+      "title": "The five declensions",
+      "body": "Nouns fall into five patterns of endings, called declensions. Dictionaries list the nominative and the genitive singular; the genitive ending tells you the declension and gives the stem.",
+      "table": {
+        "head": ["Declension", "Genitive sg.", "Examples", "Usual gender"],
+        "rows": [
+          [
+            "1st",
+            "-ae",
+            "puella, puellae · girl; nauta, nautae · sailor",
+            "feminine"
+          ],
+          [
+            "2nd",
+            "-ī",
+            "dominus, dominī · master; bellum, bellī · war",
+            "masculine, neuter"
+          ],
+          ["3rd", "-is", "rēx, rēgis · king; corpus, corporis · body", "any"],
+          [
+            "4th",
+            "-ūs",
+            "manus, manūs · hand; cornū, cornūs · horn",
+            "masculine"
+          ],
+          [
+            "5th",
+            "-ēī / -eī",
+            "rēs, reī · thing; diēs, diēī · day",
+            "feminine"
+          ]
+        ]
+      },
+      "tags": ["nouns", "declensions"]
+    },
+    {
+      "id": "first-declension",
+      "topic": "grammar",
+      "title": "First declension: puella",
+      "body": "The first declension is the one to learn first. The same endings appear on first-declension adjectives such as bona.",
+      "table": {
+        "head": ["Case", "Singular", "Plural"],
+        "rows": [
+          ["Nominative", "puella", "puellae"],
+          ["Genitive", "puellae", "puellārum"],
+          ["Dative", "puellae", "puellīs"],
+          ["Accusative", "puellam", "puellās"],
+          ["Ablative", "puellā", "puellīs"],
+          ["Vocative", "puella", "puellae"]
+        ]
+      },
+      "tags": ["nouns", "declensions"]
+    },
+    {
+      "id": "second-declension",
+      "topic": "grammar",
+      "title": "Second declension: dominus and bellum",
+      "body": "Neuter nouns in every declension follow one rule: nominative and accusative are the same, and in the plural both end in -a.",
+      "table": {
+        "head": ["Case", "dominus sg.", "dominus pl.", "bellum sg.", "bellum pl."],
+        "rows": [
+          ["Nominative", "dominus", "dominī", "bellum", "bella"],
+          ["Genitive", "dominī", "dominōrum", "bellī", "bellōrum"],
+          ["Dative", "dominō", "dominīs", "bellō", "bellīs"],
+          ["Accusative", "dominum", "dominōs", "bellum", "bella"],
+          ["Ablative", "dominō", "dominīs", "bellō", "bellīs"],
+          ["Vocative", "domine", "dominī", "bellum", "bella"]
+        ]
+      },
+      "tags": ["nouns", "declensions", "neuter"]
+    },
+    {
+      "id": "conjugations",
+      "topic": "verbs",
+      "title": "The four conjugations",
+      "body": [
+        "Verbs fall into four conjugations, told apart by the infinitive: -āre, -ēre, -ere and -īre. A fifth mixed group (capiō, capere) takes some third and some fourth conjugation endings.",
+        "Dictionaries give four principal parts: first person present, infinitive, first person perfect and supine. Learn all four, because the perfect and supine stems are often unpredictable."
+      ],
+      "table": {
+        "head": ["Conjugation", "Principal parts", "Meaning"],
+        "rows": [
+          ["1st -āre", "amō, amāre, amāvī, amātum", "love"],
+          ["2nd -ēre", "moneō, monēre, monuī, monitum", "warn"],
+          ["3rd -ere", "regō, regere, rēxī, rēctum", "rule"],
+          ["3rd -iō", "capiō, capere, cēpī, captum", "take"],
+          ["4th -īre", "audiō, audīre, audīvī, audītum", "hear"]
+        ]
+      },
+      "tags": ["verbs", "conjugation"]
+    },
+    {
+      "id": "present-tense",
+      "topic": "verbs",
+      "title": "Present tense endings",
+      "body": "The personal endings -ō (or -m), -s, -t, -mus, -tis, -nt are the same across almost every active tense. The subject pronoun is usually left out because the ending already shows it.",
+      "table": {
+        "head": ["Person", "amāre", "monēre", "regere", "audīre"],
+        "rows": [
+          ["I", "amō", "moneō", "regō", "audiō"],
+          ["you", "amās", "monēs", "regis", "audīs"],
+          ["he / she / it", "amat", "monet", "regit", "audit"],
+          ["we", "amāmus", "monēmus", "regimus", "audīmus"],
+          ["you all", "amātis", "monētis", "regitis", "audītis"],
+          ["they", "amant", "monent", "regunt", "audiunt"]
+        ]
+      },
+      "tags": ["verbs", "present"]
+    },
+    {
+      "id": "sum",
+      "topic": "verbs",
+      "title": "sum, esse: to be",
+      "body": "The most common verb is irregular. Its perfect is fuī (I was, I have been).",
+      "table": {
+        "head": ["Person", "Present", "Imperfect", "Future"],
+        "rows": [
+          ["I", "sum", "eram", "erō"],
+          ["you", "es", "erās", "eris"],
+          ["he / she / it", "est", "erat", "erit"],
+          ["we", "sumus", "erāmus", "erimus"],
+          ["you all", "estis", "erātis", "eritis"],
+          ["they", "sunt", "erant", "erunt"]
+        ]
+      },
+      "tags": ["verbs", "irregular"]
+    },
+    {
+      "id": "agreement",
+      "topic": "grammar",
+      "title": "Adjective agreement",
+      "body": "An adjective matches its noun in gender, number and case, but not necessarily in declension, so the endings don't always look alike. Adjectives usually follow the noun.",
+      "examples": [
+        {
+          "t": "puella {bona}",
+          "e": "a good girl (feminine)"
+        },
+        {
+          "t": "dominus {bonus}",
+          "e": "a good master (masculine)"
+        },
+        {
+          "t": "bellum {bonum}",
+          "e": "a good war (neuter)"
+        },
+        {
+          "t": "nauta {bonus}",
+          "e": "a good sailor: nauta is 1st declension but masculine"
+        }
+      ],
+      "tags": ["adjectives", "agreement"]
+    },
+    {
+      "id": "prepositions",
+      "topic": "grammar",
+      "title": "Prepositions and their cases",
+      "body": "Each preposition takes a set case. In and sub take the ablative for place where, and the accusative for motion into.",
+      "examples": [
+        {
+          "t": "in {urbe}",
+          "e": "in the city (ablative)"
+        },
+        {
+          "t": "in {urbem}",
+          "e": "into the city (accusative)"
+        }
+      ],
+      "table": {
+        "head": ["+ accusative", "+ ablative"],
+        "rows": [
+          ["ad · to, towards", "ā, ab · from, by"],
+          ["per · through", "cum · with"],
+          ["post · after, behind", "dē · down from, about"],
+          ["ante · before", "ē, ex · out of"],
+          ["trāns · across", "sine · without"],
+          ["in · into", "in · in, on"]
+        ]
+      },
+      "tags": ["prepositions", "cases"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Numbers and numerals",
+      "body": [
+        "ūnus, duo, trēs, quattuor, quīnque, sex, septem, octō, novem, decem. Only ūnus, duo and trēs change their endings to agree with a noun.",
+        "Roman numerals use I 1, V 5, X 10, L 50, C 100, D 500, M 1000. A smaller numeral before a larger one is subtracted: IV 4, IX 9, XL 40, XC 90, CD 400, CM 900."
+      ],
+      "examples": [
+        {
+          "t": "MMXXVI",
+          "e": "2026"
+        },
+        {
+          "t": "MCMXCIX",
+          "e": "1999 · M + CM + XC + IX"
+        }
+      ],
+      "tags": ["numbers", "roman numerals"]
+    },
+    {
+      "id": "phrases",
+      "topic": "phrases",
+      "title": "Greetings and phrases",
+      "examples": [
+        {
+          "t": "Salvē! · Salvēte!",
+          "e": "Hello! (to one · to several)"
+        },
+        {
+          "t": "Valē! · Valēte!",
+          "e": "Goodbye! (to one · to several)"
+        },
+        {
+          "t": "Quid agis?",
+          "e": "How are you doing?"
+        },
+        {
+          "t": "Bene mē habeō.",
+          "e": "I'm well."
+        },
+        {
+          "t": "Grātiās tibi agō.",
+          "e": "Thank you."
+        },
+        {
+          "t": "Quōmodo tibi nōmen est?",
+          "e": "What is your name?"
+        },
+        {
+          "t": "Mihi nōmen est Marcus.",
+          "e": "My name is Marcus."
+        }
+      ],
+      "tags": ["greetings"]
+    },
+    {
+      "id": "abbreviations",
+      "topic": "culture",
+      "title": "Latin hiding in English",
+      "body": "Many everyday abbreviations and phrases are Latin.",
+      "table": {
+        "head": ["Short", "Latin", "Meaning"],
+        "rows": [
+          ["e.g.", "exemplī grātiā", "for the sake of example"],
+          ["i.e.", "id est", "that is"],
+          ["etc.", "et cētera", "and the rest"],
+          ["cf.", "cōnfer", "compare"],
+          ["N.B.", "notā bene", "note well"],
+          ["a.m. · p.m.", "ante · post merīdiem", "before · after midday"],
+          ["P.S.", "post scrīptum", "written after"],
+          ["vs.", "versus", "against"]
+        ]
+      },
+      "tags": ["culture", "abbreviations"]
+    },
+    {
+      "id": "imperfect",
+      "topic": "verbs",
+      "title": "Imperfect tense: amābam",
+      "body": "The imperfect describes ongoing, repeated or habitual action in the past: was doing, used to do. Add -bā- and the personal endings (-m for I).",
+      "table": {
+        "head": ["Person", "amāre", "monēre", "regere", "audīre"],
+        "rows": [
+          ["I", "amābam", "monēbam", "regēbam", "audiēbam"],
+          ["you", "amābās", "monēbās", "regēbās", "audiēbās"],
+          ["he / she / it", "amābat", "monēbat", "regēbat", "audiēbat"],
+          ["we", "amābāmus", "monēbāmus", "regēbāmus", "audiēbāmus"],
+          ["you all", "amābātis", "monēbātis", "regēbātis", "audiēbātis"],
+          ["they", "amābant", "monēbant", "regēbant", "audiēbant"]
+        ]
+      },
+      "tags": ["verbs", "past"]
+    },
+    {
+      "id": "perfect",
+      "topic": "verbs",
+      "title": "Perfect tense: amāvī",
+      "body": "The perfect is a single completed action: I loved, I have loved. Take the third principal part and use the special perfect endings, which are the same for every verb.",
+      "examples": [
+        {
+          "t": "Vēnī, vīdī, {vīcī}.",
+          "e": "I came, I saw, I conquered. (Julius Caesar)"
+        }
+      ],
+      "table": {
+        "head": ["Person", "Ending", "amō", "sum"],
+        "rows": [
+          ["I", "-ī", "amāvī", "fuī"],
+          ["you", "-istī", "amāvistī", "fuistī"],
+          ["he / she / it", "-it", "amāvit", "fuit"],
+          ["we", "-imus", "amāvimus", "fuimus"],
+          ["you all", "-istis", "amāvistis", "fuistis"],
+          ["they", "-ērunt", "amāvērunt", "fuērunt"]
+        ]
+      },
+      "tags": ["verbs", "perfect"]
+    },
+    {
+      "id": "ablative-absolute",
+      "topic": "grammar",
+      "title": "The ablative absolute",
+      "body": "A noun and a participle (or a second noun) in the ablative, standing apart from the rest of the sentence, set the scene: when, since or although something was the case. Translate with with, when, after or since.",
+      "examples": [
+        {
+          "t": "{Urbe captā}, mīlitēs discessērunt.",
+          "e": "With the city captured (after the city was taken), the soldiers left."
+        },
+        {
+          "t": "{Caesare duce}, Rōmānī vīcērunt.",
+          "e": "With Caesar as leader, the Romans won."
+        }
+      ],
+      "tags": ["grammar", "ablative", "participles"]
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "schema": "reference@1",
+  "language": "hebrew",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Hebrew at a glance",
+      "body": [
+        "Modern Hebrew is a Semitic language, related to Arabic and Aramaic, and the main language of Israel. It was revived as an everyday spoken language in the late 19th and early 20th centuries after centuries of use mainly in prayer and writing.",
+        "Words are built from roots of three consonants: כ־ת־ב (k-t-v) gives כותב “writes”, מכתב “letter” and כתובת “address”. Nouns, adjectives and verbs mark masculine or feminine, and the present tense has no verb “to be”."
+      ],
+      "examples": [
+        {
+          "t": "אני {לומד} עברית.",
+          "r": "Ani lomed ivrit.",
+          "e": "I am learning Hebrew. (a man)"
+        }
+      ],
+      "tags": ["Semitic", "roots", "gender"]
+    },
+    {
+      "id": "alephbet",
+      "topic": "script",
+      "title": "The alef-bet",
+      "body": [
+        "Hebrew has 22 letters, all consonants, written right to left. There are no capitals. Five letters take a different shape at the end of a word: כ ך, מ ם, נ ן, פ ף, צ ץ.",
+        "A few letters also stand for vowels: ו for o or u, י for i or e. The letters ב, כ and פ have two sounds each (b/v, k/ch, p/f)."
+      ],
+      "table": {
+        "head": ["Letter", "Name", "Sound"],
+        "rows": [
+          ["א", "alef", "silent, or a glottal stop"],
+          ["ב", "bet / vet", "b or v"],
+          ["ג", "gimel", "g"],
+          ["ד", "dalet", "d"],
+          ["ה", "he", "h (often silent at the end)"],
+          ["ו", "vav", "v, or the vowel o / u"],
+          ["ז", "zayin", "z"],
+          ["ח", "chet", "ch as in Bach"],
+          ["ט", "tet", "t"],
+          ["י", "yod", "y, or the vowel i / e"],
+          ["כ ך", "kaf / chaf", "k or ch"],
+          ["ל", "lamed", "l"],
+          ["מ ם", "mem", "m"],
+          ["נ ן", "nun", "n"],
+          ["ס", "samech", "s"],
+          ["ע", "ayin", "silent, or a glottal stop"],
+          ["פ ף", "pe / fe", "p or f"],
+          ["צ ץ", "tsadi", "ts"],
+          ["ק", "kuf", "k"],
+          ["ר", "resh", "r (in the throat)"],
+          ["ש", "shin / sin", "sh or s"],
+          ["ת", "tav", "t"]
+        ]
+      },
+      "tags": ["script", "letters", "final forms"]
+    },
+    {
+      "id": "niqqud",
+      "topic": "script",
+      "title": "Vowel points",
+      "body": "Vowels can be shown with dots and dashes under, over or inside the letters (ניקוד, niqqud). Children's books, poetry, prayer books and dictionaries use them; newspapers, signs and everyday writing leave them out, and readers fill in the vowels from context.",
+      "examples": [
+        {
+          "t": "שָׁלוֹם · שלום",
+          "r": "shalom",
+          "e": "the same word with and without vowel points"
+        },
+        {
+          "t": "סֵפֶר · סַפָּר · סְפָר",
+          "r": "sefer · sapar · sfar",
+          "e": "book · barber · frontier: all written ספר without points"
+        }
+      ],
+      "tags": ["vowels", "niqqud"]
+    },
+    {
+      "id": "sounds",
+      "topic": "sounds",
+      "title": "Sounds to watch",
+      "body": "Modern Israeli Hebrew has five vowels: a, e, i, o, u. The stress usually falls on the last syllable. Two pairs of letters now sound the same for most speakers: ח and כ (ch), and א and ע (silent or a light catch). ר is said in the throat, like French r.",
+      "examples": [
+        {
+          "t": "חם · כמה",
+          "r": "cham · kama",
+          "e": "hot · how much (ח and כ both ch / k)"
+        }
+      ],
+      "tags": ["pronunciation", "stress"]
+    },
+    {
+      "id": "pronouns",
+      "topic": "grammar",
+      "title": "Personal pronouns",
+      "body": "“You” and “they” have separate masculine and feminine forms. A mixed group takes the masculine.",
+      "table": {
+        "head": ["", "Singular", "Plural"],
+        "rows": [
+          ["1st", "אני ani", "אנחנו anachnu"],
+          ["2nd masc.", "אתה ata", "אתם atem"],
+          ["2nd fem.", "את at", "אתן aten"],
+          ["3rd masc.", "הוא hu", "הם hem"],
+          ["3rd fem.", "היא hi", "הן hen"]
+        ]
+      },
+      "tags": ["pronouns", "gender"]
+    },
+    {
+      "id": "present",
+      "topic": "verbs",
+      "title": "The present tense",
+      "body": "The present tense has four forms, chosen by the gender and number of the subject, not by the person. Past and future, which come later, change for person too.",
+      "table": {
+        "head": ["", "to write (כ־ת־ב)", "to speak (ד־ב־ר)"],
+        "rows": [
+          ["masc. sing.", "כותב kotev", "מדבר medaber"],
+          ["fem. sing.", "כותבת kotevet", "מדברת medaberet"],
+          ["masc. plural", "כותבים kotvim", "מדברים medabrim"],
+          ["fem. plural", "כותבות kotvot", "מדברות medabrot"]
+        ]
+      },
+      "tags": ["verbs", "present", "binyanim"]
+    },
+    {
+      "id": "et",
+      "topic": "grammar",
+      "title": "את before a definite object",
+      "body": "When the object of a verb is definite (it has ה־, or it is a name), Hebrew puts the little word את (et) in front of it. With an indefinite object there is no את. It has no English translation.",
+      "examples": [
+        {
+          "t": "אני רואה {את} הים.",
+          "r": "Ani ro'e et ha-yam.",
+          "e": "I see the sea."
+        },
+        {
+          "t": "אני רואה ים.",
+          "r": "Ani ro'e yam.",
+          "e": "I see a sea."
+        },
+        {
+          "t": "אתה מכיר {את} דנה?",
+          "r": "Ata makir et Dana?",
+          "e": "Do you know Dana?"
+        }
+      ],
+      "tags": ["objects", "et"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Numbers",
+      "body": "Numbers have masculine and feminine forms. Counting aloud, telling the time and saying prices use the feminine forms shown here.",
+      "table": {
+        "head": ["", "Hebrew", "Transliteration"],
+        "rows": [
+          ["1", "אחת", "achat"],
+          ["2", "שתיים", "shtayim"],
+          ["3", "שלוש", "shalosh"],
+          ["4", "ארבע", "arba"],
+          ["5", "חמש", "chamesh"],
+          ["6", "שש", "shesh"],
+          ["7", "שבע", "sheva"],
+          ["8", "שמונה", "shmone"],
+          ["9", "תשע", "tesha"],
+          ["10", "עשר", "eser"],
+          ["20", "עשרים", "esrim"],
+          ["100", "מאה", "me'a"],
+          ["1000", "אלף", "elef"]
+        ]
+      },
+      "tags": ["numbers", "gender"]
+    },
+    {
+      "id": "phrases",
+      "topic": "phrases",
+      "title": "Everyday phrases",
+      "examples": [
+        {
+          "t": "שלום, מה נשמע?",
+          "r": "Shalom, ma nishma?",
+          "e": "Hi, how's it going?"
+        },
+        {
+          "t": "תודה רבה.",
+          "r": "Toda raba.",
+          "e": "Thank you very much."
+        },
+        {
+          "t": "סליחה, איפה התחנה?",
+          "r": "Slicha, eifo ha-tachana?",
+          "e": "Excuse me, where is the station?"
+        },
+        {
+          "t": "כמה זה עולה?",
+          "r": "Kama ze ole?",
+          "e": "How much does this cost?"
+        },
+        {
+          "t": "אני לא מבין / מבינה.",
+          "r": "Ani lo mevin / mevina.",
+          "e": "I don't understand. (man / woman)"
+        },
+        {
+          "t": "אפשר את החשבון?",
+          "r": "Efshar et ha-cheshbon?",
+          "e": "Could I have the bill?"
+        },
+        {
+          "t": "שבת שלום!",
+          "r": "Shabat shalom!",
+          "e": "Have a peaceful Sabbath! (Friday and Saturday)"
+        }
+      ],
+      "tags": ["phrases", "travel"]
+    },
+    {
+      "id": "week",
+      "topic": "culture",
+      "title": "The Israeli week",
+      "body": "The working week runs Sunday to Thursday, and Friday is a short day. Shabbat runs from sunset on Friday to nightfall on Saturday; many shops and most public transport stop. The days are numbered: יום ראשון “first day” is Sunday, יום שני Monday, and so on to יום שישי, Friday.",
+      "tags": ["culture", "Shabbat", "days"]
+    }
+  ]
+}
