@@ -47,6 +47,34 @@ git submodule update --init          # after cloning a repo that uses it
 
 Moving the pinned commit forward is its own PR in that repo.
 
+## Language packs
+
+`tools/export.py` exports each language's content as a pack: everything in
+`languages/<id>/`, its varieties, the license and the credits, in a form other
+programs can open without knowing this repo's layout. It needs only Python 3.
+
+```
+python3 tools/export.py                  # every language, every format, into build/packs/
+python3 tools/export.py japanese latin   # just these languages
+python3 tools/export.py --format folder  # just one format
+python3 tools/export.py --out ~/packs    # write somewhere else
+python3 tools/export.py --list           # the languages and formats
+```
+
+Formats:
+
+- **folder**: `build/packs/<id>/`, the content as plain files split by type.
+  The repo's own files are copied unchanged (`vocab/vocab.jsonl`,
+  `grammar/grammar.json` and so on), next to easier views of them: one
+  tab-separated file per vocabulary deck (`vocab/decks/`) and one JSON file per
+  grammar lesson (`grammar/lessons/`). `pack.json` lists every file, the data
+  commit, and how many words or lessons each part holds. Content types the
+  export has no special view for are still copied, so nothing is left out.
+
+Packs are build output, so `build/` is ignored by git. CI exports every
+language in every format on each pull request and checks the packs against the
+repo, without keeping them.
+
 ## Contributing
 
 Every change goes through a pull request. See `AGENTS.md` and
