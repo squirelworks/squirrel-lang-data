@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/squirelworks/squirrel-lang-data/schemas/inflections.v1.json",
+  "title": "inflections@1: one language's inflection tables",
+  "description": "languages/<id>/inflections.jsonl. The first line is the header; every later line is one word (a lemma) with the forms it takes. A translator reads it both ways: a form found in text leads back to its lemma and features (行きました is go with @polite and @past), and a lemma with features leads to the form to write.",
+  "type": "object",
+  "properties": {
+    "header": {
+      "type": "object",
+      "required": ["schema", "language"],
+      "additionalProperties": false,
+      "properties": {
+        "schema": { "const": "inflections@1" },
+        "language": { "description": "The language id; must match the folder.", "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+        "notes": { "description": "How the tables are written: which forms, which readings, where they come from.", "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "source": { "type": "string", "minLength": 1 },
+        "license": { "type": "string", "minLength": 1 }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "required": ["lemma", "m", "forms"],
+      "additionalProperties": false,
+      "properties": {
+        "lemma": { "description": "The dictionary form, as the language's word lists write it.", "type": "string", "minLength": 1 },
+        "reading": { "description": "The lemma's romanization or kana, as in the language's matrix column.", "type": "string" },
+        "m": { "description": "The content meaning (meaning@1 id) the word carries.", "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "class": { "description": "The inflection class, named the way learners of the language know it (godan, ichidan, irregular).", "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+        "forms": {
+          "description": "Every form listed for the word. One of them is named dictionary and is the lemma itself.",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["name", "text", "features"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "description": "What learners call the form (dictionary, polite, te, stem), unique within the word.", "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+              "text": { "type": "string", "minLength": 1 },
+              "reading": { "type": "string" },
+              "features": { "description": "Meaning@1 ids the form adds to the lemma's meaning: grammar meanings such as @past and @polite, or content meanings such as not. Empty for a form that adds none by itself (a stem or te form).", "type": "array", "items": { "type": "string", "pattern": "^@?[a-z0-9][a-z0-9-]*$" }, "uniqueItems": true }
+            }
+          }
+        },
+        "note": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}
