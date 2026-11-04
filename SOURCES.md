@@ -13,6 +13,8 @@ only imported when its license fits that.
 | FSI Amharic Basic Course; FSI Italian | Amharic and Italian grammar courses | Public domain (US government work) | Foreign Service Institute |
 | Allen and Greenough, *New Latin Grammar* (1903) | Latin grammar course | Public domain | via Perseus and Dickinson College Commentaries |
 | A. J. Primrose, *A Manipuri Grammar, Vocabulary, and Phrase Book* (1888) | Manipuri grammar course | Public domain | |
+| National Institute of Korean Language, Basic Korean Dictionary (한국어기초사전) | Korean graded vocabulary decks (beginner, intermediate, advanced) and level tags | CC BY-SA 2.0 KR (adaptations shared under CC BY-SA 4.0, as it allows) | 국립국어원 한국어기초사전, https://krdict.korean.go.kr, read via https://github.com/spellcheck-ko/korean-dict-nikl-krdict |
+| wordfreq (Robyn Speer and contributors) | Frequency tags (core, common, rare) on vocabulary | CC BY-SA 4.0 (data) | https://github.com/rspeer/wordfreq |
 
 Content written for this project is marked as original in its file and isn't
 listed here.
