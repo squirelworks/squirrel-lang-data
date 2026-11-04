@@ -25,3 +25,6 @@ python3 tools/fmt.py        # format every content file in place
 | `migrate/lsd_vocab.py` | The one-time conversion of LanguageStudentDesk's `vocab.js` decks to `vocab@1` (needs node). |
 | `gen_grammar.py` | Generates LanguageStudentDesk's `languages/<id>/grammar.js` courses from `grammar.json`. `--check` reports drift. |
 | `migrate/lsd_grammar.py` | The one-time conversion of LanguageStudentDesk's `grammar.js` courses to `grammar@1` (needs node). |
+| `export.py` | Exports language packs (see the repo README): every language, or the ones named, in every format or the ones given with `--format`, into `build/packs/` or `--out`. |
+| `packs/` | The pack formats. `packs/__init__.py` reads a language folder once, and each format module writes it out and checks what it wrote. |
+| `check_export.py` | Exports every language in every format into a temporary folder: every repo file is in the pack unchanged, each format's own check passes, and two exports are identical. |
