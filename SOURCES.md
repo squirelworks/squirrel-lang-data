@@ -13,6 +13,9 @@ only imported when its license fits that.
 | FSI Amharic Basic Course; FSI Italian | Amharic and Italian grammar courses | Public domain (US government work) | Foreign Service Institute |
 | Allen and Greenough, *New Latin Grammar* (1903) | Latin grammar course | Public domain | via Perseus and Dickinson College Commentaries |
 | A. J. Primrose, *A Manipuri Grammar, Vocabulary, and Phrase Book* (1888) | Manipuri grammar course | Public domain | |
+| Jonathan Waller, JLPT Resources (tanos.co.uk) | Japanese JLPT N5 to N1 vocabulary decks and level tags | CC BY | Jonathan Waller, http://www.tanos.co.uk/jlpt/ |
+| yomitan-jlpt-vocab (Stephen Kraus), the cleaned-up copy of Waller's lists the import reads | Japanese JLPT vocabulary (common spellings checked against JMdict) | CC BY-SA 4.0 | https://github.com/stephenmk/yomitan-jlpt-vocab |
+| wordfreq (Robyn Speer and contributors) | Frequency tags (core, common, rare) on vocabulary | CC BY-SA 4.0 (data) | https://github.com/rspeer/wordfreq |
 
 Content written for this project is marked as original in its file and isn't
 listed here.
