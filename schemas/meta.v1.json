@@ -83,6 +83,27 @@
         "rtl"
       ]
     },
+    "markers": {
+      "description": "Where grammar markers written as separate words (particles, prepositions, postpositions, articles, measure words) sit relative to the word they mark: \"before\" it (English to school, the bus) or \"after\" it (Japanese 学校に). \"default\" covers every marker; a grammar meaning id from meaning/meanings.jsonl (\"@possessive\") overrides it for that marker. Hyphenated affixes in the meaning matrix already show their side and don't need this. Used by squirrelator to group words into phrases.",
+      "type": "object",
+      "required": [
+        "default"
+      ],
+      "properties": {
+        "default": {
+          "enum": [
+            "before",
+            "after"
+          ]
+        }
+      },
+      "additionalProperties": {
+        "enum": [
+          "before",
+          "after"
+        ]
+      }
+    },
     "varieties": {
       "description": "Ids of the varieties in varieties/, alphabetical. Must match the folders there.",
       "type": "array",
