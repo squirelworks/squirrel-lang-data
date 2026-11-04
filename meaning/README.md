@@ -10,7 +10,10 @@ and the meaning network is trained on them.
 | `sentences.jsonl` | `sentences@1` | The rows: model English, other natural English, and the content meanings every rendering must carry. |
 | `phrasings.jsonl` | `phrasings@1` | English that carries a meaning only next to others ("take" is *go* next to *bus*), or lets English leave one out. |
 | `columns/<language>.jsonl` | `columns@1` | One language's renderings of the rows, token by token, each token pointing back at meanings. |
+| `vocab-links/<language>.jsonl` | `vocab-links@1` | Which content meanings each card in `languages/<language>/vocab.jsonl` carries, by vocab id, so vocabulary, translation and the network share the same units. |
 
 All of it was written for this project. `tools/check_meaning.py` checks that
 every column carries exactly each sentence's meanings, and
 `tools/gen_meaning.py` writes the files the Translation Learner loads.
+`tools/check_vocab_links.py` checks the vocabulary links against the decks and
+meanings, and `tools/gen_vocab_links.py` writes them out for LanguageStudentDesk.

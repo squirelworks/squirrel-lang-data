@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/squirelworks/squirrel-lang-data/schemas/vocab-links.v1.json",
+  "title": "vocab-links@1: which meaning units a language's vocabulary words carry",
+  "description": "meaning/vocab-links/<language>.jsonl. The first line is the header; every later line links one word of languages/<language>/vocab.jsonl to the content meanings (meaning@1 ids) it carries, so vocabulary, translation and the meaning network share the same units. Lines follow the vocab file's order.",
+  "type": "object",
+  "properties": {
+    "header": {
+      "type": "object",
+      "required": ["schema", "language"],
+      "additionalProperties": false,
+      "properties": {
+        "schema": { "const": "vocab-links@1" },
+        "language": { "description": "The language id; must match the file name and a folder in languages/ with a vocab.jsonl.", "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+        "notes": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "required": ["vocab", "meanings"],
+      "additionalProperties": false,
+      "properties": {
+        "vocab": { "description": "A vocab@1 id, exactly: the deck id, a slash, and the word.", "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*/.+$" },
+        "meanings": { "description": "The content meanings the word carries, most central first.", "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" } },
+        "note": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}
