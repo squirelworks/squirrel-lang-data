@@ -31,7 +31,6 @@ sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(HERE.parent))
 import fmt  # noqa: E402
 import lib  # noqa: E402
-from freq import zipf_tagger  # noqa: E402
 from kana import romaji  # noqa: E402
 
 COMMIT = "b062d4e38c4bdd0950ae1d4ec55f04b176182e03"
@@ -66,6 +65,18 @@ def meaning(definition):
     bare = r",(?!\s)(?!(?<=\d,)\d)"
     d = re.sub(bare, "; ", d) if re.search(bare, d) else re.sub(r",\s+", "; ", d)
     return re.sub(r"\s+", " ", d)
+
+
+def zipf_tagger():
+    try:
+        from wordfreq import zipf_frequency
+    except ImportError:
+        sys.exit('needs wordfreq: pip install "wordfreq[mecab]"')
+
+    def tag(word):
+        z = zipf_frequency(word, "ja")
+        return "core" if z >= 4.5 else "common" if z >= 3.5 else "rare"
+    return tag
 
 
 def matches(entry, word, kana):
@@ -123,7 +134,7 @@ def main():
     header, entries = lib.read(path)
     cache = lib.ROOT / "cache" / "jlpt" / COMMIT[:12]
     lists = {n: fetch(n, cache) for n in LEVELS}
-    head, out, skipped = build(header, entries, lists, zipf_tagger("ja"))
+    head, out, skipped = build(header, entries, lists, zipf_tagger())
     path.write_text("".join(json.dumps(x, ensure_ascii=False) + "\n" for x in [head, *out]), encoding="utf-8")
     path.write_text(fmt.format_file(path), encoding="utf-8")
     new = sum(e["deck"].startswith("jlpt-") for e in out)
