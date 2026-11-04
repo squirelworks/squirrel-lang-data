@@ -1,0 +1,406 @@
+{
+  "schema": "klingon@1",
+  "notes": [
+    "pIqaD letters, numerals, example words and articles for SquirrelGo Klingon. Glyphs use the ConScript Unicode Registry private-use code points (U+F8D0-F8FF). Lesson groupings, sound descriptions and articles are original. Example words are a small set of well-known everyday words, not taken from any dictionary."
+  ],
+  "ipa": {
+    "a": "ɑ",
+    "e": "ɛ",
+    "I": "ɪ",
+    "o": "o",
+    "u": "u",
+    "b": "b",
+    "ch": "t͡ʃ",
+    "D": "ɖ",
+    "gh": "ɣ",
+    "H": "x",
+    "j": "d͡ʒ",
+    "l": "l",
+    "m": "m",
+    "n": "n",
+    "ng": "ŋ",
+    "p": "pʰ",
+    "q": "qʰ",
+    "Q": "q͡χ",
+    "r": "r",
+    "S": "ʂ",
+    "t": "tʰ",
+    "tlh": "t͡ɬ",
+    "v": "v",
+    "w": "w",
+    "y": "j",
+    "'": "ʔ"
+  },
+  "lessons": [
+    {
+      "title": "Vowels",
+      "note": "Five vowels, each with one steady sound. I is written as a capital in romanization.",
+      "chars": [
+        {
+          "roman": "a",
+          "codepoint": 63696,
+          "say": "a as in father, open and short",
+          "soundsLike": "ah",
+          "example": "jav",
+          "meaning": "six"
+        },
+        {
+          "roman": "e",
+          "codepoint": 63700,
+          "say": "e as in bet",
+          "soundsLike": "eh",
+          "example": "wej",
+          "meaning": "three"
+        },
+        {
+          "roman": "I",
+          "codepoint": 63703,
+          "say": "i as in bit, never as in bite",
+          "soundsLike": "ih",
+          "example": "bIQ",
+          "meaning": "water"
+        },
+        {
+          "roman": "o",
+          "codepoint": 63709,
+          "say": "o as in go, but pure, with no w glide at the end",
+          "soundsLike": "oh",
+          "example": "Hol",
+          "meaning": "language"
+        },
+        {
+          "roman": "u",
+          "codepoint": 63717,
+          "say": "oo as in food",
+          "soundsLike": "oo",
+          "example": "Hut",
+          "meaning": "nine"
+        }
+      ]
+    },
+    {
+      "title": "Familiar consonants",
+      "note": "These sound much like English.",
+      "chars": [
+        {
+          "roman": "b",
+          "codepoint": 63697,
+          "say": "b as in bed",
+          "soundsLike": "b",
+          "example": "bIQ",
+          "meaning": "water"
+        },
+        {
+          "roman": "j",
+          "codepoint": 63704,
+          "say": "j as in jump",
+          "soundsLike": "j",
+          "example": "jav",
+          "meaning": "six"
+        },
+        {
+          "roman": "l",
+          "codepoint": 63705,
+          "say": "l as in let",
+          "soundsLike": "l",
+          "example": "loS",
+          "meaning": "four"
+        },
+        {
+          "roman": "m",
+          "codepoint": 63706,
+          "say": "m as in man",
+          "soundsLike": "m",
+          "example": "maH",
+          "meaning": "we"
+        },
+        {
+          "roman": "n",
+          "codepoint": 63707,
+          "say": "n as in no",
+          "soundsLike": "n",
+          "example": "nuqneH",
+          "meaning": "a greeting: what do you want?"
+        },
+        {
+          "roman": "v",
+          "codepoint": 63718,
+          "say": "v as in van",
+          "soundsLike": "v",
+          "example": "vagh",
+          "meaning": "five"
+        },
+        {
+          "roman": "w",
+          "codepoint": 63719,
+          "say": "w as in wet",
+          "soundsLike": "w",
+          "example": "wa'",
+          "meaning": "one"
+        },
+        {
+          "roman": "y",
+          "codepoint": 63720,
+          "say": "y as in yes",
+          "soundsLike": "y",
+          "example": "yIH",
+          "meaning": "tribble"
+        }
+      ]
+    },
+    {
+      "title": "Crisp consonants",
+      "note": "p, t and ch come with a strong puff of air. ng is one letter.",
+      "chars": [
+        {
+          "roman": "p",
+          "codepoint": 63710,
+          "say": "p as in pin, with a strong puff of air",
+          "soundsLike": "p",
+          "example": "pagh",
+          "meaning": "zero, none"
+        },
+        {
+          "roman": "t",
+          "codepoint": 63715,
+          "say": "t as in top, with a strong puff of air",
+          "soundsLike": "t",
+          "example": "Hut",
+          "meaning": "nine"
+        },
+        {
+          "roman": "ch",
+          "codepoint": 63698,
+          "say": "ch as in church",
+          "soundsLike": "ch",
+          "example": "cha'",
+          "meaning": "two"
+        },
+        {
+          "roman": "r",
+          "codepoint": 63713,
+          "say": "a tapped or lightly rolled r",
+          "soundsLike": "r (rolled)",
+          "example": "chorgh",
+          "meaning": "eight"
+        },
+        {
+          "roman": "ng",
+          "codepoint": 63708,
+          "say": "ng as in sing, and it can start a word",
+          "soundsLike": "ng",
+          "example": "tlhIngan",
+          "meaning": "Klingon"
+        }
+      ]
+    },
+    {
+      "title": "Capital-letter sounds",
+      "note": "Romanization writes these as capitals because they are not the English sounds. Never write them in lower case.",
+      "chars": [
+        {
+          "roman": "D",
+          "codepoint": 63699,
+          "say": "d with the tongue tip curled back to touch the roof of the mouth",
+          "soundsLike": "d (tongue curled back)",
+          "example": "Duj",
+          "meaning": "ship"
+        },
+        {
+          "roman": "H",
+          "codepoint": 63702,
+          "say": "a rough h from the back of the mouth, like ch in Scottish loch",
+          "soundsLike": "kh (as in loch)",
+          "example": "Hol",
+          "meaning": "language"
+        },
+        {
+          "roman": "S",
+          "codepoint": 63714,
+          "say": "sh with the tongue tip curled back",
+          "soundsLike": "sh (tongue curled back)",
+          "example": "Soch",
+          "meaning": "seven"
+        },
+        {
+          "roman": "Q",
+          "codepoint": 63712,
+          "say": "q followed straight away by a harsh H: a hard, raspy kh",
+          "soundsLike": "qkh",
+          "example": "Qapla'",
+          "meaning": "success"
+        }
+      ]
+    },
+    {
+      "title": "Throat sounds",
+      "note": "The sounds that give Klingon its edge. Take them slowly.",
+      "chars": [
+        {
+          "roman": "q",
+          "codepoint": 63711,
+          "say": "k made far back in the throat, against the uvula, with a puff of air",
+          "soundsLike": "k (far back)",
+          "example": "nuqneH",
+          "meaning": "a greeting: what do you want?"
+        },
+        {
+          "roman": "gh",
+          "codepoint": 63701,
+          "say": "a gargled g: the voiced partner of H",
+          "soundsLike": "gh (gargled)",
+          "example": "ghobe'",
+          "meaning": "no"
+        },
+        {
+          "roman": "tlh",
+          "codepoint": 63716,
+          "say": "t followed by a hissing l, with air rushing past the sides of the tongue",
+          "soundsLike": "tl (hissed)",
+          "example": "tlhIngan",
+          "meaning": "Klingon"
+        },
+        {
+          "roman": "'",
+          "codepoint": 63721,
+          "say": "a glottal stop, the catch in the middle of uh-oh; it is a full letter",
+          "soundsLike": "(catch in uh-oh)",
+          "example": "wa'",
+          "meaning": "one"
+        }
+      ]
+    },
+    {
+      "title": "Numerals",
+      "numerals": true,
+      "note": "pIqaD has its own ten digits. Numbers are written with the largest place first, as in English.",
+      "chars": [
+        {
+          "roman": "0",
+          "codepoint": 63728,
+          "say": "pagh",
+          "soundsLike": "pagh",
+          "example": "pagh",
+          "meaning": "zero"
+        },
+        {
+          "roman": "1",
+          "codepoint": 63729,
+          "say": "wa'",
+          "soundsLike": "wa'",
+          "example": "wa'",
+          "meaning": "one"
+        },
+        {
+          "roman": "2",
+          "codepoint": 63730,
+          "say": "cha'",
+          "soundsLike": "cha'",
+          "example": "cha'",
+          "meaning": "two"
+        },
+        {
+          "roman": "3",
+          "codepoint": 63731,
+          "say": "wej",
+          "soundsLike": "wej",
+          "example": "wej",
+          "meaning": "three"
+        },
+        {
+          "roman": "4",
+          "codepoint": 63732,
+          "say": "loS",
+          "soundsLike": "loS",
+          "example": "loS",
+          "meaning": "four"
+        },
+        {
+          "roman": "5",
+          "codepoint": 63733,
+          "say": "vagh",
+          "soundsLike": "vagh",
+          "example": "vagh",
+          "meaning": "five"
+        },
+        {
+          "roman": "6",
+          "codepoint": 63734,
+          "say": "jav",
+          "soundsLike": "jav",
+          "example": "jav",
+          "meaning": "six"
+        },
+        {
+          "roman": "7",
+          "codepoint": 63735,
+          "say": "Soch",
+          "soundsLike": "Soch",
+          "example": "Soch",
+          "meaning": "seven"
+        },
+        {
+          "roman": "8",
+          "codepoint": 63736,
+          "say": "chorgh",
+          "soundsLike": "chorgh",
+          "example": "chorgh",
+          "meaning": "eight"
+        },
+        {
+          "roman": "9",
+          "codepoint": 63737,
+          "say": "Hut",
+          "soundsLike": "Hut",
+          "example": "Hut",
+          "meaning": "nine"
+        }
+      ]
+    }
+  ],
+  "words": [
+    ["Qapla'", "success"],
+    ["tlhIngan", "Klingon"],
+    ["tlhIngan Hol", "the Klingon language"],
+    ["nuqneH", "a greeting: what do you want?"],
+    ["HIja'", "yes"],
+    ["ghobe'", "no"],
+    ["Hol", "language"],
+    ["bIQ", "water"],
+    ["Duj", "ship"],
+    ["yIH", "tribble"],
+    ["maH", "we"],
+    ["pagh", "zero, none"],
+    ["wa'", "one"],
+    ["cha'", "two"],
+    ["wej", "three"],
+    ["loS", "four"],
+    ["vagh", "five"],
+    ["jav", "six"],
+    ["Soch", "seven"],
+    ["chorgh", "eight"],
+    ["Hut", "nine"]
+  ],
+  "articles": [
+    {
+      "title": "About pIqaD",
+      "body": "<p><b>pIqaD</b> is the Klingon alphabet. Its letters began as decorative alien lettering on Star Trek sets and props. Fans later matched the 26 shapes to the 26 letters of the romanization used to write the language, and that mapping is now the standard one.</p>\n<p>Most Klingon text is written in that romanization (<i>tlhIngan Hol</i>, \"Klingon language\"), but pIqaD is what you see on signs, tattoos, book covers and in the hands of serious learners. It is a true alphabet: one shape for each sound, written left to right, with no upper and lower case.</p>\n<p>pIqaD is not in standard Unicode. Computers store it in the Private Use Area at the code points set out by the ConScript Unicode Registry (U+F8D0 to U+F8FF), so it only shows up where a pIqaD font is installed. This app carries its own fonts, so it works everywhere.</p>"
+    },
+    {
+      "title": "Reading the romanization",
+      "body": "<p>Each pIqaD letter matches exactly one unit of the romanization. A few things trip up beginners:</p>\n<ul>\n<li><b>Capitals are different letters.</b> <i>q</i> and <i>Q</i> are two separate sounds. <i>D, H, I, Q</i> and <i>S</i> are always capitals; every other letter is always lower case, even at the start of a sentence.</li>\n<li><b>Some letters are written with more than one Latin letter:</b> <i>ch, gh, ng</i> and <i>tlh</i> are each one pIqaD letter.</li>\n<li><b>The apostrophe is a letter.</b> It is the glottal stop and gets its own pIqaD shape.</li>\n</ul>\n<p>So <i>tlhIngan</i> is five letters: <i>tlh · I · ng · a · n</i>. Try it in the <b>Write words</b> tool.</p>"
+    },
+    {
+      "title": "Pronunciation guide",
+      "body": "<p>Klingon sounds are steady: each letter always makes the same sound. Every letter's page shows its IPA symbol and plays the sound: tap ▶ to hear it, ½ to hear it slowly. There is no Klingon text-to-speech voice, so the audio is synthesized from IPA with eSpeak NG. It sounds robotic, but each sound is the right one.</p>\n<table>\n<tr><th>Letter</th><th>Say it like</th></tr>\n<tr><td>a e I o u</td><td>f<b>a</b>ther, b<b>e</b>t, b<b>i</b>t, g<b>o</b>, f<b>oo</b>d</td></tr>\n<tr><td>D</td><td>d with the tongue tip curled back</td></tr>\n<tr><td>S</td><td>sh with the tongue tip curled back</td></tr>\n<tr><td>H</td><td>ch in Scottish lo<b>ch</b>, rough</td></tr>\n<tr><td>gh</td><td>the same place as H, but voiced, like a gargle</td></tr>\n<tr><td>q</td><td>k pulled right back to the throat</td></tr>\n<tr><td>Q</td><td>q with a harsh H straight after</td></tr>\n<tr><td>tlh</td><td>t then a hissed l, air past the sides of the tongue</td></tr>\n<tr><td>'</td><td>the catch in uh-oh</td></tr>\n<tr><td>r</td><td>tapped or rolled</td></tr>\n</table>\n<p><b>Vowel + w or y</b> make glides: <i>ay</i> as in m<b>y</b>, <i>ey</i> as in d<b>ay</b>, <i>oy</i> as in b<b>oy</b>, <i>aw</i> as in c<b>ow</b>, <i>uy</i> like oo-ee run together.</p>\n<p><b>Do not soften the glottal stop.</b> In <i>Qapla'</i> and <i>wa'</i> the word ends with a short, clean catch in the throat.</p>"
+    },
+    {
+      "title": "How to write pIqaD",
+      "body": "<p>There is no official stroke order for pIqaD. The orders in this app are suggestions that make the letters quick and smooth to write by hand:</p>\n<ul>\n<li>A bar across the top comes first, then what hangs from it.</li>\n<li>Main strokes go from top to bottom and from left to right.</li>\n<li>Closed loops (<i>D, H, y</i>) are drawn in one go.</li>\n</ul>\n<p>pIqaD is often drawn sharp and blade-like, as in the <b>Classic</b> font, or rounder and even-weight, as in the <b>Handwriting</b> font. Switch between them in Settings. The letter is the same in both; practise the handwriting shapes first, they are the ones your hand will make.</p>\n<p>Leave a clear gap between words. pIqaD has its own punctuation: a small triangle pointing down works like a comma, one pointing up like a full stop.</p>"
+    },
+    {
+      "title": "Numbers",
+      "body": "<p>Counting from one to nine: <i>wa', cha', wej, loS, vagh, jav, Soch, chorgh, Hut</i>. Zero is <i>pagh</i>.</p>\n<p>Bigger numbers are built by adding a place word after the digit: <i>maH</i> tens, <i>vatlh</i> hundreds, <i>SaD</i> thousands. So 20 is <i>cha'maH</i> and 35 is <i>wejmaH vagh</i>.</p>\n<p>The pIqaD digits work like ours: largest place first, written left to right. Try typing a number in the <b>Write words</b> tool.</p>"
+    }
+  ]
+}

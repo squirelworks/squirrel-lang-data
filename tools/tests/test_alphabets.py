@@ -30,9 +30,14 @@ class Alphabets(unittest.TestCase):
         self.tmp = tempfile.TemporaryDirectory()
         self.root = Path(self.tmp.name)
         (self.root / "schemas").mkdir()
-        (self.root / "schemas" / "alphabet.v1.json").write_text((lib.ROOT / "schemas" / "alphabet.v1.json").read_text(encoding="utf-8"))
+        for s in ("alphabet", "klingon"):
+            (self.root / "schemas" / f"{s}.v1.json").write_text((lib.ROOT / "schemas" / f"{s}.v1.json").read_text(encoding="utf-8"))
         (self.root / "strokes").mkdir()
-        (self.root / "strokes" / "greek.jsonl").write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in STROKES), encoding="utf-8")
+        self.strokes("greek", STROKES)
+        self.strokes("klingon", [dict(STROKES[0], set="klingon"), {"char": "a", "strokes": ["M1,1"]}, {"char": "0", "strokes": ["M1,1"]}])
+
+    def strokes(self, name, rows):
+        (self.root / "strokes" / f"{name}.jsonl").write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows), encoding="utf-8")
 
     def tearDown(self):
         self.tmp.cleanup()
@@ -93,6 +98,52 @@ class Alphabets(unittest.TestCase):
         self.assertEqual(got[0]["articles"], COURSE["articles"])
         f.write_text("stale\n", encoding="utf-8")
         self.assertEqual(gen_alphabets.main(["--data", str(self.root), "--apps", str(apps), "--check"]), 1)
+
+
+KLINGON = {"schema": "klingon@1", "ipa": {"a": "ɑ"},
+           "lessons": [{"title": "Vowels", "chars": [{"roman": "a", "codepoint": 0xF8D0, "say": "a as in father",
+                                                      "soundsLike": "ah", "example": "jav", "meaning": "six"}]},
+                       {"title": "Numerals", "numerals": True, "chars": [{"roman": "0", "codepoint": 0xF8F0, "say": "pagh",
+                                                                          "soundsLike": "pagh", "example": "pagh", "meaning": "zero"}]}],
+           "words": [["Qapla'", "success"]], "articles": [{"title": "About pIqaD", "body": "<p>pIqaD.</p>"}]}
+
+
+class Klingon(Alphabets):
+    def test_klingon(self):
+        p = self.write(KLINGON, "klingon")
+        self.assertEqual(check_schema.check_file(p, self.root), [])
+        self.assertEqual(check_alphabets.check(self.root), [])
+        vowels, numerals = KLINGON["lessons"]
+        cases = {
+            "taught twice": dict(KLINGON, lessons=[vowels, vowels, numerals]),
+            "outside U+F8D0": dict(KLINGON, lessons=[dict(vowels, chars=[dict(vowels["chars"][0], codepoint=0x61)]), numerals]),
+            "used twice": dict(KLINGON, lessons=[vowels, dict(numerals, chars=[dict(numerals["chars"][0], codepoint=0xF8D0)])]),
+            "no strokes": dict(KLINGON, lessons=[dict(vowels, chars=[dict(vowels["chars"][0], roman="b")]), numerals]),
+            "no IPA": dict(KLINGON, ipa={}),
+        }
+        for want, course in cases.items():
+            self.write(course, "klingon")
+            got = check_alphabets.check(self.root)
+            self.assertTrue(any(want in x for x in got), f"{want}: {got}")
+
+    @unittest.skipUnless(subprocess.run(["which", "node"], capture_output=True).returncode == 0, "needs node")
+    def test_generate_apps(self):
+        self.write(KLINGON, "klingon")
+        for name in ("hiragana", "katakana"):
+            self.write(dict(COURSE, id=name), name)
+        subprocess.run(["git", "init", "-q", str(self.root)], check=True)
+        apps = self.root / "apps"
+        self.assertEqual(gen_alphabets.main(["--data", str(self.root), "--apps", str(apps)]), 0)
+        kana = apps / gen_alphabets.C / "squirrelgo-kana/www/data/kana.js"
+        klingon = apps / gen_alphabets.C / "squirrelgo-klingon/www/data/klingon.js"
+        self.assertIn("0xF8D0", klingon.read_text(encoding="utf-8"))
+        js = ("global.window = global;" + "".join(f"eval(require('fs').readFileSync({json.dumps(str(f))}, 'utf8'));" for f in (kana, klingon))
+              + "process.stdout.write(JSON.stringify([SG_SCRIPTS.map(s => s.id), SG_KLINGON]))")
+        ids, k = json.loads(subprocess.run(["node", "-e", js], capture_output=True, text=True, check=True).stdout)
+        self.assertEqual(ids, ["hiragana", "katakana"])
+        self.assertEqual(k["lessons"][0]["chars"][0], ["a", 0xF8D0, "a as in father", "ah", "jav", "six"])
+        self.assertEqual(k["lessons"][1]["numerals"], True)
+        self.assertEqual(k["words"], KLINGON["words"])
 
 
 if __name__ == "__main__":

@@ -1,18 +1,21 @@
 #!/usr/bin/env python3
-"""Generate SquirrelGo Alphabets' script files from alphabets/*.json.
+"""Generate the SquirrelGo character apps' script courses from alphabets/*.json.
 
     python3 data/tools/gen_alphabets.py --apps SquirrelGo-Apps            # write
     python3 data/tools/gen_alphabets.py --apps SquirrelGo-Apps --check    # exit 1 if stale
 
-Writes squirrelgo-characters/squirrelgo-alphabets/www/data/<id>.js under --apps
-for each course: a classic script that pushes the course onto
-window.SG_SCRIPTS. Each character card becomes the array the app reads,
+Writes a classic script that pushes each course onto window.SG_SCRIPTS:
+squirrelgo-characters/squirrelgo-alphabets/www/data/<id>.js under --apps, or
+the file TARGETS names (Kana's two scripts share kana.js; Bopomofo also commits
+an Android copy). alphabets/klingon.json (klingon@1) becomes SquirrelGo
+Klingon's www/data/klingon.js, which sets window.SG_KLINGON. Each character card becomes the array the app reads,
 [char, roman, hint, example, exampleRoman, meaning, speak, ipa, exampleLang,
 exampleIpa], cut after the last field the card gives. The app's index.html
 decides which scripts load and in what order.
 """
 import argparse
 import json
+import re
 import sys
 import textwrap
 from pathlib import Path
@@ -20,7 +23,14 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import lib  # noqa: E402
 
-OUT = Path("squirrelgo-characters") / "squirrelgo-alphabets" / "www" / "data"
+C = Path("squirrelgo-characters")
+OUT = C / "squirrelgo-alphabets" / "www" / "data"
+TARGETS = {
+    "hiragana": [C / "squirrelgo-kana/www/data/kana.js"],
+    "katakana": [C / "squirrelgo-kana/www/data/kana.js"],
+    "zhuyin": [C / "squirrelgo-bopomofo/www/data/bopomofo.js",
+               C / "squirrelgo-bopomofo/android/app/src/main/assets/www/data/bopomofo.js"],
+}
 FIELDS = ["char", "roman", "hint", "example", "exampleRoman", "meaning", "speak", "ipa", "exampleLang", "exampleIpa"]
 
 
@@ -44,20 +54,52 @@ def js(value, indent=1):
     return json.dumps(value, ensure_ascii=False)
 
 
-def script(course, commit, command):
-    body = {k: v for k, v in course.items() if k not in ("schema", "notes")}
-    body["lessons"] = [dict(l, chars=[card(c) for c in l["chars"]]) for l in course["lessons"]]
-    lines = [f"// Generated from squirrel-lang-data {commit} alphabets/{course['id']}.json by: {command}"]
-    lines += [f"// {l}" for n in course.get("notes", []) for l in textwrap.wrap(n, 77)]
+def script(courses, commit, command):
+    names = " and ".join(f"alphabets/{c['id']}.json" for c in courses)
+    lines = [f"// Generated from squirrel-lang-data {commit} {names} by: {command}"]
+    notes = []
+    for c in courses:
+        notes += [n for n in c.get("notes", []) if n not in notes]
+    lines += [f"// {l}" for n in notes for l in textwrap.wrap(n, 77)]
     lines.append("// Each character is [" + ", ".join(FIELDS) + "], cut after the last field it gives.")
-    return ("\n".join(lines) + "\nwindow.SG_SCRIPTS = window.SG_SCRIPTS || [];\n"
-            + f"window.SG_SCRIPTS.push({js(body, 0)});\n")
+    out = "\n".join(lines) + "\nwindow.SG_SCRIPTS = window.SG_SCRIPTS || [];\n"
+    for course in courses:
+        body = {k: v for k, v in course.items() if k not in ("schema", "notes")}
+        body["lessons"] = [dict(l, chars=[card(c) for c in l["chars"]]) for l in course["lessons"]]
+        out += f"window.SG_SCRIPTS.push({js(body, 0)});\n"
+    return out
+
+
+KLINGON = ["roman", "codepoint", "say", "soundsLike", "example", "meaning"]
+
+
+def klingon_script(course, commit, command):
+    lines = [f"// Generated from squirrel-lang-data {commit} alphabets/klingon.json by: {command}"]
+    lines += [f"// {l}" for n in course.get("notes", []) for l in textwrap.wrap(n, 77)]
+    lines.append("// Each character is [" + ", ".join(KLINGON) + "].")
+    body = {"ipa": course["ipa"],
+            "lessons": [dict(l, chars=[[c[k] for k in KLINGON] for c in l["chars"]]) for l in course["lessons"]],
+            "words": course["words"], "articles": course["articles"]}
+    # Code points read better in hex, as U+F8D0 is written.
+    text = re.sub(r"\[(\"(?:[^\"\\]|\\.)*\"), (\d+),", lambda m: f"[{m.group(1)}, 0x{int(m.group(2)):X},", js(body, 0))
+    return "\n".join(lines) + f"\nwindow.SG_KLINGON = {text};\n"
+
+
+ORDER = ["hiragana", "katakana"]  # courses that share a file, in the order the app lists them
 
 
 def build(data, command):
     commit = lib.data_commit(data)
-    return {str(OUT / f"{p.stem}.js"): script(lib.read(p), commit, command)
-            for p in sorted((data / "alphabets").glob("*.json"))}
+    by_file = {}
+    paths = sorted((data / "alphabets").glob("*.json"), key=lambda p: (ORDER.index(p.stem) if p.stem in ORDER else 0, p.stem))
+    for p in paths:
+        course = lib.read(p)
+        if course.get("schema") == "klingon@1":
+            by_file[str(C / "squirrelgo-klingon/www/data/klingon.js")] = klingon_script(course, commit, command)
+            continue
+        for out in TARGETS.get(p.stem, [OUT / f"{p.stem}.js"]):
+            by_file.setdefault(str(out), []).append(course)
+    return {f: cs if isinstance(cs, str) else script(cs, commit, command) for f, cs in by_file.items()}
 
 
 def main(argv=None):
