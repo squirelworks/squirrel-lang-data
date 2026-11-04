@@ -21,6 +21,7 @@ only imported when its license fits that.
 | TOPIK level descriptors | The National Institute for International Education's description of each TOPIK level: short quotations on the Korean reference card | Quoted with attribution; not under this repo's license | Read via https://en.wikipedia.org/wiki/Test_of_Proficiency_in_Korean (official site: https://www.topik.go.kr) |
 | Unicode Han Database (Unihan), Unicode 17.0 | Hanzi pinyin, meanings and traditional forms; hanja education readings and meanings; radicals and stroke counts of CJK characters that are not kanji | Unicode License v3 | Unicode, Inc., https://www.unicode.org/reports/tr38/ |
 | complete-hsk-vocabulary (drkameleon) | Which characters belong to HSK 3.0 levels 1 to 6, and the lowest level each appears at | MIT | https://github.com/drkameleon/complete-hsk-vocabulary |
+| HSK level standard | The 2021 grading standard's description of its three stages and nine levels (a short quotation) and the official word count per level, on the Chinese reference card | Quoted with attribution; the counts are facts | https://institut-confucius.univ-larochelle.fr (announcement, 31 March 2021); counts via https://en.wikipedia.org/wiki/Hanyu_Shuiping_Kaoshi |
 | wordfreq (Robyn Speer and contributors) | Frequency tags (core, common, rare) on vocabulary | CC BY-SA 4.0 (data) | https://github.com/rspeer/wordfreq |
 
 Content written for this project is marked as original in its file and isn't
