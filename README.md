@@ -72,6 +72,13 @@ Formats:
   grammar lesson (`grammar/lessons/`). `pack.json` lists every file, the data
   commit, and how many words or lessons each part holds. Content types the
   export has no special view for are still copied, so nothing is left out.
+- **anki**: `build/packs/<id>.apkg`, the vocabulary as an Anki deck package
+  for Anki, AnkiDroid or AnkiMobile (File > Import). Each vocabulary deck is a
+  subdeck under `SquirrelGo::<Language>`, in teaching order, and each word has
+  a Recognize card and a Recall card. Notes are tagged with their deck, levels
+  (`jlpt::N5`) and frequency (`freq::core`). Importing a newer package updates
+  the notes instead of adding them twice. Languages with no vocabulary get no
+  package.
 - **sqlite**: `build/packs/<id>.sqlite`, one database per language, with its
   varieties in the same tables. `languages`, `decks`, `words`, `word_levels`
   (one row per level tag, for queries like every JLPT N5 word), `courses` and

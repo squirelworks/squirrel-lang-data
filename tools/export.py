@@ -29,6 +29,10 @@ def export(langs, formats, out_dir, root=lib.ROOT, quiet=False):
         pack = packs.load(lang, root)
         for name in formats:
             path = packs.FORMATS[name].write(pack, out_dir)
+            if path is None:
+                if not quiet:
+                    print(f"{name}: {lang} has nothing this format can hold; skipped")
+                continue
             written.append(path)
             if not quiet:
                 print(f"{name}: {path}")

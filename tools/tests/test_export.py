@@ -5,6 +5,7 @@ import json
 import sqlite3
 import sys
 import tempfile
+import zipfile
 import unittest
 from pathlib import Path
 
@@ -132,11 +133,39 @@ class Export(unittest.TestCase):
         self.assertIn("1 rows in words for 2 words", problems)
         self.assertIn("strokes/greek.jsonl is missing", problems)
 
+    def test_anki(self):
+        fmt = packs.FORMATS["anki"]
+        pack = packs.load("greek", self.root)
+        dest = fmt.write(pack, self.out)
+        self.assertEqual(fmt.check(pack, dest, self.root), [])
+        with zipfile.ZipFile(dest) as z:
+            (self.out / "c.anki2").write_bytes(z.read("collection.anki2"))
+        db = sqlite3.connect(self.out / "c.anki2")
+        decks = json.loads(db.execute("SELECT decks FROM col").fetchone()[0])
+        names = sorted(d["name"] for d in decks.values())
+        self.assertIn("SquirrelGo::Greek::02 Food", names)
+        self.assertIn("SquirrelGo::Greek::Koine Greek::01 Greetings", names)
+        notes = db.execute("SELECT flds, tags, guid FROM notes ORDER BY id").fetchall()
+        self.assertEqual(len(notes), 3)
+        self.assertEqual(notes[1][0].split("\x1f"), ["ψωμί", "psomí", "bread", "Has\ta tab.", "CEFR A1", "core"])
+        self.assertEqual(notes[1][1], " greek::food cefr::A1 freq::core ")
+        self.assertNotEqual(notes[0][2], notes[2][2])  # the variety's word is its own note
+        self.assertEqual(db.execute("SELECT count(*) FROM cards").fetchone()[0], 6)
+        db.close()
+        self.assertEqual(fmt.write(pack, self.out).read_bytes(), dest.read_bytes())
+
+    def test_anki_skips_languages_without_vocab(self):
+        (self.root / "languages/greek/vocab.jsonl").unlink()
+        (self.root / "languages/greek/varieties/koine/vocab.jsonl").unlink()
+        pack = packs.load("greek", self.root)
+        self.assertIsNone(packs.FORMATS["anki"].write(pack, self.out))
+        self.assertEqual(packs.FORMATS["anki"].check(pack, None, self.root), [])
+
     def test_cli(self):
         with contextlib.redirect_stdout(io.StringIO()) as out:
             self.assertEqual(export.main(["--list"]), 0)
             self.assertEqual(export.main(["no-such-language"]), 2)
-        self.assertIn("folder, sqlite", out.getvalue())
+        self.assertIn("anki, folder, sqlite", out.getvalue())
 
 
 if __name__ == "__main__":
