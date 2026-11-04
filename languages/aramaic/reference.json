@@ -1,0 +1,133 @@
+{
+  "schema": "reference@1",
+  "language": "aramaic",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Aramaic at a glance",
+      "level": "absolute-beginner",
+      "body": [
+        "Aramaic is a Semitic language, a close cousin of Hebrew and Arabic, with about three thousand years of writing behind it. It was the shared language of the Assyrian and Persian empires, parts of Daniel and Ezra are written in it, and it was the everyday language of Galilee in the time of Jesus.",
+        "This course starts with Biblical Aramaic, written in the square letters it shares with Hebrew. Classical Syriac, the literary Aramaic of the Syriac churches, and the Neo-Aramaic languages still spoken today, such as Assyrian, Chaldean and Turoyo, are its varieties."
+      ],
+      "examples": [
+        {
+          "t": "ענה {מלכא} ואמר",
+          "r": "ane malka ve-amar",
+          "e": "the king answered and said (Daniel 2:5)"
+        }
+      ],
+      "tags": ["Semitic", "Biblical Aramaic", "Syriac", "Neo-Aramaic"]
+    },
+    {
+      "id": "square-script",
+      "topic": "script",
+      "title": "The square script",
+      "level": "absolute-beginner",
+      "body": [
+        "Biblical Aramaic uses the same 22 letters as Hebrew, written right to left, with the same five final forms (ך ם ן ף ץ). In fact, the square letters Hebrew uses today came from the Aramaic script of the Persian empire.",
+        "If you can read the Hebrew alef-bet, you can already read Aramaic letters. The letters א, ה, ו and י often stand for vowels, as in Hebrew, and א at the end of a word is very common because it marks “the”."
+      ],
+      "tags": ["script", "letters", "shared with Hebrew"]
+    },
+    {
+      "id": "hebrew-sounds",
+      "topic": "sounds",
+      "title": "Hebrew and Aramaic sound pairs",
+      "level": "beginner",
+      "body": "Many words are the same in Hebrew and Aramaic except for one regular sound change. Knowing the pairs lets you recognize a lot of Aramaic from Hebrew.",
+      "table": {
+        "head": ["Hebrew", "Aramaic", "Example"],
+        "rows": [
+          ["ז", "ד", "זהב / {ד}הב, gold"],
+          ["צ", "ע", "ארץ / אר{ע}, land"],
+          ["ש", "ת", "שלש / {ת}לת, three"],
+          ["ה־ in front", "־א at the end", "המלך / מלכ{א}, the king"]
+        ]
+      },
+      "tags": ["sounds", "Hebrew"]
+    },
+    {
+      "id": "states",
+      "topic": "grammar",
+      "title": "The three states of a noun",
+      "level": "beginner",
+      "body": [
+        "Aramaic nouns come in three forms, called states. The absolute is the plain word, “a king”. The emphatic adds ־א and means “the king”. The construct is a short form used before another noun, “king of”.",
+        "In later Aramaic and Syriac the emphatic form became the normal form of most nouns, so ־א no longer always means “the”."
+      ],
+      "table": {
+        "head": ["State", "Form", "Meaning"],
+        "rows": [
+          ["absolute", "מלך", "a king"],
+          ["emphatic", "מלכ{א}", "the king"],
+          ["construct", "מלך שמיא", "the king of heaven"]
+        ]
+      },
+      "tags": ["nouns", "the", "construct"]
+    },
+    {
+      "id": "perfect-ktv",
+      "topic": "verbs",
+      "title": "The past tense of כתב, write",
+      "level": "beginner",
+      "body": "The perfect tense marks the person with endings. Unpointed, several forms look alike; the vowels and the sentence tell them apart.",
+      "examples": [
+        {
+          "t": "{כתבו} אגרה חדה",
+          "r": "ketavu iggerah hadah",
+          "e": "they wrote a letter (Ezra 4:8)"
+        }
+      ],
+      "table": {
+        "head": ["Person", "Aramaic", "Reading"],
+        "rows": [
+          ["he wrote", "כתב", "ketav"],
+          ["she wrote", "כתבת", "kitbat"],
+          ["you (a man) wrote", "כתבת", "ketavt"],
+          ["I wrote", "כתבת", "kitbet"],
+          ["they (men) wrote", "כתבו", "ketavu"],
+          ["they (women) wrote", "כתבה", "ketavah"],
+          ["you (several) wrote", "כתבתון", "ketavtun"],
+          ["we wrote", "כתבנא", "ketavna"]
+        ]
+      },
+      "tags": ["verbs", "perfect", "Peal"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Numbers 1 to 10",
+      "level": "absolute-beginner",
+      "body": "As in Hebrew and Arabic, from three to ten the form ending in ־ה goes with masculine nouns, and the shorter form with feminine nouns.",
+      "table": {
+        "head": ["Number", "With masculine nouns", "With feminine nouns"],
+        "rows": [
+          ["1", "חד", "חדה"],
+          ["2", "תרין", "תרתין"],
+          ["3", "תלתה", "תלת"],
+          ["4", "ארבעה", "ארבע"],
+          ["5", "חמשה", "חמש"],
+          ["6", "שתה", "שת"],
+          ["7", "שבעה", "שבע"],
+          ["8", "תמניה", "תמני"],
+          ["9", "תשעה", "תשע"],
+          ["10", "עשרה", "עשר"]
+        ]
+      },
+      "tags": ["numbers", "gender"]
+    },
+    {
+      "id": "syriac-and-today",
+      "topic": "culture",
+      "title": "Syriac and Aramaic today",
+      "level": "beginner",
+      "body": [
+        "Classical Syriac grew from the Aramaic of Edessa and became the written language of a large Christian literature. It has its own alphabet in three styles: Estrangela, the oldest; Serto, used in the west; and Madnhaya, used in the east.",
+        "Aramaic is still spoken. The Neo-Aramaic languages include Assyrian and Chaldean, spoken by communities from Iraq, Iran, Syria and Turkey and in the diaspora, and Turoyo, from the Tur Abdin region of Turkey. Each has grown apart from Biblical Aramaic, much as modern languages grow from older ones."
+      ],
+      "tags": ["Syriac", "Neo-Aramaic", "culture"]
+    }
+  ]
+}

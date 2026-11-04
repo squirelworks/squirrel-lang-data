@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/squirelworks/squirrel-lang-data/schemas/meaning.v1.json",
+  "title": "meaning@1: the shared units of meaning",
+  "description": "meaning/meanings.jsonl. The first line is the header; every later line is one unit of meaning, written once and language-neutral. Sentences, language columns and vocabulary links point at these ids.",
+  "type": "object",
+  "properties": {
+    "header": {
+      "type": "object",
+      "required": ["schema"],
+      "additionalProperties": false,
+      "properties": {
+        "schema": { "const": "meaning@1" },
+        "notes": { "description": "How the meanings are written, one sentence or line each.", "type": "array", "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "required": ["id", "kind", "en"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "description": "Unique. A grammar meaning starts with \"@\".", "type": "string", "pattern": "^@?[a-z0-9][a-z0-9-]*$" },
+        "kind": { "description": "content: a thing, action or quality English has to say. grammar: a job in the sentence that English often shows with word order or not at all.", "enum": ["content", "grammar"] },
+        "label": { "description": "What a grammar meaning does, e.g. \"topic marker\". Required for grammar.", "type": "string", "minLength": 1 },
+        "en": { "description": "English words or phrases that may carry it, most usual first. A grammar meaning may have none.", "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "group": { "description": "Where it sits in the list, e.g. \"People\".", "type": "string", "minLength": 1 }
+      },
+      "if": { "properties": { "kind": { "const": "grammar" } } },
+      "then": { "required": ["label"], "properties": { "id": { "pattern": "^@" } } },
+      "else": { "properties": { "id": { "pattern": "^[a-z0-9]" }, "en": { "minItems": 1 } } }
+    }
+  }
+}
