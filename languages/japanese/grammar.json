@@ -7,10 +7,11 @@
     "Drills are { q, en, options, answer, why }; ＿ is the blank.",
     "JLPT levels are estimates. The JLPT stopped publishing vocabulary, kanji and grammar lists with the 2010 revision; its FAQ says such \"a list of vocabulary, kanji and grammar items was not necessarily appropriate\" (https://www.jlpt.jp/e/faq/).",
     "The official level summaries (https://www.jlpt.jp/e/about/levelsummary.html): N5 \"The ability to understand some basic Japanese.\" N4 \"The ability to understand basic Japanese.\" N3 \"The ability to understand Japanese used in everyday situations to a certain degree.\" N2 \"The ability to understand Japanese used in everyday situations, and in a variety of circumstances to a certain degree.\" N1 \"The ability to understand Japanese used in a variety of circumstances.\"",
-    "Each lesson's summary and each planned point's title ends with its estimated JLPT level; a range (N4–N3) means it's commonly taught at either. The level band is the earliest one: N5 is absolute-beginner or beginner, N4 beginner-intermediate, N3 intermediate, N2 advanced-intermediate, N1 advanced. The points and estimates are written for this project; no text is taken from a list."
+    "Each lesson's summary and each planned point's title ends with its estimated JLPT level; a range (N4–N3) means it's commonly taught at either. The level band is the earliest one: N5 is absolute-beginner or beginner, N4 beginner-intermediate, N3 intermediate, N2 advanced-intermediate, N1 advanced. The points and estimates are written for this project; no text is taken from a list.",
+    "73 lessons. Every N5 planned point is written; N4 to N1 points are written in teaching order, and the ones not written yet stay in the plan."
   ],
   "title": "Japanese particles and first verbs",
-  "intro": "Particles are short words that come after a noun and tell you its job in the sentence: topic, subject, object, place, time, and so on. Japanese word order is flexible because the particles carry that information. After the particles come です, polite verbs with ます in the present and past, the two kinds of adjective, and requests with てください. Each lesson has a short explanation, examples and a drill. The JLPT doesn't publish official grammar lists, so the JLPT level after each point is an estimate, and a range like N4–N3 means it often comes up at both.",
+  "intro": "Particles are short words that come after a noun and tell you its job in the sentence: topic, subject, object, place, time, and so on. Japanese word order is flexible because the particles carry that information. After the particles come です, polite verbs with ます, adjectives, and the て form with its patterns (ている, てもいい, てしまう, ておく, てみる). Then plain forms, wanting and inviting, comparing, the four conditionals (ば, たら, と, なら), the potential, passive and causative, giving and receiving, guesses (そう, ようだ, かもしれない) and keigo. The last lessons reach N3 to N1 patterns such as うちに, によって, わけにはいかない and ならでは. The JLPT doesn't publish official grammar lists, so the JLPT level after each point is an estimate, and a range like N4–N3 means it often comes up at both.",
   "lessons": [
     {
       "id": "wa",
@@ -1126,202 +1127,4405 @@
           "why": "する is irregular: して."
         }
       ]
+    },
+    {
+      "id": "ya",
+      "title": "や — a partial list",
+      "particle": "や",
+      "summary": "や lists some examples among others; と lists all of them. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>や</b> joins nouns like と, but hints that the list is incomplete: “things like A and B”. A final <b>など</b> (and so on) is common.",
+          "examples": [
+            [
+              "パン{や}たまごを買いました。",
+              "Pan ya tamago o kaimashita.",
+              "I bought bread, eggs and so on."
+            ],
+            [
+              "本{や}ノート{など}があります。",
+              "Hon ya nōto nado ga arimasu.",
+              "There are books, notebooks and things."
+            ]
+          ]
+        },
+        {
+          "h": "や vs と",
+          "p": "と means “A and B, that's all”. や means “A, B and others”. Neither joins verbs or sentences.",
+          "examples": [
+            [
+              "ねこ{と}いぬがいます。",
+              "Neko to inu ga imasu.",
+              "There's a cat and a dog (only)."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "りんご＿バナナなどを食べました。",
+          "en": "I ate apples, bananas and so on.",
+          "options": ["や", "と", "を", "が"],
+          "answer": "や",
+          "why": "Incomplete list with など: や."
+        },
+        {
+          "q": "Which means the list is complete?",
+          "en": "",
+          "options": ["や", "と", "など", "も"],
+          "answer": "と",
+          "why": "と lists everything."
+        },
+        {
+          "q": "や joins…",
+          "en": "",
+          "options": ["verbs", "sentences", "nouns", "adjectives"],
+          "answer": "nouns",
+          "why": "Like と, only nouns."
+        },
+        {
+          "q": "日本やかんこくに行きました means…",
+          "en": "",
+          "options": [
+            "I went to Japan and Korea only.",
+            "I went to Japan from Korea.",
+            "I didn't go to Japan.",
+            "I went to Japan, Korea and other places."
+          ],
+          "answer": "I went to Japan, Korea and other places.",
+          "why": "や hints at more."
+        },
+        {
+          "q": "＿ often closes a や list.",
+          "en": "",
+          "options": ["など", "まで", "から", "ね"],
+          "answer": "など",
+          "why": "や…など."
+        }
+      ]
+    },
+    {
+      "id": "ko-so-a-do",
+      "title": "これ, それ, あれ, どれ — this, that, which",
+      "particle": "これ・それ・あれ・どれ",
+      "summary": "こ near me, そ near you, あ far from both, ど which. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Japanese has three distances. <b>これ</b> is this (near me), <b>それ</b> is that (near you), <b>あれ</b> is that over there, <b>どれ</b> is which. They stand alone as nouns.",
+          "examples": [
+            ["{これ}はペンです。", "Kore wa pen desu.", "This is a pen."],
+            ["{それ}は何ですか。", "Sore wa nan desu ka.", "What's that (by you)?"],
+            ["{どれ}がいいですか。", "Dore ga ii desu ka.", "Which one is good?"]
+          ]
+        },
+        {
+          "h": "Before a noun: この, その, あの, どの",
+          "p": "Before a noun, use <b>この</b>, <b>その</b>, <b>あの</b>, <b>どの</b>. Places: ここ, そこ, あそこ, どこ.",
+          "examples": [
+            [
+              "{この}本は高いです。",
+              "Kono hon wa takai desu.",
+              "This book is expensive."
+            ],
+            ["トイレは{どこ}ですか。", "Toire wa doko desu ka.", "Where's the toilet?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿はわたしのかばんです。",
+          "en": "This is my bag.",
+          "options": ["これ", "この", "ここ", "どれ"],
+          "answer": "これ",
+          "why": "Alone as a noun: これ."
+        },
+        {
+          "q": "＿人はだれですか。",
+          "en": "Who's that person over there?",
+          "options": ["あれ", "あの", "あそこ", "どの"],
+          "answer": "あの",
+          "why": "Before a noun: あの."
+        },
+        {
+          "q": "＿がいいですか。",
+          "en": "Which is good?",
+          "options": ["どの", "どこ", "どれ", "これ"],
+          "answer": "どれ",
+          "why": "Which one, alone: どれ."
+        },
+        {
+          "q": "そ words point to…",
+          "en": "",
+          "options": [
+            "something near the speaker",
+            "something far from both",
+            "a question",
+            "something near the listener"
+          ],
+          "answer": "something near the listener",
+          "why": "そ = near you."
+        },
+        {
+          "q": "“Where?” is…",
+          "en": "",
+          "options": ["どこ", "どれ", "どの", "あそこ"],
+          "answer": "どこ",
+          "why": "Places: ここ, そこ, あそこ, どこ."
+        }
+      ]
+    },
+    {
+      "id": "aru-iru",
+      "title": "あります and います — there is",
+      "particle": "あります・います",
+      "summary": "います for living things that move, あります for everything else. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "“There is” has two verbs. <b>います</b> is for people and animals. <b>あります</b> is for things, plants and events. The thing takes が; the place takes に.",
+          "examples": [
+            [
+              "公園にこども{が}{います}。",
+              "Kōen ni kodomo ga imasu.",
+              "There are children in the park."
+            ],
+            [
+              "つくえの上に本が{あります}。",
+              "Tsukue no ue ni hon ga arimasu.",
+              "There's a book on the desk."
+            ]
+          ]
+        },
+        {
+          "h": "Have",
+          "p": "あります also means “have”: 時間があります, I have time. The negatives are ありません and いません.",
+          "examples": [
+            ["時間が{ありません}。", "Jikan ga arimasen.", "I don't have time."],
+            ["兄が{います}。", "Ani ga imasu.", "I have an older brother."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "へやにねこが＿。",
+          "en": "There's a cat in the room.",
+          "options": ["います", "あります", "です", "します"],
+          "answer": "います",
+          "why": "Animals: います."
+        },
+        {
+          "q": "車が＿。",
+          "en": "There's a car.",
+          "options": ["います", "あります", "です", "なります"],
+          "answer": "あります",
+          "why": "Things: あります."
+        },
+        {
+          "q": "The place of existence takes…",
+          "en": "",
+          "options": ["で", "を", "に", "へ"],
+          "answer": "に",
+          "why": "Place に + thing が + あります."
+        },
+        {
+          "q": "木が＿。",
+          "en": "There's a tree.",
+          "options": ["います", "いります", "ありです", "あります"],
+          "answer": "あります",
+          "why": "Plants are things: あります."
+        },
+        {
+          "q": "I have a younger sister.",
+          "en": "",
+          "options": ["妹がいます。", "妹があります。", "妹をいます。", "妹です。"],
+          "answer": "妹がいます。",
+          "why": "Family members are people: います."
+        }
+      ]
+    },
+    {
+      "id": "counters",
+      "title": "Numbers and counters",
+      "particle": "〜つ・〜人・〜本・〜枚",
+      "summary": "Counting things needs a counter, chosen by the thing's shape or kind. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Japanese counts with counters. The general one is <b>〜つ</b>: ひとつ, ふたつ, みっつ … とお (up to ten). People use <b>〜人</b>: ひとり, ふたり, then さんにん.",
+          "examples": [
+            [
+              "りんごを{みっつ}ください。",
+              "Ringo o mittsu kudasai.",
+              "Three apples, please."
+            ],
+            [
+              "学生が{ふたり}います。",
+              "Gakusei ga futari imasu.",
+              "There are two students."
+            ]
+          ]
+        },
+        {
+          "h": "Shape counters",
+          "p": "<b>〜枚</b> (まい) for flat things, <b>〜本</b> (ほん) for long things, <b>〜冊</b> (さつ) for books. The number + counter usually goes right before the verb.",
+          "examples": [
+            [
+              "きっぷを{二枚}ください。",
+              "Kippu o nimai kudasai.",
+              "Two tickets, please."
+            ],
+            [
+              "ペンが{三本}あります。",
+              "Pen ga sanbon arimasu.",
+              "There are three pens."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "紙を三＿ください。",
+          "en": "Three sheets of paper, please.",
+          "options": ["枚", "本", "人", "冊"],
+          "answer": "枚",
+          "why": "Flat things: 枚."
+        },
+        {
+          "q": "＿います。",
+          "en": "There are two people.",
+          "options": ["ふたつ", "ふたり", "にほん", "にまい"],
+          "answer": "ふたり",
+          "why": "People: ひとり, ふたり."
+        },
+        {
+          "q": "Pencils use…",
+          "en": "",
+          "options": ["枚", "冊", "本", "人"],
+          "answer": "本",
+          "why": "Long things: 本."
+        },
+        {
+          "q": "Where does the number usually go?",
+          "en": "ジュースを＿のみました。",
+          "options": [
+            "before the noun with の only",
+            "at the end",
+            "after です",
+            "right before the verb"
+          ],
+          "answer": "right before the verb",
+          "why": "ジュースを二本のみました."
+        },
+        {
+          "q": "みっつ means…",
+          "en": "",
+          "options": ["three (things)", "three people", "three o'clock", "the third"],
+          "answer": "three (things)",
+          "why": "General counter 〜つ."
+        }
+      ]
+    },
+    {
+      "id": "ni-iku",
+      "title": "〜に行く — going to do",
+      "particle": "〜に行く",
+      "summary": "Verb stem + に + 行く/来る: go or come to do something. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Take the ます stem (the part before ます) and add <b>に行きます</b>: go in order to do. 食べます → 食べに行きます.",
+          "examples": [
+            [
+              "昼ごはんを食べ{に}行きます。",
+              "Hirugohan o tabe ni ikimasu.",
+              "I'm going to have lunch."
+            ],
+            [
+              "友だちに会い{に}来ました。",
+              "Tomodachi ni ai ni kimashita.",
+              "I came to see a friend."
+            ]
+          ]
+        },
+        {
+          "h": "With nouns of action",
+          "p": "An action noun works too: 買い物に行く (go shopping), 旅行に行く (go on a trip). The destination still takes に or へ.",
+          "examples": [
+            [
+              "デパートへ{買い物に}行きます。",
+              "Depāto e kaimono ni ikimasu.",
+              "I'm going shopping at the department store."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "本を借り＿行きます。",
+          "en": "I'm going to borrow a book.",
+          "options": ["に", "を", "で", "と"],
+          "answer": "に",
+          "why": "Stem + に + 行く."
+        },
+        {
+          "q": "見ます → ＿に行きます",
+          "en": "go to see",
+          "options": ["見る", "見", "見て", "見た"],
+          "answer": "見",
+          "why": "Use the ます stem: 見."
+        },
+        {
+          "q": "Which is right?",
+          "en": "I'm going to swim.",
+          "options": ["泳ぐに行きます。", "泳ぎて行きます。", "泳ぎに行きます。", "泳ぎを行きます。"],
+          "answer": "泳ぎに行きます。",
+          "why": "泳ぎます → 泳ぎに."
+        },
+        {
+          "q": "旅行に行く means…",
+          "en": "",
+          "options": [
+            "go from a trip",
+            "travel by going",
+            "a trip is going",
+            "go on a trip"
+          ],
+          "answer": "go on a trip",
+          "why": "Action noun + に行く."
+        },
+        {
+          "q": "会いに来ました means…",
+          "en": "",
+          "options": [
+            "came to see (someone)",
+            "met and came",
+            "will come and meet",
+            "didn't meet"
+          ],
+          "answer": "came to see (someone)",
+          "why": "Purpose + 来る."
+        }
+      ]
+    },
+    {
+      "id": "tai",
+      "title": "〜たい — want to",
+      "particle": "〜たい",
+      "summary": "ます stem + たい: I want to. It behaves like an い adjective. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Replace ます with <b>たい</b>: 食べます → 食べたい, want to eat. Add です to be polite. The object can take を or が.",
+          "examples": [
+            ["すしを食べ{たい}です。", "Sushi o tabetai desu.", "I want to eat sushi."],
+            [
+              "日本に行き{たい}です。",
+              "Nihon ni ikitai desu.",
+              "I want to go to Japan."
+            ]
+          ]
+        },
+        {
+          "h": "Forms",
+          "p": "たい changes like an い adjective: たくない (don't want to), たかった (wanted to). For other people, say 〜たがっています, not たい.",
+          "examples": [
+            [
+              "何も食べ{たくない}です。",
+              "Nani mo tabetakunai desu.",
+              "I don't want to eat anything."
+            ],
+            [
+              "弟はゲームをし{たがっています}。",
+              "Otōto wa gēmu o shitagatte imasu.",
+              "My little brother wants to play games."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "コーヒーが飲み＿です。",
+          "en": "I want to drink coffee.",
+          "options": ["たい", "ます", "たく", "ない"],
+          "answer": "たい",
+          "why": "Stem + たい."
+        },
+        {
+          "q": "I didn't want to go.",
+          "en": "",
+          "options": ["行きたいでした。", "行きたくなかったです。", "行きたかったない。", "行かないたい。"],
+          "answer": "行きたくなかったです。",
+          "why": "い adjective past negative: たくなかった."
+        },
+        {
+          "q": "寝ます →",
+          "en": "",
+          "options": ["寝るたい", "寝てたい", "寝たい", "寝ますたい"],
+          "answer": "寝たい",
+          "why": "ます stem + たい."
+        },
+        {
+          "q": "For someone else's wish use…",
+          "en": "",
+          "options": ["〜たい", "〜たいです only", "〜ましょう", "〜たがっている"],
+          "answer": "〜たがっている",
+          "why": "弟は…したがっています."
+        },
+        {
+          "q": "何もしたくない means…",
+          "en": "",
+          "options": [
+            "I don't want to do anything.",
+            "I want to do something.",
+            "I did nothing.",
+            "Let's do nothing."
+          ],
+          "answer": "I don't want to do anything.",
+          "why": "たくない = don't want to."
+        }
+      ]
+    },
+    {
+      "id": "hoshii",
+      "title": "ほしい — want (a thing)",
+      "particle": "ほしい",
+      "summary": "Noun + が + ほしい: I want a thing. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "For wanting a thing, use <b>ほしい</b>, an い adjective. The thing takes が. For wanting to do, it's たい.",
+          "examples": [
+            [
+              "新しいくつ{が}{ほしい}です。",
+              "Atarashii kutsu ga hoshii desu.",
+              "I want new shoes."
+            ],
+            ["何が{ほしい}ですか。", "Nani ga hoshii desu ka.", "What do you want?"]
+          ]
+        },
+        {
+          "h": "Forms",
+          "p": "ほしくない (don't want), ほしかった (wanted). Like たい, it's for your own wishes; for others, ほしがっています.",
+          "examples": [
+            [
+              "車は{ほしくない}です。",
+              "Kuruma wa hoshikunai desu.",
+              "I don't want a car."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "時計＿ほしいです。",
+          "en": "I want a watch.",
+          "options": ["が", "を", "に", "で"],
+          "answer": "が",
+          "why": "The thing wanted takes が."
+        },
+        {
+          "q": "I want to buy a watch.",
+          "en": "",
+          "options": ["時計がほしいたいです。", "時計を買いたいです。", "時計をほしいです買う。", "時計がほしいです買いたい。"],
+          "answer": "時計を買いたいです。",
+          "why": "Wanting to do: たい."
+        },
+        {
+          "q": "ほしい is…",
+          "en": "",
+          "options": ["a verb", "a な adjective", "an い adjective", "a particle"],
+          "answer": "an い adjective",
+          "why": "Changes like 高い."
+        },
+        {
+          "q": "I wanted a dog.",
+          "en": "",
+          "options": ["いぬがほしいでした。", "いぬがほしくないです。", "いぬをほしいました。", "いぬがほしかったです。"],
+          "answer": "いぬがほしかったです。",
+          "why": "Past: ほしかった."
+        },
+        {
+          "q": "何がほしいですか means…",
+          "en": "",
+          "options": [
+            "What do you want?",
+            "What do you want to do?",
+            "What did you buy?",
+            "Where is it?"
+          ],
+          "answer": "What do you want?",
+          "why": "ほしい = want a thing."
+        }
+      ]
+    },
+    {
+      "id": "mashou",
+      "title": "〜ましょう — let's",
+      "particle": "〜ましょう",
+      "summary": "ます → ましょう: let's. ましょうか offers or suggests. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Change ます to <b>ましょう</b> for “let's”: 行きましょう, let's go.",
+          "examples": [
+            ["いっしょに食べ{ましょう}。", "Issho ni tabemashō.", "Let's eat together."],
+            [
+              "少し休み{ましょう}。",
+              "Sukoshi yasumimashō.",
+              "Let's take a short break."
+            ]
+          ]
+        },
+        {
+          "h": "ましょうか — shall I? shall we?",
+          "p": "<b>ましょうか</b> offers help (“shall I?”) or asks the other person's view (“shall we?”).",
+          "examples": [
+            [
+              "窓を開け{ましょうか}。",
+              "Mado o akemashō ka.",
+              "Shall I open the window?"
+            ],
+            ["どこで会い{ましょうか}。", "Doko de aimashō ka.", "Where shall we meet?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "映画を見＿。",
+          "en": "Let's watch a film.",
+          "options": ["ましょう", "ます", "ません", "たい"],
+          "answer": "ましょう",
+          "why": "Let's: ましょう."
+        },
+        {
+          "q": "荷物を持ち＿。",
+          "en": "Shall I carry your bag?",
+          "options": ["ましょう", "ましょうか", "ませんか", "たいですか"],
+          "answer": "ましょうか",
+          "why": "Offering: ましょうか."
+        },
+        {
+          "q": "帰ります → let's go home",
+          "en": "",
+          "options": ["帰るましょう", "帰りましょ", "帰りましょう", "帰ってましょう"],
+          "answer": "帰りましょう",
+          "why": "ます stem + ましょう."
+        },
+        {
+          "q": "何時に会いましょうか means…",
+          "en": "",
+          "options": [
+            "What time did we meet?",
+            "Let's meet at a time.",
+            "When will you meet?",
+            "What time shall we meet?"
+          ],
+          "answer": "What time shall we meet?",
+          "why": "ましょうか with a question word."
+        },
+        {
+          "q": "ましょう is…",
+          "en": "",
+          "options": ["the volitional of ます", "a past form", "a negative", "a request"],
+          "answer": "the volitional of ます",
+          "why": "Polite volitional."
+        }
+      ]
+    },
+    {
+      "id": "masen-ka",
+      "title": "〜ませんか — won't you?",
+      "particle": "〜ませんか",
+      "summary": "A negative question as a polite invitation. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ませんか</b>, “won't you …?”, is the politest way to invite. It leaves room for the other person to say no.",
+          "examples": [
+            [
+              "いっしょに行き{ませんか}。",
+              "Issho ni ikimasen ka.",
+              "Would you like to come with me?"
+            ],
+            [
+              "コーヒーを飲み{ませんか}。",
+              "Kōhī o nomimasen ka.",
+              "Won't you have a coffee?"
+            ]
+          ]
+        },
+        {
+          "h": "Answering",
+          "p": "Say yes with ええ、いいですね or 行きましょう. Say no gently with ちょっと… and leave the sentence unfinished.",
+          "examples": [
+            [
+              "土曜日はちょっと…。",
+              "Doyōbi wa chotto….",
+              "Saturday is a bit… (difficult)."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "週末、テニスをし＿。",
+          "en": "Would you like to play tennis at the weekend?",
+          "options": ["ませんか", "ましょう", "ません", "ました"],
+          "answer": "ませんか",
+          "why": "Inviting: ませんか."
+        },
+        {
+          "q": "Which is the most polite invitation?",
+          "en": "",
+          "options": ["行きましょう", "行きませんか", "行こう", "行け"],
+          "answer": "行きませんか",
+          "why": "ませんか lets the listener decide."
+        },
+        {
+          "q": "A gentle no is…",
+          "en": "",
+          "options": ["いいですね", "行きましょう", "ちょっと…", "はい、行きます"],
+          "answer": "ちょっと…",
+          "why": "Unfinished ちょっと."
+        },
+        {
+          "q": "食べませんか is…",
+          "en": "",
+          "options": ["a refusal", "a past negative", "a rule", "an invitation"],
+          "answer": "an invitation",
+          "why": "Not a real negative question."
+        },
+        {
+          "q": "ええ、＿。",
+          "en": "Yes, that sounds good.",
+          "options": ["いいですね", "ちょっと", "ません", "だめです"],
+          "answer": "いいですね",
+          "why": "Accepting."
+        }
+      ]
+    },
+    {
+      "id": "te-form",
+      "title": "The て form — and then",
+      "particle": "〜て",
+      "summary": "The て form joins actions in order: did A and then B. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "The <b>て form</b> links verbs: 起きて, 顔を洗って, 朝ごはんを食べます. The last verb carries the tense. Group 2 (る verbs): る → て. 来る → 来て, する → して.",
+          "examples": [
+            [
+              "起き{て}、シャワーを浴び{て}、出かけました。",
+              "Okite, shawā o abite, dekakemashita.",
+              "I got up, showered and went out."
+            ],
+            ["家に帰っ{て}寝ます。", "Ie ni kaette nemasu.", "I'll go home and sleep."]
+          ]
+        },
+        {
+          "h": "Group 1 endings",
+          "p": "Group 1 changes by the last sound: う・つ・る → って, む・ぶ・ぬ → んで, く → いて, ぐ → いで, す → して. 行く is special: 行って.",
+          "examples": [
+            ["書く → 書{いて}", "kaku → kaite", "write"],
+            ["読む → 読{んで}", "yomu → yonde", "read"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "飲む →",
+          "en": "",
+          "options": ["飲んで", "飲みて", "飲って", "飲いて"],
+          "answer": "飲んで",
+          "why": "む → んで."
+        },
+        {
+          "q": "待つ →",
+          "en": "",
+          "options": ["待ちて", "待って", "待んで", "待いて"],
+          "answer": "待って",
+          "why": "つ → って."
+        },
+        {
+          "q": "行く →",
+          "en": "",
+          "options": ["行いて", "行きて", "行って", "行んで"],
+          "answer": "行って",
+          "why": "行く is the exception."
+        },
+        {
+          "q": "話す →",
+          "en": "",
+          "options": ["話って", "話いて", "話んで", "話して"],
+          "answer": "話して",
+          "why": "す → して."
+        },
+        {
+          "q": "In 食べて寝ました, which verb shows the past?",
+          "en": "",
+          "options": ["寝ました", "食べて", "both", "neither"],
+          "answer": "寝ました",
+          "why": "The last verb carries the tense."
+        }
+      ]
+    },
+    {
+      "id": "te-iru",
+      "title": "〜ている — doing now, and states",
+      "particle": "〜ている",
+      "summary": "て + いる: in progress, a habit, or a resulting state. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "て form + <b>いる</b> (います) shows an action going on: 食べています, I'm eating. It also shows a habit: 毎朝走っています.",
+          "examples": [
+            ["今、雨が降っ{ています}。", "Ima, ame ga futte imasu.", "It's raining now."],
+            [
+              "毎日日本語を勉強し{ています}。",
+              "Mainichi nihongo o benkyō shite imasu.",
+              "I study Japanese every day."
+            ]
+          ]
+        },
+        {
+          "h": "Resulting states",
+          "p": "With change verbs, ている is the state after the change: 結婚しています (am married), 知っています (know), 住んでいます (live). “I don't know” is 知りません, not 知っていません.",
+          "examples": [
+            [
+              "姉は{結婚しています}。",
+              "Ane wa kekkon shite imasu.",
+              "My older sister is married."
+            ],
+            ["東京に{住んでいます}。", "Tōkyō ni sunde imasu.", "I live in Tokyo."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "今、本を読ん＿。",
+          "en": "I'm reading a book now.",
+          "options": ["でいます", "ています", "ています。", "でます"],
+          "answer": "でいます",
+          "why": "読む → 読んで + います."
+        },
+        {
+          "q": "田中さんを＿か。",
+          "en": "Do you know Mr Tanaka?",
+          "options": ["知ります", "知っています", "知りますます", "知ってます知り"],
+          "answer": "知っています",
+          "why": "“Know” is a state: 知っています."
+        },
+        {
+          "q": "I don't know.",
+          "en": "",
+          "options": ["知っていません", "知らないです知って", "知りません", "知っていない"],
+          "answer": "知りません",
+          "why": "The fixed answer is 知りません."
+        },
+        {
+          "q": "結婚しています means…",
+          "en": "",
+          "options": [
+            "is getting married now",
+            "got married often",
+            "will marry",
+            "is married"
+          ],
+          "answer": "is married",
+          "why": "Resulting state."
+        },
+        {
+          "q": "窓が開いています means…",
+          "en": "",
+          "options": [
+            "The window is open.",
+            "The window is opening.",
+            "Someone opened the window just now.",
+            "Open the window."
+          ],
+          "answer": "The window is open.",
+          "why": "State after a change."
+        }
+      ]
+    },
+    {
+      "id": "te-mo-ii",
+      "title": "〜てもいい — may",
+      "particle": "〜てもいい",
+      "summary": "て + も + いい: it's all right to. A question asks permission. (about N5–N4)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "て form + <b>もいいです</b> gives permission: you may. As a question, ～てもいいですか asks “may I?”.",
+          "examples": [
+            [
+              "ここに座っ{てもいいですか}。",
+              "Koko ni suwatte mo ii desu ka.",
+              "May I sit here?"
+            ],
+            [
+              "写真を撮っ{てもいいです}よ。",
+              "Shashin o totte mo ii desu yo.",
+              "You may take photos."
+            ]
+          ]
+        },
+        {
+          "h": "Answering",
+          "p": "Yes: ええ、どうぞ. No: すみません、ちょっと… or the stronger 〜てはいけません.",
+          "examples": [
+            ["ええ、{どうぞ}。", "Ee, dōzo.", "Sure, go ahead."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "窓を開け＿ですか。",
+          "en": "May I open the window?",
+          "options": ["てもいい", "てはいけない", "たい", "ましょう"],
+          "answer": "てもいい",
+          "why": "Asking permission."
+        },
+        {
+          "q": "ええ、＿。",
+          "en": "Yes, please do.",
+          "options": ["いけません", "どうぞ", "ちょっと", "だめ"],
+          "answer": "どうぞ",
+          "why": "どうぞ = go ahead."
+        },
+        {
+          "q": "帰ってもいいです means…",
+          "en": "",
+          "options": [
+            "You must go home.",
+            "Don't go home.",
+            "You may go home.",
+            "I want to go home."
+          ],
+          "answer": "You may go home.",
+          "why": "Permission."
+        },
+        {
+          "q": "使う → may I use?",
+          "en": "",
+          "options": ["使うもいいですか", "使いてもいいですか", "使んでもいいですか", "使ってもいいですか"],
+          "answer": "使ってもいいですか",
+          "why": "使う → 使って."
+        },
+        {
+          "q": "てもいい literally is…",
+          "en": "",
+          "options": [
+            "even if you do, it's good",
+            "if you do, it's bad",
+            "let's do",
+            "must do"
+          ],
+          "answer": "even if you do, it's good",
+          "why": "も = even."
+        }
+      ]
+    },
+    {
+      "id": "te-wa-ikenai",
+      "title": "〜てはいけない — must not",
+      "particle": "〜てはいけない",
+      "summary": "て + は + いけない: forbidden. (about N5–N4)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "て form + <b>はいけません</b> says something is not allowed. It's firm, used for rules.",
+          "examples": [
+            [
+              "ここでたばこを吸っ{てはいけません}。",
+              "Koko de tabako o sutte wa ikemasen.",
+              "You mustn't smoke here."
+            ],
+            [
+              "写真を撮っ{てはいけません}。",
+              "Shashin o totte wa ikemasen.",
+              "Photos are not allowed."
+            ]
+          ]
+        },
+        {
+          "h": "Speech forms",
+          "p": "In speech, ては → ちゃ and では → じゃ: 見ちゃだめ, 飲んじゃいけない. だめ is a casual いけない.",
+          "examples": [
+            ["見{ちゃだめ}！", "Micha dame!", "Don't look!"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ここで泳い＿。",
+          "en": "You mustn't swim here.",
+          "options": ["ではいけません", "てはいけません", "てもいいです", "ましょう"],
+          "answer": "ではいけません",
+          "why": "泳ぐ → 泳いで, so では."
+        },
+        {
+          "q": "Casual “don't touch!”",
+          "en": "",
+          "options": ["さわってもいい", "さわっちゃだめ", "さわりましょう", "さわりたい"],
+          "answer": "さわっちゃだめ",
+          "why": "ては → ちゃ."
+        },
+        {
+          "q": "〜てはいけない is…",
+          "en": "",
+          "options": ["a permission", "an invitation", "a prohibition", "a wish"],
+          "answer": "a prohibition",
+          "why": "Must not."
+        },
+        {
+          "q": "飲んではいけません means…",
+          "en": "",
+          "options": [
+            "You may drink.",
+            "Let's drink.",
+            "I didn't drink.",
+            "You mustn't drink."
+          ],
+          "answer": "You mustn't drink.",
+          "why": "Rule."
+        },
+        {
+          "q": "だめ is…",
+          "en": "",
+          "options": [
+            "a casual “no good, not allowed”",
+            "a polite yes",
+            "a counter",
+            "a particle"
+          ],
+          "answer": "a casual “no good, not allowed”",
+          "why": "Casual いけない."
+        }
+      ]
+    },
+    {
+      "id": "nai-de-kudasai",
+      "title": "〜ないでください — please don't",
+      "particle": "〜ないでください",
+      "summary": "ない form + でください: please don't. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Take the ない form and add <b>でください</b>: 見ないでください, please don't look. It's a polite request.",
+          "examples": [
+            ["忘れ{ないでください}。", "Wasurenai de kudasai.", "Please don't forget."],
+            [
+              "心配し{ないでください}。",
+              "Shinpai shinai de kudasai.",
+              "Please don't worry."
+            ]
+          ]
+        },
+        {
+          "h": "Making the ない form",
+          "p": "Group 2: drop る, add ない (食べない). Group 1: change the last u to a + ない (書く → 書かない, 待つ → 待たない; う → わ: 買わない). する → しない, 来る → 来ない.",
+          "examples": [
+            ["書く → 書か{ない}", "kaku → kakanai", "not write"],
+            ["言う → 言わ{ない}", "iu → iwanai", "not say"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ここに止め＿。",
+          "en": "Please don't park here.",
+          "options": ["ないでください", "てください", "てもいいです", "ましょう"],
+          "answer": "ないでください",
+          "why": "Please don't."
+        },
+        {
+          "q": "言う →",
+          "en": "",
+          "options": ["言あない", "言わない", "言いない", "言うない"],
+          "answer": "言わない",
+          "why": "う → わ + ない."
+        },
+        {
+          "q": "来る →",
+          "en": "",
+          "options": ["来らない", "来ないる", "来ない (こない)", "くない"],
+          "answer": "来ない (こない)",
+          "why": "Irregular."
+        },
+        {
+          "q": "Please don't run.",
+          "en": "",
+          "options": ["走るないでください", "走りないでください", "走ってないください", "走らないでください"],
+          "answer": "走らないでください",
+          "why": "走る (Group 1) → 走らない."
+        },
+        {
+          "q": "ないでください is…",
+          "en": "",
+          "options": ["a polite negative request", "a rule", "an invitation", "the past"],
+          "answer": "a polite negative request",
+          "why": "Please don't."
+        }
+      ]
+    },
+    {
+      "id": "plain-forms",
+      "title": "Plain forms: dictionary, ない and た",
+      "particle": "〜る・〜ない・〜た",
+      "summary": "The plain forms are for friends, and for the middle of longer sentences. (about N5–N4)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Each verb has plain forms: dictionary (食べる), ない (食べない), た (食べた), なかった (食べなかった). Friends use them, and so do many grammar patterns.",
+          "examples": [
+            ["明日、行{く}？", "Ashita, iku?", "Going tomorrow?"],
+            ["もう食べ{た}。", "Mō tabeta.", "I've already eaten."],
+            ["時間が{ない}。", "Jikan ga nai.", "No time."]
+          ]
+        },
+        {
+          "h": "The た form",
+          "p": "た is the て form with た: 書いて → 書いた, 読んで → 読んだ. です becomes だ in plain speech: 学生だ.",
+          "examples": [
+            ["昨日、本を読ん{だ}。", "Kinō, hon o yonda.", "I read a book yesterday."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "飲みました (plain)",
+          "en": "",
+          "options": ["飲んだ", "飲みた", "飲った", "飲むた"],
+          "answer": "飲んだ",
+          "why": "て form 飲んで → 飲んだ."
+        },
+        {
+          "q": "行きません (plain)",
+          "en": "",
+          "options": ["行きない", "行かない", "行くない", "行わない"],
+          "answer": "行かない",
+          "why": "Group 1: く → か + ない."
+        },
+        {
+          "q": "学生です (plain)",
+          "en": "",
+          "options": ["学生る", "学生た", "学生だ", "学生ない"],
+          "answer": "学生だ",
+          "why": "です → だ."
+        },
+        {
+          "q": "見ませんでした (plain)",
+          "en": "",
+          "options": ["見ないだ", "見たない", "見なかったです", "見なかった"],
+          "answer": "見なかった",
+          "why": "Plain past negative: なかった."
+        },
+        {
+          "q": "Plain forms are used…",
+          "en": "",
+          "options": [
+            "with friends and inside longer sentences",
+            "only in writing",
+            "only to teachers",
+            "never"
+          ],
+          "answer": "with friends and inside longer sentences",
+          "why": "Two jobs."
+        }
+      ]
+    },
+    {
+      "id": "mae-ni",
+      "title": "〜前に — before",
+      "particle": "〜前に",
+      "summary": "Dictionary form + 前に, or noun + の前に: before. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>前に</b> means before. The verb in front is always the dictionary form, even about the past.",
+          "examples": [
+            [
+              "寝る{前に}歯をみがきます。",
+              "Neru mae ni ha o migakimasu.",
+              "I brush my teeth before bed."
+            ],
+            [
+              "食べる{前に}手を洗いました。",
+              "Taberu mae ni te o araimashita.",
+              "I washed my hands before eating."
+            ]
+          ]
+        },
+        {
+          "h": "With nouns and time",
+          "p": "Noun + <b>の前に</b>: 食事の前に. A length of time + 前 means “ago”: 三年前.",
+          "examples": [
+            [
+              "授業{の前に}コーヒーを飲みます。",
+              "Jugyō no mae ni kōhī o nomimasu.",
+              "I drink coffee before class."
+            ],
+            [
+              "三年{前}に日本に来ました。",
+              "Sannen mae ni Nihon ni kimashita.",
+              "I came to Japan three years ago."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "出かける＿、電話してください。",
+          "en": "Please phone before you go out.",
+          "options": ["前に", "後で", "ながら", "から"],
+          "answer": "前に",
+          "why": "Before: 前に."
+        },
+        {
+          "q": "Which is right?",
+          "en": "I studied before I slept.",
+          "options": ["寝た前に勉強しました。", "寝る前に勉強しました。", "寝ます前に勉強しました。", "寝て前に勉強しました。"],
+          "answer": "寝る前に勉強しました。",
+          "why": "Always dictionary form before 前に."
+        },
+        {
+          "q": "会議＿前に",
+          "en": "before the meeting",
+          "options": ["を", "に", "の", "が"],
+          "answer": "の",
+          "why": "Noun + の前に."
+        },
+        {
+          "q": "二年前 means…",
+          "en": "",
+          "options": [
+            "in two years",
+            "for two years",
+            "before two o'clock",
+            "two years ago"
+          ],
+          "answer": "two years ago",
+          "why": "Time + 前 = ago."
+        },
+        {
+          "q": "前に takes which verb form?",
+          "en": "",
+          "options": ["dictionary", "た", "て", "ない"],
+          "answer": "dictionary",
+          "why": "食べる前に."
+        }
+      ]
+    },
+    {
+      "id": "ta-ato-de",
+      "title": "〜た後で — after",
+      "particle": "〜た後で",
+      "summary": "た form + 後で, or noun + の後で: after. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>後で</b> (あとで) means after. The verb before it is always the た form.",
+          "examples": [
+            [
+              "宿題をし{た後で}、テレビを見ます。",
+              "Shukudai o shita ato de, terebi o mimasu.",
+              "I'll watch TV after doing my homework."
+            ],
+            [
+              "仕事が終わっ{た後で}、飲みに行きました。",
+              "Shigoto ga owatta ato de, nomi ni ikimashita.",
+              "After work finished, we went for drinks."
+            ]
+          ]
+        },
+        {
+          "h": "Nouns, and 〜てから",
+          "p": "Noun + <b>の後で</b>: 食事の後で. 〜てから is close, and stresses the order: first this, then that.",
+          "examples": [
+            [
+              "食事{の後で}散歩します。",
+              "Shokuji no ato de sanpo shimasu.",
+              "I'll take a walk after the meal."
+            ],
+            [
+              "手を洗っ{てから}食べます。",
+              "Te o aratte kara tabemasu.",
+              "I eat after washing my hands."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "シャワーを浴び＿後で寝ます。",
+          "en": "I'll sleep after showering.",
+          "options": ["た", "る", "て", "ない"],
+          "answer": "た",
+          "why": "た form + 後で."
+        },
+        {
+          "q": "授業＿後で",
+          "en": "after class",
+          "options": ["を", "の", "た", "に"],
+          "answer": "の",
+          "why": "Noun + の後で."
+        },
+        {
+          "q": "後で takes…",
+          "en": "",
+          "options": ["the dictionary form", "the ない form", "the た form", "the ます form"],
+          "answer": "the た form",
+          "why": "食べた後で."
+        },
+        {
+          "q": "〜てから stresses…",
+          "en": "",
+          "options": [
+            "a reason",
+            "a wish",
+            "the past only",
+            "the order: first this, then"
+          ],
+          "answer": "the order: first this, then",
+          "why": "て + から."
+        },
+        {
+          "q": "映画を見た後で means…",
+          "en": "",
+          "options": [
+            "after watching the film",
+            "before watching the film",
+            "while watching the film",
+            "instead of the film"
+          ],
+          "answer": "after watching the film",
+          "why": "After."
+        }
+      ]
+    },
+    {
+      "id": "tari",
+      "title": "〜たり〜たり — things like",
+      "particle": "〜たり〜たりする",
+      "summary": "た form + り, twice, then する: doing things like A and B. (about N5–N4)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>〜たり〜たりする</b> lists example activities, not all of them, and not in order. It ends with する in the right tense.",
+          "examples": [
+            [
+              "週末は映画を見{たり}、買い物をし{たり}します。",
+              "Shūmatsu wa eiga o mitari, kaimono o shitari shimasu.",
+              "At weekends I watch films, go shopping and so on."
+            ],
+            [
+              "休みに本を読ん{だり}寝{たり}しました。",
+              "Yasumi ni hon o yondari netari shimashita.",
+              "On my day off I read, slept and so on."
+            ]
+          ]
+        },
+        {
+          "h": "Back and forth",
+          "p": "With opposites, it means going back and forth: 行ったり来たり, to and fro.",
+          "examples": [
+            [
+              "雨が降っ{たり}やん{だり}しています。",
+              "Ame ga futtari yandari shite imasu.",
+              "It keeps raining on and off."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "音楽を聞い＿、本を読んだりします。",
+          "en": "I listen to music, read and so on.",
+          "options": ["たり", "て", "た", "ながら"],
+          "answer": "たり",
+          "why": "た form + り."
+        },
+        {
+          "q": "The tense of a たり list is on…",
+          "en": "",
+          "options": ["the first verb", "the final する", "each verb", "nowhere"],
+          "answer": "the final する",
+          "why": "〜たりしました."
+        },
+        {
+          "q": "行ったり来たり means…",
+          "en": "",
+          "options": ["went and came once", "not going", "back and forth", "will go"],
+          "answer": "back and forth",
+          "why": "Opposites alternate."
+        },
+        {
+          "q": "泳ぐ →",
+          "en": "",
+          "options": ["泳ぎたり", "泳ったり", "泳いたり", "泳いだり"],
+          "answer": "泳いだり",
+          "why": "泳いだ + り."
+        },
+        {
+          "q": "たり lists…",
+          "en": "",
+          "options": [
+            "some examples, not all",
+            "everything, in order",
+            "reasons",
+            "conditions"
+          ],
+          "answer": "some examples, not all",
+          "why": "Examples only."
+        }
+      ]
+    },
+    {
+      "id": "yori",
+      "title": "〜より and 〜の方が — comparing",
+      "particle": "より・の方が",
+      "summary": "B より A の方が adjective: A is more … than B. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>より</b> means “than”. The thing that wins takes <b>の方が</b> (no hō ga). The adjective doesn't change: no -er.",
+          "examples": [
+            [
+              "バスより電車{の方が}速いです。",
+              "Basu yori densha no hō ga hayai desu.",
+              "The train is faster than the bus."
+            ],
+            [
+              "東京は大阪{より}大きいです。",
+              "Tōkyō wa Ōsaka yori ōkii desu.",
+              "Tokyo is bigger than Osaka."
+            ]
+          ]
+        },
+        {
+          "h": "Asking which",
+          "p": "Ask with <b>AとBとどちらが</b> …ですか. Answer with Aの方が….",
+          "examples": [
+            [
+              "犬と猫と{どちらが}好きですか。",
+              "Inu to neko to dochira ga suki desu ka.",
+              "Which do you like better, dogs or cats?"
+            ],
+            ["猫{の方が}好きです。", "Neko no hō ga suki desu.", "I prefer cats."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "夏＿冬の方が好きです。",
+          "en": "I like winter more than summer.",
+          "options": ["より", "の方が", "から", "まで"],
+          "answer": "より",
+          "why": "Than: より."
+        },
+        {
+          "q": "Which wins in 肉より魚の方がいい?",
+          "en": "",
+          "options": ["meat", "fish", "both", "neither"],
+          "answer": "fish",
+          "why": "の方が marks the winner."
+        },
+        {
+          "q": "犬と猫と＿が好きですか。",
+          "en": "Which do you like more, dogs or cats?",
+          "options": ["どれ", "なに", "どちら", "だれ"],
+          "answer": "どちら",
+          "why": "Choosing between two: どちら."
+        },
+        {
+          "q": "Does the adjective change for “more”?",
+          "en": "",
+          "options": ["Yes, add -er", "Yes, add もっと always", "Only な adjectives", "No"],
+          "answer": "No",
+          "why": "No ending; より does the work."
+        },
+        {
+          "q": "今日は昨日より暑い means…",
+          "en": "",
+          "options": [
+            "Today is hotter than yesterday.",
+            "Yesterday was hotter.",
+            "Today and yesterday are hot.",
+            "It's hot since yesterday."
+          ],
+          "answer": "Today is hotter than yesterday.",
+          "why": "より = than."
+        }
+      ]
+    },
+    {
+      "id": "ichiban",
+      "title": "いちばん — the most",
+      "particle": "いちばん",
+      "summary": "いちばん before an adjective: the most. A group goes with で or の中で. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>いちばん</b> (一番, “number one”) before an adjective means the most. The group goes first with <b>で</b> or <b>の中で</b>.",
+          "examples": [
+            [
+              "クラスで{いちばん}背が高いです。",
+              "Kurasu de ichiban se ga takai desu.",
+              "He's the tallest in the class."
+            ],
+            [
+              "果物の中で何が{いちばん}好きですか。",
+              "Kudamono no naka de nani ga ichiban suki desu ka.",
+              "Which fruit do you like best?"
+            ]
+          ]
+        },
+        {
+          "h": "Question words",
+          "p": "Ask with a question word + が + いちばん: だれが, どこが, いつが, 何が.",
+          "examples": [
+            [
+              "一年で{いつが}{いちばん}好きですか。",
+              "Ichinen de itsu ga ichiban suki desu ka.",
+              "What time of year do you like best?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "家族で＿父が背が高いです。",
+          "en": "My dad is the tallest in my family.",
+          "options": ["いちばん", "より", "もっと", "の方が"],
+          "answer": "いちばん",
+          "why": "The most: いちばん."
+        },
+        {
+          "q": "スポーツの＿何がいちばん好きですか。",
+          "en": "Which sport do you like most?",
+          "options": ["方が", "中で", "より", "まで"],
+          "answer": "中で",
+          "why": "Group: の中で."
+        },
+        {
+          "q": "Asking about people:",
+          "en": "",
+          "options": ["どこがいちばん…", "いつがいちばん…", "だれがいちばん…", "何人がいちばん…"],
+          "answer": "だれがいちばん…",
+          "why": "Who: だれ."
+        },
+        {
+          "q": "いちばん literally means…",
+          "en": "",
+          "options": ["very", "more", "first time", "number one"],
+          "answer": "number one",
+          "why": "一番."
+        },
+        {
+          "q": "Which marks the group?",
+          "en": "",
+          "options": ["で", "を", "へ", "が"],
+          "answer": "で",
+          "why": "クラスで, 日本で."
+        }
+      ]
+    },
+    {
+      "id": "naru",
+      "title": "〜くなる and 〜になる — become",
+      "particle": "〜くなる・〜になる",
+      "summary": "い adjective: い → く + なる. な adjective or noun: に + なる. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>なる</b> means become. With い adjectives, change い to く: 寒い → 寒くなる. With な adjectives and nouns, add に: 元気になる, 先生になる.",
+          "examples": [
+            [
+              "寒{くなりました}ね。",
+              "Samuku narimashita ne.",
+              "It's got cold, hasn't it."
+            ],
+            ["元気{になりました}。", "Genki ni narimashita.", "I've got better."],
+            [
+              "医者{になりたい}です。",
+              "Isha ni naritai desu.",
+              "I want to become a doctor."
+            ]
+          ]
+        },
+        {
+          "h": "いい is special",
+          "p": "いい becomes よくなる. Change over time is often with だんだん (gradually).",
+          "examples": [
+            [
+              "だんだん{よくなります}。",
+              "Dandan yoku narimasu.",
+              "It's gradually getting better."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "部屋が暗＿なりました。",
+          "en": "The room got dark.",
+          "options": ["く", "に", "い", "な"],
+          "answer": "く",
+          "why": "い adjective: く + なる."
+        },
+        {
+          "q": "静か＿なりました。",
+          "en": "It became quiet.",
+          "options": ["く", "に", "な", "で"],
+          "answer": "に",
+          "why": "な adjective: に + なる."
+        },
+        {
+          "q": "いい → become good",
+          "en": "",
+          "options": ["いくなる", "いいになる", "よくなる", "よいなる"],
+          "answer": "よくなる",
+          "why": "いい → よく."
+        },
+        {
+          "q": "先生になりました means…",
+          "en": "",
+          "options": [
+            "the teacher is here",
+            "was a teacher",
+            "will see the teacher",
+            "became a teacher"
+          ],
+          "answer": "became a teacher",
+          "why": "Noun + になる."
+        },
+        {
+          "q": "高い → become expensive",
+          "en": "",
+          "options": ["高くなる", "高いになる", "高になる", "高かなる"],
+          "answer": "高くなる",
+          "why": "い → く."
+        }
+      ]
+    },
+    {
+      "id": "mou-mada",
+      "title": "もう and まだ — already, not yet",
+      "particle": "もう・まだ",
+      "summary": "もう + past: already. まだ + ていません: not yet. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>もう</b> with a past verb means already: もう食べました. <b>まだ</b> with a ていません form means not yet: まだ食べていません.",
+          "examples": [
+            [
+              "{もう}宿題をしました。",
+              "Mō shukudai o shimashita.",
+              "I've already done my homework."
+            ],
+            ["{まだ}来ていません。", "Mada kite imasen.", "He hasn't come yet."]
+          ]
+        },
+        {
+          "h": "Other meanings",
+          "p": "まだ + positive is still: まだ雨です. もう + negative is not any more: もう痛くない.",
+          "examples": [
+            [
+              "{まだ}雨が降っています。",
+              "Mada ame ga futte imasu.",
+              "It's still raining."
+            ],
+            ["{もう}痛くないです。", "Mō itakunai desu.", "It doesn't hurt any more."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿昼ごはんを食べましたか。",
+          "en": "Have you eaten lunch yet?",
+          "options": ["もう", "まだ", "いつも", "すぐ"],
+          "answer": "もう",
+          "why": "Already/yet question: もう."
+        },
+        {
+          "q": "いいえ、＿食べていません。",
+          "en": "No, I haven't eaten yet.",
+          "options": ["もう", "まだ", "いつも", "よく"],
+          "answer": "まだ",
+          "why": "Not yet: まだ + ていません."
+        },
+        {
+          "q": "Not yet is…",
+          "en": "",
+          "options": ["まだ〜ませんでした", "もう〜ません", "まだ〜ていません", "もう〜ました"],
+          "answer": "まだ〜ていません",
+          "why": "Use the ている negative."
+        },
+        {
+          "q": "まだ雨です means…",
+          "en": "",
+          "options": [
+            "It's not raining yet.",
+            "It's raining again.",
+            "It already rained.",
+            "It's still raining."
+          ],
+          "answer": "It's still raining.",
+          "why": "まだ + positive = still."
+        },
+        {
+          "q": "もう好きじゃない means…",
+          "en": "",
+          "options": [
+            "I don't like it any more.",
+            "I still like it.",
+            "I already like it.",
+            "I don't like it yet."
+          ],
+          "answer": "I don't like it any more.",
+          "why": "もう + negative."
+        }
+      ]
+    },
+    {
+      "id": "ga-but",
+      "title": "が — but",
+      "particle": "が・けど",
+      "summary": "が after a clause joins two contrasting ideas: but. けど is the casual version. (about N5)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "After a full clause, <b>が</b> means but. It's polite and goes after です or ます.",
+          "examples": [
+            [
+              "この店は高いです{が}、おいしいです。",
+              "Kono mise wa takai desu ga, oishii desu.",
+              "This place is pricey, but tasty."
+            ],
+            [
+              "行きたいです{が}、時間がありません。",
+              "Ikitai desu ga, jikan ga arimasen.",
+              "I'd like to go, but I don't have time."
+            ]
+          ]
+        },
+        {
+          "h": "Softening, and けど",
+          "p": "が also softens an opening: すみませんが… (excuse me, but…). <b>けど</b> is the casual version.",
+          "examples": [
+            [
+              "{すみませんが}、駅はどこですか。",
+              "Sumimasen ga, eki wa doko desu ka.",
+              "Excuse me, where's the station?"
+            ],
+            [
+              "高い{けど}買う。",
+              "Takai kedo kau.",
+              "It's expensive, but I'll buy it."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "日本語は難しいです＿、おもしろいです。",
+          "en": "Japanese is hard but interesting.",
+          "options": ["が", "を", "と", "で"],
+          "answer": "が",
+          "why": "Clause + が = but."
+        },
+        {
+          "q": "Casual “but” is…",
+          "en": "",
+          "options": ["ので", "けど", "から", "ね"],
+          "answer": "けど",
+          "why": "けど."
+        },
+        {
+          "q": "すみませんが is…",
+          "en": "",
+          "options": [
+            "an apology for the past",
+            "a question",
+            "a softened opening",
+            "a refusal"
+          ],
+          "answer": "a softened opening",
+          "why": "Excuse me, but…"
+        },
+        {
+          "q": "Subject が and “but” が differ by…",
+          "en": "",
+          "options": [
+            "nothing",
+            "intonation only",
+            "kanji",
+            "what comes before: a noun vs a whole clause"
+          ],
+          "answer": "what comes before: a noun vs a whole clause",
+          "why": "Noun が vs clause が."
+        },
+        {
+          "q": "行きたいけど行けない means…",
+          "en": "",
+          "options": [
+            "I want to go but can't.",
+            "I can go because I want to.",
+            "I don't want to go.",
+            "Let's go."
+          ],
+          "answer": "I want to go but can't.",
+          "why": "けど = but."
+        }
+      ]
+    },
+    {
+      "id": "deshou",
+      "title": "でしょう — probably",
+      "particle": "でしょう・だろう",
+      "summary": "Plain form + でしょう: probably. With rising tone, “right?”. (about N5–N4)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>でしょう</b> after a plain form or a noun guesses: probably. Weather forecasts use it all the time. だろう is the plain version.",
+          "examples": [
+            [
+              "明日は雨{でしょう}。",
+              "Ashita wa ame deshō.",
+              "It will probably rain tomorrow."
+            ],
+            [
+              "彼はもう帰った{でしょう}。",
+              "Kare wa mō kaetta deshō.",
+              "He's probably gone home already."
+            ]
+          ]
+        },
+        {
+          "h": "Checking",
+          "p": "With a rising tone, でしょう? (or casual でしょ?) checks agreement: right?",
+          "examples": [
+            ["これ、おいしい{でしょう}？", "Kore, oishii deshō?", "This is tasty, right?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "午後は晴れる＿。",
+          "en": "It will probably be sunny this afternoon.",
+          "options": ["でしょう", "ましょう", "ください", "ません"],
+          "answer": "でしょう",
+          "why": "Guess: でしょう."
+        },
+        {
+          "q": "Plain version of でしょう",
+          "en": "",
+          "options": ["だった", "だろう", "だよ", "です"],
+          "answer": "だろう",
+          "why": "だろう."
+        },
+        {
+          "q": "静か＿でしょう",
+          "en": "probably quiet",
+          "options": ["な", "だ", "(nothing: 静かでしょう)", "に"],
+          "answer": "(nothing: 静かでしょう)",
+          "why": "な adjectives and nouns attach directly."
+        },
+        {
+          "q": "でしょう? with rising tone means…",
+          "en": "",
+          "options": ["let's", "please", "maybe not", "right?"],
+          "answer": "right?",
+          "why": "Checking agreement."
+        },
+        {
+          "q": "田中さんは来ないでしょう means…",
+          "en": "",
+          "options": [
+            "Mr Tanaka probably won't come.",
+            "Mr Tanaka must come.",
+            "Let's not invite Tanaka.",
+            "Tanaka didn't come."
+          ],
+          "answer": "Mr Tanaka probably won't come.",
+          "why": "Negative guess."
+        }
+      ]
+    },
+    {
+      "id": "ta-koto-ga-aru",
+      "title": "〜たことがある — have done",
+      "particle": "〜たことがある",
+      "summary": "た form + ことがある: have the experience of. (about N5–N4)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "た form + <b>ことがあります</b> talks about experience: I have (ever) done. The negative is ことがありません: never.",
+          "examples": [
+            [
+              "富士山に登っ{たことがあります}。",
+              "Fujisan ni nobotta koto ga arimasu.",
+              "I've climbed Mount Fuji."
+            ],
+            [
+              "すしを食べ{たことがありますか}。",
+              "Sushi o tabeta koto ga arimasu ka.",
+              "Have you ever eaten sushi?"
+            ],
+            [
+              "一度も見{たことがありません}。",
+              "Ichido mo mita koto ga arimasen.",
+              "I've never once seen it."
+            ]
+          ]
+        },
+        {
+          "h": "Not for recent events",
+          "p": "It's for experience at some point in life, not for “I've just eaten”. Dictionary form + ことがある means “sometimes”.",
+          "examples": [
+            [
+              "朝ごはんを食べないことも{ある}。",
+              "Asagohan o tabenai koto mo aru.",
+              "Sometimes I skip breakfast."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "日本に行っ＿があります。",
+          "en": "I've been to Japan.",
+          "options": ["たこと", "てこと", "ること", "たもの"],
+          "answer": "たこと",
+          "why": "た form + こと."
+        },
+        {
+          "q": "I've never seen it.",
+          "en": "",
+          "options": ["見ることがありません。", "見たことがありません。", "見たことがあります。", "見ませんでした。"],
+          "answer": "見たことがありません。",
+          "why": "Never: ことがありません."
+        },
+        {
+          "q": "〜たことがある talks about…",
+          "en": "",
+          "options": ["something just done", "a plan", "life experience", "a rule"],
+          "answer": "life experience",
+          "why": "Ever done."
+        },
+        {
+          "q": "一度も means…",
+          "en": "",
+          "options": [
+            "once",
+            "many times",
+            "sometimes",
+            "not even once (with a negative)"
+          ],
+          "answer": "not even once (with a negative)",
+          "why": "一度も…ない."
+        },
+        {
+          "q": "食べることがある means…",
+          "en": "",
+          "options": [
+            "sometimes (I) eat it",
+            "I have eaten it",
+            "I must eat",
+            "I can eat"
+          ],
+          "answer": "sometimes (I) eat it",
+          "why": "Dictionary form + ことがある."
+        }
+      ]
+    },
+    {
+      "id": "nakereba-naranai",
+      "title": "〜なければならない — must",
+      "particle": "〜なければならない・〜なきゃ",
+      "summary": "ない → なければなりません: must. (about N5–N4)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Take the ない form, change ない to <b>なければなりません</b>: must. Literally “if not, it won't do”. なくてはいけません means the same.",
+          "examples": [
+            [
+              "薬を飲ま{なければなりません}。",
+              "Kusuri o nomanakereba narimasen.",
+              "I have to take medicine."
+            ],
+            [
+              "明日早く起き{なくてはいけません}。",
+              "Ashita hayaku okinakute wa ikemasen.",
+              "I have to get up early tomorrow."
+            ]
+          ]
+        },
+        {
+          "h": "Speech",
+          "p": "Casual speech shortens it: <b>なきゃ</b> and <b>なくちゃ</b>.",
+          "examples": [
+            ["もう行か{なきゃ}。", "Mō ikanakya.", "I've got to go."],
+            ["勉強し{なくちゃ}。", "Benkyō shinakucha.", "I have to study."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "宿題をし＿。",
+          "en": "I have to do homework.",
+          "options": ["なければなりません", "てはいけません", "てもいいです", "たいです"],
+          "answer": "なければなりません",
+          "why": "Must."
+        },
+        {
+          "q": "書く → must write",
+          "en": "",
+          "options": ["書くなければならない", "書かなければならない", "書きなければならない", "書いてなければならない"],
+          "answer": "書かなければならない",
+          "why": "ない form 書かない."
+        },
+        {
+          "q": "Casual “I've got to go”",
+          "en": "",
+          "options": ["行かなくてもいい", "行っちゃだめ", "行かなきゃ", "行こう"],
+          "answer": "行かなきゃ",
+          "why": "なきゃ."
+        },
+        {
+          "q": "なくてはいけない means…",
+          "en": "",
+          "options": ["must not", "may", "don't have to", "must"],
+          "answer": "must",
+          "why": "Same as なければならない."
+        },
+        {
+          "q": "なければ literally means…",
+          "en": "",
+          "options": ["if not", "because not", "although not", "let's not"],
+          "answer": "if not",
+          "why": "Conditional of ない."
+        }
+      ]
+    },
+    {
+      "id": "potential",
+      "title": "The potential form — can",
+      "particle": "〜られる・〜える",
+      "summary": "Group 2: る → られる. Group 1: u → e + る. Can do. (about N4)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "The potential form says can. Group 2: 食べる → 食べ<b>られる</b>. Group 1: change the last u to e and add る: 書く → 書<b>ける</b>, 話す → 話せる. する → できる, 来る → 来られる.",
+          "examples": [
+            ["漢字が読め{ます}か。", "Kanji ga yomemasu ka.", "Can you read kanji?"],
+            [
+              "日本語が少し話{せます}。",
+              "Nihongo ga sukoshi hanasemasu.",
+              "I can speak a little Japanese."
+            ],
+            [
+              "明日は来{られません}。",
+              "Ashita wa koraremasen.",
+              "I can't come tomorrow."
+            ]
+          ]
+        },
+        {
+          "h": "The object often takes が",
+          "p": "With a potential verb, the object usually switches from を to が. Speech often drops ら: 食べれる (ら抜き); textbooks keep 食べられる.",
+          "examples": [
+            [
+              "さしみ{が}食べられます。",
+              "Sashimi ga taberaremasu.",
+              "I can eat sashimi."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "泳ぐ → can swim",
+          "en": "",
+          "options": ["泳げる", "泳がれる", "泳ぎれる", "泳ぐれる"],
+          "answer": "泳げる",
+          "why": "u → e + る."
+        },
+        {
+          "q": "見る → can see",
+          "en": "",
+          "options": ["見れるる", "見られる", "見える only", "見けれる"],
+          "answer": "見られる",
+          "why": "Group 2: られる."
+        },
+        {
+          "q": "する →",
+          "en": "",
+          "options": ["すれる", "しられる", "できる", "される"],
+          "answer": "できる",
+          "why": "Irregular."
+        },
+        {
+          "q": "ピアノ＿ひけます。",
+          "en": "I can play the piano.",
+          "options": ["で", "に", "へ", "が"],
+          "answer": "が",
+          "why": "The object often takes が."
+        },
+        {
+          "q": "行けません means…",
+          "en": "",
+          "options": ["can't go", "won't go", "didn't go", "mustn't go"],
+          "answer": "can't go",
+          "why": "Potential negative."
+        }
+      ]
+    },
+    {
+      "id": "volitional",
+      "title": "The volitional form — let's, I think I'll",
+      "particle": "〜よう・〜おう",
+      "summary": "The plain “let's”: 食べよう, 行こう. With と思う: I think I'll. (about N4)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "The volitional is the plain ましょう. Group 2: る → <b>よう</b> (食べよう). Group 1: u → <b>おう</b> (行く → 行こう, 飲む → 飲もう). する → しよう, 来る → 来よう.",
+          "examples": [
+            ["一緒に帰ろ{う}。", "Issho ni kaerō.", "Let's go home together."],
+            ["ちょっと休も{う}か。", "Chotto yasumō ka.", "Shall we take a break?"]
+          ]
+        },
+        {
+          "h": "〜ようと思う — I'm thinking of",
+          "p": "Volitional + <b>と思っています</b> says what you plan: I'm thinking of doing.",
+          "examples": [
+            [
+              "来年、日本に行こ{うと思っています}。",
+              "Rainen, Nihon ni ikō to omotte imasu.",
+              "I'm thinking of going to Japan next year."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "待つ → let's wait",
+          "en": "",
+          "options": ["待とう", "待ちよう", "待とる", "待よう"],
+          "answer": "待とう",
+          "why": "つ → とう."
+        },
+        {
+          "q": "寝る → let's sleep",
+          "en": "",
+          "options": ["寝ろう", "寝よう", "寝おう", "寝りょう"],
+          "answer": "寝よう",
+          "why": "Group 2: よう."
+        },
+        {
+          "q": "する →",
+          "en": "",
+          "options": ["すろう", "するよう", "しよう", "せよう"],
+          "answer": "しよう",
+          "why": "Irregular."
+        },
+        {
+          "q": "I'm thinking of quitting my job.",
+          "en": "",
+          "options": [
+            "仕事をやめると思おう。",
+            "仕事をやめたいと思いよう。",
+            "仕事をやめましょうと思います。",
+            "仕事をやめようと思っています。"
+          ],
+          "answer": "仕事をやめようと思っています。",
+          "why": "Volitional + と思う."
+        },
+        {
+          "q": "行こう is the plain form of…",
+          "en": "",
+          "options": ["行きましょう", "行きます", "行きません", "行きたい"],
+          "answer": "行きましょう",
+          "why": "Volitional."
+        }
+      ]
+    },
+    {
+      "id": "tsumori",
+      "title": "つもり — intend to",
+      "particle": "つもり",
+      "summary": "Dictionary form + つもりです: I intend to. (about N4)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>つもり</b> after a dictionary form states a plan you've decided on: つもりです. Negative intention: ない form + つもり.",
+          "examples": [
+            [
+              "夏休みに北海道へ行く{つもりです}。",
+              "Natsuyasumi ni Hokkaidō e iku tsumori desu.",
+              "I plan to go to Hokkaido in the summer holidays."
+            ],
+            [
+              "もうたばこは吸わない{つもりです}。",
+              "Mō tabako wa suwanai tsumori desu.",
+              "I don't intend to smoke any more."
+            ]
+          ]
+        },
+        {
+          "h": "つもり vs volitional + と思う",
+          "p": "つもり is firmer, already decided. ようと思う is “thinking of”. つもりはない means “have no intention”.",
+          "examples": [
+            [
+              "謝る{つもりはない}。",
+              "Ayamaru tsumori wa nai.",
+              "I have no intention of apologising."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "来年結婚する＿です。",
+          "en": "I plan to marry next year.",
+          "options": ["つもり", "ため", "こと", "はず"],
+          "answer": "つもり",
+          "why": "Intention: つもり."
+        },
+        {
+          "q": "I don't intend to go.",
+          "en": "",
+          "options": ["行くつもりないです行か。", "行かないつもりです。", "行かつもりです。", "行ったつもりです。"],
+          "answer": "行かないつもりです。",
+          "why": "ない form + つもり."
+        },
+        {
+          "q": "つもり takes…",
+          "en": "",
+          "options": [
+            "the て form",
+            "the ます stem",
+            "the dictionary or ない form",
+            "the potential only"
+          ],
+          "answer": "the dictionary or ない form",
+          "why": "行くつもり / 行かないつもり."
+        },
+        {
+          "q": "つもりはない means…",
+          "en": "",
+          "options": [
+            "I will definitely",
+            "I already did",
+            "I can't",
+            "I have no intention of"
+          ],
+          "answer": "I have no intention of",
+          "why": "Strong refusal."
+        },
+        {
+          "q": "Which is firmer?",
+          "en": "",
+          "options": ["〜つもりです", "〜ようと思っています", "equal", "neither"],
+          "answer": "〜つもりです",
+          "why": "つもり is decided."
+        }
+      ]
+    },
+    {
+      "id": "ba",
+      "title": "〜ば — if",
+      "particle": "〜ば・〜ければ",
+      "summary": "The ば form: if this happens, that follows. (about N4)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Verbs: change the last u to e and add <b>ば</b>: 行く → 行けば, 食べる → 食べれば. い adjectives: い → <b>ければ</b>: 安い → 安ければ. Nouns and な adjectives: なら or であれば.",
+          "examples": [
+            [
+              "安けれ{ば}買います。",
+              "Yasukereba kaimasu.",
+              "If it's cheap, I'll buy it."
+            ],
+            [
+              "急げ{ば}間に合います。",
+              "Isogeba maniaimasu.",
+              "If you hurry, you'll make it."
+            ]
+          ]
+        },
+        {
+          "h": "Advice: 〜ばいい",
+          "p": "<b>〜ばいい</b> gives advice: you just have to. どうすればいいですか asks what to do.",
+          "examples": [
+            ["どう{すればいい}ですか。", "Dō sureba ii desu ka.", "What should I do?"],
+            [
+              "駅員に聞け{ばいい}ですよ。",
+              "Ekiin ni kikeba ii desu yo.",
+              "You just need to ask the station staff."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "読む → if (I) read",
+          "en": "",
+          "options": ["読めば", "読むば", "読みば", "読んば"],
+          "answer": "読めば",
+          "why": "u → e + ば."
+        },
+        {
+          "q": "高い → if expensive",
+          "en": "",
+          "options": ["高いば", "高ければ", "高くば", "高かれば"],
+          "answer": "高ければ",
+          "why": "い → ければ."
+        },
+        {
+          "q": "する →",
+          "en": "",
+          "options": ["しれば", "せば", "すれば", "するば"],
+          "answer": "すれば",
+          "why": "Irregular."
+        },
+        {
+          "q": "どうすればいいですか means…",
+          "en": "",
+          "options": [
+            "What did you do?",
+            "Why did you do it?",
+            "What can I do for you?",
+            "What should I do?"
+          ],
+          "answer": "What should I do?",
+          "why": "ばいい = should."
+        },
+        {
+          "q": "ない →",
+          "en": "",
+          "options": ["なければ", "ないば", "なくば", "なかれば"],
+          "answer": "なければ",
+          "why": "Like an い adjective."
+        }
+      ]
+    },
+    {
+      "id": "tara",
+      "title": "〜たら — if, when",
+      "particle": "〜たら",
+      "summary": "た form + ら: if, or once/when. The most flexible conditional. (about N4)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Add <b>ら</b> to the た form: 行ったら, 安かったら, 雨だったら. It means if, or once something happens.",
+          "examples": [
+            [
+              "雨が降っ{たら}、行きません。",
+              "Ame ga futtara, ikimasen.",
+              "If it rains, I won't go."
+            ],
+            [
+              "家に着い{たら}、電話してください。",
+              "Ie ni tsuitara, denwa shite kudasai.",
+              "Call me when you get home."
+            ]
+          ]
+        },
+        {
+          "h": "Discovering",
+          "p": "With a past result, たら describes finding something: 開けたら、空だった, when I opened it, it was empty.",
+          "examples": [
+            [
+              "窓を開け{たら}、雪が降っていた。",
+              "Mado o aketara, yuki ga futte ita.",
+              "When I opened the window, it was snowing."
+            ],
+            [
+              "もしよかっ{たら}、どうぞ。",
+              "Moshi yokattara, dōzo.",
+              "If you like, please have some."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "駅に着い＿、連絡します。",
+          "en": "I'll get in touch when I arrive at the station.",
+          "options": ["たら", "ば", "と", "なら"],
+          "answer": "たら",
+          "why": "Once/when: たら."
+        },
+        {
+          "q": "暇だ → if free",
+          "en": "",
+          "options": ["暇たら", "暇だったら", "暇だら", "暇かったら"],
+          "answer": "暇だったら",
+          "why": "Noun/な adjective: だったら."
+        },
+        {
+          "q": "寒い → if cold",
+          "en": "",
+          "options": ["寒いたら", "寒くたら", "寒かったら", "寒だったら"],
+          "answer": "寒かったら",
+          "why": "い adjective た form + ら."
+        },
+        {
+          "q": "もしよかったら means…",
+          "en": "",
+          "options": [
+            "if it was good",
+            "it would be good",
+            "if you're well",
+            "if you like"
+          ],
+          "answer": "if you like",
+          "why": "Polite offer."
+        },
+        {
+          "q": "家に帰ったら、手紙が来ていた means…",
+          "en": "",
+          "options": [
+            "When I got home, a letter had come.",
+            "If I go home, a letter will come.",
+            "I came home for the letter.",
+            "I'll go home when the letter comes."
+          ],
+          "answer": "When I got home, a letter had come.",
+          "why": "Discovery."
+        }
+      ]
+    },
+    {
+      "id": "to-conditional",
+      "title": "〜と — whenever",
+      "particle": "〜と",
+      "summary": "Dictionary form + と: whenever A, B always happens. (about N4)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Dictionary (or ない) form + <b>と</b> means whenever, if: a natural, automatic result. Directions, machines and nature use it.",
+          "examples": [
+            [
+              "このボタンを押す{と}、ドアが開きます。",
+              "Kono botan o osu to, doa ga akimasu.",
+              "Press this button and the door opens."
+            ],
+            [
+              "春になる{と}、花が咲きます。",
+              "Haru ni naru to, hana ga sakimasu.",
+              "When spring comes, flowers bloom."
+            ],
+            [
+              "まっすぐ行く{と}、右に駅があります。",
+              "Massugu iku to, migi ni eki ga arimasu.",
+              "Go straight and the station is on the right."
+            ]
+          ]
+        },
+        {
+          "h": "Not for wishes or requests",
+          "p": "The second half can't be a request, a wish or “let's”. Use たら for those.",
+          "examples": [
+            [
+              "駅に着い{たら}、電話してください。",
+              "Eki ni tsuitara, denwa shite kudasai.",
+              "Call me when you get to the station. (not 着くと)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "右に曲がる＿、銀行があります。",
+          "en": "Turn right and there's a bank.",
+          "options": ["と", "たら", "ば", "なら"],
+          "answer": "と",
+          "why": "Directions: と."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": [
+            "東京に着いたら、電話してください。",
+            "東京に着くと、電話してください。",
+            "春になると、暖かくなります。",
+            "押すと、開きます。"
+          ],
+          "answer": "東京に着くと、電話してください。",
+          "why": "と can't lead to a request."
+        },
+        {
+          "q": "と conditional takes…",
+          "en": "",
+          "options": [
+            "the た form",
+            "the て form",
+            "the dictionary or ない form",
+            "the volitional"
+          ],
+          "answer": "the dictionary or ない form",
+          "why": "押すと."
+        },
+        {
+          "q": "と describes…",
+          "en": "",
+          "options": [
+            "a wish",
+            "an invitation",
+            "a guess",
+            "an automatic, natural result"
+          ],
+          "answer": "an automatic, natural result",
+          "why": "Always happens."
+        },
+        {
+          "q": "水は100度になると沸騰する means…",
+          "en": "",
+          "options": [
+            "Water boils when it reaches 100°.",
+            "Water should boil at 100°.",
+            "Let's boil water.",
+            "Water boiled once."
+          ],
+          "answer": "Water boils when it reaches 100°.",
+          "why": "General truth."
+        }
+      ]
+    },
+    {
+      "id": "nara",
+      "title": "なら — if it's",
+      "particle": "なら",
+      "summary": "なら picks up a topic or a situation: if it's that, then. (about N4–N3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>なら</b> takes what the other person said as the starting point: if that's the case, then. It's ideal for advice.",
+          "examples": [
+            [
+              "京都に行く{なら}、秋がいいですよ。",
+              "Kyōto ni iku nara, aki ga ii desu yo.",
+              "If you're going to Kyoto, autumn is good."
+            ],
+            [
+              "疲れた{なら}、休んでください。",
+              "Tsukareta nara, yasunde kudasai.",
+              "If you're tired, have a rest."
+            ]
+          ]
+        },
+        {
+          "h": "With nouns",
+          "p": "Noun + なら: as for X, if it's X.",
+          "examples": [
+            [
+              "田中さん{なら}、図書館にいましたよ。",
+              "Tanaka-san nara, toshokan ni imashita yo.",
+              "If it's Tanaka you're after, he was in the library."
+            ],
+            [
+              "寿司{なら}、あの店がいちばんです。",
+              "Sushi nara, ano mise ga ichiban desu.",
+              "For sushi, that shop is the best."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "日本語を勉強する＿、この本がいいですよ。",
+          "en": "If you're going to study Japanese, this book is good.",
+          "options": ["なら", "と", "ば", "ても"],
+          "answer": "なら",
+          "why": "Advice on someone's plan: なら."
+        },
+        {
+          "q": "ビール＿、冷蔵庫にあります。",
+          "en": "If it's beer, there's some in the fridge.",
+          "options": ["たら", "なら", "と", "ので"],
+          "answer": "なら",
+          "why": "Noun + なら."
+        },
+        {
+          "q": "なら often gives…",
+          "en": "",
+          "options": [
+            "an automatic result",
+            "a past discovery",
+            "advice based on what someone said",
+            "a rule"
+          ],
+          "answer": "advice based on what someone said",
+          "why": "Situation-based."
+        },
+        {
+          "q": "行くなら vs 行ったら",
+          "en": "",
+          "options": [
+            "same",
+            "行くなら is past",
+            "行ったら is advice only",
+            "行くなら: if you're going (before); 行ったら: after going"
+          ],
+          "answer": "行くなら: if you're going (before); 行ったら: after going",
+          "why": "Order of events."
+        },
+        {
+          "q": "雨なら中止です means…",
+          "en": "",
+          "options": [
+            "If it rains, it's cancelled.",
+            "It was cancelled due to rain.",
+            "It's raining so let's go.",
+            "Rain is cancelled."
+          ],
+          "answer": "If it rains, it's cancelled.",
+          "why": "Noun + なら."
+        }
+      ]
+    },
+    {
+      "id": "node",
+      "title": "ので — because",
+      "particle": "ので・から",
+      "summary": "ので gives a reason softly and politely; から is more direct. (about N4)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ので</b> after a plain form gives a reason. It sounds softer and more objective than から, so it's preferred for excuses and requests. Nouns and な adjectives: なので.",
+          "examples": [
+            [
+              "雨が降っている{ので}、出かけません。",
+              "Ame ga futte iru node, dekakemasen.",
+              "It's raining, so I'm not going out."
+            ],
+            [
+              "頭が痛い{ので}、早く帰ってもいいですか。",
+              "Atama ga itai node, hayaku kaette mo ii desu ka.",
+              "I have a headache, so may I leave early?"
+            ]
+          ]
+        },
+        {
+          "h": "から vs ので",
+          "p": "から is fine with friends and with orders. ので is better for polite explanations. Noun: 休み{なので}.",
+          "examples": [
+            [
+              "明日は休み{なので}、ゆっくり寝ます。",
+              "Ashita wa yasumi na node, yukkuri nemasu.",
+              "Tomorrow's a day off, so I'll sleep in."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "熱がある＿、休みます。",
+          "en": "I have a fever, so I'll rest.",
+          "options": ["ので", "のに", "けど", "ても"],
+          "answer": "ので",
+          "why": "Reason: ので."
+        },
+        {
+          "q": "学生＿ので",
+          "en": "because (I'm) a student",
+          "options": ["だ", "な", "の", "で"],
+          "answer": "な",
+          "why": "Noun + なので."
+        },
+        {
+          "q": "Which is softer for an excuse?",
+          "en": "",
+          "options": ["から", "equal", "ので", "neither"],
+          "answer": "ので",
+          "why": "ので sounds objective."
+        },
+        {
+          "q": "ので goes after…",
+          "en": "",
+          "options": ["the ます stem", "the て form", "the volitional", "the plain form"],
+          "answer": "the plain form",
+          "why": "Plain form + ので."
+        },
+        {
+          "q": "道が混んでいたので、遅れました means…",
+          "en": "",
+          "options": [
+            "The roads were busy, so I was late.",
+            "Although busy, I wasn't late.",
+            "If busy, I'll be late.",
+            "I was late, so the roads were busy."
+          ],
+          "answer": "The roads were busy, so I was late.",
+          "why": "Reason, then result."
+        }
+      ]
+    },
+    {
+      "id": "noni",
+      "title": "のに — even though",
+      "particle": "のに",
+      "summary": "のに: even though, with frustration or surprise. (about N4–N3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>のに</b> joins two clauses where the result goes against expectation, and usually shows disappointment. Nouns and な adjectives: なのに.",
+          "examples": [
+            [
+              "薬を飲んだ{のに}、治りません。",
+              "Kusuri o nonda noni, naorimasen.",
+              "Even though I took medicine, it's not getting better."
+            ],
+            [
+              "日曜日{なのに}、仕事です。",
+              "Nichiyōbi na noni, shigoto desu.",
+              "It's Sunday, and yet I'm working."
+            ]
+          ]
+        },
+        {
+          "h": "At the end",
+          "p": "At the end of a sentence, のに means “if only” or “and yet…”: 言ってくれればよかったのに, you could have told me.",
+          "examples": [
+            [
+              "言ってくれればよかった{のに}。",
+              "Itte kurereba yokatta noni.",
+              "You should have told me."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "約束した＿、来なかった。",
+          "en": "Even though he promised, he didn't come.",
+          "options": ["のに", "ので", "から", "なら"],
+          "answer": "のに",
+          "why": "Against expectation: のに."
+        },
+        {
+          "q": "のに usually shows…",
+          "en": "",
+          "options": [
+            "a neutral reason",
+            "disappointment or surprise",
+            "a plan",
+            "a request"
+          ],
+          "answer": "disappointment or surprise",
+          "why": "Emotional."
+        },
+        {
+          "q": "きれいな＿",
+          "en": "even though (it's) pretty",
+          "options": ["ので", "ば", "のに", "と"],
+          "answer": "のに",
+          "why": "な adjective + なのに."
+        },
+        {
+          "q": "Can のに be followed by a request?",
+          "en": "",
+          "options": ["Yes", "Only in writing", "Only in questions", "No"],
+          "answer": "No",
+          "why": "Use けど or ても for that."
+        },
+        {
+          "q": "頑張ったのに means…",
+          "en": "",
+          "options": [
+            "Even though I tried hard (it didn't work).",
+            "Because I tried hard.",
+            "Let's try hard.",
+            "If I try hard."
+          ],
+          "answer": "Even though I tried hard (it didn't work).",
+          "why": "Frustration."
+        }
+      ]
+    },
+    {
+      "id": "shi",
+      "title": "〜し — and also",
+      "particle": "〜し",
+      "summary": "Plain form + し lists reasons: and what's more. (about N4)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>し</b> after a plain form adds one reason to another: it's cheap, and it's close, so…",
+          "examples": [
+            [
+              "この店は安い{し}、おいしい{し}、よく来ます。",
+              "Kono mise wa yasui shi, oishii shi, yoku kimasu.",
+              "This place is cheap and tasty, so I come often."
+            ],
+            [
+              "雨だ{し}、寒い{し}、出かけたくない。",
+              "Ame da shi, samui shi, dekaketakunai.",
+              "It's raining and cold; I don't want to go out."
+            ]
+          ]
+        },
+        {
+          "h": "One reason, more implied",
+          "p": "One し can hint at more reasons left unsaid. Nouns and な adjectives take だ before し.",
+          "examples": [
+            [
+              "もう遅い{し}…。",
+              "Mō osoi shi….",
+              "It's late, and besides… (so let's go)."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "部屋は広い＿、駅にも近いです。",
+          "en": "The flat is spacious, and it's close to the station too.",
+          "options": ["し", "ので", "のに", "ても"],
+          "answer": "し",
+          "why": "Listing reasons: し."
+        },
+        {
+          "q": "静か＿し",
+          "en": "it's quiet, and…",
+          "options": ["な", "だ", "の", "に"],
+          "answer": "だ",
+          "why": "な adjective + だし."
+        },
+        {
+          "q": "し lists…",
+          "en": "",
+          "options": ["times", "places", "reasons", "people"],
+          "answer": "reasons",
+          "why": "Adding reasons."
+        },
+        {
+          "q": "時間もないし is…",
+          "en": "",
+          "options": [
+            "a time expression",
+            "a question",
+            "a must",
+            "one reason, hinting at more"
+          ],
+          "answer": "one reason, hinting at more",
+          "why": "Unfinished list."
+        },
+        {
+          "q": "Which is right?",
+          "en": "",
+          "options": ["便利だし、安いし", "便利し、安いし", "便利なし、安いし", "便利でし、安いし"],
+          "answer": "便利だし、安いし",
+          "why": "Noun/な adjective: だし."
+        }
+      ]
+    },
+    {
+      "id": "nagara",
+      "title": "〜ながら — while",
+      "particle": "〜ながら",
+      "summary": "ます stem + ながら: doing two things at once. The main action comes last. (about N4)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ながら</b> after the ます stem means while. One person does both; the action after ながら is the main one.",
+          "examples": [
+            [
+              "音楽を聞き{ながら}勉強します。",
+              "Ongaku o kiki nagara benkyō shimasu.",
+              "I study while listening to music."
+            ],
+            [
+              "歩き{ながら}電話しないでください。",
+              "Aruki nagara denwa shinaide kudasai.",
+              "Please don't phone while walking."
+            ]
+          ]
+        },
+        {
+          "h": "Although",
+          "p": "With states, ながら can mean although: 残念ながら (unfortunately), 知っていながら (while knowing).",
+          "examples": [
+            [
+              "{残念ながら}、行けません。",
+              "Zannen nagara, ikemasen.",
+              "Unfortunately, I can't go."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "テレビを見＿ご飯を食べます。",
+          "en": "I eat while watching TV.",
+          "options": ["ながら", "たり", "て", "ので"],
+          "answer": "ながら",
+          "why": "ます stem + ながら."
+        },
+        {
+          "q": "歌う → while singing",
+          "en": "",
+          "options": ["歌うながら", "歌いながら", "歌ってながら", "歌いたながら"],
+          "answer": "歌いながら",
+          "why": "ます stem: 歌い."
+        },
+        {
+          "q": "In AながらB, the main action is…",
+          "en": "",
+          "options": ["A", "both equally", "B", "neither"],
+          "answer": "B",
+          "why": "The last verb."
+        },
+        {
+          "q": "残念ながら means…",
+          "en": "",
+          "options": ["while sad", "because sad", "luckily", "unfortunately"],
+          "answer": "unfortunately",
+          "why": "Set phrase."
+        },
+        {
+          "q": "ながら needs…",
+          "en": "",
+          "options": [
+            "the same subject for both actions",
+            "two different subjects",
+            "the past tense",
+            "a noun"
+          ],
+          "answer": "the same subject for both actions",
+          "why": "One person."
+        }
+      ]
+    },
+    {
+      "id": "sugiru",
+      "title": "〜すぎる — too much",
+      "particle": "〜すぎる",
+      "summary": "ます stem or adjective stem + すぎる: too much. (about N4)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>すぎる</b> means too much. Verbs: ます stem + すぎる (食べすぎた). い adjectives drop い (高すぎる). な adjectives drop な (静かすぎる). いい → よすぎる.",
+          "examples": [
+            [
+              "昨日飲み{すぎました}。",
+              "Kinō nomisugimashita.",
+              "I drank too much yesterday."
+            ],
+            [
+              "この靴は高{すぎます}。",
+              "Kono kutsu wa takasugimasu.",
+              "These shoes are too expensive."
+            ]
+          ]
+        },
+        {
+          "h": "It's a Group 2 verb",
+          "p": "すぎる conjugates like 食べる: すぎない, すぎて, すぎた. すぎ can also be a noun: 食べすぎ (overeating).",
+          "examples": [
+            [
+              "働き{すぎ}はよくない。",
+              "Hatarakisugi wa yokunai.",
+              "Overwork isn't good."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "この問題は難し＿。",
+          "en": "This problem is too difficult.",
+          "options": ["すぎます", "ません", "たいです", "ましょう"],
+          "answer": "すぎます",
+          "why": "い dropped + すぎる."
+        },
+        {
+          "q": "食べる → ate too much",
+          "en": "",
+          "options": ["食べるすぎた", "食べすぎた", "食べてすぎた", "食べたすぎ"],
+          "answer": "食べすぎた",
+          "why": "ます stem + すぎる."
+        },
+        {
+          "q": "静か → too quiet",
+          "en": "",
+          "options": ["静かなすぎる", "静かにすぎる", "静かすぎる", "静かだすぎる"],
+          "answer": "静かすぎる",
+          "why": "Drop な."
+        },
+        {
+          "q": "いい → too good",
+          "en": "",
+          "options": ["いすぎる", "いいすぎる", "よくすぎる", "よすぎる"],
+          "answer": "よすぎる",
+          "why": "いい → よ."
+        },
+        {
+          "q": "働きすぎ is…",
+          "en": "",
+          "options": ["a noun: overwork", "a polite request", "the past", "a question"],
+          "answer": "a noun: overwork",
+          "why": "すぎ as a noun."
+        }
+      ]
+    },
+    {
+      "id": "te-shimau",
+      "title": "〜てしまう — end up, finish",
+      "particle": "〜てしまう・〜ちゃう",
+      "summary": "て + しまう: finish completely, or did it by accident and regret it. (about N4–N3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "て form + <b>しまう</b> has two meanings: done completely (全部読んでしまった), or done with regret (財布をなくしてしまった).",
+          "examples": [
+            [
+              "財布をなくし{てしまいました}。",
+              "Saifu o nakushite shimaimashita.",
+              "I've gone and lost my wallet."
+            ],
+            [
+              "本を全部読ん{でしまいました}。",
+              "Hon o zenbu yonde shimaimashita.",
+              "I read the whole book."
+            ]
+          ]
+        },
+        {
+          "h": "Casual ちゃう",
+          "p": "In speech, てしまう → <b>ちゃう</b>, でしまう → <b>じゃう</b>.",
+          "examples": [
+            ["遅れ{ちゃった}。", "Okurechatta.", "Oops, I'm late."],
+            ["全部飲ん{じゃった}。", "Zenbu nonjatta.", "I drank it all."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "電車に傘を忘れ＿。",
+          "en": "I left my umbrella on the train (oops).",
+          "options": ["てしまいました", "てみました", "ておきました", "てあります"],
+          "answer": "てしまいました",
+          "why": "Regret: てしまう."
+        },
+        {
+          "q": "食べてしまった (casual)",
+          "en": "",
+          "options": ["食べじゃった", "食べちゃった", "食べてちゃった", "食べしまった"],
+          "answer": "食べちゃった",
+          "why": "てしまう → ちゃう."
+        },
+        {
+          "q": "死んでしまった (casual)",
+          "en": "",
+          "options": ["死んちゃった", "死にちゃった", "死んじゃった", "死じゃった"],
+          "answer": "死んじゃった",
+          "why": "でしまう → じゃう."
+        },
+        {
+          "q": "てしまう can mean…",
+          "en": "",
+          "options": ["try", "do in advance", "want", "finished completely, or regret"],
+          "answer": "finished completely, or regret",
+          "why": "Two senses."
+        },
+        {
+          "q": "宿題をやってしまった (no context) most likely means…",
+          "en": "",
+          "options": [
+            "I've got the homework done.",
+            "I'll try the homework.",
+            "I must do the homework.",
+            "I want to do homework."
+          ],
+          "answer": "I've got the homework done.",
+          "why": "Completion."
+        }
+      ]
+    },
+    {
+      "id": "te-oku",
+      "title": "〜ておく — do ahead",
+      "particle": "〜ておく・〜とく",
+      "summary": "て + おく: do something in advance, or leave it as it is. (about N4)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "て form + <b>おく</b> means doing something in preparation: 予約しておく, book ahead.",
+          "examples": [
+            [
+              "旅行の前にホテルを予約し{ておきます}。",
+              "Ryokō no mae ni hoteru o yoyaku shite okimasu.",
+              "I'll book a hotel before the trip."
+            ],
+            [
+              "ビールを冷やし{ておいて}ください。",
+              "Bīru o hiyashite oite kudasai.",
+              "Please chill the beer (in advance)."
+            ]
+          ]
+        },
+        {
+          "h": "Leave as is, and とく",
+          "p": "It also means leave as is: 窓を開けておく, leave the window open. Casual: ておく → <b>とく</b>.",
+          "examples": [
+            [
+              "そのままにし{ておいて}。",
+              "Sono mama ni shite oite.",
+              "Leave it as it is."
+            ],
+            ["買っ{とく}ね。", "Kattoku ne.", "I'll buy it in advance."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "パーティーの前に部屋を掃除し＿。",
+          "en": "I'll clean the room before the party.",
+          "options": ["ておきます", "てしまいます", "てみます", "てあります"],
+          "answer": "ておきます",
+          "why": "Preparation: ておく."
+        },
+        {
+          "q": "窓を開けておいてください means…",
+          "en": "",
+          "options": [
+            "Please close the window.",
+            "Please leave the window open.",
+            "Please try opening the window.",
+            "The window is open."
+          ],
+          "answer": "Please leave the window open.",
+          "why": "Leave as is."
+        },
+        {
+          "q": "調べておく (casual)",
+          "en": "",
+          "options": ["調べちゃう", "調べてく", "調べとく", "調べおく"],
+          "answer": "調べとく",
+          "why": "ておく → とく."
+        },
+        {
+          "q": "ておく is about…",
+          "en": "",
+          "options": [
+            "regret",
+            "trying",
+            "experience",
+            "preparation, or leaving something as is"
+          ],
+          "answer": "preparation, or leaving something as is",
+          "why": "Two uses."
+        },
+        {
+          "q": "覚えておいてください means…",
+          "en": "",
+          "options": [
+            "Please remember it (for later).",
+            "Please forget it.",
+            "I remembered.",
+            "Please try to remember once."
+          ],
+          "answer": "Please remember it (for later).",
+          "why": "Do in advance."
+        }
+      ]
+    },
+    {
+      "id": "te-miru",
+      "title": "〜てみる — try doing",
+      "particle": "〜てみる",
+      "summary": "て + みる: do it and see. (about N4)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "て form + <b>みる</b> (written in hiragana) means try doing, to see what it's like. It's for trying something out, not making an effort.",
+          "examples": [
+            [
+              "この服を着{てみてもいいですか}。",
+              "Kono fuku o kite mite mo ii desu ka.",
+              "May I try this on?"
+            ],
+            ["納豆を食べ{てみました}。", "Nattō o tabete mimashita.", "I tried natto."]
+          ]
+        },
+        {
+          "h": "Try hard is different",
+          "p": "“Try hard to” is 〜ようとする: 起きようとした (tried to get up). てみる is “give it a go”.",
+          "examples": [
+            [
+              "一度行っ{てみたい}です。",
+              "Ichido itte mitai desu.",
+              "I'd like to go there once."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "この料理を作っ＿。",
+          "en": "I'll try making this dish.",
+          "options": ["てみます", "ておきます", "てしまいます", "てあります"],
+          "answer": "てみます",
+          "why": "Try: てみる."
+        },
+        {
+          "q": "みる here is written…",
+          "en": "",
+          "options": ["as 見る", "in hiragana", "as 観る", "in katakana"],
+          "answer": "in hiragana",
+          "why": "Helper verbs are usually hiragana."
+        },
+        {
+          "q": "一度行ってみたい means…",
+          "en": "",
+          "options": [
+            "I've been once.",
+            "I must go once.",
+            "I'd like to give it a go and visit once.",
+            "I went to see."
+          ],
+          "answer": "I'd like to give it a go and visit once.",
+          "why": "てみたい."
+        },
+        {
+          "q": "“Tried hard to open it”",
+          "en": "",
+          "options": ["開けてみた", "開けておいた", "開けてしまった", "開けようとした"],
+          "answer": "開けようとした",
+          "why": "Effort: ようとする."
+        },
+        {
+          "q": "聞いてみます means…",
+          "en": "",
+          "options": [
+            "I'll ask and see.",
+            "I've heard it.",
+            "I'll listen in advance.",
+            "I heard by accident."
+          ],
+          "answer": "I'll ask and see.",
+          "why": "Try asking."
+        }
+      ]
+    },
+    {
+      "id": "giving-receiving",
+      "title": "あげる, くれる, もらう — giving and receiving",
+      "particle": "あげる・くれる・もらう",
+      "summary": "あげる: I give out. くれる: someone gives to me. もらう: I receive. (about N4)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Japanese chooses the verb by direction. <b>あげる</b>: give, from me (or my side) outward. <b>くれる</b>: someone gives to me or my side. <b>もらう</b>: I receive, with から or に for the giver.",
+          "examples": [
+            [
+              "友だちに本を{あげました}。",
+              "Tomodachi ni hon o agemashita.",
+              "I gave my friend a book."
+            ],
+            [
+              "母が時計を{くれました}。",
+              "Haha ga tokei o kuremashita.",
+              "My mother gave me a watch."
+            ],
+            [
+              "先生に辞書を{もらいました}。",
+              "Sensei ni jisho o moraimashita.",
+              "I got a dictionary from my teacher."
+            ]
+          ]
+        },
+        {
+          "h": "Favours with て",
+          "p": "The same verbs after て mean doing a favour: 教えてくれた (taught me, kindly), 手伝ってもらった (I had someone help), 作ってあげた (I made it for them).",
+          "examples": [
+            [
+              "友だちが道を教え{てくれました}。",
+              "Tomodachi ga michi o oshiete kuremashita.",
+              "A friend kindly showed me the way."
+            ],
+            [
+              "兄に宿題を手伝っ{てもらいました}。",
+              "Ani ni shukudai o tetsudatte moraimashita.",
+              "I got my brother to help with my homework."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "父が私に自転車を＿。",
+          "en": "My dad gave me a bike.",
+          "options": ["くれました", "あげました", "もらいました", "やりました"],
+          "answer": "くれました",
+          "why": "Toward me: くれる."
+        },
+        {
+          "q": "私は妹にケーキを＿。",
+          "en": "I gave my little sister cake.",
+          "options": ["くれました", "あげました", "もらいました", "いただきました"],
+          "answer": "あげました",
+          "why": "From me outward: あげる."
+        },
+        {
+          "q": "私は友だちに花を＿。",
+          "en": "I got flowers from a friend.",
+          "options": ["あげました", "くれました", "もらいました", "さしあげました"],
+          "answer": "もらいました",
+          "why": "I receive: もらう."
+        },
+        {
+          "q": "教えてくれた means…",
+          "en": "",
+          "options": [
+            "I taught them",
+            "I asked to be taught",
+            "I will teach",
+            "(someone) kindly taught me"
+          ],
+          "answer": "(someone) kindly taught me",
+          "why": "てくれる = favour to me."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": [
+            "私は友だちにプレゼントをくれた。",
+            "友だちが私にプレゼントをくれた。",
+            "私は友だちにプレゼントをあげた。",
+            "私は友だちにプレゼントをもらった。"
+          ],
+          "answer": "私は友だちにプレゼントをくれた。",
+          "why": "くれる can't go from me outward."
+        }
+      ]
+    },
+    {
+      "id": "sou-looks",
+      "title": "〜そう — looks like",
+      "particle": "〜そう",
+      "summary": "Stem + そう: looks like, judging by appearance. (about N4)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>そう</b> after an adjective stem says how something looks: おいしそう, looks tasty. い adjectives drop い, な adjectives drop な. いい → よさそう, ない → なさそう.",
+          "examples": [
+            [
+              "このケーキ、おいし{そう}！",
+              "Kono kēki, oishisō!",
+              "This cake looks delicious!"
+            ],
+            ["彼は元気{そう}です。", "Kare wa genki sō desu.", "He looks well."]
+          ]
+        },
+        {
+          "h": "With verbs: about to",
+          "p": "With a ます stem, そう means looks about to: 雨が降りそう, it looks like rain. Before a noun: そうな; before a verb: そうに.",
+          "examples": [
+            [
+              "雨が降り{そう}です。",
+              "Ame ga furisō desu.",
+              "It looks like it's going to rain."
+            ],
+            [
+              "楽し{そうに}話しています。",
+              "Tanoshisō ni hanashite imasu.",
+              "They're chatting happily."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "この本はおもしろ＿です。",
+          "en": "This book looks interesting.",
+          "options": ["そう", "らしい", "よう", "みたい"],
+          "answer": "そう",
+          "why": "Appearance: stem + そう."
+        },
+        {
+          "q": "いい → looks good",
+          "en": "",
+          "options": ["いそう", "よさそう", "いいそう", "よそう"],
+          "answer": "よさそう",
+          "why": "Special: よさそう."
+        },
+        {
+          "q": "落ちる → looks about to fall",
+          "en": "",
+          "options": ["落ちるそう", "落ちたそう", "落ちそう", "落そう"],
+          "answer": "落ちそう",
+          "why": "ます stem + そう."
+        },
+        {
+          "q": "そう + noun",
+          "en": "",
+          "options": ["おいしそうりんご", "おいしそうのりんご", "おいしそうにりんご", "おいしそうなりんご"],
+          "answer": "おいしそうなりんご",
+          "why": "そうな before a noun."
+        },
+        {
+          "q": "Do you use そう for something obviously visible, like “it's red”?",
+          "en": "",
+          "options": ["No", "Yes", "Only for food", "Only in the past"],
+          "answer": "No",
+          "why": "そう is a judgement from appearance, not plain fact."
+        }
+      ]
+    },
+    {
+      "id": "you-mitai",
+      "title": "〜ようだ and みたい — seems",
+      "particle": "〜ようだ・〜みたいだ",
+      "summary": "Plain form + ようだ / みたいだ: it seems, from what I can tell. (about N4–N3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ようだ</b> gives a judgement from what you notice: 誰もいないようだ, there seems to be nobody here. <b>みたいだ</b> is the casual version.",
+          "examples": [
+            [
+              "風邪をひいた{ようです}。",
+              "Kaze o hiita yō desu.",
+              "I seem to have caught a cold."
+            ],
+            ["誰か来た{みたい}。", "Dareka kita mitai.", "Looks like someone's come."]
+          ]
+        },
+        {
+          "h": "Like (comparison)",
+          "p": "Noun + のようだ / みたいだ means like: 夢のようだ, like a dream. Before a noun: のような / みたいな.",
+          "examples": [
+            ["夢{のよう}です。", "Yume no yō desu.", "It's like a dream."],
+            ["子ども{みたいな}人", "kodomo mitai na hito", "a childlike person"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "外は寒い＿です。",
+          "en": "It seems cold outside.",
+          "options": ["よう", "そう", "らしい", "つもり"],
+          "answer": "よう",
+          "why": "Judgement: ようです."
+        },
+        {
+          "q": "Casual ようだ is…",
+          "en": "",
+          "options": ["らしい", "みたい", "そう", "はず"],
+          "answer": "みたい",
+          "why": "みたい."
+        },
+        {
+          "q": "雪＿白い",
+          "en": "white like snow",
+          "options": ["ように", "みたいの", "のように", "らしい"],
+          "answer": "のように",
+          "why": "Noun + のように."
+        },
+        {
+          "q": "学生 + ようだ",
+          "en": "",
+          "options": ["学生ようだ", "学生なようだ", "学生だようだ", "学生のようだ"],
+          "answer": "学生のようだ",
+          "why": "Noun + の + ようだ."
+        },
+        {
+          "q": "誰もいないようだ means…",
+          "en": "",
+          "options": [
+            "There seems to be nobody here.",
+            "There must be nobody.",
+            "Nobody should be here.",
+            "I hope nobody's here."
+          ],
+          "answer": "There seems to be nobody here.",
+          "why": "ようだ = seems."
+        }
+      ]
+    },
+    {
+      "id": "kamoshirenai",
+      "title": "かもしれない — might",
+      "particle": "かもしれない・かも",
+      "summary": "Plain form + かもしれない: maybe, might. (about N4)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>かもしれません</b> after a plain form or noun says something might be true, about 50/50. Nouns and な adjectives attach directly: 雨かもしれない.",
+          "examples": [
+            [
+              "明日は雪{かもしれません}。",
+              "Ashita wa yuki kamoshiremasen.",
+              "It might snow tomorrow."
+            ],
+            [
+              "彼はもう知っている{かもしれない}。",
+              "Kare wa mō shitte iru kamoshirenai.",
+              "He might already know."
+            ]
+          ]
+        },
+        {
+          "h": "Short かも",
+          "p": "Casual speech cuts it to <b>かも</b>.",
+          "examples": [
+            ["遅れる{かも}。", "Okureru kamo.", "I might be late."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "道が混んでいる＿。",
+          "en": "The roads might be busy.",
+          "options": ["かもしれません", "はずです", "にちがいない", "つもりです"],
+          "answer": "かもしれません",
+          "why": "Might."
+        },
+        {
+          "q": "本当＿かもしれない",
+          "en": "might be true",
+          "options": ["だ", "(nothing: 本当かもしれない)", "な", "の"],
+          "answer": "(nothing: 本当かもしれない)",
+          "why": "Nouns attach directly."
+        },
+        {
+          "q": "Casual short form",
+          "en": "",
+          "options": ["かもし", "しれない", "かも", "もしれ"],
+          "answer": "かも",
+          "why": "かも."
+        },
+        {
+          "q": "Which is most certain?",
+          "en": "",
+          "options": ["かもしれない", "でしょう", "かも", "にちがいない"],
+          "answer": "にちがいない",
+          "why": "Must be > probably > might."
+        },
+        {
+          "q": "来ないかもしれない means…",
+          "en": "",
+          "options": [
+            "(They) might not come.",
+            "(They) will definitely come.",
+            "(They) should come.",
+            "(They) came."
+          ],
+          "answer": "(They) might not come.",
+          "why": "Possibility."
+        }
+      ]
+    },
+    {
+      "id": "passive",
+      "title": "The passive",
+      "particle": "〜られる・〜れる",
+      "summary": "Group 2: られる. Group 1: a + れる. The doer takes に. (about N4–N3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Group 2: 食べる → 食べ<b>られる</b>. Group 1: u → a + <b>れる</b>: 書く → 書かれる, 言う → 言われる. する → される, 来る → 来られる. The doer takes に.",
+          "examples": [
+            [
+              "先生にほめ{られました}。",
+              "Sensei ni homeraremashita.",
+              "I was praised by the teacher."
+            ],
+            [
+              "この本は多くの人に読ま{れています}。",
+              "Kono hon wa ōku no hito ni yomarete imasu.",
+              "This book is read by many people."
+            ]
+          ]
+        },
+        {
+          "h": "The suffering passive",
+          "p": "Japanese also uses the passive when something annoying happens to you, even with intransitive verbs: 雨に降られた, I got rained on.",
+          "examples": [
+            [
+              "雨に降ら{れました}。",
+              "Ame ni furaremashita.",
+              "I got caught in the rain."
+            ],
+            [
+              "弟にケーキを食べ{られた}。",
+              "Otōto ni kēki o taberareta.",
+              "My little brother ate my cake (on me)."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "母に＿。",
+          "en": "I was scolded by my mother.",
+          "options": ["しかられた", "しかった", "しかれた", "しからせた"],
+          "answer": "しかられた",
+          "why": "しかる → しかられる."
+        },
+        {
+          "q": "書く → passive",
+          "en": "",
+          "options": ["書けられる", "書かれる", "書きれる", "書くれる"],
+          "answer": "書かれる",
+          "why": "u → a + れる."
+        },
+        {
+          "q": "The doer takes…",
+          "en": "",
+          "options": ["が", "を", "に", "で"],
+          "answer": "に",
+          "why": "先生にほめられた."
+        },
+        {
+          "q": "雨に降られた means…",
+          "en": "",
+          "options": [
+            "It rained a lot.",
+            "The rain fell.",
+            "Let it rain.",
+            "I got rained on (unluckily)."
+          ],
+          "answer": "I got rained on (unluckily).",
+          "why": "Suffering passive."
+        },
+        {
+          "q": "する → passive",
+          "en": "",
+          "options": ["される", "すられる", "しられる", "させる"],
+          "answer": "される",
+          "why": "Irregular."
+        }
+      ]
+    },
+    {
+      "id": "causative",
+      "title": "The causative — make, let",
+      "particle": "〜させる・〜せる",
+      "summary": "Group 2: させる. Group 1: a + せる. Make or let someone do. (about N4–N3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Group 2: 食べる → 食べ<b>させる</b>. Group 1: u → a + <b>せる</b>: 行く → 行かせる. する → させる, 来る → 来させる. The person made to act takes に or を.",
+          "examples": [
+            [
+              "母は子どもに野菜を食べ{させました}。",
+              "Haha wa kodomo ni yasai o tabesasemashita.",
+              "The mother made her child eat vegetables."
+            ],
+            [
+              "先生は学生を立た{せました}。",
+              "Sensei wa gakusei o tatasemashita.",
+              "The teacher made the student stand."
+            ]
+          ]
+        },
+        {
+          "h": "Let, and asking permission",
+          "p": "The same form means let: 子どもを遊ばせる. With てください it asks permission humbly: 〜させてください, let me.",
+          "examples": [
+            [
+              "少し考え{させてください}。",
+              "Sukoshi kangaesasete kudasai.",
+              "Please let me think about it a little."
+            ],
+            [
+              "私に払わ{せてください}。",
+              "Watashi ni harawasete kudasai.",
+              "Please let me pay."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "読む → causative",
+          "en": "",
+          "options": ["読ませる", "読まれる", "読めさせる", "読みさせる"],
+          "answer": "読ませる",
+          "why": "u → a + せる."
+        },
+        {
+          "q": "見る → causative",
+          "en": "",
+          "options": ["見らせる", "見させる", "見せる", "見かせる"],
+          "answer": "見させる",
+          "why": "Group 2: させる. (見せる is a different verb, show.)"
+        },
+        {
+          "q": "休ませてください means…",
+          "en": "",
+          "options": [
+            "Please rest.",
+            "I was made to rest.",
+            "Please let me rest.",
+            "Don't rest."
+          ],
+          "answer": "Please let me rest.",
+          "why": "させてください = let me."
+        },
+        {
+          "q": "The causative can mean…",
+          "en": "",
+          "options": ["be made to", "can", "want", "make or let"],
+          "answer": "make or let",
+          "why": "Both senses."
+        },
+        {
+          "q": "する →",
+          "en": "",
+          "options": ["させる", "しせる", "させられる", "される"],
+          "answer": "させる",
+          "why": "Irregular."
+        }
+      ]
+    },
+    {
+      "id": "keigo",
+      "title": "Honorific and humble verbs",
+      "particle": "尊敬語・謙譲語",
+      "summary": "Raise the other person's actions; lower your own. (about N4–N3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>Honorific</b> verbs (尊敬語) are for what others do: いらっしゃる (be, go, come), 召し上がる (eat), おっしゃる (say), ご覧になる (see). The pattern お + stem + になる works for many verbs.",
+          "examples": [
+            [
+              "社長は今どちらに{いらっしゃいます}か。",
+              "Shachō wa ima dochira ni irasshaimasu ka.",
+              "Where is the company president now?"
+            ],
+            [
+              "先生が{お書きになりました}。",
+              "Sensei ga o-kaki ni narimashita.",
+              "The teacher wrote it."
+            ]
+          ]
+        },
+        {
+          "h": "Humble verbs",
+          "p": "<b>Humble</b> verbs (謙譲語) lower what you do: 参る (go, come), いただく (eat, receive), 申す (say), 拝見する (see). The pattern お + stem + する also works.",
+          "examples": [
+            ["山田と{申します}。", "Yamada to mōshimasu.", "My name is Yamada."],
+            [
+              "荷物を{お持ちします}。",
+              "Nimotsu o o-mochi shimasu.",
+              "Let me carry your bags."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Honorific of 食べる",
+          "en": "",
+          "options": ["召し上がる", "いただく", "参る", "申す"],
+          "answer": "召し上がる",
+          "why": "For others: 召し上がる."
+        },
+        {
+          "q": "Humble of 言う",
+          "en": "",
+          "options": ["おっしゃる", "申す", "いらっしゃる", "ご覧になる"],
+          "answer": "申す",
+          "why": "For yourself: 申す."
+        },
+        {
+          "q": "お待ちになる is…",
+          "en": "",
+          "options": ["humble", "casual", "honorific (someone else waits)", "wrong"],
+          "answer": "honorific (someone else waits)",
+          "why": "お + stem + になる."
+        },
+        {
+          "q": "I'll carry it for you (humble)",
+          "en": "",
+          "options": ["お持ちになります", "持たれます", "持ってくださる", "お持ちします"],
+          "answer": "お持ちします",
+          "why": "お + stem + する."
+        },
+        {
+          "q": "いらっしゃる can mean…",
+          "en": "",
+          "options": ["be, go or come (honorific)", "eat", "say", "see"],
+          "answer": "be, go or come (honorific)",
+          "why": "One verb, three meanings."
+        }
+      ]
+    },
+    {
+      "id": "uchi-ni",
+      "title": "うちに — while still",
+      "particle": "うちに",
+      "summary": "Do it while the state lasts, before it changes. (about N3)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>うちに</b> means while, in the sense of “before the chance is gone”: 熱いうちに食べて, eat it while it's hot. It takes a plain form, a negative, or noun + の.",
+          "examples": [
+            [
+              "熱い{うちに}食べてください。",
+              "Atsui uchi ni tabete kudasai.",
+              "Eat it while it's hot."
+            ],
+            [
+              "若い{うちに}いろいろ経験したい。",
+              "Wakai uchi ni iroiro keiken shitai.",
+              "I want lots of experiences while I'm young."
+            ],
+            [
+              "雨が降らない{うちに}帰りましょう。",
+              "Ame ga furanai uchi ni kaerimashō.",
+              "Let's go home before it rains."
+            ]
+          ]
+        },
+        {
+          "h": "Without noticing",
+          "p": "With ている, うちに describes a change that crept in: 話しているうちに, as we talked.",
+          "examples": [
+            [
+              "聞いている{うちに}眠くなった。",
+              "Kiite iru uchi ni nemuku natta.",
+              "As I listened, I got sleepy."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "明るい＿、帰りましょう。",
+          "en": "Let's go home while it's still light.",
+          "options": ["うちに", "あとで", "までに", "ために"],
+          "answer": "うちに",
+          "why": "While the state lasts."
+        },
+        {
+          "q": "忘れない＿メモします。",
+          "en": "I'll note it down before I forget.",
+          "options": ["まえに", "うちに", "ので", "のに"],
+          "answer": "うちに",
+          "why": "ない + うちに = before."
+        },
+        {
+          "q": "学生＿うちに",
+          "en": "while (still) a student",
+          "options": ["な", "だ", "の", "で"],
+          "answer": "の",
+          "why": "Noun + のうちに."
+        },
+        {
+          "q": "読んでいるうちに眠くなった means…",
+          "en": "",
+          "options": [
+            "I read so I wouldn't sleep.",
+            "I read before sleeping.",
+            "I'll read until sleepy.",
+            "I got sleepy as I read."
+          ],
+          "answer": "I got sleepy as I read.",
+          "why": "Unnoticed change."
+        },
+        {
+          "q": "うちに implies…",
+          "en": "",
+          "options": [
+            "the chance won't last",
+            "a fixed deadline",
+            "a reason",
+            "a contrast"
+          ],
+          "answer": "the chance won't last",
+          "why": "Before it changes."
+        }
+      ]
+    },
+    {
+      "id": "mama",
+      "title": "まま — as it is",
+      "particle": "まま",
+      "summary": "た form or noun + のまま: leaving things unchanged. (about N3)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>まま</b> means in the same state, unchanged: 靴を履いたまま, with your shoes on. It often suggests something odd or unusual.",
+          "examples": [
+            [
+              "靴を履いた{まま}入らないでください。",
+              "Kutsu o haita mama hairanaide kudasai.",
+              "Please don't come in with your shoes on."
+            ],
+            [
+              "窓を開けた{まま}寝てしまった。",
+              "Mado o aketa mama nete shimatta.",
+              "I fell asleep with the window open."
+            ]
+          ]
+        },
+        {
+          "h": "Nouns and その",
+          "p": "Noun + <b>のまま</b>: 昔のまま (as it was long ago). そのまま means “as it is, leave it”.",
+          "examples": [
+            [
+              "この町は昔{のまま}です。",
+              "Kono machi wa mukashi no mama desu.",
+              "This town is just as it was long ago."
+            ],
+            ["{そのまま}でいいです。", "Sono mama de ii desu.", "It's fine as it is."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "電気をつけた＿出かけた。",
+          "en": "I went out with the light left on.",
+          "options": ["まま", "うちに", "ながら", "ために"],
+          "answer": "まま",
+          "why": "Unchanged state: まま."
+        },
+        {
+          "q": "昔＿まま",
+          "en": "as it was long ago",
+          "options": ["な", "の", "だ", "が"],
+          "answer": "の",
+          "why": "Noun + のまま."
+        },
+        {
+          "q": "そのままでいい means…",
+          "en": "",
+          "options": [
+            "Do it the same way again.",
+            "It's not okay.",
+            "It's fine as it is.",
+            "Change it."
+          ],
+          "answer": "It's fine as it is.",
+          "why": "Leave it."
+        },
+        {
+          "q": "まま usually takes…",
+          "en": "",
+          "options": [
+            "the volitional",
+            "the ます stem",
+            "the potential",
+            "the た form or noun + の"
+          ],
+          "answer": "the た form or noun + の",
+          "why": "開けたまま."
+        },
+        {
+          "q": "Which is natural?",
+          "en": "I sat there in my coat.",
+          "options": ["コートを着たまま座った。", "コートを着るまま座った。", "コートを着てまま座った。", "コートを着ままで座った。"],
+          "answer": "コートを着たまま座った。",
+          "why": "た form + まま."
+        }
+      ]
+    },
+    {
+      "id": "ni-yotte",
+      "title": "によって — by, depending on",
+      "particle": "によって・による",
+      "summary": "によって marks the creator in a passive, a cause, or what something varies with. (about N3)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>によって</b> has three main uses. In a passive about creation or discovery, it marks who: この絵はピカソによって描かれた.",
+          "examples": [
+            [
+              "この寺は千年前に僧{によって}建てられた。",
+              "Kono tera wa sennen mae ni sō ni yotte taterareta.",
+              "This temple was built by a monk a thousand years ago."
+            ],
+            [
+              "台風{による}被害",
+              "taifū ni yoru higai",
+              "damage caused by the typhoon"
+            ]
+          ]
+        },
+        {
+          "h": "Depending on",
+          "p": "It also means depending on: 人によって, it depends on the person. Before a noun: による.",
+          "examples": [
+            [
+              "人{によって}考え方が違う。",
+              "Hito ni yotte kangaekata ga chigau.",
+              "Ways of thinking differ from person to person."
+            ],
+            [
+              "場合{によっては}、中止します。",
+              "Baai ni yotte wa, chūshi shimasu.",
+              "Depending on circumstances, we may cancel."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "電話はベル＿発明された。",
+          "en": "The telephone was invented by Bell.",
+          "options": ["によって", "にとって", "について", "として"],
+          "answer": "によって",
+          "why": "Creator in a passive."
+        },
+        {
+          "q": "国＿文化が違う。",
+          "en": "Culture differs from country to country.",
+          "options": ["にとって", "によって", "として", "のに"],
+          "answer": "によって",
+          "why": "Depending on."
+        },
+        {
+          "q": "Before a noun",
+          "en": "",
+          "options": ["地震によって被害", "地震によっての被害", "地震による被害", "地震による被害の"],
+          "answer": "地震による被害",
+          "why": "による + noun."
+        },
+        {
+          "q": "場合によっては means…",
+          "en": "",
+          "options": [
+            "in every case",
+            "because of the case",
+            "for the case",
+            "depending on the situation"
+          ],
+          "answer": "depending on the situation",
+          "why": "Set phrase."
+        },
+        {
+          "q": "によって can mark…",
+          "en": "",
+          "options": [
+            "a creator, a cause, or variation",
+            "only time",
+            "only place",
+            "the listener"
+          ],
+          "answer": "a creator, a cause, or variation",
+          "why": "Several uses."
+        }
+      ]
+    },
+    {
+      "id": "ni-totte",
+      "title": "にとって — for",
+      "particle": "にとって",
+      "summary": "Noun + にとって: from that person's point of view. (about N3)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>にとって</b> means for, as seen by: 私にとって, for me. It goes with judgements like important, difficult, valuable.",
+          "examples": [
+            [
+              "私{にとって}家族がいちばん大切です。",
+              "Watashi ni totte kazoku ga ichiban taisetsu desu.",
+              "For me, family is most important."
+            ],
+            [
+              "子ども{にとって}この本は難しい。",
+              "Kodomo ni totte kono hon wa muzukashii.",
+              "This book is hard for children."
+            ]
+          ]
+        },
+        {
+          "h": "Not for actions",
+          "p": "にとって is for evaluations, not for doing something for someone. “I bought it for you” is あなたのために買った.",
+          "examples": [
+            [
+              "あなた{のために}作りました。",
+              "Anata no tame ni tsukurimashita.",
+              "I made it for you."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "学生＿、時間はお金より大切だ。",
+          "en": "For students, time is more important than money.",
+          "options": ["にとって", "について", "によって", "として"],
+          "answer": "にとって",
+          "why": "Point of view."
+        },
+        {
+          "q": "I cooked for my friend.",
+          "en": "",
+          "options": ["友だちにとって料理した。", "友だちのために料理した。", "友だちについて料理した。", "友だちとして料理した。"],
+          "answer": "友だちのために料理した。",
+          "why": "An action for someone: のために."
+        },
+        {
+          "q": "にとって goes with…",
+          "en": "",
+          "options": [
+            "actions done for someone",
+            "times",
+            "evaluations: important, hard, etc.",
+            "places"
+          ],
+          "answer": "evaluations: important, hard, etc.",
+          "why": "Judgement from a viewpoint."
+        },
+        {
+          "q": "日本人にとって means…",
+          "en": "",
+          "options": [
+            "about Japanese people",
+            "by Japanese people",
+            "as a Japanese person",
+            "for Japanese people"
+          ],
+          "answer": "for Japanese people",
+          "why": "にとって = for."
+        },
+        {
+          "q": "Which fits?",
+          "en": "This photo is precious to me.",
+          "options": [
+            "この写真は私にとって宝物です。",
+            "この写真は私によって宝物です。",
+            "この写真は私について宝物です。",
+            "この写真は私として宝物です。"
+          ],
+          "answer": "この写真は私にとって宝物です。",
+          "why": "にとって."
+        }
+      ]
+    },
+    {
+      "id": "okage-sei",
+      "title": "おかげで and せいで — thanks to, because of",
+      "particle": "おかげで・せいで",
+      "summary": "おかげで credits a good result; せいで blames a bad one. (about N3)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Both mean because of. <b>おかげで</b> is grateful: 先生のおかげで合格した. <b>せいで</b> blames: 雨のせいで試合が中止になった.",
+          "examples": [
+            [
+              "先生{のおかげで}、合格できました。",
+              "Sensei no okage de, gōkaku dekimashita.",
+              "Thanks to my teacher, I passed."
+            ],
+            [
+              "寝坊した{せいで}、遅刻した。",
+              "Nebō shita sei de, chikoku shita.",
+              "I was late because I overslept."
+            ]
+          ]
+        },
+        {
+          "h": "Set phrase",
+          "p": "おかげさまで (thanks to you) is a polite reply to “How are you?”, even if the listener did nothing.",
+          "examples": [
+            [
+              "{おかげさまで}、元気です。",
+              "Okagesama de, genki desu.",
+              "I'm well, thank you."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "薬の＿、よくなりました。",
+          "en": "Thanks to the medicine, I got better.",
+          "options": ["おかげで", "せいで", "ために", "ように"],
+          "answer": "おかげで",
+          "why": "Good result: おかげで."
+        },
+        {
+          "q": "事故の＿、電車が遅れた。",
+          "en": "Because of an accident, the train was delayed.",
+          "options": ["おかげで", "せいで", "によって", "として"],
+          "answer": "せいで",
+          "why": "Bad result: せいで."
+        },
+        {
+          "q": "おかげさまで is…",
+          "en": "",
+          "options": [
+            "an apology",
+            "a complaint",
+            "a polite “thanks to you”",
+            "a farewell"
+          ],
+          "answer": "a polite “thanks to you”",
+          "why": "Set reply."
+        },
+        {
+          "q": "せいで tone is…",
+          "en": "",
+          "options": ["grateful", "neutral and formal", "humble", "blaming"],
+          "answer": "blaming",
+          "why": "Negative cause."
+        },
+        {
+          "q": "Noun before おかげで",
+          "en": "",
+          "options": ["友だちのおかげで", "友だちおかげで", "友だちなおかげで", "友だちだおかげで"],
+          "answer": "友だちのおかげで",
+          "why": "Noun + の."
+        }
+      ]
+    },
+    {
+      "id": "wake-niwa-ikanai",
+      "title": "わけにはいかない — can't very well",
+      "particle": "わけにはいかない",
+      "summary": "You can't do it, for social or moral reasons. (about N2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Dictionary form + <b>わけにはいかない</b>: it's not that you're unable, but circumstances or duty won't allow it.",
+          "examples": [
+            [
+              "明日は試験だから、休む{わけにはいかない}。",
+              "Ashita wa shiken da kara, yasumu wake ni wa ikanai.",
+              "There's an exam tomorrow, so I can't very well take the day off."
+            ],
+            [
+              "約束したので、行かない{わけにはいかない}。",
+              "Yakusoku shita node, ikanai wake ni wa ikanai.",
+              "I promised, so I can't not go."
+            ]
+          ]
+        },
+        {
+          "h": "Negative + わけにはいかない",
+          "p": "With a ない form it means “have to”, out of obligation: 行かないわけにはいかない, I have no choice but to go.",
+          "examples": [
+            [
+              "上司に頼まれたら、断る{わけにはいかない}。",
+              "Jōshi ni tanomaretara, kotowaru wake ni wa ikanai.",
+              "If the boss asks, I can't very well say no."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "運転するから、飲む＿。",
+          "en": "I'm driving, so I can't very well drink.",
+          "options": ["わけにはいかない", "ことができない", "はずがない", "かもしれない"],
+          "answer": "わけにはいかない",
+          "why": "Social reason."
+        },
+        {
+          "q": "行かないわけにはいかない means…",
+          "en": "",
+          "options": [
+            "I can't go.",
+            "I have no choice but to go.",
+            "I don't want to go.",
+            "I might go."
+          ],
+          "answer": "I have no choice but to go.",
+          "why": "Double negative."
+        },
+        {
+          "q": "わけにはいかない implies…",
+          "en": "",
+          "options": [
+            "physical inability",
+            "lack of skill",
+            "social or moral reasons",
+            "a wish"
+          ],
+          "answer": "social or moral reasons",
+          "why": "Not ability."
+        },
+        {
+          "q": "It takes…",
+          "en": "",
+          "options": ["た form", "て form", "volitional", "dictionary or ない form"],
+          "answer": "dictionary or ない form",
+          "why": "休むわけには / 休まないわけには."
+        },
+        {
+          "q": "Which fits?",
+          "en": "I can't very well laugh at a funeral.",
+          "options": ["お葬式で笑うわけにはいかない。", "お葬式で笑ってはいけない。", "お葬式で笑うはずだ。", "お葬式で笑うつもりだ。"],
+          "answer": "お葬式で笑うわけにはいかない。",
+          "why": "わけにはいかない: you could, but the situation won't allow it. てはいけない is a rule, not a personal constraint."
+        }
+      ]
+    },
+    {
+      "id": "mono-da",
+      "title": "ものだ — used to, naturally",
+      "particle": "ものだ",
+      "summary": "ものだ states what's natural, or (with た) fond memories of the past. (about N2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Dictionary form + <b>ものだ</b> states how things naturally are, or should be: 子どもは遊ぶものだ, children are meant to play.",
+          "examples": [
+            [
+              "人は変わる{ものだ}。",
+              "Hito wa kawaru mono da.",
+              "People change; that's how it is."
+            ],
+            [
+              "目上の人には敬語を使う{ものだ}。",
+              "Meue no hito ni wa keigo o tsukau mono da.",
+              "You should use polite language with your superiors."
+            ]
+          ]
+        },
+        {
+          "h": "Used to",
+          "p": "た form + <b>ものだ</b> looks back fondly: よく遊んだものだ, we used to play a lot.",
+          "examples": [
+            [
+              "子どもの頃、よくこの川で泳いだ{ものだ}。",
+              "Kodomo no koro, yoku kono kawa de oyoida mono da.",
+              "As a child, I often used to swim in this river."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "若い頃はよく旅行した＿。",
+          "en": "I used to travel a lot when I was young.",
+          "options": ["ものだ", "ことだ", "わけだ", "はずだ"],
+          "answer": "ものだ",
+          "why": "Nostalgia: た + ものだ."
+        },
+        {
+          "q": "約束は守る＿だ。",
+          "en": "Promises should be kept.",
+          "options": ["こと", "もの", "わけ", "はず"],
+          "answer": "もの",
+          "why": "Natural duty: ものだ."
+        },
+        {
+          "q": "ものだ with the dictionary form means…",
+          "en": "",
+          "options": ["a past habit", "a plan", "what's natural or proper", "a guess"],
+          "answer": "what's natural or proper",
+          "why": "General truth."
+        },
+        {
+          "q": "時間が経つのは早いものだ means…",
+          "en": "",
+          "options": [
+            "Time will fly.",
+            "Time flew once.",
+            "Time should fly.",
+            "Time really does fly."
+          ],
+          "answer": "Time really does fly.",
+          "why": "Feeling about a truth."
+        },
+        {
+          "q": "Which is nostalgic?",
+          "en": "",
+          "options": ["よく遊んだものだ", "よく遊ぶものだ", "遊ぶはずだ", "遊ぶわけだ"],
+          "answer": "よく遊んだものだ",
+          "why": "た + ものだ."
+        }
+      ]
+    },
+    {
+      "id": "naradewa",
+      "title": "ならでは — unique to",
+      "particle": "ならでは",
+      "summary": "Noun + ならでは(の): something only that noun can offer. (about N1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>ならでは</b> after a noun praises what is unique to it: 京都ならではの景色, scenery only Kyoto has. It's used in writing and advertising.",
+          "examples": [
+            [
+              "これは日本{ならではの}文化です。",
+              "Kore wa Nihon naradewa no bunka desu.",
+              "This is a culture unique to Japan."
+            ],
+            [
+              "手作り{ならではの}温かさ",
+              "tezukuri naradewa no atatakasa",
+              "the warmth only handmade things have"
+            ]
+          ]
+        },
+        {
+          "h": "Tone",
+          "p": "It's always positive, praise. ならではだ can close a sentence: この味はこの店ならではだ.",
+          "examples": [
+            [
+              "この味は老舗{ならではだ}。",
+              "Kono aji wa shinise naradewa da.",
+              "Only a long-established shop could make this flavour."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "地元＿の料理",
+          "en": "a dish only the locals make",
+          "options": ["ならでは", "によって", "にとって", "として"],
+          "answer": "ならでは",
+          "why": "Unique to."
+        },
+        {
+          "q": "ならでは is…",
+          "en": "",
+          "options": [
+            "a criticism",
+            "praise for something unique",
+            "a condition",
+            "a comparison"
+          ],
+          "answer": "praise for something unique",
+          "why": "Always positive."
+        },
+        {
+          "q": "ならでは follows…",
+          "en": "",
+          "options": ["a verb", "an adjective", "a noun", "a particle"],
+          "answer": "a noun",
+          "why": "Noun + ならでは."
+        },
+        {
+          "q": "子どもならではの発想 means…",
+          "en": "",
+          "options": [
+            "a child's bad idea",
+            "an idea for children",
+            "a childish rule",
+            "an idea only a child would have"
+          ],
+          "answer": "an idea only a child would have",
+          "why": "Unique to children."
+        },
+        {
+          "q": "Register of ならでは",
+          "en": "",
+          "options": ["written, advertising", "slang", "baby talk", "rude"],
+          "answer": "written, advertising",
+          "why": "Formal praise."
+        }
+      ]
     }
   ],
   "plan": [
     {
-      "id": "ya",
-      "title": "や — a partial list (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "ko-so-a-do",
-      "title": "これ, それ, あれ, どれ — this, that, which (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "aru-iru",
-      "title": "あります and います — there is (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "counters",
-      "title": "Numbers and counters (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "ni-iku",
-      "title": "〜に行く — going to do (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "tai",
-      "title": "〜たい — want to (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "hoshii",
-      "title": "ほしい — want (a thing) (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "mashou",
-      "title": "〜ましょう — let's (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "masen-ka",
-      "title": "〜ませんか — won't you? (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "te-form",
-      "title": "The て form — and then (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "te-iru",
-      "title": "〜ている — doing now, and states (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "te-mo-ii",
-      "title": "〜てもいい — may (about N5–N4)",
-      "level": "beginner"
-    },
-    {
-      "id": "te-wa-ikenai",
-      "title": "〜てはいけない — must not (about N5–N4)",
-      "level": "beginner"
-    },
-    {
-      "id": "nai-de-kudasai",
-      "title": "〜ないでください — please don't (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "plain-forms",
-      "title": "Plain forms: dictionary, ない and た (about N5–N4)",
-      "level": "beginner"
-    },
-    {
-      "id": "mae-ni",
-      "title": "〜前に — before (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "ta-ato-de",
-      "title": "〜た後で — after (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "tari",
-      "title": "〜たり〜たり — things like (about N5–N4)",
-      "level": "beginner"
-    },
-    {
-      "id": "yori",
-      "title": "〜より and 〜の方が — comparing (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "ichiban",
-      "title": "いちばん — the most (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "naru",
-      "title": "〜くなる and 〜になる — become (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "mou-mada",
-      "title": "もう and まだ — already, not yet (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "ga-but",
-      "title": "が — but (about N5)",
-      "level": "beginner"
-    },
-    {
-      "id": "deshou",
-      "title": "でしょう — probably (about N5–N4)",
-      "level": "beginner"
-    },
-    {
-      "id": "ta-koto-ga-aru",
-      "title": "〜たことがある — have done (about N5–N4)",
-      "level": "beginner"
-    },
-    {
-      "id": "nakereba-naranai",
-      "title": "〜なければならない — must (about N5–N4)",
-      "level": "beginner"
-    },
-    {
-      "id": "potential",
-      "title": "The potential form — can (about N4)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "volitional",
-      "title": "The volitional form — let's, I think I'll (about N4)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "tsumori",
-      "title": "つもり — intend to (about N4)",
-      "level": "beginner-intermediate"
-    },
-    {
       "id": "koto-ga-dekiru",
       "title": "ことができる — be able to (about N4)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "ba",
-      "title": "〜ば — if (about N4)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "tara",
-      "title": "〜たら — if, when (about N4)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "to-conditional",
-      "title": "〜と — whenever (about N4)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "nara",
-      "title": "なら — if it's (about N4–N3)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "node",
-      "title": "ので — because (about N4)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "noni",
-      "title": "のに — even though (about N4–N3)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "shi",
-      "title": "〜し — and also (about N4)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "nagara",
-      "title": "〜ながら — while (about N4)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "sugiru",
-      "title": "〜すぎる — too much (about N4)",
       "level": "beginner-intermediate"
     },
     {
@@ -1330,43 +5534,13 @@
       "level": "beginner-intermediate"
     },
     {
-      "id": "te-shimau",
-      "title": "〜てしまう — end up, finish (about N4–N3)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "te-oku",
-      "title": "〜ておく — do ahead (about N4)",
-      "level": "beginner-intermediate"
-    },
-    {
       "id": "te-aru",
       "title": "〜てある — has been done (about N4)",
       "level": "beginner-intermediate"
     },
     {
-      "id": "te-miru",
-      "title": "〜てみる — try doing (about N4)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "giving-receiving",
-      "title": "あげる, くれる, もらう — giving and receiving (about N4)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "sou-looks",
-      "title": "〜そう — looks like (about N4)",
-      "level": "beginner-intermediate"
-    },
-    {
       "id": "sou-hearsay",
       "title": "〜そうだ — I hear (about N4–N3)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "you-mitai",
-      "title": "〜ようだ and みたい — seems (about N4–N3)",
       "level": "beginner-intermediate"
     },
     {
@@ -1377,11 +5551,6 @@
     {
       "id": "hazu",
       "title": "はず — should be (about N4–N3)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "kamoshirenai",
-      "title": "かもしれない — might (about N4)",
       "level": "beginner-intermediate"
     },
     {
@@ -1402,21 +5571,6 @@
     {
       "id": "tame-ni",
       "title": "ために — in order to (about N4–N3)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "passive",
-      "title": "The passive (about N4–N3)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "causative",
-      "title": "The causative — make, let (about N4–N3)",
-      "level": "beginner-intermediate"
-    },
-    {
-      "id": "keigo",
-      "title": "Honorific and humble verbs (about N4–N3)",
       "level": "beginner-intermediate"
     },
     {
@@ -1455,38 +5609,13 @@
       "level": "beginner-intermediate"
     },
     {
-      "id": "uchi-ni",
-      "title": "うちに — while still (about N3)",
-      "level": "intermediate"
-    },
-    {
-      "id": "mama",
-      "title": "まま — as it is (about N3)",
-      "level": "intermediate"
-    },
-    {
       "id": "wake",
       "title": "わけ — the reason, it means (about N3–N2)",
       "level": "intermediate"
     },
     {
-      "id": "ni-yotte",
-      "title": "によって — by, depending on (about N3)",
-      "level": "intermediate"
-    },
-    {
-      "id": "ni-totte",
-      "title": "にとって — for (about N3)",
-      "level": "intermediate"
-    },
-    {
       "id": "to-shite",
       "title": "として — as (about N3)",
-      "level": "intermediate"
-    },
-    {
-      "id": "okage-sei",
-      "title": "おかげで and せいで — thanks to, because of (about N3)",
       "level": "intermediate"
     },
     {
@@ -1535,16 +5664,6 @@
       "level": "intermediate"
     },
     {
-      "id": "wake-niwa-ikanai",
-      "title": "わけにはいかない — can't very well (about N2)",
-      "level": "advanced-intermediate"
-    },
-    {
-      "id": "mono-da",
-      "title": "ものだ — used to, naturally (about N2)",
-      "level": "advanced-intermediate"
-    },
-    {
       "id": "ni-kakawarazu",
       "title": "にかかわらず — regardless of (about N2)",
       "level": "advanced-intermediate"
@@ -1572,11 +5691,6 @@
     {
       "id": "wo-motte",
       "title": "をもって — with, as of (formal) (about N1)",
-      "level": "advanced"
-    },
-    {
-      "id": "naradewa",
-      "title": "ならでは — unique to (about N1)",
       "level": "advanced"
     },
     {
