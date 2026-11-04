@@ -14,12 +14,12 @@
     "  能, 可以, 想, 要, 过, 比, 没有, measure words, 的.",
     "- Wikipedia “Chinese grammar” / “Chinese particles” (CC BY-SA) for particle overview.",
     "- HSK Standard Course vocabulary bands 1–2 for common lemma choice only (examples original).",
-    "Lessons 1–6 unchanged; 7–12 deepen the same beginner seam (aspect, place, modals, want,",
     "experience, comparison). Pinyin marks tones; tone sandhi is written as spoken (bú shì, etc.).",
+    "72 lessons. The first 12 were the beginner seam; lessons 13–72 write out every point that was only planned before, plus 还是/或者, 有点儿/一点儿, doubled verbs, duration, 就/才 and 对/跟.",
     "HSK levels are estimates written for this project, not taken from the official grammar list (which has no reuse license). The bands follow the earliest estimated level: HSK 1 absolute-beginner or beginner, 2 beginner, 3 beginner-intermediate, 4 intermediate, 5 advanced-intermediate, 6 and 7–9 advanced. Each lesson's summary and each planned point's title ends with its estimate; a range (2–3) means it's commonly taught at either."
   ],
   "title": "Mandarin first grammar",
-  "intro": "Chinese words never change their form: there are no endings for tense, number or gender. Meaning is carried by word order and by a handful of small words. Lessons 1–6 cover 是, 很 with adjectives, 不 and 没, 吗, 的, and measure words. Lessons 7–12 add 了, 在, 会・能・可以, 想・要, 过, and 比. The HSK level after each point is an estimate, and a range like 2–3 means it often comes up at both.",
+  "intro": "Chinese words never change their form: there are no endings for tense, number or gender. Meaning is carried by word order and by a handful of small words. Every lesson has a level. Absolute beginner and beginner are 是, 很, 不 and 没, 吗, 的, measure words, 了, 在, 过, 比, question words, 也 and 都, time order, 已经, 是…的, 得 and the result complements. Beginner-intermediate adds direction and potential complements, 把, 被, duration, 就 and 才, and the common two-part links: 越…越, 一边…一边, 先…然后, 如果…就. Intermediate is 既然, 连…都, 不仅…而且, 无论…都 and the formal 对于 and 由于. Advanced-intermediate and advanced are written Chinese: 而, 将, 以…为, 所, 之, 其. The HSK level after each point is an estimate, and a range like 2–3 means it often comes up at both.",
   "lessons": [
     {
       "id": "shi",
@@ -877,278 +877,4721 @@
           "why": "In a plain 比 sentence, drop 很 before the adjective."
         }
       ]
-    }
-  ],
-  "plan": [
+    },
     {
       "id": "ne",
-      "title": "呢 — and you? and questions in progress (about HSK 1)",
-      "level": "beginner"
+      "title": "呢 — and you? and questions in progress",
+      "particle": "呢",
+      "summary": "呢 turns a word into “what about …?”, and softens a question. (about HSK 1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>呢</b> (ne) after a noun or pronoun asks “and what about …?”. After someone answers a question, 你呢? throws the same question back. You don't repeat the verb.",
+          "examples": [
+            ["我很好，你{呢}？", "Wǒ hěn hǎo, nǐ ne?", "I'm fine, and you?"],
+            [
+              "我是老师，他{呢}？",
+              "Wǒ shì lǎoshī, tā ne?",
+              "I'm a teacher. What about him?"
+            ],
+            ["我的书{呢}？", "Wǒ de shū ne?", "Where's my book?"]
+          ]
+        },
+        {
+          "h": "Softening a question",
+          "p": "At the end of a question that already has a question word, 呢 makes it sound gentler and more curious. 呢 never makes a yes/no question: that is 吗.",
+          "examples": [
+            [
+              "你在做什么{呢}？",
+              "Nǐ zài zuò shénme ne?",
+              "What are you doing (then)?"
+            ],
+            ["怎么办{呢}？", "Zěnme bàn ne?", "What should we do, then?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我喝茶，你＿？",
+          "en": "I'm having tea. And you?",
+          "options": ["呢", "吗", "的", "了"],
+          "answer": "呢",
+          "why": "你 + 呢 asks the same question back."
+        },
+        {
+          "q": "我的手机＿？",
+          "en": "Where's my phone?",
+          "options": ["吗", "呢", "吧", "很"],
+          "answer": "呢",
+          "why": "A noun + 呢 alone asks where it is."
+        },
+        {
+          "q": "Which question is wrong?",
+          "en": "",
+          "options": ["你是学生吗？", "你呢？", "你是学生呢？", "你在哪儿呢？"],
+          "answer": "你是学生呢？",
+          "why": "A yes/no question takes 吗, not 呢."
+        },
+        {
+          "q": "What does 他呢？ ask?",
+          "en": "after: 我是中国人。",
+          "options": [
+            "Is he Chinese?",
+            "Where is he from?",
+            "Who is he?",
+            "What about him?"
+          ],
+          "answer": "What about him?",
+          "why": "呢 repeats the earlier question about him."
+        },
+        {
+          "q": "你想吃什么＿？",
+          "en": "What do you want to eat, then?",
+          "options": ["呢", "吗", "了", "过"],
+          "answer": "呢",
+          "why": "With a question word, 呢 softens; 吗 would make a double question."
+        }
+      ]
     },
     {
       "id": "ba-suggestion",
-      "title": "吧 — suggestions and checking (about HSK 1)",
-      "level": "beginner"
+      "title": "吧 — suggestions and checking",
+      "particle": "吧",
+      "summary": "吧 turns a sentence into “let's …” or “… right?”. (about HSK 1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>吧</b> (ba) at the end of a sentence makes a suggestion or a soft order: “let's …”, “go ahead and …”.",
+          "examples": [
+            ["我们走{吧}。", "Wǒmen zǒu ba.", "Let's go."],
+            ["你坐{吧}。", "Nǐ zuò ba.", "Have a seat."],
+            ["喝茶{吧}。", "Hē chá ba.", "Have some tea."]
+          ]
+        },
+        {
+          "h": "Checking a guess",
+          "p": "After a statement you think is true, 吧 asks for confirmation, like “…, right?”. 吗 asks with no guess; 吧 assumes yes.",
+          "examples": [
+            [
+              "你是王老师{吧}？",
+              "Nǐ shì Wáng lǎoshī ba?",
+              "You're Teacher Wang, right?"
+            ],
+            ["他不来了{吧}？", "Tā bù lái le ba?", "He isn't coming, is he?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我们吃饭＿。",
+          "en": "Let's eat.",
+          "options": ["吧", "吗", "呢", "的"],
+          "answer": "吧",
+          "why": "A suggestion ends in 吧."
+        },
+        {
+          "q": "你是美国人＿？",
+          "en": "You're American, right?",
+          "options": ["呢", "吧", "了", "很"],
+          "answer": "吧",
+          "why": "A guess you want confirmed takes 吧."
+        },
+        {
+          "q": "你是美国人吗？ and 你是美国人吧？ differ how?",
+          "en": "",
+          "options": [
+            "They are the same",
+            "吗 is ruder",
+            "吧 already expects yes",
+            "吧 is the past"
+          ],
+          "answer": "吧 already expects yes",
+          "why": "吗 asks openly; 吧 checks a guess."
+        },
+        {
+          "q": "你坐吧 means…",
+          "en": "",
+          "options": ["Did you sit?", "Can you sit?", "You sat.", "Please sit down."],
+          "answer": "Please sit down.",
+          "why": "吧 softens an invitation."
+        },
+        {
+          "q": "Which is a suggestion?",
+          "en": "",
+          "options": ["我们去吧。", "我们去吗？", "我们去了。", "我们去过。"],
+          "answer": "我们去吧。",
+          "why": "我们 + verb + 吧 is “let's”."
+        }
+      ]
     },
     {
       "id": "question-words",
-      "title": "什么, 哪, 谁, 几, 多少 — question words (about HSK 1)",
-      "level": "beginner"
+      "title": "什么, 哪, 谁, 几, 多少 — question words",
+      "particle": "什么・谁・哪・几・多少",
+      "summary": "A question word sits where the answer goes. No word order change. (about HSK 1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "English moves “what” to the front. Chinese leaves it where the answer would be: 你喝<b>什么</b>？ is literally “you drink what?”. <b>谁</b> is who, <b>哪儿</b> is where, <b>什么</b> is what.",
+          "examples": [
+            ["你喝{什么}？", "Nǐ hē shénme?", "What are you drinking?"],
+            ["他是{谁}？", "Tā shì shéi?", "Who is he?"],
+            ["你去{哪儿}？", "Nǐ qù nǎr?", "Where are you going?"]
+          ]
+        },
+        {
+          "h": "几 and 多少 — how many",
+          "p": "<b>几</b> asks about a small number, usually under ten, and needs a measure word. <b>多少</b> asks about any number and can skip the measure word. Neither question takes 吗.",
+          "examples": [
+            [
+              "你有{几}个孩子？",
+              "Nǐ yǒu jǐ ge háizi?",
+              "How many children do you have?"
+            ],
+            ["这个{多少}钱？", "Zhège duōshao qián?", "How much is this?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "你叫＿名字？",
+          "en": "What's your name?",
+          "options": ["什么", "谁", "哪儿", "几"],
+          "answer": "什么",
+          "why": "什么 = what, before the noun it asks about."
+        },
+        {
+          "q": "她是＿？",
+          "en": "Who is she?",
+          "options": ["什么", "谁", "几", "哪"],
+          "answer": "谁",
+          "why": "谁 asks who."
+        },
+        {
+          "q": "这本书＿钱？",
+          "en": "How much is this book?",
+          "options": ["几", "什么", "多少", "谁"],
+          "answer": "多少",
+          "why": "Prices use 多少钱."
+        },
+        {
+          "q": "Which question is wrong?",
+          "en": "",
+          "options": ["你去哪儿？", "他是谁？", "你要几个？", "你去哪儿吗？"],
+          "answer": "你去哪儿吗？",
+          "why": "A question word already makes a question; no 吗."
+        },
+        {
+          "q": "你家有＿口人？",
+          "en": "How many people are in your family?",
+          "options": ["几", "什么", "谁", "哪"],
+          "answer": "几",
+          "why": "A small number with a measure word (口): 几."
+        }
+      ]
     },
     {
       "id": "zhe-na",
-      "title": "这 and 那 — this and that (about HSK 1)",
-      "level": "beginner"
+      "title": "这 and 那 — this and that",
+      "particle": "这・那・哪",
+      "summary": "这 is this, 那 is that, 哪 is which. They need a measure word before a noun. (about HSK 1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>这</b> (zhè) is this, <b>那</b> (nà) is that. Alone they work like pronouns: 这是茶, this is tea. Before a noun they need a measure word: 这个人, this person; 那本书, that book.",
+          "examples": [
+            ["{这}是我的书。", "Zhè shì wǒ de shū.", "This is my book."],
+            ["{那}个人是谁？", "Nà ge rén shì shéi?", "Who is that person?"],
+            ["我要{这}杯。", "Wǒ yào zhè bēi.", "I want this cup."]
+          ]
+        },
+        {
+          "h": "哪 — which, and places",
+          "p": "<b>哪</b> (nǎ) asks which: 哪个? Add 儿 or 里 for places: 这儿 here, 那儿 there, 哪儿 where.",
+          "examples": [
+            ["你要{哪}个？", "Nǐ yào nǎ ge?", "Which one do you want?"],
+            ["书在{那儿}。", "Shū zài nàr.", "The book is over there."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿是我妈妈。",
+          "en": "This is my mum.",
+          "options": ["这", "哪", "谁", "什么"],
+          "answer": "这",
+          "why": "这 = this."
+        },
+        {
+          "q": "我要那＿书。",
+          "en": "I want that book.",
+          "options": ["个人", "本", "的", "是"],
+          "answer": "本",
+          "why": "那 + measure word (本 for books) + noun."
+        },
+        {
+          "q": "你要＿个？",
+          "en": "Which one do you want?",
+          "options": ["那", "这", "哪", "几"],
+          "answer": "哪",
+          "why": "哪 (3rd tone) = which."
+        },
+        {
+          "q": "“Here” is…",
+          "en": "",
+          "options": ["那儿", "哪儿", "这个", "这儿"],
+          "answer": "这儿",
+          "why": "这 + 儿 = here."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": ["这书很好。", "这本书很好。", "这是书。", "那个很好。"],
+          "answer": "这书很好。",
+          "why": "Before a noun, 这 needs a measure word: 这本书."
+        }
+      ]
     },
     {
       "id": "ye-dou",
-      "title": "也 and 都 — also and all (about HSK 1)",
-      "level": "beginner"
+      "title": "也 and 都 — also and all",
+      "particle": "也・都",
+      "summary": "也 and 都 go before the verb, never before the subject. (about HSK 1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>也</b> (yě) means also, too. In English “also” can go many places; in Chinese it sits right before the verb or adjective.",
+          "examples": [
+            ["我{也}是学生。", "Wǒ yě shì xuésheng.", "I'm a student too."],
+            ["她{也}很忙。", "Tā yě hěn máng.", "She's busy too."]
+          ]
+        },
+        {
+          "h": "都 — all, both",
+          "p": "<b>都</b> (dōu) means all or both. It points back to a plural subject and also sits before the verb. With both: 也都, in that order.",
+          "examples": [
+            ["我们{都}喝咖啡。", "Wǒmen dōu hē kāfēi.", "We all drink coffee."],
+            ["他们{也都}来了。", "Tāmen yě dōu lái le.", "They all came too."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我＿喜欢猫。",
+          "en": "I like cats too.",
+          "options": ["也", "都", "很", "吗"],
+          "answer": "也",
+          "why": "也 = too, before the verb."
+        },
+        {
+          "q": "Which is right?",
+          "en": "We are all teachers.",
+          "options": ["都我们是老师。", "我们都是老师。", "我们是都老师。", "我们是老师都。"],
+          "answer": "我们都是老师。",
+          "why": "都 goes after the subject, before the verb."
+        },
+        {
+          "q": "他们＿是中国人。",
+          "en": "They're all Chinese.",
+          "options": ["也", "很", "都", "不"],
+          "answer": "都",
+          "why": "都 = all."
+        },
+        {
+          "q": "Both 也 and 都: which order?",
+          "en": "",
+          "options": ["都也", "Either order", "They can't be used together", "也都"],
+          "answer": "也都",
+          "why": "The fixed order is 也都."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": ["也我去。", "我也去。", "我们都去。", "我们也都去。"],
+          "answer": "也我去。",
+          "why": "也 can't stand before the subject."
+        }
+      ]
     },
     {
       "id": "he",
-      "title": "和 — and (between nouns) (about HSK 1)",
-      "level": "beginner"
+      "title": "和 — and (between nouns)",
+      "particle": "和",
+      "summary": "和 joins nouns, not sentences or verbs. (about HSK 1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>和</b> (hé) means “and”, but only between nouns or pronouns: 我和你, tea and coffee. To join two sentences or two actions, Chinese just puts them side by side, or uses 也 or 还.",
+          "examples": [
+            ["我{和}他是朋友。", "Wǒ hé tā shì péngyou.", "He and I are friends."],
+            ["我要茶{和}水。", "Wǒ yào chá hé shuǐ.", "I'd like tea and water."],
+            [
+              "爸爸{和}妈妈都在家。",
+              "Bàba hé māma dōu zài jiā.",
+              "Dad and Mum are both at home."
+            ]
+          ]
+        },
+        {
+          "h": "Not between verbs",
+          "p": "“I eat and drink” is not 我吃和喝. Say 我吃饭，也喝茶, or just list them: 吃饭喝茶. 跟 also means “and” in speech, and “with”.",
+          "examples": [
+            ["我{跟}他一起去。", "Wǒ gēn tā yìqǐ qù.", "I'm going with him."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "你＿我",
+          "en": "you and me",
+          "options": ["和", "也", "都", "的"],
+          "answer": "和",
+          "why": "和 joins two pronouns."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": ["我和你。", "我看书和喝茶。", "茶和咖啡。", "我看书，也喝茶。"],
+          "answer": "我看书和喝茶。",
+          "why": "和 doesn't join two verb phrases."
+        },
+        {
+          "q": "苹果＿香蕉",
+          "en": "apples and bananas",
+          "options": ["很", "是", "和", "了"],
+          "answer": "和",
+          "why": "Two nouns: 和."
+        },
+        {
+          "q": "我＿他一起去。",
+          "en": "I'm going with him.",
+          "options": ["也", "都", "吧", "跟"],
+          "answer": "跟",
+          "why": "跟 … 一起 = together with."
+        },
+        {
+          "q": "和 can join…",
+          "en": "",
+          "options": [
+            "nouns and pronouns",
+            "two full sentences",
+            "two verbs",
+            "adjectives only"
+          ],
+          "answer": "nouns and pronouns",
+          "why": "和 is for nouns."
+        }
+      ]
     },
     {
       "id": "you",
-      "title": "有 — have, and there is (about HSK 1)",
-      "level": "beginner"
+      "title": "有 — have, and there is",
+      "particle": "有・没有",
+      "summary": "有 means have, and also “there is”. Its negative is always 没有. (about HSK 1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>有</b> (yǒu) is “to have”: 我有一个哥哥. With a place first, it means “there is”: 桌子上有一本书, on the table there is a book.",
+          "examples": [
+            ["我{有}一只猫。", "Wǒ yǒu yì zhī māo.", "I have a cat."],
+            [
+              "教室里{有}二十个学生。",
+              "Jiàoshì li yǒu èrshí ge xuésheng.",
+              "There are twenty students in the classroom."
+            ]
+          ]
+        },
+        {
+          "h": "没有, not 不有",
+          "p": "The negative of 有 is always <b>没有</b> (méiyǒu), never 不有. A yes/no question is 有…吗? or 有没有…?",
+          "examples": [
+            ["我{没有}钱。", "Wǒ méiyǒu qián.", "I don't have money."],
+            ["你{有没有}时间？", "Nǐ yǒu méiyǒu shíjiān?", "Do you have time?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我＿两个妹妹。",
+          "en": "I have two younger sisters.",
+          "options": ["有", "是", "在", "很"],
+          "answer": "有",
+          "why": "有 = have."
+        },
+        {
+          "q": "我＿有车。",
+          "en": "I don't have a car.",
+          "options": ["不", "没", "别", "很"],
+          "answer": "没",
+          "why": "有 is negated with 没."
+        },
+        {
+          "q": "房间里＿一张床。",
+          "en": "There's a bed in the room.",
+          "options": ["是", "在", "有", "了"],
+          "answer": "有",
+          "why": "Place + 有 + thing = there is."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": ["我没有时间。", "你有时间吗？", "你有没有时间？", "我不有时间。"],
+          "answer": "我不有时间。",
+          "why": "Never 不有."
+        },
+        {
+          "q": "你有没有哥哥？ means…",
+          "en": "",
+          "options": [
+            "Do you have an older brother?",
+            "You don't have a brother.",
+            "Where is your brother?",
+            "Is he your brother?"
+          ],
+          "answer": "Do you have an older brother?",
+          "why": "有没有 is a yes/no question."
+        }
+      ]
+    },
+    {
+      "id": "haishi-huozhe",
+      "title": "还是 and 或者 — or",
+      "particle": "还是・或者",
+      "summary": "还是 is “or” in questions; 或者 is “or” in statements. (about HSK 1–2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "English has one “or”. Chinese has two. In a question that offers a choice, use <b>还是</b> (háishi): tea or coffee? The question needs no 吗.",
+          "examples": [
+            [
+              "你喝茶{还是}咖啡？",
+              "Nǐ hē chá háishi kāfēi?",
+              "Do you want tea or coffee?"
+            ],
+            [
+              "你今天去{还是}明天去？",
+              "Nǐ jīntiān qù háishi míngtiān qù?",
+              "Are you going today or tomorrow?"
+            ]
+          ]
+        },
+        {
+          "h": "或者 in statements",
+          "p": "In a statement, “either is fine”, use <b>或者</b> (huòzhě).",
+          "examples": [
+            [
+              "我们喝茶{或者}咖啡都可以。",
+              "Wǒmen hē chá huòzhě kāfēi dōu kěyǐ.",
+              "We can have tea or coffee, either is fine."
+            ],
+            [
+              "周六{或者}周日来吧。",
+              "Zhōuliù huòzhě zhōurì lái ba.",
+              "Come on Saturday or Sunday."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "你是老师＿学生？",
+          "en": "Are you a teacher or a student?",
+          "options": ["还是", "或者", "和", "也"],
+          "answer": "还是",
+          "why": "A choice question takes 还是."
+        },
+        {
+          "q": "我明天＿后天去。",
+          "en": "I'll go tomorrow or the day after.",
+          "options": ["还是", "或者", "和", "吗"],
+          "answer": "或者",
+          "why": "A statement takes 或者."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": ["你喝茶还是咖啡？", "喝茶或者咖啡都行。", "你喝茶还是咖啡吗？", "你去还是不去？"],
+          "answer": "你喝茶还是咖啡吗？",
+          "why": "A 还是 question doesn't add 吗."
+        },
+        {
+          "q": "你要大的还是小的？ means…",
+          "en": "",
+          "options": [
+            "You want big and small.",
+            "Is it big?",
+            "Big is also fine.",
+            "Do you want the big one or the small one?"
+          ],
+          "answer": "Do you want the big one or the small one?",
+          "why": "还是 offers a choice."
+        },
+        {
+          "q": "Which “or” for a choice question?",
+          "en": "",
+          "options": ["还是", "或者", "和", "跟"],
+          "answer": "还是",
+          "why": "还是."
+        }
+      ]
     },
     {
       "id": "time-order",
-      "title": "Time words go before the verb (about HSK 1–2)",
-      "level": "beginner"
+      "title": "Time words go before the verb",
+      "particle": "时间词",
+      "summary": "When something happens comes before the verb, usually right after the subject. (about HSK 1–2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "English says “I go to work at eight”. Chinese says “I eight o'clock go to work”: the time comes before the verb. It can also go before the subject, at the very start.",
+          "examples": [
+            ["我{八点}上班。", "Wǒ bā diǎn shàngbān.", "I start work at eight."],
+            [
+              "{明天}我们去北京。",
+              "Míngtiān wǒmen qù Běijīng.",
+              "Tomorrow we're going to Beijing."
+            ],
+            [
+              "他{每天}喝咖啡。",
+              "Tā měitiān hē kāfēi.",
+              "He drinks coffee every day."
+            ]
+          ]
+        },
+        {
+          "h": "Time, then place, then action",
+          "p": "The usual order is subject, time, place, verb: 我明天在家休息, I'm resting at home tomorrow. Big units of time come before small ones: 2024年5月3日, 星期一上午.",
+          "examples": [
+            [
+              "我{明天在家}休息。",
+              "Wǒ míngtiān zài jiā xiūxi.",
+              "I'm resting at home tomorrow."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Which is right?",
+          "en": "I eat at seven.",
+          "options": ["我七点吃饭。", "我吃饭七点。", "吃饭我七点。", "我吃七点饭。"],
+          "answer": "我七点吃饭。",
+          "why": "Time goes before the verb."
+        },
+        {
+          "q": "Which is right?",
+          "en": "She studies at school in the morning.",
+          "options": ["她在学校学习上午。", "她上午在学校学习。", "她学习上午在学校。", "上午学习她在学校。"],
+          "answer": "她上午在学校学习。",
+          "why": "Subject, time, place, verb."
+        },
+        {
+          "q": "Where can 明天 go?",
+          "en": "我们去公园。",
+          "options": [
+            "Only at the end",
+            "Only after 去",
+            "Before the verb or at the start",
+            "Anywhere"
+          ],
+          "answer": "Before the verb or at the start",
+          "why": "Time comes first or right after the subject."
+        },
+        {
+          "q": "星期一上午 means…",
+          "en": "",
+          "options": [
+            "morning on any Monday only in the past",
+            "Monday afternoon",
+            "morning and Monday",
+            "Monday morning"
+          ],
+          "answer": "Monday morning",
+          "why": "Big unit first: Monday, then morning."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": ["我上班八点。", "我八点上班。", "八点我上班。", "我每天八点上班。"],
+          "answer": "我上班八点。",
+          "why": "The time can't come after the verb."
+        }
+      ]
+    },
+    {
+      "id": "youdian-yidian",
+      "title": "有点儿 and 一点儿 — a bit",
+      "particle": "有点儿・一点儿",
+      "summary": "有点儿 goes before an adjective and sounds negative; 一点儿 goes after it. (about HSK 2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>有点儿</b> (yǒudiǎnr) before an adjective means “a bit too”, and usually complains: 有点儿贵, a bit expensive.",
+          "examples": [
+            ["今天{有点儿}冷。", "Jīntiān yǒudiǎnr lěng.", "It's a bit cold today."],
+            ["我{有点儿}累。", "Wǒ yǒudiǎnr lèi.", "I'm a bit tired."]
+          ]
+        },
+        {
+          "h": "一点儿 after",
+          "p": "<b>一点儿</b> (yìdiǎnr) after an adjective compares: “a bit more”. After a verb it means “a little of something”.",
+          "examples": [
+            ["便宜{一点儿}吧！", "Piányi yìdiǎnr ba!", "Make it a bit cheaper!"],
+            [
+              "我会说{一点儿}中文。",
+              "Wǒ huì shuō yìdiǎnr Zhōngwén.",
+              "I can speak a little Chinese."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "这件衣服＿贵。",
+          "en": "This piece of clothing is a bit expensive.",
+          "options": ["有点儿", "一点儿", "很多", "多少"],
+          "answer": "有点儿",
+          "why": "Complaining, before the adjective: 有点儿."
+        },
+        {
+          "q": "请说慢＿。",
+          "en": "Please speak a bit more slowly.",
+          "options": ["有点儿", "一点儿", "很", "都"],
+          "answer": "一点儿",
+          "why": "After an adjective, “a bit more”: 一点儿."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": ["有点儿便宜一点儿", "有点儿冷", "便宜一点儿", "吃一点儿"],
+          "answer": "有点儿便宜一点儿",
+          "why": "Use one or the other: 有点儿 before the adjective, or 一点儿 after it."
+        },
+        {
+          "q": "我会说一点儿日语 means…",
+          "en": "",
+          "options": [
+            "Japanese is a bit hard.",
+            "I speak Japanese a lot.",
+            "I can't speak Japanese.",
+            "I speak a little Japanese."
+          ],
+          "answer": "I speak a little Japanese.",
+          "why": "Verb + 一点儿 + noun = a little."
+        },
+        {
+          "q": "有点儿 usually sounds…",
+          "en": "",
+          "options": [
+            "negative, “a bit too”",
+            "very positive",
+            "neutral and formal",
+            "like a question"
+          ],
+          "answer": "negative, “a bit too”",
+          "why": "有点儿贵, 有点儿累."
+        }
+      ]
+    },
+    {
+      "id": "verb-redup",
+      "title": "看看, 试试 — doubling a verb",
+      "particle": "看看・试一试",
+      "summary": "Doubling a verb softens it: “have a look”, “give it a try”. (about HSK 2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Say a verb twice and it becomes casual and short: 看看, take a look; 想想, think it over. One-syllable verbs can also add 一 in the middle: 看一看.",
+          "examples": [
+            ["我{看看}。", "Wǒ kànkan.", "Let me have a look."],
+            ["你{试一试}。", "Nǐ shì yi shì.", "Give it a try."],
+            [
+              "我们{休息休息}吧。",
+              "Wǒmen xiūxi xiūxi ba.",
+              "Let's take a little rest."
+            ]
+          ]
+        },
+        {
+          "h": "The same as 一下",
+          "p": "Doubling and <b>一下</b> do the same job: 看看 = 看一下. Two-syllable verbs double as ABAB: 介绍介绍, not 介介绍绍.",
+          "examples": [
+            [
+              "我{介绍一下}，这是小王。",
+              "Wǒ jièshào yíxià, zhè shì Xiǎo Wáng.",
+              "Let me introduce: this is Xiao Wang."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "你＿这本书。",
+          "en": "Have a look at this book.",
+          "options": ["看看", "看看看", "看了看看", "看是"],
+          "answer": "看看",
+          "why": "Double the verb to soften it."
+        },
+        {
+          "q": "Which is right?",
+          "en": "Let's discuss it a bit.",
+          "options": ["讨讨论论", "讨论讨论", "讨论论", "讨讨论"],
+          "answer": "讨论讨论",
+          "why": "A two-syllable verb doubles as ABAB."
+        },
+        {
+          "q": "试一试 means the same as…",
+          "en": "",
+          "options": ["试了", "试过", "试试", "不试"],
+          "answer": "试试",
+          "why": "试一试 = 试试 = 试一下."
+        },
+        {
+          "q": "我想想 means…",
+          "en": "",
+          "options": [
+            "I think a lot.",
+            "I want to think.",
+            "I thought.",
+            "Let me think about it."
+          ],
+          "answer": "Let me think about it.",
+          "why": "Doubling softens: a quick think."
+        },
+        {
+          "q": "Which is like 看看?",
+          "en": "",
+          "options": ["看一下", "看过", "看着", "看得"],
+          "answer": "看一下",
+          "why": "Both mean “take a quick look”."
+        }
+      ]
     },
     {
       "id": "yijing",
-      "title": "已经…了 — already (about HSK 2)",
-      "level": "beginner"
+      "title": "已经…了 — already",
+      "particle": "已经…了",
+      "summary": "已经 before the verb, 了 at the end: it's already happened. (about HSK 2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>已经</b> (yǐjīng) means already. It goes before the verb, and the sentence nearly always ends in <b>了</b>.",
+          "examples": [
+            ["他{已经}走{了}。", "Tā yǐjīng zǒu le.", "He's already left."],
+            ["我{已经}吃饭{了}。", "Wǒ yǐjīng chī fàn le.", "I've already eaten."],
+            ["{已经}十点{了}！", "Yǐjīng shí diǎn le!", "It's already ten o'clock!"]
+          ]
+        },
+        {
+          "h": "Not yet: 还没",
+          "p": "The opposite is <b>还没</b> (hái méi) … (呢): not yet. No 了 with 还没.",
+          "examples": [
+            ["我{还没}吃饭呢。", "Wǒ hái méi chī fàn ne.", "I haven't eaten yet."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "电影＿开始了。",
+          "en": "The film has already started.",
+          "options": ["已经", "还", "没", "不"],
+          "answer": "已经",
+          "why": "已经 + verb + 了."
+        },
+        {
+          "q": "他已经到＿。",
+          "en": "He's already arrived.",
+          "options": ["吗", "了", "的", "呢"],
+          "answer": "了",
+          "why": "已经 pairs with 了 at the end."
+        },
+        {
+          "q": "I haven't finished yet.",
+          "en": "",
+          "options": ["我已经没做完了。", "我不做完了。", "我还没做完。", "我还没做完了。"],
+          "answer": "我还没做完。",
+          "why": "Not yet: 还没, and no 了."
+        },
+        {
+          "q": "已经 goes…",
+          "en": "",
+          "options": [
+            "after the verb",
+            "at the very end",
+            "before the subject only",
+            "before the verb"
+          ],
+          "answer": "before the verb",
+          "why": "已经 is an adverb before the verb."
+        },
+        {
+          "q": "已经十二点了 means…",
+          "en": "",
+          "options": [
+            "It's already twelve o'clock.",
+            "It will be twelve.",
+            "It's not twelve yet.",
+            "It was twelve."
+          ],
+          "answer": "It's already twelve o'clock.",
+          "why": "已经…了 = already."
+        }
+      ]
     },
     {
       "id": "zhengzai-ne",
-      "title": "正在…呢 — in the middle of (about HSK 2)",
-      "level": "beginner"
+      "title": "正在…呢 — in the middle of",
+      "particle": "正在・呢",
+      "summary": "正在 + verb (+ 呢) is “right now, in the middle of doing”. (about HSK 2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "在 before a verb already means “doing”. <b>正在</b> (zhèngzài) stresses “right at this moment”, and the sentence often ends in <b>呢</b>.",
+          "examples": [
+            [
+              "我{正在}做饭{呢}。",
+              "Wǒ zhèngzài zuò fàn ne.",
+              "I'm cooking right now."
+            ],
+            ["他们{正在}开会。", "Tāmen zhèngzài kāihuì.", "They're in a meeting."],
+            ["外边{正在}下雨。", "Wàibian zhèngzài xià yǔ.", "It's raining outside."]
+          ]
+        },
+        {
+          "h": "Past moments too",
+          "p": "正在 doesn't mean present tense: it means “in progress at that moment”, which can be in the past. The negative is 没在: 我没在看电视.",
+          "examples": [
+            [
+              "你来的时候，我{正在}洗澡。",
+              "Nǐ lái de shíhou, wǒ zhèngzài xǐzǎo.",
+              "When you came, I was in the shower."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "别打电话，他＿睡觉呢。",
+          "en": "Don't call, he's sleeping.",
+          "options": ["正在", "已经", "过", "了"],
+          "answer": "正在",
+          "why": "In progress: 正在."
+        },
+        {
+          "q": "我正在看书＿。",
+          "en": "I'm reading.",
+          "options": ["吗", "呢", "吧", "过"],
+          "answer": "呢",
+          "why": "呢 often closes a 正在 sentence."
+        },
+        {
+          "q": "Can 正在 describe the past?",
+          "en": "",
+          "options": [
+            "No, only now",
+            "Only with 了",
+            "Yes, an action in progress then",
+            "Only in writing"
+          ],
+          "answer": "Yes, an action in progress then",
+          "why": "那时我正在吃饭 = I was eating then."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": ["我正在吃饭。", "我在吃饭呢。", "我正吃饭呢。", "我正在吃了饭。"],
+          "answer": "我正在吃了饭。",
+          "why": "正在 doesn't take 了."
+        },
+        {
+          "q": "I wasn't watching TV.",
+          "en": "",
+          "options": ["我没在看电视。", "我不正在看电视。", "我正在不看电视。", "我没正在看电视了。"],
+          "answer": "我没在看电视。",
+          "why": "Negative: 没在."
+        }
+      ]
     },
     {
       "id": "yinwei-suoyi",
-      "title": "因为…所以 — because, so (about HSK 2)",
-      "level": "beginner"
+      "title": "因为…所以 — because, so",
+      "particle": "因为・所以",
+      "summary": "Reason first with 因为, result second with 所以. (about HSK 2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>因为</b> (yīnwèi) is because, <b>所以</b> (suǒyǐ) is so. Chinese likes reason first, result second, and can use both words together, which English can't.",
+          "examples": [
+            [
+              "{因为}下雨，{所以}我不去了。",
+              "Yīnwèi xià yǔ, suǒyǐ wǒ bú qù le.",
+              "Because it's raining, I'm not going."
+            ],
+            [
+              "{因为}他病了，{所以}没来上课。",
+              "Yīnwèi tā bìng le, suǒyǐ méi lái shàngkè.",
+              "He was ill, so he didn't come to class."
+            ]
+          ]
+        },
+        {
+          "h": "One word is enough",
+          "p": "Either word can be dropped. In answers to 为什么 (why), 因为 alone is normal.",
+          "examples": [
+            [
+              "为什么不吃？—{因为}太辣了。",
+              "Wèishénme bù chī? — Yīnwèi tài là le.",
+              "Why aren't you eating? — Because it's too spicy."
+            ],
+            [
+              "我很累，{所以}想早点睡。",
+              "Wǒ hěn lèi, suǒyǐ xiǎng zǎo diǎn shuì.",
+              "I'm tired, so I want to sleep early."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿我很忙，所以不能去。",
+          "en": "Because I'm busy, I can't go.",
+          "options": ["因为", "虽然", "如果", "但是"],
+          "answer": "因为",
+          "why": "因为 pairs with 所以."
+        },
+        {
+          "q": "他没吃早饭，＿很饿。",
+          "en": "He didn't have breakfast, so he's hungry.",
+          "options": ["因为", "所以", "但是", "还是"],
+          "answer": "所以",
+          "why": "所以 introduces the result."
+        },
+        {
+          "q": "Can 因为 and 所以 appear in one sentence?",
+          "en": "",
+          "options": [
+            "No, never",
+            "Only in writing",
+            "Yes, it's normal",
+            "Only in questions"
+          ],
+          "answer": "Yes, it's normal",
+          "why": "Unlike English, both together is fine."
+        },
+        {
+          "q": "为什么？ is best answered with…",
+          "en": "",
+          "options": ["所以…", "但是…", "如果…", "因为…"],
+          "answer": "因为…",
+          "why": "“Why?” — “Because …”."
+        },
+        {
+          "q": "Usual order?",
+          "en": "",
+          "options": [
+            "reason, then result",
+            "result, then reason",
+            "either, but 所以 first",
+            "no order"
+          ],
+          "answer": "reason, then result",
+          "why": "Chinese prefers cause first."
+        }
+      ]
     },
     {
       "id": "suiran-danshi",
-      "title": "虽然…但是 — although (about HSK 2–3)",
-      "level": "beginner"
+      "title": "虽然…但是 — although",
+      "particle": "虽然・但是・可是",
+      "summary": "虽然 opens the concession, 但是 or 可是 turns it. (about HSK 2–3)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>虽然</b> (suīrán) is although; the second half starts with <b>但是</b> (dànshì) or 可是. English drops “but” after “although”; Chinese keeps both.",
+          "examples": [
+            [
+              "{虽然}很贵，{但是}很好吃。",
+              "Suīrán hěn guì, dànshì hěn hǎochī.",
+              "Although it's expensive, it's tasty."
+            ],
+            [
+              "他{虽然}年轻，{可是}很有经验。",
+              "Tā suīrán niánqīng, kěshì hěn yǒu jīngyàn.",
+              "Though he's young, he has a lot of experience."
+            ]
+          ]
+        },
+        {
+          "h": "Where 虽然 goes",
+          "p": "虽然 can go before or after the subject. 但是 always starts the second clause, and 还是 or 也 often follows: 但是我还是去了.",
+          "examples": [
+            [
+              "{虽然}下雨，{但是}我{还是}去了。",
+              "Suīrán xià yǔ, dànshì wǒ háishi qù le.",
+              "Though it rained, I still went."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿很累，但是很高兴。",
+          "en": "Although tired, (I'm) happy.",
+          "options": ["虽然", "因为", "如果", "所以"],
+          "answer": "虽然",
+          "why": "虽然 pairs with 但是."
+        },
+        {
+          "q": "虽然中文很难，＿我很喜欢。",
+          "en": "Although Chinese is hard, I like it.",
+          "options": ["所以", "但是", "因为", "和"],
+          "answer": "但是",
+          "why": "The turn: 但是."
+        },
+        {
+          "q": "Does Chinese keep “but” after “although”?",
+          "en": "",
+          "options": ["No, drop 但是", "Only in speech", "Yes, 虽然…但是", "Only with 因为"],
+          "answer": "Yes, 虽然…但是",
+          "why": "Both halves are marked."
+        },
+        {
+          "q": "可是 can replace…",
+          "en": "",
+          "options": ["虽然", "因为", "如果", "但是"],
+          "answer": "但是",
+          "why": "可是 is a spoken “but”."
+        },
+        {
+          "q": "虽然他很忙，但是他还是来了 means…",
+          "en": "",
+          "options": [
+            "Although busy, he still came.",
+            "Because he's busy, he came.",
+            "If busy, he comes.",
+            "He's busy, so he didn't come."
+          ],
+          "answer": "Although busy, he still came.",
+          "why": "还是 = still."
+        }
+      ]
     },
     {
       "id": "cong-dao",
-      "title": "从…到 — from … to (about HSK 2)",
-      "level": "beginner"
+      "title": "从…到 — from … to",
+      "particle": "从・到",
+      "summary": "从 marks the starting point, 到 the end, in time or space. (about HSK 2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>从</b> (cóng) is from, <b>到</b> (dào) is to. Together they frame a stretch of time or a route. The whole phrase goes before the verb.",
+          "examples": [
+            [
+              "我{从}九点{到}五点上班。",
+              "Wǒ cóng jiǔ diǎn dào wǔ diǎn shàngbān.",
+              "I work from nine to five."
+            ],
+            [
+              "{从}北京{到}上海要五个小时。",
+              "Cóng Běijīng dào Shànghǎi yào wǔ ge xiǎoshí.",
+              "Beijing to Shanghai takes five hours."
+            ]
+          ]
+        },
+        {
+          "h": "从 alone",
+          "p": "从 alone means “from” with a place verb: 他从日本来. Often 来 or 去 closes the phrase.",
+          "examples": [
+            ["他{从}日本来。", "Tā cóng Rìběn lái.", "He comes from Japan."],
+            ["你{从}哪儿来？", "Nǐ cóng nǎr lái?", "Where are you coming from?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿星期一到星期五",
+          "en": "from Monday to Friday",
+          "options": ["从", "到", "在", "离"],
+          "answer": "从",
+          "why": "Starting point: 从."
+        },
+        {
+          "q": "从这儿＿机场远吗？",
+          "en": "Is it far from here to the airport?",
+          "options": ["从", "到", "在", "去"],
+          "answer": "到",
+          "why": "End point: 到."
+        },
+        {
+          "q": "Which is right?",
+          "en": "I work from 9 to 5.",
+          "options": ["我工作从九点到五点。", "从九点我工作到五点。", "我从九点到五点工作。", "我九点从到五点工作。"],
+          "answer": "我从九点到五点工作。",
+          "why": "The 从…到 phrase goes before the verb."
+        },
+        {
+          "q": "我从美国来 means…",
+          "en": "",
+          "options": [
+            "I'm going to America.",
+            "I'm in America.",
+            "America is far.",
+            "I come from America."
+          ],
+          "answer": "I come from America.",
+          "why": "从 + place + 来."
+        },
+        {
+          "q": "从…到 can describe…",
+          "en": "",
+          "options": ["both time and place", "only time", "only place", "only people"],
+          "answer": "both time and place",
+          "why": "从九点到五点 / 从北京到上海."
+        }
+      ]
     },
     {
       "id": "de-complement",
-      "title": "得 — how well something is done (about HSK 2)",
-      "level": "beginner"
+      "title": "得 — how well something is done",
+      "particle": "得",
+      "summary": "Verb + 得 + description says how an action goes. (about HSK 2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "To say how well or how fast someone does something, put <b>得</b> (de) after the verb, then the description: 他跑得很快, he runs fast.",
+          "examples": [
+            ["他跑{得}很快。", "Tā pǎo de hěn kuài.", "He runs fast."],
+            ["你说{得}很好。", "Nǐ shuō de hěn hǎo.", "You speak very well."],
+            ["她来{得}很早。", "Tā lái de hěn zǎo.", "She came early."]
+          ]
+        },
+        {
+          "h": "With an object",
+          "p": "If the verb has an object, say the verb twice, or put the object first: 他说中文说得很好, or 他中文说得很好. The negative goes after 得: 说得不好.",
+          "examples": [
+            [
+              "他（说）中文说{得}很好。",
+              "Tā (shuō) Zhōngwén shuō de hěn hǎo.",
+              "He speaks Chinese well."
+            ],
+            ["我睡{得}不好。", "Wǒ shuì de bù hǎo.", "I didn't sleep well."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "她唱＿很好听。",
+          "en": "She sings beautifully.",
+          "options": ["得", "的", "地", "了"],
+          "answer": "得",
+          "why": "Verb + 得 + description."
+        },
+        {
+          "q": "Which is right?",
+          "en": "He writes characters well.",
+          "options": ["他写得汉字很好。", "他汉字写得很好。", "他写汉字得很好。", "他得写汉字很好。"],
+          "answer": "他汉字写得很好。",
+          "why": "Object first (or repeat the verb), then verb + 得."
+        },
+        {
+          "q": "I didn't sleep well.",
+          "en": "",
+          "options": ["我不睡得好。", "我睡不得好。", "我睡得不好。", "我没睡得好。"],
+          "answer": "我睡得不好。",
+          "why": "不 goes after 得."
+        },
+        {
+          "q": "你来得太晚了 means…",
+          "en": "",
+          "options": [
+            "You will come late.",
+            "You can't come late.",
+            "You are late every day.",
+            "You came too late."
+          ],
+          "answer": "You came too late.",
+          "why": "来 + 得 + 太晚."
+        },
+        {
+          "q": "Which 得 sentence is wrong?",
+          "en": "",
+          "options": ["他说得中文很好。", "他说中文说得很好。", "他中文说得很好。", "他说得很好。"],
+          "answer": "他说得中文很好。",
+          "why": "The object can't follow 得."
+        }
+      ]
     },
     {
       "id": "shi-de",
-      "title": "是…的 — when, where, how it happened (about HSK 2–3)",
-      "level": "beginner"
+      "title": "是…的 — when, where, how it happened",
+      "particle": "是…的",
+      "summary": "是…的 focuses on the when, where or how of something already done. (about HSK 2–3)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Once everyone knows something happened, <b>是…的</b> asks or tells the detail: when, where, how, with whom. 是 goes before the detail, 的 at the end. 是 is often dropped.",
+          "examples": [
+            [
+              "你{是}什么时候来{的}？",
+              "Nǐ shì shénme shíhou lái de?",
+              "When did you come?"
+            ],
+            ["我{是}坐飞机来{的}。", "Wǒ shì zuò fēijī lái de.", "I came by plane."],
+            [
+              "他（{是}）在北京出生{的}。",
+              "Tā (shì) zài Běijīng chūshēng de.",
+              "He was born in Beijing."
+            ]
+          ]
+        },
+        {
+          "h": "Not with 了",
+          "p": "是…的 is about past events but doesn't use 了. The negative is 不是…的: 我不是一个人来的, I didn't come alone.",
+          "examples": [
+            [
+              "我{不是}一个人来{的}。",
+              "Wǒ bú shì yí ge rén lái de.",
+              "I didn't come alone."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "你是怎么来＿？",
+          "en": "How did you get here?",
+          "options": ["的", "了", "吗", "过"],
+          "answer": "的",
+          "why": "是…的 closes with 的."
+        },
+        {
+          "q": "我＿昨天到的。",
+          "en": "I arrived yesterday.",
+          "options": ["在", "是", "有", "了"],
+          "answer": "是",
+          "why": "是 before the time detail."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": ["我是坐火车来的。", "我坐火车来的。", "我是坐火车来了的。", "你是在哪儿买的？"],
+          "answer": "我是坐火车来了的。",
+          "why": "No 了 in 是…的."
+        },
+        {
+          "q": "是…的 focuses on…",
+          "en": "",
+          "options": [
+            "the future",
+            "a habit",
+            "a yes/no fact",
+            "the detail of a past event"
+          ],
+          "answer": "the detail of a past event",
+          "why": "When, where, how, with whom."
+        },
+        {
+          "q": "I didn't buy it here.",
+          "en": "",
+          "options": ["我不是在这儿买的。", "我是不在这儿买的。", "我没是在这儿买的。", "我不在这儿买了的。"],
+          "answer": "我不是在这儿买的。",
+          "why": "Negative: 不是…的."
+        }
+      ]
     },
     {
       "id": "yao-le",
-      "title": "要…了 — about to (about HSK 2)",
-      "level": "beginner"
+      "title": "要…了 — about to",
+      "particle": "要…了・快要…了",
+      "summary": "要 + verb + 了 means something is about to happen. (about HSK 2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>要…了</b> (yào…le) frames something about to happen. 快要…了 and 快…了 mean the same, “very soon”.",
+          "examples": [
+            [
+              "火车{要}开{了}。",
+              "Huǒchē yào kāi le.",
+              "The train is about to leave."
+            ],
+            ["{快要}下雨{了}。", "Kuài yào xià yǔ le.", "It's about to rain."],
+            ["我{快}三十岁{了}。", "Wǒ kuài sānshí suì le.", "I'm nearly thirty."]
+          ]
+        },
+        {
+          "h": "就要…了 with a time",
+          "p": "With an exact time, use <b>就要…了</b>, not 快要: 他明天就要走了.",
+          "examples": [
+            [
+              "他明天{就要}走{了}。",
+              "Tā míngtiān jiù yào zǒu le.",
+              "He's leaving tomorrow."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "电影快＿开始了。",
+          "en": "The film is about to start.",
+          "options": ["要", "已", "在", "过"],
+          "answer": "要",
+          "why": "快要…了."
+        },
+        {
+          "q": "飞机要起飞＿。",
+          "en": "The plane is about to take off.",
+          "options": ["的", "了", "吗", "过"],
+          "answer": "了",
+          "why": "要…了 ends in 了."
+        },
+        {
+          "q": "With 明天, which is right?",
+          "en": "He's leaving tomorrow.",
+          "options": ["他明天快要走了。", "他快要明天走了。", "他明天就要走了。", "他要明天走快了。"],
+          "answer": "他明天就要走了。",
+          "why": "With a time word use 就要, not 快要."
+        },
+        {
+          "q": "快要下雨了 means…",
+          "en": "",
+          "options": [
+            "It rained.",
+            "It's raining hard.",
+            "It won't rain.",
+            "It's about to rain."
+          ],
+          "answer": "It's about to rain.",
+          "why": "About to happen."
+        },
+        {
+          "q": "我快二十岁了 means…",
+          "en": "",
+          "options": [
+            "I'm nearly twenty.",
+            "I'm over twenty.",
+            "I was twenty.",
+            "I want to be twenty."
+          ],
+          "answer": "I'm nearly twenty.",
+          "why": "快…了 = nearly."
+        }
+      ]
     },
     {
       "id": "bie",
-      "title": "别 — don't (about HSK 2)",
-      "level": "beginner"
+      "title": "别 — don't",
+      "particle": "别・不要",
+      "summary": "别 or 不要 before a verb tells someone not to do something. (about HSK 2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>别</b> (bié) and <b>不要</b> (bú yào) make a negative command: don't. 别 is shorter and very common in speech.",
+          "examples": [
+            ["{别}说话！", "Bié shuō huà!", "Don't talk!"],
+            ["{不要}担心。", "Bú yào dānxīn.", "Don't worry."],
+            ["你{别}走。", "Nǐ bié zǒu.", "Don't go."]
+          ]
+        },
+        {
+          "h": "别…了 — stop doing",
+          "p": "With 了 at the end, it means “stop doing it”: 别哭了, stop crying. 请 at the front softens it: 请别抽烟.",
+          "examples": [
+            ["{别}哭{了}。", "Bié kū le.", "Stop crying."],
+            ["请{别}抽烟。", "Qǐng bié chōuyān.", "Please don't smoke."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿着急！",
+          "en": "Don't be anxious!",
+          "options": ["别", "没", "不是", "很"],
+          "answer": "别",
+          "why": "别 = don't."
+        },
+        {
+          "q": "别看手机＿！",
+          "en": "Stop looking at your phone!",
+          "options": ["吗", "了", "的", "过"],
+          "answer": "了",
+          "why": "别…了 = stop."
+        },
+        {
+          "q": "Which also means “don't”?",
+          "en": "",
+          "options": ["没有", "不是", "不要", "不会"],
+          "answer": "不要",
+          "why": "不要 + verb = don't."
+        },
+        {
+          "q": "请别迟到 means…",
+          "en": "",
+          "options": [
+            "Please be late.",
+            "He wasn't late.",
+            "Don't be early.",
+            "Please don't be late."
+          ],
+          "answer": "Please don't be late.",
+          "why": "请 softens 别."
+        },
+        {
+          "q": "Which is a negative command?",
+          "en": "",
+          "options": ["别走。", "不走。", "没走。", "不是走。"],
+          "answer": "别走。",
+          "why": "不走 is “not going”; 别走 is “don't go”."
+        }
+      ]
     },
     {
       "id": "gei",
-      "title": "给 — for, to (about HSK 2)",
-      "level": "beginner"
+      "title": "给 — for, to",
+      "particle": "给",
+      "summary": "给 is “give”, and before a verb it marks who the action is for. (about HSK 2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "As a verb, <b>给</b> (gěi) means give: 给我一杯水. Before another verb, 给 + person means “to” or “for” that person: 给妈妈打电话, phone Mum.",
+          "examples": [
+            [
+              "请{给}我一杯水。",
+              "Qǐng gěi wǒ yì bēi shuǐ.",
+              "Please give me a glass of water."
+            ],
+            ["我{给}妈妈打电话。", "Wǒ gěi māma dǎ diànhuà.", "I'm phoning Mum."],
+            [
+              "他{给}我买了一本书。",
+              "Tā gěi wǒ mǎi le yì běn shū.",
+              "He bought a book for me."
+            ]
+          ]
+        },
+        {
+          "h": "Order",
+          "p": "给 + person comes before the main verb. Some verbs put 给 after them: 送给, 交给, 还给 (give as a gift, hand to, return to).",
+          "examples": [
+            [
+              "这本书送{给}你。",
+              "Zhè běn shū sòng gěi nǐ.",
+              "This book is a gift for you."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我＿你写信。",
+          "en": "I'll write you a letter.",
+          "options": ["给", "和", "从", "到"],
+          "answer": "给",
+          "why": "给 + person before the verb."
+        },
+        {
+          "q": "＿我看看。",
+          "en": "Let me see. (Show me.)",
+          "options": ["被", "给", "从", "在"],
+          "answer": "给",
+          "why": "给我看看 = show me."
+        },
+        {
+          "q": "Which is right?",
+          "en": "I'll phone you.",
+          "options": ["我打电话给你吗。", "给我你打电话。", "我给你打电话。", "我打给电话你。"],
+          "answer": "我给你打电话。",
+          "why": "给你 goes before 打电话."
+        },
+        {
+          "q": "送给 means…",
+          "en": "",
+          "options": ["send from", "receive", "ask for", "give (as a gift) to"],
+          "answer": "give (as a gift) to",
+          "why": "Verb + 给."
+        },
+        {
+          "q": "把钥匙还＿他。",
+          "en": "Return the keys to him.",
+          "options": ["给", "到", "在", "从"],
+          "answer": "给",
+          "why": "还给 = give back to."
+        }
+      ]
     },
     {
       "id": "li",
-      "title": "离 — distance from (about HSK 2)",
-      "level": "beginner"
+      "title": "离 — distance from",
+      "particle": "离",
+      "summary": "A 离 B + 远/近 says how far A is from B. (about HSK 2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>离</b> (lí) measures distance between two points: A 离 B 很远, A is far from B. It's not “from” in the sense of starting a journey; that's 从.",
+          "examples": [
+            [
+              "我家{离}学校很近。",
+              "Wǒ jiā lí xuéxiào hěn jìn.",
+              "My home is close to school."
+            ],
+            [
+              "机场{离}这儿远吗？",
+              "Jīchǎng lí zhèr yuǎn ma?",
+              "Is the airport far from here?"
+            ]
+          ]
+        },
+        {
+          "h": "Time too",
+          "p": "离 also counts time until an event: 离春节还有三天, three days until Spring Festival.",
+          "examples": [
+            [
+              "{离}考试还有一个星期。",
+              "Lí kǎoshì hái yǒu yí ge xīngqī.",
+              "There's a week to go until the exam."
+            ],
+            [
+              "这儿{离}地铁站不远。",
+              "Zhèr lí dìtiě zhàn bù yuǎn.",
+              "It's not far from here to the metro station."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "公司＿我家很远。",
+          "en": "The office is far from my home.",
+          "options": ["离", "从", "到", "给"],
+          "answer": "离",
+          "why": "Distance: 离."
+        },
+        {
+          "q": "我＿日本来。",
+          "en": "I come from Japan.",
+          "options": ["离", "从", "到", "在"],
+          "answer": "从",
+          "why": "Starting point of a journey: 从."
+        },
+        {
+          "q": "离 tells you…",
+          "en": "",
+          "options": [
+            "where a journey starts",
+            "who it's for",
+            "how far apart two places or times are",
+            "when it happened"
+          ],
+          "answer": "how far apart two places or times are",
+          "why": "离 measures distance."
+        },
+        {
+          "q": "离新年还有十天 means…",
+          "en": "",
+          "options": [
+            "New Year was ten days ago.",
+            "Ten days from New Year to now.",
+            "New Year lasts ten days.",
+            "Ten days until New Year."
+          ],
+          "answer": "Ten days until New Year.",
+          "why": "离 + event + 还有 + time."
+        },
+        {
+          "q": "Which is right?",
+          "en": "The shop is near the station.",
+          "options": ["商店离车站很近。", "商店从车站很近。", "商店到车站很近。", "商店近离车站。"],
+          "answer": "商店离车站很近。",
+          "why": "A 离 B 很近."
+        }
+      ]
     },
     {
       "id": "result-complement",
-      "title": "Result complements: 完, 到, 好, 懂 (about HSK 2–3)",
-      "level": "beginner"
+      "title": "Result complements: 完, 到, 好, 懂",
+      "particle": "完・到・好・懂",
+      "summary": "A second verb after the first says how the action ended. (about HSK 2–3)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Chinese often adds a result right after the verb. <b>完</b> (wán) finished, <b>到</b> (dào) reached or got, <b>好</b> (hǎo) done properly, <b>懂</b> (dǒng) understood.",
+          "examples": [
+            [
+              "我看{完}了这本书。",
+              "Wǒ kàn wán le zhè běn shū.",
+              "I've finished reading this book."
+            ],
+            [
+              "你找{到}钥匙了吗？",
+              "Nǐ zhǎo dào yàoshi le ma?",
+              "Did you find the keys?"
+            ],
+            ["我听{懂}了。", "Wǒ tīng dǒng le.", "I understood (what I heard)."]
+          ]
+        },
+        {
+          "h": "The negative is 没",
+          "p": "Results describe what happened, so the negative is <b>没</b>: 我没听懂, I didn't catch it. 找 is look for; 找到 is find.",
+          "examples": [
+            ["我{没}听{懂}。", "Wǒ méi tīng dǒng.", "I didn't understand."],
+            ["饭做{好}了。", "Fàn zuò hǎo le.", "The food is ready."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "作业做＿了吗？",
+          "en": "Have you finished your homework?",
+          "options": ["完", "过", "着", "在"],
+          "answer": "完",
+          "why": "完 = finished."
+        },
+        {
+          "q": "我找了半天，还没找＿。",
+          "en": "I've searched for ages and still haven't found it.",
+          "options": ["完", "到", "懂", "见"],
+          "answer": "到",
+          "why": "找到 = find."
+        },
+        {
+          "q": "I didn't understand.",
+          "en": "",
+          "options": ["我不听懂。", "我听不懂了。", "我没听懂。", "我没听懂了。"],
+          "answer": "我没听懂。",
+          "why": "A result is negated with 没, and no 了."
+        },
+        {
+          "q": "看 vs 看见",
+          "en": "",
+          "options": [
+            "the same",
+            "看见 is past only",
+            "看 is see; 看见 is look",
+            "看 is look; 看见 is see"
+          ],
+          "answer": "看 is look; 看见 is see",
+          "why": "The result 见 means it reached your eyes."
+        },
+        {
+          "q": "饭做好了 means…",
+          "en": "",
+          "options": [
+            "The food is ready.",
+            "The food is good.",
+            "I'll cook well.",
+            "I like cooking."
+          ],
+          "answer": "The food is ready.",
+          "why": "好 as a result = done properly."
+        }
+      ]
     },
     {
       "id": "direction-complement",
-      "title": "Direction complements: 来, 去, 上来, 下去 (about HSK 3)",
-      "level": "beginner-intermediate"
+      "title": "Direction complements: 来, 去, 上来, 下去",
+      "particle": "来・去・上・下・进・出・回",
+      "summary": "来 is toward the speaker, 去 is away; 上, 下, 进, 出, 回 add the path. (about HSK 3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "After a movement verb, <b>来</b> means toward me and <b>去</b> means away from me. 进来, come in; 出去, go out.",
+          "examples": [
+            ["请{进来}。", "Qǐng jìn lai.", "Please come in."],
+            ["他{回去}了。", "Tā huí qu le.", "He went back."],
+            ["你{上来}吧。", "Nǐ shàng lai ba.", "Come up."]
+          ]
+        },
+        {
+          "h": "With a verb in front, and with places",
+          "p": "A verb plus a path: 走进来, walk in; 跑出去, run out; 拿回来, bring back. A place goes before 来/去: 走进教室来.",
+          "examples": [
+            [
+              "他{走进}教室{来}了。",
+              "Tā zǒu jìn jiàoshì lái le.",
+              "He walked into the classroom."
+            ],
+            ["把书{拿回来}。", "Bǎ shū ná huí lai.", "Bring the book back."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "外边冷，快进＿吧！",
+          "en": "It's cold outside, come in!",
+          "options": ["来", "去", "了", "过"],
+          "answer": "来",
+          "why": "Toward the speaker: 来."
+        },
+        {
+          "q": "他已经回＿了。",
+          "en": "He's already gone back.",
+          "options": ["来", "去", "上", "进"],
+          "answer": "去",
+          "why": "Away from the speaker: 去."
+        },
+        {
+          "q": "走出去 means…",
+          "en": "",
+          "options": ["walk in", "come back", "walk out (away)", "go up"],
+          "answer": "walk out (away)",
+          "why": "出 out, 去 away."
+        },
+        {
+          "q": "Where does the place go?",
+          "en": "He ran into the room.",
+          "options": ["他跑进来房间了。", "他房间跑进来了。", "他跑来进房间了。", "他跑进房间来了。"],
+          "answer": "他跑进房间来了。",
+          "why": "Place before 来/去."
+        },
+        {
+          "q": "拿回来 means…",
+          "en": "",
+          "options": ["bring back", "take away", "put down", "carry out"],
+          "answer": "bring back",
+          "why": "回 back, 来 here."
+        }
+      ]
     },
     {
       "id": "ba-construction",
-      "title": "把 — doing something to an object (about HSK 3)",
-      "level": "beginner-intermediate"
+      "title": "把 — doing something to an object",
+      "particle": "把",
+      "summary": "把 brings a known object before the verb, to say what was done to it. (about HSK 3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>把</b> (bǎ) moves the object in front of the verb: subject + 把 + object + verb + something more. It's used when you do something to a specific thing and it changes or moves.",
+          "examples": [
+            ["我{把}门关上了。", "Wǒ bǎ mén guān shàng le.", "I shut the door."],
+            [
+              "请{把}书放在桌子上。",
+              "Qǐng bǎ shū fàng zài zhuōzi shàng.",
+              "Please put the book on the table."
+            ],
+            ["他{把}蛋糕吃完了。", "Tā bǎ dàngāo chī wán le.", "He ate up the cake."]
+          ]
+        },
+        {
+          "h": "The verb can't stand alone",
+          "p": "A bare verb doesn't work after 把: not 我把饭吃, but 我把饭吃了 or 吃完. The object is something known, the thing. Negatives and modals go before 把: 别把…, 没把…",
+          "examples": [
+            [
+              "你{别把}手机忘了。",
+              "Nǐ bié bǎ shǒujī wàng le.",
+              "Don't forget your phone."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "请＿窗户打开。",
+          "en": "Please open the window.",
+          "options": ["把", "被", "给", "在"],
+          "answer": "把",
+          "why": "把 + object + verb + result."
+        },
+        {
+          "q": "Which is right?",
+          "en": "I finished my homework.",
+          "options": ["我把作业做。", "我把作业做完了。", "我做把作业完了。", "把我作业做完了。"],
+          "answer": "我把作业做完了。",
+          "why": "把 needs something after the verb."
+        },
+        {
+          "q": "Where does 没 go?",
+          "en": "I didn't bring the book.",
+          "options": ["我把书没带来。", "我把没书带来。", "我没把书带来。", "没我把书带来。"],
+          "answer": "我没把书带来。",
+          "why": "Negatives come before 把."
+        },
+        {
+          "q": "把 is used when…",
+          "en": "",
+          "options": [
+            "the subject is unknown",
+            "the verb is 是",
+            "there's no object",
+            "something is done to a specific object"
+          ],
+          "answer": "something is done to a specific object",
+          "why": "把 shows what was done to the thing."
+        },
+        {
+          "q": "他把钱放在哪儿了？ means…",
+          "en": "",
+          "options": [
+            "Where did he put the money?",
+            "Where is his money from?",
+            "Did he spend money?",
+            "How much money?"
+          ],
+          "answer": "Where did he put the money?",
+          "why": "把 + 钱 + 放在 + where."
+        }
+      ]
     },
     {
       "id": "bei-passive",
-      "title": "被 — the passive (about HSK 3)",
-      "level": "beginner-intermediate"
+      "title": "被 — the passive",
+      "particle": "被・叫・让",
+      "summary": "被 marks who did it, often when something bad happened to the subject. (about HSK 3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>被</b> (bèi) makes a passive: the thing affected comes first, then 被, then who did it, then the verb plus a result. It's typical for unwelcome events.",
+          "examples": [
+            [
+              "我的钱包{被}偷了。",
+              "Wǒ de qiánbāo bèi tōu le.",
+              "My wallet was stolen."
+            ],
+            [
+              "蛋糕{被}弟弟吃完了。",
+              "Dàngāo bèi dìdi chī wán le.",
+              "The cake was eaten up by my little brother."
+            ],
+            [
+              "他{被}老师批评了。",
+              "Tā bèi lǎoshī pīpíng le.",
+              "He was told off by the teacher."
+            ]
+          ]
+        },
+        {
+          "h": "叫 and 让 in speech",
+          "p": "In casual speech, <b>叫</b> or <b>让</b> replace 被, but then the doer must be named. 没 goes before 被.",
+          "examples": [
+            [
+              "车{让}人开走了。",
+              "Chē ràng rén kāi zǒu le.",
+              "The car got driven off by someone."
+            ],
+            ["我{没被}发现。", "Wǒ méi bèi fāxiàn.", "I wasn't found out."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我的自行车＿偷了。",
+          "en": "My bike was stolen.",
+          "options": ["被", "把", "给", "从"],
+          "answer": "被",
+          "why": "Passive: 被."
+        },
+        {
+          "q": "杯子被他打＿了。",
+          "en": "The cup was broken by him.",
+          "options": ["过", "破", "着", "吗"],
+          "answer": "破",
+          "why": "The verb needs a result: 打破."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": ["衣服被洗了。", "衣服被妈妈洗了。", "衣服让洗了。", "衣服让妈妈洗了。"],
+          "answer": "衣服让洗了。",
+          "why": "让 needs the doer named."
+        },
+        {
+          "q": "被 often describes…",
+          "en": "",
+          "options": [
+            "the future",
+            "a wish",
+            "a habit",
+            "something unwelcome that happened"
+          ],
+          "answer": "something unwelcome that happened",
+          "why": "被偷, 被批评."
+        },
+        {
+          "q": "Where does 没 go?",
+          "en": "He wasn't hit by the car.",
+          "options": ["他没被车撞。", "他被没车撞。", "他被车没撞。", "没他被车撞。"],
+          "answer": "他没被车撞。",
+          "why": "没 before 被."
+        }
+      ]
+    },
+    {
+      "id": "duration",
+      "title": "How long: time after the verb",
+      "particle": "时间段",
+      "summary": "How long something lasts goes after the verb, unlike when it happens. (about HSK 2–3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "When something happens goes before the verb. How long it lasts goes <b>after</b> it: 我学了两年, I studied for two years.",
+          "examples": [
+            [
+              "我睡了八{个小时}。",
+              "Wǒ shuì le bā ge xiǎoshí.",
+              "I slept for eight hours."
+            ],
+            [
+              "他在中国住了{三年}。",
+              "Tā zài Zhōngguó zhù le sān nián.",
+              "He lived in China for three years."
+            ],
+            ["请等{一会儿}。", "Qǐng děng yíhuìr.", "Please wait a moment."]
+          ]
+        },
+        {
+          "h": "With an object",
+          "p": "Repeat the verb, or put the time before the object with 的: 我学中文学了两年, or 我学了两年(的)中文. A final 了 means “so far, and still going”.",
+          "examples": [
+            [
+              "我学中文学了{两年}了。",
+              "Wǒ xué Zhōngwén xué le liǎng nián le.",
+              "I've been studying Chinese for two years (and still am)."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我在北京住了＿。",
+          "en": "I lived in Beijing for five years.",
+          "options": ["五年", "五年前", "五点", "第五年"],
+          "answer": "五年",
+          "why": "Duration after the verb."
+        },
+        {
+          "q": "Which is right?",
+          "en": "I waited for an hour.",
+          "options": ["我一个小时等了。", "我等了一个小时。", "我等一个小时前。", "一个小时我等了。"],
+          "answer": "我等了一个小时。",
+          "why": "等 + 了 + duration."
+        },
+        {
+          "q": "Which is right?",
+          "en": "I watched TV for two hours.",
+          "options": ["我看电视两个小时看了。", "我两个小时看了电视了看。", "我看电视看了两个小时。", "我看了电视两个小时。"],
+          "answer": "我看电视看了两个小时。",
+          "why": "Repeat the verb, or say 看了两个小时(的)电视."
+        },
+        {
+          "q": "我学了三年了 means…",
+          "en": "",
+          "options": [
+            "I learned three years ago.",
+            "I'll learn for three years.",
+            "I stopped three years ago.",
+            "I've been learning for three years (and still am)."
+          ],
+          "answer": "I've been learning for three years (and still am).",
+          "why": "The final 了 means it's still going."
+        },
+        {
+          "q": "三点 vs 三个小时",
+          "en": "",
+          "options": [
+            "三点 is when; 三个小时 is how long",
+            "the same",
+            "both how long",
+            "both when"
+          ],
+          "answer": "三点 is when; 三个小时 is how long",
+          "why": "Point in time vs duration."
+        }
+      ]
+    },
+    {
+      "id": "jiu-cai",
+      "title": "就 and 才 — sooner and later than expected",
+      "particle": "就・才",
+      "summary": "就 says earlier or easier than expected; 才 says later or harder. (about HSK 3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>就</b> (jiù) before a verb means “as early as, already”: 他六点就起床了. <b>才</b> (cái) means “not until, only then”: 他十点才起床.",
+          "examples": [
+            [
+              "他六点{就}起床了。",
+              "Tā liù diǎn jiù qǐchuáng le.",
+              "He was up already at six."
+            ],
+            [
+              "他十点{才}起床。",
+              "Tā shí diǎn cái qǐchuáng.",
+              "He didn't get up until ten."
+            ],
+            [
+              "我说了三次他{才}懂。",
+              "Wǒ shuō le sān cì tā cái dǒng.",
+              "I had to say it three times before he got it."
+            ]
+          ]
+        },
+        {
+          "h": "才 with numbers",
+          "p": "Before a number, 才 means “only”: 他才五岁, he's only five. A 就 sentence about the past usually ends in 了; a 才 sentence doesn't.",
+          "examples": [
+            ["他{才}五岁。", "Tā cái wǔ suì.", "He's only five."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我七点＿到了。",
+          "en": "I'd already arrived by seven.",
+          "options": ["就", "才", "都", "还"],
+          "answer": "就",
+          "why": "Earlier than expected: 就."
+        },
+        {
+          "q": "他半夜＿回家。",
+          "en": "He didn't get home until midnight.",
+          "options": ["就", "才", "也", "已经"],
+          "answer": "才",
+          "why": "Later than expected: 才."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": ["他十点才起床。", "他六点就起床了。", "他十点才起床了。", "他才五岁。"],
+          "answer": "他十点才起床了。",
+          "why": "才 doesn't take 了."
+        },
+        {
+          "q": "她才二十岁 means…",
+          "en": "",
+          "options": [
+            "She's already twenty.",
+            "She was twenty.",
+            "She'll be twenty.",
+            "She's only twenty."
+          ],
+          "answer": "She's only twenty.",
+          "why": "才 + number = only."
+        },
+        {
+          "q": "就 suggests…",
+          "en": "",
+          "options": [
+            "earlier or easier than expected",
+            "later than expected",
+            "never",
+            "only"
+          ],
+          "answer": "earlier or easier than expected",
+          "why": "就 = already, as soon as."
+        }
+      ]
+    },
+    {
+      "id": "dui-gen",
+      "title": "对 and 跟 — to, towards, with",
+      "particle": "对・跟",
+      "summary": "对 points at someone; 跟 means together with. (about HSK 3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>对</b> (duì) before a verb points the action at someone: 对我说, say to me; 对…好, good to. <b>跟</b> (gēn) means with: 跟朋友去, go with a friend.",
+          "examples": [
+            ["他{对}我很好。", "Tā duì wǒ hěn hǎo.", "He's good to me."],
+            [
+              "你{对}他说什么了？",
+              "Nǐ duì tā shuō shénme le?",
+              "What did you say to him?"
+            ],
+            [
+              "我{跟}朋友一起吃饭。",
+              "Wǒ gēn péngyou yìqǐ chī fàn.",
+              "I'm eating with friends."
+            ]
+          ]
+        },
+        {
+          "h": "对…感兴趣",
+          "p": "Feelings toward something use 对: 对音乐感兴趣, interested in music. 跟…一样 means the same as.",
+          "examples": [
+            [
+              "我{对}历史很感兴趣。",
+              "Wǒ duì lìshǐ hěn gǎn xìngqù.",
+              "I'm very interested in history."
+            ],
+            [
+              "我的{跟}你的一样。",
+              "Wǒ de gēn nǐ de yíyàng.",
+              "Mine is the same as yours."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "她＿孩子很耐心。",
+          "en": "She's patient with children.",
+          "options": ["对", "跟", "从", "离"],
+          "answer": "对",
+          "why": "Attitude toward someone: 对."
+        },
+        {
+          "q": "我＿你一起去。",
+          "en": "I'll go with you.",
+          "options": ["对", "跟", "给", "被"],
+          "answer": "跟",
+          "why": "Together with: 跟…一起."
+        },
+        {
+          "q": "我对足球不感兴趣 means…",
+          "en": "",
+          "options": [
+            "Football isn't interesting to me now.",
+            "I play football.",
+            "I'm not interested in football.",
+            "Football is right."
+          ],
+          "answer": "I'm not interested in football.",
+          "why": "对…感兴趣."
+        },
+        {
+          "q": "这个跟那个一样 means…",
+          "en": "",
+          "options": [
+            "This goes with that.",
+            "This is for that.",
+            "This is bigger.",
+            "This is the same as that."
+          ],
+          "answer": "This is the same as that.",
+          "why": "跟…一样."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": ["他跟我很好。 for “he treats me well”", "他对我很好。", "我跟他一起去。", "我对中文感兴趣。"],
+          "answer": "他跟我很好。 for “he treats me well”",
+          "why": "Treating someone well is 对…好. 跟…很好 means “get on well with”."
+        }
+      ]
     },
     {
       "id": "yue-yue",
-      "title": "越…越 — the more … the more (about HSK 3)",
-      "level": "beginner-intermediate"
+      "title": "越…越 — the more … the more",
+      "particle": "越…越・越来越",
+      "summary": "越 A 越 B: the more A, the more B. 越来越 is “more and more”. (about HSK 3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>越…越</b> (yuè…yuè) links two changes: 越听越喜欢, the more I listen, the more I like it.",
+          "examples": [
+            [
+              "雨{越}下{越}大。",
+              "Yǔ yuè xià yuè dà.",
+              "The rain is getting heavier and heavier."
+            ],
+            [
+              "他{越}说{越}快。",
+              "Tā yuè shuō yuè kuài.",
+              "The more he talks, the faster he goes."
+            ]
+          ]
+        },
+        {
+          "h": "越来越",
+          "p": "<b>越来越</b> + adjective is “more and more”. Don't add 很 or 非常 after it.",
+          "examples": [
+            [
+              "天气{越来越}冷了。",
+              "Tiānqì yuè lái yuè lěng le.",
+              "It's getting colder and colder."
+            ],
+            [
+              "他的中文{越来越}好。",
+              "Tā de Zhōngwén yuè lái yuè hǎo.",
+              "His Chinese is getting better and better."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "你＿来越漂亮了！",
+          "en": "You're getting more and more beautiful!",
+          "options": ["越", "很", "更", "最"],
+          "answer": "越",
+          "why": "越来越."
+        },
+        {
+          "q": "我越想越＿。",
+          "en": "The more I think, the angrier I get.",
+          "options": ["越", "生气", "了", "很"],
+          "answer": "生气",
+          "why": "越 A 越 B."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": ["越来越好", "越来越多", "越来越很好", "越吃越胖"],
+          "answer": "越来越很好",
+          "why": "No 很 after 越来越."
+        },
+        {
+          "q": "越早越好 means…",
+          "en": "",
+          "options": [
+            "Early is good.",
+            "It's too early.",
+            "Earlier was better.",
+            "The sooner the better."
+          ],
+          "answer": "The sooner the better.",
+          "why": "越 A 越 B."
+        },
+        {
+          "q": "东西越来越贵 means…",
+          "en": "",
+          "options": [
+            "Things are getting more and more expensive.",
+            "Things are expensive.",
+            "Things got cheaper.",
+            "The more things, the better."
+          ],
+          "answer": "Things are getting more and more expensive.",
+          "why": "越来越 = more and more."
+        }
+      ]
     },
     {
       "id": "yibian",
-      "title": "一边…一边 — while (about HSK 3)",
-      "level": "beginner-intermediate"
+      "title": "一边…一边 — while",
+      "particle": "一边・一边",
+      "summary": "一边 A 一边 B: doing A and B at the same time. (about HSK 3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>一边</b> (yìbiān) before each of two verbs means doing them at once. The subject comes before the first 一边.",
+          "examples": [
+            [
+              "他{一边}吃饭{一边}看电视。",
+              "Tā yìbiān chī fàn yìbiān kàn diànshì.",
+              "He watches TV while eating."
+            ],
+            [
+              "我们{一边}走{一边}聊。",
+              "Wǒmen yìbiān zǒu yìbiān liáo.",
+              "We chatted as we walked."
+            ]
+          ]
+        },
+        {
+          "h": "Short form 边…边",
+          "p": "In quick speech, 边…边 works the same way. Both actions must be done by the same person.",
+          "examples": [
+            [
+              "她{边}听音乐{边}做作业。",
+              "Tā biān tīng yīnyuè biān zuò zuòyè.",
+              "She does homework while listening to music."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我一边洗澡＿唱歌。",
+          "en": "I sing while I shower.",
+          "options": ["一边", "越", "也", "就"],
+          "answer": "一边",
+          "why": "一边…一边."
+        },
+        {
+          "q": "Which is right?",
+          "en": "He drives while making phone calls.",
+          "options": ["一边他开车一边打电话。", "他一边开车一边打电话。", "他开车一边打电话一边。", "他一边开车打电话。"],
+          "answer": "他一边开车一边打电话。",
+          "why": "Subject, then 一边 A 一边 B."
+        },
+        {
+          "q": "一边…一边 needs…",
+          "en": "",
+          "options": [
+            "two different people",
+            "a past tense",
+            "the same subject doing both",
+            "了 after each verb"
+          ],
+          "answer": "the same subject doing both",
+          "why": "One person doing two things."
+        },
+        {
+          "q": "边吃边说 means…",
+          "en": "",
+          "options": [
+            "eat, then talk",
+            "don't eat",
+            "talk about eating",
+            "eat while talking"
+          ],
+          "answer": "eat while talking",
+          "why": "Short form of 一边…一边."
+        },
+        {
+          "q": "我们一边喝茶一边聊天 means…",
+          "en": "",
+          "options": [
+            "We chatted over tea.",
+            "We drank tea, then chatted.",
+            "We don't drink tea.",
+            "We chatted about tea."
+          ],
+          "answer": "We chatted over tea.",
+          "why": "Two things at once."
+        }
+      ]
     },
     {
       "id": "xian-ranhou",
-      "title": "先…然后 — first, then (about HSK 3)",
-      "level": "beginner-intermediate"
+      "title": "先…然后 — first, then",
+      "particle": "先・然后・再",
+      "summary": "先 marks the first step; 然后 or 再 the next. (about HSK 3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>先</b> (xiān) before a verb means first. The next step starts with <b>然后</b> (ránhòu), often with 再 before its verb.",
+          "examples": [
+            [
+              "我们{先}吃饭，{然后}看电影。",
+              "Wǒmen xiān chī fàn, ránhòu kàn diànyǐng.",
+              "Let's eat first, then see a film."
+            ],
+            [
+              "你{先}洗手，{再}吃饭。",
+              "Nǐ xiān xǐ shǒu, zài chī fàn.",
+              "Wash your hands first, then eat."
+            ]
+          ]
+        },
+        {
+          "h": "最后 for the last step",
+          "p": "For a longer list: 先…，然后…，最后… (first, then, finally).",
+          "examples": [
+            [
+              "{先}买票，{然后}进站，{最后}上车。",
+              "Xiān mǎi piào, ránhòu jìn zhàn, zuìhòu shàng chē.",
+              "First buy a ticket, then enter the station, and finally board."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我＿做作业，然后玩游戏。",
+          "en": "I'll do my homework first, then play games.",
+          "options": ["先", "再", "就", "才"],
+          "answer": "先",
+          "why": "First: 先."
+        },
+        {
+          "q": "先洗澡，＿睡觉。",
+          "en": "Shower first, then sleep.",
+          "options": ["因为", "然后", "虽然", "如果"],
+          "answer": "然后",
+          "why": "Then: 然后."
+        },
+        {
+          "q": "先 goes…",
+          "en": "",
+          "options": [
+            "at the end",
+            "after the object",
+            "before the verb",
+            "before the subject only"
+          ],
+          "answer": "before the verb",
+          "why": "先 is an adverb."
+        },
+        {
+          "q": "先…然后…最后 means…",
+          "en": "",
+          "options": [
+            "if, then, else",
+            "because, so, therefore",
+            "although, but, still",
+            "first, then, finally"
+          ],
+          "answer": "first, then, finally",
+          "why": "Three steps."
+        },
+        {
+          "q": "你先走，我一会儿再去 means…",
+          "en": "",
+          "options": [
+            "You go first; I'll go a bit later.",
+            "You went and I went.",
+            "Don't go.",
+            "We'll go together."
+          ],
+          "answer": "You go first; I'll go a bit later.",
+          "why": "先 … 再 … for future steps."
+        }
+      ]
     },
     {
       "id": "ruguo-jiu",
-      "title": "如果…就 — if … then (about HSK 3)",
-      "level": "beginner-intermediate"
+      "title": "如果…就 — if … then",
+      "particle": "如果・就・要是",
+      "summary": "如果 opens the condition; 就 in the second clause gives the result. (about HSK 3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>如果</b> (rúguǒ) is if. The result clause usually has <b>就</b> before its verb. 的话 can close the condition: 如果明天下雨的话.",
+          "examples": [
+            [
+              "{如果}明天下雨，我们{就}不去了。",
+              "Rúguǒ míngtiān xià yǔ, wǒmen jiù bú qù le.",
+              "If it rains tomorrow, we won't go."
+            ],
+            [
+              "{如果}你有时间，{就}来吧。",
+              "Rúguǒ nǐ yǒu shíjiān, jiù lái ba.",
+              "If you have time, come."
+            ]
+          ]
+        },
+        {
+          "h": "要是 in speech",
+          "p": "<b>要是</b> (yàoshi) means the same and is more casual. 就 goes after the subject of the second clause.",
+          "examples": [
+            [
+              "{要是}你累了{的话}，{就}休息吧。",
+              "Yàoshi nǐ lèi le de huà, jiù xiūxi ba.",
+              "If you're tired, have a rest."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿你不舒服，就回家吧。",
+          "en": "If you're unwell, go home.",
+          "options": ["如果", "因为", "虽然", "所以"],
+          "answer": "如果",
+          "why": "If: 如果."
+        },
+        {
+          "q": "如果明天晴天，我们＿去爬山。",
+          "en": "If it's sunny tomorrow, we'll go hiking.",
+          "options": ["才", "就", "都", "还"],
+          "answer": "就",
+          "why": "如果…就."
+        },
+        {
+          "q": "Which is right?",
+          "en": "",
+          "options": ["如果你去，就我去。", "你去如果，我就去。", "如果你去，我就去。", "如果你去，我去就。"],
+          "answer": "如果你去，我就去。",
+          "why": "就 after the subject, before the verb."
+        },
+        {
+          "q": "要是 means…",
+          "en": "",
+          "options": ["because", "although", "as long as", "if (spoken)"],
+          "answer": "if (spoken)",
+          "why": "Casual if."
+        },
+        {
+          "q": "的话 goes…",
+          "en": "",
+          "options": [
+            "at the end of the if-clause",
+            "at the start",
+            "after 就",
+            "at the end of the sentence"
+          ],
+          "answer": "at the end of the if-clause",
+          "why": "如果…的话，…"
+        }
+      ]
     },
     {
       "id": "weile",
-      "title": "为了 — in order to (about HSK 3)",
-      "level": "beginner-intermediate"
+      "title": "为了 — in order to",
+      "particle": "为了",
+      "summary": "为了 introduces the purpose, usually at the front. (about HSK 3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>为了</b> (wèile) means “in order to” or “for the sake of”. It usually comes first, before the action it explains.",
+          "examples": [
+            [
+              "{为了}学中文，他去了北京。",
+              "Wèile xué Zhōngwén, tā qù le Běijīng.",
+              "He went to Beijing to learn Chinese."
+            ],
+            [
+              "{为了}健康，我每天跑步。",
+              "Wèile jiànkāng, wǒ měitiān pǎobù.",
+              "I run every day for my health."
+            ]
+          ]
+        },
+        {
+          "h": "为了 vs 因为",
+          "p": "为了 is the goal (looking forward); 因为 is the cause (looking back). 是为了 at the end gives the purpose too: 我来是为了见你.",
+          "examples": [
+            ["我来{是为了}见你。", "Wǒ lái shì wèile jiàn nǐ.", "I came to see you."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿考好，他每天学习到很晚。",
+          "en": "To do well in the exam, he studies late every day.",
+          "options": ["为了", "因为", "所以", "虽然"],
+          "answer": "为了",
+          "why": "Purpose: 为了."
+        },
+        {
+          "q": "为了 is…",
+          "en": "",
+          "options": ["a cause", "a goal", "a contrast", "a condition"],
+          "answer": "a goal",
+          "why": "为了 looks forward to the aim."
+        },
+        {
+          "q": "＿下雨，比赛取消了。",
+          "en": "Because of rain, the match was cancelled.",
+          "options": ["为了", "如果", "因为", "虽然"],
+          "answer": "因为",
+          "why": "A cause, not a goal: 因为."
+        },
+        {
+          "q": "我这样做是为了你 means…",
+          "en": "",
+          "options": [
+            "I did it because of you.",
+            "You did this.",
+            "This is for me.",
+            "I'm doing this for you."
+          ],
+          "answer": "I'm doing this for you.",
+          "why": "是为了 + aim."
+        },
+        {
+          "q": "Where does 为了 usually go?",
+          "en": "",
+          "options": [
+            "at the start of the sentence",
+            "after the verb",
+            "at the end, alone",
+            "after 了"
+          ],
+          "answer": "at the start of the sentence",
+          "why": "为了 + aim, then the action."
+        }
+      ]
     },
     {
       "id": "chule-yiwai",
-      "title": "除了…以外 — apart from (about HSK 3)",
-      "level": "beginner-intermediate"
+      "title": "除了…以外 — apart from",
+      "particle": "除了・以外",
+      "summary": "With 都 it means “except”; with 还 or 也 it means “besides”. (about HSK 3)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>除了…以外</b> (chúle…yǐwài) means apart from. With <b>都</b> in the second half, it excludes: everyone except. 以外 can be dropped.",
+          "examples": [
+            [
+              "{除了}他{以外}，我们{都}去了。",
+              "Chúle tā yǐwài, wǒmen dōu qù le.",
+              "Everyone except him went."
+            ],
+            [
+              "{除了}星期天，我每天{都}上班。",
+              "Chúle xīngqītiān, wǒ měitiān dōu shàngbān.",
+              "I work every day except Sunday."
+            ]
+          ]
+        },
+        {
+          "h": "Adding: 还 and 也",
+          "p": "With <b>还</b> or <b>也</b>, it adds: besides.",
+          "examples": [
+            [
+              "{除了}中文，他{还}会说日语。",
+              "Chúle Zhōngwén, tā hái huì shuō Rìyǔ.",
+              "Besides Chinese, he also speaks Japanese."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "除了咖啡，我＿喝茶。",
+          "en": "Besides coffee, I also drink tea.",
+          "options": ["也", "都", "就", "才"],
+          "answer": "也",
+          "why": "Adding: 也 or 还."
+        },
+        {
+          "q": "除了小王，大家＿来了。",
+          "en": "Everyone came except Xiao Wang.",
+          "options": ["还", "都", "也", "才"],
+          "answer": "都",
+          "why": "Excluding: 都."
+        },
+        {
+          "q": "除了…以外 with 都 means…",
+          "en": "",
+          "options": ["besides", "because of", "except", "instead of"],
+          "answer": "except",
+          "why": "都 excludes."
+        },
+        {
+          "q": "除了英语，他还会法语 means…",
+          "en": "",
+          "options": [
+            "He knows only English.",
+            "He knows French, not English.",
+            "English except French.",
+            "Besides English, he also knows French."
+          ],
+          "answer": "Besides English, he also knows French.",
+          "why": "还 adds."
+        },
+        {
+          "q": "Can 以外 be dropped?",
+          "en": "",
+          "options": ["Yes", "No", "Only with 都", "Only in writing"],
+          "answer": "Yes",
+          "why": "除了 alone is common."
+        }
+      ]
     },
     {
       "id": "zhiyao-jiu",
-      "title": "只要…就 — as long as (about HSK 3–4)",
-      "level": "beginner-intermediate"
+      "title": "只要…就 — as long as",
+      "particle": "只要・就",
+      "summary": "只要 sets a minimum condition; 就 says it's enough. (about HSK 3–4)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>只要</b> (zhǐyào) means as long as: if only this happens, the result follows. The result clause takes <b>就</b>.",
+          "examples": [
+            [
+              "{只要}努力，{就}能成功。",
+              "Zhǐyào nǔlì, jiù néng chénggōng.",
+              "As long as you work hard, you can succeed."
+            ],
+            [
+              "{只要}你喜欢，{就}买吧。",
+              "Zhǐyào nǐ xǐhuan, jiù mǎi ba.",
+              "As long as you like it, buy it."
+            ]
+          ]
+        },
+        {
+          "h": "Compare 只有…才",
+          "p": "只有…才 (only if … then) is stricter: it's the only way. 只要…就 says one thing is enough.",
+          "examples": [
+            [
+              "{只有}多练习，{才}能说好。",
+              "Zhǐyǒu duō liànxí, cái néng shuō hǎo.",
+              "Only by practising a lot can you speak well."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "只要有时间，我＿去看你。",
+          "en": "As long as I have time, I'll come and see you.",
+          "options": ["就", "才", "都", "也"],
+          "answer": "就",
+          "why": "只要…就."
+        },
+        {
+          "q": "只有…＿",
+          "en": "only if … then",
+          "options": ["就", "才", "都", "也"],
+          "answer": "才",
+          "why": "只有 pairs with 才."
+        },
+        {
+          "q": "只要 means…",
+          "en": "",
+          "options": ["only if (and no other way)", "although", "as long as", "because"],
+          "answer": "as long as",
+          "why": "Enough condition."
+        },
+        {
+          "q": "Which is stricter?",
+          "en": "",
+          "options": ["只要…就", "Both equal", "Neither", "只有…才"],
+          "answer": "只有…才",
+          "why": "只有…才 is the only way."
+        },
+        {
+          "q": "只要不下雨，比赛就继续 means…",
+          "en": "",
+          "options": [
+            "As long as it doesn't rain, the match goes on.",
+            "The match stops if it rains only.",
+            "It must rain.",
+            "The match was rained off."
+          ],
+          "answer": "As long as it doesn't rain, the match goes on.",
+          "why": "只要…就."
+        }
+      ]
     },
     {
       "id": "potential-complement",
-      "title": "得 and 不 — can and can't (potential complements) (about HSK 3–4)",
-      "level": "beginner-intermediate"
+      "title": "得 and 不 — can and can't (potential complements)",
+      "particle": "得・不",
+      "summary": "Verb + 得/不 + result says whether the result is possible. (about HSK 3–4)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Put <b>得</b> or <b>不</b> between a verb and its result to say whether it can happen: 听得懂, can understand; 听不懂, can't understand.",
+          "examples": [
+            ["你听{得}懂吗？", "Nǐ tīng de dǒng ma?", "Can you understand?"],
+            ["我听{不}懂。", "Wǒ tīng bu dǒng.", "I can't understand."],
+            [
+              "字太小，我看{不}清楚。",
+              "Zì tài xiǎo, wǒ kàn bu qīngchu.",
+              "The writing is too small, I can't see it clearly."
+            ]
+          ]
+        },
+        {
+          "h": "Common ones",
+          "p": "吃不完 (can't finish eating), 买不到 (can't get hold of), 进不去 (can't get in), 来不及 (no time to). The yes/no question is 听得懂听不懂?",
+          "examples": [
+            [
+              "菜太多了，我吃{不}完。",
+              "Cài tài duō le, wǒ chī bu wán.",
+              "There's too much food, I can't finish it."
+            ],
+            [
+              "门锁了，进{不}去。",
+              "Mén suǒ le, jìn bu qù.",
+              "The door's locked; can't get in."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "太远了，我看＿见。",
+          "en": "It's too far, I can't see it.",
+          "options": ["不", "得", "没", "了"],
+          "answer": "不",
+          "why": "Can't: verb + 不 + result."
+        },
+        {
+          "q": "这么多作业，你做＿完吗？",
+          "en": "Can you finish this much homework?",
+          "options": ["不", "得", "了", "过"],
+          "answer": "得",
+          "why": "Can: verb + 得 + result."
+        },
+        {
+          "q": "听不懂 vs 没听懂",
+          "en": "",
+          "options": [
+            "same",
+            "没听懂 is future",
+            "听不懂 can't understand; 没听懂 didn't understand",
+            "听不懂 is past only"
+          ],
+          "answer": "听不懂 can't understand; 没听懂 didn't understand",
+          "why": "Potential vs past result."
+        },
+        {
+          "q": "来不及 means…",
+          "en": "",
+          "options": [
+            "can't come",
+            "didn't come",
+            "doesn't want to come",
+            "not enough time"
+          ],
+          "answer": "not enough time",
+          "why": "A set phrase: too late to."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": ["我不听得懂。", "我听不懂。", "你听得懂吗？", "我听得懂。"],
+          "answer": "我不听得懂。",
+          "why": "不 goes between verb and result."
+        }
+      ]
     },
     {
       "id": "jiran-jiu",
-      "title": "既然…就 — since (about HSK 4)",
-      "level": "intermediate"
+      "title": "既然…就 — since",
+      "particle": "既然・就",
+      "summary": "既然 takes a known fact as the reason for a suggestion or conclusion. (about HSK 4)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>既然</b> (jìrán) means “since (we know that)”. Unlike 因为, the reason is already accepted, and the second half usually suggests or concludes, with 就 or 那.",
+          "examples": [
+            [
+              "{既然}你病了，{就}在家休息吧。",
+              "Jìrán nǐ bìng le, jiù zài jiā xiūxi ba.",
+              "Since you're ill, stay home and rest."
+            ],
+            [
+              "{既然}来了，{就}多住几天。",
+              "Jìrán lái le, jiù duō zhù jǐ tiān.",
+              "Since you've come, stay a few more days."
+            ]
+          ]
+        },
+        {
+          "h": "既然 vs 因为",
+          "p": "因为 explains a cause; 既然 builds a suggestion on a fact both sides know. 既然 can't answer 为什么.",
+          "examples": [
+            [
+              "{既然}你不喜欢，{那}就别买了。",
+              "Jìrán nǐ bù xǐhuan, nà jiù bié mǎi le.",
+              "Since you don't like it, don't buy it."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿你已经决定了，我就不说什么了。",
+          "en": "Since you've decided, I won't say anything more.",
+          "options": ["既然", "虽然", "如果", "只要"],
+          "answer": "既然",
+          "why": "A known fact leading to a conclusion."
+        },
+        {
+          "q": "既然 is usually followed by…",
+          "en": "",
+          "options": [
+            "a contrast with 但是",
+            "a suggestion or conclusion with 就",
+            "an answer to 为什么",
+            "a time phrase"
+          ],
+          "answer": "a suggestion or conclusion with 就",
+          "why": "既然…就."
+        },
+        {
+          "q": "Answer to 为什么迟到？",
+          "en": "",
+          "options": ["既然堵车。", "既然堵车就。", "因为堵车。", "所以堵车。"],
+          "answer": "因为堵车。",
+          "why": "既然 can't answer why."
+        },
+        {
+          "q": "既然大家都同意，那就这样吧 means…",
+          "en": "",
+          "options": [
+            "If everyone agrees…",
+            "Although everyone agrees…",
+            "Everyone agrees because…",
+            "Since everyone agrees, let's do it this way."
+          ],
+          "answer": "Since everyone agrees, let's do it this way.",
+          "why": "Accepted fact, then conclusion."
+        },
+        {
+          "q": "既然 vs 如果",
+          "en": "",
+          "options": [
+            "既然: true fact; 如果: supposition",
+            "same",
+            "既然 is the future",
+            "如果 is the past"
+          ],
+          "answer": "既然: true fact; 如果: supposition",
+          "why": "既然 is about something already true."
+        }
+      ]
     },
     {
       "id": "lian-dou",
-      "title": "连…都 — even (about HSK 4)",
-      "level": "intermediate"
+      "title": "连…都 — even",
+      "particle": "连・都・也",
+      "summary": "连 + the surprising part + 都/也: even. (about HSK 4)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>连</b> (lián) marks the surprising extreme, and <b>都</b> or <b>也</b> follows before the verb: 连孩子都知道, even children know.",
+          "examples": [
+            [
+              "{连}孩子{都}知道。",
+              "Lián háizi dōu zhīdao.",
+              "Even children know that."
+            ],
+            [
+              "他忙得{连}饭{都}没吃。",
+              "Tā máng de lián fàn dōu méi chī.",
+              "He was so busy he didn't even eat."
+            ]
+          ]
+        },
+        {
+          "h": "With one",
+          "p": "连一…都/也不/没 is a strong “not even one”: 连一个字也不认识, can't read a single character.",
+          "examples": [
+            [
+              "我{连}一分钱{也}没有。",
+              "Wǒ lián yì fēn qián yě méiyǒu.",
+              "I don't have a single cent."
+            ],
+            [
+              "他{连}自己的名字{都}忘了。",
+              "Tā lián zìjǐ de míngzi dōu wàng le.",
+              "He even forgot his own name."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿老师都不知道。",
+          "en": "Even the teacher doesn't know.",
+          "options": ["连", "除了", "因为", "只要"],
+          "answer": "连",
+          "why": "连…都."
+        },
+        {
+          "q": "他连一句话＿没说。",
+          "en": "He didn't say a single word.",
+          "options": ["就", "也", "才", "还"],
+          "answer": "也",
+          "why": "连…也/都."
+        },
+        {
+          "q": "连 marks…",
+          "en": "",
+          "options": ["the cause", "the time", "the surprising extreme", "the listener"],
+          "answer": "the surprising extreme",
+          "why": "Even X."
+        },
+        {
+          "q": "Which is right?",
+          "en": "I didn't even have time to drink water.",
+          "options": ["我都连喝水的时间没有。", "连我喝水的时间没有都。", "我喝水连时间都没有了的。", "我连喝水的时间都没有。"],
+          "answer": "我连喝水的时间都没有。",
+          "why": "连 + noun + 都 + verb."
+        },
+        {
+          "q": "连这个都不会？ means…",
+          "en": "",
+          "options": [
+            "You can't even do this?",
+            "You can do this too?",
+            "Even this can do it.",
+            "Will you do this?"
+          ],
+          "answer": "You can't even do this?",
+          "why": "A surprised “even”."
+        }
+      ]
     },
     {
       "id": "bujin-erqie",
-      "title": "不仅…而且 — not only … but also (about HSK 4)",
-      "level": "intermediate"
+      "title": "不仅…而且 — not only … but also",
+      "particle": "不仅・而且・不但",
+      "summary": "不仅 (or 不但) opens, 而且 adds something stronger. (about HSK 4)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>不仅</b> (bùjǐn) or <b>不但</b> (búdàn) means not only; the second half starts with <b>而且</b> (érqiě), often with 也 or 还.",
+          "examples": [
+            [
+              "她{不仅}聪明，{而且}很努力。",
+              "Tā bùjǐn cōngming, érqiě hěn nǔlì.",
+              "She's not only clever but also hard-working."
+            ],
+            [
+              "这家饭馆{不但}便宜，{而且}好吃。",
+              "Zhè jiā fànguǎn búdàn piányi, érqiě hǎochī.",
+              "This restaurant is not only cheap but tasty too."
+            ]
+          ]
+        },
+        {
+          "h": "Where 不仅 goes",
+          "p": "Same subject: 不仅 after it. Different subjects: 不仅 before the first one.",
+          "examples": [
+            [
+              "{不仅}我喜欢，{而且}我妈妈{也}喜欢。",
+              "Bùjǐn wǒ xǐhuan, érqiě wǒ māma yě xǐhuan.",
+              "Not only do I like it, my mum does too."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "他不仅会唱歌，＿会跳舞。",
+          "en": "He can not only sing but dance too.",
+          "options": ["而且", "但是", "所以", "因为"],
+          "answer": "而且",
+          "why": "Adding: 而且."
+        },
+        {
+          "q": "＿便宜，而且质量好。",
+          "en": "Not only cheap, but good quality.",
+          "options": ["虽然", "不但", "如果", "因为"],
+          "answer": "不但",
+          "why": "不但 = 不仅."
+        },
+        {
+          "q": "Different subjects: where's 不仅?",
+          "en": "Not only I but he too…",
+          "options": [
+            "after the first subject",
+            "at the end",
+            "before the first subject",
+            "after 而且"
+          ],
+          "answer": "before the first subject",
+          "why": "不仅我…，而且他也…"
+        },
+        {
+          "q": "而且 often pairs with…",
+          "en": "",
+          "options": ["就 or 才", "吗", "了", "也 or 还"],
+          "answer": "也 or 还",
+          "why": "而且…也/还."
+        },
+        {
+          "q": "不仅…而且 means…",
+          "en": "",
+          "options": [
+            "not only … but also",
+            "although … but",
+            "because … so",
+            "if … then"
+          ],
+          "answer": "not only … but also",
+          "why": "Adds a second, stronger point."
+        }
+      ]
     },
     {
       "id": "ji-you",
-      "title": "既…又 — both … and (about HSK 4)",
-      "level": "intermediate"
+      "title": "既…又 — both … and",
+      "particle": "既・又・也",
+      "summary": "既 A 又 B: both qualities at once. (about HSK 4)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>既</b> (jì) A <b>又</b> (yòu) B describes two qualities together. 又…又… means the same and is more casual.",
+          "examples": [
+            [
+              "这个房间{既}干净{又}安静。",
+              "Zhège fángjiān jì gānjìng yòu ānjìng.",
+              "This room is both clean and quiet."
+            ],
+            [
+              "她{又}高{又}漂亮。",
+              "Tā yòu gāo yòu piàoliang.",
+              "She's tall and pretty."
+            ]
+          ]
+        },
+        {
+          "h": "Both halves match",
+          "p": "The two parts should be the same kind: two adjectives, or two verb phrases. 既…也… works too, slightly more formal.",
+          "examples": [
+            [
+              "他{既}会说英语，{也}会说法语。",
+              "Tā jì huì shuō Yīngyǔ, yě huì shuō Fǎyǔ.",
+              "He speaks both English and French."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "这件衣服既便宜＿好看。",
+          "en": "This garment is both cheap and nice.",
+          "options": ["又", "而且", "就", "才"],
+          "answer": "又",
+          "why": "既…又."
+        },
+        {
+          "q": "＿累又饿",
+          "en": "tired and hungry",
+          "options": ["既然", "又", "越", "连"],
+          "answer": "又",
+          "why": "又…又… is the casual form."
+        },
+        {
+          "q": "既…又 links…",
+          "en": "",
+          "options": [
+            "a cause and effect",
+            "a condition and result",
+            "two things of the same kind",
+            "a time and place"
+          ],
+          "answer": "two things of the same kind",
+          "why": "Matching halves."
+        },
+        {
+          "q": "既…也 is…",
+          "en": "",
+          "options": [
+            "wrong",
+            "only for nouns",
+            "the past tense",
+            "slightly more formal"
+          ],
+          "answer": "slightly more formal",
+          "why": "Also correct."
+        },
+        {
+          "q": "她既聪明又漂亮 means…",
+          "en": "",
+          "options": [
+            "She's both clever and pretty.",
+            "She's clever but not pretty.",
+            "Since she's clever…",
+            "She's getting prettier."
+          ],
+          "answer": "She's both clever and pretty.",
+          "why": "Two qualities."
+        }
+      ]
     },
     {
       "id": "wulun-dou",
-      "title": "无论…都 — no matter (about HSK 4)",
-      "level": "intermediate"
+      "title": "无论…都 — no matter",
+      "particle": "无论・不管・都",
+      "summary": "无论 + a question form + 都: whatever, however, whoever. (about HSK 4)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>无论</b> (wúlùn) means no matter. It's followed by a question word or an A-or-B choice, and the result has <b>都</b> or 也.",
+          "examples": [
+            [
+              "{无论}多忙，他{都}给妈妈打电话。",
+              "Wúlùn duō máng, tā dōu gěi māma dǎ diànhuà.",
+              "No matter how busy, he calls his mother."
+            ],
+            [
+              "{无论}你去不去，我{都}去。",
+              "Wúlùn nǐ qù bu qù, wǒ dōu qù.",
+              "Whether or not you go, I'm going."
+            ]
+          ]
+        },
+        {
+          "h": "不管 in speech",
+          "p": "<b>不管</b> (bùguǎn) means the same and is more casual. The first half must contain a question word, A不A, or 还是 — not a plain statement.",
+          "examples": [
+            [
+              "{不管}谁来，{都}欢迎。",
+              "Bùguǎn shéi lái, dōu huānyíng.",
+              "Whoever comes is welcome."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "无论天气怎么样，我们＿去。",
+          "en": "Whatever the weather, we're going.",
+          "options": ["都", "就", "才", "还"],
+          "answer": "都",
+          "why": "无论…都."
+        },
+        {
+          "q": "＿你说什么，他都不听。",
+          "en": "Whatever you say, he won't listen.",
+          "options": ["虽然", "不管", "因为", "如果"],
+          "answer": "不管",
+          "why": "Casual no matter: 不管."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": ["无论下不下雨，我都去。", "无论多远，我都去。", "无论下雨，我都去。", "无论谁，都可以。"],
+          "answer": "无论下雨，我都去。",
+          "why": "无论 needs a question form."
+        },
+        {
+          "q": "无论 vs 虽然",
+          "en": "",
+          "options": [
+            "same",
+            "无论 is past",
+            "虽然 needs a question word",
+            "无论: any case; 虽然: one real fact"
+          ],
+          "answer": "无论: any case; 虽然: one real fact",
+          "why": "Different jobs."
+        },
+        {
+          "q": "不管多贵我都买 means…",
+          "en": "",
+          "options": [
+            "However expensive, I'll buy it.",
+            "Although expensive, I bought it.",
+            "If it's expensive, I won't buy.",
+            "It's not expensive."
+          ],
+          "answer": "However expensive, I'll buy it.",
+          "why": "No matter how."
+        }
+      ]
     },
     {
       "id": "duiyu",
-      "title": "对于 — regarding (about HSK 4)",
-      "level": "intermediate"
+      "title": "对于 — regarding",
+      "particle": "对于・关于",
+      "summary": "对于 introduces the thing a view or attitude is about. (about HSK 4)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>对于</b> (duìyú) means regarding, as for. It introduces the topic someone has a view on, often at the front of the sentence.",
+          "examples": [
+            [
+              "{对于}这个问题，大家有不同的看法。",
+              "Duìyú zhège wèntí, dàjiā yǒu bù tóng de kànfǎ.",
+              "People have different views on this question."
+            ],
+            [
+              "{对于}学生来说，时间很宝贵。",
+              "Duìyú xuésheng lái shuō, shíjiān hěn bǎoguì.",
+              "For students, time is precious."
+            ]
+          ]
+        },
+        {
+          "h": "对于 vs 关于",
+          "p": "<b>关于</b> (guānyú) means “about” as subject matter: a book about history. 对于 is about attitude or effect on. 对于 can usually be shortened to 对.",
+          "examples": [
+            [
+              "这是一本{关于}历史的书。",
+              "Zhè shì yì běn guānyú lìshǐ de shū.",
+              "This is a book about history."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿这件事，我没有意见。",
+          "en": "Regarding this matter, I have no objection.",
+          "options": ["对于", "关于", "为了", "除了"],
+          "answer": "对于",
+          "why": "Attitude toward: 对于."
+        },
+        {
+          "q": "一部＿中国的电影",
+          "en": "a film about China",
+          "options": ["对于", "关于", "为了", "由于"],
+          "answer": "关于",
+          "why": "Subject matter: 关于."
+        },
+        {
+          "q": "对于…来说 means…",
+          "en": "",
+          "options": [
+            "because of",
+            "apart from",
+            "for (someone), from their point of view",
+            "in order to"
+          ],
+          "answer": "for (someone), from their point of view",
+          "why": "对于我来说 = for me."
+        },
+        {
+          "q": "对于 can often be shortened to…",
+          "en": "",
+          "options": ["于", "关", "给", "对"],
+          "answer": "对",
+          "why": "对这个问题…"
+        },
+        {
+          "q": "对于孩子来说，这太难了 means…",
+          "en": "",
+          "options": [
+            "For children, this is too hard.",
+            "Children made this hard.",
+            "This is about children.",
+            "Children like this."
+          ],
+          "answer": "For children, this is too hard.",
+          "why": "对于…来说."
+        }
+      ]
     },
     {
       "id": "youyu",
-      "title": "由于 — owing to (about HSK 4)",
-      "level": "intermediate"
+      "title": "由于 — owing to",
+      "particle": "由于・因此",
+      "summary": "由于 is a more formal “because”, often with 因此 or 所以. (about HSK 4)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>由于</b> (yóuyú) means owing to, due to. It's more formal than 因为 and common in notices and news. The result often starts with 因此 (therefore) or 所以.",
+          "examples": [
+            [
+              "{由于}天气原因，航班取消了。",
+              "Yóuyú tiānqì yuányīn, hángbān qǔxiāo le.",
+              "Owing to the weather, the flight was cancelled."
+            ],
+            [
+              "{由于}大家的努力，比赛赢了。",
+              "Yóuyú dàjiā de nǔlì, bǐsài yíng le.",
+              "Thanks to everyone's effort, we won."
+            ]
+          ]
+        },
+        {
+          "h": "由于…因此",
+          "p": "由于 goes with 因此; 因为 doesn't. 由于 also doesn't follow its result the way 因为 can (…是因为…).",
+          "examples": [
+            [
+              "{由于}时间不够，{因此}会议推迟了。",
+              "Yóuyú shíjiān bú gòu, yīncǐ huìyì tuīchí le.",
+              "Because time was short, the meeting was postponed."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿交通事故，路上堵车了。",
+          "en": "Owing to an accident, traffic was jammed.",
+          "options": ["由于", "为了", "既然", "虽然"],
+          "answer": "由于",
+          "why": "Formal cause: 由于."
+        },
+        {
+          "q": "由于下大雪，＿学校停课。",
+          "en": "Due to heavy snow, the school closed.",
+          "options": ["但是", "因此", "而且", "就是"],
+          "answer": "因此",
+          "why": "由于…因此."
+        },
+        {
+          "q": "由于 vs 因为",
+          "en": "",
+          "options": [
+            "由于 is more casual",
+            "identical in all uses",
+            "由于 is more formal",
+            "因为 is only written"
+          ],
+          "answer": "由于 is more formal",
+          "why": "Register."
+        },
+        {
+          "q": "由于下雪，比赛＿推迟了。",
+          "en": "Owing to snow, the match was postponed.",
+          "options": ["因此", "但是", "虽然", "如果"],
+          "answer": "因此",
+          "why": "由于 pairs with 因此 for the result."
+        },
+        {
+          "q": "由于 often appears in…",
+          "en": "",
+          "options": ["notices and news", "baby talk", "greetings", "questions"],
+          "answer": "notices and news",
+          "why": "Formal registers."
+        }
+      ]
     },
     {
       "id": "budebu",
-      "title": "不得不 — have no choice but to (about HSK 4)",
-      "level": "intermediate"
+      "title": "不得不 — have no choice but to",
+      "particle": "不得不",
+      "summary": "不得不 + verb: forced to, have to. (about HSK 4)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>不得不</b> (bù dé bù), literally “can't not”, means have no choice but to. It's stronger than 得 (děi) or 必须.",
+          "examples": [
+            [
+              "下大雨，我们{不得不}回家。",
+              "Xià dà yǔ, wǒmen bù dé bù huí jiā.",
+              "It poured, so we had to go home."
+            ],
+            [
+              "钱不够，他{不得不}找工作。",
+              "Qián bú gòu, tā bù dé bù zhǎo gōngzuò.",
+              "Short of money, he had to find a job."
+            ]
+          ]
+        },
+        {
+          "h": "Other ways to say must",
+          "p": "<b>必须</b> (bìxū) is must, a rule. <b>得</b> (děi) is have to, spoken. 不得不 adds that you'd rather not.",
+          "examples": [
+            [
+              "你{必须}按时交作业。",
+              "Nǐ bìxū ànshí jiāo zuòyè.",
+              "You must hand in homework on time."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "车坏了，我＿走路去。",
+          "en": "The car broke down; I had to walk.",
+          "options": ["不得不", "不要", "不会", "别"],
+          "answer": "不得不",
+          "why": "Forced: 不得不."
+        },
+        {
+          "q": "不得不 suggests…",
+          "en": "",
+          "options": [
+            "you wanted to",
+            "you didn't want to, but had to",
+            "you can't",
+            "you didn't"
+          ],
+          "answer": "you didn't want to, but had to",
+          "why": "Reluctant necessity."
+        },
+        {
+          "q": "学生＿穿校服。",
+          "en": "Students must wear uniform.",
+          "options": ["不得不了", "别", "必须", "才"],
+          "answer": "必须",
+          "why": "A rule: 必须."
+        },
+        {
+          "q": "不得不 literally means…",
+          "en": "",
+          "options": ["must not", "can't", "won't", "can't not"],
+          "answer": "can't not",
+          "why": "不得 + 不."
+        },
+        {
+          "q": "我不得不承认他是对的 means…",
+          "en": "",
+          "options": [
+            "I have to admit he's right.",
+            "I can't admit he's right.",
+            "He must admit it.",
+            "I don't admit it."
+          ],
+          "answer": "I have to admit he's right.",
+          "why": "Reluctantly admitting."
+        }
+      ]
     },
     {
       "id": "shenzhi",
-      "title": "甚至 — even, so far as (about HSK 4–5)",
-      "level": "intermediate"
+      "title": "甚至 — even, so far as",
+      "particle": "甚至",
+      "summary": "甚至 adds an extreme case at the end of a list. (about HSK 4–5)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>甚至</b> (shènzhì) means even, going so far as. It introduces the most surprising item, often last.",
+          "examples": [
+            [
+              "他很忙，{甚至}周末也工作。",
+              "Tā hěn máng, shènzhì zhōumò yě gōngzuò.",
+              "He's so busy he even works weekends."
+            ],
+            [
+              "这首歌大人、孩子、{甚至}老人都会唱。",
+              "Zhè shǒu gē dàrén, háizi, shènzhì lǎorén dōu huì chàng.",
+              "Adults, children, even old people can sing this song."
+            ]
+          ]
+        },
+        {
+          "h": "甚至 and 连",
+          "p": "甚至 often joins 连…都: 他甚至连饭都没吃. 连 marks the item; 甚至 stresses how far it goes.",
+          "examples": [
+            [
+              "他{甚至}连我的名字都忘了。",
+              "Tā shènzhì lián wǒ de míngzi dōu wàng le.",
+              "He even forgot my name."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "他学习很认真，＿生病也不休息。",
+          "en": "He studies hard; he doesn't rest even when ill.",
+          "options": ["甚至", "所以", "因为", "只要"],
+          "answer": "甚至",
+          "why": "Extreme case: 甚至."
+        },
+        {
+          "q": "甚至 often comes…",
+          "en": "",
+          "options": [
+            "at the start of the story",
+            "before the most surprising item",
+            "after 吗",
+            "only alone"
+          ],
+          "answer": "before the most surprising item",
+          "why": "It escalates."
+        },
+        {
+          "q": "甚至 can combine with…",
+          "en": "",
+          "options": ["虽然", "吗", "连…都", "把 only"],
+          "answer": "连…都",
+          "why": "甚至连…都."
+        },
+        {
+          "q": "很多人，甚至外国人，都喜欢京剧 means…",
+          "en": "",
+          "options": [
+            "Only foreigners like it.",
+            "Foreigners don't like it.",
+            "Many foreigners went.",
+            "Many people, even foreigners, like Peking opera."
+          ],
+          "answer": "Many people, even foreigners, like Peking opera.",
+          "why": "甚至 adds the surprise."
+        },
+        {
+          "q": "Which fits?",
+          "en": "He didn't even say goodbye.",
+          "options": ["他甚至没说再见。", "他甚至说了再见。", "他再见甚至没说。", "甚至他再见。"],
+          "answer": "他甚至没说再见。",
+          "why": "甚至 before the verb phrase."
+        }
+      ]
     },
     {
       "id": "jishi-ye",
-      "title": "即使…也 — even if (about HSK 4–5)",
-      "level": "intermediate"
+      "title": "即使…也 — even if",
+      "particle": "即使・也",
+      "summary": "即使 sets a hypothetical; 也 says the result still holds. (about HSK 4–5)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>即使</b> (jíshǐ) means even if. The second half has <b>也</b>: the result holds anyway.",
+          "examples": [
+            [
+              "{即使}下雨，我{也}去。",
+              "Jíshǐ xià yǔ, wǒ yě qù.",
+              "Even if it rains, I'll go."
+            ],
+            [
+              "{即使}很难，我们{也}要试试。",
+              "Jíshǐ hěn nán, wǒmen yě yào shìshi.",
+              "Even if it's hard, we have to try."
+            ]
+          ]
+        },
+        {
+          "h": "即使 vs 虽然",
+          "p": "虽然 is a real fact (although). 即使 is a supposition (even if). 就是…也 is a spoken version.",
+          "examples": [
+            [
+              "{就是}再忙，{也}要吃饭。",
+              "Jiùshì zài máng, yě yào chī fàn.",
+              "However busy you are, you have to eat."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "即使你不来，我＿会等你。",
+          "en": "Even if you don't come, I'll wait.",
+          "options": ["也", "就", "才", "所以"],
+          "answer": "也",
+          "why": "即使…也."
+        },
+        {
+          "q": "即使 means…",
+          "en": "",
+          "options": ["although (real)", "even if (supposed)", "because", "as long as"],
+          "answer": "even if (supposed)",
+          "why": "A supposition."
+        },
+        {
+          "q": "Real fact, not supposition:",
+          "en": "",
+          "options": ["即使", "就是", "虽然", "哪怕"],
+          "answer": "虽然",
+          "why": "虽然 states a fact."
+        },
+        {
+          "q": "就是…也 is…",
+          "en": "",
+          "options": ["a past tense", "a question", "wrong", "a spoken 即使…也"],
+          "answer": "a spoken 即使…也",
+          "why": "Same meaning."
+        },
+        {
+          "q": "即使失败了，也没关系 means…",
+          "en": "",
+          "options": [
+            "Even if it fails, it doesn't matter.",
+            "It failed and it matters.",
+            "Because it failed…",
+            "It will not fail."
+          ],
+          "answer": "Even if it fails, it doesn't matter.",
+          "why": "Hypothetical."
+        }
+      ]
     },
     {
       "id": "naipa-ye",
-      "title": "哪怕…也 — even if (spoken) (about HSK 5)",
-      "level": "advanced-intermediate"
+      "title": "哪怕…也 — even if (spoken)",
+      "particle": "哪怕・也",
+      "summary": "哪怕 stresses an extreme supposition, with strong resolve. (about HSK 5)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>哪怕</b> (nǎpà) is like 即使 but stronger and more spoken: even if it comes to that. It often takes extreme cases: 哪怕一分钟.",
+          "examples": [
+            [
+              "{哪怕}只有一点希望，我们{也}不放弃。",
+              "Nǎpà zhǐyǒu yìdiǎn xīwàng, wǒmen yě bú fàngqì.",
+              "Even if there's only a little hope, we won't give up."
+            ],
+            [
+              "{哪怕}再累，他{也}坚持跑步。",
+              "Nǎpà zài lèi, tā yě jiānchí pǎobù.",
+              "However tired, he keeps running."
+            ]
+          ]
+        },
+        {
+          "h": "Strength",
+          "p": "Order of strength in speech: 就是 &lt; 即使 &lt; 哪怕, roughly. All pair with 也 or 都.",
+          "examples": [
+            [
+              "{哪怕}下刀子，我{也}去。",
+              "Nǎpà xià dāozi, wǒ yě qù.",
+              "Even if it rains knives, I'm going."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿只有五分钟，我也想见你。",
+          "en": "Even if it's only five minutes, I want to see you.",
+          "options": ["哪怕", "因为", "所以", "既然"],
+          "answer": "哪怕",
+          "why": "哪怕…也."
+        },
+        {
+          "q": "哪怕 pairs with…",
+          "en": "",
+          "options": ["就", "也 or 都", "才", "所以"],
+          "answer": "也 or 都",
+          "why": "Result holds anyway."
+        },
+        {
+          "q": "哪怕 compared with 即使 is…",
+          "en": "",
+          "options": [
+            "more formal",
+            "weaker",
+            "more spoken and emphatic",
+            "identical in tone"
+          ],
+          "answer": "more spoken and emphatic",
+          "why": "Strong resolve."
+        },
+        {
+          "q": "哪怕下刀子 is…",
+          "en": "",
+          "options": [
+            "weather news",
+            "a threat",
+            "a recipe",
+            "an exaggeration for “whatever happens”"
+          ],
+          "answer": "an exaggeration for “whatever happens”",
+          "why": "Extreme case."
+        },
+        {
+          "q": "哪怕失败一百次，我也会再试 means…",
+          "en": "",
+          "options": [
+            "Even if I fail a hundred times, I'll try again.",
+            "I failed a hundred times.",
+            "I won't try.",
+            "Because I failed…"
+          ],
+          "answer": "Even if I fail a hundred times, I'll try again.",
+          "why": "Strong supposition."
+        }
+      ]
     },
     {
       "id": "yuqi-buru",
-      "title": "与其…不如 — rather than (about HSK 5)",
-      "level": "advanced-intermediate"
+      "title": "与其…不如 — rather than",
+      "particle": "与其・不如",
+      "summary": "与其 A 不如 B: B is better than A. (about HSK 5)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>与其</b> (yǔqí) A, <b>不如</b> (bùrú) B: rather than A, better to B. The preferred option comes second.",
+          "examples": [
+            [
+              "{与其}在家等，{不如}出去找。",
+              "Yǔqí zài jiā děng, bùrú chūqu zhǎo.",
+              "Rather than wait at home, better to go out and look."
+            ],
+            [
+              "{与其}抱怨，{不如}想办法。",
+              "Yǔqí bàoyuàn, bùrú xiǎng bànfǎ.",
+              "Rather than complain, find a solution."
+            ]
+          ]
+        },
+        {
+          "h": "Order matters",
+          "p": "English “I'd rather B than A” puts B first; Chinese 与其 A 不如 B puts the rejected option first. 宁可 A 也不 B means “would rather A than B” with A preferred.",
+          "examples": [
+            [
+              "我{宁可}走路，{也不}坐他的车。",
+              "Wǒ nìngkě zǒulù, yě bú zuò tā de chē.",
+              "I'd rather walk than ride in his car."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "与其坐车，＿走路。",
+          "en": "Better to walk than take the bus.",
+          "options": ["不如", "而且", "但是", "所以"],
+          "answer": "不如",
+          "why": "与其…不如."
+        },
+        {
+          "q": "In 与其 A 不如 B, which is preferred?",
+          "en": "",
+          "options": ["A", "B", "Neither", "Both"],
+          "answer": "B",
+          "why": "The second."
+        },
+        {
+          "q": "宁可 A 也不 B: which is preferred?",
+          "en": "",
+          "options": ["B", "Neither", "A", "Both"],
+          "answer": "A",
+          "why": "宁可 marks the choice."
+        },
+        {
+          "q": "与其后悔，不如现在努力 means…",
+          "en": "",
+          "options": [
+            "Regret and work hard.",
+            "Don't work hard.",
+            "Regret is better.",
+            "Rather than regret, work hard now."
+          ],
+          "answer": "Rather than regret, work hard now.",
+          "why": "Preferred: 努力."
+        },
+        {
+          "q": "Which is right?",
+          "en": "Better to ask than guess.",
+          "options": ["与其猜，不如问。", "与其问，不如猜。", "不如猜，与其问。", "与其猜而且问。"],
+          "answer": "与其猜，不如问。",
+          "why": "Rejected first, preferred after 不如."
+        }
+      ]
     },
     {
       "id": "fei-buke",
-      "title": "非…不可 — simply must (about HSK 5)",
-      "level": "advanced-intermediate"
+      "title": "非…不可 — simply must",
+      "particle": "非・不可",
+      "summary": "非 X 不可: X is a must, no way around it. (about HSK 5)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>非…不可</b> (fēi…bùkě), literally “not X not acceptable”, is a strong must or a firm prediction. 非 goes before the verb; 不可 closes the clause.",
+          "examples": [
+            [
+              "这件事{非}你去{不可}。",
+              "Zhè jiàn shì fēi nǐ qù bùkě.",
+              "Only you can do this; you have to go."
+            ],
+            [
+              "我今天{非}见到他{不可}。",
+              "Wǒ jīntiān fēi jiàn dào tā bùkě.",
+              "I absolutely have to see him today."
+            ]
+          ]
+        },
+        {
+          "h": "Prediction",
+          "p": "It can also predict a certain result: 不带伞非淋湿不可, without an umbrella you'll definitely get soaked. Speech sometimes shortens to 非…: 他非要去.",
+          "examples": [
+            [
+              "不穿外套，{非}感冒{不可}。",
+              "Bù chuān wàitào, fēi gǎnmào bùkě.",
+              "Without a coat you're bound to catch cold."
+            ],
+            ["他{非要}去。", "Tā fēi yào qù.", "He insists on going."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "这次考试我非通过＿。",
+          "en": "I simply must pass this exam.",
+          "options": ["不可", "不行了", "可以", "也"],
+          "answer": "不可",
+          "why": "非…不可."
+        },
+        {
+          "q": "非…不可 can express…",
+          "en": "",
+          "options": [
+            "a possibility",
+            "a must, or a certain outcome",
+            "a past event",
+            "a question"
+          ],
+          "answer": "a must, or a certain outcome",
+          "why": "Strong necessity or prediction."
+        },
+        {
+          "q": "他非要买 means…",
+          "en": "",
+          "options": [
+            "He doesn't want to buy it.",
+            "He can't buy it.",
+            "He insists on buying it.",
+            "He bought it."
+          ],
+          "answer": "He insists on buying it.",
+          "why": "非要 = insist."
+        },
+        {
+          "q": "不早点走，非迟到不可 means…",
+          "en": "",
+          "options": [
+            "You won't be late.",
+            "Leave late.",
+            "Being late is fine.",
+            "If you don't leave early, you'll definitely be late."
+          ],
+          "answer": "If you don't leave early, you'll definitely be late.",
+          "why": "Prediction."
+        },
+        {
+          "q": "Where does 非 go?",
+          "en": "",
+          "options": [
+            "before the verb or subject it insists on",
+            "at the very end",
+            "after 不可",
+            "after the object only"
+          ],
+          "answer": "before the verb or subject it insists on",
+          "why": "非 + verb … 不可."
+        }
+      ]
     },
     {
       "id": "zhiyu",
-      "title": "至于 — as for (about HSK 5)",
-      "level": "advanced-intermediate"
+      "title": "至于 — as for",
+      "particle": "至于",
+      "summary": "至于 switches to a related topic, or (in 不至于) says it won't go that far. (about HSK 5)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>至于</b> (zhìyú) at the start of a clause turns to a new, related topic: as for.",
+          "examples": [
+            [
+              "我们先定时间，{至于}地点，以后再说。",
+              "Wǒmen xiān dìng shíjiān, zhìyú dìdiǎn, yǐhòu zài shuō.",
+              "Let's fix the time first; as for the place, later."
+            ],
+            [
+              "他会来，{至于}什么时候来，我不知道。",
+              "Tā huì lái, zhìyú shénme shíhou lái, wǒ bù zhīdao.",
+              "He'll come; as for when, I don't know."
+            ]
+          ]
+        },
+        {
+          "h": "不至于 — not as bad as that",
+          "p": "<b>不至于</b> means it won't reach that point: 他不至于生气吧, surely he won't get angry.",
+          "examples": [
+            [
+              "一点小事，{不至于}吵架吧。",
+              "Yìdiǎn xiǎo shì, bú zhìyú chǎojià ba.",
+              "Such a small thing surely won't lead to a quarrel."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我同意这个计划，＿钱的问题，我们再讨论。",
+          "en": "I agree with the plan; as for money, we'll discuss it later.",
+          "options": ["至于", "对于", "由于", "为了"],
+          "answer": "至于",
+          "why": "Switching topic: 至于."
+        },
+        {
+          "q": "不至于 means…",
+          "en": "",
+          "options": ["not only", "it won't go that far", "not until", "regardless"],
+          "answer": "it won't go that far",
+          "why": "A softening judgement."
+        },
+        {
+          "q": "至于 vs 对于",
+          "en": "",
+          "options": [
+            "same",
+            "至于 is a cause",
+            "至于 switches to a new topic; 对于 names the topic of a view",
+            "对于 is a contrast"
+          ],
+          "answer": "至于 switches to a new topic; 对于 names the topic of a view",
+          "why": "Different jobs."
+        },
+        {
+          "q": "他不至于忘了吧 means…",
+          "en": "",
+          "options": [
+            "He definitely forgot.",
+            "He forgot until now.",
+            "As for him, he forgot.",
+            "Surely he won't have forgotten."
+          ],
+          "answer": "Surely he won't have forgotten.",
+          "why": "不至于 + 吧."
+        },
+        {
+          "q": "至于 usually comes…",
+          "en": "",
+          "options": [
+            "at the start of a later clause",
+            "at the very end",
+            "after the verb",
+            "between verb and object"
+          ],
+          "answer": "at the start of a later clause",
+          "why": "A topic switch."
+        }
+      ]
     },
     {
       "id": "er-written",
-      "title": "而 — and, but (written) (about HSK 5–6)",
-      "level": "advanced-intermediate"
+      "title": "而 — and, but (written)",
+      "particle": "而",
+      "summary": "而 joins clauses in writing: “and yet”, “whereas”, or “and so”. (about HSK 5–6)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>而</b> (ér) is a written linker. Between contrasting clauses it means whereas or but: 南方多雨，而北方干燥.",
+          "examples": [
+            [
+              "南方多雨，{而}北方干燥。",
+              "Nánfāng duō yǔ, ér běifāng gānzào.",
+              "The south is rainy, whereas the north is dry."
+            ],
+            [
+              "他说要来，{而}最后没来。",
+              "Tā shuō yào lái, ér zuìhòu méi lái.",
+              "He said he'd come, but in the end he didn't."
+            ]
+          ]
+        },
+        {
+          "h": "Linking manner and result",
+          "p": "而 also links a manner to an action, or a cause to its result, in set phrases: 因…而… (because of … therefore), 为…而… (for … to).",
+          "examples": [
+            [
+              "他{因}病{而}缺席。",
+              "Tā yīn bìng ér quēxí.",
+              "He was absent owing to illness."
+            ],
+            [
+              "为理想{而}奋斗",
+              "wèi lǐxiǎng ér fèndòu",
+              "to strive for one's ideals"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "城市生活很方便，＿农村生活很安静。",
+          "en": "City life is convenient, whereas country life is quiet.",
+          "options": ["而", "和", "跟", "都"],
+          "answer": "而",
+          "why": "Contrast in writing: 而."
+        },
+        {
+          "q": "因…＿…",
+          "en": "because of … therefore",
+          "options": ["就", "而", "才", "所以"],
+          "answer": "而",
+          "why": "Set frame 因…而…."
+        },
+        {
+          "q": "而 is mainly…",
+          "en": "",
+          "options": ["slang", "for questions", "written", "for numbers"],
+          "answer": "written",
+          "why": "A written linker."
+        },
+        {
+          "q": "他因迟到而被批评 means…",
+          "en": "",
+          "options": [
+            "He was late and praised.",
+            "Although late, he was praised.",
+            "He'll be late.",
+            "He was criticised for being late."
+          ],
+          "answer": "He was criticised for being late.",
+          "why": "因…而."
+        },
+        {
+          "q": "Which is NOT a meaning of 而?",
+          "en": "",
+          "options": [
+            "before a noun list like “and” in 我和你",
+            "whereas",
+            "and yet",
+            "and so (in set frames)"
+          ],
+          "answer": "before a noun list like “and” in 我和你",
+          "why": "和 joins nouns; 而 joins clauses."
+        }
+      ]
     },
     {
       "id": "hekuang",
-      "title": "何况 — let alone (about HSK 5–6)",
-      "level": "advanced-intermediate"
+      "title": "何况 — let alone",
+      "particle": "何况・更何况",
+      "summary": "A is hard, 何况 B: B is even more so. (about HSK 5–6)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>何况</b> (hékuàng) means let alone, much less. The first clause names an easier case; 何况 adds the harder one.",
+          "examples": [
+            [
+              "大人都搬不动，{何况}孩子呢？",
+              "Dàrén dōu bān bu dòng, hékuàng háizi ne?",
+              "Even adults can't move it, let alone children."
+            ],
+            [
+              "这个问题老师都不会，{更何况}我们。",
+              "Zhège wèntí lǎoshī dōu bú huì, gèng hékuàng wǒmen.",
+              "Even the teacher can't do this question, let alone us."
+            ]
+          ]
+        },
+        {
+          "h": "Adding a reason",
+          "p": "何况 can also add an extra reason: what's more. 而且 is a neutral alternative.",
+          "examples": [
+            [
+              "太晚了，{何况}还在下雨，明天再去吧。",
+              "Tài wǎn le, hékuàng hái zài xià yǔ, míngtiān zài qù ba.",
+              "It's too late, and what's more it's raining; go tomorrow."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "他连中文都说不好，＿日语呢？",
+          "en": "He can't even speak Chinese well, let alone Japanese.",
+          "options": ["何况", "因此", "所以", "然后"],
+          "answer": "何况",
+          "why": "Let alone: 何况."
+        },
+        {
+          "q": "何况 often follows a clause with…",
+          "en": "",
+          "options": ["如果", "都 or 连…都", "因为", "吗"],
+          "answer": "都 or 连…都",
+          "why": "An easier case first."
+        },
+        {
+          "q": "更何况 means…",
+          "en": "",
+          "options": ["and then", "instead", "let alone, much less", "in order to"],
+          "answer": "let alone, much less",
+          "why": "Emphatic 何况."
+        },
+        {
+          "q": "何况 can also mean…",
+          "en": "",
+          "options": ["although", "before", "since", "what's more (adding a reason)"],
+          "answer": "what's more (adding a reason)",
+          "why": "Extra reason."
+        },
+        {
+          "q": "我们都没去过，何况他 means…",
+          "en": "",
+          "options": [
+            "Even we haven't been, let alone him.",
+            "He has been, unlike us.",
+            "Neither went, because of him.",
+            "He went with us."
+          ],
+          "answer": "Even we haven't been, let alone him.",
+          "why": "何况 = much less."
+        }
+      ]
     },
     {
       "id": "jiang-formal",
-      "title": "将 — will (formal) (about HSK 5–6)",
-      "level": "advanced-intermediate"
+      "title": "将 — will (formal)",
+      "particle": "将・将要",
+      "summary": "将 is a written “will”; 将 + noun is also a written 把. (about HSK 5–6)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "In writing and news, <b>将</b> (jiāng) before a verb means will: 会议将于明天举行, the meeting will be held tomorrow. 将要 is about to.",
+          "examples": [
+            [
+              "会议{将}于明天举行。",
+              "Huìyì jiāng yú míngtiān jǔxíng.",
+              "The meeting will be held tomorrow."
+            ],
+            [
+              "列车{将要}到站。",
+              "Lièchē jiāngyào dào zhàn.",
+              "The train will soon arrive at the station."
+            ]
+          ]
+        },
+        {
+          "h": "将 as written 把",
+          "p": "Before a noun, 将 works like 把: 请将门关好, please close the door properly. You'll see it on signs and forms.",
+          "examples": [
+            [
+              "请{将}垃圾放入垃圾桶。",
+              "Qǐng jiāng lājī fàng rù lājītǒng.",
+              "Please put rubbish in the bin."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "新机场＿于明年开放。",
+          "en": "The new airport will open next year.",
+          "options": ["将", "把", "被", "让"],
+          "answer": "将",
+          "why": "Written future: 将."
+        },
+        {
+          "q": "请＿手机调成静音。",
+          "en": "Please switch your phone to silent.",
+          "options": ["被", "将", "给", "由"],
+          "answer": "将",
+          "why": "Written 把: 将."
+        },
+        {
+          "q": "将 is typical of…",
+          "en": "",
+          "options": [
+            "chatting with friends",
+            "children's speech",
+            "news and notices",
+            "questions"
+          ],
+          "answer": "news and notices",
+          "why": "Formal register."
+        },
+        {
+          "q": "将于 means…",
+          "en": "",
+          "options": [
+            "was held",
+            "is held every year",
+            "by whom",
+            "will (take place) on/at"
+          ],
+          "answer": "will (take place) on/at",
+          "why": "将 + 于 + time."
+        },
+        {
+          "q": "将要 means…",
+          "en": "",
+          "options": ["about to (formal)", "already", "never", "used to"],
+          "answer": "about to (formal)",
+          "why": "Near future."
+        }
+      ]
     },
     {
       "id": "yi-wei",
-      "title": "以…为 — take … as (about HSK 6)",
-      "level": "advanced"
+      "title": "以…为 — take … as",
+      "particle": "以・为",
+      "summary": "以 A 为 B: take A as B, treat A as B. (about HSK 6)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>以…为…</b> (yǐ…wéi…) is written: 以 A 为 B, take A as B. It shows up in mottos and formal descriptions.",
+          "examples": [
+            [
+              "我们{以}学生{为}中心。",
+              "Wǒmen yǐ xuésheng wéi zhōngxīn.",
+              "We put students at the centre."
+            ],
+            [
+              "他{以}教书{为}生。",
+              "Tā yǐ jiāoshū wéi shēng.",
+              "He makes his living by teaching."
+            ]
+          ]
+        },
+        {
+          "h": "Set phrases",
+          "p": "以…为主 (mainly), 以…为例 (take … as an example), 以…为荣 (be proud of).",
+          "examples": [
+            ["{以}北京{为}例", "yǐ Běijīng wéi lì", "taking Beijing as an example"],
+            [
+              "这里的菜{以}辣{为}主。",
+              "Zhèlǐ de cài yǐ là wéi zhǔ.",
+              "The food here is mainly spicy."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "以安全＿第一",
+          "en": "safety first",
+          "options": ["为", "是", "在", "被"],
+          "answer": "为",
+          "why": "以…为."
+        },
+        {
+          "q": "以…为例 means…",
+          "en": "",
+          "options": [
+            "because of …",
+            "take … as an example",
+            "in order to …",
+            "except …"
+          ],
+          "answer": "take … as an example",
+          "why": "例 = example."
+        },
+        {
+          "q": "以…为主 means…",
+          "en": "",
+          "options": ["only", "never", "mainly", "always first"],
+          "answer": "mainly",
+          "why": "主 = main."
+        },
+        {
+          "q": "以 A 为 B is…",
+          "en": "",
+          "options": ["spoken slang", "a question form", "a passive", "written"],
+          "answer": "written",
+          "why": "Formal register."
+        },
+        {
+          "q": "我们以你为荣 means…",
+          "en": "",
+          "options": [
+            "We're proud of you.",
+            "We take you to Rong.",
+            "We follow you.",
+            "We're ashamed."
+          ],
+          "answer": "We're proud of you.",
+          "why": "以…为荣 = proud of."
+        }
+      ]
     },
     {
       "id": "suo-written",
-      "title": "所 — that which (written) (about HSK 6)",
-      "level": "advanced"
+      "title": "所 — that which (written)",
+      "particle": "所・所…的",
+      "summary": "所 + verb (+ 的) makes “what is …ed” in writing. (about HSK 6)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>所</b> (suǒ) before a verb turns it into “what is …”: 我所知道的, what I know. It's formal; spoken Chinese just drops it.",
+          "examples": [
+            [
+              "这是我{所}知道的。",
+              "Zhè shì wǒ suǒ zhīdao de.",
+              "This is what I know."
+            ],
+            [
+              "大家{所}关心的问题",
+              "dàjiā suǒ guānxīn de wèntí",
+              "the issues everyone is concerned about"
+            ]
+          ]
+        },
+        {
+          "h": "为…所 and set phrases",
+          "p": "为 A 所 B is a written passive: 为人所知, known by people. Also 所有 (all), 所谓 (so-called), 众所周知 (as everyone knows).",
+          "examples": [
+            [
+              "{众所周知}，地球是圆的。",
+              "Zhòngsuǒzhōuzhī, dìqiú shì yuán de.",
+              "As everyone knows, the earth is round."
+            ],
+            [
+              "这首诗{为}人{所}熟知。",
+              "Zhè shǒu shī wéi rén suǒ shúzhī.",
+              "This poem is widely known."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "这就是我们＿需要的。",
+          "en": "This is exactly what we need.",
+          "options": ["所", "被", "把", "将"],
+          "answer": "所",
+          "why": "所 + verb + 的."
+        },
+        {
+          "q": "为人＿知",
+          "en": "known by people",
+          "options": ["被", "所", "了", "的"],
+          "answer": "所",
+          "why": "Written passive 为…所."
+        },
+        {
+          "q": "所 is…",
+          "en": "",
+          "options": [
+            "required in speech",
+            "a question word",
+            "written; speech usually drops it",
+            "a measure word"
+          ],
+          "answer": "written; speech usually drops it",
+          "why": "Formal."
+        },
+        {
+          "q": "所谓 means…",
+          "en": "",
+          "options": ["everyone", "therefore", "all", "so-called"],
+          "answer": "so-called",
+          "why": "A set word."
+        },
+        {
+          "q": "众所周知 means…",
+          "en": "",
+          "options": ["as everyone knows", "nobody knows", "as I said", "in conclusion"],
+          "answer": "as everyone knows",
+          "why": "Set phrase."
+        }
+      ]
     },
     {
       "id": "yizhiyu",
-      "title": "以至于 — to the point that (about HSK 6)",
-      "level": "advanced"
+      "title": "以至于 — to the point that",
+      "particle": "以至・以至于",
+      "summary": "以至于 introduces an extreme result. (about HSK 6)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>以至于</b> (yǐzhìyú) or 以至 introduces a result that goes very far: so much that.",
+          "examples": [
+            [
+              "他太专心了，{以至于}没听见电话。",
+              "Tā tài zhuānxīn le, yǐzhìyú méi tīngjiàn diànhuà.",
+              "He was so focused that he didn't hear the phone."
+            ],
+            [
+              "雨下得很大，{以至于}很多路被淹了。",
+              "Yǔ xià de hěn dà, yǐzhìyú hěn duō lù bèi yān le.",
+              "It rained so hard that many roads flooded."
+            ]
+          ]
+        },
+        {
+          "h": "以致 — with a bad result",
+          "p": "<b>以致</b> (yǐzhì) sounds the same but is used for bad consequences: 他粗心大意，以致出了事故. 以至 can also mean “up to” in ranges.",
+          "examples": [
+            [
+              "他太大意，{以致}出了错。",
+              "Tā tài dàyi, yǐzhì chū le cuò.",
+              "He was careless, which led to a mistake."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "他工作太忙，＿忘了吃饭。",
+          "en": "He was so busy that he forgot to eat.",
+          "options": ["以至于", "因为", "为了", "除了"],
+          "answer": "以至于",
+          "why": "Extreme result."
+        },
+        {
+          "q": "以致 is usually for…",
+          "en": "",
+          "options": ["a good wish", "a bad consequence", "a cause", "a condition"],
+          "answer": "a bad consequence",
+          "why": "Negative result."
+        },
+        {
+          "q": "以至于 follows…",
+          "en": "",
+          "options": [
+            "the result, introducing a cause",
+            "a question",
+            "the cause, introducing a result",
+            "a noun only"
+          ],
+          "answer": "the cause, introducing a result",
+          "why": "Cause, then 以至于 + result."
+        },
+        {
+          "q": "天气太冷，以至于河都结冰了 means…",
+          "en": "",
+          "options": [
+            "The river froze because it was warm.",
+            "It's cold but the river didn't freeze.",
+            "Despite the cold…",
+            "It was so cold that even the river froze."
+          ],
+          "answer": "It was so cold that even the river froze.",
+          "why": "Extreme result."
+        },
+        {
+          "q": "Which is closest to 以至于?",
+          "en": "",
+          "options": ["so … that", "because", "although", "as long as"],
+          "answer": "so … that",
+          "why": "Result linker."
+        }
+      ]
     },
     {
       "id": "zhi-written",
-      "title": "之 — classical \"of\" in modern writing (about HSK 7–9)",
-      "level": "advanced"
+      "title": "之 — classical “of” in modern writing",
+      "particle": "之",
+      "summary": "之 is a written 的, and appears in many fixed phrases. (about HSK 7–9)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>之</b> (zhī) is classical Chinese for 的. Modern writing keeps it in set forms: 之一 (one of), 之前 / 之后 (before / after), 三分之一 (one third).",
+          "examples": [
+            [
+              "长城是世界奇迹{之一}。",
+              "Chángchéng shì shìjiè qíjì zhī yī.",
+              "The Great Wall is one of the wonders of the world."
+            ],
+            ["三分{之}一", "sān fēn zhī yī", "one third"],
+            ["会议{之}后", "huìyì zhī hòu", "after the meeting"]
+          ]
+        },
+        {
+          "h": "之 in titles and idioms",
+          "p": "之 makes a phrase feel formal: 父母之爱 (parents' love), 无价之宝 (priceless treasure). Fractions are always 分之.",
+          "examples": [
+            ["无价{之}宝", "wújià zhī bǎo", "a priceless treasure"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "他是我最好的朋友＿一。",
+          "en": "He's one of my best friends.",
+          "options": ["之", "的", "地", "得"],
+          "answer": "之",
+          "why": "之一 = one of."
+        },
+        {
+          "q": "“Two thirds” is…",
+          "en": "",
+          "options": ["二分之三", "三分之二", "三之二分", "二三分之"],
+          "answer": "三分之二",
+          "why": "Denominator first: 三分之二."
+        },
+        {
+          "q": "之 is a written form of…",
+          "en": "",
+          "options": ["了", "是", "的", "在"],
+          "answer": "的",
+          "why": "Classical “of”."
+        },
+        {
+          "q": "之前 means…",
+          "en": "",
+          "options": ["after", "between", "during", "before"],
+          "answer": "before",
+          "why": "之前 / 之后."
+        },
+        {
+          "q": "Which uses 之 naturally?",
+          "en": "",
+          "options": ["百分之五十", "我之书很好 in speech", "之你去吧", "好之"],
+          "answer": "百分之五十",
+          "why": "Percentages use 百分之."
+        }
+      ]
     },
     {
       "id": "qi-written",
-      "title": "其 — its, their (written) (about HSK 7–9)",
-      "level": "advanced"
+      "title": "其 — its, their (written)",
+      "particle": "其・其中・其他",
+      "summary": "其 is a written pronoun: his, her, its, their. (about HSK 7–9)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>其</b> (qí) refers back to something already mentioned: its, their, his, her. It's written; speech uses 他的 or 它的.",
+          "examples": [
+            [
+              "该公司及{其}员工",
+              "gāi gōngsī jí qí yuángōng",
+              "the company and its staff"
+            ],
+            ["尊重{其}选择", "zūnzhòng qí xuǎnzé", "respect his/her choice"]
+          ]
+        },
+        {
+          "h": "Common words with 其",
+          "p": "其中 (among them), 其他 / 其它 (other), 其实 (actually), 尤其 (especially), 极其 (extremely).",
+          "examples": [
+            [
+              "我们班有三十人，{其中}十个是留学生。",
+              "Wǒmen bān yǒu sānshí rén, qízhōng shí ge shì liúxuéshēng.",
+              "Our class has thirty people, ten of them international students."
+            ],
+            [
+              "{其实}我不太喜欢。",
+              "Qíshí wǒ bú tài xǐhuan.",
+              "Actually, I don't like it much."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "我有五本书，＿两本是中文的。",
+          "en": "I have five books, two of which are in Chinese.",
+          "options": ["其中", "其他", "其实", "其次"],
+          "answer": "其中",
+          "why": "Among them: 其中."
+        },
+        {
+          "q": "＿他人",
+          "en": "other people",
+          "options": ["之", "其", "所", "而"],
+          "answer": "其",
+          "why": "其他人 = other people."
+        },
+        {
+          "q": "其 in 父母及其子女 means…",
+          "en": "",
+          "options": ["his only", "our", "their", "which"],
+          "answer": "their",
+          "why": "其 = their (children)."
+        },
+        {
+          "q": "＿我不想去。",
+          "en": "Actually, I don't want to go.",
+          "options": ["其中", "其他", "尤其", "其实"],
+          "answer": "其实",
+          "why": "其实 = actually."
+        },
+        {
+          "q": "其 is…",
+          "en": "",
+          "options": ["written", "casual", "a question word", "a measure word"],
+          "answer": "written",
+          "why": "Speech uses 他的/它的."
+        }
+      ]
     },
     {
       "id": "wuyi",
-      "title": "无疑 — beyond doubt (about HSK 7–9)",
-      "level": "advanced"
+      "title": "无疑 — beyond doubt",
+      "particle": "无疑・毫无疑问",
+      "summary": "无疑 says something is certainly so. (about HSK 7–9)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>无疑</b> (wúyí), “without doubt”, is a written adverb for a confident judgement: 这无疑是个好消息.",
+          "examples": [
+            [
+              "这{无疑}是一个好消息。",
+              "Zhè wúyí shì yí ge hǎo xiāoxi.",
+              "This is undoubtedly good news."
+            ],
+            [
+              "他的成功{无疑}给了大家信心。",
+              "Tā de chénggōng wúyí gěi le dàjiā xìnxīn.",
+              "His success undoubtedly gave everyone confidence."
+            ]
+          ]
+        },
+        {
+          "h": "Related",
+          "p": "毫无疑问 (beyond any doubt) and 显然 (obviously) are close. 难免 means “hard to avoid”, the other side of certainty.",
+          "examples": [
+            [
+              "{毫无疑问}，他是最好的。",
+              "Háo wú yíwèn, tā shì zuì hǎo de.",
+              "Without a doubt, he's the best."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "这＿是今年最好的电影。",
+          "en": "This is undoubtedly the best film this year.",
+          "options": ["无疑", "以免", "何况", "至于"],
+          "answer": "无疑",
+          "why": "Certainty: 无疑."
+        },
+        {
+          "q": "无疑 means…",
+          "en": "",
+          "options": ["perhaps", "undoubtedly", "let alone", "so that"],
+          "answer": "undoubtedly",
+          "why": "Without doubt."
+        },
+        {
+          "q": "毫无疑问 is…",
+          "en": "",
+          "options": [
+            "a question",
+            "“not at all”",
+            "a stronger “beyond any doubt”",
+            "a greeting"
+          ],
+          "answer": "a stronger “beyond any doubt”",
+          "why": "Emphatic certainty."
+        },
+        {
+          "q": "无疑 is mostly…",
+          "en": "",
+          "options": ["slang", "for questions", "for orders", "written"],
+          "answer": "written",
+          "why": "Formal register."
+        },
+        {
+          "q": "显然 is close to…",
+          "en": "",
+          "options": ["obviously", "never", "recently", "probably not"],
+          "answer": "obviously",
+          "why": "Another confident adverb."
+        }
+      ]
     }
   ]
 }
