@@ -6,7 +6,7 @@ meanings, into languages/chinese/vocab.jsonl.
     python3 tools/importers/cedict.py
 
 There is no clearly licensed HSK or TOCFL list, so words come by frequency
-instead, and each gets an estimated HSK band from its rank (see HSK below): wordfreq's most frequent Chinese words (CC BY-SA 4.0), kept when
+instead: wordfreq's most frequent Chinese words (CC BY-SA 4.0), kept when
 CC-CEDICT (CC BY-SA 4.0) has them. CC-CEDICT is read from the cc-cedict npm
 package at a pinned version (its build of the 2026-01-04 dictionary), checked
 against the registry's integrity hash, fetched into cache/ and never committed.
@@ -49,20 +49,12 @@ NOTES = [
     "The decks Most common words and Common words are imported by tools/importers/cedict.py: "
     "wordfreq's most frequent Chinese words (CC BY-SA 4.0), with pinyin and meanings from "
     "CC-CEDICT (MDBG, CC BY-SA 4.0).",
-    "HSK levels are estimates, not the official list (no HSK list with a reuse license exists): a word's "
-    "frequency rank is placed against the official cumulative word counts per band (2025 syllabus: 300, 500, "
-    "1,000, 2,000, 3,600, 5,400, 11,000), and a word near a boundary gets both bands, as in 2/3.",
     "Frequency tags come from wordfreq (CC BY-SA 4.0).",
 ]
 # Words whose usual reading isn't the one with the most CC-CEDICT senses.
 PREFER = {"了": "le5", "着": "zhe5", "没": "mei2", "么": "me5", "南": "nan2", "得": "de5", "起来": "qi3 lai5",
           "告诉": "gao4 su5", "重": "zhong4", "雨": "yu3", "卡": "ka3", "圈": "quan1", "陆": "lu4", "炮": "pao4",
           "吓": "xia4", "空": "kong1", "当日": "dang1 ri4", "什": "shen2", "说法": "shuo1 fa3", "啊": "a5"}
-# HSK 3.0 cumulative word counts per band (2025 syllabus). No HSK list with a
-# reuse license exists, so a word's HSK level is estimated from its frequency
-# rank against these counts; within 15% of a boundary it gets both bands ("2/3").
-HSK = [("1", 300), ("2", 500), ("3", 1000), ("4", 2000), ("5", 3600), ("6", 5400), ("7-9", 11000)]
-HSK_MARGIN = 0.15
 HAN = re.compile(r"^[㐀-鿿]+$")
 SKIP = re.compile(r"^(surname |(old |archaic |erhua |Japanese )?variant of |see |used in |abbr\. for |"
                   r"also written |CL:|\(old\)|\(archaic\)|\(dialect\)|\(Tw\))")
@@ -162,23 +154,11 @@ def pick(cands, word=None):
     return best[0], best[1], best[2][:4], others
 
 
-def hsk_estimate(rank):
-    """Estimated HSK band for the rank-th most frequent word (1-based), e.g. '3' or '2/3'."""
-    prev_name, prev = None, 0
-    for i, (name, top) in enumerate(HSK):
-        if rank <= top:
-            if prev_name and rank <= prev * (1 + HSK_MARGIN):
-                return f"{prev_name}/{name}"
-            nxt = HSK[i + 1][0] if i + 1 < len(HSK) else None
-            if nxt and rank > top * (1 - HSK_MARGIN):
-                return f"{name}/{nxt}"
-            return name
-        prev_name, prev = name, top
-    return None
-
-
 def build(header, entries, words, cedict, freq):
     own = [e for e in entries if not e["deck"].startswith("freq-")]
+    # No HSK level comes from frequency: news-heavy counts put 政府 at HSK 1
+    # and 喝 at HSK 4 (#41). Levels on the written decks are placed by hand and
+    # kept as they are.
     decks = [d for d in header["decks"] if not d["id"].startswith("freq-")]
     mine = {e["word"] for e in own}
     added = {band: [] for band, _, _ in DECKS}
@@ -192,11 +172,7 @@ def build(header, entries, words, cedict, freq):
         if not hit:
             continue
         taken += 1
-        level = hsk_estimate(taken)
         if w in mine:
-            for e in own:
-                if e["word"] == w and level:
-                    e.setdefault("level", {}).setdefault("hsk", level)
             continue
         band = freq(w)
         if band not in added:
@@ -208,8 +184,6 @@ def build(header, entries, words, cedict, freq):
         for _, opy, osenses in others[:2]:
             note.append(f"Also read {pinyin(opy)}: {joined(osenses[:2], 60)}.")
         e = {"id": f"freq-{band}/{w}", "deck": f"freq-{band}", "word": w, "reading": pinyin(py), "meaning": joined(s)}
-        if level:
-            e["level"] = {"hsk": level}
         if note:
             e["note"] = " ".join(note)
         added[band].append(e)
