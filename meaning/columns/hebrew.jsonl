@@ -1,0 +1,42 @@
+{"schema": "columns@1", "language": "hebrew", "notes": ["Modern Hebrew column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. Hebrew is written right to left without vowel points (matching languages/hebrew). The article ה- and the one-letter prepositions ב־ / ל־ / מ־ are their own tokens and glue to the next word. There is no present-tense \"to be\", so copula sentences are just pronoun + noun. Sources: forms match languages/hebrew/vocab.js and the Modern Hebrew grammar pack (אני סטודנט, קוראים לי…, בוקר טוב, תודה רבה, אני לא מבין, החשבון בבקשה, כמה זה עולה?)."], "sep": " "}
+{"sentence": "i-am-student", "t": [["אני", "ani", "i"], ["סטודנט", "student", "student"]], "end": "."}
+{"sentence": "name-anna", "t": [["קוראים", "kor'im", "name"], ["לי", "li", "i"], ["אנה", "Anna", "anna"]], "end": "."}
+{"sentence": "hello", "t": [["שלום", "shalom", "hello"]], "end": "."}
+{"sentence": "nice-to-meet-you", "t": [["נעים מאוד", "na'im me'od", "nice-to-meet-you"]], "end": "."}
+{"sentence": "good-morning", "t": [["בוקר", "boker", "morning"], ["טוב", "tov", "good"]], "end": "."}
+{"sentence": "thank-you", "t": [["תודה", "toda", "thanks"]], "end": "."}
+{"sentence": "thank-you-very-much", "t": [["תודה", "toda", "thanks"], ["רבה", "raba", "very-much"]], "end": "."}
+{"sentence": "dont-understand", "t": [["אני", "ani", "i"], ["לא", "lo", "not"], ["מבין", "mevin", "understand"]], "end": "."}
+{"sentence": "dont-know", "t": [["אני", "ani", "i"], ["לא", "lo", "not"], ["יודע", "yodea", "know"]], "end": "."}
+{"sentence": "speak-english", "t": [["אתה", "ata", "you"], ["מדבר", "medaber", "speak"], ["אנגלית", "anglit", "english"]], "end": "?"}
+{"sentence": "love-you", "t": [["אני", "ani", "i"], ["אוהב", "ohev", "love"], ["אותך", "otcha", "you"]], "end": "."}
+{"sentence": "like-coffee", "t": [["אני", "ani", "i"], ["אוהב", "ohev", "like"], ["קפה", "kafe", "coffee"]], "end": "."}
+{"sentence": "like-tea", "t": [["אני", "ani", "i"], ["אוהב", "ohev", "like"], ["תה", "te", "tea"]], "end": "."}
+{"sentence": "my-friend", "t": [["הוא", "hu", "he"], ["ה-", "ha", "@the"], ["חבר", "chaver", "friend"], ["שלי", "sheli", "i"]], "end": "."}
+{"sentence": "who-is-he", "t": [["מי", "mi", "who"], ["הוא", "hu", "he"]], "end": "?"}
+{"sentence": "where-live", "t": [["איפה", "eifo", "where"], ["אתה", "ata", "you"], ["גר", "gar", "live"]], "end": "?"}
+{"sentence": "from-egypt", "t": [["אני", "ani", "i"], ["מ-", "mi", "from"], ["מצרים", "Mitzrayim", "egypt"]], "end": "."}
+{"sentence": "this-is-book", "t": [["זה", "ze", "this"], ["ספר", "sefer", "book"]], "end": "."}
+{"sentence": "this-is-my-book", "t": [["זה", "ze", "this"], ["ה-", "ha", "@the"], ["ספר", "sefer", "book"], ["שלי", "sheli", "i"]], "end": "."}
+{"sentence": "drink-water", "t": [["אני", "ani", "i"], ["שותה", "shote", "drink"], ["מים", "mayim", "water"]], "end": "."}
+{"sentence": "drink-tea", "t": [["אני", "ani", "i"], ["שותה", "shote", "drink"], ["תה", "te", "tea"]], "end": "."}
+{"sentence": "want-coffee", "t": [["אני", "ani", "i"], ["רוצה", "rotze", "want"], ["קפה", "kafe", "coffee"]], "end": "."}
+{"sentence": "read-book", "t": [["אני", "ani", "i"], ["קורא", "kore", "read"], ["ספר", "sefer", "book"]], "end": "."}
+{"sentence": "cold-today", "t": [["היום", "hayom", "today"], ["קר", "kar", "cold"]], "end": "."}
+{"sentence": "hot-today", "t": [["היום", "hayom", "today"], ["חם", "cham", "hot"]], "end": "."}
+{"sentence": "what-time", "t": [["מה", "ma", "what"], ["ה-", "ha", "@the"], ["שעה", "sha'a", "time"]], "end": "?"}
+{"sentence": "house-big", "t": [["ה-", "ha", "@the"], ["בית", "bayit", "house"], ["גדול", "gadol", "big"]], "end": "."}
+{"sentence": "car-new", "t": [["ה-", "ha", "@the"], ["מכונית", "mechonit", "car"], ["חדשה", "chadasha", "new"]], "end": "."}
+{"sentence": "delicious", "t": [["טעים", "ta'im", "delicious"]], "end": "."}
+{"sentence": "food-tasty", "t": [["ה-", "ha", "@the"], ["אוכל", "ochel", "food"], ["מאוד", "me'od", "very"], ["טעים", "ta'im", "delicious"]], "end": "."}
+{"sentence": "where-station", "t": [["איפה", "eifo", "where"], ["ה-", "ha", "@the"], ["תחנה", "tachana", "station"]], "end": "?"}
+{"sentence": "where-toilet", "t": [["איפה", "eifo", "where"], ["ה-", "ha", "@the"], ["שירותים", "sherutim", "toilet"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["איפה", "eifo", "where"], ["ה-", "ha", "@the"], ["מלון", "malon", "hotel"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["כמה", "kama", "how-much"], ["זה", "ze", "this"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["כמה", "kama", "how-much"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["כמה", "kama", "how-much"], ["עולה", "ole", "cost"]], "end": "?"}
+{"sentence": "bill-please", "t": [["ה-", "ha", "@the"], ["חשבון", "cheshbon", "bill"], ["בבקשה", "bevakasha", "please"]], "end": "."}
+{"sentence": "go-school", "t": [["אני", "ani", "i"], ["הולך", "holech", "go"], ["ל-", "le", "@direction"], ["בית ספר", "beit sefer", "school"]], "end": "."}
+{"sentence": "going-home", "t": [["אני", "ani", "i"], ["הולך", "holech", "go"], ["הביתה", "habayta", "home"]], "end": "."}
+{"sentence": "we-going-home", "t": [["אנחנו", "anachnu", "we"], ["הולכים", "holchim", "go"], ["הביתה", "habayta", "home"]], "end": "."}
+{"sentence": "where-going", "t": [["לאן", "le'an", "where"], ["אתה", "ata", "you"], ["הולך", "holech", "go"]], "end": "?"}

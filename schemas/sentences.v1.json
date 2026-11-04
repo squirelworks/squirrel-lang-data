@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/squirelworks/squirrel-lang-data/schemas/sentences.v1.json",
+  "title": "sentences@1: the rows of the meaning matrix",
+  "description": "meaning/sentences.jsonl. The first line is the header, listing the packs in order; every later line is one sentence: its model English, other natural English and the content meanings every language's rendering must carry.",
+  "type": "object",
+  "properties": {
+    "header": {
+      "type": "object",
+      "required": ["schema", "packs"],
+      "additionalProperties": false,
+      "properties": {
+        "schema": { "const": "sentences@1" },
+        "notes": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "packs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["id", "title"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+              "title": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "required": ["id", "pack", "en", "m"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "pack": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "en": { "description": "The model English translation.", "type": "string", "minLength": 1 },
+        "also": { "description": "Other natural English for the same sentence. Every one must pass the translation checker in every language that renders the row.", "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "m": { "description": "The content meanings (meaning@1 ids) every rendering must carry, no more and no fewer.", "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" }, "uniqueItems": true }
+      }
+    }
+  }
+}

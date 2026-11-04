@@ -1,0 +1,22 @@
+{"schema": "columns@1", "language": "japanese", "notes": ["Japanese column of the meaning matrix. Written for this project. Tokens are [text, kana reading, meaning id]; romaji is made from the kana. Japanese usually leaves \"I\" and \"you\" to context: those go under implied."], "sep": ""}
+{"sentence": "i-am-student", "t": [["私", "わたし", "i"], ["は", "は", "@topic"], ["学生", "がくせい", "student"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "name-tanaka", "t": [["私", "わたし", "i"], ["の", "の", "@possessive"], ["名前", "なまえ", "name"], ["は", "は", "@topic"], ["田中", "たなか", "tanaka"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "nice-to-meet-you", "t": [["はじめまして", "はじめまして", "nice-to-meet-you"]], "end": "。"}
+{"sentence": "thank-you-very-much", "t": [["どうも", "どうも", "very-much"], ["ありがとう", "ありがとう", "thanks"], ["ございます", "ございます", "@polite"]], "end": "。"}
+{"sentence": "like-sushi", "t": [["寿司", "すし", "sushi"], ["が", "が", "@subject"], ["好き", "すき", "like"], ["です", "です", "@copula"]], "implied": ["i"], "end": "。"}
+{"sentence": "speak-english", "t": [["英語", "えいご", "english"], ["を", "を", "@object"], ["話します", "はなします", "speak"], ["か", "か", "@question"]], "implied": ["you"], "end": "。"}
+{"sentence": "dont-understand", "t": [["分かり", "わかり", "understand"], ["ません", "ません", "not"]], "implied": ["i"], "end": "。"}
+{"sentence": "this-is-book", "t": [["これ", "これ", "this"], ["は", "は", "@topic"], ["本", "ほん", "book"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "drink-water", "t": [["水", "みず", "water"], ["を", "を", "@object"], ["飲みます", "のみます", "drink"]], "implied": ["i"], "end": "。"}
+{"sentence": "hot-today", "t": [["今日", "きょう", "today"], ["は", "は", "@topic"], ["暑い", "あつい", "hot"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "there-is-cat", "t": [["猫", "ねこ", "cat"], ["が", "が", "@subject"], ["います", "います", "exist"]], "end": "。"}
+{"sentence": "lunch-restaurant", "t": [["レストラン", "レストラン", "restaurant"], ["で", "で", "@place"], ["昼ご飯", "ひるごはん", "lunch"], ["を", "を", "@object"], ["食べます", "たべます", "eat"]], "implied": ["i"], "end": "。"}
+{"sentence": "book-on-table", "t": [["テーブル", "テーブル", "table"], ["の", "の", "@of"], ["上", "うえ", "on"], ["に", "に", "@place"], ["本", "ほん", "book"], ["が", "が", "@subject"], ["あります", "あります", "exist"]], "end": "。"}
+{"sentence": "how-much-this", "t": [["これ", "これ", "this"], ["は", "は", "@topic"], ["いくら", "いくら", "how-much"], ["です", "です", "@copula"], ["か", "か", "@question"]], "end": "。"}
+{"sentence": "wait-moment", "t": [["ちょっと", "ちょっと", "moment"], ["待って", "まって", "wait"], ["ください", "ください", "please"]], "end": "。"}
+{"sentence": "where-station", "t": [["駅", "えき", "station"], ["は", "は", "@topic"], ["どこ", "どこ", "where"], ["です", "です", "@copula"], ["か", "か", "@question"]], "end": "。"}
+{"sentence": "where-toilet", "t": [["トイレ", "トイレ", "toilet"], ["は", "は", "@topic"], ["どこ", "どこ", "where"], ["です", "です", "@copula"], ["か", "か", "@question"]], "end": "。"}
+{"sentence": "go-school", "t": [["学校", "がっこう", "school"], ["に", "に", "@direction"], ["行きます", "いきます", "go"]], "implied": ["i"], "end": "。"}
+{"sentence": "bus-school", "t": [["バス", "バス", "bus"], ["で", "で", "@means"], ["学校", "がっこう", "school"], ["に", "に", "@direction"], ["行きます", "いきます", "go"]], "implied": ["i"], "end": "。"}
+{"sentence": "go-tokyo", "t": [["東京", "とうきょう", "tokyo"], ["に", "に", "@direction"], ["行き", "いき", "go"], ["たい", "たい", "want"], ["です", "です", "@polite"]], "implied": ["i"], "end": "。"}
+{"sentence": "came-train", "t": [["電車", "でんしゃ", "train"], ["で", "で", "@means"], ["来", "き", "come"], ["ました", "ました", "@past"]], "implied": ["i"], "end": "。"}
