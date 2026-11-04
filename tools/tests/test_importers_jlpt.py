@@ -30,6 +30,9 @@ class Import(unittest.TestCase):
         self.assertEqual(jlpt_tanos.meaning("unfortunately,Sorry, but...."), "unfortunately; Sorry, but....")
         self.assertEqual(jlpt_tanos.meaning("remnant, fragment"), "remnant; fragment")
         self.assertEqual(jlpt_tanos.meaning("10,000 yen"), "10,000 yen")
+        self.assertEqual(jlpt_tanos.meaning("to seek,to request,"), "to seek; to request")
+        self.assertEqual(jlpt_tanos.meaning(",pronunciation key"), "pronunciation key")
+        self.assertEqual(jlpt_tanos.meaning("to enter, to call on,"), "to enter; to call on")
 
     def test_build(self):
         header = {"schema": "vocab@1", "language": "japanese", "notes": ["Written for this project."],
