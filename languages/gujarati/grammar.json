@@ -4,16 +4,20 @@
   "notes": [
     "Gujarati first grammar for the Grammar Learner. Written for this project.",
     "Examples are [Gujarati, transliteration, English]; {braces} mark the point of the lesson.",
-    "Drills are { q, en, options, answer, why }; ＿ is the blank."
+    "Drills are { q, en, options, answer, why }; ＿ is the blank.",
+    "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
+    "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
+    "72 lessons, from A1 to C1. Lessons 7–72 were added to cover the rest of the beginner path and the main intermediate and advanced points."
   ],
   "title": "Gujarati first grammar",
-  "intro": "Gujarati puts the verb at the end and joins its postpositions straight onto the noun. It has three genders, masculine, feminine and neuter, and adjectives that end in a vowel change to match. These lessons cover “to be”, questions and saying no, the three genders, the present tense, in / on / from, and નો / ની / નું for “of”. The transliteration is simplified: a long vowel is doubled (aa, ii, uu) and n after a vowel marks a nasal sound.",
+  "intro": "Gujarati puts the verb at the end and joins its postpositions straight onto the noun. It has three genders, masculine, feminine and neuter, and adjectives that end in a vowel change to match. The 72 lessons run from A1 to C1. They start with “to be”, questions and saying no, the three genders, the present tense, in / on / from, and નો / ની / નું for “of”, then add the past with -એ for the doer, the future, જોઈએ and પડે for need and must, participles, જો … તો for “if” and કે for reported speech, and end with the passive, compound verbs, counterfactuals and the connectors of written Gujarati. The transliteration is simplified: a long vowel is doubled (aa, ii, uu) and n after a vowel marks a nasal sound.",
   "lessons": [
     {
       "id": "chhe",
       "title": "છું, છે, છો — “to be”",
       "particle": "છે",
-      "summary": "“Am / is / are” changes with the subject and goes at the end.",
+      "summary": "“Am / is / are” changes with the subject and goes at the end. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "<b>હું … છું</b> I am, <b>તું … છે</b> you are (intimate), <b>તે … છે</b> he/she/it is, <b>અમે … છીએ</b> we are, <b>તમે … છો</b> you are (polite or plural), <b>તેઓ … છે</b> they are.",
@@ -90,7 +94,8 @@
       "id": "questions",
       "title": "Questions and નથી",
       "particle": "શું નથી",
-      "summary": "શું at the start asks yes or no; નથી replaces છે to say “not”.",
+      "summary": "શું at the start asks yes or no; નથી replaces છે to say “not”. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Put <b>શું</b> at the start for a yes/no question. Question words go just before the verb: <b>શું</b> what, <b>કોણ</b> who, <b>ક્યાં</b> where, <b>ક્યારે</b> when, <b>કેમ</b> why / how, <b>કેટલું</b> how much.",
@@ -163,7 +168,8 @@
       "id": "gender",
       "title": "Three genders",
       "particle": "-ો -ી -ું",
-      "summary": "Masculine -ો, feminine -ી, neuter -ું; adjectives in a vowel match.",
+      "summary": "Masculine -ો, feminine -ી, neuter -ું; adjectives in a vowel match. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Many nouns show their gender by their ending: <b>-ો</b> (-o) masculine, <b>-ી</b> (-ii) feminine, <b>-ું</b> (-un) neuter. છોકરો boy, છોકરી girl, છોકરું child.",
@@ -225,7 +231,8 @@
       "id": "present",
       "title": "The present tense",
       "particle": "-ું છું",
-      "summary": "Stem + a person ending, then the matching form of છે.",
+      "summary": "Stem + a person ending, then the matching form of છે. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "For બોલવું (to speak): <b>હું બોલું છું</b>, <b>તું બોલે છે</b>, <b>તે બોલે છે</b>, <b>અમે બોલીએ છીએ</b>, <b>તમે બોલો છો</b>, <b>તેઓ બોલે છે</b>. The ending matches the ending of “to be”.",
@@ -297,7 +304,8 @@
       "id": "places",
       "title": "In, on, from: -માં, -પર, -થી",
       "particle": "-માં -થી",
-      "summary": "Postpositions join the noun as endings.",
+      "summary": "Postpositions join the noun as endings. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "<b>-માં</b> in, <b>-પર</b> (or ઉપર) on, <b>-થી</b> from or by, <b>-ને</b> to (a person) or the object, <b>-ની સાથે</b> with. They are written joined to the noun: ઘરમાં, in the house.",
@@ -366,7 +374,8 @@
       "id": "no-ni-nu",
       "title": "નો, ની, નું — of",
       "particle": "નો ની નું",
-      "summary": "“X’s Y”: the ending matches Y, the thing owned.",
+      "summary": "“X’s Y”: the ending matches Y, the thing owned. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Add <b>-નો</b> before a masculine noun, <b>-ની</b> before a feminine one, <b>-નું</b> before a neuter one, and <b>-ના</b> before a plural: રામ<b>નો</b> ભાઈ, રામ<b>ની</b> બહેન, રામ<b>નું</b> ઘર.",
@@ -428,6 +437,4929 @@
           "options": ["નું", "નો", "ની", "ના"],
           "answer": "નું",
           "why": "પુસ્તક (book) is neuter."
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "title": "Numbers: એક, બે, ત્રણ",
+      "particle": "એક・બે・દસ・સો",
+      "summary": "Counting uses એક, બે, ત્રણ… The number goes before the noun and the noun is plural above one: બે છોકરા. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>એક, બે, ત્રણ, ચાર, પાંચ, છ, સાત, આઠ, નવ, દસ</b>. Bigger: <b>વીસ</b> 20, <b>ત્રીસ</b> 30, <b>પચાસ</b> 50, <b>સો</b> 100, <b>હજાર</b> 1,000, <b>લાખ</b> 100,000. <b>એક</b> also works like \"a\": <b>એક</b> ઘર.",
+          "examples": [
+            ["{એક} ચા આપો.", "Ek chaa aapo.", "One tea, please."],
+            [
+              "મારે {ત્રણ} બાળકો છે.",
+              "Maare tran baalko chhe.",
+              "I have three children."
+            ]
+          ]
+        },
+        {
+          "h": "How many",
+          "p": "<b>કેટલા?</b> = how many? <b>કેટલું?</b> = how much? Money: <b>કેટલા રૂપિયા?</b> People: <b>બંને</b> (both), <b>ત્રણેય</b> (all three).",
+          "examples": [
+            ["આ {કેટલાનું} છે?", "Aa ketlaanun chhe?", "How much is this?"],
+            ["અમે {બંને} આવીશું.", "Ame banne aaviishun.", "We'll both come."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ કૉફી આપો.",
+          "en": "One coffee, please.",
+          "options": ["એક", "બે", "પહેલું", "એકલો"],
+          "answer": "એક",
+          "why": "One: એક."
+        },
+        {
+          "q": "હું ＿ વર્ષનો છું.",
+          "en": "I'm thirty.",
+          "options": ["ત્રણ", "ત્રીસ", "તેર", "ત્રણસો"],
+          "answer": "ત્રીસ",
+          "why": "30 = ત્રીસ."
+        },
+        {
+          "q": "＿ રૂપિયા.",
+          "en": "Fifty rupees.",
+          "options": ["પાંચ", "પાંચસો", "પચાસ", "પંદર"],
+          "answer": "પચાસ",
+          "why": "50 = પચાસ."
+        },
+        {
+          "q": "એક ＿ રૂપિયા.",
+          "en": "One thousand rupees.",
+          "options": ["સો", "લાખ", "દસ", "હજાર"],
+          "answer": "હજાર",
+          "why": "1,000 = હજાર."
+        },
+        {
+          "q": "આ ＿ છે?",
+          "en": "How much is this?",
+          "options": ["કેટલાનું", "કેટલા લોકો", "કોણ", "ક્યાં"],
+          "answer": "કેટલાનું",
+          "why": "How much: કેટલાનું."
+        }
+      ]
+    },
+    {
+      "id": "time-days",
+      "title": "The clock and the days: વાગ્યા, સોમવાર",
+      "particle": "વાગ્યા・વાગ્યે・વાર",
+      "summary": "The time is number + વાગ્યા: પાંચ વાગ્યા છે. \"At\" a time is વાગ્યે. Days end in -વાર: સોમવાર. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>કેટલા વાગ્યા?</b> = what time is it? <b>પાંચ વાગ્યા છે</b> = it's five. At: <b>પાંચ વાગ્યે</b>. <b>સવારે</b> in the morning, <b>બપોરે</b> at midday, <b>સાંજે</b> in the evening, <b>રાત્રે</b> at night.",
+          "examples": [
+            [
+              "હમણાં {કેટલા વાગ્યા} છે?",
+              "Hamnaan ketlaa vaagyaa chhe?",
+              "What time is it now?"
+            ],
+            [
+              "સવારે {આઠ વાગ્યે} આવજો.",
+              "Savaare aath vaagye aavjo.",
+              "Come at eight in the morning."
+            ]
+          ]
+        },
+        {
+          "h": "Days",
+          "p": "<b>રવિવાર</b> Sun, <b>સોમવાર</b> Mon, <b>મંગળવાર</b> Tue, <b>બુધવાર</b> Wed, <b>ગુરુવાર</b> Thu, <b>શુક્રવાર</b> Fri, <b>શનિવાર</b> Sat. On a day: <b>-એ</b>: <b>સોમવારે</b>. <b>ગઈ કાલે</b> yesterday, <b>આજે</b> today, <b>આવતી કાલે</b> tomorrow.",
+          "examples": [
+            [
+              "{રવિવારે} રજા છે.",
+              "Ravivaare rajaa chhe.",
+              "Sunday is a holiday."
+            ],
+            [
+              "{ગઈ કાલે} હું મંદિરે ગયો.",
+              "Gaii kaale hun mandire gayo.",
+              "Yesterday I went to the temple."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "હમણાં કેટલા ＿ છે?",
+          "en": "What time is it now?",
+          "options": ["વાગ્યા", "વાગ્યે", "વાર", "દિવસ"],
+          "answer": "વાગ્યા",
+          "why": "The time: વાગ્યા."
+        },
+        {
+          "q": "હું છ ＿ આવીશ.",
+          "en": "I'll come at six.",
+          "options": ["વાગ્યા", "વાગ્યે", "વારે", "કલાક"],
+          "answer": "વાગ્યે",
+          "why": "At: વાગ્યે."
+        },
+        {
+          "q": "આજે કયો ＿ છે?",
+          "en": "What day is it today?",
+          "options": ["વાગ્યો", "મહિનો", "વાર", "કલાક"],
+          "answer": "વાર",
+          "why": "Day of the week: વાર."
+        },
+        {
+          "q": "＿ હું ઑફિસ જઈશ.",
+          "en": "Tomorrow I'll go to the office.",
+          "options": ["ગઈ કાલે", "આજે સવારે ગયો", "હમણાં જ", "આવતી કાલે"],
+          "answer": "આવતી કાલે",
+          "why": "Tomorrow: આવતી કાલે."
+        },
+        {
+          "q": "＿ ઘરે રહું છું.",
+          "en": "I stay home on Sundays.",
+          "options": ["રવિવારે", "રવિવાર", "રવિવારનો", "રવિવારથી"],
+          "answer": "રવિવારે",
+          "why": "On a day: -એ."
+        }
+      ]
+    },
+    {
+      "id": "demonstratives",
+      "title": "This and that: આ, તે, પેલું",
+      "particle": "આ・તે・પેલું・અહીં・ત્યાં",
+      "summary": "આ is \"this\", તે or એ is \"that\", and પેલું is \"that one over there\". They work alone or before a noun: આ ઘર, પેલો છોકરો. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>આ</b> this, these; <b>તે</b> / <b>એ</b> that, he, she; <b>પેલો / પેલી / પેલું</b> that one there (it changes with gender). <b>આ</b> શું છે? <b>પેલી</b> છોકરી કોણ છે?",
+          "examples": [
+            ["{આ} શું છે?", "Aa shun chhe?", "What is this?"],
+            [
+              "{પેલી} દુકાન બંધ છે.",
+              "Pelii dukaan bandh chhe.",
+              "That shop over there is closed."
+            ]
+          ]
+        },
+        {
+          "h": "Here, there, like this",
+          "p": "<b>અહીં</b> here, <b>ત્યાં</b> there, <b>ક્યાં</b> where. <b>આવું</b> like this, <b>એવું</b> like that, <b>કેવું</b> what kind. <b>આમ</b> = this way.",
+          "examples": [
+            ["{અહીં} બેસો.", "Ahiin beso.", "Please sit here."],
+            ["{આવું} ન કરો.", "Aavun na karo.", "Don't do it like this."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ મારી બૅગ છે.",
+          "en": "This is my bag.",
+          "options": ["આ", "પેલો", "અહીં", "આવું"],
+          "answer": "આ",
+          "why": "This: આ."
+        },
+        {
+          "q": "＿ છોકરો કોણ છે?",
+          "en": "Who is that boy over there?",
+          "options": ["પેલી", "પેલો", "પેલું", "અહીં"],
+          "answer": "પેલો",
+          "why": "Masculine noun: પેલો."
+        },
+        {
+          "q": "બસ સ્ટૅન્ડ ＿ છે.",
+          "en": "The bus stand is there.",
+          "options": ["તે", "પેલું", "ત્યાં", "એવું"],
+          "answer": "ત્યાં",
+          "why": "There: ત્યાં."
+        },
+        {
+          "q": "＿ કરો.",
+          "en": "Do it like this.",
+          "options": ["આ", "અહીં", "પેલું", "આમ"],
+          "answer": "આમ",
+          "why": "This way: આમ."
+        },
+        {
+          "q": "＿ બેસો.",
+          "en": "Please sit here.",
+          "options": ["અહીં", "આ", "આમ", "ત્યાં ગયા"],
+          "answer": "અહીં",
+          "why": "Here: અહીં."
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "title": "Describing: સારો, સારી, સારું",
+      "particle": "-ો・-ી・-ું・-ા",
+      "summary": "Adjectives ending in -ો change with the noun: સારો છોકરો, સારી છોકરી, સારું ઘર, સારા છોકરા. Adjectives in other sounds never change: સુંદર, લાલ. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>સારો</b> (good), <b>મોટો</b> (big), <b>નાનો</b> (small), <b>નવો</b> (new), <b>જૂનો</b> (old) take <b>-ો</b> masculine, <b>-ી</b> feminine, <b>-ું</b> neuter, <b>-ા</b> plural or respectful. <b>સુંદર</b>, <b>લાલ</b>, <b>ખરાબ</b> stay the same.",
+          "examples": [
+            [
+              "તે {મોટું} ઘર છે.",
+              "Te motun ghar chhe.",
+              "That's a big house."
+            ],
+            ["{નવી} ગાડી.", "Navii gaadii.", "A new car."]
+          ]
+        },
+        {
+          "h": "After the noun",
+          "p": "As a predicate the adjective still agrees: ઘર <b>મોટું</b> છે, ચા <b>ગરમ</b> છે. <b>સરસ</b> = nice, great, and never changes: ફિલ્મ <b>સરસ</b> છે.",
+          "examples": [
+            ["આ ચા {ગરમ} છે.", "Aa chaa garam chhe.", "This tea is hot."],
+            ["ફિલ્મ {સરસ} હતી.", "Film saras hatii.", "The film was great."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "તે ＿ છોકરો છે.",
+          "en": "He's a good boy.",
+          "options": ["સારો", "સારી", "સારું", "સારા"],
+          "answer": "સારો",
+          "why": "Masculine: -ો."
+        },
+        {
+          "q": "મેં ＿ સાડી ખરીદી.",
+          "en": "I bought a new sari.",
+          "options": ["નવો", "નવી", "નવું", "નવા"],
+          "answer": "નવી",
+          "why": "Feminine: -ી."
+        },
+        {
+          "q": "આ ઘર બહુ ＿ છે.",
+          "en": "This house is very big.",
+          "options": ["મોટો", "મોટી", "મોટું", "મોટા"],
+          "answer": "મોટું",
+          "why": "ઘર is neuter: -ું."
+        },
+        {
+          "q": "＿ છોકરી.",
+          "en": "A beautiful girl.",
+          "options": ["સુંદરી", "સુંદરો", "સુંદરું", "સુંદર"],
+          "answer": "સુંદર",
+          "why": "સુંદર never changes."
+        },
+        {
+          "q": "ફિલ્મ ＿ છે.",
+          "en": "The film is nice.",
+          "options": ["સરસ", "સરસો", "સરસી", "સરસું"],
+          "answer": "સરસ",
+          "why": "સરસ never changes."
+        }
+      ]
+    },
+    {
+      "id": "question-words",
+      "title": "Question words: શું, કોણ, ક્યાં",
+      "particle": "શું・કોણ・ક્યાં・ક્યારે・કેમ・કેટલું",
+      "summary": "Question words go where the answer would be, usually just before the verb: તમે ક્યાં જાઓ છો? (where are you going?). (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>શું</b> what, <b>કોણ</b> who, <b>ક્યાં</b> where, <b>ક્યારે</b> when, <b>કેમ</b> why, how, <b>કેવી રીતે</b> how (in what way), <b>કેટલું</b> how much, <b>કયો / કઈ / કયું</b> which.",
+          "examples": [
+            [
+              "તમારું નામ {શું} છે?",
+              "Tamaarun naam shun chhe?",
+              "What's your name?"
+            ],
+            ["{કેમ} છો?", "Kem chho?", "How are you?"]
+          ]
+        },
+        {
+          "h": "With endings",
+          "p": "<b>કોને</b> (to whom), <b>કોનું</b> (whose), <b>ક્યાંથી</b> (from where), <b>કેટલા વાગ્યે</b> (at what time). <b>કયો</b> agrees: <b>કયો</b> રસ્તો, <b>કઈ</b> બસ, <b>કયું</b> ઘર.",
+          "examples": [
+            [
+              "તમે {ક્યાંથી} આવો છો?",
+              "Tame kyaanthii aavo chho?",
+              "Where are you from?"
+            ],
+            [
+              "{કઈ} બસ અમદાવાદ જાય છે?",
+              "Kaii bas amdaavaad jaay chhe?",
+              "Which bus goes to Ahmedabad?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "તમારું નામ ＿ છે?",
+          "en": "What's your name?",
+          "options": ["શું", "કોણ", "ક્યાં", "કેમ"],
+          "answer": "શું",
+          "why": "What: શું."
+        },
+        {
+          "q": "એ ＿ છે?",
+          "en": "Who is he?",
+          "options": ["શું", "કોણ", "ક્યાં", "કેટલું"],
+          "answer": "કોણ",
+          "why": "Who: કોણ."
+        },
+        {
+          "q": "તમે ＿ આવશો?",
+          "en": "When will you come?",
+          "options": ["ક્યાં", "કોણ", "ક્યારે", "કયું"],
+          "answer": "ક્યારે",
+          "why": "When: ક્યારે."
+        },
+        {
+          "q": "＿ બસ સુરત જાય છે?",
+          "en": "Which bus goes to Surat?",
+          "options": ["કયો", "કયું", "કોણ", "કઈ"],
+          "answer": "કઈ",
+          "why": "બસ is feminine: કઈ."
+        },
+        {
+          "q": "આ પુસ્તક ＿ છે?",
+          "en": "Whose book is this?",
+          "options": ["કોનું", "કોને", "કોણ", "ક્યાં"],
+          "answer": "કોનું",
+          "why": "Whose: કોનું."
+        }
+      ]
+    },
+    {
+      "id": "was-hato",
+      "title": "Was: હતો, હતી, હતું",
+      "particle": "હતો・હતી・હતું・હતા",
+      "summary": "The past of છે is હતું, and it agrees with the subject's gender: હું થાકેલો હતો (I was tired, a man), તે ઘરે હતી (she was at home). (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>હતો</b> masculine, <b>હતી</b> feminine, <b>હતું</b> neuter, <b>હતા</b> plural or respectful. Negative: <b>નહોતો / નહોતી / નહોતું / નહોતા</b>.",
+          "examples": [
+            [
+              "ગઈ કાલે હું બીમાર {હતો}.",
+              "Gaii kaale hun biimaar hato.",
+              "I was ill yesterday. (a man)"
+            ],
+            [
+              "ત્યાં ઘણા લોકો {હતા}.",
+              "Tyaan ghanaa loko hataa.",
+              "There were a lot of people there."
+            ]
+          ]
+        },
+        {
+          "h": "Wasn't",
+          "p": "નહોતું joins ન + હતું: તે ઘરે <b>નહોતી</b> (she wasn't at home). Respect: <b>મારા દાદા</b> શિક્ષક <b>હતા</b> (my grandfather was a teacher), even for one person.",
+          "examples": [
+            ["તે ઘરે {નહોતી}.", "Te ghare nahotii.", "She wasn't at home."],
+            [
+              "વરસાદ {હતો}.",
+              "Varsaad hato.",
+              "It was raining. (There was rain.)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "હું ગઈ કાલે થાકેલી ＿.",
+          "en": "I was tired yesterday. (a woman)",
+          "options": ["હતી", "હતો", "હતું", "છું"],
+          "answer": "હતી",
+          "why": "Feminine: હતી."
+        },
+        {
+          "q": "ઘર ખૂબ મોટું ＿.",
+          "en": "The house was very big.",
+          "options": ["હતો", "હતું", "હતી", "છે"],
+          "answer": "હતું",
+          "why": "ઘર is neuter: હતું."
+        },
+        {
+          "q": "મારા પપ્પા ડૉક્ટર ＿.",
+          "en": "My father was a doctor.",
+          "options": ["હતો", "હતી", "હતા", "છે"],
+          "answer": "હતા",
+          "why": "Respect: હતા."
+        },
+        {
+          "q": "તે ઑફિસમાં ＿.",
+          "en": "He wasn't at the office.",
+          "options": ["નહોતી", "હતો", "નથી", "નહોતો"],
+          "answer": "નહોતો",
+          "why": "Wasn't (m): નહોતો."
+        },
+        {
+          "q": "ત્યાં ઘણા લોકો ＿.",
+          "en": "There were a lot of people there.",
+          "options": ["હતા", "હતું", "હતી", "છે"],
+          "answer": "હતા",
+          "why": "Plural: હતા."
+        }
+      ]
+    },
+    {
+      "id": "future",
+      "title": "Will: -ઈશ, -શે",
+      "particle": "-ઈશ・-શે・-ઈશું・-શો",
+      "summary": "The future adds -ઈશ for \"I\" and \"you (familiar)\", -શે for he, she, they, -ઈશું for \"we\" and -શો for \"you\": હું કાલે આવીશ (I'll come tomorrow). (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>કરવું</b>: હું <b>કરીશ</b>, તું <b>કરીશ</b>, તે <b>કરશે</b>, અમે <b>કરીશું</b>, તમે <b>કરશો</b>, તેઓ <b>કરશે</b>. Same pattern: આવીશ / આવશે, જઈશ / જશે, ખાઈશ / ખાશે.",
+          "examples": [
+            [
+              "હું કાલે {ફોન કરીશ}.",
+              "Hun kaale fon kariish.",
+              "I'll call tomorrow."
+            ],
+            ["તમે {આવશો}?", "Tame aavsho?", "Will you come?"]
+          ]
+        },
+        {
+          "h": "Won't",
+          "p": "Negative: <b>નહીં</b> + the bare form: હું <b>નહીં આવું</b> (I won't come), તે <b>નહીં આવે</b> (he won't come), અમે <b>નહીં જઈએ</b>.",
+          "examples": [
+            [
+              "તે આજે {નહીં આવે}.",
+              "Te aaje nahiin aave.",
+              "He won't come today."
+            ],
+            ["વરસાદ {પડશે}.", "Varsaad padshe.", "It will rain."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "હું કાલે ＿.",
+          "en": "I'll come tomorrow.",
+          "options": ["આવીશ", "આવશે", "આવીશું", "આવશો"],
+          "answer": "આવીશ",
+          "why": "\"I\": -ઈશ."
+        },
+        {
+          "q": "તમે મને મદદ ＿?",
+          "en": "Will you help me?",
+          "options": ["કરીશ", "કરશો", "કરશે", "કરીશું"],
+          "answer": "કરશો",
+          "why": "\"You\": -શો."
+        },
+        {
+          "q": "તેઓ આવતા અઠવાડિયે ＿.",
+          "en": "They'll go next week.",
+          "options": ["જઈશ", "જઈશું", "જશે", "જશો"],
+          "answer": "જશે",
+          "why": "\"They\": -શે."
+        },
+        {
+          "q": "અમે સાંજે ＿.",
+          "en": "We'll eat in the evening.",
+          "options": ["જમીશ", "જમશે", "જમશો", "જમીશું"],
+          "answer": "જમીશું",
+          "why": "\"We\": -ઈશું."
+        },
+        {
+          "q": "તે આજે નહીં ＿.",
+          "en": "He won't come today.",
+          "options": ["આવે", "આવશે", "આવ્યો", "આવીશ"],
+          "answer": "આવે",
+          "why": "Won't: નહીં + bare form."
+        }
+      ]
+    },
+    {
+      "id": "past-intransitive",
+      "title": "Went, came: ગયો, આવ્યો",
+      "particle": "-યો・-ઈ・-યું・-યા",
+      "summary": "For verbs without an object, the past agrees with the subject's gender: હું ગયો (I went, a man), હું ગઈ (a woman), તેઓ ગયા (they went). (about A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>આવવું</b> (come): <b>આવ્યો</b> m, <b>આવી</b> f, <b>આવ્યું</b> n, <b>આવ્યા</b> pl. <b>જવું</b> (go): <b>ગયો / ગઈ / ગયું / ગયા</b>. <b>બેસવું</b> (sit): <b>બેઠો / બેઠી</b>. <b>સૂવું</b> (sleep): <b>સૂતો / સૂતી</b>.",
+          "examples": [
+            ["તે કાલે {આવ્યો}.", "Te kaale aavyo.", "He came yesterday."],
+            [
+              "મારી બહેન મુંબઈ {ગઈ}.",
+              "Maarii bahen mumbaii gaii.",
+              "My sister went to Mumbai."
+            ]
+          ]
+        },
+        {
+          "h": "Has gone",
+          "p": "Add <b>છે</b> for \"has gone, has come\": તે <b>ગયો છે</b>. Add <b>હતો</b> for \"had gone\": તે <b>ગયો હતો</b>. Negative: <b>ન</b> before: તે <b>ન આવ્યો</b> / <b>આવ્યો નહીં</b>.",
+          "examples": [
+            ["બસ {ગઈ}.", "Bas gaii.", "The bus has gone."],
+            [
+              "તે આજે {ન આવ્યો}.",
+              "Te aaje na aavyo.",
+              "He didn't come today."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "રમેશ ગઈ કાલે ＿.",
+          "en": "Ramesh came yesterday.",
+          "options": ["આવ્યો", "આવી", "આવ્યું", "આવશે"],
+          "answer": "આવ્યો",
+          "why": "Masculine: -યો."
+        },
+        {
+          "q": "સીતા બજાર ＿.",
+          "en": "Sita went to the market.",
+          "options": ["ગયો", "ગઈ", "ગયું", "ગયા"],
+          "answer": "ગઈ",
+          "why": "Feminine: ગઈ."
+        },
+        {
+          "q": "તેઓ ઘરે ＿.",
+          "en": "They went home.",
+          "options": ["ગયો", "ગઈ", "ગયા", "ગયું"],
+          "answer": "ગયા",
+          "why": "Plural: ગયા."
+        },
+        {
+          "q": "બાળક ＿.",
+          "en": "The child fell asleep.",
+          "options": ["સૂઈ ગયો", "સૂઈ ગઈ", "સૂઈ ગયા", "સૂઈ ગયું"],
+          "answer": "સૂઈ ગયું",
+          "why": "બાળક is neuter: -યું."
+        },
+        {
+          "q": "તે આજે ＿ આવી.",
+          "en": "She didn't come today.",
+          "options": ["ન", "નથી", "નહોતી", "ના પાડી"],
+          "answer": "ન",
+          "why": "Didn't: ન + past."
+        }
+      ]
+    },
+    {
+      "id": "past-ergative",
+      "title": "I ate, he said: મેં, તેણે",
+      "particle": "મેં・તેણે・-એ",
+      "summary": "For verbs with an object, the doer takes -એ (મેં, તેણે, તમે) and the verb agrees with the object: મેં ચા પીધી (I drank tea: ચા is feminine). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Doers: <b>મેં</b> (I), <b>તેં</b> (you, familiar), <b>તેણે</b> (he, she), <b>અમે</b>, <b>તમે</b>, <b>તેઓએ</b>, <b>રામે</b>. Verbs: ખાધું (ate), પીધું (drank), કર્યું (did), જોયું (saw), લીધું (took), કહ્યું (said), લખ્યું (wrote).",
+          "examples": [
+            [
+              "{મેં} ફિલ્મ {જોઈ}.",
+              "Men film joii.",
+              "I saw a film. (ફિલ્મ is feminine)"
+            ],
+            [
+              "{તેણે} કામ {કર્યું}.",
+              "Tene kaam karyun.",
+              "He did the work. (કામ is neuter)"
+            ]
+          ]
+        },
+        {
+          "h": "Agreement with the object",
+          "p": "The verb matches the thing, not the doer: મેં લાડુ <b>ખાધો</b> (m), મેં રોટલી <b>ખાધી</b> (f), મેં ભાત <b>ખાધો</b> (m), મેં પુસ્તક <b>વાંચ્યું</b> (n). With no object named, use -ું: મેં <b>ખાધું</b> (I've eaten).",
+          "examples": [
+            [
+              "સીતાએ પત્ર {લખ્યો}.",
+              "Siitaae patra lakhyo.",
+              "Sita wrote a letter. (પત્ર is masculine)"
+            ],
+            ["મેં {ખાધું}.", "Men khaadhun.", "I've eaten."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ચા પીધી.",
+          "en": "I drank tea.",
+          "options": ["મેં", "હું", "મને", "મારી"],
+          "answer": "મેં",
+          "why": "Doer with an object: મેં."
+        },
+        {
+          "q": "તેણે પુસ્તક ＿.",
+          "en": "He read a book.",
+          "options": ["વાંચ્યો", "વાંચ્યું", "વાંચી", "વાંચ્યા"],
+          "answer": "વાંચ્યું",
+          "why": "પુસ્તક is neuter: -ું."
+        },
+        {
+          "q": "મેં એક સાડી ＿.",
+          "en": "I bought a sari.",
+          "options": ["ખરીદ્યો", "ખરીદ્યું", "ખરીદી", "ખરીદ્યા"],
+          "answer": "ખરીદી",
+          "why": "સાડી is feminine: -ી."
+        },
+        {
+          "q": "＿ શું કહ્યું?",
+          "en": "What did she say?",
+          "options": ["તે", "તેને", "તેની", "તેણે"],
+          "answer": "તેણે",
+          "why": "Doer: તેણે."
+        },
+        {
+          "q": "અમે ગઈ કાલે ફિલ્મ ＿.",
+          "en": "We saw a film yesterday.",
+          "options": ["જોઈ", "જોયો", "જોયું", "જોયા"],
+          "answer": "જોઈ",
+          "why": "ફિલ્મ is feminine."
+        }
+      ]
+    },
+    {
+      "id": "ne-object",
+      "title": "To, the object: -ને",
+      "particle": "-ને",
+      "summary": "-ને marks the person you give to and a person as object: છોકરાને પુસ્તક આપો (give the boy the book), હું તેને ઓળખું છું (I know him). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Pronouns: <b>મને</b> me, to me, <b>તને</b> you, <b>તેને</b> him, her, <b>અમને</b> / <b>આપણને</b> us, <b>તમને</b> you, <b>તેમને</b> them, him (respectful). Nouns: રમેશ<b>ને</b>, મમ્મી<b>ને</b>, છોકરા<b>ને</b>.",
+          "examples": [
+            [
+              "{મમ્મીને} ફૂલ આપ્યાં.",
+              "Mammiine phuul aapyaan.",
+              "I gave Mum flowers."
+            ],
+            ["હું {તેને} ઓળખું છું.", "Hun tene olkhun chhun.", "I know him."]
+          ]
+        },
+        {
+          "h": "Feelings",
+          "p": "The person who feels takes -ને too: <b>મને</b> ગમે છે (I like it), <b>તેને</b> તાવ છે (he has a fever), <b>તમને</b> ખબર છે? (do you know?).",
+          "examples": [
+            [
+              "{મને} ગુજરાતી ગમે છે.",
+              "Mane gujaraatii game chhe.",
+              "I like Gujarati."
+            ],
+            [
+              "{તમને} શું જોઈએ છે?",
+              "Tamne shun joiie chhe?",
+              "What would you like?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ પાણી આપો.",
+          "en": "Give me water.",
+          "options": ["મને", "હું", "મારું", "મેં"],
+          "answer": "મને",
+          "why": "To me: મને."
+        },
+        {
+          "q": "મેં ＿ પુસ્તક આપ્યું.",
+          "en": "I gave him a book.",
+          "options": ["તે", "તેને", "તેણે", "તેનું"],
+          "answer": "તેને",
+          "why": "To him: તેને."
+        },
+        {
+          "q": "રમેશ＿ બોલાવો.",
+          "en": "Call Ramesh.",
+          "options": ["નો", "માં", "ને", "થી"],
+          "answer": "ને",
+          "why": "A person as object: -ને."
+        },
+        {
+          "q": "＿ ખબર છે?",
+          "en": "Do you know?",
+          "options": ["તમે", "તમારું", "તમારાથી", "તમને"],
+          "answer": "તમને",
+          "why": "Knowing: -ને."
+        },
+        {
+          "q": "હું ＿ ઓળખતો નથી.",
+          "en": "I don't know them.",
+          "options": ["તેમને", "તેઓ", "તેમનું", "તેમણે"],
+          "answer": "તેમને",
+          "why": "Them: તેમને."
+        }
+      ]
+    },
+    {
+      "id": "postpositions",
+      "title": "For, with, near: માટે, સાથે, પાસે",
+      "particle": "માટે・સાથે・પાસે・વગર",
+      "summary": "Many postpositions follow the -ના form of the noun: મારા માટે (for me), તેની સાથે (with him), ઘરની પાસે (near the house). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>માટે</b> for, <b>સાથે</b> with, <b>પાસે</b> near, <b>વગર</b> without, <b>ઉપર</b> above, <b>નીચે</b> under, <b>આગળ</b> in front, <b>પાછળ</b> behind, <b>અંદર</b> inside, <b>બહાર</b> outside. Pronouns: <b>મારા</b> માટે, <b>તમારી</b> સાથે.",
+          "examples": [
+            [
+              "આ ભેટ {તમારા માટે} છે.",
+              "Aa bhet tamaaraa maate chhe.",
+              "This present is for you."
+            ],
+            ["મારી {સાથે} આવો.", "Maarii saathe aavo.", "Come with me."]
+          ]
+        },
+        {
+          "h": "Place",
+          "p": "ઘરની <b>આગળ</b> (in front of the house), ટેબલની <b>નીચે</b> (under the table), શાળાની <b>પાસે</b> (near the school). Some drop -ની in speech: ઘર <b>પાસે</b>.",
+          "examples": [
+            [
+              "બિલાડી {ટેબલની નીચે} છે.",
+              "Bilaadii tebalnii niiche chhe.",
+              "The cat is under the table."
+            ],
+            [
+              "{શાળાની પાસે} એક દુકાન છે.",
+              "Shaalaanii paase ek dukaan chhe.",
+              "There's a shop near the school."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "આ ચા ＿ માટે છે.",
+          "en": "This tea is for you.",
+          "options": ["તમારા", "તમે", "તમને", "તમારું"],
+          "answer": "તમારા",
+          "why": "Before માટે: -ના form."
+        },
+        {
+          "q": "મારી ＿ ચાલો.",
+          "en": "Come with me.",
+          "options": ["માટે", "સાથે", "પાસે", "વગર"],
+          "answer": "સાથે",
+          "why": "With: સાથે."
+        },
+        {
+          "q": "ખાંડ ＿ ચા.",
+          "en": "Tea without sugar.",
+          "options": ["સાથે", "માટે", "વગર", "પાસે"],
+          "answer": "વગર",
+          "why": "Without: વગર."
+        },
+        {
+          "q": "બિલાડી ટેબલની ＿ છે.",
+          "en": "The cat is under the table.",
+          "options": ["ઉપર", "અંદર", "આગળ", "નીચે"],
+          "answer": "નીચે",
+          "why": "Under: નીચે."
+        },
+        {
+          "q": "ઘરની ＿ ગાડી છે.",
+          "en": "The car is behind the house.",
+          "options": ["પાછળ", "આગળ", "અંદર", "ઉપર"],
+          "answer": "પાછળ",
+          "why": "Behind: પાછળ."
+        }
+      ]
+    },
+    {
+      "id": "possession",
+      "title": "Having: પાસે, મારે",
+      "particle": "મારી પાસે・મારે … છે",
+      "summary": "Gujarati has no verb \"have\". Things you have are \"near\" you: મારી પાસે ગાડી છે (I have a car). Relatives use મારે: મારે બે ભાઈ છે (I have two brothers). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Things: <b>મારી પાસે</b> / <b>તમારી પાસે</b> / <b>તેની પાસે</b> + છે / નથી. મારી પાસે સમય <b>નથી</b> (I don't have time). Question: તમારી પાસે છૂટા <b>છે</b>? (do you have change?).",
+          "examples": [
+            [
+              "{મારી પાસે} પૈસા {નથી}.",
+              "Maarii paase paisaa nathii.",
+              "I don't have any money."
+            ],
+            [
+              "{તમારી પાસે} પેન છે?",
+              "Tamaarii paase pen chhe?",
+              "Do you have a pen?"
+            ]
+          ]
+        },
+        {
+          "h": "Family and illness",
+          "p": "Relatives: <b>મારે</b> એક બહેન છે, <b>તેને</b> બે બાળકો છે. Illness and feelings: <b>મને</b> તાવ છે. The verb છે / નથી stays the same; only the owner's form changes.",
+          "examples": [
+            [
+              "{મારે} બે બાળકો છે.",
+              "Maare be baalko chhe.",
+              "I have two children."
+            ],
+            ["{તેને} શરદી છે.", "Tene shardii chhe.", "She has a cold."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ગાડી છે.",
+          "en": "I have a car.",
+          "options": ["મારી પાસે", "મારે પાસે", "હું", "મેં"],
+          "answer": "મારી પાસે",
+          "why": "Things: મારી પાસે."
+        },
+        {
+          "q": "＿ એક ભાઈ છે.",
+          "en": "I have a brother.",
+          "options": ["મારી પાસે", "મારે", "હું", "મેં"],
+          "answer": "મારે",
+          "why": "Relatives: મારે."
+        },
+        {
+          "q": "મારી પાસે સમય ＿.",
+          "en": "I don't have time.",
+          "options": ["ન", "નહીં હતો", "નથી", "નહોતો આવ્યો"],
+          "answer": "નથી",
+          "why": "Not: નથી."
+        },
+        {
+          "q": "તમારી પાસે છૂટા ＿?",
+          "en": "Do you have change?",
+          "options": ["છો", "છું", "છીએ", "છે"],
+          "answer": "છે",
+          "why": "છે for things."
+        },
+        {
+          "q": "＿ તાવ છે.",
+          "en": "She has a fever.",
+          "options": ["તેને", "તેની પાસે", "તે", "તેણે"],
+          "answer": "તેને",
+          "why": "Illness: -ને."
+        }
+      ]
+    },
+    {
+      "id": "negation",
+      "title": "Not: નથી, ન, નહીં",
+      "particle": "નથી・ન・નહીં・ના",
+      "summary": "Gujarati has several \"not\" words. નથી is \"isn't, doesn't\". ન goes before a verb (past, commands). નહીં negates the future. ના is \"no\". (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>નથી</b>: હું ડૉક્ટર <b>નથી</b>, હું માંસ ખાતો <b>નથી</b> (I don't eat meat). <b>ન</b>: તે <b>ન</b> આવ્યો (he didn't come). <b>નહીં</b>: હું <b>નહીં</b> આવું (I won't come). <b>ના</b> = no.",
+          "examples": [
+            [
+              "હું માંસ {ખાતો નથી}.",
+              "Hun maans khaato nathii.",
+              "I don't eat meat. (a man)"
+            ],
+            ["મને {ખબર નથી}.", "Mane khabar nathii.", "I don't know."]
+          ]
+        },
+        {
+          "h": "Habit with નથી",
+          "p": "A habit or ongoing \"don't\" is the -તો / -તી / -તું form + નથી: તે ગુજરાતી સમજ<b>તી નથી</b> (she doesn't understand Gujarati). \"Never\" = <b>ક્યારેય … નહીં</b>.",
+          "examples": [
+            [
+              "તે ગુજરાતી {સમજતી નથી}.",
+              "Te gujaraatii samajtii nathii.",
+              "She doesn't understand Gujarati."
+            ],
+            [
+              "— ચા લેશો? — {ના}, આભાર.",
+              "— Chaa lesho? — Naa, aabhaar.",
+              "— Will you have tea? — No, thanks."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "હું શિક્ષક ＿.",
+          "en": "I'm not a teacher.",
+          "options": ["નથી", "ન", "નહીં", "ના"],
+          "answer": "નથી",
+          "why": "Isn't: નથી."
+        },
+        {
+          "q": "તે ગઈ કાલે ＿ આવી.",
+          "en": "She didn't come yesterday.",
+          "options": ["નથી", "ન", "નહીં", "ના"],
+          "answer": "ન",
+          "why": "Didn't: ન + past."
+        },
+        {
+          "q": "હું કાલે ＿ આવું.",
+          "en": "I won't come tomorrow.",
+          "options": ["નથી", "ન હતો", "નહીં", "ના પાડું"],
+          "answer": "નહીં",
+          "why": "Won't: નહીં."
+        },
+        {
+          "q": "તે સિગરેટ પીતો ＿.",
+          "en": "He doesn't smoke.",
+          "options": ["ન", "નહીં", "ના", "નથી"],
+          "answer": "નથી",
+          "why": "Habit: -તો + નથી."
+        },
+        {
+          "q": "— ભૂખ લાગી છે? — ＿, હમણાં નહીં.",
+          "en": "— Are you hungry? — No, not now.",
+          "options": ["ના", "નથી", "ન", "નહોતું"],
+          "answer": "ના",
+          "why": "No: ના."
+        }
+      ]
+    },
+    {
+      "id": "imperative",
+      "title": "Commands: આવ, આવો, આવજો",
+      "particle": "stem・-ઓ・-જો",
+      "summary": "A command to a friend is the bare stem: આવ (come), જા (go). The tame form adds -ઓ: આવો, જાઓ, બેસો. -જો is polite or for later: આવજો (do come; also \"goodbye\"). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>તું</b>: કર, જા, આવ, ખા, બેસ. <b>તમે</b>: <b>કરો</b>, <b>જાઓ</b>, <b>આવો</b>, <b>ખાઓ</b>, <b>બેસો</b>. Common: <b>લો</b> (take), <b>આપો</b> (give), <b>જુઓ</b> (look), <b>સાંભળો</b> (listen).",
+          "examples": [
+            ["અંદર {આવો}.", "Andar aavo.", "Come in."],
+            ["ધીમે {બોલો}.", "Dhiime bolo.", "Please speak slowly."]
+          ]
+        },
+        {
+          "h": "-જો",
+          "p": "<b>-જો</b> is softer, often \"please do it (later)\": ફોન કર<b>જો</b> (do call), ધ્યાન રાખ<b>જો</b> (take care). <b>આવજો</b> is the everyday goodbye. <b>જરા</b> (a little) softens: <b>જરા</b> પાણી આપો.",
+          "examples": [
+            [
+              "પહોંચીને {ફોન કરજો}.",
+              "Pahonchiine fon karjo.",
+              "Do call when you get there."
+            ],
+            ["{આવજો}!", "Aavjo!", "Goodbye!"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "કૃપા કરીને અંદર ＿.",
+          "en": "Please come in.",
+          "options": ["આવો", "આવ", "આવ્યો", "આવીશ"],
+          "answer": "આવો",
+          "why": "Polite: -ઓ."
+        },
+        {
+          "q": "અહીં ＿.",
+          "en": "Please sit here.",
+          "options": ["બેઠો", "બેસો", "બેસીશ", "બેસે"],
+          "answer": "બેસો",
+          "why": "Polite: બેસો."
+        },
+        {
+          "q": "બેટા, જલદી ＿.",
+          "en": "Come quickly, dear. (to a child)",
+          "options": ["આવો", "આવ્યો", "આવ", "આવશે"],
+          "answer": "આવ",
+          "why": "To a child: the bare stem."
+        },
+        {
+          "q": "ઘરે પહોંચીને ફોન ＿.",
+          "en": "Do call when you get home.",
+          "options": ["કર્યો", "કરીશ", "કરે", "કરજો"],
+          "answer": "કરજો",
+          "why": "Polite / later: -જો."
+        },
+        {
+          "q": "જરા પાણી ＿.",
+          "en": "Could I have some water?",
+          "options": ["આપો", "આપ્યું", "આપીશ", "આપે"],
+          "answer": "આપો",
+          "why": "Polite: આપો."
+        }
+      ]
+    },
+    {
+      "id": "neg-imperative",
+      "title": "Don't: ન કરો, ન કરશો",
+      "particle": "ન + command・-શો નહીં",
+      "summary": "\"Don't\" is ન before the command: ન જાઓ (don't go). The future form with ન is softer and more polite: ચિંતા ન કરશો (don't worry). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ન</b> + <b>-ઓ</b>: <b>ન</b> જાઓ, <b>ન</b> કરો. Polite: <b>ન</b> + future: <b>ન</b> જશો, ચિંતા <b>ન</b> કરશો. Or after: ચિંતા કરશો <b>નહીં</b>. To a friend: <b>ના</b> કર, <b>ના</b> જા.",
+          "examples": [
+            ["ચિંતા {ન કરશો}.", "Chintaa na karsho.", "Don't worry."],
+            ["ત્યાં {ન જાઓ}.", "Tyaan na jaao.", "Don't go there."]
+          ]
+        },
+        {
+          "h": "Signs and rules",
+          "p": "Signs often use the infinitive: <b>ધૂમ્રપાન કરવું નહીં</b> (no smoking), <b>અંદર આવવું નહીં</b>. \"No thanks\" for food: <b>નથી જોઈતું</b>, or just <b>બસ</b> (enough).",
+          "examples": [
+            [
+              "અહીં {ફોટા પાડવા નહીં}.",
+              "Ahiin photaa paadvaa nahiin.",
+              "No photos here."
+            ],
+            [
+              "ખાંડ {નથી જોઈતી}.",
+              "Khaand nathii joiitii.",
+              "I don't want sugar."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ચિંતા ＿ કરશો.",
+          "en": "Don't worry.",
+          "options": ["ન", "નથી", "નહોતી", "ના પાડી"],
+          "answer": "ન",
+          "why": "Don't: ન."
+        },
+        {
+          "q": "ત્યાં ન ＿.",
+          "en": "Don't go there.",
+          "options": ["ગયા", "જાઓ", "જશે", "જઈશ"],
+          "answer": "જાઓ",
+          "why": "ન + -ઓ."
+        },
+        {
+          "q": "અહીં ધૂમ્રપાન કરવું ＿.",
+          "en": "No smoking here. (sign)",
+          "options": ["નથી", "ન", "નહીં", "ના પાડો"],
+          "answer": "નહીં",
+          "why": "Signs: -વું નહીં."
+        },
+        {
+          "q": "ખાંડ ＿.",
+          "en": "I don't want sugar.",
+          "options": ["નહીં જોઈએ છે", "ન જોઈ", "નથી જોઈ", "નથી જોઈતી"],
+          "answer": "નથી જોઈતી",
+          "why": "Don't want: નથી જોઈતું."
+        },
+        {
+          "q": "બેટા, ના ＿.",
+          "en": "Don't cry, dear.",
+          "options": ["રડ", "રડો છો", "રડ્યો", "રડીશ"],
+          "answer": "રડ",
+          "why": "To a child: ના + stem."
+        }
+      ]
+    },
+    {
+      "id": "want-joie",
+      "title": "Want: જોઈએ છે",
+      "particle": "મને … જોઈએ છે",
+      "summary": "\"I want\" is મને … જોઈએ છે: the person takes -ને and the thing is the subject: મને ચા જોઈએ છે (I want tea). \"Don't want\" is નથી જોઈતું. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>મને</b> એક ટિકિટ <b>જોઈએ છે</b>. <b>તમને</b> શું <b>જોઈએ</b>? (what would you like?). Don't want: <b>નથી જોઈતું / જોઈતી / જોઈતો</b> (agrees with the thing). Shops: <b>આપો</b> is simpler.",
+          "examples": [
+            [
+              "{મને} એક ટિકિટ {જોઈએ છે}.",
+              "Mane ek tikit joiie chhe.",
+              "I need one ticket."
+            ],
+            [
+              "{તમને} શું {જોઈએ}?",
+              "Tamne shun joiie?",
+              "What would you like?"
+            ]
+          ]
+        },
+        {
+          "h": "Want to",
+          "p": "\"Want to do\" uses <b>મારે</b> + infinitive + છે: <b>મારે</b> ઘરે <b>જવું છે</b> (I want to go home). <b>મારે</b> ચા <b>પીવી છે</b> (I want to drink tea: પીવી agrees with ચા).",
+          "examples": [
+            [
+              "{મારે} ઘરે {જવું છે}.",
+              "Maare ghare javun chhe.",
+              "I want to go home."
+            ],
+            ["{મારે} સૂવું છે.", "Maare suuvun chhe.", "I want to sleep."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "મને પાણી ＿.",
+          "en": "I want water.",
+          "options": ["જોઈએ છે", "જોઈએ છું", "જોયું", "જોઈ છે"],
+          "answer": "જોઈએ છે",
+          "why": "Want: જોઈએ છે."
+        },
+        {
+          "q": "＿ શું જોઈએ?",
+          "en": "What do you want?",
+          "options": ["તમે", "તમને", "તમારું", "તમારે પાસે"],
+          "answer": "તમને",
+          "why": "The wanter: -ને."
+        },
+        {
+          "q": "ના, મને ＿.",
+          "en": "No, I don't want it.",
+          "options": ["જોઈએ છે", "નહીં જોયું", "નથી જોઈતું", "ન જોઈએ છીએ"],
+          "answer": "નથી જોઈતું",
+          "why": "Don't want: નથી જોઈતું."
+        },
+        {
+          "q": "＿ ઘરે જવું છે.",
+          "en": "I want to go home.",
+          "options": ["મને", "હું", "મેં", "મારે"],
+          "answer": "મારે",
+          "why": "Want to: મારે + infinitive."
+        },
+        {
+          "q": "મારે ફિલ્મ ＿ છે.",
+          "en": "I want to watch a film.",
+          "options": ["જોવી", "જોવું", "જોવો", "જોવા"],
+          "answer": "જોવી",
+          "why": "ફિલ્મ is feminine: જોવી."
+        }
+      ]
+    },
+    {
+      "id": "must-padvu",
+      "title": "Have to: -વું પડશે",
+      "particle": "મારે -વું પડે",
+      "summary": "\"Have to\" is મારે + infinitive + પડવું: મારે જવું પડશે (I'll have to go), મારે રાહ જોવી પડી (I had to wait). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>પડે છે</b> have to (usually), <b>પડશે</b> will have to, <b>પડ્યું</b> had to. The infinitive agrees with the object: મારે ટિકિટ લે<b>વી</b> પડશે (ટિકિટ is feminine).",
+          "examples": [
+            [
+              "{મારે} હવે {જવું પડશે}.",
+              "Maare have javun padshe.",
+              "I'll have to go now."
+            ],
+            [
+              "{મારે} એક કલાક {રાહ જોવી પડી}.",
+              "Maare ek kalaak raah jovii padii.",
+              "I had to wait an hour."
+            ]
+          ]
+        },
+        {
+          "h": "Don't have to",
+          "p": "Not have to: <b>નહીં પડે</b> / <b>પડશે નહીં</b>: તમારે પૈસા <b>આપવા નહીં પડે</b> (you won't have to pay). <b>-વાનું છે</b> = am supposed to: મારે કાલે <b>જવાનું છે</b>.",
+          "examples": [
+            [
+              "તમારે {આવવું નહીં પડે}.",
+              "Tamaare aavvun nahiin pade.",
+              "You won't have to come."
+            ],
+            [
+              "{મારે} કાલે વહેલા {ઊઠવાનું છે}.",
+              "Maare kaale vahelaa uuthvaanun chhe.",
+              "I've got to get up early tomorrow."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ઑફિસ જવું પડશે.",
+          "en": "I'll have to go to the office.",
+          "options": ["મારે", "મને", "હું", "મેં"],
+          "answer": "મારે",
+          "why": "Have to: મારે."
+        },
+        {
+          "q": "મારે એક કલાક રાહ જોવી ＿.",
+          "en": "I had to wait an hour.",
+          "options": ["પડશે", "પડી", "પડે", "પડવી"],
+          "answer": "પડી",
+          "why": "Had to: પડ્યું / પડી."
+        },
+        {
+          "q": "તમારે પૈસા આપવા નહીં ＿.",
+          "en": "You won't have to pay.",
+          "options": ["પડ્યા", "પડી", "પડે", "પડશો"],
+          "answer": "પડે",
+          "why": "Won't have to: નહીં પડે."
+        },
+        {
+          "q": "બાળકોએ ભણવું ＿ છે.",
+          "en": "Children have to study.",
+          "options": ["પડ્યું", "પડશો", "પડી", "પડે"],
+          "answer": "પડે",
+          "why": "Have to: પડે છે."
+        },
+        {
+          "q": "મારે કાલે વહેલા ઊઠ＿ છે.",
+          "en": "I've got to get up early tomorrow.",
+          "options": ["વાનું", "વું પડ્યું", "ીશ", "તો"],
+          "answer": "વાનું",
+          "why": "Supposed to: -વાનું છે."
+        }
+      ]
+    },
+    {
+      "id": "should-joie",
+      "title": "Should: -વું જોઈએ",
+      "particle": "-વું જોઈએ",
+      "summary": "\"Should\" is the infinitive + જોઈએ, with the person in -એ / -ને: તમારે ડૉક્ટર પાસે જવું જોઈએ (you should go to the doctor). \"Should have\" is -વું જોઈતું હતું. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>તમારે</b> આરામ <b>કરવો જોઈએ</b> (you should rest: આરામ is masculine). <b>આપણે</b> વહેલા <b>નીકળવું જોઈએ</b>. Negative: <b>ન</b> … <b>જોઈએ</b>: <b>ન</b> કરવું <b>જોઈએ</b> (shouldn't).",
+          "examples": [
+            [
+              "{તમારે} ડૉક્ટર પાસે {જવું જોઈએ}.",
+              "Tamaare daoktar paase javun joiie.",
+              "You should go to the doctor."
+            ],
+            [
+              "ખોટું {ન બોલવું જોઈએ}.",
+              "Khotun na bolvun joiie.",
+              "One shouldn't lie."
+            ]
+          ]
+        },
+        {
+          "h": "Should have",
+          "p": "<b>-વું જોઈતું હતું</b>: <b>મારે</b> વહેલા <b>આવવું જોઈતું હતું</b> (I should have come earlier). Negative: <b>ન … જોઈતું હતું</b>: મારે એ <b>ન કહેવું જોઈતું હતું</b>.",
+          "examples": [
+            [
+              "{મારે} વહેલા {આવવું જોઈતું હતું}.",
+              "Maare vahelaa aavvun joiitun hatun.",
+              "I should have come earlier."
+            ],
+            [
+              "મારે એ {ન કહેવું જોઈતું હતું}.",
+              "Maare e na kahevun joiitun hatun.",
+              "I shouldn't have said that."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "તમારે આરામ કરવો ＿.",
+          "en": "You should rest.",
+          "options": ["જોઈએ", "પડ્યો", "છો", "હતો"],
+          "answer": "જોઈએ",
+          "why": "Should: જોઈએ."
+        },
+        {
+          "q": "＿ વહેલા નીકળવું જોઈએ.",
+          "en": "We should leave early.",
+          "options": ["આપણને", "આપણે", "અમને", "અમારું"],
+          "answer": "આપણે",
+          "why": "Should: the -એ form."
+        },
+        {
+          "q": "ખોટું ＿ બોલવું જોઈએ.",
+          "en": "One shouldn't lie.",
+          "options": ["નથી", "નહોતું", "ન", "ના પાડી"],
+          "answer": "ન",
+          "why": "Shouldn't: ન … જોઈએ."
+        },
+        {
+          "q": "મારે વહેલા આવવું ＿.",
+          "en": "I should have come earlier.",
+          "options": ["જોઈએ છે", "પડશે", "જોઈએ", "જોઈતું હતું"],
+          "answer": "જોઈતું હતું",
+          "why": "Should have: જોઈતું હતું."
+        },
+        {
+          "q": "તમારે આ દવા લેવી ＿.",
+          "en": "You should take this medicine.",
+          "options": ["જોઈએ", "જોઈતો", "પડ્યો", "છે"],
+          "answer": "જોઈએ",
+          "why": "Should: જોઈએ."
+        }
+      ]
+    },
+    {
+      "id": "can-shakvu",
+      "title": "Can: શકું છું",
+      "particle": "-ઈ શકવું",
+      "summary": "\"Can\" is the stem + -ઈ + શકવું: હું આવી શકું છું (I can come). \"Can't\" is the -તો form + નથી: હું આવી શકતો નથી. \"Couldn't\" is ન … શક્યો. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "હું કરી <b>શકું છું</b>, તમે કરી <b>શકો છો</b>, તે કરી <b>શકે છે</b>. Questions often drop છે: હું અંદર આવી <b>શકું</b>? (may I come in?). Future: કરી <b>શકીશ</b>.",
+          "examples": [
+            [
+              "હું કાલે {આવી શકું છું}.",
+              "Hun kaale aavii shakun chhun.",
+              "I can come tomorrow."
+            ],
+            [
+              "હું અંદર {આવી શકું}?",
+              "Hun andar aavii shakun?",
+              "May I come in?"
+            ]
+          ]
+        },
+        {
+          "h": "Can't, couldn't",
+          "p": "Can't: <b>-ઈ શકતો / શકતી નથી</b>. Couldn't: <b>ન … શક્યો / શકી</b>: હું ઊંઘી <b>ન શક્યો</b> (I couldn't sleep).",
+          "examples": [
+            [
+              "હું આજે {આવી શકતી નથી}.",
+              "Hun aaje aavii shaktii nathii.",
+              "I can't come today. (a woman)"
+            ],
+            [
+              "તે ઊંઘી {ન શક્યો}.",
+              "Te uunghii na shakyo.",
+              "He couldn't sleep."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "હું તમને મદદ કરી ＿.",
+          "en": "I can help you.",
+          "options": ["શકું છું", "શકે છે", "શક્યો", "શકીશું"],
+          "answer": "શકું છું",
+          "why": "\"I\": શકું છું."
+        },
+        {
+          "q": "હું અંદર આવી ＿?",
+          "en": "May I come in?",
+          "options": ["શકે", "શકું", "શકો", "શકીએ"],
+          "answer": "શકું",
+          "why": "Asking: શકું?"
+        },
+        {
+          "q": "હું આજે આવી શકતો ＿.",
+          "en": "I can't come today.",
+          "options": ["ન", "નહીં", "નથી", "ના"],
+          "answer": "નથી",
+          "why": "Can't: -તો નથી."
+        },
+        {
+          "q": "તે ઊંઘી ન ＿.",
+          "en": "He couldn't sleep.",
+          "options": ["શકે છે", "શકતો", "શકીશ", "શક્યો"],
+          "answer": "શક્યો",
+          "why": "Couldn't: ન … શક્યો."
+        },
+        {
+          "q": "તમે ગુજરાતી વાંચી ＿?",
+          "en": "Can you read Gujarati?",
+          "options": ["શકો છો", "શકું છું", "શકે છે", "શક્યા"],
+          "answer": "શકો છો",
+          "why": "\"You\": શકો છો."
+        }
+      ]
+    },
+    {
+      "id": "aavadvu",
+      "title": "Know how to: આવડે છે",
+      "particle": "મને … આવડે છે",
+      "summary": "A skill you have \"comes\" to you: મને ગુજરાતી આવડે છે (I know Gujarati), મને તરતાં આવડે છે (I can swim). The person takes -ને. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>મને</b> રસોઈ <b>આવડે છે</b> (I can cook). Doing: <b>-તાં</b> form: મને ગાડી ચલાવ<b>તાં આવડે છે</b> (I can drive). Negative: <b>નથી આવડતું</b>. Question: <b>આવડે છે?</b>",
+          "examples": [
+            [
+              "{તમને} ગુજરાતી {આવડે છે}?",
+              "Tamne gujaraatii aavde chhe?",
+              "Do you know Gujarati?"
+            ],
+            [
+              "{મને} તરતાં {નથી આવડતું}.",
+              "Mane tartaan nathii aavadtun.",
+              "I can't swim."
+            ]
+          ]
+        },
+        {
+          "h": "Learning",
+          "p": "Learning is <b>શીખવું</b>: હું ગુજરાતી <b>શીખું છું</b>. Once learned: હવે મને <b>આવડી ગયું</b> (now I've got it). Compare શકવું (be able right now) with આવડવું (have the skill).",
+          "examples": [
+            [
+              "હવે મને {આવડી ગયું}.",
+              "Have mane aavdii gayun.",
+              "Now I've learned how."
+            ],
+            [
+              "{તેને} ગાડી ચલાવતાં {આવડે છે}.",
+              "Tene gaadii chalaavtaan aavde chhe.",
+              "She knows how to drive."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "મને તરતાં ＿.",
+          "en": "I can swim.",
+          "options": ["આવડે છે", "જોઈએ છે", "ગમે છે", "શકું છું"],
+          "answer": "આવડે છે",
+          "why": "Skill: આવડે છે."
+        },
+        {
+          "q": "＿ અંગ્રેજી આવડે છે?",
+          "en": "Do you know English?",
+          "options": ["તમે", "તમને", "તમારું", "તમારાથી"],
+          "answer": "તમને",
+          "why": "The person: -ને."
+        },
+        {
+          "q": "તેને રસોઈ ＿.",
+          "en": "She can't cook.",
+          "options": ["આવડે છે", "નથી જોઈતી", "નથી આવડતી", "નથી ગમતી"],
+          "answer": "નથી આવડતી",
+          "why": "Negative: નથી આવડતું."
+        },
+        {
+          "q": "મને ગાડી ચલાવ＿ આવડે છે.",
+          "en": "I know how to drive.",
+          "options": ["વું", "વા", "ીને", "તાં"],
+          "answer": "તાં",
+          "why": "Doing: -તાં."
+        },
+        {
+          "q": "હવે મને આવડી ＿.",
+          "en": "Now I've learned it.",
+          "options": ["ગયું", "ગયો", "ગઈ", "શકું"],
+          "answer": "ગયું",
+          "why": "Learned: આવડી ગયું."
+        }
+      ]
+    },
+    {
+      "id": "liking-knowing",
+      "title": "Like, know, understand: ગમે, ખબર, સમજાયું",
+      "particle": "મને ગમે છે・ખબર છે・સમજાયું",
+      "summary": "Liking, knowing and understanding put the person in -ને: મને ચા ગમે છે (I like tea), મને ખબર છે (I know), મને સમજાયું (I understood). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>મને ગમે છે</b> (I like it), <b>નથી ગમતું</b> (I don't like it). <b>મને ખબર છે</b> (I know), <b>ખબર નથી</b>. <b>સમજાયું</b> (understood), <b>ન સમજાયું</b> / <b>સમજાયું નહીં</b>.",
+          "examples": [
+            [
+              "{મને} વરસાદ {ગમે છે}.",
+              "Mane varsaad game chhe.",
+              "I like the rain."
+            ],
+            [
+              "માફ કરજો, {મને ખબર નથી}.",
+              "Maaf karjo, mane khabar nathii.",
+              "Sorry, I don't know."
+            ]
+          ]
+        },
+        {
+          "h": "Liked it, knowing people",
+          "p": "\"Did you like it?\" = <b>ગમ્યું?</b> \"I liked it\" = <b>ગમ્યું</b>. Knowing a person is <b>ઓળખવું</b>: હું તેને <b>ઓળખું છું</b>. Doing: મને વાંચ<b>વું</b> ગમે છે (I like reading).",
+          "examples": [
+            ["ફિલ્મ {ગમી}?", "Film gamii?", "Did you like the film?"],
+            ["તમે મને {ઓળખો છો}?", "Tame mane olkho chho?", "Do you know me?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "મને ક્રિકેટ ＿.",
+          "en": "I like cricket.",
+          "options": ["ગમે છે", "ખબર છે", "જોઈએ છે", "આવડે છે"],
+          "answer": "ગમે છે",
+          "why": "Like: ગમે છે."
+        },
+        {
+          "q": "માફ કરજો, મને ＿.",
+          "en": "Sorry, I don't know.",
+          "options": ["ગમતું નથી", "ખબર નથી", "નથી જોઈતું", "સમજાયું"],
+          "answer": "ખબર નથી",
+          "why": "Don't know: ખબર નથી."
+        },
+        {
+          "q": "＿ સમજાયું?",
+          "en": "Did you understand?",
+          "options": ["તમે", "તમારું", "તમને", "તમારે"],
+          "answer": "તમને",
+          "why": "The person: -ને."
+        },
+        {
+          "q": "જમવાનું ＿?",
+          "en": "Did you like the food?",
+          "options": ["ગમે છે", "ખબર છે", "આવડ્યું", "ગમ્યું"],
+          "answer": "ગમ્યું",
+          "why": "Liked it: ગમ્યું?"
+        },
+        {
+          "q": "હું તેને ＿.",
+          "en": "I know him.",
+          "options": ["ઓળખું છું", "ખબર છે", "ગમે છે", "આવડે છે"],
+          "answer": "ઓળખું છું",
+          "why": "Know a person: ઓળખવું."
+        }
+      ]
+    },
+    {
+      "id": "ordinals",
+      "title": "First, second: પહેલું, બીજું",
+      "particle": "પહેલું・બીજું・ત્રીજું・-મું",
+      "summary": "\"First\" is પહેલું, \"second\" બીજું, \"third\" ત્રીજું, \"fourth\" ચોથું; from five on add -મું: પાંચમું. They change for gender like સારું. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>પહેલો / પહેલી / પહેલું</b> first, <b>બીજો</b> second, <b>ત્રીજો</b> third, <b>ચોથો</b> fourth, <b>પાંચમો</b> fifth, <b>છઠ્ઠો</b> sixth, <b>દસમો</b> tenth. <b>છેલ્લો</b> = last.",
+          "examples": [
+            [
+              "અમારું ઘર {ત્રીજા} માળે છે.",
+              "Amaarun ghar triijaa maale chhe.",
+              "Our flat is on the third floor."
+            ],
+            [
+              "આ મારી {પહેલી} મુલાકાત છે.",
+              "Aa maarii pahelii mulaakaat chhe.",
+              "This is my first visit."
+            ]
+          ]
+        },
+        {
+          "h": "Times",
+          "p": "\"For the first time\" = <b>પહેલી વાર</b>. \"Second time\" = <b>બીજી વાર</b>. \"Another\" = <b>બીજું</b>: <b>બીજું</b> કંઈ? (anything else?).",
+          "examples": [
+            [
+              "હું {પહેલી વાર} ગુજરાત આવ્યો છું.",
+              "Hun pahelii vaar gujaraat aavyo chhun.",
+              "It's my first time in Gujarat."
+            ],
+            ["{બીજું} કંઈ જોઈએ?", "Biijun kanii joiie?", "Anything else?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "આ મારી ＿ નોકરી છે.",
+          "en": "This is my first job.",
+          "options": ["પહેલી", "પહેલો", "પહેલું", "એક"],
+          "answer": "પહેલી",
+          "why": "નોકરી is feminine."
+        },
+        {
+          "q": "તે ＿ ધોરણમાં છે.",
+          "en": "He's in fifth standard.",
+          "options": ["પાંચ", "પાંચમા", "પાંચમી", "પચાસ"],
+          "answer": "પાંચમા",
+          "why": "Before -માં the ordinal ends in -મા."
+        },
+        {
+          "q": "આ ＿ બસ છે.",
+          "en": "This is the last bus.",
+          "options": ["છેલ્લો", "છેલ્લું", "છેલ્લી", "પહેલો"],
+          "answer": "છેલ્લી",
+          "why": "બસ is feminine."
+        },
+        {
+          "q": "હું ＿ વાર અહીં આવ્યો છું.",
+          "en": "It's my first time here.",
+          "options": ["પહેલો", "એક", "પહેલું", "પહેલી"],
+          "answer": "પહેલી",
+          "why": "વાર is feminine."
+        },
+        {
+          "q": "＿ કંઈ જોઈએ?",
+          "en": "Anything else?",
+          "options": ["બીજું", "બીજો", "બે", "ત્રીજું"],
+          "answer": "બીજું",
+          "why": "Else: બીજું."
+        }
+      ]
+    },
+    {
+      "id": "infinitive-purpose",
+      "title": "In order to: -વા, -વા માટે",
+      "particle": "-વા・-વા માટે・-વા લાગ્યો",
+      "summary": "Purpose uses the infinitive in -વા: હું ફિલ્મ જોવા ગયો (I went to see a film). -વા માટે is fuller. -વા લાગવું is \"start to\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "કરવું → <b>કરવા</b>, જોવું → <b>જોવા</b>, શીખવું → <b>શીખવા</b>, ખરીદવું → <b>ખરીદવા</b>. It goes before the verb of motion: દૂધ <b>લેવા</b> ગયો (went to get milk).",
+          "examples": [
+            [
+              "હું ગુજરાતી {શીખવા} આવ્યો છું.",
+              "Hun gujaraatii shiikhvaa aavyo chhun.",
+              "I've come to learn Gujarati."
+            ],
+            [
+              "તે શાક {ખરીદવા} બજાર ગઈ.",
+              "Te shaak khariidvaa bajaar gaii.",
+              "She went to the market to buy vegetables."
+            ]
+          ]
+        },
+        {
+          "h": "Start, easy, time",
+          "p": "Start: <b>-વા લાગ્યો / લાગી</b>: બાળક રડ<b>વા લાગ્યું</b> (the child started to cry). Also <b>-વાનું શરૂ કર્યું</b>. With સરળ (easy), અઘરું (hard), સમય (time): ગુજરાતી વાંચ<b>વું</b> સરળ છે.",
+          "examples": [
+            [
+              "વરસાદ {પડવા લાગ્યો}.",
+              "Varsaad padvaa laagyo.",
+              "It started to rain."
+            ],
+            [
+              "મારી પાસે જમવાનો {સમય નથી}.",
+              "Maarii paase jamvaano samay nathii.",
+              "I have no time to eat."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "હું ફિલ્મ જો＿ જાઉં છું.",
+          "en": "I'm going to see a film.",
+          "options": ["વા", "વું", "તો", "ઈને"],
+          "answer": "વા",
+          "why": "Purpose: -વા."
+        },
+        {
+          "q": "તે દવા લે＿ માટે ગયો.",
+          "en": "He went to get medicine.",
+          "options": ["વું", "વા", "તો", "શે"],
+          "answer": "વા",
+          "why": "Purpose: -વા માટે."
+        },
+        {
+          "q": "બાળક રડવા ＿.",
+          "en": "The child started to cry.",
+          "options": ["પડ્યું", "ગયું", "લાગ્યું", "શક્યું"],
+          "answer": "લાગ્યું",
+          "why": "Start: -વા લાગવું."
+        },
+        {
+          "q": "ગુજરાતી વાંચવું ＿ છે.",
+          "en": "Reading Gujarati is easy.",
+          "options": ["સરળતાથી", "જોઈએ", "પડે", "સરળ"],
+          "answer": "સરળ",
+          "why": "Easy: સરળ."
+        },
+        {
+          "q": "અમે ચા પી＿ બેઠા.",
+          "en": "We sat down to drink tea.",
+          "options": ["વા", "વું", "તા", "શું"],
+          "answer": "વા",
+          "why": "Purpose: -વા."
+        }
+      ]
+    },
+    {
+      "id": "absolutive-ine",
+      "title": "Having done: -ઈને",
+      "particle": "-ઈને",
+      "summary": "-ઈને joins actions in order: જમીને સૂઈ ગયો (he ate and went to sleep). Only the last verb shows tense and person. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "કર → <b>કરીને</b>, જા → <b>જઈને</b>, આવ → <b>આવીને</b>, ખા → <b>ખાઈને</b>, જો → <b>જોઈને</b>, લે → <b>લઈને</b>, પી → <b>પીને</b>. ઘરે <b>જઈને</b> ફોન કરીશ.",
+          "examples": [
+            [
+              "ઘરે {આવીને} સૂઈ ગયો.",
+              "Ghare aaviine suui gayo.",
+              "I came home and went to sleep."
+            ],
+            [
+              "પુસ્તક {વાંચીને} પાછું આપજો.",
+              "Pustak vaanchiine paachhun aapjo.",
+              "Read the book and give it back."
+            ]
+          ]
+        },
+        {
+          "h": "Manner and \"by\"",
+          "p": "How: <b>દોડીને</b> આવ્યો (came running), <b>ચાલીને</b> ગયો (went on foot). Also \"kindly\": <b>કૃપા કરીને</b> = please (literally \"doing kindness\"). <b>-ઈને</b> + જોવું = try: ખાઈને <b>જુઓ</b> (try it).",
+          "examples": [
+            [
+              "તે {ચાલીને} શાળાએ જાય છે.",
+              "Te chaaliine shaalaae jaay chhe.",
+              "He walks to school."
+            ],
+            [
+              "આ મીઠાઈ {ખાઈને જુઓ}.",
+              "Aa miithaaii khaaiine juo.",
+              "Try this sweet."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "નાસ્તો ＿ નીકળ્યો.",
+          "en": "I had breakfast and set off.",
+          "options": ["કરીને", "કર્યો", "કરવા", "કરશે"],
+          "answer": "કરીને",
+          "why": "Then: -ઈને."
+        },
+        {
+          "q": "દુકાને ＿ દૂધ લાવ્યો.",
+          "en": "I went to the shop and brought milk.",
+          "options": ["ગયો", "જઈને", "જવા", "જશે"],
+          "answer": "જઈને",
+          "why": "જવું → જઈને."
+        },
+        {
+          "q": "પત્ર ＿ મને બતાવો.",
+          "en": "Write the letter and show it to me.",
+          "options": ["લખ્યો", "લખવા", "લખીને", "લખશે"],
+          "answer": "લખીને",
+          "why": "Then: -ઈને."
+        },
+        {
+          "q": "બાળક ＿ આવ્યું.",
+          "en": "The child came running.",
+          "options": ["દોડ્યું", "દોડવા", "દોડશે", "દોડીને"],
+          "answer": "દોડીને",
+          "why": "Manner: -ઈને."
+        },
+        {
+          "q": "＿ કરીને બેસો.",
+          "en": "Please sit down.",
+          "options": ["કૃપા", "કામ", "મદદ", "વાત"],
+          "answer": "કૃપા",
+          "why": "Please: કૃપા કરીને."
+        }
+      ]
+    },
+    {
+      "id": "relative-participles",
+      "title": "Who, which: જે … તે, -એલું",
+      "particle": "જે … તે・-એલું・-તું",
+      "summary": "Gujarati links \"who\" clauses with જે … તે: જે માણસ કાલે આવ્યો હતો તે મારો ભાઈ છે. A shorter way is a participle before the noun: કાલે આવેલો માણસ (the man who came yesterday). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>જે</b> starts the clause, <b>તે</b> picks it up: <b>જે</b> પુસ્તક મેં વાંચ્યું <b>તે</b> સરસ હતું. <b>જે</b> agrees with case: <b>જેને</b> (to whom), <b>જેનું</b> (whose), <b>જ્યાં</b> (where).",
+          "examples": [
+            [
+              "{જે} છોકરી ગાય છે {તે} મારી બહેન છે.",
+              "Je chhokrii gaay chhe te maarii bahen chhe.",
+              "The girl who is singing is my sister."
+            ],
+            [
+              "{જેનું} નામ લીધું {તે} આવ્યો.",
+              "Jenun naam liidhun te aavyo.",
+              "The one whose name was mentioned came."
+            ]
+          ]
+        },
+        {
+          "h": "Participles",
+          "p": "Done: <b>-એલું</b>: <b>લખેલો</b> પત્ર (a written letter), <b>બનાવેલું</b> ખાવાનું (cooked food), કાલે <b>આવેલા</b> લોકો. Ongoing: <b>-તું</b>: રડ<b>તું</b> બાળક (a crying child), વહે<b>તું</b> પાણી (flowing water).",
+          "examples": [
+            [
+              "મેં {વાંચેલું} પુસ્તક આ છે.",
+              "Men vaanchelun pustak aa chhe.",
+              "This is the book I read."
+            ],
+            [
+              "{રડતું} બાળક ભૂખ્યું છે.",
+              "Radtun baalak bhuukhyun chhe.",
+              "The crying child is hungry."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ માણસ કાલે આવ્યો હતો તે મારો ભાઈ છે.",
+          "en": "The man who came yesterday is my brother.",
+          "options": ["જે", "તે", "કોણ", "શું"],
+          "answer": "જે",
+          "why": "Who (linking): જે."
+        },
+        {
+          "q": "જે પુસ્તક મેં વાંચ્યું ＿ સરસ હતું.",
+          "en": "The book I read was good.",
+          "options": ["જે", "તે", "કોણ", "જ્યાં"],
+          "answer": "તે",
+          "why": "Picks it up: તે."
+        },
+        {
+          "q": "કાલે ＿ લોકો કોણ હતા?",
+          "en": "Who were the people who came yesterday?",
+          "options": ["આવતા", "આવ્યા", "આવેલા", "આવવા"],
+          "answer": "આવેલા",
+          "why": "Done: -એલા."
+        },
+        {
+          "q": "＿ બાળકને ઊંઘ આવે છે.",
+          "en": "The crying child is sleepy.",
+          "options": ["રડેલા", "રડ્યા", "રડવા", "રડતા"],
+          "answer": "રડતા",
+          "why": "Ongoing: -તું (here -તા before -ને)."
+        },
+        {
+          "q": "＿ હું રહું છું ત્યાં શાંતિ છે.",
+          "en": "Where I live, it's peaceful.",
+          "options": ["જ્યાં", "જે", "ક્યાં", "ત્યાં"],
+          "answer": "જ્યાં",
+          "why": "Where (linking): જ્યાં … ત્યાં."
+        }
+      ]
+    },
+    {
+      "id": "conditional",
+      "title": "If: જો … તો",
+      "particle": "જો・તો",
+      "summary": "\"If\" is જો at the start and તો at the start of the result: જો વરસાદ પડશે તો હું નહીં આવું (if it rains, I won't come). જો is often dropped; તો stays. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>જો</b> … future, <b>તો</b> … future: <b>જો</b> તમે આવશો <b>તો</b> મને આનંદ થશે. Or the short form: <b>જો</b> તમે આવો <b>તો</b>. \"If not\": <b>નહીં તો</b> = otherwise.",
+          "examples": [
+            [
+              "{જો} વરસાદ પડશે {તો} હું નહીં આવું.",
+              "Jo varsaad padshe to hun nahiin aavun.",
+              "If it rains, I won't come."
+            ],
+            [
+              "સમય હોય {તો} ફોન કરજો.",
+              "Samay hoy to fon karjo.",
+              "Call if you have time."
+            ]
+          ]
+        },
+        {
+          "h": "Otherwise, how about",
+          "p": "<b>નહીં તો</b> = otherwise: જલદી કરો, <b>નહીં તો</b> બસ જતી રહેશે. \"How about…?\" = <b>… તો?</b>: કાલે જઈએ <b>તો</b>? <b>તો</b> alone also means \"then, so\": <b>તો</b> ચાલો!",
+          "examples": [
+            [
+              "જલદી કરો, {નહીં તો} મોડું થશે.",
+              "Jaldii karo, nahiin to modun thashe.",
+              "Hurry, otherwise we'll be late."
+            ],
+            ["કાલે જઈએ {તો}?", "Kaale jaiie to?", "How about going tomorrow?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ તમે આવશો તો હું મદદ કરીશ.",
+          "en": "If you come, I'll help.",
+          "options": ["જો", "તો", "કે", "જ્યારે"],
+          "answer": "જો",
+          "why": "If: જો."
+        },
+        {
+          "q": "જો પૈસા હશે ＿ ગાડી લઈશ.",
+          "en": "If I have money, I'll buy a car.",
+          "options": ["જો", "તો", "પણ", "કે"],
+          "answer": "તો",
+          "why": "Then: તો."
+        },
+        {
+          "q": "જલદી ચાલો, ＿ મોડું થશે.",
+          "en": "Hurry, otherwise we'll be late.",
+          "options": ["તો પણ", "જો", "નહીં તો", "કે"],
+          "answer": "નહીં તો",
+          "why": "Otherwise: નહીં તો."
+        },
+        {
+          "q": "સમય હોય તો ફોન ＿.",
+          "en": "Call if you have time.",
+          "options": ["કર્યો", "કરશે", "કરતો", "કરજો"],
+          "answer": "કરજો",
+          "why": "Polite command: -જો."
+        },
+        {
+          "q": "ફિલ્મ જોવા જઈએ ＿?",
+          "en": "How about going to a film?",
+          "options": ["તો", "જો", "કે", "પણ"],
+          "answer": "તો",
+          "why": "How about: … તો?"
+        }
+      ]
+    },
+    {
+      "id": "concessive",
+      "title": "Even if: ભલે, છતાં, ગમે તે",
+      "particle": "ભલે … તો પણ・છતાં・ગમે તે",
+      "summary": "\"Even if\" is ભલે … (તો પણ): ભલે વરસાદ પડે, હું આવીશ. \"Despite\" is -વા છતાં. \"Whatever, wherever\" is ગમે તે, ગમે ત્યાં. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>ભલે</b> + subjunctive: <b>ભલે</b> મોડું થાય, <b>તો પણ</b> આવજો. <b>છતાં</b> = despite: વરસાદ હો<b>વા છતાં</b> (despite the rain). <b>તો પણ</b> / <b>છતાં</b> alone = even so.",
+          "examples": [
+            [
+              "{ભલે} વરસાદ પડે, હું આવીશ.",
+              "Bhale varsaad pade, hun aaviish.",
+              "Even if it rains, I'll come."
+            ],
+            [
+              "પૈસા {હોવા છતાં} તે ખર્ચ કરતો નથી.",
+              "Paisaa hovaa chhataan te kharch karto nathii.",
+              "Despite having money, he doesn't spend it."
+            ]
+          ]
+        },
+        {
+          "h": "-ever",
+          "p": "<b>ગમે તે</b> (whatever, whoever), <b>ગમે ત્યાં</b> (wherever), <b>ગમે ત્યારે</b> (whenever), <b>ગમે તેટલું</b> (however much): <b>ગમે તે</b> થાય, હું તારી સાથે છું.",
+          "examples": [
+            [
+              "{ગમે તે} થાય, હું તારી સાથે છું.",
+              "Game te thaay, hun taarii saathe chhun.",
+              "Whatever happens, I'm with you."
+            ],
+            [
+              "{ગમે ત્યારે} આવજો.",
+              "Game tyaare aavjo.",
+              "Come whenever you like."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ વરસાદ પડે, હું આવીશ.",
+          "en": "Even if it rains, I'll come.",
+          "options": ["ભલે", "જો", "કારણ કે", "જ્યારે"],
+          "answer": "ભલે",
+          "why": "Even if: ભલે."
+        },
+        {
+          "q": "થાક્યો હતો, ＿ કામ પૂરું કર્યું.",
+          "en": "I was tired; even so I finished the work.",
+          "options": ["તેથી", "છતાં", "કારણ કે", "જો"],
+          "answer": "છતાં",
+          "why": "Even so: છતાં."
+        },
+        {
+          "q": "＿ તે થાય, ડરશો નહીં.",
+          "en": "Whatever happens, don't be afraid.",
+          "options": ["જો", "ભલે", "ગમે", "કેમ"],
+          "answer": "ગમે",
+          "why": "Whatever: ગમે તે."
+        },
+        {
+          "q": "ગમે ＿ આવજો.",
+          "en": "Come whenever you like.",
+          "options": ["ત્યાં", "તે", "તેટલું", "ત્યારે"],
+          "answer": "ત્યારે",
+          "why": "Whenever: ગમે ત્યારે."
+        },
+        {
+          "q": "ગમે તેટલું સમજાવું, તે સાંભળતો ＿.",
+          "en": "However much I explain, he doesn't listen.",
+          "options": ["નથી", "છે", "હતો", "શકે"],
+          "answer": "નથી",
+          "why": "However much: ગમે તેટલું."
+        }
+      ]
+    },
+    {
+      "id": "quotative-ke",
+      "title": "Saying that: કે",
+      "particle": "કે",
+      "summary": "\"That\" after saying and thinking is કે: તેણે કહ્યું કે તે કાલે આવશે (he said he'd come tomorrow). The clause after કે keeps the speaker's own words or tense. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>કહ્યું કે</b> (said that), <b>લાગે છે કે</b> (I think that), <b>ખબર છે કે</b> (know that), <b>પૂછ્યું કે</b> (asked whether). Gujarati often keeps the original words: તેણે કહ્યું <b>કે</b> \"હું આવીશ\".",
+          "examples": [
+            [
+              "તેણે કહ્યું {કે} તે કાલે આવશે.",
+              "Tene kahyun ke te kaale aavshe.",
+              "He said he'd come tomorrow."
+            ],
+            [
+              "મને લાગે છે {કે} વરસાદ પડશે.",
+              "Mane laage chhe ke varsaad padshe.",
+              "I think it'll rain."
+            ]
+          ]
+        },
+        {
+          "h": "Whether",
+          "p": "Questions inside: <b>કે નહીં</b> = whether or not: તે આવશે <b>કે નહીં</b> ખબર નથી. \"Called\": <b>કહેવાય છે</b>: આને ગુજરાતીમાં શું <b>કહેવાય</b>? \"Means\": <b>એટલે શું</b>?",
+          "examples": [
+            [
+              "તે આવશે {કે નહીં}, ખબર નથી.",
+              "Te aavshe ke nahiin, khabar nathii.",
+              "I don't know whether he'll come."
+            ],
+            [
+              "\"પાણી\" {એટલે} શું?",
+              "\"Paanii\" etle shun?",
+              "What does \"paanii\" mean?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "તેમણે કહ્યું ＿ તેઓ નહીં આવે.",
+          "en": "They said they wouldn't come.",
+          "options": ["કે", "તો", "પણ", "જો"],
+          "answer": "કે",
+          "why": "That: કે."
+        },
+        {
+          "q": "મને લાગે છે ＿ તે ડૉક્ટર છે.",
+          "en": "I think he's a doctor.",
+          "options": ["તો", "કે", "પણ", "જે"],
+          "answer": "કે",
+          "why": "That: કે."
+        },
+        {
+          "q": "\"ભૂખ\" ＿ શું?",
+          "en": "What does \"bhuukh\" mean?",
+          "options": ["કે", "તો", "એટલે", "જે"],
+          "answer": "એટલે",
+          "why": "Means: એટલે."
+        },
+        {
+          "q": "આને ગુજરાતીમાં શું ＿?",
+          "en": "What is this called in Gujarati?",
+          "options": ["કહ્યું", "કહીશ", "કહે છું", "કહેવાય"],
+          "answer": "કહેવાય",
+          "why": "Is called: કહેવાય."
+        },
+        {
+          "q": "તે આવશે કે ＿, ખબર નથી.",
+          "en": "I don't know whether he'll come.",
+          "options": ["નહીં", "ના પાડ", "નથી", "ન"],
+          "answer": "નહીં",
+          "why": "Whether or not: કે નહીં."
+        }
+      ]
+    },
+    {
+      "id": "because-so",
+      "title": "Because and so: કારણ કે, એટલે",
+      "particle": "કારણ કે・એટલે・તેથી・-ને લીધે",
+      "summary": "\"Because\" is કારણ કે before the reason. \"So\" is એટલે (spoken) or તેથી (written). \"Because of\" a noun is -ને લીધે or -ના કારણે. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>કારણ કે</b>: હું ન આવ્યો <b>કારણ કે</b> મને તાવ હતો. <b>એટલે</b> / <b>તેથી</b>: મને તાવ હતો <b>એટલે</b> ન આવ્યો. Why? = <b>કેમ?</b>",
+          "examples": [
+            [
+              "હું મોડો આવ્યો {કારણ કે} બસ ન મળી.",
+              "Hun modo aavyo kaaran ke bas na malii.",
+              "I was late because I didn't get a bus."
+            ],
+            [
+              "ખૂબ ટ્રાફિક હતો {એટલે} મોડું થયું.",
+              "Khuub traafik hato etle modun thayun.",
+              "There was a lot of traffic, so I was late."
+            ]
+          ]
+        },
+        {
+          "h": "Because of",
+          "p": "Nouns: <b>-ને લીધે</b> / <b>-ના કારણે</b>: વરસાદ<b>ને લીધે</b> (because of the rain). Verbs: <b>-વાથી</b>: રોજ ચાલ<b>વાથી</b> તબિયત સારી રહે છે (by walking every day you stay healthy).",
+          "examples": [
+            [
+              "{વરસાદને લીધે} રસ્તો બંધ છે.",
+              "Varsaadne liidhe rasto bandh chhe.",
+              "The road is closed because of the rain."
+            ],
+            [
+              "રોજ {ચાલવાથી} તબિયત સારી રહે છે.",
+              "Roj chaalvaathii tabiyat saarii rahe chhe.",
+              "Walking every day keeps you healthy."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "હું ન આવ્યો ＿ મને તાવ હતો.",
+          "en": "I didn't come because I had a fever.",
+          "options": ["કારણ કે", "એટલે", "પણ", "તો"],
+          "answer": "કારણ કે",
+          "why": "Because: કારણ કે."
+        },
+        {
+          "q": "મને તાવ હતો ＿ ન આવ્યો.",
+          "en": "I had a fever, so I didn't come.",
+          "options": ["કારણ કે", "એટલે", "પણ", "જો"],
+          "answer": "એટલે",
+          "why": "So: એટલે."
+        },
+        {
+          "q": "વરસાદ＿ લીધે મેચ બંધ થઈ.",
+          "en": "The match stopped because of the rain.",
+          "options": ["નો", "માં", "ને", "થી"],
+          "answer": "ને",
+          "why": "Because of: -ને લીધે."
+        },
+        {
+          "q": "તમે ＿ ન આવ્યા?",
+          "en": "Why didn't you come?",
+          "options": ["કારણ કે", "એટલે", "ક્યાં", "કેમ"],
+          "answer": "કેમ",
+          "why": "Why: કેમ."
+        },
+        {
+          "q": "રોજ વાંચ＿ જ્ઞાન વધે છે.",
+          "en": "Reading every day increases knowledge.",
+          "options": ["વાથી", "વા", "તો", "ીને"],
+          "answer": "વાથી",
+          "why": "By doing: -વાથી."
+        }
+      ]
+    },
+    {
+      "id": "before-after",
+      "title": "Before and after: પહેલાં, પછી",
+      "particle": "-તાં પહેલાં・-યા પછી",
+      "summary": "\"Before\" is -તાં પહેલાં or -વા પહેલાં: જતાં પહેલાં (before going). \"After\" is -યા પછી: જમ્યા પછી (after eating). With nouns: જમણ પહેલાં, ભોજન પછી. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Before: <b>સૂતાં પહેલાં</b> (before sleeping), <b>જતાં પહેલાં</b>. After: <b>આવ્યા પછી</b>, <b>જમ્યા પછી</b>. Nouns: ભોજન <b>પહેલાં</b>, ભોજન <b>પછી</b>.",
+          "examples": [
+            [
+              "{સૂતાં પહેલાં} દાંત સાફ કરો.",
+              "Suutaan pahelaan daant saaf karo.",
+              "Brush your teeth before you sleep."
+            ],
+            [
+              "કામ {પૂરું થયા પછી} ફોન કરીશ.",
+              "Kaam puurun thayaa pachhii fon kariish.",
+              "I'll call after work's over."
+            ]
+          ]
+        },
+        {
+          "h": "First, later, ago",
+          "p": "Alone: <b>પહેલાં</b> (first, earlier), <b>પછી</b> (later, then). Ago: બે વર્ષ <b>પહેલાં</b>. Later: બે દિવસ <b>પછી</b>.",
+          "examples": [
+            [
+              "{પહેલાં} જમી લો, {પછી} રમજો.",
+              "Pahelaan jamii lo, pachhii ramjo.",
+              "Eat first, then play."
+            ],
+            [
+              "પાંચ વર્ષ {પહેલાં} હું અહીં આવ્યો.",
+              "Paanch varsh pahelaan hun ahiin aavyo.",
+              "I came here five years ago."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "જતાં ＿ મને કહેજો.",
+          "en": "Tell me before you go.",
+          "options": ["પહેલાં", "પછી", "સુધી", "થી"],
+          "answer": "પહેલાં",
+          "why": "Before: -તાં પહેલાં."
+        },
+        {
+          "q": "જમ્યા ＿ થોડું સૂઈશ.",
+          "en": "After eating I'll nap a little.",
+          "options": ["પહેલાં", "પછી", "સુધી", "માટે"],
+          "answer": "પછી",
+          "why": "After: -યા પછી."
+        },
+        {
+          "q": "બે વર્ષ ＿ અમે મળ્યા.",
+          "en": "We met two years ago.",
+          "options": ["પછી", "સુધી", "પહેલાં", "થી"],
+          "answer": "પહેલાં",
+          "why": "Ago: પહેલાં."
+        },
+        {
+          "q": "પહેલાં કામ, ＿ રમત.",
+          "en": "Work first, play afterwards.",
+          "options": ["પહેલાં", "ત્યારે", "હમણાં", "પછી"],
+          "answer": "પછી",
+          "why": "Then: પછી."
+        },
+        {
+          "q": "ભોજન ＿ આ ગોળી લો.",
+          "en": "Take this tablet before meals.",
+          "options": ["પહેલાં", "પછી", "સાથે", "વગર"],
+          "answer": "પહેલાં",
+          "why": "Before: પહેલાં."
+        }
+      ]
+    },
+    {
+      "id": "when-jyaare",
+      "title": "When: જ્યારે … ત્યારે",
+      "particle": "જ્યારે・ત્યારે・-તી વખતે",
+      "summary": "\"When\" is જ્યારે … ત્યારે: જ્યારે હું આવ્યો ત્યારે તે સૂતો હતો (when I came, he was asleep). \"While doing\" is -તી વખતે: ખાતી વખતે. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>જ્યારે</b> starts the time clause, <b>ત્યારે</b> starts the main one. <b>ત્યારે</b> is often dropped in speech. While: <b>-તી વખતે</b>: જમ<b>તી વખતે</b>, ગાડી ચલાવ<b>તી વખતે</b>.",
+          "examples": [
+            [
+              "{જ્યારે} હું આવ્યો {ત્યારે} તે સૂતો હતો.",
+              "Jyaare hun aavyo tyaare te suuto hato.",
+              "When I came, he was asleep."
+            ],
+            [
+              "{જમતી વખતે} વાત ન કરો.",
+              "Jamtii vakhte vaat na karo.",
+              "Don't talk while you eat."
+            ]
+          ]
+        },
+        {
+          "h": "Then, now, every time",
+          "p": "<b>ત્યારે</b> then, <b>હમણાં</b> / <b>અત્યારે</b> now, <b>ક્યારે</b> when?. \"Every time\" = <b>જ્યારે જ્યારે</b> … <b>ત્યારે ત્યારે</b>. \"When I was little\" = <b>નાનો હતો ત્યારે</b>.",
+          "examples": [
+            [
+              "હું {નાનો હતો ત્યારે} ગામમાં રહેતો હતો.",
+              "Hun naano hato tyaare gaammaan raheto hato.",
+              "When I was little, I lived in a village."
+            ],
+            [
+              "{જ્યારે જ્યારે} તે આવે છે {ત્યારે} વરસાદ પડે છે.",
+              "Jyaare jyaare te aave chhe tyaare varsaad pade chhe.",
+              "Every time she comes, it rains."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ હું ઘરે આવ્યો ત્યારે કોઈ નહોતું.",
+          "en": "When I came home, nobody was there.",
+          "options": ["જ્યારે", "ક્યારે", "ત્યારે", "જો"],
+          "answer": "જ્યારે",
+          "why": "When (linking): જ્યારે."
+        },
+        {
+          "q": "જ્યારે તે આવશે ＿ અમે જમીશું.",
+          "en": "When he comes, we'll eat.",
+          "options": ["જ્યારે", "ત્યારે", "તો", "પછી પહેલાં"],
+          "answer": "ત્યારે",
+          "why": "Then: ત્યારે."
+        },
+        {
+          "q": "ગાડી ચલાવતી ＿ ફોન ન જુઓ.",
+          "en": "Don't look at your phone while driving.",
+          "options": ["પછી", "પહેલાં", "વખતે", "સુધી"],
+          "answer": "વખતે",
+          "why": "While: -તી વખતે."
+        },
+        {
+          "q": "＿ તમે શું કરો છો?",
+          "en": "What are you doing now?",
+          "options": ["ત્યારે", "ક્યારે", "જ્યારે", "અત્યારે"],
+          "answer": "અત્યારે",
+          "why": "Now: અત્યારે."
+        },
+        {
+          "q": "હું નાની હતી ＿ ગામમાં રહેતી હતી.",
+          "en": "When I was little, I lived in a village.",
+          "options": ["ત્યારે", "ક્યારે", "જ્યારે", "પછી"],
+          "answer": "ત્યારે",
+          "why": "Then: ત્યારે."
+        }
+      ]
+    },
+    {
+      "id": "until-since",
+      "title": "Until and since: સુધી, થી",
+      "particle": "સુધી・થી・ત્યાં સુધી",
+      "summary": "\"Until\" is સુધી: સાંજ સુધી (until evening). With a verb: તે આવે ત્યાં સુધી (until he comes). \"From, since\" and \"for\" a time up to now is -થી. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Noun: પાંચ વાગ્યા <b>સુધી</b>, અહીં <b>સુધી</b> (up to here). Verb: subjunctive + <b>ત્યાં સુધી</b>. From … to: સોમવાર<b>થી</b> શુક્રવાર <b>સુધી</b>.",
+          "examples": [
+            [
+              "હું {સાંજ સુધી} ઑફિસમાં છું.",
+              "Hun saanj sudhii ofismaan chhun.",
+              "I'm at the office till evening."
+            ],
+            [
+              "તે {આવે ત્યાં સુધી} રાહ જુઓ.",
+              "Te aave tyaan sudhii raah juo.",
+              "Wait until he comes."
+            ]
+          ]
+        },
+        {
+          "h": "For, so far, still",
+          "p": "For (up to now): બે વર્ષ<b>થી</b> અહીં રહું છું (I've lived here for two years). So far: <b>અત્યાર સુધી</b>. Still: <b>હજી</b> / <b>હજુ</b>: તે <b>હજી</b> સૂએ છે. Not yet: <b>હજી … નથી</b>.",
+          "examples": [
+            [
+              "હું {ત્રણ વર્ષથી} ગુજરાતી શીખું છું.",
+              "Hun tran varshthii gujaraatii shiikhun chhun.",
+              "I've been learning Gujarati for three years."
+            ],
+            [
+              "બસ {હજી} નથી આવી.",
+              "Bas hajii nathii aavii.",
+              "The bus hasn't come yet."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "હું રાત ＿ વાંચીશ.",
+          "en": "I'll study until night.",
+          "options": ["સુધી", "થી", "પહેલાં", "માટે"],
+          "answer": "સુધી",
+          "why": "Until: સુધી."
+        },
+        {
+          "q": "બસ આવે ત્યાં ＿ રાહ જોઈએ.",
+          "en": "Let's wait until the bus comes.",
+          "options": ["થી", "સુધી", "પછી", "માટે"],
+          "answer": "સુધી",
+          "why": "Until (verb): ત્યાં સુધી."
+        },
+        {
+          "q": "સોમવાર＿ શુક્રવાર સુધી કામ.",
+          "en": "Work from Monday to Friday.",
+          "options": ["સુધી", "માં", "થી", "ને"],
+          "answer": "થી",
+          "why": "From: -થી."
+        },
+        {
+          "q": "હું બે વર્ષ＿ અહીં રહું છું.",
+          "en": "I've lived here for two years.",
+          "options": ["સુધી", "માં", "પછી", "થી"],
+          "answer": "થી",
+          "why": "For (up to now): -થી."
+        },
+        {
+          "q": "તે ＿ સૂએ છે.",
+          "en": "He's still asleep.",
+          "options": ["હજી", "અત્યાર સુધી", "ત્યારે", "પહેલાં"],
+          "answer": "હજી",
+          "why": "Still: હજી."
+        }
+      ]
+    },
+    {
+      "id": "hortative-subjunctive",
+      "title": "Let's, shall I: જઈએ, આવું?",
+      "particle": "-ઈએ・-ઉં?・કદાચ -એ",
+      "summary": "The subjunctive has short forms without છે. With \"we\" it means \"let's\": ચાલો, જઈએ. With \"I\" as a question it means \"shall I?\": હું આવું? With કદાચ it means \"might\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-ઈએ</b> let's: <b>ચાલો</b>, જ<b>ઈએ</b> (come on, let's go), <b>જમીએ</b> (let's eat). <b>-ઉં?</b> shall I: હું બારી <b>ખોલું</b>? (shall I open the window?). <b>શું કરું?</b> = what shall I do?",
+          "examples": [
+            ["{ચાલો}, {જઈએ}.", "Chaalo, jaiie.", "Come on, let's go."],
+            ["હું ચા {બનાવું}?", "Hun chaa banaavun?", "Shall I make tea?"]
+          ]
+        },
+        {
+          "h": "Might, so that",
+          "p": "<b>કદાચ</b> + subjunctive = might: <b>કદાચ</b> વરસાદ <b>પડે</b> (it might rain). Wish: <b>તમારું ભલું થાય</b> (may good come to you). So that: <b>જેથી</b> + subjunctive.",
+          "examples": [
+            [
+              "{કદાચ} તે કાલે {આવે}.",
+              "Kadaach te kaale aave.",
+              "He might come tomorrow."
+            ],
+            [
+              "ધીમે બોલો {જેથી} બધા સમજે.",
+              "Dhiime bolo jethii badhaa samaje.",
+              "Speak slowly so that everyone understands."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ચાલો, ફિલ્મ જોવા ＿.",
+          "en": "Come on, let's go to a film.",
+          "options": ["જઈએ", "જઈશ", "જાય", "ગયા"],
+          "answer": "જઈએ",
+          "why": "Let's: -ઈએ."
+        },
+        {
+          "q": "હું બારી ＿?",
+          "en": "Shall I open the window?",
+          "options": ["ખોલીશું", "ખોલું", "ખોલ્યો", "ખોલે"],
+          "answer": "ખોલું",
+          "why": "Shall I: -ઉં?"
+        },
+        {
+          "q": "કદાચ વરસાદ ＿.",
+          "en": "It might rain.",
+          "options": ["પડ્યો", "પડતો", "પડે", "પડીશ"],
+          "answer": "પડે",
+          "why": "Might: કદાચ + -એ."
+        },
+        {
+          "q": "હવે હું શું ＿?",
+          "en": "What shall I do now?",
+          "options": ["કરીશું", "કર્યું", "કરે છે", "કરું"],
+          "answer": "કરું",
+          "why": "Shall I: -ઉં."
+        },
+        {
+          "q": "ધીમે બોલો ＿ બધા સમજે.",
+          "en": "Speak slowly so that everyone understands.",
+          "options": ["જેથી", "કારણ કે", "તો", "પણ"],
+          "answer": "જેથી",
+          "why": "So that: જેથી."
+        }
+      ]
+    },
+    {
+      "id": "continuous",
+      "title": "Is doing: કરી રહ્યો છે",
+      "particle": "-ઈ રહ્યો છું",
+      "summary": "The progressive is the stem + -ઈ + રહ્યો / રહી / રહ્યું + છે: હું વાંચી રહ્યો છું (I'm reading). The plain present often covers it too. \"Was doing\" swaps in હતો. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>રહ્યો</b> m, <b>રહી</b> f, <b>રહ્યું</b> n, <b>રહ્યા</b> pl: તે જમી <b>રહી છે</b> (she's eating), વરસાદ પડી <b>રહ્યો છે</b> (it's raining). Spoken Gujarati often just says જમે છે.",
+          "examples": [
+            [
+              "તે રસોઈ {બનાવી રહી છે}.",
+              "Te rasoii banaavii rahii chhe.",
+              "She's cooking."
+            ],
+            [
+              "વરસાદ {પડી રહ્યો છે}.",
+              "Varsaad padii rahyo chhe.",
+              "It's raining."
+            ]
+          ]
+        },
+        {
+          "h": "Was doing",
+          "p": "Past: <b>-ઈ રહ્યો હતો</b>: તમે ફોન કર્યો ત્યારે હું ન્હાઈ <b>રહ્યો હતો</b>. The <b>-તો હતો</b> form also works: હું <b>વાંચતો હતો</b> (I was reading).",
+          "examples": [
+            [
+              "તમે ફોન કર્યો ત્યારે હું {વાંચતો હતો}.",
+              "Tame fon karyo tyaare hun vaanchto hato.",
+              "I was reading when you called."
+            ],
+            [
+              "બાળક {રડી રહ્યું હતું}.",
+              "Baalak radii rahyun hatun.",
+              "The baby was crying."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "હું અત્યારે જમી ＿ છું.",
+          "en": "I'm eating right now. (a man)",
+          "options": ["રહ્યો", "રહી", "રહ્યું", "રહ્યા"],
+          "answer": "રહ્યો",
+          "why": "Masculine: રહ્યો."
+        },
+        {
+          "q": "બાળકો રમી ＿ છે.",
+          "en": "The children are playing.",
+          "options": ["રહ્યો", "રહ્યાં", "રહી", "રહ્યું"],
+          "answer": "રહ્યાં",
+          "why": "Plural: રહ્યાં."
+        },
+        {
+          "q": "વરસાદ પડી રહ્યો ＿.",
+          "en": "It's raining.",
+          "options": ["છું", "છો", "છે", "છીએ"],
+          "answer": "છે",
+          "why": "It: છે."
+        },
+        {
+          "q": "તમે આવ્યા ત્યારે હું સૂતો ＿.",
+          "en": "I was sleeping when you came.",
+          "options": ["છું", "હતી", "છે", "હતો"],
+          "answer": "હતો",
+          "why": "Was doing (m): -તો હતો."
+        },
+        {
+          "q": "તે શું કરી ＿ છે?",
+          "en": "What is she doing?",
+          "options": ["રહી", "રહ્યો", "રહ્યું", "રહ્યા"],
+          "answer": "રહી",
+          "why": "Feminine: રહી."
+        }
+      ]
+    },
+    {
+      "id": "habitual-past",
+      "title": "Used to: -તો હતો",
+      "particle": "-તો・-તી・-તું + હતું",
+      "summary": "The -તો form + હતો is \"used to\" and \"was doing\": નાનો હતો ત્યારે હું ક્રિકેટ રમતો હતો (I used to play cricket as a boy). Both parts agree with the subject. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>રમતો હતો</b> (m), <b>રમતી હતી</b> (f), <b>રમતા હતા</b> (pl). Time words show it is a habit: <b>પહેલાં</b>, <b>રોજ</b>, <b>ત્યારે</b>.",
+          "examples": [
+            [
+              "{પહેલાં} હું મુંબઈમાં {રહેતો હતો}.",
+              "Pahelaan hun mumbaiimaan raheto hato.",
+              "I used to live in Mumbai."
+            ],
+            [
+              "દાદી અમને વાર્તા {કહેતાં હતાં}.",
+              "Daadii amne vaartaa kahetaan hataan.",
+              "Grandma used to tell us stories."
+            ]
+          ]
+        },
+        {
+          "h": "Not any more",
+          "p": "<b>હવે નહીં</b> = not any more: પહેલાં પીતો હતો, <b>હવે નહીં</b>. \"Used not to\": <b>-તો નહોતો</b>: પહેલાં તે બોલતો <b>નહોતો</b>.",
+          "examples": [
+            [
+              "પહેલાં ચા પીતો હતો, {હવે નહીં}.",
+              "Pahelaan chaa piito hato, have nahiin.",
+              "I used to drink tea; not any more."
+            ],
+            [
+              "પહેલાં તે બહુ {બોલતી નહોતી}.",
+              "Pahelaan te bahu boltii nahotii.",
+              "She didn't use to talk much."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "નાની હતી ત્યારે હું નૃત્ય કરતી ＿.",
+          "en": "I used to dance as a girl.",
+          "options": ["હતી", "હતો", "છું", "છે"],
+          "answer": "હતી",
+          "why": "Feminine: -તી હતી."
+        },
+        {
+          "q": "પપ્પા રોજ બસમાં જતા ＿.",
+          "en": "Dad used to go by bus every day.",
+          "options": ["હતો", "હતા", "હતી", "છે"],
+          "answer": "હતા",
+          "why": "Respect: -તા હતા."
+        },
+        {
+          "q": "પહેલાં તે માંસ ખાતો ＿.",
+          "en": "He didn't use to eat meat.",
+          "options": ["નથી", "ન", "નહોતો", "નહીં"],
+          "answer": "નહોતો",
+          "why": "Used not to: -તો નહોતો."
+        },
+        {
+          "q": "પહેલાં સિગરેટ પીતો હતો, ＿ નહીં.",
+          "en": "I used to smoke; not any more.",
+          "options": ["ત્યારે", "પહેલાં", "હજી", "હવે"],
+          "answer": "હવે",
+          "why": "Not any more: હવે નહીં."
+        },
+        {
+          "q": "＿ અમે ગામમાં રહેતા હતા.",
+          "en": "In those days we lived in a village.",
+          "options": ["ત્યારે", "હવે", "હમણાં", "પછી"],
+          "answer": "ત્યારે",
+          "why": "In those days: ત્યારે."
+        }
+      ]
+    },
+    {
+      "id": "perfect",
+      "title": "Have done: આવ્યો છે, જોયું છે?",
+      "particle": "-યું છે・-યું હતું",
+      "summary": "The perfect is the past form + છે: તે આવ્યો છે (he has come), મેં ફિલ્મ જોઈ છે (I've seen the film). With હતું it's the past perfect. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Intransitive: તે <b>ગયો છે</b>, તેઓ <b>આવ્યા છે</b>. Transitive (with -એ doer): મેં <b>ખાધું છે</b>, તમે ગોવા <b>જોયું છે</b>? Never: <b>ક્યારેય … નથી</b>: મેં <b>ક્યારેય</b> બરફ <b>જોયો નથી</b>.",
+          "examples": [
+            [
+              "તેઓ ગામ {ગયા છે}.",
+              "Teo gaam gayaa chhe.",
+              "They've gone to the village."
+            ],
+            [
+              "તમે ગિરનાર {જોયો છે}?",
+              "Tame girnaar joyo chhe?",
+              "Have you seen Girnar?"
+            ]
+          ]
+        },
+        {
+          "h": "Had done",
+          "p": "<b>-યું હતું</b>: મેં પહેલેથી જ <b>ખાધું હતું</b> (I had already eaten). It also means \"went (and came back)\": ગઈ કાલે હું ડૉક્ટર પાસે <b>ગયો હતો</b>.",
+          "examples": [
+            [
+              "તમે આવ્યા પહેલાં તે {નીકળી ગયો હતો}.",
+              "Tame aavyaa pahelaan te nikalii gayo hato.",
+              "He had left before you came."
+            ],
+            [
+              "મેં તે પુસ્તક {વાંચ્યું નથી}.",
+              "Men te pustak vaanchyun nathii.",
+              "I haven't read that book."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "પત્ર આવ્યો ＿.",
+          "en": "The letter has come.",
+          "options": ["છે", "હતો", "છું", "છો"],
+          "answer": "છે",
+          "why": "Has come: + છે."
+        },
+        {
+          "q": "તમે કેરળ જોયું ＿?",
+          "en": "Have you seen Kerala?",
+          "options": ["છો", "છે", "હતો", "છું"],
+          "answer": "છે",
+          "why": "Have you: -યું છે?"
+        },
+        {
+          "q": "મેં તે ફિલ્મ જોઈ ＿.",
+          "en": "I haven't seen that film.",
+          "options": ["ન", "નહીં", "નથી", "હતી"],
+          "answer": "નથી",
+          "why": "Haven't: -યું નથી."
+        },
+        {
+          "q": "ગઈ કાલે હું ડૉક્ટર પાસે ગયો ＿.",
+          "en": "Yesterday I went to the doctor.",
+          "options": ["છે", "છું", "હતી", "હતો"],
+          "answer": "હતો",
+          "why": "Went and came back: ગયો હતો."
+        },
+        {
+          "q": "તેણે પહેલેથી જ ખાધું ＿.",
+          "en": "She had already eaten.",
+          "options": ["હતું", "છે", "હતી", "છો"],
+          "answer": "હતું",
+          "why": "Past perfect: -યું હતું."
+        }
+      ]
+    },
+    {
+      "id": "also-pan",
+      "title": "Also, even: પણ",
+      "particle": "પણ・સુધ્ધાં",
+      "summary": "પણ after a word is \"also, too\": હું પણ (me too). With a negative it's \"not even\": એક રૂપિયો પણ નથી. At the start of a sentence પણ means \"but\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>હું પણ</b> આવીશ (I'll come too). <b>આજે પણ</b> (today too). Both … and: <b>-ને … -ને</b> or <b>બંને</b>: <b>મમ્મી અને પપ્પા બંને</b>. \"But\": <b>પણ</b> હું થાકી ગયો છું.",
+          "examples": [
+            ["{હું પણ} આવીશ.", "Hun pan aaviish.", "I'll come too."],
+            [
+              "{મમ્મી અને પપ્પા બંને} આવ્યાં.",
+              "Mammii ane pappaa banne aavyaan.",
+              "Both Mum and Dad came."
+            ]
+          ]
+        },
+        {
+          "h": "Not even, nobody",
+          "p": "With a negative: એક શબ્દ <b>પણ</b> ન બોલ્યો (didn't say even a word). <b>કોઈ</b>, <b>કંઈ</b>, <b>ક્યાંય</b> + negative = nobody, nothing, nowhere.",
+          "examples": [
+            [
+              "તે એક શબ્દ {પણ} ન બોલ્યો.",
+              "Te ek shabd pan na bolyo.",
+              "He didn't say a single word."
+            ],
+            [
+              "ઘરે {કોઈ} નથી.",
+              "Ghare koii nathii.",
+              "There's nobody at home."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "મારા માટે ＿ એક ચા.",
+          "en": "A tea for me too.",
+          "options": ["પણ", "જ", "ફક્ત", "નહીં"],
+          "answer": "પણ",
+          "why": "Also: પણ."
+        },
+        {
+          "q": "તેની પાસે એક રૂપિયો ＿ નથી.",
+          "en": "He doesn't have even a rupee.",
+          "options": ["જ", "પણ", "તો", "કે"],
+          "answer": "પણ",
+          "why": "Not even: પણ + negative."
+        },
+        {
+          "q": "વર્ગમાં ＿ નહોતું.",
+          "en": "There was nobody in the class.",
+          "options": ["કોણ", "કંઈ", "કોઈ", "ક્યાં"],
+          "answer": "કોઈ",
+          "why": "Nobody: કોઈ + negative."
+        },
+        {
+          "q": "મેં બોલાવ્યો, ＿ તે ન આવ્યો.",
+          "en": "I called him, but he didn't come.",
+          "options": ["જ", "તો", "કે", "પણ"],
+          "answer": "પણ",
+          "why": "But: પણ."
+        },
+        {
+          "q": "મમ્મી અને પપ્પા ＿ ડૉક્ટર છે.",
+          "en": "Both Mum and Dad are doctors.",
+          "options": ["બંને", "પણ", "બધું", "કોઈ"],
+          "answer": "બંને",
+          "why": "Both: બંને."
+        }
+      ]
+    },
+    {
+      "id": "emphasis-j",
+      "title": "Emphasis: -જ",
+      "particle": "જ",
+      "summary": "જ after a word stresses it: હું જ (I myself, only I), અહીં જ (right here), હમણાં જ (right now, just now). એ જ means \"the same\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>હું જ</b> કરીશ (I'll do it myself). <b>અહીં જ</b> બેસો (sit right here). <b>હમણાં જ</b> = right now, just now. <b>એ જ</b> / <b>તે જ</b> = that same one. <b>પહેલેથી જ</b> = already.",
+          "examples": [
+            [
+              "{મેં જ} રસોઈ બનાવી.",
+              "Men j rasoii banaavii.",
+              "I cooked it myself."
+            ],
+            ["તે {અહીં જ} હતો.", "Te ahiin j hato.", "He was right here."]
+          ]
+        },
+        {
+          "h": "Same, already",
+          "p": "<b>એ જ</b> બસ (the same bus), <b>એક જ</b> (just one, the same): અમે <b>એક જ</b> શાળામાં ભણ્યા. Already: બસ <b>પહેલેથી જ</b> ગઈ. Just now: તે <b>હમણાં જ</b> ગયો.",
+          "examples": [
+            ["તે {હમણાં જ} ગયો.", "Te hamnaan j gayo.", "He's just left."],
+            [
+              "અમે {એક જ} શાળામાં ભણ્યા.",
+              "Ame ek j shaalaamaan bhanyaa.",
+              "We studied at the same school."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ જ આ કામ કર્યું.",
+          "en": "I did this work myself.",
+          "options": ["મેં", "હું", "મને", "મારું"],
+          "answer": "મેં",
+          "why": "Myself: મેં જ."
+        },
+        {
+          "q": "હમણાં ＿ આવો!",
+          "en": "Come right now!",
+          "options": ["પણ", "જ", "તો", "કે"],
+          "answer": "જ",
+          "why": "Right now: હમણાં જ."
+        },
+        {
+          "q": "બસ પહેલેથી ＿ ગઈ.",
+          "en": "The bus has already gone.",
+          "options": ["પણ", "તો", "જ", "કે"],
+          "answer": "જ",
+          "why": "Already: પહેલેથી જ."
+        },
+        {
+          "q": "અમે એક ＿ ગામના છીએ.",
+          "en": "We're from the same village.",
+          "options": ["પણ", "તો", "કે", "જ"],
+          "answer": "જ",
+          "why": "The same: એક જ."
+        },
+        {
+          "q": "＿ જ બેસો.",
+          "en": "Sit right here.",
+          "options": ["અહીં", "અહીંથી", "ત્યાંથી", "ક્યાં"],
+          "answer": "અહીં",
+          "why": "Right here: અહીં જ."
+        }
+      ]
+    },
+    {
+      "id": "comparatives",
+      "title": "Than: કરતાં",
+      "particle": "-ના કરતાં・વધારે・ઓછું",
+      "summary": "\"Than\" is કરતાં after the -ના form: તે મારા કરતાં ઊંચો છે (he's taller than me). The adjective doesn't change for comparison. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>મારા કરતાં</b>, <b>તેના કરતાં</b>, <b>ગઈ કાલ કરતાં</b>. More: <b>વધારે</b>, less: <b>ઓછું</b>: આ તેના કરતાં <b>વધારે</b> મોંઘું છે. Better: <b>-ના કરતાં સારું</b>.",
+          "examples": [
+            [
+              "મારી બહેન {મારા કરતાં} મોટી છે.",
+              "Maarii bahen maaraa kartaan motii chhe.",
+              "My sister is older than me."
+            ],
+            [
+              "આજે {ગઈ કાલ કરતાં} ગરમી છે.",
+              "Aaje gaii kaal kartaan garmii chhe.",
+              "It's hotter today than yesterday."
+            ]
+          ]
+        },
+        {
+          "h": "As … as",
+          "p": "\"As … as\" = <b>-ના જેટલું</b>: તેના <b>જેટલો</b> ઊંચો (as tall as him). \"Rather than\" = <b>-વા કરતાં</b>: ઘરે બેસ<b>વા કરતાં</b> બહાર જઈએ.",
+          "examples": [
+            [
+              "હું {તેના જેટલું} ઝડપથી નથી દોડતો.",
+              "Hun tenaa jetlun jhadapthii nathii dodto.",
+              "I don't run as fast as him."
+            ],
+            [
+              "ઘરે {બેસવા કરતાં} બહાર જઈએ.",
+              "Ghare besvaa kartaan bahaar jaiie.",
+              "Rather than sit at home, let's go out."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "તે મારા ＿ ઊંચો છે.",
+          "en": "He's taller than me.",
+          "options": ["કરતાં", "જેટલો", "માટે", "સાથે"],
+          "answer": "કરતાં",
+          "why": "Than: કરતાં."
+        },
+        {
+          "q": "આ તેના કરતાં ＿ મોંઘું છે.",
+          "en": "This is more expensive than that.",
+          "options": ["ઓછું", "વધારે", "એટલું", "બધું"],
+          "answer": "વધારે",
+          "why": "More: વધારે."
+        },
+        {
+          "q": "બસ કરતાં ટ્રેન ＿ છે.",
+          "en": "The train is better than the bus.",
+          "options": ["સારો", "સારું", "સારી", "સારા"],
+          "answer": "સારી",
+          "why": "ટ્રેન is feminine."
+        },
+        {
+          "q": "હું તેના ＿ સારું ગાતો નથી.",
+          "en": "I don't sing as well as her.",
+          "options": ["કરતાં", "માટે", "પાસે", "જેટલું"],
+          "answer": "જેટલું",
+          "why": "As … as: જેટલું."
+        },
+        {
+          "q": "આની કિંમત તેના કરતાં ＿ છે.",
+          "en": "This costs less than that.",
+          "options": ["ઓછી", "વધારે", "મોટી", "બધી"],
+          "answer": "ઓછી",
+          "why": "Less: ઓછું (here ઓછી for કિંમત)."
+        }
+      ]
+    },
+    {
+      "id": "superlative",
+      "title": "The most: સૌથી",
+      "particle": "સૌથી・બધામાં",
+      "summary": "\"The most\" is સૌથી before the adjective: સૌથી મોટું (the biggest). \"Of all\" is બધામાં or બધા કરતાં. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>સૌથી</b> + adjective: <b>સૌથી</b> સારું (the best), <b>સૌથી</b> ઊંચો (the tallest). In a group: વર્ગમાં <b>સૌથી</b> હોશિયાર. Of all: <b>બધામાં</b>, <b>બધા કરતાં</b>.",
+          "examples": [
+            [
+              "આ ગુજરાતની {સૌથી} મોટી નદી છે.",
+              "Aa gujaraatnii sauthii motii nadii chhe.",
+              "This is the biggest river in Gujarat."
+            ],
+            [
+              "તે વર્ગમાં {સૌથી} હોશિયાર છે.",
+              "Te vargmaan sauthii hoshiyaar chhe.",
+              "She's the cleverest in the class."
+            ]
+          ]
+        },
+        {
+          "h": "Of all",
+          "p": "<b>બધા કરતાં</b> / <b>બધામાં</b>: મને કેરી <b>બધા કરતાં</b> વધારે ગમે છે (I like mangoes best of all). \"One of the best\" = <b>સૌથી સારા … માંનું એક</b>.",
+          "examples": [
+            [
+              "મને કેરી {બધા કરતાં} વધારે ગમે છે.",
+              "Mane kerii badhaa kartaan vadhaare game chhe.",
+              "I like mangoes best of all."
+            ],
+            [
+              "તે ઘરમાં {સૌથી} નાનો છે.",
+              "Te gharmaan sauthii naano chhe.",
+              "He's the youngest at home."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "આ ભારતની ＿ લાંબી નદી છે.",
+          "en": "This is the longest river in India.",
+          "options": ["સૌથી", "વધારે", "ઓછી", "બધી"],
+          "answer": "સૌથી",
+          "why": "The most: સૌથી."
+        },
+        {
+          "q": "મને આ ગીત ＿ કરતાં વધારે ગમે છે.",
+          "en": "I like this song best of all.",
+          "options": ["સૌથી", "બધા", "કોઈ", "એક"],
+          "answer": "બધા",
+          "why": "Of all: બધા કરતાં."
+        },
+        {
+          "q": "તે ઘરમાં સૌથી ＿ છે.",
+          "en": "He's the youngest at home.",
+          "options": ["નાની", "નાનું", "નાનો", "નાના"],
+          "answer": "નાનો",
+          "why": "Masculine: -ો."
+        },
+        {
+          "q": "આ ＿ સારી હોટલ છે.",
+          "en": "This is the best hotel.",
+          "options": ["વધારે", "બધી", "ઓછી", "સૌથી"],
+          "answer": "સૌથી",
+          "why": "The best: સૌથી સારું."
+        },
+        {
+          "q": "તે શહેરની સૌથી મોટી ＿ છે.",
+          "en": "That's the biggest shop in the city.",
+          "options": ["દુકાન", "દુકાનો", "દુકાનમાં", "દુકાનને"],
+          "answer": "દુકાન",
+          "why": "Superlative + noun."
+        }
+      ]
+    },
+    {
+      "id": "adverbs",
+      "title": "How: ધીમે, જલદી, -થી",
+      "particle": "ધીમે・જલદી・સારી રીતે・-થી",
+      "summary": "Many adverbs are plain words: ધીમે (slowly), જલદી (quickly), મોડું (late). Others add -થી to a noun: ધ્યાનથી (carefully), પ્રેમથી (lovingly). \"Well\" is સારી રીતે. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ધીમે</b> slowly, <b>જલદી</b> quickly, <b>વહેલા</b> early, <b>મોડું</b> late, <b>સારી રીતે</b> well, <b>જોરથી</b> loudly, <b>ધ્યાનથી</b> carefully, <b>આરામથી</b> comfortably. <b>બહુ</b> / <b>ખૂબ</b> = very.",
+          "examples": [
+            ["{ધીમે} બોલો.", "Dhiime bolo.", "Please speak slowly."],
+            [
+              "તે {સારી રીતે} ગાય છે.",
+              "Te saarii riite gaay chhe.",
+              "She sings well."
+            ]
+          ]
+        },
+        {
+          "h": "As",
+          "p": "\"As\" a role: <b>તરીકે</b>: તે ડૉક્ટર <b>તરીકે</b> કામ કરે છે (he works as a doctor). Doubling softens and spreads: <b>ધીમે ધીમે</b> (little by little), <b>જલદી જલદી</b> (quick, quick).",
+          "examples": [
+            [
+              "તે {શિક્ષક તરીકે} કામ કરે છે.",
+              "Te shikshak tariike kaam kare chhe.",
+              "He works as a teacher."
+            ],
+            [
+              "{ધીમે ધીમે} શીખી જશો.",
+              "Dhiime dhiime shiikhii jasho.",
+              "You'll learn little by little."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "થોડું ＿ વાંચો.",
+          "en": "Please read a bit slowly.",
+          "options": ["ધીમે", "જલદી", "જોરથી", "મોડું"],
+          "answer": "ધીમે",
+          "why": "Slowly: ધીમે."
+        },
+        {
+          "q": "કાલે ＿ આવજો.",
+          "en": "Come early tomorrow.",
+          "options": ["મોડું", "વહેલા", "ધીમે", "જોરથી"],
+          "answer": "વહેલા",
+          "why": "Early: વહેલા."
+        },
+        {
+          "q": "તે ગુજરાતી ＿ બોલે છે.",
+          "en": "He speaks Gujarati well.",
+          "options": ["સારો", "સારું છે", "સારી રીતે", "સારી"],
+          "answer": "સારી રીતે",
+          "why": "Well: સારી રીતે."
+        },
+        {
+          "q": "＿ ન બોલો.",
+          "en": "Don't talk loudly.",
+          "options": ["ધીમે", "ધ્યાનથી", "આરામથી", "જોરથી"],
+          "answer": "જોરથી",
+          "why": "Loudly: જોરથી."
+        },
+        {
+          "q": "તે નર્સ ＿ કામ કરે છે.",
+          "en": "She works as a nurse.",
+          "options": ["તરીકે", "માટે", "સાથે", "જેવી"],
+          "answer": "તરીકે",
+          "why": "As: તરીકે."
+        }
+      ]
+    },
+    {
+      "id": "experiencer",
+      "title": "Hunger, fever, feelings: મને ભૂખ લાગી છે",
+      "particle": "મને … લાગે છે・આવે છે",
+      "summary": "Feelings happen \"to\" you: the person takes -ને and the feeling is the subject: મને ભૂખ લાગી છે (I'm hungry), તેને ગુસ્સો આવ્યો (he got angry). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>ભૂખ લાગી છે</b> (hungry), <b>તરસ લાગી છે</b> (thirsty), <b>ઠંડી લાગે છે</b> (feel cold), <b>ઊંઘ આવે છે</b> (sleepy). Illness: મને <b>તાવ</b> છે, મારું <b>માથું દુખે છે</b> (my head hurts).",
+          "examples": [
+            [
+              "{મને} ખૂબ {ભૂખ લાગી છે}.",
+              "Mane khuub bhuukh laagii chhe.",
+              "I'm very hungry."
+            ],
+            [
+              "બાળકને {ઊંઘ આવે છે}.",
+              "Baalakne uungh aave chhe.",
+              "The baby is sleepy."
+            ]
+          ]
+        },
+        {
+          "h": "Feelings",
+          "p": "<b>ગુસ્સો આવ્યો</b> (got angry), <b>ડર લાગે છે</b> (I'm scared), <b>આનંદ થયો</b> (I'm glad), <b>દુઃખ થયું</b> (I'm sad, sorry). Unwell: <b>મને સારું નથી</b>.",
+          "examples": [
+            [
+              "તમને મળીને {આનંદ થયો}.",
+              "Tamne maliine aanand thayo.",
+              "Glad to meet you."
+            ],
+            ["{તેને સારું નથી}.", "Tene saarun nathii.", "He's not well."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ભૂખ લાગી છે.",
+          "en": "I'm hungry.",
+          "options": ["મને", "હું", "મારી", "મેં"],
+          "answer": "મને",
+          "why": "The person: -ને."
+        },
+        {
+          "q": "મને ઊંઘ ＿.",
+          "en": "I'm sleepy.",
+          "options": ["કરું છું", "આવે છે", "લાગ્યો છું", "જોઈએ છે"],
+          "answer": "આવે છે",
+          "why": "Sleep \"comes\": ઊંઘ આવે છે."
+        },
+        {
+          "q": "તેને ગુસ્સો ＿.",
+          "en": "He got angry.",
+          "options": ["કર્યો", "લીધો", "આવ્યો", "ગયો"],
+          "answer": "આવ્યો",
+          "why": "Anger \"came\": ગુસ્સો આવ્યો."
+        },
+        {
+          "q": "મારું માથું ＿.",
+          "en": "My head hurts.",
+          "options": ["લાગે છે", "આવે છે", "થાય છું", "દુખે છે"],
+          "answer": "દુખે છે",
+          "why": "Hurts: દુખે છે."
+        },
+        {
+          "q": "તમને મળીને આનંદ ＿.",
+          "en": "Glad to meet you.",
+          "options": ["થયો", "આવ્યો", "લાગ્યો", "કર્યો"],
+          "answer": "થયો",
+          "why": "Glad: આનંદ થયો."
+        }
+      ]
+    },
+    {
+      "id": "vaanun",
+      "title": "Going to, supposed to: -વાનું",
+      "particle": "-વાનો છે・મારે -વાનું છે",
+      "summary": "-વાનું + છે says something is planned or expected: તે કાલે આવવાનો છે (he's going to come tomorrow). With મારે it means \"I'm supposed to\": મારે જવાનું છે. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Subject form agrees with the subject: તે આવ<b>વાનો</b> છે (m), તે આવ<b>વાની</b> છે (f), તેઓ આવ<b>વાના</b> છે (pl). With <b>મારે</b>: <b>મારે</b> કાલે <b>જવાનું છે</b> (I've got to go tomorrow).",
+          "examples": [
+            [
+              "ટ્રેન પાંચ વાગ્યે {ઊપડવાની છે}.",
+              "Tren paanch vaagye uupadvaanii chhe.",
+              "The train is due to leave at five."
+            ],
+            [
+              "{મારે} કાલે ડૉક્ટર પાસે {જવાનું છે}.",
+              "Maare kaale daoktar paase javaanun chhe.",
+              "I've got to go to the doctor tomorrow."
+            ]
+          ]
+        },
+        {
+          "h": "As a noun",
+          "p": "<b>-વાનું</b> also makes a noun: <b>ખાવાનું</b> (food, literally \"the eating\"), <b>જમવાનું</b> (the meal). And \"about to\": હું નીકળ<b>વાનો જ હતો</b> (I was just about to leave).",
+          "examples": [
+            [
+              "{ખાવાનું} તૈયાર છે.",
+              "Khaavaanun taiyaar chhe.",
+              "The food's ready."
+            ],
+            [
+              "હું {નીકળવાનો જ હતો}.",
+              "Hun nikalvaano j hato.",
+              "I was just about to leave."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "તે કાલે આવ＿ છે.",
+          "en": "He's going to come tomorrow.",
+          "options": ["વાનો", "વાની", "વાનું", "વાના"],
+          "answer": "વાનો",
+          "why": "Masculine: -વાનો."
+        },
+        {
+          "q": "મારે કાલે ઑફિસ જ＿ છે.",
+          "en": "I've got to go to the office tomorrow.",
+          "options": ["વાનો", "વાનું", "વું પડ્યું", "ઈશ"],
+          "answer": "વાનું",
+          "why": "With મારે: -વાનું."
+        },
+        {
+          "q": "ટ્રેન છ વાગ્યે ઊપડ＿ છે.",
+          "en": "The train is due to leave at six.",
+          "options": ["વાનો", "વાનું", "વાની", "વાના"],
+          "answer": "વાની",
+          "why": "ટ્રેન is feminine."
+        },
+        {
+          "q": "＿ તૈયાર છે.",
+          "en": "The food's ready.",
+          "options": ["ખાવો", "ખાધું", "ખાતું", "ખાવાનું"],
+          "answer": "ખાવાનું",
+          "why": "Food: ખાવાનું."
+        },
+        {
+          "q": "હું નીકળવાનો ＿ હતો.",
+          "en": "I was just about to leave.",
+          "options": ["જ", "પણ", "તો", "કે"],
+          "answer": "જ",
+          "why": "About to: -વાનો જ હતો."
+        }
+      ]
+    },
+    {
+      "id": "kinship-address",
+      "title": "Addressing people: -ભાઈ, -બેન, કાકા",
+      "particle": "-ભાઈ・-બેન・કાકા・માસી",
+      "summary": "Gujaratis add ભાઈ (brother) or બેન (sister) to a name as a polite title: રમેશભાઈ, ગીતાબેન. An older stranger is કાકા (uncle) or માસી (auntie). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>પપ્પા</b> / <b>પિતા</b> father, <b>મમ્મી</b> / <b>માતા</b> mother, <b>ભાઈ</b> brother, <b>બહેન</b> (spoken બેન) sister, <b>દાદા</b> / <b>દાદી</b> father's parents, <b>નાના</b> / <b>નાની</b> mother's parents, <b>કાકા</b> father's brother, <b>મામા</b> mother's brother, <b>માસી</b> mother's sister, <b>ફઈ</b> father's sister.",
+          "examples": [
+            [
+              "{રમેશભાઈ}, કેમ છો?",
+              "Rameshbhaaii, kem chho?",
+              "How are you, Ramesh-bhai?"
+            ],
+            ["{ગીતાબેન} આવ્યાં.", "Giitaaben aavyaan.", "Gita-ben has come."]
+          ]
+        },
+        {
+          "h": "Strangers",
+          "p": "To a shopkeeper or driver: <b>ભાઈ</b> / <b>બેન</b>. To an older person: <b>કાકા</b> / <b>માસી</b>. Respect: <b>-જી</b>: <b>બાપુજી</b>. Respected people take plural verbs: <b>દાદા આવ્યા</b>.",
+          "examples": [
+            [
+              "{ભાઈ}, આ બસ સુરત જાય છે?",
+              "Bhaaii, aa bas surat jaay chhe?",
+              "Excuse me (brother), does this bus go to Surat?"
+            ],
+            [
+              "{માસી}, આ શાક કેટલાનું છે?",
+              "Maasii, aa shaak ketlaanun chhe?",
+              "Auntie, how much are these vegetables?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿, રિક્ષા ખાલી છે?",
+          "en": "Brother, is the rickshaw free?",
+          "options": ["ભાઈ", "કાકી", "મમ્મી", "બેટા"],
+          "answer": "ભાઈ",
+          "why": "A man you don't know: ભાઈ."
+        },
+        {
+          "q": "ગીતા＿, અંદર આવો.",
+          "en": "Gita-ben, come in.",
+          "options": ["ભાઈ", "બેન", "કાકા", "જી ભાઈ"],
+          "answer": "બેન",
+          "why": "A woman's title: -બેન."
+        },
+        {
+          "q": "મારા ＿ મમ્મીના ભાઈ છે.",
+          "en": "My mama is my mother's brother.",
+          "options": ["કાકા", "દાદા", "મામા", "ફઈ"],
+          "answer": "મામા",
+          "why": "Mother's brother: મામા."
+        },
+        {
+          "q": "＿, આ કેરી કેટલાની છે?",
+          "en": "Auntie, how much are these mangoes?",
+          "options": ["મામા", "ભાઈ", "દાદા", "માસી"],
+          "answer": "માસી",
+          "why": "Older woman: માસી."
+        },
+        {
+          "q": "મારા દાદા કાલે ＿.",
+          "en": "My grandfather came yesterday.",
+          "options": ["આવ્યા", "આવ્યો", "આવી", "આવ્યું"],
+          "answer": "આવ્યા",
+          "why": "Respect: plural verb."
+        }
+      ]
+    },
+    {
+      "id": "compound-verbs",
+      "title": "Finish it off: -ઈ ગયો, -ઈ નાખ્યું, -ઈ લો",
+      "particle": "-ઈ જવું・-ઈ નાખવું・-ઈ લેવું・-ઈ આપવું",
+      "summary": "A second verb after -ઈ adds a shade: ભૂલી ગયો (I clean forgot), ખાઈ નાખ્યું (ate it all up), લઈ લો (take it), કરી આપો (do it for me). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-ઈ જવું</b> = it happened, completely: ભૂલી <b>ગયો</b>, તૂટી <b>ગયું</b> (it broke), સૂઈ <b>ગયો</b> (fell asleep). <b>-ઈ નાખવું</b> = forcefully, all of it: ફાડી <b>નાખ્યું</b> (tore it up).",
+          "examples": [
+            [
+              "અરે, હું {ભૂલી ગયો}!",
+              "Are, hun bhuulii gayo!",
+              "Oh no, I completely forgot!"
+            ],
+            ["ગ્લાસ {તૂટી ગયો}.", "Glaas tuutii gayo.", "The glass broke."]
+          ]
+        },
+        {
+          "h": "For yourself, for others",
+          "p": "<b>-ઈ લેવું</b> = for yourself: જમી <b>લો</b> (do eat), લઈ <b>લો</b> (take it). <b>-ઈ આપવું</b> / <b>-ઈ દેવું</b> = for someone else: આ ફોર્મ ભરી <b>આપો</b> (fill in this form for me).",
+          "examples": [
+            ["પહેલાં {જમી લો}.", "Pahelaan jamii lo.", "Eat first."],
+            [
+              "આ ફોર્મ {ભરી આપશો}?",
+              "Aa form bharii aapsho?",
+              "Could you fill in this form for me?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "મારું પાકીટ ખોવાઈ ＿.",
+          "en": "My wallet got lost.",
+          "options": ["ગયું", "લીધું", "આપ્યું", "નાખ્યું"],
+          "answer": "ગયું",
+          "why": "It happened: -ઈ ગયું."
+        },
+        {
+          "q": "બાળક બધું દૂધ પી ＿.",
+          "en": "The child drank up all the milk.",
+          "options": ["આપ્યું", "ગયું", "લીધો", "દીધી"],
+          "answer": "ગયું",
+          "why": "All up: -ઈ જવું."
+        },
+        {
+          "q": "આ પત્ર વાંચી ＿?",
+          "en": "Could you read this letter for me?",
+          "options": ["લેશો", "જશો", "આપશો", "નાખશો"],
+          "answer": "આપશો",
+          "why": "For me: -ઈ આપવું."
+        },
+        {
+          "q": "દવા લઈ ＿.",
+          "en": "Take your medicine.",
+          "options": ["આપો", "જાઓ", "નાખો", "લો"],
+          "answer": "લો",
+          "why": "For yourself: -ઈ લેવું."
+        },
+        {
+          "q": "તેણે કાગળ ફાડી ＿.",
+          "en": "He tore up the paper.",
+          "options": ["નાખ્યો", "લીધો", "આપ્યો", "ગયો"],
+          "answer": "નાખ્યો",
+          "why": "Forcefully: -ઈ નાખવું."
+        }
+      ]
+    },
+    {
+      "id": "causative",
+      "title": "Make someone do: -આવવું",
+      "particle": "-આવવું・-ાડવું",
+      "summary": "Causatives add -આવ- or -ાડ-: કરવું → કરાવવું (have done), શીખવું → શીખવવું (teach), ખાવું → ખવડાવવું (feed). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "કરવું → <b>કરાવવું</b>, બતાવવું (show), શીખવું → <b>શીખવવું</b> (teach), ખાવું → <b>ખવડાવવું</b> (feed), પીવું → <b>પીવડાવવું</b>, સૂવું → <b>સુવડાવવું</b> (put to sleep), ચાલવું → <b>ચલાવવું</b> (drive).",
+          "examples": [
+            [
+              "મેં ગાડી {રિપેર કરાવી}.",
+              "Men gaadii ripeyar karaavii.",
+              "I had the car repaired."
+            ],
+            [
+              "મને રસ્તો {બતાવશો}?",
+              "Mane rasto bataavsho?",
+              "Could you show me the way?"
+            ]
+          ]
+        },
+        {
+          "h": "Who does it",
+          "p": "The one made to act takes <b>-ની પાસે</b>: મેં દરજી<b>ની પાસે</b> કપડાં સિવડાવ્યાં (I had the tailor sew the clothes). Teaching: શિક્ષક બાળકોને ગુજરાતી <b>શીખવે છે</b>.",
+          "examples": [
+            [
+              "શિક્ષક બાળકોને ગણિત {શીખવે છે}.",
+              "Shikshak baalkone ganit shiikhve chhe.",
+              "The teacher teaches the children maths."
+            ],
+            [
+              "મમ્મીએ બાળકને {સુવડાવ્યું}.",
+              "Mammiie baalakne suvdaavyun.",
+              "Mum put the baby to sleep."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "તે બસ ચલા＿ છે.",
+          "en": "He drives a bus.",
+          "options": ["વે", "ય", "શે", "વ્યું"],
+          "answer": "વે",
+          "why": "Drive: ચલાવવું."
+        },
+        {
+          "q": "શિક્ષક બાળકોને ગુજરાતી ＿ છે.",
+          "en": "The teacher teaches the children Gujarati.",
+          "options": ["શીખે", "શીખવે", "શીખ્યા", "શીખવા"],
+          "answer": "શીખવે",
+          "why": "Teach: શીખવવું."
+        },
+        {
+          "q": "કૃપા કરીને તમારી ટિકિટ ＿.",
+          "en": "Please show your ticket.",
+          "options": ["જુઓ", "બતાવ્યું", "બતાવો", "જોયું"],
+          "answer": "બતાવો",
+          "why": "Show: બતાવવું."
+        },
+        {
+          "q": "દાદીએ બાળકને ખવડા＿.",
+          "en": "Grandma fed the child.",
+          "options": ["વે છે", "વું", "વશે છું", "વ્યું"],
+          "answer": "વ્યું",
+          "why": "Past of ખવડાવવું."
+        },
+        {
+          "q": "મેં દરજીની ＿ કપડાં સિવડાવ્યાં.",
+          "en": "I had the tailor sew the clothes.",
+          "options": ["પાસે", "માટે", "સાથે", "વગર"],
+          "answer": "પાસે",
+          "why": "The doer: -ની પાસે."
+        }
+      ]
+    },
+    {
+      "id": "passive",
+      "title": "The passive: -આય, -વામાં આવ્યું",
+      "particle": "-આય・-વામાં આવે છે",
+      "summary": "Gujarati has a short passive in -આય: અહીં ગુજરાતી બોલાય છે (Gujarati is spoken here). Formal writing uses -વામાં આવ્યું: પુલ બાંધવામાં આવ્યો (the bridge was built). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Short passive: બોલ → <b>બોલાય</b>, વાંચ → <b>વંચાય</b>, કર → <b>કરાય</b>, લખ → <b>લખાયું</b>. It also means \"one can, one should\": અહીં ફોટો <b>પડાય</b>? (can one take photos here?).",
+          "examples": [
+            [
+              "અહીં ગુજરાતી {બોલાય છે}.",
+              "Ahiin gujaraatii bolaay chhe.",
+              "Gujarati is spoken here."
+            ],
+            [
+              "આ પુસ્તક ગાંધીજીએ {લખ્યું હતું}.",
+              "Aa pustak gaandhiijiie lakhyun hatun.",
+              "Gandhiji wrote this book."
+            ]
+          ]
+        },
+        {
+          "h": "Formal passive",
+          "p": "<b>-વામાં આવવું</b>: મંદિર ૧૨મી સદીમાં બાંધ<b>વામાં આવ્યું</b> (the temple was built in the 12th century). The doer takes <b>દ્વારા</b>: સરકાર <b>દ્વારા</b> (by the government).",
+          "examples": [
+            [
+              "મંદિર બારમી સદીમાં {બાંધવામાં આવ્યું}.",
+              "Mandir baaramii sadiimaan baandhvaamaan aavyun.",
+              "The temple was built in the twelfth century."
+            ],
+            [
+              "સભા {મુલતવી રાખવામાં આવી}.",
+              "Sabhaa multavii raakhvaamaan aavii.",
+              "The meeting was postponed."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "આ દેશમાં હિન્દી બોલા＿ છે.",
+          "en": "Hindi is spoken in this country.",
+          "options": ["ય", "યો", "વે", "શે"],
+          "answer": "ય",
+          "why": "Short passive: -આય."
+        },
+        {
+          "q": "પુલ ગયા વર્ષે બાંધવામાં ＿.",
+          "en": "The bridge was built last year.",
+          "options": ["ગયો", "આવ્યો", "લીધો", "કર્યો"],
+          "answer": "આવ્યો",
+          "why": "Formal passive: -વામાં આવ્યું."
+        },
+        {
+          "q": "સરકાર ＿ નવી યોજના શરૂ થઈ.",
+          "en": "A new scheme was started by the government.",
+          "options": ["માટે", "સાથે", "દ્વારા", "વગર"],
+          "answer": "દ્વારા",
+          "why": "By: દ્વારા."
+        },
+        {
+          "q": "અહીં ફોટો પડા＿?",
+          "en": "Can one take photos here?",
+          "options": ["યો", "શે", "વું", "ય"],
+          "answer": "ય",
+          "why": "One can: -આય."
+        },
+        {
+          "q": "આ પત્ર ક્યારે લખા＿?",
+          "en": "When was this letter written?",
+          "options": ["યો", "ય છે", "શે", "વું"],
+          "answer": "યો",
+          "why": "Past short passive: -આયો."
+        }
+      ]
+    },
+    {
+      "id": "inability",
+      "title": "I can't manage: મારાથી નહીં થાય",
+      "particle": "-થી + passive + નહીં",
+      "summary": "Gujarati says \"I can't manage\" with -થી and the short passive: મારાથી આ નહીં ખવાય (I can't eat this), મારાથી નહીં અવાય (I won't be able to come). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "The person + <b>-થી</b>: <b>મારાથી</b>, <b>તેનાથી</b>, <b>તમારાથી</b>. Verb in the short passive: ખા → <b>ખવાય</b>, આવ → <b>અવાય</b>, જા → <b>જવાય</b>, ચાલ → <b>ચલાય</b>, થા → <b>થાય</b>.",
+          "examples": [
+            [
+              "{મારાથી} આટલું {નહીં ખવાય}.",
+              "Maaraathii aatlun nahiin khavaay.",
+              "I can't eat this much."
+            ],
+            [
+              "{મારાથી} કાલે {નહીં અવાય}.",
+              "Maaraathii kaale nahiin avaay.",
+              "I won't be able to come tomorrow."
+            ]
+          ]
+        },
+        {
+          "h": "Couldn't",
+          "p": "Past: <b>-થી … ન … -આયું</b>: <b>મારાથી</b> <b>ઊંઘાયું નહીં</b> (I couldn't sleep). It's softer than હું ન કરી શક્યો and shows the matter was beyond you.",
+          "examples": [
+            [
+              "{તેનાથી} ચલાયું નહીં.",
+              "Tenaathii chalaayun nahiin.",
+              "He couldn't walk."
+            ],
+            [
+              "{મારાથી} રહેવાયું નહીં.",
+              "Maaraathii rahevaayun nahiin.",
+              "I couldn't help it. (I couldn't stay quiet.)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ આ કામ નહીં થાય.",
+          "en": "I can't manage this work.",
+          "options": ["મારાથી", "મને", "હું", "મેં"],
+          "answer": "મારાથી",
+          "why": "The person: -થી."
+        },
+        {
+          "q": "મારાથી આટલું નહીં ખ＿.",
+          "en": "I can't eat this much.",
+          "options": ["ાઈશ", "વાય", "ાધું", "ાય છું"],
+          "answer": "વાય",
+          "why": "Short passive: ખવાય."
+        },
+        {
+          "q": "તેનાથી ચલા＿ નહીં.",
+          "en": "He couldn't walk.",
+          "options": ["ય છે", "શે", "યું", "વું"],
+          "answer": "યું",
+          "why": "Past: -આયું."
+        },
+        {
+          "q": "મારાથી કાલે નહીં ＿.",
+          "en": "I won't be able to come tomorrow.",
+          "options": ["આવીશ", "આવે", "આવ્યો", "અવાય"],
+          "answer": "અવાય",
+          "why": "Short passive: અવાય."
+        },
+        {
+          "q": "＿ આ સહન નથી થતું.",
+          "en": "She can't bear this.",
+          "options": ["તેનાથી", "તેને", "તે", "તેણે"],
+          "answer": "તેનાથી",
+          "why": "The person: -થી."
+        }
+      ]
+    },
+    {
+      "id": "reflexive",
+      "title": "Oneself: પોતે, પોતાનું, એકબીજા",
+      "particle": "પોતે・પોતાનું・જાતે・એકબીજા",
+      "summary": "પોતે is \"oneself\", પોતાનું \"one's own\": તે પોતાની ગાડીમાં આવ્યો (he came in his own car). જાતે is \"by oneself\"; એકબીજા is \"each other\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>પોતાનો / પોતાની / પોતાનું</b> agrees with the thing owned: <b>પોતાનું</b> ઘર, <b>પોતાની</b> ગાડી. <b>પોતે</b> = himself, herself: તેણે <b>પોતે</b> કહ્યું. <b>જાતે</b> = by oneself, without help.",
+          "examples": [
+            [
+              "તે {પોતાની} ગાડીમાં આવી.",
+              "Te potaanii gaadiimaan aavii.",
+              "She came in her own car."
+            ],
+            [
+              "તેણે {જાતે} રસોઈ બનાવી.",
+              "Tene jaate rasoii banaavii.",
+              "He cooked by himself."
+            ]
+          ]
+        },
+        {
+          "h": "Each other",
+          "p": "<b>એકબીજા</b> + ending: <b>એકબીજાને</b> (each other, object), <b>એકબીજા સાથે</b> (with each other), <b>એકબીજાનું</b> (each other's). Polite \"you\": <b>આપ</b>, with plural verbs.",
+          "examples": [
+            [
+              "તેઓ {એકબીજાને} મદદ કરે છે.",
+              "Teo ekbiijaane madad kare chhe.",
+              "They help each other."
+            ],
+            [
+              "{આપ} ક્યાંથી આવો છો?",
+              "Aap kyaanthii aavo chho?",
+              "Where are you from, sir? (very polite)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "રમેશે ＿ મમ્મીને ફોન કર્યો.",
+          "en": "Ramesh phoned his own mother.",
+          "options": ["પોતાની", "તેની", "મારી", "તમારી"],
+          "answer": "પોતાની",
+          "why": "His own: પોતાની."
+        },
+        {
+          "q": "તેણે ＿ કામ કર્યું.",
+          "en": "She did the work by herself.",
+          "options": ["પોતાનું", "જાતે", "એકબીજા", "આપ"],
+          "answer": "જાતે",
+          "why": "By oneself: જાતે."
+        },
+        {
+          "q": "મારે ＿ ઘર જોઈએ છે.",
+          "en": "I want a house of my own.",
+          "options": ["પોતે", "જાતે", "પોતાનું", "એકબીજાનું"],
+          "answer": "પોતાનું",
+          "why": "Own: પોતાનું."
+        },
+        {
+          "q": "તેઓ ＿ સાથે વાત કરતા નથી.",
+          "en": "They don't talk to each other.",
+          "options": ["પોતે", "જાતે", "પોતાનું", "એકબીજા"],
+          "answer": "એકબીજા",
+          "why": "Each other: એકબીજા."
+        },
+        {
+          "q": "＿ શું લેશો?",
+          "en": "What will you have, sir? (very polite)",
+          "options": ["આપ", "તું", "પોતે", "જાતે"],
+          "answer": "આપ",
+          "why": "Very polite \"you\": આપ."
+        }
+      ]
+    },
+    {
+      "id": "indefinites",
+      "title": "Someone, something: કોઈ, કંઈક",
+      "particle": "કોઈ・કંઈક・ક્યાંક・ક્યારેક",
+      "summary": "કોઈ is \"someone, anyone\", કંઈક \"something\", ક્યાંક \"somewhere\", ક્યારેક \"sometimes\". With a negative: કોઈ નહીં (nobody), કંઈ નહીં (nothing). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>કોઈ</b> someone, <b>કંઈક</b> something, <b>ક્યાંક</b> somewhere, <b>ક્યારેક</b> sometimes. Negative: <b>કોઈ</b> નથી (nobody), <b>કંઈ</b> નથી (nothing), <b>ક્યાંય</b> નહીં (nowhere), <b>ક્યારેય</b> નહીં (never).",
+          "examples": [
+            [
+              "{કોઈ} બારણું ખખડાવે છે.",
+              "Koii baaranun khakhdaave chhe.",
+              "Someone's knocking at the door."
+            ],
+            [
+              "મારે {કંઈ} નથી જોઈતું.",
+              "Maare kanii nathii joiitun.",
+              "I don't want anything."
+            ]
+          ]
+        },
+        {
+          "h": "Any-",
+          "p": "<b>પણ</b> makes \"any-\": <b>કોઈ પણ</b> (anyone at all), <b>કંઈ પણ</b> (anything), <b>ક્યાંય પણ</b>. Offers: <b>કંઈ</b> જોઈએ છે? (do you need anything?).",
+          "examples": [
+            ["{કંઈ} જોઈએ છે?", "Kanii joiie chhe?", "Do you need anything?"],
+            ["{કોઈ પણ} મદદ કરો!", "Koii pan madad karo!", "Somebody help!"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ફોન કર્યો હતો.",
+          "en": "Someone called.",
+          "options": ["કોઈએ", "કોઈ", "કોણ", "કંઈક"],
+          "answer": "કોઈએ",
+          "why": "Someone (doer): કોઈએ."
+        },
+        {
+          "q": "ઘરે ＿ નથી.",
+          "en": "Nobody's home.",
+          "options": ["કોણ", "કોઈ", "કંઈ", "ક્યાંક"],
+          "answer": "કોઈ",
+          "why": "Nobody: કોઈ + negative."
+        },
+        {
+          "q": "મેં ચશ્મા ＿ મૂક્યા છે.",
+          "en": "I've put my glasses somewhere.",
+          "options": ["ક્યાંય", "ક્યાં", "ક્યાંક", "કંઈક"],
+          "answer": "ક્યાંક",
+          "why": "Somewhere: ક્યાંક."
+        },
+        {
+          "q": "હું ＿ ત્યાં જાઉં છું.",
+          "en": "I sometimes go there.",
+          "options": ["ક્યારેય", "ક્યારે", "ક્યાંક", "ક્યારેક"],
+          "answer": "ક્યારેક",
+          "why": "Sometimes: ક્યારેક."
+        },
+        {
+          "q": "તેણે ＿ ન કહ્યું.",
+          "en": "He didn't say anything.",
+          "options": ["કંઈ", "કંઈક", "કોઈ", "ક્યાંક"],
+          "answer": "કંઈ",
+          "why": "Nothing: કંઈ + negative."
+        }
+      ]
+    },
+    {
+      "id": "every-all",
+      "title": "Every, all: દરેક, બધા, બધું",
+      "particle": "દરેક・દર・બધા・બધું・રોજ",
+      "summary": "દરેક is \"every, each\": દરેક માણસ. બધા is \"all\" or \"everyone\", બધું \"everything\". રોજ is \"every day\"; દર + time is \"every\": દર વર્ષે. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>દરેક</b> + singular: <b>દરેક</b> બાળક, <b>દરેક</b> દિવસ. <b>દર</b> + time + -એ: <b>દર</b> <b>વર્ષે</b>, <b>દર</b> <b>અઠવાડિયે</b>. <b>રોજ</b> = every day. <b>બધા</b> + plural: <b>બધા</b> છોકરા.",
+          "examples": [
+            [
+              "હું {રોજ} ચાલવા જાઉં છું.",
+              "Hun roj chaalvaa jaaun chhun.",
+              "I go for a walk every day."
+            ],
+            [
+              "{બધી} દુકાનો બંધ છે.",
+              "Badhii dukaano bandh chhe.",
+              "All the shops are closed."
+            ]
+          ]
+        },
+        {
+          "h": "Everyone, everything",
+          "p": "<b>બધા</b> everyone: <b>બધા</b> આવ્યા. <b>બધું</b> everything: <b>બધું</b> બરાબર છે (everything's fine). \"All of us\": <b>આપણે બધા</b>. \"Both\": <b>બંને</b>.",
+          "examples": [
+            ["{બધા} આવી ગયા.", "Badhaa aavii gayaa.", "Everyone has arrived."],
+            [
+              "{બધું} બરાબર છે.",
+              "Badhun baraabar chhe.",
+              "Everything's fine."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ વર્ષે અમે ગોવા જઈએ છીએ.",
+          "en": "Every year we go to Goa.",
+          "options": ["દર", "બધા", "બધું", "કોઈ"],
+          "answer": "દર",
+          "why": "Every (time): દર."
+        },
+        {
+          "q": "＿ બાળકને એક ભેટ.",
+          "en": "A present for each child.",
+          "options": ["બધા", "દરેક", "બધું", "કોઈ"],
+          "answer": "દરેક",
+          "why": "Each: દરેક."
+        },
+        {
+          "q": "＿ આવ્યા.",
+          "en": "Everyone came.",
+          "options": ["બધું", "દરેક", "બધા", "દર"],
+          "answer": "બધા",
+          "why": "Everyone: બધા."
+        },
+        {
+          "q": "＿ બરાબર છે.",
+          "en": "Everything's fine.",
+          "options": ["બધા", "દરેક", "દર", "બધું"],
+          "answer": "બધું",
+          "why": "Everything: બધું."
+        },
+        {
+          "q": "આપણે ＿ સાથે જઈએ.",
+          "en": "Let's all go together.",
+          "options": ["બધા", "બધું", "દરેક", "દર"],
+          "answer": "બધા",
+          "why": "All of us: આપણે બધા."
+        }
+      ]
+    },
+    {
+      "id": "only",
+      "title": "Only: ફક્ત, માત્ર, સિવાય",
+      "particle": "ફક્ત・માત્ર・-જ・સિવાય",
+      "summary": "\"Only\" is ફક્ત or માત્ર before the word, or -જ after it: ફક્ત હું / હું જ (only me). \"Except\" is સિવાય. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ફક્ત</b> / <b>માત્ર</b> before: <b>ફક્ત</b> દસ રૂપિયા (just ten rupees), <b>માત્ર</b> આજે. Or <b>જ</b> after: આજે <b>જ</b>. <b>એકમાત્ર</b> = the one and only.",
+          "examples": [
+            ["{ફક્ત} હું આવ્યો.", "Phakt hun aavyo.", "Only I came."],
+            [
+              "તે તેમનો {એકમાત્ર} દીકરો છે.",
+              "Te temno ekmaatra diikro chhe.",
+              "He's their only son."
+            ]
+          ]
+        },
+        {
+          "h": "Except, not only",
+          "p": "<b>સિવાય</b> = except: રવિવાર <b>સિવાય</b> (except Sunday). <b>ફક્ત … જ નહીં, … પણ</b> = not only … but also.",
+          "examples": [
+            [
+              "તે {ફક્ત} ગુજરાતી {જ નહીં}, હિન્દી પણ બોલે છે.",
+              "Te phakt gujaraatii j nahiin, hindii pan bole chhe.",
+              "She speaks not only Gujarati but Hindi too."
+            ],
+            [
+              "{રવિવાર સિવાય} દુકાન રોજ ખુલ્લી રહે છે.",
+              "Ravivaar sivaay dukaan roj khullii rahe chhe.",
+              "The shop is open every day except Sunday."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "મારે ＿ દસ મિનિટ જોઈએ.",
+          "en": "I only need ten minutes.",
+          "options": ["ફક્ત", "પણ", "સિવાય", "નહીં"],
+          "answer": "ફક્ત",
+          "why": "Only: ફક્ત."
+        },
+        {
+          "q": "તે તેમની ＿ દીકરી છે.",
+          "en": "She's their only daughter.",
+          "options": ["એક જ વાર", "એકમાત્ર", "દરેક", "બધી"],
+          "answer": "એકમાત્ર",
+          "why": "The only: એકમાત્ર."
+        },
+        {
+          "q": "આજે ＿ રજા છે.",
+          "en": "The holiday is only today.",
+          "options": ["પણ", "તો", "જ", "કે"],
+          "answer": "જ",
+          "why": "Only (after): જ."
+        },
+        {
+          "q": "તેના ＿ બધા આવ્યા.",
+          "en": "Everyone came except him.",
+          "options": ["જ", "પણ", "સાથે", "સિવાય"],
+          "answer": "સિવાય",
+          "why": "Except: સિવાય."
+        },
+        {
+          "q": "તે ફક્ત ગાય જ નહીં, લખે ＿ છે.",
+          "en": "He not only sings, he writes too.",
+          "options": ["પણ", "જ", "તો", "કે"],
+          "answer": "પણ",
+          "why": "But also: પણ."
+        }
+      ]
+    },
+    {
+      "id": "seem",
+      "title": "Seems, like: લાગે છે, જેવું, જેમ",
+      "particle": "લાગવું・જેવું・જેમ … તેમ",
+      "summary": "\"Seem, I think\" is લાગે છે: મને લાગે છે કે … (I think that…), તે થાકેલો લાગે છે (he looks tired). \"Like\" is -ના જેવું; \"as\" is જેમ. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>મને લાગે છે કે</b> વરસાદ પડશે. Looks: <b>લાગે છે</b>: તમે થાકેલા <b>લાગો છો</b> (you look tired). Like: <b>-ના જેવું</b>: બાળક<b>ના જેવો</b>, મારા <b>જેવી</b> (like me, agrees).",
+          "examples": [
+            [
+              "{મને લાગે છે કે} તે નહીં આવે.",
+              "Mane laage chhe ke te nahiin aave.",
+              "I think he won't come."
+            ],
+            [
+              "તમે થાકેલા {લાગો છો}.",
+              "Tame thaakelaa laago chho.",
+              "You look tired."
+            ]
+          ]
+        },
+        {
+          "h": "As",
+          "p": "<b>જેમ … તેમ</b> = as: તમે કહ્યું <b>તેમ</b> કર્યું (I did as you said). Short: <b>-ની જેમ</b>: બાળક<b>ની જેમ</b> રડે છે (cries like a child).",
+          "examples": [
+            [
+              "તે {મમ્મી જેવી} દેખાય છે.",
+              "Te mammii jevii dekhaay chhe.",
+              "She looks like her mother."
+            ],
+            [
+              "તમે કહ્યું {તેમ} કર્યું.",
+              "Tame kahyun tem karyun.",
+              "I did as you said."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "મને ＿ કે તે ડૉક્ટર છે.",
+          "en": "I think he's a doctor.",
+          "options": ["લાગે છે", "જોઈએ છે", "ગમે છે", "આવડે છે"],
+          "answer": "લાગે છે",
+          "why": "I think: લાગે છે."
+        },
+        {
+          "q": "તમે ખુશ ＿.",
+          "en": "You look happy.",
+          "options": ["લાગે છે", "લાગો છો", "જુઓ છો", "દેખાય છું"],
+          "answer": "લાગો છો",
+          "why": "\"You\": લાગો છો."
+        },
+        {
+          "q": "તે બાળકની ＿ રડે છે.",
+          "en": "He cries like a child.",
+          "options": ["તેમ", "સાથે", "જેમ", "કરતાં"],
+          "answer": "જેમ",
+          "why": "Like: -ની જેમ."
+        },
+        {
+          "q": "ડૉક્ટરે કહ્યું ＿ દવા લો.",
+          "en": "Take the medicine as the doctor said.",
+          "options": ["જેમ", "કે", "તો", "તેમ"],
+          "answer": "તેમ",
+          "why": "As: તેમ."
+        },
+        {
+          "q": "તે મારા ＿ છે.",
+          "en": "He's like me.",
+          "options": ["જેવો", "જેવી", "જેવું", "જેવા"],
+          "answer": "જેવો",
+          "why": "Masculine: જેવો."
+        }
+      ]
+    },
+    {
+      "id": "counterfactual",
+      "title": "If I had known: હોત, આવત",
+      "particle": "-યું હોત・-ત",
+      "summary": "Unreal past uses the -ત form: જો મને ખબર હોત તો હું આવત (if I had known, I would have come). Both clauses use it. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "If-clause: <b>-યું હોત</b> / <b>હોત</b>: તમે કહ્યું <b>હોત</b>, મને ખબર <b>હોત</b>. Result: stem + <b>-ત</b>: <b>આવત</b> (would have come), <b>કરત</b>, <b>મળત</b>. Or <b>-યો હોત</b>: હું આવ્યો <b>હોત</b>.",
+          "examples": [
+            [
+              "જો તમે {કહ્યું હોત} તો હું {આવત}.",
+              "Jo tame kahyun hot to hun aavat.",
+              "If you had told me, I would have come."
+            ],
+            [
+              "વહેલા {નીકળ્યા હોત} તો બસ {મળી જાત}.",
+              "Vahelaa nikalyaa hot to bas malii jaat.",
+              "If we'd left early, we'd have caught the bus."
+            ]
+          ]
+        },
+        {
+          "h": "Wishes",
+          "p": "\"It would have been nice\" = <b>સારું થાત</b>: તમે પણ આવ્યા હોત તો <b>સારું થાત</b>. \"If only\" = <b>કાશ</b>: <b>કાશ</b> મારી પાસે પૈસા હોત!",
+          "examples": [
+            [
+              "તમે પણ આવ્યા હોત તો {સારું થાત}.",
+              "Tame pan aavyaa hot to saarun thaat.",
+              "It would have been nice if you'd come too."
+            ],
+            [
+              "{કાશ} મારી પાસે સમય {હોત}!",
+              "Kaash maarii paase samay hot!",
+              "If only I had time!"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "જો મને ખબર ＿ તો હું મદદ કરત.",
+          "en": "If I had known, I would have helped.",
+          "options": ["હોત", "છે", "હતી", "હશે"],
+          "answer": "હોત",
+          "why": "If … had: હોત."
+        },
+        {
+          "q": "જો તમે ફોન કર્યો હોત તો હું ＿.",
+          "en": "If you had called, I'd have come.",
+          "options": ["આવીશ", "આવત", "આવ્યો", "આવું છું"],
+          "answer": "આવત",
+          "why": "Would have: -ત."
+        },
+        {
+          "q": "વરસાદ ન પડ્યો હોત તો મેચ ＿.",
+          "en": "If it hadn't rained, the match would have happened.",
+          "options": ["થશે", "થઈ", "થાત", "થાય છે"],
+          "answer": "થાત",
+          "why": "Would have: -ત."
+        },
+        {
+          "q": "તમે આવ્યા હોત તો સારું ＿.",
+          "en": "It would have been nice if you had come.",
+          "options": ["થશે", "છે", "થયું", "થાત"],
+          "answer": "થાત",
+          "why": "Would have been: થાત."
+        },
+        {
+          "q": "＿ મારી પાસે પૈસા હોત!",
+          "en": "If only I had money!",
+          "options": ["કાશ", "જો", "કદાચ", "ભલે"],
+          "answer": "કાશ",
+          "why": "If only: કાશ."
+        }
+      ]
+    },
+    {
+      "id": "probability",
+      "title": "Must be, maybe: હશે, કદાચ",
+      "particle": "હશે・-યો હશે・કદાચ",
+      "summary": "Guesses use the future of \"be\": તે ઘરે હશે (he must be at home). After a past form it guesses about the past: તે ગયો હશે (he must have gone). કદાચ is \"perhaps\". (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>હશે</b> = must be, probably is: તે ઑફિસમાં <b>હશે</b>. Past guess: <b>-યો હશે</b>: તે ભૂલી ગયો <b>હશે</b>. Maybe: <b>કદાચ</b> + subjunctive or future.",
+          "examples": [
+            [
+              "તે અત્યારે ઑફિસમાં {હશે}.",
+              "Te atyaare ofismaan hashe.",
+              "She'll be at the office now."
+            ],
+            [
+              "તે {ભૂલી ગયો હશે}.",
+              "Te bhuulii gayo hashe.",
+              "He must have forgotten."
+            ]
+          ]
+        },
+        {
+          "h": "Whether",
+          "p": "<b>કે નહીં</b> = whether or not: તે આવશે <b>કે નહીં</b> ખબર નથી. <b>કોણ જાણે</b> = who knows: <b>કોણ જાણે</b> ક્યારે આવશે.",
+          "examples": [
+            [
+              "તે આવશે {કે નહીં}, ખબર નથી.",
+              "Te aavshe ke nahiin, khabar nathii.",
+              "I don't know whether he'll come or not."
+            ],
+            [
+              "{કદાચ} કાલે વરસાદ પડશે.",
+              "Kadaach kaale varsaad padshe.",
+              "Perhaps it'll rain tomorrow."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "તે અત્યારે સૂતો ＿.",
+          "en": "He must be asleep now.",
+          "options": ["હશે", "છે", "હતો", "હોત"],
+          "answer": "હશે",
+          "why": "Must be: હશે."
+        },
+        {
+          "q": "બસ ક્યારની ગઈ ＿.",
+          "en": "The bus must have gone long ago.",
+          "options": ["છે", "હશે", "હોત", "હતી"],
+          "answer": "હશે",
+          "why": "Must have: -ઈ હશે."
+        },
+        {
+          "q": "તે આવશે કે ＿ ખબર નથી.",
+          "en": "I don't know whether she'll come or not.",
+          "options": ["ન", "ના", "નહીં", "નથી"],
+          "answer": "નહીં",
+          "why": "Whether or not: કે નહીં."
+        },
+        {
+          "q": "＿ તેઓ કાલે આવે.",
+          "en": "Perhaps they'll come tomorrow.",
+          "options": ["કાશ", "ભલે", "જો", "કદાચ"],
+          "answer": "કદાચ",
+          "why": "Perhaps: કદાચ."
+        },
+        {
+          "q": "＿ જાણે તે ક્યાં ગયો.",
+          "en": "Who knows where he went.",
+          "options": ["કોણ", "શું", "કેમ", "કયો"],
+          "answer": "કોણ",
+          "why": "Who knows: કોણ જાણે."
+        }
+      ]
+    },
+    {
+      "id": "reported-command",
+      "title": "Told someone to: -વા કહ્યું",
+      "particle": "-ને … -વા કહેવું",
+      "summary": "A reported command is the person in -ને + -વા + કહેવું: તેમણે મને રાહ જોવા કહ્યું (they told me to wait). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-ને … -વા કહ્યું</b>: ડૉક્ટરે મને આરામ કર<b>વા કહ્યું</b>. Passing it on: તેને મને ફોન કર<b>વા કહો</b>. Formal requests: <b>-વા વિનંતી</b>: સમયસર આવ<b>વા વિનંતી</b> છે.",
+          "examples": [
+            [
+              "તેમણે {મને} {રાહ જોવા કહ્યું}.",
+              "Temne mane raah jovaa kahyun.",
+              "They told me to wait."
+            ],
+            [
+              "{તેને} મને {ફોન કરવા કહો}.",
+              "Tene mane fon karvaa kaho.",
+              "Tell her to call me."
+            ]
+          ]
+        },
+        {
+          "h": "Asking, written notices",
+          "p": "Ask someone to: <b>-વા વિનંતી કરી</b>. Notices: સૌને સમયસર આવ<b>વા વિનંતી</b>. Spoken quote: મમ્મીએ કહ્યું કે \"જલદી આવ\".",
+          "examples": [
+            [
+              "સૌને સમયસર {આવવા વિનંતી} છે.",
+              "Saune samaysar aavvaa vinantii chhe.",
+              "Everyone is requested to arrive on time."
+            ],
+            [
+              "તેણે મને {મદદ કરવા વિનંતી કરી}.",
+              "Tene mane madad karvaa vinantii karii.",
+              "She asked me to help."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ડૉક્ટરે મને ચાલ＿ કહ્યું.",
+          "en": "The doctor told me to walk.",
+          "options": ["વા", "વું", "તો", "શે"],
+          "answer": "વા",
+          "why": "Told to: -વા કહ્યું."
+        },
+        {
+          "q": "＿ રાહ જોવા કહો.",
+          "en": "Tell him to wait.",
+          "options": ["તે", "તેને", "તેણે", "તેનું"],
+          "answer": "તેને",
+          "why": "The person told: -ને."
+        },
+        {
+          "q": "શિક્ષકે અમને શાંત રહેવા ＿.",
+          "en": "The teacher told us to be quiet.",
+          "options": ["કહેવું", "કહે છે છે", "કહ્યું", "કહીશ"],
+          "answer": "કહ્યું",
+          "why": "Told: કહ્યું."
+        },
+        {
+          "q": "તેણે મને મદદ કરવા ＿ કરી.",
+          "en": "She asked me to help.",
+          "options": ["વાત", "કામ", "મદદ", "વિનંતી"],
+          "answer": "વિનંતી",
+          "why": "Request: વિનંતી."
+        },
+        {
+          "q": "સભ્યોને સભામાં હાજર રહે＿ વિનંતી.",
+          "en": "Members are requested to attend the meeting.",
+          "options": ["વા", "વું", "શે", "તો"],
+          "answer": "વા",
+          "why": "Written request: -વા વિનંતી."
+        }
+      ]
+    },
+    {
+      "id": "without",
+      "title": "Without: -યા વગર",
+      "particle": "-યા વગર・-યા વિના・-ને બદલે",
+      "summary": "\"Without doing\" is the past form + વગર or વિના: કહ્યા વગર ગયો (he left without saying). Nouns use વગર directly: ખાંડ વગર. \"Instead of\" is -ને બદલે. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "કહ્યું → <b>કહ્યા વગર</b>, ખાધું → <b>ખાધા વગર</b>, જોયું → <b>જોયા વગર</b>. Written: <b>વિના</b>. Nouns: ખાંડ <b>વગર</b>, પૈસા <b>વિના</b>.",
+          "examples": [
+            [
+              "તે {ખાધા વગર} સૂઈ ગયો.",
+              "Te khaadhaa vagar suui gayo.",
+              "He went to sleep without eating."
+            ],
+            [
+              "{ખાંડ વગર} એક ચા.",
+              "Khaand vagar ek chaa.",
+              "A tea without sugar."
+            ]
+          ]
+        },
+        {
+          "h": "Instead of",
+          "p": "<b>-ને બદલે</b>: ચા<b>ને બદલે</b> કૉફી (coffee instead of tea). With a verb: ભણ<b>વાને બદલે</b> રમે છે (he's playing instead of studying).",
+          "examples": [
+            [
+              "{બસને બદલે} ટ્રેનમાં જઈએ.",
+              "Basne badle trenmaan jaiie.",
+              "Let's go by train instead of bus."
+            ],
+            [
+              "તે {ભણવાને બદલે} ટીવી જુએ છે.",
+              "Te bhanvaane badle tiivii jue chhe.",
+              "He's watching TV instead of studying."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "તે કંઈ કહ્યા ＿ ગઈ.",
+          "en": "She left without saying anything.",
+          "options": ["વગર", "સાથે", "માટે", "પછી"],
+          "answer": "વગર",
+          "why": "Without: -યા વગર."
+        },
+        {
+          "q": "બાળકો નાસ્તો કર્યા ＿ શાળાએ ગયાં.",
+          "en": "The children went to school without breakfast.",
+          "options": ["પછી", "વગર", "સાથે", "પહેલાં"],
+          "answer": "વગર",
+          "why": "Without: -યા વગર."
+        },
+        {
+          "q": "દૂધ ＿ ચા.",
+          "en": "Tea without milk.",
+          "options": ["સાથે", "બદલે", "વગર", "માટે"],
+          "answer": "વગર",
+          "why": "Noun: વગર."
+        },
+        {
+          "q": "ભાતને ＿ રોટલી આપો.",
+          "en": "Give me roti instead of rice.",
+          "options": ["વગર", "સાથે", "માટે", "બદલે"],
+          "answer": "બદલે",
+          "why": "Instead: -ને બદલે."
+        },
+        {
+          "q": "જોયા ＿ રસ્તો ન ઓળંગો.",
+          "en": "Don't cross the road without looking.",
+          "options": ["વગર", "પછી", "સાથે", "માટે"],
+          "answer": "વગર",
+          "why": "Without: -યા વગર."
+        }
+      ]
+    },
+    {
+      "id": "gerund",
+      "title": "Doing as a noun: -વું, -વાનું",
+      "particle": "-વું・-વાનું",
+      "summary": "The infinitive -વું works as a noun: તરવું મને ગમે છે (I like swimming). With endings it becomes -વા-: વાંચવાથી, વાંચવામાં. As an object it is often -વાનું. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Subject: <b>તરવું</b> સારી કસરત છે. Object: તેણે સિગરેટ પી<b>વાનું</b> છોડી દીધું (he gave up smoking). With postpositions: વાંચ<b>વામાં</b> (in reading), વાંચ<b>વાથી</b> (by reading), વાંચ<b>વા માટે</b>.",
+          "examples": [
+            [
+              "મને {રસોઈ બનાવવી} ગમે છે.",
+              "Mane rasoii banaavvii game chhe.",
+              "I like cooking."
+            ],
+            [
+              "અહીં {તરવું} જોખમી છે.",
+              "Ahiin tarvun jokhmii chhe.",
+              "Swimming here is dangerous."
+            ]
+          ]
+        },
+        {
+          "h": "With endings",
+          "p": "<b>-વામાં</b>: મને ગુજરાતી શીખ<b>વામાં</b> મજા આવે છે (I enjoy learning Gujarati). <b>-વાનું</b> as an object: તેણે ખા<b>વાનું</b> બંધ કર્યું (she stopped eating).",
+          "examples": [
+            [
+              "તેણે {સિગરેટ પીવાનું} છોડી દીધું.",
+              "Tene sigret piivaanun chhodii diidhun.",
+              "He gave up smoking."
+            ],
+            [
+              "મને ગુજરાતી {શીખવામાં} મજા આવે છે.",
+              "Mane gujaraatii shiikhvaamaan majaa aave chhe.",
+              "I enjoy learning Gujarati."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "મને ગા＿ ગમે છે.",
+          "en": "I like singing.",
+          "options": ["વું", "તો", "યું", "શે"],
+          "answer": "વું",
+          "why": "-ing: -વું."
+        },
+        {
+          "q": "ગુજરાતી વાંચ＿ સરળ છે.",
+          "en": "Reading Gujarati is easy.",
+          "options": ["તો", "વું", "ીને", "શે"],
+          "answer": "વું",
+          "why": "-ing as subject: -વું."
+        },
+        {
+          "q": "તેણે ચા પી＿ છોડી દીધું.",
+          "en": "She gave up drinking tea.",
+          "options": ["વું", "તી", "વાનું", "ને"],
+          "answer": "વાનું",
+          "why": "Object: -વાનું."
+        },
+        {
+          "q": "મને ગુજરાતી શીખ＿ મજા આવે છે.",
+          "en": "I enjoy learning Gujarati.",
+          "options": ["વાનું", "વું", "તો", "વામાં"],
+          "answer": "વામાં",
+          "why": "In doing: -વામાં."
+        },
+        {
+          "q": "રોજ ચાલ＿ તબિયત સારી રહે છે.",
+          "en": "Walking daily keeps you healthy.",
+          "options": ["વાથી", "વામાં", "વું", "વાનું"],
+          "answer": "વાથી",
+          "why": "By doing: -વાથી."
+        }
+      ]
+    },
+    {
+      "id": "tag-questions",
+      "title": "Isn't it?: ને, ખરું ને",
+      "particle": "ને・ખરું ને・ખરેખર",
+      "summary": "Add ને to a sentence to ask for agreement: સરસ છે ને? (it's nice, isn't it?). ખરું ને? is \"right?\". ખરેખર? is \"really?\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>ને?</b> after any sentence: આજે ગરમી છે <b>ને</b>? <b>ખરું ને?</b> = right? Answers: <b>હા</b> (yes), <b>ના</b> (no), <b>હા, ખરું</b> (yes, true). Surprise: <b>ખરેખર?</b> / <b>એમ?</b>",
+          "examples": [
+            [
+              "જમવાનું સરસ હતું, {ને}?",
+              "Jamvaanun saras hatun, ne?",
+              "The food was good, wasn't it?"
+            ],
+            [
+              "— તેનાં લગ્ન છે. — {ખરેખર}!",
+              "— Tenaan lagna chhe. — Kharekhar!",
+              "— She's getting married. — Really!"
+            ]
+          ]
+        },
+        {
+          "h": "Gentle pressure",
+          "p": "<b>ને</b> also softens commands: આવ<b>ને</b>! (come on, do come!), બેસ <b>ને</b>. <b>તો</b> adds \"so, then\": ચાલો <b>તો</b>. <b>જ</b> + ને: તમે આવશો <b>જ ને</b>? (you'll definitely come, won't you?).",
+          "examples": [
+            ["અરે, {બેસ ને}!", "Are, bes ne!", "Oh, do sit down!"],
+            [
+              "તમે આવશો {જ ને}?",
+              "Tame aavsho j ne?",
+              "You'll definitely come, won't you?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "આજે બહુ ગરમી છે, ＿?",
+          "en": "It's very hot today, isn't it?",
+          "options": ["ને", "હા", "ના", "શું"],
+          "answer": "ને",
+          "why": "Tag: ને?"
+        },
+        {
+          "q": "— તે ડૉક્ટર છે. — ＿!",
+          "en": "— He's a doctor. — Really!",
+          "options": ["ના", "ખરેખર", "હા", "ને"],
+          "answer": "ખરેખર",
+          "why": "Surprise: ખરેખર!"
+        },
+        {
+          "q": "— આ તમારી બૅગ છે? — ＿, મારી છે.",
+          "en": "— Is this your bag? — Yes, it's mine.",
+          "options": ["ના", "ને", "હા", "ખરેખર"],
+          "answer": "હા",
+          "why": "Yes: હા."
+        },
+        {
+          "q": "અરે, આવ＿!",
+          "en": "Oh, do come!",
+          "options": ["તો", "કે", "જ", "ને"],
+          "answer": "ને",
+          "why": "Softening: ને."
+        },
+        {
+          "q": "તમે આવશો જ ＿?",
+          "en": "You'll definitely come, won't you?",
+          "options": ["ને", "તો", "કે", "પણ"],
+          "answer": "ને",
+          "why": "Tag: જ ને?"
+        }
+      ]
+    },
+    {
+      "id": "while-taan",
+      "title": "While, on the way: -તાં",
+      "particle": "-તાં・-તાં -તાં・-તાં જ",
+      "summary": "The -તાં form shows something happening at the same time: ચાલતાં ચાલતાં (while walking along). -તાં જ is \"as soon as\": જોતાં જ (as soon as I saw it). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Doubled: <b>ચાલતાં ચાલતાં</b> (walking along), <b>વાત કરતાં કરતાં</b> (while chatting). Single: ઘરે <b>જતાં</b> (on the way home). <b>-તાં જ</b> = as soon as: તેને <b>જોતાં જ</b> ઓળખી ગયો.",
+          "examples": [
+            [
+              "{ચાલતાં ચાલતાં} અમે વાત કરી.",
+              "Chaaltaan chaaltaan ame vaat karii.",
+              "We talked as we walked."
+            ],
+            [
+              "તેને {જોતાં જ} હું ઓળખી ગયો.",
+              "Tene jotaan j hun olkhii gayo.",
+              "I recognised him as soon as I saw him."
+            ]
+          ]
+        },
+        {
+          "h": "With other verbs",
+          "p": "<b>-તાં</b> also comes with આવડવું and લાગવું: મને તર<b>તાં</b> આવડે છે; and with time: અહીં પહોંચ<b>તાં</b> બે કલાક લાગ્યા (it took two hours to get here).",
+          "examples": [
+            [
+              "ઘરે {જતાં} દૂધ લેતો આવજે.",
+              "Ghare jataan duudh leto aavje.",
+              "Pick up milk on your way home."
+            ],
+            [
+              "અહીં {પહોંચતાં} બે કલાક લાગ્યા.",
+              "Ahiin pahonchtaan be kalaak laagyaa.",
+              "It took two hours to get here."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ચાલ＿ ચાલતાં અમે ગીત ગાયું.",
+          "en": "We sang as we walked.",
+          "options": ["તાં", "વા", "ીને", "યા"],
+          "answer": "તાં",
+          "why": "While: -તાં."
+        },
+        {
+          "q": "તેને જો＿ જ હું ખુશ થઈ ગઈ.",
+          "en": "As soon as I saw her I was happy.",
+          "options": ["વા", "તાં", "ઈને", "યું"],
+          "answer": "તાં",
+          "why": "As soon as: -તાં જ."
+        },
+        {
+          "q": "ઘરે જ＿ શાક લેતા આવજો.",
+          "en": "Pick up vegetables on your way home.",
+          "options": ["વા", "ઈને", "તાં", "શે"],
+          "answer": "તાં",
+          "why": "On the way: -તાં."
+        },
+        {
+          "q": "અહીં પહોંચ＿ ત્રણ કલાક લાગ્યા.",
+          "en": "It took three hours to get here.",
+          "options": ["વા", "ીને", "યો", "તાં"],
+          "answer": "તાં",
+          "why": "Time taken: -તાં લાગ્યા."
+        },
+        {
+          "q": "મને તર＿ આવડે છે.",
+          "en": "I can swim.",
+          "options": ["તાં", "વું", "વા", "ીને"],
+          "answer": "તાં",
+          "why": "With આવડવું: -તાં."
+        }
+      ]
+    },
+    {
+      "id": "correlatives",
+      "title": "Pairs: જે … તે, જ્યાં … ત્યાં, જેમ … તેમ",
+      "particle": "જે-તે・જ્યાં-ત્યાં・જેટલું-તેટલું",
+      "summary": "Gujarati builds many sentences from pairs: a જ- word in the first clause and a ત- word in the second: જ્યાં તમે જશો ત્યાં હું આવીશ (wherever you go, I'll come). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>જે … તે</b> who / which, <b>જ્યાં … ત્યાં</b> where, <b>જ્યારે … ત્યારે</b> when, <b>જેમ … તેમ</b> as, <b>જેટલું … તેટલું</b> as much as, <b>જેવું … તેવું</b> such as.",
+          "examples": [
+            [
+              "{જેટલું} ખાવું હોય {તેટલું} ખાઓ.",
+              "Jetlun khaavun hoy tetlun khaao.",
+              "Eat as much as you like."
+            ],
+            [
+              "{જ્યાં} ચાહ {ત્યાં} રાહ.",
+              "Jyaan chaah tyaan raah.",
+              "Where there's a will, there's a way."
+            ]
+          ]
+        },
+        {
+          "h": "The more … the more",
+          "p": "<b>જેમ જેમ … તેમ તેમ</b> = the more … the more: <b>જેમ જેમ</b> વાંચશો <b>તેમ તેમ</b> આવડશે. <b>જેવું વાવો તેવું લણો</b> = you reap what you sow.",
+          "examples": [
+            [
+              "{જેમ જેમ} ઉંમર વધે {તેમ તેમ} અનુભવ વધે.",
+              "Jem jem ummar vadhe tem tem anubhav vadhe.",
+              "The older you get, the more experience you have."
+            ],
+            [
+              "{જેવું} વાવો {તેવું} લણો.",
+              "Jevun vaavo tevun lano.",
+              "As you sow, so you reap."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ તમે જશો ત્યાં હું આવીશ.",
+          "en": "Wherever you go, I'll come.",
+          "options": ["જ્યાં", "ત્યાં", "ક્યાં", "જ્યારે"],
+          "answer": "જ્યાં",
+          "why": "Where (first): જ્યાં."
+        },
+        {
+          "q": "જેટલું જોઈએ ＿ લો.",
+          "en": "Take as much as you need.",
+          "options": ["જેટલું", "તેટલું", "કેટલું", "તેમ"],
+          "answer": "તેટલું",
+          "why": "As much (second): તેટલું."
+        },
+        {
+          "q": "જેમ જેમ વાંચશો ＿ તેમ આવડશે.",
+          "en": "The more you read, the more you'll know.",
+          "options": ["જેમ", "ત્યાં", "તેમ", "તે"],
+          "answer": "તેમ",
+          "why": "Second half: તેમ તેમ."
+        },
+        {
+          "q": "જ્યાં ચાહ ＿ રાહ.",
+          "en": "Where there's a will, there's a way.",
+          "options": ["જ્યાં", "ક્યાં", "ત્યારે", "ત્યાં"],
+          "answer": "ત્યાં",
+          "why": "There: ત્યાં."
+        },
+        {
+          "q": "જેવું વાવો ＿ લણો.",
+          "en": "As you sow, so you reap.",
+          "options": ["તેવું", "જેવું", "એવું", "કેવું"],
+          "answer": "તેવું",
+          "why": "Second half: તેવું."
+        }
+      ]
+    },
+    {
+      "id": "maanthi",
+      "title": "Out of, off: -માંથી, -પરથી",
+      "particle": "-માંથી・-પરથી・-ઉપરથી",
+      "summary": "Endings stack: -માં (in) + -થી (from) = -માંથી (out of): ઘરમાંથી (out of the house). -પર + -થી = -પરથી (off, from on top): ટેબલ પરથી. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-માંથી</b>: થેલી<b>માંથી</b> કાઢ્યું (took it out of the bag), આ<b>માંથી</b> કયું? (which of these?). <b>-પરથી</b>: છાપરા <b>પરથી</b> પડ્યો (fell off the roof). <b>-પાસેથી</b> = from a person: મિત્ર <b>પાસેથી</b> લીધું.",
+          "examples": [
+            [
+              "તેણે થેલી{માંથી} ચાવી કાઢી.",
+              "Tene theliimaanthii chaavii kaadhii.",
+              "She took the key out of the bag."
+            ],
+            [
+              "બિલાડી {ટેબલ પરથી} કૂદી.",
+              "Bilaadii tebal parthii kuudii.",
+              "The cat jumped off the table."
+            ]
+          ]
+        },
+        {
+          "h": "Among, from a person",
+          "p": "Among: <b>-માંથી</b>: આ<b>માંથી</b> કયું સારું છે? Person: <b>-ની પાસેથી</b>: મેં મારા ભાઈ<b>ની પાસેથી</b> પૈસા લીધા (I got money from my brother).",
+          "examples": [
+            [
+              "{આમાંથી} કયું તમારું છે?",
+              "Aamaanthii kayun tamaarun chhe?",
+              "Which of these is yours?"
+            ],
+            [
+              "મેં {ભાઈ પાસેથી} પૈસા લીધા.",
+              "Men bhaaii paasethii paisaa liidhaa.",
+              "I took money from my brother."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "તેણે ખિસ્સા＿ પૈસા કાઢ્યા.",
+          "en": "He took money out of his pocket.",
+          "options": ["માંથી", "માં", "પર", "થી ઉપર"],
+          "answer": "માંથી",
+          "why": "Out of: -માંથી."
+        },
+        {
+          "q": "પુસ્તક ટેબલ ＿ પડ્યું.",
+          "en": "The book fell off the table.",
+          "options": ["માંથી", "પરથી", "પર", "સુધી"],
+          "answer": "પરથી",
+          "why": "Off: -પરથી."
+        },
+        {
+          "q": "આ＿ કયું સારું છે?",
+          "en": "Which of these is good?",
+          "options": ["માં", "પરથી", "માંથી", "થી ઉપર"],
+          "answer": "માંથી",
+          "why": "Among: -માંથી."
+        },
+        {
+          "q": "મેં મિત્ર ＿ પુસ્તક લીધું.",
+          "en": "I got a book from a friend.",
+          "options": ["માંથી", "પરથી", "સાથે", "પાસેથી"],
+          "answer": "પાસેથી",
+          "why": "From a person: પાસેથી."
+        },
+        {
+          "q": "તે ઘર＿ બહાર આવ્યો.",
+          "en": "He came out of the house.",
+          "options": ["માંથી", "માં", "પર", "ને"],
+          "answer": "માંથી",
+          "why": "Out of: -માંથી."
+        }
+      ]
+    },
+    {
+      "id": "honorific-plural",
+      "title": "Respect: plural verbs, આપ, -જી",
+      "particle": "plural for respect・આપ・-જી",
+      "summary": "Gujarati shows respect by using plural forms for one person: પપ્પા આવ્યા (Dad came), તેઓ ડૉક્ટર છે (he is a doctor). આપ is a very polite \"you\", and -જી is a respectful suffix. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Respected people take <b>-આ</b> plurals: દાદા <b>આવ્યા</b>, શિક્ષક <b>બોલ્યા</b>, મમ્મી <b>આવ્યાં</b> (feminine respect: <b>-આં</b>). Pronouns: <b>તેઓ</b> (he, she, respectful), <b>તેમને</b>, <b>તેમનું</b>.",
+          "examples": [
+            [
+              "મારા {દાદા} શિક્ષક {હતા}.",
+              "Maaraa daadaa shikshak hataa.",
+              "My grandfather was a teacher."
+            ],
+            [
+              "{તેમનું} નામ શું છે?",
+              "Temnun naam shun chhe?",
+              "What is his name? (respectful)"
+            ]
+          ]
+        },
+        {
+          "h": "આપ and -જી",
+          "p": "<b>આપ</b> = very polite \"you\", with plural verbs: <b>આપ</b> ક્યાં રહો છો? Suffix <b>-જી</b>: ગાંધી<b>જી</b>, બાપુ<b>જી</b>, હા<b>જી</b> (yes, sir). In shops: <b>શેઠ</b> (boss) for the owner.",
+          "examples": [
+            ["{આપ} શું લેશો?", "Aap shun lesho?", "What will you have, sir?"],
+            [
+              "{હાજી}, હમણાં લાવું.",
+              "Haajii, hamnaan laavun.",
+              "Yes, sir, I'll bring it right away."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "મારા પપ્પા કાલે ＿.",
+          "en": "My father came yesterday.",
+          "options": ["આવ્યા", "આવ્યો", "આવી", "આવ્યું"],
+          "answer": "આવ્યા",
+          "why": "Respect: plural."
+        },
+        {
+          "q": "＿ નામ શું છે?",
+          "en": "What is his name? (respectful)",
+          "options": ["તેનું", "તેમનું", "તેણે", "તેને"],
+          "answer": "તેમનું",
+          "why": "Respectful: તેમનું."
+        },
+        {
+          "q": "＿ ક્યાં રહો છો?",
+          "en": "Where do you live, sir?",
+          "options": ["તું", "તે", "આપ", "પોતે"],
+          "answer": "આપ",
+          "why": "Very polite: આપ."
+        },
+        {
+          "q": "હા＿, હમણાં લાવું.",
+          "en": "Yes, sir, I'll bring it right away.",
+          "options": ["ભાઈ", "ને", "તો", "જી"],
+          "answer": "જી",
+          "why": "Respect: -જી."
+        },
+        {
+          "q": "મમ્મી બજાર ＿.",
+          "en": "Mum went to the market. (respectful)",
+          "options": ["ગયાં", "ગઈ", "ગયો", "ગયું"],
+          "answer": "ગયાં",
+          "why": "Feminine respect: -આં."
+        }
+      ]
+    },
+    {
+      "id": "fractions",
+      "title": "Quarter, half: સવા, સાડા, પોણા, દોઢ, અઢી",
+      "particle": "સવા・સાડા・પોણા・દોઢ・અઢી",
+      "summary": "Gujarati has special words for fractions, used for times, money and amounts: દોઢ (1½), અઢી (2½), સાડા ત્રણ (3½), સવા પાંચ (5¼), પોણા છ (5¾). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>સવા</b> + n = n¼, <b>સાડા</b> + n = n½ (from 3 up), <b>પોણા</b> + n = n − ¼. Special: <b>દોઢ</b> = 1½, <b>અઢી</b> = 2½. Times: <b>સવા</b> પાંચ (5:15), <b>સાડા</b> પાંચ (5:30), <b>પોણા</b> છ (5:45).",
+          "examples": [
+            [
+              "હું {સાડા પાંચ} વાગ્યે આવીશ.",
+              "Hun saadaa paanch vaagye aaviish.",
+              "I'll come at half past five."
+            ],
+            [
+              "{દોઢ} કિલો ખાંડ આપો.",
+              "Dodh kilo khaand aapo.",
+              "Give me one and a half kilos of sugar."
+            ]
+          ]
+        },
+        {
+          "h": "With hundreds",
+          "p": "With સો: <b>દોઢસો</b> (150), <b>અઢીસો</b> (250), <b>સાડા ત્રણસો</b> (350), <b>સવાસો</b> (125). <b>અડધું</b> = half: <b>અડધો</b> કલાક (half an hour), <b>અડધી</b> રોટલી.",
+          "examples": [
+            [
+              "આ {અઢીસો} રૂપિયાનું છે.",
+              "Aa adhiiso rupiyaanun chhe.",
+              "This is two hundred and fifty rupees."
+            ],
+            [
+              "{અડધો} કલાક રાહ જુઓ.",
+              "Adadho kalaak raah juo.",
+              "Wait half an hour."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ કિલો ચોખા.",
+          "en": "One and a half kilos of rice.",
+          "options": ["દોઢ", "અઢી", "સવા", "પોણા"],
+          "answer": "દોઢ",
+          "why": "1½ = દોઢ."
+        },
+        {
+          "q": "＿ વાગ્યે મળીએ.",
+          "en": "Let's meet at 2:30.",
+          "options": ["દોઢ", "અઢી", "સાડા બે ને", "પોણા બે"],
+          "answer": "અઢી",
+          "why": "2½ = અઢી."
+        },
+        {
+          "q": "સવા ＿ = 5:15",
+          "en": "quarter past five",
+          "options": ["છ", "ચાર", "પાંચ", "સાડા"],
+          "answer": "પાંચ",
+          "why": "સવા + n = n¼."
+        },
+        {
+          "q": "પોણા ＿ = 5:45",
+          "en": "quarter to six",
+          "options": ["પાંચ", "સાત", "ચાર", "છ"],
+          "answer": "છ",
+          "why": "પોણા + n = n − ¼."
+        },
+        {
+          "q": "＿ કલાક રાહ જુઓ.",
+          "en": "Wait half an hour.",
+          "options": ["અડધો", "અડધી", "અડધું", "દોઢ"],
+          "answer": "અડધો",
+          "why": "કલાક is masculine."
+        }
+      ]
+    },
+    {
+      "id": "formal-connectors",
+      "title": "Linking ideas: પરંતુ, તેથી, છતાં, વળી",
+      "particle": "પરંતુ・તેમજ・તેથી・છતાં・વળી・એટલે કે",
+      "summary": "Written and formal Gujarati links sentences with પરંતુ (however), તેમજ (as well as), તેથી (therefore), છતાં (even so), વળી (moreover) and એટલે કે (that is). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Everyday speech uses <b>પણ</b> (but), <b>અને</b> (and) and <b>એટલે</b> (so). Newspapers, letters and speeches prefer <b>પરંતુ</b> (however), <b>તેમજ</b> (as well as), <b>તેથી</b> (therefore) and <b>છતાં</b> (even so).",
+          "examples": [
+            [
+              "વરસાદ પડ્યો, {પરંતુ} પાણીની તંગી ચાલુ છે.",
+              "Varsaad padyo, parantu paaniinii tangii chaaluu chhe.",
+              "It rained; however, the water shortage continues."
+            ],
+            [
+              "શાળામાં ગુજરાતી {તેમજ} અંગ્રેજી શીખવાય છે.",
+              "Shaalaamaan gujaraatii temaj angrejii shiikhvaay chhe.",
+              "Gujarati as well as English is taught at the school."
+            ],
+            [
+              "રસ્તો બંધ હતો, {તેથી} અમે મોડા પહોંચ્યા.",
+              "Rasto bandh hato, tethii ame modaa pahonchyaa.",
+              "The road was closed; therefore we arrived late."
+            ]
+          ]
+        },
+        {
+          "h": "Adding and explaining",
+          "p": "<b>છતાં</b> (also <b>તેમ છતાં</b>) = in spite of that. <b>વળી</b> = moreover. <b>એટલે કે</b> = that is, in other words. <b>ઉદાહરણ તરીકે</b> = for example. <b>અથવા</b> = or (formal for <b>કે</b>).",
+          "examples": [
+            [
+              "તે બીમાર હતો, {છતાં} કામે આવ્યો.",
+              "Te biimaar hato, chhataan kaame aavyo.",
+              "He was ill, yet he came to work."
+            ],
+            [
+              "આ ઘર મોટું છે; {વળી} સ્ટેશનની નજીક છે.",
+              "Aa ghar motun chhe; valii steshannii najiik chhe.",
+              "This house is big; moreover, it is near the station."
+            ],
+            [
+              "સો વર્ષ, {એટલે કે} એક સદી.",
+              "So varsh, etle ke ek sadii.",
+              "A hundred years, that is, one century."
+            ],
+            [
+              "ચા {અથવા} કૉફી પસંદ કરો.",
+              "Chaa athvaa kofii pasand karo.",
+              "Choose tea or coffee."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ભાવ વધ્યા, ＿ લોકો ખરીદી કરે છે.",
+          "en": "Prices rose; even so, people are shopping.",
+          "options": ["છતાં", "તેથી", "તેમજ", "એટલે કે"],
+          "answer": "છતાં",
+          "why": "Contrast despite something: છતાં."
+        },
+        {
+          "q": "બસ ન આવી, ＿ અમે ચાલીને ગયા.",
+          "en": "The bus didn't come; therefore we walked.",
+          "options": ["છતાં", "તેથી", "વળી", "અથવા"],
+          "answer": "તેથી",
+          "why": "Result: તેથી."
+        },
+        {
+          "q": "દૂધ ＿ દહીં બંને મળે છે.",
+          "en": "Both milk as well as yoghurt are available.",
+          "options": ["પરંતુ", "છતાં", "તેમજ", "તેથી"],
+          "answer": "તેમજ",
+          "why": "As well as: તેમજ."
+        },
+        {
+          "q": "કામ સારું છે, ＿ પગાર ઓછો છે.",
+          "en": "The work is good; however, the pay is low.",
+          "options": ["તેથી", "તેમજ", "વળી", "પરંતુ"],
+          "answer": "પરંતુ",
+          "why": "Formal \"but\": પરંતુ."
+        },
+        {
+          "q": "અઠવાડિયું, ＿ સાત દિવસ.",
+          "en": "A week, that is, seven days.",
+          "options": ["એટલે કે", "છતાં", "તેથી", "પરંતુ"],
+          "answer": "એટલે કે",
+          "why": "That is: એટલે કે."
+        }
+      ]
+    },
+    {
+      "id": "thavu-become",
+      "title": "Becoming: થવું and બનવું",
+      "particle": "થવું・બનવું・-વાનું થયું",
+      "summary": "થવું means to become or happen: મોડું થયું (it got late). બનવું means to become something more lasting, or to be made: તે ડૉક્ટર બન્યો. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>થવું</b> = become, happen, get: <b>મોડું થયું</b> (it got late), <b>ઠંડી થઈ</b> (it got cold), <b>શું થયું?</b> (what happened?). Feelings and illnesses come with <b>-ને</b>: <b>મને તાવ થયો</b> (I got a fever).",
+          "examples": [
+            [
+              "ચાલો, {મોડું થયું}.",
+              "Chaalo, modun thayun.",
+              "Let's go, it's got late."
+            ],
+            [
+              "મને માથું દુખે છે; {શું થયું} ખબર નથી.",
+              "Mane maathun dukhe chhe; shun thayun khabar nathii.",
+              "I have a headache; I don't know what happened."
+            ],
+            [
+              "મને કાલે {તાવ થયો}.",
+              "Mane kaale taav thayo.",
+              "I got a fever yesterday."
+            ]
+          ]
+        },
+        {
+          "h": "બનવું",
+          "p": "<b>બનવું</b> = become (a role or state), be made, take place: <b>ડૉક્ટર બન્યો</b> (became a doctor), <b>ઘીમાંથી બને છે</b> (is made from ghee), <b>આવું બને છે</b> (this happens).",
+          "examples": [
+            [
+              "મારી બહેન શિક્ષિકા {બની}.",
+              "Maarii bahen shikshikaa banii.",
+              "My sister became a teacher."
+            ],
+            [
+              "આ મીઠાઈ ઘી અને લોટમાંથી {બને છે}.",
+              "Aa miithaaii ghii ane lotmaanthii bane chhe.",
+              "This sweet is made from ghee and flour."
+            ],
+            [
+              "આવું રોજ નથી {બનતું}.",
+              "Aavun roj nathii bantun.",
+              "This doesn't happen every day."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "બહુ ＿ થઈ, હું જાઉં છું.",
+          "en": "It's got very late, I'm going.",
+          "options": ["વાર", "ભૂખ", "તાવ", "ઠંડો"],
+          "answer": "વાર",
+          "why": "A long time: વાર થઈ."
+        },
+        {
+          "q": "મને ગઈ કાલે શરદી ＿.",
+          "en": "I caught a cold yesterday.",
+          "options": ["બની", "થઈ", "ગઈ", "કરી"],
+          "answer": "થઈ",
+          "why": "Illness with -ને: થવું."
+        },
+        {
+          "q": "તે મોટો થઈને પાઇલટ ＿.",
+          "en": "When he grew up he became a pilot.",
+          "options": ["થયું", "કર્યો", "બન્યો", "ગયું"],
+          "answer": "બન્યો",
+          "why": "Becoming a role: બનવું."
+        },
+        {
+          "q": "ખાંડ શેરડીમાંથી ＿ છે.",
+          "en": "Sugar is made from sugarcane.",
+          "options": ["થાય", "કરે", "આવે", "બને"],
+          "answer": "બને",
+          "why": "Made from: -માંથી બનવું."
+        },
+        {
+          "q": "અરે, ＿ થયું?",
+          "en": "Hey, what happened?",
+          "options": ["શું", "કોણ", "ક્યાં", "કેમ"],
+          "answer": "શું",
+          "why": "What happened: શું થયું."
         }
       ]
     }
