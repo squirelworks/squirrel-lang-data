@@ -10,6 +10,8 @@ its own copy.
 ```
 languages/<id>/      a language: meta, grammar, vocabulary, references,
                      characters, strokes and varieties
+cjk/                 the shared table of Chinese characters (hanzi, kanji,
+                     hanja); each language keeps its own readings
 variants/            links between character forms (traditional and simplified,
                      shinjitai and kyūjitai, and so on)
 meaning/             the meaning network

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/squirelworks/squirrel-lang-data/schemas/cjk-readings.v1.json",
+  "title": "cjk-readings@1: one tradition's readings of the shared Chinese characters",
+  "description": "languages/<id>/characters/<tradition>.jsonl: kanji under japanese, hanzi under chinese, hanja under hangul. The first line is the header; every later line is one character, in teaching order. Every character must be in cjk/characters.jsonl.",
+  "type": "object",
+  "properties": {
+    "header": {
+      "type": "object",
+      "required": ["schema", "language", "tradition", "name"],
+      "additionalProperties": false,
+      "properties": {
+        "schema": { "const": "cjk-readings@1" },
+        "language": { "description": "The language id; must match the folder.", "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+        "tradition": { "description": "Must match the file name.", "enum": ["hanzi", "kanji", "hanja"] },
+        "name": { "description": "The tradition's English name, as a learner sees it.", "type": "string", "minLength": 1 },
+        "notes": { "description": "Which characters are listed, in what order, and where the readings come from, one sentence or line each.", "type": "array", "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "required": ["char", "roman", "info"],
+      "additionalProperties": false,
+      "properties": {
+        "char": { "description": "The character, unique in the file.", "type": "string", "minLength": 1 },
+        "roman": { "description": "The main reading: on'yomi in katakana, pinyin, or hangul.", "type": "string" },
+        "info": { "description": "A short English meaning.", "type": "string", "minLength": 1 },
+        "level": { "description": "Kanji: JLPT level, N5 to N1.", "enum": ["N5", "N4", "N3", "N2", "N1"] },
+        "on": { "description": "Kanji: on'yomi, separated by \" / \".", "type": "string" },
+        "kun": { "description": "Kanji: kun'yomi, separated by \" / \".", "type": "string" },
+        "grade": { "description": "Kanji: the school grade it is taught in, 1 to 6, or S for secondary school.", "type": "string", "pattern": "^([1-6]|S)?$" },
+        "frequency": { "description": "Kanji: rank by frequency in newspapers, 1 the most common.", "type": "string", "pattern": "^[0-9]*$" },
+        "pinyin": { "description": "Hanzi: every Mandarin reading, the main one first.", "type": "string", "minLength": 1 },
+        "hsk": { "description": "Hanzi: the lowest HSK 3.0 level a word with the character appears at.", "enum": [1, 2, 3, 4, 5, 6] },
+        "traditional": { "description": "Hanzi: the traditional form, when it differs.", "type": "string", "minLength": 1 },
+        "hangul": { "description": "Hanja: every education reading in hangul, separated by \" / \".", "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

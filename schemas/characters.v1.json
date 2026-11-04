@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/squirelworks/squirrel-lang-data/schemas/characters.v1.json",
+  "title": "characters@1: one script's character table",
+  "description": "languages/<id>/characters/<script>.jsonl. The first line is the header, naming the language and the script; every later line is one character, in teaching order.",
+  "type": "object",
+  "properties": {
+    "header": {
+      "type": "object",
+      "required": ["schema", "language", "script", "name"],
+      "additionalProperties": false,
+      "properties": {
+        "schema": { "const": "characters@1" },
+        "language": { "description": "The language id; must match the folder.", "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+        "script": { "description": "The script's key, unique across the repo; must match the file name. Apps file the table under it, e.g. window.SCRIPTS.hiragana.", "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+        "name": { "description": "The script's English name, as a learner sees it.", "type": "string", "minLength": 1 },
+        "notes": { "description": "How the table is written and where it comes from, one sentence or line each.", "type": "array", "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "required": ["char", "roman", "info"],
+      "additionalProperties": false,
+      "properties": {
+        "char": { "description": "The character, unique in the file.", "type": "string", "minLength": 1 },
+        "roman": { "description": "Its sound in Latin letters.", "type": "string", "minLength": 1 },
+        "info": { "description": "A short hint: what kind of letter it is, or how it behaves.", "type": "string", "minLength": 1 },
+        "example": { "description": "A word that uses it.", "type": "string", "minLength": 1 },
+        "forms": {
+          "description": "Joined forms, for scripts whose letters change shape by position. A form that doesn't exist is an em dash.",
+          "type": "object",
+          "required": ["isolated", "initial", "medial", "final"],
+          "additionalProperties": false,
+          "properties": {
+            "isolated": { "type": "string", "minLength": 1 },
+            "initial": { "type": "string", "minLength": 1 },
+            "medial": { "type": "string", "minLength": 1 },
+            "final": { "type": "string", "minLength": 1 }
+          }
+        },
+        "group": { "description": "The section of the table the character is taught in, e.g. \"Basic consonants\". Characters of a group sit together.", "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}
