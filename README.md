@@ -51,3 +51,17 @@ Moving the pinned commit forward is its own PR in that repo.
 
 Every change goes through a pull request. See `AGENTS.md` and
 `.github/MERGING.md`.
+
+## License
+
+- **Content** (everything outside `tools/`): [CC BY-SA 4.0](LICENSE). You may
+  use, share and adapt it, including in commercial apps, as long as you credit
+  the sources and share adaptations of the data under the same license. Shipping
+  the data inside an app doesn't put the app's own code under CC BY-SA; the app
+  shows the credits from `SOURCES.md` (for example on an About screen).
+- **Code** in `tools/`: [MIT](tools/LICENSE).
+- **Sources:** each one is listed in `SOURCES.md` with its own license. Only
+  sources whose license fits CC BY-SA 4.0 are imported (for example CC BY,
+  CC BY-SA 3.0 or 4.0, CC0, the Unicode license). Material under a license that
+  doesn't fit, such as the Arphic Public License, stays out unless it's kept in
+  its own folder under its own license and listed as such.
