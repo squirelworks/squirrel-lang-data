@@ -1,0 +1,242 @@
+{
+  "schema": "grammar@1",
+  "language": "aramaic",
+  "notes": [
+    "Biblical Aramaic first grammar for the Grammar Learner. Written for this project.",
+    "Examples are [Aramaic, transliteration, English]; {braces} mark the point of the lesson. Example sentences are quoted from Daniel and Ezra (public domain) with our own translations; references are in the English.",
+    "Aramaic is written without vowel points, in the square script it shares with Hebrew. Transliteration is simplified: kh is the throaty sound in Bach."
+  ],
+  "title": "Aramaic first grammar",
+  "intro": "Biblical Aramaic is the Aramaic of parts of Daniel and Ezra, close to the Imperial Aramaic of the Persian empire. It is written right to left in the same letters as Hebrew, and many words look alike, but the grammar has its own habits: “the” is an ending, not a prefix; “of” is a separate little word; and verbs tell the story with a short past tense and a participle. These lessons cover the ending for “the”, the word די, pronouns and sentences without “to be”, איתי for “there is”, and the past tense.",
+  "lessons": [
+    {
+      "id": "emphatic",
+      "title": "“The” is an ending",
+      "particle": "־א",
+      "summary": "Aramaic marks “the” with ־א on the end of a noun.",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "Hebrew puts ה־ in front for “the”. Aramaic adds <b>־א</b> (-a) to the end instead: <b>מלך</b> melekh, a king, becomes <b>מלכא</b> malka, the king. This form is called the emphatic state.",
+          "examples": [
+            [
+              "ענה {מלכא} ואמר",
+              "ane malka ve-amar",
+              "the king answered and said (Daniel 2:5)"
+            ],
+            [
+              "לבית {אלהא} רבא",
+              "le-vet elaha raba",
+              "to the house of the great God (Ezra 5:8)"
+            ]
+          ]
+        },
+        {
+          "h": "More pairs",
+          "p": "<b>ארע</b> a land, <b>ארעא</b> the earth; <b>מלה</b> a word, <b>מלתא</b> the word; <b>שמין</b> heaven, <b>שמיא</b> the heavens. Feminine nouns ending in ־ה change it to ־תא."
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ means “the king”.",
+          "options": ["מלכא", "מלך", "המלך"],
+          "answer": "מלכא",
+          "why": "Aramaic adds ־א at the end; ה־ in front is Hebrew."
+        },
+        {
+          "q": "ארעא means…",
+          "options": ["the earth", "a land", "my land"],
+          "answer": "the earth",
+          "why": "The ending ־א means “the”."
+        }
+      ]
+    },
+    {
+      "id": "di",
+      "title": "די: of, which, that",
+      "particle": "די",
+      "summary": "One little word joins nouns (“of”) and clauses (“which”, “that”).",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>די</b> (di) links a noun to another: <b>שמה די אלהא</b>, the name of God. It also starts a clause, like “who” or “which”.",
+          "examples": [
+            [
+              "להוא שמה {די} אלהא מברך",
+              "lehave shemeh di elaha mevarakh",
+              "may the name of God be blessed (Daniel 2:20)"
+            ],
+            [
+              "ספר דתא {די} אלה שמיא",
+              "safar data di elah shemaya",
+              "scribe of the law of the God of heaven (Ezra 7:12)"
+            ]
+          ]
+        },
+        {
+          "h": "Without די",
+          "p": "Two nouns can also sit side by side, the first one short, as in Hebrew: <b>אלה שמיא</b>, the God of heaven."
+        }
+      ],
+      "drills": [
+        {
+          "q": "מלכותא ＿ אלהא: the kingdom of God",
+          "options": ["די", "מן", "על"],
+          "answer": "די",
+          "why": "די joins “kingdom” to “God”."
+        }
+      ]
+    },
+    {
+      "id": "pronouns",
+      "title": "I, you, he: no “to be” needed",
+      "particle": "אנה",
+      "summary": "Like Hebrew, Aramaic can join a subject and what it is without any verb.",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>אנה</b> I, <b>אנת</b> you (a man), <b>הוא</b> he, <b>היא</b> she, <b>אנחנא</b> we, <b>אנון</b> they. In the present, “am” and “is” are left out.",
+          "examples": [
+            [
+              "{אנחנא} המו עבדוהי די אלה שמיא וארעא",
+              "anahna hammo avdohi di elah shemaya ve-ara",
+              "we are the servants of the God of heaven and earth (Ezra 5:11)"
+            ],
+            [
+              "{אנת} הוא ראשה די דהבא",
+              "ant hu reshah di dahava",
+              "you are the head of gold (Daniel 2:38)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ means “we”.",
+          "options": ["אנחנא", "אנון", "אנה"],
+          "answer": "אנחנא"
+        },
+        {
+          "q": "אנה means…",
+          "options": ["I", "he", "they"],
+          "answer": "I"
+        }
+      ]
+    },
+    {
+      "id": "itay",
+      "title": "איתי: there is",
+      "particle": "איתי",
+      "summary": "איתי says something exists; לא איתי says it doesn't.",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>איתי</b> (itay) means “there is”. Put <b>לא</b> in front for “there is no”.",
+          "examples": [
+            [
+              "ברם {איתי} אלה בשמיא גלא רזין",
+              "beram itay elah bi-shmaya gale razin",
+              "but there is a God in heaven who reveals mysteries (Daniel 2:28)"
+            ],
+            [
+              "{לא איתי} אנש על יבשתא",
+              "la itay enash al yabbeshta",
+              "there is no one on earth (Daniel 2:10)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ אלה בשמיא: there is a God in heaven",
+          "options": ["איתי", "לא", "די"],
+          "answer": "איתי"
+        },
+        {
+          "q": "לא איתי means…",
+          "options": ["there is no", "there is", "he is not here"],
+          "answer": "there is no"
+        }
+      ]
+    },
+    {
+      "id": "perfect",
+      "title": "The past tense",
+      "particle": "כתב",
+      "summary": "The past (perfect) tense adds endings to the root.",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "The bare root is “he did it”: <b>כתב</b> ketav, he wrote. Endings mark the others: <b>כתבת</b> she wrote (kitbat) or I wrote (kitbet), <b>כתבו</b> they wrote (ketavu).",
+          "examples": [
+            [
+              "{כתבו} אגרה חדה",
+              "ketavu iggerah hadah",
+              "they wrote a letter (Ezra 4:8)"
+            ],
+            [
+              "ענה מלכא {ואמר}",
+              "ane malka ve-amar",
+              "the king answered and said (Daniel 2:5)"
+            ]
+          ]
+        },
+        {
+          "h": "Unpointed spelling",
+          "p": "Without vowel points, כתבת can be “she wrote” or “I wrote”: the sentence tells you which."
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ אגרה חדה: they wrote a letter",
+          "options": ["כתבו", "כתב", "כתבת"],
+          "answer": "כתבו",
+          "why": "־ו marks “they”."
+        },
+        {
+          "q": "אמר means…",
+          "options": ["he said", "they said", "say!"],
+          "answer": "he said",
+          "why": "The bare root is “he did it”."
+        }
+      ]
+    }
+  ],
+  "plan": [
+    {
+      "id": "suffixes",
+      "title": "Possessive endings: my, your, his",
+      "level": "beginner",
+      "after": ["emphatic"]
+    },
+    {
+      "id": "plural",
+      "title": "Plural nouns: ־ין and ־יא",
+      "level": "beginner",
+      "after": ["emphatic"]
+    },
+    {
+      "id": "participle",
+      "title": "The participle: doing now",
+      "level": "beginner-intermediate",
+      "after": ["perfect"]
+    },
+    {
+      "id": "imperfect",
+      "title": "The imperfect: will do, may do",
+      "level": "beginner-intermediate",
+      "after": ["perfect"]
+    },
+    {
+      "id": "stems",
+      "title": "Verb stems: Peal, Pael, Haphel and their passives",
+      "level": "intermediate",
+      "after": ["perfect", "imperfect"]
+    },
+    {
+      "id": "syriac-script",
+      "title": "Reading Syriac: Estrangela, Serto and Madnhaya",
+      "level": "intermediate"
+    }
+  ]
+}
