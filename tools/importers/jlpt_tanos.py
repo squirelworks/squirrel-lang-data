@@ -57,6 +57,8 @@ N5_EXPRESSIONS = {"こんにちは", "こんばんは", "さようなら", "あ�
                   "すみません", "ごめんなさい", "はじめまして", "いただきます"}
 # Greetings that end in the particle は, which is read "wa" (今日は is konnichiwa).
 READINGS = {"こんにちは": "konnichiwa", "こんばんは": "konbanwa"}
+# Waller's list has an editor's placeholder for いえ instead of a definition.
+MEANINGS = {"いえ": "no (a lighter いいえ)"}
 KANA = re.compile(r"^[぀-ヿー]+$")
 
 
@@ -73,8 +75,9 @@ def fetch(n, cache):
 def meaning(definition):
     """Waller separates alternatives with a comma, mostly a bare one; the data
     uses '; '. A definition with bare commas keeps its ', ' (as in "Sorry, but");
-    one without uses ', ' as the separator. Digit groups (10,000) stay."""
-    d = definition.strip()
+    one without uses ', ' as the separator. Digit groups (10,000) stay. A stray
+    separator at either end is dropped first."""
+    d = definition.strip().strip(",;").strip()
     bare = r",(?!\s)(?!(?<=\d,)\d)"
     d = re.sub(bare, "; ", d) if re.search(bare, d) else re.sub(r",\s+", "; ", d)
     return re.sub(r"\s+", " ", d)
@@ -126,7 +129,7 @@ def build(header, entries, lists, freq):
             ids.add(id_)
             verb = word != kana and word.endswith("う") and definition.startswith("to ")
             e = {"id": id_, "deck": deck, "word": word, "reading": READINGS.get(kana) or romaji(kana, verb=verb),
-                 "meaning": meaning(definition), "level": {"jlpt": level}}
+                 "meaning": MEANINGS.get(word) or meaning(definition), "level": {"jlpt": level}}
             if word != kana or not KANA.match(word):
                 e["note"] = kana
             added[int(level[1])].append(e)
