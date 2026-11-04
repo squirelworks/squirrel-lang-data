@@ -13,6 +13,10 @@ What it does, so a rerun gives the same file:
 - Keeps the decks written for this project and drops any earlier jlpt-* decks.
 - A JLPT word that is already in a written deck is tagged with its level there
   instead of being added again. A word on two lists keeps the easier level.
+  A list row in kana also tags a written entry spelled with kanji (おいしい
+  tags 美味しい), and written entries are tagged again on every run.
+- A few set greetings (N5_EXPRESSIONS) are placed at N5 when spelled in kana,
+  and the greetings that end in the particle は are read with "wa".
 - Every other word goes into the deck for its level (jlpt-n5 ... jlpt-n1), with
   Hepburn romaji as its reading and its kana in the note when it has kanji.
 - Words with no English definition in the source are left out.
@@ -45,6 +49,14 @@ NOTES = [
     "(CC BY-SA 4.0). There is no official JLPT word list, so the levels are a well-known estimate.",
     "Frequency tags come from wordfreq (CC BY-SA 4.0).",
 ]
+# Set greetings that Waller's lists place at N3 to N1, though every course
+# teaches them first. The JLPT describes N5 as "the ability to understand some
+# basic Japanese", reading "typical expressions and sentences written in
+# hiragana, katakana, and basic kanji" (jlpt.jp), so they probably fall under N5.
+N5_EXPRESSIONS = {"こんにちは", "こんばんは", "さようなら", "ありがとう", "おはよう",
+                  "すみません", "ごめんなさい", "はじめまして", "いただきます"}
+# Greetings that end in the particle は, which is read "wa" (今日は is konnichiwa).
+READINGS = {"こんにちは": "konnichiwa", "こんばんは": "konbanwa"}
 KANA = re.compile(r"^[぀-ヿー]+$")
 
 
@@ -68,45 +80,56 @@ def meaning(definition):
     return re.sub(r"\s+", " ", d)
 
 
-def matches(entry, word, kana):
-    """An entry written for this project that is this JLPT word."""
-    if entry["word"] != word:
-        return False
-    if word == kana:
-        return True
+def words(text):
+    return set(re.findall(r"[a-z]{3,}", text.lower()))
+
+
+def matches(entry, word, kana, definition=""):
+    """An entry written for this project that is this JLPT word. A list row with
+    no kanji also matches an entry written with kanji that has the same reading
+    and shares an English word with it, so おいしい ("delicious") on the N5 list
+    tags 美味しい but さん ("Mr or Mrs") does not tag 三."""
     note = entry.get("note", "")
-    return note.startswith(kana) or entry.get("reading") == romaji(kana)
+    same_kana = entry["word"] == kana or note.startswith(kana) or entry.get("reading") == romaji(kana)
+    if entry["word"] != word:
+        return (word == kana and entry["word"] != kana and same_kana
+                and bool(words(entry["meaning"]) & words(definition)))
+    return word == kana or same_kana
 
 
 def build(header, entries, lists, freq):
     own = [e for e in entries if not e["deck"].startswith("jlpt-")]
     decks = [d for d in header["decks"] if not d["id"].startswith("jlpt-")]
-    added, seen, skipped = {n: [] for n in LEVELS}, set(), 0
+    for e in own:  # tag again from scratch, so a fixed rule also fixes old tags
+        if "jlpt" in e.get("level", {}):
+            del e["level"]["jlpt"]
+            if not e["level"]:
+                del e["level"]
+    added, seen, ids, skipped = {n: [] for n in LEVELS}, set(), set(), 0
     for n in LEVELS:
-        level = f"N{n}"
-        ids = set()
         for row in lists[n]:
             kana, word, definition = row["kana"].strip(), (row["kanji"] or row["kana"]).strip(), row["waller_definition"]
+            level = "N5" if word in N5_EXPRESSIONS else f"N{n}"
             if (word, kana) in seen:
                 continue
             seen.add((word, kana))
             if not definition.strip():
                 skipped += 1
                 continue
-            mine = [e for e in own if matches(e, word, kana)]
+            mine = [e for e in own if matches(e, word, kana, definition)]
             if mine:
                 for e in mine:
                     e.setdefault("level", {}).setdefault("jlpt", level)
                 continue
-            deck = f"jlpt-n{n}"
+            deck = f"jlpt-{level.lower()}"
             id_ = f"{deck}/{word}" if f"{deck}/{word}" not in ids else f"{deck}/{word}/{kana}"
             ids.add(id_)
             verb = word != kana and word.endswith("う") and definition.startswith("to ")
-            e = {"id": id_, "deck": deck, "word": word, "reading": romaji(kana, verb=verb),
+            e = {"id": id_, "deck": deck, "word": word, "reading": READINGS.get(kana) or romaji(kana, verb=verb),
                  "meaning": meaning(definition), "level": {"jlpt": level}}
             if word != kana or not KANA.match(word):
                 e["note"] = kana
-            added[n].append(e)
+            added[int(level[1])].append(e)
     out = own + [e for n in LEVELS for e in added[n]]
     for e in out:
         if "freq" not in e:
