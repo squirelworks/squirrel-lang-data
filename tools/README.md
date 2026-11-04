@@ -26,6 +26,7 @@ python3 tools/fmt.py        # format every content file in place
 | `migrate/lsd_vocab.py` | The one-time conversion of LanguageStudentDesk's `vocab.js` decks to `vocab@1` (needs node). |
 | `gen_grammar.py` | Generates LanguageStudentDesk's `languages/<id>/grammar.js` courses from `grammar.json`. `--check` reports drift. |
 | `migrate/lsd_grammar.py` | The one-time conversion of LanguageStudentDesk's `grammar.js` courses to `grammar@1` (needs node). |
+| `importers/cedict.py` | Imports the most frequent Chinese words, with CC-CEDICT pinyin and meanings, into `languages/chinese/vocab.jsonl`, tagging words already there instead of adding them twice. Needs `pip install "wordfreq[cjk]"`; the dictionary is fetched into `cache/`. |
 | `importers/jlpt_tanos.py` | Imports the JLPT N5 to N1 word lists into `languages/japanese/vocab.jsonl`, tagging words already there instead of adding them twice. Needs `pip install "wordfreq[mecab]"` for the frequency tags; the lists are fetched into `cache/`. |
 | `importers/kana.py` | Kana to Hepburn romaji, for importers. |
 | `gen_reference.py` | Generates LanguageStudentDesk's `languages/<id>/reference.json` cards. `--check` reports drift. |
