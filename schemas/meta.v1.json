@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/squirelworks/squirrel-lang-data/schemas/meta.v1.json",
+  "title": "meta@1: a standard language",
+  "description": "languages/<id>/meta.json. Which content a language has is not listed here: generators find it from the files in the folder. Its regional varieties and historical stages live in varieties/<id>/meta.json (variety@1).",
+  "type": "object",
+  "required": [
+    "schema",
+    "id",
+    "name",
+    "nativeName",
+    "code",
+    "scripts",
+    "characterKeys"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "meta@1"
+    },
+    "id": {
+      "description": "Unique across every language and variety. Must match the folder name.",
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "name": {
+      "description": "English name.",
+      "type": "string",
+      "minLength": 1
+    },
+    "nativeName": {
+      "description": "The name in the language itself.",
+      "type": "string",
+      "minLength": 1
+    },
+    "code": {
+      "description": "ISO 639-3 code (three lowercase letters) or Glottolog code (four letters and four digits).",
+      "type": "string",
+      "pattern": "^([a-z]{3}|[a-z]{4}[0-9]{4})$"
+    },
+    "scripts": {
+      "description": "Writing systems, in the order the learner shows them.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "characterKeys": {
+      "description": "Character Learner script keys. Empty when the language has no Character Learner script.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "romanization": {
+      "description": "Romanization systems used, main one first (for example jyutping, pinyin, hepburn).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*$"
+      },
+      "uniqueItems": true
+    },
+    "notes": {
+      "type": "string"
+    },
+    "speech": {
+      "description": "BCP 47 tag for text to speech.",
+      "type": "string",
+      "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]+)*$"
+    },
+    "font": {
+      "description": "A special font the language needs, such as pIqaD.",
+      "type": "string"
+    },
+    "direction": {
+      "enum": [
+        "ltr",
+        "rtl"
+      ]
+    },
+    "varieties": {
+      "description": "Ids of the varieties in varieties/, alphabetical. Must match the folders there.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*$"
+      },
+      "uniqueItems": true
+    }
+  }
+}

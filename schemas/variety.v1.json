@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/squirelworks/squirrel-lang-data/schemas/variety.v1.json",
+  "title": "variety@1: a regional variety or historical stage",
+  "description": "languages/<language>/varieties/<id>/meta.json. Gives only what differs from its parent; every field it leaves out (nativeName, scripts, characterKeys, speech and so on) is inherited. Content files next to it hold only entries that differ from the parent's.",
+  "type": "object",
+  "required": [
+    "schema",
+    "id",
+    "parent",
+    "kind",
+    "name",
+    "code"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "variety@1"
+    },
+    "id": {
+      "description": "Unique across every language and variety. Must match the folder name.",
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "parent": {
+      "description": "The id of the language or variety this one sits under: the language whose varieties/ folder holds it, or another variety of that language.",
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "kind": {
+      "description": "standard: another standard norm of the language (for example a national norm). regional: a dialect or related regional language. historical: an earlier stage.",
+      "enum": [
+        "standard",
+        "regional",
+        "historical"
+      ]
+    },
+    "name": {
+      "description": "English name.",
+      "type": "string",
+      "minLength": 1
+    },
+    "nativeName": {
+      "description": "The name in the language itself.",
+      "type": "string",
+      "minLength": 1
+    },
+    "code": {
+      "description": "ISO 639-3 code (three lowercase letters) or Glottolog code (four letters and four digits).",
+      "type": "string",
+      "pattern": "^([a-z]{3}|[a-z]{4}[0-9]{4})$"
+    },
+    "period": {
+      "description": "When a historical stage was spoken or written. Years are integers, negative for BCE. Required for historical.",
+      "type": "object",
+      "required": [
+        "label"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "from": {
+          "type": "integer"
+        },
+        "to": {
+          "type": "integer"
+        }
+      }
+    },
+    "reconstructed": {
+      "description": "True for a stage known only by reconstruction (for example Old Chinese). Its sources name the reconstruction it follows.",
+      "type": "boolean"
+    },
+    "scripts": {
+      "description": "Writing systems, in the order the learner shows them.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "characterKeys": {
+      "description": "Character Learner script keys. Empty when the language has no Character Learner script.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "romanization": {
+      "description": "Romanization systems used, main one first (for example jyutping, pinyin, hepburn).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*$"
+      },
+      "uniqueItems": true
+    },
+    "notes": {
+      "type": "string"
+    },
+    "speech": {
+      "description": "BCP 47 tag for text to speech.",
+      "type": "string",
+      "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]+)*$"
+    },
+    "font": {
+      "description": "A special font the language needs, such as pIqaD.",
+      "type": "string"
+    },
+    "direction": {
+      "enum": [
+        "ltr",
+        "rtl"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "historical"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "period"
+        ]
+      },
+      "else": {
+        "not": {
+          "anyOf": [
+            {
+              "required": [
+                "period"
+              ]
+            },
+            {
+              "required": [
+                "reconstructed"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
