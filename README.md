@@ -86,6 +86,13 @@ Formats:
   `lessons` hold the content as rows. `files` holds every file exactly as in
   the repo, and `pack` holds the data commit, the license and the credits.
   The table layout is described at the top of `tools/packs/sqlite.py`.
+- **yomitan**: `build/packs/<id>-yomitan.zip`, the vocabulary as a dictionary
+  for Yomitan, the browser pop-up dictionary (Settings > Dictionaries >
+  Import). Each word's definitions are its meanings and note, tagged with its
+  deck, levels and frequency, and core words sort first. Japanese entries use
+  the kana reading where the data has one and give the romaji in the
+  definition. Inflected forms aren't matched yet, only dictionary forms.
+  Languages with no vocabulary get no dictionary.
 
 Packs are build output, so `build/` is ignored by git. CI exports every
 language in every format on each pull request and checks the packs against the
