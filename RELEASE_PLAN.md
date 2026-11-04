@@ -38,9 +38,12 @@ Still to merge (or be deliberately left out, with the reason in the notes):
 - [ ] JLPT, TOPIK and HSK level reference cards (#18, #20, #22)
 - [ ] Aramaic reference cards (#23)
 
-Not in v0.1.0: characters and strokes (they move after LanguageStudentDesk's
-stroke checks pass on them), variants, and programming courses. Those are
-v0.2.0 material. Until they move, apps keep reading them from their own repo.
+Not waited for: character tables (#25), strokes, variants and programming
+courses. They don't hold v0.1.0 back. If the character tables (#25) merge
+before the release-notes PR is opened, they ship in v0.1.0. If not, they go to
+v0.2.0. Strokes go to v0.2.0 either way, because they move only after
+LanguageStudentDesk's stroke checks pass on them. Until content moves here,
+the apps keep reading it from their own repo.
 
 PRs opened after this list was written don't hold v0.1.0 back. They go into
 the next release.
