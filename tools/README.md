@@ -29,6 +29,7 @@ python3 tools/fmt.py        # format every content file in place
 | `importers/cedict.py` | Imports the most frequent Chinese words, with CC-CEDICT pinyin and meanings, into `languages/chinese/vocab.jsonl`, tagging words already there instead of adding them twice. Needs `pip install "wordfreq[cjk]"`; the dictionary is fetched into `cache/`. |
 | `importers/freq.py` | Core, common and rare frequency tags from wordfreq, for importers. |
 | `importers/hangul.py` | Hangul to Revised Romanization, for importers. |
+| `importers/freq_tags.py` | Adds a frequency tag (core, common, rare, from wordfreq) to every vocabulary word that has none, for each language wordfreq covers. Needs `pip install "wordfreq[cjk,mecab]"`. |
 | `importers/jlpt_tanos.py` | Imports the JLPT N5 to N1 word lists into `languages/japanese/vocab.jsonl`, tagging words already there instead of adding them twice. Needs `pip install "wordfreq[mecab]"` for the frequency tags; the lists are fetched into `cache/`. |
 | `importers/kana.py` | Kana to Hepburn romaji, for importers. |
 | `importers/krdict.py` | Imports the graded words of the NIKL Basic Korean Dictionary into `languages/hangul/vocab.jsonl`, tagging words already there instead of adding them twice. Needs `pip install "wordfreq[mecab]"`; the dictionary is fetched into `cache/`. |
