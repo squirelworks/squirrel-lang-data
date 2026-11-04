@@ -1,0 +1,739 @@
+{
+  "schema": "alphabet@1",
+  "id": "odia",
+  "title": "Odia",
+  "native": "ଓଡ଼ିଆ",
+  "lang": "or-IN",
+  "langName": "Odia",
+  "font": "\"Noto Sans Oriya\", \"Kalinga\", \"Nirmala UI\", sans-serif",
+  "blurb": "The round-topped script of Odisha. Consonants carry a built-in o, and Odia still says it at the end of a word.",
+  "writeTip": "Most Odia letters start with the round cap on top, drawn left to right, then the body below it. Vowel signs go on after the consonant.",
+  "notes": [
+    "Odia for SquirrelGo Alphabets. Romanization is a simplified IAST that keeps the final a Odia still says. Hints, groupings and articles are original."
+  ],
+  "lessons": [
+    {
+      "title": "Vowels",
+      "note": "These full vowel letters are used at the start of a word or after another vowel.",
+      "group": "Vowels",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "ଅ",
+          "roman": "a",
+          "hint": "short o, like aw in saw but shorter",
+          "example": "ଅଙ୍ଗୁର",
+          "exampleRoman": "aṅgura",
+          "meaning": "grapes",
+          "speak": "",
+          "ipa": "ɔ"
+        },
+        {
+          "char": "ଆ",
+          "roman": "ā",
+          "hint": "a as in father",
+          "example": "ଆମ୍ବ",
+          "exampleRoman": "āmba",
+          "meaning": "mango",
+          "speak": "",
+          "ipa": "a"
+        },
+        {
+          "char": "ଇ",
+          "roman": "i",
+          "hint": "i as in bit",
+          "example": "ଇଟା",
+          "exampleRoman": "iṭā",
+          "meaning": "brick",
+          "speak": "",
+          "ipa": "i"
+        },
+        {
+          "char": "ଈ",
+          "roman": "ī",
+          "hint": "ee as in see; in speech the same as ଇ",
+          "example": "ଈଶ୍ୱର",
+          "exampleRoman": "īśwara",
+          "meaning": "God",
+          "speak": "",
+          "ipa": "i"
+        },
+        {
+          "char": "ଉ",
+          "roman": "u",
+          "hint": "u as in put",
+          "example": "ଉଟ",
+          "exampleRoman": "uṭa",
+          "meaning": "camel",
+          "speak": "",
+          "ipa": "u"
+        },
+        {
+          "char": "ଊ",
+          "roman": "ū",
+          "hint": "oo as in food; in speech the same as ଉ",
+          "example": "ଊର୍ମି",
+          "exampleRoman": "ūrmi",
+          "meaning": "wave",
+          "speak": "",
+          "ipa": "u"
+        },
+        {
+          "char": "ଋ",
+          "roman": "ru",
+          "hint": "said ru",
+          "example": "ଋଷି",
+          "exampleRoman": "ruṣi",
+          "meaning": "sage",
+          "speak": "",
+          "ipa": "ru"
+        },
+        {
+          "char": "ଏ",
+          "roman": "e",
+          "hint": "e as in hey",
+          "example": "ଏକ",
+          "exampleRoman": "eka",
+          "meaning": "one",
+          "speak": "",
+          "ipa": "e"
+        },
+        {
+          "char": "ଐ",
+          "roman": "ai",
+          "hint": "oi as in coin, or ai",
+          "example": "ଐରାବତ",
+          "exampleRoman": "airābata",
+          "meaning": "Airavata, Indra's elephant",
+          "speak": "",
+          "ipa": "oi"
+        },
+        {
+          "char": "ଓ",
+          "roman": "o",
+          "hint": "o as in go",
+          "example": "ଓଠ",
+          "exampleRoman": "oṭha",
+          "meaning": "lip",
+          "speak": "",
+          "ipa": "o"
+        },
+        {
+          "char": "ଔ",
+          "roman": "au",
+          "hint": "ou as in loud",
+          "example": "ଔଷଧ",
+          "exampleRoman": "auṣadha",
+          "meaning": "medicine",
+          "speak": "",
+          "ipa": "ou"
+        },
+        {
+          "char": "ଅଂ",
+          "roman": "aṁ",
+          "hint": "anusvara: an ng or m sound after the vowel",
+          "example": "ଅଂଶ",
+          "exampleRoman": "aṁśa",
+          "meaning": "part, share",
+          "speak": "",
+          "ipa": "ɔŋ"
+        }
+      ]
+    },
+    {
+      "title": "Vowel signs on କ",
+      "note": "After a consonant, a vowel is written as a sign attached to it. େ is written before the consonant but said after it, and ୋ wraps around it.",
+      "group": "Vowel signs",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "କା",
+          "roman": "kā",
+          "hint": "ା: ā, a stroke on the right",
+          "example": "କାକ",
+          "exampleRoman": "kāka",
+          "meaning": "crow",
+          "speak": "",
+          "ipa": "ka"
+        },
+        {
+          "char": "କି",
+          "roman": "ki",
+          "hint": "ି: i, a hook on the top right",
+          "example": "କିଛି",
+          "exampleRoman": "kichi",
+          "meaning": "something",
+          "speak": "",
+          "ipa": "ki"
+        },
+        {
+          "char": "କୀ",
+          "roman": "kī",
+          "hint": "ୀ: the long i sign, a tall stroke on the right",
+          "example": "କୀଟ",
+          "exampleRoman": "kīṭa",
+          "meaning": "insect",
+          "speak": "",
+          "ipa": "ki"
+        },
+        {
+          "char": "କୁ",
+          "roman": "ku",
+          "hint": "ୁ: u, hangs below",
+          "example": "କୁକୁର",
+          "exampleRoman": "kukura",
+          "meaning": "dog",
+          "speak": "",
+          "ipa": "ku"
+        },
+        {
+          "char": "କୂ",
+          "roman": "kū",
+          "hint": "ୂ: the long u sign",
+          "example": "କୂଳ",
+          "exampleRoman": "kūḷa",
+          "meaning": "shore",
+          "speak": "",
+          "ipa": "ku"
+        },
+        {
+          "char": "କୃ",
+          "roman": "kru",
+          "hint": "ୃ: ru",
+          "example": "କୃଷକ",
+          "exampleRoman": "kruṣaka",
+          "meaning": "farmer",
+          "speak": "",
+          "ipa": "kru"
+        },
+        {
+          "char": "କେ",
+          "roman": "ke",
+          "hint": "େ: e, written first",
+          "example": "କେଶ",
+          "exampleRoman": "keśa",
+          "meaning": "hair",
+          "speak": "",
+          "ipa": "ke"
+        },
+        {
+          "char": "କୈ",
+          "roman": "kai",
+          "hint": "ୈ: ai, written first with a tick on top",
+          "example": "କୈଳାସ",
+          "exampleRoman": "kaiḷāsa",
+          "meaning": "Mount Kailash",
+          "speak": "",
+          "ipa": "koi"
+        },
+        {
+          "char": "କୋ",
+          "roman": "ko",
+          "hint": "ୋ: o, the e sign before and the ā stroke after",
+          "example": "କୋଠରି",
+          "exampleRoman": "koṭhari",
+          "meaning": "room",
+          "speak": "",
+          "ipa": "ko"
+        },
+        {
+          "char": "କୌ",
+          "roman": "kau",
+          "hint": "ୌ: au",
+          "example": "କୌଶଳ",
+          "exampleRoman": "kauśaḷa",
+          "meaning": "skill",
+          "speak": "",
+          "ipa": "kou"
+        },
+        {
+          "char": "କଂ",
+          "roman": "kaṁ",
+          "hint": "ଂ: nasal",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "kɔŋ"
+        },
+        {
+          "char": "କ୍",
+          "roman": "k",
+          "hint": "୍: halanta, removes the built-in o",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "k"
+        }
+      ]
+    },
+    {
+      "title": "Velar consonants (back of the mouth)",
+      "note": "Each row of five follows the same pattern: plain, aspirated, voiced, voiced aspirated, nasal.",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "କ",
+          "roman": "ka",
+          "hint": "k, no puff of air",
+          "example": "କମଳା",
+          "exampleRoman": "kamaḷā",
+          "meaning": "orange",
+          "speak": "",
+          "ipa": "kɔ"
+        },
+        {
+          "char": "ଖ",
+          "roman": "kha",
+          "hint": "k with a puff of air",
+          "example": "ଖଟ",
+          "exampleRoman": "khaṭa",
+          "meaning": "cot, bed",
+          "speak": "",
+          "ipa": "kʰɔ"
+        },
+        {
+          "char": "ଗ",
+          "roman": "ga",
+          "hint": "g",
+          "example": "ଗାଈ",
+          "exampleRoman": "gāī",
+          "meaning": "cow",
+          "speak": "",
+          "ipa": "ɡɔ"
+        },
+        {
+          "char": "ଘ",
+          "roman": "gha",
+          "hint": "g with a breathy release",
+          "example": "ଘର",
+          "exampleRoman": "ghara",
+          "meaning": "house",
+          "speak": "",
+          "ipa": "ɡʱɔ"
+        },
+        {
+          "char": "ଙ",
+          "roman": "ṅa",
+          "hint": "ng; only inside words",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "ŋɔ"
+        }
+      ]
+    },
+    {
+      "title": "Palatal consonants",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ଚ",
+          "roman": "ca",
+          "hint": "ch, no puff of air",
+          "example": "ଚା",
+          "exampleRoman": "cā",
+          "meaning": "tea",
+          "speak": "",
+          "ipa": "tʃɔ"
+        },
+        {
+          "char": "ଛ",
+          "roman": "cha",
+          "hint": "ch with a puff of air",
+          "example": "ଛତା",
+          "exampleRoman": "chatā",
+          "meaning": "umbrella",
+          "speak": "",
+          "ipa": "tʃʰɔ"
+        },
+        {
+          "char": "ଜ",
+          "roman": "ja",
+          "hint": "j",
+          "example": "ଜହ୍ନ",
+          "exampleRoman": "jahna",
+          "meaning": "moon",
+          "speak": "",
+          "ipa": "dʒɔ"
+        },
+        {
+          "char": "ଝ",
+          "roman": "jha",
+          "hint": "j with a breathy release",
+          "example": "ଝିଅ",
+          "exampleRoman": "jhia",
+          "meaning": "girl, daughter",
+          "speak": "",
+          "ipa": "dʒʱɔ"
+        },
+        {
+          "char": "ଞ",
+          "roman": "ña",
+          "hint": "ny; rare",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "ɲɔ"
+        }
+      ]
+    },
+    {
+      "title": "Retroflex consonants",
+      "note": "Curl the tongue tip back and touch the roof of the mouth.",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ଟ",
+          "roman": "ṭa",
+          "hint": "t with the tongue curled back",
+          "example": "ଟଙ୍କା",
+          "exampleRoman": "ṭaṅkā",
+          "meaning": "rupee, money",
+          "speak": "",
+          "ipa": "ʈɔ"
+        },
+        {
+          "char": "ଠ",
+          "roman": "ṭha",
+          "hint": "curled-back t with a puff of air",
+          "example": "ଠେକୁଆ",
+          "exampleRoman": "ṭhekuā",
+          "meaning": "rabbit",
+          "speak": "",
+          "ipa": "ʈʰɔ"
+        },
+        {
+          "char": "ଡ",
+          "roman": "ḍa",
+          "hint": "d with the tongue curled back",
+          "example": "ଡାକ୍ତର",
+          "exampleRoman": "ḍāktara",
+          "meaning": "doctor",
+          "speak": "",
+          "ipa": "ɖɔ"
+        },
+        {
+          "char": "ଢ",
+          "roman": "ḍha",
+          "hint": "curled-back d, breathy",
+          "example": "ଢୋଲ",
+          "exampleRoman": "ḍhola",
+          "meaning": "drum",
+          "speak": "",
+          "ipa": "ɖʱɔ"
+        },
+        {
+          "char": "ଣ",
+          "roman": "ṇa",
+          "hint": "n with the tongue curled back",
+          "example": "ପାଣି",
+          "exampleRoman": "pāṇi",
+          "meaning": "water",
+          "speak": "",
+          "ipa": "ɳɔ"
+        }
+      ]
+    },
+    {
+      "title": "Dental consonants",
+      "note": "Tongue tip against the back of the upper teeth: softer than English t and d.",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ତ",
+          "roman": "ta",
+          "hint": "t with the tongue on the teeth",
+          "example": "ତେନ୍ତୁଳି",
+          "exampleRoman": "tentuḷi",
+          "meaning": "tamarind",
+          "speak": "",
+          "ipa": "t̪ɔ"
+        },
+        {
+          "char": "ଥ",
+          "roman": "tha",
+          "hint": "dental t with a puff of air (not th as in thin)",
+          "example": "ଥାଳି",
+          "exampleRoman": "thāḷi",
+          "meaning": "plate",
+          "speak": "",
+          "ipa": "t̪ʰɔ"
+        },
+        {
+          "char": "ଦ",
+          "roman": "da",
+          "hint": "d with the tongue on the teeth",
+          "example": "ଦାନ୍ତ",
+          "exampleRoman": "dānta",
+          "meaning": "tooth",
+          "speak": "",
+          "ipa": "d̪ɔ"
+        },
+        {
+          "char": "ଧ",
+          "roman": "dha",
+          "hint": "dental d, breathy",
+          "example": "ଧନୁ",
+          "exampleRoman": "dhanu",
+          "meaning": "bow",
+          "speak": "",
+          "ipa": "d̪ʱɔ"
+        },
+        {
+          "char": "ନ",
+          "roman": "na",
+          "hint": "n",
+          "example": "ନଦୀ",
+          "exampleRoman": "nadī",
+          "meaning": "river",
+          "speak": "",
+          "ipa": "nɔ"
+        }
+      ]
+    },
+    {
+      "title": "Labial consonants (lips)",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ପ",
+          "roman": "pa",
+          "hint": "p, no puff of air",
+          "example": "ପଦ୍ମ",
+          "exampleRoman": "padma",
+          "meaning": "lotus",
+          "speak": "",
+          "ipa": "pɔ"
+        },
+        {
+          "char": "ଫ",
+          "roman": "pha",
+          "hint": "p with a puff of air; often said f",
+          "example": "ଫୁଲ",
+          "exampleRoman": "phula",
+          "meaning": "flower",
+          "speak": "",
+          "ipa": "pʰɔ"
+        },
+        {
+          "char": "ବ",
+          "roman": "ba",
+          "hint": "b",
+          "example": "ବାଘ",
+          "exampleRoman": "bāgha",
+          "meaning": "tiger",
+          "speak": "",
+          "ipa": "bɔ"
+        },
+        {
+          "char": "ଭ",
+          "roman": "bha",
+          "hint": "b with a breathy release",
+          "example": "ଭାଲୁ",
+          "exampleRoman": "bhālu",
+          "meaning": "bear",
+          "speak": "",
+          "ipa": "bʱɔ"
+        },
+        {
+          "char": "ମ",
+          "roman": "ma",
+          "hint": "m",
+          "example": "ମାଛ",
+          "exampleRoman": "mācha",
+          "meaning": "fish",
+          "speak": "",
+          "ipa": "mɔ"
+        }
+      ]
+    },
+    {
+      "title": "Semivowels and sibilants",
+      "note": "Odia has two letters for j and three for s: ଯ is said like ଜ, and ଶ ଷ ସ are all said s.",
+      "group": "More consonants",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "ଯ",
+          "roman": "ja",
+          "hint": "j; the old letter for y, now said like ଜ",
+          "example": "ଯନ୍ତ୍ର",
+          "exampleRoman": "jantra",
+          "meaning": "machine",
+          "speak": "",
+          "ipa": "dʒɔ"
+        },
+        {
+          "char": "ୟ",
+          "roman": "ya",
+          "hint": "y; the letter with a dot used for the y sound",
+          "example": "ଦୟା",
+          "exampleRoman": "dayā",
+          "meaning": "mercy",
+          "speak": "",
+          "ipa": "jɔ"
+        },
+        {
+          "char": "ର",
+          "roman": "ra",
+          "hint": "a tapped r",
+          "example": "ରଥ",
+          "exampleRoman": "ratha",
+          "meaning": "chariot",
+          "speak": "",
+          "ipa": "ɾɔ"
+        },
+        {
+          "char": "ଲ",
+          "roman": "la",
+          "hint": "l",
+          "example": "ଲେମ୍ବୁ",
+          "exampleRoman": "lembu",
+          "meaning": "lemon",
+          "speak": "",
+          "ipa": "lɔ"
+        },
+        {
+          "char": "ଳ",
+          "roman": "ḷa",
+          "hint": "l with the tongue curled back; never at the start of a word",
+          "example": "କଦଳୀ",
+          "exampleRoman": "kadaḷī",
+          "meaning": "banana",
+          "speak": "",
+          "ipa": "ɭɔ"
+        },
+        {
+          "char": "ୱ",
+          "roman": "wa",
+          "hint": "w; mostly in clusters like ଶ୍ୱ",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "wɔ"
+        },
+        {
+          "char": "ଶ",
+          "roman": "śa",
+          "hint": "s; in Sanskrit words, sh",
+          "example": "ଶଙ୍ଖ",
+          "exampleRoman": "śaṅkha",
+          "meaning": "conch shell",
+          "speak": "",
+          "ipa": "sɔ"
+        },
+        {
+          "char": "ଷ",
+          "roman": "ṣa",
+          "hint": "s; said like ଶ",
+          "example": "ଷଣ୍ଢ",
+          "exampleRoman": "ṣaṇḍha",
+          "meaning": "bull",
+          "speak": "",
+          "ipa": "sɔ"
+        },
+        {
+          "char": "ସ",
+          "roman": "sa",
+          "hint": "s",
+          "example": "ସାପ",
+          "exampleRoman": "sāpa",
+          "meaning": "snake",
+          "speak": "",
+          "ipa": "sɔ"
+        },
+        {
+          "char": "ହ",
+          "roman": "ha",
+          "hint": "h",
+          "example": "ହାତୀ",
+          "exampleRoman": "hātī",
+          "meaning": "elephant",
+          "speak": "",
+          "ipa": "ɦɔ"
+        }
+      ]
+    },
+    {
+      "title": "Special letters and signs",
+      "note": "Two letters with a dot below for the flapped r sounds, a conjunct learned as a letter, and the signs for a breath of h and a nasal vowel, shown on ଅ.",
+      "group": "More consonants",
+      "cols": 3,
+      "chars": [
+        {
+          "char": "ଡ଼",
+          "roman": "ṛa",
+          "hint": "a flapped r with the tongue curled back",
+          "example": "ଗାଡ଼ି",
+          "exampleRoman": "gāṛi",
+          "meaning": "cart, car",
+          "speak": "",
+          "ipa": "ɽɔ"
+        },
+        {
+          "char": "ଢ଼",
+          "roman": "ṛha",
+          "hint": "the flapped r with a breath",
+          "example": "ଆଷାଢ଼",
+          "exampleRoman": "āṣāṛha",
+          "meaning": "Asadha, a month of the monsoon",
+          "speak": "",
+          "ipa": "ɽʱɔ"
+        },
+        {
+          "char": "କ୍ଷ",
+          "roman": "kṣa",
+          "hint": "k + kh; said khyo",
+          "example": "କ୍ଷମା",
+          "exampleRoman": "kṣamā",
+          "meaning": "forgiveness",
+          "speak": "",
+          "ipa": "kʰjɔ"
+        },
+        {
+          "char": "ଅଃ",
+          "roman": "aḥ",
+          "hint": "ଃ visarga: a breath of h after a vowel",
+          "example": "ଦୁଃଖ",
+          "exampleRoman": "duḥkha",
+          "meaning": "sorrow",
+          "speak": "",
+          "ipa": "ɔh"
+        },
+        {
+          "char": "ଅଁ",
+          "roman": "ã",
+          "hint": "ଁ chandrabindu: says the vowel through the nose",
+          "example": "ହଁ",
+          "exampleRoman": "hã",
+          "meaning": "yes",
+          "speak": "",
+          "ipa": "ɔ̃"
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "title": "Why the letters are round",
+      "body": "<p>Odia was written for centuries by scratching palm leaves with an iron stylus, then rubbing soot into the scratches. A long straight line along the top, like the Devanagari headline, would follow the grain of the leaf and split it, so scribes drew it as a curve instead. That is the round cap that sits on almost every letter: compare Odia <span lang=\"or\">କ ଗ ମ</span> with Hindi <span lang=\"hi\">क ग म</span>.</p>\n<p>Because the caps all look alike, the part to watch is the body under the cap.</p>"
+    },
+    {
+      "title": "Odia keeps its o",
+      "body": "<p>Every consonant carries a short vowel, said o as in hot. Hindi, Bengali and Gujarati drop that vowel at the end of most words, but Odia keeps it: <span lang=\"or\">ଘର</span> (house) is ghara, not ghar, and <span lang=\"or\">କମଳ</span> (lotus) is kamaḷa.</p>\n<p>To end a word on a bare consonant, Odia writes the halanta, <span lang=\"or\">କ୍</span>, or joins the consonant to the next one.</p>"
+    },
+    {
+      "title": "Letters that sound the same",
+      "body": "<p>Spelling keeps the letters of the Sanskrit alphabet, but speech has merged some of them:</p>\n<table>\n<tr><td lang=\"or\">ଶ ଷ ସ</td><td>all said s</td></tr>\n<tr><td lang=\"or\">ଜ ଯ</td><td>both said j; the y sound is written <span lang=\"or\">ୟ</span>, with a dot</td></tr>\n<tr><td lang=\"or\">ଇ ଈ, ଉ ଊ</td><td>short and long vowels said alike</td></tr>\n<tr><td lang=\"or\">ଣ ନ</td><td>often said alike</td></tr>\n</table>\n<p>So learn which letter a word uses by sight, as English speakers learn ph and f.</p>"
+    },
+    {
+      "title": "Conjuncts",
+      "body": "<p>When two consonants meet with no vowel between them, the second is usually written smaller, under or beside the first:</p>\n<table>\n<tr><td lang=\"or\">ନ୍ + ତ = ନ୍ତ</td><td>nt, as in <span lang=\"or\">ଦାନ୍ତ</span> (tooth)</td></tr>\n<tr><td lang=\"or\">ମ୍ + ବ = ମ୍ବ</td><td>mb, as in <span lang=\"or\">ଆମ୍ବ</span> (mango)</td></tr>\n<tr><td lang=\"or\">ଶ୍ + ୱ = ଶ୍ୱ</td><td>św, as in <span lang=\"or\">ଈଶ୍ୱର</span> (God)</td></tr>\n</table>\n<p>A <span lang=\"or\">ର</span> before a consonant becomes a small hook on top, as in <span lang=\"or\">ଊର୍ମି</span>.</p>"
+    }
+  ]
+}

@@ -1,0 +1,753 @@
+{
+  "schema": "alphabet@1",
+  "id": "thai",
+  "title": "Thai",
+  "native": "ไทย",
+  "lang": "th-TH",
+  "langName": "Thai",
+  "font": "\"Noto Sans Thai Looped\", \"Noto Sans Thai\", \"Leelawadee UI\", \"Thonburi\", sans-serif",
+  "blurb": "44 consonants in three classes, vowels written all around them, and five tones.",
+  "writeTip": "Most Thai letters start at the small loop (the head) and are drawn in one stroke without lifting the pen.",
+  "notes": [
+    "The Thai alphabet for SquirrelGo Alphabets. Romanization follows the Royal Thai General System for consonants, with doubled letters for long vowels. Each consonant's example is the word its traditional name comes from (ก is \"ko kai\", ko as in kai, chicken). Hints, groupings and articles are original."
+  ],
+  "lessons": [
+    {
+      "title": "Middle-class consonants",
+      "note": "Learn these nine first: their class gives the simplest tone rules. Each letter is named by its sound with an o after it, then a word: ก is ko kai, k as in kai (chicken).",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ก",
+          "roman": "k",
+          "hint": "k without a puff of air, as in skin",
+          "example": "ไก่",
+          "exampleRoman": "kai",
+          "meaning": "chicken",
+          "speak": "กอ",
+          "ipa": "k"
+        },
+        {
+          "char": "จ",
+          "roman": "ch",
+          "hint": "ch without a puff of air, close to j",
+          "example": "จาน",
+          "exampleRoman": "chan",
+          "meaning": "plate",
+          "speak": "จอ",
+          "ipa": "tɕ"
+        },
+        {
+          "char": "ด",
+          "roman": "d",
+          "hint": "d as in day",
+          "example": "เด็ก",
+          "exampleRoman": "dek",
+          "meaning": "child",
+          "speak": "ดอ",
+          "ipa": "d"
+        },
+        {
+          "char": "ต",
+          "roman": "t",
+          "hint": "t without a puff of air, as in stop",
+          "example": "เต่า",
+          "exampleRoman": "tao",
+          "meaning": "turtle",
+          "speak": "ตอ",
+          "ipa": "t"
+        },
+        {
+          "char": "บ",
+          "roman": "b",
+          "hint": "b as in boy",
+          "example": "ใบไม้",
+          "exampleRoman": "bai mai",
+          "meaning": "leaf",
+          "speak": "บอ",
+          "ipa": "b"
+        },
+        {
+          "char": "ป",
+          "roman": "p",
+          "hint": "p without a puff of air, as in spin",
+          "example": "ปลา",
+          "exampleRoman": "pla",
+          "meaning": "fish",
+          "speak": "ปอ",
+          "ipa": "p"
+        },
+        {
+          "char": "อ",
+          "roman": "ʼ",
+          "hint": "a silent holder for a vowel; also the vowel aw",
+          "example": "อ่าง",
+          "exampleRoman": "ang",
+          "meaning": "basin",
+          "speak": "ออ",
+          "ipa": "ʔ"
+        },
+        {
+          "char": "ฎ",
+          "roman": "d",
+          "hint": "a rare d, used in words from Pali and Sanskrit",
+          "example": "ชฎา",
+          "exampleRoman": "chada",
+          "meaning": "dancer's headdress",
+          "speak": "ฎอ",
+          "ipa": "d"
+        },
+        {
+          "char": "ฏ",
+          "roman": "t",
+          "hint": "a rare t, used in words from Pali and Sanskrit",
+          "example": "ปฏัก",
+          "exampleRoman": "patak",
+          "meaning": "ox goad",
+          "speak": "ฏอ",
+          "ipa": "t"
+        }
+      ]
+    },
+    {
+      "title": "High-class consonants",
+      "note": "These are said with a puff of air, or are hissing sounds. A plain syllable that starts with one of them has a rising tone.",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ข",
+          "roman": "kh",
+          "hint": "k with a puff of air, as in kin",
+          "example": "ไข่",
+          "exampleRoman": "khai",
+          "meaning": "egg",
+          "speak": "ขอ",
+          "ipa": "kʰ"
+        },
+        {
+          "char": "ฉ",
+          "roman": "ch",
+          "hint": "ch with a puff of air, as in chin",
+          "example": "ฉิ่ง",
+          "exampleRoman": "ching",
+          "meaning": "small cymbals",
+          "speak": "ฉอ",
+          "ipa": "tɕʰ"
+        },
+        {
+          "char": "ถ",
+          "roman": "th",
+          "hint": "t with a puff of air, as in tin",
+          "example": "ถุง",
+          "exampleRoman": "thung",
+          "meaning": "bag",
+          "speak": "ถอ",
+          "ipa": "tʰ"
+        },
+        {
+          "char": "ผ",
+          "roman": "ph",
+          "hint": "p with a puff of air, as in pin",
+          "example": "ผึ้ง",
+          "exampleRoman": "phueng",
+          "meaning": "bee",
+          "speak": "ผอ",
+          "ipa": "pʰ"
+        },
+        {
+          "char": "ฝ",
+          "roman": "f",
+          "hint": "f as in fan",
+          "example": "ฝา",
+          "exampleRoman": "fa",
+          "meaning": "lid",
+          "speak": "ฝอ",
+          "ipa": "f"
+        },
+        {
+          "char": "ส",
+          "roman": "s",
+          "hint": "s as in sun; the common s",
+          "example": "เสือ",
+          "exampleRoman": "suea",
+          "meaning": "tiger",
+          "speak": "สอ",
+          "ipa": "s"
+        },
+        {
+          "char": "ห",
+          "roman": "h",
+          "hint": "h as in hat; also makes a low consonant high",
+          "example": "หีบ",
+          "exampleRoman": "hip",
+          "meaning": "chest",
+          "speak": "หอ",
+          "ipa": "h"
+        },
+        {
+          "char": "ศ",
+          "roman": "s",
+          "hint": "s, in words from Sanskrit",
+          "example": "ศาลา",
+          "exampleRoman": "sala",
+          "meaning": "pavilion",
+          "speak": "ศอ",
+          "ipa": "s"
+        },
+        {
+          "char": "ษ",
+          "roman": "s",
+          "hint": "s, in words from Sanskrit",
+          "example": "ฤๅษี",
+          "exampleRoman": "ruesi",
+          "meaning": "hermit",
+          "speak": "ษอ",
+          "ipa": "s"
+        },
+        {
+          "char": "ฐ",
+          "roman": "th",
+          "hint": "a rare th, in words from Pali and Sanskrit",
+          "example": "ฐาน",
+          "exampleRoman": "than",
+          "meaning": "base, pedestal",
+          "speak": "ฐอ",
+          "ipa": "tʰ"
+        },
+        {
+          "char": "ฃ",
+          "roman": "kh",
+          "hint": "no longer used; its name word ขวด is now spelled with ข",
+          "example": "ขวด",
+          "exampleRoman": "khuat",
+          "meaning": "bottle",
+          "speak": "ขอ",
+          "ipa": "kʰ"
+        }
+      ]
+    },
+    {
+      "title": "Low-class consonants in pairs",
+      "note": "Each of these has a high-class twin with the same sound (ค and ข are both kh). A plain syllable that starts with a low consonant has a mid tone.",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ค",
+          "roman": "kh",
+          "hint": "kh, the low twin of ข",
+          "example": "ควาย",
+          "exampleRoman": "khwai",
+          "meaning": "water buffalo",
+          "speak": "คอ",
+          "ipa": "kʰ"
+        },
+        {
+          "char": "ช",
+          "roman": "ch",
+          "hint": "ch with a puff of air, the low twin of ฉ",
+          "example": "ช้าง",
+          "exampleRoman": "chang",
+          "meaning": "elephant",
+          "speak": "ชอ",
+          "ipa": "tɕʰ"
+        },
+        {
+          "char": "ซ",
+          "roman": "s",
+          "hint": "s, the low twin of ส",
+          "example": "โซ่",
+          "exampleRoman": "so",
+          "meaning": "chain",
+          "speak": "ซอ",
+          "ipa": "s"
+        },
+        {
+          "char": "ท",
+          "roman": "th",
+          "hint": "th, the low twin of ถ",
+          "example": "ทหาร",
+          "exampleRoman": "thahan",
+          "meaning": "soldier",
+          "speak": "ทอ",
+          "ipa": "tʰ"
+        },
+        {
+          "char": "พ",
+          "roman": "ph",
+          "hint": "ph, the low twin of ผ",
+          "example": "พาน",
+          "exampleRoman": "phan",
+          "meaning": "offering tray",
+          "speak": "พอ",
+          "ipa": "pʰ"
+        },
+        {
+          "char": "ฟ",
+          "roman": "f",
+          "hint": "f, the low twin of ฝ",
+          "example": "ฟัน",
+          "exampleRoman": "fan",
+          "meaning": "tooth",
+          "speak": "ฟอ",
+          "ipa": "f"
+        },
+        {
+          "char": "ฮ",
+          "roman": "h",
+          "hint": "h, the low twin of ห",
+          "example": "นกฮูก",
+          "exampleRoman": "nok huk",
+          "meaning": "owl",
+          "speak": "ฮอ",
+          "ipa": "h"
+        },
+        {
+          "char": "ธ",
+          "roman": "th",
+          "hint": "th, mostly in words from Pali and Sanskrit",
+          "example": "ธง",
+          "exampleRoman": "thong",
+          "meaning": "flag",
+          "speak": "ธอ",
+          "ipa": "tʰ"
+        },
+        {
+          "char": "ภ",
+          "roman": "ph",
+          "hint": "ph, mostly in words from Pali and Sanskrit",
+          "example": "สำเภา",
+          "exampleRoman": "samphao",
+          "meaning": "junk (sailing ship)",
+          "speak": "ภอ",
+          "ipa": "pʰ"
+        },
+        {
+          "char": "ฆ",
+          "roman": "kh",
+          "hint": "a rare kh",
+          "example": "ระฆัง",
+          "exampleRoman": "rakhang",
+          "meaning": "temple bell",
+          "speak": "ฆอ",
+          "ipa": "kʰ"
+        },
+        {
+          "char": "ฌ",
+          "roman": "ch",
+          "hint": "a rare ch",
+          "example": "เฌอ",
+          "exampleRoman": "choe",
+          "meaning": "tree",
+          "speak": "ฌอ",
+          "ipa": "tɕʰ"
+        },
+        {
+          "char": "ฑ",
+          "roman": "th",
+          "hint": "a rare th, sometimes said d",
+          "example": "มณโฑ",
+          "exampleRoman": "montho",
+          "meaning": "Montho, a queen in the Ramakien",
+          "speak": "ฑอ",
+          "ipa": "tʰ"
+        },
+        {
+          "char": "ฒ",
+          "roman": "th",
+          "hint": "a rare th",
+          "example": "ผู้เฒ่า",
+          "exampleRoman": "phu thao",
+          "meaning": "elder",
+          "speak": "ฒอ",
+          "ipa": "tʰ"
+        },
+        {
+          "char": "ฅ",
+          "roman": "kh",
+          "hint": "no longer used; its name word คน is now spelled with ค",
+          "example": "คน",
+          "exampleRoman": "khon",
+          "meaning": "person",
+          "speak": "คอ",
+          "ipa": "kʰ"
+        }
+      ]
+    },
+    {
+      "title": "Low-class sounds with no twin",
+      "note": "Nasals and smooth sounds. To give one of them a high-class tone, Thai writes a silent ห in front: หมา (ma, dog).",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ง",
+          "roman": "ng",
+          "hint": "ng as in sing, even at the start of a word",
+          "example": "งู",
+          "exampleRoman": "ngu",
+          "meaning": "snake",
+          "speak": "งอ",
+          "ipa": "ŋ"
+        },
+        {
+          "char": "น",
+          "roman": "n",
+          "hint": "n as in no",
+          "example": "หนู",
+          "exampleRoman": "nu",
+          "meaning": "mouse",
+          "speak": "นอ",
+          "ipa": "n"
+        },
+        {
+          "char": "ม",
+          "roman": "m",
+          "hint": "m as in man",
+          "example": "ม้า",
+          "exampleRoman": "ma",
+          "meaning": "horse",
+          "speak": "มอ",
+          "ipa": "m"
+        },
+        {
+          "char": "ย",
+          "roman": "y",
+          "hint": "y as in yes",
+          "example": "ยักษ์",
+          "exampleRoman": "yak",
+          "meaning": "giant",
+          "speak": "ยอ",
+          "ipa": "j"
+        },
+        {
+          "char": "ร",
+          "roman": "r",
+          "hint": "a tapped r; often said l in casual speech",
+          "example": "เรือ",
+          "exampleRoman": "ruea",
+          "meaning": "boat",
+          "speak": "รอ",
+          "ipa": "r"
+        },
+        {
+          "char": "ล",
+          "roman": "l",
+          "hint": "l as in let",
+          "example": "ลิง",
+          "exampleRoman": "ling",
+          "meaning": "monkey",
+          "speak": "ลอ",
+          "ipa": "l"
+        },
+        {
+          "char": "ว",
+          "roman": "w",
+          "hint": "w as in wet",
+          "example": "แหวน",
+          "exampleRoman": "waen",
+          "meaning": "ring",
+          "speak": "วอ",
+          "ipa": "w"
+        },
+        {
+          "char": "ญ",
+          "roman": "y",
+          "hint": "y, in words from Pali and Sanskrit",
+          "example": "หญิง",
+          "exampleRoman": "ying",
+          "meaning": "woman",
+          "speak": "ญอ",
+          "ipa": "j"
+        },
+        {
+          "char": "ณ",
+          "roman": "n",
+          "hint": "n, in words from Pali and Sanskrit",
+          "example": "เณร",
+          "exampleRoman": "nen",
+          "meaning": "novice monk",
+          "speak": "ณอ",
+          "ipa": "n"
+        },
+        {
+          "char": "ฬ",
+          "roman": "l",
+          "hint": "a rare l",
+          "example": "จุฬา",
+          "exampleRoman": "chula",
+          "meaning": "star-shaped kite",
+          "speak": "ฬอ",
+          "ipa": "l"
+        }
+      ]
+    },
+    {
+      "title": "Vowels on ก",
+      "note": "Vowel signs sit before, after, above or below the consonant, and some wrap around it. They are shown here on ก. Whatever the position, the consonant is said first.",
+      "group": "Vowels",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "กะ",
+          "roman": "ka",
+          "hint": "short a",
+          "example": "กะทิ",
+          "exampleRoman": "kathi",
+          "meaning": "coconut milk",
+          "speak": "",
+          "ipa": "ka"
+        },
+        {
+          "char": "กา",
+          "roman": "kaa",
+          "hint": "long a, as in father",
+          "example": "ตา",
+          "exampleRoman": "ta",
+          "meaning": "eye",
+          "speak": "",
+          "ipa": "kaː"
+        },
+        {
+          "char": "กิ",
+          "roman": "ki",
+          "hint": "short i, as in bit",
+          "example": "สิบ",
+          "exampleRoman": "sip",
+          "meaning": "ten",
+          "speak": "",
+          "ipa": "ki"
+        },
+        {
+          "char": "กี",
+          "roman": "kii",
+          "hint": "long ee, as in see",
+          "example": "ดี",
+          "exampleRoman": "di",
+          "meaning": "good",
+          "speak": "",
+          "ipa": "kiː"
+        },
+        {
+          "char": "กึ",
+          "roman": "kue",
+          "hint": "short ue: say i with your lips spread flat",
+          "example": "ลึก",
+          "exampleRoman": "luek",
+          "meaning": "deep",
+          "speak": "",
+          "ipa": "kɯ"
+        },
+        {
+          "char": "กือ",
+          "roman": "kuue",
+          "hint": "long ue; open syllables add a silent อ",
+          "example": "มือ",
+          "exampleRoman": "mue",
+          "meaning": "hand",
+          "speak": "",
+          "ipa": "kɯː"
+        },
+        {
+          "char": "กุ",
+          "roman": "ku",
+          "hint": "short u, as in put",
+          "example": "ลุง",
+          "exampleRoman": "lung",
+          "meaning": "uncle",
+          "speak": "",
+          "ipa": "ku"
+        },
+        {
+          "char": "กู",
+          "roman": "kuu",
+          "hint": "long oo, as in food",
+          "example": "งู",
+          "exampleRoman": "ngu",
+          "meaning": "snake",
+          "speak": "",
+          "ipa": "kuː"
+        },
+        {
+          "char": "เก",
+          "roman": "kee",
+          "hint": "long e, as in they without the glide; written first",
+          "example": "เลข",
+          "exampleRoman": "lek",
+          "meaning": "number",
+          "speak": "",
+          "ipa": "keː"
+        },
+        {
+          "char": "แก",
+          "roman": "kae",
+          "hint": "long a, as in bad; written first",
+          "example": "แมว",
+          "exampleRoman": "maeo",
+          "meaning": "cat",
+          "speak": "",
+          "ipa": "kɛː"
+        },
+        {
+          "char": "โก",
+          "roman": "koo",
+          "hint": "long o, as in go without the glide; written first",
+          "example": "โลก",
+          "exampleRoman": "lok",
+          "meaning": "world",
+          "speak": "",
+          "ipa": "koː"
+        },
+        {
+          "char": "กอ",
+          "roman": "kaw",
+          "hint": "long aw, as in saw",
+          "example": "พอ",
+          "exampleRoman": "pho",
+          "meaning": "enough",
+          "speak": "",
+          "ipa": "kɔː"
+        },
+        {
+          "char": "เกอ",
+          "roman": "koe",
+          "hint": "long oe, like the u in fur without the r",
+          "example": "เธอ",
+          "exampleRoman": "thoe",
+          "meaning": "you, she",
+          "speak": "",
+          "ipa": "kɤː"
+        },
+        {
+          "char": "เกีย",
+          "roman": "kia",
+          "hint": "ia, as in Mia",
+          "example": "เรียน",
+          "exampleRoman": "rian",
+          "meaning": "to study",
+          "speak": "",
+          "ipa": "kia"
+        },
+        {
+          "char": "เกือ",
+          "roman": "kuea",
+          "hint": "uea: ue gliding to a",
+          "example": "เรือ",
+          "exampleRoman": "ruea",
+          "meaning": "boat",
+          "speak": "",
+          "ipa": "kɯa"
+        },
+        {
+          "char": "กัว",
+          "roman": "kua",
+          "hint": "ua, as in the oo-a of truer",
+          "example": "วัว",
+          "exampleRoman": "wua",
+          "meaning": "cow",
+          "speak": "",
+          "ipa": "kua"
+        },
+        {
+          "char": "ไก",
+          "roman": "kai",
+          "hint": "ai, as in Thai; the common way to write it",
+          "example": "ไฟ",
+          "exampleRoman": "fai",
+          "meaning": "fire",
+          "speak": "",
+          "ipa": "kaj"
+        },
+        {
+          "char": "ใก",
+          "roman": "kai",
+          "hint": "ai again; used in only about twenty words",
+          "example": "ใจ",
+          "exampleRoman": "chai",
+          "meaning": "heart, mind",
+          "speak": "",
+          "ipa": "kaj"
+        },
+        {
+          "char": "เกา",
+          "roman": "kao",
+          "hint": "ao, as in how",
+          "example": "เขา",
+          "exampleRoman": "khao",
+          "meaning": "he, she; mountain",
+          "speak": "",
+          "ipa": "kaw"
+        },
+        {
+          "char": "กำ",
+          "roman": "kam",
+          "hint": "am: a short a with an m",
+          "example": "น้ำ",
+          "exampleRoman": "nam",
+          "meaning": "water",
+          "speak": "",
+          "ipa": "kam"
+        }
+      ]
+    },
+    {
+      "title": "Tone marks",
+      "note": "Four marks sit above the consonant (above the vowel too, if it has one on top). With a middle-class consonant like ก each mark gives one tone; with the other classes the same mark can mean a different tone.",
+      "group": "Tones",
+      "chars": [
+        {
+          "char": "ก่า",
+          "roman": "kàa",
+          "hint": "mai ek ่: low tone with a middle-class letter",
+          "example": "ไก่",
+          "exampleRoman": "kai",
+          "meaning": "chicken",
+          "speak": "",
+          "ipa": "kàː"
+        },
+        {
+          "char": "ก้า",
+          "roman": "kâa",
+          "hint": "mai tho ้: falling tone with a middle-class letter",
+          "example": "บ้าน",
+          "exampleRoman": "ban",
+          "meaning": "house",
+          "speak": "",
+          "ipa": "kâː"
+        },
+        {
+          "char": "ก๊า",
+          "roman": "káa",
+          "hint": "mai tri ๊: high tone; used only on middle-class letters",
+          "example": "โต๊ะ",
+          "exampleRoman": "to",
+          "meaning": "table",
+          "speak": "",
+          "ipa": "káː"
+        },
+        {
+          "char": "ก๋า",
+          "roman": "kǎa",
+          "hint": "mai chattawa ๋: rising tone; used only on middle-class letters",
+          "example": "ตั๋ว",
+          "exampleRoman": "tua",
+          "meaning": "ticket",
+          "speak": "",
+          "ipa": "kǎː"
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "title": "Three classes of consonants",
+      "body": "<p>Thai has five tones: mid, low, falling, high and rising. Spelling shows which one a syllable has, but not with one mark per tone. Instead it combines three things: the class of the first consonant (middle, high or low), the tone mark if there is one, and whether the syllable ends in a vowel or a sound like m, n or ng (live), or in a short vowel or p, t, k (dead).</p>\n<p>That is why Thai keeps several letters for the same sound: <span lang=\"th\">ข</span> and <span lang=\"th\">ค</span> are both kh, but one is high and one is low, so <span lang=\"th\">ขา</span> (khǎa, leg) and <span lang=\"th\">คา</span> (khaa, to be stuck) have different tones.</p>\n<p>A good first step is to learn the nine middle-class letters by heart and the eleven high-class ones. Everything else is low.</p>"
+    },
+    {
+      "title": "Vowels go all around",
+      "body": "<p>A Thai vowel can be written after the consonant (<span lang=\"th\">กา</span>), above it (<span lang=\"th\">กิ</span>), below it (<span lang=\"th\">กุ</span>), before it (<span lang=\"th\">เก</span>) or in several of those places at once (<span lang=\"th\">เกีย</span>). The consonant is always said first, so you read <span lang=\"th\">เก</span> as kee even though the vowel comes first on the page.</p>\n<p>A syllable with no vowel written between two consonants has a hidden short o or a: <span lang=\"th\">คน</span> is khon, person.</p>"
+    },
+    {
+      "title": "No spaces between words",
+      "body": "<p>Thai is written without spaces between words. A space marks the end of a phrase or sentence, a little like a comma or full stop. Readers find the word breaks from the shapes of syllables: a vowel that is written first, like <span lang=\"th\">เ</span> or <span lang=\"th\">ไ</span>, often starts a new syllable.</p>\n<p>At the end of a syllable many letters lose their own sound: only k, t, p, m, n, ng, w and y are heard. <span lang=\"th\">ท</span>, <span lang=\"th\">ศ</span> and <span lang=\"th\">ษ</span> all end in t, so <span lang=\"th\">บาท</span> (baht), <span lang=\"th\">อากาศ</span> (akat, weather) and <span lang=\"th\">พิเศษ</span> (phiset, special) all end the same way.</p>"
+    }
+  ]
+}

@@ -1,0 +1,709 @@
+{
+  "schema": "alphabet@1",
+  "id": "bengali",
+  "title": "Bengali",
+  "native": "বাংলা",
+  "lang": "bn-BD",
+  "langName": "Bengali",
+  "font": "\"Noto Sans Bengali\", \"Kohinoor Bangla\", \"Vrinda\", \"Nirmala UI\", sans-serif",
+  "blurb": "The script for Bangla and Assamese. Consonants carry a built-in o, and letters hang from a headline.",
+  "writeTip": "Write the letter body first, then the headline (matra) across the top. A few letters, like এ and ঐ, have only part of a headline or none.",
+  "notes": [
+    "Bengali (Bangla) for SquirrelGo Alphabets. Romanization follows everyday Bangla spelling in Latin letters. Hints, groupings and articles are original."
+  ],
+  "lessons": [
+    {
+      "title": "Vowels",
+      "note": "Full vowel letters are used at the start of a word or after another vowel. Bangla does not keep long and short vowels apart: ই and ঈ sound the same.",
+      "group": "Vowels",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "অ",
+          "roman": "o",
+          "hint": "o as in British hot, mouth open",
+          "example": "অজগর",
+          "exampleRoman": "ojogor",
+          "meaning": "python",
+          "speak": "",
+          "ipa": "ɔ"
+        },
+        {
+          "char": "আ",
+          "roman": "a",
+          "hint": "a as in father",
+          "example": "আম",
+          "exampleRoman": "am",
+          "meaning": "mango",
+          "speak": "",
+          "ipa": "a"
+        },
+        {
+          "char": "ই",
+          "roman": "i",
+          "hint": "ee as in see",
+          "example": "ইঁদুর",
+          "exampleRoman": "idur",
+          "meaning": "mouse",
+          "speak": "",
+          "ipa": "i"
+        },
+        {
+          "char": "ঈ",
+          "roman": "i",
+          "hint": "the same ee, the 'long' letter",
+          "example": "ঈগল",
+          "exampleRoman": "igol",
+          "meaning": "eagle",
+          "speak": "",
+          "ipa": "i"
+        },
+        {
+          "char": "উ",
+          "roman": "u",
+          "hint": "oo as in food",
+          "example": "উট",
+          "exampleRoman": "ut",
+          "meaning": "camel",
+          "speak": "",
+          "ipa": "u"
+        },
+        {
+          "char": "ঊ",
+          "roman": "u",
+          "hint": "the same oo, the 'long' letter",
+          "example": "ঊষা",
+          "exampleRoman": "usha",
+          "meaning": "dawn",
+          "speak": "",
+          "ipa": "u"
+        },
+        {
+          "char": "ঋ",
+          "roman": "ri",
+          "hint": "said ri",
+          "example": "ঋষি",
+          "exampleRoman": "rishi",
+          "meaning": "sage",
+          "speak": "",
+          "ipa": "ri"
+        },
+        {
+          "char": "এ",
+          "roman": "e",
+          "hint": "e as in bed or a as in bat",
+          "example": "এক",
+          "exampleRoman": "ek",
+          "meaning": "one",
+          "speak": "",
+          "ipa": "e"
+        },
+        {
+          "char": "ঐ",
+          "roman": "oi",
+          "hint": "oi as in oil",
+          "example": "ঐক্য",
+          "exampleRoman": "oikko",
+          "meaning": "unity",
+          "speak": "",
+          "ipa": "oi"
+        },
+        {
+          "char": "ও",
+          "roman": "o",
+          "hint": "o as in go, without the glide",
+          "example": "ওজন",
+          "exampleRoman": "ojon",
+          "meaning": "weight",
+          "speak": "",
+          "ipa": "o"
+        },
+        {
+          "char": "ঔ",
+          "roman": "ou",
+          "hint": "o then u, one syllable",
+          "example": "ঔষধ",
+          "exampleRoman": "oushodh",
+          "meaning": "medicine",
+          "speak": "",
+          "ipa": "ou"
+        }
+      ]
+    },
+    {
+      "title": "Vowel signs on ক",
+      "note": "After a consonant, a vowel is written as a sign (kar) around it. ি, ে and ৈ are written before the consonant but said after it.",
+      "group": "Vowel signs",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "কা",
+          "roman": "ka",
+          "hint": "া: a",
+          "example": "কাক",
+          "exampleRoman": "kak",
+          "meaning": "crow",
+          "speak": "",
+          "ipa": "ka"
+        },
+        {
+          "char": "কি",
+          "roman": "ki",
+          "hint": "ি: i, written first",
+          "example": "কিশমিশ",
+          "exampleRoman": "kishmish",
+          "meaning": "raisin",
+          "speak": "",
+          "ipa": "ki"
+        },
+        {
+          "char": "কী",
+          "roman": "ki",
+          "hint": "ী: the long i sign",
+          "example": "কী",
+          "exampleRoman": "ki",
+          "meaning": "what",
+          "speak": "",
+          "ipa": "ki"
+        },
+        {
+          "char": "কু",
+          "roman": "ku",
+          "hint": "ু: u, hangs below",
+          "example": "কুকুর",
+          "exampleRoman": "kukur",
+          "meaning": "dog",
+          "speak": "",
+          "ipa": "ku"
+        },
+        {
+          "char": "কূ",
+          "roman": "ku",
+          "hint": "ূ: the long u sign",
+          "example": "কূল",
+          "exampleRoman": "kul",
+          "meaning": "shore",
+          "speak": "",
+          "ipa": "ku"
+        },
+        {
+          "char": "কৃ",
+          "roman": "kri",
+          "hint": "ৃ: ri",
+          "example": "কৃষক",
+          "exampleRoman": "krishok",
+          "meaning": "farmer",
+          "speak": "",
+          "ipa": "kri"
+        },
+        {
+          "char": "কে",
+          "roman": "ke",
+          "hint": "ে: e, written first",
+          "example": "কেক",
+          "exampleRoman": "kek",
+          "meaning": "cake",
+          "speak": "",
+          "ipa": "ke"
+        },
+        {
+          "char": "কৈ",
+          "roman": "koi",
+          "hint": "ৈ: oi, written first",
+          "example": "কৈশোর",
+          "exampleRoman": "koishor",
+          "meaning": "adolescence",
+          "speak": "",
+          "ipa": "koi"
+        },
+        {
+          "char": "কো",
+          "roman": "ko",
+          "hint": "ো: o, on both sides",
+          "example": "কোকিল",
+          "exampleRoman": "kokil",
+          "meaning": "cuckoo",
+          "speak": "",
+          "ipa": "ko"
+        },
+        {
+          "char": "কৌ",
+          "roman": "kou",
+          "hint": "ৌ: ou, on both sides",
+          "example": "কৌটা",
+          "exampleRoman": "kouta",
+          "meaning": "small tin box",
+          "speak": "",
+          "ipa": "kou"
+        },
+        {
+          "char": "ক্",
+          "roman": "k",
+          "hint": "্: hasanta, removes the built-in o",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "k"
+        }
+      ]
+    },
+    {
+      "title": "Velar consonants (back of the mouth)",
+      "note": "Each row of five follows the same pattern: plain, aspirated, voiced, voiced aspirated, nasal.",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ক",
+          "roman": "ko",
+          "hint": "k, no puff of air",
+          "example": "কলা",
+          "exampleRoman": "kola",
+          "meaning": "banana",
+          "speak": "",
+          "ipa": "kɔ"
+        },
+        {
+          "char": "খ",
+          "roman": "kho",
+          "hint": "k with a puff of air",
+          "example": "খরগোশ",
+          "exampleRoman": "khorgosh",
+          "meaning": "rabbit",
+          "speak": "",
+          "ipa": "kʰɔ"
+        },
+        {
+          "char": "গ",
+          "roman": "go",
+          "hint": "g",
+          "example": "গরু",
+          "exampleRoman": "goru",
+          "meaning": "cow",
+          "speak": "",
+          "ipa": "ɡɔ"
+        },
+        {
+          "char": "ঘ",
+          "roman": "gho",
+          "hint": "g with a breathy release",
+          "example": "ঘর",
+          "exampleRoman": "ghor",
+          "meaning": "room, house",
+          "speak": "",
+          "ipa": "ɡʱɔ"
+        },
+        {
+          "char": "ঙ",
+          "roman": "ngo",
+          "hint": "ng; never starts a word",
+          "example": "ব্যাঙ",
+          "exampleRoman": "byang",
+          "meaning": "frog",
+          "speak": "",
+          "ipa": "ŋɔ"
+        }
+      ]
+    },
+    {
+      "title": "Palatal consonants",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "চ",
+          "roman": "cho",
+          "hint": "ch, no puff of air",
+          "example": "চা",
+          "exampleRoman": "cha",
+          "meaning": "tea",
+          "speak": "",
+          "ipa": "tʃɔ"
+        },
+        {
+          "char": "ছ",
+          "roman": "chho",
+          "hint": "ch with a puff of air",
+          "example": "ছাতা",
+          "exampleRoman": "chhata",
+          "meaning": "umbrella",
+          "speak": "",
+          "ipa": "tʃʰɔ"
+        },
+        {
+          "char": "জ",
+          "roman": "jo",
+          "hint": "j",
+          "example": "জল",
+          "exampleRoman": "jol",
+          "meaning": "water",
+          "speak": "",
+          "ipa": "dʒɔ"
+        },
+        {
+          "char": "ঝ",
+          "roman": "jho",
+          "hint": "j with a breathy release",
+          "example": "ঝড়",
+          "exampleRoman": "jhor",
+          "meaning": "storm",
+          "speak": "",
+          "ipa": "dʒʱɔ"
+        },
+        {
+          "char": "ঞ",
+          "roman": "nyo",
+          "hint": "a nasal, mostly inside conjuncts",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "nɔ"
+        }
+      ]
+    },
+    {
+      "title": "Retroflex consonants",
+      "note": "Curl the tongue tip back. ণ is said just like ন today but is still spelled differently.",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ট",
+          "roman": "ṭo",
+          "hint": "t with the tongue curled back",
+          "example": "টমেটো",
+          "exampleRoman": "ṭomeṭo",
+          "meaning": "tomato",
+          "speak": "",
+          "ipa": "ʈɔ"
+        },
+        {
+          "char": "ঠ",
+          "roman": "ṭho",
+          "hint": "curled-back t with a puff of air",
+          "example": "ঠোঁট",
+          "exampleRoman": "ṭhõṭ",
+          "meaning": "lips",
+          "speak": "",
+          "ipa": "ʈʰɔ"
+        },
+        {
+          "char": "ড",
+          "roman": "ḍo",
+          "hint": "d with the tongue curled back",
+          "example": "ডাল",
+          "exampleRoman": "ḍal",
+          "meaning": "lentils",
+          "speak": "",
+          "ipa": "ɖɔ"
+        },
+        {
+          "char": "ঢ",
+          "roman": "ḍho",
+          "hint": "curled-back d, breathy",
+          "example": "ঢোল",
+          "exampleRoman": "ḍhol",
+          "meaning": "barrel drum",
+          "speak": "",
+          "ipa": "ɖʱɔ"
+        },
+        {
+          "char": "ণ",
+          "roman": "ṇo",
+          "hint": "said n",
+          "example": "হরিণ",
+          "exampleRoman": "horin",
+          "meaning": "deer",
+          "speak": "",
+          "ipa": "nɔ"
+        }
+      ]
+    },
+    {
+      "title": "Dental consonants",
+      "note": "Tongue tip against the back of the upper teeth: softer than English t and d.",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ত",
+          "roman": "to",
+          "hint": "t with the tongue on the teeth",
+          "example": "তাল",
+          "exampleRoman": "tal",
+          "meaning": "palm fruit",
+          "speak": "",
+          "ipa": "t̪ɔ"
+        },
+        {
+          "char": "থ",
+          "roman": "tho",
+          "hint": "dental t with a puff of air (not th as in thin)",
+          "example": "থালা",
+          "exampleRoman": "thala",
+          "meaning": "plate",
+          "speak": "",
+          "ipa": "t̪ʰɔ"
+        },
+        {
+          "char": "দ",
+          "roman": "do",
+          "hint": "d with the tongue on the teeth",
+          "example": "দই",
+          "exampleRoman": "doi",
+          "meaning": "yogurt",
+          "speak": "",
+          "ipa": "d̪ɔ"
+        },
+        {
+          "char": "ধ",
+          "roman": "dho",
+          "hint": "dental d, breathy",
+          "example": "ধান",
+          "exampleRoman": "dhan",
+          "meaning": "rice plant",
+          "speak": "",
+          "ipa": "d̪ʱɔ"
+        },
+        {
+          "char": "ন",
+          "roman": "no",
+          "hint": "n",
+          "example": "নদী",
+          "exampleRoman": "nodi",
+          "meaning": "river",
+          "speak": "",
+          "ipa": "nɔ"
+        }
+      ]
+    },
+    {
+      "title": "Labial consonants (lips)",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "প",
+          "roman": "po",
+          "hint": "p, no puff of air",
+          "example": "পাখি",
+          "exampleRoman": "pakhi",
+          "meaning": "bird",
+          "speak": "",
+          "ipa": "pɔ"
+        },
+        {
+          "char": "ফ",
+          "roman": "pho",
+          "hint": "p with a puff of air; often said f",
+          "example": "ফল",
+          "exampleRoman": "phol",
+          "meaning": "fruit",
+          "speak": "",
+          "ipa": "pʰɔ"
+        },
+        {
+          "char": "ব",
+          "roman": "bo",
+          "hint": "b",
+          "example": "বই",
+          "exampleRoman": "boi",
+          "meaning": "book",
+          "speak": "",
+          "ipa": "bɔ"
+        },
+        {
+          "char": "ভ",
+          "roman": "bho",
+          "hint": "b with a breathy release; often said v",
+          "example": "ভালুক",
+          "exampleRoman": "bhaluk",
+          "meaning": "bear",
+          "speak": "",
+          "ipa": "bʱɔ"
+        },
+        {
+          "char": "ম",
+          "roman": "mo",
+          "hint": "m",
+          "example": "মাছ",
+          "exampleRoman": "machh",
+          "meaning": "fish",
+          "speak": "",
+          "ipa": "mɔ"
+        }
+      ]
+    },
+    {
+      "title": "Other consonants",
+      "note": "Bangla has three letters for s, and most of the time all three are said sh.",
+      "group": "More consonants",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "য",
+          "roman": "jo",
+          "hint": "said j, like জ",
+          "example": "যখন",
+          "exampleRoman": "jokhon",
+          "meaning": "when",
+          "speak": "",
+          "ipa": "dʒɔ"
+        },
+        {
+          "char": "র",
+          "roman": "ro",
+          "hint": "a tapped r",
+          "example": "রাজা",
+          "exampleRoman": "raja",
+          "meaning": "king",
+          "speak": "",
+          "ipa": "ɾɔ"
+        },
+        {
+          "char": "ল",
+          "roman": "lo",
+          "hint": "l",
+          "example": "লাল",
+          "exampleRoman": "lal",
+          "meaning": "red",
+          "speak": "",
+          "ipa": "lɔ"
+        },
+        {
+          "char": "শ",
+          "roman": "sho",
+          "hint": "sh",
+          "example": "শাপলা",
+          "exampleRoman": "shapla",
+          "meaning": "water lily",
+          "speak": "",
+          "ipa": "ʃɔ"
+        },
+        {
+          "char": "ষ",
+          "roman": "sho",
+          "hint": "also sh",
+          "example": "ষাঁড়",
+          "exampleRoman": "shãṛ",
+          "meaning": "bull",
+          "speak": "",
+          "ipa": "ʃɔ"
+        },
+        {
+          "char": "স",
+          "roman": "so",
+          "hint": "usually sh too; s before t, n, r, l",
+          "example": "সাপ",
+          "exampleRoman": "shap",
+          "meaning": "snake",
+          "speak": "",
+          "ipa": "ʃɔ"
+        },
+        {
+          "char": "হ",
+          "roman": "ho",
+          "hint": "h",
+          "example": "হাতি",
+          "exampleRoman": "hati",
+          "meaning": "elephant",
+          "speak": "",
+          "ipa": "ɦɔ"
+        }
+      ]
+    },
+    {
+      "title": "Special letters and signs",
+      "note": "Two flapped sounds marked with a dot, a y that only appears after a vowel, a t with no vowel, and three signs that sit on a letter.",
+      "group": "More consonants",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "ড়",
+          "roman": "ṛo",
+          "hint": "a flap: curl the tongue back and flick it forward",
+          "example": "পাহাড়",
+          "exampleRoman": "pahaṛ",
+          "meaning": "hill",
+          "speak": "",
+          "ipa": "ɽɔ"
+        },
+        {
+          "char": "ঢ়",
+          "roman": "ṛho",
+          "hint": "the same flap; rare",
+          "example": "আষাঢ়",
+          "exampleRoman": "ashaṛh",
+          "meaning": "a rainy-season month",
+          "speak": "",
+          "ipa": "ɽɔ"
+        },
+        {
+          "char": "য়",
+          "roman": "yo",
+          "hint": "a light y between vowels",
+          "example": "বিয়ে",
+          "exampleRoman": "biye",
+          "meaning": "wedding",
+          "speak": "",
+          "ipa": "jɔ"
+        },
+        {
+          "char": "ৎ",
+          "roman": "t",
+          "hint": "khanda to: a t with no vowel after it",
+          "example": "হঠাৎ",
+          "exampleRoman": "hoṭhat",
+          "meaning": "suddenly",
+          "speak": "",
+          "ipa": "t̪"
+        },
+        {
+          "char": "কং",
+          "roman": "kong",
+          "hint": "ং anusvara: ng after a vowel",
+          "example": "রং",
+          "exampleRoman": "rong",
+          "meaning": "color",
+          "speak": "",
+          "ipa": "kɔŋ"
+        },
+        {
+          "char": "কঃ",
+          "roman": "koh",
+          "hint": "ঃ bisorgo: doubles the next consonant or adds h",
+          "example": "দুঃখ",
+          "exampleRoman": "dukkho",
+          "meaning": "sorrow",
+          "speak": "",
+          "ipa": "kɔh"
+        },
+        {
+          "char": "কাঁ",
+          "roman": "kã",
+          "hint": "ঁ chandrabindu: makes the vowel nasal",
+          "example": "চাঁদ",
+          "exampleRoman": "chãd",
+          "meaning": "moon",
+          "speak": "",
+          "ipa": "kã"
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "title": "How Bengali script works",
+      "body": "<p>Like Devanagari, the Bengali script is an <i>abugida</i>: every consonant letter already carries a vowel. In Bangla that vowel is a rounded o, so <span lang=\"bn\">ক</span> is ko. Other vowels are written with signs attached to the consonant, and the hasanta (<span lang=\"bn\">ক্</span>) removes the vowel entirely.</p>\n<p>Most letters hang from a headline, the <i>matra</i>, which joins up across a word: <span lang=\"bn\">বাংলা</span>. Some letters, like <span lang=\"bn\">এ ঐ ও ঔ ঙ ঞ ৎ</span>, have no headline, and a few have only half of one.</p>\n<p>The consonants come in the same rows of five as Devanagari, from the throat to the lips. If you already read Hindi, many letters will look like cousins.</p>"
+    },
+    {
+      "title": "The disappearing o",
+      "body": "<p>The built-in o is often not said, especially at the end of a word. The spelling does not tell you; you learn it word by word.</p>\n<table>\n<tr><td lang=\"bn\">কলম</td><td>ko-lo-mo on paper, said kolom (pen)</td></tr>\n<tr><td lang=\"bn\">বাংলা</td><td>said bangla, with no vowel after ং</td></tr>\n</table>\n<p>Sometimes the vowel is said o rather than ɔ, as in the first syllable of <span lang=\"bn\">কলম</span>. The recordings follow the usual pronunciation.</p>"
+    },
+    {
+      "title": "Conjunct letters (juktakkhor)",
+      "body": "<p>Two consonants with no vowel between them are fused into one shape, often stacked one on top of the other:</p>\n<table>\n<tr><td lang=\"bn\">ক্ + ষ = ক্ষ</td><td>said kh, as in <span lang=\"bn\">ক্ষমা</span> (forgiveness)</td></tr>\n<tr><td lang=\"bn\">ন্ + ত = ন্ত</td><td>nt</td></tr>\n<tr><td lang=\"bn\">জ্ + ঞ = জ্ঞ</td><td>said gg, as in <span lang=\"bn\">জ্ঞান</span> (knowledge)</td></tr>\n</table>\n<p>A য after a consonant becomes the small hook <span lang=\"bn\">্য</span> and usually doubles the consonant or changes the vowel: <span lang=\"bn\">ব্যাঙ</span> is byang. A র before a consonant becomes a small stroke on top (<span lang=\"bn\">র্ক</span>), and after one it becomes a small mark below (<span lang=\"bn\">প্র</span>).</p>"
+    },
+    {
+      "title": "Bengali digits",
+      "body": "<p>Bangla has its own digits, still used everywhere from prices to page numbers:</p>\n<table>\n<tr><td lang=\"bn\">০ ১ ২ ৩ ৪</td><td>0 1 2 3 4</td></tr>\n<tr><td lang=\"bn\">৫ ৬ ৭ ৮ ৯</td><td>5 6 7 8 9</td></tr>\n</table>\n<p>Watch out for <span lang=\"bn\">৪</span>, which is 4 even though it looks like an 8.</p>"
+    }
+  ]
+}

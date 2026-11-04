@@ -91,10 +91,11 @@ def variety_ids(pack):
     return out
 
 
-from . import anki, folder, sqlite  # noqa: E402
+from . import anki, folder, sqlite, yomitan  # noqa: E402
 
 FORMATS = {
     "anki": anki,
     "folder": folder,
     "sqlite": sqlite,
+    "yomitan": yomitan,
 }

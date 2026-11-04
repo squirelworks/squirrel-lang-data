@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/squirelworks/squirrel-lang-data/schemas/alphabet.v1.json",
+  "title": "alphabet@1: a script course for SquirrelGo Alphabets",
+  "description": "alphabets/<id>.json: one script's course: how it is shown and spoken, its lessons of characters in teaching order, and its articles.",
+  "type": "object",
+  "required": ["schema", "id", "title", "native", "lang", "langName", "font", "blurb", "writeTip", "lessons", "articles"],
+  "additionalProperties": false,
+  "$defs": {
+    "char": {
+      "description": "One character card. Fields after the last one given are left out; a field in between that doesn't apply is an empty string.",
+      "type": "object",
+      "required": ["char", "roman", "hint", "example", "exampleRoman", "meaning", "speak"],
+      "additionalProperties": false,
+      "properties": {
+        "char": { "description": "The character, or upper and lower case separated by a space (\"Ъ ъ\").", "type": "string", "minLength": 1 },
+        "roman": { "description": "Its romanization (a transliteration for Mongolian, a sound label for Latin).", "type": "string" },
+        "hint": { "description": "Its name and how it sounds.", "type": "string" },
+        "example": { "description": "An example word.", "type": "string" },
+        "exampleRoman": { "description": "The example's romanization.", "type": "string" },
+        "meaning": { "description": "The example's English meaning.", "type": "string" },
+        "speak": { "description": "Text for text-to-speech when the character alone reads badly; empty to speak the character.", "type": "string" },
+        "ipa": { "description": "The character's sound in IPA.", "type": "string" },
+        "exampleLang": { "description": "BCP 47 tag of the example's language, when it isn't the script's (Latin).", "type": "string" },
+        "exampleIpa": { "description": "The example's spoken form in IPA, for scripts with no text-to-speech voice.", "type": "string" }
+      }
+    },
+    "pairs": { "type": "array", "items": { "type": "array", "minItems": 2, "items": { "type": "string" } } }
+  },
+  "properties": {
+    "schema": { "const": "alphabet@1" },
+    "id": { "description": "The script's key; must match the file name, and the stroke set in strokes/ that draws it.", "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "title": { "type": "string", "minLength": 1 },
+    "native": { "description": "The script's name, or a sample, written in it.", "type": "string", "minLength": 1 },
+    "lang": { "description": "BCP 47 tag for text-to-speech and recordings.", "type": "string", "minLength": 2 },
+    "langName": { "type": "string", "minLength": 1 },
+    "dir": { "enum": ["rtl"] },
+    "font": { "description": "CSS font-family list.", "type": "string", "minLength": 1 },
+    "nonJoining": { "description": "Letters that join to the letter before them but never to the one after. Its presence turns on joined letter forms.", "type": "string", "minLength": 1 },
+    "chartFlow": { "description": "Lay the chart out as a flowing row instead of a grid.", "type": "boolean" },
+    "blurb": { "type": "string", "minLength": 1 },
+    "writeTip": { "type": "string", "minLength": 1 },
+    "audio": { "description": "\"ipa\": sounds are recorded from the IPA, since eSpeak NG has no voice for the language.", "enum": ["ipa"] },
+    "voice": { "description": "The eSpeak NG voice used to say IPA.", "type": "string", "minLength": 1 },
+    "bareVowel": { "description": "Where a syllabary's bare vowel sits in the chart.", "enum": ["before"] },
+    "vertical": { "description": "The script is written in vertical columns.", "type": "boolean" },
+    "notes": { "description": "How the course is written and where its values come from, one sentence or line each.", "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "lessons": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["title", "chars"],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "type": "string", "minLength": 1 },
+          "note": { "type": "string", "minLength": 1 },
+          "group": { "description": "Lessons in the same group share a chart.", "type": "string", "minLength": 1 },
+          "cols": { "description": "Chart columns.", "type": "integer" },
+          "forms": { "description": "false leaves the lesson out of the letter forms table.", "const": false },
+          "chars": { "type": "array", "minItems": 1, "items": { "anyOf": [{ "$ref": "#/$defs/char" }, { "description": "An empty chart cell.", "type": "null" }] } }
+        }
+      }
+    },
+    "builder": {
+      "description": "A syllable block builder (Hangul): the letters that can start, sit in the middle of and end a block, each [letter, romanization].",
+      "type": "object",
+      "required": ["title", "note", "initials", "medials", "finals"],
+      "additionalProperties": false,
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "note": { "type": "string", "minLength": 1 },
+        "initials": { "$ref": "#/$defs/pairs" },
+        "medials": { "$ref": "#/$defs/pairs" },
+        "finals": { "$ref": "#/$defs/pairs" }
+      }
+    },
+    "articles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "body"],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "type": "string", "minLength": 1 },
+          "body": { "description": "HTML: paragraphs, lists, tables and spans with a lang attribute.", "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

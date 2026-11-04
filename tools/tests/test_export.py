@@ -161,11 +161,39 @@ class Export(unittest.TestCase):
         self.assertIsNone(packs.FORMATS["anki"].write(pack, self.out))
         self.assertEqual(packs.FORMATS["anki"].check(pack, None, self.root), [])
 
+    def test_yomitan(self):
+        fmt = packs.FORMATS["yomitan"]
+        pack = packs.load("greek", self.root)
+        dest = fmt.write(pack, self.out)
+        self.assertEqual(fmt.check(pack, dest, self.root), [])
+        with zipfile.ZipFile(dest) as z:
+            index = json.loads(z.read("index.json"))
+            terms = json.loads(z.read("term_bank_1.json"))
+            tags = {t[0] for t in json.loads(z.read("tag_bank_1.json"))}
+        self.assertEqual((index["format"], index["targetLanguage"]), (3, "en"))
+        self.assertIn("CC BY-SA 4.0", index["attribution"])
+        self.assertEqual(terms[1], ["ψωμί", "psomí", "food", "", 2, ["bread", "Has\ta tab."], 2, "cefr-A1 core"])
+        self.assertEqual(terms[2][7], "koine")  # a variety's word is tagged with the variety
+        self.assertTrue({"food", "greetings", "cefr-A1", "core", "koine"} <= tags)
+        self.assertEqual(fmt.write(pack, self.out).read_bytes(), dest.read_bytes())
+
+    def test_yomitan_japanese_readings(self):
+        from packs import yomitan
+        pack = {"id": "japanese", "meta": {"id": "japanese"}, "varieties": [], "content": [{
+            "kind": "vocab", "rel": "vocab.jsonl", "data": ({"decks": [{"id": "n1"}]}, [
+                {"id": "n1/嗚呼", "deck": "n1", "word": "嗚呼", "reading": "ā", "meaning": "ah; alas", "note": "ああ"},
+                {"id": "n1/はい", "deck": "n1", "word": "はい", "reading": "hai", "meaning": "yes"},
+                {"id": "n1/上", "deck": "n1", "word": "上", "reading": "ue", "meaning": "on", "note": "Also かみ."}])}]}
+        rows, _ = yomitan.terms(pack)
+        self.assertEqual([r[1] for r in rows], ["ああ", "", ""])
+        self.assertEqual(rows[0][5], ["ah", "alas", "romaji: ā"])
+        self.assertEqual(rows[2][5], ["on", "romaji: ue", "Also かみ."])
+
     def test_cli(self):
         with contextlib.redirect_stdout(io.StringIO()) as out:
             self.assertEqual(export.main(["--list"]), 0)
             self.assertEqual(export.main(["no-such-language"]), 2)
-        self.assertIn("anki, folder, sqlite", out.getvalue())
+        self.assertIn("anki, folder, sqlite, yomitan", out.getvalue())
 
 
 if __name__ == "__main__":
