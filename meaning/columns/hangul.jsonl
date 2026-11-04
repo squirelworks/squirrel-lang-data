@@ -19,3 +19,72 @@
 {"sentence": "bus-school", "t": [["버스", "beoseu", "bus"], ["-로", "ro", "@means"], ["학교", "hakgyo", "school"], ["-에", "e", "@direction"], ["가요", "gayo", "go"]], "implied": ["i"], "end": "."}
 {"sentence": "where-going", "t": [["어디", "eodi", "where"], ["-에", "e", "@direction"], ["가요", "gayo", "go"]], "implied": ["you"], "end": "?"}
 {"sentence": "going-home", "t": [["집", "jip", "home"], ["-에", "e", "@direction"], ["가요", "gayo", "go"]], "implied": ["i"], "end": "."}
+{"sentence": "name-tanaka", "t": [["제", "je", "i"], ["이름", "ireum", "name"], ["-은", "eun", "@topic"], ["다나카", "Danaka", "tanaka"], ["-예요", "yeyo", "@copula"]], "end": "."}
+{"sentence": "name-anna", "t": [["제", "je", "i"], ["이름", "ireum", "name"], ["-은", "eun", "@topic"], ["안나", "Anna", "anna"], ["-예요", "yeyo", "@copula"]], "end": "."}
+{"sentence": "name-ravi", "t": [["제", "je", "i"], ["이름", "ireum", "name"], ["-은", "eun", "@topic"], ["라비", "Rabi", "ravi"], ["-예요", "yeyo", "@copula"]], "end": "."}
+{"sentence": "name-sami", "t": [["제", "je", "i"], ["이름", "ireum", "name"], ["-은", "eun", "@topic"], ["사미", "Sami", "sami"], ["-예요", "yeyo", "@copula"]], "end": "."}
+{"sentence": "name-wang-ming", "t": [["제", "je", "i"], ["이름", "ireum", "name"], ["-은", "eun", "@topic"], ["왕밍", "Wang Ming", "wang-ming"], ["-이에요", "ieyo", "@copula"]], "end": "."}
+{"sentence": "your-name", "t": [["이름", "ireum", "name"], ["-이", "i", "@subject"], ["뭐", "mwo", "what"], ["-예요", "yeyo", "@copula"]], "implied": ["you"], "end": "?"}
+{"sentence": "hello", "t": [["안녕하세요", "annyeonghaseyo", "hello"]], "end": "."}
+{"sentence": "nice-to-meet-you", "t": [["반갑습니다", "bangapseumnida", "nice-to-meet-you"]], "end": "."}
+{"sentence": "good-morning", "t": [["좋은", "joeun", "good"], ["아침", "achim", "morning"], ["-이에요", "ieyo", "@copula"]], "end": "."}
+{"sentence": "thank-you-very-much", "t": [["정말", "jeongmal", "very-much"], ["감사합니다", "gamsahamnida", "thanks"]], "end": "."}
+{"sentence": "success", "t": [["성공", "seonggong", "success"]], "end": "!"}
+{"sentence": "dont-understand", "t": [["이해", "ihae", "understand"], ["못해요", "motaeyo", "not"]], "implied": ["i"], "end": "."}
+{"sentence": "speak-english", "t": [["영어", "yeong-eo", "english"], ["-를", "reul", "@object"], ["하세요", "haseyo", "speak"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-chinese", "t": [["중국어", "junggugeo", "chinese"], ["-를", "reul", "@object"], ["하세요", "haseyo", "speak"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-arabic", "t": [["아랍어", "arabeo", "arabic"], ["-를", "reul", "@object"], ["하세요", "haseyo", "speak"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-klingon", "t": [["클링온어", "keullingoneo", "klingon"], ["-를", "reul", "@object"], ["하세요", "haseyo", "speak"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-hindi", "t": [["힌디어", "hindieo", "hindi"], ["-를", "reul", "@object"], ["해요", "haeyo", "speak"]], "implied": ["i"], "end": "."}
+{"sentence": "like-sushi", "t": [["저", "jeo", "i"], ["-는", "neun", "@topic"], ["초밥", "chobap", "sushi"], ["-을", "eul", "@object"], ["좋아해요", "joahaeyo", "like"]], "end": "."}
+{"sentence": "like-tea", "t": [["저", "jeo", "i"], ["-는", "neun", "@topic"], ["차", "cha", "tea"], ["-를", "reul", "@object"], ["좋아해요", "joahaeyo", "like"]], "end": "."}
+{"sentence": "love-you", "t": [["사랑해요", "saranghaeyo", "love"]], "implied": ["i", "you"], "end": "."}
+{"sentence": "my-friend", "t": [["그", "geu", "he"], ["-는", "neun", "@topic"], ["제", "je", "i"], ["친구", "chingu", "friend"], ["-예요", "yeyo", "@copula"]], "end": "."}
+{"sentence": "who-is-he", "t": [["그", "geu", "he"], ["-는", "neun", "@topic"], ["누구", "nugu", "who"], ["-예요", "yeyo", "@copula"]], "end": "?"}
+{"sentence": "where-live", "t": [["어디", "eodi", "where"], ["-에", "e", "@place"], ["살아요", "sarayo", "live"]], "implied": ["you"], "end": "?"}
+{"sentence": "from-egypt", "t": [["저", "jeo", "i"], ["-는", "neun", "@topic"], ["이집트", "ijipteu", "egypt"], ["출신", "chulsin", "from"], ["-이에요", "ieyo", "@copula"]], "end": "."}
+{"sentence": "we-are-klingons", "t": [["우리", "uri", "we"], ["-는", "neun", "@topic"], ["클링온", "keullingon", "klingon"], ["-이에요", "ieyo", "@copula"]], "end": "."}
+{"sentence": "this-is-book", "t": [["이것", "igeot", "this"], ["-은", "eun", "@topic"], ["책", "chaek", "book"], ["-이에요", "ieyo", "@copula"]], "end": "."}
+{"sentence": "this-is-my-book", "t": [["이것", "igeot", "this"], ["-은", "eun", "@topic"], ["제", "je", "i"], ["책", "chaek", "book"], ["-이에요", "ieyo", "@copula"]], "end": "."}
+{"sentence": "drink-tea", "t": [["차", "cha", "tea"], ["-를", "reul", "@object"], ["마셔요", "masyeoyo", "drink"]], "implied": ["i"], "end": "."}
+{"sentence": "want-coffee", "t": [["커피", "keopi", "coffee"], ["-를", "reul", "@object"], ["원해요", "wonhaeyo", "want"]], "implied": ["i"], "end": "."}
+{"sentence": "read-book", "t": [["책", "chaek", "book"], ["-을", "eul", "@object"], ["읽어요", "ilgeoyo", "read"]], "implied": ["i"], "end": "."}
+{"sentence": "eat-rice", "t": [["우리", "uri", "we"], ["-는", "neun", "@topic"], ["밥", "bap", "rice"], ["-을", "eul", "@object"], ["먹어요", "meogeoyo", "eat"]], "end": "."}
+{"sentence": "eat-food", "t": [["음식", "eumsik", "food"], ["-을", "eul", "@object"], ["먹어요", "meogeoyo", "eat"]], "implied": ["i"], "end": "."}
+{"sentence": "lunch-restaurant", "t": [["식당", "sikdang", "restaurant"], ["-에서", "eseo", "@place"], ["점심", "jeomsim", "lunch"], ["-을", "eul", "@object"], ["먹어요", "meogeoyo", "eat"]], "implied": ["i"], "end": "."}
+{"sentence": "hot-today", "t": [["오늘", "oneul", "today"], ["-은", "eun", "@topic"], ["더워요", "deowoyo", "hot"]], "end": "."}
+{"sentence": "weather-hot", "t": [["오늘", "oneul", "today"], ["-은", "eun", "@topic"], ["날씨", "nalssi", "weather"], ["-가", "ga", "@subject"], ["더워요", "deowoyo", "hot"]], "end": "."}
+{"sentence": "weather-good", "t": [["오늘", "oneul", "today"], ["-은", "eun", "@topic"], ["날씨", "nalssi", "weather"], ["-가", "ga", "@subject"], ["좋아요", "joayo", "good"]], "end": "."}
+{"sentence": "raining", "t": [["비", "bi", "rain"], ["-가", "ga", "@subject"], ["와요", "wayo", "@happen"]], "end": "."}
+{"sentence": "monday", "t": [["오늘", "oneul", "today"], ["-은", "eun", "@topic"], ["월요일", "woryoil", "monday"], ["-이에요", "ieyo", "@copula"]], "end": "."}
+{"sentence": "what-time", "t": [["몇", "myeot", "what"], ["시", "si", "time"], ["-예요", "yeyo", "@copula"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["지금", "jigeum", "now"], ["몇", "myeot", "what"], ["시", "si", "time"], ["-예요", "yeyo", "@copula"]], "end": "?"}
+{"sentence": "have-cat", "t": [["저", "jeo", "i"], ["-는", "neun", "@topic"], ["고양이", "goyang-i", "cat"], ["-가", "ga", "@subject"], ["있어요", "isseoyo", "have"]], "end": "."}
+{"sentence": "book-on-table", "t": [["탁자", "takja", "table"], ["위", "wi", "on"], ["-에", "e", "@place"], ["책", "chaek", "book"], ["-이", "i", "@subject"], ["있어요", "isseoyo", "exist"]], "end": "."}
+{"sentence": "house-big", "t": [["집", "jip", "house"], ["-이", "i", "@subject"], ["커요", "keoyo", "big"]], "end": "."}
+{"sentence": "car-new", "t": [["새", "sae", "new"], ["자동차", "jadongcha", "car"], ["-예요", "yeyo", "@copula"]], "end": "."}
+{"sentence": "food-tasty", "t": [["음식", "eumsik", "food"], ["-이", "i", "@subject"], ["아주", "aju", "very"], ["맛있어요", "masisseoyo", "delicious"]], "end": "."}
+{"sentence": "head-hurts", "t": [["머리", "meori", "head"], ["-가", "ga", "@subject"], ["아파요", "apayo", "hurt"]], "implied": ["i"], "end": "."}
+{"sentence": "hungry", "t": [["배고파요", "baegopayo", "hungry"]], "implied": ["i"], "end": "."}
+{"sentence": "wait-moment", "t": [["잠깐만", "jamkkanman", "moment"], ["기다려", "gidaryeo", "wait"], ["주세요", "juseyo", "please"]], "end": "."}
+{"sentence": "sit-down", "t": [["앉으세요", "anjeuseyo", "sit+please"]], "end": "."}
+{"sentence": "where-station", "t": [["역", "yeok", "station"], ["-이", "i", "@subject"], ["어디", "eodi", "where"], ["-예요", "yeyo", "@copula"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["호텔", "hotel", "hotel"], ["-이", "i", "@subject"], ["어디", "eodi", "where"], ["-예요", "yeyo", "@copula"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["이거", "igeo", "this"], ["얼마", "eolma", "how-much"], ["-예요", "yeyo", "@copula"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["가격", "gagyeok", "cost"], ["-이", "i", "@subject"], ["얼마", "eolma", "how-much"], ["-예요", "yeyo", "@copula"]], "end": "?"}
+{"sentence": "bill-please", "t": [["계산서", "gyesanseo", "bill"], ["주세요", "juseyo", "please"]], "end": "."}
+{"sentence": "go-tokyo", "t": [["도쿄", "Dokyo", "tokyo"], ["-에", "e", "@direction"], ["가고", "gago", "go"], ["싶어요", "sipeoyo", "want"]], "implied": ["i"], "end": "."}
+{"sentence": "came-train", "t": [["기차", "gicha", "train"], ["-로", "ro", "@means"], ["왔어요", "wasseoyo", "come+@past"]], "implied": ["i"], "end": "."}
+{"sentence": "we-going-home", "t": [["우리", "uri", "we"], ["-는", "neun", "@topic"], ["집", "jip", "home"], ["-에", "e", "@direction"], ["가요", "gayo", "go"]], "end": "."}
+{"sentence": "lets-go", "t": [["갑시다", "gapsida", "let-us+go"]], "end": "!"}
+{"sentence": "live-moscow", "t": [["저", "jeo", "i"], ["-는", "neun", "@topic"], ["모스크바", "Moseukeuba", "moscow"], ["-에", "e", "@place"], ["살아요", "sarayo", "live"]], "end": "."}
+{"sentence": "live-cairo", "t": [["저", "jeo", "i"], ["-는", "neun", "@topic"], ["카이로", "Kairo", "cairo"], ["-에", "e", "@place"], ["살아요", "sarayo", "live"]], "end": "."}
+{"sentence": "live-beijing", "t": [["저", "jeo", "i"], ["-는", "neun", "@topic"], ["베이징", "Beijing", "beijing"], ["-에", "e", "@place"], ["살아요", "sarayo", "live"]], "end": "."}
+{"sentence": "i-sleep", "t": [["저", "jeo", "i"], ["-는", "neun", "@topic"], ["자요", "jayo", "sleep"]], "end": "."}
+{"sentence": "i-fight", "t": [["저", "jeo", "i"], ["-는", "neun", "@topic"], ["싸워요", "ssawoyo", "fight"]], "end": "."}
+{"sentence": "we-fight", "t": [["우리", "uri", "we"], ["-는", "neun", "@topic"], ["싸워요", "ssawoyo", "fight"]], "end": "."}
+{"sentence": "sleep-command", "t": [["자라", "jara", "sleep+@command"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["아이", "ai", "child"], ["-가", "ga", "@subject"], ["자요", "jayo", "sleep"]], "end": "."}
+{"sentence": "officer-sees-child", "t": [["장교", "janggyo", "officer"], ["-가", "ga", "@subject"], ["아이", "ai", "child"], ["-를", "reul", "@object"], ["봐요", "bwayo", "see"]], "end": "."}
+{"sentence": "captain-sees-ship", "t": [["선장", "seonjang", "captain"], ["-이", "i", "@subject"], ["배", "bae", "ship"], ["-를", "reul", "@object"], ["봐요", "bwayo", "see"]], "end": "."}
+{"sentence": "i-see-ship", "t": [["저", "jeo", "i"], ["-는", "neun", "@topic"], ["배", "bae", "ship"], ["-를", "reul", "@object"], ["봐요", "bwayo", "see"]], "end": "."}
