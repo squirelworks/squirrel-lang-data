@@ -1,0 +1,43 @@
+{"schema": "columns@1", "language": "greek", "notes": ["Modern Greek column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. Verb endings mark the person, so \"I\" and \"you\" are often implied. The Greek question mark is \";\". Sources: forms match languages/greek/vocab.js and the Modern Greek grammar pack; everyday phrases from those decks (γεια σου, καλημέρα, ευχαριστώ, παρακαλώ, δεν καταλαβαίνω, μιλάτε αγγλικά;, πού είναι η τουαλέτα;)."], "sep": " "}
+{"sentence": "i-am-student", "t": [["Είμαι", "íme", "@copula"], ["φοιτητής", "fititís", "student"]], "implied": ["i"], "end": "."}
+{"sentence": "name-anna", "t": [["Με", "me", "i"], ["λένε", "léne", "name"], ["Άννα", "Ánna", "anna"]], "end": "."}
+{"sentence": "hello", "t": [["Γεια σου", "giá sou", "hello"]], "end": "."}
+{"sentence": "nice-to-meet-you", "t": [["Χαίρω πολύ", "chéro polí", "nice-to-meet-you"]], "end": "."}
+{"sentence": "good-morning", "t": [["Καλημέρα", "kaliméra", "good+morning"]], "end": "."}
+{"sentence": "thank-you", "t": [["Ευχαριστώ", "efcharistó", "thanks"]], "end": "."}
+{"sentence": "thank-you-very-much", "t": [["Ευχαριστώ", "efcharistó", "thanks"], ["πολύ", "polí", "very-much"]], "end": "."}
+{"sentence": "dont-understand", "t": [["Δεν", "den", "not"], ["καταλαβαίνω", "katalavéno", "understand"]], "implied": ["i"], "end": "."}
+{"sentence": "dont-know", "t": [["Δεν", "den", "not"], ["ξέρω", "xéro", "know"]], "implied": ["i"], "end": "."}
+{"sentence": "speak-english", "t": [["Μιλάτε", "miláte", "speak"], ["αγγλικά", "angliká", "english"]], "implied": ["you"], "end": ";"}
+{"sentence": "love-you", "t": [["Σε", "se", "you"], ["αγαπάω", "agapáo", "love"]], "implied": ["i"], "end": "."}
+{"sentence": "my-friend", "t": [["Αυτός", "aftós", "he"], ["είναι", "íne", "@copula"], ["ο", "o", "@the"], ["φίλος", "fílos", "friend"], ["μου", "mu", "i"]], "end": "."}
+{"sentence": "who-is-he", "t": [["Ποιος", "piós", "who"], ["είναι", "íne", "@copula"], ["αυτός", "aftós", "he"]], "end": ";"}
+{"sentence": "where-live", "t": [["Πού", "poú", "where"], ["μένεις", "ménis", "live"]], "implied": ["you"], "end": ";"}
+{"sentence": "from-egypt", "t": [["Είμαι", "íme", "@copula"], ["από", "apó", "from"], ["την", "tin", "@the"], ["Αίγυπτο", "Éyipto", "egypt"]], "implied": ["i"], "end": "."}
+{"sentence": "this-is-book", "t": [["Αυτό", "aftó", "this"], ["είναι", "íne", "@copula"], ["ένα", "éna", "@one"], ["βιβλίο", "vivlío", "book"]], "end": "."}
+{"sentence": "this-is-my-book", "t": [["Αυτό", "aftó", "this"], ["είναι", "íne", "@copula"], ["το", "to", "@the"], ["βιβλίο", "vivlío", "book"], ["μου", "mu", "i"]], "end": "."}
+{"sentence": "drink-water", "t": [["Πίνω", "píno", "drink"], ["νερό", "neró", "water"]], "implied": ["i"], "end": "."}
+{"sentence": "drink-tea", "t": [["Πίνω", "píno", "drink"], ["τσάι", "tsái", "tea"]], "implied": ["i"], "end": "."}
+{"sentence": "want-coffee", "t": [["Θέλω", "thélo", "want"], ["καφέ", "kafé", "coffee"]], "implied": ["i"], "end": "."}
+{"sentence": "read-book", "t": [["Διαβάζω", "diavázo", "read"], ["ένα", "éna", "@one"], ["βιβλίο", "vivlío", "book"]], "implied": ["i"], "end": "."}
+{"sentence": "cold-today", "t": [["Σήμερα", "símera", "today"], ["κάνει", "káni", "@happen"], ["κρύο", "krío", "cold"]], "end": "."}
+{"sentence": "hot-today", "t": [["Σήμερα", "símera", "today"], ["κάνει", "káni", "@happen"], ["ζέστη", "zésti", "hot"]], "end": "."}
+{"sentence": "have-cat", "t": [["Έχω", "écho", "have"], ["μια", "mia", "@one"], ["γάτα", "gáta", "cat"]], "implied": ["i"], "end": "."}
+{"sentence": "what-time", "t": [["Τι", "ti", "what"], ["ώρα", "óra", "time"], ["είναι", "íne", "@copula"]], "end": ";"}
+{"sentence": "house-big", "t": [["Το", "to", "@the"], ["σπίτι", "spíti", "house"], ["είναι", "íne", "@copula"], ["μεγάλο", "megálo", "big"]], "end": "."}
+{"sentence": "hungry", "t": [["Πεινάω", "pináo", "hungry"]], "implied": ["i"], "end": "."}
+{"sentence": "give-water", "t": [["Δώσε", "dóse", "give"], ["μου", "mu", "i"], ["νερό", "neró", "water"], ["παρακαλώ", "parakaló", "please"]], "end": "."}
+{"sentence": "sit-down", "t": [["Κάτσε", "kátse", "sit"], ["παρακαλώ", "parakaló", "please"]], "end": "."}
+{"sentence": "delicious", "t": [["Είναι", "íne", "@copula"], ["νόστιμο", "nóstimo", "delicious"]], "end": "."}
+{"sentence": "where-station", "t": [["Πού", "poú", "where"], ["είναι", "íne", "@copula"], ["ο", "o", "@the"], ["σταθμός", "stathmós", "station"]], "end": ";"}
+{"sentence": "where-toilet", "t": [["Πού", "poú", "where"], ["είναι", "íne", "@copula"], ["η", "i", "@the"], ["τουαλέτα", "tualéta", "toilet"]], "end": ";"}
+{"sentence": "where-hotel", "t": [["Πού", "poú", "where"], ["είναι", "íne", "@copula"], ["το", "to", "@the"], ["ξενοδοχείο", "xenodochío", "hotel"]], "end": ";"}
+{"sentence": "how-much-this", "t": [["Πόσο", "póso", "how-much"], ["κάνει", "káni", "@happen"], ["αυτό", "aftó", "this"]], "end": ";"}
+{"sentence": "how-much-is-it", "t": [["Πόσο", "póso", "how-much"], ["κάνει", "káni", "@happen"]], "end": ";"}
+{"sentence": "bill-please", "t": [["Τον", "ton", "@the"], ["λογαριασμό", "logariasmó", "bill"], ["παρακαλώ", "parakaló", "please"]], "end": "."}
+{"sentence": "go-school", "t": [["Πάω", "páo", "go"], ["στο", "sto", "@direction"], ["σχολείο", "scholío", "school"]], "implied": ["i"], "end": "."}
+{"sentence": "going-home", "t": [["Πάω", "páo", "go"], ["σπίτι", "spíti", "home"]], "implied": ["i"], "end": "."}
+{"sentence": "we-going-home", "t": [["Πάμε", "páme", "go"], ["σπίτι", "spíti", "home"]], "implied": ["we"], "end": "."}
+{"sentence": "where-going", "t": [["Πού", "poú", "where"], ["πας", "pas", "go"]], "implied": ["you"], "end": ";"}
+{"sentence": "i-sleep", "t": [["Κοιμάμαι", "kimáme", "sleep"]], "implied": ["i"], "end": "."}
+{"sentence": "child-sleeps", "t": [["Το", "to", "@the"], ["παιδί", "pedí", "child"], ["κοιμάται", "kimáte", "sleep"]], "end": "."}

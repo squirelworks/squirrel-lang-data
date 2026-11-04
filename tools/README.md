@@ -28,3 +28,6 @@ python3 tools/fmt.py        # format every content file in place
 | `migrate/lsd_grammar.py` | The one-time conversion of LanguageStudentDesk's `grammar.js` courses to `grammar@1` (needs node). |
 | `gen_reference.py` | Generates LanguageStudentDesk's `languages/<id>/reference.json` cards. `--check` reports drift. |
 | `migrate/lsd_reference.py` | The one-time conversion of LanguageStudentDesk's reference cards to `reference@1`. |
+| `check_meaning.py` | The meaning matrix: meaning and sentence ids are unique, sentences and phrasings point at content meanings, and every language column renders known sentences with known meanings, carrying exactly each sentence's meanings. Reports unused meanings and sentences no column renders yet. |
+| `gen_meaning.py` | Generates LanguageStudentDesk's `translation-learner/data/matrix.js` and one `<language>.js` column per file in `meaning/columns/`. `--check` reports drift. |
+| `migrate/lsd_meaning.py` | The one-time conversion of LanguageStudentDesk's Translation Learner matrix and columns to `meaning@1`, `sentences@1`, `phrasings@1` and `columns@1` (needs node). |
