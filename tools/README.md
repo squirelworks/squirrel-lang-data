@@ -17,3 +17,5 @@ python3 tools/fmt.py        # format every content file in place
 | `fmt.py` | Formats content files: keys in schema order, two-space indent, short lists on one line, JSONL one entry per line. |
 | `schema.py` | The JSON Schema validator the checks use. It rejects any keyword it doesn't support, so a schema can't be skipped silently. |
 | `lib.py` | Shared helpers. |
+| `gen_registry.py` | Generates LanguageStudentDesk's `languages/registry.js` and each `languages/<id>/meta.json` from the language meta here. `--check` reports drift. |
+| `migrate/lsd_meta.py` | The one-time conversion of LanguageStudentDesk's language meta to `meta@1`, kept so the move can be repeated and checked. |
