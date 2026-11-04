@@ -10,6 +10,8 @@
   following parents always ends at the language.
 - A language with varieties lists them all, alphabetically, under "varieties",
   and lists nothing that isn't there.
+- Every marker named under "markers" (besides "default") is a grammar meaning
+  in meaning/meanings.jsonl.
 """
 import json
 import sys
@@ -27,12 +29,22 @@ def load(path, problems, root):
         return None
 
 
+def grammar_meanings(root):
+    """Ids of the grammar meanings (kind "grammar") in meaning/meanings.jsonl."""
+    path = root / "meaning" / "meanings.jsonl"
+    if not path.is_file():
+        return set()
+    lines = path.read_text(encoding="utf-8").splitlines()[1:]
+    return {m["id"] for m in map(json.loads, filter(None, lines)) if m.get("kind") == "grammar"}
+
+
 def check(root=lib.ROOT):
     problems = []
     langs = root / "languages"
     if not langs.is_dir():
         return problems
     seen = {}
+    grammar = grammar_meanings(root)
 
     def claim(id_, rel):
         if id_ in seen:
@@ -54,6 +66,9 @@ def check(root=lib.ROOT):
         if meta.get("id") != folder.name:
             problems.append(f"{rel}: id {meta.get('id')!r} should be {folder.name!r}, its folder's name")
         claim(meta.get("id"), str(rel))
+        for marker in sorted(set(meta.get("markers") or {}) - {"default"}):
+            if marker not in grammar:
+                problems.append(f"{rel}: markers names {marker!r}, which isn't a grammar meaning in meaning/meanings.jsonl")
 
         vdir = folder / "varieties"
         found = sorted(p.name for p in vdir.iterdir() if p.is_dir()) if vdir.is_dir() else []
