@@ -30,3 +30,6 @@ python3 tools/fmt.py        # format every content file in place
 | `importers/kana.py` | Kana to Hepburn romaji, for importers. |
 | `gen_reference.py` | Generates LanguageStudentDesk's `languages/<id>/reference.json` cards. `--check` reports drift. |
 | `migrate/lsd_reference.py` | The one-time conversion of LanguageStudentDesk's reference cards to `reference@1`. |
+| `export.py` | Exports language packs (see the repo README): every language, or the ones named, in every format or the ones given with `--format`, into `build/packs/` or `--out`. |
+| `packs/` | The pack formats. `packs/__init__.py` reads a language folder once, and each format module writes it out and checks what it wrote. |
+| `check_export.py` | Exports every language in every format into a temporary folder: every repo file is in the pack unchanged, each format's own check passes, and two exports are identical. |
