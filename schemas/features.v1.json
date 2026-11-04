@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "features.v1.json",
+  "title": "Feature switches",
+  "description": "Every user-facing feature switch, defined once for every app. A level turns on every feature whose level is at or below it. Content that needs a feature names it with \"requires\": \"<feature id>\", so menus can filter themselves. A new feature starts off by default (level more or everything) unless the user decides otherwise, and apps list features newest first in Customize, by \"added\".",
+  "type": "object",
+  "required": ["schema", "levels", "defaultLevel", "features", "featured", "text"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": "features@1" },
+    "levels": {
+      "description": "The Settings levels, from least to most.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "description"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+          "label": { "type": "string", "minLength": 1 },
+          "description": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "defaultLevel": { "type": "string", "description": "The id of the level a new user starts at." },
+    "features": {
+      "description": "One entry per switch, sorted by id.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "description", "level", "added"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+          "label": { "type": "string", "minLength": 1 },
+          "description": { "type": "string", "minLength": 1 },
+          "level": { "type": "string", "description": "The lowest level that turns this feature on." },
+          "added": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+        }
+      }
+    },
+    "featured": {
+      "description": "Language ids suggested on the first-run welcome card, in display order. Apps leave off any id that isn't a shipped language.",
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" }
+    },
+    "text": {
+      "description": "User-facing strings shared by every app's menu and Settings.",
+      "type": "object",
+      "required": ["notice", "welcomeTitle", "welcomeBody", "whatsInApp", "customize", "custom"],
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    }
+  }
+}
