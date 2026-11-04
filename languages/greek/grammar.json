@@ -16,16 +16,19 @@
     "  with να, and aorist (perfective past) vs present.",
     "- In-repo languages/greek/reference.json and vocab.js — same Desk pack lemmas",
     "  and romanization style (accent on the stressed vowel). Lessons 1–6 unchanged;",
-    "  7–12 deepen the same seam (possessives, object clitics, έχω, θα, να, aorist)."
+    "  7–12 deepen the same seam (possessives, object clitics, έχω, θα, να, aorist).",
+    "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
+    "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced."
   ],
   "title": "Greek first grammar",
-  "intro": "Modern Greek marks the subject on the verb, so “I” and “you” are usually left out. Every noun is masculine, feminine or neuter, and the article in front of it shows which, and changes when the noun is the object. These lessons cover “to be”, the article and gender, the present tense, saying no and asking questions, the object form, plurals, possessives, weak object pronouns, “to have”, the future with θα, wanting and ability with να, and the simple past. The romanization follows modern pronunciation, with an accent on the stressed vowel.",
+  "intro": "Modern Greek marks the subject on the verb, so “I” and “you” are usually left out. Every noun is masculine, feminine or neuter, and the article in front of it shows which, and changes when the noun is the object. These lessons cover “to be”, the article and gender, the present tense, saying no and asking questions, the object form, plurals, possessives, weak object pronouns, “to have”, the future with θα, wanting and ability with να, and the simple past. The romanization follows modern pronunciation, with an accent on the stressed vowel. The CEFR level after each point (A1 to C2) is an estimate, and a range like A2–B1 means it often comes up at both.",
   "lessons": [
     {
       "id": "eimai",
       "title": "Είμαι, είσαι, είναι — “to be”",
       "particle": "είμαι",
-      "summary": "The verb “to be”, and why Greek leaves out “I” and “you”.",
+      "summary": "The verb “to be”, and why Greek leaves out “I” and “you”. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "The ending of the verb already says who: <b>είμαι</b> “I am”, <b>είσαι</b> “you are”, <b>είναι</b> “he, she, it is”. So εγώ (I) and εσύ (you) are only added for emphasis.",
@@ -99,7 +102,8 @@
       "id": "articles",
       "title": "Ο, η, το — the article and gender",
       "particle": "ο η το",
-      "summary": "Three genders, each with its own word for “the”, and the endings that give them away.",
+      "summary": "Three genders, each with its own word for “the”, and the endings that give them away. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "“The” is <b>ο</b> before a masculine noun, <b>η</b> before a feminine one and <b>το</b> before a neuter one. The ending is a strong clue: masculine nouns usually end in <b>-ος, -ας, -ης</b>, feminine in <b>-α, -η</b>, neuter in <b>-ο, -ι, -μα</b>.",
@@ -173,7 +177,8 @@
       "id": "present",
       "title": "The present tense",
       "particle": "-ω -εις -ει",
-      "summary": "Six endings that say who does it, in the two main verb groups.",
+      "summary": "Six endings that say who does it, in the two main verb groups. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Most verbs end in <b>-ω</b>. Keep the stem and change the ending: <b>-ω</b> (I), <b>-εις</b> (you), <b>-ει</b> (he/she), <b>-ουμε</b> (we), <b>-ετε</b> (you all), <b>-ουν</b> (they). For γράφω, to write: γράφω, γράφεις, γράφει, γράφουμε, γράφετε, γράφουν.",
@@ -242,7 +247,8 @@
       "id": "den-questions",
       "title": "Δεν, and asking questions",
       "particle": "δεν ;",
-      "summary": "Put δεν before the verb to say no; a question needs only a rising voice and a “;”.",
+      "summary": "Put δεν before the verb to say no; a question needs only a rising voice and a “;”. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "To make a verb negative, put <b>δεν</b> right before it. The word order does not change.",
@@ -316,7 +322,8 @@
       "id": "accusative",
       "title": "The object: τον, την, το",
       "particle": "τον την",
-      "summary": "When a noun is the object, or comes after a preposition, its article and ending change.",
+      "summary": "When a noun is the object, or comes after a preposition, its article and ending change. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "The object of a verb takes the accusative. The article changes: <b>ο → τον</b>, <b>η → την</b>, and <b>το</b> stays. Masculine nouns drop their final -ς: ο φίλος → τον φίλο, ο άντρας → τον άντρα.",
@@ -390,7 +397,8 @@
       "id": "plural",
       "title": "Plurals: οι and τα",
       "particle": "οι τα",
-      "summary": "Masculine and feminine plurals take οι; neuter plurals take τα.",
+      "summary": "Masculine and feminine plurals take οι; neuter plurals take τα. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "“The” in the plural is <b>οι</b> for masculine and feminine nouns and <b>τα</b> for neuter ones. Common endings: -ος → <b>-οι</b>, -ας and -ης → <b>-ες</b>, -α and -η → <b>-ες</b>, -ο → <b>-α</b>, -ι → <b>-ια</b>, -μα → <b>-ματα</b>.",
@@ -464,7 +472,8 @@
       "id": "possessives",
       "title": "Μου, σου, του — mine, yours, his",
       "particle": "μου σου του",
-      "summary": "Little words after the noun say whose it is.",
+      "summary": "Little words after the noun say whose it is. (about A1)",
+      "level": "beginner",
       "sections": [
         {
           "p": "Possession rides after the noun: το σπίτι <b>μου</b> “my house”. The set is <b>μου</b> (my), <b>σου</b> (your, one person), <b>του</b> (his / its), <b>της</b> (her). They do not change with the gender of the thing owned.",
@@ -555,7 +564,8 @@
       "id": "object-clitics",
       "title": "Με, σε, τον — me, you, him",
       "particle": "με σε τον",
-      "summary": "Short object pronouns sit right before the verb.",
+      "summary": "Short object pronouns sit right before the verb. (about A1–A2)",
+      "level": "beginner",
       "sections": [
         {
           "p": "When the object is a pronoun, use the weak forms before the verb: <b>με</b> (me), <b>σε</b> (you, one person), <b>τον</b> (him), <b>την</b> (her), <b>το</b> (it). So Με λένε Νίκο “They call me Nikos”.",
@@ -631,7 +641,8 @@
       "id": "echo",
       "title": "Έχω — “to have”",
       "particle": "έχω",
-      "summary": "Six endings for “have”, and how it differs from είμαι.",
+      "summary": "Six endings for “have”, and how it differs from είμαι. (about A1)",
+      "level": "beginner",
       "sections": [
         {
           "p": "<b>Έχω</b> means “I have”. The endings match the present group you already know: έχω, έχεις, έχει, έχουμε, έχετε, έχουν. Use it for things you own or hold, not for “I am a …”.",
@@ -710,7 +721,8 @@
       "id": "tha-future",
       "title": "Θα — the future",
       "particle": "θα",
-      "summary": "Put θα before the verb to talk about what will happen.",
+      "summary": "Put θα before the verb to talk about what will happen. (about A1–A2)",
+      "level": "beginner",
       "sections": [
         {
           "p": "The everyday future is <b>θα</b> plus a verb form. For many verbs that form looks like the present: θα γράφω / θα γράψω patterns exist, but beginners can start with common set forms: <b>θα πάω</b> “I will go”, <b>θα δω</b> “I will see”, <b>θα έρθω</b> “I will come”.",
@@ -797,7 +809,8 @@
       "id": "na-clauses",
       "title": "Να — want, can, must",
       "particle": "να",
-      "summary": "θέλω να, μπορώ να, πρέπει να introduce a second verb.",
+      "summary": "θέλω να, μπορώ να, πρέπει να introduce a second verb. (about A1–A2)",
+      "level": "beginner",
       "sections": [
         {
           "p": "After <b>θέλω</b> (I want), <b>μπορώ</b> (I can) and <b>πρέπει</b> (one must / I have to), Greek uses <b>να</b> plus another verb. Common forms: να πάω, να δω, να φάω, να μιλήσω — often a perfective stem, not always the everyday present.",
@@ -872,7 +885,8 @@
       "id": "aorist",
       "title": "The simple past — έγραψα, πήγα",
       "particle": "έγραψα",
-      "summary": "A finished action yesterday: the aorist (perfective past).",
+      "summary": "A finished action yesterday: the aorist (perfective past). (about A2)",
+      "level": "beginner-intermediate",
       "sections": [
         {
           "p": "The <b>aorist</b> is a completed past: “I wrote”, “I went”. Many verbs add an έ- at the front and change the stem: γράφω → <b>έγραψα</b>, μιλάω → <b>μίλησα</b>. Endings: -α, -ες, -ε, -αμε, -ατε, -αν.",
@@ -950,6 +964,93 @@
           "why": "ήρθα = I came (aorist of έρχομαι)."
         }
       ]
+    }
+  ],
+  "plan": [
+    {
+      "id": "adjectives",
+      "title": "Adjectives that agree: καλός, καλή, καλό (about A1)",
+      "level": "beginner"
+    },
+    {
+      "id": "se-prepositions",
+      "title": "σε with the article: στο, στη, στον (about A1)",
+      "level": "beginner"
+    },
+    {
+      "id": "genitive",
+      "title": "The genitive: του σπιτιού, της Μαρίας (about A2)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "imperfect",
+      "title": "The imperfect: έγραφα (about A2)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "comparatives",
+      "title": "πιο + adjective, and -τερος (about A2)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "imperative",
+      "title": "The imperative: γράψε, γράψτε (about A2)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "future-aspect",
+      "title": "θα γράφω and θα γράψω: aspect in the future (about A2–B1)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "relatives",
+      "title": "που and ο οποίος (about A2–B1)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "passive-present",
+      "title": "-ομαι verbs: έρχομαι, λέγομαι (about A2–B1)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "conditionals",
+      "title": "αν + present or future (about B1)",
+      "level": "intermediate"
+    },
+    {
+      "id": "perfect",
+      "title": "έχω γράψει and είχα γράψει (about B1)",
+      "level": "intermediate"
+    },
+    {
+      "id": "passive-aorist",
+      "title": "The passive aorist: γράφτηκα (about B1)",
+      "level": "intermediate"
+    },
+    {
+      "id": "indirect-speech",
+      "title": "Indirect speech with ότι, πως and αν (about B1)",
+      "level": "intermediate"
+    },
+    {
+      "id": "participles",
+      "title": "Participles in -οντας and -μένος (about B1–B2)",
+      "level": "intermediate"
+    },
+    {
+      "id": "counterfactual",
+      "title": "αν + imperfect, θα + imperfect: what would have happened (about B2)",
+      "level": "advanced-intermediate"
+    },
+    {
+      "id": "as",
+      "title": "ας: let's, and wishes (about B2)",
+      "level": "advanced-intermediate"
+    },
+    {
+      "id": "learned-forms",
+      "title": "Learned forms in formal writing: -εως, εν, dative set phrases (about C1–C2)",
+      "level": "advanced"
     }
   ]
 }

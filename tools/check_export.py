@@ -46,7 +46,10 @@ def check(root=lib.ROOT):
                     problems.append(f"{lang}: {name} export failed ({type(e).__name__}: {e})")
                     continue
                 problems += [f"{lang}: {name}: {p}" for p in fmt.check(pack, first, root)]
-                if _tree(first) != _tree(second):
+                if first is None or second is None:
+                    if first != second:
+                        problems.append(f"{lang}: {name}: two exports of the same commit differ")
+                elif _tree(first) != _tree(second):
                     problems.append(f"{lang}: {name}: two exports of the same commit differ")
     return problems, len(langs)
 
