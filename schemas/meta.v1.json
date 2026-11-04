@@ -104,6 +104,25 @@
         ]
       }
     },
+    "cases": {
+      "description": "For a language whose nouns change form by case (Latin): the case a word takes when it carries a role, or when it follows a word with a content meaning. Keys are meaning@1 ids, grammar (\"@object\") or content (\"from\", for ab and ex); values are case meanings (\"@accusative\"). The forms are in languages/<id>/inflections.jsonl. Used by squirrelator to decline nouns.",
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^@[a-z0-9][a-z0-9-]*$"
+      }
+    },
+    "order": {
+      "description": "Where the subject and object usually sit around the verb when nothing marks them, as S, V and O (English SVO). Used by squirrelator to tell the subject from the object of a language with no case markers.",
+      "enum": [
+        "SVO",
+        "SOV",
+        "VSO",
+        "VOS",
+        "OVS",
+        "OSV"
+      ]
+    },
     "varieties": {
       "description": "Ids of the varieties in varieties/, alphabetical. Must match the folders there.",
       "type": "array",

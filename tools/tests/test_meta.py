@@ -64,6 +64,10 @@ class MetaSchema(unittest.TestCase):
         for code in ("el", "ELL", "ellx", "nucl131", "e11"):
             self.bad(with_(GREEK, code=code), META)
 
+    def test_order_schema(self):
+        self.ok(with_(GREEK, order="SOV"), META)
+        self.bad(with_(GREEK, order="sideways"), META)
+
     def test_markers(self):
         self.ok(with_(GREEK, markers={"default": "before"}), META)
         self.ok(with_(GREEK, markers={"default": "before", "@possessive": "after"}), META)
@@ -169,6 +173,21 @@ class MetaFolders(unittest.TestCase):
         for bad in ("cat", "@nothing"):
             self.write("languages/greek/meta.json", with_(GREEK, markers={"default": "before", bad: "after"}))
             self.assertTrue(any("isn't a grammar meaning" in p for p in check_meta.check(self.root)), bad)
+
+    def test_cases_name_meanings_and_grammar_cases(self):
+        (self.root / "meaning").mkdir()
+        (self.root / "meaning" / "meanings.jsonl").write_text(
+            '{"schema": "meaning@1"}\n'
+            '{"id": "@object", "kind": "grammar", "label": "object"}\n'
+            '{"id": "@accusative", "kind": "grammar", "label": "accusative"}\n'
+            '{"id": "from", "kind": "content", "en": ["from"]}\n', encoding="utf-8")
+        self.write("languages/greek/meta.json",
+                   with_(GREEK, cases={"@object": "@accusative", "from": "@accusative"}, order="SVO"))
+        self.assertEqual(check_meta.check(self.root), [])
+        self.write("languages/greek/meta.json", with_(GREEK, cases={"@nothing": "@accusative"}))
+        self.assertTrue(any("isn't a meaning" in p for p in check_meta.check(self.root)))
+        self.write("languages/greek/meta.json", with_(GREEK, cases={"@object": "from"}))
+        self.assertTrue(any("isn't a grammar meaning" in p for p in check_meta.check(self.root)))
 
 
 if __name__ == "__main__":
