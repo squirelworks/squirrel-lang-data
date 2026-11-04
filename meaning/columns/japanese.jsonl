@@ -20,3 +20,71 @@
 {"sentence": "bus-school", "t": [["バス", "バス", "bus"], ["で", "で", "@means"], ["学校", "がっこう", "school"], ["に", "に", "@direction"], ["行きます", "いきます", "go"]], "implied": ["i"], "end": "。"}
 {"sentence": "go-tokyo", "t": [["東京", "とうきょう", "tokyo"], ["に", "に", "@direction"], ["行き", "いき", "go"], ["たい", "たい", "want"], ["です", "です", "@polite"]], "implied": ["i"], "end": "。"}
 {"sentence": "came-train", "t": [["電車", "でんしゃ", "train"], ["で", "で", "@means"], ["来", "き", "come"], ["ました", "ました", "@past"]], "implied": ["i"], "end": "。"}
+{"sentence": "name-minjun", "t": [["私", "わたし", "i"], ["の", "の", "@possessive"], ["名前", "なまえ", "name"], ["は", "は", "@topic"], ["ミンジュン", "ミンジュン", "minjun"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "name-anna", "t": [["私", "わたし", "i"], ["の", "の", "@possessive"], ["名前", "なまえ", "name"], ["は", "は", "@topic"], ["アンナ", "アンナ", "anna"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "name-ravi", "t": [["私", "わたし", "i"], ["の", "の", "@possessive"], ["名前", "なまえ", "name"], ["は", "は", "@topic"], ["ラヴィ", "ラヴィ", "ravi"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "name-sami", "t": [["私", "わたし", "i"], ["の", "の", "@possessive"], ["名前", "なまえ", "name"], ["は", "は", "@topic"], ["サミ", "サミ", "sami"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "name-wang-ming", "t": [["私", "わたし", "i"], ["の", "の", "@possessive"], ["名前", "なまえ", "name"], ["は", "は", "@topic"], ["王明", "おうめい", "wang-ming"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "your-name", "t": [["お名前", "おなまえ", "name"], ["は", "は", "@topic"], ["何", "なん", "what"], ["です", "です", "@copula"], ["か", "か", "@question"]], "implied": ["you"], "end": "。"}
+{"sentence": "hello", "t": [["こんにちは", "こんにちは", "hello"]], "end": "。"}
+{"sentence": "good-morning", "t": [["おはよう", "おはよう", "good+morning"], ["ございます", "ございます", "@polite"]], "end": "。"}
+{"sentence": "thank-you", "t": [["ありがとう", "ありがとう", "thanks"]], "end": "。"}
+{"sentence": "success", "t": [["成功", "せいこう", "success"]], "end": "！"}
+{"sentence": "dont-know", "t": [["知り", "しり", "know"], ["ません", "ません", "not"]], "implied": ["i"], "end": "。"}
+{"sentence": "speak-chinese", "t": [["中国語", "ちゅうごくご", "chinese"], ["を", "を", "@object"], ["話します", "はなします", "speak"], ["か", "か", "@question"]], "implied": ["you"], "end": "。"}
+{"sentence": "speak-arabic", "t": [["アラビア語", "アラビアご", "arabic"], ["を", "を", "@object"], ["話します", "はなします", "speak"], ["か", "か", "@question"]], "implied": ["you"], "end": "。"}
+{"sentence": "speak-klingon", "t": [["クリンゴン語", "クリンゴンご", "klingon"], ["を", "を", "@object"], ["話します", "はなします", "speak"], ["か", "か", "@question"]], "implied": ["you"], "end": "。"}
+{"sentence": "speak-hindi", "t": [["ヒンディー語", "ヒンディーご", "hindi"], ["を", "を", "@object"], ["話します", "はなします", "speak"]], "implied": ["i"], "end": "。"}
+{"sentence": "study-korean", "t": [["韓国語", "かんこくご", "korean"], ["を", "を", "@object"], ["勉強します", "べんきょうします", "study"]], "implied": ["i"], "end": "。"}
+{"sentence": "like-coffee", "t": [["コーヒー", "コーヒー", "coffee"], ["が", "が", "@subject"], ["好き", "すき", "like"], ["です", "です", "@copula"]], "implied": ["i"], "end": "。"}
+{"sentence": "like-tea", "t": [["お茶", "おちゃ", "tea"], ["が", "が", "@subject"], ["好き", "すき", "like"], ["です", "です", "@copula"]], "implied": ["i"], "end": "。"}
+{"sentence": "love-you", "t": [["あなた", "あなた", "you"], ["を", "を", "@object"], ["愛して", "あいして", "love"], ["います", "います", "@ongoing"]], "implied": ["i"], "end": "。"}
+{"sentence": "met-friend", "t": [["昨日", "きのう", "yesterday"], ["友達", "ともだち", "friend"], ["に", "に", "@object"], ["会い", "あい", "meet"], ["ました", "ました", "@past"]], "implied": ["i"], "end": "。"}
+{"sentence": "my-friend", "t": [["彼", "かれ", "he"], ["は", "は", "@topic"], ["私", "わたし", "i"], ["の", "の", "@possessive"], ["友達", "ともだち", "friend"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "who-is-he", "t": [["彼", "かれ", "he"], ["は", "は", "@topic"], ["誰", "だれ", "who"], ["です", "です", "@copula"], ["か", "か", "@question"]], "end": "。"}
+{"sentence": "where-live", "t": [["どこ", "どこ", "where"], ["に", "に", "@place"], ["住んで", "すんで", "live"], ["います", "います", "@ongoing"], ["か", "か", "@question"]], "implied": ["you"], "end": "。"}
+{"sentence": "from-egypt", "t": [["私", "わたし", "i"], ["は", "は", "@topic"], ["エジプト", "エジプト", "egypt"], ["出身", "しゅっしん", "from"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "we-are-klingons", "t": [["私たち", "わたしたち", "we"], ["は", "は", "@topic"], ["クリンゴン人", "クリンゴンじん", "klingon"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "this-is-my-book", "t": [["これ", "これ", "this"], ["は", "は", "@topic"], ["私", "わたし", "i"], ["の", "の", "@possessive"], ["本", "ほん", "book"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "drink-tea", "t": [["お茶", "おちゃ", "tea"], ["を", "を", "@object"], ["飲みます", "のみます", "drink"]], "implied": ["i"], "end": "。"}
+{"sentence": "want-coffee", "t": [["コーヒー", "コーヒー", "coffee"], ["が", "が", "@subject"], ["欲しい", "ほしい", "want"], ["です", "です", "@polite"]], "implied": ["i"], "end": "。"}
+{"sentence": "read-book", "t": [["本", "ほん", "book"], ["を", "を", "@object"], ["読みます", "よみます", "read"]], "implied": ["i"], "end": "。"}
+{"sentence": "eat-rice", "t": [["私たち", "わたしたち", "we"], ["は", "は", "@topic"], ["ご飯", "ごはん", "rice"], ["を", "を", "@object"], ["食べます", "たべます", "eat"]], "end": "。"}
+{"sentence": "eat-food", "t": [["食べ物", "たべもの", "food"], ["を", "を", "@object"], ["食べます", "たべます", "eat"]], "implied": ["i"], "end": "。"}
+{"sentence": "eat-restaurant", "t": [["レストラン", "レストラン", "restaurant"], ["で", "で", "@place"], ["食べます", "たべます", "eat"]], "implied": ["i"], "end": "。"}
+{"sentence": "cold-today", "t": [["今日", "きょう", "today"], ["は", "は", "@topic"], ["寒い", "さむい", "cold"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "weather-hot", "t": [["今日", "きょう", "today"], ["の", "の", "@of"], ["天気", "てんき", "weather"], ["は", "は", "@topic"], ["暑い", "あつい", "hot"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "weather-good", "t": [["今日", "きょう", "today"], ["は", "は", "@topic"], ["いい", "いい", "good"], ["天気", "てんき", "weather"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "raining", "t": [["雨", "あめ", "rain"], ["が", "が", "@subject"], ["降って", "ふって", "@happen"], ["います", "います", "@ongoing"]], "end": "。"}
+{"sentence": "monday", "t": [["今日", "きょう", "today"], ["は", "は", "@topic"], ["月曜日", "げつようび", "monday"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "what-time", "t": [["何時", "なんじ", "what+time"], ["です", "です", "@copula"], ["か", "か", "@question"]], "end": "。"}
+{"sentence": "what-time-now", "t": [["今", "いま", "now"], ["何時", "なんじ", "what+time"], ["です", "です", "@copula"], ["か", "か", "@question"]], "end": "。"}
+{"sentence": "no-time", "t": [["時間", "じかん", "time"], ["が", "が", "@subject"], ["ありません", "ありません", "none"]], "end": "。"}
+{"sentence": "have-cat", "t": [["猫", "ねこ", "cat"], ["を", "を", "@object"], ["飼って", "かって", "have"], ["います", "います", "@ongoing"]], "implied": ["i"], "end": "。"}
+{"sentence": "house-big", "t": [["家", "いえ", "house"], ["は", "は", "@topic"], ["大きい", "おおきい", "big"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "car-new", "t": [["車", "くるま", "car"], ["は", "は", "@topic"], ["新しい", "あたらしい", "new"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "delicious", "t": [["おいしい", "おいしい", "delicious"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "food-tasty", "t": [["料理", "りょうり", "food"], ["は", "は", "@topic"], ["とても", "とても", "very"], ["おいしい", "おいしい", "delicious"], ["です", "です", "@copula"]], "end": "。"}
+{"sentence": "head-hurts", "t": [["頭", "あたま", "head"], ["が", "が", "@subject"], ["痛い", "いたい", "hurt"], ["です", "です", "@copula"]], "implied": ["i"], "end": "。"}
+{"sentence": "hungry", "t": [["おなか", "おなか", "hungry"], ["が", "が", "@subject"], ["すきました", "すきました", "@happen"]], "implied": ["i"], "end": "。"}
+{"sentence": "give-water", "t": [["水", "みず", "water"], ["を", "を", "@object"], ["ください", "ください", "give+please"]], "implied": ["i"], "end": "。"}
+{"sentence": "sit-down", "t": [["座って", "すわって", "sit"], ["ください", "ください", "please"]], "end": "。"}
+{"sentence": "where-hotel", "t": [["ホテル", "ホテル", "hotel"], ["は", "は", "@topic"], ["どこ", "どこ", "where"], ["です", "です", "@copula"], ["か", "か", "@question"]], "end": "。"}
+{"sentence": "how-much-is-it", "t": [["いくら", "いくら", "how-much"], ["です", "です", "@copula"], ["か", "か", "@question"]], "end": "。"}
+{"sentence": "how-much-cost", "t": [["いくら", "いくら", "how-much"], ["かかります", "かかります", "cost"], ["か", "か", "@question"]], "end": "。"}
+{"sentence": "bill-please", "t": [["お会計", "おかいけい", "bill"], ["を", "を", "@object"], ["お願いします", "おねがいします", "please"]], "end": "。"}
+{"sentence": "where-going", "t": [["どこ", "どこ", "where"], ["に", "に", "@direction"], ["行きます", "いきます", "go"], ["か", "か", "@question"]], "implied": ["you"], "end": "。"}
+{"sentence": "going-home", "t": [["家", "いえ", "home"], ["に", "に", "@direction"], ["帰ります", "かえります", "go"]], "implied": ["i"], "end": "。"}
+{"sentence": "we-going-home", "t": [["私たち", "わたしたち", "we"], ["は", "は", "@topic"], ["家", "いえ", "home"], ["に", "に", "@direction"], ["帰ります", "かえります", "go"]], "end": "。"}
+{"sentence": "lets-go", "t": [["行き", "いき", "go"], ["ましょう", "ましょう", "let-us"]], "end": "。"}
+{"sentence": "live-moscow", "t": [["モスクワ", "モスクワ", "moscow"], ["に", "に", "@place"], ["住んで", "すんで", "live"], ["います", "います", "@ongoing"]], "implied": ["i"], "end": "。"}
+{"sentence": "live-cairo", "t": [["カイロ", "カイロ", "cairo"], ["に", "に", "@place"], ["住んで", "すんで", "live"], ["います", "います", "@ongoing"]], "implied": ["i"], "end": "。"}
+{"sentence": "live-beijing", "t": [["北京", "ぺきん", "beijing"], ["に", "に", "@place"], ["住んで", "すんで", "live"], ["います", "います", "@ongoing"]], "implied": ["i"], "end": "。"}
+{"sentence": "i-sleep", "t": [["私", "わたし", "i"], ["は", "は", "@topic"], ["寝ます", "ねます", "sleep"]], "end": "。"}
+{"sentence": "i-fight", "t": [["私", "わたし", "i"], ["は", "は", "@topic"], ["戦います", "たたかいます", "fight"]], "end": "。"}
+{"sentence": "we-fight", "t": [["私たち", "わたしたち", "we"], ["は", "は", "@topic"], ["戦います", "たたかいます", "fight"]], "end": "。"}
+{"sentence": "sleep-command", "t": [["寝", "ね", "sleep"], ["なさい", "なさい", "@command"]], "end": "。"}
+{"sentence": "child-sleeps", "t": [["子供", "こども", "child"], ["は", "は", "@topic"], ["寝て", "ねて", "sleep"], ["います", "います", "@ongoing"]], "end": "。"}
+{"sentence": "officer-sees-child", "t": [["将校", "しょうこう", "officer"], ["は", "は", "@topic"], ["子供", "こども", "child"], ["を", "を", "@object"], ["見ます", "みます", "see"]], "end": "。"}
+{"sentence": "captain-sees-ship", "t": [["船長", "せんちょう", "captain"], ["は", "は", "@topic"], ["船", "ふね", "ship"], ["を", "を", "@object"], ["見ます", "みます", "see"]], "end": "。"}
+{"sentence": "i-see-ship", "t": [["船", "ふね", "ship"], ["が", "が", "@subject"], ["見えます", "みえます", "see"]], "implied": ["i"], "end": "。"}
