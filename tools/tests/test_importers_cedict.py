@@ -26,6 +26,10 @@ class Cedict(unittest.TestCase):
         self.assertEqual([o[1] for o in others], ["liao3"])
         self.assertEqual(cedict.pick(cands, "x")[1], "liao3")
 
+    def test_hsk_estimate(self):
+        self.assertEqual([cedict.hsk_estimate(r) for r in (1, 300, 340, 400, 700, 5000, 20000)],
+                         ["1", "1/2", "1/2", "2", "3", "6/7-9", None])
+
     def test_build(self):
         header = {"schema": "vocab@1", "language": "chinese", "notes": ["Written for this project."],
                   "decks": [{"id": "food", "title": "Food"}, {"id": "freq-core", "title": "old"}]}
@@ -41,6 +45,8 @@ class Cedict(unittest.TestCase):
         self.assertEqual(out[0]["freq"], "core")
         self.assertEqual(out[1]["reading"], "shū")
         self.assertEqual(out[1]["note"], "Traditional: 書.")
+        self.assertEqual(out[0]["level"], {"hsk": "1"})
+        self.assertEqual(out[1]["level"], {"hsk": "1"})
         self.assertEqual(cedict.build(head, out, ["茶", "书"], dic, band)[1], out)
 
 
