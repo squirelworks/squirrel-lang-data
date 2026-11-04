@@ -28,9 +28,7 @@ ARGS = {"M": 2, "L": 2, "H": 1, "V": 1, "C": 6, "S": 4, "Q": 4, "T": 2, "Z": 0}
 TOKEN = re.compile(r"[A-Za-z]|[-+]?(?:\d+\.?\d*|\.\d+)(?:[eE][-+]?\d+)?|[\s,]+|.")
 # Stroke counts that differ from the shared table on purpose or pending review:
 # {set: {char: why}}.
-KNOWN_COUNTS = {
-    "kanji": {"巨": "KanjiVG draws 5 strokes and the shared table says 4; one of them needs review"},
-}
+KNOWN_COUNTS = {}
 
 
 def path_problem(d, box):

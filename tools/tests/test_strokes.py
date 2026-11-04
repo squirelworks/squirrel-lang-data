@@ -79,10 +79,18 @@ class Strokes(unittest.TestCase):
             got = check_strokes.check(self.root)
             self.assertTrue(any(want in p for p in got), f"{want}: {got}")
 
-    def test_known_counts_must_still_differ(self):
-        self.write("cjk/characters.jsonl", TABLE + [{"char": "巨", "radical": "工", "strokes": 5}])
+    def test_known_counts(self):
+        self.write("cjk/characters.jsonl", TABLE + [{"char": "巨", "radical": "工", "strokes": 4}])
         self.write("strokes/kanji.jsonl", KANJI + [{"char": "巨", "strokes": ["M1,1"] * 5, "labels": [[1, 1]] * 5}])
-        self.assertTrue(any("no longer differs" in p for p in check_strokes.check(self.root)))
+        self.assertTrue(any("says 4" in p for p in check_strokes.check(self.root)))
+        old = check_strokes.KNOWN_COUNTS
+        check_strokes.KNOWN_COUNTS = {"kanji": {"巨": "pending review"}}
+        try:
+            self.assertEqual(check_strokes.check(self.root), [])
+            self.write("cjk/characters.jsonl", TABLE + [{"char": "巨", "radical": "工", "strokes": 5}])
+            self.assertTrue(any("no longer differs" in p for p in check_strokes.check(self.root)))
+        finally:
+            check_strokes.KNOWN_COUNTS = old
 
     @unittest.skipUnless(subprocess.run(["which", "node"], capture_output=True).returncode == 0, "needs node")
     def test_generate(self):
