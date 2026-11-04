@@ -23,11 +23,13 @@ and `period`.
 """
 import argparse
 import json
-import subprocess
 import sys
 from pathlib import Path
 
-DATA = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import lib  # noqa: E402
+
+DATA = lib.ROOT
 
 # The Desk's data kinds and the file each lives in, in its language folder.
 KINDS = {"characters": "characters.js", "grammar": "grammar.js", "vocab": "vocab.js", "reference": "reference.json"}
@@ -100,14 +102,6 @@ def desk_shape(meta, out_dir):
     return {k: m[k] for k in ORDER if k in m} | {k: v for k, v in m.items() if k not in ORDER}
 
 
-def data_commit(data):
-    try:
-        return subprocess.run(["git", "-C", str(data), "rev-parse", "--short", "HEAD"],
-                              capture_output=True, text=True, check=True).stdout.strip()
-    except (OSError, subprocess.CalledProcessError):
-        return "unknown"
-
-
 def build(data, out_dir, with_varieties=False):
     """{relative path: text} for every file this generator owns in out_dir."""
     entries = {}
@@ -118,7 +112,7 @@ def build(data, out_dir, with_varieties=False):
             for v in vs:
                 entries[v["id"]] = desk_shape(resolve(v, by_id), out_dir)
     command = "python3 data/tools/gen_registry.py --out " + out_dir.name + (" --varieties" if with_varieties else "")
-    header = f"// Generated from squirrel-lang-data {data_commit(data)} languages/*/meta.json by: {command}\n// Do not edit; change the data repo and run it again.\n"
+    header = f"// Generated from squirrel-lang-data {lib.data_commit(data)} languages/*/meta.json by: {command}\n// Do not edit; change the data repo and run it again.\n"
     files = {"registry.js": header + "window.LSD_LANGUAGE_REGISTRY = " + json.dumps(entries, ensure_ascii=False, indent=2) + ";\n"}
     for id_, m in entries.items():
         files[f"{id_}/meta.json"] = json.dumps(m, ensure_ascii=False, indent=2) + "\n"
@@ -132,24 +126,8 @@ def main(argv=None):
     ap.add_argument("--varieties", action="store_true", help="also write regional varieties and historical stages")
     ap.add_argument("--check", action="store_true", help="write nothing; exit 1 if any file differs")
     args = ap.parse_args(argv)
-    files = build(args.data, args.out, args.varieties)
-    stale = []
-    for rel, text in files.items():
-        p = args.out / rel
-        old = p.read_text(encoding="utf-8") if p.is_file() else None
-        if args.check:
-            # The data commit in the header changes with every bump; compare the rest.
-            same = old is not None and (old.split("\n", 1)[1:] == text.split("\n", 1)[1:] if rel == "registry.js" else old == text)
-            if not same:
-                stale.append(rel)
-        elif old != text:
-            p.parent.mkdir(parents=True, exist_ok=True)
-            p.write_text(text, encoding="utf-8")
-            print("wrote", p)
-    for rel in stale:
-        print(f"{args.out / rel} differs from the data; run python3 data/tools/gen_registry.py --out {args.out}")
-    return 1 if stale else 0
-
+    command = f"python3 data/tools/gen_registry.py --out {args.out.name}" + (" --varieties" if args.varieties else "")
+    return lib.write_outputs(build(args.data, args.out, args.varieties), args.out, args.check, command)
 
 if __name__ == "__main__":
     sys.exit(main())

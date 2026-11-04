@@ -44,11 +44,26 @@ class Validator(unittest.TestCase):
 
     @unittest.skipIf(jsonschema is None, "jsonschema not installed")
     def test_agrees_with_jsonschema(self):
+        records, lines = [], []
+        for f in lib.content_files():
+            if f.suffix == ".jsonl":
+                header, entries = lib.read(f)
+                lines += [header] + entries[:50]
+            else:
+                records.append(lib.read(f))
         for p in sorted((lib.ROOT / "schemas").glob("*.json")):
             schema = json.loads(p.read_text(encoding="utf-8"))
-            ref = jsonschema.Draft202012Validator(schema)
-            for sample in SAMPLES + [json.loads(f.read_text(encoding="utf-8")) for f in lib.content_files()]:
-                self.assertEqual(not js.errors(sample, schema), ref.is_valid(sample), (p.name, sample))
+            props = schema.get("properties", {})
+            if "header" in props and "entry" in props:  # a JSONL schema
+                targets = [props["header"], props["entry"]]
+                samples = SAMPLES + lines
+            else:
+                targets = [schema]
+                samples = SAMPLES + records
+            for target in targets:
+                ref = jsonschema.Draft202012Validator(target)
+                for sample in samples:
+                    self.assertEqual(not js.errors(sample, target), ref.is_valid(sample), (p.name, sample))
 
 
 if __name__ == "__main__":
