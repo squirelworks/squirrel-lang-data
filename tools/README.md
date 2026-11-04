@@ -26,8 +26,10 @@ python3 tools/fmt.py        # format every content file in place
 | `migrate/lsd_vocab.py` | The one-time conversion of LanguageStudentDesk's `vocab.js` decks to `vocab@1` (needs node). |
 | `gen_grammar.py` | Generates LanguageStudentDesk's `languages/<id>/grammar.js` courses from `grammar.json`. `--check` reports drift. |
 | `migrate/lsd_grammar.py` | The one-time conversion of LanguageStudentDesk's `grammar.js` courses to `grammar@1` (needs node). |
-| `importers/krdict.py` | Imports the graded words of the NIKL Basic Korean Dictionary into `languages/hangul/vocab.jsonl`, tagging words already there instead of adding them twice. Needs `pip install "wordfreq[mecab]"`; the dictionary is fetched into `cache/`. |
-| `importers/hangul.py` | Hangul to Revised Romanization, for importers. |
 | `importers/freq.py` | Core, common and rare frequency tags from wordfreq, for importers. |
+| `importers/hangul.py` | Hangul to Revised Romanization, for importers. |
+| `importers/jlpt_tanos.py` | Imports the JLPT N5 to N1 word lists into `languages/japanese/vocab.jsonl`, tagging words already there instead of adding them twice. Needs `pip install "wordfreq[mecab]"` for the frequency tags; the lists are fetched into `cache/`. |
+| `importers/kana.py` | Kana to Hepburn romaji, for importers. |
+| `importers/krdict.py` | Imports the graded words of the NIKL Basic Korean Dictionary into `languages/hangul/vocab.jsonl`, tagging words already there instead of adding them twice. Needs `pip install "wordfreq[mecab]"`; the dictionary is fetched into `cache/`. |
 | `gen_reference.py` | Generates LanguageStudentDesk's `languages/<id>/reference.json` cards. `--check` reports drift. |
 | `migrate/lsd_reference.py` | The one-time conversion of LanguageStudentDesk's reference cards to `reference@1`. |
