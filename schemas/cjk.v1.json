@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/squirelworks/squirrel-lang-data/schemas/cjk.v1.json",
+  "title": "cjk@1: the shared table of Chinese characters",
+  "description": "cjk/characters.jsonl: every character that hanzi (Chinese), kanji (Japanese) or hanja (Korean) teaches, once, with what the traditions share. Readings and meanings live with each language, in cjk-readings@1 files; which traditions use a character follows from those.",
+  "type": "object",
+  "properties": {
+    "header": {
+      "type": "object",
+      "required": ["schema"],
+      "additionalProperties": false,
+      "properties": {
+        "schema": { "const": "cjk@1" },
+        "notes": { "description": "Where the radicals and stroke counts come from, one sentence or line each.", "type": "array", "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "required": ["char", "radical", "strokes"],
+      "additionalProperties": false,
+      "properties": {
+        "char": { "description": "The character, unique in the file.", "type": "string", "minLength": 1 },
+        "radical": { "description": "Its Kangxi radical, as the ideograph (人, not ⼈).", "type": "string", "minLength": 1 },
+        "strokes": { "description": "Its total stroke count.", "type": "integer" }
+      }
+    }
+  }
+}
