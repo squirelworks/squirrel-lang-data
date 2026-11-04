@@ -13,6 +13,8 @@ languages/<id>/      a language: meta, grammar, vocabulary, references,
 cjk/                 the shared table of Chinese characters (hanzi, kanji,
                      hanja); each language keeps its own readings
 strokes/             stroke order for each script, as SVG paths
+alphabets/           script courses (lessons of letters, hints, sounds and
+                     articles) for SquirrelGo Alphabets
 variants/            links between character forms (traditional and simplified,
                      shinjitai and kyūjitai, and so on)
 meaning/             the meaning network

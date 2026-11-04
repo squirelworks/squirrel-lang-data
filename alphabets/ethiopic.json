@@ -1,0 +1,602 @@
+{
+  "schema": "alphabet@1",
+  "id": "ethiopic",
+  "title": "Ethiopic",
+  "native": "ፊደል",
+  "lang": "am-ET",
+  "langName": "Amharic",
+  "font": "\"Noto Sans Ethiopic\", \"Abyssinica SIL\", \"Nyala\", \"Segoe UI\", sans-serif",
+  "chartFlow": true,
+  "blurb": "The base letters of the Amharic fidel, then the seven vowel orders every letter takes.",
+  "writeTip": "Each base letter carries the vowel ä. The other vowels are small additions to the same shape: a foot, a ring, a shortened leg. Learn the base shape first.",
+  "notes": [
+    "Ge'ez script (fidel) as used for Amharic, for SquirrelGo Alphabets. Romanization uses ä for the first-order vowel and ə for the sixth; an apostrophe marks an ejective. Hints, groupings and articles are original."
+  ],
+  "lessons": [
+    {
+      "title": "First letters",
+      "note": "Every letter is a whole syllable. These base forms all end in ä, a short vowel like the u in but.",
+      "group": "Base letters (with ä)",
+      "cols": 5,
+      "chars": [
+        {
+          "char": "ለ",
+          "roman": "lä",
+          "hint": "l + ä",
+          "example": "ልጅ",
+          "exampleRoman": "ləj",
+          "meaning": "child",
+          "speak": "",
+          "ipa": "lə"
+        },
+        {
+          "char": "መ",
+          "roman": "mä",
+          "hint": "m + ä",
+          "example": "መኪና",
+          "exampleRoman": "mäkina",
+          "meaning": "car",
+          "speak": "",
+          "ipa": "mə"
+        },
+        {
+          "char": "ረ",
+          "roman": "rä",
+          "hint": "a tapped r + ä",
+          "example": "ረጅም",
+          "exampleRoman": "räjjim",
+          "meaning": "tall, long",
+          "speak": "",
+          "ipa": "rə"
+        },
+        {
+          "char": "ሰ",
+          "roman": "sä",
+          "hint": "s + ä",
+          "example": "ሰላም",
+          "exampleRoman": "sälam",
+          "meaning": "peace; hello",
+          "speak": "",
+          "ipa": "sə"
+        },
+        {
+          "char": "ቀ",
+          "roman": "q'ä",
+          "hint": "a tight k from the back of the throat + ä",
+          "example": "ቀን",
+          "exampleRoman": "q'än",
+          "meaning": "day",
+          "speak": "",
+          "ipa": "kʼə"
+        },
+        {
+          "char": "በ",
+          "roman": "bä",
+          "hint": "b + ä",
+          "example": "በር",
+          "exampleRoman": "bär",
+          "meaning": "door",
+          "speak": "",
+          "ipa": "bə"
+        },
+        {
+          "char": "ተ",
+          "roman": "tä",
+          "hint": "t + ä",
+          "example": "ተማሪ",
+          "exampleRoman": "tämari",
+          "meaning": "student",
+          "speak": "",
+          "ipa": "tə"
+        },
+        {
+          "char": "ነ",
+          "roman": "nä",
+          "hint": "n + ä",
+          "example": "ነጭ",
+          "exampleRoman": "näch'",
+          "meaning": "white",
+          "speak": "",
+          "ipa": "nə"
+        },
+        {
+          "char": "አ",
+          "roman": "ä",
+          "hint": "a vowel on its own (a glottal catch before it)",
+          "example": "አባት",
+          "exampleRoman": "abbat",
+          "meaning": "father",
+          "speak": "",
+          "ipa": "ʔə"
+        },
+        {
+          "char": "ከ",
+          "roman": "kä",
+          "hint": "k + ä",
+          "example": "ከተማ",
+          "exampleRoman": "kätäma",
+          "meaning": "city",
+          "speak": "",
+          "ipa": "kə"
+        }
+      ]
+    },
+    {
+      "title": "More letters",
+      "group": "Base letters (with ä)",
+      "cols": 5,
+      "chars": [
+        {
+          "char": "ወ",
+          "roman": "wä",
+          "hint": "w + ä",
+          "example": "ወንዝ",
+          "exampleRoman": "wänz",
+          "meaning": "river",
+          "speak": "",
+          "ipa": "wə"
+        },
+        {
+          "char": "ዘ",
+          "roman": "zä",
+          "hint": "z + ä",
+          "example": "ዘር",
+          "exampleRoman": "zär",
+          "meaning": "seed",
+          "speak": "",
+          "ipa": "zə"
+        },
+        {
+          "char": "የ",
+          "roman": "yä",
+          "hint": "y + ä",
+          "example": "የት",
+          "exampleRoman": "yät",
+          "meaning": "where",
+          "speak": "",
+          "ipa": "jə"
+        },
+        {
+          "char": "ደ",
+          "roman": "dä",
+          "hint": "d + ä",
+          "example": "ደብዳቤ",
+          "exampleRoman": "däbdabe",
+          "meaning": "letter (mail)",
+          "speak": "",
+          "ipa": "də"
+        },
+        {
+          "char": "ገ",
+          "roman": "gä",
+          "hint": "g + ä",
+          "example": "ገበያ",
+          "exampleRoman": "gäbäya",
+          "meaning": "market",
+          "speak": "",
+          "ipa": "ɡə"
+        },
+        {
+          "char": "ፈ",
+          "roman": "fä",
+          "hint": "f + ä",
+          "example": "ፈረስ",
+          "exampleRoman": "färäs",
+          "meaning": "horse",
+          "speak": "",
+          "ipa": "fə"
+        },
+        {
+          "char": "ሸ",
+          "roman": "shä",
+          "hint": "sh + ä",
+          "example": "ሸሚዝ",
+          "exampleRoman": "shämiz",
+          "meaning": "shirt",
+          "speak": "",
+          "ipa": "ʃə"
+        },
+        {
+          "char": "ቸ",
+          "roman": "chä",
+          "hint": "ch + ä",
+          "example": "ቸኮሌት",
+          "exampleRoman": "chäkolet",
+          "meaning": "chocolate",
+          "speak": "",
+          "ipa": "tʃə"
+        },
+        {
+          "char": "ጀ",
+          "roman": "jä",
+          "hint": "j + ä",
+          "example": "ጀልባ",
+          "exampleRoman": "jälba",
+          "meaning": "boat",
+          "speak": "",
+          "ipa": "dʒə"
+        },
+        {
+          "char": "ኘ",
+          "roman": "ñä",
+          "hint": "ny as in canyon + ä",
+          "example": "ዳኛ",
+          "exampleRoman": "daña",
+          "meaning": "judge",
+          "speak": "",
+          "ipa": "ɲə"
+        },
+        {
+          "char": "ዠ",
+          "roman": "zhä",
+          "hint": "s as in pleasure + ä; rare",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "ʒə"
+        },
+        {
+          "char": "ቨ",
+          "roman": "vä",
+          "hint": "v + ä; only in borrowed words",
+          "example": "ቪዲዮ",
+          "exampleRoman": "vidiyo",
+          "meaning": "video",
+          "speak": "",
+          "ipa": "və"
+        },
+        {
+          "char": "ፐ",
+          "roman": "pä",
+          "hint": "p + ä; mostly in borrowed words",
+          "example": "ፓስታ",
+          "exampleRoman": "pasta",
+          "meaning": "pasta",
+          "speak": "",
+          "ipa": "pə"
+        }
+      ]
+    },
+    {
+      "title": "Ejectives",
+      "note": "Tight, popped consonants: close the throat and push the sound out without breath from the lungs.",
+      "group": "Base letters (with ä)",
+      "cols": 5,
+      "chars": [
+        {
+          "char": "ጠ",
+          "roman": "t'ä",
+          "hint": "a popped t + ä",
+          "example": "ጠረጴዛ",
+          "exampleRoman": "t'äräp'eza",
+          "meaning": "table",
+          "speak": "",
+          "ipa": "tʼə"
+        },
+        {
+          "char": "ጨ",
+          "roman": "ch'ä",
+          "hint": "a popped ch + ä",
+          "example": "ጨው",
+          "exampleRoman": "ch'äw",
+          "meaning": "salt",
+          "speak": "",
+          "ipa": "tʃʼə"
+        },
+        {
+          "char": "ጰ",
+          "roman": "p'ä",
+          "hint": "a popped p + ä; rare",
+          "example": "ጰጰስ",
+          "exampleRoman": "p'äp'p'as",
+          "meaning": "bishop",
+          "speak": "",
+          "ipa": "pʼə"
+        },
+        {
+          "char": "ጸ",
+          "roman": "ts'ä",
+          "hint": "a popped ts + ä",
+          "example": "ጸሐይ",
+          "exampleRoman": "ts'ähay",
+          "meaning": "sun",
+          "speak": "",
+          "ipa": "tsʼə"
+        }
+      ]
+    },
+    {
+      "title": "Same sound, other letter",
+      "note": "Ge'ez had more sounds than Amharic. In Amharic these letters are said like ones you know, but words keep their traditional spelling.",
+      "group": "Base letters (with ä)",
+      "cols": 5,
+      "chars": [
+        {
+          "char": "ሀ",
+          "roman": "hä",
+          "hint": "h + ä",
+          "example": "ሀገር",
+          "exampleRoman": "hägär",
+          "meaning": "country",
+          "speak": "",
+          "ipa": "hə"
+        },
+        {
+          "char": "ሐ",
+          "roman": "hä",
+          "hint": "said like ሀ; once a strong throat h",
+          "example": "ሐሙስ",
+          "exampleRoman": "hamus",
+          "meaning": "Thursday",
+          "speak": "",
+          "ipa": "hə"
+        },
+        {
+          "char": "ኀ",
+          "roman": "hä",
+          "hint": "said like ሀ; once a throaty kh",
+          "example": "ኀይል",
+          "exampleRoman": "hayl",
+          "meaning": "power",
+          "speak": "",
+          "ipa": "hə"
+        },
+        {
+          "char": "ኸ",
+          "roman": "hä",
+          "hint": "said like ሀ in Amharic; rare",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "hə"
+        },
+        {
+          "char": "ሠ",
+          "roman": "sä",
+          "hint": "said like ሰ",
+          "example": "ሠላሳ",
+          "exampleRoman": "sälasa",
+          "meaning": "thirty",
+          "speak": "",
+          "ipa": "sə"
+        },
+        {
+          "char": "ዐ",
+          "roman": "ä",
+          "hint": "said like አ; once a throat sound",
+          "example": "ዐይን",
+          "exampleRoman": "ayn",
+          "meaning": "eye",
+          "speak": "",
+          "ipa": "ʔə"
+        },
+        {
+          "char": "ፀ",
+          "roman": "ts'ä",
+          "hint": "said like ጸ",
+          "example": "ፀጉር",
+          "exampleRoman": "ts'ägur",
+          "meaning": "hair",
+          "speak": "",
+          "ipa": "tsʼə"
+        }
+      ]
+    },
+    {
+      "title": "The seven orders on ለ",
+      "note": "Every base letter has seven forms, one per vowel. The base form ለ (lä) is the first; here are the other six. The changes are regular: a foot for u, a lower foot for i, a shortened leg for a, a ring for e, a bend for ə, and a raised mark for o.",
+      "group": "Vowel orders",
+      "cols": 6,
+      "chars": [
+        {
+          "char": "ሉ",
+          "roman": "lu",
+          "hint": "2nd order (ka'ib): u, a stroke on the right middle",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "ሉ",
+          "ipa": "lu"
+        },
+        {
+          "char": "ሊ",
+          "roman": "li",
+          "hint": "3rd order (salis): i, a foot on the right bottom",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "ሊ",
+          "ipa": "li"
+        },
+        {
+          "char": "ላ",
+          "roman": "la",
+          "hint": "4th order (rabi'): a, the right leg shortened",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "ላ",
+          "ipa": "la"
+        },
+        {
+          "char": "ሌ",
+          "roman": "le",
+          "hint": "5th order (hamis): e, a ring on the right foot",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "ሌ",
+          "ipa": "le"
+        },
+        {
+          "char": "ል",
+          "roman": "lə",
+          "hint": "6th order (sadis): ə or no vowel, the leg bent",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "ል",
+          "ipa": "lɨ"
+        },
+        {
+          "char": "ሎ",
+          "roman": "lo",
+          "hint": "7th order (sabi'): o, the leg raised",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "ሎ",
+          "ipa": "lo"
+        }
+      ]
+    },
+    {
+      "title": "The seven orders on በ and ሰ",
+      "note": "The same patterns on በ (bä) and ሰ (sä). Not every letter follows them exactly; watch for small differences.",
+      "group": "Vowel orders",
+      "cols": 6,
+      "chars": [
+        {
+          "char": "ቡ",
+          "roman": "bu",
+          "hint": "2nd order: u",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "ቡ",
+          "ipa": "bu"
+        },
+        {
+          "char": "ቢ",
+          "roman": "bi",
+          "hint": "3rd order: i",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "ቢ",
+          "ipa": "bi"
+        },
+        {
+          "char": "ባ",
+          "roman": "ba",
+          "hint": "4th order: a",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "ባ",
+          "ipa": "ba"
+        },
+        {
+          "char": "ቤ",
+          "roman": "be",
+          "hint": "5th order: e",
+          "example": "ቤት",
+          "exampleRoman": "bet",
+          "meaning": "house",
+          "speak": "ቤ",
+          "ipa": "be"
+        },
+        {
+          "char": "ብ",
+          "roman": "bə",
+          "hint": "6th order: ə or none",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "ብ",
+          "ipa": "bɨ"
+        },
+        {
+          "char": "ቦ",
+          "roman": "bo",
+          "hint": "7th order: o",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "ቦ",
+          "ipa": "bo"
+        },
+        {
+          "char": "ሱ",
+          "roman": "su",
+          "hint": "2nd order: u",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "ሱ",
+          "ipa": "su"
+        },
+        {
+          "char": "ሲ",
+          "roman": "si",
+          "hint": "3rd order: i",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "ሲ",
+          "ipa": "si"
+        },
+        {
+          "char": "ሳ",
+          "roman": "sa",
+          "hint": "4th order: a",
+          "example": "ሳር",
+          "exampleRoman": "sar",
+          "meaning": "grass",
+          "speak": "ሳ",
+          "ipa": "sa"
+        },
+        {
+          "char": "ሴ",
+          "roman": "se",
+          "hint": "5th order: e",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "ሴ",
+          "ipa": "se"
+        },
+        {
+          "char": "ስ",
+          "roman": "sə",
+          "hint": "6th order: ə or none",
+          "example": "ስም",
+          "exampleRoman": "səm",
+          "meaning": "name",
+          "speak": "ስ",
+          "ipa": "sɨ"
+        },
+        {
+          "char": "ሶ",
+          "roman": "so",
+          "hint": "7th order: o",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "ሶ",
+          "ipa": "so"
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "title": "About the fidel",
+      "body": "<p>The Ethiopic script, called <span lang=\"am\">ፊደል</span> (fidel), was first used for Ge'ez, the classical language of Ethiopia, more than 1,600 years ago. Ge'ez is still the language of the Ethiopian and Eritrean Orthodox churches. Today the script writes Amharic, Tigrinya, Tigre and several other languages of the Horn of Africa.</p>\n<p>It started as an abjad of consonants. Around the 4th century, vowels were added as small changes to each letter, which turned it into an abugida: every character is a consonant plus a vowel.</p>"
+    },
+    {
+      "title": "Reading the orders",
+      "body": "<p>Charts of the fidel are laid out as a grid: one row per consonant, seven columns for the vowel orders ä, u, i, a, e, ə, o. Amharic has about 33 base letters, so the full grid has over 230 characters, plus extra forms with a w-glide (<span lang=\"am\">ሏ</span> lwa, <span lang=\"am\">ቋ</span> q'wa).</p>\n<p>You do not need to memorize 230 separate shapes. Learn the base letters, then learn the seven patterns. Most letters follow them; the ones that don't (<span lang=\"am\">ሉ</span>, <span lang=\"am\">ሩ</span>, <span lang=\"am\">ፉ</span>, <span lang=\"am\">ሎ</span> …) are worth noting as you meet them.</p>"
+    },
+    {
+      "title": "The sixth order",
+      "body": "<p>The sixth order (<span lang=\"am\">ል, ብ, ስ</span> …) is said with a short ə, or with no vowel at all. Amharic has no letter for a bare consonant, so the sixth order does both jobs: <span lang=\"am\">ልጅ</span> (child) is ləj, with the ጅ said as plain j.</p>\n<p>The rule of thumb: at the end of a word and before another consonant it is usually silent; between consonants that would be hard to say together it is a short ə.</p>"
+    },
+    {
+      "title": "Doubled consonants",
+      "body": "<p>Amharic often doubles a consonant, holding it a little longer, and the fidel does not show it: <span lang=\"am\">ገና</span> is gäna (still, yet) and also gänna (Christmas). Doubling can change the meaning, so learn it with each word. Dictionaries and textbooks sometimes mark it with a dot or a line over the letter.</p>"
+    }
+  ]
+}

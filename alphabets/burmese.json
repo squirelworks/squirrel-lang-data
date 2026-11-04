@@ -1,0 +1,756 @@
+{
+  "schema": "alphabet@1",
+  "id": "burmese",
+  "title": "Burmese",
+  "native": "မြန်မာ",
+  "lang": "my-MM",
+  "langName": "Burmese",
+  "font": "\"Noto Sans Myanmar\", \"Myanmar Text\", \"Padauk\", \"Myanmar MN\", sans-serif",
+  "blurb": "33 round consonants, vowels and tones written around them, and medial letters that hook onto a consonant.",
+  "writeTip": "Most letters are a circle or part of one, opened at a different side. Draw the circle in one smooth stroke, then add any extra piece.",
+  "audio": "ipa",
+  "voice": "hi",
+  "notes": [
+    "The Burmese (Myanmar) script for SquirrelGo Alphabets. Romanization is a simplified common style (hs for the breathy s, ht and hp for aspirates, th for θ). Each consonant's hint gives its traditional name. eSpeak NG reads Burmese letters poorly, so the sounds are made from the IPA, without tones. Hints, groupings and articles are original."
+  ],
+  "lessons": [
+    {
+      "title": "The ka row",
+      "note": "The chart is read in rows of five: plain, puffed, voiced, voiced (for Pali words), nasal. Every consonant carries a short a.",
+      "group": "Consonants",
+      "cols": 5,
+      "chars": [
+        {
+          "char": "က",
+          "roman": "ka",
+          "hint": "k without a puff of air; named ka gyi, big ka",
+          "example": "ကြက်",
+          "exampleRoman": "kyet",
+          "meaning": "chicken",
+          "speak": "",
+          "ipa": "ka",
+          "exampleLang": "",
+          "exampleIpa": "tɕɛʔ"
+        },
+        {
+          "char": "ခ",
+          "roman": "kha",
+          "hint": "k with a puff of air; named kha gwe, curved kha",
+          "example": "ခွေး",
+          "exampleRoman": "khwe",
+          "meaning": "dog",
+          "speak": "",
+          "ipa": "kʰa",
+          "exampleLang": "",
+          "exampleIpa": "kʰwe"
+        },
+        {
+          "char": "ဂ",
+          "roman": "ga",
+          "hint": "g; named ga nge, small ga",
+          "example": "ဂီတ",
+          "exampleRoman": "gita",
+          "meaning": "music",
+          "speak": "",
+          "ipa": "ɡa",
+          "exampleLang": "",
+          "exampleIpa": "ɡita"
+        },
+        {
+          "char": "ဃ",
+          "roman": "ga",
+          "hint": "g, in words from Pali; named ga gyi, big ga",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "ɡa",
+          "exampleLang": "",
+          "exampleIpa": ""
+        },
+        {
+          "char": "င",
+          "roman": "nga",
+          "hint": "ng as in sing, even at the start of a word",
+          "example": "ငါး",
+          "exampleRoman": "nga",
+          "meaning": "fish",
+          "speak": "",
+          "ipa": "ŋa",
+          "exampleLang": "",
+          "exampleIpa": "ŋa"
+        }
+      ]
+    },
+    {
+      "title": "The sa row",
+      "note": "In Burmese this row became s and z sounds, and ည became ny.",
+      "group": "Consonants",
+      "cols": 5,
+      "chars": [
+        {
+          "char": "စ",
+          "roman": "sa",
+          "hint": "s; named sa lone, round sa",
+          "example": "စာ",
+          "exampleRoman": "sa",
+          "meaning": "letter, writing",
+          "speak": "",
+          "ipa": "sa",
+          "exampleLang": "",
+          "exampleIpa": "sa"
+        },
+        {
+          "char": "ဆ",
+          "roman": "hsa",
+          "hint": "s with a puff of air; named hsa lein, twisted hsa",
+          "example": "ဆား",
+          "exampleRoman": "hsa",
+          "meaning": "salt",
+          "speak": "",
+          "ipa": "sʰa",
+          "exampleLang": "",
+          "exampleIpa": "sʰa"
+        },
+        {
+          "char": "ဇ",
+          "roman": "za",
+          "hint": "z; named za gwe, curved za",
+          "example": "ဇွန်း",
+          "exampleRoman": "zun",
+          "meaning": "spoon",
+          "speak": "",
+          "ipa": "za",
+          "exampleLang": "",
+          "exampleIpa": "zun"
+        },
+        {
+          "char": "ဈ",
+          "roman": "za",
+          "hint": "z, in a few words; named za myin zwe",
+          "example": "ဈေး",
+          "exampleRoman": "ze",
+          "meaning": "market",
+          "speak": "",
+          "ipa": "za",
+          "exampleLang": "",
+          "exampleIpa": "ze"
+        },
+        {
+          "char": "ည",
+          "roman": "nya",
+          "hint": "ny as in canyon; named nya gyi, big nya",
+          "example": "ည",
+          "exampleRoman": "nya",
+          "meaning": "night",
+          "speak": "",
+          "ipa": "ɲa",
+          "exampleLang": "",
+          "exampleIpa": "ɲa"
+        }
+      ]
+    },
+    {
+      "title": "The ta row",
+      "group": "Consonants",
+      "cols": 5,
+      "chars": [
+        {
+          "char": "တ",
+          "roman": "ta",
+          "hint": "t without a puff of air; named ta wun pu, potbellied ta",
+          "example": "တောင်",
+          "exampleRoman": "taung",
+          "meaning": "mountain",
+          "speak": "",
+          "ipa": "ta",
+          "exampleLang": "",
+          "exampleIpa": "taun"
+        },
+        {
+          "char": "ထ",
+          "roman": "hta",
+          "hint": "t with a puff of air; named hta sin du, elephant-hook hta",
+          "example": "ထမင်း",
+          "exampleRoman": "htamin",
+          "meaning": "cooked rice",
+          "speak": "",
+          "ipa": "tʰa",
+          "exampleLang": "",
+          "exampleIpa": "tʰəmin"
+        },
+        {
+          "char": "ဒ",
+          "roman": "da",
+          "hint": "d; named da dwe",
+          "example": "ဒူး",
+          "exampleRoman": "du",
+          "meaning": "knee",
+          "speak": "",
+          "ipa": "da",
+          "exampleLang": "",
+          "exampleIpa": "du"
+        },
+        {
+          "char": "ဓ",
+          "roman": "da",
+          "hint": "d, in words from Pali; named da auk chait, bottom-notched da",
+          "example": "ဓား",
+          "exampleRoman": "da",
+          "meaning": "knife",
+          "speak": "",
+          "ipa": "da",
+          "exampleLang": "",
+          "exampleIpa": "da"
+        },
+        {
+          "char": "န",
+          "roman": "na",
+          "hint": "n; named na nge, small na",
+          "example": "နွား",
+          "exampleRoman": "nwa",
+          "meaning": "cow",
+          "speak": "",
+          "ipa": "na",
+          "exampleLang": "",
+          "exampleIpa": "nwa"
+        }
+      ]
+    },
+    {
+      "title": "The pa row",
+      "group": "Consonants",
+      "cols": 5,
+      "chars": [
+        {
+          "char": "ပ",
+          "roman": "pa",
+          "hint": "p without a puff of air; named pa sauk, steep pa",
+          "example": "ပန်း",
+          "exampleRoman": "pan",
+          "meaning": "flower",
+          "speak": "",
+          "ipa": "pa",
+          "exampleLang": "",
+          "exampleIpa": "pan"
+        },
+        {
+          "char": "ဖ",
+          "roman": "hpa",
+          "hint": "p with a puff of air; named hpa u htoke, hatted hpa",
+          "example": "ဖား",
+          "exampleRoman": "hpa",
+          "meaning": "frog",
+          "speak": "",
+          "ipa": "pʰa",
+          "exampleLang": "",
+          "exampleIpa": "pʰa"
+        },
+        {
+          "char": "ဗ",
+          "roman": "ba",
+          "hint": "b; named ba lak chait, notched ba",
+          "example": "ဗိုက်",
+          "exampleRoman": "baik",
+          "meaning": "belly",
+          "speak": "",
+          "ipa": "ba",
+          "exampleLang": "",
+          "exampleIpa": "baiʔ"
+        },
+        {
+          "char": "ဘ",
+          "roman": "ba",
+          "hint": "b; named ba gone, humped ba",
+          "example": "ဘဲ",
+          "exampleRoman": "be",
+          "meaning": "duck",
+          "speak": "",
+          "ipa": "ba",
+          "exampleLang": "",
+          "exampleIpa": "bɛ"
+        },
+        {
+          "char": "မ",
+          "roman": "ma",
+          "hint": "m",
+          "example": "မိုး",
+          "exampleRoman": "mo",
+          "meaning": "rain, sky",
+          "speak": "",
+          "ipa": "ma",
+          "exampleLang": "",
+          "exampleIpa": "mo"
+        }
+      ]
+    },
+    {
+      "title": "The last eight",
+      "note": "Semivowels, s and h, and အ, the letter that carries a vowel with no consonant.",
+      "group": "Consonants",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "ယ",
+          "roman": "ya",
+          "hint": "y as in yes; named ya pak lak, flat ya",
+          "example": "ယပ်",
+          "exampleRoman": "yat",
+          "meaning": "hand fan",
+          "speak": "",
+          "ipa": "ja",
+          "exampleLang": "",
+          "exampleIpa": "jaʔ"
+        },
+        {
+          "char": "ရ",
+          "roman": "ya",
+          "hint": "y in Yangon speech, r in Pali words and loans; named ya gauk, bent ya",
+          "example": "ရေ",
+          "exampleRoman": "ye",
+          "meaning": "water",
+          "speak": "",
+          "ipa": "ja",
+          "exampleLang": "",
+          "exampleIpa": "je"
+        },
+        {
+          "char": "လ",
+          "roman": "la",
+          "hint": "l",
+          "example": "လ",
+          "exampleRoman": "la",
+          "meaning": "moon, month",
+          "speak": "",
+          "ipa": "la",
+          "exampleLang": "",
+          "exampleIpa": "la"
+        },
+        {
+          "char": "ဝ",
+          "roman": "wa",
+          "hint": "w; a plain circle",
+          "example": "ဝက်",
+          "exampleRoman": "wet",
+          "meaning": "pig",
+          "speak": "",
+          "ipa": "wa",
+          "exampleLang": "",
+          "exampleIpa": "wɛʔ"
+        },
+        {
+          "char": "သ",
+          "roman": "tha",
+          "hint": "th as in thin, often softer, near t",
+          "example": "သစ်ပင်",
+          "exampleRoman": "thitpin",
+          "meaning": "tree",
+          "speak": "",
+          "ipa": "θa",
+          "exampleLang": "",
+          "exampleIpa": "θiʔpin"
+        },
+        {
+          "char": "ဟ",
+          "roman": "ha",
+          "hint": "h",
+          "example": "ဟင်း",
+          "exampleRoman": "hin",
+          "meaning": "curry",
+          "speak": "",
+          "ipa": "ha",
+          "exampleLang": "",
+          "exampleIpa": "hin"
+        },
+        {
+          "char": "ဠ",
+          "roman": "la",
+          "hint": "l, in words from Pali; named la gyi, big la",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "la",
+          "exampleLang": "",
+          "exampleIpa": ""
+        },
+        {
+          "char": "အ",
+          "roman": "a",
+          "hint": "a vowel carrier: holds a vowel at the start of a syllable",
+          "example": "အမေ",
+          "exampleRoman": "ame",
+          "meaning": "mother",
+          "speak": "",
+          "ipa": "ʔa",
+          "exampleLang": "",
+          "exampleIpa": "ʔəme"
+        }
+      ]
+    },
+    {
+      "title": "Letters for Pali words",
+      "note": "The curled-back row of the Indian alphabet. Burmese says them like the ta row, and they mostly appear in religious and learned words.",
+      "group": "Consonants",
+      "cols": 5,
+      "chars": [
+        {
+          "char": "ဋ",
+          "roman": "ta",
+          "hint": "t; named ta talin gyeik",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "ta",
+          "exampleLang": "",
+          "exampleIpa": ""
+        },
+        {
+          "char": "ဌ",
+          "roman": "hta",
+          "hint": "t with a puff of air; named hta win be",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "tʰa",
+          "exampleLang": "",
+          "exampleIpa": ""
+        },
+        {
+          "char": "ဍ",
+          "roman": "da",
+          "hint": "d; named da yin gauk",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "da",
+          "exampleLang": "",
+          "exampleIpa": ""
+        },
+        {
+          "char": "ဎ",
+          "roman": "da",
+          "hint": "d; named da ye hmote",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "da",
+          "exampleLang": "",
+          "exampleIpa": ""
+        },
+        {
+          "char": "ဏ",
+          "roman": "na",
+          "hint": "n; named na gyi, big na",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "na",
+          "exampleLang": "",
+          "exampleIpa": ""
+        }
+      ]
+    },
+    {
+      "title": "Vowels on က",
+      "note": "Vowel signs sit around the consonant. Many come in sets of three, one for each tone: low (plain), high (with း), and creaky (short, with ့ or no mark).",
+      "group": "Vowels",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "ကာ",
+          "roman": "kà",
+          "hint": "ာ: a, low tone; ါ is used instead after round letters like ဂ",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "kà"
+        },
+        {
+          "char": "ကား",
+          "roman": "ká",
+          "hint": "ား: a, high tone",
+          "example": "ကား",
+          "exampleRoman": "ka",
+          "meaning": "car",
+          "speak": "",
+          "ipa": "ká",
+          "exampleLang": "",
+          "exampleIpa": "ka"
+        },
+        {
+          "char": "ကိ",
+          "roman": "ki",
+          "hint": "ိ: i, short creaky tone",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "kḭ"
+        },
+        {
+          "char": "ကီ",
+          "roman": "kì",
+          "hint": "ီ: i, low tone",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "kì"
+        },
+        {
+          "char": "ကု",
+          "roman": "ku",
+          "hint": "ု: u, short creaky tone",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "kṵ"
+        },
+        {
+          "char": "ကူ",
+          "roman": "kù",
+          "hint": "ူ: u, low tone",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "kù"
+        },
+        {
+          "char": "ကေ",
+          "roman": "kè",
+          "hint": "ေ: e, written before the consonant",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "kè"
+        },
+        {
+          "char": "ကဲ",
+          "roman": "ké",
+          "hint": "ဲ: e as in bed, high tone",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "kɛ́"
+        },
+        {
+          "char": "ကော",
+          "roman": "káw",
+          "hint": "ော: aw as in saw, high tone",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "kɔ́"
+        },
+        {
+          "char": "ကော်",
+          "roman": "kàw",
+          "hint": "ော်: aw, low tone",
+          "example": "ကော်ဖီ",
+          "exampleRoman": "kawhpi",
+          "meaning": "coffee",
+          "speak": "",
+          "ipa": "kɔ̀",
+          "exampleLang": "",
+          "exampleIpa": "kɔpʰi"
+        },
+        {
+          "char": "ကို",
+          "roman": "kò",
+          "hint": "ို: o as in go, low tone",
+          "example": "ကိုကို",
+          "exampleRoman": "koko",
+          "meaning": "older brother",
+          "speak": "",
+          "ipa": "kò",
+          "exampleLang": "",
+          "exampleIpa": "koko"
+        },
+        {
+          "char": "ကံ",
+          "roman": "kàn",
+          "hint": "ံ: a nasal n at the end",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "kàɴ"
+        }
+      ]
+    },
+    {
+      "title": "Vowel letters",
+      "note": "Most syllables that start with a vowel use အ with a vowel sign. These few letters stand for a vowel on their own.",
+      "group": "Vowels",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "ဣ",
+          "roman": "i",
+          "hint": "i, short; in a few Pali words",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "ḭ"
+        },
+        {
+          "char": "ဤ",
+          "roman": "i",
+          "hint": "i, low tone; the word for this",
+          "example": "ဤ",
+          "exampleRoman": "i",
+          "meaning": "this",
+          "speak": "",
+          "ipa": "ì",
+          "exampleLang": "",
+          "exampleIpa": "i"
+        },
+        {
+          "char": "ဥ",
+          "roman": "u",
+          "hint": "u, short creaky tone",
+          "example": "ဥ",
+          "exampleRoman": "u",
+          "meaning": "egg",
+          "speak": "",
+          "ipa": "ṵ",
+          "exampleLang": "",
+          "exampleIpa": "u"
+        },
+        {
+          "char": "ဦ",
+          "roman": "u",
+          "hint": "u, low tone; with း it is the title U, Mr",
+          "example": "ဦး",
+          "exampleRoman": "u",
+          "meaning": "Mr, uncle",
+          "speak": "",
+          "ipa": "ù",
+          "exampleLang": "",
+          "exampleIpa": "u"
+        },
+        {
+          "char": "ဧ",
+          "roman": "e",
+          "hint": "e, low tone",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "è"
+        },
+        {
+          "char": "ဩ",
+          "roman": "aw",
+          "hint": "aw, high tone",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "ɔ́"
+        }
+      ]
+    },
+    {
+      "title": "Medials and marks",
+      "note": "Four medial signs hook onto a consonant to add y, w or h to it, and three marks set the tone or end the syllable.",
+      "group": "Signs",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "ကျ",
+          "roman": "kya",
+          "hint": "ျ: medial y, a hook on the right; ky is said ch",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "tɕa"
+        },
+        {
+          "char": "ကြ",
+          "roman": "kya",
+          "hint": "ြ: medial r, a bracket around the letter; said like ျ",
+          "example": "ကြက်",
+          "exampleRoman": "kyet",
+          "meaning": "chicken",
+          "speak": "",
+          "ipa": "tɕa",
+          "exampleLang": "",
+          "exampleIpa": "tɕɛʔ"
+        },
+        {
+          "char": "ကွ",
+          "roman": "kwa",
+          "hint": "ွ: medial w, a small circle below",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "kwa"
+        },
+        {
+          "char": "မှ",
+          "roman": "hma",
+          "hint": "ှ: medial h, a tail below; the m, n or l is breathed",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "m̥a"
+        },
+        {
+          "char": "က်",
+          "roman": "k",
+          "hint": "်: asat, kills the vowel; a final k, t or p becomes a catch in the throat",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "ʔ"
+        },
+        {
+          "char": "က့",
+          "roman": "ka",
+          "hint": "့: the creaky tone mark, a dot below",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "ka̰"
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "title": "Why the letters are round",
+      "body": "<p>Burmese, like Odia and Sinhala, was written for centuries on palm leaves with a stylus. Straight lines along the leaf would split it, so the letters came to be built from circles, half circles and small hooks. The script itself came from the Mon, who had taken it from southern India; it reached the Burmans in the 11th century, and Shan, Karen and Mon are written with versions of it today.</p>\n<p>The circles make some letters look alike. Watch where a circle opens and what is added to it: <span lang=\"my\">ဝ</span> is a closed circle, <span lang=\"my\">ဂ</span> opens at the top, and <span lang=\"my\">င</span> opens at the bottom.</p>"
+    },
+    {
+      "title": "Tones in the spelling",
+      "body": "<p>Burmese has three tones, and a fourth kind of syllable that ends in a catch in the throat:</p>\n<table>\n<tr><td lang=\"my\">ကာ</td><td>low: long and level</td></tr>\n<tr><td lang=\"my\">ကား</td><td>high: long, often a little breathy; written with း</td></tr>\n<tr><td lang=\"my\">က့</td><td>creaky: short and tight; written with ့ or no mark</td></tr>\n<tr><td lang=\"my\">ကက်</td><td>checked: cut off by a glottal stop</td></tr>\n</table>\n<p>The vowel sign shows the default tone, and the marks change it. The sounds in this app are spoken without tones, so listen to a native speaker for the melody.</p>"
+    },
+    {
+      "title": "Medials: letters that cling",
+      "body": "<p>Burmese can put y, r, w or h between a consonant and its vowel by writing a medial sign on the consonant instead of a second letter: <span lang=\"my\">ျ</span> on the right, <span lang=\"my\">ြ</span> wrapped around, <span lang=\"my\">ွ</span> below, <span lang=\"my\">ှ</span> as a tail below.</p>\n<p>In modern speech ky and kr are both said ch: <span lang=\"my\">ကျောင်း</span> (school) is spelled kyaung and said chaung, and <span lang=\"my\">မြန်မာ</span> (Myanmar) is said myanma, with the r turned into a y.</p>"
+    },
+    {
+      "title": "The asat and final sounds",
+      "body": "<p>A consonant at the end of a syllable carries the asat, <span lang=\"my\">်</span>, a small curl on top that kills its vowel. Final stops are not said fully: k, t and p all become a catch in the throat, and n, m and ng all become a nasal vowel.</p>\n<p>So <span lang=\"my\">ကြက်</span> (chicken) is spelled kr-a-k but said chet, with a catch at the end.</p>"
+    }
+  ]
+}
