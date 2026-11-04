@@ -4,16 +4,20 @@
   "notes": [
     "Kannada first grammar for the Grammar Learner. Written for this project.",
     "Examples are [Kannada, transliteration, English]; {braces} mark the point of the lesson.",
-    "Drills are { q, en, options, answer, why }; ＿ is the blank."
+    "Drills are { q, en, options, answer, why }; ＿ is the blank.",
+    "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
+    "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
+    "72 lessons, from A1 to C1. Lessons 7–72 were added to cover the rest of the beginner path and the main intermediate and advanced points."
   ],
   "title": "Kannada first grammar",
-  "intro": "Kannada is a Dravidian language: the verb comes last, its ending shows who did it (including he, she or it), and case endings join the end of the noun. These lessons cover sentences without “is”, the present tense, ಇಲ್ಲ and ಅಲ್ಲ for “not”, questions, case endings, and “my” and plurals. The transliteration is simplified: a long vowel is doubled (aa, ii, uu).",
+  "intro": "Kannada is a Dravidian language: the verb comes last, its ending shows who did it (including he, she or it), and case endings join the end of the noun. The 72 lessons run from A1 to C1. They start with sentences without “is”, the present tense, ಇಲ್ಲ and ಅಲ್ಲ, questions and case endings, then add the past, -ಬೇಕು for want and must, participles, -ಅರೆ for “if” and ಎಂದು for reported speech, and end with the passive, spoken Kannada and the connectors and sandhi of written Kannada. The transliteration is simplified: a long vowel is doubled (aa, ii, uu).",
   "lessons": [
     {
       "id": "pronouns",
       "title": "ನಾನು, ನೀವು — no “is”",
       "particle": "ನಾನು",
-      "summary": "Saying what someone is needs no verb; pronouns show gender and politeness.",
+      "summary": "Saying what someone is needs no verb; pronouns show gender and politeness. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "“He is a doctor” is just <b>ಅವರು ಡಾಕ್ಟರ್</b>. The pronouns: <b>ನಾನು</b> I, <b>ನೀನು</b> you (intimate), <b>ನೀವು</b> you (polite or plural), <b>ಅವನು</b> he, <b>ಅವಳು</b> she, <b>ಅವರು</b> he / she (polite) or they, <b>ಅದು</b> it.",
@@ -82,7 +86,8 @@
       "id": "present",
       "title": "The present tense: -ತ್ತ-",
       "particle": "-ತ್ತೇನೆ",
-      "summary": "Stem + -ತ್ತ- + an ending for who does it; the same form also covers the future.",
+      "summary": "Stem + -ತ್ತ- + an ending for who does it; the same form also covers the future. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Add <b>-ತ್ತ-</b> to the stem, then the person ending. For ಮಾಡು (do): <b>ಮಾಡುತ್ತೇನೆ</b> I, <b>ಮಾಡುತ್ತೀಯ</b> you, <b>ಮಾಡುತ್ತೀರಿ</b> you (polite), <b>ಮಾಡುತ್ತಾನೆ</b> he, <b>ಮಾಡುತ್ತಾಳೆ</b> she, <b>ಮಾಡುತ್ತಾರೆ</b> they / polite he, she, <b>ಮಾಡುತ್ತದೆ</b> it, <b>ಮಾಡುತ್ತೇವೆ</b> we. It means “I do” and “I will do”.",
@@ -154,7 +159,8 @@
       "id": "illa-alla",
       "title": "ಇದೆ, ಇಲ್ಲ and ಅಲ್ಲ",
       "particle": "ಇಲ್ಲ ಅಲ್ಲ",
-      "summary": "ಇದೆ: is there. ಇಲ್ಲ: isn't there. ಅಲ್ಲ: is not (something).",
+      "summary": "ಇದೆ: is there. ಇಲ್ಲ: isn't there. ಅಲ್ಲ: is not (something). (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "<b>ಇದೆ</b> means “is there” and <b>ಇಲ್ಲ</b> “isn't there”. For people the verb agrees: ಅವರು ಮನೆಯಲ್ಲಿ <b>ಇದ್ದಾರೆ</b>, “he is at home”. <b>ಅಲ್ಲ</b> denies what something is: ಇದು ಕಾಫಿ <b>ಅಲ್ಲ</b>, “this isn't coffee”.",
@@ -227,7 +233,8 @@
       "id": "questions",
       "title": "Asking questions",
       "particle": "-ಆ",
-      "summary": "Add -ಆ to the end for yes or no; question words stay where the answer goes.",
+      "summary": "Add -ಆ to the end for yes or no; question words stay where the answer goes. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Add <b>-ಆ</b> to the last word for a yes/no question: ಮಾತಾಡುತ್ತೀರಿ → <b>ಮಾತಾಡುತ್ತೀರಾ?</b> Question words: <b>ಏನು</b> what, <b>ಯಾರು</b> who, <b>ಎಲ್ಲಿ</b> where, <b>ಯಾವಾಗ</b> when, <b>ಯಾಕೆ</b> why, <b>ಹೇಗೆ</b> how, <b>ಎಷ್ಟು</b> how much.",
@@ -289,7 +296,8 @@
       "id": "cases",
       "title": "In, from, to: -ಅಲ್ಲಿ, -ಇಂದ, -ಗೆ",
       "particle": "-ಅಲ್ಲಿ -ಗೆ",
-      "summary": "Case endings join the noun where English uses prepositions.",
+      "summary": "Case endings join the noun where English uses prepositions. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "<b>-ಅಲ್ಲಿ</b> (-alli) means “in, at”, <b>-ಇಂದ</b> (-inda) “from”, <b>-ಗೆ / -ಕ್ಕೆ</b> “to, for”. A y or n slips in after some vowels: ಮನೆ → ಮನೆಯಲ್ಲಿ, at home; ಬೆಂಗಳೂರು → ಬೆಂಗಳೂರಿನಲ್ಲಿ.",
@@ -354,7 +362,8 @@
       "id": "nanna-galu",
       "title": "My, and plurals with -ಗಳು",
       "particle": "ನನ್ನ -ಗಳು",
-      "summary": "ನನ್ನ, ನಿಮ್ಮ before the noun; -ಗಳು makes a plural.",
+      "summary": "ನನ್ನ, ನಿಮ್ಮ before the noun; -ಗಳು makes a plural. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "<b>ನನ್ನ</b> my, <b>ನಿನ್ನ</b> your (intimate), <b>ನಿಮ್ಮ</b> your (polite), <b>ಅವನ</b> his, <b>ಅವಳ</b> her, <b>ನಮ್ಮ</b> our. Kannadigas often say ನಮ್ಮ (our) where English says my: ನಮ್ಮ ಮನೆ, “our / my house”.",
@@ -411,6 +420,4940 @@
           "options": ["ನಮ್ಮ", "ನಿಮ್ಮ", "ನನಗೆ", "ಅವನ"],
           "answer": "ನಮ್ಮ",
           "why": "ನಮ್ಮ = our."
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "title": "Numbers: ಒಂದು, ಎರಡು, ಮೂರು",
+      "particle": "ಒಂದು・ಒಬ್ಬ・ಹತ್ತು・ನೂರು",
+      "summary": "Counting uses ಒಂದು, ಎರಡು, ಮೂರು… People are counted with their own forms: ಒಬ್ಬರು, ಇಬ್ಬರು, ಮೂವರು. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ಒಂದು, ಎರಡು, ಮೂರು, ನಾಲ್ಕು, ಐದು, ಆರು, ಏಳು, ಎಂಟು, ಒಂಬತ್ತು, ಹತ್ತು</b>. The number goes before the noun: <b>ಎರಡು</b> ಪುಸ್ತಕಗಳು. <b>ಒಂದು</b> also works like \"a\": <b>ಒಂದು</b> ಮನೆ (a house).",
+          "examples": [
+            ["{ಒಂದು} ಕಾಫಿ ಕೊಡಿ.", "Ondu kaafi kodi.", "One coffee, please."],
+            [
+              "ನನ್ನ ಹತ್ತಿರ {ಮೂರು} ಪುಸ್ತಕಗಳು ಇವೆ.",
+              "Nanna hattira muuru pustakagalu ive.",
+              "I have three books."
+            ]
+          ]
+        },
+        {
+          "h": "People and big numbers",
+          "p": "People: <b>ಒಬ್ಬ</b> (one man), <b>ಒಬ್ಬಳು</b> (one woman), <b>ಒಬ್ಬರು</b> (one person, polite), <b>ಇಬ್ಬರು</b> (two), <b>ಮೂವರು</b> (three), <b>ನಾಲ್ವರು</b> (four). Big numbers: <b>ಇಪ್ಪತ್ತು</b> 20, <b>ಮೂವತ್ತು</b> 30, <b>ಐವತ್ತು</b> 50, <b>ನೂರು</b> 100, <b>ಸಾವಿರ</b> 1,000, <b>ಲಕ್ಷ</b> 100,000.",
+          "examples": [
+            [
+              "ನನಗೆ {ಇಬ್ಬರು} ಅಣ್ಣಂದಿರು ಇದ್ದಾರೆ.",
+              "Nanage ibbaru annandiru iddaare.",
+              "I have two older brothers."
+            ],
+            [
+              "ಇದಕ್ಕೆ {ನೂರು} ರೂಪಾಯಿ.",
+              "Idakke nuuru ruupaayi.",
+              "This is a hundred rupees."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ಚಹಾ ಕೊಡಿ.",
+          "en": "One tea, please.",
+          "options": ["ಒಂದು", "ಒಬ್ಬ", "ಒಬ್ಬರು", "ಮೊದಲ"],
+          "answer": "ಒಂದು",
+          "why": "Things: ಒಂದು."
+        },
+        {
+          "q": "ನನಗೆ ＿ ವರ್ಷ.",
+          "en": "I'm thirty.",
+          "options": ["ಮೂರು", "ಮೂವತ್ತು", "ಮೂವರು", "ಮುನ್ನೂರು"],
+          "answer": "ಮೂವತ್ತು",
+          "why": "30 = ಮೂವತ್ತು."
+        },
+        {
+          "q": "＿ ಬಂದರು.",
+          "en": "Two people came.",
+          "options": ["ಎರಡು", "ಎರಡನೇ", "ಇಬ್ಬರು", "ಇಪ್ಪತ್ತು"],
+          "answer": "ಇಬ್ಬರು",
+          "why": "Two people: ಇಬ್ಬರು."
+        },
+        {
+          "q": "＿ ರೂಪಾಯಿ.",
+          "en": "Fifty rupees.",
+          "options": ["ಐದು", "ಐನೂರು", "ಐವರು", "ಐವತ್ತು"],
+          "answer": "ಐವತ್ತು",
+          "why": "50 = ಐವತ್ತು."
+        },
+        {
+          "q": "ಒಂದು ＿ ರೂಪಾಯಿ.",
+          "en": "One thousand rupees.",
+          "options": ["ಸಾವಿರ", "ನೂರು", "ಲಕ್ಷ", "ಹತ್ತು"],
+          "answer": "ಸಾವಿರ",
+          "why": "1,000 = ಸಾವಿರ."
+        }
+      ]
+    },
+    {
+      "id": "time-days",
+      "title": "The clock and the days: ಗಂಟೆ, ಸೋಮವಾರ",
+      "particle": "ಗಂಟೆ・-ಗೆ・ವಾರ",
+      "summary": "The time is number + ಗಂಟೆ: ಐದು ಗಂಟೆ. \"At\" a time is -ಗೆ. Days end in -ವಾರ: ಸೋಮವಾರ (Monday). (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ಗಂಟೆ ಎಷ್ಟು?</b> = what time is it? <b>ಐದು ಗಂಟೆ</b> = five o'clock. <b>ಐದೂವರೆ</b> = 5:30. At a time: <b>-ಗೆ</b>: ಎಂಟು ಗಂಟೆ<b>ಗೆ</b>. <b>ಬೆಳಿಗ್ಗೆ</b> morning, <b>ಮಧ್ಯಾಹ್ನ</b> afternoon, <b>ಸಂಜೆ</b> evening, <b>ರಾತ್ರಿ</b> night.",
+          "examples": [
+            ["ಈಗ {ಗಂಟೆ ಎಷ್ಟು}?", "Iiga gante eshtu?", "What time is it now?"],
+            [
+              "ಬೆಳಿಗ್ಗೆ {ಎಂಟು ಗಂಟೆಗೆ} ಬನ್ನಿ.",
+              "Beligge entu gantege banni.",
+              "Come at eight in the morning."
+            ]
+          ]
+        },
+        {
+          "h": "Days",
+          "p": "<b>ಭಾನುವಾರ</b> Sun, <b>ಸೋಮವಾರ</b> Mon, <b>ಮಂಗಳವಾರ</b> Tue, <b>ಬುಧವಾರ</b> Wed, <b>ಗುರುವಾರ</b> Thu, <b>ಶುಕ್ರವಾರ</b> Fri, <b>ಶನಿವಾರ</b> Sat. On a day: <b>-ದಂದು</b> or the day alone. <b>ನಿನ್ನೆ</b> yesterday, <b>ಇವತ್ತು</b> today, <b>ನಾಳೆ</b> tomorrow.",
+          "examples": [
+            ["{ಭಾನುವಾರ} ರಜೆ.", "Bhaanuvaara raje.", "Sunday is a holiday."],
+            [
+              "{ನಿನ್ನೆ} ನಾನು ದೇವಸ್ಥಾನಕ್ಕೆ ಹೋದೆ.",
+              "Ninne naanu devasthaanakke hode.",
+              "Yesterday I went to the temple."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಈಗ ಗಂಟೆ ＿?",
+          "en": "What time is it now?",
+          "options": ["ಎಷ್ಟು", "ಏನು", "ಯಾರು", "ಎಲ್ಲಿ"],
+          "answer": "ಎಷ್ಟು",
+          "why": "The time: ಗಂಟೆ ಎಷ್ಟು?"
+        },
+        {
+          "q": "ಆರು ಗಂಟೆ＿ ಬರುತ್ತೇನೆ.",
+          "en": "I'll come at six.",
+          "options": ["ಯಲ್ಲಿ", "ಗೆ", "ಯಿಂದ", "ಯನ್ನು"],
+          "answer": "ಗೆ",
+          "why": "At (time): -ಗೆ."
+        },
+        {
+          "q": "ಇವತ್ತು ಯಾವ ＿?",
+          "en": "What day is it today?",
+          "options": ["ಗಂಟೆ", "ವರ್ಷ", "ವಾರ", "ತಿಂಗಳು"],
+          "answer": "ವಾರ",
+          "why": "Day of the week: ವಾರ."
+        },
+        {
+          "q": "＿ ನಾನು ಆಫೀಸಿಗೆ ಹೋಗುತ್ತೇನೆ.",
+          "en": "Tomorrow I'll go to the office.",
+          "options": ["ನಿನ್ನೆ", "ಮೊನ್ನೆ", "ಈಗಲೇ", "ನಾಳೆ"],
+          "answer": "ನಾಳೆ",
+          "why": "Tomorrow: ನಾಳೆ."
+        },
+        {
+          "q": "ಮೂರೂ＿",
+          "en": "half past three",
+          "options": ["ವರೆ", "ಕಾಲು", "ಮುಕ್ಕಾಲು", "ಅರ್ಧ"],
+          "answer": "ವರೆ",
+          "why": "Half past: -ಊವರೆ."
+        }
+      ]
+    },
+    {
+      "id": "demonstratives",
+      "title": "This and that: ಇದು, ಅದು, ಈ, ಆ",
+      "particle": "ಇದು・ಅದು・ಈ・ಆ",
+      "summary": "ಇದು / ಅದು (this / that) stand alone. Before a noun they shorten to ಈ / ಆ: ಈ ಮನೆ (this house). (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Standalone: <b>ಇದು</b> ನನ್ನ ಮನೆ. Before a noun: <b>ಈ</b> ಪುಸ್ತಕ, <b>ಆ</b> ಹುಡುಗ. Plural: <b>ಇವು</b>, <b>ಅವು</b>. People: <b>ಇವನು</b> / <b>ಅವನು</b> (this / that man), <b>ಇವಳು</b> / <b>ಅವಳು</b>, <b>ಇವರು</b> / <b>ಅವರು</b> (polite or plural).",
+          "examples": [
+            ["{ಇದು} ಏನು?", "Idu enu?", "What is this?"],
+            [
+              "{ಆ} ಅಂಗಡಿ ಮುಚ್ಚಿದೆ.",
+              "Aa angadi muchchide.",
+              "That shop is closed."
+            ]
+          ]
+        },
+        {
+          "h": "Here, there, like this",
+          "p": "<b>ಇಲ್ಲಿ</b> here, <b>ಅಲ್ಲಿ</b> there, <b>ಎಲ್ಲಿ</b> where. <b>ಹೀಗೆ</b> like this, <b>ಹಾಗೆ</b> like that, <b>ಹೇಗೆ</b> how. The pattern i- (near), a- (far), e- (question) runs through them all.",
+          "examples": [
+            ["{ಇಲ್ಲಿ} ಕುಳಿತುಕೊಳ್ಳಿ.", "Illi kulitukolli.", "Please sit here."],
+            [
+              "{ಇವರು} ನಮ್ಮ ಟೀಚರ್.",
+              "Ivaru namma tiichar.",
+              "This is our teacher."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ನನ್ನ ಬ್ಯಾಗ್.",
+          "en": "This is my bag.",
+          "options": ["ಇದು", "ಈ", "ಇಲ್ಲಿ", "ಹೀಗೆ"],
+          "answer": "ಇದು",
+          "why": "Standalone: ಇದು."
+        },
+        {
+          "q": "＿ ಸಿನಿಮಾ ಚೆನ್ನಾಗಿದೆ.",
+          "en": "This film is good.",
+          "options": ["ಇದು", "ಈ", "ಇಲ್ಲಿ", "ಇವು"],
+          "answer": "ಈ",
+          "why": "Before a noun: ಈ."
+        },
+        {
+          "q": "ಬಸ್ ನಿಲ್ದಾಣ ＿ ಇದೆ.",
+          "en": "The bus stand is there.",
+          "options": ["ಆ", "ಅದು", "ಅಲ್ಲಿ", "ಹಾಗೆ"],
+          "answer": "ಅಲ್ಲಿ",
+          "why": "There: ಅಲ್ಲಿ."
+        },
+        {
+          "q": "＿ ಮಾಡಿ.",
+          "en": "Do it like this.",
+          "options": ["ಇದು", "ಈ", "ಇಲ್ಲಿ", "ಹೀಗೆ"],
+          "answer": "ಹೀಗೆ",
+          "why": "Like this: ಹೀಗೆ."
+        },
+        {
+          "q": "＿ ಯಾರು?",
+          "en": "Who is that gentleman?",
+          "options": ["ಅವರು", "ಅದು", "ಆ", "ಅಲ್ಲಿ"],
+          "answer": "ಅವರು",
+          "why": "A polite person: ಅವರು."
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "title": "Describing: ಒಳ್ಳೆಯ, ದೊಡ್ಡ, -ಆದ",
+      "particle": "adjective + noun・-ಆದ・-ಆಗಿದೆ",
+      "summary": "Adjectives come before the noun and don't change: ಒಳ್ಳೆಯ ಹುಡುಗ, ಒಳ್ಳೆಯ ಹುಡುಗಿ. Many are a noun + -ಆದ: ಸುಂದರವಾದ (beautiful). (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Basic: <b>ಒಳ್ಳೆಯ</b> (good), <b>ದೊಡ್ಡ</b> (big), <b>ಚಿಕ್ಕ</b> (small), <b>ಹೊಸ</b> (new), <b>ಹಳೆಯ</b> (old). Noun + <b>-ಆದ</b>: ಸುಂದರ → <b>ಸುಂದರವಾದ</b>, ಬಿಸಿ → <b>ಬಿಸಿಯಾದ</b>.",
+          "examples": [
+            [
+              "ಅದು ಒಂದು {ದೊಡ್ಡ} ಮನೆ.",
+              "Adu ondu dodda mane.",
+              "That's a big house."
+            ],
+            ["{ಸುಂದರವಾದ} ಊರು.", "Sundaravaada uuru.", "A beautiful town."]
+          ]
+        },
+        {
+          "h": "As a predicate",
+          "p": "After the noun, an adjective becomes a noun with -ದು: ಮನೆ <b>ದೊಡ್ಡದು</b> (the house is big). Or use <b>-ಆಗಿದೆ</b>: ಊಟ <b>ರುಚಿಯಾಗಿದೆ</b> (the food is tasty). <b>ಚೆನ್ನಾಗಿದೆ</b> = it's good, it's nice.",
+          "examples": [
+            ["ಊಟ {ರುಚಿಯಾಗಿದೆ}.", "Uuta ruchiyaagide.", "The food is tasty."],
+            ["ಈ ಮನೆ {ದೊಡ್ಡದು}.", "Ii mane doddadu.", "This house is big."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಅವನು ಒಬ್ಬ ＿ ವಿದ್ಯಾರ್ಥಿ.",
+          "en": "He's a good student.",
+          "options": ["ಒಳ್ಳೆಯ", "ಒಳ್ಳೆಯದು", "ಚೆನ್ನಾಗಿ", "ಚೆನ್ನಾಗಿದೆ"],
+          "answer": "ಒಳ್ಳೆಯ",
+          "why": "Before a noun: ಒಳ್ಳೆಯ."
+        },
+        {
+          "q": "＿ ಅಂಗಿ ಕೊಂಡೆ.",
+          "en": "I bought a new shirt.",
+          "options": ["ಹೊಸದು", "ಹೊಸ", "ಹೊಸದಾಗಿ", "ಹೊಸವು"],
+          "answer": "ಹೊಸ",
+          "why": "Before a noun: ಹೊಸ."
+        },
+        {
+          "q": "＿ ಹುಡುಗಿ.",
+          "en": "A beautiful girl.",
+          "options": ["ಸುಂದರ", "ಸುಂದರವಾಗಿ", "ಸುಂದರವಾದ", "ಸುಂದರವಾದದ್ದು"],
+          "answer": "ಸುಂದರವಾದ",
+          "why": "Noun + -ಆದ."
+        },
+        {
+          "q": "ನೀರು ＿ ಇದೆ.",
+          "en": "The water is cold.",
+          "options": ["ತಣ್ಣನೆಯ", "ತಣ್ಣಗಿನ", "ತಣ್ಣನೆಯದು", "ತಣ್ಣಗೆ"],
+          "answer": "ತಣ್ಣಗೆ",
+          "why": "Predicate: ತಣ್ಣಗೆ ಇದೆ."
+        },
+        {
+          "q": "ಸಿನಿಮಾ ＿.",
+          "en": "The film is nice.",
+          "options": ["ಚೆನ್ನಾಗಿದೆ", "ಒಳ್ಳೆಯ", "ಚೆನ್ನಾಗಿ", "ದೊಡ್ಡ"],
+          "answer": "ಚೆನ್ನಾಗಿದೆ",
+          "why": "It's nice: ಚೆನ್ನಾಗಿದೆ."
+        }
+      ]
+    },
+    {
+      "id": "question-words",
+      "title": "Question words: ಏನು, ಯಾರು, ಎಲ್ಲಿ",
+      "particle": "ಏನು・ಯಾರು・ಎಲ್ಲಿ・ಯಾವಾಗ・ಯಾಕೆ・ಹೇಗೆ",
+      "summary": "Question words go where the answer would be, usually just before the verb: ನೀವು ಎಲ್ಲಿಗೆ ಹೋಗುತ್ತಿದ್ದೀರಿ? (where are you going?). (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ಏನು</b> what, <b>ಯಾರು</b> who, <b>ಎಲ್ಲಿ</b> where, <b>ಯಾವಾಗ</b> when, <b>ಯಾಕೆ</b> why, <b>ಹೇಗೆ</b> how, <b>ಎಷ್ಟು</b> how much, how many, <b>ಯಾವ</b> which.",
+          "examples": [
+            ["ನಿಮ್ಮ ಹೆಸರು {ಏನು}?", "Nimma hesaru enu?", "What's your name?"],
+            ["ನೀವು {ಹೇಗೆ} ಇದ್ದೀರಿ?", "Niivu hege iddiiri?", "How are you?"]
+          ]
+        },
+        {
+          "h": "With case endings",
+          "p": "Question words take endings: <b>ಯಾರಿಗೆ</b> (to whom), <b>ಯಾರನ್ನು</b> (whom), <b>ಎಲ್ಲಿಗೆ</b> (where to), <b>ಎಲ್ಲಿಂದ</b> (from where). <b>ಯಾವ</b> + noun = which: <b>ಯಾವ</b> ಬಸ್?",
+          "examples": [
+            [
+              "ನೀವು {ಎಲ್ಲಿಂದ} ಬಂದಿದ್ದೀರಿ?",
+              "Niivu ellinda bandiddiiri?",
+              "Where have you come from?"
+            ],
+            ["ಇದು {ಎಷ್ಟು}?", "Idu eshtu?", "How much is this?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನಿಮ್ಮ ಹೆಸರು ＿?",
+          "en": "What's your name?",
+          "options": ["ಏನು", "ಯಾರು", "ಎಲ್ಲಿ", "ಹೇಗೆ"],
+          "answer": "ಏನು",
+          "why": "What: ಏನು."
+        },
+        {
+          "q": "ಅವರು ＿?",
+          "en": "Who is he?",
+          "options": ["ಏನು", "ಯಾರು", "ಯಾವ", "ಎಷ್ಟು"],
+          "answer": "ಯಾರು",
+          "why": "Who: ಯಾರು."
+        },
+        {
+          "q": "ನೀವು ＿ ಬರುತ್ತೀರಿ?",
+          "en": "When will you come?",
+          "options": ["ಎಲ್ಲಿ", "ಯಾರು", "ಯಾವಾಗ", "ಯಾವ"],
+          "answer": "ಯಾವಾಗ",
+          "why": "When: ಯಾವಾಗ."
+        },
+        {
+          "q": "＿ ಬಸ್ ಮೈಸೂರಿಗೆ ಹೋಗುತ್ತದೆ?",
+          "en": "Which bus goes to Mysuru?",
+          "options": ["ಯಾರು", "ಏನು", "ಎಲ್ಲಿ", "ಯಾವ"],
+          "answer": "ಯಾವ",
+          "why": "Which + noun: ಯಾವ."
+        },
+        {
+          "q": "ನೀವು ＿ ಬಂದಿದ್ದೀರಿ?",
+          "en": "Where have you come from?",
+          "options": ["ಎಲ್ಲಿಂದ", "ಎಲ್ಲಿಗೆ", "ಎಲ್ಲಿ", "ಯಾರಿಂದ"],
+          "answer": "ಎಲ್ಲಿಂದ",
+          "why": "From where: ಎಲ್ಲಿಂದ."
+        }
+      ]
+    },
+    {
+      "id": "iru-be",
+      "title": "Being somewhere: ಇದ್ದೇನೆ, ಇದ್ದಾನೆ, ಇದೆ",
+      "particle": "ಇರು",
+      "summary": "ಇರು (be, stay) says where someone or something is, and that it exists. Its endings show who: ನಾನು ಮನೆಯಲ್ಲಿ ಇದ್ದೇನೆ (I'm at home). (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ಇದ್ದೇನೆ</b> I am, <b>ಇದ್ದೀಯ</b> you are (familiar), <b>ಇದ್ದೀರಿ</b> you are (polite), <b>ಇದ್ದಾನೆ</b> he is, <b>ಇದ್ದಾಳೆ</b> she is, <b>ಇದ್ದಾರೆ</b> they are, <b>ಇದೆ</b> it is, <b>ಇವೆ</b> they (things) are.",
+          "examples": [
+            [
+              "ಅಮ್ಮ ಅಡುಗೆಮನೆಯಲ್ಲಿ {ಇದ್ದಾರೆ}.",
+              "Amma adugemaneyalli iddaare.",
+              "Mum is in the kitchen."
+            ],
+            [
+              "ಮೇಜಿನ ಮೇಲೆ ಪುಸ್ತಕ {ಇದೆ}.",
+              "Mejina mele pustaka ide.",
+              "There's a book on the table."
+            ]
+          ]
+        },
+        {
+          "h": "Was",
+          "p": "The past is <b>ಇದ್ದೆ</b> (I was), <b>ಇದ್ದ</b> (he was), <b>ಇದ್ದಳು</b> (she was), <b>ಇದ್ದರು</b> (they were), <b>ಇತ್ತು</b> (it was). Remember: \"he is a teacher\" needs no verb at all; ಇರು is for where and whether.",
+          "examples": [
+            [
+              "ನಿನ್ನೆ ನಾನು ಮೈಸೂರಿನಲ್ಲಿ {ಇದ್ದೆ}.",
+              "Ninne naanu maisuurinalli idde.",
+              "Yesterday I was in Mysuru."
+            ],
+            [
+              "ಅಲ್ಲಿ ತುಂಬಾ ಜನ {ಇದ್ದರು}.",
+              "Alli tumbaa jana iddaru.",
+              "There were a lot of people there."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನಾನು ಆಫೀಸಿನಲ್ಲಿ ＿.",
+          "en": "I'm at the office.",
+          "options": ["ಇದ್ದೇನೆ", "ಇದ್ದಾನೆ", "ಇದೆ", "ಇದ್ದಾರೆ"],
+          "answer": "ಇದ್ದೇನೆ",
+          "why": "\"I\": ಇದ್ದೇನೆ."
+        },
+        {
+          "q": "ಬ್ಯಾಂಕ್ ಎಲ್ಲಿ ＿?",
+          "en": "Where is the bank?",
+          "options": ["ಇದ್ದೇನೆ", "ಇದೆ", "ಇದ್ದಾಳೆ", "ಇದ್ದೀರಿ"],
+          "answer": "ಇದೆ",
+          "why": "A thing: ಇದೆ."
+        },
+        {
+          "q": "ಅವಳು ಮನೆಯಲ್ಲಿ ＿.",
+          "en": "She is at home.",
+          "options": ["ಇದ್ದಾನೆ", "ಇದೆ", "ಇದ್ದಾಳೆ", "ಇದ್ದೇನೆ"],
+          "answer": "ಇದ್ದಾಳೆ",
+          "why": "\"She\": ಇದ್ದಾಳೆ."
+        },
+        {
+          "q": "ನಿನ್ನೆ ಮಳೆ ＿.",
+          "en": "There was rain yesterday.",
+          "options": ["ಇದೆ", "ಇದ್ದೆ", "ಇದ್ದರು", "ಇತ್ತು"],
+          "answer": "ಇತ್ತು",
+          "why": "\"It was\": ಇತ್ತು."
+        },
+        {
+          "q": "ನೀವು ಹೇಗೆ ＿?",
+          "en": "How are you?",
+          "options": ["ಇದ್ದೀರಿ", "ಇದ್ದೀಯ", "ಇದ್ದಾರೆ", "ಇದೆ"],
+          "answer": "ಇದ್ದೀರಿ",
+          "why": "Polite \"you\": ಇದ್ದೀರಿ."
+        }
+      ]
+    },
+    {
+      "id": "past",
+      "title": "The past: ಬಂದೆ, ಮಾಡಿದೆ",
+      "particle": "-ದ-・-ಇದ-",
+      "summary": "The past puts -ದ- or -ಇದ- on the verb, then the ending for who: ಮಾಡಿದೆ (I did), ಮಾಡಿದಳು (she did). Common verbs have short forms: ಬಂದೆ (I came), ಹೋದೆ (I went). (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ಮಾಡು</b> (do): ಮಾಡಿದೆ I, ಮಾಡಿದೆವು we, ಮಾಡಿದಿರಿ you, ಮಾಡಿದನು / ಮಾಡಿದ he, ಮಾಡಿದಳು she, ಮಾಡಿದರು they, <b>ಮಾಡಿತು</b> it. The same pattern: ನೋಡಿದೆ (saw), ಓದಿದೆ (read), ಹೇಳಿದೆ (said).",
+          "examples": [
+            [
+              "ನಾನು ಕೆಲಸ {ಮಾಡಿದೆ}.",
+              "Naanu kelasa maadide.",
+              "I did the work."
+            ],
+            [
+              "ಅವಳು ಪತ್ರ {ಬರೆದಳು}.",
+              "Avalu patra baredalu.",
+              "She wrote a letter."
+            ]
+          ]
+        },
+        {
+          "h": "Short pasts",
+          "p": "Learn these: ಬಾ → <b>ಬಂದೆ</b> (came), ಹೋಗು → <b>ಹೋದೆ</b> (went), ತಿನ್ನು → <b>ತಿಂದೆ</b> (ate), ಕೊಡು → <b>ಕೊಟ್ಟೆ</b> (gave), ತರು → <b>ತಂದೆ</b> (brought). An \"it\" subject ends in -ತು: ಬಸ್ <b>ಬಂತು</b>, ಸಮಯ <b>ಆಯಿತು</b>.",
+          "examples": [
+            [
+              "ಅವರು ನಿನ್ನೆ {ಬಂದರು}.",
+              "Avaru ninne bandaru.",
+              "They came yesterday."
+            ],
+            ["ಬಸ್ {ಬಂತು}.", "Bas bantu.", "The bus came."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನಾನು ಸಿನಿಮಾ ＿.",
+          "en": "I saw a film.",
+          "options": ["ನೋಡಿದೆ", "ನೋಡುತ್ತೇನೆ", "ನೋಡಿದಳು", "ನೋಡು"],
+          "answer": "ನೋಡಿದೆ",
+          "why": "\"I\" in the past: -ಇದೆ."
+        },
+        {
+          "q": "ಅವನು ಊರಿಗೆ ＿.",
+          "en": "He went to his home town.",
+          "options": ["ಹೋದೆ", "ಹೋದ", "ಹೋಯಿತು", "ಹೋಗುತ್ತಾನೆ"],
+          "answer": "ಹೋದ",
+          "why": "\"He\" went: ಹೋದ."
+        },
+        {
+          "q": "ನಾವು ದೋಸೆ ＿.",
+          "en": "We ate dosa.",
+          "options": ["ತಿಂದೆ", "ತಿಂದರು", "ತಿಂದೆವು", "ತಿನ್ನುತ್ತೇವೆ"],
+          "answer": "ತಿಂದೆವು",
+          "why": "\"We\": -ಎವು."
+        },
+        {
+          "q": "ರೈಲು ＿.",
+          "en": "The train came.",
+          "options": ["ಬಂದ", "ಬಂದೆ", "ಬಂದಳು", "ಬಂತು"],
+          "answer": "ಬಂತು",
+          "why": "An \"it\" subject: ಬಂತು."
+        },
+        {
+          "q": "ಅವಳು ನನಗೆ ಹಣ ＿.",
+          "en": "She gave me money.",
+          "options": ["ಕೊಟ್ಟಳು", "ಕೊಟ್ಟೆ", "ಕೊಡುತ್ತಾಳೆ", "ಕೊಟ್ಟಿತು"],
+          "answer": "ಕೊಟ್ಟಳು",
+          "why": "ಕೊಡು → ಕೊಟ್ಟ-."
+        }
+      ]
+    },
+    {
+      "id": "gender-endings",
+      "title": "He, she, it: -ಆನೆ, -ಆಳೆ, -ಅದೆ",
+      "particle": "-ಆನೆ・-ಆಳೆ・-ಆರೆ・-ಅದೆ",
+      "summary": "Kannada verbs show the gender of a third person: ಬರುತ್ತಾನೆ (he comes), ಬರುತ್ತಾಳೆ (she comes), ಬರುತ್ತದೆ (it comes). ಅವರು and -ಆರೆ cover polite and plural. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Present: <b>-ತ್ತಾನೆ</b> he, <b>-ತ್ತಾಳೆ</b> she, <b>-ತ್ತಾರೆ</b> they or polite, <b>-ತ್ತದೆ</b> it. Animals and things are \"it\": ನಾಯಿ ಬೊಗಳು<b>ತ್ತದೆ</b> (the dog barks). Neuter plural things take <b>-ತ್ತವೆ</b>.",
+          "examples": [
+            [
+              "ಅಪ್ಪ ಪೇಪರ್ ಓದು{ತ್ತಾರೆ}.",
+              "Appa pepar oduttaare.",
+              "Dad reads the paper."
+            ],
+            ["ಮಗು ಅಳು{ತ್ತದೆ}.", "Magu aluttade.", "The baby is crying."]
+          ]
+        },
+        {
+          "h": "In the past",
+          "p": "Past: <b>-ಅನು</b> / <b>-ಅ</b> he (ಬಂದನು, ಬಂದ), <b>-ಅಳು</b> she (ಬಂದಳು), <b>-ಅರು</b> they (ಬಂದರು), <b>-ಇತು</b> / <b>-ತು</b> it (ಬಂತು, ಹೋಯಿತು). Respect for an older person uses -ಆರೆ / -ಅರು even for one person.",
+          "examples": [
+            [
+              "ತಾತ ನಿನ್ನೆ {ಬಂದರು}.",
+              "Taata ninne bandaru.",
+              "Grandpa came yesterday."
+            ],
+            ["ಬೆಕ್ಕು ಓಡಿ {ಹೋಯಿತು}.", "Bekku odi hoyitu.", "The cat ran away."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಅವನು ಕ್ರಿಕೆಟ್ ಆಡು＿.",
+          "en": "He plays cricket.",
+          "options": ["ತ್ತಾನೆ", "ತ್ತಾಳೆ", "ತ್ತದೆ", "ತ್ತೇನೆ"],
+          "answer": "ತ್ತಾನೆ",
+          "why": "\"He\": -ತ್ತಾನೆ."
+        },
+        {
+          "q": "ಅವಳು ಹಾಡು＿.",
+          "en": "She sings.",
+          "options": ["ತ್ತಾನೆ", "ತ್ತಾಳೆ", "ತ್ತದೆ", "ತ್ತೀರಿ"],
+          "answer": "ತ್ತಾಳೆ",
+          "why": "\"She\": -ತ್ತಾಳೆ."
+        },
+        {
+          "q": "ನಾಯಿ ಬೊಗಳು＿.",
+          "en": "The dog barks.",
+          "options": ["ತ್ತಾನೆ", "ತ್ತಾಳೆ", "ತ್ತದೆ", "ತ್ತೇನೆ"],
+          "answer": "ತ್ತದೆ",
+          "why": "Animals are \"it\": -ತ್ತದೆ."
+        },
+        {
+          "q": "ಟೀಚರ್ ಬಂದ＿.",
+          "en": "The teacher came. (respectful)",
+          "options": ["ಳು", "ನು", "ೆ", "ರು"],
+          "answer": "ರು",
+          "why": "Respect: -ಅರು."
+        },
+        {
+          "q": "ಕಪ್ ಬಿದ್ದು ಹೋಯಿ＿.",
+          "en": "The cup fell and broke.",
+          "options": ["ತು", "ತೇನೆ", "ದನು", "ದಳು"],
+          "answer": "ತು",
+          "why": "\"It\" in the past: -ತು."
+        }
+      ]
+    },
+    {
+      "id": "accusative",
+      "title": "The object: -ಅನ್ನು",
+      "particle": "-ಅನ್ನು",
+      "summary": "The object of a verb takes -ಅನ್ನು: ಪುಸ್ತಕವನ್ನು ಓದಿದೆ (I read the book). People always take it; things often drop it when they are not specific. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "After -ಅ: <b>-ವನ್ನು</b> (ಪುಸ್ತಕವನ್ನು). After -ಎ / -ಇ: <b>-ಯನ್ನು</b> (ಮನೆಯನ್ನು). After -ಉ: <b>-ಅನ್ನು</b> (ನೀರನ್ನು). Pronouns: <b>ನನ್ನನ್ನು</b>, <b>ನಿಮ್ಮನ್ನು</b>, <b>ಅವನನ್ನು</b>, <b>ಅವಳನ್ನು</b>, <b>ಅವರನ್ನು</b>.",
+          "examples": [
+            ["ನಾನು {ಅವನನ್ನು} ನೋಡಿದೆ.", "Naanu avanannu nodide.", "I saw him."],
+            [
+              "ಆ {ಪುಸ್ತಕವನ್ನು} ಕೊಡಿ.",
+              "Aa pustakavannu kodi.",
+              "Give me that book."
+            ]
+          ]
+        },
+        {
+          "h": "When to drop it",
+          "p": "A general thing needs no ending: ನಾನು ಕಾಫಿ ಕುಡಿಯುತ್ತೇನೆ (I drink coffee). A specific thing or any person takes it: ಆ ಕಾಫಿ<b>ಯನ್ನು</b> ಕುಡಿ (drink that coffee), ಅಮ್ಮ<b>ನನ್ನು</b> ಕರೆ (call Mum).",
+          "examples": [
+            [
+              "ನಾನು {ನಿಮ್ಮನ್ನು} ಕರೆಯುತ್ತೇನೆ.",
+              "Naanu nimmannu kareyuttene.",
+              "I'll call you."
+            ],
+            ["ಅವನು ಊಟ ಮಾಡಿದ.", "Avanu uuta maadida.", "He had a meal."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನಾನು ＿ ನೋಡಿದೆ.",
+          "en": "I saw her.",
+          "options": ["ಅವಳನ್ನು", "ಅವಳು", "ಅವಳಿಗೆ", "ಅವಳ"],
+          "answer": "ಅವಳನ್ನು",
+          "why": "Object: -ಅನ್ನು."
+        },
+        {
+          "q": "ಈ ಮನೆ＿ ನೋಡಿ.",
+          "en": "Look at this house.",
+          "options": ["ವನ್ನು", "ಯನ್ನು", "ಗೆ", "ಯಲ್ಲಿ"],
+          "answer": "ಯನ್ನು",
+          "why": "After -ಎ: -ಯನ್ನು."
+        },
+        {
+          "q": "ರಾಮ＿ ಕರೆಯಿರಿ.",
+          "en": "Call Rama.",
+          "options": ["ನಿಗೆ", "ನ", "ನನ್ನು", "ನಿಂದ"],
+          "answer": "ನನ್ನು",
+          "why": "People take -ಅನ್ನು."
+        },
+        {
+          "q": "ಅವರು ＿ ಕೇಳಿದರು.",
+          "en": "They asked me.",
+          "options": ["ನಾನು", "ನನಗೆ", "ನನ್ನ", "ನನ್ನನ್ನು"],
+          "answer": "ನನ್ನನ್ನು",
+          "why": "Me (object): ನನ್ನನ್ನು."
+        },
+        {
+          "q": "ಆ ಪುಸ್ತಕ＿ ತೆಗೆದುಕೊಳ್ಳಿ.",
+          "en": "Take that book.",
+          "options": ["ವನ್ನು", "ಯನ್ನು", "ಕ್ಕೆ", "ದಲ್ಲಿ"],
+          "answer": "ವನ್ನು",
+          "why": "After -ಅ: -ವನ್ನು."
+        }
+      ]
+    },
+    {
+      "id": "dative-uses",
+      "title": "To and for: -ಗೆ, -ಕ್ಕೆ",
+      "particle": "-ಗೆ・-ಕ್ಕೆ・-ಇಗೆ",
+      "summary": "The dative -ಗೆ marks where you go, who you give to, and who has a feeling or need: ಮನೆಗೆ (home), ಅವನಿಗೆ (to him), ನನಗೆ ಬೇಕು (I need). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "After -ಎ / -ಇ: <b>-ಗೆ</b> (ಮನೆಗೆ, ಶಾಲೆಗೆ). After -ಅ: <b>-ಕ್ಕೆ</b> (ಕೆಲಸಕ್ಕೆ, ಊಟಕ್ಕೆ). After -ಉ and people: <b>-ಇಗೆ</b> (ಊರಿಗೆ, ಅವನಿಗೆ, ಅಮ್ಮನಿಗೆ). Pronouns: <b>ನನಗೆ</b>, <b>ನಿನಗೆ</b>, <b>ನಿಮಗೆ</b>, <b>ನಮಗೆ</b>.",
+          "examples": [
+            [
+              "ನಾನು {ಶಾಲೆಗೆ} ಹೋಗುತ್ತೇನೆ.",
+              "Naanu shaalege hoguttene.",
+              "I go to school."
+            ],
+            [
+              "{ಅಮ್ಮನಿಗೆ} ಹೂವು ಕೊಟ್ಟೆ.",
+              "Ammanige huuvu kotte.",
+              "I gave Mum flowers."
+            ]
+          ]
+        },
+        {
+          "h": "For and the experiencer",
+          "p": "-ಗೆ also means \"for\" a purpose: <b>ಊಟಕ್ಕೆ</b> ಬನ್ನಿ (come for a meal). And the person who feels, needs or knows takes it: <b>ನನಗೆ</b> ಗೊತ್ತು (I know), <b>ಅವನಿಗೆ</b> ಜ್ವರ (he has a fever).",
+          "examples": [
+            ["{ಊಟಕ್ಕೆ} ಬನ್ನಿ.", "Uutakke banni.", "Come and eat."],
+            [
+              "{ಅವಳಿಗೆ} ಕನ್ನಡ ಗೊತ್ತು.",
+              "Avalige kannada gottu.",
+              "She knows Kannada."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನಾನು ಬೆಂಗಳೂರ＿ ಹೋಗುತ್ತೇನೆ.",
+          "en": "I'm going to Bengaluru.",
+          "options": ["ಿಗೆ", "ಲ್ಲಿ", "ಿಂದ", "ನ್ನು"],
+          "answer": "ಿಗೆ",
+          "why": "After -ಉ: -ಇಗೆ."
+        },
+        {
+          "q": "ಅವನು ಕೆಲಸ＿ ಹೋದ.",
+          "en": "He went to work.",
+          "options": ["ಗೆ", "ಕ್ಕೆ", "ದಲ್ಲಿ", "ವನ್ನು"],
+          "answer": "ಕ್ಕೆ",
+          "why": "After -ಅ: -ಕ್ಕೆ."
+        },
+        {
+          "q": "＿ ಕಾಫಿ ಬೇಕು.",
+          "en": "I want coffee.",
+          "options": ["ನಾನು", "ನನ್ನ", "ನನಗೆ", "ನನ್ನನ್ನು"],
+          "answer": "ನನಗೆ",
+          "why": "The one who wants: ನನಗೆ."
+        },
+        {
+          "q": "ಅವಳು ತಮ್ಮ＿ ಪುಸ್ತಕ ಕೊಟ್ಟಳು.",
+          "en": "She gave her younger brother a book.",
+          "options": ["ನನ್ನು", "ನ", "ನಿಂದ", "ನಿಗೆ"],
+          "answer": "ನಿಗೆ",
+          "why": "Giving to: -ಇಗೆ."
+        },
+        {
+          "q": "ನಾಳೆ ಮನೆ＿ ಬನ್ನಿ.",
+          "en": "Come to our house tomorrow.",
+          "options": ["ಗೆ", "ಕ್ಕೆ", "ಯನ್ನು", "ಯಿಂದ"],
+          "answer": "ಗೆ",
+          "why": "After -ಎ: -ಗೆ."
+        }
+      ]
+    },
+    {
+      "id": "genitive",
+      "title": "Of: -ಅ, ನನ್ನ, ಮನೆಯ",
+      "particle": "-ಅ・-ಇನ",
+      "summary": "The genitive \"of\" ends in -ಅ: ರಾಮನ ಮನೆ (Rama's house), ಮನೆಯ ಬಾಗಿಲು (the door of the house). Postpositions like ಮುಂದೆ (in front) and ಮೇಲೆ (on) follow it. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "People: ರಾಮ → <b>ರಾಮನ</b>, ಅಮ್ಮ → <b>ಅಮ್ಮನ</b>. -ಎ / -ಇ words: ಮನೆ → <b>ಮನೆಯ</b>. -ಅ things: ಪುಸ್ತಕ → <b>ಪುಸ್ತಕದ</b>. -ಉ words: ಮೇಜು → <b>ಮೇಜಿನ</b>, ಬೆಂಗಳೂರು → <b>ಬೆಂಗಳೂರಿನ</b>.",
+          "examples": [
+            ["ಇದು {ರಾಮನ} ಕಾರು.", "Idu raamana kaaru.", "This is Rama's car."],
+            [
+              "{ಬೆಂಗಳೂರಿನ} ಹವಾಮಾನ ಚೆನ್ನಾಗಿದೆ.",
+              "Bengaluurina havaamaana chennaagide.",
+              "Bengaluru's weather is nice."
+            ]
+          ]
+        },
+        {
+          "h": "Postpositions",
+          "p": "Place words follow the genitive: <b>ಮೇಲೆ</b> on, <b>ಕೆಳಗೆ</b> under, <b>ಮುಂದೆ</b> in front, <b>ಹಿಂದೆ</b> behind, <b>ಹತ್ತಿರ</b> near, <b>ಒಳಗೆ</b> inside, <b>ಹೊರಗೆ</b> outside: ಮೇಜಿನ <b>ಮೇಲೆ</b>, ಮನೆಯ <b>ಮುಂದೆ</b>.",
+          "examples": [
+            [
+              "ಬೆಕ್ಕು {ಮೇಜಿನ ಕೆಳಗೆ} ಇದೆ.",
+              "Bekku mejina kelage ide.",
+              "The cat is under the table."
+            ],
+            [
+              "{ಶಾಲೆಯ ಹತ್ತಿರ} ಒಂದು ಅಂಗಡಿ ಇದೆ.",
+              "Shaaleya hattira ondu angadi ide.",
+              "There's a shop near the school."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಇದು ಅಮ್ಮ＿ ಸೀರೆ.",
+          "en": "This is Mum's sari.",
+          "options": ["ನ", "ನಿಗೆ", "ನನ್ನು", "ನಿಂದ"],
+          "answer": "ನ",
+          "why": "\"Of\" a person: -ಅನ."
+        },
+        {
+          "q": "ಮನೆ＿ ಮುಂದೆ ಕಾರು ಇದೆ.",
+          "en": "There's a car in front of the house.",
+          "options": ["ಗೆ", "ಯ", "ಯಲ್ಲಿ", "ಯನ್ನು"],
+          "answer": "ಯ",
+          "why": "Postpositions follow the genitive."
+        },
+        {
+          "q": "ಪುಸ್ತಕ ಮೇಜಿನ ＿ ಇದೆ.",
+          "en": "The book is on the table.",
+          "options": ["ಕೆಳಗೆ", "ಒಳಗೆ", "ಮೇಲೆ", "ಹಿಂದೆ"],
+          "answer": "ಮೇಲೆ",
+          "why": "On: ಮೇಲೆ."
+        },
+        {
+          "q": "ಮೈಸೂರ＿ ಅರಮನೆ.",
+          "en": "The palace of Mysuru.",
+          "options": ["ಿಗೆ", "ಲ್ಲಿ", "ನ್ನು", "ಿನ"],
+          "answer": "ಿನ",
+          "why": "After -ಉ: -ಇನ."
+        },
+        {
+          "q": "ಅವನು ಬಾಗಿಲಿನ ＿ ನಿಂತಿದ್ದಾನೆ.",
+          "en": "He's standing behind the door.",
+          "options": ["ಹಿಂದೆ", "ಮೇಲೆ", "ಒಳಗೆ", "ಹತ್ತಿರಕ್ಕೆ"],
+          "answer": "ಹಿಂದೆ",
+          "why": "Behind: ಹಿಂದೆ."
+        }
+      ]
+    },
+    {
+      "id": "ablative-inda",
+      "title": "From and by: -ಇಂದ",
+      "particle": "-ಇಂದ",
+      "summary": "-ಇಂದ means \"from\" a place or a time, and also \"by\", \"because of\" or \"since\": ಮನೆಯಿಂದ (from home), ಮಳೆಯಿಂದ (because of the rain). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "ಮನೆ → <b>ಮನೆಯಿಂದ</b>, ಬೆಂಗಳೂರು → <b>ಬೆಂಗಳೂರಿನಿಂದ</b>, ಅವನು → <b>ಅವನಿಂದ</b>, ನಾನು → <b>ನನ್ನಿಂದ</b>. Time: ಸೋಮವಾರ<b>ದಿಂದ</b> (from Monday).",
+          "examples": [
+            [
+              "ಅವನು {ಮೈಸೂರಿನಿಂದ} ಬಂದ.",
+              "Avanu maisuurininda banda.",
+              "He came from Mysuru."
+            ],
+            [
+              "{ನಾಳೆಯಿಂದ} ರಜೆ.",
+              "Naaleyinda raje.",
+              "The holiday starts tomorrow."
+            ]
+          ]
+        },
+        {
+          "h": "Because of, since",
+          "p": "Cause: <b>ಮಳೆಯಿಂದ</b> ರಸ್ತೆ ಒದ್ದೆಯಾಗಿದೆ (the road is wet from the rain). Duration up to now: ಎರಡು ವರ್ಷ<b>ದಿಂದ</b> (for two years). By someone: <b>ನನ್ನಿಂದ</b> ಆಗುವುದಿಲ್ಲ (I can't manage it).",
+          "examples": [
+            [
+              "{ಮೂರು ವರ್ಷದಿಂದ} ಇಲ್ಲಿ ಇದ್ದೇನೆ.",
+              "Muuru varshadinda illi iddene.",
+              "I've been here for three years."
+            ],
+            [
+              "{ಅವನಿಂದ} ತಪ್ಪಾಯಿತು.",
+              "Avaninda tappaayitu.",
+              "It went wrong because of him."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನಾನು ಆಫೀಸಿ＿ ಬಂದೆ.",
+          "en": "I came from the office.",
+          "options": ["ನಿಂದ", "ಗೆ", "ನಲ್ಲಿ", "ನ"],
+          "answer": "ನಿಂದ",
+          "why": "From: -ಇಂದ."
+        },
+        {
+          "q": "ಸೋಮವಾರ＿ ಶಾಲೆ ಶುರು.",
+          "en": "School starts from Monday.",
+          "options": ["ಕ್ಕೆ", "ದಿಂದ", "ದಲ್ಲಿ", "ವನ್ನು"],
+          "answer": "ದಿಂದ",
+          "why": "From a time: -ಇಂದ."
+        },
+        {
+          "q": "ಮಳೆ＿ ಆಟ ನಿಂತಿತು.",
+          "en": "The game stopped because of the rain.",
+          "options": ["ಗೆ", "ಯಲ್ಲಿ", "ಯಿಂದ", "ಯನ್ನು"],
+          "answer": "ಯಿಂದ",
+          "why": "Because of: -ಇಂದ."
+        },
+        {
+          "q": "ಎರಡು ವರ್ಷ＿ ಕನ್ನಡ ಕಲಿಯುತ್ತಿದ್ದೇನೆ.",
+          "en": "I've been learning Kannada for two years.",
+          "options": ["ಕ್ಕೆ", "ದ", "ವರೆಗೆ", "ದಿಂದ"],
+          "answer": "ದಿಂದ",
+          "why": "Since: -ಇಂದ."
+        },
+        {
+          "q": "＿ ಆಗುವುದಿಲ್ಲ.",
+          "en": "I can't do it.",
+          "options": ["ನನ್ನಿಂದ", "ನಾನು", "ನನಗೆ", "ನನ್ನನ್ನು"],
+          "answer": "ನನ್ನಿಂದ",
+          "why": "By me: ನನ್ನಿಂದ."
+        }
+      ]
+    },
+    {
+      "id": "locative",
+      "title": "In and at: -ಅಲ್ಲಿ",
+      "particle": "-ಅಲ್ಲಿ・-ಇನಲ್ಲಿ",
+      "summary": "\"In\" or \"at\" is -ಅಲ್ಲಿ: ಮನೆಯಲ್ಲಿ (at home), ಬೆಂಗಳೂರಿನಲ್ಲಿ (in Bengaluru). It also gives \"on\" a bus and \"in\" a language. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "-ಎ / -ಇ: <b>-ಯಲ್ಲಿ</b> (ಮನೆಯಲ್ಲಿ, ಶಾಲೆಯಲ್ಲಿ). -ಅ: <b>-ದಲ್ಲಿ</b> (ನಗರದಲ್ಲಿ). -ಉ: <b>-ಇನಲ್ಲಿ</b> (ಬೆಂಗಳೂರಿನಲ್ಲಿ, ಕಾರಿನಲ್ಲಿ). Spoken Kannada often shortens it: ಮನೇಲಿ, ಊರಲ್ಲಿ.",
+          "examples": [
+            [
+              "ಅಪ್ಪ {ಆಫೀಸಿನಲ್ಲಿ} ಇದ್ದಾರೆ.",
+              "Appa aafiisinalli iddaare.",
+              "Dad is at the office."
+            ],
+            [
+              "ನಾನು {ಬಸ್ಸಿನಲ್ಲಿ} ಬಂದೆ.",
+              "Naanu bassinalli bande.",
+              "I came by bus."
+            ]
+          ]
+        },
+        {
+          "h": "Language, time, among",
+          "p": "In a language: <b>ಕನ್ನಡದಲ್ಲಿ</b> ಹೇಳಿ (say it in Kannada). In a period: <b>ಜನವರಿಯಲ್ಲಿ</b>, <b>ಬೆಳಿಗ್ಗೆ</b>. Among: ಇವರ<b>ಲ್ಲಿ</b> ಯಾರು? (which of these people?).",
+          "examples": [
+            [
+              "ಇದನ್ನು {ಕನ್ನಡದಲ್ಲಿ} ಏನು ಅನ್ನುತ್ತಾರೆ?",
+              "Idannu kannadadalli enu annuttaare?",
+              "What do you call this in Kannada?"
+            ],
+            [
+              "ನಾವು {ಮೇ ತಿಂಗಳಲ್ಲಿ} ಊರಿಗೆ ಹೋಗುತ್ತೇವೆ.",
+              "Naavu me tingalalli uurige hogutteve.",
+              "We go to our home town in May."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನಾನು ಮನೆ＿ ಇದ್ದೇನೆ.",
+          "en": "I'm at home.",
+          "options": ["ಯಲ್ಲಿ", "ಗೆ", "ಯಿಂದ", "ಯನ್ನು"],
+          "answer": "ಯಲ್ಲಿ",
+          "why": "At: -ಅಲ್ಲಿ."
+        },
+        {
+          "q": "ಅವರು ಬೆಂಗಳೂರ＿ ಕೆಲಸ ಮಾಡುತ್ತಾರೆ.",
+          "en": "They work in Bengaluru.",
+          "options": ["ಿಗೆ", "ಿನಲ್ಲಿ", "ಿನಿಂದ", "ನ್ನು"],
+          "answer": "ಿನಲ್ಲಿ",
+          "why": "-ಉ words: -ಇನಲ್ಲಿ."
+        },
+        {
+          "q": "ಕನ್ನಡ＿ ಮಾತನಾಡಿ.",
+          "en": "Speak in Kannada.",
+          "options": ["ಕ್ಕೆ", "ದಿಂದ", "ದಲ್ಲಿ", "ವನ್ನು"],
+          "answer": "ದಲ್ಲಿ",
+          "why": "In a language: -ಅಲ್ಲಿ."
+        },
+        {
+          "q": "ನಾನು ರೈಲಿ＿ ಹೋಗುತ್ತೇನೆ.",
+          "en": "I'll go by train.",
+          "options": ["ಗೆ", "ನ", "ನ್ನು", "ನಲ್ಲಿ"],
+          "answer": "ನಲ್ಲಿ",
+          "why": "On a vehicle: -ಅಲ್ಲಿ."
+        },
+        {
+          "q": "ಇವರ＿ ಯಾರು ನಿಮ್ಮ ತಮ್ಮ?",
+          "en": "Which of these is your younger brother?",
+          "options": ["ಲ್ಲಿ", "ಿಗೆ", "ನ್ನು", "ಿಂದ"],
+          "answer": "ಲ್ಲಿ",
+          "why": "Among: -ಅಲ್ಲಿ."
+        }
+      ]
+    },
+    {
+      "id": "neg-past",
+      "title": "Didn't: -ಅಲಿಲ್ಲ",
+      "particle": "-ಅಲಿಲ್ಲ",
+      "summary": "\"Didn't\" is the infinitive -ಅಲು + ಇಲ್ಲ, written together: ಬರಲಿಲ್ಲ (didn't come). It is the same for every person. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "ಮಾಡು → <b>ಮಾಡಲಿಲ್ಲ</b>, ಬಾ → <b>ಬರಲಿಲ್ಲ</b>, ಹೋಗು → <b>ಹೋಗಲಿಲ್ಲ</b>, ತಿನ್ನು → <b>ತಿನ್ನಲಿಲ್ಲ</b>. No person ending: ನಾನು / ಅವಳು / ಅವರು ಬರ<b>ಲಿಲ್ಲ</b>.",
+          "examples": [
+            [
+              "ಅವನು ಇವತ್ತು {ಬರಲಿಲ್ಲ}.",
+              "Avanu ivattu baralilla.",
+              "He didn't come today."
+            ],
+            [
+              "ನಾನು ಇನ್ನೂ ಊಟ {ಮಾಡಲಿಲ್ಲ}.",
+              "Naanu innuu uuta maadalilla.",
+              "I haven't eaten yet."
+            ]
+          ]
+        },
+        {
+          "h": "Not yet",
+          "p": "<b>ಇನ್ನೂ</b> + -ಅಲಿಲ್ಲ = not yet: ಬಸ್ <b>ಇನ್ನೂ ಬರಲಿಲ್ಲ</b>. For \"it didn't happen\" use ಆಗು: <b>ಆಗಲಿಲ್ಲ</b>. ಅರ್ಥ <b>ಆಗಲಿಲ್ಲ</b> = I didn't understand.",
+          "examples": [
+            [
+              "ಕ್ಷಮಿಸಿ, ಅರ್ಥ {ಆಗಲಿಲ್ಲ}.",
+              "Kshamisi, artha aagalilla.",
+              "Sorry, I didn't understand."
+            ],
+            [
+              "ಬಸ್ {ಇನ್ನೂ ಬರಲಿಲ್ಲ}.",
+              "Bas innuu baralilla.",
+              "The bus hasn't come yet."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಅವಳು ನಿನ್ನೆ ＿.",
+          "en": "She didn't come yesterday.",
+          "options": ["ಬರಲಿಲ್ಲ", "ಬಂದಳು", "ಬರುವುದಿಲ್ಲ", "ಬರಬೇಡ"],
+          "answer": "ಬರಲಿಲ್ಲ",
+          "why": "Didn't: -ಅಲಿಲ್ಲ."
+        },
+        {
+          "q": "ನಾನು ಆ ಸಿನಿಮಾ ＿.",
+          "en": "I didn't see that film.",
+          "options": ["ನೋಡಿದೆ", "ನೋಡಲಿಲ್ಲ", "ನೋಡುವುದಿಲ್ಲ", "ನೋಡಬೇಡ"],
+          "answer": "ನೋಡಲಿಲ್ಲ",
+          "why": "Same form for every person."
+        },
+        {
+          "q": "ಅರ್ಥ ＿.",
+          "en": "I didn't understand.",
+          "options": ["ಆಯಿತು", "ಇಲ್ಲ", "ಆಗಲಿಲ್ಲ", "ಅಲ್ಲ"],
+          "answer": "ಆಗಲಿಲ್ಲ",
+          "why": "Didn't happen: ಆಗಲಿಲ್ಲ."
+        },
+        {
+          "q": "＿ ಊಟ ಮಾಡಲಿಲ್ಲ.",
+          "en": "I haven't eaten yet.",
+          "options": ["ಈಗ", "ಆಗಲೇ", "ಮತ್ತೆ", "ಇನ್ನೂ"],
+          "answer": "ಇನ್ನೂ",
+          "why": "Not yet: ಇನ್ನೂ … -ಅಲಿಲ್ಲ."
+        },
+        {
+          "q": "ಅವರು ಏನೂ ＿.",
+          "en": "They didn't say anything.",
+          "options": ["ಹೇಳಲಿಲ್ಲ", "ಹೇಳಿದರು", "ಹೇಳುತ್ತಾರೆ", "ಹೇಳಬೇಕು"],
+          "answer": "ಹೇಳಲಿಲ್ಲ",
+          "why": "Didn't say: ಹೇಳಲಿಲ್ಲ."
+        }
+      ]
+    },
+    {
+      "id": "neg-future",
+      "title": "Don't, won't: ಮಾಡುವುದಿಲ್ಲ",
+      "particle": "-ಉವುದಿಲ್ಲ",
+      "summary": "\"Don't\" and \"won't\" are -ಉವುದಿಲ್ಲ, the same for every person: ನಾನು ಮಾಂಸ ತಿನ್ನುವುದಿಲ್ಲ (I don't eat meat). In speech it is often -ಅಲ್ಲ: ಬರಲ್ಲ. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "ಮಾಡು → <b>ಮಾಡುವುದಿಲ್ಲ</b>, ಬಾ → <b>ಬರುವುದಿಲ್ಲ</b>, ಹೋಗು → <b>ಹೋಗುವುದಿಲ್ಲ</b>, ಕುಡಿ → <b>ಕುಡಿಯುವುದಿಲ್ಲ</b>. Spoken: ಮಾಡ<b>ಲ್ಲ</b>, ಬರ<b>ಲ್ಲ</b>, ಹೋಗ<b>ಲ್ಲ</b>.",
+          "examples": [
+            [
+              "ನಾನು ಕಾಫಿ {ಕುಡಿಯುವುದಿಲ್ಲ}.",
+              "Naanu kaafi kudiyuvudilla.",
+              "I don't drink coffee."
+            ],
+            [
+              "ಅವನು ನಾಳೆ {ಬರುವುದಿಲ್ಲ}.",
+              "Avanu naale baruvudilla.",
+              "He won't come tomorrow."
+            ]
+          ]
+        },
+        {
+          "h": "Three kinds of \"not\"",
+          "p": "<b>ಅಲ್ಲ</b>: is not (something). <b>ಇಲ್ಲ</b>: isn't there, and didn't (-ಅಲಿಲ್ಲ). <b>-ಉವುದಿಲ್ಲ</b>: doesn't, won't. Pick by meaning: ಅವನು ಡಾಕ್ಟರ್ <b>ಅಲ್ಲ</b>; ಅವನು ಮನೆಯಲ್ಲಿ <b>ಇಲ್ಲ</b>; ಅವನು ಬರು<b>ವುದಿಲ್ಲ</b>.",
+          "examples": [
+            [
+              "ನನಗೆ ಅದು {ಗೊತ್ತಿಲ್ಲ}.",
+              "Nanage adu gottilla.",
+              "I don't know that."
+            ],
+            [
+              "ಅವಳು ಮಾಂಸ {ತಿನ್ನಲ್ಲ}.",
+              "Avalu maamsa tinnalla.",
+              "She doesn't eat meat. (spoken)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನಾನು ಸಿಗರೇಟ್ ＿.",
+          "en": "I don't smoke.",
+          "options": ["ಸೇದುವುದಿಲ್ಲ", "ಸೇದಲಿಲ್ಲ", "ಸೇದುತ್ತೇನೆ", "ಸೇದಬೇಡ"],
+          "answer": "ಸೇದುವುದಿಲ್ಲ",
+          "why": "Habit: -ಉವುದಿಲ್ಲ."
+        },
+        {
+          "q": "ಅವನು ನಾಳೆ ಶಾಲೆಗೆ ＿.",
+          "en": "He won't go to school tomorrow.",
+          "options": ["ಹೋಗಲಿಲ್ಲ", "ಹೋಗುವುದಿಲ್ಲ", "ಹೋದ", "ಹೋಗಬೇಡ"],
+          "answer": "ಹೋಗುವುದಿಲ್ಲ",
+          "why": "Won't: -ಉವುದಿಲ್ಲ."
+        },
+        {
+          "q": "ಇದು ನನ್ನ ಕಾರು ＿.",
+          "en": "This isn't my car.",
+          "options": ["ಇಲ್ಲ", "ಮಾಡುವುದಿಲ್ಲ", "ಅಲ್ಲ", "ಬೇಡ"],
+          "answer": "ಅಲ್ಲ",
+          "why": "Isn't (something): ಅಲ್ಲ."
+        },
+        {
+          "q": "ಹಣ ＿.",
+          "en": "There's no money.",
+          "options": ["ಅಲ್ಲ", "ಬೇಡ", "ಆಗಲಿಲ್ಲ", "ಇಲ್ಲ"],
+          "answer": "ಇಲ್ಲ",
+          "why": "Isn't there: ಇಲ್ಲ."
+        },
+        {
+          "q": "ನಾನು ಬರ＿.",
+          "en": "I won't come. (spoken)",
+          "options": ["ಲ್ಲ", "ಲಿಲ್ಲ", "ಬೇಡ", "ಬಾರದು"],
+          "answer": "ಲ್ಲ",
+          "why": "Spoken \"won't\": -ಅಲ್ಲ."
+        }
+      ]
+    },
+    {
+      "id": "imperative",
+      "title": "Commands: ಬಾ, ಬನ್ನಿ",
+      "particle": "bare stem・-ಇ",
+      "summary": "A command to a friend is the bare verb: ಬಾ (come), ಮಾಡು (do). Add -ಇ to be polite or to talk to several people: ಬನ್ನಿ, ಮಾಡಿ. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "ಮಾಡು → <b>ಮಾಡಿ</b>, ಹೇಳು → <b>ಹೇಳಿ</b>, ಕೊಡು → <b>ಕೊಡಿ</b>, ತಿನ್ನು → <b>ತಿನ್ನಿ</b>. Irregular: ಬಾ → <b>ಬನ್ನಿ</b>, ಕುಳಿತುಕೋ → <b>ಕುಳಿತುಕೊಳ್ಳಿ</b>, ತೆಗೆದುಕೋ → <b>ತೆಗೆದುಕೊಳ್ಳಿ</b>.",
+          "examples": [
+            ["ಒಳಗೆ {ಬನ್ನಿ}.", "Olage banni.", "Come in."],
+            [
+              "ನಿಧಾನವಾಗಿ {ಹೇಳಿ}.",
+              "Nidhaanavaagi heli.",
+              "Please say it slowly."
+            ]
+          ]
+        },
+        {
+          "h": "Softening",
+          "p": "<b>ಸ್ವಲ್ಪ</b> (a little) softens a request: ಸ್ವಲ್ಪ ನೀರು ಕೊಡಿ. <b>-ಇರಿ</b> is more formal still: <b>ಕುಳಿತುಕೊಳ್ಳಿರಿ</b>. To a child or close friend: <b>ಬಾ</b>, <b>ತಿನ್ನು</b>, <b>ಹೋಗು</b>.",
+          "examples": [
+            [
+              "{ಸ್ವಲ್ಪ} ನೀರು {ಕೊಡಿ}.",
+              "Svalpa niiru kodi.",
+              "Could I have some water?"
+            ],
+            ["ಬೇಗ {ಬಾ}!", "Bega baa!", "Come quickly! (to a friend)"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ದಯವಿಟ್ಟು ಒಳಗೆ ＿.",
+          "en": "Please come in.",
+          "options": ["ಬನ್ನಿ", "ಬಾ", "ಬಂದೆ", "ಬರುತ್ತೇನೆ"],
+          "answer": "ಬನ್ನಿ",
+          "why": "Polite: ಬನ್ನಿ."
+        },
+        {
+          "q": "ಇಲ್ಲಿ ＿.",
+          "en": "Please sit here.",
+          "options": ["ಕುಳಿತೆ", "ಕುಳಿತುಕೊಳ್ಳಿ", "ಕುಳಿತುಕೊಂಡ", "ಕುಳಿತುಕೊಳ್ಳುತ್ತೇನೆ"],
+          "answer": "ಕುಳಿತುಕೊಳ್ಳಿ",
+          "why": "Polite: ಕುಳಿತುಕೊಳ್ಳಿ."
+        },
+        {
+          "q": "ಮಗು, ಊಟ ＿.",
+          "en": "Eat your food, dear.",
+          "options": ["ಮಾಡಿ", "ಮಾಡಿದೆ", "ಮಾಡು", "ಮಾಡಿತು"],
+          "answer": "ಮಾಡು",
+          "why": "To a child: the bare stem."
+        },
+        {
+          "q": "ಸ್ವಲ್ಪ ನಿಧಾನವಾಗಿ ＿.",
+          "en": "Please speak a bit slowly.",
+          "options": ["ಮಾತನಾಡಿದೆ", "ಮಾತನಾಡುತ್ತೇನೆ", "ಮಾತನಾಡಿದರು", "ಮಾತನಾಡಿ"],
+          "answer": "ಮಾತನಾಡಿ",
+          "why": "Polite: -ಇ."
+        },
+        {
+          "q": "ಆ ಪುಸ್ತಕ ＿.",
+          "en": "Please give me that book.",
+          "options": ["ಕೊಡಿ", "ಕೊಟ್ಟೆ", "ಕೊಡುತ್ತೇನೆ", "ಕೊಡು"],
+          "answer": "ಕೊಡಿ",
+          "why": "Polite: ಕೊಡಿ."
+        }
+      ]
+    },
+    {
+      "id": "neg-imperative",
+      "title": "Don't: -ಬೇಡ, -ಬೇಡಿ",
+      "particle": "-ಅಬೇಡ・-ಅಬೇಡಿ",
+      "summary": "\"Don't\" is the verb + -ಅಬೇಡ (to a friend) or -ಅಬೇಡಿ (polite): ಹೋಗಬೇಡ, ಹೋಗಬೇಡಿ. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "ಮಾಡು → <b>ಮಾಡಬೇಡ</b> / <b>ಮಾಡಬೇಡಿ</b>, ಬಾ → <b>ಬರಬೇಡ</b> / <b>ಬರಬೇಡಿ</b>, ಅಳು → <b>ಅಳಬೇಡ</b>. ಬೇಡ alone means \"no thanks, I don't want it\".",
+          "examples": [
+            ["{ಚಿಂತೆ ಮಾಡಬೇಡಿ}.", "Chinte maadabedi.", "Don't worry."],
+            ["{ಅಳಬೇಡ}, ಮಗು.", "Alabeda, magu.", "Don't cry, little one."]
+          ]
+        },
+        {
+          "h": "Firm rules",
+          "p": "For a rule rather than a request, use <b>-ಅಬಾರದು</b> (must not): ಇಲ್ಲಿ ಧೂಮಪಾನ ಮಾಡ<b>ಬಾರದು</b>. And <b>ಬೇಡ</b> after a noun: ಸಕ್ಕರೆ <b>ಬೇಡ</b> (no sugar).",
+          "examples": [
+            [
+              "ಇಲ್ಲಿ ಫೋಟೋ {ತೆಗೆಯಬಾರದು}.",
+              "Illi photo tegeyabaaradu.",
+              "You may not take photos here."
+            ],
+            ["ಸಕ್ಕರೆ {ಬೇಡ}.", "Sakkare beda.", "No sugar, please."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಚಿಂತೆ ＿.",
+          "en": "Don't worry. (polite)",
+          "options": ["ಮಾಡಬೇಡಿ", "ಮಾಡಿ", "ಮಾಡಲಿಲ್ಲ", "ಮಾಡುವುದಿಲ್ಲ"],
+          "answer": "ಮಾಡಬೇಡಿ",
+          "why": "Polite \"don't\": -ಅಬೇಡಿ."
+        },
+        {
+          "q": "ಅಲ್ಲಿಗೆ ＿!",
+          "en": "Don't go there! (to a friend)",
+          "options": ["ಹೋಗು", "ಹೋಗಬೇಡ", "ಹೋಗಲಿಲ್ಲ", "ಹೋಗುವುದಿಲ್ಲ"],
+          "answer": "ಹೋಗಬೇಡ",
+          "why": "To a friend: -ಅಬೇಡ."
+        },
+        {
+          "q": "ಸಕ್ಕರೆ ＿.",
+          "en": "No sugar, please.",
+          "options": ["ಇಲ್ಲ", "ಅಲ್ಲ", "ಬೇಡ", "ಬೇಕು"],
+          "answer": "ಬೇಡ",
+          "why": "Don't want: ಬೇಡ."
+        },
+        {
+          "q": "ತಡವಾಗಿ ＿.",
+          "en": "Don't come late. (polite)",
+          "options": ["ಬನ್ನಿ", "ಬರಲಿಲ್ಲ", "ಬಂದಿರಿ", "ಬರಬೇಡಿ"],
+          "answer": "ಬರಬೇಡಿ",
+          "why": "Polite \"don't\": -ಅಬೇಡಿ."
+        },
+        {
+          "q": "ಇಲ್ಲಿ ವಾಹನ ನಿಲ್ಲಿಸ＿.",
+          "en": "No parking here.",
+          "options": ["ಬಾರದು", "ಬೇಡ", "ಬೇಕು", "ಬಹುದು"],
+          "answer": "ಬಾರದು",
+          "why": "A rule: -ಅಬಾರದು."
+        }
+      ]
+    },
+    {
+      "id": "want-beku",
+      "title": "Want and don't want: ಬೇಕು, ಬೇಡ",
+      "particle": "ಬೇಕು・ಬೇಡ",
+      "summary": "\"I want\" is ನನಗೆ … ಬೇಕು: the person takes -ಗೆ and the thing is the subject. ಬೇಡ is \"don't want\". (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ನನಗೆ</b> ಟೀ <b>ಬೇಕು</b> (I want tea). <b>ನಿಮಗೆ</b> ಏನು <b>ಬೇಕು</b>? (what would you like?). <b>ನನಗೆ ಬೇಡ</b> (I don't want it). Question: <b>ಬೇಕಾ?</b>",
+          "examples": [
+            [
+              "{ನಿಮಗೆ} ಏನು {ಬೇಕು}?",
+              "Nimage enu beku?",
+              "What would you like?"
+            ],
+            [
+              "ನನಗೆ ಒಂದು ಟಿಕೆಟ್ {ಬೇಕು}.",
+              "Nanage ondu tiket beku.",
+              "I need one ticket."
+            ]
+          ]
+        },
+        {
+          "h": "Wanting to do",
+          "p": "Verb + <b>-ಅಬೇಕು</b> after the dative is \"want to\": ನನಗೆ ಮಲಗ<b>ಬೇಕು</b> (I want to sleep).",
+          "examples": [
+            [
+              "ನನಗೆ ಮನೆಗೆ {ಹೋಗಬೇಕು}.",
+              "Nanage manege hogabeku.",
+              "I want to go home."
+            ],
+            ["ಹಾಲು {ಬೇಕಾ}?", "Haalu bekaa?", "Do you want milk?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನನಗೆ ನೀರು ＿.",
+          "en": "I want water.",
+          "options": ["ಬೇಕು", "ಬೇಡ", "ಇದೆ", "ಇಲ್ಲ"],
+          "answer": "ಬೇಕು",
+          "why": "Want: ಬೇಕು."
+        },
+        {
+          "q": "＿ ಏನು ಬೇಕು?",
+          "en": "What do you want? (polite)",
+          "options": ["ನೀವು", "ನಿಮಗೆ", "ನಿಮ್ಮ", "ನಿಮ್ಮನ್ನು"],
+          "answer": "ನಿಮಗೆ",
+          "why": "The wanter takes -ಗೆ."
+        },
+        {
+          "q": "ಇಲ್ಲ, ನನಗೆ ＿.",
+          "en": "No, I don't want it.",
+          "options": ["ಬೇಕು", "ಇಲ್ಲ", "ಬೇಡ", "ಅಲ್ಲ"],
+          "answer": "ಬೇಡ",
+          "why": "Don't want: ಬೇಡ."
+        },
+        {
+          "q": "ಕಾಫಿ ＿?",
+          "en": "Do you want coffee?",
+          "options": ["ಬೇಕು", "ಬೇಡ", "ಇದೆ", "ಬೇಕಾ"],
+          "answer": "ಬೇಕಾ",
+          "why": "Question: ಬೇಕಾ?"
+        },
+        {
+          "q": "ನನಗೆ ಮಲಗ＿.",
+          "en": "I want to sleep.",
+          "options": ["ಬೇಕು", "ಬೇಡ", "ಲಿಲ್ಲ", "ಬಹುದು"],
+          "answer": "ಬೇಕು",
+          "why": "Want to: -ಅಬೇಕು."
+        }
+      ]
+    },
+    {
+      "id": "must-beku",
+      "title": "Must: -ಅಬೇಕು",
+      "particle": "-ಅಬೇಕು",
+      "summary": "With a plain subject, -ಅಬೇಕು means \"must, have to\": ನಾನು ಹೋಗಬೇಕು (I have to go). Had to is -ಅಬೇಕಾಯಿತು. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "ಹೋಗು → <b>ಹೋಗಬೇಕು</b>, ಮಾಡು → <b>ಮಾಡಬೇಕು</b>, ಬಾ → <b>ಬರಬೇಕು</b>, ಕೊಡು → <b>ಕೊಡಬೇಕು</b>. Same form for every person: ನಾನು / ನೀವು / ಅವರು ಹೋಗ<b>ಬೇಕು</b>.",
+          "examples": [
+            [
+              "ನಾನು ಈಗ {ಹೋಗಬೇಕು}.",
+              "Naanu iiga hogabeku.",
+              "I have to go now."
+            ],
+            [
+              "ನೀವು ಟಿಕೆಟ್ {ತೆಗೆದುಕೊಳ್ಳಬೇಕು}.",
+              "Niivu tiket tegedukollabeku.",
+              "You need to buy a ticket."
+            ]
+          ]
+        },
+        {
+          "h": "Had to, don't have to",
+          "p": "Past: <b>-ಅಬೇಕಾಯಿತು</b>: ನಾನು ಕಾಯ<b>ಬೇಕಾಯಿತು</b> (I had to wait). Don't have to: <b>-ಅಬೇಕಾಗಿಲ್ಲ</b>: ನೀವು ಬರ<b>ಬೇಕಾಗಿಲ್ಲ</b> (you needn't come).",
+          "examples": [
+            [
+              "ಒಂದು ಗಂಟೆ {ಕಾಯಬೇಕಾಯಿತು}.",
+              "Ondu gante kaayabekaayitu.",
+              "I had to wait an hour."
+            ],
+            [
+              "ನೀವು ಹಣ {ಕೊಡಬೇಕಾಗಿಲ್ಲ}.",
+              "Niivu hana kodabekaagilla.",
+              "You don't have to pay."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನಾನು ನಾಳೆ ಬೇಗ ಏಳ＿.",
+          "en": "I have to get up early tomorrow.",
+          "options": ["ಬೇಕು", "ಬೇಡ", "ಲಿಲ್ಲ", "ಬಾರದು"],
+          "answer": "ಬೇಕು",
+          "why": "Must: -ಅಬೇಕು."
+        },
+        {
+          "q": "ನಿನ್ನೆ ನಾನು ಆಫೀಸಿಗೆ ಹೋಗ＿.",
+          "en": "Yesterday I had to go to the office.",
+          "options": ["ಬೇಕು", "ಬೇಕಾಯಿತು", "ಬೇಕಾಗಿಲ್ಲ", "ಬೇಡ"],
+          "answer": "ಬೇಕಾಯಿತು",
+          "why": "Had to: -ಅಬೇಕಾಯಿತು."
+        },
+        {
+          "q": "ನೀವು ಬರ＿.",
+          "en": "You don't have to come.",
+          "options": ["ಬೇಕು", "ಬೇಕಾಯಿತು", "ಬೇಕಾಗಿಲ್ಲ", "ಬೇಡಿ"],
+          "answer": "ಬೇಕಾಗಿಲ್ಲ",
+          "why": "Needn't: -ಅಬೇಕಾಗಿಲ್ಲ."
+        },
+        {
+          "q": "ಮಕ್ಕಳು ಓದ＿.",
+          "en": "The children must study.",
+          "options": ["ಬೇಡ", "ಬಹುದು", "ಲಿಲ್ಲ", "ಬೇಕು"],
+          "answer": "ಬೇಕು",
+          "why": "Must: -ಅಬೇಕು."
+        },
+        {
+          "q": "ನಾನು ಅವರಿಗೆ ಫೋನ್ ಮಾಡ＿.",
+          "en": "I have to phone them.",
+          "options": ["ಬೇಕು", "ಬೇಡ", "ಲಿಲ್ಲ", "ಬಾರದು"],
+          "answer": "ಬೇಕು",
+          "why": "Same form for every person."
+        }
+      ]
+    },
+    {
+      "id": "can-ability",
+      "title": "Can and can't: ಬರುತ್ತದೆ, ಆಗುತ್ತದೆ",
+      "particle": "ಬರು・ಆಗು",
+      "summary": "A skill \"comes\" to you: ನನಗೆ ಈಜು ಬರುತ್ತದೆ (I can swim). Managing to do something is -ಅಲು ಆಗುತ್ತದೆ: ನನಗೆ ಬರಲು ಆಗುವುದಿಲ್ಲ (I can't come). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Skills: <b>ನನಗೆ</b> ಕನ್ನಡ <b>ಬರುತ್ತದೆ</b> (I can speak Kannada), <b>ನನಗೆ</b> ಅಡುಗೆ <b>ಬರುವುದಿಲ್ಲ</b> (I can't cook). Spoken: ಬರುತ್ತೆ, ಬರಲ್ಲ.",
+          "examples": [
+            [
+              "ನಿಮಗೆ ಕನ್ನಡ {ಬರುತ್ತದೆಯಾ}?",
+              "Nimage kannada baruttadeyaa?",
+              "Can you speak Kannada?"
+            ],
+            [
+              "ನನಗೆ ಡ್ರೈವಿಂಗ್ {ಬರುವುದಿಲ್ಲ}.",
+              "Nanage draiving baruvudilla.",
+              "I can't drive."
+            ]
+          ]
+        },
+        {
+          "h": "Being able to",
+          "p": "<b>-ಅಲು ಆಗುತ್ತದೆ</b> = it's possible for someone: ನನಗೆ ನಾಳೆ ಬರ<b>ಲು ಆಗುತ್ತದೆ</b>. Can't: <b>-ಅಲು ಆಗುವುದಿಲ್ಲ</b>. Couldn't: <b>-ಅಲು ಆಗಲಿಲ್ಲ</b>. Spoken: ಬರೋಕೆ ಆಗಲ್ಲ.",
+          "examples": [
+            [
+              "ನನಗೆ ನಾಳೆ {ಬರಲು ಆಗುವುದಿಲ್ಲ}.",
+              "Nanage naale baralu aaguvudilla.",
+              "I can't come tomorrow."
+            ],
+            [
+              "ಅವನಿಗೆ ನಿದ್ದೆ {ಮಾಡಲು ಆಗಲಿಲ್ಲ}.",
+              "Avanige nidde maadalu aagalilla.",
+              "He couldn't sleep."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನನಗೆ ಈಜು ＿.",
+          "en": "I can swim.",
+          "options": ["ಬರುತ್ತದೆ", "ಬೇಕು", "ಆಯಿತು", "ಇದೆ"],
+          "answer": "ಬರುತ್ತದೆ",
+          "why": "A skill \"comes\": ಬರುತ್ತದೆ."
+        },
+        {
+          "q": "ಅವಳಿಗೆ ಹಿಂದಿ ＿.",
+          "en": "She can't speak Hindi.",
+          "options": ["ಬರಲಿಲ್ಲ", "ಬರುವುದಿಲ್ಲ", "ಬೇಡ", "ಅಲ್ಲ"],
+          "answer": "ಬರುವುದಿಲ್ಲ",
+          "why": "Can't (skill): ಬರುವುದಿಲ್ಲ."
+        },
+        {
+          "q": "ನನಗೆ ಇವತ್ತು ಬರ＿ ಆಗುವುದಿಲ್ಲ.",
+          "en": "I can't come today.",
+          "options": ["ಬೇಕು", "ಲಿಲ್ಲ", "ಲು", "ಬೇಡ"],
+          "answer": "ಲು",
+          "why": "-ಅಲು + ಆಗು."
+        },
+        {
+          "q": "ಅವನಿಗೆ ಆ ಪೆಟ್ಟಿಗೆ ಎತ್ತಲು ＿.",
+          "en": "He couldn't lift that box.",
+          "options": ["ಆಗುತ್ತದೆ", "ಬರುತ್ತದೆ", "ಬೇಕು", "ಆಗಲಿಲ್ಲ"],
+          "answer": "ಆಗಲಿಲ್ಲ",
+          "why": "Couldn't: ಆಗಲಿಲ್ಲ."
+        },
+        {
+          "q": "ನಿಮಗೆ ಅಡುಗೆ ＿?",
+          "en": "Can you cook?",
+          "options": ["ಬರುತ್ತದೆಯಾ", "ಬೇಕಾ", "ಇದೆಯಾ", "ಆಯಿತಾ"],
+          "answer": "ಬರುತ್ತದೆಯಾ",
+          "why": "A skill question: ಬರುತ್ತದೆಯಾ?"
+        }
+      ]
+    },
+    {
+      "id": "liking-knowing",
+      "title": "Like, know, understand: ಇಷ್ಟ, ಗೊತ್ತು, ಅರ್ಥ",
+      "particle": "ನನಗೆ ಇಷ್ಟ・ಗೊತ್ತು・ಅರ್ಥ ಆಯಿತು",
+      "summary": "Liking, knowing and understanding all put the person in the dative: ನನಗೆ ದೋಸೆ ಇಷ್ಟ (I like dosa), ನನಗೆ ಗೊತ್ತು (I know). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ನನಗೆ ಇಷ್ಟ</b> (I like it), <b>ನನಗೆ ಇಷ್ಟ ಇಲ್ಲ</b> (I don't like it). <b>ನನಗೆ ಗೊತ್ತು</b> (I know), <b>ಗೊತ್ತಿಲ್ಲ</b> (I don't know). <b>ಅರ್ಥ ಆಯಿತು</b> (I understood), <b>ಅರ್ಥ ಆಗಲಿಲ್ಲ</b> (I didn't understand).",
+          "examples": [
+            ["{ನನಗೆ} ಮಳೆ {ಇಷ್ಟ}.", "Nanage male ishta.", "I like the rain."],
+            [
+              "ಅವನ ಮನೆ ನಿಮಗೆ {ಗೊತ್ತಾ}?",
+              "Avana mane nimage gottaa?",
+              "Do you know where his house is?"
+            ]
+          ]
+        },
+        {
+          "h": "Liked it, got to know",
+          "p": "\"Did you like it?\" = <b>ಇಷ್ಟ ಆಯಿತಾ?</b> \"I found out\" = <b>ಗೊತ್ತಾಯಿತು</b>. People: ನನಗೆ ಅವನು <b>ಗೊತ್ತು</b> (I know him). Doing: ನನಗೆ ಓದುವುದು <b>ಇಷ್ಟ</b> (I like reading).",
+          "examples": [
+            [
+              "ಸಿನಿಮಾ {ಇಷ್ಟ ಆಯಿತಾ}?",
+              "Sinimaa ishta aayitaa?",
+              "Did you like the film?"
+            ],
+            [
+              "ನಿನ್ನೆ ನನಗೆ {ಗೊತ್ತಾಯಿತು}.",
+              "Ninne nanage gottaayitu.",
+              "I found out yesterday."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನನಗೆ ಕ್ರಿಕೆಟ್ ＿.",
+          "en": "I like cricket.",
+          "options": ["ಇಷ್ಟ", "ಗೊತ್ತು", "ಬೇಕು", "ಇದೆ"],
+          "answer": "ಇಷ್ಟ",
+          "why": "Like: ಇಷ್ಟ."
+        },
+        {
+          "q": "ಕ್ಷಮಿಸಿ, ನನಗೆ ＿.",
+          "en": "Sorry, I don't know.",
+          "options": ["ಇಷ್ಟ ಇಲ್ಲ", "ಗೊತ್ತಿಲ್ಲ", "ಬೇಡ", "ಅಲ್ಲ"],
+          "answer": "ಗೊತ್ತಿಲ್ಲ",
+          "why": "Don't know: ಗೊತ್ತಿಲ್ಲ."
+        },
+        {
+          "q": "＿ ಅರ್ಥ ಆಯಿತಾ?",
+          "en": "Did you understand?",
+          "options": ["ನೀವು", "ನಿಮ್ಮ", "ನಿಮಗೆ", "ನಿಮ್ಮನ್ನು"],
+          "answer": "ನಿಮಗೆ",
+          "why": "The person takes -ಗೆ."
+        },
+        {
+          "q": "ಊಟ ಇಷ್ಟ ＿?",
+          "en": "Did you like the food?",
+          "options": ["ಇದೆಯಾ", "ಬೇಕಾ", "ಗೊತ್ತಾ", "ಆಯಿತಾ"],
+          "answer": "ಆಯಿತಾ",
+          "why": "Liked it?: ಇಷ್ಟ ಆಯಿತಾ?"
+        },
+        {
+          "q": "ನಿನ್ನೆ ನನಗೆ ＿.",
+          "en": "I found out yesterday.",
+          "options": ["ಗೊತ್ತಾಯಿತು", "ಗೊತ್ತು", "ಗೊತ್ತಿಲ್ಲ", "ಇಷ್ಟ ಆಯಿತು"],
+          "answer": "ಗೊತ್ತಾಯಿತು",
+          "why": "Found out: ಗೊತ್ತಾಯಿತು."
+        }
+      ]
+    },
+    {
+      "id": "possession",
+      "title": "Having: ನನ್ನ ಹತ್ತಿರ, ನನಗೆ … ಇದ್ದಾರೆ",
+      "particle": "ಹತ್ತಿರ ಇದೆ・ನನಗೆ … ಇದೆ",
+      "summary": "Kannada has no verb \"have\". Things you carry are \"near\" you: ನನ್ನ ಹತ್ತಿರ ಕಾರು ಇದೆ. Family and time use the dative: ನನಗೆ ಇಬ್ಬರು ಮಕ್ಕಳು ಇದ್ದಾರೆ. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Things you own or have with you: <b>ನನ್ನ ಹತ್ತಿರ</b> + ಇದೆ / ಇಲ್ಲ. ನನ್ನ ಹತ್ತಿರ ಪೆನ್ <b>ಇದೆ</b> (I have a pen). ನಿಮ್ಮ ಹತ್ತಿರ ಚಿಲ್ಲರೆ <b>ಇದೆಯಾ</b>? (do you have change?).",
+          "examples": [
+            [
+              "{ನನ್ನ ಹತ್ತಿರ} ಹಣ {ಇಲ್ಲ}.",
+              "Nanna hattira hana illa.",
+              "I don't have any money on me."
+            ],
+            [
+              "{ನಿಮ್ಮ ಹತ್ತಿರ} ಚಿಲ್ಲರೆ {ಇದೆಯಾ}?",
+              "Nimma hattira chillare ideyaa?",
+              "Do you have change?"
+            ]
+          ]
+        },
+        {
+          "h": "Family, time, illness",
+          "p": "Relations, time and conditions take the dative: <b>ನನಗೆ</b> ಒಬ್ಬ ತಮ್ಮ <b>ಇದ್ದಾನೆ</b>, <b>ನನಗೆ</b> ಸಮಯ <b>ಇಲ್ಲ</b>, <b>ಅವಳಿಗೆ</b> ಜ್ವರ <b>ಇದೆ</b>. Notice the verb agrees with the thing or person you have.",
+          "examples": [
+            [
+              "{ನನಗೆ} ಇಬ್ಬರು ಮಕ್ಕಳು {ಇದ್ದಾರೆ}.",
+              "Nanage ibbaru makkalu iddaare.",
+              "I have two children."
+            ],
+            [
+              "{ಅವನಿಗೆ} ಕೆಲಸ {ಇದೆ}.",
+              "Avanige kelasa ide.",
+              "He has work to do."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ಕಾರು ಇದೆ.",
+          "en": "I have a car.",
+          "options": ["ನನ್ನ ಹತ್ತಿರ", "ನನಗೆ ಹತ್ತಿರ", "ನಾನು", "ನನ್ನನ್ನು"],
+          "answer": "ನನ್ನ ಹತ್ತಿರ",
+          "why": "Owned things: ನನ್ನ ಹತ್ತಿರ."
+        },
+        {
+          "q": "ನನಗೆ ಒಬ್ಬಳು ತಂಗಿ ＿.",
+          "en": "I have a younger sister.",
+          "options": ["ಇದೆ", "ಇದ್ದಾಳೆ", "ಇದ್ದಾನೆ", "ಇದ್ದೇನೆ"],
+          "answer": "ಇದ್ದಾಳೆ",
+          "why": "Agrees with the sister."
+        },
+        {
+          "q": "ನನಗೆ ಸಮಯ ＿.",
+          "en": "I don't have time.",
+          "options": ["ಅಲ್ಲ", "ಬೇಡ", "ಇಲ್ಲ", "ಆಗಲಿಲ್ಲ"],
+          "answer": "ಇಲ್ಲ",
+          "why": "Don't have: ಇಲ್ಲ."
+        },
+        {
+          "q": "ನಿಮ್ಮ ಹತ್ತಿರ ಪೆನ್ ＿?",
+          "en": "Do you have a pen?",
+          "options": ["ಇದ್ದೀರಾ", "ಬೇಕು", "ಗೊತ್ತಾ", "ಇದೆಯಾ"],
+          "answer": "ಇದೆಯಾ",
+          "why": "Is there?: ಇದೆಯಾ?"
+        },
+        {
+          "q": "＿ ಜ್ವರ ಇದೆ.",
+          "en": "She has a fever.",
+          "options": ["ಅವಳಿಗೆ", "ಅವಳು", "ಅವಳ ಹತ್ತಿರ", "ಅವಳನ್ನು"],
+          "answer": "ಅವಳಿಗೆ",
+          "why": "Illness: the dative."
+        }
+      ]
+    },
+    {
+      "id": "ordinals",
+      "title": "First, second: ಮೊದಲನೆಯ, ಎರಡನೇ",
+      "particle": "-ಅನೆಯ・-ನೇ",
+      "summary": "Ordinals add -ಅನೆಯ (written) or -ನೇ (everyday) to the number: ಎರಡನೆಯ / ಎರಡನೇ (second). \"First\" is ಮೊದಲನೆಯ or ಮೊದಲ. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ಮೊದಲನೆಯ</b> / <b>ಮೊದಲ</b> first, <b>ಎರಡನೇ</b> second, <b>ಮೂರನೇ</b> third, <b>ನಾಲ್ಕನೇ</b> fourth, <b>ಹತ್ತನೇ</b> tenth. With digits: 2ನೇ, 5ನೇ. <b>ಕೊನೆಯ</b> = last.",
+          "examples": [
+            [
+              "ನಮ್ಮ ಮನೆ {ಮೂರನೇ} ಮಹಡಿಯಲ್ಲಿ ಇದೆ.",
+              "Namma mane muurane mahadiyalli ide.",
+              "Our flat is on the third floor."
+            ],
+            [
+              "ಇದು ನನ್ನ {ಮೊದಲ} ಭೇಟಿ.",
+              "Idu nanna modala bheti.",
+              "This is my first visit."
+            ]
+          ]
+        },
+        {
+          "h": "Dates and times",
+          "p": "Dates use -ನೇ: ಜನವರಿ <b>ಒಂದನೇ</b> ತಾರೀಖು (1 January). \"The first time\" = <b>ಮೊದಲ ಸಲ</b> / <b>ಮೊದಲ ಬಾರಿ</b>. \"Second time\" = <b>ಎರಡನೇ ಸಲ</b>.",
+          "examples": [
+            [
+              "ನಾನು {ಮೊದಲ ಸಲ} ಮೈಸೂರಿಗೆ ಬಂದಿದ್ದೇನೆ.",
+              "Naanu modala sala maisuurige bandiddene.",
+              "This is my first time in Mysuru."
+            ],
+            [
+              "ಅವನು ತರಗತಿಯಲ್ಲಿ {ಕೊನೆಯ} ಬೆಂಚಿನಲ್ಲಿ ಕುಳಿತ.",
+              "Avanu taragatiyalli koneya benchinalli kulita.",
+              "He sat on the last bench in class."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಇದು ನನ್ನ ＿ ಕೆಲಸ.",
+          "en": "This is my first job.",
+          "options": ["ಮೊದಲ", "ಒಂದು", "ಒಬ್ಬ", "ಮೊದಲು"],
+          "answer": "ಮೊದಲ",
+          "why": "First: ಮೊದಲ."
+        },
+        {
+          "q": "ಅವಳು ＿ ಮಹಡಿಯಲ್ಲಿ ಇದ್ದಾಳೆ.",
+          "en": "She's on the second floor.",
+          "options": ["ಎರಡು", "ಎರಡನೇ", "ಇಬ್ಬರು", "ಎರಡರ"],
+          "answer": "ಎರಡನೇ",
+          "why": "Ordinal: -ನೇ."
+        },
+        {
+          "q": "ಇದು ＿ ಬಸ್.",
+          "en": "This is the last bus.",
+          "options": ["ಮೊದಲ", "ಕೊನೆಗೆ", "ಕೊನೆಯ", "ಎರಡನೇ"],
+          "answer": "ಕೊನೆಯ",
+          "why": "Last: ಕೊನೆಯ."
+        },
+        {
+          "q": "ಮೊದಲ ＿ ಬಂದಿದ್ದೀರಾ?",
+          "en": "Is this your first time here?",
+          "options": ["ವರ್ಷ", "ಗಂಟೆ", "ದಿನಕ್ಕೆ", "ಸಲ"],
+          "answer": "ಸಲ",
+          "why": "Time (occasion): ಸಲ."
+        },
+        {
+          "q": "ಮಾರ್ಚ್ ಹತ್ತ＿ ತಾರೀಖು.",
+          "en": "10 March.",
+          "options": ["ನೇ", "ನು", "ಕ್ಕೆ", "ರ"],
+          "answer": "ನೇ",
+          "why": "Dates: -ನೇ."
+        }
+      ]
+    },
+    {
+      "id": "infinitive-purpose",
+      "title": "In order to: -ಅಲು, -ಉವುದಕ್ಕೆ",
+      "particle": "-ಅಲು・-ಉವುದಕ್ಕೆ",
+      "summary": "Purpose uses the infinitive -ಅಲು or the gerund + dative -ಉವುದಕ್ಕೆ: ನಾನು ಕೆಲಸ ಮಾಡಲು ಬಂದೆ (I came to work). Spoken Kannada says -ಓಕೆ: ಮಾಡೋಕೆ. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "ಮಾಡು → <b>ಮಾಡಲು</b> / <b>ಮಾಡುವುದಕ್ಕೆ</b>, ನೋಡು → <b>ನೋಡಲು</b>, ಕಲಿ → <b>ಕಲಿಯಲು</b>. Spoken: <b>ಮಾಡೋಕೆ</b>, <b>ನೋಡೋಕೆ</b>. They go before the main verb: ಸಿನಿಮಾ <b>ನೋಡಲು</b> ಹೋದೆವು.",
+          "examples": [
+            [
+              "ನಾನು ಕನ್ನಡ {ಕಲಿಯಲು} ಬಂದಿದ್ದೇನೆ.",
+              "Naanu kannada kaliyalu bandiddene.",
+              "I've come to learn Kannada."
+            ],
+            [
+              "ಅವನು ಹಾಲು {ತರುವುದಕ್ಕೆ} ಹೋದ.",
+              "Avanu haalu taruvudakke hoda.",
+              "He went to fetch milk."
+            ]
+          ]
+        },
+        {
+          "h": "With adjectives and nouns",
+          "p": "The infinitive also follows words like <b>ಕಷ್ಟ</b> (hard), <b>ಸುಲಭ</b> (easy), <b>ಸಮಯ</b> (time): ಕನ್ನಡ ಓದ<b>ಲು</b> ಸುಲಭ (Kannada is easy to read). ಊಟ ಮಾಡ<b>ಲು</b> ಸಮಯ ಇಲ್ಲ (no time to eat).",
+          "examples": [
+            [
+              "ಈ ಪ್ರಶ್ನೆಗೆ ಉತ್ತರ {ಕೊಡಲು} ಕಷ್ಟ.",
+              "Ii prashnege uttara kodalu kashta.",
+              "This question is hard to answer."
+            ],
+            [
+              "ಹಣ್ಣು {ತಿನ್ನೋಕೆ} ಕೊಡು.",
+              "Hannu tinnoke kodu.",
+              "Give him some fruit to eat. (spoken)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನಾನು ಸಿನಿಮಾ ನೋಡ＿ ಹೋಗುತ್ತೇನೆ.",
+          "en": "I'm going to see a film.",
+          "options": ["ಲು", "ಬೇಕು", "ಲಿಲ್ಲ", "ಬೇಡ"],
+          "answer": "ಲು",
+          "why": "Purpose: -ಅಲು."
+        },
+        {
+          "q": "ಅವಳು ತರಕಾರಿ ಕೊಳ್ಳು＿ ಮಾರುಕಟ್ಟೆಗೆ ಹೋದಳು.",
+          "en": "She went to the market to buy vegetables.",
+          "options": ["ವುದು", "ವುದಕ್ಕೆ", "ತ್ತಾಳೆ", "ವುದಿಲ್ಲ"],
+          "answer": "ವುದಕ್ಕೆ",
+          "why": "Purpose: -ಉವುದಕ್ಕೆ."
+        },
+        {
+          "q": "ಕನ್ನಡ ಓದಲು ＿.",
+          "en": "Kannada is easy to read.",
+          "options": ["ಸುಲಭವಾಗಿ", "ಬೇಕು", "ಸುಲಭ", "ಬೇಡ"],
+          "answer": "ಸುಲಭ",
+          "why": "Easy to: -ಅಲು ಸುಲಭ."
+        },
+        {
+          "q": "ನನಗೆ ಊಟ ಮಾಡ＿ ಸಮಯ ಇಲ್ಲ.",
+          "en": "I have no time to eat.",
+          "options": ["ಲಿಲ್ಲ", "ಬೇಕು", "ಬಾರದು", "ಲು"],
+          "answer": "ಲು",
+          "why": "Time to: -ಅಲು."
+        },
+        {
+          "q": "ಅವನು ನೀರು ಕುಡಿ＿ ಹೋದ.",
+          "en": "He went to drink water. (spoken)",
+          "options": ["ಯೋಕೆ", "ಯಲಿಲ್ಲ", "ದ", "ಯುತ್ತಾನೆ"],
+          "answer": "ಯೋಕೆ",
+          "why": "Spoken purpose: -ಓಕೆ."
+        }
+      ]
+    },
+    {
+      "id": "verbal-participle",
+      "title": "Having done: ಮಾಡಿ, ಬಂದು",
+      "particle": "-ಇ・-ಉ",
+      "summary": "The verbal participle joins actions in order: ಊಟ ಮಾಡಿ ಹೋದೆ (I ate and left). Only the last verb shows tense and person. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Most verbs: <b>-ಇ</b>: ಮಾಡಿ, ನೋಡಿ, ಹೇಳಿ, ಕೇಳಿ. Short-past verbs: <b>-ಉ</b>: ಬಂದು, ಹೋಗಿ, ತಿಂದು, ಕೊಟ್ಟು, ತಂದು. ಸ್ನಾನ <b>ಮಾಡಿ</b>, ತಿಂಡಿ <b>ತಿಂದು</b>, ಆಫೀಸಿಗೆ ಹೋದೆ.",
+          "examples": [
+            [
+              "ಮನೆಗೆ {ಬಂದು} ಮಲಗಿದೆ.",
+              "Manege bandu malagide.",
+              "I came home and went to sleep."
+            ],
+            [
+              "ಪುಸ್ತಕ {ಓದಿ} ವಾಪಸ್ ಕೊಡಿ.",
+              "Pustaka odi vaapas kodi.",
+              "Read the book and give it back."
+            ]
+          ]
+        },
+        {
+          "h": "Manner and cause",
+          "p": "The participle can also say how: <b>ಓಡಿ</b> ಬಂದ (he came running), <b>ನಡೆದು</b> ಹೋದೆ (I went on foot). And why: ಮಳೆ <b>ಬಂದು</b> ಆಟ ನಿಂತಿತು (it rained and the game stopped).",
+          "examples": [
+            [
+              "ಅವನು {ನಡೆದು} ಶಾಲೆಗೆ ಹೋಗುತ್ತಾನೆ.",
+              "Avanu nadedu shaalege hoguttaane.",
+              "He walks to school."
+            ],
+            ["ಮಗು {ಓಡಿ} ಬಂತು.", "Magu odi bantu.", "The child came running."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ತಿಂಡಿ ＿ ಹೊರಟೆ.",
+          "en": "I had breakfast and set off.",
+          "options": ["ತಿಂದು", "ತಿಂದೆ", "ತಿನ್ನಲು", "ತಿನ್ನುತ್ತೇನೆ"],
+          "answer": "ತಿಂದು",
+          "why": "Joining actions: ತಿಂದು."
+        },
+        {
+          "q": "ಅಂಗಡಿಗೆ ＿ ಹಾಲು ತಂದೆ.",
+          "en": "I went to the shop and brought milk.",
+          "options": ["ಹೋದೆ", "ಹೋಗಿ", "ಹೋಗಲು", "ಹೋಗು"],
+          "answer": "ಹೋಗಿ",
+          "why": "ಹೋಗು → ಹೋಗಿ."
+        },
+        {
+          "q": "ಪತ್ರ ＿ ನನಗೆ ತೋರಿಸಿ.",
+          "en": "Write the letter and show it to me.",
+          "options": ["ಬರೆಯಿರಿ", "ಬರೆದೆ", "ಬರೆದು", "ಬರೆಯಲು"],
+          "answer": "ಬರೆದು",
+          "why": "ಬರೆ → ಬರೆದು."
+        },
+        {
+          "q": "ಅವಳು ＿ ಬಂದಳು.",
+          "en": "She came running.",
+          "options": ["ಓಡಿದಳು", "ಓಡಲು", "ಓಡುತ್ತಾಳೆ", "ಓಡಿ"],
+          "answer": "ಓಡಿ",
+          "why": "Manner: the participle."
+        },
+        {
+          "q": "ಕೈ ＿ ಊಟ ಮಾಡು.",
+          "en": "Wash your hands and eat.",
+          "options": ["ತೊಳೆದು", "ತೊಳೆ", "ತೊಳೆದೆ", "ತೊಳೆಯಲು"],
+          "answer": "ತೊಳೆದು",
+          "why": "Then: the participle."
+        }
+      ]
+    },
+    {
+      "id": "relative-participle",
+      "title": "The man who came: ಬಂದ ಮನುಷ್ಯ",
+      "particle": "-ದ・-ಉವ・-ಅದ",
+      "summary": "Kannada has no word \"who\" or \"which\" for linking. A verb form goes before the noun: ನಿನ್ನೆ ಬಂದ ಹುಡುಗ (the boy who came yesterday). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Past: <b>-ದ</b> / <b>-ಇದ</b>: ಬಂದ, ಮಾಡಿದ, ನೋಡಿದ. Present and future: <b>-ಉವ</b>: ಬರುವ, ಮಾಡುವ, ಓದುವ. Negative: <b>-ಅದ</b>: ಬರದ, ಮಾಡದ. The whole clause goes before the noun.",
+          "examples": [
+            [
+              "ನಾನು {ಓದಿದ} ಪುಸ್ತಕ ಇದು.",
+              "Naanu odida pustaka idu.",
+              "This is the book I read."
+            ],
+            [
+              "ಇಲ್ಲಿ {ಕೆಲಸ ಮಾಡುವ} ಜನ ಒಳ್ಳೆಯವರು.",
+              "Illi kelasa maaduva jana olleyavaru.",
+              "The people who work here are nice."
+            ]
+          ]
+        },
+        {
+          "h": "As a noun",
+          "p": "Add a pronoun ending to make \"the one who\": ಬಂದ<b>ವನು</b> (the man who came), ಬಂದ<b>ವಳು</b> (the woman who came), ಬಂದ<b>ವರು</b> (those who came), ಬಂದ<b>ದ್ದು</b> (the thing that came).",
+          "examples": [
+            [
+              "{ಮೊದಲು ಬಂದವರು} ಒಳಗೆ ಹೋಗಿ.",
+              "Modalu bandavaru olage hogi.",
+              "Whoever came first, go in."
+            ],
+            [
+              "ನೀವು {ಹೇಳಿದ್ದು} ನಿಜ.",
+              "Niivu heliddu nija.",
+              "What you said is true."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನಿನ್ನೆ ＿ ಹುಡುಗ ಯಾರು?",
+          "en": "Who's the boy who came yesterday?",
+          "options": ["ಬಂದ", "ಬರುವ", "ಬಂದನು", "ಬರಲು"],
+          "answer": "ಬಂದ",
+          "why": "Past: ಬಂದ."
+        },
+        {
+          "q": "ನಾಳೆ ＿ ರೈಲು ತಡವಾಗಿದೆ.",
+          "en": "The train leaving tomorrow is delayed.",
+          "options": ["ಹೊರಟ", "ಹೊರಡುವ", "ಹೊರಟಿತು", "ಹೊರಡಲು"],
+          "answer": "ಹೊರಡುವ",
+          "why": "Future: -ಉವ."
+        },
+        {
+          "q": "ನಾನು ＿ ಸಿನಿಮಾ ಚೆನ್ನಾಗಿತ್ತು.",
+          "en": "The film I saw was good.",
+          "options": ["ನೋಡುವ", "ನೋಡಿದೆ", "ನೋಡಿದ", "ನೋಡಲು"],
+          "answer": "ನೋಡಿದ",
+          "why": "Past: -ಇದ."
+        },
+        {
+          "q": "ಊಟ ＿ ಮಕ್ಕಳು.",
+          "en": "Children who haven't eaten.",
+          "options": ["ಮಾಡಿದ", "ಮಾಡುವ", "ಮಾಡಲಿಲ್ಲ", "ಮಾಡದ"],
+          "answer": "ಮಾಡದ",
+          "why": "Negative: -ಅದ."
+        },
+        {
+          "q": "ನೀವು ಹೇಳಿದ＿ ನನಗೆ ಅರ್ಥ ಆಯಿತು.",
+          "en": "I understood what you said.",
+          "options": ["್ದು", "ವನು", "ವಳು", "ವರು"],
+          "answer": "್ದು",
+          "why": "The thing that: -ದ್ದು."
+        }
+      ]
+    },
+    {
+      "id": "conditional",
+      "title": "If: -ಅರೆ",
+      "particle": "-ಅರೆ",
+      "summary": "\"If\" is the past stem + -ಅರೆ, put on the verb: ಮಳೆ ಬಂದರೆ (if it rains). The if-clause comes first. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "ಬಾ → <b>ಬಂದರೆ</b>, ಮಾಡು → <b>ಮಾಡಿದರೆ</b>, ಹೋಗು → <b>ಹೋದರೆ</b>, ಇರು → <b>ಇದ್ದರೆ</b>, ಆಗು → <b>ಆದರೆ</b>. Negative \"if not\": <b>-ಅದಿದ್ದರೆ</b>: ಬರ<b>ದಿದ್ದರೆ</b>.",
+          "examples": [
+            [
+              "ಮಳೆ {ಬಂದರೆ} ನಾನು ಬರುವುದಿಲ್ಲ.",
+              "Male bandare naanu baruvudilla.",
+              "If it rains, I won't come."
+            ],
+            [
+              "ಸಮಯ {ಇದ್ದರೆ} ಫೋನ್ ಮಾಡಿ.",
+              "Samaya iddare phon maadi.",
+              "Call if you have time."
+            ]
+          ]
+        },
+        {
+          "h": "Questions and wishes",
+          "p": "<b>-ಅರೆ ಹೇಗೆ?</b> = how about…? ನಾಳೆ ಹೋದ<b>ರೆ ಹೇಗೆ</b>? <b>-ಅರೆ ಸಾಕು</b> = it's enough if: ನೀವು ಬಂದ<b>ರೆ ಸಾಕು</b>. <b>ಆದರೆ</b> on its own means \"but\".",
+          "examples": [
+            [
+              "ನಾಳೆ {ಹೋದರೆ ಹೇಗೆ}?",
+              "Naale hodare hege?",
+              "How about going tomorrow?"
+            ],
+            [
+              "ಅವನು {ಬರದಿದ್ದರೆ} ನಾವು ಹೋಗೋಣ.",
+              "Avanu baradiddare naavu hogona.",
+              "If he doesn't come, let's go."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನೀವು ＿ ನಾನು ಸಹಾಯ ಮಾಡುತ್ತೇನೆ.",
+          "en": "If you come, I'll help.",
+          "options": ["ಬಂದರೆ", "ಬಂದರೂ", "ಬಂದು", "ಬಂದ"],
+          "answer": "ಬಂದರೆ",
+          "why": "If: -ಅರೆ."
+        },
+        {
+          "q": "ಹಣ ＿ ಕಾರು ಕೊಳ್ಳುತ್ತೇನೆ.",
+          "en": "If I have money, I'll buy a car.",
+          "options": ["ಇದೆ", "ಇದ್ದರೆ", "ಇದ್ದರೂ", "ಇರಲು"],
+          "answer": "ಇದ್ದರೆ",
+          "why": "ಇರು → ಇದ್ದರೆ."
+        },
+        {
+          "q": "ಬಸ್ ＿ ಆಟೋದಲ್ಲಿ ಬನ್ನಿ.",
+          "en": "If the bus doesn't come, take an auto.",
+          "options": ["ಬಂದರೆ", "ಬರಲಿಲ್ಲ", "ಬರದಿದ್ದರೆ", "ಬರದೆ"],
+          "answer": "ಬರದಿದ್ದರೆ",
+          "why": "If not: -ಅದಿದ್ದರೆ."
+        },
+        {
+          "q": "ಸಿನಿಮಾಗೆ ಹೋದ＿ ಹೇಗೆ?",
+          "en": "How about going to a film?",
+          "options": ["ರೂ", "ನು", "ು", "ರೆ"],
+          "answer": "ರೆ",
+          "why": "How about: -ಅರೆ ಹೇಗೆ?"
+        },
+        {
+          "q": "ನೀವು ಬಂದರೆ ＿.",
+          "en": "It's enough if you come.",
+          "options": ["ಸಾಕು", "ಬೇಡ", "ಇಲ್ಲ", "ಹೇಗೆ"],
+          "answer": "ಸಾಕು",
+          "why": "Enough if: -ಅರೆ ಸಾಕು."
+        }
+      ]
+    },
+    {
+      "id": "concessive",
+      "title": "Even if: -ಅರೂ",
+      "particle": "-ಅರೂ",
+      "summary": "Add -ಊ to the \"if\" form for \"even if, although\": ಮಳೆ ಬಂದರೂ ಹೋಗುತ್ತೇನೆ (I'll go even if it rains). With a question word it means \"-ever\": ಏನೇ ಆದರೂ (whatever happens). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "ಬಂದರೆ → <b>ಬಂದರೂ</b>, ಮಾಡಿದರೆ → <b>ಮಾಡಿದರೂ</b>, ಇದ್ದರೆ → <b>ಇದ್ದರೂ</b>. <b>ಆದರೂ</b> on its own = \"even so, still\".",
+          "examples": [
+            [
+              "ಎಷ್ಟು {ಓದಿದರೂ} ನೆನಪಿನಲ್ಲಿ ಉಳಿಯುವುದಿಲ್ಲ.",
+              "Eshtu odidaruu nenapinalli uliyuvudilla.",
+              "However much I study, it doesn't stick."
+            ],
+            [
+              "ಹಣ {ಇದ್ದರೂ} ಅವನು ಖರ್ಚು ಮಾಡುವುದಿಲ್ಲ.",
+              "Hana iddaruu avanu kharchu maaduvudilla.",
+              "Even though he has money, he doesn't spend it."
+            ]
+          ]
+        },
+        {
+          "h": "-ever",
+          "p": "Question word + <b>-ಏ</b> + -ಅರೂ: <b>ಯಾರೇ ಬಂದರೂ</b> (whoever comes), <b>ಎಲ್ಲಿಗೇ ಹೋದರೂ</b> (wherever you go), <b>ಏನೇ ಆದರೂ</b> (whatever happens).",
+          "examples": [
+            [
+              "{ಏನೇ ಆದರೂ} ನಾನು ನಿನ್ನ ಜೊತೆ ಇರುತ್ತೇನೆ.",
+              "Ene aadaruu naanu ninna jote iruttene.",
+              "Whatever happens, I'll be with you."
+            ],
+            [
+              "{ಯಾರೇ ಬಂದರೂ} ಬಾಗಿಲು ತೆಗೆಯಬೇಡ.",
+              "Yaare bandaruu baagilu tegeyabeda.",
+              "Don't open the door, whoever comes."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಮಳೆ ＿ ನಾನು ಬರುತ್ತೇನೆ.",
+          "en": "I'll come even if it rains.",
+          "options": ["ಬಂದರೂ", "ಬಂದರೆ", "ಬಂದು", "ಬರದೆ"],
+          "answer": "ಬಂದರೂ",
+          "why": "Even if: -ಅರೂ."
+        },
+        {
+          "q": "ಎಷ್ಟು ಹೇಳಿ＿ ಅವನು ಕೇಳುವುದಿಲ್ಲ.",
+          "en": "However much I tell him, he doesn't listen.",
+          "options": ["ದರೆ", "ದರೂ", "ದ", "ದನು"],
+          "answer": "ದರೂ",
+          "why": "However much: ಎಷ್ಟು … -ಅರೂ."
+        },
+        {
+          "q": "ಏನೇ ＿ ಹೆದರಬೇಡ.",
+          "en": "Whatever happens, don't be afraid.",
+          "options": ["ಆದರೆ", "ಆಯಿತು", "ಆದರೂ", "ಆಗಲು"],
+          "answer": "ಆದರೂ",
+          "why": "Whatever: ಏನೇ ಆದರೂ."
+        },
+        {
+          "q": "ಸುಸ್ತಾಗಿತ್ತು. ＿ ಕೆಲಸ ಮುಗಿಸಿದೆ.",
+          "en": "I was tired. Even so, I finished the work.",
+          "options": ["ಆದರೆ", "ಆದ್ದರಿಂದ", "ಆಗ", "ಆದರೂ"],
+          "answer": "ಆದರೂ",
+          "why": "Even so: ಆದರೂ."
+        },
+        {
+          "q": "ಯಾರೇ ＿ ಹೇಳಬೇಡ.",
+          "en": "Don't tell anyone, whoever asks.",
+          "options": ["ಕೇಳಿದರೂ", "ಕೇಳಿದರೆ", "ಕೇಳಿ", "ಕೇಳಲು"],
+          "answer": "ಕೇಳಿದರೂ",
+          "why": "Whoever: ಯಾರೇ … -ಅರೂ."
+        }
+      ]
+    },
+    {
+      "id": "quotative",
+      "title": "Saying that: ಎಂದು, ಅಂತ",
+      "particle": "ಎಂದು・ಅಂತ",
+      "summary": "Reported words end with ಎಂದು (written) or ಅಂತ (spoken), then the verb of saying: ಅವನು ಬರುತ್ತೇನೆ ಎಂದು ಹೇಳಿದ (he said he'd come). The words keep their original form. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "The quoted clause keeps its original person: ಅವಳು \"ನಾನು ಬರುವುದಿಲ್ಲ\" <b>ಎಂದು</b> ಹೇಳಿದಳು → she said she wouldn't come. Spoken: <b>ಅಂತ</b>. Verbs: ಹೇಳು (say), ಕೇಳು (ask), ಅಂದುಕೊ (think), ಗೊತ್ತು (know).",
+          "examples": [
+            [
+              "ಅವನು ನಾಳೆ ಬರುತ್ತೇನೆ {ಎಂದು} ಹೇಳಿದ.",
+              "Avanu naale baruttene endu helida.",
+              "He said he'd come tomorrow."
+            ],
+            [
+              "ಮಳೆ ಬರುತ್ತದೆ {ಅಂತ} ಅಂದುಕೊಂಡೆ.",
+              "Male baruttade anta andukonde.",
+              "I thought it would rain."
+            ]
+          ]
+        },
+        {
+          "h": "Names and meanings",
+          "p": "<b>ಎಂದು ಕರೆಯುತ್ತಾರೆ</b> = is called: ಇದನ್ನು ದೋಸೆ <b>ಎಂದು ಕರೆಯುತ್ತಾರೆ</b>. \"What does X mean?\" = X <b>ಅಂದರೆ ಏನು</b>? Questions inside: ಅವನು ಬರುತ್ತಾನಾ <b>ಅಂತ</b> ಕೇಳಿ (ask whether he's coming).",
+          "examples": [
+            [
+              "\"ನೀರು\" {ಅಂದರೆ} ಏನು?",
+              "\"Niiru\" andare enu?",
+              "What does \"niiru\" mean?"
+            ],
+            [
+              "ಅವಳು ಎಲ್ಲಿದ್ದಾಳೆ {ಅಂತ} ಗೊತ್ತಿಲ್ಲ.",
+              "Avalu elliddaale anta gottilla.",
+              "I don't know where she is."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಅವರು ಬರುವುದಿಲ್ಲ ＿ ಹೇಳಿದರು.",
+          "en": "They said they wouldn't come.",
+          "options": ["ಎಂದು", "ಆದರೆ", "ಮತ್ತು", "ಆಗ"],
+          "answer": "ಎಂದು",
+          "why": "Quote: ಎಂದು."
+        },
+        {
+          "q": "ಅವನು ಡಾಕ್ಟರ್ ＿ ಅಂದುಕೊಂಡೆ.",
+          "en": "I thought he was a doctor. (spoken)",
+          "options": ["ಆದರೆ", "ಅಂತ", "ಅಂದರೆ", "ಆಗಿ"],
+          "answer": "ಅಂತ",
+          "why": "Spoken quote: ಅಂತ."
+        },
+        {
+          "q": "\"ಹಸಿವು\" ＿ ಏನು?",
+          "en": "What does \"hasivu\" mean?",
+          "options": ["ಅಂತ", "ಎಂದು", "ಅಂದರೆ", "ಆದರೆ"],
+          "answer": "ಅಂದರೆ",
+          "why": "Means: ಅಂದರೆ."
+        },
+        {
+          "q": "ಇದನ್ನು ಕನ್ನಡದಲ್ಲಿ ಏನು ＿ ಕರೆಯುತ್ತಾರೆ?",
+          "en": "What is this called in Kannada?",
+          "options": ["ಅಂದರೆ", "ಆದರೆ", "ಆಗಿ", "ಎಂದು"],
+          "answer": "ಎಂದು",
+          "why": "Called: ಎಂದು ಕರೆಯುತ್ತಾರೆ."
+        },
+        {
+          "q": "ಅವಳು ಊಟ ಮಾಡಿದಳಾ ＿ ಕೇಳಿ.",
+          "en": "Ask whether she has eaten.",
+          "options": ["ಅಂತ", "ಆದರೆ", "ಅಂದರೆ", "ಆದರೂ"],
+          "answer": "ಅಂತ",
+          "why": "Embedded question + ಅಂತ."
+        }
+      ]
+    },
+    {
+      "id": "because-so",
+      "title": "Because and so: ಯಾಕೆಂದರೆ, ಆದ್ದರಿಂದ",
+      "particle": "ಯಾಕೆಂದರೆ・ಆದ್ದರಿಂದ・-ಇದ್ದರಿಂದ",
+      "summary": "\"Because\" can be a word, ಯಾಕೆಂದರೆ, or an ending on the verb, -ಇದ್ದರಿಂದ: ಮಳೆ ಬಂದಿದ್ದರಿಂದ (because it rained). \"So\" is ಆದ್ದರಿಂದ, or ಅದಕ್ಕೆ in speech. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>ಯಾಕೆಂದರೆ</b> / <b>ಏಕೆಂದರೆ</b> starts the reason after the result: ನಾನು ಬರಲಿಲ್ಲ, <b>ಯಾಕೆಂದರೆ</b> ಜ್ವರ ಇತ್ತು. <b>ಆದ್ದರಿಂದ</b> / <b>ಅದಕ್ಕೆ</b> starts the result: ಜ್ವರ ಇತ್ತು, <b>ಆದ್ದರಿಂದ</b> ಬರಲಿಲ್ಲ.",
+          "examples": [
+            [
+              "ನಾನು ತಡವಾಗಿ ಬಂದೆ, {ಯಾಕೆಂದರೆ} ಬಸ್ ಸಿಗಲಿಲ್ಲ.",
+              "Naanu tadavaagi bande, yaakendare bas sigalilla.",
+              "I came late because I couldn't get a bus."
+            ],
+            [
+              "ತುಂಬಾ ಟ್ರಾಫಿಕ್ ಇತ್ತು, {ಅದಕ್ಕೆ} ತಡ ಆಯಿತು.",
+              "Tumbaa traafik ittu, adakke tada aayitu.",
+              "There was a lot of traffic, so I was late."
+            ]
+          ]
+        },
+        {
+          "h": "The ending",
+          "p": "Verb + <b>-ಇದ್ದರಿಂದ</b> (past) or <b>-ಉವುದರಿಂದ</b> (general): ಮಳೆ <b>ಬಂದಿದ್ದರಿಂದ</b> ಆಟ ನಿಂತಿತು. Nouns: <b>-ಇಂದಾಗಿ</b>: ಮಳೆ<b>ಯಿಂದಾಗಿ</b>. Also <b>-ಕಾರಣ</b> in writing.",
+          "examples": [
+            [
+              "ಮಳೆ {ಬಂದಿದ್ದರಿಂದ} ಶಾಲೆ ಮುಚ್ಚಿತ್ತು.",
+              "Male bandiddarinda shaale muchchittu.",
+              "The school was closed because it had rained."
+            ],
+            [
+              "{ಟ್ರಾಫಿಕ್‌ನಿಂದಾಗಿ} ತಡ ಆಯಿತು.",
+              "Traafiknindaagi tada aayitu.",
+              "I was late because of the traffic."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನಾನು ಬರಲಿಲ್ಲ, ＿ ಜ್ವರ ಇತ್ತು.",
+          "en": "I didn't come because I had a fever.",
+          "options": ["ಯಾಕೆಂದರೆ", "ಆದ್ದರಿಂದ", "ಆದರೆ", "ಆದರೂ"],
+          "answer": "ಯಾಕೆಂದರೆ",
+          "why": "Because: ಯಾಕೆಂದರೆ."
+        },
+        {
+          "q": "ಜ್ವರ ಇತ್ತು, ＿ ಬರಲಿಲ್ಲ.",
+          "en": "I had a fever, so I didn't come.",
+          "options": ["ಯಾಕೆಂದರೆ", "ಆದ್ದರಿಂದ", "ಆದರೆ", "ಆದರೂ"],
+          "answer": "ಆದ್ದರಿಂದ",
+          "why": "So: ಆದ್ದರಿಂದ."
+        },
+        {
+          "q": "ಅವನು ಓದಿ＿ ಪಾಸ್ ಆದ.",
+          "en": "He passed because he studied.",
+          "options": ["ದರೂ", "ದರೆ", "ದ್ದರಿಂದ", "ದ"],
+          "answer": "ದ್ದರಿಂದ",
+          "why": "Because (ending): -ಇದ್ದರಿಂದ."
+        },
+        {
+          "q": "ಮಳೆ＿ ರಸ್ತೆ ಮುಚ್ಚಿದೆ.",
+          "en": "The road is closed because of the rain.",
+          "options": ["ಯಲ್ಲಿ", "ಗೆ", "ಯನ್ನು", "ಯಿಂದಾಗಿ"],
+          "answer": "ಯಿಂದಾಗಿ",
+          "why": "Because of (noun): -ಇಂದಾಗಿ."
+        },
+        {
+          "q": "ನೀವು ＿ ಬರಲಿಲ್ಲ?",
+          "en": "Why didn't you come?",
+          "options": ["ಯಾಕೆ", "ಯಾಕೆಂದರೆ", "ಆದ್ದರಿಂದ", "ಹೇಗೆ"],
+          "answer": "ಯಾಕೆ",
+          "why": "Why: ಯಾಕೆ."
+        }
+      ]
+    },
+    {
+      "id": "before-after",
+      "title": "Before and after: ಮೊದಲು, ನಂತರ",
+      "particle": "-ಉವ ಮೊದಲು・-ದ ನಂತರ",
+      "summary": "\"Before\" follows the -ಉವ form: ಹೋಗುವ ಮೊದಲು. \"After\" follows the past -ದ form: ಬಂದ ನಂತರ. Spoken Kannada likes ಮುಂಚೆ and ಮೇಲೆ. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Before: <b>ಮಲಗುವ ಮೊದಲು</b> / <b>ಮಲಗುವ ಮುಂಚೆ</b> (before sleeping). After: <b>ಊಟ ಮಾಡಿದ ನಂತರ</b> / <b>ಊಟ ಮಾಡಿದ ಮೇಲೆ</b>. With nouns: ಊಟ<b>ಕ್ಕೆ ಮೊದಲು</b>, ಊಟ<b>ದ ನಂತರ</b>.",
+          "examples": [
+            [
+              "{ಮಲಗುವ ಮೊದಲು} ಹಲ್ಲು ಉಜ್ಜು.",
+              "Malaguva modalu hallu ujju.",
+              "Brush your teeth before you sleep."
+            ],
+            [
+              "ಕೆಲಸ {ಮುಗಿದ ನಂತರ} ಫೋನ್ ಮಾಡುತ್ತೇನೆ.",
+              "Kelasa mugida nantara phon maaduttene.",
+              "I'll call after work's over."
+            ]
+          ]
+        },
+        {
+          "h": "Earlier, later, ago",
+          "p": "Alone: <b>ಮೊದಲು</b> (first, earlier), <b>ಆಮೇಲೆ</b> / <b>ನಂತರ</b> (afterwards). Ago: ಮೂರು ವರ್ಷದ <b>ಹಿಂದೆ</b> (three years ago). Later: ಎರಡು ದಿನದ <b>ನಂತರ</b> (two days later).",
+          "examples": [
+            [
+              "{ಮೊದಲು} ತಿನ್ನು, {ಆಮೇಲೆ} ಆಡು.",
+              "Modalu tinnu, aamele aadu.",
+              "Eat first, play afterwards."
+            ],
+            [
+              "ಐದು ವರ್ಷದ {ಹಿಂದೆ} ನಾನು ಇಲ್ಲಿಗೆ ಬಂದೆ.",
+              "Aidu varshada hinde naanu illige bande.",
+              "I came here five years ago."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಹೋಗು＿ ಮೊದಲು ನನಗೆ ಹೇಳಿ.",
+          "en": "Tell me before you go.",
+          "options": ["ವ", "ದ", "ತ್ತ", "ಲು"],
+          "answer": "ವ",
+          "why": "Before: -ಉವ ಮೊದಲು."
+        },
+        {
+          "q": "ಊಟ ಮಾಡಿದ ＿ ಸ್ವಲ್ಪ ಮಲಗುತ್ತೇನೆ.",
+          "en": "After eating I'll nap a little.",
+          "options": ["ಮೊದಲು", "ನಂತರ", "ಮುಂಚೆ", "ಹಿಂದೆ"],
+          "answer": "ನಂತರ",
+          "why": "After: -ದ ನಂತರ."
+        },
+        {
+          "q": "ಎರಡು ವರ್ಷದ ＿ ನಾವು ಭೇಟಿಯಾದೆವು.",
+          "en": "We met two years ago.",
+          "options": ["ನಂತರ", "ಮುಂದೆ", "ಹಿಂದೆ", "ಮೇಲೆ"],
+          "answer": "ಹಿಂದೆ",
+          "why": "Ago: ಹಿಂದೆ."
+        },
+        {
+          "q": "ಮೊದಲು ಕೆಲಸ, ＿ ಆಟ.",
+          "en": "Work first, play afterwards.",
+          "options": ["ಮೊದಲು", "ಹಿಂದೆ", "ಮುಂಚೆ", "ಆಮೇಲೆ"],
+          "answer": "ಆಮೇಲೆ",
+          "why": "Afterwards: ಆಮೇಲೆ."
+        },
+        {
+          "q": "ಊಟ＿ ಮೊದಲು ಈ ಮಾತ್ರೆ ತೆಗೆದುಕೊಳ್ಳಿ.",
+          "en": "Take this tablet before meals.",
+          "options": ["ಕ್ಕೆ", "ದ", "ವನ್ನು", "ದಲ್ಲಿ"],
+          "answer": "ಕ್ಕೆ",
+          "why": "Noun + -ಕ್ಕೆ ಮೊದಲು."
+        }
+      ]
+    },
+    {
+      "id": "when-aaga",
+      "title": "When and while: -ಆಗ",
+      "particle": "-ಆಗ・-ಉವಾಗ",
+      "summary": "\"When\" is -ಆಗ on a participle: ನಾನು ಬಂದಾಗ (when I came). With the -ಉವ form it means \"while\": ಊಟ ಮಾಡುವಾಗ (while eating). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Past: ಬಂದ → <b>ಬಂದಾಗ</b>, ಹೋದ → <b>ಹೋದಾಗ</b>, ನೋಡಿದ → <b>ನೋಡಿದಾಗ</b>. Ongoing: ಬರುವ → <b>ಬರುವಾಗ</b>, ಓದುವ → <b>ಓದುವಾಗ</b>. Being: ಚಿಕ್ಕವನಾಗಿ<b>ದ್ದಾಗ</b> (when I was small).",
+          "examples": [
+            [
+              "ನಾನು {ಬಂದಾಗ} ಅವನು ಮಲಗಿದ್ದ.",
+              "Naanu bandaaga avanu malagidda.",
+              "When I came, he was asleep."
+            ],
+            [
+              "{ಊಟ ಮಾಡುವಾಗ} ಮಾತನಾಡಬೇಡ.",
+              "Uuta maaduvaaga maatanaadabeda.",
+              "Don't talk while you eat."
+            ]
+          ]
+        },
+        {
+          "h": "Then, now, every time",
+          "p": "<b>ಆಗ</b> alone = then. <b>ಈಗ</b> = now. \"Every time\" = <b>-ಆಗಲೆಲ್ಲಾ</b>: ಅವನು <b>ಬಂದಾಗಲೆಲ್ಲಾ</b> ಹಣ್ಣು ತರುತ್ತಾನೆ (whenever he comes, he brings fruit).",
+          "examples": [
+            [
+              "{ಚಿಕ್ಕವಳಾಗಿದ್ದಾಗ} ನಾನು ಹಳ್ಳಿಯಲ್ಲಿ ಇದ್ದೆ.",
+              "Chikkavalaagiddaaga naanu halliyalli idde.",
+              "When I was little, I lived in a village."
+            ],
+            [
+              "ಅವಳು {ಬಂದಾಗಲೆಲ್ಲಾ} ಮಳೆ ಬರುತ್ತದೆ.",
+              "Avalu bandaagalellaa male baruttade.",
+              "Every time she comes, it rains."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನಾನು ಮನೆಗೆ ಬಂದ＿ ಯಾರೂ ಇರಲಿಲ್ಲ.",
+          "en": "When I came home, nobody was there.",
+          "options": ["ಾಗ", "ರೆ", "ರೂ", "ು"],
+          "answer": "ಾಗ",
+          "why": "When: -ಆಗ."
+        },
+        {
+          "q": "ನಡೆಯು＿ ಫೋನ್ ನೋಡಬೇಡ.",
+          "en": "Don't look at your phone while walking.",
+          "options": ["ದಾಗ", "ವಾಗ", "ತ್ತ", "ವುದು"],
+          "answer": "ವಾಗ",
+          "why": "While: -ಉವಾಗ."
+        },
+        {
+          "q": "ಚಿಕ್ಕವನಾಗಿದ್ದ＿ ನಾನು ತುಂಬಾ ಆಡುತ್ತಿದ್ದೆ.",
+          "en": "When I was little, I played a lot.",
+          "options": ["ರೆ", "ರೂ", "ಾಗ", "ು"],
+          "answer": "ಾಗ",
+          "why": "When I was: -ಇದ್ದಾಗ."
+        },
+        {
+          "q": "＿ ಏನು ಮಾಡುತ್ತಿದ್ದೀರಿ?",
+          "en": "What are you doing now?",
+          "options": ["ಆಗ", "ಯಾವಾಗ", "ಮೊದಲು", "ಈಗ"],
+          "answer": "ಈಗ",
+          "why": "Now: ಈಗ."
+        },
+        {
+          "q": "ಅವನು ಬಂದಾಗ＿ ಜಗಳ ಆಗುತ್ತದೆ.",
+          "en": "Every time he comes there's a quarrel.",
+          "options": ["ಲೆಲ್ಲಾ", "ಲೇ", "ಲೂ", "ವರೆಗೆ"],
+          "answer": "ಲೆಲ್ಲಾ",
+          "why": "Every time: -ಆಗಲೆಲ್ಲಾ."
+        }
+      ]
+    },
+    {
+      "id": "until-since",
+      "title": "Until: -ಉವವರೆಗೆ, ತನಕ",
+      "particle": "-ವರೆಗೆ・-ತನಕ",
+      "summary": "\"Until\" is ವರೆಗೆ after a noun or the -ಉವ form: ಐದು ಗಂಟೆಯವರೆಗೆ (until five), ಅವನು ಬರುವವರೆಗೆ (until he comes). Spoken: ತನಕ. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Noun: ಸಂಜೆ<b>ಯವರೆಗೆ</b> (till evening), ಇಲ್ಲಿ<b>ಯವರೆಗೆ</b> (up to here). Verb: ಬರು<b>ವವರೆಗೆ</b> / ಬರು<b>ವ ತನಕ</b> (until … comes). From … to: ಸೋಮವಾರ<b>ದಿಂದ</b> ಶುಕ್ರವಾರ<b>ದವರೆಗೆ</b>.",
+          "examples": [
+            [
+              "ನಾನು {ಸಂಜೆಯವರೆಗೆ} ಆಫೀಸಿನಲ್ಲಿ ಇರುತ್ತೇನೆ.",
+              "Naanu sanjeyavarege aafiisinalli iruttene.",
+              "I'll be at the office till evening."
+            ],
+            [
+              "ಅವನು {ಬರುವವರೆಗೆ} ಕಾಯಿರಿ.",
+              "Avanu baruvavarege kaayiri.",
+              "Wait until he comes."
+            ]
+          ]
+        },
+        {
+          "h": "Up to now, still",
+          "p": "<b>ಇಲ್ಲಿಯವರೆಗೆ</b> / <b>ಇದುವರೆಗೆ</b> = so far, up to now. With a negative: <b>ಇದುವರೆಗೆ</b> ನೋಡಿಲ್ಲ (I've never seen it so far). <b>ಇನ್ನೂ</b> = still: ಅವನು <b>ಇನ್ನೂ</b> ಮಲಗಿದ್ದಾನೆ.",
+          "examples": [
+            [
+              "{ಇದುವರೆಗೆ} ಯಾರೂ ಬಂದಿಲ್ಲ.",
+              "Iduvarege yaaruu bandilla.",
+              "Nobody has come so far."
+            ],
+            [
+              "ಮಳೆ {ನಿಲ್ಲುವ ತನಕ} ಇಲ್ಲೇ ಇರಿ.",
+              "Male nilluva tanaka ille iri.",
+              "Stay here until the rain stops."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನಾನು ರಾತ್ರಿ＿ ಓದುತ್ತೇನೆ.",
+          "en": "I'll study until night.",
+          "options": ["ಯವರೆಗೆ", "ಯಿಂದ", "ಗೆ", "ಯಲ್ಲಿ"],
+          "answer": "ಯವರೆಗೆ",
+          "why": "Until: -ವರೆಗೆ."
+        },
+        {
+          "q": "ಬಸ್ ಬರು＿ ಕಾಯೋಣ.",
+          "en": "Let's wait until the bus comes.",
+          "options": ["ವಾಗ", "ವವರೆಗೆ", "ವ ಮೊದಲು", "ದಾಗ"],
+          "answer": "ವವರೆಗೆ",
+          "why": "Until (verb): -ಉವವರೆಗೆ."
+        },
+        {
+          "q": "ಸೋಮವಾರದಿಂದ ಶುಕ್ರವಾರದ＿ ಕೆಲಸ.",
+          "en": "Work from Monday to Friday.",
+          "options": ["ಿಂದ", "ಲ್ಲಿ", "ವರೆಗೆ", "ನಂತರ"],
+          "answer": "ವರೆಗೆ",
+          "why": "From … to: -ಇಂದ … -ವರೆಗೆ."
+        },
+        {
+          "q": "＿ ನಾನು ತಾಜ್ ಮಹಲ್ ನೋಡಿಲ್ಲ.",
+          "en": "I've never seen the Taj Mahal so far.",
+          "options": ["ಇನ್ನೂ", "ಆಗ", "ಆಮೇಲೆ", "ಇದುವರೆಗೆ"],
+          "answer": "ಇದುವರೆಗೆ",
+          "why": "So far: ಇದುವರೆಗೆ."
+        },
+        {
+          "q": "ಅವನು ＿ ಮಲಗಿದ್ದಾನೆ.",
+          "en": "He's still asleep.",
+          "options": ["ಇನ್ನೂ", "ಇದುವರೆಗೆ", "ಆಗಲೇ", "ಮತ್ತೆ"],
+          "answer": "ಇನ್ನೂ",
+          "why": "Still: ಇನ್ನೂ."
+        }
+      ]
+    },
+    {
+      "id": "permissive",
+      "title": "May, might: -ಅಬಹುದು",
+      "particle": "-ಅಬಹುದು",
+      "summary": "-ಅಬಹುದು gives permission (you may go) and possibility (it might rain): ನೀವು ಹೋಗಬಹುದು, ಮಳೆ ಬರಬಹುದು. Same form for every person. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Permission: ನೀವು ಒಳಗೆ ಬರ<b>ಬಹುದು</b> (you may come in). Asking: ನಾನು ಇಲ್ಲಿ ಕುಳಿತುಕೊಳ್ಳ<b>ಬಹುದಾ</b>? (may I sit here?). Spoken: -ಬಹುದು → <b>-ಬೋದು</b>.",
+          "examples": [
+            [
+              "ನಾನು ಒಳಗೆ {ಬರಬಹುದಾ}?",
+              "Naanu olage barabahudaa?",
+              "May I come in?"
+            ],
+            [
+              "ನೀವು ಈಗ {ಹೋಗಬಹುದು}.",
+              "Niivu iiga hogabahudu.",
+              "You can go now."
+            ]
+          ]
+        },
+        {
+          "h": "Possibility",
+          "p": "Possibility: ಇವತ್ತು ಮಳೆ ಬರ<b>ಬಹುದು</b> (it might rain today). Past possibility: <b>-ಇರಬಹುದು</b>: ಅವನು ಹೋಗಿ<b>ರಬಹುದು</b> (he may have gone).",
+          "examples": [
+            [
+              "ಇವತ್ತು ಮಳೆ {ಬರಬಹುದು}.",
+              "Ivattu male barabahudu.",
+              "It might rain today."
+            ],
+            [
+              "ಅವಳು ಮನೆಗೆ {ಹೋಗಿರಬಹುದು}.",
+              "Avalu manege hogirabahudu.",
+              "She may have gone home."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನಾನು ಇಲ್ಲಿ ಕುಳಿತುಕೊಳ್ಳ＿?",
+          "en": "May I sit here?",
+          "options": ["ಬಹುದಾ", "ಬೇಕಾ", "ಬೇಡ", "ಲಿಲ್ಲ"],
+          "answer": "ಬಹುದಾ",
+          "why": "Asking permission: -ಅಬಹುದಾ?"
+        },
+        {
+          "q": "ನೀವು ಫೋಟೋ ತೆಗೆಯ＿.",
+          "en": "You may take photos.",
+          "options": ["ಬಾರದು", "ಬಹುದು", "ಬೇಡಿ", "ಲಿಲ್ಲ"],
+          "answer": "ಬಹುದು",
+          "why": "Permission: -ಅಬಹುದು."
+        },
+        {
+          "q": "ನಾಳೆ ತುಂಬಾ ಬಿಸಿಲು ಇರ＿.",
+          "en": "It might be very sunny tomorrow.",
+          "options": ["ಬೇಕು", "ಬೇಡ", "ಬಹುದು", "ಲಿಲ್ಲ"],
+          "answer": "ಬಹುದು",
+          "why": "Possibility: -ಅಬಹುದು."
+        },
+        {
+          "q": "ಅವನು ಆಗಲೇ ಹೊರಟಿ＿.",
+          "en": "He may have already left.",
+          "options": ["ದ್ದಾನೆ", "ಲ್ಲ", "ರಬೇಡ", "ರಬಹುದು"],
+          "answer": "ರಬಹುದು",
+          "why": "May have: -ಇರಬಹುದು."
+        },
+        {
+          "q": "ಇದನ್ನು ನಾನು ತೆಗೆದುಕೊಳ್ಳ＿?",
+          "en": "Can I take this?",
+          "options": ["ಬಹುದಾ", "ಬಹುದು", "ಬೇಡ", "ಬೇಕು"],
+          "answer": "ಬಹುದಾ",
+          "why": "Asking: -ಅಬಹುದಾ?"
+        }
+      ]
+    },
+    {
+      "id": "prohibitive",
+      "title": "Must not: -ಅಬಾರದು",
+      "particle": "-ಅಬಾರದು",
+      "summary": "-ಅಬಾರದು is \"must not, shouldn't\": ಸುಳ್ಳು ಹೇಳಬಾರದು (you mustn't lie). It's the opposite of -ಅಬಹುದು and is common on signs and in advice. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "ಮಾಡು → <b>ಮಾಡಬಾರದು</b>, ಹೋಗು → <b>ಹೋಗಬಾರದು</b>, ತಿನ್ನು → <b>ತಿನ್ನಬಾರದು</b>. Signs: ಇಲ್ಲಿ ಉಗುಳ<b>ಬಾರದು</b> (no spitting here).",
+          "examples": [
+            ["ಸುಳ್ಳು {ಹೇಳಬಾರದು}.", "Sullu helabaaradu.", "You mustn't lie."],
+            [
+              "ಇಲ್ಲಿ ಧೂಮಪಾನ {ಮಾಡಬಾರದು}.",
+              "Illi dhuumapaana maadabaaradu.",
+              "No smoking here."
+            ]
+          ]
+        },
+        {
+          "h": "Advice and \"so as not to\"",
+          "p": "<b>-ಅಬಾರದಿತ್ತು</b> = shouldn't have: ನಾನು ಹೇಳ<b>ಬಾರದಿತ್ತು</b>. \"So as not to\": <b>-ಅದ ಹಾಗೆ</b>: ಮರೆಯ<b>ದ ಹಾಗೆ</b> ಬರೆದುಕೊ (write it down so you don't forget).",
+          "examples": [
+            [
+              "ನಾನು ಆ ಮಾತು {ಹೇಳಬಾರದಿತ್ತು}.",
+              "Naanu aa maatu helabaaradittu.",
+              "I shouldn't have said that."
+            ],
+            [
+              "{ಮರೆಯದ ಹಾಗೆ} ಬರೆದುಕೊಳ್ಳಿ.",
+              "Mareyada haage baredukolli.",
+              "Write it down so you don't forget."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಇಲ್ಲಿ ಕಸ ಹಾಕ＿.",
+          "en": "Don't throw rubbish here. (sign)",
+          "options": ["ಬಾರದು", "ಬಹುದು", "ಬೇಕು", "ಲಿಲ್ಲ"],
+          "answer": "ಬಾರದು",
+          "why": "Must not: -ಅಬಾರದು."
+        },
+        {
+          "q": "ಮಕ್ಕಳು ತುಂಬಾ ಸಿಹಿ ತಿನ್ನ＿.",
+          "en": "Children shouldn't eat too many sweets.",
+          "options": ["ಬೇಕು", "ಬಾರದು", "ಬಹುದು", "ಲು"],
+          "answer": "ಬಾರದು",
+          "why": "Shouldn't: -ಅಬಾರದು."
+        },
+        {
+          "q": "ನಾನು ಅಲ್ಲಿಗೆ ಹೋಗ＿.",
+          "en": "I shouldn't have gone there.",
+          "options": ["ಬಾರದು", "ಬೇಕಾಯಿತು", "ಬಾರದಿತ್ತು", "ಬಹುದು"],
+          "answer": "ಬಾರದಿತ್ತು",
+          "why": "Shouldn't have: -ಅಬಾರದಿತ್ತು."
+        },
+        {
+          "q": "ಬೀಳ＿ ಹಾಗೆ ನಿಧಾನವಾಗಿ ನಡೆ.",
+          "en": "Walk slowly so you don't fall.",
+          "options": ["ವ", "ಲು", "ಬೇಡ", "ದ"],
+          "answer": "ದ",
+          "why": "So as not to: -ಅದ ಹಾಗೆ."
+        },
+        {
+          "q": "ತರಗತಿಯಲ್ಲಿ ಫೋನ್ ಉಪಯೋಗಿಸ＿.",
+          "en": "Phones must not be used in class.",
+          "options": ["ಬಾರದು", "ಬಹುದು", "ಬೇಕು", "ಲಿ"],
+          "answer": "ಬಾರದು",
+          "why": "Must not: -ಅಬಾರದು."
+        }
+      ]
+    },
+    {
+      "id": "hortative",
+      "title": "Let's: -ಓಣ",
+      "particle": "-ಓಣ",
+      "summary": "\"Let's\" is -ಓಣ on the verb stem: ಹೋಗೋಣ (let's go), ಮಾಡೋಣ (let's do it). As a question, -ಓಣವಾ? asks \"shall we?\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "ಹೋಗು → <b>ಹೋಗೋಣ</b>, ಮಾಡು → <b>ಮಾಡೋಣ</b>, ತಿನ್ನು → <b>ತಿನ್ನೋಣ</b>, ನೋಡು → <b>ನೋಡೋಣ</b>, ಕುಳಿತುಕೊ → <b>ಕುಳಿತುಕೊಳ್ಳೋಣ</b>. Shall we: <b>ಹೋಗೋಣವಾ?</b> / <b>ಹೋಗೋಣ್ವಾ?</b>",
+          "examples": [
+            ["ಬನ್ನಿ, {ಹೋಗೋಣ}.", "Banni, hogona.", "Come on, let's go."],
+            [
+              "ಕಾಫಿ {ಕುಡಿಯೋಣವಾ}?",
+              "Kaafi kudiyonavaa?",
+              "Shall we have coffee?"
+            ]
+          ]
+        },
+        {
+          "h": "Let me, let him",
+          "p": "\"Let him / let it\" is <b>-ಅಲಿ</b>: ಅವನು ಬರ<b>ಲಿ</b> (let him come). \"We'll see\" = <b>ನೋಡೋಣ</b>. \"Let's not\" = <b>-ಉವುದು ಬೇಡ</b>: ಇವತ್ತು ಹೋಗು<b>ವುದು ಬೇಡ</b>.",
+          "examples": [
+            ["ಆಮೇಲೆ {ನೋಡೋಣ}.", "Aamele nodona.", "We'll see later."],
+            [
+              "ಇವತ್ತು {ಹೊರಗೆ ಹೋಗುವುದು ಬೇಡ}.",
+              "Ivattu horage hoguvudu beda.",
+              "Let's not go out today."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಸಿನಿಮಾಗೆ ಹೋಗ＿.",
+          "en": "Let's go to a film.",
+          "options": ["ೋಣ", "ಿ", "ಲಿಲ್ಲ", "ಬೇಕು"],
+          "answer": "ೋಣ",
+          "why": "Let's: -ಓಣ."
+        },
+        {
+          "q": "ಊಟ ಮಾಡ＿?",
+          "en": "Shall we eat?",
+          "options": ["ೋಣ", "ೋಣವಾ", "ಿದೆ", "ಬೇಡ"],
+          "answer": "ೋಣವಾ",
+          "why": "Shall we: -ಓಣವಾ?"
+        },
+        {
+          "q": "ಮಳೆ ನಿಲ್ಲ＿.",
+          "en": "Let the rain stop.",
+          "options": ["ೋಣ", "ಬೇಕು", "ಲಿ", "ಲಿಲ್ಲ"],
+          "answer": "ಲಿ",
+          "why": "Let it: -ಅಲಿ."
+        },
+        {
+          "q": "ಇವತ್ತು ಹೋಗುವುದು ＿.",
+          "en": "Let's not go today.",
+          "options": ["ಬೇಕು", "ಇಲ್ಲ", "ಅಲ್ಲ", "ಬೇಡ"],
+          "answer": "ಬೇಡ",
+          "why": "Let's not: -ಉವುದು ಬೇಡ."
+        },
+        {
+          "q": "ಸರಿ, ಆಮೇಲೆ ನೋಡ＿.",
+          "en": "OK, we'll see later.",
+          "options": ["ೋಣ", "ಿದೆ", "ಲಿಲ್ಲ", "ಬೇಡ"],
+          "answer": "ೋಣ",
+          "why": "We'll see: ನೋಡೋಣ."
+        }
+      ]
+    },
+    {
+      "id": "continuous",
+      "title": "Is doing, was doing: -ಉತ್ತಿದ್ದೇನೆ",
+      "particle": "-ಉತ್ತಿದ್ದ-",
+      "summary": "The continuous is -ಉತ್ತ + ಇರು: ಮಾಡುತ್ತಿದ್ದೇನೆ (I am doing). The past continuous swaps in the past of ಇರು: ಮಾಡುತ್ತಿದ್ದೆ (I was doing). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Present: ಮಾಡು<b>ತ್ತಿದ್ದೇನೆ</b> I, ಮಾಡು<b>ತ್ತಿದ್ದೀರಿ</b> you, ಮಾಡು<b>ತ್ತಿದ್ದಾನೆ</b> he, ಮಾಡು<b>ತ್ತಿದ್ದಾಳೆ</b> she, ಮಾಡು<b>ತ್ತಿದ್ದಾರೆ</b> they, ಮಾಡು<b>ತ್ತಿದೆ</b> it. Spoken: ಮಾಡ್ತಾ ಇದ್ದೀನಿ.",
+          "examples": [
+            [
+              "ಅವಳು ಅಡುಗೆ {ಮಾಡುತ್ತಿದ್ದಾಳೆ}.",
+              "Avalu aduge maaduttiddaale.",
+              "She's cooking."
+            ],
+            ["ಮಳೆ {ಬರುತ್ತಿದೆ}.", "Male baruttide.", "It's raining."]
+          ]
+        },
+        {
+          "h": "Was doing",
+          "p": "Past: ಮಾಡು<b>ತ್ತಿದ್ದೆ</b> I was, ಮಾಡು<b>ತ್ತಿದ್ದ</b> he was, ಮಾಡು<b>ತ್ತಿದ್ದಳು</b> she was, ಮಾಡು<b>ತ್ತಿದ್ದರು</b> they were, ಮಾಡು<b>ತ್ತಿತ್ತು</b> it was. Often with -ಆಗ: ನೀವು ಫೋನ್ ಮಾಡಿದಾಗ ನಾನು <b>ಸ್ನಾನ ಮಾಡುತ್ತಿದ್ದೆ</b>.",
+          "examples": [
+            [
+              "ನೀವು ಕರೆದಾಗ ನಾನು {ಓದುತ್ತಿದ್ದೆ}.",
+              "Niivu karedaaga naanu oduttidde.",
+              "I was studying when you called."
+            ],
+            ["ಮಗು {ಅಳುತ್ತಿತ್ತು}.", "Magu aluttittu.", "The baby was crying."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನಾನು ಈಗ ಊಟ ಮಾಡು＿.",
+          "en": "I'm eating right now.",
+          "options": ["ತ್ತಿದ್ದೇನೆ", "ತ್ತಿದ್ದೆ", "ತ್ತೇನೆ", "ವುದಿಲ್ಲ"],
+          "answer": "ತ್ತಿದ್ದೇನೆ",
+          "why": "Now: -ಉತ್ತಿದ್ದೇನೆ."
+        },
+        {
+          "q": "ಮಕ್ಕಳು ಆಟ ಆಡು＿.",
+          "en": "The children are playing.",
+          "options": ["ತ್ತಿದ್ದಾನೆ", "ತ್ತಿದ್ದಾರೆ", "ತ್ತಿದೆ", "ತ್ತಿದ್ದೇನೆ"],
+          "answer": "ತ್ತಿದ್ದಾರೆ",
+          "why": "They: -ಉತ್ತಿದ್ದಾರೆ."
+        },
+        {
+          "q": "ನೀವು ಬಂದಾಗ ನಾನು ಮಲಗು＿.",
+          "en": "I was sleeping when you came.",
+          "options": ["ತ್ತಿದ್ದೇನೆ", "ತ್ತೇನೆ", "ತ್ತಿದ್ದೆ", "ತ್ತಿದೆ"],
+          "answer": "ತ್ತಿದ್ದೆ",
+          "why": "Was doing: -ಉತ್ತಿದ್ದೆ."
+        },
+        {
+          "q": "ಹೊರಗೆ ಮಳೆ ಬರು＿.",
+          "en": "It's raining outside.",
+          "options": ["ತ್ತಿದ್ದಾನೆ", "ತ್ತಿದ್ದೇನೆ", "ತ್ತಿದ್ದರು", "ತ್ತಿದೆ"],
+          "answer": "ತ್ತಿದೆ",
+          "why": "\"It\": -ಉತ್ತಿದೆ."
+        },
+        {
+          "q": "ನೀವು ಏನು ಮಾಡು＿?",
+          "en": "What are you doing?",
+          "options": ["ತ್ತಿದ್ದೀರಿ", "ತ್ತಿದ್ದೇನೆ", "ತ್ತಿದ್ದಾಳೆ", "ತ್ತಿದೆ"],
+          "answer": "ತ್ತಿದ್ದೀರಿ",
+          "why": "Polite you: -ಉತ್ತಿದ್ದೀರಿ."
+        }
+      ]
+    },
+    {
+      "id": "habitual-past",
+      "title": "Used to: -ಉತ್ತಿದ್ದೆ",
+      "particle": "-ಉತ್ತಿದ್ದ- + time word",
+      "summary": "The past continuous form also means \"used to\": ಚಿಕ್ಕವನಾಗಿದ್ದಾಗ ನಾನು ಕ್ರಿಕೆಟ್ ಆಡುತ್ತಿದ್ದೆ (I used to play cricket as a boy). Time words like ಮೊದಲು or ಆಗ show which reading is meant. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>ಮೊದಲು</b> ನಾನು ಸಿಗರೇಟ್ ಸೇದು<b>ತ್ತಿದ್ದೆ</b> (I used to smoke). <b>ಪ್ರತಿ ದಿನ</b> ಅವನು ನಡೆದು ಹೋಗು<b>ತ್ತಿದ್ದ</b> (he used to walk every day). <b>ಆಗ</b> = in those days.",
+          "examples": [
+            [
+              "{ಮೊದಲು} ನಾನು ಬೆಂಗಳೂರಿನಲ್ಲಿ {ಇರುತ್ತಿದ್ದೆ}.",
+              "Modalu naanu bengaluurinalli iruttidde.",
+              "I used to live in Bengaluru."
+            ],
+            [
+              "ಅಜ್ಜಿ ನಮಗೆ ಕಥೆ {ಹೇಳುತ್ತಿದ್ದರು}.",
+              "Ajji namage kathe heluttiddaru.",
+              "Grandma used to tell us stories."
+            ]
+          ]
+        },
+        {
+          "h": "No longer",
+          "p": "<b>ಈಗ ಇಲ್ಲ</b> / <b>ಈಗ … -ಉವುದಿಲ್ಲ</b> = not any more: ಮೊದಲು ಕುಡಿಯುತ್ತಿದ್ದೆ, <b>ಈಗ ಕುಡಿಯುವುದಿಲ್ಲ</b>. Negative \"used not to\": -ಉತ್ತಿರಲಿಲ್ಲ: ಮೊದಲು ಅವನು ಮಾತನಾಡು<b>ತ್ತಿರಲಿಲ್ಲ</b>.",
+          "examples": [
+            [
+              "ಮೊದಲು ಕಾಫಿ ಕುಡಿಯುತ್ತಿದ್ದೆ, {ಈಗ ಕುಡಿಯುವುದಿಲ್ಲ}.",
+              "Modalu kaafi kudiyuttidde, iiga kudiyuvudilla.",
+              "I used to drink coffee; I don't any more."
+            ],
+            [
+              "ಅವಳು ಮೊದಲು ಹೆಚ್ಚು {ಮಾತನಾಡುತ್ತಿರಲಿಲ್ಲ}.",
+              "Avalu modalu hechchu maatanaaduttiralilla.",
+              "She didn't use to talk much."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಚಿಕ್ಕವಳಾಗಿದ್ದಾಗ ನಾನು ನೃತ್ಯ ಮಾಡು＿.",
+          "en": "I used to dance as a girl.",
+          "options": ["ತ್ತಿದ್ದೆ", "ತ್ತಿದ್ದೇನೆ", "ತ್ತೇನೆ", "ವುದಿಲ್ಲ"],
+          "answer": "ತ್ತಿದ್ದೆ",
+          "why": "Used to: -ಉತ್ತಿದ್ದೆ."
+        },
+        {
+          "q": "ಅಪ್ಪ ಪ್ರತಿ ದಿನ ಬಸ್ಸಿನಲ್ಲಿ ಹೋಗು＿.",
+          "en": "Dad used to go by bus every day.",
+          "options": ["ತ್ತಿದ್ದಾರೆ", "ತ್ತಿದ್ದರು", "ತ್ತಾರೆ", "ತ್ತಿದ್ದೆ"],
+          "answer": "ತ್ತಿದ್ದರು",
+          "why": "Respectful \"he\": -ಉತ್ತಿದ್ದರು."
+        },
+        {
+          "q": "ಮೊದಲು ಅವನು ಮಾಂಸ ತಿನ್ನು＿.",
+          "en": "He didn't use to eat meat.",
+          "options": ["ತ್ತಿದ್ದ", "ವುದಿಲ್ಲ", "ತ್ತಿರಲಿಲ್ಲ", "ಲಿಲ್ಲ"],
+          "answer": "ತ್ತಿರಲಿಲ್ಲ",
+          "why": "Used not to: -ಉತ್ತಿರಲಿಲ್ಲ."
+        },
+        {
+          "q": "＿ ನಾವು ಹಳ್ಳಿಯಲ್ಲಿ ಇರುತ್ತಿದ್ದೆವು.",
+          "en": "In those days we lived in a village.",
+          "options": ["ಈಗ", "ಆಮೇಲೆ", "ಇನ್ನೂ", "ಆಗ"],
+          "answer": "ಆಗ",
+          "why": "In those days: ಆಗ."
+        },
+        {
+          "q": "ಮೊದಲು ಸೇದುತ್ತಿದ್ದೆ, ಈಗ ＿.",
+          "en": "I used to smoke; I don't now.",
+          "options": ["ಸೇದುವುದಿಲ್ಲ", "ಸೇದುತ್ತೇನೆ", "ಸೇದಿದೆ", "ಸೇದುತ್ತಿದ್ದೆ"],
+          "answer": "ಸೇದುವುದಿಲ್ಲ",
+          "why": "Not any more: ಈಗ -ಉವುದಿಲ್ಲ."
+        }
+      ]
+    },
+    {
+      "id": "perfect",
+      "title": "Have done: ಬಂದಿದ್ದೇನೆ, ನೋಡಿದ್ದೀರಾ?",
+      "particle": "-ಇದ್ದೇನೆ・-ಇದ್ದೆ",
+      "summary": "The perfect is the verbal participle + ಇರು: ನಾನು ಬಂದಿದ್ದೇನೆ (I have come). It describes a result that still holds, or experience: ಆ ಸಿನಿಮಾ ನೋಡಿದ್ದೀರಾ? (have you seen that film?). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "ಬಂದು + ಇದ್ದೇನೆ → <b>ಬಂದಿದ್ದೇನೆ</b>, ಮಾಡಿ + ಇದ್ದಾಳೆ → <b>ಮಾಡಿದ್ದಾಳೆ</b>, ಹೋಗಿ + ಇದ್ದಾರೆ → <b>ಹೋಗಿದ್ದಾರೆ</b>, ಬಂದು + ಇದೆ → <b>ಬಂದಿದೆ</b>. Negative: <b>-ಇಲ್ಲ</b> on the participle: ನೋಡಿ<b>ಲ್ಲ</b> (haven't seen).",
+          "examples": [
+            [
+              "ಅವರು ಊರಿಗೆ {ಹೋಗಿದ್ದಾರೆ}.",
+              "Avaru uurige hogiddaare.",
+              "He has gone to his home town."
+            ],
+            [
+              "ನೀವು ಮೈಸೂರು {ನೋಡಿದ್ದೀರಾ}?",
+              "Niivu maisuuru nodiddiiraa?",
+              "Have you seen Mysuru?"
+            ]
+          ]
+        },
+        {
+          "h": "Had done",
+          "p": "Past perfect: <b>-ಇದ್ದೆ</b>: ನಾನು ಆಗಲೇ ಊಟ ಮಾಡಿ<b>ದ್ದೆ</b> (I had already eaten). It also means \"I went (and came back)\": ನಿನ್ನೆ ಸಿನಿಮಾಗೆ ಹೋಗಿ<b>ದ್ದೆ</b>.",
+          "examples": [
+            [
+              "ನೀವು ಬರುವ ಮೊದಲೇ ಅವನು {ಹೊರಟಿದ್ದ}.",
+              "Niivu baruva modale avanu horatidda.",
+              "He had left before you came."
+            ],
+            [
+              "ನಾನು ಆ ಪುಸ್ತಕ {ಓದಿಲ್ಲ}.",
+              "Naanu aa pustaka odilla.",
+              "I haven't read that book."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಪತ್ರ ＿.",
+          "en": "The letter has come.",
+          "options": ["ಬಂದಿದೆ", "ಬಂತು", "ಬರುತ್ತದೆ", "ಬರಲಿಲ್ಲ"],
+          "answer": "ಬಂದಿದೆ",
+          "why": "Result now: -ಇದೆ."
+        },
+        {
+          "q": "ನೀವು ಕೇರಳ ನೋಡಿ＿?",
+          "en": "Have you been to Kerala?",
+          "options": ["ದ್ದೇನೆ", "ದ್ದೀರಾ", "ಲ್ಲ", "ದರೆ"],
+          "answer": "ದ್ದೀರಾ",
+          "why": "Experience: -ಇದ್ದೀರಾ?"
+        },
+        {
+          "q": "ನಾನು ಆ ಸಿನಿಮಾ ನೋಡಿ＿.",
+          "en": "I haven't seen that film.",
+          "options": ["ದ್ದೇನೆ", "ದೆ", "ಲ್ಲ", "ದರೆ"],
+          "answer": "ಲ್ಲ",
+          "why": "Haven't: -ಇಲ್ಲ."
+        },
+        {
+          "q": "ನಿನ್ನೆ ನಾನು ಡಾಕ್ಟರ್ ಹತ್ತಿರ ಹೋಗಿ＿.",
+          "en": "Yesterday I went to the doctor.",
+          "options": ["ದ್ದೇನೆ", "ಲ್ಲ", "ದೆ", "ದ್ದೆ"],
+          "answer": "ದ್ದೆ",
+          "why": "Went and came back: -ಇದ್ದೆ."
+        },
+        {
+          "q": "ಅವಳು ಆಗಲೇ ಊಟ ಮಾಡಿ＿.",
+          "en": "She had already eaten.",
+          "options": ["ದ್ದಳು", "ದ್ದಾಳೆ", "ದಳು", "ಲ್ಲ"],
+          "answer": "ದ್ದಳು",
+          "why": "Past perfect: -ಇದ್ದಳು."
+        }
+      ]
+    },
+    {
+      "id": "kuuda",
+      "title": "Also, even: ಕೂಡ, -ಊ",
+      "particle": "ಕೂಡ・-ಊ",
+      "summary": "\"Also\" is ಕೂಡ after a word, or -ಊ on its end: ನಾನು ಕೂಡ / ನಾನೂ (me too). With a negative it means \"not even\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-ಊ</b>: ನಾನು → <b>ನಾನೂ</b>, ಅವನು → <b>ಅವನೂ</b>, ಇವತ್ತು → <b>ಇವತ್ತೂ</b>. <b>ಕೂಡ</b> is a separate word: ಅವಳು <b>ಕೂಡ</b> ಬಂದಳು. Both … and: <b>ನಾನೂ ನೀನೂ</b> (you and I).",
+          "examples": [
+            ["{ನಾನೂ} ಬರುತ್ತೇನೆ.", "Naanuu baruttene.", "I'll come too."],
+            [
+              "{ಅಪ್ಪನೂ ಅಮ್ಮನೂ} ಬಂದರು.",
+              "Appanuu ammanuu bandaru.",
+              "Both Dad and Mum came."
+            ]
+          ]
+        },
+        {
+          "h": "Not even",
+          "p": "With a negative: ಒಂದು ರೂಪಾಯಿ <b>ಕೂಡ</b> ಇಲ್ಲ (not even one rupee). <b>ಯಾರೂ</b>, <b>ಏನೂ</b>, <b>ಎಲ್ಲೂ</b> + negative = nobody, nothing, nowhere.",
+          "examples": [
+            [
+              "ಅವನು ಒಂದು ಮಾತು {ಕೂಡ} ಹೇಳಲಿಲ್ಲ.",
+              "Avanu ondu maatu kuuda helalilla.",
+              "He didn't say a single word."
+            ],
+            [
+              "ಮನೆಯಲ್ಲಿ {ಯಾರೂ} ಇಲ್ಲ.",
+              "Maneyalli yaaruu illa.",
+              "There's nobody at home."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನನಗೆ ＿ ಒಂದು ಕಾಫಿ.",
+          "en": "A coffee for me too.",
+          "options": ["ಕೂಡ", "ಮಾತ್ರ", "ಇಲ್ಲ", "ಬೇಡ"],
+          "answer": "ಕೂಡ",
+          "why": "Also: ಕೂಡ."
+        },
+        {
+          "q": "ನಾನ＿ ಬರುತ್ತೇನೆ.",
+          "en": "I'll come too.",
+          "options": ["ೇ", "ೂ", "ಾ", "ೋ"],
+          "answer": "ೂ",
+          "why": "Also: -ಊ."
+        },
+        {
+          "q": "ಅವನ ಹತ್ತಿರ ಒಂದು ರೂಪಾಯಿ ＿ ಇಲ್ಲ.",
+          "en": "He doesn't have even a rupee.",
+          "options": ["ಮಾತ್ರ", "ಬೇಕು", "ಕೂಡ", "ತಾನೇ"],
+          "answer": "ಕೂಡ",
+          "why": "Not even: ಕೂಡ + negative."
+        },
+        {
+          "q": "ಕ್ಲಾಸಿನಲ್ಲಿ ＿ ಇರಲಿಲ್ಲ.",
+          "en": "There was nobody in the class.",
+          "options": ["ಯಾರು", "ಯಾರೋ", "ಯಾರಿಗೆ", "ಯಾರೂ"],
+          "answer": "ಯಾರೂ",
+          "why": "Nobody: ಯಾರೂ + negative."
+        },
+        {
+          "q": "ಅವನ＿ ಅವಳೂ ಡಾಕ್ಟರ್‌ಗಳು.",
+          "en": "Both he and she are doctors.",
+          "options": ["ೂ", "ೇ", "ಾ", "ೋ"],
+          "answer": "ೂ",
+          "why": "Both … and: -ಊ … -ಊ."
+        }
+      ]
+    },
+    {
+      "id": "emphasis-e",
+      "title": "Emphasis: -ಏ",
+      "particle": "-ಏ",
+      "summary": "-ಏ on a word stresses it: ನಾನೇ (I myself), ಇಲ್ಲೇ (right here), ಈಗಲೇ (right now). It also marks \"the same\": ಅದೇ ಬಸ್ (the same bus). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>ನಾನೇ</b> ಮಾಡಿದೆ (I did it myself). <b>ಇಲ್ಲೇ</b> ಇರಿ (stay right here). <b>ಈಗಲೇ</b> ಬನ್ನಿ (come right now). <b>ಅದೇ</b> = the same one, that very one.",
+          "examples": [
+            [
+              "{ನಾನೇ} ಅಡುಗೆ ಮಾಡಿದೆ.",
+              "Naane aduge maadide.",
+              "I cooked it myself."
+            ],
+            ["ಅವನು {ಇಲ್ಲೇ} ಇದ್ದ.", "Avanu ille idda.", "He was right here."]
+          ]
+        },
+        {
+          "h": "Already and only",
+          "p": "<b>ಆಗಲೇ</b> = already: ಅವನು <b>ಆಗಲೇ</b> ಹೋದ. <b>ಒಂದೇ</b> = just one, the same: <b>ಒಂದೇ</b> ಸಲ (just once). With a verb: <b>ಬಂದ ಕೂಡಲೇ</b> (as soon as he came).",
+          "examples": [
+            [
+              "ಬಸ್ {ಆಗಲೇ} ಹೋಯಿತು.",
+              "Bas aagale hoyitu.",
+              "The bus has already gone."
+            ],
+            [
+              "ನಾವು {ಒಂದೇ} ಶಾಲೆಯಲ್ಲಿ ಓದಿದೆವು.",
+              "Naavu onde shaaleyalli odidevu.",
+              "We studied at the same school."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ಈ ಕೆಲಸ ಮಾಡಿದೆ.",
+          "en": "I did this work myself.",
+          "options": ["ನಾನೇ", "ನಾನೂ", "ನಾನಾ", "ನನಗೆ"],
+          "answer": "ನಾನೇ",
+          "why": "Myself: -ಏ."
+        },
+        {
+          "q": "＿ ಬನ್ನಿ!",
+          "en": "Come right now!",
+          "options": ["ಈಗಲೂ", "ಈಗಲೇ", "ಆಗ", "ಈಗಾ"],
+          "answer": "ಈಗಲೇ",
+          "why": "Right now: ಈಗಲೇ."
+        },
+        {
+          "q": "ಅವಳು ＿ ಹೊರಟಳು.",
+          "en": "She has already left.",
+          "options": ["ಈಗಲೇ", "ಆಗ", "ಆಗಲೇ", "ಇನ್ನೂ"],
+          "answer": "ಆಗಲೇ",
+          "why": "Already: ಆಗಲೇ."
+        },
+        {
+          "q": "ನಾವು ＿ ಊರಿನವರು.",
+          "en": "We're from the same town.",
+          "options": ["ಒಂದು", "ಒಬ್ಬ", "ಒಂದೂ", "ಒಂದೇ"],
+          "answer": "ಒಂದೇ",
+          "why": "The same: ಒಂದೇ."
+        },
+        {
+          "q": "＿ ಕುಳಿತುಕೊಳ್ಳಿ.",
+          "en": "Sit right here.",
+          "options": ["ಇಲ್ಲೇ", "ಇಲ್ಲೂ", "ಇಲ್ಲಿಗೆ", "ಎಲ್ಲಿ"],
+          "answer": "ಇಲ್ಲೇ",
+          "why": "Right here: ಇಲ್ಲೇ."
+        }
+      ]
+    },
+    {
+      "id": "comparatives",
+      "title": "Than: -ಗಿಂತ",
+      "particle": "-ಗಿಂತ",
+      "summary": "\"Than\" is -ಗಿಂತ on the thing compared to; the adjective doesn't change: ಅವನು ನನಗಿಂತ ಎತ್ತರ (he's taller than me). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "The dative + ಇಂತ: <b>ನನಗಿಂತ</b>, <b>ಅವನಿಗಿಂತ</b>, <b>ಇದಕ್ಕಿಂತ</b>, <b>ನಿನ್ನೆಗಿಂತ</b>. <b>ಹೆಚ್ಚು</b> = more, <b>ಕಡಿಮೆ</b> = less: ಇದು ಅದಕ್ಕಿಂತ <b>ಹೆಚ್ಚು</b> ದುಬಾರಿ.",
+          "examples": [
+            [
+              "ಅಕ್ಕ {ನನಗಿಂತ} ದೊಡ್ಡವಳು.",
+              "Akka nanaginta doddavalu.",
+              "My older sister is older than me."
+            ],
+            [
+              "ಇವತ್ತು {ನಿನ್ನೆಗಿಂತ} ಬಿಸಿ.",
+              "Ivattu ninneginta bisi.",
+              "Today is hotter than yesterday."
+            ]
+          ]
+        },
+        {
+          "h": "As … as, better",
+          "p": "\"As … as\" = <b>-ಅಷ್ಟು</b>: ಅವನ<b>ಷ್ಟು</b> ಎತ್ತರ (as tall as him). \"Better\" = <b>-ಗಿಂತ ಒಳ್ಳೆಯದು</b>: ಬಸ್ಸಿ<b>ಗಿಂತ</b> ರೈಲು <b>ಒಳ್ಳೆಯದು</b>. \"Rather than\" = <b>-ಉವುದಕ್ಕಿಂತ</b>.",
+          "examples": [
+            [
+              "ನಾನು {ಅವನಷ್ಟು} ವೇಗವಾಗಿ ಓಡುವುದಿಲ್ಲ.",
+              "Naanu avanashtu vegavaagi oduvudilla.",
+              "I don't run as fast as him."
+            ],
+            [
+              "ಮನೆಯಲ್ಲಿ {ಕುಳಿತುಕೊಳ್ಳುವುದಕ್ಕಿಂತ} ಹೊರಗೆ ಹೋಗೋಣ.",
+              "Maneyalli kulitukolluvudakkinta horage hogona.",
+              "Rather than sit at home, let's go out."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಅವನು ನನ್ನ＿ ಎತ್ತರ.",
+          "en": "He's taller than me.",
+          "options": ["ಗಿಂತ", "ಗೆ", "ಿಂದ", "ಲ್ಲಿ"],
+          "answer": "ಗಿಂತ",
+          "why": "Than: -ಗಿಂತ."
+        },
+        {
+          "q": "ಇದು ಅದಕ್ಕಿಂತ ＿ ದುಬಾರಿ.",
+          "en": "This is more expensive than that.",
+          "options": ["ಕಡಿಮೆ", "ಹೆಚ್ಚು", "ತುಂಬ ಕಡಿಮೆ", "ಸ್ವಲ್ಪವೂ"],
+          "answer": "ಹೆಚ್ಚು",
+          "why": "More: ಹೆಚ್ಚು."
+        },
+        {
+          "q": "ಬಸ್ಸಿಗಿಂತ ರೈಲು ＿.",
+          "en": "The train is better than the bus.",
+          "options": ["ಒಳ್ಳೆಯ", "ಚೆನ್ನಾಗಿ", "ಒಳ್ಳೆಯದು", "ಹೆಚ್ಚು"],
+          "answer": "ಒಳ್ಳೆಯದು",
+          "why": "Better: -ಗಿಂತ ಒಳ್ಳೆಯದು."
+        },
+        {
+          "q": "ನಾನು ಅವಳ＿ ಚೆನ್ನಾಗಿ ಹಾಡುವುದಿಲ್ಲ.",
+          "en": "I don't sing as well as her.",
+          "options": ["ಗಿಂತ", "ಿಗೆ", "ನ್ನು", "ಷ್ಟು"],
+          "answer": "ಷ್ಟು",
+          "why": "As … as: -ಅಷ್ಟು."
+        },
+        {
+          "q": "ಇದು ಅದಕ್ಕಿಂತ ＿ ಬೆಲೆ.",
+          "en": "This costs less than that.",
+          "options": ["ಕಡಿಮೆ", "ಹೆಚ್ಚು", "ತುಂಬಾ ಹೆಚ್ಚು", "ದುಬಾರಿ"],
+          "answer": "ಕಡಿಮೆ",
+          "why": "Less: ಕಡಿಮೆ."
+        }
+      ]
+    },
+    {
+      "id": "superlative",
+      "title": "The most: ಎಲ್ಲರಿಗಿಂತ, ಎಲ್ಲಕ್ಕಿಂತ",
+      "particle": "ಎಲ್ಲರಿಗಿಂತ・ಎಲ್ಲಕ್ಕಿಂತ・ಅತ್ಯಂತ",
+      "summary": "\"The most\" is \"than everyone\" or \"than everything\": ಎಲ್ಲರಿಗಿಂತ ಎತ್ತರ (the tallest). Formal Kannada uses ಅತ್ಯಂತ. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "People: <b>ಎಲ್ಲರಿಗಿಂತ</b> (than everyone). Things: <b>ಎಲ್ಲಕ್ಕಿಂತ</b> (than everything). Within a group: ತರಗತಿಯಲ್ಲಿ <b>ಎಲ್ಲರಿಗಿಂತ</b> ಚಿಕ್ಕವನು (the youngest in the class).",
+          "examples": [
+            [
+              "ಅವಳು ತರಗತಿಯಲ್ಲಿ {ಎಲ್ಲರಿಗಿಂತ} ಜಾಣೆ.",
+              "Avalu taragatiyalli ellariginta jaane.",
+              "She's the cleverest in the class."
+            ],
+            [
+              "ನನಗೆ ಮಾವಿನಹಣ್ಣು {ಎಲ್ಲಕ್ಕಿಂತ} ಇಷ್ಟ.",
+              "Nanage maavinahannu ellakkinta ishta.",
+              "I like mangoes best of all."
+            ]
+          ]
+        },
+        {
+          "h": "Formal",
+          "p": "<b>ಅತ್ಯಂತ</b> (most) and <b>ಅತಿ</b> (very, most) appear in writing: ಭಾರತದ <b>ಅತ್ಯಂತ</b> ಎತ್ತರದ ಪರ್ವತ. \"One of the best\" = <b>ಅತ್ಯುತ್ತಮ … ಗಳಲ್ಲಿ ಒಂದು</b>.",
+          "examples": [
+            [
+              "ಇದು ನಗರದ {ಅತ್ಯಂತ} ಹಳೆಯ ದೇವಸ್ಥಾನ.",
+              "Idu nagarada atyanta haleya devasthaana.",
+              "This is the oldest temple in the city."
+            ],
+            [
+              "ಅದು ಕರ್ನಾಟಕದ {ಅತಿ ದೊಡ್ಡ} ಜಲಪಾತ.",
+              "Adu karnaatakada ati dodda jalapaata.",
+              "That's the biggest waterfall in Karnataka."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಅವನು ಮನೆಯಲ್ಲಿ ＿ ಚಿಕ್ಕವನು.",
+          "en": "He's the youngest at home.",
+          "options": ["ಎಲ್ಲರಿಗಿಂತ", "ಎಲ್ಲಕ್ಕಿಂತ", "ಎಲ್ಲರೂ", "ಎಲ್ಲಾ"],
+          "answer": "ಎಲ್ಲರಿಗಿಂತ",
+          "why": "People: ಎಲ್ಲರಿಗಿಂತ."
+        },
+        {
+          "q": "ನನಗೆ ಈ ಹಾಡು ＿ ಇಷ್ಟ.",
+          "en": "I like this song best of all.",
+          "options": ["ಎಲ್ಲರಿಗಿಂತ", "ಎಲ್ಲಕ್ಕಿಂತ", "ಎಲ್ಲವೂ", "ಎಲ್ಲರೂ"],
+          "answer": "ಎಲ್ಲಕ್ಕಿಂತ",
+          "why": "Things: ಎಲ್ಲಕ್ಕಿಂತ."
+        },
+        {
+          "q": "ಇದು ಭಾರತದ ＿ ಉದ್ದದ ನದಿ.",
+          "en": "This is the longest river in India. (formal)",
+          "options": ["ಎಲ್ಲರಿಗಿಂತ", "ಹೆಚ್ಚು", "ಅತ್ಯಂತ", "ಕಡಿಮೆ"],
+          "answer": "ಅತ್ಯಂತ",
+          "why": "Formal: ಅತ್ಯಂತ."
+        },
+        {
+          "q": "ತರಗತಿಯಲ್ಲಿ ＿ ಜಾಣ ಯಾರು?",
+          "en": "Who's the cleverest in the class?",
+          "options": ["ಎಲ್ಲಕ್ಕಿಂತ", "ಎಲ್ಲರೂ", "ಎಲ್ಲಾ", "ಎಲ್ಲರಿಗಿಂತ"],
+          "answer": "ಎಲ್ಲರಿಗಿಂತ",
+          "why": "People: ಎಲ್ಲರಿಗಿಂತ."
+        },
+        {
+          "q": "ಅದು ಊರಿನ ＿ ದೊಡ್ಡ ಅಂಗಡಿ.",
+          "en": "That's the biggest shop in town.",
+          "options": ["ಅತಿ", "ಎಲ್ಲರೂ", "ಎಲ್ಲಾ", "ಹೆಚ್ಚಾಗಿ"],
+          "answer": "ಅತಿ",
+          "why": "Most: ಅತಿ."
+        }
+      ]
+    },
+    {
+      "id": "adverbs",
+      "title": "How: -ಆಗಿ (ನಿಧಾನವಾಗಿ, ಚೆನ್ನಾಗಿ)",
+      "particle": "-ಆಗಿ",
+      "summary": "Adverbs add -ಆಗಿ to a noun or adjective: ನಿಧಾನ → ನಿಧಾನವಾಗಿ (slowly). A few are plain words: ಬೇಗ (quickly, early), ಚೆನ್ನಾಗಿ (well). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ನಿಧಾನವಾಗಿ</b> slowly, <b>ಜೋರಾಗಿ</b> loudly, <b>ಸರಿಯಾಗಿ</b> properly, <b>ಸುಲಭವಾಗಿ</b> easily, <b>ಜಾಗ್ರತೆಯಾಗಿ</b> carefully. Plain: <b>ಬೇಗ</b> early, quickly, <b>ತಡವಾಗಿ</b> late, <b>ಚೆನ್ನಾಗಿ</b> well.",
+          "examples": [
+            [
+              "ಸ್ವಲ್ಪ {ನಿಧಾನವಾಗಿ} ಮಾತನಾಡಿ.",
+              "Svalpa nidhaanavaagi maatanaadi.",
+              "Please speak a bit slowly."
+            ],
+            [
+              "ಅವಳು {ಚೆನ್ನಾಗಿ} ಹಾಡುತ್ತಾಳೆ.",
+              "Avalu chennaagi haaduttaale.",
+              "She sings well."
+            ]
+          ]
+        },
+        {
+          "h": "Becoming",
+          "p": "-ಆಗಿ also links a noun to ಆಗು (become) and ಇರು: ಅವನು ಡಾಕ್ಟರ್ <b>ಆಗಿ</b> ಕೆಲಸ ಮಾಡುತ್ತಾನೆ (he works as a doctor). <b>ತುಂಬಾ</b> (very) goes before: <b>ತುಂಬಾ</b> ಚೆನ್ನಾಗಿ.",
+          "examples": [
+            [
+              "ಅವನು {ಶಿಕ್ಷಕನಾಗಿ} ಕೆಲಸ ಮಾಡುತ್ತಾನೆ.",
+              "Avanu shikshakanaagi kelasa maaduttaane.",
+              "He works as a teacher."
+            ],
+            [
+              "ಊಟ {ತುಂಬಾ ಚೆನ್ನಾಗಿ} ಇತ್ತು.",
+              "Uuta tumbaa chennaagi ittu.",
+              "The meal was very good."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಸ್ವಲ್ಪ ＿ ಓದಿ.",
+          "en": "Please read a bit slowly.",
+          "options": ["ನಿಧಾನವಾಗಿ", "ನಿಧಾನ", "ನಿಧಾನದ", "ನಿಧಾನವಾದ"],
+          "answer": "ನಿಧಾನವಾಗಿ",
+          "why": "Adverb: -ಆಗಿ."
+        },
+        {
+          "q": "ನಾಳೆ ＿ ಬನ್ನಿ.",
+          "en": "Come early tomorrow.",
+          "options": ["ಬೇಗವಾದ", "ಬೇಗ", "ಬೇಗದ", "ತಡ"],
+          "answer": "ಬೇಗ",
+          "why": "Early: ಬೇಗ."
+        },
+        {
+          "q": "ಅವನು ಕನ್ನಡ ＿ ಮಾತನಾಡುತ್ತಾನೆ.",
+          "en": "He speaks Kannada well.",
+          "options": ["ಒಳ್ಳೆಯ", "ಚೆನ್ನಾಗಿದೆ", "ಚೆನ್ನಾಗಿ", "ಒಳ್ಳೆಯದು"],
+          "answer": "ಚೆನ್ನಾಗಿ",
+          "why": "Well: ಚೆನ್ನಾಗಿ."
+        },
+        {
+          "q": "＿ ಮಾತನಾಡಬೇಡಿ.",
+          "en": "Don't talk loudly.",
+          "options": ["ಜೋರು", "ಜೋರಾದ", "ಜೋರಿನ", "ಜೋರಾಗಿ"],
+          "answer": "ಜೋರಾಗಿ",
+          "why": "Loudly: ಜೋರಾಗಿ."
+        },
+        {
+          "q": "ಅವಳು ನರ್ಸ್ ＿ ಕೆಲಸ ಮಾಡುತ್ತಾಳೆ.",
+          "en": "She works as a nurse.",
+          "options": ["ಆಗಿ", "ಆದ", "ಆಯಿತು", "ಆಗಲು"],
+          "answer": "ಆಗಿ",
+          "why": "As: -ಆಗಿ."
+        }
+      ]
+    },
+    {
+      "id": "experiencer",
+      "title": "Hunger, fever, feelings: ನನಗೆ ಹಸಿವಾಗಿದೆ",
+      "particle": "ನನಗೆ … ಆಗಿದೆ",
+      "summary": "Bodily states and feelings happen \"to\" you: the person takes -ಗೆ and the feeling + ಆಗು is the verb: ನನಗೆ ಹಸಿವಾಗಿದೆ (I'm hungry), ಅವಳಿಗೆ ಬೇಸರ ಆಯಿತು (she got bored). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>ಹಸಿವು</b> hunger → ನನಗೆ <b>ಹಸಿವಾಗಿದೆ</b>. <b>ಬಾಯಾರಿಕೆ</b> thirst → ನನಗೆ <b>ಬಾಯಾರಿಕೆಯಾಗಿದೆ</b>. <b>ನಿದ್ದೆ</b> sleep → ನನಗೆ <b>ನಿದ್ದೆ ಬರುತ್ತಿದೆ</b> (I'm sleepy). <b>ಚಳಿ</b> → ನನಗೆ <b>ಚಳಿ ಆಗುತ್ತಿದೆ</b> (I feel cold).",
+          "examples": [
+            [
+              "{ನನಗೆ} ತುಂಬಾ {ಹಸಿವಾಗಿದೆ}.",
+              "Nanage tumbaa hasivaagide.",
+              "I'm very hungry."
+            ],
+            [
+              "ಮಗುವಿಗೆ {ನಿದ್ದೆ ಬರುತ್ತಿದೆ}.",
+              "Maguvige nidde baruttide.",
+              "The baby is sleepy."
+            ]
+          ]
+        },
+        {
+          "h": "Feelings and illness",
+          "p": "<b>ಖುಷಿ</b> happiness, <b>ಬೇಸರ</b> boredom, sadness, <b>ಕೋಪ</b> anger, <b>ಭಯ</b> fear: ಅವನಿಗೆ <b>ಕೋಪ ಬಂತು</b> (he got angry), ನನಗೆ <b>ಭಯ ಆಯಿತು</b>. Illness: ನನಗೆ <b>ತಲೆನೋವು</b> ಇದೆ (I have a headache), ಅವಳಿಗೆ <b>ಹುಷಾರಿಲ್ಲ</b> (she's unwell).",
+          "examples": [
+            [
+              "ನಿಮ್ಮನ್ನು ನೋಡಿ {ನನಗೆ ಖುಷಿ ಆಯಿತು}.",
+              "Nimmannu nodi nanage khushi aayitu.",
+              "I'm happy to see you."
+            ],
+            ["{ಅವನಿಗೆ ಹುಷಾರಿಲ್ಲ}.", "Avanige hushaarilla.", "He's not well."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ಹಸಿವಾಗಿದೆ.",
+          "en": "I'm hungry.",
+          "options": ["ನನಗೆ", "ನಾನು", "ನನ್ನ", "ನನ್ನನ್ನು"],
+          "answer": "ನನಗೆ",
+          "why": "The person takes -ಗೆ."
+        },
+        {
+          "q": "ನನಗೆ ನಿದ್ದೆ ＿.",
+          "en": "I'm sleepy.",
+          "options": ["ಮಾಡುತ್ತಿದೆ", "ಬರುತ್ತಿದೆ", "ಇದ್ದೇನೆ", "ಬೇಕು ಇದೆ"],
+          "answer": "ಬರುತ್ತಿದೆ",
+          "why": "Sleep \"comes\": ನಿದ್ದೆ ಬರುತ್ತಿದೆ."
+        },
+        {
+          "q": "ಅವನಿಗೆ ಕೋಪ ＿.",
+          "en": "He got angry.",
+          "options": ["ಬಂದ", "ಮಾಡಿದ", "ಬಂತು", "ಇದ್ದಾನೆ"],
+          "answer": "ಬಂತು",
+          "why": "Anger \"came\": ಕೋಪ ಬಂತು."
+        },
+        {
+          "q": "ನನಗೆ ತಲೆನೋವು ＿.",
+          "en": "I have a headache.",
+          "options": ["ಇದ್ದೇನೆ", "ಆದೆ", "ಬಂದೆ", "ಇದೆ"],
+          "answer": "ಇದೆ",
+          "why": "Illness: -ಗೆ … ಇದೆ."
+        },
+        {
+          "q": "ನಿಮ್ಮನ್ನು ನೋಡಿ ನನಗೆ ಖುಷಿ ＿.",
+          "en": "I'm glad to see you.",
+          "options": ["ಆಯಿತು", "ಆದೆ", "ಇದ್ದೇನೆ", "ಮಾಡಿದೆ"],
+          "answer": "ಆಯಿತು",
+          "why": "Feeling: ಆಯಿತು."
+        }
+      ]
+    },
+    {
+      "id": "kinship-address",
+      "title": "Addressing people: ಅಣ್ಣ, ಅಕ್ಕ, -ಅವರೇ",
+      "particle": "ಅಣ್ಣ・ಅಕ್ಕ・ಸಾರ್・-ಅವರೇ",
+      "summary": "Kannada speakers call strangers by family words: ಅಣ್ಣ (older brother) for a man, ಅಕ್ಕ (older sister) for a woman. A name + ಅವರೇ is a polite way to call someone. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ಅಪ್ಪ</b> dad, <b>ಅಮ್ಮ</b> mum, <b>ಅಣ್ಣ</b> older brother, <b>ಅಕ್ಕ</b> older sister, <b>ತಮ್ಮ</b> younger brother, <b>ತಂಗಿ</b> younger sister, <b>ಅಜ್ಜ</b> / <b>ತಾತ</b> grandpa, <b>ಅಜ್ಜಿ</b> grandma. Calling out lengthens the end: <b>ಅಣ್ಣಾ</b>, <b>ಅಮ್ಮಾ</b>.",
+          "examples": [
+            [
+              "{ಅಣ್ಣಾ}, ಮೆಜೆಸ್ಟಿಕ್‌ಗೆ ಬರುತ್ತೀರಾ?",
+              "Annaa, mejestikge baruttiiraa?",
+              "Brother, will you go to Majestic? (to an auto driver)"
+            ],
+            [
+              "{ಅಕ್ಕ}, ಈ ಹೂವು ಎಷ್ಟು?",
+              "Akka, ii huuvu eshtu?",
+              "Sister, how much are these flowers?"
+            ]
+          ]
+        },
+        {
+          "h": "Polite names",
+          "p": "Name + <b>ಅವರು</b> is a polite \"Mr / Ms\": ರಾವ್ <b>ಅವರು</b> ಬಂದಿದ್ದಾರೆ. Calling them: ರಾವ್ <b>ಅವರೇ</b>! In offices people also say <b>ಸಾರ್</b> and <b>ಮೇಡಂ</b>.",
+          "examples": [
+            [
+              "{ಶರ್ಮಾ ಅವರೇ}, ಒಂದು ನಿಮಿಷ.",
+              "Sharmaa avare, ondu nimisha.",
+              "Mr Sharma, one minute."
+            ],
+            [
+              "{ಸಾರ್}, ಒಳಗೆ ಬರಬಹುದಾ?",
+              "Saar, olage barabahudaa?",
+              "Sir, may I come in?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿, ಈ ಬಸ್ ಮೈಸೂರಿಗೆ ಹೋಗುತ್ತದಾ?",
+          "en": "Brother, does this bus go to Mysuru?",
+          "options": ["ಅಣ್ಣಾ", "ತಮ್ಮ", "ಅಪ್ಪ", "ಅಜ್ಜ"],
+          "answer": "ಅಣ್ಣಾ",
+          "why": "A man you don't know: ಅಣ್ಣಾ."
+        },
+        {
+          "q": "＿, ಟೊಮ್ಯಾಟೋ ಎಷ್ಟು?",
+          "en": "Sister, how much are the tomatoes?",
+          "options": ["ತಂಗಿ", "ಅಕ್ಕ", "ಅಮ್ಮ", "ಅಜ್ಜಿ"],
+          "answer": "ಅಕ್ಕ",
+          "why": "A woman you don't know: ಅಕ್ಕ."
+        },
+        {
+          "q": "ರಾವ್ ＿, ಒಂದು ನಿಮಿಷ.",
+          "en": "Mr Rao, one minute.",
+          "options": ["ಅವನೇ", "ಗಾರು", "ಅವರೇ", "ಅವಳೇ"],
+          "answer": "ಅವರೇ",
+          "why": "Polite call: ಅವರೇ."
+        },
+        {
+          "q": "ನನ್ನ ＿ ನನಗಿಂತ ಚಿಕ್ಕವನು.",
+          "en": "My younger brother is younger than me.",
+          "options": ["ಅಣ್ಣ", "ಅಕ್ಕ", "ತಂಗಿ", "ತಮ್ಮ"],
+          "answer": "ತಮ್ಮ",
+          "why": "Younger brother: ತಮ್ಮ."
+        },
+        {
+          "q": "ನನ್ನ ＿ ಎಂಬತ್ತು ವರ್ಷ.",
+          "en": "My grandmother is eighty.",
+          "options": ["ಅಜ್ಜಿಗೆ", "ಅಜ್ಜನಿಗೆ", "ಅಕ್ಕನಿಗೆ", "ಅಮ್ಮನ"],
+          "answer": "ಅಜ್ಜಿಗೆ",
+          "why": "Grandma: ಅಜ್ಜಿ (+ -ಗೆ for age)."
+        }
+      ]
+    },
+    {
+      "id": "compound-verbs",
+      "title": "Finish it off: -ಬಿಡು, -ಹೋಗು, -ಕೊಡು",
+      "particle": "-ಇಬಿಡು・-ಇಹೋಗು・-ಇಕೊಡು",
+      "summary": "A second verb after the participle adds a shade of meaning: ಮರೆತುಬಿಟ್ಟೆ (I clean forgot), ಮುರಿದುಹೋಯಿತು (it broke), ಮಾಡಿಕೊಡಿ (do it for me). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-ಬಿಡು</b> = completely, all at once: ತಿಂದು<b>ಬಿಟ್ಟ</b> (he ate it all up), ಹೇಳಿ<b>ಬಿಟ್ಟೆ</b> (I just said it). <b>-ಹೋಗು</b> = something happened, often bad: ಸತ್ತು<b>ಹೋಯಿತು</b> (it died), ಕಳೆದು<b>ಹೋಯಿತು</b> (it got lost).",
+          "examples": [
+            [
+              "ಅಯ್ಯೋ, ನಾನು {ಮರೆತುಬಿಟ್ಟೆ}!",
+              "Ayyo, naanu maretubitte!",
+              "Oh no, I completely forgot!"
+            ],
+            [
+              "ನನ್ನ ಪರ್ಸ್ {ಕಳೆದುಹೋಯಿತು}.",
+              "Nanna pars kaleduhoyitu.",
+              "I've lost my purse."
+            ]
+          ]
+        },
+        {
+          "h": "For someone, keeping",
+          "p": "<b>-ಕೊಡು</b> = for someone else: ಇದನ್ನು ಓದಿ<b>ಕೊಡಿ</b> (read this out for me), ಹೇಳಿ<b>ಕೊಡು</b> (teach). <b>-ಇಡು</b> = for later: ಬರೆದು<b>ಇಡು</b> / ಬರೆದಿಡು (write it down to keep), ಎತ್ತಿ<b>ಇಡು</b> (put it away).",
+          "examples": [
+            [
+              "ನನಗೆ ಈ ಫಾರ್ಮ್ {ತುಂಬಿಸಿಕೊಡಿ}.",
+              "Nanage ii faarm tumbisikodi.",
+              "Please fill in this form for me."
+            ],
+            [
+              "ಅಜ್ಜಿ ನನಗೆ ಹಾಡು {ಹೇಳಿಕೊಟ್ಟರು}.",
+              "Ajji nanage haadu helikottaru.",
+              "Grandma taught me a song."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಮಗು ಎಲ್ಲಾ ಹಾಲು ಕುಡಿದು＿.",
+          "en": "The baby drank up all the milk.",
+          "options": ["ಬಿಟ್ಟಿತು", "ಕೊಟ್ಟಿತು", "ಇಟ್ಟಿತು", "ನೋಡಿತು"],
+          "answer": "ಬಿಟ್ಟಿತು",
+          "why": "All up: -ಬಿಡು."
+        },
+        {
+          "q": "ಗ್ಲಾಸ್ ಬಿದ್ದು ಒಡೆದು＿.",
+          "en": "The glass fell and broke.",
+          "options": ["ಕೊಟ್ಟಿತು", "ಹೋಯಿತು", "ಇಟ್ಟಿತು", "ಬಂತು"],
+          "answer": "ಹೋಯಿತು",
+          "why": "It happened: -ಹೋಗು."
+        },
+        {
+          "q": "ದಯವಿಟ್ಟು ಈ ಪತ್ರ ಓದಿ＿.",
+          "en": "Please read this letter for me.",
+          "options": ["ಬಿಡಿ", "ಹೋಗಿ", "ಕೊಡಿ", "ನೋಡಿ"],
+          "answer": "ಕೊಡಿ",
+          "why": "For someone: -ಕೊಡು."
+        },
+        {
+          "q": "ಅವನ ಫೋನ್ ನಂಬರ್ ಬರೆದು＿.",
+          "en": "Write down his phone number.",
+          "options": ["ಹೋಗು", "ಬಿಡು", "ನೋಡು", "ಇಡು"],
+          "answer": "ಇಡು",
+          "why": "To keep: -ಇಡು."
+        },
+        {
+          "q": "ಅಮ್ಮ ನನಗೆ ಅಡುಗೆ ಹೇಳಿ＿.",
+          "en": "Mum taught me to cook.",
+          "options": ["ಕೊಟ್ಟರು", "ಬಿಟ್ಟರು", "ಹೋದರು", "ಇಟ್ಟರು"],
+          "answer": "ಕೊಟ್ಟರು",
+          "why": "Teach: ಹೇಳಿಕೊಡು."
+        }
+      ]
+    },
+    {
+      "id": "reflexive-kollu",
+      "title": "For yourself: -ಕೊಳ್ಳು",
+      "particle": "-ಇಕೊಳ್ಳು",
+      "summary": "-ಕೊಳ್ಳು after the participle means you do it for or to yourself: ತೆಗೆದುಕೊಳ್ಳಿ (take it), ಕಲಿತುಕೊಂಡೆ (I learned it), ಕೈ ತೊಳೆದುಕೊ (wash your hands). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>ತೆಗೆದುಕೊಳ್ಳು</b> take, <b>ಕುಳಿತುಕೊಳ್ಳು</b> sit, <b>ಇಟ್ಟುಕೊಳ್ಳು</b> keep, <b>ಕಲಿತುಕೊಳ್ಳು</b> learn, <b>ಮಾಡಿಕೊಳ್ಳು</b> do for oneself. Past: -ಕೊಂಡೆ: ತೆಗೆದು<b>ಕೊಂಡೆ</b>. Polite command: -ಕೊಳ್ಳಿ. Familiar: -ಕೋ.",
+          "examples": [
+            [
+              "ಒಂದು ಸಿಹಿ {ತೆಗೆದುಕೊಳ್ಳಿ}.",
+              "Ondu sihi tegedukolli.",
+              "Have a sweet."
+            ],
+            [
+              "ನಾನು ಡ್ರೈವಿಂಗ್ {ಕಲಿತುಕೊಂಡೆ}.",
+              "Naanu draiving kalitukonde.",
+              "I learned to drive."
+            ]
+          ]
+        },
+        {
+          "h": "With or without",
+          "p": "Compare: ಅವನು ಕಾರು ತೊಳೆದ (he washed the car) and ಅವನು ಮುಖ <b>ತೊಳೆದುಕೊಂಡ</b> (he washed his face). <b>ಅಂದುಕೊ</b> = think to oneself: ನಾನು ಹಾಗೆ <b>ಅಂದುಕೊಂಡೆ</b>.",
+          "examples": [
+            [
+              "ಊಟಕ್ಕೆ ಮೊದಲು ಕೈ {ತೊಳೆದುಕೋ}.",
+              "Uutakke modalu kai toleduko.",
+              "Wash your hands before eating."
+            ],
+            [
+              "ಅವನು ಬರುವುದಿಲ್ಲ ಅಂತ {ಅಂದುಕೊಂಡೆ}.",
+              "Avanu baruvudilla anta andukonde.",
+              "I thought he wouldn't come."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಇಲ್ಲಿ ಕುಳಿತು＿.",
+          "en": "Please sit here.",
+          "options": ["ಕೊಳ್ಳಿ", "ಕೊಡಿ", "ಬಿಡಿ", "ಹೋಗಿ"],
+          "answer": "ಕೊಳ್ಳಿ",
+          "why": "Sit: ಕುಳಿತುಕೊಳ್ಳಿ."
+        },
+        {
+          "q": "ನಾನು ಒಂದು ಪುಸ್ತಕ ತೆಗೆದು＿.",
+          "en": "I took a book.",
+          "options": ["ಕೊಟ್ಟೆ", "ಕೊಂಡೆ", "ಬಿಟ್ಟೆ", "ಹೋದೆ"],
+          "answer": "ಕೊಂಡೆ",
+          "why": "Past: -ಕೊಂಡೆ."
+        },
+        {
+          "q": "ಮುಖ ತೊಳೆದು＿.",
+          "en": "Wash your face. (to a friend)",
+          "options": ["ಕೊಡು", "ಬಿಡು", "ಕೋ", "ಹೋಗು"],
+          "answer": "ಕೋ",
+          "why": "Familiar: -ಕೋ."
+        },
+        {
+          "q": "ಅವಳು ಹಿಂದಿ ಕಲಿತು＿.",
+          "en": "She learned Hindi.",
+          "options": ["ಕೊಟ್ಟಳು", "ಬಿಟ್ಟಳು", "ಹೋದಳು", "ಕೊಂಡಳು"],
+          "answer": "ಕೊಂಡಳು",
+          "why": "Learn: ಕಲಿತುಕೊಳ್ಳು."
+        },
+        {
+          "q": "ನಾನು ನೀವು ಡಾಕ್ಟರ್ ಅಂತ ಅಂದು＿.",
+          "en": "I thought you were a doctor.",
+          "options": ["ಕೊಂಡೆ", "ಕೊಟ್ಟೆ", "ಬಿಟ್ಟೆ", "ಇಟ್ಟೆ"],
+          "answer": "ಕೊಂಡೆ",
+          "why": "Think: ಅಂದುಕೊ."
+        }
+      ]
+    },
+    {
+      "id": "causative",
+      "title": "Make someone do: -ಇಸು",
+      "particle": "-ಇಸು",
+      "summary": "-ಇಸು makes a verb causative: ಮಾಡು → ಮಾಡಿಸು (have something done), ಕಲಿ → ಕಲಿಸು (teach). The person made to act takes -ಇಂದ or -ಗೆ. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "ಮಾಡು → <b>ಮಾಡಿಸು</b>, ತಿನ್ನು → <b>ತಿನ್ನಿಸು</b> (feed), ಕುಡಿ → <b>ಕುಡಿಸು</b> (give to drink), ಓಡು → <b>ಓಡಿಸು</b> (drive), ಮಲಗು → <b>ಮಲಗಿಸು</b> (put to bed), ತೋರು → <b>ತೋರಿಸು</b> (show).",
+          "examples": [
+            [
+              "ಅಮ್ಮ ಮಗುವಿಗೆ ಊಟ {ತಿನ್ನಿಸಿದರು}.",
+              "Amma maguvige uuta tinnisidaru.",
+              "Mum fed the baby."
+            ],
+            [
+              "ನಾನು ಕಾರು {ರಿಪೇರಿ ಮಾಡಿಸಿದೆ}.",
+              "Naanu kaaru riperi maadiside.",
+              "I had the car repaired."
+            ]
+          ]
+        },
+        {
+          "h": "Who does it",
+          "p": "The doer takes <b>-ಇಂದ</b> (by) or <b>-ಗೆ</b>: ನಾನು ಅವನ<b>ಿಂದ</b> ಕೆಲಸ ಮಾಡಿಸಿದೆ (I got him to do the work). Many common verbs are causatives in origin: <b>ಕಳುಹಿಸು</b> (send), <b>ನಿಲ್ಲಿಸು</b> (stop something), <b>ಓದಿಸು</b> (teach to read).",
+          "examples": [
+            [
+              "ನನಗೆ ದಾರಿ {ತೋರಿಸಿ}.",
+              "Nanage daari torisi.",
+              "Please show me the way."
+            ],
+            [
+              "ಇಲ್ಲಿ ಕಾರು {ನಿಲ್ಲಿಸಿ}.",
+              "Illi kaaru nillisi.",
+              "Stop the car here."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಅವನು ಬಸ್ ಓಡಿ＿.",
+          "en": "He drives a bus.",
+          "options": ["ಸುತ್ತಾನೆ", "ದನು", "ಹೋದನು", "ಕೊಂಡನು"],
+          "answer": "ಸುತ್ತಾನೆ",
+          "why": "Drive: ಓಡಿಸು."
+        },
+        {
+          "q": "ಟೀಚರ್ ಮಕ್ಕಳಿಗೆ ಕನ್ನಡ ಕಲಿ＿.",
+          "en": "The teacher teaches the children Kannada.",
+          "options": ["ಯುತ್ತಾರೆ", "ಸುತ್ತಾರೆ", "ತರು", "ಯಲು"],
+          "answer": "ಸುತ್ತಾರೆ",
+          "why": "Teach: ಕಲಿಸು."
+        },
+        {
+          "q": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಟಿಕೆಟ್ ತೋರಿ＿.",
+          "en": "Please show your ticket.",
+          "options": ["ದು", "ಯಿರಿ", "ಸಿ", "ಸು"],
+          "answer": "ಸಿ",
+          "why": "Show (polite): ತೋರಿಸಿ."
+        },
+        {
+          "q": "ಅಜ್ಜಿ ಮಗುವನ್ನು ಮಲಗಿ＿.",
+          "en": "Grandma put the baby to sleep.",
+          "options": ["ದರು", "ಕೊಂಡರು", "ಬಿಟ್ಟರು", "ಸಿದರು"],
+          "answer": "ಸಿದರು",
+          "why": "Put to sleep: ಮಲಗಿಸು."
+        },
+        {
+          "q": "ನಾನು ಅಂಗಡಿಯವನ＿ ಮನೆಗೆ ಸಾಮಾನು ಕಳುಹಿಸಿದೆ.",
+          "en": "I had the shopkeeper send the things home.",
+          "options": ["ಿಂದ", "ನ್ನು", "ಲ್ಲಿ", "ನ"],
+          "answer": "ಿಂದ",
+          "why": "The doer: -ಇಂದ."
+        }
+      ]
+    },
+    {
+      "id": "passive",
+      "title": "The passive: -ಲಾಯಿತು, -ಅಲ್ಪಡು",
+      "particle": "-ಲಾಯಿತು・-ಅಲ್ಪಟ್ಟಿತು",
+      "summary": "Everyday Kannada avoids the passive. News and official writing use -ಲಾಯಿತು (\"it was done\", no doer) and, more formally, -ಅಲ್ಪಡು: ಸಭೆ ನಡೆಸಲಾಯಿತು (a meeting was held). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Infinitive + <b>ಆಯಿತು</b> → <b>-ಲಾಯಿತು</b>: ಘೋಷಿಸ<b>ಲಾಯಿತು</b> (was announced), ಉದ್ಘಾಟಿಸ<b>ಲಾಯಿತು</b> (was inaugurated). Present: <b>-ಲಾಗುತ್ತದೆ</b>: ಇಲ್ಲಿ ಕನ್ನಡ ಕಲಿಸ<b>ಲಾಗುತ್ತದೆ</b> (Kannada is taught here).",
+          "examples": [
+            [
+              "ನಾಳೆ ಶಾಲೆಗಳಿಗೆ ರಜೆ {ಘೋಷಿಸಲಾಯಿತು}.",
+              "Naale shaalegalige raje ghoshisalaayitu.",
+              "A holiday was announced for schools tomorrow."
+            ],
+            [
+              "ಇಲ್ಲಿ ಉಚಿತ ಊಟ {ನೀಡಲಾಗುತ್ತದೆ}.",
+              "Illi uchita uuta niidalaaguttade.",
+              "Free meals are served here."
+            ]
+          ]
+        },
+        {
+          "h": "-ಅಲ್ಪಡು",
+          "p": "The older passive is infinitive + <b>ಪಡು</b>: ಕಟ್ಟ<b>ಲ್ಪಟ್ಟಿತು</b> (was built), ಬರೆಯ<b>ಲ್ಪಟ್ಟಿದೆ</b> (has been written). The doer takes <b>-ಇಂದ</b>: ರಾಜನ<b>ಿಂದ</b> ಕಟ್ಟಲ್ಪಟ್ಟಿತು. In speech, say it actively: ರಾಜ ಕಟ್ಟಿಸಿದ.",
+          "examples": [
+            [
+              "ಈ ದೇವಸ್ಥಾನ ಹೊಯ್ಸಳರಿಂದ {ಕಟ್ಟಲ್ಪಟ್ಟಿತು}.",
+              "Ii devasthaana hoysalarinda kattalpattitu.",
+              "This temple was built by the Hoysalas."
+            ],
+            [
+              "ಈ ಪುಸ್ತಕ ಕುವೆಂಪು ಅವರಿಂದ {ಬರೆಯಲ್ಪಟ್ಟಿದೆ}.",
+              "Ii pustaka kuvempu avarinda bareyalpattide.",
+              "This book was written by Kuvempu."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಸಭೆಯನ್ನು ಮುಂದೂಡ＿.",
+          "en": "The meeting was postponed.",
+          "options": ["ಲಾಯಿತು", "ಲಿಲ್ಲ", "ಬೇಕು", "ಬಹುದು"],
+          "answer": "ಲಾಯಿತು",
+          "why": "News passive: -ಲಾಯಿತು."
+        },
+        {
+          "q": "ಇಲ್ಲಿ ಕನ್ನಡ ಕಲಿಸ＿.",
+          "en": "Kannada is taught here.",
+          "options": ["ಲಾಯಿತು", "ಲಾಗುತ್ತದೆ", "ಬೇಡ", "ಲಿಲ್ಲ"],
+          "answer": "ಲಾಗುತ್ತದೆ",
+          "why": "Present: -ಲಾಗುತ್ತದೆ."
+        },
+        {
+          "q": "ಈ ಕೋಟೆ ಟಿಪ್ಪುವಿನ＿ ಕಟ್ಟಲ್ಪಟ್ಟಿತು.",
+          "en": "This fort was built by Tipu.",
+          "options": ["ಗೆ", "ಲ್ಲಿ", "ಿಂದ", "ನ್ನು"],
+          "answer": "ಿಂದ",
+          "why": "The doer: -ಇಂದ."
+        },
+        {
+          "q": "ಸೇತುವೆ ಕಟ್ಟ＿.",
+          "en": "The bridge was built. (formal)",
+          "options": ["ಲಿಲ್ಲ", "ಬಹುದು", "ಬೇಕು", "ಲ್ಪಟ್ಟಿತು"],
+          "answer": "ಲ್ಪಟ್ಟಿತು",
+          "why": "Formal passive: -ಅಲ್ಪಟ್ಟಿತು."
+        },
+        {
+          "q": "ಹೊಸ ಬಸ್ ನಿಲ್ದಾಣವನ್ನು ಉದ್ಘಾಟಿಸ＿.",
+          "en": "The new bus station was opened.",
+          "options": ["ಲಾಯಿತು", "ಲಾಗುವುದಿಲ್ಲ", "ಬೇಡ", "ಲು"],
+          "answer": "ಲಾಯಿತು",
+          "why": "Was done: -ಲಾಯಿತು."
+        }
+      ]
+    },
+    {
+      "id": "reflexive-taanu",
+      "title": "Oneself: ತಾನು, ತನ್ನ",
+      "particle": "ತಾನು・ತನ್ನ・ತಾವು",
+      "summary": "ತಾನು is \"himself / herself\", referring back to the subject: ಅವನು ತನ್ನ ಮನೆಗೆ ಹೋದ (he went to his own house). ಅವನ ಮನೆ would be someone else's. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>ತಾನು</b> (self), <b>ತನ್ನ</b> (own), <b>ತನಗೆ</b> (to oneself), <b>ತನ್ನನ್ನು</b> (oneself, object). Polite and plural: <b>ತಾವು</b>, <b>ತಮ್ಮ</b>, <b>ತಮಗೆ</b>. ತಾವು also means a very polite \"you\" in formal speech.",
+          "examples": [
+            [
+              "ಅವಳು {ತನ್ನ} ಕಾರಿನಲ್ಲಿ ಬಂದಳು.",
+              "Avalu tanna kaarinalli bandalu.",
+              "She came in her own car."
+            ],
+            [
+              "ಅವನು {ತಾನೇ} ಅಡುಗೆ ಮಾಡಿಕೊಂಡ.",
+              "Avanu taane aduge maadikonda.",
+              "He cooked for himself."
+            ]
+          ]
+        },
+        {
+          "h": "Reported thoughts and each other",
+          "p": "In reported speech ತಾನು points back to the speaker: ಅವನು <b>ತಾನು</b> ಬರುತ್ತೇನೆ ಎಂದು ಹೇಳಿದ (he said that he himself would come). Each other: <b>ಒಬ್ಬರನ್ನೊಬ್ಬರು</b>, <b>ಒಬ್ಬರಿಗೊಬ್ಬರು</b>.",
+          "examples": [
+            [
+              "{ತಾವು} ಯಾರು?",
+              "Taavu yaaru?",
+              "And you are, sir? (very polite)"
+            ],
+            [
+              "ಅವರು {ಒಬ್ಬರಿಗೊಬ್ಬರು} ಸಹಾಯ ಮಾಡುತ್ತಾರೆ.",
+              "Avaru obbarigobbaru sahaaya maaduttaare.",
+              "They help each other."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ರಾಮು ＿ ಅಮ್ಮನಿಗೆ ಫೋನ್ ಮಾಡಿದ.",
+          "en": "Ramu phoned his (own) mother.",
+          "options": ["ತನ್ನ", "ಅವನ", "ಅವಳ", "ನನ್ನ"],
+          "answer": "ತನ್ನ",
+          "why": "His own: ತನ್ನ."
+        },
+        {
+          "q": "ಅವಳು ＿ ಕೆಲಸ ಮಾಡಿದಳು.",
+          "en": "She did the work herself.",
+          "options": ["ತಾನು", "ತಾನೇ", "ತನಗೆ", "ತನ್ನ"],
+          "answer": "ತಾನೇ",
+          "why": "Herself (emphatic): ತಾನೇ."
+        },
+        {
+          "q": "ಅವರು ＿ ಮನೆಗೆ ಹೋದರು.",
+          "en": "They went to their own homes.",
+          "options": ["ತನ್ನ", "ಅವರ", "ತಮ್ಮ", "ನಮ್ಮ"],
+          "answer": "ತಮ್ಮ",
+          "why": "Plural own: ತಮ್ಮ."
+        },
+        {
+          "q": "ಅವರು ＿ ನೋಡಿ ನಕ್ಕರು.",
+          "en": "They looked at each other and laughed.",
+          "options": ["ಒಬ್ಬರಿಗೊಬ್ಬರು", "ಒಬ್ಬರು", "ತಮ್ಮನ್ನು", "ಒಬ್ಬರನ್ನೊಬ್ಬರು"],
+          "answer": "ಒಬ್ಬರನ್ನೊಬ್ಬರು",
+          "why": "Each other (object): ಒಬ್ಬರನ್ನೊಬ್ಬರು."
+        },
+        {
+          "q": "＿ ಹೆಸರು ತಿಳಿಸಬಹುದೇ?",
+          "en": "May I know your name, sir? (very polite)",
+          "options": ["ತಮ್ಮ", "ತನ್ನ", "ತಾನು", "ತಮಗೆ"],
+          "answer": "ತಮ್ಮ",
+          "why": "Very polite \"your\": ತಮ್ಮ."
+        }
+      ]
+    },
+    {
+      "id": "indefinites",
+      "title": "Someone, something: ಯಾರೋ, ಏನೋ",
+      "particle": "-ಓ・-ಊ・-ಆದರೂ",
+      "summary": "A question word + -ಓ is \"some-\": ಯಾರೋ (someone), ಏನೋ (something). + -ಊ with a negative is \"no-\": ಯಾರೂ ಇಲ್ಲ. + -ಆದರೂ is \"any-\": ಯಾರಾದರೂ. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>ಯಾರೋ</b> someone, <b>ಏನೋ</b> something, <b>ಎಲ್ಲೋ</b> somewhere, <b>ಯಾವಾಗಲೋ</b> some time. <b>ಯಾರೂ</b> / <b>ಏನೂ</b> / <b>ಎಲ್ಲೂ</b> + negative: nobody, nothing, nowhere.",
+          "examples": [
+            [
+              "{ಯಾರೋ} ಬಾಗಿಲು ತಟ್ಟುತ್ತಿದ್ದಾರೆ.",
+              "Yaaro baagilu tattuttiddaare.",
+              "Someone's knocking on the door."
+            ],
+            ["ನನಗೆ {ಏನೂ} ಬೇಡ.", "Nanage enuu beda.", "I don't want anything."]
+          ]
+        },
+        {
+          "h": "Any-",
+          "p": "<b>-ಆದರೂ</b>: <b>ಯಾರಾದರೂ</b> (anyone, someone or other), <b>ಏನಾದರೂ</b> (anything), <b>ಎಲ್ಲಾದರೂ</b> (anywhere), <b>ಯಾವಾಗಲಾದರೂ</b> (any time). Often in questions and offers: <b>ಏನಾದರೂ</b> ಬೇಕಾ?",
+          "examples": [
+            [
+              "{ಏನಾದರೂ} ತಿನ್ನುತ್ತೀರಾ?",
+              "Enaadaruu tinnuttiiraa?",
+              "Will you have something to eat?"
+            ],
+            [
+              "{ಯಾರಾದರೂ} ಸಹಾಯ ಮಾಡಿ!",
+              "Yaaraadaruu sahaaya maadi!",
+              "Somebody help!"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ಫೋನ್ ಮಾಡಿದ್ದರು.",
+          "en": "Someone called.",
+          "options": ["ಯಾರೋ", "ಯಾರೂ", "ಯಾರು", "ಯಾರಿಗೆ"],
+          "answer": "ಯಾರೋ",
+          "why": "Someone: ಯಾರೋ."
+        },
+        {
+          "q": "ಮನೆಯಲ್ಲಿ ＿ ಇಲ್ಲ.",
+          "en": "Nobody's home.",
+          "options": ["ಯಾರೋ", "ಯಾರೂ", "ಯಾರಾದರೂ", "ಯಾರು"],
+          "answer": "ಯಾರೂ",
+          "why": "Nobody: ಯಾರೂ + negative."
+        },
+        {
+          "q": "ನನ್ನ ಕನ್ನಡಕ ＿ ಇಟ್ಟೆ.",
+          "en": "I put my glasses somewhere.",
+          "options": ["ಎಲ್ಲೂ", "ಎಲ್ಲಿ", "ಎಲ್ಲೋ", "ಎಲ್ಲಿಗೆ"],
+          "answer": "ಎಲ್ಲೋ",
+          "why": "Somewhere: ಎಲ್ಲೋ."
+        },
+        {
+          "q": "＿ ಬೇಕಾ?",
+          "en": "Do you need anything?",
+          "options": ["ಏನೂ", "ಏನು", "ಏನೋ ಇಲ್ಲ", "ಏನಾದರೂ"],
+          "answer": "ಏನಾದರೂ",
+          "why": "Anything (question): ಏನಾದರೂ."
+        },
+        {
+          "q": "ಅವನು ＿ ಹೇಳಲಿಲ್ಲ.",
+          "en": "He didn't say anything.",
+          "options": ["ಏನೂ", "ಏನೋ", "ಏನಾದರೂ", "ಏನು"],
+          "answer": "ಏನೂ",
+          "why": "Nothing: ಏನೂ + negative."
+        }
+      ]
+    },
+    {
+      "id": "every-all",
+      "title": "Every, all: ಪ್ರತಿ, ಎಲ್ಲಾ, ಎಲ್ಲರೂ",
+      "particle": "ಪ್ರತಿ・ಎಲ್ಲಾ・ಎಲ್ಲರೂ・ಎಲ್ಲವೂ",
+      "summary": "ಪ್ರತಿ is \"every\": ಪ್ರತಿ ದಿನ. ಎಲ್ಲಾ is \"all\" before a noun. On its own, ಎಲ್ಲರೂ is \"everyone\" and ಎಲ್ಲವೂ is \"everything\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>ಪ್ರತಿ</b> ದಿನ every day, <b>ಪ್ರತಿ</b> ವರ್ಷ every year, <b>ಪ್ರತಿಯೊಬ್ಬರೂ</b> each person. <b>ಎಲ್ಲಾ</b> ಮಕ್ಕಳು all the children, <b>ಎಲ್ಲಾ</b> ಕಡೆ everywhere. Spoken \"every day\": <b>ದಿನಾ</b>.",
+          "examples": [
+            [
+              "ನಾನು {ಪ್ರತಿ ದಿನ} ನಡೆಯುತ್ತೇನೆ.",
+              "Naanu prati dina nadeyuttene.",
+              "I walk every day."
+            ],
+            [
+              "{ಎಲ್ಲಾ} ಅಂಗಡಿಗಳು ಮುಚ್ಚಿವೆ.",
+              "Ellaa angadigalu muchchive.",
+              "All the shops are closed."
+            ]
+          ]
+        },
+        {
+          "h": "Everyone, everything",
+          "p": "<b>ಎಲ್ಲರೂ</b> everyone: <b>ಎಲ್ಲರೂ</b> ಬಂದರು. <b>ಎಲ್ಲವೂ</b> / <b>ಎಲ್ಲಾ</b> everything: <b>ಎಲ್ಲಾ</b> ಮುಗಿಯಿತು. As an object: <b>ಎಲ್ಲರನ್ನೂ</b>, <b>ಎಲ್ಲವನ್ನೂ</b>. \"All of us\": <b>ನಾವೆಲ್ಲರೂ</b>.",
+          "examples": [
+            [
+              "{ಎಲ್ಲರೂ} ಬಂದಿದ್ದಾರೆ.",
+              "Ellaruu bandiddaare.",
+              "Everyone has come."
+            ],
+            [
+              "ಅವನು {ಎಲ್ಲವನ್ನೂ} ತಿಂದ.",
+              "Avanu ellavannuu tinda.",
+              "He ate everything."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ವರ್ಷ ನಾವು ಗೋವಾಕ್ಕೆ ಹೋಗುತ್ತೇವೆ.",
+          "en": "Every year we go to Goa.",
+          "options": ["ಪ್ರತಿ", "ಎಲ್ಲಾ", "ಎಲ್ಲರೂ", "ಎಲ್ಲವೂ"],
+          "answer": "ಪ್ರತಿ",
+          "why": "Every: ಪ್ರತಿ."
+        },
+        {
+          "q": "＿ ಮಕ್ಕಳು ಆಡುತ್ತಿದ್ದಾರೆ.",
+          "en": "All the children are playing.",
+          "options": ["ಪ್ರತಿ", "ಎಲ್ಲಾ", "ಎಲ್ಲರೂ", "ಎಲ್ಲವೂ"],
+          "answer": "ಎಲ್ಲಾ",
+          "why": "All + noun: ಎಲ್ಲಾ."
+        },
+        {
+          "q": "＿ ಬಂದರು.",
+          "en": "Everyone came.",
+          "options": ["ಎಲ್ಲವೂ", "ಪ್ರತಿ", "ಎಲ್ಲರೂ", "ಎಲ್ಲಾ"],
+          "answer": "ಎಲ್ಲರೂ",
+          "why": "Everyone: ಎಲ್ಲರೂ."
+        },
+        {
+          "q": "ನಾನು ＿ ನೋಡಿದೆ.",
+          "en": "I saw everything.",
+          "options": ["ಎಲ್ಲರೂ", "ಎಲ್ಲವೂ", "ಪ್ರತಿ", "ಎಲ್ಲವನ್ನೂ"],
+          "answer": "ಎಲ್ಲವನ್ನೂ",
+          "why": "Everything (object): ಎಲ್ಲವನ್ನೂ."
+        },
+        {
+          "q": "＿ ಒಟ್ಟಿಗೆ ಹೋಗೋಣ.",
+          "en": "Let's all go together.",
+          "options": ["ನಾವೆಲ್ಲರೂ", "ನಾವು ಎಲ್ಲವೂ", "ಪ್ರತಿ ನಾವು", "ನಮ್ಮೆಲ್ಲ"],
+          "answer": "ನಾವೆಲ್ಲರೂ",
+          "why": "All of us: ನಾವೆಲ್ಲರೂ."
+        }
+      ]
+    },
+    {
+      "id": "only",
+      "title": "Only: ಮಾತ್ರ, ಒಂದೇ",
+      "particle": "ಮಾತ್ರ・-ಏ",
+      "summary": "\"Only\" is ಮಾತ್ರ after the word: ನಾನು ಮಾತ್ರ (only me), ಹತ್ತು ರೂಪಾಯಿ ಮಾತ್ರ (just ten rupees). \"Just one\" is ಒಂದೇ. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ಮಾತ್ರ</b> follows what it limits: ಇವತ್ತು <b>ಮಾತ್ರ</b> (only today), ಕಾಫಿ <b>ಮಾತ್ರ</b> (just coffee). <b>ಒಂದೇ</b> = just one: <b>ಒಂದೇ</b> ದಿನ. <b>ಬರೀ</b> before a noun = nothing but: <b>ಬರೀ</b> ಅನ್ನ (plain rice only).",
+          "examples": [
+            ["{ನಾನು ಮಾತ್ರ} ಬಂದೆ.", "Naanu maatra bande.", "Only I came."],
+            [
+              "ನನ್ನ ಹತ್ತಿರ {ಒಂದೇ} ಪೆನ್ ಇದೆ.",
+              "Nanna hattira onde pen ide.",
+              "I have only one pen."
+            ]
+          ]
+        },
+        {
+          "h": "Not only",
+          "p": "<b>-ಅಲ್ಲದೆ</b> / <b>ಮಾತ್ರವಲ್ಲ</b> = not only … but also: ಅವನು ಹಾಡುವುದು <b>ಮಾತ್ರವಲ್ಲ</b>, ಕುಣಿಯುತ್ತಾನೆ ಕೂಡ. <b>ಹೊರತು</b> = except: ಇದನ್ನು <b>ಬಿಟ್ಟು</b> / <b>ಹೊರತು</b> ಬೇರೆ ಏನೂ ಇಲ್ಲ.",
+          "examples": [
+            [
+              "ಅವಳು ಕನ್ನಡ {ಮಾತ್ರವಲ್ಲ}, ತಮಿಳೂ ಮಾತನಾಡುತ್ತಾಳೆ.",
+              "Avalu kannada maatravalla, tamiluu maatanaaduttaale.",
+              "She speaks not only Kannada but Tamil too."
+            ],
+            [
+              "ಭಾನುವಾರ {ಬಿಟ್ಟು} ಎಲ್ಲಾ ದಿನ ಅಂಗಡಿ ತೆರೆದಿರುತ್ತದೆ.",
+              "Bhaanuvaara bittu ellaa dina angadi terediruttade.",
+              "The shop is open every day except Sunday."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನನಗೆ ಹತ್ತು ನಿಮಿಷ ＿ ಬೇಕು.",
+          "en": "I only need ten minutes.",
+          "options": ["ಮಾತ್ರ", "ಕೂಡ", "ಬಿಟ್ಟು", "ಇಲ್ಲ"],
+          "answer": "ಮಾತ್ರ",
+          "why": "Only: ಮಾತ್ರ."
+        },
+        {
+          "q": "ನಾನು ＿ ಸಲ ಹೋಗಿದ್ದೇನೆ.",
+          "en": "I've been only once.",
+          "options": ["ಒಂದು", "ಒಂದೇ", "ಒಬ್ಬ", "ಒಂದೂ"],
+          "answer": "ಒಂದೇ",
+          "why": "Just one: ಒಂದೇ."
+        },
+        {
+          "q": "ಇವತ್ತು ＿ ರಜೆ.",
+          "en": "The holiday is only today.",
+          "options": ["ಕೂಡ", "ಬಿಟ್ಟು", "ಮಾತ್ರ", "ಎಲ್ಲಾ"],
+          "answer": "ಮಾತ್ರ",
+          "why": "Only: ಮಾತ್ರ."
+        },
+        {
+          "q": "ಅವನನ್ನು ＿ ಎಲ್ಲರೂ ಬಂದರು.",
+          "en": "Everyone came except him.",
+          "options": ["ಮಾತ್ರ", "ಕೂಡ", "ಜೊತೆ", "ಬಿಟ್ಟು"],
+          "answer": "ಬಿಟ್ಟು",
+          "why": "Except: ಬಿಟ್ಟು."
+        },
+        {
+          "q": "ಅವನು ಹಾಡುವುದು ＿, ಬರೆಯುತ್ತಾನೆ ಕೂಡ.",
+          "en": "He not only sings, he writes too.",
+          "options": ["ಮಾತ್ರವಲ್ಲ", "ಮಾತ್ರ", "ಬಿಟ್ಟು", "ಒಂದೇ"],
+          "answer": "ಮಾತ್ರವಲ್ಲ",
+          "why": "Not only: ಮಾತ್ರವಲ್ಲ."
+        }
+      ]
+    },
+    {
+      "id": "seem",
+      "title": "Seems, like: ಅನ್ನಿಸುತ್ತದೆ, ಹಾಗೆ",
+      "particle": "ಅನ್ನಿಸು・ಹಾಗೆ・ತರಹ・-ಅಂತೆ",
+      "summary": "\"I think, it seems to me\" is … ಅಂತ ಅನ್ನಿಸುತ್ತದೆ. \"Like\" is ಹಾಗೆ or ತರಹ after the genitive: ಮಗುವಿನ ಹಾಗೆ (like a child). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>ನನಗೆ … ಅಂತ ಅನ್ನಿಸುತ್ತದೆ</b> = I feel that: ನನಗೆ ಅವನು ಬರುವುದಿಲ್ಲ <b>ಅಂತ ಅನ್ನಿಸುತ್ತದೆ</b>. Looks like: <b>ಕಾಣುತ್ತದೆ</b>: ಅವನು ಸುಸ್ತಾಗಿ <b>ಕಾಣುತ್ತಾನೆ</b> (he looks tired).",
+          "examples": [
+            [
+              "ಮಳೆ ಬರುತ್ತದೆ {ಅಂತ ಅನ್ನಿಸುತ್ತದೆ}.",
+              "Male baruttade anta annisuttade.",
+              "I think it's going to rain."
+            ],
+            [
+              "ನೀವು ತುಂಬಾ ಸುಸ್ತಾಗಿ {ಕಾಣುತ್ತೀರಿ}.",
+              "Niivu tumbaa sustaagi kaanuttiiri.",
+              "You look very tired."
+            ]
+          ]
+        },
+        {
+          "h": "Like, as",
+          "p": "Noun + genitive + <b>ಹಾಗೆ</b> / <b>ತರಹ</b>: ಹೂವಿನ <b>ಹಾಗೆ</b> (like a flower), ನನ್ನ <b>ತರಹ</b> (like me). Verb + <b>-ಅಂತೆ</b> = as: ನೀವು ಹೇಳಿದ<b>ಂತೆ</b> ಮಾಡಿದೆ (I did as you said).",
+          "examples": [
+            [
+              "ಅವಳು {ಅಮ್ಮನ ಹಾಗೆ} ಕಾಣುತ್ತಾಳೆ.",
+              "Avalu ammana haage kaanuttaale.",
+              "She looks like her mother."
+            ],
+            [
+              "ನೀವು {ಹೇಳಿದಂತೆ} ಮಾಡಿದೆ.",
+              "Niivu helidante maadide.",
+              "I did as you said."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಅವನು ಬರುವುದಿಲ್ಲ ಅಂತ ＿.",
+          "en": "I feel he won't come.",
+          "options": ["ಅನ್ನಿಸುತ್ತದೆ", "ಕಾಣುತ್ತದೆ", "ಹೇಳುತ್ತದೆ", "ಬೇಕು"],
+          "answer": "ಅನ್ನಿಸುತ್ತದೆ",
+          "why": "I feel: ಅನ್ನಿಸುತ್ತದೆ."
+        },
+        {
+          "q": "ನೀವು ಸಂತೋಷವಾಗಿ ＿.",
+          "en": "You look happy.",
+          "options": ["ಅನ್ನಿಸುತ್ತೀರಿ", "ಕಾಣುತ್ತೀರಿ", "ನೋಡುತ್ತೀರಿ", "ಹೇಳುತ್ತೀರಿ"],
+          "answer": "ಕಾಣುತ್ತೀರಿ",
+          "why": "Look: ಕಾಣು."
+        },
+        {
+          "q": "ಅವನು ಮಗುವಿನ ＿ ಅಳುತ್ತಾನೆ.",
+          "en": "He cries like a baby.",
+          "options": ["ಹೀಗೆ", "ಹೇಗೆ", "ಹಾಗೆ", "ಮಾತ್ರ"],
+          "answer": "ಹಾಗೆ",
+          "why": "Like: ಹಾಗೆ."
+        },
+        {
+          "q": "ಡಾಕ್ಟರ್ ಹೇಳಿದ＿ ಮಾತ್ರೆ ತೆಗೆದುಕೊಳ್ಳಿ.",
+          "en": "Take the tablets as the doctor said.",
+          "options": ["ರೆ", "ರೂ", "ಾಗ", "ಂತೆ"],
+          "answer": "ಂತೆ",
+          "why": "As: -ಅಂತೆ."
+        },
+        {
+          "q": "ನನ್ನ ＿ ಅವನೂ ಕನ್ನಡ ಕಲಿಯುತ್ತಿದ್ದಾನೆ.",
+          "en": "Like me, he's learning Kannada too.",
+          "options": ["ತರಹ", "ಗಿಂತ", "ಮಾತ್ರ", "ಬಿಟ್ಟು"],
+          "answer": "ತರಹ",
+          "why": "Like: ತರಹ."
+        }
+      ]
+    },
+    {
+      "id": "counterfactual",
+      "title": "If I had known: -ಇದ್ದರೆ … -ಉತ್ತಿದ್ದೆ",
+      "particle": "-ಇದ್ದರೆ・-ಉತ್ತಿದ್ದೆ",
+      "summary": "Unreal past: the if-clause takes -ಇದ್ದರೆ, the result takes the -ಉತ್ತಿದ್ದ- form: ಗೊತ್ತಿದ್ದರೆ ಬರುತ್ತಿದ್ದೆ (if I had known, I would have come). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "If-clause: ಬಂದ → ಬಂದಿ<b>ದ್ದರೆ</b> (if … had come), ಹೇಳಿ<b>ದ್ದರೆ</b> (if … had said). Result: <b>-ಉತ್ತಿದ್ದೆ</b> / <b>-ಉತ್ತಿದ್ದ</b> / <b>-ಉತ್ತಿತ್ತು</b>: ಮಾಡು<b>ತ್ತಿದ್ದೆ</b> (I would have done).",
+          "examples": [
+            [
+              "ನೀವು {ಹೇಳಿದ್ದರೆ} ನಾನು {ಬರುತ್ತಿದ್ದೆ}.",
+              "Niivu heliddare naanu baruttidde.",
+              "If you had told me, I would have come."
+            ],
+            [
+              "ಬೇಗ {ಹೊರಟಿದ್ದರೆ} ಬಸ್ {ಸಿಗುತ್ತಿತ್ತು}.",
+              "Bega horatiddare bas siguttittu.",
+              "If we had left early, we'd have caught the bus."
+            ]
+          ]
+        },
+        {
+          "h": "Wishes and \"would\"",
+          "p": "\"It would have been nice\" = <b>ಚೆನ್ನಾಗಿರುತ್ತಿತ್ತು</b>: ನೀವು ಬಂದಿದ್ದರೆ <b>ಚೆನ್ನಾಗಿರುತ್ತಿತ್ತು</b>. Present unreal uses ಇದ್ದರೆ too: ಹಣ <b>ಇದ್ದಿದ್ದರೆ</b> ಕಾರು ಕೊಳ್ಳು<b>ತ್ತಿದ್ದೆ</b> (if I had money, I'd buy a car).",
+          "examples": [
+            [
+              "ನೀವೂ {ಬಂದಿದ್ದರೆ ಚೆನ್ನಾಗಿರುತ್ತಿತ್ತು}.",
+              "Niivuu bandiddare chennaagiruttittu.",
+              "It would have been nice if you'd come too."
+            ],
+            [
+              "ನಾನು {ನೀವಾಗಿದ್ದರೆ} ಹಾಗೆ {ಮಾಡುತ್ತಿರಲಿಲ್ಲ}.",
+              "Naanu niivaagiddare haage maaduttiralilla.",
+              "If I were you, I wouldn't do that."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಗೊತ್ತಿ＿ ನಾನು ಸಹಾಯ ಮಾಡುತ್ತಿದ್ದೆ.",
+          "en": "If I had known, I would have helped.",
+          "options": ["ದ್ದರೆ", "ದೆ", "ದ್ದರೂ", "ಲ್ಲ"],
+          "answer": "ದ್ದರೆ",
+          "why": "If … had: -ಇದ್ದರೆ."
+        },
+        {
+          "q": "ನೀವು ಕರೆದಿದ್ದರೆ ನಾನು ಬರು＿.",
+          "en": "If you had called me, I'd have come.",
+          "options": ["ತ್ತೇನೆ", "ತ್ತಿದ್ದೆ", "ವುದಿಲ್ಲ", "ತ್ತಿದ್ದೇನೆ"],
+          "answer": "ತ್ತಿದ್ದೆ",
+          "why": "Would have: -ಉತ್ತಿದ್ದೆ."
+        },
+        {
+          "q": "ಮಳೆ ಬರದಿದ್ದರೆ ಆಟ ನಡೆಯು＿.",
+          "en": "If it hadn't rained, the game would have gone ahead.",
+          "options": ["ತ್ತದೆ", "ವುದಿಲ್ಲ", "ತ್ತಿತ್ತು", "ತ್ತಿದ್ದೆ"],
+          "answer": "ತ್ತಿತ್ತು",
+          "why": "\"It\" would have: -ಉತ್ತಿತ್ತು."
+        },
+        {
+          "q": "ನೀವು ಬಂದಿದ್ದರೆ ಚೆನ್ನಾಗಿರು＿.",
+          "en": "It would have been nice if you had come.",
+          "options": ["ತ್ತದೆ", "ತ್ತಿದ್ದೆ", "ವುದಿಲ್ಲ", "ತ್ತಿತ್ತು"],
+          "answer": "ತ್ತಿತ್ತು",
+          "why": "Would have been: ಚೆನ್ನಾಗಿರುತ್ತಿತ್ತು."
+        },
+        {
+          "q": "ನಾನು ನೀವಾಗಿದ್ದರೆ ಹಾಗೆ ಮಾಡು＿.",
+          "en": "If I were you, I wouldn't do that.",
+          "options": ["ತ್ತಿರಲಿಲ್ಲ", "ತ್ತಿದ್ದೆ", "ವುದಿಲ್ಲ", "ಲಿಲ್ಲ"],
+          "answer": "ತ್ತಿರಲಿಲ್ಲ",
+          "why": "Wouldn't: -ಉತ್ತಿರಲಿಲ್ಲ."
+        }
+      ]
+    },
+    {
+      "id": "probability",
+      "title": "Must be, maybe: ಇರಬೇಕು, ಇರಬಹುದು",
+      "particle": "-ಇರಬೇಕು・-ಇರಬಹುದು・-ಓ ಏನೋ",
+      "summary": "Guesses use ಇರು with -ಬೇಕು (must be) or -ಬಹುದು (may be): ಅವನು ಮನೆಯಲ್ಲಿ ಇರಬೇಕು (he must be at home). After a participle they guess about the past: ಹೋಗಿರಬೇಕು (must have gone). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Present guess: <b>ಇರಬೇಕು</b> (must be), <b>ಇರಬಹುದು</b> (may be). Past guess: ಬಂದಿ<b>ರಬೇಕು</b> (must have come), ಮರೆತಿ<b>ರಬಹುದು</b> (may have forgotten).",
+          "examples": [
+            [
+              "ಅವಳು ಈಗ ಆಫೀಸಿನಲ್ಲಿ {ಇರಬೇಕು}.",
+              "Avalu iiga aafiisinalli irabeku.",
+              "She must be at the office now."
+            ],
+            [
+              "ಅವನು {ಮರೆತುಬಿಟ್ಟಿರಬಹುದು}.",
+              "Avanu maretubittirabahudu.",
+              "He may have forgotten."
+            ]
+          ]
+        },
+        {
+          "h": "Who knows",
+          "p": "<b>-ಓ ಏನೋ</b> = maybe, who knows: ಅವನು ಬರುತ್ತಾನೋ <b>ಏನೋ</b>. <b>-ಓ ಇಲ್ಲವೋ</b> = whether or not: ಬರುತ್ತಾನೋ <b>ಇಲ್ಲವೋ</b> ಗೊತ್ತಿಲ್ಲ. <b>ಬಹುಶಃ</b> = probably.",
+          "examples": [
+            [
+              "ಅವನು ಬರುತ್ತಾನೋ {ಇಲ್ಲವೋ} ಗೊತ್ತಿಲ್ಲ.",
+              "Avanu baruttaano illavo gottilla.",
+              "I don't know whether he's coming or not."
+            ],
+            [
+              "{ಬಹುಶಃ} ನಾಳೆ ಮಳೆ ಬರುತ್ತದೆ.",
+              "Bahushah naale male baruttade.",
+              "It will probably rain tomorrow."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಅವನು ಈಗ ಮಲಗಿ＿.",
+          "en": "He must be asleep now.",
+          "options": ["ರಬೇಕು", "ರಬೇಡ", "ಲ್ಲ", "ರಲಿ"],
+          "answer": "ರಬೇಕು",
+          "why": "Must be: -ಇರಬೇಕು."
+        },
+        {
+          "q": "ಬಸ್ ಆಗಲೇ ಹೋಗಿ＿.",
+          "en": "The bus may have already gone.",
+          "options": ["ರಬಾರದು", "ರಬಹುದು", "ದ್ದೇನೆ", "ರಲಿ"],
+          "answer": "ರಬಹುದು",
+          "why": "May have: -ಇರಬಹುದು."
+        },
+        {
+          "q": "ಅವಳು ಬರುತ್ತಾಳೋ ＿ ಗೊತ್ತಿಲ್ಲ.",
+          "en": "I don't know whether she'll come or not.",
+          "options": ["ಇಲ್ಲ", "ಏನು", "ಇಲ್ಲವೋ", "ಅಲ್ಲ"],
+          "answer": "ಇಲ್ಲವೋ",
+          "why": "Whether or not: -ಓ ಇಲ್ಲವೋ."
+        },
+        {
+          "q": "＿ ಅವರು ನಾಳೆ ಬರುತ್ತಾರೆ.",
+          "en": "They'll probably come tomorrow.",
+          "options": ["ಬಹಳ", "ಬೇಗ", "ಬದಲು", "ಬಹುಶಃ"],
+          "answer": "ಬಹುಶಃ",
+          "why": "Probably: ಬಹುಶಃ."
+        },
+        {
+          "q": "ಇದು ಅವನ ಬ್ಯಾಗ್ ಇರ＿.",
+          "en": "This must be his bag.",
+          "options": ["ಬೇಕು", "ಬೇಡ", "ಲಿಲ್ಲ", "ಲಿ"],
+          "answer": "ಬೇಕು",
+          "why": "Must be: ಇರಬೇಕು."
+        }
+      ]
+    },
+    {
+      "id": "reported-command",
+      "title": "Told someone to: -ಅಲು ಹೇಳಿದರು",
+      "particle": "-ಅಲು ಹೇಳು・-ಅಬೇಕೆಂದು",
+      "summary": "A reported command is the infinitive + ಹೇಳು: ಅವರು ನನಗೆ ಕಾಯಲು ಹೇಳಿದರು (they told me to wait). The person told takes -ಗೆ. Spoken: ಬಾ ಅಂತ ಹೇಳಿದರು. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-ಅಲು ಹೇಳು</b>: ಡಾಕ್ಟರ್ ನನಗೆ ವಿಶ್ರಾಂತಿ ತೆಗೆದುಕೊಳ್ಳ<b>ಲು ಹೇಳಿದರು</b>. Spoken, quote the command: ಅಮ್ಮ \"ಬೇಗ ಬಾ\" <b>ಅಂತ ಹೇಳಿದರು</b>. \"Ask someone to\": <b>-ಅಲು ಕೇಳು</b> or <b>-ಅಬೇಕೆಂದು ಕೇಳಿಕೊಳ್ಳು</b>.",
+          "examples": [
+            [
+              "ಅವರು ನನಗೆ {ಕಾಯಲು ಹೇಳಿದರು}.",
+              "Avaru nanage kaayalu helidaru.",
+              "They told me to wait."
+            ],
+            [
+              "ಅಮ್ಮ ಬೇಗ ಬಾ {ಅಂತ ಹೇಳಿದರು}.",
+              "Amma bega baa anta helidaru.",
+              "Mum told me to come early."
+            ]
+          ]
+        },
+        {
+          "h": "Messages",
+          "p": "Passing on a request: ಅವನಿಗೆ ನನಗೆ ಫೋನ್ ಮಾಡ<b>ಲು ಹೇಳಿ</b> (tell him to call me). Polite request in writing: ದಯವಿಟ್ಟು ಬರ<b>ಬೇಕೆಂದು</b> ವಿನಂತಿ (you are kindly requested to come).",
+          "examples": [
+            [
+              "ಅವಳಿಗೆ ನನಗೆ {ಫೋನ್ ಮಾಡಲು ಹೇಳಿ}.",
+              "Avalige nanage phon maadalu heli.",
+              "Tell her to call me."
+            ],
+            [
+              "ಎಲ್ಲರೂ ಸಮಯಕ್ಕೆ {ಬರಬೇಕೆಂದು} ವಿನಂತಿ.",
+              "Ellaruu samayakke barabekendu vinanti.",
+              "Everyone is requested to come on time."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಡಾಕ್ಟರ್ ನನಗೆ ನಡೆಯ＿ ಹೇಳಿದರು.",
+          "en": "The doctor told me to walk.",
+          "options": ["ಲು", "ಬೇಡ", "ಲಿಲ್ಲ", "ಬಹುದು"],
+          "answer": "ಲು",
+          "why": "Told to: -ಅಲು ಹೇಳು."
+        },
+        {
+          "q": "ಅವನಿಗೆ ಕಾಯಲು ＿.",
+          "en": "Tell him to wait.",
+          "options": ["ಕೇಳಿ", "ಹೇಳಿ", "ನೋಡಿ", "ಕೊಡಿ"],
+          "answer": "ಹೇಳಿ",
+          "why": "Tell: ಹೇಳಿ."
+        },
+        {
+          "q": "ಟೀಚರ್ ಸುಮ್ಮನಿರು ＿ ಹೇಳಿದರು.",
+          "en": "The teacher told me to be quiet. (spoken)",
+          "options": ["ಆದರೆ", "ಅಂದರೆ", "ಅಂತ", "ಆಗ"],
+          "answer": "ಅಂತ",
+          "why": "Spoken: quote + ಅಂತ."
+        },
+        {
+          "q": "ಅವರು ನನ್ನನ್ನು ಸಹಾಯ ಮಾಡ＿ ಕೇಳಿದರು.",
+          "en": "They asked me to help.",
+          "options": ["ಲಿಲ್ಲ", "ಬೇಡ", "ದ", "ಲು"],
+          "answer": "ಲು",
+          "why": "Asked to: -ಅಲು ಕೇಳು."
+        },
+        {
+          "q": "ಸದಸ್ಯರು ಸಭೆಗೆ ಬರ＿ ವಿನಂತಿ.",
+          "en": "Members are requested to attend the meeting.",
+          "options": ["ಬೇಕೆಂದು", "ಲಿಲ್ಲ", "ಬಾರದು", "ದೆ"],
+          "answer": "ಬೇಕೆಂದು",
+          "why": "Written request: -ಅಬೇಕೆಂದು."
+        }
+      ]
+    },
+    {
+      "id": "without-ade",
+      "title": "Without: -ಅದೆ",
+      "particle": "-ಅದೆ",
+      "summary": "-ಅದೆ on the verb means \"without doing\": ಹೇಳದೆ ಹೋದ (he left without saying). Nouns use ಇಲ್ಲದೆ: ಹಣ ಇಲ್ಲದೆ (without money). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "ಮಾಡು → <b>ಮಾಡದೆ</b>, ತಿನ್ನು → <b>ತಿನ್ನದೆ</b>, ಹೇಳು → <b>ಹೇಳದೆ</b>, ನೋಡು → <b>ನೋಡದೆ</b>. Spoken: <b>-ಅದೇ</b>: ಹೇಳದೇ. Nouns: ಸಕ್ಕರೆ <b>ಇಲ್ಲದೆ</b> (without sugar).",
+          "examples": [
+            [
+              "ಅವನು ಊಟ {ಮಾಡದೆ} ಮಲಗಿದ.",
+              "Avanu uuta maadade malagida.",
+              "He went to bed without eating."
+            ],
+            [
+              "{ಸಕ್ಕರೆ ಇಲ್ಲದೆ} ಒಂದು ಕಾಫಿ.",
+              "Sakkare illade ondu kaafi.",
+              "A coffee without sugar."
+            ]
+          ]
+        },
+        {
+          "h": "Instead of",
+          "p": "Instead: <b>ಬದಲು</b> / <b>ಬದಲಾಗಿ</b>: ಕಾಫಿ<b>ಯ ಬದಲು</b> ಟೀ (tea instead of coffee). With a verb: ಓದು<b>ವ ಬದಲು</b> ಆಡುತ್ತಿದ್ದಾನೆ (he's playing instead of studying).",
+          "examples": [
+            [
+              "ಬಸ್ಸಿನ {ಬದಲು} ರೈಲಿನಲ್ಲಿ ಹೋಗೋಣ.",
+              "Bassina badalu railinalli hogona.",
+              "Let's go by train instead of bus."
+            ],
+            [
+              "ಅವನು ಓದುವ {ಬದಲು} ಟಿವಿ ನೋಡುತ್ತಿದ್ದಾನೆ.",
+              "Avanu oduva badalu tivi noduttiddaane.",
+              "He's watching TV instead of studying."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಅವಳು ಏನೂ ಹೇಳ＿ ಹೋದಳು.",
+          "en": "She left without saying anything.",
+          "options": ["ದೆ", "ಲು", "ಲಿಲ್ಲ", "ಬೇಡ"],
+          "answer": "ದೆ",
+          "why": "Without: -ಅದೆ."
+        },
+        {
+          "q": "ಮಕ್ಕಳು ತಿಂಡಿ ತಿನ್ನ＿ ಶಾಲೆಗೆ ಹೋದರು.",
+          "en": "The children went to school without breakfast.",
+          "options": ["ಲು", "ದೆ", "ಬೇಕು", "ಬಹುದು"],
+          "answer": "ದೆ",
+          "why": "Without: -ಅದೆ."
+        },
+        {
+          "q": "ಹಾಲು ＿ ಟೀ.",
+          "en": "Tea without milk.",
+          "options": ["ಮಾಡದೆ", "ಬೇಡ", "ಇಲ್ಲದೆ", "ಅಲ್ಲದೆ"],
+          "answer": "ಇಲ್ಲದೆ",
+          "why": "Noun: ಇಲ್ಲದೆ."
+        },
+        {
+          "q": "ಅನ್ನದ ＿ ಚಪಾತಿ ಕೊಡಿ.",
+          "en": "Give me chapati instead of rice.",
+          "options": ["ಜೊತೆ", "ಮೇಲೆ", "ಹಾಗೆ", "ಬದಲು"],
+          "answer": "ಬದಲು",
+          "why": "Instead: ಬದಲು."
+        },
+        {
+          "q": "ನೋಡ＿ ರಸ್ತೆ ದಾಟಬೇಡ.",
+          "en": "Don't cross the road without looking.",
+          "options": ["ದೆ", "ಲು", "ಿ", "ಿದರೆ"],
+          "answer": "ದೆ",
+          "why": "Without: -ಅದೆ."
+        }
+      ]
+    },
+    {
+      "id": "jussive-li",
+      "title": "Let it be: -ಅಲಿ",
+      "particle": "-ಅಲಿ",
+      "summary": "-ಅಲಿ is \"let, may\": ಅವನು ಬರಲಿ (let him come), ದೇವರು ಒಳ್ಳೆಯದು ಮಾಡಲಿ (may God bless you). ಆಗಲಿ alone means \"all right, so be it\". (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "ಬಾ → <b>ಬರಲಿ</b>, ಮಾಡು → <b>ಮಾಡಲಿ</b>, ಇರು → <b>ಇರಲಿ</b>, ಆಗು → <b>ಆಗಲಿ</b>. Same for every person. <b>ಆಗಲಿ</b> = OK, fine. <b>ಇರಲಿ</b> = never mind, let it be.",
+          "examples": [
+            [
+              "ಅವನು {ಬರಲಿ}, ಆಮೇಲೆ ಮಾತನಾಡೋಣ.",
+              "Avanu barali, aamele maatanaadona.",
+              "Let him come, then we'll talk."
+            ],
+            [
+              "{ಆಗಲಿ}, ನಾಳೆ ಸಿಗೋಣ.",
+              "Aagali, naale sigona.",
+              "All right, see you tomorrow."
+            ]
+          ]
+        },
+        {
+          "h": "Wishes",
+          "p": "Blessings and wishes use -ಅಲಿ: ನಿಮಗೆ ಒಳ್ಳೆಯದು <b>ಆಗಲಿ</b> (all the best), ದೇವರು ಕಾಪಾಡ<b>ಲಿ</b> (God protect you), ಕನ್ನಡ <b>ಬೆಳೆಯಲಿ</b>. Greetings: ಹುಟ್ಟುಹಬ್ಬದ <b>ಶುಭಾಶಯಗಳು</b> (happy birthday).",
+          "examples": [
+            [
+              "ನಿಮಗೆ {ಒಳ್ಳೆಯದಾಗಲಿ}.",
+              "Nimage olleyadaagali.",
+              "All the best to you."
+            ],
+            [
+              "{ಇರಲಿ}, ಪರವಾಗಿಲ್ಲ.",
+              "Irali, paravaagilla.",
+              "Never mind, it doesn't matter."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಅವರು ಒಳಗೆ ಬರ＿.",
+          "en": "Let them come in.",
+          "options": ["ಲಿ", "ೋಣ", "ಬೇಕು", "ಲಿಲ್ಲ"],
+          "answer": "ಲಿ",
+          "why": "Let: -ಅಲಿ."
+        },
+        {
+          "q": "＿, ನಾನು ಬರುತ್ತೇನೆ.",
+          "en": "All right, I'll come.",
+          "options": ["ಆಯಿತು ಇಲ್ಲ", "ಆಗಲಿ", "ಆಗಬಾರದು", "ಆಗಲಿಲ್ಲ"],
+          "answer": "ಆಗಲಿ",
+          "why": "OK: ಆಗಲಿ."
+        },
+        {
+          "q": "ದೇವರು ನಿಮ್ಮನ್ನು ಕಾಪಾಡ＿.",
+          "en": "May God protect you.",
+          "options": ["ಬೇಕು", "ಲಿಲ್ಲ", "ಲಿ", "ಬಾರದು"],
+          "answer": "ಲಿ",
+          "why": "Wish: -ಅಲಿ."
+        },
+        {
+          "q": "ನಿಮಗೆ ಒಳ್ಳೆಯದು ＿.",
+          "en": "All the best.",
+          "options": ["ಆಗುವುದಿಲ್ಲ", "ಆಗಲಿಲ್ಲ", "ಆಗಬಾರದು", "ಆಗಲಿ"],
+          "answer": "ಆಗಲಿ",
+          "why": "Blessing: ಆಗಲಿ."
+        },
+        {
+          "q": "ಹುಟ್ಟುಹಬ್ಬದ ＿!",
+          "en": "Happy birthday!",
+          "options": ["ಶುಭಾಶಯಗಳು", "ಧನ್ಯವಾದಗಳು", "ಕ್ಷಮಿಸಿ", "ನಮಸ್ಕಾರ"],
+          "answer": "ಶುಭಾಶಯಗಳು",
+          "why": "Wishes: ಶುಭಾಶಯಗಳು."
+        }
+      ]
+    },
+    {
+      "id": "hearsay-ante",
+      "title": "They say: -ಅಂತೆ",
+      "particle": "-ಅಂತೆ",
+      "summary": "-ಅಂತೆ at the end of a sentence means \"apparently, I heard\": ಅವನು ನಾಳೆ ಬರುತ್ತಾನಂತೆ (apparently he's coming tomorrow). It's very common in speech. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Add <b>-ಅಂತೆ</b> to the finished sentence: ಬರುತ್ತಾನೆ → ಬರುತ್ತಾನ<b>ಂತೆ</b>, ಮದುವೆ → ಮದುವೆ<b>ಯಂತೆ</b>, ಇಲ್ಲ → ಇಲ್ಲ<b>ವಂತೆ</b>. Fuller: <b>… ಅಂತ ಕೇಳಿದೆ</b> (I heard that…).",
+          "examples": [
+            [
+              "ನಾಳೆ {ಬಂದ್ ಅಂತೆ}.",
+              "Naale band ante.",
+              "Apparently there's a strike tomorrow."
+            ],
+            [
+              "ಅವಳಿಗೆ {ಮದುವೆಯಂತೆ}.",
+              "Avalige maduveyante.",
+              "I hear she's getting married."
+            ]
+          ]
+        },
+        {
+          "h": "Not to confuse",
+          "p": "Sentence-final -ಅಂತೆ = hearsay. After a participle, -ಅಂತೆ = \"as\": ಹೇಳಿದ<b>ಂತೆ</b> ಮಾಡು (do as you were told). And <b>ಅಂತ</b> without -ೆ is the spoken quote marker.",
+          "examples": [
+            [
+              "ಆ ಹೋಟೆಲ್ {ಚೆನ್ನಾಗಿಲ್ಲವಂತೆ}.",
+              "Aa hotel chennaagillavante.",
+              "They say that hotel isn't good."
+            ],
+            [
+              "ಅವನು ಡಾಕ್ಟರ್ {ಅಂತ ಕೇಳಿದೆ}.",
+              "Avanu daaktar anta kelide.",
+              "I heard he's a doctor."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಅವನು ಬೆಂಗಳೂರಿಗೆ ಹೋಗುತ್ತಾನ＿.",
+          "en": "Apparently he's going to Bengaluru.",
+          "options": ["ಂತೆ", "ಂತ", "ಾ", "ೇ"],
+          "answer": "ಂತೆ",
+          "why": "Hearsay: -ಅಂತೆ."
+        },
+        {
+          "q": "ನಾಳೆ ಶಾಲೆಗೆ ರಜೆ＿.",
+          "en": "Apparently school's off tomorrow.",
+          "options": ["ಯಾ", "ಯಂತೆ", "ಗೆ", "ಯಲ್ಲಿ"],
+          "answer": "ಯಂತೆ",
+          "why": "Hearsay: -ಅಂತೆ."
+        },
+        {
+          "q": "ಅವನು ಬರುವುದಿಲ್ಲ＿.",
+          "en": "They say he isn't coming.",
+          "options": ["ವಾ", "ವೇ", "ವಂತೆ", "ವೂ"],
+          "answer": "ವಂತೆ",
+          "why": "After ಇಲ್ಲ: -ವಂತೆ."
+        },
+        {
+          "q": "ಅವಳು ಟೀಚರ್ ಅಂತ ＿.",
+          "en": "I heard she's a teacher.",
+          "options": ["ಹೇಳಿದೆ", "ನೋಡಿದೆ", "ಕೊಟ್ಟೆ", "ಕೇಳಿದೆ"],
+          "answer": "ಕೇಳಿದೆ",
+          "why": "I heard: ಅಂತ ಕೇಳಿದೆ."
+        },
+        {
+          "q": "ಅಮ್ಮ ಹೇಳಿದ＿ ಮಾಡು.",
+          "en": "Do as Mum said.",
+          "options": ["ಂತೆ", "ರೆ", "ರೂ", "ಾಗ"],
+          "answer": "ಂತೆ",
+          "why": "After a participle: \"as\"."
+        }
+      ]
+    },
+    {
+      "id": "gerund-uvudu",
+      "title": "Doing as a noun: -ಉವುದು",
+      "particle": "-ಉವುದು",
+      "summary": "-ಉವುದು turns a verb into a noun, like English \"-ing\": ಓದುವುದು ನನಗೆ ಇಷ್ಟ (I like reading). It takes case endings: ಮಾಡುವುದಕ್ಕೆ, ಮಾಡುವುದನ್ನು. Spoken: ಮಾಡೋದು. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "ಓದು → <b>ಓದುವುದು</b>, ಈಜು → <b>ಈಜುವುದು</b>, ಮಾಡು → <b>ಮಾಡುವುದು</b>, ಕಲಿ → <b>ಕಲಿಯುವುದು</b>. As subject: ಕನ್ನಡ ಕಲಿ<b>ಯುವುದು</b> ಸುಲಭ (learning Kannada is easy).",
+          "examples": [
+            [
+              "ನನಗೆ {ಅಡುಗೆ ಮಾಡುವುದು} ಇಷ್ಟ.",
+              "Nanage aduge maaduvudu ishta.",
+              "I like cooking."
+            ],
+            [
+              "ಇಲ್ಲಿ {ಈಜುವುದು} ಅಪಾಯ.",
+              "Illi iijuvudu apaaya.",
+              "Swimming here is dangerous."
+            ]
+          ]
+        },
+        {
+          "h": "With endings",
+          "p": "Object: <b>-ಉವುದನ್ನು</b>: ಅವನು ಸೇದು<b>ವುದನ್ನು</b> ನಿಲ್ಲಿಸಿದ (he stopped smoking). Dative: <b>-ಉವುದಕ್ಕೆ</b> (for doing). Ablative: <b>-ಉವುದರಿಂದ</b> (by, because of doing): ನಡೆಯು<b>ವುದರಿಂದ</b> ಆರೋಗ್ಯ ಚೆನ್ನಾಗಿರುತ್ತದೆ.",
+          "examples": [
+            [
+              "ಅವನು ಸಿಗರೇಟ್ {ಸೇದುವುದನ್ನು} ನಿಲ್ಲಿಸಿದ.",
+              "Avanu sigaret seduvudannu nillisida.",
+              "He gave up smoking."
+            ],
+            [
+              "ದಿನಾ {ನಡೆಯುವುದರಿಂದ} ಆರೋಗ್ಯ ಚೆನ್ನಾಗಿರುತ್ತದೆ.",
+              "Dinaa nadeyuvudarinda aarogya chennaagiruttade.",
+              "Walking every day keeps you healthy."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನನಗೆ ಹಾಡು＿ ಇಷ್ಟ.",
+          "en": "I like singing.",
+          "options": ["ವುದು", "ವುದಿಲ್ಲ", "ತ್ತೇನೆ", "ಲು"],
+          "answer": "ವುದು",
+          "why": "-ing: -ಉವುದು."
+        },
+        {
+          "q": "ಕನ್ನಡ ಓದು＿ ಸುಲಭ.",
+          "en": "Reading Kannada is easy.",
+          "options": ["ತ್ತೇನೆ", "ವುದು", "ದ", "ವ"],
+          "answer": "ವುದು",
+          "why": "-ing as subject: -ಉವುದು."
+        },
+        {
+          "q": "ಅವಳು ಕಾಫಿ ಕುಡಿಯು＿ ನಿಲ್ಲಿಸಿದಳು.",
+          "en": "She stopped drinking coffee.",
+          "options": ["ವುದು", "ವುದಕ್ಕೆ", "ವುದನ್ನು", "ವುದರಿಂದ"],
+          "answer": "ವುದನ್ನು",
+          "why": "Object: -ಉವುದನ್ನು."
+        },
+        {
+          "q": "ಓದು＿ ಜ್ಞಾನ ಬರುತ್ತದೆ.",
+          "en": "Knowledge comes from reading.",
+          "options": ["ವುದನ್ನು", "ವುದಕ್ಕೆ", "ವುದು", "ವುದರಿಂದ"],
+          "answer": "ವುದರಿಂದ",
+          "why": "By doing: -ಉವುದರಿಂದ."
+        },
+        {
+          "q": "ನನಗೆ ಅಡುಗೆ ಮಾಡೋ＿ ಇಷ್ಟ ಇಲ್ಲ.",
+          "en": "I don't like cooking. (spoken)",
+          "options": ["ದು", "ಣ", "ಕೆ", "ಲ್ಲ"],
+          "answer": "ದು",
+          "why": "Spoken: -ಓದು."
+        }
+      ]
+    },
+    {
+      "id": "tag-questions",
+      "title": "Isn't it?: ಅಲ್ವಾ, ತಾನೇ",
+      "particle": "ಅಲ್ವಾ・ಅಲ್ಲವೇ・ತಾನೇ",
+      "summary": "Add ಅಲ್ವಾ (spoken) or ಅಲ್ಲವೇ (written) to ask for agreement: ಚೆನ್ನಾಗಿದೆ ಅಲ್ವಾ? (it's nice, isn't it?). ತಾನೇ checks something you expect: ನೀವು ಬರುತ್ತೀರಿ ತಾನೇ? (you're coming, right?). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>ಅಲ್ವಾ?</b> / <b>ಅಲ್ಲವೇ?</b> after any sentence: ಇವತ್ತು ಬಿಸಿ <b>ಅಲ್ವಾ</b>? Answer <b>ಹೌದು</b> (yes) or <b>ಇಲ್ಲ</b> / <b>ಅಲ್ಲ</b> (no). <b>ಹೌದಾ?</b> = really?",
+          "examples": [
+            [
+              "ಊಟ ಚೆನ್ನಾಗಿತ್ತು, {ಅಲ್ವಾ}?",
+              "Uuta chennaagittu, alvaa?",
+              "The food was good, wasn't it?"
+            ],
+            [
+              "ಅವನು ನಿಮ್ಮ ತಮ್ಮ, {ಅಲ್ಲವೇ}?",
+              "Avanu nimma tamma, allave?",
+              "He's your younger brother, isn't he?"
+            ]
+          ]
+        },
+        {
+          "h": "Right? and really?",
+          "p": "<b>ತಾನೇ</b> expects yes: ನಾಳೆ ರಜೆ <b>ತಾನೇ</b>? (tomorrow's a holiday, right?). Surprise: <b>ಹೌದಾ!</b> (really!). Disbelief: <b>ನಿಜವಾಗಲೂ?</b> (seriously?).",
+          "examples": [
+            [
+              "ನೀವು ನಾಳೆ ಬರುತ್ತೀರಿ {ತಾನೇ}?",
+              "Niivu naale baruttiiri taane?",
+              "You're coming tomorrow, right?"
+            ],
+            [
+              "— ಅವಳಿಗೆ ಮದುವೆ. — {ಹೌದಾ}!",
+              "— Avalige maduve. — Haudaa!",
+              "— She's getting married. — Really!"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಇವತ್ತು ತುಂಬಾ ಬಿಸಿ, ＿?",
+          "en": "It's very hot today, isn't it?",
+          "options": ["ಅಲ್ವಾ", "ಹೌದು", "ಇಲ್ಲ", "ಏನು"],
+          "answer": "ಅಲ್ವಾ",
+          "why": "Tag: ಅಲ್ವಾ?"
+        },
+        {
+          "q": "ನೀವು ಊಟ ಮಾಡಿದ್ದೀರಿ ＿?",
+          "en": "You've eaten, right?",
+          "options": ["ಹೌದು", "ತಾನೇ", "ಏನು", "ಯಾಕೆ"],
+          "answer": "ತಾನೇ",
+          "why": "Expecting yes: ತಾನೇ?"
+        },
+        {
+          "q": "— ಅವನು ಡಾಕ್ಟರ್. — ＿!",
+          "en": "— He's a doctor. — Really!",
+          "options": ["ಅಲ್ಲ", "ಇಲ್ಲ", "ಹೌದಾ", "ತಾನೇ"],
+          "answer": "ಹೌದಾ",
+          "why": "Surprise: ಹೌದಾ!"
+        },
+        {
+          "q": "— ಇದು ನಿಮ್ಮ ಬ್ಯಾಗ್ ಅಲ್ವಾ? — ＿, ನನ್ನದು.",
+          "en": "— This is your bag, isn't it? — Yes, it's mine.",
+          "options": ["ಅಲ್ಲ", "ಇಲ್ಲ", "ಹೌದಾ", "ಹೌದು"],
+          "answer": "ಹೌದು",
+          "why": "Yes: ಹೌದು."
+        },
+        {
+          "q": "ಅವರು ಬೆಂಗಳೂರಿನವರು, ＿?",
+          "en": "They're from Bengaluru, aren't they? (written)",
+          "options": ["ಅಲ್ಲವೇ", "ಅಲ್ಲ", "ಇಲ್ಲವೇ ಇಲ್ಲ", "ಹೌದು"],
+          "answer": "ಅಲ್ಲವೇ",
+          "why": "Written tag: ಅಲ್ಲವೇ?"
+        }
+      ]
+    },
+    {
+      "id": "spoken-kannada",
+      "title": "Spoken Kannada: ಮಾಡ್ತೀನಿ, ಬರಲ್ಲ",
+      "particle": "-ತೀನಿ・-ಲ್ಲ・-ಓಕೆ",
+      "summary": "Written Kannada and the spoken Kannada of Bengaluru and Mysuru differ a lot. Endings shrink: ಮಾಡುತ್ತೇನೆ → ಮಾಡ್ತೀನಿ, ಮಾಡುವುದಿಲ್ಲ → ಮಾಡಲ್ಲ, ಮಾಡಲು → ಮಾಡೋಕೆ. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Present: ಮಾಡು<b>ತ್ತೇನೆ</b> → ಮಾಡ್<b>ತೀನಿ</b>, ಮಾಡು<b>ತ್ತಾನೆ</b> → ಮಾಡ್<b>ತಾನೆ</b>, ಮಾಡು<b>ತ್ತದೆ</b> → ಮಾಡ್<b>ತದೆ</b> / <b>ತ್ತೆ</b>. Being: ಇದ್ದೇನೆ → <b>ಇದ್ದೀನಿ</b>, ಇದೆ → <b>ಐತೆ</b> (rural). Continuous: ಮಾಡ್<b>ತಾ ಇದ್ದೀನಿ</b>.",
+          "examples": [
+            [
+              "ನಾನು ನಾಳೆ {ಬರ್ತೀನಿ}.",
+              "Naanu naale bartiini.",
+              "I'll come tomorrow."
+            ],
+            [
+              "ಏನ್ {ಮಾಡ್ತಾ ಇದ್ದೀಯಾ}?",
+              "En maadtaa iddiiyaa?",
+              "What are you doing?"
+            ]
+          ]
+        },
+        {
+          "h": "Negatives and infinitives",
+          "p": "<b>-ಉವುದಿಲ್ಲ</b> → <b>-ಅಲ್ಲ</b>: ಬರಲ್ಲ, ಗೊತ್ತಿಲ್ಲ stays. <b>-ಅಲು</b> → <b>-ಓಕೆ</b>: ಮಾಡೋಕೆ, ಹೋಗೋಕೆ. <b>-ಉವುದು</b> → <b>-ಓದು</b>: ಮಾಡೋದು. Questions: ಬರ್ತೀರ<b>ಾ</b>? Final -ಉ often drops: ಏನು → <b>ಏನ್</b>.",
+          "examples": [
+            ["ನನಗೆ {ಹೋಗೋಕೆ ಆಗಲ್ಲ}.", "Nanage hogoke aagalla.", "I can't go."],
+            [
+              "ಅದು {ಮಾಡೋದು} ಕಷ್ಟ.",
+              "Adu maadodu kashta.",
+              "That's hard to do."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ನಾನು ಆಫೀಸಿಗೆ ಹೋಗ್＿.",
+          "en": "I'm going to the office. (spoken)",
+          "options": ["ತೀನಿ", "ತ್ತೇನೆ", "ತಾನೆ", "ತಾಳೆ"],
+          "answer": "ತೀನಿ",
+          "why": "Spoken \"I\": -ತೀನಿ."
+        },
+        {
+          "q": "ಅವನು ಬರ＿.",
+          "en": "He won't come. (spoken)",
+          "options": ["ಲಿಲ್ಲ", "ಲ್ಲ", "ಬೇಡ", "ವುದಿಲ್ಲ"],
+          "answer": "ಲ್ಲ",
+          "why": "Spoken \"won't\": -ಅಲ್ಲ."
+        },
+        {
+          "q": "ನನಗೆ ಮಾತಾಡೋ＿ ಆಗ್ತಿಲ್ಲ.",
+          "en": "I can't speak. (spoken)",
+          "options": ["ದು", "ಣ", "ಕೆ", "ಲ್ಲ"],
+          "answer": "ಕೆ",
+          "why": "Spoken infinitive: -ಓಕೆ."
+        },
+        {
+          "q": "ನಾನು ಮನೇಲಿ ＿.",
+          "en": "I'm at home. (spoken)",
+          "options": ["ಇದ್ದಾನೆ", "ಇದ್ದೇನೆ ಇಲ್ಲ", "ಇದೆ", "ಇದ್ದೀನಿ"],
+          "answer": "ಇದ್ದೀನಿ",
+          "why": "Spoken: ಇದ್ದೀನಿ."
+        },
+        {
+          "q": "＿ ಮಾಡ್ತಾ ಇದ್ದೀಯಾ?",
+          "en": "What are you doing? (spoken)",
+          "options": ["ಏನ್", "ಯಾರ್", "ಎಲ್ಲ್", "ಯಾಕ್"],
+          "answer": "ಏನ್",
+          "why": "What (spoken): ಏನ್."
+        }
+      ]
+    },
+    {
+      "id": "formal-connectors",
+      "title": "Written connectors: ಆದರೆ, ಹಾಗೂ, ಆದ್ದರಿಂದ, ಆದಾಗ್ಯೂ",
+      "particle": "ಹಾಗೂ・ಆದರೆ・ಆದ್ದರಿಂದ・ಇದಲ್ಲದೆ・ಅಂದರೆ",
+      "summary": "Written Kannada links sentences with words like ಹಾಗೂ (and), ಆದರೆ (but), ಆದ್ದರಿಂದ (therefore), ಆದಾಗ್ಯೂ (however) and ಇದಲ್ಲದೆ (moreover). (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>ಹಾಗೂ</b> / <b>ಮತ್ತು</b> and, <b>ಆದರೆ</b> but, <b>ಅಥವಾ</b> or, <b>ಆದ್ದರಿಂದ</b> / <b>ಹಾಗಾಗಿ</b> therefore, <b>ಆದಾಗ್ಯೂ</b> nevertheless, <b>ಇದಲ್ಲದೆ</b> moreover, <b>ಅಂದರೆ</b> that is, <b>ಉದಾಹರಣೆಗೆ</b> for example.",
+          "examples": [
+            [
+              "ಮಳೆ ಕಡಿಮೆಯಾಯಿತು; {ಆದ್ದರಿಂದ} ಬೆಳೆ ಹಾಳಾಯಿತು.",
+              "Male kadimeyaayitu; aaddarinda bele haalaayitu.",
+              "Rainfall was low; as a result the crops failed."
+            ],
+            [
+              "ಯೋಜನೆ ದುಬಾರಿ. {ಇದಲ್ಲದೆ}, ಅದಕ್ಕೆ ಸಮಯ ಬೇಕು.",
+              "Yojane dubaari. Idallade, adakke samaya beku.",
+              "The plan is expensive. Moreover, it needs time."
+            ]
+          ]
+        },
+        {
+          "h": "Linking in long sentences",
+          "p": "Formal prose prefers participles to strings of \"and\": ಸಭೆ ಸೇರಿ, ಚರ್ಚಿಸಿ, ನಿರ್ಧಾರ ತೆಗೆದುಕೊಳ್ಳಲಾಯಿತು. <b>-ಉವುದರ ಜೊತೆಗೆ</b> = as well as: ಓದು<b>ವುದರ ಜೊತೆಗೆ</b> ಕೆಲಸ ಮಾಡುತ್ತಾನೆ.",
+          "examples": [
+            [
+              "ಅವರು ಬರಹಗಾರರು; {ಅಂದರೆ}, ಕಥೆ ಹಾಗೂ ಕವಿತೆ ಬರೆಯುತ್ತಾರೆ.",
+              "Avaru barahagaararu; andare, kathe haaguu kavite bareyuttaare.",
+              "He is a writer; that is, he writes stories and poems."
+            ],
+            [
+              "ಬೆಲೆ ಹೆಚ್ಚು; {ಆದಾಗ್ಯೂ} ಜನ ಕೊಳ್ಳುತ್ತಿದ್ದಾರೆ.",
+              "Bele hechchu; aadaagyuu jana kolluttiddaare.",
+              "The price is high; nevertheless people are buying."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ರಾಮ ＿ ಸೀತೆ ಕಾಡಿಗೆ ಹೋದರು.",
+          "en": "Rama and Sita went to the forest.",
+          "options": ["ಹಾಗೂ", "ಆದರೆ", "ಆದ್ದರಿಂದ", "ಅಂದರೆ"],
+          "answer": "ಹಾಗೂ",
+          "why": "And (formal): ಹಾಗೂ."
+        },
+        {
+          "q": "ಅವನು ಶ್ರಮಪಟ್ಟ, ＿ ಯಶಸ್ವಿಯಾಗಲಿಲ್ಲ.",
+          "en": "He worked hard, but did not succeed.",
+          "options": ["ಹಾಗೂ", "ಆದರೆ", "ಆದ್ದರಿಂದ", "ಇದಲ್ಲದೆ"],
+          "answer": "ಆದರೆ",
+          "why": "But: ಆದರೆ."
+        },
+        {
+          "q": "ಹಣ ಇರಲಿಲ್ಲ; ＿ ಯೋಜನೆ ನಿಂತಿತು.",
+          "en": "There was no money; therefore the project stopped.",
+          "options": ["ಆದರೆ", "ಆದಾಗ್ಯೂ", "ಆದ್ದರಿಂದ", "ಉದಾಹರಣೆಗೆ"],
+          "answer": "ಆದ್ದರಿಂದ",
+          "why": "Therefore: ಆದ್ದರಿಂದ."
+        },
+        {
+          "q": "ಬಿಸಿಲು ಜಾಸ್ತಿ; ＿ ಜನ ಹೊರಗೆ ಬಂದರು.",
+          "en": "It was very hot; nevertheless people came out.",
+          "options": ["ಆದ್ದರಿಂದ", "ಹಾಗೂ", "ಅಂದರೆ", "ಆದಾಗ್ಯೂ"],
+          "answer": "ಆದಾಗ್ಯೂ",
+          "why": "Nevertheless: ಆದಾಗ್ಯೂ."
+        },
+        {
+          "q": "ಹಣ್ಣುಗಳು, ＿ ಮಾವು, ಬಾಳೆ, ಹಲಸು.",
+          "en": "Fruits, for example mango, banana and jackfruit.",
+          "options": ["ಉದಾಹರಣೆಗೆ", "ಆದರೆ", "ಆದ್ದರಿಂದ", "ಇದಲ್ಲದೆ"],
+          "answer": "ಉದಾಹರಣೆಗೆ",
+          "why": "For example: ಉದಾಹರಣೆಗೆ."
+        }
+      ]
+    },
+    {
+      "id": "sandhi",
+      "title": "Joining sounds: ಸಂಧಿ",
+      "particle": "ಲೋಪ・ಆಗಮ・ಆದೇಶ",
+      "summary": "When endings and words join, sounds change. Kannada grammar names three main kinds: ಲೋಪ (a vowel drops), ಆಗಮ (ಯ or ವ is added) and ಆದೇಶ (a consonant softens). (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>ಲೋಪ</b>: a final vowel drops: ಊರು + ಅಲ್ಲಿ → <b>ಊರಲ್ಲಿ</b>, ಮಾತು + ಇಲ್ಲ → <b>ಮಾತಿಲ್ಲ</b>. <b>ಆಗಮ</b>: ಯ or ವ fills the gap: ಮನೆ + ಅಲ್ಲಿ → <b>ಮನೆಯಲ್ಲಿ</b>, ಗುರು + ಅನ್ನು → <b>ಗುರುವನ್ನು</b>.",
+          "examples": [
+            [
+              "{ಊರಲ್ಲಿ} ಹಬ್ಬ ನಡೆಯುತ್ತಿದೆ.",
+              "Uuralli habba nadeyuttide.",
+              "There's a festival in the village."
+            ],
+            [
+              "ನಾನು {ಗುರುವನ್ನು} ಭೇಟಿಯಾದೆ.",
+              "Naanu guruvannu bhetiyaade.",
+              "I met my teacher."
+            ]
+          ]
+        },
+        {
+          "h": "ಆದೇಶ and Sanskrit sandhi",
+          "p": "<b>ಆದೇಶ</b>: in compounds ಕ, ತ, ಪ often soften to ಗ, ದ, ಬ: ಮಳೆ + ಕಾಲ → <b>ಮಳೆಗಾಲ</b> (rainy season), ಬೆಟ್ಟ + ತಾವರೆ → <b>ಬೆಟ್ಟದಾವರೆ</b>. Sanskrit words follow Sanskrit rules: ದೇವ + ಆಲಯ → <b>ದೇವಾಲಯ</b>, ಸೂರ್ಯ + ಉದಯ → <b>ಸೂರ್ಯೋದಯ</b>.",
+          "examples": [
+            [
+              "{ಮಳೆಗಾಲದಲ್ಲಿ} ಜೋಗ ಜಲಪಾತ ಸುಂದರ.",
+              "Malegaaladalli joga jalapaata sundara.",
+              "Jog Falls is beautiful in the rainy season."
+            ],
+            [
+              "ನಾವು {ಸೂರ್ಯೋದಯ} ನೋಡಲು ಬೆಟ್ಟ ಹತ್ತಿದೆವು.",
+              "Naavu suuryodaya nodalu betta hattidevu.",
+              "We climbed the hill to see the sunrise."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ಮನೆ + ಅಲ್ಲಿ = ＿",
+          "en": "house + in",
+          "options": ["ಮನೆಯಲ್ಲಿ", "ಮನಲ್ಲಿ", "ಮನೆವಲ್ಲಿ", "ಮನೆಅಲ್ಲಿ"],
+          "answer": "ಮನೆಯಲ್ಲಿ",
+          "why": "ಆಗಮ: ಯ is added after -ಎ."
+        },
+        {
+          "q": "ಊರು + ಅಲ್ಲಿ = ＿",
+          "en": "town + in",
+          "options": ["ಊರುಅಲ್ಲಿ", "ಊರಲ್ಲಿ", "ಊರುವಲ್ಲಿ", "ಊರಯಲ್ಲಿ"],
+          "answer": "ಊರಲ್ಲಿ",
+          "why": "ಲೋಪ: the -ಉ drops."
+        },
+        {
+          "q": "ಮಳೆ + ಕಾಲ = ＿",
+          "en": "rain + season",
+          "options": ["ಮಳೆಕಾಲ", "ಮಳೆಯಕಾಲ", "ಮಳೆಗಾಲ", "ಮಳಕಾಲ"],
+          "answer": "ಮಳೆಗಾಲ",
+          "why": "ಆದೇಶ: ಕ → ಗ."
+        },
+        {
+          "q": "ಗುರು + ಅನ್ನು = ＿",
+          "en": "teacher + object ending",
+          "options": ["ಗುರನ್ನು", "ಗುರುಯನ್ನು", "ಗುರುಅನ್ನು", "ಗುರುವನ್ನು"],
+          "answer": "ಗುರುವನ್ನು",
+          "why": "ಆಗಮ: ವ after -ಉ in this word."
+        },
+        {
+          "q": "ದೇವ + ಆಲಯ = ＿",
+          "en": "god + abode",
+          "options": ["ದೇವಾಲಯ", "ದೇವಆಲಯ", "ದೇವಯಾಲಯ", "ದೇವೋಲಯ"],
+          "answer": "ದೇವಾಲಯ",
+          "why": "Sanskrit: a + aa → aa."
         }
       ]
     }
