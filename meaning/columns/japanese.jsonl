@@ -88,3 +88,17 @@
 {"sentence": "officer-sees-child", "t": [["将校", "しょうこう", "officer"], ["は", "は", "@topic"], ["子供", "こども", "child"], ["を", "を", "@object"], ["見ます", "みます", "see"]], "end": "。"}
 {"sentence": "captain-sees-ship", "t": [["船長", "せんちょう", "captain"], ["は", "は", "@topic"], ["船", "ふね", "ship"], ["を", "を", "@object"], ["見ます", "みます", "see"]], "end": "。"}
 {"sentence": "i-see-ship", "t": [["船", "ふね", "ship"], ["が", "が", "@subject"], ["見えます", "みえます", "see"]], "implied": ["i"], "end": "。"}
+{"sentence": "print-word", "t": [["単語", "たんご", "word"], ["を", "を", "@object"], ["表示する", "ひょうじする", "print"]], "end": "。"}
+{"sentence": "show-number", "t": [["数", "かず", "number"], ["を", "を", "@object"], ["表示する", "ひょうじする", "print"]], "end": "。"}
+{"sentence": "print-screen", "t": [["画面", "がめん", "screen"], ["に", "に", "@place"], ["単語", "たんご", "word"], ["を", "を", "@object"], ["表示する", "ひょうじする", "print"]], "end": "。"}
+{"sentence": "start-loop", "t": [["ループ", "ループ", "loop"], ["を", "を", "@object"], ["始める", "はじめる", "start"]], "end": "。"}
+{"sentence": "end-loop", "t": [["ループ", "ループ", "loop"], ["を", "を", "@object"], ["終える", "おえる", "end"]], "end": "。"}
+{"sentence": "repeat-three", "t": [["三", "さん", "three"], ["回", "かい", "times"], ["繰り返す", "くりかえす", "repeat"]], "end": "。"}
+{"sentence": "count-to-ten", "t": [["一", "いち", "one"], ["から", "から", "from"], ["十", "じゅう", "ten"], ["まで", "まで", "@until"], ["数える", "かぞえる", "count"]], "end": "。"}
+{"sentence": "set-value", "t": [["値", "あたい", "value"], ["を", "を", "@object"], ["設定する", "せっていする", "set"]], "end": "。"}
+{"sentence": "create-variable", "t": [["変数", "へんすう", "variable"], ["を", "を", "@object"], ["作る", "つくる", "create"]], "end": "。"}
+{"sentence": "return-value", "t": [["値", "あたい", "value"], ["を", "を", "@object"], ["返す", "かえす", "return"]], "end": "。"}
+{"sentence": "load-data", "t": [["データ", "データ", "data"], ["を", "を", "@object"], ["読み込む", "よみこむ", "load"]], "end": "。"}
+{"sentence": "add-one", "t": [["一", "いち", "one"], ["を", "を", "@object"], ["足す", "たす", "add"]], "end": "。"}
+{"sentence": "sort-list", "t": [["リスト", "リスト", "list"], ["を", "を", "@object"], ["並べ替える", "ならべかえる", "sort"]], "end": "。"}
+{"sentence": "run-program", "t": [["プログラム", "プログラム", "program"], ["を", "を", "@object"], ["実行する", "じっこうする", "run"]], "end": "。"}
