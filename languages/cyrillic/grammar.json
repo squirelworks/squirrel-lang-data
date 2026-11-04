@@ -14,13 +14,12 @@
     "  “Grammatical aspect” (CC BY-SA) for case uses and beginner overview.",
     "- In-repo languages/cyrillic/reference.json cards (to-be-have, past-tense, where-whither,",
     "  motion, like, cases) — same beginner seam; examples here are original.",
-    "Lessons 1–6 unchanged; 7–12 deepen the same seam (have/нет, past, direction, motion,",
-    "liking with the dative, compound future).",
     "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
-    "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced."
+    "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
+    "72 lessons, from A1 to C1. Lessons 13–72 were added to cover every point in the earlier plan and the rest of a standard course."
   ],
   "title": "Russian first grammar",
-  "intro": "Russian has no words for “a” or “the”, usually drops “is” in the present, and shows a noun's job by changing its ending. Lessons 1–6 cover это, gender, the present tense, the object ending, в / на for location, and plurals. Lessons 7–12 add “to have” with нет + genitive, the past, куда? (where to), идти / ехать, мне нравится, and the compound future with буду. The CEFR level after each point (A1 to C2) is an estimate, and a range like A2–B1 means it often comes up at both.",
+  "intro": "Russian has no words for “a” or “the”, usually drops “is” in the present, and shows a noun's job by changing its ending. Seventy-two lessons run from это and noun gender through the six cases, aspect, verbs of motion and the conditional, to participles, verbal adverbs and word order. The CEFR level after each point (A1 to C2) is an estimate, and a range like A2–B1 means it often comes up at both.",
   "lessons": [
     {
       "id": "eto",
@@ -941,108 +940,4530 @@
           "why": "они takes будут; не goes before it."
         }
       ]
-    }
-  ],
-  "plan": [
+    },
     {
       "id": "possessives",
-      "title": "мой, твой, его, её (about A1)",
-      "level": "beginner"
+      "title": "мой, твой, его, её",
+      "particle": "мой・твой・его・её",
+      "summary": "мой and твой change with the noun's gender; его, её and их never change. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>мой</b> (my) and <b>твой</b> (your) agree with the noun: мой/твой (masculine), моя/твоя (feminine), моё/твоё (neuter), мои/твои (plural). <b>наш</b> and <b>ваш</b> work the same way: наш, наша, наше, наши.",
+          "examples": [
+            [
+              "{Твоя} сестра дома?",
+              "Tvoya sestra doma?",
+              "Is your sister at home?"
+            ],
+            [
+              "Это {наши} друзья.",
+              "Eto nashi druz'ya.",
+              "These are our friends."
+            ]
+          ]
+        },
+        {
+          "h": "его, её, их never change",
+          "p": "For his, her and their, use <b>его</b> (yevo), <b>её</b> and <b>их</b>. They do not change for the noun's gender or number: его дом, его машина, его книги.",
+          "examples": [
+            ["Это {его} машина.", "Eto yevo mashina.", "This is his car."],
+            [
+              "{Её} брат врач.",
+              "Yeyo brat vrach.",
+              "Her brother is a doctor."
+            ],
+            [
+              "{Их} дети в школе.",
+              "Ikh deti v shkole.",
+              "Their children are at school."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ книга",
+          "en": "your book (to a friend)",
+          "options": ["твоя", "твой", "твоё", "твои"],
+          "answer": "твоя",
+          "why": "книга is feminine: твоя."
+        },
+        {
+          "q": "Это ＿ окно.",
+          "en": "This is my window.",
+          "options": ["мой", "моё", "моя", "мои"],
+          "answer": "моё",
+          "why": "окно is neuter: моё."
+        },
+        {
+          "q": "Это ＿ сестра.",
+          "en": "This is his sister.",
+          "options": ["её", "ей", "его", "ему"],
+          "answer": "его",
+          "why": "его never changes, whatever the noun."
+        },
+        {
+          "q": "＿ родители",
+          "en": "our parents",
+          "options": ["наш", "наша", "наше", "наши"],
+          "answer": "наши",
+          "why": "Plural: наши."
+        },
+        {
+          "q": "Где ＿ сумка?",
+          "en": "Where is her bag?",
+          "options": ["её", "ей", "ею", "неё"],
+          "answer": "её",
+          "why": "Her (possessive) is её and never changes."
+        }
+      ]
     },
     {
       "id": "adjectives",
-      "title": "Adjectives that agree: новый, новая, новое (about A1)",
-      "level": "beginner"
+      "title": "Adjectives that agree: новый, новая, новое",
+      "particle": "-ый・-ая・-ое・-ые",
+      "summary": "Adjectives match the noun: новый дом, новая машина, новое окно, новые книги. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "The dictionary form ends in <b>-ый</b> (or -ий, -ой). It changes to <b>-ая</b> for feminine nouns, <b>-ое</b> for neuter and <b>-ые</b> for plural.",
+          "examples": [
+            ["{новый} дом", "novyy dom", "a new house"],
+            ["{новая} машина", "novaya mashina", "a new car"],
+            ["{новое} окно", "novoye okno", "a new window"]
+          ]
+        },
+        {
+          "h": "The spelling rule after к, г, х, ж, ш, ч, щ",
+          "p": "After к, г, х, ж, ш, ч and щ, write <b>и</b> instead of ы: русский, хороший, большие. Adjectives stressed on the ending use <b>-ой</b>: большой, молодой.",
+          "examples": [
+            ["{хорошая} погода", "khoroshaya pogoda", "good weather"],
+            ["{большие} города", "bol'shiye goroda", "big cities"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ книга",
+          "en": "an interesting book",
+          "options": ["интересная", "интересный", "интересное", "интересные"],
+          "answer": "интересная",
+          "why": "книга is feminine: -ая."
+        },
+        {
+          "q": "＿ письмо",
+          "en": "a long letter",
+          "options": ["длинный", "длинное", "длинная", "длинные"],
+          "answer": "длинное",
+          "why": "письмо is neuter: -ое."
+        },
+        {
+          "q": "＿ дети",
+          "en": "small children",
+          "options": ["маленькия", "маленькый", "маленькие", "маленькое"],
+          "answer": "маленькие",
+          "why": "Plural -ие after к."
+        },
+        {
+          "q": "＿ друг",
+          "en": "a good friend",
+          "options": ["хорошый", "хорошая", "хорошее", "хороший"],
+          "answer": "хороший",
+          "why": "After ш write и: хороший."
+        },
+        {
+          "q": "＿ город",
+          "en": "a big city",
+          "options": ["большой", "большый", "большая", "большое"],
+          "answer": "большой",
+          "why": "Stressed ending: -ой."
+        }
+      ]
     },
     {
       "id": "second-conjugation",
-      "title": "The second conjugation: говорить (about A1)",
-      "level": "beginner"
+      "title": "The second conjugation: говорить",
+      "particle": "говорю・говоришь・говорят",
+      "summary": "Verbs in -ить usually take -ю/-у, -ишь, -ит, -им, -ите, -ят/-ат. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Most verbs in <b>-ить</b> (and some in -еть, -ать) follow the second conjugation. The vowel is <b>и</b> where the first conjugation has е: говоришь, говорит, говорим.",
+          "examples": [
+            [
+              "Я {говорю} по-русски.",
+              "Ya govoryu po-russki.",
+              "I speak Russian."
+            ],
+            [
+              "Ты {говоришь} по-английски?",
+              "Ty govorish' po-angliyski?",
+              "Do you speak English?"
+            ],
+            [
+              "Они {говорят} быстро.",
+              "Oni govoryat bystro.",
+              "They speak fast."
+            ]
+          ]
+        },
+        {
+          "h": "Consonant changes in the я form",
+          "p": "Some verbs change their last consonant only in the я form: любить → <b>люблю</b>, любишь; видеть → <b>вижу</b>, видишь; ходить → <b>хожу</b>, ходишь.",
+          "examples": [
+            ["Я {люблю} музыку.", "Ya lyublyu muzyku.", "I love music."],
+            ["Я {вижу} море.", "Ya vizhu more.", "I can see the sea."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Мы ＿ по-русски.",
+          "en": "We speak Russian.",
+          "options": ["говорим", "говорем", "говорям", "говорите"],
+          "answer": "говорим",
+          "why": "Second conjugation, мы: -им."
+        },
+        {
+          "q": "Вы ＿ кофе?",
+          "en": "Do you love coffee?",
+          "options": ["любете", "любите", "любят", "любишь"],
+          "answer": "любите",
+          "why": "вы: -ите."
+        },
+        {
+          "q": "Я ＿ дома.",
+          "en": "I'm calling from home. (звонить)",
+          "options": ["звонью", "звонишь", "звоню", "звонят"],
+          "answer": "звоню",
+          "why": "я: -ю."
+        },
+        {
+          "q": "Я ＿ его каждый день.",
+          "en": "I see him every day.",
+          "options": ["видю", "видит", "видим", "вижу"],
+          "answer": "вижу",
+          "why": "видеть: д → ж in the я form."
+        },
+        {
+          "q": "Они ＿ в Москве.",
+          "en": "They live in Moscow. (жить, first conjugation)",
+          "options": ["живут", "живят", "живит", "жилят"],
+          "answer": "живут",
+          "why": "жить is first conjugation: живут."
+        }
+      ]
     },
     {
       "id": "genitive",
-      "title": "The genitive after numbers and сколько (about A2)",
-      "level": "beginner-intermediate"
+      "title": "The genitive after numbers and сколько",
+      "particle": "два часа・пять часов",
+      "summary": "After 2–4 use the genitive singular; after 5 and up, and after сколько and много, the genitive plural. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "After <b>один</b> the noun is in the nominative. After <b>два, три, четыре</b> it takes the genitive singular: два стола, три книги. After <b>пять</b> and up it takes the genitive plural: пять столов, пять книг.",
+          "examples": [
+            ["{два} брат{а}", "dva brata", "two brothers"],
+            ["{пять} лет", "pyat' let", "five years"],
+            ["{три} сестр{ы}", "tri sestry", "three sisters"]
+          ]
+        },
+        {
+          "h": "сколько, много, мало",
+          "p": "<b>сколько</b> (how many/much), <b>много</b> (a lot) and <b>мало</b> (little) take the genitive plural for things you count and the genitive singular for things you can't.",
+          "examples": [
+            [
+              "{Сколько} у тебя детей?",
+              "Skol'ko u tebya detey?",
+              "How many children do you have?"
+            ],
+            [
+              "Здесь {много} воды.",
+              "Zdes' mnogo vody.",
+              "There's a lot of water here."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "два ＿",
+          "en": "two tables",
+          "options": ["стола", "стол", "столов", "столы"],
+          "answer": "стола",
+          "why": "After 2–4: genitive singular."
+        },
+        {
+          "q": "пять ＿",
+          "en": "five books",
+          "options": ["книги", "книг", "книга", "книгу"],
+          "answer": "книг",
+          "why": "After 5: genitive plural. книга → книг."
+        },
+        {
+          "q": "Сколько ＿?",
+          "en": "How much does it cost? (рубль)",
+          "options": ["рубль", "рубля", "рублей", "рубли"],
+          "answer": "рублей",
+          "why": "сколько + genitive plural."
+        },
+        {
+          "q": "много ＿",
+          "en": "a lot of people",
+          "options": ["люди", "человек", "люда", "людей"],
+          "answer": "людей",
+          "why": "люди → людей in the genitive plural."
+        },
+        {
+          "q": "три ＿",
+          "en": "three hours",
+          "options": ["часа", "часов", "час", "часы"],
+          "answer": "часа",
+          "why": "After 3: genitive singular."
+        }
+      ]
     },
     {
       "id": "dative",
-      "title": "The dative: мне нужно, мне надо (about A2)",
-      "level": "beginner-intermediate"
+      "title": "The dative: мне нужно, мне надо",
+      "particle": "мне・тебе・ему・ей",
+      "summary": "The dative marks who something is given or said to, and the person in мне нужно (I need) and мне холодно (I'm cold). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "The dative answers <b>кому?</b> (to whom). Pronouns: мне, тебе, ему, ей, нам, вам, им. Feminine nouns in -а take <b>-е</b>; masculine nouns take <b>-у</b>.",
+          "examples": [
+            ["Я звоню {маме}.", "Ya zvonyu mame.", "I'm calling Mum."],
+            [
+              "Дай {брату} книгу.",
+              "Day bratu knigu.",
+              "Give your brother the book."
+            ]
+          ]
+        },
+        {
+          "h": "мне нужно, мне надо, мне холодно",
+          "p": "Russian puts the person in the dative for needs and feelings: <b>мне надо</b> / <b>мне нужно</b> (I need to), <b>мне холодно</b> (I'm cold), <b>мне двадцать лет</b> (I'm twenty).",
+          "examples": [
+            ["{Мне нужно} идти.", "Mne nuzhno idti.", "I need to go."],
+            ["{Ему} холодно.", "Yemu kholodno.", "He's cold."],
+            ["{Ей} тридцать лет.", "Yey tridtsat' let.", "She is thirty."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ надо работать.",
+          "en": "I have to work.",
+          "options": ["Мне", "Я", "Меня", "Мной"],
+          "answer": "Мне",
+          "why": "The person who needs is in the dative."
+        },
+        {
+          "q": "Я пишу ＿.",
+          "en": "I'm writing to Anna.",
+          "options": ["Анну", "Анне", "Анна", "Анны"],
+          "answer": "Анне",
+          "why": "Feminine -а → -е in the dative."
+        },
+        {
+          "q": "Помоги ＿!",
+          "en": "Help your father!",
+          "options": ["отца", "отец", "отцу", "отцом"],
+          "answer": "отцу",
+          "why": "помогать takes the dative."
+        },
+        {
+          "q": "＿ скучно.",
+          "en": "We're bored.",
+          "options": ["Мы", "Нас", "Нами", "Нам"],
+          "answer": "Нам",
+          "why": "Dative of мы: нам."
+        },
+        {
+          "q": "Сколько ＿ лет?",
+          "en": "How old is he?",
+          "options": ["ему", "его", "он", "им"],
+          "answer": "ему",
+          "why": "Age uses the dative: ему."
+        }
+      ]
     },
     {
       "id": "instrumental",
-      "title": "The instrumental: с другом, работать врачом (about A2)",
-      "level": "beginner-intermediate"
+      "title": "The instrumental: с другом, работать врачом",
+      "particle": "с + -ом / -ой",
+      "summary": "The instrumental means \"with\" (с другом) and \"by means of\" (ручкой), and names a job after работать and стать. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Masculine and neuter nouns take <b>-ом</b> (-ем), feminine nouns take <b>-ой</b> (-ей). With <b>с</b> it means together with; without a preposition it is the tool: пишу ручкой.",
+          "examples": [
+            [
+              "Я иду в кино {с другом}.",
+              "Ya idu v kino s drugom.",
+              "I'm going to the cinema with a friend."
+            ],
+            [
+              "Чай {с молоком}, пожалуйста.",
+              "Chay s molokom, pozhaluysta.",
+              "Tea with milk, please."
+            ],
+            [
+              "Я пишу {ручкой}.",
+              "Ya pishu ruchkoy.",
+              "I'm writing with a pen."
+            ]
+          ]
+        },
+        {
+          "h": "работать, стать, быть + instrumental",
+          "p": "Jobs and roles after <b>работать</b>, <b>стать</b> (become) and past or future <b>быть</b> go in the instrumental: Он работает врачом. Она хочет стать учительницей.",
+          "examples": [
+            [
+              "Он работает {врачом}.",
+              "On rabotayet vrachom.",
+              "He works as a doctor."
+            ],
+            [
+              "Я хочу стать {инженером}.",
+              "Ya khochu stat' inzhenerom.",
+              "I want to become an engineer."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Я живу ＿.",
+          "en": "I live with my sister.",
+          "options": ["с сестрой", "с сестра", "с сестре", "с сестру"],
+          "answer": "с сестрой",
+          "why": "с + instrumental: -ой."
+        },
+        {
+          "q": "Она ест суп ＿.",
+          "en": "She eats soup with a spoon. (ложка)",
+          "options": ["с ложкой", "ложкой", "ложку", "ложке"],
+          "answer": "ложкой",
+          "why": "A tool: instrumental, no с."
+        },
+        {
+          "q": "Он работает ＿.",
+          "en": "He works as a teacher.",
+          "options": ["учитель", "учителя", "учителем", "учителю"],
+          "answer": "учителем",
+          "why": "работать + instrumental."
+        },
+        {
+          "q": "кофе ＿",
+          "en": "coffee with sugar",
+          "options": ["с сахар", "с сахару", "с сахаре", "с сахаром"],
+          "answer": "с сахаром",
+          "why": "с + -ом."
+        },
+        {
+          "q": "Мы гуляли ＿.",
+          "en": "We went for a walk with our friends.",
+          "options": ["с друзьями", "с друзья", "с друзей", "с друзьям"],
+          "answer": "с друзьями",
+          "why": "Plural instrumental -ями/-ами."
+        }
+      ]
     },
     {
       "id": "reflexive",
-      "title": "Verbs in -ся (about A2)",
-      "level": "beginner-intermediate"
+      "title": "Verbs in -ся",
+      "particle": "-ся・-сь",
+      "summary": "-ся makes a verb reflexive or mutual, and some verbs only exist with it. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>-ся</b> goes after consonants and <b>-сь</b> after vowels: я одеваюсь, он одевается. It can mean \"oneself\": мыть (wash) → мыться (wash oneself).",
+          "examples": [
+            [
+              "Я {умываюсь} утром.",
+              "Ya umyvayus' utrom.",
+              "I wash in the morning."
+            ],
+            [
+              "Как {тебя зовут}? — Меня зовут Анна.",
+              "Kak tebya zovut? — Menya zovut Anna.",
+              "What's your name? — My name is Anna."
+            ]
+          ]
+        },
+        {
+          "h": "Mutual and -ся-only verbs",
+          "p": "-ся can mean each other: <b>встречаться</b> (meet), <b>видеться</b> (see each other). Some verbs never appear without it: <b>смеяться</b> (laugh), <b>бояться</b> (be afraid), <b>нравиться</b>.",
+          "examples": [
+            [
+              "Мы {встречаемся} в пять.",
+              "My vstrechayemsya v pyat'.",
+              "We're meeting at five."
+            ],
+            ["Я {боюсь} собак.", "Ya boyus' sobak.", "I'm afraid of dogs."],
+            [
+              "Урок {начинается} в девять.",
+              "Urok nachinayetsya v devyat'.",
+              "The lesson starts at nine."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Я ＿ музыкой.",
+          "en": "I'm into music. (заниматься)",
+          "options": ["занимаюсь", "занимаюся", "занимаю", "занимаетсь"],
+          "answer": "занимаюсь",
+          "why": "After a vowel: -сь."
+        },
+        {
+          "q": "Магазин ＿ в восемь.",
+          "en": "The shop opens at eight.",
+          "options": ["открывает", "открывается", "открываетсь", "открываемся"],
+          "answer": "открывается",
+          "why": "Things that open by themselves take -ся."
+        },
+        {
+          "q": "Они часто ＿.",
+          "en": "They often see each other.",
+          "options": ["видят", "видятсь", "видятся", "видимся"],
+          "answer": "видятся",
+          "why": "Mutual -ся."
+        },
+        {
+          "q": "Не ＿!",
+          "en": "Don't be afraid!",
+          "options": ["бой", "бойсь", "боися", "бойся"],
+          "answer": "бойся",
+          "why": "бояться: imperative бойся."
+        },
+        {
+          "q": "Мы ＿ в кафе.",
+          "en": "We met at a café.",
+          "options": ["встретились", "встретили", "встретилсь", "встретилися"],
+          "answer": "встретились",
+          "why": "Past plural + -сь after a vowel."
+        }
+      ]
     },
     {
       "id": "imperative",
-      "title": "The imperative: читай, читайте (about A2)",
-      "level": "beginner-intermediate"
+      "title": "The imperative: читай, читайте",
+      "particle": "-й・-и・-ь (+те)",
+      "summary": "Take the stem of the они form and add -й, -и or -ь; add -те for вы. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Start from the они form without its ending: чита-ют → <b>читай</b>; говор-ят → <b>говори</b>; сяд-ут → <b>сядь</b>. Add <b>-те</b> to speak politely or to several people.",
+          "examples": [
+            ["{Читайте} текст.", "Chitayte tekst.", "Read the text."],
+            [
+              "{Говори} медленнее.",
+              "Govori medlenneye.",
+              "Speak more slowly."
+            ],
+            [
+              "{Сядьте}, пожалуйста.",
+              "Syad'te, pozhaluysta.",
+              "Please sit down."
+            ]
+          ]
+        },
+        {
+          "h": "Давай and пусть",
+          "p": "<b>Давай</b> / <b>давайте</b> + verb means let's: давай пойдём. <b>Пусть</b> + verb means let him, let them: пусть он позвонит.",
+          "examples": [
+            [
+              "{Давай} поедем на море!",
+              "Davay poyedem na more!",
+              "Let's go to the seaside!"
+            ],
+            ["{Пусть} он подождёт.", "Pust' on podozhdyot.", "Let him wait."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ дверь, пожалуйста.",
+          "en": "Open the door, please. (вы, открыть)",
+          "options": ["Откройте", "Открывайте", "Открой", "Открыте"],
+          "answer": "Откройте",
+          "why": "открыть → откроют → откройте."
+        },
+        {
+          "q": "＿ мне!",
+          "en": "Write to me! (ты)",
+          "options": ["Пишай", "Пиши", "Писай", "Пишите"],
+          "answer": "Пиши",
+          "why": "пишут → пиши."
+        },
+        {
+          "q": "＿ домой!",
+          "en": "Come home! (ты, идти)",
+          "options": ["Идий", "Идь", "Иди", "Идите"],
+          "answer": "Иди",
+          "why": "идут → иди."
+        },
+        {
+          "q": "＿ пойдём в кино!",
+          "en": "Let's go to the cinema!",
+          "options": ["Пусть", "Даю", "Дай", "Давай"],
+          "answer": "Давай",
+          "why": "Let's: давай."
+        },
+        {
+          "q": "＿ рукой.",
+          "en": "Don't touch it with your hand!",
+          "options": ["Не трогай", "Не тронуть", "Не трогаешь", "Не трогать"],
+          "answer": "Не трогай",
+          "why": "Negative imperatives normally use the imperfective: не трогай."
+        }
+      ]
     },
     {
       "id": "aspect",
-      "title": "Imperfective and perfective pairs (about A2–B1)",
-      "level": "beginner-intermediate"
+      "title": "Imperfective and perfective pairs",
+      "particle": "читать / прочитать",
+      "summary": "Most verbs come in pairs: the imperfective for process or habit, the perfective for one finished result. (about A2–B1)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "The <b>imperfective</b> (читать, писать, делать) describes an action in progress, repeated, or just named. The <b>perfective</b> (прочитать, написать, сделать) describes one complete action with a result.",
+          "examples": [
+            [
+              "Я {читал} книгу весь вечер.",
+              "Ya chital knigu ves' vecher.",
+              "I was reading the book all evening."
+            ],
+            [
+              "Я {прочитал} книгу.",
+              "Ya prochital knigu.",
+              "I finished the book."
+            ],
+            [
+              "Каждый день он {пишет} письма.",
+              "Kazhdyy den' on pishet pis'ma.",
+              "He writes letters every day."
+            ]
+          ]
+        },
+        {
+          "h": "Pairs and the future",
+          "p": "Pairs are made with a prefix (делать → сделать), a suffix change (решать → решить) or a different word (говорить → сказать). A perfective in the present form means the future: <b>я прочитаю</b> = I will read (and finish).",
+          "examples": [
+            [
+              "Завтра я {позвоню}.",
+              "Zavtra ya pozvonyu.",
+              "I'll call tomorrow."
+            ],
+            [
+              "Он {сказал}, что придёт.",
+              "On skazal, chto pridyot.",
+              "He said he would come."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Вчера я ＿ письмо и отправил его.",
+          "en": "Yesterday I wrote the letter and sent it.",
+          "options": ["написал", "писал", "пишу", "напишу"],
+          "answer": "написал",
+          "why": "A finished action followed by the next: perfective."
+        },
+        {
+          "q": "Я часто ＿ маме.",
+          "en": "I often call Mum.",
+          "options": ["позвоню", "звоню", "позвонил", "позвонить"],
+          "answer": "звоню",
+          "why": "Habit: imperfective."
+        },
+        {
+          "q": "Завтра я ＿ домашнее задание.",
+          "en": "I'll do the homework tomorrow.",
+          "options": ["делаю", "сделал", "сделаю", "делал"],
+          "answer": "сделаю",
+          "why": "Perfective present form = future."
+        },
+        {
+          "q": "Что ты ＿ вчера вечером?",
+          "en": "What were you doing last night?",
+          "options": ["сделал", "сделаешь", "делаешь", "делал"],
+          "answer": "делал",
+          "why": "Process, no result in focus: imperfective."
+        },
+        {
+          "q": "The perfective of говорить (to say once) is…",
+          "en": "",
+          "options": ["сказать", "поговорить", "заговорить", "выговорить"],
+          "answer": "сказать",
+          "why": "говорить → сказать is a pair made of different words."
+        }
+      ]
     },
     {
       "id": "comparatives",
-      "title": "больше, лучше, and -ее comparatives (about A2–B1)",
-      "level": "beginner-intermediate"
+      "title": "больше, лучше, and -ее comparatives",
+      "particle": "-ее・лучше・чем",
+      "summary": "Add -ее for most comparatives; a few are irregular (лучше, хуже, больше, меньше). Than is чем, or the genitive. (about A2–B1)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Most adjectives form the comparative with <b>-ее</b>: быстрый → быстрее, интересный → интереснее. Common irregulars: <b>лучше</b> (better), <b>хуже</b> (worse), <b>больше</b> (bigger, more), <b>меньше</b> (smaller, less), <b>дороже</b>, <b>дешевле</b>, <b>старше</b>, <b>моложе</b>.",
+          "examples": [
+            [
+              "Поезд {быстрее}, чем автобус.",
+              "Poyezd bystreye, chem avtobus.",
+              "The train is faster than the bus."
+            ],
+            [
+              "Сегодня {лучше}, чем вчера.",
+              "Segodnya luchshe, chem vchera.",
+              "Today is better than yesterday."
+            ]
+          ]
+        },
+        {
+          "h": "чем or the genitive; самый",
+          "p": "After the comparative, \"than\" is <b>чем</b>, or simply the genitive: старше брата = older than my brother. The superlative is <b>самый</b> + adjective: самый большой город.",
+          "examples": [
+            [
+              "Она {старше} брата.",
+              "Ona starshe brata.",
+              "She is older than her brother."
+            ],
+            [
+              "Это {самый} высокий дом.",
+              "Eto samyy vysokiy dom.",
+              "This is the tallest building."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Этот фильм ＿ того.",
+          "en": "This film is more interesting than that one.",
+          "options": ["интереснее", "интереснее чем", "интереснейший", "интересный"],
+          "answer": "интереснее",
+          "why": "Comparative -ее + genitive."
+        },
+        {
+          "q": "Сегодня ＿, чем вчера.",
+          "en": "Today is worse than yesterday.",
+          "options": ["плохее", "хуже", "хужее", "плоше"],
+          "answer": "хуже",
+          "why": "Irregular: хуже."
+        },
+        {
+          "q": "Москва ＿ Петербурга.",
+          "en": "Moscow is bigger than St Petersburg.",
+          "options": ["большее", "боле", "больше", "больнее"],
+          "answer": "больше",
+          "why": "Irregular: больше."
+        },
+        {
+          "q": "Это ＿ дорогой ресторан.",
+          "en": "This is the most expensive restaurant.",
+          "options": ["самая", "самое", "самым", "самый"],
+          "answer": "самый",
+          "why": "ресторан is masculine: самый."
+        },
+        {
+          "q": "Он ＿ меня на два года.",
+          "en": "He is two years older than me.",
+          "options": ["старше", "старее", "старый", "старшее"],
+          "answer": "старше",
+          "why": "старше for people's age."
+        }
+      ]
     },
     {
       "id": "prefixed-motion",
-      "title": "Prefixed motion verbs: прийти, уйти, приехать (about B1)",
-      "level": "intermediate"
+      "title": "Prefixed motion verbs: прийти, уйти, приехать",
+      "particle": "при-・у-・в-・вы-",
+      "summary": "Prefixes on идти and ехать give direction: при- arrive, у- leave, в- go in, вы- go out. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "The prefix says which way: <b>при-</b> (arrive), <b>у-</b> (leave), <b>в-</b> (enter), <b>вы-</b> (exit), <b>пере-</b> (cross), <b>под-</b> (approach). With идти the stem becomes <b>-йти</b>: прийти, уйти, войти, выйти.",
+          "examples": [
+            [
+              "Когда ты {придёшь}?",
+              "Kogda ty pridyosh'?",
+              "When will you come?"
+            ],
+            ["Он уже {ушёл}.", "On uzhe ushyol.", "He has already left."],
+            [
+              "Мы {приехали} в Москву вчера.",
+              "My priyekhali v Moskvu vchera.",
+              "We arrived in Moscow yesterday."
+            ]
+          ]
+        },
+        {
+          "h": "The imperfective partners",
+          "p": "Prefixed forms of идти and ехать are perfective. Their imperfectives come from ходить and -езжать: приходить, уходить, приезжать, уезжать.",
+          "examples": [
+            [
+              "Он всегда {приходит} поздно.",
+              "On vsegda prikhodit pozdno.",
+              "He always comes late."
+            ],
+            [
+              "Она {выходит} из дома в восемь.",
+              "Ona vykhodit iz doma v vosem'.",
+              "She leaves the house at eight."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Он ＿ в комнату.",
+          "en": "He walked into the room.",
+          "options": ["вошёл", "вышел", "ушёл", "пришёл"],
+          "answer": "вошёл",
+          "why": "в- = into."
+        },
+        {
+          "q": "Поезд ＿ в шесть.",
+          "en": "The train arrives at six.",
+          "options": ["уходит", "приходит", "выходит", "входит"],
+          "answer": "приходит",
+          "why": "при- = arrive. Trains use идти/ходить."
+        },
+        {
+          "q": "Я ＿ из дома в семь.",
+          "en": "I left the house at seven.",
+          "options": ["вошла", "пришла", "вышла", "подошла"],
+          "answer": "вышла",
+          "why": "вы- = out of."
+        },
+        {
+          "q": "Они ＿ в Париж на неделю.",
+          "en": "They went away to Paris for a week.",
+          "options": ["приехали", "въехали", "переехали ли", "уехали"],
+          "answer": "уехали",
+          "why": "у- = away."
+        },
+        {
+          "q": "Каждый день она ＿ домой в шесть.",
+          "en": "Every day she comes home at six.",
+          "options": ["приходит", "придёт", "пришла", "прийти"],
+          "answer": "приходит",
+          "why": "Repeated: imperfective приходит."
+        }
+      ]
     },
     {
       "id": "kotoryi",
-      "title": "Relative clauses with который (about B1)",
-      "level": "intermediate"
+      "title": "Relative clauses with который",
+      "particle": "который・которая・которое",
+      "summary": "который takes gender and number from the noun it refers to, and its case from its role in its own clause. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>который</b> (which, who) agrees with the noun in gender and number: дом, который..., книга, которая..., письма, которые... Its case depends on what it does in the clause after it.",
+          "examples": [
+            [
+              "Это девушка, {которая} живёт рядом.",
+              "Eto devushka, kotoraya zhivyot ryadom.",
+              "This is the girl who lives next door."
+            ],
+            [
+              "Где книга, {которую} я купил?",
+              "Gde kniga, kotoruyu ya kupil?",
+              "Where is the book I bought?"
+            ]
+          ]
+        },
+        {
+          "h": "With prepositions",
+          "p": "A preposition goes in front: дом, <b>в котором</b> я живу (the house I live in); друг, <b>с которым</b> я работаю (the friend I work with). A comma always comes before который.",
+          "examples": [
+            [
+              "Это город, {в котором} я родился.",
+              "Eto gorod, v kotorom ya rodilsya.",
+              "This is the city where I was born."
+            ],
+            [
+              "Человек, {с которым} ты говорил, мой брат.",
+              "Chelovek, s kotorym ty govoril, moy brat.",
+              "The man you were talking to is my brother."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Фильм, ＿ мы смотрели, был скучный.",
+          "en": "The film we watched was boring.",
+          "options": ["который", "которого", "которым", "которая"],
+          "answer": "который",
+          "why": "Masculine inanimate object: accusative = который."
+        },
+        {
+          "q": "Женщина, ＿ я звонил, не ответила.",
+          "en": "The woman I called didn't answer.",
+          "options": ["которая", "которой", "которую", "котором"],
+          "answer": "которой",
+          "why": "звонить + dative: которой."
+        },
+        {
+          "q": "Дом, в ＿ мы живём, старый.",
+          "en": "The house we live in is old.",
+          "options": ["который", "которой", "котором", "которого"],
+          "answer": "котором",
+          "why": "в + prepositional: котором."
+        },
+        {
+          "q": "Студенты, ＿ учатся здесь, из Китая.",
+          "en": "The students who study here are from China.",
+          "options": ["который", "которых", "которыми", "которые"],
+          "answer": "которые",
+          "why": "Plural subject: которые."
+        },
+        {
+          "q": "Это девушка, ＿ я люблю.",
+          "en": "That's the girl I love.",
+          "options": ["которую", "которая", "которой", "который"],
+          "answer": "которую",
+          "why": "Feminine object: которую."
+        }
+      ]
     },
     {
       "id": "chtoby",
-      "title": "чтобы: so that, and wanting someone to (about B1)",
-      "level": "intermediate"
+      "title": "чтобы: so that, and wanting someone to",
+      "particle": "чтобы + infinitive・чтобы + past",
+      "summary": "чтобы + infinitive means in order to; чтобы + past tense means so that someone else does, or wanting someone to. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "When the subject is the same, use <b>чтобы + infinitive</b>: Я учу русский, чтобы читать Толстого. When the subject changes, use <b>чтобы + past tense</b>, even about the future.",
+          "examples": [
+            [
+              "Я пришёл, {чтобы помочь}.",
+              "Ya prishyol, chtoby pomoch'.",
+              "I came to help."
+            ],
+            [
+              "Говори громче, {чтобы} все {слышали}.",
+              "Govori gromche, chtoby vse slyshali.",
+              "Speak louder so that everyone can hear."
+            ]
+          ]
+        },
+        {
+          "h": "хотеть, чтобы",
+          "p": "\"I want you to...\" is <b>Я хочу, чтобы ты...</b> + past tense. Never Я хочу ты + infinitive.",
+          "examples": [
+            [
+              "Я хочу, {чтобы ты пришёл}.",
+              "Ya khochu, chtoby ty prishyol.",
+              "I want you to come."
+            ],
+            [
+              "Мама просит, {чтобы мы} не {опаздывали}.",
+              "Mama prosit, chtoby my ne opazdyvali.",
+              "Mum asks us not to be late."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Я хочу, чтобы он ＿.",
+          "en": "I want him to call.",
+          "options": ["позвонил", "позвонит", "позвонить", "звонит"],
+          "answer": "позвонил",
+          "why": "Different subject: чтобы + past."
+        },
+        {
+          "q": "Он работает, ＿ купить машину.",
+          "en": "He works to buy a car.",
+          "options": ["что", "чтобы", "чтоб бы", "потому что"],
+          "answer": "чтобы",
+          "why": "Same subject: чтобы + infinitive."
+        },
+        {
+          "q": "Я пришла, чтобы ＿ тебя.",
+          "en": "I came to see you.",
+          "options": ["увидела", "увижу", "увидеть", "увидит"],
+          "answer": "увидеть",
+          "why": "Same subject: infinitive."
+        },
+        {
+          "q": "Скажи ему, чтобы он ＿ хлеб.",
+          "en": "Tell him to buy bread.",
+          "options": ["купит", "купить", "купи", "купил"],
+          "answer": "купил",
+          "why": "A request about someone else: past."
+        },
+        {
+          "q": "I want you to know.",
+          "en": "",
+          "options": [
+            "Я хочу, чтобы ты знал.",
+            "Я хочу ты знать.",
+            "Я хочу, что ты знаешь.",
+            "Я хочу тебя знать."
+          ],
+          "answer": "Я хочу, чтобы ты знал.",
+          "why": "хотеть, чтобы + past."
+        }
+      ]
     },
     {
       "id": "by",
-      "title": "бы: the conditional (about B1)",
-      "level": "intermediate"
+      "title": "бы: the conditional",
+      "particle": "past + бы",
+      "summary": "Past tense + бы gives would; in both halves of an unreal if-sentence. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Russian has one conditional form for present, future and past: the <b>past tense + бы</b>. Я бы купил = I would buy, or I would have bought.",
+          "examples": [
+            [
+              "Я {бы} {выпил} чаю.",
+              "Ya by vypil chayu.",
+              "I'd have some tea."
+            ],
+            [
+              "{Если бы} у меня {было} время, я {бы} поехал.",
+              "Yesli by u menya bylo vremya, ya by poyekhal.",
+              "If I had time, I would go."
+            ]
+          ]
+        },
+        {
+          "h": "Real and unreal if",
+          "p": "A real condition uses <b>если</b> with ordinary tenses: Если будет дождь, мы останемся дома. An unreal one uses <b>если бы</b> + past, and бы again in the result.",
+          "examples": [
+            [
+              "{Если} {будет} дождь, мы останемся дома.",
+              "Yesli budet dozhd', my ostanemsya doma.",
+              "If it rains, we'll stay at home."
+            ],
+            [
+              "Я {бы} помог, но не могу.",
+              "Ya by pomog, no ne mogu.",
+              "I would help, but I can't."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Если бы я знал, я ＿ тебе сказал.",
+          "en": "If I had known, I would have told you.",
+          "options": ["бы", "был", "буду", "бы бы"],
+          "answer": "бы",
+          "why": "Result clause: бы + past."
+        },
+        {
+          "q": "Я бы ＿ в Японию.",
+          "en": "I'd like to go to Japan.",
+          "options": ["поеду", "поехал", "поехать", "еду"],
+          "answer": "поехал",
+          "why": "бы + past tense."
+        },
+        {
+          "q": "Если бы она ＿ здесь…",
+          "en": "If she were here…",
+          "options": ["будет", "есть", "была", "быть"],
+          "answer": "была",
+          "why": "если бы + past."
+        },
+        {
+          "q": "Если завтра ＿ солнце, мы пойдём гулять.",
+          "en": "If it's sunny tomorrow, we'll go for a walk.",
+          "options": ["было бы", "будет бы", "есть", "будет"],
+          "answer": "будет",
+          "why": "Real condition: future, no бы."
+        },
+        {
+          "q": "＿ ты мне помочь?",
+          "en": "Could you help me?",
+          "options": ["Не мог бы", "Не можешь бы", "Мог ли бы", "Можешь бы"],
+          "answer": "Не мог бы",
+          "why": "Polite request: не мог бы ты…"
+        }
+      ]
     },
     {
       "id": "numbers-cases",
-      "title": "Numbers and the cases they take (about B1–B2)",
-      "level": "intermediate"
+      "title": "Numbers and the cases they take",
+      "particle": "один・два・пять + case",
+      "summary": "один agrees like an adjective; 2–4 take genitive singular, 5–20 genitive plural, and compound numbers follow their last word. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>один</b> agrees: один стол, одна книга, одно окно. <b>два</b> has a feminine form <b>две</b>: два брата, две сестры. Compound numbers follow the last word: двадцать один год, двадцать два года, двадцать пять лет.",
+          "examples": [
+            ["{двадцать один} год", "dvadtsat' odin god", "twenty-one years"],
+            ["{две} недели", "dve nedeli", "two weeks"],
+            ["{сорок пять} минут", "sorok pyat' minut", "forty-five minutes"]
+          ]
+        },
+        {
+          "h": "Numbers in other cases",
+          "p": "When the whole phrase is in an oblique case, the number declines too, and the noun goes in the same case in the plural: с двумя друзьями, в пяти минутах от дома.",
+          "examples": [
+            [
+              "Я живу {с двумя} друзьями.",
+              "Ya zhivu s dvumya druz'yami.",
+              "I live with two friends."
+            ],
+            [
+              "Магазин {в пяти} минутах от дома.",
+              "Magazin v pyati minutakh ot doma.",
+              "The shop is five minutes from home."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ сестры",
+          "en": "two sisters",
+          "options": ["две", "два", "двое", "двух"],
+          "answer": "две",
+          "why": "Feminine: две."
+        },
+        {
+          "q": "двадцать один ＿",
+          "en": "twenty-one years",
+          "options": ["года", "год", "лет", "годы"],
+          "answer": "год",
+          "why": "Ends in один: nominative singular."
+        },
+        {
+          "q": "тридцать три ＿",
+          "en": "thirty-three roubles",
+          "options": ["рубль", "рублей", "рубля", "рубли"],
+          "answer": "рубля",
+          "why": "Ends in три: genitive singular."
+        },
+        {
+          "q": "одиннадцать ＿",
+          "en": "eleven students",
+          "options": ["студента", "студент", "студенты", "студентов"],
+          "answer": "студентов",
+          "why": "11–19 take genitive plural."
+        },
+        {
+          "q": "Я говорю на ＿ языках.",
+          "en": "I speak three languages.",
+          "options": ["трёх", "три", "трём", "тремя"],
+          "answer": "трёх",
+          "why": "на + prepositional: трёх."
+        }
+      ]
     },
     {
       "id": "short-forms",
-      "title": "Short adjectives: рад, готов, должен (about B1–B2)",
-      "level": "intermediate"
+      "title": "Short adjectives: рад, готов, должен",
+      "particle": "рад・готов・должен・нужен",
+      "summary": "Short adjectives act as predicates and agree in gender and number: я рад, она рада, мы рады. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Some adjectives have a short form used after the subject: <b>рад</b> (glad), <b>готов</b> (ready), <b>согласен</b> (agree), <b>занят</b> (busy), <b>болен</b> (ill). Endings: masculine none, feminine -а, neuter -о, plural -ы.",
+          "examples": [
+            ["Я очень {рад}.", "Ya ochen' rad.", "I'm very glad. (man)"],
+            ["Обед {готов}.", "Obed gotov.", "Lunch is ready."],
+            ["Она {занята}.", "Ona zanyata.", "She's busy."]
+          ]
+        },
+        {
+          "h": "должен and нужен",
+          "p": "<b>должен</b> (must) + infinitive: я должен, она должна, мы должны. <b>нужен</b> (needed) agrees with the thing needed, and the person goes in the dative: мне нужна машина.",
+          "examples": [
+            [
+              "Ты {должна} отдохнуть.",
+              "Ty dolzhna otdokhnut'.",
+              "You need to rest. (to a woman)"
+            ],
+            ["Мне {нужна} помощь.", "Mne nuzhna pomoshch'.", "I need help."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Она ＿ тебя видеть.",
+          "en": "She's glad to see you.",
+          "options": ["рада", "рад", "радая", "радо"],
+          "answer": "рада",
+          "why": "Feminine short form: рада."
+        },
+        {
+          "q": "Мы ＿.",
+          "en": "We're ready.",
+          "options": ["готов", "готовы", "готовые", "готова"],
+          "answer": "готовы",
+          "why": "Plural: -ы."
+        },
+        {
+          "q": "Мне ＿ билет.",
+          "en": "I need a ticket.",
+          "options": ["нужна", "нужно", "нужен", "нужны"],
+          "answer": "нужен",
+          "why": "билет is masculine."
+        },
+        {
+          "q": "Вы ＿ прийти вовремя.",
+          "en": "You must come on time.",
+          "options": ["должен", "должна", "должно", "должны"],
+          "answer": "должны",
+          "why": "вы takes the plural."
+        },
+        {
+          "q": "Я не ＿.",
+          "en": "I don't agree. (man)",
+          "options": ["согласен", "согласна", "согласный", "согласно"],
+          "answer": "согласен",
+          "why": "Masculine short form."
+        }
+      ]
     },
     {
       "id": "passive",
-      "title": "The passive: -ся verbs and был построен (about B1–B2)",
-      "level": "intermediate"
+      "title": "The passive: -ся verbs and был построен",
+      "particle": "-ся・был + short participle",
+      "summary": "Imperfective verbs make the passive with -ся; perfectives use быть + short passive participle. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "With imperfective verbs, add <b>-ся</b>: дома строятся (houses are being built). The agent goes in the instrumental. This is common in written Russian.",
+          "examples": [
+            [
+              "Здесь {строится} школа.",
+              "Zdes' stroitsya shkola.",
+              "A school is being built here."
+            ],
+            [
+              "Как {пишется} это слово?",
+              "Kak pishetsya eto slovo?",
+              "How is this word spelled?"
+            ]
+          ]
+        },
+        {
+          "h": "Perfective: был построен",
+          "p": "With perfective verbs, use the short passive participle with быть: <b>построен</b>, <b>написан</b>, <b>открыт</b>. It agrees with the subject; in the present, быть is dropped.",
+          "examples": [
+            [
+              "Дом {был построен} в 1900 году.",
+              "Dom byl postroyen v 1900 godu.",
+              "The house was built in 1900."
+            ],
+            ["Магазин {закрыт}.", "Magazin zakryt.", "The shop is closed."],
+            [
+              "Книга {написана} Толстым.",
+              "Kniga napisana Tolstym.",
+              "The book was written by Tolstoy."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Письмо ＿ вчера.",
+          "en": "The letter was sent yesterday.",
+          "options": ["было отправлено", "был отправлен", "отправилось бы", "отправляет"],
+          "answer": "было отправлено",
+          "why": "письмо is neuter: было отправлено."
+        },
+        {
+          "q": "Дверь ＿.",
+          "en": "The door is open.",
+          "options": ["открыт", "открыта", "открыто", "открыты"],
+          "answer": "открыта",
+          "why": "дверь is feminine."
+        },
+        {
+          "q": "Этот вопрос ＿ на собрании.",
+          "en": "This question is being discussed at the meeting.",
+          "options": ["обсуждает", "обсуждён будет", "обсуждается", "обсуждаются"],
+          "answer": "обсуждается",
+          "why": "Imperfective passive: -ся."
+        },
+        {
+          "q": "Роман написан ＿.",
+          "en": "The novel was written by Pushkin.",
+          "options": ["Пушкин", "Пушкина", "Пушкину", "Пушкиным"],
+          "answer": "Пушкиным",
+          "why": "The agent is in the instrumental."
+        },
+        {
+          "q": "Города ＿ в XVIII веке.",
+          "en": "The cities were founded in the 18th century.",
+          "options": ["были основаны", "был основан", "была основана", "основались бы"],
+          "answer": "были основаны",
+          "why": "Plural: были основаны."
+        }
+      ]
     },
     {
       "id": "participles",
-      "title": "Active and passive participles (about B2)",
-      "level": "advanced-intermediate"
+      "title": "Active and passive participles",
+      "particle": "-ущий・-вший・-емый・-нный",
+      "summary": "Participles are verb adjectives: читающий (who reads), читавший (who read), читаемый (being read), прочитанный (read). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Active participles describe the doer. Present: они-stem + <b>-щий</b> (читающий, говорящий). Past: past stem + <b>-вший</b> (читавший, написавший). They agree like adjectives and replace который clauses in writing.",
+          "examples": [
+            [
+              "Мальчик, {читающий} книгу, мой сын.",
+              "Mal'chik, chitayushchiy knigu, moy syn.",
+              "The boy reading a book is my son."
+            ],
+            [
+              "Человек, {написавший} письмо, ушёл.",
+              "Chelovek, napisavshiy pis'mo, ushyol.",
+              "The man who wrote the letter has left."
+            ]
+          ]
+        },
+        {
+          "h": "Passive participles",
+          "p": "Present passive: мы-form + <b>-ый</b> (читаемый, любимый). Past passive, from perfectives: <b>-нный / -тый</b> (прочитанный, открытый, сделанный).",
+          "examples": [
+            ["мой {любимый} фильм", "moy lyubimyy fil'm", "my favourite film"],
+            [
+              "{Прочитанная} книга лежит на столе.",
+              "Prochitannaya kniga lezhit na stole.",
+              "The book that has been read is on the table."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "студенты, ＿ в Москве",
+          "en": "students who live in Moscow",
+          "options": ["живущие", "живые", "жившая", "живомые"],
+          "answer": "живущие",
+          "why": "Present active: живут → живущие."
+        },
+        {
+          "q": "＿ дверь",
+          "en": "an open door",
+          "options": ["открывающая", "открытая", "открываемый", "открывший"],
+          "answer": "открытая",
+          "why": "Past passive: открытая."
+        },
+        {
+          "q": "девушка, ＿ по-русски",
+          "en": "a girl who speaks Russian",
+          "options": ["говорящий", "говоримая", "говорящая", "говорившие"],
+          "answer": "говорящая",
+          "why": "Present active, feminine."
+        },
+        {
+          "q": "письмо, ＿ вчера",
+          "en": "a letter written yesterday",
+          "options": ["написавшее", "пишущее", "написанный", "написанное"],
+          "answer": "написанное",
+          "why": "Past passive, neuter."
+        },
+        {
+          "q": "человек, ＿ здесь раньше",
+          "en": "a man who used to work here",
+          "options": ["работавший", "работающий", "работаемый", "работанный"],
+          "answer": "работавший",
+          "why": "Past active: -вший."
+        }
+      ]
     },
     {
       "id": "verbal-adverbs",
-      "title": "Verbal adverbs: читая, прочитав (about B2)",
-      "level": "advanced-intermediate"
+      "title": "Verbal adverbs: читая, прочитав",
+      "particle": "-я・-в",
+      "summary": "A verbal adverb links a second action by the same subject: -я while doing (imperfective), -в having done (perfective). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Imperfective verbal adverbs come from the они stem + <b>-я / -а</b>: читая, говоря, слыша. They mean while doing.",
+          "examples": [
+            [
+              "{Читая} газету, он пил кофе.",
+              "Chitaya gazetu, on pil kofe.",
+              "Reading the paper, he drank coffee."
+            ],
+            [
+              "Она слушала музыку, {готовя} ужин.",
+              "Ona slushala muzyku, gotovya uzhin.",
+              "She listened to music while cooking dinner."
+            ]
+          ]
+        },
+        {
+          "h": "Perfective: -в, -вшись",
+          "p": "Perfective verbal adverbs come from the past stem + <b>-в</b> (or -вшись for -ся verbs): прочитав, сделав, вернувшись. They mean having done. Both kinds need the same subject as the main verb.",
+          "examples": [
+            [
+              "{Сделав} уроки, дети пошли гулять.",
+              "Sdelav uroki, deti poshli gulyat'.",
+              "Having done their homework, the children went out."
+            ],
+            [
+              "{Вернувшись} домой, я лёг спать.",
+              "Vernuvshis' domoy, ya lyog spat'.",
+              "When I got back home, I went to bed."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ домой, она позвонила маме.",
+          "en": "Having come home, she called her mother.",
+          "options": ["Придя", "Приходя", "Пришедшая", "Придёт"],
+          "answer": "Придя",
+          "why": "прийти → придя (perfective)."
+        },
+        {
+          "q": "Он ехал, ＿ песню.",
+          "en": "He drove along singing a song.",
+          "options": ["напев", "напевая", "напевший", "напевать"],
+          "answer": "напевая",
+          "why": "While doing: imperfective -я."
+        },
+        {
+          "q": "＿ письмо, я отправил его.",
+          "en": "Having written the letter, I sent it.",
+          "options": ["Пиша", "Написанный", "Написав", "Писав"],
+          "answer": "Написав",
+          "why": "Perfective -в."
+        },
+        {
+          "q": "＿, он открыл дверь.",
+          "en": "Smiling, he opened the door.",
+          "options": ["Улыбая", "Улыбнувшись бы", "Улыбался", "Улыбаясь"],
+          "answer": "Улыбаясь",
+          "why": "-ся verb: -ясь."
+        },
+        {
+          "q": "Verbal adverbs need…",
+          "en": "",
+          "options": [
+            "the same subject as the main verb",
+            "a different subject",
+            "a preposition",
+            "the future tense"
+          ],
+          "answer": "the same subject as the main verb",
+          "why": "Only one subject for both actions."
+        }
+      ]
     },
     {
       "id": "aspect-advanced",
-      "title": "Aspect in the imperative and under negation (about B2–C1)",
-      "level": "advanced-intermediate"
+      "title": "Aspect in the imperative and under negation",
+      "particle": "не + imperfective",
+      "summary": "Positive requests often use the perfective; negative ones use the imperfective; не надо takes the imperfective. (about B2–C1)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "A one-off positive request usually takes the <b>perfective</b>: Закрой окно. An invitation or \"go ahead\" uses the <b>imperfective</b>: Садитесь! Проходите! A negative command takes the <b>imperfective</b>: Не закрывай окно.",
+          "examples": [
+            [
+              "{Закрой} окно, пожалуйста.",
+              "Zakroy okno, pozhaluysta.",
+              "Close the window, please."
+            ],
+            [
+              "{Не закрывай} окно!",
+              "Ne zakryvay okno!",
+              "Don't close the window!"
+            ],
+            [
+              "{Проходите}, {садитесь}!",
+              "Prokhodite, sadites'!",
+              "Come in, sit down!"
+            ]
+          ]
+        },
+        {
+          "h": "Negative perfective imperative and не надо",
+          "p": "A negative perfective imperative is a warning against an accident: <b>Не упади!</b> (Mind you don't fall!). <b>не надо</b> and <b>не стоит</b> take the imperfective infinitive.",
+          "examples": [
+            ["{Не опоздай}!", "Ne opozday!", "Mind you're not late!"],
+            [
+              "{Не надо} {звонить}.",
+              "Ne nado zvonit'.",
+              "There's no need to call."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Не ＿ дверь!",
+          "en": "Don't open the door!",
+          "options": ["открывай", "открой", "открыть", "открыл"],
+          "answer": "открывай",
+          "why": "Negative command: imperfective."
+        },
+        {
+          "q": "＿ этот текст до завтра.",
+          "en": "Translate this text by tomorrow.",
+          "options": ["Переводи", "Переведи", "Не переводи", "Переводил"],
+          "answer": "Переведи",
+          "why": "One-off result: perfective."
+        },
+        {
+          "q": "Не ＿ ключи!",
+          "en": "Don't lose the keys! (a warning)",
+          "options": ["теряй", "потерять", "потеряй", "терял"],
+          "answer": "потеряй",
+          "why": "A warning against an accident: negative perfective."
+        },
+        {
+          "q": "Не надо ＿ мне.",
+          "en": "You don't need to help me.",
+          "options": ["помочь", "помоги", "помог", "помогать"],
+          "answer": "помогать",
+          "why": "не надо + imperfective."
+        },
+        {
+          "q": "＿, пожалуйста!",
+          "en": "Do sit down! (invitation)",
+          "options": ["Садитесь", "Сядете", "Сели", "Сесть"],
+          "answer": "Садитесь",
+          "why": "Invitations use the imperfective."
+        }
+      ]
+    },
+    {
+      "id": "numbers-basic",
+      "title": "Numbers 0–100",
+      "particle": "один・два・десять・сто",
+      "summary": "Learn 1–10, the teens in -надцать, the tens, and how compounds are built. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>1–10</b>: один, два, три, четыре, пять, шесть, семь, восемь, девять, десять. The teens add <b>-надцать</b>: одиннадцать, двенадцать, пятнадцать. Zero is ноль.",
+          "examples": [
+            ["{один}, {два}, {три}", "odin, dva, tri", "one, two, three"],
+            ["{двенадцать}", "dvenadtsat'", "twelve"]
+          ]
+        },
+        {
+          "h": "Tens and compounds",
+          "p": "Tens: двадцать, тридцать, <b>сорок</b>, пятьдесят, шестьдесят, семьдесят, восемьдесят, <b>девяносто</b>, сто. Compounds put the tens first with no \"and\": двадцать пять, сорок восемь.",
+          "examples": [
+            ["{сорок} два", "sorok dva", "forty-two"],
+            ["{девяносто} девять", "devyanosto devyat'", "ninety-nine"],
+            [
+              "Мой телефон — {сто} пять.",
+              "Moy telefon — sto pyat'.",
+              "My (room) phone is 105."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "40",
+          "en": "",
+          "options": ["сорок", "четырьдесят", "четыредцать", "четырнадцать"],
+          "answer": "сорок",
+          "why": "40 is irregular: сорок."
+        },
+        {
+          "q": "15",
+          "en": "",
+          "options": ["пятьнадцать", "пятнадцать", "пятьдесят", "пятдесять"],
+          "answer": "пятнадцать",
+          "why": "The ь drops before -надцать."
+        },
+        {
+          "q": "90",
+          "en": "",
+          "options": ["девятьдесят", "девятнадцать", "девяносто", "девятьсот"],
+          "answer": "девяносто",
+          "why": "90 is irregular: девяносто."
+        },
+        {
+          "q": "23",
+          "en": "",
+          "options": ["три двадцать", "двадцать и три", "двадцатьтри", "двадцать три"],
+          "answer": "двадцать три",
+          "why": "Tens first, separate words, no \"and\"."
+        },
+        {
+          "q": "50",
+          "en": "",
+          "options": ["пятьдесят", "пятдесят", "пятьдесять", "пятнадцать"],
+          "answer": "пятьдесят",
+          "why": "пять + десят: пятьдесят."
+        }
+      ]
+    },
+    {
+      "id": "questions",
+      "title": "Question words and yes/no questions",
+      "particle": "кто・что・где・когда・почему・как",
+      "summary": "Yes/no questions are just statements with rising intonation; question words go first. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "A yes/no question keeps statement word order; only the voice rises on the key word: Ты дома? Common question words: <b>кто</b> (who), <b>что</b> (what), <b>где</b> (where), <b>когда</b> (when), <b>почему</b> (why), <b>как</b> (how), <b>сколько</b> (how much).",
+          "examples": [
+            ["Ты {дома}?", "Ty doma?", "Are you at home?"],
+            ["{Кто} это?", "Kto eto?", "Who is that?"],
+            ["{Где} метро?", "Gde metro?", "Where is the metro?"]
+          ]
+        },
+        {
+          "h": "какой and чей",
+          "p": "<b>какой</b> (which, what kind) and <b>чей</b> (whose) agree like adjectives: какой дом, какая книга, чья сумка.",
+          "examples": [
+            [
+              "{Какая} сегодня погода?",
+              "Kakaya segodnya pogoda?",
+              "What's the weather like today?"
+            ],
+            ["{Чья} это сумка?", "Ch'ya eto sumka?", "Whose bag is this?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ты живёшь?",
+          "en": "Where do you live?",
+          "options": ["Где", "Куда", "Когда", "Кто"],
+          "answer": "Где",
+          "why": "Location: где."
+        },
+        {
+          "q": "＿ это? — Это мой брат.",
+          "en": "Who's that? — It's my brother.",
+          "options": ["Что", "Кто", "Чей", "Как"],
+          "answer": "Кто",
+          "why": "People: кто."
+        },
+        {
+          "q": "＿ ты не пришёл?",
+          "en": "Why didn't you come?",
+          "options": ["Потому", "Почем", "Почему", "Поэтому"],
+          "answer": "Почему",
+          "why": "Why: почему."
+        },
+        {
+          "q": "＿ это машина?",
+          "en": "Whose car is this?",
+          "options": ["Чей", "Чьё", "Чьи", "Чья"],
+          "answer": "Чья",
+          "why": "машина is feminine."
+        },
+        {
+          "q": "＿ стоит билет?",
+          "en": "How much is the ticket?",
+          "options": ["Сколько", "Как много", "Что", "Какой"],
+          "answer": "Сколько",
+          "why": "Price: сколько стоит."
+        }
+      ]
+    },
+    {
+      "id": "negation",
+      "title": "не and нет",
+      "particle": "не・нет",
+      "summary": "не goes right before the word it negates; нет means no, and there isn't. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>не</b> goes directly before the word it negates, usually the verb: Я не знаю. <b>нет</b> is the answer \"no\". Moving не changes the meaning: Не я это сделал = It wasn't me who did it.",
+          "examples": [
+            ["Я {не} понимаю.", "Ya ne ponimayu.", "I don't understand."],
+            [
+              "Ты голоден? — {Нет}, спасибо.",
+              "Ty goloden? — Net, spasibo.",
+              "Are you hungry? — No, thanks."
+            ]
+          ]
+        },
+        {
+          "h": "Answering a negative question",
+          "p": "To agree with a negative question, Russian says <b>нет</b> and repeats the negative: Ты не устал? — Нет, не устал. To disagree, <b>да</b> or a positive verb: Нет, устал.",
+          "examples": [
+            [
+              "Ты не знаешь? — {Нет}, {не} знаю.",
+              "Ty ne znayesh'? — Net, ne znayu.",
+              "Don't you know? — No, I don't."
+            ],
+            [
+              "{Не} сегодня, а завтра.",
+              "Ne segodnya, a zavtra.",
+              "Not today, but tomorrow."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Я ＿ люблю кофе.",
+          "en": "I don't like coffee.",
+          "options": ["не", "нет", "ни", "ни не"],
+          "answer": "не",
+          "why": "не before the verb."
+        },
+        {
+          "q": "Ты студент? — ＿, я врач.",
+          "en": "Are you a student? — No, I'm a doctor.",
+          "options": ["Не", "Нет", "Ни", "Ничего"],
+          "answer": "Нет",
+          "why": "The answer \"no\" is нет."
+        },
+        {
+          "q": "Он работает ＿ здесь, а там.",
+          "en": "He works not here but there.",
+          "options": ["нет", "ни", "не", "без"],
+          "answer": "не",
+          "why": "не before the word you negate."
+        },
+        {
+          "q": "Это ＿ моя книга.",
+          "en": "This isn't my book.",
+          "options": ["нет", "ни", "нету", "не"],
+          "answer": "не",
+          "why": "не before моя."
+        },
+        {
+          "q": "Ты не голодна? — ＿, не голодна.",
+          "en": "Aren't you hungry? — No, I'm not.",
+          "options": ["Нет", "Да", "Не", "Ну"],
+          "answer": "Нет",
+          "why": "Agreeing with a negative: нет + negative."
+        }
+      ]
+    },
+    {
+      "id": "ordinals",
+      "title": "Ordinal numbers: первый, второй",
+      "particle": "первый・второй・третий",
+      "summary": "Ordinals are adjectives: первый, второй, третий, and they agree with the noun. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Ordinals agree like adjectives: <b>первый</b> урок, первая книга. Most come from the cardinal + -ый: пятый, десятый. Learn the irregulars: <b>второй</b>, <b>третий</b> (третья, третье), <b>четвёртый</b>, <b>седьмой</b>, <b>восьмой</b>, сороковой.",
+          "examples": [
+            [
+              "Это мой {первый} день.",
+              "Eto moy pervyy den'.",
+              "It's my first day."
+            ],
+            [
+              "Я живу на {третьем} этаже.",
+              "Ya zhivu na tret'yem etazhe.",
+              "I live on the third floor."
+            ]
+          ]
+        },
+        {
+          "h": "Compound ordinals",
+          "p": "Only the last word becomes an ordinal: двадцать <b>первый</b> век (the 21st century), сто <b>пятый</b> автобус.",
+          "examples": [
+            [
+              "{двадцать первый} век",
+              "dvadtsat' pervyy vek",
+              "the twenty-first century"
+            ],
+            [
+              "Это {вторая} попытка.",
+              "Eto vtoraya popytka.",
+              "This is the second attempt."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ урок",
+          "en": "the second lesson",
+          "options": ["второй", "двойной", "двой", "вторый"],
+          "answer": "второй",
+          "why": "Irregular: второй."
+        },
+        {
+          "q": "＿ дверь",
+          "en": "the third door",
+          "options": ["третия", "третья", "третяя", "трётья"],
+          "answer": "третья",
+          "why": "третий → третья (feminine)."
+        },
+        {
+          "q": "＿ раз",
+          "en": "the seventh time",
+          "options": ["семый", "семой", "седьмой", "седмой"],
+          "answer": "седьмой",
+          "why": "Irregular: седьмой."
+        },
+        {
+          "q": "двадцать ＿ год",
+          "en": "the 21st year",
+          "options": ["один", "первая", "одинный", "первый"],
+          "answer": "первый",
+          "why": "Only the last word is ordinal."
+        },
+        {
+          "q": "＿ этаж",
+          "en": "the fourth floor",
+          "options": ["четвёртый", "четырый", "четыретий", "четвертовой"],
+          "answer": "четвёртый",
+          "why": "Irregular: четвёртый."
+        }
+      ]
+    },
+    {
+      "id": "time-telling",
+      "title": "Telling the time",
+      "particle": "который час・в пять часов",
+      "summary": "Который час? asks the time; в + accusative gives at what time. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Ask <b>Который час?</b> or <b>Сколько времени?</b> Answers follow the number rules: час, два часа, пять часов. Minutes: два часа десять минут.",
+          "examples": [
+            [
+              "{Который} час? — Три {часа}.",
+              "Kotoryy chas? — Tri chasa.",
+              "What time is it? — Three o'clock."
+            ],
+            [
+              "Сейчас пять {часов}.",
+              "Seychas pyat' chasov.",
+              "It's five o'clock now."
+            ]
+          ]
+        },
+        {
+          "h": "At a time; half past",
+          "p": "\"At\" a time is <b>в</b> + the number: в два часа. Half past uses the next hour: <b>половина третьего</b> = half past two. Also common in speech: в полтретьего.",
+          "examples": [
+            [
+              "Фильм начинается {в} семь.",
+              "Fil'm nachinayetsya v sem'.",
+              "The film starts at seven."
+            ],
+            [
+              "Сейчас {половина} третьего.",
+              "Seychas polovina tret'yego.",
+              "It's half past two."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Сейчас два ＿.",
+          "en": "It's two o'clock.",
+          "options": ["часа", "часов", "час", "часы"],
+          "answer": "часа",
+          "why": "After 2: часа."
+        },
+        {
+          "q": "Встретимся ＿ шесть.",
+          "en": "Let's meet at six.",
+          "options": ["на", "в", "к", "за"],
+          "answer": "в",
+          "why": "At a time: в."
+        },
+        {
+          "q": "Сейчас восемь ＿.",
+          "en": "It's eight o'clock.",
+          "options": ["часа", "час", "часов", "часам"],
+          "answer": "часов",
+          "why": "After 5+: часов."
+        },
+        {
+          "q": "половина ＿",
+          "en": "half past four",
+          "options": ["четвёртого", "пятый", "пяти", "пятого"],
+          "answer": "пятого",
+          "why": "Half past four = half of the fifth hour."
+        },
+        {
+          "q": "＿ час?",
+          "en": "What time is it?",
+          "options": ["Который", "Какой", "Сколько", "Что"],
+          "answer": "Который",
+          "why": "Fixed phrase: который час."
+        }
+      ]
+    },
+    {
+      "id": "days-dates",
+      "title": "Days, months and dates",
+      "particle": "в понедельник・пятого мая",
+      "summary": "On a day is в + accusative; in a month is в + prepositional; a date is an ordinal in the genitive. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Days and months are written in lower case. \"On Monday\" is <b>в понедельник</b>, в среду, в субботу. \"In May\" is <b>в мае</b>, в январе.",
+          "examples": [
+            [
+              "{В понедельник} я работаю.",
+              "V ponedel'nik ya rabotayu.",
+              "On Monday I work."
+            ],
+            [
+              "Мы приедем {в июле}.",
+              "My priyedem v iyule.",
+              "We'll come in July."
+            ]
+          ]
+        },
+        {
+          "h": "Dates",
+          "p": "The date is a neuter ordinal (число is understood): Сегодня <b>пятое мая</b>. \"On the 5th of May\" puts the ordinal in the genitive: <b>пятого мая</b>.",
+          "examples": [
+            [
+              "Сегодня {первое} января.",
+              "Segodnya pervoye yanvarya.",
+              "Today is the first of January."
+            ],
+            [
+              "Я родился {десятого} марта.",
+              "Ya rodilsya desyatogo marta.",
+              "I was born on the tenth of March."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ среду",
+          "en": "on Wednesday",
+          "options": ["в", "на", "во", "к"],
+          "answer": "в",
+          "why": "в + accusative: в среду."
+        },
+        {
+          "q": "＿ августе",
+          "en": "in August",
+          "options": ["на", "в", "во", "с"],
+          "answer": "в",
+          "why": "в + prepositional for months."
+        },
+        {
+          "q": "Сегодня ＿ июня.",
+          "en": "Today is the third of June.",
+          "options": ["третий", "третьего", "третье", "третья"],
+          "answer": "третье",
+          "why": "The date itself: neuter nominative."
+        },
+        {
+          "q": "Он приехал ＿ сентября.",
+          "en": "He arrived on the second of September.",
+          "options": ["второе", "второй", "вторым", "второго"],
+          "answer": "второго",
+          "why": "On a date: genitive."
+        },
+        {
+          "q": "＿ вторник",
+          "en": "on Tuesday",
+          "options": ["во", "в", "на", "вы"],
+          "answer": "во",
+          "why": "Before вт-, в becomes во."
+        }
+      ]
+    },
+    {
+      "id": "prepositional-o",
+      "title": "о + prepositional: talking about",
+      "particle": "о・об・обо",
+      "summary": "о + prepositional means about: думать о, говорить о. It becomes об before a vowel. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>о</b> (about) takes the prepositional: о маме, о работе, о Москве. Before a vowel it becomes <b>об</b>: об отце, об Анне. With мне it is <b>обо мне</b>.",
+          "examples": [
+            [
+              "Мы говорим {о} работе.",
+              "My govorim o rabote.",
+              "We're talking about work."
+            ],
+            [
+              "Я думаю {об} отпуске.",
+              "Ya dumayu ob otpuske.",
+              "I'm thinking about the holiday."
+            ]
+          ]
+        },
+        {
+          "h": "Pronouns",
+          "p": "Prepositional pronouns: обо мне, о тебе, <b>о нём</b>, о ней, о нас, о вас, <b>о них</b>. After a preposition, он, она and они gain an н-.",
+          "examples": [
+            [
+              "Расскажи {о себе}.",
+              "Rasskazhi o sebe.",
+              "Tell me about yourself."
+            ],
+            [
+              "Я часто думаю {о нём}.",
+              "Ya chasto dumayu o nyom.",
+              "I often think about him."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Это книга ＿ истории.",
+          "en": "It's a book about history.",
+          "options": ["об", "о", "обо", "у"],
+          "answer": "об",
+          "why": "Before a vowel: об."
+        },
+        {
+          "q": "Он говорит ＿ мне.",
+          "en": "He's talking about me.",
+          "options": ["о", "обо", "об", "от"],
+          "answer": "обо",
+          "why": "Fixed form: обо мне."
+        },
+        {
+          "q": "Мы говорили о ＿.",
+          "en": "We talked about her.",
+          "options": ["её", "ей", "ней", "неё"],
+          "answer": "ней",
+          "why": "о + prepositional: ней."
+        },
+        {
+          "q": "Расскажи о своей ＿.",
+          "en": "Tell me about your family.",
+          "options": ["семья", "семью", "семьи", "семье"],
+          "answer": "семье",
+          "why": "Feminine prepositional: -е."
+        },
+        {
+          "q": "Что ты думаешь о ＿?",
+          "en": "What do you think of this film?",
+          "options": ["фильме", "фильм", "фильма", "фильму"],
+          "answer": "фильме",
+          "why": "Masculine prepositional: -е."
+        }
+      ]
+    },
+    {
+      "id": "genitive-possession",
+      "title": "The genitive: of, and whose",
+      "particle": "книга брата",
+      "summary": "The genitive after a noun means of or 's: машина брата, центр города. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "To say \"X's Y\" or \"the Y of X\", put X after Y in the genitive. Masculine and neuter <b>-а / -я</b>, feminine <b>-ы / -и</b>: дом отца, книга сестры, окно комнаты.",
+          "examples": [
+            [
+              "Это машина {брата}.",
+              "Eto mashina brata.",
+              "This is my brother's car."
+            ],
+            ["центр {города}", "tsentr goroda", "the city centre"],
+            ["номер {телефона}", "nomer telefona", "phone number"]
+          ]
+        },
+        {
+          "h": "The genitive of people",
+          "p": "Personal pronouns in the genitive are меня, тебя, его, её, нас, вас, их, and they come after <b>у</b> for having. For \"whose\", Russian uses possessives, not the genitive: моя книга, not книга меня.",
+          "examples": [
+            ["Это сумка {мамы}.", "Eto sumka mamy.", "This is Mum's bag."],
+            ["стакан {воды}", "stakan vody", "a glass of water"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Это дом ＿.",
+          "en": "This is my friend's house.",
+          "options": ["друга", "друг", "другу", "другом"],
+          "answer": "друга",
+          "why": "Genitive masculine: -а."
+        },
+        {
+          "q": "кошка ＿",
+          "en": "my sister's cat",
+          "options": ["сестра", "сестры", "сестре", "сестру"],
+          "answer": "сестры",
+          "why": "Feminine -а → -ы."
+        },
+        {
+          "q": "чашка ＿",
+          "en": "a cup of tea",
+          "options": ["чай", "чаи", "чая", "чаем"],
+          "answer": "чая",
+          "why": "Masculine -й → -я."
+        },
+        {
+          "q": "улицы ＿",
+          "en": "the streets of Moscow",
+          "options": ["Москва", "Москве", "Москву", "Москвы"],
+          "answer": "Москвы",
+          "why": "Feminine -а → -ы."
+        },
+        {
+          "q": "＿ мамы",
+          "en": "Mum's room",
+          "options": ["комната", "комнаты", "комнате", "комнату"],
+          "answer": "комната",
+          "why": "The owned thing stays in its own case."
+        }
+      ]
+    },
+    {
+      "id": "khotet-moch",
+      "title": "хотеть and мочь",
+      "particle": "хочу・могу",
+      "summary": "хотеть (want) mixes both conjugations; мочь (can) changes г to ж. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>хотеть</b>: хочу, хочешь, хочет, <b>хотим, хотите, хотят</b>. The singular is like the first conjugation with ч, the plural like the second with т.",
+          "examples": [
+            [
+              "Я {хочу} пить.",
+              "Ya khochu pit'.",
+              "I'm thirsty. (I want to drink.)"
+            ],
+            [
+              "Мы {хотим} в кино.",
+              "My khotim v kino.",
+              "We want to go to the cinema."
+            ]
+          ]
+        },
+        {
+          "h": "мочь and уметь",
+          "p": "<b>мочь</b>: могу, можешь, может, можем, можете, могут. It means can (be able, be allowed). <b>уметь</b> means know how to: Я умею плавать.",
+          "examples": [
+            ["Ты {можешь} помочь?", "Ty mozhesh' pomoch'?", "Can you help?"],
+            [
+              "Я не {умею} водить машину.",
+              "Ya ne umeyu vodit' mashinu.",
+              "I can't drive (don't know how)."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Они ＿ есть.",
+          "en": "They want to eat.",
+          "options": ["хотят", "хочут", "хотет", "хочет"],
+          "answer": "хотят",
+          "why": "Plural: хотят."
+        },
+        {
+          "q": "Я не ＿ прийти.",
+          "en": "I can't come.",
+          "options": ["можу", "могу", "мочу", "можем"],
+          "answer": "могу",
+          "why": "я: могу."
+        },
+        {
+          "q": "Вы ＿ чаю?",
+          "en": "Would you like some tea?",
+          "options": ["хочете", "хотете", "хотите", "хочите"],
+          "answer": "хотите",
+          "why": "вы: хотите."
+        },
+        {
+          "q": "Она ＿ говорить по-китайски.",
+          "en": "She can speak Chinese (knows how).",
+          "options": ["может быть", "могла бы", "умеют", "умеет"],
+          "answer": "умеет",
+          "why": "A skill: уметь."
+        },
+        {
+          "q": "Мы ＿ начать?",
+          "en": "Can we start?",
+          "options": ["можем", "могем", "можим", "могут"],
+          "answer": "можем",
+          "why": "мы: можем."
+        }
+      ]
+    },
+    {
+      "id": "mozhno-nelzya",
+      "title": "можно and нельзя",
+      "particle": "можно・нельзя",
+      "summary": "можно means may or it's possible; нельзя means mustn't or it's impossible. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>можно</b> + infinitive asks or gives permission: Можно войти? <b>нельзя</b> forbids: Здесь нельзя курить. The person goes in the dative: Тебе нельзя пить.",
+          "examples": [
+            ["{Можно} войти?", "Mozhno voyti?", "May I come in?"],
+            [
+              "Здесь {нельзя} курить.",
+              "Zdes' nel'zya kurit'.",
+              "You can't smoke here."
+            ]
+          ]
+        },
+        {
+          "h": "Aspect after нельзя",
+          "p": "<b>нельзя</b> + imperfective means it's not allowed; нельзя + perfective means it's impossible: Нельзя открывать (don't open it) / Нельзя открыть (it can't be opened).",
+          "examples": [
+            [
+              "Это окно {нельзя открыть}.",
+              "Eto okno nel'zya otkryt'.",
+              "This window can't be opened."
+            ],
+            ["{Мне можно} уйти?", "Mne mozhno uyti?", "May I leave?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ваш паспорт?",
+          "en": "May I see your passport?",
+          "options": ["Можно", "Нельзя", "Могу ли", "Надо"],
+          "answer": "Можно",
+          "why": "Asking permission: можно."
+        },
+        {
+          "q": "Здесь ＿ фотографировать.",
+          "en": "Photography is not allowed here.",
+          "options": ["не можно", "нельзя", "нет можно", "невозможно бы"],
+          "answer": "нельзя",
+          "why": "Prohibition: нельзя."
+        },
+        {
+          "q": "＿ нельзя сладкое.",
+          "en": "He mustn't eat sweets.",
+          "options": ["Он", "Его", "Ему", "Им"],
+          "answer": "Ему",
+          "why": "The person is in the dative."
+        },
+        {
+          "q": "Дверь сломана, её нельзя ＿.",
+          "en": "The door is broken, it can't be closed.",
+          "options": ["закрывать", "закрыла", "закрой", "закрыть"],
+          "answer": "закрыть",
+          "why": "Impossible: нельзя + perfective."
+        },
+        {
+          "q": "Можно ＿ кофе?",
+          "en": "Can I have a coffee?",
+          "options": ["мне", "я", "меня", "мной"],
+          "answer": "мне",
+          "why": "Можно мне… for asking."
+        }
+      ]
+    },
+    {
+      "id": "adverbs-languages",
+      "title": "Adverbs in -о, and по-русски",
+      "particle": "-о・по-…-ски",
+      "summary": "Adverbs usually end in -о: хорошо, быстро. Languages are по-русски, по-английски after говорить. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Many adverbs come from adjectives with <b>-о</b>: хороший → хорошо, быстрый → быстро, плохой → плохо. They also serve as \"it's…\": Здесь тепло. Интересно!",
+          "examples": [
+            [
+              "Ты {хорошо} говоришь.",
+              "Ty khorosho govorish'.",
+              "You speak well."
+            ],
+            ["Здесь {тихо}.", "Zdes' tikho.", "It's quiet here."]
+          ]
+        },
+        {
+          "h": "по-русски and на русском языке",
+          "p": "\"In Russian\" after говорить, писать, понимать is <b>по-русски</b>, по-английски, по-французски. In more formal speech: на русском языке. The noun is русский язык.",
+          "examples": [
+            [
+              "Я понимаю {по-русски}.",
+              "Ya ponimayu po-russki.",
+              "I understand Russian."
+            ],
+            [
+              "Как это {по-английски}?",
+              "Kak eto po-angliyski?",
+              "How do you say that in English?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Он говорит очень ＿.",
+          "en": "He speaks very quickly.",
+          "options": ["быстро", "быстрый", "быстрая", "быстре"],
+          "answer": "быстро",
+          "why": "Adverb: -о."
+        },
+        {
+          "q": "Ты говоришь ＿?",
+          "en": "Do you speak German?",
+          "options": ["по-немецкий", "по-немецки", "немецкий язык по", "на немецки"],
+          "answer": "по-немецки",
+          "why": "говорить по-…-ски."
+        },
+        {
+          "q": "Сегодня ＿.",
+          "en": "It's cold today.",
+          "options": ["холодный", "холодная", "холодно", "холодо"],
+          "answer": "холодно",
+          "why": "It's… = adverb."
+        },
+        {
+          "q": "Я плохо ＿ по-японски.",
+          "en": "I don't understand Japanese well.",
+          "options": ["понимал бы", "понимаешь", "понимать", "понимаю"],
+          "answer": "понимаю",
+          "why": "я: понимаю."
+        },
+        {
+          "q": "＿ знать русский язык.",
+          "en": "It's important to know Russian.",
+          "options": ["Важно", "Важный", "Важная", "Важне"],
+          "answer": "Важно",
+          "why": "It's… = adverb."
+        }
+      ]
+    },
+    {
+      "id": "etot-tot",
+      "title": "этот and тот",
+      "particle": "этот・эта・это・эти",
+      "summary": "этот (this) and тот (that) agree with the noun; don't confuse этот with the fixed это (this is). (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>этот</b> agrees: этот дом, эта книга, это окно, эти люди. <b>тот</b> (that): тот, та, то, те. Compare: <b>Это</b> мой дом (This is my house) with <b>Этот</b> дом мой (This house is mine).",
+          "examples": [
+            [
+              "{Эта} книга интересная.",
+              "Eta kniga interesnaya.",
+              "This book is interesting."
+            ],
+            [
+              "{Это} интересная книга.",
+              "Eto interesnaya kniga.",
+              "This is an interesting book."
+            ]
+          ]
+        },
+        {
+          "h": "тот, который and не тот",
+          "p": "<b>тот</b> often points back to a который clause: тот человек, который… <b>не тот</b> means the wrong one: Это не тот автобус.",
+          "examples": [
+            [
+              "{Тот} дом очень старый.",
+              "Tot dom ochen' staryy.",
+              "That house is very old."
+            ],
+            [
+              "Мы сели не на {тот} поезд.",
+              "My seli ne na tot poyezd.",
+              "We got on the wrong train."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ сумка моя.",
+          "en": "This bag is mine.",
+          "options": ["Эта", "Это", "Этот", "Эти"],
+          "answer": "Эта",
+          "why": "сумка is feminine."
+        },
+        {
+          "q": "＿ мои друзья.",
+          "en": "These are my friends.",
+          "options": ["Эти", "Это", "Этот", "Эта"],
+          "answer": "Это",
+          "why": "\"These are\" = это (fixed)."
+        },
+        {
+          "q": "＿ платье красивое.",
+          "en": "That dress is beautiful.",
+          "options": ["Тот", "Та", "То", "Те"],
+          "answer": "То",
+          "why": "платье is neuter."
+        },
+        {
+          "q": "Я хочу ＿ туфли.",
+          "en": "I want those shoes.",
+          "options": ["тот", "то", "та", "те"],
+          "answer": "те",
+          "why": "Plural: те."
+        },
+        {
+          "q": "Это не ＿ номер.",
+          "en": "That's the wrong number.",
+          "options": ["тот", "этот", "та", "те"],
+          "answer": "тот",
+          "why": "не тот = the wrong one."
+        }
+      ]
+    },
+    {
+      "id": "irregular-plurals",
+      "title": "Irregular plurals: люди, дети, города",
+      "particle": "-а plurals・люди・дети",
+      "summary": "Some masculine nouns take stressed -а in the plural; a few plurals are different words. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Some masculine nouns take <b>-а / -я</b> in the plural: дом → дома, город → города, глаз → глаза, учитель → учителя, паспорт → паспорта.",
+          "examples": [
+            ["новые {дома}", "novyye doma", "new houses"],
+            [
+              "У неё голубые {глаза}.",
+              "U neyo golubyye glaza.",
+              "She has blue eyes."
+            ]
+          ]
+        },
+        {
+          "h": "Different words and -ья",
+          "p": "Learn these: человек → <b>люди</b>, ребёнок → <b>дети</b>. Some take <b>-ья</b>: брат → братья, стул → стулья, друг → друзья. Neuter имя → имена.",
+          "examples": [
+            [
+              "Здесь много {людей}.",
+              "Zdes' mnogo lyudey.",
+              "There are a lot of people here."
+            ],
+            [
+              "Мои {друзья} из Казани.",
+              "Moi druz'ya iz Kazani.",
+              "My friends are from Kazan."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "один ребёнок, двое ＿",
+          "en": "one child, two children",
+          "options": ["детей", "ребёнков", "ребята", "детьов"],
+          "answer": "детей",
+          "why": "ребёнок → дети; after двое: детей."
+        },
+        {
+          "q": "большие ＿",
+          "en": "big cities",
+          "options": ["городы", "города", "городи", "городья"],
+          "answer": "города",
+          "why": "город → города."
+        },
+        {
+          "q": "мои ＿",
+          "en": "my brothers",
+          "options": ["браты", "брати", "братья", "брата"],
+          "answer": "братья",
+          "why": "брат → братья."
+        },
+        {
+          "q": "Эти ＿",
+          "en": "These people",
+          "options": ["человеки", "люды", "человеков", "люди"],
+          "answer": "люди",
+          "why": "человек → люди."
+        },
+        {
+          "q": "красивые ＿",
+          "en": "beautiful names",
+          "options": ["имена", "имя", "имени", "имены"],
+          "answer": "имена",
+          "why": "имя → имена."
+        }
+      ]
+    },
+    {
+      "id": "accusative-animate",
+      "title": "Animate objects: вижу брата",
+      "particle": "animate acc = gen",
+      "summary": "For masculine people and animals, the accusative looks like the genitive: вижу брата, люблю кота. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Masculine nouns that are alive take <b>-а / -я</b> as objects: Я знаю Ивана, вижу друга. Inanimate ones do not change: вижу дом. Feminine nouns take -у/-ю either way.",
+          "examples": [
+            [
+              "Я жду {брата}.",
+              "Ya zhdu brata.",
+              "I'm waiting for my brother."
+            ],
+            ["Я вижу {дом}.", "Ya vizhu dom.", "I can see the house."]
+          ]
+        },
+        {
+          "h": "Plural and pronouns",
+          "p": "All animate plurals use the genitive form as objects: вижу <b>студентов</b>, <b>девушек</b>. Pronoun objects: меня, тебя, его, её, нас, вас, их.",
+          "examples": [
+            [
+              "Мы ждём {гостей}.",
+              "My zhdyom gostey.",
+              "We're expecting guests."
+            ],
+            ["Ты {его} знаешь?", "Ty yevo znayesh'?", "Do you know him?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Я люблю ＿.",
+          "en": "I love my dad.",
+          "options": ["папу", "папа", "папы", "папе"],
+          "answer": "папу",
+          "why": "папа ends in -а: accusative -у even though male."
+        },
+        {
+          "q": "Ты видел ＿?",
+          "en": "Have you seen Oleg?",
+          "options": ["Олег", "Олега", "Олегу", "Олегом"],
+          "answer": "Олега",
+          "why": "Animate masculine: -а."
+        },
+        {
+          "q": "Я купил ＿.",
+          "en": "I bought a table.",
+          "options": ["стола", "столу", "стол", "столом"],
+          "answer": "стол",
+          "why": "Inanimate: no change."
+        },
+        {
+          "q": "Мы встретили ＿.",
+          "en": "We met our friends.",
+          "options": ["друзья", "друзьям", "друзьями", "друзей"],
+          "answer": "друзей",
+          "why": "Animate plural: like genitive."
+        },
+        {
+          "q": "Я знаю ＿.",
+          "en": "I know her.",
+          "options": ["её", "ей", "она", "ней"],
+          "answer": "её",
+          "why": "Object pronoun: её."
+        }
+      ]
+    },
+    {
+      "id": "genitive-prepositions",
+      "title": "Prepositions with the genitive: из, от, до, без, для, после",
+      "particle": "из・от・до・без・для・после",
+      "summary": "A group of common prepositions always takes the genitive. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "These always take the genitive: <b>из</b> (out of, from a place), <b>от</b> (from a person), <b>до</b> (until, as far as), <b>без</b> (without), <b>для</b> (for), <b>после</b> (after), <b>около</b> (near), <b>у</b> (at, by).",
+          "examples": [
+            ["Я {из} Москвы.", "Ya iz Moskvy.", "I'm from Moscow."],
+            [
+              "Кофе {без} сахара.",
+              "Kofe bez sakhara.",
+              "Coffee without sugar."
+            ],
+            [
+              "Это подарок {для} мамы.",
+              "Eto podarok dlya mamy.",
+              "This is a present for Mum."
+            ]
+          ]
+        },
+        {
+          "h": "из or с, от",
+          "p": "Use <b>из</b> for places you'd go в (из школы) and <b>с</b> + genitive for places you'd go на (с работы). For people use <b>от</b>: письмо от друга.",
+          "examples": [
+            [
+              "Он пришёл {с} работы.",
+              "On prishyol s raboty.",
+              "He came home from work."
+            ],
+            [
+              "Я получил письмо {от} сестры.",
+              "Ya poluchil pis'mo ot sestry.",
+              "I got a letter from my sister."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Я работаю ＿ пяти.",
+          "en": "I work until five.",
+          "options": ["до", "после", "для", "от"],
+          "answer": "до",
+          "why": "until: до + genitive."
+        },
+        {
+          "q": "чай ＿ лимона",
+          "en": "tea without lemon",
+          "options": ["из", "без", "для", "с"],
+          "answer": "без",
+          "why": "without: без."
+        },
+        {
+          "q": "＿ урока мы пошли в кафе.",
+          "en": "After the lesson we went to a café.",
+          "options": ["Около", "Для", "После", "Из"],
+          "answer": "После",
+          "why": "after: после."
+        },
+        {
+          "q": "Она вернулась ＿ магазина.",
+          "en": "She came back from the shop.",
+          "options": ["от", "с", "у", "из"],
+          "answer": "из",
+          "why": "в магазин → из магазина."
+        },
+        {
+          "q": "Это открытка ＿ бабушки.",
+          "en": "It's a card from Grandma.",
+          "options": ["от", "из", "с", "у"],
+          "answer": "от",
+          "why": "From a person: от."
+        }
+      ]
+    },
+    {
+      "id": "multidirectional",
+      "title": "идти or ходить: one trip or many",
+      "particle": "идти/ходить・ехать/ездить",
+      "summary": "идти and ехать are one trip in one direction; ходить and ездить are round trips, habits and general movement. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Unidirectional <b>идти / ехать</b>: one trip, now or at a specific moment: Я иду в магазин. Multidirectional <b>ходить / ездить</b>: habits, round trips and moving around: Я хожу в спортзал каждый день.",
+          "examples": [
+            [
+              "Сейчас я {иду} домой.",
+              "Seychas ya idu domoy.",
+              "I'm on my way home now."
+            ],
+            [
+              "Я часто {хожу} в театр.",
+              "Ya chasto khozhu v teatr.",
+              "I often go to the theatre."
+            ]
+          ]
+        },
+        {
+          "h": "Round trips in the past",
+          "p": "A past round trip uses <b>ходил / ездил</b>: Вчера я ходил в кино (I went and came back). The same applies to нести/носить, бежать/бегать, лететь/летать.",
+          "examples": [
+            [
+              "Летом мы {ездили} в Сочи.",
+              "Letom my yezdili v Sochi.",
+              "In summer we went to Sochi."
+            ],
+            [
+              "Птицы {летают} над рекой.",
+              "Ptitsy letayut nad rekoy.",
+              "Birds are flying around over the river."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Каждое утро я ＿ в парк.",
+          "en": "Every morning I go to the park.",
+          "options": ["хожу", "иду", "шёл", "пойду"],
+          "answer": "хожу",
+          "why": "A habit: ходить."
+        },
+        {
+          "q": "Смотри, он ＿ к нам!",
+          "en": "Look, he's coming towards us!",
+          "options": ["ходит", "идёт", "ходил", "ездит"],
+          "answer": "идёт",
+          "why": "One direction, now: идти."
+        },
+        {
+          "q": "В прошлом году мы ＿ в Италию.",
+          "en": "Last year we went to Italy (and came back).",
+          "options": ["ехали", "едем", "ездили", "ездим"],
+          "answer": "ездили",
+          "why": "A past round trip: ездить."
+        },
+        {
+          "q": "Куда ты ＿?",
+          "en": "Where are you going (now)?",
+          "options": ["ходишь", "ходил", "ходи", "идёшь"],
+          "answer": "идёшь",
+          "why": "One trip now: идти."
+        },
+        {
+          "q": "Дети любят ＿.",
+          "en": "Children love running about.",
+          "options": ["бегать", "бежать", "бегут", "бегал"],
+          "answer": "бегать",
+          "why": "General movement: multidirectional."
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "title": "Getting around: на автобусе, пешком",
+      "particle": "на + prepositional・пешком",
+      "summary": "By a vehicle is на + prepositional; on foot is пешком; walking uses идти, riding uses ехать. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "\"By bus/train/car\" is <b>на</b> + prepositional: на автобусе, на поезде, на машине, на метро. \"On foot\" is <b>пешком</b>.",
+          "examples": [
+            [
+              "Я езжу на работу {на метро}.",
+              "Ya yezzhu na rabotu na metro.",
+              "I go to work by metro."
+            ],
+            ["Мы пошли {пешком}.", "My poshli peshkom.", "We went on foot."]
+          ]
+        },
+        {
+          "h": "идти or ехать",
+          "p": "Russian always shows how: <b>идти</b> on foot, <b>ехать</b> by vehicle, <b>лететь</b> by plane. \"I'm going to Kazan\" by train is Я еду в Казань.",
+          "examples": [
+            [
+              "Завтра я {лечу} в Москву.",
+              "Zavtra ya lechu v Moskvu.",
+              "Tomorrow I'm flying to Moscow."
+            ],
+            [
+              "Она {едет} на такси.",
+              "Ona yedet na taksi.",
+              "She's going by taxi."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Он ездит в школу ＿.",
+          "en": "He goes to school by bus.",
+          "options": ["на автобусе", "автобусом на", "в автобус", "на автобус"],
+          "answer": "на автобусе",
+          "why": "на + prepositional."
+        },
+        {
+          "q": "Мы ＿ в Петербург на поезде.",
+          "en": "We're going to St Petersburg by train.",
+          "options": ["идём", "едем", "летим", "ходим"],
+          "answer": "едем",
+          "why": "By vehicle: ехать."
+        },
+        {
+          "q": "Я хожу на работу ＿.",
+          "en": "I walk to work.",
+          "options": ["на ногах", "ногой", "пешком", "пешка"],
+          "answer": "пешком",
+          "why": "On foot: пешком."
+        },
+        {
+          "q": "Они ＿ в Японию.",
+          "en": "They're flying to Japan.",
+          "options": ["едут", "идут", "плавают", "летят"],
+          "answer": "летят",
+          "why": "By plane: лететь."
+        },
+        {
+          "q": "на ＿",
+          "en": "by car",
+          "options": ["машине", "машина", "машину", "машиной"],
+          "answer": "машине",
+          "why": "на + prepositional."
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "title": "Weather and the impersonal sentence",
+      "particle": "холодно・идёт дождь",
+      "summary": "Weather uses adverbs with no subject (холодно) and the verb идти for rain and snow. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Temperature and conditions are adverbs with no subject: <b>Холодно</b>. Жарко. Тепло. In the past and future, use было / будет: Вчера было холодно. Завтра будет тепло.",
+          "examples": [
+            ["Сегодня {жарко}.", "Segodnya zharko.", "It's hot today."],
+            [
+              "Вчера {было} ветрено.",
+              "Vchera bylo vetreno.",
+              "It was windy yesterday."
+            ]
+          ]
+        },
+        {
+          "h": "Rain and snow",
+          "p": "Rain and snow \"go\": <b>идёт дождь</b>, <b>идёт снег</b>. Past: шёл дождь, шёл снег.",
+          "examples": [
+            [
+              "На улице {идёт} дождь.",
+              "Na ulitse idyot dozhd'.",
+              "It's raining outside."
+            ],
+            [
+              "Ночью {шёл} снег.",
+              "Noch'yu shyol sneg.",
+              "It snowed in the night."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Завтра ＿ тепло.",
+          "en": "It will be warm tomorrow.",
+          "options": ["будет", "было", "есть", "будут"],
+          "answer": "будет",
+          "why": "Future impersonal: будет."
+        },
+        {
+          "q": "Сейчас ＿ снег.",
+          "en": "It's snowing now.",
+          "options": ["падает дождь", "идёт", "ходит", "едет"],
+          "answer": "идёт",
+          "why": "Snow \"goes\": идёт."
+        },
+        {
+          "q": "Вчера ＿ холодно.",
+          "en": "It was cold yesterday.",
+          "options": ["был", "была", "было", "были"],
+          "answer": "было",
+          "why": "Past impersonal: было."
+        },
+        {
+          "q": "Вчера ＿ дождь.",
+          "en": "It rained yesterday.",
+          "options": ["шла", "шло", "идёт", "шёл"],
+          "answer": "шёл",
+          "why": "дождь is masculine: шёл."
+        },
+        {
+          "q": "Мне ＿.",
+          "en": "I'm hot.",
+          "options": ["жарко", "жаркий", "жара", "жаркая"],
+          "answer": "жарко",
+          "why": "Dative + adverb."
+        }
+      ]
+    },
+    {
+      "id": "conjunctions",
+      "title": "что, потому что, поэтому",
+      "particle": "что・потому что・поэтому・но・а",
+      "summary": "что introduces what someone says or thinks; потому что gives a reason, поэтому a result. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>что</b> (that) can't be dropped as in English: Я знаю, <b>что</b> он здесь. A comma always comes before it. <b>потому что</b> = because; <b>поэтому</b> = so, that's why.",
+          "examples": [
+            [
+              "Он сказал, {что} придёт.",
+              "On skazal, chto pridyot.",
+              "He said (that) he'd come."
+            ],
+            [
+              "Я дома, {потому что} болею.",
+              "Ya doma, potomu chto boleyu.",
+              "I'm at home because I'm ill."
+            ],
+            [
+              "Я болею, {поэтому} я дома.",
+              "Ya boleyu, poetomu ya doma.",
+              "I'm ill, so I'm at home."
+            ]
+          ]
+        },
+        {
+          "h": "и, а, но",
+          "p": "<b>и</b> joins similar things. <b>а</b> contrasts two things: Я врач, а он учитель. <b>но</b> means but, against expectation: Он устал, но работает.",
+          "examples": [
+            [
+              "Я люблю чай, {а} она кофе.",
+              "Ya lyublyu chay, a ona kofe.",
+              "I like tea, and she likes coffee."
+            ],
+            [
+              "Было поздно, {но} мы не спали.",
+              "Bylo pozdno, no my ne spali.",
+              "It was late, but we weren't asleep."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Я думаю, ＿ это правда.",
+          "en": "I think that it's true.",
+          "options": ["что", "чтобы", "потому", "как"],
+          "answer": "что",
+          "why": "Reported thought: что."
+        },
+        {
+          "q": "Шёл дождь, ＿ мы остались дома.",
+          "en": "It was raining, so we stayed at home.",
+          "options": ["потому что", "поэтому", "почему", "что"],
+          "answer": "поэтому",
+          "why": "A result: поэтому."
+        },
+        {
+          "q": "Я не пришёл, ＿ был занят.",
+          "en": "I didn't come because I was busy.",
+          "options": ["поэтому", "почему", "потому что", "что бы"],
+          "answer": "потому что",
+          "why": "A reason: потому что."
+        },
+        {
+          "q": "Он живёт в Москве, ＿ его брат в Киеве.",
+          "en": "He lives in Moscow, and his brother in Kyiv.",
+          "options": ["и", "но", "или", "а"],
+          "answer": "а",
+          "why": "A contrast between two people: а."
+        },
+        {
+          "q": "Дорого, ＿ я куплю.",
+          "en": "It's expensive, but I'll buy it.",
+          "options": ["но", "а", "и", "или"],
+          "answer": "но",
+          "why": "Against expectation: но."
+        }
+      ]
+    },
+    {
+      "id": "pronoun-cases",
+      "title": "Personal pronouns in all cases",
+      "particle": "я・меня・мне・мной",
+      "summary": "Each pronoun has six forms; after a preposition, он, она, оно and они add н-. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "я: меня, мне, мной. ты: тебя, тебе, тобой. он: <b>его, ему, им, нём</b>. она: <b>её, ей, ей, ней</b>. мы: нас, нам, нами. они: <b>их, им, ими, них</b>.",
+          "examples": [
+            ["Позвони {мне}.", "Pozvoni mne.", "Call me."],
+            ["Я пойду {с тобой}.", "Ya poydu s toboy.", "I'll go with you."]
+          ]
+        },
+        {
+          "h": "The н- after prepositions",
+          "p": "After any preposition, third-person forms take н-: <b>у него</b>, к ней, с ними, о нём. The possessive его (his) never takes н-: у его брата.",
+          "examples": [
+            ["{У неё} есть кот.", "U neyo yest' kot.", "She has a cat."],
+            [
+              "Мы говорили {с ними}.",
+              "My govorili s nimi.",
+              "We talked to them."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Это подарок для ＿.",
+          "en": "This is a present for him.",
+          "options": ["него", "его", "нему", "ним"],
+          "answer": "него",
+          "why": "After a preposition: н-."
+        },
+        {
+          "q": "Я дам ＿ ключ.",
+          "en": "I'll give her the key.",
+          "options": ["её", "ей", "ней", "ею"],
+          "answer": "ей",
+          "why": "Dative without preposition: ей."
+        },
+        {
+          "q": "Он пошёл к ＿.",
+          "en": "He went to see them.",
+          "options": ["им", "них", "ним", "ими"],
+          "answer": "ним",
+          "why": "к + dative after a preposition: ним."
+        },
+        {
+          "q": "Ты пойдёшь со ＿?",
+          "en": "Will you come with me?",
+          "options": ["меня", "мне", "мой", "мной"],
+          "answer": "мной",
+          "why": "с + instrumental: мной."
+        },
+        {
+          "q": "Я видел ＿ вчера.",
+          "en": "I saw you yesterday. (вы)",
+          "options": ["вас", "вам", "вами", "ваш"],
+          "answer": "вас",
+          "why": "Accusative: вас."
+        }
+      ]
+    },
+    {
+      "id": "ves",
+      "title": "весь, вся, всё, все",
+      "particle": "весь・вся・всё・все",
+      "summary": "весь means all or the whole and agrees with the noun; всё alone means everything, все alone means everyone. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>весь</b> день (the whole day), <b>вся</b> неделя, <b>всё</b> время, <b>все</b> люди. On its own, <b>всё</b> means everything and <b>все</b> means everybody.",
+          "examples": [
+            [
+              "Я работал {весь} день.",
+              "Ya rabotal ves' den'.",
+              "I worked all day."
+            ],
+            ["{Все} знают.", "Vse znayut.", "Everybody knows."],
+            ["{Всё} хорошо.", "Vsyo khorosho.", "Everything's fine."]
+          ]
+        },
+        {
+          "h": "Other cases",
+          "p": "весь declines: <b>всего</b>, всему, всем; <b>всю</b> неделю (accusative). Common phrases: прежде всего (above all), спасибо за всё, всего хорошего (all the best).",
+          "examples": [
+            [
+              "Спасибо {за всё}!",
+              "Spasibo za vsyo!",
+              "Thanks for everything!"
+            ],
+            [
+              "Я ждал {всю} ночь.",
+              "Ya zhdal vsyu noch'.",
+              "I waited all night."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ семья дома.",
+          "en": "The whole family is at home.",
+          "options": ["Вся", "Весь", "Всё", "Все"],
+          "answer": "Вся",
+          "why": "семья is feminine."
+        },
+        {
+          "q": "Я понял ＿.",
+          "en": "I understood everything.",
+          "options": ["все", "всё", "весь", "всех"],
+          "answer": "всё",
+          "why": "Everything: всё."
+        },
+        {
+          "q": "＿ пришли.",
+          "en": "Everyone came.",
+          "options": ["Всё", "Весь", "Все", "Вся"],
+          "answer": "Все",
+          "why": "Everyone: все (plural)."
+        },
+        {
+          "q": "Он спал ＿ утро.",
+          "en": "He slept all morning.",
+          "options": ["весь", "вся", "все", "всё"],
+          "answer": "всё",
+          "why": "утро is neuter."
+        },
+        {
+          "q": "Я читал ＿ неделю.",
+          "en": "I read all week.",
+          "options": ["всю", "вся", "всей", "весь"],
+          "answer": "всю",
+          "why": "Duration, feminine accusative: всю."
+        }
+      ]
+    },
+    {
+      "id": "svoy",
+      "title": "свой: one's own",
+      "particle": "свой・своя・своё・свои",
+      "summary": "свой refers back to the subject of the clause; it often replaces мой, твой, наш, and must replace его, её, их when they mean the subject's own. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>свой</b> means the subject's own. With я, ты, мы, вы it is optional: Я люблю мою/<b>свою</b> работу. With он, она, они it changes the meaning: Он любит <b>свою</b> жену (his own) vs Он любит <b>его</b> жену (another man's).",
+          "examples": [
+            [
+              "Она взяла {свою} сумку.",
+              "Ona vzyala svoyu sumku.",
+              "She took her (own) bag."
+            ],
+            [
+              "Он позвонил {своему} брату.",
+              "On pozvonil svoyemu bratu.",
+              "He called his (own) brother."
+            ]
+          ]
+        },
+        {
+          "h": "Not in the subject",
+          "p": "свой can't describe the subject itself: <b>Его</b> брат живёт здесь, not Свой брат. It declines like мой.",
+          "examples": [
+            [
+              "{Его} сестра живёт в Минске.",
+              "Yevo sestra zhivyot v Minske.",
+              "His sister lives in Minsk."
+            ],
+            [
+              "Каждый делает {своё} дело.",
+              "Kazhdyy delayet svoyo delo.",
+              "Everyone does their own job."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Анна читает ＿ книгу.",
+          "en": "Anna is reading her (own) book.",
+          "options": ["свою", "её", "своя", "свой"],
+          "answer": "свою",
+          "why": "Refers to the subject: свою."
+        },
+        {
+          "q": "＿ дом очень большой.",
+          "en": "His house is very big.",
+          "options": ["Свой", "Его", "Своё", "Своего"],
+          "answer": "Его",
+          "why": "свой can't be the subject."
+        },
+        {
+          "q": "Они продали ＿ машину.",
+          "en": "They sold their (own) car.",
+          "options": ["их", "своей", "свою", "свои"],
+          "answer": "свою",
+          "why": "Refers to они: свою."
+        },
+        {
+          "q": "Он говорил о ＿ работе.",
+          "en": "He talked about his (own) work.",
+          "options": ["свою", "своя", "своём", "своей"],
+          "answer": "своей",
+          "why": "о + prepositional, feminine."
+        },
+        {
+          "q": "Мама позвонила ＿ подруге.",
+          "en": "Mum called her (own) friend.",
+          "options": ["своей", "своя", "свою", "её"],
+          "answer": "своей",
+          "why": "позвонить + dative."
+        }
+      ]
+    },
+    {
+      "id": "sebya",
+      "title": "себя: oneself",
+      "particle": "себя・себе・собой",
+      "summary": "себя means myself, yourself, himself and so on, refers to the subject, and has no nominative. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>себя</b> (acc/gen), <b>себе</b> (dat/prep), <b>собой</b> (instr). It refers back to the subject, whoever that is: Я купил <b>себе</b> книгу. Она думает только <b>о себе</b>.",
+          "examples": [
+            [
+              "Я купил {себе} новый телефон.",
+              "Ya kupil sebe novyy telefon.",
+              "I bought myself a new phone."
+            ],
+            [
+              "Возьми зонт {с собой}.",
+              "Voz'mi zont s soboy.",
+              "Take an umbrella with you."
+            ]
+          ]
+        },
+        {
+          "h": "Common phrases",
+          "p": "<b>Как вы себя чувствуете?</b> (How do you feel?), <b>у себя</b> (at one's place), <b>вести себя</b> (behave), <b>представлять себе</b> (imagine).",
+          "examples": [
+            [
+              "Как ты {себя} чувствуешь?",
+              "Kak ty sebya chuvstvuyesh'?",
+              "How are you feeling?"
+            ],
+            [
+              "Веди {себя} хорошо!",
+              "Vedi sebya khorosho!",
+              "Behave yourself!"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Он смотрит на ＿ в зеркало.",
+          "en": "He's looking at himself in the mirror.",
+          "options": ["себя", "себе", "собой", "его"],
+          "answer": "себя",
+          "why": "на + accusative: себя."
+        },
+        {
+          "q": "Она купила ＿ платье.",
+          "en": "She bought herself a dress.",
+          "options": ["себя", "себе", "собой", "её"],
+          "answer": "себе",
+          "why": "Dative: себе."
+        },
+        {
+          "q": "Возьми паспорт ＿.",
+          "en": "Take your passport with you.",
+          "options": ["с себя", "с себе", "с собой", "собой с"],
+          "answer": "с собой",
+          "why": "с + instrumental: с собой."
+        },
+        {
+          "q": "Я плохо ＿ чувствую.",
+          "en": "I feel ill.",
+          "options": ["себе", "собой", "сам", "себя"],
+          "answer": "себя",
+          "why": "чувствовать себя."
+        },
+        {
+          "q": "Расскажите о ＿.",
+          "en": "Tell us about yourself.",
+          "options": ["себе", "себя", "собой", "вас"],
+          "answer": "себе",
+          "why": "о + prepositional: себе."
+        }
+      ]
+    },
+    {
+      "id": "time-prepositions",
+      "title": "через, назад, за, на: time words",
+      "particle": "через・назад・за・на",
+      "summary": "через = in (after) a time; назад = ago; за = within; на = for a planned period. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>через</b> + accusative: in, after: через час. <b>назад</b> after the time: два года назад (ago). <b>за</b> + accusative: within, how long something took: Я прочитал книгу <b>за</b> день.",
+          "examples": [
+            [
+              "Поезд уходит {через} десять минут.",
+              "Poyezd ukhodit cherez desyat' minut.",
+              "The train leaves in ten minutes."
+            ],
+            [
+              "Я был там год {назад}.",
+              "Ya byl tam god nazad.",
+              "I was there a year ago."
+            ],
+            [
+              "Он сделал всё {за} час.",
+              "On sdelal vsyo za chas.",
+              "He did it all in an hour."
+            ]
+          ]
+        },
+        {
+          "h": "на + time, and plain accusative",
+          "p": "<b>на</b> + accusative is the planned length after a movement or arrangement: Я приехал <b>на</b> неделю. Plain accusative is how long something went on: Я жил там неделю.",
+          "examples": [
+            [
+              "Мы едем в Сочи {на} две недели.",
+              "My yedem v Sochi na dve nedeli.",
+              "We're going to Sochi for two weeks."
+            ],
+            ["Я ждал {час}.", "Ya zhdal chas.", "I waited for an hour."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Он вернётся ＿ два дня.",
+          "en": "He'll be back in two days.",
+          "options": ["через", "за", "на", "назад"],
+          "answer": "через",
+          "why": "After a time: через."
+        },
+        {
+          "q": "Я видел его неделю ＿.",
+          "en": "I saw him a week ago.",
+          "options": ["через", "назад", "за", "до"],
+          "answer": "назад",
+          "why": "ago: назад."
+        },
+        {
+          "q": "Она написала статью ＿ три дня.",
+          "en": "She wrote the article in three days.",
+          "options": ["через", "на", "за", "в"],
+          "answer": "за",
+          "why": "How long it took: за."
+        },
+        {
+          "q": "Можно взять книгу ＿ неделю?",
+          "en": "Can I borrow the book for a week?",
+          "options": ["за", "через", "в", "на"],
+          "answer": "на",
+          "why": "A planned period: на."
+        },
+        {
+          "q": "Мы гуляли ＿.",
+          "en": "We walked for two hours.",
+          "options": ["два часа", "на два часа", "за два часа", "через два часа"],
+          "answer": "два часа",
+          "why": "How long it lasted: plain accusative."
+        }
+      ]
+    },
+    {
+      "id": "dative-po",
+      "title": "по + dative",
+      "particle": "по・по улице・по телефону",
+      "summary": "по + dative means along, around, by (phone, post), on (a subject) and on days. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>по</b> + dative covers movement along or around a surface (<b>по улице</b>, по городу), means of communication (<b>по телефону</b>, по почте) and subjects (экзамен <b>по истории</b>).",
+          "examples": [
+            [
+              "Мы гуляли {по городу}.",
+              "My gulyali po gorodu.",
+              "We walked around the city."
+            ],
+            [
+              "Я говорил с ним {по телефону}.",
+              "Ya govoril s nim po telefonu.",
+              "I spoke to him on the phone."
+            ]
+          ]
+        },
+        {
+          "h": "Repeated days and missing",
+          "p": "<b>по</b> + plural dative means on every: по субботам (on Saturdays). <b>скучать по</b> means to miss: Я скучаю по тебе.",
+          "examples": [
+            [
+              "{По субботам} мы ходим в бассейн.",
+              "Po subbotam my khodim v basseyn.",
+              "On Saturdays we go to the pool."
+            ],
+            ["Я {скучаю по} дому.", "Ya skuchayu po domu.", "I miss home."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Он ходит ＿ комнате.",
+          "en": "He's pacing around the room.",
+          "options": ["по", "в", "на", "к"],
+          "answer": "по",
+          "why": "Moving around: по."
+        },
+        {
+          "q": "Отправь это ＿ почте.",
+          "en": "Send it by post.",
+          "options": ["на", "по", "с", "в"],
+          "answer": "по",
+          "why": "Means of communication: по."
+        },
+        {
+          "q": "учебник ＿ математике",
+          "en": "a maths textbook",
+          "options": ["о", "для", "по", "на"],
+          "answer": "по",
+          "why": "Subject: по + dative."
+        },
+        {
+          "q": "＿ понедельникам я работаю дома.",
+          "en": "On Mondays I work from home.",
+          "options": ["В", "На", "К", "По"],
+          "answer": "По",
+          "why": "Every Monday: по + plural dative."
+        },
+        {
+          "q": "Я скучаю по ＿.",
+          "en": "I miss my mum.",
+          "options": ["маме", "маму", "мамой", "мамы"],
+          "answer": "маме",
+          "why": "по + dative."
+        }
+      ]
+    },
+    {
+      "id": "years-dates",
+      "title": "Years and centuries: в 2020 году",
+      "particle": "в … году・в … веке",
+      "summary": "In a year is в + ordinal in the prepositional + году; a full date puts the year in the genitive. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "\"In 2020\" is <b>в две тысячи двадцатом году</b> (в 2020 году). Only the last number is an ordinal. Centuries: <b>в двадцатом веке</b> (в XX веке).",
+          "examples": [
+            [
+              "Я родился {в 1995 году}.",
+              "Ya rodilsya v tysyacha devyat'sot devyanosto pyatom godu.",
+              "I was born in 1995."
+            ],
+            [
+              "{В девятнадцатом веке}",
+              "V devyatnadtsatom veke",
+              "In the nineteenth century"
+            ]
+          ]
+        },
+        {
+          "h": "A full date",
+          "p": "With a day and month, the year goes in the genitive: <b>пятого мая 2020 года</b>. In which year? is <b>В каком году?</b>",
+          "examples": [
+            [
+              "Это было {третьего июня 2010 года}.",
+              "Eto bylo tret'yego iyunya dve tysyachi desyatogo goda.",
+              "It was on the 3rd of June 2010."
+            ],
+            [
+              "{В каком году} ты окончил школу?",
+              "V kakom godu ty okonchil shkolu?",
+              "What year did you finish school?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "в 2001 ＿",
+          "en": "in 2001",
+          "options": ["году", "годе", "год", "года"],
+          "answer": "году",
+          "why": "Fixed form: в … году."
+        },
+        {
+          "q": "пятого марта 1990 ＿",
+          "en": "5 March 1990",
+          "options": ["году", "года", "год", "годом"],
+          "answer": "года",
+          "why": "Full date: genitive года."
+        },
+        {
+          "q": "в ＿ веке",
+          "en": "in the 21st century",
+          "options": [
+            "двадцать один",
+            "двадцать первый",
+            "двадцать первом",
+            "двадцати одном"
+          ],
+          "answer": "двадцать первом",
+          "why": "в + prepositional ordinal."
+        },
+        {
+          "q": "В ＿ году ты родилась?",
+          "en": "What year were you born?",
+          "options": ["какой", "какого", "какому", "каком"],
+          "answer": "каком",
+          "why": "в каком году."
+        },
+        {
+          "q": "в 1812 году = в тысяча восемьсот ＿ году",
+          "en": "",
+          "options": ["двенадцатом", "двенадцать", "двенадцатый", "двенадцати"],
+          "answer": "двенадцатом",
+          "why": "Only the last word is ordinal, in the prepositional."
+        }
+      ]
+    },
+    {
+      "id": "kogda-esli-future",
+      "title": "когда and если with the future",
+      "particle": "когда + future",
+      "summary": "Russian uses the future after когда and если when the time is future; English uses the present. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Unlike English, Russian keeps the future tense in time and condition clauses: <b>Когда я приеду</b>, я позвоню (When I arrive, I'll call). <b>Если будет</b> время, зайду.",
+          "examples": [
+            [
+              "{Когда} я {закончу}, я тебе напишу.",
+              "Kogda ya zakonchu, ya tebe napishu.",
+              "When I finish, I'll write to you."
+            ],
+            [
+              "{Если} ты {придёшь}, будет весело.",
+              "Yesli ty pridyosh', budet veselo.",
+              "If you come, it'll be fun."
+            ]
+          ]
+        },
+        {
+          "h": "пока не",
+          "p": "<b>пока</b> means while; <b>пока не</b> + perfective means until: Жди здесь, пока я не вернусь.",
+          "examples": [
+            [
+              "Подожди, {пока} я не {вернусь}.",
+              "Podozhdi, poka ya ne vernus'.",
+              "Wait until I'm back."
+            ],
+            [
+              "{Пока} ты спал, я готовил.",
+              "Poka ty spal, ya gotovil.",
+              "While you were asleep, I was cooking."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Когда я ＿ домой, я позвоню.",
+          "en": "When I get home, I'll call.",
+          "options": ["приду", "прихожу", "пришёл", "приходил"],
+          "answer": "приду",
+          "why": "Future time: future tense."
+        },
+        {
+          "q": "Если завтра ＿ хорошая погода, поедем на дачу.",
+          "en": "If the weather's good tomorrow, we'll go to the dacha.",
+          "options": ["есть", "будет", "была", "бывает"],
+          "answer": "будет",
+          "why": "Future condition: будет."
+        },
+        {
+          "q": "Сиди тут, пока я не ＿.",
+          "en": "Sit here until I call you.",
+          "options": ["зову", "позвал", "позову", "звал"],
+          "answer": "позову",
+          "why": "пока не + perfective future."
+        },
+        {
+          "q": "＿ ты читал, я смотрел телевизор.",
+          "en": "While you were reading, I watched TV.",
+          "options": ["Пока не", "Если", "Чтобы", "Пока"],
+          "answer": "Пока",
+          "why": "while: пока."
+        },
+        {
+          "q": "Как только он ＿, начнём.",
+          "en": "As soon as he comes, we'll start.",
+          "options": ["придёт", "приходит", "пришёл", "придёт ли"],
+          "answer": "придёт",
+          "why": "Future after как только."
+        }
+      ]
+    },
+    {
+      "id": "li",
+      "title": "ли: whether",
+      "particle": "ли",
+      "summary": "ли turns a yes/no question into an indirect one: Не знаю, придёт ли он. It goes after the word in question. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "English \"whether\" or \"if\" in reported questions is <b>ли</b>, placed after the word being asked about, which moves to the front: Я не знаю, <b>придёт ли</b> он. Don't use если here.",
+          "examples": [
+            [
+              "Спроси, {есть ли} у них хлеб.",
+              "Sprosi, yest' li u nikh khleb.",
+              "Ask whether they have bread."
+            ],
+            [
+              "Я не знаю, {дома ли} он.",
+              "Ya ne znayu, doma li on.",
+              "I don't know if he's at home."
+            ]
+          ]
+        },
+        {
+          "h": "ли in direct questions",
+          "p": "ли in a direct question sounds formal or bookish: <b>Знаете ли вы</b>…? (Do you know…?). <b>Не</b> … <b>ли</b> makes a polite suggestion: Не хотите ли чаю?",
+          "examples": [
+            [
+              "{Знаете ли} вы, где вокзал?",
+              "Znayete li vy, gde vokzal?",
+              "Do you know where the station is?"
+            ],
+            [
+              "{Не} хотите {ли} чаю?",
+              "Ne khotite li chayu?",
+              "Would you like some tea?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Я не знаю, придёт ＿ он.",
+          "en": "I don't know whether he'll come.",
+          "options": ["ли", "если", "бы", "что"],
+          "answer": "ли",
+          "why": "whether: ли."
+        },
+        {
+          "q": "Спроси его, ＿ ли он завтра.",
+          "en": "Ask him whether he's free tomorrow.",
+          "options": ["свободно", "свободен", "если свободен", "свобода"],
+          "answer": "свободен",
+          "why": "The word asked about goes first, then ли."
+        },
+        {
+          "q": "Не знаю, ＿ это.",
+          "en": "I don't know if it's true.",
+          "options": ["ли правда", "если правда", "правда ли", "правда бы"],
+          "answer": "правда ли",
+          "why": "Word + ли."
+        },
+        {
+          "q": "Interested in whether it's possible",
+          "en": "",
+          "options": [
+            "Интересно, если можно.",
+            "Интересно, ли можно.",
+            "Интересно, можно бы.",
+            "Интересно, можно ли."
+          ],
+          "answer": "Интересно, можно ли.",
+          "why": "ли after можно."
+        },
+        {
+          "q": "＿ ли вы по-английски?",
+          "en": "Do you speak English? (formal)",
+          "options": ["Говорите", "Говорите бы", "Говорить", "Говорили бы"],
+          "answer": "Говорите",
+          "why": "Verb + ли in a formal question."
+        }
+      ]
+    },
+    {
+      "id": "nikto-nichego",
+      "title": "никто, ничего: double negation",
+      "particle": "ни- + не",
+      "summary": "ни- words always need не with the verb: Я никого не знаю. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Russian requires double negation. <b>никто</b> (nobody), <b>ничего</b> (nothing), <b>никогда</b> (never), <b>нигде</b> (nowhere), <b>никуда</b> (to nowhere) all need <b>не</b> before the verb.",
+          "examples": [
+            ["{Никто не} знает.", "Nikto ne znayet.", "Nobody knows."],
+            [
+              "Я {ничего не} вижу.",
+              "Ya nichego ne vizhu.",
+              "I can't see anything."
+            ],
+            [
+              "Он {никогда не} опаздывает.",
+              "On nikogda ne opazdyvayet.",
+              "He's never late."
+            ]
+          ]
+        },
+        {
+          "h": "With prepositions",
+          "p": "A preposition splits the ни- word: <b>ни с кем</b> (with nobody), <b>ни о чём</b> (about nothing). ни...ни means neither...nor: ни чай, ни кофе.",
+          "examples": [
+            [
+              "Я {ни с кем не} говорил.",
+              "Ya ni s kem ne govoril.",
+              "I didn't speak to anyone."
+            ],
+            [
+              "Он не пьёт {ни} чай, {ни} кофе.",
+              "On ne p'yot ni chay, ni kofe.",
+              "He drinks neither tea nor coffee."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Я ＿ не видел.",
+          "en": "I didn't see anybody.",
+          "options": ["никого", "никто", "ничто", "нигде"],
+          "answer": "никого",
+          "why": "Object: никого."
+        },
+        {
+          "q": "Она ＿ не была в Японии.",
+          "en": "She has never been to Japan.",
+          "options": ["никуда", "никогда", "нигде", "ничего"],
+          "answer": "никогда",
+          "why": "never: никогда."
+        },
+        {
+          "q": "Мы ＿ не идём.",
+          "en": "We aren't going anywhere.",
+          "options": ["нигде", "никогда", "никуда", "никак"],
+          "answer": "никуда",
+          "why": "Direction: никуда."
+        },
+        {
+          "q": "Я ＿ не боюсь.",
+          "en": "I'm not afraid of anything.",
+          "options": ["ничто", "никто", "ни что", "ничего"],
+          "answer": "ничего",
+          "why": "бояться + genitive: ничего."
+        },
+        {
+          "q": "Он ни ＿ не говорил.",
+          "en": "He didn't talk about anything.",
+          "options": ["о чём", "о чем-то", "что", "чего"],
+          "answer": "о чём",
+          "why": "Preposition splits it: ни о чём."
+        }
+      ]
+    },
+    {
+      "id": "to-nibud",
+      "title": "-то and -нибудь: someone, anyone",
+      "particle": "кто-то・кто-нибудь",
+      "summary": "-то means a definite someone the speaker doesn't know; -нибудь means anyone at all, in questions, requests and the future. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>кто-то, что-то, где-то</b>: something real but unidentified: Кто-то звонил. <b>кто-нибудь, что-нибудь, где-нибудь</b>: any, not yet real: Кто-нибудь звонил? Купи что-нибудь.",
+          "examples": [
+            ["{Кто-то} стучит.", "Kto-to stuchit.", "Someone is knocking."],
+            [
+              "{Кто-нибудь} знает ответ?",
+              "Kto-nibud' znayet otvet?",
+              "Does anyone know the answer?"
+            ]
+          ]
+        },
+        {
+          "h": "In the past and with imperatives",
+          "p": "Statements about the past usually take -то: Он что-то сказал. Requests and questions usually take -нибудь: Скажи что-нибудь.",
+          "examples": [
+            [
+              "Он {что-то} сказал, но я не слышал.",
+              "On chto-to skazal, no ya ne slyshal.",
+              "He said something, but I didn't hear."
+            ],
+            [
+              "Давай поедем {куда-нибудь}!",
+              "Davay poyedem kuda-nibud'!",
+              "Let's go somewhere!"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ оставил тебе записку.",
+          "en": "Someone left you a note.",
+          "options": ["Кто-то", "Кто-нибудь", "Никто", "Кто"],
+          "answer": "Кто-то",
+          "why": "A real but unknown person: кто-то."
+        },
+        {
+          "q": "Хочешь ＿ поесть?",
+          "en": "Do you want something to eat?",
+          "options": ["что-то бы", "что-нибудь", "ничего", "что"],
+          "answer": "что-нибудь",
+          "why": "A question about anything: -нибудь."
+        },
+        {
+          "q": "Я ＿ потерял ключи.",
+          "en": "I've lost my keys somewhere.",
+          "options": ["где-нибудь", "нигде", "где-то", "везде"],
+          "answer": "где-то",
+          "why": "A real but unknown place: где-то."
+        },
+        {
+          "q": "Позвони мне ＿.",
+          "en": "Call me sometime.",
+          "options": ["когда-то", "никогда", "всегда", "когда-нибудь"],
+          "answer": "когда-нибудь",
+          "why": "A request: -нибудь."
+        },
+        {
+          "q": "Он ＿ купил в магазине.",
+          "en": "He bought something at the shop.",
+          "options": ["что-то", "что-нибудь", "ничего", "что"],
+          "answer": "что-то",
+          "why": "Past fact: -то."
+        }
+      ]
+    },
+    {
+      "id": "drug-druga",
+      "title": "друг друга: each other",
+      "particle": "друг друга・друг другу",
+      "summary": "each other is друг друга; only the second word declines, and a preposition goes in the middle. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>друг друга</b> (accusative/genitive), <b>друг другу</b> (dative), <b>друг с другом</b> (with each other), <b>друг о друге</b> (about each other). The first друг never changes.",
+          "examples": [
+            [
+              "Они любят {друг друга}.",
+              "Oni lyubyat drug druga.",
+              "They love each other."
+            ],
+            [
+              "Мы помогаем {друг другу}.",
+              "My pomogayem drug drugu.",
+              "We help each other."
+            ]
+          ]
+        },
+        {
+          "h": "Prepositions in the middle",
+          "p": "The preposition goes between the two words: друг <b>с</b> другом, друг <b>о</b> друге, друг <b>для</b> друга.",
+          "examples": [
+            [
+              "Они часто говорят {друг с другом}.",
+              "Oni chasto govoryat drug s drugom.",
+              "They often talk to each other."
+            ],
+            [
+              "Мы думаем {друг о друге}.",
+              "My dumayem drug o druge.",
+              "We think about each other."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Они не знают ＿.",
+          "en": "They don't know each other.",
+          "options": ["друг друга", "друг другу", "друг с другом", "другу друг"],
+          "answer": "друг друга",
+          "why": "Accusative: друг друга."
+        },
+        {
+          "q": "Мы пишем ＿.",
+          "en": "We write to each other.",
+          "options": ["друг друга", "друг другу", "другу другу", "друг к другу бы"],
+          "answer": "друг другу",
+          "why": "писать + dative."
+        },
+        {
+          "q": "Они играют ＿.",
+          "en": "They play with each other.",
+          "options": ["с друг другом", "друг другом", "друг с другом", "с другом друг"],
+          "answer": "друг с другом",
+          "why": "The preposition goes in the middle."
+        },
+        {
+          "q": "Они заботятся ＿.",
+          "en": "They look after each other.",
+          "options": ["о друг друге", "друг друге", "друг о друга", "друг о друге"],
+          "answer": "друг о друге",
+          "why": "заботиться о + prepositional."
+        },
+        {
+          "q": "Which word declines?",
+          "en": "",
+          "options": ["only the second", "only the first", "both", "neither"],
+          "answer": "only the second",
+          "why": "The first друг never changes."
+        }
+      ]
+    },
+    {
+      "id": "position-verbs",
+      "title": "стоять, лежать, сидеть and ставить, класть",
+      "particle": "стоит・лежит・ставлю・кладу",
+      "summary": "Russian shows how things are positioned: standing, lying, sitting, hanging, and different verbs for putting them there. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Things <b>stand</b> (стоять: upright, a glass, a car), <b>lie</b> (лежать: flat, a book on a table), <b>hang</b> (висеть). Location: в/на + prepositional.",
+          "examples": [
+            [
+              "Стакан {стоит} на столе.",
+              "Stakan stoit na stole.",
+              "The glass is on the table."
+            ],
+            [
+              "Книга {лежит} на полке.",
+              "Kniga lezhit na polke.",
+              "The book is on the shelf (lying flat)."
+            ],
+            [
+              "Картина {висит} на стене.",
+              "Kartina visit na stene.",
+              "The picture is on the wall."
+            ]
+          ]
+        },
+        {
+          "h": "Putting things somewhere",
+          "p": "For putting, use <b>ставить / поставить</b> (upright), <b>класть / положить</b> (flat), <b>вешать / повесить</b> (hang). Destination: в/на + accusative.",
+          "examples": [
+            [
+              "{Поставь} вазу на стол.",
+              "Postav' vazu na stol.",
+              "Put the vase on the table."
+            ],
+            [
+              "Я {положил} ключи в сумку.",
+              "Ya polozhil klyuchi v sumku.",
+              "I put the keys in the bag."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Машина ＿ у дома.",
+          "en": "The car is (parked) by the house.",
+          "options": ["стоит", "лежит", "сидит", "висит"],
+          "answer": "стоит",
+          "why": "Cars stand."
+        },
+        {
+          "q": "Телефон ＿ на диване.",
+          "en": "The phone is on the sofa.",
+          "options": ["стоит", "лежит", "висит", "сидит"],
+          "answer": "лежит",
+          "why": "Flat objects lie."
+        },
+        {
+          "q": "＿ бутылку в холодильник.",
+          "en": "Put the bottle in the fridge.",
+          "options": ["Положи", "Повесь", "Поставь", "Стой"],
+          "answer": "Поставь",
+          "why": "An upright bottle: ставить."
+        },
+        {
+          "q": "Она ＿ пальто в шкаф.",
+          "en": "She hung the coat in the wardrobe.",
+          "options": ["положила", "поставила", "висела", "повесила"],
+          "answer": "повесила",
+          "why": "Hanging: повесить."
+        },
+        {
+          "q": "Я ＿ деньги на стол.",
+          "en": "I put the money on the table.",
+          "options": ["положил", "поставил", "повесил", "лежал"],
+          "answer": "положил",
+          "why": "Flat things: положить."
+        }
+      ]
+    },
+    {
+      "id": "genitive-plural",
+      "title": "Genitive plural endings",
+      "particle": "-ов・-ей・zero",
+      "summary": "Masculine -ов/-ев, soft and hushing -ей, and feminine/neuter with no ending at all. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Masculine hard nouns take <b>-ов</b> (столов), -й nouns take <b>-ев</b> (музеев). Nouns ending in -ь, ж, ш, ч, щ take <b>-ей</b>: дней, врачей, ночей.",
+          "examples": [
+            ["много {студентов}", "mnogo studentov", "a lot of students"],
+            ["пять {дней}", "pyat' dney", "five days"]
+          ]
+        },
+        {
+          "h": "The zero ending",
+          "p": "Feminine -а and neuter -о nouns drop their ending: книга → <b>книг</b>, место → <b>мест</b>. A vowel often appears to break a cluster: сестра → <b>сестёр</b>, окно → <b>окон</b>, девушка → <b>девушек</b>.",
+          "examples": [
+            ["У меня нет {денег}.", "U menya net deneg.", "I have no money."],
+            [
+              "Сколько у тебя {сестёр}?",
+              "Skol'ko u tebya sestyor?",
+              "How many sisters do you have?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "пять ＿",
+          "en": "five cities",
+          "options": ["городов", "городей", "город", "городах"],
+          "answer": "городов",
+          "why": "Masculine hard: -ов."
+        },
+        {
+          "q": "много ＿",
+          "en": "a lot of girls",
+          "options": ["девушкей", "девушек", "девушков", "девушки"],
+          "answer": "девушек",
+          "why": "Zero ending with an inserted е."
+        },
+        {
+          "q": "десять ＿",
+          "en": "ten rooms",
+          "options": ["комнатов", "комнатей", "комнат", "комнаты"],
+          "answer": "комнат",
+          "why": "Feminine -а: zero ending."
+        },
+        {
+          "q": "шесть ＿",
+          "en": "six nights",
+          "options": ["ночов", "ночь", "ночах", "ночей"],
+          "answer": "ночей",
+          "why": "ночь: -ей."
+        },
+        {
+          "q": "много ＿",
+          "en": "many letters",
+          "options": ["писем", "письмов", "письм", "письма"],
+          "answer": "писем",
+          "why": "письмо → писем."
+        }
+      ]
+    },
+    {
+      "id": "reported-speech",
+      "title": "Reported speech: сказал, что; спросил, ли",
+      "particle": "что・ли・чтобы",
+      "summary": "Russian keeps the original tense in reported speech; only pronouns change. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "There is no backshift. «Я устал» → Он сказал, что <b>устал</b>. «Я приду» → Она сказала, что <b>придёт</b> (future kept). Only the person changes.",
+          "examples": [
+            [
+              "Он сказал, {что живёт} в Москве.",
+              "On skazal, chto zhivyot v Moskve.",
+              "He said he lived in Moscow."
+            ],
+            [
+              "Она сказала, {что придёт}.",
+              "Ona skazala, chto pridyot.",
+              "She said she would come."
+            ]
+          ]
+        },
+        {
+          "h": "Questions and requests",
+          "p": "Question-word questions keep their word: Он спросил, <b>где</b> я живу. Yes/no questions use <b>ли</b>. Commands become <b>чтобы</b> + past.",
+          "examples": [
+            [
+              "Она спросила, {нравится ли} мне фильм.",
+              "Ona sprosila, nravitsya li mne fil'm.",
+              "She asked if I liked the film."
+            ],
+            [
+              "Он попросил, {чтобы} я {закрыл} окно.",
+              "On poprosil, chtoby ya zakryl okno.",
+              "He asked me to close the window."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "«Я болею». → Он сказал, что ＿.",
+          "en": "He said he was ill.",
+          "options": ["болеет", "болел бы", "болеть", "болела"],
+          "answer": "болеет",
+          "why": "No backshift: present kept."
+        },
+        {
+          "q": "«Ты голоден?» → Мама спросила, голоден ＿ я.",
+          "en": "Mum asked if I was hungry.",
+          "options": ["если", "ли", "бы", "что"],
+          "answer": "ли",
+          "why": "Yes/no: ли."
+        },
+        {
+          "q": "«Позвони мне!» → Она просила, чтобы я ＿.",
+          "en": "She asked me to call her.",
+          "options": ["позвоню", "позвонить", "позвонил", "позвони"],
+          "answer": "позвонил",
+          "why": "A command: чтобы + past."
+        },
+        {
+          "q": "«Где ты работаешь?» → Он спросил, ＿ я работаю.",
+          "en": "He asked where I worked.",
+          "options": ["ли где", "что", "куда", "где"],
+          "answer": "где",
+          "why": "Keep the question word."
+        },
+        {
+          "q": "«Я приеду завтра». → Он сказал, что ＿ завтра.",
+          "en": "He said he would come tomorrow.",
+          "options": ["приедет", "приехал бы", "приеду", "приезжал"],
+          "answer": "приедет",
+          "why": "Future kept; person changes."
+        }
+      ]
+    },
+    {
+      "id": "nekogo-nechego",
+      "title": "некого, нечего: there's nobody to",
+      "particle": "не- + dative + infinitive",
+      "summary": "некого, нечего, некогда, негде + infinitive mean there's no one, nothing, no time, nowhere to; the person goes in the dative. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Stressed <b>не́-</b> words with an infinitive mean there is nobody/nothing to: <b>Мне нечего делать</b> (I have nothing to do), <b>Ему некуда идти</b> (He has nowhere to go). No не with the verb.",
+          "examples": [
+            [
+              "{Мне нечего} сказать.",
+              "Mne nechego skazat'.",
+              "I have nothing to say."
+            ],
+            [
+              "{Нам некогда} отдыхать.",
+              "Nam nekogda otdykhat'.",
+              "We have no time to rest."
+            ],
+            [
+              "{Ему не с кем} поговорить.",
+              "Yemu ne s kem pogovorit'.",
+              "He has no one to talk to."
+            ]
+          ]
+        },
+        {
+          "h": "Past and future",
+          "p": "Add было or будет: <b>Мне было некуда</b> идти. Compare with ни-: Я ничего не делаю (I'm not doing anything) vs Мне нечего делать (There's nothing for me to do).",
+          "examples": [
+            [
+              "{Негде} было сесть.",
+              "Negde bylo sest'.",
+              "There was nowhere to sit."
+            ],
+            [
+              "Тебе {нечего} бояться.",
+              "Tebe nechego boyat'sya.",
+              "You have nothing to fear."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Мне ＿ надеть.",
+          "en": "I have nothing to wear.",
+          "options": ["нечего", "ничего", "ничего не", "нечто"],
+          "answer": "нечего",
+          "why": "There's nothing to: нечего."
+        },
+        {
+          "q": "Нам ＿ жить.",
+          "en": "We have nowhere to live.",
+          "options": ["нигде", "негде", "никуда", "некуда"],
+          "answer": "негде",
+          "why": "Location, nowhere to: негде."
+        },
+        {
+          "q": "Ей ＿ позвонить.",
+          "en": "She has no one to call.",
+          "options": ["никому", "некого", "некому", "никого"],
+          "answer": "некому",
+          "why": "позвонить + dative: некому."
+        },
+        {
+          "q": "Мне ＿ было ждать.",
+          "en": "I had no time to wait.",
+          "options": ["никогда", "не когда", "нигде", "некогда"],
+          "answer": "некогда",
+          "why": "No time to: некогда."
+        },
+        {
+          "q": "＿ нечего делать.",
+          "en": "He has nothing to do.",
+          "options": ["Ему", "Он", "Его", "Им"],
+          "answer": "Ему",
+          "why": "The person is in the dative."
+        }
+      ]
+    },
+    {
+      "id": "aspect-past",
+      "title": "Aspect in the past: Ты читал эту книгу?",
+      "particle": "general-fact imperfective",
+      "summary": "The imperfective past asks or states whether something ever happened; the perfective focuses on a result that still matters. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "To ask whether an action ever happened, Russian uses the <b>imperfective</b>, even for one completed action: <b>Ты читал</b> «Войну и мир»? — Да, читал. The <b>perfective</b> stresses the result: Ты прочитал книгу? (Have you finished it, so I can have it?)",
+          "examples": [
+            [
+              "Ты {смотрел} этот фильм?",
+              "Ty smotrel etot fil'm?",
+              "Have you seen this film?"
+            ],
+            [
+              "Кто {писал} эту картину?",
+              "Kto pisal etu kartinu?",
+              "Who painted this picture?"
+            ]
+          ]
+        },
+        {
+          "h": "Annulled results",
+          "p": "The imperfective past of a two-way action means it was reversed: <b>Кто-то открывал</b> окно (someone opened it and it is closed again). The perfective <b>открыл</b> means it is still open.",
+          "examples": [
+            [
+              "К тебе {приходил} Иван.",
+              "K tebe prikhodil Ivan.",
+              "Ivan came to see you (and left)."
+            ],
+            [
+              "К тебе {пришёл} Иван.",
+              "K tebe prishyol Ivan.",
+              "Ivan is here to see you."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ты когда-нибудь ＿ в Китае?",
+          "en": "Have you ever been to China?",
+          "options": ["был", "побывал бы", "будешь", "бываешь"],
+          "answer": "был",
+          "why": "General experience."
+        },
+        {
+          "q": "Вы ＿ этот роман? — Да, в школе.",
+          "en": "Have you read this novel? — Yes, at school.",
+          "options": ["прочитаете", "читали", "читаете", "прочитали бы"],
+          "answer": "читали",
+          "why": "Did it happen? Imperfective."
+        },
+        {
+          "q": "Я ＿ письмо, можешь отправить.",
+          "en": "I've written the letter, you can send it.",
+          "options": ["писал", "пишу", "написал", "писать"],
+          "answer": "написал",
+          "why": "Result that matters now: perfective."
+        },
+        {
+          "q": "Пока тебя не было, ＿ твой брат.",
+          "en": "While you were out, your brother came by (and left).",
+          "options": ["пришёл", "придёт", "приходит", "приходил"],
+          "answer": "приходил",
+          "why": "Annulled result: imperfective."
+        },
+        {
+          "q": "Кто ＿ этот дом?",
+          "en": "Who built this house? (asking about the doer)",
+          "options": ["строил", "построит", "строит", "будет строить"],
+          "answer": "строил",
+          "why": "Focus on the doer: imperfective."
+        }
+      ]
+    },
+    {
+      "id": "chem-tem",
+      "title": "чем…, тем…: the more…, the more",
+      "particle": "чем + comparative, тем + comparative",
+      "summary": "чем больше, тем лучше: the more…, the better. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "The pattern is <b>чем</b> + comparative …, <b>тем</b> + comparative …: Чем раньше, тем лучше. A comma separates the halves.",
+          "examples": [
+            [
+              "{Чем} больше, {тем} лучше.",
+              "Chem bol'she, tem luchshe.",
+              "The more the better."
+            ],
+            [
+              "{Чем} дольше я жду, {тем} больше нервничаю.",
+              "Chem dol'she ya zhdu, tem bol'she nervnichayu.",
+              "The longer I wait, the more nervous I get."
+            ]
+          ]
+        },
+        {
+          "h": "всё + comparative",
+          "p": "Increase over time uses <b>всё</b> + comparative: Становится <b>всё холоднее</b> (It's getting colder and colder). как можно + comparative means as … as possible: как можно скорее.",
+          "examples": [
+            [
+              "Становится {всё темнее}.",
+              "Stanovitsya vsyo temneye.",
+              "It's getting darker and darker."
+            ],
+            [
+              "Приходи {как можно скорее}.",
+              "Prikhodi kak mozhno skoreye.",
+              "Come as soon as possible."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ раньше, тем лучше.",
+          "en": "The earlier the better.",
+          "options": ["Чем", "Тем", "Как", "Что"],
+          "answer": "Чем",
+          "why": "First half: чем."
+        },
+        {
+          "q": "Чем больше читаешь, ＿ больше знаешь.",
+          "en": "The more you read, the more you know.",
+          "options": ["чем", "тем", "так", "то"],
+          "answer": "тем",
+          "why": "Second half: тем."
+        },
+        {
+          "q": "Цены становятся всё ＿.",
+          "en": "Prices keep rising.",
+          "options": ["высокие", "высоко", "выше", "высший"],
+          "answer": "выше",
+          "why": "всё + comparative."
+        },
+        {
+          "q": "Позвони как можно ＿.",
+          "en": "Call as soon as possible.",
+          "options": ["скорый", "скоро", "скорейший", "скорее"],
+          "answer": "скорее",
+          "why": "как можно + comparative."
+        },
+        {
+          "q": "Чем ＿ задача, тем интереснее.",
+          "en": "The harder the task, the more interesting.",
+          "options": ["сложнее", "сложная", "сложно", "сложнейшая"],
+          "answer": "сложнее",
+          "why": "чем + comparative."
+        }
+      ]
+    },
+    {
+      "id": "blagodarya-iz-za",
+      "title": "Cause: из-за, благодаря, от, из",
+      "particle": "из-за・благодаря・от",
+      "summary": "из-за = because of (bad result); благодаря = thanks to (good result); от = from a physical cause; из = out of a motive. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>из-за</b> + genitive: a negative cause: из-за дождя. <b>благодаря</b> + dative: a positive cause: благодаря тебе. In clauses: из-за того, что / благодаря тому, что.",
+          "examples": [
+            [
+              "Мы опоздали {из-за} пробки.",
+              "My opozdali iz-za probki.",
+              "We were late because of a traffic jam."
+            ],
+            [
+              "{Благодаря} вам я сдал экзамен.",
+              "Blagodarya vam ya sdal ekzamen.",
+              "Thanks to you I passed the exam."
+            ]
+          ]
+        },
+        {
+          "h": "от and из",
+          "p": "<b>от</b> + genitive: an involuntary physical reaction: дрожать от холода, плакать от радости. <b>из</b> + genitive: a conscious motive: из вежливости, из любопытства.",
+          "examples": [
+            [
+              "Он дрожал {от} холода.",
+              "On drozhal ot kholoda.",
+              "He was shaking with cold."
+            ],
+            [
+              "Я спросил {из} любопытства.",
+              "Ya sprosil iz lyubopytstva.",
+              "I asked out of curiosity."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Рейс отменили ＿ тумана.",
+          "en": "The flight was cancelled because of fog.",
+          "options": ["из-за", "благодаря", "для", "по"],
+          "answer": "из-за",
+          "why": "Negative cause: из-за + genitive."
+        },
+        {
+          "q": "＿ твоей помощи всё получилось.",
+          "en": "Thanks to your help it all worked out.",
+          "options": ["Из-за", "Благодаря", "От", "Из"],
+          "answer": "Благодаря",
+          "why": "Positive cause: благодаря + dative."
+        },
+        {
+          "q": "Она плакала ＿ счастья.",
+          "en": "She was crying with happiness.",
+          "options": ["из", "из-за", "от", "благодаря"],
+          "answer": "от",
+          "why": "Physical reaction: от."
+        },
+        {
+          "q": "Он помог ＿ жалости.",
+          "en": "He helped out of pity.",
+          "options": ["от", "для", "благодаря", "из"],
+          "answer": "из",
+          "why": "A motive: из."
+        },
+        {
+          "q": "Мы не поехали, ＿ того, что заболели.",
+          "en": "We didn't go because we got ill.",
+          "options": ["из-за", "благодаря", "от", "для"],
+          "answer": "из-за",
+          "why": "Clause: из-за того, что."
+        }
+      ]
+    },
+    {
+      "id": "particles",
+      "title": "Particles: же, ведь, -то, вот",
+      "particle": "же・ведь・-то・вот",
+      "summary": "Small particles add emphasis and attitude: же insists, ведь reminds, -то contrasts the topic. (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>же</b> stresses or insists: Я <b>же</b> говорил! (I told you!). Also \"the same\": тот же. <b>ведь</b> reminds the listener of something obvious: <b>Ведь</b> сегодня суббота! (It's Saturday, after all!).",
+          "examples": [
+            [
+              "Я {же} тебе говорил!",
+              "Ya zhe tebe govoril!",
+              "I did tell you!"
+            ],
+            [
+              "{Ведь} ты обещал.",
+              "Ved' ty obeshchal.",
+              "You did promise, after all."
+            ],
+            [
+              "Это тот {же} человек.",
+              "Eto tot zhe chelovek.",
+              "It's the same person."
+            ]
+          ]
+        },
+        {
+          "h": "-то and вот",
+          "p": "<b>-то</b> after a word makes it the topic in contrast: Я-<b>то</b> знаю, а он нет (I know, but he doesn't). <b>вот</b> points or introduces: Вот мой дом. Вот почему.",
+          "examples": [
+            [
+              "Чай-{то} есть, а сахара нет.",
+              "Chay-to yest', a sakhara net.",
+              "There's tea, sure, but no sugar."
+            ],
+            [
+              "{Вот} почему он ушёл.",
+              "Vot pochemu on ushyol.",
+              "That's why he left."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Это ＿ мой стул!",
+          "en": "But that's my chair!",
+          "options": ["же", "ли", "бы", "ни"],
+          "answer": "же",
+          "why": "Insisting: же."
+        },
+        {
+          "q": "Он живёт в том ＿ доме.",
+          "en": "He lives in the same building.",
+          "options": ["ведь", "же", "ли", "вот"],
+          "answer": "же",
+          "why": "the same: тот же."
+        },
+        {
+          "q": "Не волнуйся, ＿ всё хорошо.",
+          "en": "Don't worry, everything's fine, isn't it.",
+          "options": ["бы", "ли", "ведь", "ни"],
+          "answer": "ведь",
+          "why": "Reminding: ведь."
+        },
+        {
+          "q": "＿ ваш ключ.",
+          "en": "Here's your key.",
+          "options": ["Же", "Ведь", "Ли", "Вот"],
+          "answer": "Вот",
+          "why": "Pointing: вот."
+        },
+        {
+          "q": "Я-＿ согласен, а она нет.",
+          "en": "I agree, but she doesn't.",
+          "options": ["то", "же", "ли", "бы"],
+          "answer": "то",
+          "why": "Contrastive topic: -то."
+        }
+      ]
+    },
+    {
+      "id": "word-order",
+      "title": "Word order and new information",
+      "particle": "old → new",
+      "summary": "Russian word order is free: known information comes first and new information comes last. (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "Because endings mark roles, word order shows information. The <b>new</b> or important part goes <b>last</b>: В комнату вошёл <b>учитель</b> (A teacher came in). Учитель вошёл <b>в комнату</b> (The teacher went into the room).",
+          "examples": [
+            [
+              "В комнату вошёл {учитель}.",
+              "V komnatu voshyol uchitel'.",
+              "A teacher came into the room."
+            ],
+            [
+              "Учитель вошёл {в комнату}.",
+              "Uchitel' voshyol v komnatu.",
+              "The teacher went into the room."
+            ]
+          ]
+        },
+        {
+          "h": "Inversion and emphasis",
+          "p": "The answer to a question goes last: Кто это написал? — Это написал <b>Пушкин</b>. Moving a word to the front makes it the topic: Книгу я уже прочитал (The book, I've already read).",
+          "examples": [
+            [
+              "Это написал {Пушкин}.",
+              "Eto napisal Pushkin.",
+              "It was Pushkin who wrote this."
+            ],
+            [
+              "{Книгу} я уже прочитал.",
+              "Knigu ya uzhe prochital.",
+              "The book, I've already read."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Кто пришёл? — Пришёл ＿.",
+          "en": "Who came? — Ivan came.",
+          "options": ["Иван", "Ивана", "Иваном", "Ивану"],
+          "answer": "Иван",
+          "why": "New information last."
+        },
+        {
+          "q": "Where does new information usually go?",
+          "en": "",
+          "options": [
+            "At the start",
+            "At the end",
+            "Before the verb always",
+            "After the subject always"
+          ],
+          "answer": "At the end",
+          "why": "New information comes last."
+        },
+        {
+          "q": "На столе лежит ＿.",
+          "en": "There's a book on the table.",
+          "options": ["книгу", "книги", "книга", "книгой"],
+          "answer": "книга",
+          "why": "New thing, subject, at the end."
+        },
+        {
+          "q": "Which sentence answers \"Where did Masha go?\"",
+          "en": "",
+          "options": [
+            "В магазин пошла Маша.",
+            "Пошла Маша в магазин?",
+            "Магазин Маша пошла.",
+            "Маша пошла в магазин."
+          ],
+          "answer": "Маша пошла в магазин.",
+          "why": "The new part (where) goes last."
+        },
+        {
+          "q": "Which means \"A man came up to me\"?",
+          "en": "",
+          "options": [
+            "Ко мне подошёл мужчина.",
+            "Мужчина подошёл ко мне.",
+            "Мужчина ко мне подошёл?",
+            "Подошёл мужчина ко мне?"
+          ],
+          "answer": "Ко мне подошёл мужчина.",
+          "why": "A new subject goes last."
+        }
+      ]
     }
   ]
 }
