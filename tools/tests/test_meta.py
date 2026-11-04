@@ -64,6 +64,13 @@ class MetaSchema(unittest.TestCase):
         for code in ("el", "ELL", "ellx", "nucl131", "e11"):
             self.bad(with_(GREEK, code=code), META)
 
+    def test_markers(self):
+        self.ok(with_(GREEK, markers={"default": "before"}), META)
+        self.ok(with_(GREEK, markers={"default": "before", "@possessive": "after"}), META)
+        self.bad(with_(GREEK, markers={"@possessive": "after"}), META)  # needs default
+        self.bad(with_(GREEK, markers={"default": "left"}), META)
+        self.bad(with_(GREEK, markers={"default": "before", "@the": "around"}), META)
+
     def test_regional_variety(self):
         self.ok(CANTONESE, VARIETY)
         self.bad(with_(CANTONESE, parent=None), VARIETY)
@@ -149,6 +156,19 @@ class MetaFolders(unittest.TestCase):
     def test_unknown_schema(self):
         self.write("languages/greek/meta.json", with_(GREEK, schema="meta@9"))
         self.assertTrue(any("schemas/meta.v9.json" in p for p in self.problems()))
+
+    def test_markers_must_name_grammar_meanings(self):
+        (self.root / "meaning").mkdir()
+        (self.root / "meaning" / "meanings.jsonl").write_text(
+            '{"schema": "meaning@1"}\n'
+            '{"id": "@possessive", "kind": "grammar", "label": "possessive"}\n'
+            '{"id": "cat", "kind": "content", "en": ["cat"]}\n', encoding="utf-8")
+        self.write("languages/greek/meta.json",
+                   with_(GREEK, markers={"default": "before", "@possessive": "after"}))
+        self.assertEqual(check_meta.check(self.root), [])
+        for bad in ("cat", "@nothing"):
+            self.write("languages/greek/meta.json", with_(GREEK, markers={"default": "before", bad: "after"}))
+            self.assertTrue(any("isn't a grammar meaning" in p for p in check_meta.check(self.root)), bad)
 
 
 if __name__ == "__main__":
