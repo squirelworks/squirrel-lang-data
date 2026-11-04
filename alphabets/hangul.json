@@ -1,0 +1,548 @@
+{
+  "schema": "alphabet@1",
+  "id": "hangul",
+  "title": "Hangul",
+  "native": "한글",
+  "lang": "ko-KR",
+  "langName": "Korean",
+  "font": "\"Noto Sans KR\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", sans-serif",
+  "chartFlow": true,
+  "blurb": "The Korean alphabet: 24 basic letters stacked into syllable blocks.",
+  "writeTip": "Write jamo top to bottom and left to right. Inside a block, the first consonant goes left or top, the vowel right or below, and any final consonant underneath.",
+  "notes": [
+    "Hangul (Korean) for SquirrelGo Alphabets. Romanization follows the Revised Romanization of Korean. Hints and articles are original."
+  ],
+  "lessons": [
+    {
+      "title": "Basic vowels",
+      "note": "Vertical vowels sit to the right of the consonant; horizontal ones sit below it. A silent ㅇ fills the consonant slot when a syllable starts with a vowel.",
+      "group": "Vowels",
+      "chars": [
+        {
+          "char": "ㅏ",
+          "roman": "a",
+          "hint": "a as in father",
+          "example": "아기",
+          "exampleRoman": "agi",
+          "meaning": "baby",
+          "speak": "아",
+          "ipa": "a"
+        },
+        {
+          "char": "ㅑ",
+          "roman": "ya",
+          "hint": "ya as in yard",
+          "example": "야구",
+          "exampleRoman": "yagu",
+          "meaning": "baseball",
+          "speak": "야",
+          "ipa": "ja"
+        },
+        {
+          "char": "ㅓ",
+          "roman": "eo",
+          "hint": "u as in sun, with the jaw open",
+          "example": "어머니",
+          "exampleRoman": "eomeoni",
+          "meaning": "mother",
+          "speak": "어",
+          "ipa": "ʌ"
+        },
+        {
+          "char": "ㅕ",
+          "roman": "yeo",
+          "hint": "y + eo, like yu in yummy",
+          "example": "여자",
+          "exampleRoman": "yeoja",
+          "meaning": "woman",
+          "speak": "여",
+          "ipa": "jʌ"
+        },
+        {
+          "char": "ㅗ",
+          "roman": "o",
+          "hint": "o with rounded lips, as in go but shorter",
+          "example": "오이",
+          "exampleRoman": "oi",
+          "meaning": "cucumber",
+          "speak": "오",
+          "ipa": "o"
+        },
+        {
+          "char": "ㅛ",
+          "roman": "yo",
+          "hint": "yo as in yoga",
+          "example": "요리",
+          "exampleRoman": "yori",
+          "meaning": "cooking",
+          "speak": "요",
+          "ipa": "jo"
+        },
+        {
+          "char": "ㅜ",
+          "roman": "u",
+          "hint": "oo as in food",
+          "example": "우유",
+          "exampleRoman": "uyu",
+          "meaning": "milk",
+          "speak": "우",
+          "ipa": "u"
+        },
+        {
+          "char": "ㅠ",
+          "roman": "yu",
+          "hint": "you",
+          "example": "유리",
+          "exampleRoman": "yuri",
+          "meaning": "glass",
+          "speak": "유",
+          "ipa": "ju"
+        },
+        {
+          "char": "ㅡ",
+          "roman": "eu",
+          "hint": "oo with the lips pulled flat, no rounding",
+          "example": "그림",
+          "exampleRoman": "geurim",
+          "meaning": "picture",
+          "speak": "으",
+          "ipa": "ɯ"
+        },
+        {
+          "char": "ㅣ",
+          "roman": "i",
+          "hint": "ee as in see",
+          "example": "이",
+          "exampleRoman": "i",
+          "meaning": "tooth",
+          "speak": "이",
+          "ipa": "i"
+        }
+      ]
+    },
+    {
+      "title": "Compound vowels",
+      "note": "Built from the basic vowels. ㅐ and ㅔ sound almost the same in modern Seoul speech.",
+      "group": "Vowels",
+      "chars": [
+        {
+          "char": "ㅐ",
+          "roman": "ae",
+          "hint": "e as in bed, slightly more open",
+          "example": "개",
+          "exampleRoman": "gae",
+          "meaning": "dog",
+          "speak": "애",
+          "ipa": "ɛ"
+        },
+        {
+          "char": "ㅒ",
+          "roman": "yae",
+          "hint": "ye as in yes",
+          "example": "얘기",
+          "exampleRoman": "yaegi",
+          "meaning": "talk, story",
+          "speak": "얘",
+          "ipa": "jɛ"
+        },
+        {
+          "char": "ㅔ",
+          "roman": "e",
+          "hint": "e as in bed",
+          "example": "게",
+          "exampleRoman": "ge",
+          "meaning": "crab",
+          "speak": "에",
+          "ipa": "e"
+        },
+        {
+          "char": "ㅖ",
+          "roman": "ye",
+          "hint": "ye as in yes",
+          "example": "시계",
+          "exampleRoman": "sigye",
+          "meaning": "clock",
+          "speak": "예",
+          "ipa": "je"
+        },
+        {
+          "char": "ㅘ",
+          "roman": "wa",
+          "hint": "wa as in wasp",
+          "example": "사과",
+          "exampleRoman": "sagwa",
+          "meaning": "apple",
+          "speak": "와",
+          "ipa": "wa"
+        },
+        {
+          "char": "ㅙ",
+          "roman": "wae",
+          "hint": "we as in wet",
+          "example": "왜",
+          "exampleRoman": "wae",
+          "meaning": "why",
+          "speak": "왜",
+          "ipa": "wɛ"
+        },
+        {
+          "char": "ㅚ",
+          "roman": "oe",
+          "hint": "usually said we as in wet",
+          "example": "회사",
+          "exampleRoman": "hoesa",
+          "meaning": "company",
+          "speak": "외",
+          "ipa": "we"
+        },
+        {
+          "char": "ㅝ",
+          "roman": "wo",
+          "hint": "wo as in won",
+          "example": "뭐",
+          "exampleRoman": "mwo",
+          "meaning": "what",
+          "speak": "워",
+          "ipa": "wʌ"
+        },
+        {
+          "char": "ㅞ",
+          "roman": "we",
+          "hint": "we as in wet",
+          "example": "웨이터",
+          "exampleRoman": "weiteo",
+          "meaning": "waiter",
+          "speak": "웨",
+          "ipa": "we"
+        },
+        {
+          "char": "ㅟ",
+          "roman": "wi",
+          "hint": "wee",
+          "example": "귀",
+          "exampleRoman": "gwi",
+          "meaning": "ear",
+          "speak": "위",
+          "ipa": "wi"
+        },
+        {
+          "char": "ㅢ",
+          "roman": "ui",
+          "hint": "eu gliding into i",
+          "example": "의사",
+          "exampleRoman": "uisa",
+          "meaning": "doctor",
+          "speak": "의",
+          "ipa": "ɰi"
+        }
+      ]
+    },
+    {
+      "title": "Basic consonants",
+      "note": "ㄱ ㄷ ㅂ ㅈ are soft and unaspirated: closer to k t p ch at the start of a word, and g d b j between vowels.",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ㄱ",
+          "roman": "g/k",
+          "hint": "soft g or k",
+          "example": "가방",
+          "exampleRoman": "gabang",
+          "meaning": "bag",
+          "speak": "가",
+          "ipa": "k ~ ɡ"
+        },
+        {
+          "char": "ㄴ",
+          "roman": "n",
+          "hint": "n",
+          "example": "나무",
+          "exampleRoman": "namu",
+          "meaning": "tree",
+          "speak": "나",
+          "ipa": "n"
+        },
+        {
+          "char": "ㄷ",
+          "roman": "d/t",
+          "hint": "soft d or t",
+          "example": "다리",
+          "exampleRoman": "dari",
+          "meaning": "leg, bridge",
+          "speak": "다",
+          "ipa": "t ~ d"
+        },
+        {
+          "char": "ㄹ",
+          "roman": "r/l",
+          "hint": "a tapped r between vowels, l at the end of a syllable",
+          "example": "라면",
+          "exampleRoman": "ramyeon",
+          "meaning": "instant noodles",
+          "speak": "라",
+          "ipa": "ɾ ~ l"
+        },
+        {
+          "char": "ㅁ",
+          "roman": "m",
+          "hint": "m",
+          "example": "마음",
+          "exampleRoman": "maeum",
+          "meaning": "heart, mind",
+          "speak": "마",
+          "ipa": "m"
+        },
+        {
+          "char": "ㅂ",
+          "roman": "b/p",
+          "hint": "soft b or p",
+          "example": "바다",
+          "exampleRoman": "bada",
+          "meaning": "sea",
+          "speak": "바",
+          "ipa": "p ~ b"
+        },
+        {
+          "char": "ㅅ",
+          "roman": "s",
+          "hint": "s; before ㅣ it sounds like sh",
+          "example": "사람",
+          "exampleRoman": "saram",
+          "meaning": "person",
+          "speak": "사",
+          "ipa": "s"
+        },
+        {
+          "char": "ㅇ",
+          "roman": "–/ng",
+          "hint": "silent at the start of a block, ng at the end",
+          "example": "아이",
+          "exampleRoman": "ai",
+          "meaning": "child",
+          "speak": "아",
+          "ipa": "ŋ"
+        },
+        {
+          "char": "ㅈ",
+          "roman": "j",
+          "hint": "soft j or ch",
+          "example": "자리",
+          "exampleRoman": "jari",
+          "meaning": "seat",
+          "speak": "자",
+          "ipa": "tɕ ~ dʑ"
+        },
+        {
+          "char": "ㅎ",
+          "roman": "h",
+          "hint": "h",
+          "example": "하늘",
+          "exampleRoman": "haneul",
+          "meaning": "sky",
+          "speak": "하",
+          "ipa": "h"
+        }
+      ]
+    },
+    {
+      "title": "Aspirated consonants",
+      "note": "Each adds a strong puff of air to a basic consonant. Hold your palm in front of your mouth to feel it.",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ㅊ",
+          "roman": "ch",
+          "hint": "ch with a puff of air",
+          "example": "차",
+          "exampleRoman": "cha",
+          "meaning": "car; tea",
+          "speak": "차",
+          "ipa": "tɕʰ"
+        },
+        {
+          "char": "ㅋ",
+          "roman": "k",
+          "hint": "k with a puff of air",
+          "example": "코",
+          "exampleRoman": "ko",
+          "meaning": "nose",
+          "speak": "카",
+          "ipa": "kʰ"
+        },
+        {
+          "char": "ㅌ",
+          "roman": "t",
+          "hint": "t with a puff of air",
+          "example": "토끼",
+          "exampleRoman": "tokki",
+          "meaning": "rabbit",
+          "speak": "타",
+          "ipa": "tʰ"
+        },
+        {
+          "char": "ㅍ",
+          "roman": "p",
+          "hint": "p with a puff of air",
+          "example": "포도",
+          "exampleRoman": "podo",
+          "meaning": "grapes",
+          "speak": "파",
+          "ipa": "pʰ"
+        }
+      ]
+    },
+    {
+      "title": "Tense consonants",
+      "note": "Doubled letters are said with a tight throat and no puff of air, like the k in 'skate'.",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ㄲ",
+          "roman": "kk",
+          "hint": "tense k, no air",
+          "example": "꼬리",
+          "exampleRoman": "kkori",
+          "meaning": "tail",
+          "speak": "까",
+          "ipa": "k͈"
+        },
+        {
+          "char": "ㄸ",
+          "roman": "tt",
+          "hint": "tense t, no air",
+          "example": "딸기",
+          "exampleRoman": "ttalgi",
+          "meaning": "strawberry",
+          "speak": "따",
+          "ipa": "t͈"
+        },
+        {
+          "char": "ㅃ",
+          "roman": "pp",
+          "hint": "tense p, no air",
+          "example": "빵",
+          "exampleRoman": "ppang",
+          "meaning": "bread",
+          "speak": "빠",
+          "ipa": "p͈"
+        },
+        {
+          "char": "ㅆ",
+          "roman": "ss",
+          "hint": "tense, hissing s",
+          "example": "쌀",
+          "exampleRoman": "ssal",
+          "meaning": "uncooked rice",
+          "speak": "싸",
+          "ipa": "s͈"
+        },
+        {
+          "char": "ㅉ",
+          "roman": "jj",
+          "hint": "tense j, no air",
+          "example": "짜다",
+          "exampleRoman": "jjada",
+          "meaning": "to be salty",
+          "speak": "짜",
+          "ipa": "t͈ɕ"
+        }
+      ]
+    }
+  ],
+  "builder": {
+    "title": "Syllable block builder",
+    "note": "Every Korean syllable is one block: a first consonant, a vowel, and sometimes a final consonant (batchim). Romanization here is letter by letter and does not show sound changes between blocks.",
+    "initials": [
+      ["ㄱ", "g"],
+      ["ㄲ", "kk"],
+      ["ㄴ", "n"],
+      ["ㄷ", "d"],
+      ["ㄸ", "tt"],
+      ["ㄹ", "r"],
+      ["ㅁ", "m"],
+      ["ㅂ", "b"],
+      ["ㅃ", "pp"],
+      ["ㅅ", "s"],
+      ["ㅆ", "ss"],
+      ["ㅇ", ""],
+      ["ㅈ", "j"],
+      ["ㅉ", "jj"],
+      ["ㅊ", "ch"],
+      ["ㅋ", "k"],
+      ["ㅌ", "t"],
+      ["ㅍ", "p"],
+      ["ㅎ", "h"]
+    ],
+    "medials": [
+      ["ㅏ", "a"],
+      ["ㅐ", "ae"],
+      ["ㅑ", "ya"],
+      ["ㅒ", "yae"],
+      ["ㅓ", "eo"],
+      ["ㅔ", "e"],
+      ["ㅕ", "yeo"],
+      ["ㅖ", "ye"],
+      ["ㅗ", "o"],
+      ["ㅘ", "wa"],
+      ["ㅙ", "wae"],
+      ["ㅚ", "oe"],
+      ["ㅛ", "yo"],
+      ["ㅜ", "u"],
+      ["ㅝ", "wo"],
+      ["ㅞ", "we"],
+      ["ㅟ", "wi"],
+      ["ㅠ", "yu"],
+      ["ㅡ", "eu"],
+      ["ㅢ", "ui"],
+      ["ㅣ", "i"]
+    ],
+    "finals": [
+      ["", ""],
+      ["ㄱ", "k"],
+      ["ㄲ", "k"],
+      ["ㄳ", "k"],
+      ["ㄴ", "n"],
+      ["ㄵ", "n"],
+      ["ㄶ", "n"],
+      ["ㄷ", "t"],
+      ["ㄹ", "l"],
+      ["ㄺ", "k"],
+      ["ㄻ", "m"],
+      ["ㄼ", "l"],
+      ["ㄽ", "l"],
+      ["ㄾ", "l"],
+      ["ㄿ", "p"],
+      ["ㅀ", "l"],
+      ["ㅁ", "m"],
+      ["ㅂ", "p"],
+      ["ㅄ", "p"],
+      ["ㅅ", "t"],
+      ["ㅆ", "t"],
+      ["ㅇ", "ng"],
+      ["ㅈ", "t"],
+      ["ㅊ", "t"],
+      ["ㅋ", "k"],
+      ["ㅌ", "t"],
+      ["ㅍ", "p"],
+      ["ㅎ", "t"]
+    ]
+  },
+  "articles": [
+    {
+      "title": "How Hangul works",
+      "body": "<p>Hangul was created in the 15th century under King Sejong so that ordinary people could read and write, and it is one of the few scripts whose design is documented. Consonant shapes sketch the mouth: <span lang=\"ko\">ㄱ</span> is the tongue's back raised to the soft palate, <span lang=\"ko\">ㄴ</span> the tongue tip touching the ridge behind the teeth, <span lang=\"ko\">ㅁ</span> closed lips. Extra strokes add aspiration: <span lang=\"ko\">ㄱ → ㅋ</span>, <span lang=\"ko\">ㄷ → ㅌ</span>.</p>\n<p>Vowels are built from three elements: a dot (now a short stroke) for heaven, a flat line for earth, and an upright line for people.</p>\n<p>Letters are not written in a row. They are stacked into square blocks, one block per syllable: <span lang=\"ko\">ㅎ + ㅏ + ㄴ = 한</span>, <span lang=\"ko\">ㄱ + ㅡ + ㄹ = 글</span>. Try it in the syllable block builder.</p>"
+    },
+    {
+      "title": "Block shapes",
+      "body": "<p>The vowel decides the layout.</p>\n<table>\n<tr><td>Vertical vowel (ㅏ ㅓ ㅣ …)</td><td>consonant on the left, vowel on the right: <span lang=\"ko\">가, 너, 미</span></td></tr>\n<tr><td>Horizontal vowel (ㅗ ㅜ ㅡ …)</td><td>consonant on top, vowel below: <span lang=\"ko\">고, 누, 므</span></td></tr>\n<tr><td>Combined vowel (ㅘ ㅝ ㅢ …)</td><td>consonant top left, vowel wraps around: <span lang=\"ko\">과, 뭐, 의</span></td></tr>\n<tr><td>With a final consonant</td><td>the final sits at the bottom: <span lang=\"ko\">각, 눈, 곰</span></td></tr>\n</table>\n<p>A syllable that begins with a vowel still needs a consonant slot, filled by a silent <span lang=\"ko\">ㅇ</span>: <span lang=\"ko\">아, 오, 이</span>.</p>"
+    },
+    {
+      "title": "Final consonants (batchim)",
+      "body": "<p>At the end of a syllable, consonants are not released, so the many final letters collapse into just seven sounds:</p>\n<table>\n<tr><td lang=\"ko\">ㄱ ㅋ ㄲ</td><td>k</td></tr>\n<tr><td lang=\"ko\">ㄴ</td><td>n</td></tr>\n<tr><td lang=\"ko\">ㄷ ㅌ ㅅ ㅆ ㅈ ㅊ ㅎ</td><td>t</td></tr>\n<tr><td lang=\"ko\">ㄹ</td><td>l</td></tr>\n<tr><td lang=\"ko\">ㅁ</td><td>m</td></tr>\n<tr><td lang=\"ko\">ㅂ ㅍ</td><td>p</td></tr>\n<tr><td lang=\"ko\">ㅇ</td><td>ng</td></tr>\n</table>\n<p>So <span lang=\"ko\">옷</span> (clothes), <span lang=\"ko\">옫</span> and <span lang=\"ko\">옻</span> all end in the same t sound. The spelling shows up again when a vowel follows, as in <span lang=\"ko\">옷이</span> (o-si).</p>"
+    },
+    {
+      "title": "Sound changes between blocks",
+      "body": "<p>Korean is written block by block but spoken smoothly, so sounds shift at block boundaries. Three changes to know first:</p>\n<ul>\n<li><b>Linking.</b> A final consonant moves into the next block when that block starts with silent ㅇ: <span lang=\"ko\">음악</span> is said eu-mak, <span lang=\"ko\">한국어</span> han-gu-geo.</li>\n<li><b>Nasalization.</b> k, t, p sounds become ng, n, m before ㄴ or ㅁ: <span lang=\"ko\">감사합니다</span> is said gam-sa-ham-ni-da.</li>\n<li><b>Tensing.</b> After a k, t or p sound, a following ㄱ ㄷ ㅂ ㅅ ㅈ often turns tense: <span lang=\"ko\">학교</span> is said hak-kkyo.</li>\n</ul>\n<p>Listen to the example words and compare the sound with the spelling.</p>"
+    }
+  ]
+}

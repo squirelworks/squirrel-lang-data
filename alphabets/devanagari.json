@@ -1,0 +1,732 @@
+{
+  "schema": "alphabet@1",
+  "id": "devanagari",
+  "title": "Devanagari",
+  "native": "देवनागरी",
+  "lang": "hi-IN",
+  "langName": "Hindi",
+  "font": "\"Noto Sans Devanagari\", \"Kohinoor Devanagari\", \"Mangal\", \"Nirmala UI\", sans-serif",
+  "blurb": "The script for Hindi, Marathi, Nepali and Sanskrit. Consonants carry a built-in a.",
+  "writeTip": "Write the letter body first, then the headline (shirorekha) across the top, which joins the letters of a word.",
+  "notes": [
+    "Devanagari (as used for Hindi) for SquirrelGo Alphabets. Romanization is a simplified IAST. Hints, groupings and articles are original."
+  ],
+  "lessons": [
+    {
+      "title": "Vowels",
+      "note": "These full vowel letters are used at the start of a word or after another vowel.",
+      "group": "Vowels",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "अ",
+          "roman": "a",
+          "hint": "short a, like u in but",
+          "example": "अब",
+          "exampleRoman": "ab",
+          "meaning": "now",
+          "speak": "",
+          "ipa": "ə"
+        },
+        {
+          "char": "आ",
+          "roman": "ā",
+          "hint": "long a, as in father",
+          "example": "आम",
+          "exampleRoman": "ām",
+          "meaning": "mango",
+          "speak": "",
+          "ipa": "aː"
+        },
+        {
+          "char": "इ",
+          "roman": "i",
+          "hint": "short i, as in bit",
+          "example": "इमली",
+          "exampleRoman": "imlī",
+          "meaning": "tamarind",
+          "speak": "",
+          "ipa": "ɪ"
+        },
+        {
+          "char": "ई",
+          "roman": "ī",
+          "hint": "long ee, as in see",
+          "example": "ईख",
+          "exampleRoman": "īkh",
+          "meaning": "sugarcane",
+          "speak": "",
+          "ipa": "iː"
+        },
+        {
+          "char": "उ",
+          "roman": "u",
+          "hint": "short u, as in put",
+          "example": "उल्लू",
+          "exampleRoman": "ullū",
+          "meaning": "owl",
+          "speak": "",
+          "ipa": "ʊ"
+        },
+        {
+          "char": "ऊ",
+          "roman": "ū",
+          "hint": "long oo, as in food",
+          "example": "ऊन",
+          "exampleRoman": "ūn",
+          "meaning": "wool",
+          "speak": "",
+          "ipa": "uː"
+        },
+        {
+          "char": "ऋ",
+          "roman": "ṛ",
+          "hint": "said ri in Hindi",
+          "example": "ऋषि",
+          "exampleRoman": "ṛṣi",
+          "meaning": "sage",
+          "speak": "",
+          "ipa": "rɪ"
+        },
+        {
+          "char": "ए",
+          "roman": "e",
+          "hint": "e as in hey, without the glide",
+          "example": "एक",
+          "exampleRoman": "ek",
+          "meaning": "one",
+          "speak": "",
+          "ipa": "eː"
+        },
+        {
+          "char": "ऐ",
+          "roman": "ai",
+          "hint": "a as in bat",
+          "example": "ऐनक",
+          "exampleRoman": "ainak",
+          "meaning": "spectacles",
+          "speak": "",
+          "ipa": "ɛː"
+        },
+        {
+          "char": "ओ",
+          "roman": "o",
+          "hint": "o as in go, without the glide",
+          "example": "ओस",
+          "exampleRoman": "os",
+          "meaning": "dew",
+          "speak": "",
+          "ipa": "oː"
+        },
+        {
+          "char": "औ",
+          "roman": "au",
+          "hint": "aw as in saw",
+          "example": "औरत",
+          "exampleRoman": "aurat",
+          "meaning": "woman",
+          "speak": "",
+          "ipa": "ɔː"
+        },
+        {
+          "char": "अं",
+          "roman": "aṁ",
+          "hint": "anusvara: nasal n or m sound after a vowel",
+          "example": "अंगूर",
+          "exampleRoman": "aṅgūr",
+          "meaning": "grapes",
+          "speak": "",
+          "ipa": "əŋ"
+        }
+      ]
+    },
+    {
+      "title": "Vowel signs on क",
+      "note": "After a consonant, a vowel is written as a sign (matra) attached to it. ि is written before the consonant but said after it.",
+      "group": "Vowel signs",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "का",
+          "roman": "kā",
+          "hint": "ा: long ā",
+          "example": "काम",
+          "exampleRoman": "kām",
+          "meaning": "work",
+          "speak": "",
+          "ipa": "kaː"
+        },
+        {
+          "char": "कि",
+          "roman": "ki",
+          "hint": "ि: short i, written first",
+          "example": "किताब",
+          "exampleRoman": "kitāb",
+          "meaning": "book",
+          "speak": "",
+          "ipa": "kɪ"
+        },
+        {
+          "char": "की",
+          "roman": "kī",
+          "hint": "ी: long ī",
+          "example": "कील",
+          "exampleRoman": "kīl",
+          "meaning": "nail",
+          "speak": "",
+          "ipa": "kiː"
+        },
+        {
+          "char": "कु",
+          "roman": "ku",
+          "hint": "ु: short u, hangs below",
+          "example": "कुत्ता",
+          "exampleRoman": "kuttā",
+          "meaning": "dog",
+          "speak": "",
+          "ipa": "kʊ"
+        },
+        {
+          "char": "कू",
+          "roman": "kū",
+          "hint": "ू: long ū, hangs below",
+          "example": "कूलर",
+          "exampleRoman": "kūlar",
+          "meaning": "air cooler",
+          "speak": "",
+          "ipa": "kuː"
+        },
+        {
+          "char": "कृ",
+          "roman": "kṛ",
+          "hint": "ृ: ri",
+          "example": "कृपया",
+          "exampleRoman": "kṛpayā",
+          "meaning": "please",
+          "speak": "",
+          "ipa": "krɪ"
+        },
+        {
+          "char": "के",
+          "roman": "ke",
+          "hint": "े: e",
+          "example": "केला",
+          "exampleRoman": "kelā",
+          "meaning": "banana",
+          "speak": "",
+          "ipa": "keː"
+        },
+        {
+          "char": "कै",
+          "roman": "kai",
+          "hint": "ै: ai",
+          "example": "कैसे",
+          "exampleRoman": "kaise",
+          "meaning": "how",
+          "speak": "",
+          "ipa": "kɛː"
+        },
+        {
+          "char": "को",
+          "roman": "ko",
+          "hint": "ो: o",
+          "example": "कोयल",
+          "exampleRoman": "koyal",
+          "meaning": "cuckoo",
+          "speak": "",
+          "ipa": "koː"
+        },
+        {
+          "char": "कौ",
+          "roman": "kau",
+          "hint": "ौ: au",
+          "example": "कौआ",
+          "exampleRoman": "kauā",
+          "meaning": "crow",
+          "speak": "",
+          "ipa": "kɔː"
+        },
+        {
+          "char": "कं",
+          "roman": "kaṁ",
+          "hint": "ं: nasal",
+          "example": "कंघी",
+          "exampleRoman": "kaṅghī",
+          "meaning": "comb",
+          "speak": "",
+          "ipa": "kəŋ"
+        },
+        {
+          "char": "क्",
+          "roman": "k",
+          "hint": "्: halant, removes the built-in a",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "k"
+        }
+      ]
+    },
+    {
+      "title": "Velar consonants (back of the mouth)",
+      "note": "Each row of five follows the same pattern: plain, aspirated, voiced, voiced aspirated, nasal.",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "क",
+          "roman": "ka",
+          "hint": "k, no puff of air",
+          "example": "कमल",
+          "exampleRoman": "kamal",
+          "meaning": "lotus",
+          "speak": "",
+          "ipa": "kə"
+        },
+        {
+          "char": "ख",
+          "roman": "kha",
+          "hint": "k with a puff of air",
+          "example": "खरगोश",
+          "exampleRoman": "khargoś",
+          "meaning": "rabbit",
+          "speak": "",
+          "ipa": "kʰə"
+        },
+        {
+          "char": "ग",
+          "roman": "ga",
+          "hint": "g",
+          "example": "गमला",
+          "exampleRoman": "gamlā",
+          "meaning": "flowerpot",
+          "speak": "",
+          "ipa": "ɡə"
+        },
+        {
+          "char": "घ",
+          "roman": "gha",
+          "hint": "g with a breathy release",
+          "example": "घर",
+          "exampleRoman": "ghar",
+          "meaning": "house",
+          "speak": "",
+          "ipa": "ɡʱə"
+        },
+        {
+          "char": "ङ",
+          "roman": "ṅa",
+          "hint": "ng; only inside words",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "ŋə"
+        }
+      ]
+    },
+    {
+      "title": "Palatal consonants",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "च",
+          "roman": "ca",
+          "hint": "ch, no puff of air",
+          "example": "चम्मच",
+          "exampleRoman": "cammac",
+          "meaning": "spoon",
+          "speak": "",
+          "ipa": "tʃə"
+        },
+        {
+          "char": "छ",
+          "roman": "cha",
+          "hint": "ch with a puff of air",
+          "example": "छतरी",
+          "exampleRoman": "chatrī",
+          "meaning": "umbrella",
+          "speak": "",
+          "ipa": "tʃʰə"
+        },
+        {
+          "char": "ज",
+          "roman": "ja",
+          "hint": "j",
+          "example": "जहाज़",
+          "exampleRoman": "jahāz",
+          "meaning": "ship",
+          "speak": "",
+          "ipa": "dʒə"
+        },
+        {
+          "char": "झ",
+          "roman": "jha",
+          "hint": "j with a breathy release",
+          "example": "झंडा",
+          "exampleRoman": "jhaṇḍā",
+          "meaning": "flag",
+          "speak": "",
+          "ipa": "dʒʱə"
+        },
+        {
+          "char": "ञ",
+          "roman": "ña",
+          "hint": "ny; rare in Hindi",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "ɲə"
+        }
+      ]
+    },
+    {
+      "title": "Retroflex consonants",
+      "note": "Curl the tongue tip back and touch the roof of the mouth. This gives the 'hard' t and d of Indian English.",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ट",
+          "roman": "ṭa",
+          "hint": "t with the tongue curled back",
+          "example": "टमाटर",
+          "exampleRoman": "ṭamāṭar",
+          "meaning": "tomato",
+          "speak": "",
+          "ipa": "ʈə"
+        },
+        {
+          "char": "ठ",
+          "roman": "ṭha",
+          "hint": "curled-back t with a puff of air",
+          "example": "ठंडा",
+          "exampleRoman": "ṭhaṇḍā",
+          "meaning": "cold",
+          "speak": "",
+          "ipa": "ʈʰə"
+        },
+        {
+          "char": "ड",
+          "roman": "ḍa",
+          "hint": "d with the tongue curled back",
+          "example": "डमरू",
+          "exampleRoman": "ḍamrū",
+          "meaning": "hand drum",
+          "speak": "",
+          "ipa": "ɖə"
+        },
+        {
+          "char": "ढ",
+          "roman": "ḍha",
+          "hint": "curled-back d, breathy",
+          "example": "ढोल",
+          "exampleRoman": "ḍhol",
+          "meaning": "barrel drum",
+          "speak": "",
+          "ipa": "ɖʱə"
+        },
+        {
+          "char": "ण",
+          "roman": "ṇa",
+          "hint": "n with the tongue curled back",
+          "example": "बाण",
+          "exampleRoman": "bāṇ",
+          "meaning": "arrow",
+          "speak": "",
+          "ipa": "ɳə"
+        }
+      ]
+    },
+    {
+      "title": "Dental consonants",
+      "note": "Tongue tip against the back of the upper teeth: softer than English t and d.",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "त",
+          "roman": "ta",
+          "hint": "t with the tongue on the teeth",
+          "example": "तरबूज़",
+          "exampleRoman": "tarbūz",
+          "meaning": "watermelon",
+          "speak": "",
+          "ipa": "t̪ə"
+        },
+        {
+          "char": "थ",
+          "roman": "tha",
+          "hint": "dental t with a puff of air (not th as in thin)",
+          "example": "थाली",
+          "exampleRoman": "thālī",
+          "meaning": "plate",
+          "speak": "",
+          "ipa": "t̪ʰə"
+        },
+        {
+          "char": "द",
+          "roman": "da",
+          "hint": "d with the tongue on the teeth",
+          "example": "दवा",
+          "exampleRoman": "davā",
+          "meaning": "medicine",
+          "speak": "",
+          "ipa": "d̪ə"
+        },
+        {
+          "char": "ध",
+          "roman": "dha",
+          "hint": "dental d, breathy",
+          "example": "धनुष",
+          "exampleRoman": "dhanuṣ",
+          "meaning": "bow",
+          "speak": "",
+          "ipa": "d̪ʱə"
+        },
+        {
+          "char": "न",
+          "roman": "na",
+          "hint": "n",
+          "example": "नल",
+          "exampleRoman": "nal",
+          "meaning": "tap",
+          "speak": "",
+          "ipa": "nə"
+        }
+      ]
+    },
+    {
+      "title": "Labial consonants (lips)",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "प",
+          "roman": "pa",
+          "hint": "p, no puff of air",
+          "example": "पतंग",
+          "exampleRoman": "patang",
+          "meaning": "kite",
+          "speak": "",
+          "ipa": "pə"
+        },
+        {
+          "char": "फ",
+          "roman": "pha",
+          "hint": "p with a puff of air; often said f",
+          "example": "फल",
+          "exampleRoman": "phal",
+          "meaning": "fruit",
+          "speak": "",
+          "ipa": "pʰə"
+        },
+        {
+          "char": "ब",
+          "roman": "ba",
+          "hint": "b",
+          "example": "बतख़",
+          "exampleRoman": "batakh",
+          "meaning": "duck",
+          "speak": "",
+          "ipa": "bə"
+        },
+        {
+          "char": "भ",
+          "roman": "bha",
+          "hint": "b with a breathy release",
+          "example": "भालू",
+          "exampleRoman": "bhālū",
+          "meaning": "bear",
+          "speak": "",
+          "ipa": "bʱə"
+        },
+        {
+          "char": "म",
+          "roman": "ma",
+          "hint": "m",
+          "example": "मछली",
+          "exampleRoman": "machlī",
+          "meaning": "fish",
+          "speak": "",
+          "ipa": "mə"
+        }
+      ]
+    },
+    {
+      "title": "Semivowels and sibilants",
+      "group": "More consonants",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "य",
+          "roman": "ya",
+          "hint": "y",
+          "example": "यह",
+          "exampleRoman": "yah",
+          "meaning": "this",
+          "speak": "",
+          "ipa": "jə"
+        },
+        {
+          "char": "र",
+          "roman": "ra",
+          "hint": "a tapped r",
+          "example": "रथ",
+          "exampleRoman": "rath",
+          "meaning": "chariot",
+          "speak": "",
+          "ipa": "ɾə"
+        },
+        {
+          "char": "ल",
+          "roman": "la",
+          "hint": "l",
+          "example": "लड़का",
+          "exampleRoman": "laṛkā",
+          "meaning": "boy",
+          "speak": "",
+          "ipa": "lə"
+        },
+        {
+          "char": "व",
+          "roman": "va",
+          "hint": "between v and w",
+          "example": "वन",
+          "exampleRoman": "van",
+          "meaning": "forest",
+          "speak": "",
+          "ipa": "ʋə"
+        },
+        {
+          "char": "श",
+          "roman": "śa",
+          "hint": "sh",
+          "example": "शेर",
+          "exampleRoman": "śer",
+          "meaning": "lion, tiger",
+          "speak": "",
+          "ipa": "ʃə"
+        },
+        {
+          "char": "ष",
+          "roman": "ṣa",
+          "hint": "sh; in Hindi said like श",
+          "example": "षट्कोण",
+          "exampleRoman": "ṣaṭkoṇ",
+          "meaning": "hexagon",
+          "speak": "",
+          "ipa": "ʃə"
+        },
+        {
+          "char": "स",
+          "roman": "sa",
+          "hint": "s",
+          "example": "सड़क",
+          "exampleRoman": "saṛak",
+          "meaning": "road",
+          "speak": "",
+          "ipa": "sə"
+        },
+        {
+          "char": "ह",
+          "roman": "ha",
+          "hint": "h, slightly breathy",
+          "example": "हाथी",
+          "exampleRoman": "hāthī",
+          "meaning": "elephant",
+          "speak": "",
+          "ipa": "ɦə"
+        }
+      ]
+    },
+    {
+      "title": "Special letters",
+      "note": "Two flapped sounds marked with a dot, and three conjuncts so common they are learned as letters.",
+      "group": "More consonants",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "ड़",
+          "roman": "ṛa",
+          "hint": "a flap: curl the tongue back and flick it forward",
+          "example": "पेड़",
+          "exampleRoman": "peṛ",
+          "meaning": "tree",
+          "speak": "",
+          "ipa": "ɽə"
+        },
+        {
+          "char": "ढ़",
+          "roman": "ṛha",
+          "hint": "the same flap, breathy",
+          "example": "पढ़ना",
+          "exampleRoman": "paṛhnā",
+          "meaning": "to read, to study",
+          "speak": "",
+          "ipa": "ɽʱə"
+        },
+        {
+          "char": "क्ष",
+          "roman": "kṣa",
+          "hint": "k + sh",
+          "example": "क्षमा",
+          "exampleRoman": "kṣamā",
+          "meaning": "forgiveness",
+          "speak": "",
+          "ipa": "kʃə"
+        },
+        {
+          "char": "त्र",
+          "roman": "tra",
+          "hint": "t + r",
+          "example": "त्रिभुज",
+          "exampleRoman": "tribhuj",
+          "meaning": "triangle",
+          "speak": "",
+          "ipa": "t̪ɾə"
+        },
+        {
+          "char": "ज्ञ",
+          "roman": "gya",
+          "hint": "said gya in Hindi",
+          "example": "ज्ञान",
+          "exampleRoman": "gyān",
+          "meaning": "knowledge",
+          "speak": "",
+          "ipa": "ɡjə"
+        },
+        {
+          "char": "श्र",
+          "roman": "śra",
+          "hint": "sh + r",
+          "example": "श्रम",
+          "exampleRoman": "śram",
+          "meaning": "labor",
+          "speak": "",
+          "ipa": "ʃɾə"
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "title": "How Devanagari works",
+      "body": "<p>Devanagari is an <i>abugida</i>: every consonant letter already includes a short a. <span lang=\"hi\">क</span> on its own is ka, not k. To write another vowel you attach a vowel sign; to remove the vowel entirely you add a small slanted stroke called halant (<span lang=\"hi\">क्</span>).</p>\n<p>Letters hang from a horizontal headline, the <i>shirorekha</i>, which runs unbroken across a whole word: <span lang=\"hi\">नमस्ते</span>.</p>\n<p>The consonants are arranged by where the sound is made, from the throat to the lips. Each row has five letters in the same order: plain, aspirated, voiced, voiced and breathy, nasal. Learn one row and you know the pattern for all of them. Open the chart to see the grid.</p>"
+    },
+    {
+      "title": "Vowel signs (matras)",
+      "body": "<p>Each vowel except a has two forms: a full letter for the start of a word and a sign for use after a consonant.</p>\n<table>\n<tr><td lang=\"hi\">आ / ा</td><td><span lang=\"hi\">का</span> kā</td></tr>\n<tr><td lang=\"hi\">इ / ि</td><td><span lang=\"hi\">कि</span> ki, written before the consonant</td></tr>\n<tr><td lang=\"hi\">ई / ी</td><td><span lang=\"hi\">की</span> kī</td></tr>\n<tr><td lang=\"hi\">उ / ु</td><td><span lang=\"hi\">कु</span> ku, below</td></tr>\n<tr><td lang=\"hi\">ए / े</td><td><span lang=\"hi\">के</span> ke, above</td></tr>\n<tr><td lang=\"hi\">ओ / ो</td><td><span lang=\"hi\">को</span> ko</td></tr>\n</table>\n<p>With <span lang=\"hi\">र</span> the u signs attach to the side instead: <span lang=\"hi\">रु</span> ru, <span lang=\"hi\">रू</span> rū.</p>"
+    },
+    {
+      "title": "Conjunct consonants",
+      "body": "<p>When two consonants meet with no vowel between them, they usually fuse into a conjunct. Often the first letter loses its vertical stroke and leans on the second:</p>\n<table>\n<tr><td lang=\"hi\">स् + त = स्त</td><td>st, as in <span lang=\"hi\">नमस्ते</span></td></tr>\n<tr><td lang=\"hi\">प् + य = प्य</td><td>py, as in <span lang=\"hi\">प्यार</span> (love)</td></tr>\n<tr><td lang=\"hi\">क् + य = क्य</td><td>ky, as in <span lang=\"hi\">क्या</span> (what)</td></tr>\n</table>\n<p><span lang=\"hi\">र</span> is special: before another consonant it becomes a small hook on top (<span lang=\"hi\">र्म</span> in <span lang=\"hi\">धर्म</span>), and after one it becomes a small slanted stroke below (<span lang=\"hi\">प्र</span>).</p>"
+    },
+    {
+      "title": "Aspiration and retroflex sounds",
+      "body": "<p>Two contrasts English does not make change meaning in Hindi.</p>\n<p><b>Aspiration.</b> Hold a hand in front of your mouth. <span lang=\"hi\">क</span> (ka) gives almost no puff of air, <span lang=\"hi\">ख</span> (kha) gives a strong one. <span lang=\"hi\">काना</span> (one-eyed) and <span lang=\"hi\">खाना</span> (food) are different words.</p>\n<p><b>Retroflex versus dental.</b> For <span lang=\"hi\">ट ड</span> curl the tongue tip back; for <span lang=\"hi\">त द</span> press it against the teeth. English t sits between the two, so you need to move your tongue further in both directions.</p>"
+    },
+    {
+      "title": "The silent a",
+      "body": "<p>Hindi often drops the built-in a, especially at the end of a word and in the middle of longer words. The spelling keeps it; the pronunciation does not.</p>\n<table>\n<tr><td lang=\"hi\">कमल</td><td>written ka-ma-la, said kamal</td></tr>\n<tr><td lang=\"hi\">समझना</td><td>written sa-ma-jha-nā, said samajhnā</td></tr>\n</table>\n<p>As a rule of thumb, drop the final a of a word, and listen to the audio to learn the middle ones.</p>"
+    }
+  ]
+}

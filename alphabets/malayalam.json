@@ -1,0 +1,774 @@
+{
+  "schema": "alphabet@1",
+  "id": "malayalam",
+  "title": "Malayalam",
+  "native": "മലയാളം",
+  "lang": "ml-IN",
+  "langName": "Malayalam",
+  "font": "\"Noto Sans Malayalam\", \"Malayalam Sangam MN\", \"Kartika\", \"Nirmala UI\", sans-serif",
+  "blurb": "The script of Kerala, made of loops and curls. It has special letters for consonants at the end of a syllable.",
+  "writeTip": "Most letters are one long looping stroke. Start at the left and work clockwise; vowel signs and the chandrakkala come last.",
+  "notes": [
+    "Malayalam for SquirrelGo Alphabets. Romanization is a simplified ISO 15919. Hints, groupings and articles are original."
+  ],
+  "lessons": [
+    {
+      "title": "Vowels",
+      "note": "Malayalam keeps short and long vowels apart, including e and o.",
+      "group": "Vowels",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "അ",
+          "roman": "a",
+          "hint": "short a, like u in but",
+          "example": "അമ്മ",
+          "exampleRoman": "amma",
+          "meaning": "mother",
+          "speak": "",
+          "ipa": "a"
+        },
+        {
+          "char": "ആ",
+          "roman": "ā",
+          "hint": "long a, as in father",
+          "example": "ആന",
+          "exampleRoman": "āna",
+          "meaning": "elephant",
+          "speak": "",
+          "ipa": "aː"
+        },
+        {
+          "char": "ഇ",
+          "roman": "i",
+          "hint": "short i, as in bit",
+          "example": "ഇല",
+          "exampleRoman": "ila",
+          "meaning": "leaf",
+          "speak": "",
+          "ipa": "i"
+        },
+        {
+          "char": "ഈ",
+          "roman": "ī",
+          "hint": "long ee, as in see",
+          "example": "ഈച്ച",
+          "exampleRoman": "īcca",
+          "meaning": "housefly",
+          "speak": "",
+          "ipa": "iː"
+        },
+        {
+          "char": "ഉ",
+          "roman": "u",
+          "hint": "short u, as in put",
+          "example": "ഉറുമ്പ്",
+          "exampleRoman": "uṟumpŭ",
+          "meaning": "ant",
+          "speak": "",
+          "ipa": "u"
+        },
+        {
+          "char": "ഊ",
+          "roman": "ū",
+          "hint": "long oo, as in food",
+          "example": "ഊഞ്ഞാൽ",
+          "exampleRoman": "ūññāl",
+          "meaning": "swing",
+          "speak": "",
+          "ipa": "uː"
+        },
+        {
+          "char": "ഋ",
+          "roman": "ṛ",
+          "hint": "said ri",
+          "example": "ഋഷി",
+          "exampleRoman": "ṛṣi",
+          "meaning": "sage",
+          "speak": "",
+          "ipa": "ri"
+        },
+        {
+          "char": "എ",
+          "roman": "e",
+          "hint": "short e, as in bed",
+          "example": "എലി",
+          "exampleRoman": "eli",
+          "meaning": "rat",
+          "speak": "",
+          "ipa": "e"
+        },
+        {
+          "char": "ഏ",
+          "roman": "ē",
+          "hint": "long e, as in hey without the glide",
+          "example": "ഏണി",
+          "exampleRoman": "ēṇi",
+          "meaning": "ladder",
+          "speak": "",
+          "ipa": "eː"
+        },
+        {
+          "char": "ഐ",
+          "roman": "ai",
+          "hint": "ai as in aisle",
+          "example": "ഐക്യം",
+          "exampleRoman": "aikyam",
+          "meaning": "unity",
+          "speak": "",
+          "ipa": "ai"
+        },
+        {
+          "char": "ഒ",
+          "roman": "o",
+          "hint": "short o",
+          "example": "ഒട്ടകം",
+          "exampleRoman": "oṭṭakam",
+          "meaning": "camel",
+          "speak": "",
+          "ipa": "o"
+        },
+        {
+          "char": "ഓ",
+          "roman": "ō",
+          "hint": "long o, as in go without the glide",
+          "example": "ഓടം",
+          "exampleRoman": "ōṭam",
+          "meaning": "boat",
+          "speak": "",
+          "ipa": "oː"
+        },
+        {
+          "char": "ഔ",
+          "roman": "au",
+          "hint": "ow as in cow",
+          "example": "ഔഷധം",
+          "exampleRoman": "auṣadham",
+          "meaning": "medicine",
+          "speak": "",
+          "ipa": "au"
+        },
+        {
+          "char": "അം",
+          "roman": "aṁ",
+          "hint": "anusvaram: m at the end of a syllable",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "am"
+        }
+      ]
+    },
+    {
+      "title": "Vowel signs on ക",
+      "note": "െ, േ and ൈ are written before the consonant but said after it. ൊ, ോ and ൌ go on both sides.",
+      "group": "Vowel signs",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "കാ",
+          "roman": "kā",
+          "hint": "ാ: long ā",
+          "example": "കാക്ക",
+          "exampleRoman": "kākka",
+          "meaning": "crow",
+          "speak": "",
+          "ipa": "kaː"
+        },
+        {
+          "char": "കി",
+          "roman": "ki",
+          "hint": "ി: i",
+          "example": "കിളി",
+          "exampleRoman": "kiḷi",
+          "meaning": "parrot",
+          "speak": "",
+          "ipa": "ki"
+        },
+        {
+          "char": "കീ",
+          "roman": "kī",
+          "hint": "ീ: ī",
+          "example": "കീരി",
+          "exampleRoman": "kīri",
+          "meaning": "mongoose",
+          "speak": "",
+          "ipa": "kiː"
+        },
+        {
+          "char": "കു",
+          "roman": "ku",
+          "hint": "ു: u, a hook below",
+          "example": "കുട",
+          "exampleRoman": "kuṭa",
+          "meaning": "umbrella",
+          "speak": "",
+          "ipa": "ku"
+        },
+        {
+          "char": "കൂ",
+          "roman": "kū",
+          "hint": "ൂ: ū, a double hook",
+          "example": "കൂട",
+          "exampleRoman": "kūṭa",
+          "meaning": "basket",
+          "speak": "",
+          "ipa": "kuː"
+        },
+        {
+          "char": "കൃ",
+          "roman": "kṛ",
+          "hint": "ൃ: ri",
+          "example": "കൃഷി",
+          "exampleRoman": "kṛṣi",
+          "meaning": "farming",
+          "speak": "",
+          "ipa": "kri"
+        },
+        {
+          "char": "കെ",
+          "roman": "ke",
+          "hint": "െ: short e, written first",
+          "example": "കെട്ടിടം",
+          "exampleRoman": "keṭṭiṭam",
+          "meaning": "building",
+          "speak": "",
+          "ipa": "ke"
+        },
+        {
+          "char": "കേ",
+          "roman": "kē",
+          "hint": "േ: long ē, written first",
+          "example": "കേരളം",
+          "exampleRoman": "kēraḷam",
+          "meaning": "Kerala",
+          "speak": "",
+          "ipa": "keː"
+        },
+        {
+          "char": "കൈ",
+          "roman": "kai",
+          "hint": "ൈ: ai, written first",
+          "example": "കൈ",
+          "exampleRoman": "kai",
+          "meaning": "hand",
+          "speak": "",
+          "ipa": "kai"
+        },
+        {
+          "char": "കൊ",
+          "roman": "ko",
+          "hint": "ൊ: short o, both sides",
+          "example": "കൊക്ക്",
+          "exampleRoman": "kokkŭ",
+          "meaning": "stork",
+          "speak": "",
+          "ipa": "ko"
+        },
+        {
+          "char": "കോ",
+          "roman": "kō",
+          "hint": "ോ: long ō, both sides",
+          "example": "കോഴി",
+          "exampleRoman": "kōḻi",
+          "meaning": "hen",
+          "speak": "",
+          "ipa": "koː"
+        },
+        {
+          "char": "കൗ",
+          "roman": "kau",
+          "hint": "ൗ: au",
+          "example": "കൗതുകം",
+          "exampleRoman": "kautukam",
+          "meaning": "curiosity",
+          "speak": "",
+          "ipa": "kau"
+        },
+        {
+          "char": "ക്",
+          "roman": "k",
+          "hint": "് chandrakkala: removes the vowel, or leaves a short ŭ",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "k"
+        }
+      ]
+    },
+    {
+      "title": "Velar consonants (back of the mouth)",
+      "note": "Each row of five follows the same pattern: plain, aspirated, voiced, voiced aspirated, nasal.",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ക",
+          "roman": "ka",
+          "hint": "k, no puff of air",
+          "example": "കപ്പൽ",
+          "exampleRoman": "kappal",
+          "meaning": "ship",
+          "speak": "",
+          "ipa": "ka"
+        },
+        {
+          "char": "ഖ",
+          "roman": "kha",
+          "hint": "k with a puff of air",
+          "example": "ഖനി",
+          "exampleRoman": "khani",
+          "meaning": "mine",
+          "speak": "",
+          "ipa": "kʰa"
+        },
+        {
+          "char": "ഗ",
+          "roman": "ga",
+          "hint": "g",
+          "example": "ഗുഹ",
+          "exampleRoman": "guha",
+          "meaning": "cave",
+          "speak": "",
+          "ipa": "ɡa"
+        },
+        {
+          "char": "ഘ",
+          "roman": "gha",
+          "hint": "g with a breathy release",
+          "example": "ഘടികാരം",
+          "exampleRoman": "ghaṭikāram",
+          "meaning": "clock",
+          "speak": "",
+          "ipa": "ɡʱa"
+        },
+        {
+          "char": "ങ",
+          "roman": "ṅa",
+          "hint": "ng; usually doubled",
+          "example": "മാങ്ങ",
+          "exampleRoman": "māṅṅa",
+          "meaning": "mango",
+          "speak": "",
+          "ipa": "ŋa"
+        }
+      ]
+    },
+    {
+      "title": "Palatal consonants",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ച",
+          "roman": "ca",
+          "hint": "ch, no puff of air",
+          "example": "ചക്ക",
+          "exampleRoman": "cakka",
+          "meaning": "jackfruit",
+          "speak": "",
+          "ipa": "tʃa"
+        },
+        {
+          "char": "ഛ",
+          "roman": "cha",
+          "hint": "ch with a puff of air",
+          "example": "ഛായ",
+          "exampleRoman": "chāya",
+          "meaning": "shade, likeness",
+          "speak": "",
+          "ipa": "tʃʰa"
+        },
+        {
+          "char": "ജ",
+          "roman": "ja",
+          "hint": "j",
+          "example": "ജനൽ",
+          "exampleRoman": "janal",
+          "meaning": "window",
+          "speak": "",
+          "ipa": "dʒa"
+        },
+        {
+          "char": "ഝ",
+          "roman": "jha",
+          "hint": "j with a breathy release; rare",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "dʒʱa"
+        },
+        {
+          "char": "ഞ",
+          "roman": "ña",
+          "hint": "ny",
+          "example": "ഞണ്ട്",
+          "exampleRoman": "ñaṇṭŭ",
+          "meaning": "crab",
+          "speak": "",
+          "ipa": "ɲa"
+        }
+      ]
+    },
+    {
+      "title": "Retroflex consonants",
+      "note": "Curl the tongue tip back and touch the roof of the mouth.",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ട",
+          "roman": "ṭa",
+          "hint": "t with the tongue curled back",
+          "example": "ടയർ",
+          "exampleRoman": "ṭayar",
+          "meaning": "tyre",
+          "speak": "",
+          "ipa": "ʈa"
+        },
+        {
+          "char": "ഠ",
+          "roman": "ṭha",
+          "hint": "curled-back t with a puff of air; rare",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "ʈʰa"
+        },
+        {
+          "char": "ഡ",
+          "roman": "ḍa",
+          "hint": "d with the tongue curled back",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "ɖa"
+        },
+        {
+          "char": "ഢ",
+          "roman": "ḍha",
+          "hint": "curled-back d, breathy; rare",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "ɖʱa"
+        },
+        {
+          "char": "ണ",
+          "roman": "ṇa",
+          "hint": "n with the tongue curled back",
+          "example": "മണി",
+          "exampleRoman": "maṇi",
+          "meaning": "bell",
+          "speak": "",
+          "ipa": "ɳa"
+        }
+      ]
+    },
+    {
+      "title": "Dental consonants",
+      "note": "Tongue tip against the back of the upper teeth: softer than English t and d.",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "ത",
+          "roman": "ta",
+          "hint": "t with the tongue on the teeth",
+          "example": "തവള",
+          "exampleRoman": "tavaḷa",
+          "meaning": "frog",
+          "speak": "",
+          "ipa": "t̪a"
+        },
+        {
+          "char": "ഥ",
+          "roman": "tha",
+          "hint": "dental t with a puff of air (not th as in thin)",
+          "example": "രഥം",
+          "exampleRoman": "ratham",
+          "meaning": "chariot",
+          "speak": "",
+          "ipa": "t̪ʰa"
+        },
+        {
+          "char": "ദ",
+          "roman": "da",
+          "hint": "d with the tongue on the teeth",
+          "example": "ദോശ",
+          "exampleRoman": "dōśa",
+          "meaning": "dosa",
+          "speak": "",
+          "ipa": "d̪a"
+        },
+        {
+          "char": "ധ",
+          "roman": "dha",
+          "hint": "dental d, breathy",
+          "example": "ധനം",
+          "exampleRoman": "dhanam",
+          "meaning": "wealth",
+          "speak": "",
+          "ipa": "d̪ʱa"
+        },
+        {
+          "char": "ന",
+          "roman": "na",
+          "hint": "n",
+          "example": "നായ",
+          "exampleRoman": "nāya",
+          "meaning": "dog",
+          "speak": "",
+          "ipa": "na"
+        }
+      ]
+    },
+    {
+      "title": "Labial consonants (lips)",
+      "group": "Consonants",
+      "chars": [
+        {
+          "char": "പ",
+          "roman": "pa",
+          "hint": "p, no puff of air",
+          "example": "പശു",
+          "exampleRoman": "paśu",
+          "meaning": "cow",
+          "speak": "",
+          "ipa": "pa"
+        },
+        {
+          "char": "ഫ",
+          "roman": "pha",
+          "hint": "p with a puff of air; often said f",
+          "example": "ഫലം",
+          "exampleRoman": "phalam",
+          "meaning": "fruit, result",
+          "speak": "",
+          "ipa": "pʰa"
+        },
+        {
+          "char": "ബ",
+          "roman": "ba",
+          "hint": "b",
+          "example": "ബസ്",
+          "exampleRoman": "basŭ",
+          "meaning": "bus",
+          "speak": "",
+          "ipa": "ba"
+        },
+        {
+          "char": "ഭ",
+          "roman": "bha",
+          "hint": "b with a breathy release",
+          "example": "ഭൂമി",
+          "exampleRoman": "bhūmi",
+          "meaning": "earth",
+          "speak": "",
+          "ipa": "bʱa"
+        },
+        {
+          "char": "മ",
+          "roman": "ma",
+          "hint": "m",
+          "example": "മരം",
+          "exampleRoman": "maram",
+          "meaning": "tree",
+          "speak": "",
+          "ipa": "ma"
+        }
+      ]
+    },
+    {
+      "title": "Other consonants",
+      "note": "Malayalam has two r's, two l's and the famous ḻ.",
+      "group": "More consonants",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "യ",
+          "roman": "ya",
+          "hint": "y",
+          "example": "യന്ത്രം",
+          "exampleRoman": "yantram",
+          "meaning": "machine",
+          "speak": "",
+          "ipa": "ja"
+        },
+        {
+          "char": "ര",
+          "roman": "ra",
+          "hint": "a light tapped r",
+          "example": "രാജാവ്",
+          "exampleRoman": "rājāvŭ",
+          "meaning": "king",
+          "speak": "",
+          "ipa": "ɾa"
+        },
+        {
+          "char": "ല",
+          "roman": "la",
+          "hint": "l",
+          "example": "ലഡ്ഡു",
+          "exampleRoman": "laḍḍu",
+          "meaning": "laddu (a sweet)",
+          "speak": "",
+          "ipa": "la"
+        },
+        {
+          "char": "വ",
+          "roman": "va",
+          "hint": "between v and w",
+          "example": "വള",
+          "exampleRoman": "vaḷa",
+          "meaning": "bangle",
+          "speak": "",
+          "ipa": "ʋa"
+        },
+        {
+          "char": "ശ",
+          "roman": "śa",
+          "hint": "sh",
+          "example": "ശംഖ്",
+          "exampleRoman": "śaṅkhŭ",
+          "meaning": "conch shell",
+          "speak": "",
+          "ipa": "ʃa"
+        },
+        {
+          "char": "ഷ",
+          "roman": "ṣa",
+          "hint": "sh with the tongue curled back",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "ʂa"
+        },
+        {
+          "char": "സ",
+          "roman": "sa",
+          "hint": "s",
+          "example": "സിംഹം",
+          "exampleRoman": "siṁham",
+          "meaning": "lion",
+          "speak": "",
+          "ipa": "sa"
+        },
+        {
+          "char": "ഹ",
+          "roman": "ha",
+          "hint": "h",
+          "example": "ഹൃദയം",
+          "exampleRoman": "hṛdayam",
+          "meaning": "heart",
+          "speak": "",
+          "ipa": "ɦa"
+        },
+        {
+          "char": "ള",
+          "roman": "ḷa",
+          "hint": "l with the tongue curled back",
+          "example": "കുളം",
+          "exampleRoman": "kuḷam",
+          "meaning": "pond",
+          "speak": "",
+          "ipa": "ɭa"
+        },
+        {
+          "char": "ഴ",
+          "roman": "ḻa",
+          "hint": "curl the tongue far back without touching: between r and l",
+          "example": "മഴ",
+          "exampleRoman": "maḻa",
+          "meaning": "rain",
+          "speak": "",
+          "ipa": "ɻa"
+        },
+        {
+          "char": "റ",
+          "roman": "ṟa",
+          "hint": "a stronger r; ṯṯ when doubled",
+          "example": "റോഡ്",
+          "exampleRoman": "ṟōḍŭ",
+          "meaning": "road",
+          "speak": "",
+          "ipa": "ra"
+        }
+      ]
+    },
+    {
+      "title": "Chillu letters",
+      "note": "A consonant with no vowel after it at the end of a syllable is written as a chillu, a short special form.",
+      "group": "Chillu",
+      "chars": [
+        {
+          "char": "ൻ",
+          "roman": "n",
+          "hint": "chillu n",
+          "example": "അവൻ",
+          "exampleRoman": "avan",
+          "meaning": "he",
+          "speak": "",
+          "ipa": "n"
+        },
+        {
+          "char": "ർ",
+          "roman": "r",
+          "hint": "chillu r",
+          "example": "കാർ",
+          "exampleRoman": "kār",
+          "meaning": "car",
+          "speak": "",
+          "ipa": "r"
+        },
+        {
+          "char": "ൽ",
+          "roman": "l",
+          "hint": "chillu l",
+          "example": "കപ്പൽ",
+          "exampleRoman": "kappal",
+          "meaning": "ship",
+          "speak": "",
+          "ipa": "l"
+        },
+        {
+          "char": "ൾ",
+          "roman": "ḷ",
+          "hint": "chillu ḷ",
+          "example": "അവൾ",
+          "exampleRoman": "avaḷ",
+          "meaning": "she",
+          "speak": "",
+          "ipa": "ɭ"
+        },
+        {
+          "char": "ൺ",
+          "roman": "ṇ",
+          "hint": "chillu ṇ",
+          "example": "കൺ",
+          "exampleRoman": "kaṇ",
+          "meaning": "eye",
+          "speak": "",
+          "ipa": "ɳ"
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "title": "How Malayalam works",
+      "body": "<p>Malayalam is an <i>abugida</i> like its neighbours: each consonant carries a short a, and other vowels are signs written around it. It has the largest letter set of the Indian scripts, because it keeps the Sanskrit letters and adds its own sounds: <span lang=\"ml\">ഴ റ</span> and the chillu letters.</p>\n<p>The letters are built from loops, written mostly in one stroke. Many pairs differ only by an extra loop or a tail, so compare them side by side in the chart: <span lang=\"ml\">ബ വ</span>, <span lang=\"ml\">ന ണ</span>, <span lang=\"ml\">ഭ ദ</span>.</p>"
+    },
+    {
+      "title": "The chandrakkala and the half-u",
+      "body": "<p>The small curve <span lang=\"ml\">്</span>, the <i>chandrakkala</i>, removes the built-in a. At the end of a word it does not leave silence: it leaves a short, unrounded u (written ŭ here). <span lang=\"ml\">ബസ്</span> is said basŭ, and <span lang=\"ml\">ശംഖ്</span> śaṅkhŭ.</p>\n<p>Where a consonant truly ends a syllable, Malayalam uses a chillu letter instead: <span lang=\"ml\">അവൻ</span> avan (he), <span lang=\"ml\">അവൾ</span> avaḷ (she).</p>"
+    },
+    {
+      "title": "Old and new spelling",
+      "body": "<p>In 1971 Kerala introduced a reformed script for typewriters and printing. It split many vowel signs off the consonant, so that u and ū became separate marks (<span lang=\"ml\">കു</span>) and r after a consonant became a mark on the left (<span lang=\"ml\">ക്ര</span>). Older books and many modern fonts still use the traditional joined forms, and today both are read everywhere. You will see the same word printed both ways.</p>"
+    }
+  ]
+}

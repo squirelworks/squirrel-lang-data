@@ -1,0 +1,572 @@
+{
+  "schema": "alphabet@1",
+  "id": "tamil",
+  "title": "Tamil",
+  "native": "தமிழ்",
+  "lang": "ta-IN",
+  "langName": "Tamil",
+  "font": "\"Noto Sans Tamil\", \"Tamil Sangam MN\", \"Latha\", \"Nirmala UI\", sans-serif",
+  "blurb": "One of the oldest living scripts, with 12 vowels and 18 consonants. One letter can stand for k or g.",
+  "writeTip": "Tamil letters are mostly drawn in one or two flowing strokes, starting at the top left. The dot (pulli) and vowel signs come last.",
+  "notes": [
+    "Tamil for SquirrelGo Alphabets. Romanization is a simplified ISO 15919. Hints, groupings and articles are original."
+  ],
+  "lessons": [
+    {
+      "title": "Vowels (uyir, 'life')",
+      "note": "Tamil keeps short and long vowels apart, including e and o.",
+      "group": "Vowels",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "அ",
+          "roman": "a",
+          "hint": "short a, like u in but",
+          "example": "அம்மா",
+          "exampleRoman": "ammā",
+          "meaning": "mother",
+          "speak": "",
+          "ipa": "a"
+        },
+        {
+          "char": "ஆ",
+          "roman": "ā",
+          "hint": "long a, as in father",
+          "example": "ஆடு",
+          "exampleRoman": "āṭu",
+          "meaning": "goat",
+          "speak": "",
+          "ipa": "aː"
+        },
+        {
+          "char": "இ",
+          "roman": "i",
+          "hint": "short i, as in bit",
+          "example": "இலை",
+          "exampleRoman": "ilai",
+          "meaning": "leaf",
+          "speak": "",
+          "ipa": "i"
+        },
+        {
+          "char": "ஈ",
+          "roman": "ī",
+          "hint": "long ee, as in see",
+          "example": "ஈ",
+          "exampleRoman": "ī",
+          "meaning": "housefly",
+          "speak": "",
+          "ipa": "iː"
+        },
+        {
+          "char": "உ",
+          "roman": "u",
+          "hint": "short u, lips relaxed",
+          "example": "உரல்",
+          "exampleRoman": "ural",
+          "meaning": "mortar",
+          "speak": "",
+          "ipa": "u"
+        },
+        {
+          "char": "ஊ",
+          "roman": "ū",
+          "hint": "long oo, as in food",
+          "example": "ஊசி",
+          "exampleRoman": "ūci",
+          "meaning": "needle",
+          "speak": "",
+          "ipa": "uː"
+        },
+        {
+          "char": "எ",
+          "roman": "e",
+          "hint": "short e, as in bed",
+          "example": "எலி",
+          "exampleRoman": "eli",
+          "meaning": "rat",
+          "speak": "",
+          "ipa": "e"
+        },
+        {
+          "char": "ஏ",
+          "roman": "ē",
+          "hint": "long e, as in hey without the glide",
+          "example": "ஏணி",
+          "exampleRoman": "ēṇi",
+          "meaning": "ladder",
+          "speak": "",
+          "ipa": "eː"
+        },
+        {
+          "char": "ஐ",
+          "roman": "ai",
+          "hint": "ai as in aisle",
+          "example": "ஐந்து",
+          "exampleRoman": "aintu",
+          "meaning": "five",
+          "speak": "",
+          "ipa": "ai"
+        },
+        {
+          "char": "ஒ",
+          "roman": "o",
+          "hint": "short o",
+          "example": "ஒட்டகம்",
+          "exampleRoman": "oṭṭakam",
+          "meaning": "camel",
+          "speak": "",
+          "ipa": "o"
+        },
+        {
+          "char": "ஓ",
+          "roman": "ō",
+          "hint": "long o, as in go without the glide",
+          "example": "ஓடம்",
+          "exampleRoman": "ōṭam",
+          "meaning": "boat",
+          "speak": "",
+          "ipa": "oː"
+        },
+        {
+          "char": "ஔ",
+          "roman": "au",
+          "hint": "ow as in cow",
+          "example": "ஔவையார்",
+          "exampleRoman": "auvaiyār",
+          "meaning": "Auvaiyar, a famous poet",
+          "speak": "",
+          "ipa": "au"
+        },
+        {
+          "char": "ஃ",
+          "roman": "ḵ",
+          "hint": "āytam: a soft h or kh sound, very rare",
+          "example": "எஃகு",
+          "exampleRoman": "eḵku",
+          "meaning": "steel",
+          "speak": "",
+          "ipa": "h"
+        }
+      ]
+    },
+    {
+      "title": "Vowel signs on க",
+      "note": "Each consonant joined with a vowel (uyirmey, 'living body') has its own shape. ெ, ே and ை are written before the consonant.",
+      "group": "Vowel signs",
+      "cols": 4,
+      "chars": [
+        {
+          "char": "கா",
+          "roman": "kā",
+          "hint": "ா: long ā",
+          "example": "காகம்",
+          "exampleRoman": "kākam",
+          "meaning": "crow",
+          "speak": "",
+          "ipa": "kaː"
+        },
+        {
+          "char": "கி",
+          "roman": "ki",
+          "hint": "ி: i, a loop on the top right",
+          "example": "கிளி",
+          "exampleRoman": "kiḷi",
+          "meaning": "parrot",
+          "speak": "",
+          "ipa": "ki"
+        },
+        {
+          "char": "கீ",
+          "roman": "kī",
+          "hint": "ீ: ī, a curl on the top right",
+          "example": "கீரை",
+          "exampleRoman": "kīrai",
+          "meaning": "leafy greens",
+          "speak": "",
+          "ipa": "kiː"
+        },
+        {
+          "char": "கு",
+          "roman": "ku",
+          "hint": "u: a hook below; the shape changes from letter to letter",
+          "example": "குடை",
+          "exampleRoman": "kuṭai",
+          "meaning": "umbrella",
+          "speak": "",
+          "ipa": "ku"
+        },
+        {
+          "char": "கூ",
+          "roman": "kū",
+          "hint": "ū: a hook with a tail; it too changes shape",
+          "example": "கூடை",
+          "exampleRoman": "kūṭai",
+          "meaning": "basket",
+          "speak": "",
+          "ipa": "kuː"
+        },
+        {
+          "char": "கெ",
+          "roman": "ke",
+          "hint": "ெ: short e, written first",
+          "example": "கெண்டை",
+          "exampleRoman": "keṇṭai",
+          "meaning": "carp",
+          "speak": "",
+          "ipa": "ke"
+        },
+        {
+          "char": "கே",
+          "roman": "kē",
+          "hint": "ே: long ē, written first",
+          "example": "கேள்வி",
+          "exampleRoman": "kēḷvi",
+          "meaning": "question",
+          "speak": "",
+          "ipa": "keː"
+        },
+        {
+          "char": "கை",
+          "roman": "kai",
+          "hint": "ை: ai, written first",
+          "example": "கை",
+          "exampleRoman": "kai",
+          "meaning": "hand",
+          "speak": "",
+          "ipa": "kai"
+        },
+        {
+          "char": "கொ",
+          "roman": "ko",
+          "hint": "ொ: o, on both sides",
+          "example": "கொடி",
+          "exampleRoman": "koṭi",
+          "meaning": "flag, vine",
+          "speak": "",
+          "ipa": "ko"
+        },
+        {
+          "char": "கோ",
+          "roman": "kō",
+          "hint": "ோ: ō, on both sides",
+          "example": "கோழி",
+          "exampleRoman": "kōḻi",
+          "meaning": "hen",
+          "speak": "",
+          "ipa": "koː"
+        },
+        {
+          "char": "கௌ",
+          "roman": "kau",
+          "hint": "ௌ: au, on both sides",
+          "example": "கௌதாரி",
+          "exampleRoman": "kautāri",
+          "meaning": "partridge",
+          "speak": "",
+          "ipa": "kau"
+        },
+        {
+          "char": "க்",
+          "roman": "k",
+          "hint": "் pulli: the dot removes the vowel",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "k"
+        }
+      ]
+    },
+    {
+      "title": "Hard consonants (vallinam)",
+      "note": "Each of these is said voiceless at the start of a word or when doubled, and voiced or softened between vowels: க is k in கல் but g in பகல்.",
+      "group": "Consonants",
+      "cols": 3,
+      "chars": [
+        {
+          "char": "க",
+          "roman": "ka",
+          "hint": "k; g or a soft h between vowels",
+          "example": "கண்",
+          "exampleRoman": "kaṇ",
+          "meaning": "eye",
+          "speak": "",
+          "ipa": "ka"
+        },
+        {
+          "char": "ச",
+          "roman": "ca",
+          "hint": "s or ch at the start; s or j between vowels",
+          "example": "சட்டை",
+          "exampleRoman": "caṭṭai",
+          "meaning": "shirt",
+          "speak": "",
+          "ipa": "tʃa"
+        },
+        {
+          "char": "ட",
+          "roman": "ṭa",
+          "hint": "t with the tongue curled back; ḍ between vowels",
+          "example": "பட்டம்",
+          "exampleRoman": "paṭṭam",
+          "meaning": "kite",
+          "speak": "",
+          "ipa": "ʈa"
+        },
+        {
+          "char": "த",
+          "roman": "ta",
+          "hint": "t with the tongue on the teeth; dh between vowels",
+          "example": "தண்ணீர்",
+          "exampleRoman": "taṇṇīr",
+          "meaning": "water",
+          "speak": "",
+          "ipa": "t̪a"
+        },
+        {
+          "char": "ப",
+          "roman": "pa",
+          "hint": "p; b between vowels",
+          "example": "பால்",
+          "exampleRoman": "pāl",
+          "meaning": "milk",
+          "speak": "",
+          "ipa": "pa"
+        },
+        {
+          "char": "ற",
+          "roman": "ṟa",
+          "hint": "a strong trilled r; tr when doubled",
+          "example": "கயிறு",
+          "exampleRoman": "kayiṟu",
+          "meaning": "rope",
+          "speak": "",
+          "ipa": "ra"
+        }
+      ]
+    },
+    {
+      "title": "Soft consonants (mellinam)",
+      "note": "The nasals. Each one goes with the hard consonant above it.",
+      "group": "Consonants",
+      "cols": 3,
+      "chars": [
+        {
+          "char": "ங",
+          "roman": "ṅa",
+          "hint": "ng; almost always before க",
+          "example": "சங்கு",
+          "exampleRoman": "caṅku",
+          "meaning": "conch shell",
+          "speak": "",
+          "ipa": "ŋa"
+        },
+        {
+          "char": "ஞ",
+          "roman": "ña",
+          "hint": "ny",
+          "example": "ஞாயிறு",
+          "exampleRoman": "ñāyiṟu",
+          "meaning": "sun, Sunday",
+          "speak": "",
+          "ipa": "ɲa"
+        },
+        {
+          "char": "ண",
+          "roman": "ṇa",
+          "hint": "n with the tongue curled back",
+          "example": "மண்",
+          "exampleRoman": "maṇ",
+          "meaning": "soil",
+          "speak": "",
+          "ipa": "ɳa"
+        },
+        {
+          "char": "ந",
+          "roman": "na",
+          "hint": "n with the tongue on the teeth; starts words",
+          "example": "நண்டு",
+          "exampleRoman": "naṇṭu",
+          "meaning": "crab",
+          "speak": "",
+          "ipa": "n̪a"
+        },
+        {
+          "char": "ம",
+          "roman": "ma",
+          "hint": "m",
+          "example": "மரம்",
+          "exampleRoman": "maram",
+          "meaning": "tree",
+          "speak": "",
+          "ipa": "ma"
+        },
+        {
+          "char": "ன",
+          "roman": "ṉa",
+          "hint": "n with the tongue on the gum ridge; ends words",
+          "example": "மீன்",
+          "exampleRoman": "mīṉ",
+          "meaning": "fish",
+          "speak": "",
+          "ipa": "na"
+        }
+      ]
+    },
+    {
+      "title": "Medium consonants (idaiyinam)",
+      "note": "The in-between sounds, including ழ, the letter Tamil is proud of.",
+      "group": "Consonants",
+      "cols": 3,
+      "chars": [
+        {
+          "char": "ய",
+          "roman": "ya",
+          "hint": "y",
+          "example": "யானை",
+          "exampleRoman": "yāṉai",
+          "meaning": "elephant",
+          "speak": "",
+          "ipa": "ja"
+        },
+        {
+          "char": "ர",
+          "roman": "ra",
+          "hint": "a light tapped r",
+          "example": "ரோஜா",
+          "exampleRoman": "rōjā",
+          "meaning": "rose",
+          "speak": "",
+          "ipa": "ɾa"
+        },
+        {
+          "char": "ல",
+          "roman": "la",
+          "hint": "l",
+          "example": "லட்டு",
+          "exampleRoman": "laṭṭu",
+          "meaning": "laddu (a sweet)",
+          "speak": "",
+          "ipa": "la"
+        },
+        {
+          "char": "வ",
+          "roman": "va",
+          "hint": "v, close to w",
+          "example": "வாழை",
+          "exampleRoman": "vāḻai",
+          "meaning": "banana plant",
+          "speak": "",
+          "ipa": "ʋa"
+        },
+        {
+          "char": "ழ",
+          "roman": "ḻa",
+          "hint": "curl the tongue far back without touching: between r and l",
+          "example": "பழம்",
+          "exampleRoman": "paḻam",
+          "meaning": "fruit",
+          "speak": "",
+          "ipa": "ɻa"
+        },
+        {
+          "char": "ள",
+          "roman": "ḷa",
+          "hint": "l with the tongue curled back",
+          "example": "வாள்",
+          "exampleRoman": "vāḷ",
+          "meaning": "sword",
+          "speak": "",
+          "ipa": "ɭa"
+        }
+      ]
+    },
+    {
+      "title": "Grantha letters",
+      "note": "Extra letters borrowed from the Grantha script to write Sanskrit and English words.",
+      "group": "More consonants",
+      "cols": 3,
+      "chars": [
+        {
+          "char": "ஜ",
+          "roman": "ja",
+          "hint": "j",
+          "example": "ஜன்னல்",
+          "exampleRoman": "jaṉṉal",
+          "meaning": "window",
+          "speak": "",
+          "ipa": "dʒa"
+        },
+        {
+          "char": "ஷ",
+          "roman": "ṣa",
+          "hint": "sh",
+          "example": "விஷம்",
+          "exampleRoman": "viṣam",
+          "meaning": "poison",
+          "speak": "",
+          "ipa": "ʂa"
+        },
+        {
+          "char": "ஸ",
+          "roman": "sa",
+          "hint": "s",
+          "example": "பஸ்",
+          "exampleRoman": "pas",
+          "meaning": "bus",
+          "speak": "",
+          "ipa": "sa"
+        },
+        {
+          "char": "ஹ",
+          "roman": "ha",
+          "hint": "h",
+          "example": "ஹோட்டல்",
+          "exampleRoman": "hōṭṭal",
+          "meaning": "hotel, restaurant",
+          "speak": "",
+          "ipa": "ɦa"
+        },
+        {
+          "char": "க்ஷ",
+          "roman": "kṣa",
+          "hint": "k + sh",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "kʂa"
+        },
+        {
+          "char": "ஸ்ரீ",
+          "roman": "śrī",
+          "hint": "shree: an honorific",
+          "example": "",
+          "exampleRoman": "",
+          "meaning": "",
+          "speak": "",
+          "ipa": "ʃriː"
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "title": "Life, body and the living letter",
+      "body": "<p>Tamil grammar names its letters after the body. The 12 vowels are <i>uyir</i>, 'life', and the 18 consonants are <i>mey</i>, 'body'. A consonant on its own is written with a dot, the <i>pulli</i>: <span lang=\"ta\">க்</span> is a bare k.</p>\n<p>Join a body to a life and you get an <i>uyirmey</i>, a 'living body': <span lang=\"ta\">க் + அ = க</span> ka, <span lang=\"ta\">க் + ஆ = கா</span> kā. With 18 × 12 combinations, there are 216 of these, but most are regular: the vowel signs ா ி ீ ெ ே ை ொ ோ ௌ look the same on every consonant.</p>\n<p>The exceptions are u and ū, whose signs fuse with the consonant in a few different ways (<span lang=\"ta\">கு மு து ரு</span>). Learn them in groups.</p>"
+    },
+    {
+      "title": "One letter, two sounds",
+      "body": "<p>Tamil does not write the difference between k and g, t and d, or p and b. The same letter covers both, and the sound depends on where it sits:</p>\n<table>\n<tr><td>at the start of a word, or doubled</td><td>voiceless: <span lang=\"ta\">பால்</span> pāl, <span lang=\"ta\">அப்பா</span> appā</td></tr>\n<tr><td>after a nasal</td><td>voiced: <span lang=\"ta\">பந்து</span> pandu (ball)</td></tr>\n<tr><td>between vowels</td><td>voiced or softened: <span lang=\"ta\">பகல்</span> pagal (daytime)</td></tr>\n</table>\n<p>Tamil also has no aspirated letters: there is no separate kh or bh, which makes the alphabet one of the smallest in India.</p>"
+    },
+    {
+      "title": "Three l's, three n's, two r's",
+      "body": "<p>To make up for the small alphabet, Tamil splits some sounds English treats as one.</p>\n<table>\n<tr><td lang=\"ta\">ல ள ழ</td><td>plain l, curled-back l, and the zh-like ḻ of <span lang=\"ta\">தமிழ்</span></td></tr>\n<tr><td lang=\"ta\">ந ன ண</td><td>dental n (start of a word), gum-ridge n (end of a word), curled-back n</td></tr>\n<tr><td lang=\"ta\">ர ற</td><td>a light tap and a strong trill</td></tr>\n</table>\n<p>ழ is hard for many learners and for some native speakers, who say it like ள. Aim for the tongue curled back without touching the roof of the mouth.</p>"
+    },
+    {
+      "title": "Tamil numbers and old symbols",
+      "body": "<p>Tamil has its own digits (<span lang=\"ta\">௧ ௨ ௩</span> for 1 2 3), but today people use the international digits almost everywhere. You may still see the old ones on clocks, temple walls and calendars.</p>"
+    }
+  ]
+}
