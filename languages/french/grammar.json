@@ -12,10 +12,11 @@
     "- Wiktionary French entries (CC BY-SA): être, avoir, parler, le/la/un/une.",
     "- Wikipedia “French grammar”, “French verbs”, “French articles” (CC BY-SA).",
     "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
-    "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced."
+    "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
+    "72 lessons. The six first lessons are unchanged; lessons 7–72 write out every planned point and add the rest of a standard A1–C2 sequence. Example sentences are original."
   ],
   "title": "French first grammar",
-  "intro": "French marks the subject with a pronoun you almost never drop, and it marks gender on the article. These lessons cover être, avoir, le/la/un/une, regular -er verbs, negation with ne…pas, and a simple question. Silent letters are left for the pronunciation cards; the forms here are the ones you write. The CEFR level after each point (A1 to C2) is an estimate, and a range like A2–B1 means it often comes up at both.",
+  "intro": "French marks the subject with a pronoun you almost never drop, and it marks gender on the article. Every lesson has a level. Absolute beginner and beginner (A1) are être and avoir, articles, -er, -ir and -re verbs, negation, questions, plurals, adjectives, numbers and time, contractions, possessives, the near future, the partitive and the passé composé. Beginner-intermediate (A2) adds être verbs, reflexives, comparing, object pronouns, y and en, the imparfait, the future and relative pronouns. Intermediate (B1) is the conditionnel, si clauses, the subjonctif, dont and lequel, the passive and reported speech. The last lessons (B2 to C2) are written French: the passé simple, formal connectors, inversion and the literary subjunctive. Silent letters are left for the pronunciation cards; the forms here are the ones you write. The CEFR level after each point (A1 to C2) is an estimate, and a range like A2–B1 means it often comes up at both.",
   "lessons": [
     {
       "id": "etre",
@@ -447,143 +448,5242 @@
           "why": "maison is feminine: intéressante."
         }
       ]
-    }
-  ],
-  "plan": [
+    },
+    {
+      "id": "tu-vous",
+      "title": "tu or vous",
+      "particle": "tu・vous",
+      "summary": "tu for one person you know well, vous for strangers or several people. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "French has two words for “you”. <b>tu</b> is for one friend, a child, family. <b>vous</b> is for someone you don't know, someone older or senior, and for any group.",
+          "examples": [
+            [
+              "{Tu} es prêt ?",
+              "you · are · ready",
+              "Are you ready? (to a friend)"
+            ],
+            [
+              "{Vous} êtes Madame Martin ?",
+              "you · are · Mrs · Martin",
+              "Are you Mrs Martin?"
+            ],
+            [
+              "Les enfants, {vous} venez ?",
+              "the · children · you · come",
+              "Kids, are you coming?"
+            ]
+          ]
+        },
+        {
+          "h": "Switching",
+          "p": "Adults often ask <i>On se tutoie ?</i> (shall we say tu?). When unsure, use vous; the other person will offer tu.",
+          "examples": [
+            [
+              "On se {tutoie} ?",
+              "one · each-other · tu-says",
+              "Shall we use tu?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "You meet your new boss.",
+          "en": "",
+          "options": ["vous", "tu", "il", "on"],
+          "answer": "vous",
+          "why": "Respect and distance: vous."
+        },
+        {
+          "q": "Talking to your little brother",
+          "en": "",
+          "options": ["vous", "tu", "nous", "ils"],
+          "answer": "tu",
+          "why": "Family: tu."
+        },
+        {
+          "q": "Talking to three friends",
+          "en": "",
+          "options": ["tu", "ils", "vous", "on"],
+          "answer": "vous",
+          "why": "More than one person is always vous."
+        },
+        {
+          "q": "＿ es d'où ?",
+          "en": "Where are you from? (to a classmate)",
+          "options": ["Vous", "Il", "Je", "Tu"],
+          "answer": "Tu",
+          "why": "tu goes with es."
+        },
+        {
+          "q": "＿ êtes d'où ?",
+          "en": "Where are you from? (to a stranger)",
+          "options": ["Vous", "Tu", "Nous", "Ils"],
+          "answer": "Vous",
+          "why": "vous goes with êtes."
+        }
+      ]
+    },
+    {
+      "id": "plurals",
+      "title": "Plurals: les, -s and -x",
+      "particle": "les・des・-s・-x",
+      "summary": "Most nouns add -s, usually silent; the article tells you it's plural. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "Add <b>-s</b> to make most nouns plural: un livre, des livres. The -s is usually silent, so you hear the plural in the article: <b>le</b>/<b>la</b> → <b>les</b>, <b>un</b>/<b>une</b> → <b>des</b>.",
+          "examples": [
+            ["{les} livres", "the · books", "the books"],
+            ["{des} amis", "some · friends", "(some) friends"]
+          ]
+        },
+        {
+          "h": "-x and other endings",
+          "p": "Nouns in -eau and -eu add -x: un gâteau, des gâteaux. Most -al become -aux: un journal, des journaux. Nouns ending in -s, -x or -z don't change: un bus, des bus.",
+          "examples": [
+            ["des gâteau{x}", "some · cakes", "cakes"],
+            ["des journ{aux}", "some · newspapers", "newspapers"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "un chat →",
+          "en": "",
+          "options": ["des chats", "des chat", "les chat", "des chatx"],
+          "answer": "des chats",
+          "why": "Add -s; un → des."
+        },
+        {
+          "q": "un bateau →",
+          "en": "",
+          "options": ["des bateaus", "des bateaux", "des bateau", "des bateals"],
+          "answer": "des bateaux",
+          "why": "-eau adds -x."
+        },
+        {
+          "q": "un cheval →",
+          "en": "",
+          "options": ["des chevals", "des chevales", "des chevaux", "des chevalx"],
+          "answer": "des chevaux",
+          "why": "-al → -aux."
+        },
+        {
+          "q": "un nez →",
+          "en": "",
+          "options": ["des nezs", "des nezx", "des naux", "des nez"],
+          "answer": "des nez",
+          "why": "-z doesn't change."
+        },
+        {
+          "q": "How do you usually hear a plural?",
+          "en": "",
+          "options": [
+            "in the article: les, des",
+            "in the final -s",
+            "in the stress",
+            "you can't"
+          ],
+          "answer": "in the article: les, des",
+          "why": "The -s is silent."
+        }
+      ]
+    },
+    {
+      "id": "adjective-position",
+      "title": "Where adjectives go",
+      "particle": "grand・petit・beau",
+      "summary": "Most adjectives follow the noun; a few short common ones go before. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "Most French adjectives come <b>after</b> the noun: une voiture rouge, un livre intéressant. They agree in gender and number: -e for feminine, -s for plural.",
+          "examples": [
+            ["une voiture {rouge}", "a · car · red", "a red car"],
+            [
+              "des films {intéressants}",
+              "some · films · interesting",
+              "interesting films"
+            ]
+          ]
+        },
+        {
+          "h": "Short ones go first",
+          "p": "A handful of common adjectives about beauty, age, goodness and size go <b>before</b>: beau, jeune, vieux, bon, mauvais, grand, petit, nouveau, joli.",
+          "examples": [
+            ["une {petite} maison", "a · little · house", "a little house"],
+            [
+              "un {bon} restaurant",
+              "a · good · restaurant",
+              "a good restaurant"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "une maison ＿",
+          "en": "a white house",
+          "options": ["blanche", "blanc", "blanches", "blancs"],
+          "answer": "blanche",
+          "why": "Colours follow; feminine blanche."
+        },
+        {
+          "q": "un ＿ chien",
+          "en": "a little dog",
+          "options": ["petite", "petit", "petits", "petites"],
+          "answer": "petit",
+          "why": "Size adjectives go before."
+        },
+        {
+          "q": "Which is right?",
+          "en": "a new car",
+          "options": [
+            "une voiture nouvelle",
+            "un nouveau voiture",
+            "une nouvelle voiture",
+            "une nouveau voiture"
+          ],
+          "answer": "une nouvelle voiture",
+          "why": "nouvelle goes first and agrees."
+        },
+        {
+          "q": "des fleurs ＿",
+          "en": "pretty flowers (after)",
+          "options": ["joli", "jolis", "jolie", "jolies"],
+          "answer": "jolies",
+          "why": "Feminine plural: -es. (joli usually goes before: de jolies fleurs.)"
+        },
+        {
+          "q": "Most adjectives go…",
+          "en": "",
+          "options": [
+            "after the noun",
+            "before the noun",
+            "at the end of the sentence",
+            "either, freely"
+          ],
+          "answer": "after the noun",
+          "why": "After, apart from a short list."
+        }
+      ]
+    },
+    {
+      "id": "il-y-a",
+      "title": "il y a — there is, there are",
+      "particle": "il y a",
+      "summary": "il y a means there is or there are, and never changes for plural. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>il y a</b> is fixed: there is, there are. Its negative is <b>il n'y a pas de</b>, and the question is <b>Est-ce qu'il y a…?</b> or <b>Y a-t-il…?</b>",
+          "examples": [
+            [
+              "{Il y a} un café ici.",
+              "it · there · has · a · café · here",
+              "There's a café here."
+            ],
+            [
+              "{Il y a} trois chambres.",
+              "it · there · has · three · bedrooms",
+              "There are three bedrooms."
+            ],
+            [
+              "{Il n'y a pas de} pain.",
+              "it · not · there · has · not · of · bread",
+              "There's no bread."
+            ]
+          ]
+        },
+        {
+          "h": "ago",
+          "p": "Before a length of time, il y a means ago: il y a deux ans, two years ago.",
+          "examples": [
+            [
+              "Je suis arrivé {il y a} une semaine.",
+              "I · am · arrived · ago · a · week",
+              "I arrived a week ago."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ beaucoup de monde.",
+          "en": "There are a lot of people.",
+          "options": ["Il y a", "Il est", "Ils sont", "C'est"],
+          "answer": "Il y a",
+          "why": "There is/are: il y a."
+        },
+        {
+          "q": "Il n'y a pas ＿ lait.",
+          "en": "There's no milk.",
+          "options": ["du", "de", "le", "un"],
+          "answer": "de",
+          "why": "After a negative: de."
+        },
+        {
+          "q": "Plural of il y a",
+          "en": "",
+          "options": ["ils y ont", "il y sont", "il y a", "ils y a"],
+          "answer": "il y a",
+          "why": "It never changes."
+        },
+        {
+          "q": "il y a dix ans means…",
+          "en": "",
+          "options": [
+            "in ten years",
+            "for ten years",
+            "there are ten years left",
+            "ten years ago"
+          ],
+          "answer": "ten years ago",
+          "why": "il y a + time = ago."
+        },
+        {
+          "q": "Y a-t-il des questions ? means…",
+          "en": "",
+          "options": [
+            "Are there any questions?",
+            "There are questions.",
+            "Where are the questions?",
+            "Ask questions."
+          ],
+          "answer": "Are there any questions?",
+          "why": "Inverted question."
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "title": "Numbers and age",
+      "particle": "un・deux・vingt・soixante-dix",
+      "summary": "Numbers to 100, and avoir for age. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "1–10: un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix. 20 vingt, 30 trente, 40 quarante, 50 cinquante, 60 soixante. 21, 31… add <b>et un</b>: vingt et un.",
+          "examples": [
+            ["{vingt et un}", "twenty · and · one", "21"],
+            ["{trente-deux}", "thirty-two", "32"]
+          ]
+        },
+        {
+          "h": "70, 80, 90",
+          "p": "France counts 70 as <b>soixante-dix</b> (60+10), 80 as <b>quatre-vingts</b> (4×20) and 90 as <b>quatre-vingt-dix</b> (4×20+10). Belgium and Switzerland say septante and nonante. Age uses avoir: j'ai vingt ans.",
+          "examples": [
+            ["{soixante-quinze}", "sixty-fifteen", "75"],
+            [
+              "J'{ai} trente {ans}.",
+              "I · have · thirty · years",
+              "I'm thirty."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "80 in France",
+          "en": "",
+          "options": ["quatre-vingts", "huitante", "octante", "soixante-vingt"],
+          "answer": "quatre-vingts",
+          "why": "4 × 20."
+        },
+        {
+          "q": "71",
+          "en": "",
+          "options": [
+            "soixante-dix-un",
+            "soixante et onze",
+            "septante et un",
+            "soixante-onze-un"
+          ],
+          "answer": "soixante et onze",
+          "why": "60 + 11 in France. Belgium and Switzerland say septante et un."
+        },
+        {
+          "q": "I'm twenty.",
+          "en": "",
+          "options": [
+            "Je suis vingt ans.",
+            "J'ai vingt.",
+            "J'ai vingt ans.",
+            "Je suis vingt."
+          ],
+          "answer": "J'ai vingt ans.",
+          "why": "Age uses avoir."
+        },
+        {
+          "q": "21",
+          "en": "",
+          "options": ["vingt-un", "vingt-et-deux", "deux-un", "vingt et un"],
+          "answer": "vingt et un",
+          "why": "et un for 21, 31, 41, 51, 61."
+        },
+        {
+          "q": "92",
+          "en": "",
+          "options": [
+            "quatre-vingt-douze",
+            "quatre-vingts-douze",
+            "nonante-deux",
+            "quatre-vingt-dix-deux"
+          ],
+          "answer": "quatre-vingt-douze",
+          "why": "80 + 12. Belgium and Switzerland say nonante-deux, but the question is about France."
+        }
+      ]
+    },
+    {
+      "id": "time-date",
+      "title": "Time and dates",
+      "particle": "il est … heures・le 14 juillet",
+      "summary": "Il est + hour + heures; dates are le + number + month. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "Telling the time: <b>Il est</b> trois heures. et quart (quarter past), et demie (half past), moins le quart (quarter to). Official times use the 24-hour clock: 18 h 30.",
+          "examples": [
+            [
+              "{Il est} huit {heures}.",
+              "it · is · eight · hours",
+              "It's eight o'clock."
+            ],
+            [
+              "Il est deux heures {et demie}.",
+              "it · is · two · hours · and · half",
+              "It's half past two."
+            ],
+            [
+              "Le train part à 18 h 45.",
+              "the · train · leaves · at · 18 · h · 45",
+              "The train leaves at 6.45 pm."
+            ]
+          ]
+        },
+        {
+          "h": "Dates",
+          "p": "Dates use <b>le</b> + cardinal number + month, no capitals: le 3 mai. Only the first is ordinal: le premier janvier. Days and months are lower case.",
+          "examples": [
+            ["{le premier} janvier", "the · first · January", "1 January"],
+            [
+              "Nous sommes {le} 14 juillet.",
+              "we · are · the · 14 · July",
+              "It's 14 July."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "It's five o'clock.",
+          "en": "",
+          "options": [
+            "Il est cinq heures.",
+            "C'est cinq heures.",
+            "Il a cinq heures.",
+            "Elle est cinq heures."
+          ],
+          "answer": "Il est cinq heures.",
+          "why": "Il est + heures."
+        },
+        {
+          "q": "half past three",
+          "en": "",
+          "options": [
+            "trois heures et quart",
+            "trois heures et demie",
+            "trois heures moins le quart",
+            "demi trois heures"
+          ],
+          "answer": "trois heures et demie",
+          "why": "et demie."
+        },
+        {
+          "q": "1 May",
+          "en": "",
+          "options": ["le un mai", "le 1 Mai", "le premier mai", "premier de mai"],
+          "answer": "le premier mai",
+          "why": "Only the 1st is ordinal; months are lower case."
+        },
+        {
+          "q": "Months in French are written…",
+          "en": "",
+          "options": [
+            "with a capital",
+            "in italics",
+            "always abbreviated",
+            "in lower case"
+          ],
+          "answer": "in lower case",
+          "why": "janvier, février…"
+        },
+        {
+          "q": "à 20 h means…",
+          "en": "",
+          "options": ["at 8 pm", "at 20 past", "at 2 pm", "for 20 hours"],
+          "answer": "at 8 pm",
+          "why": "24-hour clock."
+        }
+      ]
+    },
+    {
+      "id": "faire",
+      "title": "faire — to do, to make",
+      "particle": "fais・fait・faisons・font",
+      "summary": "faire is irregular and used for chores, sports and weather. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>faire</b>: je fais, tu fais, il fait, nous faisons, vous faites, ils font. It means do or make.",
+          "examples": [
+            [
+              "Je {fais} mes devoirs.",
+              "I · do · my · homework",
+              "I'm doing my homework."
+            ],
+            [
+              "Qu'est-ce que tu {fais} ?",
+              "what · is-it · that · you · do",
+              "What are you doing?"
+            ]
+          ]
+        },
+        {
+          "h": "Weather and sports",
+          "p": "Weather: il fait beau, il fait froid, il fait chaud. Activities: faire du sport, faire de la natation, faire la cuisine.",
+          "examples": [
+            [
+              "Il {fait} beau aujourd'hui.",
+              "it · makes · fine · today",
+              "The weather's nice today."
+            ],
+            [
+              "Nous {faisons} du vélo.",
+              "we · do · of-the · bike",
+              "We go cycling."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Vous ＿ quoi ce soir ?",
+          "en": "What are you doing tonight?",
+          "options": ["faites", "faisez", "fais", "font"],
+          "answer": "faites",
+          "why": "vous faites is irregular."
+        },
+        {
+          "q": "Ils ＿ la cuisine.",
+          "en": "They're cooking.",
+          "options": ["faisent", "font", "fait", "faites"],
+          "answer": "font",
+          "why": "ils font."
+        },
+        {
+          "q": "It's cold.",
+          "en": "",
+          "options": [
+            "Il est froid.",
+            "Il fait du froid.",
+            "Il fait froid.",
+            "Il a froid."
+          ],
+          "answer": "Il fait froid.",
+          "why": "Weather: il fait + adjective. Il a froid means he feels cold."
+        },
+        {
+          "q": "faire du ski means…",
+          "en": "",
+          "options": ["to make skis", "to buy skis", "to stop skiing", "to go skiing"],
+          "answer": "to go skiing",
+          "why": "faire + du/de la + activity."
+        },
+        {
+          "q": "Nous ＿ du yoga.",
+          "en": "We do yoga.",
+          "options": ["faisons", "faites", "font", "fais"],
+          "answer": "faisons",
+          "why": "nous faisons."
+        }
+      ]
+    },
+    {
+      "id": "c-est-il-est",
+      "title": "c'est or il est",
+      "particle": "c'est・il est・elle est",
+      "summary": "c'est + a noun with an article; il/elle est + an adjective or a bare job. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "Use <b>c'est</b> before a noun with a determiner: c'est un ami, c'est mon père. Use <b>il est</b> / <b>elle est</b> before an adjective, or a job without an article: il est médecin.",
+          "examples": [
+            [
+              "{C'est} un bon livre.",
+              "it-is · a · good · book",
+              "It's a good book."
+            ],
+            ["{Il est} médecin.", "he · is · doctor", "He's a doctor."],
+            [
+              "{Elle est} très gentille.",
+              "she · is · very · kind",
+              "She's very kind."
+            ]
+          ]
+        },
+        {
+          "h": "Reacting",
+          "p": "To react to a situation or idea, use c'est + masculine adjective: c'est génial, c'est vrai.",
+          "examples": [
+            ["{C'est} génial !", "it-is · great", "That's great!"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ma sœur.",
+          "en": "This is my sister.",
+          "options": ["C'est", "Elle est", "Il est", "Il y a"],
+          "answer": "C'est",
+          "why": "Determiner + noun: c'est."
+        },
+        {
+          "q": "＿ professeur.",
+          "en": "She's a teacher.",
+          "options": ["C'est", "Elle est", "Il est", "Elle a"],
+          "answer": "Elle est",
+          "why": "Bare job: elle est."
+        },
+        {
+          "q": "＿ un professeur.",
+          "en": "He's a teacher.",
+          "options": ["Il est", "Ils sont", "C'est", "Il a"],
+          "answer": "C'est",
+          "why": "With un: c'est."
+        },
+        {
+          "q": "That's true!",
+          "en": "",
+          "options": ["Ça vrai !", "Elle est vrai !", "Il y a vrai !", "C'est vrai !"],
+          "answer": "C'est vrai !",
+          "why": "Reaction: c'est."
+        },
+        {
+          "q": "＿ intelligent. (about Paul)",
+          "en": "",
+          "options": ["Il est", "C'est", "Il a", "Il y a"],
+          "answer": "Il est",
+          "why": "Describing a person: il est."
+        }
+      ]
+    },
+    {
+      "id": "question-words",
+      "title": "qui, quoi, où, quand, comment, pourquoi",
+      "particle": "qui・quoi・où・quand・comment・pourquoi・combien",
+      "summary": "The question words, and three ways to place them. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>qui</b> who, <b>quoi</b>/<b>que</b> what, <b>où</b> where, <b>quand</b> when, <b>comment</b> how, <b>pourquoi</b> why, <b>combien</b> how much / how many.",
+          "examples": [
+            ["{Où} habites-tu ?", "where · live-you", "Where do you live?"],
+            [
+              "{Pourquoi} tu ris ?",
+              "why · you · laugh",
+              "Why are you laughing?"
+            ]
+          ]
+        },
+        {
+          "h": "Three registers",
+          "p": "Casual: question word at the end (Tu vas <b>où</b> ?). Standard: question word + est-ce que (Où <b>est-ce que</b> tu vas ?). Formal: inversion (Où vas-tu ?).",
+          "examples": [
+            [
+              "Tu fais {quoi} ?",
+              "you · do · what",
+              "What are you doing? (casual)"
+            ],
+            [
+              "{Qu'est-ce que} tu fais ?",
+              "what · is-it · that · you · do",
+              "What are you doing?"
+            ],
+            [
+              "{Combien} ça coûte ?",
+              "how-much · that · costs",
+              "How much is it?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ est-ce que tu t'appelles ?",
+          "en": "What's your name? (how do you call yourself)",
+          "options": ["Comment", "Quoi", "Qui", "Où"],
+          "answer": "Comment",
+          "why": "comment = how."
+        },
+        {
+          "q": "＿ est cette femme ?",
+          "en": "Who is that woman?",
+          "options": ["Que", "Qui", "Quoi", "Quel"],
+          "answer": "Qui",
+          "why": "qui = who."
+        },
+        {
+          "q": "＿ tu pars ?",
+          "en": "When are you leaving?",
+          "options": ["Combien", "Comment", "Quand", "Où"],
+          "answer": "Quand",
+          "why": "quand = when."
+        },
+        {
+          "q": "Which is casual?",
+          "en": "",
+          "options": [
+            "Où vas-tu ?",
+            "Où est-ce que tu vas ?",
+            "All are equally formal",
+            "Tu vas où ?"
+          ],
+          "answer": "Tu vas où ?",
+          "why": "Question word at the end."
+        },
+        {
+          "q": "＿ de frères as-tu ?",
+          "en": "How many brothers do you have?",
+          "options": ["Combien", "Comment", "Quand", "Quoi"],
+          "answer": "Combien",
+          "why": "combien de + noun."
+        }
+      ]
+    },
+    {
+      "id": "demonstratives",
+      "title": "ce, cet, cette, ces — this, that",
+      "particle": "ce・cet・cette・ces",
+      "summary": "One word covers this and that; -ci and -là separate them. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>ce</b> before a masculine noun, <b>cet</b> before a masculine noun starting with a vowel or mute h, <b>cette</b> before a feminine noun, <b>ces</b> for any plural.",
+          "examples": [
+            ["{ce} livre", "this · book", "this book"],
+            ["{cet} homme", "this · man", "this man"],
+            ["{cette} ville", "this · town", "this town"]
+          ]
+        },
+        {
+          "h": "-ci and -là",
+          "p": "To contrast, add -ci (this, here) and -là (that, there) to the noun: ce livre-ci, ce livre-là.",
+          "examples": [
+            [
+              "Je préfère {cette robe-ci}.",
+              "I · prefer · this · dress-here",
+              "I prefer this dress."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ordinateur",
+          "en": "this computer",
+          "options": ["cet", "ce", "cette", "ces"],
+          "answer": "cet",
+          "why": "Masculine + vowel: cet."
+        },
+        {
+          "q": "＿ chaussures",
+          "en": "these shoes",
+          "options": ["cettes", "ces", "ce", "cet"],
+          "answer": "ces",
+          "why": "Plural: ces."
+        },
+        {
+          "q": "＿ voiture",
+          "en": "this car",
+          "options": ["ce", "cet", "cette", "ces"],
+          "answer": "cette",
+          "why": "Feminine: cette."
+        },
+        {
+          "q": "ce chien-là means…",
+          "en": "",
+          "options": ["this dog", "these dogs", "where's the dog?", "that dog (there)"],
+          "answer": "that dog (there)",
+          "why": "-là = there."
+        },
+        {
+          "q": "＿ garçon",
+          "en": "this boy",
+          "options": ["ce", "cet", "cette", "ces"],
+          "answer": "ce",
+          "why": "Masculine + consonant: ce."
+        }
+      ]
+    },
+    {
+      "id": "quel",
+      "title": "quel — which, what",
+      "particle": "quel・quelle・quels・quelles",
+      "summary": "quel agrees with its noun: quel, quelle, quels, quelles. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>quel</b> asks which or what before a noun, and agrees with it: quel livre, quelle heure, quels films, quelles couleurs. All four sound the same.",
+          "examples": [
+            [
+              "{Quelle} heure est-il ?",
+              "which · hour · is-it",
+              "What time is it?"
+            ],
+            [
+              "Tu aimes {quels} films ?",
+              "you · like · which · films",
+              "Which films do you like?"
+            ]
+          ]
+        },
+        {
+          "h": "With être, and exclamations",
+          "p": "quel can go before être: Quel est ton nom ? It also exclaims: Quelle belle journée ! (What a lovely day!)",
+          "examples": [
+            [
+              "{Quel} est ton numéro ?",
+              "which · is · your · number",
+              "What's your number?"
+            ],
+            ["{Quelle} surprise !", "what · surprise", "What a surprise!"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ âge as-tu ?",
+          "en": "How old are you?",
+          "options": ["Quel", "Quelle", "Quels", "Qu'est-ce"],
+          "answer": "Quel",
+          "why": "âge is masculine."
+        },
+        {
+          "q": "＿ est ta couleur préférée ?",
+          "en": "What's your favourite colour?",
+          "options": ["Quel", "Quelle", "Quelles", "Que"],
+          "answer": "Quelle",
+          "why": "couleur is feminine."
+        },
+        {
+          "q": "＿ chaussures ?",
+          "en": "Which shoes?",
+          "options": ["Quels", "Quel", "Quelles", "Quelle"],
+          "answer": "Quelles",
+          "why": "Feminine plural."
+        },
+        {
+          "q": "Quel dommage ! means…",
+          "en": "",
+          "options": ["Which damage?", "What's damaged?", "No damage.", "What a shame!"],
+          "answer": "What a shame!",
+          "why": "Exclamation."
+        },
+        {
+          "q": "Do quel, quelle, quels, quelles sound different?",
+          "en": "",
+          "options": [
+            "No, they sound the same",
+            "Yes, all four",
+            "Only quels",
+            "Only in Quebec"
+          ],
+          "answer": "No, they sound the same",
+          "why": "Spelling only."
+        }
+      ]
+    },
+    {
+      "id": "contractions",
+      "title": "au, aux, du, des — à and de with le and les",
+      "particle": "au・aux・du・des",
+      "summary": "à + le = au, à + les = aux, de + le = du, de + les = des. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>à</b> and <b>de</b> merge with le and les: à + le = <b>au</b>, à + les = <b>aux</b>, de + le = <b>du</b>, de + les = <b>des</b>. They don't merge with la or l'.",
+          "examples": [
+            [
+              "Je vais {au} cinéma.",
+              "I · go · to-the · cinema",
+              "I'm going to the cinema."
+            ],
+            [
+              "Il parle {aux} enfants.",
+              "he · speaks · to-the · children",
+              "He's talking to the children."
+            ],
+            [
+              "Le livre {du} professeur",
+              "the · book · of-the · teacher",
+              "the teacher's book"
+            ]
+          ]
+        },
+        {
+          "h": "No merge with la and l'",
+          "p": "à la, à l', de la, de l' stay separate.",
+          "examples": [
+            [
+              "Je vais {à la} plage.",
+              "I · go · to · the · beach",
+              "I'm going to the beach."
+            ],
+            [
+              "Il rentre {de l'}école.",
+              "he · returns · from · the · school",
+              "He's coming back from school."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Je vais ＿ parc.",
+          "en": "I'm going to the park.",
+          "options": ["au", "à le", "à la", "aux"],
+          "answer": "au",
+          "why": "à + le = au."
+        },
+        {
+          "q": "la voiture ＿ voisins",
+          "en": "the neighbours' car",
+          "options": ["de les", "des", "du", "aux"],
+          "answer": "des",
+          "why": "de + les = des."
+        },
+        {
+          "q": "Je parle ＿ directrice.",
+          "en": "I'm talking to the director (f).",
+          "options": ["au", "aux", "à la", "à le"],
+          "answer": "à la",
+          "why": "No merge with la."
+        },
+        {
+          "q": "Il vient ＿ bureau.",
+          "en": "He's coming from the office.",
+          "options": ["de le", "des", "au", "du"],
+          "answer": "du",
+          "why": "de + le = du."
+        },
+        {
+          "q": "une glace ＿ chocolat?",
+          "en": "a chocolate ice cream",
+          "options": ["au", "du", "à la", "de le"],
+          "answer": "au",
+          "why": "Flavour uses à + le = au."
+        }
+      ]
+    },
+    {
+      "id": "places",
+      "title": "à, en, au with cities and countries",
+      "particle": "à・en・au・aux",
+      "summary": "à for cities; en for feminine countries; au and aux for masculine and plural ones. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "For being in or going to a place: <b>à</b> + city (à Paris), <b>en</b> + feminine country, most ending in -e (en France, en Italie), <b>au</b> + masculine country (au Japon, au Canada), <b>aux</b> + plural (aux États-Unis).",
+          "examples": [
+            ["J'habite {à} Lyon.", "I · live · in · Lyon", "I live in Lyon."],
+            [
+              "Elle travaille {en} Espagne.",
+              "she · works · in · Spain",
+              "She works in Spain."
+            ],
+            [
+              "Nous allons {au} Portugal.",
+              "we · go · to-the · Portugal",
+              "We're going to Portugal."
+            ]
+          ]
+        },
+        {
+          "h": "Coming from",
+          "p": "From: <b>de</b> (d') + city or feminine country (de Paris, d'Italie), <b>du</b> + masculine (du Japon), <b>des</b> + plural (des États-Unis).",
+          "examples": [
+            [
+              "Il vient {du} Maroc.",
+              "he · comes · from-the · Morocco",
+              "He comes from Morocco."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Je vais ＿ Allemagne.",
+          "en": "I'm going to Germany.",
+          "options": ["en", "au", "à", "aux"],
+          "answer": "en",
+          "why": "Feminine country: en."
+        },
+        {
+          "q": "Ils habitent ＿ Brésil.",
+          "en": "They live in Brazil.",
+          "options": ["en", "au", "à", "aux"],
+          "answer": "au",
+          "why": "Masculine country: au."
+        },
+        {
+          "q": "Nous sommes ＿ Rome.",
+          "en": "We're in Rome.",
+          "options": ["en", "au", "à", "aux"],
+          "answer": "à",
+          "why": "City: à."
+        },
+        {
+          "q": "Elle vient ＿ Chine.",
+          "en": "She comes from China.",
+          "options": ["du", "des", "en", "de"],
+          "answer": "de",
+          "why": "Feminine country: de."
+        },
+        {
+          "q": "＿ Pays-Bas",
+          "en": "in the Netherlands",
+          "options": ["aux", "au", "en", "à"],
+          "answer": "aux",
+          "why": "Plural: aux."
+        }
+      ]
+    },
     {
       "id": "aller-futur-proche",
-      "title": "aller and the near future: je vais partir (about A1)",
-      "level": "beginner"
+      "title": "aller and the near future: je vais partir",
+      "particle": "aller・vais・va・vont",
+      "summary": "aller + infinitive: going to do. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>aller</b> is irregular: je vais, tu vas, il va, nous allons, vous allez, ils vont. It means go: je vais à Paris.",
+          "examples": [
+            [
+              "Je {vais} au travail.",
+              "I · go · to-the · work",
+              "I'm going to work."
+            ],
+            ["Comment {allez}-vous ?", "how · go-you", "How are you?"]
+          ]
+        },
+        {
+          "h": "The near future",
+          "p": "aller + infinitive is the everyday future: going to. The negative wraps aller: je ne vais pas partir.",
+          "examples": [
+            [
+              "Je {vais partir} demain.",
+              "I · go · leave · tomorrow",
+              "I'm going to leave tomorrow."
+            ],
+            ["Il {va pleuvoir}.", "it · goes · rain", "It's going to rain."],
+            [
+              "Nous {n'allons pas} manger ici.",
+              "we · not · go · not · eat · here",
+              "We're not going to eat here."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ils ＿ au cinéma.",
+          "en": "They're going to the cinema.",
+          "options": ["vont", "allent", "vas", "allons"],
+          "answer": "vont",
+          "why": "ils vont."
+        },
+        {
+          "q": "Je vais ＿ ce soir.",
+          "en": "I'm going to work tonight.",
+          "options": ["travaille", "travailler", "travaillé", "travaillerai"],
+          "answer": "travailler",
+          "why": "aller + infinitive."
+        },
+        {
+          "q": "Where does ne…pas go?",
+          "en": "I'm not going to come.",
+          "options": [
+            "Je pas vais venir.",
+            "Je ne vais venir pas.",
+            "Je ne vais pas venir.",
+            "Je vais venir ne pas."
+          ],
+          "answer": "Je ne vais pas venir.",
+          "why": "It wraps aller."
+        },
+        {
+          "q": "Vous ＿ bien ?",
+          "en": "Are you well?",
+          "options": ["allons", "vont", "va", "allez"],
+          "answer": "allez",
+          "why": "vous allez."
+        },
+        {
+          "q": "Il va neiger means…",
+          "en": "",
+          "options": [
+            "It's going to snow.",
+            "It snowed.",
+            "It snows.",
+            "He's going to the snow."
+          ],
+          "answer": "It's going to snow.",
+          "why": "Near future."
+        }
+      ]
     },
     {
       "id": "possessives",
-      "title": "mon, ma, mes: possessives (about A1)",
-      "level": "beginner"
+      "title": "mon, ma, mes: possessives",
+      "particle": "mon・ma・mes・ton・son・notre・votre・leur",
+      "summary": "The possessive agrees with the thing owned, not with the owner. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "The possessive agrees with the noun that follows: <b>mon</b> frère, <b>ma</b> sœur, <b>mes</b> parents. Same for ton/ta/tes and son/sa/ses. So <b>sa voiture</b> can be his car or her car.",
+          "examples": [
+            ["{mon} père", "my · father", "my father"],
+            ["{ma} mère", "my · mother", "my mother"],
+            ["{sa} maison", "his/her · house", "his or her house"]
+          ]
+        },
+        {
+          "h": "Before a vowel, and plural owners",
+          "p": "Before a feminine noun starting with a vowel, use mon/ton/son: <b>mon</b> amie, son école. Plural owners: notre/nos, votre/vos, leur/leurs.",
+          "examples": [
+            ["{mon} amie", "my · friend(f)", "my friend (female)"],
+            ["{leurs} enfants", "their · children", "their children"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ voiture",
+          "en": "my car",
+          "options": ["ma", "mon", "mes", "me"],
+          "answer": "ma",
+          "why": "voiture is feminine."
+        },
+        {
+          "q": "＿ école",
+          "en": "his school",
+          "options": ["sa", "son", "ses", "leur"],
+          "answer": "son",
+          "why": "Vowel: son, even though feminine."
+        },
+        {
+          "q": "＿ livres",
+          "en": "your books (tu)",
+          "options": ["ton", "ta", "tes", "vos"],
+          "answer": "tes",
+          "why": "Plural: tes."
+        },
+        {
+          "q": "Marie et ＿ frère",
+          "en": "Marie and her brother",
+          "options": ["sa", "ses", "leur", "son"],
+          "answer": "son",
+          "why": "Agrees with frère (masculine)."
+        },
+        {
+          "q": "＿ maison",
+          "en": "our house",
+          "options": ["notre", "nos", "nous", "leur"],
+          "answer": "notre",
+          "why": "One thing, our: notre."
+        }
+      ]
+    },
+    {
+      "id": "modals",
+      "title": "vouloir, pouvoir, devoir",
+      "particle": "veux・peux・dois",
+      "summary": "Want, can, must: each takes an infinitive. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>vouloir</b> (want): je veux, tu veux, il veut, nous voulons, vous voulez, ils veulent. <b>pouvoir</b> (can): je peux… ils peuvent. <b>devoir</b> (must): je dois… ils doivent. The next verb is an infinitive.",
+          "examples": [
+            ["Je {veux} partir.", "I · want · leave", "I want to leave."],
+            ["Tu {peux} m'aider ?", "you · can · me-help", "Can you help me?"],
+            [
+              "Nous {devons} travailler.",
+              "we · must · work",
+              "We have to work."
+            ]
+          ]
+        },
+        {
+          "h": "Polite forms",
+          "p": "<b>je voudrais</b> (I'd like) is politer than je veux. <b>Pourriez-vous…?</b> is a polite “could you?”.",
+          "examples": [
+            [
+              "Je {voudrais} un café.",
+              "I · would-like · a · coffee",
+              "I'd like a coffee."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Elle ＿ venir.",
+          "en": "She wants to come.",
+          "options": ["veut", "veux", "voulez", "veulent"],
+          "answer": "veut",
+          "why": "il/elle veut."
+        },
+        {
+          "q": "Ils ＿ partir.",
+          "en": "They can leave.",
+          "options": ["peut", "peuvent", "pouvons", "peux"],
+          "answer": "peuvent",
+          "why": "ils peuvent."
+        },
+        {
+          "q": "Vous ＿ signer ici.",
+          "en": "You must sign here.",
+          "options": ["doivent", "devons", "devez", "dois"],
+          "answer": "devez",
+          "why": "vous devez."
+        },
+        {
+          "q": "Polite “I'd like”",
+          "en": "",
+          "options": ["je veux", "je peux", "je dois", "je voudrais"],
+          "answer": "je voudrais",
+          "why": "Conditional of vouloir."
+        },
+        {
+          "q": "Tu peux ＿ la porte ?",
+          "en": "Can you shut the door?",
+          "options": ["fermer", "fermes", "fermé", "ferme"],
+          "answer": "fermer",
+          "why": "Modal + infinitive."
+        }
+      ]
+    },
+    {
+      "id": "stressed-pronouns",
+      "title": "moi, toi, lui, elle",
+      "particle": "moi・toi・lui・elle・nous・vous・eux・elles",
+      "summary": "Stressed pronouns stand alone, after prepositions, and for emphasis. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>moi, toi, lui, elle, nous, vous, eux, elles</b> are used alone (Moi ? — Toi !), after prepositions (avec moi, chez lui), and to stress the subject (Moi, je…).",
+          "examples": [
+            [
+              "{Moi}, j'aime le thé.",
+              "me · I · like · the · tea",
+              "Me, I like tea."
+            ],
+            [
+              "Tu viens avec {moi} ?",
+              "you · come · with · me",
+              "Are you coming with me?"
+            ],
+            ["C'est {lui}.", "it-is · him", "It's him."]
+          ]
+        },
+        {
+          "h": "chez",
+          "p": "<b>chez</b> + stressed pronoun or person means at someone's home: chez moi, chez Paul.",
+          "examples": [
+            [
+              "On va {chez eux}.",
+              "one · goes · at-home · them",
+              "We're going to their place."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Et ＿ ?",
+          "en": "And you? (tu)",
+          "options": ["toi", "tu", "te", "ton"],
+          "answer": "toi",
+          "why": "Alone: toi."
+        },
+        {
+          "q": "Je pense à ＿.",
+          "en": "I'm thinking of her.",
+          "options": ["la", "elle", "lui", "sa"],
+          "answer": "elle",
+          "why": "After a preposition: elle."
+        },
+        {
+          "q": "On dîne chez ＿.",
+          "en": "We're having dinner at their place.",
+          "options": ["ils", "leur", "eux", "les"],
+          "answer": "eux",
+          "why": "chez + eux."
+        },
+        {
+          "q": "＿, je ne suis pas d'accord.",
+          "en": "Me, I disagree.",
+          "options": ["Je", "Me", "Mon", "Moi"],
+          "answer": "Moi",
+          "why": "Emphasis: moi."
+        },
+        {
+          "q": "C'est ＿ ?",
+          "en": "Is it you? (vous)",
+          "options": ["vous", "votre", "vos", "tu"],
+          "answer": "vous",
+          "why": "C'est + stressed pronoun."
+        }
+      ]
+    },
+    {
+      "id": "prendre-venir",
+      "title": "prendre and venir",
+      "particle": "prends・prenons・prennent・viens・venons・viennent",
+      "summary": "Two common irregular verbs and their families. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>prendre</b> (take, have): je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent. apprendre and comprendre follow it.",
+          "examples": [
+            ["Je {prends} le bus.", "I · take · the · bus", "I take the bus."],
+            [
+              "Vous {prenez} un café ?",
+              "you · take · a · coffee",
+              "Will you have a coffee?"
+            ],
+            [
+              "Ils {comprennent} tout.",
+              "they · understand · all",
+              "They understand everything."
+            ]
+          ]
+        },
+        {
+          "h": "venir",
+          "p": "<b>venir</b> (come): je viens, tu viens, il vient, nous venons, vous venez, ils viennent. devenir and revenir follow it.",
+          "examples": [
+            [
+              "Tu {viens} ce soir ?",
+              "you · come · this · evening",
+              "Are you coming tonight?"
+            ],
+            [
+              "Elles {viennent} de Montréal.",
+              "they · come · from · Montreal",
+              "They come from Montreal."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ils ＿ le train.",
+          "en": "They take the train.",
+          "options": ["prennent", "prenent", "prendent", "prend"],
+          "answer": "prennent",
+          "why": "Double n: prennent."
+        },
+        {
+          "q": "Nous ＿ demain.",
+          "en": "We're coming tomorrow.",
+          "options": ["venez", "venons", "viennent", "viens"],
+          "answer": "venons",
+          "why": "nous venons."
+        },
+        {
+          "q": "Tu ＿ le français ?",
+          "en": "Do you understand French?",
+          "options": ["comprend", "comprenez", "comprends", "comprendre"],
+          "answer": "comprends",
+          "why": "comprendre follows prendre."
+        },
+        {
+          "q": "Il ＿ de Paris.",
+          "en": "He comes from Paris.",
+          "options": ["viens", "venir", "viennent", "vient"],
+          "answer": "vient",
+          "why": "il vient."
+        },
+        {
+          "q": "Je ＿ un thé, s'il vous plaît.",
+          "en": "I'll have a tea, please.",
+          "options": ["prends", "prend", "prenons", "prendre"],
+          "answer": "prends",
+          "why": "je prends."
+        }
+      ]
     },
     {
       "id": "ir-re-verbs",
-      "title": "Verbs in -ir and -re: finir, vendre (about A1)",
-      "level": "beginner"
+      "title": "Verbs in -ir and -re: finir, vendre",
+      "particle": "finir・vendre",
+      "summary": "Two more regular patterns: finir (-is, -issons) and vendre (-s, -ons). (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Regular <b>-ir</b> verbs like finir: je finis, tu finis, il finit, nous fin<b>iss</b>ons, vous fin<b>iss</b>ez, ils fin<b>iss</b>ent. Choisir and réussir follow it.",
+          "examples": [
+            [
+              "Je {finis} à six heures.",
+              "I · finish · at · six · hours",
+              "I finish at six."
+            ],
+            [
+              "Nous {choisissons} un film.",
+              "we · choose · a · film",
+              "We're choosing a film."
+            ]
+          ]
+        },
+        {
+          "h": "-re verbs",
+          "p": "Regular <b>-re</b> verbs like vendre: je vends, tu vends, il vend (no ending), nous vendons, vous vendez, ils vendent. Attendre and répondre follow it.",
+          "examples": [
+            [
+              "Il {vend} sa voiture.",
+              "he · sells · his · car",
+              "He's selling his car."
+            ],
+            [
+              "J'{attends} le bus.",
+              "I · wait · the · bus",
+              "I'm waiting for the bus."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ils ＿ leurs devoirs.",
+          "en": "They finish their homework.",
+          "options": ["finissent", "finent", "finisent", "finit"],
+          "answer": "finissent",
+          "why": "-issent."
+        },
+        {
+          "q": "Elle ＿ au téléphone.",
+          "en": "She answers the phone.",
+          "options": ["réponds", "répond", "répondt", "répondent"],
+          "answer": "répond",
+          "why": "il/elle: no ending."
+        },
+        {
+          "q": "Nous ＿ le train.",
+          "en": "We're waiting for the train.",
+          "options": ["attendissons", "attendez", "attendons", "attend"],
+          "answer": "attendons",
+          "why": "-re: -ons."
+        },
+        {
+          "q": "Vous ＿ ?",
+          "en": "Are you choosing?",
+          "options": ["choisez", "choisissons", "choisis", "choisissez"],
+          "answer": "choisissez",
+          "why": "vous choisissez."
+        },
+        {
+          "q": "attendre means…",
+          "en": "",
+          "options": ["to wait (for)", "to attend", "to hear", "to answer"],
+          "answer": "to wait (for)",
+          "why": "A false friend; no “for” needed: attendre le bus."
+        }
+      ]
     },
     {
       "id": "imperative",
-      "title": "The imperative: Viens ! Allons-y ! (about A1–A2)",
-      "level": "beginner"
+      "title": "The imperative: Viens ! Allons-y !",
+      "particle": "viens・venez・allons",
+      "summary": "Commands use the tu, nous and vous forms without the pronoun. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Drop the pronoun from the present: <b>Viens !</b> (tu), <b>Venez !</b> (vous), <b>Allons-y !</b> (nous, let's). -er verbs drop the -s in the tu form: tu parles → Parle !",
+          "examples": [
+            ["{Regarde} !", "look", "Look!"],
+            [
+              "{Fermez} la porte, s'il vous plaît.",
+              "close · the · door · please",
+              "Close the door, please."
+            ],
+            ["{Allons}-y !", "let's-go · there", "Let's go!"]
+          ]
+        },
+        {
+          "h": "Irregulars and negatives",
+          "p": "être: sois, soyez; avoir: aie, ayez. Negative: ne + verb + pas: Ne touche pas ! Pronouns go after with a hyphen in the positive: Dis-moi.",
+          "examples": [
+            ["{Ne} parle {pas} !", "not · speak · not", "Don't talk!"],
+            ["{Dis-moi}.", "tell-me", "Tell me."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ !",
+          "en": "Eat! (tu, manger)",
+          "options": ["Mange", "Manges", "Mangez", "Mangeons"],
+          "answer": "Mange",
+          "why": "-er verbs drop the -s."
+        },
+        {
+          "q": "＿ patients.",
+          "en": "Be patient. (vous)",
+          "options": ["Êtes", "Soyez", "Soyons", "Être"],
+          "answer": "Soyez",
+          "why": "Irregular: soyez."
+        },
+        {
+          "q": "Let's go!",
+          "en": "",
+          "options": ["Allez-y !", "Va-y !", "Allons-y !", "Aller !"],
+          "answer": "Allons-y !",
+          "why": "nous form."
+        },
+        {
+          "q": "Don't cry! (tu)",
+          "en": "",
+          "options": [
+            "Pleure ne pas !",
+            "Pas pleure !",
+            "Ne pleures pas tu !",
+            "Ne pleure pas !"
+          ],
+          "answer": "Ne pleure pas !",
+          "why": "ne…pas around the verb."
+        },
+        {
+          "q": "Tell me! (tu)",
+          "en": "",
+          "options": ["Dis-moi !", "Me dis !", "Dis-je !", "Dis à je !"],
+          "answer": "Dis-moi !",
+          "why": "Pronoun after, with a hyphen."
+        }
+      ]
     },
     {
       "id": "partitive",
-      "title": "du, de la, des, and de after a negative (about A1–A2)",
-      "level": "beginner"
+      "title": "du, de la, des, and de after a negative",
+      "particle": "du・de la・de l'・des・de",
+      "summary": "Some of something: du pain, de la confiture. After a negative, just de. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "For an unspecified amount, French uses the partitive: <b>du</b> (masculine), <b>de la</b> (feminine), <b>de l'</b> (before a vowel), <b>des</b> (plural). English often uses nothing or “some”.",
+          "examples": [
+            [
+              "Je bois {du} café.",
+              "I · drink · some · coffee",
+              "I drink coffee."
+            ],
+            [
+              "Tu veux {de la} soupe ?",
+              "you · want · some · soup",
+              "Do you want some soup?"
+            ],
+            [
+              "Il y a {de l'}eau.",
+              "there · is · some · water",
+              "There's water."
+            ]
+          ]
+        },
+        {
+          "h": "After a negative and quantities",
+          "p": "After ne…pas, all become <b>de</b> (d'): je ne bois pas de café. After quantities too: beaucoup de, un peu de, un kilo de.",
+          "examples": [
+            [
+              "Je ne mange pas {de} viande.",
+              "I · not · eat · not · of · meat",
+              "I don't eat meat."
+            ],
+            ["beaucoup {d'}amis", "many · of · friends", "lots of friends"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Je voudrais ＿ pain.",
+          "en": "I'd like some bread.",
+          "options": ["du", "de la", "des", "le"],
+          "answer": "du",
+          "why": "pain is masculine."
+        },
+        {
+          "q": "Il n'y a pas ＿ lait.",
+          "en": "There's no milk.",
+          "options": ["du", "de", "le", "des"],
+          "answer": "de",
+          "why": "After a negative: de."
+        },
+        {
+          "q": "un kilo ＿ pommes",
+          "en": "a kilo of apples",
+          "options": ["des", "du", "de", "les"],
+          "answer": "de",
+          "why": "After a quantity: de."
+        },
+        {
+          "q": "Elle achète ＿ eau.",
+          "en": "She's buying water.",
+          "options": ["du", "de la", "des", "de l'"],
+          "answer": "de l'",
+          "why": "Before a vowel: de l'."
+        },
+        {
+          "q": "J'aime ＿ chocolat.",
+          "en": "I like chocolate.",
+          "options": ["le", "du", "de", "un"],
+          "answer": "le",
+          "why": "Likes take the definite article: aimer le chocolat."
+        }
+      ]
     },
     {
       "id": "passe-compose-avoir",
-      "title": "The passé composé with avoir (about A1–A2)",
-      "level": "beginner"
+      "title": "The passé composé with avoir",
+      "particle": "avoir + participe passé",
+      "summary": "The everyday past: avoir in the present plus a past participle. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "The passé composé is avoir (j'ai, tu as, il a…) + the past participle. -er → <b>-é</b> (parlé), -ir → <b>-i</b> (fini), -re → <b>-u</b> (vendu).",
+          "examples": [
+            [
+              "J'{ai mangé} une pomme.",
+              "I · have · eaten · an · apple",
+              "I ate an apple."
+            ],
+            ["Nous {avons fini}.", "we · have · finished", "We've finished."],
+            [
+              "Ils {ont vendu} la maison.",
+              "they · have · sold · the · house",
+              "They sold the house."
+            ]
+          ]
+        },
+        {
+          "h": "Irregular participles and the negative",
+          "p": "Common irregulars: fait (faire), pris (prendre), vu (voir), eu (avoir), été (être), dit (dire), écrit (écrire), bu (boire). Negative wraps avoir: je n'ai pas vu.",
+          "examples": [
+            [
+              "Tu {as vu} le film ?",
+              "you · have · seen · the · film",
+              "Did you see the film?"
+            ],
+            [
+              "Je {n'ai pas} compris.",
+              "I · not-have · not · understood",
+              "I didn't understand."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Elle a ＿ une lettre.",
+          "en": "She wrote a letter.",
+          "options": ["écrit", "écrivé", "écriru", "écrite"],
+          "answer": "écrit",
+          "why": "Irregular: écrit."
+        },
+        {
+          "q": "Nous avons ＿ le bus.",
+          "en": "We took the bus.",
+          "options": ["prendu", "pris", "prené", "prit"],
+          "answer": "pris",
+          "why": "prendre → pris."
+        },
+        {
+          "q": "I didn't eat.",
+          "en": "",
+          "options": [
+            "Je n'ai mangé pas.",
+            "Je ne pas ai mangé.",
+            "Je n'ai pas mangé.",
+            "Je n'ai pas manger."
+          ],
+          "answer": "Je n'ai pas mangé.",
+          "why": "ne…pas around avoir."
+        },
+        {
+          "q": "finir →",
+          "en": "",
+          "options": ["finé", "finu", "finit", "fini"],
+          "answer": "fini",
+          "why": "-ir → -i."
+        },
+        {
+          "q": "Vous avez ＿ ?",
+          "en": "Did you drink?",
+          "options": ["bu", "boivé", "buvé", "boit"],
+          "answer": "bu",
+          "why": "boire → bu."
+        }
+      ]
     },
     {
       "id": "passe-compose-etre",
-      "title": "The passé composé with être, and agreement (about A2)",
-      "level": "beginner-intermediate"
+      "title": "The passé composé with être, and agreement",
+      "particle": "être + participe passé",
+      "summary": "About 15 verbs of movement and change of state take être, and agree with the subject. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Some verbs take <b>être</b>: aller, venir, arriver, partir, entrer, sortir, monter, descendre, naître, mourir, rester, tomber, retourner, and their compounds (devenir, revenir). The participle agrees: -e for feminine, -s for plural.",
+          "examples": [
+            [
+              "Elle {est allée} à Paris.",
+              "she · is · gone · to · Paris",
+              "She went to Paris."
+            ],
+            [
+              "Nous {sommes arrivés} hier.",
+              "we · are · arrived · yesterday",
+              "We arrived yesterday."
+            ],
+            ["Ils {sont partis}.", "they · are · left", "They've left."]
+          ]
+        },
+        {
+          "h": "Reflexive verbs too",
+          "p": "All reflexive verbs also take être: elle s'est levée.",
+          "examples": [
+            [
+              "Je {suis né} en 1990.",
+              "I · am · born · in · 1990",
+              "I was born in 1990."
+            ],
+            [
+              "Elles {se sont levées} tôt.",
+              "they(f) · themselves · are · got-up · early",
+              "They got up early."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Elle ＿ tombée.",
+          "en": "She fell.",
+          "options": ["est", "a", "été", "était"],
+          "answer": "est",
+          "why": "tomber takes être."
+        },
+        {
+          "q": "Ils sont ＿.",
+          "en": "They went out.",
+          "options": ["sorti", "sortis", "sorties", "sortir"],
+          "answer": "sortis",
+          "why": "Masculine plural: -s."
+        },
+        {
+          "q": "Marie est ＿ à huit heures.",
+          "en": "Marie arrived at eight.",
+          "options": ["arrivé", "arrivés", "arrivée", "arrive"],
+          "answer": "arrivée",
+          "why": "Feminine: -e."
+        },
+        {
+          "q": "Which takes avoir?",
+          "en": "",
+          "options": ["venir", "partir", "rester", "manger"],
+          "answer": "manger",
+          "why": "Movement and change of state take être."
+        },
+        {
+          "q": "Nous ＿ restés à la maison.",
+          "en": "We stayed at home.",
+          "options": ["sommes", "avons", "étions", "sont"],
+          "answer": "sommes",
+          "why": "rester takes être."
+        }
+      ]
     },
     {
       "id": "reflexive",
-      "title": "Reflexive verbs: se lever, s'appeler (about A2)",
-      "level": "beginner-intermediate"
+      "title": "Reflexive verbs: se lever, s'appeler",
+      "particle": "me・te・se・nous・vous・se",
+      "summary": "The pronoun matches the subject: je me lève, tu te lèves. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Reflexive verbs have a pronoun matching the subject: je <b>me</b> lave, tu <b>te</b> laves, il <b>se</b> lave, nous <b>nous</b> lavons, vous <b>vous</b> lavez, ils <b>se</b> lavent. Daily routine verbs are often reflexive.",
+          "examples": [
+            [
+              "Je {m'appelle} Léa.",
+              "I · myself · call · Léa",
+              "My name is Léa."
+            ],
+            [
+              "Tu {te lèves} à quelle heure ?",
+              "you · yourself · get-up · at · what · hour",
+              "What time do you get up?"
+            ],
+            [
+              "Nous {nous couchons} tard.",
+              "we · ourselves · go-to-bed · late",
+              "We go to bed late."
+            ]
+          ]
+        },
+        {
+          "h": "Negative and infinitive",
+          "p": "Negative: je <b>ne</b> me lève <b>pas</b>. With an infinitive, the pronoun matches the subject: je vais me coucher.",
+          "examples": [
+            [
+              "Je vais {me} reposer.",
+              "I · go · myself · rest",
+              "I'm going to rest."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ils ＿ habillent.",
+          "en": "They get dressed.",
+          "options": ["s'", "se", "leur", "les"],
+          "answer": "s'",
+          "why": "se → s' before a vowel."
+        },
+        {
+          "q": "Nous ＿ promenons.",
+          "en": "We go for a walk.",
+          "options": ["se", "nous", "vous", "on"],
+          "answer": "nous",
+          "why": "nous… nous."
+        },
+        {
+          "q": "I'm not getting up.",
+          "en": "",
+          "options": [
+            "Je me ne lève pas.",
+            "Je ne lève me pas.",
+            "Je ne me lève pas.",
+            "Je ne me pas lève."
+          ],
+          "answer": "Je ne me lève pas.",
+          "why": "ne + pronoun + verb + pas."
+        },
+        {
+          "q": "Tu vas ＿ coucher ?",
+          "en": "Are you going to bed?",
+          "options": ["se", "me", "toi", "te"],
+          "answer": "te",
+          "why": "Matches tu."
+        },
+        {
+          "q": "s'appeler means…",
+          "en": "",
+          "options": ["to be called", "to call someone", "to phone", "to appeal"],
+          "answer": "to be called",
+          "why": "Je m'appelle = my name is."
+        }
+      ]
     },
     {
       "id": "comparatives",
-      "title": "plus, moins, aussi … que; meilleur and mieux (about A2)",
-      "level": "beginner-intermediate"
+      "title": "plus, moins, aussi … que; meilleur and mieux",
+      "particle": "plus・moins・aussi・que",
+      "summary": "plus/moins/aussi + adjective + que. bon → meilleur, bien → mieux. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>plus … que</b> (more than), <b>moins … que</b> (less than), <b>aussi … que</b> (as … as). The adjective agrees as usual.",
+          "examples": [
+            [
+              "Paul est {plus} grand {que} moi.",
+              "Paul · is · more · tall · than · me",
+              "Paul is taller than me."
+            ],
+            [
+              "Cette robe est {moins} chère.",
+              "this · dress · is · less · expensive",
+              "This dress is cheaper."
+            ],
+            [
+              "Elle est {aussi} rapide {que} lui.",
+              "she · is · as · fast · as · him",
+              "She's as fast as him."
+            ]
+          ]
+        },
+        {
+          "h": "Irregular",
+          "p": "bon → <b>meilleur</b> (better, adjective), bien → <b>mieux</b> (better, adverb). With nouns: plus de, moins de, autant de.",
+          "examples": [
+            [
+              "Ce gâteau est {meilleur}.",
+              "this · cake · is · better",
+              "This cake is better."
+            ],
+            [
+              "Il chante {mieux} que moi.",
+              "he · sings · better · than · me",
+              "He sings better than me."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Lyon est ＿ grand que Paris.",
+          "en": "Lyon is smaller (less big) than Paris.",
+          "options": ["moins", "plus", "aussi", "autant"],
+          "answer": "moins",
+          "why": "Less: moins."
+        },
+        {
+          "q": "Ce vin est ＿ que l'autre.",
+          "en": "This wine is better than the other.",
+          "options": ["plus bon", "meilleur", "mieux", "plus bien"],
+          "answer": "meilleur",
+          "why": "bon → meilleur."
+        },
+        {
+          "q": "Elle parle ＿ que moi.",
+          "en": "She speaks better than me.",
+          "options": ["meilleur", "plus bien", "mieux", "meilleure"],
+          "answer": "mieux",
+          "why": "Adverb: mieux."
+        },
+        {
+          "q": "as tall as",
+          "en": "",
+          "options": [
+            "autant grand que",
+            "si grand comme",
+            "aussi grand comme",
+            "aussi grand que"
+          ],
+          "answer": "aussi grand que",
+          "why": "aussi … que."
+        },
+        {
+          "q": "J'ai ＿ livres que toi.",
+          "en": "I have more books than you.",
+          "options": ["plus de", "plus", "plus des", "moins"],
+          "answer": "plus de",
+          "why": "With a noun: plus de."
+        }
+      ]
+    },
+    {
+      "id": "venir-de",
+      "title": "venir de — have just done",
+      "particle": "venir de + infinitive",
+      "summary": "venir de + infinitive: something just happened. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>venir de</b> + infinitive is the recent past: I've just. It mirrors aller + infinitive (the near future).",
+          "examples": [
+            [
+              "Je {viens de} manger.",
+              "I · come · from · eat",
+              "I've just eaten."
+            ],
+            [
+              "Le train {vient de} partir.",
+              "the · train · comes · from · leave",
+              "The train has just left."
+            ],
+            [
+              "Nous {venons d'}arriver.",
+              "we · come · from · arrive",
+              "We've just arrived."
+            ]
+          ]
+        },
+        {
+          "h": "In the past",
+          "p": "In the imparfait it means had just: il venait de sortir.",
+          "examples": [
+            [
+              "Il {venait de} sortir quand tu as appelé.",
+              "he · came · from · go-out · when · you · have · called",
+              "He'd just gone out when you called."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Elle ＿ de partir.",
+          "en": "She has just left.",
+          "options": ["vient", "va", "est", "a"],
+          "answer": "vient",
+          "why": "venir de."
+        },
+        {
+          "q": "Je viens ＿ finir.",
+          "en": "I've just finished.",
+          "options": ["à", "de", "pour", "—"],
+          "answer": "de",
+          "why": "venir de + infinitive."
+        },
+        {
+          "q": "Ils viennent d'arriver means…",
+          "en": "",
+          "options": [
+            "They're going to arrive.",
+            "They come from arriving places.",
+            "They've just arrived.",
+            "They arrive every day."
+          ],
+          "answer": "They've just arrived.",
+          "why": "Recent past."
+        },
+        {
+          "q": "Nous venons ＿ acheter une voiture.",
+          "en": "We've just bought a car.",
+          "options": ["de l'", "à", "du", "d'"],
+          "answer": "d'",
+          "why": "de → d' before a vowel."
+        },
+        {
+          "q": "venir de vs aller + infinitive",
+          "en": "",
+          "options": ["just did vs going to do", "same", "both future", "both past"],
+          "answer": "just did vs going to do",
+          "why": "Recent past vs near future."
+        }
+      ]
+    },
+    {
+      "id": "other-negations",
+      "title": "ne…jamais, ne…plus, ne…rien, ne…personne",
+      "particle": "jamais・plus・rien・personne",
+      "summary": "Swap pas for another word: never, no longer, nothing, nobody. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Replace pas with <b>jamais</b> (never), <b>plus</b> (no longer), <b>rien</b> (nothing), <b>personne</b> (nobody). In speech, ne often drops: J'sais pas.",
+          "examples": [
+            [
+              "Je {ne} fume {jamais}.",
+              "I · not · smoke · never",
+              "I never smoke."
+            ],
+            [
+              "Il {n'}habite {plus} ici.",
+              "he · not · lives · no-longer · here",
+              "He doesn't live here any more."
+            ],
+            [
+              "Je {ne} vois {rien}.",
+              "I · not · see · nothing",
+              "I can't see anything."
+            ]
+          ]
+        },
+        {
+          "h": "As subjects, and in the passé composé",
+          "p": "rien and personne can be subjects: Personne ne sait. In the passé composé, rien goes before the participle (je n'ai rien vu) but personne after it (je n'ai vu personne).",
+          "examples": [
+            [
+              "{Personne n'}est venu.",
+              "nobody · not · is · come",
+              "Nobody came."
+            ],
+            [
+              "Je {n'ai vu personne}.",
+              "I · not-have · seen · nobody",
+              "I didn't see anyone."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Je ne bois ＿ d'alcool.",
+          "en": "I never drink alcohol.",
+          "options": ["jamais", "rien", "personne", "pas jamais"],
+          "answer": "jamais",
+          "why": "Never: jamais."
+        },
+        {
+          "q": "Il n'y a ＿ dans le frigo.",
+          "en": "There's nothing in the fridge.",
+          "options": ["personne", "rien", "jamais", "plus de"],
+          "answer": "rien",
+          "why": "Nothing: rien."
+        },
+        {
+          "q": "Je n'ai vu ＿.",
+          "en": "I saw nobody.",
+          "options": ["rien", "jamais", "personne", "plus"],
+          "answer": "personne",
+          "why": "personne goes after the participle."
+        },
+        {
+          "q": "＿ ne répond.",
+          "en": "Nobody answers.",
+          "options": ["Rien", "Jamais", "Plus", "Personne"],
+          "answer": "Personne",
+          "why": "Subject: personne."
+        },
+        {
+          "q": "Elle ne travaille ＿ ici.",
+          "en": "She doesn't work here any more.",
+          "options": ["plus", "jamais", "rien", "pas plus"],
+          "answer": "plus",
+          "why": "No longer: plus."
+        }
+      ]
+    },
+    {
+      "id": "stem-change-er",
+      "title": "acheter, appeler, préférer — spelling changes",
+      "particle": "achète・appelle・préfère",
+      "summary": "Some -er verbs change their stem when the ending is silent. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "In the forms with silent endings (je, tu, il, ils), some -er verbs change spelling. e → <b>è</b>: acheter → j'achète. é → <b>è</b>: préférer → je préfère. Double the consonant: appeler → j'appelle, jeter → je jette.",
+          "examples": [
+            ["J'{achète} du pain.", "I · buy · some · bread", "I buy bread."],
+            [
+              "Tu {préfères} le thé ?",
+              "you · prefer · the · tea",
+              "Do you prefer tea?"
+            ],
+            [
+              "Ils s'{appellent} Tom et Max.",
+              "they · themselves · call · Tom · and · Max",
+              "They're called Tom and Max."
+            ]
+          ]
+        },
+        {
+          "h": "nous and vous don't change",
+          "p": "nous achetons, vous préférez, nous appelons: the ending is pronounced, so the stem stays. -ger and -cer verbs add e or ç before o: nous mangeons, nous commençons.",
+          "examples": [
+            [
+              "Nous {mangeons} à midi.",
+              "we · eat · at · noon",
+              "We eat at noon."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Je m'＿ Sophie.",
+          "en": "My name is Sophie.",
+          "options": ["appelle", "appele", "apelle", "appèle"],
+          "answer": "appelle",
+          "why": "Double l."
+        },
+        {
+          "q": "Nous ＿ une maison.",
+          "en": "We're buying a house.",
+          "options": ["achètons", "achetons", "achettons", "achetez"],
+          "answer": "achetons",
+          "why": "nous: no change."
+        },
+        {
+          "q": "Elle ＿ le rouge.",
+          "en": "She prefers red.",
+          "options": ["préfére", "préfèrre", "préfère", "préfèrent"],
+          "answer": "préfère",
+          "why": "é → è."
+        },
+        {
+          "q": "Nous ＿ demain.",
+          "en": "We start tomorrow.",
+          "options": ["commencons", "commençeons", "commençon", "commençons"],
+          "answer": "commençons",
+          "why": "ç keeps the s sound before o."
+        },
+        {
+          "q": "Ils ＿ la balle.",
+          "en": "They throw the ball.",
+          "options": ["jettent", "jetent", "jètent", "jettons"],
+          "answer": "jettent",
+          "why": "jeter doubles the t."
+        }
+      ]
+    },
+    {
+      "id": "superlative",
+      "title": "le plus, le moins — the most, the least",
+      "particle": "le plus・le moins・le meilleur",
+      "summary": "le/la/les + plus/moins + adjective: the most, the least. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Add the article to the comparative: <b>le plus grand</b>, <b>la plus belle</b>, <b>les moins chers</b>. “In” after a superlative is <b>de</b>: le plus grand du monde.",
+          "examples": [
+            [
+              "C'est {la plus} belle ville {du} monde.",
+              "it-is · the · most · beautiful · town · of-the · world",
+              "It's the most beautiful town in the world."
+            ],
+            [
+              "Ce sont {les moins} chers.",
+              "these · are · the · least · expensive",
+              "They're the cheapest."
+            ]
+          ]
+        },
+        {
+          "h": "After the noun",
+          "p": "If the adjective follows the noun, the article appears twice: le restaurant <b>le plus</b> cher. bon → le meilleur, bien → le mieux.",
+          "examples": [
+            [
+              "le film {le plus} intéressant",
+              "the · film · the · most · interesting",
+              "the most interesting film"
+            ],
+            [
+              "C'est {le meilleur} restaurant.",
+              "it-is · the · best · restaurant",
+              "It's the best restaurant."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "C'est la ville ＿ ancienne de France.",
+          "en": "It's the oldest town in France.",
+          "options": ["la plus", "plus", "le plus", "la meilleure"],
+          "answer": "la plus",
+          "why": "Article + plus."
+        },
+        {
+          "q": "le plus haut ＿ monde",
+          "en": "the highest in the world",
+          "options": ["dans le", "du", "en", "au"],
+          "answer": "du",
+          "why": "“in” = de."
+        },
+        {
+          "q": "C'est ＿ gâteau.",
+          "en": "It's the best cake.",
+          "options": ["le plus bon", "le mieux", "le meilleur", "la meilleure"],
+          "answer": "le meilleur",
+          "why": "bon → le meilleur."
+        },
+        {
+          "q": "the most expensive car",
+          "en": "",
+          "options": [
+            "la voiture plus chère la",
+            "la plus voiture chère",
+            "la voiture le plus cher",
+            "la voiture la plus chère"
+          ],
+          "answer": "la voiture la plus chère",
+          "why": "Article twice after the noun."
+        },
+        {
+          "q": "Elle chante ＿.",
+          "en": "She sings best.",
+          "options": ["le mieux", "le meilleur", "la meilleure", "la mieux"],
+          "answer": "le mieux",
+          "why": "Adverb: le mieux."
+        }
+      ]
+    },
+    {
+      "id": "il-faut",
+      "title": "il faut — it's necessary",
+      "particle": "il faut",
+      "summary": "il faut + infinitive or noun: one must, you need. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>il faut</b> is impersonal: it's necessary to. It never changes person: il faut partir (we/you/one must leave).",
+          "examples": [
+            ["{Il faut} manger.", "it · needs · eat", "You have to eat."],
+            [
+              "{Il faut} deux heures pour y aller.",
+              "it · needs · two · hours · to · there · go",
+              "It takes two hours to get there."
+            ],
+            [
+              "{Il ne faut pas} fumer ici.",
+              "it · not · needs · not · smoke · here",
+              "You mustn't smoke here."
+            ]
+          ]
+        },
+        {
+          "h": "Negative is a ban",
+          "p": "<b>il ne faut pas</b> means must not, not “don't have to”. For “don't need to”, say ce n'est pas nécessaire or pas besoin de. Past: il fallait; future: il faudra.",
+          "examples": [
+            [
+              "{Pas besoin de} venir.",
+              "no · need · of · come",
+              "No need to come."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ partir maintenant.",
+          "en": "We have to leave now.",
+          "options": ["Il faut", "Il fait", "Il faute", "On faut"],
+          "answer": "Il faut",
+          "why": "il faut + infinitive."
+        },
+        {
+          "q": "Il ne faut pas toucher means…",
+          "en": "",
+          "options": [
+            "You don't need to touch.",
+            "You mustn't touch.",
+            "Touch it.",
+            "You can touch."
+          ],
+          "answer": "You mustn't touch.",
+          "why": "A ban."
+        },
+        {
+          "q": "Il ＿ du sucre.",
+          "en": "You need sugar.",
+          "options": ["fait", "faux", "faut", "faute"],
+          "answer": "faut",
+          "why": "il faut + noun."
+        },
+        {
+          "q": "You don't need to pay.",
+          "en": "",
+          "options": [
+            "Il ne faut pas payer.",
+            "Il faut ne payer.",
+            "Il faut pas payer jamais.",
+            "Pas besoin de payer."
+          ],
+          "answer": "Pas besoin de payer.",
+          "why": "il ne faut pas is a ban."
+        },
+        {
+          "q": "Future of il faut",
+          "en": "",
+          "options": ["il faudra", "il fallera", "il faura", "il faudrai"],
+          "answer": "il faudra",
+          "why": "faudra."
+        }
+      ]
+    },
+    {
+      "id": "savoir-connaitre",
+      "title": "savoir or connaître",
+      "particle": "savoir・connaître",
+      "summary": "savoir: facts and skills. connaître: people, places, familiarity. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>savoir</b> (je sais, nous savons, ils savent) is knowing facts and how to: je sais nager, je sais où il habite. It's followed by que, où, si, or an infinitive.",
+          "examples": [
+            ["Je {sais} nager.", "I · know · swim", "I can swim."],
+            [
+              "Tu {sais} où est la gare ?",
+              "you · know · where · is · the · station",
+              "Do you know where the station is?"
+            ]
+          ]
+        },
+        {
+          "h": "connaître",
+          "p": "<b>connaître</b> (je connais, nous connaissons) is being acquainted with: a person, a place, a book. It takes a direct noun.",
+          "examples": [
+            [
+              "Je {connais} bien Paris.",
+              "I · know · well · Paris",
+              "I know Paris well."
+            ],
+            [
+              "Vous {connaissez} Marie ?",
+              "you · know · Marie",
+              "Do you know Marie?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Je ＿ ton frère.",
+          "en": "I know your brother.",
+          "options": ["connais", "sais", "connait", "savons"],
+          "answer": "connais",
+          "why": "A person: connaître."
+        },
+        {
+          "q": "Tu ＿ conduire ?",
+          "en": "Can you drive?",
+          "options": ["connais", "sais", "peux savoir", "connaît"],
+          "answer": "sais",
+          "why": "Know how to: savoir."
+        },
+        {
+          "q": "Je ne ＿ pas pourquoi.",
+          "en": "I don't know why.",
+          "options": ["connais", "connaissais", "sais", "savez"],
+          "answer": "sais",
+          "why": "A fact: savoir."
+        },
+        {
+          "q": "Nous ＿ ce restaurant.",
+          "en": "We know this restaurant.",
+          "options": ["savons", "connaissez", "savent", "connaissons"],
+          "answer": "connaissons",
+          "why": "A place: connaître."
+        },
+        {
+          "q": "savoir is followed by…",
+          "en": "",
+          "options": [
+            "que, où, si or an infinitive",
+            "only a person",
+            "only a place",
+            "nothing"
+          ],
+          "answer": "que, où, si or an infinitive",
+          "why": "Facts and skills."
+        }
+      ]
+    },
+    {
+      "id": "depuis",
+      "title": "depuis — since, for",
+      "particle": "depuis",
+      "summary": "depuis + present: something started in the past and still goes on. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>depuis</b> with the <b>present</b> tense says how long or since when something has been going on. English uses the perfect; French uses the present.",
+          "examples": [
+            [
+              "J'habite ici {depuis} cinq ans.",
+              "I · live · here · since · five · years",
+              "I've lived here for five years."
+            ],
+            [
+              "Il pleut {depuis} ce matin.",
+              "it · rains · since · this · morning",
+              "It's been raining since this morning."
+            ]
+          ]
+        },
+        {
+          "h": "Asking, and pendant",
+          "p": "Ask with <b>Depuis quand…?</b> or <b>Depuis combien de temps…?</b>. For a finished period, use <b>pendant</b>: j'ai habité à Rome pendant deux ans.",
+          "examples": [
+            [
+              "{Depuis combien de temps} tu apprends le français ?",
+              "since · how-much · of · time · you · learn · the · French",
+              "How long have you been learning French?"
+            ],
+            [
+              "J'ai travaillé {pendant} trois ans.",
+              "I · have · worked · during · three · years",
+              "I worked for three years (and stopped)."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Je travaille ici ＿ 2020.",
+          "en": "I've worked here since 2020.",
+          "options": ["depuis", "pendant", "il y a", "pour"],
+          "answer": "depuis",
+          "why": "Ongoing since: depuis."
+        },
+        {
+          "q": "I've been waiting for an hour.",
+          "en": "",
+          "options": [
+            "J'ai attendu depuis une heure.",
+            "J'attends depuis une heure.",
+            "J'attends pendant une heure.",
+            "J'attends il y a une heure."
+          ],
+          "answer": "J'attends depuis une heure.",
+          "why": "depuis + present."
+        },
+        {
+          "q": "Il a dormi ＿ dix heures.",
+          "en": "He slept for ten hours.",
+          "options": ["depuis", "il y a", "pendant", "dans"],
+          "answer": "pendant",
+          "why": "Finished period: pendant."
+        },
+        {
+          "q": "depuis takes which tense for ongoing actions?",
+          "en": "",
+          "options": ["passé composé", "futur", "imparfait", "present"],
+          "answer": "present",
+          "why": "Unlike English."
+        },
+        {
+          "q": "Depuis quand ? means…",
+          "en": "",
+          "options": ["Since when?", "Until when?", "For how long ago?", "When?"],
+          "answer": "Since when?",
+          "why": "Asking the start."
+        }
+      ]
+    },
+    {
+      "id": "adverbs-ment",
+      "title": "Adverbs in -ment",
+      "particle": "-ment",
+      "summary": "Add -ment to the feminine adjective: lentement, heureusement. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Most adverbs take the feminine form + <b>-ment</b>: lent → lente → <b>lentement</b>, heureux → heureuse → <b>heureusement</b>. After a vowel, use the masculine: vrai → vraiment.",
+          "examples": [
+            [
+              "Parle {lentement}, s'il te plaît.",
+              "speak · slowly · please",
+              "Speak slowly, please."
+            ],
+            [
+              "{Heureusement}, il est arrivé.",
+              "fortunately · he · is · arrived",
+              "Luckily, he arrived."
+            ]
+          ]
+        },
+        {
+          "h": "-amment and -emment",
+          "p": "Adjectives in -ant → <b>-amment</b> (constant → constamment); -ent → <b>-emment</b> (évident → évidemment). Both are said “-amment”.",
+          "examples": [
+            ["{Évidemment} !", "obviously", "Obviously!"],
+            [
+              "Il parle {couramment} anglais.",
+              "he · speaks · fluently · English",
+              "He speaks English fluently."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "doux →",
+          "en": "",
+          "options": ["doucement", "douxment", "douxement", "doucment"],
+          "answer": "doucement",
+          "why": "Feminine douce + ment."
+        },
+        {
+          "q": "vrai →",
+          "en": "",
+          "options": ["vraiement", "vraiment", "vraiemment", "vrament"],
+          "answer": "vraiment",
+          "why": "After a vowel, masculine + ment."
+        },
+        {
+          "q": "récent →",
+          "en": "",
+          "options": ["récentment", "récamment", "récemment", "récentement"],
+          "answer": "récemment",
+          "why": "-ent → -emment."
+        },
+        {
+          "q": "Elle conduit ＿.",
+          "en": "She drives carefully.",
+          "options": ["prudentement", "prudentment", "prudamment", "prudemment"],
+          "answer": "prudemment",
+          "why": "prudent → prudemment."
+        },
+        {
+          "q": "Where does a short adverb go in the passé composé?",
+          "en": "Il a bien mangé.",
+          "options": [
+            "between avoir and the participle",
+            "after the participle always",
+            "before avoir",
+            "at the very start"
+          ],
+          "answer": "between avoir and the participle",
+          "why": "Il a bien mangé, j'ai déjà vu."
+        }
+      ]
     },
     {
       "id": "object-pronouns",
-      "title": "Object pronouns: le, la, les, lui, leur (about A2)",
-      "level": "beginner-intermediate"
+      "title": "Object pronouns: le, la, les, lui, leur",
+      "particle": "le・la・les・lui・leur・me・te・nous・vous",
+      "summary": "Object pronouns go before the verb. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Direct objects: <b>le</b> (him, it), <b>la</b> (her, it), <b>les</b> (them), me, te, nous, vous. Indirect (to someone): <b>lui</b> (to him/her), <b>leur</b> (to them). They go before the verb.",
+          "examples": [
+            ["Je {la} vois.", "I · her · see", "I see her."],
+            ["Tu {les} as ?", "you · them · have", "Have you got them?"],
+            [
+              "Je {lui} parle.",
+              "I · to-him/her · speak",
+              "I'm talking to him/her."
+            ]
+          ]
+        },
+        {
+          "h": "Negative and infinitives",
+          "p": "Negative: je ne <b>le</b> vois pas. With an infinitive, the pronoun goes before the infinitive: je vais <b>le</b> faire. In the passé composé it goes before avoir: je l'ai vu.",
+          "examples": [
+            ["Je vais {le} faire.", "I · go · it · do", "I'm going to do it."],
+            [
+              "Je {leur} ai écrit.",
+              "I · to-them · have · written",
+              "I wrote to them."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Tu vois Marie ? — Oui, je ＿ vois.",
+          "en": "Do you see Marie? — Yes, I see her.",
+          "options": ["la", "lui", "le", "leur"],
+          "answer": "la",
+          "why": "Direct, feminine: la."
+        },
+        {
+          "q": "Tu parles à Paul ? — Oui, je ＿ parle.",
+          "en": "Talking to Paul? — Yes.",
+          "options": ["le", "lui", "la", "leur"],
+          "answer": "lui",
+          "why": "parler à: indirect, lui."
+        },
+        {
+          "q": "J'écris à mes parents. → Je ＿ écris.",
+          "en": "I'm writing to them.",
+          "options": ["les", "leurs", "leur", "lui"],
+          "answer": "leur",
+          "why": "Indirect plural: leur."
+        },
+        {
+          "q": "I'm going to buy it.",
+          "en": "",
+          "options": [
+            "Je le vais acheter.",
+            "Je vais acheter le.",
+            "Je vais acheter l'.",
+            "Je vais l'acheter."
+          ],
+          "answer": "Je vais l'acheter.",
+          "why": "Before the infinitive."
+        },
+        {
+          "q": "I didn't see them.",
+          "en": "",
+          "options": [
+            "Je ne les ai pas vus.",
+            "Je ne ai pas les vus.",
+            "Je les n'ai pas vus.",
+            "Je n'ai pas les vus."
+          ],
+          "answer": "Je ne les ai pas vus.",
+          "why": "ne + pronoun + avoir + pas."
+        }
+      ]
     },
     {
       "id": "y-en",
-      "title": "y and en (about A2–B1)",
-      "level": "beginner-intermediate"
+      "title": "y and en",
+      "particle": "y・en",
+      "summary": "y replaces à + place or thing; en replaces de + noun or a quantity. (about A2–B1)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>y</b> replaces a place (à Paris, chez moi) or à + thing: j'y vais, I'm going there. Je pense à mon travail → j'y pense.",
+          "examples": [
+            [
+              "Tu vas à Lyon ? — Oui, j'{y} vais.",
+              "you · go · to · Lyon · yes · I · there · go",
+              "Going to Lyon? — Yes, I'm going there."
+            ],
+            [
+              "Il {y} a du monde.",
+              "it · there · has · some · people",
+              "There are a lot of people."
+            ]
+          ]
+        },
+        {
+          "h": "en",
+          "p": "<b>en</b> replaces de + noun or a partitive: of it, some. With numbers and quantities, keep the number: j'en ai deux.",
+          "examples": [
+            [
+              "Tu veux du café ? — Oui, j'{en} veux.",
+              "you · want · some · coffee · yes · I · some · want",
+              "Want coffee? — Yes, I'd like some."
+            ],
+            [
+              "J'{en} ai trois.",
+              "I · of-them · have · three",
+              "I've got three (of them)."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Tu vas au marché ? — Oui, j'＿ vais.",
+          "en": "Going to the market? — Yes.",
+          "options": ["y", "en", "le", "lui"],
+          "answer": "y",
+          "why": "Place: y."
+        },
+        {
+          "q": "Tu as des frères ? — Oui, j'＿ ai deux.",
+          "en": "Do you have brothers? — Yes, two.",
+          "options": ["y", "en", "les", "leur"],
+          "answer": "en",
+          "why": "Quantity: en."
+        },
+        {
+          "q": "Il parle de son voyage. → Il ＿ parle.",
+          "en": "",
+          "options": ["y", "le", "en", "lui"],
+          "answer": "en",
+          "why": "de + thing: en."
+        },
+        {
+          "q": "Je pense à l'examen. → J'＿ pense.",
+          "en": "",
+          "options": ["en", "le", "lui", "y"],
+          "answer": "y",
+          "why": "à + thing: y."
+        },
+        {
+          "q": "Il n'y en a plus means…",
+          "en": "",
+          "options": [
+            "There's none left.",
+            "There's more.",
+            "He's not there.",
+            "Nobody is there."
+          ],
+          "answer": "There's none left.",
+          "why": "y + en together."
+        }
+      ]
     },
     {
       "id": "imparfait",
-      "title": "The imparfait, and when to use it instead of the passé composé (about A2–B1)",
-      "level": "beginner-intermediate"
+      "title": "The imparfait, and when to use it instead of the passé composé",
+      "particle": "-ais・-ait・-ions・-iez・-aient",
+      "summary": "The imparfait describes how things were and what used to happen. (about A2–B1)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Take the nous form, drop -ons, add <b>-ais, -ais, -ait, -ions, -iez, -aient</b>: nous parlons → je parlais. Only être is irregular: j'étais.",
+          "examples": [
+            [
+              "Quand j'étais petit, je {jouais} au foot.",
+              "when · I · was · small · I · played · at-the · football",
+              "When I was little, I used to play football."
+            ],
+            [
+              "Il {faisait} beau.",
+              "it · made · fine",
+              "The weather was nice."
+            ]
+          ]
+        },
+        {
+          "h": "Background vs event",
+          "p": "The imparfait sets the scene or tells habits; the passé composé tells what happened once. Je <b>lisais</b> quand le téléphone <b>a sonné</b>: I was reading when the phone rang.",
+          "examples": [
+            [
+              "Je {dormais} quand tu as appelé.",
+              "I · was-sleeping · when · you · have · called",
+              "I was asleep when you called."
+            ],
+            [
+              "Elle {avait} vingt ans.",
+              "she · had · twenty · years",
+              "She was twenty."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Avant, nous ＿ à la campagne.",
+          "en": "We used to live in the country.",
+          "options": ["habitions", "avons habité", "habitons", "habitaient"],
+          "answer": "habitions",
+          "why": "A past habit: imparfait."
+        },
+        {
+          "q": "Il ＿ quand je suis arrivé.",
+          "en": "He was sleeping when I arrived.",
+          "options": ["a dormi", "dormait", "dort", "dormira"],
+          "answer": "dormait",
+          "why": "Background: imparfait."
+        },
+        {
+          "q": "être (je) in the imparfait",
+          "en": "",
+          "options": ["j'êtais", "je suiais", "j'étais", "j'été"],
+          "answer": "j'étais",
+          "why": "The only irregular stem: ét-."
+        },
+        {
+          "q": "Hier, j'＿ un accident.",
+          "en": "Yesterday I had an accident.",
+          "options": ["avais", "aurai", "ai avoir", "ai eu"],
+          "answer": "ai eu",
+          "why": "A one-off event: passé composé."
+        },
+        {
+          "q": "Il pleuvait means…",
+          "en": "",
+          "options": [
+            "It was raining.",
+            "It rained once.",
+            "It will rain.",
+            "It has rained."
+          ],
+          "answer": "It was raining.",
+          "why": "Description."
+        }
+      ]
     },
     {
       "id": "futur-simple",
-      "title": "The futur simple (about A2–B1)",
-      "level": "beginner-intermediate"
+      "title": "The futur simple",
+      "particle": "-ai・-as・-a・-ons・-ez・-ont",
+      "summary": "The infinitive + avoir's endings: je parlerai. (about A2–B1)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Add <b>-ai, -as, -a, -ons, -ez, -ont</b> to the infinitive (-re verbs drop the e): je parler<b>ai</b>, nous finir<b>ons</b>, ils vendr<b>ont</b>.",
+          "examples": [
+            [
+              "Demain, il {pleuvra}.",
+              "tomorrow · it · will-rain",
+              "It will rain tomorrow."
+            ],
+            [
+              "Je te {téléphonerai}.",
+              "I · you · will-phone",
+              "I'll call you."
+            ]
+          ]
+        },
+        {
+          "h": "Irregular stems and quand",
+          "p": "Irregular stems: être → ser-, avoir → aur-, aller → ir-, faire → fer-, venir → viendr-, pouvoir → pourr-, voir → verr-. After <b>quand</b> about the future, French uses the future: Quand je serai grand…",
+          "examples": [
+            [
+              "Nous {irons} à la plage.",
+              "we · will-go · to · the · beach",
+              "We'll go to the beach."
+            ],
+            [
+              "Quand tu {seras} là, on mangera.",
+              "when · you · will-be · there · one · will-eat",
+              "When you're here, we'll eat."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Je ＿ demain.",
+          "en": "I'll come tomorrow.",
+          "options": ["viendrai", "venirai", "viendré", "vienderai"],
+          "answer": "viendrai",
+          "why": "venir → viendr-."
+        },
+        {
+          "q": "Ils ＿ contents.",
+          "en": "They'll be happy.",
+          "options": ["êtront", "seront", "seraient", "sont"],
+          "answer": "seront",
+          "why": "être → ser-."
+        },
+        {
+          "q": "Nous ＿ un chien.",
+          "en": "We'll have a dog.",
+          "options": ["avrons", "avons", "aurons", "aurions"],
+          "answer": "aurons",
+          "why": "avoir → aur-."
+        },
+        {
+          "q": "Quand il ＿ beau, on sortira.",
+          "en": "When it's nice, we'll go out.",
+          "options": ["fait", "faisait", "ferait", "fera"],
+          "answer": "fera",
+          "why": "Future after quand."
+        },
+        {
+          "q": "Tu ＿ le film ?",
+          "en": "Will you see the film?",
+          "options": ["verras", "voiras", "voirras", "voyras"],
+          "answer": "verras",
+          "why": "voir → verr-."
+        }
+      ]
     },
     {
       "id": "relatives",
-      "title": "qui, que, où (about A2–B1)",
-      "level": "beginner-intermediate"
+      "title": "qui, que, où",
+      "particle": "qui・que・où",
+      "summary": "qui is the subject of the next verb, que the object, où a place or time. (about A2–B1)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>qui</b> is followed by a verb (it's the subject): l'homme qui parle. <b>que</b> (qu') is followed by a subject (it's the object): le livre que je lis.",
+          "examples": [
+            [
+              "C'est l'homme {qui} habite ici.",
+              "it-is · the · man · who · lives · here",
+              "He's the man who lives here."
+            ],
+            [
+              "Le film {que} j'ai vu était bon.",
+              "the · film · that · I · have · seen · was · good",
+              "The film I saw was good."
+            ]
+          ]
+        },
+        {
+          "h": "où",
+          "p": "<b>où</b> is for places and times: la ville où je suis né, le jour où il est parti. que can't be dropped, unlike English “that”.",
+          "examples": [
+            [
+              "la maison {où} j'ai grandi",
+              "the · house · where · I · have · grown-up",
+              "the house where I grew up"
+            ],
+            [
+              "le jour {où} il est parti",
+              "the · day · when · he · is · left",
+              "the day he left"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "La femme ＿ chante est ma tante.",
+          "en": "The woman singing is my aunt.",
+          "options": ["qui", "que", "où", "dont"],
+          "answer": "qui",
+          "why": "A verb follows: qui."
+        },
+        {
+          "q": "Le gâteau ＿ tu as fait est délicieux.",
+          "en": "The cake you made is delicious.",
+          "options": ["qui", "que", "où", "quoi"],
+          "answer": "que",
+          "why": "A subject follows: que."
+        },
+        {
+          "q": "le pays ＿ j'habite",
+          "en": "the country I live in",
+          "options": ["que", "qui", "où", "quand"],
+          "answer": "où",
+          "why": "Place: où."
+        },
+        {
+          "q": "Can que be left out like English “that”?",
+          "en": "",
+          "options": ["Yes", "Only in speech", "Only before a vowel", "No"],
+          "answer": "No",
+          "why": "Always say it."
+        },
+        {
+          "q": "le jour ＿ nous nous sommes rencontrés",
+          "en": "the day we met",
+          "options": ["où", "que", "quand", "qui"],
+          "answer": "où",
+          "why": "Time after a noun: où."
+        }
+      ]
+    },
+    {
+      "id": "verbs-infinitive-prep",
+      "title": "Verb + à or de + infinitive",
+      "particle": "commencer à・essayer de・aimer",
+      "summary": "Some verbs take à, some de, some nothing before an infinitive. (about A2–B1)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "No preposition: aimer, vouloir, pouvoir, devoir, aller, préférer: j'aime lire. With <b>à</b>: commencer à, apprendre à, réussir à, aider à. With <b>de</b>: essayer de, oublier de, décider de, arrêter de, finir de.",
+          "examples": [
+            [
+              "J'apprends {à} nager.",
+              "I · learn · to · swim",
+              "I'm learning to swim."
+            ],
+            [
+              "Il a oublié {de} fermer la porte.",
+              "he · has · forgotten · of · close · the · door",
+              "He forgot to close the door."
+            ],
+            [
+              "Elle aime {—} danser.",
+              "she · likes · dance",
+              "She likes dancing."
+            ]
+          ]
+        },
+        {
+          "h": "Learn them as pairs",
+          "p": "There's no rule that covers all of them; learn the verb with its preposition. de becomes d' before a vowel: arrêter d'avoir.",
+          "examples": [
+            [
+              "J'ai arrêté {de} fumer.",
+              "I · have · stopped · of · smoke",
+              "I've stopped smoking."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "J'essaie ＿ comprendre.",
+          "en": "I'm trying to understand.",
+          "options": ["de", "à", "— (nothing)", "pour"],
+          "answer": "de",
+          "why": "essayer de."
+        },
+        {
+          "q": "Il commence ＿ pleuvoir.",
+          "en": "It's starting to rain.",
+          "options": ["de", "à", "— (nothing)", "par"],
+          "answer": "à",
+          "why": "commencer à."
+        },
+        {
+          "q": "Nous voulons ＿ partir.",
+          "en": "We want to leave.",
+          "options": ["de", "à", "— (nothing)", "pour"],
+          "answer": "— (nothing)",
+          "why": "vouloir + infinitive."
+        },
+        {
+          "q": "Tu as réussi ＿ trouver ?",
+          "en": "Did you manage to find it?",
+          "options": ["de", "— (nothing)", "en", "à"],
+          "answer": "à",
+          "why": "réussir à."
+        },
+        {
+          "q": "Elle a décidé ＿ rester.",
+          "en": "She decided to stay.",
+          "options": ["de", "à", "— (nothing)", "par"],
+          "answer": "de",
+          "why": "décider de."
+        }
+      ]
+    },
+    {
+      "id": "on",
+      "title": "on — we, people, someone",
+      "particle": "on",
+      "summary": "on means people in general, someone, or (in speech) we. It takes the il form. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>on</b> is a subject pronoun with the il/elle verb form. It means people in general (On parle français ici), someone (On a frappé), and in everyday speech, we (On y va ?).",
+          "examples": [
+            [
+              "{On} parle français au Québec.",
+              "one · speaks · French · in-the · Quebec",
+              "French is spoken in Quebec."
+            ],
+            [
+              "{On} va au cinéma ce soir ?",
+              "one · goes · to-the · cinema · this · evening",
+              "Shall we go to the cinema tonight?"
+            ],
+            [
+              "{On} m'a volé mon sac.",
+              "one · me · has · stolen · my · bag",
+              "Someone stole my bag."
+            ]
+          ]
+        },
+        {
+          "h": "Agreement in speech",
+          "p": "When on means we, adjectives and être participles often agree as plural: on est contents, on est partis. The verb stays singular.",
+          "examples": [
+            ["{On est} fatigués.", "we · is · tired(pl)", "We're tired."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "On ＿ au parc ?",
+          "en": "Shall we go to the park?",
+          "options": ["va", "allons", "vont", "vas"],
+          "answer": "va",
+          "why": "on + il form."
+        },
+        {
+          "q": "On ne ＿ jamais.",
+          "en": "You never know.",
+          "options": ["savons", "sait", "sais", "savent"],
+          "answer": "sait",
+          "why": "il form."
+        },
+        {
+          "q": "On a sonné means…",
+          "en": "",
+          "options": [
+            "We rang the bell, formally.",
+            "One rings.",
+            "Someone rang the bell.",
+            "Ring it!"
+          ],
+          "answer": "Someone rang the bell.",
+          "why": "on = someone."
+        },
+        {
+          "q": "In speech, on usually means…",
+          "en": "",
+          "options": ["they only", "you (polite)", "I", "we"],
+          "answer": "we",
+          "why": "On y va = let's go."
+        },
+        {
+          "q": "On ＿ partis tôt.",
+          "en": "We left early.",
+          "options": ["est", "sommes", "a", "sont"],
+          "answer": "est",
+          "why": "Verb singular; participle may be plural."
+        }
+      ]
+    },
+    {
+      "id": "indefinites",
+      "title": "quelqu'un, quelque chose, quelque part",
+      "particle": "quelqu'un・quelque chose・quelque part",
+      "summary": "Someone, something, somewhere, and their negatives. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>quelqu'un</b> (someone), <b>quelque chose</b> (something), <b>quelque part</b> (somewhere). Adjectives after them take <b>de</b>: quelque chose de bon.",
+          "examples": [
+            [
+              "Il y a {quelqu'un} ?",
+              "there · is · someone",
+              "Is anyone there?"
+            ],
+            [
+              "Je voudrais {quelque chose de} chaud.",
+              "I · would-like · something · of · hot",
+              "I'd like something hot."
+            ],
+            [
+              "J'ai laissé mes clés {quelque part}.",
+              "I · have · left · my · keys · somewhere",
+              "I left my keys somewhere."
+            ]
+          ]
+        },
+        {
+          "h": "Negatives",
+          "p": "The opposites are ne…personne, ne…rien, ne…nulle part.",
+          "examples": [
+            [
+              "Je {ne} vais {nulle part}.",
+              "I · not · go · nowhere",
+              "I'm not going anywhere."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "J'entends ＿.",
+          "en": "I can hear someone.",
+          "options": ["quelqu'un", "quelque chose", "quelque part", "personne"],
+          "answer": "quelqu'un",
+          "why": "Someone."
+        },
+        {
+          "q": "Tu veux ＿ ?",
+          "en": "Do you want something?",
+          "options": ["quelqu'un", "quelque chose", "quelque part", "rien"],
+          "answer": "quelque chose",
+          "why": "Something."
+        },
+        {
+          "q": "quelque chose ＿ intéressant",
+          "en": "something interesting",
+          "options": ["— (nothing)", "de l'", "d'", "qui"],
+          "answer": "d'",
+          "why": "de/d' before the adjective."
+        },
+        {
+          "q": "Opposite of quelque part",
+          "en": "",
+          "options": ["ne…rien", "ne…personne", "ne…jamais", "ne…nulle part"],
+          "answer": "ne…nulle part",
+          "why": "Nowhere."
+        },
+        {
+          "q": "Il a appelé quelqu'un ? — Non, il n'a appelé ＿.",
+          "en": "",
+          "options": ["personne", "rien", "quelqu'un", "nulle part"],
+          "answer": "personne",
+          "why": "Nobody."
+        }
+      ]
+    },
+    {
+      "id": "pronoun-order",
+      "title": "Two pronouns together",
+      "particle": "me le・le lui・y en",
+      "summary": "When two pronouns meet: me/te/nous/vous, then le/la/les, then lui/leur, then y, then en. (about A2–B1)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Before the verb, pronouns line up: <b>me te se nous vous</b> → <b>le la les</b> → <b>lui leur</b> → <b>y</b> → <b>en</b>. Il me le donne, je le lui donne, il y en a.",
+          "examples": [
+            [
+              "Il {me le} donne.",
+              "he · me · it · gives",
+              "He gives it to me."
+            ],
+            [
+              "Je {le lui} ai dit.",
+              "I · it · to-him · have · said",
+              "I told him (it)."
+            ],
+            [
+              "Il {y en} a beaucoup.",
+              "it · there · of-them · has · many",
+              "There are lots of them."
+            ]
+          ]
+        },
+        {
+          "h": "Positive commands",
+          "p": "In a positive command the pronouns follow, direct before indirect, and me becomes moi: Donne-le-moi !",
+          "examples": [
+            ["{Donne-le-moi} !", "give-it-me", "Give it to me!"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Il ＿ donne.",
+          "en": "He gives it to her.",
+          "options": ["le lui", "lui le", "la le", "lui la"],
+          "answer": "le lui",
+          "why": "le before lui."
+        },
+        {
+          "q": "Elle ＿ montre.",
+          "en": "She shows it to us.",
+          "options": ["le nous", "nous le", "nous lui", "les nous"],
+          "answer": "nous le",
+          "why": "nous before le."
+        },
+        {
+          "q": "Give it to me!",
+          "en": "",
+          "options": [
+            "Donne-moi-le !",
+            "Me le donne !",
+            "Donne-le-moi !",
+            "Donne-le-me !"
+          ],
+          "answer": "Donne-le-moi !",
+          "why": "Direct, then moi."
+        },
+        {
+          "q": "Je ＿ ai parlé.",
+          "en": "I talked to him about it.",
+          "options": ["en lui", "y lui", "le en", "lui en"],
+          "answer": "lui en",
+          "why": "lui before en."
+        },
+        {
+          "q": "Il ＿ a trois.",
+          "en": "There are three of them.",
+          "options": ["y en", "en y", "les y", "y les"],
+          "answer": "y en",
+          "why": "y before en."
+        }
+      ]
     },
     {
       "id": "conditionnel",
-      "title": "The conditionnel: polite requests and wishes (about B1)",
-      "level": "intermediate"
+      "title": "The conditionnel: polite requests and wishes",
+      "particle": "-rais・-rait・-rions・-raient",
+      "summary": "Future stem + imparfait endings: je voudrais, tu pourrais. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "The conditionnel uses the future stem with the imparfait endings: je parler<b>ais</b>, il ser<b>ait</b>, nous aur<b>ions</b>. It softens requests and states wishes.",
+          "examples": [
+            [
+              "Je {voudrais} un renseignement.",
+              "I · would-like · an · information",
+              "I'd like some information."
+            ],
+            [
+              "{Pourriez}-vous m'aider ?",
+              "could-you · me-help",
+              "Could you help me?"
+            ],
+            [
+              "J'{aimerais} voyager.",
+              "I · would-like · travel",
+              "I'd love to travel."
+            ]
+          ]
+        },
+        {
+          "h": "Advice and uncertain news",
+          "p": "<b>Tu devrais</b> (you should) gives advice. News uses the conditionnel for unconfirmed facts: Le ministre serait malade (the minister is reportedly ill).",
+          "examples": [
+            [
+              "Tu {devrais} dormir.",
+              "you · should · sleep",
+              "You should get some sleep."
+            ],
+            [
+              "L'accident {aurait fait} trois blessés.",
+              "the · accident · would-have · made · three · injured",
+              "The accident reportedly injured three people."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Je ＿ un café, s'il vous plaît.",
+          "en": "I'd like a coffee, please.",
+          "options": ["voudrais", "voudrai", "voulais", "veux bien"],
+          "answer": "voudrais",
+          "why": "Conditional: -rais."
+        },
+        {
+          "q": "Vous ＿ fermer la fenêtre ?",
+          "en": "Could you close the window?",
+          "options": ["pourrez", "pourriez", "pouvez", "pouviez"],
+          "answer": "pourriez",
+          "why": "pourr- + -iez."
+        },
+        {
+          "q": "Tu ＿ voir un médecin.",
+          "en": "You should see a doctor.",
+          "options": ["devras", "dois", "devrais", "devais"],
+          "answer": "devrais",
+          "why": "Advice: devrais."
+        },
+        {
+          "q": "Il serait parti means (in the news)…",
+          "en": "",
+          "options": [
+            "He will leave.",
+            "He left, confirmed.",
+            "He must leave.",
+            "He has reportedly left."
+          ],
+          "answer": "He has reportedly left.",
+          "why": "Unconfirmed report."
+        },
+        {
+          "q": "être → je (conditionnel)",
+          "en": "",
+          "options": ["serais", "étrais", "serai", "étais"],
+          "answer": "serais",
+          "why": "Future stem ser- + -ais."
+        }
+      ]
     },
     {
       "id": "si-clauses",
-      "title": "si + présent, si + imparfait (about B1)",
-      "level": "intermediate"
+      "title": "si + présent, si + imparfait",
+      "particle": "si",
+      "summary": "Real condition: si + present, future. Unreal: si + imparfait, conditionnel. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "A likely condition: <b>si</b> + présent, then présent, futur or imperative: S'il pleut, je reste.",
+          "examples": [
+            [
+              "{S'il pleut}, je {resterai} à la maison.",
+              "if-it · rains · I · will-stay · at · the · house",
+              "If it rains, I'll stay home."
+            ],
+            [
+              "{Si} tu as faim, mange !",
+              "if · you · have · hunger · eat",
+              "If you're hungry, eat!"
+            ]
+          ]
+        },
+        {
+          "h": "Unreal",
+          "p": "An imaginary or unlikely condition: <b>si</b> + imparfait, then conditionnel. Never a conditionnel right after si.",
+          "examples": [
+            [
+              "{Si j'avais} de l'argent, j'{achèterais} une maison.",
+              "if · I · had · some · money · I · would-buy · a · house",
+              "If I had money, I'd buy a house."
+            ],
+            [
+              "{Si} j'étais toi, je partirais.",
+              "if · I · were · you · I · would-leave",
+              "If I were you, I'd leave."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Si tu ＿, je viendrai.",
+          "en": "If you come, I'll come.",
+          "options": ["viens", "viendras", "viendrais", "venais"],
+          "answer": "viens",
+          "why": "si + present."
+        },
+        {
+          "q": "Si j'＿ riche, je voyagerais.",
+          "en": "If I were rich, I'd travel.",
+          "options": ["serais", "étais", "suis", "serai"],
+          "answer": "étais",
+          "why": "si + imparfait."
+        },
+        {
+          "q": "S'il faisait beau, on ＿.",
+          "en": "If it were nice, we'd go out.",
+          "options": ["sortira", "sort", "sortirait", "sortait"],
+          "answer": "sortirait",
+          "why": "Conditional in the result."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": [
+            "Si j'avais le temps, je viendrais.",
+            "Si j'ai le temps, je viendrai.",
+            "Si tu veux, viens.",
+            "Si j'aurais le temps, je viendrais."
+          ],
+          "answer": "Si j'aurais le temps, je viendrais.",
+          "why": "No conditional after si."
+        },
+        {
+          "q": "S'il pleut, ＿.",
+          "en": "If it rains, take an umbrella.",
+          "options": [
+            "prends un parapluie",
+            "prendrais un parapluie",
+            "prenais un parapluie",
+            "aurais pris"
+          ],
+          "answer": "prends un parapluie",
+          "why": "Imperative is fine."
+        }
+      ]
     },
     {
       "id": "plus-que-parfait",
-      "title": "The plus-que-parfait (about B1)",
-      "level": "intermediate"
+      "title": "The plus-que-parfait",
+      "particle": "avais + participe passé",
+      "summary": "The past before the past: imparfait of avoir or être + participle. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "The plus-que-parfait is the imparfait of avoir or être + the past participle: j'<b>avais fini</b>, elle <b>était partie</b>. It's an action earlier than another past action.",
+          "examples": [
+            [
+              "Quand je suis arrivé, le film {avait commencé}.",
+              "when · I · am · arrived · the · film · had · started",
+              "When I arrived, the film had started."
+            ],
+            [
+              "Elle {était déjà partie}.",
+              "she · was · already · left",
+              "She had already left."
+            ]
+          ]
+        },
+        {
+          "h": "Regret and reported speech",
+          "p": "With si it expresses regret: Si seulement j'avais su ! (If only I'd known!). It's also the past of a past in reported speech.",
+          "examples": [
+            [
+              "{Si seulement j'avais su} !",
+              "if · only · I · had · known",
+              "If only I'd known!"
+            ],
+            [
+              "Il m'a dit qu'il {avait perdu} ses clés.",
+              "he · me · has · said · that-he · had · lost · his · keys",
+              "He told me he'd lost his keys."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "J'＿ déjà mangé quand tu as appelé.",
+          "en": "I'd already eaten when you called.",
+          "options": ["avais", "ai", "aurais", "aurai"],
+          "answer": "avais",
+          "why": "Imparfait of avoir + participle."
+        },
+        {
+          "q": "Nous ＿ partis avant la pluie.",
+          "en": "We had left before the rain.",
+          "options": ["avions", "étions", "sommes", "serions"],
+          "answer": "étions",
+          "why": "partir takes être."
+        },
+        {
+          "q": "If only I had known!",
+          "en": "",
+          "options": [
+            "Si seulement je savais eu !",
+            "Si seulement j'aurais su !",
+            "Si seulement j'avais su !",
+            "Si seulement j'ai su !"
+          ],
+          "answer": "Si seulement j'avais su !",
+          "why": "Regret: si + plus-que-parfait."
+        },
+        {
+          "q": "The plus-que-parfait shows…",
+          "en": "",
+          "options": [
+            "the future in the past",
+            "a habit now",
+            "a command",
+            "an earlier past"
+          ],
+          "answer": "an earlier past",
+          "why": "Past before past."
+        },
+        {
+          "q": "Elle ＿ oublié son sac.",
+          "en": "She had forgotten her bag.",
+          "options": ["avait", "était", "a eu", "aurait"],
+          "answer": "avait",
+          "why": "oublier takes avoir."
+        }
+      ]
     },
     {
       "id": "subjonctif",
-      "title": "The subjonctif after il faut que and vouloir que (about B1–B2)",
-      "level": "intermediate"
+      "title": "The subjonctif after il faut que and vouloir que",
+      "particle": "que + subjonctif",
+      "summary": "After necessity, wishes and feelings, the verb after que goes into the subjunctive. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Take the ils form of the present, drop -ent, add <b>-e, -es, -e, -ions, -iez, -ent</b>: ils finissent → que je finisse. It follows <b>il faut que</b>, <b>vouloir que</b>, être content que, avoir peur que.",
+          "examples": [
+            [
+              "{Il faut que} tu {viennes}.",
+              "it · needs · that · you · come(subj)",
+              "You have to come."
+            ],
+            [
+              "Je {veux que} tu {sois} heureux.",
+              "I · want · that · you · be(subj) · happy",
+              "I want you to be happy."
+            ]
+          ]
+        },
+        {
+          "h": "Irregulars, and same subject",
+          "p": "être: que je sois, que nous soyons. avoir: que j'aie. faire: que je fasse. aller: que j'aille. pouvoir: que je puisse. If both subjects are the same, use an infinitive instead: je veux partir, not je veux que je parte.",
+          "examples": [
+            [
+              "Il faut que je {fasse} mes courses.",
+              "it · needs · that · I · do(subj) · my · shopping",
+              "I have to do my shopping."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Il faut que nous ＿.",
+          "en": "We must leave.",
+          "options": ["partions", "partons", "partirons", "partirions"],
+          "answer": "partions",
+          "why": "Subjunctive: -ions."
+        },
+        {
+          "q": "Je veux que tu ＿ là.",
+          "en": "I want you to be there.",
+          "options": ["es", "sois", "seras", "serais"],
+          "answer": "sois",
+          "why": "être → sois."
+        },
+        {
+          "q": "Il faut que j'＿ chez le médecin.",
+          "en": "I must go to the doctor.",
+          "options": ["vais", "allais", "aille", "irai"],
+          "answer": "aille",
+          "why": "aller → aille."
+        },
+        {
+          "q": "I want to leave (same subject).",
+          "en": "",
+          "options": [
+            "Je veux que je parte.",
+            "Je veux que je pars.",
+            "Je veux de partir.",
+            "Je veux partir."
+          ],
+          "answer": "Je veux partir.",
+          "why": "Same subject: infinitive."
+        },
+        {
+          "q": "Je suis content que tu ＿ venu.",
+          "en": "I'm glad you came.",
+          "options": ["sois", "es", "étais", "seras"],
+          "answer": "sois",
+          "why": "Feelings trigger the subjunctive."
+        }
+      ]
     },
     {
       "id": "dont-lequel",
-      "title": "dont, lequel, auquel (about B1–B2)",
-      "level": "intermediate"
+      "title": "dont, lequel, auquel",
+      "particle": "dont・lequel・auquel・duquel",
+      "summary": "dont replaces de + noun; lequel follows other prepositions. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>dont</b> replaces a noun introduced by <b>de</b>: parler de → le film dont je parle; avoir besoin de → ce dont j'ai besoin. It also means “whose”.",
+          "examples": [
+            [
+              "le livre {dont} je t'ai parlé",
+              "the · book · of-which · I · to-you-have · spoken",
+              "the book I told you about"
+            ],
+            [
+              "l'homme {dont} la fille est médecin",
+              "the · man · whose · the · daughter · is · doctor",
+              "the man whose daughter is a doctor"
+            ]
+          ]
+        },
+        {
+          "h": "lequel after prepositions",
+          "p": "After other prepositions, use <b>lequel, laquelle, lesquels, lesquelles</b>. With à and de they merge: auquel, auxquels, duquel. For people, prep + qui is common: la personne avec qui.",
+          "examples": [
+            [
+              "la table {sur laquelle} j'ai mis le livre",
+              "the · table · on · which · I · have · put · the · book",
+              "the table I put the book on"
+            ],
+            [
+              "le problème {auquel} je pense",
+              "the · problem · to-which · I · think",
+              "the problem I'm thinking about"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "C'est le film ＿ tout le monde parle.",
+          "en": "It's the film everyone's talking about.",
+          "options": ["dont", "que", "où", "lequel"],
+          "answer": "dont",
+          "why": "parler de → dont."
+        },
+        {
+          "q": "la raison pour ＿ il est parti",
+          "en": "the reason he left",
+          "options": ["lequel", "laquelle", "dont", "que"],
+          "answer": "laquelle",
+          "why": "raison is feminine."
+        },
+        {
+          "q": "le projet ＿ je travaille",
+          "en": "the project I'm working on (travailler sur)",
+          "options": ["dont", "auquel", "sur lequel", "que"],
+          "answer": "sur lequel",
+          "why": "sur + lequel."
+        },
+        {
+          "q": "les gens ＿ je pense",
+          "en": "the people I'm thinking of (penser à)",
+          "options": ["dont", "lesquels", "que", "à qui"],
+          "answer": "à qui",
+          "why": "People after à: à qui (or auxquels)."
+        },
+        {
+          "q": "ce ＿ j'ai besoin",
+          "en": "what I need",
+          "options": ["dont", "que", "qui", "quoi"],
+          "answer": "dont",
+          "why": "avoir besoin de → dont."
+        }
+      ]
     },
     {
       "id": "passive",
-      "title": "The passive voice (about B1–B2)",
-      "level": "intermediate"
+      "title": "The passive voice",
+      "particle": "être + participe passé・par",
+      "summary": "être + participle, agreeing with the subject; the doer takes par. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "The passive is <b>être</b> in any tense + the past participle, which agrees with the subject. The doer takes <b>par</b>.",
+          "examples": [
+            [
+              "La lettre {est écrite} {par} Marie.",
+              "the · letter · is · written · by · Marie",
+              "The letter is written by Marie."
+            ],
+            [
+              "Le pont {a été construit} en 1900.",
+              "the · bridge · has · been · built · in · 1900",
+              "The bridge was built in 1900."
+            ],
+            [
+              "Ils {seront reçus} demain.",
+              "they · will-be · received · tomorrow",
+              "They'll be received tomorrow."
+            ]
+          ]
+        },
+        {
+          "h": "French prefers on",
+          "p": "Spoken French often avoids the passive with <b>on</b> or a reflexive: On a volé ma voiture (my car was stolen); Ça se vend bien (it sells well). Feelings take de: Il est aimé de tous.",
+          "examples": [
+            [
+              "{On} a annulé le concert.",
+              "one · has · cancelled · the · concert",
+              "The concert was cancelled."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "La maison ＿ vendue.",
+          "en": "The house has been sold.",
+          "options": ["a été", "est été", "a", "était"],
+          "answer": "a été",
+          "why": "Passé composé passive: a été + participle."
+        },
+        {
+          "q": "Les voleurs ont été arrêtés ＿ la police.",
+          "en": "The thieves were arrested by the police.",
+          "options": ["de", "par", "pour", "à"],
+          "answer": "par",
+          "why": "The doer: par."
+        },
+        {
+          "q": "Les portes ＿ fermées à 20 h.",
+          "en": "The doors are closed at 8 pm.",
+          "options": ["ont", "est", "sont", "seront été"],
+          "answer": "sont",
+          "why": "être agrees with the subject."
+        },
+        {
+          "q": "A natural spoken version of “The car was stolen”",
+          "en": "",
+          "options": [
+            "La voiture a volée.",
+            "La voiture s'a volé.",
+            "On est volé la voiture.",
+            "On a volé la voiture."
+          ],
+          "answer": "On a volé la voiture.",
+          "why": "on + active."
+        },
+        {
+          "q": "Elle est respectée ＿ ses collègues.",
+          "en": "She's respected by her colleagues.",
+          "options": ["de", "chez", "à", "pour"],
+          "answer": "de",
+          "why": "Feelings such as aimer and respecter often take de."
+        }
+      ]
     },
     {
       "id": "reported-speech",
-      "title": "Reported speech and the shift of tenses (about B1–B2)",
-      "level": "intermediate"
+      "title": "Reported speech and the shift of tenses",
+      "particle": "il a dit que",
+      "summary": "After a past reporting verb, tenses step back. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "After <b>il a dit que</b>, present → imparfait, passé composé → plus-que-parfait, futur → conditionnel. Pronouns and time words change too: demain → le lendemain.",
+          "examples": [
+            [
+              "« Je suis fatigué. » → Il a dit qu'il {était} fatigué.",
+              "I · am · tired · he · has · said · that-he · was · tired",
+              "He said he was tired."
+            ],
+            [
+              "« Je viendrai. » → Elle a dit qu'elle {viendrait}.",
+              "I · will-come · she · has · said · that-she · would-come",
+              "She said she'd come."
+            ]
+          ]
+        },
+        {
+          "h": "Questions and orders",
+          "p": "Yes/no questions use <b>si</b>; question words stay; qu'est-ce que → <b>ce que</b>. Orders use de + infinitive.",
+          "examples": [
+            [
+              "Il m'a demandé {si} j'avais faim.",
+              "he · me · has · asked · if · I · had · hunger",
+              "He asked me if I was hungry."
+            ],
+            [
+              "Elle m'a dit {de} partir.",
+              "she · me · has · said · of · leave",
+              "She told me to leave."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "« J'ai faim. » → Il a dit qu'il ＿ faim.",
+          "en": "",
+          "options": ["avait", "a", "aura", "ait"],
+          "answer": "avait",
+          "why": "Present → imparfait."
+        },
+        {
+          "q": "« J'ai fini. » → Elle a dit qu'elle ＿ fini.",
+          "en": "",
+          "options": ["a", "avait", "aurait", "avoir"],
+          "answer": "avait",
+          "why": "Passé composé → plus-que-parfait."
+        },
+        {
+          "q": "« Tu viens ? » → Il m'a demandé ＿ je venais.",
+          "en": "",
+          "options": ["que", "ce que", "si", "qu'est-ce que"],
+          "answer": "si",
+          "why": "Yes/no: si."
+        },
+        {
+          "q": "« Qu'est-ce que tu veux ? » → Il m'a demandé ＿ je voulais.",
+          "en": "",
+          "options": ["qu'est-ce que", "que", "quoi", "ce que"],
+          "answer": "ce que",
+          "why": "qu'est-ce que → ce que."
+        },
+        {
+          "q": "« Assieds-toi. » → Il m'a dit ＿ m'asseoir.",
+          "en": "",
+          "options": ["de", "que", "à", "si"],
+          "answer": "de",
+          "why": "Orders: de + infinitive."
+        }
+      ]
     },
     {
       "id": "gerondif",
-      "title": "The gérondif: en + -ant (about B1–B2)",
-      "level": "intermediate"
+      "title": "The gérondif: en + -ant",
+      "particle": "en + -ant",
+      "summary": "en + present participle: while doing, or by doing. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "The present participle is the nous form minus -ons, plus <b>-ant</b>: nous parlons → parlant. Irregular: étant, ayant, sachant. With <b>en</b>, it's the gérondif: while or by doing. The subject must be the same.",
+          "examples": [
+            [
+              "Il chante {en se douchant}.",
+              "he · sings · while · himself · showering",
+              "He sings in the shower."
+            ],
+            [
+              "On apprend {en pratiquant}.",
+              "one · learns · by · practising",
+              "You learn by practising."
+            ],
+            [
+              "{En arrivant}, j'ai vu Paul.",
+              "on · arriving · I · have · seen · Paul",
+              "When I arrived, I saw Paul."
+            ]
+          ]
+        },
+        {
+          "h": "tout en",
+          "p": "<b>tout en</b> stresses simultaneity or contrast: Tout en étant riche, il vit simplement (Although rich, he lives simply).",
+          "examples": [
+            [
+              "{Tout en} souriant, elle a dit non.",
+              "all · while · smiling · she · has · said · no",
+              "Still smiling, she said no."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Je lis ＿ le petit déjeuner.",
+          "en": "I read while having breakfast.",
+          "options": ["en prenant", "en prendre", "prenant en", "en pris"],
+          "answer": "en prenant",
+          "why": "en + -ant."
+        },
+        {
+          "q": "faire →",
+          "en": "",
+          "options": ["en fesant", "en faisant", "en faitant", "en faire"],
+          "answer": "en faisant",
+          "why": "nous faisons → faisant."
+        },
+        {
+          "q": "C'est ＿ qu'on devient forgeron.",
+          "en": "Practice makes perfect (it's by forging…).",
+          "options": ["en forger", "forgeant", "en forgeant", "à forger"],
+          "answer": "en forgeant",
+          "why": "A proverb."
+        },
+        {
+          "q": "être →",
+          "en": "",
+          "options": ["êtant", "soyant", "estant", "étant"],
+          "answer": "étant",
+          "why": "Irregular."
+        },
+        {
+          "q": "The gérondif needs…",
+          "en": "",
+          "options": [
+            "the same subject as the main verb",
+            "a different subject",
+            "the past tense",
+            "a negative"
+          ],
+          "answer": "the same subject as the main verb",
+          "why": "Same subject."
+        }
+      ]
+    },
+    {
+      "id": "ce-qui-ce-que",
+      "title": "ce qui, ce que — what",
+      "particle": "ce qui・ce que・ce dont",
+      "summary": "“What” in the middle of a sentence is ce qui (subject) or ce que (object). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "“What” meaning “the thing that” is <b>ce qui</b> before a verb (subject) or <b>ce que</b> before a subject (object). With de-verbs, <b>ce dont</b>.",
+          "examples": [
+            [
+              "{Ce qui} m'intéresse, c'est l'histoire.",
+              "that · which · me-interests · it-is · the · history",
+              "What interests me is history."
+            ],
+            [
+              "Dis-moi {ce que} tu veux.",
+              "tell-me · that · which · you · want",
+              "Tell me what you want."
+            ],
+            [
+              "{Ce dont} j'ai besoin, c'est de dormir.",
+              "that · of-which · I · have · need · it-is · of · sleep",
+              "What I need is sleep."
+            ]
+          ]
+        },
+        {
+          "h": "Not quoi or qu'est-ce que",
+          "p": "In indirect questions and statements, avoid quoi and qu'est-ce que: je ne sais pas ce que tu veux.",
+          "examples": [
+            [
+              "Je ne comprends pas {ce qui} se passe.",
+              "I · not · understand · not · that · which · itself · passes",
+              "I don't understand what's happening."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Je ne sais pas ＿ il veut.",
+          "en": "I don't know what he wants.",
+          "options": ["ce qu'", "qu'est-ce qu'", "quoi", "ce qui"],
+          "answer": "ce qu'",
+          "why": "Object: ce que."
+        },
+        {
+          "q": "＿ est important, c'est la santé.",
+          "en": "What matters is health.",
+          "options": ["Ce que", "Ce qui", "Qu'est-ce qui", "Quoi"],
+          "answer": "Ce qui",
+          "why": "Subject: ce qui."
+        },
+        {
+          "q": "＿ je parle, c'est de ton avenir.",
+          "en": "What I'm talking about is your future.",
+          "options": ["Ce que", "Ce qui", "Ce dont", "Dont"],
+          "answer": "Ce dont",
+          "why": "parler de → ce dont."
+        },
+        {
+          "q": "Fais ＿ tu veux.",
+          "en": "Do what you like.",
+          "options": ["ce qui", "qu'est-ce que", "que", "ce que"],
+          "answer": "ce que",
+          "why": "Object."
+        },
+        {
+          "q": "Raconte-moi ＿ s'est passé.",
+          "en": "Tell me what happened.",
+          "options": ["ce qui", "ce que", "qu'est-ce que", "que"],
+          "answer": "ce qui",
+          "why": "Subject of se passer."
+        }
+      ]
+    },
+    {
+      "id": "possessive-pronouns",
+      "title": "le mien, la tienne — mine, yours",
+      "particle": "le mien・la mienne・les miens",
+      "summary": "Possessive pronouns agree with the thing owned and keep the article. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>le mien, la mienne, les miens, les miennes</b> (mine), le tien (yours), le sien (his/hers), le nôtre, le vôtre, le leur. They agree with the noun they replace.",
+          "examples": [
+            [
+              "Ce n'est pas ton stylo, c'est {le mien}.",
+              "it · not-is · not · your · pen · it-is · the · mine",
+              "It's not your pen, it's mine."
+            ],
+            [
+              "Ta voiture est rouge, {la mienne} est bleue.",
+              "your · car · is · red · the · mine · is · blue",
+              "Your car is red; mine is blue."
+            ]
+          ]
+        },
+        {
+          "h": "With à and de",
+          "p": "The article merges: au mien, aux nôtres, du sien. In speech, c'est à moi also means it's mine.",
+          "examples": [
+            [
+              "Je pense {aux miens}.",
+              "I · think · to-the · mine",
+              "I'm thinking of my family."
+            ],
+            ["C'est {à moi}.", "it-is · to · me", "It's mine."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "C'est ta clé ? — Oui, c'est ＿.",
+          "en": "Is it your key? — Yes, it's mine.",
+          "options": ["la mienne", "le mien", "les miens", "ma"],
+          "answer": "la mienne",
+          "why": "clé is feminine."
+        },
+        {
+          "q": "Mes parents et ＿",
+          "en": "my parents and yours (tu)",
+          "options": ["le tien", "les tiens", "les tiennes", "tes"],
+          "answer": "les tiens",
+          "why": "Masculine plural."
+        },
+        {
+          "q": "Ils ont leur maison, nous avons ＿.",
+          "en": "They have their house, we have ours.",
+          "options": ["notre", "le nôtre", "la nôtre", "les nôtres"],
+          "answer": "la nôtre",
+          "why": "Feminine singular."
+        },
+        {
+          "q": "Spoken “It's his.”",
+          "en": "",
+          "options": ["C'est le lui.", "C'est sien.", "C'est à le sien.", "C'est à lui."],
+          "answer": "C'est à lui.",
+          "why": "C'est à + stressed pronoun."
+        },
+        {
+          "q": "Je parle de mon projet et tu parles ＿.",
+          "en": "I'm talking about my project and you about yours.",
+          "options": ["du tien", "de le tien", "de tien", "de la tienne"],
+          "answer": "du tien",
+          "why": "de + le = du."
+        }
+      ]
+    },
+    {
+      "id": "demonstrative-pronouns",
+      "title": "celui, celle, ceux, celles",
+      "particle": "celui・celle・ceux・celles",
+      "summary": "The one(s), followed by -ci/-là, de, or qui/que. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>celui</b> (m), <b>celle</b> (f), <b>ceux</b> (m pl), <b>celles</b> (f pl) mean the one(s). They can't stand alone: add -ci/-là, de + noun, or a relative clause.",
+          "examples": [
+            [
+              "Quel gâteau ? {Celui-ci} ou {celui-là} ?",
+              "which · cake · this-one · or · that-one",
+              "Which cake? This one or that one?"
+            ],
+            [
+              "{Celle de} Marie est plus grande.",
+              "the-one · of · Marie · is · more · big",
+              "Marie's is bigger."
+            ],
+            [
+              "{Ceux qui} veulent venir sont les bienvenus.",
+              "those · who · want · come · are · the · welcome",
+              "Those who want to come are welcome."
+            ]
+          ]
+        },
+        {
+          "h": "ça and cela",
+          "p": "For an idea or an unnamed thing, use <b>ça</b> (spoken) or <b>cela</b> (written): Ça me plaît.",
+          "examples": [
+            [
+              "{Ça} ne fait rien.",
+              "that · not · makes · nothing",
+              "It doesn't matter."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Je préfère ＿-ci.",
+          "en": "I prefer this one (une robe).",
+          "options": ["celle", "celui", "ceux", "celles"],
+          "answer": "celle",
+          "why": "Feminine singular."
+        },
+        {
+          "q": "＿ qui arrivent en retard paient.",
+          "en": "Those who arrive late pay.",
+          "options": ["Celui", "Ceux", "Celles", "Ce"],
+          "answer": "Ceux",
+          "why": "Masculine plural."
+        },
+        {
+          "q": "Mon vélo et ＿ de Paul",
+          "en": "my bike and Paul's",
+          "options": ["celle", "ceux", "celui", "ça"],
+          "answer": "celui",
+          "why": "Masculine singular."
+        },
+        {
+          "q": "Can celui stand alone?",
+          "en": "",
+          "options": [
+            "Yes",
+            "Only in speech",
+            "Only at the end",
+            "No, it needs -ci/-là, de or qui/que"
+          ],
+          "answer": "No, it needs -ci/-là, de or qui/que",
+          "why": "Always followed by something."
+        },
+        {
+          "q": "＿ me plaît beaucoup.",
+          "en": "I like that a lot.",
+          "options": ["Ça", "Celui", "Celle", "Ceux"],
+          "answer": "Ça",
+          "why": "An idea: ça."
+        }
+      ]
+    },
+    {
+      "id": "inversion-questions",
+      "title": "Inverted questions: Parlez-vous anglais ?",
+      "particle": "verb-subject",
+      "summary": "Put the pronoun after the verb with a hyphen; add -t- between vowels. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Formal questions invert the subject pronoun and verb: <b>Parlez-vous</b> anglais ? <b>Où vas-tu</b> ? When the verb ends in a vowel and the pronoun starts with one, add <b>-t-</b>: Parle-t-il ? A-t-elle ?",
+          "examples": [
+            [
+              "{Avez-vous} des enfants ?",
+              "have-you · some · children",
+              "Do you have children?"
+            ],
+            ["{Va-t-il} venir ?", "goes-t-he · come", "Is he going to come?"]
+          ]
+        },
+        {
+          "h": "With a noun subject",
+          "p": "With a noun, keep the noun first and add a pronoun: <b>Marie est-elle</b> là ? In the passé composé, invert avoir/être: As-tu mangé ?",
+          "examples": [
+            [
+              "{Votre mère vient-elle} ?",
+              "your · mother · comes-she",
+              "Is your mother coming?"
+            ],
+            ["{As-tu} fini ?", "have-you · finished", "Have you finished?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ français ?",
+          "en": "Do you speak French? (vous)",
+          "options": ["Parlez-vous", "Vous parlez-vous", "Parlez vous", "Parle-vous"],
+          "answer": "Parlez-vous",
+          "why": "Verb-hyphen-pronoun."
+        },
+        {
+          "q": "＿-il ?",
+          "en": "Does he eat?",
+          "options": ["Mange", "Mange-t", "Mangé", "Manges"],
+          "answer": "Mange-t",
+          "why": "-t- between vowels."
+        },
+        {
+          "q": "Is Paul here? (inverted)",
+          "en": "",
+          "options": [
+            "Est Paul là ?",
+            "Est-il Paul là ?",
+            "Paul est-il là ?",
+            "Paul est-t-il là ?"
+          ],
+          "answer": "Paul est-il là ?",
+          "why": "Noun + verb + pronoun."
+        },
+        {
+          "q": "Did you see? (inverted, tu)",
+          "en": "",
+          "options": ["Vu as-tu ?", "As vu tu ?", "Tu as-vu ?", "As-tu vu ?"],
+          "answer": "As-tu vu ?",
+          "why": "Invert the auxiliary."
+        },
+        {
+          "q": "Inversion sounds…",
+          "en": "",
+          "options": ["formal or written", "casual", "rude", "regional only"],
+          "answer": "formal or written",
+          "why": "Speech prefers est-ce que or intonation."
+        }
+      ]
+    },
+    {
+      "id": "futur-anterieur",
+      "title": "The futur antérieur",
+      "particle": "aurai + participe passé",
+      "summary": "will have done: future of avoir or être + participle. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "The futur antérieur is the future of avoir or être + the past participle: j'<b>aurai fini</b>, elle <b>sera partie</b>. It's an action complete before a point in the future.",
+          "examples": [
+            [
+              "À midi, j'{aurai fini}.",
+              "at · noon · I · will-have · finished",
+              "By noon I'll have finished."
+            ],
+            [
+              "Quand tu {seras arrivé}, appelle-moi.",
+              "when · you · will-be · arrived · call-me",
+              "Call me once you've arrived."
+            ]
+          ]
+        },
+        {
+          "h": "Guessing",
+          "p": "It can also guess about the past: Il aura oublié (he must have forgotten).",
+          "examples": [
+            [
+              "Il n'est pas là ? Il {aura oublié}.",
+              "he · not-is · not · there · he · will-have · forgotten",
+              "He's not here? He must have forgotten."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Dès que j'＿ mangé, je partirai.",
+          "en": "As soon as I've eaten, I'll leave.",
+          "options": ["aurai", "ai", "avais", "aurais"],
+          "answer": "aurai",
+          "why": "Future perfect after dès que."
+        },
+        {
+          "q": "Elle ＿ rentrée avant minuit.",
+          "en": "She'll have come home before midnight.",
+          "options": ["aura", "sera", "serait", "est"],
+          "answer": "sera",
+          "why": "rentrer takes être."
+        },
+        {
+          "q": "Il aura oublié can mean…",
+          "en": "",
+          "options": [
+            "He'll forget.",
+            "He forgot yesterday.",
+            "He must have forgotten.",
+            "He should forget."
+          ],
+          "answer": "He must have forgotten.",
+          "why": "A guess."
+        },
+        {
+          "q": "The futur antérieur shows…",
+          "en": "",
+          "options": [
+            "a past habit",
+            "a polite request",
+            "a command",
+            "an action done before a future point"
+          ],
+          "answer": "an action done before a future point",
+          "why": "Will have done."
+        },
+        {
+          "q": "Quand tu ＿ ce livre, prête-le-moi.",
+          "en": "When you've read this book, lend it to me.",
+          "options": ["auras lu", "liras", "as lu", "aurais lu"],
+          "answer": "auras lu",
+          "why": "Future perfect."
+        }
+      ]
+    },
+    {
+      "id": "ne-que",
+      "title": "ne…que — only",
+      "particle": "ne…que",
+      "summary": "ne + verb + que + what's limited: only. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>ne…que</b> means only. que goes right before the thing that's limited. It's not a negative: there is something.",
+          "examples": [
+            [
+              "Je {n'}ai {qu'}un frère.",
+              "I · not-have · but · one · brother",
+              "I only have one brother."
+            ],
+            [
+              "Il {ne} mange {que} des légumes.",
+              "he · not · eats · but · some · vegetables",
+              "He only eats vegetables."
+            ]
+          ]
+        },
+        {
+          "h": "Partitive stays",
+          "p": "Because it's not a real negative, the article stays: je ne bois que du thé (not de thé). seulement is a simple alternative.",
+          "examples": [
+            [
+              "Elle {ne} parle {que} français.",
+              "she · not · speaks · but · French",
+              "She speaks only French."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Je n'ai ＿ dix euros.",
+          "en": "I only have ten euros.",
+          "options": ["que", "pas", "jamais", "plus"],
+          "answer": "que",
+          "why": "ne…que."
+        },
+        {
+          "q": "Il ne boit que ＿ eau.",
+          "en": "He only drinks water.",
+          "options": ["d'", "de l'", "de", "l'"],
+          "answer": "de l'",
+          "why": "Not a negative: the partitive stays."
+        },
+        {
+          "q": "ne…que means…",
+          "en": "",
+          "options": ["never", "nothing", "only", "no longer"],
+          "answer": "only",
+          "why": "A limitation."
+        },
+        {
+          "q": "Same meaning as Je ne travaille que le lundi",
+          "en": "",
+          "options": [
+            "Je ne travaille pas le lundi.",
+            "Je travaille tous les jours sauf lundi.",
+            "Je travaille le lundi aussi.",
+            "Je travaille seulement le lundi."
+          ],
+          "answer": "Je travaille seulement le lundi.",
+          "why": "Only on Mondays."
+        },
+        {
+          "q": "Where does que go?",
+          "en": "I only saw Paul.",
+          "options": [
+            "Je n'ai vu que Paul.",
+            "Je n'ai que vu Paul.",
+            "Je que n'ai vu Paul.",
+            "Je n'ai vu Paul que."
+          ],
+          "answer": "Je n'ai vu que Paul.",
+          "why": "Before what's limited."
+        }
+      ]
+    },
+    {
+      "id": "faire-causatif",
+      "title": "faire + infinitive — have something done",
+      "particle": "faire faire",
+      "summary": "faire + infinitive: make someone do, or have something done. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>faire</b> + infinitive means to have something done or make someone do it: Je fais réparer ma voiture, I'm having my car repaired.",
+          "examples": [
+            [
+              "Je {fais réparer} mon vélo.",
+              "I · make · repair · my · bike",
+              "I'm getting my bike repaired."
+            ],
+            [
+              "Le film m'a {fait pleurer}.",
+              "the · film · me · has · made · cry",
+              "The film made me cry."
+            ],
+            [
+              "Elle {fait travailler} ses élèves.",
+              "she · makes · work · her · pupils",
+              "She makes her pupils work."
+            ]
+          ]
+        },
+        {
+          "h": "se faire",
+          "p": "<b>se faire</b> + infinitive is something done to yourself: Je me suis fait couper les cheveux (I had my hair cut).",
+          "examples": [
+            [
+              "Je {me suis fait couper} les cheveux.",
+              "I · myself · am · made · cut · the · hair",
+              "I got my hair cut."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Nous ＿ construire une maison.",
+          "en": "We're having a house built.",
+          "options": ["faisons", "sommes", "allons", "avons"],
+          "answer": "faisons",
+          "why": "faire + infinitive."
+        },
+        {
+          "q": "Cette histoire me ＿ rire.",
+          "en": "This story makes me laugh.",
+          "options": ["rend", "fait", "laisse", "est"],
+          "answer": "fait",
+          "why": "Make someone do: faire."
+        },
+        {
+          "q": "I had my hair cut.",
+          "en": "",
+          "options": [
+            "J'ai coupé mes cheveux par quelqu'un.",
+            "Je suis coupé les cheveux.",
+            "Je me suis fait couper les cheveux.",
+            "J'ai fait mes cheveux couper."
+          ],
+          "answer": "Je me suis fait couper les cheveux.",
+          "why": "se faire + infinitive."
+        },
+        {
+          "q": "Il fait laver sa voiture means…",
+          "en": "",
+          "options": [
+            "He washes his car himself.",
+            "His car is clean.",
+            "He makes his car wash.",
+            "He's having his car washed."
+          ],
+          "answer": "He's having his car washed.",
+          "why": "Done by someone else."
+        },
+        {
+          "q": "Je fais venir le médecin means…",
+          "en": "",
+          "options": [
+            "I'm sending for the doctor.",
+            "I'm going to the doctor.",
+            "The doctor came.",
+            "I'm the doctor."
+          ],
+          "answer": "I'm sending for the doctor.",
+          "why": "faire venir = call in."
+        }
+      ]
+    },
+    {
+      "id": "pp-agreement",
+      "title": "Past participle agreement with avoir",
+      "particle": "l'ai vue・que j'ai faites",
+      "summary": "With avoir, the participle agrees with a direct object placed before it. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "With avoir, the participle normally doesn't agree. But when the <b>direct object comes before</b> the verb (a pronoun or que), it agrees with it.",
+          "examples": [
+            [
+              "J'ai vu Marie. → Je l'ai {vue}.",
+              "I · it-have · seen(f)",
+              "I saw her."
+            ],
+            [
+              "les photos que j'ai {prises}",
+              "the · photos · that · I · have · taken(f-pl)",
+              "the photos I took"
+            ],
+            [
+              "Quelles chansons as-tu {chantées} ?",
+              "which · songs · have-you · sung(f-pl)",
+              "Which songs did you sing?"
+            ]
+          ]
+        },
+        {
+          "h": "Not with en or indirect objects",
+          "p": "No agreement with lui, leur or en: je leur ai parlé, j'en ai mangé.",
+          "examples": [
+            [
+              "Des pommes ? J'en ai {mangé}.",
+              "some · apples · I-of-them · have · eaten",
+              "Apples? I ate some."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "La lettre ? Je l'ai ＿.",
+          "en": "The letter? I've written it.",
+          "options": ["écrite", "écrit", "écrits", "écrites"],
+          "answer": "écrite",
+          "why": "Object before, feminine."
+        },
+        {
+          "q": "les livres que tu as ＿",
+          "en": "the books you've read",
+          "options": ["lu", "lus", "lues", "lue"],
+          "answer": "lus",
+          "why": "Masculine plural."
+        },
+        {
+          "q": "Mes sœurs ? Je leur ai ＿.",
+          "en": "My sisters? I spoke to them.",
+          "options": ["parlées", "parlés", "parlé", "parlée"],
+          "answer": "parlé",
+          "why": "leur is indirect: no agreement."
+        },
+        {
+          "q": "J'ai ＿ la porte.",
+          "en": "I opened the door.",
+          "options": ["ouverte", "ouverts", "ouvertes", "ouvert"],
+          "answer": "ouvert",
+          "why": "Object after the verb: no agreement."
+        },
+        {
+          "q": "Des fraises ? J'en ai ＿.",
+          "en": "Strawberries? I bought some.",
+          "options": ["acheté", "achetées", "achetés", "achetée"],
+          "answer": "acheté",
+          "why": "No agreement with en."
+        }
+      ]
     },
     {
       "id": "conditionnel-passe",
-      "title": "The conditionnel passé and si + plus-que-parfait (about B2)",
-      "level": "advanced-intermediate"
+      "title": "The conditionnel passé and si + plus-que-parfait",
+      "particle": "aurais + participe passé",
+      "summary": "would have: conditional of avoir/être + participle. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>j'aurais fait</b>, elle <b>serait venue</b>: would have. With <b>si + plus-que-parfait</b>, it talks about an unreal past.",
+          "examples": [
+            [
+              "{Si j'avais su}, je {serais venu}.",
+              "if · I · had · known · I · would-be · come",
+              "If I'd known, I'd have come."
+            ],
+            [
+              "Tu {aurais dû} me le dire.",
+              "you · would-have · had-to · me · it · say",
+              "You should have told me."
+            ]
+          ]
+        },
+        {
+          "h": "Regret and blame",
+          "p": "<b>j'aurais dû</b> (I should have), <b>j'aurais pu</b> (I could have), <b>j'aurais aimé</b> (I'd have liked) are common.",
+          "examples": [
+            [
+              "J'{aurais aimé} te voir.",
+              "I · would-have · liked · you · see",
+              "I'd have liked to see you."
+            ],
+            [
+              "Il {aurait pu} gagner.",
+              "he · would-have · been-able · win",
+              "He could have won."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Si tu étais venu, tu ＿.",
+          "en": "If you'd come, you'd have had fun.",
+          "options": ["te serais amusé", "t'amuserais", "t'es amusé", "t'étais amusé"],
+          "answer": "te serais amusé",
+          "why": "Unreal past."
+        },
+        {
+          "q": "Si j'＿ le temps, je l'aurais fait.",
+          "en": "If I'd had time, I'd have done it.",
+          "options": ["aurais eu", "avais eu", "ai eu", "avais"],
+          "answer": "avais eu",
+          "why": "si + plus-que-parfait."
+        },
+        {
+          "q": "You should have called.",
+          "en": "",
+          "options": [
+            "Tu devrais appelé.",
+            "Tu as dû appeler.",
+            "Tu aurais dû appeler.",
+            "Tu aurais appeler."
+          ],
+          "answer": "Tu aurais dû appeler.",
+          "why": "aurais dû + infinitive."
+        },
+        {
+          "q": "Nous ＿ pu partir plus tôt.",
+          "en": "We could have left earlier.",
+          "options": ["serions", "avions", "aurons", "aurions"],
+          "answer": "aurions",
+          "why": "aurions pu."
+        },
+        {
+          "q": "J'aurais aimé means…",
+          "en": "",
+          "options": ["I'd have liked", "I'd like", "I liked", "I'll like"],
+          "answer": "I'd have liked",
+          "why": "Regret."
+        }
+      ]
     },
     {
       "id": "subjonctif-conjunctions",
-      "title": "bien que, pour que, avant que + subjonctif (about B2)",
-      "level": "advanced-intermediate"
+      "title": "bien que, pour que, avant que + subjonctif",
+      "particle": "bien que・pour que・avant que・à moins que",
+      "summary": "Certain conjunctions always take the subjunctive. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>bien que</b> (although), <b>pour que</b> (so that), <b>avant que</b> (before), <b>à moins que</b> (unless), <b>sans que</b> (without), <b>jusqu'à ce que</b> (until) take the subjunctive.",
+          "examples": [
+            [
+              "{Bien qu'}il {soit} fatigué, il travaille.",
+              "although · he · be(subj) · tired · he · works",
+              "Although he's tired, he's working."
+            ],
+            [
+              "Je parle lentement {pour que} tu {comprennes}.",
+              "I · speak · slowly · so · that · you · understand(subj)",
+              "I'm speaking slowly so you understand."
+            ]
+          ]
+        },
+        {
+          "h": "Same subject: preposition + infinitive",
+          "p": "With the same subject, use pour, avant de, sans + infinitive: Je mange avant de partir. After <b>après que</b>, standard French uses the indicative.",
+          "examples": [
+            [
+              "Finis {avant que} je {parte}.",
+              "finish · before · that · I · leave(subj)",
+              "Finish before I leave."
+            ],
+            [
+              "Je l'appelle {avant de} partir.",
+              "I · him-call · before · of · leave",
+              "I'll call him before I leave."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Bien qu'il ＿ froid, on sort.",
+          "en": "Although it's cold, we're going out.",
+          "options": ["fasse", "fait", "fera", "faisait"],
+          "answer": "fasse",
+          "why": "bien que + subjunctive."
+        },
+        {
+          "q": "Je t'explique pour que tu ＿.",
+          "en": "I'm explaining so that you know.",
+          "options": ["sais", "saches", "sauras", "savais"],
+          "answer": "saches",
+          "why": "savoir → saches."
+        },
+        {
+          "q": "I'll eat before leaving.",
+          "en": "",
+          "options": [
+            "Je mangerai avant que je parte.",
+            "Je mangerai avant partir.",
+            "Je mangerai avant de partir.",
+            "Je mangerai avant que partir."
+          ],
+          "answer": "Je mangerai avant de partir.",
+          "why": "Same subject: avant de."
+        },
+        {
+          "q": "à moins que means…",
+          "en": "",
+          "options": ["until", "although", "so that", "unless"],
+          "answer": "unless",
+          "why": "+ subjunctive."
+        },
+        {
+          "q": "Attends jusqu'à ce qu'il ＿.",
+          "en": "Wait until he comes.",
+          "options": ["vienne", "vient", "viendra", "venait"],
+          "answer": "vienne",
+          "why": "jusqu'à ce que + subjunctive."
+        }
+      ]
     },
     {
       "id": "passe-simple",
-      "title": "The passé simple in written narrative (about B2–C1)",
-      "level": "advanced-intermediate"
+      "title": "The passé simple in written narrative",
+      "particle": "-a・-it・-ut・-èrent",
+      "summary": "The literary past of novels and history books. Recognise it; you'll rarely say it. (about B2–C1)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "The passé simple replaces the passé composé in written stories. -er verbs: il parl<b>a</b>, ils parl<b>èrent</b>. -ir/-re: il fin<b>it</b>, il vend<b>it</b>. Many irregulars in -u: il eut, il fut, il put, il voulut.",
+          "examples": [
+            [
+              "Le roi {mourut} en 1715.",
+              "the · king · died · in · 1715",
+              "The king died in 1715."
+            ],
+            [
+              "Elle {ouvrit} la porte et {sortit}.",
+              "she · opened · the · door · and · went-out",
+              "She opened the door and went out."
+            ]
+          ]
+        },
+        {
+          "h": "The common forms",
+          "p": "You mostly meet the il and ils forms: fut (was), eut (had), fit (did), vint (came), dit (said), prit (took), alla (went).",
+          "examples": [
+            [
+              "Il {fut} un grand homme.",
+              "he · was · a · great · man",
+              "He was a great man."
+            ],
+            [
+              "Ils {vinrent} le lendemain.",
+              "they · came · the · next-day",
+              "They came the next day."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "il fut means…",
+          "en": "",
+          "options": ["he was", "he will be", "he has been", "he would be"],
+          "answer": "he was",
+          "why": "être."
+        },
+        {
+          "q": "Elle ＿ « Bonjour ».",
+          "en": "She said \"Hello\".",
+          "options": ["disa", "dit", "dut", "disit"],
+          "answer": "dit",
+          "why": "dire → dit."
+        },
+        {
+          "q": "ils parlèrent =",
+          "en": "",
+          "options": [
+            "ils parlaient",
+            "ils parleront",
+            "ils ont parlé",
+            "ils parleraient"
+          ],
+          "answer": "ils ont parlé",
+          "why": "Same meaning as the passé composé."
+        },
+        {
+          "q": "The passé simple is mostly…",
+          "en": "",
+          "options": [
+            "everyday speech",
+            "for commands",
+            "for the future",
+            "written narrative"
+          ],
+          "answer": "written narrative",
+          "why": "Literary."
+        },
+        {
+          "q": "il eut",
+          "en": "",
+          "options": ["avoir", "être", "aller", "entendre"],
+          "answer": "avoir",
+          "why": "avoir → eut."
+        }
+      ]
+    },
+    {
+      "id": "participe-present",
+      "title": "The participe présent and verbal adjectives",
+      "particle": "-ant",
+      "summary": "Without en, the -ant form is written French for “who is … / because …”. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Without en, the <b>participe présent</b> replaces qui + verb or a cause, in writing: les étudiants ayant fini peuvent partir (students who have finished may leave). It doesn't agree.",
+          "examples": [
+            [
+              "Les personnes {souhaitant} participer doivent s'inscrire.",
+              "the · persons · wishing · take-part · must · themselves-register",
+              "Anyone wishing to take part must register."
+            ],
+            [
+              "{Étant} malade, il est resté chez lui.",
+              "being · ill · he · is · stayed · at · him",
+              "Being ill, he stayed home."
+            ]
+          ]
+        },
+        {
+          "h": "Verbal adjectives",
+          "p": "Some -ant forms are adjectives and do agree: une histoire intéressante. A few change spelling: fatiguant (participle) vs fatigant (adjective), convainquant vs convaincant.",
+          "examples": [
+            ["un travail {fatigant}", "a · job · tiring", "a tiring job"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Les clients ＿ une carte peuvent entrer.",
+          "en": "Customers who have a card may enter.",
+          "options": ["ayant", "ayants", "avant", "ayante"],
+          "answer": "ayant",
+          "why": "Participle: no agreement."
+        },
+        {
+          "q": "une soirée ＿",
+          "en": "an amusing evening",
+          "options": ["amusant", "amusante", "amusants", "amusantes"],
+          "answer": "amusante",
+          "why": "Adjective: agrees."
+        },
+        {
+          "q": "＿ fatigué, je me suis couché.",
+          "en": "Being tired, I went to bed.",
+          "options": ["Être", "Ayant", "Étant", "En être"],
+          "answer": "Étant",
+          "why": "Cause, written."
+        },
+        {
+          "q": "The adjective “tiring”",
+          "en": "",
+          "options": ["fatiguant", "fatiguante", "fatigué", "fatigant"],
+          "answer": "fatigant",
+          "why": "The adjective is fatigant; fatiguant is the participle."
+        },
+        {
+          "q": "The participe présent without en is mostly…",
+          "en": "",
+          "options": ["written", "slang", "for questions", "childish"],
+          "answer": "written",
+          "why": "Formal."
+        }
+      ]
+    },
+    {
+      "id": "n-importe",
+      "title": "n'importe qui, quoi, où — any at all",
+      "particle": "n'importe qui・quoi・où・quand・comment",
+      "summary": "n'importe + question word: anyone, anything, anywhere at all. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>n'importe</b> (it doesn't matter) + a question word means any at all: n'importe qui (anybody), n'importe quoi (anything), n'importe où, n'importe quand, n'importe comment.",
+          "examples": [
+            [
+              "Tu peux venir {n'importe quand}.",
+              "you · can · come · any · when",
+              "You can come any time."
+            ],
+            [
+              "Ne parle pas à {n'importe qui}.",
+              "not · speak · not · to · anyone",
+              "Don't talk to just anyone."
+            ]
+          ]
+        },
+        {
+          "h": "n'importe quoi",
+          "p": "<b>N'importe quoi !</b> on its own means “Nonsense!”. n'importe comment can mean carelessly.",
+          "examples": [
+            [
+              "Il dit {n'importe quoi}.",
+              "he · says · anything",
+              "He's talking nonsense."
+            ],
+            [
+              "C'est fait {n'importe comment}.",
+              "it-is · done · any · how",
+              "It's been done any old how."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Assieds-toi ＿.",
+          "en": "Sit anywhere.",
+          "options": [
+            "n'importe où",
+            "n'importe qui",
+            "n'importe quoi",
+            "n'importe quand"
+          ],
+          "answer": "n'importe où",
+          "why": "Place."
+        },
+        {
+          "q": "＿ peut le faire.",
+          "en": "Anybody can do it.",
+          "options": ["N'importe quoi", "N'importe qui", "N'importe où", "Quelqu'un ne"],
+          "answer": "N'importe qui",
+          "why": "Person."
+        },
+        {
+          "q": "N'importe quoi ! means…",
+          "en": "",
+          "options": [
+            "Anything you like!",
+            "Never mind!",
+            "Nonsense!",
+            "Whatever's fine."
+          ],
+          "answer": "Nonsense!",
+          "why": "An exclamation."
+        },
+        {
+          "q": "Achète ＿ quel livre.",
+          "en": "Buy any book.",
+          "options": ["quelque", "chaque", "tout", "n'importe"],
+          "answer": "n'importe",
+          "why": "n'importe quel + noun."
+        },
+        {
+          "q": "n'importe comment can mean…",
+          "en": "",
+          "options": ["carelessly", "carefully", "anyhow, politely", "never"],
+          "answer": "carelessly",
+          "why": "Any old way."
+        }
+      ]
+    },
+    {
+      "id": "formal-connectors",
+      "title": "Formal connectors: néanmoins, or, en effet, d'ailleurs",
+      "particle": "néanmoins・or・en effet・d'ailleurs・ainsi",
+      "summary": "Written French links arguments with its own set of words. (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "Essays and formal speech use: <b>néanmoins</b>, toutefois (nevertheless), <b>or</b> (now, yet: introduces a fact that challenges), <b>en effet</b> (indeed, which confirms), <b>d'ailleurs</b> (besides), <b>ainsi</b> (thus), <b>donc</b> (therefore).",
+          "examples": [
+            [
+              "Le projet est coûteux ; il est {néanmoins} nécessaire.",
+              "the · project · is · costly · it · is · nevertheless · necessary",
+              "The project is costly; it is nevertheless necessary."
+            ],
+            [
+              "Il devait venir. {Or}, il n'est pas venu.",
+              "he · was-to · come · now · he · not-is · not · come",
+              "He was supposed to come. Yet he didn't."
+            ]
+          ]
+        },
+        {
+          "h": "en effet is not “in effect”",
+          "p": "<b>en effet</b> confirms or explains what came before: “indeed”, “and in fact”. It's a false friend.",
+          "examples": [
+            [
+              "Il est fatigué. {En effet}, il a travaillé toute la nuit.",
+              "he · is · tired · indeed · he · has · worked · all · the · night",
+              "He's tired. Indeed, he worked all night."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Le prix est élevé ; ＿, la qualité est excellente.",
+          "en": "The price is high; nevertheless, the quality is excellent.",
+          "options": ["néanmoins", "en effet", "donc", "ainsi"],
+          "answer": "néanmoins",
+          "why": "Contrast: néanmoins."
+        },
+        {
+          "q": "en effet means…",
+          "en": "",
+          "options": ["in effect", "indeed, which explains", "therefore", "however"],
+          "answer": "indeed, which explains",
+          "why": "A confirmation."
+        },
+        {
+          "q": "Tous les hommes sont mortels. ＿, Socrate est un homme.",
+          "en": "",
+          "options": ["Donc", "Néanmoins", "Or", "D'ailleurs"],
+          "answer": "Or",
+          "why": "or introduces the next premise."
+        },
+        {
+          "q": "Il pleut ; ＿, le match est annulé.",
+          "en": "It's raining; the match is therefore cancelled.",
+          "options": ["néanmoins", "en effet", "or", "ainsi"],
+          "answer": "ainsi",
+          "why": "Consequence: ainsi or donc."
+        },
+        {
+          "q": "d'ailleurs means…",
+          "en": "",
+          "options": ["besides, moreover", "elsewhere", "however", "from where"],
+          "answer": "besides, moreover",
+          "why": "Adding a point."
+        }
+      ]
     },
     {
       "id": "inversion",
-      "title": "Stylistic inversion and the ne explétif (about C1–C2)",
-      "level": "advanced"
+      "title": "Stylistic inversion and the ne explétif",
+      "particle": "peut-être・ainsi・à peine・ne explétif",
+      "summary": "After some adverbs, writing inverts the subject; some clauses take a ne with no negative meaning. (about C1–C2)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "After <b>peut-être</b>, <b>sans doute</b>, <b>ainsi</b>, <b>à peine</b> at the start of a sentence, formal French inverts: <i>Peut-être viendra-t-il.</i> Speech says Peut-être qu'il viendra.",
+          "examples": [
+            [
+              "{Peut-être viendra-t-il} demain.",
+              "maybe · will-come-he · tomorrow",
+              "Perhaps he'll come tomorrow."
+            ],
+            [
+              "{À peine était-il} sorti qu'il se mit à pleuvoir.",
+              "hardly · was-he · gone-out · that-it · itself · put · to · rain",
+              "Hardly had he gone out when it started to rain."
+            ]
+          ]
+        },
+        {
+          "h": "The ne explétif",
+          "p": "After avant que, à moins que, de peur que, craindre que and comparisons, formal French adds a <b>ne</b> that isn't negative: <i>avant qu'il ne parte</i> = before he leaves.",
+          "examples": [
+            [
+              "Partons avant qu'il {ne} pleuve.",
+              "let's-leave · before · that-it · ne · rain",
+              "Let's leave before it rains."
+            ],
+            [
+              "Il est plus riche que je {ne} pensais.",
+              "he · is · more · rich · than · I · ne · thought",
+              "He's richer than I thought."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Peut-être ＿ raison.",
+          "en": "Perhaps she's right. (formal)",
+          "options": ["a-t-elle", "elle a", "elle a-t-elle", "a elle"],
+          "answer": "a-t-elle",
+          "why": "Inversion after peut-être."
+        },
+        {
+          "q": "J'ai peur qu'il ne vienne means…",
+          "en": "",
+          "options": [
+            "I'm afraid he won't come.",
+            "I'm afraid he'll come.",
+            "I'm not afraid.",
+            "He didn't come."
+          ],
+          "answer": "I'm afraid he'll come.",
+          "why": "ne explétif isn't negative."
+        },
+        {
+          "q": "Spoken equivalent of Peut-être viendra-t-il",
+          "en": "",
+          "options": [
+            "Peut-être il viendra-t-il.",
+            "Il viendra peut-être pas.",
+            "Peut-être qu'il viendra.",
+            "Viendra-t-il peut-être qu'."
+          ],
+          "answer": "Peut-être qu'il viendra.",
+          "why": "peut-être que + normal order."
+        },
+        {
+          "q": "À peine ＿ arrivé qu'il est reparti.",
+          "en": "Hardly had he arrived when he left again.",
+          "options": ["il était", "il est", "est-il pas", "était-il"],
+          "answer": "était-il",
+          "why": "Inversion after à peine."
+        },
+        {
+          "q": "The ne explétif appears after…",
+          "en": "",
+          "options": ["avant que, à moins que, de peur que", "si", "parce que", "quand"],
+          "answer": "avant que, à moins que, de peur que",
+          "why": "Certain conjunctions."
+        }
+      ]
     },
     {
       "id": "subjonctif-imparfait",
-      "title": "The imparfait du subjonctif in literary French (about C2)",
-      "level": "advanced"
+      "title": "The imparfait du subjonctif in literary French",
+      "particle": "qu'il fût・qu'il eût・qu'il parlât",
+      "summary": "Classic literature uses a past subjunctive that modern speech has dropped. (about C2)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "Older and literary texts use the <b>imparfait du subjonctif</b> after a past main verb: <i>Il fallait qu'il partît</i>. Modern French says qu'il parte. You mainly need the il form: -ât, -ît, -ût.",
+          "examples": [
+            [
+              "Il fallait qu'il {partît}.",
+              "it · needed · that-he · left(subj)",
+              "He had to leave."
+            ],
+            [
+              "Je voulais qu'elle {vînt}.",
+              "I · wanted · that-she · came(subj)",
+              "I wanted her to come."
+            ]
+          ]
+        },
+        {
+          "h": "fût and eût",
+          "p": "Two forms are still met: <b>fût</b> (être) and <b>eût</b> (avoir), also in the literary past conditional: <i>On eût dit</i> = on aurait dit (you'd have said).",
+          "examples": [
+            [
+              "quoiqu'il en {fût}",
+              "although-it · of-it · were",
+              "be that as it may"
+            ],
+            [
+              "On {eût dit} un enfant.",
+              "one · had(subj) · said · a · child",
+              "You'd have thought he was a child."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "qu'il fût",
+          "en": "",
+          "options": ["être", "faire", "falloir", "fuir"],
+          "answer": "être",
+          "why": "être → fût."
+        },
+        {
+          "q": "Modern version of Il fallait qu'elle chantât",
+          "en": "",
+          "options": [
+            "Il fallait qu'elle chantait.",
+            "Il fallait qu'elle chante.",
+            "Il fallait qu'elle chantera.",
+            "Il faut qu'elle chanta."
+          ],
+          "answer": "Il fallait qu'elle chante.",
+          "why": "Modern French uses the present subjunctive."
+        },
+        {
+          "q": "On eût dit means…",
+          "en": "",
+          "options": [
+            "He said",
+            "We'll say",
+            "You'd have said / It looked like",
+            "One must say"
+          ],
+          "answer": "You'd have said / It looked like",
+          "why": "Literary conditional."
+        },
+        {
+          "q": "Where is it used today?",
+          "en": "",
+          "options": [
+            "daily speech",
+            "text messages",
+            "children's books",
+            "literature and very formal writing"
+          ],
+          "answer": "literature and very formal writing",
+          "why": "Rare."
+        },
+        {
+          "q": "qu'il eût",
+          "en": "",
+          "options": ["avoir", "être", "aller", "entendre"],
+          "answer": "avoir",
+          "why": "avoir → eût."
+        }
+      ]
     }
   ]
 }
