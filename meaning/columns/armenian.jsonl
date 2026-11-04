@@ -1,0 +1,40 @@
+{"schema": "columns@1", "language": "armenian", "notes": ["Eastern Armenian column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. The romanization matches languages/armenian (ë is the short “uh”; an apostrophe marks an aspirate). Sentences end with ։; ՞ sits on the stressed vowel of a question word. Verb person is on the helper (եմ / ես / է…), so \"I\" and \"you\" are sometimes implied. Sources: forms match languages/armenian/vocab.js, reference.json phrases, and the Armenian grammar pack (Ես ուսանող եմ, իմ անունը…, Անգլերեն խոսու՞մ եք, չեմ հասկանում, չգիտեմ, Ես սուրճ եմ խմում, Զուգարանը որտե՞ղ է, Ինչքա՞ն արժե, հաշիվը խնդրեմ, բարի լույս)."], "sep": " "}
+{"sentence": "i-am-student", "t": [["Ես", "yes", "i"], ["ուսանող", "usanogh", "student"], ["եմ", "em", "@copula"]], "end": "։"}
+{"sentence": "name-anna", "t": [["Իմ", "im", "i"], ["անունը", "anunë", "name"], ["Աննա", "Anna", "anna"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "your-name", "t": [["Ձեր", "dzer", "you"], ["անունն", "anunn", "name"], ["ի՞նչ", "inch", "what"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "hello", "t": [["Բարև", "barev", "hello"]], "end": "։"}
+{"sentence": "nice-to-meet-you", "t": [["Շատ ուրախ եմ", "shat urakh em", "nice-to-meet-you"]], "end": "։"}
+{"sentence": "good-morning", "t": [["Բարի լույս", "bari luys", "good+morning"]], "end": "։"}
+{"sentence": "thank-you", "t": [["Շնորհակալություն", "shnorhakalut'yun", "thanks"]], "end": "։"}
+{"sentence": "thank-you-very-much", "t": [["Շատ", "shat", "very-much"], ["շնորհակալություն", "shnorhakalut'yun", "thanks"]], "end": "։"}
+{"sentence": "dont-understand", "t": [["Ես", "yes", "i"], ["չեմ", "chem", "not"], ["հասկանում", "haskanum", "understand"]], "end": "։"}
+{"sentence": "dont-know", "t": [["Չգիտեմ", "chgitem", "not+know"]], "implied": ["i"], "end": "։"}
+{"sentence": "speak-english", "t": [["Անգլերեն", "angleren", "english"], ["խոսու՞մ", "khosum", "speak"], ["եք", "ek'", "@copula"]], "implied": ["you"], "end": "։"}
+{"sentence": "like-coffee", "t": [["Ես", "yes", "i"], ["սուրճ", "surch", "coffee"], ["եմ", "em", "@copula"], ["սիրում", "sirum", "like"]], "end": "։"}
+{"sentence": "like-tea", "t": [["Ես", "yes", "i"], ["թեյ", "t'ey", "tea"], ["եմ", "em", "@copula"], ["սիրում", "sirum", "like"]], "end": "։"}
+{"sentence": "my-friend", "t": [["Նա", "na", "he"], ["իմ", "im", "i"], ["ընկերն", "ënkern", "friend"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "who-is-he", "t": [["Ո՞վ", "vov", "who"], ["է", "e", "@copula"], ["նա", "na", "he"]], "end": "։"}
+{"sentence": "where-live", "t": [["Որտե՞ղ", "vortegh", "where"], ["ես", "es", "@copula"], ["ապրում", "aprum", "live"]], "implied": ["you"], "end": "։"}
+{"sentence": "this-is-book", "t": [["Սա", "sa", "this"], ["գիրք", "girk'", "book"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "this-is-my-book", "t": [["Սա", "sa", "this"], ["իմ", "im", "i"], ["գիրքն", "girk'n", "book"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "drink-water", "t": [["Ես", "yes", "i"], ["ջուր", "jur", "water"], ["եմ", "em", "@copula"], ["խմում", "khmum", "drink"]], "end": "։"}
+{"sentence": "drink-tea", "t": [["Ես", "yes", "i"], ["թեյ", "t'ey", "tea"], ["եմ", "em", "@copula"], ["խմում", "khmum", "drink"]], "end": "։"}
+{"sentence": "want-coffee", "t": [["Ես", "yes", "i"], ["սուրճ", "surch", "coffee"], ["եմ", "em", "@copula"], ["ուզում", "uzum", "want"]], "end": "։"}
+{"sentence": "read-book", "t": [["Ես", "yes", "i"], ["գիրք", "girk'", "book"], ["եմ", "em", "@copula"], ["կարդում", "kardum", "read"]], "end": "։"}
+{"sentence": "hot-today", "t": [["Այսօր", "aysor", "today"], ["տաք", "tak'", "hot"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "cold-today", "t": [["Այսօր", "aysor", "today"], ["սառը", "sarë", "cold"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "what-time", "t": [["Ժամը", "zhamë", "time"], ["քանի՞սն", "k'anisn", "what"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "house-big", "t": [["Տունը", "tunë", "house"], ["մեծ", "mets", "big"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "car-new", "t": [["Մեքենան", "mek'enan", "car"], ["նոր", "nor", "new"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "delicious", "t": [["Համեղ", "hamegh", "delicious"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "where-station", "t": [["Կայարանը", "kayaranë", "station"], ["որտե՞ղ", "vortegh", "where"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "where-toilet", "t": [["Զուգարանը", "zugaranë", "toilet"], ["որտե՞ղ", "vortegh", "where"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "where-hotel", "t": [["Հյուրանոցը", "hyuranots'ë", "hotel"], ["որտե՞ղ", "vortegh", "where"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "how-much-this", "t": [["Սա", "sa", "this"], ["ինչքա՞ն", "inchk'an", "how-much"], ["արժե", "arzhe", "@happen"]], "end": "։"}
+{"sentence": "how-much-is-it", "t": [["Ինչքա՞ն", "inchk'an", "how-much"], ["արժե", "arzhe", "@happen"]], "end": "։"}
+{"sentence": "how-much-cost", "t": [["Ինչքա՞ն", "inchk'an", "how-much"], ["արժե", "arzhe", "cost"]], "end": "։"}
+{"sentence": "bill-please", "t": [["Հաշիվը", "hashivë", "bill"], ["խնդրեմ", "khndrem", "please"]], "end": "։"}
+{"sentence": "go-school", "t": [["Ես", "yes", "i"], ["դպրոց", "dprots'", "school"], ["եմ", "em", "@copula"], ["գնում", "gnum", "go"]], "end": "։"}
+{"sentence": "going-home", "t": [["Ես", "yes", "i"], ["տուն", "tun", "home"], ["եմ", "em", "@copula"], ["գնում", "gnum", "go"]], "end": "։"}
+{"sentence": "we-going-home", "t": [["Մենք", "menk'", "we"], ["տուն", "tun", "home"], ["ենք", "enk'", "@copula"], ["գնում", "gnum", "go"]], "end": "։"}
+{"sentence": "where-going", "t": [["Որտե՞ղ", "vortegh", "where"], ["ես", "es", "@copula"], ["գնում", "gnum", "go"]], "implied": ["you"], "end": "։"}

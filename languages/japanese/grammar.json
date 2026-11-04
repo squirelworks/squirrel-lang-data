@@ -4,16 +4,20 @@
   "notes": [
     "Japanese particles and first verbs for the Grammar Learner. Written for this project.",
     "Examples are [Japanese, romaji, English]; {braces} mark the particle.",
-    "Drills are { q, en, options, answer, why }; ＿ is the blank."
+    "Drills are { q, en, options, answer, why }; ＿ is the blank.",
+    "JLPT levels are estimates. The JLPT stopped publishing vocabulary, kanji and grammar lists with the 2010 revision; its FAQ says such \"a list of vocabulary, kanji and grammar items was not necessarily appropriate\" (https://www.jlpt.jp/e/faq/).",
+    "The official level summaries (https://www.jlpt.jp/e/about/levelsummary.html): N5 \"The ability to understand some basic Japanese.\" N4 \"The ability to understand basic Japanese.\" N3 \"The ability to understand Japanese used in everyday situations to a certain degree.\" N2 \"The ability to understand Japanese used in everyday situations, and in a variety of circumstances to a certain degree.\" N1 \"The ability to understand Japanese used in a variety of circumstances.\"",
+    "Each lesson's summary and each planned point's title ends with its estimated JLPT level; a range (N4–N3) means it's commonly taught at either. The level band is the earliest one: N5 is absolute-beginner or beginner, N4 beginner-intermediate, N3 intermediate, N2 advanced-intermediate, N1 advanced. The points and estimates are written for this project; no text is taken from a list."
   ],
   "title": "Japanese particles and first verbs",
-  "intro": "Particles are short words that come after a noun and tell you its job in the sentence: topic, subject, object, place, time, and so on. Japanese word order is flexible because the particles carry that information. After the particles come です, polite verbs with ます in the present and past, the two kinds of adjective, and requests with てください. Each lesson has a short explanation, examples and a drill.",
+  "intro": "Particles are short words that come after a noun and tell you its job in the sentence: topic, subject, object, place, time, and so on. Japanese word order is flexible because the particles carry that information. After the particles come です, polite verbs with ます in the present and past, the two kinds of adjective, and requests with てください. Each lesson has a short explanation, examples and a drill. The JLPT doesn't publish official grammar lists, so the JLPT level after each point is an estimate, and a range like N4–N3 means it often comes up at both.",
   "lessons": [
     {
       "id": "wa",
       "title": "は — the topic",
       "particle": "は",
-      "summary": "Marks what the sentence is about. Written は, said “wa”.",
+      "summary": "Marks what the sentence is about. Written は, said “wa”. (about N5)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "は sets the topic: “as for X, …”. Everything after it is a comment about X. It is written with the hiragana は (ha) but pronounced <b>wa</b> when it is a particle.",
@@ -89,7 +93,8 @@
       "id": "ga",
       "title": "が — the subject",
       "particle": "が",
-      "summary": "Points at who or what does something, especially new information.",
+      "summary": "Points at who or what does something, especially new information. (about N5)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "が marks the grammatical subject: the one who does the action or has the quality. Use it when the subject is new to the conversation, or is the answer to “who?” or “what?”.",
@@ -165,7 +170,8 @@
       "id": "wa-ga",
       "title": "は or が?",
       "particle": "は・が",
-      "summary": "Known topic versus new information.",
+      "summary": "Known topic versus new information. (about N5)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "A rule of thumb: は points at what you are talking about and stresses what comes <i>after</i> it; が stresses the word <i>before</i> it.",
@@ -234,7 +240,8 @@
       "id": "o",
       "title": "を — the object",
       "particle": "を",
-      "summary": "Marks what the action is done to. Said “o”.",
+      "summary": "Marks what the action is done to. Said “o”. (about N5)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "を marks the direct object: the thing eaten, read, bought, seen. It is pronounced <b>o</b>; the character を is used almost only for this particle.",
@@ -295,7 +302,8 @@
       "id": "ni",
       "title": "に — time, destination, place of being",
       "particle": "に",
-      "summary": "A point: a time, where you go, where something is, who receives.",
+      "summary": "A point: a time, where you go, where something is, who receives. (about N5)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "h": "A point in time",
@@ -381,7 +389,8 @@
       "id": "e",
       "title": "へ — direction",
       "particle": "へ",
-      "summary": "“Toward”. Written へ, said “e”.",
+      "summary": "“Toward”. Written へ, said “e”. (about N5)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "へ marks the direction of movement: “toward”. It is written with へ (he) but pronounced <b>e</b>. In most sentences you could use に instead; へ puts the weight on the journey, に on arriving.",
@@ -419,7 +428,8 @@
       "id": "de",
       "title": "で — where it happens, how",
       "particle": "で",
-      "summary": "The place of an action, and the means or tool.",
+      "summary": "The place of an action, and the means or tool. (about N5)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "h": "Place of an action",
@@ -493,7 +503,8 @@
       "id": "to",
       "title": "と — and, with",
       "particle": "と",
-      "summary": "Joins a complete list of nouns, or marks who you do something with.",
+      "summary": "Joins a complete list of nouns, or marks who you do something with. (about N5)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "h": "And (a complete list)",
@@ -546,7 +557,8 @@
       "id": "mo",
       "title": "も — also, too",
       "particle": "も",
-      "summary": "“Also”. Replaces は, が or を.",
+      "summary": "“Also”. Replaces は, が or を. (about N5)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "も means “also” or “too”. It takes the place of は, が or を; other particles stay and も is added after them (にも, でも).",
@@ -605,7 +617,8 @@
       "id": "no",
       "title": "の — of, 's",
       "particle": "の",
-      "summary": "Links two nouns: possession, description, “the one”.",
+      "summary": "Links two nouns: possession, description, “the one”. (about N5)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "の joins two nouns; the first one describes or owns the second. Think “’s” or “of”, read backwards.",
@@ -655,7 +668,8 @@
       "id": "kara-made",
       "title": "から and まで — from, until",
       "particle": "から・まで",
-      "summary": "Start and end points in time and space; から also means “because”.",
+      "summary": "Start and end points in time and space; から also means “because”. (about N5)",
+      "level": "beginner",
       "sections": [
         {
           "p": "から marks a starting point, まで an end point, for both time and place.",
@@ -712,7 +726,8 @@
       "id": "endings",
       "title": "か, よ, ね — sentence endings",
       "particle": "か・よ・ね",
-      "summary": "Question, telling, and checking with the listener.",
+      "summary": "Question, telling, and checking with the listener. (about N5)",
+      "level": "beginner",
       "sections": [
         {
           "p": "Particles at the very end of a sentence set its tone. か turns a sentence into a question. よ tells the listener something they may not know. ね checks for agreement, like “isn't it?”",
@@ -755,7 +770,8 @@
       "id": "desu",
       "title": "です — “to be”, politely",
       "particle": "です",
-      "summary": "A は B です, and its negative じゃありません.",
+      "summary": "A は B です, and its negative じゃありません. (about N5)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "<b>です</b> (desu) ends a polite sentence that says what something is: “A は B です”. It never changes for I, you or he. Japanese has no “a” or “the”, and the topic is often left out when it is obvious.",
@@ -829,7 +845,8 @@
       "id": "masu",
       "title": "Verbs with ます",
       "particle": "ます・ません",
-      "summary": "The polite present: does, will do, doesn't.",
+      "summary": "The polite present: does, will do, doesn't. (about N5)",
+      "level": "beginner",
       "sections": [
         {
           "p": "Polite verbs end in <b>ます</b> (masu). The same form covers “I do” and “I will do”, and the verb always comes at the end. The negative swaps ます for <b>ません</b> (masen).",
@@ -907,7 +924,8 @@
       "id": "mashita",
       "title": "The past: ました and ませんでした",
       "particle": "ました",
-      "summary": "Did, and didn't.",
+      "summary": "Did, and didn't. (about N5)",
+      "level": "beginner",
       "sections": [
         {
           "p": "For the polite past, change ます to <b>ました</b> (mashita). For “didn't”, change it to <b>ませんでした</b> (masen deshita).",
@@ -966,7 +984,8 @@
       "id": "adjectives",
       "title": "い and な adjectives",
       "particle": "い・な",
-      "summary": "Two kinds of adjectives, and how each says “not”.",
+      "summary": "Two kinds of adjectives, and how each says “not”. (about N5)",
+      "level": "beginner",
       "sections": [
         {
           "p": "<b>い adjectives</b> end in い: たかい (expensive), おおきい (big). They go straight before a noun, and their negative changes い to <b>くない</b>: たかくないです.",
@@ -1034,7 +1053,8 @@
       "id": "te-kudasai",
       "title": "てください — please do",
       "particle": "て",
-      "summary": "The て form of a verb, for polite requests.",
+      "summary": "The て form of a verb, for polite requests. (about N5)",
+      "level": "beginner",
       "sections": [
         {
           "p": "To ask someone to do something, use the verb's <b>て form</b> + <b>ください</b>. For most verbs that end in -eru or -iru in the dictionary (たべる, みる), drop る and add て: たべて, みて.",
@@ -1106,6 +1126,498 @@
           "why": "する is irregular: して."
         }
       ]
+    }
+  ],
+  "plan": [
+    {
+      "id": "ya",
+      "title": "や — a partial list (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "ko-so-a-do",
+      "title": "これ, それ, あれ, どれ — this, that, which (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "aru-iru",
+      "title": "あります and います — there is (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "counters",
+      "title": "Numbers and counters (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "ni-iku",
+      "title": "〜に行く — going to do (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "tai",
+      "title": "〜たい — want to (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "hoshii",
+      "title": "ほしい — want (a thing) (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "mashou",
+      "title": "〜ましょう — let's (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "masen-ka",
+      "title": "〜ませんか — won't you? (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "te-form",
+      "title": "The て form — and then (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "te-iru",
+      "title": "〜ている — doing now, and states (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "te-mo-ii",
+      "title": "〜てもいい — may (about N5–N4)",
+      "level": "beginner"
+    },
+    {
+      "id": "te-wa-ikenai",
+      "title": "〜てはいけない — must not (about N5–N4)",
+      "level": "beginner"
+    },
+    {
+      "id": "nai-de-kudasai",
+      "title": "〜ないでください — please don't (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "plain-forms",
+      "title": "Plain forms: dictionary, ない and た (about N5–N4)",
+      "level": "beginner"
+    },
+    {
+      "id": "mae-ni",
+      "title": "〜前に — before (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "ta-ato-de",
+      "title": "〜た後で — after (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "tari",
+      "title": "〜たり〜たり — things like (about N5–N4)",
+      "level": "beginner"
+    },
+    {
+      "id": "yori",
+      "title": "〜より and 〜の方が — comparing (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "ichiban",
+      "title": "いちばん — the most (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "naru",
+      "title": "〜くなる and 〜になる — become (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "mou-mada",
+      "title": "もう and まだ — already, not yet (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "ga-but",
+      "title": "が — but (about N5)",
+      "level": "beginner"
+    },
+    {
+      "id": "deshou",
+      "title": "でしょう — probably (about N5–N4)",
+      "level": "beginner"
+    },
+    {
+      "id": "ta-koto-ga-aru",
+      "title": "〜たことがある — have done (about N5–N4)",
+      "level": "beginner"
+    },
+    {
+      "id": "nakereba-naranai",
+      "title": "〜なければならない — must (about N5–N4)",
+      "level": "beginner"
+    },
+    {
+      "id": "potential",
+      "title": "The potential form — can (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "volitional",
+      "title": "The volitional form — let's, I think I'll (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "tsumori",
+      "title": "つもり — intend to (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "koto-ga-dekiru",
+      "title": "ことができる — be able to (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "ba",
+      "title": "〜ば — if (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "tara",
+      "title": "〜たら — if, when (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "to-conditional",
+      "title": "〜と — whenever (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "nara",
+      "title": "なら — if it's (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "node",
+      "title": "ので — because (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "noni",
+      "title": "のに — even though (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "shi",
+      "title": "〜し — and also (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "nagara",
+      "title": "〜ながら — while (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "sugiru",
+      "title": "〜すぎる — too much (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "yasui-nikui",
+      "title": "〜やすい and 〜にくい — easy and hard to (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "te-shimau",
+      "title": "〜てしまう — end up, finish (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "te-oku",
+      "title": "〜ておく — do ahead (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "te-aru",
+      "title": "〜てある — has been done (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "te-miru",
+      "title": "〜てみる — try doing (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "giving-receiving",
+      "title": "あげる, くれる, もらう — giving and receiving (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "sou-looks",
+      "title": "〜そう — looks like (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "sou-hearsay",
+      "title": "〜そうだ — I hear (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "you-mitai",
+      "title": "〜ようだ and みたい — seems (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "rashii",
+      "title": "らしい — apparently (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "hazu",
+      "title": "はず — should be (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "kamoshirenai",
+      "title": "かもしれない — might (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "nakute-mo-ii",
+      "title": "〜なくてもいい — don't have to (about N4)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "you-ni-naru",
+      "title": "〜ようになる — come to (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "you-ni-suru",
+      "title": "〜ようにする — make sure to (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "tame-ni",
+      "title": "ために — in order to (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "passive",
+      "title": "The passive (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "causative",
+      "title": "The causative — make, let (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "keigo",
+      "title": "Honorific and humble verbs (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "causative-passive",
+      "title": "The causative passive — be made to (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "you-ni",
+      "title": "〜ように — so that (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "tokoro",
+      "title": "ところ — about to, just did (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "bakari",
+      "title": "ばかり — nothing but, just (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "ni-tsuite",
+      "title": "について — about (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "ba-yokatta",
+      "title": "〜ばよかった — should have (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "koto-ni-suru",
+      "title": "ことにする and ことになる — decide, be decided (about N4–N3)",
+      "level": "beginner-intermediate"
+    },
+    {
+      "id": "uchi-ni",
+      "title": "うちに — while still (about N3)",
+      "level": "intermediate"
+    },
+    {
+      "id": "mama",
+      "title": "まま — as it is (about N3)",
+      "level": "intermediate"
+    },
+    {
+      "id": "wake",
+      "title": "わけ — the reason, it means (about N3–N2)",
+      "level": "intermediate"
+    },
+    {
+      "id": "ni-yotte",
+      "title": "によって — by, depending on (about N3)",
+      "level": "intermediate"
+    },
+    {
+      "id": "ni-totte",
+      "title": "にとって — for (about N3)",
+      "level": "intermediate"
+    },
+    {
+      "id": "to-shite",
+      "title": "として — as (about N3)",
+      "level": "intermediate"
+    },
+    {
+      "id": "okage-sei",
+      "title": "おかげで and せいで — thanks to, because of (about N3)",
+      "level": "intermediate"
+    },
+    {
+      "id": "ppoi",
+      "title": "〜っぽい — -ish (about N3)",
+      "level": "intermediate"
+    },
+    {
+      "id": "sae",
+      "title": "さえ — even (about N3–N2)",
+      "level": "intermediate"
+    },
+    {
+      "id": "ni-kanshite",
+      "title": "に関して — concerning (about N3–N2)",
+      "level": "intermediate"
+    },
+    {
+      "id": "tabi-ni",
+      "title": "たびに — every time (about N3–N2)",
+      "level": "intermediate"
+    },
+    {
+      "id": "ni-chigainai",
+      "title": "に違いない — must be (about N3–N2)",
+      "level": "intermediate"
+    },
+    {
+      "id": "kagiri",
+      "title": "限り — as long as (about N3–N2)",
+      "level": "intermediate"
+    },
+    {
+      "id": "kuse-ni",
+      "title": "くせに — even though (critical) (about N3–N2)",
+      "level": "intermediate"
+    },
+    {
+      "id": "to-shitara",
+      "title": "としたら — supposing (about N3–N2)",
+      "level": "intermediate"
+    },
+    {
+      "id": "ni-oite",
+      "title": "において — in, at (formal) (about N3–N2)",
+      "level": "intermediate"
+    },
+    {
+      "id": "wake-niwa-ikanai",
+      "title": "わけにはいかない — can't very well (about N2)",
+      "level": "advanced-intermediate"
+    },
+    {
+      "id": "mono-da",
+      "title": "ものだ — used to, naturally (about N2)",
+      "level": "advanced-intermediate"
+    },
+    {
+      "id": "ni-kakawarazu",
+      "title": "にかかわらず — regardless of (about N2)",
+      "level": "advanced-intermediate"
+    },
+    {
+      "id": "ue-de",
+      "title": "上で — after, when (about N2)",
+      "level": "advanced-intermediate"
+    },
+    {
+      "id": "ni-shitagatte",
+      "title": "にしたがって — as, in step with (about N2)",
+      "level": "advanced-intermediate"
+    },
+    {
+      "id": "ni-kagitte",
+      "title": "に限って — only, of all (about N2–N1)",
+      "level": "advanced-intermediate"
+    },
+    {
+      "id": "kanenai",
+      "title": "かねない — could well (about N2)",
+      "level": "advanced-intermediate"
+    },
+    {
+      "id": "wo-motte",
+      "title": "をもって — with, as of (formal) (about N1)",
+      "level": "advanced"
+    },
+    {
+      "id": "naradewa",
+      "title": "ならでは — unique to (about N1)",
+      "level": "advanced"
+    },
+    {
+      "id": "ikan",
+      "title": "いかん — depending on (about N1)",
+      "level": "advanced"
+    },
+    {
+      "id": "ni-taenai",
+      "title": "にたえない — cannot bear (about N1)",
+      "level": "advanced"
+    },
+    {
+      "id": "to-atte",
+      "title": "とあって — because it is (about N1)",
+      "level": "advanced"
+    },
+    {
+      "id": "bekarazu",
+      "title": "べからず — must not (written) (about N1)",
+      "level": "advanced"
+    },
+    {
+      "id": "wo-yoso-ni",
+      "title": "をよそに — ignoring (about N1)",
+      "level": "advanced"
+    },
+    {
+      "id": "n-bakari",
+      "title": "んばかり — as if about to (about N1)",
+      "level": "advanced"
+    },
+    {
+      "id": "majiki",
+      "title": "まじき — unbecoming of (about N1)",
+      "level": "advanced"
+    },
+    {
+      "id": "zukume",
+      "title": "ずくめ — full of (about N1)",
+      "level": "advanced"
     }
   ]
 }

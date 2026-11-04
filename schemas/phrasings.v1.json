@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/squirelworks/squirrel-lang-data/schemas/phrasings.v1.json",
+  "title": "phrasings@1: English that carries a meaning only next to others",
+  "description": "meaning/phrasings.jsonl. Every line after the header lets English carry meaning m in a sentence that also has one of the with meanings: \"take\" carries go next to bus. With optional instead of en, English may leave m out in such a sentence.",
+  "type": "object",
+  "properties": {
+    "header": {
+      "type": "object",
+      "required": ["schema"],
+      "additionalProperties": false,
+      "properties": {
+        "schema": { "const": "phrasings@1" },
+        "notes": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "required": ["m", "with"],
+      "additionalProperties": false,
+      "properties": {
+        "m": { "description": "The meaning (meaning@1 id) the phrasing carries.", "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "with": { "description": "The phrasing applies in a sentence that has any of these meanings.", "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" }, "uniqueItems": true },
+        "en": { "description": "English that carries m there.", "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "optional": { "description": "English may leave m out there.", "const": true },
+        "note": { "type": "string", "minLength": 1 }
+      },
+      "anyOf": [{ "required": ["en"], "not": { "required": ["optional"] } }, { "required": ["optional"], "not": { "required": ["en"] } }]
+    }
+  }
+}

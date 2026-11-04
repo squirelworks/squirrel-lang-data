@@ -1,0 +1,92 @@
+name: Draft release
+
+# Started by hand. Runs every check on the chosen commit, exports the
+# language packs and makes (or refreshes) a DRAFT GitHub Release for it.
+# It never publishes, and never creates, moves or deletes a tag: the tag
+# is created when the owner clicks Publish. See RELEASE_PLAN.md.
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to draft, e.g. v0.1.0"
+        required: true
+      ref:
+        description: "Branch or commit to release (default: main)"
+        required: false
+        default: main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: draft-release-${{ inputs.version }}
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    env:
+      VERSION: ${{ inputs.version }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref }}
+          fetch-depth: 0
+
+      - name: Check the version and that it isn't released yet
+        run: |
+          echo "$VERSION" | grep -Eq '^v[0-9]+\.[0-9]+\.[0-9]+$' \
+            || { echo "version must look like v1.2.3"; exit 1; }
+          if git ls-remote --exit-code --tags origin "refs/tags/$VERSION" >/dev/null; then
+            echo "tag $VERSION already exists; tags are never reused or moved"; exit 1
+          fi
+          if gh release view "$VERSION" --json isDraft -q .isDraft 2>/dev/null | grep -q false; then
+            echo "release $VERSION is already published"; exit 1
+          fi
+
+      - name: Run every check
+        run: tools/check_all.sh
+
+      - name: Export language packs
+        run: |
+          python3 tools/export.py --out "build/squirrel-lang-data-$VERSION"
+          mkdir -p dist
+          (cd build && zip -qr "../dist/squirrel-lang-data-$VERSION-packs.zip" "squirrel-lang-data-$VERSION")
+          (cd dist && sha256sum * > SHA256SUMS.txt && cat SHA256SUMS.txt)
+
+      - name: Write the notes
+        run: |
+          SHA=$(git rev-parse HEAD)
+          {
+            if [ -f "release-notes/$VERSION.md" ]; then
+              cat "release-notes/$VERSION.md"
+            else
+              echo "Notes for $VERSION haven't been written yet."
+            fi
+            echo
+            echo "---"
+            echo
+            echo "Data commit: \`$SHA\`. Apps pin their \`data/\` submodule to this commit."
+            echo
+            PREV=$(git tag --list 'v*' --sort=-v:refname | head -1)
+            if [ -n "$PREV" ]; then
+              echo "### Changes since $PREV"
+              git log --format='- %s' "$PREV..HEAD"
+            else
+              echo "### Everything merged so far"
+              git log --format='- %s'
+            fi
+          } > notes.md
+          echo "SHA=$SHA" >> "$GITHUB_ENV"
+
+      - name: Make or refresh the draft release
+        run: |
+          TITLE="squirrel-lang-data $VERSION"
+          if gh release view "$VERSION" >/dev/null 2>&1; then
+            gh release edit "$VERSION" --draft --target "$SHA" --title "$TITLE" --notes-file notes.md
+            gh release upload "$VERSION" dist/* --clobber
+          else
+            gh release create "$VERSION" dist/* --draft --target "$SHA" --title "$TITLE" --notes-file notes.md
+          fi
+          gh release view "$VERSION" --json url -q .url

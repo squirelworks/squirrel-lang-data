@@ -1,0 +1,38 @@
+{"schema": "columns@1", "language": "latin", "notes": ["Latin column of the meaning matrix. Written for this project. Tokens are [text, \"\", meaning id]: the text is Classical Latin with macrons, so there is no separate reading. Verb endings carry the person, so \"I\" and \"you\" are often implied. Sources: forms match languages/latin/vocab.js and the Latin grammar pack; textbook Latin for everyday phrases (salvē, grātiās, quaesō, lātrīna, statiō, deversōrium)."], "sep": " "}
+{"sentence": "i-am-student", "t": [["Discipulus", "", "student"], ["sum", "", "@copula"]], "implied": ["i"], "end": "."}
+{"sentence": "name-anna", "t": [["Nōmen", "", "name"], ["mihi", "", "i"], ["est", "", "@copula"], ["Anna", "", "anna"]], "end": "."}
+{"sentence": "hello", "t": [["Salvē", "", "hello"]], "end": "."}
+{"sentence": "good-morning", "t": [["Bonum", "", "good"], ["māne", "", "morning"]], "end": "."}
+{"sentence": "thank-you", "t": [["Grātiās", "", "thanks"]], "end": "."}
+{"sentence": "thank-you-very-much", "t": [["Maximās", "", "very-much"], ["grātiās", "", "thanks"]], "end": "."}
+{"sentence": "dont-understand", "t": [["Nōn", "", "not"], ["intellegō", "", "understand"]], "implied": ["i"], "end": "."}
+{"sentence": "dont-know", "t": [["Nesciō", "", "not+know"]], "implied": ["i"], "end": "."}
+{"sentence": "speak-english", "t": [["Loqueris", "", "speak"], ["-ne", "", "@question"], ["Anglice", "", "english"]], "implied": ["you"], "end": "?"}
+{"sentence": "love-you", "t": [["Tē", "", "you"], ["amō", "", "love"]], "implied": ["i"], "end": "."}
+{"sentence": "my-friend", "t": [["Is", "", "he"], ["est", "", "@copula"], ["amīcus", "", "friend"], ["meus", "", "i"]], "end": "."}
+{"sentence": "who-is-he", "t": [["Quis", "", "who"], ["est", "", "@copula"], ["is", "", "he"]], "end": "?"}
+{"sentence": "where-live", "t": [["Ubi", "", "where"], ["habitās", "", "live"]], "implied": ["you"], "end": "?"}
+{"sentence": "from-egypt", "t": [["Ex", "", "from"], ["Aegyptō", "", "egypt"], ["sum", "", "@copula"]], "implied": ["i"], "end": "."}
+{"sentence": "this-is-book", "t": [["Hic", "", "this"], ["est", "", "@copula"], ["liber", "", "book"]], "end": "."}
+{"sentence": "this-is-my-book", "t": [["Hic", "", "this"], ["est", "", "@copula"], ["liber", "", "book"], ["meus", "", "i"]], "end": "."}
+{"sentence": "drink-water", "t": [["Aquam", "", "water"], ["bibō", "", "drink"]], "implied": ["i"], "end": "."}
+{"sentence": "read-book", "t": [["Librum", "", "book"], ["legō", "", "read"]], "implied": ["i"], "end": "."}
+{"sentence": "cold-today", "t": [["Hodiē", "", "today"], ["frīgidum", "", "cold"], ["est", "", "@copula"]], "end": "."}
+{"sentence": "have-cat", "t": [["Fēlem", "", "cat"], ["habeō", "", "have"]], "implied": ["i"], "end": "."}
+{"sentence": "what-time", "t": [["Quota", "", "what"], ["hōra", "", "time"], ["est", "", "@copula"]], "end": "?"}
+{"sentence": "house-big", "t": [["Domus", "", "house"], ["magna", "", "big"], ["est", "", "@copula"]], "end": "."}
+{"sentence": "hungry", "t": [["Ēsuriō", "", "hungry"]], "implied": ["i"], "end": "."}
+{"sentence": "give-water", "t": [["Dā", "", "give"], ["mihi", "", "i"], ["aquam", "", "water"], ["quaesō", "", "please"]], "end": "."}
+{"sentence": "sit-down", "t": [["Consīde", "", "sit"], ["quaesō", "", "please"]], "end": "."}
+{"sentence": "where-station", "t": [["Ubi", "", "where"], ["est", "", "@copula"], ["statiō", "", "station"]], "end": "?"}
+{"sentence": "where-toilet", "t": [["Ubi", "", "where"], ["est", "", "@copula"], ["lātrīna", "", "toilet"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["Ubi", "", "where"], ["est", "", "@copula"], ["deversōrium", "", "hotel"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["Quantī", "", "how-much"], ["hoc", "", "this"], ["est", "", "@copula"]], "end": "?"}
+{"sentence": "go-school", "t": [["Ad", "", "@direction"], ["scholam", "", "school"], ["eō", "", "go"]], "implied": ["i"], "end": "."}
+{"sentence": "going-home", "t": [["Domum", "", "home"], ["eō", "", "go"]], "implied": ["i"], "end": "."}
+{"sentence": "we-going-home", "t": [["Domum", "", "home"], ["īmus", "", "go"]], "implied": ["we"], "end": "."}
+{"sentence": "i-sleep", "t": [["Dormiō", "", "sleep"]], "implied": ["i"], "end": "."}
+{"sentence": "i-fight", "t": [["Pugnō", "", "fight"]], "implied": ["i"], "end": "."}
+{"sentence": "we-fight", "t": [["Pugnāmus", "", "fight"]], "implied": ["we"], "end": "."}
+{"sentence": "sleep-command", "t": [["Dormī", "", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["Puer", "", "child"], ["dormit", "", "sleep"]], "end": "."}
