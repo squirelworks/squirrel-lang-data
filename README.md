@@ -24,6 +24,8 @@ features.json        every user-facing feature switch
 schemas/             a versioned JSON Schema for every content type
 tools/               importers, validators, generators and checks
 SOURCES.md           every source, with its license and attribution
+REVIEWING.md         the human review checklist; each language logs its
+                     reviews in languages/<id>/REVIEW.md
 ```
 
 Content arrives one type at a time, so some folders don't exist yet.
