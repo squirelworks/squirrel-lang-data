@@ -1,0 +1,53 @@
+name: Data check
+
+# Every JSON file, and every JSONL file's header line, must parse and name a
+# schema that exists in schemas/. Every JSONL line must parse.
+# Content-type validators and data tests are added under tools/ as each type
+# arrives, and run from here.
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: JSON and JSONL parse and name a known schema
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, sys
+          root = pathlib.Path(".")
+          known = {p.name for p in (root / "schemas").glob("*.json")}
+          bad = []
+          files = sorted([*root.rglob("*.json"), *root.rglob("*.jsonl")])
+          for p in files:
+              if ".git" in p.parts or p.parts[0] in ("schemas", ".github"):
+                  continue
+              try:
+                  if p.suffix == ".jsonl":
+                      lines = p.read_text(encoding="utf-8").splitlines()
+                      rows = [json.loads(l) for l in lines if l.strip()]
+                      data = rows[0] if rows else {}
+                  else:
+                      data = json.loads(p.read_text(encoding="utf-8"))
+              except Exception as e:
+                  bad.append(f"{p}: does not parse ({e})"); continue
+              s = data.get("schema") if isinstance(data, dict) else None
+              if not s:
+                  bad.append(f"{p}: no \"schema\" field"); continue
+              kind, _, ver = s.partition("@")
+              if f"{kind}.v{ver}.json" not in known:
+                  bad.append(f"{p}: schema {s} has no schemas/{kind}.v{ver}.json")
+          print("\n".join(bad) or "all JSON files OK")
+          sys.exit(1 if bad else 0)
+          PY
+      - name: Validators in tools/
+        run: |
+          if [ -x tools/check_all.sh ]; then tools/check_all.sh; else echo "no validators yet"; fi
