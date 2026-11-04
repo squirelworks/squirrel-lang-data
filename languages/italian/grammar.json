@@ -12,10 +12,11 @@
     "- Wiktionary Italian entries (CC BY-SA): essere, avere, parlare, il/lo/la, un/uno/una.",
     "- Wikipedia “Italian grammar”, “Italian conjugation”, “Italian articles” (CC BY-SA).",
     "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
-    "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced."
+    "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
+    "72 lessons, from A1 to C1. Levels are rough CEFR estimates."
   ],
   "title": "Italian first grammar",
-  "intro": "Italian usually keeps the subject pronoun out, because the verb ending already says who. These lessons cover essere, avere, the articles, regular -are verbs, non, and adjectives that agree. The written accent marks a stressed final vowel, as in è and città. The CEFR level after each point (A1 to C2) is an estimate, and a range like A2–B1 means it often comes up at both.",
+  "intro": "Seventy-two lessons from first words to the passato remoto and literary Italian. Each lesson explains one point with examples and ends with five drills. Examples give the Italian, a word-by-word gloss and an English translation.",
   "lessons": [
     {
       "id": "essere",
@@ -406,138 +407,4985 @@
           "why": "Most adjectives follow the noun."
         }
       ]
-    }
-  ],
-  "plan": [
+    },
+    {
+      "id": "tu-lei",
+      "title": "tu or Lei",
+      "particle": "tu・Lei・voi",
+      "summary": "tu for friends; Lei (she-form, often capitalised) for formal you; voi for a group. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "Italian has an informal <b>tu</b> and a formal <b>Lei</b>. Lei takes the third-person verb, the same as lei (she): Come sta? Lei is often written with a capital in letters.",
+          "examples": [
+            ["Come {stai}?", "how · are(tu)", "How are you? (to a friend)"],
+            [
+              "Come {sta}, signora?",
+              "how · is(Lei) · madam",
+              "How are you, madam?"
+            ],
+            ["{Voi} venite?", "you-all · come", "Are you (all) coming?"]
+          ]
+        },
+        {
+          "h": "Plural and switching",
+          "p": "For a group, use <b>voi</b>, formal or not. Moving to tu is offered with <i>Possiamo darci del tu?</i>",
+          "examples": [
+            [
+              "Possiamo {darci del tu}?",
+              "can-we · give-us · of-the · tu",
+              "Shall we use tu?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "To your boss: Come ＿?",
+          "en": "How are you?",
+          "options": ["sta", "stai", "state", "stanno"],
+          "answer": "sta",
+          "why": "Formal Lei: third person."
+        },
+        {
+          "q": "To a friend: Dove ＿?",
+          "en": "Where do you live?",
+          "options": ["abita", "abiti", "abitate", "abitiamo"],
+          "answer": "abiti",
+          "why": "tu → -i."
+        },
+        {
+          "q": "To three friends",
+          "en": "",
+          "options": ["tu", "Lei", "voi", "te"],
+          "answer": "voi",
+          "why": "Plural you: voi."
+        },
+        {
+          "q": "Lei verbs look like…",
+          "en": "",
+          "options": ["the tu form", "the plural", "the infinitive", "the she/he form"],
+          "answer": "the she/he form",
+          "why": "Third person singular."
+        },
+        {
+          "q": "Possiamo darci del tu? means…",
+          "en": "",
+          "options": [
+            "Shall we say tu?",
+            "Can you give me this?",
+            "Are you there?",
+            "Can we go?"
+          ],
+          "answer": "Shall we say tu?",
+          "why": "Offering informal you."
+        }
+      ]
+    },
+    {
+      "id": "plurals",
+      "title": "Noun plurals: -o → -i, -a → -e",
+      "particle": "-i・-e",
+      "summary": "Most masculine nouns change -o to -i; most feminine -a to -e; -e becomes -i. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "Italian plurals change the last vowel: <b>-o → -i</b> (libro, libri), <b>-a → -e</b> (casa, case), <b>-e → -i</b> for both genders (fiore, fiori; chiave, chiavi). The article changes too: il → i, la → le.",
+          "examples": [
+            ["{i} libr{i}", "the · books", "the books"],
+            ["{le} cas{e}", "the · houses", "the houses"],
+            ["{i} fior{i}", "the · flowers", "the flowers"]
+          ]
+        },
+        {
+          "h": "Unchanging nouns",
+          "p": "Nouns ending in an accented vowel (la città, le città), in a consonant (il bar, i bar) and short forms (la foto, le foto) don't change. Some -co/-go add h: amico → amici but tedesco → tedeschi, lago → laghi.",
+          "examples": [
+            ["{le} città", "the · cities", "the cities"],
+            ["{i} lag{hi}", "the · lakes", "the lakes"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "il ragazzo →",
+          "en": "",
+          "options": ["i ragazzi", "i ragazze", "le ragazzi", "i ragazzos"],
+          "answer": "i ragazzi",
+          "why": "-o → -i."
+        },
+        {
+          "q": "la penna →",
+          "en": "",
+          "options": ["le penni", "le penne", "i penne", "le pennas"],
+          "answer": "le penne",
+          "why": "-a → -e."
+        },
+        {
+          "q": "la stazione →",
+          "en": "",
+          "options": ["le stazione", "le stazionie", "le stazioni", "i stazioni"],
+          "answer": "le stazioni",
+          "why": "-e → -i."
+        },
+        {
+          "q": "il caffè →",
+          "en": "",
+          "options": ["i caffi", "i caffèi", "le caffè", "i caffè"],
+          "answer": "i caffè",
+          "why": "Accented: no change."
+        },
+        {
+          "q": "il film →",
+          "en": "",
+          "options": ["i film", "i filmi", "i films", "gli filmi"],
+          "answer": "i film",
+          "why": "Consonant: no change."
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "title": "Numbers and age",
+      "particle": "uno・venti・ventuno・cento",
+      "summary": "From 21, tens and units join; the tens lose their last vowel before uno and otto. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "1–10: uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci. 11–19: undici, dodici, tredici… diciannove. Tens: venti, trenta, quaranta, cinquanta, sessanta, settanta, ottanta, novanta, cento.",
+          "examples": [
+            ["{ventitré}", "twenty-three", "23"],
+            ["{trentadue}", "thirty-two", "32"]
+          ]
+        },
+        {
+          "h": "ventuno, ventotto, and age",
+          "p": "Before uno and otto the ten drops its vowel: <b>ventuno</b>, <b>trentotto</b>. -tré takes an accent. Age uses avere: Ho vent'anni.",
+          "examples": [
+            ["{ventotto}", "twenty-eight", "28"],
+            ["{Ho} trent'{anni}.", "I-have · thirty · years", "I'm thirty."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "21",
+          "en": "",
+          "options": ["ventuno", "ventiuno", "venti uno", "ventun'uno"],
+          "answer": "ventuno",
+          "why": "Drop the vowel before uno."
+        },
+        {
+          "q": "38",
+          "en": "",
+          "options": ["trentaotto", "trentotto", "trenta otto", "trentott"],
+          "answer": "trentotto",
+          "why": "Drop the vowel before otto."
+        },
+        {
+          "q": "43",
+          "en": "",
+          "options": ["quarantatre", "quarantetré", "quarantatré", "quarantaetre"],
+          "answer": "quarantatré",
+          "why": "-tré with an accent."
+        },
+        {
+          "q": "I'm twenty-five.",
+          "en": "",
+          "options": [
+            "Sono venticinque anni.",
+            "Ho anni venticinque.",
+            "Sono venticinque.",
+            "Ho venticinque anni."
+          ],
+          "answer": "Ho venticinque anni.",
+          "why": "Age: avere."
+        },
+        {
+          "q": "100",
+          "en": "",
+          "options": ["cento", "centi", "uncento", "centa"],
+          "answer": "cento",
+          "why": "cento."
+        }
+      ]
+    },
+    {
+      "id": "time-date",
+      "title": "Time and dates",
+      "particle": "Che ore sono?・Sono le tre・il 2 giugno",
+      "summary": "Sono le + hour (plural), except è l'una, mezzogiorno and mezzanotte. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>Che ore sono?</b> Answer with <b>Sono le</b> + number: sono le tre. But one o'clock is singular: <b>È l'una</b>. Also è mezzogiorno, è mezzanotte. e un quarto (quarter past), e mezza (half past), meno un quarto (quarter to).",
+          "examples": [
+            [
+              "{Sono le} otto e mezza.",
+              "are · the · eight · and · half",
+              "It's half past eight."
+            ],
+            ["{È l'una}.", "is · the-one", "It's one o'clock."],
+            ["{Alle} sei.", "at-the · six", "At six."]
+          ]
+        },
+        {
+          "h": "Dates",
+          "p": "Dates: il + number + month, lower case: il 4 luglio. The first is il primo: il primo maggio. Days and months are lower case.",
+          "examples": [
+            [
+              "Oggi è {il} due giugno.",
+              "today · is · the · two · June",
+              "Today is 2 June."
+            ],
+            ["{il primo} gennaio", "the · first · January", "1 January"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "It's five o'clock.",
+          "en": "",
+          "options": ["Sono le cinque.", "È le cinque.", "Sono cinque.", "È cinque ore."],
+          "answer": "Sono le cinque.",
+          "why": "Plural: sono le."
+        },
+        {
+          "q": "It's one o'clock.",
+          "en": "",
+          "options": ["Sono le una.", "È l'una.", "È uno.", "Sono l'una."],
+          "answer": "È l'una.",
+          "why": "Singular for one."
+        },
+        {
+          "q": "at nine",
+          "en": "",
+          "options": ["a nove", "le nove", "alle nove", "in nove"],
+          "answer": "alle nove",
+          "why": "a + le = alle."
+        },
+        {
+          "q": "1 May",
+          "en": "",
+          "options": [
+            "il uno maggio",
+            "primo di Maggio",
+            "il 1 Maggio",
+            "il primo maggio"
+          ],
+          "answer": "il primo maggio",
+          "why": "Ordinal only for the first."
+        },
+        {
+          "q": "half past four",
+          "en": "",
+          "options": [
+            "le quattro e mezza",
+            "le quattro meno mezza",
+            "le mezza quattro",
+            "le quattro e un quarto"
+          ],
+          "answer": "le quattro e mezza",
+          "why": "e mezza."
+        }
+      ]
+    },
+    {
+      "id": "question-words",
+      "title": "chi, che cosa, dove, quando, come, perché",
+      "particle": "chi・che cosa・dove・quando・come・perché・quanto・quale",
+      "summary": "Question words go first; the subject often goes after the verb or disappears. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>chi</b> (who), <b>che cosa</b> / cosa / che (what), <b>dove</b> (where), <b>quando</b> (when), <b>come</b> (how), <b>perché</b> (why — and because), <b>quanto</b> (how much), <b>quale</b> (which).",
+          "examples": [
+            ["{Dove} abiti?", "where · live-you", "Where do you live?"],
+            [
+              "{Come} ti chiami?",
+              "how · yourself · call",
+              "What's your name?"
+            ],
+            [
+              "{Perché} ridi? — {Perché} sono felice.",
+              "why · laugh · because · am · happy",
+              "Why are you laughing? — Because I'm happy."
+            ]
+          ]
+        },
+        {
+          "h": "quanto and quale agree",
+          "p": "<b>quanto</b> agrees with its noun: quanti anni, quante persone. <b>quale</b> drops -e before è: Qual è?",
+          "examples": [
+            [
+              "{Quanti} anni hai?",
+              "how-many · years · have-you",
+              "How old are you?"
+            ],
+            [
+              "{Qual} è il tuo numero?",
+              "which · is · the · your · number",
+              "What's your number?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ costa?",
+          "en": "How much does it cost?",
+          "options": ["Quanto", "Quando", "Come", "Quale"],
+          "answer": "Quanto",
+          "why": "quanto = how much."
+        },
+        {
+          "q": "＿ è quella ragazza?",
+          "en": "Who's that girl?",
+          "options": ["Che", "Chi", "Quale", "Come"],
+          "answer": "Chi",
+          "why": "chi = who."
+        },
+        {
+          "q": "＿ è la tua città preferita?",
+          "en": "What's your favourite city?",
+          "options": ["Qual'", "Quali", "Qual", "Quanto"],
+          "answer": "Qual",
+          "why": "Qual è, no apostrophe."
+        },
+        {
+          "q": "＿ persone vengono?",
+          "en": "How many people are coming?",
+          "options": ["Quanti", "Quanto", "Quanta", "Quante"],
+          "answer": "Quante",
+          "why": "Feminine plural."
+        },
+        {
+          "q": "perché means…",
+          "en": "",
+          "options": ["why, and because", "only why", "only because", "when"],
+          "answer": "why, and because",
+          "why": "Both."
+        }
+      ]
+    },
+    {
+      "id": "demonstratives",
+      "title": "questo and quello",
+      "particle": "questo・quello・quel・quell'・quei・quegli",
+      "summary": "questo (this) ends like an adjective; quello (that) changes like the article. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>questo</b> agrees like a normal adjective: questo libro, questa casa, questi libri, queste case. Before a vowel: quest'anno.",
+          "examples": [
+            [
+              "{Questo} libro è mio.",
+              "this · book · is · mine",
+              "This book is mine."
+            ],
+            [
+              "{Questa} sera esco.",
+              "this · evening · go-out-I",
+              "I'm going out this evening."
+            ]
+          ]
+        },
+        {
+          "h": "quello follows the article",
+          "p": "Before a noun, <b>quello</b> copies the definite article: il → <b>quel</b> ragazzo, lo → <b>quello</b> studente, l' → <b>quell'</b>amico, i → <b>quei</b> ragazzi, gli → <b>quegli</b> studenti, la → quella, le → quelle.",
+          "examples": [
+            ["{quel} ragazzo", "that · boy", "that boy"],
+            ["{quegli} amici", "those · friends", "those friends"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ casa",
+          "en": "this house",
+          "options": ["questa", "questo", "queste", "quest"],
+          "answer": "questa",
+          "why": "Feminine."
+        },
+        {
+          "q": "＿ libro",
+          "en": "that book (il libro)",
+          "options": ["quello", "quel", "quell'", "quella"],
+          "answer": "quel",
+          "why": "il → quel."
+        },
+        {
+          "q": "＿ zaino",
+          "en": "that backpack (lo zaino)",
+          "options": ["quel", "quell'", "quello", "quegli"],
+          "answer": "quello",
+          "why": "lo → quello."
+        },
+        {
+          "q": "＿ bambini",
+          "en": "those children (i bambini)",
+          "options": ["quegli", "quelli", "quel", "quei"],
+          "answer": "quei",
+          "why": "i → quei."
+        },
+        {
+          "q": "＿ amica",
+          "en": "that friend (f, l'amica)",
+          "options": ["quell'", "quella'", "quel", "quelle"],
+          "answer": "quell'",
+          "why": "l' → quell'."
+        }
+      ]
+    },
+    {
+      "id": "modals",
+      "title": "potere, volere, dovere",
+      "particle": "posso・voglio・devo",
+      "summary": "can, want, must: all irregular, all followed by an infinitive. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>potere</b>: posso, puoi, può, possiamo, potete, possono. <b>volere</b>: voglio, vuoi, vuole, vogliamo, volete, vogliono. <b>dovere</b>: devo, devi, deve, dobbiamo, dovete, devono. The next verb is an infinitive.",
+          "examples": [
+            ["{Posso} entrare?", "can-I · enter", "May I come in?"],
+            [
+              "{Voglio} imparare l'italiano.",
+              "I-want · learn · the-Italian",
+              "I want to learn Italian."
+            ],
+            ["{Dobbiamo} partire.", "we-must · leave", "We have to leave."]
+          ]
+        },
+        {
+          "h": "Polite vorrei",
+          "p": "<b>vorrei</b> (I would like) is politer than voglio. <b>Potrebbe…?</b> asks politely.",
+          "examples": [
+            [
+              "{Vorrei} un caffè.",
+              "I'd-like · a · coffee",
+              "I'd like a coffee."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ venire anche tu?",
+          "en": "Can you come too?",
+          "options": ["Puoi", "Può", "Posso", "Potete"],
+          "answer": "Puoi",
+          "why": "tu: puoi."
+        },
+        {
+          "q": "Loro ＿ mangiare.",
+          "en": "They want to eat.",
+          "options": ["vuole", "vogliono", "volete", "vogliamo"],
+          "answer": "vogliono",
+          "why": "loro: vogliono."
+        },
+        {
+          "q": "Noi ＿ studiare.",
+          "en": "We have to study.",
+          "options": ["dovete", "devono", "dobbiamo", "deviamo"],
+          "answer": "dobbiamo",
+          "why": "noi: dobbiamo."
+        },
+        {
+          "q": "Polite “I'd like”",
+          "en": "",
+          "options": ["voglio", "volevo sempre", "vuoi", "vorrei"],
+          "answer": "vorrei",
+          "why": "Conditional."
+        },
+        {
+          "q": "Devo ＿ il treno.",
+          "en": "I have to take the train.",
+          "options": ["prendere", "prendo", "preso", "prendi"],
+          "answer": "prendere",
+          "why": "Modal + infinitive."
+        }
+      ]
+    },
+    {
+      "id": "places",
+      "title": "a, in, da: going and being",
+      "particle": "a・in・da",
+      "summary": "a for cities, in for countries and regions, da for people's homes and shops. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "For both being and going: <b>a</b> + city (a Roma), <b>in</b> + country, region or large island (in Italia, in Toscana), and many places with in: in banca, in ufficio, in centro. <b>a</b> casa, a scuola, a letto.",
+          "examples": [
+            ["Abito {a} Milano.", "I-live · in · Milan", "I live in Milan."],
+            ["Vado {in} Spagna.", "I-go · to · Spain", "I'm going to Spain."],
+            ["Sono {in} ufficio.", "I-am · in · office", "I'm at the office."]
+          ]
+        },
+        {
+          "h": "da + person",
+          "p": "<b>da</b> + a person means at or to their place: vado dal medico (to the doctor's), da Marco (at Marco's).",
+          "examples": [
+            [
+              "Vado {dal} dentista.",
+              "I-go · to-the · dentist",
+              "I'm going to the dentist."
+            ],
+            [
+              "Ceniamo {da} Giulia.",
+              "we-dine · at · Giulia",
+              "We're having dinner at Giulia's."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Vivo ＿ Napoli.",
+          "en": "I live in Naples.",
+          "options": ["a", "in", "da", "per"],
+          "answer": "a",
+          "why": "City: a."
+        },
+        {
+          "q": "Andiamo ＿ Francia.",
+          "en": "We're going to France.",
+          "options": ["a", "in", "da", "alla"],
+          "answer": "in",
+          "why": "Country: in."
+        },
+        {
+          "q": "Vado ＿ medico.",
+          "en": "I'm going to the doctor's.",
+          "options": ["al", "nel", "dal", "in"],
+          "answer": "dal",
+          "why": "Person's place: da + il."
+        },
+        {
+          "q": "Sono ＿ casa.",
+          "en": "I'm at home.",
+          "options": ["in la", "da", "alla", "a"],
+          "answer": "a",
+          "why": "a casa."
+        },
+        {
+          "q": "Lavoro ＿ banca.",
+          "en": "I work at a bank.",
+          "options": ["in", "a", "da", "nel"],
+          "answer": "in",
+          "why": "in banca."
+        }
+      ]
+    },
+    {
+      "id": "stare-gerundio",
+      "title": "stare, and stare + gerundio",
+      "particle": "sto・stai・sta・stando",
+      "summary": "stare means stay or be (feelings, location); stare + -ando/-endo means doing right now. (about A1–A2)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>stare</b> (sto, stai, sta, stiamo, state, stanno) is used for how you are (Come stai? Sto bene) and for staying. With the gerund, -<b>ando</b> (-are verbs) or -<b>endo</b> (-ere, -ire), it shows an action in progress.",
+          "examples": [
+            [
+              "{Sto} bene, grazie.",
+              "I-stay · well · thanks",
+              "I'm fine, thanks."
+            ],
+            ["{Sto mangiando}.", "I-stay · eating", "I'm eating."],
+            [
+              "Cosa {stai facendo}?",
+              "what · you-stay · doing",
+              "What are you doing?"
+            ]
+          ]
+        },
+        {
+          "h": "essere or stare?",
+          "p": "essere describes what something is (È italiano, è alto); stare is for health and temporary states, and for progress. Irregular gerunds: facendo (fare), dicendo (dire), bevendo (bere).",
+          "examples": [
+            [
+              "{Stanno} dormendo.",
+              "they-stay · sleeping",
+              "They're sleeping."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Come ＿?",
+          "en": "How are you? (tu)",
+          "options": ["stai", "sei", "stia", "sta"],
+          "answer": "stai",
+          "why": "Health: stare."
+        },
+        {
+          "q": "Sto ＿ la TV.",
+          "en": "I'm watching TV.",
+          "options": ["guardendo", "guardando", "guardare", "guardato"],
+          "answer": "guardando",
+          "why": "-are → -ando."
+        },
+        {
+          "q": "Che cosa state ＿?",
+          "en": "What are you (all) doing?",
+          "options": ["fando", "fare", "facendo", "fatto"],
+          "answer": "facendo",
+          "why": "fare → facendo."
+        },
+        {
+          "q": "Marco ＿ alto.",
+          "en": "Marco is tall.",
+          "options": ["sta", "ha", "stai", "è"],
+          "answer": "è",
+          "why": "Description: essere."
+        },
+        {
+          "q": "Stiamo ＿.",
+          "en": "We're writing.",
+          "options": ["scrivendo", "scrivando", "scritto", "scrivere"],
+          "answer": "scrivendo",
+          "why": "-ere → -endo."
+        }
+      ]
+    },
+    {
+      "id": "molto-poco",
+      "title": "molto, poco, tanto, troppo",
+      "particle": "molto・poco・tanto・troppo",
+      "summary": "As adverbs they don't change; before a noun they agree. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "As adverbs (with verbs and adjectives), <b>molto</b> (very, a lot), <b>poco</b> (little), <b>tanto</b>, <b>troppo</b> (too much) don't change: è molto bella, lavora troppo.",
+          "examples": [
+            [
+              "È {molto} bello.",
+              "is · very · beautiful",
+              "It's very beautiful."
+            ],
+            ["Mangi {troppo}.", "you-eat · too-much", "You eat too much."]
+          ]
+        },
+        {
+          "h": "Before a noun they agree",
+          "p": "Before a noun they agree like adjectives: molti amici, molta gente, poche persone, troppi soldi.",
+          "examples": [
+            [
+              "Ho {molti} amici.",
+              "I-have · many · friends",
+              "I have many friends."
+            ],
+            [
+              "C'è {poca} acqua.",
+              "there-is · little · water",
+              "There isn't much water."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Sono ＿ stanca.",
+          "en": "I'm very tired. (f)",
+          "options": ["molto", "molta", "molti", "molte"],
+          "answer": "molto",
+          "why": "Adverb before an adjective: no change."
+        },
+        {
+          "q": "Ci sono ＿ macchine.",
+          "en": "There are many cars.",
+          "options": ["molto", "molte", "molti", "molta"],
+          "answer": "molte",
+          "why": "Before a noun: agrees, feminine plural."
+        },
+        {
+          "q": "Lavori ＿!",
+          "en": "You work too much!",
+          "options": ["troppa", "troppi", "troppo", "troppe"],
+          "answer": "troppo",
+          "why": "With a verb: no change."
+        },
+        {
+          "q": "＿ zucchero",
+          "en": "a little sugar",
+          "options": ["poca", "pochi", "poche", "poco"],
+          "answer": "poco",
+          "why": "Masculine singular."
+        },
+        {
+          "q": "Grazie ＿!",
+          "en": "Thanks so much!",
+          "options": ["mille", "molti", "molte", "tanta"],
+          "answer": "mille",
+          "why": "Set phrase: grazie mille, or grazie tante."
+        }
+      ]
+    },
+    {
+      "id": "quello-bello",
+      "title": "bello before a noun",
+      "particle": "bel・bello・bell'・bei・begli・bella",
+      "summary": "Before a noun, bello changes like the article, just as quello does. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>bello</b> before a noun follows the article pattern: <b>bel</b> ragazzo (il), <b>bello</b> spettacolo (lo), <b>bell'</b>albero (l'), <b>bei</b> ragazzi (i), <b>begli</b> occhi (gli), <b>bella</b>, <b>belle</b>.",
+          "examples": [
+            ["un {bel} posto", "a · beautiful · place", "a beautiful place"],
+            ["dei {begli} occhi", "some · beautiful · eyes", "beautiful eyes"]
+          ]
+        },
+        {
+          "h": "After the noun",
+          "p": "After the noun or after essere, bello is regular: un ragazzo bello, i fiori sono belli. buono before a noun works like uno: buon giorno, buono studente, buona sera.",
+          "examples": [
+            [
+              "Che {bella} giornata!",
+              "what · beautiful · day",
+              "What a lovely day!"
+            ],
+            ["{Buon} viaggio!", "good · journey", "Have a good trip!"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "un ＿ film",
+          "en": "a nice film (il film)",
+          "options": ["bel", "bello", "bell'", "bei"],
+          "answer": "bel",
+          "why": "il → bel."
+        },
+        {
+          "q": "＿ occhi",
+          "en": "beautiful eyes (gli occhi)",
+          "options": ["bei", "begli", "belli", "bello"],
+          "answer": "begli",
+          "why": "gli → begli."
+        },
+        {
+          "q": "I fiori sono ＿.",
+          "en": "The flowers are beautiful.",
+          "options": ["bei", "begli", "belli", "bel"],
+          "answer": "belli",
+          "why": "After essere: regular."
+        },
+        {
+          "q": "＿ appetito!",
+          "en": "Enjoy your meal!",
+          "options": ["Buono", "Buona", "Buoni", "Buon"],
+          "answer": "Buon",
+          "why": "Like un: buon."
+        },
+        {
+          "q": "un ＿ amico",
+          "en": "a good friend",
+          "options": ["buon", "buono", "buon'", "buona"],
+          "answer": "buon",
+          "why": "buon before a vowel, masculine, no apostrophe."
+        }
+      ]
+    },
+    {
+      "id": "ecco",
+      "title": "ecco — here is, there it is",
+      "particle": "ecco・eccolo・eccomi",
+      "summary": "ecco points at something: here it is. Pronouns attach to it. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ecco</b> presents something: Ecco il tuo caffè (here's your coffee). It's not a verb, so it doesn't change.",
+          "examples": [
+            ["{Ecco} il treno!", "here-is · the · train", "Here's the train!"],
+            [
+              "{Ecco} le chiavi.",
+              "here-are · the · keys",
+              "Here are the keys."
+            ]
+          ]
+        },
+        {
+          "h": "With pronouns",
+          "p": "Object pronouns attach: <b>eccolo</b> (here it/he is), eccola, eccoli, <b>eccomi</b> (here I am).",
+          "examples": [
+            [
+              "Dov'è Marco? — {Eccolo}!",
+              "where-is · Marco · here-he-is",
+              "Where's Marco? — There he is!"
+            ],
+            ["{Eccomi}!", "here-me", "Here I am!"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ il menu.",
+          "en": "Here's the menu.",
+          "options": ["Ecco", "C'è", "È", "Sta"],
+          "answer": "Ecco",
+          "why": "Presenting: ecco."
+        },
+        {
+          "q": "Dov'è Anna? — ＿!",
+          "en": "Where's Anna? — There she is!",
+          "options": ["Eccolo", "Eccola", "Eccoli", "Ecca"],
+          "answer": "Eccola",
+          "why": "Feminine: -la."
+        },
+        {
+          "q": "Here I am!",
+          "en": "",
+          "options": ["Ecco io!", "Mi ecco!", "Eccomi!", "Eccome!"],
+          "answer": "Eccomi!",
+          "why": "ecco + mi."
+        },
+        {
+          "q": "Is ecco a verb?",
+          "en": "",
+          "options": [
+            "Yes, it conjugates",
+            "Only in the past",
+            "It's an article",
+            "No, it doesn't change"
+          ],
+          "answer": "No, it doesn't change",
+          "why": "Invariable."
+        },
+        {
+          "q": "I biglietti? ＿!",
+          "en": "The tickets? Here they are!",
+          "options": ["Eccoli", "Eccolo", "Eccole", "Eccola"],
+          "answer": "Eccoli",
+          "why": "Masculine plural."
+        }
+      ]
+    },
     {
       "id": "possessives",
-      "title": "il mio, la mia: possessives with the article (about A1)",
-      "level": "beginner"
+      "title": "il mio, la mia: possessives with the article",
+      "particle": "il mio・la mia・i miei・le mie",
+      "summary": "Possessives agree with the thing owned and usually keep the article. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Italian possessives agree with the thing owned and normally take the article: <b>il mio</b> libro, <b>la mia</b> casa, <b>i miei</b> amici, <b>le mie</b> amiche. Same for tuo, suo, nostro, vostro. <b>loro</b> never changes: il loro, la loro.",
+          "examples": [
+            [
+              "{La mia} macchina è rossa.",
+              "the · my · car · is · red",
+              "My car is red."
+            ],
+            ["{I tuoi} genitori", "the · your · parents", "your parents"]
+          ]
+        },
+        {
+          "h": "Family without the article",
+          "p": "With a single, unmodified family member, drop the article: <b>mia</b> madre, <b>tuo</b> fratello. Keep it in the plural, with loro, and with diminutives: i miei fratelli, la loro madre, la mia sorellina.",
+          "examples": [
+            [
+              "{Mia} sorella abita a Roma.",
+              "my · sister · lives · in · Rome",
+              "My sister lives in Rome."
+            ],
+            ["{I miei} fratelli", "the · my · brothers", "my brothers"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ casa",
+          "en": "my house",
+          "options": ["la mia", "mia", "il mio", "la mio"],
+          "answer": "la mia",
+          "why": "With the article."
+        },
+        {
+          "q": "＿ padre",
+          "en": "my father",
+          "options": ["il mio", "mio", "la mia", "mia"],
+          "answer": "mio",
+          "why": "Single family member: no article."
+        },
+        {
+          "q": "＿ amici",
+          "en": "your friends (tu)",
+          "options": ["i tui", "le tue", "i tuoi", "tuoi"],
+          "answer": "i tuoi",
+          "why": "Plural: i tuoi."
+        },
+        {
+          "q": "＿ figlio",
+          "en": "their son",
+          "options": ["loro", "il suo", "i loro", "il loro"],
+          "answer": "il loro",
+          "why": "loro keeps the article."
+        },
+        {
+          "q": "＿ sorelle",
+          "en": "my sisters",
+          "options": ["le mie", "mie", "la mia", "i miei"],
+          "answer": "le mie",
+          "why": "Plural family: keep the article."
+        }
+      ]
     },
     {
       "id": "ere-ire-verbs",
-      "title": "Verbs in -ere and -ire, including -isc- (about A1)",
-      "level": "beginner"
+      "title": "Verbs in -ere and -ire, including -isc-",
+      "particle": "-o・-i・-e・-iamo",
+      "summary": "-ere and -ire verbs share most endings; some -ire verbs add -isc-. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>-ere</b> (prendere): prendo, prendi, prende, prendiamo, prendete, prendono. <b>-ire</b> (dormire): dormo, dormi, dorme, dormiamo, dormite, dormono.",
+          "examples": [
+            ["{Leggo} un libro.", "I-read · a · book", "I'm reading a book."],
+            ["{Dormite} bene?", "you-all-sleep · well", "Do you sleep well?"]
+          ]
+        },
+        {
+          "h": "-isc- verbs",
+          "p": "Many -ire verbs add <b>-isc-</b> in all forms except noi and voi: capire → cap<b>isc</b>o, cap<b>isc</b>i, cap<b>isc</b>e, capiamo, capite, cap<b>isc</b>ono. Also finire, preferire, pulire.",
+          "examples": [
+            ["Non {capisco}.", "not · I-understand", "I don't understand."],
+            [
+              "{Preferiamo} il mare.",
+              "we-prefer · the · sea",
+              "We prefer the seaside."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Loro ＿ la pizza.",
+          "en": "They eat pizza. (mangiare is -are; this is: prendere)",
+          "options": ["prendono", "prendano", "prendeno", "prende"],
+          "answer": "prendono",
+          "why": "-ere: -ono."
+        },
+        {
+          "q": "Io ＿ il tè.",
+          "en": "I prefer tea.",
+          "options": ["prefero", "preferisco", "preferiscio", "preferiamo"],
+          "answer": "preferisco",
+          "why": "-isc-."
+        },
+        {
+          "q": "Voi ＿?",
+          "en": "Do you (all) understand?",
+          "options": ["capiscite", "capiscete", "capite", "capisci"],
+          "answer": "capite",
+          "why": "No -isc- in voi."
+        },
+        {
+          "q": "Lui ＿ alle otto.",
+          "en": "He leaves at eight. (partire)",
+          "options": ["partisce", "parti", "partono", "parte"],
+          "answer": "parte",
+          "why": "partire: no -isc-."
+        },
+        {
+          "q": "Noi ＿ il lavoro.",
+          "en": "We finish the work.",
+          "options": ["finiamo", "finisciamo", "finiscono", "finite"],
+          "answer": "finiamo",
+          "why": "No -isc- in noi."
+        }
+      ]
     },
     {
       "id": "irregular",
-      "title": "andare, fare, venire, stare (about A1)",
-      "level": "beginner"
+      "title": "andare, fare, venire, stare",
+      "particle": "vado・faccio・vengo・sto",
+      "summary": "Four everyday verbs with irregular present forms. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>andare</b>: vado, vai, va, andiamo, andate, vanno. <b>fare</b>: faccio, fai, fa, facciamo, fate, fanno. <b>venire</b>: vengo, vieni, viene, veniamo, venite, vengono.",
+          "examples": [
+            [
+              "{Vado} al mare.",
+              "I-go · to-the · sea",
+              "I'm going to the seaside."
+            ],
+            ["Che {fai}?", "what · you-do", "What are you doing?"],
+            ["{Vengo} anch'io.", "I-come · also-I", "I'm coming too."]
+          ]
+        },
+        {
+          "h": "Expressions with fare",
+          "p": "fare is used for weather and many activities: fa caldo (it's hot), fare colazione (have breakfast), fare la spesa (do the shopping), fare una foto.",
+          "examples": [
+            ["Oggi {fa} freddo.", "today · makes · cold", "It's cold today."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Loro ＿ a scuola.",
+          "en": "They go to school.",
+          "options": ["vanno", "andano", "vano", "vadono"],
+          "answer": "vanno",
+          "why": "andare: vanno."
+        },
+        {
+          "q": "Noi ＿ colazione.",
+          "en": "We have breakfast.",
+          "options": ["faciamo", "facciamo", "fiamo", "fanno"],
+          "answer": "facciamo",
+          "why": "fare: facciamo."
+        },
+        {
+          "q": "Tu ＿ alla festa?",
+          "en": "Are you coming to the party?",
+          "options": ["veni", "vengi", "vieni", "viene"],
+          "answer": "vieni",
+          "why": "venire: vieni."
+        },
+        {
+          "q": "It's hot.",
+          "en": "",
+          "options": ["È caldo.", "Ha caldo.", "Sta caldo.", "Fa caldo."],
+          "answer": "Fa caldo.",
+          "why": "Weather: fa."
+        },
+        {
+          "q": "Io ＿ la spesa.",
+          "en": "I do the shopping.",
+          "options": ["faccio", "fao", "fo", "facio"],
+          "answer": "faccio",
+          "why": "fare: faccio."
+        }
+      ]
     },
     {
       "id": "piacere",
-      "title": "mi piace, mi piacciono (about A1)",
-      "level": "beginner"
+      "title": "mi piace, mi piacciono",
+      "particle": "mi piace・mi piacciono",
+      "summary": "The thing liked is the subject; the person is an indirect object. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>piacere</b> means “to be pleasing”. The thing you like is the subject, so the verb agrees with it: <b>mi piace</b> il caffè (singular), <b>mi piacciono</b> i gatti (plural). With a verb: mi piace leggere.",
+          "examples": [
+            [
+              "{Mi piace} la musica.",
+              "to-me · pleases · the · music",
+              "I like music."
+            ],
+            [
+              "{Ti piacciono} i cani?",
+              "to-you · please · the · dogs",
+              "Do you like dogs?"
+            ],
+            [
+              "{Gli piace} viaggiare.",
+              "to-him · pleases · travel",
+              "He likes travelling."
+            ]
+          ]
+        },
+        {
+          "h": "Names and the past",
+          "p": "With a name, use a: <b>A Marco</b> piace il calcio. Past: mi è piaciuto/a/i/e (agrees with the thing).",
+          "examples": [
+            [
+              "{A Laura} piacciono i fiori.",
+              "to · Laura · please · the · flowers",
+              "Laura likes flowers."
+            ],
+            [
+              "Il film {mi è piaciuto}.",
+              "the · film · to-me · is · pleased",
+              "I liked the film."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Mi ＿ gli spaghetti.",
+          "en": "I like spaghetti.",
+          "options": ["piacciono", "piace", "piaccio", "piacete"],
+          "answer": "piacciono",
+          "why": "Plural thing: piacciono."
+        },
+        {
+          "q": "＿ piace il vino?",
+          "en": "Do you like wine? (tu)",
+          "options": ["Tu", "Ti", "Te", "Tuo"],
+          "answer": "Ti",
+          "why": "Indirect pronoun: ti."
+        },
+        {
+          "q": "＿ Paolo piace nuotare.",
+          "en": "Paolo likes swimming.",
+          "options": ["Di", "Da", "A", "—"],
+          "answer": "A",
+          "why": "a + name."
+        },
+        {
+          "q": "Mi piace ＿.",
+          "en": "I like dancing.",
+          "options": ["ballo", "ballando", "balla", "ballare"],
+          "answer": "ballare",
+          "why": "piacere + infinitive."
+        },
+        {
+          "q": "La pizza mi è ＿.",
+          "en": "I liked the pizza.",
+          "options": ["piaciuta", "piaciuto", "piaciute", "piaceva"],
+          "answer": "piaciuta",
+          "why": "Agrees with pizza."
+        }
+      ]
     },
     {
       "id": "c-e",
-      "title": "c'è and ci sono; del, della (about A1)",
-      "level": "beginner"
+      "title": "c'è and ci sono; del, della",
+      "particle": "c'è・ci sono・del・della・dei",
+      "summary": "c'è (there is), ci sono (there are); del, della for “some”. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>c'è</b> + singular, <b>ci sono</b> + plural: there is, there are. Negative: non c'è, non ci sono.",
+          "examples": [
+            [
+              "{C'è} una farmacia qui vicino?",
+              "there-is · a · pharmacy · here · near",
+              "Is there a chemist's near here?"
+            ],
+            [
+              "{Ci sono} tre camere.",
+              "there · are · three · rooms",
+              "There are three rooms."
+            ]
+          ]
+        },
+        {
+          "h": "Some: del, della, dei",
+          "p": "For “some”, use di + article: <b>del</b> pane, <b>della</b> frutta, <b>dei</b> libri, <b>delle</b> mele, <b>degli</b> amici. In the negative, it's usually dropped: non c'è pane.",
+          "examples": [
+            [
+              "Vorrei {del} pane.",
+              "I'd-like · some · bread",
+              "I'd like some bread."
+            ],
+            [
+              "Ho {degli} amici a Bologna.",
+              "I-have · some · friends · in · Bologna",
+              "I have some friends in Bologna."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ molti turisti.",
+          "en": "There are lots of tourists.",
+          "options": ["Ci sono", "C'è", "Sono", "È"],
+          "answer": "Ci sono",
+          "why": "Plural: ci sono."
+        },
+        {
+          "q": "Non ＿ latte.",
+          "en": "There's no milk.",
+          "options": ["ci sono", "c'è", "è", "ce"],
+          "answer": "c'è",
+          "why": "Singular: c'è."
+        },
+        {
+          "q": "Compro ＿ mele.",
+          "en": "I'm buying some apples.",
+          "options": ["dei", "della", "delle", "degli"],
+          "answer": "delle",
+          "why": "Feminine plural."
+        },
+        {
+          "q": "C'è ＿ zucchero?",
+          "en": "Is there any sugar?",
+          "options": ["del", "della", "dell'", "dello"],
+          "answer": "dello",
+          "why": "lo zucchero → dello."
+        },
+        {
+          "q": "Ci sono ＿ studenti.",
+          "en": "There are some students.",
+          "options": ["degli", "dei", "delle", "dello"],
+          "answer": "degli",
+          "why": "gli studenti → degli."
+        }
+      ]
     },
     {
       "id": "articulated-prepositions",
-      "title": "nel, sul, dal: prepositions joined to the article (about A1–A2)",
-      "level": "beginner"
+      "title": "nel, sul, dal: prepositions joined to the article",
+      "particle": "al・del・dal・nel・sul",
+      "summary": "a, di, da, in, su merge with the definite article. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Five prepositions merge with the article: <b>a</b> + il = al, <b>di</b> + il = del, <b>da</b> + il = dal, <b>in</b> + il = nel, <b>su</b> + il = sul. The same with every article: alla, della, nello, sugli, nei…",
+          "examples": [
+            [
+              "Vado {al} cinema.",
+              "I-go · to-the · cinema",
+              "I'm going to the cinema."
+            ],
+            [
+              "Il libro è {sul} tavolo.",
+              "the · book · is · on-the · table",
+              "The book is on the table."
+            ],
+            [
+              "Vengo {dalla} stazione.",
+              "I-come · from-the · station",
+              "I'm coming from the station."
+            ]
+          ]
+        },
+        {
+          "h": "con and per",
+          "p": "con and per normally stay separate: con il, per la (col exists in speech). in becomes ne-: nel, nella, negli.",
+          "examples": [
+            [
+              "Le chiavi sono {nella} borsa.",
+              "the · keys · are · in-the · bag",
+              "The keys are in the bag."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Il gatto è ＿ letto.",
+          "en": "The cat is on the bed.",
+          "options": ["sul", "nel", "al", "dal"],
+          "answer": "sul",
+          "why": "su + il."
+        },
+        {
+          "q": "Vado ＿ farmacia.",
+          "en": "I'm going to the chemist's.",
+          "options": ["nella", "in", "da", "a la"],
+          "answer": "in",
+          "why": "in farmacia: no article."
+        },
+        {
+          "q": "il nome ＿ ragazzo",
+          "en": "the boy's name",
+          "options": ["di il", "dal", "del", "al"],
+          "answer": "del",
+          "why": "di + il."
+        },
+        {
+          "q": "Ci sono pesci ＿ lago.",
+          "en": "There are fish in the lake.",
+          "options": ["in il", "sul", "al", "nel"],
+          "answer": "nel",
+          "why": "in + il."
+        },
+        {
+          "q": "Torno ＿ ufficio alle sei.",
+          "en": "I come back from the office at six.",
+          "options": ["dall'", "dal", "da l'", "dall"],
+          "answer": "dall'",
+          "why": "da + l'."
+        }
+      ]
     },
     {
       "id": "passato-prossimo",
-      "title": "The passato prossimo with avere and essere (about A1–A2)",
-      "level": "beginner"
+      "title": "The passato prossimo with avere and essere",
+      "particle": "ho mangiato・sono andato",
+      "summary": "avere or essere + past participle; with essere it agrees. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "The everyday past is <b>avere</b> or <b>essere</b> + past participle. Regular participles: -are → <b>-ato</b>, -ere → <b>-uto</b>, -ire → <b>-ito</b>. Most verbs take avere.",
+          "examples": [
+            [
+              "{Ho mangiato} la pizza.",
+              "I-have · eaten · the · pizza",
+              "I ate pizza."
+            ],
+            [
+              "Abbiamo {dormito} bene.",
+              "we-have · slept · well",
+              "We slept well."
+            ]
+          ]
+        },
+        {
+          "h": "essere and agreement",
+          "p": "Movement and change verbs take <b>essere</b> (andare, venire, partire, arrivare, nascere, morire, restare, diventare), and the participle agrees with the subject: Maria è andat<b>a</b>, siamo partit<b>i</b>. Common irregulars: fatto, detto, visto, preso, messo, scritto, letto, stato.",
+          "examples": [
+            [
+              "Lei {è arrivata} ieri.",
+              "she · is · arrived · yesterday",
+              "She arrived yesterday."
+            ],
+            [
+              "Che cosa {hai fatto}?",
+              "what · thing · you-have · done",
+              "What did you do?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ieri ＿ andati al mare.",
+          "en": "Yesterday we went to the seaside.",
+          "options": ["siamo", "abbiamo", "sono", "avete"],
+          "answer": "siamo",
+          "why": "andare takes essere."
+        },
+        {
+          "q": "Ho ＿ un libro.",
+          "en": "I read a book.",
+          "options": ["leggiuto", "letto", "leggito", "lesso"],
+          "answer": "letto",
+          "why": "Irregular: letto."
+        },
+        {
+          "q": "Giulia è ＿ alle otto.",
+          "en": "Giulia left at eight.",
+          "options": ["partito", "partiti", "partita", "partite"],
+          "answer": "partita",
+          "why": "Agrees: feminine."
+        },
+        {
+          "q": "Hai ＿ il film?",
+          "en": "Did you see the film?",
+          "options": ["vidito", "vedito", "vedato", "visto"],
+          "answer": "visto",
+          "why": "Irregular: visto."
+        },
+        {
+          "q": "Loro ＿ lavorato molto.",
+          "en": "They worked a lot.",
+          "options": ["hanno", "sono", "ha", "avete"],
+          "answer": "hanno",
+          "why": "Most verbs: avere."
+        }
+      ]
     },
     {
       "id": "reflexive",
-      "title": "Reflexive verbs: mi chiamo, alzarsi (about A1–A2)",
-      "level": "beginner"
+      "title": "Reflexive verbs: mi chiamo, alzarsi",
+      "particle": "mi・ti・si・ci・vi・si",
+      "summary": "The pronoun matches the subject; the passato prossimo takes essere. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Reflexive verbs end in -si in the infinitive (alzarsi, lavarsi, chiamarsi). The pronoun matches the subject: <b>mi</b> alzo, <b>ti</b> alzi, <b>si</b> alza, <b>ci</b> alziamo, <b>vi</b> alzate, <b>si</b> alzano.",
+          "examples": [
+            [
+              "{Mi chiamo} Luca.",
+              "myself · I-call · Luca",
+              "My name is Luca."
+            ],
+            [
+              "A che ora {ti alzi}?",
+              "at · what · hour · yourself · you-get-up",
+              "What time do you get up?"
+            ]
+          ]
+        },
+        {
+          "h": "Past and with modals",
+          "p": "In the passato prossimo, reflexives take essere and agree: mi sono alzato/a. With a modal, the pronoun goes before or attaches: mi devo alzare / devo alzarmi.",
+          "examples": [
+            [
+              "Ci {siamo divertiti}.",
+              "ourselves · we-are · enjoyed",
+              "We had fun."
+            ],
+            [
+              "Devo {alzarmi} presto.",
+              "I-must · get-up-myself · early",
+              "I have to get up early."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Come ＿ chiami?",
+          "en": "What's your name? (tu)",
+          "options": ["ti", "si", "mi", "te"],
+          "answer": "ti",
+          "why": "tu → ti."
+        },
+        {
+          "q": "Loro ＿ svegliano tardi.",
+          "en": "They wake up late.",
+          "options": ["ci", "si", "vi", "li"],
+          "answer": "si",
+          "why": "loro → si."
+        },
+        {
+          "q": "Anna ＿ vestita.",
+          "en": "Anna got dressed.",
+          "options": ["si ha", "ha", "si è", "è si"],
+          "answer": "si è",
+          "why": "Reflexive past: essere."
+        },
+        {
+          "q": "Dobbiamo ＿.",
+          "en": "We have to hurry.",
+          "options": ["sbrigarsi", "ci sbrigare", "sbrigarvi", "sbrigarci"],
+          "answer": "sbrigarci",
+          "why": "Attach the matching pronoun."
+        },
+        {
+          "q": "Ci siamo divertiti means…",
+          "en": "",
+          "options": ["We had fun.", "We have fun.", "We'll have fun.", "They had fun."],
+          "answer": "We had fun.",
+          "why": "Passato prossimo."
+        }
+      ]
     },
     {
       "id": "object-pronouns",
-      "title": "Object pronouns: lo, la, gli, le (about A2)",
-      "level": "beginner-intermediate"
+      "title": "Object pronouns: lo, la, gli, le",
+      "particle": "lo・la・li・le・gli・le",
+      "summary": "Direct: lo, la, li, le. Indirect: gli (to him), le (to her). They go before the verb. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Direct object pronouns: mi, ti, <b>lo</b> (him, it), <b>la</b> (her, it), ci, vi, <b>li</b> (them, m), <b>le</b> (them, f). They go before a conjugated verb. lo and la become l' before a vowel.",
+          "examples": [
+            ["{Lo} conosco.", "him · I-know", "I know him."],
+            [
+              "{La} mangio subito.",
+              "it(f) · I-eat · straight-away",
+              "I'll eat it straight away."
+            ],
+            ["{Li} hai visti?", "them · you-have · seen", "Did you see them?"]
+          ]
+        },
+        {
+          "h": "Indirect",
+          "p": "Indirect (to someone): mi, ti, <b>gli</b> (to him; in speech also to them), <b>le</b> (to her), <b>Le</b> (to you, formal), ci, vi. In the passato prossimo, direct lo/la/li/le make the participle agree: l'ho vista.",
+          "examples": [
+            [
+              "{Gli} telefono stasera.",
+              "to-him · I-phone · tonight",
+              "I'll call him tonight."
+            ],
+            [
+              "{Le} ho scritto.",
+              "to-her · I-have · written",
+              "I wrote to her."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Vedi Maria? — Sì, ＿ vedo.",
+          "en": "Do you see Maria? — Yes.",
+          "options": ["la", "le", "lo", "gli"],
+          "answer": "la",
+          "why": "Direct, feminine: la."
+        },
+        {
+          "q": "Parli a Paolo? — Sì, ＿ parlo.",
+          "en": "Are you talking to Paolo? — Yes.",
+          "options": ["lo", "gli", "le", "li"],
+          "answer": "gli",
+          "why": "Indirect masculine: gli."
+        },
+        {
+          "q": "Hai comprato le mele? — Sì, ＿ ho comprate.",
+          "en": "Did you buy the apples? — Yes.",
+          "options": ["li", "la", "le", "gli"],
+          "answer": "le",
+          "why": "Direct feminine plural; participle agrees."
+        },
+        {
+          "q": "Scrivo a mia nonna. → ＿ scrivo.",
+          "en": "",
+          "options": ["La", "Gli", "Lo", "Le"],
+          "answer": "Le",
+          "why": "Indirect feminine: le."
+        },
+        {
+          "q": "I biglietti? Non ＿ trovo.",
+          "en": "The tickets? I can't find them.",
+          "options": ["li", "le", "gli", "lo"],
+          "answer": "li",
+          "why": "Direct masculine plural: li."
+        }
+      ]
     },
     {
       "id": "imperfetto",
-      "title": "The imperfetto (about A2)",
-      "level": "beginner-intermediate"
+      "title": "The imperfetto",
+      "particle": "-avo・-evo・-ivo",
+      "summary": "Descriptions, habits and ongoing actions in the past. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Drop -re from the infinitive and add <b>-vo, -vi, -va, -vamo, -vate, -vano</b>: parlavo, leggevi, dormiva. essere is irregular: ero, eri, era, eravamo, eravate, erano. fare → facevo, dire → dicevo, bere → bevevo.",
+          "examples": [
+            [
+              "Da bambino {giocavo} a calcio.",
+              "as · child · I-played · at · football",
+              "As a child I used to play football."
+            ],
+            [
+              "{Era} una bella giornata.",
+              "it-was · a · beautiful · day",
+              "It was a lovely day."
+            ]
+          ]
+        },
+        {
+          "h": "imperfetto vs passato prossimo",
+          "p": "The imperfetto sets the scene or tells habits; the passato prossimo tells what happened. Mentre leggevo, è arrivato Marco: while I was reading, Marco arrived.",
+          "examples": [
+            [
+              "{Dormivo} quando hai chiamato.",
+              "I-was-sleeping · when · you-have · called",
+              "I was asleep when you called."
+            ],
+            ["{Faceva} freddo.", "it-made · cold", "It was cold."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Quando ero piccola, ＿ in campagna.",
+          "en": "When I was little, I lived in the country.",
+          "options": ["abitavo", "ho abitato", "abito", "abiterò"],
+          "answer": "abitavo",
+          "why": "Past habit: imperfetto."
+        },
+        {
+          "q": "Mentre ＿, è suonato il telefono.",
+          "en": "While I was eating, the phone rang.",
+          "options": ["ho mangiato", "mangiavo", "mangio", "mangerò"],
+          "answer": "mangiavo",
+          "why": "Background: imperfetto."
+        },
+        {
+          "q": "essere → noi (imperfetto)",
+          "en": "",
+          "options": ["essevamo", "siavamo", "eravamo", "erano"],
+          "answer": "eravamo",
+          "why": "Irregular."
+        },
+        {
+          "q": "fare → lui (imperfetto)",
+          "en": "",
+          "options": ["fava", "fareva", "fece", "faceva"],
+          "answer": "faceva",
+          "why": "fare → face-."
+        },
+        {
+          "q": "Ieri ＿ un incidente.",
+          "en": "Yesterday there was an accident. (one event)",
+          "options": ["c'è stato", "c'era", "c'è", "ci sarà"],
+          "answer": "c'è stato",
+          "why": "A single event: passato prossimo."
+        }
+      ]
     },
     {
       "id": "futuro",
-      "title": "The futuro semplice (about A2)",
-      "level": "beginner-intermediate"
+      "title": "The futuro semplice",
+      "particle": "-rò・-rai・-rà",
+      "summary": "Stem + -rò, -rai, -rà, -remo, -rete, -ranno. -are verbs change a to e. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Drop the final -e of the infinitive and add <b>-ò, -ai, -à, -emo, -ete, -anno</b>. -are verbs change <b>a → e</b>: parlare → parlerò. -ere/-ire: prenderò, dormirò.",
+          "examples": [
+            [
+              "Domani {partirò}.",
+              "tomorrow · I-will-leave",
+              "I'll leave tomorrow."
+            ],
+            ["Ti {telefonerò}.", "to-you · I-will-phone", "I'll call you."]
+          ]
+        },
+        {
+          "h": "Irregular stems",
+          "p": "essere → sarò, avere → avrò, andare → andrò, fare → farò, venire → verrò, volere → vorrò, potere → potrò, dovere → dovrò, vedere → vedrò, bere → berrò.",
+          "examples": [
+            [
+              "{Sarà} difficile.",
+              "it-will-be · difficult",
+              "It will be difficult."
+            ],
+            ["{Verremo} presto.", "we-will-come · soon", "We'll come soon."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Domani ＿ al mare.",
+          "en": "Tomorrow we'll go to the seaside.",
+          "options": ["andremo", "anderemo", "andaremo", "andiamo"],
+          "answer": "andremo",
+          "why": "andare → andr-."
+        },
+        {
+          "q": "Io ＿ la cena.",
+          "en": "I'll make dinner.",
+          "options": ["fare", "farò", "farei", "farà"],
+          "answer": "farò",
+          "why": "fare → far-."
+        },
+        {
+          "q": "Loro ＿ in Italia.",
+          "en": "They'll be in Italy.",
+          "options": ["essranno", "sarono", "saranno", "sarebbero"],
+          "answer": "saranno",
+          "why": "essere → sar-."
+        },
+        {
+          "q": "cercare → io (futuro)",
+          "en": "",
+          "options": ["cercarò", "cercerò", "cerchero", "cercherò"],
+          "answer": "cercherò",
+          "why": "a → e, plus h to keep the hard c."
+        },
+        {
+          "q": "Tu ＿ tempo?",
+          "en": "Will you have time?",
+          "options": ["avrai", "averai", "avrei", "avrà"],
+          "answer": "avrai",
+          "why": "avere → avr-."
+        }
+      ]
     },
     {
       "id": "comparatives",
-      "title": "più, meno, come; migliore and meglio (about A2)",
-      "level": "beginner-intermediate"
+      "title": "più, meno, come; migliore and meglio",
+      "particle": "più・meno・di・che・come",
+      "summary": "più/meno + adjective + di or che; tanto…quanto, così…come for equality. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>più</b> (more) and <b>meno</b> (less) + adjective. Than is <b>di</b> before a noun or pronoun, and <b>che</b> between two adjectives, verbs or phrases.",
+          "examples": [
+            [
+              "Roma è {più} grande {di} Firenze.",
+              "Rome · is · more · big · than · Florence",
+              "Rome is bigger than Florence."
+            ],
+            [
+              "È più bello {che} utile.",
+              "is · more · beautiful · than · useful",
+              "It's more beautiful than useful."
+            ]
+          ]
+        },
+        {
+          "h": "Equality and irregulars",
+          "p": "Equality: <b>(tanto)…quanto</b> or <b>(così)…come</b>. buono → <b>migliore</b> (better, adjective), bene → <b>meglio</b> (better, adverb); cattivo → peggiore, male → peggio.",
+          "examples": [
+            [
+              "Lui è alto {come} me.",
+              "he · is · tall · as · me",
+              "He's as tall as me."
+            ],
+            [
+              "Questo vino è {migliore}.",
+              "this · wine · is · better",
+              "This wine is better."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Il treno è più veloce ＿ autobus.",
+          "en": "The train is faster than the bus.",
+          "options": ["dell'", "che l'", "come l'", "di l'"],
+          "answer": "dell'",
+          "why": "Before a noun: di + article."
+        },
+        {
+          "q": "Mi piace più leggere ＿ guardare la TV.",
+          "en": "I like reading more than watching TV.",
+          "options": ["di", "che", "come", "quanto"],
+          "answer": "che",
+          "why": "Two verbs: che."
+        },
+        {
+          "q": "Questa pizza è ＿.",
+          "en": "This pizza is better.",
+          "options": ["più migliore", "meglio", "migliore", "più bene"],
+          "answer": "migliore",
+          "why": "buono → migliore."
+        },
+        {
+          "q": "Canta ＿ di me.",
+          "en": "He sings better than me.",
+          "options": ["migliore", "più bene", "più buono", "meglio"],
+          "answer": "meglio",
+          "why": "Adverb: meglio."
+        },
+        {
+          "q": "Sono alta ＿ mia madre.",
+          "en": "I'm as tall as my mother.",
+          "options": ["come", "che", "di", "più"],
+          "answer": "come",
+          "why": "così…come."
+        }
+      ]
+    },
+    {
+      "id": "stare-per",
+      "title": "stare per — about to",
+      "particle": "stare per + infinitive",
+      "summary": "stare per + infinitive: something is about to happen. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>stare per</b> + infinitive means be about to: Il film sta per cominciare.",
+          "examples": [
+            [
+              "Il treno {sta per} partire.",
+              "the · train · stays · for · leave",
+              "The train is about to leave."
+            ],
+            [
+              "{Stavo per} chiamarti!",
+              "I-was-staying · for · call-you",
+              "I was just about to call you!"
+            ]
+          ]
+        },
+        {
+          "h": "In the past",
+          "p": "In the past, use the imperfetto: stavo per uscire quando ha piovuto.",
+          "examples": [
+            [
+              "{Stavamo per} uscire.",
+              "we-were-staying · for · go-out",
+              "We were about to go out."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Sta ＿ piovere.",
+          "en": "It's about to rain.",
+          "options": ["per", "a", "di", "da"],
+          "answer": "per",
+          "why": "stare per."
+        },
+        {
+          "q": "I was about to leave.",
+          "en": "",
+          "options": [
+            "Sono stato per partire.",
+            "Stavo per partire.",
+            "Sto per partito.",
+            "Stavo partendo per."
+          ],
+          "answer": "Stavo per partire.",
+          "why": "Imperfetto of stare."
+        },
+        {
+          "q": "Il negozio sta per chiudere means…",
+          "en": "",
+          "options": [
+            "The shop is closing for good.",
+            "The shop stays closed.",
+            "The shop is about to close.",
+            "The shop has closed."
+          ],
+          "answer": "The shop is about to close.",
+          "why": "Imminent."
+        },
+        {
+          "q": "stare per vs stare + gerundio",
+          "en": "",
+          "options": ["same", "both past", "both future", "about to vs in progress"],
+          "answer": "about to vs in progress",
+          "why": "Different meanings."
+        },
+        {
+          "q": "Stiamo per ＿.",
+          "en": "We're about to arrive.",
+          "options": ["arrivare", "arrivando", "arrivati", "arriviamo"],
+          "answer": "arrivare",
+          "why": "Infinitive."
+        }
+      ]
+    },
+    {
+      "id": "gia-ancora",
+      "title": "già, ancora, non…ancora, non…più",
+      "particle": "già・ancora・non…ancora・non…più",
+      "summary": "già (already), non…ancora (not yet), ancora (still, again), non…più (no longer). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>già</b> means already; <b>non…ancora</b> means not yet. In compound tenses, they usually go between the auxiliary and the participle.",
+          "examples": [
+            [
+              "Ho {già} mangiato.",
+              "I-have · already · eaten",
+              "I've already eaten."
+            ],
+            [
+              "Non è {ancora} arrivato.",
+              "not · is · yet · arrived",
+              "He hasn't arrived yet."
+            ]
+          ]
+        },
+        {
+          "h": "ancora and non…più",
+          "p": "<b>ancora</b> alone means still or again: Sei ancora qui? Ancora un caffè! <b>non…più</b> means no longer.",
+          "examples": [
+            [
+              "Abiti {ancora} a Roma?",
+              "you-live · still · in · Rome",
+              "Do you still live in Rome?"
+            ],
+            [
+              "{Non} fumo {più}.",
+              "not · I-smoke · more",
+              "I don't smoke any more."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Hai ＿ finito?",
+          "en": "Have you already finished?",
+          "options": ["già", "ancora", "più", "mai"],
+          "answer": "già",
+          "why": "Already: già."
+        },
+        {
+          "q": "No, non ho ＿ finito.",
+          "en": "No, I haven't finished yet.",
+          "options": ["già", "ancora", "più", "mai"],
+          "answer": "ancora",
+          "why": "Not yet: non…ancora."
+        },
+        {
+          "q": "Non lavora ＿ qui.",
+          "en": "He doesn't work here any more.",
+          "options": ["ancora", "già", "più", "sempre"],
+          "answer": "più",
+          "why": "No longer: non…più."
+        },
+        {
+          "q": "Ancora un po' di vino? means…",
+          "en": "",
+          "options": [
+            "Still no wine?",
+            "Wine already?",
+            "No more wine?",
+            "A little more wine?"
+          ],
+          "answer": "A little more wine?",
+          "why": "ancora = more, again."
+        },
+        {
+          "q": "Sei ancora stanco? means…",
+          "en": "",
+          "options": [
+            "Are you still tired?",
+            "Are you already tired?",
+            "Are you never tired?",
+            "Were you tired?"
+          ],
+          "answer": "Are you still tired?",
+          "why": "ancora = still."
+        }
+      ]
+    },
+    {
+      "id": "other-negations",
+      "title": "non…mai, niente, nessuno",
+      "particle": "mai・niente・nulla・nessuno・neanche",
+      "summary": "Italian uses double negatives: non + verb + mai/niente/nessuno. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Italian keeps <b>non</b> before the verb and adds the second negative after: non…<b>mai</b> (never), non…<b>niente</b> / nulla (nothing), non…<b>nessuno</b> (nobody), non…<b>neanche</b> (not even).",
+          "examples": [
+            [
+              "{Non} bevo {mai} caffè.",
+              "not · I-drink · never · coffee",
+              "I never drink coffee."
+            ],
+            [
+              "{Non} ho visto {nessuno}.",
+              "not · I-have · seen · nobody",
+              "I didn't see anyone."
+            ],
+            [
+              "{Non} capisco {niente}.",
+              "not · I-understand · nothing",
+              "I don't understand anything."
+            ]
+          ]
+        },
+        {
+          "h": "At the start, no non",
+          "p": "If the negative word comes first, drop non: <b>Nessuno</b> è venuto. <b>Niente</b> è impossibile. nessuno as an adjective works like uno: nessun problema.",
+          "examples": [
+            ["{Nessuno} lo sa.", "nobody · it · knows", "Nobody knows."],
+            ["{Nessun} problema!", "no · problem", "No problem!"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Non mangio ＿ carne.",
+          "en": "I never eat meat.",
+          "options": ["mai", "niente", "nessuno", "più mai"],
+          "answer": "mai",
+          "why": "Never: mai."
+        },
+        {
+          "q": "Non c'è ＿ in casa.",
+          "en": "There's nobody at home.",
+          "options": ["niente", "nessuno", "mai", "nulla"],
+          "answer": "nessuno",
+          "why": "Nobody: nessuno."
+        },
+        {
+          "q": "＿ ha telefonato.",
+          "en": "Nobody phoned.",
+          "options": ["Non nessuno", "Niente", "Nessuno", "Nessun"],
+          "answer": "Nessuno",
+          "why": "First: no non."
+        },
+        {
+          "q": "Non voglio ＿.",
+          "en": "I don't want anything.",
+          "options": ["nessuno", "mai", "neanche", "niente"],
+          "answer": "niente",
+          "why": "Nothing: niente."
+        },
+        {
+          "q": "＿ problema!",
+          "en": "No problem!",
+          "options": ["Nessun", "Nessuno", "Niente", "Non"],
+          "answer": "Nessun",
+          "why": "Like un: nessun."
+        }
+      ]
+    },
+    {
+      "id": "superlativo",
+      "title": "il più, and -issimo",
+      "particle": "il più・-issimo",
+      "summary": "il/la più + adjective + di: the most. -issimo: very, extremely. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "The relative superlative is article + <b>più</b> + adjective, with <b>di</b> for “in”: il più alto della classe. After a noun, no second article: la città più bella d'Italia.",
+          "examples": [
+            [
+              "È {il più} bravo {della} classe.",
+              "is · the · most · good · of-the · class",
+              "He's the best in the class."
+            ],
+            [
+              "la città {più} antica del mondo",
+              "the · city · most · ancient · of-the · world",
+              "the oldest city in the world"
+            ]
+          ]
+        },
+        {
+          "h": "-issimo",
+          "p": "Adding <b>-issimo</b> means very: bello → bellissimo, buono → buonissimo, facile → facilissimo. It agrees: bellissima, bellissimi. ottimo (excellent) and pessimo (awful) are also used.",
+          "examples": [
+            [
+              "Il gelato è {buonissimo}!",
+              "the · ice-cream · is · very-good",
+              "The ice cream is delicious!"
+            ],
+            ["Sono {stanchissima}.", "I-am · very-tired", "I'm exhausted."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "È la montagna più alta ＿ Europa.",
+          "en": "It's the highest mountain in Europe.",
+          "options": ["d'", "in", "a", "da"],
+          "answer": "d'",
+          "why": "“in” after a superlative: di."
+        },
+        {
+          "q": "molto bello →",
+          "en": "",
+          "options": ["bellisimo", "bellissimo", "bellissimmo", "bellosissimo"],
+          "answer": "bellissimo",
+          "why": "-issimo."
+        },
+        {
+          "q": "Queste scarpe sono ＿.",
+          "en": "These shoes are very expensive.",
+          "options": ["carissimi", "carissima", "carissime", "caressime"],
+          "answer": "carissime",
+          "why": "Agrees: feminine plural."
+        },
+        {
+          "q": "il libro ＿ interessante",
+          "en": "the most interesting book",
+          "options": ["il più", "molto", "-issimo", "più"],
+          "answer": "più",
+          "why": "After the noun: no second article."
+        },
+        {
+          "q": "ottimo means…",
+          "en": "",
+          "options": ["excellent", "optimistic", "eighth", "the worst"],
+          "answer": "excellent",
+          "why": "Irregular superlative of buono."
+        }
+      ]
+    },
+    {
+      "id": "sapere-conoscere",
+      "title": "sapere or conoscere",
+      "particle": "sapere・conoscere",
+      "summary": "sapere: facts and how to. conoscere: people, places, familiarity. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>sapere</b> (so, sai, sa, sappiamo, sapete, sanno) is knowing a fact or how to do something: So nuotare. Non so dove abita.",
+          "examples": [
+            ["{Sai} cucinare?", "you-know · cook", "Can you cook?"],
+            ["Non {so} perché.", "not · I-know · why", "I don't know why."]
+          ]
+        },
+        {
+          "h": "conoscere",
+          "p": "<b>conoscere</b> is being acquainted with people, places and things. In the passato prossimo it means met for the first time: Ho conosciuto Marco ieri.",
+          "examples": [
+            ["{Conosci} Roma?", "you-know · Rome", "Do you know Rome?"],
+            [
+              "L'{ho conosciuta} a una festa.",
+              "her-I-have · known · at · a · party",
+              "I met her at a party."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ mia sorella?",
+          "en": "Do you know my sister?",
+          "options": ["Conosci", "Sai", "Conosce te", "Sapete"],
+          "answer": "Conosci",
+          "why": "A person: conoscere."
+        },
+        {
+          "q": "Non ＿ guidare.",
+          "en": "I can't drive.",
+          "options": ["conosco", "so", "posso sapere", "sa"],
+          "answer": "so",
+          "why": "Skill: sapere."
+        },
+        {
+          "q": "＿ a che ora parte il treno?",
+          "en": "Do you know what time the train leaves?",
+          "options": ["Conosci", "Conosce", "Sai", "Sapi"],
+          "answer": "Sai",
+          "why": "A fact: sapere."
+        },
+        {
+          "q": "Ho conosciuto Paolo ieri means…",
+          "en": "",
+          "options": [
+            "I knew Paolo yesterday.",
+            "I know Paolo.",
+            "I found out about Paolo.",
+            "I met Paolo yesterday."
+          ],
+          "answer": "I met Paolo yesterday.",
+          "why": "First meeting."
+        },
+        {
+          "q": "sapere → io",
+          "en": "",
+          "options": ["so", "sappo", "sapo", "sai"],
+          "answer": "so",
+          "why": "Irregular."
+        }
+      ]
+    },
+    {
+      "id": "da-time",
+      "title": "da + present — since, for",
+      "particle": "da",
+      "summary": "da + time with the present: an action that started in the past and continues. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "With an ongoing action, Italian uses the <b>present</b> + <b>da</b>: Abito qui da tre anni (I've lived here for three years). Ask with <b>Da quanto tempo…?</b>",
+          "examples": [
+            [
+              "Studio italiano {da} due anni.",
+              "I-study · Italian · since · two · years",
+              "I've been studying Italian for two years."
+            ],
+            [
+              "{Da quanto tempo} aspetti?",
+              "since · how-much · time · you-wait",
+              "How long have you been waiting?"
+            ]
+          ]
+        },
+        {
+          "h": "per and fa",
+          "p": "For a finished period, use <b>per</b> with the past: Ho vissuto a Londra per due anni. <b>fa</b> after a time means ago: due anni fa.",
+          "examples": [
+            [
+              "Ho lavorato lì {per} un anno.",
+              "I-have · worked · there · for · a · year",
+              "I worked there for a year."
+            ],
+            [
+              "È partito tre giorni {fa}.",
+              "is · left · three · days · ago",
+              "He left three days ago."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Aspetto ＿ un'ora.",
+          "en": "I've been waiting for an hour.",
+          "options": ["da", "per", "fa", "tra"],
+          "answer": "da",
+          "why": "Ongoing: da."
+        },
+        {
+          "q": "Lavoro qui ＿ 2019.",
+          "en": "I've worked here since 2019.",
+          "options": ["dalla", "dal", "per il", "fa"],
+          "answer": "dal",
+          "why": "da + il."
+        },
+        {
+          "q": "Sono arrivato due giorni ＿.",
+          "en": "I arrived two days ago.",
+          "options": ["da", "per", "fa", "prima"],
+          "answer": "fa",
+          "why": "ago: fa."
+        },
+        {
+          "q": "I've lived here for ten years.",
+          "en": "",
+          "options": [
+            "Ho abitato qui da dieci anni.",
+            "Abito qui per dieci anni.",
+            "Abito qui dieci anni fa.",
+            "Abito qui da dieci anni."
+          ],
+          "answer": "Abito qui da dieci anni.",
+          "why": "Present + da."
+        },
+        {
+          "q": "Ho dormito ＿ otto ore.",
+          "en": "I slept for eight hours.",
+          "options": ["per", "da", "fa", "dal"],
+          "answer": "per",
+          "why": "Finished: per."
+        }
+      ]
+    },
+    {
+      "id": "indefinites",
+      "title": "qualcuno, qualcosa, ogni, ognuno",
+      "particle": "qualcuno・qualcosa・qualche・ogni・tutto",
+      "summary": "qualche and ogni take a singular noun, even when the meaning is plural. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>qualcuno</b> (someone), <b>qualcosa</b> (something), <b>ognuno</b> (everyone, each). Adjectives after qualcosa take <b>di</b>: qualcosa di buono.",
+          "examples": [
+            ["C'è {qualcuno}?", "there-is · someone", "Is anyone there?"],
+            [
+              "Vuoi {qualcosa di} caldo?",
+              "you-want · something · of · hot",
+              "Do you want something hot?"
+            ]
+          ]
+        },
+        {
+          "h": "qualche and ogni",
+          "p": "<b>qualche</b> (some, a few) and <b>ogni</b> (every) are invariable and take a <b>singular</b> noun: qualche giorno (a few days), ogni settimana. tutto + article: tutti i giorni.",
+          "examples": [
+            [
+              "Resto {qualche} giorno.",
+              "I-stay · some · day",
+              "I'm staying a few days."
+            ],
+            [
+              "{Ogni} giorno vado in palestra.",
+              "every · day · I-go · to · gym",
+              "I go to the gym every day."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ho ＿ amico a Napoli.",
+          "en": "I have a few friends in Naples.",
+          "options": ["qualche", "qualcuno", "qualchi", "alcuno"],
+          "answer": "qualche",
+          "why": "qualche + singular."
+        },
+        {
+          "q": "＿ mattina bevo un caffè.",
+          "en": "Every morning I drink a coffee.",
+          "options": ["Ogne", "Ogni", "Tutti", "Ognuno"],
+          "answer": "Ogni",
+          "why": "ogni + singular."
+        },
+        {
+          "q": "Mi serve ＿.",
+          "en": "I need something.",
+          "options": ["qualcuno", "qualche", "qualcosa", "ogni"],
+          "answer": "qualcosa",
+          "why": "Something."
+        },
+        {
+          "q": "qualcosa ＿ nuovo",
+          "en": "something new",
+          "options": ["da", "che", "—", "di"],
+          "answer": "di",
+          "why": "qualcosa di + adjective."
+        },
+        {
+          "q": "＿ i giorni",
+          "en": "every day",
+          "options": ["tutti", "ogni", "ognuno", "qualche"],
+          "answer": "tutti",
+          "why": "tutti i + plural."
+        }
+      ]
+    },
+    {
+      "id": "stressed-pronouns",
+      "title": "me, te, lui, lei — stressed pronouns",
+      "particle": "me・te・lui・lei・noi・voi・loro",
+      "summary": "After prepositions and for emphasis, use me, te, lui, lei. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "After prepositions, and when stressed or contrasted, use <b>me, te, lui, lei, Lei, noi, voi, loro</b>: con me, per te, da lui.",
+          "examples": [
+            [
+              "Vieni {con me}?",
+              "you-come · with · me",
+              "Are you coming with me?"
+            ],
+            [
+              "Questo è {per te}.",
+              "this · is · for · you",
+              "This is for you."
+            ],
+            [
+              "Cerco {lui}, non {lei}.",
+              "I-look-for · him · not · her",
+              "I'm looking for him, not her."
+            ]
+          ]
+        },
+        {
+          "h": "anche io, neanche io",
+          "p": "With anche (also) and neanche (not even), the subject forms io and tu are used: Anch'io! Neanch'io.",
+          "examples": [
+            [
+              "Ho fame. — {Anch'io}!",
+              "I-have · hunger · also-I",
+              "I'm hungry. — Me too!"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Vuoi venire da ＿?",
+          "en": "Do you want to come to my place?",
+          "options": ["me", "mi", "io", "mio"],
+          "answer": "me",
+          "why": "After a preposition: me."
+        },
+        {
+          "q": "Ho comprato un regalo per ＿.",
+          "en": "I bought a present for her.",
+          "options": ["la", "lei", "le", "sua"],
+          "answer": "lei",
+          "why": "Stressed: lei."
+        },
+        {
+          "q": "Non mi piace. — ＿!",
+          "en": "I don't like it. — Me neither!",
+          "options": ["Anch'io", "Neanche me", "Neanch'io", "Anche me"],
+          "answer": "Neanch'io",
+          "why": "Agreeing with a negative."
+        },
+        {
+          "q": "Parlo di ＿.",
+          "en": "I'm talking about you (tu).",
+          "options": ["ti", "tu", "tuo", "te"],
+          "answer": "te",
+          "why": "di + te."
+        },
+        {
+          "q": "Chi? ＿?",
+          "en": "Who? Me?",
+          "options": ["Io", "Me", "Mi", "Mio"],
+          "answer": "Io",
+          "why": "Standalone subject: io."
+        }
+      ]
+    },
+    {
+      "id": "verb-prepositions",
+      "title": "Verb + a or di + infinitive",
+      "particle": "cominciare a・cercare di・finire di",
+      "summary": "Some verbs take a before an infinitive, some di, some nothing. (about A2–B1)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "No preposition: modal verbs, piacere, preferire, sapere. With <b>a</b>: cominciare a, imparare a, aiutare a, riuscire a, andare a. With <b>di</b>: cercare di (try), finire di, smettere di, decidere di, sperare di, credere di.",
+          "examples": [
+            [
+              "Ho cominciato {a} studiare.",
+              "I-have · begun · to · study",
+              "I've started studying."
+            ],
+            [
+              "Cerco {di} capire.",
+              "I-try · of · understand",
+              "I'm trying to understand."
+            ],
+            [
+              "Ha smesso {di} fumare.",
+              "has · stopped · of · smoke",
+              "He's stopped smoking."
+            ]
+          ]
+        },
+        {
+          "h": "Learn them in pairs",
+          "p": "There's no general rule; learn each verb with its preposition. Movement verbs take a: vado a dormire.",
+          "examples": [
+            ["Vado {a} dormire.", "I-go · to · sleep", "I'm going to bed."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ho deciso ＿ partire.",
+          "en": "I decided to leave.",
+          "options": ["di", "a", "—", "per"],
+          "answer": "di",
+          "why": "decidere di."
+        },
+        {
+          "q": "Impara ＿ guidare.",
+          "en": "He's learning to drive.",
+          "options": ["di", "a", "—", "da"],
+          "answer": "a",
+          "why": "imparare a."
+        },
+        {
+          "q": "Voglio ＿ uscire.",
+          "en": "I want to go out.",
+          "options": ["di", "a", "— (nothing)", "per"],
+          "answer": "— (nothing)",
+          "why": "Modal: no preposition."
+        },
+        {
+          "q": "Spero ＿ vederti.",
+          "en": "I hope to see you.",
+          "options": ["a", "—", "che", "di"],
+          "answer": "di",
+          "why": "sperare di."
+        },
+        {
+          "q": "Mi aiuti ＿ portare la valigia?",
+          "en": "Will you help me carry the suitcase?",
+          "options": ["a", "di", "—", "per"],
+          "answer": "a",
+          "why": "aiutare a."
+        }
+      ]
+    },
+    {
+      "id": "si-impersonale",
+      "title": "si impersonale — one, you, people",
+      "particle": "si",
+      "summary": "si + third-person verb: what people in general do. (about A2–B1)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>si</b> + the third person means one, you, people: Come si dice? (How do you say?) In Italia si mangia bene.",
+          "examples": [
+            [
+              "Come {si dice} “thank you”?",
+              "how · one · says · thank · you",
+              "How do you say “thank you”?"
+            ],
+            [
+              "Qui {si parla} italiano.",
+              "here · one · speaks · Italian",
+              "Italian is spoken here."
+            ]
+          ]
+        },
+        {
+          "h": "Plural nouns",
+          "p": "With a plural object, the verb is plural (the si passivante): Si vendono case. With a reflexive verb, si becomes ci si: Ci si alza presto.",
+          "examples": [
+            [
+              "{Si vendono} biciclette.",
+              "one · sell · bicycles",
+              "Bicycles for sale."
+            ],
+            ["{Ci si diverte}.", "one · oneself · enjoys", "People have fun."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Come ＿ scrive?",
+          "en": "How is it spelled?",
+          "options": ["si", "ci", "lo", "se"],
+          "answer": "si",
+          "why": "Impersonal si."
+        },
+        {
+          "q": "Qui si ＿ molte lingue.",
+          "en": "Many languages are spoken here.",
+          "options": ["parla", "parlano", "parlate", "parli"],
+          "answer": "parlano",
+          "why": "Plural noun: plural verb."
+        },
+        {
+          "q": "In Italia ＿ cena tardi.",
+          "en": "In Italy people eat dinner late.",
+          "options": ["ci", "lo", "si", "gli"],
+          "answer": "si",
+          "why": "Impersonal."
+        },
+        {
+          "q": "Reflexive + impersonal",
+          "en": "",
+          "options": ["si si", "si ci", "se si", "ci si"],
+          "answer": "ci si",
+          "why": "Ci si sveglia presto."
+        },
+        {
+          "q": "Non si fuma means…",
+          "en": "",
+          "options": [
+            "No smoking.",
+            "He doesn't smoke.",
+            "We don't smoke, sadly.",
+            "Smoke it."
+          ],
+          "answer": "No smoking.",
+          "why": "A rule."
+        }
+      ]
+    },
+    {
+      "id": "adverbs-mente",
+      "title": "Adverbs in -mente",
+      "particle": "-mente",
+      "summary": "Add -mente to the feminine adjective; -le and -re drop their e. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Take the feminine singular and add <b>-mente</b>: lento → lenta → <b>lentamente</b>, sicuro → sicuramente. Adjectives in -e just add it: veloce → velocemente.",
+          "examples": [
+            [
+              "Parla {lentamente}, per favore.",
+              "speak · slowly · please",
+              "Speak slowly, please."
+            ],
+            [
+              "{Sicuramente} verrà.",
+              "surely · he-will-come",
+              "He'll definitely come."
+            ]
+          ]
+        },
+        {
+          "h": "-le and -re",
+          "p": "Adjectives in <b>-le</b> and <b>-re</b> drop the final e: facile → <b>facilmente</b>, regolare → regolarmente. bene and male are irregular.",
+          "examples": [
+            [
+              "L'ho fatto {facilmente}.",
+              "it-I-have · done · easily",
+              "I did it easily."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "vero →",
+          "en": "",
+          "options": ["veramente", "veromente", "verimente", "verammente"],
+          "answer": "veramente",
+          "why": "Feminine vera + mente."
+        },
+        {
+          "q": "gentile →",
+          "en": "",
+          "options": ["gentilemente", "gentilmente", "gentilamente", "gentilmento"],
+          "answer": "gentilmente",
+          "why": "-le drops e."
+        },
+        {
+          "q": "Guida ＿.",
+          "en": "He drives carefully.",
+          "options": ["attentomente", "attentemente", "attentamente", "attentamento"],
+          "answer": "attentamente",
+          "why": "attenta + mente."
+        },
+        {
+          "q": "particolare →",
+          "en": "",
+          "options": [
+            "particolaremente",
+            "particolarimente",
+            "particolarmento",
+            "particolarmente"
+          ],
+          "answer": "particolarmente",
+          "why": "-re drops e."
+        },
+        {
+          "q": "Adverb of buono",
+          "en": "",
+          "options": ["bene", "buonamente", "buonmente", "buono"],
+          "answer": "bene",
+          "why": "Irregular."
+        }
+      ]
+    },
+    {
+      "id": "esclamazioni",
+      "title": "Che bello! Quanto costa! — exclamations",
+      "particle": "che・quanto・come",
+      "summary": "che + adjective or noun, quanto/come + verb: what a…!, how…! (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>Che</b> + adjective or noun: Che bello! Che peccato! (What a shame!). <b>Che</b> + noun + adjective: Che bella casa!",
+          "examples": [
+            ["{Che} bello!", "what · beautiful", "How lovely!"],
+            ["{Che} peccato!", "what · sin", "What a pity!"]
+          ]
+        },
+        {
+          "h": "quanto and come",
+          "p": "<b>Quanto</b> and <b>come</b> + verb: Quanto sei alto! Come parla bene! quanto agrees with a noun: Quanta gente!",
+          "examples": [
+            [
+              "{Quanto} sei cresciuto!",
+              "how-much · you-are · grown",
+              "How you've grown!"
+            ],
+            ["{Quanta} gente!", "how-much · people", "What a crowd!"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ caldo!",
+          "en": "It's so hot!",
+          "options": ["Che", "Quanto'", "Come", "Quale"],
+          "answer": "Che",
+          "why": "Che + noun."
+        },
+        {
+          "q": "＿ peccato!",
+          "en": "What a shame!",
+          "options": ["Quale", "Che", "Quanto", "Come"],
+          "answer": "Che",
+          "why": "Set phrase."
+        },
+        {
+          "q": "＿ gente!",
+          "en": "So many people!",
+          "options": ["Quanto", "Quanti", "Quanta", "Che tanta"],
+          "answer": "Quanta",
+          "why": "quanto agrees with gente (f)."
+        },
+        {
+          "q": "＿ parla bene!",
+          "en": "How well he speaks!",
+          "options": ["Che", "Quale", "Quanta", "Come"],
+          "answer": "Come",
+          "why": "come + verb."
+        },
+        {
+          "q": "Che bella giornata! means…",
+          "en": "",
+          "options": [
+            "What a lovely day!",
+            "Which day is nice?",
+            "The day is ending.",
+            "What day is it?"
+          ],
+          "answer": "What a lovely day!",
+          "why": "che + noun + adjective."
+        }
+      ]
     },
     {
       "id": "imperativo",
-      "title": "The imperative, with pronouns attached (about A2–B1)",
-      "level": "beginner-intermediate"
+      "title": "The imperative, with pronouns attached",
+      "particle": "parla!・parlate!・parli!",
+      "summary": "tu, noi, voi commands; Lei uses the subjunctive form. Pronouns attach. (about A2–B1)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "tu: -are verbs end in <b>-a</b> (Parla!), -ere/-ire in <b>-i</b> (Prendi! Dormi!). noi and voi are like the present: Andiamo! Mangiate! Formal Lei uses the subjunctive: Prenda! Scusi!",
+          "examples": [
+            ["{Guarda}!", "look", "Look!"],
+            ["{Venite} qui!", "come(voi) · here", "Come here, all of you!"],
+            ["{Scusi}, signora.", "excuse(Lei) · madam", "Excuse me, madam."]
+          ]
+        },
+        {
+          "h": "Negative and pronouns",
+          "p": "Negative tu: <b>non</b> + infinitive: Non parlare! Pronouns attach to tu, noi, voi forms: Dimmi! Fallo! Mangiamolo! But go before the Lei form: Mi dica.",
+          "examples": [
+            ["{Non toccare}!", "not · touch", "Don't touch!"],
+            ["{Dimmi} tutto.", "tell-me · everything", "Tell me everything."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ la porta!",
+          "en": "Close the door! (tu, chiudere)",
+          "options": ["Chiudi", "Chiuda", "Chiude", "Chiudere"],
+          "answer": "Chiudi",
+          "why": "-ere: -i."
+        },
+        {
+          "q": "Don't worry! (tu)",
+          "en": "",
+          "options": [
+            "Non ti preoccupi!",
+            "Non preoccuparti!",
+            "Non preoccupati!",
+            "Preoccupati non!"
+          ],
+          "answer": "Non preoccuparti!",
+          "why": "Negative tu: non + infinitive."
+        },
+        {
+          "q": "＿ pure!",
+          "en": "Go ahead and come in! (Lei, entrare)",
+          "options": ["Entra", "Entrate", "Entri", "Entrare"],
+          "answer": "Entri",
+          "why": "Lei: subjunctive form."
+        },
+        {
+          "q": "Tell me! (tu, dire)",
+          "en": "",
+          "options": ["Dimi!", "Dici-mi!", "Mi di'!", "Dimmi!"],
+          "answer": "Dimmi!",
+          "why": "di' + mi doubles the m."
+        },
+        {
+          "q": "＿!",
+          "en": "Let's go!",
+          "options": ["Andiamo", "Andate", "Vada", "Andare"],
+          "answer": "Andiamo",
+          "why": "noi form."
+        }
+      ]
     },
     {
       "id": "ci-ne",
-      "title": "ci and ne (about A2–B1)",
-      "level": "beginner-intermediate"
+      "title": "ci and ne",
+      "particle": "ci・ne",
+      "summary": "ci replaces a place or a + thing; ne replaces di + thing or a quantity. (about A2–B1)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ci</b> replaces a place (there) or a + thing: Vai a Roma? — Sì, ci vado. Pensi al lavoro? — Ci penso sempre.",
+          "examples": [
+            [
+              "Sei mai stato a Venezia? — Sì, {ci} sono stato.",
+              "are · ever · been · to · Venice · yes · there · I-am · been",
+              "Have you been to Venice? — Yes, I've been there."
+            ],
+            [
+              "{Ci} penso io.",
+              "about-it · think · I",
+              "I'll take care of it."
+            ]
+          ]
+        },
+        {
+          "h": "ne",
+          "p": "<b>ne</b> replaces di + thing (of it, about it) or a quantity: Quanti anni hai? — Ne ho venti. In the passato prossimo with a quantity, the participle agrees: Ne ho mangiate tre.",
+          "examples": [
+            [
+              "Quante mele vuoi? — {Ne} voglio due.",
+              "how-many · apples · you-want · of-them · I-want · two",
+              "How many apples do you want? — Two."
+            ],
+            [
+              "Che {ne} pensi?",
+              "what · of-it · you-think",
+              "What do you think about it?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Vai al mercato? — Sì, ＿ vado.",
+          "en": "Are you going to the market? — Yes.",
+          "options": ["ci", "ne", "lo", "gli"],
+          "answer": "ci",
+          "why": "Place: ci."
+        },
+        {
+          "q": "Hai fratelli? — Sì, ＿ ho tre.",
+          "en": "Do you have brothers? — Yes, three.",
+          "options": ["ci", "ne", "li", "gli"],
+          "answer": "ne",
+          "why": "Quantity: ne."
+        },
+        {
+          "q": "Parli di politica? — No, non ＿ parlo.",
+          "en": "Do you talk about politics? — No.",
+          "options": ["ci", "la", "ne", "le"],
+          "answer": "ne",
+          "why": "di + thing: ne."
+        },
+        {
+          "q": "Credi ai fantasmi? — No, non ＿ credo.",
+          "en": "Do you believe in ghosts? — No.",
+          "options": ["ne", "li", "gli", "ci"],
+          "answer": "ci",
+          "why": "a + thing: ci."
+        },
+        {
+          "q": "Ne ho mangiate tre (mele) — why -e?",
+          "en": "",
+          "options": [
+            "The participle agrees with the quantity's noun",
+            "It's a typo",
+            "Because ho is feminine",
+            "Because tre is feminine"
+          ],
+          "answer": "The participle agrees with the quantity's noun",
+          "why": "Agreement with ne."
+        }
+      ]
     },
     {
       "id": "condizionale",
-      "title": "The condizionale presente (about A2–B1)",
-      "level": "beginner-intermediate"
+      "title": "The condizionale presente",
+      "particle": "-rei・-resti・-rebbe",
+      "summary": "Future stem + -ei, -esti, -ebbe…: would. For politeness, wishes and advice. (about A2–B1)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Use the future stem (parler-, prender-, sar-, avr-, andr-…) + <b>-ei, -esti, -ebbe, -emmo, -este, -ebbero</b>: parlerei, prenderesti, sarebbe.",
+          "examples": [
+            [
+              "{Vorrei} un bicchiere d'acqua.",
+              "I'd-like · a · glass · of-water",
+              "I'd like a glass of water."
+            ],
+            [
+              "{Potresti} aiutarmi?",
+              "could-you · help-me",
+              "Could you help me?"
+            ]
+          ]
+        },
+        {
+          "h": "Advice and reported news",
+          "p": "<b>Dovresti</b> (you should) gives advice. News uses it for unconfirmed reports: Il ministro sarebbe malato.",
+          "examples": [
+            ["{Dovresti} riposare.", "you-should · rest", "You should rest."],
+            [
+              "{Mi piacerebbe} viaggiare.",
+              "to-me · would-please · travel",
+              "I'd love to travel."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ un caffè, per favore.",
+          "en": "I'd like a coffee, please.",
+          "options": ["Vorrei", "Voglio", "Vorrò", "Volevo"],
+          "answer": "Vorrei",
+          "why": "Polite: vorrei."
+        },
+        {
+          "q": "Mi ＿ aiutare?",
+          "en": "Could you help me? (Lei)",
+          "options": ["potresti", "potrebbe", "può", "potrà"],
+          "answer": "potrebbe",
+          "why": "Lei: -ebbe."
+        },
+        {
+          "q": "Tu ＿ studiare di più.",
+          "en": "You should study more.",
+          "options": ["dovrai", "devi sempre", "dovresti", "dovevi"],
+          "answer": "dovresti",
+          "why": "Advice: dovresti."
+        },
+        {
+          "q": "essere → lui (condizionale)",
+          "en": "",
+          "options": ["esserebbe", "sarà", "sarebbero", "sarebbe"],
+          "answer": "sarebbe",
+          "why": "sar- + -ebbe."
+        },
+        {
+          "q": "Mi piacerebbe means…",
+          "en": "",
+          "options": ["I'd like / I'd love", "I liked", "I'll like", "I like"],
+          "answer": "I'd like / I'd love",
+          "why": "Conditional of piacere."
+        }
+      ]
     },
     {
-      "id": "combined-pronouns",
-      "title": "Combined pronouns: glielo, me lo (about B1)",
-      "level": "intermediate"
+      "id": "prima-dopo",
+      "title": "prima di and dopo + infinitive",
+      "particle": "prima di・dopo・dopo aver",
+      "summary": "prima di + infinitive (before doing); dopo + past infinitive (after doing). (about A2–B1)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>prima di</b> + infinitive means before doing: prima di uscire. With a noun: prima della cena.",
+          "examples": [
+            [
+              "Lavati le mani {prima di} mangiare.",
+              "wash-yourself · the · hands · before · of · eat",
+              "Wash your hands before eating."
+            ],
+            [
+              "{Prima della} partenza",
+              "before · of-the · departure",
+              "before leaving"
+            ]
+          ]
+        },
+        {
+          "h": "dopo + past infinitive",
+          "p": "<b>dopo</b> + the past infinitive (avere/essere + participle) means after doing: dopo aver mangiato, dopo essere arrivato. avere often drops its e: aver.",
+          "examples": [
+            [
+              "{Dopo aver} mangiato, siamo usciti.",
+              "after · have · eaten · we-are · gone-out",
+              "After eating, we went out."
+            ],
+            [
+              "{Dopo essere} arrivata, ha chiamato.",
+              "after · be · arrived · has · called",
+              "After arriving, she called."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ partire, chiudi la finestra.",
+          "en": "Before leaving, close the window.",
+          "options": ["Prima di", "Dopo", "Prima", "Prima che"],
+          "answer": "Prima di",
+          "why": "prima di + infinitive."
+        },
+        {
+          "q": "Dopo ＿ cenato, guardiamo un film.",
+          "en": "After having dinner, we watch a film.",
+          "options": ["avere fatto", "aver", "essere", "—"],
+          "answer": "aver",
+          "why": "dopo aver + participle."
+        },
+        {
+          "q": "Dopo essere ＿, è andata a letto.",
+          "en": "After coming home, she went to bed.",
+          "options": ["tornato", "tornare", "tornata", "tornando"],
+          "answer": "tornata",
+          "why": "essere: agreement."
+        },
+        {
+          "q": "prima ＿ lezione",
+          "en": "before the lesson",
+          "options": ["di", "dalla", "alla", "della"],
+          "answer": "della",
+          "why": "prima di + article."
+        },
+        {
+          "q": "After reading the letter",
+          "en": "",
+          "options": [
+            "dopo aver letto la lettera",
+            "dopo leggere la lettera",
+            "dopo letto la lettera",
+            "dopo di leggere"
+          ],
+          "answer": "dopo aver letto la lettera",
+          "why": "Past infinitive."
+        }
+      ]
     },
     {
       "id": "relatives",
-      "title": "che, cui, il quale (about B1)",
-      "level": "intermediate"
+      "title": "che, cui, il quale",
+      "particle": "che・cui・il quale",
+      "summary": "che for subject and object; cui after prepositions; il quale in formal writing. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>che</b> is the relative pronoun for both subject and direct object, people and things: il ragazzo che parla, il libro che leggo. It never takes a preposition.",
+          "examples": [
+            [
+              "La donna {che} canta è mia zia.",
+              "the · woman · who · sings · is · my · aunt",
+              "The woman singing is my aunt."
+            ],
+            [
+              "Il film {che} ho visto era bello.",
+              "the · film · that · I-have · seen · was · nice",
+              "The film I saw was good."
+            ]
+          ]
+        },
+        {
+          "h": "cui and il quale",
+          "p": "After a preposition, use <b>cui</b>: la persona con cui lavoro, il motivo per cui. <b>il cui</b> means whose: l'autore il cui libro… <b>il quale</b> (la quale, i quali) replaces che or cui formally.",
+          "examples": [
+            [
+              "la città {in cui} sono nato",
+              "the · city · in · which · I-am · born",
+              "the city I was born in"
+            ],
+            [
+              "l'amico {di cui} ti ho parlato",
+              "the · friend · of · whom · to-you · I-have · spoken",
+              "the friend I told you about"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "la ragazza ＿ ho conosciuto",
+          "en": "the girl I met",
+          "options": ["che", "cui", "quale", "chi"],
+          "answer": "che",
+          "why": "Direct object: che."
+        },
+        {
+          "q": "il motivo per ＿ sono qui",
+          "en": "the reason I'm here",
+          "options": ["che", "cui", "quale", "il che"],
+          "answer": "cui",
+          "why": "After a preposition: cui."
+        },
+        {
+          "q": "Lo scrittore, ＿ libri sono famosi",
+          "en": "The writer, whose books are famous",
+          "options": ["cui", "che i", "i cui", "dei quali i"],
+          "answer": "i cui",
+          "why": "whose + plural: i cui."
+        },
+        {
+          "q": "la casa ＿ abito",
+          "en": "the house I live in",
+          "options": ["che", "dove che", "a cui", "in cui"],
+          "answer": "in cui",
+          "why": "in + cui."
+        },
+        {
+          "q": "il quale is…",
+          "en": "",
+          "options": [
+            "a formal alternative to che/cui",
+            "spoken slang",
+            "a question word",
+            "always wrong"
+          ],
+          "answer": "a formal alternative to che/cui",
+          "why": "Formal register."
+        }
+      ]
     },
     {
       "id": "trapassato",
-      "title": "The trapassato prossimo (about B1)",
-      "level": "intermediate"
+      "title": "The trapassato prossimo",
+      "particle": "avevo/ero + participio",
+      "summary": "The past before the past: imperfetto of avere or essere + participle. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "The trapassato prossimo is the imperfetto of avere or essere + participle: <b>avevo finito</b>, <b>era partita</b>. It marks something earlier than another past event.",
+          "examples": [
+            [
+              "Quando sono arrivato, il film {era} già {cominciato}.",
+              "when · I-am · arrived · the · film · was · already · begun",
+              "When I arrived, the film had already started."
+            ],
+            [
+              "{Avevo} già {mangiato}.",
+              "I-had · already · eaten",
+              "I had already eaten."
+            ]
+          ]
+        },
+        {
+          "h": "Agreement as usual",
+          "p": "Same auxiliary choice and agreement rules as the passato prossimo.",
+          "examples": [
+            [
+              "Le ragazze {erano uscite}.",
+              "the · girls · were · gone-out",
+              "The girls had gone out."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Non ＿ mai visto il mare prima.",
+          "en": "I had never seen the sea before.",
+          "options": ["avevo", "ho", "ero", "avrei"],
+          "answer": "avevo",
+          "why": "Imperfetto of avere."
+        },
+        {
+          "q": "Lei ＿ già partita.",
+          "en": "She had already left.",
+          "options": ["aveva", "era", "è", "sarà"],
+          "answer": "era",
+          "why": "partire takes essere."
+        },
+        {
+          "q": "Mi ha detto che ＿ perso le chiavi.",
+          "en": "He told me he'd lost his keys.",
+          "options": ["ha", "avrà", "aveva", "avrebbe"],
+          "answer": "aveva",
+          "why": "Trapassato."
+        },
+        {
+          "q": "The trapassato marks…",
+          "en": "",
+          "options": ["the future", "a habit now", "a wish", "an earlier past"],
+          "answer": "an earlier past",
+          "why": "Past before past."
+        },
+        {
+          "q": "Noi ＿ finito.",
+          "en": "We had finished.",
+          "options": ["avevamo", "eravamo", "abbiamo", "avremo"],
+          "answer": "avevamo",
+          "why": "avere: avevamo."
+        }
+      ]
+    },
+    {
+      "id": "futuro-anteriore",
+      "title": "The futuro anteriore",
+      "particle": "avrò/sarò + participio",
+      "summary": "will have done, and guesses about the past. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "The futuro anteriore is the future of avere or essere + participle: <b>avrò finito</b>, <b>sarà arrivato</b>. After quando and appena about the future, it marks what will be done first.",
+          "examples": [
+            [
+              "Quando {avrò finito}, ti chiamo.",
+              "when · I-will-have · finished · you · I-call",
+              "When I've finished, I'll call you."
+            ],
+            [
+              "{Appena sarà arrivata}, partiremo.",
+              "as-soon-as · she-will-be · arrived · we-will-leave",
+              "As soon as she arrives, we'll leave."
+            ]
+          ]
+        },
+        {
+          "h": "Guessing about the past",
+          "p": "It also guesses about the past: Sarà uscito (he must have gone out).",
+          "examples": [
+            [
+              "Non risponde. {Sarà} già {uscito}.",
+              "not · answers · he-will-be · already · gone-out",
+              "He's not answering. He must have gone out."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Quando ＿ finito, usciremo.",
+          "en": "When we've finished, we'll go out.",
+          "options": ["avremo", "abbiamo", "avevamo", "avremmo"],
+          "answer": "avremo",
+          "why": "Futuro anteriore."
+        },
+        {
+          "q": "Dov'è Marco? ＿ andato a casa.",
+          "en": "Where's Marco? He'll have gone home.",
+          "options": ["Avrà", "Sarà", "È stato", "Sarebbe"],
+          "answer": "Sarà",
+          "why": "Guess about the past."
+        },
+        {
+          "q": "Appena ＿ arrivati, ti scriviamo.",
+          "en": "As soon as we've arrived, we'll write.",
+          "options": ["avremo", "siamo", "saremo", "saremmo"],
+          "answer": "saremo",
+          "why": "arrivare takes essere."
+        },
+        {
+          "q": "Avrà avuto fame means…",
+          "en": "",
+          "options": [
+            "He'll be hungry.",
+            "He was hungry yesterday.",
+            "He would be hungry.",
+            "He must have been hungry."
+          ],
+          "answer": "He must have been hungry.",
+          "why": "Conjecture."
+        },
+        {
+          "q": "The futuro anteriore after quando marks…",
+          "en": "",
+          "options": [
+            "what will be done first",
+            "a past habit",
+            "a polite request",
+            "an order"
+          ],
+          "answer": "what will be done first",
+          "why": "Future completed."
+        }
+      ]
+    },
+    {
+      "id": "futuro-congetturale",
+      "title": "The future for guessing",
+      "particle": "sarà・avrà",
+      "summary": "The simple future can guess about the present: Sarà stanco (he's probably tired). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Italian uses the <b>futuro semplice</b> to guess about now: Che ore sono? — Saranno le tre (it must be about three).",
+          "examples": [
+            [
+              "Che ore sono? — {Saranno} le tre.",
+              "what · hours · are · they-will-be · the · three",
+              "What time is it? — It must be about three."
+            ],
+            [
+              "Quanti anni ha? — {Avrà} trent'anni.",
+              "how-many · years · has · will-have · thirty-years",
+              "How old is he? — He must be about thirty."
+            ]
+          ]
+        },
+        {
+          "h": "Compared",
+          "p": "Present guess: futuro semplice. Past guess: futuro anteriore. Both often come with forse or probabilmente in English translation.",
+          "examples": [
+            [
+              "{Sarà} a casa.",
+              "he-will-be · at · home",
+              "He's probably at home."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Dov'è Luisa? — ＿ in ufficio.",
+          "en": "Where's Luisa? — She's probably at the office.",
+          "options": ["Sarà", "È stata", "Era", "Sia"],
+          "answer": "Sarà",
+          "why": "Present guess: future."
+        },
+        {
+          "q": "Chi bussa? — ＿ il postino.",
+          "en": "Who's knocking? — It must be the postman.",
+          "options": ["È", "Sarà", "Era", "Fosse"],
+          "answer": "Sarà",
+          "why": "Guess."
+        },
+        {
+          "q": "Avrà quarant'anni means…",
+          "en": "",
+          "options": [
+            "He'll be forty.",
+            "He was forty.",
+            "He must be about forty.",
+            "He'd be forty."
+          ],
+          "answer": "He must be about forty.",
+          "why": "Conjecture."
+        },
+        {
+          "q": "Past guess uses…",
+          "en": "",
+          "options": ["futuro semplice", "imperfetto", "presente", "futuro anteriore"],
+          "answer": "futuro anteriore",
+          "why": "Sarà uscito."
+        },
+        {
+          "q": "Saranno le dieci means…",
+          "en": "",
+          "options": [
+            "It must be about ten.",
+            "It'll be ten soon.",
+            "It was ten.",
+            "Wait until ten."
+          ],
+          "answer": "It must be about ten.",
+          "why": "Guess about now."
+        }
+      ]
     },
     {
       "id": "congiuntivo",
-      "title": "The congiuntivo presente: penso che, voglio che (about B1)",
-      "level": "intermediate"
+      "title": "The congiuntivo presente: penso che, voglio che",
+      "particle": "che + congiuntivo",
+      "summary": "After opinions, wishes, doubts and feelings, the verb after che is in the subjunctive. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "The congiuntivo follows <b>penso che</b>, credo che, voglio che, spero che, è importante che, mi sembra che. -are verbs: -i, -i, -i, -iamo, -iate, -ino (che io parli). -ere/-ire: -a, -a, -a, -iamo, -iate, -ano (che io prenda).",
+          "examples": [
+            [
+              "Penso che {sia} vero.",
+              "I-think · that · be(subj) · true",
+              "I think it's true."
+            ],
+            [
+              "Voglio che tu {venga}.",
+              "I-want · that · you · come(subj)",
+              "I want you to come."
+            ],
+            [
+              "Spero che {stiate} bene.",
+              "I-hope · that · you-all-be(subj) · well",
+              "I hope you're all well."
+            ]
+          ]
+        },
+        {
+          "h": "Irregulars and same subject",
+          "p": "essere: sia; avere: abbia; andare: vada; fare: faccia; venire: venga; potere: possa. With the same subject, use di + infinitive: Penso di partire (not penso che io parta).",
+          "examples": [
+            [
+              "Penso {di} partire domani.",
+              "I-think · of · leave · tomorrow",
+              "I'm thinking of leaving tomorrow."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Credo che lui ＿ ragione.",
+          "en": "I think he's right.",
+          "options": ["abbia", "ha", "avrà", "avesse"],
+          "answer": "abbia",
+          "why": "avere → abbia."
+        },
+        {
+          "q": "È importante che voi ＿.",
+          "en": "It's important that you study.",
+          "options": ["studiamo", "studiate", "studiaste", "studierete"],
+          "answer": "studiate",
+          "why": "-are: -iate."
+        },
+        {
+          "q": "Voglio che tu ＿ la verità.",
+          "en": "I want you to tell the truth.",
+          "options": ["dici", "dirai", "dica", "diceva"],
+          "answer": "dica",
+          "why": "dire → dica."
+        },
+        {
+          "q": "Same subject: I think I'm right.",
+          "en": "",
+          "options": [
+            "Penso che io abbia ragione.",
+            "Penso che ho ragione.",
+            "Penso avere ragione.",
+            "Penso di avere ragione."
+          ],
+          "answer": "Penso di avere ragione.",
+          "why": "di + infinitive."
+        },
+        {
+          "q": "Spero che ＿ bel tempo.",
+          "en": "I hope the weather's nice.",
+          "options": ["faccia", "fa", "farà", "fece"],
+          "answer": "faccia",
+          "why": "fare → faccia."
+        }
+      ]
+    },
+    {
+      "id": "congiuntivo-passato",
+      "title": "The congiuntivo passato",
+      "particle": "che abbia fatto・che sia andato",
+      "summary": "Subjunctive of avere/essere + participle, for a past event after a present main verb. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "The congiuntivo passato is <b>abbia</b> or <b>sia</b> + participle. Use it after a present-tense trigger when the event is past: Penso che sia partito.",
+          "examples": [
+            [
+              "Credo che {abbia} già {mangiato}.",
+              "I-believe · that · have(subj) · already · eaten",
+              "I think he's already eaten."
+            ],
+            [
+              "Spero che {siate arrivati} bene.",
+              "I-hope · that · you-be(subj) · arrived · well",
+              "I hope you got there safely."
+            ]
+          ]
+        },
+        {
+          "h": "Agreement",
+          "p": "With essere, the participle agrees as usual: Penso che Maria sia uscita.",
+          "examples": [
+            [
+              "Mi sembra che {sia uscita}.",
+              "to-me · seems · that · be(subj) · gone-out",
+              "It seems she's gone out."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Penso che lui ＿ il treno.",
+          "en": "I think he's missed the train.",
+          "options": ["abbia perso", "ha perso", "perda", "avesse perso"],
+          "answer": "abbia perso",
+          "why": "Present trigger, past event."
+        },
+        {
+          "q": "Speriamo che ＿ andato tutto bene.",
+          "en": "Let's hope it all went well.",
+          "options": ["abbia", "sia", "è", "fosse"],
+          "answer": "sia",
+          "why": "andare takes essere."
+        },
+        {
+          "q": "Non credo che loro ＿ capito.",
+          "en": "I don't think they understood.",
+          "options": ["hanno", "abbia", "abbiano", "avessero"],
+          "answer": "abbiano",
+          "why": "Plural: abbiano."
+        },
+        {
+          "q": "Mi dispiace che tu ＿ male.",
+          "en": "I'm sorry you've been ill.",
+          "options": ["sei stato", "fossi", "abbia stato", "sia stato"],
+          "answer": "sia stato",
+          "why": "essere → sia stato."
+        },
+        {
+          "q": "The congiuntivo passato is…",
+          "en": "",
+          "options": [
+            "abbia/sia + participle",
+            "avessi + participle",
+            "the simple subjunctive",
+            "the past conditional"
+          ],
+          "answer": "abbia/sia + participle",
+          "why": "Formation."
+        }
+      ]
     },
     {
       "id": "periodo-ipotetico",
-      "title": "se clauses: real, possible and unreal (about B1–B2)",
-      "level": "intermediate"
+      "title": "se clauses: real, possible and unreal",
+      "particle": "se",
+      "summary": "Real: se + present. Possible: se + congiuntivo imperfetto, condizionale. Unreal past: se + trapassato congiuntivo, condizionale passato. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>Real</b>: se + present, then present, future or imperative: Se piove, resto a casa. <b>Possible/imaginary</b>: se + congiuntivo imperfetto, then condizionale: Se avessi tempo, verrei.",
+          "examples": [
+            [
+              "{Se} piove, {resto} a casa.",
+              "if · rains · I-stay · at · home",
+              "If it rains, I'll stay home."
+            ],
+            [
+              "{Se avessi} soldi, {comprerei} una casa.",
+              "if · I-had(subj) · money · I'd-buy · a · house",
+              "If I had money, I'd buy a house."
+            ]
+          ]
+        },
+        {
+          "h": "Unreal past",
+          "p": "For the past that didn't happen: se + congiuntivo trapassato, then condizionale passato: Se l'avessi saputo, sarei venuto. Never a condizionale after se.",
+          "examples": [
+            [
+              "{Se l'avessi saputo}, {sarei venuto}.",
+              "if · it-I-had(subj) · known · I'd-be · come",
+              "If I'd known, I'd have come."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Se ＿ ricco, viaggerei.",
+          "en": "If I were rich, I'd travel.",
+          "options": ["fossi", "sarei", "ero", "sono"],
+          "answer": "fossi",
+          "why": "se + congiuntivo imperfetto."
+        },
+        {
+          "q": "Se hai fame, ＿!",
+          "en": "If you're hungry, eat!",
+          "options": ["mangeresti", "mangia", "mangiassi", "mangiato"],
+          "answer": "mangia",
+          "why": "Real: imperative."
+        },
+        {
+          "q": "Se avessi studiato, ＿ l'esame.",
+          "en": "If I'd studied, I'd have passed the exam.",
+          "options": ["passerei", "ho passato", "avrei passato", "avessi passato"],
+          "answer": "avrei passato",
+          "why": "Unreal past."
+        },
+        {
+          "q": "Which is wrong?",
+          "en": "",
+          "options": [
+            "Se avessi tempo, verrei.",
+            "Se ho tempo, vengo.",
+            "Se avessi avuto tempo, sarei venuto.",
+            "Se avrei tempo, verrei."
+          ],
+          "answer": "Se avrei tempo, verrei.",
+          "why": "No condizionale after se."
+        },
+        {
+          "q": "Se fossi in te, ＿.",
+          "en": "If I were you, I'd say no.",
+          "options": ["direi di no", "dico di no", "dicessi di no", "dirò di no"],
+          "answer": "direi di no",
+          "why": "Condizionale."
+        }
+      ]
     },
     {
       "id": "congiuntivo-imperfetto",
-      "title": "The congiuntivo imperfetto (about B1–B2)",
-      "level": "intermediate"
+      "title": "The congiuntivo imperfetto",
+      "particle": "-assi・-essi・-issi",
+      "summary": "After a past or conditional trigger, the subjunctive moves to the imperfetto. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Drop -re and add <b>-ssi, -ssi, -sse, -ssimo, -ste, -ssero</b>: parlassi, prendessi, dormissi. essere: fossi; dare: dessi; stare: stessi; fare: facessi; dire: dicessi.",
+          "examples": [
+            [
+              "Pensavo che {fosse} vero.",
+              "I-thought · that · was(subj) · true",
+              "I thought it was true."
+            ],
+            [
+              "Vorrei che tu {venissi}.",
+              "I'd-like · that · you · came(subj)",
+              "I'd like you to come."
+            ]
+          ]
+        },
+        {
+          "h": "Wishes with magari and se",
+          "p": "<b>Magari</b> + congiuntivo imperfetto is a wish: Magari fosse vero! It also completes se clauses.",
+          "examples": [
+            [
+              "{Magari} {avessi} più tempo!",
+              "if-only · I-had(subj) · more · time",
+              "If only I had more time!"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Volevo che lui ＿.",
+          "en": "I wanted him to stay.",
+          "options": ["restasse", "resti", "restava", "resterebbe"],
+          "answer": "restasse",
+          "why": "Past trigger: imperfetto."
+        },
+        {
+          "q": "Magari ＿ estate!",
+          "en": "If only it were summer!",
+          "options": ["sia", "fosse", "era", "sarebbe"],
+          "answer": "fosse",
+          "why": "essere → fosse."
+        },
+        {
+          "q": "Credevo che voi ＿ italiani.",
+          "en": "I thought you were Italian.",
+          "options": ["siate", "eravate", "foste", "fossimo"],
+          "answer": "foste",
+          "why": "voi: foste."
+        },
+        {
+          "q": "Vorrei che tu mi ＿.",
+          "en": "I'd like you to tell me.",
+          "options": ["dica", "diresti", "dicevi", "dicessi"],
+          "answer": "dicessi",
+          "why": "dire → dicessi."
+        },
+        {
+          "q": "fare → loro (congiuntivo imperfetto)",
+          "en": "",
+          "options": ["facessero", "fassero", "farebbero", "facciano"],
+          "answer": "facessero",
+          "why": "Stem face-."
+        }
+      ]
+    },
+    {
+      "id": "condizionale-passato",
+      "title": "The condizionale passato",
+      "particle": "avrei/sarei + participio",
+      "summary": "would have: condizionale of avere/essere + participle. Also the future in the past. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>avrei fatto</b>, <b>sarei andato</b>: would have. dovere, potere, volere make regret and blame: avrei dovuto (should have), avrei potuto (could have).",
+          "examples": [
+            [
+              "{Sarei venuto}, ma ero malato.",
+              "I'd-be · come · but · I-was · ill",
+              "I would have come, but I was ill."
+            ],
+            [
+              "{Avresti dovuto} dirmelo.",
+              "you'd-have · had-to · tell-me-it",
+              "You should have told me."
+            ]
+          ]
+        },
+        {
+          "h": "Future in the past",
+          "p": "Unlike English, Italian uses the condizionale passato for a future seen from the past: Ha detto che sarebbe venuto (He said he would come).",
+          "examples": [
+            [
+              "Ha detto che {sarebbe venuto}.",
+              "has · said · that · he'd-be · come",
+              "He said he would come."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Mi ＿ piaciuto vederti.",
+          "en": "I'd have liked to see you.",
+          "options": ["sarebbe", "avrebbe", "è", "fosse"],
+          "answer": "sarebbe",
+          "why": "piacere takes essere."
+        },
+        {
+          "q": "You could have called.",
+          "en": "",
+          "options": [
+            "Potresti chiamato.",
+            "Avresti potuto chiamare.",
+            "Hai potuto chiamare.",
+            "Avessi potuto chiamare."
+          ],
+          "answer": "Avresti potuto chiamare.",
+          "why": "avresti potuto + infinitive."
+        },
+        {
+          "q": "Ha promesso che ＿ presto.",
+          "en": "He promised he'd come back soon.",
+          "options": ["tornerebbe", "tornerà", "sarebbe tornato", "tornasse"],
+          "answer": "sarebbe tornato",
+          "why": "Future in the past."
+        },
+        {
+          "q": "Avrei dovuto means…",
+          "en": "",
+          "options": ["I would have to", "I had to", "I'll have to", "I should have"],
+          "answer": "I should have",
+          "why": "Regret."
+        },
+        {
+          "q": "Noi ＿ comprato la casa.",
+          "en": "We would have bought the house.",
+          "options": ["avremmo", "avremo", "saremmo", "avevamo"],
+          "answer": "avremmo",
+          "why": "Double m in the condizionale."
+        }
+      ]
+    },
+    {
+      "id": "fare-causativo",
+      "title": "fare + infinitive",
+      "particle": "fare fare",
+      "summary": "fare + infinitive: make someone do, or have something done. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>fare</b> + infinitive means have something done or make someone do: Faccio riparare la macchina (I'm having the car repaired). Pronouns go before fare.",
+          "examples": [
+            [
+              "{Faccio riparare} la bici.",
+              "I-make · repair · the · bike",
+              "I'm getting my bike repaired."
+            ],
+            [
+              "Mi {hai fatto ridere}.",
+              "me · you-have · made · laugh",
+              "You made me laugh."
+            ]
+          ]
+        },
+        {
+          "h": "farsi",
+          "p": "<b>farsi</b> + infinitive is something done for or to yourself: Mi sono fatto tagliare i capelli. lasciare + infinitive means let: Lasciami parlare.",
+          "examples": [
+            [
+              "{Mi sono fatta tagliare} i capelli.",
+              "myself · I-am · made · cut · the · hair",
+              "I had my hair cut."
+            ],
+            ["{Lasciami} parlare!", "let-me · speak", "Let me speak!"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ venire il medico.",
+          "en": "Call the doctor (have him come).",
+          "options": ["Fai", "Lascia", "Metti", "Dai"],
+          "answer": "Fai",
+          "why": "fare venire = call in."
+        },
+        {
+          "q": "Questo film mi ＿ piangere.",
+          "en": "This film makes me cry.",
+          "options": ["lascia", "fa", "rende", "sta"],
+          "answer": "fa",
+          "why": "Make someone: fare."
+        },
+        {
+          "q": "I had my car washed.",
+          "en": "",
+          "options": [
+            "Ho lavato la macchina da qualcuno.",
+            "Ho lavare fatto la macchina.",
+            "Ho fatto lavare la macchina.",
+            "Mi sono lavato la macchina."
+          ],
+          "answer": "Ho fatto lavare la macchina.",
+          "why": "fare + infinitive."
+        },
+        {
+          "q": "Let me go!",
+          "en": "",
+          "options": [
+            "Fammi andare via!",
+            "Lascia me andare!",
+            "Mi lascia andare!",
+            "Lasciami andare!"
+          ],
+          "answer": "Lasciami andare!",
+          "why": "lasciare = let."
+        },
+        {
+          "q": "Me la fai vedere? means…",
+          "en": "",
+          "options": [
+            "Will you show it to me?",
+            "Will you see it for me?",
+            "Do you see me?",
+            "Will you let me go?"
+          ],
+          "answer": "Will you show it to me?",
+          "why": "fare vedere = show."
+        }
+      ]
+    },
+    {
+      "id": "pronominal-verbs",
+      "title": "Pronominal verbs: andarsene, farcela, prendersela",
+      "particle": "andarsene・farcela・cavarsela・prendersela",
+      "summary": "Fixed verbs with ci, ne or la attached and their own meaning. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Some verbs carry fixed pronouns: <b>andarsene</b> (to leave, go away), <b>farcela</b> (to manage), <b>cavarsela</b> (to get by), <b>prendersela</b> (to take offence), <b>volerci</b> (to take, of time).",
+          "examples": [
+            ["Me {ne vado}.", "myself · of-it · I-go", "I'm off."],
+            ["Ce {la faccio}!", "there · it · I-make", "I can do it!"],
+            [
+              "Non {te la prendere}.",
+              "not · yourself · it · take",
+              "Don't take it badly."
+            ]
+          ]
+        },
+        {
+          "h": "Conjugation",
+          "p": "The reflexive pronoun changes (me, te, se, ce, ve, se), the fixed part stays. Past: me ne sono andato, ce l'ho fatta.",
+          "examples": [
+            [
+              "{Ce l'abbiamo fatta}!",
+              "there · it-we-have · made",
+              "We made it!"
+            ],
+            ["{Se n'è andato}.", "himself · of-it-is · gone", "He left."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Non ＿ faccio più!",
+          "en": "I can't take it any more!",
+          "options": ["ce la", "me ne", "se la", "ci lo"],
+          "answer": "ce la",
+          "why": "farcela."
+        },
+        {
+          "q": "Loro se ＿ vanno.",
+          "en": "They're leaving.",
+          "options": ["la", "ne", "ci", "lo"],
+          "answer": "ne",
+          "why": "andarsene."
+        },
+        {
+          "q": "Come te ＿ cavi?",
+          "en": "How are you getting on?",
+          "options": ["ne", "ci", "la", "lo"],
+          "answer": "la",
+          "why": "cavarsela."
+        },
+        {
+          "q": "We made it!",
+          "en": "",
+          "options": [
+            "Ci abbiamo fatto!",
+            "L'abbiamo fatta ce!",
+            "Ce l'abbiamo fatto!",
+            "Ce l'abbiamo fatta!"
+          ],
+          "answer": "Ce l'abbiamo fatta!",
+          "why": "Agreement with la."
+        },
+        {
+          "q": "Non prendertela means…",
+          "en": "",
+          "options": [
+            "Don't take it badly.",
+            "Don't take it.",
+            "Don't get it.",
+            "Don't leave."
+          ],
+          "answer": "Don't take it badly.",
+          "why": "prendersela."
+        }
+      ]
+    },
+    {
+      "id": "ci-vuole",
+      "title": "ci vuole and ci metto — it takes",
+      "particle": "ci vuole・ci vogliono・ci metto",
+      "summary": "ci vuole/vogliono: something is needed (impersonal). metterci: it takes someone time. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>ci vuole</b> + singular, <b>ci vogliono</b> + plural: it takes, you need. Ci vogliono due ore per arrivare.",
+          "examples": [
+            [
+              "{Ci vuole} pazienza.",
+              "there · wants · patience",
+              "It takes patience."
+            ],
+            [
+              "{Ci vogliono} tre ore in treno.",
+              "there · want · three · hours · in · train",
+              "It takes three hours by train."
+            ]
+          ]
+        },
+        {
+          "h": "metterci",
+          "p": "<b>metterci</b> is personal: the subject is who takes the time. Ci metto venti minuti (it takes me twenty minutes).",
+          "examples": [
+            [
+              "{Ci metto} mezz'ora.",
+              "there · I-put · half-hour",
+              "It takes me half an hour."
+            ],
+            [
+              "Quanto {ci hai messo}?",
+              "how-much · there · you-have · put",
+              "How long did it take you?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ due uova per la torta.",
+          "en": "You need two eggs for the cake.",
+          "options": ["Ci vogliono", "Ci vuole", "Ci metto", "Vogliono"],
+          "answer": "Ci vogliono",
+          "why": "Plural: ci vogliono."
+        },
+        {
+          "q": "Quanto tempo ＿ per arrivare?",
+          "en": "How long does it take to get there?",
+          "options": ["ci vogliono", "ci vuole", "ci vole", "vuole ci"],
+          "answer": "ci vuole",
+          "why": "Singular tempo."
+        },
+        {
+          "q": "Io ＿ dieci minuti a piedi.",
+          "en": "It takes me ten minutes on foot.",
+          "options": ["ci vuole", "ci vogliono", "ci metto", "mi vuole"],
+          "answer": "ci metto",
+          "why": "Personal: metterci."
+        },
+        {
+          "q": "Ci vuole coraggio means…",
+          "en": "",
+          "options": [
+            "He wants courage.",
+            "There's courage.",
+            "Courage is unwanted.",
+            "It takes courage."
+          ],
+          "answer": "It takes courage.",
+          "why": "Impersonal need."
+        },
+        {
+          "q": "Past: Quanto ci ＿ messo?",
+          "en": "How long did it take you?",
+          "options": ["hai", "sei", "è", "ha"],
+          "answer": "hai",
+          "why": "metterci takes avere."
+        }
+      ]
+    },
+    {
+      "id": "benche",
+      "title": "benché, purché, affinché + congiuntivo",
+      "particle": "benché・nonostante・purché・affinché・prima che・senza che",
+      "summary": "These conjunctions always take the subjunctive. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>benché</b> / sebbene / nonostante (although), <b>purché</b> (provided that), <b>affinché</b> / perché (so that), <b>prima che</b> (before), <b>senza che</b> (without) are followed by the congiuntivo.",
+          "examples": [
+            [
+              "{Benché} {sia} tardi, resto.",
+              "although · be(subj) · late · I-stay",
+              "Although it's late, I'm staying."
+            ],
+            [
+              "Ti presto la macchina, {purché} tu {stia} attento.",
+              "to-you · I-lend · the · car · provided · you · be(subj) · careful",
+              "I'll lend you the car as long as you're careful."
+            ]
+          ]
+        },
+        {
+          "h": "Same subject",
+          "p": "With the same subject, prima di / senza + infinitive: Esco senza salutare. perché + congiuntivo means so that; with the indicative it means because.",
+          "examples": [
+            [
+              "Te lo dico {perché} tu lo {sappia}.",
+              "to-you · it · I-say · so-that · you · it · know(subj)",
+              "I'm telling you so that you know."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Benché ＿ stanco, lavora.",
+          "en": "Although he's tired, he works.",
+          "options": ["sia", "è", "sarà", "era"],
+          "answer": "sia",
+          "why": "benché + subjunctive."
+        },
+        {
+          "q": "Vengo, purché tu ＿ anche tu.",
+          "en": "I'll come, provided you come too.",
+          "options": ["vieni", "venga", "verrai", "venissi"],
+          "answer": "venga",
+          "why": "purché + subjunctive."
+        },
+        {
+          "q": "Parlo piano affinché tutti ＿.",
+          "en": "I speak slowly so that everyone understands.",
+          "options": ["capiscono", "capiranno", "capiscano", "capissero"],
+          "answer": "capiscano",
+          "why": "affinché + subjunctive."
+        },
+        {
+          "q": "Esco senza ＿.",
+          "en": "I go out without eating.",
+          "options": ["che mangi", "mangiando", "mangiato", "mangiare"],
+          "answer": "mangiare",
+          "why": "Same subject: infinitive."
+        },
+        {
+          "q": "Perché + indicative means…",
+          "en": "",
+          "options": ["because", "so that", "although", "unless"],
+          "answer": "because",
+          "why": "Mood decides."
+        }
+      ]
+    },
+    {
+      "id": "indirect-questions",
+      "title": "Indirect questions with se",
+      "particle": "se・chi・dove・come",
+      "summary": "Yes/no questions become se; question words stay. The subjunctive is optional and formal. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "An indirect yes/no question uses <b>se</b> (whether): Mi chiedo se verrà. Question words stay: Non so dove abita.",
+          "examples": [
+            [
+              "Non so {se} lui viene.",
+              "not · I-know · if · he · comes",
+              "I don't know if he's coming."
+            ],
+            [
+              "Mi ha chiesto {dove} abitavo.",
+              "to-me · has · asked · where · I-lived",
+              "He asked me where I lived."
+            ]
+          ]
+        },
+        {
+          "h": "Register",
+          "p": "Formal Italian often uses the congiuntivo in indirect questions: Non so se sia vero. Speech uses the indicative: Non so se è vero.",
+          "examples": [
+            [
+              "Mi domando {chi} {sia}.",
+              "myself · I-ask · who · be(subj)",
+              "I wonder who it is."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Mi chiede ＿ ho fame.",
+          "en": "He asks me if I'm hungry.",
+          "options": ["se", "che", "come", "quando"],
+          "answer": "se",
+          "why": "Yes/no: se."
+        },
+        {
+          "q": "Non so ＿ si chiama.",
+          "en": "I don't know what he's called.",
+          "options": ["se", "come", "che", "dove"],
+          "answer": "come",
+          "why": "Question word stays."
+        },
+        {
+          "q": "Formal: Non so se ＿ vero.",
+          "en": "",
+          "options": ["era", "sarà", "sia", "fosse stato"],
+          "answer": "sia",
+          "why": "Congiuntivo in formal style."
+        },
+        {
+          "q": "Dimmi ＿ vuoi.",
+          "en": "Tell me what you want.",
+          "options": ["se", "chi", "dove", "cosa"],
+          "answer": "cosa",
+          "why": "cosa / che cosa."
+        },
+        {
+          "q": "Mi domando means…",
+          "en": "",
+          "options": ["I wonder", "I ask myself out", "I demand", "I'm asked"],
+          "answer": "I wonder",
+          "why": "domandarsi."
+        }
+      ]
+    },
+    {
+      "id": "chiunque",
+      "title": "chiunque, qualunque, dovunque",
+      "particle": "chiunque・qualunque・qualsiasi・dovunque・comunque",
+      "summary": "-unque words mean any-/-ever and take the subjunctive in a clause. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>chiunque</b> (whoever, anyone), <b>qualunque</b> / qualsiasi (whatever, any), <b>dovunque</b> (wherever), <b>comunque</b> (however; also “anyway”). In a clause they take the congiuntivo.",
+          "examples": [
+            [
+              "{Chiunque} {venga}, è benvenuto.",
+              "whoever · comes(subj) · is · welcome",
+              "Whoever comes is welcome."
+            ],
+            [
+              "{Qualunque} cosa tu {faccia}, ti sostengo.",
+              "whatever · thing · you · do(subj) · you · I-support",
+              "Whatever you do, I support you."
+            ]
+          ]
+        },
+        {
+          "h": "Alone",
+          "p": "Alone, they mean any: Chiunque può farlo (anyone can do it). Una cosa qualsiasi (any old thing). comunque alone means anyway.",
+          "examples": [
+            [
+              "{Comunque}, ci vediamo domani.",
+              "anyway · ourselves · we-see · tomorrow",
+              "Anyway, see you tomorrow."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ può partecipare.",
+          "en": "Anyone can take part.",
+          "options": ["Chiunque", "Qualunque", "Dovunque", "Comunque"],
+          "answer": "Chiunque",
+          "why": "Person: chiunque."
+        },
+        {
+          "q": "Dovunque tu ＿, ti seguirò.",
+          "en": "Wherever you go, I'll follow you.",
+          "options": ["vai", "vada", "andrai", "andassi"],
+          "answer": "vada",
+          "why": "Clause: subjunctive."
+        },
+        {
+          "q": "＿ cosa succeda, chiamami.",
+          "en": "Whatever happens, call me.",
+          "options": ["Chiunque", "Comunque", "Qualunque", "Dovunque"],
+          "answer": "Qualunque",
+          "why": "Thing: qualunque."
+        },
+        {
+          "q": "Comunque, ci vediamo dopo means…",
+          "en": "",
+          "options": [
+            "However we see later.",
+            "Wherever we see.",
+            "Whoever sees later.",
+            "Anyway, see you later."
+          ],
+          "answer": "Anyway, see you later.",
+          "why": "Discourse marker."
+        },
+        {
+          "q": "un giorno qualsiasi means…",
+          "en": "",
+          "options": ["any old day", "every day", "some days", "a special day"],
+          "answer": "any old day",
+          "why": "qualsiasi after the noun."
+        }
+      ]
     },
     {
       "id": "passive",
-      "title": "The passive with essere and venire, and the si passivante (about B1–B2)",
-      "level": "intermediate"
+      "title": "The passive with essere and venire, and the si passivante",
+      "particle": "essere/venire + participio・da",
+      "summary": "essere or venire + participle; the doer takes da. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "The passive is <b>essere</b> + participle (agreeing): La lettera è scritta da Anna. In simple tenses, <b>venire</b> can replace essere and stresses the action: La porta viene chiusa alle otto.",
+          "examples": [
+            [
+              "Il libro {è stato scritto} {da} Calvino.",
+              "the · book · is · been · written · by · Calvino",
+              "The book was written by Calvino."
+            ],
+            [
+              "I negozi {vengono chiusi} alle 20.",
+              "the · shops · come · closed · at-the · 20",
+              "The shops are closed at 8 pm."
+            ]
+          ]
+        },
+        {
+          "h": "si passivante",
+          "p": "Speech often uses <b>si</b> + third person, agreeing with the object: Si vendono appartamenti (Flats for sale). The doer is not named.",
+          "examples": [
+            [
+              "Qui {si parlano} tre lingue.",
+              "here · one · speak · three · languages",
+              "Three languages are spoken here."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "La casa ＿ costruita nel 1900.",
+          "en": "The house was built in 1900.",
+          "options": ["è stata", "ha stata", "è stato", "ha"],
+          "answer": "è stata",
+          "why": "essere + participle, agreeing."
+        },
+        {
+          "q": "Il quadro è stato dipinto ＿ Leonardo.",
+          "en": "The painting was painted by Leonardo.",
+          "options": ["di", "da", "per", "con"],
+          "answer": "da",
+          "why": "The doer: da."
+        },
+        {
+          "q": "Le lettere ＿ spedite ogni giorno.",
+          "en": "The letters are sent every day.",
+          "options": ["vanno", "stanno", "vengono", "hanno"],
+          "answer": "vengono",
+          "why": "venire for the process."
+        },
+        {
+          "q": "Si ＿ case.",
+          "en": "Houses for sale.",
+          "options": ["vende", "vendiamo", "venduto", "vendono"],
+          "answer": "vendono",
+          "why": "Plural: vendono."
+        },
+        {
+          "q": "Can venire replace essere in the passato prossimo?",
+          "en": "",
+          "options": [
+            "No, only in simple tenses",
+            "Yes, always",
+            "Only with da",
+            "Only for people"
+          ],
+          "answer": "No, only in simple tenses",
+          "why": "È stato fatto, not è venuto fatto."
+        }
+      ]
     },
     {
       "id": "passato-remoto",
-      "title": "The passato remoto (about B1–B2)",
-      "level": "intermediate"
+      "title": "The passato remoto",
+      "particle": "-ai・-ò・-arono",
+      "summary": "The narrative past of history and literature; in the south also everyday speech. (about B1–B2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "-are: parlai, parlasti, <b>parlò</b>, parlammo, parlaste, <b>parlarono</b>. -ere: credei (credetti), credesti, <b>credé</b> (credette), credemmo, credeste, crederono. -ire: dormii, dormisti, <b>dormì</b>, dormimmo, dormiste, <b>dormirono</b>.",
+          "examples": [
+            [
+              "Dante {nacque} a Firenze.",
+              "Dante · was-born · in · Florence",
+              "Dante was born in Florence."
+            ],
+            [
+              "La guerra {finì} nel 1945.",
+              "the · war · ended · in-the · 1945",
+              "The war ended in 1945."
+            ]
+          ]
+        },
+        {
+          "h": "Irregulars",
+          "p": "Many common verbs are irregular: essere → fui, fu, furono; avere → ebbi, ebbe, ebbero; fare → feci, fece; dire → dissi, disse; venire → venni, venne; vedere → vidi, vide; prendere → presi, prese.",
+          "examples": [
+            [
+              "Colombo {arrivò} in America nel 1492.",
+              "Columbus · arrived · in · America · in-the · 1492",
+              "Columbus reached America in 1492."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Garibaldi ＿ nel 1807.",
+          "en": "Garibaldi was born in 1807.",
+          "options": ["nacque", "nasceva", "è nascito", "nascé"],
+          "answer": "nacque",
+          "why": "Irregular: nacque."
+        },
+        {
+          "q": "fu means…",
+          "en": "",
+          "options": ["made", "was (essere)", "went", "had"],
+          "answer": "was (essere)",
+          "why": "essere → fu."
+        },
+        {
+          "q": "Loro ＿ tutto.",
+          "en": "They said everything. (dire)",
+          "options": ["dicerono", "dirono", "dissero", "dicessero"],
+          "answer": "dissero",
+          "why": "Irregular."
+        },
+        {
+          "q": "Lui ＿ la porta.",
+          "en": "He opened the door. (aprire)",
+          "options": ["aprò", "aprette", "aprisse", "aprì"],
+          "answer": "aprì",
+          "why": "-ire: -ì."
+        },
+        {
+          "q": "The passato remoto is mainly…",
+          "en": "",
+          "options": [
+            "written narrative and history",
+            "text messages",
+            "future plans",
+            "polite requests"
+          ],
+          "answer": "written narrative and history",
+          "why": "Literary past."
+        }
+      ]
     },
     {
       "id": "reported-speech",
-      "title": "Reported speech (about B2)",
-      "level": "advanced-intermediate"
+      "title": "Reported speech",
+      "particle": "ha detto che",
+      "summary": "After a past reporting verb, tenses shift back; the future becomes the condizionale passato. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "After <b>ha detto che</b> (past), presente → imperfetto, passato prossimo → trapassato, futuro → <b>condizionale passato</b>, imperativo → di + infinitive or che + congiuntivo.",
+          "examples": [
+            [
+              "«Sono stanco.» → Ha detto che {era} stanco.",
+              "I-am · tired · has · said · that · was · tired",
+              "He said he was tired."
+            ],
+            [
+              "«Verrò.» → Ha detto che {sarebbe venuto}.",
+              "I'll-come · has · said · that · would-be · come",
+              "He said he would come."
+            ]
+          ]
+        },
+        {
+          "h": "Time words and questions",
+          "p": "oggi → quel giorno, domani → il giorno dopo, qui → lì. Questions use se or the question word.",
+          "examples": [
+            [
+              "Mi ha detto {di} aspettare.",
+              "to-me · has · said · of · wait",
+              "He told me to wait."
+            ],
+            [
+              "Mi ha chiesto {se} volevo un caffè.",
+              "to-me · has · asked · if · I-wanted · a · coffee",
+              "He asked if I wanted a coffee."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "«Ho fame.» → Ha detto che ＿ fame.",
+          "en": "",
+          "options": ["aveva", "ha", "avrà", "abbia"],
+          "answer": "aveva",
+          "why": "Present → imperfetto."
+        },
+        {
+          "q": "«Partirò.» → Ha detto che ＿.",
+          "en": "",
+          "options": ["partirà", "sarebbe partito", "partirebbe", "partì"],
+          "answer": "sarebbe partito",
+          "why": "Future → condizionale passato."
+        },
+        {
+          "q": "«Ho perso il treno.» → Ha detto che ＿ il treno.",
+          "en": "",
+          "options": ["ha perso", "perdeva", "aveva perso", "avesse perso"],
+          "answer": "aveva perso",
+          "why": "Passato prossimo → trapassato."
+        },
+        {
+          "q": "«Chiudi la porta!» → Mi ha detto ＿ chiudere la porta.",
+          "en": "",
+          "options": ["che", "a", "se", "di"],
+          "answer": "di",
+          "why": "Orders: di + infinitive."
+        },
+        {
+          "q": "domani in reported speech",
+          "en": "",
+          "options": ["il giorno dopo", "domani", "ieri", "il giorno prima"],
+          "answer": "il giorno dopo",
+          "why": "Time shift."
+        }
+      ]
     },
     {
       "id": "gerundio-participio",
-      "title": "The gerundio and participio as clauses (about B2–C1)",
-      "level": "advanced-intermediate"
+      "title": "The gerundio and participio as clauses",
+      "particle": "-ando/-endo・participio assoluto",
+      "summary": "A gerund or a lone participle can replace a whole clause of time, cause or manner. (about B2–C1)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "The <b>gerundio</b> alone can mean while, because, by or if: <i>Studiando, si impara</i> (by studying). Its subject is normally the same as the main verb's. Pronouns attach: vedendolo.",
+          "examples": [
+            [
+              "{Camminando}, ho incontrato Paolo.",
+              "walking · I-have · met · Paolo",
+              "While walking, I met Paolo."
+            ],
+            [
+              "{Essendo} malato, non è venuto.",
+              "being · ill · not · is · come",
+              "Being ill, he didn't come."
+            ]
+          ]
+        },
+        {
+          "h": "Participio assoluto",
+          "p": "A past participle alone, agreeing with its noun, means once / after: <i>Finita la cena, uscimmo</i> (Once dinner was over, we went out). It's typical of writing.",
+          "examples": [
+            [
+              "{Finita} la lezione, siamo andati al bar.",
+              "finished · the · lesson · we-are · gone · to-the · bar",
+              "Once the lesson was over, we went to the bar."
+            ],
+            [
+              "{Arrivati} a casa, abbiamo cenato.",
+              "arrived · at · home · we-have · dined",
+              "Having got home, we had dinner."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ si impara.",
+          "en": "You learn by doing.",
+          "options": ["Sbagliando", "Sbagliato", "Sbagliare", "Sbagli"],
+          "answer": "Sbagliando",
+          "why": "Gerund = by doing."
+        },
+        {
+          "q": "＿ la partita, i tifosi sono usciti.",
+          "en": "Once the match had ended, the fans left.",
+          "options": ["Finito", "Finita", "Finendo", "Finire"],
+          "answer": "Finita",
+          "why": "Agrees with partita."
+        },
+        {
+          "q": "Avendo fame, ho mangiato means…",
+          "en": "",
+          "options": [
+            "Although hungry, I ate.",
+            "I'll eat if hungry.",
+            "Since I was hungry, I ate.",
+            "I ate and got hungry."
+          ],
+          "answer": "Since I was hungry, I ate.",
+          "why": "Cause."
+        },
+        {
+          "q": "Pronoun with a gerund",
+          "en": "",
+          "options": ["lo vedendo", "vedendo lo", "vedendol", "vedendolo"],
+          "answer": "vedendolo",
+          "why": "Attached."
+        },
+        {
+          "q": "The participio assoluto is mostly…",
+          "en": "",
+          "options": ["written", "slang", "for questions", "childish"],
+          "answer": "written",
+          "why": "Formal register."
+        }
+      ]
     },
     {
       "id": "concordanza",
-      "title": "Sequence of tenses with the congiuntivo trapassato (about B2–C1)",
-      "level": "advanced-intermediate"
+      "title": "Sequence of tenses with the congiuntivo trapassato",
+      "particle": "concordanza dei tempi",
+      "summary": "The tense of the main verb decides which subjunctive follows. (about B2–C1)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Main verb in the <b>present</b>: congiuntivo presente (same time) or passato (earlier). Main verb in the <b>past or conditional</b>: congiuntivo imperfetto (same time) or <b>trapassato</b> (earlier): avessi fatto, fossi andato.",
+          "examples": [
+            [
+              "Penso che {sia} partito.",
+              "I-think · that · be(subj) · left",
+              "I think he's left."
+            ],
+            [
+              "Pensavo che {fosse partito}.",
+              "I-thought · that · was(subj) · left",
+              "I thought he had left."
+            ]
+          ]
+        },
+        {
+          "h": "Future after a past main verb",
+          "p": "A later event after a past main verb uses the condizionale passato: Pensavo che sarebbe venuto.",
+          "examples": [
+            [
+              "Pensavo che {sarebbe venuto}.",
+              "I-thought · that · would-be · come",
+              "I thought he'd come (later)."
+            ],
+            [
+              "Non sapevo che {avessi lavorato} lì.",
+              "not · I-knew · that · you-had(subj) · worked · there",
+              "I didn't know you'd worked there."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Credevo che tu ＿ già ＿.",
+          "en": "I thought you had already eaten.",
+          "options": [
+            "avessi … mangiato",
+            "abbia … mangiato",
+            "avresti … mangiato",
+            "hai … mangiato"
+          ],
+          "answer": "avessi … mangiato",
+          "why": "Past main verb, earlier event: trapassato."
+        },
+        {
+          "q": "Spero che ＿ arrivati.",
+          "en": "I hope they've arrived.",
+          "options": ["fossero", "siano", "sono", "sarebbero"],
+          "answer": "siano",
+          "why": "Present main verb, earlier event: passato."
+        },
+        {
+          "q": "Speravo che lui ＿.",
+          "en": "I hoped he'd come (later).",
+          "options": ["venga", "sia venuto", "sarebbe venuto", "viene"],
+          "answer": "sarebbe venuto",
+          "why": "Later event: condizionale passato."
+        },
+        {
+          "q": "Vorrei che tu ＿ qui.",
+          "en": "I wish you were here.",
+          "options": ["sia", "sei", "saresti", "fossi"],
+          "answer": "fossi",
+          "why": "Conditional main verb: imperfetto."
+        },
+        {
+          "q": "Non pensavo che ＿ così tardi.",
+          "en": "I didn't think it was so late.",
+          "options": ["fosse", "sia", "è", "sarà"],
+          "answer": "fosse",
+          "why": "Past, same time: imperfetto."
+        }
+      ]
+    },
+    {
+      "id": "andare-passive",
+      "title": "andare + participle — must be done",
+      "particle": "va fatto・vanno pagate",
+      "summary": "andare + participle: something must be done. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>andare</b> + past participle is a passive with a sense of obligation: Il modulo va compilato (the form must be filled in). It agrees with the subject.",
+          "examples": [
+            [
+              "Questo vino {va servito} fresco.",
+              "this · wine · goes · served · cool",
+              "This wine should be served chilled."
+            ],
+            [
+              "Le bollette {vanno pagate} entro venerdì.",
+              "the · bills · go · paid · by · Friday",
+              "The bills must be paid by Friday."
+            ]
+          ]
+        },
+        {
+          "h": "Loss",
+          "p": "With perdere, smarrire, distruggere, andare means simply got lost or destroyed: Il pacco è andato perso.",
+          "examples": [
+            [
+              "Il bagaglio {è andato perso}.",
+              "the · luggage · is · gone · lost",
+              "The luggage got lost."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "La pasta ＿ cotta al dente.",
+          "en": "Pasta should be cooked al dente.",
+          "options": ["va", "viene", "sta", "ha"],
+          "answer": "va",
+          "why": "Obligation: andare."
+        },
+        {
+          "q": "I documenti ＿ firmati.",
+          "en": "The documents must be signed.",
+          "options": ["va", "vanno", "devono", "stanno"],
+          "answer": "vanno",
+          "why": "Plural: vanno."
+        },
+        {
+          "q": "Il pacco è andato ＿.",
+          "en": "The parcel got lost.",
+          "options": ["perduta", "perdendo", "perso", "perdere"],
+          "answer": "perso",
+          "why": "andare perso."
+        },
+        {
+          "q": "va fatto means…",
+          "en": "",
+          "options": ["it was done", "it goes done", "it will do", "it must be done"],
+          "answer": "it must be done",
+          "why": "Obligation."
+        },
+        {
+          "q": "Le regole ＿ rispettate.",
+          "en": "The rules must be respected.",
+          "options": ["vanno", "va", "sono state", "vadano"],
+          "answer": "vanno",
+          "why": "Agrees with regole."
+        }
+      ]
+    },
+    {
+      "id": "connettivi",
+      "title": "Formal connectors: tuttavia, pertanto, inoltre, infatti",
+      "particle": "tuttavia・pertanto・inoltre・infatti・dunque・anzi",
+      "summary": "Written Italian links arguments with connectors. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>tuttavia</b> / però (however), <b>pertanto</b> / quindi / dunque (therefore), <b>inoltre</b> (moreover), <b>infatti</b> (indeed, in fact — confirms), <b>invece</b> (instead, on the other hand), <b>anzi</b> (on the contrary, or rather).",
+          "examples": [
+            [
+              "Il progetto è costoso; {tuttavia} è necessario.",
+              "the · project · is · costly · however · is · necessary",
+              "The project is costly; it is however necessary."
+            ],
+            [
+              "Piove, {pertanto} la gara è annullata.",
+              "rains · therefore · the · race · is · cancelled",
+              "It's raining, so the race is cancelled."
+            ]
+          ]
+        },
+        {
+          "h": "infatti and anzi",
+          "p": "<b>infatti</b> confirms what came before (yes indeed), unlike English “in fact” which can contradict. <b>anzi</b> corrects upward: Non è brutto, anzi, è bellissimo.",
+          "examples": [
+            [
+              "Non è brutto, {anzi}, è bellissimo.",
+              "not · is · ugly · on-the-contrary · is · very-beautiful",
+              "It's not ugly; in fact it's gorgeous."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ero stanco; ＿, sono andato a letto presto.",
+          "en": "I was tired; so I went to bed early.",
+          "options": ["pertanto", "tuttavia", "anzi", "inoltre"],
+          "answer": "pertanto",
+          "why": "Consequence."
+        },
+        {
+          "q": "Il prezzo è alto; ＿, la qualità è ottima.",
+          "en": "The price is high; however, the quality is excellent.",
+          "options": ["infatti", "tuttavia", "pertanto", "inoltre"],
+          "answer": "tuttavia",
+          "why": "Contrast."
+        },
+        {
+          "q": "È bravo, ＿ è bravissimo.",
+          "en": "He's good, or rather excellent.",
+          "options": ["tuttavia", "pertanto", "anzi", "inoltre"],
+          "answer": "anzi",
+          "why": "Upgrading: anzi."
+        },
+        {
+          "q": "«Sembra stanco.» «＿, ha lavorato tutta la notte.»",
+          "en": "He looks tired. — Indeed, he worked all night.",
+          "options": ["Anzi", "Tuttavia", "Inoltre", "Infatti"],
+          "answer": "Infatti",
+          "why": "Confirmation."
+        },
+        {
+          "q": "inoltre means…",
+          "en": "",
+          "options": ["moreover", "however", "instead", "therefore"],
+          "answer": "moreover",
+          "why": "Adding."
+        }
+      ]
+    },
+    {
+      "id": "lettera-formale",
+      "title": "Formal letters and emails",
+      "particle": "Gentile・Egregio・Le scrivo・Distinti saluti",
+      "summary": "Formal Italian uses Lei throughout, fixed openings and closings. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Openings: <b>Gentile</b> Signora Rossi, <b>Egregio</b> Dottore (very formal), Spettabile Ditta (to a company). The body uses Lei and its pronouns, often capitalised: La ringrazio, Le scrivo.",
+          "examples": [
+            [
+              "{Gentile} Dottoressa Bianchi,",
+              "kind · Doctor · Bianchi",
+              "Dear Dr Bianchi,"
+            ],
+            [
+              "{Le scrivo} per chiedere informazioni.",
+              "to-you · I-write · for · ask · information",
+              "I'm writing to ask for information."
+            ]
+          ]
+        },
+        {
+          "h": "Closings",
+          "p": "Closings: <b>Cordiali saluti</b>, <b>Distinti saluti</b> (more formal), In attesa di un Suo cortese riscontro (Looking forward to your reply).",
+          "examples": [
+            [
+              "In attesa di un {Suo} riscontro, {porgo distinti saluti}.",
+              "in · waiting · of · a · your · reply · I-offer · distinct · greetings",
+              "Looking forward to your reply, yours faithfully."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ Signor Verdi,",
+          "en": "Dear Mr Verdi,",
+          "options": ["Gentile", "Caro amico", "Ciao", "Egregia"],
+          "answer": "Gentile",
+          "why": "Standard formal opening."
+        },
+        {
+          "q": "La ＿ per la Sua risposta.",
+          "en": "Thank you for your reply.",
+          "options": ["ringrazia", "ringrazio", "ringrazi", "ringraziamo te"],
+          "answer": "ringrazio",
+          "why": "La ringrazio."
+        },
+        {
+          "q": "A neutral formal closing",
+          "en": "",
+          "options": ["Baci", "Un abbraccio", "Cordiali saluti", "Ciao ciao"],
+          "answer": "Cordiali saluti",
+          "why": "Formal."
+        },
+        {
+          "q": "Le scrivo means…",
+          "en": "",
+          "options": [
+            "Write to her",
+            "Write to me",
+            "You write",
+            "I'm writing to you (formal)"
+          ],
+          "answer": "I'm writing to you (formal)",
+          "why": "Le = to you (Lei)."
+        },
+        {
+          "q": "Spettabile is used for…",
+          "en": "",
+          "options": ["a company", "a close friend", "a child", "a family member"],
+          "answer": "a company",
+          "why": "Spett.le Ditta."
+        }
+      ]
+    },
+    {
+      "id": "congiuntivo-relative",
+      "title": "The congiuntivo in relative clauses",
+      "particle": "che + congiuntivo",
+      "summary": "A relative clause about something sought, unique or uncertain takes the subjunctive. (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "When the antecedent is hypothetical or sought, the relative clause takes the congiuntivo: <i>Cerco una casa che abbia un giardino</i> (any house with a garden, if one exists).",
+          "examples": [
+            [
+              "Cerco qualcuno che {parli} cinese.",
+              "I-look-for · someone · who · speak(subj) · Chinese",
+              "I'm looking for someone who speaks Chinese."
+            ],
+            [
+              "Non c'è nessuno che {sappia} la risposta.",
+              "not · there-is · nobody · who · know(subj) · the · answer",
+              "There's nobody who knows the answer."
+            ]
+          ]
+        },
+        {
+          "h": "After superlatives",
+          "p": "After a superlative or unico / solo, the subjunctive is common in careful style: È il film più bello che io abbia mai visto.",
+          "examples": [
+            [
+              "È il libro più bello che io {abbia} mai letto.",
+              "is · the · book · most · beautiful · that · I · have(subj) · ever · read",
+              "It's the best book I've ever read."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Cerco un appartamento che ＿ vicino al centro.",
+          "en": "I'm looking for a flat that's near the centre.",
+          "options": ["sia", "è", "sarà", "era"],
+          "answer": "sia",
+          "why": "Sought: subjunctive."
+        },
+        {
+          "q": "Conosco un ragazzo che ＿ cinese.",
+          "en": "I know a boy who speaks Chinese.",
+          "options": ["parli", "parla", "parlasse", "parlerebbe"],
+          "answer": "parla",
+          "why": "Known, real person: indicative."
+        },
+        {
+          "q": "È la persona più gentile che io ＿.",
+          "en": "She's the kindest person I know.",
+          "options": ["conobbi", "conoscevo", "conosca", "conoscerei"],
+          "answer": "conosca",
+          "why": "Superlative: subjunctive in careful style."
+        },
+        {
+          "q": "Non c'è niente che ＿ fare.",
+          "en": "There's nothing we can do.",
+          "options": ["potuto", "potremo", "potevamo", "possiamo"],
+          "answer": "possiamo",
+          "why": "Negative antecedent: subjunctive (possiamo is both forms)."
+        },
+        {
+          "q": "The subjunctive here signals…",
+          "en": "",
+          "options": [
+            "something sought or uncertain",
+            "a past event",
+            "an order",
+            "a real, known thing"
+          ],
+          "answer": "something sought or uncertain",
+          "why": "Hypothetical antecedent."
+        }
+      ]
+    },
+    {
+      "id": "literary-pronouns",
+      "title": "egli, esso, ella — literary pronouns",
+      "particle": "egli・ella・esso・essa・essi",
+      "summary": "Older and formal written Italian uses egli, ella, esso, essi. (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "In literature, history books and some formal writing, <b>egli</b> (he) and <b>ella</b> (she) replace lui and lei as subjects. <b>esso, essa, essi, esse</b> refer to things and animals (it, they).",
+          "examples": [
+            [
+              "{Egli} nacque a Recanati.",
+              "he · was-born · in · Recanati",
+              "He was born in Recanati."
+            ],
+            [
+              "Il fiume e i {suoi} affluenti: {esso} nasce dalle Alpi.",
+              "the · river · and · the · its · tributaries · it · rises · from-the · Alps",
+              "The river rises in the Alps."
+            ]
+          ]
+        },
+        {
+          "h": "Modern usage",
+          "p": "Everyday Italian uses lui, lei, loro for people, and usually avoids a pronoun for things. Recognise egli and esso; you won't need to say them.",
+          "examples": [
+            [
+              "{Lui} è nato a Roma.",
+              "he · is · born · in · Rome",
+              "He was born in Rome."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "egli means…",
+          "en": "",
+          "options": ["he (literary)", "they", "it", "she"],
+          "answer": "he (literary)",
+          "why": "Literary subject."
+        },
+        {
+          "q": "esso refers to…",
+          "en": "",
+          "options": ["a woman", "a thing or animal", "a group of people", "the speaker"],
+          "answer": "a thing or animal",
+          "why": "it."
+        },
+        {
+          "q": "Modern spoken equivalent of ella",
+          "en": "",
+          "options": ["essa", "egli", "lei", "loro"],
+          "answer": "lei",
+          "why": "Speech: lei."
+        },
+        {
+          "q": "essi means…",
+          "en": "",
+          "options": ["it", "he", "we", "they (things, or formal)"],
+          "answer": "they (things, or formal)",
+          "why": "Plural of esso."
+        },
+        {
+          "q": "Where will you mostly see egli?",
+          "en": "",
+          "options": [
+            "older literature and formal history",
+            "text messages",
+            "menus",
+            "street signs"
+          ],
+          "answer": "older literature and formal history",
+          "why": "Literary register."
+        }
+      ]
+    },
+    {
+      "id": "combined-pronouns",
+      "title": "Combined pronouns: glielo, me lo",
+      "particle": "glielo / me lo",
+      "summary": "When an indirect and a direct pronoun meet, the indirect one comes first and changes its vowel: mi→me, ti→te, ci→ce, vi→ve; gli and le both become glie- and join the next word (about B1).",
+      "level": "intermediate",
+      "sections": [
+        {
+          "h": "me lo, te la, ce li",
+          "p": "The indirect pronoun goes first and its -i becomes -e: {me lo}, {te la}, {ce li}, {ve le}. They stay two words before a conjugated verb.",
+          "examples": [
+            ["{Me lo} dai?", "me · it you-give?", "Will you give it to me?"],
+            [
+              "{Te la} presto domani.",
+              "you · it I-lend tomorrow",
+              "I'll lend it to you tomorrow."
+            ],
+            [
+              "{Ce li} hanno mandati ieri.",
+              "us · them they-have sent yesterday",
+              "They sent them to us yesterday."
+            ]
+          ]
+        },
+        {
+          "h": "glielo, gliela, glieli, gliele, gliene",
+          "p": "For \"to him\", \"to her\" and polite \"to you\", gli and le both become {glie-} and fuse with lo, la, li, le or ne into one word. Attached to an infinitive or imperative, the pair joins the end: {dar-glielo}, {dimme-lo}.",
+          "examples": [
+            [
+              "{Glielo} dico subito.",
+              "to-him/her · it I-say at-once",
+              "I'll tell him/her right away."
+            ],
+            [
+              "Posso {dargliela} stasera.",
+              "I-can give-to-him/her · it tonight",
+              "I can give it to him/her tonight."
+            ],
+            ["{Dimmelo}!", "tell-me · it", "Tell me!"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Il libro? ＿ do domani. (to him)",
+          "en": "The book? I will give it to him tomorrow.",
+          "options": ["Glielo", "Gli lo", "Lo gli", "Le lo"],
+          "answer": "Glielo",
+          "why": "gli + lo fuse into one word, glielo."
+        },
+        {
+          "q": "La foto? ＿ mandi? (to me)",
+          "en": "The photo? Will you send it to me?",
+          "options": ["Mi la", "Me la", "La mi", "Me lo"],
+          "answer": "Me la",
+          "why": "mi becomes me before la; foto is feminine, so la."
+        },
+        {
+          "q": "Le chiavi? ＿ porto io. (to you, tu)",
+          "en": "The keys? I'll bring them to you.",
+          "options": ["Ti le", "Te li", "Te le", "Le ti"],
+          "answer": "Te le",
+          "why": "ti becomes te; chiavi is feminine plural, so le."
+        },
+        {
+          "q": "Il conto? Può ＿? (bring it to us)",
+          "en": "The bill? Can you bring it to us?",
+          "options": ["portarcilo", "portarlo ci", "ci portarlo", "portarcelo"],
+          "answer": "portarcelo",
+          "why": "After an infinitive the pair attaches to the end, and ci becomes ce."
+        },
+        {
+          "q": "Ho dei biscotti. ＿ do un po'. (to her)",
+          "en": "I have some biscuits. I'll give her a few.",
+          "options": ["Gliene", "Le ne", "Ne le", "Glie ne"],
+          "answer": "Gliene",
+          "why": "le + ne become one word, gliene."
+        }
+      ]
     }
   ]
 }
