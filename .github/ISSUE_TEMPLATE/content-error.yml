@@ -1,0 +1,52 @@
+name: Content error
+description: A wrong meaning, reading, level, stroke, drill or example in the language content.
+title: "<Language>: <what is wrong>"
+labels: ["content-error"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this. One problem per issue is easiest to fix.
+        The review checklist in REVIEWING.md lists the kinds of mistakes to look for.
+  - type: input
+    id: language
+    attributes:
+      label: Language or script
+      placeholder: e.g. Korean, Hiragana, Chinese
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of content
+      options:
+        - Vocabulary (meaning, reading, romanization)
+        - Level tag (JLPT, TOPIK, HSK, CEFR)
+        - Grammar lesson or drill
+        - Stroke order or stroke count
+        - Alphabet or character chart (example, hint, sound)
+        - Reference card
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where it is
+      description: The file and the entry's id or character, or the app screen where you saw it.
+      placeholder: e.g. languages/hangul/grammar.json, lesson indirect-quote, drill 1
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What it says now
+    validations:
+      required: true
+  - type: textarea
+    id: right
+    attributes:
+      label: What it should say, and how you know
+      description: A source helps, such as a dictionary entry or an official level description. Don't paste text from a source whose license doesn't allow it.
+    validations:
+      required: true
