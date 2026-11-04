@@ -72,6 +72,12 @@ Formats:
   grammar lesson (`grammar/lessons/`). `pack.json` lists every file, the data
   commit, and how many words or lessons each part holds. Content types the
   export has no special view for are still copied, so nothing is left out.
+- **sqlite**: `build/packs/<id>.sqlite`, one database per language, with its
+  varieties in the same tables. `languages`, `decks`, `words`, `word_levels`
+  (one row per level tag, for queries like every JLPT N5 word), `courses` and
+  `lessons` hold the content as rows. `files` holds every file exactly as in
+  the repo, and `pack` holds the data commit, the license and the credits.
+  The table layout is described at the top of `tools/packs/sqlite.py`.
 
 Packs are build output, so `build/` is ignored by git. CI exports every
 language in every format on each pull request and checks the packs against the
