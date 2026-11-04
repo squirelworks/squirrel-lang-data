@@ -1,0 +1,250 @@
+{
+  "schema": "reference@1",
+  "language": "greek",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Greek at a glance",
+      "body": [
+        "Modern Greek is the official language of Greece and Cyprus, spoken by about 13 million people. It is its own branch of the Indo-European family, and it has been written in the Greek alphabet for nearly three thousand years.",
+        "Nouns have three genders and change their ending for case; the article in front shows both. Verbs mark the person with an ending, so pronouns are usually left out. Word order is flexible, though subject–verb–object is the most common."
+      ],
+      "examples": [
+        {
+          "t": "{Μιλάω} λίγα ελληνικά.",
+          "r": "Miláo líga elliniká.",
+          "e": "I speak a little Greek."
+        }
+      ],
+      "tags": ["Indo-European", "gender", "cases"]
+    },
+    {
+      "id": "alphabet",
+      "topic": "script",
+      "title": "The alphabet",
+      "body": [
+        "Greek has 24 letters, each with a capital and a small form. Sigma has two small forms: σ inside a word and ς at the end.",
+        "Several letters look like Latin ones but sound different: Η η is i, Ρ ρ is r, Ν ν is n, Υ υ is i, Χ χ is the ch in Bach, and Β β is v."
+      ],
+      "table": {
+        "head": ["Letter", "Name", "Sound"],
+        "rows": [
+          ["Α α", "άλφα", "a"],
+          ["Β β", "βήτα", "v"],
+          ["Γ γ", "γάμμα", "gh, or y before e/i"],
+          ["Δ δ", "δέλτα", "th as in this"],
+          ["Ε ε", "έψιλον", "e"],
+          ["Ζ ζ", "ζήτα", "z"],
+          ["Η η", "ήτα", "i"],
+          ["Θ θ", "θήτα", "th as in thin"],
+          ["Ι ι", "γιώτα", "i"],
+          ["Κ κ", "κάππα", "k"],
+          ["Λ λ", "λάμδα", "l"],
+          ["Μ μ", "μι", "m"],
+          ["Ν ν", "νι", "n"],
+          ["Ξ ξ", "ξι", "ks"],
+          ["Ο ο", "όμικρον", "o"],
+          ["Π π", "πι", "p"],
+          ["Ρ ρ", "ρο", "r (tapped)"],
+          ["Σ σ ς", "σίγμα", "s"],
+          ["Τ τ", "ταυ", "t"],
+          ["Υ υ", "ύψιλον", "i"],
+          ["Φ φ", "φι", "f"],
+          ["Χ χ", "χι", "ch as in Bach"],
+          ["Ψ ψ", "ψι", "ps"],
+          ["Ω ω", "ωμέγα", "o"]
+        ]
+      },
+      "tags": ["script", "letters"]
+    },
+    {
+      "id": "digraphs",
+      "topic": "sounds",
+      "title": "Letter pairs",
+      "body": "Some pairs of letters make one sound. Several spellings share the sound i, so spelling has to be learned word by word.",
+      "table": {
+        "head": ["Pair", "Sound", "Example"],
+        "rows": [
+          ["ει, οι, υι", "i", "{ει}μαι, “I am”"],
+          ["αι", "e", "κ{αι}, “and”"],
+          ["ου", "u", "π{ου}, “where”"],
+          ["αυ, ευ", "av / ev, or af / ef", "{αυ}τός, “he”"],
+          ["μπ", "b (mb inside a word)", "{μπ}ύρα, “beer”"],
+          ["ντ", "d (nd inside a word)", "{ντ}ομάτα, “tomato”"],
+          ["γκ, γγ", "g (ng inside a word)", "{γκ}αράζ, “garage”"],
+          ["τσ, τζ", "ts, dz", "{τσ}άι, “tea”"]
+        ]
+      },
+      "tags": ["pronunciation", "digraphs"]
+    },
+    {
+      "id": "stress",
+      "topic": "sounds",
+      "title": "The stress mark",
+      "body": "Every word of more than one syllable carries an accent (τόνος) on its stressed vowel. It matters: πότε means “when?” but ποτέ means “never”. Capitals written in full (ΑΘΗΝΑ) drop the accent.",
+      "examples": [
+        {
+          "t": "π{ό}τε · ποτ{έ}",
+          "r": "póte · poté",
+          "e": "when? · never"
+        },
+        {
+          "t": "ν{ό}μος · νομ{ό}ς",
+          "r": "nómos · nomós",
+          "e": "law · prefecture"
+        }
+      ],
+      "tags": ["stress", "accent"]
+    },
+    {
+      "id": "punctuation",
+      "topic": "script",
+      "title": "Punctuation",
+      "body": "Greek writes the question mark as ; and the raised dot · as a semicolon. Commas and full stops are the same as in English.",
+      "examples": [
+        {
+          "t": "Τι κάνεις{;}",
+          "r": "Ti kánis?",
+          "e": "How are you?"
+        }
+      ],
+      "tags": ["punctuation"]
+    },
+    {
+      "id": "articles",
+      "topic": "grammar",
+      "title": "The article",
+      "body": "“The” agrees with its noun in gender, number and case. The forms below are the ones a beginner meets most: subject (nominative) and object (accusative).",
+      "table": {
+        "head": ["", "Masculine", "Feminine", "Neuter"],
+        "rows": [
+          ["Subject, singular", "ο", "η", "το"],
+          ["Object, singular", "τον", "την", "το"],
+          ["Subject, plural", "οι", "οι", "τα"],
+          ["Object, plural", "τους", "τις", "τα"],
+          ["“a, one”", "ένας", "μία / μια", "ένα"]
+        ]
+      },
+      "tags": ["articles", "gender", "cases"]
+    },
+    {
+      "id": "noun-endings",
+      "topic": "grammar",
+      "title": "Common noun endings",
+      "body": "The ending of a noun usually gives away its gender, and tells you how it makes its plural.",
+      "table": {
+        "head": ["Gender", "Singular", "Plural", "Example"],
+        "rows": [
+          ["Masculine", "-ος", "-οι", "ο φίλος → οι φίλοι"],
+          ["Masculine", "-ας", "-ες", "ο άντρας → οι άντρες"],
+          ["Masculine", "-ης", "-ες", "ο μαθητής → οι μαθητές"],
+          ["Feminine", "-α", "-ες", "η ώρα → οι ώρες"],
+          ["Feminine", "-η", "-ες", "η φωνή → οι φωνές"],
+          ["Neuter", "-ο", "-α", "το βιβλίο → τα βιβλία"],
+          ["Neuter", "-ι", "-ια", "το σπίτι → τα σπίτια"],
+          ["Neuter", "-μα", "-ματα", "το όνομα → τα ονόματα"]
+        ]
+      },
+      "tags": ["nouns", "plural"]
+    },
+    {
+      "id": "present",
+      "topic": "verbs",
+      "title": "The present tense",
+      "body": "Two main patterns. Verbs stressed before the ending (group A) and verbs stressed on the ending (group B). Είμαι, “to be”, is irregular.",
+      "table": {
+        "head": ["", "γράφω, write", "μιλάω, speak", "είμαι, be"],
+        "rows": [
+          ["I", "γράφω", "μιλάω", "είμαι"],
+          ["you", "γράφεις", "μιλάς", "είσαι"],
+          ["he, she, it", "γράφει", "μιλάει", "είναι"],
+          ["we", "γράφουμε", "μιλάμε", "είμαστε"],
+          ["you (pl.)", "γράφετε", "μιλάτε", "είστε"],
+          ["they", "γράφουν", "μιλάνε", "είναι"]
+        ]
+      },
+      "tags": ["verbs", "present"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Numbers",
+      "body": "One, three and four change with the gender of the noun (ένας / μία / ένα, τρεις / τρία, τέσσερις / τέσσερα). The rest do not.",
+      "table": {
+        "head": ["", "Greek", "Romanization"],
+        "rows": [
+          ["1", "ένα", "éna"],
+          ["2", "δύο", "dío"],
+          ["3", "τρία", "tría"],
+          ["4", "τέσσερα", "téssera"],
+          ["5", "πέντε", "pénde"],
+          ["6", "έξι", "éxi"],
+          ["7", "επτά / εφτά", "eptá / eftá"],
+          ["8", "οκτώ / οχτώ", "októ / ochtó"],
+          ["9", "εννέα / εννιά", "ennéa / enniá"],
+          ["10", "δέκα", "déka"],
+          ["20", "είκοσι", "íkosi"],
+          ["100", "εκατό", "ekató"],
+          ["1000", "χίλια", "chília"]
+        ]
+      },
+      "tags": ["numbers"]
+    },
+    {
+      "id": "phrases",
+      "topic": "phrases",
+      "title": "Everyday phrases",
+      "examples": [
+        {
+          "t": "Γεια σας.",
+          "r": "Giá sas.",
+          "e": "Hello. (polite or to several people)"
+        },
+        {
+          "t": "Καλημέρα.",
+          "r": "Kaliméra.",
+          "e": "Good morning."
+        },
+        {
+          "t": "Ευχαριστώ πολύ.",
+          "r": "Efcharistó polí.",
+          "e": "Thank you very much."
+        },
+        {
+          "t": "Παρακαλώ.",
+          "r": "Parakaló.",
+          "e": "Please. / You're welcome."
+        },
+        {
+          "t": "Συγγνώμη, δεν καταλαβαίνω.",
+          "r": "Signómi, den katalavéno.",
+          "e": "Sorry, I don't understand."
+        },
+        {
+          "t": "Πόσο κάνει;",
+          "r": "Póso káni?",
+          "e": "How much is it?"
+        },
+        {
+          "t": "Τον λογαριασμό, παρακαλώ.",
+          "r": "Ton logariasmó, parakaló.",
+          "e": "The bill, please."
+        },
+        {
+          "t": "Στην υγειά μας!",
+          "r": "Stin igiá mas!",
+          "e": "Cheers! (to our health)"
+        }
+      ],
+      "tags": ["phrases", "travel"]
+    },
+    {
+      "id": "nai-ochi",
+      "topic": "culture",
+      "title": "Ναι means yes",
+      "body": "Ναι (ne) is “yes” and όχι (óchi) is “no”, the reverse of what English ears expect. In conversation a small upward nod with raised eyebrows, often with a click of the tongue, also means no.",
+      "tags": ["culture", "gestures"]
+    }
+  ]
+}

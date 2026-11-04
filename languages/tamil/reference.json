@@ -1,0 +1,215 @@
+{
+  "schema": "reference@1",
+  "language": "tamil",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Tamil at a glance",
+      "body": [
+        "Tamil is a Dravidian language with about 85 million speakers, official in Tamil Nadu, Sri Lanka and Singapore. Its literature goes back over two thousand years, to the Sangam poems, and it was the first language to be declared a classical language of India.",
+        "Tamil builds words by adding suffixes in a fixed order. The verb comes last and agrees with the subject, including its gender and politeness. There is a wide gap between the formal written language and everyday speech."
+      ],
+      "examples": [
+        {
+          "t": "நான் தமிழ் {படிக்கிறேன்}.",
+          "r": "Naan thamizh padikkiren.",
+          "e": "I am learning Tamil."
+        }
+      ],
+      "tags": ["Dravidian", "agglutinative", "diglossia"]
+    },
+    {
+      "id": "script",
+      "topic": "script",
+      "title": "How Tamil script works",
+      "body": [
+        "Tamil script has 12 vowels and 18 consonants, plus the special letter ஃ (aaytham). Each consonant carries a short a, and the other vowels are marks around it, giving 216 combined letters. The dot above (புள்ளி) removes the vowel: க் is k alone.",
+        "Tamil has fewer letters than other Indian scripts because one letter covers several sounds: க is k, g or h depending on where it falls in the word."
+      ],
+      "table": {
+        "head": ["Vowel", "Mark", "With க"],
+        "rows": [
+          ["a", "", "க ka"],
+          ["aa", "ா", "கா kaa"],
+          ["i", "ி", "கி ki"],
+          ["ii", "ீ", "கீ kii"],
+          ["u", "ு", "கு ku"],
+          ["uu", "ூ", "கூ kuu"],
+          ["e", "ெ", "கெ ke"],
+          ["ee", "ே", "கே kee"],
+          ["ai", "ை", "கை kai"],
+          ["o", "ொ", "கொ ko"],
+          ["oo", "ோ", "கோ koo"],
+          ["au", "ௌ", "கௌ kau"],
+          ["(none)", "்", "க் k"]
+        ]
+      },
+      "tags": ["script", "abugida", "pulli"]
+    },
+    {
+      "id": "zh",
+      "topic": "sounds",
+      "title": "The letter ழ",
+      "body": "ழ is a sound few languages have: an r-like approximant made with the tongue curled far back, written zh in transliteration. It is in the name of the language itself, தமிழ் (thamizh). Tamil also distinguishes three l sounds (ல, ள, ழ), two r sounds (ர, ற) and three n sounds (ந, ன, ண).",
+      "examples": [
+        {
+          "t": "தமி{ழ்} · வா{ழ}ைப்ப{ழ}ம்",
+          "r": "thamizh · vaazhaippazham",
+          "e": "Tamil · banana"
+        }
+      ],
+      "tags": ["pronunciation", "retroflex"]
+    },
+    {
+      "id": "present",
+      "topic": "verbs",
+      "title": "The present tense",
+      "body": "Stem + -கிற்- + a person ending. The endings are the same in the past (-த்- / -ன்-) and future (-வ்- / -ப்-) with a different tense marker.",
+      "table": {
+        "head": ["Subject", "Ending", "படி, study", "பேசு, speak"],
+        "rows": [
+          ["நான் I", "-ஏன்", "படிக்கிறேன்", "பேசுகிறேன்"],
+          ["நீ you", "-ஆய்", "படிக்கிறாய்", "பேசுகிறாய்"],
+          [
+            "நீங்கள் you (polite)",
+            "-ஈர்கள்",
+            "படிக்கிறீர்கள்",
+            "பேசுகிறீர்கள்"
+          ],
+          ["அவன் he", "-ஆன்", "படிக்கிறான்", "பேசுகிறான்"],
+          ["அவள் she", "-ஆள்", "படிக்கிறாள்", "பேசுகிறாள்"],
+          ["அவர் he / she (polite)", "-ஆர்", "படிக்கிறார்", "பேசுகிறார்"],
+          ["நாங்கள் we", "-ஓம்", "படிக்கிறோம்", "பேசுகிறோம்"],
+          ["அவர்கள் they", "-ஆர்கள்", "படிக்கிறார்கள்", "பேசுகிறார்கள்"]
+        ]
+      },
+      "tags": ["verbs", "present"]
+    },
+    {
+      "id": "cases",
+      "topic": "grammar",
+      "title": "Case endings",
+      "body": "Endings join the noun. Nouns in -ம் change it to -த்து- or -த்- before most of them: மரம் → மரத்தில்.",
+      "table": {
+        "head": ["Ending", "Meaning", "Example"],
+        "rows": [
+          ["-ஐ", "object", "அவனை, him"],
+          ["-க்கு", "to, for", "கடைக்கு, to the shop"],
+          ["-இல்", "in, at", "வீட்டில், at home"],
+          ["-இலிருந்து", "from", "ஊரிலிருந்து, from the town"],
+          ["-ஆல்", "by, with (a tool)", "பேனாவால், with a pen"],
+          ["-ஓடு / -உடன்", "with (a person)", "நண்பனோடு, with a friend"],
+          ["-உடைய / -இன்", "of, 's", "ராமுடைய, Ram's"]
+        ]
+      },
+      "tags": ["cases"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Numbers",
+      "body": "Tamil has its own numerals (௧ ௨ ௩ …) but they are rarely used today; everyday writing uses 0–9.",
+      "table": {
+        "head": ["", "Tamil", "Transliteration"],
+        "rows": [
+          ["1", "ஒன்று", "ondru"],
+          ["2", "இரண்டு", "irandu"],
+          ["3", "மூன்று", "moondru"],
+          ["4", "நான்கு", "naangu"],
+          ["5", "ஐந்து", "aindhu"],
+          ["6", "ஆறு", "aaru"],
+          ["7", "ஏழு", "ezhu"],
+          ["8", "எட்டு", "ettu"],
+          ["9", "ஒன்பது", "onbadhu"],
+          ["10", "பத்து", "paththu"],
+          ["100", "நூறு", "nooru"],
+          ["1000", "ஆயிரம்", "aayiram"]
+        ]
+      },
+      "tags": ["numbers"]
+    },
+    {
+      "id": "phrases",
+      "topic": "phrases",
+      "title": "Everyday phrases",
+      "examples": [
+        {
+          "t": "வணக்கம்! எப்படி இருக்கிறீர்கள்?",
+          "r": "Vanakkam! Eppadi irukkireergal?",
+          "e": "Hello! How are you?"
+        },
+        {
+          "t": "ரொம்ப நன்றி.",
+          "r": "Romba nandri.",
+          "e": "Thank you very much."
+        },
+        {
+          "t": "எனக்குப் புரியவில்லை.",
+          "r": "Enakkup puriyavillai.",
+          "e": "I don't understand."
+        },
+        {
+          "t": "இது எவ்வளவு?",
+          "r": "Idhu evvalavu?",
+          "e": "How much is this?"
+        },
+        {
+          "t": "மெதுவாகப் பேசுங்கள்.",
+          "r": "Medhuvaagap pesungal.",
+          "e": "Please speak slowly."
+        },
+        {
+          "t": "ஒரு காபி கொடுங்கள்.",
+          "r": "Oru kaapi kodungal.",
+          "e": "A coffee, please."
+        }
+      ],
+      "tags": ["phrases", "travel"]
+    },
+    {
+      "id": "pongal",
+      "topic": "culture",
+      "title": "Pongal",
+      "body": "Pongal is the Tamil harvest festival in mid-January. Rice is boiled with milk and jaggery in a new pot until it bubbles over, while people call out “பொங்கலோ பொங்கல்!” The overflowing pot stands for plenty in the coming year, and the third day honours the cattle that work the fields.",
+      "tags": ["culture", "festivals"]
+    },
+    {
+      "id": "politeness",
+      "topic": "grammar",
+      "title": "நீ and நீங்கள்",
+      "body": "நீ (nī) is familiar “you”; நீங்கள் (nīngal) is polite or plural “you”, and the verb ending follows. Third-person polite speech often uses அவர் (avar).",
+      "table": {
+        "head": ["", "Familiar", "Polite"],
+        "rows": [
+          ["you", "நீ nī", "நீங்கள் nīngal"],
+          [
+            "are / exist",
+            "இருக்கிறாய் irukkiraay",
+            "இருக்கிறீர்கள் irukkireergal"
+          ]
+        ]
+      },
+      "tags": ["politeness"]
+    },
+    {
+      "id": "negation",
+      "topic": "grammar",
+      "title": "Negation with இல்லை",
+      "body": "இல்லை (illai) negates existence and many statements (“is not / does not”). Verb-based negatives also use forms like ‑வில்லை on a verbal noun: புரியவில்லை “do not understand”.",
+      "examples": [
+        {
+          "t": "எனக்குப் புரிய{வில்லை}.",
+          "r": "Enakkup puriyavillai.",
+          "e": "I don't understand."
+        },
+        {
+          "t": "அது பிரச்சினை {இல்லை}.",
+          "r": "Adhu pirachchinai illai.",
+          "e": "That is not a problem."
+        }
+      ],
+      "tags": ["negation"]
+    }
+  ]
+}

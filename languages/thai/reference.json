@@ -1,0 +1,229 @@
+{
+  "schema": "reference@1",
+  "language": "thai",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Thai at a glance",
+      "body": [
+        "Thai is the national language of Thailand, a Tai–Kadai language closely related to Lao. It is tonal: each syllable has one of five tones, and the tone changes the meaning.",
+        "Words never change form. There are no endings for tense, plural or gender; word order and small helper words do that work. Polite speech ends with ครับ (men) or ค่ะ (women)."
+      ],
+      "examples": [
+        {
+          "t": "ผม{กิน}ข้าว{แล้ว}ครับ",
+          "r": "Phom kin khao laeo khrap.",
+          "e": "I have already eaten. (a man)"
+        }
+      ],
+      "tags": ["Tai–Kadai", "tonal", "analytic"]
+    },
+    {
+      "id": "script",
+      "topic": "script",
+      "title": "How Thai script works",
+      "body": [
+        "Thai has 44 consonant letters and about 30 vowel forms. Vowels are written before, after, above or below the consonant they follow in speech: in เก (ke), the vowel เ is written first but said second.",
+        "Words are written without spaces between them; a space marks the end of a phrase or sentence. There are no capital letters."
+      ],
+      "examples": [
+        {
+          "t": "ก + า = กา · ก + ิ = กิ · เ + ก = เก · ก + ุ = กุ",
+          "e": "the vowel can sit after, above, before or below"
+        },
+        {
+          "t": "ผมชอบกินข้าวผัด",
+          "r": "phom chop kin khao phat",
+          "e": "I like to eat fried rice. (no spaces between words)"
+        }
+      ],
+      "tags": ["script", "abugida", "spacing"]
+    },
+    {
+      "id": "tones",
+      "topic": "sounds",
+      "title": "The five tones",
+      "body": "Each syllable has one of five tones. The classic example is the syllable maa (or mai), which is a different word in each tone.",
+      "table": {
+        "head": ["Tone", "Shape", "Example", "Meaning"],
+        "rows": [
+          ["Mid", "level, middle of the voice", "มา ma", "come"],
+          ["Low", "level, low", "ใหม่ mai", "new"],
+          ["Falling", "high, then falling", "ไม่ mai", "not"],
+          ["High", "high, rising slightly", "ม้า ma", "horse"],
+          ["Rising", "low, then rising", "หมา ma", "dog"]
+        ]
+      },
+      "tags": ["tones", "pronunciation"]
+    },
+    {
+      "id": "classes",
+      "topic": "script",
+      "title": "Consonant classes and tone marks",
+      "body": [
+        "Every consonant belongs to one of three classes: middle, high or low. The tone of a syllable comes from the class of its first consonant, whether the syllable ends in a stop (live or dead syllable), the vowel length, and any tone mark.",
+        "There are four tone marks: ่ (mai ek), ้ (mai tho), ๊ (mai tri) and ๋ (mai chattawa). The same mark gives different tones on different classes, so learn the class with each letter."
+      ],
+      "table": {
+        "head": ["Class", "Some letters", "Unmarked live syllable"],
+        "rows": [
+          ["Middle", "ก จ ด ต บ ป อ", "mid tone: กา ka"],
+          ["High", "ข ฉ ถ ผ ฝ ส ห", "rising tone: ขา kha"],
+          ["Low", "ค ง ช น ม ร ล ว", "mid tone: คา kha"]
+        ]
+      },
+      "tags": ["tones", "consonant classes"]
+    },
+    {
+      "id": "pronouns",
+      "topic": "grammar",
+      "title": "Pronouns and polite endings",
+      "body": "The word for “I” depends on who is speaking and to whom. Pronouns are often dropped when the meaning is clear, and people are often addressed by their name or a kin word like พี่ (older sibling) instead of “you”.",
+      "table": {
+        "head": ["Word", "Romanization", "Use"],
+        "rows": [
+          ["ผม", "phom", "I (man, polite)"],
+          ["ฉัน / ดิฉัน", "chan / dichan", "I (woman; ดิฉัน is formal)"],
+          ["คุณ", "khun", "you (polite)"],
+          ["เขา", "khao", "he, she, they"],
+          ["เรา", "rao", "we"],
+          ["ครับ", "khrap", "polite ending, man"],
+          ["ค่ะ / คะ", "kha", "polite ending, woman (คะ in questions)"]
+        ]
+      },
+      "tags": ["pronouns", "politeness"]
+    },
+    {
+      "id": "markers",
+      "topic": "verbs",
+      "title": "Time and aspect words",
+      "body": "Verbs never change. These words, placed around the verb, show when something happens.",
+      "table": {
+        "head": ["Word", "Place", "Meaning", "Example"],
+        "rows": [
+          ["จะ ja", "before the verb", "will", "ฉันจะไป, I will go"],
+          [
+            "กำลัง kamlang",
+            "before the verb",
+            "is doing now",
+            "เขากำลังกิน, he is eating"
+          ],
+          [
+            "แล้ว laeo",
+            "after the verb phrase",
+            "already, done",
+            "กินแล้ว, I've eaten"
+          ],
+          ["เคย khoei", "before the verb", "have ever", "เคยไป, have been"],
+          [
+            "ยัง yang",
+            "before the verb",
+            "still; not yet (with ไม่)",
+            "ยังไม่ไป, haven't gone yet"
+          ]
+        ]
+      },
+      "tags": ["verbs", "tense", "aspect"]
+    },
+    {
+      "id": "classifiers",
+      "topic": "grammar",
+      "title": "Classifiers",
+      "body": "When counting, the order is noun, number, classifier. Each kind of thing has its own classifier.",
+      "table": {
+        "head": ["Classifier", "Used for", "Example"],
+        "rows": [
+          ["คน khon", "people", "เพื่อนสองคน, two friends"],
+          ["ตัว tua", "animals, clothes, chairs", "แมวสามตัว, three cats"],
+          ["เล่ม lem", "books, knives", "หนังสือหนึ่งเล่ม, one book"],
+          ["คัน khan", "cars, umbrellas", "รถสองคัน, two cars"],
+          ["อัน an", "small things in general", "อันนี้, this one"],
+          [
+            "แก้ว kaeo",
+            "glasses, cups of a drink",
+            "กาแฟสองแก้ว, two coffees"
+          ],
+          ["ขวด khuat", "bottles", "น้ำสามขวด, three bottles of water"]
+        ]
+      },
+      "tags": ["classifiers", "counting"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Numbers and Thai digits",
+      "body": "Thailand uses both Arabic digits and its own digits; prices and dates are usually in Arabic digits, but Thai digits appear on official documents and some price signs.",
+      "table": {
+        "head": ["", "Thai digit", "Word", "Romanization"],
+        "rows": [
+          ["0", "๐", "ศูนย์", "sun"],
+          ["1", "๑", "หนึ่ง", "nueng"],
+          ["2", "๒", "สอง", "song"],
+          ["3", "๓", "สาม", "sam"],
+          ["4", "๔", "สี่", "si"],
+          ["5", "๕", "ห้า", "ha"],
+          ["6", "๖", "หก", "hok"],
+          ["7", "๗", "เจ็ด", "chet"],
+          ["8", "๘", "แปด", "paet"],
+          ["9", "๙", "เก้า", "kao"],
+          ["10", "๑๐", "สิบ", "sip"],
+          ["11", "๑๑", "สิบเอ็ด", "sip et"],
+          ["20", "๒๐", "ยี่สิบ", "yi sip"],
+          ["100", "๑๐๐", "ร้อย", "roi"]
+        ]
+      },
+      "tags": ["numbers", "digits"]
+    },
+    {
+      "id": "phrases",
+      "topic": "phrases",
+      "title": "Everyday phrases",
+      "examples": [
+        {
+          "t": "สวัสดีครับ / ค่ะ",
+          "r": "Sawatdi khrap / kha.",
+          "e": "Hello. (man / woman)"
+        },
+        {
+          "t": "ขอบคุณมากครับ",
+          "r": "Khop khun mak khrap.",
+          "e": "Thank you very much."
+        },
+        {
+          "t": "ไม่เป็นไร",
+          "r": "Mai pen rai.",
+          "e": "Never mind. / No problem."
+        },
+        {
+          "t": "อันนี้เท่าไร",
+          "r": "An ni thao rai?",
+          "e": "How much is this?"
+        },
+        {
+          "t": "ไม่เผ็ดนะครับ",
+          "r": "Mai phet na khrap.",
+          "e": "Not spicy, please."
+        },
+        {
+          "t": "ห้องน้ำอยู่ที่ไหนคะ",
+          "r": "Hong nam yu thi nai kha?",
+          "e": "Where is the toilet? (a woman)"
+        },
+        {
+          "t": "พูดช้าๆ ได้ไหม",
+          "r": "Phut cha cha dai mai?",
+          "e": "Could you speak slowly?"
+        }
+      ],
+      "tags": ["phrases", "travel"]
+    },
+    {
+      "id": "wai",
+      "topic": "culture",
+      "title": "The wai",
+      "body": "The wai (ไหว้) is the Thai greeting: palms pressed together at the chest, with a slight bow. The younger or junior person wais first, and the higher the hands, the more respect. Monks are not expected to return a wai, and a shop worker's wai is usually answered with a smile or a nod.",
+      "tags": ["culture", "greetings"]
+    }
+  ]
+}

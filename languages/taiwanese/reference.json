@@ -1,0 +1,459 @@
+{
+  "schema": "reference@1",
+  "language": "taiwanese",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Taiwan Mandarin at a glance",
+      "body": [
+        "Taiwan Mandarin (臺灣華語) has almost no inflection: verbs do not change for person or tense, and nouns do not change for number. Meaning comes from word order, small particles and context.",
+        "It is tonal: the pitch contour of a syllable is part of the word. Taiwan uses traditional characters and teaches pronunciation with Zhuyin (注音, Bopomofo) as well as pinyin.",
+        "Local words differ from mainland usage: 捷運 for the metro, 計程車 for taxi, 影片 for video, 軟體 for software."
+      ],
+      "examples": [
+        {
+          "t": "我喝茶。",
+          "r": "ㄨㄛˇ ㄏㄜ ㄔㄚˊ. · Wǒ hē chá.",
+          "e": "I drink tea. / I drank tea."
+        },
+        {
+          "t": "他們喝茶。",
+          "r": "ㄊㄚ ㄇㄣ˙ ㄏㄜ ㄔㄚˊ. · Tāmen hē chá.",
+          "e": "They drink tea. (the verb stays the same)"
+        }
+      ],
+      "tags": ["SVO", "tones", "zhuyin", "traditional"]
+    },
+    {
+      "id": "tones",
+      "topic": "sounds",
+      "title": "The four tones",
+      "body": "Each syllable has one of four tones, or a light neutral tone. Zhuyin marks tones with symbols after the Bopomofo letters; pinyin uses diacritics.",
+      "examples": [
+        {
+          "t": "媽媽罵馬嗎？",
+          "r": "ㄇㄚ ㄇㄚ˙ ㄇㄚˋ ㄇㄚˇ ㄇㄚ˙? · Māma mà mǎ ma?",
+          "e": "Is mum scolding the horse?"
+        }
+      ],
+      "table": {
+        "head": ["Tone", "Contour", "Example"],
+        "rows": [
+          ["1st · ā", "high and level", "媽 mā · mother"],
+          ["2nd · á", "rising, as in a question: what?", "麻 má · hemp"],
+          ["3rd · ǎ", "low, dipping (often just low)", "馬 mǎ · horse"],
+          ["4th · à", "sharply falling, as in a command", "罵 mà · to scold"],
+          ["neutral · a", "short and light", "嗎 ma · question particle"]
+        ]
+      },
+      "tags": ["pronunciation", "tones"]
+    },
+    {
+      "id": "tone-sandhi",
+      "topic": "sounds",
+      "title": "Tone changes",
+      "body": "A few tones change in context. Pinyin is usually written with the original tone, so learn the rule rather than the spelling.",
+      "table": {
+        "head": ["Rule", "Example"],
+        "rows": [
+          ["3rd + 3rd → 2nd + 3rd", "你好 nǐ hǎo is said ní hǎo"],
+          ["不 bù → bú before a 4th tone", "不是 bú shì · is not"],
+          ["一 yī → yí before a 4th tone", "一個 yí ge · one (of something)"],
+          ["一 yī → yì before tones 1, 2, 3", "一天 yì tiān · one day"]
+        ]
+      },
+      "tags": ["pronunciation", "tones", "sandhi"]
+    },
+    {
+      "id": "pinyin-traps",
+      "topic": "sounds",
+      "title": "Pinyin letters that fool English speakers",
+      "table": {
+        "head": ["Pinyin", "Sounds like", "Example"],
+        "rows": [
+          ["q", "ch in cheese, tongue flat", "七 qī · seven"],
+          ["x", "sh in sheep, tongue flat", "謝 xiè · thank"],
+          ["j", "j in jeep, tongue flat", "家 jiā · home"],
+          [
+            "zh · ch · sh",
+            "j, ch, sh with the tongue curled back",
+            "中 zhōng · 吃 chī · 是 shì"
+          ],
+          ["c", "ts in cats", "菜 cài · dish"],
+          ["z", "ds in reads", "在 zài · at"],
+          ["r", "between English r and the s in measure", "人 rén · person"],
+          [
+            "ü (u after j q x y)",
+            "ee said with rounded lips",
+            "去 qù · go; 綠 lǜ · green"
+          ],
+          [
+            "-i after z c s zh ch sh r",
+            "a buzzing continuation of the consonant, not ee",
+            "四 sì · 十 shí"
+          ]
+        ]
+      },
+      "tags": ["pronunciation", "pinyin"]
+    },
+    {
+      "id": "simplified-traditional",
+      "topic": "script",
+      "title": "Simplified and Traditional characters",
+      "body": "Mainland China and Singapore use {Simplified} characters, introduced in the 1950s and 60s. Taiwan, Hong Kong and Macau use {Traditional} characters. About a third of common characters differ; many, like 人 and 大, are the same in both.",
+      "table": {
+        "head": ["Simplified", "Traditional", "Meaning"],
+        "rows": [
+          ["門", "門", "door"],
+          ["馬", "馬", "horse"],
+          ["語", "語", "language"],
+          ["學", "學", "study"],
+          ["國", "國", "country"],
+          ["東", "東", "east"]
+        ]
+      },
+      "tags": ["characters", "hanzi"]
+    },
+    {
+      "id": "radicals",
+      "topic": "script",
+      "title": "Radicals",
+      "body": "Most characters combine a meaning part (the radical) and a sound hint. Spotting the radical gives you a clue to meaning and is how paper dictionaries are ordered.",
+      "table": {
+        "head": ["Radical", "Meaning", "Examples"],
+        "rows": [
+          ["氵", "water", "河 river · 海 sea · 洗 wash"],
+          ["木", "tree, wood", "林 grove · 森 forest · 桌 table"],
+          ["口", "mouth", "吃 eat · 喝 drink · 叫 call"],
+          ["亻", "person", "你 you · 他 he · 休 rest"],
+          ["訁", "speech", "說 speak · 話 words · 語 language"],
+          ["女", "woman", "媽 mother · 姐 elder sister · 好 good"]
+        ]
+      },
+      "tags": ["characters", "radicals"]
+    },
+    {
+      "id": "word-order",
+      "topic": "grammar",
+      "title": "Word order: time and place first",
+      "body": "The order is subject, time, place, verb, object. Time words can also go before the subject. Unlike English, when and where never come at the end.",
+      "examples": [
+        {
+          "t": "我{明天}{在家}學習。",
+          "r": "ㄨㄛˇ ㄇㄧㄥˊ ㄊㄧㄢ ㄗㄞˋ ㄐㄧㄚ ㄒㄩㄝˊ ㄒㄧˊ. · Wǒ míngtiān zài jiā xuéxí.",
+          "e": "I will study at home tomorrow."
+        },
+        {
+          "t": "{昨天}我{在商店}買了一本書。",
+          "r": "ㄗㄨㄛˊ ㄊㄧㄢ ㄨㄛˇ ㄗㄞˋ ㄕㄤ ㄉㄧㄢˋ ㄇㄞˇ ㄌㄜ˙ ㄧˋ ㄅㄣˇ ㄕㄨ. · Zuótiān wǒ zài shāngdiàn mǎi le yì běn shū.",
+          "e": "Yesterday I bought a book at the shop."
+        }
+      ],
+      "tags": ["word order"]
+    },
+    {
+      "id": "measure-words",
+      "topic": "grammar",
+      "title": "Measure words",
+      "body": "A number or 這 / 那 (this / that) can't go straight before a noun; a measure word goes between. 個 gè is the general one. Use 兩 liǎng, not 二 èr, for two of something.",
+      "table": {
+        "head": ["Measure", "Used for", "Example"],
+        "rows": [
+          ["個 gè", "people, most things", "一個人 · a person"],
+          ["本 běn", "books", "一本書 · a book"],
+          [
+            "張 zhāng",
+            "flat things: paper, tables, tickets",
+            "兩張紙 · two sheets of paper"
+          ],
+          ["只 zhī", "animals, one of a pair", "三隻貓 · three cats"],
+          ["杯 bēi", "cups of", "一杯茶 · a cup of tea"],
+          ["條 tiáo", "long, winding things", "一條河 · a river"]
+        ]
+      },
+      "tags": ["measure words", "classifiers"]
+    },
+    {
+      "id": "aspect",
+      "topic": "verbs",
+      "title": "了, 過 and 在",
+      "body": "Chinese marks aspect, not tense. 了 le shows that an action is completed or a situation has changed. 過 guo means have ever done. 在 zài before a verb means in the middle of doing.",
+      "examples": [
+        {
+          "t": "我吃{了}。",
+          "r": "ㄨㄛˇ ㄔ ㄌㄜ˙. · Wǒ chī le.",
+          "e": "I've eaten."
+        },
+        {
+          "t": "下雨{了}。",
+          "r": "ㄒㄧㄚˋ ㄩˇ ㄌㄜ˙. · Xià yǔ le.",
+          "e": "It's started raining. (a change)"
+        },
+        {
+          "t": "我去{過}中國。",
+          "r": "ㄨㄛˇ ㄑㄩˋ ㄍㄨㄛ˙ ㄓㄨㄥ ㄍㄨㄛˊ. · Wǒ qù guo Zhōngguó.",
+          "e": "I have been to China."
+        },
+        {
+          "t": "他{在}看書。",
+          "r": "ㄊㄚ ㄗㄞˋ ㄎㄢˋ ㄕㄨ. · Tā zài kàn shū.",
+          "e": "He is reading."
+        }
+      ],
+      "tags": ["aspect", "verbs"]
+    },
+    {
+      "id": "negation",
+      "topic": "grammar",
+      "title": "不 and 沒",
+      "body": "{不} bù negates the present, the future, habits and adjectives. {沒} méi negates the past and is the only way to negate 有 (have).",
+      "examples": [
+        {
+          "t": "我{不}去。",
+          "r": "ㄨㄛˇ ㄅㄨˊ ㄑㄩˋ. · Wǒ bú qù.",
+          "e": "I'm not going. / I won't go."
+        },
+        {
+          "t": "我{沒}去。",
+          "r": "ㄨㄛˇ ㄇㄟˊ ㄑㄩˋ. · Wǒ méi qù.",
+          "e": "I didn't go."
+        },
+        {
+          "t": "我{沒}有錢。",
+          "r": "ㄨㄛˇ ㄇㄟˊ ㄧㄡˇ ㄑㄧㄢˊ. · Wǒ méiyǒu qián.",
+          "e": "I don't have any money."
+        },
+        {
+          "t": "今天{不}冷。",
+          "r": "ㄐㄧㄣ ㄊㄧㄢ ㄅㄨˋ ㄌㄥˇ. · Jīntiān bù lěng.",
+          "e": "It isn't cold today."
+        }
+      ],
+      "tags": ["negation"]
+    },
+    {
+      "id": "questions",
+      "topic": "grammar",
+      "title": "Questions",
+      "body": "Add 嗎 ma to a statement, or repeat the verb with 不 in between (A-not-A). Question words stay where the answer would go; there is no moving them to the front.",
+      "examples": [
+        {
+          "t": "你是學生{嗎}？",
+          "r": "ㄋㄧˇ ㄕˋ ㄒㄩㄝˊ ㄕㄥ˙ ㄇㄚ˙? · Nǐ shì xuésheng ma?",
+          "e": "Are you a student?"
+        },
+        {
+          "t": "你{是不是}學生？",
+          "r": "ㄋㄧˇ ㄕˋ ㄅㄨ˙ ㄕˋ ㄒㄩㄝˊ ㄕㄥ˙? · Nǐ shì bu shì xuésheng?",
+          "e": "Are you a student or not?"
+        },
+        {
+          "t": "你叫{什麼}名字？",
+          "r": "ㄋㄧˇ ㄐㄧㄠˋ ㄕㄣˊ ㄇㄜ˙ ㄇㄧㄥˊ ㄗ˙? · Nǐ jiào shénme míngzi?",
+          "e": "What is your name?"
+        },
+        {
+          "t": "廁所在{哪裡}？",
+          "r": "ㄘㄜˋ ㄙㄨㄛˇ ㄗㄞˋ ㄋㄚˇ ㄌㄧˇ? · Cèsuǒ zài nǎlǐ?",
+          "e": "Where is the toilet?"
+        }
+      ],
+      "tags": ["questions"]
+    },
+    {
+      "id": "de",
+      "topic": "grammar",
+      "title": "The linking particle 的",
+      "body": "的 de joins a describing word or phrase to the noun after it. It marks possession, and it turns whole clauses into descriptions; the description always comes before the noun.",
+      "examples": [
+        {
+          "t": "我{的}書",
+          "r": "ㄨㄛˇ ㄉㄜ˙ ㄕㄨ · wǒ de shū",
+          "e": "my book"
+        },
+        {
+          "t": "紅色{的}車",
+          "r": "ㄏㄨㄥˊ ㄙㄜˋ ㄉㄜ˙ ㄔㄜ · hóngsè de chē",
+          "e": "a red car"
+        },
+        {
+          "t": "我昨天買{的}書",
+          "r": "ㄨㄛˇ ㄗㄨㄛˊ ㄊㄧㄢ ㄇㄞˇ ㄉㄜ˙ ㄕㄨ · wǒ zuótiān mǎi de shū",
+          "e": "the book I bought yesterday"
+        }
+      ],
+      "tags": ["particles", "possession"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Numbers",
+      "body": "一 yī, 二 èr, 三 sān, 四 sì, 五 wǔ, 六 liù, 七 qī, 八 bā, 九 jiǔ, 十 shí. Larger numbers are perfectly regular: 十一 is 11, 二十 is 20, 九十九 is 99. Big numbers group by ten thousands (萬 wàn), not thousands.",
+      "table": {
+        "head": ["Number", "Characters", "Pinyin"],
+        "rows": [
+          ["11", "十一", "shíyī"],
+          ["20", "二十", "èrshí"],
+          ["100", "一百", "yìbǎi"],
+          ["1,000", "一千", "yìqiān"],
+          ["10,000", "一萬", "yíwàn"],
+          ["100,000", "十萬", "shíwàn"],
+          ["1,000,000", "一百萬", "yìbǎiwàn"]
+        ]
+      },
+      "tags": ["numbers"]
+    },
+    {
+      "id": "phrases",
+      "topic": "phrases",
+      "title": "Everyday phrases",
+      "examples": [
+        {
+          "t": "你好",
+          "r": "ㄋㄧˇ ㄏㄠˇ · nǐ hǎo",
+          "e": "Hello."
+        },
+        {
+          "t": "謝謝",
+          "r": "ㄒㄧㄝˋ ㄒㄧㄝ˙ · xièxie",
+          "e": "Thank you."
+        },
+        {
+          "t": "不客氣",
+          "r": "ㄅㄨˊ ㄎㄜˋ ㄑㄧ˙ · bú kèqi",
+          "e": "You're welcome."
+        },
+        {
+          "t": "對不起",
+          "r": "ㄉㄨㄟˋ ㄅㄨ˙ ㄑㄧˇ · duìbuqǐ",
+          "e": "Sorry."
+        },
+        {
+          "t": "沒關係",
+          "r": "ㄇㄟˊ ㄍㄨㄢ ㄒㄧ˙ · méi guānxi",
+          "e": "It doesn't matter. No problem."
+        },
+        {
+          "t": "請問",
+          "r": "ㄑㄧㄥˇ ㄨㄣˋ · qǐngwèn",
+          "e": "Excuse me, may I ask…"
+        },
+        {
+          "t": "我聽不懂",
+          "r": "ㄨㄛˇ ㄊㄧㄥ ㄅㄨ˙ ㄉㄨㄥˇ · wǒ tīng bu dǒng",
+          "e": "I don't understand (what I hear)."
+        },
+        {
+          "t": "再見",
+          "r": "ㄗㄞˋ ㄐㄧㄢˋ · zàijiàn",
+          "e": "Goodbye."
+        }
+      ],
+      "tags": ["greetings"]
+    },
+    {
+      "id": "shared-characters",
+      "topic": "culture",
+      "title": "Characters shared with Japanese and Korean",
+      "body": "Japanese kanji and Korean hanja came from Chinese characters, so many words can be read across all three with different pronunciations. Japan simplified some characters its own way after 1946, so a kanji may match the Simplified form (學), the Traditional one (東), or neither (売, Simplified 賣, Traditional 賣). Hanja are Traditional.",
+      "table": {
+        "head": ["Chinese", "Japanese", "Korean (hanja)", "Meaning"],
+        "rows": [
+          ["學 xué", "學 gaku", "學 hak", "study"],
+          ["國 guó", "國 koku", "國 guk", "country"],
+          ["山 shān", "山 san · yama", "山 san", "mountain"],
+          ["大學 dàxué", "大學 daigaku", "大學 daehak", "university"]
+        ]
+      },
+      "tags": ["characters", "kanji", "hanja"]
+    },
+    {
+      "id": "bi",
+      "topic": "grammar",
+      "title": "Comparisons with 比",
+      "body": "A 比 B + adjective: A is more … than B. Don't add 很 before the adjective. Add 一點 (a bit) or 得多 (much) after it to say how much.",
+      "examples": [
+        {
+          "t": "他{比}我高。",
+          "r": "ㄊㄚ ㄅㄧˇ ㄨㄛˇ ㄍㄠ. · Tā bǐ wǒ gāo.",
+          "e": "He is taller than me."
+        },
+        {
+          "t": "今天{比}昨天冷{一點}。",
+          "r": "ㄐㄧㄣ ㄊㄧㄢ ㄅㄧˇ ㄗㄨㄛˊ ㄊㄧㄢ ㄌㄥˇ ㄧˋ ㄉㄧㄢˇ. · Jīntiān bǐ zuótiān lěng yìdiǎn.",
+          "e": "Today is a bit colder than yesterday."
+        },
+        {
+          "t": "我{沒有}他{那麼}高。",
+          "r": "ㄨㄛˇ ㄇㄟˊ ㄧㄡˇ ㄊㄚ ㄋㄚˋ ㄇㄜ˙ ㄍㄠ. · Wǒ méiyǒu tā nàme gāo.",
+          "e": "I'm not as tall as him."
+        }
+      ],
+      "tags": ["comparison"]
+    },
+    {
+      "id": "ba",
+      "topic": "grammar",
+      "title": "The 把 construction",
+      "body": "把 moves the object in front of the verb, to say what is done to a specific thing and where it ends up. The verb must be followed by something: a result, a place or 了.",
+      "examples": [
+        {
+          "t": "我{把}書放在桌子上。",
+          "r": "ㄨㄛˇ ㄅㄚˇ ㄕㄨ ㄈㄤˋ ㄗㄞˋ ㄓㄨㄛ ㄗ˙ ㄕㄤ˙. · Wǒ bǎ shū fàng zài zhuōzi shang.",
+          "e": "I put the book on the table."
+        },
+        {
+          "t": "請{把}門關上。",
+          "r": "ㄑㄧㄥˇ ㄅㄚˇ ㄇㄣˊ ㄍㄨㄢ ㄕㄤ˙. · Qǐng bǎ mén guānshang.",
+          "e": "Please close the door."
+        },
+        {
+          "t": "他{把}飯吃完了。",
+          "r": "ㄊㄚ ㄅㄚˇ ㄈㄢˋ ㄔ ㄨㄢˊ ㄌㄜ˙. · Tā bǎ fàn chīwán le.",
+          "e": "He finished (eating) the meal."
+        }
+      ],
+      "tags": ["word order", "ba"]
+    },
+    {
+      "id": "shi-de",
+      "topic": "grammar",
+      "title": "是…的: when, where, how it happened",
+      "body": "To ask or tell when, where, how or with whom a known past event happened, wrap the detail in 是 … 的. 是 is often dropped in speech.",
+      "examples": [
+        {
+          "t": "你{是}什麼時候來{的}？",
+          "r": "ㄋㄧˇ ㄕˋ ㄕㄣˊ ㄇㄜ˙ ㄕˊ ㄏㄡ˙ ㄌㄞˊ ㄉㄜ˙? · Nǐ shì shénme shíhou lái de?",
+          "e": "When did you come?"
+        },
+        {
+          "t": "我{是}坐飛機來{的}。",
+          "r": "ㄨㄛˇ ㄕˋ ㄗㄨㄛˋ ㄈㄟ ㄐㄧ ㄌㄞˊ ㄉㄜ˙. · Wǒ shì zuò fēijī lái de.",
+          "e": "I came by plane."
+        }
+      ],
+      "tags": ["past", "focus"]
+    },
+    {
+      "id": "resultatives",
+      "topic": "verbs",
+      "title": "Result complements",
+      "body": "A second verb or adjective right after the main verb says what the action achieved. Put 不 between them for can't, 得 for can.",
+      "table": {
+        "head": ["Compound", "Meaning", "Can't"],
+        "rows": [
+          [
+            "看懂 kàndǒng",
+            "read and understand",
+            "看不懂 · can't make sense of it"
+          ],
+          ["聽見 tīngjiàn", "hear (succeed in hearing)", "聽不見 · can't hear"],
+          ["做完 zuòwán", "finish doing", "做不完 · can't finish"],
+          ["找到 zhǎodào", "find", "找不到 · can't find"]
+        ]
+      },
+      "tags": ["verbs", "complements"]
+    }
+  ]
+}

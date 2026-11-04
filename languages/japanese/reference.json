@@ -1,0 +1,509 @@
+{
+  "schema": "reference@1",
+  "language": "japanese",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Japanese at a glance",
+      "body": [
+        "Japanese puts the verb at the end of the sentence (subject, object, verb) and marks the role of each phrase with a small particle after it, so word order before the verb is fairly free.",
+        "Nouns have no plural and no gender, and there are no articles. Verbs do not change for person: {食べます} means I, you, she or they eat, and the subject is often left out when context makes it clear.",
+        "Three scripts are mixed in ordinary text: hiragana, katakana and kanji."
+      ],
+      "examples": [
+        {
+          "t": "私は{寿司を}食べます。",
+          "r": "watashi wa sushi o tabemasu",
+          "e": "I eat sushi."
+        },
+        {
+          "t": "食べます。",
+          "r": "tabemasu",
+          "e": "(I / we / they) eat. The subject is understood."
+        }
+      ],
+      "tags": ["SOV", "particles"]
+    },
+    {
+      "id": "three-scripts",
+      "topic": "script",
+      "title": "Hiragana, katakana and kanji",
+      "body": [
+        "{Hiragana} writes native words, grammatical endings and particles. {Katakana} writes loanwords, foreign names, onomatopoeia and emphasis. {Kanji} carry the meaning of most nouns and verb stems.",
+        "Each kana stands for one mora, so there are 46 basic signs in each kana set. Children learn about 1,000 kanji in primary school; the official list for everyday use (jōyō kanji) has 2,136."
+      ],
+      "examples": [
+        {
+          "t": "{私}は{コーヒー}を{飲}みます。",
+          "r": "watashi wa kōhī o nomimasu",
+          "e": "I drink coffee. (kanji · hiragana · katakana · hiragana)"
+        }
+      ],
+      "tags": ["kana", "kanji"]
+    },
+    {
+      "id": "on-kun",
+      "topic": "script",
+      "title": "On-yomi and kun-yomi",
+      "body": [
+        "Most kanji have two kinds of reading. The {on-yomi} came from Chinese and is mostly used in compounds of two or more kanji. The {kun-yomi} is the native Japanese word and is used when the kanji stands alone or is followed by kana.",
+        "Dictionaries often write on-yomi in katakana and kun-yomi in hiragana."
+      ],
+      "examples": [
+        {
+          "t": "山",
+          "r": "yama (kun) · san (on)",
+          "e": "mountain"
+        },
+        {
+          "t": "富士{山}",
+          "r": "Fuji-san",
+          "e": "Mount Fuji (on-yomi in a compound)"
+        },
+        {
+          "t": "{山}に登る",
+          "r": "yama ni noboru",
+          "e": "climb a mountain (kun-yomi alone)"
+        }
+      ],
+      "tags": ["kanji", "readings"]
+    },
+    {
+      "id": "okurigana",
+      "topic": "script",
+      "title": "Okurigana",
+      "body": "Kanji write the stem of a verb or adjective and hiragana write the part that changes. Those trailing kana are called okurigana. They also tell you which reading of the kanji is meant.",
+      "examples": [
+        {
+          "t": "食{べる} · 食{べない} · 食{べた}",
+          "r": "taberu · tabenai · tabeta",
+          "e": "eat · don't eat · ate"
+        },
+        {
+          "t": "高{い} · 高{くない}",
+          "r": "takai · takakunai",
+          "e": "high, expensive · not high"
+        }
+      ],
+      "tags": ["kanji", "kana"]
+    },
+    {
+      "id": "mora",
+      "topic": "sounds",
+      "title": "Morae, long vowels and small っ",
+      "body": [
+        "Japanese rhythm counts morae: every kana is one beat of equal length. A long vowel takes two beats and a small {っ} adds a held, silent beat before the next consonant. Length changes meaning, so hold them.",
+        "{ん} is a beat of its own too: こんにちは is five beats, ko-n-ni-chi-wa."
+      ],
+      "examples": [
+        {
+          "t": "おばさん / お{ばあ}さん",
+          "r": "obasan / obāsan",
+          "e": "aunt / grandmother"
+        },
+        {
+          "t": "きて / き{っ}て",
+          "r": "kite / kitte",
+          "e": "come! / stamp"
+        },
+        {
+          "t": "ビル / ビ{ー}ル",
+          "r": "biru / bīru",
+          "e": "building / beer"
+        }
+      ],
+      "tags": ["pronunciation", "long vowels"]
+    },
+    {
+      "id": "pitch",
+      "topic": "sounds",
+      "title": "Pitch accent",
+      "body": "Japanese has no stress accent. Instead each word has a pattern of high and low pitch, and some words that are spelled the same in kana differ only in pitch. The patterns below are standard Tokyo Japanese.",
+      "examples": [
+        {
+          "t": "箸 / 橋",
+          "r": "HA-shi / ha-SHI",
+          "e": "chopsticks (high then low) / bridge (low then high)"
+        },
+        {
+          "t": "雨 / 飴",
+          "r": "A-me / a-ME",
+          "e": "rain / candy"
+        }
+      ],
+      "tags": ["pronunciation", "pitch"]
+    },
+    {
+      "id": "wa-ga",
+      "topic": "grammar",
+      "title": "Particles は (wa) and が (ga)",
+      "body": [
+        "{は} marks the topic: what the sentence is about, often something already known. {が} marks the grammatical subject, and puts the focus on it: new information, or the answer to who or what.",
+        "Question words such as 誰 (who) and 何 (what) take が, never は, when they are the subject. Note that the particle は is pronounced wa."
+      ],
+      "examples": [
+        {
+          "t": "私{は}学生です。",
+          "r": "watashi wa gakusei desu",
+          "e": "As for me, I'm a student."
+        },
+        {
+          "t": "誰{が}来ましたか。",
+          "r": "dare ga kimashita ka",
+          "e": "Who came?"
+        },
+        {
+          "t": "田中さん{が}来ました。",
+          "r": "Tanaka-san ga kimashita",
+          "e": "Tanaka came. (Tanaka is the new information.)"
+        },
+        {
+          "t": "象{は}鼻{が}長い。",
+          "r": "zō wa hana ga nagai",
+          "e": "Elephants have long trunks. (As for elephants, the trunk is long.)"
+        }
+      ],
+      "tags": ["particles", "topic", "subject"]
+    },
+    {
+      "id": "core-particles",
+      "topic": "grammar",
+      "title": "を, に, で, へ, と, の",
+      "body": "Each particle follows the word it marks. These six cover most everyday sentences. を is pronounced o and へ is pronounced e when they are particles.",
+      "table": {
+        "head": ["Particle", "Marks", "Example"],
+        "rows": [
+          ["を (o)", "direct object", "パンを食べる · eat bread"],
+          [
+            "に (ni)",
+            "destination, time, indirect object, place where something is",
+            "学校に行く · go to school; 七時に · at seven"
+          ],
+          [
+            "で (de)",
+            "place where an action happens, means",
+            "図書館で読む · read at the library; バスで · by bus"
+          ],
+          ["へ (e)", "direction", "東京へ行く · head for Tokyo"],
+          [
+            "と (to)",
+            "and (complete lists), with",
+            "友達と話す · talk with a friend"
+          ],
+          [
+            "の (no)",
+            "possession, linking nouns",
+            "私の本 · my book; 日本語の先生 · Japanese teacher"
+          ]
+        ]
+      },
+      "tags": ["particles"]
+    },
+    {
+      "id": "ko-so-a-do",
+      "topic": "grammar",
+      "title": "これ, それ, あれ, どれ",
+      "body": "Pointing words come in sets by distance: {ko-} near the speaker, {so-} near the listener, {a-} away from both, and {do-} for the question.",
+      "table": {
+        "head": [
+          "",
+          "ko- (here)",
+          "so- (there, by you)",
+          "a- (over there)",
+          "do- (which?)"
+        ],
+        "rows": [
+          ["thing", "これ", "それ", "あれ", "どれ"],
+          ["+ noun", "この本", "その本", "あの本", "どの本"],
+          ["place", "ここ", "そこ", "あそこ", "どこ"],
+          ["way", "こう", "そう", "ああ", "どう"]
+        ]
+      },
+      "tags": ["demonstratives", "questions"]
+    },
+    {
+      "id": "questions",
+      "topic": "grammar",
+      "title": "Questions with か",
+      "body": "Add {か} to the end of a statement to make it a question; the word order does not change. In polite speech the question mark is optional, because か already does the job. Casual speech often drops か and uses rising intonation.",
+      "examples": [
+        {
+          "t": "学生です{か}。",
+          "r": "gakusei desu ka",
+          "e": "Are you a student?"
+        },
+        {
+          "t": "どこに行きます{か}。",
+          "r": "doko ni ikimasu ka",
+          "e": "Where are you going?"
+        },
+        {
+          "t": "行く？",
+          "r": "iku?",
+          "e": "Going? (casual, rising tone)"
+        }
+      ],
+      "tags": ["questions"]
+    },
+    {
+      "id": "verb-groups",
+      "topic": "verbs",
+      "title": "Verb groups",
+      "body": [
+        "Every verb's dictionary form ends in -u. {Ichidan} (ru-) verbs end in -iru or -eru and simply drop る. {Godan} (u-) verbs change their final kana across the a-i-u-e-o row. Only two verbs are fully irregular: {する} (do) and {来る} (come).",
+        "Some verbs ending in -iru / -eru are godan anyway, such as 帰る (go home), 入る (enter), 走る (run) and 知る (know)."
+      ],
+      "table": {
+        "head": ["Group", "Dictionary", "ます form", "ない form"],
+        "rows": [
+          ["ichidan", "食べる", "食べます", "食べない"],
+          ["ichidan", "見る", "見ます", "見ない"],
+          ["godan", "書く", "書きます", "書かない"],
+          ["godan", "飲む", "飲みます", "飲まない"],
+          ["godan", "帰る", "帰ります", "帰らない"],
+          ["irregular", "する", "します", "しない"],
+          ["irregular", "来る", "来ます", "来ない"]
+        ]
+      },
+      "tags": ["verbs", "conjugation"]
+    },
+    {
+      "id": "polite-plain",
+      "topic": "verbs",
+      "title": "Polite and plain forms",
+      "body": "Use the polite です / ます forms with people you don't know well, at work and with anyone older. Use the plain forms with friends and family, and inside longer sentences.",
+      "table": {
+        "head": ["", "Polite", "Plain"],
+        "rows": [
+          ["present", "食べます", "食べる"],
+          ["negative", "食べません", "食べない"],
+          ["past", "食べました", "食べた"],
+          ["past negative", "食べませんでした", "食べなかった"],
+          ["noun + is", "学生です", "学生だ"],
+          ["noun + was", "学生でした", "学生だった"]
+        ]
+      },
+      "tags": ["verbs", "politeness"]
+    },
+    {
+      "id": "te-form",
+      "topic": "verbs",
+      "title": "The て-form",
+      "body": [
+        "The て-form joins actions (and then…), makes requests with ください, and builds -ている (doing now, or a lasting state). Ichidan verbs swap る for て. Godan verbs follow the ending of the dictionary form.",
+        "The one exception: 行く (go) becomes 行って."
+      ],
+      "examples": [
+        {
+          "t": "ちょっと待{って}ください。",
+          "r": "chotto matte kudasai",
+          "e": "Please wait a moment."
+        },
+        {
+          "t": "今、本を読{んでいます}。",
+          "r": "ima, hon o yonde imasu",
+          "e": "I'm reading a book now."
+        }
+      ],
+      "table": {
+        "head": ["Ending", "Becomes", "Example"],
+        "rows": [
+          ["う, つ, る", "って", "買う → 買って · 待つ → 待って · 帰る → 帰って"],
+          ["む, ぶ, ぬ", "んで", "飲む → 飲んで · 遊ぶ → 遊んで · 死ぬ → 死んで"],
+          ["く", "いて", "書く → 書いて"],
+          ["ぐ", "いで", "泳ぐ → 泳いで"],
+          ["す", "して", "話す → 話して"],
+          ["ichidan る", "て", "食べる → 食べて"]
+        ]
+      },
+      "tags": ["verbs", "te-form"]
+    },
+    {
+      "id": "adjectives",
+      "topic": "grammar",
+      "title": "い-adjectives and な-adjectives",
+      "body": [
+        "{い-adjectives} end in い and conjugate themselves: drop い and add くない (not), かった (was), くなかった (wasn't). {な-adjectives} behave like nouns: they take な before a noun and use です / だ for tense.",
+        "いい (good) is irregular: よくない, よかった."
+      ],
+      "table": {
+        "head": ["", "い: 高い (expensive)", "な: 静か (quiet)"],
+        "rows": [
+          ["before a noun", "高い本", "静かな部屋"],
+          ["is", "高いです", "静かです"],
+          ["is not", "高くないです", "静かじゃないです"],
+          ["was", "高かったです", "静かでした"],
+          ["was not", "高くなかったです", "静かじゃなかったです"]
+        ]
+      },
+      "tags": ["adjectives"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Numbers and counters",
+      "body": [
+        "Sino-Japanese numbers: いち, に, さん, よん (し), ご, ろく, なな (しち), はち, きゅう (く), じゅう. Larger numbers are built as in Chinese: 二十 (20), 百 (100), 千 (1,000), 万 (10,000).",
+        "Things are counted with a counter word chosen by their shape or kind, and sounds often change at the join (いっぽん, さんぼん, ろっぽん)."
+      ],
+      "table": {
+        "head": ["Counter", "Used for", "1 · 2 · 3"],
+        "rows": [
+          ["〜つ", "general things (to 10)", "ひとつ · ふたつ · みっつ"],
+          ["〜人 (にん)", "people", "ひとり · ふたり · さんにん"],
+          ["〜本 (ほん)", "long thin things", "いっぽん · にほん · さんぼん"],
+          ["〜枚 (まい)", "flat things", "いちまい · にまい · さんまい"],
+          ["〜匹 (ひき)", "small animals", "いっぴき · にひき · さんびき"],
+          ["〜冊 (さつ)", "books", "いっさつ · にさつ · さんさつ"]
+        ]
+      },
+      "tags": ["numbers", "counters"]
+    },
+    {
+      "id": "everyday-phrases",
+      "topic": "phrases",
+      "title": "Everyday phrases",
+      "examples": [
+        {
+          "t": "おはようございます",
+          "r": "ohayō gozaimasu",
+          "e": "Good morning."
+        },
+        {
+          "t": "こんにちは",
+          "r": "konnichiwa",
+          "e": "Hello. Good afternoon."
+        },
+        {
+          "t": "こんばんは",
+          "r": "konbanwa",
+          "e": "Good evening."
+        },
+        {
+          "t": "ありがとうございます",
+          "r": "arigatō gozaimasu",
+          "e": "Thank you."
+        },
+        {
+          "t": "すみません",
+          "r": "sumimasen",
+          "e": "Excuse me. Sorry."
+        },
+        {
+          "t": "いただきます",
+          "r": "itadakimasu",
+          "e": "Said before eating."
+        },
+        {
+          "t": "ごちそうさまでした",
+          "r": "gochisōsama deshita",
+          "e": "Said after eating: thank you for the meal."
+        },
+        {
+          "t": "よろしくお願いします",
+          "r": "yoroshiku onegai shimasu",
+          "e": "Nice to meet you. I'm counting on you."
+        }
+      ],
+      "tags": ["greetings"]
+    },
+    {
+      "id": "keigo",
+      "topic": "culture",
+      "title": "Keigo: respectful language",
+      "body": [
+        "Beyond です / ます (teineigo, the polite level) Japanese has {sonkeigo}, which raises the person you talk about, and {kenjōgo}, which lowers yourself. Shop staff, receptionists and business email use them constantly.",
+        "Several common verbs have their own respectful and humble words."
+      ],
+      "table": {
+        "head": ["Plain", "Respectful (their action)", "Humble (my action)"],
+        "rows": [
+          ["行く · 来る · いる", "いらっしゃる", "参る · おる"],
+          ["言う", "おっしゃる", "申す"],
+          ["食べる · 飲む", "召し上がる", "いただく"],
+          ["見る", "ご覧になる", "拝見する"],
+          ["する", "なさる", "いたす"]
+        ]
+      },
+      "tags": ["politeness", "keigo"]
+    },
+    {
+      "id": "aru-iru",
+      "topic": "grammar",
+      "title": "There is: ある and いる",
+      "body": "Use {いる} for people and animals (things that move by themselves) and {ある} for objects, plants and events. Place に first, then the thing with が.",
+      "examples": [
+        {
+          "t": "机の上に本が{あります}。",
+          "r": "tsukue no ue ni hon ga arimasu",
+          "e": "There is a book on the desk."
+        },
+        {
+          "t": "公園に犬が{います}。",
+          "r": "kōen ni inu ga imasu",
+          "e": "There is a dog in the park."
+        },
+        {
+          "t": "明日テストが{あります}。",
+          "r": "ashita tesuto ga arimasu",
+          "e": "There is a test tomorrow. (events use ある)"
+        }
+      ],
+      "tags": ["existence", "verbs"]
+    },
+    {
+      "id": "tai-hoshii",
+      "topic": "verbs",
+      "title": "Wanting: -たい and ほしい",
+      "body": "Add {-たい} to the ます stem to say you want to do something; it then conjugates like an い-adjective. Use {ほしい} for wanting a thing. Both describe your own feelings; for other people, add -がっている or say it indirectly.",
+      "examples": [
+        {
+          "t": "寿司が食べ{たい}です。",
+          "r": "sushi ga tabetai desu",
+          "e": "I want to eat sushi."
+        },
+        {
+          "t": "行き{たくない}。",
+          "r": "ikitakunai",
+          "e": "I don't want to go."
+        },
+        {
+          "t": "新しい靴が{ほしい}です。",
+          "r": "atarashii kutsu ga hoshii desu",
+          "e": "I want new shoes."
+        }
+      ],
+      "tags": ["verbs", "desire"]
+    },
+    {
+      "id": "giving",
+      "topic": "verbs",
+      "title": "Giving and receiving",
+      "body": "Japanese has three verbs for giving and receiving, chosen by direction. {あげる}: I (or my side) give outward. {くれる}: someone gives to me or my side. {もらう}: I receive, with the giver marked by に or から. They also attach to て-forms for doing favours.",
+      "examples": [
+        {
+          "t": "友達に花を{あげました}。",
+          "r": "tomodachi ni hana o agemashita",
+          "e": "I gave my friend flowers."
+        },
+        {
+          "t": "友達が花を{くれました}。",
+          "r": "tomodachi ga hana o kuremashita",
+          "e": "My friend gave me flowers."
+        },
+        {
+          "t": "友達に花を{もらいました}。",
+          "r": "tomodachi ni hana o moraimashita",
+          "e": "I got flowers from my friend."
+        },
+        {
+          "t": "手伝って{くれて}ありがとう。",
+          "r": "tetsudatte kurete arigatō",
+          "e": "Thanks for helping me."
+        }
+      ],
+      "tags": ["verbs", "giving"]
+    }
+  ]
+}

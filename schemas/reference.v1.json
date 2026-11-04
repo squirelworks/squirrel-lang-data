@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/squirelworks/squirrel-lang-data/schemas/reference.v1.json",
+  "title": "reference@1: a language's reference cards",
+  "description": "languages/<id>/reference.json: cards for the Reference Learner. In body, example sentences and table cells, {braces} mark a highlight.",
+  "type": "object",
+  "required": ["schema", "language", "entries"],
+  "additionalProperties": false,
+  "$defs": {
+    "level": {
+      "description": "How far into the language a learner is when this card is useful.",
+      "enum": ["absolute-beginner", "beginner", "beginner-intermediate", "intermediate", "advanced-intermediate", "advanced"]
+    }
+  },
+  "properties": {
+    "schema": { "const": "reference@1" },
+    "language": { "description": "The language (or variety) id; must match the folder.", "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "topic", "title"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+          "topic": { "enum": ["overview", "script", "sounds", "grammar", "verbs", "numbers", "phrases", "culture"] },
+          "title": { "type": "string", "minLength": 1 },
+          "level": { "$ref": "#/$defs/level" },
+          "body": {
+            "description": "A paragraph, or a list of paragraphs.",
+            "type": ["string", "array"],
+            "items": { "type": "string" }
+          },
+          "examples": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["t"],
+              "additionalProperties": false,
+              "properties": {
+                "t": { "description": "The example in the language.", "type": "string", "minLength": 1 },
+                "r": { "description": "Reading.", "type": "string" },
+                "e": { "description": "English.", "type": "string" }
+              }
+            }
+          },
+          "table": {
+            "type": "object",
+            "required": ["head", "rows"],
+            "additionalProperties": false,
+            "properties": {
+              "head": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+              "rows": { "type": "array", "items": { "type": "array", "items": { "type": "string" } } }
+            }
+          },
+          "tags": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+          "sources": { "description": "Sources this card draws on, by their name in SOURCES.md.", "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true }
+        }
+      }
+    }
+  }
+}

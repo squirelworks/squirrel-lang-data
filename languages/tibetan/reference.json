@@ -1,0 +1,213 @@
+{
+  "schema": "reference@1",
+  "language": "tibetan",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Tibetan at a glance",
+      "body": [
+        "Tibetan is spoken by about six million people across the Tibetan Plateau and in exile communities in India, Nepal and beyond. It belongs to the Sino-Tibetan family. The main spoken varieties (Central or Lhasa, Amdo and Kham) differ a lot, but share one written language.",
+        "The verb comes last. The ending of a sentence shows whether you speak about yourself (ཡིན, ཡོད) or about others (རེད, ཡོད་རེད), and whether you saw something yourself (འདུག). Lhasa Tibetan is tonal, with a high and a low tone."
+      ],
+      "examples": [
+        {
+          "t": "ང་བོད་སྐད་སློབ་སྦྱོང་བྱེད་{ཀྱི་ཡོད}།",
+          "r": "Nga pöke lopjong che kyi yö.",
+          "e": "I am learning Tibetan."
+        }
+      ],
+      "tags": ["Sino-Tibetan", "tonal", "verb-final"]
+    },
+    {
+      "id": "script",
+      "topic": "script",
+      "title": "How Tibetan script works",
+      "body": [
+        "The Tibetan script was created in the 7th century from an Indian Brahmi script. It has 30 consonant letters, each with an inherent a, and four vowel marks: ི (i), ུ (u), ེ (e) and ོ (o). The everyday printed style is called Uchen (དབུ་ཅན, “with a head”).",
+        "Words are not separated by spaces. Instead a small dot, the tsheg (་), follows every syllable, and a vertical stroke, the shad (།), ends a phrase or sentence.",
+        "Spelling is old and pronunciation has moved on. Letters can be stacked above and below the main letter, and many of them are silent: བཀྲ་ཤིས is said tashi, and བསྒྲུབས is said druk."
+      ],
+      "table": {
+        "head": ["Mark", "Name", "Use"],
+        "rows": [
+          ["་", "tsheg", "after every syllable"],
+          ["།", "shad", "end of a phrase or sentence"],
+          [
+            "ི ུ ེ ོ",
+            "vowel marks",
+            "i, u, e, o; with no mark the vowel is a"
+          ],
+          ["ཀྲ, སྒ", "stacks", "letters written under or over the main one"]
+        ]
+      },
+      "tags": ["abugida", "Brahmi family", "tsheg"]
+    },
+    {
+      "id": "copulas",
+      "topic": "verbs",
+      "title": "Is, has, and their negatives",
+      "body": "Which word you use depends on who you are talking about, and how you know.",
+      "table": {
+        "head": ["Word", "Use", "Negative", "Question"],
+        "rows": [
+          ["ཡིན (yin)", "“is”, about yourself", "མིན (min)", "ཡིན་པས (yinpe)"],
+          ["རེད (re)", "“is”, about others", "མ་རེད (mare)", "རེད་པས (repe)"],
+          [
+            "ཡོད (yö)",
+            "“there is”, “have”, about yourself",
+            "མེད (me)",
+            "ཡོད་པས (yöpe)"
+          ],
+          [
+            "ཡོད་རེད (yöre)",
+            "“there is”, as a known fact",
+            "ཡོད་མ་རེད (yö mare)",
+            "ཡོད་རེད་པས (yöre pe)"
+          ],
+          [
+            "འདུག (du)",
+            "“there is”, seen right now",
+            "མི་འདུག (mindu)",
+            "འདུག་གས (duka)"
+          ]
+        ]
+      },
+      "tags": ["copula", "evidentials"]
+    },
+    {
+      "id": "honorifics",
+      "topic": "grammar",
+      "title": "Honorific words",
+      "body": "Tibetan has a set of respectful words used when speaking to or about others, especially elders and monks. Using them is a large part of being polite.",
+      "table": {
+        "head": ["Meaning", "Plain", "Honorific"],
+        "rows": [
+          ["you", "ཁྱོད (khyö)", "ཁྱེད་རང (khyerang)"],
+          ["he, she", "ཁོ, མོ (kho, mo)", "ཁོང (khong)"],
+          ["go, come", "འགྲོ, ཡོང (dro, yong)", "ཕེབས (phe)"],
+          ["eat, drink", "ཟ, འཐུང (sa, thung)", "མཆོད (chö)"],
+          ["name", "མིང (ming)", "མཚན (tsen)"],
+          ["body, health", "གཟུགས་པོ (suk po)", "སྐུ་གཟུགས (kusuk)"]
+        ]
+      },
+      "tags": ["politeness"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Numbers and Tibetan digits",
+      "body": "Tibetan has its own digits. In counting from 21 upwards, a short linking syllable goes between tens and units: ཉི་ཤུ་རྩ་གཅིག (nyishu tsa chik) is 21.",
+      "table": {
+        "head": ["Digit", "Word", "Said"],
+        "rows": [
+          ["༠", "ཀླད་ཀོར", "lekor"],
+          ["༡", "གཅིག", "chik"],
+          ["༢", "གཉིས", "nyi"],
+          ["༣", "གསུམ", "sum"],
+          ["༤", "བཞི", "shi"],
+          ["༥", "ལྔ", "nga"],
+          ["༦", "དྲུག", "druk"],
+          ["༧", "བདུན", "dün"],
+          ["༨", "བརྒྱད", "gyé"],
+          ["༩", "དགུ", "gu"],
+          ["༡༠", "བཅུ", "chu"]
+        ]
+      },
+      "tags": ["digits"]
+    },
+    {
+      "id": "phrases",
+      "topic": "phrases",
+      "title": "Everyday phrases",
+      "examples": [
+        {
+          "t": "བཀྲ་ཤིས་བདེ་ལེགས།",
+          "r": "Tashi delek.",
+          "e": "Hello."
+        },
+        {
+          "t": "ཐུགས་རྗེ་ཆེ།",
+          "r": "Thukje che.",
+          "e": "Thank you."
+        },
+        {
+          "t": "ཁྱེད་རང་སྐུ་གཟུགས་བདེ་པོ་ཡིན་པས།",
+          "r": "Khyerang kusuk depo yinpe?",
+          "e": "How are you?"
+        },
+        {
+          "t": "གོང་ག་ཚོད་རེད།",
+          "r": "Gong katsö re?",
+          "e": "How much is it?"
+        },
+        {
+          "t": "ཧ་མ་གོ།",
+          "r": "Ha ma go.",
+          "e": "I don't understand."
+        },
+        {
+          "t": "ག་ལེ་ཕེབས།",
+          "r": "Kale phe.",
+          "e": "Goodbye (to someone leaving)."
+        }
+      ],
+      "tags": ["greetings", "travel"]
+    },
+    {
+      "id": "khata",
+      "topic": "culture",
+      "title": "The khata",
+      "body": [
+        "A khata (ཁ་བཏགས) is a white scarf, usually silk, offered as a sign of respect and good wishes: to welcome or say goodbye to a guest, at weddings and New Year, and when visiting a monastery or meeting a lama.",
+        "It is held out with both hands. When it is offered to a lama, people bow slightly, and the lama often places it back around their neck as a blessing."
+      ],
+      "tags": ["customs"]
+    },
+    {
+      "id": "stacks",
+      "topic": "script",
+      "title": "Stacked letters",
+      "body": "Tibetan writes consonant clusters as vertical stacks. Prefixes and superscripts are often silent in Lhasa speech but still required in spelling, so a short spoken syllable can be a tall written stack.",
+      "examples": [
+        {
+          "t": "{བཀྲ་ཤིས་}",
+          "r": "tashi",
+          "e": "good fortune (in bkris / bkra-shis spelling)"
+        },
+        {
+          "t": "{སྤྱི་}",
+          "r": "chi",
+          "e": "general / public (spyi)"
+        }
+      ],
+      "tags": ["script", "stacks"]
+    },
+    {
+      "id": "evidential",
+      "topic": "grammar",
+      "title": "Self and other",
+      "body": "Lhasa Tibetan often chooses different final verbs for what you know about yourself and what you say about others. ཡིན (yin) / ཡོད (yö) are common for the speaker’s own situation; རེད (re) / ཡོད་རེད (yöre) for others. འདུག (du) can mark something just observed.",
+      "examples": [
+        {
+          "t": "ང་སློབ་ཕྲུག {ཡིན}.",
+          "r": "Nga loptruk yin.",
+          "e": "I am a student."
+        },
+        {
+          "t": "ཁོང་སློབ་ཕྲུག {རེད}.",
+          "r": "Khong loptruk re.",
+          "e": "He / she is a student."
+        }
+      ],
+      "tags": ["evidentiality"]
+    },
+    {
+      "id": "losar",
+      "topic": "culture",
+      "title": "Losar",
+      "body": "Losar (ལོ་གསར་) is the Tibetan new year, usually in February or early March on the lunar calendar. Families clean the house, prepare གཏོར་མ་ and other foods, exchange ཁ་བཏགས་ (khata) scarves, and greet one another with བཀྲ་ཤིས་བདེ་ལེགས (tashi delek).",
+      "tags": ["festivals", "new year"]
+    }
+  ]
+}

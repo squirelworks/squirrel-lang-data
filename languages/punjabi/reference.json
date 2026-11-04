@@ -1,0 +1,192 @@
+{
+  "schema": "reference@1",
+  "language": "punjabi",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Punjabi at a glance",
+      "body": [
+        "Punjabi is an Indo-Aryan language of the Punjab region, split between India and Pakistan, with over 100 million speakers and large communities in Britain and Canada. In India it is written in Gurmukhi; in Pakistan it is written in Shahmukhi, a Perso-Arabic script.",
+        "The verb comes last, nouns are masculine or feminine, and postpositions follow the noun. Unusually for the region, Punjabi is tonal."
+      ],
+      "examples": [
+        {
+          "t": "ਮੈਂ ਪੰਜਾਬੀ {ਸਿੱਖ ਰਿਹਾ ਹਾਂ}।",
+          "r": "Main panjaabii sikkh rihaa haan.",
+          "e": "I am learning Punjabi. (a man)"
+        }
+      ],
+      "tags": ["Indo-Aryan", "tonal", "SOV"]
+    },
+    {
+      "id": "gurmukhi",
+      "topic": "script",
+      "title": "How Gurmukhi works",
+      "body": [
+        "Gurmukhi was standardized in the 16th century by Guru Angad, the second Sikh Guru; the name means “from the mouth of the Guru”. Like Devanagari it is an abugida: each consonant carries a short a, and other vowels are marks around it. Three letters (ੳ, ਅ, ੲ) carry the vowels at the start of a word.",
+        "The addak ੱ doubles the next consonant, and tippi ੰ or bindi ਂ marks a nasal sound."
+      ],
+      "table": {
+        "head": ["Vowel", "Mark", "With ਕ"],
+        "rows": [
+          ["a (built in)", "", "ਕ ka"],
+          ["aa", "ਾ", "ਕਾ kaa"],
+          ["i", "ਿ", "ਕਿ ki"],
+          ["ii", "ੀ", "ਕੀ kii"],
+          ["u", "ੁ", "ਕੁ ku"],
+          ["uu", "ੂ", "ਕੂ kuu"],
+          ["e", "ੇ", "ਕੇ ke"],
+          ["ai", "ੈ", "ਕੈ kai"],
+          ["o", "ੋ", "ਕੋ ko"],
+          ["au", "ੌ", "ਕੌ kau"]
+        ]
+      },
+      "tags": ["script", "abugida", "Gurmukhi"]
+    },
+    {
+      "id": "tones",
+      "topic": "sounds",
+      "title": "Tones",
+      "body": "Punjabi lost the breathy sound of ਘ, ਝ, ਢ, ਧ, ਭ (gh, jh, dh, bh) and of ਹ inside a word, and gained tones in their place. At the start of a word, ਘ is said like k with a low, rising tone; after the vowel, ਹ gives a high, falling tone. The spelling stays the old one.",
+      "examples": [
+        {
+          "t": "ਕੋੜਾ · ਘੋੜਾ · ਕੋਹੜਾ",
+          "r": "koraa · kòraa · kóraa",
+          "e": "whip · horse · leper: the same sounds with three tones"
+        }
+      ],
+      "tags": ["tones", "pronunciation"]
+    },
+    {
+      "id": "to-be",
+      "topic": "verbs",
+      "title": "“To be” and the present",
+      "body": "The present tense is a participle that agrees in gender and number, followed by the right form of “to be”.",
+      "table": {
+        "head": ["Subject", "to be", "speak (man)", "speak (woman)"],
+        "rows": [
+          ["ਮੈਂ I", "ਹਾਂ", "ਬੋਲਦਾ ਹਾਂ", "ਬੋਲਦੀ ਹਾਂ"],
+          ["ਤੂੰ you (intimate)", "ਹੈਂ", "ਬੋਲਦਾ ਹੈਂ", "ਬੋਲਦੀ ਹੈਂ"],
+          ["ਉਹ he, she", "ਹੈ", "ਬੋਲਦਾ ਹੈ", "ਬੋਲਦੀ ਹੈ"],
+          ["ਅਸੀਂ we", "ਹਾਂ", "ਬੋਲਦੇ ਹਾਂ", "ਬੋਲਦੀਆਂ ਹਾਂ"],
+          ["ਤੁਸੀਂ you", "ਹੋ", "ਬੋਲਦੇ ਹੋ", "ਬੋਲਦੀਆਂ ਹੋ"],
+          ["ਉਹ they", "ਹਨ", "ਬੋਲਦੇ ਹਨ", "ਬੋਲਦੀਆਂ ਹਨ"]
+        ]
+      },
+      "tags": ["verbs", "present", "gender"]
+    },
+    {
+      "id": "postpositions",
+      "topic": "grammar",
+      "title": "Postpositions",
+      "body": "These follow the noun. A masculine noun in -ā becomes -e before them: ਕਮਰਾ → ਕਮਰੇ ਵਿੱਚ.",
+      "table": {
+        "head": ["Word", "Meaning", "Example"],
+        "rows": [
+          ["ਵਿੱਚ", "in", "ਘਰ ਵਿੱਚ, in the house"],
+          ["ਉੱਤੇ / ਤੇ", "on", "ਮੇਜ਼ ਉੱਤੇ, on the table"],
+          ["ਤੋਂ", "from", "ਅੰਮ੍ਰਿਤਸਰ ਤੋਂ, from Amritsar"],
+          ["ਨੂੰ", "to; object marker", "ਮੈਨੂੰ, to me"],
+          ["ਨਾਲ", "with", "ਦੋਸਤ ਨਾਲ, with a friend"],
+          ["ਦਾ / ਦੀ / ਦੇ", "of", "ਰਾਮ ਦਾ ਘਰ, Ram's house"]
+        ]
+      },
+      "tags": ["postpositions"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Numbers and Gurmukhi digits",
+      "body": "Gurmukhi digits are used in religious texts and sometimes on signs; everyday writing mostly uses 0–9.",
+      "table": {
+        "head": ["", "Digit", "Word", "Transliteration"],
+        "rows": [
+          ["1", "੧", "ਇੱਕ", "ikk"],
+          ["2", "੨", "ਦੋ", "do"],
+          ["3", "੩", "ਤਿੰਨ", "tinn"],
+          ["4", "੪", "ਚਾਰ", "chaar"],
+          ["5", "੫", "ਪੰਜ", "panj"],
+          ["6", "੬", "ਛੇ", "chhe"],
+          ["7", "੭", "ਸੱਤ", "satt"],
+          ["8", "੮", "ਅੱਠ", "atth"],
+          ["9", "੯", "ਨੌਂ", "naun"],
+          ["10", "੧੦", "ਦਸ", "das"],
+          ["100", "੧੦੦", "ਸੌ", "sau"]
+        ]
+      },
+      "tags": ["numbers", "digits"]
+    },
+    {
+      "id": "phrases",
+      "topic": "phrases",
+      "title": "Everyday phrases",
+      "examples": [
+        {
+          "t": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ ਜੀ!",
+          "r": "Sat srii akaal jii!",
+          "e": "Hello! (respectful)"
+        },
+        {
+          "t": "ਕੀ ਹਾਲ ਹੈ?",
+          "r": "Kii haal hai?",
+          "e": "How are things?"
+        },
+        {
+          "t": "ਬਹੁਤ ਧੰਨਵਾਦ।",
+          "r": "Bahut dhannvaad.",
+          "e": "Thank you very much."
+        },
+        {
+          "t": "ਮੈਨੂੰ ਸਮਝ ਨਹੀਂ ਆਈ।",
+          "r": "Mainuun samajh nahiin aaii.",
+          "e": "I didn't understand."
+        },
+        {
+          "t": "ਇਹ ਕਿੰਨੇ ਦਾ ਹੈ?",
+          "r": "Ih kinne daa hai?",
+          "e": "How much is this?"
+        },
+        {
+          "t": "ਹੌਲੀ ਬੋਲੋ ਜੀ।",
+          "r": "Haulii bolo jii.",
+          "e": "Please speak slowly."
+        }
+      ],
+      "tags": ["phrases", "travel"]
+    },
+    {
+      "id": "ji",
+      "topic": "culture",
+      "title": "ਜੀ, the word of respect",
+      "body": "Adding ਜੀ (jii) after a name, a title, or even “yes” and “no” makes speech respectful: ਹਾਂਜੀ, ਨਹੀਂਜੀ, ਮਾਤਾ ਜੀ. Guests at a gurdwara cover their heads, take off their shoes, and are offered a free meal in the langar, the community kitchen.",
+      "tags": ["culture", "politeness", "Sikhism"]
+    },
+    {
+      "id": "genders",
+      "topic": "grammar",
+      "title": "Two genders",
+      "body": "Punjabi nouns are masculine or feminine, and adjectives and past participles agree with them. Many feminine nouns end in ‑ਈ or ‑ਣ; many masculine ones end in ‑ਆ.",
+      "examples": [
+        {
+          "t": "{ਚੰਗਾ} ਮੁੰਡਾ",
+          "r": "changā muṇḍā",
+          "e": "a good boy"
+        },
+        {
+          "t": "{ਚੰਗੀ} ਕੁੜੀ",
+          "r": "changī kuṛī",
+          "e": "a good girl"
+        }
+      ],
+      "tags": ["gender"]
+    },
+    {
+      "id": "vaisakhi",
+      "topic": "culture",
+      "title": "Vaisakhi",
+      "body": "Vaisakhi (ਵੈਸਾਖੀ), around 13 April, is the Punjabi harvest festival and the Sikh new year. It also marks the founding of the Khalsa in 1699. Nagar kirtan processions, bhangra and visits to the gurdwara fill the day.",
+      "tags": ["festivals", "Sikh"]
+    }
+  ]
+}

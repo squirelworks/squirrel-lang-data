@@ -1,0 +1,440 @@
+{
+  "schema": "reference@1",
+  "language": "hindi",
+  "entries": [
+    {
+      "id": "at-a-glance",
+      "topic": "overview",
+      "title": "Hindi at a glance",
+      "body": [
+        "Hindi is an Indo-Aryan language written in Devanagari. The verb comes last (subject, object, verb), and where English has prepositions Hindi has postpositions after the noun.",
+        "Every noun is masculine or feminine, and verbs and adjectives agree with it. Spoken Hindi and Urdu are largely mutually intelligible; Urdu is written in a Perso-Arabic script and draws more vocabulary from Persian and Arabic."
+      ],
+      "examples": [
+        {
+          "t": "मैं {चाय} पीता हूँ।",
+          "r": "main chāy pītā hūn",
+          "e": "I drink tea. (said by a man)"
+        }
+      ],
+      "tags": ["SOV", "postpositions", "Urdu"]
+    },
+    {
+      "id": "abugida",
+      "topic": "script",
+      "title": "How Devanagari works",
+      "body": [
+        "Each consonant letter carries a built-in short a: क is ka. Other vowels are written with marks (mātrā) attached to the consonant; a separate vowel letter is used only at the start of a word or after another vowel.",
+        "A line along the top (śirorekhā) joins the letters of a word. The virāma ् removes the built-in vowel, and two consonants with no vowel between them often merge into a conjunct."
+      ],
+      "examples": [
+        {
+          "t": "क् + ष = क्ष · त् + र = त्र · ज् + ञ = ज्ञ",
+          "e": "three conjuncts with their own shapes"
+        }
+      ],
+      "table": {
+        "head": ["Vowel", "Letter", "With क"],
+        "rows": [
+          ["a", "अ", "क ka"],
+          ["ā", "आ", "का kā"],
+          ["i", "इ", "कि ki"],
+          ["ī", "ई", "की kī"],
+          ["u", "उ", "कु ku"],
+          ["ū", "ऊ", "कू kū"],
+          ["e", "ए", "के ke"],
+          ["ai", "ऐ", "कै kai"],
+          ["o", "ओ", "को ko"],
+          ["au", "औ", "कौ kau"]
+        ]
+      },
+      "tags": ["script", "matras", "conjuncts"]
+    },
+    {
+      "id": "nasal",
+      "topic": "script",
+      "title": "Nasal marks: anusvāra and candrabindu",
+      "body": "A dot above (ं, anusvāra) stands for an n or m sound that matches the next consonant, or nasalizes a vowel. The moon and dot (ँ, candrabindu) nasalizes the vowel, as in French. Many writers use the plain dot for both, especially where a vowel mark already sits on top.",
+      "examples": [
+        {
+          "t": "हिंदी · हिन्दी",
+          "r": "hindī",
+          "e": "Hindi: the dot and the half-न are two spellings of the same sound"
+        },
+        {
+          "t": "हाँ",
+          "r": "hān̐",
+          "e": "yes (nasal vowel)"
+        },
+        {
+          "t": "माँ",
+          "r": "mān̐",
+          "e": "mother"
+        },
+        {
+          "t": "मैं",
+          "r": "main̐",
+          "e": "I (dot used because ै already sits on top)"
+        }
+      ],
+      "tags": ["script", "nasalization"]
+    },
+    {
+      "id": "consonants",
+      "topic": "sounds",
+      "title": "Aspirated and retroflex consonants",
+      "body": [
+        "Hindi distinguishes plain and aspirated consonants: क ka and ख kha are different letters and change meaning. The h in transliteration is a puff of air, not a separate sound.",
+        "It also has two kinds of t and d. {Dental} त थ द ध are made with the tongue on the teeth; {retroflex} ट ठ ड ढ with the tongue tip curled back. English t and d sound retroflex to Hindi ears."
+      ],
+      "examples": [
+        {
+          "t": "काल · खाल",
+          "r": "kāl · khāl",
+          "e": "time · skin"
+        },
+        {
+          "t": "तीन · टीन",
+          "r": "tīn · ṭīn",
+          "e": "three · tin"
+        }
+      ],
+      "table": {
+        "head": ["Plain", "Aspirated", "Voiced", "Voiced aspirated"],
+        "rows": [
+          ["क k", "ख kh", "ग g", "घ gh"],
+          ["च c", "छ ch", "ज j", "झ jh"],
+          ["ट ṭ", "ठ ṭh", "ड ḍ", "ढ ḍh"],
+          ["त t", "थ th", "द d", "ध dh"],
+          ["प p", "फ ph", "ब b", "भ bh"]
+        ]
+      },
+      "tags": ["pronunciation", "aspiration", "retroflex"]
+    },
+    {
+      "id": "schwa",
+      "topic": "sounds",
+      "title": "Silent a: schwa deletion",
+      "body": "The built-in a is usually not said at the end of a word, and often dropped in the middle of a word when a long vowel follows. Read by the letters and you'd say too many syllables.",
+      "examples": [
+        {
+          "t": "नमक",
+          "r": "namak (not namaka)",
+          "e": "salt"
+        },
+        {
+          "t": "कमरा",
+          "r": "kamrā (not kamarā)",
+          "e": "room"
+        },
+        {
+          "t": "समझना",
+          "r": "samajhnā",
+          "e": "to understand"
+        }
+      ],
+      "tags": ["pronunciation", "schwa"]
+    },
+    {
+      "id": "postpositions",
+      "topic": "grammar",
+      "title": "Postpositions",
+      "body": "Little words that mean in, on, from and to come after the noun. A noun before a postposition takes its oblique form.",
+      "table": {
+        "head": ["Postposition", "Meaning", "Example"],
+        "rows": [
+          ["में", "in", "घर में · in the house"],
+          ["पर", "on, at", "मेज़ पर · on the table"],
+          ["से", "from, with, by, since", "दिल्ली से · from Delhi"],
+          [
+            "को",
+            "to (indirect object); specific direct object",
+            "राम को · to Ram"
+          ],
+          ["तक", "up to, until", "शाम तक · until evening"],
+          ["का / की / के", "of, 's", "राम का घर · Ram's house"]
+        ]
+      },
+      "tags": ["postpositions"]
+    },
+    {
+      "id": "ka-ki-ke",
+      "topic": "grammar",
+      "title": "का, की, के agree with the thing owned",
+      "body": "The possessive changes to match the noun that follows it, not the owner. Use का before a masculine singular noun, की before any feminine noun, and के before a masculine plural or oblique noun. My, your and our work the same way: मेरा, मेरी, मेरे.",
+      "examples": [
+        {
+          "t": "राम {का} घर",
+          "r": "rām kā ghar",
+          "e": "Ram's house (घर is masculine)"
+        },
+        {
+          "t": "राम {की} किताब",
+          "r": "rām kī kitāb",
+          "e": "Ram's book (किताब is feminine)"
+        },
+        {
+          "t": "राम {के} दोस्त",
+          "r": "rām ke dost",
+          "e": "Ram's friends (masculine plural)"
+        },
+        {
+          "t": "{मेरी} बहन",
+          "r": "merī bahan",
+          "e": "my sister"
+        }
+      ],
+      "tags": ["possession", "agreement"]
+    },
+    {
+      "id": "oblique",
+      "topic": "grammar",
+      "title": "The oblique form",
+      "body": "Before a postposition, masculine nouns ending in -ā change to -e in the singular, and all plurals end in -on. Other nouns change only in the plural.",
+      "table": {
+        "head": ["", "Direct", "Oblique (before से, में…)"],
+        "rows": [
+          ["boy", "लड़का", "लड़के से"],
+          ["boys", "लड़के", "लड़कों से"],
+          ["house", "घर", "घर में"],
+          ["houses", "घर", "घरों में"],
+          ["girls", "लड़कियाँ", "लड़कियों से"]
+        ]
+      },
+      "tags": ["cases", "oblique"]
+    },
+    {
+      "id": "pronouns-hona",
+      "topic": "grammar",
+      "title": "Pronouns and होना (to be)",
+      "body": "Hindi has three levels of you. {आप} is polite and the safe default with adults; {तुम} is for friends and people younger than you; {तू} is very intimate or rude. Third-person वे / ये are also used for one person, as a mark of respect.",
+      "table": {
+        "head": ["Pronoun", "Meaning", "is / am / are"],
+        "rows": [
+          ["मैं", "I", "हूँ"],
+          ["तू", "you (intimate)", "है"],
+          ["तुम", "you (familiar)", "हो"],
+          ["आप", "you (polite)", "हैं"],
+          ["यह · वह", "he, she, it, this · that", "है"],
+          ["हम", "we", "हैं"],
+          ["ये · वे", "they; he or she (respect)", "हैं"]
+        ]
+      },
+      "tags": ["pronouns", "to be", "politeness"]
+    },
+    {
+      "id": "habitual",
+      "topic": "verbs",
+      "title": "Present habitual: बोलता हूँ",
+      "body": "Take the verb stem (drop -nā), add -tā / -tī / -te for the subject's gender and number, then the right form of होना.",
+      "examples": [
+        {
+          "t": "मैं हिंदी बोल{ता} हूँ।",
+          "r": "main hindī boltā hūn",
+          "e": "I speak Hindi. (man)"
+        },
+        {
+          "t": "मैं हिंदी बोल{ती} हूँ।",
+          "r": "main hindī boltī hūn",
+          "e": "I speak Hindi. (woman)"
+        },
+        {
+          "t": "वे यहाँ रह{ते} हैं।",
+          "r": "ve yahān rahte hain",
+          "e": "They live here."
+        }
+      ],
+      "tags": ["verbs", "present"]
+    },
+    {
+      "id": "progressive",
+      "topic": "verbs",
+      "title": "Present progressive: खा रहा हूँ",
+      "body": "For an action happening now, use the stem + रहा / रही / रहे + होना.",
+      "examples": [
+        {
+          "t": "मैं खा {रहा} हूँ।",
+          "r": "main khā rahā hūn",
+          "e": "I'm eating. (man)"
+        },
+        {
+          "t": "वह पढ़ {रही} है।",
+          "r": "vah paṛh rahī hai",
+          "e": "She is studying."
+        },
+        {
+          "t": "बच्चे खेल {रहे} हैं।",
+          "r": "bacce khel rahe hain",
+          "e": "The children are playing."
+        }
+      ],
+      "tags": ["verbs", "progressive"]
+    },
+    {
+      "id": "ne",
+      "topic": "verbs",
+      "title": "The past tense and ने",
+      "body": [
+        "In the simple past, transitive verbs (ones that take an object) mark their subject with {ने}, and the verb then agrees with the object instead of the subject.",
+        "Intransitive verbs like go and come don't use ने and agree with the subject as usual."
+      ],
+      "examples": [
+        {
+          "t": "मैं{ने} किताब पढ़ी।",
+          "r": "mainne kitāb paṛhī",
+          "e": "I read the book. (पढ़ी is feminine to match किताब)"
+        },
+        {
+          "t": "राम {ने} खाना खाया।",
+          "r": "rām ne khānā khāyā",
+          "e": "Ram ate the food."
+        },
+        {
+          "t": "वह घर गई।",
+          "r": "vah ghar gaī",
+          "e": "She went home. (no ने: go is intransitive)"
+        }
+      ],
+      "tags": ["verbs", "past", "ergative"]
+    },
+    {
+      "id": "numbers",
+      "topic": "numbers",
+      "title": "Numbers",
+      "body": [
+        "एक, दो, तीन, चार, पाँच, छह, सात, आठ, नौ, दस. Unlike most languages, every number from 1 to 100 has its own word that has to be learned; the tens and units blend irregularly.",
+        "Large numbers group in the Indian way: a lākh is 100,000 (written 1,00,000) and a karoṛ is 10 million (1,00,00,000)."
+      ],
+      "table": {
+        "head": ["Devanagari", "Number", "Word"],
+        "rows": [
+          ["१", "1", "एक ek"],
+          ["२", "2", "दो do"],
+          ["३", "3", "तीन tīn"],
+          ["४", "4", "चार cār"],
+          ["५", "5", "पाँच pān̐c"],
+          ["१०", "10", "दस das"],
+          ["२०", "20", "बीस bīs"],
+          ["१००", "100", "सौ sau"]
+        ]
+      },
+      "tags": ["numbers", "lakh", "crore"]
+    },
+    {
+      "id": "phrases",
+      "topic": "phrases",
+      "title": "Everyday phrases",
+      "examples": [
+        {
+          "t": "नमस्ते",
+          "r": "namaste",
+          "e": "Hello. Goodbye."
+        },
+        {
+          "t": "धन्यवाद · शुक्रिया",
+          "r": "dhanyavād · śukriyā",
+          "e": "Thank you."
+        },
+        {
+          "t": "कृपया",
+          "r": "kṛpayā",
+          "e": "Please."
+        },
+        {
+          "t": "माफ़ कीजिए",
+          "r": "māf kījie",
+          "e": "Excuse me. Sorry."
+        },
+        {
+          "t": "हाँ · नहीं",
+          "r": "hān̐ · nahīn",
+          "e": "Yes · No"
+        },
+        {
+          "t": "आप कैसे हैं?",
+          "r": "āp kaise hain?",
+          "e": "How are you? (to a man; कैसी to a woman)"
+        },
+        {
+          "t": "मैं ठीक हूँ।",
+          "r": "main ṭhīk hūn",
+          "e": "I'm fine."
+        },
+        {
+          "t": "फिर मिलेंगे",
+          "r": "phir milenge",
+          "e": "See you again."
+        }
+      ],
+      "tags": ["greetings"]
+    },
+    {
+      "id": "future",
+      "topic": "verbs",
+      "title": "Future tense",
+      "body": "The future adds -ūngā / -egā / -enge (and -ī forms for feminine) straight to the stem.",
+      "examples": [
+        {
+          "t": "मैं कल दिल्ली {जाऊँगा}।",
+          "r": "main kal dillī jāūngā",
+          "e": "I will go to Delhi tomorrow. (कल means both yesterday and tomorrow)"
+        }
+      ],
+      "table": {
+        "head": ["Subject", "Masculine", "Feminine"],
+        "rows": [
+          ["मैं", "जाऊँगा", "जाऊँगी"],
+          ["तुम", "जाओगे", "जाओगी"],
+          ["आप", "जाएँगे", "जाएँगी"],
+          ["वह", "जाएगा", "जाएगी"],
+          ["हम", "जाएँगे", "जाएँगी"],
+          ["वे", "जाएँगे", "जाएँगी"]
+        ]
+      },
+      "tags": ["verbs", "future"]
+    },
+    {
+      "id": "dative-subject",
+      "topic": "grammar",
+      "title": "Experiences take को: मुझे",
+      "body": "Feelings, needs, likes and knowing a language are said as to me: the person takes को (मुझे, तुम्हें, उसे…) and the thing is the grammatical subject.",
+      "examples": [
+        {
+          "t": "{मुझे} पानी चाहिए।",
+          "r": "mujhe pānī cāhie",
+          "e": "I need water."
+        },
+        {
+          "t": "{मुझे} हिंदी आती है।",
+          "r": "mujhe hindī ātī hai",
+          "e": "I know Hindi. (Hindi comes to me)"
+        },
+        {
+          "t": "{उसे} चाय पसंद है।",
+          "r": "use cāy pasand hai",
+          "e": "He / she likes tea."
+        }
+      ],
+      "tags": ["dative", "experiencer"]
+    },
+    {
+      "id": "sakna",
+      "topic": "verbs",
+      "title": "Can: सकना",
+      "body": "Put सकना after the bare verb stem, and conjugate सकना. For a learned skill, सकना or आना both work.",
+      "examples": [
+        {
+          "t": "मैं हिंदी बोल {सकता} हूँ।",
+          "r": "main hindī bol saktā hūn",
+          "e": "I can speak Hindi. (man)"
+        },
+        {
+          "t": "क्या आप मेरी मदद कर {सकते} हैं?",
+          "r": "kyā āp merī madad kar sakte hain?",
+          "e": "Can you help me?"
+        }
+      ],
+      "tags": ["verbs", "modal"]
+    }
+  ]
+}
