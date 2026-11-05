@@ -3,17 +3,21 @@
   "language": "klingon",
   "notes": [
     "Klingon verbs and nouns for the Grammar Learner. Written for this project.",
-    "Examples are [Klingon, gloss, English]; {braces} mark the prefix.",
-    "Lessons with `generate` get drills built from the prefix grid below."
+    "Examples are [Klingon, gloss, English]; {braces} mark the point of the lesson (the prefix, in the grid lessons).",
+    "Lessons with `generate` get drills built from the prefix grid below.",
+    "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
+    "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
+    "24 lessons, from A1 to B1. Lessons 11–24 were added to cover the rest of the beginner path and the first intermediate points."
   ],
   "title": "Klingon verbs and nouns",
-  "intro": "A Klingon verb starts with a prefix that says who does the action and, at the same time, who it is done to. One syllable carries what English splits across a subject and an object. Learn the grid once and every verb opens up. Later lessons add the everyday verb suffixes, plural and possessive nouns, places, and “to be”. Romanization is the standard Latin spelling; tick “Show pIqaD” to see each example in Klingon script.",
+  "intro": "A Klingon verb starts with a prefix that says who does the action and, at the same time, who it is done to. One syllable carries what English splits across a subject and an object. Learn the grid once and every verb opens up. The 24 lessons run from A1 to B1. They start with the prefix grid, commands, the everyday verb suffixes, plural and possessive nouns, places and “to be”, then add time words, aspect, need and readiness, questions and numbers, and end with comparison, “when” and “if”, “who” and “in order to”. Romanization is the standard Latin spelling; tick “Show pIqaD” to see each example in Klingon script.",
   "lessons": [
     {
       "id": "shape",
       "title": "How a Klingon verb is built",
       "particle": "verb",
-      "summary": "prefix + verb + suffixes, and the object comes first.",
+      "summary": "prefix + verb + suffixes, and the object comes first. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "A Klingon verb is built like a train: <b>prefix</b> (who → whom) + <b>verb</b> + optional <b>suffixes</b> (not, can, question...). The prefix is required for the meaning; pronouns like jIH (I) are usually left out because the prefix already says it.",
@@ -75,7 +79,8 @@
       "id": "no-object",
       "title": "Prefixes with no object",
       "particle": "jI- bI- ma- Su-",
-      "summary": "I, you, we, you all, he/she, they — when the action has no object.",
+      "summary": "I, you, we, you all, he/she, they — when the action has no object. (about A1)",
+      "level": "absolute-beginner",
       "table": "none",
       "sections": [
         {
@@ -98,7 +103,8 @@
       "id": "with-object",
       "title": "Prefixes with an object",
       "particle": "qa- vI- mu- Da-…",
-      "summary": "One prefix for “who does it to whom”.",
+      "summary": "One prefix for “who does it to whom”. (about A1)",
+      "level": "beginner",
       "table": "all",
       "sections": [
         {
@@ -136,7 +142,8 @@
       "id": "empty",
       "title": "When there is no prefix",
       "particle": "∅",
-      "summary": "The bare verb: he/she/it/they, with no object or a third-person one.",
+      "summary": "The bare verb: he/she/it/they, with no object or a third-person one. (about A1)",
+      "level": "beginner",
       "table": "all",
       "sections": [
         {
@@ -167,7 +174,8 @@
       "id": "imperative",
       "title": "Commands",
       "particle": "yI- pe- HI- gho- tI-",
-      "summary": "Telling someone to do something.",
+      "summary": "Telling someone to do something. (about A1)",
+      "level": "beginner",
       "table": "imperative",
       "sections": [
         {
@@ -191,7 +199,8 @@
       "id": "verb-suffixes",
       "title": "Not, can, and questions",
       "particle": "-be' -laH -'a'",
-      "summary": "Three verb suffixes you will use every day.",
+      "summary": "Three verb suffixes you will use every day. (about A1)",
+      "level": "beginner",
       "sections": [
         {
           "p": "Suffixes go after the verb in a fixed order. <b>-laH</b> means “can”, <b>-be'</b> means “not” and follows whatever it negates, and <b>-'a'</b> makes a yes/no question. -'a' always comes last.",
@@ -260,7 +269,8 @@
       "id": "noun-plural",
       "title": "Plural nouns",
       "particle": "-pu' -Du' -mey",
-      "summary": "Three plural endings, chosen by what the noun is.",
+      "summary": "Three plural endings, chosen by what the noun is. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Klingon has three plural suffixes. <b>-pu'</b> is for beings that can speak a language, <b>-Du'</b> for body parts, and <b>-mey</b> for everything else. A noun without one can be singular or plural: the verb prefix often tells you which.",
@@ -321,7 +331,8 @@
       "id": "possession",
       "title": "My, your, his",
       "particle": "-wIj -lIj -Daj",
-      "summary": "Possession is a suffix on the noun.",
+      "summary": "Possession is a suffix on the noun. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "“My ship” is Duj<b>wIj</b>. The suffixes are <b>-wIj</b> my, <b>-lIj</b> your, <b>-Daj</b> his or her, <b>-maj</b> our, <b>-raj</b> your (several), <b>-chaj</b> their.",
@@ -383,7 +394,8 @@
       "id": "locative",
       "title": "In, at and from",
       "particle": "-Daq -vo' -vaD",
-      "summary": "Place and purpose are noun suffixes too.",
+      "summary": "Place and purpose are noun suffixes too. (about A1)",
+      "level": "beginner",
       "sections": [
         {
           "p": "<b>-Daq</b> marks where: “in, at, on”, and also “to” with verbs of motion. <b>-vo'</b> means “from”. They go after any plural or possessive, and the place usually comes at the start of the sentence.",
@@ -449,7 +461,8 @@
       "id": "to-be",
       "title": "“I am a Klingon”",
       "particle": "jIH SoH ghaH",
-      "summary": "No verb “to be”: the pronoun does the job.",
+      "summary": "No verb “to be”: the pronoun does the job. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Klingon has no verb “to be”. Instead the pronoun works as the verb, after the noun: tlhIngan <b>jIH</b> “I am a Klingon”, yaS <b>SoH</b> “you are an officer”, Duj <b>'oH</b> “it is a ship”.",
@@ -501,6 +514,914 @@
           "options": ["'oH", "ghaH", "chaH", "jIH"],
           "answer": "'oH",
           "why": "For a thing, “it is” is 'oH."
+        }
+      ]
+    },
+    {
+      "id": "time-perfective",
+      "title": "Yesterday, tomorrow, and -pu'",
+      "particle": "-pu' wa'Hu' wa'leS",
+      "summary": "Klingon verbs have no tense. Time words like wa'Hu' (yesterday) and wa'leS (tomorrow) set the time, and -pu' says an action is complete. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>DaH</b> now, <b>DaHjaj</b> today, <b>wa'Hu'</b> yesterday, <b>wa'leS</b> tomorrow. They go at the start of the sentence, and the verb stays the same.",
+          "examples": [
+            ["{wa'leS} jISuv.", "tomorrow · I-fight", "I'll fight tomorrow."],
+            ["{wa'Hu'} jIQong.", "yesterday · I-sleep", "I slept yesterday."]
+          ]
+        },
+        {
+          "h": "Done: -pu'",
+          "p": "<b>-pu'</b> marks an action as finished, like English “have done”: <b>jIQongpu'</b> I have slept. <b>-ta'</b> is the same for something done on purpose: <b>vIta'ta'</b> I have accomplished it.",
+          "examples": [
+            ["jIQong{pu'}.", "jI- + Qong + -pu'", "I have slept."],
+            [
+              "Duj vIlegh{pu'}.",
+              "ship · vI- + legh + -pu'",
+              "I have seen the ship."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ jISuv.",
+          "en": "I'll fight tomorrow.",
+          "options": ["wa'leS", "wa'Hu'", "DaH", "DaHjaj"],
+          "answer": "wa'leS",
+          "why": "Tomorrow: wa'leS."
+        },
+        {
+          "q": "＿ jIQong.",
+          "en": "I slept yesterday.",
+          "options": ["wa'leS", "wa'Hu'", "DaH", "ghorgh"],
+          "answer": "wa'Hu'",
+          "why": "Yesterday: wa'Hu'."
+        },
+        {
+          "q": "jIQong＿.",
+          "en": "I have slept.",
+          "options": ["taH", "laH", "pu'", "be'"],
+          "answer": "pu'",
+          "why": "Done: -pu'."
+        },
+        {
+          "q": "Duj vIlegh＿.",
+          "en": "I have seen the ship.",
+          "options": ["'a'", "mey", "Daq", "pu'"],
+          "answer": "pu'",
+          "why": "Finished action: -pu'."
+        }
+      ]
+    },
+    {
+      "id": "continuous",
+      "title": "Going on: -taH and -lI'",
+      "particle": "-taH -lI'",
+      "summary": "-taH says an action is ongoing: jIQongtaH, I'm sleeping. -lI' says it's in progress toward a known end. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>-taH</b> continuous, with no end in sight: <b>bIjatlhtaH</b> you keep talking. <b>-lI'</b> progress toward a goal: <b>paq vIlaDlI'</b> I'm reading the book (and will finish it).",
+          "examples": [
+            ["jIQong{taH}.", "jI- + Qong + -taH", "I'm sleeping."],
+            ["bIjatlh{taH}.", "bI- + jatlh + -taH", "You keep talking."]
+          ]
+        },
+        {
+          "h": "Toward an end: -lI'",
+          "p": "Use <b>-lI'</b> when there's a clear finish line: a book to finish, a place to reach.",
+          "examples": [
+            [
+              "paq vIlaD{lI'}.",
+              "book · vI- + laD + -lI'",
+              "I'm reading the book."
+            ],
+            [
+              "Duj wIghoS{lI'}.",
+              "ship · wI- + ghoS + -lI'",
+              "We're on our way to the ship."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "jIQong＿.",
+          "en": "I'm sleeping.",
+          "options": ["taH", "pu'", "laH", "'a'"],
+          "answer": "taH",
+          "why": "Ongoing: -taH."
+        },
+        {
+          "q": "bIjatlh＿.",
+          "en": "You keep talking.",
+          "options": ["lI'", "taH", "pu'", "be'"],
+          "answer": "taH",
+          "why": "No end in sight: -taH."
+        },
+        {
+          "q": "paq vIlaD＿.",
+          "en": "I'm reading the book (to finish it).",
+          "options": ["taH", "pu'", "lI'", "mey"],
+          "answer": "lI'",
+          "why": "Toward a known end: -lI'."
+        },
+        {
+          "q": "HoD jatlh＿.",
+          "en": "The captain is speaking.",
+          "options": ["Daq", "vo'", "pu'", "taH"],
+          "answer": "taH",
+          "why": "Ongoing: -taH."
+        }
+      ]
+    },
+    {
+      "id": "need-ready",
+      "title": "Need, willing, ready, afraid",
+      "particle": "-nIS -qang -rup -vIp",
+      "summary": "One small slot right after the verb holds how the subject feels about the action: -nIS need, -qang willing, -rup ready, -vIp afraid. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>jIQongnIS</b> I need to sleep. <b>jIjatlhqang</b> I'm willing to speak. <b>jISuvrup</b> I'm ready to fight. <b>jISuvvIp</b> I'm afraid to fight. Only one of these goes on a verb at a time.",
+          "examples": [
+            ["jIQong{nIS}.", "jI- + Qong + -nIS", "I need to sleep."],
+            ["jISuv{rup}.", "jI- + Suv + -rup", "I'm ready to fight."]
+          ]
+        },
+        {
+          "h": "With not and can",
+          "p": "They come before -laH and -be': <b>jISuvvIpbe'</b> I'm not afraid to fight.",
+          "examples": [
+            ["jIjatlh{qang}.", "jI- + jatlh + -qang", "I'm willing to speak."],
+            [
+              "jISuv{vIp}be'.",
+              "jI- + Suv + -vIp + -be'",
+              "I'm not afraid to fight."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "jIQong＿.",
+          "en": "I need to sleep.",
+          "options": ["nIS", "qang", "rup", "vIp"],
+          "answer": "nIS",
+          "why": "Need: -nIS."
+        },
+        {
+          "q": "jISuv＿.",
+          "en": "I'm ready to fight.",
+          "options": ["nIS", "rup", "vIp", "taH"],
+          "answer": "rup",
+          "why": "Ready: -rup."
+        },
+        {
+          "q": "jIjatlh＿.",
+          "en": "I'm willing to speak.",
+          "options": ["rup", "nIS", "qang", "pu'"],
+          "answer": "qang",
+          "why": "Willing: -qang."
+        },
+        {
+          "q": "jISuv＿be'.",
+          "en": "I'm not afraid to fight.",
+          "options": ["nIS", "rup", "qang", "vIp"],
+          "answer": "vIp",
+          "why": "Afraid: -vIp."
+        }
+      ]
+    },
+    {
+      "id": "want-know",
+      "title": "I want to …: neH and 'e'",
+      "particle": "neH 'e'",
+      "summary": "To say “I want to sleep”, give both verbs their own prefix: jIQong vIneH. With other verbs, 'e' (that) stands for the first sentence: Qong 'e' vISov, I know he's asleep. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>neH</b> want takes a whole sentence as its object, and that sentence comes first: <b>jIQong vIneH</b> I want to sleep, <b>bIjatlh vIneH</b> I want you to speak.",
+          "examples": [
+            ["jIQong {vIneH}.", "jI- + Qong · vI- + neH", "I want to sleep."],
+            [
+              "bIjatlh {vIneH}.",
+              "bI- + jatlh · vI- + neH",
+              "I want you to speak."
+            ]
+          ]
+        },
+        {
+          "h": "That: 'e'",
+          "p": "Other verbs need <b>'e'</b> before them to point back at the first sentence: <b>Qong 'e' vISov</b> I know that he's sleeping.",
+          "examples": [
+            [
+              "Qong {'e'} vISov.",
+              "he-sleeps · that · I-know-it",
+              "I know he's sleeping."
+            ],
+            [
+              "jatlh HoD {'e'} vIQoy.",
+              "speaks · captain · that · I-hear-it",
+              "I heard the captain speak."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "jIQong ＿.",
+          "en": "I want to sleep.",
+          "options": ["vIneH", "jIneH", "neH", "DaneH"],
+          "answer": "vIneH",
+          "why": "Want it (the sentence): vI- + neH."
+        },
+        {
+          "q": "bIjatlh ＿.",
+          "en": "I want you to speak.",
+          "options": ["'e' vIneH", "vIneH", "bIneH", "DaneH"],
+          "answer": "vIneH",
+          "why": "neH needs no 'e'."
+        },
+        {
+          "q": "Qong ＿ vISov.",
+          "en": "I know he's sleeping.",
+          "options": ["'ej", "je", "'e'", "vam"],
+          "answer": "'e'",
+          "why": "That: 'e'."
+        },
+        {
+          "q": "jatlh HoD 'e' ＿.",
+          "en": "I heard the captain speak.",
+          "options": ["jIQoy", "Qoy", "DaQoy", "vIQoy"],
+          "answer": "vIQoy",
+          "why": "I hear it: vI-."
+        }
+      ]
+    },
+    {
+      "id": "cause",
+      "title": "Make it happen: -moH",
+      "particle": "-moH",
+      "summary": "-moH means “cause”: Qong sleep → QongmoH put to sleep. It turns many verbs, including “be” verbs, into new transitive verbs. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>vIQongmoH</b> I put him to sleep. <b>ghojmoH</b> teach (cause to learn): <b>tlhIngan Hol qaghojmoH</b> I'll teach you Klingon. With a “be” verb: <b>tInmoH</b> enlarge.",
+          "examples": [
+            [
+              "puq {vIQongmoH}.",
+              "child · vI- + Qong + -moH",
+              "I put the child to sleep."
+            ],
+            [
+              "tlhIngan Hol {qaghojmoH}.",
+              "Klingon language · qa- + ghoj + -moH",
+              "I'll teach you Klingon."
+            ]
+          ]
+        },
+        {
+          "h": "The new object",
+          "p": "The person made to act becomes the object, so the prefix changes: <b>jIQong</b> I sleep, but <b>muQongmoH</b> he puts me to sleep.",
+          "examples": [
+            ["{muQongmoH}.", "mu- + Qong + -moH", "He puts me to sleep."],
+            [
+              "Duj {wItInmoH}.",
+              "ship · wI- + tIn + -moH",
+              "We enlarge the ship."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "puq vIQong＿.",
+          "en": "I put the child to sleep.",
+          "options": ["moH", "nIS", "pu'", "taH"],
+          "answer": "moH",
+          "why": "Cause: -moH."
+        },
+        {
+          "q": "tlhIngan Hol qaghoj＿.",
+          "en": "I'll teach you Klingon.",
+          "options": ["laH", "moH", "be'", "rup"],
+          "answer": "moH",
+          "why": "Teach = cause to learn."
+        },
+        {
+          "q": "＿QongmoH.",
+          "en": "He puts me to sleep.",
+          "options": ["jI", "vI", "mu", "qa"],
+          "answer": "mu",
+          "why": "He → me: mu-."
+        },
+        {
+          "q": "Duj wItIn＿.",
+          "en": "We enlarge the ship.",
+          "options": ["taH", "'a'", "Daq", "moH"],
+          "answer": "moH",
+          "why": "Make big: tInmoH."
+        }
+      ]
+    },
+    {
+      "id": "undo-again",
+      "title": "Mis-, un- and again: -Ha', -qa'",
+      "particle": "-Ha' -qa'",
+      "summary": "-Ha' right after the verb means “wrongly” or “undo”: yajHa', misunderstand. -qa' means “again, resume”. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-Ha'</b> sits directly on the verb, before any other suffix: <b>jIyajHa'</b> I misunderstand. It differs from -be': <b>jIyajbe'</b> I don't understand, <b>jIyajHa'</b> I understand it wrongly.",
+          "examples": [
+            ["jIyaj{Ha'}.", "jI- + yaj + -Ha'", "I misunderstand."],
+            ["vIvoq{Ha'}.", "vI- + voq + -Ha'", "I distrust him."]
+          ]
+        },
+        {
+          "h": "Again: -qa'",
+          "p": "<b>-qa'</b> means doing something again or picking it back up: <b>jIQongqa'</b> I go back to sleep.",
+          "examples": [
+            ["jIQong{qa'}.", "jI- + Qong + -qa'", "I go back to sleep."],
+            [
+              "Duj vIlegh{qa'}.",
+              "ship · vI- + legh + -qa'",
+              "I see the ship again."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "jIyaj＿.",
+          "en": "I misunderstand.",
+          "options": ["Ha'", "be'", "qa'", "pu'"],
+          "answer": "Ha'",
+          "why": "Understand wrongly: -Ha'."
+        },
+        {
+          "q": "jIyaj＿.",
+          "en": "I don't understand.",
+          "options": ["Ha'", "be'", "qa'", "moH"],
+          "answer": "be'",
+          "why": "Simple not: -be'."
+        },
+        {
+          "q": "jIQong＿.",
+          "en": "I go back to sleep.",
+          "options": ["Ha'", "taH", "qa'", "nIS"],
+          "answer": "qa'",
+          "why": "Again: -qa'."
+        },
+        {
+          "q": "Duj vIlegh＿.",
+          "en": "I see the ship again.",
+          "options": ["Ha'", "lI'", "Daq", "qa'"],
+          "answer": "qa'",
+          "why": "Again: -qa'."
+        }
+      ]
+    },
+    {
+      "id": "question-words",
+      "title": "Who, what, where, why",
+      "particle": "nuq 'Iv nuqDaq qatlh",
+      "summary": "Question words sit where the answer would go, and the verb takes no -'a': nuq Dalegh? What do you see? (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>nuq</b> what, <b>'Iv</b> who, <b>nuqDaq</b> where, <b>qatlh</b> why, <b>ghorgh</b> when, <b>chay'</b> how, <b>'ar</b> how many.",
+          "examples": [
+            ["{nuq} Dalegh?", "what · Da- + legh", "What do you see?"],
+            ["{'Iv} SoH?", "who · you-are", "Who are you?"]
+          ]
+        },
+        {
+          "h": "Where, why, when",
+          "p": "<b>nuqDaq</b> and the time words go first, like any place or time: <b>nuqDaq HoD?</b> where is the captain?",
+          "examples": [
+            [
+              "{nuqDaq} 'oH Duj'e'?",
+              "where · it-is · ship (topic)",
+              "Where is the ship?"
+            ],
+            ["{qatlh} bISuv?", "why · bI- + Suv", "Why do you fight?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ Dalegh?",
+          "en": "What do you see?",
+          "options": ["nuq", "'Iv", "qatlh", "ghorgh"],
+          "answer": "nuq",
+          "why": "What: nuq."
+        },
+        {
+          "q": "＿ SoH?",
+          "en": "Who are you?",
+          "options": ["nuq", "'Iv", "nuqDaq", "'ar"],
+          "answer": "'Iv",
+          "why": "Who: 'Iv."
+        },
+        {
+          "q": "＿ bISuv?",
+          "en": "Why do you fight?",
+          "options": ["nuq", "chay'", "qatlh", "'ar"],
+          "answer": "qatlh",
+          "why": "Why: qatlh."
+        },
+        {
+          "q": "＿ bIQong?",
+          "en": "When do you sleep?",
+          "options": ["nuqDaq", "'Iv", "nuq", "ghorgh"],
+          "answer": "ghorgh",
+          "why": "When: ghorgh."
+        }
+      ]
+    },
+    {
+      "id": "and-but",
+      "title": "And, or, but",
+      "particle": "'ej je 'ach joq",
+      "summary": "Klingon has one set of words for joining sentences ('ej and, 'ach but, pagh or) and another for joining nouns (je and, joq or), which come after the nouns. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Between sentences: <b>'ej</b> and, <b>'ach</b> but, <b>pagh</b> or (one or the other), <b>qoj</b> and/or. They go between the two sentences.",
+          "examples": [
+            [
+              "jISop {'ej} jItlhutlh.",
+              "jI- + Sop · and · jI- + tlhutlh",
+              "I eat and drink."
+            ],
+            [
+              "jIQong vIneH {'ach} jISuvnIS.",
+              "I-sleep I-want · but · I-fight-need",
+              "I want to sleep, but I have to fight."
+            ]
+          ]
+        },
+        {
+          "h": "Nouns: je after both",
+          "p": "For nouns, the joining word comes <i>after</i> them: <b>HoD yaS je</b> the captain and the officer, <b>Duj tera' joq</b> a ship or Earth.",
+          "examples": [
+            [
+              "HoD yaS {je} vIlegh.",
+              "captain · officer · and · vI- + legh",
+              "I see the captain and the officer."
+            ],
+            [
+              "puq be' {je} vIlegh.",
+              "child · woman · and · vI- + legh",
+              "I see the child and the woman."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "jISop ＿ jItlhutlh.",
+          "en": "I eat and drink.",
+          "options": ["'ej", "je", "'ach", "joq"],
+          "answer": "'ej",
+          "why": "Sentences: 'ej."
+        },
+        {
+          "q": "HoD yaS ＿ vIlegh.",
+          "en": "I see the captain and the officer.",
+          "options": ["'ej", "je", "'ach", "pagh"],
+          "answer": "je",
+          "why": "Nouns: je, after both."
+        },
+        {
+          "q": "jIQong vIneH ＿ jISuvnIS.",
+          "en": "I want to sleep, but I have to fight.",
+          "options": ["'ej", "je", "'ach", "joq"],
+          "answer": "'ach",
+          "why": "But: 'ach."
+        },
+        {
+          "q": "bIQong ＿ bISuv.",
+          "en": "Either you sleep or you fight.",
+          "options": ["je", "'ach", "joq", "pagh"],
+          "answer": "pagh",
+          "why": "One or the other, between sentences: pagh."
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "title": "Numbers",
+      "particle": "wa' cha' wej",
+      "summary": "Numbers come before the noun, and the noun needs no plural ending: cha' Duj, two ships. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>wa'</b> 1, <b>cha'</b> 2, <b>wej</b> 3, <b>loS</b> 4, <b>vagh</b> 5, <b>jav</b> 6, <b>Soch</b> 7, <b>chorgh</b> 8, <b>Hut</b> 9, <b>wa'maH</b> 10. Tens are <b>-maH</b>: <b>cha'maH</b> 20.",
+          "examples": [
+            [
+              "{cha'} Duj vIlegh.",
+              "two · ship · vI- + legh",
+              "I see two ships."
+            ],
+            ["{wej} yaS.", "three · officer", "three officers"]
+          ]
+        },
+        {
+          "h": "First, twice",
+          "p": "<b>-DIch</b> makes ordinals, after the noun: <b>yaS wa'DIch</b> the first officer. <b>-logh</b> counts times: <b>cha'logh</b> twice.",
+          "examples": [
+            [
+              "yaS {wa'DIch} ghaH.",
+              "officer · first · he-is",
+              "He is the first officer."
+            ],
+            ["{cha'logh} jIjatlh.", "twice · jI- + jatlh", "I spoke twice."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ Duj vIlegh.",
+          "en": "I see two ships.",
+          "options": ["cha'", "wa'", "wej", "loS"],
+          "answer": "cha'",
+          "why": "Two: cha'."
+        },
+        {
+          "q": "＿ yaS.",
+          "en": "three officers",
+          "options": ["loS", "wej", "cha'", "vagh"],
+          "answer": "wej",
+          "why": "Three: wej."
+        },
+        {
+          "q": "yaS ＿ ghaH.",
+          "en": "He is the first officer.",
+          "options": ["wa'logh", "wa'", "wa'DIch", "wa'maH"],
+          "answer": "wa'DIch",
+          "why": "First: wa'DIch."
+        },
+        {
+          "q": "＿ jIjatlh.",
+          "en": "I spoke twice.",
+          "options": ["cha'DIch", "cha'", "cha'maH", "cha'logh"],
+          "answer": "cha'logh",
+          "why": "Twice: cha'logh."
+        }
+      ]
+    },
+    {
+      "id": "this-that",
+      "title": "This, that, and the topic: -vam, -vetlh, -'e'",
+      "particle": "-vam -vetlh -'e'",
+      "summary": "-vam (this) and -vetlh (that) go at the end of a noun. -'e' marks the topic or focus: “as for…, it's … that”. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>Dujvam</b> this ship, <b>Dujvetlh</b> that ship. They come after any plural or possessive: <b>Dujmeyvam</b> these ships.",
+          "examples": [
+            [
+              "Duj{vam} vIlegh.",
+              "ship + this · vI- + legh",
+              "I see this ship."
+            ],
+            [
+              "yaS{vetlh} 'Iv?",
+              "officer + that · who",
+              "Who is that officer?"
+            ]
+          ]
+        },
+        {
+          "h": "Topic: -'e'",
+          "p": "With “to be” sentences, <b>-'e'</b> marks the subject: <b>HoD ghaH qeylIS'e'</b> Kahless is the captain. Elsewhere it puts weight on a noun: <b>jIH'e'</b> it is I.",
+          "examples": [
+            [
+              "HoD ghaH qeylIS{'e'}.",
+              "captain · he-is · Kahless + topic",
+              "Kahless is the captain."
+            ],
+            [
+              "Duj 'oH Dujvam{'e'}.",
+              "ship · it-is · this ship + topic",
+              "This is a ship."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Duj＿ vIlegh.",
+          "en": "I see this ship.",
+          "options": ["vam", "vetlh", "'e'", "mey"],
+          "answer": "vam",
+          "why": "This: -vam."
+        },
+        {
+          "q": "yaS＿ 'Iv?",
+          "en": "Who is that officer?",
+          "options": ["vam", "vetlh", "Daq", "pu'"],
+          "answer": "vetlh",
+          "why": "That: -vetlh."
+        },
+        {
+          "q": "HoD ghaH qeylIS＿.",
+          "en": "Kahless is the captain.",
+          "options": ["vam", "vaD", "'e'", "wIj"],
+          "answer": "'e'",
+          "why": "Subject of “to be”: -'e'."
+        },
+        {
+          "q": "Dujmey＿ vIlegh.",
+          "en": "I see these ships.",
+          "options": ["vetlh", "'e'", "Daq", "vam"],
+          "answer": "vam",
+          "why": "-vam after the plural."
+        }
+      ]
+    },
+    {
+      "id": "comparison",
+      "title": "Bigger than: law' and puS",
+      "particle": "law' puS",
+      "summary": "Klingon compares with a fixed pattern: A Q law' B Q puS, literally “A is many-Q, B is few-Q”. HoD tIn law' yaS tIn puS: the captain is bigger than the officer. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "The quality word (Q) is a “be” verb used without a prefix, and it appears twice. Put <b>Hoch</b> (all) in the second half for “-est”.",
+          "examples": [
+            [
+              "HoD tIn {law'} yaS tIn {puS}.",
+              "captain big many · officer big few",
+              "The captain is bigger than the officer."
+            ],
+            [
+              "Dujvam Do {law'} Dujvetlh Do {puS}.",
+              "this ship fast many · that ship fast few",
+              "This ship is faster than that one."
+            ]
+          ]
+        },
+        {
+          "h": "The most: Hoch",
+          "p": "<b>A Q law' Hoch Q puS</b>: A is more Q than all, A is the most Q.",
+          "examples": [
+            [
+              "qeylIS quv law' {Hoch} quv puS.",
+              "Kahless honored many · all honored few",
+              "Kahless is the most honored of all."
+            ],
+            [
+              "Dujvam Do law' {Hoch} Do puS.",
+              "this ship fast many · all fast few",
+              "This ship is the fastest."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "HoD tIn ＿ yaS tIn puS.",
+          "en": "The captain is bigger than the officer.",
+          "options": ["law'", "puS", "Hoch", "'ej"],
+          "answer": "law'",
+          "why": "The first half takes law'."
+        },
+        {
+          "q": "Dujvam Do law' Dujvetlh Do ＿.",
+          "en": "This ship is faster than that one.",
+          "options": ["law'", "puS", "Hoch", "je"],
+          "answer": "puS",
+          "why": "The second half takes puS."
+        },
+        {
+          "q": "qeylIS quv law' ＿ quv puS.",
+          "en": "Kahless is the most honored of all.",
+          "options": ["law'", "puS", "Hoch", "wa'"],
+          "answer": "Hoch",
+          "why": "The most: Hoch in the second half."
+        },
+        {
+          "q": "Dujvam ＿ law' Dujvetlh Do puS.",
+          "en": "This ship is faster than that one.",
+          "options": ["tIn", "quv", "law'", "Do"],
+          "answer": "Do",
+          "why": "The quality word appears in both halves."
+        }
+      ]
+    },
+    {
+      "id": "when-if",
+      "title": "When, if, because: -DI', -chugh, -mo'",
+      "particle": "-DI' -chugh -mo'",
+      "summary": "These suffixes turn a verb into the first half of a two-part sentence: -DI' when, as soon as; -chugh if; -mo' because. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "The suffix goes on the verb of the first clause: <b>bIjatlhchugh, vIQoy</b> if you speak, I'll hear it. <b>jIDoy'mo' jIQong</b> I sleep because I'm tired.",
+          "examples": [
+            [
+              "bIjatlh{chugh}, vIQoy.",
+              "bI- + jatlh + -chugh · vI- + Qoy",
+              "If you speak, I'll hear it."
+            ],
+            [
+              "jIDoy'{mo'} jIQong.",
+              "jI- + Doy' + -mo' · jI- + Qong",
+              "I'm sleeping because I'm tired."
+            ]
+          ]
+        },
+        {
+          "h": "When: -DI'",
+          "p": "<b>-DI'</b> means “when, as soon as”: the second action follows the first.",
+          "examples": [
+            [
+              "HoD jatlh{DI'}, maSuv.",
+              "captain speaks + when · ma- + Suv",
+              "When the captain speaks, we fight."
+            ],
+            [
+              "jIvem{DI'}, jISop.",
+              "jI- + vem + -DI' · jI- + Sop",
+              "When I wake up, I eat."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "bIjatlh＿, vIQoy.",
+          "en": "If you speak, I'll hear it.",
+          "options": ["chugh", "DI'", "mo'", "meH"],
+          "answer": "chugh",
+          "why": "If: -chugh."
+        },
+        {
+          "q": "jIDoy'＿ jIQong.",
+          "en": "I'm sleeping because I'm tired.",
+          "options": ["chugh", "mo'", "DI'", "bogh"],
+          "answer": "mo'",
+          "why": "Because: -mo'."
+        },
+        {
+          "q": "HoD jatlh＿, maSuv.",
+          "en": "When the captain speaks, we fight.",
+          "options": ["mo'", "meH", "DI'", "'a'"],
+          "answer": "DI'",
+          "why": "When: -DI'."
+        },
+        {
+          "q": "jIvem＿, jISop.",
+          "en": "When I wake up, I eat.",
+          "options": ["chugh", "bogh", "pu'", "DI'"],
+          "answer": "DI'",
+          "why": "As soon as: -DI'."
+        }
+      ]
+    },
+    {
+      "id": "relative",
+      "title": "Who, which: -bogh",
+      "particle": "-bogh",
+      "summary": "-bogh turns a sentence into a description of a noun: Qongbogh puq, the child who is sleeping. Where the noun sits shows its role. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "If the noun is the <i>subject</i>, it comes after the verb, as usual: <b>Qongbogh puq</b> the child who sleeps. If it is the <i>object</i>, it comes before: <b>puq vIleghbogh</b> the child I see.",
+          "examples": [
+            [
+              "{Qongbogh} puq.",
+              "sleep + -bogh · child",
+              "the child who is sleeping"
+            ],
+            [
+              "puq {vIleghbogh}.",
+              "child · vI- + legh + -bogh",
+              "the child I see"
+            ]
+          ]
+        },
+        {
+          "h": "Using it in a sentence",
+          "p": "The whole phrase acts as one noun: <b>Suvbogh yaS vIlegh</b> I see the officer who is fighting.",
+          "examples": [
+            [
+              "{Suvbogh} yaS vIlegh.",
+              "fight + -bogh · officer · vI- + legh",
+              "I see the officer who is fighting."
+            ],
+            [
+              "Duj {wIleghbogh} Do.",
+              "ship · wI- + legh + -bogh · it-is-fast",
+              "The ship we saw is fast."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Qong＿ puq.",
+          "en": "the child who is sleeping",
+          "options": ["bogh", "mo'", "DI'", "meH"],
+          "answer": "bogh",
+          "why": "Who: -bogh."
+        },
+        {
+          "q": "puq vIlegh＿.",
+          "en": "the child I see",
+          "options": ["chugh", "bogh", "'a'", "pu'"],
+          "answer": "bogh",
+          "why": "Which (object): -bogh."
+        },
+        {
+          "q": "＿ yaS vIlegh.",
+          "en": "I see the officer who is fighting.",
+          "options": ["SuvmeH", "SuvDI'", "Suvbogh", "Suvmo'"],
+          "answer": "Suvbogh",
+          "why": "Who fights: Suvbogh."
+        },
+        {
+          "q": "Duj wIlegh＿ Do.",
+          "en": "The ship we saw is fast.",
+          "options": ["meH", "vam", "Daq", "bogh"],
+          "answer": "bogh",
+          "why": "The ship which: -bogh."
+        }
+      ]
+    },
+    {
+      "id": "purpose",
+      "title": "In order to: -meH",
+      "particle": "-meH",
+      "summary": "-meH means “in order to” and makes the first half of a sentence: tlhIngan Hol vIghojmeH, paq vIlaD, to learn Klingon, I read a book. Before a noun it means “for”: QongmeH pa', a room for sleeping. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "The -meH clause comes first, then the main sentence: <b>tlhIngan Hol vIghojmeH, paq vIlaD</b>. The prefix on each verb follows the usual grid.",
+          "examples": [
+            [
+              "tlhIngan Hol vIghoj{meH}, paq vIlaD.",
+              "Klingon language · vI- + ghoj + -meH · book · vI- + laD",
+              "To learn Klingon, I read a book."
+            ],
+            [
+              "jIQong{meH}, pa'Daq jIghoS.",
+              "jI- + Qong + -meH · room + to · jI- + ghoS",
+              "I go to the room to sleep."
+            ]
+          ]
+        },
+        {
+          "h": "For: -meH before a noun",
+          "p": "A verb + <b>-meH</b> right before a noun says what the noun is for: <b>QongmeH pa'</b> bedroom, <b>SopmeH pa'</b> dining room.",
+          "examples": [
+            [
+              "{QongmeH} pa' vIlegh.",
+              "sleep + -meH · room · vI- + legh",
+              "I see the bedroom."
+            ],
+            [
+              "{SopmeH} pa'Daq maSop.",
+              "eat + -meH · room + in · ma- + Sop",
+              "We eat in the dining room."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "tlhIngan Hol vIghoj＿, paq vIlaD.",
+          "en": "To learn Klingon, I read a book.",
+          "options": ["meH", "mo'", "bogh", "DI'"],
+          "answer": "meH",
+          "why": "In order to: -meH."
+        },
+        {
+          "q": "jIQong＿, pa'Daq jIghoS.",
+          "en": "I go to the room to sleep.",
+          "options": ["chugh", "meH", "mo'", "pu'"],
+          "answer": "meH",
+          "why": "Purpose: -meH."
+        },
+        {
+          "q": "＿ pa' vIlegh.",
+          "en": "I see the bedroom.",
+          "options": ["Qongbogh", "QongDI'", "QongmeH", "Qongmo'"],
+          "answer": "QongmeH",
+          "why": "Room for sleeping: QongmeH pa'."
+        },
+        {
+          "q": "SopmeH pa'＿ maSop.",
+          "en": "We eat in the dining room.",
+          "options": ["vo'", "vaD", "meH", "Daq"],
+          "answer": "Daq",
+          "why": "In: -Daq."
         }
       ]
     }
