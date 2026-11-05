@@ -37,7 +37,8 @@ Everything merged since v0.1.3 is collected in `release-notes/v0.1.4.md`
 (still marked Draft): the code pack and its Japanese, Chinese, Korean and
 Latin columns, Latin and English inflection tables, meta `cases` and
 `order`, the review checklist and Content error form, the historical kana
-lesson, and the grammar expansion to 72 lessons per language.
+lesson, and the grammar expansion to 72 lessons per language (24 for Tibetan and
+Klingon), which is finished.
 
 It's due when all of these hold and the owner says "release":
 
@@ -46,9 +47,9 @@ It's due when all of these hold and the owner says "release":
       Italian, Japanese (73), Kannada, Khmer, Korean, Lao, Malayalam,
       Mongolian, Odia, Punjabi, Russian, Sinhala, Taiwanese, Tamil, Telugu
       and Thai (#66, #68–#92, #94), with level labels fixed (#93)
-- [ ] Latin grammar to 72 (#95)
-- [ ] Tibetan grammar 6 → 24
-- [ ] Klingon grammar 10 → 24
+- [x] Latin grammar to 72 (#95)
+- [x] Tibetan grammar 6 → 24 (#97)
+- [x] Klingon grammar 10 → 24 (#98)
 - [ ] CI green on `main`
 - [ ] A PR that removes "Draft." from `release-notes/v0.1.4.md` and checks
       every bullet against what merged, with nothing else in it
