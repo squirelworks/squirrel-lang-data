@@ -7,7 +7,7 @@
     "Drills are { q, en, options, answer, why }; ＿ is the blank.",
     "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
     "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
-    "72 lessons, from A1 to C1. Lessons 13–72 were added to cover the rest of the beginner path and the main intermediate and advanced points."
+    "72 lessons, from A1 to C1. 60 lessons were added to cover the rest of the beginner path and the main intermediate and advanced points."
   ],
   "title": "Georgian first grammar",
   "intro": "Georgian has no articles and no grammatical gender: ის means he, she and it alike. Instead it packs a lot into the verb, which marks who does what with prefixes and endings, and it adds case endings and postpositions to nouns where English uses prepositions. The 72 lessons run from A1 to C1. They start with “to be”, plurals, the present, places, “have”, “want” and the simple past, then add the other cases, motion verbs and preverbs, the imperfect, the perfect, object prefixes, relative clauses and the subjunctive, and end with the conditional, counterfactuals, participles, reported speech with -ო and -მეთქი, causatives and the connectors of written Georgian. The romanization is the national system; an apostrophe marks an ejective consonant (k', p', t', ts', ch', q'), and kh, gh are throaty sounds.",
@@ -1612,64 +1612,6 @@
       ]
     },
     {
-      "id": "nu",
-      "title": "Don't: ნუ",
-      "particle": "ნუ",
-      "summary": "ნუ before a verb means \"don't\": ნუ გეშინია, don't be afraid. It takes the present (or future) form, not the command form. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>ნუ</b> + present: <b>ნუ ლაპარაკობ</b> don't talk, <b>ნუ ნერვიულობ</b> don't worry. Compare <b>არ</b>, which states a fact.",
-          "examples": [
-            ["{ნუ} გეშინია.", "Nu geshinia.", "Don't be afraid."],
-            ["{ნუ} ნერვიულობ.", "Nu nerviulob.", "Don't worry."]
-          ]
-        },
-        {
-          "h": "Signs and rules",
-          "p": "Rules often use <b>არ შეიძლება</b> (not allowed) or <b>აკრძალულია</b> (forbidden) instead: <b>აქ მოწევა აკრძალულია</b>.",
-          "examples": [
-            ["{ნუ} დაიგვიანებ.", "Nu daigvianeb.", "Don't be late."],
-            [
-              "აქ მოწევა {აკრძალულია}.",
-              "Ak mots'eva ak'rdzalulia.",
-              "Smoking is forbidden here."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ გეშინია.",
-          "en": "Don't be afraid.",
-          "options": ["ნუ", "არ", "ვერ", "არა"],
-          "answer": "ნუ",
-          "why": "Don't: ნუ."
-        },
-        {
-          "q": "ნუ ＿.",
-          "en": "Don't worry.",
-          "options": ["ინერვიულე", "ნერვიულობ", "ნერვიულობა", "ნერვიულობდი"],
-          "answer": "ნერვიულობ",
-          "why": "ნუ takes the present form."
-        },
-        {
-          "q": "＿ ლაპარაკობ ასე სწრაფად.",
-          "en": "Don't talk so fast.",
-          "options": ["ვერ", "არც", "ნუ", "არა"],
-          "answer": "ნუ",
-          "why": "Command not to: ნუ."
-        },
-        {
-          "q": "აქ მოწევა ＿.",
-          "en": "Smoking is forbidden here.",
-          "options": ["ნუ", "ვერ", "არის", "აკრძალულია"],
-          "answer": "აკრძალულია",
-          "why": "Forbidden: აკრძალულია."
-        }
-      ]
-    },
-    {
       "id": "going-coming",
       "title": "Going and coming: მივდივარ, მოვდივარ",
       "particle": "მი- მო-",
@@ -1724,6 +1666,250 @@
           "options": ["მოვიდა", "წავალ", "მიდის", "წავიდა"],
           "answer": "წავიდა",
           "why": "Past of go: წავიდა."
+        }
+      ]
+    },
+    {
+      "id": "vitsi",
+      "title": "To know: ვიცი",
+      "particle": "ვიცი იცი იცის",
+      "summary": "ვიცი means \"I know (a fact)\". It is irregular: ვიცი, იცი, იცის, ვიცით, იცით, იციან. To know a person is ვიცნობ. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ვიცი</b> I know, <b>იცი</b> you know, <b>იცის</b> he / she knows. Negative: <b>არ ვიცი</b> I don't know. Past: <b>ვიცოდი</b> I knew.",
+          "examples": [
+            ["არ {ვიცი}.", "Ar vitsi.", "I don't know."],
+            [
+              "{იცი}, სად არის სადგური?",
+              "Itsi, sad aris sadguri?",
+              "Do you know where the station is?"
+            ]
+          ]
+        },
+        {
+          "h": "Knowing people: ვიცნობ",
+          "p": "For people use <b>ვიცნობ</b> (vitsnob) I know, I'm acquainted with: <b>ნინოს ვიცნობ</b>.",
+          "examples": [
+            ["ნინოს {იცნობ}?", "Ninos itsnob?", "Do you know Nino?"],
+            ["ეს {ვიცოდი}!", "Es vitsodi!", "I knew it!"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "არ ＿.",
+          "en": "I don't know.",
+          "options": ["ვიცი", "იცი", "იცის", "იცით"],
+          "answer": "ვიცი",
+          "why": "I know: ვიცი."
+        },
+        {
+          "q": "＿, სად არის სადგური?",
+          "en": "Do you know where the station is?",
+          "options": ["ვიცი", "იცი", "იციან", "ვიცნობ"],
+          "answer": "იცი",
+          "why": "You know: იცი."
+        },
+        {
+          "q": "ნინოს ＿?",
+          "en": "Do you know Nino?",
+          "options": ["იცი", "იცის", "იცნობ", "ვიცოდი"],
+          "answer": "იცნობ",
+          "why": "People: ვიცნობ."
+        },
+        {
+          "q": "ის ბევრს ＿.",
+          "en": "He knows a lot.",
+          "options": ["იცი", "ვიცი", "იცით", "იცის"],
+          "answer": "იცის",
+          "why": "He knows: იცის."
+        }
+      ]
+    },
+    {
+      "id": "like",
+      "title": "I like: მომწონს",
+      "particle": "მომწონს მიყვარს",
+      "summary": "მომწონს means \"I like (it)\". As with \"love\", the liker is the prefix მ- / გ- / ს-, and the thing liked is the subject. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>მომწონს</b> I like, <b>მოგწონს</b> you like, <b>მოსწონს</b> he / she likes. <b>ეს ფილმი მომწონს</b> I like this film.",
+          "examples": [
+            [
+              "ეს ქალაქი ძალიან {მომწონს}.",
+              "Es kalaki dzalian momts'ons.",
+              "I really like this city."
+            ],
+            [
+              "{მოგწონს} ქართული საჭმელი?",
+              "Mogts'ons kartuli sach'meli?",
+              "Do you like Georgian food?"
+            ]
+          ]
+        },
+        {
+          "h": "Liked in the past",
+          "p": "Past: <b>მომეწონა</b> (I) liked it: <b>ფილმი მომეწონა</b> I liked the film. With an activity, <b>მიყვარს</b> is common: <b>ცეკვა მიყვარს</b> I love dancing.",
+          "examples": [
+            ["ფილმი {მომეწონა}.", "Pilmi momets'ona.", "I liked the film."],
+            ["{ცეკვა მიყვარს}.", "Tsek'va miq'vars.", "I love dancing."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ეს ქალაქი ＿.",
+          "en": "I like this city.",
+          "options": ["მომწონს", "მოგწონს", "მოსწონს", "მომეწონა"],
+          "answer": "მომწონს",
+          "why": "I like: მომწონს."
+        },
+        {
+          "q": "＿ ქართული საჭმელი?",
+          "en": "Do you like Georgian food?",
+          "options": ["მომწონს", "მოგწონს", "მოსწონს", "მიყვარს"],
+          "answer": "მოგწონს",
+          "why": "You like: მოგწონს."
+        },
+        {
+          "q": "ფილმი ＿.",
+          "en": "I liked the film.",
+          "options": ["მომწონს", "მოგწონს", "მომეწონა", "მოსწონს"],
+          "answer": "მომეწონა",
+          "why": "Past: მომეწონა."
+        },
+        {
+          "q": "ნინოს ჯაზი ＿.",
+          "en": "Nino likes jazz.",
+          "options": ["მომწონს", "მოგწონს", "მოგეწონა", "მოსწონს"],
+          "answer": "მოსწონს",
+          "why": "He / she likes: მოსწონს."
+        }
+      ]
+    },
+    {
+      "id": "conjunctions",
+      "title": "And, but, or, so",
+      "particle": "და მაგრამ ან ამიტომ რადგან",
+      "summary": "და is \"and\", მაგრამ \"but\", ან \"or\", რადგან \"because\" and ამიტომ \"so, that's why\". (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>და</b> and, <b>მაგრამ</b> but, <b>ან</b> or, <b>თუ</b> or (in questions): <b>ჩაი თუ ყავა?</b> tea or coffee?",
+          "examples": [
+            [
+              "დაღლილი ვარ, {მაგრამ} ბედნიერი.",
+              "Daghlili var, magram bednieri.",
+              "I'm tired, but happy."
+            ],
+            ["ჩაი {თუ} ყავა?", "Chai tu q'ava?", "Tea or coffee?"]
+          ]
+        },
+        {
+          "h": "Because, so",
+          "p": "<b>რადგან</b> (radgan) because; <b>ამიტომ</b> (amit'om) so, that's why.",
+          "examples": [
+            [
+              "არ მოვედი, {რადგან} ავად ვიყავი.",
+              "Ar movedi, radgan avad viq'avi.",
+              "I didn't come because I was ill."
+            ],
+            [
+              "წვიმს, {ამიტომ} სახლში ვარ.",
+              "Ts'vims, amit'om sakhlshi var.",
+              "It's raining, so I'm at home."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "დაღლილი ვარ, ＿ ბედნიერი.",
+          "en": "I'm tired, but happy.",
+          "options": ["მაგრამ", "და", "ან", "ამიტომ"],
+          "answer": "მაგრამ",
+          "why": "But: მაგრამ."
+        },
+        {
+          "q": "ჩაი ＿ ყავა?",
+          "en": "Tea or coffee?",
+          "options": ["და", "თუ", "მაგრამ", "რადგან"],
+          "answer": "თუ",
+          "why": "Or, in a question: თუ."
+        },
+        {
+          "q": "არ მოვედი, ＿ ავად ვიყავი.",
+          "en": "I didn't come because I was ill.",
+          "options": ["ამიტომ", "მაგრამ", "რადგან", "ან"],
+          "answer": "რადგან",
+          "why": "Because: რადგან."
+        },
+        {
+          "q": "წვიმს, ＿ სახლში ვარ.",
+          "en": "It's raining, so I'm at home.",
+          "options": ["რადგან", "ან", "თუ", "ამიტომ"],
+          "answer": "ამიტომ",
+          "why": "So: ამიტომ."
+        }
+      ]
+    },
+    {
+      "id": "nu",
+      "title": "Don't: ნუ",
+      "particle": "ნუ",
+      "summary": "ნუ before a verb means \"don't\": ნუ გეშინია, don't be afraid. It takes the present (or future) form, not the command form. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ნუ</b> + present: <b>ნუ ლაპარაკობ</b> don't talk, <b>ნუ ნერვიულობ</b> don't worry. Compare <b>არ</b>, which states a fact.",
+          "examples": [
+            ["{ნუ} გეშინია.", "Nu geshinia.", "Don't be afraid."],
+            ["{ნუ} ნერვიულობ.", "Nu nerviulob.", "Don't worry."]
+          ]
+        },
+        {
+          "h": "Signs and rules",
+          "p": "Rules often use <b>არ შეიძლება</b> (not allowed) or <b>აკრძალულია</b> (forbidden) instead: <b>აქ მოწევა აკრძალულია</b>.",
+          "examples": [
+            ["{ნუ} დაიგვიანებ.", "Nu daigvianeb.", "Don't be late."],
+            [
+              "აქ მოწევა {აკრძალულია}.",
+              "Ak mots'eva ak'rdzalulia.",
+              "Smoking is forbidden here."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ გეშინია.",
+          "en": "Don't be afraid.",
+          "options": ["ნუ", "არ", "ვერ", "არა"],
+          "answer": "ნუ",
+          "why": "Don't: ნუ."
+        },
+        {
+          "q": "ნუ ＿.",
+          "en": "Don't worry.",
+          "options": ["ინერვიულე", "ნერვიულობ", "ნერვიულობა", "ნერვიულობდი"],
+          "answer": "ნერვიულობ",
+          "why": "ნუ takes the present form."
+        },
+        {
+          "q": "＿ ლაპარაკობ ასე სწრაფად.",
+          "en": "Don't talk so fast.",
+          "options": ["ვერ", "არც", "ნუ", "არა"],
+          "answer": "ნუ",
+          "why": "Command not to: ნუ."
+        },
+        {
+          "q": "აქ მოწევა ＿.",
+          "en": "Smoking is forbidden here.",
+          "options": ["ნუ", "ვერ", "არის", "აკრძალულია"],
+          "answer": "აკრძალულია",
+          "why": "Forbidden: აკრძალულია."
         }
       ]
     },
@@ -1794,64 +1980,6 @@
           "options": ["ავედი", "შევედი", "გავედი", "ჩავედი"],
           "answer": "ჩავედი",
           "why": "Arriving in a city: ჩა-."
-        }
-      ]
-    },
-    {
-      "id": "vitsi",
-      "title": "To know: ვიცი",
-      "particle": "ვიცი იცი იცის",
-      "summary": "ვიცი means \"I know (a fact)\". It is irregular: ვიცი, იცი, იცის, ვიცით, იცით, იციან. To know a person is ვიცნობ. (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>ვიცი</b> I know, <b>იცი</b> you know, <b>იცის</b> he / she knows. Negative: <b>არ ვიცი</b> I don't know. Past: <b>ვიცოდი</b> I knew.",
-          "examples": [
-            ["არ {ვიცი}.", "Ar vitsi.", "I don't know."],
-            [
-              "{იცი}, სად არის სადგური?",
-              "Itsi, sad aris sadguri?",
-              "Do you know where the station is?"
-            ]
-          ]
-        },
-        {
-          "h": "Knowing people: ვიცნობ",
-          "p": "For people use <b>ვიცნობ</b> (vitsnob) I know, I'm acquainted with: <b>ნინოს ვიცნობ</b>.",
-          "examples": [
-            ["ნინოს {იცნობ}?", "Ninos itsnob?", "Do you know Nino?"],
-            ["ეს {ვიცოდი}!", "Es vitsodi!", "I knew it!"]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "არ ＿.",
-          "en": "I don't know.",
-          "options": ["ვიცი", "იცი", "იცის", "იცით"],
-          "answer": "ვიცი",
-          "why": "I know: ვიცი."
-        },
-        {
-          "q": "＿, სად არის სადგური?",
-          "en": "Do you know where the station is?",
-          "options": ["ვიცი", "იცი", "იციან", "ვიცნობ"],
-          "answer": "იცი",
-          "why": "You know: იცი."
-        },
-        {
-          "q": "ნინოს ＿?",
-          "en": "Do you know Nino?",
-          "options": ["იცი", "იცის", "იცნობ", "ვიცოდი"],
-          "answer": "იცნობ",
-          "why": "People: ვიცნობ."
-        },
-        {
-          "q": "ის ბევრს ＿.",
-          "en": "He knows a lot.",
-          "options": ["იცი", "ვიცი", "იცით", "იცის"],
-          "answer": "იცის",
-          "why": "He knows: იცის."
         }
       ]
     },
@@ -1988,68 +2116,6 @@
       ]
     },
     {
-      "id": "like",
-      "title": "I like: მომწონს",
-      "particle": "მომწონს მიყვარს",
-      "summary": "მომწონს means \"I like (it)\". As with \"love\", the liker is the prefix მ- / გ- / ს-, and the thing liked is the subject. (about A1–A2)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>მომწონს</b> I like, <b>მოგწონს</b> you like, <b>მოსწონს</b> he / she likes. <b>ეს ფილმი მომწონს</b> I like this film.",
-          "examples": [
-            [
-              "ეს ქალაქი ძალიან {მომწონს}.",
-              "Es kalaki dzalian momts'ons.",
-              "I really like this city."
-            ],
-            [
-              "{მოგწონს} ქართული საჭმელი?",
-              "Mogts'ons kartuli sach'meli?",
-              "Do you like Georgian food?"
-            ]
-          ]
-        },
-        {
-          "h": "Liked in the past",
-          "p": "Past: <b>მომეწონა</b> (I) liked it: <b>ფილმი მომეწონა</b> I liked the film. With an activity, <b>მიყვარს</b> is common: <b>ცეკვა მიყვარს</b> I love dancing.",
-          "examples": [
-            ["ფილმი {მომეწონა}.", "Pilmi momets'ona.", "I liked the film."],
-            ["{ცეკვა მიყვარს}.", "Tsek'va miq'vars.", "I love dancing."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ეს ქალაქი ＿.",
-          "en": "I like this city.",
-          "options": ["მომწონს", "მოგწონს", "მოსწონს", "მომეწონა"],
-          "answer": "მომწონს",
-          "why": "I like: მომწონს."
-        },
-        {
-          "q": "＿ ქართული საჭმელი?",
-          "en": "Do you like Georgian food?",
-          "options": ["მომწონს", "მოგწონს", "მოსწონს", "მიყვარს"],
-          "answer": "მოგწონს",
-          "why": "You like: მოგწონს."
-        },
-        {
-          "q": "ფილმი ＿.",
-          "en": "I liked the film.",
-          "options": ["მომწონს", "მოგწონს", "მომეწონა", "მოსწონს"],
-          "answer": "მომეწონა",
-          "why": "Past: მომეწონა."
-        },
-        {
-          "q": "ნინოს ჯაზი ＿.",
-          "en": "Nino likes jazz.",
-          "options": ["მომწონს", "მოგწონს", "მოგეწონა", "მოსწონს"],
-          "answer": "მოსწონს",
-          "why": "He / she likes: მოსწონს."
-        }
-      ]
-    },
-    {
       "id": "comparison",
       "title": "Bigger, biggest: უფრო, ყველაზე",
       "particle": "უფრო ვიდრე ყველაზე -ზე",
@@ -2116,72 +2182,6 @@
           "options": ["ყველაზე", "უფრო", "რომ", "ვიდრე"],
           "answer": "ვიდრე",
           "why": "Than: ვიდრე."
-        }
-      ]
-    },
-    {
-      "id": "conjunctions",
-      "title": "And, but, or, so",
-      "particle": "და მაგრამ ან ამიტომ რადგან",
-      "summary": "და is \"and\", მაგრამ \"but\", ან \"or\", რადგან \"because\" and ამიტომ \"so, that's why\". (about A1–A2)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>და</b> and, <b>მაგრამ</b> but, <b>ან</b> or, <b>თუ</b> or (in questions): <b>ჩაი თუ ყავა?</b> tea or coffee?",
-          "examples": [
-            [
-              "დაღლილი ვარ, {მაგრამ} ბედნიერი.",
-              "Daghlili var, magram bednieri.",
-              "I'm tired, but happy."
-            ],
-            ["ჩაი {თუ} ყავა?", "Chai tu q'ava?", "Tea or coffee?"]
-          ]
-        },
-        {
-          "h": "Because, so",
-          "p": "<b>რადგან</b> (radgan) because; <b>ამიტომ</b> (amit'om) so, that's why.",
-          "examples": [
-            [
-              "არ მოვედი, {რადგან} ავად ვიყავი.",
-              "Ar movedi, radgan avad viq'avi.",
-              "I didn't come because I was ill."
-            ],
-            [
-              "წვიმს, {ამიტომ} სახლში ვარ.",
-              "Ts'vims, amit'om sakhlshi var.",
-              "It's raining, so I'm at home."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "დაღლილი ვარ, ＿ ბედნიერი.",
-          "en": "I'm tired, but happy.",
-          "options": ["მაგრამ", "და", "ან", "ამიტომ"],
-          "answer": "მაგრამ",
-          "why": "But: მაგრამ."
-        },
-        {
-          "q": "ჩაი ＿ ყავა?",
-          "en": "Tea or coffee?",
-          "options": ["და", "თუ", "მაგრამ", "რადგან"],
-          "answer": "თუ",
-          "why": "Or, in a question: თუ."
-        },
-        {
-          "q": "არ მოვედი, ＿ ავად ვიყავი.",
-          "en": "I didn't come because I was ill.",
-          "options": ["ამიტომ", "მაგრამ", "რადგან", "ან"],
-          "answer": "რადგან",
-          "why": "Because: რადგან."
-        },
-        {
-          "q": "წვიმს, ＿ სახლში ვარ.",
-          "en": "It's raining, so I'm at home.",
-          "options": ["რადგან", "ან", "თუ", "ამიტომ"],
-          "answer": "ამიტომ",
-          "why": "So: ამიტომ."
         }
       ]
     },
@@ -2446,6 +2446,196 @@
       ]
     },
     {
+      "id": "verbal-nouns",
+      "title": "Reading, writing: the verbal noun",
+      "particle": "წერა კითხვა",
+      "summary": "Every verb has a verbal noun used like \"-ing\": კითხვა მიყვარს, I love reading. Its object goes in the genitive: ქართულის სწავლა, learning Georgian. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>წერა</b> writing, <b>კითხვა</b> reading, <b>ცურვა</b> swimming, <b>სწავლა</b> studying. They behave like nouns: <b>ცურვა მიყვარს</b> I love swimming.",
+          "examples": [
+            ["{კითხვა} მიყვარს.", "K'itkhva miq'vars.", "I love reading."],
+            [
+              "{ცურვა} იცი?",
+              "Tsurva itsi?",
+              "Can you swim? (literally \"do you know swimming?\")"
+            ]
+          ]
+        },
+        {
+          "h": "With an object",
+          "p": "The object of a verbal noun takes <b>-ის</b>: <b>ქართულის სწავლა რთულია</b> learning Georgian is hard; <b>მანქანის ტარება</b> driving a car.",
+          "examples": [
+            [
+              "{ქართულის სწავლა} რთულია.",
+              "Kartulis sts'avla rtulia.",
+              "Learning Georgian is hard."
+            ],
+            [
+              "{მანქანის ტარება} ვისწავლე.",
+              "Mankanis t'areba vists'avle.",
+              "I learned to drive a car."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ მიყვარს.",
+          "en": "I love reading.",
+          "options": ["კითხვა", "ვკითხულობ", "წავიკითხე", "კითხულობს"],
+          "answer": "კითხვა",
+          "why": "Verbal noun: კითხვა."
+        },
+        {
+          "q": "＿ იცი?",
+          "en": "Can you swim?",
+          "options": ["ცურავ", "ცურვა", "იცურავე", "ცურავს"],
+          "answer": "ცურვა",
+          "why": "Verbal noun after იცი."
+        },
+        {
+          "q": "ქართულის ＿ რთულია.",
+          "en": "Learning Georgian is hard.",
+          "options": ["ვსწავლობ", "ისწავლა", "სწავლა", "სწავლობს"],
+          "answer": "სწავლა",
+          "why": "Verbal noun: სწავლა."
+        },
+        {
+          "q": "＿ ტარება ვისწავლე.",
+          "en": "I learned to drive a car.",
+          "options": ["მანქანა", "მანქანას", "მანქანით", "მანქანის"],
+          "answer": "მანქანის",
+          "why": "Object of a verbal noun: -ის."
+        }
+      ]
+    },
+    {
+      "id": "ordinals-dates",
+      "title": "First, second, dates",
+      "particle": "პირველი მე- -ე",
+      "summary": "Ordinals wrap the number in მე- … -ე: მეორე (second), მესამე (third). Only \"first\" is different: პირველი. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>პირველი</b> 1st, <b>მეორე</b> 2nd, <b>მესამე</b> 3rd, <b>მეოთხე</b> 4th, <b>მეათე</b> 10th. In figures: <b>მე-5</b>.",
+          "examples": [
+            [
+              "{მესამე} სართულზე ვცხოვრობ.",
+              "Mesame sartulze vtskhovrob.",
+              "I live on the third floor."
+            ],
+            [
+              "ეს ჩემი {პირველი} ვიზიტია.",
+              "Es chemi p'irveli vizit'ia.",
+              "This is my first visit."
+            ]
+          ]
+        },
+        {
+          "h": "Dates",
+          "p": "A date is number + month: <b>რვა მარტი</b> March 8th; \"on\" a date uses the dative: <b>რვა მარტს</b>. The year: <b>2024 წელს</b> in 2024.",
+          "examples": [
+            [
+              "ჩემი დაბადების დღე {ხუთ მაისს} არის.",
+              "Chemi dabadebis dghe khut maiss aris.",
+              "My birthday is on May 5th."
+            ],
+            [
+              "{2024 წელს} თბილისში ვიყავი.",
+              "2024 ts'els tbilisshi viq'avi.",
+              "I was in Tbilisi in 2024."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ სართულზე ვცხოვრობ.",
+          "en": "I live on the third floor.",
+          "options": ["მესამე", "სამი", "მესამი", "სამე"],
+          "answer": "მესამე",
+          "why": "Ordinal: მე- + სამ + -ე."
+        },
+        {
+          "q": "ეს ჩემი ＿ ვიზიტია.",
+          "en": "This is my first visit.",
+          "options": ["მეერთე", "პირველი", "ერთი", "მეპირველე"],
+          "answer": "პირველი",
+          "why": "First: პირველი."
+        },
+        {
+          "q": "ჩემი დაბადების დღე ხუთ ＿ არის.",
+          "en": "My birthday is on May 5th.",
+          "options": ["მაისი", "მაისის", "მაისს", "მაისით"],
+          "answer": "მაისს",
+          "why": "On a date: dative."
+        },
+        {
+          "q": "2024 ＿ თბილისში ვიყავი.",
+          "en": "I was in Tbilisi in 2024.",
+          "options": ["წელი", "წლის", "წლით", "წელს"],
+          "answer": "წელს",
+          "why": "In a year: წელს."
+        }
+      ]
+    },
+    {
+      "id": "feelings",
+      "title": "Cold, hungry, it hurts: მცივა, მშია",
+      "particle": "მცივა მშია მტკივა",
+      "summary": "Bodily states are inverted verbs: მცივა, I'm cold; მშია, I'm hungry. The prefix მ- / გ- / ს- marks who feels it. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>მცივა</b> I'm cold, <b>მცხელა</b> I'm hot, <b>მშია</b> I'm hungry, <b>მწყურია</b> I'm thirsty, <b>მეძინება</b> I'm sleepy. Change the prefix for \"you\": <b>გშია?</b>",
+          "examples": [
+            ["ძალიან {მშია}.", "Dzalian mshia.", "I'm very hungry."],
+            ["{გცივა}?", "Gtsiva?", "Are you cold?"]
+          ]
+        },
+        {
+          "h": "It hurts: მტკივა",
+          "p": "<b>მტკივა</b> (mt'k'iva) \"it hurts me\"; the part that hurts is the subject: <b>თავი მტკივა</b> I have a headache, <b>რა გტკივა?</b> what hurts?",
+          "examples": [
+            ["{თავი მტკივა}.", "Tavi mt'k'iva.", "I have a headache."],
+            ["ბავშვს {სძინავს}.", "Bavshvs sdzinavs.", "The child is asleep."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ძალიან ＿.",
+          "en": "I'm very hungry.",
+          "options": ["მშია", "გშია", "მწყურია", "მცივა"],
+          "answer": "მშია",
+          "why": "Hungry: მშია."
+        },
+        {
+          "q": "＿?",
+          "en": "Are you cold?",
+          "options": ["მცივა", "გცივა", "გცხელა", "გშია"],
+          "answer": "გცივა",
+          "why": "You: გ-."
+        },
+        {
+          "q": "თავი ＿.",
+          "en": "I have a headache.",
+          "options": ["გტკივა", "მშია", "მტკივა", "მცივა"],
+          "answer": "მტკივა",
+          "why": "It hurts me: მტკივა."
+        },
+        {
+          "q": "ცოტა წყალი მინდა, ＿.",
+          "en": "I'd like some water, I'm thirsty.",
+          "options": ["მშია", "მცივა", "მეძინება", "მწყურია"],
+          "answer": "მწყურია",
+          "why": "Thirsty: მწყურია."
+        }
+      ]
+    },
+    {
       "id": "version",
       "title": "For myself, for him: ი-, უ-",
       "particle": "ი- უ-",
@@ -2578,72 +2768,6 @@
           "options": ["წავიდა", "მიდის", "წავა", "წასულა"],
           "answer": "წასულა",
           "why": "Reported: perfect."
-        }
-      ]
-    },
-    {
-      "id": "verbal-nouns",
-      "title": "Reading, writing: the verbal noun",
-      "particle": "წერა კითხვა",
-      "summary": "Every verb has a verbal noun used like \"-ing\": კითხვა მიყვარს, I love reading. Its object goes in the genitive: ქართულის სწავლა, learning Georgian. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>წერა</b> writing, <b>კითხვა</b> reading, <b>ცურვა</b> swimming, <b>სწავლა</b> studying. They behave like nouns: <b>ცურვა მიყვარს</b> I love swimming.",
-          "examples": [
-            ["{კითხვა} მიყვარს.", "K'itkhva miq'vars.", "I love reading."],
-            [
-              "{ცურვა} იცი?",
-              "Tsurva itsi?",
-              "Can you swim? (literally \"do you know swimming?\")"
-            ]
-          ]
-        },
-        {
-          "h": "With an object",
-          "p": "The object of a verbal noun takes <b>-ის</b>: <b>ქართულის სწავლა რთულია</b> learning Georgian is hard; <b>მანქანის ტარება</b> driving a car.",
-          "examples": [
-            [
-              "{ქართულის სწავლა} რთულია.",
-              "Kartulis sts'avla rtulia.",
-              "Learning Georgian is hard."
-            ],
-            [
-              "{მანქანის ტარება} ვისწავლე.",
-              "Mankanis t'areba vists'avle.",
-              "I learned to drive a car."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ მიყვარს.",
-          "en": "I love reading.",
-          "options": ["კითხვა", "ვკითხულობ", "წავიკითხე", "კითხულობს"],
-          "answer": "კითხვა",
-          "why": "Verbal noun: კითხვა."
-        },
-        {
-          "q": "＿ იცი?",
-          "en": "Can you swim?",
-          "options": ["ცურავ", "ცურვა", "იცურავე", "ცურავს"],
-          "answer": "ცურვა",
-          "why": "Verbal noun after იცი."
-        },
-        {
-          "q": "ქართულის ＿ რთულია.",
-          "en": "Learning Georgian is hard.",
-          "options": ["ვსწავლობ", "ისწავლა", "სწავლა", "სწავლობს"],
-          "answer": "სწავლა",
-          "why": "Verbal noun: სწავლა."
-        },
-        {
-          "q": "＿ ტარება ვისწავლე.",
-          "en": "I learned to drive a car.",
-          "options": ["მანქანა", "მანქანას", "მანქანით", "მანქანის"],
-          "answer": "მანქანის",
-          "why": "Object of a verbal noun: -ის."
         }
       ]
     },
@@ -3254,130 +3378,6 @@
       ]
     },
     {
-      "id": "ordinals-dates",
-      "title": "First, second, dates",
-      "particle": "პირველი მე- -ე",
-      "summary": "Ordinals wrap the number in მე- … -ე: მეორე (second), მესამე (third). Only \"first\" is different: პირველი. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>პირველი</b> 1st, <b>მეორე</b> 2nd, <b>მესამე</b> 3rd, <b>მეოთხე</b> 4th, <b>მეათე</b> 10th. In figures: <b>მე-5</b>.",
-          "examples": [
-            [
-              "{მესამე} სართულზე ვცხოვრობ.",
-              "Mesame sartulze vtskhovrob.",
-              "I live on the third floor."
-            ],
-            [
-              "ეს ჩემი {პირველი} ვიზიტია.",
-              "Es chemi p'irveli vizit'ia.",
-              "This is my first visit."
-            ]
-          ]
-        },
-        {
-          "h": "Dates",
-          "p": "A date is number + month: <b>რვა მარტი</b> March 8th; \"on\" a date uses the dative: <b>რვა მარტს</b>. The year: <b>2024 წელს</b> in 2024.",
-          "examples": [
-            [
-              "ჩემი დაბადების დღე {ხუთ მაისს} არის.",
-              "Chemi dabadebis dghe khut maiss aris.",
-              "My birthday is on May 5th."
-            ],
-            [
-              "{2024 წელს} თბილისში ვიყავი.",
-              "2024 ts'els tbilisshi viq'avi.",
-              "I was in Tbilisi in 2024."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ სართულზე ვცხოვრობ.",
-          "en": "I live on the third floor.",
-          "options": ["მესამე", "სამი", "მესამი", "სამე"],
-          "answer": "მესამე",
-          "why": "Ordinal: მე- + სამ + -ე."
-        },
-        {
-          "q": "ეს ჩემი ＿ ვიზიტია.",
-          "en": "This is my first visit.",
-          "options": ["მეერთე", "პირველი", "ერთი", "მეპირველე"],
-          "answer": "პირველი",
-          "why": "First: პირველი."
-        },
-        {
-          "q": "ჩემი დაბადების დღე ხუთ ＿ არის.",
-          "en": "My birthday is on May 5th.",
-          "options": ["მაისი", "მაისის", "მაისს", "მაისით"],
-          "answer": "მაისს",
-          "why": "On a date: dative."
-        },
-        {
-          "q": "2024 ＿ თბილისში ვიყავი.",
-          "en": "I was in Tbilisi in 2024.",
-          "options": ["წელი", "წლის", "წლით", "წელს"],
-          "answer": "წელს",
-          "why": "In a year: წელს."
-        }
-      ]
-    },
-    {
-      "id": "feelings",
-      "title": "Cold, hungry, it hurts: მცივა, მშია",
-      "particle": "მცივა მშია მტკივა",
-      "summary": "Bodily states are inverted verbs: მცივა, I'm cold; მშია, I'm hungry. The prefix მ- / გ- / ს- marks who feels it. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>მცივა</b> I'm cold, <b>მცხელა</b> I'm hot, <b>მშია</b> I'm hungry, <b>მწყურია</b> I'm thirsty, <b>მეძინება</b> I'm sleepy. Change the prefix for \"you\": <b>გშია?</b>",
-          "examples": [
-            ["ძალიან {მშია}.", "Dzalian mshia.", "I'm very hungry."],
-            ["{გცივა}?", "Gtsiva?", "Are you cold?"]
-          ]
-        },
-        {
-          "h": "It hurts: მტკივა",
-          "p": "<b>მტკივა</b> (mt'k'iva) \"it hurts me\"; the part that hurts is the subject: <b>თავი მტკივა</b> I have a headache, <b>რა გტკივა?</b> what hurts?",
-          "examples": [
-            ["{თავი მტკივა}.", "Tavi mt'k'iva.", "I have a headache."],
-            ["ბავშვს {სძინავს}.", "Bavshvs sdzinavs.", "The child is asleep."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ძალიან ＿.",
-          "en": "I'm very hungry.",
-          "options": ["მშია", "გშია", "მწყურია", "მცივა"],
-          "answer": "მშია",
-          "why": "Hungry: მშია."
-        },
-        {
-          "q": "＿?",
-          "en": "Are you cold?",
-          "options": ["მცივა", "გცივა", "გცხელა", "გშია"],
-          "answer": "გცივა",
-          "why": "You: გ-."
-        },
-        {
-          "q": "თავი ＿.",
-          "en": "I have a headache.",
-          "options": ["გტკივა", "მშია", "მტკივა", "მცივა"],
-          "answer": "მტკივა",
-          "why": "It hurts me: მტკივა."
-        },
-        {
-          "q": "ცოტა წყალი მინდა, ＿.",
-          "en": "I'd like some water, I'm thirsty.",
-          "options": ["მშია", "მცივა", "მეძინება", "მწყურია"],
-          "answer": "მწყურია",
-          "why": "Thirsty: მწყურია."
-        }
-      ]
-    },
-    {
       "id": "had-will-have",
       "title": "Had and will have: მქონდა, მექნება",
       "particle": "მქონდა მექნება",
@@ -3782,6 +3782,216 @@
       ]
     },
     {
+      "id": "reciprocal",
+      "title": "Each other: ერთმანეთი",
+      "particle": "ერთმანეთი",
+      "summary": "ერთმანეთი means \"each other\" and takes whatever case the verb needs: ერთმანეთს ვიცნობთ, we know each other. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>ერთმანეთს</b> (dative) with most present verbs: <b>ერთმანეთს ეხმარებიან</b> they help each other. With feelings it is nominative: <b>ერთმანეთი გვიყვარს</b> we love each other.",
+          "examples": [
+            [
+              "{ერთმანეთს} ვიცნობთ.",
+              "Ertmanets vitsnobt.",
+              "We know each other."
+            ],
+            [
+              "{ერთმანეთი} გვიყვარს.",
+              "Ertmaneti gviq'vars.",
+              "We love each other."
+            ]
+          ]
+        },
+        {
+          "h": "With each other",
+          "p": "Add endings as usual: <b>ერთმანეთთან</b> with each other, <b>ერთმანეთისთვის</b> for each other.",
+          "examples": [
+            [
+              "{ერთმანეთთან} ვლაპარაკობთ.",
+              "Ertmanettan vlap'arak'obt.",
+              "We talk to each other."
+            ],
+            [
+              "ძმები {ერთმანეთს} ეხმარებიან.",
+              "Dzmebi ertmanets ekhmarebian.",
+              "The brothers help each other."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ვიცნობთ.",
+          "en": "We know each other.",
+          "options": ["ერთმანეთს", "ერთმანეთი", "ერთმანეთთან", "ერთმანეთის"],
+          "answer": "ერთმანეთს",
+          "why": "Object of a present verb: dative."
+        },
+        {
+          "q": "＿ გვიყვარს.",
+          "en": "We love each other.",
+          "options": ["ერთმანეთს", "ერთმანეთი", "ერთმანეთთან", "ერთმანეთით"],
+          "answer": "ერთმანეთი",
+          "why": "With feelings: nominative."
+        },
+        {
+          "q": "＿ ვლაპარაკობთ.",
+          "en": "We talk to each other.",
+          "options": ["ერთმანეთს", "ერთმანეთი", "ერთმანეთთან", "ერთმანეთისთვის"],
+          "answer": "ერთმანეთთან",
+          "why": "With: -თან."
+        },
+        {
+          "q": "ძმები ერთმანეთს ＿.",
+          "en": "The brothers help each other.",
+          "options": ["ეხმარება", "ვეხმარები", "დაეხმარა", "ეხმარებიან"],
+          "answer": "ეხმარებიან",
+          "why": "They: -იან."
+        }
+      ]
+    },
+    {
+      "id": "whether",
+      "title": "Whether: თუ არა",
+      "particle": "თუ არა თუ",
+      "summary": "In an indirect question თუ means \"whether\", and თუ არა adds \"or not\": არ ვიცი, მოვა თუ არა, I don't know whether he'll come. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Indirect questions keep their question word: <b>არ ვიცი, სად არის</b> I don't know where he is. A yes/no question gets <b>თუ</b> or <b>… თუ არა</b>.",
+          "examples": [
+            [
+              "არ ვიცი, მოვა {თუ არა}.",
+              "Ar vitsi, mova tu ara.",
+              "I don't know whether he'll come or not."
+            ],
+            [
+              "მკითხა, {თუ} ვიცოდი მისი ნომერი.",
+              "Mk'itkha, tu vitsodi misi nomeri.",
+              "He asked me if I knew his number."
+            ]
+          ]
+        },
+        {
+          "h": "Asking politely",
+          "p": "<b>ხომ არ იცით …?</b> do you happen to know …? is a soft way to ask a stranger.",
+          "examples": [
+            [
+              "{ხომ არ იცით}, სად არის აფთიაქი?",
+              "Khom ar itsit, sad aris aptiaki?",
+              "Do you happen to know where the pharmacy is?"
+            ],
+            [
+              "ვნახოთ, {თუ} გაიმარჯვებენ.",
+              "Vnakhot, tu gaimarjveben.",
+              "Let's see whether they win."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "არ ვიცი, მოვა ＿ არა.",
+          "en": "I don't know whether he'll come or not.",
+          "options": ["თუ", "რომ", "და", "ან"],
+          "answer": "თუ",
+          "why": "Whether or not: თუ არა."
+        },
+        {
+          "q": "მკითხა, ＿ ვიცოდი მისი ნომერი.",
+          "en": "He asked me if I knew his number.",
+          "options": ["რომ", "თუ", "როცა", "რადგან"],
+          "answer": "თუ",
+          "why": "If, whether: თუ."
+        },
+        {
+          "q": "ხომ არ ＿, სად არის აფთიაქი?",
+          "en": "Do you happen to know where the pharmacy is?",
+          "options": ["ვიცი", "იცის", "იცით", "იციან"],
+          "answer": "იცით",
+          "why": "Polite you: იცით."
+        },
+        {
+          "q": "არ ვიცი, ＿ არის.",
+          "en": "I don't know where he is.",
+          "options": ["სადაც", "სადღაც", "არსად", "სად"],
+          "answer": "სად",
+          "why": "Indirect question: სად."
+        }
+      ]
+    },
+    {
+      "id": "vocative",
+      "title": "Calling someone: -ო",
+      "particle": "-ო ბატონო",
+      "summary": "When you call or address someone, nouns ending in a consonant or -ი take -ო: მეგობარო! friend! ბატონო (sir). Names usually stay as they are. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>მეგობარი → მეგობარო!</b>, <b>ბავშვი → ბავშვო!</b>, <b>ბატონი → ბატონო</b>. Nouns in -ა stay the same: <b>დედა!</b>",
+          "examples": [
+            [
+              "{მეგობარო}, როგორ ხარ?",
+              "Megobaro, rogor khar?",
+              "How are you, my friend?"
+            ],
+            [
+              "{ბავშვებო}, მოდით აქ!",
+              "Bavshvebo, modit ak!",
+              "Children, come here!"
+            ]
+          ]
+        },
+        {
+          "h": "Endearments",
+          "p": "The ending <b>-იკო</b> or <b>-უკა</b> makes pet forms: <b>დედიკო</b> mommy, <b>ბებიკო</b> granny. <b>გენაცვალე</b> (dear, literally \"may I take your place\") is a common warm address.",
+          "examples": [
+            [
+              "{დედიკო}, მიყვარხარ!",
+              "Dedik'o, miq'varkhar!",
+              "Mommy, I love you!"
+            ],
+            [
+              "მადლობა, {გენაცვალე}.",
+              "Madloba, genatsvale.",
+              "Thank you, dear."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿, როგორ ხარ?",
+          "en": "How are you, my friend?",
+          "options": ["მეგობარო", "მეგობარი", "მეგობარს", "მეგობრის"],
+          "answer": "მეგობარო",
+          "why": "Addressing: -ო."
+        },
+        {
+          "q": "＿, მოდით აქ!",
+          "en": "Children, come here!",
+          "options": ["ბავშვები", "ბავშვებო", "ბავშვებს", "ბავშვებმა"],
+          "answer": "ბავშვებო",
+          "why": "Plural address: -ებო."
+        },
+        {
+          "q": "＿, მიყვარხარ!",
+          "en": "Mommy, I love you!",
+          "options": ["დედას", "დედის", "დედიკო", "დედამ"],
+          "answer": "დედიკო",
+          "why": "Pet form: -იკო."
+        },
+        {
+          "q": "მადლობა, ＿.",
+          "en": "Thank you, sir.",
+          "options": ["ბატონი", "ბატონს", "ბატონმა", "ბატონო"],
+          "answer": "ბატონო",
+          "why": "Sir: ბატონო."
+        }
+      ]
+    },
+    {
       "id": "counterfactual",
       "title": "If I had known: რომ მცოდნოდა",
       "particle": "რომ + pluperfect",
@@ -4120,146 +4330,6 @@
       ]
     },
     {
-      "id": "metqi",
-      "title": "I said, tell him: -მეთქი, -თქო",
-      "particle": "-მეთქი -თქო",
-      "summary": "-მეთქი marks words \"I\" said; -თქო marks words you should pass on: უთხარი, მალე მოვალ-თქო, tell him I'll come soon. (about C1)",
-      "level": "advanced",
-      "sections": [
-        {
-          "p": "<b>-მეთქი</b> after your own quoted words: <b>ვუთხარი, დაღლილი ვარ-მეთქი</b> I told him I'm tired.",
-          "examples": [
-            [
-              "ვუთხარი, ხვალ {მოვალ-მეთქი}.",
-              "Vutkhari, khval moval-metki.",
-              "I told him I'd come tomorrow."
-            ],
-            [
-              "ვკითხე, სად ხარ-{მეთქი}.",
-              "Vk'itkhe, sad khar-metki.",
-              "I asked him where he was."
-            ]
-          ]
-        },
-        {
-          "h": "Pass it on: -თქო",
-          "p": "<b>-თქო</b> marks a message for someone to deliver: <b>უთხარი, დამირეკოს-თქო</b> tell him to call me.",
-          "examples": [
-            [
-              "უთხარი, {დამირეკოს-თქო}.",
-              "Utkhari, damirek'os-tko.",
-              "Tell him to call me."
-            ],
-            [
-              "გადაეცი, {მადლობა-თქო}.",
-              "Gadaetsi, madloba-tko.",
-              "Pass on my thanks."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ვუთხარი, ხვალ მოვალ-＿.",
-          "en": "I told him I'd come tomorrow.",
-          "options": ["მეთქი", "თქო", "ო", "და"],
-          "answer": "მეთქი",
-          "why": "My own words: -მეთქი."
-        },
-        {
-          "q": "უთხარი, დამირეკოს-＿.",
-          "en": "Tell him to call me.",
-          "options": ["მეთქი", "თქო", "ო", "რომ"],
-          "answer": "თქო",
-          "why": "Message to pass on: -თქო."
-        },
-        {
-          "q": "ვკითხე, სად ხარ-＿.",
-          "en": "I asked him where he was.",
-          "options": ["თქო", "ო", "მეთქი", "ც"],
-          "answer": "მეთქი",
-          "why": "What I asked: -მეთქი."
-        },
-        {
-          "q": "გადაეცი, მადლობა-＿.",
-          "en": "Pass on my thanks.",
-          "options": ["მეთქი", "ო", "ც", "თქო"],
-          "answer": "თქო",
-          "why": "For passing on: -თქო."
-        }
-      ]
-    },
-    {
-      "id": "reciprocal",
-      "title": "Each other: ერთმანეთი",
-      "particle": "ერთმანეთი",
-      "summary": "ერთმანეთი means \"each other\" and takes whatever case the verb needs: ერთმანეთს ვიცნობთ, we know each other. (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "<b>ერთმანეთს</b> (dative) with most present verbs: <b>ერთმანეთს ეხმარებიან</b> they help each other. With feelings it is nominative: <b>ერთმანეთი გვიყვარს</b> we love each other.",
-          "examples": [
-            [
-              "{ერთმანეთს} ვიცნობთ.",
-              "Ertmanets vitsnobt.",
-              "We know each other."
-            ],
-            [
-              "{ერთმანეთი} გვიყვარს.",
-              "Ertmaneti gviq'vars.",
-              "We love each other."
-            ]
-          ]
-        },
-        {
-          "h": "With each other",
-          "p": "Add endings as usual: <b>ერთმანეთთან</b> with each other, <b>ერთმანეთისთვის</b> for each other.",
-          "examples": [
-            [
-              "{ერთმანეთთან} ვლაპარაკობთ.",
-              "Ertmanettan vlap'arak'obt.",
-              "We talk to each other."
-            ],
-            [
-              "ძმები {ერთმანეთს} ეხმარებიან.",
-              "Dzmebi ertmanets ekhmarebian.",
-              "The brothers help each other."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ ვიცნობთ.",
-          "en": "We know each other.",
-          "options": ["ერთმანეთს", "ერთმანეთი", "ერთმანეთთან", "ერთმანეთის"],
-          "answer": "ერთმანეთს",
-          "why": "Object of a present verb: dative."
-        },
-        {
-          "q": "＿ გვიყვარს.",
-          "en": "We love each other.",
-          "options": ["ერთმანეთს", "ერთმანეთი", "ერთმანეთთან", "ერთმანეთით"],
-          "answer": "ერთმანეთი",
-          "why": "With feelings: nominative."
-        },
-        {
-          "q": "＿ ვლაპარაკობთ.",
-          "en": "We talk to each other.",
-          "options": ["ერთმანეთს", "ერთმანეთი", "ერთმანეთთან", "ერთმანეთისთვის"],
-          "answer": "ერთმანეთთან",
-          "why": "With: -თან."
-        },
-        {
-          "q": "ძმები ერთმანეთს ＿.",
-          "en": "The brothers help each other.",
-          "options": ["ეხმარება", "ვეხმარები", "დაეხმარა", "ეხმარებიან"],
-          "answer": "ეხმარებიან",
-          "why": "They: -იან."
-        }
-      ]
-    },
-    {
       "id": "wishes",
       "title": "I wish, I wonder: ნეტავ",
       "particle": "ნეტავ",
@@ -4380,146 +4450,6 @@
           "options": ["ხომ", "კი", "უკვე", "ხოლმე"],
           "answer": "ხოლმე",
           "why": "Habit: ხოლმე."
-        }
-      ]
-    },
-    {
-      "id": "whether",
-      "title": "Whether: თუ არა",
-      "particle": "თუ არა თუ",
-      "summary": "In an indirect question თუ means \"whether\", and თუ არა adds \"or not\": არ ვიცი, მოვა თუ არა, I don't know whether he'll come. (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "Indirect questions keep their question word: <b>არ ვიცი, სად არის</b> I don't know where he is. A yes/no question gets <b>თუ</b> or <b>… თუ არა</b>.",
-          "examples": [
-            [
-              "არ ვიცი, მოვა {თუ არა}.",
-              "Ar vitsi, mova tu ara.",
-              "I don't know whether he'll come or not."
-            ],
-            [
-              "მკითხა, {თუ} ვიცოდი მისი ნომერი.",
-              "Mk'itkha, tu vitsodi misi nomeri.",
-              "He asked me if I knew his number."
-            ]
-          ]
-        },
-        {
-          "h": "Asking politely",
-          "p": "<b>ხომ არ იცით …?</b> do you happen to know …? is a soft way to ask a stranger.",
-          "examples": [
-            [
-              "{ხომ არ იცით}, სად არის აფთიაქი?",
-              "Khom ar itsit, sad aris aptiaki?",
-              "Do you happen to know where the pharmacy is?"
-            ],
-            [
-              "ვნახოთ, {თუ} გაიმარჯვებენ.",
-              "Vnakhot, tu gaimarjveben.",
-              "Let's see whether they win."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "არ ვიცი, მოვა ＿ არა.",
-          "en": "I don't know whether he'll come or not.",
-          "options": ["თუ", "რომ", "და", "ან"],
-          "answer": "თუ",
-          "why": "Whether or not: თუ არა."
-        },
-        {
-          "q": "მკითხა, ＿ ვიცოდი მისი ნომერი.",
-          "en": "He asked me if I knew his number.",
-          "options": ["რომ", "თუ", "როცა", "რადგან"],
-          "answer": "თუ",
-          "why": "If, whether: თუ."
-        },
-        {
-          "q": "ხომ არ ＿, სად არის აფთიაქი?",
-          "en": "Do you happen to know where the pharmacy is?",
-          "options": ["ვიცი", "იცის", "იცით", "იციან"],
-          "answer": "იცით",
-          "why": "Polite you: იცით."
-        },
-        {
-          "q": "არ ვიცი, ＿ არის.",
-          "en": "I don't know where he is.",
-          "options": ["სადაც", "სადღაც", "არსად", "სად"],
-          "answer": "სად",
-          "why": "Indirect question: სად."
-        }
-      ]
-    },
-    {
-      "id": "vocative",
-      "title": "Calling someone: -ო",
-      "particle": "-ო ბატონო",
-      "summary": "When you call or address someone, nouns ending in a consonant or -ი take -ო: მეგობარო! friend! ბატონო (sir). Names usually stay as they are. (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "<b>მეგობარი → მეგობარო!</b>, <b>ბავშვი → ბავშვო!</b>, <b>ბატონი → ბატონო</b>. Nouns in -ა stay the same: <b>დედა!</b>",
-          "examples": [
-            [
-              "{მეგობარო}, როგორ ხარ?",
-              "Megobaro, rogor khar?",
-              "How are you, my friend?"
-            ],
-            [
-              "{ბავშვებო}, მოდით აქ!",
-              "Bavshvebo, modit ak!",
-              "Children, come here!"
-            ]
-          ]
-        },
-        {
-          "h": "Endearments",
-          "p": "The ending <b>-იკო</b> or <b>-უკა</b> makes pet forms: <b>დედიკო</b> mommy, <b>ბებიკო</b> granny. <b>გენაცვალე</b> (dear, literally \"may I take your place\") is a common warm address.",
-          "examples": [
-            [
-              "{დედიკო}, მიყვარხარ!",
-              "Dedik'o, miq'varkhar!",
-              "Mommy, I love you!"
-            ],
-            [
-              "მადლობა, {გენაცვალე}.",
-              "Madloba, genatsvale.",
-              "Thank you, dear."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿, როგორ ხარ?",
-          "en": "How are you, my friend?",
-          "options": ["მეგობარო", "მეგობარი", "მეგობარს", "მეგობრის"],
-          "answer": "მეგობარო",
-          "why": "Addressing: -ო."
-        },
-        {
-          "q": "＿, მოდით აქ!",
-          "en": "Children, come here!",
-          "options": ["ბავშვები", "ბავშვებო", "ბავშვებს", "ბავშვებმა"],
-          "answer": "ბავშვებო",
-          "why": "Plural address: -ებო."
-        },
-        {
-          "q": "＿, მიყვარხარ!",
-          "en": "Mommy, I love you!",
-          "options": ["დედას", "დედის", "დედიკო", "დედამ"],
-          "answer": "დედიკო",
-          "why": "Pet form: -იკო."
-        },
-        {
-          "q": "მადლობა, ＿.",
-          "en": "Thank you, sir.",
-          "options": ["ბატონი", "ბატონს", "ბატონმა", "ბატონო"],
-          "answer": "ბატონო",
-          "why": "Sir: ბატონო."
         }
       ]
     },
@@ -4660,6 +4590,76 @@
           "options": ["სამსახური", "სამსახურს", "სამსახურით", "სამსახურის"],
           "answer": "სამსახურის",
           "why": "Genitive before გამო."
+        }
+      ]
+    },
+    {
+      "id": "metqi",
+      "title": "I said, tell him: -მეთქი, -თქო",
+      "particle": "-მეთქი -თქო",
+      "summary": "-მეთქი marks words \"I\" said; -თქო marks words you should pass on: უთხარი, მალე მოვალ-თქო, tell him I'll come soon. (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>-მეთქი</b> after your own quoted words: <b>ვუთხარი, დაღლილი ვარ-მეთქი</b> I told him I'm tired.",
+          "examples": [
+            [
+              "ვუთხარი, ხვალ {მოვალ-მეთქი}.",
+              "Vutkhari, khval moval-metki.",
+              "I told him I'd come tomorrow."
+            ],
+            [
+              "ვკითხე, სად ხარ-{მეთქი}.",
+              "Vk'itkhe, sad khar-metki.",
+              "I asked him where he was."
+            ]
+          ]
+        },
+        {
+          "h": "Pass it on: -თქო",
+          "p": "<b>-თქო</b> marks a message for someone to deliver: <b>უთხარი, დამირეკოს-თქო</b> tell him to call me.",
+          "examples": [
+            [
+              "უთხარი, {დამირეკოს-თქო}.",
+              "Utkhari, damirek'os-tko.",
+              "Tell him to call me."
+            ],
+            [
+              "გადაეცი, {მადლობა-თქო}.",
+              "Gadaetsi, madloba-tko.",
+              "Pass on my thanks."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ვუთხარი, ხვალ მოვალ-＿.",
+          "en": "I told him I'd come tomorrow.",
+          "options": ["მეთქი", "თქო", "ო", "და"],
+          "answer": "მეთქი",
+          "why": "My own words: -მეთქი."
+        },
+        {
+          "q": "უთხარი, დამირეკოს-＿.",
+          "en": "Tell him to call me.",
+          "options": ["მეთქი", "თქო", "ო", "რომ"],
+          "answer": "თქო",
+          "why": "Message to pass on: -თქო."
+        },
+        {
+          "q": "ვკითხე, სად ხარ-＿.",
+          "en": "I asked him where he was.",
+          "options": ["თქო", "ო", "მეთქი", "ც"],
+          "answer": "მეთქი",
+          "why": "What I asked: -მეთქი."
+        },
+        {
+          "q": "გადაეცი, მადლობა-＿.",
+          "en": "Pass on my thanks.",
+          "options": ["მეთქი", "ო", "ც", "თქო"],
+          "answer": "თქო",
+          "why": "For passing on: -თქო."
         }
       ]
     },

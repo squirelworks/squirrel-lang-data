@@ -16,7 +16,7 @@
     "  same beginner seam; examples here are original.",
     "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
     "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
-    "72 lessons, from A1 to C1. Lessons 13–72 were added to cover the rest of everyday and literary Bengali grammar; transliteration follows lessons 1–12 (simplified; o for inherent অ; chh for ছ)."
+    "72 lessons, from A1 to C1. 60 lessons were added to cover the rest of everyday and literary Bengali grammar; transliteration follows the original 12 lessons (simplified; o for inherent অ; chh for ছ)."
   ],
   "title": "Bengali first grammar",
   "intro": "Bengali (Bangla) puts the verb last and has no grammatical gender: the verb changes for the person and for how polite you are, but never for he or she. Present-tense sentences often need no “is”. The 72 lessons run from A1 to C1. They start with sentences without “to be”, verbs and politeness, saying no, questions, classifiers and the basic tenses, then add the perfect and habitual past, the -তে infinitive and the conjunctive -এ, “must”, “like” and “want”, conditionals with -লে and যদি, relative clauses, compound verbs, causatives and the passive, and end with unreal conditions, echo words, “while” and “as soon as”, formal connectors and the literary সাধু ভাষা. The transliteration is simplified: o is the short vowel most consonants carry, and ch, th, kh are breathy sounds.",
@@ -455,6 +455,75 @@
           "options": ["আপনার", "তোমার", "আপনি", "তার"],
           "answer": "আপনার",
           "why": "Polite “your” is আপনার."
+        }
+      ]
+    },
+    {
+      "id": "pronouns",
+      "title": "Pronouns: আমি, তুমি, আপনি",
+      "particle": "আমি・তুই・তুমি・আপনি・সে・তিনি",
+      "summary": "Bengali has three levels of \"you\" (তুই, তুমি, আপনি) and two of \"he/she\" (সে, তিনি). (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>আমি</b> (I), <b>আমরা</b> (we). \"You\": <b>তুই</b> (very close, children), <b>তুমি</b> (friends, family), <b>আপনি</b> (polite). He or she: <b>সে</b> (ordinary), <b>তিনি</b> (respectful). There is no gender.",
+          "examples": [
+            [
+              "{আপনি} কেমন আছেন?",
+              "Apni kemon achhen?",
+              "How are you? (polite)"
+            ],
+            ["{তুমি} কোথায়?", "Tumi kothay?", "Where are you? (friendly)"]
+          ]
+        },
+        {
+          "h": "Near and far: এ, ও",
+          "p": "In speech, <b>এ</b> / <b>ও</b> (this one / that one) are common for he/she, with respectful <b>ইনি</b> / <b>উনি</b>. Plurals: <b>ওরা</b>, <b>তারা</b>, <b>তোমরা</b>, <b>আপনারা</b>.",
+          "examples": [
+            [
+              "{উনি} আমার শিক্ষক।",
+              "Uni amar shikkhok.",
+              "He/She is my teacher. (respectful)"
+            ],
+            ["{ওরা} কোথায় গেল?", "Ora kothay gelo?", "Where did they go?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ কোথায় থাকেন?",
+          "en": "Where do you live? (polite)",
+          "options": ["আপনি", "তুমি", "তুই", "সে"],
+          "answer": "আপনি",
+          "why": "Polite: আপনি."
+        },
+        {
+          "q": "＿ আমার বন্ধু।",
+          "en": "He is my friend.",
+          "options": ["তিনি", "সে", "আপনি", "আমি"],
+          "answer": "সে",
+          "why": "Ordinary he/she: সে."
+        },
+        {
+          "q": "＿ খুব ভালো মানুষ।",
+          "en": "He is a very good person. (respectful)",
+          "options": ["সে", "তুই", "তিনি", "আমরা"],
+          "answer": "তিনি",
+          "why": "Respectful: তিনি."
+        },
+        {
+          "q": "＿ কী করছ?",
+          "en": "What are you doing? (to a friend)",
+          "options": ["আপনি", "তুই", "তিনি", "তুমি"],
+          "answer": "তুমি",
+          "why": "-ছ goes with তুমি."
+        },
+        {
+          "q": "＿ বাংলাদেশি।",
+          "en": "We are Bangladeshi.",
+          "options": ["আমরা", "আমি", "তারা", "ওরা"],
+          "answer": "আমরা",
+          "why": "we: আমরা."
         }
       ]
     },
@@ -958,75 +1027,6 @@
       ]
     },
     {
-      "id": "pronouns",
-      "title": "Pronouns: আমি, তুমি, আপনি",
-      "particle": "আমি・তুই・তুমি・আপনি・সে・তিনি",
-      "summary": "Bengali has three levels of \"you\" (তুই, তুমি, আপনি) and two of \"he/she\" (সে, তিনি). (about A1)",
-      "level": "absolute-beginner",
-      "sections": [
-        {
-          "p": "<b>আমি</b> (I), <b>আমরা</b> (we). \"You\": <b>তুই</b> (very close, children), <b>তুমি</b> (friends, family), <b>আপনি</b> (polite). He or she: <b>সে</b> (ordinary), <b>তিনি</b> (respectful). There is no gender.",
-          "examples": [
-            [
-              "{আপনি} কেমন আছেন?",
-              "Apni kemon achhen?",
-              "How are you? (polite)"
-            ],
-            ["{তুমি} কোথায়?", "Tumi kothay?", "Where are you? (friendly)"]
-          ]
-        },
-        {
-          "h": "Near and far: এ, ও",
-          "p": "In speech, <b>এ</b> / <b>ও</b> (this one / that one) are common for he/she, with respectful <b>ইনি</b> / <b>উনি</b>. Plurals: <b>ওরা</b>, <b>তারা</b>, <b>তোমরা</b>, <b>আপনারা</b>.",
-          "examples": [
-            [
-              "{উনি} আমার শিক্ষক।",
-              "Uni amar shikkhok.",
-              "He/She is my teacher. (respectful)"
-            ],
-            ["{ওরা} কোথায় গেল?", "Ora kothay gelo?", "Where did they go?"]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ কোথায় থাকেন?",
-          "en": "Where do you live? (polite)",
-          "options": ["আপনি", "তুমি", "তুই", "সে"],
-          "answer": "আপনি",
-          "why": "Polite: আপনি."
-        },
-        {
-          "q": "＿ আমার বন্ধু।",
-          "en": "He is my friend.",
-          "options": ["তিনি", "সে", "আপনি", "আমি"],
-          "answer": "সে",
-          "why": "Ordinary he/she: সে."
-        },
-        {
-          "q": "＿ খুব ভালো মানুষ।",
-          "en": "He is a very good person. (respectful)",
-          "options": ["সে", "তুই", "তিনি", "আমরা"],
-          "answer": "তিনি",
-          "why": "Respectful: তিনি."
-        },
-        {
-          "q": "＿ কী করছ?",
-          "en": "What are you doing? (to a friend)",
-          "options": ["আপনি", "তুই", "তিনি", "তুমি"],
-          "answer": "তুমি",
-          "why": "-ছ goes with তুমি."
-        },
-        {
-          "q": "＿ বাংলাদেশি।",
-          "en": "We are Bangladeshi.",
-          "options": ["আমরা", "আমি", "তারা", "ওরা"],
-          "answer": "আমরা",
-          "why": "we: আমরা."
-        }
-      ]
-    },
-    {
       "id": "numbers",
       "title": "Numbers 1–20",
       "particle": "এক・দুই・তিন・দশ",
@@ -1364,71 +1364,6 @@
       ]
     },
     {
-      "id": "postpositions",
-      "title": "Postpositions: থেকে, দিয়ে, সাথে, জন্য",
-      "particle": "থেকে・দিয়ে・সাথে・জন্য",
-      "summary": "Postpositions follow the noun, which is often in the -র form: আমার সাথে, তোমার জন্য. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>থেকে</b> (from), <b>দিয়ে</b> (with, by means of; through), <b>পর্যন্ত</b> (up to). These follow the plain noun: ঢাকা <b>থেকে</b>, ছুরি <b>দিয়ে</b>.",
-          "examples": [
-            [
-              "আমি চট্টগ্রাম {থেকে} এসেছি।",
-              "Ami Chottogram theke eshechhi.",
-              "I've come from Chittagong."
-            ],
-            ["কলম {দিয়ে} লেখো।", "Kolom diye lekho.", "Write with a pen."]
-          ]
-        },
-        {
-          "h": "With -র: সাথে, জন্য, কাছে",
-          "p": "Others take the -র form: আমার <b>সাথে</b> (with me), তোমার <b>জন্য</b> (for you), বাবার <b>কাছে</b> (near/with Dad), বাড়ির <b>পাশে</b> (beside the house).",
-          "examples": [
-            ["আমার {সাথে} চলো।", "Amar shathe cholo.", "Come with me."],
-            ["এটা তোমার {জন্য}।", "Eta tomar jonno.", "This is for you."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "এটা মায়ের ＿।",
-          "en": "This is for Mum.",
-          "options": ["জন্য", "থেকে", "দিয়ে", "সাথে"],
-          "answer": "জন্য",
-          "why": "for: জন্য."
-        },
-        {
-          "q": "আমি অফিস ＿ আসছি।",
-          "en": "I'm coming from the office.",
-          "options": ["জন্য", "থেকে", "সাথে", "কাছে"],
-          "answer": "থেকে",
-          "why": "from: থেকে."
-        },
-        {
-          "q": "চামচ ＿ খাও।",
-          "en": "Eat with a spoon.",
-          "options": ["সাথে", "থেকে", "দিয়ে", "জন্য"],
-          "answer": "দিয়ে",
-          "why": "by means of: দিয়ে."
-        },
-        {
-          "q": "তুমি কার ＿ যাবে?",
-          "en": "Who will you go with?",
-          "options": ["দিয়ে", "থেকে", "জন্য", "সাথে"],
-          "answer": "সাথে",
-          "why": "with a person: সাথে."
-        },
-        {
-          "q": "＿ পাশে একটা দোকান আছে।",
-          "en": "There's a shop next to the house.",
-          "options": ["বাড়ির", "বাড়ি", "বাড়িতে", "বাড়িকে"],
-          "answer": "বাড়ির",
-          "why": "পাশে takes -র."
-        }
-      ]
-    },
-    {
       "id": "to-have",
       "title": "Having: আমার … আছে",
       "particle": "-র + আছে・নেই",
@@ -1575,6 +1510,367 @@
           "options": ["কাল", "আজ", "পরশু ছিল", "গতকাল ছিল"],
           "answer": "কাল",
           "why": "কাল + future = tomorrow."
+        }
+      ]
+    },
+    {
+      "id": "want",
+      "title": "Wanting: চাই, দরকার",
+      "particle": "চাওয়া・দরকার",
+      "summary": "চাই means I want; দরকার (need) uses the -র form: আমার সাহায্য দরকার. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>চাওয়া</b>: আমি <b>চাই</b>, তুমি <b>চাও</b>, আপনি <b>চান</b>, সে <b>চায়</b>. With a noun: আমি এক কাপ চা <b>চাই</b>. With a verb: -তে চাই.",
+          "examples": [
+            [
+              "আমি এক গ্লাস জল {চাই}।",
+              "Ami ek glash jol chai.",
+              "I want a glass of water."
+            ],
+            ["আপনি কী {চান}?", "Apni ki chan?", "What would you like?"]
+          ]
+        },
+        {
+          "h": "দরকার: need",
+          "p": "<b>আমার</b> + noun + <b>দরকার</b> = I need: আমার একটা ছাতা <b>দরকার</b>. Negative: দরকার <b>নেই</b> (no need).",
+          "examples": [
+            [
+              "{আমার} তোমার সাহায্য {দরকার}।",
+              "Amar tomar shahajjo dorkar.",
+              "I need your help."
+            ],
+            [
+              "{দরকার নেই}, ধন্যবাদ।",
+              "Dorkar nei, dhonnobad.",
+              "No need, thanks."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "আপনি কী ＿?",
+          "en": "What do you want? (polite)",
+          "options": ["চান", "চাও", "চায়", "চাই"],
+          "answer": "চান",
+          "why": "আপনি: চান."
+        },
+        {
+          "q": "সে একটা নতুন ফোন ＿।",
+          "en": "He wants a new phone.",
+          "options": ["চাই", "চায়", "চান", "চাও"],
+          "answer": "চায়",
+          "why": "সে: চায়."
+        },
+        {
+          "q": "＿ একটা ডাক্তার দরকার।",
+          "en": "I need a doctor.",
+          "options": ["আমি", "আমাকে", "আমার", "আমরা"],
+          "answer": "আমার",
+          "why": "Need: -র form."
+        },
+        {
+          "q": "টাকার ＿ নেই।",
+          "en": "There's no need for money.",
+          "options": ["চাই", "চাও", "দরকারি", "দরকার"],
+          "answer": "দরকার",
+          "why": "দরকার নেই."
+        },
+        {
+          "q": "তুমি কি আরও ভাত ＿?",
+          "en": "Do you want more rice?",
+          "options": ["চাও", "চায়", "চান", "চাই"],
+          "answer": "চাও",
+          "why": "তুমি: চাও."
+        }
+      ]
+    },
+    {
+      "id": "question-words",
+      "title": "Question words: কে, কোথায়, কখন, কেন",
+      "particle": "কে・কী・কোথায়・কখন・কেন・কীভাবে",
+      "summary": "Content questions use কে (who), কী (what), কোথায় (where), কখন (when), কেন (why) and কীভাবে (how), usually just before the verb. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Bengali doesn't move the question word to the front. It sits where the answer would go, often just before the verb: তুমি <b>কোথায়</b> যাচ্ছ? (where are you going?).",
+          "examples": [
+            ["তোমার নাম {কী}?", "Tomar nam ki?", "What's your name?"],
+            [
+              "তুমি {কোথায়} থাকো?",
+              "Tumi kothay thako?",
+              "Where do you live?"
+            ]
+          ]
+        },
+        {
+          "h": "More question words",
+          "p": "<b>কখন</b> (when), <b>কেন</b> (why), <b>কীভাবে</b> or <b>কেমন করে</b> (how), <b>কেমন</b> (how, what kind), <b>কত</b> (how much), <b>কোন</b> (which), <b>কার</b> (whose).",
+          "examples": [
+            [
+              "তুমি {কেন} দেরি করলে?",
+              "Tumi keno deri korle?",
+              "Why were you late?"
+            ],
+            ["এটার দাম {কত}?", "Etar dam koto?", "How much is this?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "উনি ＿?",
+          "en": "Who is he?",
+          "options": ["কে", "কী", "কোথায়", "কখন"],
+          "answer": "কে",
+          "why": "who: কে."
+        },
+        {
+          "q": "ট্রেন ＿ ছাড়বে?",
+          "en": "When will the train leave?",
+          "options": ["কে", "কখন", "কেন", "কার"],
+          "answer": "কখন",
+          "why": "when: কখন."
+        },
+        {
+          "q": "তুমি ＿ আছ?",
+          "en": "How are you?",
+          "options": ["কত", "কে", "কেমন", "কোথায়"],
+          "answer": "কেমন",
+          "why": "how (in what state): কেমন."
+        },
+        {
+          "q": "এটা ＿ বই?",
+          "en": "Whose book is this?",
+          "options": ["কে", "কেন", "কখন", "কার"],
+          "answer": "কার",
+          "why": "whose: কার."
+        },
+        {
+          "q": "তুমি ＿ রঙ পছন্দ করো?",
+          "en": "Which colour do you like?",
+          "options": ["কোন", "কে", "কেন", "কত"],
+          "answer": "কোন",
+          "why": "which: কোন + noun."
+        }
+      ]
+    },
+    {
+      "id": "quantities",
+      "title": "How much: অনেক, একটু, কম, বেশি",
+      "particle": "অনেক・একটু・কম・বেশি・কিছু",
+      "summary": "অনেক (a lot), একটু (a little), কম (less, few) and বেশি (more, too much) go before nouns or describe verbs. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>অনেক</b> = many, much: <b>অনেক</b> লোক. <b>একটু</b> = a little: <b>একটু</b> জল. With counted things, a classifier often follows the number word: <b>কয়েকটা</b> বই (a few books).",
+          "examples": [
+            [
+              "আজ {অনেক} কাজ আছে।",
+              "Aj onek kaj achhe.",
+              "There's a lot of work today."
+            ],
+            [
+              "{একটু} চিনি দিন।",
+              "Ektu chini din.",
+              "Please add a little sugar."
+            ]
+          ]
+        },
+        {
+          "h": "কম and বেশি",
+          "p": "<b>বেশি</b> = more, too much; <b>কম</b> = less, too little. <b>খুব</b> = very: <b>খুব</b> ভালো. <b>একটু</b> also softens a request: <b>একটু</b> দাঁড়ান (wait a moment, please).",
+          "examples": [
+            [
+              "ঝাল {বেশি} হয়ে গেছে।",
+              "Jhal beshi hoye gechhe.",
+              "It's become too spicy."
+            ],
+            [
+              "আমার কাছে টাকা {কম} আছে।",
+              "Amar kachhe taka kom achhe.",
+              "I have little money on me."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ক্লাসে ＿ ছাত্র আছে।",
+          "en": "There are a lot of students in the class.",
+          "options": ["অনেক", "একটু", "কম", "কোন"],
+          "answer": "অনেক",
+          "why": "a lot: অনেক."
+        },
+        {
+          "q": "＿ অপেক্ষা করুন।",
+          "en": "Please wait a little.",
+          "options": ["অনেক", "একটু", "বেশি", "খুব"],
+          "answer": "একটু",
+          "why": "a little: একটু."
+        },
+        {
+          "q": "লবণ ＿ দিও না।",
+          "en": "Don't put in too much salt.",
+          "options": ["কম", "একটু", "বেশি", "কোন"],
+          "answer": "বেশি",
+          "why": "too much: বেশি."
+        },
+        {
+          "q": "ছবিটা ＿ সুন্দর।",
+          "en": "The picture is very beautiful.",
+          "options": ["কম", "একটু", "অনেকটা", "খুব"],
+          "answer": "খুব",
+          "why": "very: খুব."
+        },
+        {
+          "q": "＿টা বই কিনলাম।",
+          "en": "I bought a few books.",
+          "options": ["কয়েক", "কিছু", "একটু", "বেশি"],
+          "answer": "কয়েক",
+          "why": "a few + classifier: কয়েকটা."
+        }
+      ]
+    },
+    {
+      "id": "kinship-address",
+      "title": "Addressing people: দাদা, দিদি, -বাবু",
+      "particle": "দাদা・দিদি・কাকু・মাসি・-বাবু",
+      "summary": "Bengalis address others with kinship words (দাদা, দিদি, কাকু, মাসিমা) or with -বাবু and -দা added to a name. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "An older man of your generation is <b>দাদা</b> (big brother), an older woman <b>দিদি</b>. Short forms attach to names: অমিত<b>দা</b>, রিনা<b>দি</b>. Older men can be <b>কাকু</b> (uncle), older women <b>মাসিমা</b> or <b>কাকিমা</b>.",
+          "examples": [
+            [
+              "{দাদা}, স্টেশনটা কোথায়?",
+              "Dada, steshonta kothay?",
+              "Excuse me (brother), where's the station?"
+            ],
+            [
+              "{দিদি}, একটু জল দেবেন?",
+              "Didi, ektu jol deben?",
+              "Ma'am (sister), could you give me some water?"
+            ]
+          ]
+        },
+        {
+          "h": "Titles with names",
+          "p": "<b>-বাবু</b> (for men) and <b>-দি</b> or <b>ম্যাডাম</b> follow a name for respect at work: রায়<b>বাবু</b>. Formal: <b>শ্রী</b> before a man's name, <b>শ্রীমতী</b> before a married woman's.",
+          "examples": [
+            [
+              "{সেনবাবু} আজ আসবেন না।",
+              "Senbabu aj ashben na.",
+              "Mr Sen won't come today."
+            ],
+            [
+              "অমিত{দা} ফোন করেছিল।",
+              "Amitda phon korechhilo.",
+              "Amit-da called."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿, এই বাসটা কি হাওড়া যাবে?",
+          "en": "Excuse me (to an older man), does this bus go to Howrah?",
+          "options": ["দাদা", "দিদি", "বোন", "ভাই"],
+          "answer": "দাদা",
+          "why": "older man: দাদা."
+        },
+        {
+          "q": "রিনা＿, কেমন আছ?",
+          "en": "Rina-di, how are you?",
+          "options": ["দা", "দি", "বাবু", "কাকু"],
+          "answer": "দি",
+          "why": "older woman: -দি."
+        },
+        {
+          "q": "＿, ভালো আছেন?",
+          "en": "Auntie, are you well?",
+          "options": ["দাদা", "ভাই", "মাসিমা", "কাকু"],
+          "answer": "মাসিমা",
+          "why": "older woman, a generation up: মাসিমা."
+        },
+        {
+          "q": "ঘোষ＿ অফিসে আছেন।",
+          "en": "Mr Ghosh is in the office.",
+          "options": ["দি", "মাসি", "বোন", "বাবু"],
+          "answer": "বাবু",
+          "why": "Surname + -বাবু."
+        },
+        {
+          "q": "＿, চা খাবে?",
+          "en": "Little brother, will you have tea?",
+          "options": ["ভাই", "দাদা", "দিদি", "মাসিমা"],
+          "answer": "ভাই",
+          "why": "younger man: ভাই."
+        }
+      ]
+    },
+    {
+      "id": "postpositions",
+      "title": "Postpositions: থেকে, দিয়ে, সাথে, জন্য",
+      "particle": "থেকে・দিয়ে・সাথে・জন্য",
+      "summary": "Postpositions follow the noun, which is often in the -র form: আমার সাথে, তোমার জন্য. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>থেকে</b> (from), <b>দিয়ে</b> (with, by means of; through), <b>পর্যন্ত</b> (up to). These follow the plain noun: ঢাকা <b>থেকে</b>, ছুরি <b>দিয়ে</b>.",
+          "examples": [
+            [
+              "আমি চট্টগ্রাম {থেকে} এসেছি।",
+              "Ami Chottogram theke eshechhi.",
+              "I've come from Chittagong."
+            ],
+            ["কলম {দিয়ে} লেখো।", "Kolom diye lekho.", "Write with a pen."]
+          ]
+        },
+        {
+          "h": "With -র: সাথে, জন্য, কাছে",
+          "p": "Others take the -র form: আমার <b>সাথে</b> (with me), তোমার <b>জন্য</b> (for you), বাবার <b>কাছে</b> (near/with Dad), বাড়ির <b>পাশে</b> (beside the house).",
+          "examples": [
+            ["আমার {সাথে} চলো।", "Amar shathe cholo.", "Come with me."],
+            ["এটা তোমার {জন্য}।", "Eta tomar jonno.", "This is for you."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "এটা মায়ের ＿।",
+          "en": "This is for Mum.",
+          "options": ["জন্য", "থেকে", "দিয়ে", "সাথে"],
+          "answer": "জন্য",
+          "why": "for: জন্য."
+        },
+        {
+          "q": "আমি অফিস ＿ আসছি।",
+          "en": "I'm coming from the office.",
+          "options": ["জন্য", "থেকে", "সাথে", "কাছে"],
+          "answer": "থেকে",
+          "why": "from: থেকে."
+        },
+        {
+          "q": "চামচ ＿ খাও।",
+          "en": "Eat with a spoon.",
+          "options": ["সাথে", "থেকে", "দিয়ে", "জন্য"],
+          "answer": "দিয়ে",
+          "why": "by means of: দিয়ে."
+        },
+        {
+          "q": "তুমি কার ＿ যাবে?",
+          "en": "Who will you go with?",
+          "options": ["দিয়ে", "থেকে", "জন্য", "সাথে"],
+          "answer": "সাথে",
+          "why": "with a person: সাথে."
+        },
+        {
+          "q": "＿ পাশে একটা দোকান আছে।",
+          "en": "There's a shop next to the house.",
+          "options": ["বাড়ির", "বাড়ি", "বাড়িতে", "বাড়িকে"],
+          "answer": "বাড়ির",
+          "why": "পাশে takes -র."
         }
       ]
     },
@@ -1798,83 +2094,6 @@
       ]
     },
     {
-      "id": "past-perfect",
-      "title": "Had done: করেছিলাম",
-      "particle": "-এছিলাম",
-      "summary": "-এছিলাম means had done, or a more remote past. (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "Perfective stem + <b>-ছিলাম / -ছিলে / -ছিলেন / -ছিল</b>: আমি <b>গিয়েছিলাম</b> (I had gone, I went [some time ago]). It is often used simply for the more distant past.",
-          "examples": [
-            [
-              "আমি গত বছর ভারতে {গিয়েছিলাম}।",
-              "Ami goto bochhor Bharote giyechhilam.",
-              "I went to India last year."
-            ],
-            [
-              "আমি পৌঁছনোর আগেই সে {চলে গিয়েছিল}।",
-              "Ami pounchhonor agei shey chole giyechhilo.",
-              "He had left before I arrived."
-            ]
-          ]
-        },
-        {
-          "h": "Negative",
-          "p": "The negative of both perfects is the present + <b>নি</b>: আমি যাই<b>নি</b> (I didn't go / haven't gone).",
-          "examples": [
-            [
-              "আমি ছবিটা {দেখিনি}।",
-              "Ami chhobita dekhini.",
-              "I haven't seen the film."
-            ],
-            [
-              "সে কিছু {বলেনি}।",
-              "Shey kichhu boleni.",
-              "He didn't say anything."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "আমি ছোটবেলায় একবার সেখানে ＿।",
-          "en": "I went there once as a child.",
-          "options": ["গিয়েছিলাম", "যাচ্ছি", "যাব", "যাই"],
-          "answer": "গিয়েছিলাম",
-          "why": "Remote past: -ছিলাম."
-        },
-        {
-          "q": "তুমি কি আগে এটা ＿?",
-          "en": "Had you seen this before?",
-          "options": ["দেখছিলে", "দেখেছিলে", "দেখবে", "দেখো"],
-          "answer": "দেখেছিলে",
-          "why": "তুমি: -ছিলে."
-        },
-        {
-          "q": "আমি ＿।",
-          "en": "I didn't go.",
-          "options": ["গেলাম না নি", "যাব না", "যাইনি", "না গেছি"],
-          "answer": "যাইনি",
-          "why": "Negative past: present + নি."
-        },
-        {
-          "q": "সে কাজটা ＿।",
-          "en": "He didn't do the work.",
-          "options": ["করেছিল না নি", "করবে না", "না করেছে", "করেনি"],
-          "answer": "করেনি",
-          "why": "-নি."
-        },
-        {
-          "q": "তিনি ১৯৭১ সালে ＿।",
-          "en": "He was born in 1971.",
-          "options": ["জন্মেছিলেন", "জন্মাচ্ছেন", "জন্মাবেন", "জন্মান"],
-          "answer": "জন্মেছিলেন",
-          "why": "Respectful remote past."
-        }
-      ]
-    },
-    {
       "id": "conjunctive",
       "title": "Having done: খেয়ে, করে",
       "particle": "-এ (perfective participle)",
@@ -2025,83 +2244,6 @@
           "options": ["খেতে", "খাও", "খেয়ে", "খাবে"],
           "answer": "খেতে",
           "why": "চাও + -তে."
-        }
-      ]
-    },
-    {
-      "id": "verbal-noun",
-      "title": "Verbal nouns: যাওয়া, খাওয়া, করা",
-      "particle": "-আ・-ওয়া・-নো",
-      "summary": "The verbal noun names the action; it takes case endings and classifiers like a noun. (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "Verbal nouns end in <b>-আ</b> (করা, দেখা, লেখা), <b>-ওয়া</b> (খাওয়া, যাওয়া, দেওয়া) or <b>-নো</b> (ঘুমোনো, শেখানো). They act as nouns: <b>সাঁতার কাটা</b> ভালো ব্যায়াম.",
-          "examples": [
-            [
-              "{ধূমপান করা} নিষেধ।",
-              "Dhumpan kora nishedh.",
-              "Smoking is prohibited."
-            ],
-            [
-              "{খাওয়ার} আগে হাত ধোও।",
-              "Khaoar age hat dhoo.",
-              "Wash your hands before eating."
-            ]
-          ]
-        },
-        {
-          "h": "With case endings",
-          "p": "Genitive <b>-র</b>: খাওয়া<b>র</b> পরে (after eating), যাওয়া<b>র</b> সময় (when leaving). Locative <b>-য়/-তে</b>: আসা<b>য়</b> দেরি হল (there was a delay in coming).",
-          "examples": [
-            [
-              "{ঘুমোনোর} আগে বই পড়ি।",
-              "Ghumonor age boi pori.",
-              "I read before sleeping."
-            ],
-            [
-              "আমার {যাওয়ার} ইচ্ছে নেই।",
-              "Amar jaoar ichchhe nei.",
-              "I have no wish to go."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ পরে বিশ্রাম নাও।",
-          "en": "Rest after eating.",
-          "options": ["খাওয়ার", "খেয়ে পরে", "খাই", "খাব"],
-          "answer": "খাওয়ার",
-          "why": "Verbal noun + -র."
-        },
-        {
-          "q": "এখানে ছবি ＿ নিষেধ।",
-          "en": "Taking photos here is prohibited.",
-          "options": ["তুলি", "তোলা", "তুলে", "তুলবে"],
-          "answer": "তোলা",
-          "why": "Verbal noun."
-        },
-        {
-          "q": "বাংলা ＿ সহজ নয়।",
-          "en": "Learning Bengali isn't easy.",
-          "options": ["শিখি", "শিখে", "শেখা", "শিখবে"],
-          "answer": "শেখা",
-          "why": "Verbal noun as subject."
-        },
-        {
-          "q": "＿ সময় দরজা বন্ধ কোরো।",
-          "en": "Close the door when you leave.",
-          "options": ["যেয়ে", "যাই", "যাবে", "যাওয়ার"],
-          "answer": "যাওয়ার",
-          "why": "Verbal noun + -র সময়."
-        },
-        {
-          "q": "ঘুমো＿ আগে দাঁত মাজো।",
-          "en": "Brush your teeth before sleeping.",
-          "options": ["নোর", "তে", "য়ে", "লাম"],
-          "answer": "নোর",
-          "why": "-নো + -র."
         }
       ]
     },
@@ -2260,75 +2402,667 @@
       ]
     },
     {
-      "id": "want",
-      "title": "Wanting: চাই, দরকার",
-      "particle": "চাওয়া・দরকার",
-      "summary": "চাই means I want; দরকার (need) uses the -র form: আমার সাহায্য দরকার. (about A1)",
-      "level": "beginner",
+      "id": "comparatives",
+      "title": "Comparing: চেয়ে, সবচেয়ে",
+      "particle": "X-এর চেয়ে・সবচেয়ে",
+      "summary": "Than is -র চেয়ে (or -র থেকে); the most is সবচেয়ে. (about A2)",
+      "level": "beginner-intermediate",
       "sections": [
         {
-          "p": "<b>চাওয়া</b>: আমি <b>চাই</b>, তুমি <b>চাও</b>, আপনি <b>চান</b>, সে <b>চায়</b>. With a noun: আমি এক কাপ চা <b>চাই</b>. With a verb: -তে চাই.",
+          "p": "X<b>-এর চেয়ে</b> + adjective = more than X: রাম শ্যামের <b>চেয়ে</b> লম্বা. Add <b>বেশি</b> (more) or <b>কম</b> (less) for clarity: এটা ওটার চেয়ে <b>বেশি</b> দামি.",
           "examples": [
             [
-              "আমি এক গ্লাস জল {চাই}।",
-              "Ami ek glash jol chai.",
-              "I want a glass of water."
+              "ঢাকা চট্টগ্রামের {চেয়ে} বড়।",
+              "Dhaka Chottogramer cheye boro.",
+              "Dhaka is bigger than Chittagong."
             ],
-            ["আপনি কী {চান}?", "Apni ki chan?", "What would you like?"]
+            [
+              "আমি তোমার {থেকে} লম্বা।",
+              "Ami tomar theke lomba.",
+              "I'm taller than you."
+            ]
           ]
         },
         {
-          "h": "দরকার: need",
-          "p": "<b>আমার</b> + noun + <b>দরকার</b> = I need: আমার একটা ছাতা <b>দরকার</b>. Negative: দরকার <b>নেই</b> (no need).",
+          "h": "সবচেয়ে",
+          "p": "<b>সবচেয়ে</b> + adjective = the most: <b>সবচেয়ে</b> ভালো (the best), ক্লাসের <b>সবচেয়ে</b> লম্বা ছেলে.",
           "examples": [
             [
-              "{আমার} তোমার সাহায্য {দরকার}।",
-              "Amar tomar shahajjo dorkar.",
-              "I need your help."
+              "এটা শহরের {সবচেয়ে} পুরনো বাড়ি।",
+              "Eta shohorer shobcheye purono bari.",
+              "This is the oldest building in the city."
             ],
             [
-              "{দরকার নেই}, ধন্যবাদ।",
-              "Dorkar nei, dhonnobad.",
-              "No need, thanks."
+              "আম আমার {সবচেয়ে} প্রিয় ফল।",
+              "Am amar shobcheye priyo phol.",
+              "Mango is my favourite fruit."
             ]
           ]
         }
       ],
       "drills": [
         {
-          "q": "আপনি কী ＿?",
-          "en": "What do you want? (polite)",
-          "options": ["চান", "চাও", "চায়", "চাই"],
-          "answer": "চান",
-          "why": "আপনি: চান."
+          "q": "আমার ভাই আমার ＿ ছোট।",
+          "en": "My brother is younger than me.",
+          "options": ["চেয়ে", "সবচেয়ে", "মতো", "জন্য"],
+          "answer": "চেয়ে",
+          "why": "than: চেয়ে."
         },
         {
-          "q": "সে একটা নতুন ফোন ＿।",
-          "en": "He wants a new phone.",
-          "options": ["চাই", "চায়", "চান", "চাও"],
-          "answer": "চায়",
-          "why": "সে: চায়."
+          "q": "এটা ＿ ভালো রেস্তোরাঁ।",
+          "en": "This is the best restaurant.",
+          "options": ["চেয়ে", "সবচেয়ে", "বেশি চেয়ে", "খুব চেয়ে"],
+          "answer": "সবচেয়ে",
+          "why": "most: সবচেয়ে."
         },
         {
-          "q": "＿ একটা ডাক্তার দরকার।",
-          "en": "I need a doctor.",
-          "options": ["আমি", "আমাকে", "আমার", "আমরা"],
+          "q": "চা কফির চেয়ে ＿ সস্তা।",
+          "en": "Tea is cheaper than coffee.",
+          "options": ["সবচেয়ে", "চেয়ে", "বেশি", "খুব চেয়ে"],
+          "answer": "বেশি",
+          "why": "more: বেশি."
+        },
+        {
+          "q": "সে ＿ চেয়ে ভালো গায়।",
+          "en": "She sings better than me.",
+          "options": ["আমি", "আমাকে", "আমরা", "আমার"],
           "answer": "আমার",
-          "why": "Need: -র form."
+          "why": "-র চেয়ে."
         },
         {
-          "q": "টাকার ＿ নেই।",
-          "en": "There's no need for money.",
-          "options": ["চাই", "চাও", "দরকারি", "দরকার"],
-          "answer": "দরকার",
-          "why": "দরকার নেই."
+          "q": "এটা দেশের সবচেয়ে বড় ＿।",
+          "en": "This is the country's biggest river.",
+          "options": ["নদী", "নদীর", "নদীকে", "নদীতে"],
+          "answer": "নদী",
+          "why": "Noun after adjective."
+        }
+      ]
+    },
+    {
+      "id": "negative-past",
+      "title": "Didn't: যাইনি, খাইনি",
+      "particle": "present + নি",
+      "summary": "The negative of the past and perfect is the present form + নি: আমি যাইনি (I didn't go). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Don't say \"গেলাম না\" for a simple past negative. Use the present + <b>নি</b>: আমি <b>যাইনি</b>, তুমি <b>যাওনি</b>, আপনি <b>যাননি</b>, সে <b>যায়নি</b>.",
+          "examples": [
+            [
+              "আমি আজ অফিসে {যাইনি}।",
+              "Ami aj ofishe jaini.",
+              "I didn't go to the office today."
+            ],
+            ["তুমি কি খাওনি?", "Tumi ki khaoni?", "Haven't you eaten?"]
+          ]
         },
         {
-          "q": "তুমি কি আরও ভাত ＿?",
-          "en": "Do you want more rice?",
-          "options": ["চাও", "চায়", "চান", "চাই"],
-          "answer": "চাও",
-          "why": "তুমি: চাও."
+          "h": "Other negatives",
+          "p": "<b>না</b> goes after other verbs: যাব <b>না</b> (won't go), যাচ্ছি <b>না</b>, যেতাম <b>না</b>. <b>নি</b> is only for the simple past and perfect.",
+          "examples": [
+            ["আমি কাল {যাব না}।", "Ami kal jabo na.", "I won't go tomorrow."],
+            ["সে {ফোন করেনি}।", "Shey phon koreni.", "He didn't call."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "আমি তাকে ＿।",
+          "en": "I didn't see him.",
+          "options": ["দেখিনি", "দেখলাম নি", "দেখব নি", "না দেখি"],
+          "answer": "দেখিনি",
+          "why": "Past negative: present + নি."
+        },
+        {
+          "q": "তুমি কেন ＿?",
+          "en": "Why didn't you come?",
+          "options": ["এলে নি", "আসোনি", "আসবে না নি", "না এলে নি"],
+          "answer": "আসোনি",
+          "why": "তুমি: আসো + নি."
+        },
+        {
+          "q": "আপনি কি চা ＿?",
+          "en": "Didn't you have tea? (polite)",
+          "options": ["খাওনি", "খায়নি", "খাননি", "খাইনি"],
+          "answer": "খাননি",
+          "why": "আপনি: -েন + নি."
+        },
+        {
+          "q": "কাল আমি ＿।",
+          "en": "I won't come tomorrow.",
+          "options": ["আসিনি", "আসবনি না", "না আসলাম", "আসব না"],
+          "answer": "আসব না",
+          "why": "Future negative: না."
+        },
+        {
+          "q": "সে কিছু ＿।",
+          "en": "She didn't say anything.",
+          "options": ["বলেনি", "বলল না নি", "বলবে নি", "বলিনি"],
+          "answer": "বলেনি",
+          "why": "সে: বলে + নি."
+        }
+      ]
+    },
+    {
+      "id": "thaka",
+      "title": "থাকা: stay, live, be",
+      "particle": "থাকা・থাকি",
+      "summary": "থাকা means stay, live, or remain; it supplies forms আছে lacks, like the future থাকবে. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>থাকা</b> = live, stay: আমি ঢাকায় <b>থাকি</b>. It also gives আছে its missing tenses: future <b>থাকবে</b> (will be [there]), habitual <b>থাকে</b> (is usually).",
+          "examples": [
+            [
+              "আপনি কোথায় {থাকেন}?",
+              "Apni kothay thaken?",
+              "Where do you live?"
+            ],
+            [
+              "কাল আমি বাড়িতে {থাকব}।",
+              "Kal ami barite thakbo.",
+              "I'll be at home tomorrow."
+            ]
+          ]
+        },
+        {
+          "h": "আছে, ছিল, থাকবে",
+          "p": "Location and existence: <b>আছে</b> (is, now), <b>ছিল</b> (was), <b>থাকবে</b> (will be), <b>থাকে</b> (usually is): সে সাধারণত অফিসে <b>থাকে</b>.",
+          "examples": [
+            [
+              "বাবা এখন অফিসে {আছেন}।",
+              "Baba ekhon ofishe achhen.",
+              "Dad is at the office now."
+            ],
+            [
+              "সকালে দোকানটা খোলা {থাকে}।",
+              "Shokale dokanta khola thake.",
+              "The shop is usually open in the morning."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "তুমি কোথায় ＿?",
+          "en": "Where do you live?",
+          "options": ["থাকো", "আছ", "ছিলে", "থাকল"],
+          "answer": "থাকো",
+          "why": "Live: থাকা."
+        },
+        {
+          "q": "কাল আমি এখানে ＿।",
+          "en": "I'll be here tomorrow.",
+          "options": ["আছি", "থাকব", "ছিলাম", "আছে"],
+          "answer": "থাকব",
+          "why": "Future of \"be there\": থাকব."
+        },
+        {
+          "q": "ও এখন বাড়িতে ＿।",
+          "en": "He's at home now.",
+          "options": ["থাকে", "থাকবে", "আছে", "ছিলাম"],
+          "answer": "আছে",
+          "why": "Now: আছে."
+        },
+        {
+          "q": "গতকাল আমি অসুস্থ ＿।",
+          "en": "I was ill yesterday.",
+          "options": ["থাকব", "আছি", "থাকি", "ছিলাম"],
+          "answer": "ছিলাম",
+          "why": "Past: ছিলাম."
+        },
+        {
+          "q": "রবিবারে দোকান বন্ধ ＿।",
+          "en": "The shop is (usually) closed on Sundays.",
+          "options": ["থাকে", "আছে", "ছিল", "থাকবে না"],
+          "answer": "থাকে",
+          "why": "Habitual: থাকে."
+        }
+      ]
+    },
+    {
+      "id": "tag-particles",
+      "title": "Tags: তো, না, তাই না, নাকি",
+      "particle": "তো・না・তাই না・নাকি",
+      "summary": "Little words at the end of a sentence add feeling: তো (after all, well), না? (right?), তাই না? (isn't it?), নাকি (or is it?, I hear). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>তাই না?</b> and <b>না?</b> ask for agreement: আজ ছুটি, <b>তাই না?</b> <b>তো</b> adds \"after all\" or \"then\": আমি <b>তো</b> বলেছিলাম (but I did tell you). In requests তো softens: বলো <b>তো</b> (go on, tell me).",
+          "examples": [
+            [
+              "তুমি বাঙালি, {তাই না}?",
+              "Tumi Bangali, tai na?",
+              "You're Bengali, aren't you?"
+            ],
+            [
+              "আমি {তো} আগেই বলেছিলাম।",
+              "Ami to agei bolechhilam.",
+              "But I told you already."
+            ]
+          ]
+        },
+        {
+          "h": "নাকি",
+          "p": "<b>নাকি</b> at the end means \"or what?\" or \"is it so?\": যাবে <b>নাকি</b>? (are you going, or not?). Inside a sentence it reports hearsay: সে <b>নাকি</b> বিয়ে করছে (apparently he's getting married).",
+          "examples": [
+            ["চা খাবে {নাকি}?", "Cha khabe naki?", "Want some tea?"],
+            [
+              "ও {নাকি} চাকরি ছেড়ে দিয়েছে।",
+              "O naki chakri chhere diyechhe.",
+              "Apparently she's quit her job."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "আজ খুব গরম, ＿?",
+          "en": "It's very hot today, isn't it?",
+          "options": ["তাই না", "তো", "কিনা", "কেন"],
+          "answer": "তাই না",
+          "why": "Asking for agreement: তাই না."
+        },
+        {
+          "q": "আমি ＿ জানতাম না!",
+          "en": "But I didn't know!",
+          "options": ["তাই না", "তো", "কি", "কেন"],
+          "answer": "তো",
+          "why": "Emphatic \"but, after all\": তো."
+        },
+        {
+          "q": "সে ＿ বিদেশে যাচ্ছে।",
+          "en": "Apparently he's going abroad.",
+          "options": ["তাই না", "তো", "নাকি", "কি"],
+          "answer": "নাকি",
+          "why": "Hearsay: নাকি."
+        },
+        {
+          "q": "একবার দেখো ＿!",
+          "en": "Just have a look!",
+          "options": ["নাকি", "কেন", "কি", "তো"],
+          "answer": "তো",
+          "why": "Softened request: … তো."
+        },
+        {
+          "q": "তুমি কাল আসবে, ＿?",
+          "en": "You'll come tomorrow, right?",
+          "options": ["না", "তো", "কেন", "কে"],
+          "answer": "না",
+          "why": "Short tag: না?"
+        }
+      ]
+    },
+    {
+      "id": "adverbs",
+      "title": "How you do it: -ভাবে, আস্তে, তাড়াতাড়ি",
+      "particle": "-ভাবে・আস্তে・তাড়াতাড়ি",
+      "summary": "Adverbs come before the verb. Many are made with -ভাবে (ভালোভাবে) or are adjectives used as they are. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>তাড়াতাড়ি</b> (quickly, early), <b>আস্তে</b> (slowly, softly), <b>জোরে</b> (loudly, hard), <b>ঠিকমতো</b> (properly). Put them just before the verb: <b>আস্তে</b> বলুন.",
+          "examples": [
+            [
+              "একটু {আস্তে} বলুন।",
+              "Ektu aste bolun.",
+              "Please speak a little more slowly."
+            ],
+            ["{তাড়াতাড়ি} এসো।", "Taratari esho.", "Come quickly."]
+          ]
+        },
+        {
+          "h": "-ভাবে",
+          "p": "<b>-ভাবে</b> (in the way of) turns an adjective into an adverb: <b>ভালোভাবে</b> (well), <b>সহজভাবে</b> (simply). <b>এভাবে</b> = like this, <b>কীভাবে</b> = how.",
+          "examples": [
+            [
+              "কাজটা {ভালোভাবে} করো।",
+              "Kajta bhalobhabe koro.",
+              "Do the work well."
+            ],
+            [
+              "{এভাবে} রান্না করতে হয়।",
+              "Ebhabe ranna korte hoy.",
+              "This is how you cook it."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "গাড়িটা খুব ＿ চলছে।",
+          "en": "The car is going very fast.",
+          "options": ["জোরে", "আস্তে", "ভালো", "কম"],
+          "answer": "জোরে",
+          "why": "fast, hard: জোরে."
+        },
+        {
+          "q": "বাচ্চা ঘুমাচ্ছে, ＿ কথা বলো।",
+          "en": "The baby is asleep, talk softly.",
+          "options": ["জোরে", "আস্তে", "তাড়াতাড়ি", "বেশি"],
+          "answer": "আস্তে",
+          "why": "softly: আস্তে."
+        },
+        {
+          "q": "প্রশ্নটা ＿ পড়ো।",
+          "en": "Read the question carefully.",
+          "options": ["মন থেকে", "মনের", "মন দিয়ে", "মনে"],
+          "answer": "মন দিয়ে",
+          "why": "carefully: মন দিয়ে."
+        },
+        {
+          "q": "আমি ＿ বুঝিয়ে বলছি।",
+          "en": "I'll explain it simply.",
+          "options": ["সহজ", "সহজের", "সহজটা", "সহজভাবে"],
+          "answer": "সহজভাবে",
+          "why": "-ভাবে adverb."
+        },
+        {
+          "q": "＿ এটা খুলব?",
+          "en": "How do I open this?",
+          "options": ["কীভাবে", "কেন", "কখন", "কোথায়"],
+          "answer": "কীভাবে",
+          "why": "how: কীভাবে."
+        }
+      ]
+    },
+    {
+      "id": "sob-protyek",
+      "title": "All and every: সব, সবাই, প্রত্যেক",
+      "particle": "সব・সবাই・প্রত্যেক・সবকিছু",
+      "summary": "সব = all (things), সবাই = everyone, প্রত্যেক = each, every, সবকিছু = everything. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>সব</b> goes before a noun: <b>সব</b> বই. <b>সবাই</b> stands alone for people: <b>সবাই</b> এসেছে. <b>সবকিছু</b> = everything, <b>সবখানে</b> or <b>সব জায়গায়</b> = everywhere.",
+          "examples": [
+            ["{সবাই} খুশি।", "Shobai khushi.", "Everyone is happy."],
+            ["{সব} টাকা শেষ।", "Shob taka shesh.", "All the money is gone."]
+          ]
+        },
+        {
+          "h": "প্রত্যেক and the negative",
+          "p": "<b>প্রত্যেক</b> + classifier = each: <b>প্রত্যেকটা</b> ঘর, <b>প্রত্যেকে</b> (each person). Not anyone is কেউ … না: <b>কেউ</b> আসেনি.",
+          "examples": [
+            [
+              "{প্রত্যেকে} একটা করে নাও।",
+              "Protyeke ekta kore nao.",
+              "Each person, take one."
+            ],
+            [
+              "আমি {সবকিছু} বুঝেছি।",
+              "Ami shobkichhu bujhechhi.",
+              "I've understood everything."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ জানে।",
+          "en": "Everyone knows.",
+          "options": ["সবাই", "সব", "প্রত্যেক", "কিছু"],
+          "answer": "সবাই",
+          "why": "everyone: সবাই."
+        },
+        {
+          "q": "＿ দিন আমি হাঁটি।",
+          "en": "I walk every day.",
+          "options": ["সবাই", "প্রতি", "কেউ", "সবকিছু"],
+          "answer": "প্রতি",
+          "why": "every (with time): প্রতি দিন."
+        },
+        {
+          "q": "＿ খেয়ে ফেলেছি।",
+          "en": "I've eaten everything.",
+          "options": ["সবাই", "প্রত্যেকে", "সবকিছু", "কেউ"],
+          "answer": "সবকিছু",
+          "why": "everything: সবকিছু."
+        },
+        {
+          "q": "＿ আসেনি।",
+          "en": "Nobody came.",
+          "options": ["সবাই", "সব", "প্রত্যেকে", "কেউ"],
+          "answer": "কেউ",
+          "why": "nobody: কেউ + negative."
+        },
+        {
+          "q": "＿ ছাত্রকে একটা বই দাও।",
+          "en": "Give each student a book.",
+          "options": ["প্রত্যেক", "সবাই", "সবকিছু", "কেউ"],
+          "answer": "প্রত্যেক",
+          "why": "each: প্রত্যেক."
+        }
+      ]
+    },
+    {
+      "id": "know-how",
+      "title": "Can and know how: পারা and জানা",
+      "particle": "-তে পারা・-তে জানা",
+      "summary": "-তে পারা is \"be able to\"; -তে জানা is \"know how to\" a skill. পারা alone also means \"manage, be good at\". (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Skills you've learned take <b>জানা</b>: আমি সাঁতার কাটতে <b>জানি</b> (I know how to swim). Being able right now takes <b>পারা</b>: আজ আসতে <b>পারব না</b> (I can't come today).",
+          "examples": [
+            [
+              "তুমি গাড়ি চালাতে {জানো}?",
+              "Tumi gari chalate jano?",
+              "Do you know how to drive?"
+            ],
+            [
+              "আমি রান্না করতে {পারি}।",
+              "Ami ranna korte pari.",
+              "I can cook."
+            ]
+          ]
+        },
+        {
+          "h": "Not knowing, not managing",
+          "p": "<b>জানি না</b> = I don't know (a fact). <b>পারি না</b> = I can't. <b>পারলাম না</b> = I couldn't (didn't manage). For a language: আমি বাংলা <b>জানি</b> or বাংলা বলতে <b>পারি</b>.",
+          "examples": [
+            [
+              "আমি গান গাইতে {জানি না}।",
+              "Ami gan gaite jani na.",
+              "I don't know how to sing."
+            ],
+            [
+              "অনেক চেষ্টা করেও খুলতে {পারলাম না}।",
+              "Onek chesta koreo khulte parlam na.",
+              "Even after trying hard, I couldn't open it."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "সে তিনটে ভাষা ＿।",
+          "en": "She knows three languages.",
+          "options": ["জানে", "দেখে", "চায়", "থাকে"],
+          "answer": "জানে",
+          "why": "Knowing a language: জানা."
+        },
+        {
+          "q": "কাল আমি আসতে ＿ না।",
+          "en": "I won't be able to come tomorrow.",
+          "options": ["জানব", "পারব", "চাইব", "থাকব"],
+          "answer": "পারব",
+          "why": "Ability in a situation: পারা."
+        },
+        {
+          "q": "তুমি সাইকেল চালাতে ＿?",
+          "en": "Do you know how to ride a bike?",
+          "options": ["জানাও", "চালাও", "জানো", "পাও"],
+          "answer": "জানো",
+          "why": "Skill: -তে জানা."
+        },
+        {
+          "q": "দরজাটা খুলতে ＿ না।",
+          "en": "I couldn't open the door.",
+          "options": ["জানলাম", "হলাম", "গেলাম", "পারলাম"],
+          "answer": "পারলাম",
+          "why": "Didn't manage: পারলাম না."
+        },
+        {
+          "q": "ওর নাম আমি ＿ না।",
+          "en": "I don't know his name.",
+          "options": ["জানি", "পারি", "চাই", "থাকি"],
+          "answer": "জানি",
+          "why": "Knowing a fact: জানি না."
+        }
+      ]
+    },
+    {
+      "id": "past-perfect",
+      "title": "Had done: করেছিলাম",
+      "particle": "-এছিলাম",
+      "summary": "-এছিলাম means had done, or a more remote past. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Perfective stem + <b>-ছিলাম / -ছিলে / -ছিলেন / -ছিল</b>: আমি <b>গিয়েছিলাম</b> (I had gone, I went [some time ago]). It is often used simply for the more distant past.",
+          "examples": [
+            [
+              "আমি গত বছর ভারতে {গিয়েছিলাম}।",
+              "Ami goto bochhor Bharote giyechhilam.",
+              "I went to India last year."
+            ],
+            [
+              "আমি পৌঁছনোর আগেই সে {চলে গিয়েছিল}।",
+              "Ami pounchhonor agei shey chole giyechhilo.",
+              "He had left before I arrived."
+            ]
+          ]
+        },
+        {
+          "h": "Negative",
+          "p": "The negative of both perfects is the present + <b>নি</b>: আমি যাই<b>নি</b> (I didn't go / haven't gone).",
+          "examples": [
+            [
+              "আমি ছবিটা {দেখিনি}।",
+              "Ami chhobita dekhini.",
+              "I haven't seen the film."
+            ],
+            [
+              "সে কিছু {বলেনি}।",
+              "Shey kichhu boleni.",
+              "He didn't say anything."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "আমি ছোটবেলায় একবার সেখানে ＿।",
+          "en": "I went there once as a child.",
+          "options": ["গিয়েছিলাম", "যাচ্ছি", "যাব", "যাই"],
+          "answer": "গিয়েছিলাম",
+          "why": "Remote past: -ছিলাম."
+        },
+        {
+          "q": "তুমি কি আগে এটা ＿?",
+          "en": "Had you seen this before?",
+          "options": ["দেখছিলে", "দেখেছিলে", "দেখবে", "দেখো"],
+          "answer": "দেখেছিলে",
+          "why": "তুমি: -ছিলে."
+        },
+        {
+          "q": "আমি ＿।",
+          "en": "I didn't go.",
+          "options": ["গেলাম না নি", "যাব না", "যাইনি", "না গেছি"],
+          "answer": "যাইনি",
+          "why": "Negative past: present + নি."
+        },
+        {
+          "q": "সে কাজটা ＿।",
+          "en": "He didn't do the work.",
+          "options": ["করেছিল না নি", "করবে না", "না করেছে", "করেনি"],
+          "answer": "করেনি",
+          "why": "-নি."
+        },
+        {
+          "q": "তিনি ১৯৭১ সালে ＿।",
+          "en": "He was born in 1971.",
+          "options": ["জন্মেছিলেন", "জন্মাচ্ছেন", "জন্মাবেন", "জন্মান"],
+          "answer": "জন্মেছিলেন",
+          "why": "Respectful remote past."
+        }
+      ]
+    },
+    {
+      "id": "verbal-noun",
+      "title": "Verbal nouns: যাওয়া, খাওয়া, করা",
+      "particle": "-আ・-ওয়া・-নো",
+      "summary": "The verbal noun names the action; it takes case endings and classifiers like a noun. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Verbal nouns end in <b>-আ</b> (করা, দেখা, লেখা), <b>-ওয়া</b> (খাওয়া, যাওয়া, দেওয়া) or <b>-নো</b> (ঘুমোনো, শেখানো). They act as nouns: <b>সাঁতার কাটা</b> ভালো ব্যায়াম.",
+          "examples": [
+            [
+              "{ধূমপান করা} নিষেধ।",
+              "Dhumpan kora nishedh.",
+              "Smoking is prohibited."
+            ],
+            [
+              "{খাওয়ার} আগে হাত ধোও।",
+              "Khaoar age hat dhoo.",
+              "Wash your hands before eating."
+            ]
+          ]
+        },
+        {
+          "h": "With case endings",
+          "p": "Genitive <b>-র</b>: খাওয়া<b>র</b> পরে (after eating), যাওয়া<b>র</b> সময় (when leaving). Locative <b>-য়/-তে</b>: আসা<b>য়</b> দেরি হল (there was a delay in coming).",
+          "examples": [
+            [
+              "{ঘুমোনোর} আগে বই পড়ি।",
+              "Ghumonor age boi pori.",
+              "I read before sleeping."
+            ],
+            [
+              "আমার {যাওয়ার} ইচ্ছে নেই।",
+              "Amar jaoar ichchhe nei.",
+              "I have no wish to go."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ পরে বিশ্রাম নাও।",
+          "en": "Rest after eating.",
+          "options": ["খাওয়ার", "খেয়ে পরে", "খাই", "খাব"],
+          "answer": "খাওয়ার",
+          "why": "Verbal noun + -র."
+        },
+        {
+          "q": "এখানে ছবি ＿ নিষেধ।",
+          "en": "Taking photos here is prohibited.",
+          "options": ["তুলি", "তোলা", "তুলে", "তুলবে"],
+          "answer": "তোলা",
+          "why": "Verbal noun."
+        },
+        {
+          "q": "বাংলা ＿ সহজ নয়।",
+          "en": "Learning Bengali isn't easy.",
+          "options": ["শিখি", "শিখে", "শেখা", "শিখবে"],
+          "answer": "শেখা",
+          "why": "Verbal noun as subject."
+        },
+        {
+          "q": "＿ সময় দরজা বন্ধ কোরো।",
+          "en": "Close the door when you leave.",
+          "options": ["যেয়ে", "যাই", "যাবে", "যাওয়ার"],
+          "answer": "যাওয়ার",
+          "why": "Verbal noun + -র সময়."
+        },
+        {
+          "q": "ঘুমো＿ আগে দাঁত মাজো।",
+          "en": "Brush your teeth before sleeping.",
+          "options": ["নোর", "তে", "য়ে", "লাম"],
+          "answer": "নোর",
+          "why": "-নো + -র."
         }
       ]
     },
@@ -2564,83 +3298,6 @@
       ]
     },
     {
-      "id": "comparatives",
-      "title": "Comparing: চেয়ে, সবচেয়ে",
-      "particle": "X-এর চেয়ে・সবচেয়ে",
-      "summary": "Than is -র চেয়ে (or -র থেকে); the most is সবচেয়ে. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "X<b>-এর চেয়ে</b> + adjective = more than X: রাম শ্যামের <b>চেয়ে</b> লম্বা. Add <b>বেশি</b> (more) or <b>কম</b> (less) for clarity: এটা ওটার চেয়ে <b>বেশি</b> দামি.",
-          "examples": [
-            [
-              "ঢাকা চট্টগ্রামের {চেয়ে} বড়।",
-              "Dhaka Chottogramer cheye boro.",
-              "Dhaka is bigger than Chittagong."
-            ],
-            [
-              "আমি তোমার {থেকে} লম্বা।",
-              "Ami tomar theke lomba.",
-              "I'm taller than you."
-            ]
-          ]
-        },
-        {
-          "h": "সবচেয়ে",
-          "p": "<b>সবচেয়ে</b> + adjective = the most: <b>সবচেয়ে</b> ভালো (the best), ক্লাসের <b>সবচেয়ে</b> লম্বা ছেলে.",
-          "examples": [
-            [
-              "এটা শহরের {সবচেয়ে} পুরনো বাড়ি।",
-              "Eta shohorer shobcheye purono bari.",
-              "This is the oldest building in the city."
-            ],
-            [
-              "আম আমার {সবচেয়ে} প্রিয় ফল।",
-              "Am amar shobcheye priyo phol.",
-              "Mango is my favourite fruit."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "আমার ভাই আমার ＿ ছোট।",
-          "en": "My brother is younger than me.",
-          "options": ["চেয়ে", "সবচেয়ে", "মতো", "জন্য"],
-          "answer": "চেয়ে",
-          "why": "than: চেয়ে."
-        },
-        {
-          "q": "এটা ＿ ভালো রেস্তোরাঁ।",
-          "en": "This is the best restaurant.",
-          "options": ["চেয়ে", "সবচেয়ে", "বেশি চেয়ে", "খুব চেয়ে"],
-          "answer": "সবচেয়ে",
-          "why": "most: সবচেয়ে."
-        },
-        {
-          "q": "চা কফির চেয়ে ＿ সস্তা।",
-          "en": "Tea is cheaper than coffee.",
-          "options": ["সবচেয়ে", "চেয়ে", "বেশি", "খুব চেয়ে"],
-          "answer": "বেশি",
-          "why": "more: বেশি."
-        },
-        {
-          "q": "সে ＿ চেয়ে ভালো গায়।",
-          "en": "She sings better than me.",
-          "options": ["আমি", "আমাকে", "আমরা", "আমার"],
-          "answer": "আমার",
-          "why": "-র চেয়ে."
-        },
-        {
-          "q": "এটা দেশের সবচেয়ে বড় ＿।",
-          "en": "This is the country's biggest river.",
-          "options": ["নদী", "নদীর", "নদীকে", "নদীতে"],
-          "answer": "নদী",
-          "why": "Noun after adjective."
-        }
-      ]
-    },
-    {
       "id": "particles",
       "title": "Emphasis: -ই, -ও",
       "particle": "-ই・-ও",
@@ -2775,71 +3432,6 @@
           "options": ["কোথাও", "কখনো", "কেউ", "কিছু"],
           "answer": "কোথাও",
           "why": "anywhere: কোথাও."
-        }
-      ]
-    },
-    {
-      "id": "negative-past",
-      "title": "Didn't: যাইনি, খাইনি",
-      "particle": "present + নি",
-      "summary": "The negative of the past and perfect is the present form + নি: আমি যাইনি (I didn't go). (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "Don't say \"গেলাম না\" for a simple past negative. Use the present + <b>নি</b>: আমি <b>যাইনি</b>, তুমি <b>যাওনি</b>, আপনি <b>যাননি</b>, সে <b>যায়নি</b>.",
-          "examples": [
-            [
-              "আমি আজ অফিসে {যাইনি}।",
-              "Ami aj ofishe jaini.",
-              "I didn't go to the office today."
-            ],
-            ["তুমি কি খাওনি?", "Tumi ki khaoni?", "Haven't you eaten?"]
-          ]
-        },
-        {
-          "h": "Other negatives",
-          "p": "<b>না</b> goes after other verbs: যাব <b>না</b> (won't go), যাচ্ছি <b>না</b>, যেতাম <b>না</b>. <b>নি</b> is only for the simple past and perfect.",
-          "examples": [
-            ["আমি কাল {যাব না}।", "Ami kal jabo na.", "I won't go tomorrow."],
-            ["সে {ফোন করেনি}।", "Shey phon koreni.", "He didn't call."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "আমি তাকে ＿।",
-          "en": "I didn't see him.",
-          "options": ["দেখিনি", "দেখলাম নি", "দেখব নি", "না দেখি"],
-          "answer": "দেখিনি",
-          "why": "Past negative: present + নি."
-        },
-        {
-          "q": "তুমি কেন ＿?",
-          "en": "Why didn't you come?",
-          "options": ["এলে নি", "আসোনি", "আসবে না নি", "না এলে নি"],
-          "answer": "আসোনি",
-          "why": "তুমি: আসো + নি."
-        },
-        {
-          "q": "আপনি কি চা ＿?",
-          "en": "Didn't you have tea? (polite)",
-          "options": ["খাওনি", "খায়নি", "খাননি", "খাইনি"],
-          "answer": "খাননি",
-          "why": "আপনি: -েন + নি."
-        },
-        {
-          "q": "কাল আমি ＿।",
-          "en": "I won't come tomorrow.",
-          "options": ["আসিনি", "আসবনি না", "না আসলাম", "আসব না"],
-          "answer": "আসব না",
-          "why": "Future negative: না."
-        },
-        {
-          "q": "সে কিছু ＿।",
-          "en": "She didn't say anything.",
-          "options": ["বলেনি", "বলল না নি", "বলবে নি", "বলিনি"],
-          "answer": "বলেনি",
-          "why": "সে: বলে + নি."
         }
       ]
     },
@@ -2994,160 +3586,6 @@
           "options": ["পড়ল", "ফেলল", "দিল", "উঠল"],
           "answer": "পড়ল",
           "why": "পড়া: lying down."
-        }
-      ]
-    },
-    {
-      "id": "causatives",
-      "title": "Causatives: করানো, খাওয়ানো, দেখানো",
-      "particle": "-আনো",
-      "summary": "Adding -আনো makes \"cause to do\": দেখা (see) → দেখানো (show), খাওয়া → খাওয়ানো (feed). (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "<b>-আনো</b> verbs: <b>দেখানো</b> (show), <b>শেখানো</b> (teach), <b>খাওয়ানো</b> (feed), <b>শোনানো</b> (tell, make hear), <b>করানো</b> (get done). They conjugate regularly: আমি দেখাই, দেখালাম, দেখাব.",
-          "examples": [
-            [
-              "আমাকে ছবিগুলো {দেখাও}।",
-              "Amake chhobigulo dekhao.",
-              "Show me the photos."
-            ],
-            [
-              "মা বাচ্চাকে {খাওয়াচ্ছেন}।",
-              "Ma bachchake khaoachchhen.",
-              "Mother is feeding the child."
-            ]
-          ]
-        },
-        {
-          "h": "The person made to act",
-          "p": "The person who does the work takes <b>-কে দিয়ে</b>: আমি মিস্ত্রি<b>কে দিয়ে</b> দরজাটা ঠিক <b>করিয়েছি</b> (I had the carpenter fix the door).",
-          "examples": [
-            [
-              "সে স্কুলে বাংলা {শেখায়}।",
-              "Shey skule bangla shekhay.",
-              "She teaches Bengali at a school."
-            ],
-            [
-              "দর্জিকে দিয়ে জামাটা {বানিয়েছি}।",
-              "Dorjike diye jamata baniyechhi.",
-              "I had the tailor make the shirt."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "শেখা → ＿",
-          "en": "learn → teach",
-          "options": ["শেখানো", "শিখিয়ে", "শেখা দেওয়া", "শিখানো হওয়া"],
-          "answer": "শেখানো",
-          "why": "Causative: -আনো."
-        },
-        {
-          "q": "আমাকে রাস্তাটা ＿।",
-          "en": "Show me the way.",
-          "options": ["দেখো", "দেখাও", "দেখাই", "দেখলাম"],
-          "answer": "দেখাও",
-          "why": "Causative imperative."
-        },
-        {
-          "q": "দাদু আমাদের গল্প ＿।",
-          "en": "Grandpa used to tell us stories.",
-          "options": ["শুনতেন", "শোনাল নি", "শোনাতেন", "শুনিয়ে"],
-          "answer": "শোনাতেন",
-          "why": "শোনানো, habitual respectful."
-        },
-        {
-          "q": "আমি নাপিত＿ চুল কাটিয়েছি।",
-          "en": "I had my hair cut by the barber.",
-          "options": ["কে থেকে", "র জন্য", "তে", "কে দিয়ে"],
-          "answer": "কে দিয়ে",
-          "why": "-কে দিয়ে."
-        },
-        {
-          "q": "মা শিশুকে দুধ ＿।",
-          "en": "Mother is feeding milk to the baby.",
-          "options": ["খাওয়াচ্ছেন", "খাচ্ছেন", "খেলেন না", "খাওয়ানো"],
-          "answer": "খাওয়াচ্ছেন",
-          "why": "Present progressive causative."
-        }
-      ]
-    },
-    {
-      "id": "passive",
-      "title": "The passive: করা হয়",
-      "particle": "verbal noun + হওয়া",
-      "summary": "The passive is verbal noun + হওয়া: এখানে বাংলা বলা হয় (Bengali is spoken here). (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "Verbal noun + a form of <b>হওয়া</b>: <b>বলা হয়</b> (is said), <b>করা হয়েছে</b> (has been done), <b>দেখা গেল</b> (was seen; with যাওয়া). The agent, if any, takes <b>দ্বারা</b> or <b>-কে দিয়ে</b>.",
-          "examples": [
-            [
-              "এখানে বাংলা {বলা হয়}।",
-              "Ekhane bangla bola hoy.",
-              "Bengali is spoken here."
-            ],
-            [
-              "কাজটা {করা হয়েছে}।",
-              "Kajta kora hoyechhe.",
-              "The work has been done."
-            ]
-          ]
-        },
-        {
-          "h": "যাওয়া for possibility",
-          "p": "Verbal noun + <b>যায়</b> = can be, it's possible: এখান থেকে পাহাড় <b>দেখা যায়</b> (the hills can be seen from here). Negative: <b>যায় না</b>.",
-          "examples": [
-            [
-              "এখান থেকে সমুদ্র {দেখা যায়}।",
-              "Ekhan theke shomudro dekha jay.",
-              "You can see the sea from here."
-            ],
-            [
-              "এটা {খাওয়া যায় না}।",
-              "Eta khaoa jay na.",
-              "This can't be eaten."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "সেতুটা ১৯৯০ সালে তৈরি ＿।",
-          "en": "The bridge was built in 1990.",
-          "options": ["করা হয়েছিল", "করেছিল হয়", "হয়েছিলাম", "করছিল"],
-          "answer": "করা হয়েছিল",
-          "why": "Passive: করা হয়েছিল."
-        },
-        {
-          "q": "বলা ＿ যে তিনি খুব ধনী।",
-          "en": "It's said that he is very rich.",
-          "options": ["যায় না", "হয়", "হল না", "করে"],
-          "answer": "হয়",
-          "why": "বলা হয়."
-        },
-        {
-          "q": "এখান থেকে চাঁদ দেখা ＿।",
-          "en": "The moon can be seen from here.",
-          "options": ["হয় না", "করে", "যায়", "হল"],
-          "answer": "যায়",
-          "why": "Possibility: যায়."
-        },
-        {
-          "q": "এই জল খাওয়া যায় ＿।",
-          "en": "This water isn't drinkable.",
-          "options": ["নি", "নয় না", "নেই না", "না"],
-          "answer": "না",
-          "why": "যায় না."
-        },
-        {
-          "q": "চিঠিটা পাঠানো ＿।",
-          "en": "The letter has been sent.",
-          "options": ["হয়েছে", "করেছে", "গেছি", "হচ্ছি"],
-          "answer": "হয়েছে",
-          "why": "Perfect passive."
         }
       ]
     },
@@ -3525,83 +3963,6 @@
       ]
     },
     {
-      "id": "thaka",
-      "title": "থাকা: stay, live, be",
-      "particle": "থাকা・থাকি",
-      "summary": "থাকা means stay, live, or remain; it supplies forms আছে lacks, like the future থাকবে. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>থাকা</b> = live, stay: আমি ঢাকায় <b>থাকি</b>. It also gives আছে its missing tenses: future <b>থাকবে</b> (will be [there]), habitual <b>থাকে</b> (is usually).",
-          "examples": [
-            [
-              "আপনি কোথায় {থাকেন}?",
-              "Apni kothay thaken?",
-              "Where do you live?"
-            ],
-            [
-              "কাল আমি বাড়িতে {থাকব}।",
-              "Kal ami barite thakbo.",
-              "I'll be at home tomorrow."
-            ]
-          ]
-        },
-        {
-          "h": "আছে, ছিল, থাকবে",
-          "p": "Location and existence: <b>আছে</b> (is, now), <b>ছিল</b> (was), <b>থাকবে</b> (will be), <b>থাকে</b> (usually is): সে সাধারণত অফিসে <b>থাকে</b>.",
-          "examples": [
-            [
-              "বাবা এখন অফিসে {আছেন}।",
-              "Baba ekhon ofishe achhen.",
-              "Dad is at the office now."
-            ],
-            [
-              "সকালে দোকানটা খোলা {থাকে}।",
-              "Shokale dokanta khola thake.",
-              "The shop is usually open in the morning."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "তুমি কোথায় ＿?",
-          "en": "Where do you live?",
-          "options": ["থাকো", "আছ", "ছিলে", "থাকল"],
-          "answer": "থাকো",
-          "why": "Live: থাকা."
-        },
-        {
-          "q": "কাল আমি এখানে ＿।",
-          "en": "I'll be here tomorrow.",
-          "options": ["আছি", "থাকব", "ছিলাম", "আছে"],
-          "answer": "থাকব",
-          "why": "Future of \"be there\": থাকব."
-        },
-        {
-          "q": "ও এখন বাড়িতে ＿।",
-          "en": "He's at home now.",
-          "options": ["থাকে", "থাকবে", "আছে", "ছিলাম"],
-          "answer": "আছে",
-          "why": "Now: আছে."
-        },
-        {
-          "q": "গতকাল আমি অসুস্থ ＿।",
-          "en": "I was ill yesterday.",
-          "options": ["থাকব", "আছি", "থাকি", "ছিলাম"],
-          "answer": "ছিলাম",
-          "why": "Past: ছিলাম."
-        },
-        {
-          "q": "রবিবারে দোকান বন্ধ ＿।",
-          "en": "The shop is (usually) closed on Sundays.",
-          "options": ["থাকে", "আছে", "ছিল", "থাকবে না"],
-          "answer": "থাকে",
-          "why": "Habitual: থাকে."
-        }
-      ]
-    },
-    {
       "id": "dates-ordinals",
       "title": "Ordinals and dates: প্রথম, পয়লা",
       "particle": "প্রথম・দ্বিতীয়・পয়লা・তারিখ",
@@ -3671,521 +4032,6 @@
           "options": ["সালে", "বছরকে", "সালটা", "তারিখ"],
           "answer": "সালে",
           "why": "Year: সালে."
-        }
-      ]
-    },
-    {
-      "id": "question-words",
-      "title": "Question words: কে, কোথায়, কখন, কেন",
-      "particle": "কে・কী・কোথায়・কখন・কেন・কীভাবে",
-      "summary": "Content questions use কে (who), কী (what), কোথায় (where), কখন (when), কেন (why) and কীভাবে (how), usually just before the verb. (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "Bengali doesn't move the question word to the front. It sits where the answer would go, often just before the verb: তুমি <b>কোথায়</b> যাচ্ছ? (where are you going?).",
-          "examples": [
-            ["তোমার নাম {কী}?", "Tomar nam ki?", "What's your name?"],
-            [
-              "তুমি {কোথায়} থাকো?",
-              "Tumi kothay thako?",
-              "Where do you live?"
-            ]
-          ]
-        },
-        {
-          "h": "More question words",
-          "p": "<b>কখন</b> (when), <b>কেন</b> (why), <b>কীভাবে</b> or <b>কেমন করে</b> (how), <b>কেমন</b> (how, what kind), <b>কত</b> (how much), <b>কোন</b> (which), <b>কার</b> (whose).",
-          "examples": [
-            [
-              "তুমি {কেন} দেরি করলে?",
-              "Tumi keno deri korle?",
-              "Why were you late?"
-            ],
-            ["এটার দাম {কত}?", "Etar dam koto?", "How much is this?"]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "উনি ＿?",
-          "en": "Who is he?",
-          "options": ["কে", "কী", "কোথায়", "কখন"],
-          "answer": "কে",
-          "why": "who: কে."
-        },
-        {
-          "q": "ট্রেন ＿ ছাড়বে?",
-          "en": "When will the train leave?",
-          "options": ["কে", "কখন", "কেন", "কার"],
-          "answer": "কখন",
-          "why": "when: কখন."
-        },
-        {
-          "q": "তুমি ＿ আছ?",
-          "en": "How are you?",
-          "options": ["কত", "কে", "কেমন", "কোথায়"],
-          "answer": "কেমন",
-          "why": "how (in what state): কেমন."
-        },
-        {
-          "q": "এটা ＿ বই?",
-          "en": "Whose book is this?",
-          "options": ["কে", "কেন", "কখন", "কার"],
-          "answer": "কার",
-          "why": "whose: কার."
-        },
-        {
-          "q": "তুমি ＿ রঙ পছন্দ করো?",
-          "en": "Which colour do you like?",
-          "options": ["কোন", "কে", "কেন", "কত"],
-          "answer": "কোন",
-          "why": "which: কোন + noun."
-        }
-      ]
-    },
-    {
-      "id": "quantities",
-      "title": "How much: অনেক, একটু, কম, বেশি",
-      "particle": "অনেক・একটু・কম・বেশি・কিছু",
-      "summary": "অনেক (a lot), একটু (a little), কম (less, few) and বেশি (more, too much) go before nouns or describe verbs. (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>অনেক</b> = many, much: <b>অনেক</b> লোক. <b>একটু</b> = a little: <b>একটু</b> জল. With counted things, a classifier often follows the number word: <b>কয়েকটা</b> বই (a few books).",
-          "examples": [
-            [
-              "আজ {অনেক} কাজ আছে।",
-              "Aj onek kaj achhe.",
-              "There's a lot of work today."
-            ],
-            [
-              "{একটু} চিনি দিন।",
-              "Ektu chini din.",
-              "Please add a little sugar."
-            ]
-          ]
-        },
-        {
-          "h": "কম and বেশি",
-          "p": "<b>বেশি</b> = more, too much; <b>কম</b> = less, too little. <b>খুব</b> = very: <b>খুব</b> ভালো. <b>একটু</b> also softens a request: <b>একটু</b> দাঁড়ান (wait a moment, please).",
-          "examples": [
-            [
-              "ঝাল {বেশি} হয়ে গেছে।",
-              "Jhal beshi hoye gechhe.",
-              "It's become too spicy."
-            ],
-            [
-              "আমার কাছে টাকা {কম} আছে।",
-              "Amar kachhe taka kom achhe.",
-              "I have little money on me."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ক্লাসে ＿ ছাত্র আছে।",
-          "en": "There are a lot of students in the class.",
-          "options": ["অনেক", "একটু", "কম", "কোন"],
-          "answer": "অনেক",
-          "why": "a lot: অনেক."
-        },
-        {
-          "q": "＿ অপেক্ষা করুন।",
-          "en": "Please wait a little.",
-          "options": ["অনেক", "একটু", "বেশি", "খুব"],
-          "answer": "একটু",
-          "why": "a little: একটু."
-        },
-        {
-          "q": "লবণ ＿ দিও না।",
-          "en": "Don't put in too much salt.",
-          "options": ["কম", "একটু", "বেশি", "কোন"],
-          "answer": "বেশি",
-          "why": "too much: বেশি."
-        },
-        {
-          "q": "ছবিটা ＿ সুন্দর।",
-          "en": "The picture is very beautiful.",
-          "options": ["কম", "একটু", "অনেকটা", "খুব"],
-          "answer": "খুব",
-          "why": "very: খুব."
-        },
-        {
-          "q": "＿টা বই কিনলাম।",
-          "en": "I bought a few books.",
-          "options": ["কয়েক", "কিছু", "একটু", "বেশি"],
-          "answer": "কয়েক",
-          "why": "a few + classifier: কয়েকটা."
-        }
-      ]
-    },
-    {
-      "id": "kinship-address",
-      "title": "Addressing people: দাদা, দিদি, -বাবু",
-      "particle": "দাদা・দিদি・কাকু・মাসি・-বাবু",
-      "summary": "Bengalis address others with kinship words (দাদা, দিদি, কাকু, মাসিমা) or with -বাবু and -দা added to a name. (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "An older man of your generation is <b>দাদা</b> (big brother), an older woman <b>দিদি</b>. Short forms attach to names: অমিত<b>দা</b>, রিনা<b>দি</b>. Older men can be <b>কাকু</b> (uncle), older women <b>মাসিমা</b> or <b>কাকিমা</b>.",
-          "examples": [
-            [
-              "{দাদা}, স্টেশনটা কোথায়?",
-              "Dada, steshonta kothay?",
-              "Excuse me (brother), where's the station?"
-            ],
-            [
-              "{দিদি}, একটু জল দেবেন?",
-              "Didi, ektu jol deben?",
-              "Ma'am (sister), could you give me some water?"
-            ]
-          ]
-        },
-        {
-          "h": "Titles with names",
-          "p": "<b>-বাবু</b> (for men) and <b>-দি</b> or <b>ম্যাডাম</b> follow a name for respect at work: রায়<b>বাবু</b>. Formal: <b>শ্রী</b> before a man's name, <b>শ্রীমতী</b> before a married woman's.",
-          "examples": [
-            [
-              "{সেনবাবু} আজ আসবেন না।",
-              "Senbabu aj ashben na.",
-              "Mr Sen won't come today."
-            ],
-            [
-              "অমিত{দা} ফোন করেছিল।",
-              "Amitda phon korechhilo.",
-              "Amit-da called."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿, এই বাসটা কি হাওড়া যাবে?",
-          "en": "Excuse me (to an older man), does this bus go to Howrah?",
-          "options": ["দাদা", "দিদি", "বোন", "ভাই"],
-          "answer": "দাদা",
-          "why": "older man: দাদা."
-        },
-        {
-          "q": "রিনা＿, কেমন আছ?",
-          "en": "Rina-di, how are you?",
-          "options": ["দা", "দি", "বাবু", "কাকু"],
-          "answer": "দি",
-          "why": "older woman: -দি."
-        },
-        {
-          "q": "＿, ভালো আছেন?",
-          "en": "Auntie, are you well?",
-          "options": ["দাদা", "ভাই", "মাসিমা", "কাকু"],
-          "answer": "মাসিমা",
-          "why": "older woman, a generation up: মাসিমা."
-        },
-        {
-          "q": "ঘোষ＿ অফিসে আছেন।",
-          "en": "Mr Ghosh is in the office.",
-          "options": ["দি", "মাসি", "বোন", "বাবু"],
-          "answer": "বাবু",
-          "why": "Surname + -বাবু."
-        },
-        {
-          "q": "＿, চা খাবে?",
-          "en": "Little brother, will you have tea?",
-          "options": ["ভাই", "দাদা", "দিদি", "মাসিমা"],
-          "answer": "ভাই",
-          "why": "younger man: ভাই."
-        }
-      ]
-    },
-    {
-      "id": "tag-particles",
-      "title": "Tags: তো, না, তাই না, নাকি",
-      "particle": "তো・না・তাই না・নাকি",
-      "summary": "Little words at the end of a sentence add feeling: তো (after all, well), না? (right?), তাই না? (isn't it?), নাকি (or is it?, I hear). (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>তাই না?</b> and <b>না?</b> ask for agreement: আজ ছুটি, <b>তাই না?</b> <b>তো</b> adds \"after all\" or \"then\": আমি <b>তো</b> বলেছিলাম (but I did tell you). In requests তো softens: বলো <b>তো</b> (go on, tell me).",
-          "examples": [
-            [
-              "তুমি বাঙালি, {তাই না}?",
-              "Tumi Bangali, tai na?",
-              "You're Bengali, aren't you?"
-            ],
-            [
-              "আমি {তো} আগেই বলেছিলাম।",
-              "Ami to agei bolechhilam.",
-              "But I told you already."
-            ]
-          ]
-        },
-        {
-          "h": "নাকি",
-          "p": "<b>নাকি</b> at the end means \"or what?\" or \"is it so?\": যাবে <b>নাকি</b>? (are you going, or not?). Inside a sentence it reports hearsay: সে <b>নাকি</b> বিয়ে করছে (apparently he's getting married).",
-          "examples": [
-            ["চা খাবে {নাকি}?", "Cha khabe naki?", "Want some tea?"],
-            [
-              "ও {নাকি} চাকরি ছেড়ে দিয়েছে।",
-              "O naki chakri chhere diyechhe.",
-              "Apparently she's quit her job."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "আজ খুব গরম, ＿?",
-          "en": "It's very hot today, isn't it?",
-          "options": ["তাই না", "তো", "কিনা", "কেন"],
-          "answer": "তাই না",
-          "why": "Asking for agreement: তাই না."
-        },
-        {
-          "q": "আমি ＿ জানতাম না!",
-          "en": "But I didn't know!",
-          "options": ["তাই না", "তো", "কি", "কেন"],
-          "answer": "তো",
-          "why": "Emphatic \"but, after all\": তো."
-        },
-        {
-          "q": "সে ＿ বিদেশে যাচ্ছে।",
-          "en": "Apparently he's going abroad.",
-          "options": ["তাই না", "তো", "নাকি", "কি"],
-          "answer": "নাকি",
-          "why": "Hearsay: নাকি."
-        },
-        {
-          "q": "একবার দেখো ＿!",
-          "en": "Just have a look!",
-          "options": ["নাকি", "কেন", "কি", "তো"],
-          "answer": "তো",
-          "why": "Softened request: … তো."
-        },
-        {
-          "q": "তুমি কাল আসবে, ＿?",
-          "en": "You'll come tomorrow, right?",
-          "options": ["না", "তো", "কেন", "কে"],
-          "answer": "না",
-          "why": "Short tag: না?"
-        }
-      ]
-    },
-    {
-      "id": "adverbs",
-      "title": "How you do it: -ভাবে, আস্তে, তাড়াতাড়ি",
-      "particle": "-ভাবে・আস্তে・তাড়াতাড়ি",
-      "summary": "Adverbs come before the verb. Many are made with -ভাবে (ভালোভাবে) or are adjectives used as they are. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>তাড়াতাড়ি</b> (quickly, early), <b>আস্তে</b> (slowly, softly), <b>জোরে</b> (loudly, hard), <b>ঠিকমতো</b> (properly). Put them just before the verb: <b>আস্তে</b> বলুন.",
-          "examples": [
-            [
-              "একটু {আস্তে} বলুন।",
-              "Ektu aste bolun.",
-              "Please speak a little more slowly."
-            ],
-            ["{তাড়াতাড়ি} এসো।", "Taratari esho.", "Come quickly."]
-          ]
-        },
-        {
-          "h": "-ভাবে",
-          "p": "<b>-ভাবে</b> (in the way of) turns an adjective into an adverb: <b>ভালোভাবে</b> (well), <b>সহজভাবে</b> (simply). <b>এভাবে</b> = like this, <b>কীভাবে</b> = how.",
-          "examples": [
-            [
-              "কাজটা {ভালোভাবে} করো।",
-              "Kajta bhalobhabe koro.",
-              "Do the work well."
-            ],
-            [
-              "{এভাবে} রান্না করতে হয়।",
-              "Ebhabe ranna korte hoy.",
-              "This is how you cook it."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "গাড়িটা খুব ＿ চলছে।",
-          "en": "The car is going very fast.",
-          "options": ["জোরে", "আস্তে", "ভালো", "কম"],
-          "answer": "জোরে",
-          "why": "fast, hard: জোরে."
-        },
-        {
-          "q": "বাচ্চা ঘুমাচ্ছে, ＿ কথা বলো।",
-          "en": "The baby is asleep, talk softly.",
-          "options": ["জোরে", "আস্তে", "তাড়াতাড়ি", "বেশি"],
-          "answer": "আস্তে",
-          "why": "softly: আস্তে."
-        },
-        {
-          "q": "প্রশ্নটা ＿ পড়ো।",
-          "en": "Read the question carefully.",
-          "options": ["মন থেকে", "মনের", "মন দিয়ে", "মনে"],
-          "answer": "মন দিয়ে",
-          "why": "carefully: মন দিয়ে."
-        },
-        {
-          "q": "আমি ＿ বুঝিয়ে বলছি।",
-          "en": "I'll explain it simply.",
-          "options": ["সহজ", "সহজের", "সহজটা", "সহজভাবে"],
-          "answer": "সহজভাবে",
-          "why": "-ভাবে adverb."
-        },
-        {
-          "q": "＿ এটা খুলব?",
-          "en": "How do I open this?",
-          "options": ["কীভাবে", "কেন", "কখন", "কোথায়"],
-          "answer": "কীভাবে",
-          "why": "how: কীভাবে."
-        }
-      ]
-    },
-    {
-      "id": "sob-protyek",
-      "title": "All and every: সব, সবাই, প্রত্যেক",
-      "particle": "সব・সবাই・প্রত্যেক・সবকিছু",
-      "summary": "সব = all (things), সবাই = everyone, প্রত্যেক = each, every, সবকিছু = everything. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>সব</b> goes before a noun: <b>সব</b> বই. <b>সবাই</b> stands alone for people: <b>সবাই</b> এসেছে. <b>সবকিছু</b> = everything, <b>সবখানে</b> or <b>সব জায়গায়</b> = everywhere.",
-          "examples": [
-            ["{সবাই} খুশি।", "Shobai khushi.", "Everyone is happy."],
-            ["{সব} টাকা শেষ।", "Shob taka shesh.", "All the money is gone."]
-          ]
-        },
-        {
-          "h": "প্রত্যেক and the negative",
-          "p": "<b>প্রত্যেক</b> + classifier = each: <b>প্রত্যেকটা</b> ঘর, <b>প্রত্যেকে</b> (each person). Not anyone is কেউ … না: <b>কেউ</b> আসেনি.",
-          "examples": [
-            [
-              "{প্রত্যেকে} একটা করে নাও।",
-              "Protyeke ekta kore nao.",
-              "Each person, take one."
-            ],
-            [
-              "আমি {সবকিছু} বুঝেছি।",
-              "Ami shobkichhu bujhechhi.",
-              "I've understood everything."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ জানে।",
-          "en": "Everyone knows.",
-          "options": ["সবাই", "সব", "প্রত্যেক", "কিছু"],
-          "answer": "সবাই",
-          "why": "everyone: সবাই."
-        },
-        {
-          "q": "＿ দিন আমি হাঁটি।",
-          "en": "I walk every day.",
-          "options": ["সবাই", "প্রতি", "কেউ", "সবকিছু"],
-          "answer": "প্রতি",
-          "why": "every (with time): প্রতি দিন."
-        },
-        {
-          "q": "＿ খেয়ে ফেলেছি।",
-          "en": "I've eaten everything.",
-          "options": ["সবাই", "প্রত্যেকে", "সবকিছু", "কেউ"],
-          "answer": "সবকিছু",
-          "why": "everything: সবকিছু."
-        },
-        {
-          "q": "＿ আসেনি।",
-          "en": "Nobody came.",
-          "options": ["সবাই", "সব", "প্রত্যেকে", "কেউ"],
-          "answer": "কেউ",
-          "why": "nobody: কেউ + negative."
-        },
-        {
-          "q": "＿ ছাত্রকে একটা বই দাও।",
-          "en": "Give each student a book.",
-          "options": ["প্রত্যেক", "সবাই", "সবকিছু", "কেউ"],
-          "answer": "প্রত্যেক",
-          "why": "each: প্রত্যেক."
-        }
-      ]
-    },
-    {
-      "id": "know-how",
-      "title": "Can and know how: পারা and জানা",
-      "particle": "-তে পারা・-তে জানা",
-      "summary": "-তে পারা is \"be able to\"; -তে জানা is \"know how to\" a skill. পারা alone also means \"manage, be good at\". (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "Skills you've learned take <b>জানা</b>: আমি সাঁতার কাটতে <b>জানি</b> (I know how to swim). Being able right now takes <b>পারা</b>: আজ আসতে <b>পারব না</b> (I can't come today).",
-          "examples": [
-            [
-              "তুমি গাড়ি চালাতে {জানো}?",
-              "Tumi gari chalate jano?",
-              "Do you know how to drive?"
-            ],
-            [
-              "আমি রান্না করতে {পারি}।",
-              "Ami ranna korte pari.",
-              "I can cook."
-            ]
-          ]
-        },
-        {
-          "h": "Not knowing, not managing",
-          "p": "<b>জানি না</b> = I don't know (a fact). <b>পারি না</b> = I can't. <b>পারলাম না</b> = I couldn't (didn't manage). For a language: আমি বাংলা <b>জানি</b> or বাংলা বলতে <b>পারি</b>.",
-          "examples": [
-            [
-              "আমি গান গাইতে {জানি না}।",
-              "Ami gan gaite jani na.",
-              "I don't know how to sing."
-            ],
-            [
-              "অনেক চেষ্টা করেও খুলতে {পারলাম না}।",
-              "Onek chesta koreo khulte parlam na.",
-              "Even after trying hard, I couldn't open it."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "সে তিনটে ভাষা ＿।",
-          "en": "She knows three languages.",
-          "options": ["জানে", "দেখে", "চায়", "থাকে"],
-          "answer": "জানে",
-          "why": "Knowing a language: জানা."
-        },
-        {
-          "q": "কাল আমি আসতে ＿ না।",
-          "en": "I won't be able to come tomorrow.",
-          "options": ["জানব", "পারব", "চাইব", "থাকব"],
-          "answer": "পারব",
-          "why": "Ability in a situation: পারা."
-        },
-        {
-          "q": "তুমি সাইকেল চালাতে ＿?",
-          "en": "Do you know how to ride a bike?",
-          "options": ["জানাও", "চালাও", "জানো", "পাও"],
-          "answer": "জানো",
-          "why": "Skill: -তে জানা."
-        },
-        {
-          "q": "দরজাটা খুলতে ＿ না।",
-          "en": "I couldn't open the door.",
-          "options": ["জানলাম", "হলাম", "গেলাম", "পারলাম"],
-          "answer": "পারলাম",
-          "why": "Didn't manage: পারলাম না."
-        },
-        {
-          "q": "ওর নাম আমি ＿ না।",
-          "en": "I don't know his name.",
-          "options": ["জানি", "পারি", "চাই", "থাকি"],
-          "answer": "জানি",
-          "why": "Knowing a fact: জানি না."
         }
       ]
     },
@@ -4863,6 +4709,160 @@
           "options": ["যাক", "চলো", "করুক", "দাও"],
           "answer": "যাক",
           "why": "Never mind: যাক গে."
+        }
+      ]
+    },
+    {
+      "id": "causatives",
+      "title": "Causatives: করানো, খাওয়ানো, দেখানো",
+      "particle": "-আনো",
+      "summary": "Adding -আনো makes \"cause to do\": দেখা (see) → দেখানো (show), খাওয়া → খাওয়ানো (feed). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>-আনো</b> verbs: <b>দেখানো</b> (show), <b>শেখানো</b> (teach), <b>খাওয়ানো</b> (feed), <b>শোনানো</b> (tell, make hear), <b>করানো</b> (get done). They conjugate regularly: আমি দেখাই, দেখালাম, দেখাব.",
+          "examples": [
+            [
+              "আমাকে ছবিগুলো {দেখাও}।",
+              "Amake chhobigulo dekhao.",
+              "Show me the photos."
+            ],
+            [
+              "মা বাচ্চাকে {খাওয়াচ্ছেন}।",
+              "Ma bachchake khaoachchhen.",
+              "Mother is feeding the child."
+            ]
+          ]
+        },
+        {
+          "h": "The person made to act",
+          "p": "The person who does the work takes <b>-কে দিয়ে</b>: আমি মিস্ত্রি<b>কে দিয়ে</b> দরজাটা ঠিক <b>করিয়েছি</b> (I had the carpenter fix the door).",
+          "examples": [
+            [
+              "সে স্কুলে বাংলা {শেখায়}।",
+              "Shey skule bangla shekhay.",
+              "She teaches Bengali at a school."
+            ],
+            [
+              "দর্জিকে দিয়ে জামাটা {বানিয়েছি}।",
+              "Dorjike diye jamata baniyechhi.",
+              "I had the tailor make the shirt."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "শেখা → ＿",
+          "en": "learn → teach",
+          "options": ["শেখানো", "শিখিয়ে", "শেখা দেওয়া", "শিখানো হওয়া"],
+          "answer": "শেখানো",
+          "why": "Causative: -আনো."
+        },
+        {
+          "q": "আমাকে রাস্তাটা ＿।",
+          "en": "Show me the way.",
+          "options": ["দেখো", "দেখাও", "দেখাই", "দেখলাম"],
+          "answer": "দেখাও",
+          "why": "Causative imperative."
+        },
+        {
+          "q": "দাদু আমাদের গল্প ＿।",
+          "en": "Grandpa used to tell us stories.",
+          "options": ["শুনতেন", "শোনাল নি", "শোনাতেন", "শুনিয়ে"],
+          "answer": "শোনাতেন",
+          "why": "শোনানো, habitual respectful."
+        },
+        {
+          "q": "আমি নাপিত＿ চুল কাটিয়েছি।",
+          "en": "I had my hair cut by the barber.",
+          "options": ["কে থেকে", "র জন্য", "তে", "কে দিয়ে"],
+          "answer": "কে দিয়ে",
+          "why": "-কে দিয়ে."
+        },
+        {
+          "q": "মা শিশুকে দুধ ＿।",
+          "en": "Mother is feeding milk to the baby.",
+          "options": ["খাওয়াচ্ছেন", "খাচ্ছেন", "খেলেন না", "খাওয়ানো"],
+          "answer": "খাওয়াচ্ছেন",
+          "why": "Present progressive causative."
+        }
+      ]
+    },
+    {
+      "id": "passive",
+      "title": "The passive: করা হয়",
+      "particle": "verbal noun + হওয়া",
+      "summary": "The passive is verbal noun + হওয়া: এখানে বাংলা বলা হয় (Bengali is spoken here). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Verbal noun + a form of <b>হওয়া</b>: <b>বলা হয়</b> (is said), <b>করা হয়েছে</b> (has been done), <b>দেখা গেল</b> (was seen; with যাওয়া). The agent, if any, takes <b>দ্বারা</b> or <b>-কে দিয়ে</b>.",
+          "examples": [
+            [
+              "এখানে বাংলা {বলা হয়}।",
+              "Ekhane bangla bola hoy.",
+              "Bengali is spoken here."
+            ],
+            [
+              "কাজটা {করা হয়েছে}।",
+              "Kajta kora hoyechhe.",
+              "The work has been done."
+            ]
+          ]
+        },
+        {
+          "h": "যাওয়া for possibility",
+          "p": "Verbal noun + <b>যায়</b> = can be, it's possible: এখান থেকে পাহাড় <b>দেখা যায়</b> (the hills can be seen from here). Negative: <b>যায় না</b>.",
+          "examples": [
+            [
+              "এখান থেকে সমুদ্র {দেখা যায়}।",
+              "Ekhan theke shomudro dekha jay.",
+              "You can see the sea from here."
+            ],
+            [
+              "এটা {খাওয়া যায় না}।",
+              "Eta khaoa jay na.",
+              "This can't be eaten."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "সেতুটা ১৯৯০ সালে তৈরি ＿।",
+          "en": "The bridge was built in 1990.",
+          "options": ["করা হয়েছিল", "করেছিল হয়", "হয়েছিলাম", "করছিল"],
+          "answer": "করা হয়েছিল",
+          "why": "Passive: করা হয়েছিল."
+        },
+        {
+          "q": "বলা ＿ যে তিনি খুব ধনী।",
+          "en": "It's said that he is very rich.",
+          "options": ["যায় না", "হয়", "হল না", "করে"],
+          "answer": "হয়",
+          "why": "বলা হয়."
+        },
+        {
+          "q": "এখান থেকে চাঁদ দেখা ＿।",
+          "en": "The moon can be seen from here.",
+          "options": ["হয় না", "করে", "যায়", "হল"],
+          "answer": "যায়",
+          "why": "Possibility: যায়."
+        },
+        {
+          "q": "এই জল খাওয়া যায় ＿।",
+          "en": "This water isn't drinkable.",
+          "options": ["নি", "নয় না", "নেই না", "না"],
+          "answer": "না",
+          "why": "যায় না."
+        },
+        {
+          "q": "চিঠিটা পাঠানো ＿।",
+          "en": "The letter has been sent.",
+          "options": ["হয়েছে", "করেছে", "গেছি", "হচ্ছি"],
+          "answer": "হয়েছে",
+          "why": "Perfect passive."
         }
       ]
     },

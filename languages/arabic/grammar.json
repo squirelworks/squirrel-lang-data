@@ -19,11 +19,11 @@
     "  for particle inventory only; wording and drills are original to this pack.",
     "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
     "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
-    "72 lessons, from A1 to C1. Lessons 13–72 were added to bring Arabic in line with the other full courses.",
+    "72 lessons, from A1 to C1. 60 lessons were added to bring Arabic in line with the other full courses.",
     "Transliteration shows short vowels and writes sun-letter assimilation as spoken."
   ],
   "title": "Arabic sentence basics",
-  "intro": "These lessons cover Modern Standard Arabic from the first sentence to formal written style. Lessons 1–12 cover ال, gender, sentences without “is”, demonstratives, possessives, prepositions, pronouns, the present and past, questions, negation and the iḍāfa. Later lessons add numbers, the dual and plurals, كان and its sisters, the future and the moods, the derived verb forms, participles and verbal nouns, conditionals, the passive, and the accusative constructions of formal Arabic. Arabic is read right to left and short vowels are usually not written; the transliteration under each example shows how it sounds. The CEFR level after each point (A1 to C2) is an estimate.",
+  "intro": "These lessons cover Modern Standard Arabic from the first sentence to formal written style. The original 12 lessons cover ال, gender, sentences without “is”, demonstratives, possessives, prepositions, pronouns, the present and past, questions, negation and the iḍāfa. Later lessons add numbers, the dual and plurals, كان and its sisters, the future and the moods, the derived verb forms, participles and verbal nouns, conditionals, the passive, and the accusative constructions of formal Arabic. Arabic is read right to left and short vowels are usually not written; the transliteration under each example shows how it sounds. The CEFR level after each point (A1 to C2) is an estimate.",
   "lessons": [
     {
       "id": "al",
@@ -967,71 +967,6 @@
       ]
     },
     {
-      "id": "dual",
-      "title": "The dual: ـانِ and ـَيْنِ",
-      "particle": "ـان・ـين",
-      "summary": "Arabic has a form for exactly two: كتابان, سيارتان; it becomes ـين as an object or after a preposition. (about A1–A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "Add <b>ـان</b> for two: كتاب → <b>كتابان</b>، بيت → بيتان. Feminine ة becomes ت: سيارة → <b>سيارتان</b>. As subject it is ـان; as object, after prepositions and in iḍāfa it is <b>ـين</b>.",
-          "examples": [
-            ["عندي {أخوان}.", "ʿindī akhawān.", "I have two brothers."],
-            ["رأيت {ولدين}.", "raʾaytu waladayn.", "I saw two boys."]
-          ]
-        },
-        {
-          "h": "Dual in iḍāfa and verbs",
-          "p": "In iḍāfa the ن drops: <b>كتابا</b> الطالب (the student's two books). Verbs and pronouns also have dual forms (هما يكتبان), common in formal writing.",
-          "examples": [
-            [
-              "{يدا} الطفل صغيرتان.",
-              "yadā ṭ-ṭifl ṣaghīratān.",
-              "The child's two hands are small."
-            ],
-            ["{هما} طالبان.", "humā ṭālibān.", "They (two) are students."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "في الغرفة ＿.",
-          "en": "There are two chairs in the room.",
-          "options": ["كرسيان", "كرسيين", "كراسي", "كرسي"],
-          "answer": "كرسيان",
-          "why": "Subject: ـان."
-        },
-        {
-          "q": "اشتريت ＿.",
-          "en": "I bought two cars.",
-          "options": ["سيارتان", "سيارتين", "سيارات", "سيارة"],
-          "answer": "سيارتين",
-          "why": "Object: ـين, and ة → ت."
-        },
-        {
-          "q": "في ＿",
-          "en": "in two days",
-          "options": ["يومان", "أيام", "يومين", "يوم"],
-          "answer": "يومين",
-          "why": "After a preposition: ـين."
-        },
-        {
-          "q": "＿ الولد",
-          "en": "the boy's two eyes",
-          "options": ["عينان", "عينين", "عيون", "عينا"],
-          "answer": "عينا",
-          "why": "In iḍāfa the ن drops."
-        },
-        {
-          "q": "هما ＿.",
-          "en": "They (two) are teachers.",
-          "options": ["مدرسان", "مدرسين", "مدرسون", "مدرس"],
-          "answer": "مدرسان",
-          "why": "Predicate, subject case: ـان."
-        }
-      ]
-    },
-    {
       "id": "sound-plurals",
       "title": "Sound plurals: ـون and ـات",
       "particle": "ـون・ـين・ـات",
@@ -1105,221 +1040,6 @@
       ]
     },
     {
-      "id": "broken-plurals",
-      "title": "Broken plurals: كتب, أولاد, بيوت",
-      "particle": "فُعول・أفعال・فُعُل",
-      "summary": "Most nouns change their vowel pattern inside the root: كتاب → كتب, ولد → أولاد. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "Broken plurals rearrange the vowels around the root and have to be learned with each noun, but common patterns repeat: <b>أفعال</b> (ولد → أولاد، قلم → أقلام), <b>فُعول</b> (بيت → بيوت، درس → دروس), <b>فُعُل</b> (كتاب → كتب، مدينة → مدن).",
-          "examples": [
-            [
-              "عندي ثلاثة {أولاد}.",
-              "ʿindī thalāthat awlād.",
-              "I have three children."
-            ],
-            [
-              "هذه {بيوت} قديمة.",
-              "hādhihi buyūt qadīma.",
-              "These are old houses."
-            ]
-          ]
-        },
-        {
-          "h": "More patterns",
-          "p": "<b>فِعال</b>: رجل → رجال، كلب → كلاب. <b>فُعَلاء</b>: صديق → أصدقاء، وزير → وزراء. <b>مَفاعِل</b>: مكتب → مكاتب، مدرسة → مدارس.",
-          "examples": [
-            ["جاء {أصدقائي}.", "jāʾa aṣdiqāʾī.", "My friends came."],
-            [
-              "في المدينة {مدارس} كثيرة.",
-              "fī l-madīna madāris kathīra.",
-              "There are many schools in the city."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "كتاب → ＿",
-          "en": "book → books",
-          "options": ["كتب", "كتابات", "أكتاب", "كتابون"],
-          "answer": "كتب",
-          "why": "فُعُل."
-        },
-        {
-          "q": "رجل → ＿",
-          "en": "man → men",
-          "options": ["رجلون", "رجال", "أرجال", "رجلات"],
-          "answer": "رجال",
-          "why": "فِعال."
-        },
-        {
-          "q": "درس → ＿",
-          "en": "lesson → lessons",
-          "options": ["درسات", "أدراس", "دروس", "دراس"],
-          "answer": "دروس",
-          "why": "فُعول."
-        },
-        {
-          "q": "صديق → ＿",
-          "en": "friend → friends",
-          "options": ["صديقون", "صدقاء", "أصادق", "أصدقاء"],
-          "answer": "أصدقاء",
-          "why": "فُعَلاء with أ."
-        },
-        {
-          "q": "مكتب → ＿",
-          "en": "office → offices",
-          "options": ["مكاتب", "مكتبات", "أكتاب", "مكتوبات"],
-          "answer": "مكاتب",
-          "why": "مَفاعِل."
-        }
-      ]
-    },
-    {
-      "id": "nonhuman-plural",
-      "title": "Non-human plurals take feminine singular",
-      "particle": "الكتب جديدة",
-      "summary": "Plurals of things and animals are treated as feminine singular: البيوت كبيرة, هذه الكتب. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "When a plural refers to things, animals or ideas, its adjective, verb and pronoun are <b>feminine singular</b>: الكتب <b>جديدة</b>، السيارات <b>سريعة</b>. Use <b>هذه</b> and <b>هي</b>.",
-          "examples": [
-            [
-              "{هذه} الكتب {مفيدة}.",
-              "hādhihi l-kutub mufīda.",
-              "These books are useful."
-            ],
-            ["البيوت {كبيرة}.", "al-buyūt kabīra.", "The houses are big."]
-          ]
-        },
-        {
-          "h": "People plurals",
-          "p": "Plurals of people agree in the plural: الطلاب <b>مجتهدون</b>، <b>هؤلاء</b> الرجال. Verbs before the subject stay singular in formal Arabic.",
-          "examples": [
-            [
-              "الطلاب {مجتهدون}.",
-              "aṭ-ṭullāb mujtahidūn.",
-              "The students are hard-working."
-            ],
-            ["الأشجار {عالية}.", "al-ashjār ʿāliya.", "The trees are tall."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "المدن ＿.",
-          "en": "The cities are big.",
-          "options": ["كبيرة", "كبار", "كبيرون", "كبير"],
-          "answer": "كبيرة",
-          "why": "Non-human plural: feminine singular."
-        },
-        {
-          "q": "＿ الأقلام لي.",
-          "en": "These pens are mine.",
-          "options": ["هؤلاء", "هذه", "هذا", "هذان"],
-          "answer": "هذه",
-          "why": "Things: هذه."
-        },
-        {
-          "q": "الأولاد ＿.",
-          "en": "The children are tired.",
-          "options": ["تعبانة", "تعبان", "تعبانون", "تعبانات"],
-          "answer": "تعبانون",
-          "why": "People: plural."
-        },
-        {
-          "q": "القطط ＿ في الحديقة.",
-          "en": "The cats are playing in the garden.",
-          "options": ["يلعبون", "يلعب", "تلعبن", "تلعب"],
-          "answer": "تلعب",
-          "why": "Animals: feminine singular verb."
-        },
-        {
-          "q": "أين الكتب؟ — ＿ على الطاولة.",
-          "en": "Where are the books? — They're on the table.",
-          "options": ["هي", "هم", "هو", "هن"],
-          "answer": "هي",
-          "why": "Pronoun: هي."
-        }
-      ]
-    },
-    {
-      "id": "kana",
-      "title": "كان: \"was\", and its accusative",
-      "particle": "كان + منصوب",
-      "summary": "كان makes a nominal sentence past, and its predicate takes the accusative (-an). (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "Present sentences have no verb (البيت كبير). For the past, use <b>كان</b>, conjugated like a hollow verb: كنتُ، كنتَ، كان، كانت، كنّا، كانوا. The predicate takes the accusative: كان البيت <b>كبيراً</b>.",
-          "examples": [
-            [
-              "{كان} الجو {جميلاً}.",
-              "kāna l-jawwu jamīlan.",
-              "The weather was nice."
-            ],
-            ["{كنتُ} في البيت.", "kuntu fī l-bayt.", "I was at home."]
-          ]
-        },
-        {
-          "h": "The future and negation",
-          "p": "Future: <b>سيكون</b> / سوف يكون. Negative past: <b>ما كان</b> or <b>لم يكن</b>. Present negative uses ليس, which also takes the accusative.",
-          "examples": [
-            [
-              "{سيكون} الامتحان صعباً.",
-              "sa-yakūnu l-imtiḥān ṣaʿban.",
-              "The exam will be hard."
-            ],
-            [
-              "{لم يكن} المطعم مفتوحاً.",
-              "lam yakun al-maṭʿam maftūḥan.",
-              "The restaurant wasn't open."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "كان الطعام ＿.",
-          "en": "The food was delicious.",
-          "options": ["لذيذاً", "لذيذٌ", "لذيذ جداً كان", "لذيذين"],
-          "answer": "لذيذاً",
-          "why": "Predicate of كان: accusative."
-        },
-        {
-          "q": "＿ مريضة أمس.",
-          "en": "I was ill yesterday. (woman)",
-          "options": ["كانت", "كنتُ", "كان", "كنتِ"],
-          "answer": "كنتُ",
-          "why": "I: كنتُ."
-        },
-        {
-          "q": "＿ الأولاد في المدرسة.",
-          "en": "The children were at school.",
-          "options": ["كانوا", "كانت", "كان", "كنّا"],
-          "answer": "كان",
-          "why": "Verb first: singular كان."
-        },
-        {
-          "q": "الأولاد ＿ في المدرسة.",
-          "en": "The children were at school.",
-          "options": ["كان", "كانت", "كنتم", "كانوا"],
-          "answer": "كانوا",
-          "why": "Subject first: plural كانوا."
-        },
-        {
-          "q": "غداً ＿ الجو حاراً.",
-          "en": "Tomorrow the weather will be hot.",
-          "options": ["سيكون", "كان", "يكون لم", "كانت"],
-          "answer": "سيكون",
-          "why": "Future: سيكون."
-        }
-      ]
-    },
-    {
       "id": "future",
       "title": "The future: سـ and سوف",
       "particle": "سـ・سوف",
@@ -1389,221 +1109,6 @@
           "options": ["هل ستدرسون", "هل سيدرسون", "هل سندرس", "هل درستم"],
           "answer": "هل ستدرسون",
           "why": "You (pl.): ستدرسون."
-        }
-      ]
-    },
-    {
-      "id": "lan",
-      "title": "لن + subjunctive: will not",
-      "particle": "لن + منصوب",
-      "summary": "لن negates the future and puts the verb in the subjunctive: لن أذهبَ. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>لن</b> means will not. The verb takes the subjunctive: ‑u becomes <b>‑a</b> (أكتبُ → لن أكتبَ), and plural ‑ūna loses its ن: يكتبون → لن <b>يكتبوا</b>; تكتبين → لن تكتبي.",
-          "examples": [
-            [
-              "{لن أنسى} هذا اليوم.",
-              "lan ansā hādhā l-yawm.",
-              "I'll never forget this day."
-            ],
-            [
-              "{لن يحضروا} الحفلة.",
-              "lan yaḥḍurū l-ḥafla.",
-              "They won't come to the party."
-            ]
-          ]
-        },
-        {
-          "h": "The subjunctive after أن and لـ",
-          "p": "The same subjunctive comes after <b>أن</b> (that, to) and <b>لـ / كي / لكي</b> (in order to): أريد <b>أن أذهبَ</b>، جئت <b>لأساعدَك</b>.",
-          "examples": [
-            [
-              "لن {تفهمي} هذا.",
-              "lan tafhamī hādhā.",
-              "You (f.) won't understand this."
-            ],
-            ["{لن نتأخر}.", "lan nataʾakhkhar.", "We won't be late."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "لن ＿ إلى الحفلة.",
-          "en": "They won't go to the party.",
-          "options": ["يذهبوا", "يذهبون", "ذهبوا", "سيذهبون"],
-          "answer": "يذهبوا",
-          "why": "Subjunctive: ن drops."
-        },
-        {
-          "q": "لن ＿ شيئاً.",
-          "en": "I won't say anything.",
-          "options": ["أقولُ", "أقولَ", "قلتُ", "سأقول"],
-          "answer": "أقولَ",
-          "why": "Subjunctive: ‑a."
-        },
-        {
-          "q": "＿ أسافر هذا العام.",
-          "en": "I won't travel this year.",
-          "options": ["لا سـ", "لم", "لن", "ما"],
-          "answer": "لن",
-          "why": "Negative future: لن."
-        },
-        {
-          "q": "أنتِ لن ＿.",
-          "en": "You (f.) won't regret it.",
-          "options": ["تندمين", "ندمتِ", "تندمون", "تندمي"],
-          "answer": "تندمي",
-          "why": "تندمين → لن تندمي."
-        },
-        {
-          "q": "هو لن ＿ اليوم.",
-          "en": "He won't come today.",
-          "options": ["يأتيَ", "يأتي سـ", "أتى", "سيأتي"],
-          "answer": "يأتيَ",
-          "why": "لن + subjunctive."
-        }
-      ]
-    },
-    {
-      "id": "lam",
-      "title": "لم + jussive: did not",
-      "particle": "لم + مجزوم",
-      "summary": "لم + the jussive is the usual formal way to say did not: لم أذهبْ. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>لم</b> takes the present-tense form in the <b>jussive</b>: the final vowel drops (يكتبُ → لم <b>يكتبْ</b>), and ‑ūna / ‑īna lose their ن: لم يكتبوا، لم تكتبي. Hollow verbs shorten: يكون → لم <b>يكن</b>، يقول → لم يقل.",
-          "examples": [
-            [
-              "{لم أفهم} السؤال.",
-              "lam afham as-suʾāl.",
-              "I didn't understand the question."
-            ],
-            [
-              "{لم يأكلوا} شيئاً.",
-              "lam yaʾkulū shayʾan.",
-              "They didn't eat anything."
-            ]
-          ]
-        },
-        {
-          "h": "ما + past",
-          "p": "<b>ما</b> + past tense also means did not, and is common in speech and simple writing: ما ذهبت. <b>لم</b> is the standard written form. <b>لمّا</b> (not yet) also takes the jussive.",
-          "examples": [
-            ["{ما رأيت} أحداً.", "mā raʾaytu aḥadan.", "I didn't see anyone."],
-            [
-              "{لم يكن} عندي وقت.",
-              "lam yakun ʿindī waqt.",
-              "I didn't have time."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "لم ＿ الرسالة.",
-          "en": "He didn't write the letter.",
-          "options": ["يكتبْ", "يكتبُ", "كتبَ", "سيكتب"],
-          "answer": "يكتبْ",
-          "why": "Jussive: the vowel drops."
-        },
-        {
-          "q": "لم ＿ الدرس.",
-          "en": "They didn't understand the lesson.",
-          "options": ["يفهمون", "يفهموا", "فهموا", "سيفهمون"],
-          "answer": "يفهموا",
-          "why": "ن drops."
-        },
-        {
-          "q": "لم ＿ في البيت.",
-          "en": "He wasn't at home.",
-          "options": ["يكون", "كان", "يكن", "يكنْ لا"],
-          "answer": "يكن",
-          "why": "Hollow verb shortens: يكن."
-        },
-        {
-          "q": "＿ أر أحداً.",
-          "en": "I didn't see anyone.",
-          "options": ["لن", "لا", "سوف", "لم"],
-          "answer": "لم",
-          "why": "لم + jussive: لم أرَ."
-        },
-        {
-          "q": "ما ＿ أمس.",
-          "en": "I didn't sleep yesterday.",
-          "options": ["نمت", "أنام", "نام", "أنمْ"],
-          "answer": "نمت",
-          "why": "ما + past."
-        }
-      ]
-    },
-    {
-      "id": "imperative",
-      "title": "The imperative: اُكتب، اِجلس",
-      "particle": "اُفعل・اِفعل",
-      "summary": "Drop the prefix from the jussive and add a helping vowel: تكتب → اُكتبْ. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "Start from the jussive \"you\" form: تَكتبْ → drop تـ → كتبْ → add <b>اُ</b> (if the stem vowel is u) or <b>اِ</b> (if a or i): <b>اُكتبْ</b>، <b>اِجلسْ</b>، <b>اِفتحْ</b>. Feminine adds ـي, plural ـوا: اُكتبي، اُكتبوا.",
-          "examples": [
-            [
-              "{اِجلس} هنا من فضلك.",
-              "ijlis hunā min faḍlik.",
-              "Sit here, please."
-            ],
-            [
-              "{اُكتبوا} أسماءكم.",
-              "uktubū asmāʾakum.",
-              "Write your names. (pl.)"
-            ]
-          ]
-        },
-        {
-          "h": "Irregular and negative imperatives",
-          "p": "Hollow verbs: <b>قُل</b> (say), <b>نَم</b> (sleep), <b>كُن</b> (be). Some need no helping vowel: <b>خُذ</b> (take), <b>كُل</b> (eat). Negative: <b>لا</b> + jussive: لا تذهبْ.",
-          "examples": [
-            ["{قل} الحقيقة.", "qul al-ḥaqīqa.", "Tell the truth."],
-            ["{لا تقلق}.", "lā taqlaq.", "Don't worry."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ الباب من فضلك.",
-          "en": "Open the door, please. (to a man)",
-          "options": ["اِفتح", "اُفتح", "تفتح", "فتح"],
-          "answer": "اِفتح",
-          "why": "يفتح: helping vowel اِ."
-        },
-        {
-          "q": "＿ الكتاب.",
-          "en": "Read the book. (to a woman)",
-          "options": ["اِقرأ", "اِقرئي", "تقرئين", "قرأتِ"],
-          "answer": "اِقرئي",
-          "why": "Feminine: ـي."
-        },
-        {
-          "q": "لا ＿!",
-          "en": "Don't go! (to a man)",
-          "options": ["اِذهب", "تذهبُ", "تذهبْ", "ذهبتَ"],
-          "answer": "تذهبْ",
-          "why": "لا + jussive."
-        },
-        {
-          "q": "＿ هادئاً.",
-          "en": "Be calm.",
-          "options": ["كان", "تكون", "اُكن", "كُن"],
-          "answer": "كُن",
-          "why": "كان → كُن."
-        },
-        {
-          "q": "＿ إلى هنا يا أولاد!",
-          "en": "Come here, kids!",
-          "options": ["تعالوا", "تعالَ", "تعالي", "اُأتوا"],
-          "answer": "تعالوا",
-          "why": "تعالَ (m.), تعالي (f.), تعالوا (pl.)."
         }
       ]
     },
@@ -1966,144 +1471,6 @@
       ]
     },
     {
-      "id": "hollow-verbs",
-      "title": "Hollow verbs: قال، كان، نام",
-      "particle": "قال/يقول・نام/ينام",
-      "summary": "Verbs with و or ي in the middle have a long vowel that shortens before consonant endings: قال but قلتُ. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "In the past, the middle is <b>ا</b> for he/she/they: قال، قالت، قالوا. With ـتُ، ـتَ، ـنا it shortens: <b>قُلتُ</b>، <b>نِمتُ</b>، <b>كُنّا</b>. The vowel (u or i) shows which verb type it is.",
-          "examples": [
-            ["ماذا {قلتَ}؟", "mādhā qulta?", "What did you say?"],
-            ["{نمتُ} مبكراً.", "nimtu mubakkiran.", "I went to bed early."]
-          ]
-        },
-        {
-          "h": "The present",
-          "p": "The present has a long vowel: <b>يقول</b> (say), <b>يكون</b> (be), <b>ينام</b> (sleep), <b>يبيع</b> (sell), <b>يزور</b> (visit). It shortens in the jussive: لم <b>يقل</b>.",
-          "examples": [
-            ["ماذا {يقول}؟", "mādhā yaqūl?", "What is he saying?"],
-            [
-              "{أزور} جدتي كل أسبوع.",
-              "azūru jaddatī kulla usbūʿ.",
-              "I visit my grandmother every week."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "أنا ＿ الحقيقة.",
-          "en": "I told the truth.",
-          "options": ["قلتُ", "قالتُ", "قولتُ", "قيلتُ"],
-          "answer": "قلتُ",
-          "why": "قال shortens: قلتُ."
-        },
-        {
-          "q": "نحن ＿ في البيت.",
-          "en": "We were at home.",
-          "options": ["كاننا", "كنّا", "كوننا", "كانوا"],
-          "answer": "كنّا",
-          "why": "كان → كنّا."
-        },
-        {
-          "q": "هو ＿ سيارته.",
-          "en": "He sold his car.",
-          "options": ["بيع", "بعتُ", "باع", "يبيعَ"],
-          "answer": "باع",
-          "why": "He: باع."
-        },
-        {
-          "q": "هي ＿ متأخرة.",
-          "en": "She sleeps late.",
-          "options": ["تنوم", "تنيم", "نامت", "تنام"],
-          "answer": "تنام",
-          "why": "Present: تنام."
-        },
-        {
-          "q": "＿ مصر الشهر القادم.",
-          "en": "I'll visit Egypt next month.",
-          "options": ["سأزور", "سأزير", "سأزار", "زرتُ"],
-          "answer": "سأزور",
-          "why": "يزور → سأزور."
-        }
-      ]
-    },
-    {
-      "id": "defective-verbs",
-      "title": "Verbs ending in a vowel: مشى، دعا، نسي",
-      "particle": "مشى/يمشي・دعا/يدعو",
-      "summary": "Verbs with و or ي as the last root letter end in a vowel and change it with endings. (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "Past: <b>مشى</b> (walked), <b>دعا</b> (invited), <b>نسيَ</b> (forgot). With ـتُ the root letter returns: <b>مشيتُ</b>، <b>دعوتُ</b>، نسيتُ. They: <b>مشَوا</b>، دعَوا، نسُوا.",
-          "examples": [
-            [
-              "{مشينا} على الشاطئ.",
-              "mashaynā ʿalā sh-shāṭiʾ.",
-              "We walked on the beach."
-            ],
-            ["{نسيتُ} اسمه.", "nasītu ismahu.", "I forgot his name."]
-          ]
-        },
-        {
-          "h": "The present",
-          "p": "The present ends in a long vowel: <b>يمشي</b>، <b>يدعو</b>، <b>ينسى</b>. In the jussive it shortens: لم <b>يمشِ</b>، لا <b>تنسَ</b>!",
-          "examples": [
-            [
-              "{لا تنسَ} المفتاح.",
-              "lā tansa l-miftāḥ.",
-              "Don't forget the key."
-            ],
-            [
-              "هو {يمشي} كل يوم.",
-              "huwa yamshī kulla yawm.",
-              "He walks every day."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "أنا ＿ أصدقائي إلى العشاء.",
-          "en": "I invited my friends to dinner.",
-          "options": ["دعوتُ", "دعاتُ", "دعيتُ", "دعتُ"],
-          "answer": "دعوتُ",
-          "why": "دعا → دعوتُ."
-        },
-        {
-          "q": "هو ＿ إلى المدرسة.",
-          "en": "He walks to school.",
-          "options": ["يمشو", "يمشي", "يمشى", "مشى يـ"],
-          "answer": "يمشي",
-          "why": "Present: يمشي."
-        },
-        {
-          "q": "لا ＿ أن تتصل!",
-          "en": "Don't forget to call! (to a man)",
-          "options": ["تنسى", "تنسي", "تنسَ", "نسيت"],
-          "answer": "تنسَ",
-          "why": "Jussive shortens."
-        },
-        {
-          "q": "هي ＿ الكرة.",
-          "en": "She threw the ball.",
-          "options": ["رمات", "رميت", "رمىت", "رمت"],
-          "answer": "رمت",
-          "why": "She: رمَتْ (the ى drops)."
-        },
-        {
-          "q": "هم ＿ القصة.",
-          "en": "They told the story. (روى)",
-          "options": ["رووا", "رواها", "روا", "روين"],
-          "answer": "رووا",
-          "why": "They: رَوَوا."
-        }
-      ]
-    },
-    {
       "id": "question-words",
       "title": "More question words: كم, متى, كيف, لماذا, ماذا",
       "particle": "كم・متى・كيف・لماذا・ماذا",
@@ -2246,6 +1613,1142 @@
           "options": ["هؤلاء", "هذه", "هذان", "تلك"],
           "answer": "هؤلاء",
           "why": "People: هؤلاء."
+        }
+      ]
+    },
+    {
+      "id": "days-dates",
+      "title": "Days and months",
+      "particle": "يوم الأحد・في شهر مايو",
+      "summary": "Days are يوم + name; \"on Monday\" is يوم الاثنين; months have two naming systems. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>الأحد، الاثنين، الثلاثاء، الأربعاء، الخميس، الجمعة، السبت</b>. \"On Friday\" = <b>يومَ الجمعة</b> or just الجمعة. Week: أسبوع; today: اليوم; tomorrow: غداً; yesterday: أمس.",
+          "examples": [
+            [
+              "نلتقي {يوم الخميس}.",
+              "naltaqī yawm al-khamīs.",
+              "We'll meet on Thursday."
+            ],
+            ["{الجمعة} عطلة.", "al-jumʿa ʿuṭla.", "Friday is a holiday."]
+          ]
+        },
+        {
+          "h": "Months",
+          "p": "Egypt and the Gulf use يناير، فبراير، مارس…; the Levant and Iraq use كانون الثاني، شباط، آذار… The Islamic calendar has its own months (رمضان، شوال). \"In May\": <b>في شهر مايو</b> / في أيار.",
+          "examples": [
+            [
+              "وُلدتُ {في شهر مارس}.",
+              "wulidtu fī shahr māris.",
+              "I was born in March."
+            ],
+            ["{في رمضان} نصوم.", "fī ramaḍān naṣūm.", "In Ramadan we fast."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ الجمعة",
+          "en": "on Friday",
+          "options": ["يومَ", "في يوم في", "على", "إلى"],
+          "answer": "يومَ",
+          "why": "on a day: يوم."
+        },
+        {
+          "q": "The day after الأحد",
+          "en": "",
+          "options": ["السبت", "الاثنين", "الثلاثاء", "الخميس"],
+          "answer": "الاثنين",
+          "why": "Sunday → Monday."
+        },
+        {
+          "q": "＿ ذهبت إلى السوق.",
+          "en": "Yesterday I went to the market.",
+          "options": ["غداً", "الآن", "أمس", "سـ"],
+          "answer": "أمس",
+          "why": "yesterday: أمس."
+        },
+        {
+          "q": "في ＿ مايو",
+          "en": "in the month of May",
+          "options": ["يوم", "سنة", "أسبوع", "شهر"],
+          "answer": "شهر",
+          "why": "في شهر …"
+        },
+        {
+          "q": "The Arabic weekend day of congregational prayer",
+          "en": "",
+          "options": ["الجمعة", "الأحد", "الاثنين", "الثلاثاء"],
+          "answer": "الجمعة",
+          "why": "الجمعة = Friday."
+        }
+      ]
+    },
+    {
+      "id": "vocative",
+      "title": "Calling someone: يا",
+      "particle": "يا + noun",
+      "summary": "يا before a name or noun calls someone: يا أحمد, يا أستاذ. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>يا</b> + name or title calls someone: <b>يا</b> سارة، <b>يا</b> دكتور. The noun has no ال and, in formal Arabic, ends in -u: يا محمدُ. With iḍāfa: <b>يا</b> أخي.",
+          "examples": [
+            [
+              "{يا} أمي، أين المفتاح؟",
+              "yā ummī, ayna l-miftāḥ?",
+              "Mum, where's the key?"
+            ],
+            ["شكراً {يا} صديقي.", "shukran yā ṣadīqī.", "Thanks, my friend."]
+          ]
+        },
+        {
+          "h": "Nouns with ال",
+          "p": "Before a noun with ال, use <b>يا أيها</b> (m.) / <b>يا أيتها</b> (f.): <b>يا أيها</b> الطلاب. In speech people just say <b>يا جماعة</b> (hey everyone).",
+          "examples": [
+            ["{يا أيها} الناس", "yā ayyuhā n-nās", "O people"],
+            ["{يا} جماعة، اسمعوا!", "yā jamāʿa, smaʿū!", "Listen, everyone!"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ أستاذ، عندي سؤال.",
+          "en": "Sir, I have a question.",
+          "options": ["يا", "أيها", "هل", "إن"],
+          "answer": "يا",
+          "why": "Calling: يا."
+        },
+        {
+          "q": "يا ＿ الطلاب",
+          "en": "O students",
+          "options": ["يا", "أيها", "أنتم", "هؤلاء"],
+          "answer": "أيها",
+          "why": "Before ال: يا أيها."
+        },
+        {
+          "q": "＿ أختي!",
+          "en": "My sister! (calling)",
+          "options": ["أيتها", "هذه", "يا", "إلى"],
+          "answer": "يا",
+          "why": "يا + iḍāfa."
+        },
+        {
+          "q": "يا ＿ السيدات",
+          "en": "Ladies (O ladies)",
+          "options": ["أيها", "يا", "هؤلاء", "أيتها"],
+          "answer": "أيتها",
+          "why": "Feminine: يا أيتها."
+        },
+        {
+          "q": "A noun after يا (no iḍāfa) takes…",
+          "en": "",
+          "options": ["no ال", "ال always", "tanwin -an", "the genitive"],
+          "answer": "no ال",
+          "why": "يا + bare noun."
+        }
+      ]
+    },
+    {
+      "id": "nisba",
+      "title": "Nationality and belonging: ـيّ",
+      "particle": "ـيّ・ـيّة",
+      "summary": "Add ـيّ (feminine ـيّة) to a place or noun to make an adjective of origin: مصر → مصريّ. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Drop ال and any final ة or ا, then add <b>ـيّ</b>: مصر → <b>مصريّ</b>، لبنان → <b>لبنانيّ</b>، العراق → عراقيّ. Feminine: <b>ـيّة</b>. Plural for people: ـيّون or a broken plural (عرب).",
+          "examples": [
+            ["أنا {مغربيّ}.", "anā maghribī.", "I'm Moroccan."],
+            ["هي {سوريّة}.", "hiya sūriyya.", "She's Syrian."]
+          ]
+        },
+        {
+          "h": "Beyond places",
+          "p": "The nisba also makes ordinary adjectives: علم → <b>علميّ</b> (scientific), شمس → <b>شمسيّ</b> (solar). The feminine ـيّة often names a field or ideology: <b>الاشتراكيّة</b>، <b>العربيّة</b> (Arabic language).",
+          "examples": [
+            [
+              "هل تتكلم {العربيّة}؟",
+              "hal tatakallamu l-ʿarabiyya?",
+              "Do you speak Arabic?"
+            ],
+            ["طاقة {شمسيّة}", "ṭāqa shamsiyya", "solar energy"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "أنا ＿.",
+          "en": "I'm Jordanian (man).",
+          "options": ["أردنيّ", "أردنيّة", "الأردن", "أردن"],
+          "answer": "أردنيّ",
+          "why": "ـيّ."
+        },
+        {
+          "q": "هي ＿.",
+          "en": "She is Lebanese.",
+          "options": ["لبنانيّ", "لبنانيّة", "لبنان", "لبنانات"],
+          "answer": "لبنانيّة",
+          "why": "Feminine: ـيّة."
+        },
+        {
+          "q": "Iraq → ＿",
+          "en": "Iraqi",
+          "options": ["العراقيّ ال", "عراقان", "عراقيّ", "عرقيّ"],
+          "answer": "عراقيّ",
+          "why": "Drop ال: عراقيّ."
+        },
+        {
+          "q": "بحث ＿",
+          "en": "scientific research",
+          "options": ["علم", "عالم", "معلوم", "علميّ"],
+          "answer": "علميّ",
+          "why": "علم → علميّ."
+        },
+        {
+          "q": "هم ＿.",
+          "en": "They are Egyptians.",
+          "options": ["مصريّون", "مصريّة", "مصريّ", "مصرات"],
+          "answer": "مصريّون",
+          "why": "People plural: ـيّون."
+        }
+      ]
+    },
+    {
+      "id": "adverbs-time",
+      "title": "Frequency and time words: دائماً، أحياناً، أبداً",
+      "particle": "دائماً・أحياناً・أبداً",
+      "summary": "Many adverbs are accusative nouns ending in -an: دائماً, أحياناً, غالباً, أبداً (never, with a negative). (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>دائماً</b> (always), <b>عادةً</b> (usually), <b>غالباً</b> (often), <b>أحياناً</b> (sometimes), <b>نادراً</b> (rarely). <b>أبداً</b> + a negative = never: <b>لا</b> أدخن <b>أبداً</b>.",
+          "examples": [
+            [
+              "أنا {دائماً} متأخر.",
+              "anā dāʾiman mutaʾakhkhir.",
+              "I'm always late."
+            ],
+            [
+              "{أحياناً} نأكل في المطعم.",
+              "aḥyānan naʾkulu fī l-maṭʿam.",
+              "Sometimes we eat at the restaurant."
+            ]
+          ]
+        },
+        {
+          "h": "Past never: قطّ",
+          "p": "For \"never\" in the past use <b>ما … قطّ</b> or <b>لم … أبداً</b>: <b>ما</b> رأيته <b>قطّ</b>. Other time words: <b>الآن</b> (now), <b>بعدين / فيما بعد</b> (later), <b>مبكراً</b> (early), <b>متأخراً</b> (late).",
+          "examples": [
+            [
+              "{ما} زرتُ اليابان {قطّ}.",
+              "mā zurtu l-yābān qaṭṭ.",
+              "I've never been to Japan."
+            ],
+            [
+              "سأتصل بك {فيما بعد}.",
+              "sa-attaṣilu bika fīmā baʿd.",
+              "I'll call you later."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "لا آكل اللحم ＿.",
+          "en": "I never eat meat.",
+          "options": ["أبداً", "دائماً", "أحياناً", "قطّ لا"],
+          "answer": "أبداً",
+          "why": "Negative + أبداً."
+        },
+        {
+          "q": "＿ أشرب الشاي في الصباح.",
+          "en": "I usually drink tea in the morning.",
+          "options": ["أبداً", "عادةً", "قطّ", "أمس"],
+          "answer": "عادةً",
+          "why": "usually: عادةً."
+        },
+        {
+          "q": "ما رأيته ＿.",
+          "en": "I've never seen him.",
+          "options": ["أبداً سـ", "دائماً", "قطّ", "الآن"],
+          "answer": "قطّ",
+          "why": "Past never: ما … قطّ."
+        },
+        {
+          "q": "نذهب إلى السينما ＿.",
+          "en": "We sometimes go to the cinema.",
+          "options": ["أبداً", "قطّ", "ليس", "أحياناً"],
+          "answer": "أحياناً",
+          "why": "sometimes: أحياناً."
+        },
+        {
+          "q": "وصلتُ ＿.",
+          "en": "I arrived early.",
+          "options": ["مبكراً", "مبكرٌ", "المبكر", "بكر"],
+          "answer": "مبكراً",
+          "why": "Adverb: -an."
+        }
+      ]
+    },
+    {
+      "id": "dual",
+      "title": "The dual: ـانِ and ـَيْنِ",
+      "particle": "ـان・ـين",
+      "summary": "Arabic has a form for exactly two: كتابان, سيارتان; it becomes ـين as an object or after a preposition. (about A1–A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Add <b>ـان</b> for two: كتاب → <b>كتابان</b>، بيت → بيتان. Feminine ة becomes ت: سيارة → <b>سيارتان</b>. As subject it is ـان; as object, after prepositions and in iḍāfa it is <b>ـين</b>.",
+          "examples": [
+            ["عندي {أخوان}.", "ʿindī akhawān.", "I have two brothers."],
+            ["رأيت {ولدين}.", "raʾaytu waladayn.", "I saw two boys."]
+          ]
+        },
+        {
+          "h": "Dual in iḍāfa and verbs",
+          "p": "In iḍāfa the ن drops: <b>كتابا</b> الطالب (the student's two books). Verbs and pronouns also have dual forms (هما يكتبان), common in formal writing.",
+          "examples": [
+            [
+              "{يدا} الطفل صغيرتان.",
+              "yadā ṭ-ṭifl ṣaghīratān.",
+              "The child's two hands are small."
+            ],
+            ["{هما} طالبان.", "humā ṭālibān.", "They (two) are students."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "في الغرفة ＿.",
+          "en": "There are two chairs in the room.",
+          "options": ["كرسيان", "كرسيين", "كراسي", "كرسي"],
+          "answer": "كرسيان",
+          "why": "Subject: ـان."
+        },
+        {
+          "q": "اشتريت ＿.",
+          "en": "I bought two cars.",
+          "options": ["سيارتان", "سيارتين", "سيارات", "سيارة"],
+          "answer": "سيارتين",
+          "why": "Object: ـين, and ة → ت."
+        },
+        {
+          "q": "في ＿",
+          "en": "in two days",
+          "options": ["يومان", "أيام", "يومين", "يوم"],
+          "answer": "يومين",
+          "why": "After a preposition: ـين."
+        },
+        {
+          "q": "＿ الولد",
+          "en": "the boy's two eyes",
+          "options": ["عينان", "عينين", "عيون", "عينا"],
+          "answer": "عينا",
+          "why": "In iḍāfa the ن drops."
+        },
+        {
+          "q": "هما ＿.",
+          "en": "They (two) are teachers.",
+          "options": ["مدرسان", "مدرسين", "مدرسون", "مدرس"],
+          "answer": "مدرسان",
+          "why": "Predicate, subject case: ـان."
+        }
+      ]
+    },
+    {
+      "id": "broken-plurals",
+      "title": "Broken plurals: كتب, أولاد, بيوت",
+      "particle": "فُعول・أفعال・فُعُل",
+      "summary": "Most nouns change their vowel pattern inside the root: كتاب → كتب, ولد → أولاد. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Broken plurals rearrange the vowels around the root and have to be learned with each noun, but common patterns repeat: <b>أفعال</b> (ولد → أولاد، قلم → أقلام), <b>فُعول</b> (بيت → بيوت، درس → دروس), <b>فُعُل</b> (كتاب → كتب، مدينة → مدن).",
+          "examples": [
+            [
+              "عندي ثلاثة {أولاد}.",
+              "ʿindī thalāthat awlād.",
+              "I have three children."
+            ],
+            [
+              "هذه {بيوت} قديمة.",
+              "hādhihi buyūt qadīma.",
+              "These are old houses."
+            ]
+          ]
+        },
+        {
+          "h": "More patterns",
+          "p": "<b>فِعال</b>: رجل → رجال، كلب → كلاب. <b>فُعَلاء</b>: صديق → أصدقاء، وزير → وزراء. <b>مَفاعِل</b>: مكتب → مكاتب، مدرسة → مدارس.",
+          "examples": [
+            ["جاء {أصدقائي}.", "jāʾa aṣdiqāʾī.", "My friends came."],
+            [
+              "في المدينة {مدارس} كثيرة.",
+              "fī l-madīna madāris kathīra.",
+              "There are many schools in the city."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "كتاب → ＿",
+          "en": "book → books",
+          "options": ["كتب", "كتابات", "أكتاب", "كتابون"],
+          "answer": "كتب",
+          "why": "فُعُل."
+        },
+        {
+          "q": "رجل → ＿",
+          "en": "man → men",
+          "options": ["رجلون", "رجال", "أرجال", "رجلات"],
+          "answer": "رجال",
+          "why": "فِعال."
+        },
+        {
+          "q": "درس → ＿",
+          "en": "lesson → lessons",
+          "options": ["درسات", "أدراس", "دروس", "دراس"],
+          "answer": "دروس",
+          "why": "فُعول."
+        },
+        {
+          "q": "صديق → ＿",
+          "en": "friend → friends",
+          "options": ["صديقون", "صدقاء", "أصادق", "أصدقاء"],
+          "answer": "أصدقاء",
+          "why": "فُعَلاء with أ."
+        },
+        {
+          "q": "مكتب → ＿",
+          "en": "office → offices",
+          "options": ["مكاتب", "مكتبات", "أكتاب", "مكتوبات"],
+          "answer": "مكاتب",
+          "why": "مَفاعِل."
+        }
+      ]
+    },
+    {
+      "id": "nonhuman-plural",
+      "title": "Non-human plurals take feminine singular",
+      "particle": "الكتب جديدة",
+      "summary": "Plurals of things and animals are treated as feminine singular: البيوت كبيرة, هذه الكتب. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "When a plural refers to things, animals or ideas, its adjective, verb and pronoun are <b>feminine singular</b>: الكتب <b>جديدة</b>، السيارات <b>سريعة</b>. Use <b>هذه</b> and <b>هي</b>.",
+          "examples": [
+            [
+              "{هذه} الكتب {مفيدة}.",
+              "hādhihi l-kutub mufīda.",
+              "These books are useful."
+            ],
+            ["البيوت {كبيرة}.", "al-buyūt kabīra.", "The houses are big."]
+          ]
+        },
+        {
+          "h": "People plurals",
+          "p": "Plurals of people agree in the plural: الطلاب <b>مجتهدون</b>، <b>هؤلاء</b> الرجال. Verbs before the subject stay singular in formal Arabic.",
+          "examples": [
+            [
+              "الطلاب {مجتهدون}.",
+              "aṭ-ṭullāb mujtahidūn.",
+              "The students are hard-working."
+            ],
+            ["الأشجار {عالية}.", "al-ashjār ʿāliya.", "The trees are tall."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "المدن ＿.",
+          "en": "The cities are big.",
+          "options": ["كبيرة", "كبار", "كبيرون", "كبير"],
+          "answer": "كبيرة",
+          "why": "Non-human plural: feminine singular."
+        },
+        {
+          "q": "＿ الأقلام لي.",
+          "en": "These pens are mine.",
+          "options": ["هؤلاء", "هذه", "هذا", "هذان"],
+          "answer": "هذه",
+          "why": "Things: هذه."
+        },
+        {
+          "q": "الأولاد ＿.",
+          "en": "The children are tired.",
+          "options": ["تعبانة", "تعبان", "تعبانون", "تعبانات"],
+          "answer": "تعبانون",
+          "why": "People: plural."
+        },
+        {
+          "q": "القطط ＿ في الحديقة.",
+          "en": "The cats are playing in the garden.",
+          "options": ["يلعبون", "يلعب", "تلعبن", "تلعب"],
+          "answer": "تلعب",
+          "why": "Animals: feminine singular verb."
+        },
+        {
+          "q": "أين الكتب؟ — ＿ على الطاولة.",
+          "en": "Where are the books? — They're on the table.",
+          "options": ["هي", "هم", "هو", "هن"],
+          "answer": "هي",
+          "why": "Pronoun: هي."
+        }
+      ]
+    },
+    {
+      "id": "kana",
+      "title": "كان: \"was\", and its accusative",
+      "particle": "كان + منصوب",
+      "summary": "كان makes a nominal sentence past, and its predicate takes the accusative (-an). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Present sentences have no verb (البيت كبير). For the past, use <b>كان</b>, conjugated like a hollow verb: كنتُ، كنتَ، كان، كانت، كنّا، كانوا. The predicate takes the accusative: كان البيت <b>كبيراً</b>.",
+          "examples": [
+            [
+              "{كان} الجو {جميلاً}.",
+              "kāna l-jawwu jamīlan.",
+              "The weather was nice."
+            ],
+            ["{كنتُ} في البيت.", "kuntu fī l-bayt.", "I was at home."]
+          ]
+        },
+        {
+          "h": "The future and negation",
+          "p": "Future: <b>سيكون</b> / سوف يكون. Negative past: <b>ما كان</b> or <b>لم يكن</b>. Present negative uses ليس, which also takes the accusative.",
+          "examples": [
+            [
+              "{سيكون} الامتحان صعباً.",
+              "sa-yakūnu l-imtiḥān ṣaʿban.",
+              "The exam will be hard."
+            ],
+            [
+              "{لم يكن} المطعم مفتوحاً.",
+              "lam yakun al-maṭʿam maftūḥan.",
+              "The restaurant wasn't open."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "كان الطعام ＿.",
+          "en": "The food was delicious.",
+          "options": ["لذيذاً", "لذيذٌ", "لذيذ جداً كان", "لذيذين"],
+          "answer": "لذيذاً",
+          "why": "Predicate of كان: accusative."
+        },
+        {
+          "q": "＿ مريضة أمس.",
+          "en": "I was ill yesterday. (woman)",
+          "options": ["كانت", "كنتُ", "كان", "كنتِ"],
+          "answer": "كنتُ",
+          "why": "I: كنتُ."
+        },
+        {
+          "q": "＿ الأولاد في المدرسة.",
+          "en": "The children were at school.",
+          "options": ["كانوا", "كانت", "كان", "كنّا"],
+          "answer": "كان",
+          "why": "Verb first: singular كان."
+        },
+        {
+          "q": "الأولاد ＿ في المدرسة.",
+          "en": "The children were at school.",
+          "options": ["كان", "كانت", "كنتم", "كانوا"],
+          "answer": "كانوا",
+          "why": "Subject first: plural كانوا."
+        },
+        {
+          "q": "غداً ＿ الجو حاراً.",
+          "en": "Tomorrow the weather will be hot.",
+          "options": ["سيكون", "كان", "يكون لم", "كانت"],
+          "answer": "سيكون",
+          "why": "Future: سيكون."
+        }
+      ]
+    },
+    {
+      "id": "lan",
+      "title": "لن + subjunctive: will not",
+      "particle": "لن + منصوب",
+      "summary": "لن negates the future and puts the verb in the subjunctive: لن أذهبَ. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>لن</b> means will not. The verb takes the subjunctive: ‑u becomes <b>‑a</b> (أكتبُ → لن أكتبَ), and plural ‑ūna loses its ن: يكتبون → لن <b>يكتبوا</b>; تكتبين → لن تكتبي.",
+          "examples": [
+            [
+              "{لن أنسى} هذا اليوم.",
+              "lan ansā hādhā l-yawm.",
+              "I'll never forget this day."
+            ],
+            [
+              "{لن يحضروا} الحفلة.",
+              "lan yaḥḍurū l-ḥafla.",
+              "They won't come to the party."
+            ]
+          ]
+        },
+        {
+          "h": "The subjunctive after أن and لـ",
+          "p": "The same subjunctive comes after <b>أن</b> (that, to) and <b>لـ / كي / لكي</b> (in order to): أريد <b>أن أذهبَ</b>، جئت <b>لأساعدَك</b>.",
+          "examples": [
+            [
+              "لن {تفهمي} هذا.",
+              "lan tafhamī hādhā.",
+              "You (f.) won't understand this."
+            ],
+            ["{لن نتأخر}.", "lan nataʾakhkhar.", "We won't be late."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "لن ＿ إلى الحفلة.",
+          "en": "They won't go to the party.",
+          "options": ["يذهبوا", "يذهبون", "ذهبوا", "سيذهبون"],
+          "answer": "يذهبوا",
+          "why": "Subjunctive: ن drops."
+        },
+        {
+          "q": "لن ＿ شيئاً.",
+          "en": "I won't say anything.",
+          "options": ["أقولُ", "أقولَ", "قلتُ", "سأقول"],
+          "answer": "أقولَ",
+          "why": "Subjunctive: ‑a."
+        },
+        {
+          "q": "＿ أسافر هذا العام.",
+          "en": "I won't travel this year.",
+          "options": ["لا سـ", "لم", "لن", "ما"],
+          "answer": "لن",
+          "why": "Negative future: لن."
+        },
+        {
+          "q": "أنتِ لن ＿.",
+          "en": "You (f.) won't regret it.",
+          "options": ["تندمين", "ندمتِ", "تندمون", "تندمي"],
+          "answer": "تندمي",
+          "why": "تندمين → لن تندمي."
+        },
+        {
+          "q": "هو لن ＿ اليوم.",
+          "en": "He won't come today.",
+          "options": ["يأتيَ", "يأتي سـ", "أتى", "سيأتي"],
+          "answer": "يأتيَ",
+          "why": "لن + subjunctive."
+        }
+      ]
+    },
+    {
+      "id": "lam",
+      "title": "لم + jussive: did not",
+      "particle": "لم + مجزوم",
+      "summary": "لم + the jussive is the usual formal way to say did not: لم أذهبْ. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>لم</b> takes the present-tense form in the <b>jussive</b>: the final vowel drops (يكتبُ → لم <b>يكتبْ</b>), and ‑ūna / ‑īna lose their ن: لم يكتبوا، لم تكتبي. Hollow verbs shorten: يكون → لم <b>يكن</b>، يقول → لم يقل.",
+          "examples": [
+            [
+              "{لم أفهم} السؤال.",
+              "lam afham as-suʾāl.",
+              "I didn't understand the question."
+            ],
+            [
+              "{لم يأكلوا} شيئاً.",
+              "lam yaʾkulū shayʾan.",
+              "They didn't eat anything."
+            ]
+          ]
+        },
+        {
+          "h": "ما + past",
+          "p": "<b>ما</b> + past tense also means did not, and is common in speech and simple writing: ما ذهبت. <b>لم</b> is the standard written form. <b>لمّا</b> (not yet) also takes the jussive.",
+          "examples": [
+            ["{ما رأيت} أحداً.", "mā raʾaytu aḥadan.", "I didn't see anyone."],
+            [
+              "{لم يكن} عندي وقت.",
+              "lam yakun ʿindī waqt.",
+              "I didn't have time."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "لم ＿ الرسالة.",
+          "en": "He didn't write the letter.",
+          "options": ["يكتبْ", "يكتبُ", "كتبَ", "سيكتب"],
+          "answer": "يكتبْ",
+          "why": "Jussive: the vowel drops."
+        },
+        {
+          "q": "لم ＿ الدرس.",
+          "en": "They didn't understand the lesson.",
+          "options": ["يفهمون", "يفهموا", "فهموا", "سيفهمون"],
+          "answer": "يفهموا",
+          "why": "ن drops."
+        },
+        {
+          "q": "لم ＿ في البيت.",
+          "en": "He wasn't at home.",
+          "options": ["يكون", "كان", "يكن", "يكنْ لا"],
+          "answer": "يكن",
+          "why": "Hollow verb shortens: يكن."
+        },
+        {
+          "q": "＿ أر أحداً.",
+          "en": "I didn't see anyone.",
+          "options": ["لن", "لا", "سوف", "لم"],
+          "answer": "لم",
+          "why": "لم + jussive: لم أرَ."
+        },
+        {
+          "q": "ما ＿ أمس.",
+          "en": "I didn't sleep yesterday.",
+          "options": ["نمت", "أنام", "نام", "أنمْ"],
+          "answer": "نمت",
+          "why": "ما + past."
+        }
+      ]
+    },
+    {
+      "id": "imperative",
+      "title": "The imperative: اُكتب، اِجلس",
+      "particle": "اُفعل・اِفعل",
+      "summary": "Drop the prefix from the jussive and add a helping vowel: تكتب → اُكتبْ. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Start from the jussive \"you\" form: تَكتبْ → drop تـ → كتبْ → add <b>اُ</b> (if the stem vowel is u) or <b>اِ</b> (if a or i): <b>اُكتبْ</b>، <b>اِجلسْ</b>، <b>اِفتحْ</b>. Feminine adds ـي, plural ـوا: اُكتبي، اُكتبوا.",
+          "examples": [
+            [
+              "{اِجلس} هنا من فضلك.",
+              "ijlis hunā min faḍlik.",
+              "Sit here, please."
+            ],
+            [
+              "{اُكتبوا} أسماءكم.",
+              "uktubū asmāʾakum.",
+              "Write your names. (pl.)"
+            ]
+          ]
+        },
+        {
+          "h": "Irregular and negative imperatives",
+          "p": "Hollow verbs: <b>قُل</b> (say), <b>نَم</b> (sleep), <b>كُن</b> (be). Some need no helping vowel: <b>خُذ</b> (take), <b>كُل</b> (eat). Negative: <b>لا</b> + jussive: لا تذهبْ.",
+          "examples": [
+            ["{قل} الحقيقة.", "qul al-ḥaqīqa.", "Tell the truth."],
+            ["{لا تقلق}.", "lā taqlaq.", "Don't worry."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ الباب من فضلك.",
+          "en": "Open the door, please. (to a man)",
+          "options": ["اِفتح", "اُفتح", "تفتح", "فتح"],
+          "answer": "اِفتح",
+          "why": "يفتح: helping vowel اِ."
+        },
+        {
+          "q": "＿ الكتاب.",
+          "en": "Read the book. (to a woman)",
+          "options": ["اِقرأ", "اِقرئي", "تقرئين", "قرأتِ"],
+          "answer": "اِقرئي",
+          "why": "Feminine: ـي."
+        },
+        {
+          "q": "لا ＿!",
+          "en": "Don't go! (to a man)",
+          "options": ["اِذهب", "تذهبُ", "تذهبْ", "ذهبتَ"],
+          "answer": "تذهبْ",
+          "why": "لا + jussive."
+        },
+        {
+          "q": "＿ هادئاً.",
+          "en": "Be calm.",
+          "options": ["كان", "تكون", "اُكن", "كُن"],
+          "answer": "كُن",
+          "why": "كان → كُن."
+        },
+        {
+          "q": "＿ إلى هنا يا أولاد!",
+          "en": "Come here, kids!",
+          "options": ["تعالوا", "تعالَ", "تعالي", "اُأتوا"],
+          "answer": "تعالوا",
+          "why": "تعالَ (m.), تعالي (f.), تعالوا (pl.)."
+        }
+      ]
+    },
+    {
+      "id": "hollow-verbs",
+      "title": "Hollow verbs: قال، كان، نام",
+      "particle": "قال/يقول・نام/ينام",
+      "summary": "Verbs with و or ي in the middle have a long vowel that shortens before consonant endings: قال but قلتُ. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "In the past, the middle is <b>ا</b> for he/she/they: قال، قالت، قالوا. With ـتُ، ـتَ، ـنا it shortens: <b>قُلتُ</b>، <b>نِمتُ</b>، <b>كُنّا</b>. The vowel (u or i) shows which verb type it is.",
+          "examples": [
+            ["ماذا {قلتَ}؟", "mādhā qulta?", "What did you say?"],
+            ["{نمتُ} مبكراً.", "nimtu mubakkiran.", "I went to bed early."]
+          ]
+        },
+        {
+          "h": "The present",
+          "p": "The present has a long vowel: <b>يقول</b> (say), <b>يكون</b> (be), <b>ينام</b> (sleep), <b>يبيع</b> (sell), <b>يزور</b> (visit). It shortens in the jussive: لم <b>يقل</b>.",
+          "examples": [
+            ["ماذا {يقول}؟", "mādhā yaqūl?", "What is he saying?"],
+            [
+              "{أزور} جدتي كل أسبوع.",
+              "azūru jaddatī kulla usbūʿ.",
+              "I visit my grandmother every week."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "أنا ＿ الحقيقة.",
+          "en": "I told the truth.",
+          "options": ["قلتُ", "قالتُ", "قولتُ", "قيلتُ"],
+          "answer": "قلتُ",
+          "why": "قال shortens: قلتُ."
+        },
+        {
+          "q": "نحن ＿ في البيت.",
+          "en": "We were at home.",
+          "options": ["كاننا", "كنّا", "كوننا", "كانوا"],
+          "answer": "كنّا",
+          "why": "كان → كنّا."
+        },
+        {
+          "q": "هو ＿ سيارته.",
+          "en": "He sold his car.",
+          "options": ["بيع", "بعتُ", "باع", "يبيعَ"],
+          "answer": "باع",
+          "why": "He: باع."
+        },
+        {
+          "q": "هي ＿ متأخرة.",
+          "en": "She sleeps late.",
+          "options": ["تنوم", "تنيم", "نامت", "تنام"],
+          "answer": "تنام",
+          "why": "Present: تنام."
+        },
+        {
+          "q": "＿ مصر الشهر القادم.",
+          "en": "I'll visit Egypt next month.",
+          "options": ["سأزور", "سأزير", "سأزار", "زرتُ"],
+          "answer": "سأزور",
+          "why": "يزور → سأزور."
+        }
+      ]
+    },
+    {
+      "id": "an-subjunctive",
+      "title": "أن + subjunctive: wanting to",
+      "particle": "أن + منصوب",
+      "summary": "After verbs like أريد, أحب, يجب, use أن + the subjunctive: أريد أن أذهبَ. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Arabic has no infinitive. Use <b>أن</b> + the present in the subjunctive, conjugated for the person: أريد <b>أن أشربَ</b>، يريدون <b>أن يسافروا</b>.",
+          "examples": [
+            [
+              "{أريد أن} أتعلم العربية.",
+              "urīdu an ataʿallama l-ʿarabiyya.",
+              "I want to learn Arabic."
+            ],
+            [
+              "{يجب أن} نذهب الآن.",
+              "yajibu an nadhhaba l-ān.",
+              "We must go now."
+            ]
+          ]
+        },
+        {
+          "h": "Common verbs with أن",
+          "p": "<b>أحبّ أن</b> (like to), <b>أستطيع أن</b> (can), <b>يجب أن</b> (must), <b>أحاول أن</b> (try to), <b>بدأ</b> + present (started to). After يمكن (it's possible): <b>يمكن أن</b>.",
+          "examples": [
+            [
+              "هل {تستطيع أن} تساعدني؟",
+              "hal tastaṭīʿu an tusāʿidanī?",
+              "Can you help me?"
+            ],
+            [
+              "{يمكن أن} نلتقي غداً.",
+              "yumkinu an naltaqiya ghadan.",
+              "We could meet tomorrow."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "أريد أن ＿ قهوة.",
+          "en": "I want to drink coffee.",
+          "options": ["أشربَ", "أشربُ", "شربتُ", "سأشرب"],
+          "answer": "أشربَ",
+          "why": "أن + subjunctive."
+        },
+        {
+          "q": "يريدون أن ＿.",
+          "en": "They want to travel.",
+          "options": ["يسافرون", "يسافروا", "سافروا", "مسافرين"],
+          "answer": "يسافروا",
+          "why": "Subjunctive: ن drops."
+        },
+        {
+          "q": "يجب ＿ تدرس.",
+          "en": "You must study.",
+          "options": ["لن", "لم", "أن", "إنّ"],
+          "answer": "أن",
+          "why": "يجب أن."
+        },
+        {
+          "q": "هل تستطيعين أن ＿ غداً؟",
+          "en": "Can you (f.) come tomorrow?",
+          "options": ["تأتين", "أتيتِ", "ستأتين", "تأتي"],
+          "answer": "تأتي",
+          "why": "تأتين → تأتي."
+        },
+        {
+          "q": "أحاول أن ＿ مبكراً.",
+          "en": "I try to wake up early.",
+          "options": ["أستيقظَ", "أستيقظُ", "استيقظتُ", "يستيقظ"],
+          "answer": "أستيقظَ",
+          "why": "أن + subjunctive, I."
+        }
+      ]
+    },
+    {
+      "id": "comparative",
+      "title": "Comparatives: أكبر من",
+      "particle": "أفعل + من",
+      "summary": "The comparative uses the pattern أفعل, which doesn't change for gender, + من. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "From كبير → <b>أكبر</b>، صغير → أصغر، جميل → أجمل، سريع → أسرع. \"Than\" is <b>من</b>. The form stays the same for masculine and feminine: هي <b>أكبر</b> منّي.",
+          "examples": [
+            [
+              "القاهرة {أكبر من} عمّان.",
+              "al-qāhira akbaru min ʿammān.",
+              "Cairo is bigger than Amman."
+            ],
+            [
+              "أختي {أصغر} منّي.",
+              "ukhtī aṣgharu minnī.",
+              "My sister is younger than me."
+            ]
+          ]
+        },
+        {
+          "h": "Doubled roots and أكثر",
+          "p": "Doubled roots merge: جديد → <b>أجدّ</b>، قليل → <b>أقلّ</b>. Adjectives that can't take أفعل (long or participle forms) use <b>أكثر</b> + accusative noun: <b>أكثر</b> ازدحاماً (more crowded).",
+          "examples": [
+            [
+              "هذا {أقلّ} سعراً.",
+              "hādhā aqallu siʿran.",
+              "This is cheaper (less in price)."
+            ],
+            [
+              "المدينة {أكثر ازدحاماً} من القرية.",
+              "al-madīna akthar izdiḥāman min al-qarya.",
+              "The city is more crowded than the village."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "القطار ＿ من الباص.",
+          "en": "The train is faster than the bus.",
+          "options": ["أسرع", "سريع", "أسرعة", "سرعى"],
+          "answer": "أسرع",
+          "why": "Comparative: أفعل."
+        },
+        {
+          "q": "هي ＿ مني.",
+          "en": "She is taller than me.",
+          "options": ["طولى", "أطول", "أطولة", "طويلة من"],
+          "answer": "أطول",
+          "why": "أفعل doesn't change for gender."
+        },
+        {
+          "q": "الصيف ＿ من الشتاء.",
+          "en": "Summer is hotter than winter.",
+          "options": ["أحرر", "حارّ أكثر", "أحرّ", "محرّ"],
+          "answer": "أحرّ",
+          "why": "حارّ → أحرّ."
+        },
+        {
+          "q": "هذا الفستان ＿ جمالاً.",
+          "en": "This dress is more beautiful.",
+          "options": ["أكبر", "أجمل", "أكثرة", "أكثر"],
+          "answer": "أكثر",
+          "why": "أكثر + accusative noun."
+        },
+        {
+          "q": "صغير → ＿",
+          "en": "small → smaller",
+          "options": ["أصغر", "صغرى", "أصاغر", "مصغر"],
+          "answer": "أصغر",
+          "why": "أفعل."
+        }
+      ]
+    },
+    {
+      "id": "time-telling",
+      "title": "Telling the time",
+      "particle": "الساعة الثالثة",
+      "summary": "Time uses الساعة + a feminine ordinal: الساعة الثالثة (three o'clock). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>كم الساعة؟</b> — الساعة <b>الثالثة</b>. Hours use feminine ordinals: الواحدة، الثانية، الثالثة، الرابعة، الخامسة… Half past: <b>والنصف</b>; quarter past: <b>والربع</b>; quarter to: <b>إلا ربعاً</b>.",
+          "examples": [
+            ["{كم الساعة}؟", "kam as-sāʿa?", "What time is it?"],
+            [
+              "الساعة {الرابعة والنصف}.",
+              "as-sāʿa r-rābiʿa wa-n-niṣf.",
+              "It's half past four."
+            ]
+          ]
+        },
+        {
+          "h": "At a time",
+          "p": "\"At\" is just the time phrase or <b>في</b>: في الساعة الثامنة. Morning: <b>صباحاً</b>; evening: <b>مساءً</b>.",
+          "examples": [
+            [
+              "يبدأ الدرس {في الساعة التاسعة} صباحاً.",
+              "yabdaʾu d-dars fī s-sāʿa t-tāsiʿa ṣabāḥan.",
+              "The lesson starts at nine in the morning."
+            ],
+            [
+              "الساعة السابعة {إلا ربعاً}.",
+              "as-sāʿa s-sābiʿa illā rubʿan.",
+              "It's quarter to seven."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "الساعة ＿.",
+          "en": "It's five o'clock.",
+          "options": ["الخامسة", "خمسة", "الخامس", "خمس"],
+          "answer": "الخامسة",
+          "why": "Feminine ordinal: الخامسة."
+        },
+        {
+          "q": "الساعة الثانية ＿.",
+          "en": "It's half past two.",
+          "options": ["والربع", "والنصف", "إلا ربعاً", "ونصف ساعة"],
+          "answer": "والنصف",
+          "why": "half past: والنصف."
+        },
+        {
+          "q": "الساعة الثالثة ＿.",
+          "en": "It's quarter past three.",
+          "options": ["والنصف", "إلا ربعاً", "والربع", "وثلث"],
+          "answer": "والربع",
+          "why": "quarter past: والربع."
+        },
+        {
+          "q": "＿ الساعة؟",
+          "en": "What time is it?",
+          "options": ["ما", "متى", "كيف", "كم"],
+          "answer": "كم",
+          "why": "كم الساعة."
+        },
+        {
+          "q": "أعود في الساعة السادسة ＿.",
+          "en": "I come back at six in the evening.",
+          "options": ["مساءً", "صباحاً", "ليلٌ", "ظهر"],
+          "answer": "مساءً",
+          "why": "evening: مساءً."
+        }
+      ]
+    },
+    {
+      "id": "defective-verbs",
+      "title": "Verbs ending in a vowel: مشى، دعا، نسي",
+      "particle": "مشى/يمشي・دعا/يدعو",
+      "summary": "Verbs with و or ي as the last root letter end in a vowel and change it with endings. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Past: <b>مشى</b> (walked), <b>دعا</b> (invited), <b>نسيَ</b> (forgot). With ـتُ the root letter returns: <b>مشيتُ</b>، <b>دعوتُ</b>، نسيتُ. They: <b>مشَوا</b>، دعَوا، نسُوا.",
+          "examples": [
+            [
+              "{مشينا} على الشاطئ.",
+              "mashaynā ʿalā sh-shāṭiʾ.",
+              "We walked on the beach."
+            ],
+            ["{نسيتُ} اسمه.", "nasītu ismahu.", "I forgot his name."]
+          ]
+        },
+        {
+          "h": "The present",
+          "p": "The present ends in a long vowel: <b>يمشي</b>، <b>يدعو</b>، <b>ينسى</b>. In the jussive it shortens: لم <b>يمشِ</b>، لا <b>تنسَ</b>!",
+          "examples": [
+            [
+              "{لا تنسَ} المفتاح.",
+              "lā tansa l-miftāḥ.",
+              "Don't forget the key."
+            ],
+            [
+              "هو {يمشي} كل يوم.",
+              "huwa yamshī kulla yawm.",
+              "He walks every day."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "أنا ＿ أصدقائي إلى العشاء.",
+          "en": "I invited my friends to dinner.",
+          "options": ["دعوتُ", "دعاتُ", "دعيتُ", "دعتُ"],
+          "answer": "دعوتُ",
+          "why": "دعا → دعوتُ."
+        },
+        {
+          "q": "هو ＿ إلى المدرسة.",
+          "en": "He walks to school.",
+          "options": ["يمشو", "يمشي", "يمشى", "مشى يـ"],
+          "answer": "يمشي",
+          "why": "Present: يمشي."
+        },
+        {
+          "q": "لا ＿ أن تتصل!",
+          "en": "Don't forget to call! (to a man)",
+          "options": ["تنسى", "تنسي", "تنسَ", "نسيت"],
+          "answer": "تنسَ",
+          "why": "Jussive shortens."
+        },
+        {
+          "q": "هي ＿ الكرة.",
+          "en": "She threw the ball.",
+          "options": ["رمات", "رميت", "رمىت", "رمت"],
+          "answer": "رمت",
+          "why": "She: رمَتْ (the ى drops)."
+        },
+        {
+          "q": "هم ＿ القصة.",
+          "en": "They told the story. (روى)",
+          "options": ["رووا", "رواها", "روا", "روين"],
+          "answer": "رووا",
+          "why": "They: رَوَوا."
         }
       ]
     },
@@ -2404,83 +2907,6 @@
       ]
     },
     {
-      "id": "an-subjunctive",
-      "title": "أن + subjunctive: wanting to",
-      "particle": "أن + منصوب",
-      "summary": "After verbs like أريد, أحب, يجب, use أن + the subjunctive: أريد أن أذهبَ. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "Arabic has no infinitive. Use <b>أن</b> + the present in the subjunctive, conjugated for the person: أريد <b>أن أشربَ</b>، يريدون <b>أن يسافروا</b>.",
-          "examples": [
-            [
-              "{أريد أن} أتعلم العربية.",
-              "urīdu an ataʿallama l-ʿarabiyya.",
-              "I want to learn Arabic."
-            ],
-            [
-              "{يجب أن} نذهب الآن.",
-              "yajibu an nadhhaba l-ān.",
-              "We must go now."
-            ]
-          ]
-        },
-        {
-          "h": "Common verbs with أن",
-          "p": "<b>أحبّ أن</b> (like to), <b>أستطيع أن</b> (can), <b>يجب أن</b> (must), <b>أحاول أن</b> (try to), <b>بدأ</b> + present (started to). After يمكن (it's possible): <b>يمكن أن</b>.",
-          "examples": [
-            [
-              "هل {تستطيع أن} تساعدني؟",
-              "hal tastaṭīʿu an tusāʿidanī?",
-              "Can you help me?"
-            ],
-            [
-              "{يمكن أن} نلتقي غداً.",
-              "yumkinu an naltaqiya ghadan.",
-              "We could meet tomorrow."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "أريد أن ＿ قهوة.",
-          "en": "I want to drink coffee.",
-          "options": ["أشربَ", "أشربُ", "شربتُ", "سأشرب"],
-          "answer": "أشربَ",
-          "why": "أن + subjunctive."
-        },
-        {
-          "q": "يريدون أن ＿.",
-          "en": "They want to travel.",
-          "options": ["يسافرون", "يسافروا", "سافروا", "مسافرين"],
-          "answer": "يسافروا",
-          "why": "Subjunctive: ن drops."
-        },
-        {
-          "q": "يجب ＿ تدرس.",
-          "en": "You must study.",
-          "options": ["لن", "لم", "أن", "إنّ"],
-          "answer": "أن",
-          "why": "يجب أن."
-        },
-        {
-          "q": "هل تستطيعين أن ＿ غداً؟",
-          "en": "Can you (f.) come tomorrow?",
-          "options": ["تأتين", "أتيتِ", "ستأتين", "تأتي"],
-          "answer": "تأتي",
-          "why": "تأتين → تأتي."
-        },
-        {
-          "q": "أحاول أن ＿ مبكراً.",
-          "en": "I try to wake up early.",
-          "options": ["أستيقظَ", "أستيقظُ", "استيقظتُ", "يستيقظ"],
-          "answer": "أستيقظَ",
-          "why": "أن + subjunctive, I."
-        }
-      ]
-    },
-    {
       "id": "forms-2-3",
       "title": "Verb forms II and III: درّس، ساعد",
       "particle": "فعّل・فاعل",
@@ -2623,79 +3049,6 @@
           "options": ["يتعلّمون", "يعلّمون", "يُعلمون", "يتعالمون"],
           "answer": "يتعلّمون",
           "why": "Form V: learn."
-        }
-      ]
-    },
-    {
-      "id": "forms-7-8-10",
-      "title": "Verb forms VII, VIII and X: انكسر، اجتمع، استخدم",
-      "particle": "انفعل・افتعل・استفعل",
-      "summary": "VII is often passive-like; VIII adds ت after the first letter; X adds است (ask for, consider). (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "<b>Form VII, انفعل</b>: something happens to itself: كسر (break) → <b>انكسر</b> (got broken); <b>انقطع</b> (be cut off). <b>Form VIII, افتعل</b>: <b>اجتمع</b> (meet), <b>انتظر</b> (wait), <b>اشترى</b> (buy).",
-          "examples": [
-            ["{انكسر} الكأس.", "inkasara l-kaʾs.", "The glass broke."],
-            [
-              "{اجتمعنا} يوم الأحد.",
-              "ijtamaʿnā yawm al-aḥad.",
-              "We met on Sunday."
-            ]
-          ]
-        },
-        {
-          "h": "Form X: استفعل",
-          "p": "<b>Form X, استفعل / يستفعل</b> often means seek or consider: <b>استخدم</b> (use), <b>استقبل</b> (receive), <b>استغرب</b> (find strange), <b>استطاع</b> (be able).",
-          "examples": [
-            [
-              "هل {تستخدم} هذا التطبيق؟",
-              "hal tastakhdimu hādhā t-taṭbīq?",
-              "Do you use this app?"
-            ],
-            [
-              "{استقبلونا} في المطار.",
-              "istaqbalūnā fī l-maṭār.",
-              "They met (received) us at the airport."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ الكهرباء.",
-          "en": "The electricity was cut off.",
-          "options": ["انقطعت", "قطعت", "تقطّعت", "استقطعت"],
-          "answer": "انقطعت",
-          "why": "Form VII: happens to itself."
-        },
-        {
-          "q": "＿ لك ساعة!",
-          "en": "I waited for you for an hour!",
-          "options": ["نظرتُ", "انتظرتُ", "استنظرتُ", "تناظرتُ"],
-          "answer": "انتظرتُ",
-          "why": "Form VIII: انتظر."
-        },
-        {
-          "q": "هل ＿ أن تساعدني؟",
-          "en": "Can you help me?",
-          "options": ["تطيع", "تطوع", "تستطيع", "تتطوع"],
-          "answer": "تستطيع",
-          "why": "Form X: استطاع."
-        },
-        {
-          "q": "ماذا ＿ أمس؟",
-          "en": "What did you buy yesterday?",
-          "options": ["شريتَ", "تشاريتَ", "استشريتَ", "اشتريتَ"],
-          "answer": "اشتريتَ",
-          "why": "Form VIII: اشترى."
-        },
-        {
-          "q": "الشركة ＿ تكنولوجيا جديدة.",
-          "en": "The company uses new technology.",
-          "options": ["تستخدم", "تخدم", "تتخدم", "خدّمت"],
-          "answer": "تستخدم",
-          "why": "Form X."
         }
       ]
     },
@@ -2903,83 +3256,6 @@
           "options": ["استخدام", "مستخدم", "خدمة", "تخديم"],
           "answer": "استخدام",
           "why": "Form X: استفعال."
-        }
-      ]
-    },
-    {
-      "id": "comparative",
-      "title": "Comparatives: أكبر من",
-      "particle": "أفعل + من",
-      "summary": "The comparative uses the pattern أفعل, which doesn't change for gender, + من. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "From كبير → <b>أكبر</b>، صغير → أصغر، جميل → أجمل، سريع → أسرع. \"Than\" is <b>من</b>. The form stays the same for masculine and feminine: هي <b>أكبر</b> منّي.",
-          "examples": [
-            [
-              "القاهرة {أكبر من} عمّان.",
-              "al-qāhira akbaru min ʿammān.",
-              "Cairo is bigger than Amman."
-            ],
-            [
-              "أختي {أصغر} منّي.",
-              "ukhtī aṣgharu minnī.",
-              "My sister is younger than me."
-            ]
-          ]
-        },
-        {
-          "h": "Doubled roots and أكثر",
-          "p": "Doubled roots merge: جديد → <b>أجدّ</b>، قليل → <b>أقلّ</b>. Adjectives that can't take أفعل (long or participle forms) use <b>أكثر</b> + accusative noun: <b>أكثر</b> ازدحاماً (more crowded).",
-          "examples": [
-            [
-              "هذا {أقلّ} سعراً.",
-              "hādhā aqallu siʿran.",
-              "This is cheaper (less in price)."
-            ],
-            [
-              "المدينة {أكثر ازدحاماً} من القرية.",
-              "al-madīna akthar izdiḥāman min al-qarya.",
-              "The city is more crowded than the village."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "القطار ＿ من الباص.",
-          "en": "The train is faster than the bus.",
-          "options": ["أسرع", "سريع", "أسرعة", "سرعى"],
-          "answer": "أسرع",
-          "why": "Comparative: أفعل."
-        },
-        {
-          "q": "هي ＿ مني.",
-          "en": "She is taller than me.",
-          "options": ["طولى", "أطول", "أطولة", "طويلة من"],
-          "answer": "أطول",
-          "why": "أفعل doesn't change for gender."
-        },
-        {
-          "q": "الصيف ＿ من الشتاء.",
-          "en": "Summer is hotter than winter.",
-          "options": ["أحرر", "حارّ أكثر", "أحرّ", "محرّ"],
-          "answer": "أحرّ",
-          "why": "حارّ → أحرّ."
-        },
-        {
-          "q": "هذا الفستان ＿ جمالاً.",
-          "en": "This dress is more beautiful.",
-          "options": ["أكبر", "أجمل", "أكثرة", "أكثر"],
-          "answer": "أكثر",
-          "why": "أكثر + accusative noun."
-        },
-        {
-          "q": "صغير → ＿",
-          "en": "small → smaller",
-          "options": ["أصغر", "صغرى", "أصاغر", "مصغر"],
-          "answer": "أصغر",
-          "why": "أفعل."
         }
       ]
     },
@@ -3213,79 +3489,6 @@
       ]
     },
     {
-      "id": "diptotes",
-      "title": "Diptotes: words without tanwīn",
-      "particle": "ممنوع من الصرف",
-      "summary": "Some nouns (many names, broken plurals of certain patterns, أفعل adjectives) never take -n and use -a for the genitive. (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "Diptotes take only <b>-u</b> and <b>-a</b>, never tanwīn: <b>مساجدُ</b>، <b>أصدقاءُ</b>، <b>أحمرُ</b>. In the genitive without ال they use -a: في <b>مساجدَ</b> كثيرة. With ال or in iḍāfa they behave normally.",
-          "examples": [
-            [
-              "زرتُ {مدارسَ} كثيرة.",
-              "zurtu madārisa kathīra.",
-              "I visited many schools."
-            ],
-            ["هذا {أحمدُ}.", "hādhā aḥmadu.", "This is Ahmad."]
-          ]
-        },
-        {
-          "h": "Which words",
-          "p": "Common groups: <b>names</b> (أحمد، فاطمة، مصر، مكة), patterns <b>مَفاعِل / مَفاعيل</b> (مدارس، مفاتيح), <b>فُعَلاء / أفعِلاء</b> (وزراء، أصدقاء), adjectives <b>أفعل</b> (أكبر، أزرق).",
-          "examples": [
-            [
-              "سافرتُ إلى {مصرَ}.",
-              "sāfartu ilā miṣra.",
-              "I travelled to Egypt."
-            ],
-            [
-              "عندي {أصدقاءُ} كثيرون.",
-              "ʿindī aṣdiqāʾu kathīrūn.",
-              "I have many friends."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "في ＿ كثيرة",
-          "en": "in many mosques",
-          "options": ["مساجدَ", "مساجدٍ", "مساجدِ", "مساجداً"],
-          "answer": "مساجدَ",
-          "why": "Diptote genitive without ال: -a."
-        },
-        {
-          "q": "رأيتُ ＿.",
-          "en": "I saw Fatima.",
-          "options": ["فاطمةً", "فاطمةَ", "فاطمةٍ", "فاطمتاً"],
-          "answer": "فاطمةَ",
-          "why": "Names: no tanwīn."
-        },
-        {
-          "q": "Which word is a diptote?",
-          "en": "",
-          "options": ["كتاب", "رجل", "وزراء", "بيت"],
-          "answer": "وزراء",
-          "why": "فُعَلاء pattern."
-        },
-        {
-          "q": "في ＿",
-          "en": "in the schools",
-          "options": ["المدارسَ", "مدارسٍ", "المدارسً", "المدارسِ"],
-          "answer": "المدارسِ",
-          "why": "With ال: normal genitive -i."
-        },
-        {
-          "q": "قميص ＿",
-          "en": "a red shirt",
-          "options": ["أحمرُ", "أحمرٌ", "أحمراً", "حمراء"],
-          "answer": "أحمرُ",
-          "why": "أفعل colours: no tanwīn."
-        }
-      ]
-    },
-    {
       "id": "numbers-11-100",
       "title": "Numbers 11–100 and the counted noun",
       "particle": "أحد عشر・عشرون + مفرد منصوب",
@@ -3351,148 +3554,6 @@
           "options": ["أربعون", "أربعة عشر", "أربعين ال", "أربعونة"],
           "answer": "أربعون",
           "why": "Tens: ـون."
-        }
-      ]
-    },
-    {
-      "id": "time-telling",
-      "title": "Telling the time",
-      "particle": "الساعة الثالثة",
-      "summary": "Time uses الساعة + a feminine ordinal: الساعة الثالثة (three o'clock). (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>كم الساعة؟</b> — الساعة <b>الثالثة</b>. Hours use feminine ordinals: الواحدة، الثانية، الثالثة، الرابعة، الخامسة… Half past: <b>والنصف</b>; quarter past: <b>والربع</b>; quarter to: <b>إلا ربعاً</b>.",
-          "examples": [
-            ["{كم الساعة}؟", "kam as-sāʿa?", "What time is it?"],
-            [
-              "الساعة {الرابعة والنصف}.",
-              "as-sāʿa r-rābiʿa wa-n-niṣf.",
-              "It's half past four."
-            ]
-          ]
-        },
-        {
-          "h": "At a time",
-          "p": "\"At\" is just the time phrase or <b>في</b>: في الساعة الثامنة. Morning: <b>صباحاً</b>; evening: <b>مساءً</b>.",
-          "examples": [
-            [
-              "يبدأ الدرس {في الساعة التاسعة} صباحاً.",
-              "yabdaʾu d-dars fī s-sāʿa t-tāsiʿa ṣabāḥan.",
-              "The lesson starts at nine in the morning."
-            ],
-            [
-              "الساعة السابعة {إلا ربعاً}.",
-              "as-sāʿa s-sābiʿa illā rubʿan.",
-              "It's quarter to seven."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "الساعة ＿.",
-          "en": "It's five o'clock.",
-          "options": ["الخامسة", "خمسة", "الخامس", "خمس"],
-          "answer": "الخامسة",
-          "why": "Feminine ordinal: الخامسة."
-        },
-        {
-          "q": "الساعة الثانية ＿.",
-          "en": "It's half past two.",
-          "options": ["والربع", "والنصف", "إلا ربعاً", "ونصف ساعة"],
-          "answer": "والنصف",
-          "why": "half past: والنصف."
-        },
-        {
-          "q": "الساعة الثالثة ＿.",
-          "en": "It's quarter past three.",
-          "options": ["والنصف", "إلا ربعاً", "والربع", "وثلث"],
-          "answer": "والربع",
-          "why": "quarter past: والربع."
-        },
-        {
-          "q": "＿ الساعة؟",
-          "en": "What time is it?",
-          "options": ["ما", "متى", "كيف", "كم"],
-          "answer": "كم",
-          "why": "كم الساعة."
-        },
-        {
-          "q": "أعود في الساعة السادسة ＿.",
-          "en": "I come back at six in the evening.",
-          "options": ["مساءً", "صباحاً", "ليلٌ", "ظهر"],
-          "answer": "مساءً",
-          "why": "evening: مساءً."
-        }
-      ]
-    },
-    {
-      "id": "days-dates",
-      "title": "Days and months",
-      "particle": "يوم الأحد・في شهر مايو",
-      "summary": "Days are يوم + name; \"on Monday\" is يوم الاثنين; months have two naming systems. (about A1–A2)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>الأحد، الاثنين، الثلاثاء، الأربعاء، الخميس، الجمعة، السبت</b>. \"On Friday\" = <b>يومَ الجمعة</b> or just الجمعة. Week: أسبوع; today: اليوم; tomorrow: غداً; yesterday: أمس.",
-          "examples": [
-            [
-              "نلتقي {يوم الخميس}.",
-              "naltaqī yawm al-khamīs.",
-              "We'll meet on Thursday."
-            ],
-            ["{الجمعة} عطلة.", "al-jumʿa ʿuṭla.", "Friday is a holiday."]
-          ]
-        },
-        {
-          "h": "Months",
-          "p": "Egypt and the Gulf use يناير، فبراير، مارس…; the Levant and Iraq use كانون الثاني، شباط، آذار… The Islamic calendar has its own months (رمضان، شوال). \"In May\": <b>في شهر مايو</b> / في أيار.",
-          "examples": [
-            [
-              "وُلدتُ {في شهر مارس}.",
-              "wulidtu fī shahr māris.",
-              "I was born in March."
-            ],
-            ["{في رمضان} نصوم.", "fī ramaḍān naṣūm.", "In Ramadan we fast."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ الجمعة",
-          "en": "on Friday",
-          "options": ["يومَ", "في يوم في", "على", "إلى"],
-          "answer": "يومَ",
-          "why": "on a day: يوم."
-        },
-        {
-          "q": "The day after الأحد",
-          "en": "",
-          "options": ["السبت", "الاثنين", "الثلاثاء", "الخميس"],
-          "answer": "الاثنين",
-          "why": "Sunday → Monday."
-        },
-        {
-          "q": "＿ ذهبت إلى السوق.",
-          "en": "Yesterday I went to the market.",
-          "options": ["غداً", "الآن", "أمس", "سـ"],
-          "answer": "أمس",
-          "why": "yesterday: أمس."
-        },
-        {
-          "q": "في ＿ مايو",
-          "en": "in the month of May",
-          "options": ["يوم", "سنة", "أسبوع", "شهر"],
-          "answer": "شهر",
-          "why": "في شهر …"
-        },
-        {
-          "q": "The Arabic weekend day of congregational prayer",
-          "en": "",
-          "options": ["الجمعة", "الأحد", "الاثنين", "الثلاثاء"],
-          "answer": "الجمعة",
-          "why": "الجمعة = Friday."
         }
       ]
     },
@@ -3566,165 +3627,6 @@
           "options": ["إلا إذا", "إذا لا", "إن لم لا", "لو"],
           "answer": "إلا إذا",
           "why": "unless: إلا إذا."
-        }
-      ]
-    },
-    {
-      "id": "law",
-      "title": "لو: unreal conditions",
-      "particle": "لو … لـ",
-      "summary": "لو + past introduces an unreal or past-unreal condition, and the result often starts with لـ. (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "<b>لو</b> + past tense in both halves, with <b>لـ</b> on the result: <b>لو</b> كنتُ غنياً <b>لـ</b>اشتريتُ بيتاً (If I were rich, I'd buy a house). It covers both present and past unreality.",
-          "examples": [
-            [
-              "{لو} عرفتُ، {لـ}أخبرتُك.",
-              "law ʿaraftu, la-akhbartuk.",
-              "If I'd known, I'd have told you."
-            ],
-            [
-              "{لو} كنتُ مكانك، {لـ}ما ذهبتُ.",
-              "law kuntu makānak, la-mā dhahabtu.",
-              "If I were you, I wouldn't go."
-            ]
-          ]
-        },
-        {
-          "h": "لولا and لو أنّ",
-          "p": "<b>لولا</b> + noun = if it weren't for: <b>لولا</b> مساعدتُك لفشلتُ. <b>لو أنّ</b> + noun/suffix is also common: لو أنّك جئت…",
-          "examples": [
-            [
-              "{لولا} الماء لما عاش أحد.",
-              "lawlā l-māʾ la-mā ʿāsha aḥad.",
-              "Without water no one would live."
-            ],
-            [
-              "{ليتني} كنتُ هناك.",
-              "laytanī kuntu hunāk.",
-              "I wish I'd been there."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "لو ＿ الوقت، لسافرت.",
-          "en": "If I had the time, I'd travel.",
-          "options": ["كان عندي", "يكون عندي", "سيكون عندي", "عندي سـ"],
-          "answer": "كان عندي",
-          "why": "لو + past."
-        },
-        {
-          "q": "لو درستَ ＿.",
-          "en": "If you'd studied, you'd have passed.",
-          "options": ["ستنجح", "لنجحتَ", "تنجح", "فنجحتَ"],
-          "answer": "لنجحتَ",
-          "why": "Result: لـ + past."
-        },
-        {
-          "q": "＿ أمي لما نجحت.",
-          "en": "If it weren't for my mother, I wouldn't have succeeded.",
-          "options": ["لو", "إذا", "لولا", "إن"],
-          "answer": "لولا",
-          "why": "لولا + noun."
-        },
-        {
-          "q": "Which is unreal?",
-          "en": "",
-          "options": [
-            "إذا كنت غنياً فاشترِ قصراً",
-            "إن شاء الله",
-            "إذا جاء سأخبره",
-            "لو كنت غنياً لاشتريت قصراً"
-          ],
-          "answer": "لو كنت غنياً لاشتريت قصراً",
-          "why": "لو marks the unreal."
-        },
-        {
-          "q": "لو ＿ مكانك لاعتذرت.",
-          "en": "If I were you, I'd apologise.",
-          "options": ["كنتُ", "أكون", "كنتَ", "سأكون"],
-          "answer": "كنتُ",
-          "why": "لو كنتُ مكانك."
-        }
-      ]
-    },
-    {
-      "id": "passive",
-      "title": "The passive: كُتِبَ، يُكتَب",
-      "particle": "فُعِلَ・يُفعَل",
-      "summary": "The internal passive changes the vowels: كَتَبَ → كُتِبَ, يَكتُب → يُكتَب; the doer is usually left out. (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "Past passive: <b>u – i</b>: كُتِبَ (was written), فُتِحَ، قُتِلَ. Present passive: <b>u – a</b>: يُكتَبُ، يُفتَحُ. Without vowel marks it looks the same as the active, so context decides.",
-          "examples": [
-            [
-              "{كُتِبَت} الرسالة بالعربية.",
-              "kutibat ar-risāla bil-ʿarabiyya.",
-              "The letter was written in Arabic."
-            ],
-            [
-              "{يُقال} إنه سافر.",
-              "yuqālu innahu sāfar.",
-              "It is said that he travelled."
-            ]
-          ]
-        },
-        {
-          "h": "Hollow verbs and alternatives",
-          "p": "Hollow verbs: <b>قِيلَ</b> (it was said), <b>بِيعَ</b> (was sold). Modern writing also uses form VII (انكسر) or <b>تمّ</b> + verbal noun: <b>تمّ بناء</b> الجسر (the bridge was built).",
-          "examples": [
-            [
-              "{وُلِدتُ} في بيروت.",
-              "wulidtu fī bayrūt.",
-              "I was born in Beirut."
-            ],
-            [
-              "{تمّ} افتتاح المتحف.",
-              "tamma iftitāḥ al-matḥaf.",
-              "The museum was opened."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ البيت عام ١٩٩٠.",
-          "en": "The house was built in 1990.",
-          "options": ["بُنِيَ", "بَنى", "يَبني", "بانٍ"],
-          "answer": "بُنِيَ",
-          "why": "Past passive of بنى: بُنِيَ."
-        },
-        {
-          "q": "أين ＿؟",
-          "en": "Where were you born?",
-          "options": ["وَلدتَ", "وُلِدتَ", "ولادة", "والد"],
-          "answer": "وُلِدتَ",
-          "why": "Passive: وُلِد."
-        },
-        {
-          "q": "＿ إن الطقس سيتحسن.",
-          "en": "It is said the weather will improve.",
-          "options": ["يقول", "قال", "يُقال", "قيل لـ"],
-          "answer": "يُقال",
-          "why": "Present passive: يُقال."
-        },
-        {
-          "q": "＿ إلغاء الرحلة.",
-          "en": "The flight was cancelled.",
-          "options": ["كان", "قد يتم", "يتمّ لم", "تمّ"],
-          "answer": "تمّ",
-          "why": "تمّ + verbal noun."
-        },
-        {
-          "q": "الباب ＿ كل صباح.",
-          "en": "The door is opened every morning.",
-          "options": ["يُفتَح", "يَفتَح", "فُتِح", "يفتحون"],
-          "answer": "يُفتَح",
-          "why": "Present passive: u–a."
         }
       ]
     },
@@ -4333,6 +4235,311 @@
       ]
     },
     {
+      "id": "forms-7-8-10",
+      "title": "Verb forms VII, VIII and X: انكسر، اجتمع، استخدم",
+      "particle": "انفعل・افتعل・استفعل",
+      "summary": "VII is often passive-like; VIII adds ت after the first letter; X adds است (ask for, consider). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>Form VII, انفعل</b>: something happens to itself: كسر (break) → <b>انكسر</b> (got broken); <b>انقطع</b> (be cut off). <b>Form VIII, افتعل</b>: <b>اجتمع</b> (meet), <b>انتظر</b> (wait), <b>اشترى</b> (buy).",
+          "examples": [
+            ["{انكسر} الكأس.", "inkasara l-kaʾs.", "The glass broke."],
+            [
+              "{اجتمعنا} يوم الأحد.",
+              "ijtamaʿnā yawm al-aḥad.",
+              "We met on Sunday."
+            ]
+          ]
+        },
+        {
+          "h": "Form X: استفعل",
+          "p": "<b>Form X, استفعل / يستفعل</b> often means seek or consider: <b>استخدم</b> (use), <b>استقبل</b> (receive), <b>استغرب</b> (find strange), <b>استطاع</b> (be able).",
+          "examples": [
+            [
+              "هل {تستخدم} هذا التطبيق؟",
+              "hal tastakhdimu hādhā t-taṭbīq?",
+              "Do you use this app?"
+            ],
+            [
+              "{استقبلونا} في المطار.",
+              "istaqbalūnā fī l-maṭār.",
+              "They met (received) us at the airport."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ الكهرباء.",
+          "en": "The electricity was cut off.",
+          "options": ["انقطعت", "قطعت", "تقطّعت", "استقطعت"],
+          "answer": "انقطعت",
+          "why": "Form VII: happens to itself."
+        },
+        {
+          "q": "＿ لك ساعة!",
+          "en": "I waited for you for an hour!",
+          "options": ["نظرتُ", "انتظرتُ", "استنظرتُ", "تناظرتُ"],
+          "answer": "انتظرتُ",
+          "why": "Form VIII: انتظر."
+        },
+        {
+          "q": "هل ＿ أن تساعدني؟",
+          "en": "Can you help me?",
+          "options": ["تطيع", "تطوع", "تستطيع", "تتطوع"],
+          "answer": "تستطيع",
+          "why": "Form X: استطاع."
+        },
+        {
+          "q": "ماذا ＿ أمس؟",
+          "en": "What did you buy yesterday?",
+          "options": ["شريتَ", "تشاريتَ", "استشريتَ", "اشتريتَ"],
+          "answer": "اشتريتَ",
+          "why": "Form VIII: اشترى."
+        },
+        {
+          "q": "الشركة ＿ تكنولوجيا جديدة.",
+          "en": "The company uses new technology.",
+          "options": ["تستخدم", "تخدم", "تتخدم", "خدّمت"],
+          "answer": "تستخدم",
+          "why": "Form X."
+        }
+      ]
+    },
+    {
+      "id": "diptotes",
+      "title": "Diptotes: words without tanwīn",
+      "particle": "ممنوع من الصرف",
+      "summary": "Some nouns (many names, broken plurals of certain patterns, أفعل adjectives) never take -n and use -a for the genitive. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Diptotes take only <b>-u</b> and <b>-a</b>, never tanwīn: <b>مساجدُ</b>، <b>أصدقاءُ</b>، <b>أحمرُ</b>. In the genitive without ال they use -a: في <b>مساجدَ</b> كثيرة. With ال or in iḍāfa they behave normally.",
+          "examples": [
+            [
+              "زرتُ {مدارسَ} كثيرة.",
+              "zurtu madārisa kathīra.",
+              "I visited many schools."
+            ],
+            ["هذا {أحمدُ}.", "hādhā aḥmadu.", "This is Ahmad."]
+          ]
+        },
+        {
+          "h": "Which words",
+          "p": "Common groups: <b>names</b> (أحمد، فاطمة، مصر، مكة), patterns <b>مَفاعِل / مَفاعيل</b> (مدارس، مفاتيح), <b>فُعَلاء / أفعِلاء</b> (وزراء، أصدقاء), adjectives <b>أفعل</b> (أكبر، أزرق).",
+          "examples": [
+            [
+              "سافرتُ إلى {مصرَ}.",
+              "sāfartu ilā miṣra.",
+              "I travelled to Egypt."
+            ],
+            [
+              "عندي {أصدقاءُ} كثيرون.",
+              "ʿindī aṣdiqāʾu kathīrūn.",
+              "I have many friends."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "في ＿ كثيرة",
+          "en": "in many mosques",
+          "options": ["مساجدَ", "مساجدٍ", "مساجدِ", "مساجداً"],
+          "answer": "مساجدَ",
+          "why": "Diptote genitive without ال: -a."
+        },
+        {
+          "q": "رأيتُ ＿.",
+          "en": "I saw Fatima.",
+          "options": ["فاطمةً", "فاطمةَ", "فاطمةٍ", "فاطمتاً"],
+          "answer": "فاطمةَ",
+          "why": "Names: no tanwīn."
+        },
+        {
+          "q": "Which word is a diptote?",
+          "en": "",
+          "options": ["كتاب", "رجل", "وزراء", "بيت"],
+          "answer": "وزراء",
+          "why": "فُعَلاء pattern."
+        },
+        {
+          "q": "في ＿",
+          "en": "in the schools",
+          "options": ["المدارسَ", "مدارسٍ", "المدارسً", "المدارسِ"],
+          "answer": "المدارسِ",
+          "why": "With ال: normal genitive -i."
+        },
+        {
+          "q": "قميص ＿",
+          "en": "a red shirt",
+          "options": ["أحمرُ", "أحمرٌ", "أحمراً", "حمراء"],
+          "answer": "أحمرُ",
+          "why": "أفعل colours: no tanwīn."
+        }
+      ]
+    },
+    {
+      "id": "law",
+      "title": "لو: unreal conditions",
+      "particle": "لو … لـ",
+      "summary": "لو + past introduces an unreal or past-unreal condition, and the result often starts with لـ. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>لو</b> + past tense in both halves, with <b>لـ</b> on the result: <b>لو</b> كنتُ غنياً <b>لـ</b>اشتريتُ بيتاً (If I were rich, I'd buy a house). It covers both present and past unreality.",
+          "examples": [
+            [
+              "{لو} عرفتُ، {لـ}أخبرتُك.",
+              "law ʿaraftu, la-akhbartuk.",
+              "If I'd known, I'd have told you."
+            ],
+            [
+              "{لو} كنتُ مكانك، {لـ}ما ذهبتُ.",
+              "law kuntu makānak, la-mā dhahabtu.",
+              "If I were you, I wouldn't go."
+            ]
+          ]
+        },
+        {
+          "h": "لولا and لو أنّ",
+          "p": "<b>لولا</b> + noun = if it weren't for: <b>لولا</b> مساعدتُك لفشلتُ. <b>لو أنّ</b> + noun/suffix is also common: لو أنّك جئت…",
+          "examples": [
+            [
+              "{لولا} الماء لما عاش أحد.",
+              "lawlā l-māʾ la-mā ʿāsha aḥad.",
+              "Without water no one would live."
+            ],
+            [
+              "{ليتني} كنتُ هناك.",
+              "laytanī kuntu hunāk.",
+              "I wish I'd been there."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "لو ＿ الوقت، لسافرت.",
+          "en": "If I had the time, I'd travel.",
+          "options": ["كان عندي", "يكون عندي", "سيكون عندي", "عندي سـ"],
+          "answer": "كان عندي",
+          "why": "لو + past."
+        },
+        {
+          "q": "لو درستَ ＿.",
+          "en": "If you'd studied, you'd have passed.",
+          "options": ["ستنجح", "لنجحتَ", "تنجح", "فنجحتَ"],
+          "answer": "لنجحتَ",
+          "why": "Result: لـ + past."
+        },
+        {
+          "q": "＿ أمي لما نجحت.",
+          "en": "If it weren't for my mother, I wouldn't have succeeded.",
+          "options": ["لو", "إذا", "لولا", "إن"],
+          "answer": "لولا",
+          "why": "لولا + noun."
+        },
+        {
+          "q": "Which is unreal?",
+          "en": "",
+          "options": [
+            "إذا كنت غنياً فاشترِ قصراً",
+            "إن شاء الله",
+            "إذا جاء سأخبره",
+            "لو كنت غنياً لاشتريت قصراً"
+          ],
+          "answer": "لو كنت غنياً لاشتريت قصراً",
+          "why": "لو marks the unreal."
+        },
+        {
+          "q": "لو ＿ مكانك لاعتذرت.",
+          "en": "If I were you, I'd apologise.",
+          "options": ["كنتُ", "أكون", "كنتَ", "سأكون"],
+          "answer": "كنتُ",
+          "why": "لو كنتُ مكانك."
+        }
+      ]
+    },
+    {
+      "id": "passive",
+      "title": "The passive: كُتِبَ، يُكتَب",
+      "particle": "فُعِلَ・يُفعَل",
+      "summary": "The internal passive changes the vowels: كَتَبَ → كُتِبَ, يَكتُب → يُكتَب; the doer is usually left out. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Past passive: <b>u – i</b>: كُتِبَ (was written), فُتِحَ، قُتِلَ. Present passive: <b>u – a</b>: يُكتَبُ، يُفتَحُ. Without vowel marks it looks the same as the active, so context decides.",
+          "examples": [
+            [
+              "{كُتِبَت} الرسالة بالعربية.",
+              "kutibat ar-risāla bil-ʿarabiyya.",
+              "The letter was written in Arabic."
+            ],
+            [
+              "{يُقال} إنه سافر.",
+              "yuqālu innahu sāfar.",
+              "It is said that he travelled."
+            ]
+          ]
+        },
+        {
+          "h": "Hollow verbs and alternatives",
+          "p": "Hollow verbs: <b>قِيلَ</b> (it was said), <b>بِيعَ</b> (was sold). Modern writing also uses form VII (انكسر) or <b>تمّ</b> + verbal noun: <b>تمّ بناء</b> الجسر (the bridge was built).",
+          "examples": [
+            [
+              "{وُلِدتُ} في بيروت.",
+              "wulidtu fī bayrūt.",
+              "I was born in Beirut."
+            ],
+            [
+              "{تمّ} افتتاح المتحف.",
+              "tamma iftitāḥ al-matḥaf.",
+              "The museum was opened."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ البيت عام ١٩٩٠.",
+          "en": "The house was built in 1990.",
+          "options": ["بُنِيَ", "بَنى", "يَبني", "بانٍ"],
+          "answer": "بُنِيَ",
+          "why": "Past passive of بنى: بُنِيَ."
+        },
+        {
+          "q": "أين ＿؟",
+          "en": "Where were you born?",
+          "options": ["وَلدتَ", "وُلِدتَ", "ولادة", "والد"],
+          "answer": "وُلِدتَ",
+          "why": "Passive: وُلِد."
+        },
+        {
+          "q": "＿ إن الطقس سيتحسن.",
+          "en": "It is said the weather will improve.",
+          "options": ["يقول", "قال", "يُقال", "قيل لـ"],
+          "answer": "يُقال",
+          "why": "Present passive: يُقال."
+        },
+        {
+          "q": "＿ إلغاء الرحلة.",
+          "en": "The flight was cancelled.",
+          "options": ["كان", "قد يتم", "يتمّ لم", "تمّ"],
+          "answer": "تمّ",
+          "why": "تمّ + verbal noun."
+        },
+        {
+          "q": "الباب ＿ كل صباح.",
+          "en": "The door is opened every morning.",
+          "options": ["يُفتَح", "يَفتَح", "فُتِح", "يفتحون"],
+          "answer": "يُفتَح",
+          "why": "Present passive: u–a."
+        }
+      ]
+    },
+    {
       "id": "nafs",
       "title": "نفس: self and same",
       "particle": "نفسي・نفس الشيء",
@@ -4557,6 +4764,243 @@
       ]
     },
     {
+      "id": "wishes",
+      "title": "Wishes and likeness: ليت, لعلّ, كأنّ",
+      "particle": "ليت・لعلّ・كأنّ",
+      "summary": "ليت (if only), لعلّ (perhaps, hopefully) and كأنّ (as if) are sisters of إنّ and take the accusative. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>ليت</b> = if only (often unreal): <b>ليتني</b> كنتُ معك. <b>لعلّ</b> = perhaps, hopefully: <b>لعلّك</b> بخير. Both take a noun in the accusative or a suffix.",
+          "examples": [
+            [
+              "{ليت} الشبابَ يعود.",
+              "layta sh-shabāba yaʿūd.",
+              "If only youth would return."
+            ],
+            ["{لعلّه} نائم.", "laʿallahu nāʾim.", "Perhaps he's asleep."]
+          ]
+        },
+        {
+          "h": "كأنّ",
+          "p": "<b>كأنّ</b> = as if, as though: <b>كأنّه</b> لم يسمع (as if he hadn't heard). <b>كما لو</b> + past is a common alternative.",
+          "examples": [
+            [
+              "ينظر إليّ {كأنّني} مجنون.",
+              "yanẓuru ilayya kaʾannanī majnūn.",
+              "He looks at me as if I were mad."
+            ],
+            [
+              "تتكلم {كما لو} كانت المديرة.",
+              "tatakallamu kamā law kānat al-mudīra.",
+              "She talks as if she were the boss."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ كنتُ غنياً!",
+          "en": "If only I were rich!",
+          "options": ["ليتني", "لعلّني", "كأنّني", "إنّني"],
+          "answer": "ليتني",
+          "why": "if only: ليت."
+        },
+        {
+          "q": "＿ المطر يتوقف قريباً.",
+          "en": "Hopefully the rain stops soon.",
+          "options": ["ليت", "لعلّ", "كأنّ", "لكن"],
+          "answer": "لعلّ",
+          "why": "hopefully: لعلّ."
+        },
+        {
+          "q": "يتصرف ＿ هو المدير.",
+          "en": "He acts as if he were the manager.",
+          "options": ["ليته", "لعلّه", "كأنّه", "لأنّه"],
+          "answer": "كأنّه",
+          "why": "as if: كأنّ."
+        },
+        {
+          "q": "ليت ＿ معنا.",
+          "en": "If only your brother were with us.",
+          "options": ["أخوك", "أخيك", "أخ", "أخاك"],
+          "answer": "أخاك",
+          "why": "After ليت: accusative."
+        },
+        {
+          "q": "＿ بخير.",
+          "en": "I hope you (pl.) are well.",
+          "options": ["لعلّكم", "لعلّ أنتم", "لعلّهم كم", "لعلّكم ال"],
+          "answer": "لعلّكم",
+          "why": "لعلّ + suffix: لعلّكم."
+        }
+      ]
+    },
+    {
+      "id": "amma",
+      "title": "أمّا … فـ: as for",
+      "particle": "أمّا … فـ",
+      "summary": "أمّا introduces a topic, and the comment starts with فـ: أمّا أنا فلا أوافق. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>أمّا</b> + topic, then <b>فـ</b> + comment: <b>أمّا</b> أخي <b>فـ</b>طبيب (As for my brother, he's a doctor). It is often used to contrast two things.",
+          "examples": [
+            [
+              "{أمّا} أنا {فـ}لا أحب القهوة.",
+              "ammā anā fa-lā uḥibbu l-qahwa.",
+              "As for me, I don't like coffee."
+            ],
+            [
+              "أخي يسكن هنا، {أمّا} أختي {فـ}في باريس.",
+              "akhī yaskunu hunā, ammā ukhtī fa-fī bārīs.",
+              "My brother lives here; my sister, on the other hand, is in Paris."
+            ]
+          ]
+        },
+        {
+          "h": "إمّا … وإمّا / أو",
+          "p": "Don't confuse it with <b>إمّا … أو / وإمّا</b> = either … or: <b>إمّا</b> أن تأتي <b>أو</b> أذهب أنا.",
+          "examples": [
+            [
+              "{إمّا} الآن {أو} أبداً.",
+              "immā l-āna aw abadan.",
+              "Now or never."
+            ],
+            [
+              "{أمّا} بعد،",
+              "ammā baʿd,",
+              "Now then, (opening a speech or letter)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "أمّا الطعام ＿.",
+          "en": "As for the food, it is delicious.",
+          "options": ["فلذيذ", "ولذيذ", "ثم لذيذ", "لكن لذيذ"],
+          "answer": "فلذيذ",
+          "why": "أمّا … فـ."
+        },
+        {
+          "q": "＿ أن تدرس أو تعمل.",
+          "en": "Either you study or you work.",
+          "options": ["أمّا", "إمّا", "أم", "إمّا لا"],
+          "answer": "إمّا",
+          "why": "either: إمّا."
+        },
+        {
+          "q": "＿ أختي فتعمل في بنك.",
+          "en": "As for my sister, she works in a bank.",
+          "options": ["إمّا", "أم", "أمّا", "إنّ"],
+          "answer": "أمّا",
+          "why": "as for: أمّا."
+        },
+        {
+          "q": "In letters, أمّا بعد means…",
+          "en": "",
+          "options": [
+            "Either… or",
+            "After this",
+            "Before that",
+            "Now then, to the point"
+          ],
+          "answer": "Now then, to the point",
+          "why": "Transition formula."
+        },
+        {
+          "q": "أمّا الرياضيات ＿ صعبة.",
+          "en": "As for maths, it's hard.",
+          "options": ["فهي", "وهي", "هي لكن", "ثم هي"],
+          "answer": "فهي",
+          "why": "فـ + comment."
+        }
+      ]
+    },
+    {
+      "id": "word-order",
+      "title": "Word order and verb agreement",
+      "particle": "VSO・SVO",
+      "summary": "Formal Arabic often starts with the verb (VSO); a verb before its subject is singular, after it fully agrees. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>Verbal sentence (VSO)</b>: verb first, singular, with gender agreement: <b>سافرَ</b> الطلابُ، <b>سافرتِ</b> الطالباتُ. <b>Nominal sentence (SVO)</b>: subject first, verb agrees fully: الطلابُ <b>سافروا</b>.",
+          "examples": [
+            [
+              "{وصلَ} الوزراءُ إلى القمة.",
+              "waṣala l-wuzarāʾ ilā l-qimma.",
+              "The ministers arrived at the summit."
+            ],
+            [
+              "الوزراءُ {وصلوا}.",
+              "al-wuzarāʾ waṣalū.",
+              "The ministers arrived."
+            ]
+          ]
+        },
+        {
+          "h": "Fronting for emphasis",
+          "p": "Objects and phrases can come first for emphasis: <b>إيّاك</b> نعبد (You alone we worship). Feminine agreement with a distant or non-human subject is often relaxed.",
+          "examples": [
+            [
+              "{في البيت} وجدتُ المفتاح.",
+              "fī l-bayt wajadtu l-miftāḥ.",
+              "It was at home that I found the key."
+            ],
+            [
+              "{قالت} الحكومةُ إن…",
+              "qālat al-ḥukūma inna…",
+              "The government said that…"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ المهندسون إلى الموقع.",
+          "en": "The engineers went to the site.",
+          "options": ["ذهبَ", "ذهبوا", "ذهبت", "ذهبنا"],
+          "answer": "ذهبَ",
+          "why": "VSO: singular."
+        },
+        {
+          "q": "المهندسون ＿ إلى الموقع.",
+          "en": "The engineers went to the site.",
+          "options": ["ذهبَ", "ذهبوا", "ذهبت", "ذهبتم"],
+          "answer": "ذهبوا",
+          "why": "SVO: full agreement."
+        },
+        {
+          "q": "＿ البنات الدرس.",
+          "en": "The girls studied the lesson.",
+          "options": ["درسنَ ال", "درسوا", "درستِ", "درسَ هن"],
+          "answer": "درستِ",
+          "why": "VSO with feminine subject: درستْ."
+        },
+        {
+          "q": "أعلنت ＿ عن قرار جديد.",
+          "en": "The government announced a new decision.",
+          "options": ["الحكومةَ", "الحكومةِ", "حكومةً", "الحكومةُ"],
+          "answer": "الحكومةُ",
+          "why": "Subject: nominative."
+        },
+        {
+          "q": "Which order is typical of formal news Arabic?",
+          "en": "",
+          "options": [
+            "verb–subject–object",
+            "subject–object–verb",
+            "object–verb–subject",
+            "verb–object–subject always"
+          ],
+          "answer": "verb–subject–object",
+          "why": "Formal Arabic: VSO."
+        }
+      ]
+    },
+    {
       "id": "tamyiz",
       "title": "Tamyīz: specifying with an accusative noun",
       "particle": "تمييز",
@@ -4703,291 +5147,6 @@
       ]
     },
     {
-      "id": "vocative",
-      "title": "Calling someone: يا",
-      "particle": "يا + noun",
-      "summary": "يا before a name or noun calls someone: يا أحمد, يا أستاذ. (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>يا</b> + name or title calls someone: <b>يا</b> سارة، <b>يا</b> دكتور. The noun has no ال and, in formal Arabic, ends in -u: يا محمدُ. With iḍāfa: <b>يا</b> أخي.",
-          "examples": [
-            [
-              "{يا} أمي، أين المفتاح؟",
-              "yā ummī, ayna l-miftāḥ?",
-              "Mum, where's the key?"
-            ],
-            ["شكراً {يا} صديقي.", "shukran yā ṣadīqī.", "Thanks, my friend."]
-          ]
-        },
-        {
-          "h": "Nouns with ال",
-          "p": "Before a noun with ال, use <b>يا أيها</b> (m.) / <b>يا أيتها</b> (f.): <b>يا أيها</b> الطلاب. In speech people just say <b>يا جماعة</b> (hey everyone).",
-          "examples": [
-            ["{يا أيها} الناس", "yā ayyuhā n-nās", "O people"],
-            ["{يا} جماعة، اسمعوا!", "yā jamāʿa, smaʿū!", "Listen, everyone!"]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ أستاذ، عندي سؤال.",
-          "en": "Sir, I have a question.",
-          "options": ["يا", "أيها", "هل", "إن"],
-          "answer": "يا",
-          "why": "Calling: يا."
-        },
-        {
-          "q": "يا ＿ الطلاب",
-          "en": "O students",
-          "options": ["يا", "أيها", "أنتم", "هؤلاء"],
-          "answer": "أيها",
-          "why": "Before ال: يا أيها."
-        },
-        {
-          "q": "＿ أختي!",
-          "en": "My sister! (calling)",
-          "options": ["أيتها", "هذه", "يا", "إلى"],
-          "answer": "يا",
-          "why": "يا + iḍāfa."
-        },
-        {
-          "q": "يا ＿ السيدات",
-          "en": "Ladies (O ladies)",
-          "options": ["أيها", "يا", "هؤلاء", "أيتها"],
-          "answer": "أيتها",
-          "why": "Feminine: يا أيتها."
-        },
-        {
-          "q": "A noun after يا (no iḍāfa) takes…",
-          "en": "",
-          "options": ["no ال", "ال always", "tanwin -an", "the genitive"],
-          "answer": "no ال",
-          "why": "يا + bare noun."
-        }
-      ]
-    },
-    {
-      "id": "wishes",
-      "title": "Wishes and likeness: ليت, لعلّ, كأنّ",
-      "particle": "ليت・لعلّ・كأنّ",
-      "summary": "ليت (if only), لعلّ (perhaps, hopefully) and كأنّ (as if) are sisters of إنّ and take the accusative. (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "<b>ليت</b> = if only (often unreal): <b>ليتني</b> كنتُ معك. <b>لعلّ</b> = perhaps, hopefully: <b>لعلّك</b> بخير. Both take a noun in the accusative or a suffix.",
-          "examples": [
-            [
-              "{ليت} الشبابَ يعود.",
-              "layta sh-shabāba yaʿūd.",
-              "If only youth would return."
-            ],
-            ["{لعلّه} نائم.", "laʿallahu nāʾim.", "Perhaps he's asleep."]
-          ]
-        },
-        {
-          "h": "كأنّ",
-          "p": "<b>كأنّ</b> = as if, as though: <b>كأنّه</b> لم يسمع (as if he hadn't heard). <b>كما لو</b> + past is a common alternative.",
-          "examples": [
-            [
-              "ينظر إليّ {كأنّني} مجنون.",
-              "yanẓuru ilayya kaʾannanī majnūn.",
-              "He looks at me as if I were mad."
-            ],
-            [
-              "تتكلم {كما لو} كانت المديرة.",
-              "tatakallamu kamā law kānat al-mudīra.",
-              "She talks as if she were the boss."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ كنتُ غنياً!",
-          "en": "If only I were rich!",
-          "options": ["ليتني", "لعلّني", "كأنّني", "إنّني"],
-          "answer": "ليتني",
-          "why": "if only: ليت."
-        },
-        {
-          "q": "＿ المطر يتوقف قريباً.",
-          "en": "Hopefully the rain stops soon.",
-          "options": ["ليت", "لعلّ", "كأنّ", "لكن"],
-          "answer": "لعلّ",
-          "why": "hopefully: لعلّ."
-        },
-        {
-          "q": "يتصرف ＿ هو المدير.",
-          "en": "He acts as if he were the manager.",
-          "options": ["ليته", "لعلّه", "كأنّه", "لأنّه"],
-          "answer": "كأنّه",
-          "why": "as if: كأنّ."
-        },
-        {
-          "q": "ليت ＿ معنا.",
-          "en": "If only your brother were with us.",
-          "options": ["أخوك", "أخيك", "أخ", "أخاك"],
-          "answer": "أخاك",
-          "why": "After ليت: accusative."
-        },
-        {
-          "q": "＿ بخير.",
-          "en": "I hope you (pl.) are well.",
-          "options": ["لعلّكم", "لعلّ أنتم", "لعلّهم كم", "لعلّكم ال"],
-          "answer": "لعلّكم",
-          "why": "لعلّ + suffix: لعلّكم."
-        }
-      ]
-    },
-    {
-      "id": "nisba",
-      "title": "Nationality and belonging: ـيّ",
-      "particle": "ـيّ・ـيّة",
-      "summary": "Add ـيّ (feminine ـيّة) to a place or noun to make an adjective of origin: مصر → مصريّ. (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "Drop ال and any final ة or ا, then add <b>ـيّ</b>: مصر → <b>مصريّ</b>، لبنان → <b>لبنانيّ</b>، العراق → عراقيّ. Feminine: <b>ـيّة</b>. Plural for people: ـيّون or a broken plural (عرب).",
-          "examples": [
-            ["أنا {مغربيّ}.", "anā maghribī.", "I'm Moroccan."],
-            ["هي {سوريّة}.", "hiya sūriyya.", "She's Syrian."]
-          ]
-        },
-        {
-          "h": "Beyond places",
-          "p": "The nisba also makes ordinary adjectives: علم → <b>علميّ</b> (scientific), شمس → <b>شمسيّ</b> (solar). The feminine ـيّة often names a field or ideology: <b>الاشتراكيّة</b>، <b>العربيّة</b> (Arabic language).",
-          "examples": [
-            [
-              "هل تتكلم {العربيّة}؟",
-              "hal tatakallamu l-ʿarabiyya?",
-              "Do you speak Arabic?"
-            ],
-            ["طاقة {شمسيّة}", "ṭāqa shamsiyya", "solar energy"]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "أنا ＿.",
-          "en": "I'm Jordanian (man).",
-          "options": ["أردنيّ", "أردنيّة", "الأردن", "أردن"],
-          "answer": "أردنيّ",
-          "why": "ـيّ."
-        },
-        {
-          "q": "هي ＿.",
-          "en": "She is Lebanese.",
-          "options": ["لبنانيّ", "لبنانيّة", "لبنان", "لبنانات"],
-          "answer": "لبنانيّة",
-          "why": "Feminine: ـيّة."
-        },
-        {
-          "q": "Iraq → ＿",
-          "en": "Iraqi",
-          "options": ["العراقيّ ال", "عراقان", "عراقيّ", "عرقيّ"],
-          "answer": "عراقيّ",
-          "why": "Drop ال: عراقيّ."
-        },
-        {
-          "q": "بحث ＿",
-          "en": "scientific research",
-          "options": ["علم", "عالم", "معلوم", "علميّ"],
-          "answer": "علميّ",
-          "why": "علم → علميّ."
-        },
-        {
-          "q": "هم ＿.",
-          "en": "They are Egyptians.",
-          "options": ["مصريّون", "مصريّة", "مصريّ", "مصرات"],
-          "answer": "مصريّون",
-          "why": "People plural: ـيّون."
-        }
-      ]
-    },
-    {
-      "id": "amma",
-      "title": "أمّا … فـ: as for",
-      "particle": "أمّا … فـ",
-      "summary": "أمّا introduces a topic, and the comment starts with فـ: أمّا أنا فلا أوافق. (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "<b>أمّا</b> + topic, then <b>فـ</b> + comment: <b>أمّا</b> أخي <b>فـ</b>طبيب (As for my brother, he's a doctor). It is often used to contrast two things.",
-          "examples": [
-            [
-              "{أمّا} أنا {فـ}لا أحب القهوة.",
-              "ammā anā fa-lā uḥibbu l-qahwa.",
-              "As for me, I don't like coffee."
-            ],
-            [
-              "أخي يسكن هنا، {أمّا} أختي {فـ}في باريس.",
-              "akhī yaskunu hunā, ammā ukhtī fa-fī bārīs.",
-              "My brother lives here; my sister, on the other hand, is in Paris."
-            ]
-          ]
-        },
-        {
-          "h": "إمّا … وإمّا / أو",
-          "p": "Don't confuse it with <b>إمّا … أو / وإمّا</b> = either … or: <b>إمّا</b> أن تأتي <b>أو</b> أذهب أنا.",
-          "examples": [
-            [
-              "{إمّا} الآن {أو} أبداً.",
-              "immā l-āna aw abadan.",
-              "Now or never."
-            ],
-            [
-              "{أمّا} بعد،",
-              "ammā baʿd,",
-              "Now then, (opening a speech or letter)"
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "أمّا الطعام ＿.",
-          "en": "As for the food, it is delicious.",
-          "options": ["فلذيذ", "ولذيذ", "ثم لذيذ", "لكن لذيذ"],
-          "answer": "فلذيذ",
-          "why": "أمّا … فـ."
-        },
-        {
-          "q": "＿ أن تدرس أو تعمل.",
-          "en": "Either you study or you work.",
-          "options": ["أمّا", "إمّا", "أم", "إمّا لا"],
-          "answer": "إمّا",
-          "why": "either: إمّا."
-        },
-        {
-          "q": "＿ أختي فتعمل في بنك.",
-          "en": "As for my sister, she works in a bank.",
-          "options": ["إمّا", "أم", "أمّا", "إنّ"],
-          "answer": "أمّا",
-          "why": "as for: أمّا."
-        },
-        {
-          "q": "In letters, أمّا بعد means…",
-          "en": "",
-          "options": [
-            "Either… or",
-            "After this",
-            "Before that",
-            "Now then, to the point"
-          ],
-          "answer": "Now then, to the point",
-          "why": "Transition formula."
-        },
-        {
-          "q": "أمّا الرياضيات ＿ صعبة.",
-          "en": "As for maths, it's hard.",
-          "options": ["فهي", "وهي", "هي لكن", "ثم هي"],
-          "answer": "فهي",
-          "why": "فـ + comment."
-        }
-      ]
-    },
-    {
       "id": "la-nafiya",
       "title": "لا of absolute negation: لا شكّ",
       "particle": "لا + اسم منصوب",
@@ -5126,165 +5285,6 @@
           "options": ["كم", "ما", "يا", "لا"],
           "answer": "كم",
           "why": "Spoken style: كم."
-        }
-      ]
-    },
-    {
-      "id": "word-order",
-      "title": "Word order and verb agreement",
-      "particle": "VSO・SVO",
-      "summary": "Formal Arabic often starts with the verb (VSO); a verb before its subject is singular, after it fully agrees. (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "<b>Verbal sentence (VSO)</b>: verb first, singular, with gender agreement: <b>سافرَ</b> الطلابُ، <b>سافرتِ</b> الطالباتُ. <b>Nominal sentence (SVO)</b>: subject first, verb agrees fully: الطلابُ <b>سافروا</b>.",
-          "examples": [
-            [
-              "{وصلَ} الوزراءُ إلى القمة.",
-              "waṣala l-wuzarāʾ ilā l-qimma.",
-              "The ministers arrived at the summit."
-            ],
-            [
-              "الوزراءُ {وصلوا}.",
-              "al-wuzarāʾ waṣalū.",
-              "The ministers arrived."
-            ]
-          ]
-        },
-        {
-          "h": "Fronting for emphasis",
-          "p": "Objects and phrases can come first for emphasis: <b>إيّاك</b> نعبد (You alone we worship). Feminine agreement with a distant or non-human subject is often relaxed.",
-          "examples": [
-            [
-              "{في البيت} وجدتُ المفتاح.",
-              "fī l-bayt wajadtu l-miftāḥ.",
-              "It was at home that I found the key."
-            ],
-            [
-              "{قالت} الحكومةُ إن…",
-              "qālat al-ḥukūma inna…",
-              "The government said that…"
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ المهندسون إلى الموقع.",
-          "en": "The engineers went to the site.",
-          "options": ["ذهبَ", "ذهبوا", "ذهبت", "ذهبنا"],
-          "answer": "ذهبَ",
-          "why": "VSO: singular."
-        },
-        {
-          "q": "المهندسون ＿ إلى الموقع.",
-          "en": "The engineers went to the site.",
-          "options": ["ذهبَ", "ذهبوا", "ذهبت", "ذهبتم"],
-          "answer": "ذهبوا",
-          "why": "SVO: full agreement."
-        },
-        {
-          "q": "＿ البنات الدرس.",
-          "en": "The girls studied the lesson.",
-          "options": ["درسنَ ال", "درسوا", "درستِ", "درسَ هن"],
-          "answer": "درستِ",
-          "why": "VSO with feminine subject: درستْ."
-        },
-        {
-          "q": "أعلنت ＿ عن قرار جديد.",
-          "en": "The government announced a new decision.",
-          "options": ["الحكومةَ", "الحكومةِ", "حكومةً", "الحكومةُ"],
-          "answer": "الحكومةُ",
-          "why": "Subject: nominative."
-        },
-        {
-          "q": "Which order is typical of formal news Arabic?",
-          "en": "",
-          "options": [
-            "verb–subject–object",
-            "subject–object–verb",
-            "object–verb–subject",
-            "verb–object–subject always"
-          ],
-          "answer": "verb–subject–object",
-          "why": "Formal Arabic: VSO."
-        }
-      ]
-    },
-    {
-      "id": "adverbs-time",
-      "title": "Frequency and time words: دائماً، أحياناً، أبداً",
-      "particle": "دائماً・أحياناً・أبداً",
-      "summary": "Many adverbs are accusative nouns ending in -an: دائماً, أحياناً, غالباً, أبداً (never, with a negative). (about A1–A2)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>دائماً</b> (always), <b>عادةً</b> (usually), <b>غالباً</b> (often), <b>أحياناً</b> (sometimes), <b>نادراً</b> (rarely). <b>أبداً</b> + a negative = never: <b>لا</b> أدخن <b>أبداً</b>.",
-          "examples": [
-            [
-              "أنا {دائماً} متأخر.",
-              "anā dāʾiman mutaʾakhkhir.",
-              "I'm always late."
-            ],
-            [
-              "{أحياناً} نأكل في المطعم.",
-              "aḥyānan naʾkulu fī l-maṭʿam.",
-              "Sometimes we eat at the restaurant."
-            ]
-          ]
-        },
-        {
-          "h": "Past never: قطّ",
-          "p": "For \"never\" in the past use <b>ما … قطّ</b> or <b>لم … أبداً</b>: <b>ما</b> رأيته <b>قطّ</b>. Other time words: <b>الآن</b> (now), <b>بعدين / فيما بعد</b> (later), <b>مبكراً</b> (early), <b>متأخراً</b> (late).",
-          "examples": [
-            [
-              "{ما} زرتُ اليابان {قطّ}.",
-              "mā zurtu l-yābān qaṭṭ.",
-              "I've never been to Japan."
-            ],
-            [
-              "سأتصل بك {فيما بعد}.",
-              "sa-attaṣilu bika fīmā baʿd.",
-              "I'll call you later."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "لا آكل اللحم ＿.",
-          "en": "I never eat meat.",
-          "options": ["أبداً", "دائماً", "أحياناً", "قطّ لا"],
-          "answer": "أبداً",
-          "why": "Negative + أبداً."
-        },
-        {
-          "q": "＿ أشرب الشاي في الصباح.",
-          "en": "I usually drink tea in the morning.",
-          "options": ["أبداً", "عادةً", "قطّ", "أمس"],
-          "answer": "عادةً",
-          "why": "usually: عادةً."
-        },
-        {
-          "q": "ما رأيته ＿.",
-          "en": "I've never seen him.",
-          "options": ["أبداً سـ", "دائماً", "قطّ", "الآن"],
-          "answer": "قطّ",
-          "why": "Past never: ما … قطّ."
-        },
-        {
-          "q": "نذهب إلى السينما ＿.",
-          "en": "We sometimes go to the cinema.",
-          "options": ["أبداً", "قطّ", "ليس", "أحياناً"],
-          "answer": "أحياناً",
-          "why": "sometimes: أحياناً."
-        },
-        {
-          "q": "وصلتُ ＿.",
-          "en": "I arrived early.",
-          "options": ["مبكراً", "مبكرٌ", "المبكر", "بكر"],
-          "answer": "مبكراً",
-          "why": "Adverb: -an."
         }
       ]
     }

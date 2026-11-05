@@ -7,7 +7,7 @@
     "Drills are { q, en, options, answer, why }; ＿ is the blank.",
     "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
     "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
-    "72 lessons, from A1 to C1. Lessons 7–72 were added to cover the rest of the beginner path and the main intermediate and advanced points."
+    "72 lessons, from A1 to C1. 66 lessons were added to cover the rest of the beginner path and the main intermediate and advanced points."
   ],
   "title": "Khmer first grammar",
   "intro": "Khmer, the language of Cambodia, is not tonal, and its words never change form. The order is subject – verb – object, describing words follow the noun, and helper words show time, negation and questions. The 72 lessons run from A1 to C1. They start with pronouns and polite words, ជា / នៅ / មាន, word order, មិន…ទេ and questions, time words and classifiers, then add ចង់, អាច and ត្រូវ, កំពុង, ហើយ and ធ្លាប់, ជាង, បើ for “if”, ព្រោះ for “because”, ដែល and ថា clauses and helper verbs like ឲ្យ and សាក … មើល, and end with the passive with ត្រូវ, កាន់តែ … កាន់តែ, unreal conditions, the negatives and connectors of written Khmer, and the words used for monks and the king. The romanization is a simple one; Khmer has more vowel sounds than it shows.",
@@ -814,142 +814,6 @@
       ]
     },
     {
-      "id": "can",
-      "title": "Can: អាច, ចេះ, បាន",
-      "particle": "អាច・ចេះ・បាន",
-      "summary": "អាច before a verb means \"be able to\". ចេះ means \"know how\", for skills. បាន after a verb means \"manage to\": ខ្ញុំស្ដាប់បាន (I can understand it). (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>អាច</b> + verb: <b>ថ្ងៃស្អែកខ្ញុំអាចមក</b>. <b>ចេះ</b> + verb: <b>ចេះហែលទឹក</b> can swim.",
-          "examples": [
-            [
-              "ថ្ងៃស្អែកខ្ញុំ{មិនអាច}មកទេ",
-              "Thngai saek khnhom min ach mok te.",
-              "I can't come tomorrow."
-            ],
-            [
-              "គាត់{ចេះ}និយាយភាសាខ្មែរ",
-              "Koat cheh niyeay pheasa khmer.",
-              "She can speak Khmer."
-            ]
-          ]
-        },
-        {
-          "h": "Manage, may I",
-          "p": "Verb + <b>បាន</b>: <b>ស្ដាប់បាន</b> can follow, <b>ធ្វើមិនបាន</b> can't do it. Asking: <b>… បានទេ?</b> is it OK to…?",
-          "examples": [
-            [
-              "ខ្ញុំ{ស្ដាប់មិនបាន}ទេ",
-              "Khnhom sdap min ban te.",
-              "I can't understand (what you said)."
-            ],
-            [
-              "ខ្ញុំអង្គុយទីនេះ{បានទេ}?",
-              "Khnhom angkuy ti nih ban te?",
-              "May I sit here?"
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ខ្ញុំ＿បើកឡាន",
-          "en": "I can drive.",
-          "options": ["ចេះ", "ចង់", "មាន", "នៅ"],
-          "answer": "ចេះ",
-          "why": "A skill: ចេះ."
-        },
-        {
-          "q": "ថ្ងៃនេះខ្ញុំ＿ទៅធ្វើការទេ",
-          "en": "I can't go to work today.",
-          "options": ["អាច", "មិនអាច", "មិនចេះ", "មិនមាន"],
-          "answer": "មិនអាច",
-          "why": "Unable: មិនអាច … ទេ."
-        },
-        {
-          "q": "ខ្ញុំថតរូបនៅទីនេះ＿?",
-          "en": "May I take photos here?",
-          "options": ["ចេះទេ", "អាចណា", "បានទេ", "ហើយ"],
-          "answer": "បានទេ",
-          "why": "Asking: … បានទេ?"
-        },
-        {
-          "q": "ប្រអប់នេះធ្ងន់ពេក ខ្ញុំលើក＿",
-          "en": "This box is too heavy, I can't lift it.",
-          "options": ["មិនចេះទេ", "មិនចង់ទេ", "ហើយ", "មិនរួចទេ"],
-          "answer": "មិនរួចទេ",
-          "why": "Physically can't: verb + មិនរួច."
-        }
-      ]
-    },
-    {
-      "id": "must-trov",
-      "title": "Must, need: ត្រូវ, ត្រូវការ",
-      "particle": "ត្រូវ・ត្រូវការ・មិនបាច់",
-      "summary": "ត្រូវ before a verb means \"must, have to\": ខ្ញុំត្រូវទៅ (I have to go). ត្រូវការ is \"need\", and មិនបាច់ is \"no need to\". (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>ត្រូវ</b> + verb: <b>ត្រូវក្រោកពីព្រលឹម</b> I have to get up early. Strong: <b>ត្រូវតែ</b> really must.",
-          "examples": [
-            [
-              "ខ្ញុំ{ត្រូវ}ទៅឥឡូវនេះ",
-              "Khnhom trov tov eilov nih.",
-              "I have to go now."
-            ],
-            [
-              "អ្នក{ត្រូវតែ}ផឹកថ្នាំ",
-              "Neak trov tae phek thnam.",
-              "You really must take the medicine."
-            ]
-          ]
-        },
-        {
-          "h": "Need, no need",
-          "p": "<b>ត្រូវការ</b> need: <b>ខ្ញុំត្រូវការជំនួយ</b>. <b>មិនបាច់</b> no need: <b>មិនបាច់បារម្ភទេ</b>.",
-          "examples": [
-            [
-              "ខ្ញុំ{ត្រូវការ}ជំនួយ",
-              "Khnhom trov ka chumnuoy.",
-              "I need help."
-            ],
-            ["{មិនបាច់}បារម្ភទេ", "Min bach barom te.", "No need to worry."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ថ្ងៃស្អែកខ្ញុំ＿ក្រោកពីព្រលឹម",
-          "en": "I have to get up early tomorrow.",
-          "options": ["ត្រូវ", "ចង់", "ចេះ", "មាន"],
-          "answer": "ត្រូវ",
-          "why": "Must: ត្រូវ."
-        },
-        {
-          "q": "អ្នក＿អ្វី?",
-          "en": "What do you need?",
-          "options": ["ត្រូវ", "ត្រូវការ", "ចេះ", "ជា"],
-          "answer": "ត្រូវការ",
-          "why": "Need: ត្រូវការ."
-        },
-        {
-          "q": "＿បង់លុយទេ",
-          "en": "There's no need to pay.",
-          "options": ["មិនអាច", "មិនចេះ", "មិនបាច់", "មិនចង់"],
-          "answer": "មិនបាច់",
-          "why": "No need: មិនបាច់."
-        },
-        {
-          "q": "កូនៗ＿តែធ្វើកិច្ចការផ្ទះ",
-          "en": "The children really must do their homework.",
-          "options": ["ចង់", "អាច", "មាន", "ត្រូវ"],
-          "answer": "ត្រូវ",
-          "why": "Really must: ត្រូវតែ."
-        }
-      ]
-    },
-    {
       "id": "imperative",
       "title": "Please: សូម",
       "particle": "សូម・ទៅ・ផង・ណា",
@@ -1128,6 +992,406 @@
           "options": ["កុំ", "ហាម", "មិន", "តោះ"],
           "answer": "តោះ",
           "why": "Let's: តោះ."
+        }
+      ]
+    },
+    {
+      "id": "with-also",
+      "title": "And, with, also: និង, ជាមួយ, ក៏ … ដែរ",
+      "particle": "និង・ជាមួយ・ក៏ … ដែរ",
+      "summary": "និង joins nouns (\"and\"), ជាមួយ means \"with\", and \"also, too\" is ក៏ before the verb with ដែរ at the end: ខ្ញុំក៏ទៅដែរ (I'm going too). (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>និង</b>: <b>បាយនិងសម្ល</b> rice and soup. <b>ជាមួយ</b>: <b>ទៅជាមួយមិត្ត</b> go with a friend.",
+          "examples": [
+            [
+              "ខ្ញុំញ៉ាំបាយ{និង}សម្ល",
+              "Khnhom nham bay ning samlar.",
+              "I'm having rice and soup."
+            ],
+            [
+              "ខ្ញុំទៅផ្សារ{ជាមួយ}ម្ដាយ",
+              "Khnhom tov phsar chea muoy mday.",
+              "I went to the market with my mother."
+            ]
+          ]
+        },
+        {
+          "h": "Also, too",
+          "p": "<b>ក៏</b> + verb + <b>ដែរ</b>: <b>គាត់ក៏ជាគ្រូដែរ</b> he's a teacher too. Short: <b>ខ្ញុំក៏អញ្ចឹងដែរ</b> me too.",
+          "examples": [
+            ["ខ្ញុំ{ក៏}ទៅ{ដែរ}", "Khnhom k'aw tov der.", "I'm going too."],
+            [
+              "ខ្ញុំសុខសប្បាយ {ចុះ}អ្នក{វិញ}?",
+              "Khnhom sok sabbay. Choh neak vinh?",
+              "I'm well. And you?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "កាហ្វេ＿នំមួយ",
+          "en": "Coffee and a cake.",
+          "options": ["និង", "ជាមួយ", "ក៏", "ដែរ"],
+          "answer": "និង",
+          "why": "And (nouns): និង."
+        },
+        {
+          "q": "ខ្ញុំនិយាយ＿គាត់",
+          "en": "I talked with her.",
+          "options": ["និង", "ជាមួយ", "ក៏", "ដែរ"],
+          "answer": "ជាមួយ",
+          "why": "With: ជាមួយ."
+        },
+        {
+          "q": "គាត់ក៏ជាគ្រូពេទ្យ＿",
+          "en": "He's a doctor too.",
+          "options": ["ទេ", "ហើយ", "ដែរ", "និង"],
+          "answer": "ដែរ",
+          "why": "Also: ក៏ … ដែរ."
+        },
+        {
+          "q": "ខ្ញុំឃ្លានហើយ ＿អ្នកវិញ?",
+          "en": "I'm hungry. What about you?",
+          "options": ["និង", "ជាមួយ", "ដែរ", "ចុះ"],
+          "answer": "ចុះ",
+          "why": "And you?: ចុះ … វិញ."
+        }
+      ]
+    },
+    {
+      "id": "clock-days",
+      "title": "The time and days: ម៉ោង, ថ្ងៃ",
+      "particle": "ម៉ោង・ថ្ងៃ・កន្លះ",
+      "summary": "ម៉ោង comes before the number for the time: ម៉ោងប្រាំ (five o'clock). Days are ថ្ងៃ + name: ថ្ងៃច័ន្ទ (Monday). (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ឥឡូវម៉ោងប៉ុន្មាន?</b> what time is it? <b>ម៉ោងបីកន្លះ</b> half past three. <b>ព្រឹក</b> morning, <b>ល្ងាច</b> evening, <b>យប់</b> night.",
+          "examples": [
+            [
+              "ឥឡូវ{ម៉ោងប៉ុន្មាន}?",
+              "Eilov maong ponman?",
+              "What time is it now?"
+            ],
+            ["{ម៉ោងបីកន្លះ}", "Maong bei kanlah.", "Half past three."]
+          ]
+        },
+        {
+          "h": "Days",
+          "p": "<b>ថ្ងៃច័ន្ទ</b> Monday, <b>ថ្ងៃអង្គារ</b> Tuesday, <b>ថ្ងៃពុធ</b> Wednesday, <b>ថ្ងៃព្រហស្បតិ៍</b> Thursday, <b>ថ្ងៃសុក្រ</b> Friday, <b>ថ្ងៃសៅរ៍</b> Saturday, <b>ថ្ងៃអាទិត្យ</b> Sunday.",
+          "examples": [
+            [
+              "{ថ្ងៃសុក្រ}យើងជួបគ្នា",
+              "Thngai sok yeung chuop knea.",
+              "We'll meet on Friday."
+            ],
+            [
+              "{ម្សិលមិញ}ភ្លៀងខ្លាំង",
+              "Msel minh phlieng khlang.",
+              "It rained hard yesterday."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ឥឡូវ＿ប្រាំបួន",
+          "en": "It's nine o'clock now.",
+          "options": ["ម៉ោង", "ថ្ងៃ", "ឆ្នាំ", "ខែ"],
+          "answer": "ម៉ោង",
+          "why": "O'clock: ម៉ោង before the number."
+        },
+        {
+          "q": "ម៉ោងពីរ＿",
+          "en": "Half past two.",
+          "options": ["ហើយ", "កន្លះ", "ថ្ងៃ", "ម៉ោង"],
+          "answer": "កន្លះ",
+          "why": "Half: កន្លះ."
+        },
+        {
+          "q": "＿ខ្ញុំសម្រាក",
+          "en": "I rest on Sunday.",
+          "options": ["ម៉ោងអាទិត្យ", "ខែអាទិត្យ", "ថ្ងៃអាទិត្យ", "អាទិត្យថ្ងៃ"],
+          "answer": "ថ្ងៃអាទិត្យ",
+          "why": "Day: ថ្ងៃ + name."
+        },
+        {
+          "q": "ខ្ញុំក្រោកពីគេងម៉ោងប្រាំមួយ＿",
+          "en": "I get up at six in the morning.",
+          "options": ["យប់", "ល្ងាច", "ថ្ងៃ", "ព្រឹក"],
+          "answer": "ព្រឹក",
+          "why": "Morning: ព្រឹក."
+        }
+      ]
+    },
+    {
+      "id": "degree",
+      "title": "Very, too, a bit: ណាស់, ពេក, បន្តិច",
+      "particle": "ណាស់・ពេក・បន្តិច・ខ្លាំង",
+      "summary": "After an adjective, ណាស់ means \"very\", ពេក \"too\", and បន្តិច \"a bit\": ក្ដៅណាស់ (very hot), ថ្លៃពេក (too expensive). (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ណាស់</b>: <b>ឆ្ងាញ់ណាស់</b> delicious! <b>ពេក</b>: <b>ឆ្ងាយពេក</b> too far. <b>បន្តិច</b>: <b>ហត់បន្តិច</b> a bit tired.",
+          "examples": [
+            [
+              "ម្ហូបនេះ{ឆ្ងាញ់ណាស់}",
+              "Mhoub nih chhnganh nas.",
+              "This food is very tasty."
+            ],
+            [
+              "អាវនេះ{ថ្លៃពេក}",
+              "Av nih thlai pek.",
+              "This shirt is too expensive."
+            ]
+          ]
+        },
+        {
+          "h": "Not very, really",
+          "p": "<b>មិនសូវ … ទេ</b> not very: <b>មិនសូវក្ដៅទេ</b>. <b>ខ្លាំង</b> strongly: <b>ភ្លៀងខ្លាំង</b> it's raining hard.",
+          "examples": [
+            [
+              "ថ្ងៃនេះ{មិនសូវ}ក្ដៅ{ទេ}",
+              "Thngai nih min sov kdau te.",
+              "It's not very hot today."
+            ],
+            ["ខ្ញុំ{ហត់បន្តិច}", "Khnhom hot bantech.", "I'm a bit tired."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ស្អាត＿!",
+          "en": "Very beautiful!",
+          "options": ["ណាស់", "ពេក", "បន្តិច", "ទេ"],
+          "answer": "ណាស់",
+          "why": "Very: ណាស់."
+        },
+        {
+          "q": "កាហ្វេនេះក្ដៅ＿ ខ្ញុំផឹកមិនបាន",
+          "en": "This coffee is too hot, I can't drink it.",
+          "options": ["ណាស់", "ពេក", "បន្តិច", "ខ្លាំង"],
+          "answer": "ពេក",
+          "why": "Too: ពេក."
+        },
+        {
+          "q": "ភាសាខ្មែរ＿ពិបាកទេ",
+          "en": "Khmer isn't very hard.",
+          "options": ["មិន", "កុំ", "មិនសូវ", "ពេក"],
+          "answer": "មិនសូវ",
+          "why": "Not very: មិនសូវ … ទេ."
+        },
+        {
+          "q": "សូមនិយាយយឺត＿",
+          "en": "Please speak a bit more slowly.",
+          "options": ["ណាស់", "ពេក", "ទេ", "បន្តិច"],
+          "answer": "បន្តិច",
+          "why": "A bit: បន្តិច."
+        }
+      ]
+    },
+    {
+      "id": "liking",
+      "title": "Like and love: ចូលចិត្ត, ស្រឡាញ់",
+      "particle": "ចូលចិត្ត・ស្រឡាញ់・មិនចូលចិត្ត",
+      "summary": "ចូលចិត្ត means \"like\" and takes a noun or a verb: ខ្ញុំចូលចិត្តមើលកុន (I like watching films). ស្រឡាញ់ is \"love\". (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ចូលចិត្ត</b> + noun or verb: <b>ចូលចិត្តផ្លែស្វាយ</b>, <b>ចូលចិត្តហែលទឹក</b>. Negative: <b>មិនចូលចិត្ត … ទេ</b>.",
+          "examples": [
+            [
+              "ខ្ញុំ{ចូលចិត្ត}ផ្លែស្វាយ",
+              "Khnhom chaul chet phle svay.",
+              "I like mangoes."
+            ],
+            [
+              "ខ្ញុំ{មិនចូលចិត្ត}ម្ហូបហឹរ{ទេ}",
+              "Khnhom min chaul chet mhoub heur te.",
+              "I don't like spicy food."
+            ]
+          ]
+        },
+        {
+          "h": "Love, prefer",
+          "p": "<b>ស្រឡាញ់</b> love, <b>ចូលចិត្ត … ជាង</b> prefer: <b>ចូលចិត្តតែជាងកាហ្វេ</b>.",
+          "examples": [
+            ["ខ្ញុំ{ស្រឡាញ់}អ្នក", "Khnhom srolanh neak.", "I love you."],
+            [
+              "ខ្ញុំ{ចូលចិត្ត}តែ{ជាង}កាហ្វេ",
+              "Khnhom chaul chet tae cheang kafe.",
+              "I prefer tea to coffee."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ខ្ញុំ＿មើលកុន",
+          "en": "I like watching films.",
+          "options": ["ចូលចិត្ត", "ចង់បាន", "ត្រូវការ", "ធ្លាប់"],
+          "answer": "ចូលចិត្ត",
+          "why": "Like: ចូលចិត្ត."
+        },
+        {
+          "q": "គាត់មិនចូលចិត្តត្រី＿",
+          "en": "She doesn't like fish.",
+          "options": ["ហើយ", "ទេ", "ទៅ", "ណាស់"],
+          "answer": "ទេ",
+          "why": "Negative: មិន … ទេ."
+        },
+        {
+          "q": "ម្ដាយ＿កូន",
+          "en": "A mother loves her child.",
+          "options": ["ចូលចិត្ត", "ចង់", "ស្រឡាញ់", "ត្រូវ"],
+          "answer": "ស្រឡាញ់",
+          "why": "Love: ស្រឡាញ់."
+        },
+        {
+          "q": "ខ្ញុំចូលចិត្តភ្នំ＿សមុទ្រ",
+          "en": "I prefer the mountains to the sea.",
+          "options": ["ដូច", "និង", "ណាស់", "ជាង"],
+          "answer": "ជាង",
+          "why": "Prefer: ចូលចិត្ត … ជាង."
+        }
+      ]
+    },
+    {
+      "id": "can",
+      "title": "Can: អាច, ចេះ, បាន",
+      "particle": "អាច・ចេះ・បាន",
+      "summary": "អាច before a verb means \"be able to\". ចេះ means \"know how\", for skills. បាន after a verb means \"manage to\": ខ្ញុំស្ដាប់បាន (I can understand it). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>អាច</b> + verb: <b>ថ្ងៃស្អែកខ្ញុំអាចមក</b>. <b>ចេះ</b> + verb: <b>ចេះហែលទឹក</b> can swim.",
+          "examples": [
+            [
+              "ថ្ងៃស្អែកខ្ញុំ{មិនអាច}មកទេ",
+              "Thngai saek khnhom min ach mok te.",
+              "I can't come tomorrow."
+            ],
+            [
+              "គាត់{ចេះ}និយាយភាសាខ្មែរ",
+              "Koat cheh niyeay pheasa khmer.",
+              "She can speak Khmer."
+            ]
+          ]
+        },
+        {
+          "h": "Manage, may I",
+          "p": "Verb + <b>បាន</b>: <b>ស្ដាប់បាន</b> can follow, <b>ធ្វើមិនបាន</b> can't do it. Asking: <b>… បានទេ?</b> is it OK to…?",
+          "examples": [
+            [
+              "ខ្ញុំ{ស្ដាប់មិនបាន}ទេ",
+              "Khnhom sdap min ban te.",
+              "I can't understand (what you said)."
+            ],
+            [
+              "ខ្ញុំអង្គុយទីនេះ{បានទេ}?",
+              "Khnhom angkuy ti nih ban te?",
+              "May I sit here?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ខ្ញុំ＿បើកឡាន",
+          "en": "I can drive.",
+          "options": ["ចេះ", "ចង់", "មាន", "នៅ"],
+          "answer": "ចេះ",
+          "why": "A skill: ចេះ."
+        },
+        {
+          "q": "ថ្ងៃនេះខ្ញុំ＿ទៅធ្វើការទេ",
+          "en": "I can't go to work today.",
+          "options": ["អាច", "មិនអាច", "មិនចេះ", "មិនមាន"],
+          "answer": "មិនអាច",
+          "why": "Unable: មិនអាច … ទេ."
+        },
+        {
+          "q": "ខ្ញុំថតរូបនៅទីនេះ＿?",
+          "en": "May I take photos here?",
+          "options": ["ចេះទេ", "អាចណា", "បានទេ", "ហើយ"],
+          "answer": "បានទេ",
+          "why": "Asking: … បានទេ?"
+        },
+        {
+          "q": "ប្រអប់នេះធ្ងន់ពេក ខ្ញុំលើក＿",
+          "en": "This box is too heavy, I can't lift it.",
+          "options": ["មិនចេះទេ", "មិនចង់ទេ", "ហើយ", "មិនរួចទេ"],
+          "answer": "មិនរួចទេ",
+          "why": "Physically can't: verb + មិនរួច."
+        }
+      ]
+    },
+    {
+      "id": "must-trov",
+      "title": "Must, need: ត្រូវ, ត្រូវការ",
+      "particle": "ត្រូវ・ត្រូវការ・មិនបាច់",
+      "summary": "ត្រូវ before a verb means \"must, have to\": ខ្ញុំត្រូវទៅ (I have to go). ត្រូវការ is \"need\", and មិនបាច់ is \"no need to\". (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ត្រូវ</b> + verb: <b>ត្រូវក្រោកពីព្រលឹម</b> I have to get up early. Strong: <b>ត្រូវតែ</b> really must.",
+          "examples": [
+            [
+              "ខ្ញុំ{ត្រូវ}ទៅឥឡូវនេះ",
+              "Khnhom trov tov eilov nih.",
+              "I have to go now."
+            ],
+            [
+              "អ្នក{ត្រូវតែ}ផឹកថ្នាំ",
+              "Neak trov tae phek thnam.",
+              "You really must take the medicine."
+            ]
+          ]
+        },
+        {
+          "h": "Need, no need",
+          "p": "<b>ត្រូវការ</b> need: <b>ខ្ញុំត្រូវការជំនួយ</b>. <b>មិនបាច់</b> no need: <b>មិនបាច់បារម្ភទេ</b>.",
+          "examples": [
+            [
+              "ខ្ញុំ{ត្រូវការ}ជំនួយ",
+              "Khnhom trov ka chumnuoy.",
+              "I need help."
+            ],
+            ["{មិនបាច់}បារម្ភទេ", "Min bach barom te.", "No need to worry."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ថ្ងៃស្អែកខ្ញុំ＿ក្រោកពីព្រលឹម",
+          "en": "I have to get up early tomorrow.",
+          "options": ["ត្រូវ", "ចង់", "ចេះ", "មាន"],
+          "answer": "ត្រូវ",
+          "why": "Must: ត្រូវ."
+        },
+        {
+          "q": "អ្នក＿អ្វី?",
+          "en": "What do you need?",
+          "options": ["ត្រូវ", "ត្រូវការ", "ចេះ", "ជា"],
+          "answer": "ត្រូវការ",
+          "why": "Need: ត្រូវការ."
+        },
+        {
+          "q": "＿បង់លុយទេ",
+          "en": "There's no need to pay.",
+          "options": ["មិនអាច", "មិនចេះ", "មិនបាច់", "មិនចង់"],
+          "answer": "មិនបាច់",
+          "why": "No need: មិនបាច់."
+        },
+        {
+          "q": "កូនៗ＿តែធ្វើកិច្ចការផ្ទះ",
+          "en": "The children really must do their homework.",
+          "options": ["ចង់", "អាច", "មាន", "ត្រូវ"],
+          "answer": "ត្រូវ",
+          "why": "Really must: ត្រូវតែ."
         }
       ]
     },
@@ -1462,72 +1726,6 @@
       ]
     },
     {
-      "id": "with-also",
-      "title": "And, with, also: និង, ជាមួយ, ក៏ … ដែរ",
-      "particle": "និង・ជាមួយ・ក៏ … ដែរ",
-      "summary": "និង joins nouns (\"and\"), ជាមួយ means \"with\", and \"also, too\" is ក៏ before the verb with ដែរ at the end: ខ្ញុំក៏ទៅដែរ (I'm going too). (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>និង</b>: <b>បាយនិងសម្ល</b> rice and soup. <b>ជាមួយ</b>: <b>ទៅជាមួយមិត្ត</b> go with a friend.",
-          "examples": [
-            [
-              "ខ្ញុំញ៉ាំបាយ{និង}សម្ល",
-              "Khnhom nham bay ning samlar.",
-              "I'm having rice and soup."
-            ],
-            [
-              "ខ្ញុំទៅផ្សារ{ជាមួយ}ម្ដាយ",
-              "Khnhom tov phsar chea muoy mday.",
-              "I went to the market with my mother."
-            ]
-          ]
-        },
-        {
-          "h": "Also, too",
-          "p": "<b>ក៏</b> + verb + <b>ដែរ</b>: <b>គាត់ក៏ជាគ្រូដែរ</b> he's a teacher too. Short: <b>ខ្ញុំក៏អញ្ចឹងដែរ</b> me too.",
-          "examples": [
-            ["ខ្ញុំ{ក៏}ទៅ{ដែរ}", "Khnhom k'aw tov der.", "I'm going too."],
-            [
-              "ខ្ញុំសុខសប្បាយ {ចុះ}អ្នក{វិញ}?",
-              "Khnhom sok sabbay. Choh neak vinh?",
-              "I'm well. And you?"
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "កាហ្វេ＿នំមួយ",
-          "en": "Coffee and a cake.",
-          "options": ["និង", "ជាមួយ", "ក៏", "ដែរ"],
-          "answer": "និង",
-          "why": "And (nouns): និង."
-        },
-        {
-          "q": "ខ្ញុំនិយាយ＿គាត់",
-          "en": "I talked with her.",
-          "options": ["និង", "ជាមួយ", "ក៏", "ដែរ"],
-          "answer": "ជាមួយ",
-          "why": "With: ជាមួយ."
-        },
-        {
-          "q": "គាត់ក៏ជាគ្រូពេទ្យ＿",
-          "en": "He's a doctor too.",
-          "options": ["ទេ", "ហើយ", "ដែរ", "និង"],
-          "answer": "ដែរ",
-          "why": "Also: ក៏ … ដែរ."
-        },
-        {
-          "q": "ខ្ញុំឃ្លានហើយ ＿អ្នកវិញ?",
-          "en": "I'm hungry. What about you?",
-          "options": ["និង", "ជាមួយ", "ដែរ", "ចុះ"],
-          "answer": "ចុះ",
-          "why": "And you?: ចុះ … វិញ."
-        }
-      ]
-    },
-    {
       "id": "place-words",
       "title": "On, in, under: លើ, ក្នុង, ក្រោម",
       "particle": "នៅលើ・នៅក្នុង・នៅក្រោម",
@@ -1660,204 +1858,6 @@
           "options": ["ពី", "ទៅ", "នៅ", "ដល់"],
           "answer": "ដល់",
           "why": "Arrive: មកដល់."
-        }
-      ]
-    },
-    {
-      "id": "clock-days",
-      "title": "The time and days: ម៉ោង, ថ្ងៃ",
-      "particle": "ម៉ោង・ថ្ងៃ・កន្លះ",
-      "summary": "ម៉ោង comes before the number for the time: ម៉ោងប្រាំ (five o'clock). Days are ថ្ងៃ + name: ថ្ងៃច័ន្ទ (Monday). (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>ឥឡូវម៉ោងប៉ុន្មាន?</b> what time is it? <b>ម៉ោងបីកន្លះ</b> half past three. <b>ព្រឹក</b> morning, <b>ល្ងាច</b> evening, <b>យប់</b> night.",
-          "examples": [
-            [
-              "ឥឡូវ{ម៉ោងប៉ុន្មាន}?",
-              "Eilov maong ponman?",
-              "What time is it now?"
-            ],
-            ["{ម៉ោងបីកន្លះ}", "Maong bei kanlah.", "Half past three."]
-          ]
-        },
-        {
-          "h": "Days",
-          "p": "<b>ថ្ងៃច័ន្ទ</b> Monday, <b>ថ្ងៃអង្គារ</b> Tuesday, <b>ថ្ងៃពុធ</b> Wednesday, <b>ថ្ងៃព្រហស្បតិ៍</b> Thursday, <b>ថ្ងៃសុក្រ</b> Friday, <b>ថ្ងៃសៅរ៍</b> Saturday, <b>ថ្ងៃអាទិត្យ</b> Sunday.",
-          "examples": [
-            [
-              "{ថ្ងៃសុក្រ}យើងជួបគ្នា",
-              "Thngai sok yeung chuop knea.",
-              "We'll meet on Friday."
-            ],
-            [
-              "{ម្សិលមិញ}ភ្លៀងខ្លាំង",
-              "Msel minh phlieng khlang.",
-              "It rained hard yesterday."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ឥឡូវ＿ប្រាំបួន",
-          "en": "It's nine o'clock now.",
-          "options": ["ម៉ោង", "ថ្ងៃ", "ឆ្នាំ", "ខែ"],
-          "answer": "ម៉ោង",
-          "why": "O'clock: ម៉ោង before the number."
-        },
-        {
-          "q": "ម៉ោងពីរ＿",
-          "en": "Half past two.",
-          "options": ["ហើយ", "កន្លះ", "ថ្ងៃ", "ម៉ោង"],
-          "answer": "កន្លះ",
-          "why": "Half: កន្លះ."
-        },
-        {
-          "q": "＿ខ្ញុំសម្រាក",
-          "en": "I rest on Sunday.",
-          "options": ["ម៉ោងអាទិត្យ", "ខែអាទិត្យ", "ថ្ងៃអាទិត្យ", "អាទិត្យថ្ងៃ"],
-          "answer": "ថ្ងៃអាទិត្យ",
-          "why": "Day: ថ្ងៃ + name."
-        },
-        {
-          "q": "ខ្ញុំក្រោកពីគេងម៉ោងប្រាំមួយ＿",
-          "en": "I get up at six in the morning.",
-          "options": ["យប់", "ល្ងាច", "ថ្ងៃ", "ព្រឹក"],
-          "answer": "ព្រឹក",
-          "why": "Morning: ព្រឹក."
-        }
-      ]
-    },
-    {
-      "id": "degree",
-      "title": "Very, too, a bit: ណាស់, ពេក, បន្តិច",
-      "particle": "ណាស់・ពេក・បន្តិច・ខ្លាំង",
-      "summary": "After an adjective, ណាស់ means \"very\", ពេក \"too\", and បន្តិច \"a bit\": ក្ដៅណាស់ (very hot), ថ្លៃពេក (too expensive). (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>ណាស់</b>: <b>ឆ្ងាញ់ណាស់</b> delicious! <b>ពេក</b>: <b>ឆ្ងាយពេក</b> too far. <b>បន្តិច</b>: <b>ហត់បន្តិច</b> a bit tired.",
-          "examples": [
-            [
-              "ម្ហូបនេះ{ឆ្ងាញ់ណាស់}",
-              "Mhoub nih chhnganh nas.",
-              "This food is very tasty."
-            ],
-            [
-              "អាវនេះ{ថ្លៃពេក}",
-              "Av nih thlai pek.",
-              "This shirt is too expensive."
-            ]
-          ]
-        },
-        {
-          "h": "Not very, really",
-          "p": "<b>មិនសូវ … ទេ</b> not very: <b>មិនសូវក្ដៅទេ</b>. <b>ខ្លាំង</b> strongly: <b>ភ្លៀងខ្លាំង</b> it's raining hard.",
-          "examples": [
-            [
-              "ថ្ងៃនេះ{មិនសូវ}ក្ដៅ{ទេ}",
-              "Thngai nih min sov kdau te.",
-              "It's not very hot today."
-            ],
-            ["ខ្ញុំ{ហត់បន្តិច}", "Khnhom hot bantech.", "I'm a bit tired."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ស្អាត＿!",
-          "en": "Very beautiful!",
-          "options": ["ណាស់", "ពេក", "បន្តិច", "ទេ"],
-          "answer": "ណាស់",
-          "why": "Very: ណាស់."
-        },
-        {
-          "q": "កាហ្វេនេះក្ដៅ＿ ខ្ញុំផឹកមិនបាន",
-          "en": "This coffee is too hot, I can't drink it.",
-          "options": ["ណាស់", "ពេក", "បន្តិច", "ខ្លាំង"],
-          "answer": "ពេក",
-          "why": "Too: ពេក."
-        },
-        {
-          "q": "ភាសាខ្មែរ＿ពិបាកទេ",
-          "en": "Khmer isn't very hard.",
-          "options": ["មិន", "កុំ", "មិនសូវ", "ពេក"],
-          "answer": "មិនសូវ",
-          "why": "Not very: មិនសូវ … ទេ."
-        },
-        {
-          "q": "សូមនិយាយយឺត＿",
-          "en": "Please speak a bit more slowly.",
-          "options": ["ណាស់", "ពេក", "ទេ", "បន្តិច"],
-          "answer": "បន្តិច",
-          "why": "A bit: បន្តិច."
-        }
-      ]
-    },
-    {
-      "id": "liking",
-      "title": "Like and love: ចូលចិត្ត, ស្រឡាញ់",
-      "particle": "ចូលចិត្ត・ស្រឡាញ់・មិនចូលចិត្ត",
-      "summary": "ចូលចិត្ត means \"like\" and takes a noun or a verb: ខ្ញុំចូលចិត្តមើលកុន (I like watching films). ស្រឡាញ់ is \"love\". (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>ចូលចិត្ត</b> + noun or verb: <b>ចូលចិត្តផ្លែស្វាយ</b>, <b>ចូលចិត្តហែលទឹក</b>. Negative: <b>មិនចូលចិត្ត … ទេ</b>.",
-          "examples": [
-            [
-              "ខ្ញុំ{ចូលចិត្ត}ផ្លែស្វាយ",
-              "Khnhom chaul chet phle svay.",
-              "I like mangoes."
-            ],
-            [
-              "ខ្ញុំ{មិនចូលចិត្ត}ម្ហូបហឹរ{ទេ}",
-              "Khnhom min chaul chet mhoub heur te.",
-              "I don't like spicy food."
-            ]
-          ]
-        },
-        {
-          "h": "Love, prefer",
-          "p": "<b>ស្រឡាញ់</b> love, <b>ចូលចិត្ត … ជាង</b> prefer: <b>ចូលចិត្តតែជាងកាហ្វេ</b>.",
-          "examples": [
-            ["ខ្ញុំ{ស្រឡាញ់}អ្នក", "Khnhom srolanh neak.", "I love you."],
-            [
-              "ខ្ញុំ{ចូលចិត្ត}តែ{ជាង}កាហ្វេ",
-              "Khnhom chaul chet tae cheang kafe.",
-              "I prefer tea to coffee."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ខ្ញុំ＿មើលកុន",
-          "en": "I like watching films.",
-          "options": ["ចូលចិត្ត", "ចង់បាន", "ត្រូវការ", "ធ្លាប់"],
-          "answer": "ចូលចិត្ត",
-          "why": "Like: ចូលចិត្ត."
-        },
-        {
-          "q": "គាត់មិនចូលចិត្តត្រី＿",
-          "en": "She doesn't like fish.",
-          "options": ["ហើយ", "ទេ", "ទៅ", "ណាស់"],
-          "answer": "ទេ",
-          "why": "Negative: មិន … ទេ."
-        },
-        {
-          "q": "ម្ដាយ＿កូន",
-          "en": "A mother loves her child.",
-          "options": ["ចូលចិត្ត", "ចង់", "ស្រឡាញ់", "ត្រូវ"],
-          "answer": "ស្រឡាញ់",
-          "why": "Love: ស្រឡាញ់."
-        },
-        {
-          "q": "ខ្ញុំចូលចិត្តភ្នំ＿សមុទ្រ",
-          "en": "I prefer the mountains to the sea.",
-          "options": ["ដូច", "និង", "ណាស់", "ជាង"],
-          "answer": "ជាង",
-          "why": "Prefer: ចូលចិត្ត … ជាង."
         }
       ]
     },
@@ -2760,212 +2760,6 @@
       ]
     },
     {
-      "id": "even",
-      "title": "Even: សូម្បីតែ … ក៏",
-      "particle": "សូម្បីតែ・ក៏ … ដែរ",
-      "summary": "សូម្បីតែ before a word means \"even\", and the verb takes ក៏: សូម្បីតែក្មេងក៏ដឹង (even a child knows). (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "<b>សូម្បីតែ</b> X <b>ក៏</b> verb: <b>សូម្បីតែគ្រូក៏មិនដឹង</b> even the teacher doesn't know.",
-          "examples": [
-            [
-              "{សូម្បីតែ}ក្មេង{ក៏}ដឹង",
-              "Sambei tae kmeng k'aw doeng.",
-              "Even a child knows."
-            ],
-            [
-              "{សូម្បីតែ}គ្រូ{ក៏}មិនដឹងដែរ",
-              "Sambei tae kru k'aw min doeng der.",
-              "Even the teacher doesn't know."
-            ]
-          ]
-        },
-        {
-          "h": "Not even one",
-          "p": "<b>មួយ</b> + classifier + <b>ក៏</b> + negative + <b>ដែរ</b>: <b>មួយរៀលក៏គ្មានដែរ</b> not even one riel.",
-          "examples": [
-            [
-              "{មួយរៀលក៏}គ្មាន{ដែរ}",
-              "Muoy riel k'aw kmean der.",
-              "I don't have even one riel."
-            ],
-            [
-              "{ម្នាក់ក៏}មិនមក{ដែរ}",
-              "Mneak k'aw min mok der.",
-              "Not a single person came."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ឪពុកក៏មិនដឹង",
-          "en": "Even Dad doesn't know.",
-          "options": ["សូម្បីតែ", "តែ", "ដែល", "ថា"],
-          "answer": "សូម្បីតែ",
-          "why": "Even: សូម្បីតែ."
-        },
-        {
-          "q": "សូម្បីតែទឹក＿មិនទាន់ផឹកផង",
-          "en": "I haven't even had water yet.",
-          "options": ["តែ", "ក៏", "ថា", "ដែល"],
-          "answer": "ក៏",
-          "why": "Even … ក៏."
-        },
-        {
-          "q": "នំមួយ＿ក៏មិននៅសល់ដែរ",
-          "en": "Not a single piece of cake is left.",
-          "options": ["ក៏", "ទេ", "ដុំ", "តែ"],
-          "answer": "ដុំ",
-          "why": "Not even one: មួយ + classifier + ក៏."
-        },
-        {
-          "q": "សូម្បីតែគ្រូក៏ឆ្លើយ＿",
-          "en": "Even a teacher couldn't answer.",
-          "options": ["បាន", "ហើយ", "ណាស់", "មិនបាន"],
-          "answer": "មិនបាន",
-          "why": "Negative after ក៏."
-        }
-      ]
-    },
-    {
-      "id": "probability",
-      "title": "Probably: ប្រហែលជា",
-      "particle": "ប្រហែលជា・ប្រាកដជា・អាច",
-      "summary": "ប្រហែលជា means \"probably, maybe\": ប្រហែលជាភ្លៀង (it'll probably rain). ប្រាកដជា is \"surely\", and អាច … means \"might\". (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "<b>ប្រហែល</b> or <b>ប្រហែលជា</b> before the verb or the sentence: <b>គាត់ប្រហែលជាមកដល់ហើយ</b>.",
-          "examples": [
-            [
-              "ល្ងាចនេះ{ប្រហែលជា}ភ្លៀង",
-              "Lngeach nih prohael chea phlieng.",
-              "It'll probably rain this evening."
-            ],
-            [
-              "គាត់{ប្រហែលជា}មកដល់ហើយ",
-              "Koat prohael chea mok dol haey.",
-              "He's probably arrived by now."
-            ]
-          ]
-        },
-        {
-          "h": "Surely, might",
-          "p": "<b>ប្រាកដជា</b> or <b>ច្បាស់ជា</b> surely, <b>អាច</b> might: <b>គាត់អាចមកយឺត</b> he might be late.",
-          "examples": [
-            [
-              "កុំបារម្ភ អ្នក{ប្រាកដជា}ប្រឡងជាប់",
-              "Kom barom, neak prakat chea prolong choap.",
-              "Don't worry, you'll surely pass."
-            ],
-            [
-              "គាត់{អាច}មកយឺតបន្តិច",
-              "Koat ach mok yuet bantech.",
-              "He might be a little late."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ថ្ងៃស្អែក＿ក្ដៅ",
-          "en": "It'll probably be hot tomorrow.",
-          "options": ["ប្រហែលជា", "ធ្លាប់", "កំពុង", "ត្រូវ"],
-          "answer": "ប្រហែលជា",
-          "why": "Probably: ប្រហែលជា."
-        },
-        {
-          "q": "កុំបារម្ភ វា＿ល្អទេ",
-          "en": "Don't worry, it'll surely be fine.",
-          "options": ["ធ្លាប់", "ប្រាកដជា", "មិនដែល", "កំពុង"],
-          "answer": "ប្រាកដជា",
-          "why": "Surely: ប្រាកដជា."
-        },
-        {
-          "q": "ឡានក្រុង＿មកយឺត",
-          "en": "The bus might be late.",
-          "options": ["ចេះ", "ធ្លាប់", "អាច", "ចង់"],
-          "answer": "អាច",
-          "why": "Might: អាច."
-        },
-        {
-          "q": "＿គាត់នៅផ្ទះ",
-          "en": "Maybe he's at home.",
-          "options": ["ប្រាកដ", "ធ្លាប់", "ត្រូវ", "ប្រហែល"],
-          "answer": "ប្រហែល",
-          "why": "Maybe: ប្រហែល."
-        }
-      ]
-    },
-    {
-      "id": "seem",
-      "title": "It seems: ដូចជា, មើលទៅ",
-      "particle": "ដូចជា・មើលទៅ・ហាក់ដូចជា",
-      "summary": "ដូចជា before a verb or adjective means \"seems, looks like\": គាត់ដូចជាឈឺ (he seems ill). មើលទៅ is \"it looks\", and ហាក់ដូចជា is the written form. (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "<b>ដូចជា</b>: <b>គាត់ដូចជាហត់</b>. <b>មើលទៅ</b> + adjective: <b>មើលទៅឆ្ងាញ់</b> it looks tasty.",
-          "examples": [
-            ["គាត់{ដូចជា}ឈឺ", "Koat dauch chea chheu.", "He seems ill."],
-            [
-              "ម្ហូបនេះ{មើលទៅ}ឆ្ងាញ់",
-              "Mhoub nih meul tov chhnganh.",
-              "This food looks tasty."
-            ]
-          ]
-        },
-        {
-          "h": "As if, written",
-          "p": "<b>ដូចជា … អញ្ចឹង</b> as if. Written: <b>ហាក់ដូចជា</b> it appears that.",
-          "examples": [
-            [
-              "{មើលទៅដូចជា}ភ្លៀង",
-              "Meul tov dauch chea phlieng.",
-              "It looks like rain."
-            ],
-            [
-              "ស្ថានការណ៍{ហាក់ដូចជា}ប្រសើរឡើង",
-              "Sthanakar hak dauch chea proseur laeung.",
-              "The situation appears to be improving."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ពួកគេ＿សប្បាយ",
-          "en": "They seem happy.",
-          "options": ["ដូចជា", "ដែល", "ថា", "ឲ្យ"],
-          "answer": "ដូចជា",
-          "why": "Seems: ដូចជា."
-        },
-        {
-          "q": "នំនេះ＿ឆ្ងាញ់",
-          "en": "This cake looks tasty.",
-          "options": ["ថា", "មើលទៅ", "ដែល", "ផង"],
-          "answer": "មើលទៅ",
-          "why": "Looks: មើលទៅ."
-        },
-        {
-          "q": "គាត់ធ្វើ＿មិនដឹងអ្វីអញ្ចឹង",
-          "en": "He acts as if he knows nothing.",
-          "options": ["ដែល", "ថា", "ដូចជា", "ព្រោះ"],
-          "answer": "ដូចជា",
-          "why": "As if: ដូចជា … អញ្ចឹង."
-        },
-        {
-          "q": "ហាងនោះ＿បិទ",
-          "en": "That shop seems to be closed.",
-          "options": ["ដែល", "ថា", "ទេ", "ដូចជា"],
-          "answer": "ដូចជា",
-          "why": "Seems: ដូចជា."
-        }
-      ]
-    },
-    {
       "id": "should",
       "title": "Should: គួរ, គួរតែ",
       "particle": "គួរ・គួរតែ・មិនគួរ",
@@ -3102,76 +2896,6 @@
       ]
     },
     {
-      "id": "end-words",
-      "title": "Isn't it?, back, so: មែនទេ, វិញ, អញ្ចឹង",
-      "particle": "មែនទេ・វិញ・អញ្ចឹង・ណា",
-      "summary": "Small words carry a lot: មែនទេ? (isn't it? right?), វិញ (back, in return, instead), អញ្ចឹង (so, in that case) and ណា (softener for a command). (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "<b>មែនទេ?</b> right?: <b>អ្នកជាគ្រូ មែនទេ?</b>. <b>ណា</b>: <b>មកណា</b> come on.",
-          "examples": [
-            [
-              "អ្នកជាគ្រូ {មែនទេ}?",
-              "Neak chea kru, men te?",
-              "You're a teacher, aren't you?"
-            ],
-            [
-              "ថ្ងៃនេះក្ដៅ {មែនទេ}?",
-              "Thngai nih kdau, men te?",
-              "It's hot today, isn't it?"
-            ]
-          ]
-        },
-        {
-          "h": "Back, so then",
-          "p": "<b>វិញ</b>: <b>មកវិញ</b> come back, <b>ឲ្យវិញ</b> give back, <b>ចុះអ្នកវិញ?</b> and you? <b>អញ្ចឹង</b> so, in that case.",
-          "examples": [
-            [
-              "ខ្ញុំនឹង{មកវិញ}ឆាប់ៗ",
-              "Khnhom nung mok vinh chhap chhap.",
-              "I'll be back soon."
-            ],
-            [
-              "{អញ្ចឹង} យើងទៅថ្ងៃស្អែក",
-              "Anhcheung yeung tov thngai saek.",
-              "In that case, let's go tomorrow."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "គាត់មកពីបារាំង ＿?",
-          "en": "He's from France, isn't he?",
-          "options": ["មែនទេ", "វិញ", "អញ្ចឹង", "ណា"],
-          "answer": "មែនទេ",
-          "why": "Right?: មែនទេ."
-        },
-        {
-          "q": "សូមឲ្យលុយខ្ញុំ＿",
-          "en": "Please give me my money back.",
-          "options": ["មែនទេ", "វិញ", "អញ្ចឹង", "ណាស់"],
-          "answer": "វិញ",
-          "why": "Back: វិញ."
-        },
-        {
-          "q": "＿ ខ្ញុំទៅតែម្នាក់ឯង",
-          "en": "In that case, I'll go alone.",
-          "options": ["មែនទេ", "វិញ", "អញ្ចឹង", "ណា"],
-          "answer": "អញ្ចឹង",
-          "why": "So: អញ្ចឹង."
-        },
-        {
-          "q": "ញ៉ាំ＿ កូន",
-          "en": "Eat up now, dear.",
-          "options": ["មែនទេ", "វិញ", "អញ្ចឹង", "ណា"],
-          "answer": "ណា",
-          "why": "Softener: ណា."
-        }
-      ]
-    },
-    {
       "id": "address",
       "title": "Sir, big brother: លោក, បង, ប្អូន",
       "particle": "លោក・អ្នកស្រី・បង・ប្អូន・ពូ・មីង",
@@ -3300,76 +3024,6 @@
           "options": ["រាល់គ្នា", "គ្រប់", "ម្នាក់ឯង", "ទាំងអស់គ្នា"],
           "answer": "ទាំងអស់គ្នា",
           "why": "All together: ទាំងអស់គ្នា."
-        }
-      ]
-    },
-    {
-      "id": "indefinites",
-      "title": "Someone, nobody: អ្នកណាម្នាក់, គ្មាននរណា",
-      "particle": "ណាមួយ・មួយ・គ្មាន … ទេ",
-      "summary": "Question words + ម្នាក់ or មួយ make \"some-\": អ្នកណាម្នាក់ (someone), អ្វីមួយ (something). With a negative they mean \"no-\": ខ្ញុំមិនឃើញនរណាទេ (I didn't see anybody). គ្មាន is \"there is no\". (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "<b>អ្នកណាម្នាក់</b> someone, <b>អ្វីមួយ</b> something, <b>កន្លែងណាមួយ</b> somewhere, <b>ថ្ងៃណាមួយ</b> some day.",
-          "examples": [
-            [
-              "{អ្នកណាម្នាក់}គោះទ្វារ",
-              "Neak na mneak kuoh tvea.",
-              "Someone is knocking at the door."
-            ],
-            [
-              "ខ្ញុំចង់ញ៉ាំ{អ្វីមួយ}",
-              "Khnhom chang nham avei muoy.",
-              "I want to eat something."
-            ]
-          ]
-        },
-        {
-          "h": "Nobody, nothing",
-          "p": "<b>មិន … នរណាទេ</b>, <b>មិន … អ្វីទេ</b>, <b>មិន … ណាទេ</b>. <b>គ្មាន</b> there's no: <b>គ្មាននរណានៅផ្ទះទេ</b>.",
-          "examples": [
-            [
-              "{គ្មាននរណា}នៅផ្ទះ{ទេ}",
-              "Kmean norea nov phteah te.",
-              "There's nobody at home."
-            ],
-            [
-              "ខ្ញុំ{មិន}ដឹង{អ្វីទេ}",
-              "Khnhom min doeng avei te.",
-              "I don't know anything."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿យកទូរសព្ទខ្ញុំ",
-          "en": "Someone took my phone.",
-          "options": ["អ្នកណាម្នាក់", "គ្មាននរណា", "នរណា", "ម្នាក់ឯង"],
-          "answer": "អ្នកណាម្នាក់",
-          "why": "Someone: អ្នកណាម្នាក់."
-        },
-        {
-          "q": "ថ្ងៃនេះខ្ញុំមិនទៅ＿ទេ",
-          "en": "I'm not going anywhere today.",
-          "options": ["អ្វី", "ណា", "នរណា", "ណាមួយ"],
-          "answer": "ណា",
-          "why": "Nowhere: មិន … ណាទេ."
-        },
-        {
-          "q": "យើងនឹងជួបគ្នា＿",
-          "en": "We'll meet again some day.",
-          "options": ["រាល់ថ្ងៃ", "ថ្ងៃនេះ", "ថ្ងៃណាមួយ", "គ្មានថ្ងៃ"],
-          "answer": "ថ្ងៃណាមួយ",
-          "why": "Some day: ថ្ងៃណាមួយ."
-        },
-        {
-          "q": "＿លុយទេ",
-          "en": "There's no money.",
-          "options": ["មិន", "កុំ", "ហាម", "គ្មាន"],
-          "answer": "គ្មាន",
-          "why": "There's no: គ្មាន."
         }
       ]
     },
@@ -3576,6 +3230,352 @@
           "options": ["ហើយ", "ទេ", "ណាស់", "សិន"],
           "answer": "សិន",
           "why": "First: សិន."
+        }
+      ]
+    },
+    {
+      "id": "even",
+      "title": "Even: សូម្បីតែ … ក៏",
+      "particle": "សូម្បីតែ・ក៏ … ដែរ",
+      "summary": "សូម្បីតែ before a word means \"even\", and the verb takes ក៏: សូម្បីតែក្មេងក៏ដឹង (even a child knows). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>សូម្បីតែ</b> X <b>ក៏</b> verb: <b>សូម្បីតែគ្រូក៏មិនដឹង</b> even the teacher doesn't know.",
+          "examples": [
+            [
+              "{សូម្បីតែ}ក្មេង{ក៏}ដឹង",
+              "Sambei tae kmeng k'aw doeng.",
+              "Even a child knows."
+            ],
+            [
+              "{សូម្បីតែ}គ្រូ{ក៏}មិនដឹងដែរ",
+              "Sambei tae kru k'aw min doeng der.",
+              "Even the teacher doesn't know."
+            ]
+          ]
+        },
+        {
+          "h": "Not even one",
+          "p": "<b>មួយ</b> + classifier + <b>ក៏</b> + negative + <b>ដែរ</b>: <b>មួយរៀលក៏គ្មានដែរ</b> not even one riel.",
+          "examples": [
+            [
+              "{មួយរៀលក៏}គ្មាន{ដែរ}",
+              "Muoy riel k'aw kmean der.",
+              "I don't have even one riel."
+            ],
+            [
+              "{ម្នាក់ក៏}មិនមក{ដែរ}",
+              "Mneak k'aw min mok der.",
+              "Not a single person came."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ឪពុកក៏មិនដឹង",
+          "en": "Even Dad doesn't know.",
+          "options": ["សូម្បីតែ", "តែ", "ដែល", "ថា"],
+          "answer": "សូម្បីតែ",
+          "why": "Even: សូម្បីតែ."
+        },
+        {
+          "q": "សូម្បីតែទឹក＿មិនទាន់ផឹកផង",
+          "en": "I haven't even had water yet.",
+          "options": ["តែ", "ក៏", "ថា", "ដែល"],
+          "answer": "ក៏",
+          "why": "Even … ក៏."
+        },
+        {
+          "q": "នំមួយ＿ក៏មិននៅសល់ដែរ",
+          "en": "Not a single piece of cake is left.",
+          "options": ["ក៏", "ទេ", "ដុំ", "តែ"],
+          "answer": "ដុំ",
+          "why": "Not even one: មួយ + classifier + ក៏."
+        },
+        {
+          "q": "សូម្បីតែគ្រូក៏ឆ្លើយ＿",
+          "en": "Even a teacher couldn't answer.",
+          "options": ["បាន", "ហើយ", "ណាស់", "មិនបាន"],
+          "answer": "មិនបាន",
+          "why": "Negative after ក៏."
+        }
+      ]
+    },
+    {
+      "id": "probability",
+      "title": "Probably: ប្រហែលជា",
+      "particle": "ប្រហែលជា・ប្រាកដជា・អាច",
+      "summary": "ប្រហែលជា means \"probably, maybe\": ប្រហែលជាភ្លៀង (it'll probably rain). ប្រាកដជា is \"surely\", and អាច … means \"might\". (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>ប្រហែល</b> or <b>ប្រហែលជា</b> before the verb or the sentence: <b>គាត់ប្រហែលជាមកដល់ហើយ</b>.",
+          "examples": [
+            [
+              "ល្ងាចនេះ{ប្រហែលជា}ភ្លៀង",
+              "Lngeach nih prohael chea phlieng.",
+              "It'll probably rain this evening."
+            ],
+            [
+              "គាត់{ប្រហែលជា}មកដល់ហើយ",
+              "Koat prohael chea mok dol haey.",
+              "He's probably arrived by now."
+            ]
+          ]
+        },
+        {
+          "h": "Surely, might",
+          "p": "<b>ប្រាកដជា</b> or <b>ច្បាស់ជា</b> surely, <b>អាច</b> might: <b>គាត់អាចមកយឺត</b> he might be late.",
+          "examples": [
+            [
+              "កុំបារម្ភ អ្នក{ប្រាកដជា}ប្រឡងជាប់",
+              "Kom barom, neak prakat chea prolong choap.",
+              "Don't worry, you'll surely pass."
+            ],
+            [
+              "គាត់{អាច}មកយឺតបន្តិច",
+              "Koat ach mok yuet bantech.",
+              "He might be a little late."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ថ្ងៃស្អែក＿ក្ដៅ",
+          "en": "It'll probably be hot tomorrow.",
+          "options": ["ប្រហែលជា", "ធ្លាប់", "កំពុង", "ត្រូវ"],
+          "answer": "ប្រហែលជា",
+          "why": "Probably: ប្រហែលជា."
+        },
+        {
+          "q": "កុំបារម្ភ វា＿ល្អទេ",
+          "en": "Don't worry, it'll surely be fine.",
+          "options": ["ធ្លាប់", "ប្រាកដជា", "មិនដែល", "កំពុង"],
+          "answer": "ប្រាកដជា",
+          "why": "Surely: ប្រាកដជា."
+        },
+        {
+          "q": "ឡានក្រុង＿មកយឺត",
+          "en": "The bus might be late.",
+          "options": ["ចេះ", "ធ្លាប់", "អាច", "ចង់"],
+          "answer": "អាច",
+          "why": "Might: អាច."
+        },
+        {
+          "q": "＿គាត់នៅផ្ទះ",
+          "en": "Maybe he's at home.",
+          "options": ["ប្រាកដ", "ធ្លាប់", "ត្រូវ", "ប្រហែល"],
+          "answer": "ប្រហែល",
+          "why": "Maybe: ប្រហែល."
+        }
+      ]
+    },
+    {
+      "id": "seem",
+      "title": "It seems: ដូចជា, មើលទៅ",
+      "particle": "ដូចជា・មើលទៅ・ហាក់ដូចជា",
+      "summary": "ដូចជា before a verb or adjective means \"seems, looks like\": គាត់ដូចជាឈឺ (he seems ill). មើលទៅ is \"it looks\", and ហាក់ដូចជា is the written form. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>ដូចជា</b>: <b>គាត់ដូចជាហត់</b>. <b>មើលទៅ</b> + adjective: <b>មើលទៅឆ្ងាញ់</b> it looks tasty.",
+          "examples": [
+            ["គាត់{ដូចជា}ឈឺ", "Koat dauch chea chheu.", "He seems ill."],
+            [
+              "ម្ហូបនេះ{មើលទៅ}ឆ្ងាញ់",
+              "Mhoub nih meul tov chhnganh.",
+              "This food looks tasty."
+            ]
+          ]
+        },
+        {
+          "h": "As if, written",
+          "p": "<b>ដូចជា … អញ្ចឹង</b> as if. Written: <b>ហាក់ដូចជា</b> it appears that.",
+          "examples": [
+            [
+              "{មើលទៅដូចជា}ភ្លៀង",
+              "Meul tov dauch chea phlieng.",
+              "It looks like rain."
+            ],
+            [
+              "ស្ថានការណ៍{ហាក់ដូចជា}ប្រសើរឡើង",
+              "Sthanakar hak dauch chea proseur laeung.",
+              "The situation appears to be improving."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ពួកគេ＿សប្បាយ",
+          "en": "They seem happy.",
+          "options": ["ដូចជា", "ដែល", "ថា", "ឲ្យ"],
+          "answer": "ដូចជា",
+          "why": "Seems: ដូចជា."
+        },
+        {
+          "q": "នំនេះ＿ឆ្ងាញ់",
+          "en": "This cake looks tasty.",
+          "options": ["ថា", "មើលទៅ", "ដែល", "ផង"],
+          "answer": "មើលទៅ",
+          "why": "Looks: មើលទៅ."
+        },
+        {
+          "q": "គាត់ធ្វើ＿មិនដឹងអ្វីអញ្ចឹង",
+          "en": "He acts as if he knows nothing.",
+          "options": ["ដែល", "ថា", "ដូចជា", "ព្រោះ"],
+          "answer": "ដូចជា",
+          "why": "As if: ដូចជា … អញ្ចឹង."
+        },
+        {
+          "q": "ហាងនោះ＿បិទ",
+          "en": "That shop seems to be closed.",
+          "options": ["ដែល", "ថា", "ទេ", "ដូចជា"],
+          "answer": "ដូចជា",
+          "why": "Seems: ដូចជា."
+        }
+      ]
+    },
+    {
+      "id": "end-words",
+      "title": "Isn't it?, back, so: មែនទេ, វិញ, អញ្ចឹង",
+      "particle": "មែនទេ・វិញ・អញ្ចឹង・ណា",
+      "summary": "Small words carry a lot: មែនទេ? (isn't it? right?), វិញ (back, in return, instead), អញ្ចឹង (so, in that case) and ណា (softener for a command). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>មែនទេ?</b> right?: <b>អ្នកជាគ្រូ មែនទេ?</b>. <b>ណា</b>: <b>មកណា</b> come on.",
+          "examples": [
+            [
+              "អ្នកជាគ្រូ {មែនទេ}?",
+              "Neak chea kru, men te?",
+              "You're a teacher, aren't you?"
+            ],
+            [
+              "ថ្ងៃនេះក្ដៅ {មែនទេ}?",
+              "Thngai nih kdau, men te?",
+              "It's hot today, isn't it?"
+            ]
+          ]
+        },
+        {
+          "h": "Back, so then",
+          "p": "<b>វិញ</b>: <b>មកវិញ</b> come back, <b>ឲ្យវិញ</b> give back, <b>ចុះអ្នកវិញ?</b> and you? <b>អញ្ចឹង</b> so, in that case.",
+          "examples": [
+            [
+              "ខ្ញុំនឹង{មកវិញ}ឆាប់ៗ",
+              "Khnhom nung mok vinh chhap chhap.",
+              "I'll be back soon."
+            ],
+            [
+              "{អញ្ចឹង} យើងទៅថ្ងៃស្អែក",
+              "Anhcheung yeung tov thngai saek.",
+              "In that case, let's go tomorrow."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "គាត់មកពីបារាំង ＿?",
+          "en": "He's from France, isn't he?",
+          "options": ["មែនទេ", "វិញ", "អញ្ចឹង", "ណា"],
+          "answer": "មែនទេ",
+          "why": "Right?: មែនទេ."
+        },
+        {
+          "q": "សូមឲ្យលុយខ្ញុំ＿",
+          "en": "Please give me my money back.",
+          "options": ["មែនទេ", "វិញ", "អញ្ចឹង", "ណាស់"],
+          "answer": "វិញ",
+          "why": "Back: វិញ."
+        },
+        {
+          "q": "＿ ខ្ញុំទៅតែម្នាក់ឯង",
+          "en": "In that case, I'll go alone.",
+          "options": ["មែនទេ", "វិញ", "អញ្ចឹង", "ណា"],
+          "answer": "អញ្ចឹង",
+          "why": "So: អញ្ចឹង."
+        },
+        {
+          "q": "ញ៉ាំ＿ កូន",
+          "en": "Eat up now, dear.",
+          "options": ["មែនទេ", "វិញ", "អញ្ចឹង", "ណា"],
+          "answer": "ណា",
+          "why": "Softener: ណា."
+        }
+      ]
+    },
+    {
+      "id": "indefinites",
+      "title": "Someone, nobody: អ្នកណាម្នាក់, គ្មាននរណា",
+      "particle": "ណាមួយ・មួយ・គ្មាន … ទេ",
+      "summary": "Question words + ម្នាក់ or មួយ make \"some-\": អ្នកណាម្នាក់ (someone), អ្វីមួយ (something). With a negative they mean \"no-\": ខ្ញុំមិនឃើញនរណាទេ (I didn't see anybody). គ្មាន is \"there is no\". (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>អ្នកណាម្នាក់</b> someone, <b>អ្វីមួយ</b> something, <b>កន្លែងណាមួយ</b> somewhere, <b>ថ្ងៃណាមួយ</b> some day.",
+          "examples": [
+            [
+              "{អ្នកណាម្នាក់}គោះទ្វារ",
+              "Neak na mneak kuoh tvea.",
+              "Someone is knocking at the door."
+            ],
+            [
+              "ខ្ញុំចង់ញ៉ាំ{អ្វីមួយ}",
+              "Khnhom chang nham avei muoy.",
+              "I want to eat something."
+            ]
+          ]
+        },
+        {
+          "h": "Nobody, nothing",
+          "p": "<b>មិន … នរណាទេ</b>, <b>មិន … អ្វីទេ</b>, <b>មិន … ណាទេ</b>. <b>គ្មាន</b> there's no: <b>គ្មាននរណានៅផ្ទះទេ</b>.",
+          "examples": [
+            [
+              "{គ្មាននរណា}នៅផ្ទះ{ទេ}",
+              "Kmean norea nov phteah te.",
+              "There's nobody at home."
+            ],
+            [
+              "ខ្ញុំ{មិន}ដឹង{អ្វីទេ}",
+              "Khnhom min doeng avei te.",
+              "I don't know anything."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿យកទូរសព្ទខ្ញុំ",
+          "en": "Someone took my phone.",
+          "options": ["អ្នកណាម្នាក់", "គ្មាននរណា", "នរណា", "ម្នាក់ឯង"],
+          "answer": "អ្នកណាម្នាក់",
+          "why": "Someone: អ្នកណាម្នាក់."
+        },
+        {
+          "q": "ថ្ងៃនេះខ្ញុំមិនទៅ＿ទេ",
+          "en": "I'm not going anywhere today.",
+          "options": ["អ្វី", "ណា", "នរណា", "ណាមួយ"],
+          "answer": "ណា",
+          "why": "Nowhere: មិន … ណាទេ."
+        },
+        {
+          "q": "យើងនឹងជួបគ្នា＿",
+          "en": "We'll meet again some day.",
+          "options": ["រាល់ថ្ងៃ", "ថ្ងៃនេះ", "ថ្ងៃណាមួយ", "គ្មានថ្ងៃ"],
+          "answer": "ថ្ងៃណាមួយ",
+          "why": "Some day: ថ្ងៃណាមួយ."
+        },
+        {
+          "q": "＿លុយទេ",
+          "en": "There's no money.",
+          "options": ["មិន", "កុំ", "ហាម", "គ្មាន"],
+          "answer": "គ្មាន",
+          "why": "There's no: គ្មាន."
         }
       ]
     },

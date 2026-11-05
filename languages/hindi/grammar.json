@@ -17,11 +17,11 @@
     "  dative-subject, sakna) — same beginner seam; examples here are original.",
     "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
     "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
-    "72 lessons, from A1 to C1. Lessons 13–72 were added to bring Hindi in line with the other full courses.",
+    "72 lessons, from A1 to C1. 60 lessons were added to bring Hindi in line with the other full courses.",
     "Transliteration is simplified: long vowels are marked with a macron, and n after a vowel can mark nasal sound."
   ],
   "title": "Hindi first grammar",
-  "intro": "Hindi puts the verb at the end, uses postpositions that come after the noun instead of prepositions before it, and gives every noun a gender that the words around it follow. Lessons 1–12 cover “to be”, word order, gender, postpositions, का / की / के, the present, था, the progressive, the past with ने, the future, मुझे / चाहिए and सकना. Later lessons add the oblique case, the subjunctive, compound verbs, conditionals, relative clauses, the passive and causatives, participles, and the two registers of formal Hindi. Transliteration is simplified: a long vowel has a line over it, and n after a vowel can mark nasal sound. The CEFR level after each point (A1 to C2) is an estimate.",
+  "intro": "Hindi puts the verb at the end, uses postpositions that come after the noun instead of prepositions before it, and gives every noun a gender that the words around it follow. The original 12 lessons cover “to be”, word order, gender, postpositions, का / की / के, the present, था, the progressive, the past with ने, the future, मुझे / चाहिए and सकना. Later lessons add the oblique case, the subjunctive, compound verbs, conditionals, relative clauses, the passive and causatives, participles, and the two registers of formal Hindi. Transliteration is simplified: a long vowel has a line over it, and n after a vowel can mark nasal sound. The CEFR level after each point (A1 to C2) is an estimate.",
   "lessons": [
     {
       "id": "hona",
@@ -457,6 +457,140 @@
       ]
     },
     {
+      "id": "pronouns",
+      "title": "Pronouns: मैं, तू, तुम, आप",
+      "particle": "मैं・तुम・आप・वह・वे",
+      "summary": "Hindi has three words for \"you\": तू (intimate), तुम (familiar), आप (polite); वह and वे also mean he, she, it and they. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>मैं</b> (I), <b>हम</b> (we). For \"you\": <b>तू</b> (very close or to a child), <b>तुम</b> (friends, family), <b>आप</b> (polite, and to elders or strangers). Each takes its own verb form: तू है, तुम हो, आप हैं.",
+          "examples": [
+            ["{आप} कैसे हैं?", "Āp kaise hain?", "How are you? (polite)"],
+            ["{तुम} कहाँ हो?", "Tum kahān ho?", "Where are you? (familiar)"]
+          ]
+        },
+        {
+          "h": "he, she, they",
+          "p": "<b>यह</b> (this one, he/she nearby) and <b>वह</b> (that one, he/she further away). Plural or respectful: <b>ये</b> and <b>वे</b>. Gender shows on the verb, not the pronoun.",
+          "examples": [
+            ["{वह} डॉक्टर है।", "Vah ḍākṭar hai.", "He / she is a doctor."],
+            [
+              "{वे} मेरे दादा जी हैं।",
+              "Ve mere dādā jī hain.",
+              "He is my grandfather. (respectful plural)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ कहाँ रहते हैं?",
+          "en": "Where do you live? (polite)",
+          "options": ["आप", "तुम", "तू", "मैं"],
+          "answer": "आप",
+          "why": "Polite you: आप."
+        },
+        {
+          "q": "＿ भारतीय हूँ।",
+          "en": "I am Indian.",
+          "options": ["हम", "मैं", "वह", "आप"],
+          "answer": "मैं",
+          "why": "हूँ goes with मैं."
+        },
+        {
+          "q": "＿ मेरी बहन है।",
+          "en": "She is my sister. (nearby)",
+          "options": ["वे", "ये", "यह", "हम"],
+          "answer": "यह",
+          "why": "Near, singular: यह."
+        },
+        {
+          "q": "＿ क्या कर रहे हो?",
+          "en": "What are you doing? (to a friend)",
+          "options": ["आप", "तू", "वे", "तुम"],
+          "answer": "तुम",
+          "why": "हो goes with तुम."
+        },
+        {
+          "q": "＿ बहुत अच्छे लोग हैं।",
+          "en": "They are very nice people.",
+          "options": ["वे", "वह", "मैं", "तू"],
+          "answer": "वे",
+          "why": "Plural: वे."
+        }
+      ]
+    },
+    {
+      "id": "question-words",
+      "title": "Question words: क्या, कौन, कहाँ, कब",
+      "particle": "क्या・कौन・कहाँ・कब・क्यों・कैसे",
+      "summary": "Question words stay in place, usually just before the verb; क्या at the start makes a yes/no question. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>क्या</b> (what), <b>कौन</b> (who), <b>कहाँ</b> (where), <b>कब</b> (when), <b>क्यों</b> (why), <b>कैसे</b> (how), <b>कितना</b> (how much). They go where the answer would be, normally before the verb.",
+          "examples": [
+            [
+              "तुम्हारा नाम {क्या} है?",
+              "Tumhārā nām kyā hai?",
+              "What's your name?"
+            ],
+            ["आप {कहाँ} से हैं?", "Āp kahān se hain?", "Where are you from?"]
+          ]
+        },
+        {
+          "h": "कैसा and कितना agree",
+          "p": "<b>कैसा / कैसी / कैसे</b> (what kind, how) and <b>कितना / कितनी / कितने</b> (how much, how many) agree like adjectives: <b>कितनी</b> किताबें?",
+          "examples": [
+            ["यह {कितने} का है?", "Yah kitne kā hai?", "How much is this?"],
+            [
+              "मौसम {कैसा} है?",
+              "Mausam kaisā hai?",
+              "What's the weather like?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "आप ＿ जा रहे हैं?",
+          "en": "Where are you going?",
+          "options": ["कहाँ", "कब", "कौन", "क्या"],
+          "answer": "कहाँ",
+          "why": "where: कहाँ."
+        },
+        {
+          "q": "＿ आया?",
+          "en": "Who came?",
+          "options": ["क्या", "कौन", "कब", "कहाँ"],
+          "answer": "कौन",
+          "why": "who: कौन."
+        },
+        {
+          "q": "तुम ＿ नहीं आए?",
+          "en": "Why didn't you come?",
+          "options": ["कैसे", "कब", "क्यों", "कौन"],
+          "answer": "क्यों",
+          "why": "why: क्यों."
+        },
+        {
+          "q": "आपके ＿ बच्चे हैं?",
+          "en": "How many children do you have?",
+          "options": ["कितनी", "कितना", "कैसे", "कितने"],
+          "answer": "कितने",
+          "why": "बच्चे is masculine plural."
+        },
+        {
+          "q": "＿ तुम्हें चाय पसंद है?",
+          "en": "Do you like tea?",
+          "options": ["क्या", "कौन", "कब", "कहाँ"],
+          "answer": "क्या",
+          "why": "Yes/no question: क्या at the start."
+        }
+      ]
+    },
+    {
       "id": "tha",
       "title": "था, थी, थे — “was / were”",
       "particle": "था / थी / थे",
@@ -625,85 +759,6 @@
           ],
           "answer": "मैं पढ़ रहा हूँ।",
           "why": "रहा हूँ is progressive; पढ़ता हूँ is habitual."
-        }
-      ]
-    },
-    {
-      "id": "ne-past",
-      "title": "The past with ने",
-      "particle": "ने",
-      "summary": "Transitive past: subject + ने, verb matches the object. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "In the simple past, verbs that take an object mark the doer with <b>ने</b>. The verb then agrees with the <b>object</b>, not the doer: masculine object → -आ, feminine → -ई, masculine plural → -ए.",
-          "examples": [
-            [
-              "मैं{ने} किताब पढ़ी।",
-              "Mainne kitāb paṛhī.",
-              "I read the book. (पढ़ी matches किताब, feminine)"
-            ],
-            [
-              "राम {ने} खाना खाया।",
-              "Rām ne khānā khāyā.",
-              "Ram ate the food. (खाना is masculine)"
-            ],
-            [
-              "उस{ने} चिट्ठियाँ लिखीं।",
-              "Usne ciṭṭhiyān likhīn.",
-              "He / she wrote letters. (feminine plural)"
-            ]
-          ]
-        },
-        {
-          "h": "No ने when there is no object",
-          "p": "Intransitive verbs like जाना (go) and आना (come) do <b>not</b> take ने. The verb agrees with the subject as usual: गया / गई / गए.",
-          "examples": [
-            ["वह घर {गई}।", "Vah ghar gaī.", "She went home."],
-            [
-              "मैं बाज़ार {गया}।",
-              "Main bāzār gayā.",
-              "I went to the market. (a man)"
-            ],
-            ["वे आ {गए}।", "Ve ā gae.", "They arrived / came."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "राम ＿ पानी पिया।",
-          "en": "Ram drank water.",
-          "options": ["ने", "को", "से", "का"],
-          "answer": "ने",
-          "why": "पीना takes an object, so the subject gets ने."
-        },
-        {
-          "q": "मैंने किताब पढ़＿ ।",
-          "en": "I read the book.",
-          "options": ["ी", "ा", "े", "ूँ"],
-          "answer": "ी",
-          "why": "किताब is feminine, so the participle is पढ़ी."
-        },
-        {
-          "q": "मैंने आम खा＿ ।",
-          "en": "I ate a mango. (आम is masculine)",
-          "options": ["या", "ई", "ए", "ती"],
-          "answer": "या",
-          "why": "Masculine object: खाया (stem ख् + आया)."
-        },
-        {
-          "q": "वह घर ＿ ।",
-          "en": "She went home.",
-          "options": ["गई", "गया", "गए", "ने गई"],
-          "answer": "गई",
-          "why": "जाना is intransitive: no ने, and गई for a woman."
-        },
-        {
-          "q": "Which sentence needs ने?",
-          "en": "",
-          "options": ["मैंने चाय पी।", "मैं बाज़ार गया।", "वह आई।", "हम सोए।"],
-          "answer": "मैंने चाय पी।",
-          "why": "Only the transitive “drank tea” takes ने; go, come and sleep do not."
         }
       ]
     },
@@ -903,7 +958,7 @@
         },
         {
           "h": "Cannot",
-          "p": "Put <b>नहीं</b> before सकता: नहीं आ सकता “cannot come”. For a learned skill, सकना and आना (lesson 11) often both work.",
+          "p": "Put <b>नहीं</b> before सकता: नहीं आ सकता “cannot come”. For a learned skill, सकना and आना (lesson 12) often both work.",
           "examples": [
             [
               "मैं आज नहीं आ {सकता}।",
@@ -963,140 +1018,6 @@
           ],
           "answer": "After the bare stem, before हूँ / है",
           "why": "Pattern: stem + सकता / सकती / सकते + होना."
-        }
-      ]
-    },
-    {
-      "id": "pronouns",
-      "title": "Pronouns: मैं, तू, तुम, आप",
-      "particle": "मैं・तुम・आप・वह・वे",
-      "summary": "Hindi has three words for \"you\": तू (intimate), तुम (familiar), आप (polite); वह and वे also mean he, she, it and they. (about A1)",
-      "level": "absolute-beginner",
-      "sections": [
-        {
-          "p": "<b>मैं</b> (I), <b>हम</b> (we). For \"you\": <b>तू</b> (very close or to a child), <b>तुम</b> (friends, family), <b>आप</b> (polite, and to elders or strangers). Each takes its own verb form: तू है, तुम हो, आप हैं.",
-          "examples": [
-            ["{आप} कैसे हैं?", "Āp kaise hain?", "How are you? (polite)"],
-            ["{तुम} कहाँ हो?", "Tum kahān ho?", "Where are you? (familiar)"]
-          ]
-        },
-        {
-          "h": "he, she, they",
-          "p": "<b>यह</b> (this one, he/she nearby) and <b>वह</b> (that one, he/she further away). Plural or respectful: <b>ये</b> and <b>वे</b>. Gender shows on the verb, not the pronoun.",
-          "examples": [
-            ["{वह} डॉक्टर है।", "Vah ḍākṭar hai.", "He / she is a doctor."],
-            [
-              "{वे} मेरे दादा जी हैं।",
-              "Ve mere dādā jī hain.",
-              "He is my grandfather. (respectful plural)"
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ कहाँ रहते हैं?",
-          "en": "Where do you live? (polite)",
-          "options": ["आप", "तुम", "तू", "मैं"],
-          "answer": "आप",
-          "why": "Polite you: आप."
-        },
-        {
-          "q": "＿ भारतीय हूँ।",
-          "en": "I am Indian.",
-          "options": ["हम", "मैं", "वह", "आप"],
-          "answer": "मैं",
-          "why": "हूँ goes with मैं."
-        },
-        {
-          "q": "＿ मेरी बहन है।",
-          "en": "She is my sister. (nearby)",
-          "options": ["वे", "ये", "यह", "हम"],
-          "answer": "यह",
-          "why": "Near, singular: यह."
-        },
-        {
-          "q": "＿ क्या कर रहे हो?",
-          "en": "What are you doing? (to a friend)",
-          "options": ["आप", "तू", "वे", "तुम"],
-          "answer": "तुम",
-          "why": "हो goes with तुम."
-        },
-        {
-          "q": "＿ बहुत अच्छे लोग हैं।",
-          "en": "They are very nice people.",
-          "options": ["वे", "वह", "मैं", "तू"],
-          "answer": "वे",
-          "why": "Plural: वे."
-        }
-      ]
-    },
-    {
-      "id": "question-words",
-      "title": "Question words: क्या, कौन, कहाँ, कब",
-      "particle": "क्या・कौन・कहाँ・कब・क्यों・कैसे",
-      "summary": "Question words stay in place, usually just before the verb; क्या at the start makes a yes/no question. (about A1)",
-      "level": "absolute-beginner",
-      "sections": [
-        {
-          "p": "<b>क्या</b> (what), <b>कौन</b> (who), <b>कहाँ</b> (where), <b>कब</b> (when), <b>क्यों</b> (why), <b>कैसे</b> (how), <b>कितना</b> (how much). They go where the answer would be, normally before the verb.",
-          "examples": [
-            [
-              "तुम्हारा नाम {क्या} है?",
-              "Tumhārā nām kyā hai?",
-              "What's your name?"
-            ],
-            ["आप {कहाँ} से हैं?", "Āp kahān se hain?", "Where are you from?"]
-          ]
-        },
-        {
-          "h": "कैसा and कितना agree",
-          "p": "<b>कैसा / कैसी / कैसे</b> (what kind, how) and <b>कितना / कितनी / कितने</b> (how much, how many) agree like adjectives: <b>कितनी</b> किताबें?",
-          "examples": [
-            ["यह {कितने} का है?", "Yah kitne kā hai?", "How much is this?"],
-            [
-              "मौसम {कैसा} है?",
-              "Mausam kaisā hai?",
-              "What's the weather like?"
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "आप ＿ जा रहे हैं?",
-          "en": "Where are you going?",
-          "options": ["कहाँ", "कब", "कौन", "क्या"],
-          "answer": "कहाँ",
-          "why": "where: कहाँ."
-        },
-        {
-          "q": "＿ आया?",
-          "en": "Who came?",
-          "options": ["क्या", "कौन", "कब", "कहाँ"],
-          "answer": "कौन",
-          "why": "who: कौन."
-        },
-        {
-          "q": "तुम ＿ नहीं आए?",
-          "en": "Why didn't you come?",
-          "options": ["कैसे", "कब", "क्यों", "कौन"],
-          "answer": "क्यों",
-          "why": "why: क्यों."
-        },
-        {
-          "q": "आपके ＿ बच्चे हैं?",
-          "en": "How many children do you have?",
-          "options": ["कितनी", "कितना", "कैसे", "कितने"],
-          "answer": "कितने",
-          "why": "बच्चे is masculine plural."
-        },
-        {
-          "q": "＿ तुम्हें चाय पसंद है?",
-          "en": "Do you like tea?",
-          "options": ["क्या", "कौन", "कब", "कहाँ"],
-          "answer": "क्या",
-          "why": "Yes/no question: क्या at the start."
         }
       ]
     },
@@ -1638,6 +1559,300 @@
       ]
     },
     {
+      "id": "time-baje",
+      "title": "Telling the time: बजे",
+      "particle": "कितने बजे・साढ़े・सवा・पौने",
+      "summary": "Time uses बजे: पाँच बजे; half past is साढ़े, quarter past सवा, quarter to पौने. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>कितने बजे हैं?</b> — <b>तीन बजे</b> हैं। \"At three\" is also तीन बजे. Half past: <b>साढ़े</b> तीन बजे (3:30). Special: <b>डेढ़</b> (1:30), <b>ढाई</b> (2:30).",
+          "examples": [
+            ["{कितने बजे} हैं?", "Kitne baje hain?", "What time is it?"],
+            [
+              "मैं {सात बजे} उठता हूँ।",
+              "Main sāt baje uṭhtā hūn.",
+              "I get up at seven."
+            ]
+          ]
+        },
+        {
+          "h": "सवा and पौने",
+          "p": "<b>सवा</b> = quarter past (सवा चार = 4:15), <b>पौने</b> = quarter to (पौने पाँच = 4:45). Minutes: चार बजकर दस मिनट (4:10).",
+          "examples": [
+            ["{सवा} नौ बजे", "savā nau baje", "quarter past nine"],
+            ["{पौने} दो बजे", "paune do baje", "quarter to two"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ तीन बजे",
+          "en": "half past three",
+          "options": ["साढ़े", "सवा", "पौने", "ढाई"],
+          "answer": "साढ़े",
+          "why": "half past: साढ़े."
+        },
+        {
+          "q": "1:30",
+          "en": "",
+          "options": ["साढ़े एक बजे", "डेढ़ बजे", "सवा एक बजे", "पौने दो"],
+          "answer": "डेढ़ बजे",
+          "why": "1:30 is डेढ़."
+        },
+        {
+          "q": "2:30",
+          "en": "",
+          "options": ["साढ़े दो बजे", "सवा दो बजे", "ढाई बजे", "डेढ़ बजे"],
+          "answer": "ढाई बजे",
+          "why": "2:30 is ढाई."
+        },
+        {
+          "q": "＿ आठ बजे",
+          "en": "quarter to eight",
+          "options": ["सवा", "साढ़े", "डेढ़", "पौने"],
+          "answer": "पौने",
+          "why": "quarter to: पौने."
+        },
+        {
+          "q": "क्लास ＿ शुरू होती है?",
+          "en": "What time does class start?",
+          "options": ["कितने बजे", "कितना बजा", "कब बजे", "कैसे बजे"],
+          "answer": "कितने बजे",
+          "why": "What time: कितने बजे."
+        }
+      ]
+    },
+    {
+      "id": "having",
+      "title": "Having: के पास and मेरे दो भाई हैं",
+      "particle": "के पास・का/की/के + है",
+      "summary": "Things you own use के पास; relatives and body parts use the possessive with होना. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Possessions: <b>मेरे पास</b> एक गाड़ी है (I have a car). <b>उसके पास</b> पैसे नहीं हैं. The verb agrees with the thing.",
+          "examples": [
+            [
+              "{मेरे पास} समय नहीं है।",
+              "Mere pās samay nahīn hai.",
+              "I don't have time."
+            ],
+            [
+              "क्या {आपके पास} पेन है?",
+              "Kyā āpke pās pen hai?",
+              "Do you have a pen?"
+            ]
+          ]
+        },
+        {
+          "h": "Relatives, and illnesses",
+          "p": "Relatives and parts of the body: <b>मेरे</b> दो भाई <b>हैं</b>, <b>उसकी</b> एक बेटी <b>है</b>. Illnesses use को: <b>मुझे</b> बुख़ार है (I have a fever).",
+          "examples": [
+            [
+              "{मेरी} दो बहनें हैं।",
+              "Merī do bahanen hain.",
+              "I have two sisters."
+            ],
+            ["{मुझे} ज़ुकाम है।", "Mujhe zukām hai.", "I have a cold."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ पास गाड़ी है।",
+          "en": "He has a car.",
+          "options": ["उसके", "उसका", "उसकी", "उसे"],
+          "answer": "उसके",
+          "why": "Possessions: के पास."
+        },
+        {
+          "q": "＿ तीन बच्चे हैं।",
+          "en": "They have three children.",
+          "options": ["उनके पास", "उनके", "उन्हें", "उनकी"],
+          "answer": "उनके",
+          "why": "Relatives: possessive."
+        },
+        {
+          "q": "＿ सिरदर्द है।",
+          "en": "I have a headache.",
+          "options": ["मेरे पास", "मेरा", "मुझे", "मैं"],
+          "answer": "मुझे",
+          "why": "Illness: को form."
+        },
+        {
+          "q": "हमारे पास पैसे नहीं ＿।",
+          "en": "We don't have money.",
+          "options": ["है", "हूँ", "था", "हैं"],
+          "answer": "हैं",
+          "why": "Agrees with पैसे (plural)."
+        },
+        {
+          "q": "＿ एक बहन है।",
+          "en": "I have a sister.",
+          "options": ["मेरी", "मेरा", "मेरे पास", "मुझे"],
+          "answer": "मेरी",
+          "why": "Relatives: possessive agreeing with बहन."
+        }
+      ]
+    },
+    {
+      "id": "days-dates",
+      "title": "Days and dates: सोमवार को",
+      "particle": "-वार को・तारीख़",
+      "summary": "On a day is day + को; dates use तारीख़. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>सोमवार, मंगलवार, बुधवार, गुरुवार, शुक्रवार, शनिवार, रविवार</b>. \"On Monday\" = <b>सोमवार को</b>. <b>कल</b> means both yesterday and tomorrow: the verb tense tells you which.",
+          "examples": [
+            [
+              "हम {शनिवार को} मिलेंगे।",
+              "Ham shanivār ko milenge.",
+              "We'll meet on Saturday."
+            ],
+            [
+              "{कल} मैं बाज़ार गया।",
+              "Kal main bāzār gayā.",
+              "Yesterday I went to the market."
+            ]
+          ]
+        },
+        {
+          "h": "Dates and months",
+          "p": "The date: <b>आज कितनी तारीख़ है?</b> — आज <b>पाँच</b> तारीख़ है. \"On 5 May\": <b>पाँच मई को</b>. Months are mostly English: जनवरी, फ़रवरी… \"In May\": <b>मई में</b>.",
+          "examples": [
+            [
+              "मेरा जन्मदिन {दस जून को} है।",
+              "Merā janmadin das jūn ko hai.",
+              "My birthday is on 10 June."
+            ],
+            [
+              "{परसों} छुट्टी है।",
+              "Parson chhuṭṭī hai.",
+              "The day after tomorrow is a holiday."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ को दफ़्तर बंद है।",
+          "en": "The office is closed on Sunday.",
+          "options": ["रविवार", "रविवारों ही", "रवि", "इतवारे"],
+          "answer": "रविवार",
+          "why": "Day + को."
+        },
+        {
+          "q": "कल मैं दिल्ली ＿।",
+          "en": "Tomorrow I'll go to Delhi.",
+          "options": ["गया", "जाऊँगा", "जाता था", "जा रहा था"],
+          "answer": "जाऊँगा",
+          "why": "कल + future = tomorrow."
+        },
+        {
+          "q": "आज कितनी ＿ है?",
+          "en": "What's the date today?",
+          "options": ["दिन", "बजे", "तारीख़", "महीना"],
+          "answer": "तारीख़",
+          "why": "Date: तारीख़."
+        },
+        {
+          "q": "मैं ＿ में भारत जाऊँगा।",
+          "en": "I'll go to India in March.",
+          "options": ["मार्च को", "मार्च पर", "मार्च से", "मार्च"],
+          "answer": "मार्च",
+          "why": "In a month: में."
+        },
+        {
+          "q": "＿ = the day after tomorrow, or the day before yesterday",
+          "en": "",
+          "options": ["परसों", "कल", "आज", "अभी"],
+          "answer": "परसों",
+          "why": "परसों."
+        }
+      ]
+    },
+    {
+      "id": "ne-past",
+      "title": "The past with ने",
+      "particle": "ने",
+      "summary": "Transitive past: subject + ने, verb matches the object. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "In the simple past, verbs that take an object mark the doer with <b>ने</b>. The verb then agrees with the <b>object</b>, not the doer: masculine object → -आ, feminine → -ई, masculine plural → -ए.",
+          "examples": [
+            [
+              "मैं{ने} किताब पढ़ी।",
+              "Mainne kitāb paṛhī.",
+              "I read the book. (पढ़ी matches किताब, feminine)"
+            ],
+            [
+              "राम {ने} खाना खाया।",
+              "Rām ne khānā khāyā.",
+              "Ram ate the food. (खाना is masculine)"
+            ],
+            [
+              "उस{ने} चिट्ठियाँ लिखीं।",
+              "Usne ciṭṭhiyān likhīn.",
+              "He / she wrote letters. (feminine plural)"
+            ]
+          ]
+        },
+        {
+          "h": "No ने when there is no object",
+          "p": "Intransitive verbs like जाना (go) and आना (come) do <b>not</b> take ने. The verb agrees with the subject as usual: गया / गई / गए.",
+          "examples": [
+            ["वह घर {गई}।", "Vah ghar gaī.", "She went home."],
+            [
+              "मैं बाज़ार {गया}।",
+              "Main bāzār gayā.",
+              "I went to the market. (a man)"
+            ],
+            ["वे आ {गए}।", "Ve ā gae.", "They arrived / came."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "राम ＿ पानी पिया।",
+          "en": "Ram drank water.",
+          "options": ["ने", "को", "से", "का"],
+          "answer": "ने",
+          "why": "पीना takes an object, so the subject gets ने."
+        },
+        {
+          "q": "मैंने किताब पढ़＿ ।",
+          "en": "I read the book.",
+          "options": ["ी", "ा", "े", "ूँ"],
+          "answer": "ी",
+          "why": "किताब is feminine, so the participle is पढ़ी."
+        },
+        {
+          "q": "मैंने आम खा＿ ।",
+          "en": "I ate a mango. (आम is masculine)",
+          "options": ["या", "ई", "ए", "ती"],
+          "answer": "या",
+          "why": "Masculine object: खाया (stem ख् + आया)."
+        },
+        {
+          "q": "वह घर ＿ ।",
+          "en": "She went home.",
+          "options": ["गई", "गया", "गए", "ने गई"],
+          "answer": "गई",
+          "why": "जाना is intransitive: no ने, and गई for a woman."
+        },
+        {
+          "q": "Which sentence needs ने?",
+          "en": "",
+          "options": ["मैंने चाय पी।", "मैं बाज़ार गया।", "वह आई।", "हम सोए।"],
+          "answer": "मैंने चाय पी।",
+          "why": "Only the transitive “drank tea” takes ने; go, come and sleep do not."
+        }
+      ]
+    },
+    {
       "id": "ko-object",
       "title": "को with objects: मैंने राम को देखा",
       "particle": "को + specific object",
@@ -1983,71 +2198,6 @@
       ]
     },
     {
-      "id": "time-baje",
-      "title": "Telling the time: बजे",
-      "particle": "कितने बजे・साढ़े・सवा・पौने",
-      "summary": "Time uses बजे: पाँच बजे; half past is साढ़े, quarter past सवा, quarter to पौने. (about A1–A2)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>कितने बजे हैं?</b> — <b>तीन बजे</b> हैं। \"At three\" is also तीन बजे. Half past: <b>साढ़े</b> तीन बजे (3:30). Special: <b>डेढ़</b> (1:30), <b>ढाई</b> (2:30).",
-          "examples": [
-            ["{कितने बजे} हैं?", "Kitne baje hain?", "What time is it?"],
-            [
-              "मैं {सात बजे} उठता हूँ।",
-              "Main sāt baje uṭhtā hūn.",
-              "I get up at seven."
-            ]
-          ]
-        },
-        {
-          "h": "सवा and पौने",
-          "p": "<b>सवा</b> = quarter past (सवा चार = 4:15), <b>पौने</b> = quarter to (पौने पाँच = 4:45). Minutes: चार बजकर दस मिनट (4:10).",
-          "examples": [
-            ["{सवा} नौ बजे", "savā nau baje", "quarter past nine"],
-            ["{पौने} दो बजे", "paune do baje", "quarter to two"]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ तीन बजे",
-          "en": "half past three",
-          "options": ["साढ़े", "सवा", "पौने", "ढाई"],
-          "answer": "साढ़े",
-          "why": "half past: साढ़े."
-        },
-        {
-          "q": "1:30",
-          "en": "",
-          "options": ["साढ़े एक बजे", "डेढ़ बजे", "सवा एक बजे", "पौने दो"],
-          "answer": "डेढ़ बजे",
-          "why": "1:30 is डेढ़."
-        },
-        {
-          "q": "2:30",
-          "en": "",
-          "options": ["साढ़े दो बजे", "सवा दो बजे", "ढाई बजे", "डेढ़ बजे"],
-          "answer": "ढाई बजे",
-          "why": "2:30 is ढाई."
-        },
-        {
-          "q": "＿ आठ बजे",
-          "en": "quarter to eight",
-          "options": ["सवा", "साढ़े", "डेढ़", "पौने"],
-          "answer": "पौने",
-          "why": "quarter to: पौने."
-        },
-        {
-          "q": "क्लास ＿ शुरू होती है?",
-          "en": "What time does class start?",
-          "options": ["कितने बजे", "कितना बजा", "कब बजे", "कैसे बजे"],
-          "answer": "कितने बजे",
-          "why": "What time: कितने बजे."
-        }
-      ]
-    },
-    {
       "id": "infinitive",
       "title": "The infinitive in -ना",
       "particle": "पढ़ना・पढ़ने के लिए",
@@ -2194,79 +2344,6 @@
       ]
     },
     {
-      "id": "having",
-      "title": "Having: के पास and मेरे दो भाई हैं",
-      "particle": "के पास・का/की/के + है",
-      "summary": "Things you own use के पास; relatives and body parts use the possessive with होना. (about A1–A2)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "Possessions: <b>मेरे पास</b> एक गाड़ी है (I have a car). <b>उसके पास</b> पैसे नहीं हैं. The verb agrees with the thing.",
-          "examples": [
-            [
-              "{मेरे पास} समय नहीं है।",
-              "Mere pās samay nahīn hai.",
-              "I don't have time."
-            ],
-            [
-              "क्या {आपके पास} पेन है?",
-              "Kyā āpke pās pen hai?",
-              "Do you have a pen?"
-            ]
-          ]
-        },
-        {
-          "h": "Relatives, and illnesses",
-          "p": "Relatives and parts of the body: <b>मेरे</b> दो भाई <b>हैं</b>, <b>उसकी</b> एक बेटी <b>है</b>. Illnesses use को: <b>मुझे</b> बुख़ार है (I have a fever).",
-          "examples": [
-            [
-              "{मेरी} दो बहनें हैं।",
-              "Merī do bahanen hain.",
-              "I have two sisters."
-            ],
-            ["{मुझे} ज़ुकाम है।", "Mujhe zukām hai.", "I have a cold."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ पास गाड़ी है।",
-          "en": "He has a car.",
-          "options": ["उसके", "उसका", "उसकी", "उसे"],
-          "answer": "उसके",
-          "why": "Possessions: के पास."
-        },
-        {
-          "q": "＿ तीन बच्चे हैं।",
-          "en": "They have three children.",
-          "options": ["उनके पास", "उनके", "उन्हें", "उनकी"],
-          "answer": "उनके",
-          "why": "Relatives: possessive."
-        },
-        {
-          "q": "＿ सिरदर्द है।",
-          "en": "I have a headache.",
-          "options": ["मेरे पास", "मेरा", "मुझे", "मैं"],
-          "answer": "मुझे",
-          "why": "Illness: को form."
-        },
-        {
-          "q": "हमारे पास पैसे नहीं ＿।",
-          "en": "We don't have money.",
-          "options": ["है", "हूँ", "था", "हैं"],
-          "answer": "हैं",
-          "why": "Agrees with पैसे (plural)."
-        },
-        {
-          "q": "＿ एक बहन है।",
-          "en": "I have a sister.",
-          "options": ["मेरी", "मेरा", "मेरे पास", "मुझे"],
-          "answer": "मेरी",
-          "why": "Relatives: possessive agreeing with बहन."
-        }
-      ]
-    },
-    {
       "id": "aana-know",
       "title": "मुझे हिंदी आती है: knowing how",
       "particle": "मुझे … आना",
@@ -2332,6 +2409,302 @@
           "options": ["लगी", "लगा", "लगे", "लगती थी"],
           "answer": "लगी",
           "why": "भूख is feminine: लगी."
+        }
+      ]
+    },
+    {
+      "id": "conjunctive-participle",
+      "title": "-कर: having done",
+      "particle": "stem + कर",
+      "summary": "Stem + कर (or के) links two actions by the same person: खाना खाकर सो गया. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Add <b>कर</b> to the stem: खा → <b>खाकर</b>, देख → <b>देखकर</b>. It means having done / and then. The irregular one is <b>करके</b> (from करना). In speech <b>-के</b> is common: खाके.",
+          "examples": [
+            [
+              "वह खाना {खाकर} सो गया।",
+              "Vah khānā khākar so gayā.",
+              "He ate and went to sleep."
+            ],
+            ["हाथ {धोकर} आओ।", "Hāth dhokar āo.", "Wash your hands and come."]
+          ]
+        },
+        {
+          "h": "Manner and reason",
+          "p": "-कर also shows how or why: <b>दौड़कर</b> आया (came running), <b>सुनकर</b> ख़ुश हुई (was happy to hear). Some are fixed: <b>मिलकर</b> (together), <b>ख़ासकर</b> (especially).",
+          "examples": [
+            [
+              "यह ख़बर {सुनकर} मैं हैरान हो गया।",
+              "Yah khabar sunkar main hairān ho gayā.",
+              "I was surprised to hear this news."
+            ],
+            [
+              "हम सब {मिलकर} काम करेंगे।",
+              "Ham sab milkar kām karenge.",
+              "We'll all work together."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "नहाकर ＿ नाश्ता किया।",
+          "en": "After bathing, I had breakfast.",
+          "options": ["मैंने", "मैं", "मुझे", "मेरा"],
+          "answer": "मैंने",
+          "why": "Main verb किया needs ने."
+        },
+        {
+          "q": "काम ＿ घर जाऊँगा।",
+          "en": "I'll go home after doing the work.",
+          "options": ["करकर", "करके", "करते", "किया"],
+          "answer": "करके",
+          "why": "करना → करके."
+        },
+        {
+          "q": "वह ＿ आई।",
+          "en": "She came running.",
+          "options": ["दौड़ता", "दौड़ी कर", "दौड़कर", "दौड़ना"],
+          "answer": "दौड़कर",
+          "why": "Manner: -कर."
+        },
+        {
+          "q": "किताब ＿ वापस करना।",
+          "en": "Read the book and return it.",
+          "options": ["पढ़के कर", "पढ़ता", "पढ़ी", "पढ़कर"],
+          "answer": "पढ़कर",
+          "why": "-कर."
+        },
+        {
+          "q": "उसे ＿ मुझे ख़ुशी हुई।",
+          "en": "I was glad to see him.",
+          "options": ["देखकर", "देखता", "देखा कर", "देख"],
+          "answer": "देखकर",
+          "why": "Reason: -कर."
+        }
+      ]
+    },
+    {
+      "id": "comparatives",
+      "title": "Comparing: से ज़्यादा, सबसे",
+      "particle": "X से (ज़्यादा)・सबसे",
+      "summary": "X से + adjective means more than X; सबसे + adjective is the most. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Hindi has no -er form. Use <b>से</b> after the thing compared with: राम श्याम <b>से</b> लंबा है (Ram is taller than Shyam). Add <b>ज़्यादा</b> (more) or <b>कम</b> (less) for clarity.",
+          "examples": [
+            [
+              "दिल्ली मुंबई {से} बड़ी है?",
+              "Dillī mumbaī se baṛī hai?",
+              "Is Delhi bigger than Mumbai?"
+            ],
+            [
+              "यह {उससे ज़्यादा} महँगा है।",
+              "Yah usse zyādā mahangā hai.",
+              "This is more expensive than that."
+            ]
+          ]
+        },
+        {
+          "h": "The superlative",
+          "p": "<b>सबसे</b> + adjective = the most: <b>सबसे अच्छा</b> (the best), <b>सबसे बड़ा</b> शहर. In formal Hindi, Sanskrit forms appear: अधिक (more), <b>श्रेष्ठ</b> (best).",
+          "examples": [
+            [
+              "यह {सबसे अच्छा} रेस्टोरेंट है।",
+              "Yah sabse achchhā resṭoreṇṭ hai.",
+              "This is the best restaurant."
+            ],
+            [
+              "वह कक्षा में {सबसे} होशियार है।",
+              "Vah kakshā men sabse hoshiyār hai.",
+              "She is the smartest in the class."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "मेरा भाई मुझ ＿ छोटा है।",
+          "en": "My brother is younger than me.",
+          "options": ["से", "को", "का", "में"],
+          "answer": "से",
+          "why": "than: से."
+        },
+        {
+          "q": "यह ＿ ऊँची इमारत है।",
+          "en": "This is the tallest building.",
+          "options": ["से", "सबसे", "ज़्यादा से", "बहुत"],
+          "answer": "सबसे",
+          "why": "most: सबसे."
+        },
+        {
+          "q": "चाय कॉफ़ी से ＿ सस्ती है।",
+          "en": "Tea is cheaper than coffee.",
+          "options": ["सबसे", "बहुत से", "ज़्यादा", "कम से"],
+          "answer": "ज़्यादा",
+          "why": "more (cheap): ज़्यादा."
+        },
+        {
+          "q": "वह ＿ से तेज़ दौड़ता है।",
+          "en": "He runs faster than me.",
+          "options": ["मैं", "मेरा", "मुझे", "मुझ"],
+          "answer": "मुझ",
+          "why": "Oblique pronoun + से: मुझसे."
+        },
+        {
+          "q": "गर्मी में यहाँ सबसे ＿ गर्मी होती है।",
+          "en": "It's hottest here in summer.",
+          "options": ["ज़्यादा", "बड़ी", "कम ही", "से"],
+          "answer": "ज़्यादा",
+          "why": "सबसे ज़्यादा = the most."
+        }
+      ]
+    },
+    {
+      "id": "adverbs",
+      "title": "Adverbs: धीरे, जल्दी, ध्यान से",
+      "particle": "धीरे・जल्दी・-से",
+      "summary": "Many adverbs are plain words (धीरे, जल्दी); others are noun + से: ध्यान से (carefully). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Simple adverbs: <b>धीरे</b> (slowly), <b>जल्दी</b> (quickly, early), <b>अच्छी तरह</b> (well), <b>ज़ोर से</b> (loudly). Noun + <b>से</b> makes an adverb: <b>ध्यान से</b> (carefully), <b>प्यार से</b> (lovingly), <b>आराम से</b> (comfortably).",
+          "examples": [
+            ["{धीरे} बोलिए।", "Dhīre bolie.", "Please speak slowly."],
+            ["{ध्यान से} सुनो।", "Dhyān se suno.", "Listen carefully."]
+          ]
+        },
+        {
+          "h": "Adjectives as adverbs",
+          "p": "-ā adjectives used as adverbs usually stay masculine: वह <b>अच्छा</b> गाती है (she sings well). Doubling softens or spreads: <b>धीरे-धीरे</b> (gradually), <b>जल्दी-जल्दी</b> (hurriedly).",
+          "examples": [
+            [
+              "{धीरे-धीरे} सब ठीक हो जाएगा।",
+              "Dhīre-dhīre sab ṭhīk ho jāegā.",
+              "Bit by bit everything will be fine."
+            ],
+            [
+              "{आराम से} बैठिए।",
+              "Ārām se baiṭhie.",
+              "Make yourself comfortable."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "गाड़ी ＿ चलाओ।",
+          "en": "Drive carefully.",
+          "options": ["ध्यान से", "ध्यान", "ध्यानी", "ध्यान में"],
+          "answer": "ध्यान से",
+          "why": "Noun + से."
+        },
+        {
+          "q": "वह बहुत ＿ बोलता है।",
+          "en": "He talks very fast.",
+          "options": ["जल्दा", "जल्दी", "जल्दे", "जल्दी से ही"],
+          "answer": "जल्दी",
+          "why": "quickly: जल्दी."
+        },
+        {
+          "q": "＿ बोलो, बच्चा सो रहा है।",
+          "en": "Speak softly, the baby's asleep.",
+          "options": ["ज़ोर से", "जल्दी", "धीरे", "तेज़ी"],
+          "answer": "धीरे",
+          "why": "softly: धीरे."
+        },
+        {
+          "q": "वह ＿ नाचती है।",
+          "en": "She dances well.",
+          "options": ["अच्छी", "अच्छे", "अच्छों", "अच्छा"],
+          "answer": "अच्छा",
+          "why": "Adverb: masculine form."
+        },
+        {
+          "q": "＿ हिंदी सीख रहा हूँ।",
+          "en": "I'm learning Hindi bit by bit.",
+          "options": ["धीरे-धीरे", "धीरी-धीरी", "धीरा", "जल्दी-धीरे"],
+          "answer": "धीरे-धीरे",
+          "why": "Doubled: gradually."
+        }
+      ]
+    },
+    {
+      "id": "quantities",
+      "title": "How much: बहुत, थोड़ा, ज़्यादा, कम",
+      "particle": "बहुत・थोड़ा・ज़्यादा・कम",
+      "summary": "बहुत (very, a lot), थोड़ा (a little), ज़्यादा (more, too much), कम (less, little). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>बहुत</b> = very or a lot: <b>बहुत</b> अच्छा, <b>बहुत</b> पानी. <b>थोड़ा</b> agrees: <b>थोड़ा</b> दूध, <b>थोड़ी</b> चीनी, <b>थोड़े</b> पैसे. <b>ज़्यादा</b> = more, too much; <b>कम</b> = less, not much.",
+          "examples": [
+            [
+              "{थोड़ी} चीनी दीजिए।",
+              "Thoṛī chīnī dījie.",
+              "A little sugar, please."
+            ],
+            [
+              "खाना {बहुत} स्वादिष्ट है।",
+              "Khānā bahut svādishṭ hai.",
+              "The food is very tasty."
+            ]
+          ]
+        },
+        {
+          "h": "बहुत ज़्यादा, काफ़ी",
+          "p": "<b>बहुत ज़्यादा</b> = too much: <b>बहुत ज़्यादा</b> गर्मी है. <b>काफ़ी</b> = quite, enough: <b>काफ़ी</b> देर हो गई. <b>थोड़ा-बहुत</b> = a bit.",
+          "examples": [
+            [
+              "आज {बहुत ज़्यादा} गर्मी है।",
+              "Āj bahut zyādā garmī hai.",
+              "It's far too hot today."
+            ],
+            [
+              "मुझे हिंदी {थोड़ी-बहुत} आती है।",
+              "Mujhe hindī thoṛī-bahut ātī hai.",
+              "I know a bit of Hindi."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ पानी दो।",
+          "en": "Give me a little water.",
+          "options": ["थोड़ा", "थोड़ी", "थोड़े", "कम ही"],
+          "answer": "थोड़ा",
+          "why": "पानी is masculine."
+        },
+        {
+          "q": "इसमें नमक ＿ है।",
+          "en": "There's too little salt in this.",
+          "options": ["ज़्यादा", "कम", "बहुत", "काफ़ी"],
+          "answer": "कम",
+          "why": "little: कम."
+        },
+        {
+          "q": "आज ＿ भीड़ है।",
+          "en": "It's very crowded today.",
+          "options": ["थोड़ा", "कम", "बहुत", "काफ़ी कम"],
+          "answer": "बहुत",
+          "why": "very: बहुत."
+        },
+        {
+          "q": "मुझे ＿ समय चाहिए।",
+          "en": "I need more time.",
+          "options": ["कम", "थोड़ी", "बहुत कम", "ज़्यादा"],
+          "answer": "ज़्यादा",
+          "why": "more: ज़्यादा."
+        },
+        {
+          "q": "＿ देर हो गई, चलें?",
+          "en": "It's got quite late, shall we go?",
+          "options": ["काफ़ी", "थोड़ी सी ही", "कम", "ज़्यादा कम"],
+          "answer": "काफ़ी",
+          "why": "quite: काफ़ी."
         }
       ]
     },
@@ -2715,79 +3088,6 @@
       ]
     },
     {
-      "id": "conjunctive-participle",
-      "title": "-कर: having done",
-      "particle": "stem + कर",
-      "summary": "Stem + कर (or के) links two actions by the same person: खाना खाकर सो गया. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "Add <b>कर</b> to the stem: खा → <b>खाकर</b>, देख → <b>देखकर</b>. It means having done / and then. The irregular one is <b>करके</b> (from करना). In speech <b>-के</b> is common: खाके.",
-          "examples": [
-            [
-              "वह खाना {खाकर} सो गया।",
-              "Vah khānā khākar so gayā.",
-              "He ate and went to sleep."
-            ],
-            ["हाथ {धोकर} आओ।", "Hāth dhokar āo.", "Wash your hands and come."]
-          ]
-        },
-        {
-          "h": "Manner and reason",
-          "p": "-कर also shows how or why: <b>दौड़कर</b> आया (came running), <b>सुनकर</b> ख़ुश हुई (was happy to hear). Some are fixed: <b>मिलकर</b> (together), <b>ख़ासकर</b> (especially).",
-          "examples": [
-            [
-              "यह ख़बर {सुनकर} मैं हैरान हो गया।",
-              "Yah khabar sunkar main hairān ho gayā.",
-              "I was surprised to hear this news."
-            ],
-            [
-              "हम सब {मिलकर} काम करेंगे।",
-              "Ham sab milkar kām karenge.",
-              "We'll all work together."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "नहाकर ＿ नाश्ता किया।",
-          "en": "After bathing, I had breakfast.",
-          "options": ["मैंने", "मैं", "मुझे", "मेरा"],
-          "answer": "मैंने",
-          "why": "Main verb किया needs ने."
-        },
-        {
-          "q": "काम ＿ घर जाऊँगा।",
-          "en": "I'll go home after doing the work.",
-          "options": ["करकर", "करके", "करते", "किया"],
-          "answer": "करके",
-          "why": "करना → करके."
-        },
-        {
-          "q": "वह ＿ आई।",
-          "en": "She came running.",
-          "options": ["दौड़ता", "दौड़ी कर", "दौड़कर", "दौड़ना"],
-          "answer": "दौड़कर",
-          "why": "Manner: -कर."
-        },
-        {
-          "q": "किताब ＿ वापस करना।",
-          "en": "Read the book and return it.",
-          "options": ["पढ़के कर", "पढ़ता", "पढ़ी", "पढ़कर"],
-          "answer": "पढ़कर",
-          "why": "-कर."
-        },
-        {
-          "q": "उसे ＿ मुझे ख़ुशी हुई।",
-          "en": "I was glad to see him.",
-          "options": ["देखकर", "देखता", "देखा कर", "देख"],
-          "answer": "देखकर",
-          "why": "Reason: -कर."
-        }
-      ]
-    },
-    {
       "id": "lagna-start",
       "title": "Starting to: करने लगा",
       "particle": "-ने लगना",
@@ -2930,237 +3230,6 @@
           "options": ["उसे", "वह", "उसने", "उसकी"],
           "answer": "उसे",
           "why": "Person in को form."
-        }
-      ]
-    },
-    {
-      "id": "passive",
-      "title": "The passive: किया जाता है",
-      "particle": "past participle + जाना",
-      "summary": "The passive is the past participle + जाना; the agent, rarely mentioned, takes द्वारा. (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "Past participle + <b>जाना</b>: यहाँ हिंदी <b>बोली जाती है</b> (Hindi is spoken here). The participle agrees with the subject: खाना <b>बनाया गया</b>, रोटी <b>बनाई गई</b>.",
-          "examples": [
-            [
-              "यहाँ हिंदी {बोली जाती है}।",
-              "Yahān hindī bolī jātī hai.",
-              "Hindi is spoken here."
-            ],
-            [
-              "यह मंदिर 1500 में {बनाया गया था}।",
-              "Yah mandir 1500 men banāyā gayā thā.",
-              "This temple was built in 1500."
-            ]
-          ]
-        },
-        {
-          "h": "द्वारा and the \"cannot\" passive",
-          "p": "The agent: <b>के द्वारा</b> (formal): प्रधानमंत्री <b>द्वारा</b> उद्घाटन किया गया. Negative passive with से means \"can't\": मुझसे <b>खाया नहीं जाता</b> (I can't bring myself to eat).",
-          "examples": [
-            [
-              "सरकार {द्वारा} नई योजना शुरू की गई।",
-              "Sarkār dvārā naī yojanā shurū kī gaī.",
-              "A new scheme was launched by the government."
-            ],
-            [
-              "{मुझसे} यह {सहा नहीं जाता}।",
-              "Mujhse yah sahā nahīn jātā.",
-              "I can't bear this."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "यह किताब हिंदी में ＿ गई।",
-          "en": "This book was written in Hindi.",
-          "options": ["लिखी", "लिखा", "लिखे", "लिखता"],
-          "answer": "लिखी",
-          "why": "किताब, feminine."
-        },
-        {
-          "q": "चोर ＿ गया।",
-          "en": "The thief was caught.",
-          "options": ["पकड़ी", "पकड़ा", "पकड़े", "पकड़ता"],
-          "answer": "पकड़ा",
-          "why": "Masculine singular."
-        },
-        {
-          "q": "यहाँ अंग्रेज़ी भी बोली ＿ है।",
-          "en": "English is also spoken here.",
-          "options": ["जाता", "गई", "जाती", "जाते"],
-          "answer": "जाती",
-          "why": "Habitual passive, feminine."
-        },
-        {
-          "q": "पुलिस ＿ जाँच की गई।",
-          "en": "An investigation was carried out by the police.",
-          "options": ["ने", "से ही", "को", "द्वारा"],
-          "answer": "द्वारा",
-          "why": "Agent: द्वारा."
-        },
-        {
-          "q": "मुझसे और नहीं चला ＿।",
-          "en": "I can't walk any more.",
-          "options": ["जाता", "जाती", "गया था", "जाना"],
-          "answer": "जाता",
-          "why": "Inability passive: से + नहीं + जाता."
-        }
-      ]
-    },
-    {
-      "id": "causatives",
-      "title": "Causatives: करना, कराना",
-      "particle": "-ा-・-वा-",
-      "summary": "Lengthening or adding -ā- / -vā- makes \"cause to do\": बनना → बनाना → बनवाना. (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "Three steps: <b>बनना</b> (be made) → <b>बनाना</b> (make) → <b>बनवाना</b> (have made). <b>पढ़ना</b> (read) → <b>पढ़ाना</b> (teach) → पढ़वाना. <b>करना</b> → <b>कराना / करवाना</b> (get done).",
-          "examples": [
-            [
-              "मैंने दर्ज़ी से कुर्ता {सिलवाया}।",
-              "Mainne darzī se kurtā silvāyā.",
-              "I had a kurta sewn by the tailor."
-            ],
-            [
-              "वह स्कूल में {पढ़ाती} है।",
-              "Vah skūl men paṛhātī hai.",
-              "She teaches at a school."
-            ]
-          ]
-        },
-        {
-          "h": "The middle agent takes से",
-          "p": "The person who does the work for you takes <b>से</b>: मैंने मिस्त्री <b>से</b> घर <b>बनवाया</b>. Common: <b>दिखाना</b> (show, from देखना), <b>सुनाना</b> (tell, from सुनना), <b>खिलाना</b> (feed).",
-          "examples": [
-            [
-              "मुझे अपनी तस्वीरें {दिखाओ}।",
-              "Mujhe apnī tasvīren dikhāo.",
-              "Show me your photos."
-            ],
-            [
-              "माँ बच्चे को खाना {खिला रही है}।",
-              "Mān bachche ko khānā khilā rahī hai.",
-              "Mother is feeding the child."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "पढ़ना → ＿",
-          "en": "read → teach",
-          "options": ["पढ़ाना", "पढ़वना", "पढ़ना करना", "पढ़ाई"],
-          "answer": "पढ़ाना",
-          "why": "First causative: -ā-."
-        },
-        {
-          "q": "मैंने अपने बाल ＿।",
-          "en": "I had my hair cut.",
-          "options": ["काटे", "कटवाए", "कटे", "कटाई"],
-          "answer": "कटवाए",
-          "why": "Second causative: -vā-."
-        },
-        {
-          "q": "मुझे वह फ़िल्म ＿।",
-          "en": "Show me that film.",
-          "options": ["देखो", "दिखो", "दिखाओ", "दिखवो"],
-          "answer": "दिखाओ",
-          "why": "देखना → दिखाना."
-        },
-        {
-          "q": "उसने मैकेनिक ＿ गाड़ी ठीक करवाई।",
-          "en": "He got the car fixed by a mechanic.",
-          "options": ["को", "ने", "का", "से"],
-          "answer": "से",
-          "why": "Middle agent: से."
-        },
-        {
-          "q": "दादी हमें कहानियाँ ＿ थीं।",
-          "en": "Grandma used to tell us stories.",
-          "options": ["सुनाती", "सुनती", "सुनवाती", "सुनाता"],
-          "answer": "सुनाती",
-          "why": "सुनना → सुनाना."
-        }
-      ]
-    },
-    {
-      "id": "comparatives",
-      "title": "Comparing: से ज़्यादा, सबसे",
-      "particle": "X से (ज़्यादा)・सबसे",
-      "summary": "X से + adjective means more than X; सबसे + adjective is the most. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "Hindi has no -er form. Use <b>से</b> after the thing compared with: राम श्याम <b>से</b> लंबा है (Ram is taller than Shyam). Add <b>ज़्यादा</b> (more) or <b>कम</b> (less) for clarity.",
-          "examples": [
-            [
-              "दिल्ली मुंबई {से} बड़ी है?",
-              "Dillī mumbaī se baṛī hai?",
-              "Is Delhi bigger than Mumbai?"
-            ],
-            [
-              "यह {उससे ज़्यादा} महँगा है।",
-              "Yah usse zyādā mahangā hai.",
-              "This is more expensive than that."
-            ]
-          ]
-        },
-        {
-          "h": "The superlative",
-          "p": "<b>सबसे</b> + adjective = the most: <b>सबसे अच्छा</b> (the best), <b>सबसे बड़ा</b> शहर. In formal Hindi, Sanskrit forms appear: अधिक (more), <b>श्रेष्ठ</b> (best).",
-          "examples": [
-            [
-              "यह {सबसे अच्छा} रेस्टोरेंट है।",
-              "Yah sabse achchhā resṭoreṇṭ hai.",
-              "This is the best restaurant."
-            ],
-            [
-              "वह कक्षा में {सबसे} होशियार है।",
-              "Vah kakshā men sabse hoshiyār hai.",
-              "She is the smartest in the class."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "मेरा भाई मुझ ＿ छोटा है।",
-          "en": "My brother is younger than me.",
-          "options": ["से", "को", "का", "में"],
-          "answer": "से",
-          "why": "than: से."
-        },
-        {
-          "q": "यह ＿ ऊँची इमारत है।",
-          "en": "This is the tallest building.",
-          "options": ["से", "सबसे", "ज़्यादा से", "बहुत"],
-          "answer": "सबसे",
-          "why": "most: सबसे."
-        },
-        {
-          "q": "चाय कॉफ़ी से ＿ सस्ती है।",
-          "en": "Tea is cheaper than coffee.",
-          "options": ["सबसे", "बहुत से", "ज़्यादा", "कम से"],
-          "answer": "ज़्यादा",
-          "why": "more (cheap): ज़्यादा."
-        },
-        {
-          "q": "वह ＿ से तेज़ दौड़ता है।",
-          "en": "He runs faster than me.",
-          "options": ["मैं", "मेरा", "मुझे", "मुझ"],
-          "answer": "मुझ",
-          "why": "Oblique pronoun + से: मुझसे."
-        },
-        {
-          "q": "गर्मी में यहाँ सबसे ＿ गर्मी होती है।",
-          "en": "It's hottest here in summer.",
-          "options": ["ज़्यादा", "बड़ी", "कम ही", "से"],
-          "answer": "ज़्यादा",
-          "why": "सबसे ज़्यादा = the most."
         }
       ]
     },
@@ -3388,160 +3457,6 @@
       ]
     },
     {
-      "id": "presumptive",
-      "title": "The presumptive: होगा (must be)",
-      "particle": "होगा・आया होगा",
-      "summary": "होगा/होगी/होंगे can guess about the present or past: वह घर पर होगा (he must be at home). (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "The future of होना is often a <b>guess</b>: वह थका <b>होगा</b> (he must be tired). With a progressive: वह सो रहा <b>होगा</b> (he's probably sleeping).",
-          "examples": [
-            [
-              "वह अभी दफ़्तर में {होगा}।",
-              "Vah abhī daftar men hogā.",
-              "He must be at the office now."
-            ],
-            [
-              "बच्चे खेल रहे {होंगे}।",
-              "Bachche khel rahe honge.",
-              "The children are probably playing."
-            ]
-          ]
-        },
-        {
-          "h": "About the past",
-          "p": "Past participle + होगा = must have done: उसने खाना खा लिया <b>होगा</b> (he must have eaten). <b>शायद</b> + subjunctive is weaker: शायद वह <b>हो</b>.",
-          "examples": [
-            [
-              "वह पहुँच गई {होगी}।",
-              "Vah pahunch gaī hogī.",
-              "She must have arrived."
-            ],
-            [
-              "तुमने यह फ़िल्म देखी {होगी}।",
-              "Tumne yah film dekhī hogī.",
-              "You must have seen this film."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "माँ रसोई में ＿।",
-          "en": "Mum must be in the kitchen.",
-          "options": ["होंगी", "होगा", "हैं", "थीं"],
-          "answer": "होंगी",
-          "why": "Respectful plural, feminine: होंगी."
-        },
-        {
-          "q": "वह सो रहा ＿।",
-          "en": "He's probably sleeping.",
-          "options": ["होगी", "होगा", "है था", "हुआ"],
-          "answer": "होगा",
-          "why": "Guess about now: होगा."
-        },
-        {
-          "q": "उन्होंने टिकट ख़रीद लिए ＿।",
-          "en": "They must have bought the tickets.",
-          "options": ["होगा", "होगी", "होंगे", "थे"],
-          "answer": "होंगे",
-          "why": "Agrees with टिकट (plural)."
-        },
-        {
-          "q": "ट्रेन निकल गई ＿।",
-          "en": "The train must have left.",
-          "options": ["होगा", "होंगे", "है", "होगी"],
-          "answer": "होगी",
-          "why": "ट्रेन is feminine."
-        },
-        {
-          "q": "Which is a guess, not a future?",
-          "en": "",
-          "options": ["वह घर पर होगा। (now)", "वह कल आएगा।", "मैं जाऊँगा।", "हम खाएँगे।"],
-          "answer": "वह घर पर होगा। (now)",
-          "why": "होगा about now = guess."
-        }
-      ]
-    },
-    {
-      "id": "counterfactual",
-      "title": "Unreal conditions: अगर तुम आते तो",
-      "particle": "-ता (था) … -ता",
-      "summary": "Unreal or past-unreal conditions use the -ता form (often with था) in both halves. (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "<b>अगर</b> + -ता, <b>तो</b> + -ता: <b>अगर</b> मेरे पास पैसे <b>होते</b>, <b>तो</b> मैं घर <b>ख़रीदता</b> (If I had money, I'd buy a house). It covers both present and past.",
-          "examples": [
-            [
-              "{अगर} तुम {आते}, {तो} मज़ा {आता}।",
-              "Agar tum āte, to mazā ātā.",
-              "If you'd come, it would have been fun."
-            ],
-            [
-              "{काश} मैं वहाँ {होता}!",
-              "Kāsh main vahān hotā!",
-              "If only I were there!"
-            ]
-          ]
-        },
-        {
-          "h": "With था for clear past",
-          "p": "For clear past unreality add <b>था</b>: अगर मैंने पढ़ाई की <b>होती</b>, तो पास हो गया <b>होता</b>. <b>काश</b> (if only) takes the same form.",
-          "examples": [
-            [
-              "अगर मुझे पता {होता}, तो मैं {बताता}।",
-              "Agar mujhe patā hotā, to main batātā.",
-              "If I'd known, I'd have told you."
-            ],
-            [
-              "काश तुमने मुझे बताया {होता}!",
-              "Kāsh tumne mujhe batāyā hotā!",
-              "If only you'd told me!"
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "अगर वह मेहनत ＿, तो पास हो जाता।",
-          "en": "If he'd worked hard, he'd have passed.",
-          "options": ["करता", "करेगा", "करे", "किया"],
-          "answer": "करता",
-          "why": "Unreal: -ता."
-        },
-        {
-          "q": "अगर मेरे पास समय होता, तो मैं ＿।",
-          "en": "If I had time, I'd come.",
-          "options": ["आऊँगा", "आता", "आऊँ", "आया"],
-          "answer": "आता",
-          "why": "Unreal result: -ता."
-        },
-        {
-          "q": "＿ मैं पक्षी होता!",
-          "en": "If only I were a bird!",
-          "options": ["अगर तो", "जब", "काश", "ताकि"],
-          "answer": "काश",
-          "why": "if only: काश."
-        },
-        {
-          "q": "अगर तुमने बताया ＿, तो मैं आता।",
-          "en": "If you had told me, I'd have come.",
-          "options": ["होगा", "हो", "है", "होता"],
-          "answer": "होता",
-          "why": "Past unreal: participle + होता."
-        },
-        {
-          "q": "अगर बारिश न ＿, तो हम जाते।",
-          "en": "If it hadn't rained, we'd have gone.",
-          "options": ["होती", "होगी", "हो", "हुई"],
-          "answer": "होती",
-          "why": "बारिश, feminine: होती."
-        }
-      ]
-    },
-    {
       "id": "ki-reported",
       "title": "Reported speech with कि",
       "particle": "कहा कि・पूछा कि",
@@ -3765,71 +3680,6 @@
       ]
     },
     {
-      "id": "participles",
-      "title": "Participles as adjectives: -ता हुआ, -ा हुआ",
-      "particle": "-ता हुआ・-ा हुआ",
-      "summary": "-ता हुआ (doing) and -ा हुआ (done) describe nouns like adjectives: बहता हुआ पानी, उबला हुआ अंडा. (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "<b>-ता हुआ</b> = in the act of doing: <b>दौड़ता हुआ</b> घोड़ा (a running horse). <b>-ा हुआ</b> = having been done: <b>पका हुआ</b> आम (a ripe mango), <b>लिखा हुआ</b> (written). Both agree like adjectives.",
-          "examples": [
-            ["{बहता हुआ} पानी", "bahtā huā pānī", "flowing water"],
-            ["{उबले हुए} अंडे", "uble hue anḍe", "boiled eggs"]
-          ]
-        },
-        {
-          "h": "As adverbs",
-          "p": "In the oblique (<b>-ते हुए</b>) they describe how: वह <b>गाते हुए</b> आई (she came singing). <b>बैठे हुए</b> = sitting; हुआ is often dropped: <b>थका</b> आदमी.",
-          "examples": [
-            [
-              "वह {हँसते हुए} बोली।",
-              "Vah hanste hue bolī.",
-              "She said, laughing."
-            ],
-            ["मैं {थका हुआ} हूँ।", "Main thakā huā hūn.", "I'm tired."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ हुआ खाना",
-          "en": "cooked food",
-          "options": ["पका", "पकता", "पकी", "पकते"],
-          "answer": "पका",
-          "why": "Done: -ा हुआ."
-        },
-        {
-          "q": "＿ हुई लड़की",
-          "en": "a crying girl",
-          "options": ["रोई", "रोती", "रोता", "रोते"],
-          "answer": "रोती",
-          "why": "Doing, feminine: -ती हुई."
-        },
-        {
-          "q": "वह गाना गाते ＿ आया।",
-          "en": "He came singing a song.",
-          "options": ["हुआ", "हुई", "हुए", "हुआ था"],
-          "answer": "हुए",
-          "why": "Adverbial: -ते हुए."
-        },
-        {
-          "q": "दीवार पर ＿ हुई तस्वीर",
-          "en": "the picture hanging on the wall",
-          "options": ["टँगा", "टँगे", "टाँगती", "टँगी"],
-          "answer": "टँगी",
-          "why": "तस्वीर feminine."
-        },
-        {
-          "q": "मैं बहुत ＿ हुई हूँ।",
-          "en": "I'm very tired. (woman)",
-          "options": ["थकी", "थका", "थके", "थकती"],
-          "answer": "थकी",
-          "why": "Feminine: थकी."
-        }
-      ]
-    },
-    {
       "id": "ordinals-fractions",
       "title": "Ordinals and fractions: पहला, डेढ़, ढाई",
       "particle": "पहला・दूसरा・डेढ़・ढाई・सवा・साढ़े",
@@ -3903,152 +3753,6 @@
       ]
     },
     {
-      "id": "days-dates",
-      "title": "Days and dates: सोमवार को",
-      "particle": "-वार को・तारीख़",
-      "summary": "On a day is day + को; dates use तारीख़. (about A1–A2)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>सोमवार, मंगलवार, बुधवार, गुरुवार, शुक्रवार, शनिवार, रविवार</b>. \"On Monday\" = <b>सोमवार को</b>. <b>कल</b> means both yesterday and tomorrow: the verb tense tells you which.",
-          "examples": [
-            [
-              "हम {शनिवार को} मिलेंगे।",
-              "Ham shanivār ko milenge.",
-              "We'll meet on Saturday."
-            ],
-            [
-              "{कल} मैं बाज़ार गया।",
-              "Kal main bāzār gayā.",
-              "Yesterday I went to the market."
-            ]
-          ]
-        },
-        {
-          "h": "Dates and months",
-          "p": "The date: <b>आज कितनी तारीख़ है?</b> — आज <b>पाँच</b> तारीख़ है. \"On 5 May\": <b>पाँच मई को</b>. Months are mostly English: जनवरी, फ़रवरी… \"In May\": <b>मई में</b>.",
-          "examples": [
-            [
-              "मेरा जन्मदिन {दस जून को} है।",
-              "Merā janmadin das jūn ko hai.",
-              "My birthday is on 10 June."
-            ],
-            [
-              "{परसों} छुट्टी है।",
-              "Parson chhuṭṭī hai.",
-              "The day after tomorrow is a holiday."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ को दफ़्तर बंद है।",
-          "en": "The office is closed on Sunday.",
-          "options": ["रविवार", "रविवारों ही", "रवि", "इतवारे"],
-          "answer": "रविवार",
-          "why": "Day + को."
-        },
-        {
-          "q": "कल मैं दिल्ली ＿।",
-          "en": "Tomorrow I'll go to Delhi.",
-          "options": ["गया", "जाऊँगा", "जाता था", "जा रहा था"],
-          "answer": "जाऊँगा",
-          "why": "कल + future = tomorrow."
-        },
-        {
-          "q": "आज कितनी ＿ है?",
-          "en": "What's the date today?",
-          "options": ["दिन", "बजे", "तारीख़", "महीना"],
-          "answer": "तारीख़",
-          "why": "Date: तारीख़."
-        },
-        {
-          "q": "मैं ＿ में भारत जाऊँगा।",
-          "en": "I'll go to India in March.",
-          "options": ["मार्च को", "मार्च पर", "मार्च से", "मार्च"],
-          "answer": "मार्च",
-          "why": "In a month: में."
-        },
-        {
-          "q": "＿ = the day after tomorrow, or the day before yesterday",
-          "en": "",
-          "options": ["परसों", "कल", "आज", "अभी"],
-          "answer": "परसों",
-          "why": "परसों."
-        }
-      ]
-    },
-    {
-      "id": "adverbs",
-      "title": "Adverbs: धीरे, जल्दी, ध्यान से",
-      "particle": "धीरे・जल्दी・-से",
-      "summary": "Many adverbs are plain words (धीरे, जल्दी); others are noun + से: ध्यान से (carefully). (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "Simple adverbs: <b>धीरे</b> (slowly), <b>जल्दी</b> (quickly, early), <b>अच्छी तरह</b> (well), <b>ज़ोर से</b> (loudly). Noun + <b>से</b> makes an adverb: <b>ध्यान से</b> (carefully), <b>प्यार से</b> (lovingly), <b>आराम से</b> (comfortably).",
-          "examples": [
-            ["{धीरे} बोलिए।", "Dhīre bolie.", "Please speak slowly."],
-            ["{ध्यान से} सुनो।", "Dhyān se suno.", "Listen carefully."]
-          ]
-        },
-        {
-          "h": "Adjectives as adverbs",
-          "p": "-ā adjectives used as adverbs usually stay masculine: वह <b>अच्छा</b> गाती है (she sings well). Doubling softens or spreads: <b>धीरे-धीरे</b> (gradually), <b>जल्दी-जल्दी</b> (hurriedly).",
-          "examples": [
-            [
-              "{धीरे-धीरे} सब ठीक हो जाएगा।",
-              "Dhīre-dhīre sab ṭhīk ho jāegā.",
-              "Bit by bit everything will be fine."
-            ],
-            [
-              "{आराम से} बैठिए।",
-              "Ārām se baiṭhie.",
-              "Make yourself comfortable."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "गाड़ी ＿ चलाओ।",
-          "en": "Drive carefully.",
-          "options": ["ध्यान से", "ध्यान", "ध्यानी", "ध्यान में"],
-          "answer": "ध्यान से",
-          "why": "Noun + से."
-        },
-        {
-          "q": "वह बहुत ＿ बोलता है।",
-          "en": "He talks very fast.",
-          "options": ["जल्दा", "जल्दी", "जल्दे", "जल्दी से ही"],
-          "answer": "जल्दी",
-          "why": "quickly: जल्दी."
-        },
-        {
-          "q": "＿ बोलो, बच्चा सो रहा है।",
-          "en": "Speak softly, the baby's asleep.",
-          "options": ["ज़ोर से", "जल्दी", "धीरे", "तेज़ी"],
-          "answer": "धीरे",
-          "why": "softly: धीरे."
-        },
-        {
-          "q": "वह ＿ नाचती है।",
-          "en": "She dances well.",
-          "options": ["अच्छी", "अच्छे", "अच्छों", "अच्छा"],
-          "answer": "अच्छा",
-          "why": "Adverb: masculine form."
-        },
-        {
-          "q": "＿ हिंदी सीख रहा हूँ।",
-          "en": "I'm learning Hindi bit by bit.",
-          "options": ["धीरे-धीरे", "धीरी-धीरी", "धीरा", "जल्दी-धीरे"],
-          "answer": "धीरे-धीरे",
-          "why": "Doubled: gradually."
-        }
-      ]
-    },
-    {
       "id": "chukna",
       "title": "Already: खा चुका",
       "particle": "stem + चुकना",
@@ -4118,75 +3822,6 @@
           "options": ["चुके", "चुका", "चुकी", "गए"],
           "answer": "चुके",
           "why": "Plural past: चुके थे."
-        }
-      ]
-    },
-    {
-      "id": "rahna-continuous",
-      "title": "Keep doing: करता रहता है",
-      "particle": "-ता रहना",
-      "summary": "-ता + रहना means keep on doing, again and again. (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "The imperfective participle + <b>रहना</b>: वह <b>बोलता रहता है</b> (he keeps talking). In commands: <b>लिखते रहो</b> (keep writing). In the past: बारिश <b>होती रही</b> (it kept raining).",
-          "examples": [
-            [
-              "बच्चा पूरा दिन {रोता रहा}।",
-              "Bachchā pūrā din rotā rahā.",
-              "The baby kept crying all day."
-            ],
-            ["{मिलते रहना}!", "Milte rahnā!", "Keep in touch!"]
-          ]
-        },
-        {
-          "h": "-ता जाना: ongoing change",
-          "p": "<b>-ता जाना</b> describes a steady change: दाम <b>बढ़ते जा रहे हैं</b> (prices keep rising). <b>चलते-चलते</b> = while walking along.",
-          "examples": [
-            [
-              "दाम {बढ़ते जा रहे हैं}।",
-              "Dām baṛhte jā rahe hain.",
-              "Prices keep going up."
-            ],
-            ["वह {पढ़ता गया}।", "Vah paṛhtā gayā.", "He kept on reading."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "वह फ़ोन पर बात करती ＿ है।",
-          "en": "She keeps talking on the phone.",
-          "options": ["रहती", "रहता", "रहे", "रही थी"],
-          "answer": "रहती",
-          "why": "Feminine: रहती."
-        },
-        {
-          "q": "मेहनत करते ＿!",
-          "en": "Keep working hard!",
-          "options": ["रहा", "रहो", "रहे थे", "रहना था"],
-          "answer": "रहो",
-          "why": "Command: रहो."
-        },
-        {
-          "q": "रात भर बारिश होती ＿।",
-          "en": "It kept raining all night.",
-          "options": ["रहा", "रहे", "रही", "रहती"],
-          "answer": "रही",
-          "why": "बारिश feminine, past: रही."
-        },
-        {
-          "q": "गर्मी बढ़ती जा ＿ है।",
-          "en": "The heat keeps rising.",
-          "options": ["रहा", "रहे", "रहती", "रही"],
-          "answer": "रही",
-          "why": "Progressive of जाना."
-        },
-        {
-          "q": "हम चलते ＿।",
-          "en": "We kept walking.",
-          "options": ["रहे", "रहा", "रही", "रहें"],
-          "answer": "रहे",
-          "why": "Plural past."
         }
       ]
     },
@@ -4345,83 +3980,6 @@
       ]
     },
     {
-      "id": "concession",
-      "title": "Although: हालाँकि, फिर भी",
-      "particle": "हालाँकि・फिर भी・चाहे",
-      "summary": "हालाँकि = although; फिर भी = even so; चाहे … फिर भी = no matter. (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "<b>हालाँकि</b> … <b>फिर भी</b> / <b>लेकिन</b>: <b>हालाँकि</b> वह बीमार था, <b>फिर भी</b> काम पर गया. <b>फिर भी</b> alone = still, nevertheless.",
-          "examples": [
-            [
-              "{हालाँकि} देर हो गई थी, {फिर भी} हम गए।",
-              "Hālānki der ho gaī thī, phir bhī ham gae.",
-              "Although it was late, we still went."
-            ],
-            [
-              "वह अमीर है, {फिर भी} ख़ुश नहीं है।",
-              "Vah amīr hai, phir bhī khush nahīn hai.",
-              "He's rich, yet he isn't happy."
-            ]
-          ]
-        },
-        {
-          "h": "चाहे … चाहे, -ने के बावजूद",
-          "p": "<b>चाहे</b> + subjunctive = whether, no matter: <b>चाहे</b> कुछ भी हो (whatever happens). <b>के बावजूद</b> = despite: बारिश <b>के बावजूद</b>.",
-          "examples": [
-            [
-              "{चाहे} कुछ भी हो, मैं आऊँगा।",
-              "Chāhe kuchh bhī ho, main āūngā.",
-              "Whatever happens, I'll come."
-            ],
-            [
-              "बारिश {के बावजूद} मैच हुआ।",
-              "Bārish ke bāvajūd maich huā.",
-              "The match went ahead despite the rain."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ वह थका था, फिर भी खेलता रहा।",
-          "en": "Although he was tired, he kept playing.",
-          "options": ["हालाँकि", "क्योंकि", "इसलिए", "ताकि"],
-          "answer": "हालाँकि",
-          "why": "although: हालाँकि."
-        },
-        {
-          "q": "मैंने मना किया, ＿ वह गया।",
-          "en": "I told him not to, yet he went.",
-          "options": ["इसलिए", "फिर भी", "क्योंकि", "ताकि"],
-          "answer": "फिर भी",
-          "why": "yet: फिर भी."
-        },
-        {
-          "q": "＿ जो भी कहे, मैं नहीं मानूँगा।",
-          "en": "Whatever anyone says, I won't agree.",
-          "options": ["अगर तो", "जब", "चाहे", "ताकि"],
-          "answer": "चाहे",
-          "why": "no matter: चाहे."
-        },
-        {
-          "q": "मेहनत ＿ बावजूद वह फ़ेल हो गया।",
-          "en": "Despite his hard work, he failed.",
-          "options": ["की", "का", "से", "के"],
-          "answer": "के",
-          "why": "के बावजूद."
-        },
-        {
-          "q": "चाहे कुछ भी ＿, घबराना मत।",
-          "en": "Whatever happens, don't panic.",
-          "options": ["हो", "होगा", "हुआ", "होता"],
-          "answer": "हो",
-          "why": "चाहे + subjunctive."
-        }
-      ]
-    },
-    {
       "id": "har-sab",
       "title": "Every and all: हर, सब, सारा, पूरा",
       "particle": "हर・सब・सारा・पूरा",
@@ -4495,158 +4053,671 @@
       ]
     },
     {
-      "id": "echo-words",
-      "title": "Echo words and doubling: चाय-वाय, धीरे-धीरे",
-      "particle": "X-वाय・doubling",
-      "summary": "Echo words (चाय-वाय) mean X and the like; doubled words show repetition, distribution or intensity. (about C1)",
-      "level": "advanced",
+      "id": "jaise",
+      "title": "Like and as: जैसा, जैसे, की तरह",
+      "particle": "जैसा・जैसे・की तरह",
+      "summary": "की तरह and जैसा mean like; जैसे also means as if. (about B1)",
+      "level": "intermediate",
       "sections": [
         {
-          "p": "An echo word repeats a word with <b>व-</b>: <b>चाय-वाय</b> (tea or something), <b>खाना-वाना</b>, <b>पानी-वानी</b>. It's informal and means \"and stuff, or something like that\".",
+          "p": "<b>X की तरह</b> / <b>X जैसा</b> = like X: वह <b>शेर की तरह</b> दहाड़ा. <b>जैसा</b> agrees: तुम्हारे <b>जैसी</b> लड़की. Pronouns: <b>मेरे जैसा</b> / <b>मुझ जैसा</b>.",
           "examples": [
             [
-              "{चाय-वाय} पियोगे?",
-              "Chāy-vāy piyoge?",
-              "Will you have some tea or something?"
+              "वह {अपने पिता जैसा} दिखता है।",
+              "Vah apne pitā jaisā dikhtā hai.",
+              "He looks like his father."
             ],
             [
-              "{किताबें-विताबें} कहाँ हैं?",
-              "Kitāben-vitāben kahān hain?",
-              "Where are the books and things?"
+              "{बच्चों की तरह} मत रोओ।",
+              "Bachchon kī tarah mat roo.",
+              "Don't cry like a child."
             ]
           ]
         },
         {
-          "h": "Doubling",
-          "p": "Doubling a word can mean each, various or intensity: <b>घर-घर</b> (every house), <b>कौन-कौन</b> (who all), <b>गरम-गरम</b> (piping hot), <b>बार-बार</b> (again and again). Pairs of related words: <b>माँ-बाप</b> (parents), <b>दाल-रोटी</b> (basic food).",
+          "h": "जैसे: as if",
+          "p": "<b>जैसे</b> (or <b>मानो</b>) + clause = as if: वह ऐसे बात करता है <b>जैसे</b> सब जानता हो. <b>जैसे कि</b> = for example.",
           "examples": [
-            ["{गरम-गरम} समोसे!", "Garam-garam samose!", "Piping-hot samosas!"],
             [
-              "पार्टी में {कौन-कौन} आया?",
-              "Pārṭī men kaun-kaun āyā?",
-              "Who all came to the party?"
+              "वह ऐसे देख रहा था {जैसे} मुझे जानता हो।",
+              "Vah aise dekh rahā thā jaise mujhe jāntā ho.",
+              "He was looking as if he knew me."
+            ],
+            [
+              "फल, {जैसे कि} आम और केला",
+              "Phal, jaise ki ām aur kelā",
+              "fruit, such as mango and banana"
             ]
           ]
         }
       ],
       "drills": [
         {
-          "q": "पानी-＿ चाहिए?",
-          "en": "Do you want some water or something?",
-          "options": ["वानी", "पानी", "वाला", "वानि ही"],
-          "answer": "वानी",
-          "why": "Echo with व-: पानी-वानी."
+          "q": "वह फूल ＿ सुंदर है।",
+          "en": "She's as beautiful as a flower.",
+          "options": ["जैसी", "जैसा", "जैसे", "की तरह की"],
+          "answer": "जैसी",
+          "why": "Agrees with वह (feminine): जैसी."
         },
         {
-          "q": "वह ＿ फ़ोन करता है।",
-          "en": "He calls again and again.",
-          "options": ["बारी-बारी ही", "बार-बार", "एक बार", "बार"],
-          "answer": "बार-बार",
-          "why": "again and again: बार-बार."
+          "q": "तुम पागलों की ＿ क्यों हँस रहे हो?",
+          "en": "Why are you laughing like a madman?",
+          "options": ["जैसा", "तरह", "तरफ़", "जगह"],
+          "answer": "तरह",
+          "why": "की तरह."
         },
         {
-          "q": "＿ में दिवाली मनाई जाती है।",
-          "en": "Diwali is celebrated in every home.",
-          "options": ["घर", "घरों-घरों", "घर-घर", "घर ही"],
-          "answer": "घर-घर",
-          "why": "each: doubled."
+          "q": "वह ऐसे बोला ＿ वह राजा हो।",
+          "en": "He spoke as if he were a king.",
+          "options": ["जैसा", "की तरह", "जैसे", "कि"],
+          "answer": "जैसे",
+          "why": "as if: जैसे."
         },
         {
-          "q": "ठंडा-＿ पानी",
-          "en": "nice cold water",
-          "options": ["ठंडी", "वंडा", "ठंडे", "ठंडा"],
-          "answer": "ठंडा",
-          "why": "Intensity: doubled adjective."
+          "q": "मेरे ＿ मत बनो।",
+          "en": "Don't be like me.",
+          "options": ["जैसा", "जैसी", "तरह", "जैसे"],
+          "answer": "जैसे",
+          "why": "Oblique before बनो: जैसे."
         },
         {
-          "q": "What does an echo word like खाना-वाना add?",
-          "en": "",
-          "options": [
-            "and the like (informal)",
-            "a plural",
-            "the past tense",
-            "politeness"
-          ],
-          "answer": "and the like (informal)",
-          "why": "X and stuff."
+          "q": "सब्ज़ियाँ, ＿ कि आलू और प्याज़",
+          "en": "vegetables, such as potatoes and onions",
+          "options": ["जैसे", "जैसा", "मानो", "तरह"],
+          "answer": "जैसे",
+          "why": "for example: जैसे कि."
         }
       ]
     },
     {
-      "id": "register",
-      "title": "Register: Sanskrit and Urdu words",
-      "particle": "धन्यवाद / शुक्रिया",
-      "summary": "Hindi has two vocabularies: Sanskrit-based words in formal Hindi, Persian/Arabic-based ones shared with Urdu in everyday speech. (about C1)",
-      "level": "advanced",
+      "id": "khud",
+      "title": "Myself: ख़ुद, अपने आप",
+      "particle": "ख़ुद・स्वयं・अपने आप",
+      "summary": "ख़ुद (or formal स्वयं) means myself, yourself, by oneself, for emphasis or \"on one's own\". (about B1)",
+      "level": "intermediate",
       "sections": [
         {
-          "p": "Many everyday ideas have two words: <b>धन्यवाद</b> (formal) / <b>शुक्रिया</b> (everyday) = thanks; <b>प्रश्न</b> / <b>सवाल</b> = question; <b>समय</b> / <b>वक़्त</b> = time; <b>कृपया</b> / <b>मेहरबानी करके</b> = please.",
+          "p": "<b>ख़ुद</b> never changes: मैं <b>ख़ुद</b> करूँगा (I'll do it myself), उसने <b>ख़ुद</b> बताया (he told me himself). Formal Hindi uses <b>स्वयं</b>. <b>ख़ुद को</b> / <b>अपने आप को</b> = oneself as an object.",
           "examples": [
             [
-              "आपकी सहायता के लिए {धन्यवाद}।",
-              "Āpkī sahāytā ke lie dhanyavād.",
-              "Thank you for your help. (formal)"
+              "मैंने यह {ख़ुद} बनाया।",
+              "Mainne yah khud banāyā.",
+              "I made this myself."
             ],
-            ["{शुक्रिया}, दोस्त!", "Shukriyā, dost!", "Thanks, friend!"]
+            ["{अपने आप को} देखो।", "Apne āp ko dekho.", "Look at yourself."]
           ]
         },
         {
-          "h": "Choosing",
-          "p": "News, government and school Hindi lean Sanskrit (<b>विद्यालय</b> school, <b>चिकित्सक</b> doctor); films and conversation lean Urdu and English (<b>स्कूल</b>, <b>डॉक्टर</b>, <b>दिल</b>, <b>ज़िंदगी</b>). Mixing is normal.",
+          "h": "With postpositions",
+          "p": "<b>ख़ुद से</b> (to oneself), <b>अपने लिए</b> (for oneself), <b>ख़ुद-ब-ख़ुद</b> (all by itself).",
           "examples": [
             [
-              "{प्रधानमंत्री} ने {राष्ट्र} को संबोधित किया।",
-              "Pradhānmantrī ne rāshṭra ko sambodhit kiyā.",
-              "The Prime Minister addressed the nation."
+              "वह {ख़ुद से} बात करता है।",
+              "Vah khud se bāt kartā hai.",
+              "He talks to himself."
             ],
             [
-              "{ज़िंदगी} बहुत छोटी है।",
-              "Zindagī bahut chhoṭī hai.",
-              "Life is very short."
+              "दरवाज़ा {ख़ुद-ब-ख़ुद} बंद हो गया।",
+              "Darvāzā khud-ba-khud band ho gayā.",
+              "The door shut all by itself."
             ]
           ]
         }
       ],
       "drills": [
         {
-          "q": "Formal \"thank you\"",
-          "en": "",
-          "options": ["धन्यवाद", "शुक्रिया", "थैंक्स", "मेहरबानी"],
-          "answer": "धन्यवाद",
-          "why": "Sanskrit-based: धन्यवाद."
+          "q": "मैं ＿ जाऊँगी।",
+          "en": "I'll go myself.",
+          "options": ["ख़ुद", "अपना", "अपने", "मुझे"],
+          "answer": "ख़ुद",
+          "why": "Emphatic self: ख़ुद."
         },
         {
-          "q": "सवाल is the everyday word; the formal one is…",
-          "en": "",
-          "options": ["उत्तर", "प्रश्न", "जवाब", "मसला"],
-          "answer": "प्रश्न",
-          "why": "प्रश्न = question."
+          "q": "अपना ध्यान रखो, ＿ से प्यार करो।",
+          "en": "Look after yourself, love yourself.",
+          "options": ["अपना", "ख़ुद", "तुम", "तुम्हें"],
+          "answer": "ख़ुद",
+          "why": "ख़ुद से."
         },
         {
-          "q": "Everyday word for \"time\"",
-          "en": "",
-          "options": ["काल", "अवधि", "वक़्त", "मुहूर्त"],
-          "answer": "वक़्त",
-          "why": "Urdu-based: वक़्त."
+          "q": "प्रधानमंत्री ＿ आए।",
+          "en": "The Prime Minister came himself. (formal)",
+          "options": ["स्वयम् को", "अपना", "स्वयं", "अपने"],
+          "answer": "स्वयं",
+          "why": "Formal: स्वयं."
         },
         {
-          "q": "विद्यालय means…",
-          "en": "",
-          "options": ["hospital", "library", "office", "school"],
-          "answer": "school",
-          "why": "Formal word for school."
+          "q": "उसने ＿ को आईने में देखा।",
+          "en": "She looked at herself in the mirror.",
+          "options": ["ख़ुद का", "अपना", "उसे", "ख़ुद"],
+          "answer": "ख़ुद",
+          "why": "Object: ख़ुद को."
         },
         {
-          "q": "Which register do news bulletins usually use?",
+          "q": "बत्ती ＿ जल गई।",
+          "en": "The light came on by itself.",
+          "options": ["ख़ुद-ब-ख़ुद", "ख़ुद को", "अपना", "ख़ुद से ही को"],
+          "answer": "ख़ुद-ब-ख़ुद",
+          "why": "all by itself."
+        }
+      ]
+    },
+    {
+      "id": "passive",
+      "title": "The passive: किया जाता है",
+      "particle": "past participle + जाना",
+      "summary": "The passive is the past participle + जाना; the agent, rarely mentioned, takes द्वारा. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Past participle + <b>जाना</b>: यहाँ हिंदी <b>बोली जाती है</b> (Hindi is spoken here). The participle agrees with the subject: खाना <b>बनाया गया</b>, रोटी <b>बनाई गई</b>.",
+          "examples": [
+            [
+              "यहाँ हिंदी {बोली जाती है}।",
+              "Yahān hindī bolī jātī hai.",
+              "Hindi is spoken here."
+            ],
+            [
+              "यह मंदिर 1500 में {बनाया गया था}।",
+              "Yah mandir 1500 men banāyā gayā thā.",
+              "This temple was built in 1500."
+            ]
+          ]
+        },
+        {
+          "h": "द्वारा and the \"cannot\" passive",
+          "p": "The agent: <b>के द्वारा</b> (formal): प्रधानमंत्री <b>द्वारा</b> उद्घाटन किया गया. Negative passive with से means \"can't\": मुझसे <b>खाया नहीं जाता</b> (I can't bring myself to eat).",
+          "examples": [
+            [
+              "सरकार {द्वारा} नई योजना शुरू की गई।",
+              "Sarkār dvārā naī yojanā shurū kī gaī.",
+              "A new scheme was launched by the government."
+            ],
+            [
+              "{मुझसे} यह {सहा नहीं जाता}।",
+              "Mujhse yah sahā nahīn jātā.",
+              "I can't bear this."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "यह किताब हिंदी में ＿ गई।",
+          "en": "This book was written in Hindi.",
+          "options": ["लिखी", "लिखा", "लिखे", "लिखता"],
+          "answer": "लिखी",
+          "why": "किताब, feminine."
+        },
+        {
+          "q": "चोर ＿ गया।",
+          "en": "The thief was caught.",
+          "options": ["पकड़ी", "पकड़ा", "पकड़े", "पकड़ता"],
+          "answer": "पकड़ा",
+          "why": "Masculine singular."
+        },
+        {
+          "q": "यहाँ अंग्रेज़ी भी बोली ＿ है।",
+          "en": "English is also spoken here.",
+          "options": ["जाता", "गई", "जाती", "जाते"],
+          "answer": "जाती",
+          "why": "Habitual passive, feminine."
+        },
+        {
+          "q": "पुलिस ＿ जाँच की गई।",
+          "en": "An investigation was carried out by the police.",
+          "options": ["ने", "से ही", "को", "द्वारा"],
+          "answer": "द्वारा",
+          "why": "Agent: द्वारा."
+        },
+        {
+          "q": "मुझसे और नहीं चला ＿।",
+          "en": "I can't walk any more.",
+          "options": ["जाता", "जाती", "गया था", "जाना"],
+          "answer": "जाता",
+          "why": "Inability passive: से + नहीं + जाता."
+        }
+      ]
+    },
+    {
+      "id": "causatives",
+      "title": "Causatives: करना, कराना",
+      "particle": "-ा-・-वा-",
+      "summary": "Lengthening or adding -ā- / -vā- makes \"cause to do\": बनना → बनाना → बनवाना. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Three steps: <b>बनना</b> (be made) → <b>बनाना</b> (make) → <b>बनवाना</b> (have made). <b>पढ़ना</b> (read) → <b>पढ़ाना</b> (teach) → पढ़वाना. <b>करना</b> → <b>कराना / करवाना</b> (get done).",
+          "examples": [
+            [
+              "मैंने दर्ज़ी से कुर्ता {सिलवाया}।",
+              "Mainne darzī se kurtā silvāyā.",
+              "I had a kurta sewn by the tailor."
+            ],
+            [
+              "वह स्कूल में {पढ़ाती} है।",
+              "Vah skūl men paṛhātī hai.",
+              "She teaches at a school."
+            ]
+          ]
+        },
+        {
+          "h": "The middle agent takes से",
+          "p": "The person who does the work for you takes <b>से</b>: मैंने मिस्त्री <b>से</b> घर <b>बनवाया</b>. Common: <b>दिखाना</b> (show, from देखना), <b>सुनाना</b> (tell, from सुनना), <b>खिलाना</b> (feed).",
+          "examples": [
+            [
+              "मुझे अपनी तस्वीरें {दिखाओ}।",
+              "Mujhe apnī tasvīren dikhāo.",
+              "Show me your photos."
+            ],
+            [
+              "माँ बच्चे को खाना {खिला रही है}।",
+              "Mān bachche ko khānā khilā rahī hai.",
+              "Mother is feeding the child."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "पढ़ना → ＿",
+          "en": "read → teach",
+          "options": ["पढ़ाना", "पढ़वना", "पढ़ना करना", "पढ़ाई"],
+          "answer": "पढ़ाना",
+          "why": "First causative: -ā-."
+        },
+        {
+          "q": "मैंने अपने बाल ＿।",
+          "en": "I had my hair cut.",
+          "options": ["काटे", "कटवाए", "कटे", "कटाई"],
+          "answer": "कटवाए",
+          "why": "Second causative: -vā-."
+        },
+        {
+          "q": "मुझे वह फ़िल्म ＿।",
+          "en": "Show me that film.",
+          "options": ["देखो", "दिखो", "दिखाओ", "दिखवो"],
+          "answer": "दिखाओ",
+          "why": "देखना → दिखाना."
+        },
+        {
+          "q": "उसने मैकेनिक ＿ गाड़ी ठीक करवाई।",
+          "en": "He got the car fixed by a mechanic.",
+          "options": ["को", "ने", "का", "से"],
+          "answer": "से",
+          "why": "Middle agent: से."
+        },
+        {
+          "q": "दादी हमें कहानियाँ ＿ थीं।",
+          "en": "Grandma used to tell us stories.",
+          "options": ["सुनाती", "सुनती", "सुनवाती", "सुनाता"],
+          "answer": "सुनाती",
+          "why": "सुनना → सुनाना."
+        }
+      ]
+    },
+    {
+      "id": "presumptive",
+      "title": "The presumptive: होगा (must be)",
+      "particle": "होगा・आया होगा",
+      "summary": "होगा/होगी/होंगे can guess about the present or past: वह घर पर होगा (he must be at home). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "The future of होना is often a <b>guess</b>: वह थका <b>होगा</b> (he must be tired). With a progressive: वह सो रहा <b>होगा</b> (he's probably sleeping).",
+          "examples": [
+            [
+              "वह अभी दफ़्तर में {होगा}।",
+              "Vah abhī daftar men hogā.",
+              "He must be at the office now."
+            ],
+            [
+              "बच्चे खेल रहे {होंगे}।",
+              "Bachche khel rahe honge.",
+              "The children are probably playing."
+            ]
+          ]
+        },
+        {
+          "h": "About the past",
+          "p": "Past participle + होगा = must have done: उसने खाना खा लिया <b>होगा</b> (he must have eaten). <b>शायद</b> + subjunctive is weaker: शायद वह <b>हो</b>.",
+          "examples": [
+            [
+              "वह पहुँच गई {होगी}।",
+              "Vah pahunch gaī hogī.",
+              "She must have arrived."
+            ],
+            [
+              "तुमने यह फ़िल्म देखी {होगी}।",
+              "Tumne yah film dekhī hogī.",
+              "You must have seen this film."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "माँ रसोई में ＿।",
+          "en": "Mum must be in the kitchen.",
+          "options": ["होंगी", "होगा", "हैं", "थीं"],
+          "answer": "होंगी",
+          "why": "Respectful plural, feminine: होंगी."
+        },
+        {
+          "q": "वह सो रहा ＿।",
+          "en": "He's probably sleeping.",
+          "options": ["होगी", "होगा", "है था", "हुआ"],
+          "answer": "होगा",
+          "why": "Guess about now: होगा."
+        },
+        {
+          "q": "उन्होंने टिकट ख़रीद लिए ＿।",
+          "en": "They must have bought the tickets.",
+          "options": ["होगा", "होगी", "होंगे", "थे"],
+          "answer": "होंगे",
+          "why": "Agrees with टिकट (plural)."
+        },
+        {
+          "q": "ट्रेन निकल गई ＿।",
+          "en": "The train must have left.",
+          "options": ["होगा", "होंगे", "है", "होगी"],
+          "answer": "होगी",
+          "why": "ट्रेन is feminine."
+        },
+        {
+          "q": "Which is a guess, not a future?",
           "en": "",
-          "options": [
-            "Sanskrit-based Hindi",
-            "Urdu-based Hindustani",
-            "English only",
-            "Punjabi"
-          ],
-          "answer": "Sanskrit-based Hindi",
-          "why": "Formal Hindi: Sanskrit-based."
+          "options": ["वह घर पर होगा। (now)", "वह कल आएगा।", "मैं जाऊँगा।", "हम खाएँगे।"],
+          "answer": "वह घर पर होगा। (now)",
+          "why": "होगा about now = guess."
+        }
+      ]
+    },
+    {
+      "id": "counterfactual",
+      "title": "Unreal conditions: अगर तुम आते तो",
+      "particle": "-ता (था) … -ता",
+      "summary": "Unreal or past-unreal conditions use the -ता form (often with था) in both halves. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>अगर</b> + -ता, <b>तो</b> + -ता: <b>अगर</b> मेरे पास पैसे <b>होते</b>, <b>तो</b> मैं घर <b>ख़रीदता</b> (If I had money, I'd buy a house). It covers both present and past.",
+          "examples": [
+            [
+              "{अगर} तुम {आते}, {तो} मज़ा {आता}।",
+              "Agar tum āte, to mazā ātā.",
+              "If you'd come, it would have been fun."
+            ],
+            [
+              "{काश} मैं वहाँ {होता}!",
+              "Kāsh main vahān hotā!",
+              "If only I were there!"
+            ]
+          ]
+        },
+        {
+          "h": "With था for clear past",
+          "p": "For clear past unreality add <b>था</b>: अगर मैंने पढ़ाई की <b>होती</b>, तो पास हो गया <b>होता</b>. <b>काश</b> (if only) takes the same form.",
+          "examples": [
+            [
+              "अगर मुझे पता {होता}, तो मैं {बताता}।",
+              "Agar mujhe patā hotā, to main batātā.",
+              "If I'd known, I'd have told you."
+            ],
+            [
+              "काश तुमने मुझे बताया {होता}!",
+              "Kāsh tumne mujhe batāyā hotā!",
+              "If only you'd told me!"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "अगर वह मेहनत ＿, तो पास हो जाता।",
+          "en": "If he'd worked hard, he'd have passed.",
+          "options": ["करता", "करेगा", "करे", "किया"],
+          "answer": "करता",
+          "why": "Unreal: -ता."
+        },
+        {
+          "q": "अगर मेरे पास समय होता, तो मैं ＿।",
+          "en": "If I had time, I'd come.",
+          "options": ["आऊँगा", "आता", "आऊँ", "आया"],
+          "answer": "आता",
+          "why": "Unreal result: -ता."
+        },
+        {
+          "q": "＿ मैं पक्षी होता!",
+          "en": "If only I were a bird!",
+          "options": ["अगर तो", "जब", "काश", "ताकि"],
+          "answer": "काश",
+          "why": "if only: काश."
+        },
+        {
+          "q": "अगर तुमने बताया ＿, तो मैं आता।",
+          "en": "If you had told me, I'd have come.",
+          "options": ["होगा", "हो", "है", "होता"],
+          "answer": "होता",
+          "why": "Past unreal: participle + होता."
+        },
+        {
+          "q": "अगर बारिश न ＿, तो हम जाते।",
+          "en": "If it hadn't rained, we'd have gone.",
+          "options": ["होती", "होगी", "हो", "हुई"],
+          "answer": "होती",
+          "why": "बारिश, feminine: होती."
+        }
+      ]
+    },
+    {
+      "id": "participles",
+      "title": "Participles as adjectives: -ता हुआ, -ा हुआ",
+      "particle": "-ता हुआ・-ा हुआ",
+      "summary": "-ता हुआ (doing) and -ा हुआ (done) describe nouns like adjectives: बहता हुआ पानी, उबला हुआ अंडा. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>-ता हुआ</b> = in the act of doing: <b>दौड़ता हुआ</b> घोड़ा (a running horse). <b>-ा हुआ</b> = having been done: <b>पका हुआ</b> आम (a ripe mango), <b>लिखा हुआ</b> (written). Both agree like adjectives.",
+          "examples": [
+            ["{बहता हुआ} पानी", "bahtā huā pānī", "flowing water"],
+            ["{उबले हुए} अंडे", "uble hue anḍe", "boiled eggs"]
+          ]
+        },
+        {
+          "h": "As adverbs",
+          "p": "In the oblique (<b>-ते हुए</b>) they describe how: वह <b>गाते हुए</b> आई (she came singing). <b>बैठे हुए</b> = sitting; हुआ is often dropped: <b>थका</b> आदमी.",
+          "examples": [
+            [
+              "वह {हँसते हुए} बोली।",
+              "Vah hanste hue bolī.",
+              "She said, laughing."
+            ],
+            ["मैं {थका हुआ} हूँ।", "Main thakā huā hūn.", "I'm tired."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ हुआ खाना",
+          "en": "cooked food",
+          "options": ["पका", "पकता", "पकी", "पकते"],
+          "answer": "पका",
+          "why": "Done: -ा हुआ."
+        },
+        {
+          "q": "＿ हुई लड़की",
+          "en": "a crying girl",
+          "options": ["रोई", "रोती", "रोता", "रोते"],
+          "answer": "रोती",
+          "why": "Doing, feminine: -ती हुई."
+        },
+        {
+          "q": "वह गाना गाते ＿ आया।",
+          "en": "He came singing a song.",
+          "options": ["हुआ", "हुई", "हुए", "हुआ था"],
+          "answer": "हुए",
+          "why": "Adverbial: -ते हुए."
+        },
+        {
+          "q": "दीवार पर ＿ हुई तस्वीर",
+          "en": "the picture hanging on the wall",
+          "options": ["टँगा", "टँगे", "टाँगती", "टँगी"],
+          "answer": "टँगी",
+          "why": "तस्वीर feminine."
+        },
+        {
+          "q": "मैं बहुत ＿ हुई हूँ।",
+          "en": "I'm very tired. (woman)",
+          "options": ["थकी", "थका", "थके", "थकती"],
+          "answer": "थकी",
+          "why": "Feminine: थकी."
+        }
+      ]
+    },
+    {
+      "id": "rahna-continuous",
+      "title": "Keep doing: करता रहता है",
+      "particle": "-ता रहना",
+      "summary": "-ता + रहना means keep on doing, again and again. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "The imperfective participle + <b>रहना</b>: वह <b>बोलता रहता है</b> (he keeps talking). In commands: <b>लिखते रहो</b> (keep writing). In the past: बारिश <b>होती रही</b> (it kept raining).",
+          "examples": [
+            [
+              "बच्चा पूरा दिन {रोता रहा}।",
+              "Bachchā pūrā din rotā rahā.",
+              "The baby kept crying all day."
+            ],
+            ["{मिलते रहना}!", "Milte rahnā!", "Keep in touch!"]
+          ]
+        },
+        {
+          "h": "-ता जाना: ongoing change",
+          "p": "<b>-ता जाना</b> describes a steady change: दाम <b>बढ़ते जा रहे हैं</b> (prices keep rising). <b>चलते-चलते</b> = while walking along.",
+          "examples": [
+            [
+              "दाम {बढ़ते जा रहे हैं}।",
+              "Dām baṛhte jā rahe hain.",
+              "Prices keep going up."
+            ],
+            ["वह {पढ़ता गया}।", "Vah paṛhtā gayā.", "He kept on reading."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "वह फ़ोन पर बात करती ＿ है।",
+          "en": "She keeps talking on the phone.",
+          "options": ["रहती", "रहता", "रहे", "रही थी"],
+          "answer": "रहती",
+          "why": "Feminine: रहती."
+        },
+        {
+          "q": "मेहनत करते ＿!",
+          "en": "Keep working hard!",
+          "options": ["रहा", "रहो", "रहे थे", "रहना था"],
+          "answer": "रहो",
+          "why": "Command: रहो."
+        },
+        {
+          "q": "रात भर बारिश होती ＿।",
+          "en": "It kept raining all night.",
+          "options": ["रहा", "रहे", "रही", "रहती"],
+          "answer": "रही",
+          "why": "बारिश feminine, past: रही."
+        },
+        {
+          "q": "गर्मी बढ़ती जा ＿ है।",
+          "en": "The heat keeps rising.",
+          "options": ["रहा", "रहे", "रहती", "रही"],
+          "answer": "रही",
+          "why": "Progressive of जाना."
+        },
+        {
+          "q": "हम चलते ＿।",
+          "en": "We kept walking.",
+          "options": ["रहे", "रहा", "रही", "रहें"],
+          "answer": "रहे",
+          "why": "Plural past."
+        }
+      ]
+    },
+    {
+      "id": "concession",
+      "title": "Although: हालाँकि, फिर भी",
+      "particle": "हालाँकि・फिर भी・चाहे",
+      "summary": "हालाँकि = although; फिर भी = even so; चाहे … फिर भी = no matter. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>हालाँकि</b> … <b>फिर भी</b> / <b>लेकिन</b>: <b>हालाँकि</b> वह बीमार था, <b>फिर भी</b> काम पर गया. <b>फिर भी</b> alone = still, nevertheless.",
+          "examples": [
+            [
+              "{हालाँकि} देर हो गई थी, {फिर भी} हम गए।",
+              "Hālānki der ho gaī thī, phir bhī ham gae.",
+              "Although it was late, we still went."
+            ],
+            [
+              "वह अमीर है, {फिर भी} ख़ुश नहीं है।",
+              "Vah amīr hai, phir bhī khush nahīn hai.",
+              "He's rich, yet he isn't happy."
+            ]
+          ]
+        },
+        {
+          "h": "चाहे … चाहे, -ने के बावजूद",
+          "p": "<b>चाहे</b> + subjunctive = whether, no matter: <b>चाहे</b> कुछ भी हो (whatever happens). <b>के बावजूद</b> = despite: बारिश <b>के बावजूद</b>.",
+          "examples": [
+            [
+              "{चाहे} कुछ भी हो, मैं आऊँगा।",
+              "Chāhe kuchh bhī ho, main āūngā.",
+              "Whatever happens, I'll come."
+            ],
+            [
+              "बारिश {के बावजूद} मैच हुआ।",
+              "Bārish ke bāvajūd maich huā.",
+              "The match went ahead despite the rain."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ वह थका था, फिर भी खेलता रहा।",
+          "en": "Although he was tired, he kept playing.",
+          "options": ["हालाँकि", "क्योंकि", "इसलिए", "ताकि"],
+          "answer": "हालाँकि",
+          "why": "although: हालाँकि."
+        },
+        {
+          "q": "मैंने मना किया, ＿ वह गया।",
+          "en": "I told him not to, yet he went.",
+          "options": ["इसलिए", "फिर भी", "क्योंकि", "ताकि"],
+          "answer": "फिर भी",
+          "why": "yet: फिर भी."
+        },
+        {
+          "q": "＿ जो भी कहे, मैं नहीं मानूँगा।",
+          "en": "Whatever anyone says, I won't agree.",
+          "options": ["अगर तो", "जब", "चाहे", "ताकि"],
+          "answer": "चाहे",
+          "why": "no matter: चाहे."
+        },
+        {
+          "q": "मेहनत ＿ बावजूद वह फ़ेल हो गया।",
+          "en": "Despite his hard work, he failed.",
+          "options": ["की", "का", "से", "के"],
+          "answer": "के",
+          "why": "के बावजूद."
+        },
+        {
+          "q": "चाहे कुछ भी ＿, घबराना मत।",
+          "en": "Whatever happens, don't panic.",
+          "options": ["हो", "होगा", "हुआ", "होता"],
+          "answer": "हो",
+          "why": "चाहे + subjunctive."
         }
       ]
     },
@@ -4956,83 +5027,6 @@
       ]
     },
     {
-      "id": "jaise",
-      "title": "Like and as: जैसा, जैसे, की तरह",
-      "particle": "जैसा・जैसे・की तरह",
-      "summary": "की तरह and जैसा mean like; जैसे also means as if. (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "<b>X की तरह</b> / <b>X जैसा</b> = like X: वह <b>शेर की तरह</b> दहाड़ा. <b>जैसा</b> agrees: तुम्हारे <b>जैसी</b> लड़की. Pronouns: <b>मेरे जैसा</b> / <b>मुझ जैसा</b>.",
-          "examples": [
-            [
-              "वह {अपने पिता जैसा} दिखता है।",
-              "Vah apne pitā jaisā dikhtā hai.",
-              "He looks like his father."
-            ],
-            [
-              "{बच्चों की तरह} मत रोओ।",
-              "Bachchon kī tarah mat roo.",
-              "Don't cry like a child."
-            ]
-          ]
-        },
-        {
-          "h": "जैसे: as if",
-          "p": "<b>जैसे</b> (or <b>मानो</b>) + clause = as if: वह ऐसे बात करता है <b>जैसे</b> सब जानता हो. <b>जैसे कि</b> = for example.",
-          "examples": [
-            [
-              "वह ऐसे देख रहा था {जैसे} मुझे जानता हो।",
-              "Vah aise dekh rahā thā jaise mujhe jāntā ho.",
-              "He was looking as if he knew me."
-            ],
-            [
-              "फल, {जैसे कि} आम और केला",
-              "Phal, jaise ki ām aur kelā",
-              "fruit, such as mango and banana"
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "वह फूल ＿ सुंदर है।",
-          "en": "She's as beautiful as a flower.",
-          "options": ["जैसी", "जैसा", "जैसे", "की तरह की"],
-          "answer": "जैसी",
-          "why": "Agrees with वह (feminine): जैसी."
-        },
-        {
-          "q": "तुम पागलों की ＿ क्यों हँस रहे हो?",
-          "en": "Why are you laughing like a madman?",
-          "options": ["जैसा", "तरह", "तरफ़", "जगह"],
-          "answer": "तरह",
-          "why": "की तरह."
-        },
-        {
-          "q": "वह ऐसे बोला ＿ वह राजा हो।",
-          "en": "He spoke as if he were a king.",
-          "options": ["जैसा", "की तरह", "जैसे", "कि"],
-          "answer": "जैसे",
-          "why": "as if: जैसे."
-        },
-        {
-          "q": "मेरे ＿ मत बनो।",
-          "en": "Don't be like me.",
-          "options": ["जैसा", "जैसी", "तरह", "जैसे"],
-          "answer": "जैसे",
-          "why": "Oblique before बनो: जैसे."
-        },
-        {
-          "q": "सब्ज़ियाँ, ＿ कि आलू और प्याज़",
-          "en": "vegetables, such as potatoes and onions",
-          "options": ["जैसे", "जैसा", "मानो", "तरह"],
-          "answer": "जैसे",
-          "why": "for example: जैसे कि."
-        }
-      ]
-    },
-    {
       "id": "instead-without",
       "title": "Instead of, without, besides: के बजाय, के बिना, के अलावा",
       "particle": "के बजाय・के बिना・के अलावा",
@@ -5106,79 +5100,6 @@
           "options": ["इसके", "उसके", "मेरे", "इस"],
           "answer": "इसके",
           "why": "Moreover: इसके अलावा."
-        }
-      ]
-    },
-    {
-      "id": "khud",
-      "title": "Myself: ख़ुद, अपने आप",
-      "particle": "ख़ुद・स्वयं・अपने आप",
-      "summary": "ख़ुद (or formal स्वयं) means myself, yourself, by oneself, for emphasis or \"on one's own\". (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "<b>ख़ुद</b> never changes: मैं <b>ख़ुद</b> करूँगा (I'll do it myself), उसने <b>ख़ुद</b> बताया (he told me himself). Formal Hindi uses <b>स्वयं</b>. <b>ख़ुद को</b> / <b>अपने आप को</b> = oneself as an object.",
-          "examples": [
-            [
-              "मैंने यह {ख़ुद} बनाया।",
-              "Mainne yah khud banāyā.",
-              "I made this myself."
-            ],
-            ["{अपने आप को} देखो।", "Apne āp ko dekho.", "Look at yourself."]
-          ]
-        },
-        {
-          "h": "With postpositions",
-          "p": "<b>ख़ुद से</b> (to oneself), <b>अपने लिए</b> (for oneself), <b>ख़ुद-ब-ख़ुद</b> (all by itself).",
-          "examples": [
-            [
-              "वह {ख़ुद से} बात करता है।",
-              "Vah khud se bāt kartā hai.",
-              "He talks to himself."
-            ],
-            [
-              "दरवाज़ा {ख़ुद-ब-ख़ुद} बंद हो गया।",
-              "Darvāzā khud-ba-khud band ho gayā.",
-              "The door shut all by itself."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "मैं ＿ जाऊँगी।",
-          "en": "I'll go myself.",
-          "options": ["ख़ुद", "अपना", "अपने", "मुझे"],
-          "answer": "ख़ुद",
-          "why": "Emphatic self: ख़ुद."
-        },
-        {
-          "q": "अपना ध्यान रखो, ＿ से प्यार करो।",
-          "en": "Look after yourself, love yourself.",
-          "options": ["अपना", "ख़ुद", "तुम", "तुम्हें"],
-          "answer": "ख़ुद",
-          "why": "ख़ुद से."
-        },
-        {
-          "q": "प्रधानमंत्री ＿ आए।",
-          "en": "The Prime Minister came himself. (formal)",
-          "options": ["स्वयम् को", "अपना", "स्वयं", "अपने"],
-          "answer": "स्वयं",
-          "why": "Formal: स्वयं."
-        },
-        {
-          "q": "उसने ＿ को आईने में देखा।",
-          "en": "She looked at herself in the mirror.",
-          "options": ["ख़ुद का", "अपना", "उसे", "ख़ुद"],
-          "answer": "ख़ुद",
-          "why": "Object: ख़ुद को."
-        },
-        {
-          "q": "बत्ती ＿ जल गई।",
-          "en": "The light came on by itself.",
-          "options": ["ख़ुद-ब-ख़ुद", "ख़ुद को", "अपना", "ख़ुद से ही को"],
-          "answer": "ख़ुद-ब-ख़ुद",
-          "why": "all by itself."
         }
       ]
     },
@@ -5260,79 +5181,158 @@
       ]
     },
     {
-      "id": "quantities",
-      "title": "How much: बहुत, थोड़ा, ज़्यादा, कम",
-      "particle": "बहुत・थोड़ा・ज़्यादा・कम",
-      "summary": "बहुत (very, a lot), थोड़ा (a little), ज़्यादा (more, too much), कम (less, little). (about A2)",
-      "level": "beginner-intermediate",
+      "id": "echo-words",
+      "title": "Echo words and doubling: चाय-वाय, धीरे-धीरे",
+      "particle": "X-वाय・doubling",
+      "summary": "Echo words (चाय-वाय) mean X and the like; doubled words show repetition, distribution or intensity. (about C1)",
+      "level": "advanced",
       "sections": [
         {
-          "p": "<b>बहुत</b> = very or a lot: <b>बहुत</b> अच्छा, <b>बहुत</b> पानी. <b>थोड़ा</b> agrees: <b>थोड़ा</b> दूध, <b>थोड़ी</b> चीनी, <b>थोड़े</b> पैसे. <b>ज़्यादा</b> = more, too much; <b>कम</b> = less, not much.",
+          "p": "An echo word repeats a word with <b>व-</b>: <b>चाय-वाय</b> (tea or something), <b>खाना-वाना</b>, <b>पानी-वानी</b>. It's informal and means \"and stuff, or something like that\".",
           "examples": [
             [
-              "{थोड़ी} चीनी दीजिए।",
-              "Thoṛī chīnī dījie.",
-              "A little sugar, please."
+              "{चाय-वाय} पियोगे?",
+              "Chāy-vāy piyoge?",
+              "Will you have some tea or something?"
             ],
             [
-              "खाना {बहुत} स्वादिष्ट है।",
-              "Khānā bahut svādishṭ hai.",
-              "The food is very tasty."
+              "{किताबें-विताबें} कहाँ हैं?",
+              "Kitāben-vitāben kahān hain?",
+              "Where are the books and things?"
             ]
           ]
         },
         {
-          "h": "बहुत ज़्यादा, काफ़ी",
-          "p": "<b>बहुत ज़्यादा</b> = too much: <b>बहुत ज़्यादा</b> गर्मी है. <b>काफ़ी</b> = quite, enough: <b>काफ़ी</b> देर हो गई. <b>थोड़ा-बहुत</b> = a bit.",
+          "h": "Doubling",
+          "p": "Doubling a word can mean each, various or intensity: <b>घर-घर</b> (every house), <b>कौन-कौन</b> (who all), <b>गरम-गरम</b> (piping hot), <b>बार-बार</b> (again and again). Pairs of related words: <b>माँ-बाप</b> (parents), <b>दाल-रोटी</b> (basic food).",
           "examples": [
+            ["{गरम-गरम} समोसे!", "Garam-garam samose!", "Piping-hot samosas!"],
             [
-              "आज {बहुत ज़्यादा} गर्मी है।",
-              "Āj bahut zyādā garmī hai.",
-              "It's far too hot today."
-            ],
-            [
-              "मुझे हिंदी {थोड़ी-बहुत} आती है।",
-              "Mujhe hindī thoṛī-bahut ātī hai.",
-              "I know a bit of Hindi."
+              "पार्टी में {कौन-कौन} आया?",
+              "Pārṭī men kaun-kaun āyā?",
+              "Who all came to the party?"
             ]
           ]
         }
       ],
       "drills": [
         {
-          "q": "＿ पानी दो।",
-          "en": "Give me a little water.",
-          "options": ["थोड़ा", "थोड़ी", "थोड़े", "कम ही"],
-          "answer": "थोड़ा",
-          "why": "पानी is masculine."
+          "q": "पानी-＿ चाहिए?",
+          "en": "Do you want some water or something?",
+          "options": ["वानी", "पानी", "वाला", "वानि ही"],
+          "answer": "वानी",
+          "why": "Echo with व-: पानी-वानी."
         },
         {
-          "q": "इसमें नमक ＿ है।",
-          "en": "There's too little salt in this.",
-          "options": ["ज़्यादा", "कम", "बहुत", "काफ़ी"],
-          "answer": "कम",
-          "why": "little: कम."
+          "q": "वह ＿ फ़ोन करता है।",
+          "en": "He calls again and again.",
+          "options": ["बारी-बारी ही", "बार-बार", "एक बार", "बार"],
+          "answer": "बार-बार",
+          "why": "again and again: बार-बार."
         },
         {
-          "q": "आज ＿ भीड़ है।",
-          "en": "It's very crowded today.",
-          "options": ["थोड़ा", "कम", "बहुत", "काफ़ी कम"],
-          "answer": "बहुत",
-          "why": "very: बहुत."
+          "q": "＿ में दिवाली मनाई जाती है।",
+          "en": "Diwali is celebrated in every home.",
+          "options": ["घर", "घरों-घरों", "घर-घर", "घर ही"],
+          "answer": "घर-घर",
+          "why": "each: doubled."
         },
         {
-          "q": "मुझे ＿ समय चाहिए।",
-          "en": "I need more time.",
-          "options": ["कम", "थोड़ी", "बहुत कम", "ज़्यादा"],
-          "answer": "ज़्यादा",
-          "why": "more: ज़्यादा."
+          "q": "ठंडा-＿ पानी",
+          "en": "nice cold water",
+          "options": ["ठंडी", "वंडा", "ठंडे", "ठंडा"],
+          "answer": "ठंडा",
+          "why": "Intensity: doubled adjective."
         },
         {
-          "q": "＿ देर हो गई, चलें?",
-          "en": "It's got quite late, shall we go?",
-          "options": ["काफ़ी", "थोड़ी सी ही", "कम", "ज़्यादा कम"],
-          "answer": "काफ़ी",
-          "why": "quite: काफ़ी."
+          "q": "What does an echo word like खाना-वाना add?",
+          "en": "",
+          "options": [
+            "and the like (informal)",
+            "a plural",
+            "the past tense",
+            "politeness"
+          ],
+          "answer": "and the like (informal)",
+          "why": "X and stuff."
+        }
+      ]
+    },
+    {
+      "id": "register",
+      "title": "Register: Sanskrit and Urdu words",
+      "particle": "धन्यवाद / शुक्रिया",
+      "summary": "Hindi has two vocabularies: Sanskrit-based words in formal Hindi, Persian/Arabic-based ones shared with Urdu in everyday speech. (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "Many everyday ideas have two words: <b>धन्यवाद</b> (formal) / <b>शुक्रिया</b> (everyday) = thanks; <b>प्रश्न</b> / <b>सवाल</b> = question; <b>समय</b> / <b>वक़्त</b> = time; <b>कृपया</b> / <b>मेहरबानी करके</b> = please.",
+          "examples": [
+            [
+              "आपकी सहायता के लिए {धन्यवाद}।",
+              "Āpkī sahāytā ke lie dhanyavād.",
+              "Thank you for your help. (formal)"
+            ],
+            ["{शुक्रिया}, दोस्त!", "Shukriyā, dost!", "Thanks, friend!"]
+          ]
+        },
+        {
+          "h": "Choosing",
+          "p": "News, government and school Hindi lean Sanskrit (<b>विद्यालय</b> school, <b>चिकित्सक</b> doctor); films and conversation lean Urdu and English (<b>स्कूल</b>, <b>डॉक्टर</b>, <b>दिल</b>, <b>ज़िंदगी</b>). Mixing is normal.",
+          "examples": [
+            [
+              "{प्रधानमंत्री} ने {राष्ट्र} को संबोधित किया।",
+              "Pradhānmantrī ne rāshṭra ko sambodhit kiyā.",
+              "The Prime Minister addressed the nation."
+            ],
+            [
+              "{ज़िंदगी} बहुत छोटी है।",
+              "Zindagī bahut chhoṭī hai.",
+              "Life is very short."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Formal \"thank you\"",
+          "en": "",
+          "options": ["धन्यवाद", "शुक्रिया", "थैंक्स", "मेहरबानी"],
+          "answer": "धन्यवाद",
+          "why": "Sanskrit-based: धन्यवाद."
+        },
+        {
+          "q": "सवाल is the everyday word; the formal one is…",
+          "en": "",
+          "options": ["उत्तर", "प्रश्न", "जवाब", "मसला"],
+          "answer": "प्रश्न",
+          "why": "प्रश्न = question."
+        },
+        {
+          "q": "Everyday word for \"time\"",
+          "en": "",
+          "options": ["काल", "अवधि", "वक़्त", "मुहूर्त"],
+          "answer": "वक़्त",
+          "why": "Urdu-based: वक़्त."
+        },
+        {
+          "q": "विद्यालय means…",
+          "en": "",
+          "options": ["hospital", "library", "office", "school"],
+          "answer": "school",
+          "why": "Formal word for school."
+        },
+        {
+          "q": "Which register do news bulletins usually use?",
+          "en": "",
+          "options": [
+            "Sanskrit-based Hindi",
+            "Urdu-based Hindustani",
+            "English only",
+            "Punjabi"
+          ],
+          "answer": "Sanskrit-based Hindi",
+          "why": "Formal Hindi: Sanskrit-based."
         }
       ]
     }

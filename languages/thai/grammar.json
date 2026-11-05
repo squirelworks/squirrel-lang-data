@@ -13,10 +13,10 @@
     "- Wikipedia “Thai language”, “Thai grammar” (CC BY-SA) for beginner overview of",
     "  analytic verbs, serial verb constructions, and post-verbal ได้ vs pre-verbal modals.",
     "- In-repo languages/thai/reference.json (markers, classifiers, pronouns) and vocab.js —",
-    "  same Desk pack lemmas; romanization without tone marks matches lessons 1–6.",
+    "  same Desk pack lemmas; romanization without tone marks matches the original 6 lessons.",
     "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
     "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
-    "72 lessons, from A1 to C1. Lessons 13–72 were added to cover the rest of everyday and formal Thai grammar; romanization follows lessons 1–12 (simple, without tone marks)."
+    "72 lessons, from A1 to C1. 60 lessons were added to cover the rest of everyday and formal Thai grammar; romanization follows the original 12 lessons (simple, without tone marks)."
   ],
   "title": "Thai first grammar",
   "intro": "Thai words never change their form: no endings for tense, person, plural or gender. Instead, word order and small helper words carry the meaning, and the speaker's own gender shows up in the polite word at the end of a sentence. The 72 lessons run from A1 to C1. They start with pronouns and ครับ / ค่ะ, เป็น / อยู่ / มี, ไม่ and ไหม, time words, classifiers, ได้, อยาก, ต้อง and ให้, then add question words, numbers and the clock, กำลัง, จะ, เคย and แล้ว / ยัง, the mood particles, relative ที่, ถ้า, time and purpose clauses, verb chains, result verbs, the passive with ถูก and causatives, and end with unreal conditions, ยิ่ง … ยิ่ง, การ / ความ nouns, ไว้ and ซะ, formal connectors and royal vocabulary. The romanization is a simple one without tone marks; listen to each word with text to speech to hear the tone.",
@@ -433,6 +433,83 @@
           "options": ["ตัว", "คน", "เล่ม", "แก้ว"],
           "answer": "ตัว",
           "why": "Clothes use ตัว, which also goes before นี้."
+        }
+      ]
+    },
+    {
+      "id": "question-words",
+      "title": "Question words: อะไร, ใคร, ที่ไหน",
+      "particle": "อะไร・ใคร・ที่ไหน・เมื่อไร・ทำไม・อย่างไร",
+      "summary": "Thai question words stay where the answer would go, usually at the end: คุณชื่ออะไร (what's your name?). (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>อะไร</b> what, <b>ใคร</b> who, <b>ที่ไหน</b> where, <b>เมื่อไร</b> when, <b>ทำไม</b> why (at the start), <b>อย่างไร</b> or <b>ยังไง</b> how. Don't move them: คุณไป<b>ไหน</b> (where are you going?).",
+          "examples": [
+            [
+              "คุณชื่อ{อะไร}ครับ",
+              "Khun chue arai khrap?",
+              "What's your name?"
+            ],
+            [
+              "ห้องน้ำอยู่{ที่ไหน}คะ",
+              "Hongnam yu thi nai kha?",
+              "Where is the toilet?"
+            ]
+          ]
+        },
+        {
+          "h": "Why, how, which",
+          "p": "<b>ทำไม</b> usually comes first: <b>ทำไม</b>ไม่มา. <b>ยังไง</b> (speech) / <b>อย่างไร</b> (writing) = how. <b>ไหน</b> after a classifier = which: เล่ม<b>ไหน</b> (which book?). <b>เท่าไร</b> = how much.",
+          "examples": [
+            [
+              "{ทำไม}คุณเรียนภาษาไทย",
+              "Thammai khun rian phasa Thai?",
+              "Why are you learning Thai?"
+            ],
+            [
+              "อันนี้{เท่าไร}ครับ",
+              "An ni thaorai khrap?",
+              "How much is this?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "เขาเป็น＿",
+          "en": "Who is he?",
+          "options": ["ใคร", "อะไร", "ที่ไหน", "ทำไม"],
+          "answer": "ใคร",
+          "why": "who: ใคร."
+        },
+        {
+          "q": "คุณจะมา＿",
+          "en": "When will you come?",
+          "options": ["ใคร", "เมื่อไร", "อะไร", "ไหม"],
+          "answer": "เมื่อไร",
+          "why": "when: เมื่อไร."
+        },
+        {
+          "q": "＿คุณไม่กิน",
+          "en": "Why aren't you eating?",
+          "options": ["ที่ไหน", "เท่าไร", "ทำไม", "ยังไง"],
+          "answer": "ทำไม",
+          "why": "why: ทำไม, at the start."
+        },
+        {
+          "q": "ไปสนามบิน＿",
+          "en": "How do I get to the airport?",
+          "options": ["ใคร", "เมื่อไร", "กี่", "ยังไง"],
+          "answer": "ยังไง",
+          "why": "how: ยังไง."
+        },
+        {
+          "q": "คุณอยากได้เล่ม＿",
+          "en": "Which book do you want?",
+          "options": ["ไหน", "อะไร", "ใคร", "ทำไม"],
+          "answer": "ไหน",
+          "why": "which: classifier + ไหน."
         }
       ]
     },
@@ -905,83 +982,6 @@
           "options": ["มา", "ไป", "ได้", "ควร"],
           "answer": "มา",
           "why": "กลับมา = come back (toward here)."
-        }
-      ]
-    },
-    {
-      "id": "question-words",
-      "title": "Question words: อะไร, ใคร, ที่ไหน",
-      "particle": "อะไร・ใคร・ที่ไหน・เมื่อไร・ทำไม・อย่างไร",
-      "summary": "Thai question words stay where the answer would go, usually at the end: คุณชื่ออะไร (what's your name?). (about A1)",
-      "level": "absolute-beginner",
-      "sections": [
-        {
-          "p": "<b>อะไร</b> what, <b>ใคร</b> who, <b>ที่ไหน</b> where, <b>เมื่อไร</b> when, <b>ทำไม</b> why (at the start), <b>อย่างไร</b> or <b>ยังไง</b> how. Don't move them: คุณไป<b>ไหน</b> (where are you going?).",
-          "examples": [
-            [
-              "คุณชื่อ{อะไร}ครับ",
-              "Khun chue arai khrap?",
-              "What's your name?"
-            ],
-            [
-              "ห้องน้ำอยู่{ที่ไหน}คะ",
-              "Hongnam yu thi nai kha?",
-              "Where is the toilet?"
-            ]
-          ]
-        },
-        {
-          "h": "Why, how, which",
-          "p": "<b>ทำไม</b> usually comes first: <b>ทำไม</b>ไม่มา. <b>ยังไง</b> (speech) / <b>อย่างไร</b> (writing) = how. <b>ไหน</b> after a classifier = which: เล่ม<b>ไหน</b> (which book?). <b>เท่าไร</b> = how much.",
-          "examples": [
-            [
-              "{ทำไม}คุณเรียนภาษาไทย",
-              "Thammai khun rian phasa Thai?",
-              "Why are you learning Thai?"
-            ],
-            [
-              "อันนี้{เท่าไร}ครับ",
-              "An ni thaorai khrap?",
-              "How much is this?"
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "เขาเป็น＿",
-          "en": "Who is he?",
-          "options": ["ใคร", "อะไร", "ที่ไหน", "ทำไม"],
-          "answer": "ใคร",
-          "why": "who: ใคร."
-        },
-        {
-          "q": "คุณจะมา＿",
-          "en": "When will you come?",
-          "options": ["ใคร", "เมื่อไร", "อะไร", "ไหม"],
-          "answer": "เมื่อไร",
-          "why": "when: เมื่อไร."
-        },
-        {
-          "q": "＿คุณไม่กิน",
-          "en": "Why aren't you eating?",
-          "options": ["ที่ไหน", "เท่าไร", "ทำไม", "ยังไง"],
-          "answer": "ทำไม",
-          "why": "why: ทำไม, at the start."
-        },
-        {
-          "q": "ไปสนามบิน＿",
-          "en": "How do I get to the airport?",
-          "options": ["ใคร", "เมื่อไร", "กี่", "ยังไง"],
-          "answer": "ยังไง",
-          "why": "how: ยังไง."
-        },
-        {
-          "q": "คุณอยากได้เล่ม＿",
-          "en": "Which book do you want?",
-          "options": ["ไหน", "อะไร", "ใคร", "ทำไม"],
-          "answer": "ไหน",
-          "why": "which: classifier + ไหน."
         }
       ]
     },
@@ -1554,6 +1554,298 @@
       ]
     },
     {
+      "id": "question-particles",
+      "title": "Yes/no questions: ไหม, หรือ, ใช่ไหม",
+      "particle": "ไหม・หรือ・หรือเปล่า・ใช่ไหม",
+      "summary": "ไหม asks an open yes/no question. หรือ checks something you suspect. ใช่ไหม = isn't it? หรือเปล่า = or not? (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ไหม</b> (often said มั้ย): ชอบ<b>ไหม</b>. <b>หรือ</b> (often เหรอ) expresses surprise or checks: จริง<b>เหรอ</b> (really?). <b>หรือเปล่า</b> = … or not: ว่าง<b>หรือเปล่า</b>.",
+          "examples": [
+            ["คุณหิว{ไหม}", "Khun hio mai?", "Are you hungry?"],
+            [
+              "คุณเป็นคนไทย{ใช่ไหม}",
+              "Khun pen khon Thai chai mai?",
+              "You're Thai, aren't you?"
+            ]
+          ]
+        },
+        {
+          "h": "Answering",
+          "p": "Answer with the verb: — หิวไหม — <b>หิว</b> / <b>ไม่หิว</b>. <b>ใช่</b> / <b>ไม่ใช่</b> answers ใช่ไหม and identity questions.",
+          "examples": [
+            [
+              "— ไปด้วยไหม — {ไป}",
+              "Pai duai mai? — Pai.",
+              "\"Are you coming?\" \"Yes.\""
+            ],
+            ["จริง{เหรอ}", "Jing roe?", "Really?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "คุณดื่มกาแฟ＿",
+          "en": "Do you drink coffee?",
+          "options": ["ไหม", "อะไร", "ใคร", "ล่ะ"],
+          "answer": "ไหม",
+          "why": "Yes/no: ไหม."
+        },
+        {
+          "q": "เขาเป็นหมอ＿",
+          "en": "He's a doctor, isn't he?",
+          "options": ["หรือยัง", "ใช่ไหม", "อะไร", "เมื่อไร"],
+          "answer": "ใช่ไหม",
+          "why": "Tag: ใช่ไหม."
+        },
+        {
+          "q": "พรุ่งนี้คุณว่าง＿",
+          "en": "Are you free tomorrow or not?",
+          "options": ["หรือยัง", "อะไร", "หรือเปล่า", "ที่ไหน"],
+          "answer": "หรือเปล่า",
+          "why": "or not: หรือเปล่า."
+        },
+        {
+          "q": "— อร่อยไหม — ＿",
+          "en": "\"Is it tasty?\" \"Yes.\"",
+          "options": ["ใช่", "ครับไหม", "ไม่ใช่", "อร่อย"],
+          "answer": "อร่อย",
+          "why": "Answer with the verb."
+        },
+        {
+          "q": "เขาไปแล้ว＿",
+          "en": "He's gone? (surprised)",
+          "options": ["เหรอ", "ไหม", "ใช่", "ล่ะ"],
+          "answer": "เหรอ",
+          "why": "Surprise check: เหรอ."
+        }
+      ]
+    },
+    {
+      "id": "intensifiers",
+      "title": "Very, a little: มาก, จัง, นิดหน่อย",
+      "particle": "มาก・จัง・นิดหน่อย・ไป",
+      "summary": "Words of degree follow the adjective: ดีมาก (very good), ร้อนจัง (so hot), เผ็ดนิดหน่อย (a bit spicy). (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>มาก</b> = very, a lot: สวย<b>มาก</b>. <b>จัง</b> = so (speech, emotional): น่ารัก<b>จัง</b>. <b>ไป</b> after an adjective = too: แพง<b>ไป</b> (too expensive). <b>เกินไป</b> = too (stronger).",
+          "examples": [
+            ["อาหารอร่อย{มาก}", "Ahan aroi mak.", "The food is very tasty."],
+            ["วันนี้ร้อน{จัง}", "Wan ni ron jang.", "It's so hot today!"]
+          ]
+        },
+        {
+          "h": "A little",
+          "p": "<b>นิดหน่อย</b> = a little: เผ็ด<b>นิดหน่อย</b>. <b>ค่อนข้าง</b> before an adjective = fairly: <b>ค่อนข้าง</b>ไกล. <b>ไม่ค่อย</b> = not very: <b>ไม่ค่อย</b>หิว.",
+          "examples": [
+            [
+              "ผมพูดไทยได้{นิดหน่อย}",
+              "Phom phut Thai dai nit noi.",
+              "I can speak a little Thai."
+            ],
+            [
+              "ฉัน{ไม่ค่อย}ชอบ",
+              "Chan mai khoi chop.",
+              "I don't really like it."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "สนุก＿",
+          "en": "It's great fun.",
+          "options": ["มาก", "ไม่ค่อย", "ค่อนข้าง", "นิดหน่อยมาก"],
+          "answer": "มาก",
+          "why": "very: มาก (after)."
+        },
+        {
+          "q": "เสื้อตัวนี้แพง＿",
+          "en": "This shirt is too expensive.",
+          "options": ["มา", "ไป", "จัง", "ค่อน"],
+          "answer": "ไป",
+          "why": "too: ไป."
+        },
+        {
+          "q": "ผม＿สบาย",
+          "en": "I'm not very well.",
+          "options": ["ไม่มาก", "มากไม่", "ไม่ค่อย", "ค่อยไม่"],
+          "answer": "ไม่ค่อย",
+          "why": "not very: ไม่ค่อย."
+        },
+        {
+          "q": "ขอเผ็ด＿",
+          "en": "A little spicy, please.",
+          "options": ["มาก", "เกินไป", "จัง", "นิดหน่อย"],
+          "answer": "นิดหน่อย",
+          "why": "a little: นิดหน่อย."
+        },
+        {
+          "q": "บ้านเขา＿ไกล",
+          "en": "His house is fairly far.",
+          "options": ["ค่อนข้าง", "มาก", "จัง", "ไป"],
+          "answer": "ค่อนข้าง",
+          "why": "fairly: ค่อนข้าง (before)."
+        }
+      ]
+    },
+    {
+      "id": "place-words",
+      "title": "Where: ใน, บน, ข้าง, ใกล้",
+      "particle": "ใน・บน・ใต้・ข้าง・ใกล้",
+      "summary": "Place words go after อยู่ and before the noun: อยู่บนโต๊ะ (on the table). (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ใน</b> in, <b>บน</b> on, <b>ใต้</b> under, <b>ข้างหน้า</b> in front of, <b>ข้างหลัง</b> behind, <b>ข้างๆ</b> next to, <b>ระหว่าง</b> between, <b>ตรงข้าม</b> opposite.",
+          "examples": [
+            [
+              "แมวอยู่{ใต้}โต๊ะ",
+              "Maeo yu tai to.",
+              "The cat is under the table."
+            ],
+            [
+              "ธนาคารอยู่{ตรงข้าม}โรงแรม",
+              "Thanakhan yu trong kham rongraem.",
+              "The bank is opposite the hotel."
+            ]
+          ]
+        },
+        {
+          "h": "Near and far",
+          "p": "<b>ใกล้</b> = near: <b>ใกล้</b>สถานี. <b>ไกล</b> = far: <b>ไกลจาก</b>ที่นี่. <b>ที่</b> = at: อยู่<b>ที่</b>บ้าน. Directions: <b>เลี้ยวซ้าย</b> (turn left), <b>เลี้ยวขวา</b>, <b>ตรงไป</b> (go straight).",
+          "examples": [
+            [
+              "บ้านผมอยู่{ใกล้}ตลาด",
+              "Ban phom yu klai talat.",
+              "My house is near the market."
+            ],
+            [
+              "{ตรงไป}แล้ว{เลี้ยวซ้าย}",
+              "Trong pai laeo liao sai.",
+              "Go straight, then turn left."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "กุญแจอยู่＿กระเป๋า",
+          "en": "The keys are in the bag.",
+          "options": ["ใน", "บน", "ใต้", "ข้าง"],
+          "answer": "ใน",
+          "why": "in: ใน."
+        },
+        {
+          "q": "หนังสืออยู่＿โต๊ะ",
+          "en": "The book is on the table.",
+          "options": ["ใน", "บน", "ใต้", "ระหว่าง"],
+          "answer": "บน",
+          "why": "on: บน."
+        },
+        {
+          "q": "ร้านกาแฟอยู่＿ร้านหนังสือ",
+          "en": "The café is next to the bookshop.",
+          "options": ["ใน", "บน", "ข้างๆ", "ใต้"],
+          "answer": "ข้างๆ",
+          "why": "next to: ข้างๆ."
+        },
+        {
+          "q": "โรงเรียนอยู่＿จากที่นี่",
+          "en": "The school is far from here.",
+          "options": ["ใกล้", "ข้าง", "ใน", "ไกล"],
+          "answer": "ไกล",
+          "why": "far: ไกล."
+        },
+        {
+          "q": "ที่ไฟแดง＿ขวา",
+          "en": "At the lights, turn right.",
+          "options": ["เลี้ยว", "ตรง", "ไป", "ข้าง"],
+          "answer": "เลี้ยว",
+          "why": "turn: เลี้ยว."
+        }
+      ]
+    },
+    {
+      "id": "ordinals",
+      "title": "First, second: ที่หนึ่ง, ที่สอง",
+      "particle": "ที่ + number・แรก・สุดท้าย",
+      "summary": "Ordinals are ที่ + number after the noun or classifier: ครั้งที่สอง (the second time). First is also แรก, last is สุดท้าย. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ที่</b> + number: ชั้น<b>ที่</b>สาม (third floor), คน<b>ที่</b>ห้า. <b>แรก</b> = first: ครั้ง<b>แรก</b> (the first time), วัน<b>แรก</b>.",
+          "examples": [
+            [
+              "นี่เป็นครั้ง{แรก}ที่ผมมาเมืองไทย",
+              "Ni pen khrang raek thi phom ma mueang Thai.",
+              "This is my first time in Thailand."
+            ],
+            [
+              "ห้องผมอยู่ชั้น{ที่}สี่",
+              "Hong phom yu chan thi si.",
+              "My room is on the fourth floor."
+            ]
+          ]
+        },
+        {
+          "h": "Last and next",
+          "p": "<b>สุดท้าย</b> = last: คน<b>สุดท้าย</b>. <b>ต่อไป</b> = next: สถานี<b>ต่อไป</b>. <b>ที่แล้ว</b> = previous: ครั้ง<b>ที่แล้ว</b>.",
+          "examples": [
+            [
+              "สถานี{ต่อไป} สยาม",
+              "Sathani to pai Sayam.",
+              "Next station: Siam."
+            ],
+            [
+              "นี่คือรถเที่ยว{สุดท้าย}",
+              "Ni khue rot thiao sut thai.",
+              "This is the last bus."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ครั้ง＿",
+          "en": "the first time",
+          "options": ["แรก", "หนึ่ง", "ที่แรก", "สุดท้าย"],
+          "answer": "แรก",
+          "why": "first: แรก."
+        },
+        {
+          "q": "บ้านหลัง＿สาม",
+          "en": "the third house",
+          "options": ["แรก", "ที่", "ต่อ", "ของ"],
+          "answer": "ที่",
+          "why": "Ordinal: ที่ + number."
+        },
+        {
+          "q": "เขามาเป็นคน＿",
+          "en": "He came last.",
+          "options": ["แรก", "ต่อไป", "สุดท้าย", "ที่แล้ว"],
+          "answer": "สุดท้าย",
+          "why": "last: สุดท้าย."
+        },
+        {
+          "q": "ป้าย＿ลงนะ",
+          "en": "Get off at the next stop.",
+          "options": ["สุดท้าย", "แรก", "ที่", "ต่อไป"],
+          "answer": "ต่อไป",
+          "why": "next: ต่อไป."
+        },
+        {
+          "q": "ครั้ง＿เราไปพัทยา",
+          "en": "Last time we went to Pattaya.",
+          "options": ["ที่แล้ว", "ต่อไป", "แรก", "ที่หนึ่ง"],
+          "answer": "ที่แล้ว",
+          "why": "previous: ที่แล้ว."
+        }
+      ]
+    },
+    {
       "id": "khoei",
       "title": "Have ever: เคย",
       "particle": "เคย・ไม่เคย",
@@ -1765,75 +2057,6 @@
       ]
     },
     {
-      "id": "question-particles",
-      "title": "Yes/no questions: ไหม, หรือ, ใช่ไหม",
-      "particle": "ไหม・หรือ・หรือเปล่า・ใช่ไหม",
-      "summary": "ไหม asks an open yes/no question. หรือ checks something you suspect. ใช่ไหม = isn't it? หรือเปล่า = or not? (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>ไหม</b> (often said มั้ย): ชอบ<b>ไหม</b>. <b>หรือ</b> (often เหรอ) expresses surprise or checks: จริง<b>เหรอ</b> (really?). <b>หรือเปล่า</b> = … or not: ว่าง<b>หรือเปล่า</b>.",
-          "examples": [
-            ["คุณหิว{ไหม}", "Khun hio mai?", "Are you hungry?"],
-            [
-              "คุณเป็นคนไทย{ใช่ไหม}",
-              "Khun pen khon Thai chai mai?",
-              "You're Thai, aren't you?"
-            ]
-          ]
-        },
-        {
-          "h": "Answering",
-          "p": "Answer with the verb: — หิวไหม — <b>หิว</b> / <b>ไม่หิว</b>. <b>ใช่</b> / <b>ไม่ใช่</b> answers ใช่ไหม and identity questions.",
-          "examples": [
-            [
-              "— ไปด้วยไหม — {ไป}",
-              "Pai duai mai? — Pai.",
-              "\"Are you coming?\" \"Yes.\""
-            ],
-            ["จริง{เหรอ}", "Jing roe?", "Really?"]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "คุณดื่มกาแฟ＿",
-          "en": "Do you drink coffee?",
-          "options": ["ไหม", "อะไร", "ใคร", "ล่ะ"],
-          "answer": "ไหม",
-          "why": "Yes/no: ไหม."
-        },
-        {
-          "q": "เขาเป็นหมอ＿",
-          "en": "He's a doctor, isn't he?",
-          "options": ["หรือยัง", "ใช่ไหม", "อะไร", "เมื่อไร"],
-          "answer": "ใช่ไหม",
-          "why": "Tag: ใช่ไหม."
-        },
-        {
-          "q": "พรุ่งนี้คุณว่าง＿",
-          "en": "Are you free tomorrow or not?",
-          "options": ["หรือยัง", "อะไร", "หรือเปล่า", "ที่ไหน"],
-          "answer": "หรือเปล่า",
-          "why": "or not: หรือเปล่า."
-        },
-        {
-          "q": "— อร่อยไหม — ＿",
-          "en": "\"Is it tasty?\" \"Yes.\"",
-          "options": ["ใช่", "ครับไหม", "ไม่ใช่", "อร่อย"],
-          "answer": "อร่อย",
-          "why": "Answer with the verb."
-        },
-        {
-          "q": "เขาไปแล้ว＿",
-          "en": "He's gone? (surprised)",
-          "options": ["เหรอ", "ไหม", "ใช่", "ล่ะ"],
-          "answer": "เหรอ",
-          "why": "Surprise check: เหรอ."
-        }
-      ]
-    },
-    {
       "id": "negation",
       "title": "Not: ไม่, ไม่ใช่, ไม่ได้",
       "particle": "ไม่・ไม่ใช่・ไม่ได้",
@@ -1903,152 +2126,6 @@
           "options": ["ไม่ใช่", "ไม่", "ไม่ได้", "ไม่มี"],
           "answer": "ไม่ใช่",
           "why": "ไม่ใช่."
-        }
-      ]
-    },
-    {
-      "id": "intensifiers",
-      "title": "Very, a little: มาก, จัง, นิดหน่อย",
-      "particle": "มาก・จัง・นิดหน่อย・ไป",
-      "summary": "Words of degree follow the adjective: ดีมาก (very good), ร้อนจัง (so hot), เผ็ดนิดหน่อย (a bit spicy). (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>มาก</b> = very, a lot: สวย<b>มาก</b>. <b>จัง</b> = so (speech, emotional): น่ารัก<b>จัง</b>. <b>ไป</b> after an adjective = too: แพง<b>ไป</b> (too expensive). <b>เกินไป</b> = too (stronger).",
-          "examples": [
-            ["อาหารอร่อย{มาก}", "Ahan aroi mak.", "The food is very tasty."],
-            ["วันนี้ร้อน{จัง}", "Wan ni ron jang.", "It's so hot today!"]
-          ]
-        },
-        {
-          "h": "A little",
-          "p": "<b>นิดหน่อย</b> = a little: เผ็ด<b>นิดหน่อย</b>. <b>ค่อนข้าง</b> before an adjective = fairly: <b>ค่อนข้าง</b>ไกล. <b>ไม่ค่อย</b> = not very: <b>ไม่ค่อย</b>หิว.",
-          "examples": [
-            [
-              "ผมพูดไทยได้{นิดหน่อย}",
-              "Phom phut Thai dai nit noi.",
-              "I can speak a little Thai."
-            ],
-            [
-              "ฉัน{ไม่ค่อย}ชอบ",
-              "Chan mai khoi chop.",
-              "I don't really like it."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "สนุก＿",
-          "en": "It's great fun.",
-          "options": ["มาก", "ไม่ค่อย", "ค่อนข้าง", "นิดหน่อยมาก"],
-          "answer": "มาก",
-          "why": "very: มาก (after)."
-        },
-        {
-          "q": "เสื้อตัวนี้แพง＿",
-          "en": "This shirt is too expensive.",
-          "options": ["มา", "ไป", "จัง", "ค่อน"],
-          "answer": "ไป",
-          "why": "too: ไป."
-        },
-        {
-          "q": "ผม＿สบาย",
-          "en": "I'm not very well.",
-          "options": ["ไม่มาก", "มากไม่", "ไม่ค่อย", "ค่อยไม่"],
-          "answer": "ไม่ค่อย",
-          "why": "not very: ไม่ค่อย."
-        },
-        {
-          "q": "ขอเผ็ด＿",
-          "en": "A little spicy, please.",
-          "options": ["มาก", "เกินไป", "จัง", "นิดหน่อย"],
-          "answer": "นิดหน่อย",
-          "why": "a little: นิดหน่อย."
-        },
-        {
-          "q": "บ้านเขา＿ไกล",
-          "en": "His house is fairly far.",
-          "options": ["ค่อนข้าง", "มาก", "จัง", "ไป"],
-          "answer": "ค่อนข้าง",
-          "why": "fairly: ค่อนข้าง (before)."
-        }
-      ]
-    },
-    {
-      "id": "place-words",
-      "title": "Where: ใน, บน, ข้าง, ใกล้",
-      "particle": "ใน・บน・ใต้・ข้าง・ใกล้",
-      "summary": "Place words go after อยู่ and before the noun: อยู่บนโต๊ะ (on the table). (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>ใน</b> in, <b>บน</b> on, <b>ใต้</b> under, <b>ข้างหน้า</b> in front of, <b>ข้างหลัง</b> behind, <b>ข้างๆ</b> next to, <b>ระหว่าง</b> between, <b>ตรงข้าม</b> opposite.",
-          "examples": [
-            [
-              "แมวอยู่{ใต้}โต๊ะ",
-              "Maeo yu tai to.",
-              "The cat is under the table."
-            ],
-            [
-              "ธนาคารอยู่{ตรงข้าม}โรงแรม",
-              "Thanakhan yu trong kham rongraem.",
-              "The bank is opposite the hotel."
-            ]
-          ]
-        },
-        {
-          "h": "Near and far",
-          "p": "<b>ใกล้</b> = near: <b>ใกล้</b>สถานี. <b>ไกล</b> = far: <b>ไกลจาก</b>ที่นี่. <b>ที่</b> = at: อยู่<b>ที่</b>บ้าน. Directions: <b>เลี้ยวซ้าย</b> (turn left), <b>เลี้ยวขวา</b>, <b>ตรงไป</b> (go straight).",
-          "examples": [
-            [
-              "บ้านผมอยู่{ใกล้}ตลาด",
-              "Ban phom yu klai talat.",
-              "My house is near the market."
-            ],
-            [
-              "{ตรงไป}แล้ว{เลี้ยวซ้าย}",
-              "Trong pai laeo liao sai.",
-              "Go straight, then turn left."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "กุญแจอยู่＿กระเป๋า",
-          "en": "The keys are in the bag.",
-          "options": ["ใน", "บน", "ใต้", "ข้าง"],
-          "answer": "ใน",
-          "why": "in: ใน."
-        },
-        {
-          "q": "หนังสืออยู่＿โต๊ะ",
-          "en": "The book is on the table.",
-          "options": ["ใน", "บน", "ใต้", "ระหว่าง"],
-          "answer": "บน",
-          "why": "on: บน."
-        },
-        {
-          "q": "ร้านกาแฟอยู่＿ร้านหนังสือ",
-          "en": "The café is next to the bookshop.",
-          "options": ["ใน", "บน", "ข้างๆ", "ใต้"],
-          "answer": "ข้างๆ",
-          "why": "next to: ข้างๆ."
-        },
-        {
-          "q": "โรงเรียนอยู่＿จากที่นี่",
-          "en": "The school is far from here.",
-          "options": ["ใกล้", "ข้าง", "ใน", "ไกล"],
-          "answer": "ไกล",
-          "why": "far: ไกล."
-        },
-        {
-          "q": "ที่ไฟแดง＿ขวา",
-          "en": "At the lights, turn right.",
-          "options": ["เลี้ยว", "ตรง", "ไป", "ข้าง"],
-          "answer": "เลี้ยว",
-          "why": "turn: เลี้ยว."
         }
       ]
     },
@@ -2280,83 +2357,6 @@
       ]
     },
     {
-      "id": "ordinals",
-      "title": "First, second: ที่หนึ่ง, ที่สอง",
-      "particle": "ที่ + number・แรก・สุดท้าย",
-      "summary": "Ordinals are ที่ + number after the noun or classifier: ครั้งที่สอง (the second time). First is also แรก, last is สุดท้าย. (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>ที่</b> + number: ชั้น<b>ที่</b>สาม (third floor), คน<b>ที่</b>ห้า. <b>แรก</b> = first: ครั้ง<b>แรก</b> (the first time), วัน<b>แรก</b>.",
-          "examples": [
-            [
-              "นี่เป็นครั้ง{แรก}ที่ผมมาเมืองไทย",
-              "Ni pen khrang raek thi phom ma mueang Thai.",
-              "This is my first time in Thailand."
-            ],
-            [
-              "ห้องผมอยู่ชั้น{ที่}สี่",
-              "Hong phom yu chan thi si.",
-              "My room is on the fourth floor."
-            ]
-          ]
-        },
-        {
-          "h": "Last and next",
-          "p": "<b>สุดท้าย</b> = last: คน<b>สุดท้าย</b>. <b>ต่อไป</b> = next: สถานี<b>ต่อไป</b>. <b>ที่แล้ว</b> = previous: ครั้ง<b>ที่แล้ว</b>.",
-          "examples": [
-            [
-              "สถานี{ต่อไป} สยาม",
-              "Sathani to pai Sayam.",
-              "Next station: Siam."
-            ],
-            [
-              "นี่คือรถเที่ยว{สุดท้าย}",
-              "Ni khue rot thiao sut thai.",
-              "This is the last bus."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ครั้ง＿",
-          "en": "the first time",
-          "options": ["แรก", "หนึ่ง", "ที่แรก", "สุดท้าย"],
-          "answer": "แรก",
-          "why": "first: แรก."
-        },
-        {
-          "q": "บ้านหลัง＿สาม",
-          "en": "the third house",
-          "options": ["แรก", "ที่", "ต่อ", "ของ"],
-          "answer": "ที่",
-          "why": "Ordinal: ที่ + number."
-        },
-        {
-          "q": "เขามาเป็นคน＿",
-          "en": "He came last.",
-          "options": ["แรก", "ต่อไป", "สุดท้าย", "ที่แล้ว"],
-          "answer": "สุดท้าย",
-          "why": "last: สุดท้าย."
-        },
-        {
-          "q": "ป้าย＿ลงนะ",
-          "en": "Get off at the next stop.",
-          "options": ["สุดท้าย", "แรก", "ที่", "ต่อไป"],
-          "answer": "ต่อไป",
-          "why": "next: ต่อไป."
-        },
-        {
-          "q": "ครั้ง＿เราไปพัทยา",
-          "en": "Last time we went to Pattaya.",
-          "options": ["ที่แล้ว", "ต่อไป", "แรก", "ที่หนึ่ง"],
-          "answer": "ที่แล้ว",
-          "why": "previous: ที่แล้ว."
-        }
-      ]
-    },
-    {
       "id": "kin-pronouns",
       "title": "Family words as \"I\" and \"you\": พี่, น้อง",
       "particle": "พี่・น้อง・ลุง・ป้า・หนู",
@@ -2430,6 +2430,306 @@
           "options": ["คุณ", "น้อง", "หนู", "ลุง"],
           "answer": "คุณ",
           "why": "Neutral title: คุณ + name."
+        }
+      ]
+    },
+    {
+      "id": "every-each",
+      "title": "Every, each, all: ทุก, แต่ละ, ทั้งหมด",
+      "particle": "ทุก・แต่ละ・ทั้ง・ทั้งหมด",
+      "summary": "ทุก + classifier or time word = every: ทุกคน, ทุกวัน. แต่ละ = each. ทั้งหมด = all of it. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ทุก</b>คน (everyone), <b>ทุก</b>วัน (every day), <b>ทุก</b>อย่าง (everything). <b>แต่ละ</b> + classifier = each: <b>แต่ละ</b>คน (each person).",
+          "examples": [
+            [
+              "ผมดื่มกาแฟ{ทุก}เช้า",
+              "Phom duem kafae thuk chao.",
+              "I drink coffee every morning."
+            ],
+            [
+              "{แต่ละ}คนได้หนึ่งชิ้น",
+              "Tae la khon dai nueng chin.",
+              "Each person gets one piece."
+            ]
+          ]
+        },
+        {
+          "h": "All, the whole",
+          "p": "<b>ทั้งหมด</b> after the noun = all of it: กิน<b>ทั้งหมด</b>. <b>ทั้ง</b> + time = the whole: <b>ทั้ง</b>วัน (all day). <b>ทั้ง</b> A <b>และ</b> B = both A and B.",
+          "examples": [
+            [
+              "ผมทำงาน{ทั้ง}วัน",
+              "Phom tham ngan thang wan.",
+              "I worked all day."
+            ],
+            [
+              "เขาพูดได้{ทั้ง}ไทย{และ}อังกฤษ",
+              "Khao phut dai thang Thai lae Angkrit.",
+              "He speaks both Thai and English."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿คนชอบเขา",
+          "en": "Everyone likes him.",
+          "options": ["ทุก", "แต่ละ", "ทั้งหมด", "หลาย"],
+          "answer": "ทุก",
+          "why": "every: ทุก."
+        },
+        {
+          "q": "＿บ้านมีรถ",
+          "en": "Each house has a car.",
+          "options": ["ทั้ง", "แต่ละ", "ทั้งหมด", "หลาย"],
+          "answer": "แต่ละ",
+          "why": "each: แต่ละ."
+        },
+        {
+          "q": "ราคา＿พันบาท",
+          "en": "The total is a thousand baht.",
+          "options": ["ทุก", "แต่ละ", "ทั้งหมด", "ทั้งวัน"],
+          "answer": "ทั้งหมด",
+          "why": "all, total: ทั้งหมด."
+        },
+        {
+          "q": "ฝนตก＿คืน",
+          "en": "It rained all night.",
+          "options": ["ทุก", "แต่ละ", "หลาย", "ทั้ง"],
+          "answer": "ทั้ง",
+          "why": "the whole night: ทั้งคืน."
+        },
+        {
+          "q": "ผมไปทำงาน＿วัน ยกเว้นวันอาทิตย์",
+          "en": "I go to work every day except Sunday.",
+          "options": ["ทุก", "ทั้ง", "แต่ละ", "หลาย"],
+          "answer": "ทุก",
+          "why": "every: ทุก + time word."
+        }
+      ]
+    },
+    {
+      "id": "same-as",
+      "title": "Like, as … as: เหมือน, เท่า",
+      "particle": "เหมือน・เท่า(กับ)・ต่างจาก",
+      "summary": "เหมือน = like, the same as. เท่า / เท่ากับ = as (much) as, equal to. ต่างจาก = different from. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>เหมือน</b> + noun: เขาหน้า<b>เหมือน</b>แม่ (he looks like his mum). <b>เหมือนกัน</b> = the same, too: ผมก็ชอบ<b>เหมือนกัน</b> (I like it too).",
+          "examples": [
+            [
+              "เขาร้องเพลง{เหมือน}นักร้อง",
+              "Khao rong phleng muean nakrong.",
+              "He sings like a singer."
+            ],
+            [
+              "ฉันก็คิด{เหมือนกัน}",
+              "Chan ko khit muean kan.",
+              "I think so too."
+            ]
+          ]
+        },
+        {
+          "h": "Equal and different",
+          "p": "Adjective + <b>เท่ากับ</b> = as … as: สูง<b>เท่ากับ</b>พ่อ. <b>ไม่</b>…<b>เท่า</b> = not as … as: ไม่แพง<b>เท่า</b>ที่นี่. <b>ต่างจาก</b> = different from.",
+          "examples": [
+            [
+              "น้องสูง{เท่า}พี่",
+              "Nong sung thao phi.",
+              "The younger one is as tall as the older one."
+            ],
+            [
+              "อาหารใต้{ต่างจาก}อาหารเหนือ",
+              "Ahan tai tang chak ahan nuea.",
+              "Southern food is different from northern food."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "เขาพูดไทย＿คนไทย",
+          "en": "He speaks Thai like a Thai.",
+          "options": ["เหมือน", "เท่า", "กว่า", "ต่าง"],
+          "answer": "เหมือน",
+          "why": "like: เหมือน."
+        },
+        {
+          "q": "— ผมเหนื่อย — ผมก็＿",
+          "en": "\"I'm tired.\" \"Me too.\"",
+          "options": ["เท่ากัน", "เหมือนกัน", "ต่างกัน", "ด้วยกัน"],
+          "answer": "เหมือนกัน",
+          "why": "too: เหมือนกัน."
+        },
+        {
+          "q": "ห้องนี้ใหญ่＿ห้องนั้น",
+          "en": "This room is as big as that one.",
+          "options": ["เหมือนกัน", "กว่า", "เท่ากับ", "ที่สุด"],
+          "answer": "เท่ากับ",
+          "why": "as … as: เท่ากับ."
+        },
+        {
+          "q": "ภูเก็ตไม่ร้อน＿กรุงเทพฯ",
+          "en": "Phuket isn't as hot as Bangkok.",
+          "options": ["เหมือนกัน", "กว่า", "ต่าง", "เท่า"],
+          "answer": "เท่า",
+          "why": "not as … as: ไม่ … เท่า."
+        },
+        {
+          "q": "ภาษาลาว＿จากภาษาไทยนิดหน่อย",
+          "en": "Lao is a little different from Thai.",
+          "options": ["ต่าง", "เหมือน", "เท่า", "กว่า"],
+          "answer": "ต่าง",
+          "why": "different from: ต่างจาก."
+        }
+      ]
+    },
+    {
+      "id": "how-many",
+      "title": "How many, some: กี่, บาง",
+      "particle": "กี่・บาง・หลาย・ไม่กี่",
+      "summary": "กี่ + classifier asks how many: กี่คน. บาง + classifier = some: บางคน. ไม่กี่ = only a few. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>กี่</b> + classifier: มี<b>กี่</b>คน (how many people?), <b>กี่</b>โมง (what time?), <b>กี่</b>บาท (how many baht?). <b>เท่าไร</b> = how much (price, amount).",
+          "examples": [
+            [
+              "คุณมีพี่น้อง{กี่}คน",
+              "Khun mi phi nong ki khon?",
+              "How many brothers and sisters do you have?"
+            ],
+            [
+              "อยู่เมืองไทย{กี่}ปีแล้ว",
+              "Yu mueang Thai ki pi laeo?",
+              "How many years have you been in Thailand?"
+            ]
+          ]
+        },
+        {
+          "h": "Some, a few",
+          "p": "<b>บาง</b> + classifier = some: <b>บาง</b>คน, <b>บาง</b>ที (sometimes, maybe). <b>ไม่กี่</b> = only a few: <b>ไม่กี่</b>วัน. <b>นิดหน่อย</b> = a little (amount).",
+          "examples": [
+            [
+              "{บาง}คนไม่ชอบทุเรียน",
+              "Bang khon mai chop thurian.",
+              "Some people don't like durian."
+            ],
+            [
+              "ผมอยู่ที่นี่{ไม่กี่}วัน",
+              "Phom yu thi ni mai ki wan.",
+              "I'm only here a few days."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ซื้อ＿ใบ",
+          "en": "How many (tickets) did you buy?",
+          "options": ["กี่", "บาง", "ไม่กี่", "เท่าไร"],
+          "answer": "กี่",
+          "why": "how many: กี่ + classifier."
+        },
+        {
+          "q": "＿ทีผมก็เบื่อ",
+          "en": "Sometimes I get bored.",
+          "options": ["กี่", "บาง", "ไม่กี่", "ทุก"],
+          "answer": "บาง",
+          "why": "sometimes: บางที."
+        },
+        {
+          "q": "อันนี้ราคา＿",
+          "en": "How much is this?",
+          "options": ["กี่", "บาง", "เท่าไร", "ไหน"],
+          "answer": "เท่าไร",
+          "why": "how much (price): เท่าไร."
+        },
+        {
+          "q": "มีคนมา＿คน",
+          "en": "Only a few people came.",
+          "options": ["บาง", "กี่", "หลาย", "ไม่กี่"],
+          "answer": "ไม่กี่",
+          "why": "only a few: ไม่กี่."
+        },
+        {
+          "q": "＿วันฝนตก บางวันแดดออก",
+          "en": "Some days it rains, some days it's sunny.",
+          "options": ["บาง", "กี่", "ทุก", "ไม่กี่"],
+          "answer": "บาง",
+          "why": "some: บาง + classifier."
+        }
+      ]
+    },
+    {
+      "id": "particle-levels",
+      "title": "Polite endings in detail: ค่ะ, คะ, จ้ะ, ขา",
+      "particle": "ครับ・ค่ะ・คะ・จ้ะ・ขอรับ",
+      "summary": "ค่ะ ends a woman's statement; คะ ends her question. จ้ะ and จ้า are warm and casual. ขอรับ and เจ้าค่ะ are old-fashioned. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Men: <b>ครับ</b> everywhere. Women: <b>ค่ะ</b> (falling tone) for statements and answers, <b>คะ</b> (high tone) for questions and after นะ: ไปไหน<b>คะ</b>, ขอบคุณ<b>ค่ะ</b>, นะ<b>คะ</b>.",
+          "examples": [
+            ["ขอบคุณ{ค่ะ}", "Khopkhun kha.", "Thank you. (a woman)"],
+            [
+              "ห้องน้ำอยู่ไหน{คะ}",
+              "Hongnam yu nai kha?",
+              "Where's the toilet? (a woman)"
+            ]
+          ]
+        },
+        {
+          "h": "Casual and old forms",
+          "p": "<b>จ้ะ</b> / <b>จ้า</b> = friendly yes or ending, to friends and children. <b>ฮะ</b> = casual ครับ. <b>ขา</b> answers someone calling you (a woman): — แม่! — <b>ขา</b>. <b>ขอรับ</b> / <b>เจ้าค่ะ</b> appear in period dramas.",
+          "examples": [
+            [
+              "— หนู มานี่หน่อย — {จ้า}",
+              "Nu ma ni noi. — Ja.",
+              "\"Come here, dear.\" \"Coming!\""
+            ],
+            ["ไปก่อนนะ{คะ}", "Pai kon na kha.", "I'm off now. (a woman)"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "สวัสดี＿ (a woman, greeting)",
+          "en": "Hello. (a woman)",
+          "options": ["ค่ะ", "คะ", "ครับ", "ขอรับ"],
+          "answer": "ค่ะ",
+          "why": "Woman's statement: ค่ะ."
+        },
+        {
+          "q": "ราคาเท่าไร＿ (a woman, asking)",
+          "en": "How much is it? (a woman)",
+          "options": ["ค่ะ", "คะ", "ครับ", "จ้า"],
+          "answer": "คะ",
+          "why": "Woman's question: คะ."
+        },
+        {
+          "q": "ขอโทษ＿ (a man)",
+          "en": "Sorry. (a man)",
+          "options": ["ค่ะ", "คะ", "ครับ", "ขา"],
+          "answer": "ครับ",
+          "why": "Man: ครับ."
+        },
+        {
+          "q": "รอแป๊บนะ＿ (a woman)",
+          "en": "Wait a moment, OK? (a woman)",
+          "options": ["ค่ะ", "ครับ", "ขา", "คะ"],
+          "answer": "คะ",
+          "why": "After นะ: คะ."
+        },
+        {
+          "q": "— ลูก! — ＿ แม่ (a girl answering)",
+          "en": "\"Darling!\" \"Yes, Mum?\"",
+          "options": ["ขา", "คะ", "ครับ", "ขอรับ"],
+          "answer": "ขา",
+          "why": "Answering a call (woman): ขา."
         }
       ]
     },
@@ -3423,83 +3723,6 @@
       ]
     },
     {
-      "id": "every-each",
-      "title": "Every, each, all: ทุก, แต่ละ, ทั้งหมด",
-      "particle": "ทุก・แต่ละ・ทั้ง・ทั้งหมด",
-      "summary": "ทุก + classifier or time word = every: ทุกคน, ทุกวัน. แต่ละ = each. ทั้งหมด = all of it. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>ทุก</b>คน (everyone), <b>ทุก</b>วัน (every day), <b>ทุก</b>อย่าง (everything). <b>แต่ละ</b> + classifier = each: <b>แต่ละ</b>คน (each person).",
-          "examples": [
-            [
-              "ผมดื่มกาแฟ{ทุก}เช้า",
-              "Phom duem kafae thuk chao.",
-              "I drink coffee every morning."
-            ],
-            [
-              "{แต่ละ}คนได้หนึ่งชิ้น",
-              "Tae la khon dai nueng chin.",
-              "Each person gets one piece."
-            ]
-          ]
-        },
-        {
-          "h": "All, the whole",
-          "p": "<b>ทั้งหมด</b> after the noun = all of it: กิน<b>ทั้งหมด</b>. <b>ทั้ง</b> + time = the whole: <b>ทั้ง</b>วัน (all day). <b>ทั้ง</b> A <b>และ</b> B = both A and B.",
-          "examples": [
-            [
-              "ผมทำงาน{ทั้ง}วัน",
-              "Phom tham ngan thang wan.",
-              "I worked all day."
-            ],
-            [
-              "เขาพูดได้{ทั้ง}ไทย{และ}อังกฤษ",
-              "Khao phut dai thang Thai lae Angkrit.",
-              "He speaks both Thai and English."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿คนชอบเขา",
-          "en": "Everyone likes him.",
-          "options": ["ทุก", "แต่ละ", "ทั้งหมด", "หลาย"],
-          "answer": "ทุก",
-          "why": "every: ทุก."
-        },
-        {
-          "q": "＿บ้านมีรถ",
-          "en": "Each house has a car.",
-          "options": ["ทั้ง", "แต่ละ", "ทั้งหมด", "หลาย"],
-          "answer": "แต่ละ",
-          "why": "each: แต่ละ."
-        },
-        {
-          "q": "ราคา＿พันบาท",
-          "en": "The total is a thousand baht.",
-          "options": ["ทุก", "แต่ละ", "ทั้งหมด", "ทั้งวัน"],
-          "answer": "ทั้งหมด",
-          "why": "all, total: ทั้งหมด."
-        },
-        {
-          "q": "ฝนตก＿คืน",
-          "en": "It rained all night.",
-          "options": ["ทุก", "แต่ละ", "หลาย", "ทั้ง"],
-          "answer": "ทั้ง",
-          "why": "the whole night: ทั้งคืน."
-        },
-        {
-          "q": "ผมไปทำงาน＿วัน ยกเว้นวันอาทิตย์",
-          "en": "I go to work every day except Sunday.",
-          "options": ["ทุก", "ทั้ง", "แต่ละ", "หลาย"],
-          "answer": "ทุก",
-          "why": "every: ทุก + time word."
-        }
-      ]
-    },
-    {
       "id": "reflexive-reciprocal",
       "title": "Oneself and each other: ตัวเอง, กัน",
       "particle": "ตัวเอง・เอง・กัน",
@@ -3565,229 +3788,6 @@
           "options": ["ตัวเอง", "กัน", "ด้วยกัน", "อีก"],
           "answer": "ตัวเอง",
           "why": "by oneself: ด้วยตัวเอง."
-        }
-      ]
-    },
-    {
-      "id": "same-as",
-      "title": "Like, as … as: เหมือน, เท่า",
-      "particle": "เหมือน・เท่า(กับ)・ต่างจาก",
-      "summary": "เหมือน = like, the same as. เท่า / เท่ากับ = as (much) as, equal to. ต่างจาก = different from. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>เหมือน</b> + noun: เขาหน้า<b>เหมือน</b>แม่ (he looks like his mum). <b>เหมือนกัน</b> = the same, too: ผมก็ชอบ<b>เหมือนกัน</b> (I like it too).",
-          "examples": [
-            [
-              "เขาร้องเพลง{เหมือน}นักร้อง",
-              "Khao rong phleng muean nakrong.",
-              "He sings like a singer."
-            ],
-            [
-              "ฉันก็คิด{เหมือนกัน}",
-              "Chan ko khit muean kan.",
-              "I think so too."
-            ]
-          ]
-        },
-        {
-          "h": "Equal and different",
-          "p": "Adjective + <b>เท่ากับ</b> = as … as: สูง<b>เท่ากับ</b>พ่อ. <b>ไม่</b>…<b>เท่า</b> = not as … as: ไม่แพง<b>เท่า</b>ที่นี่. <b>ต่างจาก</b> = different from.",
-          "examples": [
-            [
-              "น้องสูง{เท่า}พี่",
-              "Nong sung thao phi.",
-              "The younger one is as tall as the older one."
-            ],
-            [
-              "อาหารใต้{ต่างจาก}อาหารเหนือ",
-              "Ahan tai tang chak ahan nuea.",
-              "Southern food is different from northern food."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "เขาพูดไทย＿คนไทย",
-          "en": "He speaks Thai like a Thai.",
-          "options": ["เหมือน", "เท่า", "กว่า", "ต่าง"],
-          "answer": "เหมือน",
-          "why": "like: เหมือน."
-        },
-        {
-          "q": "— ผมเหนื่อย — ผมก็＿",
-          "en": "\"I'm tired.\" \"Me too.\"",
-          "options": ["เท่ากัน", "เหมือนกัน", "ต่างกัน", "ด้วยกัน"],
-          "answer": "เหมือนกัน",
-          "why": "too: เหมือนกัน."
-        },
-        {
-          "q": "ห้องนี้ใหญ่＿ห้องนั้น",
-          "en": "This room is as big as that one.",
-          "options": ["เหมือนกัน", "กว่า", "เท่ากับ", "ที่สุด"],
-          "answer": "เท่ากับ",
-          "why": "as … as: เท่ากับ."
-        },
-        {
-          "q": "ภูเก็ตไม่ร้อน＿กรุงเทพฯ",
-          "en": "Phuket isn't as hot as Bangkok.",
-          "options": ["เหมือนกัน", "กว่า", "ต่าง", "เท่า"],
-          "answer": "เท่า",
-          "why": "not as … as: ไม่ … เท่า."
-        },
-        {
-          "q": "ภาษาลาว＿จากภาษาไทยนิดหน่อย",
-          "en": "Lao is a little different from Thai.",
-          "options": ["ต่าง", "เหมือน", "เท่า", "กว่า"],
-          "answer": "ต่าง",
-          "why": "different from: ต่างจาก."
-        }
-      ]
-    },
-    {
-      "id": "how-many",
-      "title": "How many, some: กี่, บาง",
-      "particle": "กี่・บาง・หลาย・ไม่กี่",
-      "summary": "กี่ + classifier asks how many: กี่คน. บาง + classifier = some: บางคน. ไม่กี่ = only a few. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>กี่</b> + classifier: มี<b>กี่</b>คน (how many people?), <b>กี่</b>โมง (what time?), <b>กี่</b>บาท (how many baht?). <b>เท่าไร</b> = how much (price, amount).",
-          "examples": [
-            [
-              "คุณมีพี่น้อง{กี่}คน",
-              "Khun mi phi nong ki khon?",
-              "How many brothers and sisters do you have?"
-            ],
-            [
-              "อยู่เมืองไทย{กี่}ปีแล้ว",
-              "Yu mueang Thai ki pi laeo?",
-              "How many years have you been in Thailand?"
-            ]
-          ]
-        },
-        {
-          "h": "Some, a few",
-          "p": "<b>บาง</b> + classifier = some: <b>บาง</b>คน, <b>บาง</b>ที (sometimes, maybe). <b>ไม่กี่</b> = only a few: <b>ไม่กี่</b>วัน. <b>นิดหน่อย</b> = a little (amount).",
-          "examples": [
-            [
-              "{บาง}คนไม่ชอบทุเรียน",
-              "Bang khon mai chop thurian.",
-              "Some people don't like durian."
-            ],
-            [
-              "ผมอยู่ที่นี่{ไม่กี่}วัน",
-              "Phom yu thi ni mai ki wan.",
-              "I'm only here a few days."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ซื้อ＿ใบ",
-          "en": "How many (tickets) did you buy?",
-          "options": ["กี่", "บาง", "ไม่กี่", "เท่าไร"],
-          "answer": "กี่",
-          "why": "how many: กี่ + classifier."
-        },
-        {
-          "q": "＿ทีผมก็เบื่อ",
-          "en": "Sometimes I get bored.",
-          "options": ["กี่", "บาง", "ไม่กี่", "ทุก"],
-          "answer": "บาง",
-          "why": "sometimes: บางที."
-        },
-        {
-          "q": "อันนี้ราคา＿",
-          "en": "How much is this?",
-          "options": ["กี่", "บาง", "เท่าไร", "ไหน"],
-          "answer": "เท่าไร",
-          "why": "how much (price): เท่าไร."
-        },
-        {
-          "q": "มีคนมา＿คน",
-          "en": "Only a few people came.",
-          "options": ["บาง", "กี่", "หลาย", "ไม่กี่"],
-          "answer": "ไม่กี่",
-          "why": "only a few: ไม่กี่."
-        },
-        {
-          "q": "＿วันฝนตก บางวันแดดออก",
-          "en": "Some days it rains, some days it's sunny.",
-          "options": ["บาง", "กี่", "ทุก", "ไม่กี่"],
-          "answer": "บาง",
-          "why": "some: บาง + classifier."
-        }
-      ]
-    },
-    {
-      "id": "particle-levels",
-      "title": "Polite endings in detail: ค่ะ, คะ, จ้ะ, ขา",
-      "particle": "ครับ・ค่ะ・คะ・จ้ะ・ขอรับ",
-      "summary": "ค่ะ ends a woman's statement; คะ ends her question. จ้ะ and จ้า are warm and casual. ขอรับ and เจ้าค่ะ are old-fashioned. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "Men: <b>ครับ</b> everywhere. Women: <b>ค่ะ</b> (falling tone) for statements and answers, <b>คะ</b> (high tone) for questions and after นะ: ไปไหน<b>คะ</b>, ขอบคุณ<b>ค่ะ</b>, นะ<b>คะ</b>.",
-          "examples": [
-            ["ขอบคุณ{ค่ะ}", "Khopkhun kha.", "Thank you. (a woman)"],
-            [
-              "ห้องน้ำอยู่ไหน{คะ}",
-              "Hongnam yu nai kha?",
-              "Where's the toilet? (a woman)"
-            ]
-          ]
-        },
-        {
-          "h": "Casual and old forms",
-          "p": "<b>จ้ะ</b> / <b>จ้า</b> = friendly yes or ending, to friends and children. <b>ฮะ</b> = casual ครับ. <b>ขา</b> answers someone calling you (a woman): — แม่! — <b>ขา</b>. <b>ขอรับ</b> / <b>เจ้าค่ะ</b> appear in period dramas.",
-          "examples": [
-            [
-              "— หนู มานี่หน่อย — {จ้า}",
-              "Nu ma ni noi. — Ja.",
-              "\"Come here, dear.\" \"Coming!\""
-            ],
-            ["ไปก่อนนะ{คะ}", "Pai kon na kha.", "I'm off now. (a woman)"]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "สวัสดี＿ (a woman, greeting)",
-          "en": "Hello. (a woman)",
-          "options": ["ค่ะ", "คะ", "ครับ", "ขอรับ"],
-          "answer": "ค่ะ",
-          "why": "Woman's statement: ค่ะ."
-        },
-        {
-          "q": "ราคาเท่าไร＿ (a woman, asking)",
-          "en": "How much is it? (a woman)",
-          "options": ["ค่ะ", "คะ", "ครับ", "จ้า"],
-          "answer": "คะ",
-          "why": "Woman's question: คะ."
-        },
-        {
-          "q": "ขอโทษ＿ (a man)",
-          "en": "Sorry. (a man)",
-          "options": ["ค่ะ", "คะ", "ครับ", "ขา"],
-          "answer": "ครับ",
-          "why": "Man: ครับ."
-        },
-        {
-          "q": "รอแป๊บนะ＿ (a woman)",
-          "en": "Wait a moment, OK? (a woman)",
-          "options": ["ค่ะ", "ครับ", "ขา", "คะ"],
-          "answer": "คะ",
-          "why": "After นะ: คะ."
-        },
-        {
-          "q": "— ลูก! — ＿ แม่ (a girl answering)",
-          "en": "\"Darling!\" \"Yes, Mum?\"",
-          "options": ["ขา", "คะ", "ครับ", "ขอรับ"],
-          "answer": "ขา",
-          "why": "Answering a call (woman): ขา."
         }
       ]
     },
@@ -3930,6 +3930,306 @@
           "options": ["แน่", "คง", "น่า", "อาจ"],
           "answer": "แน่",
           "why": "not sure: ไม่แน่."
+        }
+      ]
+    },
+    {
+      "id": "instead",
+      "title": "Instead of: แทน",
+      "particle": "แทน・แทนที่จะ",
+      "summary": "แทน = instead, in place of. แทนที่จะ + verb = instead of doing. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Noun + <b>แทน</b>: ดื่มชา<b>แทน</b>กาแฟ (drink tea instead of coffee). <b>แทน</b> alone at the end = instead: ไม่มีกาแฟ ดื่มชา<b>แทน</b>. Verb + <b>แทน</b> + person = on someone's behalf: ทำ<b>แทน</b>เขา.",
+          "examples": [
+            [
+              "ผมดื่มน้ำ{แทน}เบียร์",
+              "Phom duem nam thaen bia.",
+              "I'll drink water instead of beer."
+            ],
+            [
+              "วันนี้ผมทำงาน{แทน}เพื่อน",
+              "Wan ni phom tham ngan thaen phuean.",
+              "Today I'm working in place of a friend."
+            ]
+          ]
+        },
+        {
+          "h": "Instead of doing",
+          "p": "<b>แทนที่จะ</b> + verb: <b>แทนที่จะ</b>นั่งรถ เราเดินไป (instead of taking the bus, we walked).",
+          "examples": [
+            [
+              "{แทนที่จะ}ทำการบ้าน เขาเล่นเกม",
+              "Thaen thi ja tham kanban khao len kem.",
+              "Instead of doing homework, he played games."
+            ],
+            [
+              "ไม่มีรถไฟ เลยนั่งรถบัส{แทน}",
+              "Mai mi rotfai loei nang rot bas thaen.",
+              "There was no train, so we took the bus instead."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "กินข้าว＿ก๋วยเตี๋ยว",
+          "en": "Eat rice instead of noodles.",
+          "options": ["แทน", "กับ", "หรือ", "เพื่อ"],
+          "answer": "แทน",
+          "why": "instead of: แทน."
+        },
+        {
+          "q": "＿ที่จะไปทะเล เราไปภูเขา",
+          "en": "Instead of going to the sea, we went to the mountains.",
+          "options": ["เพื่อ", "แทน", "ถ้า", "ก่อน"],
+          "answer": "แทน",
+          "why": "แทนที่จะ."
+        },
+        {
+          "q": "เขาไม่ว่าง ผมจะไป＿",
+          "en": "He's busy, so I'll go in his place.",
+          "options": ["ด้วย", "กัน", "แทน", "เอง"],
+          "answer": "แทน",
+          "why": "instead: แทน (at the end)."
+        },
+        {
+          "q": "ใช้บัตรเครดิต＿เงินสด",
+          "en": "Use a credit card instead of cash.",
+          "options": ["กับ", "เพื่อ", "จาก", "แทน"],
+          "answer": "แทน",
+          "why": "แทน + noun."
+        },
+        {
+          "q": "พูด＿ผมหน่อย",
+          "en": "Speak on my behalf, please.",
+          "options": ["แทน", "ให้", "กับ", "ของ"],
+          "answer": "แทน",
+          "why": "on behalf: แทน + person."
+        }
+      ]
+    },
+    {
+      "id": "except",
+      "title": "Except, besides: นอกจาก",
+      "particle": "นอกจาก・ยกเว้น・นอกจากนี้",
+      "summary": "นอกจาก = besides, apart from. ยกเว้น = except. นอกจากนี้ = in addition. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>ยกเว้น</b> = except (excludes): เปิดทุกวัน <b>ยกเว้น</b>วันจันทร์. <b>นอกจาก</b>…<b>แล้ว</b> = besides (adds): <b>นอกจาก</b>ภาษาไทย<b>แล้ว</b> เขาพูดจีนได้ด้วย.",
+          "examples": [
+            [
+              "ร้านเปิดทุกวัน {ยกเว้น}วันพุธ",
+              "Ran poet thuk wan yokwen wan phut.",
+              "The shop is open every day except Wednesday."
+            ],
+            [
+              "{นอกจาก}ผม{แล้ว} ไม่มีใครรู้",
+              "Nok chak phom laeo mai mi khrai ru.",
+              "Apart from me, nobody knows."
+            ]
+          ]
+        },
+        {
+          "h": "In addition",
+          "p": "<b>นอกจากนี้</b> = moreover, in addition (formal). <b>นอกจาก</b>…<b>ยัง</b>…<b>ด้วย</b> = not only … but also: <b>นอกจาก</b>ถูกแล้ว <b>ยัง</b>อร่อย<b>ด้วย</b>.",
+          "examples": [
+            [
+              "{นอกจาก}ราคาถูก{แล้ว} {ยัง}อร่อย{ด้วย}",
+              "Nok chak rakha thuk laeo yang aroi duai.",
+              "Not only is it cheap, it's tasty too."
+            ],
+            [
+              "{นอกจากนี้} ยังมีปัญหาเรื่องเงิน",
+              "Nok chak ni yang mi panha rueang ngoen.",
+              "In addition, there's a money problem."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ทุกคนมา＿สมชาย",
+          "en": "Everyone came except Somchai.",
+          "options": ["ยกเว้น", "นอกจากนี้", "แทน", "กับ"],
+          "answer": "ยกเว้น",
+          "why": "except: ยกเว้น."
+        },
+        {
+          "q": "＿กาแฟแล้ว คุณอยากได้อะไรอีกไหม",
+          "en": "Besides coffee, would you like anything else?",
+          "options": ["ยกเว้น", "นอกจาก", "แทน", "เพื่อ"],
+          "answer": "นอกจาก",
+          "why": "besides: นอกจาก … แล้ว."
+        },
+        {
+          "q": "นอกจากสวยแล้ว ＿ใจดีด้วย",
+          "en": "Not only is she beautiful, she's kind too.",
+          "options": ["ก็", "เลย", "ยัง", "แต่"],
+          "answer": "ยัง",
+          "why": "นอกจาก … ยัง … ด้วย."
+        },
+        {
+          "q": "＿ บริษัทยังขาดพนักงาน (formal)",
+          "en": "In addition, the company is short of staff.",
+          "options": ["ยกเว้นนี้", "แทนนี้", "เพราะนี้", "นอกจากนี้"],
+          "answer": "นอกจากนี้",
+          "why": "in addition: นอกจากนี้."
+        },
+        {
+          "q": "กินได้ทุกอย่าง ＿เนื้อวัว",
+          "en": "I can eat everything except beef.",
+          "options": ["ยกเว้น", "นอกจากนี้", "ด้วย", "แทน"],
+          "answer": "ยกเว้น",
+          "why": "except: ยกเว้น."
+        }
+      ]
+    },
+    {
+      "id": "only",
+      "title": "Only: แค่, เท่านั้น, เอง",
+      "particle": "แค่・เท่านั้น・เอง・เพียง",
+      "summary": "แค่ (before) and เท่านั้น or เอง (after) mean \"only, just\": แค่ห้าบาท / ห้าบาทเท่านั้น / ห้าบาทเอง. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>แค่</b> + amount: <b>แค่</b>สองคน (only two people). Amount + <b>เอง</b> (speech, \"just, merely\"): ร้อยบาท<b>เอง</b>. <b>เท่านั้น</b> is firmer: สำหรับสมาชิก<b>เท่านั้น</b> (members only).",
+          "examples": [
+            [
+              "ผมมี{แค่}ร้อยบาท",
+              "Phom mi khae roi baht.",
+              "I have only 100 baht."
+            ],
+            [
+              "สำหรับพนักงาน{เท่านั้น}",
+              "Samrap phanakngan thao nan.",
+              "Staff only."
+            ]
+          ]
+        },
+        {
+          "h": "เพียง and ล้วน",
+          "p": "<b>เพียง</b> = only (written): <b>เพียง</b>ไม่กี่นาที. <b>เพียงแต่</b> = it's just that. <b>อย่างเดียว</b> after a verb = only that: กิน<b>อย่างเดียว</b> (all he does is eat).",
+          "examples": [
+            [
+              "ใช้เวลา{เพียง}สิบนาที",
+              "Chai wela phiang sip nathi.",
+              "It takes only ten minutes."
+            ],
+            [
+              "เขาทำงาน{อย่างเดียว} ไม่พักเลย",
+              "Khao tham ngan yang diao mai phak loei.",
+              "All he does is work; he never rests."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿นิดเดียว",
+          "en": "Just a little.",
+          "options": ["แค่", "เท่านั้น", "เอง", "อย่างเดียว"],
+          "answer": "แค่",
+          "why": "only (before): แค่."
+        },
+        {
+          "q": "ห้าสิบบาท＿ ถูกมาก",
+          "en": "Only fifty baht, very cheap.",
+          "options": ["แค่", "เอง", "เพียง", "ล้วน"],
+          "answer": "เอง",
+          "why": "only (speech, after): เอง."
+        },
+        {
+          "q": "เงินสด＿",
+          "en": "Cash only.",
+          "options": ["แค่", "เพียง", "เท่านั้น", "อย่างหนึ่ง"],
+          "answer": "เท่านั้น",
+          "why": "only (firm): เท่านั้น."
+        },
+        {
+          "q": "ใช้เวลา＿ไม่กี่วัน (written)",
+          "en": "It took only a few days.",
+          "options": ["เอง", "เท่านั้น", "อย่างเดียว", "เพียง"],
+          "answer": "เพียง",
+          "why": "Written only: เพียง."
+        },
+        {
+          "q": "เด็กคนนี้เล่น＿ ไม่ทำการบ้าน",
+          "en": "All this kid does is play; no homework.",
+          "options": ["อย่างเดียว", "แค่", "เพียง", "เท่า"],
+          "answer": "อย่างเดียว",
+          "why": "only (that activity): อย่างเดียว."
+        }
+      ]
+    },
+    {
+      "id": "reduplication",
+      "title": "Doubled words: ดีๆ, เร็วๆ, ไปๆ มาๆ",
+      "particle": "ๆ",
+      "summary": "The repeat mark ๆ doubles a word. Doubled adjectives soften or stress, doubled nouns pluralise, and some doubled verbs mean \"back and forth\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Adjectives: <b>เร็วๆ</b> (hurry up), <b>ช้าๆ</b> (nice and slow), <b>ใหม่ๆ</b> (brand new). Nouns: <b>เพื่อนๆ</b>, <b>เด็กๆ</b>. Some words only exist doubled: <b>ต่างๆ</b> (various), <b>จริงๆ</b> (really).",
+          "examples": [
+            ["มา{เร็วๆ}", "Ma reo-reo.", "Come quickly!"],
+            ["ผมชอบ{จริงๆ}", "Phom chop jing-jing.", "I really like it."]
+          ]
+        },
+        {
+          "h": "Doubled pairs",
+          "p": "Pairs of doubled words show back-and-forth: <b>ไปๆ มาๆ</b> (coming and going, in the end), <b>เดินไปเดินมา</b> (walking back and forth). Tripled with tone change for emphasis in speech: <b>ดี๊ดีดี</b>.",
+          "examples": [
+            [
+              "มีปัญหา{ต่างๆ}",
+              "Mi panha tang-tang.",
+              "There are various problems."
+            ],
+            [
+              "{ไปๆ มาๆ} ก็ไม่ได้ไป",
+              "Pai-pai ma-ma ko mai dai pai.",
+              "In the end we didn't go after all."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ขับ＿หน่อย",
+          "en": "Drive a bit more slowly.",
+          "options": ["ช้าๆ", "ช้ามาก", "ช้ากว่า", "ช้าที่สุด"],
+          "answer": "ช้าๆ",
+          "why": "Doubled: ช้าๆ."
+        },
+        {
+          "q": "ขอบคุณ＿",
+          "en": "Thank you so much (really).",
+          "options": ["จริงมาก", "จริงๆ", "จริงไป", "จริงกว่า"],
+          "answer": "จริงๆ",
+          "why": "Doubled: จริงๆ."
+        },
+        {
+          "q": "ประเทศ＿ในเอเชีย",
+          "en": "various countries in Asia",
+          "options": ["ต่าง", "ต่างกัน", "ต่างๆ", "ต่างหาก"],
+          "answer": "ต่างๆ",
+          "why": "various: ต่างๆ."
+        },
+        {
+          "q": "＿ ช่วยกันหน่อย",
+          "en": "Kids, help out a bit!",
+          "options": ["เด็กหลาย", "เด็กกัน", "เด็กทุก", "เด็กๆ"],
+          "answer": "เด็กๆ",
+          "why": "Doubled noun: เด็กๆ."
+        },
+        {
+          "q": "เขาเดิน＿อยู่หน้าบ้าน",
+          "en": "He's pacing back and forth in front of the house.",
+          "options": ["ไปเดินมา", "มาเดินไป", "ไปไป", "มามา"],
+          "answer": "ไปเดินมา",
+          "why": "back and forth: เดินไปเดินมา."
         }
       ]
     },
@@ -4242,160 +4542,6 @@
       ]
     },
     {
-      "id": "instead",
-      "title": "Instead of: แทน",
-      "particle": "แทน・แทนที่จะ",
-      "summary": "แทน = instead, in place of. แทนที่จะ + verb = instead of doing. (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "Noun + <b>แทน</b>: ดื่มชา<b>แทน</b>กาแฟ (drink tea instead of coffee). <b>แทน</b> alone at the end = instead: ไม่มีกาแฟ ดื่มชา<b>แทน</b>. Verb + <b>แทน</b> + person = on someone's behalf: ทำ<b>แทน</b>เขา.",
-          "examples": [
-            [
-              "ผมดื่มน้ำ{แทน}เบียร์",
-              "Phom duem nam thaen bia.",
-              "I'll drink water instead of beer."
-            ],
-            [
-              "วันนี้ผมทำงาน{แทน}เพื่อน",
-              "Wan ni phom tham ngan thaen phuean.",
-              "Today I'm working in place of a friend."
-            ]
-          ]
-        },
-        {
-          "h": "Instead of doing",
-          "p": "<b>แทนที่จะ</b> + verb: <b>แทนที่จะ</b>นั่งรถ เราเดินไป (instead of taking the bus, we walked).",
-          "examples": [
-            [
-              "{แทนที่จะ}ทำการบ้าน เขาเล่นเกม",
-              "Thaen thi ja tham kanban khao len kem.",
-              "Instead of doing homework, he played games."
-            ],
-            [
-              "ไม่มีรถไฟ เลยนั่งรถบัส{แทน}",
-              "Mai mi rotfai loei nang rot bas thaen.",
-              "There was no train, so we took the bus instead."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "กินข้าว＿ก๋วยเตี๋ยว",
-          "en": "Eat rice instead of noodles.",
-          "options": ["แทน", "กับ", "หรือ", "เพื่อ"],
-          "answer": "แทน",
-          "why": "instead of: แทน."
-        },
-        {
-          "q": "＿ที่จะไปทะเล เราไปภูเขา",
-          "en": "Instead of going to the sea, we went to the mountains.",
-          "options": ["เพื่อ", "แทน", "ถ้า", "ก่อน"],
-          "answer": "แทน",
-          "why": "แทนที่จะ."
-        },
-        {
-          "q": "เขาไม่ว่าง ผมจะไป＿",
-          "en": "He's busy, so I'll go in his place.",
-          "options": ["ด้วย", "กัน", "แทน", "เอง"],
-          "answer": "แทน",
-          "why": "instead: แทน (at the end)."
-        },
-        {
-          "q": "ใช้บัตรเครดิต＿เงินสด",
-          "en": "Use a credit card instead of cash.",
-          "options": ["กับ", "เพื่อ", "จาก", "แทน"],
-          "answer": "แทน",
-          "why": "แทน + noun."
-        },
-        {
-          "q": "พูด＿ผมหน่อย",
-          "en": "Speak on my behalf, please.",
-          "options": ["แทน", "ให้", "กับ", "ของ"],
-          "answer": "แทน",
-          "why": "on behalf: แทน + person."
-        }
-      ]
-    },
-    {
-      "id": "except",
-      "title": "Except, besides: นอกจาก",
-      "particle": "นอกจาก・ยกเว้น・นอกจากนี้",
-      "summary": "นอกจาก = besides, apart from. ยกเว้น = except. นอกจากนี้ = in addition. (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "<b>ยกเว้น</b> = except (excludes): เปิดทุกวัน <b>ยกเว้น</b>วันจันทร์. <b>นอกจาก</b>…<b>แล้ว</b> = besides (adds): <b>นอกจาก</b>ภาษาไทย<b>แล้ว</b> เขาพูดจีนได้ด้วย.",
-          "examples": [
-            [
-              "ร้านเปิดทุกวัน {ยกเว้น}วันพุธ",
-              "Ran poet thuk wan yokwen wan phut.",
-              "The shop is open every day except Wednesday."
-            ],
-            [
-              "{นอกจาก}ผม{แล้ว} ไม่มีใครรู้",
-              "Nok chak phom laeo mai mi khrai ru.",
-              "Apart from me, nobody knows."
-            ]
-          ]
-        },
-        {
-          "h": "In addition",
-          "p": "<b>นอกจากนี้</b> = moreover, in addition (formal). <b>นอกจาก</b>…<b>ยัง</b>…<b>ด้วย</b> = not only … but also: <b>นอกจาก</b>ถูกแล้ว <b>ยัง</b>อร่อย<b>ด้วย</b>.",
-          "examples": [
-            [
-              "{นอกจาก}ราคาถูก{แล้ว} {ยัง}อร่อย{ด้วย}",
-              "Nok chak rakha thuk laeo yang aroi duai.",
-              "Not only is it cheap, it's tasty too."
-            ],
-            [
-              "{นอกจากนี้} ยังมีปัญหาเรื่องเงิน",
-              "Nok chak ni yang mi panha rueang ngoen.",
-              "In addition, there's a money problem."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ทุกคนมา＿สมชาย",
-          "en": "Everyone came except Somchai.",
-          "options": ["ยกเว้น", "นอกจากนี้", "แทน", "กับ"],
-          "answer": "ยกเว้น",
-          "why": "except: ยกเว้น."
-        },
-        {
-          "q": "＿กาแฟแล้ว คุณอยากได้อะไรอีกไหม",
-          "en": "Besides coffee, would you like anything else?",
-          "options": ["ยกเว้น", "นอกจาก", "แทน", "เพื่อ"],
-          "answer": "นอกจาก",
-          "why": "besides: นอกจาก … แล้ว."
-        },
-        {
-          "q": "นอกจากสวยแล้ว ＿ใจดีด้วย",
-          "en": "Not only is she beautiful, she's kind too.",
-          "options": ["ก็", "เลย", "ยัง", "แต่"],
-          "answer": "ยัง",
-          "why": "นอกจาก … ยัง … ด้วย."
-        },
-        {
-          "q": "＿ บริษัทยังขาดพนักงาน (formal)",
-          "en": "In addition, the company is short of staff.",
-          "options": ["ยกเว้นนี้", "แทนนี้", "เพราะนี้", "นอกจากนี้"],
-          "answer": "นอกจากนี้",
-          "why": "in addition: นอกจากนี้."
-        },
-        {
-          "q": "กินได้ทุกอย่าง ＿เนื้อวัว",
-          "en": "I can eat everything except beef.",
-          "options": ["ยกเว้น", "นอกจากนี้", "ด้วย", "แทน"],
-          "answer": "ยกเว้น",
-          "why": "except: ยกเว้น."
-        }
-      ]
-    },
-    {
       "id": "while",
       "title": "While, during: ระหว่าง, ขณะที่",
       "particle": "ระหว่าง(ที่)・ขณะที่・พลาง",
@@ -4546,83 +4692,6 @@
           "options": ["แม้แต่", "ยกเว้น", "นอกจาก", "แทน"],
           "answer": "แม้แต่",
           "why": "even: แม้แต่."
-        }
-      ]
-    },
-    {
-      "id": "only",
-      "title": "Only: แค่, เท่านั้น, เอง",
-      "particle": "แค่・เท่านั้น・เอง・เพียง",
-      "summary": "แค่ (before) and เท่านั้น or เอง (after) mean \"only, just\": แค่ห้าบาท / ห้าบาทเท่านั้น / ห้าบาทเอง. (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "<b>แค่</b> + amount: <b>แค่</b>สองคน (only two people). Amount + <b>เอง</b> (speech, \"just, merely\"): ร้อยบาท<b>เอง</b>. <b>เท่านั้น</b> is firmer: สำหรับสมาชิก<b>เท่านั้น</b> (members only).",
-          "examples": [
-            [
-              "ผมมี{แค่}ร้อยบาท",
-              "Phom mi khae roi baht.",
-              "I have only 100 baht."
-            ],
-            [
-              "สำหรับพนักงาน{เท่านั้น}",
-              "Samrap phanakngan thao nan.",
-              "Staff only."
-            ]
-          ]
-        },
-        {
-          "h": "เพียง and ล้วน",
-          "p": "<b>เพียง</b> = only (written): <b>เพียง</b>ไม่กี่นาที. <b>เพียงแต่</b> = it's just that. <b>อย่างเดียว</b> after a verb = only that: กิน<b>อย่างเดียว</b> (all he does is eat).",
-          "examples": [
-            [
-              "ใช้เวลา{เพียง}สิบนาที",
-              "Chai wela phiang sip nathi.",
-              "It takes only ten minutes."
-            ],
-            [
-              "เขาทำงาน{อย่างเดียว} ไม่พักเลย",
-              "Khao tham ngan yang diao mai phak loei.",
-              "All he does is work; he never rests."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿นิดเดียว",
-          "en": "Just a little.",
-          "options": ["แค่", "เท่านั้น", "เอง", "อย่างเดียว"],
-          "answer": "แค่",
-          "why": "only (before): แค่."
-        },
-        {
-          "q": "ห้าสิบบาท＿ ถูกมาก",
-          "en": "Only fifty baht, very cheap.",
-          "options": ["แค่", "เอง", "เพียง", "ล้วน"],
-          "answer": "เอง",
-          "why": "only (speech, after): เอง."
-        },
-        {
-          "q": "เงินสด＿",
-          "en": "Cash only.",
-          "options": ["แค่", "เพียง", "เท่านั้น", "อย่างหนึ่ง"],
-          "answer": "เท่านั้น",
-          "why": "only (firm): เท่านั้น."
-        },
-        {
-          "q": "ใช้เวลา＿ไม่กี่วัน (written)",
-          "en": "It took only a few days.",
-          "options": ["เอง", "เท่านั้น", "อย่างเดียว", "เพียง"],
-          "answer": "เพียง",
-          "why": "Written only: เพียง."
-        },
-        {
-          "q": "เด็กคนนี้เล่น＿ ไม่ทำการบ้าน",
-          "en": "All this kid does is play; no homework.",
-          "options": ["อย่างเดียว", "แค่", "เพียง", "เท่า"],
-          "answer": "อย่างเดียว",
-          "why": "only (that activity): อย่างเดียว."
         }
       ]
     },
@@ -5150,75 +5219,6 @@
           "options": ["เสีย", "ไว้", "ได้", "เอง"],
           "answer": "เสีย",
           "why": "first: เสียก่อน."
-        }
-      ]
-    },
-    {
-      "id": "reduplication",
-      "title": "Doubled words: ดีๆ, เร็วๆ, ไปๆ มาๆ",
-      "particle": "ๆ",
-      "summary": "The repeat mark ๆ doubles a word. Doubled adjectives soften or stress, doubled nouns pluralise, and some doubled verbs mean \"back and forth\". (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "Adjectives: <b>เร็วๆ</b> (hurry up), <b>ช้าๆ</b> (nice and slow), <b>ใหม่ๆ</b> (brand new). Nouns: <b>เพื่อนๆ</b>, <b>เด็กๆ</b>. Some words only exist doubled: <b>ต่างๆ</b> (various), <b>จริงๆ</b> (really).",
-          "examples": [
-            ["มา{เร็วๆ}", "Ma reo-reo.", "Come quickly!"],
-            ["ผมชอบ{จริงๆ}", "Phom chop jing-jing.", "I really like it."]
-          ]
-        },
-        {
-          "h": "Doubled pairs",
-          "p": "Pairs of doubled words show back-and-forth: <b>ไปๆ มาๆ</b> (coming and going, in the end), <b>เดินไปเดินมา</b> (walking back and forth). Tripled with tone change for emphasis in speech: <b>ดี๊ดีดี</b>.",
-          "examples": [
-            [
-              "มีปัญหา{ต่างๆ}",
-              "Mi panha tang-tang.",
-              "There are various problems."
-            ],
-            [
-              "{ไปๆ มาๆ} ก็ไม่ได้ไป",
-              "Pai-pai ma-ma ko mai dai pai.",
-              "In the end we didn't go after all."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ขับ＿หน่อย",
-          "en": "Drive a bit more slowly.",
-          "options": ["ช้าๆ", "ช้ามาก", "ช้ากว่า", "ช้าที่สุด"],
-          "answer": "ช้าๆ",
-          "why": "Doubled: ช้าๆ."
-        },
-        {
-          "q": "ขอบคุณ＿",
-          "en": "Thank you so much (really).",
-          "options": ["จริงมาก", "จริงๆ", "จริงไป", "จริงกว่า"],
-          "answer": "จริงๆ",
-          "why": "Doubled: จริงๆ."
-        },
-        {
-          "q": "ประเทศ＿ในเอเชีย",
-          "en": "various countries in Asia",
-          "options": ["ต่าง", "ต่างกัน", "ต่างๆ", "ต่างหาก"],
-          "answer": "ต่างๆ",
-          "why": "various: ต่างๆ."
-        },
-        {
-          "q": "＿ ช่วยกันหน่อย",
-          "en": "Kids, help out a bit!",
-          "options": ["เด็กหลาย", "เด็กกัน", "เด็กทุก", "เด็กๆ"],
-          "answer": "เด็กๆ",
-          "why": "Doubled noun: เด็กๆ."
-        },
-        {
-          "q": "เขาเดิน＿อยู่หน้าบ้าน",
-          "en": "He's pacing back and forth in front of the house.",
-          "options": ["ไปเดินมา", "มาเดินไป", "ไปไป", "มามา"],
-          "answer": "ไปเดินมา",
-          "why": "back and forth: เดินไปเดินมา."
         }
       ]
     },

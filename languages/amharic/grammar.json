@@ -7,7 +7,7 @@
     "Drills are { q, en, options, answer, why }; ＿ is the blank.",
     "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
     "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
-    "72 lessons, from A1 to C1. Lessons 13–72 were added to cover the rest of the beginner path and the main intermediate and advanced points."
+    "72 lessons, from A1 to C1. 60 lessons were added to cover the rest of the beginner path and the main intermediate and advanced points."
   ],
   "title": "Amharic first grammar",
   "intro": "Amharic is the working language of Ethiopia and a Semitic language, a cousin of Arabic and Hebrew. The verb comes last, “you” has separate forms for a man and a woman, and small endings on nouns and verbs carry a lot of meaning. The 72 lessons run from A1 to C1. They start with pronouns and “to be”, possessive endings, questions, the present and past, object endings and commands, then add the article, the Ethiopian clock, the progressive and perfect, must and need, the gerund chain, ቢ- for “if”, relative verbs with የ- and የሚ-, the passive and causative, and end with unreal conditions, ምንም እንኳ for “although”, polite speech, hearsay and the connectors of written Amharic. The romanization is a simple guide: e is the short vowel of “the”, and gn is the ny sound of “canyon”.",
@@ -1422,6 +1422,126 @@
       ]
     },
     {
+      "id": "like",
+      "title": "Like: እወዳለሁ, ደስ ይለኛል",
+      "particle": "እወዳለሁ ደስ ይለኛል",
+      "summary": "እወዳለሁ means \"I like, I love\" (things and people); ደስ ይለኛል means \"it pleases me, I like it / I'm glad\". (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ቡና እወዳለሁ</b> I like coffee. With a verb use the infinitive: <b>ማንበብ እወዳለሁ</b> I like reading. Negative: <b>አልወድም</b>.",
+          "examples": [
+            ["ቡና {እወዳለሁ}።", "Buna iwedallehu.", "I like coffee."],
+            ["{ማንበብ} እወዳለሁ።", "Manbeb iwedallehu.", "I like reading."]
+          ]
+        },
+        {
+          "h": "It pleases me",
+          "p": "<b>ደስ ይለኛል</b> I like it, I'm glad: <b>ይህ ከተማ ደስ ይለኛል</b> I like this city. <b>ደስ አለኝ</b> I'm glad (it pleased me).",
+          "examples": [
+            [
+              "ይህ ከተማ {ደስ ይለኛል}።",
+              "Yih ketema des yilegnal.",
+              "I like this city."
+            ],
+            [
+              "ስላገኘሁህ {ደስ ብሎኛል}።",
+              "Silagegnehuh des bilognal.",
+              "I'm glad to have met you. (to a man)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ቡና ＿።",
+          "en": "I like coffee.",
+          "options": ["እወዳለሁ", "እፈልጋለሁ", "እችላለሁ", "አለብኝ"],
+          "answer": "እወዳለሁ",
+          "why": "Like: እወዳለሁ."
+        },
+        {
+          "q": "＿ እወዳለሁ።",
+          "en": "I like reading.",
+          "options": ["አነበብኩ", "ማንበብ", "አነባለሁ", "አንብብ"],
+          "answer": "ማንበብ",
+          "why": "With a verb: infinitive."
+        },
+        {
+          "q": "ይህ ከተማ ደስ ＿።",
+          "en": "I like this city.",
+          "options": ["እወዳለሁ", "ነው", "ይለኛል", "አለኝ"],
+          "answer": "ይለኛል",
+          "why": "It pleases me: ደስ ይለኛል."
+        },
+        {
+          "q": "ሻይ ＿።",
+          "en": "I don't like tea.",
+          "options": ["እወዳለሁ", "አልፈልግም ነበር", "አይደለም", "አልወድም"],
+          "answer": "አልወድም",
+          "why": "Don't like: አልወድም."
+        }
+      ]
+    },
+    {
+      "id": "know",
+      "title": "To know: አውቃለሁ",
+      "particle": "አውቃለሁ አላውቅም",
+      "summary": "አውቃለሁ means \"I know\"; አላውቅም means \"I don't know\". It covers facts and people. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>አውቃለሁ</b> I know, <b>ታውቃለህ</b> you know (m), <b>ታውቂያለሽ</b> (f), <b>ያውቃል</b> he knows. Past: <b>አውቅ ነበር</b> I knew.",
+          "examples": [
+            ["{አላውቅም}።", "Alawqim.", "I don't know."],
+            [
+              "ጣቢያው የት እንዳለ {ታውቃለህ}?",
+              "Tabiyaw yet inde'alle tawqalleh?",
+              "Do you know where the station is? (to a man)"
+            ]
+          ]
+        },
+        {
+          "h": "Knowing people",
+          "p": "The same verb is used for people, with the object ending: <b>አውቀዋለሁ</b> I know him, <b>ታውቂያታለሽ?</b> do you know her? (to a woman)",
+          "examples": [
+            ["እሱን {አውቀዋለሁ}።", "Issun awqewallehu.", "I know him."],
+            ["እሷ ብዙ {ታውቃለች}።", "Isswa bizu tawqalech.", "She knows a lot."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿።",
+          "en": "I don't know.",
+          "options": ["አላውቅም", "አውቃለሁ", "አልችልም", "አልፈልግም"],
+          "answer": "አላውቅም",
+          "why": "I don't know: አላውቅም."
+        },
+        {
+          "q": "ጣቢያው የት እንዳለ ＿?",
+          "en": "Do you know where the station is? (to a man)",
+          "options": ["አውቃለሁ", "ታውቃለህ", "ያውቃል", "ታውቂያለሽ"],
+          "answer": "ታውቃለህ",
+          "why": "You (m) know: ታውቃለህ."
+        },
+        {
+          "q": "እሱን ＿።",
+          "en": "I know him.",
+          "options": ["አውቃለሁ", "ያውቃል", "አውቀዋለሁ", "አውቃታለሁ"],
+          "answer": "አውቀዋለሁ",
+          "why": "Him: -ው-."
+        },
+        {
+          "q": "እሷ ብዙ ＿።",
+          "en": "She knows a lot.",
+          "options": ["ያውቃል", "ታውቃለህ", "አውቃለሁ", "ታውቃለች"],
+          "answer": "ታውቃለች",
+          "why": "She knows: ታውቃለች."
+        }
+      ]
+    },
+    {
       "id": "had",
       "title": "Had, there was: ነበረኝ, ነበረ",
       "particle": "ነበረኝ ነበረ ይኖረኛል",
@@ -1860,126 +1980,6 @@
       ]
     },
     {
-      "id": "like",
-      "title": "Like: እወዳለሁ, ደስ ይለኛል",
-      "particle": "እወዳለሁ ደስ ይለኛል",
-      "summary": "እወዳለሁ means \"I like, I love\" (things and people); ደስ ይለኛል means \"it pleases me, I like it / I'm glad\". (about A1–A2)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>ቡና እወዳለሁ</b> I like coffee. With a verb use the infinitive: <b>ማንበብ እወዳለሁ</b> I like reading. Negative: <b>አልወድም</b>.",
-          "examples": [
-            ["ቡና {እወዳለሁ}።", "Buna iwedallehu.", "I like coffee."],
-            ["{ማንበብ} እወዳለሁ።", "Manbeb iwedallehu.", "I like reading."]
-          ]
-        },
-        {
-          "h": "It pleases me",
-          "p": "<b>ደስ ይለኛል</b> I like it, I'm glad: <b>ይህ ከተማ ደስ ይለኛል</b> I like this city. <b>ደስ አለኝ</b> I'm glad (it pleased me).",
-          "examples": [
-            [
-              "ይህ ከተማ {ደስ ይለኛል}።",
-              "Yih ketema des yilegnal.",
-              "I like this city."
-            ],
-            [
-              "ስላገኘሁህ {ደስ ብሎኛል}።",
-              "Silagegnehuh des bilognal.",
-              "I'm glad to have met you. (to a man)"
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ቡና ＿።",
-          "en": "I like coffee.",
-          "options": ["እወዳለሁ", "እፈልጋለሁ", "እችላለሁ", "አለብኝ"],
-          "answer": "እወዳለሁ",
-          "why": "Like: እወዳለሁ."
-        },
-        {
-          "q": "＿ እወዳለሁ።",
-          "en": "I like reading.",
-          "options": ["አነበብኩ", "ማንበብ", "አነባለሁ", "አንብብ"],
-          "answer": "ማንበብ",
-          "why": "With a verb: infinitive."
-        },
-        {
-          "q": "ይህ ከተማ ደስ ＿።",
-          "en": "I like this city.",
-          "options": ["እወዳለሁ", "ነው", "ይለኛል", "አለኝ"],
-          "answer": "ይለኛል",
-          "why": "It pleases me: ደስ ይለኛል."
-        },
-        {
-          "q": "ሻይ ＿።",
-          "en": "I don't like tea.",
-          "options": ["እወዳለሁ", "አልፈልግም ነበር", "አይደለም", "አልወድም"],
-          "answer": "አልወድም",
-          "why": "Don't like: አልወድም."
-        }
-      ]
-    },
-    {
-      "id": "know",
-      "title": "To know: አውቃለሁ",
-      "particle": "አውቃለሁ አላውቅም",
-      "summary": "አውቃለሁ means \"I know\"; አላውቅም means \"I don't know\". It covers facts and people. (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>አውቃለሁ</b> I know, <b>ታውቃለህ</b> you know (m), <b>ታውቂያለሽ</b> (f), <b>ያውቃል</b> he knows. Past: <b>አውቅ ነበር</b> I knew.",
-          "examples": [
-            ["{አላውቅም}።", "Alawqim.", "I don't know."],
-            [
-              "ጣቢያው የት እንዳለ {ታውቃለህ}?",
-              "Tabiyaw yet inde'alle tawqalleh?",
-              "Do you know where the station is? (to a man)"
-            ]
-          ]
-        },
-        {
-          "h": "Knowing people",
-          "p": "The same verb is used for people, with the object ending: <b>አውቀዋለሁ</b> I know him, <b>ታውቂያታለሽ?</b> do you know her? (to a woman)",
-          "examples": [
-            ["እሱን {አውቀዋለሁ}።", "Issun awqewallehu.", "I know him."],
-            ["እሷ ብዙ {ታውቃለች}።", "Isswa bizu tawqalech.", "She knows a lot."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿።",
-          "en": "I don't know.",
-          "options": ["አላውቅም", "አውቃለሁ", "አልችልም", "አልፈልግም"],
-          "answer": "አላውቅም",
-          "why": "I don't know: አላውቅም."
-        },
-        {
-          "q": "ጣቢያው የት እንዳለ ＿?",
-          "en": "Do you know where the station is? (to a man)",
-          "options": ["አውቃለሁ", "ታውቃለህ", "ያውቃል", "ታውቂያለሽ"],
-          "answer": "ታውቃለህ",
-          "why": "You (m) know: ታውቃለህ."
-        },
-        {
-          "q": "እሱን ＿።",
-          "en": "I know him.",
-          "options": ["አውቃለሁ", "ያውቃል", "አውቀዋለሁ", "አውቃታለሁ"],
-          "answer": "አውቀዋለሁ",
-          "why": "Him: -ው-."
-        },
-        {
-          "q": "እሷ ብዙ ＿።",
-          "en": "She knows a lot.",
-          "options": ["ያውቃል", "ታውቃለህ", "አውቃለሁ", "ታውቃለች"],
-          "answer": "ታውቃለች",
-          "why": "She knows: ታውቃለች."
-        }
-      ]
-    },
-    {
       "id": "comparison",
       "title": "Bigger, biggest: ከ- … ይበልጣል",
       "particle": "ከ- ይበልጣል ከሁሉ",
@@ -2186,6 +2186,146 @@
           "options": ["ደውዬ", "ደወለች", "ደውሎ", "ደውላ"],
           "answer": "ደውላ",
           "why": "She, gerund: -ኣ."
+        }
+      ]
+    },
+    {
+      "id": "ordinals-calendar",
+      "title": "First, second, and the Ethiopian calendar",
+      "particle": "-ኛ መስከረም ዓ.ም.",
+      "summary": "Ordinals add -ኛ: ሁለተኛ (second), ሶስተኛ (third). Ethiopia uses its own calendar, which starts in September (መስከረም) and runs about seven years behind. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>አንደኛ</b> or <b>መጀመሪያ</b> first, <b>ሁለተኛ</b> second, <b>ሶስተኛ</b> third, <b>አራተኛ</b> fourth, <b>አስረኛ</b> tenth.",
+          "examples": [
+            [
+              "{ሶስተኛ} ፎቅ ላይ እኖራለሁ።",
+              "Sostegna foq lay inorallehu.",
+              "I live on the third floor."
+            ],
+            [
+              "ይህ {የመጀመሪያ} ጉብኝቴ ነው።",
+              "Yih yemejemerya gubbignite new.",
+              "This is my first visit."
+            ]
+          ]
+        },
+        {
+          "h": "Months and years",
+          "p": "The year begins with <b>መስከረም</b> (September); <b>ዓ.ም.</b> after a year marks the Ethiopian calendar. Dates read month then day: <b>መስከረም 1</b> New Year.",
+          "examples": [
+            [
+              "እንቁጣጣሽ {መስከረም 1} ነው።",
+              "Inqutatash meskerem and new.",
+              "Ethiopian New Year is on Meskerem 1."
+            ],
+            [
+              "{በ2016 ዓ.ም.} ተመረቅኩ።",
+              "Be2016 a.m. temereqqku.",
+              "I graduated in 2016 (Ethiopian calendar)."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ፎቅ ላይ እኖራለሁ።",
+          "en": "I live on the third floor.",
+          "options": ["ሶስተኛ", "ሶስት", "ሶስቱ", "ሶስቴ"],
+          "answer": "ሶስተኛ",
+          "why": "Third: ሶስተኛ."
+        },
+        {
+          "q": "ይህ የ＿ ጉብኝቴ ነው።",
+          "en": "This is my first visit.",
+          "options": ["አንድ", "መጀመሪያ", "አንዱ", "አንዴ"],
+          "answer": "መጀመሪያ",
+          "why": "First: መጀመሪያ."
+        },
+        {
+          "q": "እንቁጣጣሽ ＿ 1 ነው።",
+          "en": "Ethiopian New Year is on Meskerem 1.",
+          "options": ["ጥር", "ሰኔ", "መስከረም", "ነሐሴ"],
+          "answer": "መስከረም",
+          "why": "The year starts in መስከረም."
+        },
+        {
+          "q": "በ2016 ＿ ተመረቅኩ።",
+          "en": "I graduated in 2016 (Ethiopian calendar).",
+          "options": ["ሰዓት", "ቀን", "ወር", "ዓ.ም."],
+          "answer": "ዓ.ም.",
+          "why": "Ethiopian year: ዓ.ም."
+        }
+      ]
+    },
+    {
+      "id": "frequency",
+      "title": "Always, sometimes, often",
+      "particle": "ሁልጊዜ አንዳንድ ጊዜ ብዙ ጊዜ",
+      "summary": "ሁልጊዜ is \"always\", አንዳንድ ጊዜ \"sometimes\", ብዙ ጊዜ \"often\", and በጭራሽ + negative \"never\". They go near the start of the sentence. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ሁልጊዜ</b> (hulgize) always, <b>ብዙ ጊዜ</b> often, <b>አንዳንድ ጊዜ</b> sometimes, <b>በጭራሽ</b> never, not at all.",
+          "examples": [
+            [
+              "{ሁልጊዜ} ጠዋት ቡና እጠጣለሁ።",
+              "Hulgize tewat buna itetallehu.",
+              "I always drink coffee in the morning."
+            ],
+            [
+              "{አንዳንድ ጊዜ} ወደ ሲኒማ እሄዳለሁ።",
+              "Andand gize wede sinima ihedallehu.",
+              "I sometimes go to the cinema."
+            ]
+          ]
+        },
+        {
+          "h": "How often",
+          "p": "<b>በቀን</b> per day: <b>በቀን ሶስት ጊዜ</b> three times a day. <b>በሳምንት አንድ ጊዜ</b> once a week.",
+          "examples": [
+            [
+              "መድኃኒቱን {በቀን ሶስት ጊዜ} ውሰድ።",
+              "Medhanitun beqen sost gize wised.",
+              "Take the medicine three times a day. (to a man)"
+            ],
+            [
+              "እሷ {በጭራሽ} አትዘገይም።",
+              "Isswa bechirash atizegeyim.",
+              "She's never late."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ጠዋት ቡና እጠጣለሁ።",
+          "en": "I always drink coffee in the morning.",
+          "options": ["ሁልጊዜ", "በጭራሽ", "አንዳንድ", "ገና"],
+          "answer": "ሁልጊዜ",
+          "why": "Always: ሁልጊዜ."
+        },
+        {
+          "q": "አንዳንድ ＿ ወደ ሲኒማ እሄዳለሁ።",
+          "en": "I sometimes go to the cinema.",
+          "options": ["ቀን", "ጊዜ", "ሰዓት", "ሳምንት"],
+          "answer": "ጊዜ",
+          "why": "Sometimes: አንዳንድ ጊዜ."
+        },
+        {
+          "q": "መድኃኒቱን በቀን ሶስት ＿ ውሰድ።",
+          "en": "Take the medicine three times a day.",
+          "options": ["ሰዓት", "ቀን", "ጊዜ", "ወር"],
+          "answer": "ጊዜ",
+          "why": "Times: ጊዜ."
+        },
+        {
+          "q": "እሷ በጭራሽ ＿።",
+          "en": "She's never late.",
+          "options": ["ትዘገያለች", "ዘገየች", "ትዘገይ ነበር", "አትዘገይም"],
+          "answer": "አትዘገይም",
+          "why": "Never: በጭራሽ + negative."
         }
       ]
     },
@@ -3370,146 +3510,6 @@
       ]
     },
     {
-      "id": "ordinals-calendar",
-      "title": "First, second, and the Ethiopian calendar",
-      "particle": "-ኛ መስከረም ዓ.ም.",
-      "summary": "Ordinals add -ኛ: ሁለተኛ (second), ሶስተኛ (third). Ethiopia uses its own calendar, which starts in September (መስከረም) and runs about seven years behind. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>አንደኛ</b> or <b>መጀመሪያ</b> first, <b>ሁለተኛ</b> second, <b>ሶስተኛ</b> third, <b>አራተኛ</b> fourth, <b>አስረኛ</b> tenth.",
-          "examples": [
-            [
-              "{ሶስተኛ} ፎቅ ላይ እኖራለሁ።",
-              "Sostegna foq lay inorallehu.",
-              "I live on the third floor."
-            ],
-            [
-              "ይህ {የመጀመሪያ} ጉብኝቴ ነው።",
-              "Yih yemejemerya gubbignite new.",
-              "This is my first visit."
-            ]
-          ]
-        },
-        {
-          "h": "Months and years",
-          "p": "The year begins with <b>መስከረም</b> (September); <b>ዓ.ም.</b> after a year marks the Ethiopian calendar. Dates read month then day: <b>መስከረም 1</b> New Year.",
-          "examples": [
-            [
-              "እንቁጣጣሽ {መስከረም 1} ነው።",
-              "Inqutatash meskerem and new.",
-              "Ethiopian New Year is on Meskerem 1."
-            ],
-            [
-              "{በ2016 ዓ.ም.} ተመረቅኩ።",
-              "Be2016 a.m. temereqqku.",
-              "I graduated in 2016 (Ethiopian calendar)."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ ፎቅ ላይ እኖራለሁ።",
-          "en": "I live on the third floor.",
-          "options": ["ሶስተኛ", "ሶስት", "ሶስቱ", "ሶስቴ"],
-          "answer": "ሶስተኛ",
-          "why": "Third: ሶስተኛ."
-        },
-        {
-          "q": "ይህ የ＿ ጉብኝቴ ነው።",
-          "en": "This is my first visit.",
-          "options": ["አንድ", "መጀመሪያ", "አንዱ", "አንዴ"],
-          "answer": "መጀመሪያ",
-          "why": "First: መጀመሪያ."
-        },
-        {
-          "q": "እንቁጣጣሽ ＿ 1 ነው።",
-          "en": "Ethiopian New Year is on Meskerem 1.",
-          "options": ["ጥር", "ሰኔ", "መስከረም", "ነሐሴ"],
-          "answer": "መስከረም",
-          "why": "The year starts in መስከረም."
-        },
-        {
-          "q": "በ2016 ＿ ተመረቅኩ።",
-          "en": "I graduated in 2016 (Ethiopian calendar).",
-          "options": ["ሰዓት", "ቀን", "ወር", "ዓ.ም."],
-          "answer": "ዓ.ም.",
-          "why": "Ethiopian year: ዓ.ም."
-        }
-      ]
-    },
-    {
-      "id": "frequency",
-      "title": "Always, sometimes, often",
-      "particle": "ሁልጊዜ አንዳንድ ጊዜ ብዙ ጊዜ",
-      "summary": "ሁልጊዜ is \"always\", አንዳንድ ጊዜ \"sometimes\", ብዙ ጊዜ \"often\", and በጭራሽ + negative \"never\". They go near the start of the sentence. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>ሁልጊዜ</b> (hulgize) always, <b>ብዙ ጊዜ</b> often, <b>አንዳንድ ጊዜ</b> sometimes, <b>በጭራሽ</b> never, not at all.",
-          "examples": [
-            [
-              "{ሁልጊዜ} ጠዋት ቡና እጠጣለሁ።",
-              "Hulgize tewat buna itetallehu.",
-              "I always drink coffee in the morning."
-            ],
-            [
-              "{አንዳንድ ጊዜ} ወደ ሲኒማ እሄዳለሁ።",
-              "Andand gize wede sinima ihedallehu.",
-              "I sometimes go to the cinema."
-            ]
-          ]
-        },
-        {
-          "h": "How often",
-          "p": "<b>በቀን</b> per day: <b>በቀን ሶስት ጊዜ</b> three times a day. <b>በሳምንት አንድ ጊዜ</b> once a week.",
-          "examples": [
-            [
-              "መድኃኒቱን {በቀን ሶስት ጊዜ} ውሰድ።",
-              "Medhanitun beqen sost gize wised.",
-              "Take the medicine three times a day. (to a man)"
-            ],
-            [
-              "እሷ {በጭራሽ} አትዘገይም።",
-              "Isswa bechirash atizegeyim.",
-              "She's never late."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ ጠዋት ቡና እጠጣለሁ።",
-          "en": "I always drink coffee in the morning.",
-          "options": ["ሁልጊዜ", "በጭራሽ", "አንዳንድ", "ገና"],
-          "answer": "ሁልጊዜ",
-          "why": "Always: ሁልጊዜ."
-        },
-        {
-          "q": "አንዳንድ ＿ ወደ ሲኒማ እሄዳለሁ።",
-          "en": "I sometimes go to the cinema.",
-          "options": ["ቀን", "ጊዜ", "ሰዓት", "ሳምንት"],
-          "answer": "ጊዜ",
-          "why": "Sometimes: አንዳንድ ጊዜ."
-        },
-        {
-          "q": "መድኃኒቱን በቀን ሶስት ＿ ውሰድ።",
-          "en": "Take the medicine three times a day.",
-          "options": ["ሰዓት", "ቀን", "ጊዜ", "ወር"],
-          "answer": "ጊዜ",
-          "why": "Times: ጊዜ."
-        },
-        {
-          "q": "እሷ በጭራሽ ＿።",
-          "en": "She's never late.",
-          "options": ["ትዘገያለች", "ዘገየች", "ትዘገይ ነበር", "አትዘገይም"],
-          "answer": "አትዘገይም",
-          "why": "Never: በጭራሽ + negative."
-        }
-      ]
-    },
-    {
       "id": "every",
       "title": "All, every, each: ሁሉ, በየ-",
       "particle": "ሁሉም በየ- እያንዳንዱ",
@@ -3634,64 +3634,6 @@
       ]
     },
     {
-      "id": "malefactive",
-      "title": "It happened to me: -ብኝ",
-      "particle": "-ብኝ",
-      "summary": "-ብኝ on a verb shows something happened against you or at your cost: ቁልፌ ጠፋብኝ, I lost my key (it got lost on me). (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "<b>ጠፋብኝ</b> I lost (it), <b>ተሰበረብኝ</b> (it) broke on me, <b>ተበላሸብኝ</b> (it) broke down on me. For others: <b>-ብህ</b> (you, m), <b>-በት</b> (him).",
-          "examples": [
-            ["ቁልፌ {ጠፋብኝ}።", "Qulfe tefabign.", "I've lost my key."],
-            [
-              "ስልኬ {ተሰበረብኝ}።",
-              "Silke tesebberebign.",
-              "My phone broke (on me)."
-            ]
-          ]
-        },
-        {
-          "h": "To someone else",
-          "p": "<b>መኪናው ተበላሸበት</b> his car broke down on him. <b>ምን ሆነብህ?</b> what happened to you? (m)",
-          "examples": [
-            ["መኪናው {ተበላሸበት}።", "Mekinaw tebelashebet.", "His car broke down."],
-            ["ምን {ሆነብህ}?", "Min honebih?", "What happened to you? (to a man)"]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ቁልፌ ＿።",
-          "en": "I've lost my key.",
-          "options": ["ጠፋብኝ", "ጠፋ", "አጠፋሁ", "ጠፋልኝ"],
-          "answer": "ጠፋብኝ",
-          "why": "Against me: -ብኝ."
-        },
-        {
-          "q": "ስልኬ ＿።",
-          "en": "My phone broke on me.",
-          "options": ["ሰበርኩ", "ተሰበረብኝ", "ተሰበረልኝ", "ይሰበራል"],
-          "answer": "ተሰበረብኝ",
-          "why": "Against me: -ብኝ."
-        },
-        {
-          "q": "መኪናው ＿።",
-          "en": "His car broke down.",
-          "options": ["ተበላሸብኝ", "አበላሸ", "ተበላሸበት", "ተበላሸለት"],
-          "answer": "ተበላሸበት",
-          "why": "Against him: -በት."
-        },
-        {
-          "q": "ምን ＿?",
-          "en": "What happened to you? (to a man)",
-          "options": ["ሆንክ ለኔ", "ሆነልህ", "ሆነብኝ", "ሆነብህ"],
-          "answer": "ሆነብህ",
-          "why": "To you: -ብህ."
-        }
-      ]
-    },
-    {
       "id": "become",
       "title": "Become, will be: ሆነ, እሆናለሁ",
       "particle": "ሆነ እሆናለሁ መሆን",
@@ -3754,6 +3696,262 @@
           "options": ["ነው", "ነበር", "አለ", "ሆነ"],
           "answer": "ሆነ",
           "why": "Became: ሆነ."
+        }
+      ]
+    },
+    {
+      "id": "like-as",
+      "title": "Like, as: እንደ",
+      "particle": "እንደ ልክ እንደ እንዳልኩት",
+      "summary": "እንደ before a noun means \"like, as\": እንደ አባቱ, like his father. ልክ እንደ means \"just like\"; እንዳልኩት means \"as I said\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>እንደ</b> + noun: <b>እንደ አባቱ ረጅም ነው</b> he's tall like his father. <b>እንደ ተማሪ</b> as a student.",
+          "examples": [
+            [
+              "{እንደ} አባቱ ረጅም ነው።",
+              "Inde abbatu rejjim new.",
+              "He's tall like his father."
+            ],
+            [
+              "{ልክ እንደ} እናቷ ትመስላለች።",
+              "Lik inde innatwa timeslalech.",
+              "She looks just like her mother."
+            ]
+          ]
+        },
+        {
+          "h": "As I said",
+          "p": "<b>እንደ-</b> + verb with <b>-ት</b>: <b>እንዳልኩት</b> as I said, <b>እንደምታውቀው</b> as you know (m).",
+          "examples": [
+            [
+              "{እንዳልኩት} ነገ አልመጣም።",
+              "Indalkut nege almetam.",
+              "As I said, I'm not coming tomorrow."
+            ],
+            [
+              "{እንደምታውቀው} ሥራ በዝቶብኛል።",
+              "Indemitawqew sira beztobignal.",
+              "As you know, I'm very busy. (to a man)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ አባቱ ረጅም ነው።",
+          "en": "He's tall like his father.",
+          "options": ["እንደ", "እንዲ", "ስለ", "ከ"],
+          "answer": "እንደ",
+          "why": "Like: እንደ."
+        },
+        {
+          "q": "ልክ እንደ እናቷ ＿።",
+          "en": "She looks just like her mother.",
+          "options": ["ትመስላለህ", "ትመስላለች", "መሰለ", "ይመስላል"],
+          "answer": "ትመስላለች",
+          "why": "She resembles: ትመስላለች."
+        },
+        {
+          "q": "＿ ነገ አልመጣም።",
+          "en": "As I said, I'm not coming tomorrow.",
+          "options": ["አልኩ", "እላለሁ", "እንዳልኩት", "ስል"],
+          "answer": "እንዳልኩት",
+          "why": "As I said: እንዳልኩት."
+        },
+        {
+          "q": "＿ ሥራ በዝቶብኛል።",
+          "en": "As you know, I'm busy. (to a man)",
+          "options": ["ታውቃለህ", "ስታውቅ", "ብታውቅ", "እንደምታውቀው"],
+          "answer": "እንደምታውቀው",
+          "why": "As you know: እንደምታውቀው."
+        }
+      ]
+    },
+    {
+      "id": "greetings",
+      "title": "Greetings for him, her and everyone",
+      "particle": "እንደምን አደርክ ደህና ሁን",
+      "summary": "Greetings change with who you speak to: እንደምን አደርክ? (good morning, to a man), አደርሽ (to a woman), አደራችሁ (to several). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Morning: <b>እንደምን አደርክ / አደርሽ / አደራችሁ?</b> Day: <b>እንደምን ዋልክ / ዋልሽ?</b> how was your day? Polite: <b>እንደምን አደሩ?</b>",
+          "examples": [
+            [
+              "{እንደምን አደርሽ}?",
+              "Indemin addersh?",
+              "Good morning. (to a woman)"
+            ],
+            [
+              "{እንደምን ዋላችሁ}?",
+              "Indemin walachihu?",
+              "Good afternoon. (to several people)"
+            ]
+          ]
+        },
+        {
+          "h": "Goodbye",
+          "p": "<b>ደህና ሁን</b> goodbye (to a man), <b>ደህና ሁኚ</b> (to a woman), <b>ደህና ሁኑ</b> (to several). <b>ቻው</b> bye (informal).",
+          "examples": [
+            ["{ደህና ሁን}!", "Dehna hun!", "Goodbye! (to a man)"],
+            ["{ደህና ሁኑ}!", "Dehna hunu!", "Goodbye! (to several people)"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "እንደምን ＿?",
+          "en": "Good morning. (to a woman)",
+          "options": ["አደርሽ", "አደርክ", "አደራችሁ", "ዋልክ"],
+          "answer": "አደርሽ",
+          "why": "To a woman: -ሽ."
+        },
+        {
+          "q": "እንደምን ＿?",
+          "en": "Good afternoon. (to several people)",
+          "options": ["ዋልክ", "ዋላችሁ", "ዋልሽ", "አደርክ"],
+          "answer": "ዋላችሁ",
+          "why": "To several: -ኣችሁ."
+        },
+        {
+          "q": "ደህና ＿!",
+          "en": "Goodbye! (to a man)",
+          "options": ["ሁኚ", "ሁኑ", "ሁን", "ነህ"],
+          "answer": "ሁን",
+          "why": "To a man: ሁን."
+        },
+        {
+          "q": "ደህና ＿!",
+          "en": "Goodbye! (to several people)",
+          "options": ["ሁን", "ሁኚ", "ናቸው", "ሁኑ"],
+          "answer": "ሁኑ",
+          "why": "To several: ሁኑ."
+        }
+      ]
+    },
+    {
+      "id": "tag-questions",
+      "title": "Isn't it? አይደል, እንዴ",
+      "particle": "አይደል እንዴ",
+      "summary": "አይደል? at the end asks for agreement, like \"isn't it?\"; እንዴ? after a verb shows surprise or checks a guess: አላወቅክም እንዴ? Didn't you know? (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>አይደል?</b> (aydel) after a statement: <b>ቆንጆ ነው፣ አይደል?</b> it's nice, isn't it? <b>ነገ ትመጣለህ፣ አይደል?</b> you're coming tomorrow, right? (m)",
+          "examples": [
+            ["ቆንጆ ነው፣ {አይደል}?", "Konjo new, aydel?", "It's nice, isn't it?"],
+            [
+              "ነገ ትመጣለህ፣ {አይደል}?",
+              "Nege timetalleh, aydel?",
+              "You're coming tomorrow, right? (to a man)"
+            ]
+          ]
+        },
+        {
+          "h": "Surprise and guesses: እንዴ",
+          "p": "<b>እንዴ?</b> at the end: <b>አላወቅክም እንዴ?</b> didn't you know? <b>ደክሞሻል እንዴ?</b> are you tired, then? (f)",
+          "examples": [
+            [
+              "አላወቅክም {እንዴ}?",
+              "Alawekkim inde?",
+              "Didn't you know? (to a man)"
+            ],
+            [
+              "ደክሞሻል {እንዴ}?",
+              "Dekmoshal inde?",
+              "Are you tired, then? (to a woman)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ቆንጆ ነው፣ ＿?",
+          "en": "It's nice, isn't it?",
+          "options": ["አይደል", "እንዴ", "እኮ", "ወይስ"],
+          "answer": "አይደል",
+          "why": "Isn't it: አይደል."
+        },
+        {
+          "q": "ነገ ትመጣለህ፣ ＿?",
+          "en": "You're coming tomorrow, right?",
+          "options": ["አይደለም", "አይደል", "የለም", "እስኪ"],
+          "answer": "አይደል",
+          "why": "Right?: አይደል."
+        },
+        {
+          "q": "አላወቅክም ＿?",
+          "en": "Didn't you know?",
+          "options": ["አይደል", "እኮ", "እንዴ", "ግን"],
+          "answer": "እንዴ",
+          "why": "Surprise: እንዴ."
+        },
+        {
+          "q": "ደክሞሻል ＿?",
+          "en": "Are you tired, then? (to a woman)",
+          "options": ["እስኪ", "እኮ", "-ስ", "እንዴ"],
+          "answer": "እንዴ",
+          "why": "Checking: እንዴ."
+        }
+      ]
+    },
+    {
+      "id": "malefactive",
+      "title": "It happened to me: -ብኝ",
+      "particle": "-ብኝ",
+      "summary": "-ብኝ on a verb shows something happened against you or at your cost: ቁልፌ ጠፋብኝ, I lost my key (it got lost on me). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>ጠፋብኝ</b> I lost (it), <b>ተሰበረብኝ</b> (it) broke on me, <b>ተበላሸብኝ</b> (it) broke down on me. For others: <b>-ብህ</b> (you, m), <b>-በት</b> (him).",
+          "examples": [
+            ["ቁልፌ {ጠፋብኝ}።", "Qulfe tefabign.", "I've lost my key."],
+            [
+              "ስልኬ {ተሰበረብኝ}።",
+              "Silke tesebberebign.",
+              "My phone broke (on me)."
+            ]
+          ]
+        },
+        {
+          "h": "To someone else",
+          "p": "<b>መኪናው ተበላሸበት</b> his car broke down on him. <b>ምን ሆነብህ?</b> what happened to you? (m)",
+          "examples": [
+            ["መኪናው {ተበላሸበት}።", "Mekinaw tebelashebet.", "His car broke down."],
+            ["ምን {ሆነብህ}?", "Min honebih?", "What happened to you? (to a man)"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ቁልፌ ＿።",
+          "en": "I've lost my key.",
+          "options": ["ጠፋብኝ", "ጠፋ", "አጠፋሁ", "ጠፋልኝ"],
+          "answer": "ጠፋብኝ",
+          "why": "Against me: -ብኝ."
+        },
+        {
+          "q": "ስልኬ ＿።",
+          "en": "My phone broke on me.",
+          "options": ["ሰበርኩ", "ተሰበረብኝ", "ተሰበረልኝ", "ይሰበራል"],
+          "answer": "ተሰበረብኝ",
+          "why": "Against me: -ብኝ."
+        },
+        {
+          "q": "መኪናው ＿።",
+          "en": "His car broke down.",
+          "options": ["ተበላሸብኝ", "አበላሸ", "ተበላሸበት", "ተበላሸለት"],
+          "answer": "ተበላሸበት",
+          "why": "Against him: -በት."
+        },
+        {
+          "q": "ምን ＿?",
+          "en": "What happened to you? (to a man)",
+          "options": ["ሆንክ ለኔ", "ሆነልህ", "ሆነብኝ", "ሆነብህ"],
+          "answer": "ሆነብህ",
+          "why": "To you: -ብህ."
         }
       ]
     },
@@ -4030,76 +4228,6 @@
       ]
     },
     {
-      "id": "like-as",
-      "title": "Like, as: እንደ",
-      "particle": "እንደ ልክ እንደ እንዳልኩት",
-      "summary": "እንደ before a noun means \"like, as\": እንደ አባቱ, like his father. ልክ እንደ means \"just like\"; እንዳልኩት means \"as I said\". (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "<b>እንደ</b> + noun: <b>እንደ አባቱ ረጅም ነው</b> he's tall like his father. <b>እንደ ተማሪ</b> as a student.",
-          "examples": [
-            [
-              "{እንደ} አባቱ ረጅም ነው።",
-              "Inde abbatu rejjim new.",
-              "He's tall like his father."
-            ],
-            [
-              "{ልክ እንደ} እናቷ ትመስላለች።",
-              "Lik inde innatwa timeslalech.",
-              "She looks just like her mother."
-            ]
-          ]
-        },
-        {
-          "h": "As I said",
-          "p": "<b>እንደ-</b> + verb with <b>-ት</b>: <b>እንዳልኩት</b> as I said, <b>እንደምታውቀው</b> as you know (m).",
-          "examples": [
-            [
-              "{እንዳልኩት} ነገ አልመጣም።",
-              "Indalkut nege almetam.",
-              "As I said, I'm not coming tomorrow."
-            ],
-            [
-              "{እንደምታውቀው} ሥራ በዝቶብኛል።",
-              "Indemitawqew sira beztobignal.",
-              "As you know, I'm very busy. (to a man)"
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ አባቱ ረጅም ነው።",
-          "en": "He's tall like his father.",
-          "options": ["እንደ", "እንዲ", "ስለ", "ከ"],
-          "answer": "እንደ",
-          "why": "Like: እንደ."
-        },
-        {
-          "q": "ልክ እንደ እናቷ ＿።",
-          "en": "She looks just like her mother.",
-          "options": ["ትመስላለህ", "ትመስላለች", "መሰለ", "ይመስላል"],
-          "answer": "ትመስላለች",
-          "why": "She resembles: ትመስላለች."
-        },
-        {
-          "q": "＿ ነገ አልመጣም።",
-          "en": "As I said, I'm not coming tomorrow.",
-          "options": ["አልኩ", "እላለሁ", "እንዳልኩት", "ስል"],
-          "answer": "እንዳልኩት",
-          "why": "As I said: እንዳልኩት."
-        },
-        {
-          "q": "＿ ሥራ በዝቶብኛል።",
-          "en": "As you know, I'm busy. (to a man)",
-          "options": ["ታውቃለህ", "ስታውቅ", "ብታውቅ", "እንደምታውቀው"],
-          "answer": "እንደምታውቀው",
-          "why": "As you know: እንደምታውቀው."
-        }
-      ]
-    },
-    {
       "id": "while",
       "title": "While doing: እየ-",
       "particle": "እየ-",
@@ -4286,68 +4414,6 @@
           "options": ["እስኪ", "እኮ", "ም", "እንዴ"],
           "answer": "እንዴ",
           "why": "Surprise: እንዴ."
-        }
-      ]
-    },
-    {
-      "id": "greetings",
-      "title": "Greetings for him, her and everyone",
-      "particle": "እንደምን አደርክ ደህና ሁን",
-      "summary": "Greetings change with who you speak to: እንደምን አደርክ? (good morning, to a man), አደርሽ (to a woman), አደራችሁ (to several). (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "Morning: <b>እንደምን አደርክ / አደርሽ / አደራችሁ?</b> Day: <b>እንደምን ዋልክ / ዋልሽ?</b> how was your day? Polite: <b>እንደምን አደሩ?</b>",
-          "examples": [
-            [
-              "{እንደምን አደርሽ}?",
-              "Indemin addersh?",
-              "Good morning. (to a woman)"
-            ],
-            [
-              "{እንደምን ዋላችሁ}?",
-              "Indemin walachihu?",
-              "Good afternoon. (to several people)"
-            ]
-          ]
-        },
-        {
-          "h": "Goodbye",
-          "p": "<b>ደህና ሁን</b> goodbye (to a man), <b>ደህና ሁኚ</b> (to a woman), <b>ደህና ሁኑ</b> (to several). <b>ቻው</b> bye (informal).",
-          "examples": [
-            ["{ደህና ሁን}!", "Dehna hun!", "Goodbye! (to a man)"],
-            ["{ደህና ሁኑ}!", "Dehna hunu!", "Goodbye! (to several people)"]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "እንደምን ＿?",
-          "en": "Good morning. (to a woman)",
-          "options": ["አደርሽ", "አደርክ", "አደራችሁ", "ዋልክ"],
-          "answer": "አደርሽ",
-          "why": "To a woman: -ሽ."
-        },
-        {
-          "q": "እንደምን ＿?",
-          "en": "Good afternoon. (to several people)",
-          "options": ["ዋልክ", "ዋላችሁ", "ዋልሽ", "አደርክ"],
-          "answer": "ዋላችሁ",
-          "why": "To several: -ኣችሁ."
-        },
-        {
-          "q": "ደህና ＿!",
-          "en": "Goodbye! (to a man)",
-          "options": ["ሁኚ", "ሁኑ", "ሁን", "ነህ"],
-          "answer": "ሁን",
-          "why": "To a man: ሁን."
-        },
-        {
-          "q": "ደህና ＿!",
-          "en": "Goodbye! (to several people)",
-          "options": ["ሁን", "ሁኚ", "ናቸው", "ሁኑ"],
-          "answer": "ሁኑ",
-          "why": "To several: ሁኑ."
         }
       ]
     },
@@ -4674,72 +4740,6 @@
           "options": ["ይሁን እንጂ", "ምነው", "እስኪ", "በአጠቃላይ"],
           "answer": "በአጠቃላይ",
           "why": "In general: በአጠቃላይ."
-        }
-      ]
-    },
-    {
-      "id": "tag-questions",
-      "title": "Isn't it? አይደል, እንዴ",
-      "particle": "አይደል እንዴ",
-      "summary": "አይደል? at the end asks for agreement, like \"isn't it?\"; እንዴ? after a verb shows surprise or checks a guess: አላወቅክም እንዴ? Didn't you know? (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "<b>አይደል?</b> (aydel) after a statement: <b>ቆንጆ ነው፣ አይደል?</b> it's nice, isn't it? <b>ነገ ትመጣለህ፣ አይደል?</b> you're coming tomorrow, right? (m)",
-          "examples": [
-            ["ቆንጆ ነው፣ {አይደል}?", "Konjo new, aydel?", "It's nice, isn't it?"],
-            [
-              "ነገ ትመጣለህ፣ {አይደል}?",
-              "Nege timetalleh, aydel?",
-              "You're coming tomorrow, right? (to a man)"
-            ]
-          ]
-        },
-        {
-          "h": "Surprise and guesses: እንዴ",
-          "p": "<b>እንዴ?</b> at the end: <b>አላወቅክም እንዴ?</b> didn't you know? <b>ደክሞሻል እንዴ?</b> are you tired, then? (f)",
-          "examples": [
-            [
-              "አላወቅክም {እንዴ}?",
-              "Alawekkim inde?",
-              "Didn't you know? (to a man)"
-            ],
-            [
-              "ደክሞሻል {እንዴ}?",
-              "Dekmoshal inde?",
-              "Are you tired, then? (to a woman)"
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ቆንጆ ነው፣ ＿?",
-          "en": "It's nice, isn't it?",
-          "options": ["አይደል", "እንዴ", "እኮ", "ወይስ"],
-          "answer": "አይደል",
-          "why": "Isn't it: አይደል."
-        },
-        {
-          "q": "ነገ ትመጣለህ፣ ＿?",
-          "en": "You're coming tomorrow, right?",
-          "options": ["አይደለም", "አይደል", "የለም", "እስኪ"],
-          "answer": "አይደል",
-          "why": "Right?: አይደል."
-        },
-        {
-          "q": "አላወቅክም ＿?",
-          "en": "Didn't you know?",
-          "options": ["አይደል", "እኮ", "እንዴ", "ግን"],
-          "answer": "እንዴ",
-          "why": "Surprise: እንዴ."
-        },
-        {
-          "q": "ደክሞሻል ＿?",
-          "en": "Are you tired, then? (to a woman)",
-          "options": ["እስኪ", "እኮ", "-ስ", "እንዴ"],
-          "answer": "እንዴ",
-          "why": "Checking: እንዴ."
         }
       ]
     }

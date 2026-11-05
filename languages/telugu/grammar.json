@@ -7,7 +7,7 @@
     "Drills are { q, en, options, answer, why }; ＿ is the blank.",
     "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
     "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
-    "72 lessons, from A1 to C1. Lessons 7–72 were added to cover the rest of the beginner path and the main intermediate and advanced points."
+    "72 lessons, from A1 to C1. 66 lessons were added to cover the rest of the beginner path and the main intermediate and advanced points."
   ],
   "title": "Telugu first grammar",
   "intro": "Telugu is a Dravidian language in which nearly every native word ends in a vowel, which gives it a flowing sound. The verb comes last and its ending says who did it; postpositions and case endings join the end of the noun. The 72 lessons run from A1 to C1. They start with sentences without “is”, the present tense, కాదు and లేదు, questions and case endings, then add the past and future, must and can, the relative participle and అని for reported speech, and end with causatives, probability and the connectors of written Telugu. The transliteration is simplified: a long vowel is doubled (aa, ii, uu).",
@@ -785,79 +785,6 @@
       ]
     },
     {
-      "id": "honorifics",
-      "title": "Respect: మీరు, ఆయన, -గారు",
-      "particle": "నువ్వు・మీరు・వాడు・అతను・ఆయన",
-      "summary": "Telugu ranks \"you\" and \"he/she\" by respect. మీరు, ఆయన and ఆవిడ (with -రు verb endings) are polite; నువ్వు, వాడు, అది are for close friends, children and juniors. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "You: <b>నువ్వు</b> (intimate) vs <b>మీరు</b> (polite). He: <b>వాడు</b> (familiar), <b>అతను</b> (neutral), <b>ఆయన</b> (respectful). She: <b>అది</b> (familiar), <b>ఆమె</b> (neutral), <b>ఆవిడ</b> (respectful). Polite verbs end in -రు: ఆయన <b>వచ్చారు</b>.",
-          "examples": [
-            [
-              "{మీరు} ఎలా ఉన్నారు?",
-              "Miiru elaa unnaaru?",
-              "How are you? (polite)"
-            ],
-            [
-              "{ఆయన} వచ్చారు.",
-              "Aayana vachchaaru.",
-              "He (respected) has come."
-            ]
-          ]
-        },
-        {
-          "h": "-గారు",
-          "p": "<b>-గారు</b> after a name or title shows respect: రావు<b>గారు</b>, అమ్మ<b>గారు</b>, డాక్టర్<b>గారు</b>. Polite imperatives end in <b>-ండి</b>: రా<b>ండి</b>, కూర్చో<b>ండి</b>.",
-          "examples": [
-            [
-              "{రావుగారు} ఇంట్లో ఉన్నారా?",
-              "Raavugaaru intlo unnaaraa?",
-              "Is Mr Rao at home?"
-            ],
-            ["{కూర్చోండి}.", "Kuurchondi.", "Please sit down."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ ఎక్కడికి వెళ్తున్నావు?",
-          "en": "Where are you going? (to a friend)",
-          "options": ["నువ్వు", "మీరు", "ఆయన", "నేను"],
-          "answer": "నువ్వు",
-          "why": "Intimate: నువ్వు."
-        },
-        {
-          "q": "తాతయ్య ＿.",
-          "en": "Grandpa has come.",
-          "options": ["వచ్చాడు", "వచ్చారు", "వచ్చింది", "వచ్చాను"],
-          "answer": "వచ్చారు",
-          "why": "Respect: -రు."
-        },
-        {
-          "q": "＿, మీ పేరు ఏమిటి?",
-          "en": "Sir, what's your name?",
-          "options": ["రా", "ఒరేయ్", "అండీ", "ఏయ్"],
-          "answer": "అండీ",
-          "why": "Polite address: అండీ."
-        },
-        {
-          "q": "డాక్టర్＿ ఉన్నారా?",
-          "en": "Is the doctor in?",
-          "options": ["గా", "కి", "లో", "గారు"],
-          "answer": "గారు",
-          "why": "Respect: -గారు."
-        },
-        {
-          "q": "దయచేసి లోపలికి ＿.",
-          "en": "Please come in.",
-          "options": ["రండి", "రా", "వచ్చాడు", "వస్తాను"],
-          "answer": "రండి",
-          "why": "Polite imperative: -ండి."
-        }
-      ]
-    },
-    {
       "id": "past",
       "title": "The past: వచ్చాను, చేశాను",
       "particle": "-ఆను・-ఆవు・-ఆడు・-ింది・-ఆరు",
@@ -1012,6 +939,148 @@
       ]
     },
     {
+      "id": "genitive",
+      "title": "Of: నా, మీ, -యొక్క",
+      "particle": "నా・మీ・అతని・ఆమె・-యొక్క",
+      "summary": "Pronouns have possessive forms: నా (my), మీ (your), అతని (his), ఆమె (her). Nouns often just stand before the other noun: రవి పుస్తకం (Ravi's book). (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>నా</b>, <b>నీ</b>, <b>మీ</b>, <b>మా</b> (our, not you), <b>మన</b> (our, including you), <b>అతని</b>, <b>ఆమె</b>, <b>వాళ్ళ</b>. Nouns: రవి <b>పుస్తకం</b>, or formal <b>రవి యొక్క</b> పుస్తకం.",
+          "examples": [
+            [
+              "ఇది {రవి} సైకిల్.",
+              "Idi Ravi saikil.",
+              "This is Ravi's bicycle."
+            ],
+            [
+              "{ఆయన} భార్య డాక్టర్.",
+              "Aayana bhaarya daaktar.",
+              "His wife is a doctor."
+            ]
+          ]
+        },
+        {
+          "h": "Whose",
+          "p": "<b>ఎవరి</b> = whose: ఇది <b>ఎవరి</b> బ్యాగ్? Standalone \"mine\": <b>నాది</b>, <b>మీది</b>, <b>ఎవరిది</b> (whose is it?).",
+          "examples": [
+            ["ఈ పెన్ను {ఎవరిది}?", "Ii pennu evaridi?", "Whose is this pen?"],
+            ["ఆ ఇల్లు {మాది}.", "Aa illu maadi.", "That house is ours."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ఇది ＿ ఇల్లు.",
+          "en": "This is my house.",
+          "options": ["నా", "నాకు", "నన్ను", "నేను"],
+          "answer": "నా",
+          "why": "my: నా."
+        },
+        {
+          "q": "＿ ఊరు ఏది?",
+          "en": "Which is your home town? (polite)",
+          "options": ["మీకు", "మీ", "మిమ్మల్ని", "మీరు"],
+          "answer": "మీ",
+          "why": "your: మీ."
+        },
+        {
+          "q": "ఈ కారు ＿?",
+          "en": "Whose is this car?",
+          "options": ["ఎవరికి", "ఎవరిని", "ఎవరిది", "ఎవరు"],
+          "answer": "ఎవరిది",
+          "why": "Whose (standalone): ఎవరిది."
+        },
+        {
+          "q": "ఆ పుస్తకం ＿.",
+          "en": "That book is mine.",
+          "options": ["నా", "నాకు", "నేను", "నాది"],
+          "answer": "నాది",
+          "why": "mine: నాది."
+        },
+        {
+          "q": "＿ దేశం",
+          "en": "our country (including you)",
+          "options": ["మన", "మా", "మీ", "నా"],
+          "answer": "మన",
+          "why": "inclusive our: మన."
+        }
+      ]
+    },
+    {
+      "id": "honorifics",
+      "title": "Respect: మీరు, ఆయన, -గారు",
+      "particle": "నువ్వు・మీరు・వాడు・అతను・ఆయన",
+      "summary": "Telugu ranks \"you\" and \"he/she\" by respect. మీరు, ఆయన and ఆవిడ (with -రు verb endings) are polite; నువ్వు, వాడు, అది are for close friends, children and juniors. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "You: <b>నువ్వు</b> (intimate) vs <b>మీరు</b> (polite). He: <b>వాడు</b> (familiar), <b>అతను</b> (neutral), <b>ఆయన</b> (respectful). She: <b>అది</b> (familiar), <b>ఆమె</b> (neutral), <b>ఆవిడ</b> (respectful). Polite verbs end in -రు: ఆయన <b>వచ్చారు</b>.",
+          "examples": [
+            [
+              "{మీరు} ఎలా ఉన్నారు?",
+              "Miiru elaa unnaaru?",
+              "How are you? (polite)"
+            ],
+            [
+              "{ఆయన} వచ్చారు.",
+              "Aayana vachchaaru.",
+              "He (respected) has come."
+            ]
+          ]
+        },
+        {
+          "h": "-గారు",
+          "p": "<b>-గారు</b> after a name or title shows respect: రావు<b>గారు</b>, అమ్మ<b>గారు</b>, డాక్టర్<b>గారు</b>. Polite imperatives end in <b>-ండి</b>: రా<b>ండి</b>, కూర్చో<b>ండి</b>.",
+          "examples": [
+            [
+              "{రావుగారు} ఇంట్లో ఉన్నారా?",
+              "Raavugaaru intlo unnaaraa?",
+              "Is Mr Rao at home?"
+            ],
+            ["{కూర్చోండి}.", "Kuurchondi.", "Please sit down."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ఎక్కడికి వెళ్తున్నావు?",
+          "en": "Where are you going? (to a friend)",
+          "options": ["నువ్వు", "మీరు", "ఆయన", "నేను"],
+          "answer": "నువ్వు",
+          "why": "Intimate: నువ్వు."
+        },
+        {
+          "q": "తాతయ్య ＿.",
+          "en": "Grandpa has come.",
+          "options": ["వచ్చాడు", "వచ్చారు", "వచ్చింది", "వచ్చాను"],
+          "answer": "వచ్చారు",
+          "why": "Respect: -రు."
+        },
+        {
+          "q": "＿, మీ పేరు ఏమిటి?",
+          "en": "Sir, what's your name?",
+          "options": ["రా", "ఒరేయ్", "అండీ", "ఏయ్"],
+          "answer": "అండీ",
+          "why": "Polite address: అండీ."
+        },
+        {
+          "q": "డాక్టర్＿ ఉన్నారా?",
+          "en": "Is the doctor in?",
+          "options": ["గా", "కి", "లో", "గారు"],
+          "answer": "గారు",
+          "why": "Respect: -గారు."
+        },
+        {
+          "q": "దయచేసి లోపలికి ＿.",
+          "en": "Please come in.",
+          "options": ["రండి", "రా", "వచ్చాడు", "వస్తాను"],
+          "answer": "రండి",
+          "why": "Polite imperative: -ండి."
+        }
+      ]
+    },
+    {
       "id": "accusative",
       "title": "The object: -ని, -ను",
       "particle": "-ని・-ను・నన్ను・మిమ్మల్ని",
@@ -1154,75 +1223,6 @@
           "options": ["అతనికి", "అతను", "అతన్ని", "అతనితో"],
           "answer": "అతనికి",
           "why": "Experiencer: అతనికి."
-        }
-      ]
-    },
-    {
-      "id": "genitive",
-      "title": "Of: నా, మీ, -యొక్క",
-      "particle": "నా・మీ・అతని・ఆమె・-యొక్క",
-      "summary": "Pronouns have possessive forms: నా (my), మీ (your), అతని (his), ఆమె (her). Nouns often just stand before the other noun: రవి పుస్తకం (Ravi's book). (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>నా</b>, <b>నీ</b>, <b>మీ</b>, <b>మా</b> (our, not you), <b>మన</b> (our, including you), <b>అతని</b>, <b>ఆమె</b>, <b>వాళ్ళ</b>. Nouns: రవి <b>పుస్తకం</b>, or formal <b>రవి యొక్క</b> పుస్తకం.",
-          "examples": [
-            [
-              "ఇది {రవి} సైకిల్.",
-              "Idi Ravi saikil.",
-              "This is Ravi's bicycle."
-            ],
-            [
-              "{ఆయన} భార్య డాక్టర్.",
-              "Aayana bhaarya daaktar.",
-              "His wife is a doctor."
-            ]
-          ]
-        },
-        {
-          "h": "Whose",
-          "p": "<b>ఎవరి</b> = whose: ఇది <b>ఎవరి</b> బ్యాగ్? Standalone \"mine\": <b>నాది</b>, <b>మీది</b>, <b>ఎవరిది</b> (whose is it?).",
-          "examples": [
-            ["ఈ పెన్ను {ఎవరిది}?", "Ii pennu evaridi?", "Whose is this pen?"],
-            ["ఆ ఇల్లు {మాది}.", "Aa illu maadi.", "That house is ours."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ఇది ＿ ఇల్లు.",
-          "en": "This is my house.",
-          "options": ["నా", "నాకు", "నన్ను", "నేను"],
-          "answer": "నా",
-          "why": "my: నా."
-        },
-        {
-          "q": "＿ ఊరు ఏది?",
-          "en": "Which is your home town? (polite)",
-          "options": ["మీకు", "మీ", "మిమ్మల్ని", "మీరు"],
-          "answer": "మీ",
-          "why": "your: మీ."
-        },
-        {
-          "q": "ఈ కారు ＿?",
-          "en": "Whose is this car?",
-          "options": ["ఎవరికి", "ఎవరిని", "ఎవరిది", "ఎవరు"],
-          "answer": "ఎవరిది",
-          "why": "Whose (standalone): ఎవరిది."
-        },
-        {
-          "q": "ఆ పుస్తకం ＿.",
-          "en": "That book is mine.",
-          "options": ["నా", "నాకు", "నేను", "నాది"],
-          "answer": "నాది",
-          "why": "mine: నాది."
-        },
-        {
-          "q": "＿ దేశం",
-          "en": "our country (including you)",
-          "options": ["మన", "మా", "మీ", "నా"],
-          "answer": "మన",
-          "why": "inclusive our: మన."
         }
       ]
     },
@@ -2046,6 +2046,229 @@
       ]
     },
     {
+      "id": "adverbs",
+      "title": "How: -గా (నెమ్మదిగా, బాగా)",
+      "particle": "-గా・బాగా",
+      "summary": "Adverbs are adjectives or nouns + -గా: నెమ్మదిగా (slowly), త్వరగా (quickly), శుభ్రంగా (cleanly). \"Well\" is బాగా. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>నెమ్మది</b> → <b>నెమ్మదిగా</b>, <b>త్వర</b> → <b>త్వరగా</b>, <b>గట్టి</b> → <b>గట్టిగా</b> (loudly, firmly), <b>నిశ్శబ్దం</b> → <b>నిశ్శబ్దంగా</b> (quietly). Irregular: <b>బాగా</b> (well).",
+          "examples": [
+            [
+              "{నెమ్మదిగా} మాట్లాడండి.",
+              "Nemmadigaa maatlaadandi.",
+              "Please speak slowly."
+            ],
+            [
+              "ఆమె {బాగా} పాడుతుంది.",
+              "Aame baagaa paadutundi.",
+              "She sings well."
+            ]
+          ]
+        },
+        {
+          "h": "As, become",
+          "p": "<b>-గా</b> also means \"as\": టీచర్<b>గా</b> పనిచేస్తున్నాను (I work as a teacher). With <b>మారు</b> / <b>అవు</b> = become: పెద్ద<b>గా</b> అయ్యాడు.",
+          "examples": [
+            [
+              "ఆయన డాక్టర్{గా} పనిచేస్తున్నారు.",
+              "Aayana daaktargaa panichestunnaaru.",
+              "He works as a doctor."
+            ],
+            ["{త్వరగా} రండి.", "Tvaragaa randi.", "Come quickly."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "బండిని ＿ నడపండి.",
+          "en": "Drive slowly.",
+          "options": ["నెమ్మదిగా", "నెమ్మది", "నెమ్మదైన", "నెమ్మదికి"],
+          "answer": "నెమ్మదిగా",
+          "why": "-గా adverb."
+        },
+        {
+          "q": "అతను ＿ పరిగెడతాడు.",
+          "en": "He runs fast.",
+          "options": ["వేగం", "వేగంగా", "వేగమైన", "వేగానికి"],
+          "answer": "వేగంగా",
+          "why": "-గా adverb."
+        },
+        {
+          "q": "పాప నిద్రపోతోంది, ＿ ఉండండి.",
+          "en": "The baby's asleep, be quiet.",
+          "options": ["నిశ్శబ్దం", "నిశ్శబ్దమైన", "నిశ్శబ్దంగా", "నిశ్శబ్దానికి"],
+          "answer": "నిశ్శబ్దంగా",
+          "why": "-గా adverb."
+        },
+        {
+          "q": "మీరు తెలుగు ＿ మాట్లాడతారు.",
+          "en": "You speak Telugu well.",
+          "options": ["మంచి", "మంచిది", "బాగుంది", "బాగా"],
+          "answer": "బాగా",
+          "why": "well: బాగా."
+        },
+        {
+          "q": "ఆమె టీచర్＿ పనిచేస్తుంది.",
+          "en": "She works as a teacher.",
+          "options": ["గా", "కి", "ని", "లో"],
+          "answer": "గా",
+          "why": "as: -గా."
+        }
+      ]
+    },
+    {
+      "id": "kinship-address",
+      "title": "Addressing people: అన్నయ్య, అక్క, అండీ",
+      "particle": "అన్నయ్య・అక్క・అమ్మ・-గారు",
+      "summary": "Telugu speakers address others with family words by age: అన్నయ్య (elder brother), అక్క (elder sister), తమ్ముడు, చెల్లి, and polite అండీ. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "An older man of your generation: <b>అన్నయ్య</b> / <b>అన్నా</b>. An older woman: <b>అక్క</b> / <b>అక్కా</b>. Younger: <b>తమ్ముడు</b>, <b>చెల్లి</b> / <b>చెల్లెమ్మ</b>. Elders: <b>బాబాయ్</b> (uncle), <b>అమ్మా</b> (to any older woman).",
+          "examples": [
+            [
+              "{అన్నా}, బస్ స్టాప్ ఎక్కడ?",
+              "Annaa, bas staap ekkada?",
+              "Excuse me (brother), where's the bus stop?"
+            ],
+            [
+              "{అమ్మా}, ఈ పళ్ళు ఎంత?",
+              "Ammaa, ii pallu enta?",
+              "Ma'am, how much are these fruits?"
+            ]
+          ]
+        },
+        {
+          "h": "అండీ and -గారు",
+          "p": "<b>అండీ</b> is a polite tag or address: అవును<b>అండీ</b> (yes, sir/ma'am), <b>అండీ</b>, ఒక్క నిమిషం. <b>-గారు</b> after a name or title: శర్మ<b>గారు</b>, మేడం<b>గారు</b>.",
+          "examples": [
+            ["అవును{అండీ}.", "Avunandii.", "Yes, sir / ma'am."],
+            [
+              "{శర్మగారు} ఉన్నారా?",
+              "Sharmagaaru unnaaraa?",
+              "Is Mr Sharma in?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿, ఈ బస్ గుంటూరు వెళ్తుందా?",
+          "en": "Excuse me (to an older man), does this bus go to Guntur?",
+          "options": ["అన్నా", "చెల్లి", "తమ్ముడు", "పాప"],
+          "answer": "అన్నా",
+          "why": "older man: అన్నా."
+        },
+        {
+          "q": "＿, మీ పేరు ఏమిటి?",
+          "en": "Sister (older), what's your name?",
+          "options": ["తమ్ముడు", "అక్కా", "బాబు", "అన్నా"],
+          "answer": "అక్కా",
+          "why": "older woman: అక్కా."
+        },
+        {
+          "q": "రావు＿ ఇంట్లో ఉన్నారా?",
+          "en": "Is Mr Rao at home?",
+          "options": ["గా", "కి", "గారు", "ని"],
+          "answer": "గారు",
+          "why": "Respect: -గారు."
+        },
+        {
+          "q": "అవును＿.",
+          "en": "Yes, sir.",
+          "options": ["రా", "ఏయ్", "ఒరేయ్", "అండీ"],
+          "answer": "అండీ",
+          "why": "Polite tag: అండీ."
+        },
+        {
+          "q": "＿, ఇక్కడ రా.",
+          "en": "Little brother, come here.",
+          "options": ["తమ్ముడూ", "అన్నయ్యా", "అక్కా", "అమ్మా"],
+          "answer": "తమ్ముడూ",
+          "why": "younger man: తమ్ముడు."
+        }
+      ]
+    },
+    {
+      "id": "only",
+      "title": "Only: మాత్రమే, -ఏ",
+      "particle": "మాత్రమే・-ఏ・తప్ప",
+      "summary": "మాత్రమే after a word means \"only\": నేను మాత్రమే వచ్చాను (only I came). తప్ప = except. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Word + <b>మాత్రమే</b>: నీళ్ళు <b>మాత్రమే</b> తాగాను (I drank only water). Shorter: <b>-ఏ</b>: ఒక్క రోజే (only one day). <b>తప్ప</b> + negative = nothing but, except: నీళ్ళు <b>తప్ప</b> ఏమీ లేదు.",
+          "examples": [
+            [
+              "నాకు ఒక కాఫీ {మాత్రమే}.",
+              "Naaku oka kaafii maatrame.",
+              "Just a coffee for me."
+            ],
+            [
+              "ఈరోజు {మాత్రమే} షాపు తెరిచి ఉంటుంది.",
+              "Iiroju maatrame shaapu terichi untundi.",
+              "The shop will be open only today."
+            ]
+          ]
+        },
+        {
+          "h": "Except, not only",
+          "p": "<b>తప్ప</b> = except: ఆదివారం <b>తప్ప</b> ప్రతి రోజూ. <b>మాత్రమే కాదు, … కూడా</b> = not only … but also.",
+          "examples": [
+            [
+              "ఆదివారం {తప్ప} ప్రతి రోజూ తెరిచి ఉంటుంది.",
+              "Aadivaaram tappa prati rojuu terichi untundi.",
+              "It's open every day except Sunday."
+            ],
+            [
+              "ఆమె తెలుగు {మాత్రమే కాదు}, హిందీ {కూడా} మాట్లాడుతుంది.",
+              "Aame telugu maatrame kaadu, hindii kuudaa maatlaadutundi.",
+              "She speaks not only Telugu but also Hindi."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "నాకు తెలుగు ＿ తెలుసు.",
+          "en": "I only know Telugu.",
+          "options": ["మాత్రమే", "కూడా", "తప్ప కాదు", "ఓ"],
+          "answer": "మాత్రమే",
+          "why": "only: మాత్రమే."
+        },
+        {
+          "q": "నేను ఒక్క రోజు ＿ ఉంటాను.",
+          "en": "I'll stay only one day.",
+          "options": ["అంతా", "మాత్రమే", "కూడా", "అన్ని"],
+          "answer": "మాత్రమే",
+          "why": "only: మాత్రమే."
+        },
+        {
+          "q": "ఆదివారం ＿ ప్రతి రోజూ పని చేస్తాను.",
+          "en": "I work every day except Sunday.",
+          "options": ["మాత్రమే", "కూడా", "తప్ప", "కంటే"],
+          "answer": "తప్ప",
+          "why": "except: తప్ప."
+        },
+        {
+          "q": "అతను చదువులో మాత్రమే ＿, ఆటల్లో కూడా ముందున్నాడు.",
+          "en": "He's ahead not only in studies but also in sports.",
+          "options": ["లేదు", "ఉంది", "అవును", "కాదు"],
+          "answer": "కాదు",
+          "why": "not only: మాత్రమే కాదు."
+        },
+        {
+          "q": "ఇక్కడ ఆడవాళ్ళకి ＿ అనుమతి.",
+          "en": "Only women are allowed here.",
+          "options": ["మాత్రమే", "కూడా", "తప్ప", "అందరూ"],
+          "answer": "మాత్రమే",
+          "why": "only: మాత్రమే."
+        }
+      ]
+    },
+    {
       "id": "infinitive-purpose",
       "title": "To do, in order to: -డానికి",
       "particle": "-డానికి・కోసం",
@@ -2350,83 +2573,6 @@
           "options": ["వేస్తే", "వేసి", "వేసిన", "వేయడం"],
           "answer": "వేస్తే",
           "why": "Conditional -తే."
-        }
-      ]
-    },
-    {
-      "id": "concessive",
-      "title": "Even if: -ఇనా",
-      "particle": "-ఇనా・అయినా",
-      "summary": "Past stem + -ఇనా means \"even if, although\": వర్షం పడినా వెళ్తాను (I'll go even if it rains). (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "<b>వచ్చినా</b>, <b>చెప్పినా</b>, <b>చూసినా</b>, <b>చేసినా</b>. <b>అయినా</b> alone = even so: <b>అయినా</b> నేను వెళ్తున్నాను. Formal: <b>అయినప్పటికీ</b>.",
-          "examples": [
-            [
-              "వర్షం {పడినా} నేను వెళ్తాను.",
-              "Varsham padinaa nenu veltaanu.",
-              "I'll go even if it rains."
-            ],
-            [
-              "ఎంత {చెప్పినా} అతను వినడు.",
-              "Enta cheppinaa atanu vinadu.",
-              "However much you tell him, he won't listen."
-            ]
-          ]
-        },
-        {
-          "h": "Question word + -ఇనా",
-          "p": "With question words it means \"-ever\": <b>ఎవరు వచ్చినా</b> (whoever comes), <b>ఎక్కడికి వెళ్ళినా</b> (wherever you go), <b>ఏం జరిగినా</b> (whatever happens). <b>ఏదైనా</b> = anything.",
-          "examples": [
-            [
-              "{ఏం జరిగినా} భయపడకు.",
-              "Em jariginaa bhayapadaku.",
-              "Whatever happens, don't be afraid."
-            ],
-            [
-              "అలసిపోయాను. {అయినా} పని పూర్తి చేశాను.",
-              "Alasipoyaanu. Ayinaa pani puurti cheshaanu.",
-              "I was tired. Even so, I finished the work."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ధర ఎక్కువ ＿ కొంటాను.",
-          "en": "Even if it's expensive, I'll buy it.",
-          "options": ["అయినా", "అయితే", "అయి", "అయిన"],
-          "answer": "అయినా",
-          "why": "Even if: -ఇనా."
-        },
-        {
-          "q": "＿ వచ్చినా తలుపు తెరవకు.",
-          "en": "Whoever comes, don't open the door.",
-          "options": ["ఏం", "ఎవరు", "ఎక్కడ", "ఎప్పుడు"],
-          "answer": "ఎవరు",
-          "why": "whoever: ఎవరు … -ఇనా."
-        },
-        {
-          "q": "ఎక్కడికి ＿ నాకు ఫోన్ చేయండి.",
-          "en": "Wherever you go, call me.",
-          "options": ["వెళ్తే", "వెళ్ళి", "వెళ్ళినా", "వెళ్ళడం"],
-          "answer": "వెళ్ళినా",
-          "why": "wherever: ఎక్కడికి … -ఇనా."
-        },
-        {
-          "q": "ఆకలిగా ఉంది; ＿ తినలేదు.",
-          "en": "I was hungry; even so, I didn't eat.",
-          "options": ["అయితే", "అయి", "అవ్వడం", "అయినా"],
-          "answer": "అయినా",
-          "why": "even so: అయినా."
-        },
-        {
-          "q": "అతను చదివి＿ పాస్ కాలేదు.",
-          "en": "Even though he studied, he didn't pass.",
-          "options": ["నా", "తే", "న", "తూ"],
-          "answer": "నా",
-          "why": "Although: -ఇనా."
         }
       ]
     },
@@ -3490,79 +3636,6 @@
       ]
     },
     {
-      "id": "adverbs",
-      "title": "How: -గా (నెమ్మదిగా, బాగా)",
-      "particle": "-గా・బాగా",
-      "summary": "Adverbs are adjectives or nouns + -గా: నెమ్మదిగా (slowly), త్వరగా (quickly), శుభ్రంగా (cleanly). \"Well\" is బాగా. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>నెమ్మది</b> → <b>నెమ్మదిగా</b>, <b>త్వర</b> → <b>త్వరగా</b>, <b>గట్టి</b> → <b>గట్టిగా</b> (loudly, firmly), <b>నిశ్శబ్దం</b> → <b>నిశ్శబ్దంగా</b> (quietly). Irregular: <b>బాగా</b> (well).",
-          "examples": [
-            [
-              "{నెమ్మదిగా} మాట్లాడండి.",
-              "Nemmadigaa maatlaadandi.",
-              "Please speak slowly."
-            ],
-            [
-              "ఆమె {బాగా} పాడుతుంది.",
-              "Aame baagaa paadutundi.",
-              "She sings well."
-            ]
-          ]
-        },
-        {
-          "h": "As, become",
-          "p": "<b>-గా</b> also means \"as\": టీచర్<b>గా</b> పనిచేస్తున్నాను (I work as a teacher). With <b>మారు</b> / <b>అవు</b> = become: పెద్ద<b>గా</b> అయ్యాడు.",
-          "examples": [
-            [
-              "ఆయన డాక్టర్{గా} పనిచేస్తున్నారు.",
-              "Aayana daaktargaa panichestunnaaru.",
-              "He works as a doctor."
-            ],
-            ["{త్వరగా} రండి.", "Tvaragaa randi.", "Come quickly."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "బండిని ＿ నడపండి.",
-          "en": "Drive slowly.",
-          "options": ["నెమ్మదిగా", "నెమ్మది", "నెమ్మదైన", "నెమ్మదికి"],
-          "answer": "నెమ్మదిగా",
-          "why": "-గా adverb."
-        },
-        {
-          "q": "అతను ＿ పరిగెడతాడు.",
-          "en": "He runs fast.",
-          "options": ["వేగం", "వేగంగా", "వేగమైన", "వేగానికి"],
-          "answer": "వేగంగా",
-          "why": "-గా adverb."
-        },
-        {
-          "q": "పాప నిద్రపోతోంది, ＿ ఉండండి.",
-          "en": "The baby's asleep, be quiet.",
-          "options": ["నిశ్శబ్దం", "నిశ్శబ్దమైన", "నిశ్శబ్దంగా", "నిశ్శబ్దానికి"],
-          "answer": "నిశ్శబ్దంగా",
-          "why": "-గా adverb."
-        },
-        {
-          "q": "మీరు తెలుగు ＿ మాట్లాడతారు.",
-          "en": "You speak Telugu well.",
-          "options": ["మంచి", "మంచిది", "బాగుంది", "బాగా"],
-          "answer": "బాగా",
-          "why": "well: బాగా."
-        },
-        {
-          "q": "ఆమె టీచర్＿ పనిచేస్తుంది.",
-          "en": "She works as a teacher.",
-          "options": ["గా", "కి", "ని", "లో"],
-          "answer": "గా",
-          "why": "as: -గా."
-        }
-      ]
-    },
-    {
       "id": "daggara",
       "title": "Have on you: -దగ్గర",
       "particle": "-దగ్గర ఉంది・-కి ఉన్నారు",
@@ -3701,79 +3774,6 @@
           "options": ["సంతోషం", "సంతోషమైన", "సంతోషానికి", "సంతోషించి"],
           "answer": "సంతోషం",
           "why": "-గా ఉంది."
-        }
-      ]
-    },
-    {
-      "id": "kinship-address",
-      "title": "Addressing people: అన్నయ్య, అక్క, అండీ",
-      "particle": "అన్నయ్య・అక్క・అమ్మ・-గారు",
-      "summary": "Telugu speakers address others with family words by age: అన్నయ్య (elder brother), అక్క (elder sister), తమ్ముడు, చెల్లి, and polite అండీ. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "An older man of your generation: <b>అన్నయ్య</b> / <b>అన్నా</b>. An older woman: <b>అక్క</b> / <b>అక్కా</b>. Younger: <b>తమ్ముడు</b>, <b>చెల్లి</b> / <b>చెల్లెమ్మ</b>. Elders: <b>బాబాయ్</b> (uncle), <b>అమ్మా</b> (to any older woman).",
-          "examples": [
-            [
-              "{అన్నా}, బస్ స్టాప్ ఎక్కడ?",
-              "Annaa, bas staap ekkada?",
-              "Excuse me (brother), where's the bus stop?"
-            ],
-            [
-              "{అమ్మా}, ఈ పళ్ళు ఎంత?",
-              "Ammaa, ii pallu enta?",
-              "Ma'am, how much are these fruits?"
-            ]
-          ]
-        },
-        {
-          "h": "అండీ and -గారు",
-          "p": "<b>అండీ</b> is a polite tag or address: అవును<b>అండీ</b> (yes, sir/ma'am), <b>అండీ</b>, ఒక్క నిమిషం. <b>-గారు</b> after a name or title: శర్మ<b>గారు</b>, మేడం<b>గారు</b>.",
-          "examples": [
-            ["అవును{అండీ}.", "Avunandii.", "Yes, sir / ma'am."],
-            [
-              "{శర్మగారు} ఉన్నారా?",
-              "Sharmagaaru unnaaraa?",
-              "Is Mr Sharma in?"
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿, ఈ బస్ గుంటూరు వెళ్తుందా?",
-          "en": "Excuse me (to an older man), does this bus go to Guntur?",
-          "options": ["అన్నా", "చెల్లి", "తమ్ముడు", "పాప"],
-          "answer": "అన్నా",
-          "why": "older man: అన్నా."
-        },
-        {
-          "q": "＿, మీ పేరు ఏమిటి?",
-          "en": "Sister (older), what's your name?",
-          "options": ["తమ్ముడు", "అక్కా", "బాబు", "అన్నా"],
-          "answer": "అక్కా",
-          "why": "older woman: అక్కా."
-        },
-        {
-          "q": "రావు＿ ఇంట్లో ఉన్నారా?",
-          "en": "Is Mr Rao at home?",
-          "options": ["గా", "కి", "గారు", "ని"],
-          "answer": "గారు",
-          "why": "Respect: -గారు."
-        },
-        {
-          "q": "అవును＿.",
-          "en": "Yes, sir.",
-          "options": ["రా", "ఏయ్", "ఒరేయ్", "అండీ"],
-          "answer": "అండీ",
-          "why": "Polite tag: అండీ."
-        },
-        {
-          "q": "＿, ఇక్కడ రా.",
-          "en": "Little brother, come here.",
-          "options": ["తమ్ముడూ", "అన్నయ్యా", "అక్కా", "అమ్మా"],
-          "answer": "తమ్ముడూ",
-          "why": "younger man: తమ్ముడు."
         }
       ]
     },
@@ -3997,160 +3997,6 @@
           "options": ["ఆలోచించి", "ఆలోచించడం", "ఆలోచించిన", "ఆలోచిస్తే"],
           "answer": "ఆలోచించి",
           "why": "Participle: -ఇ."
-        }
-      ]
-    },
-    {
-      "id": "causative",
-      "title": "Make someone do: -ఇంచు",
-      "particle": "-ఇంచు・-పించు",
-      "summary": "Causatives add -ఇంచు / -పించు: చేయు → చేయించు (have done), నేర్చు → నేర్పించు (teach), చూడు → చూపించు (show). (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "<b>చేయించు</b> (have something done), <b>నేర్పించు</b> (teach), <b>చూపించు</b> (show), <b>తినిపించు</b> (feed), <b>నవ్వించు</b> (make laugh), <b>ఏడిపించు</b> (make cry).",
-          "examples": [
-            [
-              "ఆమె నన్ను {నవ్వించింది}.",
-              "Aame nannu navvinchindi.",
-              "She made me laugh."
-            ],
-            [
-              "మీ టికెట్ {చూపించండి}.",
-              "Mii tiket chuupinchandi.",
-              "Show your ticket."
-            ]
-          ]
-        },
-        {
-          "h": "Having something done",
-          "p": "<b>-ఇంచు</b> also means \"get something done by someone\": ఇల్లు <b>కట్టించాను</b> (I had a house built), జుట్టు <b>కత్తిరించుకున్నాను</b> (I had my hair cut).",
-          "examples": [
-            [
-              "ఆయన తెలుగు {నేర్పిస్తారు}.",
-              "Aayana telugu nerpistaaru.",
-              "He teaches Telugu."
-            ],
-            [
-              "మేము ఇల్లు {కట్టించాము}.",
-              "Memu illu kattinchaamu.",
-              "We had a house built."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "అమ్మ పాపకి అన్నం ＿.",
-          "en": "Mum fed the baby rice.",
-          "options": ["తినిపించింది", "తిన్నది", "తినింది", "తినేసింది"],
-          "answer": "తినిపించింది",
-          "why": "Causative: తినిపించు."
-        },
-        {
-          "q": "మీ పాస్‌పోర్ట్ ＿.",
-          "en": "Show your passport.",
-          "options": ["చూడండి", "చూపించండి", "చూసుకోండి", "చూశారు"],
-          "answer": "చూపించండి",
-          "why": "show: చూపించు."
-        },
-        {
-          "q": "టీచర్ మాకు లెక్కలు ＿.",
-          "en": "The teacher teaches us maths.",
-          "options": ["నేర్చుకుంటారు", "చదువుతారు", "నేర్పిస్తారు", "చూస్తారు"],
-          "answer": "నేర్పిస్తారు",
-          "why": "teach: నేర్పించు."
-        },
-        {
-          "q": "ఆరు గంటలకి నన్ను ＿.",
-          "en": "Wake me at six.",
-          "options": ["లేవండి", "లేచారు", "లేస్తాను", "లేపండి"],
-          "answer": "లేపండి",
-          "why": "wake (someone): లేపు."
-        },
-        {
-          "q": "అతను అందరినీ ＿.",
-          "en": "He made everyone cry.",
-          "options": ["ఏడిపించాడు", "ఏడ్చాడు", "ఏడుస్తాడు", "ఏడవకు"],
-          "answer": "ఏడిపించాడు",
-          "why": "make cry: ఏడిపించు."
-        }
-      ]
-    },
-    {
-      "id": "passive",
-      "title": "The passive: -బడు",
-      "particle": "infinitive + బడు",
-      "summary": "Formal Telugu makes a passive with the infinitive + బడు: కట్టబడింది (was built). Speech prefers active sentences or an impersonal plural. (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "Infinitive + <b>బడు</b>: <b>కట్టబడింది</b> (was built), <b>ప్రకటించబడింది</b> (was announced), <b>ఆహ్వానించబడ్డాను</b> (I was invited). The doer takes <b>-చేత</b> / <b>-చే</b>: రాజు<b>చేత</b> కట్టబడింది.",
-          "examples": [
-            [
-              "ఈ గుడి వెయ్యి సంవత్సరాల క్రితం {కట్టబడింది}.",
-              "Ii gudi veyyi samvatsaraala kritam kattabadindi.",
-              "This temple was built a thousand years ago."
-            ],
-            [
-              "ఫలితాలు రేపు {ప్రకటించబడతాయి}.",
-              "Phalitaalu repu prakatinchabadataayi.",
-              "The results will be announced tomorrow."
-            ]
-          ]
-        },
-        {
-          "h": "In speech",
-          "p": "Speech says it actively: వాళ్ళు గుడి కట్టారు. Or uses <b>-ఇంది</b> with no doer: దొంగ <b>పట్టుబడ్డాడు</b> (the thief got caught).",
-          "examples": [
-            [
-              "దొంగ {పట్టుబడ్డాడు}.",
-              "Donga pattubaddaadu.",
-              "The thief was caught."
-            ],
-            [
-              "ఈ పుస్తకం పోతన{చే} {రాయబడింది}.",
-              "Ii pustakam Potana-che raayabadindi.",
-              "This book was written by Potana."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ఆ వంతెన 1950లో ＿.",
-          "en": "That bridge was built in 1950.",
-          "options": ["కట్టబడింది", "కట్టింది", "కడుతుంది", "కట్టాలి"],
-          "answer": "కట్టబడింది",
-          "why": "Passive past."
-        },
-        {
-          "q": "దొంగ ＿.",
-          "en": "The thief was caught.",
-          "options": ["పట్టుకున్నాడు", "పట్టుబడ్డాడు", "పడ్డాడు కాదు", "పట్టాడు"],
-          "answer": "పట్టుబడ్డాడు",
-          "why": "పట్టుబడు."
-        },
-        {
-          "q": "ఈ పాట అన్నమయ్య＿ రాయబడింది.",
-          "en": "This song was written by Annamayya.",
-          "options": ["కి", "ని", "చే", "లో"],
-          "answer": "చే",
-          "why": "Agent: -చే."
-        },
-        {
-          "q": "ఎన్నికల తేదీ ＿.",
-          "en": "The election date was announced.",
-          "options": ["ప్రకటించింది", "ప్రకటిస్తుంది", "ప్రకటించు", "ప్రకటించబడింది"],
-          "answer": "ప్రకటించబడింది",
-          "why": "Passive."
-        },
-        {
-          "q": "ఉత్తరం రేపు ＿.",
-          "en": "The letter will be sent tomorrow.",
-          "options": ["పంపబడుతుంది", "పంపబడింది", "పంపింది", "పంపు"],
-          "answer": "పంపబడుతుంది",
-          "why": "Future passive."
         }
       ]
     },
@@ -4459,79 +4305,525 @@
       ]
     },
     {
-      "id": "only",
-      "title": "Only: మాత్రమే, -ఏ",
-      "particle": "మాత్రమే・-ఏ・తప్ప",
-      "summary": "మాత్రమే after a word means \"only\": నేను మాత్రమే వచ్చాను (only I came). తప్ప = except. (about A2)",
-      "level": "beginner-intermediate",
+      "id": "about-to",
+      "title": "Going to: -బోతున్నాను",
+      "particle": "infinitive + పోతున్నాను",
+      "summary": "Infinitive + బోతున్నాను means \"I'm going to, about to\": వర్షం పడబోతోంది (it's going to rain). (about B1)",
+      "level": "intermediate",
       "sections": [
         {
-          "p": "Word + <b>మాత్రమే</b>: నీళ్ళు <b>మాత్రమే</b> తాగాను (I drank only water). Shorter: <b>-ఏ</b>: ఒక్క రోజే (only one day). <b>తప్ప</b> + negative = nothing but, except: నీళ్ళు <b>తప్ప</b> ఏమీ లేదు.",
+          "p": "<b>-బోతున్నాను</b>: నేను ఉద్యోగం మాన<b>బోతున్నాను</b> (I'm going to quit my job). Past: <b>-బోయాను</b> = I nearly / was about to: పడ<b>బోయాను</b> (I nearly fell).",
           "examples": [
             [
-              "నాకు ఒక కాఫీ {మాత్రమే}.",
-              "Naaku oka kaafii maatrame.",
-              "Just a coffee for me."
+              "వర్షం {పడబోతోంది}.",
+              "Varsham padabotondi.",
+              "It's going to rain."
             ],
             [
-              "ఈరోజు {మాత్రమే} షాపు తెరిచి ఉంటుంది.",
-              "Iiroju maatrame shaapu terichi untundi.",
-              "The shop will be open only today."
+              "నేను ఇల్లు {మారబోతున్నాను}.",
+              "Nenu illu maarabotunnaanu.",
+              "I'm going to move house."
             ]
           ]
         },
         {
-          "h": "Except, not only",
-          "p": "<b>తప్ప</b> = except: ఆదివారం <b>తప్ప</b> ప్రతి రోజూ. <b>మాత్రమే కాదు, … కూడా</b> = not only … but also.",
+          "h": "Almost",
+          "p": "<b>దాదాపు</b> = almost: <b>దాదాపు</b> పూర్తయింది. <b>-బోయి ఆగాను</b> = was about to but stopped: చెప్ప<b>బోయి</b> ఆగాను.",
           "examples": [
+            ["నేను {పడబోయాను}.", "Nenu padaboyaanu.", "I nearly fell."],
             [
-              "ఆదివారం {తప్ప} ప్రతి రోజూ తెరిచి ఉంటుంది.",
-              "Aadivaaram tappa prati rojuu terichi untundi.",
-              "It's open every day except Sunday."
-            ],
-            [
-              "ఆమె తెలుగు {మాత్రమే కాదు}, హిందీ {కూడా} మాట్లాడుతుంది.",
-              "Aame telugu maatrame kaadu, hindii kuudaa maatlaadutundi.",
-              "She speaks not only Telugu but also Hindi."
+              "పని {దాదాపు} పూర్తయింది.",
+              "Pani daadaapu puurtayindi.",
+              "The work is almost finished."
             ]
           ]
         }
       ],
       "drills": [
         {
-          "q": "నాకు తెలుగు ＿ తెలుసు.",
-          "en": "I only know Telugu.",
-          "options": ["మాత్రమే", "కూడా", "తప్ప కాదు", "ఓ"],
-          "answer": "మాత్రమే",
-          "why": "only: మాత్రమే."
+          "q": "సినిమా ＿బోతోంది.",
+          "en": "The film is about to start.",
+          "options": ["మొదలవ్వ", "మొదలై", "మొదలైన", "మొదలవడం"],
+          "answer": "మొదలవ్వ",
+          "why": "Infinitive + బోతోంది."
         },
         {
-          "q": "నేను ఒక్క రోజు ＿ ఉంటాను.",
-          "en": "I'll stay only one day.",
-          "options": ["అంతా", "మాత్రమే", "కూడా", "అన్ని"],
-          "answer": "మాత్రమే",
-          "why": "only: మాత్రమే."
+          "q": "నేను వచ్చే సంవత్సరం పెళ్ళి చేసుకో＿.",
+          "en": "I'm going to get married next year.",
+          "options": ["వస్తున్నాను", "బోతున్నాను", "ఉన్నాను", "వేస్తున్నాను"],
+          "answer": "బోతున్నాను",
+          "why": "Going to: -బోతున్నాను."
         },
         {
-          "q": "ఆదివారం ＿ ప్రతి రోజూ పని చేస్తాను.",
-          "en": "I work every day except Sunday.",
-          "options": ["మాత్రమే", "కూడా", "తప్ప", "కంటే"],
-          "answer": "తప్ప",
-          "why": "except: తప్ప."
+          "q": "పాప ＿బోయింది.",
+          "en": "The little girl nearly fell.",
+          "options": ["పడి", "పడిన", "పడ", "పడడం"],
+          "answer": "పడ",
+          "why": "Past: -బోయింది = nearly."
         },
         {
-          "q": "అతను చదువులో మాత్రమే ＿, ఆటల్లో కూడా ముందున్నాడు.",
-          "en": "He's ahead not only in studies but also in sports.",
-          "options": ["లేదు", "ఉంది", "అవును", "కాదు"],
+          "q": "＿ యాభై మంది వచ్చారు.",
+          "en": "Almost fifty people came.",
+          "options": ["మాత్రమే", "చాలా", "అందరూ", "దాదాపు"],
+          "answer": "దాదాపు",
+          "why": "almost: దాదాపు."
+        },
+        {
+          "q": "ఆమె ఏదో ＿బోయి ఆగింది.",
+          "en": "She was about to say something but stopped.",
+          "options": ["చెప్ప", "చెప్పి", "చెప్పిన", "చెప్పడం"],
+          "answer": "చెప్ప",
+          "why": "-బోయి ఆగు."
+        }
+      ]
+    },
+    {
+      "id": "become",
+      "title": "Become: అవు",
+      "particle": "-గా అవు・అయింది・అవుతుంది",
+      "summary": "అవు means \"become, happen\". With -గా before it: డాక్టర్ అయ్యాడు (he became a doctor). అయిపోయింది = it's finished. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>అయ్యాడు</b> (he became), <b>అయింది</b> (she / it became), <b>అవుతుంది</b> (will become). <b>ఆలస్యం అయింది</b> (it got late), <b>పెళ్ళి అయింది</b> (got married).",
+          "examples": [
+            [
+              "ఆమె డాక్టర్ {అయింది}.",
+              "Aame daaktar ayindi.",
+              "She became a doctor."
+            ],
+            ["{ఆలస్యం అయింది}.", "Aalasyam ayindi.", "It's got late."]
+          ]
+        },
+        {
+          "h": "Takes, costs, what happened",
+          "p": "<b>అవుతుంది</b> = it'll take / cost: ఒక గంట <b>అవుతుంది</b>, వంద రూపాయలు <b>అవుతుంది</b>. <b>ఏమైంది?</b> = what happened? <b>అయిపోయింది</b> = it's over / used up.",
+          "examples": [
+            [
+              "చెన్నైకి ఆరు గంటలు {అవుతుంది}.",
+              "Chennaiki aaru gantalu avutundi.",
+              "It takes six hours to Chennai."
+            ],
+            ["{ఏమైంది}?", "Emaindi?", "What happened?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "అతను టీచర్ ＿.",
+          "en": "He became a teacher.",
+          "options": ["అయ్యాడు", "అయింది", "అవుతాను", "అవ్వు"],
+          "answer": "అయ్యాడు",
+          "why": "became, he: అయ్యాడు."
+        },
+        {
+          "q": "ఈ పనికి రెండు రోజులు ＿.",
+          "en": "This work will take two days.",
+          "options": ["అయింది", "అవుతుంది", "అయ్యాడు", "అవ్వకు"],
+          "answer": "అవుతుంది",
+          "why": "takes: అవుతుంది."
+        },
+        {
+          "q": "భోజనం ＿, రండి.",
+          "en": "The food is ready, come.",
+          "options": ["అవుతాను", "అయ్యాడు", "అయింది", "అవ్వదు"],
+          "answer": "అయింది",
+          "why": "done: అయింది."
+        },
+        {
+          "q": "＿? ఎందుకు ఏడుస్తున్నావు?",
+          "en": "What happened? Why are you crying?",
+          "options": ["ఏమవుతాను", "ఏం అయ్యాడు కాదు", "ఏమో", "ఏమైంది"],
+          "answer": "ఏమైంది",
+          "why": "What happened: ఏమైంది."
+        },
+        {
+          "q": "పాలు ＿.",
+          "en": "The milk has run out.",
+          "options": ["అయిపోయాయి", "అయ్యాడు", "అవుతాను", "అవ్వండి"],
+          "answer": "అయిపోయాయి",
+          "why": "used up: అయిపోయింది / -ఆయి."
+        }
+      ]
+    },
+    {
+      "id": "reported-command",
+      "title": "Told someone to: -మని చెప్పాడు",
+      "particle": "-మని・-ఒద్దని",
+      "summary": "Reported orders use the imperative + -మని: రమ్మని చెప్పాడు (he told me to come). \"Told not to\" is -ఒద్దని / -వద్దని. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-మని</b>: రా → <b>రమ్మని</b>, చేయి → <b>చేయమని</b>, వెళ్ళు → <b>వెళ్ళమని</b>. Negative: <b>రావద్దని</b> (told not to come), <b>చెప్పొద్దని</b>.",
+          "examples": [
+            [
+              "డాక్టర్ నన్ను విశ్రాంతి {తీసుకోమని} చెప్పారు.",
+              "Daaktar nannu vishraanti tiisukomani cheppaaru.",
+              "The doctor told me to rest."
+            ],
+            [
+              "ఆయన మమ్మల్ని {కూర్చోమని} చెప్పారు.",
+              "Aayana mammalni kuurchomani cheppaaru.",
+              "He told us to sit down."
+            ]
+          ]
+        },
+        {
+          "h": "Asking and telling not to",
+          "p": "<b>-మని అడిగారు</b> = asked to: సహాయం చేయ<b>మని అడిగారు</b>. <b>-వద్దని</b>: మాట్లాడ<b>వద్దని</b> చెప్పారు (he told us not to talk).",
+          "examples": [
+            [
+              "అతన్ని రేపు {రమ్మని} చెప్పండి.",
+              "Atanni repu rammani cheppandi.",
+              "Tell him to come tomorrow."
+            ],
+            [
+              "శబ్దం {చేయవద్దని} చెప్పారు.",
+              "Shabdam cheyavaddani cheppaaru.",
+              "He told us not to make noise."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "టీచర్ మమ్మల్ని రాయ＿ చెప్పారు.",
+          "en": "The teacher told us to write.",
+          "options": ["మని", "వద్దని", "అని", "తే"],
+          "answer": "మని",
+          "why": "Told to: -మని."
+        },
+        {
+          "q": "అమ్మ నన్ను షాపుకి ＿ చెప్పింది.",
+          "en": "Mum told me to go to the shop.",
+          "options": ["వెళ్ళి", "వెళ్ళమని", "వెళ్తే", "వెళ్ళిన"],
+          "answer": "వెళ్ళమని",
+          "why": "Told to: వెళ్ళమని."
+        },
+        {
+          "q": "ఆయన శబ్దం చేయ＿ చెప్పారు.",
+          "en": "He told us not to make noise.",
+          "options": ["మని", "అని", "వద్దని", "కుండా"],
+          "answer": "వద్దని",
+          "why": "told not to: -వద్దని."
+        },
+        {
+          "q": "ఆమెను లోపలికి ＿ చెప్పండి.",
+          "en": "Tell her to come in.",
+          "options": ["రావద్దని", "వచ్చి", "వస్తే", "రమ్మని"],
+          "answer": "రమ్మని",
+          "why": "Told to come: రమ్మని."
+        },
+        {
+          "q": "మేనేజర్ మమ్మల్ని త్వరగా రమ్మని ＿.",
+          "en": "The manager asked us to come early.",
+          "options": ["అడిగారు", "విన్నారు", "చూశారు", "తిన్నారు"],
+          "answer": "అడిగారు",
+          "why": "asked to: -మని అడిగారు."
+        }
+      ]
+    },
+    {
+      "id": "tag-questions",
+      "title": "Isn't it? కదా, -ఆ",
+      "particle": "-ఆ・కదా・కదూ",
+      "summary": "-ఆ makes yes/no questions; కదా at the end = isn't it?, right? (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-ఆ</b>: వస్తారా? <b>కదా</b>: ఇది మీ బ్యాగ్ <b>కదా</b>? (this is your bag, isn't it?). <b>కదూ</b> is softer, pleading: వస్తావు <b>కదూ</b>? (you'll come, won't you?).",
+          "examples": [
+            [
+              "ఇది మీ బ్యాగ్ {కదా}?",
+              "Idi mii byaag kadaa?",
+              "This is your bag, isn't it?"
+            ],
+            [
+              "నువ్వు రేపు వస్తావు {కదూ}?",
+              "Nuvvu repu vastaavu kaduu?",
+              "You'll come tomorrow, won't you?"
+            ]
+          ]
+        },
+        {
+          "h": "Answers",
+          "p": "<b>అవును</b> = yes, <b>కాదు</b> = no (identity), <b>లేదు</b> = no (existence, didn't). <b>సరే</b> = OK. <b>నిజమా?</b> = really? -ఆ on any word asks about it: మీరా? (is it you?), రేపా? (tomorrow?).",
+          "examples": [
+            [
+              "— మీరు డాక్టరా? — {అవును}.",
+              "Miiru daaktaraa? — Avunu.",
+              "\"Are you a doctor?\" \"Yes.\""
+            ],
+            ["{రేపా}?", "Repaa?", "Tomorrow?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ఆయన వస్తారు, ＿?",
+          "en": "He'll come, won't he?",
+          "options": ["కదా", "కాదు", "అవును", "సరే"],
+          "answer": "కదా",
+          "why": "Tag: కదా."
+        },
+        {
+          "q": "మీరు తెలుగువారు ＿?",
+          "en": "You're Telugu, aren't you?",
+          "options": ["అవును", "కదా", "లేదు", "సరే"],
+          "answer": "కదా",
+          "why": "Tag: కదా."
+        },
+        {
+          "q": "— టీ కావాలా? — ＿, ఇవ్వండి.",
+          "en": "\"Do you want tea?\" \"Yes, please.\"",
+          "options": ["కాదు", "కదా", "అవును", "కదూ"],
+          "answer": "అవును",
+          "why": "yes: అవును."
+        },
+        {
+          "q": "— ఇది మీ ఇల్లా? — ＿, మా అన్నయ్యది.",
+          "en": "\"Is this your house?\" \"No, it's my brother's.\"",
+          "options": ["లేదు", "అవును", "కదా", "కాదు"],
           "answer": "కాదు",
-          "why": "not only: మాత్రమే కాదు."
+          "why": "No (identity): కాదు."
         },
         {
-          "q": "ఇక్కడ ఆడవాళ్ళకి ＿ అనుమతి.",
-          "en": "Only women are allowed here.",
-          "options": ["మాత్రమే", "కూడా", "తప్ప", "అందరూ"],
-          "answer": "మాత్రమే",
-          "why": "only: మాత్రమే."
+          "q": "＿?",
+          "en": "Tomorrow?",
+          "options": ["రేపా", "రేపు", "రేపే", "రేపూ"],
+          "answer": "రేపా",
+          "why": "Question on a word: -ఆ."
+        }
+      ]
+    },
+    {
+      "id": "concessive",
+      "title": "Even if: -ఇనా",
+      "particle": "-ఇనా・అయినా",
+      "summary": "Past stem + -ఇనా means \"even if, although\": వర్షం పడినా వెళ్తాను (I'll go even if it rains). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>వచ్చినా</b>, <b>చెప్పినా</b>, <b>చూసినా</b>, <b>చేసినా</b>. <b>అయినా</b> alone = even so: <b>అయినా</b> నేను వెళ్తున్నాను. Formal: <b>అయినప్పటికీ</b>.",
+          "examples": [
+            [
+              "వర్షం {పడినా} నేను వెళ్తాను.",
+              "Varsham padinaa nenu veltaanu.",
+              "I'll go even if it rains."
+            ],
+            [
+              "ఎంత {చెప్పినా} అతను వినడు.",
+              "Enta cheppinaa atanu vinadu.",
+              "However much you tell him, he won't listen."
+            ]
+          ]
+        },
+        {
+          "h": "Question word + -ఇనా",
+          "p": "With question words it means \"-ever\": <b>ఎవరు వచ్చినా</b> (whoever comes), <b>ఎక్కడికి వెళ్ళినా</b> (wherever you go), <b>ఏం జరిగినా</b> (whatever happens). <b>ఏదైనా</b> = anything.",
+          "examples": [
+            [
+              "{ఏం జరిగినా} భయపడకు.",
+              "Em jariginaa bhayapadaku.",
+              "Whatever happens, don't be afraid."
+            ],
+            [
+              "అలసిపోయాను. {అయినా} పని పూర్తి చేశాను.",
+              "Alasipoyaanu. Ayinaa pani puurti cheshaanu.",
+              "I was tired. Even so, I finished the work."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ధర ఎక్కువ ＿ కొంటాను.",
+          "en": "Even if it's expensive, I'll buy it.",
+          "options": ["అయినా", "అయితే", "అయి", "అయిన"],
+          "answer": "అయినా",
+          "why": "Even if: -ఇనా."
+        },
+        {
+          "q": "＿ వచ్చినా తలుపు తెరవకు.",
+          "en": "Whoever comes, don't open the door.",
+          "options": ["ఏం", "ఎవరు", "ఎక్కడ", "ఎప్పుడు"],
+          "answer": "ఎవరు",
+          "why": "whoever: ఎవరు … -ఇనా."
+        },
+        {
+          "q": "ఎక్కడికి ＿ నాకు ఫోన్ చేయండి.",
+          "en": "Wherever you go, call me.",
+          "options": ["వెళ్తే", "వెళ్ళి", "వెళ్ళినా", "వెళ్ళడం"],
+          "answer": "వెళ్ళినా",
+          "why": "wherever: ఎక్కడికి … -ఇనా."
+        },
+        {
+          "q": "ఆకలిగా ఉంది; ＿ తినలేదు.",
+          "en": "I was hungry; even so, I didn't eat.",
+          "options": ["అయితే", "అయి", "అవ్వడం", "అయినా"],
+          "answer": "అయినా",
+          "why": "even so: అయినా."
+        },
+        {
+          "q": "అతను చదివి＿ పాస్ కాలేదు.",
+          "en": "Even though he studied, he didn't pass.",
+          "options": ["నా", "తే", "న", "తూ"],
+          "answer": "నా",
+          "why": "Although: -ఇనా."
+        }
+      ]
+    },
+    {
+      "id": "causative",
+      "title": "Make someone do: -ఇంచు",
+      "particle": "-ఇంచు・-పించు",
+      "summary": "Causatives add -ఇంచు / -పించు: చేయు → చేయించు (have done), నేర్చు → నేర్పించు (teach), చూడు → చూపించు (show). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>చేయించు</b> (have something done), <b>నేర్పించు</b> (teach), <b>చూపించు</b> (show), <b>తినిపించు</b> (feed), <b>నవ్వించు</b> (make laugh), <b>ఏడిపించు</b> (make cry).",
+          "examples": [
+            [
+              "ఆమె నన్ను {నవ్వించింది}.",
+              "Aame nannu navvinchindi.",
+              "She made me laugh."
+            ],
+            [
+              "మీ టికెట్ {చూపించండి}.",
+              "Mii tiket chuupinchandi.",
+              "Show your ticket."
+            ]
+          ]
+        },
+        {
+          "h": "Having something done",
+          "p": "<b>-ఇంచు</b> also means \"get something done by someone\": ఇల్లు <b>కట్టించాను</b> (I had a house built), జుట్టు <b>కత్తిరించుకున్నాను</b> (I had my hair cut).",
+          "examples": [
+            [
+              "ఆయన తెలుగు {నేర్పిస్తారు}.",
+              "Aayana telugu nerpistaaru.",
+              "He teaches Telugu."
+            ],
+            [
+              "మేము ఇల్లు {కట్టించాము}.",
+              "Memu illu kattinchaamu.",
+              "We had a house built."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "అమ్మ పాపకి అన్నం ＿.",
+          "en": "Mum fed the baby rice.",
+          "options": ["తినిపించింది", "తిన్నది", "తినింది", "తినేసింది"],
+          "answer": "తినిపించింది",
+          "why": "Causative: తినిపించు."
+        },
+        {
+          "q": "మీ పాస్‌పోర్ట్ ＿.",
+          "en": "Show your passport.",
+          "options": ["చూడండి", "చూపించండి", "చూసుకోండి", "చూశారు"],
+          "answer": "చూపించండి",
+          "why": "show: చూపించు."
+        },
+        {
+          "q": "టీచర్ మాకు లెక్కలు ＿.",
+          "en": "The teacher teaches us maths.",
+          "options": ["నేర్చుకుంటారు", "చదువుతారు", "నేర్పిస్తారు", "చూస్తారు"],
+          "answer": "నేర్పిస్తారు",
+          "why": "teach: నేర్పించు."
+        },
+        {
+          "q": "ఆరు గంటలకి నన్ను ＿.",
+          "en": "Wake me at six.",
+          "options": ["లేవండి", "లేచారు", "లేస్తాను", "లేపండి"],
+          "answer": "లేపండి",
+          "why": "wake (someone): లేపు."
+        },
+        {
+          "q": "అతను అందరినీ ＿.",
+          "en": "He made everyone cry.",
+          "options": ["ఏడిపించాడు", "ఏడ్చాడు", "ఏడుస్తాడు", "ఏడవకు"],
+          "answer": "ఏడిపించాడు",
+          "why": "make cry: ఏడిపించు."
+        }
+      ]
+    },
+    {
+      "id": "passive",
+      "title": "The passive: -బడు",
+      "particle": "infinitive + బడు",
+      "summary": "Formal Telugu makes a passive with the infinitive + బడు: కట్టబడింది (was built). Speech prefers active sentences or an impersonal plural. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Infinitive + <b>బడు</b>: <b>కట్టబడింది</b> (was built), <b>ప్రకటించబడింది</b> (was announced), <b>ఆహ్వానించబడ్డాను</b> (I was invited). The doer takes <b>-చేత</b> / <b>-చే</b>: రాజు<b>చేత</b> కట్టబడింది.",
+          "examples": [
+            [
+              "ఈ గుడి వెయ్యి సంవత్సరాల క్రితం {కట్టబడింది}.",
+              "Ii gudi veyyi samvatsaraala kritam kattabadindi.",
+              "This temple was built a thousand years ago."
+            ],
+            [
+              "ఫలితాలు రేపు {ప్రకటించబడతాయి}.",
+              "Phalitaalu repu prakatinchabadataayi.",
+              "The results will be announced tomorrow."
+            ]
+          ]
+        },
+        {
+          "h": "In speech",
+          "p": "Speech says it actively: వాళ్ళు గుడి కట్టారు. Or uses <b>-ఇంది</b> with no doer: దొంగ <b>పట్టుబడ్డాడు</b> (the thief got caught).",
+          "examples": [
+            [
+              "దొంగ {పట్టుబడ్డాడు}.",
+              "Donga pattubaddaadu.",
+              "The thief was caught."
+            ],
+            [
+              "ఈ పుస్తకం పోతన{చే} {రాయబడింది}.",
+              "Ii pustakam Potana-che raayabadindi.",
+              "This book was written by Potana."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ఆ వంతెన 1950లో ＿.",
+          "en": "That bridge was built in 1950.",
+          "options": ["కట్టబడింది", "కట్టింది", "కడుతుంది", "కట్టాలి"],
+          "answer": "కట్టబడింది",
+          "why": "Passive past."
+        },
+        {
+          "q": "దొంగ ＿.",
+          "en": "The thief was caught.",
+          "options": ["పట్టుకున్నాడు", "పట్టుబడ్డాడు", "పడ్డాడు కాదు", "పట్టాడు"],
+          "answer": "పట్టుబడ్డాడు",
+          "why": "పట్టుబడు."
+        },
+        {
+          "q": "ఈ పాట అన్నమయ్య＿ రాయబడింది.",
+          "en": "This song was written by Annamayya.",
+          "options": ["కి", "ని", "చే", "లో"],
+          "answer": "చే",
+          "why": "Agent: -చే."
+        },
+        {
+          "q": "ఎన్నికల తేదీ ＿.",
+          "en": "The election date was announced.",
+          "options": ["ప్రకటించింది", "ప్రకటిస్తుంది", "ప్రకటించు", "ప్రకటించబడింది"],
+          "answer": "ప్రకటించబడింది",
+          "why": "Passive."
+        },
+        {
+          "q": "ఉత్తరం రేపు ＿.",
+          "en": "The letter will be sent tomorrow.",
+          "options": ["పంపబడుతుంది", "పంపబడింది", "పంపింది", "పంపు"],
+          "answer": "పంపబడుతుంది",
+          "why": "Future passive."
         }
       ]
     },
@@ -4767,225 +5059,6 @@
       ]
     },
     {
-      "id": "about-to",
-      "title": "Going to: -బోతున్నాను",
-      "particle": "infinitive + పోతున్నాను",
-      "summary": "Infinitive + బోతున్నాను means \"I'm going to, about to\": వర్షం పడబోతోంది (it's going to rain). (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "<b>-బోతున్నాను</b>: నేను ఉద్యోగం మాన<b>బోతున్నాను</b> (I'm going to quit my job). Past: <b>-బోయాను</b> = I nearly / was about to: పడ<b>బోయాను</b> (I nearly fell).",
-          "examples": [
-            [
-              "వర్షం {పడబోతోంది}.",
-              "Varsham padabotondi.",
-              "It's going to rain."
-            ],
-            [
-              "నేను ఇల్లు {మారబోతున్నాను}.",
-              "Nenu illu maarabotunnaanu.",
-              "I'm going to move house."
-            ]
-          ]
-        },
-        {
-          "h": "Almost",
-          "p": "<b>దాదాపు</b> = almost: <b>దాదాపు</b> పూర్తయింది. <b>-బోయి ఆగాను</b> = was about to but stopped: చెప్ప<b>బోయి</b> ఆగాను.",
-          "examples": [
-            ["నేను {పడబోయాను}.", "Nenu padaboyaanu.", "I nearly fell."],
-            [
-              "పని {దాదాపు} పూర్తయింది.",
-              "Pani daadaapu puurtayindi.",
-              "The work is almost finished."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "సినిమా ＿బోతోంది.",
-          "en": "The film is about to start.",
-          "options": ["మొదలవ్వ", "మొదలై", "మొదలైన", "మొదలవడం"],
-          "answer": "మొదలవ్వ",
-          "why": "Infinitive + బోతోంది."
-        },
-        {
-          "q": "నేను వచ్చే సంవత్సరం పెళ్ళి చేసుకో＿.",
-          "en": "I'm going to get married next year.",
-          "options": ["వస్తున్నాను", "బోతున్నాను", "ఉన్నాను", "వేస్తున్నాను"],
-          "answer": "బోతున్నాను",
-          "why": "Going to: -బోతున్నాను."
-        },
-        {
-          "q": "పాప ＿బోయింది.",
-          "en": "The little girl nearly fell.",
-          "options": ["పడి", "పడిన", "పడ", "పడడం"],
-          "answer": "పడ",
-          "why": "Past: -బోయింది = nearly."
-        },
-        {
-          "q": "＿ యాభై మంది వచ్చారు.",
-          "en": "Almost fifty people came.",
-          "options": ["మాత్రమే", "చాలా", "అందరూ", "దాదాపు"],
-          "answer": "దాదాపు",
-          "why": "almost: దాదాపు."
-        },
-        {
-          "q": "ఆమె ఏదో ＿బోయి ఆగింది.",
-          "en": "She was about to say something but stopped.",
-          "options": ["చెప్ప", "చెప్పి", "చెప్పిన", "చెప్పడం"],
-          "answer": "చెప్ప",
-          "why": "-బోయి ఆగు."
-        }
-      ]
-    },
-    {
-      "id": "become",
-      "title": "Become: అవు",
-      "particle": "-గా అవు・అయింది・అవుతుంది",
-      "summary": "అవు means \"become, happen\". With -గా before it: డాక్టర్ అయ్యాడు (he became a doctor). అయిపోయింది = it's finished. (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "<b>అయ్యాడు</b> (he became), <b>అయింది</b> (she / it became), <b>అవుతుంది</b> (will become). <b>ఆలస్యం అయింది</b> (it got late), <b>పెళ్ళి అయింది</b> (got married).",
-          "examples": [
-            [
-              "ఆమె డాక్టర్ {అయింది}.",
-              "Aame daaktar ayindi.",
-              "She became a doctor."
-            ],
-            ["{ఆలస్యం అయింది}.", "Aalasyam ayindi.", "It's got late."]
-          ]
-        },
-        {
-          "h": "Takes, costs, what happened",
-          "p": "<b>అవుతుంది</b> = it'll take / cost: ఒక గంట <b>అవుతుంది</b>, వంద రూపాయలు <b>అవుతుంది</b>. <b>ఏమైంది?</b> = what happened? <b>అయిపోయింది</b> = it's over / used up.",
-          "examples": [
-            [
-              "చెన్నైకి ఆరు గంటలు {అవుతుంది}.",
-              "Chennaiki aaru gantalu avutundi.",
-              "It takes six hours to Chennai."
-            ],
-            ["{ఏమైంది}?", "Emaindi?", "What happened?"]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "అతను టీచర్ ＿.",
-          "en": "He became a teacher.",
-          "options": ["అయ్యాడు", "అయింది", "అవుతాను", "అవ్వు"],
-          "answer": "అయ్యాడు",
-          "why": "became, he: అయ్యాడు."
-        },
-        {
-          "q": "ఈ పనికి రెండు రోజులు ＿.",
-          "en": "This work will take two days.",
-          "options": ["అయింది", "అవుతుంది", "అయ్యాడు", "అవ్వకు"],
-          "answer": "అవుతుంది",
-          "why": "takes: అవుతుంది."
-        },
-        {
-          "q": "భోజనం ＿, రండి.",
-          "en": "The food is ready, come.",
-          "options": ["అవుతాను", "అయ్యాడు", "అయింది", "అవ్వదు"],
-          "answer": "అయింది",
-          "why": "done: అయింది."
-        },
-        {
-          "q": "＿? ఎందుకు ఏడుస్తున్నావు?",
-          "en": "What happened? Why are you crying?",
-          "options": ["ఏమవుతాను", "ఏం అయ్యాడు కాదు", "ఏమో", "ఏమైంది"],
-          "answer": "ఏమైంది",
-          "why": "What happened: ఏమైంది."
-        },
-        {
-          "q": "పాలు ＿.",
-          "en": "The milk has run out.",
-          "options": ["అయిపోయాయి", "అయ్యాడు", "అవుతాను", "అవ్వండి"],
-          "answer": "అయిపోయాయి",
-          "why": "used up: అయిపోయింది / -ఆయి."
-        }
-      ]
-    },
-    {
-      "id": "reported-command",
-      "title": "Told someone to: -మని చెప్పాడు",
-      "particle": "-మని・-ఒద్దని",
-      "summary": "Reported orders use the imperative + -మని: రమ్మని చెప్పాడు (he told me to come). \"Told not to\" is -ఒద్దని / -వద్దని. (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "<b>-మని</b>: రా → <b>రమ్మని</b>, చేయి → <b>చేయమని</b>, వెళ్ళు → <b>వెళ్ళమని</b>. Negative: <b>రావద్దని</b> (told not to come), <b>చెప్పొద్దని</b>.",
-          "examples": [
-            [
-              "డాక్టర్ నన్ను విశ్రాంతి {తీసుకోమని} చెప్పారు.",
-              "Daaktar nannu vishraanti tiisukomani cheppaaru.",
-              "The doctor told me to rest."
-            ],
-            [
-              "ఆయన మమ్మల్ని {కూర్చోమని} చెప్పారు.",
-              "Aayana mammalni kuurchomani cheppaaru.",
-              "He told us to sit down."
-            ]
-          ]
-        },
-        {
-          "h": "Asking and telling not to",
-          "p": "<b>-మని అడిగారు</b> = asked to: సహాయం చేయ<b>మని అడిగారు</b>. <b>-వద్దని</b>: మాట్లాడ<b>వద్దని</b> చెప్పారు (he told us not to talk).",
-          "examples": [
-            [
-              "అతన్ని రేపు {రమ్మని} చెప్పండి.",
-              "Atanni repu rammani cheppandi.",
-              "Tell him to come tomorrow."
-            ],
-            [
-              "శబ్దం {చేయవద్దని} చెప్పారు.",
-              "Shabdam cheyavaddani cheppaaru.",
-              "He told us not to make noise."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "టీచర్ మమ్మల్ని రాయ＿ చెప్పారు.",
-          "en": "The teacher told us to write.",
-          "options": ["మని", "వద్దని", "అని", "తే"],
-          "answer": "మని",
-          "why": "Told to: -మని."
-        },
-        {
-          "q": "అమ్మ నన్ను షాపుకి ＿ చెప్పింది.",
-          "en": "Mum told me to go to the shop.",
-          "options": ["వెళ్ళి", "వెళ్ళమని", "వెళ్తే", "వెళ్ళిన"],
-          "answer": "వెళ్ళమని",
-          "why": "Told to: వెళ్ళమని."
-        },
-        {
-          "q": "ఆయన శబ్దం చేయ＿ చెప్పారు.",
-          "en": "He told us not to make noise.",
-          "options": ["మని", "అని", "వద్దని", "కుండా"],
-          "answer": "వద్దని",
-          "why": "told not to: -వద్దని."
-        },
-        {
-          "q": "ఆమెను లోపలికి ＿ చెప్పండి.",
-          "en": "Tell her to come in.",
-          "options": ["రావద్దని", "వచ్చి", "వస్తే", "రమ్మని"],
-          "answer": "రమ్మని",
-          "why": "Told to come: రమ్మని."
-        },
-        {
-          "q": "మేనేజర్ మమ్మల్ని త్వరగా రమ్మని ＿.",
-          "en": "The manager asked us to come early.",
-          "options": ["అడిగారు", "విన్నారు", "చూశారు", "తిన్నారు"],
-          "answer": "అడిగారు",
-          "why": "asked to: -మని అడిగారు."
-        }
-      ]
-    },
-    {
       "id": "wishes",
       "title": "Wishes and blessings: వర్ధిల్లాలి, జయహో",
       "particle": "-ఆలి・శుభాకాంక్షలు",
@@ -5059,79 +5132,6 @@
           "options": ["స్వాగతం", "శుభాకాంక్షలు", "అభినందనలు", "వర్ధిల్లాలి"],
           "answer": "స్వాగతం",
           "why": "welcome: స్వాగతం."
-        }
-      ]
-    },
-    {
-      "id": "tag-questions",
-      "title": "Isn't it? కదా, -ఆ",
-      "particle": "-ఆ・కదా・కదూ",
-      "summary": "-ఆ makes yes/no questions; కదా at the end = isn't it?, right? (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "<b>-ఆ</b>: వస్తారా? <b>కదా</b>: ఇది మీ బ్యాగ్ <b>కదా</b>? (this is your bag, isn't it?). <b>కదూ</b> is softer, pleading: వస్తావు <b>కదూ</b>? (you'll come, won't you?).",
-          "examples": [
-            [
-              "ఇది మీ బ్యాగ్ {కదా}?",
-              "Idi mii byaag kadaa?",
-              "This is your bag, isn't it?"
-            ],
-            [
-              "నువ్వు రేపు వస్తావు {కదూ}?",
-              "Nuvvu repu vastaavu kaduu?",
-              "You'll come tomorrow, won't you?"
-            ]
-          ]
-        },
-        {
-          "h": "Answers",
-          "p": "<b>అవును</b> = yes, <b>కాదు</b> = no (identity), <b>లేదు</b> = no (existence, didn't). <b>సరే</b> = OK. <b>నిజమా?</b> = really? -ఆ on any word asks about it: మీరా? (is it you?), రేపా? (tomorrow?).",
-          "examples": [
-            [
-              "— మీరు డాక్టరా? — {అవును}.",
-              "Miiru daaktaraa? — Avunu.",
-              "\"Are you a doctor?\" \"Yes.\""
-            ],
-            ["{రేపా}?", "Repaa?", "Tomorrow?"]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ఆయన వస్తారు, ＿?",
-          "en": "He'll come, won't he?",
-          "options": ["కదా", "కాదు", "అవును", "సరే"],
-          "answer": "కదా",
-          "why": "Tag: కదా."
-        },
-        {
-          "q": "మీరు తెలుగువారు ＿?",
-          "en": "You're Telugu, aren't you?",
-          "options": ["అవును", "కదా", "లేదు", "సరే"],
-          "answer": "కదా",
-          "why": "Tag: కదా."
-        },
-        {
-          "q": "— టీ కావాలా? — ＿, ఇవ్వండి.",
-          "en": "\"Do you want tea?\" \"Yes, please.\"",
-          "options": ["కాదు", "కదా", "అవును", "కదూ"],
-          "answer": "అవును",
-          "why": "yes: అవును."
-        },
-        {
-          "q": "— ఇది మీ ఇల్లా? — ＿, మా అన్నయ్యది.",
-          "en": "\"Is this your house?\" \"No, it's my brother's.\"",
-          "options": ["లేదు", "అవును", "కదా", "కాదు"],
-          "answer": "కాదు",
-          "why": "No (identity): కాదు."
-        },
-        {
-          "q": "＿?",
-          "en": "Tomorrow?",
-          "options": ["రేపా", "రేపు", "రేపే", "రేపూ"],
-          "answer": "రేపా",
-          "why": "Question on a word: -ఆ."
         }
       ]
     },

@@ -15,10 +15,10 @@
     "  words, infinitive with ל־, and סמיכות (smikhut).",
     "- In-repo languages/hebrew/reference.json (et, present, pronouns, numbers) and",
     "  vocab.js — same Desk pack lemmas; unpointed spelling and Israeli transliteration",
-    "  match lessons 1–6 (ch = throaty sound in Bach; no niqqud in examples).",
+    "  match the original 6 lessons (ch = throaty sound in Bach; no niqqud in examples).",
     "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
     "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
-    "72 lessons, from A1 to C1. Lessons 13–72 were added to cover the rest of everyday and formal Modern Hebrew grammar; spelling and transliteration follow lessons 1–12 (unpointed; ch = throaty sound in Bach)."
+    "72 lessons, from A1 to C1. 60 lessons were added to cover the rest of everyday and formal Modern Hebrew grammar; spelling and transliteration follow the original 12 lessons (unpointed; ch = throaty sound in Bach)."
   ],
   "title": "Hebrew first grammar",
   "intro": "Modern Hebrew is written right to left, usually without vowel marks, and builds words from three-consonant roots. There is no “am / is / are” in the present tense, “the” is a single letter joined to the word, and nouns, adjectives and verbs all mark masculine or feminine. The 72 lessons run from A1 to C1. They start with sentences without “to be”, ה־ for “the”, gender, the present tense, יש and אין, and the past and future of כתב, then add numbers, possessive and preposition endings, “was” and “will be”, commands, comparisons, the verb patterns (pi'el, hif'il, hitpa'el, nif'al) and the weak verbs, ש־ clauses, “if”, time and purpose clauses, and end with unreal conditions, verbal nouns, the passives, formal written endings, אינני and the biblical ויאמר. Transliteration follows modern Israeli pronunciation: ch is the throaty sound in Bach.",
@@ -443,6 +443,152 @@
           "options": ["של", "שלי", "ל", "מ"],
           "answer": "של",
           "why": "של = of: “the phone of Yossi”."
+        }
+      ]
+    },
+    {
+      "id": "plurals",
+      "title": "Plurals: ־ים and ־ות",
+      "particle": "־ים・־ות",
+      "summary": "Masculine nouns usually take ־ים in the plural, feminine nouns ־ות. Adjectives follow the noun's ending. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "Masculine: <b>ספר → ספרים</b> (books), <b>תלמיד → תלמידים</b>. Feminine nouns in ־ה or ־ת swap it for <b>־ות</b>: <b>מורה → מורות</b>, <b>מחברת → מחברות</b>.",
+          "examples": [
+            [
+              "יש לי שני {ספרים}.",
+              "Yesh li shnei sfarim.",
+              "I have two books."
+            ],
+            [
+              "ה{מורות} נחמדות.",
+              "Ha-morot nechmadot.",
+              "The (women) teachers are nice."
+            ]
+          ]
+        },
+        {
+          "h": "Irregular plurals",
+          "p": "Some common words don't follow the pattern: <b>אישה → נשים</b> (women), <b>איש → אנשים</b> (people), <b>עיר → ערים</b> (cities, feminine with ־ים), <b>שולחן → שולחנות</b> (tables, masculine with ־ות). The adjective still follows the gender: שולחנות <b>גדולים</b>.",
+          "examples": [
+            [
+              "יש פה הרבה {אנשים}.",
+              "Yesh po harbe anashim.",
+              "There are a lot of people here."
+            ],
+            [
+              "{השולחנות} גדולים.",
+              "Ha-shulchanot gdolim.",
+              "The tables are big."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "אני רואה שלושה ＿.",
+          "en": "I see three boys.",
+          "options": ["ילדים", "ילדות", "ילד", "ילדה"],
+          "answer": "ילדים",
+          "why": "Masculine plural: ־ים."
+        },
+        {
+          "q": "הן ＿ טובות.",
+          "en": "They are good friends. (women)",
+          "options": ["חברים", "חברות", "חבר", "חברה"],
+          "answer": "חברות",
+          "why": "Feminine plural: ־ות."
+        },
+        {
+          "q": "כמה ＿ יש בחדר?",
+          "en": "How many women are in the room?",
+          "options": ["אישות", "אישים", "נשים", "אנשות"],
+          "answer": "נשים",
+          "why": "Irregular: אישה → נשים."
+        },
+        {
+          "q": "השולחנות ＿.",
+          "en": "The tables are new.",
+          "options": ["חדשות", "חדש", "חדשה", "חדשים"],
+          "answer": "חדשים",
+          "why": "שולחן is masculine, so the adjective takes ־ים."
+        },
+        {
+          "q": "בישראל יש הרבה ＿ יפות.",
+          "en": "Israel has many beautiful cities.",
+          "options": ["ערים", "עירים", "עירות", "ערות"],
+          "answer": "ערים",
+          "why": "Irregular: עיר → ערים (feminine)."
+        }
+      ]
+    },
+    {
+      "id": "politeness",
+      "title": "Please, thanks, sorry: בבקשה, תודה, סליחה",
+      "particle": "בבקשה・תודה・סליחה",
+      "summary": "בבקשה is both \"please\" and \"you're welcome\". תודה = thank you, סליחה = sorry or excuse me. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "<b>בבקשה</b> goes at the end or start of a request: מים, <b>בבקשה</b>. It also answers a thank-you. <b>תודה רבה</b> = thank you very much. <b>אין בעד מה</b> = don't mention it.",
+          "examples": [
+            ["קפה, {בבקשה}.", "Kafe, bevakasha.", "A coffee, please."],
+            ["{תודה רבה}!", "Toda raba!", "Thank you very much!"]
+          ]
+        },
+        {
+          "h": "Sorry and excuse me",
+          "p": "<b>סליחה</b> = excuse me, sorry. <b>אני מצטער</b> / <b>מצטערת</b> = I'm sorry (stronger, agrees with the speaker). <b>שלום</b> = hello and goodbye; <b>להתראות</b> = see you.",
+          "examples": [
+            [
+              "{סליחה}, איפה השירותים?",
+              "Slicha, eifo ha-sherutim?",
+              "Excuse me, where are the toilets?"
+            ],
+            [
+              "אני {מצטערת}, טעיתי.",
+              "Ani mitsta'eret, ta'iti.",
+              "I'm sorry, I made a mistake. (a woman)"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "— תודה! — ＿!",
+          "en": "\"Thanks!\" \"You're welcome!\"",
+          "options": ["בבקשה", "סליחה", "שלום", "להתראות"],
+          "answer": "בבקשה",
+          "why": "You're welcome: בבקשה."
+        },
+        {
+          "q": "＿, אתה יודע מה השעה?",
+          "en": "Excuse me, do you know the time?",
+          "options": ["תודה", "סליחה", "בבקשה", "להתראות"],
+          "answer": "סליחה",
+          "why": "excuse me: סליחה."
+        },
+        {
+          "q": "תודה ＿!",
+          "en": "Thank you very much!",
+          "options": ["הרבה", "גדולה", "רבה", "מאוד רב"],
+          "answer": "רבה",
+          "why": "תודה רבה."
+        },
+        {
+          "q": "אני ＿ על האיחור.",
+          "en": "I'm sorry I'm late. (a man)",
+          "options": ["מצטערת", "סליחה לי", "תודה", "מצטער"],
+          "answer": "מצטער",
+          "why": "Agrees with a man: מצטער."
+        },
+        {
+          "q": "＿, נתראה מחר!",
+          "en": "Bye, see you tomorrow!",
+          "options": ["להתראות", "בבקשה", "סליחה", "תודה"],
+          "answer": "להתראות",
+          "why": "goodbye: להתראות."
         }
       ]
     },
@@ -914,83 +1060,6 @@
       ]
     },
     {
-      "id": "plurals",
-      "title": "Plurals: ־ים and ־ות",
-      "particle": "־ים・־ות",
-      "summary": "Masculine nouns usually take ־ים in the plural, feminine nouns ־ות. Adjectives follow the noun's ending. (about A1)",
-      "level": "absolute-beginner",
-      "sections": [
-        {
-          "p": "Masculine: <b>ספר → ספרים</b> (books), <b>תלמיד → תלמידים</b>. Feminine nouns in ־ה or ־ת swap it for <b>־ות</b>: <b>מורה → מורות</b>, <b>מחברת → מחברות</b>.",
-          "examples": [
-            [
-              "יש לי שני {ספרים}.",
-              "Yesh li shnei sfarim.",
-              "I have two books."
-            ],
-            [
-              "ה{מורות} נחמדות.",
-              "Ha-morot nechmadot.",
-              "The (women) teachers are nice."
-            ]
-          ]
-        },
-        {
-          "h": "Irregular plurals",
-          "p": "Some common words don't follow the pattern: <b>אישה → נשים</b> (women), <b>איש → אנשים</b> (people), <b>עיר → ערים</b> (cities, feminine with ־ים), <b>שולחן → שולחנות</b> (tables, masculine with ־ות). The adjective still follows the gender: שולחנות <b>גדולים</b>.",
-          "examples": [
-            [
-              "יש פה הרבה {אנשים}.",
-              "Yesh po harbe anashim.",
-              "There are a lot of people here."
-            ],
-            [
-              "{השולחנות} גדולים.",
-              "Ha-shulchanot gdolim.",
-              "The tables are big."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "אני רואה שלושה ＿.",
-          "en": "I see three boys.",
-          "options": ["ילדים", "ילדות", "ילד", "ילדה"],
-          "answer": "ילדים",
-          "why": "Masculine plural: ־ים."
-        },
-        {
-          "q": "הן ＿ טובות.",
-          "en": "They are good friends. (women)",
-          "options": ["חברים", "חברות", "חבר", "חברה"],
-          "answer": "חברות",
-          "why": "Feminine plural: ־ות."
-        },
-        {
-          "q": "כמה ＿ יש בחדר?",
-          "en": "How many women are in the room?",
-          "options": ["אישות", "אישים", "נשים", "אנשות"],
-          "answer": "נשים",
-          "why": "Irregular: אישה → נשים."
-        },
-        {
-          "q": "השולחנות ＿.",
-          "en": "The tables are new.",
-          "options": ["חדשות", "חדש", "חדשה", "חדשים"],
-          "answer": "חדשים",
-          "why": "שולחן is masculine, so the adjective takes ־ים."
-        },
-        {
-          "q": "בישראל יש הרבה ＿ יפות.",
-          "en": "Israel has many beautiful cities.",
-          "options": ["ערים", "עירים", "עירות", "ערות"],
-          "answer": "ערים",
-          "why": "Irregular: עיר → ערים (feminine)."
-        }
-      ]
-    },
-    {
       "id": "numbers",
       "title": "Numbers 1–10 and the two genders",
       "particle": "אחת・שתיים・שלוש",
@@ -1271,6 +1340,221 @@
       ]
     },
     {
+      "id": "haya-past",
+      "title": "Was and were: הייתי, היה",
+      "particle": "היה・הייתה・היו",
+      "summary": "The present has no \"to be\", but the past does: הייתי, היית, היה, הייתה, היינו, הייתם, היו. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Past of <b>להיות</b>: אני <b>הייתי</b>, אתה <b>היית</b>, את <b>היית</b>, הוא <b>היה</b>, היא <b>הייתה</b>, אנחנו <b>היינו</b>, הם/הן <b>היו</b>.",
+          "examples": [
+            [
+              "{הייתי} בבית כל היום.",
+              "Hayiti ba-bayit kol ha-yom.",
+              "I was at home all day."
+            ],
+            ["הסרט {היה} טוב.", "Ha-seret haya tov.", "The film was good."]
+          ]
+        },
+        {
+          "h": "There was, there wasn't",
+          "p": "<b>יש</b> has no past of its own: <b>היה</b> / <b>הייתה</b> / <b>היו</b> agree with the thing that existed. <b>לא היה</b> = there wasn't: <b>לא היה</b> חשמל.",
+          "examples": [
+            [
+              "{היו} הרבה אנשים.",
+              "Hayu harbe anashim.",
+              "There were a lot of people."
+            ],
+            ["{לא הייתה} בעיה.", "Lo hayta be'aya.", "There was no problem."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "אתמול ＿ חם.",
+          "en": "Yesterday it was hot.",
+          "options": ["היה", "הייתה", "היו", "יהיה"],
+          "answer": "היה",
+          "why": "Impersonal: היה."
+        },
+        {
+          "q": "היא ＿ בחו\"ל.",
+          "en": "She was abroad.",
+          "options": ["היה", "הייתה", "היו", "היית"],
+          "answer": "הייתה",
+          "why": "she was: הייתה."
+        },
+        {
+          "q": "＿ בסרט?",
+          "en": "Were you at the film? (to a man)",
+          "options": ["הייתי", "היה", "היית", "היינו"],
+          "answer": "היית",
+          "why": "you (m) were: היית."
+        },
+        {
+          "q": "במסיבה ＿ הרבה ילדים.",
+          "en": "There were lots of kids at the party.",
+          "options": ["היה", "הייתה", "יהיו", "היו"],
+          "answer": "היו",
+          "why": "There were (plural): היו."
+        },
+        {
+          "q": "אנחנו ＿ עייפים.",
+          "en": "We were tired.",
+          "options": ["היינו", "היו", "הייתם", "נהיה"],
+          "answer": "היינו",
+          "why": "we were: היינו."
+        }
+      ]
+    },
+    {
+      "id": "days-dates",
+      "title": "Days, months and dates: יום ראשון, ב־5 במאי",
+      "particle": "יום ראשון・ב־・בחודש",
+      "summary": "Days of the week are numbered from Sunday: יום ראשון (first day). On a date is ב־: ב־5 במאי. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>יום ראשון</b> Sunday, <b>שני</b> Monday, <b>שלישי</b> Tuesday, <b>רביעי</b> Wednesday, <b>חמישי</b> Thursday, <b>שישי</b> Friday, <b>שבת</b> Saturday. On a day: <b>ב</b>יום שני.",
+          "examples": [
+            [
+              "נתראה {ביום} רביעי.",
+              "Nitra'e be-yom revi'i.",
+              "See you on Wednesday."
+            ],
+            [
+              "{בשבת} אנחנו בבית.",
+              "Be-shabat anachnu ba-bayit.",
+              "On Saturday we're at home."
+            ]
+          ]
+        },
+        {
+          "h": "Dates",
+          "p": "Day + <b>ב</b>month: <b>חמישה במאי</b> (5 May). Months are mostly international: ינואר, פברואר, מרץ, אפריל. Years: <b>בשנת</b> 2020. Time words: <b>היום</b>, <b>מחר</b>, <b>אתמול</b>, <b>בשבוע הבא</b>.",
+          "examples": [
+            [
+              "נולדתי {בעשרה ביוני}.",
+              "Noladti ba-asara be-yuni.",
+              "I was born on 10 June."
+            ],
+            [
+              "נטוס {בשבוע הבא}.",
+              "Natus ba-shavua ha-ba.",
+              "We'll fly next week."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "הפגישה ביום ＿.",
+          "en": "The meeting is on Thursday.",
+          "options": ["חמישי", "חמש", "חמישה", "החמישי"],
+          "answer": "חמישי",
+          "why": "Thursday = fifth day: חמישי."
+        },
+        {
+          "q": "＿ ראשון מתחיל השבוע.",
+          "en": "The week starts on Sunday.",
+          "options": ["ליום", "ביום", "מיום", "יום של"],
+          "answer": "ביום",
+          "why": "On a day: ביום."
+        },
+        {
+          "q": "היא נולדה ＿ שלושה במרץ.",
+          "en": "She was born on 3 March.",
+          "options": ["ל", "מ", "ב", "של"],
+          "answer": "ב",
+          "why": "On a date: ב־."
+        },
+        {
+          "q": "נסעתי לאילת ＿.",
+          "en": "I went to Eilat yesterday.",
+          "options": ["מחר", "בשבוע הבא", "עוד מעט", "אתמול"],
+          "answer": "אתמול",
+          "why": "yesterday: אתמול."
+        },
+        {
+          "q": "＿ הבאה נהיה בצרפת.",
+          "en": "Next year we'll be in France.",
+          "options": ["בשנה", "בשבוע", "ביום", "בחודש"],
+          "answer": "בשנה",
+          "why": "שנה is feminine: בשנה הבאה."
+        }
+      ]
+    },
+    {
+      "id": "quantities",
+      "title": "A lot, a little: הרבה, קצת, כמה",
+      "particle": "הרבה・קצת・מעט・כמה",
+      "summary": "הרבה (a lot) and קצת (a little) go before the noun and don't change. כמה = how many, and also \"a few\". (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>הרבה</b> אנשים, <b>הרבה</b> כסף. <b>קצת</b> מים, <b>קצת</b> זמן. <b>מעט</b> = few, little (more formal). <b>מאוד</b> = very, after the adjective: יפה <b>מאוד</b>.",
+          "examples": [
+            [
+              "יש {הרבה} עבודה.",
+              "Yesh harbe avoda.",
+              "There's a lot of work."
+            ],
+            [
+              "אפשר {קצת} מים?",
+              "Efshar ktsat mayim?",
+              "Could I have a little water?"
+            ]
+          ]
+        },
+        {
+          "h": "כמה",
+          "p": "<b>כמה</b>? = how much, how many: <b>כמה</b> זה עולה? Without a question it means \"a few\": <b>כמה</b> ימים. <b>יותר מדי</b> = too much.",
+          "examples": [
+            ["{כמה} זה עולה?", "Kama ze ole?", "How much does it cost?"],
+            ["אכלתי {יותר מדי}.", "Achalti yoter miday.", "I ate too much."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "יש לי ＿ חברים.",
+          "en": "I have a lot of friends.",
+          "options": ["הרבה", "קצת", "מאוד", "יותר"],
+          "answer": "הרבה",
+          "why": "a lot: הרבה."
+        },
+        {
+          "q": "חכה ＿.",
+          "en": "Wait a bit.",
+          "options": ["הרבה", "קצת", "כמה", "מאוד"],
+          "answer": "קצת",
+          "why": "a little: קצת."
+        },
+        {
+          "q": "＿ ילדים יש לך?",
+          "en": "How many children do you have?",
+          "options": ["הרבה", "מה", "כמה", "איזה"],
+          "answer": "כמה",
+          "why": "how many: כמה."
+        },
+        {
+          "q": "זה יקר ＿.",
+          "en": "It's very expensive.",
+          "options": ["הרבה", "קצת מאוד", "יותר", "מאוד"],
+          "answer": "מאוד",
+          "why": "very: after the adjective."
+        },
+        {
+          "q": "נשארתי שם ＿ ימים.",
+          "en": "I stayed there a few days.",
+          "options": ["כמה", "הרבה מדי", "מאוד", "מעט מאוד"],
+          "answer": "כמה",
+          "why": "a few: כמה."
+        }
+      ]
+    },
+    {
       "id": "possessive-suffixes",
       "title": "Possessive endings: ביתי, אחי",
       "particle": "־י・־ך・־ו・־ה",
@@ -1474,75 +1758,6 @@
           "options": ["אכפת", "אכפה", "כאב", "אכפתית"],
           "answer": "אכפת",
           "why": "לא אכפת ל־."
-        }
-      ]
-    },
-    {
-      "id": "haya-past",
-      "title": "Was and were: הייתי, היה",
-      "particle": "היה・הייתה・היו",
-      "summary": "The present has no \"to be\", but the past does: הייתי, היית, היה, הייתה, היינו, הייתם, היו. (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "Past of <b>להיות</b>: אני <b>הייתי</b>, אתה <b>היית</b>, את <b>היית</b>, הוא <b>היה</b>, היא <b>הייתה</b>, אנחנו <b>היינו</b>, הם/הן <b>היו</b>.",
-          "examples": [
-            [
-              "{הייתי} בבית כל היום.",
-              "Hayiti ba-bayit kol ha-yom.",
-              "I was at home all day."
-            ],
-            ["הסרט {היה} טוב.", "Ha-seret haya tov.", "The film was good."]
-          ]
-        },
-        {
-          "h": "There was, there wasn't",
-          "p": "<b>יש</b> has no past of its own: <b>היה</b> / <b>הייתה</b> / <b>היו</b> agree with the thing that existed. <b>לא היה</b> = there wasn't: <b>לא היה</b> חשמל.",
-          "examples": [
-            [
-              "{היו} הרבה אנשים.",
-              "Hayu harbe anashim.",
-              "There were a lot of people."
-            ],
-            ["{לא הייתה} בעיה.", "Lo hayta be'aya.", "There was no problem."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "אתמול ＿ חם.",
-          "en": "Yesterday it was hot.",
-          "options": ["היה", "הייתה", "היו", "יהיה"],
-          "answer": "היה",
-          "why": "Impersonal: היה."
-        },
-        {
-          "q": "היא ＿ בחו\"ל.",
-          "en": "She was abroad.",
-          "options": ["היה", "הייתה", "היו", "היית"],
-          "answer": "הייתה",
-          "why": "she was: הייתה."
-        },
-        {
-          "q": "＿ בסרט?",
-          "en": "Were you at the film? (to a man)",
-          "options": ["הייתי", "היה", "היית", "היינו"],
-          "answer": "היית",
-          "why": "you (m) were: היית."
-        },
-        {
-          "q": "במסיבה ＿ הרבה ילדים.",
-          "en": "There were lots of kids at the party.",
-          "options": ["היה", "הייתה", "יהיו", "היו"],
-          "answer": "היו",
-          "why": "There were (plural): היו."
-        },
-        {
-          "q": "אנחנו ＿ עייפים.",
-          "en": "We were tired.",
-          "options": ["היינו", "היו", "הייתם", "נהיה"],
-          "answer": "היינו",
-          "why": "we were: היינו."
         }
       ]
     },
@@ -2342,83 +2557,6 @@
       ]
     },
     {
-      "id": "days-dates",
-      "title": "Days, months and dates: יום ראשון, ב־5 במאי",
-      "particle": "יום ראשון・ב־・בחודש",
-      "summary": "Days of the week are numbered from Sunday: יום ראשון (first day). On a date is ב־: ב־5 במאי. (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>יום ראשון</b> Sunday, <b>שני</b> Monday, <b>שלישי</b> Tuesday, <b>רביעי</b> Wednesday, <b>חמישי</b> Thursday, <b>שישי</b> Friday, <b>שבת</b> Saturday. On a day: <b>ב</b>יום שני.",
-          "examples": [
-            [
-              "נתראה {ביום} רביעי.",
-              "Nitra'e be-yom revi'i.",
-              "See you on Wednesday."
-            ],
-            [
-              "{בשבת} אנחנו בבית.",
-              "Be-shabat anachnu ba-bayit.",
-              "On Saturday we're at home."
-            ]
-          ]
-        },
-        {
-          "h": "Dates",
-          "p": "Day + <b>ב</b>month: <b>חמישה במאי</b> (5 May). Months are mostly international: ינואר, פברואר, מרץ, אפריל. Years: <b>בשנת</b> 2020. Time words: <b>היום</b>, <b>מחר</b>, <b>אתמול</b>, <b>בשבוע הבא</b>.",
-          "examples": [
-            [
-              "נולדתי {בעשרה ביוני}.",
-              "Noladti ba-asara be-yuni.",
-              "I was born on 10 June."
-            ],
-            [
-              "נטוס {בשבוע הבא}.",
-              "Natus ba-shavua ha-ba.",
-              "We'll fly next week."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "הפגישה ביום ＿.",
-          "en": "The meeting is on Thursday.",
-          "options": ["חמישי", "חמש", "חמישה", "החמישי"],
-          "answer": "חמישי",
-          "why": "Thursday = fifth day: חמישי."
-        },
-        {
-          "q": "＿ ראשון מתחיל השבוע.",
-          "en": "The week starts on Sunday.",
-          "options": ["ליום", "ביום", "מיום", "יום של"],
-          "answer": "ביום",
-          "why": "On a day: ביום."
-        },
-        {
-          "q": "היא נולדה ＿ שלושה במרץ.",
-          "en": "She was born on 3 March.",
-          "options": ["ל", "מ", "ב", "של"],
-          "answer": "ב",
-          "why": "On a date: ב־."
-        },
-        {
-          "q": "נסעתי לאילת ＿.",
-          "en": "I went to Eilat yesterday.",
-          "options": ["מחר", "בשבוע הבא", "עוד מעט", "אתמול"],
-          "answer": "אתמול",
-          "why": "yesterday: אתמול."
-        },
-        {
-          "q": "＿ הבאה נהיה בצרפת.",
-          "en": "Next year we'll be in France.",
-          "options": ["בשנה", "בשבוע", "ביום", "בחודש"],
-          "answer": "בשנה",
-          "why": "שנה is feminine: בשנה הבאה."
-        }
-      ]
-    },
-    {
       "id": "with-without",
       "title": "With and without: עם, בלי",
       "particle": "עם・בלי・בלי ל־",
@@ -2565,6 +2703,83 @@
           "options": ["יכול", "אפשר", "צריך את", "האם"],
           "answer": "יכול",
           "why": "can you: אתה יכול."
+        }
+      ]
+    },
+    {
+      "id": "ordinals",
+      "title": "First, second: ראשון, שני",
+      "particle": "ראשון・שני・שלישי",
+      "summary": "Ordinals 1–10 are adjectives and agree: ראשון / ראשונה. Above ten, use the cardinal: הקומה ה־12. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ראשון, שני, שלישי, רביעי, חמישי, שישי, שביעי, שמיני, תשיעי, עשירי</b>. Feminine adds ־ה or ־ת: <b>ראשונה, שנייה, שלישית</b>. They follow the noun with ה־: הבית <b>הראשון</b>.",
+          "examples": [
+            [
+              "זאת הפעם {הראשונה} שלי.",
+              "Zot ha-pa'am ha-rishona sheli.",
+              "It's my first time."
+            ],
+            [
+              "אני גר בקומה {השלישית}.",
+              "Ani gar ba-koma ha-shlishit.",
+              "I live on the third floor."
+            ]
+          ]
+        },
+        {
+          "h": "Above ten, and \"last\"",
+          "p": "From 11 up, use the ordinary number: בקומה <b>ה־15</b>. <b>אחרון</b> / <b>אחרונה</b> = last. <b>הבא</b> = next.",
+          "examples": [
+            [
+              "זה הסיבוב {האחרון}.",
+              "Ze ha-sivuv ha-acharon.",
+              "This is the last round."
+            ],
+            [
+              "אנחנו במקום {ה־20}.",
+              "Anachnu ba-makom ha-esrim.",
+              "We're in 20th place."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "זה היום ה＿ שלי בעבודה.",
+          "en": "It's my first day at work.",
+          "options": ["ראשון", "ראשונה", "אחד", "אחת"],
+          "answer": "ראשון",
+          "why": "יום is masculine: ראשון."
+        },
+        {
+          "q": "היא הגיעה במקום ה＿.",
+          "en": "She came second.",
+          "options": ["שנייה", "שני", "שניים", "שתיים"],
+          "answer": "שני",
+          "why": "מקום is masculine: שני."
+        },
+        {
+          "q": "פנה בפנייה ה＿ ימינה.",
+          "en": "Take the third turning on the right.",
+          "options": ["שלישי", "שלוש", "שלישית", "שלושה"],
+          "answer": "שלישית",
+          "why": "פנייה is feminine: שלישית."
+        },
+        {
+          "q": "זאת התחנה ה＿.",
+          "en": "This is the last stop.",
+          "options": ["אחרון", "סופית", "הבאה אחרי", "אחרונה"],
+          "answer": "אחרונה",
+          "why": "תחנה is feminine: אחרונה."
+        },
+        {
+          "q": "אנחנו בכיתה ה＿.",
+          "en": "We're in the fifth class.",
+          "options": ["חמישית", "חמישי", "חמש", "חמישה"],
+          "answer": "חמישית",
+          "why": "כיתה is feminine: חמישית."
         }
       ]
     },
@@ -3830,221 +4045,6 @@
       ]
     },
     {
-      "id": "politeness",
-      "title": "Please, thanks, sorry: בבקשה, תודה, סליחה",
-      "particle": "בבקשה・תודה・סליחה",
-      "summary": "בבקשה is both \"please\" and \"you're welcome\". תודה = thank you, סליחה = sorry or excuse me. (about A1)",
-      "level": "absolute-beginner",
-      "sections": [
-        {
-          "p": "<b>בבקשה</b> goes at the end or start of a request: מים, <b>בבקשה</b>. It also answers a thank-you. <b>תודה רבה</b> = thank you very much. <b>אין בעד מה</b> = don't mention it.",
-          "examples": [
-            ["קפה, {בבקשה}.", "Kafe, bevakasha.", "A coffee, please."],
-            ["{תודה רבה}!", "Toda raba!", "Thank you very much!"]
-          ]
-        },
-        {
-          "h": "Sorry and excuse me",
-          "p": "<b>סליחה</b> = excuse me, sorry. <b>אני מצטער</b> / <b>מצטערת</b> = I'm sorry (stronger, agrees with the speaker). <b>שלום</b> = hello and goodbye; <b>להתראות</b> = see you.",
-          "examples": [
-            [
-              "{סליחה}, איפה השירותים?",
-              "Slicha, eifo ha-sherutim?",
-              "Excuse me, where are the toilets?"
-            ],
-            [
-              "אני {מצטערת}, טעיתי.",
-              "Ani mitsta'eret, ta'iti.",
-              "I'm sorry, I made a mistake. (a woman)"
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "— תודה! — ＿!",
-          "en": "\"Thanks!\" \"You're welcome!\"",
-          "options": ["בבקשה", "סליחה", "שלום", "להתראות"],
-          "answer": "בבקשה",
-          "why": "You're welcome: בבקשה."
-        },
-        {
-          "q": "＿, אתה יודע מה השעה?",
-          "en": "Excuse me, do you know the time?",
-          "options": ["תודה", "סליחה", "בבקשה", "להתראות"],
-          "answer": "סליחה",
-          "why": "excuse me: סליחה."
-        },
-        {
-          "q": "תודה ＿!",
-          "en": "Thank you very much!",
-          "options": ["הרבה", "גדולה", "רבה", "מאוד רב"],
-          "answer": "רבה",
-          "why": "תודה רבה."
-        },
-        {
-          "q": "אני ＿ על האיחור.",
-          "en": "I'm sorry I'm late. (a man)",
-          "options": ["מצטערת", "סליחה לי", "תודה", "מצטער"],
-          "answer": "מצטער",
-          "why": "Agrees with a man: מצטער."
-        },
-        {
-          "q": "＿, נתראה מחר!",
-          "en": "Bye, see you tomorrow!",
-          "options": ["להתראות", "בבקשה", "סליחה", "תודה"],
-          "answer": "להתראות",
-          "why": "goodbye: להתראות."
-        }
-      ]
-    },
-    {
-      "id": "quantities",
-      "title": "A lot, a little: הרבה, קצת, כמה",
-      "particle": "הרבה・קצת・מעט・כמה",
-      "summary": "הרבה (a lot) and קצת (a little) go before the noun and don't change. כמה = how many, and also \"a few\". (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>הרבה</b> אנשים, <b>הרבה</b> כסף. <b>קצת</b> מים, <b>קצת</b> זמן. <b>מעט</b> = few, little (more formal). <b>מאוד</b> = very, after the adjective: יפה <b>מאוד</b>.",
-          "examples": [
-            [
-              "יש {הרבה} עבודה.",
-              "Yesh harbe avoda.",
-              "There's a lot of work."
-            ],
-            [
-              "אפשר {קצת} מים?",
-              "Efshar ktsat mayim?",
-              "Could I have a little water?"
-            ]
-          ]
-        },
-        {
-          "h": "כמה",
-          "p": "<b>כמה</b>? = how much, how many: <b>כמה</b> זה עולה? Without a question it means \"a few\": <b>כמה</b> ימים. <b>יותר מדי</b> = too much.",
-          "examples": [
-            ["{כמה} זה עולה?", "Kama ze ole?", "How much does it cost?"],
-            ["אכלתי {יותר מדי}.", "Achalti yoter miday.", "I ate too much."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "יש לי ＿ חברים.",
-          "en": "I have a lot of friends.",
-          "options": ["הרבה", "קצת", "מאוד", "יותר"],
-          "answer": "הרבה",
-          "why": "a lot: הרבה."
-        },
-        {
-          "q": "חכה ＿.",
-          "en": "Wait a bit.",
-          "options": ["הרבה", "קצת", "כמה", "מאוד"],
-          "answer": "קצת",
-          "why": "a little: קצת."
-        },
-        {
-          "q": "＿ ילדים יש לך?",
-          "en": "How many children do you have?",
-          "options": ["הרבה", "מה", "כמה", "איזה"],
-          "answer": "כמה",
-          "why": "how many: כמה."
-        },
-        {
-          "q": "זה יקר ＿.",
-          "en": "It's very expensive.",
-          "options": ["הרבה", "קצת מאוד", "יותר", "מאוד"],
-          "answer": "מאוד",
-          "why": "very: after the adjective."
-        },
-        {
-          "q": "נשארתי שם ＿ ימים.",
-          "en": "I stayed there a few days.",
-          "options": ["כמה", "הרבה מדי", "מאוד", "מעט מאוד"],
-          "answer": "כמה",
-          "why": "a few: כמה."
-        }
-      ]
-    },
-    {
-      "id": "ordinals",
-      "title": "First, second: ראשון, שני",
-      "particle": "ראשון・שני・שלישי",
-      "summary": "Ordinals 1–10 are adjectives and agree: ראשון / ראשונה. Above ten, use the cardinal: הקומה ה־12. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>ראשון, שני, שלישי, רביעי, חמישי, שישי, שביעי, שמיני, תשיעי, עשירי</b>. Feminine adds ־ה or ־ת: <b>ראשונה, שנייה, שלישית</b>. They follow the noun with ה־: הבית <b>הראשון</b>.",
-          "examples": [
-            [
-              "זאת הפעם {הראשונה} שלי.",
-              "Zot ha-pa'am ha-rishona sheli.",
-              "It's my first time."
-            ],
-            [
-              "אני גר בקומה {השלישית}.",
-              "Ani gar ba-koma ha-shlishit.",
-              "I live on the third floor."
-            ]
-          ]
-        },
-        {
-          "h": "Above ten, and \"last\"",
-          "p": "From 11 up, use the ordinary number: בקומה <b>ה־15</b>. <b>אחרון</b> / <b>אחרונה</b> = last. <b>הבא</b> = next.",
-          "examples": [
-            [
-              "זה הסיבוב {האחרון}.",
-              "Ze ha-sivuv ha-acharon.",
-              "This is the last round."
-            ],
-            [
-              "אנחנו במקום {ה־20}.",
-              "Anachnu ba-makom ha-esrim.",
-              "We're in 20th place."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "זה היום ה＿ שלי בעבודה.",
-          "en": "It's my first day at work.",
-          "options": ["ראשון", "ראשונה", "אחד", "אחת"],
-          "answer": "ראשון",
-          "why": "יום is masculine: ראשון."
-        },
-        {
-          "q": "היא הגיעה במקום ה＿.",
-          "en": "She came second.",
-          "options": ["שנייה", "שני", "שניים", "שתיים"],
-          "answer": "שני",
-          "why": "מקום is masculine: שני."
-        },
-        {
-          "q": "פנה בפנייה ה＿ ימינה.",
-          "en": "Take the third turning on the right.",
-          "options": ["שלישי", "שלוש", "שלישית", "שלושה"],
-          "answer": "שלישית",
-          "why": "פנייה is feminine: שלישית."
-        },
-        {
-          "q": "זאת התחנה ה＿.",
-          "en": "This is the last stop.",
-          "options": ["אחרון", "סופית", "הבאה אחרי", "אחרונה"],
-          "answer": "אחרונה",
-          "why": "תחנה is feminine: אחרונה."
-        },
-        {
-          "q": "אנחנו בכיתה ה＿.",
-          "en": "We're in the fifth class.",
-          "options": ["חמישית", "חמישי", "חמש", "חמישה"],
-          "answer": "חמישית",
-          "why": "כיתה is feminine: חמישית."
-        }
-      ]
-    },
-    {
       "id": "reflexive-reciprocal",
       "title": "Myself, each other: עצמי, זה את זה",
       "particle": "עצמי・בעצמי・זה את זה",
@@ -4803,79 +4803,6 @@
       ]
     },
     {
-      "id": "pual-hufal",
-      "title": "Passive verbs: סופר, הוזמן",
-      "particle": "פֻּעַל・הֻפְעַל",
-      "summary": "Pi'el and hif'il have true passives: פועל (סופר, was told) and הופעל (הוזמן, was invited). They are common in news and formal writing. (about C1)",
-      "level": "advanced",
-      "sections": [
-        {
-          "p": "Pu'al (passive of pi'el): <b>בוטל</b> (was cancelled), <b>סודר</b> (was arranged). Present: <b>מבוטל</b>. Hof'al (passive of hif'il): <b>הוזמן</b> (was invited / ordered), <b>הוכן</b> (was prepared), <b>הודלק</b> (was lit).",
-          "examples": [
-            ["הטיסה {בוטלה}.", "Ha-tisa butla.", "The flight was cancelled."],
-            [
-              "{הוזמנו} לחתונה.",
-              "Huzmanu la-chatuna.",
-              "We were invited to the wedding."
-            ]
-          ]
-        },
-        {
-          "h": "Who did it: על ידי",
-          "p": "The agent follows <b>על ידי</b> (by): הספר <b>תורגם על ידי</b> סופר ידוע. Speech prefers an active plural with no subject: <b>ביטלו</b> את הטיסה.",
-          "examples": [
-            [
-              "השיר {נכתב על ידי} נעמי שמר.",
-              "Ha-shir nichtav al yedei Naomi Shemer.",
-              "The song was written by Naomi Shemer."
-            ],
-            [
-              "הספר {תורגם} לעברית.",
-              "Ha-sefer turgam le-ivrit.",
-              "The book was translated into Hebrew."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "הפגישה ＿.",
-          "en": "The meeting was cancelled.",
-          "options": ["בוטלה", "ביטלה", "מבטלת", "בוטל"],
-          "answer": "בוטלה",
-          "why": "פגישה is feminine: בוטלה."
-        },
-        {
-          "q": "הוא ＿ לראיון.",
-          "en": "He was invited to an interview.",
-          "options": ["הזמין", "הוזמן", "מזמין", "הוזמנה"],
-          "answer": "הוזמן",
-          "why": "Hof'al past: הוזמן."
-        },
-        {
-          "q": "האוכל ＿ על ידי השף.",
-          "en": "The food was prepared by the chef.",
-          "options": ["הכין", "מכין", "הוכן", "הוכנה"],
-          "answer": "הוכן",
-          "why": "Hof'al: הוכן."
-        },
-        {
-          "q": "המכתב תורגם ＿ המזכירה.",
-          "en": "The letter was translated by the secretary.",
-          "options": ["בגלל", "בשביל", "עם", "על ידי"],
-          "answer": "על ידי",
-          "why": "by: על ידי."
-        },
-        {
-          "q": "הבית ＿ מחדש.",
-          "en": "The house was renovated.",
-          "options": ["שופץ", "שיפץ", "משפץ", "שופצה"],
-          "answer": "שופץ",
-          "why": "Pu'al: שופץ."
-        }
-      ]
-    },
-    {
       "id": "should-kedai",
       "title": "Should, it's worth: כדאי, היה צריך",
       "particle": "כדאי・היה כדאי・היית צריך",
@@ -5026,6 +4953,79 @@
           "options": ["זה", "הוא", "היא", "זאת הוא"],
           "answer": "זה",
           "why": "Pointing: זה."
+        }
+      ]
+    },
+    {
+      "id": "pual-hufal",
+      "title": "Passive verbs: סופר, הוזמן",
+      "particle": "פֻּעַל・הֻפְעַל",
+      "summary": "Pi'el and hif'il have true passives: פועל (סופר, was told) and הופעל (הוזמן, was invited). They are common in news and formal writing. (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "Pu'al (passive of pi'el): <b>בוטל</b> (was cancelled), <b>סודר</b> (was arranged). Present: <b>מבוטל</b>. Hof'al (passive of hif'il): <b>הוזמן</b> (was invited / ordered), <b>הוכן</b> (was prepared), <b>הודלק</b> (was lit).",
+          "examples": [
+            ["הטיסה {בוטלה}.", "Ha-tisa butla.", "The flight was cancelled."],
+            [
+              "{הוזמנו} לחתונה.",
+              "Huzmanu la-chatuna.",
+              "We were invited to the wedding."
+            ]
+          ]
+        },
+        {
+          "h": "Who did it: על ידי",
+          "p": "The agent follows <b>על ידי</b> (by): הספר <b>תורגם על ידי</b> סופר ידוע. Speech prefers an active plural with no subject: <b>ביטלו</b> את הטיסה.",
+          "examples": [
+            [
+              "השיר {נכתב על ידי} נעמי שמר.",
+              "Ha-shir nichtav al yedei Naomi Shemer.",
+              "The song was written by Naomi Shemer."
+            ],
+            [
+              "הספר {תורגם} לעברית.",
+              "Ha-sefer turgam le-ivrit.",
+              "The book was translated into Hebrew."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "הפגישה ＿.",
+          "en": "The meeting was cancelled.",
+          "options": ["בוטלה", "ביטלה", "מבטלת", "בוטל"],
+          "answer": "בוטלה",
+          "why": "פגישה is feminine: בוטלה."
+        },
+        {
+          "q": "הוא ＿ לראיון.",
+          "en": "He was invited to an interview.",
+          "options": ["הזמין", "הוזמן", "מזמין", "הוזמנה"],
+          "answer": "הוזמן",
+          "why": "Hof'al past: הוזמן."
+        },
+        {
+          "q": "האוכל ＿ על ידי השף.",
+          "en": "The food was prepared by the chef.",
+          "options": ["הכין", "מכין", "הוכן", "הוכנה"],
+          "answer": "הוכן",
+          "why": "Hof'al: הוכן."
+        },
+        {
+          "q": "המכתב תורגם ＿ המזכירה.",
+          "en": "The letter was translated by the secretary.",
+          "options": ["בגלל", "בשביל", "עם", "על ידי"],
+          "answer": "על ידי",
+          "why": "by: על ידי."
+        },
+        {
+          "q": "הבית ＿ מחדש.",
+          "en": "The house was renovated.",
+          "options": ["שופץ", "שיפץ", "משפץ", "שופצה"],
+          "answer": "שופץ",
+          "why": "Pu'al: שופץ."
         }
       ]
     },

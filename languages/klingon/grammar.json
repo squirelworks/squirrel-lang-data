@@ -7,7 +7,7 @@
     "Lessons with `generate` get drills built from the prefix grid below.",
     "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
     "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
-    "24 lessons, from A1 to B1. Lessons 11–24 were added to cover the rest of the beginner path and the first intermediate points."
+    "24 lessons, from A1 to B1. 14 lessons were added to cover the rest of the beginner path and the first intermediate points."
   ],
   "title": "Klingon verbs and nouns",
   "intro": "A Klingon verb starts with a prefix that says who does the action and, at the same time, who it is done to. One syllable carries what English splits across a subject and an object. Learn the grid once and every verb opens up. The 24 lessons run from A1 to B1. They start with the prefix grid, commands, the everyday verb suffixes, plural and possessive nouns, places and “to be”, then add time words, aspect, need and readiness, questions and numbers, and end with comparison, “when” and “if”, “who” and “in order to”. Romanization is the standard Latin spelling; tick “Show pIqaD” to see each example in Klingon script.",
@@ -98,6 +98,191 @@
         "kind": "none",
         "count": 8
       }
+    },
+    {
+      "id": "noun-plural",
+      "title": "Plural nouns",
+      "particle": "-pu' -Du' -mey",
+      "summary": "Three plural endings, chosen by what the noun is. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "Klingon has three plural suffixes. <b>-pu'</b> is for beings that can speak a language, <b>-Du'</b> for body parts, and <b>-mey</b> for everything else. A noun without one can be singular or plural: the verb prefix often tells you which.",
+          "examples": [
+            ["tlhIngan{pu'}", "Klingon + -pu'", "Klingons"],
+            ["mIn{Du'}", "eye + -Du'", "eyes"],
+            ["Duj{mey}", "ship + -mey", "ships"]
+          ]
+        },
+        {
+          "h": "Scattered all over",
+          "p": "Putting -mey on a word for a speaking being means “scattered all over”: puq<b>mey</b> “children all over the place”.",
+          "examples": [
+            ["puq{pu'}", "child + -pu'", "children"],
+            ["Hov{mey}", "star + -mey", "stars"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "yaS＿",
+          "en": "officers",
+          "options": ["pu'", "Du'", "mey"],
+          "answer": "pu'",
+          "why": "Officers speak a language: -pu'."
+        },
+        {
+          "q": "qam＿",
+          "en": "feet",
+          "options": ["Du'", "pu'", "mey"],
+          "answer": "Du'",
+          "why": "A body part: -Du'."
+        },
+        {
+          "q": "nuH＿",
+          "en": "weapons",
+          "options": ["mey", "pu'", "Du'"],
+          "answer": "mey",
+          "why": "Weapons are things: -mey."
+        },
+        {
+          "q": "What does jupmey mean?",
+          "en": "jup = friend",
+          "options": ["friends scattered all over", "friends", "my friend", "a friend"],
+          "answer": "friends scattered all over",
+          "why": "-mey on a speaking being means “all over the place”; plain “friends” is juppu'."
+        },
+        {
+          "q": "The plural of Duj (ship) is…",
+          "en": "",
+          "options": ["Dujmey", "Dujpu'", "DujDu'"],
+          "answer": "Dujmey",
+          "why": "Ships take the general plural -mey."
+        }
+      ]
+    },
+    {
+      "id": "possession",
+      "title": "My, your, his",
+      "particle": "-wIj -lIj -Daj",
+      "summary": "Possession is a suffix on the noun. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "“My ship” is Duj<b>wIj</b>. The suffixes are <b>-wIj</b> my, <b>-lIj</b> your, <b>-Daj</b> his or her, <b>-maj</b> our, <b>-raj</b> your (several), <b>-chaj</b> their.",
+          "examples": [
+            ["Duj{wIj}", "ship + my", "my ship"],
+            ["juH{lIj}", "home + your", "your home"],
+            ["nuH{chaj}", "weapon + their", "their weapon"]
+          ]
+        },
+        {
+          "h": "People take -wI' and -lI'",
+          "p": "For beings that can speak, “my” and “your” are <b>-wI'</b> and <b>-lI'</b>. A plural comes before the possessive: puq<b>pu'wI'</b> “my children”.",
+          "examples": [
+            ["jup{wI'}", "friend + my", "my friend"],
+            ["puq{lI'}", "child + your", "your child"],
+            ["puqpu'{wI'}", "child + plural + my", "my children"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Duj＿",
+          "en": "your ship",
+          "options": ["lIj", "wIj", "Daj", "lI'"],
+          "answer": "lIj",
+          "why": "“Your” on a thing is -lIj."
+        },
+        {
+          "q": "jup＿",
+          "en": "my friend",
+          "options": ["wI'", "wIj", "lI'", "maj"],
+          "answer": "wI'",
+          "why": "A friend can speak, so “my” is -wI'."
+        },
+        {
+          "q": "What does juHmaj mean?",
+          "en": "juH = home",
+          "options": ["our home", "my home", "their home", "your home"],
+          "answer": "our home",
+          "why": "-maj = our."
+        },
+        {
+          "q": "How do you say “my children”?",
+          "en": "puq = child",
+          "options": ["puqpu'wI'", "puqwI'pu'", "puqmeywIj", "puqwIjpu'"],
+          "answer": "puqpu'wI'",
+          "why": "The plural comes first, then the possessive; people take -pu' and -wI'."
+        },
+        {
+          "q": "nuH＿",
+          "en": "his weapon",
+          "options": ["Daj", "chaj", "lIj", "wIj"],
+          "answer": "Daj",
+          "why": "-Daj = his or her."
+        }
+      ]
+    },
+    {
+      "id": "to-be",
+      "title": "“I am a Klingon”",
+      "particle": "jIH SoH ghaH",
+      "summary": "No verb “to be”: the pronoun does the job. (about A1)",
+      "level": "absolute-beginner",
+      "sections": [
+        {
+          "p": "Klingon has no verb “to be”. Instead the pronoun works as the verb, after the noun: tlhIngan <b>jIH</b> “I am a Klingon”, yaS <b>SoH</b> “you are an officer”, Duj <b>'oH</b> “it is a ship”.",
+          "examples": [
+            ["tlhIngan {jIH}.", "Klingon · I-am", "I am a Klingon."],
+            ["SuvwI' {ghaH}.", "warrior · he/she-is", "He is a warrior."],
+            ["Duj {'oH}.", "ship · it-is", "It's a ship."]
+          ]
+        },
+        {
+          "h": "Questions",
+          "p": "Add -'a' to the pronoun to ask: tlhIngan <b>SoH'a'</b>? “Are you a Klingon?” For several people, use <b>chaH</b> “they are”.",
+          "examples": [
+            ["tlhIngan {SoH'a'}?", "Klingon · you-are?", "Are you a Klingon?"],
+            ["SuvwI' {chaH}.", "warrior · they-are", "They are warriors."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "tlhIngan ＿.",
+          "en": "I am a Klingon.",
+          "options": ["jIH", "SoH", "ghaH", "jI"],
+          "answer": "jIH",
+          "why": "The pronoun jIH works as “I am”."
+        },
+        {
+          "q": "yaS ＿?",
+          "en": "Are you an officer?",
+          "options": ["SoH'a'", "SoH", "jIH'a'", "bI'a'"],
+          "answer": "SoH'a'",
+          "why": "SoH (you) + -'a' (question)."
+        },
+        {
+          "q": "What does «HoD ghaH» mean?",
+          "en": "HoD = captain",
+          "options": [
+            "He is the captain.",
+            "I am the captain.",
+            "Captain!",
+            "His captain."
+          ],
+          "answer": "He is the captain.",
+          "why": "ghaH = he/she, used as “is”."
+        },
+        {
+          "q": "nuH ＿.",
+          "en": "It's a weapon.",
+          "options": ["'oH", "ghaH", "chaH", "jIH"],
+          "answer": "'oH",
+          "why": "For a thing, “it is” is 'oH."
+        }
+      ]
     },
     {
       "id": "with-object",
@@ -266,131 +451,6 @@
       ]
     },
     {
-      "id": "noun-plural",
-      "title": "Plural nouns",
-      "particle": "-pu' -Du' -mey",
-      "summary": "Three plural endings, chosen by what the noun is. (about A1)",
-      "level": "absolute-beginner",
-      "sections": [
-        {
-          "p": "Klingon has three plural suffixes. <b>-pu'</b> is for beings that can speak a language, <b>-Du'</b> for body parts, and <b>-mey</b> for everything else. A noun without one can be singular or plural: the verb prefix often tells you which.",
-          "examples": [
-            ["tlhIngan{pu'}", "Klingon + -pu'", "Klingons"],
-            ["mIn{Du'}", "eye + -Du'", "eyes"],
-            ["Duj{mey}", "ship + -mey", "ships"]
-          ]
-        },
-        {
-          "h": "Scattered all over",
-          "p": "Putting -mey on a word for a speaking being means “scattered all over”: puq<b>mey</b> “children all over the place”.",
-          "examples": [
-            ["puq{pu'}", "child + -pu'", "children"],
-            ["Hov{mey}", "star + -mey", "stars"]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "yaS＿",
-          "en": "officers",
-          "options": ["pu'", "Du'", "mey"],
-          "answer": "pu'",
-          "why": "Officers speak a language: -pu'."
-        },
-        {
-          "q": "qam＿",
-          "en": "feet",
-          "options": ["Du'", "pu'", "mey"],
-          "answer": "Du'",
-          "why": "A body part: -Du'."
-        },
-        {
-          "q": "nuH＿",
-          "en": "weapons",
-          "options": ["mey", "pu'", "Du'"],
-          "answer": "mey",
-          "why": "Weapons are things: -mey."
-        },
-        {
-          "q": "What does jupmey mean?",
-          "en": "jup = friend",
-          "options": ["friends scattered all over", "friends", "my friend", "a friend"],
-          "answer": "friends scattered all over",
-          "why": "-mey on a speaking being means “all over the place”; plain “friends” is juppu'."
-        },
-        {
-          "q": "The plural of Duj (ship) is…",
-          "en": "",
-          "options": ["Dujmey", "Dujpu'", "DujDu'"],
-          "answer": "Dujmey",
-          "why": "Ships take the general plural -mey."
-        }
-      ]
-    },
-    {
-      "id": "possession",
-      "title": "My, your, his",
-      "particle": "-wIj -lIj -Daj",
-      "summary": "Possession is a suffix on the noun. (about A1)",
-      "level": "absolute-beginner",
-      "sections": [
-        {
-          "p": "“My ship” is Duj<b>wIj</b>. The suffixes are <b>-wIj</b> my, <b>-lIj</b> your, <b>-Daj</b> his or her, <b>-maj</b> our, <b>-raj</b> your (several), <b>-chaj</b> their.",
-          "examples": [
-            ["Duj{wIj}", "ship + my", "my ship"],
-            ["juH{lIj}", "home + your", "your home"],
-            ["nuH{chaj}", "weapon + their", "their weapon"]
-          ]
-        },
-        {
-          "h": "People take -wI' and -lI'",
-          "p": "For beings that can speak, “my” and “your” are <b>-wI'</b> and <b>-lI'</b>. A plural comes before the possessive: puq<b>pu'wI'</b> “my children”.",
-          "examples": [
-            ["jup{wI'}", "friend + my", "my friend"],
-            ["puq{lI'}", "child + your", "your child"],
-            ["puqpu'{wI'}", "child + plural + my", "my children"]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "Duj＿",
-          "en": "your ship",
-          "options": ["lIj", "wIj", "Daj", "lI'"],
-          "answer": "lIj",
-          "why": "“Your” on a thing is -lIj."
-        },
-        {
-          "q": "jup＿",
-          "en": "my friend",
-          "options": ["wI'", "wIj", "lI'", "maj"],
-          "answer": "wI'",
-          "why": "A friend can speak, so “my” is -wI'."
-        },
-        {
-          "q": "What does juHmaj mean?",
-          "en": "juH = home",
-          "options": ["our home", "my home", "their home", "your home"],
-          "answer": "our home",
-          "why": "-maj = our."
-        },
-        {
-          "q": "How do you say “my children”?",
-          "en": "puq = child",
-          "options": ["puqpu'wI'", "puqwI'pu'", "puqmeywIj", "puqwIjpu'"],
-          "answer": "puqpu'wI'",
-          "why": "The plural comes first, then the possessive; people take -pu' and -wI'."
-        },
-        {
-          "q": "nuH＿",
-          "en": "his weapon",
-          "options": ["Daj", "chaj", "lIj", "wIj"],
-          "answer": "Daj",
-          "why": "-Daj = his or her."
-        }
-      ]
-    },
-    {
       "id": "locative",
       "title": "In, at and from",
       "particle": "-Daq -vo' -vaD",
@@ -458,62 +518,64 @@
       ]
     },
     {
-      "id": "to-be",
-      "title": "“I am a Klingon”",
-      "particle": "jIH SoH ghaH",
-      "summary": "No verb “to be”: the pronoun does the job. (about A1)",
-      "level": "absolute-beginner",
+      "id": "numbers",
+      "title": "Numbers",
+      "particle": "wa' cha' wej",
+      "summary": "Numbers come before the noun, and the noun needs no plural ending: cha' Duj, two ships. (about A1–A2)",
+      "level": "beginner",
       "sections": [
         {
-          "p": "Klingon has no verb “to be”. Instead the pronoun works as the verb, after the noun: tlhIngan <b>jIH</b> “I am a Klingon”, yaS <b>SoH</b> “you are an officer”, Duj <b>'oH</b> “it is a ship”.",
+          "p": "<b>wa'</b> 1, <b>cha'</b> 2, <b>wej</b> 3, <b>loS</b> 4, <b>vagh</b> 5, <b>jav</b> 6, <b>Soch</b> 7, <b>chorgh</b> 8, <b>Hut</b> 9, <b>wa'maH</b> 10. Tens are <b>-maH</b>: <b>cha'maH</b> 20.",
           "examples": [
-            ["tlhIngan {jIH}.", "Klingon · I-am", "I am a Klingon."],
-            ["SuvwI' {ghaH}.", "warrior · he/she-is", "He is a warrior."],
-            ["Duj {'oH}.", "ship · it-is", "It's a ship."]
+            [
+              "{cha'} Duj vIlegh.",
+              "two · ship · vI- + legh",
+              "I see two ships."
+            ],
+            ["{wej} yaS.", "three · officer", "three officers"]
           ]
         },
         {
-          "h": "Questions",
-          "p": "Add -'a' to the pronoun to ask: tlhIngan <b>SoH'a'</b>? “Are you a Klingon?” For several people, use <b>chaH</b> “they are”.",
+          "h": "First, twice",
+          "p": "<b>-DIch</b> makes ordinals, after the noun: <b>yaS wa'DIch</b> the first officer. <b>-logh</b> counts times: <b>cha'logh</b> twice.",
           "examples": [
-            ["tlhIngan {SoH'a'}?", "Klingon · you-are?", "Are you a Klingon?"],
-            ["SuvwI' {chaH}.", "warrior · they-are", "They are warriors."]
+            [
+              "yaS {wa'DIch} ghaH.",
+              "officer · first · he-is",
+              "He is the first officer."
+            ],
+            ["{cha'logh} jIjatlh.", "twice · jI- + jatlh", "I spoke twice."]
           ]
         }
       ],
       "drills": [
         {
-          "q": "tlhIngan ＿.",
-          "en": "I am a Klingon.",
-          "options": ["jIH", "SoH", "ghaH", "jI"],
-          "answer": "jIH",
-          "why": "The pronoun jIH works as “I am”."
+          "q": "＿ Duj vIlegh.",
+          "en": "I see two ships.",
+          "options": ["cha'", "wa'", "wej", "loS"],
+          "answer": "cha'",
+          "why": "Two: cha'."
         },
         {
-          "q": "yaS ＿?",
-          "en": "Are you an officer?",
-          "options": ["SoH'a'", "SoH", "jIH'a'", "bI'a'"],
-          "answer": "SoH'a'",
-          "why": "SoH (you) + -'a' (question)."
+          "q": "＿ yaS.",
+          "en": "three officers",
+          "options": ["loS", "wej", "cha'", "vagh"],
+          "answer": "wej",
+          "why": "Three: wej."
         },
         {
-          "q": "What does «HoD ghaH» mean?",
-          "en": "HoD = captain",
-          "options": [
-            "He is the captain.",
-            "I am the captain.",
-            "Captain!",
-            "His captain."
-          ],
-          "answer": "He is the captain.",
-          "why": "ghaH = he/she, used as “is”."
+          "q": "yaS ＿ ghaH.",
+          "en": "He is the first officer.",
+          "options": ["wa'logh", "wa'", "wa'DIch", "wa'maH"],
+          "answer": "wa'DIch",
+          "why": "First: wa'DIch."
         },
         {
-          "q": "nuH ＿.",
-          "en": "It's a weapon.",
-          "options": ["'oH", "ghaH", "chaH", "jIH"],
-          "answer": "'oH",
-          "why": "For a thing, “it is” is 'oH."
+          "q": "＿ jIjatlh.",
+          "en": "I spoke twice.",
+          "options": ["cha'DIch", "cha'", "cha'maH", "cha'logh"],
+          "answer": "cha'logh",
+          "why": "Twice: cha'logh."
         }
       ]
     },
@@ -692,6 +754,204 @@
           "options": ["nIS", "rup", "qang", "vIp"],
           "answer": "vIp",
           "why": "Afraid: -vIp."
+        }
+      ]
+    },
+    {
+      "id": "question-words",
+      "title": "Who, what, where, why",
+      "particle": "nuq 'Iv nuqDaq qatlh",
+      "summary": "Question words sit where the answer would go, and the verb takes no -'a': nuq Dalegh? What do you see? (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>nuq</b> what, <b>'Iv</b> who, <b>nuqDaq</b> where, <b>qatlh</b> why, <b>ghorgh</b> when, <b>chay'</b> how, <b>'ar</b> how many.",
+          "examples": [
+            ["{nuq} Dalegh?", "what · Da- + legh", "What do you see?"],
+            ["{'Iv} SoH?", "who · you-are", "Who are you?"]
+          ]
+        },
+        {
+          "h": "Where, why, when",
+          "p": "<b>nuqDaq</b> and the time words go first, like any place or time: <b>nuqDaq HoD?</b> where is the captain?",
+          "examples": [
+            [
+              "{nuqDaq} 'oH Duj'e'?",
+              "where · it-is · ship (topic)",
+              "Where is the ship?"
+            ],
+            ["{qatlh} bISuv?", "why · bI- + Suv", "Why do you fight?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ Dalegh?",
+          "en": "What do you see?",
+          "options": ["nuq", "'Iv", "qatlh", "ghorgh"],
+          "answer": "nuq",
+          "why": "What: nuq."
+        },
+        {
+          "q": "＿ SoH?",
+          "en": "Who are you?",
+          "options": ["nuq", "'Iv", "nuqDaq", "'ar"],
+          "answer": "'Iv",
+          "why": "Who: 'Iv."
+        },
+        {
+          "q": "＿ bISuv?",
+          "en": "Why do you fight?",
+          "options": ["nuq", "chay'", "qatlh", "'ar"],
+          "answer": "qatlh",
+          "why": "Why: qatlh."
+        },
+        {
+          "q": "＿ bIQong?",
+          "en": "When do you sleep?",
+          "options": ["nuqDaq", "'Iv", "nuq", "ghorgh"],
+          "answer": "ghorgh",
+          "why": "When: ghorgh."
+        }
+      ]
+    },
+    {
+      "id": "and-but",
+      "title": "And, or, but",
+      "particle": "'ej je 'ach joq",
+      "summary": "Klingon has one set of words for joining sentences ('ej and, 'ach but, pagh or) and another for joining nouns (je and, joq or), which come after the nouns. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Between sentences: <b>'ej</b> and, <b>'ach</b> but, <b>pagh</b> or (one or the other), <b>qoj</b> and/or. They go between the two sentences.",
+          "examples": [
+            [
+              "jISop {'ej} jItlhutlh.",
+              "jI- + Sop · and · jI- + tlhutlh",
+              "I eat and drink."
+            ],
+            [
+              "jIQong vIneH {'ach} jISuvnIS.",
+              "I-sleep I-want · but · I-fight-need",
+              "I want to sleep, but I have to fight."
+            ]
+          ]
+        },
+        {
+          "h": "Nouns: je after both",
+          "p": "For nouns, the joining word comes <i>after</i> them: <b>HoD yaS je</b> the captain and the officer, <b>Duj tera' joq</b> a ship or Earth.",
+          "examples": [
+            [
+              "HoD yaS {je} vIlegh.",
+              "captain · officer · and · vI- + legh",
+              "I see the captain and the officer."
+            ],
+            [
+              "puq be' {je} vIlegh.",
+              "child · woman · and · vI- + legh",
+              "I see the child and the woman."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "jISop ＿ jItlhutlh.",
+          "en": "I eat and drink.",
+          "options": ["'ej", "je", "'ach", "joq"],
+          "answer": "'ej",
+          "why": "Sentences: 'ej."
+        },
+        {
+          "q": "HoD yaS ＿ vIlegh.",
+          "en": "I see the captain and the officer.",
+          "options": ["'ej", "je", "'ach", "pagh"],
+          "answer": "je",
+          "why": "Nouns: je, after both."
+        },
+        {
+          "q": "jIQong vIneH ＿ jISuvnIS.",
+          "en": "I want to sleep, but I have to fight.",
+          "options": ["'ej", "je", "'ach", "joq"],
+          "answer": "'ach",
+          "why": "But: 'ach."
+        },
+        {
+          "q": "bIQong ＿ bISuv.",
+          "en": "Either you sleep or you fight.",
+          "options": ["je", "'ach", "joq", "pagh"],
+          "answer": "pagh",
+          "why": "One or the other, between sentences: pagh."
+        }
+      ]
+    },
+    {
+      "id": "this-that",
+      "title": "This, that, and the topic: -vam, -vetlh, -'e'",
+      "particle": "-vam -vetlh -'e'",
+      "summary": "-vam (this) and -vetlh (that) go at the end of a noun. -'e' marks the topic or focus: “as for…, it's … that”. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>Dujvam</b> this ship, <b>Dujvetlh</b> that ship. They come after any plural or possessive: <b>Dujmeyvam</b> these ships.",
+          "examples": [
+            [
+              "Duj{vam} vIlegh.",
+              "ship + this · vI- + legh",
+              "I see this ship."
+            ],
+            [
+              "yaS{vetlh} 'Iv?",
+              "officer + that · who",
+              "Who is that officer?"
+            ]
+          ]
+        },
+        {
+          "h": "Topic: -'e'",
+          "p": "With “to be” sentences, <b>-'e'</b> marks the subject: <b>HoD ghaH qeylIS'e'</b> Kahless is the captain. Elsewhere it puts weight on a noun: <b>jIH'e'</b> it is I.",
+          "examples": [
+            [
+              "HoD ghaH qeylIS{'e'}.",
+              "captain · he-is · Kahless + topic",
+              "Kahless is the captain."
+            ],
+            [
+              "Duj 'oH Dujvam{'e'}.",
+              "ship · it-is · this ship + topic",
+              "This is a ship."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Duj＿ vIlegh.",
+          "en": "I see this ship.",
+          "options": ["vam", "vetlh", "'e'", "mey"],
+          "answer": "vam",
+          "why": "This: -vam."
+        },
+        {
+          "q": "yaS＿ 'Iv?",
+          "en": "Who is that officer?",
+          "options": ["vam", "vetlh", "Daq", "pu'"],
+          "answer": "vetlh",
+          "why": "That: -vetlh."
+        },
+        {
+          "q": "HoD ghaH qeylIS＿.",
+          "en": "Kahless is the captain.",
+          "options": ["vam", "vaD", "'e'", "wIj"],
+          "answer": "'e'",
+          "why": "Subject of “to be”: -'e'."
+        },
+        {
+          "q": "Dujmey＿ vIlegh.",
+          "en": "I see these ships.",
+          "options": ["vetlh", "'e'", "Daq", "vam"],
+          "answer": "vam",
+          "why": "-vam after the plural."
         }
       ]
     },
@@ -882,266 +1142,6 @@
           "options": ["Ha'", "lI'", "Daq", "qa'"],
           "answer": "qa'",
           "why": "Again: -qa'."
-        }
-      ]
-    },
-    {
-      "id": "question-words",
-      "title": "Who, what, where, why",
-      "particle": "nuq 'Iv nuqDaq qatlh",
-      "summary": "Question words sit where the answer would go, and the verb takes no -'a': nuq Dalegh? What do you see? (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>nuq</b> what, <b>'Iv</b> who, <b>nuqDaq</b> where, <b>qatlh</b> why, <b>ghorgh</b> when, <b>chay'</b> how, <b>'ar</b> how many.",
-          "examples": [
-            ["{nuq} Dalegh?", "what · Da- + legh", "What do you see?"],
-            ["{'Iv} SoH?", "who · you-are", "Who are you?"]
-          ]
-        },
-        {
-          "h": "Where, why, when",
-          "p": "<b>nuqDaq</b> and the time words go first, like any place or time: <b>nuqDaq HoD?</b> where is the captain?",
-          "examples": [
-            [
-              "{nuqDaq} 'oH Duj'e'?",
-              "where · it-is · ship (topic)",
-              "Where is the ship?"
-            ],
-            ["{qatlh} bISuv?", "why · bI- + Suv", "Why do you fight?"]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ Dalegh?",
-          "en": "What do you see?",
-          "options": ["nuq", "'Iv", "qatlh", "ghorgh"],
-          "answer": "nuq",
-          "why": "What: nuq."
-        },
-        {
-          "q": "＿ SoH?",
-          "en": "Who are you?",
-          "options": ["nuq", "'Iv", "nuqDaq", "'ar"],
-          "answer": "'Iv",
-          "why": "Who: 'Iv."
-        },
-        {
-          "q": "＿ bISuv?",
-          "en": "Why do you fight?",
-          "options": ["nuq", "chay'", "qatlh", "'ar"],
-          "answer": "qatlh",
-          "why": "Why: qatlh."
-        },
-        {
-          "q": "＿ bIQong?",
-          "en": "When do you sleep?",
-          "options": ["nuqDaq", "'Iv", "nuq", "ghorgh"],
-          "answer": "ghorgh",
-          "why": "When: ghorgh."
-        }
-      ]
-    },
-    {
-      "id": "and-but",
-      "title": "And, or, but",
-      "particle": "'ej je 'ach joq",
-      "summary": "Klingon has one set of words for joining sentences ('ej and, 'ach but, pagh or) and another for joining nouns (je and, joq or), which come after the nouns. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "Between sentences: <b>'ej</b> and, <b>'ach</b> but, <b>pagh</b> or (one or the other), <b>qoj</b> and/or. They go between the two sentences.",
-          "examples": [
-            [
-              "jISop {'ej} jItlhutlh.",
-              "jI- + Sop · and · jI- + tlhutlh",
-              "I eat and drink."
-            ],
-            [
-              "jIQong vIneH {'ach} jISuvnIS.",
-              "I-sleep I-want · but · I-fight-need",
-              "I want to sleep, but I have to fight."
-            ]
-          ]
-        },
-        {
-          "h": "Nouns: je after both",
-          "p": "For nouns, the joining word comes <i>after</i> them: <b>HoD yaS je</b> the captain and the officer, <b>Duj tera' joq</b> a ship or Earth.",
-          "examples": [
-            [
-              "HoD yaS {je} vIlegh.",
-              "captain · officer · and · vI- + legh",
-              "I see the captain and the officer."
-            ],
-            [
-              "puq be' {je} vIlegh.",
-              "child · woman · and · vI- + legh",
-              "I see the child and the woman."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "jISop ＿ jItlhutlh.",
-          "en": "I eat and drink.",
-          "options": ["'ej", "je", "'ach", "joq"],
-          "answer": "'ej",
-          "why": "Sentences: 'ej."
-        },
-        {
-          "q": "HoD yaS ＿ vIlegh.",
-          "en": "I see the captain and the officer.",
-          "options": ["'ej", "je", "'ach", "pagh"],
-          "answer": "je",
-          "why": "Nouns: je, after both."
-        },
-        {
-          "q": "jIQong vIneH ＿ jISuvnIS.",
-          "en": "I want to sleep, but I have to fight.",
-          "options": ["'ej", "je", "'ach", "joq"],
-          "answer": "'ach",
-          "why": "But: 'ach."
-        },
-        {
-          "q": "bIQong ＿ bISuv.",
-          "en": "Either you sleep or you fight.",
-          "options": ["je", "'ach", "joq", "pagh"],
-          "answer": "pagh",
-          "why": "One or the other, between sentences: pagh."
-        }
-      ]
-    },
-    {
-      "id": "numbers",
-      "title": "Numbers",
-      "particle": "wa' cha' wej",
-      "summary": "Numbers come before the noun, and the noun needs no plural ending: cha' Duj, two ships. (about A1–A2)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>wa'</b> 1, <b>cha'</b> 2, <b>wej</b> 3, <b>loS</b> 4, <b>vagh</b> 5, <b>jav</b> 6, <b>Soch</b> 7, <b>chorgh</b> 8, <b>Hut</b> 9, <b>wa'maH</b> 10. Tens are <b>-maH</b>: <b>cha'maH</b> 20.",
-          "examples": [
-            [
-              "{cha'} Duj vIlegh.",
-              "two · ship · vI- + legh",
-              "I see two ships."
-            ],
-            ["{wej} yaS.", "three · officer", "three officers"]
-          ]
-        },
-        {
-          "h": "First, twice",
-          "p": "<b>-DIch</b> makes ordinals, after the noun: <b>yaS wa'DIch</b> the first officer. <b>-logh</b> counts times: <b>cha'logh</b> twice.",
-          "examples": [
-            [
-              "yaS {wa'DIch} ghaH.",
-              "officer · first · he-is",
-              "He is the first officer."
-            ],
-            ["{cha'logh} jIjatlh.", "twice · jI- + jatlh", "I spoke twice."]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ Duj vIlegh.",
-          "en": "I see two ships.",
-          "options": ["cha'", "wa'", "wej", "loS"],
-          "answer": "cha'",
-          "why": "Two: cha'."
-        },
-        {
-          "q": "＿ yaS.",
-          "en": "three officers",
-          "options": ["loS", "wej", "cha'", "vagh"],
-          "answer": "wej",
-          "why": "Three: wej."
-        },
-        {
-          "q": "yaS ＿ ghaH.",
-          "en": "He is the first officer.",
-          "options": ["wa'logh", "wa'", "wa'DIch", "wa'maH"],
-          "answer": "wa'DIch",
-          "why": "First: wa'DIch."
-        },
-        {
-          "q": "＿ jIjatlh.",
-          "en": "I spoke twice.",
-          "options": ["cha'DIch", "cha'", "cha'maH", "cha'logh"],
-          "answer": "cha'logh",
-          "why": "Twice: cha'logh."
-        }
-      ]
-    },
-    {
-      "id": "this-that",
-      "title": "This, that, and the topic: -vam, -vetlh, -'e'",
-      "particle": "-vam -vetlh -'e'",
-      "summary": "-vam (this) and -vetlh (that) go at the end of a noun. -'e' marks the topic or focus: “as for…, it's … that”. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>Dujvam</b> this ship, <b>Dujvetlh</b> that ship. They come after any plural or possessive: <b>Dujmeyvam</b> these ships.",
-          "examples": [
-            [
-              "Duj{vam} vIlegh.",
-              "ship + this · vI- + legh",
-              "I see this ship."
-            ],
-            [
-              "yaS{vetlh} 'Iv?",
-              "officer + that · who",
-              "Who is that officer?"
-            ]
-          ]
-        },
-        {
-          "h": "Topic: -'e'",
-          "p": "With “to be” sentences, <b>-'e'</b> marks the subject: <b>HoD ghaH qeylIS'e'</b> Kahless is the captain. Elsewhere it puts weight on a noun: <b>jIH'e'</b> it is I.",
-          "examples": [
-            [
-              "HoD ghaH qeylIS{'e'}.",
-              "captain · he-is · Kahless + topic",
-              "Kahless is the captain."
-            ],
-            [
-              "Duj 'oH Dujvam{'e'}.",
-              "ship · it-is · this ship + topic",
-              "This is a ship."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "Duj＿ vIlegh.",
-          "en": "I see this ship.",
-          "options": ["vam", "vetlh", "'e'", "mey"],
-          "answer": "vam",
-          "why": "This: -vam."
-        },
-        {
-          "q": "yaS＿ 'Iv?",
-          "en": "Who is that officer?",
-          "options": ["vam", "vetlh", "Daq", "pu'"],
-          "answer": "vetlh",
-          "why": "That: -vetlh."
-        },
-        {
-          "q": "HoD ghaH qeylIS＿.",
-          "en": "Kahless is the captain.",
-          "options": ["vam", "vaD", "'e'", "wIj"],
-          "answer": "'e'",
-          "why": "Subject of “to be”: -'e'."
-        },
-        {
-          "q": "Dujmey＿ vIlegh.",
-          "en": "I see these ships.",
-          "options": ["vetlh", "'e'", "Daq", "vam"],
-          "answer": "vam",
-          "why": "-vam after the plural."
         }
       ]
     },

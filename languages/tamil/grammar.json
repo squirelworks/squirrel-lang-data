@@ -19,7 +19,7 @@
     "  everyday phrases with -ங்கள்) — same beginner seam; examples here are original.",
     "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
     "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
-    "72 lessons, from A1 to C1. Lessons 13–72 were added to cover the rest of standard written and polite spoken Tamil grammar; transliteration follows lessons 1–12 (simplified; long vowels doubled)."
+    "72 lessons, from A1 to C1. 60 lessons were added to cover the rest of standard written and polite spoken Tamil grammar; transliteration follows the original 12 lessons (simplified; long vowels doubled)."
   ],
   "title": "Tamil first grammar",
   "intro": "Tamil is a Dravidian language: words are built by adding suffixes one after another, the verb comes last, and the verb ending says who did it, including whether “he” is masculine, feminine or polite. Written Tamil and everyday spoken Tamil differ quite a lot; these lessons use the standard forms, which are understood everywhere and are fine for polite speech. The 72 lessons run from A1 to C1. They start with sentences without “is”, the present tense, இல்லை and இருக்கிறது, questions, the case endings and the past and future, then add the object -ஐ, -க்கு, -ஓடு and -ஆல், the three negatives, the progressive and perfect, the infinitive and verbal participle, relative participles, “if” with -ஆல், clitics like -உம் and தான், and time and purpose clauses, and end with compound verbs, causatives and the passive, unreal conditions, wishes, sandhi doubling and how spoken Tamil differs from written Tamil. Transliteration is simplified: long vowels are doubled and zh is the special Tamil ழ.",
@@ -1365,6 +1365,79 @@
       ]
     },
     {
+      "id": "question-words",
+      "title": "Question words: என்ன, யார், எங்கே",
+      "particle": "என்ன・யார்・எங்கே・எப்போது・ஏன்・எப்படி",
+      "summary": "Question words sit where the answer goes, usually before the verb: நீங்கள் எங்கே போகிறீர்கள்? (where are you going?). (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>என்ன</b> what, <b>யார்</b> who, <b>எங்கே</b> where, <b>எப்போது</b> when, <b>ஏன்</b> why, <b>எப்படி</b> how, <b>எவ்வளவு</b> how much, <b>எத்தனை</b> how many, <b>எது</b> which (one).",
+          "examples": [
+            [
+              "நீங்கள் {எங்கே} போகிறீர்கள்?",
+              "Neengal enge pogireergal?",
+              "Where are you going?"
+            ],
+            ["{ஏன்} தாமதம்?", "En thaamadham?", "Why the delay?"]
+          ]
+        },
+        {
+          "h": "With case endings",
+          "p": "Question words take case endings: <b>யாருக்கு</b> (to whom), <b>யாரை</b> (whom), <b>எங்கிருந்து</b> (from where), <b>எதற்கு</b> (what for). <b>எந்த</b> + noun = which: <b>எந்த</b> பேருந்து?",
+          "examples": [
+            [
+              "நீங்கள் {எங்கிருந்து} வருகிறீர்கள்?",
+              "Neengal engirundhu varugireergal?",
+              "Where are you from?"
+            ],
+            [
+              "{எந்த} பேருந்து மதுரைக்குப் போகும்?",
+              "Endha perundhu madhuraikkup pogum?",
+              "Which bus goes to Madurai?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "அவர் ＿?",
+          "en": "Who is he?",
+          "options": ["யார்", "என்ன", "எங்கே", "எப்போது"],
+          "answer": "யார்",
+          "why": "who: யார்."
+        },
+        {
+          "q": "நீங்கள் ＿ வருவீர்கள்?",
+          "en": "When will you come?",
+          "options": ["யார்", "எப்போது", "என்ன", "எது"],
+          "answer": "எப்போது",
+          "why": "when: எப்போது."
+        },
+        {
+          "q": "இது ＿ ரூபாய்?",
+          "en": "How many rupees is this?",
+          "options": ["எங்கே", "யார்", "எத்தனை", "ஏன்"],
+          "answer": "எத்தனை",
+          "why": "how many: எத்தனை."
+        },
+        {
+          "q": "ரயில் நிலையத்துக்கு ＿ போவது?",
+          "en": "How do I get to the railway station?",
+          "options": ["யார்", "எது", "எத்தனை", "எப்படி"],
+          "answer": "எப்படி",
+          "why": "how: எப்படி."
+        },
+        {
+          "q": "இந்தப் பரிசு ＿?",
+          "en": "Who is this present for?",
+          "options": ["யாருக்கு", "யாரை", "யார்", "யாரால்"],
+          "answer": "யாருக்கு",
+          "why": "to whom: யாருக்கு."
+        }
+      ]
+    },
+    {
       "id": "accusative",
       "title": "The object: -ஐ",
       "particle": "-ஐ・என்னை・அவனை",
@@ -1913,6 +1986,619 @@
       ]
     },
     {
+      "id": "infinitive",
+      "title": "The infinitive: போக, செய்ய",
+      "particle": "-அ・-க்க",
+      "summary": "The infinitive ends in -அ: போக, வர, செய்ய, பார்க்க. It follows verbs like வேண்டும், முடியும், ஆரம்பி, and shows purpose. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Forming: போ → <b>போக</b>, வா → <b>வர</b>, செய் → <b>செய்ய</b>, படி → <b>படிக்க</b>, சாப்பிடு → <b>சாப்பிட</b>. With other verbs: தமிழ் <b>கற்க</b> ஆசை (I want to learn Tamil).",
+          "examples": [
+            [
+              "நான் ஊருக்குப் {போக} வேண்டும்.",
+              "Naan oorukkup poga vendum.",
+              "I need to go home."
+            ],
+            [
+              "அவள் பாட {ஆரம்பித்தாள்}.",
+              "Aval paada aarambiththaal.",
+              "She started to sing."
+            ]
+          ]
+        },
+        {
+          "h": "Purpose",
+          "p": "The infinitive alone can show purpose after motion verbs: சாப்பிட<b>ப்</b> போனேன் (I went to eat). <b>-அ ஆசை</b> = wish to, <b>-அ விரும்பு</b> = like to.",
+          "examples": [
+            [
+              "நாங்கள் படம் {பார்க்கப்} போனோம்.",
+              "Naangal padam paarkkap ponom.",
+              "We went to see a film."
+            ],
+            [
+              "நான் இந்தியா {வர} விரும்புகிறேன்.",
+              "Naan indhiyaa vara virumbugiren.",
+              "I'd like to come to India."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "நான் தூங்க ＿.",
+          "en": "I need to sleep.",
+          "options": ["வேண்டும்", "போனேன்", "இருந்தேன்", "செய்தேன்"],
+          "answer": "வேண்டும்",
+          "why": "Need to: -அ வேண்டும்."
+        },
+        {
+          "q": "எனக்கு நீந்த＿ தெரியும்.",
+          "en": "I know how to swim.",
+          "options": ["த்து", "த்", "ம்", "ல்"],
+          "answer": "த்",
+          "why": "நீந்த + doubled consonant before த."
+        },
+        {
+          "q": "அவன் ＿ வந்தான்.",
+          "en": "He came to study.",
+          "options": ["படித்து", "படித்த", "படிக்க", "படிப்பது"],
+          "answer": "படிக்க",
+          "why": "Purpose: infinitive."
+        },
+        {
+          "q": "மழை பெய்ய ＿.",
+          "en": "It started to rain.",
+          "options": ["வேண்டும்", "முடியும்", "தெரியும்", "ஆரம்பித்தது"],
+          "answer": "ஆரம்பித்தது",
+          "why": "start: -அ ஆரம்பி."
+        },
+        {
+          "q": "நான் உங்களைப் ＿ விரும்புகிறேன்.",
+          "en": "I'd like to see you.",
+          "options": ["பார்க்க", "பார்த்து", "பார்த்த", "பார்ப்பது"],
+          "answer": "பார்க்க",
+          "why": "Infinitive: பார்க்க."
+        }
+      ]
+    },
+    {
+      "id": "adverbs",
+      "title": "How: -ஆக (மெதுவாக, நன்றாக)",
+      "particle": "-ஆக",
+      "summary": "Adverbs are nouns or adjectives + -ஆக: மெதுவாக (slowly), வேகமாக (fast), நன்றாக (well). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>மெது</b> → <b>மெதுவாக</b>, <b>வேகம்</b> → <b>வேகமாக</b>, <b>சத்தம்</b> → <b>சத்தமாக</b> (loudly), <b>அமைதி</b> → <b>அமைதியாக</b> (quietly). Irregular: <b>நன்றாக</b> (well).",
+          "examples": [
+            [
+              "{மெதுவாகப்} பேசுங்கள்.",
+              "Meduvaagap pesungal.",
+              "Please speak slowly."
+            ],
+            [
+              "அவள் {நன்றாகப்} பாடுகிறாள்.",
+              "Aval nandraagap paadugiraal.",
+              "She sings well."
+            ]
+          ]
+        },
+        {
+          "h": "Becoming: -ஆக ஆகு",
+          "p": "<b>-ஆக</b> also means \"as\": ஆசிரியர<b>ாக</b> வேலை செய்கிறேன் (I work as a teacher). With ஆகு / மாறு = become: பெரிய<b>வனாக</b> ஆனான்.",
+          "examples": [
+            [
+              "அவர் டாக்டர{ாக} வேலை செய்கிறார்.",
+              "Avar daaktaraaga velai seigiraar.",
+              "He works as a doctor."
+            ],
+            [
+              "{சீக்கிரமாக} வாருங்கள்.",
+              "Seekkiramaaga vaarungal.",
+              "Come quickly."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "வண்டியை ＿ ஓட்டுங்கள்.",
+          "en": "Drive slowly.",
+          "options": ["மெதுவாக", "மெதுவான", "மெது", "மெதுவு"],
+          "answer": "மெதுவாக",
+          "why": "-ஆக adverb."
+        },
+        {
+          "q": "அவன் ＿ ஓடுகிறான்.",
+          "en": "He runs fast.",
+          "options": ["வேகமான", "வேகமாக", "வேகம்", "வேகத்தில் ஆக"],
+          "answer": "வேகமாக",
+          "why": "-ஆக adverb."
+        },
+        {
+          "q": "குழந்தை தூங்குகிறது, ＿ இருங்கள்.",
+          "en": "The baby's asleep, be quiet.",
+          "options": ["அமைதியான", "அமைதி", "அமைதியாக", "அமைதியை"],
+          "answer": "அமைதியாக",
+          "why": "-ஆக adverb."
+        },
+        {
+          "q": "நீங்கள் தமிழ் ＿ப் பேசுகிறீர்கள்.",
+          "en": "You speak Tamil well.",
+          "options": ["நல்ல", "நல்லது", "நன்று", "நன்றாக"],
+          "answer": "நன்றாக",
+          "why": "well: நன்றாக."
+        },
+        {
+          "q": "அவள் ஆசிரியை＿ இருக்கிறாள்.",
+          "en": "She's a teacher (works as one).",
+          "options": ["யாக", "யான", "யின்", "யை"],
+          "answer": "யாக",
+          "why": "as: -ஆக."
+        }
+      ]
+    },
+    {
+      "id": "honorifics",
+      "title": "Respect: அவர், நீங்கள், -ங்கள்",
+      "particle": "நீ・நீங்கள்・அவன்/அவள்・அவர்",
+      "summary": "Tamil marks respect in pronouns and verbs. நீங்கள் and அவர் (with -ஆர் verb endings) are polite; நீ and அவன் / அவள் are for close friends, children and juniors. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "You: <b>நீ</b> (intimate) vs <b>நீங்கள்</b> (polite). He/she: <b>அவன்</b> / <b>அவள்</b> vs <b>அவர்</b> (polite, either gender). The verb follows: அவர் <b>வருகிறார்</b>, அவன் <b>வருகிறான்</b>.",
+          "examples": [
+            [
+              "{நீங்கள்} எப்படி இருக்கிறீர்கள்?",
+              "Neengal eppadi irukkireergal?",
+              "How are you? (polite)"
+            ],
+            [
+              "{அவர்} எங்கள் ஆசிரியர்.",
+              "Avar engal aasiriyar.",
+              "He/she is our teacher. (respectful)"
+            ]
+          ]
+        },
+        {
+          "h": "Respectful words",
+          "p": "Elders get <b>-ங்கள்</b> imperatives (<b>வாருங்கள்</b>, <b>உட்காருங்கள்</b>). Titles: <b>திரு.</b> (Mr), <b>திருமதி</b> (Mrs), <b>அவர்கள்</b> after a name for great respect: காந்தி <b>அவர்கள்</b>.",
+          "examples": [
+            ["{உட்காருங்கள்}.", "Utkaarungal.", "Please sit down."],
+            [
+              "{திரு.} ராமன் வந்தார்.",
+              "Thiru Raaman vandhaar.",
+              "Mr Raman came."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ எங்கே போகிறாய்?",
+          "en": "Where are you going? (to a friend)",
+          "options": ["நீ", "நீங்கள்", "அவர்", "நான்"],
+          "answer": "நீ",
+          "why": "Intimate: நீ (with -ஆய்)."
+        },
+        {
+          "q": "தாத்தா ＿.",
+          "en": "Grandpa has come.",
+          "options": ["வந்தான்", "வந்தார்", "வந்தது", "வந்தாள்"],
+          "answer": "வந்தார்",
+          "why": "Respect: -ஆர்."
+        },
+        {
+          "q": "＿ சாப்பிடுங்கள்.",
+          "en": "Please eat. (to an elder)",
+          "options": ["நீ", "அவன்", "நீங்கள்", "அது"],
+          "answer": "நீங்கள்",
+          "why": "Polite: நீங்கள் + -ங்கள்."
+        },
+        {
+          "q": "என் தம்பி பள்ளிக்குப் ＿.",
+          "en": "My little brother went to school.",
+          "options": ["போனார்", "போனது", "போனீர்கள்", "போனான்"],
+          "answer": "போனான்",
+          "why": "Younger male: -ஆன்."
+        },
+        {
+          "q": "＿ ராமன் அவர்கள்",
+          "en": "Mr Raman (formal)",
+          "options": ["திரு.", "திருமதி", "நீ", "அவள்"],
+          "answer": "திரு.",
+          "why": "Mr: திரு."
+        }
+      ]
+    },
+    {
+      "id": "liking-knowing",
+      "title": "Like, know, understand: பிடிக்கும், தெரியும், புரியும்",
+      "particle": "-க்கு + பிடிக்கும்・தெரியும்・புரியும்",
+      "summary": "Liking, knowing and understanding put the person in the dative: எனக்கு இட்லி பிடிக்கும் (I like idli), எனக்குத் தெரியும் (I know). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>எனக்கு</b> + thing + <b>பிடிக்கும்</b> (like) / <b>பிடிக்காது</b> (don't like). <b>தெரியும்</b> / <b>தெரியாது</b> = know / don't know. <b>புரிகிறது</b> / <b>புரியவில்லை</b> = understand / don't.",
+          "examples": [
+            [
+              "{எனக்கு} இசை {பிடிக்கும்}.",
+              "Enakku isai pidikkum.",
+              "I like music."
+            ],
+            [
+              "{அவருக்குத்} தமிழ் {தெரியும்}.",
+              "Avarukkuth thamizh theriyum.",
+              "He knows Tamil."
+            ]
+          ]
+        },
+        {
+          "h": "Know how to",
+          "p": "Infinitive + <b>தெரியும்</b> = know how to: எனக்கு நீந்த<b>த் தெரியும்</b>. Past liking: <b>பிடித்தது</b> (I liked it): படம் <b>பிடித்ததா</b>? (did you like the film?).",
+          "examples": [
+            [
+              "உங்களுக்குக் கார் ஓட்டத் {தெரியுமா}?",
+              "Ungalukkuk kaar ottath theriyumaa?",
+              "Do you know how to drive?"
+            ],
+            [
+              "படம் உங்களுக்குப் {பிடித்ததா}?",
+              "Padam ungalukkup pidiththadhaa?",
+              "Did you like the film?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿க் காபி பிடிக்காது.",
+          "en": "I don't like coffee.",
+          "options": ["எனக்கு", "நான்", "என்னை", "என்"],
+          "answer": "எனக்கு",
+          "why": "Dative: எனக்கு."
+        },
+        {
+          "q": "அவளுக்கு ஆங்கிலம் ＿.",
+          "en": "She knows English.",
+          "options": ["பிடிக்கும் இல்லை", "தெரியும்", "புரிந்தாள்", "தெரிவாள்"],
+          "answer": "தெரியும்",
+          "why": "know: தெரியும்."
+        },
+        {
+          "q": "எனக்கு இது ＿.",
+          "en": "I don't understand this.",
+          "options": [
+            "புரியும் இல்லை",
+            "புரிகிறேன்",
+            "புரியவில்லை",
+            "பிடிக்கவில்லை தெரியும்"
+          ],
+          "answer": "புரியவில்லை",
+          "why": "don't understand: புரியவில்லை."
+        },
+        {
+          "q": "உங்களுக்குச் சமைக்கத் ＿?",
+          "en": "Do you know how to cook?",
+          "options": ["பிடிக்குமா", "வேண்டுமா", "முடியுமா இல்லை", "தெரியுமா"],
+          "answer": "தெரியுமா",
+          "why": "know how to: -அத் தெரியுமா."
+        },
+        {
+          "q": "சாப்பாடு உங்களுக்குப் ＿?",
+          "en": "Did you like the food?",
+          "options": ["பிடித்ததா", "பிடிக்கும்", "பிடிக்காது", "தெரிந்ததா"],
+          "answer": "பிடித்ததா",
+          "why": "Past: பிடித்ததா."
+        }
+      ]
+    },
+    {
+      "id": "ordinals",
+      "title": "First, second: முதல், -ஆவது",
+      "particle": "முதல்・இரண்டாவது・கடைசி",
+      "summary": "Ordinals are number + -ஆவது: இரண்டாவது (second), மூன்றாவது (third). First is முதல், last is கடைசி. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>முதல்</b> (first), <b>இரண்டாவது</b>, <b>மூன்றாவது</b>, <b>நான்காவது</b>, <b>ஐந்தாவது</b>… <b>கடைசி</b> (last). Before a noun: <b>முதல்</b> நாள், <b>இரண்டாவது</b> மாடி.",
+          "examples": [
+            [
+              "இது என் {முதல்} பயணம்.",
+              "Idhu en mudhal payanam.",
+              "This is my first trip."
+            ],
+            [
+              "எங்கள் வீடு {மூன்றாவது} மாடியில் இருக்கிறது.",
+              "Engal veedu moondraavadhu maadiyil irukkiradhu.",
+              "Our flat is on the third floor."
+            ]
+          ]
+        },
+        {
+          "h": "Next and previous",
+          "p": "<b>அடுத்த</b> = next: <b>அடுத்த</b> வாரம். <b>போன</b> / <b>கடந்த</b> = last (previous): <b>போன</b> மாதம். <b>முதலில்</b> = first(ly), at first.",
+          "examples": [
+            [
+              "{அடுத்த} நிறுத்தத்தில் இறங்குங்கள்.",
+              "Aduththa niruththaththil irangungal.",
+              "Get off at the next stop."
+            ],
+            [
+              "{முதலில்} சாப்பிடுங்கள்.",
+              "Mudhalil saappidungal.",
+              "Eat first."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "அவன் ＿ இடம் பிடித்தான்.",
+          "en": "He came first (took first place).",
+          "options": ["முதல்", "ஒன்றாவது", "ஒரு", "கடைசி ஆவது"],
+          "answer": "முதல்",
+          "why": "first: முதல்."
+        },
+        {
+          "q": "＿ வகுப்பு",
+          "en": "the second class",
+          "options": ["இரண்டு", "இரண்டாவது", "இருவது", "இரண்டாம் ஆவது"],
+          "answer": "இரண்டாவது",
+          "why": "second: இரண்டாவது."
+        },
+        {
+          "q": "＿ வாரம் சந்திப்போம்.",
+          "en": "Let's meet next week.",
+          "options": ["போன", "முதல்", "அடுத்த", "கடைசி"],
+          "answer": "அடுத்த",
+          "why": "next: அடுத்த."
+        },
+        {
+          "q": "＿ மாதம் நான் ஊருக்குப் போனேன்.",
+          "en": "Last month I went home.",
+          "options": ["அடுத்த", "முதல்", "வரும்", "போன"],
+          "answer": "போன",
+          "why": "last (previous): போன."
+        },
+        {
+          "q": "இது ＿ பஸ்.",
+          "en": "This is the last bus.",
+          "options": ["கடைசி", "முதல்", "அடுத்த", "ஐந்து"],
+          "answer": "கடைசி",
+          "why": "last: கடைசி."
+        }
+      ]
+    },
+    {
+      "id": "only-mattum",
+      "title": "Only: மட்டும்",
+      "particle": "மட்டும்・மட்டுமே・மட்டுமல்ல",
+      "summary": "மட்டும் after a word means \"only\": நான் மட்டும் வந்தேன் (only I came). மட்டுமல்ல = not only. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Word + <b>மட்டும்</b>: தண்ணீர் <b>மட்டும்</b> குடித்தேன் (I drank only water). Stronger: <b>மட்டுமே</b>. It can also mean \"as for\": நீ <b>மட்டும்</b> ஏன் வரவில்லை? (why didn't you, of all people, come?).",
+          "examples": [
+            [
+              "எனக்கு ஒரு காபி {மட்டும்}.",
+              "Enakku oru kaapi mattum.",
+              "Just a coffee for me."
+            ],
+            [
+              "இன்று {மட்டும்} கடை திறந்திருக்கும்.",
+              "Indru mattum kadai thirandhirukkum.",
+              "The shop will be open only today."
+            ]
+          ]
+        },
+        {
+          "h": "Not only … but also",
+          "p": "<b>-மட்டுமல்ல, -உம்</b>: அவன் பாட<b>மட்டுமல்ல</b>, ஆட<b>வும்</b> தெரியும் (he can not only sing but also dance).",
+          "examples": [
+            [
+              "அவள் தமிழ் {மட்டுமல்ல}, இந்தி{யும்} பேசுவாள்.",
+              "Aval thamizh mattumalla, indhiyum pesuvaal.",
+              "She speaks not only Tamil but also Hindi."
+            ],
+            [
+              "பத்து நிமிடம் {மட்டுமே} இருக்கிறது.",
+              "Paththu nimidam mattume irukkiradhu.",
+              "There are only ten minutes left."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "எனக்குத் தமிழ் ＿ தெரியும்.",
+          "en": "I only know Tamil.",
+          "options": ["மட்டும்", "உம்", "தான் இல்லை", "ஓ"],
+          "answer": "மட்டும்",
+          "why": "only: மட்டும்."
+        },
+        {
+          "q": "நான் ஒரு நாள் ＿ இருப்பேன்.",
+          "en": "I'll stay only one day.",
+          "options": ["எல்லாம்", "மட்டும்", "ஆவது", "ஓ"],
+          "answer": "மட்டும்",
+          "why": "only: மட்டும்."
+        },
+        {
+          "q": "அவன் படிப்பில் ＿, விளையாட்டிலும் சிறந்தவன்.",
+          "en": "He's good not only at studies but also at sports.",
+          "options": ["மட்டும்", "மட்டுமே", "மட்டுமல்ல", "ஆனால்"],
+          "answer": "மட்டுமல்ல",
+          "why": "not only: மட்டுமல்ல."
+        },
+        {
+          "q": "ஐந்து ரூபாய் ＿ வேண்டும்.",
+          "en": "I need only five rupees.",
+          "options": ["எல்லாம்", "கூட", "இருந்தாலும்", "மட்டும்"],
+          "answer": "மட்டும்",
+          "why": "only: மட்டும்."
+        },
+        {
+          "q": "இங்கே பெண்கள் ＿ அனுமதி.",
+          "en": "Only women are allowed here.",
+          "options": ["மட்டுமே", "மட்டுமல்ல", "எல்லோரும்", "கூட"],
+          "answer": "மட்டுமே",
+          "why": "strongly only: மட்டுமே."
+        }
+      ]
+    },
+    {
+      "id": "postpositions",
+      "title": "Place words: மேலே, கீழே, பக்கத்தில்",
+      "particle": "மேல்・கீழ்・முன்・பின்・உள்ளே・வெளியே・பக்கத்தில்",
+      "summary": "Place postpositions follow a noun, often in the genitive or with -க்கு: மேசையின் மேல் (on the table), வீட்டுக்குப் பின்னால் (behind the house). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>மேல்</b> / <b>மேலே</b> on, above; <b>கீழ்</b> / <b>கீழே</b> under; <b>முன்னால்</b> in front; <b>பின்னால்</b> behind; <b>உள்ளே</b> inside; <b>வெளியே</b> outside; <b>பக்கத்தில்</b> near, next to; <b>நடுவில்</b> in the middle.",
+          "examples": [
+            [
+              "புத்தகம் மேசை{யின் மேல்} இருக்கிறது.",
+              "Puththagam mesaiyin mel irukkiradhu.",
+              "The book is on the table."
+            ],
+            [
+              "கோயில் வீட்டுக்குப் {பக்கத்தில்} இருக்கிறது.",
+              "Koyil veettukkup pakkaththil irukkiradhu.",
+              "The temple is next to the house."
+            ]
+          ]
+        },
+        {
+          "h": "Alone as adverbs",
+          "p": "With -ஏ they stand alone: <b>உள்ளே</b> வாருங்கள் (come inside), <b>மேலே</b> போ (go up), <b>வெளியே</b> போனார் (he went out). <b>எதிரே</b> = opposite: பள்ளிக்கு <b>எதிரே</b>.",
+          "examples": [
+            ["{உள்ளே} வாருங்கள்.", "Ulle vaarungal.", "Come inside, please."],
+            [
+              "வங்கி பள்ளிக்கு {எதிரே} இருக்கிறது.",
+              "Vangi pallikku edhire irukkiradhu.",
+              "The bank is opposite the school."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "பூனை கட்டிலுக்குக் ＿ இருக்கிறது.",
+          "en": "The cat is under the bed.",
+          "options": ["கீழே", "மேலே", "உள்ளே", "முன்னால்"],
+          "answer": "கீழே",
+          "why": "under: கீழே."
+        },
+        {
+          "q": "அவர் ＿ போயிருக்கிறார்.",
+          "en": "He has gone out.",
+          "options": ["உள்ளே", "வெளியே", "மேலே", "கீழே"],
+          "answer": "வெளியே",
+          "why": "out: வெளியே."
+        },
+        {
+          "q": "கார் வீட்டுக்கு ＿ நிற்கிறது.",
+          "en": "The car is parked in front of the house.",
+          "options": ["பின்னால்", "மேல்", "முன்னால்", "உள்ளே"],
+          "answer": "முன்னால்",
+          "why": "in front: முன்னால்."
+        },
+        {
+          "q": "என் அலுவலகம் ரயில் நிலையத்துக்குப் ＿ இருக்கிறது.",
+          "en": "My office is near the station.",
+          "options": ["உள்ளே", "மேல்", "கீழே", "பக்கத்தில்"],
+          "answer": "பக்கத்தில்",
+          "why": "near: பக்கத்தில்."
+        },
+        {
+          "q": "மருந்துக்கடை கோயிலுக்கு ＿ இருக்கிறது.",
+          "en": "The pharmacy is opposite the temple.",
+          "options": ["எதிரே", "பின்", "மேலே", "நடுவே இல்லை"],
+          "answer": "எதிரே",
+          "why": "opposite: எதிரே."
+        }
+      ]
+    },
+    {
+      "id": "vendaam",
+      "title": "Don't want, needn't: வேண்டாம்",
+      "particle": "வேண்டாம்・-அ வேண்டாம்・-அத் தேவையில்லை",
+      "summary": "வேண்டாம் is the negative of வேண்டும்: \"don't want\" or \"no need\". After an infinitive it means \"please don't\" or \"you needn't\". (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Noun + <b>வேண்டாம்</b>: எனக்குச் சர்க்கரை <b>வேண்டாம்</b> (I don't want sugar). Infinitive + <b>வேண்டாம்</b>: நீங்கள் வர <b>வேண்டாம்</b> (you needn't come / please don't come).",
+          "examples": [
+            [
+              "எனக்குக் காபி {வேண்டாம்}.",
+              "Enakkuk kaapi vendaam.",
+              "I don't want coffee."
+            ],
+            [
+              "கவலைப்பட {வேண்டாம்}.",
+              "Kavalaippada vendaam.",
+              "No need to worry."
+            ]
+          ]
+        },
+        {
+          "h": "Needn't: தேவையில்லை",
+          "p": "<b>-அத் தேவையில்லை</b> = there's no need to: டிக்கெட் வாங்க<b>த் தேவையில்லை</b>. Past: <b>வேண்டியதில்லை</b> = didn't have to. <b>வேண்டுமா?</b> = do you want / need?",
+          "examples": [
+            [
+              "இன்று நீங்கள் வேலைக்கு வர{த் தேவையில்லை}.",
+              "Indru neengal velaikku varath thevaiyillai.",
+              "You don't need to come to work today."
+            ],
+            [
+              "தண்ணீர் {வேண்டுமா}?",
+              "Thanneer vendumaa?",
+              "Do you want some water?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "எனக்கு எதுவும் ＿.",
+          "en": "I don't want anything.",
+          "options": ["வேண்டாம்", "வேண்டும்", "வேண்டுமா", "தேவை"],
+          "answer": "வேண்டாம்",
+          "why": "don't want: வேண்டாம்."
+        },
+        {
+          "q": "நீங்கள் காத்திருக்க ＿.",
+          "en": "You needn't wait.",
+          "options": ["வேண்டும்", "வேண்டாம்", "முடியும்", "தெரியும்"],
+          "answer": "வேண்டாம்",
+          "why": "needn't: -அ வேண்டாம்."
+        },
+        {
+          "q": "உங்களுக்கு டீ ＿?",
+          "en": "Would you like tea?",
+          "options": ["வேண்டாம்", "வேண்டும்", "வேண்டுமா", "தேவையில்லை"],
+          "answer": "வேண்டுமா",
+          "why": "Question: வேண்டுமா."
+        },
+        {
+          "q": "பணம் கொடுக்கத் ＿.",
+          "en": "There's no need to pay.",
+          "options": ["தேவை", "வேண்டுமா", "முடியும்", "தேவையில்லை"],
+          "answer": "தேவையில்லை",
+          "why": "no need: -அத் தேவையில்லை."
+        },
+        {
+          "q": "அவனிடம் சொல்ல ＿.",
+          "en": "Please don't tell him.",
+          "options": ["வேண்டாம்", "வேண்டும்", "முடியாது", "தெரியாது"],
+          "answer": "வேண்டாம்",
+          "why": "please don't: -அ வேண்டாம்."
+        }
+      ]
+    },
+    {
       "id": "progressive",
       "title": "Is doing: -கொண்டிருக்கிறேன்",
       "particle": "verbal participle + கொண்டிரு",
@@ -2073,83 +2759,6 @@
           "options": ["ருக்கிறோம்", "ருக்கிறார்கள்", "ருக்கிறேன்", "ருந்தேன்"],
           "answer": "ருக்கிறோம்",
           "why": "we: -இருக்கிறோம்."
-        }
-      ]
-    },
-    {
-      "id": "infinitive",
-      "title": "The infinitive: போக, செய்ய",
-      "particle": "-அ・-க்க",
-      "summary": "The infinitive ends in -அ: போக, வர, செய்ய, பார்க்க. It follows verbs like வேண்டும், முடியும், ஆரம்பி, and shows purpose. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "Forming: போ → <b>போக</b>, வா → <b>வர</b>, செய் → <b>செய்ய</b>, படி → <b>படிக்க</b>, சாப்பிடு → <b>சாப்பிட</b>. With other verbs: தமிழ் <b>கற்க</b> ஆசை (I want to learn Tamil).",
-          "examples": [
-            [
-              "நான் ஊருக்குப் {போக} வேண்டும்.",
-              "Naan oorukkup poga vendum.",
-              "I need to go home."
-            ],
-            [
-              "அவள் பாட {ஆரம்பித்தாள்}.",
-              "Aval paada aarambiththaal.",
-              "She started to sing."
-            ]
-          ]
-        },
-        {
-          "h": "Purpose",
-          "p": "The infinitive alone can show purpose after motion verbs: சாப்பிட<b>ப்</b> போனேன் (I went to eat). <b>-அ ஆசை</b> = wish to, <b>-அ விரும்பு</b> = like to.",
-          "examples": [
-            [
-              "நாங்கள் படம் {பார்க்கப்} போனோம்.",
-              "Naangal padam paarkkap ponom.",
-              "We went to see a film."
-            ],
-            [
-              "நான் இந்தியா {வர} விரும்புகிறேன்.",
-              "Naan indhiyaa vara virumbugiren.",
-              "I'd like to come to India."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "நான் தூங்க ＿.",
-          "en": "I need to sleep.",
-          "options": ["வேண்டும்", "போனேன்", "இருந்தேன்", "செய்தேன்"],
-          "answer": "வேண்டும்",
-          "why": "Need to: -அ வேண்டும்."
-        },
-        {
-          "q": "எனக்கு நீந்த＿ தெரியும்.",
-          "en": "I know how to swim.",
-          "options": ["த்து", "த்", "ம்", "ல்"],
-          "answer": "த்",
-          "why": "நீந்த + doubled consonant before த."
-        },
-        {
-          "q": "அவன் ＿ வந்தான்.",
-          "en": "He came to study.",
-          "options": ["படித்து", "படித்த", "படிக்க", "படிப்பது"],
-          "answer": "படிக்க",
-          "why": "Purpose: infinitive."
-        },
-        {
-          "q": "மழை பெய்ய ＿.",
-          "en": "It started to rain.",
-          "options": ["வேண்டும்", "முடியும்", "தெரியும்", "ஆரம்பித்தது"],
-          "answer": "ஆரம்பித்தது",
-          "why": "start: -அ ஆரம்பி."
-        },
-        {
-          "q": "நான் உங்களைப் ＿ விரும்புகிறேன்.",
-          "en": "I'd like to see you.",
-          "options": ["பார்க்க", "பார்த்து", "பார்த்த", "பார்ப்பது"],
-          "answer": "பார்க்க",
-          "why": "Infinitive: பார்க்க."
         }
       ]
     },
@@ -2386,306 +2995,6 @@
           "options": ["தால்", "து", "த", "தாலும்"],
           "answer": "தால்",
           "why": "Conditional -ஆல்."
-        }
-      ]
-    },
-    {
-      "id": "concessive",
-      "title": "Even if: -ஆலும்",
-      "particle": "-ஆலும்・இருந்தாலும்",
-      "summary": "Add -உம் to the conditional for \"even if, although\": மழை பெய்தாலும் போவேன் (I'll go even if it rains). (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "Conditional + <b>-உம்</b>: வந்<b>தாலும்</b>, சொன்<b>னாலும்</b>, பார்த்<b>தாலும்</b>. <b>இருந்தாலும்</b> alone = even so, however: <b>இருந்தாலும்</b> நான் போகிறேன்.",
-          "examples": [
-            [
-              "மழை {பெய்தாலும்} நான் போவேன்.",
-              "Mazhai peidhaalum naan poven.",
-              "I'll go even if it rains."
-            ],
-            [
-              "எவ்வளவு {சொன்னாலும்} அவன் கேட்கமாட்டான்.",
-              "Evvalavu sonnaalum avan ketkamaattaan.",
-              "However much you tell him, he won't listen."
-            ]
-          ]
-        },
-        {
-          "h": "Wh-word + -ஆலும்",
-          "p": "With question words it means \"-ever\": <b>யார் வந்தாலும்</b> (whoever comes), <b>எங்கே போனாலும்</b> (wherever you go), <b>என்ன நடந்தாலும்</b> (whatever happens).",
-          "examples": [
-            [
-              "{என்ன நடந்தாலும்} கவலைப்படாதே.",
-              "Enna nadandhaalum kavalaippadaadhe.",
-              "Whatever happens, don't worry."
-            ],
-            [
-              "களைப்பாக இருந்தது. {இருந்தாலும்} வேலையை முடித்தேன்.",
-              "Kalaippaaga irundhadhu. Irundhaalum velaiyai mudiththen.",
-              "I was tired. Even so, I finished the work."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "விலை அதிகம் ＿ வாங்குவேன்.",
-          "en": "Even if it's expensive, I'll buy it.",
-          "options": ["ஆனாலும்", "ஆனால்", "ஆக", "ஆகும்"],
-          "answer": "ஆனாலும்",
-          "why": "Even if: -ஆலும்."
-        },
-        {
-          "q": "＿ வந்தாலும் கதவைத் திறக்காதே.",
-          "en": "Whoever comes, don't open the door.",
-          "options": ["என்ன", "யார்", "எங்கே", "எப்போது"],
-          "answer": "யார்",
-          "why": "whoever: யார் … -ஆலும்."
-        },
-        {
-          "q": "எங்கே ＿ என்னை அழையுங்கள்.",
-          "en": "Wherever you go, call me.",
-          "options": ["போனால்", "போய்", "போனாலும்", "போக"],
-          "answer": "போனாலும்",
-          "why": "wherever: எங்கே … -ஆலும்."
-        },
-        {
-          "q": "பசியாக இருந்தது; ＿ சாப்பிடவில்லை.",
-          "en": "I was hungry; even so, I didn't eat.",
-          "options": ["இருந்தால்", "இருக்க", "இருந்து", "இருந்தாலும்"],
-          "answer": "இருந்தாலும்",
-          "why": "even so: இருந்தாலும்."
-        },
-        {
-          "q": "அவன் படித்＿ தேறவில்லை.",
-          "en": "Even though he studied, he didn't pass.",
-          "options": ["தாலும்", "தால்", "து", "த"],
-          "answer": "தாலும்",
-          "why": "Although: -ஆலும்."
-        }
-      ]
-    },
-    {
-      "id": "adverbs",
-      "title": "How: -ஆக (மெதுவாக, நன்றாக)",
-      "particle": "-ஆக",
-      "summary": "Adverbs are nouns or adjectives + -ஆக: மெதுவாக (slowly), வேகமாக (fast), நன்றாக (well). (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>மெது</b> → <b>மெதுவாக</b>, <b>வேகம்</b> → <b>வேகமாக</b>, <b>சத்தம்</b> → <b>சத்தமாக</b> (loudly), <b>அமைதி</b> → <b>அமைதியாக</b> (quietly). Irregular: <b>நன்றாக</b> (well).",
-          "examples": [
-            [
-              "{மெதுவாகப்} பேசுங்கள்.",
-              "Meduvaagap pesungal.",
-              "Please speak slowly."
-            ],
-            [
-              "அவள் {நன்றாகப்} பாடுகிறாள்.",
-              "Aval nandraagap paadugiraal.",
-              "She sings well."
-            ]
-          ]
-        },
-        {
-          "h": "Becoming: -ஆக ஆகு",
-          "p": "<b>-ஆக</b> also means \"as\": ஆசிரியர<b>ாக</b> வேலை செய்கிறேன் (I work as a teacher). With ஆகு / மாறு = become: பெரிய<b>வனாக</b> ஆனான்.",
-          "examples": [
-            [
-              "அவர் டாக்டர{ாக} வேலை செய்கிறார்.",
-              "Avar daaktaraaga velai seigiraar.",
-              "He works as a doctor."
-            ],
-            [
-              "{சீக்கிரமாக} வாருங்கள்.",
-              "Seekkiramaaga vaarungal.",
-              "Come quickly."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "வண்டியை ＿ ஓட்டுங்கள்.",
-          "en": "Drive slowly.",
-          "options": ["மெதுவாக", "மெதுவான", "மெது", "மெதுவு"],
-          "answer": "மெதுவாக",
-          "why": "-ஆக adverb."
-        },
-        {
-          "q": "அவன் ＿ ஓடுகிறான்.",
-          "en": "He runs fast.",
-          "options": ["வேகமான", "வேகமாக", "வேகம்", "வேகத்தில் ஆக"],
-          "answer": "வேகமாக",
-          "why": "-ஆக adverb."
-        },
-        {
-          "q": "குழந்தை தூங்குகிறது, ＿ இருங்கள்.",
-          "en": "The baby's asleep, be quiet.",
-          "options": ["அமைதியான", "அமைதி", "அமைதியாக", "அமைதியை"],
-          "answer": "அமைதியாக",
-          "why": "-ஆக adverb."
-        },
-        {
-          "q": "நீங்கள் தமிழ் ＿ப் பேசுகிறீர்கள்.",
-          "en": "You speak Tamil well.",
-          "options": ["நல்ல", "நல்லது", "நன்று", "நன்றாக"],
-          "answer": "நன்றாக",
-          "why": "well: நன்றாக."
-        },
-        {
-          "q": "அவள் ஆசிரியை＿ இருக்கிறாள்.",
-          "en": "She's a teacher (works as one).",
-          "options": ["யாக", "யான", "யின்", "யை"],
-          "answer": "யாக",
-          "why": "as: -ஆக."
-        }
-      ]
-    },
-    {
-      "id": "question-words",
-      "title": "Question words: என்ன, யார், எங்கே",
-      "particle": "என்ன・யார்・எங்கே・எப்போது・ஏன்・எப்படி",
-      "summary": "Question words sit where the answer goes, usually before the verb: நீங்கள் எங்கே போகிறீர்கள்? (where are you going?). (about A1)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>என்ன</b> what, <b>யார்</b> who, <b>எங்கே</b> where, <b>எப்போது</b> when, <b>ஏன்</b> why, <b>எப்படி</b> how, <b>எவ்வளவு</b> how much, <b>எத்தனை</b> how many, <b>எது</b> which (one).",
-          "examples": [
-            [
-              "நீங்கள் {எங்கே} போகிறீர்கள்?",
-              "Neengal enge pogireergal?",
-              "Where are you going?"
-            ],
-            ["{ஏன்} தாமதம்?", "En thaamadham?", "Why the delay?"]
-          ]
-        },
-        {
-          "h": "With case endings",
-          "p": "Question words take case endings: <b>யாருக்கு</b> (to whom), <b>யாரை</b> (whom), <b>எங்கிருந்து</b> (from where), <b>எதற்கு</b> (what for). <b>எந்த</b> + noun = which: <b>எந்த</b> பேருந்து?",
-          "examples": [
-            [
-              "நீங்கள் {எங்கிருந்து} வருகிறீர்கள்?",
-              "Neengal engirundhu varugireergal?",
-              "Where are you from?"
-            ],
-            [
-              "{எந்த} பேருந்து மதுரைக்குப் போகும்?",
-              "Endha perundhu madhuraikkup pogum?",
-              "Which bus goes to Madurai?"
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "அவர் ＿?",
-          "en": "Who is he?",
-          "options": ["யார்", "என்ன", "எங்கே", "எப்போது"],
-          "answer": "யார்",
-          "why": "who: யார்."
-        },
-        {
-          "q": "நீங்கள் ＿ வருவீர்கள்?",
-          "en": "When will you come?",
-          "options": ["யார்", "எப்போது", "என்ன", "எது"],
-          "answer": "எப்போது",
-          "why": "when: எப்போது."
-        },
-        {
-          "q": "இது ＿ ரூபாய்?",
-          "en": "How many rupees is this?",
-          "options": ["எங்கே", "யார்", "எத்தனை", "ஏன்"],
-          "answer": "எத்தனை",
-          "why": "how many: எத்தனை."
-        },
-        {
-          "q": "ரயில் நிலையத்துக்கு ＿ போவது?",
-          "en": "How do I get to the railway station?",
-          "options": ["யார்", "எது", "எத்தனை", "எப்படி"],
-          "answer": "எப்படி",
-          "why": "how: எப்படி."
-        },
-        {
-          "q": "இந்தப் பரிசு ＿?",
-          "en": "Who is this present for?",
-          "options": ["யாருக்கு", "யாரை", "யார்", "யாரால்"],
-          "answer": "யாருக்கு",
-          "why": "to whom: யாருக்கு."
-        }
-      ]
-    },
-    {
-      "id": "honorifics",
-      "title": "Respect: அவர், நீங்கள், -ங்கள்",
-      "particle": "நீ・நீங்கள்・அவன்/அவள்・அவர்",
-      "summary": "Tamil marks respect in pronouns and verbs. நீங்கள் and அவர் (with -ஆர் verb endings) are polite; நீ and அவன் / அவள் are for close friends, children and juniors. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "You: <b>நீ</b> (intimate) vs <b>நீங்கள்</b> (polite). He/she: <b>அவன்</b> / <b>அவள்</b> vs <b>அவர்</b> (polite, either gender). The verb follows: அவர் <b>வருகிறார்</b>, அவன் <b>வருகிறான்</b>.",
-          "examples": [
-            [
-              "{நீங்கள்} எப்படி இருக்கிறீர்கள்?",
-              "Neengal eppadi irukkireergal?",
-              "How are you? (polite)"
-            ],
-            [
-              "{அவர்} எங்கள் ஆசிரியர்.",
-              "Avar engal aasiriyar.",
-              "He/she is our teacher. (respectful)"
-            ]
-          ]
-        },
-        {
-          "h": "Respectful words",
-          "p": "Elders get <b>-ங்கள்</b> imperatives (<b>வாருங்கள்</b>, <b>உட்காருங்கள்</b>). Titles: <b>திரு.</b> (Mr), <b>திருமதி</b> (Mrs), <b>அவர்கள்</b> after a name for great respect: காந்தி <b>அவர்கள்</b>.",
-          "examples": [
-            ["{உட்காருங்கள்}.", "Utkaarungal.", "Please sit down."],
-            [
-              "{திரு.} ராமன் வந்தார்.",
-              "Thiru Raaman vandhaar.",
-              "Mr Raman came."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ எங்கே போகிறாய்?",
-          "en": "Where are you going? (to a friend)",
-          "options": ["நீ", "நீங்கள்", "அவர்", "நான்"],
-          "answer": "நீ",
-          "why": "Intimate: நீ (with -ஆய்)."
-        },
-        {
-          "q": "தாத்தா ＿.",
-          "en": "Grandpa has come.",
-          "options": ["வந்தான்", "வந்தார்", "வந்தது", "வந்தாள்"],
-          "answer": "வந்தார்",
-          "why": "Respect: -ஆர்."
-        },
-        {
-          "q": "＿ சாப்பிடுங்கள்.",
-          "en": "Please eat. (to an elder)",
-          "options": ["நீ", "அவன்", "நீங்கள்", "அது"],
-          "answer": "நீங்கள்",
-          "why": "Polite: நீங்கள் + -ங்கள்."
-        },
-        {
-          "q": "என் தம்பி பள்ளிக்குப் ＿.",
-          "en": "My little brother went to school.",
-          "options": ["போனார்", "போனது", "போனீர்கள்", "போனான்"],
-          "answer": "போனான்",
-          "why": "Younger male: -ஆன்."
-        },
-        {
-          "q": "＿ ராமன் அவர்கள்",
-          "en": "Mr Raman (formal)",
-          "options": ["திரு.", "திருமதி", "நீ", "அவள்"],
-          "answer": "திரு.",
-          "why": "Mr: திரு."
         }
       ]
     },
@@ -3372,88 +3681,6 @@
       ]
     },
     {
-      "id": "liking-knowing",
-      "title": "Like, know, understand: பிடிக்கும், தெரியும், புரியும்",
-      "particle": "-க்கு + பிடிக்கும்・தெரியும்・புரியும்",
-      "summary": "Liking, knowing and understanding put the person in the dative: எனக்கு இட்லி பிடிக்கும் (I like idli), எனக்குத் தெரியும் (I know). (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>எனக்கு</b> + thing + <b>பிடிக்கும்</b> (like) / <b>பிடிக்காது</b> (don't like). <b>தெரியும்</b> / <b>தெரியாது</b> = know / don't know. <b>புரிகிறது</b> / <b>புரியவில்லை</b> = understand / don't.",
-          "examples": [
-            [
-              "{எனக்கு} இசை {பிடிக்கும்}.",
-              "Enakku isai pidikkum.",
-              "I like music."
-            ],
-            [
-              "{அவருக்குத்} தமிழ் {தெரியும்}.",
-              "Avarukkuth thamizh theriyum.",
-              "He knows Tamil."
-            ]
-          ]
-        },
-        {
-          "h": "Know how to",
-          "p": "Infinitive + <b>தெரியும்</b> = know how to: எனக்கு நீந்த<b>த் தெரியும்</b>. Past liking: <b>பிடித்தது</b> (I liked it): படம் <b>பிடித்ததா</b>? (did you like the film?).",
-          "examples": [
-            [
-              "உங்களுக்குக் கார் ஓட்டத் {தெரியுமா}?",
-              "Ungalukkuk kaar ottath theriyumaa?",
-              "Do you know how to drive?"
-            ],
-            [
-              "படம் உங்களுக்குப் {பிடித்ததா}?",
-              "Padam ungalukkup pidiththadhaa?",
-              "Did you like the film?"
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿க் காபி பிடிக்காது.",
-          "en": "I don't like coffee.",
-          "options": ["எனக்கு", "நான்", "என்னை", "என்"],
-          "answer": "எனக்கு",
-          "why": "Dative: எனக்கு."
-        },
-        {
-          "q": "அவளுக்கு ஆங்கிலம் ＿.",
-          "en": "She knows English.",
-          "options": ["பிடிக்கும் இல்லை", "தெரியும்", "புரிந்தாள்", "தெரிவாள்"],
-          "answer": "தெரியும்",
-          "why": "know: தெரியும்."
-        },
-        {
-          "q": "எனக்கு இது ＿.",
-          "en": "I don't understand this.",
-          "options": [
-            "புரியும் இல்லை",
-            "புரிகிறேன்",
-            "புரியவில்லை",
-            "பிடிக்கவில்லை தெரியும்"
-          ],
-          "answer": "புரியவில்லை",
-          "why": "don't understand: புரியவில்லை."
-        },
-        {
-          "q": "உங்களுக்குச் சமைக்கத் ＿?",
-          "en": "Do you know how to cook?",
-          "options": ["பிடிக்குமா", "வேண்டுமா", "முடியுமா இல்லை", "தெரியுமா"],
-          "answer": "தெரியுமா",
-          "why": "know how to: -அத் தெரியுமா."
-        },
-        {
-          "q": "சாப்பாடு உங்களுக்குப் ＿?",
-          "en": "Did you like the food?",
-          "options": ["பிடித்ததா", "பிடிக்கும்", "பிடிக்காது", "தெரிந்ததா"],
-          "answer": "பிடித்ததா",
-          "why": "Past: பிடித்ததா."
-        }
-      ]
-    },
-    {
       "id": "locative-idam",
       "title": "With someone: -இடம்",
       "particle": "-இடம்・-இடமிருந்து",
@@ -3527,83 +3754,6 @@
           "options": ["இடம்", "இல்", "ஐ", "ஆல்"],
           "answer": "இடம்",
           "why": "Speak to a person: -இடம்."
-        }
-      ]
-    },
-    {
-      "id": "verbal-nouns",
-      "title": "Doing as a noun: -அது, -தல்",
-      "particle": "-அது・-வது・-தல்",
-      "summary": "Verbs become nouns with -அது (past/present/future): வந்தது (the coming), சாப்பிடுவது (eating). -தல் is the dictionary or written form: படித்தல் (reading). (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "Future verbal noun is the most common: <b>நீந்துவது</b> நல்ல பயிற்சி (swimming is good exercise). Past: நான் <b>சொன்னது</b> (what I said). It takes case endings: <b>படிப்பதை</b> நிறுத்தாதே.",
-          "examples": [
-            [
-              "{நடப்பது} உடம்புக்கு நல்லது.",
-              "Nadappadhu udambukku nalladhu.",
-              "Walking is good for your health."
-            ],
-            [
-              "நீங்கள் {சொன்னது} சரி.",
-              "Neengal sonnadhu sari.",
-              "What you said is right."
-            ]
-          ]
-        },
-        {
-          "h": "-தல் and -கை",
-          "p": "Written and formal: <b>-தல்</b> / <b>-ல்</b>: வாசித்<b>தல்</b> (reading), அறிவிப்பு. Some verbs use <b>-கை</b>: வாழ்<b>க்கை</b> (life), இருக்<b>கை</b> (seat). Rules: புகை<b>பிடித்தல்</b> தடை (smoking prohibited).",
-          "examples": [
-            [
-              "புகை{பிடித்தல்} உடல்நலத்துக்குக் கேடு.",
-              "Pugaipidiththal udalnalaththukkuk kedu.",
-              "Smoking is harmful to health."
-            ],
-            [
-              "நான் {பாடுவதை} நிறுத்தினேன்.",
-              "Naan paaduvadhai niruththinen.",
-              "I stopped singing."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿ நல்ல பழக்கம்.",
-          "en": "Reading is a good habit.",
-          "options": ["படிப்பது", "படித்து", "படிக்க", "படித்த"],
-          "answer": "படிப்பது",
-          "why": "Verbal noun: படிப்பது."
-        },
-        {
-          "q": "அவன் ＿ எனக்குப் புரியவில்லை.",
-          "en": "I didn't understand what he said.",
-          "options": ["சொல்லி", "சொன்னது", "சொல்ல", "சொன்ன"],
-          "answer": "சொன்னது",
-          "why": "Past verbal noun: சொன்னது."
-        },
-        {
-          "q": "சிகரெட் ＿ நிறுத்துங்கள்.",
-          "en": "Stop smoking cigarettes.",
-          "options": ["குடிப்பது", "குடித்து", "குடிப்பதை", "குடிக்க"],
-          "answer": "குடிப்பதை",
-          "why": "Verbal noun + -ஐ."
-        },
-        {
-          "q": "எச்சில் ＿ தடை.",
-          "en": "Spitting is prohibited. (sign)",
-          "options": ["துப்பி", "துப்ப", "துப்பிய", "துப்புதல்"],
-          "answer": "துப்புதல்",
-          "why": "Formal: -தல்."
-        },
-        {
-          "q": "நீங்கள் ＿ எனக்குத் தெரியும்.",
-          "en": "I know that you came.",
-          "options": ["வந்தது", "வந்து", "வர", "வந்த"],
-          "answer": "வந்தது",
-          "why": "Past verbal noun: வந்தது."
         }
       ]
     },
@@ -3746,233 +3896,6 @@
           "options": ["பார்ப்போம்", "பார்த்தோம்", "பார்க்காதே", "பார்க்கிறீர்கள்"],
           "answer": "பார்ப்போம்",
           "why": "Let's: -ப்போம்."
-        }
-      ]
-    },
-    {
-      "id": "ordinals",
-      "title": "First, second: முதல், -ஆவது",
-      "particle": "முதல்・இரண்டாவது・கடைசி",
-      "summary": "Ordinals are number + -ஆவது: இரண்டாவது (second), மூன்றாவது (third). First is முதல், last is கடைசி. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>முதல்</b> (first), <b>இரண்டாவது</b>, <b>மூன்றாவது</b>, <b>நான்காவது</b>, <b>ஐந்தாவது</b>… <b>கடைசி</b> (last). Before a noun: <b>முதல்</b> நாள், <b>இரண்டாவது</b> மாடி.",
-          "examples": [
-            [
-              "இது என் {முதல்} பயணம்.",
-              "Idhu en mudhal payanam.",
-              "This is my first trip."
-            ],
-            [
-              "எங்கள் வீடு {மூன்றாவது} மாடியில் இருக்கிறது.",
-              "Engal veedu moondraavadhu maadiyil irukkiradhu.",
-              "Our flat is on the third floor."
-            ]
-          ]
-        },
-        {
-          "h": "Next and previous",
-          "p": "<b>அடுத்த</b> = next: <b>அடுத்த</b> வாரம். <b>போன</b> / <b>கடந்த</b> = last (previous): <b>போன</b> மாதம். <b>முதலில்</b> = first(ly), at first.",
-          "examples": [
-            [
-              "{அடுத்த} நிறுத்தத்தில் இறங்குங்கள்.",
-              "Aduththa niruththaththil irangungal.",
-              "Get off at the next stop."
-            ],
-            [
-              "{முதலில்} சாப்பிடுங்கள்.",
-              "Mudhalil saappidungal.",
-              "Eat first."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "அவன் ＿ இடம் பிடித்தான்.",
-          "en": "He came first (took first place).",
-          "options": ["முதல்", "ஒன்றாவது", "ஒரு", "கடைசி ஆவது"],
-          "answer": "முதல்",
-          "why": "first: முதல்."
-        },
-        {
-          "q": "＿ வகுப்பு",
-          "en": "the second class",
-          "options": ["இரண்டு", "இரண்டாவது", "இருவது", "இரண்டாம் ஆவது"],
-          "answer": "இரண்டாவது",
-          "why": "second: இரண்டாவது."
-        },
-        {
-          "q": "＿ வாரம் சந்திப்போம்.",
-          "en": "Let's meet next week.",
-          "options": ["போன", "முதல்", "அடுத்த", "கடைசி"],
-          "answer": "அடுத்த",
-          "why": "next: அடுத்த."
-        },
-        {
-          "q": "＿ மாதம் நான் ஊருக்குப் போனேன்.",
-          "en": "Last month I went home.",
-          "options": ["அடுத்த", "முதல்", "வரும்", "போன"],
-          "answer": "போன",
-          "why": "last (previous): போன."
-        },
-        {
-          "q": "இது ＿ பஸ்.",
-          "en": "This is the last bus.",
-          "options": ["கடைசி", "முதல்", "அடுத்த", "ஐந்து"],
-          "answer": "கடைசி",
-          "why": "last: கடைசி."
-        }
-      ]
-    },
-    {
-      "id": "only-mattum",
-      "title": "Only: மட்டும்",
-      "particle": "மட்டும்・மட்டுமே・மட்டுமல்ல",
-      "summary": "மட்டும் after a word means \"only\": நான் மட்டும் வந்தேன் (only I came). மட்டுமல்ல = not only. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "Word + <b>மட்டும்</b>: தண்ணீர் <b>மட்டும்</b> குடித்தேன் (I drank only water). Stronger: <b>மட்டுமே</b>. It can also mean \"as for\": நீ <b>மட்டும்</b> ஏன் வரவில்லை? (why didn't you, of all people, come?).",
-          "examples": [
-            [
-              "எனக்கு ஒரு காபி {மட்டும்}.",
-              "Enakku oru kaapi mattum.",
-              "Just a coffee for me."
-            ],
-            [
-              "இன்று {மட்டும்} கடை திறந்திருக்கும்.",
-              "Indru mattum kadai thirandhirukkum.",
-              "The shop will be open only today."
-            ]
-          ]
-        },
-        {
-          "h": "Not only … but also",
-          "p": "<b>-மட்டுமல்ல, -உம்</b>: அவன் பாட<b>மட்டுமல்ல</b>, ஆட<b>வும்</b> தெரியும் (he can not only sing but also dance).",
-          "examples": [
-            [
-              "அவள் தமிழ் {மட்டுமல்ல}, இந்தி{யும்} பேசுவாள்.",
-              "Aval thamizh mattumalla, indhiyum pesuvaal.",
-              "She speaks not only Tamil but also Hindi."
-            ],
-            [
-              "பத்து நிமிடம் {மட்டுமே} இருக்கிறது.",
-              "Paththu nimidam mattume irukkiradhu.",
-              "There are only ten minutes left."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "எனக்குத் தமிழ் ＿ தெரியும்.",
-          "en": "I only know Tamil.",
-          "options": ["மட்டும்", "உம்", "தான் இல்லை", "ஓ"],
-          "answer": "மட்டும்",
-          "why": "only: மட்டும்."
-        },
-        {
-          "q": "நான் ஒரு நாள் ＿ இருப்பேன்.",
-          "en": "I'll stay only one day.",
-          "options": ["எல்லாம்", "மட்டும்", "ஆவது", "ஓ"],
-          "answer": "மட்டும்",
-          "why": "only: மட்டும்."
-        },
-        {
-          "q": "அவன் படிப்பில் ＿, விளையாட்டிலும் சிறந்தவன்.",
-          "en": "He's good not only at studies but also at sports.",
-          "options": ["மட்டும்", "மட்டுமே", "மட்டுமல்ல", "ஆனால்"],
-          "answer": "மட்டுமல்ல",
-          "why": "not only: மட்டுமல்ல."
-        },
-        {
-          "q": "ஐந்து ரூபாய் ＿ வேண்டும்.",
-          "en": "I need only five rupees.",
-          "options": ["எல்லாம்", "கூட", "இருந்தாலும்", "மட்டும்"],
-          "answer": "மட்டும்",
-          "why": "only: மட்டும்."
-        },
-        {
-          "q": "இங்கே பெண்கள் ＿ அனுமதி.",
-          "en": "Only women are allowed here.",
-          "options": ["மட்டுமே", "மட்டுமல்ல", "எல்லோரும்", "கூட"],
-          "answer": "மட்டுமே",
-          "why": "strongly only: மட்டுமே."
-        }
-      ]
-    },
-    {
-      "id": "postpositions",
-      "title": "Place words: மேலே, கீழே, பக்கத்தில்",
-      "particle": "மேல்・கீழ்・முன்・பின்・உள்ளே・வெளியே・பக்கத்தில்",
-      "summary": "Place postpositions follow a noun, often in the genitive or with -க்கு: மேசையின் மேல் (on the table), வீட்டுக்குப் பின்னால் (behind the house). (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>மேல்</b> / <b>மேலே</b> on, above; <b>கீழ்</b> / <b>கீழே</b> under; <b>முன்னால்</b> in front; <b>பின்னால்</b> behind; <b>உள்ளே</b> inside; <b>வெளியே</b> outside; <b>பக்கத்தில்</b> near, next to; <b>நடுவில்</b> in the middle.",
-          "examples": [
-            [
-              "புத்தகம் மேசை{யின் மேல்} இருக்கிறது.",
-              "Puththagam mesaiyin mel irukkiradhu.",
-              "The book is on the table."
-            ],
-            [
-              "கோயில் வீட்டுக்குப் {பக்கத்தில்} இருக்கிறது.",
-              "Koyil veettukkup pakkaththil irukkiradhu.",
-              "The temple is next to the house."
-            ]
-          ]
-        },
-        {
-          "h": "Alone as adverbs",
-          "p": "With -ஏ they stand alone: <b>உள்ளே</b> வாருங்கள் (come inside), <b>மேலே</b> போ (go up), <b>வெளியே</b> போனார் (he went out). <b>எதிரே</b> = opposite: பள்ளிக்கு <b>எதிரே</b>.",
-          "examples": [
-            ["{உள்ளே} வாருங்கள்.", "Ulle vaarungal.", "Come inside, please."],
-            [
-              "வங்கி பள்ளிக்கு {எதிரே} இருக்கிறது.",
-              "Vangi pallikku edhire irukkiradhu.",
-              "The bank is opposite the school."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "பூனை கட்டிலுக்குக் ＿ இருக்கிறது.",
-          "en": "The cat is under the bed.",
-          "options": ["கீழே", "மேலே", "உள்ளே", "முன்னால்"],
-          "answer": "கீழே",
-          "why": "under: கீழே."
-        },
-        {
-          "q": "அவர் ＿ போயிருக்கிறார்.",
-          "en": "He has gone out.",
-          "options": ["உள்ளே", "வெளியே", "மேலே", "கீழே"],
-          "answer": "வெளியே",
-          "why": "out: வெளியே."
-        },
-        {
-          "q": "கார் வீட்டுக்கு ＿ நிற்கிறது.",
-          "en": "The car is parked in front of the house.",
-          "options": ["பின்னால்", "மேல்", "முன்னால்", "உள்ளே"],
-          "answer": "முன்னால்",
-          "why": "in front: முன்னால்."
-        },
-        {
-          "q": "என் அலுவலகம் ரயில் நிலையத்துக்குப் ＿ இருக்கிறது.",
-          "en": "My office is near the station.",
-          "options": ["உள்ளே", "மேல்", "கீழே", "பக்கத்தில்"],
-          "answer": "பக்கத்தில்",
-          "why": "near: பக்கத்தில்."
-        },
-        {
-          "q": "மருந்துக்கடை கோயிலுக்கு ＿ இருக்கிறது.",
-          "en": "The pharmacy is opposite the temple.",
-          "options": ["எதிரே", "பின்", "மேலே", "நடுவே இல்லை"],
-          "answer": "எதிரே",
-          "why": "opposite: எதிரே."
         }
       ]
     },
@@ -4123,170 +4046,6 @@
           "options": ["யோசித்து", "யோசிக்க", "யோசித்த", "யோசிப்பது"],
           "answer": "யோசித்து",
           "why": "Participle + பார்."
-        }
-      ]
-    },
-    {
-      "id": "causative",
-      "title": "Make someone do: -வை, -வி",
-      "particle": "infinitive + வை・-வி",
-      "summary": "Causatives use the infinitive + வை (make, have done): அவனைச் சிரிக்க வைத்தேன் (I made him laugh). Some verbs have a -வி / -ப்பி form: காட்டு, படிப்பி. (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "Infinitive + <b>வை</b>: பாட<b>வை</b> (make sing), காத்திருக்க<b>வை</b> (keep waiting). Built-in causatives: <b>படிப்பி</b> (teach, from படி), <b>காட்டு</b> (show, from காண்), <b>ஊட்டு</b> (feed).",
-          "examples": [
-            [
-              "அவள் என்னைச் {சிரிக்க வைத்தாள்}.",
-              "Aval ennaich sirikka vaiththaal.",
-              "She made me laugh."
-            ],
-            [
-              "என்னை ஒரு மணி நேரம் {காத்திருக்க வைத்தார்}.",
-              "Ennai oru mani neram kaaththirukka vaiththaar.",
-              "He kept me waiting for an hour."
-            ]
-          ]
-        },
-        {
-          "h": "Built-in pairs",
-          "p": "<b>பார்</b> see → <b>காட்டு</b> show. <b>படி</b> study → <b>படிப்பி</b> / <b>கற்பி</b> teach. <b>திரும்பு</b> return → <b>திருப்பு</b> turn back. <b>எழு</b> rise → <b>எழுப்பு</b> wake someone.",
-          "examples": [
-            [
-              "காலையில் என்னை {எழுப்புங்கள்}.",
-              "Kaalaiyil ennai ezhuppungal.",
-              "Wake me up in the morning."
-            ],
-            [
-              "அவர் தமிழ் {கற்பிக்கிறார்}.",
-              "Avar thamizh karpikkiraar.",
-              "He teaches Tamil."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "அம்மா குழந்தையைத் தூங்க ＿.",
-          "en": "Mum put the baby to sleep.",
-          "options": ["வைத்தாள்", "விட்டாள்", "கொண்டாள்", "பார்த்தாள்"],
-          "answer": "வைத்தாள்",
-          "why": "Causative: -அ வை."
-        },
-        {
-          "q": "உங்கள் டிக்கெட்டைக் ＿.",
-          "en": "Show your ticket.",
-          "options": ["பாருங்கள்", "காட்டுங்கள்", "பார்க்க வையுங்கள்", "காணுங்கள்"],
-          "answer": "காட்டுங்கள்",
-          "why": "Causative of see: காட்டு."
-        },
-        {
-          "q": "ஆசிரியர் எங்களுக்குக் கணக்கு ＿.",
-          "en": "The teacher teaches us maths.",
-          "options": ["கற்கிறார்", "படிக்கிறார்", "கற்பிக்கிறார்", "பார்க்கிறார்"],
-          "answer": "கற்பிக்கிறார்",
-          "why": "teach: கற்பி."
-        },
-        {
-          "q": "ஆறு மணிக்கு என்னை ＿.",
-          "en": "Wake me at six.",
-          "options": ["எழுந்திருங்கள்", "எழுதுங்கள்", "எழுங்கள்", "எழுப்புங்கள்"],
-          "answer": "எழுப்புங்கள்",
-          "why": "wake (someone): எழுப்பு."
-        },
-        {
-          "q": "அவன் எல்லோரையும் அழ ＿.",
-          "en": "He made everyone cry.",
-          "options": ["வைத்தான்", "விட்டான்", "கொண்டான்", "பார்த்தான்"],
-          "answer": "வைத்தான்",
-          "why": "Causative: -அ வை."
-        }
-      ]
-    },
-    {
-      "id": "passive",
-      "title": "The passive: -ப்படு",
-      "particle": "infinitive + படு",
-      "summary": "Formal Tamil makes a passive with the infinitive + படு: கட்டப்பட்டது (was built). Speech prefers active sentences. (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "Infinitive + <b>படு</b>: கட்ட<b>ப்பட்டது</b> (was built), கொல்ல<b>ப்பட்டார்</b> (was killed), அழைக்க<b>ப்பட்டேன்</b> (I was invited). The doer takes <b>-ஆல்</b>: மன்னனால் கட்டப்பட்டது.",
-          "examples": [
-            [
-              "இந்தக் கோயில் ஆயிரம் ஆண்டுகளுக்கு முன் {கட்டப்பட்டது}.",
-              "Indhak koyil aayiram aandugalukku mun kattappattadhu.",
-              "This temple was built a thousand years ago."
-            ],
-            [
-              "நான் விழாவுக்கு {அழைக்கப்பட்டேன்}.",
-              "Naan vizhaavukku azhaikkappatten.",
-              "I was invited to the ceremony."
-            ]
-          ]
-        },
-        {
-          "h": "In the news",
-          "p": "News uses it constantly: <b>கைது செய்யப்பட்டார்</b> (was arrested), <b>அறிவிக்கப்பட்டது</b> (was announced). Speech: போலீஸ் அவனைக் கைது செய்தது (active).",
-          "examples": [
-            [
-              "முடிவுகள் நாளை {அறிவிக்கப்படும்}.",
-              "Mudivugal naalai arivikkappadum.",
-              "The results will be announced tomorrow."
-            ],
-            [
-              "இந்த நூல் கம்பரால் {எழுதப்பட்டது}.",
-              "Indha nool kambaraal ezhudhappattadhu.",
-              "This work was written by Kambar."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "அந்தப் பாலம் 1950-இல் ＿.",
-          "en": "That bridge was built in 1950.",
-          "options": ["கட்டப்பட்டது", "கட்டியது", "கட்டும்", "கட்டுகிறது"],
-          "answer": "கட்டப்பட்டது",
-          "why": "Passive past."
-        },
-        {
-          "q": "திருடன் ＿.",
-          "en": "The thief was arrested.",
-          "options": [
-            "கைது செய்தான்",
-            "கைது செய்யப்பட்டான்",
-            "கைது செய்வான்",
-            "கைது செய்கிறான்"
-          ],
-          "answer": "கைது செய்யப்பட்டான்",
-          "why": "Passive: -ப்பட்டான்."
-        },
-        {
-          "q": "இந்தப் பாடல் பாரதியா＿ எழுதப்பட்டது.",
-          "en": "This song was written by Bharathi.",
-          "options": ["ருக்கு", "ரை", "ரால்", "ரில்"],
-          "answer": "ரால்",
-          "why": "Agent: -ஆல்."
-        },
-        {
-          "q": "தேர்தல் தேதி ＿.",
-          "en": "The election date has been announced.",
-          "options": ["அறிவித்தது", "அறிவிக்கும்", "அறிவிக்க", "அறிவிக்கப்பட்டது"],
-          "answer": "அறிவிக்கப்பட்டது",
-          "why": "Passive."
-        },
-        {
-          "q": "கடிதம் நாளை ＿.",
-          "en": "The letter will be sent tomorrow.",
-          "options": [
-            "அனுப்பப்படும்",
-            "அனுப்பப்பட்டது",
-            "அனுப்பும் இல்லை",
-            "அனுப்பினான்"
-          ],
-          "answer": "அனுப்பப்படும்",
-          "why": "Future passive: -ப்படும்."
         }
       ]
     },
@@ -4672,6 +4431,616 @@
       ]
     },
     {
+      "id": "reported-command",
+      "title": "Told someone to: -அச் சொன்னார்",
+      "particle": "infinitive + சொல்・-அட்டும் என்று",
+      "summary": "Reported orders use the infinitive + சொல் (tell): அவர் என்னை வரச் சொன்னார் (he told me to come). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Person (-ஐ) + infinitive + <b>சொல்</b>: அம்மா என்னைச் சாப்பிட<b>ச் சொன்னாள்</b>. Asking: <b>-அக் கேட்டுக்கொண்டார்</b> (requested). Negative: <b>-ஆமல் இருக்கச் சொன்னார்</b> (told me not to).",
+          "examples": [
+            [
+              "டாக்டர் என்னை ஓய்வெடுக்க{ச் சொன்னார்}.",
+              "Daaktar ennai oivedukkach sonnaar.",
+              "The doctor told me to rest."
+            ],
+            [
+              "அவர் எங்களை உட்கார{ச் சொன்னார்}.",
+              "Avar engalai utkaarach sonnaar.",
+              "He told us to sit down."
+            ]
+          ]
+        },
+        {
+          "h": "With என்று",
+          "p": "The direct way: \"வா\" <b>என்று சொன்னார்</b> (he said \"come\"). For third persons: அவன் வர<b>ட்டும் என்று</b> சொல் (tell him to come; let him come).",
+          "examples": [
+            [
+              "அவனை நாளை வர{ட்டும் என்று} சொல்லுங்கள்.",
+              "Avanai naalai varattum endru sollungal.",
+              "Tell him to come tomorrow."
+            ],
+            [
+              "பேசாமல் {இருக்கச் சொன்னார்}.",
+              "Pesaamal irukkach sonnaar.",
+              "He told us to keep quiet."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ஆசிரியர் எங்களை எழுத＿ சொன்னார்.",
+          "en": "The teacher told us to write.",
+          "options": ["ச்", "க்", "த்", "ப்"],
+          "answer": "ச்",
+          "why": "Infinitive + ச் சொல்."
+        },
+        {
+          "q": "அம்மா என்னைக் கடைக்குப் போகச் ＿.",
+          "en": "Mum told me to go to the shop.",
+          "options": ["சொன்னேன்", "சொன்னாள்", "சொல்லி", "சொல்ல"],
+          "answer": "சொன்னாள்",
+          "why": "Past, she: சொன்னாள்."
+        },
+        {
+          "q": "அவர் சத்தம் போடாமல் ＿ச் சொன்னார்.",
+          "en": "He told us not to make noise.",
+          "options": ["இருந்து", "இருந்தால்", "இருக்க", "இருக்கும்"],
+          "answer": "இருக்க",
+          "why": "Told not to: -ஆமல் இருக்கச் சொல்."
+        },
+        {
+          "q": "அவளை உள்ளே வர＿ என்று சொல்லுங்கள்.",
+          "en": "Tell her to come in.",
+          "options": ["லாம்", "ாதே", "வேண்டும்", "ட்டும்"],
+          "answer": "ட்டும்",
+          "why": "Third person: -அட்டும் என்று."
+        },
+        {
+          "q": "மேலாளர் எங்களை சீக்கிரம் வர＿ கேட்டுக்கொண்டார்.",
+          "en": "The manager asked us to come early.",
+          "options": ["க்", "ச்", "ப்", "த்"],
+          "answer": "க்",
+          "why": "Requested: -அக் கேட்டுக்கொள்."
+        }
+      ]
+    },
+    {
+      "id": "tag-questions",
+      "title": "Isn't it? -ஆ, இல்லையா, தானே",
+      "particle": "-ஆ・இல்லையா・தானே",
+      "summary": "-ஆ makes yes/no questions; இல்லையா? = isn't it?; தானே at the end = right?, surely. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-ஆ</b>: வருகிறீர்க<b>ளா</b>? Tag: அழகாக இருக்கிறது, <b>இல்லையா</b>? (it's beautiful, isn't it?). <b>தானே</b>: நீங்கள் வருவீர்கள் <b>தானே</b>? (you'll come, won't you?).",
+          "examples": [
+            [
+              "இது உங்கள் பை, {இல்லையா}?",
+              "Idhu ungal pai, illaiyaa?",
+              "This is your bag, isn't it?"
+            ],
+            [
+              "நீ நாளை வருவாய் {தானே}?",
+              "Nee naalai varuvaai thaane?",
+              "You'll come tomorrow, right?"
+            ]
+          ]
+        },
+        {
+          "h": "Answers",
+          "p": "<b>ஆமாம்</b> = yes, <b>இல்லை</b> = no. <b>சரி</b> = OK. <b>ஓ, அப்படியா?</b> = oh, really? <b>-ஆ</b> on any word asks about it: நீங்களா? (is it you?), நாளையா? (tomorrow?).",
+          "examples": [
+            [
+              "— நீங்கள் டாக்டரா? — {ஆமாம்}.",
+              "Neengal daaktaraa? — Aamaam.",
+              "\"Are you a doctor?\" \"Yes.\""
+            ],
+            ["{நாளையா}?", "Naalaiyaa?", "Tomorrow?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "அவர் வருவார், ＿?",
+          "en": "He'll come, won't he?",
+          "options": ["இல்லையா", "தானா", "ஆமாம்", "சரி"],
+          "answer": "இல்லையா",
+          "why": "Tag: இல்லையா."
+        },
+        {
+          "q": "நீங்கள் தமிழரா＿?",
+          "en": "You're Tamil, aren't you?",
+          "options": ["ஆமாம்", "இல்லையா", "தான்", "சரியா இல்லை"],
+          "answer": "இல்லையா",
+          "why": "Tag on -ஆ question."
+        },
+        {
+          "q": "— தேநீர் வேண்டுமா? — ＿, கொடுங்கள்.",
+          "en": "\"Do you want tea?\" \"Yes, please.\"",
+          "options": ["இல்லை", "சரியா", "ஆமாம்", "தானே"],
+          "answer": "ஆமாம்",
+          "why": "yes: ஆமாம்."
+        },
+        {
+          "q": "நீ என் நண்பன் ＿?",
+          "en": "You're my friend, right?",
+          "options": ["ஆமாம்", "இல்லை", "சரி", "தானே"],
+          "answer": "தானே",
+          "why": "Surely: தானே."
+        },
+        {
+          "q": "இன்＿?",
+          "en": "Today?",
+          "options": ["றா", "று", "றே", "றோ"],
+          "answer": "றா",
+          "why": "Question on a word: இன்றா?"
+        }
+      ]
+    },
+    {
+      "id": "become",
+      "title": "Become: ஆகு",
+      "particle": "-ஆக ஆகு・ஆயிற்று・ஆகிவிட்டது",
+      "summary": "ஆகு means \"become, happen\". With -ஆக before it: டாக்டராக ஆனான் (he became a doctor). ஆயிற்று / ஆகிவிட்டது = it's done, it's become. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-ஆக ஆகு</b>: பெரியவ<b>னாக ஆனான்</b> (he grew up). <b>ஆகிவிட்டது</b> = has become: நேரம் <b>ஆகிவிட்டது</b> (it's late), சாப்பாடு <b>ஆகிவிட்டது</b> (the food is ready).",
+          "examples": [
+            [
+              "அவள் டாக்டர{ாக ஆனாள்}.",
+              "Aval daaktaraaga aanaal.",
+              "She became a doctor."
+            ],
+            ["நேரம் {ஆகிவிட்டது}.", "Neram aagivittadhu.", "It's got late."]
+          ]
+        },
+        {
+          "h": "Takes, costs",
+          "p": "<b>ஆகும்</b> = it'll take / cost: ஒரு மணி நேரம் <b>ஆகும்</b> (it'll take an hour), நூறு ரூபாய் <b>ஆகும்</b>. <b>என்ன ஆயிற்று?</b> = what happened?",
+          "examples": [
+            [
+              "சென்னைக்கு மூன்று மணி நேரம் {ஆகும்}.",
+              "Chennaikku moondru mani neram aagum.",
+              "It takes three hours to Chennai."
+            ],
+            ["{என்ன ஆயிற்று}?", "Enna aayitru?", "What happened?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "அவன் ஆசிரியராக ＿.",
+          "en": "He became a teacher.",
+          "options": ["ஆனான்", "ஆனாள்", "இருந்தான் இல்லை", "போனான்"],
+          "answer": "ஆனான்",
+          "why": "became: ஆனான்."
+        },
+        {
+          "q": "இந்த வேலைக்கு இரண்டு நாள் ＿.",
+          "en": "This work will take two days.",
+          "options": ["ஆனது", "ஆகும்", "ஆகாதே", "ஆனான்"],
+          "answer": "ஆகும்",
+          "why": "takes: ஆகும்."
+        },
+        {
+          "q": "சாப்பாடு ＿, வாருங்கள்.",
+          "en": "The food is ready, come.",
+          "options": ["ஆகும் இல்லை", "ஆகாது", "ஆகிவிட்டது", "ஆகவில்லை"],
+          "answer": "ஆகிவிட்டது",
+          "why": "done: ஆகிவிட்டது."
+        },
+        {
+          "q": "என்ன ＿? ஏன் அழுகிறாய்?",
+          "en": "What happened? Why are you crying?",
+          "options": ["ஆகும்", "ஆனான்", "ஆகாது", "ஆயிற்று"],
+          "answer": "ஆயிற்று",
+          "why": "What happened: என்ன ஆயிற்று."
+        },
+        {
+          "q": "மணி பத்து ＿.",
+          "en": "It's become ten o'clock.",
+          "options": ["ஆகிவிட்டது", "ஆனான்", "ஆகாதே", "ஆகலாமா"],
+          "answer": "ஆகிவிட்டது",
+          "why": "ஆகிவிட்டது."
+        }
+      ]
+    },
+    {
+      "id": "about-to",
+      "title": "Going to, about to: -அப் போகிறேன்",
+      "particle": "infinitive + போ",
+      "summary": "Infinitive + போகிறேன் means \"I'm going to, about to\": மழை பெய்யப் போகிறது (it's going to rain). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-அப் போகிறேன்</b> = I'm going to (plan or imminent): நான் வேலையை விட<b>ப் போகிறேன்</b>. Past: <b>-அப் போனேன்</b> = I was about to: விழ<b>ப் போனேன்</b> (I nearly fell).",
+          "examples": [
+            [
+              "மழை {பெய்யப் போகிறது}.",
+              "Mazhai peiyap pogiradhu.",
+              "It's going to rain."
+            ],
+            [
+              "நான் வீடு {மாறப் போகிறேன்}.",
+              "Naan veedu maarap pogiren.",
+              "I'm going to move house."
+            ]
+          ]
+        },
+        {
+          "h": "Almost",
+          "p": "<b>கிட்டத்தட்ட</b> = almost: <b>கிட்டத்தட்ட</b> முடிந்துவிட்டது. <b>-அப் பார்த்தேன்</b> = I was about to (tried to): சொல்ல<b>ப் பார்த்தேன்</b>.",
+          "examples": [
+            ["நான் {விழப் போனேன்}.", "Naan vizhap ponen.", "I nearly fell."],
+            [
+              "வேலை {கிட்டத்தட்ட} முடிந்துவிட்டது.",
+              "Velai kittaththatta mudindhuvittadhu.",
+              "The work is almost finished."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "படம் ＿ப் போகிறது.",
+          "en": "The film is about to start.",
+          "options": ["தொடங்க", "தொடங்கி", "தொடங்கிய", "தொடங்குவது"],
+          "answer": "தொடங்க",
+          "why": "Infinitive + போ."
+        },
+        {
+          "q": "நான் அடுத்த வருடம் கல்யாணம் செய்யப் ＿.",
+          "en": "I'm going to get married next year.",
+          "options": ["வருகிறேன்", "போகிறேன்", "இருக்கிறேன்", "விடுகிறேன்"],
+          "answer": "போகிறேன்",
+          "why": "Going to: -அப் போகிறேன்."
+        },
+        {
+          "q": "குழந்தை ＿ப் போனது.",
+          "en": "The child nearly fell.",
+          "options": ["விழுந்து", "விழுந்த", "விழ", "விழுவது"],
+          "answer": "விழ",
+          "why": "Past: -அப் போனது = nearly."
+        },
+        {
+          "q": "＿ ஐம்பது பேர் வந்தார்கள்.",
+          "en": "Almost fifty people came.",
+          "options": ["மட்டும்", "மிகவும்", "எல்லாம்", "கிட்டத்தட்ட"],
+          "answer": "கிட்டத்தட்ட",
+          "why": "almost: கிட்டத்தட்ட."
+        },
+        {
+          "q": "அவள் ஏதோ ＿ப் பார்த்தாள்.",
+          "en": "She was about to say something.",
+          "options": ["சொல்ல", "சொல்லி", "சொன்ன", "சொல்வது"],
+          "answer": "சொல்ல",
+          "why": "Was about to: -அப் பார்த்தாள்."
+        }
+      ]
+    },
+    {
+      "id": "concessive",
+      "title": "Even if: -ஆலும்",
+      "particle": "-ஆலும்・இருந்தாலும்",
+      "summary": "Add -உம் to the conditional for \"even if, although\": மழை பெய்தாலும் போவேன் (I'll go even if it rains). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Conditional + <b>-உம்</b>: வந்<b>தாலும்</b>, சொன்<b>னாலும்</b>, பார்த்<b>தாலும்</b>. <b>இருந்தாலும்</b> alone = even so, however: <b>இருந்தாலும்</b> நான் போகிறேன்.",
+          "examples": [
+            [
+              "மழை {பெய்தாலும்} நான் போவேன்.",
+              "Mazhai peidhaalum naan poven.",
+              "I'll go even if it rains."
+            ],
+            [
+              "எவ்வளவு {சொன்னாலும்} அவன் கேட்கமாட்டான்.",
+              "Evvalavu sonnaalum avan ketkamaattaan.",
+              "However much you tell him, he won't listen."
+            ]
+          ]
+        },
+        {
+          "h": "Wh-word + -ஆலும்",
+          "p": "With question words it means \"-ever\": <b>யார் வந்தாலும்</b> (whoever comes), <b>எங்கே போனாலும்</b> (wherever you go), <b>என்ன நடந்தாலும்</b> (whatever happens).",
+          "examples": [
+            [
+              "{என்ன நடந்தாலும்} கவலைப்படாதே.",
+              "Enna nadandhaalum kavalaippadaadhe.",
+              "Whatever happens, don't worry."
+            ],
+            [
+              "களைப்பாக இருந்தது. {இருந்தாலும்} வேலையை முடித்தேன்.",
+              "Kalaippaaga irundhadhu. Irundhaalum velaiyai mudiththen.",
+              "I was tired. Even so, I finished the work."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "விலை அதிகம் ＿ வாங்குவேன்.",
+          "en": "Even if it's expensive, I'll buy it.",
+          "options": ["ஆனாலும்", "ஆனால்", "ஆக", "ஆகும்"],
+          "answer": "ஆனாலும்",
+          "why": "Even if: -ஆலும்."
+        },
+        {
+          "q": "＿ வந்தாலும் கதவைத் திறக்காதே.",
+          "en": "Whoever comes, don't open the door.",
+          "options": ["என்ன", "யார்", "எங்கே", "எப்போது"],
+          "answer": "யார்",
+          "why": "whoever: யார் … -ஆலும்."
+        },
+        {
+          "q": "எங்கே ＿ என்னை அழையுங்கள்.",
+          "en": "Wherever you go, call me.",
+          "options": ["போனால்", "போய்", "போனாலும்", "போக"],
+          "answer": "போனாலும்",
+          "why": "wherever: எங்கே … -ஆலும்."
+        },
+        {
+          "q": "பசியாக இருந்தது; ＿ சாப்பிடவில்லை.",
+          "en": "I was hungry; even so, I didn't eat.",
+          "options": ["இருந்தால்", "இருக்க", "இருந்து", "இருந்தாலும்"],
+          "answer": "இருந்தாலும்",
+          "why": "even so: இருந்தாலும்."
+        },
+        {
+          "q": "அவன் படித்＿ தேறவில்லை.",
+          "en": "Even though he studied, he didn't pass.",
+          "options": ["தாலும்", "தால்", "து", "த"],
+          "answer": "தாலும்",
+          "why": "Although: -ஆலும்."
+        }
+      ]
+    },
+    {
+      "id": "verbal-nouns",
+      "title": "Doing as a noun: -அது, -தல்",
+      "particle": "-அது・-வது・-தல்",
+      "summary": "Verbs become nouns with -அது (past/present/future): வந்தது (the coming), சாப்பிடுவது (eating). -தல் is the dictionary or written form: படித்தல் (reading). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Future verbal noun is the most common: <b>நீந்துவது</b> நல்ல பயிற்சி (swimming is good exercise). Past: நான் <b>சொன்னது</b> (what I said). It takes case endings: <b>படிப்பதை</b> நிறுத்தாதே.",
+          "examples": [
+            [
+              "{நடப்பது} உடம்புக்கு நல்லது.",
+              "Nadappadhu udambukku nalladhu.",
+              "Walking is good for your health."
+            ],
+            [
+              "நீங்கள் {சொன்னது} சரி.",
+              "Neengal sonnadhu sari.",
+              "What you said is right."
+            ]
+          ]
+        },
+        {
+          "h": "-தல் and -கை",
+          "p": "Written and formal: <b>-தல்</b> / <b>-ல்</b>: வாசித்<b>தல்</b> (reading), அறிவிப்பு. Some verbs use <b>-கை</b>: வாழ்<b>க்கை</b> (life), இருக்<b>கை</b> (seat). Rules: புகை<b>பிடித்தல்</b> தடை (smoking prohibited).",
+          "examples": [
+            [
+              "புகை{பிடித்தல்} உடல்நலத்துக்குக் கேடு.",
+              "Pugaipidiththal udalnalaththukkuk kedu.",
+              "Smoking is harmful to health."
+            ],
+            [
+              "நான் {பாடுவதை} நிறுத்தினேன்.",
+              "Naan paaduvadhai niruththinen.",
+              "I stopped singing."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ நல்ல பழக்கம்.",
+          "en": "Reading is a good habit.",
+          "options": ["படிப்பது", "படித்து", "படிக்க", "படித்த"],
+          "answer": "படிப்பது",
+          "why": "Verbal noun: படிப்பது."
+        },
+        {
+          "q": "அவன் ＿ எனக்குப் புரியவில்லை.",
+          "en": "I didn't understand what he said.",
+          "options": ["சொல்லி", "சொன்னது", "சொல்ல", "சொன்ன"],
+          "answer": "சொன்னது",
+          "why": "Past verbal noun: சொன்னது."
+        },
+        {
+          "q": "சிகரெட் ＿ நிறுத்துங்கள்.",
+          "en": "Stop smoking cigarettes.",
+          "options": ["குடிப்பது", "குடித்து", "குடிப்பதை", "குடிக்க"],
+          "answer": "குடிப்பதை",
+          "why": "Verbal noun + -ஐ."
+        },
+        {
+          "q": "எச்சில் ＿ தடை.",
+          "en": "Spitting is prohibited. (sign)",
+          "options": ["துப்பி", "துப்ப", "துப்பிய", "துப்புதல்"],
+          "answer": "துப்புதல்",
+          "why": "Formal: -தல்."
+        },
+        {
+          "q": "நீங்கள் ＿ எனக்குத் தெரியும்.",
+          "en": "I know that you came.",
+          "options": ["வந்தது", "வந்து", "வர", "வந்த"],
+          "answer": "வந்தது",
+          "why": "Past verbal noun: வந்தது."
+        }
+      ]
+    },
+    {
+      "id": "causative",
+      "title": "Make someone do: -வை, -வி",
+      "particle": "infinitive + வை・-வி",
+      "summary": "Causatives use the infinitive + வை (make, have done): அவனைச் சிரிக்க வைத்தேன் (I made him laugh). Some verbs have a -வி / -ப்பி form: காட்டு, படிப்பி. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Infinitive + <b>வை</b>: பாட<b>வை</b> (make sing), காத்திருக்க<b>வை</b> (keep waiting). Built-in causatives: <b>படிப்பி</b> (teach, from படி), <b>காட்டு</b> (show, from காண்), <b>ஊட்டு</b> (feed).",
+          "examples": [
+            [
+              "அவள் என்னைச் {சிரிக்க வைத்தாள்}.",
+              "Aval ennaich sirikka vaiththaal.",
+              "She made me laugh."
+            ],
+            [
+              "என்னை ஒரு மணி நேரம் {காத்திருக்க வைத்தார்}.",
+              "Ennai oru mani neram kaaththirukka vaiththaar.",
+              "He kept me waiting for an hour."
+            ]
+          ]
+        },
+        {
+          "h": "Built-in pairs",
+          "p": "<b>பார்</b> see → <b>காட்டு</b> show. <b>படி</b> study → <b>படிப்பி</b> / <b>கற்பி</b> teach. <b>திரும்பு</b> return → <b>திருப்பு</b> turn back. <b>எழு</b> rise → <b>எழுப்பு</b> wake someone.",
+          "examples": [
+            [
+              "காலையில் என்னை {எழுப்புங்கள்}.",
+              "Kaalaiyil ennai ezhuppungal.",
+              "Wake me up in the morning."
+            ],
+            [
+              "அவர் தமிழ் {கற்பிக்கிறார்}.",
+              "Avar thamizh karpikkiraar.",
+              "He teaches Tamil."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "அம்மா குழந்தையைத் தூங்க ＿.",
+          "en": "Mum put the baby to sleep.",
+          "options": ["வைத்தாள்", "விட்டாள்", "கொண்டாள்", "பார்த்தாள்"],
+          "answer": "வைத்தாள்",
+          "why": "Causative: -அ வை."
+        },
+        {
+          "q": "உங்கள் டிக்கெட்டைக் ＿.",
+          "en": "Show your ticket.",
+          "options": ["பாருங்கள்", "காட்டுங்கள்", "பார்க்க வையுங்கள்", "காணுங்கள்"],
+          "answer": "காட்டுங்கள்",
+          "why": "Causative of see: காட்டு."
+        },
+        {
+          "q": "ஆசிரியர் எங்களுக்குக் கணக்கு ＿.",
+          "en": "The teacher teaches us maths.",
+          "options": ["கற்கிறார்", "படிக்கிறார்", "கற்பிக்கிறார்", "பார்க்கிறார்"],
+          "answer": "கற்பிக்கிறார்",
+          "why": "teach: கற்பி."
+        },
+        {
+          "q": "ஆறு மணிக்கு என்னை ＿.",
+          "en": "Wake me at six.",
+          "options": ["எழுந்திருங்கள்", "எழுதுங்கள்", "எழுங்கள்", "எழுப்புங்கள்"],
+          "answer": "எழுப்புங்கள்",
+          "why": "wake (someone): எழுப்பு."
+        },
+        {
+          "q": "அவன் எல்லோரையும் அழ ＿.",
+          "en": "He made everyone cry.",
+          "options": ["வைத்தான்", "விட்டான்", "கொண்டான்", "பார்த்தான்"],
+          "answer": "வைத்தான்",
+          "why": "Causative: -அ வை."
+        }
+      ]
+    },
+    {
+      "id": "passive",
+      "title": "The passive: -ப்படு",
+      "particle": "infinitive + படு",
+      "summary": "Formal Tamil makes a passive with the infinitive + படு: கட்டப்பட்டது (was built). Speech prefers active sentences. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Infinitive + <b>படு</b>: கட்ட<b>ப்பட்டது</b> (was built), கொல்ல<b>ப்பட்டார்</b> (was killed), அழைக்க<b>ப்பட்டேன்</b> (I was invited). The doer takes <b>-ஆல்</b>: மன்னனால் கட்டப்பட்டது.",
+          "examples": [
+            [
+              "இந்தக் கோயில் ஆயிரம் ஆண்டுகளுக்கு முன் {கட்டப்பட்டது}.",
+              "Indhak koyil aayiram aandugalukku mun kattappattadhu.",
+              "This temple was built a thousand years ago."
+            ],
+            [
+              "நான் விழாவுக்கு {அழைக்கப்பட்டேன்}.",
+              "Naan vizhaavukku azhaikkappatten.",
+              "I was invited to the ceremony."
+            ]
+          ]
+        },
+        {
+          "h": "In the news",
+          "p": "News uses it constantly: <b>கைது செய்யப்பட்டார்</b> (was arrested), <b>அறிவிக்கப்பட்டது</b> (was announced). Speech: போலீஸ் அவனைக் கைது செய்தது (active).",
+          "examples": [
+            [
+              "முடிவுகள் நாளை {அறிவிக்கப்படும்}.",
+              "Mudivugal naalai arivikkappadum.",
+              "The results will be announced tomorrow."
+            ],
+            [
+              "இந்த நூல் கம்பரால் {எழுதப்பட்டது}.",
+              "Indha nool kambaraal ezhudhappattadhu.",
+              "This work was written by Kambar."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "அந்தப் பாலம் 1950-இல் ＿.",
+          "en": "That bridge was built in 1950.",
+          "options": ["கட்டப்பட்டது", "கட்டியது", "கட்டும்", "கட்டுகிறது"],
+          "answer": "கட்டப்பட்டது",
+          "why": "Passive past."
+        },
+        {
+          "q": "திருடன் ＿.",
+          "en": "The thief was arrested.",
+          "options": [
+            "கைது செய்தான்",
+            "கைது செய்யப்பட்டான்",
+            "கைது செய்வான்",
+            "கைது செய்கிறான்"
+          ],
+          "answer": "கைது செய்யப்பட்டான்",
+          "why": "Passive: -ப்பட்டான்."
+        },
+        {
+          "q": "இந்தப் பாடல் பாரதியா＿ எழுதப்பட்டது.",
+          "en": "This song was written by Bharathi.",
+          "options": ["ருக்கு", "ரை", "ரால்", "ரில்"],
+          "answer": "ரால்",
+          "why": "Agent: -ஆல்."
+        },
+        {
+          "q": "தேர்தல் தேதி ＿.",
+          "en": "The election date has been announced.",
+          "options": ["அறிவித்தது", "அறிவிக்கும்", "அறிவிக்க", "அறிவிக்கப்பட்டது"],
+          "answer": "அறிவிக்கப்பட்டது",
+          "why": "Passive."
+        },
+        {
+          "q": "கடிதம் நாளை ＿.",
+          "en": "The letter will be sent tomorrow.",
+          "options": [
+            "அனுப்பப்படும்",
+            "அனுப்பப்பட்டது",
+            "அனுப்பும் இல்லை",
+            "அனுப்பினான்"
+          ],
+          "answer": "அனுப்பப்படும்",
+          "why": "Future passive: -ப்படும்."
+        }
+      ]
+    },
+    {
       "id": "seem",
       "title": "Seems, like: போல் இருக்கிறது, போல",
       "particle": "போல・போல் இருக்கிறது・மாதிரி",
@@ -4913,83 +5282,6 @@
       ]
     },
     {
-      "id": "reported-command",
-      "title": "Told someone to: -அச் சொன்னார்",
-      "particle": "infinitive + சொல்・-அட்டும் என்று",
-      "summary": "Reported orders use the infinitive + சொல் (tell): அவர் என்னை வரச் சொன்னார் (he told me to come). (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "Person (-ஐ) + infinitive + <b>சொல்</b>: அம்மா என்னைச் சாப்பிட<b>ச் சொன்னாள்</b>. Asking: <b>-அக் கேட்டுக்கொண்டார்</b> (requested). Negative: <b>-ஆமல் இருக்கச் சொன்னார்</b> (told me not to).",
-          "examples": [
-            [
-              "டாக்டர் என்னை ஓய்வெடுக்க{ச் சொன்னார்}.",
-              "Daaktar ennai oivedukkach sonnaar.",
-              "The doctor told me to rest."
-            ],
-            [
-              "அவர் எங்களை உட்கார{ச் சொன்னார்}.",
-              "Avar engalai utkaarach sonnaar.",
-              "He told us to sit down."
-            ]
-          ]
-        },
-        {
-          "h": "With என்று",
-          "p": "The direct way: \"வா\" <b>என்று சொன்னார்</b> (he said \"come\"). For third persons: அவன் வர<b>ட்டும் என்று</b> சொல் (tell him to come; let him come).",
-          "examples": [
-            [
-              "அவனை நாளை வர{ட்டும் என்று} சொல்லுங்கள்.",
-              "Avanai naalai varattum endru sollungal.",
-              "Tell him to come tomorrow."
-            ],
-            [
-              "பேசாமல் {இருக்கச் சொன்னார்}.",
-              "Pesaamal irukkach sonnaar.",
-              "He told us to keep quiet."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ஆசிரியர் எங்களை எழுத＿ சொன்னார்.",
-          "en": "The teacher told us to write.",
-          "options": ["ச்", "க்", "த்", "ப்"],
-          "answer": "ச்",
-          "why": "Infinitive + ச் சொல்."
-        },
-        {
-          "q": "அம்மா என்னைக் கடைக்குப் போகச் ＿.",
-          "en": "Mum told me to go to the shop.",
-          "options": ["சொன்னேன்", "சொன்னாள்", "சொல்லி", "சொல்ல"],
-          "answer": "சொன்னாள்",
-          "why": "Past, she: சொன்னாள்."
-        },
-        {
-          "q": "அவர் சத்தம் போடாமல் ＿ச் சொன்னார்.",
-          "en": "He told us not to make noise.",
-          "options": ["இருந்து", "இருந்தால்", "இருக்க", "இருக்கும்"],
-          "answer": "இருக்க",
-          "why": "Told not to: -ஆமல் இருக்கச் சொல்."
-        },
-        {
-          "q": "அவளை உள்ளே வர＿ என்று சொல்லுங்கள்.",
-          "en": "Tell her to come in.",
-          "options": ["லாம்", "ாதே", "வேண்டும்", "ட்டும்"],
-          "answer": "ட்டும்",
-          "why": "Third person: -அட்டும் என்று."
-        },
-        {
-          "q": "மேலாளர் எங்களை சீக்கிரம் வர＿ கேட்டுக்கொண்டார்.",
-          "en": "The manager asked us to come early.",
-          "options": ["க்", "ச்", "ப்", "த்"],
-          "answer": "க்",
-          "why": "Requested: -அக் கேட்டுக்கொள்."
-        }
-      ]
-    },
-    {
       "id": "optative",
       "title": "Wishes and blessings: வாழ்க, -அட்டும்",
       "particle": "-க・-அட்டும்",
@@ -5055,221 +5347,6 @@
           "options": ["வெல்க", "வென்றது", "வெல்லாதே", "வெல்கிறது"],
           "answer": "வெல்க",
           "why": "Optative: வெல்க."
-        }
-      ]
-    },
-    {
-      "id": "tag-questions",
-      "title": "Isn't it? -ஆ, இல்லையா, தானே",
-      "particle": "-ஆ・இல்லையா・தானே",
-      "summary": "-ஆ makes yes/no questions; இல்லையா? = isn't it?; தானே at the end = right?, surely. (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "<b>-ஆ</b>: வருகிறீர்க<b>ளா</b>? Tag: அழகாக இருக்கிறது, <b>இல்லையா</b>? (it's beautiful, isn't it?). <b>தானே</b>: நீங்கள் வருவீர்கள் <b>தானே</b>? (you'll come, won't you?).",
-          "examples": [
-            [
-              "இது உங்கள் பை, {இல்லையா}?",
-              "Idhu ungal pai, illaiyaa?",
-              "This is your bag, isn't it?"
-            ],
-            [
-              "நீ நாளை வருவாய் {தானே}?",
-              "Nee naalai varuvaai thaane?",
-              "You'll come tomorrow, right?"
-            ]
-          ]
-        },
-        {
-          "h": "Answers",
-          "p": "<b>ஆமாம்</b> = yes, <b>இல்லை</b> = no. <b>சரி</b> = OK. <b>ஓ, அப்படியா?</b> = oh, really? <b>-ஆ</b> on any word asks about it: நீங்களா? (is it you?), நாளையா? (tomorrow?).",
-          "examples": [
-            [
-              "— நீங்கள் டாக்டரா? — {ஆமாம்}.",
-              "Neengal daaktaraa? — Aamaam.",
-              "\"Are you a doctor?\" \"Yes.\""
-            ],
-            ["{நாளையா}?", "Naalaiyaa?", "Tomorrow?"]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "அவர் வருவார், ＿?",
-          "en": "He'll come, won't he?",
-          "options": ["இல்லையா", "தானா", "ஆமாம்", "சரி"],
-          "answer": "இல்லையா",
-          "why": "Tag: இல்லையா."
-        },
-        {
-          "q": "நீங்கள் தமிழரா＿?",
-          "en": "You're Tamil, aren't you?",
-          "options": ["ஆமாம்", "இல்லையா", "தான்", "சரியா இல்லை"],
-          "answer": "இல்லையா",
-          "why": "Tag on -ஆ question."
-        },
-        {
-          "q": "— தேநீர் வேண்டுமா? — ＿, கொடுங்கள்.",
-          "en": "\"Do you want tea?\" \"Yes, please.\"",
-          "options": ["இல்லை", "சரியா", "ஆமாம்", "தானே"],
-          "answer": "ஆமாம்",
-          "why": "yes: ஆமாம்."
-        },
-        {
-          "q": "நீ என் நண்பன் ＿?",
-          "en": "You're my friend, right?",
-          "options": ["ஆமாம்", "இல்லை", "சரி", "தானே"],
-          "answer": "தானே",
-          "why": "Surely: தானே."
-        },
-        {
-          "q": "இன்＿?",
-          "en": "Today?",
-          "options": ["றா", "று", "றே", "றோ"],
-          "answer": "றா",
-          "why": "Question on a word: இன்றா?"
-        }
-      ]
-    },
-    {
-      "id": "become",
-      "title": "Become: ஆகு",
-      "particle": "-ஆக ஆகு・ஆயிற்று・ஆகிவிட்டது",
-      "summary": "ஆகு means \"become, happen\". With -ஆக before it: டாக்டராக ஆனான் (he became a doctor). ஆயிற்று / ஆகிவிட்டது = it's done, it's become. (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "<b>-ஆக ஆகு</b>: பெரியவ<b>னாக ஆனான்</b> (he grew up). <b>ஆகிவிட்டது</b> = has become: நேரம் <b>ஆகிவிட்டது</b> (it's late), சாப்பாடு <b>ஆகிவிட்டது</b> (the food is ready).",
-          "examples": [
-            [
-              "அவள் டாக்டர{ாக ஆனாள்}.",
-              "Aval daaktaraaga aanaal.",
-              "She became a doctor."
-            ],
-            ["நேரம் {ஆகிவிட்டது}.", "Neram aagivittadhu.", "It's got late."]
-          ]
-        },
-        {
-          "h": "Takes, costs",
-          "p": "<b>ஆகும்</b> = it'll take / cost: ஒரு மணி நேரம் <b>ஆகும்</b> (it'll take an hour), நூறு ரூபாய் <b>ஆகும்</b>. <b>என்ன ஆயிற்று?</b> = what happened?",
-          "examples": [
-            [
-              "சென்னைக்கு மூன்று மணி நேரம் {ஆகும்}.",
-              "Chennaikku moondru mani neram aagum.",
-              "It takes three hours to Chennai."
-            ],
-            ["{என்ன ஆயிற்று}?", "Enna aayitru?", "What happened?"]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "அவன் ஆசிரியராக ＿.",
-          "en": "He became a teacher.",
-          "options": ["ஆனான்", "ஆனாள்", "இருந்தான் இல்லை", "போனான்"],
-          "answer": "ஆனான்",
-          "why": "became: ஆனான்."
-        },
-        {
-          "q": "இந்த வேலைக்கு இரண்டு நாள் ＿.",
-          "en": "This work will take two days.",
-          "options": ["ஆனது", "ஆகும்", "ஆகாதே", "ஆனான்"],
-          "answer": "ஆகும்",
-          "why": "takes: ஆகும்."
-        },
-        {
-          "q": "சாப்பாடு ＿, வாருங்கள்.",
-          "en": "The food is ready, come.",
-          "options": ["ஆகும் இல்லை", "ஆகாது", "ஆகிவிட்டது", "ஆகவில்லை"],
-          "answer": "ஆகிவிட்டது",
-          "why": "done: ஆகிவிட்டது."
-        },
-        {
-          "q": "என்ன ＿? ஏன் அழுகிறாய்?",
-          "en": "What happened? Why are you crying?",
-          "options": ["ஆகும்", "ஆனான்", "ஆகாது", "ஆயிற்று"],
-          "answer": "ஆயிற்று",
-          "why": "What happened: என்ன ஆயிற்று."
-        },
-        {
-          "q": "மணி பத்து ＿.",
-          "en": "It's become ten o'clock.",
-          "options": ["ஆகிவிட்டது", "ஆனான்", "ஆகாதே", "ஆகலாமா"],
-          "answer": "ஆகிவிட்டது",
-          "why": "ஆகிவிட்டது."
-        }
-      ]
-    },
-    {
-      "id": "about-to",
-      "title": "Going to, about to: -அப் போகிறேன்",
-      "particle": "infinitive + போ",
-      "summary": "Infinitive + போகிறேன் means \"I'm going to, about to\": மழை பெய்யப் போகிறது (it's going to rain). (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "<b>-அப் போகிறேன்</b> = I'm going to (plan or imminent): நான் வேலையை விட<b>ப் போகிறேன்</b>. Past: <b>-அப் போனேன்</b> = I was about to: விழ<b>ப் போனேன்</b> (I nearly fell).",
-          "examples": [
-            [
-              "மழை {பெய்யப் போகிறது}.",
-              "Mazhai peiyap pogiradhu.",
-              "It's going to rain."
-            ],
-            [
-              "நான் வீடு {மாறப் போகிறேன்}.",
-              "Naan veedu maarap pogiren.",
-              "I'm going to move house."
-            ]
-          ]
-        },
-        {
-          "h": "Almost",
-          "p": "<b>கிட்டத்தட்ட</b> = almost: <b>கிட்டத்தட்ட</b> முடிந்துவிட்டது. <b>-அப் பார்த்தேன்</b> = I was about to (tried to): சொல்ல<b>ப் பார்த்தேன்</b>.",
-          "examples": [
-            ["நான் {விழப் போனேன்}.", "Naan vizhap ponen.", "I nearly fell."],
-            [
-              "வேலை {கிட்டத்தட்ட} முடிந்துவிட்டது.",
-              "Velai kittaththatta mudindhuvittadhu.",
-              "The work is almost finished."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "படம் ＿ப் போகிறது.",
-          "en": "The film is about to start.",
-          "options": ["தொடங்க", "தொடங்கி", "தொடங்கிய", "தொடங்குவது"],
-          "answer": "தொடங்க",
-          "why": "Infinitive + போ."
-        },
-        {
-          "q": "நான் அடுத்த வருடம் கல்யாணம் செய்யப் ＿.",
-          "en": "I'm going to get married next year.",
-          "options": ["வருகிறேன்", "போகிறேன்", "இருக்கிறேன்", "விடுகிறேன்"],
-          "answer": "போகிறேன்",
-          "why": "Going to: -அப் போகிறேன்."
-        },
-        {
-          "q": "குழந்தை ＿ப் போனது.",
-          "en": "The child nearly fell.",
-          "options": ["விழுந்து", "விழுந்த", "விழ", "விழுவது"],
-          "answer": "விழ",
-          "why": "Past: -அப் போனது = nearly."
-        },
-        {
-          "q": "＿ ஐம்பது பேர் வந்தார்கள்.",
-          "en": "Almost fifty people came.",
-          "options": ["மட்டும்", "மிகவும்", "எல்லாம்", "கிட்டத்தட்ட"],
-          "answer": "கிட்டத்தட்ட",
-          "why": "almost: கிட்டத்தட்ட."
-        },
-        {
-          "q": "அவள் ஏதோ ＿ப் பார்த்தாள்.",
-          "en": "She was about to say something.",
-          "options": ["சொல்ல", "சொல்லி", "சொன்ன", "சொல்வது"],
-          "answer": "சொல்ல",
-          "why": "Was about to: -அப் பார்த்தாள்."
         }
       ]
     },
@@ -5493,83 +5570,6 @@
           "options": ["இறுதியாக", "முதலாவதாக", "மாறாக", "எனவே"],
           "answer": "இறுதியாக",
           "why": "finally: இறுதியாக."
-        }
-      ]
-    },
-    {
-      "id": "vendaam",
-      "title": "Don't want, needn't: வேண்டாம்",
-      "particle": "வேண்டாம்・-அ வேண்டாம்・-அத் தேவையில்லை",
-      "summary": "வேண்டாம் is the negative of வேண்டும்: \"don't want\" or \"no need\". After an infinitive it means \"please don't\" or \"you needn't\". (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "Noun + <b>வேண்டாம்</b>: எனக்குச் சர்க்கரை <b>வேண்டாம்</b> (I don't want sugar). Infinitive + <b>வேண்டாம்</b>: நீங்கள் வர <b>வேண்டாம்</b> (you needn't come / please don't come).",
-          "examples": [
-            [
-              "எனக்குக் காபி {வேண்டாம்}.",
-              "Enakkuk kaapi vendaam.",
-              "I don't want coffee."
-            ],
-            [
-              "கவலைப்பட {வேண்டாம்}.",
-              "Kavalaippada vendaam.",
-              "No need to worry."
-            ]
-          ]
-        },
-        {
-          "h": "Needn't: தேவையில்லை",
-          "p": "<b>-அத் தேவையில்லை</b> = there's no need to: டிக்கெட் வாங்க<b>த் தேவையில்லை</b>. Past: <b>வேண்டியதில்லை</b> = didn't have to. <b>வேண்டுமா?</b> = do you want / need?",
-          "examples": [
-            [
-              "இன்று நீங்கள் வேலைக்கு வர{த் தேவையில்லை}.",
-              "Indru neengal velaikku varath thevaiyillai.",
-              "You don't need to come to work today."
-            ],
-            [
-              "தண்ணீர் {வேண்டுமா}?",
-              "Thanneer vendumaa?",
-              "Do you want some water?"
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "எனக்கு எதுவும் ＿.",
-          "en": "I don't want anything.",
-          "options": ["வேண்டாம்", "வேண்டும்", "வேண்டுமா", "தேவை"],
-          "answer": "வேண்டாம்",
-          "why": "don't want: வேண்டாம்."
-        },
-        {
-          "q": "நீங்கள் காத்திருக்க ＿.",
-          "en": "You needn't wait.",
-          "options": ["வேண்டும்", "வேண்டாம்", "முடியும்", "தெரியும்"],
-          "answer": "வேண்டாம்",
-          "why": "needn't: -அ வேண்டாம்."
-        },
-        {
-          "q": "உங்களுக்கு டீ ＿?",
-          "en": "Would you like tea?",
-          "options": ["வேண்டாம்", "வேண்டும்", "வேண்டுமா", "தேவையில்லை"],
-          "answer": "வேண்டுமா",
-          "why": "Question: வேண்டுமா."
-        },
-        {
-          "q": "பணம் கொடுக்கத் ＿.",
-          "en": "There's no need to pay.",
-          "options": ["தேவை", "வேண்டுமா", "முடியும்", "தேவையில்லை"],
-          "answer": "தேவையில்லை",
-          "why": "no need: -அத் தேவையில்லை."
-        },
-        {
-          "q": "அவனிடம் சொல்ல ＿.",
-          "en": "Please don't tell him.",
-          "options": ["வேண்டாம்", "வேண்டும்", "முடியாது", "தெரியாது"],
-          "answer": "வேண்டாம்",
-          "why": "please don't: -அ வேண்டாம்."
         }
       ]
     }
