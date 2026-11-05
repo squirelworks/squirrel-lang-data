@@ -15,47 +15,64 @@ tags are never moved or reused, releases are never deleted.
 - **MINOR** (v0.2.0): new content types, new languages, or big imports.
 - **MAJOR**: a schema change that apps must be updated for (a `@2` schema).
 
-## v0.1.0: the first frozen data release
+## Released
 
-This is the point where the data is "crystallised" and attention moves to
-testing the apps for usability and accuracy. It's due when everything below
-is on `main` and CI is green there.
+- [x] **v0.1.0** (2026-11-04): the first frozen data release. Schemas,
+      validators, `features.json`, language meta and registry, Aramaic,
+      vocabulary, grammar, reference cards, the meaning matrix, the character
+      tables, language-pack export, and the JLPT, NIKL and Chinese frequency
+      imports.
+- [x] **v0.1.1** (2026-11-04): fixes from app testing.
+- [x] **v0.1.2** (2026-11-04): strokes and script courses moved in, frequency
+      tags for 11 more languages, the first inflection tables, Anki and
+      Yomitan packs.
+- [x] **v0.1.3** (2026-11-04, `b6912a0`): full Japanese, Chinese and Korean
+      matrix columns, Chinese HSK levels placed by hand, Korean grammar
+      rewrites, Hangul stroke fixes. LanguageStudentDesk and squirrelator
+      both pin this tag.
 
-Already on `main`:
+## Next: v0.1.4
 
-- [x] Schemas, validators and formatter (#3); `features.json` (#1, #6)
-- [x] Language meta and registry generator (#4), Aramaic (#5, #8, #11)
-- [x] Vocabulary (#7), grammar (#9) and reference cards (#10)
-- [x] Language-pack export (#12)
-- [x] JLPT vocabulary (#13), Korean NIKL vocabulary (#15), Chinese frequency
-      vocabulary (#17)
-- [x] Korean and Chinese grammar levels (#19, #21)
+Everything merged since v0.1.3 is collected in `release-notes/v0.1.4.md`
+(still marked Draft): the code pack and its Japanese, Chinese, Korean and
+Latin columns, Latin and English inflection tables, meta `cases` and
+`order`, the review checklist and Content error form, the historical kana
+lesson, and the grammar expansion to 72 lessons per language.
 
-Merged since the plan was written:
+It's due when all of these hold and the owner says "release":
 
-- [x] Meaning matrix moved from LanguageStudentDesk (#14)
-- [x] Japanese grammar levels and JLPT plan (#16)
-- [x] JLPT, TOPIK and HSK level reference cards (#18, #20, #22)
-- [x] Aramaic reference cards (#23)
+- [x] Grammar at 72 lessons for Amharic, Arabic, Armenian, Bengali, Burmese,
+      Chinese, French, Georgian, German, Greek, Gujarati, Hebrew, Hindi,
+      Italian, Japanese (73), Kannada, Khmer, Korean, Lao, Malayalam,
+      Mongolian, Odia, Punjabi, Russian, Sinhala, Taiwanese, Tamil, Telugu
+      and Thai (#66, #68–#92, #94), with level labels fixed (#93)
+- [ ] Latin grammar to 72 (#95)
+- [ ] Tibetan grammar 6 → 24
+- [ ] Klingon grammar 10 → 24
+- [ ] CI green on `main`
+- [ ] A PR that removes "Draft." from `release-notes/v0.1.4.md` and checks
+      every bullet against what merged, with nothing else in it
+- [ ] **Draft release** run by hand with `v0.1.4`; the owner publishes
+- [ ] Pin-bump PRs in LanguageStudentDesk (with the `data-pin` label) and
+      squirrelator, one each
 
-Also in v0.1.0, because it merged before the freeze: the character tables
-(#25).
+Left out on purpose: more grammar for Aramaic, Cherokee, Inuktitut, Manipuri
+and Tamazight. Their lessons are all source-cited, and adding more needs
+published sources. They don't hold v0.1.4 back.
 
-Not waited for: strokes, variants and programming courses. They go to v0.2.0.
-Strokes move only after LanguageStudentDesk's stroke checks pass on them. Until content moves here,
-the apps keep reading it from their own repo.
+## After v0.1.4
 
-PRs opened after this list was written don't hold v0.1.0 back. They go into
-the next release.
+- [ ] Code-pack columns for the other tested languages (#56)
+- [ ] Fill the meaning-matrix columns that have 20 to 42 of the 89 rows, then
+      add columns for the 22 languages without one (squirrelator#26)
+- [ ] Recorded reviews (`REVIEW.md`) for every language (see `REVIEWING.md`)
+- [ ] v0.2.0 (MINOR): programming courses and keyword maps (`programming/`),
+      character variants (`variants/`) and the first regional and historical
+      varieties (LanguageStudentDesk#200)
 
-## After v0.1.0
-
-- `main` stays open; new content keeps landing there for v0.2.0.
-- LanguageStudentDesk and squirrelator pin their `data/` submodule to the
-  `v0.1.0` commit while the apps are tested, and only move it to another
-  release (v0.1.x or v0.2.0), never to an untagged commit, while testing.
-- Problems found in testing are fixed on `main` and shipped as v0.1.1,
-  v0.1.2, and so on.
+`main` stays open between releases. LanguageStudentDesk and squirrelator move
+their `data/` pin only to a tagged release, never to an untagged commit, and
+each move is its own PR.
 
 ## How a release is made
 
