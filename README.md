@@ -121,3 +121,13 @@ Every change goes through a pull request. See `AGENTS.md` and
   CC BY-SA 3.0 or 4.0, CC0, the Unicode license). Material under a license that
   doesn't fit, such as the Arphic Public License, stays out unless it's kept in
   its own folder under its own license and listed as such.
+
+## Plans and status
+
+- `RELEASE_PLAN.md`: what's released, and the checklist for the next tag.
+- `release-notes/`: one file per release; the newest one marked Draft collects
+  what has merged since the last tag.
+- The platform roadmap is LanguageStudentDesk issue
+  [#199](https://github.com/squirelworks/LanguageStudentDesk/issues/199), and
+  its [`docs/HANDOFF.md`](https://github.com/squirelworks/LanguageStudentDesk/blob/main/docs/HANDOFF.md)
+  says what's in flight and on hold across all three repos.
