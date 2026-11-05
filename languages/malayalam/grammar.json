@@ -7,7 +7,7 @@
     "Drills are { q, en, options, answer, why }; ＿ is the blank.",
     "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
     "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
-    "72 lessons, from A1 to C1. Lessons 7–72 were added to cover the rest of the beginner path and the main intermediate and advanced points."
+    "72 lessons, from A1 to C1. 66 lessons were added to cover the rest of the beginner path and the main intermediate and advanced points."
   ],
   "title": "Malayalam first grammar",
   "intro": "Malayalam, the language of Kerala, is a Dravidian language with an unusually simple verb: unlike its neighbours, it does not change the verb for I, you, he or they. The tense ending does all the work, the verb comes last, and case endings join the end of the noun. The 72 lessons run from A1 to C1. They start with “to be” with ആണ്, the present tense, ഇല്ല and അല്ല, questions and case endings, then add the past and future, വേണം and -അണം for want and must, participles, -ആൽ for “if” and എന്ന് for reported speech, and end with the passive, hearsay and the connectors and sandhi of written Malayalam. The transliteration is simplified: a long vowel is doubled (aa, ii, uu).",
@@ -994,6 +994,83 @@
           "options": ["വിളിക്കും", "വിളിച്ചു", "വിളിക്കൂ", "വിളിച്ചില്ല"],
           "answer": "വിളിക്കും",
           "why": "Future: -ഉം."
+        }
+      ]
+    },
+    {
+      "id": "was-aayirunnu",
+      "title": "Was: ആയിരുന്നു, ഉണ്ടായിരുന്നു",
+      "particle": "ആയിരുന്നു・ഉണ്ടായിരുന്നു・ആകും",
+      "summary": "The past of ആണ് is ആയിരുന്നു: അവൻ ടീച്ചർ ആയിരുന്നു (he was a teacher). The past of ഉണ്ട് is ഉണ്ടായിരുന്നു. Their futures are ആകും and ഉണ്ടാകും. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ആണ്</b> → <b>ആയിരുന്നു</b> (was), <b>ആകും</b> (will be). Negative: <b>അല്ലായിരുന്നു</b> (wasn't). It often fuses with the word before: നല്ലത് + ആയിരുന്നു → <b>നല്ലതായിരുന്നു</b>.",
+          "examples": [
+            [
+              "എന്റെ അച്ഛൻ ഒരു ടീച്ചർ {ആയിരുന്നു}.",
+              "Ente achan oru tiichar aayirunnu.",
+              "My father was a teacher."
+            ],
+            [
+              "സിനിമ {നല്ലതായിരുന്നു}.",
+              "Sinima nallathaayirunnu.",
+              "The film was good."
+            ]
+          ]
+        },
+        {
+          "h": "Was there, will be",
+          "p": "<b>ഉണ്ട്</b> → <b>ഉണ്ടായിരുന്നു</b> (was there, had), <b>ഉണ്ടാകും</b> (will be there). Negative: <b>ഇല്ലായിരുന്നു</b> (wasn't there). Becoming: <b>ആയി</b>: സമയം <b>ആയി</b> (it's time), വൈകി<b>പ്പോയി</b> (it got late).",
+          "examples": [
+            [
+              "ഇന്നലെ എനിക്ക് പനി {ഉണ്ടായിരുന്നു}.",
+              "Innale enikku pani undaayirunnu.",
+              "I had a fever yesterday."
+            ],
+            [
+              "നാളെ ഞാൻ വീട്ടിൽ {ഉണ്ടാകും}.",
+              "Naale njaan viittil undaakum.",
+              "I'll be at home tomorrow."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "അവൻ ഒരു ഡോക്ടർ ＿.",
+          "en": "He was a doctor.",
+          "options": ["ആയിരുന്നു", "ആണ്", "ആകും", "ഉണ്ടായിരുന്നു"],
+          "answer": "ആയിരുന്നു",
+          "why": "Was (something): ആയിരുന്നു."
+        },
+        {
+          "q": "ഭക്ഷണം നല്ലത＿.",
+          "en": "The food was good.",
+          "options": ["ാണ്", "ായിരുന്നു", "ാകും", "ല്ല"],
+          "answer": "ായിരുന്നു",
+          "why": "Fused: -ആയിരുന്നു."
+        },
+        {
+          "q": "ഇന്നലെ ഒരുപാട് ആളുകൾ ＿.",
+          "en": "There were a lot of people yesterday.",
+          "options": ["ആയിരുന്നു", "ഉണ്ടാകും", "ഉണ്ടായിരുന്നു", "ആണ്"],
+          "answer": "ഉണ്ടായിരുന്നു",
+          "why": "Was there: ഉണ്ടായിരുന്നു."
+        },
+        {
+          "q": "നാളെ ഞാൻ ഓഫീസിൽ ＿.",
+          "en": "I'll be at the office tomorrow.",
+          "options": ["ഉണ്ടായിരുന്നു", "ആയിരുന്നു", "ഇല്ലായിരുന്നു", "ഉണ്ടാകും"],
+          "answer": "ഉണ്ടാകും",
+          "why": "Will be there: ഉണ്ടാകും."
+        },
+        {
+          "q": "അത് എന്റെ തെറ്റ് ＿.",
+          "en": "That wasn't my fault.",
+          "options": ["അല്ലായിരുന്നു", "ഇല്ലായിരുന്നു", "ആയിരുന്നു", "ആകും"],
+          "answer": "അല്ലായിരുന്നു",
+          "why": "Wasn't (something): അല്ലായിരുന്നു."
         }
       ]
     },
@@ -2101,6 +2178,233 @@
       ]
     },
     {
+      "id": "adverbs",
+      "title": "How: -ആയി (പതുക്കെ, നന്നായി)",
+      "particle": "-ആയി",
+      "summary": "Adverbs often add -ആയി to a noun: ശരിയായി (properly). Some are plain words: പതുക്കെ (slowly), വേഗം (quickly), നന്നായി (well). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>പതുക്കെ</b> slowly, <b>വേഗം</b> quickly, <b>ഉറക്കെ</b> loudly, <b>നന്നായി</b> well, <b>ശരിയായി</b> properly, <b>എളുപ്പത്തിൽ</b> easily, <b>ശ്രദ്ധയോടെ</b> carefully. <b>വളരെ</b> / <b>നല്ല</b> = very.",
+          "examples": [
+            [
+              "{പതുക്കെ} സംസാരിക്കൂ.",
+              "Pathukke samsaarikkuu.",
+              "Please speak slowly."
+            ],
+            [
+              "അവൾ {നന്നായി} പാടും.",
+              "Aval nannaayi paadum.",
+              "She sings well."
+            ]
+          ]
+        },
+        {
+          "h": "As",
+          "p": "-ആയി also means \"as\": അവൻ <b>ഡോക്ടറായി</b> ജോലി ചെയ്യുന്നു (he works as a doctor). <b>സമയം ആയി</b> = it's time.",
+          "examples": [
+            [
+              "അവൻ {അധ്യാപകനായി} ജോലി ചെയ്യുന്നു.",
+              "Avan adhyaapakanaayi joli cheyyunnu.",
+              "He works as a teacher."
+            ],
+            [
+              "ഭക്ഷണം {വളരെ നന്നായിരുന്നു}.",
+              "Bhakshanam valare nannaayirunnu.",
+              "The meal was very good."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "കുറച്ച് ＿ വായിക്കൂ.",
+          "en": "Please read a bit slowly.",
+          "options": ["പതുക്കെ", "പതുക്കെയുള്ള", "വേഗം", "ഉറക്കെ"],
+          "answer": "പതുക്കെ",
+          "why": "Slowly: പതുക്കെ."
+        },
+        {
+          "q": "നാളെ ＿ വരൂ.",
+          "en": "Come early tomorrow.",
+          "options": ["വൈകി", "നേരത്തെ", "പതുക്കെ", "ഉറക്കെ"],
+          "answer": "നേരത്തെ",
+          "why": "Early: നേരത്തെ."
+        },
+        {
+          "q": "അവൻ മലയാളം ＿ സംസാരിക്കും.",
+          "en": "He speaks Malayalam well.",
+          "options": ["നല്ല", "നല്ലത്", "നന്നായി", "നല്ലതാണ്"],
+          "answer": "നന്നായി",
+          "why": "Well: നന്നായി."
+        },
+        {
+          "q": "＿ സംസാരിക്കരുത്.",
+          "en": "Don't talk loudly.",
+          "options": ["ഉറക്കം", "ഉറങ്ങി", "പതുക്കെ", "ഉറക്കെ"],
+          "answer": "ഉറക്കെ",
+          "why": "Loudly: ഉറക്കെ."
+        },
+        {
+          "q": "അവൾ ഒരു നഴ്സ് ＿ ജോലി ചെയ്യുന്നു.",
+          "en": "She works as a nurse.",
+          "options": ["ആയി", "ആയ", "ആണ്", "ആകാൻ"],
+          "answer": "ആയി",
+          "why": "As: -ആയി."
+        }
+      ]
+    },
+    {
+      "id": "kinship-address",
+      "title": "Addressing people: ചേട്ടാ, ചേച്ചീ",
+      "particle": "ചേട്ടൻ・ചേച്ചി・സാർ",
+      "summary": "Malayalis call strangers by family words: ചേട്ടാ (older brother) for a man, ചേച്ചീ (older sister) for a woman. Calling someone lengthens the end: അമ്മേ!, മോനേ!. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>അച്ഛൻ</b> dad, <b>അമ്മ</b> mum, <b>ചേട്ടൻ</b> older brother, <b>ചേച്ചി</b> older sister, <b>അനിയൻ</b> younger brother, <b>അനിയത്തി</b> younger sister, <b>അപ്പൂപ്പൻ</b> grandpa, <b>അമ്മൂമ്മ</b> grandma. Calling: <b>ചേട്ടാ</b>, <b>ചേച്ചീ</b>, <b>അമ്മേ</b>, <b>മോനേ</b> (son!), <b>മോളേ</b> (daughter!).",
+          "examples": [
+            [
+              "{ചേട്ടാ}, ഈ ബസ് കോഴിക്കോട്ടേക്ക് പോകുമോ?",
+              "Chettaa, ii bas kozhikkottekku pokumo?",
+              "Excuse me (brother), does this bus go to Kozhikode?"
+            ],
+            [
+              "{ചേച്ചീ}, ഈ പൂവിന് എത്രയാണ്?",
+              "Chechii, ii puuvinu ethrayaanu?",
+              "Excuse me (sister), how much are these flowers?"
+            ]
+          ]
+        },
+        {
+          "h": "Polite names",
+          "p": "In offices and to teachers: <b>സാർ</b>, <b>മാഡം</b>, <b>ടീച്ചർ</b>. Name + <b>ചേട്ടൻ</b> / <b>ചേച്ചി</b> is friendly and respectful: ബാബു <b>ചേട്ടൻ</b>. Very formal: <b>ശ്രീ</b> (Mr) and <b>ശ്രീമതി</b> (Mrs) in writing.",
+          "examples": [
+            [
+              "{സാർ}, അകത്ത് വരാമോ?",
+              "Saar, akathu varaamo?",
+              "Sir, may I come in?"
+            ],
+            [
+              "{ബാബു ചേട്ടൻ} വന്നോ?",
+              "Baabu chettan vanno?",
+              "Has Babu-chettan come?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿, ഓട്ടോ വരുമോ?",
+          "en": "Excuse me (brother), will you take me? (to an auto driver)",
+          "options": ["ചേട്ടാ", "അനിയാ", "അച്ഛാ", "മോനേ"],
+          "answer": "ചേട്ടാ",
+          "why": "A man you don't know: ചേട്ടാ."
+        },
+        {
+          "q": "＿, തക്കാളിക്ക് എത്രയാണ്?",
+          "en": "Excuse me (sister), how much are the tomatoes?",
+          "options": ["അനിയത്തീ", "ചേച്ചീ", "അമ്മേ", "മോളേ"],
+          "answer": "ചേച്ചീ",
+          "why": "A woman you don't know: ചേച്ചീ."
+        },
+        {
+          "q": "＿, ഇങ്ങോട്ട് വാ.",
+          "en": "Son, come here.",
+          "options": ["ചേട്ടാ", "സാർ", "മോനേ", "അച്ഛാ"],
+          "answer": "മോനേ",
+          "why": "Son (calling): മോനേ."
+        },
+        {
+          "q": "എന്റെ ＿ എന്നെക്കാൾ ഇളയതാണ്.",
+          "en": "My younger sister is younger than me.",
+          "options": ["ചേച്ചി", "ചേട്ടൻ", "അമ്മ", "അനിയത്തി"],
+          "answer": "അനിയത്തി",
+          "why": "Younger sister: അനിയത്തി."
+        },
+        {
+          "q": "＿, ഒരു സംശയം.",
+          "en": "Sir, I have a question.",
+          "options": ["സാർ", "മോനേ", "അനിയാ", "ചേട്ടത്തി"],
+          "answer": "സാർ",
+          "why": "Office/teacher: സാർ."
+        }
+      ]
+    },
+    {
+      "id": "only",
+      "title": "Only: മാത്രം, ഒഴികെ",
+      "particle": "മാത്രം・ഒരേയൊരു・ഒഴികെ",
+      "summary": "\"Only\" is മാത്രം after the word: ഞാൻ മാത്രം (only me), പത്തു രൂപ മാത്രം (just ten rupees). \"Except\" is ഒഴികെ. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>മാത്രം</b> follows what it limits: ഇന്ന് <b>മാത്രം</b>, ചായ <b>മാത്രം</b>. <b>ഒരേയൊരു</b> = the one and only: <b>ഒരേയൊരു</b> മകൻ. <b>വെറും</b> before a noun = mere, just: <b>വെറും</b> പത്തു രൂപ.",
+          "examples": [
+            ["{ഞാൻ മാത്രം} വന്നു.", "Njaan maathram vannu.", "Only I came."],
+            [
+              "അവൻ അവരുടെ {ഒരേയൊരു} മകനാണ്.",
+              "Avan avarude oreyoru makanaanu.",
+              "He's their only son."
+            ]
+          ]
+        },
+        {
+          "h": "Except, not only",
+          "p": "<b>ഒഴികെ</b> = except: ഞായറാഴ്ച <b>ഒഴികെ</b>. <b>മാത്രമല്ല</b> = not only … (but also): അവൾ മലയാളം <b>മാത്രമല്ല</b>, തമിഴും സംസാരിക്കും.",
+          "examples": [
+            [
+              "അവൾ മലയാളം {മാത്രമല്ല}, തമിഴും സംസാരിക്കും.",
+              "Aval malayaalam maathramalla, thamizhum samsaarikkum.",
+              "She speaks not only Malayalam but Tamil too."
+            ],
+            [
+              "{ഞായറാഴ്ച ഒഴികെ} എല്ലാ ദിവസവും കട തുറക്കും.",
+              "Njaayaraazhcha ozhike ellaa divasavum kada thurakkum.",
+              "The shop opens every day except Sunday."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "എനിക്ക് പത്തു മിനിറ്റ് ＿ വേണം.",
+          "en": "I only need ten minutes.",
+          "options": ["മാത്രം", "പോലും", "ഒഴികെ", "ഇല്ല"],
+          "answer": "മാത്രം",
+          "why": "Only: മാത്രം."
+        },
+        {
+          "q": "അവൾ അവരുടെ ＿ മകളാണ്.",
+          "en": "She's their only daughter.",
+          "options": ["ഒരു", "ഒരേയൊരു", "ഓരോ", "ഒരേ"],
+          "answer": "ഒരേയൊരു",
+          "why": "The only: ഒരേയൊരു."
+        },
+        {
+          "q": "ഇന്ന് ＿ അവധി.",
+          "en": "The holiday is only today.",
+          "options": ["ഉം", "ഒഴികെ", "മാത്രം", "എല്ലാ"],
+          "answer": "മാത്രം",
+          "why": "Only: മാത്രം."
+        },
+        {
+          "q": "അവനെ ＿ എല്ലാവരും വന്നു.",
+          "en": "Everyone came except him.",
+          "options": ["മാത്രം", "പോലും", "കൂടെ", "ഒഴികെ"],
+          "answer": "ഒഴികെ",
+          "why": "Except: ഒഴികെ."
+        },
+        {
+          "q": "അവൻ പാടുക ＿, എഴുതുകയും ചെയ്യും.",
+          "en": "He not only sings, he writes too.",
+          "options": ["മാത്രമല്ല", "മാത്രം", "ഒഴികെ", "ഒരേ"],
+          "answer": "മാത്രമല്ല",
+          "why": "Not only: മാത്രമല്ല."
+        }
+      ]
+    },
+    {
       "id": "infinitive-purpose",
       "title": "In order to: -ആൻ",
       "particle": "-ആൻ",
@@ -2401,83 +2705,6 @@
           "options": ["മതി", "വേണ്ട", "ഇല്ല", "എങ്കിൽ"],
           "answer": "മതി",
           "why": "Enough: -ആൽ മതി."
-        }
-      ]
-    },
-    {
-      "id": "concessive",
-      "title": "Even if: -ആലും",
-      "particle": "-ആലും・എങ്കിലും",
-      "summary": "Add -ഉം to the \"if\" form for \"even if, although\": മഴ പെയ്താലും ഞാൻ വരും (I'll come even if it rains). With a question word it means \"-ever\": എന്തു വന്നാലും (whatever happens). (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "വന്നാൽ → <b>വന്നാലും</b>, ചെയ്താൽ → <b>ചെയ്താലും</b>, ഉണ്ടെങ്കിൽ → <b>ഉണ്ടെങ്കിലും</b>. <b>എങ്കിലും</b> alone = \"even so, still\". <b>എത്ര … -ആലും</b> = however much.",
-          "examples": [
-            [
-              "എത്ര {പഠിച്ചാലും} ഓർമ്മയിൽ നിൽക്കുന്നില്ല.",
-              "Ethra padichaalum ormmayil nilkkunnilla.",
-              "However much I study, it doesn't stick."
-            ],
-            [
-              "പണം {ഉണ്ടെങ്കിലും} അവൻ ചെലവാക്കില്ല.",
-              "Panam undenkilum avan chelavaakkilla.",
-              "Even though he has money, he won't spend it."
-            ]
-          ]
-        },
-        {
-          "h": "-ever",
-          "p": "Question word + -ആലും: <b>ആരു വന്നാലും</b> (whoever comes), <b>എവിടെ പോയാലും</b> (wherever you go), <b>എന്തായാലും</b> (whatever happens; anyway).",
-          "examples": [
-            [
-              "{എന്തായാലും} ഞാൻ നിന്റെ കൂടെ ഉണ്ടാകും.",
-              "Enthaayaalum njaan ninte koode undaakum.",
-              "Whatever happens, I'll be with you."
-            ],
-            [
-              "{ആരു വന്നാലും} വാതിൽ തുറക്കരുത്.",
-              "Aaru vannaalum vaathil thurakkaruthu.",
-              "Don't open the door, whoever comes."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "മഴ ＿ ഞാൻ വരും.",
-          "en": "I'll come even if it rains.",
-          "options": ["പെയ്താലും", "പെയ്താൽ", "പെയ്ത്", "പെയ്യാതെ"],
-          "answer": "പെയ്താലും",
-          "why": "Even if: -ആലും."
-        },
-        {
-          "q": "എത്ര പറഞ്ഞ＿ അവൻ കേൾക്കില്ല.",
-          "en": "However much I tell him, he won't listen.",
-          "options": ["ാൽ", "ാലും", "ു", "ില്ല"],
-          "answer": "ാലും",
-          "why": "However much: എത്ര … -ആലും."
-        },
-        {
-          "q": "＿ പേടിക്കണ്ട.",
-          "en": "Whatever happens, don't be afraid.",
-          "options": ["എന്തായാൽ", "എന്തായി", "എന്തായാലും", "എന്താകാൻ"],
-          "answer": "എന്തായാലും",
-          "why": "Whatever: എന്തായാലും."
-        },
-        {
-          "q": "ക്ഷീണമുണ്ടായിരുന്നു. ＿ ജോലി തീർത്തു.",
-          "en": "I was tired. Even so, I finished the work.",
-          "options": ["എങ്കിൽ", "അതുകൊണ്ട്", "അപ്പോൾ", "എങ്കിലും"],
-          "answer": "എങ്കിലും",
-          "why": "Even so: എങ്കിലും."
-        },
-        {
-          "q": "ആരു ചോദിച്ച＿ പറയരുത്.",
-          "en": "Don't tell, whoever asks.",
-          "options": ["ാലും", "ാൽ", "ു", "ിട്ട്"],
-          "answer": "ാലും",
-          "why": "Whoever: ആര് … -ആലും."
         }
       ]
     },
@@ -3613,83 +3840,6 @@
       ]
     },
     {
-      "id": "adverbs",
-      "title": "How: -ആയി (പതുക്കെ, നന്നായി)",
-      "particle": "-ആയി",
-      "summary": "Adverbs often add -ആയി to a noun: ശരിയായി (properly). Some are plain words: പതുക്കെ (slowly), വേഗം (quickly), നന്നായി (well). (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>പതുക്കെ</b> slowly, <b>വേഗം</b> quickly, <b>ഉറക്കെ</b> loudly, <b>നന്നായി</b> well, <b>ശരിയായി</b> properly, <b>എളുപ്പത്തിൽ</b> easily, <b>ശ്രദ്ധയോടെ</b> carefully. <b>വളരെ</b> / <b>നല്ല</b> = very.",
-          "examples": [
-            [
-              "{പതുക്കെ} സംസാരിക്കൂ.",
-              "Pathukke samsaarikkuu.",
-              "Please speak slowly."
-            ],
-            [
-              "അവൾ {നന്നായി} പാടും.",
-              "Aval nannaayi paadum.",
-              "She sings well."
-            ]
-          ]
-        },
-        {
-          "h": "As",
-          "p": "-ആയി also means \"as\": അവൻ <b>ഡോക്ടറായി</b> ജോലി ചെയ്യുന്നു (he works as a doctor). <b>സമയം ആയി</b> = it's time.",
-          "examples": [
-            [
-              "അവൻ {അധ്യാപകനായി} ജോലി ചെയ്യുന്നു.",
-              "Avan adhyaapakanaayi joli cheyyunnu.",
-              "He works as a teacher."
-            ],
-            [
-              "ഭക്ഷണം {വളരെ നന്നായിരുന്നു}.",
-              "Bhakshanam valare nannaayirunnu.",
-              "The meal was very good."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "കുറച്ച് ＿ വായിക്കൂ.",
-          "en": "Please read a bit slowly.",
-          "options": ["പതുക്കെ", "പതുക്കെയുള്ള", "വേഗം", "ഉറക്കെ"],
-          "answer": "പതുക്കെ",
-          "why": "Slowly: പതുക്കെ."
-        },
-        {
-          "q": "നാളെ ＿ വരൂ.",
-          "en": "Come early tomorrow.",
-          "options": ["വൈകി", "നേരത്തെ", "പതുക്കെ", "ഉറക്കെ"],
-          "answer": "നേരത്തെ",
-          "why": "Early: നേരത്തെ."
-        },
-        {
-          "q": "അവൻ മലയാളം ＿ സംസാരിക്കും.",
-          "en": "He speaks Malayalam well.",
-          "options": ["നല്ല", "നല്ലത്", "നന്നായി", "നല്ലതാണ്"],
-          "answer": "നന്നായി",
-          "why": "Well: നന്നായി."
-        },
-        {
-          "q": "＿ സംസാരിക്കരുത്.",
-          "en": "Don't talk loudly.",
-          "options": ["ഉറക്കം", "ഉറങ്ങി", "പതുക്കെ", "ഉറക്കെ"],
-          "answer": "ഉറക്കെ",
-          "why": "Loudly: ഉറക്കെ."
-        },
-        {
-          "q": "അവൾ ഒരു നഴ്സ് ＿ ജോലി ചെയ്യുന്നു.",
-          "en": "She works as a nurse.",
-          "options": ["ആയി", "ആയ", "ആണ്", "ആകാൻ"],
-          "answer": "ആയി",
-          "why": "As: -ആയി."
-        }
-      ]
-    },
-    {
       "id": "experiencer",
       "title": "Hunger, fever, feelings: എനിക്ക് വിശക്കുന്നു",
       "particle": "എനിക്ക് … -ഉന്നു・… വന്നു",
@@ -3759,83 +3909,6 @@
           "options": ["സുഖമില്ല", "സുഖമാണ്", "സുഖം വേണം", "സുഖിച്ചു"],
           "answer": "സുഖമില്ല",
           "why": "Unwell: സുഖമില്ല."
-        }
-      ]
-    },
-    {
-      "id": "kinship-address",
-      "title": "Addressing people: ചേട്ടാ, ചേച്ചീ",
-      "particle": "ചേട്ടൻ・ചേച്ചി・സാർ",
-      "summary": "Malayalis call strangers by family words: ചേട്ടാ (older brother) for a man, ചേച്ചീ (older sister) for a woman. Calling someone lengthens the end: അമ്മേ!, മോനേ!. (about A2)",
-      "level": "beginner-intermediate",
-      "sections": [
-        {
-          "p": "<b>അച്ഛൻ</b> dad, <b>അമ്മ</b> mum, <b>ചേട്ടൻ</b> older brother, <b>ചേച്ചി</b> older sister, <b>അനിയൻ</b> younger brother, <b>അനിയത്തി</b> younger sister, <b>അപ്പൂപ്പൻ</b> grandpa, <b>അമ്മൂമ്മ</b> grandma. Calling: <b>ചേട്ടാ</b>, <b>ചേച്ചീ</b>, <b>അമ്മേ</b>, <b>മോനേ</b> (son!), <b>മോളേ</b> (daughter!).",
-          "examples": [
-            [
-              "{ചേട്ടാ}, ഈ ബസ് കോഴിക്കോട്ടേക്ക് പോകുമോ?",
-              "Chettaa, ii bas kozhikkottekku pokumo?",
-              "Excuse me (brother), does this bus go to Kozhikode?"
-            ],
-            [
-              "{ചേച്ചീ}, ഈ പൂവിന് എത്രയാണ്?",
-              "Chechii, ii puuvinu ethrayaanu?",
-              "Excuse me (sister), how much are these flowers?"
-            ]
-          ]
-        },
-        {
-          "h": "Polite names",
-          "p": "In offices and to teachers: <b>സാർ</b>, <b>മാഡം</b>, <b>ടീച്ചർ</b>. Name + <b>ചേട്ടൻ</b> / <b>ചേച്ചി</b> is friendly and respectful: ബാബു <b>ചേട്ടൻ</b>. Very formal: <b>ശ്രീ</b> (Mr) and <b>ശ്രീമതി</b> (Mrs) in writing.",
-          "examples": [
-            [
-              "{സാർ}, അകത്ത് വരാമോ?",
-              "Saar, akathu varaamo?",
-              "Sir, may I come in?"
-            ],
-            [
-              "{ബാബു ചേട്ടൻ} വന്നോ?",
-              "Baabu chettan vanno?",
-              "Has Babu-chettan come?"
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "＿, ഓട്ടോ വരുമോ?",
-          "en": "Excuse me (brother), will you take me? (to an auto driver)",
-          "options": ["ചേട്ടാ", "അനിയാ", "അച്ഛാ", "മോനേ"],
-          "answer": "ചേട്ടാ",
-          "why": "A man you don't know: ചേട്ടാ."
-        },
-        {
-          "q": "＿, തക്കാളിക്ക് എത്രയാണ്?",
-          "en": "Excuse me (sister), how much are the tomatoes?",
-          "options": ["അനിയത്തീ", "ചേച്ചീ", "അമ്മേ", "മോളേ"],
-          "answer": "ചേച്ചീ",
-          "why": "A woman you don't know: ചേച്ചീ."
-        },
-        {
-          "q": "＿, ഇങ്ങോട്ട് വാ.",
-          "en": "Son, come here.",
-          "options": ["ചേട്ടാ", "സാർ", "മോനേ", "അച്ഛാ"],
-          "answer": "മോനേ",
-          "why": "Son (calling): മോനേ."
-        },
-        {
-          "q": "എന്റെ ＿ എന്നെക്കാൾ ഇളയതാണ്.",
-          "en": "My younger sister is younger than me.",
-          "options": ["ചേച്ചി", "ചേട്ടൻ", "അമ്മ", "അനിയത്തി"],
-          "answer": "അനിയത്തി",
-          "why": "Younger sister: അനിയത്തി."
-        },
-        {
-          "q": "＿, ഒരു സംശയം.",
-          "en": "Sir, I have a question.",
-          "options": ["സാർ", "മോനേ", "അനിയാ", "ചേട്ടത്തി"],
-          "answer": "സാർ",
-          "why": "Office/teacher: സാർ."
         }
       ]
     },
@@ -3990,160 +4063,6 @@
           "options": ["നോക്കി", "കണ്ടു", "വന്നു", "തന്നു"],
           "answer": "നോക്കി",
           "why": "Tried: നോക്കി."
-        }
-      ]
-    },
-    {
-      "id": "causative",
-      "title": "Make someone do: -ഇക്കുക, -പ്പിക്കുക",
-      "particle": "-ഇക്കുക・-പ്പിക്കുക",
-      "summary": "Causatives add -ഇക്കുക or -പ്പിക്കുക: പഠിക്കുക (study) → പഠിപ്പിക്കുക (teach), ചെയ്യുക → ചെയ്യിക്കുക (have done). (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "പഠിക്കുക → <b>പഠിപ്പിക്കുക</b> (teach), കാണുക → <b>കാണിക്കുക</b> (show), കുടിക്കുക → <b>കുടിപ്പിക്കുക</b> (make drink), ഉറങ്ങുക → <b>ഉറക്കുക</b> (put to sleep), ഓടുക → <b>ഓടിക്കുക</b> (drive), നിൽക്കുക → <b>നിർത്തുക</b> (stop something).",
-          "examples": [
-            [
-              "എനിക്ക് വഴി {കാണിച്ചുതരാമോ}?",
-              "Enikku vazhi kaanichutharaamo?",
-              "Could you show me the way?"
-            ],
-            [
-              "ഇവിടെ വണ്ടി {നിർത്തൂ}.",
-              "Ivide vandi nirthuu.",
-              "Stop the car here."
-            ]
-          ]
-        },
-        {
-          "h": "Who does it",
-          "p": "The one made to act takes <b>-എ</b> or <b>-ഇനെക്കൊണ്ട്</b>: ഞാൻ അവ<b>നെക്കൊണ്ട്</b> ജോലി ചെയ്യിച്ചു (I got him to do the work). Many common verbs are causatives: <b>അയയ്ക്കുക</b> (send), <b>തീർക്കുക</b> (finish something).",
-          "examples": [
-            [
-              "ടീച്ചർ കുട്ടികളെ മലയാളം {പഠിപ്പിക്കുന്നു}.",
-              "Tiichar kuttikale malayaalam padippikkunnu.",
-              "The teacher teaches the children Malayalam."
-            ],
-            [
-              "അമ്മ കുഞ്ഞിനെ {ഉറക്കി}.",
-              "Amma kunjine urakki.",
-              "Mum put the baby to sleep."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "അവൻ ബസ് ഓടി＿.",
-          "en": "He drives a bus.",
-          "options": ["ക്കുന്നു", "ുന്നു", "ച്ചു വന്നു", "ക്കാൻ"],
-          "answer": "ക്കുന്നു",
-          "why": "Drive: ഓടിക്കുക."
-        },
-        {
-          "q": "ടീച്ചർ കുട്ടികളെ കണക്ക് പഠി＿.",
-          "en": "The teacher teaches the children maths.",
-          "options": ["ക്കുന്നു", "പ്പിക്കുന്നു", "ച്ചു", "ക്കാൻ"],
-          "answer": "പ്പിക്കുന്നു",
-          "why": "Teach: പഠിപ്പിക്കുക."
-        },
-        {
-          "q": "ദയവായി നിങ്ങളുടെ ടിക്കറ്റ് കാണി＿.",
-          "en": "Please show your ticket.",
-          "options": ["ച്ചു", "ക്കാൻ", "ക്കൂ", "ക്കും"],
-          "answer": "ക്കൂ",
-          "why": "Show: കാണിക്കുക."
-        },
-        {
-          "q": "അമ്മൂമ്മ കുഞ്ഞിനെ ഉറ＿.",
-          "en": "Grandma put the baby to sleep.",
-          "options": ["ങ്ങി", "ങ്ങും", "ങ്ങാൻ", "ക്കി"],
-          "answer": "ക്കി",
-          "why": "Put to sleep: ഉറക്കുക."
-        },
-        {
-          "q": "ഞാൻ അവനെ＿ ജോലി ചെയ്യിച്ചു.",
-          "en": "I got him to do the work.",
-          "options": ["ക്കൊണ്ട്", "ക്ക്", "ന്റെ", "ഓട്"],
-          "answer": "ക്കൊണ്ട്",
-          "why": "The doer: -എക്കൊണ്ട്."
-        }
-      ]
-    },
-    {
-      "id": "passive",
-      "title": "The passive: -പ്പെടുക",
-      "particle": "-പ്പെടുക・-ആൽ",
-      "summary": "Everyday Malayalam prefers active sentences. News and formal writing use -പ്പെടുക: നിർമ്മിക്കപ്പെട്ടു (was built). The doer takes -ആൽ. (about B2)",
-      "level": "advanced-intermediate",
-      "sections": [
-        {
-          "p": "Infinitive-like stem + <b>-പ്പെടുക</b>: ചെയ്യ<b>പ്പെട്ടു</b> (was done), അറിയ<b>പ്പെടുന്നു</b> (is known), എഴുത<b>പ്പെട്ട</b> (written). Some are everyday words: <b>ഇഷ്ടപ്പെട്ടു</b> (was liked, I liked it), <b>നഷ്ടപ്പെട്ടു</b> (was lost).",
-          "examples": [
-            [
-              "ഈ ക്ഷേത്രം പതിനാറാം നൂറ്റാണ്ടിൽ {നിർമ്മിക്കപ്പെട്ടു}.",
-              "Ii kshethram pathinaaraam nuuttaandil nirmmikkappettu.",
-              "This temple was built in the 16th century."
-            ],
-            [
-              "കേരളം \"ദൈവത്തിന്റെ സ്വന്തം നാട്\" എന്ന് {അറിയപ്പെടുന്നു}.",
-              "Keralam \"daivathinte swantham naadu\" ennu ariyappedunnu.",
-              "Kerala is known as \"God's own country\"."
-            ]
-          ]
-        },
-        {
-          "h": "The doer",
-          "p": "The doer takes <b>-ആൽ</b>: രാജാവി<b>നാൽ</b> നിർമ്മിക്കപ്പെട്ടു (built by the king). In speech, say it actively: രാജാവ് പണിതു. News also uses impersonal forms: യോഗം <b>മാറ്റിവെച്ചു</b> (the meeting was postponed).",
-          "examples": [
-            [
-              "ഈ പുസ്തകം {ബഷീറിനാൽ} എഴുതപ്പെട്ടു.",
-              "Ii pusthakam bashiirinaal ezhuthappettu.",
-              "This book was written by Basheer."
-            ],
-            [
-              "എന്റെ പേഴ്സ് {നഷ്ടപ്പെട്ടു}.",
-              "Ente pezhsu nashtappettu.",
-              "My wallet got lost."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ഈ കോട്ട ടിപ്പുവിനാൽ നിർമ്മിക്ക＿.",
-          "en": "This fort was built by Tipu.",
-          "options": ["പ്പെട്ടു", "ുന്നു", "ാൻ", "ണം"],
-          "answer": "പ്പെട്ടു",
-          "why": "Passive: -പ്പെട്ടു."
-        },
-        {
-          "q": "കൊച്ചി \"അറബിക്കടലിന്റെ റാണി\" എന്ന് അറിയ＿.",
-          "en": "Kochi is known as \"Queen of the Arabian Sea\".",
-          "options": ["ുന്നു", "പ്പെടുന്നു", "ാം", "ണം"],
-          "answer": "പ്പെടുന്നു",
-          "why": "Is known: അറിയപ്പെടുന്നു."
-        },
-        {
-          "q": "ഈ നോവൽ എം.ടി.＿ എഴുതപ്പെട്ടു.",
-          "en": "This novel was written by M.T.",
-          "options": ["ക്ക്", "യുടെ", "യാൽ", "യിൽ"],
-          "answer": "യാൽ",
-          "why": "The doer: -ആൽ."
-        },
-        {
-          "q": "സിനിമ എനിക്ക് ഇഷ്ട＿.",
-          "en": "I liked the film.",
-          "options": ["മാണ് ഇല്ല", "ം വേണം", "പ്പെടുത്തി", "പ്പെട്ടു"],
-          "answer": "പ്പെട്ടു",
-          "why": "Liked: ഇഷ്ടപ്പെട്ടു."
-        },
-        {
-          "q": "എന്റെ താക്കോൽ നഷ്ട＿.",
-          "en": "My key got lost.",
-          "options": ["പ്പെട്ടു", "പ്പെടുത്തി", "മാണ്", "ം വന്നു"],
-          "answer": "പ്പെട്ടു",
-          "why": "Lost: നഷ്ടപ്പെട്ടു."
         }
       ]
     },
@@ -4379,75 +4298,541 @@
       ]
     },
     {
-      "id": "only",
-      "title": "Only: മാത്രം, ഒഴികെ",
-      "particle": "മാത്രം・ഒരേയൊരു・ഒഴികെ",
-      "summary": "\"Only\" is മാത്രം after the word: ഞാൻ മാത്രം (only me), പത്തു രൂപ മാത്രം (just ten rupees). \"Except\" is ഒഴികെ. (about A2)",
-      "level": "beginner-intermediate",
+      "id": "reported-command",
+      "title": "Told someone to: -ആൻ പറഞ്ഞു",
+      "particle": "-ഓട് … -ആൻ പറയുക",
+      "summary": "A reported command is the infinitive + പറയുക, and the person told takes -ഓട്: അവർ എന്നോട് കാത്തിരിക്കാൻ പറഞ്ഞു (they told me to wait). (about B1)",
+      "level": "intermediate",
       "sections": [
         {
-          "p": "<b>മാത്രം</b> follows what it limits: ഇന്ന് <b>മാത്രം</b>, ചായ <b>മാത്രം</b>. <b>ഒരേയൊരു</b> = the one and only: <b>ഒരേയൊരു</b> മകൻ. <b>വെറും</b> before a noun = mere, just: <b>വെറും</b> പത്തു രൂപ.",
+          "p": "<b>-ഓട് … -ആൻ പറഞ്ഞു</b>: ഡോക്ടർ എന്നോട് <b>വിശ്രമിക്കാൻ പറഞ്ഞു</b>. Ask someone to: <b>-ആൻ ആവശ്യപ്പെട്ടു</b> (formal). Passing on: അവനോട് എന്നെ <b>വിളിക്കാൻ പറയൂ</b>.",
           "examples": [
-            ["{ഞാൻ മാത്രം} വന്നു.", "Njaan maathram vannu.", "Only I came."],
             [
-              "അവൻ അവരുടെ {ഒരേയൊരു} മകനാണ്.",
-              "Avan avarude oreyoru makanaanu.",
-              "He's their only son."
+              "അവർ {എന്നോട്} {കാത്തിരിക്കാൻ പറഞ്ഞു}.",
+              "Avar ennodu kaathirikkaan paranju.",
+              "They told me to wait."
+            ],
+            [
+              "{അവളോട്} എന്നെ {വിളിക്കാൻ പറയൂ}.",
+              "Avalodu enne vilikkaan parayuu.",
+              "Tell her to call me."
             ]
           ]
         },
         {
-          "h": "Except, not only",
-          "p": "<b>ഒഴികെ</b> = except: ഞായറാഴ്ച <b>ഒഴികെ</b>. <b>മാത്രമല്ല</b> = not only … (but also): അവൾ മലയാളം <b>മാത്രമല്ല</b>, തമിഴും സംസാരിക്കും.",
+          "h": "Written requests",
+          "p": "Formal notices: <b>-അണമെന്ന് അഭ്യർത്ഥിക്കുന്നു</b>: എല്ലാവരും സമയത്ത് എത്ത<b>ണമെന്ന് അഭ്യർത്ഥിക്കുന്നു</b> (everyone is requested to arrive on time). Spoken quote: \"വേഗം വാ\" <b>എന്ന് പറഞ്ഞു</b>.",
           "examples": [
             [
-              "അവൾ മലയാളം {മാത്രമല്ല}, തമിഴും സംസാരിക്കും.",
-              "Aval malayaalam maathramalla, thamizhum samsaarikkum.",
-              "She speaks not only Malayalam but Tamil too."
+              "എല്ലാവരും സമയത്ത് {എത്തണമെന്ന്} അഭ്യർത്ഥിക്കുന്നു.",
+              "Ellaavarum samayathu ethanamennu abhyarthikkunnu.",
+              "Everyone is requested to arrive on time."
             ],
             [
-              "{ഞായറാഴ്ച ഒഴികെ} എല്ലാ ദിവസവും കട തുറക്കും.",
-              "Njaayaraazhcha ozhike ellaa divasavum kada thurakkum.",
-              "The shop opens every day except Sunday."
+              "അമ്മ വേഗം വരാൻ {പറഞ്ഞു}.",
+              "Amma vegam varaan paranju.",
+              "Mum told me to come quickly."
             ]
           ]
         }
       ],
       "drills": [
         {
-          "q": "എനിക്ക് പത്തു മിനിറ്റ് ＿ വേണം.",
-          "en": "I only need ten minutes.",
-          "options": ["മാത്രം", "പോലും", "ഒഴികെ", "ഇല്ല"],
-          "answer": "മാത്രം",
-          "why": "Only: മാത്രം."
+          "q": "ഡോക്ടർ എന്നോട് നടക്ക＿ പറഞ്ഞു.",
+          "en": "The doctor told me to walk.",
+          "options": ["ാൻ", "ും", "ണം", "രുത്"],
+          "answer": "ാൻ",
+          "why": "Told to: -ആൻ പറഞ്ഞു."
         },
         {
-          "q": "അവൾ അവരുടെ ＿ മകളാണ്.",
-          "en": "She's their only daughter.",
-          "options": ["ഒരു", "ഒരേയൊരു", "ഓരോ", "ഒരേ"],
-          "answer": "ഒരേയൊരു",
-          "why": "The only: ഒരേയൊരു."
+          "q": "＿ കാത്തിരിക്കാൻ പറയൂ.",
+          "en": "Tell him to wait.",
+          "options": ["അവനെ", "അവനോട്", "അവന്", "അവന്റെ"],
+          "answer": "അവനോട്",
+          "why": "The person told: -ഓട്."
         },
         {
-          "q": "ഇന്ന് ＿ അവധി.",
-          "en": "The holiday is only today.",
-          "options": ["ഉം", "ഒഴികെ", "മാത്രം", "എല്ലാ"],
-          "answer": "മാത്രം",
-          "why": "Only: മാത്രം."
+          "q": "അവർ എന്നോട് സഹായിക്കാൻ ＿.",
+          "en": "They asked me to help.",
+          "options": ["വേണം", "പറ്റി", "ആവശ്യപ്പെട്ടു", "വന്നു"],
+          "answer": "ആവശ്യപ്പെട്ടു",
+          "why": "Asked (formal): ആവശ്യപ്പെട്ടു."
         },
         {
-          "q": "അവനെ ＿ എല്ലാവരും വന്നു.",
-          "en": "Everyone came except him.",
-          "options": ["മാത്രം", "പോലും", "കൂടെ", "ഒഴികെ"],
-          "answer": "ഒഴികെ",
-          "why": "Except: ഒഴികെ."
+          "q": "ടീച്ചർ ഞങ്ങളോട് മിണ്ടാതിരിക്ക＿ പറഞ്ഞു.",
+          "en": "The teacher told us to be quiet.",
+          "options": ["ും", "ുക", "ണം", "ാൻ"],
+          "answer": "ാൻ",
+          "why": "Told to: -ആൻ പറഞ്ഞു."
         },
         {
-          "q": "അവൻ പാടുക ＿, എഴുതുകയും ചെയ്യും.",
-          "en": "He not only sings, he writes too.",
-          "options": ["മാത്രമല്ല", "മാത്രം", "ഒഴികെ", "ഒരേ"],
-          "answer": "മാത്രമല്ല",
-          "why": "Not only: മാത്രമല്ല."
+          "q": "അംഗങ്ങൾ യോഗത്തിൽ പങ്കെടുക്ക＿ അഭ്യർത്ഥിക്കുന്നു.",
+          "en": "Members are requested to attend the meeting.",
+          "options": ["ണമെന്ന്", "ാൻ ഇല്ല", "രുത്", "ും"],
+          "answer": "ണമെന്ന്",
+          "why": "Written request: -അണമെന്ന്."
+        }
+      ]
+    },
+    {
+      "id": "without-aathe",
+      "title": "Without: -ആതെ",
+      "particle": "-ആതെ・ഇല്ലാതെ・പകരം",
+      "summary": "-ആതെ on the stem means \"without doing\": പറയാതെ പോയി (he left without saying). Nouns use ഇല്ലാതെ: പണം ഇല്ലാതെ (without money). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "പറയുക → <b>പറയാതെ</b>, കഴിക്കുക → <b>കഴിക്കാതെ</b>, നോക്കുക → <b>നോക്കാതെ</b>, ഉറങ്ങുക → <b>ഉറങ്ങാതെ</b>. Nouns: പഞ്ചസാര <b>ഇല്ലാതെ</b> (without sugar).",
+          "examples": [
+            [
+              "അവൻ ഭക്ഷണം {കഴിക്കാതെ} ഉറങ്ങി.",
+              "Avan bhakshanam kazhikkaathe urangi.",
+              "He went to sleep without eating."
+            ],
+            [
+              "{പഞ്ചസാര ഇല്ലാതെ} ഒരു ചായ.",
+              "Panchasaara illaathe oru chaaya.",
+              "A tea without sugar."
+            ]
+          ]
+        },
+        {
+          "h": "Instead of",
+          "p": "<b>പകരം</b> = instead: കാപ്പി<b>ക്ക് പകരം</b> ചായ (tea instead of coffee). With a verb: പഠിക്കു<b>ന്നതിനു പകരം</b> കളിക്കുന്നു (playing instead of studying).",
+          "examples": [
+            [
+              "{ബസ്സിനു പകരം} ട്രെയിനിൽ പോകാം.",
+              "Bassinu pakaram treyinil pokaam.",
+              "Let's go by train instead of bus."
+            ],
+            [
+              "അവൻ {പഠിക്കുന്നതിനു പകരം} ടിവി കാണുന്നു.",
+              "Avan padikkunnathinu pakaram tivi kaanunnu.",
+              "He's watching TV instead of studying."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "അവൾ ഒന്നും പറയാ＿ പോയി.",
+          "en": "She left without saying anything.",
+          "options": ["തെ", "ൻ", "ം", "ത്ത"],
+          "answer": "തെ",
+          "why": "Without: -ആതെ."
+        },
+        {
+          "q": "കുട്ടികൾ പ്രാതൽ കഴിക്കാ＿ സ്കൂളിൽ പോയി.",
+          "en": "The children went to school without breakfast.",
+          "options": ["ൻ", "തെ", "ം", "ത്ത"],
+          "answer": "തെ",
+          "why": "Without: -ആതെ."
+        },
+        {
+          "q": "പാൽ ＿ ചായ.",
+          "en": "Tea without milk.",
+          "options": ["കഴിക്കാതെ", "വേണ്ട", "ഇല്ലാതെ", "അല്ലാതെ"],
+          "answer": "ഇല്ലാതെ",
+          "why": "Noun: ഇല്ലാതെ."
+        },
+        {
+          "q": "ചോറിന് ＿ ചപ്പാത്തി തരൂ.",
+          "en": "Give me chapati instead of rice.",
+          "options": ["കൂടെ", "മുകളിൽ", "പോലെ", "പകരം"],
+          "answer": "പകരം",
+          "why": "Instead: പകരം."
+        },
+        {
+          "q": "നോക്കാ＿ റോഡ് മുറിച്ചു കടക്കരുത്.",
+          "en": "Don't cross the road without looking.",
+          "options": ["തെ", "ൻ", "ം", "ത്ത"],
+          "answer": "തെ",
+          "why": "Without: -ആതെ."
+        }
+      ]
+    },
+    {
+      "id": "gerund-unnathu",
+      "title": "Doing as a noun: -ഉന്നത്",
+      "particle": "-ഉന്നത്・-ഉക",
+      "summary": "-ഉന്നത് turns a verb into a noun, like English \"-ing\": വായിക്കുന്നത് എനിക്ക് ഇഷ്ടമാണ് (I like reading). It takes case endings: വായിക്കുന്നതിന്, വായിക്കുന്നതിൽ. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "വായിക്കുക → <b>വായിക്കുന്നത്</b>, നീന്തുക → <b>നീന്തുന്നത്</b>, ചെയ്യുക → <b>ചെയ്യുന്നത്</b>. Past: <b>ചെയ്തത്</b> (what was done, the doing). As subject: ഇവിടെ നീന്തു<b>ന്നത്</b> അപകടമാണ്.",
+          "examples": [
+            [
+              "എനിക്ക് {പാചകം ചെയ്യുന്നത്} ഇഷ്ടമാണ്.",
+              "Enikku paachakam cheyyunnathu ishtamaanu.",
+              "I like cooking."
+            ],
+            [
+              "ഇവിടെ {നീന്തുന്നത്} അപകടമാണ്.",
+              "Ivide niinthunnathu apakadamaanu.",
+              "Swimming here is dangerous."
+            ]
+          ]
+        },
+        {
+          "h": "With endings",
+          "p": "Object: അവൻ പുകവലി<b>ക്കുന്നത്</b> നിർത്തി (he stopped smoking). Dative: -<b>ന്നതിന്</b> (for doing). Locative: -<b>ന്നതിൽ</b> (in doing): നിങ്ങളെ കണ്ട<b>തിൽ</b> സന്തോഷം (glad to have met you). Formal: <b>-ഉക</b>: വായിക്കുക ഒരു നല്ല ശീലമാണ്.",
+          "examples": [
+            [
+              "അവൻ {പുകവലിക്കുന്നത്} നിർത്തി.",
+              "Avan pukavalikkunnathu nirthi.",
+              "He gave up smoking."
+            ],
+            [
+              "നിങ്ങളെ {കണ്ടതിൽ} സന്തോഷം.",
+              "Ningale kandathil santhosham.",
+              "Nice to have met you."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "എനിക്ക് പാടു＿ ഇഷ്ടമാണ്.",
+          "en": "I like singing.",
+          "options": ["ന്നത്", "ന്നു", "ം", "ന്നില്ല"],
+          "answer": "ന്നത്",
+          "why": "-ing: -ഉന്നത്."
+        },
+        {
+          "q": "മലയാളം വായിക്കു＿ എളുപ്പമാണ്.",
+          "en": "Reading Malayalam is easy.",
+          "options": ["ന്നു", "ന്നത്", "ം", "ക ഇല്ല"],
+          "answer": "ന്നത്",
+          "why": "-ing as subject: -ഉന്നത്."
+        },
+        {
+          "q": "അവൾ കാപ്പി കുടിക്കു＿ നിർത്തി.",
+          "en": "She stopped drinking coffee.",
+          "options": ["ന്നതിൽ", "ന്നു", "ന്നത്", "ം"],
+          "answer": "ന്നത്",
+          "why": "Object: -ഉന്നത്."
+        },
+        {
+          "q": "നിങ്ങളെ കണ്ട＿ സന്തോഷം.",
+          "en": "Nice to have met you.",
+          "options": ["ത്", "തിന്", "തുകൊണ്ട് ഇല്ല", "തിൽ"],
+          "answer": "തിൽ",
+          "why": "In doing: -തിൽ."
+        },
+        {
+          "q": "അവൻ എന്താണ് പറയു＿?",
+          "en": "What is he saying?",
+          "options": ["ന്നത്", "ന്നു", "ം", "ക"],
+          "answer": "ന്നത്",
+          "why": "Focus questions: -ഉന്നത്."
+        }
+      ]
+    },
+    {
+      "id": "tag-questions",
+      "title": "Isn't it?: അല്ലേ, -ഓ",
+      "particle": "അല്ലേ・-അല്ലോ・ആണോ",
+      "summary": "Add അല്ലേ to ask for agreement: നല്ലതാണ്, അല്ലേ? (it's good, isn't it?). -അല്ലോ states something you both know: അവൻ വന്നല്ലോ (he's come, as you see). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>അല്ലേ?</b> after any sentence: ഇന്ന് നല്ല ചൂടാണ്, <b>അല്ലേ</b>? Answers: <b>അതെ</b> (yes), <b>ഉവ്വ്</b> (yes, there is), <b>ഇല്ല</b> / <b>അല്ല</b> (no). Surprise: <b>ആണോ?</b> (really?), <b>ശരിക്കും?</b> (seriously?).",
+          "examples": [
+            [
+              "ഭക്ഷണം നന്നായിരുന്നു, {അല്ലേ}?",
+              "Bhakshanam nannaayirunnu, alle?",
+              "The food was good, wasn't it?"
+            ],
+            [
+              "— അവളുടെ കല്യാണമാണ്. — {ആണോ}!",
+              "— Avalude kalyaanamaanu. — Aano!",
+              "— She's getting married. — Really!"
+            ]
+          ]
+        },
+        {
+          "h": "-അല്ലോ",
+          "p": "<b>-അല്ലോ</b> = as we both know, after all: നിങ്ങൾ വന്ന<b>ല്ലോ</b>, സന്തോഷം (you came, I'm glad). ഇന്ന് ഞായറാഴ്ചയാണ<b>ല്ലോ</b> (it's Sunday today, after all).",
+          "examples": [
+            [
+              "നിങ്ങൾ {വന്നല്ലോ}, സന്തോഷം!",
+              "Ningal vannallo, santhosham!",
+              "Oh good, you've come!"
+            ],
+            [
+              "ഇന്ന് {ഞായറാഴ്ചയാണല്ലോ}.",
+              "Innu njaayaraazhchayaanallo.",
+              "It's Sunday today, after all."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ഇന്ന് നല്ല ചൂടാണ്, ＿?",
+          "en": "It's very hot today, isn't it?",
+          "options": ["അല്ലേ", "അതെ", "ഇല്ല", "എന്ത്"],
+          "answer": "അല്ലേ",
+          "why": "Tag: അല്ലേ?"
+        },
+        {
+          "q": "— അവൻ ഡോക്ടറാണ്. — ＿!",
+          "en": "— He's a doctor. — Really!",
+          "options": ["അല്ല", "ആണോ", "ഇല്ല", "അല്ലേ"],
+          "answer": "ആണോ",
+          "why": "Surprise: ആണോ?"
+        },
+        {
+          "q": "— ഇത് നിങ്ങളുടെ ബാഗാണോ? — ＿, എന്റേതാണ്.",
+          "en": "— Is this your bag? — Yes, it's mine.",
+          "options": ["അല്ല", "ഇല്ല", "അതെ", "ആണോ"],
+          "answer": "അതെ",
+          "why": "Yes: അതെ."
+        },
+        {
+          "q": "നിങ്ങൾ വന്ന＿, സന്തോഷം!",
+          "en": "Oh good, you've come!",
+          "options": ["ല്ലേ", "ോ", "ും", "ല്ലോ"],
+          "answer": "ല്ലോ",
+          "why": "As we see: -അല്ലോ."
+        },
+        {
+          "q": "അവർ കൊച്ചിക്കാരാണ്, ＿?",
+          "en": "They're from Kochi, aren't they?",
+          "options": ["അല്ലേ", "അതെ", "ആണ്", "ഇല്ല"],
+          "answer": "അല്ലേ",
+          "why": "Tag: അല്ലേ?"
+        }
+      ]
+    },
+    {
+      "id": "concessive",
+      "title": "Even if: -ആലും",
+      "particle": "-ആലും・എങ്കിലും",
+      "summary": "Add -ഉം to the \"if\" form for \"even if, although\": മഴ പെയ്താലും ഞാൻ വരും (I'll come even if it rains). With a question word it means \"-ever\": എന്തു വന്നാലും (whatever happens). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "വന്നാൽ → <b>വന്നാലും</b>, ചെയ്താൽ → <b>ചെയ്താലും</b>, ഉണ്ടെങ്കിൽ → <b>ഉണ്ടെങ്കിലും</b>. <b>എങ്കിലും</b> alone = \"even so, still\". <b>എത്ര … -ആലും</b> = however much.",
+          "examples": [
+            [
+              "എത്ര {പഠിച്ചാലും} ഓർമ്മയിൽ നിൽക്കുന്നില്ല.",
+              "Ethra padichaalum ormmayil nilkkunnilla.",
+              "However much I study, it doesn't stick."
+            ],
+            [
+              "പണം {ഉണ്ടെങ്കിലും} അവൻ ചെലവാക്കില്ല.",
+              "Panam undenkilum avan chelavaakkilla.",
+              "Even though he has money, he won't spend it."
+            ]
+          ]
+        },
+        {
+          "h": "-ever",
+          "p": "Question word + -ആലും: <b>ആരു വന്നാലും</b> (whoever comes), <b>എവിടെ പോയാലും</b> (wherever you go), <b>എന്തായാലും</b> (whatever happens; anyway).",
+          "examples": [
+            [
+              "{എന്തായാലും} ഞാൻ നിന്റെ കൂടെ ഉണ്ടാകും.",
+              "Enthaayaalum njaan ninte koode undaakum.",
+              "Whatever happens, I'll be with you."
+            ],
+            [
+              "{ആരു വന്നാലും} വാതിൽ തുറക്കരുത്.",
+              "Aaru vannaalum vaathil thurakkaruthu.",
+              "Don't open the door, whoever comes."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "മഴ ＿ ഞാൻ വരും.",
+          "en": "I'll come even if it rains.",
+          "options": ["പെയ്താലും", "പെയ്താൽ", "പെയ്ത്", "പെയ്യാതെ"],
+          "answer": "പെയ്താലും",
+          "why": "Even if: -ആലും."
+        },
+        {
+          "q": "എത്ര പറഞ്ഞ＿ അവൻ കേൾക്കില്ല.",
+          "en": "However much I tell him, he won't listen.",
+          "options": ["ാൽ", "ാലും", "ു", "ില്ല"],
+          "answer": "ാലും",
+          "why": "However much: എത്ര … -ആലും."
+        },
+        {
+          "q": "＿ പേടിക്കണ്ട.",
+          "en": "Whatever happens, don't be afraid.",
+          "options": ["എന്തായാൽ", "എന്തായി", "എന്തായാലും", "എന്താകാൻ"],
+          "answer": "എന്തായാലും",
+          "why": "Whatever: എന്തായാലും."
+        },
+        {
+          "q": "ക്ഷീണമുണ്ടായിരുന്നു. ＿ ജോലി തീർത്തു.",
+          "en": "I was tired. Even so, I finished the work.",
+          "options": ["എങ്കിൽ", "അതുകൊണ്ട്", "അപ്പോൾ", "എങ്കിലും"],
+          "answer": "എങ്കിലും",
+          "why": "Even so: എങ്കിലും."
+        },
+        {
+          "q": "ആരു ചോദിച്ച＿ പറയരുത്.",
+          "en": "Don't tell, whoever asks.",
+          "options": ["ാലും", "ാൽ", "ു", "ിട്ട്"],
+          "answer": "ാലും",
+          "why": "Whoever: ആര് … -ആലും."
+        }
+      ]
+    },
+    {
+      "id": "causative",
+      "title": "Make someone do: -ഇക്കുക, -പ്പിക്കുക",
+      "particle": "-ഇക്കുക・-പ്പിക്കുക",
+      "summary": "Causatives add -ഇക്കുക or -പ്പിക്കുക: പഠിക്കുക (study) → പഠിപ്പിക്കുക (teach), ചെയ്യുക → ചെയ്യിക്കുക (have done). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "പഠിക്കുക → <b>പഠിപ്പിക്കുക</b> (teach), കാണുക → <b>കാണിക്കുക</b> (show), കുടിക്കുക → <b>കുടിപ്പിക്കുക</b> (make drink), ഉറങ്ങുക → <b>ഉറക്കുക</b> (put to sleep), ഓടുക → <b>ഓടിക്കുക</b> (drive), നിൽക്കുക → <b>നിർത്തുക</b> (stop something).",
+          "examples": [
+            [
+              "എനിക്ക് വഴി {കാണിച്ചുതരാമോ}?",
+              "Enikku vazhi kaanichutharaamo?",
+              "Could you show me the way?"
+            ],
+            [
+              "ഇവിടെ വണ്ടി {നിർത്തൂ}.",
+              "Ivide vandi nirthuu.",
+              "Stop the car here."
+            ]
+          ]
+        },
+        {
+          "h": "Who does it",
+          "p": "The one made to act takes <b>-എ</b> or <b>-ഇനെക്കൊണ്ട്</b>: ഞാൻ അവ<b>നെക്കൊണ്ട്</b> ജോലി ചെയ്യിച്ചു (I got him to do the work). Many common verbs are causatives: <b>അയയ്ക്കുക</b> (send), <b>തീർക്കുക</b> (finish something).",
+          "examples": [
+            [
+              "ടീച്ചർ കുട്ടികളെ മലയാളം {പഠിപ്പിക്കുന്നു}.",
+              "Tiichar kuttikale malayaalam padippikkunnu.",
+              "The teacher teaches the children Malayalam."
+            ],
+            [
+              "അമ്മ കുഞ്ഞിനെ {ഉറക്കി}.",
+              "Amma kunjine urakki.",
+              "Mum put the baby to sleep."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "അവൻ ബസ് ഓടി＿.",
+          "en": "He drives a bus.",
+          "options": ["ക്കുന്നു", "ുന്നു", "ച്ചു വന്നു", "ക്കാൻ"],
+          "answer": "ക്കുന്നു",
+          "why": "Drive: ഓടിക്കുക."
+        },
+        {
+          "q": "ടീച്ചർ കുട്ടികളെ കണക്ക് പഠി＿.",
+          "en": "The teacher teaches the children maths.",
+          "options": ["ക്കുന്നു", "പ്പിക്കുന്നു", "ച്ചു", "ക്കാൻ"],
+          "answer": "പ്പിക്കുന്നു",
+          "why": "Teach: പഠിപ്പിക്കുക."
+        },
+        {
+          "q": "ദയവായി നിങ്ങളുടെ ടിക്കറ്റ് കാണി＿.",
+          "en": "Please show your ticket.",
+          "options": ["ച്ചു", "ക്കാൻ", "ക്കൂ", "ക്കും"],
+          "answer": "ക്കൂ",
+          "why": "Show: കാണിക്കുക."
+        },
+        {
+          "q": "അമ്മൂമ്മ കുഞ്ഞിനെ ഉറ＿.",
+          "en": "Grandma put the baby to sleep.",
+          "options": ["ങ്ങി", "ങ്ങും", "ങ്ങാൻ", "ക്കി"],
+          "answer": "ക്കി",
+          "why": "Put to sleep: ഉറക്കുക."
+        },
+        {
+          "q": "ഞാൻ അവനെ＿ ജോലി ചെയ്യിച്ചു.",
+          "en": "I got him to do the work.",
+          "options": ["ക്കൊണ്ട്", "ക്ക്", "ന്റെ", "ഓട്"],
+          "answer": "ക്കൊണ്ട്",
+          "why": "The doer: -എക്കൊണ്ട്."
+        }
+      ]
+    },
+    {
+      "id": "passive",
+      "title": "The passive: -പ്പെടുക",
+      "particle": "-പ്പെടുക・-ആൽ",
+      "summary": "Everyday Malayalam prefers active sentences. News and formal writing use -പ്പെടുക: നിർമ്മിക്കപ്പെട്ടു (was built). The doer takes -ആൽ. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Infinitive-like stem + <b>-പ്പെടുക</b>: ചെയ്യ<b>പ്പെട്ടു</b> (was done), അറിയ<b>പ്പെടുന്നു</b> (is known), എഴുത<b>പ്പെട്ട</b> (written). Some are everyday words: <b>ഇഷ്ടപ്പെട്ടു</b> (was liked, I liked it), <b>നഷ്ടപ്പെട്ടു</b> (was lost).",
+          "examples": [
+            [
+              "ഈ ക്ഷേത്രം പതിനാറാം നൂറ്റാണ്ടിൽ {നിർമ്മിക്കപ്പെട്ടു}.",
+              "Ii kshethram pathinaaraam nuuttaandil nirmmikkappettu.",
+              "This temple was built in the 16th century."
+            ],
+            [
+              "കേരളം \"ദൈവത്തിന്റെ സ്വന്തം നാട്\" എന്ന് {അറിയപ്പെടുന്നു}.",
+              "Keralam \"daivathinte swantham naadu\" ennu ariyappedunnu.",
+              "Kerala is known as \"God's own country\"."
+            ]
+          ]
+        },
+        {
+          "h": "The doer",
+          "p": "The doer takes <b>-ആൽ</b>: രാജാവി<b>നാൽ</b> നിർമ്മിക്കപ്പെട്ടു (built by the king). In speech, say it actively: രാജാവ് പണിതു. News also uses impersonal forms: യോഗം <b>മാറ്റിവെച്ചു</b> (the meeting was postponed).",
+          "examples": [
+            [
+              "ഈ പുസ്തകം {ബഷീറിനാൽ} എഴുതപ്പെട്ടു.",
+              "Ii pusthakam bashiirinaal ezhuthappettu.",
+              "This book was written by Basheer."
+            ],
+            [
+              "എന്റെ പേഴ്സ് {നഷ്ടപ്പെട്ടു}.",
+              "Ente pezhsu nashtappettu.",
+              "My wallet got lost."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "ഈ കോട്ട ടിപ്പുവിനാൽ നിർമ്മിക്ക＿.",
+          "en": "This fort was built by Tipu.",
+          "options": ["പ്പെട്ടു", "ുന്നു", "ാൻ", "ണം"],
+          "answer": "പ്പെട്ടു",
+          "why": "Passive: -പ്പെട്ടു."
+        },
+        {
+          "q": "കൊച്ചി \"അറബിക്കടലിന്റെ റാണി\" എന്ന് അറിയ＿.",
+          "en": "Kochi is known as \"Queen of the Arabian Sea\".",
+          "options": ["ുന്നു", "പ്പെടുന്നു", "ാം", "ണം"],
+          "answer": "പ്പെടുന്നു",
+          "why": "Is known: അറിയപ്പെടുന്നു."
+        },
+        {
+          "q": "ഈ നോവൽ എം.ടി.＿ എഴുതപ്പെട്ടു.",
+          "en": "This novel was written by M.T.",
+          "options": ["ക്ക്", "യുടെ", "യാൽ", "യിൽ"],
+          "answer": "യാൽ",
+          "why": "The doer: -ആൽ."
+        },
+        {
+          "q": "സിനിമ എനിക്ക് ഇഷ്ട＿.",
+          "en": "I liked the film.",
+          "options": ["മാണ് ഇല്ല", "ം വേണം", "പ്പെടുത്തി", "പ്പെട്ടു"],
+          "answer": "പ്പെട്ടു",
+          "why": "Liked: ഇഷ്ടപ്പെട്ടു."
+        },
+        {
+          "q": "എന്റെ താക്കോൽ നഷ്ട＿.",
+          "en": "My key got lost.",
+          "options": ["പ്പെട്ടു", "പ്പെടുത്തി", "മാണ്", "ം വന്നു"],
+          "answer": "പ്പെട്ടു",
+          "why": "Lost: നഷ്ടപ്പെട്ടു."
         }
       ]
     },
@@ -4683,160 +5068,6 @@
       ]
     },
     {
-      "id": "reported-command",
-      "title": "Told someone to: -ആൻ പറഞ്ഞു",
-      "particle": "-ഓട് … -ആൻ പറയുക",
-      "summary": "A reported command is the infinitive + പറയുക, and the person told takes -ഓട്: അവർ എന്നോട് കാത്തിരിക്കാൻ പറഞ്ഞു (they told me to wait). (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "<b>-ഓട് … -ആൻ പറഞ്ഞു</b>: ഡോക്ടർ എന്നോട് <b>വിശ്രമിക്കാൻ പറഞ്ഞു</b>. Ask someone to: <b>-ആൻ ആവശ്യപ്പെട്ടു</b> (formal). Passing on: അവനോട് എന്നെ <b>വിളിക്കാൻ പറയൂ</b>.",
-          "examples": [
-            [
-              "അവർ {എന്നോട്} {കാത്തിരിക്കാൻ പറഞ്ഞു}.",
-              "Avar ennodu kaathirikkaan paranju.",
-              "They told me to wait."
-            ],
-            [
-              "{അവളോട്} എന്നെ {വിളിക്കാൻ പറയൂ}.",
-              "Avalodu enne vilikkaan parayuu.",
-              "Tell her to call me."
-            ]
-          ]
-        },
-        {
-          "h": "Written requests",
-          "p": "Formal notices: <b>-അണമെന്ന് അഭ്യർത്ഥിക്കുന്നു</b>: എല്ലാവരും സമയത്ത് എത്ത<b>ണമെന്ന് അഭ്യർത്ഥിക്കുന്നു</b> (everyone is requested to arrive on time). Spoken quote: \"വേഗം വാ\" <b>എന്ന് പറഞ്ഞു</b>.",
-          "examples": [
-            [
-              "എല്ലാവരും സമയത്ത് {എത്തണമെന്ന്} അഭ്യർത്ഥിക്കുന്നു.",
-              "Ellaavarum samayathu ethanamennu abhyarthikkunnu.",
-              "Everyone is requested to arrive on time."
-            ],
-            [
-              "അമ്മ വേഗം വരാൻ {പറഞ്ഞു}.",
-              "Amma vegam varaan paranju.",
-              "Mum told me to come quickly."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ഡോക്ടർ എന്നോട് നടക്ക＿ പറഞ്ഞു.",
-          "en": "The doctor told me to walk.",
-          "options": ["ാൻ", "ും", "ണം", "രുത്"],
-          "answer": "ാൻ",
-          "why": "Told to: -ആൻ പറഞ്ഞു."
-        },
-        {
-          "q": "＿ കാത്തിരിക്കാൻ പറയൂ.",
-          "en": "Tell him to wait.",
-          "options": ["അവനെ", "അവനോട്", "അവന്", "അവന്റെ"],
-          "answer": "അവനോട്",
-          "why": "The person told: -ഓട്."
-        },
-        {
-          "q": "അവർ എന്നോട് സഹായിക്കാൻ ＿.",
-          "en": "They asked me to help.",
-          "options": ["വേണം", "പറ്റി", "ആവശ്യപ്പെട്ടു", "വന്നു"],
-          "answer": "ആവശ്യപ്പെട്ടു",
-          "why": "Asked (formal): ആവശ്യപ്പെട്ടു."
-        },
-        {
-          "q": "ടീച്ചർ ഞങ്ങളോട് മിണ്ടാതിരിക്ക＿ പറഞ്ഞു.",
-          "en": "The teacher told us to be quiet.",
-          "options": ["ും", "ുക", "ണം", "ാൻ"],
-          "answer": "ാൻ",
-          "why": "Told to: -ആൻ പറഞ്ഞു."
-        },
-        {
-          "q": "അംഗങ്ങൾ യോഗത്തിൽ പങ്കെടുക്ക＿ അഭ്യർത്ഥിക്കുന്നു.",
-          "en": "Members are requested to attend the meeting.",
-          "options": ["ണമെന്ന്", "ാൻ ഇല്ല", "രുത്", "ും"],
-          "answer": "ണമെന്ന്",
-          "why": "Written request: -അണമെന്ന്."
-        }
-      ]
-    },
-    {
-      "id": "without-aathe",
-      "title": "Without: -ആതെ",
-      "particle": "-ആതെ・ഇല്ലാതെ・പകരം",
-      "summary": "-ആതെ on the stem means \"without doing\": പറയാതെ പോയി (he left without saying). Nouns use ഇല്ലാതെ: പണം ഇല്ലാതെ (without money). (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "പറയുക → <b>പറയാതെ</b>, കഴിക്കുക → <b>കഴിക്കാതെ</b>, നോക്കുക → <b>നോക്കാതെ</b>, ഉറങ്ങുക → <b>ഉറങ്ങാതെ</b>. Nouns: പഞ്ചസാര <b>ഇല്ലാതെ</b> (without sugar).",
-          "examples": [
-            [
-              "അവൻ ഭക്ഷണം {കഴിക്കാതെ} ഉറങ്ങി.",
-              "Avan bhakshanam kazhikkaathe urangi.",
-              "He went to sleep without eating."
-            ],
-            [
-              "{പഞ്ചസാര ഇല്ലാതെ} ഒരു ചായ.",
-              "Panchasaara illaathe oru chaaya.",
-              "A tea without sugar."
-            ]
-          ]
-        },
-        {
-          "h": "Instead of",
-          "p": "<b>പകരം</b> = instead: കാപ്പി<b>ക്ക് പകരം</b> ചായ (tea instead of coffee). With a verb: പഠിക്കു<b>ന്നതിനു പകരം</b> കളിക്കുന്നു (playing instead of studying).",
-          "examples": [
-            [
-              "{ബസ്സിനു പകരം} ട്രെയിനിൽ പോകാം.",
-              "Bassinu pakaram treyinil pokaam.",
-              "Let's go by train instead of bus."
-            ],
-            [
-              "അവൻ {പഠിക്കുന്നതിനു പകരം} ടിവി കാണുന്നു.",
-              "Avan padikkunnathinu pakaram tivi kaanunnu.",
-              "He's watching TV instead of studying."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "അവൾ ഒന്നും പറയാ＿ പോയി.",
-          "en": "She left without saying anything.",
-          "options": ["തെ", "ൻ", "ം", "ത്ത"],
-          "answer": "തെ",
-          "why": "Without: -ആതെ."
-        },
-        {
-          "q": "കുട്ടികൾ പ്രാതൽ കഴിക്കാ＿ സ്കൂളിൽ പോയി.",
-          "en": "The children went to school without breakfast.",
-          "options": ["ൻ", "തെ", "ം", "ത്ത"],
-          "answer": "തെ",
-          "why": "Without: -ആതെ."
-        },
-        {
-          "q": "പാൽ ＿ ചായ.",
-          "en": "Tea without milk.",
-          "options": ["കഴിക്കാതെ", "വേണ്ട", "ഇല്ലാതെ", "അല്ലാതെ"],
-          "answer": "ഇല്ലാതെ",
-          "why": "Noun: ഇല്ലാതെ."
-        },
-        {
-          "q": "ചോറിന് ＿ ചപ്പാത്തി തരൂ.",
-          "en": "Give me chapati instead of rice.",
-          "options": ["കൂടെ", "മുകളിൽ", "പോലെ", "പകരം"],
-          "answer": "പകരം",
-          "why": "Instead: പകരം."
-        },
-        {
-          "q": "നോക്കാ＿ റോഡ് മുറിച്ചു കടക്കരുത്.",
-          "en": "Don't cross the road without looking.",
-          "options": ["തെ", "ൻ", "ം", "ത്ത"],
-          "answer": "തെ",
-          "why": "Without: -ആതെ."
-        }
-      ]
-    },
-    {
       "id": "jussive-tte",
       "title": "Let, shall I: -ട്ടെ",
       "particle": "-ട്ടെ",
@@ -4991,160 +5222,6 @@
       ]
     },
     {
-      "id": "gerund-unnathu",
-      "title": "Doing as a noun: -ഉന്നത്",
-      "particle": "-ഉന്നത്・-ഉക",
-      "summary": "-ഉന്നത് turns a verb into a noun, like English \"-ing\": വായിക്കുന്നത് എനിക്ക് ഇഷ്ടമാണ് (I like reading). It takes case endings: വായിക്കുന്നതിന്, വായിക്കുന്നതിൽ. (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "വായിക്കുക → <b>വായിക്കുന്നത്</b>, നീന്തുക → <b>നീന്തുന്നത്</b>, ചെയ്യുക → <b>ചെയ്യുന്നത്</b>. Past: <b>ചെയ്തത്</b> (what was done, the doing). As subject: ഇവിടെ നീന്തു<b>ന്നത്</b> അപകടമാണ്.",
-          "examples": [
-            [
-              "എനിക്ക് {പാചകം ചെയ്യുന്നത്} ഇഷ്ടമാണ്.",
-              "Enikku paachakam cheyyunnathu ishtamaanu.",
-              "I like cooking."
-            ],
-            [
-              "ഇവിടെ {നീന്തുന്നത്} അപകടമാണ്.",
-              "Ivide niinthunnathu apakadamaanu.",
-              "Swimming here is dangerous."
-            ]
-          ]
-        },
-        {
-          "h": "With endings",
-          "p": "Object: അവൻ പുകവലി<b>ക്കുന്നത്</b> നിർത്തി (he stopped smoking). Dative: -<b>ന്നതിന്</b> (for doing). Locative: -<b>ന്നതിൽ</b> (in doing): നിങ്ങളെ കണ്ട<b>തിൽ</b> സന്തോഷം (glad to have met you). Formal: <b>-ഉക</b>: വായിക്കുക ഒരു നല്ല ശീലമാണ്.",
-          "examples": [
-            [
-              "അവൻ {പുകവലിക്കുന്നത്} നിർത്തി.",
-              "Avan pukavalikkunnathu nirthi.",
-              "He gave up smoking."
-            ],
-            [
-              "നിങ്ങളെ {കണ്ടതിൽ} സന്തോഷം.",
-              "Ningale kandathil santhosham.",
-              "Nice to have met you."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "എനിക്ക് പാടു＿ ഇഷ്ടമാണ്.",
-          "en": "I like singing.",
-          "options": ["ന്നത്", "ന്നു", "ം", "ന്നില്ല"],
-          "answer": "ന്നത്",
-          "why": "-ing: -ഉന്നത്."
-        },
-        {
-          "q": "മലയാളം വായിക്കു＿ എളുപ്പമാണ്.",
-          "en": "Reading Malayalam is easy.",
-          "options": ["ന്നു", "ന്നത്", "ം", "ക ഇല്ല"],
-          "answer": "ന്നത്",
-          "why": "-ing as subject: -ഉന്നത്."
-        },
-        {
-          "q": "അവൾ കാപ്പി കുടിക്കു＿ നിർത്തി.",
-          "en": "She stopped drinking coffee.",
-          "options": ["ന്നതിൽ", "ന്നു", "ന്നത്", "ം"],
-          "answer": "ന്നത്",
-          "why": "Object: -ഉന്നത്."
-        },
-        {
-          "q": "നിങ്ങളെ കണ്ട＿ സന്തോഷം.",
-          "en": "Nice to have met you.",
-          "options": ["ത്", "തിന്", "തുകൊണ്ട് ഇല്ല", "തിൽ"],
-          "answer": "തിൽ",
-          "why": "In doing: -തിൽ."
-        },
-        {
-          "q": "അവൻ എന്താണ് പറയു＿?",
-          "en": "What is he saying?",
-          "options": ["ന്നത്", "ന്നു", "ം", "ക"],
-          "answer": "ന്നത്",
-          "why": "Focus questions: -ഉന്നത്."
-        }
-      ]
-    },
-    {
-      "id": "tag-questions",
-      "title": "Isn't it?: അല്ലേ, -ഓ",
-      "particle": "അല്ലേ・-അല്ലോ・ആണോ",
-      "summary": "Add അല്ലേ to ask for agreement: നല്ലതാണ്, അല്ലേ? (it's good, isn't it?). -അല്ലോ states something you both know: അവൻ വന്നല്ലോ (he's come, as you see). (about B1)",
-      "level": "intermediate",
-      "sections": [
-        {
-          "p": "<b>അല്ലേ?</b> after any sentence: ഇന്ന് നല്ല ചൂടാണ്, <b>അല്ലേ</b>? Answers: <b>അതെ</b> (yes), <b>ഉവ്വ്</b> (yes, there is), <b>ഇല്ല</b> / <b>അല്ല</b> (no). Surprise: <b>ആണോ?</b> (really?), <b>ശരിക്കും?</b> (seriously?).",
-          "examples": [
-            [
-              "ഭക്ഷണം നന്നായിരുന്നു, {അല്ലേ}?",
-              "Bhakshanam nannaayirunnu, alle?",
-              "The food was good, wasn't it?"
-            ],
-            [
-              "— അവളുടെ കല്യാണമാണ്. — {ആണോ}!",
-              "— Avalude kalyaanamaanu. — Aano!",
-              "— She's getting married. — Really!"
-            ]
-          ]
-        },
-        {
-          "h": "-അല്ലോ",
-          "p": "<b>-അല്ലോ</b> = as we both know, after all: നിങ്ങൾ വന്ന<b>ല്ലോ</b>, സന്തോഷം (you came, I'm glad). ഇന്ന് ഞായറാഴ്ചയാണ<b>ല്ലോ</b> (it's Sunday today, after all).",
-          "examples": [
-            [
-              "നിങ്ങൾ {വന്നല്ലോ}, സന്തോഷം!",
-              "Ningal vannallo, santhosham!",
-              "Oh good, you've come!"
-            ],
-            [
-              "ഇന്ന് {ഞായറാഴ്ചയാണല്ലോ}.",
-              "Innu njaayaraazhchayaanallo.",
-              "It's Sunday today, after all."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "ഇന്ന് നല്ല ചൂടാണ്, ＿?",
-          "en": "It's very hot today, isn't it?",
-          "options": ["അല്ലേ", "അതെ", "ഇല്ല", "എന്ത്"],
-          "answer": "അല്ലേ",
-          "why": "Tag: അല്ലേ?"
-        },
-        {
-          "q": "— അവൻ ഡോക്ടറാണ്. — ＿!",
-          "en": "— He's a doctor. — Really!",
-          "options": ["അല്ല", "ആണോ", "ഇല്ല", "അല്ലേ"],
-          "answer": "ആണോ",
-          "why": "Surprise: ആണോ?"
-        },
-        {
-          "q": "— ഇത് നിങ്ങളുടെ ബാഗാണോ? — ＿, എന്റേതാണ്.",
-          "en": "— Is this your bag? — Yes, it's mine.",
-          "options": ["അല്ല", "ഇല്ല", "അതെ", "ആണോ"],
-          "answer": "അതെ",
-          "why": "Yes: അതെ."
-        },
-        {
-          "q": "നിങ്ങൾ വന്ന＿, സന്തോഷം!",
-          "en": "Oh good, you've come!",
-          "options": ["ല്ലേ", "ോ", "ും", "ല്ലോ"],
-          "answer": "ല്ലോ",
-          "why": "As we see: -അല്ലോ."
-        },
-        {
-          "q": "അവർ കൊച്ചിക്കാരാണ്, ＿?",
-          "en": "They're from Kochi, aren't they?",
-          "options": ["അല്ലേ", "അതെ", "ആണ്", "ഇല്ല"],
-          "answer": "അല്ലേ",
-          "why": "Tag: അല്ലേ?"
-        }
-      ]
-    },
-    {
       "id": "formal-connectors",
       "title": "Written connectors: എന്നാൽ, കൂടാതെ, അതിനാൽ",
       "particle": "എന്നാൽ・കൂടാതെ・അതിനാൽ・എങ്കിലും・അതായത്",
@@ -5295,83 +5372,6 @@
           "options": ["ദേവാലയം", "ദേവആലയം", "ദേവയാലയം", "ദേവോലയം"],
           "answer": "ദേവാലയം",
           "why": "Sanskrit: a + aa → aa."
-        }
-      ]
-    },
-    {
-      "id": "was-aayirunnu",
-      "title": "Was: ആയിരുന്നു, ഉണ്ടായിരുന്നു",
-      "particle": "ആയിരുന്നു・ഉണ്ടായിരുന്നു・ആകും",
-      "summary": "The past of ആണ് is ആയിരുന്നു: അവൻ ടീച്ചർ ആയിരുന്നു (he was a teacher). The past of ഉണ്ട് is ഉണ്ടായിരുന്നു. Their futures are ആകും and ഉണ്ടാകും. (about A1–A2)",
-      "level": "beginner",
-      "sections": [
-        {
-          "p": "<b>ആണ്</b> → <b>ആയിരുന്നു</b> (was), <b>ആകും</b> (will be). Negative: <b>അല്ലായിരുന്നു</b> (wasn't). It often fuses with the word before: നല്ലത് + ആയിരുന്നു → <b>നല്ലതായിരുന്നു</b>.",
-          "examples": [
-            [
-              "എന്റെ അച്ഛൻ ഒരു ടീച്ചർ {ആയിരുന്നു}.",
-              "Ente achan oru tiichar aayirunnu.",
-              "My father was a teacher."
-            ],
-            [
-              "സിനിമ {നല്ലതായിരുന്നു}.",
-              "Sinima nallathaayirunnu.",
-              "The film was good."
-            ]
-          ]
-        },
-        {
-          "h": "Was there, will be",
-          "p": "<b>ഉണ്ട്</b> → <b>ഉണ്ടായിരുന്നു</b> (was there, had), <b>ഉണ്ടാകും</b> (will be there). Negative: <b>ഇല്ലായിരുന്നു</b> (wasn't there). Becoming: <b>ആയി</b>: സമയം <b>ആയി</b> (it's time), വൈകി<b>പ്പോയി</b> (it got late).",
-          "examples": [
-            [
-              "ഇന്നലെ എനിക്ക് പനി {ഉണ്ടായിരുന്നു}.",
-              "Innale enikku pani undaayirunnu.",
-              "I had a fever yesterday."
-            ],
-            [
-              "നാളെ ഞാൻ വീട്ടിൽ {ഉണ്ടാകും}.",
-              "Naale njaan viittil undaakum.",
-              "I'll be at home tomorrow."
-            ]
-          ]
-        }
-      ],
-      "drills": [
-        {
-          "q": "അവൻ ഒരു ഡോക്ടർ ＿.",
-          "en": "He was a doctor.",
-          "options": ["ആയിരുന്നു", "ആണ്", "ആകും", "ഉണ്ടായിരുന്നു"],
-          "answer": "ആയിരുന്നു",
-          "why": "Was (something): ആയിരുന്നു."
-        },
-        {
-          "q": "ഭക്ഷണം നല്ലത＿.",
-          "en": "The food was good.",
-          "options": ["ാണ്", "ായിരുന്നു", "ാകും", "ല്ല"],
-          "answer": "ായിരുന്നു",
-          "why": "Fused: -ആയിരുന്നു."
-        },
-        {
-          "q": "ഇന്നലെ ഒരുപാട് ആളുകൾ ＿.",
-          "en": "There were a lot of people yesterday.",
-          "options": ["ആയിരുന്നു", "ഉണ്ടാകും", "ഉണ്ടായിരുന്നു", "ആണ്"],
-          "answer": "ഉണ്ടായിരുന്നു",
-          "why": "Was there: ഉണ്ടായിരുന്നു."
-        },
-        {
-          "q": "നാളെ ഞാൻ ഓഫീസിൽ ＿.",
-          "en": "I'll be at the office tomorrow.",
-          "options": ["ഉണ്ടായിരുന്നു", "ആയിരുന്നു", "ഇല്ലായിരുന്നു", "ഉണ്ടാകും"],
-          "answer": "ഉണ്ടാകും",
-          "why": "Will be there: ഉണ്ടാകും."
-        },
-        {
-          "q": "അത് എന്റെ തെറ്റ് ＿.",
-          "en": "That wasn't my fault.",
-          "options": ["അല്ലായിരുന്നു", "ഇല്ലായിരുന്നു", "ആയിരുന്നു", "ആകും"],
-          "answer": "അല്ലായിരുന്നു",
-          "why": "Wasn't (something): അല്ലായിരുന്നു."
         }
       ]
     }
