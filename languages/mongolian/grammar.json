@@ -5,28 +5,19 @@
     "Mongolian first grammar for the Grammar Learner. Written for this project.",
     "Examples are in Cyrillic, the script used in Mongolia, as [Mongolian, romanization, English];",
     "{braces} mark the point of the lesson. Drills are { q, en, options, answer, why }; ＿ is the blank.",
-    "",
-    "Sources (open / educational; attested Khalkha Cyrillic constructions — original example sentences):",
-    "- Wiktionary Mongolian lemmas (CC BY-SA): ном, кино, ус, хүн, монгол, автобус, найз, сүү,",
-    "  цай, явах, ирэх, унших, уух, ярих, чадах, суух, идэх; case endings -ыг/-ийг/-г,",
-    "  -аар/-ээр/-оор/-өөр, -тай/-тэй/-той; desiderative -маар; polite imperative -аарай/-ээрэй.",
-    "- Wikipedia “Mongolian language”, “Mongolian grammar”, “Mongolian Cyrillic alphabet”",
-    "  (CC BY-SA): SOV order, vowel harmony, case inventory, attributive number forms",
-    "  (гурван, таван, …), imperatives, ability with -ж чадах.",
-    "- In-repo languages/mongolian/reference.json (cases, numbers, vowel-harmony) and vocab.js",
-    "  (сүүтэй цай, Уучлаарай, Сайхан амраарай, монголоор) — same Desk pack lemmas and",
-    "  romanization (ü/ö, kh for х).",
-    "Lessons 1–6 unchanged; 7–12 deepen accusative, instrumental, comitative, want/can,",
-    "commands, and numbers before nouns."
+    "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
+    "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
+    "72 lessons, from A1 to C1. Lessons 13–72 were added to cover the rest of the beginner path and the main intermediate and advanced points."
   ],
   "title": "Mongolian first grammar",
-  "intro": "These lessons teach everyday Mongolian as it is spoken in Mongolia and written in Cyrillic there; the Reference cards show how the same words look in the traditional vertical script. The verb comes last, endings are added to words, and vowel harmony decides which form an ending takes: words with a, o, u take endings with a, o, u, and words with e, ö, ü take endings with e, ö, ü. Lessons 1–6 cover pronouns and “is not”, questions, “my / in / from”, “have”, and verbs in the present and past. Lessons 7–12 add the definite object ending, “by / in (a language)”, “with”, want and can, commands, and how numbers sit before a noun.",
+  "intro": "These lessons teach everyday Mongolian as it is spoken in Mongolia and written in Cyrillic there; the Reference cards show how the same words look in the traditional vertical script. The verb comes last, endings are added to words, and vowel harmony decides which form an ending takes: words with a, o, u take endings with a, o, u, and words with e, ö, ü take endings with e, ö, ü. The 72 lessons run from A1 to C1. They start with pronouns, questions, the case endings, “have” and the present and past, then add plurals, postpositions, must and may, the converbs -ж, -аад, -вал and -хад, relative clauses and causatives, and end with the inferential past -жээ, hearsay, respectful words and the connectors of written Mongolian. The romanization follows the Reference cards: ü and ö for ү and ө, kh for х.",
   "lessons": [
     {
       "id": "pronouns",
       "title": "Pronouns, “is” and “is not”",
       "particle": "би та биш",
-      "summary": "The pronouns; “is” is usually left out, and биш means “is not”.",
+      "summary": "The pronouns; “is” is usually left out, and биш means “is not”. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "<b>би</b> (bi) I, <b>чи</b> (chi) you, <b>та</b> (ta) you (polite, or more than one), <b>тэр</b> (ter) he, she, <b>бид</b> (bid) we, <b>тэд</b> (ted) they. In a simple statement no “is” is needed: Би оюутан, “I (am a) student”. To say “is not”, put <b>биш</b> (bish) at the end.",
@@ -84,7 +75,8 @@
       "id": "questions",
       "title": "Questions: уу, үү, вэ, бэ",
       "particle": "уу үү вэ бэ",
-      "summary": "уу / үү for yes/no questions; вэ / бэ after a question word.",
+      "summary": "уу / үү for yes/no questions; вэ / бэ after a question word. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "A yes/no question ends in <b>уу</b> (uu) after a word with back vowels (a, o, u) and <b>үү</b> (üü) after a word with front vowels (e, ö, ü, and words with only i). After a long vowel or diphthong these are written <b>юу</b> / <b>юү</b>.",
@@ -149,7 +141,8 @@
       "id": "cases",
       "title": "Endings for “my”, “in” and “from”",
       "particle": "миний -д -аас",
-      "summary": "Case endings show possession, place and direction.",
+      "summary": "Case endings show possession, place and direction. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "“My” is <b>миний</b> (minii), “your” <b>чиний</b> (chinii) or polite <b>таны</b> (tany), “his, her” <b>түүний</b> (tüünii), “our” <b>бидний</b> (bidnii).",
@@ -218,7 +211,8 @@
       "id": "have",
       "title": "There is, and “I have”",
       "particle": "байна байхгүй надад",
-      "summary": "байна there is; байхгүй there isn't; надад … байна, I have.",
+      "summary": "байна there is; байхгүй there isn't; надад … байна, I have. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "<b>байна</b> (baina) means “there is”, and <b>байхгүй</b> (baikhgüi) “there isn't”. To say “I have”, say “to me there is”: <b>надад</b> (nadad) … байна. “You have” is <b>чамд</b> (chamd) or polite <b>танд</b> (tand).",
@@ -275,7 +269,8 @@
       "id": "present",
       "title": "Verbs: now, usually, will",
       "particle": "-на -ж байна -даг",
-      "summary": "-на will, -ж байна is doing, -даг usually does, -хгүй won't.",
+      "summary": "-на will, -ж байна is doing, -даг usually does, -хгүй won't. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Verbs come last and take endings that follow vowel harmony. <b>-на / -нэ / -но / -нө</b>: will do, явна (yavna) I'll go. <b>-ж байна</b>: is doing now, уншиж байна (unshij baina) I'm reading. <b>-даг / -дэг / -дог / -дөг</b>: usually does, ярьдаг (yaridag) speaks. <b>-хгүй</b>: won't, doesn't, идэхгүй (idekhgüi).",
@@ -341,7 +336,8 @@
       "id": "past",
       "title": "Verbs: the past",
       "particle": "-сан -лаа -аагүй",
-      "summary": "-сан did, -лаа just did, -аагүй didn't.",
+      "summary": "-сан did, -лаа just did, -аагүй didn't. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "<b>-сан / -сэн / -сон / -сөн</b> is the general past: ирсэн (irsen) came. <b>-лаа / -лээ / -лоо / -лөө</b> is a recent past, for something that just happened: ирлээ (irlee) I've arrived. <b>-аагүй / -ээгүй / -оогүй / -өөгүй</b> means “didn't”: үзээгүй (üzeegüi) didn't see.",
@@ -403,7 +399,8 @@
       "id": "accusative",
       "title": "The object: -ыг, -ийг, -г",
       "particle": "-ыг -ийг -г",
-      "summary": "A definite object takes -ыг / -ийг / -г before the verb.",
+      "summary": "A definite object takes -ыг / -ийг / -г before the verb. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "When the object is a particular thing you already have in mind, Mongolian marks it with the accusative. After a consonant use <b>-ыг</b> (back vowels) or <b>-ийг</b> (front vowels): ном → <b>номыг</b>, хүн → <b>хүнийг</b>. After a long vowel or diphthong use <b>-г</b>: кино → <b>киног</b>, цай → <b>цайг</b>. Indefinite or brand-new objects often stay bare.",
@@ -469,7 +466,8 @@
       "id": "instrumental",
       "title": "By, with, in a language: -аар",
       "particle": "-аар -ээр -оор -өөр",
-      "summary": "-аар / -ээр / -оор / -өөр: by means of, and “in” a language.",
+      "summary": "-аар / -ээр / -оор / -өөр: by means of, and “in” a language. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "The instrumental ending means “by, with, by means of”, and with a language name it means “in that language”. Harmony picks the vowel: <b>-аар</b> (a, u), <b>-оор</b> (o), <b>-ээр</b> (e, ü, i), <b>-өөр</b> (ö). So <b>монголоор</b> “in Mongolian”, <b>автобусаар</b> “by bus”, <b>гараар</b> “by hand”.",
@@ -539,7 +537,8 @@
       "id": "comitative",
       "title": "With, having: -тай",
       "particle": "-тай -тэй -той",
-      "summary": "-тай / -тэй / -той means “with” or “having”.",
+      "summary": "-тай / -тэй / -той means “with” or “having”. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "<b>-тай / -тэй / -той</b> means “with” a person or thing, and also “having”: <b>найзтай</b> with a friend, <b>сүүтэй цай</b> tea with milk, <b>мөнгөтэй</b> having money. Harmony: <b>-тай</b> (a, u), <b>-той</b> (o), <b>-тэй</b> (e, ö, ü, i).",
@@ -609,7 +608,8 @@
       "id": "want-can",
       "title": "Want and can: -маар, чадна",
       "particle": "-маар чадна",
-      "summary": "-маар байна “I'd like to”; -ж чадна “can”; чадахгүй “can't”.",
+      "summary": "-маар байна “I'd like to”; -ж чадна “can”; чадахгүй “can't”. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "To say you'd like to do something, put <b>-маар / -мээр / -моор / -мөөр</b> on the verb stem and add <b>байна</b>: <b>явмаар байна</b> I'd like to go, <b>уумаар байна</b> I'd like a drink. Ability uses the connective <b>-ж</b> plus <b>чадах</b>: <b>явж чадна</b> I can go, <b>ярьж чадна</b> I can speak. The negative is <b>чадахгүй</b>.",
@@ -679,7 +679,8 @@
       "id": "imperatives",
       "title": "Commands: stem and -аарай",
       "particle": "Яв! -аарай",
-      "summary": "Bare stem for a blunt command; -аарай / -ээрэй is the polite ask.",
+      "summary": "Bare stem for a blunt command; -аарай / -ээрэй is the polite ask. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "A plain command is often just the verb stem: <b>Яв!</b> Go!, <b>Ир!</b> Come!, <b>Суу!</b> Sit!, <b>Ид!</b> Eat! To soften it, add <b>-аарай / -ээрэй / -оорой / -өөрэй</b> (harmony again): <b>яваарай</b> please go, <b>ирээрэй</b> please come. Everyday polite phrases use the same ending: <b>Уучлаарай</b> excuse me, <b>Сайхан амраарай</b> have a good rest.",
@@ -737,7 +738,8 @@
       "id": "numbers-noun",
       "title": "Numbers before a noun",
       "particle": "гурван таван",
-      "summary": "Many numbers take a short form before a noun: гурван ном.",
+      "summary": "Many numbers take a short form before a noun: гурван ном. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Standing alone you say <b>гурав</b> three, <b>тав</b> five, <b>арав</b> ten. Right before a noun, most numbers switch to a short attributive form ending in <b>-н</b>: <b>гурван ном</b> three books, <b>таван хүн</b> five people, <b>арван төгрөг</b> ten tögrög. <b>Нэг</b> one and <b>хоёр</b> two stay the same before a noun.",
@@ -800,6 +802,4115 @@
           "options": ["н", "в", "г", "с"],
           "answer": "н",
           "why": "дөрөв → дөрвөн before a noun."
+        }
+      ]
+    },
+    {
+      "id": "demonstratives",
+      "title": "This and that: энэ, тэр",
+      "particle": "энэ тэр эдгээр",
+      "summary": "энэ (this) and тэр (that) come before a noun and never change; эдгээр and тэдгээр mean \"these\" and \"those\". (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>энэ</b> (ene) this, <b>тэр</b> (ter) that. Before a noun they stay the same: энэ ном, this book. On their own they mean \"this one\" or \"that one\".",
+          "examples": [
+            [
+              "{Энэ} ном сонирхолтой.",
+              "Ene nom sonirkholtoi.",
+              "This book is interesting."
+            ],
+            [
+              "{Тэр} байшин манай сургууль.",
+              "Ter baishin manai surguuli.",
+              "That building is our school."
+            ]
+          ]
+        },
+        {
+          "h": "These, those, here, there",
+          "p": "<b>эдгээр</b> (edgeer) these, <b>тэдгээр</b> (tedgeer) those. Places: <b>энд</b> (end) here, <b>тэнд</b> (tend) there.",
+          "examples": [
+            [
+              "{Эдгээр} ном хэнийх вэ?",
+              "Edgeer nom khenikh ve?",
+              "Whose are these books?"
+            ],
+            [
+              "Ширээ {тэнд} байна.",
+              "Shiree tend baina.",
+              "The table is over there."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ юу вэ?",
+          "en": "What is this?",
+          "options": ["Энэ", "Эдгээр", "Энд", "Тэнд"],
+          "answer": "Энэ",
+          "why": "Энэ = this."
+        },
+        {
+          "q": "Ном ＿ байна.",
+          "en": "The book is here.",
+          "options": ["энэ", "энд", "эдгээр", "тэр"],
+          "answer": "энд",
+          "why": "энд = here."
+        },
+        {
+          "q": "＿ хүмүүс оюутнууд.",
+          "en": "These people are students.",
+          "options": ["Энд", "Тэнд", "Эдгээр", "Энэд"],
+          "answer": "Эдгээр",
+          "why": "Эдгээр = these."
+        },
+        {
+          "q": "Би ＿ амьдардаг.",
+          "en": "I live there.",
+          "options": ["тэр", "тэдгээр", "энэ", "тэнд"],
+          "answer": "тэнд",
+          "why": "тэнд = there."
+        }
+      ]
+    },
+    {
+      "id": "plural",
+      "title": "Plurals: -ууд, -нар",
+      "particle": "-ууд -үүд -нар",
+      "summary": "The plural is often left unmarked; -ууд / -үүд marks it for things, and -нар for groups of people such as teachers. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "After a number or a word like олон (many), no plural ending is needed: гурван ном, three books. To stress \"more than one\", add <b>-ууд</b> (-uud) or <b>-үүд</b> (-üüd) by vowel harmony: ном → номууд. Some are irregular: хүн → <b>хүмүүс</b> people.",
+          "examples": [
+            [
+              "{Номууд} ширээн дээр байна.",
+              "Nomuud shireen deer baina.",
+              "The books are on the table."
+            ],
+            [
+              "Энэ {хүмүүс} хаанаас ирсэн бэ?",
+              "Ene khümüüs khaanaas irsen be?",
+              "Where did these people come from?"
+            ]
+          ]
+        },
+        {
+          "h": "People: -нар",
+          "p": "<b>нар</b> (nar) marks a group of people, mostly jobs and relatives: багш нар teachers, эмч нар doctors. Хүүхэд (child) becomes <b>хүүхдүүд</b>.",
+          "examples": [
+            [
+              "{Багш нар} хуралтай.",
+              "Bagsh nar khuraltai.",
+              "The teachers have a meeting."
+            ],
+            [
+              "{Хүүхдүүд} тоглож байна.",
+              "Khüükhdüüd togloj baina.",
+              "The children are playing."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ширээн дээр байна.",
+          "en": "The books are on the table.",
+          "options": ["Номууд", "Номүүд", "Номнар", "Номс"],
+          "answer": "Номууд",
+          "why": "ном has back vowels, so -ууд."
+        },
+        {
+          "q": "Эмч ＿ ирлээ.",
+          "en": "The doctors have come.",
+          "options": ["ууд", "нар", "үүд", "с"],
+          "answer": "нар",
+          "why": "Jobs take нар."
+        },
+        {
+          "q": "＿ тоглож байна.",
+          "en": "The children are playing.",
+          "options": ["Хүүхэдууд", "Хүүхэднар", "Хүүхдүүд", "Хүүхэдүүд"],
+          "answer": "Хүүхдүүд",
+          "why": "хүүхэд drops its э before -үүд."
+        },
+        {
+          "q": "Гурван ＿ авлаа.",
+          "en": "I bought three books.",
+          "options": ["номууд", "номнар", "номын", "ном"],
+          "answer": "ном",
+          "why": "After a number the noun stays singular."
+        }
+      ]
+    },
+    {
+      "id": "genitive",
+      "title": "Of, 's: -ын, -ийн",
+      "particle": "-ын -ийн хэний",
+      "summary": "The genitive joins two nouns like English 's: багшийн ном, the teacher's book. It also builds \"mine\" and \"whose\". (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "After back-vowel words: <b>-ын</b> (-yn), аав → аавын; after front-vowel words and after ж, ч, ш: <b>-ийн</b> (-iin), багш → багшийн. After н the ending is <b>-ы</b> or <b>-ий</b>: хүн → хүний.",
+          "examples": [
+            [
+              "Энэ {багшийн} ном.",
+              "Ene bagshiin nom.",
+              "This is the teacher's book."
+            ],
+            [
+              "{Монголын} нийслэл Улаанбаатар.",
+              "Mongolyn niislel Ulaanbaatar.",
+              "The capital of Mongolia is Ulaanbaatar."
+            ]
+          ]
+        },
+        {
+          "h": "Whose, and \"mine\"",
+          "p": "<b>хэний</b> (khenii) whose. Add <b>-х</b> to a genitive to make it stand alone: <b>минийх</b> (miniikh) mine, <b>таных</b> (tanykh) yours, <b>хэнийх</b> (khenikh) whose one.",
+          "examples": [
+            [
+              "Энэ {хэний} цүнх вэ?",
+              "Ene khenii tsünkh ve?",
+              "Whose bag is this?"
+            ],
+            ["Энэ цүнх {минийх}.", "Ene tsünkh miniikh.", "This bag is mine."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Энэ ＿ машин.",
+          "en": "This is my father's car.",
+          "options": ["аавын", "аавийн", "аавд", "ааваас"],
+          "answer": "аавын",
+          "why": "аав has back vowels: аавын."
+        },
+        {
+          "q": "Энэ ＿ ном вэ?",
+          "en": "Whose book is this?",
+          "options": ["хэн", "хэний", "хэнд", "хэнээс"],
+          "answer": "хэний",
+          "why": "хэний = whose."
+        },
+        {
+          "q": "Энэ цүнх ＿.",
+          "en": "This bag is mine.",
+          "options": ["миний", "надад", "минийх", "намайг"],
+          "answer": "минийх",
+          "why": "Stand-alone \"mine\": минийх."
+        },
+        {
+          "q": "＿ ээж эмч.",
+          "en": "My friend's mother is a doctor.",
+          "options": ["Найзийн", "Найзад", "Найзаас", "Найзын"],
+          "answer": "Найзын",
+          "why": "найз has back vowels: найзын."
+        }
+      ]
+    },
+    {
+      "id": "dative-locative",
+      "title": "In, at, to: -д, -т",
+      "particle": "-д -т",
+      "summary": "One ending, -д (or -т after р, с, г, в), means \"in, at\", \"to\" a person, and \"at\" a time. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>гэрт</b> (gert) at home, <b>сургуульд</b> (surguulid) at school, <b>хотод</b> (khotod) in the city. After р, с, г, в the ending is usually <b>-т</b>; after т or д a vowel links on: хот → хотод.",
+          "examples": [
+            ["Би {гэрт} байна.", "Bi gert baina.", "I'm at home."],
+            [
+              "Тэр {Улаанбаатарт} амьдардаг.",
+              "Ter Ulaanbaatart amidardag.",
+              "She lives in Ulaanbaatar."
+            ]
+          ]
+        },
+        {
+          "h": "To a person, at a time",
+          "p": "The same ending marks the person you give or tell something to: <b>багшид</b> (bagshid) to the teacher, <b>надад</b> (nadad) to me. It also marks clock time: <b>долоон цагт</b> (doloon tsagt) at seven.",
+          "examples": [
+            [
+              "Би {багшид} хэлсэн.",
+              "Bi bagshid khelsen.",
+              "I told the teacher."
+            ],
+            [
+              "Хичээл {найман цагт} эхэлнэ.",
+              "Khicheel naiman tsagt ekhelne.",
+              "Class starts at eight."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Би ＿ байна.",
+          "en": "I'm at home.",
+          "options": ["гэрт", "гэрд", "гэрээс", "гэрийн"],
+          "answer": "гэрт",
+          "why": "After р the ending is -т."
+        },
+        {
+          "q": "Тэр ＿ ажилладаг.",
+          "en": "He works in the city.",
+          "options": ["хотт", "хотод", "хотоос", "хотын"],
+          "answer": "хотод",
+          "why": "хот ends in т, so -од links on."
+        },
+        {
+          "q": "Энэ номыг ＿ өгөөрэй.",
+          "en": "Give this book to the teacher.",
+          "options": ["багшийн", "багшаас", "багшид", "багшийг"],
+          "answer": "багшид",
+          "why": "The receiver takes -д."
+        },
+        {
+          "q": "Кино есөн ＿ эхэлнэ.",
+          "en": "The film starts at nine.",
+          "options": ["цаг", "цагаас", "цагийн", "цагт"],
+          "answer": "цагт",
+          "why": "Clock time takes -т."
+        }
+      ]
+    },
+    {
+      "id": "ablative-than",
+      "title": "From, and \"than\": -аас",
+      "particle": "-аас -ээс -оос -өөс",
+      "summary": "-аас / -ээс / -оос / -өөс means \"from\", and in a comparison it means \"than\": надаас өндөр, taller than me. (about A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "The ablative marks a starting point: <b>Монголоос</b> (Mongoloos) from Mongolia, <b>ажлаас</b> (ajlaas) from work. With time it means \"from\": <b>маргаашаас</b> (margaashaas) from tomorrow.",
+          "examples": [
+            [
+              "Би {Монголоос} ирсэн.",
+              "Bi Mongoloos irsen.",
+              "I came from Mongolia."
+            ],
+            [
+              "Тэр {ажлаас} оройтож ирлээ.",
+              "Ter ajlaas oroitoj irlee.",
+              "He came back late from work."
+            ]
+          ]
+        },
+        {
+          "h": "Comparing: \"than\"",
+          "p": "Put the thing you compare against in the ablative, then the adjective: <b>A B-аас том</b>, A is bigger than B. Add <b>илүү</b> (ilüü) to stress \"more\".",
+          "examples": [
+            [
+              "Миний ах {надаас} өндөр.",
+              "Minii akh nadaas öndör.",
+              "My older brother is taller than me."
+            ],
+            [
+              "Морь {машинаас} удаан.",
+              "Mori mashinaas udaan.",
+              "A horse is slower than a car."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Би ＿ ирсэн.",
+          "en": "I came from Japan.",
+          "options": ["Японоос", "Японаас", "Японд", "Японы"],
+          "answer": "Японоос",
+          "why": "о-words take -оос."
+        },
+        {
+          "q": "Тэр ＿ өндөр.",
+          "en": "He is taller than me.",
+          "options": ["надад", "надаас", "намайг", "миний"],
+          "answer": "надаас",
+          "why": "\"Than\" is the ablative."
+        },
+        {
+          "q": "Улаанбаатар Дарханаас ＿.",
+          "en": "Ulaanbaatar is bigger than Darkhan.",
+          "options": ["томоос", "томд", "том", "томын"],
+          "answer": "том",
+          "why": "The adjective comes last, unchanged."
+        },
+        {
+          "q": "Цай ＿ халуун.",
+          "en": "Tea is hotter than water.",
+          "options": ["усаас", "усанд", "усны", "уснаас"],
+          "answer": "уснаас",
+          "why": "ус has a hidden н: уснаас."
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "title": "Adjectives and \"very\"",
+      "particle": "маш хэтэрхий тийм ч",
+      "summary": "Adjectives come before the noun and never change; маш (very) comes before the adjective. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>том</b> big, <b>жижиг</b> small, <b>сайн</b> good, <b>муу</b> bad, <b>шинэ</b> new, <b>хуучин</b> old. Before a noun: том байшин, a big house. As a statement: Байшин том, the house is big.",
+          "examples": [
+            [
+              "Би {шинэ} утас авсан.",
+              "Bi shine utas avsan.",
+              "I bought a new phone."
+            ],
+            [
+              "Энэ гутал {хуучин}.",
+              "Ene gutal khuuchin.",
+              "These shoes are old."
+            ]
+          ]
+        },
+        {
+          "h": "Very, too, not very",
+          "p": "<b>маш</b> (mash) very, <b>их</b> (ikh) a lot, <b>хэтэрхий</b> (kheterkhii) too. \"Not very\" is <b>тийм ч … биш</b>.",
+          "examples": [
+            [
+              "Өнөөдөр {маш} хүйтэн.",
+              "Önöödör mash khüiten.",
+              "It's very cold today."
+            ],
+            [
+              "Тэр {тийм ч} өндөр {биш}.",
+              "Ter tiim ch öndör bish.",
+              "He isn't very tall."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Би ＿ утас авсан.",
+          "en": "I bought a new phone.",
+          "options": ["шинэ", "шинэд", "шинээс", "шинийн"],
+          "answer": "шинэ",
+          "why": "Adjectives don't change before a noun."
+        },
+        {
+          "q": "Өнөөдөр ＿ хүйтэн.",
+          "en": "It's very cold today.",
+          "options": ["тийм", "маш", "биш", "вэ"],
+          "answer": "маш",
+          "why": "маш goes right before the adjective."
+        },
+        {
+          "q": "Энэ цай ＿ халуун, уух боломжгүй.",
+          "en": "This tea is too hot to drink.",
+          "options": ["маш", "бага", "хэтэрхий", "тийм"],
+          "answer": "хэтэрхий",
+          "why": "хэтэрхий = too."
+        },
+        {
+          "q": "Тэр тийм ч өндөр ＿.",
+          "en": "He isn't very tall.",
+          "options": ["үгүй", "байхгүй", "уу", "биш"],
+          "answer": "биш",
+          "why": "тийм ч … биш = not very."
+        }
+      ]
+    },
+    {
+      "id": "question-words",
+      "title": "Who, what, where: хэн, юу, хаана",
+      "particle": "хэн юу хаана хэзээ",
+      "summary": "Question words stay where the answer would go, and the sentence ends in вэ or бэ. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>хэн</b> (khen) who, <b>юу</b> (yuu) what, <b>хаана</b> (khaana) where, <b>хэзээ</b> (khezee) when, <b>хэд</b> (khed) how many, <b>ямар</b> (yamar) what kind.",
+          "examples": [
+            ["Таны нэр {хэн} бэ?", "Tany ner khen be?", "What is your name?"],
+            [
+              "Та {хаана} ажилладаг вэ?",
+              "Ta khaana ajilladag ve?",
+              "Where do you work?"
+            ]
+          ]
+        },
+        {
+          "h": "Why and how",
+          "p": "<b>яагаад</b> (yaagaad) why, <b>яаж</b> (yaaj) how, <b>хэдэн</b> (kheden) how many before a noun; <b>хэдэн цаг</b> what time.",
+          "examples": [
+            [
+              "Та {яагаад} монгол хэл сурч байгаа вэ?",
+              "Ta yaagaad mongol khel surch baigaa ve?",
+              "Why are you learning Mongolian?"
+            ],
+            [
+              "Одоо {хэдэн} цаг болж байна?",
+              "Odoo kheden tsag bolj baina?",
+              "What time is it now?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Таны нэр ＿ бэ?",
+          "en": "What's your name?",
+          "options": ["хэн", "юу", "хаана", "хэзээ"],
+          "answer": "хэн",
+          "why": "Mongolian asks a name with хэн."
+        },
+        {
+          "q": "Та ＿ амьдардаг вэ?",
+          "en": "Where do you live?",
+          "options": ["хэн", "хаана", "хэзээ", "яаж"],
+          "answer": "хаана",
+          "why": "хаана = where."
+        },
+        {
+          "q": "Та ＿ ирсэн бэ?",
+          "en": "When did you come?",
+          "options": ["хаана", "хэн", "хэзээ", "ямар"],
+          "answer": "хэзээ",
+          "why": "хэзээ = when."
+        },
+        {
+          "q": "Энэ ＿ өнгөтэй вэ?",
+          "en": "What colour is this?",
+          "options": ["хэн", "хаана", "хэд", "ямар"],
+          "answer": "ямар",
+          "why": "ямар = what kind."
+        }
+      ]
+    },
+    {
+      "id": "reflexive-possessive",
+      "title": "One's own: -аа, -ээ",
+      "particle": "-аа -ээ -оо -өө",
+      "summary": "A reflexive ending -аа / -ээ / -оо / -өө means the thing belongs to the subject: Би номоо мартсан, I forgot my (own) book. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "When the owner is the subject, Mongolian adds <b>-аа</b> (by vowel harmony) instead of миний. With a case ending it comes last: <b>гэртээ</b> (gertee) at one's own home, <b>номоо</b> (nomoo) one's book as the object.",
+          "examples": [
+            [
+              "Би {номоо} мартчихлаа.",
+              "Bi nomoo martchikhlaa.",
+              "I forgot my book."
+            ],
+            [
+              "Тэр {гэртээ} харьсан.",
+              "Ter gertee kharisan.",
+              "She went home."
+            ]
+          ]
+        },
+        {
+          "h": "After a long vowel: -гаа",
+          "p": "After a long vowel or a diphthong the form is <b>-гаа</b> / <b>-гээ</b>: <b>цайгаа</b> (tsaigaa) one's tea, <b>ээжтэйгээ</b> (eejteigee) with one's mother.",
+          "examples": [
+            [
+              "{Ээжтэйгээ} утсаар ярилаа.",
+              "Eejteigee utsaar yarilaa.",
+              "I talked with my mother on the phone."
+            ],
+            ["{Цайгаа} уугаарай.", "Tsaigaa uugaarai.", "Drink your tea."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Би ＿ мартчихлаа.",
+          "en": "I forgot my book.",
+          "options": ["номоо", "номыг", "номын", "номд"],
+          "answer": "номоо",
+          "why": "The subject's own object: номоо."
+        },
+        {
+          "q": "Тэр ＿ харьсан.",
+          "en": "He went home.",
+          "options": ["гэрт", "гэртээ", "гэрээ", "гэрийн"],
+          "answer": "гэртээ",
+          "why": "One's own home, with -т: гэртээ."
+        },
+        {
+          "q": "＿ уугаарай.",
+          "en": "Drink your tea.",
+          "options": ["Цайаа", "Цайг", "Цайгаа", "Цайны"],
+          "answer": "Цайгаа",
+          "why": "After a diphthong: -гаа."
+        },
+        {
+          "q": "Би ＿ ярьсан.",
+          "en": "I talked with my mother.",
+          "options": ["ээжтэй", "ээжээ", "ээжийн", "ээжтэйгээ"],
+          "answer": "ээжтэйгээ",
+          "why": "With, plus one's own: ээжтэйгээ."
+        }
+      ]
+    },
+    {
+      "id": "possessive-particles",
+      "title": "My, your, his: минь, чинь, нь",
+      "particle": "минь чинь нь",
+      "summary": "Short particles after a noun mean \"my\", \"your\" and \"his, her, its\"; нь also works like \"the\" and marks a topic. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>минь</b> (mini) my, <b>чинь</b> (chini) your, <b>нь</b> (ni) his, her, its, their. They follow the noun: <b>ээж минь</b> my mother, <b>нэр нь</b> his name.",
+          "examples": [
+            ["{Ээж минь} эмч.", "Eej mini emch.", "My mom is a doctor."],
+            ["Түүний {нэр нь} Бат.", "Tüünii ner ni Bat.", "His name is Bat."]
+          ]
+        },
+        {
+          "h": "нь as \"the\" and topic",
+          "p": "<b>нь</b> also points back to something already known, a bit like \"the\", or sets up a topic: <b>номын үнэ нь</b> the price of the book.",
+          "examples": [
+            [
+              "Энэ номын {үнэ нь} хэд вэ?",
+              "Ene nomyn üne ni khed ve?",
+              "How much does this book cost?"
+            ],
+            [
+              "Машин {чинь} хаана байна?",
+              "Mashin chini khaana baina?",
+              "Where's your car?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ээж ＿ эмч.",
+          "en": "My mom is a doctor.",
+          "options": ["минь", "чинь", "нь", "маань"],
+          "answer": "минь",
+          "why": "минь = my."
+        },
+        {
+          "q": "Машин ＿ хаана байна?",
+          "en": "Where's your car?",
+          "options": ["минь", "чинь", "нь", "бид"],
+          "answer": "чинь",
+          "why": "чинь = your."
+        },
+        {
+          "q": "Түүний нэр ＿ Бат.",
+          "en": "His name is Bat.",
+          "options": ["минь", "чинь", "нь", "бэ"],
+          "answer": "нь",
+          "why": "нь = his, her."
+        },
+        {
+          "q": "Энэ номын үнэ ＿ хэд вэ?",
+          "en": "What's the price of this book?",
+          "options": ["минь", "вэ", "уу", "нь"],
+          "answer": "нь",
+          "why": "нь marks \"the price\" as the topic."
+        }
+      ]
+    },
+    {
+      "id": "directional",
+      "title": "Towards: руу, рүү",
+      "particle": "руу рүү луу лүү",
+      "summary": "руу / рүү after a noun means \"to, towards\" a place you are moving to; after р it is луу / лүү. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>руу</b> (ruu) after back-vowel words, <b>рүү</b> (rüü) after front-vowel words. After a word ending in р it becomes <b>луу</b> / <b>лүү</b>: гэр → гэр лүү.",
+          "examples": [
+            [
+              "Би {сургууль руу} явж байна.",
+              "Bi surguuli ruu yavj baina.",
+              "I'm going to school."
+            ],
+            [
+              "Тэр {Улаанбаатар луу} нисэв.",
+              "Ter Ulaanbaatar luu nisev.",
+              "She flew to Ulaanbaatar."
+            ]
+          ]
+        },
+        {
+          "h": "-д or руу?",
+          "p": "<b>-д</b> marks where you are or where you arrive; <b>руу</b> stresses the direction of the movement.",
+          "examples": [
+            ["{Гэр лүүгээ} явъя.", "Ger lüügee yavya.", "Let's go home."],
+            [
+              "Энэ автобус {төв рүү} явдаг уу?",
+              "Ene avtobus töv rüü yavdag uu?",
+              "Does this bus go to the centre?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Би ＿ явж байна.",
+          "en": "I'm going to school.",
+          "options": ["сургууль руу", "сургууль рүү", "сургууль луу", "сургуульд руу"],
+          "answer": "сургууль руу",
+          "why": "Back vowels: руу."
+        },
+        {
+          "q": "Тэр ＿ явлаа.",
+          "en": "He went to the city centre.",
+          "options": ["төв руу", "төв рүү", "төв лүү", "төвөөс"],
+          "answer": "төв рүү",
+          "why": "Front vowel ө: рүү."
+        },
+        {
+          "q": "Тэд ＿ нисэв.",
+          "en": "They flew to Ulaanbaatar.",
+          "options": [
+            "Улаанбаатар руу",
+            "Улаанбаатар лүү",
+            "Улаанбаатар луу",
+            "Улаанбаатараас"
+          ],
+          "answer": "Улаанбаатар луу",
+          "why": "After р with back vowels: луу."
+        },
+        {
+          "q": "Бид ＿ явъя.",
+          "en": "Let's go home.",
+          "options": ["гэр руугаа", "гэр луугаа", "гэрээс", "гэр лүүгээ"],
+          "answer": "гэр лүүгээ",
+          "why": "After р with front vowels: лүү, plus own -гээ."
+        }
+      ]
+    },
+    {
+      "id": "postpositions",
+      "title": "On, under, in: дээр, доор, дотор",
+      "particle": "дээр доор дотор хажууд",
+      "summary": "Place words come after the noun: ширээн дээр, on the table. Words like хажууд (next to) usually take the genitive. (about A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>дээр</b> (deer) on, <b>доор</b> (door) under, <b>дотор</b> (dotor) inside, <b>хажууд</b> (khajuud) next to, <b>өмнө</b> (ömnö) in front, <b>ард</b> (ard) behind. A noun with a hidden н shows it here: ширээ → <b>ширээн дээр</b>.",
+          "examples": [
+            [
+              "Ном {ширээн дээр} байна.",
+              "Nom shireen deer baina.",
+              "The book is on the table."
+            ],
+            [
+              "Муур {орон доор} унтаж байна.",
+              "Muur oron door untaj baina.",
+              "The cat is sleeping under the bed."
+            ]
+          ]
+        },
+        {
+          "h": "With the genitive",
+          "p": "<b>хажууд</b>, <b>өмнө</b> and <b>ард</b> usually take the genitive: <b>сургуулийн хажууд</b> next to the school, <b>байшингийн ард</b> behind the building.",
+          "examples": [
+            [
+              "Дэлгүүр {банкны хажууд} байдаг.",
+              "Delgüür bankny khajuud baidag.",
+              "The shop is next to the bank."
+            ],
+            [
+              "Машин {байшингийн ард} байна.",
+              "Mashin baishingiin ard baina.",
+              "The car is behind the building."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ном ширээн ＿ байна.",
+          "en": "The book is on the table.",
+          "options": ["дээр", "доор", "дотор", "ард"],
+          "answer": "дээр",
+          "why": "дээр = on."
+        },
+        {
+          "q": "Муур орон ＿ унтаж байна.",
+          "en": "The cat is sleeping under the bed.",
+          "options": ["дээр", "доор", "хажууд", "өмнө"],
+          "answer": "доор",
+          "why": "доор = under."
+        },
+        {
+          "q": "Цүнхний ＿ юу байна?",
+          "en": "What's inside the bag?",
+          "options": ["дээр", "ард", "дотор", "хажууд"],
+          "answer": "дотор",
+          "why": "дотор = inside."
+        },
+        {
+          "q": "Дэлгүүр сургуулийн ＿ байдаг.",
+          "en": "The shop is next to the school.",
+          "options": ["доор", "дотор", "дээр", "хажууд"],
+          "answer": "хажууд",
+          "why": "хажууд = next to."
+        }
+      ]
+    },
+    {
+      "id": "time-words",
+      "title": "Today, tomorrow, next year",
+      "particle": "өнөөдөр маргааш өчигдөр",
+      "summary": "Time words come early in the sentence and need no ending: Маргааш би ажиллана, I'll work tomorrow. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>өнөөдөр</b> (önöödör) today, <b>маргааш</b> (margaash) tomorrow, <b>өчигдөр</b> (öchigdör) yesterday, <b>одоо</b> (odoo) now, <b>өглөө</b> morning, <b>орой</b> evening, <b>шөнө</b> night.",
+          "examples": [
+            [
+              "{Маргааш} би ажиллана.",
+              "Margaash bi ajillana.",
+              "I'll work tomorrow."
+            ],
+            [
+              "{Өчигдөр} бороо орсон.",
+              "Öchigdör boroo orson.",
+              "It rained yesterday."
+            ]
+          ]
+        },
+        {
+          "h": "This, last, next",
+          "p": "<b>энэ жил</b> this year, <b>өнгөрсөн жил</b> last year, <b>ирэх жил</b> next year; the same works with <b>долоо хоног</b> (week) and <b>сар</b> (month).",
+          "examples": [
+            [
+              "Би {ирэх жил} Монгол руу явна.",
+              "Bi irekh jil Mongol ruu yavna.",
+              "I'll go to Mongolia next year."
+            ],
+            [
+              "{Өнгөрсөн долоо хоногт} их завгүй байсан.",
+              "Öngörsön doloo khonogt ikh zavgüi baisan.",
+              "Last week was very busy."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ бороо орсон.",
+          "en": "It rained yesterday.",
+          "options": ["Өчигдөр", "Маргааш", "Одоо", "Ирэх жил"],
+          "answer": "Өчигдөр",
+          "why": "Yesterday: өчигдөр."
+        },
+        {
+          "q": "＿ би ажиллана.",
+          "en": "I'll work tomorrow.",
+          "options": ["Өчигдөр", "Маргааш", "Өнгөрсөн жил", "Өнгөрсөн сар"],
+          "answer": "Маргааш",
+          "why": "The future -на fits маргааш."
+        },
+        {
+          "q": "Би ＿ жил Монгол руу явна.",
+          "en": "I'll go to Mongolia next year.",
+          "options": ["өнгөрсөн", "өчигдөр", "ирэх", "одоо"],
+          "answer": "ирэх",
+          "why": "Next: ирэх."
+        },
+        {
+          "q": "＿ хэдэн цаг болж байна?",
+          "en": "What time is it now?",
+          "options": ["Маргааш", "Өчигдөр", "Өнгөрсөн", "Одоо"],
+          "answer": "Одоо",
+          "why": "Now: одоо."
+        }
+      ]
+    },
+    {
+      "id": "clock-dates",
+      "title": "Telling the time and dates",
+      "particle": "цаг минут хагас сар",
+      "summary": "цаг is hour and минут minute; months are numbered, so a date reads \"fifth month, tenth\". (about A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>Хэдэн цаг болж байна?</b> What time is it? <b>таван цаг</b> five o'clock, <b>таван цаг арван минут</b> 5:10, <b>долоо хагас</b> half past seven.",
+          "examples": [
+            [
+              "Одоо {таван цаг} болж байна.",
+              "Odoo tavan tsag bolj baina.",
+              "It's five o'clock now."
+            ],
+            [
+              "Кино {долоо хагаст} эхэлнэ.",
+              "Kino doloo khagast ekhelne.",
+              "The film starts at half past seven."
+            ]
+          ]
+        },
+        {
+          "h": "Months and dates",
+          "p": "Months use ordinals: <b>нэгдүгээр сар</b> January, <b>хоёрдугаар сар</b> February, <b>долдугаар сар</b> July. A date is month + day: <b>тавдугаар сарын арван</b> May 10th.",
+          "examples": [
+            [
+              "Миний төрсөн өдөр {тавдугаар сарын} арванд.",
+              "Minii törsön ödör tavdugaar saryn arvand.",
+              "My birthday is on May 10th."
+            ],
+            [
+              "Наадам {долдугаар сард} болдог.",
+              "Naadam doldugaar sard boldog.",
+              "Naadam is held in July."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Одоо таван ＿ болж байна.",
+          "en": "It's five o'clock now.",
+          "options": ["цаг", "минут", "сар", "өдөр"],
+          "answer": "цаг",
+          "why": "цаг = hour, o'clock."
+        },
+        {
+          "q": "Наадам ＿ сард болдог.",
+          "en": "Naadam is held in July.",
+          "options": ["долоон", "долдугаар", "долоо", "долдугаарын"],
+          "answer": "долдугаар",
+          "why": "Months use ordinals: долдугаар сар."
+        },
+        {
+          "q": "Хичээл гурав ＿ эхэлнэ.",
+          "en": "Class starts at half past three.",
+          "options": ["хагас", "хагасаас", "хагаст", "хагасын"],
+          "answer": "хагаст",
+          "why": "\"At\" a time takes -т."
+        },
+        {
+          "q": "＿ цаг болж байна?",
+          "en": "What time is it?",
+          "options": ["Хэд", "Хэзээ", "Хаана", "Хэдэн"],
+          "answer": "Хэдэн",
+          "why": "Before a noun use хэдэн."
+        }
+      ]
+    },
+    {
+      "id": "past-progressive",
+      "title": "Was doing, used to: -ж байсан",
+      "particle": "-ж байсан -даг байсан",
+      "summary": "-ж / -ч + байсан means \"was doing\" at a moment in the past; -даг байсан means \"used to\". (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Take the stem, add <b>-ж</b> (or <b>-ч</b> after в, г, р, с), then <b>байсан</b>: <b>унших → уншиж байсан</b> was reading, <b>сурах → сурч байсан</b> was studying.",
+          "examples": [
+            [
+              "Чамайг ирэхэд би ном {уншиж байсан}.",
+              "Chamaig irekhed bi nom unshij baisan.",
+              "When you came I was reading."
+            ],
+            [
+              "Тэр Японд {сурч байсан}.",
+              "Ter Yapond surch baisan.",
+              "She was studying in Japan."
+            ]
+          ]
+        },
+        {
+          "h": "Used to: -даг байсан",
+          "p": "<b>-даг байсан</b> is a past habit, \"used to\".",
+          "examples": [
+            [
+              "Би өмнө нь тамхи {татдаг байсан}.",
+              "Bi ömnö ni tamkhi tatdag baisan.",
+              "I used to smoke."
+            ],
+            [
+              "Бага байхдаа морь {унадаг байсан}.",
+              "Baga baikhdaa mori unadag baisan.",
+              "When I was little I used to ride horses."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Чамайг утасдахад би унтаж ＿.",
+          "en": "I was sleeping when you called.",
+          "options": ["байсан", "байна", "байх", "байгаа"],
+          "answer": "байсан",
+          "why": "Past progressive: -ж байсан."
+        },
+        {
+          "q": "Тэр Японд ＿ байсан.",
+          "en": "He was studying in Japan.",
+          "options": ["сурж", "сурч", "сурсан", "сурах"],
+          "answer": "сурч",
+          "why": "After р the converb is -ч."
+        },
+        {
+          "q": "Би өмнө нь тамхи ＿ байсан.",
+          "en": "I used to smoke.",
+          "options": ["татаж", "татсан", "татдаг", "татах"],
+          "answer": "татдаг",
+          "why": "Used to: -даг байсан."
+        },
+        {
+          "q": "Бид ярилцаж ＿.",
+          "en": "We were talking.",
+          "options": ["байна уу", "байхгүй", "биш", "байсан"],
+          "answer": "байсан",
+          "why": "-ж байсан = was doing."
+        }
+      ]
+    },
+    {
+      "id": "intention",
+      "title": "About to, decided to: -х гэж, -хаар",
+      "particle": "-х гэж байна -хаар",
+      "summary": "-х гэж байна means \"about to\"; -хаар шийдсэн means \"decided to\". (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Verb in <b>-х</b> + <b>гэж байна</b>: <b>явах гэж байна</b> I'm about to go. In the past: <b>явах гэж байсан</b> I was going to go.",
+          "examples": [
+            [
+              "Би одоо {гарах гэж байна}.",
+              "Bi odoo garakh gej baina.",
+              "I'm about to leave now."
+            ],
+            [
+              "Бид кино {үзэх гэж байсан}.",
+              "Bid kino üzekh gej baisan.",
+              "We were going to watch a film."
+            ]
+          ]
+        },
+        {
+          "h": "Plans: -хаар",
+          "p": "<b>-хаар</b> (-khaar) + a verb of planning: <b>явахаар шийдсэн</b> decided to go, <b>уулзахаар болсон</b> it was arranged to meet.",
+          "examples": [
+            [
+              "Би Монголд {сурахаар шийдсэн}.",
+              "Bi Mongold surakhaar shiidsen.",
+              "I decided to study in Mongolia."
+            ],
+            [
+              "Бид маргааш {уулзахаар боллоо}.",
+              "Bid margaash uulzakhaar bolloo.",
+              "We agreed to meet tomorrow."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Би одоо гарах ＿ байна.",
+          "en": "I'm about to leave now.",
+          "options": ["гэж", "гээд", "гэсэн", "гэх"],
+          "answer": "гэж",
+          "why": "-х гэж байна = about to."
+        },
+        {
+          "q": "Бид кино үзэх гэж ＿.",
+          "en": "We were going to watch a film.",
+          "options": ["байна", "байсан", "байх", "байгаад"],
+          "answer": "байсан",
+          "why": "Past intention: гэж байсан."
+        },
+        {
+          "q": "Би Монголд ＿ шийдсэн.",
+          "en": "I decided to study in Mongolia.",
+          "options": ["сурч", "сурсан", "сурахаар", "сурах"],
+          "answer": "сурахаар",
+          "why": "Decide to: -хаар шийдэх."
+        },
+        {
+          "q": "Бид маргааш ＿ боллоо.",
+          "en": "We agreed to meet tomorrow.",
+          "options": ["уулзаж", "уулзсан", "уулзъя", "уулзахаар"],
+          "answer": "уулзахаар",
+          "why": "-хаар болох = it was arranged."
+        }
+      ]
+    },
+    {
+      "id": "must",
+      "title": "Must and need: ёстой, хэрэгтэй",
+      "particle": "-х ёстой -х хэрэгтэй",
+      "summary": "-х ёстой is \"must\"; -х хэрэгтэй is \"need to\"; -х хэрэггүй is \"no need to\". (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>-х ёстой</b> (-kh yostoi) is a duty or a firm need; <b>-х хэрэгтэй</b> (-kh khergtei) is something needed or advisable.",
+          "examples": [
+            [
+              "Би маргааш эрт {босох ёстой}.",
+              "Bi margaash ert bosokh yostoi.",
+              "I have to get up early tomorrow."
+            ],
+            [
+              "Та эмчид {үзүүлэх хэрэгтэй}.",
+              "Ta emchid üzüülekh khergtei.",
+              "You need to see a doctor."
+            ]
+          ]
+        },
+        {
+          "h": "No need, and \"I need\"",
+          "p": "<b>-х хэрэггүй</b> no need to. With a noun, the person who needs takes <b>-д</b>: <b>надад мөнгө хэрэгтэй</b> I need money.",
+          "examples": [
+            [
+              "Та {санаа зовох хэрэггүй}.",
+              "Ta sanaa zovokh khereggüi.",
+              "You don't need to worry."
+            ],
+            [
+              "{Надад} шинэ гутал {хэрэгтэй}.",
+              "Nadad shine gutal khergtei.",
+              "I need new shoes."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Би эрт босох ＿.",
+          "en": "I have to get up early.",
+          "options": ["ёстой", "хэрэггүй", "болохгүй", "биш"],
+          "answer": "ёстой",
+          "why": "Must: ёстой."
+        },
+        {
+          "q": "Та санаа зовох ＿.",
+          "en": "You don't need to worry.",
+          "options": ["хэрэгтэй", "хэрэггүй", "ёстой", "чадна"],
+          "answer": "хэрэггүй",
+          "why": "No need: хэрэггүй."
+        },
+        {
+          "q": "＿ мөнгө хэрэгтэй.",
+          "en": "I need money.",
+          "options": ["Би", "Намайг", "Надад", "Миний"],
+          "answer": "Надад",
+          "why": "The person who needs takes -д."
+        },
+        {
+          "q": "Та эмчид үзүүлэх ＿.",
+          "en": "You should see a doctor.",
+          "options": ["хэрэггүй", "биш", "уу", "хэрэгтэй"],
+          "answer": "хэрэгтэй",
+          "why": "Need to: хэрэгтэй."
+        }
+      ]
+    },
+    {
+      "id": "permission",
+      "title": "May I? -ж болох уу",
+      "particle": "-ж болно болохгүй",
+      "summary": "-ж болно means \"may\"; -ж болох уу? asks \"may I?\"; -ж болохгүй means \"not allowed\". (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Converb <b>-ж / -ч</b> + <b>болно</b>: <b>орж болно</b> you may come in. To ask, use <b>болох уу?</b>",
+          "examples": [
+            ["Энд {сууж болох уу}?", "End suuj bolokh uu?", "May I sit here?"],
+            [
+              "Тийм, {орж болно}.",
+              "Tiim, orj bolno.",
+              "Yes, you may come in."
+            ]
+          ]
+        },
+        {
+          "h": "Not allowed",
+          "p": "<b>болохгүй</b> means it isn't allowed, or it won't do.",
+          "examples": [
+            [
+              "Энд зураг {авч болохгүй}.",
+              "End zurag avch bolokhgüi.",
+              "You can't take pictures here."
+            ],
+            [
+              "Би цонх {нээж болох уу}?",
+              "Bi tsonkh neej bolokh uu?",
+              "May I open the window?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Энд сууж ＿ уу?",
+          "en": "May I sit here?",
+          "options": ["болох", "болно", "болохгүй", "байх"],
+          "answer": "болох",
+          "why": "Question: болох уу."
+        },
+        {
+          "q": "Энд зураг авч ＿.",
+          "en": "Photos aren't allowed here.",
+          "options": ["болно", "болохгүй", "болох уу", "чадна"],
+          "answer": "болохгүй",
+          "why": "Not allowed: болохгүй."
+        },
+        {
+          "q": "Тийм, орж ＿.",
+          "en": "Yes, you may come in.",
+          "options": ["болохгүй", "уу", "болно", "бэ"],
+          "answer": "болно",
+          "why": "Permission: болно."
+        },
+        {
+          "q": "Би цонх ＿ болох уу?",
+          "en": "May I open the window?",
+          "options": ["нээх", "нээсэн", "нээ", "нээж"],
+          "answer": "нээж",
+          "why": "Before болох: the -ж converb."
+        }
+      ]
+    },
+    {
+      "id": "negative-commands",
+      "title": "Don't: битгий, бүү",
+      "particle": "битгий бүү",
+      "summary": "битгий + verb stem means \"don't\"; бүү is the written, firmer form seen on signs. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>битгий</b> (bitgii) before the stem: <b>Битгий яв!</b> Don't go! Softer with the polite ending: <b>Битгий санаа зовоорой</b> please don't worry.",
+          "examples": [
+            ["{Битгий} уйл.", "Bitgii uil.", "Don't cry."],
+            [
+              "{Битгий} санаа зовоорой.",
+              "Bitgii sanaa zovooroi.",
+              "Please don't worry."
+            ]
+          ]
+        },
+        {
+          "h": "Signs: бүү",
+          "p": "<b>бүү</b> (büü) appears on signs and in set phrases: <b>Тамхи бүү тат</b> No smoking.",
+          "examples": [
+            ["Тамхи {бүү} тат.", "Tamkhi büü tat.", "No smoking."],
+            ["Биднийг {бүү} март.", "Bidniig büü mart.", "Don't forget us."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ уйл.",
+          "en": "Don't cry.",
+          "options": ["Битгий", "Болохгүй", "Үгүй", "Биш"],
+          "answer": "Битгий",
+          "why": "Битгий + stem."
+        },
+        {
+          "q": "Тамхи ＿ тат.",
+          "en": "No smoking.",
+          "options": ["үгүй", "бүү", "хэрэггүй", "биш"],
+          "answer": "бүү",
+          "why": "Signs use бүү."
+        },
+        {
+          "q": "Битгий санаа ＿.",
+          "en": "Please don't worry.",
+          "options": ["зовох", "зовсон", "зовоорой", "зовж"],
+          "answer": "зовоорой",
+          "why": "Polite: битгий + -оорой."
+        },
+        {
+          "q": "Хаалгыг битгий ＿.",
+          "en": "Don't close the door.",
+          "options": ["хаах", "хаасан", "хааж", "хаа"],
+          "answer": "хаа",
+          "why": "Bare stem after битгий."
+        }
+      ]
+    },
+    {
+      "id": "lets",
+      "title": "Let's: -ъя, -ье",
+      "particle": "-ъя -ье -цгаая",
+      "summary": "-ъя / -ье (-я, -ё after a vowel) means \"let's\" or \"let me\"; -цгаая means \"let's all\". (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>-ъя</b> after back-vowel stems: <b>явъя</b> (yavya) let's go; <b>-ье</b> after front-vowel stems: <b>үзье</b> (üzye) let's watch. After a vowel: <b>ууя</b> let's drink, <b>тоглоё</b> let's play.",
+          "examples": [
+            ["Хамт {явъя}.", "Khamt yavya.", "Let's go together."],
+            ["Кино {үзье}.", "Kino üzye.", "Let's watch a film."]
+          ]
+        },
+        {
+          "h": "Everyone: -цгаая",
+          "p": "<b>-цгаая</b> / <b>-цгээе</b> (-tsgaaya, -tsgeeye) adds \"all together\": <b>явцгаая</b> let's all go.",
+          "examples": [
+            ["За, {эхэлцгээе}.", "Za, ekheltsgeeye.", "OK, let's all begin."],
+            ["{Тоглоё}!", "Togloyo!", "Let's play!"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Хамт ＿.",
+          "en": "Let's go together.",
+          "options": ["явъя", "явна", "явсан", "явж"],
+          "answer": "явъя",
+          "why": "Let's: -ъя."
+        },
+        {
+          "q": "Кино ＿.",
+          "en": "Let's watch a film.",
+          "options": ["үзъя", "үзье", "үзнэ", "үзсэн"],
+          "answer": "үзье",
+          "why": "Front vowel: -ье."
+        },
+        {
+          "q": "За, ＿.",
+          "en": "OK, let's all begin.",
+          "options": ["эхэлнэ", "эхэлсэн", "эхэлцгээе", "эхэлж"],
+          "answer": "эхэлцгээе",
+          "why": "All together: -цгээе."
+        },
+        {
+          "q": "Цай ＿.",
+          "en": "Let's drink tea.",
+          "options": ["уух", "уусан", "ууж", "ууя"],
+          "answer": "ууя",
+          "why": "After a long vowel: -я."
+        }
+      ]
+    },
+    {
+      "id": "converb-j",
+      "title": "And then: -ж, -ч",
+      "particle": "-ж -ч",
+      "summary": "-ж / -ч links verbs in a row: the earlier verbs lose their tense and the last verb carries it. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>Босож, нүүрээ угааж, цай уусан.</b> I got up, washed my face and drank tea. Use <b>-ч</b> after stems ending in в, г, р, с, and <b>-ж</b> elsewhere.",
+          "examples": [
+            [
+              "Би {босож}, цай уусан.",
+              "Bi bosoj, tsai uusan.",
+              "I got up and drank tea."
+            ],
+            [
+              "Тэр дэлгүүрт {орж} талх авлаа.",
+              "Ter delgüürt orj talkh avlaa.",
+              "He went into the shop and bought bread."
+            ]
+          ]
+        },
+        {
+          "h": "How something is done",
+          "p": "The -ж form can also say how: <b>алхаж ирэх</b> come on foot, <b>гүйж ирэх</b> come running.",
+          "examples": [
+            ["Би {алхаж} ирсэн.", "Bi alkhaj irsen.", "I came on foot."],
+            [
+              "Хүүхэд {гүйж} ирлээ.",
+              "Khüükhed güij irlee.",
+              "The child came running."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Би босож, цай ＿.",
+          "en": "I got up and drank tea.",
+          "options": ["уусан", "ууж", "уух", "ууя"],
+          "answer": "уусан",
+          "why": "The last verb carries the tense."
+        },
+        {
+          "q": "Тэр дэлгүүрт ＿ талх авлаа.",
+          "en": "She went into the shop and bought bread.",
+          "options": ["орсон", "орж", "орно", "орох"],
+          "answer": "орж",
+          "why": "The first verb takes -ж."
+        },
+        {
+          "q": "Би ＿ ирсэн.",
+          "en": "I came on foot.",
+          "options": ["алхсан", "алхах", "алхаж", "алхана"],
+          "answer": "алхаж",
+          "why": "Manner: -ж."
+        },
+        {
+          "q": "Тэр захидал ＿ илгээв.",
+          "en": "She wrote a letter and sent it.",
+          "options": ["бичсэн", "бичнэ", "бичих", "бичиж"],
+          "answer": "бичиж",
+          "why": "-ж links the verbs."
+        }
+      ]
+    },
+    {
+      "id": "converb-aad",
+      "title": "After doing: -аад",
+      "particle": "-аад -ээд -оод -өөд",
+      "summary": "-аад / -ээд / -оод / -өөд means \"after doing\" or \"having done\": Хоол идээд явна, I'll eat and then go. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Add <b>-аад</b> by vowel harmony to the stem: <b>яв → яваад</b>, <b>ир → ирээд</b>, <b>ид → идээд</b>. After a long vowel it is <b>-гаад / -гээд</b>: уух → уугаад, хийх → хийгээд.",
+          "examples": [
+            [
+              "Хоол {идээд} кино үзье.",
+              "Khool ideed kino üzye.",
+              "Let's eat and then watch a film."
+            ],
+            [
+              "Тэр гэртээ {ирээд} унтсан.",
+              "Ter gertee ireed untsan.",
+              "She came home and went to sleep."
+            ]
+          ]
+        },
+        {
+          "h": "-аад or -ж?",
+          "p": "<b>-ж</b> links actions closely, often at the same time or as one event; <b>-аад</b> stresses that the first action is finished before the next starts.",
+          "examples": [
+            [
+              "Ажлаа {дуусгаад} утасдаарай.",
+              "Ajlaa duusgaad utasdaarai.",
+              "Call me once you've finished your work."
+            ],
+            [
+              "Цай {уугаад} гарлаа.",
+              "Tsai uugaad garlaa.",
+              "I had tea and then went out."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Хоол ＿ кино үзье.",
+          "en": "Let's eat and then watch a film.",
+          "options": ["идээд", "идаад", "идэх", "идсэн"],
+          "answer": "идээд",
+          "why": "ид- has front vowels: -ээд."
+        },
+        {
+          "q": "Тэр ＿ унтсан.",
+          "en": "He came home and went to sleep.",
+          "options": ["гэртээ ираад", "гэртээ ирээд", "гэрт ирэх", "гэртээ ирнэ"],
+          "answer": "гэртээ ирээд",
+          "why": "ир- takes -ээд."
+        },
+        {
+          "q": "Цай ＿ гарлаа.",
+          "en": "I had tea and then went out.",
+          "options": ["ууаад", "уух", "уугаад", "уусан"],
+          "answer": "уугаад",
+          "why": "After a long vowel: -гаад."
+        },
+        {
+          "q": "Ажлаа ＿ утасдаарай.",
+          "en": "Call me once you've finished work.",
+          "options": ["дуусгах", "дуусгасан", "дуусга", "дуусгаад"],
+          "answer": "дуусгаад",
+          "why": "The finished first action: -аад."
+        }
+      ]
+    },
+    {
+      "id": "conditional",
+      "title": "If: -вал, -бал, бол",
+      "particle": "-вал -бал бол",
+      "summary": "-вал / -вэл (or -бал / -бэл after в, м, н, л) means \"if\"; after a noun or adjective, бол means \"if it is\". (about B1)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ирэх → ирвэл</b> (irvel) if (someone) comes, <b>орох → орвол</b> if it rains, <b>явах → явбал</b> if you go. The subject of the if-clause can differ from the main clause.",
+          "examples": [
+            [
+              "Бороо {орвол} гэртээ байна.",
+              "Boroo orvol gertee baina.",
+              "If it rains, I'll stay home."
+            ],
+            [
+              "Чи {явбал} би ч явна.",
+              "Chi yavbal bi ch yavna.",
+              "If you go, I'll go too."
+            ]
+          ]
+        },
+        {
+          "h": "With nouns and adjectives: бол",
+          "p": "After a noun, adjective or participle use <b>бол</b>: <b>мөнгөтэй бол</b> if (I) have money, <b>хүйтэн бол</b> if it's cold.",
+          "examples": [
+            [
+              "{Цаг гарвал} утасдаарай.",
+              "Tsag garval utasdaarai.",
+              "If you have time, give me a call."
+            ],
+            [
+              "Хүйтэн {бол} хүрэм өмсөөрэй.",
+              "Khüiten bol khürem ömsööröi.",
+              "If it's cold, wear a jacket."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Бороо ＿ гэртээ байна.",
+          "en": "If it rains, I'll stay home.",
+          "options": ["орвол", "орбол", "орох", "орсон"],
+          "answer": "орвол",
+          "why": "о-stem: -вол."
+        },
+        {
+          "q": "Чи ＿ би ч явна.",
+          "en": "If you go, I'll go too.",
+          "options": ["яввал", "явбал", "явах", "явсан"],
+          "answer": "явбал",
+          "why": "After в: -бал."
+        },
+        {
+          "q": "Хүйтэн ＿ хүрэм өмсөөрэй.",
+          "en": "If it's cold, wear a jacket.",
+          "options": ["вал", "вэл", "бол", "гэж"],
+          "answer": "бол",
+          "why": "After an adjective: бол."
+        },
+        {
+          "q": "Та ＿ утасдаарай.",
+          "en": "If you come, give me a call.",
+          "options": ["ирвал", "ирбэл", "ирэх", "ирвэл"],
+          "answer": "ирвэл",
+          "why": "Front-vowel stem: -вэл."
+        }
+      ]
+    },
+    {
+      "id": "when-khad",
+      "title": "When: -хад, -хэд",
+      "particle": "-хад -хэд -ход",
+      "summary": "-хад / -хэд / -ход means \"when\" at the time something happens: Намайг ирэхэд, when I came. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Add <b>-хад</b> by vowel harmony to the stem: <b>явахад</b> when (I) went, <b>ирэхэд</b> when (I) came, <b>ороход</b> when it rained. The subject of the when-clause is often in the accusative: <b>Намайг ирэхэд</b>.",
+          "examples": [
+            [
+              "{Намайг ирэхэд} тэр унтаж байсан.",
+              "Namaig irekhed ter untaj baisan.",
+              "When I came, he was asleep."
+            ],
+            [
+              "Дэлгүүрт {очиход} хаалттай байсан.",
+              "Delgüürt ochikhod khaalttai baisan.",
+              "When I got to the shop, it was closed."
+            ]
+          ]
+        },
+        {
+          "h": "-хдаа: when I myself",
+          "p": "When the subject of both parts is the same, use <b>-хдаа</b> / <b>-хдээ</b>: <b>Бага байхдаа</b> when I was little.",
+          "examples": [
+            [
+              "{Хүүхэд байхдаа} би морь унадаг байсан.",
+              "Khüükhed baikhdaa bi mori unadag baisan.",
+              "When I was a child I used to ride horses."
+            ],
+            [
+              "{Монголд очихдоо} айраг уусан.",
+              "Mongold ochikhdoo airag uusan.",
+              "When I went to Mongolia I drank airag."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Намайг ＿ тэр унтаж байсан.",
+          "en": "When I came, he was asleep.",
+          "options": ["ирэхэд", "ирэхдээ", "ирвэл", "ирээд"],
+          "answer": "ирэхэд",
+          "why": "Different subjects: -хэд."
+        },
+        {
+          "q": "Бороо ＿ бид гэртээ байсан.",
+          "en": "When it rained, we were at home.",
+          "options": ["орохоор", "ороход", "орвол", "ороод"],
+          "answer": "ороход",
+          "why": "о-stem: -ход."
+        },
+        {
+          "q": "Хүүхэд ＿ би морь унадаг байсан.",
+          "en": "When I was a child I rode horses.",
+          "options": ["байхад", "байвал", "байхдаа", "байгаад"],
+          "answer": "байхдаа",
+          "why": "Same subject: -хдаа."
+        },
+        {
+          "q": "Дэлгүүрт ＿ хаалттай байсан.",
+          "en": "When I got to the shop, it was closed.",
+          "options": ["очвол", "очоод", "очих", "очиход"],
+          "answer": "очиход",
+          "why": "\"When\" at that moment: -ход."
+        }
+      ]
+    },
+    {
+      "id": "until-tal",
+      "title": "Until: -тал, -тэл",
+      "particle": "-тал -тэл -тол -төл",
+      "summary": "-тал / -тэл / -тол / -төл means \"until\": Намайг иртэл хүлээгээрэй, wait until I come. (about B1)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Add the ending straight to the stem: <b>иртэл</b> (irtel) until (someone) comes, <b>дуустал</b> (duustal) until it ends, <b>харанхуй болтол</b> until it gets dark.",
+          "examples": [
+            [
+              "Намайг {иртэл} хүлээгээрэй.",
+              "Namaig irtel khüleegeerei.",
+              "Wait until I come."
+            ],
+            [
+              "Бид {шөнө болтол} ярилцсан.",
+              "Bid shönö boltol yariltssan.",
+              "We talked until night came."
+            ]
+          ]
+        },
+        {
+          "h": "Until a time: хүртэл",
+          "p": "With a noun use <b>хүртэл</b> (khürtel): <b>маргааш хүртэл</b> until tomorrow, <b>таван цаг хүртэл</b> until five.",
+          "examples": [
+            [
+              "Дэлгүүр {есөн цаг хүртэл} ажилладаг.",
+              "Delgüür yesön tsag khürtel ajilladag.",
+              "The shop is open until nine."
+            ],
+            [
+              "Кино {дуустал} хоёр цаг үлдлээ.",
+              "Kino duustal khoyor tsag üldlee.",
+              "There are two hours left until the film ends."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Намайг ＿ хүлээгээрэй.",
+          "en": "Wait until I come.",
+          "options": ["иртэл", "иртал", "ирвэл", "ирэхэд"],
+          "answer": "иртэл",
+          "why": "Front vowels: -тэл."
+        },
+        {
+          "q": "Бид шөнө ＿ ярилцсан.",
+          "en": "We talked until night came.",
+          "options": ["болтал", "болтол", "болох", "болоод"],
+          "answer": "болтол",
+          "why": "о-stem: -тол."
+        },
+        {
+          "q": "Дэлгүүр есөн цаг ＿ ажилладаг.",
+          "en": "The shop is open until nine.",
+          "options": ["болтол", "иртэл", "хүртэл", "дуустал"],
+          "answer": "хүртэл",
+          "why": "With a noun: хүртэл."
+        },
+        {
+          "q": "Хичээл ＿ гарч болохгүй.",
+          "en": "You can't leave until the lesson ends.",
+          "options": ["дуусах", "дуусвал", "дуусаад", "дуустал"],
+          "answer": "дуустал",
+          "why": "Until: -тал."
+        }
+      ]
+    },
+    {
+      "id": "as-soon-as",
+      "title": "As soon as: -магц",
+      "particle": "-магц -мэгц -могц -мөгц",
+      "summary": "-магц / -мэгц / -могц / -мөгц means \"as soon as\": ирмэгц, as soon as (someone) arrives. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "The ending goes right on the stem and follows vowel harmony: <b>ирмэгц</b> (irmegts), <b>буумагц</b> (buumagts) as soon as (it) lands, <b>дуусмагц</b> (duusmagts) as soon as it's over.",
+          "examples": [
+            [
+              "Онгоц {буумагц} утасдаарай.",
+              "Ongots buumagts utasdaarai.",
+              "Call as soon as the plane lands."
+            ],
+            [
+              "Тэр гэртээ {ирмэгц} унтсан.",
+              "Ter gertee irmegts untsan.",
+              "She fell asleep as soon as she got home."
+            ]
+          ]
+        },
+        {
+          "h": "Right after: -сны дараа",
+          "p": "For a looser \"after\", use <b>-сны дараа</b> (-sny daraa): <b>хоол идсэний дараа</b> after eating.",
+          "examples": [
+            [
+              "Хичээл {дуусмагц} гарлаа.",
+              "Khicheel duusmagts garlaa.",
+              "I left as soon as class was over."
+            ],
+            [
+              "{Хоол идсэний дараа} цай ууна.",
+              "Khool idseni daraa tsai uuna.",
+              "We'll have tea after the meal."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Онгоц ＿ утасдаарай.",
+          "en": "Call as soon as the plane lands.",
+          "options": ["буумагц", "буумэгц", "буувал", "буух"],
+          "answer": "буумагц",
+          "why": "Back vowels: -магц."
+        },
+        {
+          "q": "Тэр гэртээ ＿ унтсан.",
+          "en": "She fell asleep as soon as she got home.",
+          "options": ["ирмагц", "ирмэгц", "ирэхэд", "ирвэл"],
+          "answer": "ирмэгц",
+          "why": "Front vowels: -мэгц."
+        },
+        {
+          "q": "Хичээл ＿ гарлаа.",
+          "en": "I left as soon as class ended.",
+          "options": ["дуусмэгц", "дуусах", "дуусмагц", "дуусвал"],
+          "answer": "дуусмагц",
+          "why": "дуус- takes -магц."
+        },
+        {
+          "q": "Хоол идсэний ＿ цай ууна.",
+          "en": "We'll have tea after the meal.",
+          "options": ["өмнө", "хүртэл", "тулд", "дараа"],
+          "answer": "дараа",
+          "why": "After: -сны дараа."
+        }
+      ]
+    },
+    {
+      "id": "purpose",
+      "title": "In order to: -хын тулд",
+      "particle": "-хын тулд -хаар -х гэж",
+      "summary": "-хын тулд means \"in order to\"; with verbs of coming and going, -хаар is the usual \"to\". (about B1)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>-х</b> + genitive <b>-ын</b> + <b>тулд</b>: <b>сурахын тулд</b> (surakhyn tuld) in order to learn, <b>эрүүл байхын тулд</b> to stay healthy.",
+          "examples": [
+            [
+              "Тэр мөнгө {олохын тулд} шөнө ажилладаг.",
+              "Ter möngö olokhyn tuld shönö ajilladag.",
+              "He works nights to earn money."
+            ],
+            [
+              "{Эрүүл байхын тулд} спорт хийх хэрэгтэй.",
+              "Erüül baikhyn tuld sport khiikh khergtei.",
+              "To stay healthy you need to exercise."
+            ]
+          ]
+        },
+        {
+          "h": "Going somewhere to do: -хаар",
+          "p": "With <b>явах</b>, <b>ирэх</b>, <b>очих</b>, purpose is usually <b>-хаар</b>: <b>талх авахаар явлаа</b> went to buy bread.",
+          "examples": [
+            [
+              "Би {талх авахаар} дэлгүүр лүү явлаа.",
+              "Bi talkh avakhaar delgüür lüü yavlaa.",
+              "I went to the shop to buy bread."
+            ],
+            [
+              "Тэр {сурахаар} Япон руу явсан.",
+              "Ter surakhaar Yapon ruu yavsan.",
+              "She went to Japan to study."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Тэр мөнгө ＿ тулд ажилладаг.",
+          "en": "He works to earn money.",
+          "options": ["олохын", "олох", "олсон", "олж"],
+          "answer": "олохын",
+          "why": "-хын тулд = in order to."
+        },
+        {
+          "q": "Би талх ＿ явлаа.",
+          "en": "I went to buy bread.",
+          "options": ["авахын", "авахаар", "авч", "авсан"],
+          "answer": "авахаар",
+          "why": "With явах: -хаар."
+        },
+        {
+          "q": "Эрүүл ＿ тулд спорт хийх хэрэгтэй.",
+          "en": "To stay healthy you need to exercise.",
+          "options": ["байхаар", "байж", "байхын", "байгаа"],
+          "answer": "байхын",
+          "why": "-хын тулд."
+        },
+        {
+          "q": "Тэр ＿ Япон руу явсан.",
+          "en": "She went to Japan to study.",
+          "options": ["сурахын", "сурч", "сурсан", "сурахаар"],
+          "answer": "сурахаар",
+          "why": "Going to do something: -хаар."
+        }
+      ]
+    },
+    {
+      "id": "relative-san",
+      "title": "The one who did: -сан + noun",
+      "particle": "-сан -сэн -сон -сөн",
+      "summary": "A verb in -сан before a noun works like an English \"who / that\" clause: ирсэн хүн, the person who came. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "The clause comes before the noun, with the verb last: <b>өчигдөр ирсэн хүн</b> the person who came yesterday. Its subject takes the genitive: <b>миний уншсан ном</b> the book I read.",
+          "examples": [
+            [
+              "{Өчигдөр ирсэн} хүн миний ах.",
+              "Öchigdör irsen khün minii akh.",
+              "The man who came yesterday is my brother."
+            ],
+            [
+              "{Миний уншсан} ном сонирхолтой байсан.",
+              "Minii unshsan nom sonirkholtoi baisan.",
+              "The book I read was interesting."
+            ]
+          ]
+        },
+        {
+          "h": "Now and habit: -гаа, -даг",
+          "p": "<b>-гаа / -аа</b> (with байгаа) is \"who is doing\": <b>унтаж байгаа хүүхэд</b> the sleeping child. <b>-даг</b> is \"who usually does\": <b>миний ажилладаг газар</b> the place where I work.",
+          "examples": [
+            [
+              "{Тэнд зогсож байгаа} хүн хэн бэ?",
+              "Tend zogsoj baigaa khün khen be?",
+              "Who is the man standing over there?"
+            ],
+            [
+              "Энэ {миний ажилладаг} компани.",
+              "Ene minii ajilladag kompani.",
+              "This is the company I work for."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Өчигдөр ＿ хүн миний ах.",
+          "en": "The man who came yesterday is my brother.",
+          "options": ["ирсэн", "ирсан", "ирж", "ирвэл"],
+          "answer": "ирсэн",
+          "why": "ир- takes -сэн."
+        },
+        {
+          "q": "＿ уншсан ном сонирхолтой.",
+          "en": "The book I read is interesting.",
+          "options": ["Би", "Миний", "Намайг", "Надад"],
+          "answer": "Миний",
+          "why": "The clause subject takes the genitive."
+        },
+        {
+          "q": "Унтаж ＿ хүүхдийг битгий сэрээ.",
+          "en": "Don't wake the sleeping child.",
+          "options": ["байсан", "байх", "байгаа", "байна"],
+          "answer": "байгаа",
+          "why": "\"Who is doing\": -ж байгаа."
+        },
+        {
+          "q": "Энэ миний ＿ компани.",
+          "en": "This is the company I work for.",
+          "options": ["ажиллаж", "ажиллах", "ажиллана", "ажилладаг"],
+          "answer": "ажилладаг",
+          "why": "Habit: -даг."
+        }
+      ]
+    },
+    {
+      "id": "relative-kh",
+      "title": "Something to do: -х + noun",
+      "particle": "-х",
+      "summary": "A verb in -х before a noun means something still to come: унших ном, a book to read; явах цаг, time to go. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-х</b> is the future or \"to be done\" participle: <b>идэх юм</b> something to eat, <b>хийх ажил</b> work to do, <b>маргааш ирэх хүн</b> the person who will come tomorrow.",
+          "examples": [
+            [
+              "Надад {хийх} ажил их байна.",
+              "Nadad khiikh ajil ikh baina.",
+              "I have a lot of work to do."
+            ],
+            [
+              "Гэрт {идэх} юм байхгүй.",
+              "Gert idekh yum baikhgüi.",
+              "There's nothing to eat at home."
+            ]
+          ]
+        },
+        {
+          "h": "Time to, place to",
+          "p": "<b>явах цаг боллоо</b> it's time to go; <b>суух газар</b> a place to sit; <b>хэлэх үг</b> something to say.",
+          "examples": [
+            ["{Явах цаг} боллоо.", "Yavakh tsag bolloo.", "It's time to go."],
+            [
+              "Энд {суух газар} байна уу?",
+              "End suukh gazar baina uu?",
+              "Is there somewhere to sit here?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Надад ＿ ажил их байна.",
+          "en": "I have a lot of work to do.",
+          "options": ["хийх", "хийсэн", "хийж", "хийгээд"],
+          "answer": "хийх",
+          "why": "Still to do: -х."
+        },
+        {
+          "q": "Гэрт ＿ юм байхгүй.",
+          "en": "There's nothing to eat at home.",
+          "options": ["идсэн", "идэх", "идээд", "идье"],
+          "answer": "идэх",
+          "why": "Something to eat: идэх юм."
+        },
+        {
+          "q": "Явах ＿ боллоо.",
+          "en": "It's time to go.",
+          "options": ["газар", "үг", "цаг", "юм"],
+          "answer": "цаг",
+          "why": "Time to: -х цаг."
+        },
+        {
+          "q": "Маргааш ＿ хүн хэн бэ?",
+          "en": "Who is the person who will come tomorrow?",
+          "options": ["ирсэн", "ирж", "ирвэл", "ирэх"],
+          "answer": "ирэх",
+          "why": "Future: -х."
+        }
+      ]
+    },
+    {
+      "id": "nominalization",
+      "title": "Doing as a noun: -х нь, -сныг",
+      "particle": "-х нь -сныг",
+      "summary": "A verb in -х or -сан can be used as a noun: Монгол хэл сурах нь сонирхолтой, learning Mongolian is interesting. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-х нь</b> makes a subject: <b>Унших нь</b> reading (is …). With a case ending, the verb works as an object: <b>ирэхийг</b> (that someone) comes, <b>ирснийг</b> (that someone) came.",
+          "examples": [
+            [
+              "Монгол хэл {сурах нь} сонирхолтой.",
+              "Mongol khel surakh ni sonirkholtoi.",
+              "Learning Mongolian is interesting."
+            ],
+            [
+              "Би түүнийг {ирснийг} мэдээгүй.",
+              "Bi tüüniig irsniig medeegüi.",
+              "I didn't know he had come."
+            ]
+          ]
+        },
+        {
+          "h": "That it happened",
+          "p": "<b>-сан нь</b> is \"the fact that\": <b>Чи ирсэн нь сайн боллоо</b> it's good that you came.",
+          "examples": [
+            [
+              "Чи {ирсэн нь} сайн боллоо.",
+              "Chi irsen ni sain bolloo.",
+              "It's good that you came."
+            ],
+            [
+              "Би {усанд сэлэхийг} сурмаар байна.",
+              "Bi usand selekhiig surmaar baina.",
+              "I'd like to learn to swim."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Монгол хэл ＿ нь сонирхолтой.",
+          "en": "Learning Mongolian is interesting.",
+          "options": ["сурах", "сурч", "сурсан", "суръя"],
+          "answer": "сурах",
+          "why": "Doing as a subject: -х нь."
+        },
+        {
+          "q": "Би түүнийг ＿ мэдээгүй.",
+          "en": "I didn't know he had come.",
+          "options": ["ирсэн", "ирснийг", "ирэх", "ирээд"],
+          "answer": "ирснийг",
+          "why": "Object of мэдэх: -сныг."
+        },
+        {
+          "q": "Чи ирсэн ＿ сайн боллоо.",
+          "en": "It's good that you came.",
+          "options": ["ч", "бол", "нь", "гэж"],
+          "answer": "нь",
+          "why": "The fact that: -сан нь."
+        },
+        {
+          "q": "Би сэлэхийг ＿ байна.",
+          "en": "I'd like to learn to swim.",
+          "options": ["сурах", "сурсан", "сураад", "сурмаар"],
+          "answer": "сурмаар",
+          "why": "Desire: -маар байна."
+        }
+      ]
+    },
+    {
+      "id": "quoting",
+      "title": "Saying and thinking: гэж",
+      "particle": "гэж хэлсэн гэж бодож байна",
+      "summary": "гэж closes any quote: what someone said, thought or asked goes before гэж, then the verb. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Mongolian has no \"that\". Put the words as said, then <b>гэж</b> (gej), then <b>хэлэх</b> (say), <b>бодох</b> (think), <b>асуух</b> (ask): <b>Тэр маргааш ирнэ гэж хэлсэн.</b>",
+          "examples": [
+            [
+              "Тэр маргааш ирнэ {гэж} хэлсэн.",
+              "Ter margaash irne gej khelsen.",
+              "She said she'd come tomorrow."
+            ],
+            [
+              "Би зөв {гэж} бодож байна.",
+              "Bi zöv gej bodoj baina.",
+              "I think that's right."
+            ]
+          ]
+        },
+        {
+          "h": "Asking and \"named\"",
+          "p": "Questions keep their particle: <b>Хэзээ ирэх вэ гэж асуусан</b> asked when (he) would come. The past of гэх alone is <b>гэв</b> or <b>гэсэн</b>: “Баяртай” гэв, (he) said “bye”.",
+          "examples": [
+            [
+              "Тэр намайг хэзээ ирэх вэ {гэж} асуусан.",
+              "Ter namaig khezee irekh ve gej asuusan.",
+              "She asked me when I'd come."
+            ],
+            [
+              "“Баярлалаа” {гэв}.",
+              "“Bayarlalaa” gev.",
+              "“Thank you,” he said."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Тэр маргааш ирнэ ＿ хэлсэн.",
+          "en": "She said she'd come tomorrow.",
+          "options": ["гэж", "гэв", "гэдэг", "гээд"],
+          "answer": "гэж",
+          "why": "A quote ends in гэж before the verb."
+        },
+        {
+          "q": "Би зөв гэж ＿ байна.",
+          "en": "I think that's right.",
+          "options": ["хэлж", "бодож", "асууж", "гэж"],
+          "answer": "бодож",
+          "why": "Think: бодох."
+        },
+        {
+          "q": "Хэзээ ирэх вэ гэж ＿.",
+          "en": "He asked when I'd come.",
+          "options": ["хэлсэн", "бодсон", "асуусан", "гэдэг"],
+          "answer": "асуусан",
+          "why": "Ask: асуух."
+        },
+        {
+          "q": "“Баярлалаа” ＿.",
+          "en": "“Thank you,” he said.",
+          "options": ["гэж", "гэвэл", "гэдэг", "гэв"],
+          "answer": "гэв",
+          "why": "Past of гэх on its own: гэв."
+        }
+      ]
+    },
+    {
+      "id": "called",
+      "title": "Called, named: гэдэг",
+      "particle": "гэдэг гэх",
+      "summary": "гэдэг means \"called\" or \"what one calls\": Бат гэдэг хүн, a man called Bat; монголоор юу гэдэг вэ? what is it called in Mongolian? (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>X гэдэг Y</b> a Y called X: <b>Эрдэнэт гэдэг хот</b> a city called Erdenet. To ask the word for something: <b>Үүнийг монголоор юу гэдэг вэ?</b>",
+          "examples": [
+            [
+              "Энэ {юу гэдэг} хот вэ?",
+              "Ene yuu gedeg khot ve?",
+              "What is this city called?"
+            ],
+            [
+              "Үүнийг монголоор {юу гэдэг} вэ?",
+              "Üüniig mongoloor yuu gedeg ve?",
+              "What do you call this in Mongolian?"
+            ]
+          ]
+        },
+        {
+          "h": "Names",
+          "p": "<b>Миний нэрийг Сараа гэдэг</b> my name is Saraa, literally \"they call my name Saraa\". <b>гэх мэт</b> means \"and so on\".",
+          "examples": [
+            [
+              "Миний нэрийг Сараа {гэдэг}.",
+              "Minii neriig Saraa gedeg.",
+              "My name is Saraa."
+            ],
+            [
+              "Алим, жүрж {гэх мэт} жимс авлаа.",
+              "Alim, jürj gekh met jims avlaa.",
+              "I bought fruit like apples, oranges and so on."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Үүнийг монголоор юу ＿ вэ?",
+          "en": "What do you call this in Mongolian?",
+          "options": ["гэдэг", "гэж", "гэв", "гэвэл"],
+          "answer": "гэдэг",
+          "why": "\"Is called\": гэдэг."
+        },
+        {
+          "q": "Миний нэрийг Сараа ＿.",
+          "en": "My name is Saraa.",
+          "options": ["гэж", "гэдэг", "нэр", "гэв"],
+          "answer": "гэдэг",
+          "why": "Names use гэдэг."
+        },
+        {
+          "q": "Бат ＿ хүн чамайг хайж байна.",
+          "en": "A man called Bat is looking for you.",
+          "options": ["гэж", "гэвэл", "гэдэг", "гэв"],
+          "answer": "гэдэг",
+          "why": "\"Called\" before a noun: гэдэг."
+        },
+        {
+          "q": "Алим, жүрж гэх ＿ авлаа.",
+          "en": "I bought apples, oranges and so on.",
+          "options": ["шиг", "бол", "ч", "мэт"],
+          "answer": "мэт",
+          "why": "And so on: гэх мэт."
+        }
+      ]
+    },
+    {
+      "id": "causative",
+      "title": "Make or let someone do: -уул, -лга",
+      "particle": "-уул -үүл -лга -га",
+      "summary": "Causative endings make \"do\" into \"make / let / have someone do\": унших → уншуулах, хийх → хийлгэх. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Common forms: <b>-уул / -үүл</b> (уншуулах make read, идүүлэх make eat), <b>-лга / -лгэ</b> (хийлгэх have done, уулгах make drink). The person made to act takes <b>-аар</b> or <b>-д</b>.",
+          "examples": [
+            [
+              "Багш оюутнуудаар ном {уншуулсан}.",
+              "Bagsh oyuutnuudaar nom unshuulsan.",
+              "The teacher had the students read."
+            ],
+            [
+              "Ээж хүүхдэдээ эм {уулгав}.",
+              "Eej khüükhdedee em uulgav.",
+              "The mother gave her child the medicine."
+            ]
+          ]
+        },
+        {
+          "h": "Having something done",
+          "p": "With one's own thing, the causative means \"have it done\": <b>үсээ засуулах</b> get one's hair cut, <b>гутлаа засуулах</b> get one's shoes fixed.",
+          "examples": [
+            [
+              "Би өчигдөр {үсээ засуулсан}.",
+              "Bi öchigdör üsee zasuulsan.",
+              "I got my hair cut yesterday."
+            ],
+            [
+              "Машинаа {угаалгалаа}.",
+              "Mashinaa ugaalgalaa.",
+              "I had my car washed."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Багш оюутнуудаар ном ＿.",
+          "en": "The teacher had the students read.",
+          "options": ["уншуулсан", "уншсан", "уншиж", "уншина"],
+          "answer": "уншуулсан",
+          "why": "Causative: -уул."
+        },
+        {
+          "q": "Би үсээ ＿.",
+          "en": "I got my hair cut.",
+          "options": ["зассан", "засуулсан", "засах", "засаад"],
+          "answer": "засуулсан",
+          "why": "Have something done: causative."
+        },
+        {
+          "q": "Ээж хүүхдэдээ эм ＿.",
+          "en": "The mother made her child take the medicine.",
+          "options": ["уув", "уух", "уулгав", "уугаад"],
+          "answer": "уулгав",
+          "why": "уух → уулгах."
+        },
+        {
+          "q": "Тэр надаар ажил ＿.",
+          "en": "He made me do the work.",
+          "options": ["хийсэн", "хийх", "хийж", "хийлгэсэн"],
+          "answer": "хийлгэсэн",
+          "why": "хийх → хийлгэх."
+        }
+      ]
+    },
+    {
+      "id": "passive",
+      "title": "Was done: -гд, -д",
+      "particle": "-гд -д -уул",
+      "summary": "-гд / -д makes a passive: барих → баригдах, be built. -уул with the doer in -д also gives \"was done by\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>барих → баригдах</b> be built, <b>бичих → бичигдэх</b> be written, <b>олох → олдох</b> be found, <b>хаах → хаагдах</b> be closed.",
+          "examples": [
+            [
+              "Энэ сүм 1904 онд {баригдсан}.",
+              "Ene süm 1904 ond barigdsan.",
+              "This temple was built in 1904."
+            ],
+            [
+              "Алдсан түлхүүр {олдсон}.",
+              "Aldsan tülkhüür oldson.",
+              "The lost key was found."
+            ]
+          ]
+        },
+        {
+          "h": "By someone: -д + -уул",
+          "p": "To name the doer, Mongolian often uses <b>-уул / -үүл</b> with the doer in <b>-д</b>: <b>нохойд хазуулсан</b> was bitten by a dog.",
+          "examples": [
+            [
+              "Хүүхэд {нохойд хазуулсан}.",
+              "Khüükhed nokhoid khazuulsan.",
+              "The child was bitten by a dog."
+            ],
+            [
+              "Зам цасаар {хаагдсан}.",
+              "Zam tsasaar khaagdsan.",
+              "The road was closed by snow."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Энэ сүм 1904 онд ＿.",
+          "en": "This temple was built in 1904.",
+          "options": ["баригдсан", "барьсан", "барих", "барьж"],
+          "answer": "баригдсан",
+          "why": "Passive: -гд."
+        },
+        {
+          "q": "Түлхүүр ＿.",
+          "en": "The key was found.",
+          "options": ["олсон", "олдсон", "олох", "олж"],
+          "answer": "олдсон",
+          "why": "олох → олдох."
+        },
+        {
+          "q": "Хүүхэд нохойд ＿.",
+          "en": "The child was bitten by a dog.",
+          "options": ["хазсан", "хазах", "хазуулсан", "хазаад"],
+          "answer": "хазуулсан",
+          "why": "Doer in -д + -уул."
+        },
+        {
+          "q": "Энэ ном англиар ＿.",
+          "en": "This book was written in English.",
+          "options": ["бичсэн", "бичих", "бичиж", "бичигдсэн"],
+          "answer": "бичигдсэн",
+          "why": "бичих → бичигдэх."
+        }
+      ]
+    },
+    {
+      "id": "superlative-like",
+      "title": "Most, and \"like\": хамгийн, шиг",
+      "particle": "хамгийн шиг адил",
+      "summary": "хамгийн before an adjective makes the superlative; шиг (like) and адил (same as) compare things that are alike. (about A2)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>хамгийн</b> (khamgiin) most: <b>хамгийн том</b> the biggest, <b>хамгийн сайн</b> the best. Use the ablative for \"of all\": <b>бүгдээс хамгийн</b>.",
+          "examples": [
+            [
+              "Улаанбаатар бол Монголын {хамгийн} том хот.",
+              "Ulaanbaatar bol Mongolyn khamgiin tom khot.",
+              "Ulaanbaatar is Mongolia's biggest city."
+            ],
+            [
+              "Тэр ангидаа {хамгийн} өндөр.",
+              "Ter angidaa khamgiin öndör.",
+              "He's the tallest in his class."
+            ]
+          ]
+        },
+        {
+          "h": "Like, the same as",
+          "p": "<b>шиг</b> (shig) like: <b>чам шиг</b> like you, <b>ээж шигээ</b> like her mother. <b>адил</b> / <b>адилхан</b> (adilkhan) the same.",
+          "examples": [
+            [
+              "Тэр {ээж шигээ} сайхан дуулдаг.",
+              "Ter eej shigee saikhan duuldag.",
+              "She sings beautifully, like her mother."
+            ],
+            [
+              "Энэ хоёр {адилхан}.",
+              "Ene khoyor adilkhan.",
+              "These two are the same."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Энэ ＿ сайн ресторан.",
+          "en": "This is the best restaurant.",
+          "options": ["хамгийн", "маш", "илүү", "шиг"],
+          "answer": "хамгийн",
+          "why": "Superlative: хамгийн."
+        },
+        {
+          "q": "Тэр ээж ＿ дуулдаг.",
+          "en": "She sings like her mother.",
+          "options": ["шиг биш", "шигээ", "адил бол", "хамгийн"],
+          "answer": "шигээ",
+          "why": "Like: шиг, with own -ээ."
+        },
+        {
+          "q": "Энэ хоёр ＿.",
+          "en": "These two are the same.",
+          "options": ["хамгийн", "илүү", "адилхан", "шиг"],
+          "answer": "адилхан",
+          "why": "Same: адилхан."
+        },
+        {
+          "q": "Чам ＿ хүн байхгүй.",
+          "en": "There's nobody like you.",
+          "options": ["хамгийн", "илүү", "адилхан", "шиг"],
+          "answer": "шиг",
+          "why": "Like you: чам шиг."
+        }
+      ]
+    },
+    {
+      "id": "any-no",
+      "title": "Also, even, nobody: ч, бас",
+      "particle": "ч бас хэн ч юу ч",
+      "summary": "бас means \"also\"; ч means \"also\" or \"even\", and after a question word with a negative verb it makes \"nobody, nothing, never\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>бас</b> (bas) also: <b>Би бас явна</b>. <b>ч</b> (ch) after a word: <b>Би ч гэсэн</b> me too, <b>хүүхэд ч мэднэ</b> even a child knows.",
+          "examples": [
+            ["Би {бас} оюутан.", "Bi bas oyuutan.", "I'm a student too."],
+            [
+              "Үүнийг хүүхэд {ч} мэднэ.",
+              "Üüniig khüükhed ch medne.",
+              "Even a child knows this."
+            ]
+          ]
+        },
+        {
+          "h": "Nobody, nothing, never",
+          "p": "Question word + <b>ч</b> + negative verb: <b>хэн ч ирээгүй</b> nobody came, <b>юу ч идээгүй</b> ate nothing, <b>хэзээ ч</b> never, <b>хаана ч</b> nowhere.",
+          "examples": [
+            ["{Хэн ч} ирээгүй.", "Khen ch ireegüi.", "Nobody came."],
+            [
+              "Би {хэзээ ч} мартахгүй.",
+              "Bi khezee ch martakhgüi.",
+              "I'll never forget."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Би ＿ оюутан.",
+          "en": "I'm a student too.",
+          "options": ["бас", "хэн", "хэзээ", "биш"],
+          "answer": "бас",
+          "why": "Also: бас."
+        },
+        {
+          "q": "Хэн ＿ ирээгүй.",
+          "en": "Nobody came.",
+          "options": ["бас", "ч", "ба", "бол"],
+          "answer": "ч",
+          "why": "хэн ч + negative = nobody."
+        },
+        {
+          "q": "Би юу ч ＿.",
+          "en": "I didn't eat anything.",
+          "options": ["идсэн", "идэв", "идээгүй", "иднэ"],
+          "answer": "идээгүй",
+          "why": "юу ч needs a negative verb."
+        },
+        {
+          "q": "Би хэзээ ч ＿.",
+          "en": "I'll never forget.",
+          "options": ["мартана", "мартсан", "мартъя", "мартахгүй"],
+          "answer": "мартахгүй",
+          "why": "хэзээ ч + negative = never."
+        }
+      ]
+    },
+    {
+      "id": "conjunctions",
+      "title": "And, but, or",
+      "particle": "ба болон гэхдээ харин эсвэл",
+      "summary": "ба and болон join nouns; тэгээд joins sentences; гэхдээ and харин mean \"but\"; эсвэл means \"or\". (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>ба</b> / <b>болон</b> (and, between nouns), <b>тэгээд</b> (and then), <b>эсвэл</b> (or). Verbs are usually joined with -ж or -аад instead.",
+          "examples": [
+            [
+              "Цай {эсвэл} кофе уух уу?",
+              "Tsai esvel kofe uukh uu?",
+              "Will you have tea or coffee?"
+            ],
+            [
+              "Би Бат {болон} Дорж хоёртой уулзсан.",
+              "Bi Bat bolon Dorj khoyortoi uulzsan.",
+              "I met Bat and Dorj."
+            ]
+          ]
+        },
+        {
+          "h": "But: гэхдээ, харин",
+          "p": "<b>гэхдээ</b> (gekhdee) but, however; <b>харин</b> (kharin) whereas, on the other hand.",
+          "examples": [
+            [
+              "Энэ сайхан, {гэхдээ} үнэтэй.",
+              "Ene saikhan, gekhdee ünetei.",
+              "It's nice, but expensive."
+            ],
+            [
+              "Ах эмч, {харин} эгч багш.",
+              "Akh emch, kharin egch bagsh.",
+              "My brother is a doctor, whereas my sister is a teacher."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Цай ＿ кофе уух уу?",
+          "en": "Will you have tea or coffee?",
+          "options": ["эсвэл", "болон", "харин", "гэхдээ"],
+          "answer": "эсвэл",
+          "why": "Or: эсвэл."
+        },
+        {
+          "q": "Энэ сайхан, ＿ үнэтэй.",
+          "en": "It's nice, but expensive.",
+          "options": ["эсвэл", "гэхдээ", "болон", "тэгээд"],
+          "answer": "гэхдээ",
+          "why": "But: гэхдээ."
+        },
+        {
+          "q": "Ах эмч, ＿ эгч багш.",
+          "en": "My brother is a doctor, whereas my sister is a teacher.",
+          "options": ["болон", "эсвэл", "харин", "бас"],
+          "answer": "харин",
+          "why": "Contrast: харин."
+        },
+        {
+          "q": "Бат ＿ Дорж ирсэн.",
+          "en": "Bat and Dorj came.",
+          "options": ["эсвэл", "харин", "гэхдээ", "болон"],
+          "answer": "болон",
+          "why": "And between nouns: болон."
+        }
+      ]
+    },
+    {
+      "id": "because",
+      "title": "Because: учраас, болохоор",
+      "particle": "учраас болохоор учир нь",
+      "summary": "-сан учраас and -х болохоор give the reason before the result; учир нь gives it after. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Reason first: <b>Би өвдсөн учраас ирээгүй</b> I didn't come because I was ill. <b>болохоор</b> (bolokhoor) is more spoken: <b>Бороо орж байгаа болохоор</b>.",
+          "examples": [
+            [
+              "Би {өвдсөн учраас} ирээгүй.",
+              "Bi övdsön uchraas ireegüi.",
+              "I didn't come because I was ill."
+            ],
+            [
+              "Бороо орж байгаа {болохоор} гэртээ байя.",
+              "Boroo orj baigaa bolokhoor gertee baiya.",
+              "It's raining, so let's stay home."
+            ]
+          ]
+        },
+        {
+          "h": "Reason after: учир нь",
+          "p": "<b>учир нь</b> (uchir ni) \"the reason is\" starts a new clause after the result; <b>яагаад гэвэл</b> is the spoken version.",
+          "examples": [
+            [
+              "Би ирээгүй, {учир нь} өвдсөн.",
+              "Bi ireegüi, uchir ni övdsön.",
+              "I didn't come, because I was ill."
+            ],
+            [
+              "Би яарч байна, {яагаад гэвэл} хоцорчихлоо.",
+              "Bi yaarch baina, yaagaad gevel khotsorchikhloo.",
+              "I'm in a hurry, because I'm late."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Би өвдсөн ＿ ирээгүй.",
+          "en": "I didn't come because I was ill.",
+          "options": ["учраас", "учир нь", "гэхдээ", "эсвэл"],
+          "answer": "учраас",
+          "why": "Reason first: -сан учраас."
+        },
+        {
+          "q": "Бороо орж байгаа ＿ гэртээ байя.",
+          "en": "It's raining, so let's stay home.",
+          "options": ["харин", "болохоор", "эсвэл", "хүртэл"],
+          "answer": "болохоор",
+          "why": "Spoken \"because\": болохоор."
+        },
+        {
+          "q": "Би ирээгүй, ＿ өвдсөн.",
+          "en": "I didn't come, because I was ill.",
+          "options": ["учраас", "болохоор", "учир нь", "тулд"],
+          "answer": "учир нь",
+          "why": "Reason after: учир нь."
+        },
+        {
+          "q": "Би яарч байна, яагаад ＿ хоцорчихлоо.",
+          "en": "I'm in a hurry, because I'm late.",
+          "options": ["гэж", "гэдэг", "гэв", "гэвэл"],
+          "answer": "гэвэл",
+          "why": "Spoken: яагаад гэвэл."
+        }
+      ]
+    },
+    {
+      "id": "although",
+      "title": "Although: -сан ч, гэвч",
+      "particle": "-сан ч гэвч гэсэн ч",
+      "summary": "-сан ч (or -вч) means \"although, even though\"; гэвч and гэсэн ч start a \"but still\" sentence. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Add <b>ч</b> to a past participle: <b>Бороо орсон ч бид явсан</b> although it rained we went. <b>хэдий … ч</b> makes it stronger: even though.",
+          "examples": [
+            [
+              "Бороо {орсон ч} бид явсан.",
+              "Boroo orson ch bid yavsan.",
+              "Although it rained, we went."
+            ],
+            [
+              "{Хэдий} ядарсан {ч} тэр ажилласаар байв.",
+              "Khedii yadarsan ch ter ajillasaar baiv.",
+              "Even though he was tired, he kept on working."
+            ]
+          ]
+        },
+        {
+          "h": "But still: гэвч, гэсэн ч",
+          "p": "<b>гэвч</b> (gevch) and <b>гэсэн ч</b> (gesen ch) at the start of the next sentence mean \"however, but still\".",
+          "examples": [
+            [
+              "Би их хичээсэн. {Гэвч} шалгалтад унасан.",
+              "Bi ikh khicheesen. Gevch shalgaltad unasan.",
+              "I tried hard. But I failed the exam."
+            ],
+            [
+              "Үнэтэй. {Гэсэн ч} авна.",
+              "Ünetei. Gesen ch avna.",
+              "It's expensive. I'll still buy it."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Бороо орсон ＿ бид явсан.",
+          "en": "Although it rained, we went.",
+          "options": ["ч", "бол", "гэж", "тул"],
+          "answer": "ч",
+          "why": "Although: -сан ч."
+        },
+        {
+          "q": "Хэдий ядарсан ＿ тэр ажилласан.",
+          "en": "Even though he was tired, he worked.",
+          "options": ["бол", "ч", "гэвч", "тулд"],
+          "answer": "ч",
+          "why": "хэдий … ч."
+        },
+        {
+          "q": "Би их хичээсэн. ＿ шалгалтад унасан.",
+          "en": "I tried hard. But I failed the exam.",
+          "options": ["Учир нь", "Эсвэл", "Гэвч", "Болон"],
+          "answer": "Гэвч",
+          "why": "However: гэвч."
+        },
+        {
+          "q": "Үнэтэй. Гэсэн ＿ авна.",
+          "en": "It's expensive. I'll still buy it.",
+          "options": ["бол", "гэж", "нь", "ч"],
+          "answer": "ч",
+          "why": "Still: гэсэн ч."
+        }
+      ]
+    },
+    {
+      "id": "likes",
+      "title": "Like and dislike: дуртай",
+      "particle": "-д дуртай -х дуртай дургүй",
+      "summary": "дуртай means \"fond of\": the thing liked takes -д, or a verb in -х comes before it. дургүй means \"don't like\". (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>Би номд дуртай</b> I like books. With a verb: <b>Би ном унших дуртай</b> I like reading. Negative: <b>дургүй</b> (durgüi).",
+          "examples": [
+            ["Би {хөгжимд дуртай}.", "Bi khögjimd durtai.", "I like music."],
+            [
+              "Тэр {бүжиглэх дуртай}.",
+              "Ter büjiglekh durtai.",
+              "She likes dancing."
+            ]
+          ]
+        },
+        {
+          "h": "Asking and disliking",
+          "p": "<b>Та юунд дуртай вэ?</b> What do you like? <b>Би хүйтэнд дургүй</b> I don't like the cold.",
+          "examples": [
+            [
+              "Та {юунд} дуртай вэ?",
+              "Ta yuund durtai ve?",
+              "What do you like?"
+            ],
+            [
+              "Би хүйтэнд {дургүй}.",
+              "Bi khüitend durgüi.",
+              "I don't like the cold."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Би хөгжим＿ дуртай.",
+          "en": "I like music.",
+          "options": ["д", "ийг", "ээс", "тэй"],
+          "answer": "д",
+          "why": "The thing liked takes -д."
+        },
+        {
+          "q": "Тэр бүжиглэх ＿.",
+          "en": "She likes dancing.",
+          "options": ["дургүй", "дуртай", "хэрэгтэй", "ёстой"],
+          "answer": "дуртай",
+          "why": "Like: дуртай."
+        },
+        {
+          "q": "Би хүйтэнд ＿.",
+          "en": "I don't like the cold.",
+          "options": ["дуртай", "биш", "дургүй", "үгүй"],
+          "answer": "дургүй",
+          "why": "Dislike: дургүй."
+        },
+        {
+          "q": "Та ＿ дуртай вэ?",
+          "en": "What do you like?",
+          "options": ["юу", "юуг", "юуны", "юунд"],
+          "answer": "юунд",
+          "why": "What: юу, + -нд."
+        }
+      ]
+    },
+    {
+      "id": "experience",
+      "title": "Ever done: -ж үзсэн",
+      "particle": "-ж үзсэн -ж байсан",
+      "summary": "-ж үзсэн means \"have tried / have ever done\"; -ж үзээгүй means \"have never done\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>үзэх</b> (see) after a -ж converb means \"try\": <b>ууж үзэх</b> try drinking. In the past it means \"have ever\": <b>Та айраг ууж үзсэн үү?</b>",
+          "examples": [
+            [
+              "Та Монголд {очиж үзсэн} үү?",
+              "Ta Mongold ochij üzsen üü?",
+              "Have you ever been to Mongolia?"
+            ],
+            [
+              "Би айраг {ууж үзээгүй}.",
+              "Bi airag uuj üzeegüi.",
+              "I've never tried airag."
+            ]
+          ]
+        },
+        {
+          "h": "Have been: -ж байсан",
+          "p": "<b>-ж байсан</b> also means \"have done (at some time)\": <b>Би Японд амьдарч байсан</b> I have lived in Japan. Try something now: <b>-аад үзээрэй</b>.",
+          "examples": [
+            [
+              "Би Японд {амьдарч байсан}.",
+              "Bi Yapond amidarch baisan.",
+              "I've lived in Japan."
+            ],
+            [
+              "Энийг {идээд үзээрэй}.",
+              "Eniig ideed üzeerei.",
+              "Try eating this."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Та Монголд очиж ＿ үү?",
+          "en": "Have you ever been to Mongolia?",
+          "options": ["үзсэн", "үзэх", "үзье", "үзээд"],
+          "answer": "үзсэн",
+          "why": "Ever: -ж үзсэн."
+        },
+        {
+          "q": "Би айраг ууж ＿.",
+          "en": "I've never tried airag.",
+          "options": ["үзсэн", "үзээгүй", "үзнэ", "үзье"],
+          "answer": "үзээгүй",
+          "why": "Never: -ж үзээгүй."
+        },
+        {
+          "q": "Би Японд амьдарч ＿.",
+          "en": "I've lived in Japan.",
+          "options": ["байна", "байх", "байсан", "байгаа"],
+          "answer": "байсан",
+          "why": "Have done: -ж байсан."
+        },
+        {
+          "q": "Энийг идээд ＿.",
+          "en": "Try eating this.",
+          "options": ["үзсэн", "үзэхгүй", "үзэх", "үзээрэй"],
+          "answer": "үзээрэй",
+          "why": "Try: -аад үзээрэй."
+        }
+      ]
+    },
+    {
+      "id": "counterfactual",
+      "title": "If it had been: -сан бол … -х байсан",
+      "particle": "-сан бол -х байсан",
+      "summary": "For \"if … had …, … would have …\", put -сан бол in the if-clause and -х байсан at the end. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "If-clause: past participle + <b>бол</b>: <b>чи эрт ирсэн бол</b> if you had come early. Result: <b>-х байсан</b> (or <b>-х байлаа</b>) would have: <b>уулзах байсан</b>.",
+          "examples": [
+            [
+              "Чи эрт {ирсэн бол} бид уулзах байсан.",
+              "Chi ert irsen bol bid uulzakh baisan.",
+              "If you had come early, we would have met."
+            ],
+            [
+              "Мөнгөтэй байсан бол машин {авах байсан}.",
+              "Möngötei baisan bol mashin avakh baisan.",
+              "If I'd had money, I would have bought a car."
+            ]
+          ]
+        },
+        {
+          "h": "If I were you",
+          "p": "The same pattern covers present wishes: <b>Би чиний оронд байсан бол …</b> if I were in your place.",
+          "examples": [
+            [
+              "{Би чиний оронд байсан бол} явахгүй байсан.",
+              "Bi chinii ornd baisan bol yavakhgüi baisan.",
+              "If I were you, I wouldn't go."
+            ],
+            [
+              "Цаг байсан бол {туслах байлаа}.",
+              "Tsag baisan bol tuslakh bailaa.",
+              "If I'd had time, I would have helped."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Чи эрт ирсэн ＿ бид уулзах байсан.",
+          "en": "If you had come early, we would have met.",
+          "options": ["бол", "вал", "тул", "ч"],
+          "answer": "бол",
+          "why": "If-clause: -сан бол."
+        },
+        {
+          "q": "Мөнгөтэй байсан бол машин авах ＿.",
+          "en": "If I'd had money, I'd have bought a car.",
+          "options": ["байна", "байсан", "байвал", "байх уу"],
+          "answer": "байсан",
+          "why": "Result: -х байсан."
+        },
+        {
+          "q": "Би чиний оронд ＿ бол явахгүй байсан.",
+          "en": "If I were you, I wouldn't go.",
+          "options": ["байх", "байвал", "байсан", "байна"],
+          "answer": "байсан",
+          "why": "-сан бол."
+        },
+        {
+          "q": "Цаг байсан бол ＿ байлаа.",
+          "en": "If I'd had time, I would have helped.",
+          "options": ["тусалсан", "тусалж", "туслаад", "туслах"],
+          "answer": "туслах",
+          "why": "-х байлаа = would have."
+        }
+      ]
+    },
+    {
+      "id": "wishes",
+      "title": "Hopes and wishes: -аасай",
+      "particle": "-аасай -ээсэй хүсье",
+      "summary": "-аасай / -ээсэй / -оосой means \"I hope … will\": Бороо ороосой, I hope it rains. хүсье is \"I wish (you)\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Add <b>-аасай</b> by vowel harmony to the stem: <b>ирээсэй</b> I hope (he) comes, <b>эдгээсэй</b> I hope (you) get well.",
+          "examples": [
+            [
+              "Маргааш цаг агаар сайхан {байгаасай}.",
+              "Margaash tsag agaar saikhan baigaasai.",
+              "I hope the weather is nice tomorrow."
+            ],
+            [
+              "Чи хурдан {эдгээсэй}.",
+              "Chi khurdan edgeesei.",
+              "I hope you get well soon."
+            ]
+          ]
+        },
+        {
+          "h": "Wishing someone well: хүсье",
+          "p": "<b>-ыг хүсье</b> I wish (you) …: <b>Амжилт хүсье!</b> Good luck! <b>Танд эрүүл энхийг хүсье</b> I wish you good health.",
+          "examples": [
+            [
+              "Шалгалтад чинь {амжилт хүсье}!",
+              "Shalgaltad chini amjilt khüsye!",
+              "Good luck with your exam!"
+            ],
+            [
+              "Танд аз жаргалыг {хүсье}.",
+              "Tand az jargalyg khüsye.",
+              "I wish you happiness."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Чи хурдан ＿.",
+          "en": "I hope you get well soon.",
+          "options": ["эдгээсэй", "эдгэнэ", "эдгэсэн", "эдгэе"],
+          "answer": "эдгээсэй",
+          "why": "Hope: -ээсэй."
+        },
+        {
+          "q": "Маргааш бороо ＿.",
+          "en": "I hope it rains tomorrow.",
+          "options": ["орно", "ороосой", "орсон", "оръё"],
+          "answer": "ороосой",
+          "why": "о-stem: -оосой."
+        },
+        {
+          "q": "Амжилт ＿!",
+          "en": "Good luck!",
+          "options": ["хүсэх", "хүссэн", "хүсье", "хүсээсэй"],
+          "answer": "хүсье",
+          "why": "I wish: хүсье."
+        },
+        {
+          "q": "Цаг агаар сайхан ＿.",
+          "en": "I hope the weather is nice.",
+          "options": ["байна", "байсан", "байя", "байгаасай"],
+          "answer": "байгаасай",
+          "why": "After a long vowel: -гаасай."
+        }
+      ]
+    },
+    {
+      "id": "probably",
+      "title": "Probably, maybe: байх, магадгүй",
+      "particle": "-х байх магадгүй",
+      "summary": "A verb + байх at the end means \"probably\"; магадгүй means \"maybe\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>байх</b> after a participle is a guess: <b>Тэр гэртээ байгаа байх</b> he's probably at home; <b>Бороо орох байх</b> it'll probably rain.",
+          "examples": [
+            [
+              "Тэр гэртээ {байгаа байх}.",
+              "Ter gertee baigaa baikh.",
+              "He's probably at home."
+            ],
+            [
+              "Маргааш цас {орох байх}.",
+              "Margaash tsas orokh baikh.",
+              "It'll probably snow tomorrow."
+            ]
+          ]
+        },
+        {
+          "h": "Maybe: магадгүй",
+          "p": "<b>магадгүй</b> (magadgüi) maybe, either at the start or after <b>-ж</b>: <b>ирэхгүй байж магадгүй</b> he may not come.",
+          "examples": [
+            [
+              "Тэр {ирэхгүй байж магадгүй}.",
+              "Ter irekhgüi baij magadgüi.",
+              "He might not come."
+            ],
+            [
+              "{Магадгүй} чи зөв байх.",
+              "Magadgüi chi zöv baikh.",
+              "Maybe you're right."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Тэр гэртээ байгаа ＿.",
+          "en": "He's probably at home.",
+          "options": ["байх", "байна", "байсан", "байвал"],
+          "answer": "байх",
+          "why": "Guess: байх."
+        },
+        {
+          "q": "Тэр ирэхгүй байж ＿.",
+          "en": "He might not come.",
+          "options": ["байх", "магадгүй", "болно", "ёстой"],
+          "answer": "магадгүй",
+          "why": "Maybe: магадгүй."
+        },
+        {
+          "q": "Маргааш цас ＿ байх.",
+          "en": "It'll probably snow tomorrow.",
+          "options": ["орсон", "орж", "орох", "орвол"],
+          "answer": "орох",
+          "why": "Future guess: -х байх."
+        },
+        {
+          "q": "＿ чи зөв байх.",
+          "en": "Maybe you're right.",
+          "options": ["Хэрэгтэй", "Ёстой", "Битгий", "Магадгүй"],
+          "answer": "Магадгүй",
+          "why": "Maybe: магадгүй."
+        }
+      ]
+    },
+    {
+      "id": "particles",
+      "title": "Tone particles: шүү, даа, л",
+      "particle": "шүү даа л",
+      "summary": "Short particles at the end change the tone: шүү insists or warns, даа softens or appeals, л means \"just, only\" or stresses a word. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>шүү</b> (shüü) \"mind you\": <b>Битгий мартаарай шүү</b> don't forget, OK? <b>даа</b> / <b>дээ</b> invites agreement: <b>Сайхан байна даа</b> it's lovely, isn't it.",
+          "examples": [
+            [
+              "Битгий {мартаарай шүү}.",
+              "Bitgii martaarai shüü.",
+              "Don't forget, mind you."
+            ],
+            [
+              "Өнөөдөр хүйтэн байна {даа}.",
+              "Önöödör khüiten baina daa.",
+              "It's cold today, isn't it."
+            ]
+          ]
+        },
+        {
+          "h": "Just, only: л",
+          "p": "<b>л</b> (l) after a word means \"just, only\" or picks that word out: <b>Би л мэднэ</b> only I know; <b>одоо л</b> only now; <b>нэг л</b> just one.",
+          "examples": [
+            ["Энийг {би л} мэднэ.", "Eniig bi l medne.", "Only I know this."],
+            [
+              "Тэр {одоо л} ирлээ.",
+              "Ter odoo l irlee.",
+              "He's only just come."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Битгий мартаарай ＿.",
+          "en": "Don't forget, mind you.",
+          "options": ["шүү", "даа", "л", "уу"],
+          "answer": "шүү",
+          "why": "Warning: шүү."
+        },
+        {
+          "q": "Өнөөдөр хүйтэн байна ＿.",
+          "en": "It's cold today, isn't it.",
+          "options": ["шүү", "даа", "л", "вэ"],
+          "answer": "даа",
+          "why": "Appeal: даа."
+        },
+        {
+          "q": "Энийг би ＿ мэднэ.",
+          "en": "Only I know this.",
+          "options": ["шүү", "даа", "л", "ч"],
+          "answer": "л",
+          "why": "Only: л."
+        },
+        {
+          "q": "Тэр одоо ＿ ирлээ.",
+          "en": "He's only just come.",
+          "options": ["шүү", "бол", "гэж", "л"],
+          "answer": "л",
+          "why": "Only now: одоо л."
+        }
+      ]
+    },
+    {
+      "id": "since-before",
+      "title": "Since and before: хойш, өмнө",
+      "particle": "-снаас хойш -хаас өмнө",
+      "summary": "-снаас хойш means \"since (doing)\"; -хаас өмнө means \"before (doing)\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-снаас хойш</b> (-snaas khoish): <b>Монголд ирснээс хойш</b> since coming to Mongolia. With a year: <b>2020 оноос хойш</b> since 2020.",
+          "examples": [
+            [
+              "{Монголд ирснээс хойш} би монгол хэл сурч байна.",
+              "Mongold irsnees khoish bi mongol khel surch baina.",
+              "I've been learning Mongolian since I came to Mongolia."
+            ],
+            [
+              "Би {2020 оноос хойш} энд амьдарч байна.",
+              "Bi 2020 onoos khoish end amidarch baina.",
+              "I've lived here since 2020."
+            ]
+          ]
+        },
+        {
+          "h": "Before",
+          "p": "<b>-хаас өмнө</b> (-khaas ömnö) before: <b>унтахаасаа өмнө</b> before going to sleep (one's own). With a noun: <b>хоолны өмнө</b> before the meal.",
+          "examples": [
+            [
+              "{Унтахаасаа өмнө} шүдээ угаа.",
+              "Untakhaasaa ömnö shüdee ugaa.",
+              "Brush your teeth before you go to sleep."
+            ],
+            [
+              "Эмээ {хоолны өмнө} уугаарай.",
+              "Emee khoolny ömnö uugaarai.",
+              "Take the medicine before meals."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Монголд ирснээс ＿ би монгол хэл сурч байна.",
+          "en": "I've learned Mongolian since coming.",
+          "options": ["хойш", "өмнө", "хүртэл", "дараа"],
+          "answer": "хойш",
+          "why": "Since: -снаас хойш."
+        },
+        {
+          "q": "Унтахаасаа ＿ шүдээ угаа.",
+          "en": "Brush your teeth before sleeping.",
+          "options": ["хойш", "өмнө", "дараа", "хүртэл"],
+          "answer": "өмнө",
+          "why": "Before: -хаас өмнө."
+        },
+        {
+          "q": "Би 2020 ＿ хойш энд амьдарч байна.",
+          "en": "I've lived here since 2020.",
+          "options": ["онд", "оны", "оноос", "онтой"],
+          "answer": "оноос",
+          "why": "A year + ablative + хойш."
+        },
+        {
+          "q": "Эмээ хоолны ＿ уугаарай.",
+          "en": "Take the medicine before meals.",
+          "options": ["хойш", "дотор", "дээр", "өмнө"],
+          "answer": "өмнө",
+          "why": "Before a noun: -ны өмнө."
+        }
+      ]
+    },
+    {
+      "id": "while",
+      "title": "While: -нгаа, -нгуут",
+      "particle": "-нгаа -нгээ -нгуут",
+      "summary": "-нгаа / -нгээ means \"while (the same person) does\": хоол идэнгээ, while eating. -нгуут means \"the moment (something happens)\". (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Add <b>-нгаа</b> by vowel harmony: <b>явангаа</b> while walking, <b>идэнгээ</b> while eating, <b>ярингаа</b> while talking. The subject is the same as in the main verb.",
+          "examples": [
+            [
+              "Тэр {хоол идэнгээ} зурагт үздэг.",
+              "Ter khool idengee zuragt üzdeg.",
+              "He watches TV while eating."
+            ],
+            [
+              "Бид {алхангаа} ярилцсан.",
+              "Bid alkhangaa yariltssan.",
+              "We talked as we walked."
+            ]
+          ]
+        },
+        {
+          "h": "The moment: -нгуут",
+          "p": "<b>-нгуут</b> / <b>-нгүүт</b> is \"as soon as\", often with a sense of surprise: <b>гэртээ ирэнгүүт утас дуугарав</b> the moment I got home, the phone rang.",
+          "examples": [
+            [
+              "Гэртээ {ирэнгүүт} утас дуугарав.",
+              "Gertee irengüüt utas duugarav.",
+              "The moment I got home, the phone rang."
+            ],
+            [
+              "Намайг {харангуут} тэр инээмсэглэв.",
+              "Namaig kharanguut ter ineemseglev.",
+              "As soon as she saw me, she smiled."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Тэр хоол ＿ зурагт үздэг.",
+          "en": "He watches TV while eating.",
+          "options": ["идэнгээ", "идэнгаа", "идээд", "идэхэд"],
+          "answer": "идэнгээ",
+          "why": "Front vowels: -нгээ."
+        },
+        {
+          "q": "Бид ＿ ярилцсан.",
+          "en": "We talked as we walked.",
+          "options": ["алхангээ", "алхангаа", "алхаад", "алхвал"],
+          "answer": "алхангаа",
+          "why": "Back vowels: -нгаа."
+        },
+        {
+          "q": "Гэртээ ＿ утас дуугарав.",
+          "en": "The moment I got home, the phone rang.",
+          "options": ["ирэнгээ", "ирвэл", "ирэнгүүт", "ирээд"],
+          "answer": "ирэнгүүт",
+          "why": "The moment: -нгуут."
+        },
+        {
+          "q": "Намайг ＿ тэр инээмсэглэв.",
+          "en": "As soon as she saw me, she smiled.",
+          "options": ["харангаа", "харвал", "харах", "харангуут"],
+          "answer": "харангуут",
+          "why": "-нгуут = as soon as."
+        }
+      ]
+    },
+    {
+      "id": "tag-questions",
+      "title": "Right? биз, биз дээ",
+      "particle": "биз биз дээ шүү дээ",
+      "summary": "биз means \"I suppose, surely\"; биз дээ asks for agreement, \"…, right?\"; шүү дээ means \"you know\". (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>биз</b> (biz) is a confident guess: <b>Чи ядарсан биз</b> you must be tired. <b>биз дээ?</b> turns it into a tag question.",
+          "examples": [
+            ["Чи {ядарсан биз}.", "Chi yadarsan biz.", "You must be tired."],
+            [
+              "Та монгол хүн {биз дээ}?",
+              "Ta mongol khün biz dee?",
+              "You're Mongolian, right?"
+            ]
+          ]
+        },
+        {
+          "h": "You know: шүү дээ",
+          "p": "<b>шүү дээ</b> reminds the listener of something they should know: <b>Би чамд хэлсэн шүү дээ</b> I told you, you know.",
+          "examples": [
+            [
+              "Би чамд {хэлсэн шүү дээ}.",
+              "Bi chamd khelsen shüü dee.",
+              "I told you, you know."
+            ],
+            [
+              "Маргааш амралт {шүү дээ}.",
+              "Margaash amralt shüü dee.",
+              "Tomorrow's a holiday, you know."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Чи ядарсан ＿.",
+          "en": "You must be tired.",
+          "options": ["биз", "шүү", "уу", "вэ"],
+          "answer": "биз",
+          "why": "Confident guess: биз."
+        },
+        {
+          "q": "Та монгол хүн биз ＿?",
+          "en": "You're Mongolian, right?",
+          "options": ["шүү", "дээ", "л", "ч"],
+          "answer": "дээ",
+          "why": "Tag: биз дээ."
+        },
+        {
+          "q": "Би чамд хэлсэн ＿ дээ.",
+          "en": "I told you, you know.",
+          "options": ["биз", "уу", "шүү", "бэ"],
+          "answer": "шүү",
+          "why": "You know: шүү дээ."
+        },
+        {
+          "q": "Маргааш амралт шүү ＿.",
+          "en": "Tomorrow's a holiday, you know.",
+          "options": ["даа", "л", "биз", "дээ"],
+          "answer": "дээ",
+          "why": "шүү дээ."
+        }
+      ]
+    },
+    {
+      "id": "inferential-past",
+      "title": "It turns out: -жээ, -чээ",
+      "particle": "-жээ -чээ",
+      "summary": "-жээ / -чээ is a past you didn't see happen: you found out or were told. It's also the tense of folk tales. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>-жээ</b> (or <b>-чээ</b> after в, г, р, с) marks news or discovery: <b>Тэр явчихжээ</b> it turns out he's gone. Compare <b>явсан</b>, a plain past.",
+          "examples": [
+            [
+              "Тэр аль хэдийн {явчихжээ}.",
+              "Ter ali khediin yavchikhjee.",
+              "It turns out he'd already left."
+            ],
+            [
+              "Шөнө цас {орчээ}.",
+              "Shönö tsas orchee.",
+              "It snowed in the night (I see now)."
+            ]
+          ]
+        },
+        {
+          "h": "Once upon a time",
+          "p": "Tales and history use <b>-жээ</b> throughout: <b>Эрт урьдын цагт нэгэн хаан байжээ</b> once upon a time there was a king.",
+          "examples": [
+            [
+              "Эрт урьдын цагт нэгэн хаан {байжээ}.",
+              "Ert uridyn tsagt negen khaan baijee.",
+              "Once upon a time there was a king."
+            ],
+            [
+              "Тэр хаан гурван хүүтэй {байжээ}.",
+              "Ter khaan gurvan khüütei baijee.",
+              "That king had three sons."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Тэр аль хэдийн ＿.",
+          "en": "It turns out he'd already left.",
+          "options": ["явчихжээ", "явна", "явъя", "явах"],
+          "answer": "явчихжээ",
+          "why": "Discovered past: -жээ."
+        },
+        {
+          "q": "Шөнө цас ＿.",
+          "en": "It snowed in the night (I see now).",
+          "options": ["оржээ", "орчээ", "орно", "орох"],
+          "answer": "орчээ",
+          "why": "After р: -чээ."
+        },
+        {
+          "q": "Эрт урьдын цагт нэгэн хаан ＿.",
+          "en": "Once upon a time there was a king.",
+          "options": ["байна", "байх", "байжээ", "байя"],
+          "answer": "байжээ",
+          "why": "Tales use -жээ."
+        },
+        {
+          "q": "Хаан гурван хүүтэй ＿.",
+          "en": "The king had three sons.",
+          "options": ["байна уу", "байвал", "байгаасай", "байжээ"],
+          "answer": "байжээ",
+          "why": "Narrative past: -жээ."
+        }
+      ]
+    },
+    {
+      "id": "past-tenses",
+      "title": "Which past: -сан, -лаа, -в",
+      "particle": "-сан -лаа -в",
+      "summary": "-сан is the general past; -лаа is a fresh past the speaker saw or just did; -в is the brisk past of stories and news. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>-сан</b> for facts and things long ago: <b>Тэр 1990 онд төрсөн</b>. <b>-лаа</b> for what just happened: <b>Би сая ирлээ</b> I just arrived.",
+          "examples": [
+            [
+              "Тэр 1990 онд {төрсөн}.",
+              "Ter 1990 ond törsön.",
+              "He was born in 1990."
+            ],
+            ["Би сая {ирлээ}.", "Bi saya irlee.", "I've just arrived."]
+          ]
+        },
+        {
+          "h": "Story past: -в",
+          "p": "<b>-в</b> (-v) moves a story along and is common in writing and news: <b>Тэр хаалгыг онгойлгов</b> he opened the door.",
+          "examples": [
+            [
+              "Тэр хаалгыг {онгойлгов}.",
+              "Ter khaalgyg ongoilgov.",
+              "He opened the door."
+            ],
+            [
+              "Ерөнхийлөгч өчигдөр Токио руу {нисэв}.",
+              "Yerönkhiilögch öchigdör Tokio ruu nisev.",
+              "The president flew to Tokyo yesterday."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Тэр 1990 онд ＿.",
+          "en": "He was born in 1990.",
+          "options": ["төрсөн", "төрлөө", "төрнө", "төрөх"],
+          "answer": "төрсөн",
+          "why": "A past fact: -сан."
+        },
+        {
+          "q": "Би сая ＿.",
+          "en": "I've just arrived.",
+          "options": ["ирсэн байх", "ирлээ", "ирнэ", "ирэх"],
+          "answer": "ирлээ",
+          "why": "Fresh past: -лаа."
+        },
+        {
+          "q": "Тэр хаалгыг ＿.",
+          "en": "He opened the door.",
+          "options": ["онгойлгох", "онгойлгоно", "онгойлгов", "онгойлгоё"],
+          "answer": "онгойлгов",
+          "why": "Story past: -в."
+        },
+        {
+          "q": "Ерөнхийлөгч Токио руу ＿.",
+          "en": "The president flew to Tokyo.",
+          "options": ["нисэх", "нисье", "нисээсэй", "нисэв"],
+          "answer": "нисэв",
+          "why": "News past: -в."
+        }
+      ]
+    },
+    {
+      "id": "the-more",
+      "title": "The more … the more: -х тусам",
+      "particle": "-х тусам -х бүр",
+      "summary": "-х тусам means \"the more one does …\": сурах тусам, the more you study. -х бүр means \"every time\". (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>-х тусам</b> (-kh tusam): <b>Сурах тусам амархан болдог</b> the more you study, the easier it gets.",
+          "examples": [
+            [
+              "{Сурах тусам} амархан болдог.",
+              "Surakh tusam amarkhan boldog.",
+              "The more you study, the easier it gets."
+            ],
+            [
+              "{Их идэх тусам} таргална.",
+              "Ikh idekh tusam targalna.",
+              "The more you eat, the fatter you get."
+            ]
+          ]
+        },
+        {
+          "h": "Every time: -х бүр",
+          "p": "<b>бүр</b> (bür) means \"every\": <b>өдөр бүр</b> every day; after a verb, <b>ирэх бүр</b> every time (someone) comes.",
+          "examples": [
+            [
+              "Тэр {ирэх бүрдээ} бэлэг авчирдаг.",
+              "Ter irekh bürdee beleg avchirdag.",
+              "Every time he comes he brings a present."
+            ],
+            [
+              "Би {өдөр бүр} гүйдэг.",
+              "Bi ödör bür güideg.",
+              "I run every day."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Сурах ＿ амархан болдог.",
+          "en": "The more you study, the easier it gets.",
+          "options": ["тусам", "бүр", "хүртэл", "тулд"],
+          "answer": "тусам",
+          "why": "The more: -х тусам."
+        },
+        {
+          "q": "Тэр ирэх ＿ бэлэг авчирдаг.",
+          "en": "Every time he comes he brings a present.",
+          "options": ["тусам", "бүрдээ", "хойш", "өмнө"],
+          "answer": "бүрдээ",
+          "why": "Every time: -х бүр."
+        },
+        {
+          "q": "Би өдөр ＿ гүйдэг.",
+          "en": "I run every day.",
+          "options": ["тусам", "бол", "бүр", "ч"],
+          "answer": "бүр",
+          "why": "Every: бүр."
+        },
+        {
+          "q": "Их ＿ тусам таргална.",
+          "en": "The more you eat, the fatter you get.",
+          "options": ["идсэн", "идээд", "идэж", "идэх"],
+          "answer": "идэх",
+          "why": "-х тусам."
+        }
+      ]
+    },
+    {
+      "id": "benefactive",
+      "title": "For someone: -ж өгөх, -аач",
+      "particle": "-ж өгөх -аад өгөөч",
+      "summary": "-ж өгөх (or -аад өгөх) means \"do for someone\"; -аач / -ээч is a friendly \"please\". (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>өгөх</b> (give) after a converb: <b>зураг авч өгөх</b> take a picture for someone. Asking: <b>туслаад өгөөч</b> please help me.",
+          "examples": [
+            [
+              "Би чамд {зураг авч өгье}.",
+              "Bi chamd zurag avch ögye.",
+              "I'll take a picture for you."
+            ],
+            [
+              "Надад {туслаад өгөөч}.",
+              "Nadad tuslaad ögööch.",
+              "Please help me."
+            ]
+          ]
+        },
+        {
+          "h": "Friendly please: -аач",
+          "p": "<b>-аач / -ээч / -ооч / -өөч</b> is a warm request between people who know each other: <b>Хүлээгээч</b> wait a sec, please.",
+          "examples": [
+            [
+              "Жоохон {хүлээгээч}.",
+              "Jookhon khüleegeech.",
+              "Wait a moment, please."
+            ],
+            [
+              "Хаалгаа {онгойлгоод өгөөч}.",
+              "Khaalgaa ongoilgood ögööch.",
+              "Could you open the door for me?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Би чамд зураг авч ＿.",
+          "en": "I'll take a picture for you.",
+          "options": ["өгье", "авъя", "ирье", "үзье"],
+          "answer": "өгье",
+          "why": "For someone: -ж өгөх."
+        },
+        {
+          "q": "Надад туслаад ＿.",
+          "en": "Please help me.",
+          "options": ["өгсөн", "өгөөч", "өгөх", "өгвөл"],
+          "answer": "өгөөч",
+          "why": "Please do it for me: -аад өгөөч."
+        },
+        {
+          "q": "Жоохон ＿.",
+          "en": "Wait a moment, please.",
+          "options": ["хүлээсэн", "хүлээх", "хүлээгээч", "хүлээвэл"],
+          "answer": "хүлээгээч",
+          "why": "Friendly please: -ээч."
+        },
+        {
+          "q": "Хаалгаа онгойлгоод ＿.",
+          "en": "Could you open the door for me?",
+          "options": ["үзээч", "байгаач", "ирээч", "өгөөч"],
+          "answer": "өгөөч",
+          "why": "-аад өгөөч."
+        }
+      ]
+    },
+    {
+      "id": "completion-chikh",
+      "title": "Done, or done by mistake: -чих",
+      "particle": "-чих -чихлаа",
+      "summary": "-чих after a converb stem marks an action as done and over, often by accident or quickly: мартчихлаа, I went and forgot. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Stem + <b>-чих</b>: <b>мартчихлаа</b> (I) forgot, <b>хоцорчихлоо</b> (I'm) late, <b>идчихсэн</b> (has) eaten it up.",
+          "examples": [
+            [
+              "Би түлхүүрээ {мартчихлаа}.",
+              "Bi tülkhüüree martchikhlaa.",
+              "I forgot my keys."
+            ],
+            [
+              "Хүүхэд бялууг {идчихсэн}.",
+              "Khüükhed byaluug idchikhsen.",
+              "The child has eaten up the cake."
+            ]
+          ]
+        },
+        {
+          "h": "Get it done",
+          "p": "In requests and plans, <b>-чих</b> means \"just get it done\": <b>Хурдан идчих</b> eat up quickly; <b>Хийчихье</b> let's get it done.",
+          "examples": [
+            [
+              "Хоолоо хурдан {идчих}.",
+              "Khooloo khurdan idchikh.",
+              "Eat up quickly."
+            ],
+            [
+              "Энэ ажлыг өнөөдөр {хийчихье}.",
+              "Ene ajlyg önöödör khiichikhye.",
+              "Let's get this job done today."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Би түлхүүрээ ＿.",
+          "en": "I forgot my keys.",
+          "options": ["мартчихлаа", "мартъя", "мартах", "мартвал"],
+          "answer": "мартчихлаа",
+          "why": "Done by mistake: -чих."
+        },
+        {
+          "q": "Хүүхэд бялууг ＿.",
+          "en": "The child has eaten the whole cake.",
+          "options": ["идэх", "идчихсэн", "идье", "идвэл"],
+          "answer": "идчихсэн",
+          "why": "All gone: -чих."
+        },
+        {
+          "q": "Хоолоо хурдан ＿.",
+          "en": "Eat up quickly.",
+          "options": ["идчихсэн", "идэхгүй", "идчих", "идээсэй"],
+          "answer": "идчих",
+          "why": "Get it done: -чих."
+        },
+        {
+          "q": "Энэ ажлыг ＿.",
+          "en": "Let's get this job done.",
+          "options": ["хийчихсэн", "хийх", "хийвэл", "хийчихье"],
+          "answer": "хийчихье",
+          "why": "-чих + let's."
+        }
+      ]
+    },
+    {
+      "id": "still-keep",
+      "title": "Still, keep on: -саар",
+      "particle": "-саар байна -саар байгаад",
+      "summary": "-саар / -сээр / -соор + байна means \"still doing, keep on doing\"; -саар байгаад means \"by keeping on\". (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>-саар байна</b>: <b>Бороо орсоор байна</b> it's still raining; <b>Тэр хүлээсээр байв</b> she kept on waiting.",
+          "examples": [
+            [
+              "Бороо {орсоор} байна.",
+              "Boroo orsoor baina.",
+              "It's still raining."
+            ],
+            [
+              "Тэр намайг {хүлээсээр} байв.",
+              "Ter namaig khüleeseer baiv.",
+              "She kept waiting for me."
+            ]
+          ]
+        },
+        {
+          "h": "By keeping on",
+          "p": "<b>-саар байгаад</b> means \"by keeping at it\": <b>Давтсаар байгаад сурна</b> you learn by repeating.",
+          "examples": [
+            [
+              "{Давтсаар байгаад} сурна.",
+              "Davtsaar baigaad surna.",
+              "You learn by repeating again and again."
+            ],
+            [
+              "Тэр {ярьсаар} байгаад унтчихав.",
+              "Ter yarisaar baigaad untchikhav.",
+              "He talked and talked until he fell asleep."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Бороо ＿ байна.",
+          "en": "It's still raining.",
+          "options": ["орсоор", "орсаар", "орох", "орвол"],
+          "answer": "орсоор",
+          "why": "о-stem: -соор."
+        },
+        {
+          "q": "Тэр намайг ＿ байв.",
+          "en": "She kept waiting for me.",
+          "options": ["хүлээсаар", "хүлээсээр", "хүлээх", "хүлээвэл"],
+          "answer": "хүлээсээр",
+          "why": "Front vowels: -сээр."
+        },
+        {
+          "q": "Давтсаар ＿ сурна.",
+          "en": "You learn by repeating.",
+          "options": ["байна", "байх", "байгаад", "байвал"],
+          "answer": "байгаад",
+          "why": "By keeping on: -саар байгаад."
+        },
+        {
+          "q": "Тэр ажилласаар ＿.",
+          "en": "He's still working.",
+          "options": ["байя", "байх уу", "байгаасай", "байна"],
+          "answer": "байна",
+          "why": "Still: -саар байна."
+        }
+      ]
+    },
+    {
+      "id": "reciprocal",
+      "title": "Each other: -лц, -лд",
+      "particle": "-лц -лд хамтран",
+      "summary": "-лц / -лд on a verb makes it mutual: ярих → ярилцах, talk together; маргах → маргалдах, argue with each other. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>-лц</b>: <b>ярилцах</b> talk with each other, <b>хэлэлцэх</b> discuss, <b>тусалцах</b> help each other. <b>-лд</b>: <b>маргалдах</b> argue, <b>зодолдох</b> fight.",
+          "examples": [
+            [
+              "Бид удаан {ярилцсан}.",
+              "Bid udaan yariltssan.",
+              "We talked for a long time."
+            ],
+            [
+              "Тэд юуны төлөө {маргалдсан} бэ?",
+              "Ted yuuny tölöö margaldsan be?",
+              "What did they argue about?"
+            ]
+          ]
+        },
+        {
+          "h": "Together: хамтран, хамт",
+          "p": "<b>хамтран</b> (khamtran) jointly, <b>хамт</b> (khamt) together; <b>-тай хамт</b> together with.",
+          "examples": [
+            [
+              "Хоёр улс {хамтран} ажиллана.",
+              "Khoyor uls khamtran ajillana.",
+              "The two countries will work together."
+            ],
+            [
+              "Асуудлыг хурлаар {хэлэлцэв}.",
+              "Asuudlyg khurlaar khelelstsev.",
+              "The matter was discussed at the meeting."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Бид удаан ＿.",
+          "en": "We talked for a long time.",
+          "options": ["ярилцсан", "ярьсан", "ярих", "ярья"],
+          "answer": "ярилцсан",
+          "why": "Talk together: ярилцах."
+        },
+        {
+          "q": "Тэд ＿.",
+          "en": "They argued with each other.",
+          "options": ["маргасан", "маргалдсан", "маргах", "маргая"],
+          "answer": "маргалдсан",
+          "why": "Mutual: маргалдах."
+        },
+        {
+          "q": "Хоёр улс ＿ ажиллана.",
+          "en": "The two countries will work together.",
+          "options": ["хамгийн", "хамаагүй", "хамтран", "хамаг"],
+          "answer": "хамтран",
+          "why": "Jointly: хамтран."
+        },
+        {
+          "q": "Асуудлыг хурлаар ＿.",
+          "en": "The matter was discussed at the meeting.",
+          "options": ["хэлэв", "хэлье", "хэлэх", "хэлэлцэв"],
+          "answer": "хэлэлцэв",
+          "why": "Discuss: хэлэлцэх."
+        }
+      ]
+    },
+    {
+      "id": "about-according",
+      "title": "About and according to: тухай, дагуу",
+      "particle": "-ын тухай -ын дагуу -аар",
+      "summary": "-ын тухай means \"about\"; -ын дагуу means \"according to, in line with\"; the instrumental -аар can mean \"according to\" a source. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>тухай</b> (tukhai) about: <b>Монголын тухай ном</b> a book about Mongolia. <b>дагуу</b> (daguu) in line with: <b>хуулийн дагуу</b> according to the law.",
+          "examples": [
+            [
+              "Би {Монголын тухай} ном уншиж байна.",
+              "Bi Mongolyn tukhai nom unshij baina.",
+              "I'm reading a book about Mongolia."
+            ],
+            [
+              "Энэ {хуулийн дагуу} хориотой.",
+              "Ene khuuliin daguu khoriotoi.",
+              "This is forbidden by law."
+            ]
+          ]
+        },
+        {
+          "h": "According to a source: -аар",
+          "p": "The instrumental marks a source: <b>цаг агаарын мэдээгээр</b> according to the weather forecast; <b>миний бодлоор</b> in my opinion.",
+          "examples": [
+            [
+              "{Цаг агаарын мэдээгээр} маргааш цас орно.",
+              "Tsag agaaryn medeegeer margaash tsas orno.",
+              "According to the forecast, it will snow tomorrow."
+            ],
+            [
+              "{Миний бодлоор} энэ зөв.",
+              "Minii bodloor ene zöv.",
+              "In my opinion this is right."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Би Монголын ＿ ном уншиж байна.",
+          "en": "I'm reading a book about Mongolia.",
+          "options": ["тухай", "дагуу", "хойш", "шиг"],
+          "answer": "тухай",
+          "why": "About: тухай."
+        },
+        {
+          "q": "Энэ хуулийн ＿ хориотой.",
+          "en": "This is forbidden by law.",
+          "options": ["тухай", "дагуу", "өмнө", "хажууд"],
+          "answer": "дагуу",
+          "why": "According to: дагуу."
+        },
+        {
+          "q": "Миний ＿ энэ зөв.",
+          "en": "In my opinion this is right.",
+          "options": ["бодол", "бодолд", "бодлоор", "бодлын"],
+          "answer": "бодлоор",
+          "why": "Source: instrumental -оор."
+        },
+        {
+          "q": "Цаг агаарын ＿ маргааш цас орно.",
+          "en": "According to the forecast, it'll snow tomorrow.",
+          "options": ["мэдээнд", "мэдээний", "мэдээ", "мэдээгээр"],
+          "answer": "мэдээгээр",
+          "why": "Source: -ээр."
+        }
+      ]
+    },
+    {
+      "id": "formal-requests",
+      "title": "Formal requests: -на уу, -хыг хүсье",
+      "particle": "-на уу -ж өгнө үү -хыг хүсье",
+      "summary": "-на уу / -нэ үү is the formal \"please\"; -ж өгнө үү is \"would you kindly\"; -хыг хүсье is \"we ask that\". (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>Сууна уу</b> please take a seat; <b>Хүлээнэ үү</b> please wait. More courteous: <b>тусалж өгнө үү</b> would you kindly help.",
+          "examples": [
+            ["Та {сууна уу}.", "Ta suuna uu.", "Please take a seat."],
+            [
+              "Надад {тусалж өгнө үү}.",
+              "Nadad tusalj ögnö üü.",
+              "Would you kindly help me."
+            ]
+          ]
+        },
+        {
+          "h": "Written requests: -хыг хүсье",
+          "p": "Notices and letters use <b>-хыг хүсье</b> or <b>-хыг хүсэж байна</b>: we request that …",
+          "examples": [
+            [
+              "Утсаа {унтраахыг хүсье}.",
+              "Utsaa untraakhyg khüsye.",
+              "Please switch off your phones."
+            ],
+            [
+              "Хариу {өгөхийг хүсэж байна}.",
+              "Khariu ögökhiig khüsej baina.",
+              "We kindly ask for a reply."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Та ＿ уу.",
+          "en": "Please take a seat.",
+          "options": ["сууна", "суу", "суусан", "суух"],
+          "answer": "сууна",
+          "why": "Formal please: -на уу."
+        },
+        {
+          "q": "Хүлээ＿ үү.",
+          "en": "Please wait.",
+          "options": ["на", "нэ", "х", "сэн"],
+          "answer": "нэ",
+          "why": "Front vowels: -нэ үү."
+        },
+        {
+          "q": "Надад тусалж ＿ үү.",
+          "en": "Would you kindly help me.",
+          "options": ["өгөөч", "өгье", "өгнө", "өгвөл"],
+          "answer": "өгнө",
+          "why": "-ж өгнө үү."
+        },
+        {
+          "q": "Утсаа унтраахыг ＿.",
+          "en": "Please switch off your phones.",
+          "options": ["хүсээсэй", "хүсэх", "хүсвэл", "хүсье"],
+          "answer": "хүсье",
+          "why": "Notices: -хыг хүсье."
+        }
+      ]
+    },
+    {
+      "id": "honorifics",
+      "title": "Respectful words: морилох, зооглох",
+      "particle": "морилох зооглох бие нас",
+      "summary": "When speaking to elders or guests, some everyday words are replaced by respectful ones: ирэх → морилох (come), идэх / уух → зооглох (eat, drink). (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>морилох</b> (morilokh) come, used for guests: <b>Морилно уу</b> welcome, please come in. <b>зооглох</b> (zooglokh) eat or drink: <b>Цайгаа зооглоно уу</b> please have your tea.",
+          "examples": [
+            [
+              "Манай гэрт {морилно уу}.",
+              "Manai gert morilno uu.",
+              "Welcome to our home."
+            ],
+            [
+              "Цайгаа {зооглоно уу}.",
+              "Tsaigaa zooglono uu.",
+              "Please have your tea."
+            ]
+          ]
+        },
+        {
+          "h": "Health, age, passing away",
+          "p": "To an elder: <b>Таны бие сайн уу?</b> how are you (literally \"is your body well?\"). <b>Та хэдэн настай вэ?</b> is the polite age question; <b>нас барах</b> is the respectful \"pass away\".",
+          "examples": [
+            [
+              "{Таны бие} сайн уу?",
+              "Tany biye sain uu?",
+              "How are you? (to an elder)"
+            ],
+            [
+              "Өвөө минь өнгөрсөн жил {нас барсан}.",
+              "Övöö mini öngörsön jil nas barsan.",
+              "My grandfather passed away last year."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Манай гэрт ＿ уу.",
+          "en": "Welcome to our home.",
+          "options": ["морилно", "ирнэ", "явна", "орно"],
+          "answer": "морилно",
+          "why": "Respectful come: морилох."
+        },
+        {
+          "q": "Цайгаа ＿ уу.",
+          "en": "Please have your tea.",
+          "options": ["иднэ", "зооглоно", "ууна", "ууя"],
+          "answer": "зооглоно",
+          "why": "Respectful eat or drink: зооглох."
+        },
+        {
+          "q": "Таны ＿ сайн уу?",
+          "en": "How are you? (to an elder)",
+          "options": ["нэр", "гэр", "бие", "нас"],
+          "answer": "бие",
+          "why": "Respectful greeting: таны бие."
+        },
+        {
+          "q": "Өвөө нь ＿ барсан.",
+          "en": "His grandfather passed away.",
+          "options": ["бие", "цаг", "жил", "нас"],
+          "answer": "нас",
+          "why": "Respectful \"die\": нас барах."
+        }
+      ]
+    },
+    {
+      "id": "hearsay",
+      "title": "They say: гэнэ, гэсэн",
+      "particle": "гэнэ гэсэн гэж байна",
+      "summary": "гэнэ at the end of a sentence means \"they say, I hear\"; гэсэн and гэж байна report what someone said. (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "Add <b>гэнэ</b> (gene) after a finished sentence: <b>Маргааш цас орно гэнэ</b> they say it'll snow tomorrow.",
+          "examples": [
+            [
+              "Маргааш цас орно {гэнэ}.",
+              "Margaash tsas orno gene.",
+              "They say it'll snow tomorrow."
+            ],
+            [
+              "Тэр гэрлэсэн {гэнэ}.",
+              "Ter gerlesen gene.",
+              "I hear she got married."
+            ]
+          ]
+        },
+        {
+          "h": "Reporting a source",
+          "p": "<b>гэсэн</b> reports one specific earlier statement; <b>гэж байна</b> reports what someone is saying now: <b>Багш өвдсөн гэж байна</b> the teacher says he's ill.",
+          "examples": [
+            [
+              "Бат маргааш ирнэ {гэсэн}.",
+              "Bat margaash irne gesen.",
+              "Bat said he'd come tomorrow."
+            ],
+            [
+              "Багш өвдсөн {гэж байна}.",
+              "Bagsh övdsön gej baina.",
+              "The teacher says he's ill."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Маргааш цас орно ＿.",
+          "en": "They say it'll snow tomorrow.",
+          "options": ["гэнэ", "гэж", "гэдэг", "гэвэл"],
+          "answer": "гэнэ",
+          "why": "Hearsay: гэнэ."
+        },
+        {
+          "q": "Тэр гэрлэсэн ＿.",
+          "en": "I hear she got married.",
+          "options": ["гэвч", "гэнэ", "гэвэл", "гэх"],
+          "answer": "гэнэ",
+          "why": "Hearsay: гэнэ."
+        },
+        {
+          "q": "Бат маргааш ирнэ ＿.",
+          "en": "Bat said he'd come tomorrow.",
+          "options": ["гэнэ үү", "гэдэг", "гэсэн", "гэх мэт"],
+          "answer": "гэсэн",
+          "why": "One earlier statement: гэсэн."
+        },
+        {
+          "q": "Багш өвдсөн гэж ＿.",
+          "en": "The teacher says he's ill.",
+          "options": ["байх", "байсан бол", "байгаасай", "байна"],
+          "answer": "байна",
+          "why": "Saying now: гэж байна."
+        }
+      ]
+    },
+    {
+      "id": "double-negation",
+      "title": "Can't help but: -хгүй байж болохгүй",
+      "particle": "-хгүй байж болохгүй -хаас өөр аргагүй",
+      "summary": "Two negatives make a strong positive: явахгүй байж болохгүй, I can't not go; -хаас өөр аргагүй, there's no choice but to. (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>-хгүй байж болохгүй</b> (literally \"not doing won't do\") means \"have to\": <b>Энэ хуралд очихгүй байж болохгүй</b> I can't skip this meeting.",
+          "examples": [
+            [
+              "Энэ хуралд {очихгүй байж болохгүй}.",
+              "Ene khurald ochikhgüi baij bolokhgüi.",
+              "I can't miss this meeting."
+            ],
+            [
+              "Тэр {мэдэхгүй биш}, хэлэхийг хүсэхгүй байна.",
+              "Ter medekhgüi bish, khelekhiig khüsekhgüi baina.",
+              "It's not that he doesn't know; he doesn't want to say."
+            ]
+          ]
+        },
+        {
+          "h": "No choice but to",
+          "p": "<b>-хаас өөр аргагүй</b> (-khaas öör argagüi) there's no other way than: <b>хүлээхээс өөр аргагүй</b> we have no choice but to wait.",
+          "examples": [
+            [
+              "Бидэнд {хүлээхээс өөр аргагүй}.",
+              "Bidend khüleekhees öör argagüi.",
+              "We have no choice but to wait."
+            ],
+            [
+              "Тэр {инээхээс өөр аргагүй} болов.",
+              "Ter ineekhees öör argagüi bolov.",
+              "He couldn't help laughing."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Энэ хуралд очихгүй байж ＿.",
+          "en": "I can't miss this meeting.",
+          "options": ["болохгүй", "болно", "байна", "чадна"],
+          "answer": "болохгүй",
+          "why": "Not doing won't do: -хгүй байж болохгүй."
+        },
+        {
+          "q": "Бидэнд хүлээхээс өөр ＿.",
+          "en": "We have no choice but to wait.",
+          "options": ["арга", "аргагүй", "хэрэгтэй", "ёстой"],
+          "answer": "аргагүй",
+          "why": "No choice: өөр аргагүй."
+        },
+        {
+          "q": "Тэр мэдэхгүй ＿, хэлэхийг хүсэхгүй байна.",
+          "en": "It's not that he doesn't know.",
+          "options": ["үгүй", "байхгүй", "биш", "болохгүй"],
+          "answer": "биш",
+          "why": "Not that: -хгүй биш."
+        },
+        {
+          "q": "Тэр инээхээс өөр аргагүй ＿.",
+          "en": "He couldn't help laughing.",
+          "options": ["байвал", "болъё", "болох уу", "болов"],
+          "answer": "болов",
+          "why": "Became unable to avoid: аргагүй болов."
+        }
+      ]
+    },
+    {
+      "id": "written-connectors",
+      "title": "Connectors of written Mongolian",
+      "particle": "тиймээс иймд гэтэл түүнчлэн нэгэнт",
+      "summary": "Formal writing links sentences with тиймээс (therefore), иймд (hence), гэтэл (yet, but then), түүнчлэн (moreover) and нэгэнт (since, now that). (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>тиймээс</b> (tiimees) therefore, <b>иймд</b> (iimd) hence (formal), <b>түүнчлэн</b> (tüünchlen) moreover, also.",
+          "examples": [
+            [
+              "Зам хаагдсан. {Тиймээс} бид хоцорсон.",
+              "Zam khaagdsan. Tiimees bid khotsorson.",
+              "The road was closed. That's why we were late."
+            ],
+            [
+              "Хурал хойшилсон. {Иймд} та бүхэнд мэдэгдье.",
+              "Khural khoishilson. Iimd ta bükhend medegdye.",
+              "The meeting has been postponed. We hereby inform you all."
+            ]
+          ]
+        },
+        {
+          "h": "Yet, and since",
+          "p": "<b>гэтэл</b> (getel) introduces something unexpected: \"but then\". <b>нэгэнт</b> (negent) means \"since, now that (it's already so)\".",
+          "examples": [
+            [
+              "Би түүнийг хүлээсэн. {Гэтэл} тэр ирсэнгүй.",
+              "Bi tüüniig khüleesen. Getel ter irsengüi.",
+              "I waited for him. But then he didn't come."
+            ],
+            [
+              "{Нэгэнт} ирсэн юм чинь хоол идээд яв.",
+              "Negent irsen yum chini khool ideed yav.",
+              "Now that you're here, stay and eat before you go."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Зам хаагдсан. ＿ бид хоцорсон.",
+          "en": "The road was closed. That's why we were late.",
+          "options": ["Тиймээс", "Гэтэл", "Нэгэнт", "Түүнчлэн"],
+          "answer": "Тиймээс",
+          "why": "Therefore: тиймээс."
+        },
+        {
+          "q": "Би хүлээсэн. ＿ тэр ирсэнгүй.",
+          "en": "I waited. But then he didn't come.",
+          "options": ["Иймд", "Гэтэл", "Тиймээс", "Түүнчлэн"],
+          "answer": "Гэтэл",
+          "why": "Unexpected turn: гэтэл."
+        },
+        {
+          "q": "＿ ирсэн юм чинь хоол идээд яв.",
+          "en": "Now that you're here, eat before you go.",
+          "options": ["Гэтэл", "Иймд", "Нэгэнт", "Харин"],
+          "answer": "Нэгэнт",
+          "why": "Now that: нэгэнт."
+        },
+        {
+          "q": "Тэр англи хэл мэднэ, ＿ хятад хэл ч мэднэ.",
+          "en": "She knows English, and moreover Chinese.",
+          "options": ["гэтэл", "иймд", "нэгэнт", "түүнчлэн"],
+          "answer": "түүнчлэн",
+          "why": "Moreover: түүнчлэн."
         }
       ]
     }
