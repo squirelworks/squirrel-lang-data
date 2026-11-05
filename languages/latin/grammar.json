@@ -5,30 +5,19 @@
     "Latin first grammar for the Grammar Learner. Written for this project.",
     "Examples are [Latin, word by word, English]; {braces} mark the point of the lesson.",
     "Drills are { q, en, options, answer, why }; ＿ is the blank.",
-    "",
-    "Sources (open / educational; attested Classical constructions — original example sentences):",
-    "- Allen and Greenough's New Latin Grammar (public domain / Ginn & Company via",
-    "  Perseus / Dickinsoned_Latin): genitive of possession, dative of indirect object,",
-    "  imperfect and perfect indicative formation, -ne / quis / quid / ubi / cūr",
-    "  questions, and nōn / nēmō / nihil negation.",
-    "- Wiktionary Latin lemmas and grammar notes (CC BY-SA): sum/esse, amāre, monēre,",
-    "  dare, vidēre; 1st/2nd-declension case endings; imperfect -bā-; perfect -vī/-uī",
-    "  stems and -ī -istī -it endings.",
-    "- Wikipedia “Latin grammar”, “Latin declension”, “Latin conjugation”",
-    "  (CC BY-SA) for beginner overview of cases, imperfect vs perfect, and enclitic -ne.",
-    "- In-repo languages/latin/reference.json cards (cases, first/second declension,",
-    "  imperfect, perfect, prepositions) — same beginner seam; examples here are original.",
-    "Lessons 1–6 unchanged; 7–12 deepen the same seam (genitive, dative, imperfect,",
-    "perfect, questions, negation). Long vowels marked with macrons as in lessons 1–6."
+    "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
+    "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
+    "72 lessons, from A1 to C1. Lessons 13–72 were added to cover the rest of the beginner path and the main intermediate and advanced points."
   ],
   "title": "Latin first grammar",
-  "intro": "Latin shows who does what by the endings of words, not by their order. A verb's ending tells you the subject, and a noun's ending tells you its job in the sentence. Lessons 1–6 cover “to be”, the present tense, subject and object endings, plurals, adjectives that agree, and the cases that follow prepositions. Lessons 7–12 add the genitive and dative, the imperfect and perfect, questions, and saying no. Long vowels are marked with macrons.",
+  "intro": "Latin shows who does what by the endings of words, not by their order. A verb's ending tells you the subject, and a noun's ending tells you its job in the sentence. The 72 lessons run from A1 to C1. They start with being, the present tense and the cases, then add the declensions, the future, the passive, participles and indirect statement, and end with the subjunctive, conditions, the gerundive and the sequence of tenses. Long vowels are marked with macrons.",
   "lessons": [
     {
       "id": "esse",
       "title": "Sum, es, est — “to be”",
       "particle": "sum",
-      "summary": "The verb “to be”, and why Latin needs no “I” or “he”.",
+      "summary": "The verb “to be”, and why Latin needs no “I” or “he”. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "The verb's ending already says who: <b>sum</b> “I am”, <b>es</b> “you are”, <b>est</b> “he, she, it is”. So the pronoun is usually left out. Latin has no word for “a” or “the”.",
@@ -102,7 +91,8 @@
       "id": "present",
       "title": "The present tense",
       "particle": "-ō -s -t",
-      "summary": "Six endings that say who does it.",
+      "summary": "Six endings that say who does it. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Take the stem and add the person ending: <b>-ō</b> (I), <b>-s</b> (you), <b>-t</b> (he/she), <b>-mus</b> (we), <b>-tis</b> (you all), <b>-nt</b> (they). For amāre “to love”: amō, amās, amat, amāmus, amātis, amant.",
@@ -174,7 +164,8 @@
       "id": "nom-acc",
       "title": "Subject and object",
       "particle": "-a / -am",
-      "summary": "The ending, not the order, says who does what.",
+      "summary": "The ending, not the order, says who does what. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "The subject is in the <b>nominative</b>, the object in the <b>accusative</b>. For nouns like puella: puella (subject), puell<b>am</b> (object). For nouns like servus: servus, serv<b>um</b>.",
@@ -255,7 +246,8 @@
       "id": "plural",
       "title": "Plurals",
       "particle": "-ae / -ī",
-      "summary": "More than one, as subject and as object.",
+      "summary": "More than one, as subject and as object. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Nouns like puella make the plural subject in <b>-ae</b> and object in <b>-ās</b>. Nouns like servus make <b>-ī</b> and <b>-ōs</b>. Neuter nouns like bellum have <b>-a</b> for both.",
@@ -324,7 +316,8 @@
       "id": "agreement",
       "title": "Adjectives agree",
       "particle": "bonus, bona, bonum",
-      "summary": "An adjective matches its noun in gender, number and case.",
+      "summary": "An adjective matches its noun in gender, number and case. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Adjectives like bonus have three sets of endings: <b>bonus</b> (masculine), <b>bona</b> (feminine), <b>bonum</b> (neuter). They copy the noun's gender, number and case, and usually follow the noun.",
@@ -393,7 +386,8 @@
       "id": "prepositions",
       "title": "Prepositions: towards and from",
       "particle": "ad / in / ex",
-      "summary": "Some take the accusative, some the ablative.",
+      "summary": "Some take the accusative, some the ablative. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Movement <b>towards</b> uses the accusative: <b>ad</b> (to), <b>in</b> (into), <b>per</b> (through). Position or movement <b>away</b> uses the ablative, which for puella nouns ends in <b>-ā</b> and for servus nouns in <b>-ō</b>: <b>in</b> (in, on), <b>ex</b> (out of), <b>ā/ab</b> (away from), <b>cum</b> (with).",
@@ -486,7 +480,8 @@
       "id": "genitive",
       "title": "The genitive — of, belonging to",
       "particle": "-ae / -ī",
-      "summary": "Whose? The ending marks the owner.",
+      "summary": "Whose? The ending marks the owner. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Possession and “of” use the <b>genitive</b>. Nouns like puella make it in <b>-ae</b> (puellae “of the girl”), nouns like servus in <b>-ī</b> (servī “of the slave”). It often comes next to the thing owned: liber puellae, “the girl's book”.",
@@ -572,7 +567,8 @@
       "id": "dative",
       "title": "The dative — to and for",
       "particle": "-ae / -ō",
-      "summary": "The person who receives or benefits.",
+      "summary": "The person who receives or benefits. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "The <b>dative</b> marks the person you give to, show to, or do something for. For puella nouns it ends in <b>-ae</b> (same spelling as the genitive, but the job is different): puellae librum dō, “I give the girl a book”. For servus nouns it ends in <b>-ō</b>: servō pecūniam dō.",
@@ -663,7 +659,8 @@
       "id": "imperfect",
       "title": "The imperfect — was doing, used to",
       "particle": "-bam -bās -bat",
-      "summary": "Ongoing or habitual action in the past.",
+      "summary": "Ongoing or habitual action in the past. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "The <b>imperfect</b> describes something that was going on or used to happen: “I was loving”, “they used to work”. Build it with <b>-bā-</b> plus person endings (note <b>-m</b> for “I”, not -ō): amābam, amābās, amābat, amābāmus, amābātis, amābant.",
@@ -745,7 +742,8 @@
       "id": "perfect",
       "title": "The perfect — did, have done",
       "particle": "-ī -istī -it",
-      "summary": "A finished action in the past.",
+      "summary": "A finished action in the past. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "The <b>perfect</b> is a single completed act: “I loved”, “I have seen”. Take the perfect stem (often with <b>-v-</b> or <b>-u-</b>: amāv-, monu-) and the special endings, the same for every verb: <b>-ī</b>, <b>-istī</b>, <b>-it</b>, <b>-imus</b>, <b>-istis</b>, <b>-ērunt</b>.",
@@ -822,7 +820,8 @@
       "id": "questions",
       "title": "Questions — -ne, quis, ubi, cūr",
       "particle": "-ne / quis / ubi",
-      "summary": "Yes/no with -ne; who, what, where, why.",
+      "summary": "Yes/no with -ne; who, what, where, why. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "A yes/no question often adds the little word <b>-ne</b> to the first word: <b>Estne</b> Marcus amīcus? “Is Marcus a friend?” Wh-questions use question words: <b>quis</b> “who?”, <b>quid</b> “what?”, <b>ubi</b> “where?”, <b>cūr</b> “why?”.",
@@ -888,7 +887,8 @@
       "id": "negation",
       "title": "Saying no — nōn, nēmō, nihil",
       "particle": "nōn / nēmō / nihil",
-      "summary": "Not, nobody, nothing.",
+      "summary": "Not, nobody, nothing. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Put <b>nōn</b> before the verb (or the word you deny): nōn veniō “I am not coming”, nōn est “it is not”. For people, <b>nēmō</b> means “nobody”; for things, <b>nihil</b> (or nīl) means “nothing”.",
@@ -963,6 +963,4114 @@
           "options": ["yes", "no", "a name", "a place"],
           "answer": "yes",
           "why": "nōnne questions expect agreement: “aren't you…?”"
+        }
+      ]
+    },
+    {
+      "id": "second-declension",
+      "title": "Second declension: servus, dominus",
+      "particle": "-us -um -ī -ō",
+      "summary": "Most masculine nouns in -us belong to the second declension: servus (subject), servum (object), servī (of the slave, or slaves), servō (to the slave). (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Singular: <b>servus</b> (subject), <b>servum</b> (object), <b>servī</b> (of), <b>servō</b> (to, for; by, with). Plural: <b>servī</b>, <b>servōs</b>, <b>servōrum</b>, <b>servīs</b>.",
+          "examples": [
+            [
+              "{Dominus} servum vocat.",
+              "master · slave · calls",
+              "The master calls the slave."
+            ],
+            [
+              "Dominus {servum} vocat.",
+              "master · slave · calls",
+              "The master calls the slave."
+            ]
+          ]
+        },
+        {
+          "h": "Words in -er",
+          "p": "Some keep -er in the subject: <b>puer</b> boy (puerum, puerī), <b>ager</b> field (agrum, agrī), <b>magister</b> teacher (magistrum).",
+          "examples": [
+            [
+              "{Puer} in agrō lūdit.",
+              "boy · in · field · plays",
+              "The boy plays in the field."
+            ],
+            [
+              "Magister {puerōs} docet.",
+              "teacher · boys · teaches",
+              "The teacher teaches the boys."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Amīcus ＿ videt.",
+          "en": "The friend sees the master.",
+          "options": ["dominum", "dominus", "dominī", "dominō"],
+          "answer": "dominum",
+          "why": "Object: -um."
+        },
+        {
+          "q": "＿ in agrō lūdit.",
+          "en": "The boy plays in the field.",
+          "options": ["Puerum", "Puer", "Puerī", "Puerō"],
+          "answer": "Puer",
+          "why": "Subject: puer."
+        },
+        {
+          "q": "Magister ＿ docet.",
+          "en": "The teacher teaches the boys.",
+          "options": ["puerī", "puerōrum", "puerōs", "puerīs"],
+          "answer": "puerōs",
+          "why": "Plural object: -ōs."
+        },
+        {
+          "q": "Equus ＿ est.",
+          "en": "The horse is the master's.",
+          "options": ["dominum", "dominus", "dominōs", "dominī"],
+          "answer": "dominī",
+          "why": "Of: -ī."
+        }
+      ]
+    },
+    {
+      "id": "third-declension",
+      "title": "Third declension: rēx, rēgis",
+      "particle": "-is -em -ī -e",
+      "summary": "The third declension has many subject forms, but the genitive always ends in -is, and the stem comes from it: rēx, rēgis (king); pater, patris (father). (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Learn the subject and the genitive together: <b>rēx, rēgis</b>; <b>mīles, mīlitis</b> soldier; <b>urbs, urbis</b> city. Object <b>-em</b>, dative <b>-ī</b>, ablative <b>-e</b>.",
+          "examples": [
+            [
+              "Mīlitēs {rēgem} laudant.",
+              "soldiers · king · praise",
+              "The soldiers praise the king."
+            ],
+            [
+              "Fīlius {patris} adest.",
+              "son · of father · is here",
+              "The father's son is here."
+            ]
+          ]
+        },
+        {
+          "h": "Plural",
+          "p": "Plural: <b>-ēs</b> (subject and object), <b>-um</b> or <b>-ium</b> (of), <b>-ibus</b> (to, by): <b>rēgēs, rēgum, rēgibus</b>.",
+          "examples": [
+            [
+              "{Mīlitēs} pugnant.",
+              "soldiers · fight",
+              "The soldiers are fighting."
+            ],
+            [
+              "Rōma {urbs} magna est.",
+              "Rome · city · great · is",
+              "Rome is a great city."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Mīlitēs ＿ laudant.",
+          "en": "The soldiers praise the king.",
+          "options": ["rēgem", "rēx", "rēgis", "rēgī"],
+          "answer": "rēgem",
+          "why": "Object: -em."
+        },
+        {
+          "q": "Fīlius ＿ adest.",
+          "en": "The father's son is here.",
+          "options": ["pater", "patris", "patrem", "patrī"],
+          "answer": "patris",
+          "why": "Of: -is."
+        },
+        {
+          "q": "＿ pugnant.",
+          "en": "The soldiers are fighting.",
+          "options": ["Mīles", "Mīlitem", "Mīlitēs", "Mīlitis"],
+          "answer": "Mīlitēs",
+          "why": "Plural subject: -ēs."
+        },
+        {
+          "q": "Dōnum ＿ dō.",
+          "en": "I give a gift to the king.",
+          "options": ["rēgem", "rēgis", "rēx", "rēgī"],
+          "answer": "rēgī",
+          "why": "To: -ī."
+        }
+      ]
+    },
+    {
+      "id": "neuters",
+      "title": "Neuter nouns: templum, nōmen",
+      "particle": "-um -a",
+      "summary": "Neuter nouns have the same form for subject and object, and their plural ends in -a: templum, templa; nōmen, nōmina. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Second declension: <b>templum</b> temple, <b>bellum</b> war, <b>dōnum</b> gift; plural <b>templa</b>. Third: <b>nōmen</b> name, <b>corpus</b> body, <b>tempus</b> time; plural <b>nōmina, corpora, tempora</b>.",
+          "examples": [
+            [
+              "{Templum} magnum est.",
+              "temple · big · is",
+              "The temple is big."
+            ],
+            [
+              "Rōmānī {templa} aedificant.",
+              "Romans · temples · build",
+              "The Romans build temples."
+            ]
+          ]
+        },
+        {
+          "h": "Subject and object look alike",
+          "p": "Context decides: <b>Bellum timēmus</b> we fear war. <b>Quod est nōmen tibi?</b> What's your name?",
+          "examples": [
+            ["{Bellum} timēmus.", "war · we fear", "We fear war."],
+            [
+              "Quod est {nōmen} tibi?",
+              "what · is · name · to you",
+              "What is your name?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ magnum est.",
+          "en": "The temple is big.",
+          "options": ["Templum", "Templus", "Templa", "Templī"],
+          "answer": "Templum",
+          "why": "Neuter subject: -um."
+        },
+        {
+          "q": "Rōmānī ＿ aedificant.",
+          "en": "The Romans build temples.",
+          "options": ["templōs", "templa", "templae", "templum"],
+          "answer": "templa",
+          "why": "Neuter plural: -a."
+        },
+        {
+          "q": "Quod est ＿ tibi?",
+          "en": "What is your name?",
+          "options": ["nōminem", "nōmina", "nōmen", "nōminis"],
+          "answer": "nōmen",
+          "why": "Neuter: same form as subject."
+        },
+        {
+          "q": "Pāx melior est quam ＿.",
+          "en": "Peace is better than war.",
+          "options": ["bellus", "bellī", "bellōs", "bellum"],
+          "answer": "bellum",
+          "why": "Neuter: bellum."
+        }
+      ]
+    },
+    {
+      "id": "ablative-uses",
+      "title": "The ablative: by, with, at",
+      "particle": "-ā -ō -e",
+      "summary": "Without a preposition, the ablative says how or with what (gladiō, with a sword) and when (hōrā tertiā, at the third hour). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "Means or tool: <b>gladiō pugnat</b> he fights with a sword, <b>manū</b> by hand. Manner with <b>cum</b>: <b>cum cūrā</b> with care.",
+          "examples": [
+            [
+              "Mīles {gladiō} pugnat.",
+              "soldier · with sword · fights",
+              "The soldier fights with a sword."
+            ],
+            [
+              "Epistulam {cum cūrā} scrībō.",
+              "letter · with care · I write",
+              "I write the letter carefully."
+            ]
+          ]
+        },
+        {
+          "h": "Time when",
+          "p": "The ablative also says when: <b>hōc annō</b> this year, <b>nocte</b> at night, <b>prīmā lūce</b> at dawn.",
+          "examples": [
+            [
+              "{Nocte} stellās vidēmus.",
+              "at night · stars · we see",
+              "At night we see the stars."
+            ],
+            [
+              "{Hōrā tertiā} veniō.",
+              "at hour · third · I come",
+              "I'll come at the third hour."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Mīles ＿ pugnat.",
+          "en": "The soldier fights with a sword.",
+          "options": ["gladiō", "gladium", "gladius", "gladiī"],
+          "answer": "gladiō",
+          "why": "Means: ablative."
+        },
+        {
+          "q": "＿ stellās vidēmus.",
+          "en": "At night we see the stars.",
+          "options": ["Noctem", "Nocte", "Nox", "Noctis"],
+          "answer": "Nocte",
+          "why": "Time when: ablative."
+        },
+        {
+          "q": "Epistulam cum ＿ scrībō.",
+          "en": "I write the letter carefully.",
+          "options": ["cūram", "cūra", "cūrā", "cūrae"],
+          "answer": "cūrā",
+          "why": "cum + ablative."
+        },
+        {
+          "q": "Hōc ＿ Rōmam vīsitāvī.",
+          "en": "I visited Rome this year.",
+          "options": ["annum", "annus", "annī", "annō"],
+          "answer": "annō",
+          "why": "Time when: ablative."
+        }
+      ]
+    },
+    {
+      "id": "vocative",
+      "title": "Calling someone: the vocative",
+      "particle": "Marce! amīce!",
+      "summary": "When you speak to someone, -us nouns end in -e and -ius names in -ī: Marce! Gāī! Other nouns look like the subject. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>Marcus → Marce</b>, <b>amīcus → amīce</b>, <b>dominus → domine</b>. <b>Gāius → Gāī</b>, <b>fīlius → fīlī</b>. <b>puella</b> stays <b>puella</b>.",
+          "examples": [
+            ["Salvē, {Marce}!", "hello · Marcus", "Hello, Marcus!"],
+            [
+              "Quid agis, {amīce}?",
+              "what · you do · friend",
+              "How are you, my friend?"
+            ]
+          ]
+        },
+        {
+          "h": "Others stay the same",
+          "p": "Third declension and -a nouns don't change: <b>Salvē, māter!</b> <b>Venī, puella!</b> <b>meus</b> becomes <b>mī</b>: <b>mī fīlī</b> my son.",
+          "examples": [
+            ["Valē, {māter}!", "goodbye · mother", "Goodbye, Mother!"],
+            [
+              "Venī hūc, {mī fīlī}!",
+              "come · here · my · son",
+              "Come here, my son!"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Salvē, ＿!",
+          "en": "Hello, Marcus!",
+          "options": ["Marce", "Marcus", "Marcum", "Marcī"],
+          "answer": "Marce",
+          "why": "Vocative: -e."
+        },
+        {
+          "q": "Quid agis, ＿?",
+          "en": "How are you, my friend?",
+          "options": ["amīcus", "amīce", "amīcum", "amīcō"],
+          "answer": "amīce",
+          "why": "Vocative: -e."
+        },
+        {
+          "q": "Venī hūc, mī ＿!",
+          "en": "Come here, my son!",
+          "options": ["fīlius", "fīlie", "fīlī", "fīlium"],
+          "answer": "fīlī",
+          "why": "-ius → -ī."
+        },
+        {
+          "q": "Valē, ＿!",
+          "en": "Goodbye, Mother!",
+          "options": ["mātrem", "mātris", "mātre", "māter"],
+          "answer": "māter",
+          "why": "Third declension: unchanged."
+        }
+      ]
+    },
+    {
+      "id": "imperatives",
+      "title": "Commands: amā, amāte",
+      "particle": "-ā -āte -e -ite",
+      "summary": "The command is the stem (amā! love!) or the stem + -te for several people (amāte!). \"Don't\" is nōlī / nōlīte + infinitive. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>amāre → amā, amāte</b>; <b>monēre → monē, monēte</b>; <b>dūcere → dūc, dūcite</b>; <b>audīre → audī, audīte</b>. Short irregulars: <b>dīc</b> say, <b>fac</b> do, <b>fer</b> carry.",
+          "examples": [
+            ["{Venī} hūc!", "come · here", "Come here!"],
+            ["{Audīte}, puerī!", "listen · boys", "Listen, boys!"]
+          ]
+        },
+        {
+          "h": "Don't: nōlī",
+          "p": "<b>nōlī</b> (one person) or <b>nōlīte</b> (several) + infinitive: <b>Nōlī timēre</b> don't be afraid.",
+          "examples": [
+            ["{Nōlī} timēre!", "don't · to fear", "Don't be afraid!"],
+            [
+              "{Nōlīte} clāmāre!",
+              "don't · to shout",
+              "Don't shout, all of you!"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ hūc!",
+          "en": "Come here! (to one)",
+          "options": ["Venī", "Venīte", "Venit", "Venīre"],
+          "answer": "Venī",
+          "why": "One person: the stem."
+        },
+        {
+          "q": "＿, puerī!",
+          "en": "Listen, boys!",
+          "options": ["Audī", "Audīte", "Audit", "Audīre"],
+          "answer": "Audīte",
+          "why": "Several: -te."
+        },
+        {
+          "q": "＿ timēre!",
+          "en": "Don't be afraid! (to one)",
+          "options": ["Nōlīte", "Nōn", "Nōlī", "Nē"],
+          "answer": "Nōlī",
+          "why": "Don't: nōlī + infinitive."
+        },
+        {
+          "q": "Nōlīte ＿!",
+          "en": "Don't shout!",
+          "options": ["clāmāte", "clāmā", "clāmant", "clāmāre"],
+          "answer": "clāmāre",
+          "why": "After nōlīte: infinitive."
+        }
+      ]
+    },
+    {
+      "id": "pronouns",
+      "title": "I, you, me, to me: ego, tū",
+      "particle": "ego tū mē tē mihi tibi",
+      "summary": "Personal pronouns change by case: ego (I), mē (me), mihi (to me); tū, tē, tibi. They are only used for emphasis as subjects. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ego, mē, meī, mihi, mē</b>; <b>tū, tē, tuī, tibi, tē</b>. Plural: <b>nōs, nōbīs</b>; <b>vōs, vōbīs</b>. \"With me\": <b>mēcum</b>, <b>tēcum</b>.",
+          "examples": [
+            ["Amīcus {mē} videt.", "friend · me · sees", "My friend sees me."],
+            [
+              "Librum {tibi} dō.",
+              "book · to you · I give",
+              "I'm giving you a book."
+            ]
+          ]
+        },
+        {
+          "h": "With me, with you",
+          "p": "<b>cum</b> is joined to the end: <b>mēcum</b> with me, <b>tēcum</b> with you, <b>nōbīscum</b> with us.",
+          "examples": [
+            ["Venī {mēcum}!", "come · with me", "Come with me!"],
+            [
+              "{Ego} labōrō, {tū} lūdis.",
+              "I · work · you · play",
+              "I'm working, you're playing."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Amīcus ＿ videt.",
+          "en": "My friend sees me.",
+          "options": ["mē", "ego", "mihi", "meī"],
+          "answer": "mē",
+          "why": "Object: mē."
+        },
+        {
+          "q": "Librum ＿ dō.",
+          "en": "I'm giving you a book.",
+          "options": ["tū", "tibi", "tē", "tuī"],
+          "answer": "tibi",
+          "why": "To you: tibi."
+        },
+        {
+          "q": "Venī ＿!",
+          "en": "Come with me!",
+          "options": ["cum ego", "mihi", "mēcum", "mē"],
+          "answer": "mēcum",
+          "why": "With me: mēcum."
+        },
+        {
+          "q": "Pater ＿ amat.",
+          "en": "Father loves us.",
+          "options": ["nōbīs", "nostrum", "ego", "nōs"],
+          "answer": "nōs",
+          "why": "Object: nōs."
+        }
+      ]
+    },
+    {
+      "id": "possessives",
+      "title": "My, your: meus, tuus",
+      "particle": "meus tuus noster vester",
+      "summary": "Possessives are adjectives and agree with the thing owned: meus amīcus, mea māter, meum nōmen. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>meus</b> my, <b>tuus</b> your, <b>noster</b> our, <b>vester</b> your (plural). They take the endings of bonus, bona, bonum.",
+          "examples": [
+            [
+              "{Mea} māter in hortō est.",
+              "my · mother · in · garden · is",
+              "My mother is in the garden."
+            ],
+            [
+              "Ubi est {tuus} liber?",
+              "where · is · your · book",
+              "Where is your book?"
+            ]
+          ]
+        },
+        {
+          "h": "His, her: eius and suus",
+          "p": "\"His / her\" is <b>eius</b> (of him / her) for someone else, and <b>suus</b> for the subject's own: <b>Marcus suum librum legit</b> Marcus reads his own book.",
+          "examples": [
+            [
+              "Marcus {suum} librum legit.",
+              "Marcus · his own · book · reads",
+              "Marcus reads his (own) book."
+            ],
+            [
+              "Marcus librum {eius} legit.",
+              "Marcus · book · of him · reads",
+              "Marcus reads his (someone else's) book."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ māter in hortō est.",
+          "en": "My mother is in the garden.",
+          "options": ["Mea", "Meus", "Meum", "Meī"],
+          "answer": "Mea",
+          "why": "Agrees with māter: mea."
+        },
+        {
+          "q": "Ubi est ＿ liber?",
+          "en": "Where is your book?",
+          "options": ["tua", "tuus", "tuum", "tuī"],
+          "answer": "tuus",
+          "why": "Agrees with liber: tuus."
+        },
+        {
+          "q": "＿ patria Rōma est.",
+          "en": "Our country is Rome.",
+          "options": ["Noster", "Nostrum", "Nostra", "Nostrī"],
+          "answer": "Nostra",
+          "why": "patria is feminine."
+        },
+        {
+          "q": "Marcus ＿ librum legit.",
+          "en": "Marcus reads his own book.",
+          "options": ["eius", "meum", "tuum", "suum"],
+          "answer": "suum",
+          "why": "His own: suus."
+        }
+      ]
+    },
+    {
+      "id": "is-ea-id",
+      "title": "He, she, it: is, ea, id",
+      "particle": "is ea id",
+      "summary": "is, ea, id means \"he, she, it\" or \"that\"; as an object it is eum, eam, id. eius means \"his, her\". (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>is, ea, id</b>; object <b>eum, eam, id</b>; of <b>eius</b>; to <b>eī</b>. Plural <b>eī, eae, ea</b>; object <b>eōs, eās, ea</b>.",
+          "examples": [
+            [
+              "Marcum videō; {eum} vocō.",
+              "Marcus · I see · him · I call",
+              "I see Marcus; I call him."
+            ],
+            [
+              "Iūlia adest; dōnum {eī} dō.",
+              "Julia · is here · gift · to her · I give",
+              "Julia is here; I give her a gift."
+            ]
+          ]
+        },
+        {
+          "h": "Their",
+          "p": "<b>eōrum / eārum</b> their (not the subject's). Before a noun, is means \"that\": <b>eō tempore</b> at that time.",
+          "examples": [
+            [
+              "Puerī lūdunt; mātrem {eōrum} videō.",
+              "boys · play · mother · of them · I see",
+              "The boys are playing; I see their mother."
+            ],
+            [
+              "{Eō} tempore Rōmae erāmus.",
+              "that · time · in Rome · we were",
+              "At that time we were in Rome."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Marcum videō; ＿ vocō.",
+          "en": "I see Marcus; I call him.",
+          "options": ["eum", "eam", "is", "eī"],
+          "answer": "eum",
+          "why": "Him: eum."
+        },
+        {
+          "q": "Iūlia adest; dōnum ＿ dō.",
+          "en": "Julia is here; I give her a gift.",
+          "options": ["eam", "eī", "ea", "eius"],
+          "answer": "eī",
+          "why": "To her: eī."
+        },
+        {
+          "q": "Puerī lūdunt; mātrem ＿ videō.",
+          "en": "I see their mother.",
+          "options": ["eius", "suam", "eōrum", "eōs"],
+          "answer": "eōrum",
+          "why": "Their: eōrum."
+        },
+        {
+          "q": "Iūliam videō; ＿ amō.",
+          "en": "I see Julia; I love her.",
+          "options": ["eum", "ea", "eī", "eam"],
+          "answer": "eam",
+          "why": "Her: eam."
+        }
+      ]
+    },
+    {
+      "id": "hic-ille",
+      "title": "This and that: hic, ille",
+      "particle": "hic haec hoc ille illa illud",
+      "summary": "hic, haec, hoc means \"this (here)\"; ille, illa, illud means \"that (there)\", and also \"the former\" or \"that famous\". (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>hic liber</b> this book, <b>haec puella</b> this girl, <b>hoc templum</b> this temple. Object: <b>hunc, hanc, hoc</b>.",
+          "examples": [
+            [
+              "{Hic} liber meus est.",
+              "this · book · mine · is",
+              "This book is mine."
+            ],
+            [
+              "{Haec} puella cantat.",
+              "this · girl · sings",
+              "This girl is singing."
+            ]
+          ]
+        },
+        {
+          "h": "That",
+          "p": "<b>ille, illa, illud</b>; object <b>illum, illam, illud</b>. <b>Alexander ille</b> the famous Alexander.",
+          "examples": [
+            [
+              "{Illa} urbs pulchra est.",
+              "that · city · beautiful · is",
+              "That city is beautiful."
+            ],
+            [
+              "Vidēsne {illum} montem?",
+              "do you see · that · mountain",
+              "Do you see that mountain?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ liber meus est.",
+          "en": "This book is mine.",
+          "options": ["Hic", "Haec", "Hoc", "Ille"],
+          "answer": "Hic",
+          "why": "liber is masculine: hic."
+        },
+        {
+          "q": "＿ puella cantat.",
+          "en": "This girl is singing.",
+          "options": ["Hic", "Haec", "Hoc", "Illud"],
+          "answer": "Haec",
+          "why": "puella is feminine: haec."
+        },
+        {
+          "q": "＿ templum vetus est.",
+          "en": "This temple is old.",
+          "options": ["Hic", "Haec", "Hoc", "Hunc"],
+          "answer": "Hoc",
+          "why": "Neuter: hoc."
+        },
+        {
+          "q": "Vidēsne ＿ montem?",
+          "en": "Do you see that mountain?",
+          "options": ["ille", "illa", "illud", "illum"],
+          "answer": "illum",
+          "why": "Masculine object: illum."
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "title": "Numbers: ūnus, duo, trēs",
+      "particle": "ūnus duo trēs prīmus",
+      "summary": "ūnus, duo and trēs change their endings; four to a hundred do not. Ordinals (prīmus, secundus) are ordinary adjectives. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ūnus</b> 1, <b>duo</b> 2, <b>trēs</b> 3, <b>quattuor</b> 4, <b>quīnque</b> 5, <b>sex</b> 6, <b>septem</b> 7, <b>octō</b> 8, <b>novem</b> 9, <b>decem</b> 10, <b>vīgintī</b> 20, <b>centum</b> 100, <b>mīlle</b> 1,000.",
+          "examples": [
+            [
+              "{Duo} puerī et {trēs} puellae adsunt.",
+              "two · boys · and · three · girls · are here",
+              "Two boys and three girls are here."
+            ],
+            [
+              "Annus {duodecim} mēnsēs habet.",
+              "year · twelve · months · has",
+              "A year has twelve months."
+            ]
+          ]
+        },
+        {
+          "h": "First, second",
+          "p": "<b>prīmus</b> first, <b>secundus</b> second, <b>tertius</b> third, <b>quārtus</b>, <b>quīntus</b>, <b>decimus</b> tenth. They agree like bonus.",
+          "examples": [
+            ["{Prīma} lūx est.", "first · light · is", "It is dawn."],
+            [
+              "Hōra {sexta} est.",
+              "hour · sixth · is",
+              "It's the sixth hour (noon)."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ puerī adsunt.",
+          "en": "Two boys are here.",
+          "options": ["Duo", "Ūnus", "Trēs", "Prīmus"],
+          "answer": "Duo",
+          "why": "Two: duo."
+        },
+        {
+          "q": "Annus ＿ mēnsēs habet.",
+          "en": "A year has twelve months.",
+          "options": ["decem", "duodecim", "vīgintī", "centum"],
+          "answer": "duodecim",
+          "why": "Twelve: duodecim."
+        },
+        {
+          "q": "Hōra ＿ est.",
+          "en": "It's the sixth hour.",
+          "options": ["sex", "sextus", "sexta", "sextum"],
+          "answer": "sexta",
+          "why": "hōra is feminine: sexta."
+        },
+        {
+          "q": "Hic est ＿ diēs.",
+          "en": "This is the first day.",
+          "options": ["ūnus", "prīma", "prīmum", "prīmus"],
+          "answer": "prīmus",
+          "why": "diēs is masculine here: prīmus."
+        }
+      ]
+    },
+    {
+      "id": "future",
+      "title": "The future tense: -bō, -am",
+      "particle": "-bō -bis -bit -am -ēs -et",
+      "summary": "First and second conjugations add -bō, -bis, -bit: amābō, I will love. Third and fourth use -am, -ēs, -et: dūcam, I will lead. (about A1–A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>amābō, amābis, amābit, amābimus, amābitis, amābunt</b>; <b>monēbō</b>. \"Be\": <b>erō, eris, erit</b>.",
+          "examples": [
+            [
+              "Crās Rōmam {nāvigābō}.",
+              "tomorrow · to Rome · I will sail",
+              "Tomorrow I'll sail to Rome."
+            ],
+            [
+              "Mox domī {erimus}.",
+              "soon · at home · we will be",
+              "Soon we'll be at home."
+            ]
+          ]
+        },
+        {
+          "h": "Third and fourth: -am, -ēs",
+          "p": "<b>dūcam, dūcēs, dūcet, dūcēmus, dūcētis, dūcent</b>; <b>audiam, audiēs, audiet</b>.",
+          "examples": [
+            [
+              "Epistulam crās {scrībam}.",
+              "letter · tomorrow · I will write",
+              "I'll write the letter tomorrow."
+            ],
+            ["Tē {audiēmus}.", "you · we will hear", "We will listen to you."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Crās Rōmam ＿.",
+          "en": "Tomorrow I'll sail to Rome.",
+          "options": ["nāvigābō", "nāvigō", "nāvigābam", "nāvigāvī"],
+          "answer": "nāvigābō",
+          "why": "1st conjugation future: -bō."
+        },
+        {
+          "q": "Mox domī ＿.",
+          "en": "Soon we'll be at home.",
+          "options": ["sumus", "erimus", "erāmus", "fuimus"],
+          "answer": "erimus",
+          "why": "Future of sum: erimus."
+        },
+        {
+          "q": "Epistulam crās ＿.",
+          "en": "I'll write the letter tomorrow.",
+          "options": ["scrībō", "scrībēbam", "scrībam", "scrībābō"],
+          "answer": "scrībam",
+          "why": "3rd conjugation future: -am."
+        },
+        {
+          "q": "Tē ＿.",
+          "en": "We will listen to you.",
+          "options": ["audīmus", "audiēbāmus", "audīvimus", "audiēmus"],
+          "answer": "audiēmus",
+          "why": "4th conjugation future: -ēmus."
+        }
+      ]
+    },
+    {
+      "id": "possum",
+      "title": "Can: possum",
+      "particle": "possum potes potest",
+      "summary": "possum (I can) is pot- + sum, followed by an infinitive: Natāre possum, I can swim. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>possum, potes, potest, possumus, potestis, possunt</b>. Past: <b>poteram</b> I could; <b>potuī</b> I was able.",
+          "examples": [
+            [
+              "Latīnē legere {possum}.",
+              "in Latin · to read · I can",
+              "I can read Latin."
+            ],
+            [
+              "{Potesne} mē adiuvāre?",
+              "can you · me · to help",
+              "Can you help me?"
+            ]
+          ]
+        },
+        {
+          "h": "Could not",
+          "p": "<b>Nōn possum</b> I can't. <b>Venīre nōn potuī</b> I couldn't come.",
+          "examples": [
+            [
+              "Hodiē venīre nōn {possum}.",
+              "today · to come · not · I can",
+              "I can't come today."
+            ],
+            [
+              "Herī venīre nōn {potuī}.",
+              "yesterday · to come · not · I was able",
+              "I couldn't come yesterday."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Latīnē legere ＿.",
+          "en": "I can read Latin.",
+          "options": ["possum", "potest", "possumus", "potes"],
+          "answer": "possum",
+          "why": "I can: possum."
+        },
+        {
+          "q": "＿ mē adiuvāre?",
+          "en": "Can you help me?",
+          "options": ["Possumne", "Potesne", "Potestne", "Possuntne"],
+          "answer": "Potesne",
+          "why": "You can: potes."
+        },
+        {
+          "q": "Herī venīre nōn ＿.",
+          "en": "I couldn't come yesterday.",
+          "options": ["possum", "poterō", "potuī", "potest"],
+          "answer": "potuī",
+          "why": "Perfect: potuī."
+        },
+        {
+          "q": "Puerī natāre ＿.",
+          "en": "The boys can swim.",
+          "options": ["potest", "possum", "potestis", "possunt"],
+          "answer": "possunt",
+          "why": "They can: possunt."
+        }
+      ]
+    },
+    {
+      "id": "volo-nolo",
+      "title": "Want, not want: volō, nōlō",
+      "particle": "volō nōlō mālō",
+      "summary": "volō (I want), nōlō (I don't want) and mālō (I prefer) are irregular and take an infinitive. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>volō, vīs, vult, volumus, vultis, volunt</b>. <b>nōlō</b> = nōn volō. <b>mālō</b> = magis volō.",
+          "examples": [
+            [
+              "Domum īre {volō}.",
+              "home · to go · I want",
+              "I want to go home."
+            ],
+            ["Quid {vīs}?", "what · you want", "What do you want?"]
+          ]
+        },
+        {
+          "h": "Don't want, prefer",
+          "p": "<b>Nōlō pugnāre</b> I don't want to fight. <b>Mālō legere quam scrībere</b> I'd rather read than write.",
+          "examples": [
+            [
+              "{Nōlō} pugnāre.",
+              "I don't want · to fight",
+              "I don't want to fight."
+            ],
+            [
+              "{Mālō} legere quam scrībere.",
+              "I prefer · to read · than · to write",
+              "I'd rather read than write."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Domum īre ＿.",
+          "en": "I want to go home.",
+          "options": ["volō", "vult", "vīs", "volunt"],
+          "answer": "volō",
+          "why": "I want: volō."
+        },
+        {
+          "q": "Quid ＿?",
+          "en": "What do you want?",
+          "options": ["volō", "vīs", "vult", "volumus"],
+          "answer": "vīs",
+          "why": "You want: vīs."
+        },
+        {
+          "q": "＿ pugnāre.",
+          "en": "I don't want to fight.",
+          "options": ["Nōlī", "Nōn", "Nōlō", "Mālō"],
+          "answer": "Nōlō",
+          "why": "Don't want: nōlō."
+        },
+        {
+          "q": "Mārcus pecūniam ＿.",
+          "en": "Marcus wants money.",
+          "options": ["volō", "vīs", "volunt", "vult"],
+          "answer": "vult",
+          "why": "He wants: vult."
+        }
+      ]
+    },
+    {
+      "id": "eo",
+      "title": "To go: eō, īre",
+      "particle": "eō īs it īre",
+      "summary": "eō (I go) is short and irregular: eō, īs, it, īmus, ītis, eunt. Its compounds are common: redeō (go back), exeō (go out). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>eō, īs, it, īmus, ītis, eunt</b>. Future <b>ībō</b>, perfect <b>iī</b>, imperative <b>ī! īte!</b>",
+          "examples": [
+            ["Ad forum {eō}.", "to · forum · I go", "I'm going to the forum."],
+            ["Quō {īs}?", "where to · you go", "Where are you going?"]
+          ]
+        },
+        {
+          "h": "Compounds",
+          "p": "<b>redeō</b> go back, <b>exeō</b> go out, <b>ineō</b> go in, <b>abeō</b> go away.",
+          "examples": [
+            [
+              "Crās {redībō}.",
+              "tomorrow · I will return",
+              "I'll come back tomorrow."
+            ],
+            ["{Abī}!", "go away", "Go away!"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ad forum ＿.",
+          "en": "I'm going to the forum.",
+          "options": ["eō", "it", "īs", "īre"],
+          "answer": "eō",
+          "why": "I go: eō."
+        },
+        {
+          "q": "Quō ＿?",
+          "en": "Where are you going?",
+          "options": ["eō", "īs", "it", "eunt"],
+          "answer": "īs",
+          "why": "You go: īs."
+        },
+        {
+          "q": "Puerī domum ＿.",
+          "en": "The boys are going home.",
+          "options": ["it", "īmus", "eunt", "īs"],
+          "answer": "eunt",
+          "why": "They go: eunt."
+        },
+        {
+          "q": "Crās ＿.",
+          "en": "I'll come back tomorrow.",
+          "options": ["redeō", "rediī", "redīre", "redībō"],
+          "answer": "redībō",
+          "why": "Future: redībō."
+        }
+      ]
+    },
+    {
+      "id": "debeo",
+      "title": "Must, ought: dēbeō",
+      "particle": "dēbeō + infinitive",
+      "summary": "dēbeō + infinitive means \"I must, I ought to\": Labōrāre dēbeō, I have to work. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>dēbeō, dēbēs, dēbet</b>, a normal second-conjugation verb. Past: <b>dēbuī</b> I had to, or I should have.",
+          "examples": [
+            [
+              "Hodiē labōrāre {dēbeō}.",
+              "today · to work · I must",
+              "I have to work today."
+            ],
+            [
+              "Parentēs honōrāre {dēbēmus}.",
+              "parents · to honour · we ought",
+              "We ought to honour our parents."
+            ]
+          ]
+        },
+        {
+          "h": "Other \"must\" words",
+          "p": "<b>necesse est</b> it is necessary: <b>Necesse est discere</b> one must learn. More later: <b>oportet</b> and the gerundive.",
+          "examples": [
+            [
+              "{Necesse est} discere.",
+              "necessary · is · to learn",
+              "It is necessary to learn."
+            ],
+            [
+              "Venīre {dēbuistī}.",
+              "to come · you ought",
+              "You should have come."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Hodiē labōrāre ＿.",
+          "en": "I have to work today.",
+          "options": ["dēbeō", "dēbet", "possum", "volō"],
+          "answer": "dēbeō",
+          "why": "I must: dēbeō."
+        },
+        {
+          "q": "Parentēs honōrāre ＿.",
+          "en": "We ought to honour our parents.",
+          "options": ["dēbētis", "dēbēmus", "dēbent", "dēbeō"],
+          "answer": "dēbēmus",
+          "why": "We ought: dēbēmus."
+        },
+        {
+          "q": "＿ est discere.",
+          "en": "It is necessary to learn.",
+          "options": ["Dēbet", "Potest", "Necesse", "Vult"],
+          "answer": "Necesse",
+          "why": "necesse est."
+        },
+        {
+          "q": "Venīre ＿.",
+          "en": "You should have come.",
+          "options": ["dēbēs", "dēbēbis", "dēbeō", "dēbuistī"],
+          "answer": "dēbuistī",
+          "why": "Past of dēbeō."
+        }
+      ]
+    },
+    {
+      "id": "conjugations",
+      "title": "The four conjugations",
+      "particle": "-āre -ēre -ere -īre",
+      "summary": "Verbs fall into four groups by their infinitive: amāre, monēre, dūcere, audīre. The group decides the vowel before the ending. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "1st <b>amāre</b>: amō, amās, amat. 2nd <b>monēre</b>: moneō, monēs, monet. 3rd <b>dūcere</b>: dūcō, dūcis, dūcit, dūcunt. 4th <b>audīre</b>: audiō, audīs, audit, audiunt.",
+          "examples": [
+            [
+              "Magister puerōs {monet}.",
+              "teacher · boys · warns",
+              "The teacher warns the boys."
+            ],
+            [
+              "Puerī magistrum {audiunt}.",
+              "boys · teacher · hear",
+              "The boys listen to the teacher."
+            ]
+          ]
+        },
+        {
+          "h": "Third conjugation -iō",
+          "p": "Some third-conjugation verbs keep -i-: <b>capiō, capis, capit, capiunt</b> (take), <b>faciō</b> (do, make).",
+          "examples": [
+            ["Quid {facis}?", "what · you do", "What are you doing?"],
+            [
+              "Mīlitēs urbem {capiunt}.",
+              "soldiers · city · take",
+              "The soldiers take the city."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Magister puerōs ＿.",
+          "en": "The teacher warns the boys.",
+          "options": ["monet", "monit", "monat", "moneit"],
+          "answer": "monet",
+          "why": "2nd conjugation: -et."
+        },
+        {
+          "q": "Puerī magistrum ＿.",
+          "en": "The boys listen to the teacher.",
+          "options": ["audint", "audiunt", "audent", "audant"],
+          "answer": "audiunt",
+          "why": "4th conjugation: -iunt."
+        },
+        {
+          "q": "Dux mīlitēs ＿.",
+          "en": "The general leads the soldiers.",
+          "options": ["dūcat", "dūcet", "dūcit", "dūcunt"],
+          "answer": "dūcit",
+          "why": "3rd conjugation present: -it."
+        },
+        {
+          "q": "Quid ＿?",
+          "en": "What are you doing?",
+          "options": ["faciēs", "faces", "facit", "facis"],
+          "answer": "facis",
+          "why": "faciō: facis."
+        }
+      ]
+    },
+    {
+      "id": "third-adjectives",
+      "title": "Adjectives like fortis",
+      "particle": "fortis forte ingēns",
+      "summary": "Third-declension adjectives have one form for masculine and feminine and another for neuter: fortis vir, fortis fēmina, forte animal. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>fortis, forte</b> brave, <b>omnis, omne</b> all, every, <b>facilis, facile</b> easy. One-form adjectives: <b>ingēns</b> huge, <b>fēlīx</b> lucky.",
+          "examples": [
+            [
+              "{Fortis} mīles pugnat.",
+              "brave · soldier · fights",
+              "The brave soldier fights."
+            ],
+            [
+              "{Omnēs} puerī adsunt.",
+              "all · boys · are here",
+              "All the boys are here."
+            ]
+          ]
+        },
+        {
+          "h": "Neuter and object",
+          "p": "Neuter <b>forte, omne, facile</b>; object masc./fem. <b>fortem</b>, plural <b>fortēs</b>, neuter plural <b>fortia, omnia</b>.",
+          "examples": [
+            ["Hoc {facile} est.", "this · easy · is", "This is easy."],
+            [
+              "{Omnia} vincit amor.",
+              "all things · conquers · love",
+              "Love conquers all."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ mīles pugnat.",
+          "en": "The brave soldier fights.",
+          "options": ["Fortis", "Forte", "Fortem", "Fortia"],
+          "answer": "Fortis",
+          "why": "Masculine: fortis."
+        },
+        {
+          "q": "Hoc ＿ est.",
+          "en": "This is easy.",
+          "options": ["facilis", "facile", "facilem", "facilia"],
+          "answer": "facile",
+          "why": "Neuter: facile."
+        },
+        {
+          "q": "＿ vincit amor.",
+          "en": "Love conquers all.",
+          "options": ["Omnis", "Omne", "Omnia", "Omnēs"],
+          "answer": "Omnia",
+          "why": "Neuter plural: omnia."
+        },
+        {
+          "q": "Fēminam ＿ videō.",
+          "en": "I see a brave woman.",
+          "options": ["fortis", "forte", "fortia", "fortem"],
+          "answer": "fortem",
+          "why": "Object: fortem."
+        }
+      ]
+    },
+    {
+      "id": "comparatives",
+      "title": "Bigger: -ior, quam",
+      "particle": "-ior -ius quam",
+      "summary": "The comparative adds -ior (neuter -ius): longus → longior, longer. \"Than\" is quam, or the ablative alone. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>altus → altior</b> higher, <b>fortis → fortior</b> braver. Irregular: <b>bonus → melior</b> better, <b>malus → peior</b> worse, <b>magnus → maior</b> bigger, <b>parvus → minor</b> smaller.",
+          "examples": [
+            [
+              "Marcus {altior} est {quam} Gāius.",
+              "Marcus · taller · is · than · Gaius",
+              "Marcus is taller than Gaius."
+            ],
+            [
+              "Pāx {melior} est quam bellum.",
+              "peace · better · is · than · war",
+              "Peace is better than war."
+            ]
+          ]
+        },
+        {
+          "h": "Than with the ablative",
+          "p": "Instead of quam, the thing compared can go in the ablative: <b>Marcus Gāiō altior est</b>.",
+          "examples": [
+            [
+              "Marcus {Gāiō} altior est.",
+              "Marcus · than Gaius · taller · is",
+              "Marcus is taller than Gaius."
+            ],
+            [
+              "Nihil est {lūce} clārius.",
+              "nothing · is · than light · brighter",
+              "Nothing is brighter than light."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Marcus ＿ est quam Gāius.",
+          "en": "Marcus is taller than Gaius.",
+          "options": ["altior", "altus", "altissimus", "altē"],
+          "answer": "altior",
+          "why": "Comparative: -ior."
+        },
+        {
+          "q": "Pāx ＿ est quam bellum.",
+          "en": "Peace is better than war.",
+          "options": ["bonior", "melior", "optima", "bona"],
+          "answer": "melior",
+          "why": "bonus → melior."
+        },
+        {
+          "q": "Marcus altior est ＿ Gāius.",
+          "en": "Marcus is taller than Gaius.",
+          "options": ["ut", "nam", "quam", "cum"],
+          "answer": "quam",
+          "why": "Than: quam."
+        },
+        {
+          "q": "Nihil est ＿ clārius.",
+          "en": "Nothing is brighter than light.",
+          "options": ["lūx", "lūcem", "lūcis", "lūce"],
+          "answer": "lūce",
+          "why": "Than: ablative."
+        }
+      ]
+    },
+    {
+      "id": "superlatives",
+      "title": "Biggest: -issimus",
+      "particle": "-issimus -llimus -rrimus",
+      "summary": "The superlative adds -issimus: altus → altissimus, highest, very high. Adjectives in -er add -rimus; a few in -lis add -limus. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>altissimus</b> highest, <b>fortissimus</b> bravest. <b>pulcher → pulcherrimus</b>, <b>facilis → facillimus</b>. Irregular: <b>optimus</b> best, <b>pessimus</b> worst, <b>maximus</b> biggest, <b>minimus</b> smallest.",
+          "examples": [
+            [
+              "Hic mōns {altissimus} est.",
+              "this · mountain · highest · is",
+              "This mountain is the highest."
+            ],
+            [
+              "Rōma urbs {pulcherrima} est.",
+              "Rome · city · most beautiful · is",
+              "Rome is a most beautiful city."
+            ]
+          ]
+        },
+        {
+          "h": "Of all",
+          "p": "\"Of\" a group is the genitive or <b>ē / ex</b> + ablative: <b>fortissimus omnium</b> the bravest of all.",
+          "examples": [
+            [
+              "Achillēs {fortissimus} omnium erat.",
+              "Achilles · bravest · of all · was",
+              "Achilles was the bravest of all."
+            ],
+            [
+              "Hic liber {optimus} est.",
+              "this · book · best · is",
+              "This book is the best."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Hic mōns ＿ est.",
+          "en": "This mountain is the highest.",
+          "options": ["altissimus", "altior", "altus", "altissime"],
+          "answer": "altissimus",
+          "why": "Superlative: -issimus."
+        },
+        {
+          "q": "Rōma urbs ＿ est.",
+          "en": "Rome is a most beautiful city.",
+          "options": ["pulchrissima", "pulcherrima", "pulchrior", "pulchra"],
+          "answer": "pulcherrima",
+          "why": "-er → -errimus."
+        },
+        {
+          "q": "Hic liber ＿ est.",
+          "en": "This book is the best.",
+          "options": ["bonissimus", "melior", "optimus", "bonus"],
+          "answer": "optimus",
+          "why": "bonus → optimus."
+        },
+        {
+          "q": "Achillēs fortissimus ＿ erat.",
+          "en": "Achilles was the bravest of all.",
+          "options": ["omnēs", "omnibus", "omnis", "omnium"],
+          "answer": "omnium",
+          "why": "Of all: genitive."
+        }
+      ]
+    },
+    {
+      "id": "adverbs",
+      "title": "Adverbs: -ē, -iter",
+      "particle": "-ē -iter",
+      "summary": "Adverbs come from adjectives: bonus-type adjectives add -ē (lātus → lātē, widely), third-declension ones add -iter (fortis → fortiter, bravely). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>clārus → clārē</b> clearly, <b>miser → miserē</b> wretchedly, <b>fortis → fortiter</b> bravely, <b>celer → celeriter</b> quickly. Irregular: <b>bene</b> well, <b>male</b> badly, <b>facile</b> easily.",
+          "examples": [
+            [
+              "Mīlitēs {fortiter} pugnant.",
+              "soldiers · bravely · fight",
+              "The soldiers fight bravely."
+            ],
+            [
+              "Marcus {bene} cantat.",
+              "Marcus · well · sings",
+              "Marcus sings well."
+            ]
+          ]
+        },
+        {
+          "h": "Comparing adverbs",
+          "p": "The comparative adverb ends in <b>-ius</b>, the superlative in <b>-issimē</b>: <b>celerius</b> faster, <b>celerrimē</b> very fast. <b>melius</b> better, <b>optimē</b> best.",
+          "examples": [
+            [
+              "Equus {celerius} currit quam canis.",
+              "horse · faster · runs · than · dog",
+              "The horse runs faster than the dog."
+            ],
+            [
+              "Iūlia {optimē} scrībit.",
+              "Julia · best · writes",
+              "Julia writes best."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Mīlitēs ＿ pugnant.",
+          "en": "The soldiers fight bravely.",
+          "options": ["fortiter", "fortis", "fortē", "fortem"],
+          "answer": "fortiter",
+          "why": "fortis → fortiter."
+        },
+        {
+          "q": "Marcus ＿ cantat.",
+          "en": "Marcus sings well.",
+          "options": ["bonē", "bene", "bonus", "bonum"],
+          "answer": "bene",
+          "why": "bonus → bene."
+        },
+        {
+          "q": "Equus ＿ currit quam canis.",
+          "en": "The horse runs faster than the dog.",
+          "options": ["celerior", "celer", "celerius", "celeriter"],
+          "answer": "celerius",
+          "why": "Comparative adverb: -ius."
+        },
+        {
+          "q": "Clāmā ＿!",
+          "en": "Shout clearly!",
+          "options": ["clārus", "clāriter", "clārum", "clārē"],
+          "answer": "clārē",
+          "why": "-us adjectives: -ē."
+        }
+      ]
+    },
+    {
+      "id": "pluperfect",
+      "title": "Had done: -eram",
+      "particle": "-eram -erās -erat",
+      "summary": "The pluperfect is the perfect stem + eram: amāveram, I had loved. It marks something already over before another past event. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Perfect stem + <b>-eram, -erās, -erat, -erāmus, -erātis, -erant</b>: <b>vēneram</b> I had come, <b>vīderat</b> he had seen.",
+          "examples": [
+            [
+              "Cum advēnī, amīcus iam {discesserat}.",
+              "when · I arrived · friend · already · had left",
+              "When I arrived, my friend had already left."
+            ],
+            [
+              "Librum, quem {lēgeram}, tibi dedī.",
+              "book · which · I had read · to you · I gave",
+              "I gave you the book I had read."
+            ]
+          ]
+        },
+        {
+          "h": "Before another past",
+          "p": "The pluperfect sets the earlier of two past events: <b>Postquam cēnāverant, dormīvērunt</b> once they had eaten, they slept.",
+          "examples": [
+            [
+              "Urbem, quam hostēs {cēperant}, recēpimus.",
+              "city · which · enemies · had taken · we took back",
+              "We retook the city the enemy had captured."
+            ],
+            [
+              "Numquam ante Rōmam {vīderam}.",
+              "never · before · Rome · I had seen",
+              "I had never seen Rome before."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Cum advēnī, amīcus iam ＿.",
+          "en": "When I arrived, my friend had already left.",
+          "options": ["discesserat", "discēdit", "discessit", "discēdet"],
+          "answer": "discesserat",
+          "why": "Had left: pluperfect."
+        },
+        {
+          "q": "Numquam ante Rōmam ＿.",
+          "en": "I had never seen Rome before.",
+          "options": ["vīdī", "vīderam", "videō", "vidēbō"],
+          "answer": "vīderam",
+          "why": "Perfect stem + -eram."
+        },
+        {
+          "q": "Urbem, quam hostēs ＿, recēpimus.",
+          "en": "We retook the city the enemy had captured.",
+          "options": ["capiunt", "cēpērunt", "cēperant", "capient"],
+          "answer": "cēperant",
+          "why": "They had: -erant."
+        },
+        {
+          "q": "Librum, quem ＿, tibi dedī.",
+          "en": "I gave you the book I had read.",
+          "options": ["legō", "legam", "lēgī", "lēgeram"],
+          "answer": "lēgeram",
+          "why": "I had: -eram."
+        }
+      ]
+    },
+    {
+      "id": "future-perfect",
+      "title": "Will have done: -erō",
+      "particle": "-erō -eris -erit",
+      "summary": "The future perfect is the perfect stem + -erō: amāverō, I will have loved. Latin uses it where English says \"when I have …\" or \"if I …\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-erō, -eris, -erit, -erimus, -eritis, -erint</b>: <b>vēnerō</b> I will have come, <b>fēcerit</b> he will have done.",
+          "examples": [
+            [
+              "Cum {advēnerō}, tibi scrībam.",
+              "when · I will have arrived · to you · I will write",
+              "I'll write to you when I arrive."
+            ],
+            [
+              "Sī hoc {fēceris}, laetus erō.",
+              "if · this · you will have done · happy · I will be",
+              "If you do this, I'll be happy."
+            ]
+          ]
+        },
+        {
+          "h": "Strict time order",
+          "p": "Latin is exact about time: the action finished first takes the future perfect, the later one the future.",
+          "examples": [
+            [
+              "Postquam {cēnāverimus}, ambulābimus.",
+              "after · we will have dined · we will walk",
+              "After we've had dinner, we'll go for a walk."
+            ],
+            [
+              "Quod {dīxeris}, faciam.",
+              "what · you will have said · I will do",
+              "I'll do whatever you say."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Cum ＿, tibi scrībam.",
+          "en": "I'll write to you when I arrive.",
+          "options": ["advēnerō", "adveniō", "advēnī", "advenīrem"],
+          "answer": "advēnerō",
+          "why": "Will have arrived: -erō."
+        },
+        {
+          "q": "Sī hoc ＿, laetus erō.",
+          "en": "If you do this, I'll be happy.",
+          "options": ["facis", "fēceris", "fēcistī", "faciēbās"],
+          "answer": "fēceris",
+          "why": "You will have: -eris."
+        },
+        {
+          "q": "Postquam ＿, ambulābimus.",
+          "en": "After we've had dinner, we'll walk.",
+          "options": ["cēnāmus", "cēnābāmus", "cēnāverimus", "cēnāvimus"],
+          "answer": "cēnāverimus",
+          "why": "We will have: -erimus."
+        },
+        {
+          "q": "Quod dīxeris, ＿.",
+          "en": "I'll do whatever you say.",
+          "options": ["fēcī", "faciō", "fēceram", "faciam"],
+          "answer": "faciam",
+          "why": "The later action: future."
+        }
+      ]
+    },
+    {
+      "id": "perfect-stems",
+      "title": "Irregular perfects: vēnī, vīdī, vīcī",
+      "particle": "vēnī vīdī vīcī dedī",
+      "summary": "Many common verbs have their own perfect stem, learned as the third principal part: veniō, venīre, vēnī. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>veniō → vēnī</b> came, <b>videō → vīdī</b> saw, <b>vincō → vīcī</b> conquered, <b>dō → dedī</b> gave, <b>faciō → fēcī</b> made, <b>capiō → cēpī</b> took, <b>dūcō → dūxī</b> led, <b>sum → fuī</b> was.",
+          "examples": [
+            [
+              "{Vēnī}, {vīdī}, {vīcī}.",
+              "I came · I saw · I conquered",
+              "I came, I saw, I conquered."
+            ],
+            [
+              "Pater mihi librum {dedit}.",
+              "father · to me · book · gave",
+              "Father gave me a book."
+            ]
+          ]
+        },
+        {
+          "h": "Endings",
+          "p": "The endings are always <b>-ī, -istī, -it, -imus, -istis, -ērunt</b>: <b>dūxī, dūxistī, dūxit</b>.",
+          "examples": [
+            [
+              "Caesar mīlitēs in Galliam {dūxit}.",
+              "Caesar · soldiers · into · Gaul · led",
+              "Caesar led the soldiers into Gaul."
+            ],
+            ["Quid {fēcistī}?", "what · you did", "What did you do?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿, vīdī, vīcī.",
+          "en": "I came, I saw, I conquered.",
+          "options": ["Vēnī", "Veniō", "Vēnit", "Venī"],
+          "answer": "Vēnī",
+          "why": "Perfect of veniō: vēnī."
+        },
+        {
+          "q": "Pater mihi librum ＿.",
+          "en": "Father gave me a book.",
+          "options": ["dat", "dedit", "dōnāvit dat", "dabit"],
+          "answer": "dedit",
+          "why": "Perfect of dō: dedit."
+        },
+        {
+          "q": "Caesar mīlitēs in Galliam ＿.",
+          "en": "Caesar led the soldiers into Gaul.",
+          "options": ["dūcit", "dūcēbat", "dūxit", "dūcet"],
+          "answer": "dūxit",
+          "why": "Perfect of dūcō: dūxit."
+        },
+        {
+          "q": "Quid ＿?",
+          "en": "What did you do?",
+          "options": ["facis", "faciēs", "fēcit", "fēcistī"],
+          "answer": "fēcistī",
+          "why": "Perfect of faciō, \"you\": fēcistī."
+        }
+      ]
+    },
+    {
+      "id": "passive-present",
+      "title": "Is done: -or, -ris, -tur",
+      "particle": "-or -ris -tur -ntur",
+      "summary": "The passive swaps the active endings: amat (loves) → amātur (is loved); amant → amantur. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>amor, amāris, amātur, amāmur, amāminī, amantur</b>. The doer, if named, is <b>ā / ab</b> + ablative for people, ablative alone for things.",
+          "examples": [
+            [
+              "Puella ā mātre {amātur}.",
+              "girl · by · mother · is loved",
+              "The girl is loved by her mother."
+            ],
+            [
+              "Urbs {oppugnātur}.",
+              "city · is attacked",
+              "The city is under attack."
+            ]
+          ]
+        },
+        {
+          "h": "Imperfect and future passive",
+          "p": "<b>amābātur</b> was being loved, <b>amābitur</b> will be loved. Infinitive: <b>amārī</b>, <b>dūcī</b> (to be loved, led).",
+          "examples": [
+            [
+              "Mūrus {aedificābātur}.",
+              "wall · was being built",
+              "The wall was being built."
+            ],
+            [
+              "Liber crās {legētur}.",
+              "book · tomorrow · will be read",
+              "The book will be read tomorrow."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Puella ā mātre ＿.",
+          "en": "The girl is loved by her mother.",
+          "options": ["amātur", "amat", "amāvit", "amābat"],
+          "answer": "amātur",
+          "why": "Passive: -tur."
+        },
+        {
+          "q": "Urbs ＿.",
+          "en": "The city is under attack.",
+          "options": ["oppugnat", "oppugnātur", "oppugnāvit", "oppugnant"],
+          "answer": "oppugnātur",
+          "why": "Passive present."
+        },
+        {
+          "q": "Puella ＿ mātre amātur.",
+          "en": "The girl is loved by her mother.",
+          "options": ["cum", "ad", "ā", "in"],
+          "answer": "ā",
+          "why": "By a person: ā / ab."
+        },
+        {
+          "q": "Mūrus ＿.",
+          "en": "The wall was being built.",
+          "options": ["aedificābat", "aedificātur", "aedificābitur", "aedificābātur"],
+          "answer": "aedificābātur",
+          "why": "Imperfect passive: -bātur."
+        }
+      ]
+    },
+    {
+      "id": "passive-perfect",
+      "title": "Was done: amātus est",
+      "particle": "-tus est -ta est",
+      "summary": "The perfect passive is the participle in -tus with sum: amātus est, he was loved; capta est, (the city) was taken. The participle agrees with the subject. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>amātus / amāta / amātum est</b> was loved; plural <b>amātī sunt</b>. Fourth principal part: <b>capiō … captus</b>, <b>videō … vīsus</b>.",
+          "examples": [
+            [
+              "Urbs ā Rōmānīs {capta est}.",
+              "city · by · Romans · taken · is",
+              "The city was taken by the Romans."
+            ],
+            [
+              "Mīlitēs {laudātī sunt}.",
+              "soldiers · praised · are",
+              "The soldiers were praised."
+            ]
+          ]
+        },
+        {
+          "h": "Had been: erat",
+          "p": "With <b>erat</b> it is pluperfect: <b>urbs capta erat</b> the city had been taken.",
+          "examples": [
+            [
+              "Epistula {scrīpta erat}.",
+              "letter · written · was",
+              "The letter had been written."
+            ],
+            [
+              "Templum {aedificātum est}.",
+              "temple · built · is",
+              "The temple was built."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Urbs ā Rōmānīs ＿ est.",
+          "en": "The city was taken by the Romans.",
+          "options": ["capta", "captus", "captum", "captī"],
+          "answer": "capta",
+          "why": "urbs is feminine: capta."
+        },
+        {
+          "q": "Mīlitēs laudātī ＿.",
+          "en": "The soldiers were praised.",
+          "options": ["est", "sunt", "erat", "sum"],
+          "answer": "sunt",
+          "why": "Plural: sunt."
+        },
+        {
+          "q": "Templum ＿ est.",
+          "en": "The temple was built.",
+          "options": ["aedificātus", "aedificāta", "aedificātum", "aedificātī"],
+          "answer": "aedificātum",
+          "why": "Neuter: -um."
+        },
+        {
+          "q": "Epistula scrīpta ＿.",
+          "en": "The letter had been written.",
+          "options": ["est", "erit", "sunt", "erat"],
+          "answer": "erat",
+          "why": "Had been: erat."
+        }
+      ]
+    },
+    {
+      "id": "deponents",
+      "title": "Passive in form, active in meaning: loquor",
+      "particle": "loquor sequor hortor",
+      "summary": "Deponent verbs have only passive endings but active meaning: loquor, I speak; sequor, I follow; hortor, I urge. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>loquor, loqueris, loquitur</b> speak; <b>sequor</b> follow; <b>hortor</b> urge; <b>proficīscor</b> set out; <b>morior</b> die. Infinitive: <b>loquī</b>, <b>hortārī</b>.",
+          "examples": [
+            ["Latīnē {loquor}.", "in Latin · I speak", "I speak Latin."],
+            [
+              "Canis dominum {sequitur}.",
+              "dog · master · follows",
+              "The dog follows its master."
+            ]
+          ]
+        },
+        {
+          "h": "Perfect",
+          "p": "Perfect: <b>locūtus sum</b> I spoke, <b>secūtus est</b> he followed, <b>profectī sunt</b> they set out.",
+          "examples": [
+            [
+              "Dux mīlitēs {hortātus est}.",
+              "general · soldiers · urged",
+              "The general urged on the soldiers."
+            ],
+            [
+              "Prīmā lūce {profectī sumus}.",
+              "at first · light · set out · we are",
+              "We set out at dawn."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Latīnē ＿.",
+          "en": "I speak Latin.",
+          "options": ["loquor", "loquō", "loquī", "loquitur"],
+          "answer": "loquor",
+          "why": "Deponent: passive ending, active meaning."
+        },
+        {
+          "q": "Canis dominum ＿.",
+          "en": "The dog follows its master.",
+          "options": ["sequit", "sequitur", "sequor", "sequī"],
+          "answer": "sequitur",
+          "why": "He follows: sequitur."
+        },
+        {
+          "q": "Dux mīlitēs ＿ est.",
+          "en": "The general urged on the soldiers.",
+          "options": ["hortāvit", "hortat", "hortātus", "hortārī"],
+          "answer": "hortātus",
+          "why": "Perfect: -tus est."
+        },
+        {
+          "q": "Prīmā lūce ＿ sumus.",
+          "en": "We set out at dawn.",
+          "options": ["profectus", "proficīscimus", "proficīscī", "profectī"],
+          "answer": "profectī",
+          "why": "Plural: profectī sumus."
+        }
+      ]
+    },
+    {
+      "id": "relative",
+      "title": "Who, which: quī, quae, quod",
+      "particle": "quī quae quod",
+      "summary": "The relative pronoun agrees with its noun in gender and number, but takes the case of its own clause: Puella quam vīdī, the girl whom I saw. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Subject: <b>quī</b> (m), <b>quae</b> (f), <b>quod</b> (n). Object: <b>quem, quam, quod</b>. Of: <b>cuius</b>; to: <b>cui</b>; by: <b>quō, quā</b>.",
+          "examples": [
+            [
+              "Vir {quī} venit pater meus est.",
+              "man · who · comes · father · my · is",
+              "The man who is coming is my father."
+            ],
+            [
+              "Puella {quam} vīdī pulchra erat.",
+              "girl · whom · I saw · beautiful · was",
+              "The girl I saw was beautiful."
+            ]
+          ]
+        },
+        {
+          "h": "Other cases",
+          "p": "<b>Amīcus cui librum dedī</b> the friend to whom I gave the book. <b>Urbs in quā habitō</b> the city in which I live.",
+          "examples": [
+            [
+              "Amīcus {cui} librum dedī abiit.",
+              "friend · to whom · book · I gave · left",
+              "The friend I gave the book to has left."
+            ],
+            [
+              "Urbs {in quā} habitō magna est.",
+              "city · in · which · I live · big · is",
+              "The city I live in is big."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Vir ＿ venit pater meus est.",
+          "en": "The man who is coming is my father.",
+          "options": ["quī", "quem", "quae", "quod"],
+          "answer": "quī",
+          "why": "Subject, masculine: quī."
+        },
+        {
+          "q": "Puella ＿ vīdī pulchra erat.",
+          "en": "The girl I saw was beautiful.",
+          "options": ["quae", "quam", "quem", "quod"],
+          "answer": "quam",
+          "why": "Object, feminine: quam."
+        },
+        {
+          "q": "Templum ＿ vidēs vetus est.",
+          "en": "The temple you see is old.",
+          "options": ["quem", "quam", "quod", "quī"],
+          "answer": "quod",
+          "why": "Neuter: quod."
+        },
+        {
+          "q": "Urbs in ＿ habitō magna est.",
+          "en": "The city I live in is big.",
+          "options": ["quam", "quae", "quō", "quā"],
+          "answer": "quā",
+          "why": "in + ablative, feminine: quā."
+        }
+      ]
+    },
+    {
+      "id": "fourth-fifth",
+      "title": "Fourth and fifth declensions: manus, rēs",
+      "particle": "-us -ūs -ēs -eī",
+      "summary": "Two smaller declensions: manus, manūs (hand) and diēs, diēī (day), rēs, reī (thing). They are rare but very common words. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Fourth: <b>manus, manum, manūs, manuī, manū</b>; also <b>exercitus</b> army, <b>domus</b> house, <b>senātus</b> senate. Most are masculine; manus and domus are feminine.",
+          "examples": [
+            [
+              "Caesar {exercitum} dūxit.",
+              "Caesar · army · led",
+              "Caesar led the army."
+            ],
+            [
+              "Hoc {manū} scrīpsī.",
+              "this · by hand · I wrote",
+              "I wrote this by hand."
+            ]
+          ]
+        },
+        {
+          "h": "Fifth: rēs, diēs",
+          "p": "<b>rēs, rem, reī, rē</b>; <b>diēs, diem, diēī, diē</b>. <b>rēs pūblica</b> the state; <b>rēs</b> can mean almost any \"thing, matter, affair\".",
+          "examples": [
+            [
+              "{Rēs pūblica} in perīculō est.",
+              "thing · public · in · danger · is",
+              "The state is in danger."
+            ],
+            [
+              "Multōs {diēs} mānsimus.",
+              "many · days · we stayed",
+              "We stayed many days."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Caesar ＿ dūxit.",
+          "en": "Caesar led the army.",
+          "options": ["exercitum", "exercitus", "exercitū", "exercitī"],
+          "answer": "exercitum",
+          "why": "Fourth declension object: -um."
+        },
+        {
+          "q": "Hoc ＿ scrīpsī.",
+          "en": "I wrote this by hand.",
+          "options": ["manum", "manū", "manus", "manuī"],
+          "answer": "manū",
+          "why": "Ablative: -ū."
+        },
+        {
+          "q": "＿ pūblica in perīculō est.",
+          "en": "The state is in danger.",
+          "options": ["Rem", "Reī", "Rēs", "Rē"],
+          "answer": "Rēs",
+          "why": "Subject: rēs."
+        },
+        {
+          "q": "Multōs ＿ mānsimus.",
+          "en": "We stayed many days.",
+          "options": ["diem", "diēī", "diē", "diēs"],
+          "answer": "diēs",
+          "why": "Plural object: diēs."
+        }
+      ]
+    },
+    {
+      "id": "place",
+      "title": "To, in, from a town: Rōmam, Rōmae, Rōmā",
+      "particle": "Rōmam Rōmae Rōmā domī",
+      "summary": "With names of towns and with domus, Latin uses no preposition: Rōmam (to Rome), Rōmae (in Rome), Rōmā (from Rome); domum, domī, domō. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "To: accusative <b>Rōmam</b>, <b>Athēnās</b>, <b>domum</b>. From: ablative <b>Rōmā</b>, <b>domō</b>. In: the locative <b>Rōmae</b>, <b>Corinthī</b>, <b>domī</b>, <b>rūrī</b> (in the country).",
+          "examples": [
+            ["{Rōmam} eō.", "to Rome · I go", "I'm going to Rome."],
+            [
+              "Pater {domī} est.",
+              "father · at home · is",
+              "Father is at home."
+            ]
+          ]
+        },
+        {
+          "h": "Countries need prepositions",
+          "p": "For countries and regions use <b>in, ad, ex</b>: <b>in Italiam</b>, <b>in Italiā</b>, <b>ex Italiā</b>.",
+          "examples": [
+            [
+              "{Rōmā} {Athēnās} nāvigāvimus.",
+              "from Rome · to Athens · we sailed",
+              "We sailed from Rome to Athens."
+            ],
+            [
+              "{In Graeciā} multa templa sunt.",
+              "in · Greece · many · temples · are",
+              "There are many temples in Greece."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ eō.",
+          "en": "I'm going to Rome.",
+          "options": ["Rōmam", "Ad Rōmam", "Rōmae", "Rōmā"],
+          "answer": "Rōmam",
+          "why": "To a town: accusative."
+        },
+        {
+          "q": "Pater ＿ est.",
+          "en": "Father is at home.",
+          "options": ["domum", "domī", "domō", "in domum"],
+          "answer": "domī",
+          "why": "At home: domī."
+        },
+        {
+          "q": "＿ habitō.",
+          "en": "I live in Rome.",
+          "options": ["Rōmam", "Rōmā", "Rōmae", "In Rōmam"],
+          "answer": "Rōmae",
+          "why": "In a town: locative."
+        },
+        {
+          "q": "＿ Graeciā multa templa sunt.",
+          "en": "There are many temples in Greece.",
+          "options": ["Ad", "Ā", "Ē", "In"],
+          "answer": "In",
+          "why": "Countries: in + ablative."
+        }
+      ]
+    },
+    {
+      "id": "time",
+      "title": "How long, when, within",
+      "particle": "ablative accusative",
+      "summary": "The ablative says when or within what time (tertiā hōrā, at the third hour; tribus diēbus, within three days); the accusative says how long (trēs hōrās, for three hours). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "When: <b>eō annō</b> in that year, <b>nocte</b> at night. Within: <b>paucīs diēbus</b> within a few days.",
+          "examples": [
+            [
+              "{Tribus diēbus} redībō.",
+              "within three · days · I will return",
+              "I'll be back within three days."
+            ],
+            [
+              "{Eō annō} Caesar mortuus est.",
+              "that · year · Caesar · died",
+              "In that year Caesar died."
+            ]
+          ]
+        },
+        {
+          "h": "For how long: accusative",
+          "p": "Duration takes the accusative: <b>multōs annōs</b> for many years, <b>tōtam noctem</b> all night.",
+          "examples": [
+            [
+              "{Tōtam noctem} labōrāvī.",
+              "whole · night · I worked",
+              "I worked all night."
+            ],
+            [
+              "{Decem annōs} Trōia obsessa est.",
+              "ten · years · Troy · was besieged",
+              "Troy was besieged for ten years."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ diēbus redībō.",
+          "en": "I'll be back within three days.",
+          "options": ["Tribus", "Trēs", "Trium", "Tria"],
+          "answer": "Tribus",
+          "why": "Within: ablative."
+        },
+        {
+          "q": "Tōtam ＿ labōrāvī.",
+          "en": "I worked all night.",
+          "options": ["nocte", "noctem", "noctis", "nox"],
+          "answer": "noctem",
+          "why": "Duration: accusative."
+        },
+        {
+          "q": "Decem ＿ Trōia obsessa est.",
+          "en": "Troy was besieged for ten years.",
+          "options": ["annīs", "annō", "annōs", "annōrum"],
+          "answer": "annōs",
+          "why": "How long: accusative."
+        },
+        {
+          "q": "Eō ＿ Caesar mortuus est.",
+          "en": "In that year Caesar died.",
+          "options": ["annum", "annī", "annus", "annō"],
+          "answer": "annō",
+          "why": "When: ablative."
+        }
+      ]
+    },
+    {
+      "id": "participles",
+      "title": "Participles: amāns, amātus",
+      "particle": "-ns -tus",
+      "summary": "The present participle (amāns, loving) and the perfect passive participle (amātus, having been loved) work as adjectives and shorten clauses. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Present active: <b>amāns, amantis</b>, like a third-declension adjective: <b>puer currēns</b> a running boy. It means \"while doing\".",
+          "examples": [
+            [
+              "Puerum {currentem} vīdī.",
+              "boy · running · I saw",
+              "I saw the boy running."
+            ],
+            [
+              "Mīles {moriēns} clāmāvit.",
+              "soldier · dying · shouted",
+              "The dying soldier shouted."
+            ]
+          ]
+        },
+        {
+          "h": "Perfect passive participle",
+          "p": "<b>-tus, -ta, -tum</b>: <b>urbs capta</b> the captured city. It often replaces a clause: <b>Hostēs victī fūgērunt</b> the enemy, (having been) beaten, fled.",
+          "examples": [
+            [
+              "Hostēs {victī} fūgērunt.",
+              "enemies · conquered · fled",
+              "Beaten, the enemy fled."
+            ],
+            [
+              "Librum {scrīptum} lēgī.",
+              "book · written · I read",
+              "I read the finished book."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Puerum ＿ vīdī.",
+          "en": "I saw the boy running.",
+          "options": ["currentem", "currēns", "cursum", "currere"],
+          "answer": "currentem",
+          "why": "Present participle, object: -ntem."
+        },
+        {
+          "q": "Hostēs ＿ fūgērunt.",
+          "en": "Beaten, the enemy fled.",
+          "options": ["vincentēs", "victī", "vīcērunt", "vincere"],
+          "answer": "victī",
+          "why": "Perfect passive participle, plural: victī."
+        },
+        {
+          "q": "Mīles ＿ clāmāvit.",
+          "en": "The dying soldier shouted.",
+          "options": ["mortuus", "morī", "moriēns", "moritur"],
+          "answer": "moriēns",
+          "why": "While dying: present participle."
+        },
+        {
+          "q": "Urbem ＿ incendērunt.",
+          "en": "They burned the captured city.",
+          "options": ["captus", "capientem", "capere", "captam"],
+          "answer": "captam",
+          "why": "Agrees with urbem: captam."
+        }
+      ]
+    },
+    {
+      "id": "ablative-absolute",
+      "title": "The ablative absolute",
+      "particle": "noun + participle in the ablative",
+      "summary": "A noun and a participle in the ablative, loosely attached to the sentence, give the setting: urbe captā, once the city was taken. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>Urbe captā, mīlitēs discessērunt</b> with the city taken, the soldiers left. Translate with \"when, after, since, although\".",
+          "examples": [
+            [
+              "{Urbe captā}, mīlitēs discessērunt.",
+              "city · taken · soldiers · left",
+              "When the city had been taken, the soldiers left."
+            ],
+            [
+              "{Sōle oriente}, profectī sumus.",
+              "sun · rising · set out · we are",
+              "We set out as the sun rose."
+            ]
+          ]
+        },
+        {
+          "h": "With no participle",
+          "p": "Two nouns or a noun and adjective also work: <b>Caesare duce</b> under Caesar's leadership, <b>mē invītō</b> against my will.",
+          "examples": [
+            [
+              "{Caesare duce}, Rōmānī vīcērunt.",
+              "Caesar · leader · Romans · won",
+              "Under Caesar's command, the Romans won."
+            ],
+            [
+              "{Mē invītō} abiit.",
+              "me · unwilling · he left",
+              "He left against my will."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Urbe ＿, mīlitēs discessērunt.",
+          "en": "When the city had been taken, the soldiers left.",
+          "options": ["captā", "capta", "captam", "captae"],
+          "answer": "captā",
+          "why": "Ablative absolute: ablative."
+        },
+        {
+          "q": "Sōle ＿, profectī sumus.",
+          "en": "We set out as the sun rose.",
+          "options": ["oriēns", "oriente", "ortum", "orīrī"],
+          "answer": "oriente",
+          "why": "Present participle, ablative: -nte."
+        },
+        {
+          "q": "＿ duce, Rōmānī vīcērunt.",
+          "en": "Under Caesar's command, the Romans won.",
+          "options": ["Caesar", "Caesarem", "Caesare", "Caesaris"],
+          "answer": "Caesare",
+          "why": "Ablative: Caesare."
+        },
+        {
+          "q": "Mē ＿ abiit.",
+          "en": "He left against my will.",
+          "options": ["invītus", "invītum", "invītī", "invītō"],
+          "answer": "invītō",
+          "why": "Ablative: invītō."
+        }
+      ]
+    },
+    {
+      "id": "infinitives",
+      "title": "Infinitives: to love, to have loved",
+      "particle": "-re -isse -ūrus esse",
+      "summary": "Latin has infinitives for every time: amāre (to love), amāvisse (to have loved), amātūrus esse (to be going to love); passive amārī, amātus esse. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Present <b>amāre</b>, perfect <b>amāvisse</b>, future <b>amātūrus esse</b>. Passive: <b>amārī</b>, <b>amātus esse</b>.",
+          "examples": [
+            ["Errāre hūmānum est.", "to err · human · is", "To err is human."],
+            [
+              "Hoc {fēcisse} gaudeō.",
+              "this · to have done · I rejoice",
+              "I'm glad to have done this."
+            ]
+          ]
+        },
+        {
+          "h": "Passive and future",
+          "p": "<b>Laudārī volō</b> I want to be praised. The future infinitive is used mainly in reported speech: <b>dīcit sē ventūrum esse</b>.",
+          "examples": [
+            [
+              "Omnēs {laudārī} volunt.",
+              "all · to be praised · want",
+              "Everyone wants to be praised."
+            ],
+            [
+              "{Vīcisse} satis est.",
+              "to have won · enough · is",
+              "It's enough to have won."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ hūmānum est.",
+          "en": "To err is human.",
+          "options": ["Errāre", "Errat", "Errāvisse est", "Errāns"],
+          "answer": "Errāre",
+          "why": "Present infinitive: -re."
+        },
+        {
+          "q": "Hoc ＿ gaudeō.",
+          "en": "I'm glad to have done this.",
+          "options": ["facere", "fēcisse", "factūrum", "faciō"],
+          "answer": "fēcisse",
+          "why": "Perfect infinitive: -isse."
+        },
+        {
+          "q": "Omnēs ＿ volunt.",
+          "en": "Everyone wants to be praised.",
+          "options": ["laudāre", "laudāvisse", "laudārī", "laudātur"],
+          "answer": "laudārī",
+          "why": "Passive infinitive: -ārī."
+        },
+        {
+          "q": "＿ satis est.",
+          "en": "It's enough to have won.",
+          "options": ["Vincere", "Victūrus", "Vīcit", "Vīcisse"],
+          "answer": "Vīcisse",
+          "why": "Perfect infinitive."
+        }
+      ]
+    },
+    {
+      "id": "indirect-statement",
+      "title": "He says that: accusative + infinitive",
+      "particle": "acc + inf",
+      "summary": "After verbs of saying, thinking and knowing, Latin puts the subject in the accusative and the verb in the infinitive: Dīcit puellam venīre, he says the girl is coming. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "No word for \"that\": <b>Sciō tē esse bonum</b> I know you are good. The infinitive's tense is relative to the main verb: present = same time, perfect = earlier, future = later.",
+          "examples": [
+            [
+              "Dīcit {puellam venīre}.",
+              "he says · girl · to come",
+              "He says the girl is coming."
+            ],
+            [
+              "Putō {tē errāre}.",
+              "I think · you · to err",
+              "I think you're wrong."
+            ]
+          ]
+        },
+        {
+          "h": "Earlier and later",
+          "p": "<b>Dīxit sē vēnisse</b> he said he had come. <b>Dīxit sē ventūrum esse</b> he said he would come. <b>sē</b> refers to the speaker.",
+          "examples": [
+            [
+              "Dīxit {sē vēnisse}.",
+              "he said · himself · to have come",
+              "He said he had come."
+            ],
+            [
+              "Spērō {tē ventūrum esse}.",
+              "I hope · you · to be about to come",
+              "I hope you'll come."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Dīcit ＿ venīre.",
+          "en": "He says the girl is coming.",
+          "options": ["puellam", "puella", "puellae", "puellā"],
+          "answer": "puellam",
+          "why": "Subject of the infinitive: accusative."
+        },
+        {
+          "q": "Putō tē ＿.",
+          "en": "I think you're wrong.",
+          "options": ["errās", "errāre", "errāre est", "errat"],
+          "answer": "errāre",
+          "why": "Indirect statement: infinitive."
+        },
+        {
+          "q": "Dīxit sē ＿.",
+          "en": "He said he had come.",
+          "options": ["venīre", "ventūrum", "vēnisse", "vēnit"],
+          "answer": "vēnisse",
+          "why": "Earlier: perfect infinitive."
+        },
+        {
+          "q": "Spērō tē ＿ esse.",
+          "en": "I hope you'll come.",
+          "options": ["vēnisse", "venīre", "veniēns", "ventūrum"],
+          "answer": "ventūrum",
+          "why": "Later: future infinitive."
+        }
+      ]
+    },
+    {
+      "id": "reflexive-ipse",
+      "title": "Self: sē, ipse, īdem",
+      "particle": "sē ipse īdem",
+      "summary": "sē is the reflexive \"himself, herself, themselves\"; ipse means \"himself\" for emphasis (the man himself); īdem means \"the same\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>sē</b> (object), <b>sibi</b> (to himself), <b>sēcum</b> (with himself): <b>Sē laudat</b> he praises himself. It points back to the subject.",
+          "examples": [
+            [
+              "Narcissus {sē} amābat.",
+              "Narcissus · himself · loved",
+              "Narcissus loved himself."
+            ],
+            [
+              "Librum {sēcum} portat.",
+              "book · with himself · he carries",
+              "He carries the book with him."
+            ]
+          ]
+        },
+        {
+          "h": "Himself, the same",
+          "p": "<b>ipse, ipsa, ipsum</b>: <b>Caesar ipse</b> Caesar himself. <b>īdem, eadem, idem</b> the same: <b>eōdem diē</b> on the same day.",
+          "examples": [
+            [
+              "Caesar {ipse} vēnit.",
+              "Caesar · himself · came",
+              "Caesar came in person."
+            ],
+            [
+              "{Eōdem} diē profectī sunt.",
+              "same · day · they set out",
+              "They set out on the same day."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Narcissus ＿ amābat.",
+          "en": "Narcissus loved himself.",
+          "options": ["sē", "eum", "ipse", "suī"],
+          "answer": "sē",
+          "why": "Reflexive: sē."
+        },
+        {
+          "q": "Librum ＿ portat.",
+          "en": "He carries the book with him.",
+          "options": ["cum sē", "sēcum", "eum", "sibi"],
+          "answer": "sēcum",
+          "why": "With himself: sēcum."
+        },
+        {
+          "q": "Caesar ＿ vēnit.",
+          "en": "Caesar came in person.",
+          "options": ["sē", "īdem", "ipse", "suus"],
+          "answer": "ipse",
+          "why": "Emphatic: ipse."
+        },
+        {
+          "q": "＿ diē profectī sunt.",
+          "en": "They set out on the same day.",
+          "options": ["Ipsō", "Suō", "Hōc ipse", "Eōdem"],
+          "answer": "Eōdem",
+          "why": "The same: īdem."
+        }
+      ]
+    },
+    {
+      "id": "conjunctions",
+      "title": "And, but, for: et, sed, nam, -que",
+      "particle": "et -que sed aut nam igitur",
+      "summary": "et and -que (stuck on the second word) mean \"and\"; sed \"but\"; aut \"or\"; nam \"for\"; igitur \"therefore\". (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>et</b> and; <b>-que</b> joins closely: <b>senātus populusque Rōmānus</b> the Senate and the Roman people. <b>et … et</b> both … and.",
+          "examples": [
+            [
+              "Marcus {et} Iūlia ambulant.",
+              "Marcus · and · Julia · walk",
+              "Marcus and Julia are walking."
+            ],
+            [
+              "Senātus {populusque} Rōmānus.",
+              "senate · people-and · Roman",
+              "The Senate and the Roman people."
+            ]
+          ]
+        },
+        {
+          "h": "But, or, for, therefore",
+          "p": "<b>sed</b> but, <b>aut</b> or, <b>nam</b> for (giving a reason), <b>igitur</b> therefore (second word), <b>tamen</b> however.",
+          "examples": [
+            [
+              "Cōgitō, {ergō} sum.",
+              "I think · therefore · I am",
+              "I think, therefore I am."
+            ],
+            [
+              "Fessus sum, {sed} labōrō.",
+              "tired · I am · but · I work",
+              "I'm tired, but I'm working."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Marcus ＿ Iūlia ambulant.",
+          "en": "Marcus and Julia are walking.",
+          "options": ["et", "sed", "aut", "nam"],
+          "answer": "et",
+          "why": "And: et."
+        },
+        {
+          "q": "Senātus ＿ Rōmānus.",
+          "en": "The Senate and the Roman people.",
+          "options": ["populus et que", "populusque", "-que populus", "et-populus"],
+          "answer": "populusque",
+          "why": "-que goes on the second word."
+        },
+        {
+          "q": "Fessus sum, ＿ labōrō.",
+          "en": "I'm tired, but I'm working.",
+          "options": ["et", "aut", "sed", "igitur"],
+          "answer": "sed",
+          "why": "But: sed."
+        },
+        {
+          "q": "Cōgitō, ＿ sum.",
+          "en": "I think, therefore I am.",
+          "options": ["sed", "aut", "nam", "ergō"],
+          "answer": "ergō",
+          "why": "Therefore: ergō."
+        }
+      ]
+    },
+    {
+      "id": "temporal",
+      "title": "When, after, while: ubi, postquam, dum",
+      "particle": "ubi postquam dum",
+      "summary": "ubi and cum (when), postquam (after) and dum (while, until) introduce time clauses with the indicative. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>ubi / ut</b> when (as soon as), <b>postquam</b> after (usually + perfect), <b>simul ac</b> as soon as.",
+          "examples": [
+            [
+              "{Postquam} Rōmam vēnit, senātum adiit.",
+              "after · to Rome · he came · senate · he approached",
+              "After he came to Rome, he went to the Senate."
+            ],
+            [
+              "{Ubi} hoc audīvit, rīsit.",
+              "when · this · he heard · he laughed",
+              "When he heard this, he laughed."
+            ]
+          ]
+        },
+        {
+          "h": "While: dum",
+          "p": "<b>dum</b> + present means \"while\", even of past time: <b>Dum Rōmānī cōnsultant, Saguntum expugnātum est</b>.",
+          "examples": [
+            [
+              "{Dum} Rōmānī cōnsultant, Saguntum expugnātum est.",
+              "while · Romans · deliberate · Saguntum · was captured",
+              "While the Romans deliberated, Saguntum fell."
+            ],
+            [
+              "Exspectā {dum} redeam.",
+              "wait · until · I return",
+              "Wait until I come back."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ Rōmam vēnit, senātum adiit.",
+          "en": "After he came to Rome, he went to the Senate.",
+          "options": ["Postquam", "Dum", "Quamquam", "Nisi"],
+          "answer": "Postquam",
+          "why": "After: postquam."
+        },
+        {
+          "q": "＿ hoc audīvit, rīsit.",
+          "en": "When he heard this, he laughed.",
+          "options": ["Dum", "Ubi", "Quod", "Sī"],
+          "answer": "Ubi",
+          "why": "When: ubi."
+        },
+        {
+          "q": "＿ Rōmānī cōnsultant, Saguntum expugnātum est.",
+          "en": "While the Romans deliberated, Saguntum fell.",
+          "options": ["Postquam", "Quia", "Dum", "Sī"],
+          "answer": "Dum",
+          "why": "While: dum + present."
+        },
+        {
+          "q": "Exspectā ＿ redeam.",
+          "en": "Wait until I come back.",
+          "options": ["postquam", "ubi", "quia", "dum"],
+          "answer": "dum",
+          "why": "Until: dum."
+        }
+      ]
+    },
+    {
+      "id": "because",
+      "title": "Because: quod, quia",
+      "particle": "quod quia quoniam",
+      "summary": "quod and quia mean \"because\" with the indicative (the speaker's own reason); quoniam means \"since\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>Laetus sum quod vēnistī</b> I'm glad because you came. <b>quia</b> is a little stronger; <b>quoniam</b> gives a known reason.",
+          "examples": [
+            [
+              "Laetus sum {quod} vēnistī.",
+              "happy · I am · because · you came",
+              "I'm glad you came."
+            ],
+            [
+              "Domī mānsī {quia} pluēbat.",
+              "at home · I stayed · because · it was raining",
+              "I stayed home because it was raining."
+            ]
+          ]
+        },
+        {
+          "h": "Because of: propter, ob",
+          "p": "With a noun use <b>propter</b> or <b>ob</b> + accusative: <b>propter imbrem</b> because of the rain.",
+          "examples": [
+            [
+              "{Propter} imbrem domī mānsimus.",
+              "because of · rain · at home · we stayed",
+              "We stayed home because of the rain."
+            ],
+            [
+              "{Quoniam} nox est, dormīte.",
+              "since · night · it is · sleep",
+              "Since it's night, go to sleep."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Laetus sum ＿ vēnistī.",
+          "en": "I'm glad you came.",
+          "options": ["quod", "quam", "quī", "nisi"],
+          "answer": "quod",
+          "why": "Because: quod."
+        },
+        {
+          "q": "Domī mānsī ＿ pluēbat.",
+          "en": "I stayed home because it was raining.",
+          "options": ["sed", "quia", "nisi", "dum"],
+          "answer": "quia",
+          "why": "Because: quia."
+        },
+        {
+          "q": "＿ imbrem domī mānsimus.",
+          "en": "We stayed home because of the rain.",
+          "options": ["Quod", "Quia", "Propter", "Cum"],
+          "answer": "Propter",
+          "why": "Because of + noun: propter."
+        },
+        {
+          "q": "＿ nox est, dormīte.",
+          "en": "Since it's night, go to sleep.",
+          "options": ["Postquam", "Dum", "Nisi", "Quoniam"],
+          "answer": "Quoniam",
+          "why": "Since: quoniam."
+        }
+      ]
+    },
+    {
+      "id": "subjunctive-present",
+      "title": "The present subjunctive",
+      "particle": "-em -am -at",
+      "summary": "The subjunctive is the mood of wishes, purposes and possibilities. The present swaps its vowel: amat → amet, monet → moneat, regit → regat, audit → audiat. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Rule of thumb: first conjugation takes <b>-e-</b> (<b>amem, amēs, amet</b>), the others take <b>-a-</b> (<b>moneam, regam, capiam, audiam</b>). <b>sum</b> gives <b>sim, sīs, sit</b>, and <b>possum</b> gives <b>possim</b>.",
+          "examples": [
+            [
+              "Utinam {veniat}!",
+              "if only · he may come",
+              "If only he would come!"
+            ],
+            [
+              "Rogō ut {maneās}.",
+              "I ask · that · you stay",
+              "I'm asking you to stay."
+            ]
+          ]
+        },
+        {
+          "h": "Never alone in meaning",
+          "p": "The form tells you little by itself. What matters is the word that sets it off: <b>ut</b>, <b>nē</b>, <b>cum</b>, a question word, or a wish.",
+          "examples": [
+            [
+              "Timeō nē {sit} aeger.",
+              "I fear · lest · he is · sick",
+              "I'm afraid he's ill."
+            ],
+            [
+              "Nesciō quid {faciam}.",
+              "I don't know · what · I should do",
+              "I don't know what to do."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Utinam ＿!",
+          "en": "If only he would come!",
+          "options": ["veniat", "venit", "veniet", "vēnit"],
+          "answer": "veniat",
+          "why": "Subjunctive of veniō: veniat."
+        },
+        {
+          "q": "Rogō ut ＿.",
+          "en": "I'm asking you to stay.",
+          "options": ["manēs", "maneās", "manēbis", "mānsistī"],
+          "answer": "maneās",
+          "why": "Second conjugation: -eās."
+        },
+        {
+          "q": "Timeō nē ＿ aeger.",
+          "en": "I'm afraid he's ill.",
+          "options": ["est", "erit", "sit", "fuit"],
+          "answer": "sit",
+          "why": "sum → sit."
+        },
+        {
+          "q": "Rogō ut mē ＿.",
+          "en": "I'm asking you to love me.",
+          "options": ["amās", "amābis", "amāvistī", "amēs"],
+          "answer": "amēs",
+          "why": "First conjugation swaps -ā- for -ē-."
+        }
+      ]
+    },
+    {
+      "id": "jussive",
+      "title": "Let's …, let him …: the jussive",
+      "particle": "-āmus → -ēmus",
+      "summary": "The present subjunctive on its own gives an order or suggestion: Eāmus! Let's go. Negate it with nē. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "First person plural is <b>let's</b>: <b>Gaudeāmus</b> let's rejoice. Third person is <b>let him / let them</b>: <b>Veniat</b> let him come.",
+          "examples": [
+            ["{Eāmus} domum!", "let's go · home", "Let's go home!"],
+            [
+              "{Gaudeāmus} igitur.",
+              "let us rejoice · therefore",
+              "So let us rejoice."
+            ]
+          ]
+        },
+        {
+          "h": "Don't with nē",
+          "p": "<b>nē</b> negates the jussive: <b>Nē timeāmus</b> let's not be afraid. For \"you\", Latin prefers <b>nōlī</b> + infinitive.",
+          "examples": [
+            ["{Nē} {timeāmus}.", "let not · us fear", "Let's not be afraid."],
+            [
+              "Veniat sī {velit}.",
+              "let him come · if · he wants",
+              "Let him come if he wants."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ domum!",
+          "en": "Let's go home!",
+          "options": ["Eāmus", "Īmus", "Ībimus", "Iimus"],
+          "answer": "Eāmus",
+          "why": "Let's: subjunctive of eō, eāmus."
+        },
+        {
+          "q": "＿ igitur.",
+          "en": "So let us rejoice.",
+          "options": ["Gaudēmus", "Gaudeāmus", "Gaudēbimus", "Gāvīsī"],
+          "answer": "Gaudeāmus",
+          "why": "Second conjugation: -eāmus."
+        },
+        {
+          "q": "＿ timeāmus.",
+          "en": "Let's not be afraid.",
+          "options": ["Nōn", "Nec", "Nē", "Nihil"],
+          "answer": "Nē",
+          "why": "Negative wish or order: nē."
+        },
+        {
+          "q": "Discipulī ＿!",
+          "en": "Let the students listen!",
+          "options": ["audiunt", "audient", "audīvērunt", "audiant"],
+          "answer": "audiant",
+          "why": "Let them: third plural subjunctive."
+        }
+      ]
+    },
+    {
+      "id": "purpose",
+      "title": "In order to: ut and nē",
+      "particle": "ut nē",
+      "summary": "Purpose clauses use ut (so that) or nē (so that not) with the subjunctive. Latin never uses a bare infinitive for purpose. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>Edimus ut vīvāmus</b> we eat to live. For a negative purpose, <b>nē</b>, never <b>ut nōn</b>: <b>Fūgit nē caperētur</b> he fled so as not to be caught.",
+          "examples": [
+            [
+              "Edimus {ut} {vīvāmus}.",
+              "we eat · so that · we may live",
+              "We eat to live."
+            ],
+            [
+              "Lēgem servā {nē} {pūniāris}.",
+              "law · keep · so that not · you are punished",
+              "Keep the law so you won't be punished."
+            ]
+          ]
+        },
+        {
+          "h": "Purpose with quī",
+          "p": "A relative pronoun can carry purpose too: <b>Lēgātōs mīsit quī pācem peterent</b> he sent envoys to seek peace.",
+          "examples": [
+            [
+              "Venīmus {ut} tē {videāmus}.",
+              "we come · so that · you · we may see",
+              "We're coming to see you."
+            ],
+            [
+              "Nūntium mīsit {quī} haec {nūntiāret}.",
+              "messenger · he sent · who · these things · would report",
+              "He sent a messenger to report this."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Edimus ＿ vīvāmus.",
+          "en": "We eat to live.",
+          "options": ["ut", "nē", "cum", "quod"],
+          "answer": "ut",
+          "why": "Purpose: ut + subjunctive."
+        },
+        {
+          "q": "Lēgem servā ＿ pūniāris.",
+          "en": "Keep the law so you won't be punished.",
+          "options": ["ut nōn", "nē", "nōn", "nec"],
+          "answer": "nē",
+          "why": "Negative purpose: nē."
+        },
+        {
+          "q": "Venīmus ut tē ＿.",
+          "en": "We're coming to see you.",
+          "options": ["vidēmus", "vīdimus", "videāmus", "vidēbimus"],
+          "answer": "videāmus",
+          "why": "Purpose clause: subjunctive."
+        },
+        {
+          "q": "Lēgātōs mīsit ＿ pācem peterent.",
+          "en": "He sent envoys to seek peace.",
+          "options": ["quod", "quam", "cuius", "quī"],
+          "answer": "quī",
+          "why": "Relative of purpose: quī + subjunctive."
+        }
+      ]
+    },
+    {
+      "id": "result",
+      "title": "So … that: result clauses",
+      "particle": "tam … ut",
+      "summary": "A result clause follows a \"so\" word (tam, ita, tantus, tot) and uses ut with the subjunctive. The negative is ut nōn. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>tam</b> so (with adjectives), <b>ita / sīc</b> so, in such a way, <b>tantus</b> so great, <b>tot</b> so many. Then <b>ut</b> + subjunctive, or <b>ut nōn</b> for a negative result.",
+          "examples": [
+            [
+              "{Tam} fessus erat {ut} {dormīret}.",
+              "so · tired · he was · that · he slept",
+              "He was so tired that he fell asleep."
+            ],
+            [
+              "{Ita} clāmāvit {ut} omnēs {audīrent}.",
+              "so · he shouted · that · all · heard",
+              "He shouted so that everyone heard."
+            ]
+          ]
+        },
+        {
+          "h": "Purpose or result?",
+          "p": "Purpose says what someone wanted; result says what actually happened. A negative tells them apart: purpose <b>nē</b>, result <b>ut nōn</b>.",
+          "examples": [
+            [
+              "{Tantus} erat imber {ut} {nōn} {exīrēmus}.",
+              "so great · was · rain · that · not · we went out",
+              "The rain was so heavy that we didn't go out."
+            ],
+            [
+              "{Tot} librōs habet {ut} legere nōn {possit}.",
+              "so many · books · he has · that · read · not · he can",
+              "He has so many books he can't read them all."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Tam fessus erat ＿ dormīret.",
+          "en": "He was so tired that he fell asleep.",
+          "options": ["ut", "nē", "quod", "quam"],
+          "answer": "ut",
+          "why": "Result: ut + subjunctive."
+        },
+        {
+          "q": "Tantus erat imber ut ＿ exīrēmus.",
+          "en": "The rain was so heavy that we didn't go out.",
+          "options": ["nē", "nōn", "nec", "nihil"],
+          "answer": "nōn",
+          "why": "Negative result: ut nōn."
+        },
+        {
+          "q": "＿ clāmāvit ut omnēs audīrent.",
+          "en": "He shouted so that everyone heard.",
+          "options": ["Cum", "Quod", "Ita", "Ubi"],
+          "answer": "Ita",
+          "why": "So, in such a way: ita."
+        },
+        {
+          "q": "Tot librōs habet ut legere nōn ＿.",
+          "en": "He has so many books he can't read them.",
+          "options": ["potest", "poterit", "potuit", "possit"],
+          "answer": "possit",
+          "why": "Result clause: subjunctive."
+        }
+      ]
+    },
+    {
+      "id": "subjunctive-imperfect",
+      "title": "The imperfect subjunctive",
+      "particle": "-rem -rēs -ret",
+      "summary": "The imperfect subjunctive is the present infinitive + personal endings: amāre → amārem, esse → essem. It follows a past main verb. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Take the infinitive and add <b>-m, -s, -t, -mus, -tis, -nt</b> with a long e: <b>vidērem, regerēs, audīret, essēmus, possent</b>.",
+          "examples": [
+            [
+              "Rogāvī ut {manērēs}.",
+              "I asked · that · you stay",
+              "I asked you to stay."
+            ],
+            [
+              "Vēnit ut mē {vidēret}.",
+              "he came · so that · me · he might see",
+              "He came to see me."
+            ]
+          ]
+        },
+        {
+          "h": "Past frame",
+          "p": "When the main verb is past, the ut-clause shifts from present subjunctive to imperfect: <b>Veniō ut videam</b> becomes <b>Vēnī ut vidērem</b>.",
+          "examples": [
+            [
+              "Timēbant nē hostēs {venīrent}.",
+              "they feared · lest · enemies · come",
+              "They were afraid the enemy would come."
+            ],
+            [
+              "Tam fortis erat ut nēmō eum {vinceret}.",
+              "so · brave · he was · that · no one · him · defeated",
+              "He was so brave no one could beat him."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Rogāvī ut ＿.",
+          "en": "I asked you to stay.",
+          "options": ["manērēs", "maneās", "manēs", "mānsistī"],
+          "answer": "manērēs",
+          "why": "Past main verb: imperfect subjunctive."
+        },
+        {
+          "q": "Vēnit ut mē ＿.",
+          "en": "He came to see me.",
+          "options": ["videat", "vidēret", "videt", "vīdit"],
+          "answer": "vidēret",
+          "why": "Infinitive vidēre + t."
+        },
+        {
+          "q": "Timēbant nē hostēs ＿.",
+          "en": "They were afraid the enemy would come.",
+          "options": ["veniant", "veniunt", "venīrent", "vēnērunt"],
+          "answer": "venīrent",
+          "why": "Past frame: venīre + nt."
+        },
+        {
+          "q": "Vēnī ut tē ＿.",
+          "en": "I came to help you.",
+          "options": ["iuvem", "iuvō", "iūvī", "iuvārem"],
+          "answer": "iuvārem",
+          "why": "Past main verb: -rem."
+        }
+      ]
+    },
+    {
+      "id": "cum-subjunctive",
+      "title": "Cum with the subjunctive",
+      "particle": "cum + -ret / -isset",
+      "summary": "With the subjunctive, cum means when (setting the scene), since, or although. It is the most common way to open a Latin story sentence. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>cum</b> + imperfect subjunctive: while / when something was going on. <b>cum</b> + pluperfect subjunctive: when / after something had happened.",
+          "examples": [
+            [
+              "{Cum} Rōmae {essem}, multa vīdī.",
+              "when · in Rome · I was · many things · I saw",
+              "When I was in Rome, I saw a lot."
+            ],
+            [
+              "{Cum} hostēs {vīdisset}, fūgit.",
+              "when · enemies · he had seen · he fled",
+              "When he had seen the enemy, he fled."
+            ]
+          ]
+        },
+        {
+          "h": "Since and although",
+          "p": "The same cum can mean <b>since</b> (cum + reason) or <b>although</b> (often with tamen in the main clause).",
+          "examples": [
+            [
+              "{Cum} aeger {esset}, domī mānsit.",
+              "since · sick · he was · at home · he stayed",
+              "Since he was ill, he stayed home."
+            ],
+            [
+              "{Cum} dīves {esset}, tamen miser erat.",
+              "although · rich · he was · still · unhappy · he was",
+              "Though he was rich, he was unhappy."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Cum Rōmae ＿, multa vīdī.",
+          "en": "When I was in Rome, I saw a lot.",
+          "options": ["essem", "sum", "eram", "fuī"],
+          "answer": "essem",
+          "why": "Cum narrating: imperfect subjunctive."
+        },
+        {
+          "q": "Cum hostēs ＿, fūgit.",
+          "en": "When he had seen the enemy, he fled.",
+          "options": ["videt", "vīdisset", "vīdit", "vidēbat"],
+          "answer": "vīdisset",
+          "why": "Had seen: pluperfect subjunctive."
+        },
+        {
+          "q": "Cum aeger ＿, domī mānsit.",
+          "en": "Since he was ill, he stayed home.",
+          "options": ["est", "erat", "esset", "erit"],
+          "answer": "esset",
+          "why": "Causal cum: subjunctive."
+        },
+        {
+          "q": "Cum dīves esset, ＿ miser erat.",
+          "en": "Though he was rich, he was unhappy.",
+          "options": ["ergo", "igitur", "enim", "tamen"],
+          "answer": "tamen",
+          "why": "Concessive cum: tamen in the main clause."
+        }
+      ]
+    },
+    {
+      "id": "indirect-questions",
+      "title": "Indirect questions",
+      "particle": "quid … sit",
+      "summary": "A question reported after a verb of asking, knowing or telling takes the subjunctive: Quid facis? → Rogō quid faciās. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Keep the question word (<b>quis, quid, ubi, cūr, quōmodo, num</b>) and put the verb in the subjunctive. After a past main verb, use the imperfect subjunctive.",
+          "examples": [
+            [
+              "Nesciō {ubi} {sit}.",
+              "I don't know · where · he is",
+              "I don't know where he is."
+            ],
+            [
+              "Rogāvit {cūr} {flērem}.",
+              "he asked · why · I was crying",
+              "He asked why I was crying."
+            ]
+          ]
+        },
+        {
+          "h": "Whether: num and -ne",
+          "p": "Yes/no questions become \"whether\" with <b>num</b> or <b>-ne</b>: <b>Rogō num veniās</b> I ask whether you're coming.",
+          "examples": [
+            [
+              "Dīc mihi {quid} {velīs}.",
+              "tell · to me · what · you want",
+              "Tell me what you want."
+            ],
+            [
+              "Quaesīvit {num} domī {essem}.",
+              "he asked · whether · at home · I was",
+              "He asked whether I was at home."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Nesciō ubi ＿.",
+          "en": "I don't know where he is.",
+          "options": ["sit", "est", "erit", "fuit"],
+          "answer": "sit",
+          "why": "Indirect question: subjunctive."
+        },
+        {
+          "q": "Rogāvit cūr ＿.",
+          "en": "He asked why I was crying.",
+          "options": ["fleō", "flērem", "flēbam", "fleam"],
+          "answer": "flērem",
+          "why": "Past main verb: imperfect subjunctive."
+        },
+        {
+          "q": "Dīc mihi quid ＿.",
+          "en": "Tell me what you want.",
+          "options": ["vīs", "volēs", "velīs", "voluistī"],
+          "answer": "velīs",
+          "why": "volō → velim, velīs."
+        },
+        {
+          "q": "Quaesīvit ＿ domī essem.",
+          "en": "He asked whether I was at home.",
+          "options": ["nōnne", "quod", "ut", "num"],
+          "answer": "num",
+          "why": "Whether: num."
+        }
+      ]
+    },
+    {
+      "id": "indirect-command",
+      "title": "Indirect commands",
+      "particle": "imperō ut",
+      "summary": "Orders and requests reported after imperō, rogō, hortor, persuādeō take ut (or nē) and the subjunctive. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>Venī!</b> becomes <b>Imperāvit ut venīrem</b> he ordered me to come. Verbs: <b>imperō</b> (+ dative), <b>rogō, ōrō, hortor, moneō, persuādeō</b> (+ dative). Exception: <b>iubeō</b> takes an accusative and infinitive.",
+          "examples": [
+            [
+              "Mīlitibus {imperāvit} {ut} {pugnārent}.",
+              "to soldiers · he ordered · that · they fight",
+              "He ordered the soldiers to fight."
+            ],
+            [
+              "Tē {ōrō} {nē} {discēdās}.",
+              "you · I beg · that not · you leave",
+              "I beg you not to leave."
+            ]
+          ]
+        },
+        {
+          "h": "iubeō is different",
+          "p": "<b>Iussit mīlitēs pugnāre</b> he ordered the soldiers to fight: accusative + infinitive, no ut.",
+          "examples": [
+            [
+              "Mihi {persuāsit} {ut} {manērem}.",
+              "to me · he persuaded · that · I stay",
+              "He persuaded me to stay."
+            ],
+            [
+              "Dux mīlitēs {iussit} {pugnāre}.",
+              "leader · soldiers · ordered · to fight",
+              "The general ordered the soldiers to fight."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Mīlitibus imperāvit ut ＿.",
+          "en": "He ordered the soldiers to fight.",
+          "options": ["pugnārent", "pugnant", "pugnāre", "pugnābant"],
+          "answer": "pugnārent",
+          "why": "Indirect command: subjunctive."
+        },
+        {
+          "q": "Tē ōrō ＿ discēdās.",
+          "en": "I beg you not to leave.",
+          "options": ["nōn", "nē", "ut nōn", "nec"],
+          "answer": "nē",
+          "why": "Negative command: nē."
+        },
+        {
+          "q": "Dux mīlitēs iussit ＿.",
+          "en": "The general ordered the soldiers to fight.",
+          "options": ["ut pugnent", "pugnent", "pugnāre", "pugnābunt"],
+          "answer": "pugnāre",
+          "why": "iubeō: accusative + infinitive."
+        },
+        {
+          "q": "Mihi persuāsit ut ＿.",
+          "en": "He persuaded me to stay.",
+          "options": ["maneam", "maneō", "mānsī", "manērem"],
+          "answer": "manērem",
+          "why": "Past frame: imperfect subjunctive."
+        }
+      ]
+    },
+    {
+      "id": "fear",
+      "title": "Fearing: nē means that",
+      "particle": "timeō nē",
+      "summary": "After verbs of fearing, nē means \"that\" and ut (or nē nōn) means \"that not\", the reverse of what you might expect. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Think of it as a wish turned around: <b>Timeō nē veniat</b> I'm afraid he'll come (may he not come!). <b>Timeō ut veniat</b> I'm afraid he won't come.",
+          "examples": [
+            [
+              "{Timeō} {nē} {pluat}.",
+              "I fear · that · it rains",
+              "I'm afraid it will rain."
+            ],
+            [
+              "{Metuēbant} {nē} urbs {caperētur}.",
+              "they feared · that · city · would be taken",
+              "They feared the city would be captured."
+            ]
+          ]
+        },
+        {
+          "h": "Fearing that not",
+          "p": "<b>ut</b> or <b>nē nōn</b> gives the negative: <b>Vereor ut satis temporis habeāmus</b> I'm afraid we won't have enough time.",
+          "examples": [
+            [
+              "{Vereor} {ut} {veniat}.",
+              "I fear · that not · he comes",
+              "I'm afraid he won't come."
+            ],
+            [
+              "{Timeō} {nē} {nōn} {possim}.",
+              "I fear · that · not · I can",
+              "I'm afraid I won't be able to."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Timeō ＿ pluat.",
+          "en": "I'm afraid it will rain.",
+          "options": ["nē", "ut", "quod", "num"],
+          "answer": "nē",
+          "why": "Fear that: nē."
+        },
+        {
+          "q": "Vereor ＿ veniat.",
+          "en": "I'm afraid he won't come.",
+          "options": ["nē", "ut", "cum", "sī"],
+          "answer": "ut",
+          "why": "Fear that not: ut."
+        },
+        {
+          "q": "Metuēbant nē urbs ＿.",
+          "en": "They feared the city would be captured.",
+          "options": ["capitur", "capta est", "caperētur", "capiētur"],
+          "answer": "caperētur",
+          "why": "Past frame: imperfect subjunctive passive."
+        },
+        {
+          "q": "Timeō nē nōn ＿.",
+          "en": "I'm afraid I won't be able to.",
+          "options": ["possum", "poterō", "potuī", "possim"],
+          "answer": "possim",
+          "why": "Fear clause: subjunctive."
+        }
+      ]
+    },
+    {
+      "id": "real-conditions",
+      "title": "If: real conditions",
+      "particle": "sī nisi",
+      "summary": "Ordinary \"if\" sentences use the indicative in both halves. nisi means \"unless\" or \"if not\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "Present: <b>Sī pluit, domī maneō</b> if it rains, I stay home. Future: Latin uses the future (or future perfect) in both halves where English uses a present after \"if\".",
+          "examples": [
+            [
+              "{Sī} {pluit}, domī {maneō}.",
+              "if · it rains · at home · I stay",
+              "If it rains, I stay home."
+            ],
+            [
+              "{Sī} {veniēs}, laetus {erō}.",
+              "if · you will come · happy · I will be",
+              "If you come, I'll be happy."
+            ]
+          ]
+        },
+        {
+          "h": "Unless: nisi",
+          "p": "<b>nisi</b> = <b>sī nōn</b>: <b>Nisi properābis, sērō adveniēs</b> unless you hurry, you'll be late.",
+          "examples": [
+            [
+              "{Nisi} {properābis}, sērō {adveniēs}.",
+              "unless · you will hurry · late · you will arrive",
+              "Unless you hurry, you'll be late."
+            ],
+            [
+              "{Sī} hoc {dīxit}, errāvit.",
+              "if · this · he said · he was wrong",
+              "If he said that, he was wrong."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Sī pluit, domī ＿.",
+          "en": "If it rains, I stay home.",
+          "options": ["maneō", "manērem", "manēbō", "mānsissem"],
+          "answer": "maneō",
+          "why": "Real present condition: indicative."
+        },
+        {
+          "q": "Sī ＿, laetus erō.",
+          "en": "If you come, I'll be happy.",
+          "options": ["venīs", "veniēs", "venīrēs", "vēnistī"],
+          "answer": "veniēs",
+          "why": "Future condition: future in both halves."
+        },
+        {
+          "q": "＿ properābis, sērō adveniēs.",
+          "en": "Unless you hurry, you'll be late.",
+          "options": ["Sī", "Nē", "Nisi", "Ut"],
+          "answer": "Nisi",
+          "why": "Unless: nisi."
+        },
+        {
+          "q": "Sī hoc dīxit, ＿.",
+          "en": "If he said that, he was wrong.",
+          "options": ["errāret", "errāvisset", "erret", "errāvit"],
+          "answer": "errāvit",
+          "why": "Real past condition: indicative."
+        }
+      ]
+    },
+    {
+      "id": "unreal-conditions",
+      "title": "If it were: unreal present",
+      "particle": "sī essem",
+      "summary": "Conditions contrary to fact in the present use the imperfect subjunctive in both halves: Sī dīves essem, nāvem emerem. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>sī</b> + imperfect subjunctive, then imperfect subjunctive: if I were …, I would …. The \"should / would\" future-less-vivid type uses the present subjunctive: <b>Sī veniat, gaudeam</b> if he should come, I'd be glad.",
+          "examples": [
+            [
+              "{Sī} dīves {essem}, nāvem {emerem}.",
+              "if · rich · I were · ship · I would buy",
+              "If I were rich, I'd buy a ship."
+            ],
+            [
+              "{Sī} hīc {adessēs}, laetior {essem}.",
+              "if · here · you were present · happier · I would be",
+              "If you were here, I'd be happier."
+            ]
+          ]
+        },
+        {
+          "h": "Should / would",
+          "p": "A remote future possibility takes the present subjunctive in both halves: <b>Sī quis roget, dīcam</b> if anyone should ask, I would say.",
+          "examples": [
+            [
+              "{Sī} quis {roget}, nihil {dīcam}.",
+              "if · anyone · should ask · nothing · I would say",
+              "If anyone should ask, I'd say nothing."
+            ],
+            [
+              "{Nisi} fessus {essem}, {venīrem}.",
+              "unless · tired · I were · I would come",
+              "If I weren't tired, I'd come."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Sī dīves ＿, nāvem emerem.",
+          "en": "If I were rich, I'd buy a ship.",
+          "options": ["essem", "sum", "eram", "erō"],
+          "answer": "essem",
+          "why": "Unreal present: imperfect subjunctive."
+        },
+        {
+          "q": "Sī hīc adessēs, laetior ＿.",
+          "en": "If you were here, I'd be happier.",
+          "options": ["sum", "essem", "erō", "fuī"],
+          "answer": "essem",
+          "why": "Both halves: imperfect subjunctive."
+        },
+        {
+          "q": "Sī quis roget, nihil ＿.",
+          "en": "If anyone should ask, I'd say nothing.",
+          "options": ["dīcō", "dīxī", "dīcam", "dīcēbam"],
+          "answer": "dīcam",
+          "why": "Should / would: present subjunctive."
+        },
+        {
+          "q": "Nisi fessus essem, ＿.",
+          "en": "If I weren't tired, I'd come.",
+          "options": ["veniō", "vēnī", "veniam", "venīrem"],
+          "answer": "venīrem",
+          "why": "Unreal present: imperfect subjunctive."
+        }
+      ]
+    },
+    {
+      "id": "past-unreal",
+      "title": "If it had been: unreal past",
+      "particle": "sī fuisset",
+      "summary": "The pluperfect subjunctive (perfect infinitive + endings: amāvissem, fuissem) makes \"if it had …, it would have …\". (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "Form: perfect active infinitive + <b>-m, -s, -t</b>…: <b>vīdisset, fēcissem, fuissent</b>. Passive: participle + <b>essem</b>: <b>captus esset</b>.",
+          "examples": [
+            [
+              "{Sī} {vēnissēs}, mē {vīdissēs}.",
+              "if · you had come · me · you would have seen",
+              "If you had come, you would have seen me."
+            ],
+            [
+              "{Nisi} Caesar {vēnisset}, urbs {capta esset}.",
+              "unless · Caesar · had come · city · would have been taken",
+              "If Caesar hadn't come, the city would have fallen."
+            ]
+          ]
+        },
+        {
+          "h": "Mixed times",
+          "p": "Past cause, present result: <b>Sī tum studuissēs, nunc scīrēs</b> if you had studied then, you would know now.",
+          "examples": [
+            [
+              "{Sī} tum {studuissēs}, nunc {scīrēs}.",
+              "if · then · you had studied · now · you would know",
+              "If you'd studied then, you'd know now."
+            ],
+            [
+              "Utinam nē {dīxissem}!",
+              "if only · not · I had said",
+              "If only I hadn't said it!"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Sī vēnissēs, mē ＿.",
+          "en": "If you had come, you would have seen me.",
+          "options": ["vīdissēs", "vidērēs", "vidēs", "vīdistī"],
+          "answer": "vīdissēs",
+          "why": "Unreal past: pluperfect subjunctive."
+        },
+        {
+          "q": "Nisi Caesar ＿, urbs capta esset.",
+          "en": "If Caesar hadn't come, the city would have fallen.",
+          "options": ["venīret", "vēnisset", "vēnit", "veniat"],
+          "answer": "vēnisset",
+          "why": "Had come: pluperfect subjunctive."
+        },
+        {
+          "q": "Sī tum studuissēs, nunc ＿.",
+          "en": "If you'd studied then, you'd know now.",
+          "options": ["scīvissēs", "scīs", "scīrēs", "sciās"],
+          "answer": "scīrēs",
+          "why": "Present result: imperfect subjunctive."
+        },
+        {
+          "q": "Utinam nē ＿!",
+          "en": "If only I hadn't said it!",
+          "options": ["dīcam", "dīxī", "dīcō", "dīxissem"],
+          "answer": "dīxissem",
+          "why": "Past wish: pluperfect subjunctive."
+        }
+      ]
+    },
+    {
+      "id": "gerund",
+      "title": "The gerund: -ndī, -ndō",
+      "particle": "-ndī -ndō -ndum",
+      "summary": "The gerund is a verbal noun, \"of doing, by doing\". It fills the cases the infinitive can't: amandī of loving, amandō by loving, ad amandum for loving. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "Present stem + <b>-nd-</b>: <b>legendī, legendō, ad legendum</b>. The nominative is the infinitive: <b>Legere iuvat</b> reading is pleasant.",
+          "examples": [
+            [
+              "Ars {scrībendī} difficilis est.",
+              "art · of writing · difficult · is",
+              "The art of writing is hard."
+            ],
+            [
+              "{Discendō} discimus.",
+              "by learning · we learn",
+              "We learn by learning."
+            ]
+          ]
+        },
+        {
+          "h": "Purpose: ad + -ndum, -ndī causā",
+          "p": "<b>ad</b> + accusative gerund, or genitive gerund + <b>causā</b>, both mean \"in order to\": <b>ad legendum</b>, <b>legendī causā</b>.",
+          "examples": [
+            [
+              "Vēnit {ad} {discendum}.",
+              "he came · for · learning",
+              "He came to learn."
+            ],
+            [
+              "Cupidus sum {legendī}.",
+              "eager · I am · of reading",
+              "I love reading."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ars ＿ difficilis est.",
+          "en": "The art of writing is hard.",
+          "options": ["scrībendī", "scrībere", "scrībendō", "scrībēns"],
+          "answer": "scrībendī",
+          "why": "Of writing: genitive gerund."
+        },
+        {
+          "q": "＿ discimus.",
+          "en": "We learn by learning.",
+          "options": ["Discere", "Discendō", "Discendī", "Discēns"],
+          "answer": "Discendō",
+          "why": "By doing: ablative gerund."
+        },
+        {
+          "q": "Vēnit ad ＿.",
+          "en": "He came to learn.",
+          "options": ["discere", "discendō", "discendum", "discendī"],
+          "answer": "discendum",
+          "why": "ad + accusative gerund."
+        },
+        {
+          "q": "Lūdendī ＿ vēnērunt.",
+          "en": "They came in order to play.",
+          "options": ["ad", "cum", "prō", "causā"],
+          "answer": "causā",
+          "why": "Genitive gerund + causā."
+        }
+      ]
+    },
+    {
+      "id": "gerundive",
+      "title": "Must be done: the gerundive",
+      "particle": "-ndus est",
+      "summary": "The gerundive is a verbal adjective in -ndus, -nda, -ndum: \"to be done\". With est it means something must be done; the person who must do it is in the dative. (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>Carthāgō dēlenda est</b> Carthage must be destroyed. <b>Mihi legendum est</b> I have to read. The agent goes in the dative: <b>Hoc tibi faciendum est</b> you must do this.",
+          "examples": [
+            [
+              "Carthāgō {dēlenda} {est}.",
+              "Carthage · to be destroyed · is",
+              "Carthage must be destroyed."
+            ],
+            [
+              "Hic liber {tibi} {legendus est}.",
+              "this · book · by you · must be read",
+              "You have to read this book."
+            ]
+          ]
+        },
+        {
+          "h": "Gerundive for gerund",
+          "p": "When a gerund would take an object, Latin prefers the gerundive agreeing with the noun: <b>ad urbem videndam</b> to see the city, <b>librōrum legendōrum causā</b> for reading books.",
+          "examples": [
+            [
+              "Vēnimus {ad} urbem {videndam}.",
+              "we came · for · city · to be seen",
+              "We came to see the city."
+            ],
+            [
+              "{Mihi} domum {eundum est}.",
+              "for me · home · must go",
+              "I have to go home."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Carthāgō ＿ est.",
+          "en": "Carthage must be destroyed.",
+          "options": ["dēlenda", "dēlendus", "dēlendum", "dēlēta"],
+          "answer": "dēlenda",
+          "why": "Agrees with Carthāgō: feminine -nda."
+        },
+        {
+          "q": "Hic liber ＿ legendus est.",
+          "en": "You have to read this book.",
+          "options": ["tē", "tibi", "ā tē", "tuī"],
+          "answer": "tibi",
+          "why": "Agent with the gerundive: dative."
+        },
+        {
+          "q": "Vēnimus ad urbem ＿.",
+          "en": "We came to see the city.",
+          "options": ["videndum", "videndō", "videndam", "vidēre"],
+          "answer": "videndam",
+          "why": "Gerundive agrees: urbem videndam."
+        },
+        {
+          "q": "Mihi domum ＿ est.",
+          "en": "I have to go home.",
+          "options": ["eunda", "īre", "iendum", "eundum"],
+          "answer": "eundum",
+          "why": "Impersonal gerundive of eō: eundum."
+        }
+      ]
+    },
+    {
+      "id": "active-periphrastic",
+      "title": "About to: -ūrus sum",
+      "particle": "-ūrus",
+      "summary": "The future participle (-ūrus, -ūra, -ūrum) with sum means \"about to, going to, intending to\". It also gives the future infinitive and future forms in indirect questions. (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "Supine stem + <b>-ūrus</b>: <b>amātūrus, vīsūrus, factūrus, futūrus</b>. With <b>sum</b>: <b>Scrīptūrus sum</b> I'm about to write.",
+          "examples": [
+            [
+              "{Scrīptūrus} {sum}.",
+              "about to write · I am",
+              "I'm about to write."
+            ],
+            [
+              "Avē, Caesar, {moritūrī} tē salūtant.",
+              "hail · Caesar · those about to die · you · salute",
+              "Hail, Caesar, those about to die salute you."
+            ]
+          ]
+        },
+        {
+          "h": "Future in reported speech",
+          "p": "The future infinitive is <b>-ūrus esse</b>: <b>Dīcit sē ventūrum esse</b> he says he will come. In indirect questions, <b>-ūrus sim</b>: <b>Nesciō quid factūrus sim</b> I don't know what I'll do.",
+          "examples": [
+            [
+              "Dīcit sē {ventūrum esse}.",
+              "he says · himself · to be about to come",
+              "He says he will come."
+            ],
+            [
+              "Nesciō quid {factūrus} {sim}.",
+              "I don't know · what · about to do · I am",
+              "I don't know what I'm going to do."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ sum.",
+          "en": "I'm about to write.",
+          "options": ["Scrīptūrus", "Scrīptus", "Scrībēns", "Scrībendus"],
+          "answer": "Scrīptūrus",
+          "why": "About to: -ūrus."
+        },
+        {
+          "q": "Dīcit sē ＿ esse.",
+          "en": "He says he will come.",
+          "options": ["ventum", "ventūrum", "venientem", "veniendum"],
+          "answer": "ventūrum",
+          "why": "Future infinitive: -ūrum esse."
+        },
+        {
+          "q": "Nesciō quid factūrus ＿.",
+          "en": "I don't know what I'm going to do.",
+          "options": ["sum", "essem", "sim", "erō"],
+          "answer": "sim",
+          "why": "Indirect question: subjunctive of sum."
+        },
+        {
+          "q": "Puella ＿ est.",
+          "en": "The girl is about to leave.",
+          "options": ["discessūrus", "discessa", "discēdēns", "discessūra"],
+          "answer": "discessūra",
+          "why": "Feminine: -ūra."
+        }
+      ]
+    },
+    {
+      "id": "impersonal",
+      "title": "Impersonal verbs: licet, oportet",
+      "particle": "licet oportet placet",
+      "summary": "Some verbs only appear in the \"it\" form: licet it is allowed, oportet it is right / one ought, placet it pleases, pudet it shames. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>licet</b> and <b>placet</b> take a dative of the person: <b>Mihi licet</b> I'm allowed. <b>oportet</b> takes an accusative + infinitive: <b>Tē oportet venīre</b> you ought to come.",
+          "examples": [
+            [
+              "{Tibi} {licet} abīre.",
+              "to you · it is allowed · to leave",
+              "You may leave."
+            ],
+            [
+              "{Tē} {oportet} studēre.",
+              "you · it is fitting · to study",
+              "You ought to study."
+            ]
+          ]
+        },
+        {
+          "h": "Feelings: pudet, paenitet, taedet",
+          "p": "Feeling verbs take the person in the accusative and the cause in the genitive: <b>Mē pudet stultitiae</b> I'm ashamed of my foolishness.",
+          "examples": [
+            [
+              "{Mē} {pudet} {stultitiae} meae.",
+              "me · it shames · of foolishness · my",
+              "I'm ashamed of my foolishness."
+            ],
+            [
+              "Senātuī {placuit} bellum gerere.",
+              "to senate · it pleased · war · to wage",
+              "The senate decided to go to war."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Tibi ＿ abīre.",
+          "en": "You may leave.",
+          "options": ["licet", "oportet", "pudet", "taedet"],
+          "answer": "licet",
+          "why": "Allowed: licet."
+        },
+        {
+          "q": "＿ oportet studēre.",
+          "en": "You ought to study.",
+          "options": ["Tibi", "Tē", "Tū", "Tuī"],
+          "answer": "Tē",
+          "why": "oportet: accusative + infinitive."
+        },
+        {
+          "q": "Mē pudet ＿ meae.",
+          "en": "I'm ashamed of my foolishness.",
+          "options": ["stultitiam", "stultitia", "stultitiae", "stultitiā"],
+          "answer": "stultitiae",
+          "why": "Cause of feeling: genitive."
+        },
+        {
+          "q": "＿ licet.",
+          "en": "I'm allowed.",
+          "options": ["Mē", "Ego", "Meī", "Mihi"],
+          "answer": "Mihi",
+          "why": "licet: dative of the person."
+        }
+      ]
+    },
+    {
+      "id": "dative-possession",
+      "title": "Mihi est: dative of possession, double dative",
+      "particle": "mihi est",
+      "summary": "Latin can say \"there is to me\" instead of \"I have\": Mihi est liber. Some datives also express purpose: Hoc mihi cūrae est, this is a concern to me. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>Est mihi frāter</b> I have a brother. <b>Nōmen mihi est Marcus</b> my name is Marcus. The focus falls on the thing possessed.",
+          "examples": [
+            [
+              "{Mihi} {est} frāter.",
+              "to me · is · brother",
+              "I have a brother."
+            ],
+            [
+              "Nōmen {mihi} est Iūlia.",
+              "name · to me · is · Julia",
+              "My name is Julia."
+            ]
+          ]
+        },
+        {
+          "h": "Double dative",
+          "p": "A dative of purpose plus a dative of the person: <b>Hoc mihi cūrae est</b> this is a worry to me; <b>auxiliō venīre</b> to come as help.",
+          "examples": [
+            [
+              "Hoc {mihi} {cūrae} est.",
+              "this · to me · for care · is",
+              "This worries me."
+            ],
+            [
+              "Caesar mīlitēs {sociīs} {auxiliō} mīsit.",
+              "Caesar · soldiers · to allies · for help · sent",
+              "Caesar sent soldiers to help the allies."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ est frāter.",
+          "en": "I have a brother.",
+          "options": ["Mihi", "Ego", "Mē", "Meus"],
+          "answer": "Mihi",
+          "why": "Dative of possession: mihi est."
+        },
+        {
+          "q": "Nōmen ＿ est Iūlia.",
+          "en": "My name is Julia.",
+          "options": ["mē", "mihi", "meum", "ego"],
+          "answer": "mihi",
+          "why": "Name to me: mihi."
+        },
+        {
+          "q": "Hoc mihi ＿ est.",
+          "en": "This worries me.",
+          "options": ["cūra", "cūram", "cūrae", "cūrā"],
+          "answer": "cūrae",
+          "why": "Dative of purpose: cūrae."
+        },
+        {
+          "q": "Mīlitēs sociīs ＿ mīsit.",
+          "en": "He sent soldiers to help the allies.",
+          "options": ["auxilium", "auxiliī", "ad auxilium", "auxiliō"],
+          "answer": "auxiliō",
+          "why": "Double dative: auxiliō."
+        }
+      ]
+    },
+    {
+      "id": "ablative-comparison",
+      "title": "Than without quam; by how much",
+      "particle": "-ior + ablative",
+      "summary": "After a comparative, Latin can drop quam and put the second thing in the ablative: Melle dulcior, sweeter than honey. The ablative also says \"by how much\": multō māior. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>Nihil est lūce clārius</b> nothing is clearer than light. With <b>quam</b>, both nouns share a case: <b>Marcus māior est quam Iūlia</b>.",
+          "examples": [
+            [
+              "Vōx eius {melle} dulcior est.",
+              "voice · his · than honey · sweeter · is",
+              "His voice is sweeter than honey."
+            ],
+            [
+              "Nihil est {lūce} clārius.",
+              "nothing · is · than light · clearer",
+              "Nothing is clearer than light."
+            ]
+          ]
+        },
+        {
+          "h": "Measure of difference",
+          "p": "<b>multō</b> by much, <b>paulō</b> by a little, <b>tantō</b> by so much: <b>multō melior</b> much better, <b>paulō post</b> a little later.",
+          "examples": [
+            [
+              "Hic liber {multō} melior est.",
+              "this · book · by much · better · is",
+              "This book is much better."
+            ],
+            [
+              "{Paulō} post vēnit.",
+              "by a little · after · he came",
+              "He came a little later."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Vōx eius ＿ dulcior est.",
+          "en": "His voice is sweeter than honey.",
+          "options": ["melle", "mel", "mellis", "mellī"],
+          "answer": "melle",
+          "why": "Comparison without quam: ablative."
+        },
+        {
+          "q": "Nihil est ＿ clārius.",
+          "en": "Nothing is clearer than light.",
+          "options": ["lūx", "lūce", "lūcem", "lūcis"],
+          "answer": "lūce",
+          "why": "Ablative of comparison."
+        },
+        {
+          "q": "Hic liber ＿ melior est.",
+          "en": "This book is much better.",
+          "options": ["multum", "multī", "multō", "multus"],
+          "answer": "multō",
+          "why": "By how much: ablative multō."
+        },
+        {
+          "q": "＿ post vēnit.",
+          "en": "He came a little later.",
+          "options": ["Paulum", "Parvus", "Paucī", "Paulō"],
+          "answer": "Paulō",
+          "why": "By a little: paulō."
+        }
+      ]
+    },
+    {
+      "id": "concessive",
+      "title": "Although: quamquam, quamvīs, etsī",
+      "particle": "quamquam quamvīs",
+      "summary": "quamquam and etsī take the indicative for a real fact; quamvīs and cum take the subjunctive. The main clause often adds tamen. (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>Quamquam fessus erat, tamen labōrāvit</b> although he was tired, he still worked. <b>Quamvīs dīves sit, nōn est beātus</b> however rich he may be, he isn't happy.",
+          "examples": [
+            [
+              "{Quamquam} fessus {erat}, tamen labōrāvit.",
+              "although · tired · he was · still · he worked",
+              "Although he was tired, he kept working."
+            ],
+            [
+              "{Etsī} pluit, ambulāmus.",
+              "even if · it rains · we walk",
+              "Even though it's raining, we're walking."
+            ]
+          ]
+        },
+        {
+          "h": "However much: quamvīs",
+          "p": "<b>quamvīs</b> literally \"as much as you like\" takes the subjunctive: <b>quamvīs multī sint</b> however many there may be.",
+          "examples": [
+            [
+              "{Quamvīs} dīves {sit}, nōn est beātus.",
+              "however · rich · he may be · not · is · happy",
+              "However rich he is, he isn't happy."
+            ],
+            [
+              "{Quamvīs} multī {sint}, nōn timēmus.",
+              "however · many · they may be · not · we fear",
+              "However many there are, we're not afraid."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ fessus erat, tamen labōrāvit.",
+          "en": "Although he was tired, he kept working.",
+          "options": ["Quamquam", "Quamvīs", "Postquam", "Quoniam"],
+          "answer": "Quamquam",
+          "why": "Real fact + indicative: quamquam."
+        },
+        {
+          "q": "Quamvīs dīves ＿, nōn est beātus.",
+          "en": "However rich he is, he isn't happy.",
+          "options": ["est", "sit", "erat", "erit"],
+          "answer": "sit",
+          "why": "quamvīs: subjunctive."
+        },
+        {
+          "q": "Quamquam fessus erat, ＿ labōrāvit.",
+          "en": "Although he was tired, he kept working.",
+          "options": ["ergō", "enim", "tamen", "nam"],
+          "answer": "tamen",
+          "why": "Still: tamen."
+        },
+        {
+          "q": "Quamvīs multī ＿, nōn timēmus.",
+          "en": "However many there are, we're not afraid.",
+          "options": ["sunt", "erunt", "fuērunt", "sint"],
+          "answer": "sint",
+          "why": "quamvīs: subjunctive."
+        }
+      ]
+    },
+    {
+      "id": "wishes",
+      "title": "Wishes: utinam",
+      "particle": "utinam",
+      "summary": "utinam with the subjunctive makes a wish: present for a possible future, imperfect for an unreal present, pluperfect for an unreal past. Negate with nē. (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>Utinam veniat!</b> I hope he comes. <b>Utinam adesset!</b> if only he were here. <b>Utinam vēnisset!</b> if only he had come.",
+          "examples": [
+            ["{Utinam} {valeās}!", "may · you be well", "I hope you're well!"],
+            [
+              "{Utinam} hīc {adessēs}!",
+              "if only · here · you were",
+              "If only you were here!"
+            ]
+          ]
+        },
+        {
+          "h": "Unreal past",
+          "p": "The pluperfect subjunctive wishes for something that can't now be changed: <b>Utinam nē id fēcissem</b> if only I hadn't done it.",
+          "examples": [
+            [
+              "{Utinam} {nē} id {fēcissem}!",
+              "if only · not · that · I had done",
+              "If only I hadn't done that!"
+            ],
+            [
+              "{Utinam} pater {vīveret}!",
+              "if only · father · were alive",
+              "If only my father were alive!"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Utinam ＿!",
+          "en": "I hope you're well!",
+          "options": ["valeās", "valēs", "valēbās", "valuistī"],
+          "answer": "valeās",
+          "why": "Possible wish: present subjunctive."
+        },
+        {
+          "q": "Utinam hīc ＿!",
+          "en": "If only you were here!",
+          "options": ["adsīs", "adessēs", "ades", "aderis"],
+          "answer": "adessēs",
+          "why": "Unreal present: imperfect subjunctive."
+        },
+        {
+          "q": "Utinam ＿ id fēcissem!",
+          "en": "If only I hadn't done that!",
+          "options": ["nōn", "nec", "nē", "nisi"],
+          "answer": "nē",
+          "why": "Negative wish: nē."
+        },
+        {
+          "q": "Utinam pater ＿!",
+          "en": "If only my father were alive!",
+          "options": ["vīvit", "vīvat", "vīxit", "vīveret"],
+          "answer": "vīveret",
+          "why": "Unreal present: imperfect subjunctive."
+        }
+      ]
+    },
+    {
+      "id": "sequence-of-tenses",
+      "title": "Sequence of tenses",
+      "particle": "-at / -ret",
+      "summary": "Which subjunctive tense goes in a clause depends on the main verb: a present or future main verb takes present or perfect subjunctive; a past main verb takes imperfect or pluperfect. (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "Primary sequence: <b>Rogō quid faciās</b> (same time), <b>quid fēcerīs</b> (earlier). Secondary sequence: <b>Rogāvī quid facerēs</b> (same time), <b>quid fēcissēs</b> (earlier).",
+          "examples": [
+            [
+              "Rogō quid {faciās}.",
+              "I ask · what · you are doing",
+              "I'm asking what you're doing."
+            ],
+            [
+              "Rogō quid {fēcerīs}.",
+              "I ask · what · you did",
+              "I'm asking what you did."
+            ]
+          ]
+        },
+        {
+          "h": "Secondary sequence",
+          "p": "Change the main verb to the past and both subjunctives step back one tense.",
+          "examples": [
+            [
+              "Rogāvī quid {facerēs}.",
+              "I asked · what · you were doing",
+              "I asked what you were doing."
+            ],
+            [
+              "Rogāvī quid {fēcissēs}.",
+              "I asked · what · you had done",
+              "I asked what you had done."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Rogō quid ＿.",
+          "en": "I'm asking what you did.",
+          "options": ["fēcerīs", "fēcissēs", "facerēs", "faciēs"],
+          "answer": "fēcerīs",
+          "why": "Primary, earlier: perfect subjunctive."
+        },
+        {
+          "q": "Rogāvī quid ＿.",
+          "en": "I asked what you were doing.",
+          "options": ["faciās", "facerēs", "fēcerīs", "facis"],
+          "answer": "facerēs",
+          "why": "Secondary, same time: imperfect subjunctive."
+        },
+        {
+          "q": "Rogāvī quid ＿.",
+          "en": "I asked what you had done.",
+          "options": ["fēcerīs", "faciās", "fēcissēs", "fēcistī"],
+          "answer": "fēcissēs",
+          "why": "Secondary, earlier: pluperfect subjunctive."
+        },
+        {
+          "q": "Sciō cūr ＿.",
+          "en": "I know why you're crying.",
+          "options": ["flērēs", "flēvissēs", "flēs", "fleās"],
+          "answer": "fleās",
+          "why": "Primary, same time: present subjunctive."
         }
       ]
     }
