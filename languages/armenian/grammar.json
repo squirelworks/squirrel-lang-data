@@ -5,28 +5,19 @@
     "Eastern Armenian first grammar for the Grammar Learner. Written for this project.",
     "Examples are [Armenian, romanization, English]; {braces} mark the point of the lesson.",
     "Drills are { q, en, options, answer, why }; ＿ is the blank.",
-    "",
-    "Sources (open / educational; attested Eastern Armenian — original example sentences):",
-    "- Wiktionary Eastern Armenian lemmas and conjugations (CC BY-SA): ունեմ / ունես / ունի",
-    "  (+ չունեմ…); գրել aorist գրեցի / գրեցիր / գրեց…, future գրելու եմ…, conditional",
-    "  կգրեմ…; ուզել → ուզում եմ; կարող եմ + infinitive.",
-    "- Wikipedia “Eastern Armenian verb table”, “Armenian grammar”, “Armenian language”",
-    "  (CC BY-SA) for beginner overview of aorist vs -ելու future, differential object",
-    "  marking (animate dative -ին vs inanimate nominative), and case endings -ի / -ով.",
-    "- In-repo languages/armenian/reference.json (to-be, present, main cases including",
-    "  -ի / -ից / -ով / -ում) and vocab.js — same Desk pack lemmas; romanization with",
-    "  ë for ը and apostrophe for aspirates matches lessons 1–6.",
-    "Lessons 1–6 unchanged; 7–12 deepen the same seam (have, want, can/must, aorist,",
-    "future, genitive-dative and instrumental)."
+    "CEFR levels are estimates written for this project. The CEFR describes what a learner can do, not which grammar to learn, so no official grammar list exists for it. The official CEFR global scale (Council of Europe, Common European Framework of Reference for Languages, 2001), first sentence of each level: A1 \"Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.\" A2 \"Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).\" B1 \"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.\" B2 \"Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.\" C1 \"Can understand a wide range of demanding, longer texts, and recognise implicit meaning.\" C2 \"Can understand with ease virtually everything heard or read.\" The copyright of the scales belongs to the Council of Europe; these are short quotations.",
+    "Each lesson's summary and each planned point's title ends with its estimated CEFR level; a range (A2–B1) means it's commonly taught at either. The level band is the earliest one: A1 absolute-beginner or beginner, A2 beginner-intermediate, B1 intermediate, B2 advanced-intermediate, C1 and C2 advanced.",
+    "72 lessons, from A1 to C1. Lessons 13–72 were added to cover the rest of the beginner path and the main intermediate and advanced points."
   ],
   "title": "Armenian first grammar",
-  "intro": "Eastern Armenian, the standard language of Armenia, has no grammatical gender. “The” is an ending on the noun, most verbs are built from a participle plus a small helper verb, and endings on nouns do the work of English prepositions. Lessons 1–6 cover “to be”, the article, plurals, the present tense, saying no and asking, and in, from and “my”. Lessons 7–12 add “have” and “want”, can and must, the simple past and future, and of/to and with/by. Armenian ends a sentence with ։ and marks a question with ՞ over the stressed vowel. In the romanization ë is the short “uh” sound and k' is a breathy k.",
+  "intro": "Eastern Armenian, the standard language of Armenia, has no grammatical gender. “The” is an ending on the noun, most verbs are built from a participle plus a small helper verb, and endings on nouns do the work of English prepositions. The 72 lessons run from A1 to C1. They start with “to be”, the article, plurals, the present, cases, “have”, “want” and the simple and future tenses, then add commands, the imperfect and perfect, the subjunctive, relative clauses and participles, եթե for “if”, the passive and causative, and end with the conditional, unreal pasts, the evidential perfect, focus with the helper verb, hearsay and the connectors of written Armenian. Armenian ends a sentence with ։ and marks a question with ՞ over the stressed vowel. In the romanization ë is the short “uh” sound and k' is a breathy k.",
   "lessons": [
     {
       "id": "em",
       "title": "եմ, ես, է — “to be”",
       "particle": "եմ",
-      "summary": "The helper verb “to be”, which goes after the word it describes.",
+      "summary": "The helper verb “to be”, which goes after the word it describes. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "<b>եմ</b> I am, <b>ես</b> you are, <b>է</b> he/she/it is. It follows the word it describes. The pronouns are ես (I), դու (you), նա (he, she). Note that ես is both “I” and “you are”.",
@@ -96,7 +87,8 @@
       "id": "article",
       "title": "“The” is an ending: -ը and -ն",
       "particle": "-ը -ն",
-      "summary": "Add -ը after a consonant and -ն after a vowel; “a” is մի before the noun.",
+      "summary": "Add -ը after a consonant and -ն after a vowel; “a” is մի before the noun. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Armenian puts “the” on the end of the noun: <b>-ը</b> after a consonant, <b>-ն</b> after a vowel. There is no gender, so this is the only choice.",
@@ -157,7 +149,8 @@
       "id": "plural",
       "title": "Plurals: -եր and -ներ",
       "particle": "-եր -ներ",
-      "summary": "One-syllable words add -եր; longer words add -ներ.",
+      "summary": "One-syllable words add -եր; longer words add -ներ. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "A one-syllable noun adds <b>-եր</b>; a noun of two or more syllables adds <b>-ներ</b>. A few common words are irregular: մարդ (person) → մարդիկ.",
@@ -222,7 +215,8 @@
       "id": "present",
       "title": "The present tense: -ում եմ",
       "particle": "-ում",
-      "summary": "Change -ել or -ալ to -ում and add the “to be” helper for the person.",
+      "summary": "Change -ել or -ալ to -ում and add the “to be” helper for the person. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Take the infinitive, change <b>-ել</b> or <b>-ալ</b> to <b>-ում</b>, and add եմ, ես, է… for the person: գրել (to write) → <b>գրում եմ</b> I write, <b>գրում ես</b> you write, <b>գրում է</b> he writes. The same form means “I write” and “I am writing”.",
@@ -299,7 +293,8 @@
       "id": "negative",
       "title": "Saying no, and asking",
       "particle": "չ-",
-      "summary": "Put չ- on the helper and move it before the verb; question words carry ՞.",
+      "summary": "Put չ- on the helper and move it before the verb; question words carry ՞. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "To say “not”, add <b>չ-</b> to the helper and put it in front: <b>չեմ</b>, <b>չես</b>, <b>չի</b> (not չէ), <b>չենք</b>, <b>չեք</b>, <b>չեն</b>. Ես չեմ հասկանում, “I don't understand”. The words for yes and no are <b>այո</b> and <b>ոչ</b>.",
@@ -365,7 +360,8 @@
       "id": "cases",
       "title": "In, from, and “my”",
       "particle": "-ում -ից",
-      "summary": "-ում means “in”, -ից means “from”; իմ, քո, նրա come before the noun.",
+      "summary": "-ում means “in”, -ից means “from”; իմ, քո, նրա come before the noun. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "Endings do the work of prepositions. <b>-ում</b> means “in, at”: Երևան → Երևան<b>ում</b>. <b>-ից</b> means “from”: Երևան<b>ից</b>. “At home” is irregular: տանը.",
@@ -442,7 +438,8 @@
       "id": "unem",
       "title": "ունեմ — “I have”",
       "particle": "ունեմ",
-      "summary": "Having conjugates on its own: ունեմ, ունես, ունի…; “don’t have” is չունեմ.",
+      "summary": "Having conjugates on its own: ունեմ, ունես, ունի…; “don’t have” is չունեմ. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "<b>ունեմ</b> I have, <b>ունես</b> you have, <b>ունի</b> he / she has. The thing owned stays in the nominative: Ես գիրք ունեմ, “I have a book”. Pronouns are often dropped.",
@@ -520,7 +517,8 @@
       "id": "uzum",
       "title": "ուզում եմ — “I want”",
       "particle": "ուզում",
-      "summary": "Wanting uses the present pattern ուզում + helper; follow it with a noun or an infinitive.",
+      "summary": "Wanting uses the present pattern ուզում + helper; follow it with a noun or an infinitive. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "ուզել “to want” builds like any present: <b>ուզում եմ</b> I want, <b>ուզում ես</b> you want, <b>ուզում է</b> he / she wants. You can want a thing: սուրճ եմ ուզում.",
@@ -586,7 +584,8 @@
       "id": "karogh",
       "title": "կարող եմ and պետք է — can and must",
       "particle": "կարող",
-      "summary": "Ability is կարող + “to be” + infinitive; “must” is պետք է before a special verb form.",
+      "summary": "Ability is կարող + “to be” + infinitive; “must” is պետք է before a special verb form. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "<b>կարող եմ</b> I can, <b>կարող ես</b> you can, <b>կարող է</b> he / she can. Put an infinitive after it: կարող եմ խոսել, “I can speak”. Negate the helper: չեմ կարող.",
@@ -665,7 +664,8 @@
       "id": "aorist",
       "title": "գրեցի — the simple past",
       "particle": "գրեցի",
-      "summary": "The aorist finishes an action: endings go straight on the stem, with no helper.",
+      "summary": "The aorist finishes an action: endings go straight on the stem, with no helper. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "The aorist (simple past) of գրել “to write” is <b>գրեցի</b> I wrote, <b>գրեցիր</b> you wrote, <b>գրեց</b> he / she wrote. There is no եմ / ես helper here — the ending itself marks the person.",
@@ -739,7 +739,8 @@
       "id": "future",
       "title": "գրելու եմ — the future",
       "particle": "-ելու",
-      "summary": "Change -ել / -ալ to -ելու and add the “to be” helper; everyday speech also uses կ- forms.",
+      "summary": "Change -ել / -ալ to -ելու and add the “to be” helper; everyday speech also uses կ- forms. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "The standard future replaces the infinitive ending with <b>-ելու</b> (or <b>-ալու</b>) and adds եմ, ես, է…: գրել → <b>գրելու եմ</b> I will write, <b>գրելու ես</b> you will write, <b>գրելու է</b> he / she will write.",
@@ -821,7 +822,8 @@
       "id": "i-ov",
       "title": "Of, to, and with: -ի, -ին, -ով",
       "particle": "-ի -ով",
-      "summary": "-ի is “of / to”; definite people as objects take -ին; -ով means “with, by, through”.",
+      "summary": "-ի is “of / to”; definite people as objects take -ին; -ով means “with, by, through”. (about A1)",
+      "level": "absolute-beginner",
       "sections": [
         {
           "p": "The genitive–dative ending <b>-ի</b> covers “of” and “to”: քաղաք → քաղաք<b>ի</b> “of / to a city”. Definite “the …’s / to the …” often adds <b>-ն</b>: քաղաքի<b>ն</b>. People who are the object of a verb take this definite dative: Արամ → Արամ<b>ին</b> “Aram (as object)”. Things stay nominative as objects: գիրքը տեսնում եմ.",
@@ -900,6 +902,4015 @@
           "options": ["պատուհանով", "պատուհանում", "պատուհանից", "պատուհանի"],
           "answer": "պատուհանով",
           "why": "-ով covers “through” as well as “with / by”."
+        }
+      ]
+    },
+    {
+      "id": "this-that",
+      "title": "This and that: այս, այդ, այն",
+      "particle": "այս այդ այն սա դա նա",
+      "summary": "Armenian has three \"this / that\" words by distance: այս (near me), այդ (near you), այն (over there). Alone they become սա, դա, նա. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "Before a noun: <b>այս</b> (ays) this, <b>այդ</b> (ayd) that (by you), <b>այն</b> (ayn) that (over there). The noun takes the article: <b>այս գիրքը</b> this book.",
+          "examples": [
+            [
+              "{Այս} գիրքը հետաքրքիր է։",
+              "Ays girk'ë hetak'rk'ir e.",
+              "This book is interesting."
+            ],
+            [
+              "{Այն} շենքը դպրոց է։",
+              "Ayn shenk'ë dprots' e.",
+              "That building is a school."
+            ]
+          ]
+        },
+        {
+          "h": "This one, that one, here",
+          "p": "On their own: <b>սա</b> this, <b>դա</b> that, <b>նա</b> that one, he, she. Places: <b>այստեղ</b> here, <b>այդտեղ</b> there (by you), <b>այնտեղ</b> over there.",
+          "examples": [
+            ["{Սա} ի՞նչ է։", "Sa inch' e?", "What is this?"],
+            [
+              "Ես {այստեղ} եմ ապրում։",
+              "Yes aystegh em aprum.",
+              "I live here."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ի՞նչ է։",
+          "en": "What is this?",
+          "options": ["Սա", "Դա", "Այս", "Այստեղ"],
+          "answer": "Սա",
+          "why": "Alone, \"this\": սա."
+        },
+        {
+          "q": "＿ գիրքը հետաքրքիր է։",
+          "en": "This book is interesting.",
+          "options": ["Սա", "Այս", "Այստեղ", "Այդտեղ"],
+          "answer": "Այս",
+          "why": "Before a noun: այս."
+        },
+        {
+          "q": "Ես ＿ եմ ապրում։",
+          "en": "I live here.",
+          "options": ["այս", "սա", "այստեղ", "այնտեղ"],
+          "answer": "այստեղ",
+          "why": "Here: այստեղ."
+        },
+        {
+          "q": "＿ շենքը դպրոց է։",
+          "en": "That building over there is a school.",
+          "options": ["Նա", "Այնտեղ", "Սա", "Այն"],
+          "answer": "Այն",
+          "why": "Far, before a noun: այն."
+        }
+      ]
+    },
+    {
+      "id": "question-words",
+      "title": "Who, what, where: ո՞վ, ի՞նչ, որտե՞ղ",
+      "particle": "ով ինչ որտեղ երբ",
+      "summary": "Question words come before the helper verb, and ՞ sits on their stressed vowel: Որտե՞ղ ես ապրում։ Where do you live? (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ո՞վ</b> (ov) who, <b>ի՞նչ</b> (inch') what, <b>որտե՞ղ</b> (vortegh) where, <b>ե՞րբ</b> (yerb) when, <b>ինչո՞ւ</b> (inch'u) why, <b>ինչպե՞ս</b> (inch'pes) how, <b>քանի՞</b> (k'ani) how many.",
+          "examples": [
+            ["{Որտե՞ղ} ես ապրում։", "Vortegh es aprum?", "Where do you live?"],
+            ["{Ո՞վ} է նա։", "Ov e na?", "Who is he?"]
+          ]
+        },
+        {
+          "h": "How, why, how much",
+          "p": "<b>Ինչպե՞ս ես։</b> How are you? <b>Ինչքա՞ն արժե։</b> How much does it cost? <b>Որտեղի՞ց ես։</b> Where are you from?",
+          "examples": [
+            [
+              "{Ինչո՞ւ} ես հայերեն սովորում։",
+              "Inch'u es hayeren sovorum?",
+              "Why are you learning Armenian?"
+            ],
+            ["{Ինչքա՞ն} արժե։", "Inch'k'an arzhe?", "How much is it?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ես ապրում։",
+          "en": "Where do you live?",
+          "options": ["Որտե՞ղ", "Ո՞վ", "Ե՞րբ", "Ի՞նչ"],
+          "answer": "Որտե՞ղ",
+          "why": "Where: որտեղ."
+        },
+        {
+          "q": "＿ է նա։",
+          "en": "Who is he?",
+          "options": ["Որտե՞ղ", "Ո՞վ", "Ինչպե՞ս", "Ե՞րբ"],
+          "answer": "Ո՞վ",
+          "why": "Who: ով."
+        },
+        {
+          "q": "＿ ես։",
+          "en": "How are you?",
+          "options": ["Ո՞վ", "Ինչո՞ւ", "Ինչպե՞ս", "Քանի՞"],
+          "answer": "Ինչպե՞ս",
+          "why": "How: ինչպես."
+        },
+        {
+          "q": "＿ ես եկել։",
+          "en": "When did you come?",
+          "options": ["Որտե՞ղ", "Ո՞վ", "Ի՞նչ", "Ե՞րբ"],
+          "answer": "Ե՞րբ",
+          "why": "When: երբ."
+        }
+      ]
+    },
+    {
+      "id": "telling-time",
+      "title": "What time is it?",
+      "particle": "ժամը -ին կես",
+      "summary": "Ժամը քանի՞սն է։ asks the time. \"At\" a time uses -ին: ժամը հինգին, at five. (about A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>Ժամը քանի՞սն է։</b> What time is it? <b>Ժամը հինգն է։</b> It's five. <b>հինգն անց կես</b> half past five, <b>հինգն անց տասը</b> ten past five.",
+          "examples": [
+            ["{Ժամը քանի՞սն է}։", "Zhamë k'anisn e?", "What time is it?"],
+            ["{Ժամը յոթն է}։", "Zhamë yot'n e.", "It's seven o'clock."]
+          ]
+        },
+        {
+          "h": "At a time",
+          "p": "Add <b>-ին</b> to the number: <b>ժամը ութին</b> at eight. Minutes: <b>րոպե</b>; hours: <b>ժամ</b>.",
+          "examples": [
+            [
+              "Դասը սկսվում է {ժամը ինին}։",
+              "Dasë sksvum e zhamë inin.",
+              "The lesson starts at nine."
+            ],
+            [
+              "{Տասը րոպեից} կգամ։",
+              "Tasë ropeits' kgam.",
+              "I'll come in ten minutes."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ժամը ＿ է։",
+          "en": "What time is it?",
+          "options": ["քանի՞սն", "ինչ", "ե՞րբ", "ո՞վ"],
+          "answer": "քանի՞սն",
+          "why": "Ժամը քանի՞սն է."
+        },
+        {
+          "q": "Դասը սկսվում է ժամը ＿։",
+          "en": "The lesson starts at nine.",
+          "options": ["ինը", "ինին", "ինից", "ինով"],
+          "answer": "ինին",
+          "why": "At: -ին."
+        },
+        {
+          "q": "Ժամը հինգն անց ＿ է։",
+          "en": "It's half past five.",
+          "options": ["քառորդ", "ժամ", "կես", "րոպե"],
+          "answer": "կես",
+          "why": "Half: կես."
+        },
+        {
+          "q": "Տասը ＿ կգամ։",
+          "en": "I'll come in ten minutes.",
+          "options": ["րոպե", "րոպեին", "րոպեով", "րոպեից"],
+          "answer": "րոպեից",
+          "why": "In (after) a time: -ից."
+        }
+      ]
+    },
+    {
+      "id": "days",
+      "title": "Days and time words",
+      "particle": "այսօր վաղը երեկ",
+      "summary": "Days of the week use -շաբթի for Monday to Thursday; time words like այսօր (today) need no ending. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>երկուշաբթի</b> Monday, <b>երեքշաբթի</b> Tuesday, <b>չորեքշաբթի</b> Wednesday, <b>հինգշաբթի</b> Thursday, <b>ուրբաթ</b> Friday, <b>շաբաթ</b> Saturday, <b>կիրակի</b> Sunday. \"On Monday\": <b>երկուշաբթի օրը</b>.",
+          "examples": [
+            ["{Այսօր} ուրբաթ է։", "Aysor urbat' e.", "Today is Friday."],
+            [
+              "{Կիրակի օրը} չեմ աշխատում։",
+              "Kiraki orë ch'em ashkhatum.",
+              "I don't work on Sunday."
+            ]
+          ]
+        },
+        {
+          "h": "Yesterday, tomorrow",
+          "p": "<b>այսօր</b> today, <b>վաղը</b> tomorrow, <b>երեկ</b> yesterday, <b>հիմա</b> now, <b>առավոտյան</b> in the morning, <b>երեկոյան</b> in the evening.",
+          "examples": [
+            [
+              "{Վաղը} Երևան եմ գնում։",
+              "Vaghë Yerevan em gnum.",
+              "I'm going to Yerevan tomorrow."
+            ],
+            [
+              "{Երեկ} անձրև էր գալիս։",
+              "Yerek andzrev er galis.",
+              "It was raining yesterday."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ուրբաթ է։",
+          "en": "Today is Friday.",
+          "options": ["Այսօր", "Վաղը", "Երեկ", "Հիմա"],
+          "answer": "Այսօր",
+          "why": "Today: այսօր."
+        },
+        {
+          "q": "＿ Երևան եմ գնում։",
+          "en": "I'm going to Yerevan tomorrow.",
+          "options": ["Երեկ", "Վաղը", "Այսօր էր", "Երեկոյան էր"],
+          "answer": "Վաղը",
+          "why": "Tomorrow: վաղը."
+        },
+        {
+          "q": "Կիրակի ＿ չեմ աշխատում։",
+          "en": "I don't work on Sunday.",
+          "options": ["օր", "օրից", "օրը", "օրով"],
+          "answer": "օրը",
+          "why": "On a day: … օրը."
+        },
+        {
+          "q": "＿ անձրև էր գալիս։",
+          "en": "It was raining yesterday.",
+          "options": ["Վաղը", "Հիմա", "Այսօր", "Երեկ"],
+          "answer": "Երեկ",
+          "why": "Yesterday: երեկ."
+        }
+      ]
+    },
+    {
+      "id": "comparison",
+      "title": "Bigger, biggest: ավելի, քան, ամենա-",
+      "particle": "ավելի քան -ից ամենա-",
+      "summary": "ավելի means \"more\"; \"than\" is քան or the ending -ից; ամենա- glued to the adjective makes \"the most\". (about A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>ավելի մեծ</b> bigger. \"Than\": <b>քան</b> before the noun, or <b>-ից</b> on it: <b>ինձնից բարձր</b> taller than me.",
+          "examples": [
+            [
+              "Երևանը {ավելի} մեծ է, {քան} Գյումրին։",
+              "Yerevanë aveli mets e, k'an Gyumrin.",
+              "Yerevan is bigger than Gyumri."
+            ],
+            [
+              "Եղբայրս {ինձնից} բարձր է։",
+              "Yeghbayrs indznits' bardzr e.",
+              "My brother is taller than me."
+            ]
+          ]
+        },
+        {
+          "h": "The most: ամենա-",
+          "p": "<b>ամենա-</b> joins the adjective: <b>ամենամեծ</b> the biggest, <b>ամենալավ</b> the best.",
+          "examples": [
+            [
+              "Արագածը Հայաստանի {ամենաբարձր} լեռն է։",
+              "Aragatsë Hayastani amenabardzr lerrn e.",
+              "Aragats is the highest mountain in Armenia."
+            ],
+            [
+              "Սա {ամենալավ} ռեստորանն է։",
+              "Sa amenalav rrestorann e.",
+              "This is the best restaurant."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Երևանը ＿ մեծ է, քան Գյումրին։",
+          "en": "Yerevan is bigger than Gyumri.",
+          "options": ["ավելի", "ամենա", "շատ էլ", "քան"],
+          "answer": "ավելի",
+          "why": "More: ավելի."
+        },
+        {
+          "q": "Եղբայրս ＿ բարձր է։",
+          "en": "My brother is taller than me.",
+          "options": ["ինձ", "ինձնից", "իմ", "ես"],
+          "answer": "ինձնից",
+          "why": "Than: -ից."
+        },
+        {
+          "q": "Սա ＿ ռեստորանն է։",
+          "en": "This is the best restaurant.",
+          "options": ["ավելի լավ", "լավից", "ամենալավ", "լավ քան"],
+          "answer": "ամենալավ",
+          "why": "Most: ամենա-."
+        },
+        {
+          "q": "Թեյը ավելի տաք է, ＿ ջուրը։",
+          "en": "Tea is hotter than water.",
+          "options": ["ավելի", "ամենա", "-ից", "քան"],
+          "answer": "քան",
+          "why": "Than: քան."
+        }
+      ]
+    },
+    {
+      "id": "possessive-suffixes",
+      "title": "My, your: -ս, -դ",
+      "particle": "-ս -դ",
+      "summary": "Instead of իմ / քո, Armenian often adds -ս (my) or -դ (your) to the noun: անունս, my name; տունդ, your house. (about A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>-ս</b> (-s) my, <b>-դ</b> (-d) your. After a vowel or for clarity: <b>-յս</b>, <b>-յդ</b>: <b>մայրս</b> my mother, <b>ընկերդ</b> your friend.",
+          "examples": [
+            ["{Անունս} Աննա է։", "Anuns Anna e.", "My name is Anna."],
+            ["{Անունդ} ի՞նչ է։", "Anund inch' e?", "What's your name?"]
+          ]
+        },
+        {
+          "h": "With case endings",
+          "p": "The suffix goes after the case ending: <b>տանս</b> (in) my house, <b>ընկերոջս հետ</b> with my friend, <b>քաղաքումդ</b> in your city.",
+          "examples": [
+            ["{Մայրս} բժիշկ է։", "Mayrs bzhishk e.", "My mother is a doctor."],
+            ["{Ընկերոջս հետ} եմ։", "Ënkerojs het em.", "I'm with my friend."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ Աննա է։",
+          "en": "My name is Anna.",
+          "options": ["Անունս", "Անունդ", "Անունը", "Անունն"],
+          "answer": "Անունս",
+          "why": "My: -ս."
+        },
+        {
+          "q": "＿ ի՞նչ է։",
+          "en": "What's your name?",
+          "options": ["Անունս", "Անունդ", "Անունի", "Անունով"],
+          "answer": "Անունդ",
+          "why": "Your: -դ."
+        },
+        {
+          "q": "＿ բժիշկ է։",
+          "en": "My mother is a doctor.",
+          "options": ["Մայրդ", "Մայրը", "Մայրս", "Մոր"],
+          "answer": "Մայրս",
+          "why": "My: -ս."
+        },
+        {
+          "q": "Ընկերոջ＿ հետ եմ։",
+          "en": "I'm with my friend.",
+          "options": ["դ", "ը", "ն", "ս"],
+          "answer": "ս",
+          "why": "-ս after the case form."
+        }
+      ]
+    },
+    {
+      "id": "imperatives",
+      "title": "Commands: գրի՛ր, գրե՛ք",
+      "particle": "-իր -եք -ա",
+      "summary": "Commands have a singular and a plural (also polite) form: գրի՛ր, write! գրե՛ք, write! (polite). ՛ marks the stress. (about A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>-ել</b> verbs: <b>գրի՛ր</b>, <b>գրե՛ք</b>; <b>-ալ</b> verbs: <b>կարդա՛</b>, <b>կարդացե՛ք</b>. Irregular: <b>արի՛</b> come, <b>գնա՛</b> go, <b>տու՛ր</b> give, <b>ասա՛</b> say.",
+          "examples": [
+            ["{Արի՛} այստեղ։", "Ari aystegh!", "Come here!"],
+            ["{Նստե՛ք}, խնդրեմ։", "Nstek', khndrem.", "Please sit down."]
+          ]
+        },
+        {
+          "h": "Please",
+          "p": "<b>խնդրեմ</b> (khndrem) or <b>խնդրում եմ</b> please. <b>Տվե՛ք</b> give (polite), <b>ասե՛ք</b> tell (polite).",
+          "examples": [
+            [
+              "Մի բաժակ ջուր {տվե՛ք}, խնդրեմ։",
+              "Mi bazhak jur tvek', khndrem.",
+              "A glass of water, please."
+            ],
+            ["{Կարդա՛} այս գիրքը։", "Karda ays girk'ë.", "Read this book."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ այստեղ։",
+          "en": "Come here!",
+          "options": ["Արի՛", "Գնա՛", "Տու՛ր", "Ասա՛"],
+          "answer": "Արի՛",
+          "why": "Come: արի."
+        },
+        {
+          "q": "＿, խնդրեմ։",
+          "en": "Please sit down. (polite)",
+          "options": ["Նստի՛ր", "Նստե՛ք", "Նստում է", "Նստեց"],
+          "answer": "Նստե՛ք",
+          "why": "Polite: -եք."
+        },
+        {
+          "q": "Մի բաժակ ջուր ＿, խնդրեմ։",
+          "en": "A glass of water, please.",
+          "options": ["տու՛ր", "տալիս է", "տվե՛ք", "տվեց"],
+          "answer": "տվե՛ք",
+          "why": "Polite give: տվեք."
+        },
+        {
+          "q": "＿ այս գիրքը։",
+          "en": "Read this book.",
+          "options": ["Կարդի՛ր", "Կարդում", "Կարդաց", "Կարդա՛"],
+          "answer": "Կարդա՛",
+          "why": "-ալ verbs: կարդա."
+        }
+      ]
+    },
+    {
+      "id": "negative-imperative",
+      "title": "Don't: մի՛",
+      "particle": "մի",
+      "summary": "մի՛ before the command means \"don't\": Մի՛ անհանգստացիր, don't worry. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>մի՛</b> + singular command: <b>մի՛ գրիր</b> don't write, <b>մի՛ խոսիր</b> don't talk. -ալ verbs: <b>մի՛ կարդա</b>. Plural: <b>մի՛ գրեք</b>.",
+          "examples": [
+            ["{Մի՛} անհանգստացիր։", "Mi anhangstats'ir.", "Don't worry."],
+            ["{Մի՛} մոռացիր։", "Mi morrats'ir.", "Don't forget."]
+          ]
+        },
+        {
+          "h": "Rules and signs",
+          "p": "Signs often use <b>-ել չի կարելի</b> (it is not allowed) or <b>արգելվում է</b> (is forbidden).",
+          "examples": [
+            [
+              "Այստեղ ծխել {չի կարելի}։",
+              "Aystegh tskhel ch'i kareli.",
+              "You can't smoke here."
+            ],
+            ["{Մի՛ արա}։", "Mi ara!", "Don't do it!"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ անհանգստացիր։",
+          "en": "Don't worry.",
+          "options": ["Մի՛", "Չ", "Ոչ", "Չէ"],
+          "answer": "Մի՛",
+          "why": "Don't: մի."
+        },
+        {
+          "q": "Մի՛ ＿։",
+          "en": "Don't forget.",
+          "options": ["մոռացա", "մոռացիր", "մոռանում", "մոռանա"],
+          "answer": "մոռացիր",
+          "why": "մի + command form."
+        },
+        {
+          "q": "Այստեղ ծխել չի ＿։",
+          "en": "You can't smoke here.",
+          "options": ["կարող", "պետք", "կարելի", "ուզում"],
+          "answer": "կարելի",
+          "why": "Not allowed: չի կարելի."
+        },
+        {
+          "q": "Մի՛ ＿, խնդրում եմ։",
+          "en": "Please don't talk.",
+          "options": ["խոսում եք", "խոսեցիք", "խոսելու", "խոսեք"],
+          "answer": "խոսեք",
+          "why": "Plural: մի … -եք."
+        }
+      ]
+    },
+    {
+      "id": "past-be",
+      "title": "Was, were: էի, էր",
+      "particle": "էի էիր էր",
+      "summary": "The past of the helper is էի, էիր, էր, էինք, էիք, էին: Երեկ տանն էի, I was at home yesterday. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>էի</b> I was, <b>էիր</b> you were, <b>էր</b> he / she was, <b>էինք</b> we were, <b>էիք</b> you were, <b>էին</b> they were. Negative: <b>չէի</b>, <b>չէր</b>.",
+          "examples": [
+            ["Երեկ տանն {էի}։", "Yerek tann ei.", "I was at home yesterday."],
+            ["Նա հիվանդ {էր}։", "Na hivand er.", "She was ill."]
+          ]
+        },
+        {
+          "h": "There was",
+          "p": "<b>կար</b> means \"there was\", <b>չկար</b> \"there wasn't\": <b>Մարդ չկար</b> there was nobody.",
+          "examples": [
+            [
+              "Մենք Երևանում {էինք}։",
+              "Menk' Yerevanum eink'.",
+              "We were in Yerevan."
+            ],
+            [
+              "Խանութում հաց {չկար}։",
+              "Khanutum hats' ch'kar.",
+              "There was no bread in the shop."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Երեկ տանն ＿։",
+          "en": "I was at home yesterday.",
+          "options": ["էի", "էր", "եմ", "էիր"],
+          "answer": "էի",
+          "why": "I was: էի."
+        },
+        {
+          "q": "Նա հիվանդ ＿։",
+          "en": "She was ill.",
+          "options": ["էի", "էր", "է", "էին"],
+          "answer": "էր",
+          "why": "He / she was: էր."
+        },
+        {
+          "q": "Մենք Երևանում ＿։",
+          "en": "We were in Yerevan.",
+          "options": ["էին", "ենք", "էինք", "էիք"],
+          "answer": "էինք",
+          "why": "We were: էինք."
+        },
+        {
+          "q": "Խանութում հաց ＿։",
+          "en": "There was no bread in the shop.",
+          "options": ["չկա", "չէր", "չէի", "չկար"],
+          "answer": "չկար",
+          "why": "There wasn't: չկար."
+        }
+      ]
+    },
+    {
+      "id": "imperfect",
+      "title": "Was doing, used to: -ում էի",
+      "particle": "-ում էի",
+      "summary": "The present participle with էի means \"was doing\" or \"used to do\": գրում էի, I was writing. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>գրում էի</b> I was writing, <b>ապրում էինք</b> we used to live. The helper can move forward like in the present: <b>Նամակ էի գրում</b>.",
+          "examples": [
+            [
+              "Երբ զանգեցիր, նամակ {էի գրում}։",
+              "Yerb zangets'ir, namak ei grum.",
+              "When you called, I was writing a letter."
+            ],
+            [
+              "Մանկուց գյուղում {էինք ապրում}։",
+              "Mankuts' gyughum eink' aprum.",
+              "As children we lived in a village."
+            ]
+          ]
+        },
+        {
+          "h": "Used to",
+          "p": "The same form gives past habits: <b>Ամեն օր լողում էի</b> I used to swim every day.",
+          "examples": [
+            [
+              "Նա շատ {էր կարդում}։",
+              "Na shat er kardum.",
+              "She used to read a lot."
+            ],
+            [
+              "Երեկ ամբողջ օրը անձրև {էր գալիս}։",
+              "Yerek amboghj orë andzrev er galis.",
+              "It rained all day yesterday."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Երբ զանգեցիր, նամակ ＿ գրում։",
+          "en": "When you called I was writing a letter.",
+          "options": ["էի", "եմ", "էր", "կլինեմ"],
+          "answer": "էի",
+          "why": "I was: էի."
+        },
+        {
+          "q": "Նա շատ էր ＿։",
+          "en": "She used to read a lot.",
+          "options": ["կարդաց", "կարդում", "կարդա", "կարդալու"],
+          "answer": "կարդում",
+          "why": "Imperfect: -ում + էր."
+        },
+        {
+          "q": "Մենք գյուղում ＿ ապրում։",
+          "en": "We used to live in a village.",
+          "options": ["ենք", "էին", "էինք", "էիր"],
+          "answer": "էինք",
+          "why": "We: էինք."
+        },
+        {
+          "q": "Երեկ անձրև էր ＿։",
+          "en": "It was raining yesterday.",
+          "options": ["գալու", "եկավ", "եկել", "գալիս"],
+          "answer": "գալիս",
+          "why": "Imperfect of գալ: գալիս էր."
+        }
+      ]
+    },
+    {
+      "id": "perfect",
+      "title": "Have done: գրել եմ",
+      "particle": "-ել եմ -ացել եմ",
+      "summary": "The perfect is a participle in -ել plus the helper: գրել եմ, I have written. It's the usual way to say \"have you ever …?\" (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>-ել</b> verbs keep the infinitive form: <b>գրել եմ</b>. <b>-ալ</b> verbs take <b>-ացել</b>: <b>կարդացել եմ</b> I have read. Irregular: <b>եկել</b> come, <b>գնացել</b> go, <b>եղել</b> been.",
+          "examples": [
+            [
+              "Այս գիրքը {կարդացել եմ}։",
+              "Ays girk'ë kardats'el em.",
+              "I've read this book."
+            ],
+            [
+              "{Եղե՞լ ես} Հայաստանում։",
+              "Yeghel es Hayastanum?",
+              "Have you been to Armenia?"
+            ]
+          ]
+        },
+        {
+          "h": "Never, already",
+          "p": "<b>երբեք չեմ … -ել</b> I've never: <b>Երբեք չեմ եղել</b>. <b>արդեն</b> already: <b>Արդեն կերել եմ</b> I've already eaten.",
+          "examples": [
+            [
+              "Երբեք {չեմ եղել} Փարիզում։",
+              "Yerbek' ch'em yeghel P'arizum.",
+              "I've never been to Paris."
+            ],
+            ["Արդեն {կերել եմ}։", "Arden kerel em.", "I've already eaten."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Այս գիրքը ＿ եմ։",
+          "en": "I've read this book.",
+          "options": ["կարդացել", "կարդում", "կարդալ", "կարդաց"],
+          "answer": "կարդացել",
+          "why": "Perfect of -ալ: -ացել."
+        },
+        {
+          "q": "＿ ես Հայաստանում։",
+          "en": "Have you been to Armenia?",
+          "options": ["Կա՞", "Եղե՞լ", "Է՞", "Լինու՞մ"],
+          "answer": "Եղե՞լ",
+          "why": "Been: եղել."
+        },
+        {
+          "q": "Երբեք ＿ եղել Փարիզում։",
+          "en": "I've never been to Paris.",
+          "options": ["չի", "մի", "չեմ", "ոչ"],
+          "answer": "չեմ",
+          "why": "Never: երբեք չ-."
+        },
+        {
+          "q": "Արդեն ＿ եմ։",
+          "en": "I've already eaten.",
+          "options": ["ուտում", "կերա", "ուտելու", "կերել"],
+          "answer": "կերել",
+          "why": "Perfect of ուտել: կերել."
+        }
+      ]
+    },
+    {
+      "id": "like",
+      "title": "Like: սիրում եմ, դուր է գալիս",
+      "particle": "սիրում եմ դուր գալ",
+      "summary": "սիրում եմ means \"I love / like (doing)\"; for \"I like this\" Armenian says ինձ դուր է գալիս, literally \"it comes pleasing to me\". (about A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>Սիրում եմ սուրճ</b> I like coffee; <b>Սիրում եմ կարդալ</b> I like reading. <b>Ինձ դուր է գալիս</b> I like it: the person is in the dative.",
+          "examples": [
+            [
+              "{Սիրում եմ} երաժշտություն։",
+              "Sirum em yerazhshtut'yun.",
+              "I love music."
+            ],
+            [
+              "Այս քաղաքը {ինձ դուր է գալիս}։",
+              "Ays k'aghak'ë indz dur e galis.",
+              "I like this city."
+            ]
+          ]
+        },
+        {
+          "h": "Liked",
+          "p": "Past: <b>դուր եկավ</b>: <b>Ֆիլմը քեզ դո՞ւր եկավ</b> did you like the film?",
+          "examples": [
+            [
+              "Ֆիլմը {քեզ դո՞ւր եկավ}։",
+              "Filmë k'ez dur yekav?",
+              "Did you like the film?"
+            ],
+            [
+              "Նա {սիրում է} պարել։",
+              "Na sirum e parel.",
+              "She loves dancing."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ եմ երաժշտություն։",
+          "en": "I love music.",
+          "options": ["Սիրում", "Դուր", "Ուզում", "Կարող"],
+          "answer": "Սիրում",
+          "why": "Love, like: սիրում."
+        },
+        {
+          "q": "Այս քաղաքը ＿ դուր է գալիս։",
+          "en": "I like this city.",
+          "options": ["ես", "ինձ", "իմ", "ինձնից"],
+          "answer": "ինձ",
+          "why": "The liker is in the dative."
+        },
+        {
+          "q": "Ֆիլմը քեզ դուր ＿։",
+          "en": "Did you like the film?",
+          "options": ["գալի՞ս", "կգա՞", "եկա՞վ", "եկե՞լ"],
+          "answer": "եկա՞վ",
+          "why": "Past: դուր եկավ."
+        },
+        {
+          "q": "Նա սիրում է ＿։",
+          "en": "She loves dancing.",
+          "options": ["պարում", "պարեց", "պարի", "պարել"],
+          "answer": "պարել",
+          "why": "After սիրել: infinitive."
+        }
+      ]
+    },
+    {
+      "id": "need",
+      "title": "I need: ինձ պետք է",
+      "particle": "պետք է",
+      "summary": "\"I need X\" is ինձ X է պետք (X is needed to me); պետք է + verb means \"must\". (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "The person in the dative, the thing in the nominative: <b>Ինձ օգնություն է պետք</b> I need help. <b>Ի՞նչ է քեզ պետք</b> what do you need? <b>Պետք չէ</b> there's no need.",
+          "examples": [
+            [
+              "{Ինձ} օգնություն {է պետք}։",
+              "Indz ognut'yun e petk'.",
+              "I need help."
+            ],
+            ["{Ի՞նչ է քեզ պետք}։", "Inch' e k'ez petk'?", "What do you need?"]
+          ]
+        },
+        {
+          "h": "No need",
+          "p": "<b>պետք չէ</b> it's not needed; <b>-ել պետք չէ</b> no need to: <b>Անհանգստանալ պետք չէ</b> no need to worry.",
+          "examples": [
+            [
+              "Տոմս գնել {պետք չէ}։",
+              "Toms gnel petk' ch'e.",
+              "There's no need to buy a ticket."
+            ],
+            [
+              "Նրան նոր կոշիկ {է պետք}։",
+              "Nran nor koshik e petk'.",
+              "He needs new shoes."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ինձ օգնություն է ＿։",
+          "en": "I need help.",
+          "options": ["պետք", "ուզում", "կարող", "սիրում"],
+          "answer": "պետք",
+          "why": "Need: պետք."
+        },
+        {
+          "q": "Ի՞նչ է ＿ պետք։",
+          "en": "What do you need?",
+          "options": ["դու", "քեզ", "քո", "քեզնից"],
+          "answer": "քեզ",
+          "why": "The needer is in the dative."
+        },
+        {
+          "q": "Տոմս գնել պետք ＿։",
+          "en": "There's no need to buy a ticket.",
+          "options": ["չի", "չեմ", "չէ", "մի"],
+          "answer": "չէ",
+          "why": "Not needed: պետք չէ."
+        },
+        {
+          "q": "＿ նոր կոշիկ է պետք։",
+          "en": "He needs new shoes.",
+          "options": ["Նա", "Նրա", "Նրանից", "Նրան"],
+          "answer": "Նրան",
+          "why": "Him: նրան."
+        }
+      ]
+    },
+    {
+      "id": "there-is",
+      "title": "There is: կա, չկա",
+      "particle": "կա չկա",
+      "summary": "կա means \"there is\", չկա \"there isn't\"; the plural is կան. (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>Այստեղ սրճարան կա՞</b> is there a café here? <b>Հաց չկա</b> there's no bread. Past: <b>կար</b>, <b>չկար</b>.",
+          "examples": [
+            [
+              "Մոտակայքում բանկ {կա՞}։",
+              "Motakayk'um bank ka?",
+              "Is there a bank nearby?"
+            ],
+            [
+              "Սառնարանում կաթ {չկա}։",
+              "Sarrnaranum kat' ch'ka.",
+              "There's no milk in the fridge."
+            ]
+          ]
+        },
+        {
+          "h": "Plural, and \"is in\"",
+          "p": "<b>կան</b> there are: <b>Այստեղ շատ զբոսաշրջիկներ կան</b>. For a specific known thing use the helper: <b>Գիրքը սեղանին է</b> the book is on the table.",
+          "examples": [
+            [
+              "Այգում շատ ծառեր {կան}։",
+              "Aygum shat tsarrer kan.",
+              "There are many trees in the park."
+            ],
+            [
+              "Մայրս տանը {չէ}։",
+              "Mayrs tanë ch'e.",
+              "My mother isn't at home."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Մոտակայքում բանկ ＿։",
+          "en": "Is there a bank nearby?",
+          "options": ["կա՞", "է՞", "ունի՞", "կա՞ն"],
+          "answer": "կա՞",
+          "why": "There is: կա."
+        },
+        {
+          "q": "Սառնարանում կաթ ＿։",
+          "en": "There's no milk in the fridge.",
+          "options": ["չէ", "չկա", "չունի", "չկան"],
+          "answer": "չկա",
+          "why": "There isn't: չկա."
+        },
+        {
+          "q": "Այգում շատ ծառեր ＿։",
+          "en": "There are many trees in the park.",
+          "options": ["կա", "են", "կան", "ունեն"],
+          "answer": "կան",
+          "why": "Plural: կան."
+        },
+        {
+          "q": "Մայրս տանը ＿։",
+          "en": "My mother isn't at home.",
+          "options": ["չկա", "չունի", "չեն", "չէ"],
+          "answer": "չէ",
+          "why": "A known person: the helper չէ."
+        }
+      ]
+    },
+    {
+      "id": "postpositions",
+      "title": "On, under, near: վրա, տակ, մոտ",
+      "particle": "վրա տակ մոտ կողքին առջև",
+      "summary": "Place words come after the noun, which takes -ի: սեղանի վրա, on the table. (about A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>վրա</b> on, <b>տակ</b> under, <b>մեջ</b> in, <b>մոտ</b> near, at, <b>կողքին</b> next to, <b>առջև</b> in front of, <b>հետևում</b> behind.",
+          "examples": [
+            [
+              "Գիրքը {սեղանի վրա} է։",
+              "Girk'ë seghani vra e.",
+              "The book is on the table."
+            ],
+            [
+              "Կատուն {մահճակալի տակ} է։",
+              "Katun mahchakali tak e.",
+              "The cat is under the bed."
+            ]
+          ]
+        },
+        {
+          "h": "With people: մոտ, հետ",
+          "p": "<b>մոտ</b> also means \"at someone's\": <b>ընկերոջս մոտ</b> at my friend's. <b>հետ</b> means \"with\": <b>քեզ հետ</b> with you, <b>մայրիկիս հետ</b> with my mom.",
+          "examples": [
+            [
+              "Խանութը {բանկի կողքին} է։",
+              "Khanutë banki koghk'in e.",
+              "The shop is next to the bank."
+            ],
+            [
+              "Ուզում եմ {քեզ հետ} գնալ։",
+              "Uzum em k'ez het gnal.",
+              "I want to go with you."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Գիրքը սեղանի ＿ է։",
+          "en": "The book is on the table.",
+          "options": ["վրա", "տակ", "մեջ", "հետ"],
+          "answer": "վրա",
+          "why": "On: վրա."
+        },
+        {
+          "q": "Կատուն մահճակալի ＿ է։",
+          "en": "The cat is under the bed.",
+          "options": ["վրա", "տակ", "կողքին", "հետ"],
+          "answer": "տակ",
+          "why": "Under: տակ."
+        },
+        {
+          "q": "Խանութը բանկի ＿ է։",
+          "en": "The shop is next to the bank.",
+          "options": ["տակ", "վրա", "կողքին", "հետ"],
+          "answer": "կողքին",
+          "why": "Next to: կողքին."
+        },
+        {
+          "q": "Ուզում եմ քեզ ＿ գնալ։",
+          "en": "I want to go with you.",
+          "options": ["մոտ", "վրա", "մեջ", "հետ"],
+          "answer": "հետ",
+          "why": "With: հետ."
+        }
+      ]
+    },
+    {
+      "id": "conjunctions",
+      "title": "And, but, or, because",
+      "particle": "և բայց կամ որովհետև",
+      "summary": "և (or ու) is \"and\", բայց \"but\", կամ \"or\", որովհետև \"because\" and դրա համար \"that's why\". (about A2)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>և</b> / <b>ու</b> and, <b>բայց</b> but, <b>կամ</b> or. In questions \"or\" is also <b>թե</b>: <b>Թե՞յ, թե՞ սուրճ</b> tea or coffee?",
+          "examples": [
+            [
+              "Հոգնած եմ, {բայց} երջանիկ։",
+              "Hognats em, bayts' yerjanik.",
+              "I'm tired, but happy."
+            ],
+            ["Թեյ {կամ} սուրճ։", "T'ey kam surch?", "Tea or coffee?"]
+          ]
+        },
+        {
+          "h": "Because, so",
+          "p": "<b>որովհետև</b> (vorovhetev) because; <b>դրա համար</b> (dra hamar) that's why, so.",
+          "examples": [
+            [
+              "Չեկա, {որովհետև} հիվանդ էի։",
+              "Ch'eka, vorovhetev hivand ei.",
+              "I didn't come because I was ill."
+            ],
+            [
+              "Անձրև է գալիս, {դրա համար} տանն եմ։",
+              "Andzrev e galis, dra hamar tann em.",
+              "It's raining, so I'm at home."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Հոգնած եմ, ＿ երջանիկ։",
+          "en": "I'm tired, but happy.",
+          "options": ["բայց", "և", "կամ", "որովհետև"],
+          "answer": "բայց",
+          "why": "But: բայց."
+        },
+        {
+          "q": "Թեյ ＿ սուրճ։",
+          "en": "Tea or coffee?",
+          "options": ["և", "կամ", "բայց", "դրա համար"],
+          "answer": "կամ",
+          "why": "Or: կամ."
+        },
+        {
+          "q": "Չեկա, ＿ հիվանդ էի։",
+          "en": "I didn't come because I was ill.",
+          "options": ["դրա համար", "բայց", "որովհետև", "կամ"],
+          "answer": "որովհետև",
+          "why": "Because: որովհետև."
+        },
+        {
+          "q": "Անձրև է գալիս, ＿ տանն եմ։",
+          "en": "It's raining, so I'm at home.",
+          "options": ["որովհետև", "կամ", "բայց", "դրա համար"],
+          "answer": "դրա համար",
+          "why": "So: դրա համար."
+        }
+      ]
+    },
+    {
+      "id": "aorist-irregular",
+      "title": "Went, came, saw: common pasts",
+      "particle": "գնացի եկա տեսա",
+      "summary": "Many everyday verbs have their own aorist: գնացի (I went), եկա (I came), տեսա (I saw), կերա (I ate), արեցի (I did). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>-ալ</b> verbs add <b>-աց-</b>: <b>կարդացի</b> I read, <b>կարդաց</b> he read. Common irregulars: <b>գնացի / գնաց</b> went, <b>եկա / եկավ</b> came, <b>տեսա / տեսավ</b> saw, <b>կերա / կերավ</b> ate, <b>ասացի / ասաց</b> said.",
+          "examples": [
+            [
+              "Երեկ կինո {գնացի}։",
+              "Yerek kino gnats'i.",
+              "I went to the cinema yesterday."
+            ],
+            ["Նա ուշ {եկավ}։", "Na ush yekav.", "He came late."]
+          ]
+        },
+        {
+          "h": "The rest of the persons",
+          "p": "<b>գնացի, գնացիր, գնաց, գնացինք, գնացիք, գնացին</b>. <b>եկա, եկար, եկավ, եկանք, եկաք, եկան</b>.",
+          "examples": [
+            ["Քեզ երեկ {տեսա}։", "K'ez yerek tesa.", "I saw you yesterday."],
+            ["Ի՞նչ {արեցիր}։", "Inch' arets'ir?", "What did you do?"]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Երեկ կինո ＿։",
+          "en": "I went to the cinema yesterday.",
+          "options": ["գնացի", "գնացել", "գնում եմ", "գնամ"],
+          "answer": "գնացի",
+          "why": "I went: գնացի."
+        },
+        {
+          "q": "Նա ուշ ＿։",
+          "en": "He came late.",
+          "options": ["եկա", "եկավ", "գալիս է", "կգա"],
+          "answer": "եկավ",
+          "why": "He came: եկավ."
+        },
+        {
+          "q": "Քեզ երեկ ＿։",
+          "en": "I saw you yesterday.",
+          "options": ["տեսավ", "տեսնում եմ", "տեսա", "տեսել"],
+          "answer": "տեսա",
+          "why": "I saw: տեսա."
+        },
+        {
+          "q": "Ի՞նչ ＿։",
+          "en": "What did you do?",
+          "options": ["արեցի", "անում ես", "արել", "արեցիր"],
+          "answer": "արեցիր",
+          "why": "You did: արեցիր."
+        }
+      ]
+    },
+    {
+      "id": "k-future",
+      "title": "Will: կ- + subjunctive",
+      "particle": "կ-",
+      "summary": "Besides -ելու եմ, the everyday future is կ- before the subjunctive: կգամ (I'll come), կգրեմ (I'll write). Negative: չեմ գա. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>կ-</b> joins the subjunctive form: <b>կգրեմ, կգրես, կգրի</b>; <b>կգամ</b> I'll come, <b>կտեսնենք</b> we'll see. The future of \"be\" is <b>կլինի</b> it will be.",
+          "examples": [
+            ["Վաղը {կգամ}։", "Vaghë kgam.", "I'll come tomorrow."],
+            ["{Կտեսնենք}։", "Ktesnenk'.", "We'll see."]
+          ]
+        },
+        {
+          "h": "Won't",
+          "p": "The negative drops կ- and uses the helper: <b>չեմ գա</b> I won't come, <b>չի լինի</b> it won't be.",
+          "examples": [
+            ["Վաղը {չեմ գա}։", "Vaghë ch'em ga.", "I won't come tomorrow."],
+            [
+              "Եղանակը լավ {կլինի}։",
+              "Yeghanakë lav klini.",
+              "The weather will be good."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Վաղը ＿։",
+          "en": "I'll come tomorrow.",
+          "options": ["կգամ", "եկա", "գալիս եմ", "կգա"],
+          "answer": "կգամ",
+          "why": "I will come: կգամ."
+        },
+        {
+          "q": "＿։",
+          "en": "We'll see.",
+          "options": ["Տեսանք", "Կտեսնենք", "Տեսնում ենք", "Տեսել ենք"],
+          "answer": "Կտեսնենք",
+          "why": "We will: կ- … -ենք."
+        },
+        {
+          "q": "Վաղը ＿ գա։",
+          "en": "I won't come tomorrow.",
+          "options": ["չի", "մի", "չեմ", "ոչ"],
+          "answer": "չեմ",
+          "why": "Won't: չեմ + subjunctive."
+        },
+        {
+          "q": "Եղանակը լավ ＿։",
+          "en": "The weather will be good.",
+          "options": ["է", "էր", "լինի", "կլինի"],
+          "answer": "կլինի",
+          "why": "It will be: կլինի."
+        }
+      ]
+    },
+    {
+      "id": "subjunctive",
+      "title": "Should I? Let's: the subjunctive",
+      "particle": "գրեմ գնանք",
+      "summary": "The subjunctive (գրեմ, գրես, գրի) asks \"should I?\", makes \"let's\", and follows words like պետք է and ուզում եմ որ. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>-ել</b> verbs: <b>գրեմ, գրես, գրի, գրենք, գրեք, գրեն</b>. <b>-ալ</b> verbs: <b>կարդամ, կարդաս, կարդա</b>. <b>Ի՞նչ անեմ</b> what should I do?",
+          "examples": [
+            ["Ի՞նչ {անեմ}։", "Inch' anem?", "What should I do?"],
+            ["{Զանգե՞մ}։", "Zangem?", "Should I call?"]
+          ]
+        },
+        {
+          "h": "Let's",
+          "p": "The \"we\" form means \"let's\", often after <b>եկեք</b> or <b>արի</b>: <b>Եկեք գնանք</b> let's go.",
+          "examples": [
+            ["{Եկեք գնանք}։", "Yekek' gnank'.", "Let's go."],
+            ["{Տեսնենք}։", "Tesnenk'.", "Let's see."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ի՞նչ ＿։",
+          "en": "What should I do?",
+          "options": ["անեմ", "անում եմ", "արեցի", "կանեմ"],
+          "answer": "անեմ",
+          "why": "Should I: subjunctive."
+        },
+        {
+          "q": "＿։",
+          "en": "Should I call?",
+          "options": ["Զանգեցի՞", "Զանգե՞մ", "Զանգում ե՞մ", "Զանգե՞լ"],
+          "answer": "Զանգե՞մ",
+          "why": "Subjunctive: -եմ."
+        },
+        {
+          "q": "Եկեք ＿։",
+          "en": "Let's go.",
+          "options": ["գնացինք", "գնում ենք", "գնանք", "գնալ"],
+          "answer": "գնանք",
+          "why": "Let's: -նք."
+        },
+        {
+          "q": "Պետք է ＿։",
+          "en": "I have to go.",
+          "options": ["գնացի", "գնում եմ", "գնալ", "գնամ"],
+          "answer": "գնամ",
+          "why": "After պետք է: subjunctive."
+        }
+      ]
+    },
+    {
+      "id": "purpose",
+      "title": "In order to: որ, -ելու համար",
+      "particle": "որ -ելու համար",
+      "summary": "Purpose is որ + subjunctive, or the infinitive in -ելու with համար: հայերեն սովորելու համար, to learn Armenian. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>որ</b> + subjunctive: <b>Եկել եմ, որ օգնեմ</b> I've come to help. With the same subject, <b>-ելու համար</b> is common.",
+          "examples": [
+            [
+              "Եկել եմ, {որ օգնեմ}։",
+              "Yekel em, vor ognem.",
+              "I've come to help."
+            ],
+            [
+              "Նա աշխատում է, {որ} փող {խնայի}։",
+              "Na ashkhatum e, vor p'ogh khnayi.",
+              "He works to save money."
+            ]
+          ]
+        },
+        {
+          "h": "-ելու համար",
+          "p": "The infinitive in its genitive form <b>-ելու / -ալու</b> + <b>համար</b>: <b>կարդալու համար</b> in order to read.",
+          "examples": [
+            [
+              "Երևան եմ եկել {հայերեն սովորելու համար}։",
+              "Yerevan em yekel hayeren sovorelu hamar.",
+              "I've come to Yerevan to learn Armenian."
+            ],
+            [
+              "Խանութ գնացի {հաց գնելու}։",
+              "Khanut gnats'i hats' gnelu.",
+              "I went to the shop to buy bread."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Եկել եմ, որ ＿։",
+          "en": "I've come to help.",
+          "options": ["օգնեմ", "օգնում եմ", "օգնեցի", "կօգնեմ"],
+          "answer": "օգնեմ",
+          "why": "որ + subjunctive."
+        },
+        {
+          "q": "Հայերեն սովորելու ＿ եմ եկել։",
+          "en": "I've come to learn Armenian.",
+          "options": ["որ", "համար", "հետ", "մասին"],
+          "answer": "համար",
+          "why": "-ելու համար."
+        },
+        {
+          "q": "Խանութ գնացի հաց ＿։",
+          "en": "I went to the shop to buy bread.",
+          "options": ["գնել", "գնեցի", "գնելու", "գնի"],
+          "answer": "գնելու",
+          "why": "With verbs of going: -ելու."
+        },
+        {
+          "q": "Նա աշխատում է, ＿ փող խնայի։",
+          "en": "He works to save money.",
+          "options": ["թե", "եթե", "երբ", "որ"],
+          "answer": "որ",
+          "why": "Purpose: որ."
+        }
+      ]
+    },
+    {
+      "id": "that-vor",
+      "title": "That: որ",
+      "particle": "որ",
+      "summary": "որ joins a clause to verbs like know, say, think: Գիտեմ, որ ճիշտ ես, I know that you're right. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>որ</b> (vor) after a comma, like English \"that\": <b>Կարծում եմ, որ …</b> I think that …; <b>Ասաց, որ …</b> he said that …",
+          "examples": [
+            [
+              "Գիտեմ, {որ} ճիշտ ես։",
+              "Gitem, vor chisht es.",
+              "I know that you're right."
+            ],
+            [
+              "Կարծում եմ, {որ} նա կգա։",
+              "Kartsum em, vor na kga.",
+              "I think he'll come."
+            ]
+          ]
+        },
+        {
+          "h": "Glad that, good that",
+          "p": "<b>Ուրախ եմ, որ …</b> I'm glad that; <b>Լավ է, որ …</b> it's good that.",
+          "examples": [
+            [
+              "{Ուրախ եմ, որ} եկար։",
+              "Urakh em, vor yekar.",
+              "I'm glad you came."
+            ],
+            [
+              "{Լավ է, որ} զանգեցիր։",
+              "Lav e, vor zangets'ir.",
+              "It's good that you called."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Գիտեմ, ＿ ճիշտ ես։",
+          "en": "I know that you're right.",
+          "options": ["որ", "եթե", "երբ", "թե չէ"],
+          "answer": "որ",
+          "why": "That: որ."
+        },
+        {
+          "q": "Կարծում եմ, որ նա ＿։",
+          "en": "I think he'll come.",
+          "options": ["եկա", "կգա", "գամ", "եկեք"],
+          "answer": "կգա",
+          "why": "Future: կգա."
+        },
+        {
+          "q": "Ուրախ եմ, որ ＿։",
+          "en": "I'm glad you came.",
+          "options": ["եկա", "կգաս", "եկար", "գաս"],
+          "answer": "եկար",
+          "why": "You came: եկար."
+        },
+        {
+          "q": "Լավ է, ＿ զանգեցիր։",
+          "en": "It's good that you called.",
+          "options": ["բայց", "կամ", "թե", "որ"],
+          "answer": "որ",
+          "why": "Լավ է, որ."
+        }
+      ]
+    },
+    {
+      "id": "relative-clauses",
+      "title": "Who, which: որը, ով, որտեղ",
+      "particle": "որը ով որտեղ",
+      "summary": "After a noun, որը means \"which, who\", ով \"who\" for people, and որտեղ \"where\". They take case endings as needed. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>Գիրքը, որը կարդում եմ, …</b> the book (that) I'm reading. <b>Տղան, ով երեկ եկավ, …</b> the boy who came yesterday.",
+          "examples": [
+            [
+              "Տղան, {ով} երեկ եկավ, իմ եղբայրն է։",
+              "Tghan, ov yerek yekav, im yeghbayrn e.",
+              "The boy who came yesterday is my brother."
+            ],
+            [
+              "Գիրքը, {որը} կարդում եմ, հետաքրքիր է։",
+              "Girk'ë, vorë kardum em, hetak'rk'ir e.",
+              "The book I'm reading is interesting."
+            ]
+          ]
+        },
+        {
+          "h": "Where, whom",
+          "p": "<b>որտեղ</b> where: <b>քաղաքը, որտեղ ծնվել եմ</b> the town where I was born. With cases: <b>որին</b> (to) whom, <b>որի</b> whose.",
+          "examples": [
+            [
+              "Սա այն քաղաքն է, {որտեղ} ծնվել եմ։",
+              "Sa ayn k'aghak'n e, vortegh tsnvel em.",
+              "This is the town where I was born."
+            ],
+            [
+              "Կինը, {որին} հանդիպեցի, բժիշկ է։",
+              "Kinë, vorin handipets'i, bzhishk e.",
+              "The woman I met is a doctor."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Տղան, ＿ երեկ եկավ, եղբայրս է։",
+          "en": "The boy who came yesterday is my brother.",
+          "options": ["ով", "որտեղ", "որին", "ինչ"],
+          "answer": "ով",
+          "why": "Who (person): ով."
+        },
+        {
+          "q": "Գիրքը, ＿ կարդում եմ, հետաքրքիր է։",
+          "en": "The book I'm reading is interesting.",
+          "options": ["ով", "որը", "որտեղ", "որի"],
+          "answer": "որը",
+          "why": "Which: որը."
+        },
+        {
+          "q": "Սա այն քաղաքն է, ＿ ծնվել եմ։",
+          "en": "This is the town where I was born.",
+          "options": ["որը", "ով", "որտեղ", "որին"],
+          "answer": "որտեղ",
+          "why": "Where: որտեղ."
+        },
+        {
+          "q": "Կինը, ＿ հանդիպեցի, բժիշկ է։",
+          "en": "The woman I met is a doctor.",
+          "options": ["որը", "որի", "որտեղ", "որին"],
+          "answer": "որին",
+          "why": "Object person: որին."
+        }
+      ]
+    },
+    {
+      "id": "participle-ats",
+      "title": "The one who did: -ած + noun",
+      "particle": "-ած",
+      "summary": "A participle in -ած before a noun works like a relative clause: երեկ եկած մարդը, the man who came yesterday; իմ կարդացած գիրքը, the book I read. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-ել → -ած</b>: <b>գրած</b> written, <b>եկած</b> who came. <b>-ալ → -ացած</b>: <b>կարդացած</b>. The doer goes in the genitive: <b>իմ գրած նամակը</b> the letter I wrote.",
+          "examples": [
+            [
+              "{Երեկ եկած} մարդը իմ ընկերն է։",
+              "Yerek yekats mardë im ënkern e.",
+              "The man who came yesterday is my friend."
+            ],
+            [
+              "{Իմ կարդացած} գիրքը շատ լավն էր։",
+              "Im kardats'ats girk'ë shat lavn er.",
+              "The book I read was very good."
+            ]
+          ]
+        },
+        {
+          "h": "Done, finished",
+          "p": "The same participle describes a state: <b>փակ(ված) դուռ</b> a closed door, <b>եփած ձու</b> a boiled egg, <b>հոգնած</b> tired.",
+          "examples": [
+            ["Դուռը {փակված} է։", "Durrë p'akvats e.", "The door is closed."],
+            [
+              "Նախաճաշին {եփած} ձու կերա։",
+              "Nakhachashin yep'ats dzu kera.",
+              "I had a boiled egg for breakfast."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Երեկ ＿ մարդը իմ ընկերն է։",
+          "en": "The man who came yesterday is my friend.",
+          "options": ["եկած", "եկավ", "գալիս", "եկող"],
+          "answer": "եկած",
+          "why": "Past participle: -ած."
+        },
+        {
+          "q": "＿ կարդացած գիրքը լավն էր։",
+          "en": "The book I read was good.",
+          "options": ["Ես", "Իմ", "Ինձ", "Ինձնից"],
+          "answer": "Իմ",
+          "why": "The doer: genitive."
+        },
+        {
+          "q": "Դուռը ＿ է։",
+          "en": "The door is closed.",
+          "options": ["փակում", "փակեց", "փակված", "փակող"],
+          "answer": "փակված",
+          "why": "State: -ված."
+        },
+        {
+          "q": "Նախաճաշին ＿ ձու կերա։",
+          "en": "I had a boiled egg for breakfast.",
+          "options": ["եփել", "եփում", "եփի", "եփած"],
+          "answer": "եփած",
+          "why": "Participle: եփած."
+        }
+      ]
+    },
+    {
+      "id": "participles-ogh-elik",
+      "title": "Speaker, things to do: -ող, -ելիք",
+      "particle": "-ող -ելիք",
+      "summary": "-ող makes \"who does\": հայերեն խոսող մարդ, a person who speaks Armenian. -ելիք / -ալիք makes \"to be done\": անելիք, things to do. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-ող</b>: <b>խոսող</b> speaking, <b>ապրող</b> living, <b>աշխատող</b> worker. As a noun: <b>Երևանում ապրողները</b> people who live in Yerevan.",
+          "examples": [
+            [
+              "Նա {հայերեն խոսող} ամերիկացի է։",
+              "Na hayeren khosogh amerikats'i e.",
+              "He is an American who speaks Armenian."
+            ],
+            [
+              "Այստեղ {աշխատողները} շատ են։",
+              "Aystegh ashkhatoghnerë shat en.",
+              "There are many people working here."
+            ]
+          ]
+        },
+        {
+          "h": "Still to do: -ելիք",
+          "p": "<b>-ելիք / -ալիք</b> is the future participle: <b>անելիք</b> something to do, <b>ասելիք</b> something to say, <b>կարդալիք</b> something to read.",
+          "examples": [
+            [
+              "Այսօր շատ {անելիք} ունեմ։",
+              "Aysor shat anelik' unem.",
+              "I have a lot to do today."
+            ],
+            [
+              "{Ասելիք} ունե՞ս։",
+              "Aselik' unes?",
+              "Do you have something to say?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Նա հայերեն ＿ ամերիկացի է։",
+          "en": "He is an American who speaks Armenian.",
+          "options": ["խոսող", "խոսած", "խոսելիք", "խոսում"],
+          "answer": "խոսող",
+          "why": "Who does: -ող."
+        },
+        {
+          "q": "Այսօր շատ ＿ ունեմ։",
+          "en": "I have a lot to do today.",
+          "options": ["անող", "անելիք", "արած", "անում"],
+          "answer": "անելիք",
+          "why": "To be done: -ելիք."
+        },
+        {
+          "q": "Երևանում ＿ շատ են։",
+          "en": "Many people live in Yerevan.",
+          "options": ["ապրածները", "ապրելիքները", "ապրողները", "ապրում"],
+          "answer": "ապրողները",
+          "why": "Those who live: -ողներ."
+        },
+        {
+          "q": "＿ ունե՞ս։",
+          "en": "Do you have something to say?",
+          "options": ["Ասող", "Ասած", "Ասում", "Ասելիք"],
+          "answer": "Ասելիք",
+          "why": "Something to say: ասելիք."
+        }
+      ]
+    },
+    {
+      "id": "if-yete",
+      "title": "If: եթե",
+      "particle": "եթե",
+      "summary": "եթե means \"if\"; for a real possibility the if-clause uses the subjunctive or future and the result uses կ-: Եթե անձրև գա, տանը կմնամ. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>Եթե</b> + subjunctive, then a կ- future: <b>Եթե ժամանակ ունենամ, կզանգեմ</b> if I have time, I'll call.",
+          "examples": [
+            [
+              "{Եթե} անձրև գա, տանը կմնամ։",
+              "Yet'e andzrev ga, tanë kmnam.",
+              "If it rains, I'll stay home."
+            ],
+            [
+              "{Եթե} ուզում ես, գնանք։",
+              "Yet'e uzum es, gnank'.",
+              "If you want, let's go."
+            ]
+          ]
+        },
+        {
+          "h": "Unless",
+          "p": "<b>Եթե … չ-</b> if not, unless: <b>Եթե չգաս, կնեղանամ</b> if you don't come, I'll be upset.",
+          "examples": [
+            [
+              "{Եթե} ժամանակ {ունենամ}, կզանգեմ։",
+              "Yet'e zhamanak unenam, kzangem.",
+              "If I have time, I'll call."
+            ],
+            [
+              "Եթե {չգաս}, կնեղանամ։",
+              "Yet'e ch'gas, kneghanam.",
+              "If you don't come, I'll be upset."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ անձրև գա, տանը կմնամ։",
+          "en": "If it rains, I'll stay home.",
+          "options": ["Եթե", "Երբ", "Որ", "Թե"],
+          "answer": "Եթե",
+          "why": "If: եթե."
+        },
+        {
+          "q": "Եթե անձրև ＿, տանը կմնամ։",
+          "en": "If it rains, I'll stay home.",
+          "options": ["եկավ", "գա", "գալիս էր", "եկել"],
+          "answer": "գա",
+          "why": "Subjunctive after եթե."
+        },
+        {
+          "q": "Եթե ժամանակ ունենամ, ＿։",
+          "en": "If I have time, I'll call.",
+          "options": ["զանգեցի", "զանգում եմ", "կզանգեմ", "զանգել"],
+          "answer": "կզանգեմ",
+          "why": "Result: կ-."
+        },
+        {
+          "q": "Եթե ＿, կնեղանամ։",
+          "en": "If you don't come, I'll be upset.",
+          "options": ["չես գալիս", "չեկար", "մի գա", "չգաս"],
+          "answer": "չգաս",
+          "why": "If not: չ- + subjunctive."
+        }
+      ]
+    },
+    {
+      "id": "when-while",
+      "title": "When, while: երբ, -ելիս",
+      "particle": "երբ -ելիս",
+      "summary": "երբ means \"when\"; -ելիս / -ալիս on a verb means \"while (doing)\": ճաշելիս, while eating. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>երբ</b> + any tense: <b>Երբ փոքր էի, …</b> when I was little. For the future, the subjunctive: <b>Երբ գաս, զանգիր</b> call when you come.",
+          "examples": [
+            [
+              "{Երբ} փոքր էի, գյուղում էի ապրում։",
+              "Yerb p'ok'r ei, gyughum ei aprum.",
+              "When I was little, I lived in a village."
+            ],
+            [
+              "{Երբ} հասնես, զանգիր։",
+              "Yerb hasnes, zangir.",
+              "Call when you arrive."
+            ]
+          ]
+        },
+        {
+          "h": "While doing: -ելիս",
+          "p": "<b>-ելիս</b> / <b>-ալիս</b> needs no subject of its own: <b>ճաշելիս</b> while eating, <b>փողոցն անցնելիս</b> when crossing the street.",
+          "examples": [
+            [
+              "{Ճաշելիս} հեռուստացույց չեմ դիտում։",
+              "Chashelis herrustats'uyts' ch'em ditum.",
+              "I don't watch TV while eating."
+            ],
+            [
+              "{Փողոցն անցնելիս} զգույշ եղիր։",
+              "P'oghots'n ants'nelis zguysh yeghir.",
+              "Be careful when crossing the street."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ փոքր էի, գյուղում էի ապրում։",
+          "en": "When I was little, I lived in a village.",
+          "options": ["Երբ", "Եթե", "Որ", "Մինչև"],
+          "answer": "Երբ",
+          "why": "When: երբ."
+        },
+        {
+          "q": "Երբ ＿, զանգիր։",
+          "en": "Call when you arrive.",
+          "options": ["հասար", "հասնես", "հասնում ես", "կհասնես"],
+          "answer": "հասնես",
+          "why": "Future \"when\": subjunctive."
+        },
+        {
+          "q": "＿ հեռուստացույց չեմ դիտում։",
+          "en": "I don't watch TV while eating.",
+          "options": ["Ճաշելու", "Ճաշած", "Ճաշելիս", "Ճաշող"],
+          "answer": "Ճաշելիս",
+          "why": "While: -ելիս."
+        },
+        {
+          "q": "Փողոցն ＿ զգույշ եղիր։",
+          "en": "Be careful when crossing the street.",
+          "options": ["անցնելու", "անցավ", "անցել", "անցնելիս"],
+          "answer": "անցնելիս",
+          "why": "While: -ելիս."
+        }
+      ]
+    },
+    {
+      "id": "before-after",
+      "title": "Before, after, until",
+      "particle": "-ելուց առաջ -ելուց հետո մինչև",
+      "summary": "-ելուց առաջ means \"before doing\", -ելուց հետո \"after doing\", and մինչև \"until\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>Քնելուց առաջ</b> before sleeping; <b>Ճաշելուց հետո</b> after lunch. With nouns: <b>դասից առաջ</b>, <b>դասից հետո</b>.",
+          "examples": [
+            [
+              "{Քնելուց առաջ} ատամներդ մաքրիր։",
+              "K'neluts' arrach atamnerd mak'rir.",
+              "Brush your teeth before going to sleep."
+            ],
+            [
+              "{Դասից հետո} տուն գնացի։",
+              "Dasits' heto tun gnats'i.",
+              "After the lesson I went home."
+            ]
+          ]
+        },
+        {
+          "h": "Until: մինչև",
+          "p": "<b>մինչև</b> + noun: <b>մինչև վաղը</b> until tomorrow. With a clause: <b>մինչև … չ-</b>: <b>Սպասիր, մինչև ես գամ</b> wait until I come.",
+          "examples": [
+            [
+              "Խանութը բաց է {մինչև} ժամը ինը։",
+              "Khanutë bats' e minch'ev zhamë inë.",
+              "The shop is open until nine."
+            ],
+            [
+              "Սպասիր, {մինչև} ես գամ։",
+              "Spasir, minch'ev yes gam.",
+              "Wait until I come."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Քնելուց ＿ ատամներդ մաքրիր։",
+          "en": "Brush your teeth before going to sleep.",
+          "options": ["առաջ", "հետո", "մինչև", "համար"],
+          "answer": "առաջ",
+          "why": "Before: -ելուց առաջ."
+        },
+        {
+          "q": "Դասից ＿ տուն գնացի։",
+          "en": "After the lesson I went home.",
+          "options": ["առաջ", "հետո", "մինչև", "վրա"],
+          "answer": "հետո",
+          "why": "After: -ից հետո."
+        },
+        {
+          "q": "Խանութը բաց է ＿ ժամը ինը։",
+          "en": "The shop is open until nine.",
+          "options": ["հետո", "առաջ", "մինչև", "համար"],
+          "answer": "մինչև",
+          "why": "Until: մինչև."
+        },
+        {
+          "q": "Սպասիր, մինչև ես ＿։",
+          "en": "Wait until I come.",
+          "options": ["եկա", "գալիս եմ", "եկել եմ", "գամ"],
+          "answer": "գամ",
+          "why": "մինչև + subjunctive."
+        }
+      ]
+    },
+    {
+      "id": "because",
+      "title": "Because, because of",
+      "particle": "որովհետև քանի որ -ի պատճառով",
+      "summary": "որովհետև and քանի որ mean \"because, since\"; -ի պատճառով means \"because of\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>քանի որ</b> (k'ani vor) since, often first: <b>Քանի որ ուշ էր, տուն գնացինք</b> since it was late, we went home.",
+          "examples": [
+            [
+              "{Քանի որ} ուշ էր, տուն գնացինք։",
+              "K'ani vor ush er, tun gnats'ink'.",
+              "Since it was late, we went home."
+            ],
+            [
+              "Չեկա, {որովհետև} աշխատում էի։",
+              "Ch'eka, vorovhetev ashkhatum ei.",
+              "I didn't come because I was working."
+            ]
+          ]
+        },
+        {
+          "h": "Because of",
+          "p": "<b>-ի պատճառով</b> (patcharrov) because of: <b>անձրևի պատճառով</b> because of the rain.",
+          "examples": [
+            [
+              "{Անձրևի պատճառով} խաղը հետաձգվեց։",
+              "Andzrevi patcharrov khaghë hetadzgvets'.",
+              "The game was postponed because of the rain."
+            ],
+            [
+              "{Ինչու՞} ես ուշացել։ — {Որովհետև} ավտոբուսը չեկավ։",
+              "Inch'u es ushats'el? — Vorovhetev avtobusë ch'ekav.",
+              "Why are you late? — Because the bus didn't come."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ուշ էր, տուն գնացինք։",
+          "en": "Since it was late, we went home.",
+          "options": ["Քանի որ", "Չնայած", "Եթե", "Մինչև"],
+          "answer": "Քանի որ",
+          "why": "Since: քանի որ."
+        },
+        {
+          "q": "Անձրևի ＿ խաղը հետաձգվեց։",
+          "en": "The game was postponed because of the rain.",
+          "options": ["համար", "պատճառով", "հետ", "մասին"],
+          "answer": "պատճառով",
+          "why": "Because of: -ի պատճառով."
+        },
+        {
+          "q": "Չեկա, ＿ աշխատում էի։",
+          "en": "I didn't come because I was working.",
+          "options": ["դրա համար", "բայց", "որովհետև", "կամ"],
+          "answer": "որովհետև",
+          "why": "Because: որովհետև."
+        },
+        {
+          "q": "Ինչո՞ւ ես ուշացել։ — ＿ ավտոբուսը չեկավ։",
+          "en": "Why are you late? — Because the bus didn't come.",
+          "options": ["Դրա համար", "Քանի", "Եթե", "Որովհետև"],
+          "answer": "Որովհետև",
+          "why": "Because: որովհետև."
+        }
+      ]
+    },
+    {
+      "id": "although",
+      "title": "Although, despite: չնայած, թեև",
+      "particle": "չնայած թեև այնուամենայնիվ",
+      "summary": "չնայած (որ) and թեև mean \"although\"; չնայած + dative means \"despite\"; այնուամենայնիվ means \"nevertheless\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>Չնայած հոգնած էի, աշխատեցի</b> although I was tired, I worked. <b>թեև</b> is a bit more formal.",
+          "examples": [
+            [
+              "{Չնայած} հոգնած էի, աշխատեցի։",
+              "Ch'nayats hognats ei, ashkhatets'i.",
+              "Although I was tired, I worked."
+            ],
+            [
+              "{Թեև} թանկ է, կգնեմ։",
+              "T'eev t'ank e, kgnem.",
+              "Although it's expensive, I'll buy it."
+            ]
+          ]
+        },
+        {
+          "h": "Despite, nevertheless",
+          "p": "<b>չնայած</b> + dative: <b>չնայած անձրևին</b> despite the rain. <b>այնուամենայնիվ</b> nevertheless, starts the next sentence.",
+          "examples": [
+            [
+              "{Չնայած անձրևին}՝ զբոսնեցինք։",
+              "Ch'nayats andzrevin, zbosnets'ink'.",
+              "Despite the rain, we went for a walk."
+            ],
+            [
+              "Դժվար էր։ {Այնուամենայնիվ}, հաջողվեց։",
+              "Dzhvar er. Aynuamenayniv, hajoghvets'.",
+              "It was hard. Nevertheless, it worked out."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ հոգնած էի, աշխատեցի։",
+          "en": "Although I was tired, I worked.",
+          "options": ["Չնայած", "Քանի որ", "Եթե", "Որովհետև"],
+          "answer": "Չնայած",
+          "why": "Although: չնայած."
+        },
+        {
+          "q": "Չնայած ＿՝ զբոսնեցինք։",
+          "en": "Despite the rain, we went for a walk.",
+          "options": ["անձրևը", "անձրևին", "անձրևի", "անձրևից"],
+          "answer": "անձրևին",
+          "why": "Despite + dative."
+        },
+        {
+          "q": "＿ թանկ է, կգնեմ։",
+          "en": "Although it's expensive, I'll buy it.",
+          "options": ["Եթե", "Երբ", "Թեև", "Մինչև"],
+          "answer": "Թեև",
+          "why": "Although: թեև."
+        },
+        {
+          "q": "Դժվար էր։ ＿, հաջողվեց։",
+          "en": "It was hard. Nevertheless, it worked out.",
+          "options": ["Որովհետև", "Եթե", "Քանի որ", "Այնուամենայնիվ"],
+          "answer": "Այնուամենայնիվ",
+          "why": "Nevertheless: այնուամենայնիվ."
+        }
+      ]
+    },
+    {
+      "id": "infinitive-noun",
+      "title": "Reading is fun: the infinitive as a noun",
+      "particle": "-ելը -ալը",
+      "summary": "The infinitive takes the article and works as a noun: կարդալը, reading; ծխելն արգելվում է, smoking is forbidden. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-ել / -ալ</b> + article: <b>Կարդալը օգտակար է</b> reading is useful. With case endings: <b>լողալուց</b> from swimming, <b>գնալու</b> of going.",
+          "examples": [
+            [
+              "{Կարդալը} օգտակար է։",
+              "Kardalë ogtakar e.",
+              "Reading is useful."
+            ],
+            [
+              "Այստեղ {ծխելն} արգելվում է։",
+              "Aystegh tskheln argelvum e.",
+              "Smoking is forbidden here."
+            ]
+          ]
+        },
+        {
+          "h": "With other words",
+          "p": "<b>Հայերեն սովորելը դժվար չէ</b> learning Armenian isn't hard. <b>Սիրում եմ լողալ</b> keeps the plain infinitive after a verb.",
+          "examples": [
+            [
+              "{Հայերեն սովորելը} դժվար չէ։",
+              "Hayeren sovorelë dzhvar ch'e.",
+              "Learning Armenian isn't hard."
+            ],
+            [
+              "Հոգնել եմ {սպասելուց}։",
+              "Hognel em spaseluts'.",
+              "I'm tired of waiting."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ օգտակար է։",
+          "en": "Reading is useful.",
+          "options": ["Կարդալը", "Կարդում", "Կարդաց", "Կարդացող"],
+          "answer": "Կարդալը",
+          "why": "Infinitive + article."
+        },
+        {
+          "q": "Այստեղ ＿ արգելվում է։",
+          "en": "Smoking is forbidden here.",
+          "options": ["ծխում", "ծխելն", "ծխեց", "ծխող"],
+          "answer": "ծխելն",
+          "why": "ծխել + -ն before a vowel."
+        },
+        {
+          "q": "Հայերեն ＿ դժվար չէ։",
+          "en": "Learning Armenian isn't hard.",
+          "options": ["սովորում", "սովորեց", "սովորելը", "սովորի"],
+          "answer": "սովորելը",
+          "why": "As a subject: -ելը."
+        },
+        {
+          "q": "Հոգնել եմ ＿։",
+          "en": "I'm tired of waiting.",
+          "options": ["սպասել", "սպասում", "սպասեցի", "սպասելուց"],
+          "answer": "սպասելուց",
+          "why": "From: -ելուց."
+        }
+      ]
+    },
+    {
+      "id": "passive",
+      "title": "Is done, was done: -վ-",
+      "particle": "-վել -վում",
+      "summary": "Adding -վ- to the stem makes a passive: գրել → գրվել (be written), կառուցել → կառուցվել (be built). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>Գիրքը գրվել է 1990 թվականին</b> the book was written in 1990. Present: <b>գրվում է</b> is written. Aorist: <b>գրվեց</b>.",
+          "examples": [
+            [
+              "Գիրքը {գրվել է} 1990 թվականին։",
+              "Girk'ë grvel e 1990 t'vakanin.",
+              "The book was written in 1990."
+            ],
+            [
+              "Եկեղեցին {կառուցվել է} 7-րդ դարում։",
+              "Yekeghets'in karruts'vel e 7-rd darum.",
+              "The church was built in the 7th century."
+            ]
+          ]
+        },
+        {
+          "h": "By someone",
+          "p": "The doer takes <b>-ի կողմից</b>: <b>Թումանյանի կողմից գրված</b> written by Tumanyan.",
+          "examples": [
+            [
+              "Խանութը {փակվում է} ժամը ինին։",
+              "Khanutë p'akvum e zhamë inin.",
+              "The shop closes at nine."
+            ],
+            [
+              "Այս պոեմը գրվել է {Թումանյանի կողմից}։",
+              "Ays poemë grvel e T'umanyani koghmits'.",
+              "This poem was written by Tumanyan."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Գիրքը ＿ է 1990 թվականին։",
+          "en": "The book was written in 1990.",
+          "options": ["գրվել", "գրել", "գրում", "գրող"],
+          "answer": "գրվել",
+          "why": "Passive: -վ-."
+        },
+        {
+          "q": "Եկեղեցին ＿ է 7-րդ դարում։",
+          "en": "The church was built in the 7th century.",
+          "options": ["կառուցել", "կառուցվել", "կառուցում", "կառուցող"],
+          "answer": "կառուցվել",
+          "why": "Passive: կառուցվել."
+        },
+        {
+          "q": "Խանութը ＿ է ժամը ինին։",
+          "en": "The shop closes at nine.",
+          "options": ["փակում", "փակել", "փակվում", "փակող"],
+          "answer": "փակվում",
+          "why": "Present passive: -վում."
+        },
+        {
+          "q": "Այս պոեմը գրվել է Թումանյանի ＿։",
+          "en": "This poem was written by Tumanyan.",
+          "options": ["համար", "հետ", "մասին", "կողմից"],
+          "answer": "կողմից",
+          "why": "By: -ի կողմից."
+        }
+      ]
+    },
+    {
+      "id": "causative",
+      "title": "Make someone do: -ացնել, -եցնել",
+      "particle": "-ացնել -եցնել",
+      "summary": "The causative ending -ացնել / -եցնել turns \"do\" into \"make (someone) do\": ծիծաղել → ծիծաղեցնել, make laugh. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>ծիծաղել → ծիծաղեցնել</b> make laugh, <b>զարմանալ → զարմացնել</b> surprise, <b>հասկանալ → հասկացնել</b> make understand, <b>նստել → նստեցնել</b> seat.",
+          "examples": [
+            [
+              "Նա բոլորին {ծիծաղեցնում է}։",
+              "Na bolorin tsitsaghets'num e.",
+              "He makes everyone laugh."
+            ],
+            [
+              "Դու ինձ {զարմացրիր}։",
+              "Du indz zarmats'rir.",
+              "You surprised me."
+            ]
+          ]
+        },
+        {
+          "h": "The person made to act",
+          "p": "The person made to do something is usually in the dative: <b>Մայրը երեխային նստեցրեց</b> the mother sat the child down.",
+          "examples": [
+            [
+              "Մայրը {երեխային} նստեցրեց։",
+              "Mayrë yerekhayin nstets'rets'.",
+              "The mother sat the child down."
+            ],
+            [
+              "Ուսուցիչը մեզ {հասկացրեց} կանոնը։",
+              "Usuts'ich'ë mez haskats'rets' kanonë.",
+              "The teacher made us understand the rule."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Նա բոլորին ＿ է։",
+          "en": "He makes everyone laugh.",
+          "options": ["ծիծաղեցնում", "ծիծաղում", "ծիծաղեց", "ծիծաղող"],
+          "answer": "ծիծաղեցնում",
+          "why": "Causative: -եցնել."
+        },
+        {
+          "q": "Դու ինձ ＿։",
+          "en": "You surprised me.",
+          "options": ["զարմացար", "զարմացրիր", "զարմանում ես", "զարմանալ"],
+          "answer": "զարմացրիր",
+          "why": "Causative past: զարմացրիր."
+        },
+        {
+          "q": "Մայրը ＿ նստեցրեց։",
+          "en": "The mother sat the child down.",
+          "options": ["երեխան", "երեխայի", "երեխային", "երեխայից"],
+          "answer": "երեխային",
+          "why": "The person: dative."
+        },
+        {
+          "q": "Ուսուցիչը մեզ ＿ կանոնը։",
+          "en": "The teacher made us understand the rule.",
+          "options": ["հասկացավ", "հասկանում է", "հասկացել", "հասկացրեց"],
+          "answer": "հասկացրեց",
+          "why": "Make understand: հասկացնել."
+        }
+      ]
+    },
+    {
+      "id": "reflexive",
+      "title": "Self, own: ինքը, իրեն, իր",
+      "particle": "ինքը իրեն իր",
+      "summary": "ինքը means \"himself / herself\"; իրեն is the reflexive object; իր means \"his / her own\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>իր</b> one's own: <b>Նա իր տանն է</b> he's at his (own) home. <b>իրեն</b> himself as object: <b>Նա իրեն լավ է զգում</b> he feels well.",
+          "examples": [
+            [
+              "Նա {իրեն} լավ է զգում։",
+              "Na iren lav e zgum.",
+              "He feels well."
+            ],
+            [
+              "Աննան {իր} մոր հետ է։",
+              "Annan ir mor het e.",
+              "Anna is with her (own) mother."
+            ]
+          ]
+        },
+        {
+          "h": "Myself, by oneself",
+          "p": "For emphasis: <b>ինքս</b> myself, <b>ինքդ</b> yourself, <b>ինքը</b> himself. <b>Ես ինքս արեցի</b> I did it myself.",
+          "examples": [
+            ["Ես {ինքս} արեցի։", "Yes ink's arets'i.", "I did it myself."],
+            [
+              "Նա {ինքն իրեն} հարց տվեց։",
+              "Na ink'n iren harts' tvets'.",
+              "He asked himself a question."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Նա ＿ լավ է զգում։",
+          "en": "He feels well.",
+          "options": ["իրեն", "նրան", "իր", "ինքը"],
+          "answer": "իրեն",
+          "why": "Reflexive object: իրեն."
+        },
+        {
+          "q": "Աննան ＿ մոր հետ է։",
+          "en": "Anna is with her own mother.",
+          "options": ["նրա", "իր", "իրեն", "ինքը"],
+          "answer": "իր",
+          "why": "One's own: իր."
+        },
+        {
+          "q": "Ես ＿ արեցի։",
+          "en": "I did it myself.",
+          "options": ["ինքդ", "ինքը", "ինքս", "իրեն"],
+          "answer": "ինքս",
+          "why": "Myself: ինքս."
+        },
+        {
+          "q": "Դու ＿ գիտես։",
+          "en": "You know it yourself.",
+          "options": ["ինքս", "իր", "իրեն", "ինքդ"],
+          "answer": "ինքդ",
+          "why": "Yourself: ինքդ."
+        }
+      ]
+    },
+    {
+      "id": "reciprocal",
+      "title": "Each other: իրար",
+      "particle": "իրար միմյանց",
+      "summary": "իրար (spoken) or միմյանց (formal) means \"each other\": Իրար ճանաչում ենք, we know each other. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>իրար</b> takes case endings and postpositions: <b>իրար հետ</b> with each other, <b>իրարից</b> from each other.",
+          "examples": [
+            [
+              "Մենք {իրար} ճանաչում ենք։",
+              "Menk' irar chanach'um enk'.",
+              "We know each other."
+            ],
+            [
+              "Նրանք {իրար} օգնում են։",
+              "Nrank' irar ognum en.",
+              "They help each other."
+            ]
+          ]
+        },
+        {
+          "h": "With each other, formal",
+          "p": "<b>իրար հետ խոսել</b> talk to each other. In writing, <b>միմյանց</b>: <b>միմյանց հետ համագործակցել</b> cooperate with one another.",
+          "examples": [
+            [
+              "Մենք {իրար հետ} խոսում ենք։",
+              "Menk' irar het khosum enk'.",
+              "We talk to each other."
+            ],
+            [
+              "Երկու երկրները {միմյանց հետ} համագործակցում են։",
+              "Yerku yerkrnerë mimyants' het hamagortsakts'um en.",
+              "The two countries cooperate with one another."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Մենք ＿ ճանաչում ենք։",
+          "en": "We know each other.",
+          "options": ["իրար", "իրեն", "իր", "մեզ"],
+          "answer": "իրար",
+          "why": "Each other: իրար."
+        },
+        {
+          "q": "Նրանք իրար ＿ են։",
+          "en": "They help each other.",
+          "options": ["օգնեց", "օգնում", "օգնի", "օգնող"],
+          "answer": "օգնում",
+          "why": "Present: -ում են."
+        },
+        {
+          "q": "Մենք իրար ＿ խոսում ենք։",
+          "en": "We talk to each other.",
+          "options": ["մոտ", "վրա", "հետ", "համար"],
+          "answer": "հետ",
+          "why": "With: հետ."
+        },
+        {
+          "q": "Երկու երկրները ＿ հետ համագործակցում են։",
+          "en": "The two countries cooperate with one another.",
+          "options": ["իրեն", "իրենց", "նրանց", "միմյանց"],
+          "answer": "միմյանց",
+          "why": "Formal: միմյանց."
+        }
+      ]
+    },
+    {
+      "id": "indefinites",
+      "title": "Someone, nobody: ինչ-որ, ոչ ոք",
+      "particle": "ինչ-որ ոչ ոք ոչինչ երբեք",
+      "summary": "ինչ-որ makes \"some-\"; ոչ ոք (nobody), ոչինչ (nothing) and երբեք (never) need a negative verb too. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>ինչ-որ մեկը</b> someone, <b>ինչ-որ բան</b> something, <b>ինչ-որ տեղ</b> somewhere, <b>մի օր</b> someday.",
+          "examples": [
+            [
+              "{Ինչ-որ մեկը} դուռն է թակում։",
+              "Inch'-vor mekë durrn e t'akum.",
+              "Someone is knocking at the door."
+            ],
+            [
+              "Քեզ {ինչ-որ բան} եմ ուզում ասել։",
+              "K'ez inch'-vor ban em uzum asel.",
+              "I want to tell you something."
+            ]
+          ]
+        },
+        {
+          "h": "Nobody, nothing, never",
+          "p": "<b>ոչ ոք</b> nobody, <b>ոչինչ</b> nothing, <b>ոչ մի տեղ</b> nowhere, <b>երբեք</b> never. The verb is negative: <b>Ոչ ոք չեկավ</b>.",
+          "examples": [
+            ["{Ոչ ոք} չեկավ։", "Voch' vok' ch'ekav.", "Nobody came."],
+            [
+              "{Ոչինչ} չեմ ուզում։",
+              "Voch'inch' ch'em uzum.",
+              "I don't want anything."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ դուռն է թակում։",
+          "en": "Someone is knocking at the door.",
+          "options": ["Ինչ-որ մեկը", "Ոչ ոք", "Ով", "Ինչ-որ բան"],
+          "answer": "Ինչ-որ մեկը",
+          "why": "Someone: ինչ-որ մեկը."
+        },
+        {
+          "q": "＿ չեկավ։",
+          "en": "Nobody came.",
+          "options": ["Ինչ-որ մեկը", "Ոչ ոք", "Ոչինչ", "Ով"],
+          "answer": "Ոչ ոք",
+          "why": "Nobody: ոչ ոք."
+        },
+        {
+          "q": "Ոչինչ ＿ ուզում։",
+          "en": "I don't want anything.",
+          "options": ["եմ", "մի", "չեմ", "ոչ"],
+          "answer": "չեմ",
+          "why": "The verb stays negative."
+        },
+        {
+          "q": "＿ չեմ եղել այնտեղ։",
+          "en": "I've never been there.",
+          "options": ["Ինչ-որ տեղ", "Ոչ ոք", "Մի օր", "Երբեք"],
+          "answer": "Երբեք",
+          "why": "Never: երբեք."
+        }
+      ]
+    },
+    {
+      "id": "also-even",
+      "title": "Also, even, either: էլ, նույնիսկ",
+      "particle": "էլ նույնպես նույնիսկ",
+      "summary": "էլ after a word means \"too\" (and \"either\" with a negative); նույնպես means \"also\"; նույնիսկ means \"even\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>Ես էլ</b> me too; <b>Ես էլ չգիտեմ</b> I don't know either. <b>նույնպես</b> is the more formal \"also\".",
+          "examples": [
+            ["{Ես էլ} եմ ուզում։", "Yes el em uzum.", "I want it too."],
+            ["{Ես էլ} չգիտեմ։", "Yes el ch'gitem.", "I don't know either."]
+          ]
+        },
+        {
+          "h": "Even",
+          "p": "<b>նույնիսկ</b> (nuynisk) even: <b>Նույնիսկ երեխան գիտի</b> even a child knows.",
+          "examples": [
+            [
+              "{Նույնիսկ} երեխան գիտի։",
+              "Nuynisk yerekhan giti.",
+              "Even a child knows."
+            ],
+            [
+              "Նա {նույնպես} բժիշկ է։",
+              "Na nuynpes bzhishk e.",
+              "She is also a doctor."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ես ＿ եմ ուզում։",
+          "en": "I want it too.",
+          "options": ["էլ", "նույնիսկ", "ոչ", "չէ"],
+          "answer": "էլ",
+          "why": "Too: էլ."
+        },
+        {
+          "q": "Ես էլ ＿։",
+          "en": "I don't know either.",
+          "options": ["գիտեմ", "չգիտեմ", "չգիտի", "գիտի"],
+          "answer": "չգիտեմ",
+          "why": "Either: էլ + negative."
+        },
+        {
+          "q": "＿ երեխան գիտի։",
+          "en": "Even a child knows.",
+          "options": ["Նույնպես", "Էլ", "Նույնիսկ", "Ինչ-որ"],
+          "answer": "Նույնիսկ",
+          "why": "Even: նույնիսկ."
+        },
+        {
+          "q": "Նա ＿ բժիշկ է։",
+          "en": "She is also a doctor.",
+          "options": ["նույնիսկ", "ոչ էլ", "երբեք", "նույնպես"],
+          "answer": "նույնպես",
+          "why": "Also: նույնպես."
+        }
+      ]
+    },
+    {
+      "id": "reported-speech",
+      "title": "He said that: ասաց, որ",
+      "particle": "ասաց որ թե",
+      "summary": "Reported speech uses որ after a verb of saying, with the persons changed; reported questions use թե: հարցրեց, թե որտեղ եմ, he asked where I was. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>Նա ասաց, որ վաղը կգա</b> he said he would come tomorrow. <b>Ասում է, որ …</b> he says that …",
+          "examples": [
+            [
+              "Նա {ասաց, որ} վաղը կգա։",
+              "Na asats', vor vaghë kga.",
+              "He said he'd come tomorrow."
+            ],
+            [
+              "Մայրս {ասում է, որ} ուշ է։",
+              "Mayrs asum e, vor ush e.",
+              "My mother says it's late."
+            ]
+          ]
+        },
+        {
+          "h": "Asked whether, where",
+          "p": "Questions: <b>հարցրեց, թե …</b> asked whether / where …: <b>Հարցրեց, թե որտեղ եմ ապրում</b>.",
+          "examples": [
+            [
+              "Նա {հարցրեց, թե} որտեղ եմ ապրում։",
+              "Na harts'rets', t'e vortegh em aprum.",
+              "She asked where I live."
+            ],
+            [
+              "Չգիտեմ, {թե} նա կգա, {թե} ոչ։",
+              "Ch'gitem, t'e na kga, t'e voch'.",
+              "I don't know whether he'll come or not."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Նա ասաց, ＿ վաղը կգա։",
+          "en": "He said he'd come tomorrow.",
+          "options": ["որ", "թե", "եթե", "երբ"],
+          "answer": "որ",
+          "why": "Said that: որ."
+        },
+        {
+          "q": "Նա հարցրեց, ＿ որտեղ եմ ապրում։",
+          "en": "She asked where I live.",
+          "options": ["որ", "թե", "եթե", "քանի որ"],
+          "answer": "թե",
+          "why": "Reported question: թե."
+        },
+        {
+          "q": "Չգիտեմ, թե նա կգա, թե ＿։",
+          "en": "I don't know whether he'll come or not.",
+          "options": ["չէ", "մի", "ոչ", "չի"],
+          "answer": "ոչ",
+          "why": "… թե ոչ = or not."
+        },
+        {
+          "q": "Մայրս ＿ է, որ ուշ է։",
+          "en": "My mother says it's late.",
+          "options": ["ասաց", "ասի", "ասել", "ասում"],
+          "answer": "ասում",
+          "why": "Says: ասում է."
+        }
+      ]
+    },
+    {
+      "id": "ordinals-dates",
+      "title": "First, second, dates",
+      "particle": "առաջին -րդ -երորդ",
+      "summary": "Ordinals: առաջին (first), երկրորդ, երրորդ, չորրորդ, then -երորդ: հինգերորդ (fifth). Dates read \"month's day\": մարտի ութը, March 8th. (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>առաջին</b> 1st, <b>երկրորդ</b> 2nd, <b>երրորդ</b> 3rd, <b>չորրորդ</b> 4th, <b>հինգերորդ</b> 5th, <b>տասներորդ</b> 10th. In figures: <b>5-րդ</b>.",
+          "examples": [
+            [
+              "Ես ապրում եմ {երրորդ} հարկում։",
+              "Yes aprum em yerrord harkum.",
+              "I live on the third floor."
+            ],
+            [
+              "Սա իմ {առաջին} այցն է։",
+              "Sa im arrajin ayts'n e.",
+              "This is my first visit."
+            ]
+          ]
+        },
+        {
+          "h": "Dates and years",
+          "p": "Month in the genitive + day: <b>մայիսի հինգը</b> May 5th; \"on\" a date: <b>մայիսի հինգին</b>. Year: <b>2024 թվականին</b> in 2024.",
+          "examples": [
+            [
+              "Ծնունդս {մայիսի հինգին} է։",
+              "Tsnunds mayisi hingin e.",
+              "My birthday is on May 5th."
+            ],
+            [
+              "{2024 թվականին} Երևանում էի։",
+              "2024 t'vakanin Yerevanum ei.",
+              "I was in Yerevan in 2024."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ես ապրում եմ ＿ հարկում։",
+          "en": "I live on the third floor.",
+          "options": ["երրորդ", "երեք", "երեքերորդ", "երրորդին"],
+          "answer": "երրորդ",
+          "why": "Third: երրորդ."
+        },
+        {
+          "q": "Սա իմ ＿ այցն է։",
+          "en": "This is my first visit.",
+          "options": ["մեկերորդ", "առաջին", "մեկ", "առաջ"],
+          "answer": "առաջին",
+          "why": "First: առաջին."
+        },
+        {
+          "q": "Ծնունդս մայիսի ＿ է։",
+          "en": "My birthday is on May 5th.",
+          "options": ["հինգը", "հինգից", "հինգին", "հինգով"],
+          "answer": "հինգին",
+          "why": "On a date: -ին."
+        },
+        {
+          "q": "2024 ＿ Երևանում էի։",
+          "en": "I was in Yerevan in 2024.",
+          "options": ["թվական", "թվականից", "թվականով", "թվականին"],
+          "answer": "թվականին",
+          "why": "In a year: թվականին."
+        }
+      ]
+    },
+    {
+      "id": "frequency",
+      "title": "Always, often, never",
+      "particle": "միշտ հաճախ երբեմն երբեք",
+      "summary": "Frequency words come before the verb: միշտ (always), հաճախ (often), երբեմն (sometimes), երբեք (never, with a negative verb). (about A2)",
+      "level": "beginner-intermediate",
+      "sections": [
+        {
+          "p": "<b>միշտ</b> always, <b>սովորաբար</b> usually, <b>հաճախ</b> often, <b>երբեմն</b> sometimes, <b>հազվադեպ</b> rarely, <b>երբեք … չ-</b> never.",
+          "examples": [
+            [
+              "Ես {միշտ} սուրճ եմ խմում առավոտյան։",
+              "Yes misht surch em khmum arravotyan.",
+              "I always drink coffee in the morning."
+            ],
+            [
+              "Նա {երբեք} չի ուշանում։",
+              "Na yerbek' ch'i ushanum.",
+              "She's never late."
+            ]
+          ]
+        },
+        {
+          "h": "How often",
+          "p": "<b>Ինչքա՞ն հաճախ</b> how often? <b>օրը երկու անգամ</b> twice a day, <b>ամեն օր</b> every day, <b>շաբաթը մեկ անգամ</b> once a week.",
+          "examples": [
+            ["{Ամեն օր} վազում եմ։", "Amen or vazum em.", "I run every day."],
+            [
+              "Դեղը խմեք {օրը երեք անգամ}։",
+              "Deghë khmek' orë yerek' angam.",
+              "Take the medicine three times a day."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ես ＿ սուրճ եմ խմում առավոտյան։",
+          "en": "I always drink coffee in the morning.",
+          "options": ["միշտ", "երբեք", "երբ", "մինչև"],
+          "answer": "միշտ",
+          "why": "Always: միշտ."
+        },
+        {
+          "q": "Նա երբեք ＿ ուշանում։",
+          "en": "She's never late.",
+          "options": ["է", "չի", "մի", "ոչ"],
+          "answer": "չի",
+          "why": "երբեք needs a negative verb."
+        },
+        {
+          "q": "＿ օր վազում եմ։",
+          "en": "I run every day.",
+          "options": ["Միշտ", "Երբեմն", "Ամեն", "Ամբողջ"],
+          "answer": "Ամեն",
+          "why": "Every: ամեն."
+        },
+        {
+          "q": "Դեղը խմեք օրը երեք ＿։",
+          "en": "Take the medicine three times a day.",
+          "options": ["ժամ", "օր", "հատ", "անգամ"],
+          "answer": "անգամ",
+          "why": "Times: անգամ."
+        }
+      ]
+    },
+    {
+      "id": "quantities",
+      "title": "How many: հատ, քիչ, շատ",
+      "particle": "հատ մի քիչ շատ",
+      "summary": "After a number the noun stays singular; հատ counts items in shops: երկու հատ, two (of them). մի քիչ is \"a little\", շատ \"a lot\". (about A1)",
+      "level": "beginner",
+      "sections": [
+        {
+          "p": "<b>երեք գիրք</b> three books (no plural). <b>Քանի՞ հատ</b> how many? <b>Երկու հատ տվեք</b> give me two.",
+          "examples": [
+            [
+              "{Երեք} գիրք գնեցի։",
+              "Yerek' girk' gnets'i.",
+              "I bought three books."
+            ],
+            [
+              "{Երկու հատ} տվեք, խնդրեմ։",
+              "Yerku hat tvek', khndrem.",
+              "Two, please."
+            ]
+          ]
+        },
+        {
+          "h": "A little, a lot",
+          "p": "<b>մի քիչ</b> (mi k'ich') a little, <b>շատ</b> a lot, many, <b>քիչ</b> few, <b>բոլոր</b> all, <b>մի կիլո</b> a kilo.",
+          "examples": [
+            [
+              "{Մի քիչ} հայերեն գիտեմ։",
+              "Mi k'ich' hayeren gitem.",
+              "I know a little Armenian."
+            ],
+            [
+              "Այստեղ {շատ} մարդ կա։",
+              "Aystegh shat mard ka.",
+              "There are a lot of people here."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Երեք ＿ գնեցի։",
+          "en": "I bought three books.",
+          "options": ["գիրք", "գրքեր", "գրքերը", "գրքի"],
+          "answer": "գիրք",
+          "why": "After a number: singular."
+        },
+        {
+          "q": "Երկու ＿ տվեք, խնդրեմ։",
+          "en": "Two, please.",
+          "options": ["անգամ", "հատ", "ժամ", "քիչ"],
+          "answer": "հատ",
+          "why": "Counting items: հատ."
+        },
+        {
+          "q": "Մի ＿ հայերեն գիտեմ։",
+          "en": "I know a little Armenian.",
+          "options": ["շատ", "հատ", "քիչ", "բոլոր"],
+          "answer": "քիչ",
+          "why": "A little: մի քիչ."
+        },
+        {
+          "q": "Այստեղ ＿ մարդ կա։",
+          "en": "There are a lot of people here.",
+          "options": ["քիչ է", "հատ", "բոլորը", "շատ"],
+          "answer": "շատ",
+          "why": "A lot: շատ."
+        }
+      ]
+    },
+    {
+      "id": "managed",
+      "title": "Managed to, couldn't: կարողացա",
+      "particle": "կարողացա չկարողացա հաջողվեց",
+      "summary": "For one real attempt Armenian uses the aorist of կարողանալ: կարողացա, I managed; չկարողացա, I couldn't. Ինձ հաջողվեց means \"I succeeded\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>կարողացա, կարողացար, կարողացավ</b> managed; negative <b>չկարողացա</b> + infinitive: <b>Չկարողացա գալ</b> I couldn't come.",
+          "examples": [
+            [
+              "Երեկ {չկարողացա} գալ։",
+              "Yerek ch'karoghats'a gal.",
+              "I couldn't come yesterday."
+            ],
+            [
+              "Վերջապես {կարողացա} քնել։",
+              "Verjapes karoghats'a k'nel.",
+              "I finally managed to sleep."
+            ]
+          ]
+        },
+        {
+          "h": "Succeeded",
+          "p": "<b>հաջողվել</b> works like \"like\": the person is in the dative: <b>Ինձ հաջողվեց</b> I succeeded, <b>Նրան չհաջողվեց</b> he didn't manage.",
+          "examples": [
+            [
+              "{Ինձ հաջողվեց} տոմս գտնել։",
+              "Indz hajoghvets' toms gtnel.",
+              "I managed to find a ticket."
+            ],
+            [
+              "Նրան {չհաջողվեց} զանգել։",
+              "Nran ch'hajoghvets' zangel.",
+              "He didn't manage to call."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Երեկ ＿ գալ։",
+          "en": "I couldn't come yesterday.",
+          "options": ["չկարողացա", "չեմ կարող", "չէի կարող", "չկարողանամ"],
+          "answer": "չկարողացա",
+          "why": "One attempt: aorist."
+        },
+        {
+          "q": "Վերջապես ＿ քնել։",
+          "en": "I finally managed to sleep.",
+          "options": ["կարող եմ", "կարողացա", "կարողանամ", "կարողանում"],
+          "answer": "կարողացա",
+          "why": "Managed: կարողացա."
+        },
+        {
+          "q": "＿ հաջողվեց տոմս գտնել։",
+          "en": "I managed to find a ticket.",
+          "options": ["Ես", "Իմ", "Ինձ", "Ինձնից"],
+          "answer": "Ինձ",
+          "why": "Dative: ինձ."
+        },
+        {
+          "q": "Նրան ＿ զանգել։",
+          "en": "He didn't manage to call.",
+          "options": ["չկարողացա", "չհաջողվի", "չէր", "չհաջողվեց"],
+          "answer": "չհաջողվեց",
+          "why": "Didn't succeed: չհաջողվեց."
+        }
+      ]
+    },
+    {
+      "id": "was-going-to",
+      "title": "Was going to: -ելու էի",
+      "particle": "-ելու էի",
+      "summary": "The future participle with the past helper means \"was going to\": գնալու էի, I was going to go (but …). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-ելու / -ալու</b> + <b>էի</b>: <b>Զանգելու էի</b> I was going to call. Often followed by <b>բայց</b>.",
+          "examples": [
+            [
+              "{Գնալու էի}, բայց անձրև եկավ։",
+              "Gnalu ei, bayts' andzrev yekav.",
+              "I was going to go, but it rained."
+            ],
+            [
+              "Հենց {զանգելու էի} քեզ։",
+              "Hents' zangelu ei k'ez.",
+              "I was just about to call you."
+            ]
+          ]
+        },
+        {
+          "h": "Was supposed to",
+          "p": "The same form can mean \"was supposed to\": <b>Նա պիտի գար</b> or <b>գալու էր</b> he was supposed to come.",
+          "examples": [
+            [
+              "Նա երեկ {գալու էր}։",
+              "Na yerek galu er.",
+              "He was supposed to come yesterday."
+            ],
+            [
+              "Մենք {հանդիպելու էինք}, բայց նա հիվանդացավ։",
+              "Menk' handipelu eink', bayts' na hivandats'av.",
+              "We were going to meet, but he got ill."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Գնալու ＿, բայց անձրև եկավ։",
+          "en": "I was going to go, but it rained.",
+          "options": ["էի", "եմ", "կլինեմ", "էր"],
+          "answer": "էի",
+          "why": "Was going to: -ելու էի."
+        },
+        {
+          "q": "Հենց ＿ էի քեզ։",
+          "en": "I was just about to call you.",
+          "options": ["զանգում", "զանգելու", "զանգեցի", "զանգել"],
+          "answer": "զանգելու",
+          "why": "Future participle: -ելու."
+        },
+        {
+          "q": "Նա երեկ գալու ＿։",
+          "en": "He was supposed to come yesterday.",
+          "options": ["է", "էի", "էր", "կլինի"],
+          "answer": "էր",
+          "why": "He: էր."
+        },
+        {
+          "q": "Մենք հանդիպելու ＿, բայց նա հիվանդացավ։",
+          "en": "We were going to meet, but he got ill.",
+          "options": ["ենք", "էին", "էիք", "էինք"],
+          "answer": "էինք",
+          "why": "We: էինք."
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "Is sitting, is wearing: -ած է",
+      "particle": "նստած կանգնած հագած",
+      "summary": "Positions and things worn are states, said with the -ած participle: Նա նստած է, she is sitting; Կարմիր շոր է հագած, she's wearing a red dress. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>նստած է</b> is sitting, <b>կանգնած է</b> is standing, <b>պառկած է</b> is lying, <b>քնած է</b> is asleep. Compare <b>նստում է</b> she sits down.",
+          "examples": [
+            [
+              "Նա պատուհանի մոտ {նստած է}։",
+              "Na patuhani mot nstats e.",
+              "She is sitting by the window."
+            ],
+            ["Երեխան {քնած է}։", "Yerekhan k'nats e.", "The child is asleep."]
+          ]
+        },
+        {
+          "h": "Wearing",
+          "p": "<b>հագած</b> wearing: <b>Սև վերարկու է հագած</b> he's wearing a black coat. <b>Ակնոց է դրած</b> he's wearing glasses.",
+          "examples": [
+            [
+              "Նա սև վերարկու {է հագած}։",
+              "Na sev verarku e hagats.",
+              "He's wearing a black coat."
+            ],
+            [
+              "Բոլորը {կանգնած էին}։",
+              "Bolorë kangnats ein.",
+              "Everyone was standing."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Նա պատուհանի մոտ ＿ է։",
+          "en": "She is sitting by the window.",
+          "options": ["նստած", "նստում", "նստեց", "նստող"],
+          "answer": "նստած",
+          "why": "State: -ած է."
+        },
+        {
+          "q": "Երեխան ＿ է։",
+          "en": "The child is asleep.",
+          "options": ["քնում", "քնած", "քնեց", "քնի"],
+          "answer": "քնած",
+          "why": "Asleep: քնած."
+        },
+        {
+          "q": "Նա սև վերարկու է ＿։",
+          "en": "He's wearing a black coat.",
+          "options": ["հագնում", "հագավ", "հագած", "հագնող"],
+          "answer": "հագած",
+          "why": "Wearing: հագած."
+        },
+        {
+          "q": "Բոլորը կանգնած ＿։",
+          "en": "Everyone was standing.",
+          "options": ["են", "էր", "էինք", "էին"],
+          "answer": "էին",
+          "why": "They were: էին."
+        }
+      ]
+    },
+    {
+      "id": "genitive-classes",
+      "title": "Irregular \"of\": ընկերոջ, մոր, տարվա",
+      "particle": "-ոջ -որ -վա -ան",
+      "summary": "Most nouns make the genitive with -ի, but common ones don't: ընկեր → ընկերոջ, մայր → մոր, տարի → տարվա, ամառ → ամռան. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>-ոջ</b>: ընկեր → <b>ընկերոջ</b>, քույր → <b>քրոջ</b>. <b>-որ</b>: մայր → <b>մոր</b>, հայր → <b>հոր</b>, եղբայր → <b>եղբոր</b>.",
+          "examples": [
+            [
+              "{Ընկերոջս} տունը մոտ է։",
+              "Ënkerojs tunë mot e.",
+              "My friend's house is nearby."
+            ],
+            [
+              "Սա {մորս} նկարն է։",
+              "Sa mors nkarn e.",
+              "This is my mother's picture."
+            ]
+          ]
+        },
+        {
+          "h": "Time words and -ան",
+          "p": "<b>-վա</b>: տարի → <b>տարվա</b>, գիշեր → <b>գիշերվա</b>. <b>-ան</b>: ամառ → <b>ամռան</b>, ձմեռ → <b>ձմռան</b>, դուռ → <b>դռան</b>, անուն → <b>անվան</b>.",
+          "examples": [
+            [
+              "{Ամռան} արձակուրդը կարճ էր։",
+              "Amrran ardzakurdë karch er.",
+              "The summer holiday was short."
+            ],
+            [
+              "{Տարվա} վերջին Երևան կգամ։",
+              "Tarva verjin Yerevan kgam.",
+              "I'll come to Yerevan at the end of the year."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ տունը մոտ է։",
+          "en": "My friend's house is nearby.",
+          "options": ["Ընկերոջս", "Ընկերիս", "Ընկերս", "Ընկերից"],
+          "answer": "Ընկերոջս",
+          "why": "ընկեր → ընկերոջ."
+        },
+        {
+          "q": "Սա ＿ նկարն է։",
+          "en": "This is my mother's picture.",
+          "options": ["մայրիս", "մորս", "մայրս", "մայրից"],
+          "answer": "մորս",
+          "why": "մայր → մոր."
+        },
+        {
+          "q": "＿ արձակուրդը կարճ էր։",
+          "en": "The summer holiday was short.",
+          "options": ["Ամառի", "Ամառը", "Ամռան", "Ամառից"],
+          "answer": "Ամռան",
+          "why": "ամառ → ամռան."
+        },
+        {
+          "q": "＿ վերջին կգամ։",
+          "en": "I'll come at the end of the year.",
+          "options": ["Տարու", "Տարին", "Տարիի", "Տարվա"],
+          "answer": "Տարվա",
+          "why": "տարի → տարվա."
+        }
+      ]
+    },
+    {
+      "id": "duration",
+      "title": "For, since: … է, ինչ",
+      "particle": "է ինչ -ով -ից",
+      "summary": "\"I've been doing X for two years\" is Երկու տարի է, ինչ … : \"it is two years that …\". (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>Երկու տարի է, ինչ հայերեն եմ սովորում</b> I've been learning Armenian for two years. Negative: <b>Վաղուց է, ինչ չենք հանդիպել</b> we haven't met for ages.",
+          "examples": [
+            [
+              "{Երկու տարի է, ինչ} հայերեն եմ սովորում։",
+              "Yerku tari e, inch' hayeren em sovorum.",
+              "I've been learning Armenian for two years."
+            ],
+            [
+              "{Վաղուց է, ինչ} չենք հանդիպել։",
+              "Vaghuts' e, inch' ch'enk' handipel.",
+              "We haven't seen each other in ages."
+            ]
+          ]
+        },
+        {
+          "h": "In, for",
+          "p": "<b>-ից</b> after a time means \"in\" (from now): <b>մեկ ժամից</b> in an hour. <b>-ով</b> means \"for\" (a planned period): <b>մեկ շաբաթով</b> for a week.",
+          "examples": [
+            [
+              "{Մեկ ժամից} կվերադառնամ։",
+              "Mek zhamits' kveradarrnam.",
+              "I'll be back in an hour."
+            ],
+            [
+              "Ռուսաստան եմ գնում {մեկ շաբաթով}։",
+              "Rrusastan em gnum mek shabat'ov.",
+              "I'm going to Russia for a week."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Երկու տարի ＿, ինչ հայերեն եմ սովորում։",
+          "en": "I've been learning Armenian for two years.",
+          "options": ["է", "էր", "կա", "ունի"],
+          "answer": "է",
+          "why": "… է, ինչ."
+        },
+        {
+          "q": "Վաղուց է, ＿ չենք հանդիպել։",
+          "en": "We haven't met in ages.",
+          "options": ["որ", "ինչ", "երբ", "թե"],
+          "answer": "ինչ",
+          "why": "… է, ինչ."
+        },
+        {
+          "q": "Մեկ ＿ կվերադառնամ։",
+          "en": "I'll be back in an hour.",
+          "options": ["ժամով", "ժամին", "ժամից", "ժամը"],
+          "answer": "ժամից",
+          "why": "In: -ից."
+        },
+        {
+          "q": "Ռուսաստան եմ գնում մեկ ＿։",
+          "en": "I'm going to Russia for a week.",
+          "options": ["շաբաթից", "շաբաթին", "շաբաթ է", "շաբաթով"],
+          "answer": "շաբաթով",
+          "why": "For a period: -ով."
+        }
+      ]
+    },
+    {
+      "id": "conditional",
+      "title": "Would: կգնայի",
+      "particle": "կ- + -էի",
+      "summary": "The conditional is կ- with the past subjunctive: կգնայի, I would go; կգնեի, I would buy. Negative: չէի գնա. (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>կգրեի, կգրեիր, կգրեր</b> would write; <b>կկարդայի</b> would read. <b>Սիրով կգնայի</b> I'd gladly go.",
+          "examples": [
+            ["{Սիրով կգնայի}։", "Sirov kgnayi.", "I'd gladly go."],
+            [
+              "Իմ տեղը ի՞նչ {կանեիր}։",
+              "Im teghë inch' kaneir?",
+              "What would you do in my place?"
+            ]
+          ]
+        },
+        {
+          "h": "If I had … I would …",
+          "p": "<b>Եթե</b> + past subjunctive, then the conditional: <b>Եթե փող ունենայի, մեքենա կգնեի</b> if I had money, I'd buy a car.",
+          "examples": [
+            [
+              "Եթե փող {ունենայի}, մեքենա {կգնեի}։",
+              "Yet'e p'ogh unenayi, mek'ena kgnei.",
+              "If I had money, I'd buy a car."
+            ],
+            [
+              "Ես քո տեղը {չէի գնա}։",
+              "Yes k'o teghë ch'ei gna.",
+              "If I were you, I wouldn't go."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Սիրով ＿։",
+          "en": "I'd gladly go.",
+          "options": ["կգնայի", "կգնամ", "գնացի", "գնում եմ"],
+          "answer": "կգնայի",
+          "why": "Would: կ- + -այի."
+        },
+        {
+          "q": "Եթե փող ունենայի, մեքենա ＿։",
+          "en": "If I had money, I'd buy a car.",
+          "options": ["կգնեմ", "կգնեի", "գնեցի", "կգնի"],
+          "answer": "կգնեի",
+          "why": "Would buy: կգնեի."
+        },
+        {
+          "q": "Եթե փող ＿, մեքենա կգնեի։",
+          "en": "If I had money, I'd buy a car.",
+          "options": ["ունեմ", "ունեի", "ունենայի", "կունենամ"],
+          "answer": "ունենայի",
+          "why": "Unreal if: past subjunctive."
+        },
+        {
+          "q": "Ես քո տեղը ＿ գնա։",
+          "en": "If I were you, I wouldn't go.",
+          "options": ["չեմ", "չի", "մի", "չէի"],
+          "answer": "չէի",
+          "why": "Negative conditional: չէի."
+        }
+      ]
+    },
+    {
+      "id": "counterfactual",
+      "title": "If I had known: եթե իմանայի",
+      "particle": "եթե -ած լինեի",
+      "summary": "For the past, Armenian uses the same unreal forms, or -ած լինեի (had done): Եթե ժամանակին եկած լինեիր, … if you had come on time, … (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>Եթե իմանայի, քեզ կասեի</b> if I had known, I'd have told you. To stress the past: <b>եկած լինեիր</b> (you) had come.",
+          "examples": [
+            [
+              "{Եթե իմանայի}, քեզ կասեի։",
+              "Yet'e imanayi, k'ez kasei.",
+              "If I'd known, I'd have told you."
+            ],
+            [
+              "Եթե ժամանակին {եկած լինեիր}, գնացքին կհասնեինք։",
+              "Yet'e zhamanakin yekats lineir, gnats'k'in khasneink'.",
+              "If you'd come on time, we'd have caught the train."
+            ]
+          ]
+        },
+        {
+          "h": "Should have",
+          "p": "<b>պետք է</b> + past subjunctive means \"should have\" or \"had to\": <b>Պետք է զանգեի</b> I should have called.",
+          "examples": [
+            ["{Պետք է զանգեի}։", "Petk' e zangei.", "I should have called."],
+            [
+              "Դա {չպետք է ասեիր}։",
+              "Da ch'petk' e aseir.",
+              "You shouldn't have said that."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Եթե ＿, քեզ կասեի։",
+          "en": "If I'd known, I'd have told you.",
+          "options": ["իմանայի", "գիտեմ", "գիտեի", "իմանամ"],
+          "answer": "իմանայի",
+          "why": "Unreal: իմանայի."
+        },
+        {
+          "q": "Եթե ժամանակին եկած ＿, գնացքին կհասնեինք։",
+          "en": "If you'd come on time, we'd have caught the train.",
+          "options": ["ես", "լինեիր", "էիր", "լինես"],
+          "answer": "լինեիր",
+          "why": "Had come: -ած լինեիր."
+        },
+        {
+          "q": "Պետք է ＿։",
+          "en": "I should have called.",
+          "options": ["զանգեմ", "զանգեցի", "զանգեի", "կզանգեմ"],
+          "answer": "զանգեի",
+          "why": "Should have: past subjunctive."
+        },
+        {
+          "q": "Դա չպետք է ＿։",
+          "en": "You shouldn't have said that.",
+          "options": ["ասես", "ասացիր", "կասես", "ասեիր"],
+          "answer": "ասեիր",
+          "why": "Past subjunctive after պետք է."
+        }
+      ]
+    },
+    {
+      "id": "probably",
+      "title": "Probably, maybe, must be",
+      "particle": "երևի հավանաբար կարող է պետք է որ",
+      "summary": "երևի and հավանաբար mean \"probably\"; կարող է + subjunctive means \"maybe\"; պետք է որ means \"must be\" (a conclusion). (about B1)",
+      "level": "intermediate",
+      "sections": [
+        {
+          "p": "<b>Երևի տանն է</b> he's probably at home. <b>Կարող է անձրև գա</b> it might rain.",
+          "examples": [
+            ["{Երևի} տանն է։", "Yerevi tann e.", "He's probably at home."],
+            ["{Կարող է} անձրև գա։", "Karogh e andzrev ga.", "It might rain."]
+          ]
+        },
+        {
+          "h": "Must be",
+          "p": "<b>պետք է որ</b> + subjunctive is a confident guess: <b>Պետք է որ հոգնած լինես</b> you must be tired.",
+          "examples": [
+            [
+              "{Պետք է որ} հոգնած լինես։",
+              "Petk' e vor hognats lines.",
+              "You must be tired."
+            ],
+            [
+              "{Հավանաբար} վաղը ձյուն կգա։",
+              "Havanabar vaghë dzyun kga.",
+              "It will probably snow tomorrow."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ տանն է։",
+          "en": "He's probably at home.",
+          "options": ["Երևի", "Պետք", "Կարող", "Թող"],
+          "answer": "Երևի",
+          "why": "Probably: երևի."
+        },
+        {
+          "q": "Կարող է անձրև ＿։",
+          "en": "It might rain.",
+          "options": ["եկավ", "գա", "գալիս է", "եկել"],
+          "answer": "գա",
+          "why": "After կարող է: subjunctive."
+        },
+        {
+          "q": "Պետք է ＿ հոգնած լինես։",
+          "en": "You must be tired.",
+          "options": ["թե", "եթե", "որ", "երբ"],
+          "answer": "որ",
+          "why": "Must be: պետք է որ."
+        },
+        {
+          "q": "＿ վաղը ձյուն կգա։",
+          "en": "It will probably snow tomorrow.",
+          "options": ["Թող", "Երանի", "Եթե", "Հավանաբար"],
+          "answer": "Հավանաբար",
+          "why": "Probably: հավանաբար."
+        }
+      ]
+    },
+    {
+      "id": "wishes",
+      "title": "I wish, let him: երանի, թող",
+      "particle": "երանի թող մաղթում եմ",
+      "summary": "երանի + past subjunctive is \"I wish …\"; թող + subjunctive is \"let …\"; մաղթում եմ is \"I wish you …\". (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>Երանի այստեղ լինեիր</b> I wish you were here. <b>Երանի իմանայի</b> I wish I knew.",
+          "examples": [
+            [
+              "{Երանի} այստեղ լինեիր։",
+              "Yerani aystegh lineir.",
+              "I wish you were here."
+            ],
+            [
+              "{Երանի} ժամանակ ունենայի։",
+              "Yerani zhamanak unenayi.",
+              "I wish I had time."
+            ]
+          ]
+        },
+        {
+          "h": "Let, and good wishes",
+          "p": "<b>թող</b> (t'ogh) let: <b>Թող գա</b> let him come. <b>Հաջողություն եմ մաղթում</b> I wish you luck.",
+          "examples": [
+            ["{Թող} գա։", "T'ogh ga.", "Let him come."],
+            [
+              "Քեզ հաջողություն {եմ մաղթում}։",
+              "K'ez hajoghut'yun em maght'um.",
+              "I wish you luck."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ այստեղ լինեիր։",
+          "en": "I wish you were here.",
+          "options": ["Երանի", "Թող", "Եթե", "Երևի"],
+          "answer": "Երանի",
+          "why": "I wish: երանի."
+        },
+        {
+          "q": "Երանի ժամանակ ＿։",
+          "en": "I wish I had time.",
+          "options": ["ունեմ", "ունենայի", "ունեի", "կունենամ"],
+          "answer": "ունենայի",
+          "why": "Past subjunctive."
+        },
+        {
+          "q": "＿ գա։",
+          "en": "Let him come.",
+          "options": ["Երանի", "Եկեք", "Թող", "Արի"],
+          "answer": "Թող",
+          "why": "Let: թող."
+        },
+        {
+          "q": "Քեզ հաջողություն եմ ＿։",
+          "en": "I wish you luck.",
+          "options": ["ուզում", "սիրում", "տալիս", "մաղթում"],
+          "answer": "մաղթում",
+          "why": "Wish someone: մաղթել."
+        }
+      ]
+    },
+    {
+      "id": "evidential",
+      "title": "It turns out: the perfect as news",
+      "particle": "-ել է պարզվեց",
+      "summary": "The perfect can report something found out rather than seen: Ձյուն է եկել, it has snowed (I see). Պարզվեց, որ … means \"it turned out that …\". (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>Նա արդեն գնացել է</b> he's already left (I've just found out). <b>Պարզվեց, որ նա ամուսնացել է</b> it turned out she'd got married.",
+          "examples": [
+            [
+              "Գիշերը ձյուն {է եկել}։",
+              "Gisherë dzyun e yekel.",
+              "It snowed in the night (I see now)."
+            ],
+            [
+              "{Պարզվեց, որ} նա ամուսնացել է։",
+              "Parzvets', vor na amusnats'el e.",
+              "It turned out she had got married."
+            ]
+          ]
+        },
+        {
+          "h": "Once upon a time",
+          "p": "Folk tales open with the present of \"be\" used as a story tense: <b>Լինում է, չի լինում, մի թագավոր է լինում</b>, once upon a time there was a king.",
+          "examples": [
+            [
+              "{Լինում է, չի լինում}, մի թագավոր է լինում։",
+              "Linum e, ch'i linum, mi t'agavor e linum.",
+              "Once upon a time there was a king."
+            ],
+            [
+              "Ուրեմն դու արդեն {գիտեիր}։",
+              "Urem du arden giteir.",
+              "So you already knew."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Գիշերը ձյուն է ＿։",
+          "en": "It snowed in the night (I see now).",
+          "options": ["եկել", "գալիս", "գա", "կգա"],
+          "answer": "եկել",
+          "why": "Found out: perfect."
+        },
+        {
+          "q": "＿, որ նա ամուսնացել է։",
+          "en": "It turned out she had got married.",
+          "options": ["Թող", "Պարզվեց", "Երանի", "Կարող է"],
+          "answer": "Պարզվեց",
+          "why": "It turned out: պարզվեց."
+        },
+        {
+          "q": "Լինում է, չի ＿, մի թագավոր է լինում։",
+          "en": "Once upon a time there was a king.",
+          "options": ["եղել", "լինի", "լինում", "կա"],
+          "answer": "լինում",
+          "why": "The tale opening."
+        },
+        {
+          "q": "Նա արդեն գնացել ＿։",
+          "en": "He's already left (it turns out).",
+          "options": ["էր", "եմ", "կլինի", "է"],
+          "answer": "է",
+          "why": "Perfect: -ել է."
+        }
+      ]
+    },
+    {
+      "id": "gerund-elov",
+      "title": "By doing, while doing: -ելով",
+      "particle": "-ելով -ալով",
+      "summary": "-ելով / -ալով means \"by doing\" or \"doing (as it happens)\": կարդալով ես սովորում, you learn by reading; ծիծաղելով ասաց, he said, laughing. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>-ել → -ելով</b>, <b>-ալ → -ալով</b>: <b>Աշխատելով ես սովորում</b> you learn by working.",
+          "examples": [
+            [
+              "{Կարդալով} ես սովորում։",
+              "Kardalov es sovorum.",
+              "You learn by reading."
+            ],
+            [
+              "Նա {ծիծաղելով} ասաց։",
+              "Na tsitsaghelov asats'.",
+              "He said it laughing."
+            ]
+          ]
+        },
+        {
+          "h": "Without doing: չ- + -ելով",
+          "p": "With <b>չ-</b>: <b>չիմանալով</b> without knowing, not knowing.",
+          "examples": [
+            [
+              "{Չիմանալով} հասցեն, մոլորվեցի։",
+              "Ch'imanalov hasts'en, molorvets'i.",
+              "Not knowing the address, I got lost."
+            ],
+            [
+              "Նա տուն վերադարձավ {երգելով}։",
+              "Na tun veradardzav yergelov.",
+              "She came home singing."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ ես սովորում։",
+          "en": "You learn by reading.",
+          "options": ["Կարդալով", "Կարդալիս", "Կարդալու", "Կարդացած"],
+          "answer": "Կարդալով",
+          "why": "By doing: -ալով."
+        },
+        {
+          "q": "Նա ＿ ասաց։",
+          "en": "He said it laughing.",
+          "options": ["ծիծաղելու", "ծիծաղելով", "ծիծաղել", "ծիծաղեց"],
+          "answer": "ծիծաղելով",
+          "why": "Manner: -ելով."
+        },
+        {
+          "q": "＿ հասցեն, մոլորվեցի։",
+          "en": "Not knowing the address, I got lost.",
+          "options": ["Չգիտեմ", "Չիմացա", "Չիմանալով", "Չիմանալու"],
+          "answer": "Չիմանալով",
+          "why": "Without knowing: չ- + -ալով."
+        },
+        {
+          "q": "Նա տուն վերադարձավ ＿։",
+          "en": "She came home singing.",
+          "options": ["երգում", "երգեց", "երգելիք", "երգելով"],
+          "answer": "երգելով",
+          "why": "Manner: -ելով."
+        }
+      ]
+    },
+    {
+      "id": "the-more",
+      "title": "The more … the more: որքան … այնքան",
+      "particle": "որքան այնքան",
+      "summary": "որքան … այնքան means \"the more … the more\": Որքան շատ կարդաս, այնքան լավ կգրես. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>Որքան</b> + clause, <b>այնքան</b> + clause; spoken also <b>ինչքան … էնքան</b>.",
+          "examples": [
+            [
+              "{Որքան} շատ կարդաս, {այնքան} լավ կգրես։",
+              "Vork'an shat kardas, aynk'an lav kgres.",
+              "The more you read, the better you'll write."
+            ],
+            [
+              "{Որքան} շուտ, {այնքան} լավ։",
+              "Vork'an shut, aynk'an lav.",
+              "The sooner, the better."
+            ]
+          ]
+        },
+        {
+          "h": "As much as",
+          "p": "<b>որքան</b> alone means \"as much as, how much\": <b>Վերցրու, որքան ուզում ես</b> take as much as you want.",
+          "examples": [
+            [
+              "Վերցրու, {որքան} ուզում ես։",
+              "Verts'ru, vork'an uzum es.",
+              "Take as much as you want."
+            ],
+            [
+              "{Որքան} գեղեցիկ է։",
+              "Vork'an geghets'ik e!",
+              "How beautiful it is!"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Որքան շատ կարդաս, ＿ լավ կգրես։",
+          "en": "The more you read, the better you'll write.",
+          "options": ["այնքան", "որքան", "ավելի", "ամենա"],
+          "answer": "այնքան",
+          "why": "The more … the more: … այնքան."
+        },
+        {
+          "q": "＿ շուտ, այնքան լավ։",
+          "en": "The sooner, the better.",
+          "options": ["Այնքան", "Որքան", "Ավելի", "Երբ"],
+          "answer": "Որքան",
+          "why": "Որքան … այնքան."
+        },
+        {
+          "q": "Վերցրու, ＿ ուզում ես։",
+          "en": "Take as much as you want.",
+          "options": ["այնքան", "որը", "որքան", "ով"],
+          "answer": "որքան",
+          "why": "As much as: որքան."
+        },
+        {
+          "q": "＿ գեղեցիկ է։",
+          "en": "How beautiful it is!",
+          "options": ["Այնքան", "Ամենա", "Ավելի", "Որքան"],
+          "answer": "Որքան",
+          "why": "How …!: որքան."
+        }
+      ]
+    },
+    {
+      "id": "as-if",
+      "title": "As if: կարծես, ասես",
+      "particle": "կարծես ասես իբր",
+      "summary": "կարծես (or literary ասես) means \"as if\" or \"it seems\": Կարծես անձրև է գալու, it looks like rain. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>Այնպես է խոսում, կարծես ամեն ինչ գիտի</b> he talks as if he knew everything. For an unreal picture use the past subjunctive: <b>ասես երազ լիներ</b> as if it were a dream.",
+          "examples": [
+            [
+              "Այնպես է խոսում, {կարծես} ամեն ինչ գիտի։",
+              "Aynpes e khosum, kartses amen inch' giti.",
+              "He talks as if he knows everything."
+            ],
+            [
+              "{Կարծես} անձրև է գալու։",
+              "Kartses andzrev e galu.",
+              "It looks like it's going to rain."
+            ]
+          ]
+        },
+        {
+          "h": "Supposedly",
+          "p": "<b>իբր</b> (ibr) casts doubt: \"supposedly\": <b>Իբր հիվանդ է</b> he's supposedly ill.",
+          "examples": [
+            [
+              "{Ասես} երազ լիներ։",
+              "Ases yeraz liner.",
+              "It was as if it were a dream."
+            ],
+            ["{Իբր} հիվանդ է։", "Ibr hivand e.", "He's supposedly ill."]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Այնպես է խոսում, ＿ ամեն ինչ գիտի։",
+          "en": "He talks as if he knows everything.",
+          "options": ["կարծես", "քանի որ", "որովհետև", "եթե"],
+          "answer": "կարծես",
+          "why": "As if: կարծես."
+        },
+        {
+          "q": "＿ անձրև է գալու։",
+          "en": "It looks like it's going to rain.",
+          "options": ["Թող", "Կարծես", "Երանի", "Եթե"],
+          "answer": "Կարծես",
+          "why": "It seems: կարծես."
+        },
+        {
+          "q": "Ասես երազ ＿։",
+          "en": "As if it were a dream.",
+          "options": ["է", "էր", "լիներ", "կլինի"],
+          "answer": "լիներ",
+          "why": "Unreal: past subjunctive."
+        },
+        {
+          "q": "＿ հիվանդ է։",
+          "en": "He's supposedly ill.",
+          "options": ["Թող", "Երանի", "Որքան", "Իբր"],
+          "answer": "Իբր",
+          "why": "Supposedly: իբր."
+        }
+      ]
+    },
+    {
+      "id": "formal-speech",
+      "title": "Polite speech: Դուք, բարի եղեք",
+      "particle": "Դուք բարի եղեք համեցեք",
+      "summary": "Polite speech uses Դուք with plural verbs, titles պարոն / տիկին, and set phrases like բարի եղեք (be so kind) and համեցեք (please come in, help yourself). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>Ինչպե՞ս եք</b> how are you (polite). <b>պարոն Սարգսյան</b> Mr Sargsyan, <b>տիկին Աննա</b> Mrs Anna. <b>Ներեցեք</b> excuse me.",
+          "examples": [
+            [
+              "{Ինչպե՞ս եք}, պարոն Սարգսյան։",
+              "Inch'pes ek', paron Sargsyan?",
+              "How are you, Mr Sargsyan?"
+            ],
+            [
+              "{Ներեցեք}, որտե՞ղ է կայարանը։",
+              "Nerets'ek', vortegh e kayaranë?",
+              "Excuse me, where is the station?"
+            ]
+          ]
+        },
+        {
+          "h": "Requests and welcome",
+          "p": "<b>Բարի եղեք</b> + command: please be so kind as to. <b>Համեցե՛ք</b> welcome, come in, help yourself.",
+          "examples": [
+            [
+              "{Բարի եղեք}, դուռը փակեք։",
+              "Bari yeghek', durrë p'akek'.",
+              "Would you kindly close the door."
+            ],
+            [
+              "{Համեցե՛ք}, նստեք։",
+              "Hamets'ek', nstek'.",
+              "Welcome, please sit down."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ինչպե՞ս ＿, պարոն Սարգսյան։",
+          "en": "How are you, Mr Sargsyan?",
+          "options": ["եք", "ես", "է", "եմ"],
+          "answer": "եք",
+          "why": "Polite you: եք."
+        },
+        {
+          "q": "＿, որտե՞ղ է կայարանը։",
+          "en": "Excuse me, where is the station?",
+          "options": ["Ներիր", "Ներեցեք", "Համեցեք", "Բարի"],
+          "answer": "Ներեցեք",
+          "why": "Polite: ներեցեք."
+        },
+        {
+          "q": "Բարի ＿, դուռը փակեք։",
+          "en": "Would you kindly close the door.",
+          "options": ["եղիր", "է", "եղեք", "էիք"],
+          "answer": "եղեք",
+          "why": "Be so kind: բարի եղեք."
+        },
+        {
+          "q": "＿, նստեք։",
+          "en": "Welcome, please sit down.",
+          "options": ["Արի՛", "Գնա՛", "Տու՛ր", "Համեցե՛ք"],
+          "answer": "Համեցե՛ք",
+          "why": "Welcome: համեցեք."
+        }
+      ]
+    },
+    {
+      "id": "particles",
+      "title": "Spoken particles: չէ՞, էլի, ախր, հո",
+      "particle": "չէ էլի ախր հո",
+      "summary": "Spoken Armenian adds small words for tone: չէ՞ (…, right?), էլի (come on), ախր (but, you see), հո (surely … not). (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>չէ՞</b> at the end asks for agreement: <b>Դու հայ ես, չէ՞</b>. <b>էլի</b> after a command softens or urges it: <b>Արի էլի</b> come on.",
+          "examples": [
+            [
+              "Դու հայ ես, {չէ՞}։",
+              "Du hay es, ch'e?",
+              "You're Armenian, aren't you?"
+            ],
+            ["Արի {էլի}։", "Ari eli!", "Oh, come on!"]
+          ]
+        },
+        {
+          "h": "But, surely not",
+          "p": "<b>ախր</b> (akhr) gives an excuse or protest: <b>Ախր ես չգիտեի</b> but I didn't know! <b>հո</b> (ho) in a worried question: <b>Հո չե՞ս մոռացել</b> you haven't forgotten, have you?",
+          "examples": [
+            ["{Ախր} ես չգիտեի։", "Akhr yes ch'gitei!", "But I didn't know!"],
+            [
+              "{Հո} չե՞ս մոռացել։",
+              "Ho ch'es morrats'el?",
+              "You haven't forgotten, have you?"
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Դու հայ ես, ＿։",
+          "en": "You're Armenian, aren't you?",
+          "options": ["չէ՞", "էլի", "ախր", "հո"],
+          "answer": "չէ՞",
+          "why": "Tag: չէ՞."
+        },
+        {
+          "q": "Արի ＿։",
+          "en": "Oh, come on!",
+          "options": ["չէ", "էլի", "ախր", "հո"],
+          "answer": "էլի",
+          "why": "Urging: էլի."
+        },
+        {
+          "q": "＿ ես չգիտեի։",
+          "en": "But I didn't know!",
+          "options": ["Էլի", "Հո", "Ախր", "Չէ"],
+          "answer": "Ախր",
+          "why": "Protest: ախր."
+        },
+        {
+          "q": "＿ չե՞ս մոռացել։",
+          "en": "You haven't forgotten, have you?",
+          "options": ["Ախր", "Էլի", "Թող", "Հո"],
+          "answer": "Հո",
+          "why": "Worried question: հո."
+        }
+      ]
+    },
+    {
+      "id": "focus",
+      "title": "Focus: where the helper goes",
+      "particle": "եմ ես է",
+      "summary": "The helper verb sits right after the word in focus: Ե՛ս եմ գրել (I was the one who wrote it), Երեկ եմ եկել (it was yesterday that I came). With no focus it follows the object or comes before the verb. (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>Նամակ եմ գրել</b> I've written a letter (neutral). <b>Ես եմ գրել</b> I'm the one who wrote it. <b>Երեկ եմ եկել</b> I came yesterday (not today).",
+          "examples": [
+            [
+              "{Ես եմ} գրել այս նամակը։",
+              "Yes em grel ays namakë.",
+              "I'm the one who wrote this letter."
+            ],
+            [
+              "{Երեկ եմ} եկել։",
+              "Yerek em yekel.",
+              "It was yesterday that I came."
+            ]
+          ]
+        },
+        {
+          "h": "In questions and negatives",
+          "p": "A question word pulls the helper: <b>Ո՞վ է եկել</b> who has come? The negative helper always comes before the verb: <b>Չեմ գրել</b>, <b>Նամակ չեմ գրել</b>.",
+          "examples": [
+            ["{Ո՞վ է} եկել։", "Ov e yekel?", "Who has come?"],
+            [
+              "Ես նամակ {չեմ գրել}։",
+              "Yes namak ch'em grel.",
+              "I haven't written a letter."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Ես ＿ գրել այս նամակը։",
+          "en": "I'm the one who wrote this letter.",
+          "options": ["եմ", "է", "ես", "ենք"],
+          "answer": "եմ",
+          "why": "Focus on \"I\": ես եմ."
+        },
+        {
+          "q": "Երեկ ＿ եկել։",
+          "en": "It was yesterday that I came.",
+          "options": ["է", "եմ", "ես", "էի"],
+          "answer": "եմ",
+          "why": "The helper follows the focus."
+        },
+        {
+          "q": "Ո՞վ ＿ եկել։",
+          "en": "Who has come?",
+          "options": ["եմ", "ես", "է", "են"],
+          "answer": "է",
+          "why": "Question word + helper."
+        },
+        {
+          "q": "Ես նամակ ＿ գրել։",
+          "en": "I haven't written a letter.",
+          "options": ["եմ", "չի", "մի", "չեմ"],
+          "answer": "չեմ",
+          "why": "Negative helper before the verb."
+        }
+      ]
+    },
+    {
+      "id": "about-according",
+      "title": "About, according to: մասին, ըստ",
+      "particle": "-ի մասին ըստ համաձայն",
+      "summary": "-ի մասին means \"about\"; ըստ + genitive and -ի համաձայն mean \"according to\". (about B2)",
+      "level": "advanced-intermediate",
+      "sections": [
+        {
+          "p": "<b>Հայաստանի մասին գիրք</b> a book about Armenia. <b>իմ կարծիքով</b> in my opinion.",
+          "examples": [
+            [
+              "{Հայաստանի մասին} գիրք եմ կարդում։",
+              "Hayastani masin girk' em kardum.",
+              "I'm reading a book about Armenia."
+            ],
+            [
+              "{Իմ կարծիքով} սա ճիշտ է։",
+              "Im kartsik'ov sa chisht e.",
+              "In my opinion this is right."
+            ]
+          ]
+        },
+        {
+          "h": "According to",
+          "p": "<b>ըստ</b> + genitive: <b>ըստ եղանակի տեսության</b> according to the weather forecast. <b>-ի համաձայն</b> in line with: <b>օրենքի համաձայն</b>.",
+          "examples": [
+            [
+              "{Ըստ եղանակի տեսության} վաղը ձյուն կգա։",
+              "Ëst yeghanaki tesut'yan vaghë dzyun kga.",
+              "According to the forecast, it will snow tomorrow."
+            ],
+            [
+              "{Օրենքի համաձայն} սա արգելված է։",
+              "Orenk'i hamadzayn sa argelvats e.",
+              "Under the law this is forbidden."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Հայաստանի ＿ գիրք եմ կարդում։",
+          "en": "I'm reading a book about Armenia.",
+          "options": ["մասին", "համար", "հետ", "ըստ"],
+          "answer": "մասին",
+          "why": "About: -ի մասին."
+        },
+        {
+          "q": "Իմ ＿ սա ճիշտ է։",
+          "en": "In my opinion this is right.",
+          "options": ["կարծիքը", "կարծիքով", "կարծիքից", "կարծիքի"],
+          "answer": "կարծիքով",
+          "why": "In my opinion: կարծիքով."
+        },
+        {
+          "q": "＿ եղանակի տեսության վաղը ձյուն կգա։",
+          "en": "According to the forecast, it'll snow tomorrow.",
+          "options": ["Մասին", "Համար", "Ըստ", "Հետ"],
+          "answer": "Ըստ",
+          "why": "According to: ըստ."
+        },
+        {
+          "q": "Օրենքի ＿ սա արգելված է։",
+          "en": "Under the law this is forbidden.",
+          "options": ["մասին", "ըստ", "հետ", "համաձայն"],
+          "answer": "համաձայն",
+          "why": "In line with: -ի համաձայն."
+        }
+      ]
+    },
+    {
+      "id": "hearsay",
+      "title": "They say: ասում են, լսել եմ",
+      "particle": "ասում են լսել եմ իբր",
+      "summary": "Reported news uses ասում են, որ … (they say that), լսել եմ, որ … (I've heard that), or the perfect with իբր for doubt. (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>Ասում են, որ վաղը ձյուն կգա</b> they say it will snow tomorrow. <b>Լսել եմ, որ …</b> I've heard that.",
+          "examples": [
+            [
+              "{Ասում են, որ} վաղը ձյուն կգա։",
+              "Asum en, vor vaghë dzyun kga.",
+              "They say it will snow tomorrow."
+            ],
+            [
+              "{Լսել եմ, որ} նա տեղափոխվել է։",
+              "Lsel em, vor na teghap'okhvel e.",
+              "I've heard that he has moved."
+            ]
+          ]
+        },
+        {
+          "h": "Rumour and doubt",
+          "p": "<b>իբր թե</b> plus the perfect makes a report you doubt: <b>Իբր թե նա ամեն ինչ գիտեր</b> supposedly he knew everything. <b>Խոսակցություն կա, որ …</b> there's a rumour that.",
+          "examples": [
+            [
+              "{Իբր թե} նա ամեն ինչ գիտեր։",
+              "Ibr t'e na amen inch' giter.",
+              "Supposedly he knew everything."
+            ],
+            [
+              "{Խոսակցություն կա, որ} գործարանը կփակվի։",
+              "Khosakts'ut'yun ka, vor gortsaranë kp'akvi.",
+              "There's a rumour that the factory will close."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ են, որ վաղը ձյուն կգա։",
+          "en": "They say it will snow tomorrow.",
+          "options": ["Ասում", "Լսում", "Ասաց", "Ասել"],
+          "answer": "Ասում",
+          "why": "They say: ասում են."
+        },
+        {
+          "q": "Լսել եմ, ＿ նա տեղափոխվել է։",
+          "en": "I've heard that he has moved.",
+          "options": ["թե", "որ", "եթե", "երբ"],
+          "answer": "որ",
+          "why": "Heard that: որ."
+        },
+        {
+          "q": "＿ թե նա ամեն ինչ գիտեր։",
+          "en": "Supposedly he knew everything.",
+          "options": ["Թող", "Երանի", "Իբր", "Որքան"],
+          "answer": "Իբր",
+          "why": "Supposedly: իբր թե."
+        },
+        {
+          "q": "Խոսակցություն ＿, որ գործարանը կփակվի։",
+          "en": "There's a rumour the factory will close.",
+          "options": ["է", "ունի", "եմ", "կա"],
+          "answer": "կա",
+          "why": "There is a rumour: խոսակցություն կա."
+        }
+      ]
+    },
+    {
+      "id": "word-formation",
+      "title": "Word building: -ություն, ան-, -անոց",
+      "particle": "-ություն -ական ան- -անոց -ուհի",
+      "summary": "Armenian builds many words with suffixes: -ություն makes abstract nouns, -ական adjectives, ան- \"un-\", -անոց places, and -ուհի female nouns. (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>ազատ → ազատություն</b> free → freedom, <b>ընկեր → ընկերություն</b> friend → friendship, <b>պատմություն → պատմական</b> history → historical.",
+          "examples": [
+            [
+              "{Ազատությունը} թանկ է։",
+              "Azatut'yunë t'ank e.",
+              "Freedom is precious."
+            ],
+            [
+              "Սա {պատմական} շենք է։",
+              "Sa patmakan shenk' e.",
+              "This is a historic building."
+            ]
+          ]
+        },
+        {
+          "h": "Un-, places, women",
+          "p": "<b>ան-</b> un-: <b>անհնար</b> impossible. <b>-անոց</b> place: <b>հիվանդանոց</b> hospital (հիվանդ, sick). <b>-ուհի</b> female: <b>ուսանողուհի</b> female student.",
+          "examples": [
+            ["Դա {անհնար} է։", "Da anhnar e.", "That's impossible."],
+            [
+              "Նա {հիվանդանոցում} է աշխատում։",
+              "Na hivandanots'um e ashkhatum.",
+              "She works at the hospital."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "＿ թանկ է։",
+          "en": "Freedom is precious.",
+          "options": ["Ազատությունը", "Ազատը", "Ազատական", "Անազատ"],
+          "answer": "Ազատությունը",
+          "why": "Abstract noun: -ություն."
+        },
+        {
+          "q": "Սա ＿ շենք է։",
+          "en": "This is a historic building.",
+          "options": ["պատմություն", "պատմական", "պատմող", "անպատմ"],
+          "answer": "պատմական",
+          "why": "Adjective: -ական."
+        },
+        {
+          "q": "Դա ＿ է։",
+          "en": "That's impossible.",
+          "options": ["հնարական", "հնարություն", "անհնար", "հնարանոց"],
+          "answer": "անհնար",
+          "why": "Un-: ան-."
+        },
+        {
+          "q": "Նա ＿ է աշխատում։",
+          "en": "She works at the hospital.",
+          "options": [
+            "հիվանդությունում",
+            "հիվանդականում",
+            "անհիվանդում",
+            "հիվանդանոցում"
+          ],
+          "answer": "հիվանդանոցում",
+          "why": "Place: -անոց."
+        }
+      ]
+    },
+    {
+      "id": "written-connectors",
+      "title": "Connectors of written Armenian",
+      "particle": "հետևաբար այսպիսով բացի այդ սակայն",
+      "summary": "Formal writing links ideas with հետևաբար (therefore), այսպիսով (thus), բացի այդ (besides), սակայն (however) and միաժամանակ (at the same time). (about C1)",
+      "level": "advanced",
+      "sections": [
+        {
+          "p": "<b>հետևաբար</b> (hetevabar) therefore, consequently; <b>այսպիսով</b> (ayspisov) thus, so.",
+          "examples": [
+            [
+              "Գները բարձրացան, {հետևաբար} պահանջարկը նվազեց։",
+              "Gnerë bardzrats'an, hetevabar pahanjarkë nvazets'.",
+              "Prices rose; consequently demand fell."
+            ],
+            [
+              "{Այսպիսով}, նախագիծը հաջողությամբ ավարտվեց։",
+              "Ayspisov, nakhagitsë hajoghut'yamb avartvets'.",
+              "Thus the project was completed successfully."
+            ]
+          ]
+        },
+        {
+          "h": "Besides, however, at the same time",
+          "p": "<b>բացի այդ</b> (bats'i ayd) besides that; <b>սակայն</b> (sakayn) however; <b>միաժամանակ</b> (miazhamanak) at the same time.",
+          "examples": [
+            [
+              "Քաղաքը գեղեցիկ է։ {Բացի այդ}, էժան է։",
+              "K'aghak'ë geghets'ik e. Bats'i ayd, ezhan e.",
+              "The city is beautiful. Besides that, it's cheap."
+            ],
+            [
+              "Նա գրող է և {միաժամանակ} թարգմանիչ։",
+              "Na grogh e yev miazhamanak t'argmanich'.",
+              "She is a writer and at the same time a translator."
+            ]
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "q": "Գները բարձրացան, ＿ պահանջարկը նվազեց։",
+          "en": "Prices rose; consequently demand fell.",
+          "options": ["հետևաբար", "բացի այդ", "սակայն", "կարծես"],
+          "answer": "հետևաբար",
+          "why": "Therefore: հետևաբար."
+        },
+        {
+          "q": "＿, նախագիծը հաջողությամբ ավարտվեց։",
+          "en": "Thus the project was completed successfully.",
+          "options": ["Իբր", "Այսպիսով", "Երանի", "Թող"],
+          "answer": "Այսպիսով",
+          "why": "Thus: այսպիսով."
+        },
+        {
+          "q": "Քաղաքը գեղեցիկ է։ ＿, էժան է։",
+          "en": "The city is beautiful. Besides that, it's cheap.",
+          "options": ["Հետևաբար", "Այսպիսով", "Բացի այդ", "Կարծես"],
+          "answer": "Բացի այդ",
+          "why": "Besides: բացի այդ."
+        },
+        {
+          "q": "Նա գրող է և ＿ թարգմանիչ։",
+          "en": "She is a writer and at the same time a translator.",
+          "options": ["հետևաբար", "այսպիսով", "սակայն", "միաժամանակ"],
+          "answer": "միաժամանակ",
+          "why": "At the same time: միաժամանակ."
         }
       ]
     }
