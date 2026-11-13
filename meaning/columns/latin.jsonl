@@ -1,41 +1,93 @@
-{"schema": "columns@1", "language": "latin", "notes": ["Latin column of the meaning matrix. Written for this project. Tokens are [text, \"\", meaning id]: the text is Classical Latin with macrons, so there is no separate reading. Verb endings carry the person, so \"I\" and \"you\" are often implied. Sources: forms match languages/latin/vocab.js and the Latin grammar pack; textbook Latin for everyday phrases (salvē, grātiās, quaesō, lātrīna, statiō, deversōrium)."], "sep": " "}
+{"schema": "columns@1", "language": "latin", "notes": ["Latin column of the meaning matrix. Written for this project. Tokens are [text, \"\", meaning id]: the text is Classical Latin with macrons, so there is no separate reading. Verb endings carry the person, so \"I\" and \"you\" are often implied. Sources: forms match languages/latin/vocab.js and the Latin grammar pack; textbook Latin for everyday phrases (salvē, grātiās, quaesō, lātrīna, statiō, deversōrium).", "Rows added later (2026-11): Neo-Latin words where Classical Latin has none, as in the Vatican's Lexicon Recentis Latinitatis tradition: cafēum (coffee), thea (tea), autocinētum (car), laophorum (bus), trāmen (train), caupōna for a restaurant. A book on the table iacet (lies), so est stays the copula. Place names in the locative (Moscuae, Cairī, Pekīnī). Occurrī takes the dative (amīcō)."], "sep": " "}
 {"sentence": "i-am-student", "t": [["Discipulus", "", "student"], ["sum", "", "@copula"]], "implied": ["i"], "end": "."}
+{"sentence": "name-tanaka", "t": [["Nōmen", "", "name"], ["mihi", "", "i"], ["est", "", "@copula"], ["Tanaka", "", "tanaka"]], "end": "."}
+{"sentence": "name-minjun", "t": [["Nōmen", "", "name"], ["mihi", "", "i"], ["est", "", "@copula"], ["Minjun", "", "minjun"]], "end": "."}
 {"sentence": "name-anna", "t": [["Nōmen", "", "name"], ["mihi", "", "i"], ["est", "", "@copula"], ["Anna", "", "anna"]], "end": "."}
+{"sentence": "name-ravi", "t": [["Nōmen", "", "name"], ["mihi", "", "i"], ["est", "", "@copula"], ["Ravi", "", "ravi"]], "end": "."}
+{"sentence": "name-sami", "t": [["Nōmen", "", "name"], ["mihi", "", "i"], ["est", "", "@copula"], ["Sami", "", "sami"]], "end": "."}
+{"sentence": "name-wang-ming", "t": [["Nōmen", "", "name"], ["mihi", "", "i"], ["est", "", "@copula"], ["Wang Ming", "", "wang-ming"]], "end": "."}
+{"sentence": "your-name", "t": [["Quid", "", "what"], ["est", "", "@copula"], ["nōmen", "", "name"], ["tibi", "", "you"]], "end": "?"}
 {"sentence": "hello", "t": [["Salvē", "", "hello"]], "end": "."}
+{"sentence": "nice-to-meet-you", "t": [["Gaudeō tē cognōscere", "", "nice-to-meet-you"]], "end": "."}
 {"sentence": "good-morning", "t": [["Bonum", "", "good"], ["māne", "", "morning"]], "end": "."}
 {"sentence": "thank-you", "t": [["Grātiās", "", "thanks"]], "end": "."}
 {"sentence": "thank-you-very-much", "t": [["Maximās", "", "very-much"], ["grātiās", "", "thanks"]], "end": "."}
+{"sentence": "success", "t": [["Fēlīciter", "", "success"]], "end": "!"}
 {"sentence": "dont-understand", "t": [["Nōn", "", "not"], ["intellegō", "", "understand"]], "implied": ["i"], "end": "."}
 {"sentence": "dont-know", "t": [["Nesciō", "", "not+know"]], "implied": ["i"], "end": "."}
 {"sentence": "speak-english", "t": [["Loqueris", "", "speak"], ["-ne", "", "@question"], ["Anglice", "", "english"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-chinese", "t": [["Loqueris", "", "speak"], ["-ne", "", "@question"], ["Sīnicē", "", "chinese"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-arabic", "t": [["Loqueris", "", "speak"], ["-ne", "", "@question"], ["Arabicē", "", "arabic"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-klingon", "t": [["Loqueris", "", "speak"], ["-ne", "", "@question"], ["Klingōnicē", "", "klingon"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-hindi", "t": [["Hindicē", "", "hindi"], ["loquor", "", "speak"]], "implied": ["i"], "end": "."}
+{"sentence": "study-korean", "t": [["Linguam", "", "@language"], ["Coreānam", "", "korean"], ["discō", "", "study"]], "implied": ["i"], "end": "."}
+{"sentence": "like-sushi", "t": [["Sushi", "", "sushi"], ["mihi", "", "i"], ["placet", "", "like"]], "end": "."}
+{"sentence": "like-coffee", "t": [["Cafēum", "", "coffee"], ["mihi", "", "i"], ["placet", "", "like"]], "end": "."}
+{"sentence": "like-tea", "t": [["Thea", "", "tea"], ["mihi", "", "i"], ["placet", "", "like"]], "end": "."}
 {"sentence": "love-you", "t": [["Tē", "", "you"], ["amō", "", "love"]], "implied": ["i"], "end": "."}
+{"sentence": "met-friend", "t": [["Herī", "", "yesterday"], ["amīcō", "", "friend"], ["occurrī", "", "meet+@past"]], "implied": ["i"], "end": "."}
 {"sentence": "my-friend", "t": [["Is", "", "he"], ["est", "", "@copula"], ["amīcus", "", "friend"], ["meus", "", "i"]], "end": "."}
 {"sentence": "who-is-he", "t": [["Quis", "", "who"], ["est", "", "@copula"], ["is", "", "he"]], "end": "?"}
 {"sentence": "where-live", "t": [["Ubi", "", "where"], ["habitās", "", "live"]], "implied": ["you"], "end": "?"}
 {"sentence": "from-egypt", "t": [["Ex", "", "from"], ["Aegyptō", "", "egypt"], ["sum", "", "@copula"]], "implied": ["i"], "end": "."}
+{"sentence": "we-are-klingons", "t": [["Klingōnēs", "", "klingon"], ["sumus", "", "@copula"]], "implied": ["we"], "end": "."}
 {"sentence": "this-is-book", "t": [["Hic", "", "this"], ["est", "", "@copula"], ["liber", "", "book"]], "end": "."}
 {"sentence": "this-is-my-book", "t": [["Hic", "", "this"], ["est", "", "@copula"], ["liber", "", "book"], ["meus", "", "i"]], "end": "."}
 {"sentence": "drink-water", "t": [["Aquam", "", "water"], ["bibō", "", "drink"]], "implied": ["i"], "end": "."}
+{"sentence": "drink-tea", "t": [["Theam", "", "tea"], ["bibō", "", "drink"]], "implied": ["i"], "end": "."}
+{"sentence": "want-coffee", "t": [["Cafēum", "", "coffee"], ["volō", "", "want"]], "implied": ["i"], "end": "."}
 {"sentence": "read-book", "t": [["Librum", "", "book"], ["legō", "", "read"]], "implied": ["i"], "end": "."}
+{"sentence": "eat-rice", "t": [["Oryzam", "", "rice"], ["edimus", "", "eat"]], "implied": ["we"], "end": "."}
+{"sentence": "eat-food", "t": [["Cibum", "", "food"], ["edō", "", "eat"]], "implied": ["i"], "end": "."}
+{"sentence": "lunch-restaurant", "t": [["In", "", "@place"], ["caupōnā", "", "restaurant"], ["prandeō", "", "lunch+eat"]], "implied": ["i"], "end": "."}
+{"sentence": "eat-restaurant", "t": [["In", "", "@place"], ["caupōnā", "", "restaurant"], ["edō", "", "eat"]], "implied": ["i"], "end": "."}
+{"sentence": "hot-today", "t": [["Hodiē", "", "today"], ["calidum", "", "hot"], ["est", "", "@copula"]], "end": "."}
 {"sentence": "cold-today", "t": [["Hodiē", "", "today"], ["frīgidum", "", "cold"], ["est", "", "@copula"]], "end": "."}
-{"sentence": "have-cat", "t": [["Fēlem", "", "cat"], ["habeō", "", "have"]], "implied": ["i"], "end": "."}
+{"sentence": "weather-hot", "t": [["Hodiē", "", "today"], ["caelum", "", "weather"], ["calidum", "", "hot"], ["est", "", "@copula"]], "end": "."}
+{"sentence": "weather-good", "t": [["Hodiē", "", "today"], ["caelum", "", "weather"], ["bonum", "", "good"], ["est", "", "@copula"]], "end": "."}
+{"sentence": "raining", "t": [["Pluit", "", "rain"]], "end": "."}
+{"sentence": "monday", "t": [["Hodiē", "", "today"], ["diēs Lūnae", "", "monday"], ["est", "", "@copula"]], "end": "."}
 {"sentence": "what-time", "t": [["Quota", "", "what"], ["hōra", "", "time"], ["est", "", "@copula"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["Quota", "", "what"], ["hōra", "", "time"], ["nunc", "", "now"], ["est", "", "@copula"]], "end": "?"}
+{"sentence": "no-time", "t": [["Nūllum", "", "none"], ["tempus", "", "time"], ["est", "", "@copula"]], "end": "."}
+{"sentence": "there-is-cat", "t": [["Fēlēs", "", "cat"], ["adest", "", "exist"]], "end": "."}
+{"sentence": "have-cat", "t": [["Fēlem", "", "cat"], ["habeō", "", "have"]], "implied": ["i"], "end": "."}
+{"sentence": "book-on-table", "t": [["Super", "", "on"], ["mēnsā", "", "table"], ["liber", "", "book"], ["iacet", "", "exist"]], "end": "."}
 {"sentence": "house-big", "t": [["Domus", "", "house"], ["magna", "", "big"], ["est", "", "@copula"]], "end": "."}
+{"sentence": "car-new", "t": [["Autocinētum", "", "car"], ["novum", "", "new"], ["est", "", "@copula"]], "end": "."}
+{"sentence": "delicious", "t": [["Suāve", "", "delicious"], ["est", "", "@copula"]], "end": "."}
+{"sentence": "food-tasty", "t": [["Cibus", "", "food"], ["valdē", "", "very"], ["suāvis", "", "delicious"], ["est", "", "@copula"]], "end": "."}
+{"sentence": "head-hurts", "t": [["Caput", "", "head"], ["mihi", "", "i"], ["dolet", "", "hurt"]], "end": "."}
 {"sentence": "hungry", "t": [["Ēsuriō", "", "hungry"]], "implied": ["i"], "end": "."}
 {"sentence": "give-water", "t": [["Dā", "", "give"], ["mihi", "", "i"], ["aquam", "", "water"], ["quaesō", "", "please"]], "end": "."}
+{"sentence": "wait-moment", "t": [["Exspectā", "", "wait"], ["paulisper", "", "moment"], ["quaesō", "", "please"]], "end": "."}
 {"sentence": "sit-down", "t": [["Consīde", "", "sit"], ["quaesō", "", "please"]], "end": "."}
 {"sentence": "where-station", "t": [["Ubi", "", "where"], ["est", "", "@copula"], ["statiō", "", "station"]], "end": "?"}
 {"sentence": "where-toilet", "t": [["Ubi", "", "where"], ["est", "", "@copula"], ["lātrīna", "", "toilet"]], "end": "?"}
 {"sentence": "where-hotel", "t": [["Ubi", "", "where"], ["est", "", "@copula"], ["deversōrium", "", "hotel"]], "end": "?"}
 {"sentence": "how-much-this", "t": [["Quantī", "", "how-much"], ["hoc", "", "this"], ["est", "", "@copula"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["Quantī", "", "how-much"], ["est", "", "@copula"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["Quantī", "", "how-much"], ["cōnstat", "", "cost"]], "end": "?"}
+{"sentence": "bill-please", "t": [["Ratiōnem", "", "bill"], ["quaesō", "", "please"]], "end": "."}
 {"sentence": "go-school", "t": [["Ad", "", "@direction"], ["scholam", "", "school"], ["eō", "", "go"]], "implied": ["i"], "end": "."}
+{"sentence": "bus-school", "t": [["Laophorō", "", "bus"], ["ad", "", "@direction"], ["scholam", "", "school"], ["eō", "", "go"]], "implied": ["i"], "end": "."}
+{"sentence": "go-tokyo", "t": [["Tōkium", "", "tokyo"], ["īre", "", "go"], ["volō", "", "want"]], "implied": ["i"], "end": "."}
+{"sentence": "came-train", "t": [["Trāmine", "", "train"], ["vēnī", "", "come+@past"]], "implied": ["i"], "end": "."}
+{"sentence": "where-going", "t": [["Quō", "", "where"], ["īs", "", "go"]], "implied": ["you"], "end": "?"}
 {"sentence": "going-home", "t": [["Domum", "", "home"], ["eō", "", "go"]], "implied": ["i"], "end": "."}
 {"sentence": "we-going-home", "t": [["Domum", "", "home"], ["īmus", "", "go"]], "implied": ["we"], "end": "."}
+{"sentence": "lets-go", "t": [["Eāmus", "", "go+let-us"]], "end": "."}
+{"sentence": "live-moscow", "t": [["Moscuae", "", "moscow"], ["habitō", "", "live"]], "implied": ["i"], "end": "."}
+{"sentence": "live-cairo", "t": [["Cairī", "", "cairo"], ["habitō", "", "live"]], "implied": ["i"], "end": "."}
+{"sentence": "live-beijing", "t": [["Pekīnī", "", "beijing"], ["habitō", "", "live"]], "implied": ["i"], "end": "."}
 {"sentence": "i-sleep", "t": [["Dormiō", "", "sleep"]], "implied": ["i"], "end": "."}
 {"sentence": "i-fight", "t": [["Pugnō", "", "fight"]], "implied": ["i"], "end": "."}
 {"sentence": "we-fight", "t": [["Pugnāmus", "", "fight"]], "implied": ["we"], "end": "."}
 {"sentence": "sleep-command", "t": [["Dormī", "", "sleep"]], "end": "!"}
 {"sentence": "child-sleeps", "t": [["Puer", "", "child"], ["dormit", "", "sleep"]], "end": "."}
+{"sentence": "officer-sees-child", "t": [["Praefectus", "", "officer"], ["puerum", "", "child"], ["videt", "", "see"]], "end": "."}
+{"sentence": "captain-sees-ship", "t": [["Nauarchus", "", "captain"], ["nāvem", "", "ship"], ["videt", "", "see"]], "end": "."}
+{"sentence": "i-see-ship", "t": [["Nāvem", "", "ship"], ["videō", "", "see"]], "implied": ["i"], "end": "."}
 {"sentence": "print-word", "t": [["Verbum", "", "word"], ["ostende", "", "print"]], "end": "."}
 {"sentence": "show-number", "t": [["Numerum", "", "number"], ["ostende", "", "print"]], "end": "."}
 {"sentence": "print-screen", "t": [["In", "", "@place"], ["tabulā", "", "screen"], ["verbum", "", "word"], ["ostende", "", "print"]], "end": "."}
