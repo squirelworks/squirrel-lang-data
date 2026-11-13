@@ -69,6 +69,8 @@ published sources. They don't hold v0.1.4 back.
       Greek and Russian now render all 103 rows, and French, German and
       Italian have new full columns; Arabic, Hindi, Hebrew, Thai, Georgian,
       Armenian, Bengali, Tamil and Klingon are still partial.
+- [x] The Syriac alphabet for Aramaic (LanguageStudentDesk#201): a 22-letter
+      Estrangela course in `alphabets/syriac.json` with drafted strokes
 - [ ] Recorded reviews (`REVIEW.md`) for every language (see `REVIEWING.md`)
 - [ ] v0.2.0 (MINOR): programming courses and keyword maps (`programming/`),
       character variants (`variants/`) and the first regional and historical
