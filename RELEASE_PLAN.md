@@ -28,40 +28,33 @@ tags are never moved or reused, releases are never deleted.
       Yomitan packs.
 - [x] **v0.1.3** (2026-11-04, `b6912a0`): full Japanese, Chinese and Korean
       matrix columns, Chinese HSK levels placed by hand, Korean grammar
-      rewrites, Hangul stroke fixes. LanguageStudentDesk and squirrelator
-      both pin this tag.
+      rewrites, Hangul stroke fixes.
+- [x] **v0.1.4** (2026-11-05, `d5e05a4`): the code pack and its columns,
+      Latin, English and Klingon inflection tables, and the grammar
+      expansion to 72 lessons. LanguageStudentDesk and squirrelator both pin
+      this tag.
 
-## Next: v0.1.4
+## Next: v0.1.5
 
-Everything merged since v0.1.3 is collected in `release-notes/v0.1.4.md`
-(still marked Draft): the code pack and its Japanese, Chinese, Korean and
-Latin columns, Latin and English inflection tables, meta `cases` and
-`order`, the review checklist and Content error form, the historical kana
-lesson, and the grammar expansion to 72 lessons per language (24 for Tibetan and
-Klingon), which is finished.
+Everything merged since v0.1.4 is collected in `release-notes/v0.1.5.md`
+(still marked Draft): French, German and Italian matrix columns, Latin,
+Greek and Russian filled to every row, English contractions (#105), and
+the Syriac alphabet (#106).
 
 It's due when all of these hold and the owner says "release":
 
-- [x] Grammar at 72 lessons for Amharic, Arabic, Armenian, Bengali, Burmese,
-      Chinese, French, Georgian, German, Greek, Gujarati, Hebrew, Hindi,
-      Italian, Japanese (73), Kannada, Khmer, Korean, Lao, Malayalam,
-      Mongolian, Odia, Punjabi, Russian, Sinhala, Taiwanese, Tamil, Telugu
-      and Thai (#66, #68–#92, #94), with level labels fixed (#93)
-- [x] Latin grammar to 72 (#95)
-- [x] Tibetan grammar 6 → 24 (#97)
-- [x] Klingon grammar 10 → 24 (#98)
+- [x] New and filled columns, English contractions (#105)
+- [x] Syriac alphabet (#106)
 - [ ] CI green on `main`
-- [ ] A PR that removes "Draft." from `release-notes/v0.1.4.md` and checks
+- [ ] A PR that removes "Draft." from `release-notes/v0.1.5.md` and checks
       every bullet against what merged, with nothing else in it
-- [ ] **Draft release** run by hand with `v0.1.4`; the owner publishes
+- [ ] **Draft release** run by hand with `v0.1.5`; the owner publishes
 - [ ] Pin-bump PRs in LanguageStudentDesk (with the `data-pin` label) and
-      squirrelator, one each
+      squirrelator, one each. squirrelator's comes with about 13 test
+      updates (Latin output follows the fuller column); the Desk's adds the
+      new Translation Learner columns and Syriac to SquirrelGo Alphabets.
 
-Left out on purpose: more grammar for Aramaic, Cherokee, Inuktitut, Manipuri
-and Tamazight. Their lessons are all source-cited, and adding more needs
-published sources. They don't hold v0.1.4 back.
-
-## After v0.1.4
+## After v0.1.5
 
 - [ ] Code-pack columns for the other tested languages (#56)
 - [ ] Fill the meaning-matrix columns that have 20 to 42 of the 89 rows, then
