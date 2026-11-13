@@ -65,7 +65,10 @@ published sources. They don't hold v0.1.4 back.
 
 - [ ] Code-pack columns for the other tested languages (#56)
 - [ ] Fill the meaning-matrix columns that have 20 to 42 of the 89 rows, then
-      add columns for the 22 languages without one (squirrelator#26)
+      add columns for the 22 languages without one (squirrelator#26). Latin,
+      Greek and Russian now render all 103 rows, and French, German and
+      Italian have new full columns; Arabic, Hindi, Hebrew, Thai, Georgian,
+      Armenian, Bengali, Tamil and Klingon are still partial.
 - [ ] Recorded reviews (`REVIEW.md`) for every language (see `REVIEWING.md`)
 - [ ] v0.2.0 (MINOR): programming courses and keyword maps (`programming/`),
       character variants (`variants/`) and the first regional and historical

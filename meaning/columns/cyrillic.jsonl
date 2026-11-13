@@ -1,24 +1,93 @@
-{"schema": "columns@1", "language": "cyrillic", "notes": ["Russian column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]."], "sep": " "}
+{"schema": "columns@1", "language": "cyrillic", "notes": ["Russian column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id].", "Russian has no articles and drops the present-tense \"to be\" (Он мой друг, Это книга), so those rows have no @copula token. Readings are a simple English-style romanization (ya, zh, kh, ts, ' for the soft sign). Past tenses use the masculine form (встретил, приехал, голоден)."], "sep": " "}
 {"sentence": "i-am-student", "t": [["Я", "ya", "i"], ["студент", "student", "student"]], "end": "."}
+{"sentence": "name-tanaka", "t": [["Меня", "menya", "i"], ["зовут", "zovut", "name"], ["Танака", "Tanaka", "tanaka"]], "end": "."}
+{"sentence": "name-minjun", "t": [["Меня", "menya", "i"], ["зовут", "zovut", "name"], ["Минджун", "Mindzhun", "minjun"]], "end": "."}
 {"sentence": "name-anna", "t": [["Меня", "menya", "i"], ["зовут", "zovut", "name"], ["Анна", "Anna", "anna"]], "end": "."}
-{"sentence": "thank-you-very-much", "t": [["Большое", "bol'shoye", "very-much"], ["спасибо", "spasibo", "thanks"]], "end": "."}
+{"sentence": "name-ravi", "t": [["Меня", "menya", "i"], ["зовут", "zovut", "name"], ["Рави", "Ravi", "ravi"]], "end": "."}
+{"sentence": "name-sami", "t": [["Меня", "menya", "i"], ["зовут", "zovut", "name"], ["Сами", "Sami", "sami"]], "end": "."}
+{"sentence": "name-wang-ming", "t": [["Меня", "menya", "i"], ["зовут", "zovut", "name"], ["Ван Мин", "Van Min", "wang-ming"]], "end": "."}
+{"sentence": "your-name", "t": [["Как", "kak", "what"], ["тебя", "tebya", "you"], ["зовут", "zovut", "name"]], "end": "?"}
+{"sentence": "hello", "t": [["Здравствуйте", "zdravstvuyte", "hello"]], "end": "."}
+{"sentence": "nice-to-meet-you", "t": [["Очень приятно", "ochen' priyatno", "nice-to-meet-you"]], "end": "."}
 {"sentence": "good-morning", "t": [["Доброе", "dobroye", "good"], ["утро", "utro", "morning"]], "end": "."}
-{"sentence": "speak-english", "t": [["Вы", "vy", "you"], ["говорите", "govorite", "speak"], ["по-английски", "po-angliyski", "english"]], "end": "?"}
+{"sentence": "thank-you", "t": [["Спасибо", "spasibo", "thanks"]], "end": "."}
+{"sentence": "thank-you-very-much", "t": [["Большое", "bol'shoye", "very-much"], ["спасибо", "spasibo", "thanks"]], "end": "."}
+{"sentence": "success", "t": [["Успехов", "uspekhov", "success"]], "end": "!"}
 {"sentence": "dont-understand", "t": [["Я", "ya", "i"], ["не", "ne", "not"], ["понимаю", "ponimayu", "understand"]], "end": "."}
+{"sentence": "dont-know", "t": [["Я", "ya", "i"], ["не", "ne", "not"], ["знаю", "znayu", "know"]], "end": "."}
+{"sentence": "speak-english", "t": [["Вы", "vy", "you"], ["говорите", "govorite", "speak"], ["по-английски", "po-angliyski", "english"]], "end": "?"}
+{"sentence": "speak-chinese", "t": [["Вы", "vy", "you"], ["говорите", "govorite", "speak"], ["по-китайски", "po-kitayski", "chinese"]], "end": "?"}
+{"sentence": "speak-arabic", "t": [["Вы", "vy", "you"], ["говорите", "govorite", "speak"], ["по-арабски", "po-arabski", "arabic"]], "end": "?"}
+{"sentence": "speak-klingon", "t": [["Вы", "vy", "you"], ["говорите", "govorite", "speak"], ["по-клингонски", "po-klingonski", "klingon"]], "end": "?"}
+{"sentence": "speak-hindi", "t": [["Я", "ya", "i"], ["говорю", "govoryu", "speak"], ["на", "na", "@language"], ["хинди", "khindi", "hindi"]], "end": "."}
+{"sentence": "study-korean", "t": [["Я", "ya", "i"], ["изучаю", "izuchayu", "study"], ["корейский", "koreyskiy", "korean"]], "end": "."}
+{"sentence": "like-sushi", "t": [["Мне", "mne", "i"], ["нравятся", "nravyatsya", "like"], ["суши", "sushi", "sushi"]], "end": "."}
+{"sentence": "like-coffee", "t": [["Мне", "mne", "i"], ["нравится", "nravitsya", "like"], ["кофе", "kofe", "coffee"]], "end": "."}
+{"sentence": "like-tea", "t": [["Мне", "mne", "i"], ["нравится", "nravitsya", "like"], ["чай", "chay", "tea"]], "end": "."}
 {"sentence": "love-you", "t": [["Я", "ya", "i"], ["тебя", "tebya", "you"], ["люблю", "lyublyu", "love"]], "end": "."}
+{"sentence": "met-friend", "t": [["Вчера", "vchera", "yesterday"], ["я", "ya", "i"], ["встретил", "vstretil", "meet+@past"], ["друга", "druga", "friend"]], "end": "."}
+{"sentence": "my-friend", "t": [["Он", "on", "he"], ["мой", "moy", "i"], ["друг", "drug", "friend"]], "end": "."}
+{"sentence": "who-is-he", "t": [["Кто", "kto", "who"], ["он", "on", "he"]], "end": "?"}
+{"sentence": "where-live", "t": [["Где", "gde", "where"], ["ты", "ty", "you"], ["живёшь", "zhivyosh'", "live"]], "end": "?"}
+{"sentence": "from-egypt", "t": [["Я", "ya", "i"], ["из", "iz", "from"], ["Египта", "Yegipta", "egypt"]], "end": "."}
+{"sentence": "we-are-klingons", "t": [["Мы", "my", "we"], ["клингоны", "klingony", "klingon"]], "end": "."}
+{"sentence": "this-is-book", "t": [["Это", "eto", "this"], ["книга", "kniga", "book"]], "end": "."}
 {"sentence": "this-is-my-book", "t": [["Это", "eto", "this"], ["моя", "moya", "i"], ["книга", "kniga", "book"]], "end": "."}
+{"sentence": "drink-water", "t": [["Я", "ya", "i"], ["пью", "p'yu", "drink"], ["воду", "vodu", "water"]], "end": "."}
 {"sentence": "drink-tea", "t": [["Я", "ya", "i"], ["пью", "p'yu", "drink"], ["чай", "chay", "tea"]], "end": "."}
-{"sentence": "read-book", "t": [["Я", "ya", "i"], ["читаю", "chitayu", "read"], ["книгу", "knigu", "book"]], "end": "."}
 {"sentence": "want-coffee", "t": [["Я", "ya", "i"], ["хочу", "khochu", "want"], ["кофе", "kofe", "coffee"]], "end": "."}
+{"sentence": "read-book", "t": [["Я", "ya", "i"], ["читаю", "chitayu", "read"], ["книгу", "knigu", "book"]], "end": "."}
+{"sentence": "eat-rice", "t": [["Мы", "my", "we"], ["едим", "yedim", "eat"], ["рис", "ris", "rice"]], "end": "."}
+{"sentence": "eat-food", "t": [["Я", "ya", "i"], ["ем", "yem", "eat"], ["еду", "yedu", "food"]], "end": "."}
+{"sentence": "lunch-restaurant", "t": [["Я", "ya", "i"], ["обедаю", "obedayu", "lunch+eat"], ["в", "v", "@place"], ["ресторане", "restorane", "restaurant"]], "end": "."}
+{"sentence": "eat-restaurant", "t": [["Я", "ya", "i"], ["ем", "yem", "eat"], ["в", "v", "@place"], ["ресторане", "restorane", "restaurant"]], "end": "."}
+{"sentence": "hot-today", "t": [["Сегодня", "segodnya", "today"], ["жарко", "zharko", "hot"]], "end": "."}
 {"sentence": "cold-today", "t": [["Сегодня", "segodnya", "today"], ["холодно", "kholodno", "cold"]], "end": "."}
-{"sentence": "have-cat", "t": [["У", "u", "@possession"], ["меня", "menya", "i"], ["есть", "yest'", "have"], ["кошка", "koshka", "cat"]], "end": "."}
+{"sentence": "weather-hot", "t": [["Сегодня", "segodnya", "today"], ["жаркая", "zharkaya", "hot"], ["погода", "pogoda", "weather"]], "end": "."}
+{"sentence": "weather-good", "t": [["Сегодня", "segodnya", "today"], ["хорошая", "khoroshaya", "good"], ["погода", "pogoda", "weather"]], "end": "."}
+{"sentence": "raining", "t": [["Идёт дождь", "idyot dozhd'", "rain"]], "end": "."}
+{"sentence": "monday", "t": [["Сегодня", "segodnya", "today"], ["понедельник", "ponedel'nik", "monday"]], "end": "."}
 {"sentence": "what-time", "t": [["Который", "kotoryy", "what"], ["час", "chas", "time"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["Который", "kotoryy", "what"], ["сейчас", "seychas", "now"], ["час", "chas", "time"]], "end": "?"}
+{"sentence": "no-time", "t": [["Нет", "net", "none"], ["времени", "vremeni", "time"]], "end": "."}
+{"sentence": "there-is-cat", "t": [["Вот", "vot", "exist"], ["кошка", "koshka", "cat"]], "end": "."}
+{"sentence": "have-cat", "t": [["У", "u", "@possession"], ["меня", "menya", "i"], ["есть", "yest'", "have"], ["кошка", "koshka", "cat"]], "end": "."}
+{"sentence": "book-on-table", "t": [["На", "na", "on"], ["столе", "stole", "table"], ["лежит", "lezhit", "exist"], ["книга", "kniga", "book"]], "end": "."}
+{"sentence": "house-big", "t": [["Дом", "dom", "house"], ["большой", "bol'shoy", "big"]], "end": "."}
+{"sentence": "car-new", "t": [["Машина", "mashina", "car"], ["новая", "novaya", "new"]], "end": "."}
+{"sentence": "delicious", "t": [["Вкусно", "vkusno", "delicious"]], "end": "."}
+{"sentence": "food-tasty", "t": [["Еда", "yeda", "food"], ["очень", "ochen'", "very"], ["вкусная", "vkusnaya", "delicious"]], "end": "."}
+{"sentence": "head-hurts", "t": [["У", "u", "@possession"], ["меня", "menya", "i"], ["болит", "bolit", "hurt"], ["голова", "golova", "head"]], "end": "."}
+{"sentence": "hungry", "t": [["Я", "ya", "i"], ["голоден", "goloden", "hungry"]], "end": "."}
+{"sentence": "give-water", "t": [["Дайте", "dayte", "give"], ["мне", "mne", "i"], ["воды", "vody", "water"], ["пожалуйста", "pozhaluysta", "please"]], "end": "."}
+{"sentence": "wait-moment", "t": [["Подождите", "podozhdite", "wait"], ["минутку", "minutku", "moment"], ["пожалуйста", "pozhaluysta", "please"]], "end": "."}
+{"sentence": "sit-down", "t": [["Садитесь", "sadites'", "sit"], ["пожалуйста", "pozhaluysta", "please"]], "end": "."}
 {"sentence": "where-station", "t": [["Где", "gde", "where"], ["вокзал", "vokzal", "station"]], "end": "?"}
 {"sentence": "where-toilet", "t": [["Где", "gde", "where"], ["туалет", "tualet", "toilet"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["Где", "gde", "where"], ["гостиница", "gostinitsa", "hotel"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["Сколько", "skol'ko", "how-much"], ["это", "eto", "this"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["Сколько", "skol'ko", "how-much"]], "end": "?"}
 {"sentence": "how-much-cost", "t": [["Сколько", "skol'ko", "how-much"], ["стоит", "stoit", "cost"]], "end": "?"}
-{"sentence": "live-moscow", "t": [["Я", "ya", "i"], ["живу", "zhivu", "live"], ["в", "v", "@place"], ["Москве", "Moskve", "moscow"]], "end": "."}
-{"sentence": "we-going-home", "t": [["Мы", "my", "we"], ["идём", "idyom", "go"], ["домой", "domoy", "home"]], "end": "."}
 {"sentence": "bill-please", "t": [["Счёт", "schyot", "bill"], ["пожалуйста", "pozhaluysta", "please"]], "end": "."}
+{"sentence": "go-school", "t": [["Я", "ya", "i"], ["иду", "idu", "go"], ["в", "v", "@direction"], ["школу", "shkolu", "school"]], "end": "."}
+{"sentence": "bus-school", "t": [["Я", "ya", "i"], ["еду", "yedu", "go"], ["в", "v", "@direction"], ["школу", "shkolu", "school"], ["на", "na", "@means"], ["автобусе", "avtobuse", "bus"]], "end": "."}
+{"sentence": "go-tokyo", "t": [["Я", "ya", "i"], ["хочу", "khochu", "want"], ["поехать", "poyekhat'", "go"], ["в", "v", "@direction"], ["Токио", "Tokio", "tokyo"]], "end": "."}
+{"sentence": "came-train", "t": [["Я", "ya", "i"], ["приехал", "priyekhal", "come+@past"], ["на", "na", "@means"], ["поезде", "poyezde", "train"]], "end": "."}
+{"sentence": "where-going", "t": [["Куда", "kuda", "where"], ["ты", "ty", "you"], ["идёшь", "idyosh'", "go"]], "end": "?"}
+{"sentence": "going-home", "t": [["Я", "ya", "i"], ["иду", "idu", "go"], ["домой", "domoy", "home"]], "end": "."}
+{"sentence": "we-going-home", "t": [["Мы", "my", "we"], ["идём", "idyom", "go"], ["домой", "domoy", "home"]], "end": "."}
+{"sentence": "lets-go", "t": [["Пойдём", "poydyom", "go+let-us"]], "end": "."}
+{"sentence": "live-moscow", "t": [["Я", "ya", "i"], ["живу", "zhivu", "live"], ["в", "v", "@place"], ["Москве", "Moskve", "moscow"]], "end": "."}
+{"sentence": "live-cairo", "t": [["Я", "ya", "i"], ["живу", "zhivu", "live"], ["в", "v", "@place"], ["Каире", "Kaire", "cairo"]], "end": "."}
+{"sentence": "live-beijing", "t": [["Я", "ya", "i"], ["живу", "zhivu", "live"], ["в", "v", "@place"], ["Пекине", "Pekine", "beijing"]], "end": "."}
+{"sentence": "i-sleep", "t": [["Я", "ya", "i"], ["сплю", "splyu", "sleep"]], "end": "."}
+{"sentence": "i-fight", "t": [["Я", "ya", "i"], ["сражаюсь", "srazhayus'", "fight"]], "end": "."}
+{"sentence": "we-fight", "t": [["Мы", "my", "we"], ["сражаемся", "srazhayemsya", "fight"]], "end": "."}
+{"sentence": "sleep-command", "t": [["Спи", "spi", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["Ребёнок", "rebyonok", "child"], ["спит", "spit", "sleep"]], "end": "."}
+{"sentence": "officer-sees-child", "t": [["Офицер", "ofitser", "officer"], ["видит", "vidit", "see"], ["ребёнка", "rebyonka", "child"]], "end": "."}
+{"sentence": "captain-sees-ship", "t": [["Капитан", "kapitan", "captain"], ["видит", "vidit", "see"], ["корабль", "korabl'", "ship"]], "end": "."}
+{"sentence": "i-see-ship", "t": [["Я", "ya", "i"], ["вижу", "vizhu", "see"], ["корабль", "korabl'", "ship"]], "end": "."}
 {"sentence": "print-word", "t": [["Вывести", "vyvesti", "print"], ["слово", "slovo", "word"]], "end": "."}
 {"sentence": "show-number", "t": [["Показать", "pokazat'", "print"], ["число", "chislo", "number"]], "end": "."}
 {"sentence": "print-screen", "t": [["Вывести", "vyvesti", "print"], ["слово", "slovo", "word"], ["на", "na", "@direction"], ["экран", "ekran", "screen"]], "end": "."}

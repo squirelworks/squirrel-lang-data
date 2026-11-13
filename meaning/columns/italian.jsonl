@@ -1,0 +1,104 @@
+{"schema": "columns@1", "language": "italian", "notes": ["Italian column of the meaning matrix. Written for this project. Tokens are [text, \"\", meaning id]: Italian is written in the Latin alphabet, so there is no separate reading.", "Verb endings carry the person, so \"I\", \"you\" and \"we\" are often implied. Elided words (l', dell') glue to the next word with a trailing \"-\". Contractions carry both meanings: al is @place+@the, sul is on+@the, Dov'è is where+@copula, Quant'è is how-much+@copula.", "\"Sono egiziano\" (I am Egyptian) renders \"I am from Egypt\", so egiziano carries from+egypt. Andiamo is both \"we go\" and \"let's go\".", "Code rows use the infinitive (Stampare la parola.), the usual form for instructions in Italian software and manuals."], "sep": " "}
+{"sentence": "i-am-student", "t": [["Sono", "", "@copula"], ["uno", "", "@one"], ["studente", "", "student"]], "implied": ["i"], "end": "."}
+{"sentence": "name-tanaka", "t": [["Mi", "", "i"], ["chiamo", "", "name"], ["Tanaka", "", "tanaka"]], "end": "."}
+{"sentence": "name-minjun", "t": [["Mi", "", "i"], ["chiamo", "", "name"], ["Minjun", "", "minjun"]], "end": "."}
+{"sentence": "name-anna", "t": [["Mi", "", "i"], ["chiamo", "", "name"], ["Anna", "", "anna"]], "end": "."}
+{"sentence": "name-ravi", "t": [["Mi", "", "i"], ["chiamo", "", "name"], ["Ravi", "", "ravi"]], "end": "."}
+{"sentence": "name-sami", "t": [["Mi", "", "i"], ["chiamo", "", "name"], ["Sami", "", "sami"]], "end": "."}
+{"sentence": "name-wang-ming", "t": [["Mi", "", "i"], ["chiamo", "", "name"], ["Wang Ming", "", "wang-ming"]], "end": "."}
+{"sentence": "your-name", "t": [["Come", "", "what"], ["ti", "", "you"], ["chiami", "", "name"]], "end": "?"}
+{"sentence": "hello", "t": [["Ciao", "", "hello"]], "end": "."}
+{"sentence": "nice-to-meet-you", "t": [["Piacere", "", "nice-to-meet-you"]], "end": "."}
+{"sentence": "good-morning", "t": [["Buongiorno", "", "good+morning"]], "end": "."}
+{"sentence": "thank-you", "t": [["Grazie", "", "thanks"]], "end": "."}
+{"sentence": "thank-you-very-much", "t": [["Grazie", "", "thanks"], ["mille", "", "very-much"]], "end": "."}
+{"sentence": "success", "t": [["Successo", "", "success"]], "end": "!"}
+{"sentence": "dont-understand", "t": [["Non", "", "not"], ["capisco", "", "understand"]], "implied": ["i"], "end": "."}
+{"sentence": "dont-know", "t": [["Non", "", "not"], ["lo so", "", "know"]], "implied": ["i"], "end": "."}
+{"sentence": "speak-english", "t": [["Parli", "", "speak"], ["inglese", "", "english"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-chinese", "t": [["Parli", "", "speak"], ["cinese", "", "chinese"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-arabic", "t": [["Parli", "", "speak"], ["arabo", "", "arabic"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-klingon", "t": [["Parli", "", "speak"], ["klingon", "", "klingon"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-hindi", "t": [["Parlo", "", "speak"], ["hindi", "", "hindi"]], "implied": ["i"], "end": "."}
+{"sentence": "study-korean", "t": [["Studio", "", "study"], ["il", "", "@the"], ["coreano", "", "korean"]], "implied": ["i"], "end": "."}
+{"sentence": "like-sushi", "t": [["Mi", "", "i"], ["piace", "", "like"], ["il", "", "@the"], ["sushi", "", "sushi"]], "end": "."}
+{"sentence": "like-coffee", "t": [["Mi", "", "i"], ["piace", "", "like"], ["il", "", "@the"], ["caffè", "", "coffee"]], "end": "."}
+{"sentence": "like-tea", "t": [["Mi", "", "i"], ["piace", "", "like"], ["il", "", "@the"], ["tè", "", "tea"]], "end": "."}
+{"sentence": "love-you", "t": [["Ti", "", "you"], ["amo", "", "love"]], "implied": ["i"], "end": "."}
+{"sentence": "met-friend", "t": [["Ieri", "", "yesterday"], ["ho", "", "@past"], ["incontrato", "", "meet"], ["un", "", "@one"], ["amico", "", "friend"]], "implied": ["i"], "end": "."}
+{"sentence": "my-friend", "t": [["Lui", "", "he"], ["è", "", "@copula"], ["il", "", "@the"], ["mio", "", "i"], ["amico", "", "friend"]], "end": "."}
+{"sentence": "who-is-he", "t": [["Chi", "", "who"], ["è", "", "@copula"], ["lui", "", "he"]], "end": "?"}
+{"sentence": "where-live", "t": [["Dove", "", "where"], ["abiti", "", "live"]], "implied": ["you"], "end": "?"}
+{"sentence": "from-egypt", "t": [["Sono", "", "@copula"], ["egiziano", "", "from+egypt"]], "implied": ["i"], "end": "."}
+{"sentence": "we-are-klingons", "t": [["Siamo", "", "@copula"], ["Klingon", "", "klingon"]], "implied": ["we"], "end": "."}
+{"sentence": "this-is-book", "t": [["Questo", "", "this"], ["è", "", "@copula"], ["un", "", "@one"], ["libro", "", "book"]], "end": "."}
+{"sentence": "this-is-my-book", "t": [["Questo", "", "this"], ["è", "", "@copula"], ["il", "", "@the"], ["mio", "", "i"], ["libro", "", "book"]], "end": "."}
+{"sentence": "drink-water", "t": [["Bevo", "", "drink"], ["acqua", "", "water"]], "implied": ["i"], "end": "."}
+{"sentence": "drink-tea", "t": [["Bevo", "", "drink"], ["il", "", "@the"], ["tè", "", "tea"]], "implied": ["i"], "end": "."}
+{"sentence": "want-coffee", "t": [["Voglio", "", "want"], ["un", "", "@one"], ["caffè", "", "coffee"]], "implied": ["i"], "end": "."}
+{"sentence": "read-book", "t": [["Leggo", "", "read"], ["un", "", "@one"], ["libro", "", "book"]], "implied": ["i"], "end": "."}
+{"sentence": "eat-rice", "t": [["Mangiamo", "", "eat"], ["il", "", "@the"], ["riso", "", "rice"]], "implied": ["we"], "end": "."}
+{"sentence": "eat-food", "t": [["Mangio", "", "eat"], ["il", "", "@the"], ["cibo", "", "food"]], "implied": ["i"], "end": "."}
+{"sentence": "lunch-restaurant", "t": [["Pranzo", "", "lunch+eat"], ["al", "", "@place+@the"], ["ristorante", "", "restaurant"]], "implied": ["i"], "end": "."}
+{"sentence": "eat-restaurant", "t": [["Mangio", "", "eat"], ["al", "", "@place+@the"], ["ristorante", "", "restaurant"]], "implied": ["i"], "end": "."}
+{"sentence": "hot-today", "t": [["Oggi", "", "today"], ["fa", "", "@happen"], ["caldo", "", "hot"]], "end": "."}
+{"sentence": "cold-today", "t": [["Oggi", "", "today"], ["fa", "", "@happen"], ["freddo", "", "cold"]], "end": "."}
+{"sentence": "weather-hot", "t": [["Oggi", "", "today"], ["il", "", "@the"], ["tempo", "", "weather"], ["è", "", "@copula"], ["caldo", "", "hot"]], "end": "."}
+{"sentence": "weather-good", "t": [["Oggi", "", "today"], ["il", "", "@the"], ["tempo", "", "weather"], ["è", "", "@copula"], ["bello", "", "good"]], "end": "."}
+{"sentence": "raining", "t": [["Piove", "", "rain"]], "end": "."}
+{"sentence": "monday", "t": [["Oggi", "", "today"], ["è", "", "@copula"], ["lunedì", "", "monday"]], "end": "."}
+{"sentence": "what-time", "t": [["Che", "", "what"], ["ore", "", "time"], ["sono", "", "@copula"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["Che", "", "what"], ["ore", "", "time"], ["sono", "", "@copula"], ["adesso", "", "now"]], "end": "?"}
+{"sentence": "no-time", "t": [["Non c'è", "", "none"], ["tempo", "", "time"]], "end": "."}
+{"sentence": "there-is-cat", "t": [["C'è", "", "exist"], ["un", "", "@one"], ["gatto", "", "cat"]], "end": "."}
+{"sentence": "have-cat", "t": [["Ho", "", "have"], ["un", "", "@one"], ["gatto", "", "cat"]], "implied": ["i"], "end": "."}
+{"sentence": "book-on-table", "t": [["C'è", "", "exist"], ["un", "", "@one"], ["libro", "", "book"], ["sul", "", "on+@the"], ["tavolo", "", "table"]], "end": "."}
+{"sentence": "house-big", "t": [["La", "", "@the"], ["casa", "", "house"], ["è", "", "@copula"], ["grande", "", "big"]], "end": "."}
+{"sentence": "car-new", "t": [["La", "", "@the"], ["macchina", "", "car"], ["è", "", "@copula"], ["nuova", "", "new"]], "end": "."}
+{"sentence": "delicious", "t": [["È", "", "@copula"], ["delizioso", "", "delicious"]], "end": "."}
+{"sentence": "food-tasty", "t": [["Il", "", "@the"], ["cibo", "", "food"], ["è", "", "@copula"], ["molto", "", "very"], ["buono", "", "delicious"]], "end": "."}
+{"sentence": "head-hurts", "t": [["Mi", "", "i"], ["fa male", "", "hurt"], ["la", "", "@the"], ["testa", "", "head"]], "end": "."}
+{"sentence": "hungry", "t": [["Ho fame", "", "hungry"]], "implied": ["i"], "end": "."}
+{"sentence": "give-water", "t": [["Dammi", "", "give+i"], ["dell'-", "", "@partitive+@the"], ["acqua", "", "water"], ["per favore", "", "please"]], "end": "."}
+{"sentence": "wait-moment", "t": [["Aspetta", "", "wait"], ["un", "", "@one"], ["momento", "", "moment"], ["per favore", "", "please"]], "end": "."}
+{"sentence": "sit-down", "t": [["Siediti", "", "sit"], ["per favore", "", "please"]], "end": "."}
+{"sentence": "where-station", "t": [["Dov'è", "", "where+@copula"], ["la", "", "@the"], ["stazione", "", "station"]], "end": "?"}
+{"sentence": "where-toilet", "t": [["Dov'è", "", "where+@copula"], ["il", "", "@the"], ["bagno", "", "toilet"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["Dov'è", "", "where+@copula"], ["l'-", "", "@the"], ["albergo", "", "hotel"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["Quant'è", "", "how-much+@copula"], ["questo", "", "this"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["Quant'è", "", "how-much+@copula"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["Quanto", "", "how-much"], ["costa", "", "cost"]], "end": "?"}
+{"sentence": "bill-please", "t": [["Il", "", "@the"], ["conto", "", "bill"], ["per favore", "", "please"]], "end": "."}
+{"sentence": "go-school", "t": [["Vado", "", "go"], ["a", "", "@direction"], ["scuola", "", "school"]], "implied": ["i"], "end": "."}
+{"sentence": "bus-school", "t": [["Vado", "", "go"], ["a", "", "@direction"], ["scuola", "", "school"], ["in", "", "@means"], ["autobus", "", "bus"]], "implied": ["i"], "end": "."}
+{"sentence": "go-tokyo", "t": [["Voglio", "", "want"], ["andare", "", "go"], ["a", "", "@direction"], ["Tokyo", "", "tokyo"]], "implied": ["i"], "end": "."}
+{"sentence": "came-train", "t": [["Sono", "", "@past"], ["venuto", "", "come"], ["in", "", "@means"], ["treno", "", "train"]], "implied": ["i"], "end": "."}
+{"sentence": "where-going", "t": [["Dove", "", "where"], ["vai", "", "go"]], "implied": ["you"], "end": "?"}
+{"sentence": "going-home", "t": [["Vado", "", "go"], ["a casa", "", "home"]], "implied": ["i"], "end": "."}
+{"sentence": "we-going-home", "t": [["Andiamo", "", "go"], ["a casa", "", "home"]], "implied": ["we"], "end": "."}
+{"sentence": "lets-go", "t": [["Andiamo", "", "go+let-us"]], "end": "."}
+{"sentence": "live-moscow", "t": [["Abito", "", "live"], ["a", "", "@place"], ["Mosca", "", "moscow"]], "implied": ["i"], "end": "."}
+{"sentence": "live-cairo", "t": [["Abito", "", "live"], ["al", "", "@place+@the"], ["Cairo", "", "cairo"]], "implied": ["i"], "end": "."}
+{"sentence": "live-beijing", "t": [["Abito", "", "live"], ["a", "", "@place"], ["Pechino", "", "beijing"]], "implied": ["i"], "end": "."}
+{"sentence": "i-sleep", "t": [["Dormo", "", "sleep"]], "implied": ["i"], "end": "."}
+{"sentence": "i-fight", "t": [["Combatto", "", "fight"]], "implied": ["i"], "end": "."}
+{"sentence": "we-fight", "t": [["Combattiamo", "", "fight"]], "implied": ["we"], "end": "."}
+{"sentence": "sleep-command", "t": [["Dormi", "", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["Il", "", "@the"], ["bambino", "", "child"], ["dorme", "", "sleep"]], "end": "."}
+{"sentence": "officer-sees-child", "t": [["L'-", "", "@the"], ["ufficiale", "", "officer"], ["vede", "", "see"], ["il", "", "@the"], ["bambino", "", "child"]], "end": "."}
+{"sentence": "captain-sees-ship", "t": [["Il", "", "@the"], ["capitano", "", "captain"], ["vede", "", "see"], ["la", "", "@the"], ["nave", "", "ship"]], "end": "."}
+{"sentence": "i-see-ship", "t": [["Vedo", "", "see"], ["la", "", "@the"], ["nave", "", "ship"]], "implied": ["i"], "end": "."}
+{"sentence": "print-word", "t": [["Stampare", "", "print"], ["la", "", "@the"], ["parola", "", "word"]], "end": "."}
+{"sentence": "show-number", "t": [["Mostrare", "", "print"], ["il", "", "@the"], ["numero", "", "number"]], "end": "."}
+{"sentence": "print-screen", "t": [["Stampare", "", "print"], ["la", "", "@the"], ["parola", "", "word"], ["sullo", "", "@place+@the"], ["schermo", "", "screen"]], "end": "."}
+{"sentence": "start-loop", "t": [["Avviare", "", "start"], ["un", "", "@one"], ["ciclo", "", "loop"]], "end": "."}
+{"sentence": "end-loop", "t": [["Terminare", "", "end"], ["il", "", "@the"], ["ciclo", "", "loop"]], "end": "."}
+{"sentence": "repeat-three", "t": [["Ripetere", "", "repeat"], ["tre", "", "three"], ["volte", "", "times"]], "end": "."}
+{"sentence": "count-to-ten", "t": [["Contare", "", "count"], ["da", "", "from"], ["uno", "", "one"], ["a", "", "@until"], ["dieci", "", "ten"]], "end": "."}
+{"sentence": "set-value", "t": [["Impostare", "", "set"], ["il", "", "@the"], ["valore", "", "value"]], "end": "."}
+{"sentence": "create-variable", "t": [["Creare", "", "create"], ["una", "", "@one"], ["variabile", "", "variable"]], "end": "."}
+{"sentence": "return-value", "t": [["Restituire", "", "return"], ["il", "", "@the"], ["valore", "", "value"]], "end": "."}
+{"sentence": "load-data", "t": [["Caricare", "", "load"], ["i", "", "@the"], ["dati", "", "data"]], "end": "."}
+{"sentence": "add-one", "t": [["Aggiungere", "", "add"], ["uno", "", "one"]], "end": "."}
+{"sentence": "sort-list", "t": [["Ordinare", "", "sort"], ["la", "", "@the"], ["lista", "", "list"]], "end": "."}
+{"sentence": "run-program", "t": [["Eseguire", "", "run"], ["il", "", "@the"], ["programma", "", "program"]], "end": "."}

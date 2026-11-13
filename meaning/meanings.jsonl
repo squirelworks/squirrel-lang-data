@@ -1,8 +1,8 @@
 {"schema": "meaning@1", "notes": ["Written for this project."]}
-{"id": "i", "kind": "content", "en": ["I", "me", "my", "mine", "myself"], "group": "People"}
-{"id": "you", "kind": "content", "en": ["you", "your", "yours"], "group": "People"}
+{"id": "i", "kind": "content", "en": ["I", "me", "my", "mine", "myself", "I'm"], "group": "People"}
+{"id": "you", "kind": "content", "en": ["you", "your", "yours", "you're"], "group": "People"}
 {"id": "he", "kind": "content", "en": ["he", "him", "his", "she", "her"], "group": "People"}
-{"id": "we", "kind": "content", "en": ["we", "us", "our"], "group": "People"}
+{"id": "we", "kind": "content", "en": ["we", "us", "our", "we're"], "group": "People"}
 {"id": "they", "kind": "content", "en": ["they", "them", "their", "theirs"], "group": "People"}
 {"id": "child", "kind": "content", "en": ["child", "kid"], "group": "People"}
 {"id": "friend", "kind": "content", "en": ["friend"], "group": "People"}
@@ -89,7 +89,7 @@
 {"id": "exist", "kind": "content", "en": ["there is", "there are", "is", "are", "exists", "exist", "have"], "group": "Doing"}
 {"id": "none", "kind": "content", "en": ["there is no", "no", "none", "nothing", "not"], "group": "Doing"}
 {"id": "hurt", "kind": "content", "en": ["hurt", "ache", "pain"], "group": "Doing"}
-{"id": "let-us", "kind": "content", "en": ["let us"], "group": "Doing"}
+{"id": "let-us", "kind": "content", "en": ["let us", "let's"], "group": "Doing"}
 {"id": "hot", "kind": "content", "en": ["hot", "warm"], "group": "Describing"}
 {"id": "cold", "kind": "content", "en": ["cold", "chilly"], "group": "Describing"}
 {"id": "big", "kind": "content", "en": ["big", "large"], "group": "Describing"}
@@ -99,7 +99,7 @@
 {"id": "hungry", "kind": "content", "en": ["hungry"], "group": "Describing"}
 {"id": "very", "kind": "content", "en": ["very", "really", "so"], "group": "Describing"}
 {"id": "very-much", "kind": "content", "en": ["very much", "so much", "a lot", "much", "really"], "group": "Describing"}
-{"id": "not", "kind": "content", "en": ["not", "no", "never"], "group": "Little words"}
+{"id": "not", "kind": "content", "en": ["not", "no", "never", "don't", "doesn't", "didn't", "isn't", "aren't", "wasn't", "can't", "won't"], "group": "Little words"}
 {"id": "please", "kind": "content", "en": ["please"], "group": "Little words"}
 {"id": "on", "kind": "content", "en": ["on", "on top of", "above"], "group": "Little words"}
 {"id": "from", "kind": "content", "en": ["from"], "group": "Little words"}
@@ -149,6 +149,7 @@
 {"id": "@happen", "kind": "grammar", "label": "happening", "en": [], "group": "Grammar"}
 {"id": "@the", "kind": "grammar", "label": "definite article", "en": ["the"], "group": "Grammar"}
 {"id": "@one", "kind": "grammar", "label": "'a', one", "en": ["a", "an", "one"], "group": "Grammar"}
+{"id": "@partitive", "kind": "grammar", "label": "partitive: some (French du, Italian dell')", "en": ["some"], "group": "Grammar"}
 {"id": "@measure", "kind": "grammar", "label": "measure word", "en": [], "group": "Grammar"}
 {"id": "@degree", "kind": "grammar", "label": "degree", "en": ["very", "quite", "so"], "group": "Grammar"}
 {"id": "@possession", "kind": "grammar", "label": "possession: 'by me'", "en": [], "group": "Grammar"}
