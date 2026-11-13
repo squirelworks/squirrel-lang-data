@@ -36,8 +36,7 @@ tags are never moved or reused, releases are never deleted.
 
 ## Next: v0.1.5
 
-Everything merged since v0.1.4 is collected in `release-notes/v0.1.5.md`
-(still marked Draft): French, German and Italian matrix columns, Latin,
+Everything merged since v0.1.4 is collected in `release-notes/v0.1.5.md`: French, German and Italian matrix columns, Latin,
 Greek and Russian filled to every row, English contractions (#105), and
 the Syriac alphabet (#106).
 
@@ -45,8 +44,8 @@ It's due when all of these hold and the owner says "release":
 
 - [x] New and filled columns, English contractions (#105)
 - [x] Syriac alphabet (#106)
-- [ ] CI green on `main`
-- [ ] A PR that removes "Draft." from `release-notes/v0.1.5.md` and checks
+- [x] CI green on `main`
+- [x] A PR that removes "Draft." from `release-notes/v0.1.5.md` and checks
       every bullet against what merged, with nothing else in it
 - [ ] **Draft release** run by hand with `v0.1.5`; the owner publishes
 - [ ] Pin-bump PRs in LanguageStudentDesk (with the `data-pin` label) and
