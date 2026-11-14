@@ -1,0 +1,104 @@
+{"schema": "columns@1", "language": "aramaic", "notes": ["Aramaic column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. Biblical and Imperial Aramaic style in the square script, without vowel points. Present-tense “to be” is omitted in nominal sentences; definiteness uses the emphatic ending ‑א (marked @the when as its own token).", "איתי (itay) carries exist/have; די (di) and suffix possession patterns follow languages/aramaic/grammar.json and vocab.jsonl. Question particles are minimal; some yes/no questions use implied “you”.", "Sources: Daniel and Ezra lemmas in languages/aramaic/vocab.jsonl and grammar (אנה, שלם, אזל, אתה, יהב, איתי, מן, לא, חזה, מלה); Classical Syriac and Wiktionary Aramaic (CC BY-SA) for everyday and modern matrix rows (loanwords, cities, code imperatives). Biblical register is kept where the source pack is Biblical; composed classroom phrases are noted here rather than invented as unattested full sentences."], "sep": " "}
+{"sentence": "i-am-student", "t": [["אנה", "anah", "i"], ["תלמיד", "talmid", "student"]], "end": "."}
+{"sentence": "name-tanaka", "t": [["שמי", "shmi", "i"], ["שמא", "shema", "name"], ["טנקא", "Tanaka", "tanaka"]], "end": "."}
+{"sentence": "name-minjun", "t": [["שמי", "shmi", "i"], ["שמא", "shema", "name"], ["מינג'ון", "Minjun", "minjun"]], "end": "."}
+{"sentence": "name-anna", "t": [["שמי", "shmi", "i"], ["שמא", "shema", "name"], ["אנה", "Anna", "anna"]], "end": "."}
+{"sentence": "name-ravi", "t": [["שמי", "shmi", "i"], ["שמא", "shema", "name"], ["ראווי", "Ravi", "ravi"]], "end": "."}
+{"sentence": "name-sami", "t": [["שמי", "shmi", "i"], ["שמא", "shema", "name"], ["סאמי", "Sami", "sami"]], "end": "."}
+{"sentence": "name-wang-ming", "t": [["שמי", "shmi", "i"], ["שמא", "shema", "name"], ["וואנג מינג", "Wang Ming", "wang-ming"]], "end": "."}
+{"sentence": "your-name", "t": [["מנא", "mena", "what"], ["שמא", "shema", "name"], ["-ך", "akh", "you"]], "end": "?"}
+{"sentence": "hello", "t": [["שלם", "shelam", "hello"]], "end": "."}
+{"sentence": "nice-to-meet-you", "t": [["שלמך", "shelamakh", "nice-to-meet-you"]], "end": "."}
+{"sentence": "good-morning", "t": [["צפרא", "tzapra", "morning"], ["טבא", "tava", "good"]], "end": "."}
+{"sentence": "thank-you", "t": [["תודה", "toda", "thanks"]], "end": "."}
+{"sentence": "thank-you-very-much", "t": [["תודה", "toda", "thanks"], ["סגיא", "sagia", "very-much"]], "end": "."}
+{"sentence": "success", "t": [["צלחא", "tzlacha", "success"]], "end": "!"}
+{"sentence": "dont-understand", "t": [["אנה", "anah", "i"], ["לא", "la", "not"], ["מסכח", "maskakh", "understand"]], "end": "."}
+{"sentence": "dont-know", "t": [["אנה", "anah", "i"], ["לא", "la", "not"], ["ידע", "yeda", "know"]], "end": "."}
+{"sentence": "speak-english", "t": [["ה", "ha", "@question"], ["ממלל", "memallel", "speak"], ["אנגלי", "angli", "english"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-chinese", "t": [["ה", "ha", "@question"], ["ממלל", "memallel", "speak"], ["סיני", "sini", "chinese"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-arabic", "t": [["ה", "ha", "@question"], ["ממלל", "memallel", "speak"], ["ערבי", "aravi", "arabic"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-klingon", "t": [["ה", "ha", "@question"], ["ממלל", "memallel", "speak"], ["קלינגוני", "klingoni", "klingon"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-hindi", "t": [["אנה", "anah", "i"], ["ממלל", "memallel", "speak"], ["הינדי", "hindi", "hindi"]], "end": "."}
+{"sentence": "study-korean", "t": [["אנה", "anah", "i"], ["למד", "lamed", "study"], ["קוריאני", "koreani", "korean"]], "end": "."}
+{"sentence": "like-sushi", "t": [["אנה", "anah", "i"], ["רחם", "rachem", "like"], ["סושי", "sushi", "sushi"]], "end": "."}
+{"sentence": "like-coffee", "t": [["אנה", "anah", "i"], ["רחם", "rachem", "like"], ["קפה", "kafe", "coffee"]], "end": "."}
+{"sentence": "like-tea", "t": [["אנה", "anah", "i"], ["רחם", "rachem", "like"], ["תה", "te", "tea"]], "end": "."}
+{"sentence": "love-you", "t": [["אנה", "anah", "i"], ["רחם", "rachem", "love"], ["-ך", "akh", "you"]], "end": "."}
+{"sentence": "met-friend", "t": [["אנה", "anah", "i"], ["אתמול", "etmol", "yesterday"], ["חבר", "chaver", "friend"], ["פגשת", "pagasht", "meet+@past"]], "end": "."}
+{"sentence": "my-friend", "t": [["הוא", "hu", "he"], ["חבר", "chaver", "friend"], ["-י", "i", "i"]], "end": "."}
+{"sentence": "who-is-he", "t": [["מן", "man", "who"], ["הוא", "hu", "he"]], "end": "?"}
+{"sentence": "where-live", "t": [["היכן", "heikhan", "where"], ["גר", "gar", "live"]], "implied": ["you"], "end": "?"}
+{"sentence": "from-egypt", "t": [["אנה", "anah", "i"], ["מן", "min", "from"], ["מצרים", "Mitzrayim", "egypt"]], "end": "."}
+{"sentence": "we-are-klingons", "t": [["אנחנא", "anahna", "we"], ["קלינגוניא", "klingonia", "klingon"]], "end": "."}
+{"sentence": "this-is-book", "t": [["דנה", "dena", "this"], ["ספרא", "sefara", "book"]], "end": "."}
+{"sentence": "this-is-my-book", "t": [["דנה", "dena", "this"], ["ספרא", "sefara", "book"], ["-י", "i", "i"]], "end": "."}
+{"sentence": "drink-water", "t": [["אנה", "anah", "i"], ["שתא", "shtah", "drink"], ["מיא", "maya", "water"]], "end": "."}
+{"sentence": "drink-tea", "t": [["אנה", "anah", "i"], ["שתא", "shtah", "drink"], ["תה", "te", "tea"]], "end": "."}
+{"sentence": "want-coffee", "t": [["אנה", "anah", "i"], ["צבי", "tzvi", "want"], ["קפה", "kafe", "coffee"]], "end": "."}
+{"sentence": "read-book", "t": [["אנה", "anah", "i"], ["קרי", "keri", "read"], ["ספרא", "sefara", "book"]], "end": "."}
+{"sentence": "eat-rice", "t": [["אנחנא", "anahna", "we"], ["אכל", "akhal", "eat"], ["אורזא", "urza", "rice"]], "end": "."}
+{"sentence": "eat-food", "t": [["אנה", "anah", "i"], ["אכל", "akhal", "eat"], ["מאכלא", "makla", "food"]], "end": "."}
+{"sentence": "lunch-restaurant", "t": [["אנה", "anah", "i"], ["אכל", "akhal", "eat"], ["צהריא", "tzaharya", "lunch"], ["ב-", "be", "@place"], ["מטעמא", "matama", "restaurant"]], "end": "."}
+{"sentence": "eat-restaurant", "t": [["אנה", "anah", "i"], ["אכל", "akhal", "eat"], ["ב-", "be", "@place"], ["מטעמא", "matama", "restaurant"]], "end": "."}
+{"sentence": "hot-today", "t": [["יומא", "yoma", "today"], ["חמא", "chama", "hot"]], "end": "."}
+{"sentence": "cold-today", "t": [["יומא", "yoma", "today"], ["קריר", "karir", "cold"]], "end": "."}
+{"sentence": "weather-hot", "t": [["יומא", "yoma", "today"], ["אוירא", "aveira", "weather"], ["חמא", "chama", "hot"]], "end": "."}
+{"sentence": "weather-good", "t": [["יומא", "yoma", "today"], ["אוירא", "aveira", "weather"], ["טבא", "tava", "good"]], "end": "."}
+{"sentence": "raining", "t": [["מטר", "metar", "rain"]], "end": "."}
+{"sentence": "monday", "t": [["יומא", "yoma", "today"], ["יום ב", "yom bet", "monday"]], "end": "."}
+{"sentence": "what-time", "t": [["מנא", "mena", "what"], ["זמנא", "zemna", "time"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["כען", "kean", "now"], ["מנא", "mena", "what"], ["זמנא", "zemna", "time"]], "end": "?"}
+{"sentence": "no-time", "t": [["לית", "leit", "none"], ["זמנא", "zemna", "time"]], "end": "."}
+{"sentence": "there-is-cat", "t": [["איתי", "itay", "exist"], ["שונריא", "shunraya", "cat"]], "end": "."}
+{"sentence": "have-cat", "t": [["איתי", "itay", "have"], ["לי", "li", "i"], ["שונריא", "shunraya", "cat"]], "end": "."}
+{"sentence": "book-on-table", "t": [["איתי", "itay", "exist"], ["ספרא", "sefara", "book"], ["על", "al", "on"], ["שולחנא", "shulchana", "table"]], "end": "."}
+{"sentence": "house-big", "t": [["ביתא", "beita", "house"], ["רב", "rav", "big"]], "end": "."}
+{"sentence": "car-new", "t": [["כונתא", "konita", "car"], ["חדתא", "chadta", "new"]], "end": "."}
+{"sentence": "delicious", "t": [["ביסא", "bisa", "delicious"]], "end": "."}
+{"sentence": "food-tasty", "t": [["מאכלא", "makla", "food"], ["טב", "tev", "very"], ["ביסא", "bisa", "delicious"]], "end": "."}
+{"sentence": "head-hurts", "t": [["כא", "ka", "hurt"], ["לי", "li", "i"], ["בריא", "baraya", "head"]], "end": "."}
+{"sentence": "hungry", "t": [["אנה", "anah", "i"], ["רעב", "raav", "hungry"]], "end": "."}
+{"sentence": "give-water", "t": [["בבקשא", "bevakasha", "please"], ["יהב", "yehav", "give"], ["לי", "li", "i"], ["מיא", "maya", "water"]], "end": "."}
+{"sentence": "wait-moment", "t": [["בבקשא", "bevakasha", "please"], ["מט", "mat", "wait"], ["רגעא", "raga", "moment"]], "end": "."}
+{"sentence": "sit-down", "t": [["בבקשא", "bevakasha", "please"], ["יתב", "yetev", "sit"]], "end": "."}
+{"sentence": "where-station", "t": [["היכן", "heikhan", "where"], ["תחנתא", "tachanta", "station"]], "end": "?"}
+{"sentence": "where-toilet", "t": [["היכן", "heikhan", "where"], ["שירותא", "sheruta", "toilet"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["היכן", "heikhan", "where"], ["מלונא", "malona", "hotel"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["כמה", "kama", "how-much"], ["דנה", "dena", "this"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["כמה", "kama", "how-much"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["כמה", "kama", "how-much"], ["עול", "ol", "cost"]], "end": "?"}
+{"sentence": "bill-please", "t": [["חשבונא", "cheshbona", "bill"], ["בבקשא", "bevakasha", "please"]], "end": "."}
+{"sentence": "go-school", "t": [["אנה", "anah", "i"], ["אזל", "azal", "go"], ["ל-", "le", "@direction"], ["ביית", "beit", "school"]], "end": "."}
+{"sentence": "bus-school", "t": [["אנה", "anah", "i"], ["אזל", "azal", "go"], ["ל-", "le", "@direction"], ["ביית", "beit", "school"], ["ב-", "be", "@means"], ["אוטובוס", "otobus", "bus"]], "end": "."}
+{"sentence": "go-tokyo", "t": [["אנה", "anah", "i"], ["צבי", "tzvi", "want"], ["אזל", "azal", "go"], ["ל-", "le", "@direction"], ["טוקיו", "Tokyo", "tokyo"]], "end": "."}
+{"sentence": "came-train", "t": [["אנה", "anah", "i"], ["אתה", "atah", "come+@past"], ["ב-", "be", "@means"], ["רכבתא", "rakevta", "train"]], "end": "."}
+{"sentence": "where-going", "t": [["לאן", "le'an", "where"], ["אנת", "ant", "you"], ["אזל", "azal", "go"]], "end": "?"}
+{"sentence": "going-home", "t": [["אנה", "anah", "i"], ["אזל", "azal", "go"], ["לבית", "levit", "home"]], "end": "."}
+{"sentence": "we-going-home", "t": [["אנחנא", "anahna", "we"], ["אזל", "azal", "go"], ["לבית", "levit", "home"]], "end": "."}
+{"sentence": "lets-go", "t": [["נא", "na", "let-us"], ["אזל", "azal", "go"]], "end": "."}
+{"sentence": "live-moscow", "t": [["אנה", "anah", "i"], ["גר", "gar", "live"], ["ב-", "be", "@place"], ["מוסקבא", "Moskva", "moscow"]], "end": "."}
+{"sentence": "live-cairo", "t": [["אנה", "anah", "i"], ["גר", "gar", "live"], ["ב-", "be", "@place"], ["קהירא", "Kahira", "cairo"]], "end": "."}
+{"sentence": "live-beijing", "t": [["אנה", "anah", "i"], ["גר", "gar", "live"], ["ב-", "be", "@place"], ["בייג'ינג", "Beijing", "beijing"]], "end": "."}
+{"sentence": "i-sleep", "t": [["אנה", "anah", "i"], ["דמך", "demakh", "sleep"]], "end": "."}
+{"sentence": "i-fight", "t": [["אנה", "anah", "i"], ["לחם", "lakhem", "fight"]], "end": "."}
+{"sentence": "we-fight", "t": [["אנחנא", "anahna", "we"], ["לחם", "lakhem", "fight"]], "end": "."}
+{"sentence": "sleep-command", "t": [["דמך", "demakh", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["ברא", "bara", "child"], ["דמך", "demakh", "sleep"]], "end": "."}
+{"sentence": "officer-sees-child", "t": [["שגיא", "shagya", "officer"], ["חזה", "hazah", "see"], ["ברא", "bara", "child"]], "end": "."}
+{"sentence": "captain-sees-ship", "t": [["קפטנא", "kaptena", "captain"], ["חזה", "hazah", "see"], ["ספינתא", "sfinta", "ship"]], "end": "."}
+{"sentence": "i-see-ship", "t": [["אנה", "anah", "i"], ["חזה", "hazah", "see"], ["ספינתא", "sfinta", "ship"]], "end": "."}
+{"sentence": "print-word", "t": [["ראה", "raa", "print"], ["מלתא", "malta", "word"]], "end": "."}
+{"sentence": "show-number", "t": [["ראה", "raa", "print"], ["מנינא", "menyana", "number"]], "end": "."}
+{"sentence": "print-screen", "t": [["ראה", "raa", "print"], ["מלתא", "malta", "word"], ["על", "al", "@place"], ["מסכא", "maska", "screen"]], "end": "."}
+{"sentence": "start-loop", "t": [["החל", "hachel", "start"], ["לולאתא", "lulaata", "loop"]], "end": "."}
+{"sentence": "end-loop", "t": [["סיים", "sayem", "end"], ["לולאתא", "lulaata", "loop"]], "end": "."}
+{"sentence": "repeat-three", "t": [["חזור", "chazor", "repeat"], ["תלת", "telat", "three"], ["פעמין", "peamin", "times"]], "end": "."}
+{"sentence": "count-to-ten", "t": [["מנה", "mene", "count"], ["מן", "min", "from"], ["חד", "had", "one"], ["עד", "ad", "@until"], ["עשר", "asar", "ten"]], "end": "."}
+{"sentence": "set-value", "t": [["קבע", "kboa", "set"], ["ערכא", "archa", "value"]], "end": "."}
+{"sentence": "create-variable", "t": [["ברא", "bara", "create"], ["משתנא", "mishtana", "variable"]], "end": "."}
+{"sentence": "return-value", "t": [["החזר", "hachzer", "return"], ["ערכא", "archa", "value"]], "end": "."}
+{"sentence": "load-data", "t": [["טען", "toen", "load"], ["נתונינ", "netunin", "data"]], "end": "."}
+{"sentence": "add-one", "t": [["וסף", "osef", "add"], ["חד", "had", "one"]], "end": "."}
+{"sentence": "sort-list", "t": [["מיין", "mayen", "sort"], ["רשימתא", "reshimta", "list"]], "end": "."}
+{"sentence": "run-program", "t": [["הרץ", "haretz", "run"], ["תוכניתא", "tochnita", "program"]], "end": "."}
