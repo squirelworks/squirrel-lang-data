@@ -49,31 +49,50 @@ tags are never moved or reused, releases are never deleted.
   and squirrelator's round trip; no native speaker has reviewed them, and
   the existing `REVIEW.md` logs for those languages predate them.
 
-## Next (open, for the next agent)
+## Next: v0.1.6
 
-No tag is planned yet. Suggested order (the reasons are in
-LanguageStudentDesk `docs/FUTURE-WORK.md`). Open **few, sizeable PRs, one
-theme each, and merge them one after another**; batch several languages in
-one PR where the theme is the same.
+Everything merged since v0.1.5 is collected in `release-notes/v0.1.6.md`
+(still marked Draft): Arabic, Hindi, Hebrew and Thai filled (#111),
+Bengali, Armenian, Georgian and Tamil filled (#112), Klingon filled
+including the code pack (#113), and the 21 kana/kanji stroke redraws
+(#114). Tip of `main` for this set is `69b3888`.
 
-v0.1.6 (PATCH), when the owner wants it:
+It's due when all of these hold and the owner says "release":
+
+- [x] Arabic / Hindi / Hebrew / Thai matrix fills and mechanical reviews
+      (#111)
+- [x] Bengali / Armenian / Georgian / Tamil matrix fills (#112)
+- [x] Klingon matrix fill and code-pack rows (#113)
+- [x] Kana and kanji stroke redraws for the final-frame check (#114)
+- [ ] CI green on `main`
+- [ ] A PR that removes "Draft." from `release-notes/v0.1.6.md` and checks
+      every bullet against what merged, with nothing else in it
+- [ ] **Draft release** run by hand with `v0.1.6`; the owner publishes
+- [ ] Pin-bump PRs in LanguageStudentDesk (with the `data-pin` label) and
+      squirrelator, one each. The Desk's should also drop the 21 cleared
+      kana/kanji entries from strokecheck `baseline.json`
+      (squirelworks/LanguageStudentDesk#188).
+
+Open **few, sizeable PRs, one theme each, and merge them one after
+another**; batch several languages in one PR where the theme is the same.
+
+## After v0.1.6
+
+Still PATCH-sized unless noted:
 
 - [ ] Review the 22 Syriac strokes against a published primer, redraw any
       that are wrong, cite the primer in `SOURCES.md`, and add
       `languages/aramaic/REVIEW.md`.
-- [ ] Fix the 23 characters in LanguageStudentDesk's stroke-check baseline
-      (13 kanji, 8 kana, ㅇ, ⴰ; squirelworks/LanguageStudentDesk#188).
+- [ ] Fix hangul ㅇ and Tifinagh ⴰ in LanguageStudentDesk's stroke-check
+      baseline (the remaining two of the 23; squirelworks/LanguageStudentDesk#188).
 - [ ] Recorded reviews (`REVIEW.md`) for the languages without one, and a
-      dated entry for the new columns in French, German, Italian, Latin,
-      Greek and Russian (see `REVIEWING.md`; squirelworks/LanguageStudentDesk#198).
-
-v0.1.7 or later (more content, still PATCH or MINOR by size):
-
-- [ ] Fill the partial meaning-matrix columns: Arabic, Hindi, Bengali,
-      Armenian, Georgian, Hebrew, Thai, Tamil and Klingon, plus Klingon's
-      code-pack rows (#56 is closed; tracked in squirelworks/squirrelator#26).
-- [ ] Columns for the 19 languages without one (squirelworks/squirrelator#26). The
-      source-limited ones (Aramaic, Cherokee, Inuktitut, Manipuri,
+      dated entry for the new and filled columns (French, German, Italian,
+      Latin, Greek, Russian, Arabic, Hindi, Hebrew, Thai, Bengali,
+      Armenian, Georgian, Tamil, Klingon — see `REVIEWING.md`;
+      squirelworks/LanguageStudentDesk#198). Arabic, Hindi, Hebrew and Thai
+      already have mechanical-only entries from #111.
+- [ ] Columns for the 19 languages without one (squirelworks/squirrelator#26).
+      The source-limited ones (Aramaic, Cherokee, Inuktitut, Manipuri,
       Tamazight) only from published sources; leave rows empty rather than
       invent.
 
