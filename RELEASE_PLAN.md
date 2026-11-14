@@ -62,7 +62,7 @@ Gujarati/Kannada/Malayalam/Telugu columns (#117), `gen_features.py`
 Amharic/Cherokee/Taiwanese columns (#123),
 Aramaic/Manipuri/Tamazight columns (#125), Inuktitut column (#127), and
 mechanical reviews for Gujarati/Kannada/Malayalam/Telugu/Burmese/Khmer
-(#128). Tip of `main` for this set is `361c55c`. Syriac Estrangela
+(#128). Tip of `main` for this set is `0115f4a`. Syriac Estrangela
 stroke review (#129) and Tifinagh ⴰ redraw (#131) are merged.
 
 It's due when all of these hold and the owner says "release":
@@ -85,6 +85,7 @@ It's due when all of these hold and the owner says "release":
       Burmese, Khmer (#128)
 - [x] Syriac Estrangela stroke review (#129)
 - [x] Tifinagh ⴰ redraw (#131)
+- [x] Mechanical REVIEW.md for twelve more matrix languages (#132)
 - [ ] CI green on `main`
 - [ ] A PR that removes "Draft." from `release-notes/v0.1.6.md` and checks
       every bullet against what merged, with nothing else in it
@@ -109,8 +110,8 @@ Still PATCH-sized unless noted:
 - [ ] Recorded reviews (`REVIEW.md`) for the languages without one, and a
       dated entry for the new and filled columns (see `REVIEWING.md`;
       squirelworks/LanguageStudentDesk#198). Mechanical-only entries now
-      also cover Gujarati, Kannada, Malayalam, Telugu, Burmese and Khmer
-      (#128).
+      also cover Gujarati through Khmer (#128) and Amharic through Tibetan
+      (#132).
 - [ ] Meaning-matrix columns: every language folder now has one (through
       #127). Further fills are row quality and native-speaker review, not
       missing files.
