@@ -1,0 +1,104 @@
+{"schema": "columns@1", "language": "amharic", "notes": ["Amharic column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. The default speaker is a man (male verb forms), matching other columns.", "Copula ነኝ / ነው carries @copula. Yes/no questions use rising intonation; no separate question particle on most verb forms. Code rows use imperatives (አሳይ, ጀምር), the usual form in Amharic software help.", "Sources: forms match languages/amharic/vocab.jsonl and the FSI Amharic Basic Course (public domain) / grammar pack (e.g. እኔ ተማሪ ነኝ, ስሜ … ነው, አላውቅም, ዋጋው ስንት ነው, ጣቢያው የት, ዝናብ እየዘነበ, ርቦኛል). Loanwords and technical terms checked against Wiktionary (CC BY-SA 4.0). Rows without a single attested phrase in-repo use everyday Amharic renderings noted here (e.g. nice-to-meet-you: ስለተዋወክን ደስ ብሎኛል)."], "sep": " "}
+{"sentence": "i-am-student", "t": [["እኔ", "ine", "i"], ["ተማሪ", "temari", "student"], ["ነኝ", "negn", "@copula"]], "end": "።"}
+{"sentence": "name-tanaka", "t": [["ስሜ", "sime", "i"], ["ስም", "sim", "name"], ["ታናካ", "Tanaka", "tanaka"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "name-minjun", "t": [["ስሜ", "sime", "i"], ["ስም", "sim", "name"], ["ሚንጁን", "Minjun", "minjun"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "name-anna", "t": [["ስሜ", "sime", "i"], ["ስም", "sim", "name"], ["አና", "Anna", "anna"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "name-ravi", "t": [["ስሜ", "sime", "i"], ["ስም", "sim", "name"], ["ራቪ", "Ravi", "ravi"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "name-sami", "t": [["ስሜ", "sime", "i"], ["ስም", "sim", "name"], ["ሳሚ", "Sami", "sami"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "name-wang-ming", "t": [["ስሜ", "sime", "i"], ["ስም", "sim", "name"], ["ዋንግ ሚንግ", "Wang Ming", "wang-ming"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "your-name", "t": [["ስምህ", "simih", "you+name"], ["ምን", "min", "what"], ["ነው", "new", "@copula"]], "end": "?"}
+{"sentence": "hello", "t": [["ሰላም", "selam", "hello"]], "end": "።"}
+{"sentence": "nice-to-meet-you", "t": [["ስለተዋወክን", "siletewawekin", "nice-to-meet-you"]], "end": "።"}
+{"sentence": "good-morning", "t": [["ጠዋት", "tewat", "morning"], ["ደህና", "dehna", "good"]], "end": "።"}
+{"sentence": "thank-you", "t": [["አመሰግናለሁ", "ameseginallehu", "thanks"]], "end": "።"}
+{"sentence": "thank-you-very-much", "t": [["በጣም", "betam", "very-much"], ["አመሰግናለሁ", "ameseginallehu", "thanks"]], "end": "።"}
+{"sentence": "success", "t": [["ተሳካ", "tasaka", "success"]], "end": "!"}
+{"sentence": "dont-understand", "t": [["አል", "al", "not"], ["ገባኝም", "gebagnim", "understand"]], "implied": ["i"], "end": "።"}
+{"sentence": "dont-know", "t": [["አላውቅም", "alawqim", "not+know"]], "implied": ["i"], "end": "።"}
+{"sentence": "speak-english", "t": [["እግሊዝኛ", "ingilizigna", "english"], ["ትናገራለህ", "tingaralleh", "speak"], ["?", "?", "@question"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-chinese", "t": [["ቻይንኛ", "chaynigna", "chinese"], ["ትናገራለህ", "tingaralleh", "speak"], ["?", "?", "@question"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-arabic", "t": [["ዐረብኛ", "arabigna", "arabic"], ["ትናገራለህ", "tingaralleh", "speak"], ["?", "?", "@question"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-klingon", "t": [["ክሊንጎን", "Klingon", "klingon"], ["ትናገራለህ", "tingaralleh", "speak"], ["?", "?", "@question"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-hindi", "t": [["ሂንዲኛ", "hindigna", "hindi"], ["እናገራለሁ", "ingarallehu", "speak"]], "implied": ["i"], "end": "።"}
+{"sentence": "study-korean", "t": [["ኮሪያኛ", "koriyagna", "korean"], ["እማራለሁ", "imarallehu", "study"]], "implied": ["i"], "end": "።"}
+{"sentence": "like-sushi", "t": [["ሱሺ", "sushi", "sushi"], ["እወዳለሁ", "iwedallehu", "like"]], "implied": ["i"], "end": "።"}
+{"sentence": "like-coffee", "t": [["ቡና", "buna", "coffee"], ["እወዳለሁ", "iwedallehu", "like"]], "implied": ["i"], "end": "።"}
+{"sentence": "like-tea", "t": [["ሻይ", "shay", "tea"], ["እወዳለሁ", "iwedallehu", "like"]], "implied": ["i"], "end": "።"}
+{"sentence": "love-you", "t": [["እወድሃለሁ", "iwedhallehu", "love+you"]], "implied": ["i"], "end": "።"}
+{"sentence": "met-friend", "t": [["ትናንት", "tinant", "yesterday"], ["ጓደኛ", "gwadegna", "friend"], ["ገናኝኩ", "genanyku", "meet"]], "implied": ["i"], "end": "።"}
+{"sentence": "my-friend", "t": [["እሱ", "issu", "he"], ["ጓደኛዬ", "gwadegnye", "friend+i"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "who-is-he", "t": [["እሱ", "issu", "he"], ["ማን", "man", "who"], ["ነው", "new", "@copula"]], "end": "?"}
+{"sentence": "where-live", "t": [["የት", "yet", "where"], ["ትኖራለህ", "tinoralleh", "live"]], "implied": ["you"], "end": "?"}
+{"sentence": "from-egypt", "t": [["ከ", "ke", "from"], ["ግብጽ", "Gibits", "egypt"], ["ነኝ", "negn", "i"]], "end": "።"}
+{"sentence": "we-are-klingons", "t": [["እኛ", "igna", "we"], ["ክሊንጎን", "Klingon", "klingon"], ["ነን", "nen", "@copula"]], "end": "።"}
+{"sentence": "this-is-book", "t": [["ይህ", "yih", "this"], ["መጽሐፍ", "metsihaf", "book"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "this-is-my-book", "t": [["ይህ", "yih", "this"], ["መጽሐፌ", "metsihafe", "book+i"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "drink-water", "t": [["ውሃ", "wiha", "water"], ["እጠጣለሁ", "ithetallehu", "drink"]], "implied": ["i"], "end": "።"}
+{"sentence": "drink-tea", "t": [["ሻይ", "shay", "tea"], ["እጠጣለሁ", "ithetallehu", "drink"]], "implied": ["i"], "end": "።"}
+{"sentence": "want-coffee", "t": [["ቡና", "buna", "coffee"], ["እፈልጋለሁ", "ifeleggallehu", "want"]], "implied": ["i"], "end": "።"}
+{"sentence": "read-book", "t": [["መጽሐፍ", "metsihaf", "book"], ["እነበባለሁ", "inebeballehu", "read"]], "implied": ["i"], "end": "።"}
+{"sentence": "eat-rice", "t": [["ሩዝ", "ruz", "rice"], ["እንበላለን", "inbelallen", "eat"]], "implied": ["we"], "end": "።"}
+{"sentence": "eat-food", "t": [["ምግብ", "migib", "food"], ["እበላለሁ", "ibelallehu", "eat"]], "implied": ["i"], "end": "።"}
+{"sentence": "lunch-restaurant", "t": [["በምግብ ቤት", "be migib bet", "restaurant"], ["ምሳ", "missa", "lunch"], ["እበላለሁ", "ibelallehu", "eat"]], "implied": ["i"], "end": "።"}
+{"sentence": "eat-restaurant", "t": [["በምግብ ቤት", "be migib bet", "restaurant"], ["እበላለሁ", "ibelallehu", "eat"]], "implied": ["i"], "end": "።"}
+{"sentence": "hot-today", "t": [["ዛሬ", "zare", "today"], ["ሙቅ", "muq", "hot"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "cold-today", "t": [["ዛሬ", "zare", "today"], ["ቀዝቃዛ", "kezkaza", "cold"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "weather-hot", "t": [["ዛሬ", "zare", "today"], ["አየር", "ayer", "weather"], ["ሙቅ", "muq", "hot"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "weather-good", "t": [["ዛሬ", "zare", "today"], ["አየር", "ayer", "weather"], ["ጥሩ", "tiru", "good"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "raining", "t": [["ዝናብ", "zinab", "rain"], ["እየዘነበ", "iyezzenebe", "@ongoing"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "monday", "t": [["ዛሬ", "zare", "today"], ["ሰኞ", "segno", "monday"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "what-time", "t": [["ስንት", "sint", "what"], ["ሰዓት", "seat", "time"], ["ነው", "new", "@copula"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["አሁን", "ahun", "now"], ["ስንት", "sint", "what"], ["ሰዓት", "seat", "time"], ["ነው", "new", "@copula"]], "end": "?"}
+{"sentence": "no-time", "t": [["ጊዜ", "gize", "time"], ["የለም", "yelem", "none"]], "end": "።"}
+{"sentence": "there-is-cat", "t": [["ድመት", "dimmet", "cat"], ["አለ", "alle", "exist"]], "end": "።"}
+{"sentence": "have-cat", "t": [["ድመት", "dimmet", "cat"], ["አለኝ", "allegn", "have"]], "implied": ["i"], "end": "።"}
+{"sentence": "book-on-table", "t": [["መጽሐፍ", "metsihaf", "book"], ["በጠረጴዛ", "be terepeza", "table"], ["ላይ", "lay", "on"], ["አለ", "alle", "exist"]], "end": "።"}
+{"sentence": "house-big", "t": [["ትልቅ", "tilliq", "big"], ["ቤት", "bet", "house"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "car-new", "t": [["መኪና", "mekina", "car"], ["አዲስ", "addis", "new"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "delicious", "t": [["ጣፋጭ", "tafach", "delicious"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "food-tasty", "t": [["ምግብ", "migib", "food"], ["በጣም", "betam", "very"], ["ጣፋጭ", "tafach", "delicious"], ["ነው", "new", "@copula"]], "end": "።"}
+{"sentence": "head-hurts", "t": [["ራሴ", "rase", "i+head"], ["ይዝቃለ", "yiziqale", "hurt"]], "end": "።"}
+{"sentence": "hungry", "t": [["ርቦኛል", "rabognal", "hungry"]], "implied": ["i"], "end": "።"}
+{"sentence": "give-water", "t": [["እባክህ", "ibakih", "please"], ["ውሃ", "wiha", "water"], ["ስጠኝ", "sitign", "give"]], "implied": ["i"], "end": "።"}
+{"sentence": "wait-moment", "t": [["እባክህ", "ibakih", "please"], ["ትንሽ", "tinish", "moment"], ["ቆይ", "qoy", "wait"]], "end": "።"}
+{"sentence": "sit-down", "t": [["እባክህ", "ibakih", "please"], ["ተቀመጥ", "teqemet", "sit"]], "end": "።"}
+{"sentence": "where-station", "t": [["ጣቢያው", "tabiyaw", "station"], ["የት", "yet", "where"], ["ነው", "new", "@copula"]], "end": "?"}
+{"sentence": "where-toilet", "t": [["ሽንት ቤቱ", "shint betu", "toilet"], ["የት", "yet", "where"], ["ነው", "new", "@copula"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["ሆቴሉ", "hotelu", "hotel"], ["የት", "yet", "where"], ["ነው", "new", "@copula"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["ይህ", "yih", "this"], ["ስንት", "sint", "how-much"], ["ነው", "new", "@copula"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["ስንት", "sint", "how-much"], ["ነው", "new", "@copula"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["ዋጋው", "wagaw", "cost"], ["ስንት", "sint", "how-much"], ["ነው", "new", "@copula"]], "end": "?"}
+{"sentence": "bill-please", "t": [["ሂሳብ", "hisab", "bill"], ["እባክህ", "ibakih", "please"]], "end": "።"}
+{"sentence": "go-school", "t": [["ወደ ትምህርት ቤት", "wede timhirt bet", "school"], ["እሄዳለሁ", "ihedallehu", "go"]], "implied": ["i"], "end": "።"}
+{"sentence": "bus-school", "t": [["በአውቶቡስ", "be autobus", "bus"], ["ወደ ትምህርት ቤት", "wede timhirt bet", "school"], ["እሄዳለሁ", "ihedallehu", "go"]], "implied": ["i"], "end": "።"}
+{"sentence": "go-tokyo", "t": [["ቶኪዮ", "Tokyo", "tokyo"], ["መሄድ", "mehed", "go"], ["እፈልጋለሁ", "ifeleggallehu", "want"]], "implied": ["i"], "end": "።"}
+{"sentence": "came-train", "t": [["በባቡር", "be babur", "train"], ["መጣሁ", "mettahu", "come"]], "implied": ["i"], "end": "።"}
+{"sentence": "where-going", "t": [["የት", "yet", "where"], ["ትሄዳለህ", "tihedalleh", "go"]], "implied": ["you"], "end": "?"}
+{"sentence": "going-home", "t": [["ወደ ቤት", "wede bet", "home"], ["እሄዳለሁ", "ihedallehu", "go"]], "implied": ["i"], "end": "።"}
+{"sentence": "we-going-home", "t": [["ወደ ቤት", "wede bet", "home"], ["እንሄዳለን", "inhedallen", "go"]], "implied": ["we"], "end": "።"}
+{"sentence": "lets-go", "t": [["እንሂድ", "inhid", "go+let-us"]], "end": "።"}
+{"sentence": "live-moscow", "t": [["በሞስኮ", "be Mosko", "moscow"], ["እኖራለሁ", "inorallehu", "live"]], "implied": ["i"], "end": "።"}
+{"sentence": "live-cairo", "t": [["በካይሮ", "be Cairo", "cairo"], ["እኖራለሁ", "inorallehu", "live"]], "implied": ["i"], "end": "።"}
+{"sentence": "live-beijing", "t": [["በቤዪጂንግ", "be Beijing", "beijing"], ["እኖራለሁ", "inorallehu", "live"]], "implied": ["i"], "end": "።"}
+{"sentence": "i-sleep", "t": [["እተኛለሁ", "itenyallehu", "sleep"]], "implied": ["i"], "end": "።"}
+{"sentence": "i-fight", "t": [["እዋጋለሁ", "iwagallehu", "fight"]], "implied": ["i"], "end": "።"}
+{"sentence": "we-fight", "t": [["እንዋጋለን", "inwagallen", "fight"]], "implied": ["we"], "end": "።"}
+{"sentence": "sleep-command", "t": [["ተኛ", "teny", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["ልጁ", "liju", "child"], ["እተኛለ", "itenyale", "sleep"]], "end": "።"}
+{"sentence": "officer-sees-child", "t": [["መኮንኑ", "mekonnu", "officer"], ["ልጁን", "lijun", "child"], ["አየ", "aye", "see"]], "end": "።"}
+{"sentence": "captain-sees-ship", "t": [["ካፒቴኑ", "kapetenu", "captain"], ["መርከቡን", "merkebun", "ship"], ["አየ", "aye", "see"]], "end": "።"}
+{"sentence": "i-see-ship", "t": [["መርከቡን", "merkebun", "ship"], ["አየሁ", "ayehu", "see"]], "implied": ["i"], "end": "።"}
+{"sentence": "print-word", "t": [["ቃል", "qal", "word"], ["አሳይ", "asay", "print"]], "end": "።"}
+{"sentence": "show-number", "t": [["ቁጥር", "qutr", "number"], ["አሳይ", "asay", "print"]], "end": "።"}
+{"sentence": "print-screen", "t": [["በማያ ገጽ", "be maya gegs", "screen"], ["ቃል", "qal", "word"], ["አሳይ", "asay", "print"]], "end": "።"}
+{"sentence": "start-loop", "t": [["ቅርጸ ተደጋጋሚ", "qirtse tedegagami", "loop"], ["ጀምር", "jemer", "start"]], "end": "።"}
+{"sentence": "end-loop", "t": [["ቅርጸ ተደጋጋሚ", "qirtse tedegagami", "loop"], ["አቁም", "aqum", "end"]], "end": "።"}
+{"sentence": "repeat-three", "t": [["ሦስት", "sost", "three"], ["ጊዜ", "gize", "times"], ["ድገም", "deggem", "repeat"]], "end": "።"}
+{"sentence": "count-to-ten", "t": [["ከ", "ke", "from"], ["አንድ", "and", "one"], ["እስከ", "iske", "@until"], ["አስር", "asir", "ten"], ["ቁጥር", "qutr", "count"]], "end": "።"}
+{"sentence": "set-value", "t": [["እሴት", "iset", "value"], ["አስቀምጥ", "asqemt", "set"]], "end": "።"}
+{"sentence": "create-variable", "t": [["ተለዋጭ", "telewach", "variable"], ["ፍጠር", "feter", "create"]], "end": "።"}
+{"sentence": "return-value", "t": [["እሴት", "iset", "value"], ["መልስ", "mels", "return"]], "end": "።"}
+{"sentence": "load-data", "t": [["ውሂብ", "wihib", "data"], ["ጫን", "chan", "load"]], "end": "።"}
+{"sentence": "add-one", "t": [["አንድ", "and", "one"], ["ጨምር", "chemer", "add"]], "end": "።"}
+{"sentence": "sort-list", "t": [["ዝርዝር", "zirzir", "list"], ["አስደርድር", "asderdir", "sort"]], "end": "።"}
+{"sentence": "run-program", "t": [["ፕሮግራም", "program", "program"], ["አስኬድ", "asqed", "run"]], "end": "።"}

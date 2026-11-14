@@ -1,0 +1,104 @@
+{"schema": "columns@1", "language": "taiwanese", "notes": ["Taiwan Mandarin column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. Traditional characters and Taiwan vocabulary (公車, 餐廳, 華語, 螢幕, 程式) match languages/taiwanese/vocab.jsonl and the grammar pack.", "Yes/no questions end with 嗎 (@question). Code rows use 顯示/執行/建立, the usual wording in Taiwan software.", "Sources: forms match languages/taiwanese/vocab.jsonl and grammar examples; mainland spellings converted from meaning/columns/chinese.jsonl with OpenCC s2twp where no Taiwan override was needed. Wiktionary (CC BY-SA 4.0) and Wikipedia (CC BY-SA 4.0) consulted for romanization checks."], "sep": ""}
+{"sentence": "i-am-student", "t": [["我", "wǒ", "i"], ["是", "shì", "@copula"], ["學生", "xuésheng", "student"]], "end": "。"}
+{"sentence": "name-wang-ming", "t": [["我", "wǒ", "i"], ["叫", "jiào", "name"], ["王明", "Wáng Míng", "wang-ming"]], "end": "。"}
+{"sentence": "thank-you", "t": [["謝謝", "xièxie", "thanks"]], "end": "。"}
+{"sentence": "my-friend", "t": [["他", "tā", "he"], ["是", "shì", "@copula"], ["我", "wǒ", "i"], ["的", "de", "@possessive"], ["朋友", "péngyou", "friend"]], "end": "。"}
+{"sentence": "speak-chinese", "t": [["你", "nǐ", "you"], ["說", "shuō", "speak"], ["華語", "Huáyǔ", "chinese"], ["嗎", "ma", "@question"]], "end": "？"}
+{"sentence": "dont-understand", "t": [["我", "wǒ", "i"], ["不", "bù", "not"], ["懂", "dǒng", "understand"]], "end": "。"}
+{"sentence": "sit-down", "t": [["請", "qǐng", "please"], ["坐", "zuò", "sit"]], "end": "。"}
+{"sentence": "this-is-my-book", "t": [["這", "zhè", "this"], ["是", "shì", "@copula"], ["我", "wǒ", "i"], ["的", "de", "@possessive"], ["書", "shū", "book"]], "end": "。"}
+{"sentence": "drink-tea", "t": [["我", "wǒ", "i"], ["喝", "hē", "drink"], ["茶", "chá", "tea"]], "end": "。"}
+{"sentence": "hot-today", "t": [["今天", "jīntiān", "today"], ["很", "hěn", "@degree"], ["熱", "rè", "hot"]], "end": "。"}
+{"sentence": "weather-good", "t": [["今天", "jīntiān", "today"], ["天氣", "tiānqì", "weather"], ["很", "hěn", "@degree"], ["好", "hǎo", "good"]], "end": "。"}
+{"sentence": "want-coffee", "t": [["我", "wǒ", "i"], ["要", "yào", "want"], ["咖啡", "kāfēi", "coffee"]], "end": "。"}
+{"sentence": "have-cat", "t": [["我", "wǒ", "i"], ["有", "yǒu", "have"], ["一", "yì", "@one"], ["只", "zhī", "@measure"], ["貓", "māo", "cat"]], "end": "。"}
+{"sentence": "eat-rice", "t": [["我們", "wǒmen", "we"], ["吃", "chī", "eat"], ["米飯", "mǐfàn", "rice"]], "end": "。"}
+{"sentence": "what-time-now", "t": [["現在", "xiànzài", "now"], ["幾", "jǐ", "what"], ["點", "diǎn", "time"]], "end": "？"}
+{"sentence": "where-station", "t": [["車站", "chēzhàn", "station"], ["在", "zài", "@place"], ["哪裡", "nǎlǐ", "where"]], "end": "？"}
+{"sentence": "where-toilet", "t": [["廁所", "cèsuǒ", "toilet"], ["在", "zài", "@place"], ["哪裡", "nǎlǐ", "where"]], "end": "？"}
+{"sentence": "how-much-this", "t": [["這個", "zhège", "this"], ["多少錢", "duōshao qián", "how-much"]], "end": "？"}
+{"sentence": "live-beijing", "t": [["我", "wǒ", "i"], ["住", "zhù", "live"], ["在", "zài", "@place"], ["北京", "Běijīng", "beijing"]], "end": "。"}
+{"sentence": "going-home", "t": [["我", "wǒ", "i"], ["回", "huí", "go"], ["家", "jiā", "home"]], "end": "。"}
+{"sentence": "name-tanaka", "t": [["我", "wǒ", "i"], ["叫", "jiào", "name"], ["田中", "Tiánzhōng", "tanaka"]], "end": "。"}
+{"sentence": "name-minjun", "t": [["我", "wǒ", "i"], ["叫", "jiào", "name"], ["敏俊", "Mǐnjùn", "minjun"]], "end": "。"}
+{"sentence": "name-anna", "t": [["我", "wǒ", "i"], ["叫", "jiào", "name"], ["安娜", "Ānnà", "anna"]], "end": "。"}
+{"sentence": "name-ravi", "t": [["我", "wǒ", "i"], ["叫", "jiào", "name"], ["拉維", "Lāwéi", "ravi"]], "end": "。"}
+{"sentence": "name-sami", "t": [["我", "wǒ", "i"], ["叫", "jiào", "name"], ["薩米", "Sàmǐ", "sami"]], "end": "。"}
+{"sentence": "your-name", "t": [["你", "nǐ", "you"], ["的", "de", "@possessive"], ["名字", "míngzi", "name"], ["是", "shì", "@copula"], ["什麼", "shénme", "what"]], "end": "？"}
+{"sentence": "hello", "t": [["你好", "nǐ hǎo", "hello"]], "end": "。"}
+{"sentence": "nice-to-meet-you", "t": [["很高興認識你", "hěn gāoxìng rènshi nǐ", "nice-to-meet-you"]], "end": "。"}
+{"sentence": "good-morning", "t": [["早安", "zǎo ān", "good+morning"]], "end": "。"}
+{"sentence": "thank-you-very-much", "t": [["非常", "fēicháng", "very-much"], ["謝謝", "xièxie", "thanks"]], "end": "。"}
+{"sentence": "success", "t": [["成功", "chénggōng", "success"]], "end": "！"}
+{"sentence": "dont-know", "t": [["我", "wǒ", "i"], ["不", "bù", "not"], ["知道", "zhīdào", "know"]], "end": "。"}
+{"sentence": "speak-english", "t": [["你", "nǐ", "you"], ["說", "shuō", "speak"], ["英文", "Yīngwén", "english"], ["嗎", "ma", "@question"]], "end": "？"}
+{"sentence": "speak-arabic", "t": [["你", "nǐ", "you"], ["說", "shuō", "speak"], ["阿拉伯語", "Ālābóyǔ", "arabic"], ["嗎", "ma", "@question"]], "end": "？"}
+{"sentence": "speak-klingon", "t": [["你", "nǐ", "you"], ["說", "shuō", "speak"], ["克林貢語", "Kèlíngòngyǔ", "klingon"], ["嗎", "ma", "@question"]], "end": "？"}
+{"sentence": "speak-hindi", "t": [["我", "wǒ", "i"], ["說", "shuō", "speak"], ["印地語", "Yìndìyǔ", "hindi"]], "end": "。"}
+{"sentence": "study-korean", "t": [["我", "wǒ", "i"], ["學習", "xuéxí", "study"], ["韓文", "Hánwén", "korean"]], "end": "。"}
+{"sentence": "like-sushi", "t": [["我", "wǒ", "i"], ["喜歡", "xǐhuan", "like"], ["壽司", "shòusī", "sushi"]], "end": "。"}
+{"sentence": "like-coffee", "t": [["我", "wǒ", "i"], ["喜歡", "xǐhuan", "like"], ["咖啡", "kāfēi", "coffee"]], "end": "。"}
+{"sentence": "like-tea", "t": [["我", "wǒ", "i"], ["喜歡", "xǐhuan", "like"], ["茶", "chá", "tea"]], "end": "。"}
+{"sentence": "love-you", "t": [["我", "wǒ", "i"], ["愛", "ài", "love"], ["你", "nǐ", "you"]], "end": "。"}
+{"sentence": "met-friend", "t": [["我", "wǒ", "i"], ["昨天", "zuótiān", "yesterday"], ["見", "jiàn", "meet"], ["了", "le", "@past"], ["一", "yí", "@one"], ["個", "ge", "@measure"], ["朋友", "péngyou", "friend"]], "end": "。"}
+{"sentence": "who-is-he", "t": [["他", "tā", "he"], ["是", "shì", "@copula"], ["誰", "shéi", "who"]], "end": "？"}
+{"sentence": "where-live", "t": [["你", "nǐ", "you"], ["住", "zhù", "live"], ["在", "zài", "@place"], ["哪裡", "nǎlǐ", "where"]], "end": "？"}
+{"sentence": "from-egypt", "t": [["我", "wǒ", "i"], ["來自", "láizì", "from"], ["埃及", "Āijí", "egypt"]], "end": "。"}
+{"sentence": "we-are-klingons", "t": [["我們", "wǒmen", "we"], ["是", "shì", "@copula"], ["克林貢人", "Kèlíngòngrén", "klingon"]], "end": "。"}
+{"sentence": "this-is-book", "t": [["這", "zhè", "this"], ["是", "shì", "@copula"], ["一", "yì", "@one"], ["本", "běn", "@measure"], ["書", "shū", "book"]], "end": "。"}
+{"sentence": "drink-water", "t": [["我", "wǒ", "i"], ["喝", "hē", "drink"], ["水", "shuǐ", "water"]], "end": "。"}
+{"sentence": "read-book", "t": [["我", "wǒ", "i"], ["看", "kàn", "read"], ["書", "shū", "book"]], "end": "。"}
+{"sentence": "eat-food", "t": [["我", "wǒ", "i"], ["吃", "chī", "eat"], ["飯", "fàn", "food"]], "end": "。"}
+{"sentence": "lunch-restaurant", "t": [["我", "wǒ", "i"], ["在", "zài", "@place"], ["餐廳", "cāntīng", "restaurant"], ["吃", "chī", "eat"], ["午餐", "wǔcān", "lunch"]], "end": "。"}
+{"sentence": "eat-restaurant", "t": [["我", "wǒ", "i"], ["在", "zài", "@place"], ["餐廳", "cāntīng", "restaurant"], ["吃飯", "chīfàn", "eat"]], "end": "。"}
+{"sentence": "cold-today", "t": [["今天", "jīntiān", "today"], ["很", "hěn", "@degree"], ["冷", "lěng", "cold"]], "end": "。"}
+{"sentence": "weather-hot", "t": [["今天", "jīntiān", "today"], ["天氣", "tiānqì", "weather"], ["很", "hěn", "@degree"], ["熱", "rè", "hot"]], "end": "。"}
+{"sentence": "raining", "t": [["下雨", "xiàyǔ", "rain"], ["了", "le", "@happen"]], "end": "。"}
+{"sentence": "monday", "t": [["今天", "jīntiān", "today"], ["星期一", "xīngqīyī", "monday"]], "end": "。"}
+{"sentence": "what-time", "t": [["幾", "jǐ", "what"], ["點", "diǎn", "time"], ["了", "le", "@happen"]], "end": "？"}
+{"sentence": "no-time", "t": [["沒有", "méiyǒu", "none"], ["時間", "shíjiān", "time"]], "end": "。"}
+{"sentence": "there-is-cat", "t": [["有", "yǒu", "exist"], ["一", "yì", "@one"], ["只", "zhī", "@measure"], ["貓", "māo", "cat"]], "end": "。"}
+{"sentence": "book-on-table", "t": [["桌子", "zhuōzi", "table"], ["上", "shang", "on"], ["有", "yǒu", "exist"], ["一", "yì", "@one"], ["本", "běn", "@measure"], ["書", "shū", "book"]], "end": "。"}
+{"sentence": "house-big", "t": [["房子", "fángzi", "house"], ["很", "hěn", "@degree"], ["大", "dà", "big"]], "end": "。"}
+{"sentence": "car-new", "t": [["車", "chē", "car"], ["很", "hěn", "@degree"], ["新", "xīn", "new"]], "end": "。"}
+{"sentence": "delicious", "t": [["很", "hěn", "@degree"], ["好吃", "hǎochī", "delicious"]], "end": "。"}
+{"sentence": "food-tasty", "t": [["飯菜", "fàncài", "food"], ["非常", "fēicháng", "very"], ["好吃", "hǎochī", "delicious"]], "end": "。"}
+{"sentence": "head-hurts", "t": [["我", "wǒ", "i"], ["頭", "tóu", "head"], ["疼", "téng", "hurt"]], "end": "。"}
+{"sentence": "hungry", "t": [["我", "wǒ", "i"], ["餓", "è", "hungry"], ["了", "le", "@happen"]], "end": "。"}
+{"sentence": "give-water", "t": [["請", "qǐng", "please"], ["給", "gěi", "give"], ["我", "wǒ", "i"], ["水", "shuǐ", "water"]], "end": "。"}
+{"sentence": "wait-moment", "t": [["請", "qǐng", "please"], ["等", "děng", "wait"], ["一下", "yíxià", "moment"]], "end": "。"}
+{"sentence": "where-hotel", "t": [["飯店", "fàndiàn", "hotel"], ["在", "zài", "@place"], ["哪裡", "nǎlǐ", "where"]], "end": "？"}
+{"sentence": "how-much-is-it", "t": [["多少錢", "duōshao qián", "how-much"]], "end": "？"}
+{"sentence": "how-much-cost", "t": [["要", "yào", "cost"], ["多少錢", "duōshao qián", "how-much"]], "end": "？"}
+{"sentence": "bill-please", "t": [["請", "qǐng", "please"], ["結帳", "jiézhàng", "bill"]], "end": "。"}
+{"sentence": "go-school", "t": [["我", "wǒ", "i"], ["去", "qù", "go"], ["學校", "xuéxiào", "school"]], "end": "。"}
+{"sentence": "bus-school", "t": [["我", "wǒ", "i"], ["坐", "zuò", "@means"], ["公車", "gōngchē", "bus"], ["去", "qù", "go"], ["學校", "xuéxiào", "school"]], "end": "。"}
+{"sentence": "go-tokyo", "t": [["我", "wǒ", "i"], ["想", "xiǎng", "want"], ["去", "qù", "go"], ["東京", "Dōngjīng", "tokyo"]], "end": "。"}
+{"sentence": "came-train", "t": [["我", "wǒ", "i"], ["坐", "zuò", "@means"], ["火車", "huǒchē", "train"], ["來", "lái", "come"], ["了", "le", "@past"]], "end": "。"}
+{"sentence": "where-going", "t": [["你", "nǐ", "you"], ["去", "qù", "go"], ["哪裡", "nǎlǐ", "where"]], "end": "？"}
+{"sentence": "we-going-home", "t": [["我們", "wǒmen", "we"], ["回", "huí", "go"], ["家", "jiā", "home"]], "end": "。"}
+{"sentence": "lets-go", "t": [["走吧", "zǒu ba", "go+let-us"]], "end": "！"}
+{"sentence": "live-moscow", "t": [["我", "wǒ", "i"], ["住", "zhù", "live"], ["在", "zài", "@place"], ["莫斯科", "Mòsīkē", "moscow"]], "end": "。"}
+{"sentence": "live-cairo", "t": [["我", "wǒ", "i"], ["住", "zhù", "live"], ["在", "zài", "@place"], ["開羅", "Kāiluó", "cairo"]], "end": "。"}
+{"sentence": "i-sleep", "t": [["我", "wǒ", "i"], ["睡覺", "shuìjiào", "sleep"]], "end": "。"}
+{"sentence": "i-fight", "t": [["我", "wǒ", "i"], ["戰鬥", "zhàndòu", "fight"]], "end": "。"}
+{"sentence": "we-fight", "t": [["我們", "wǒmen", "we"], ["戰鬥", "zhàndòu", "fight"]], "end": "。"}
+{"sentence": "sleep-command", "t": [["睡覺", "shuìjiào", "sleep"]], "end": "！"}
+{"sentence": "child-sleeps", "t": [["孩子", "háizi", "child"], ["在", "zài", "@ongoing"], ["睡覺", "shuìjiào", "sleep"]], "end": "。"}
+{"sentence": "officer-sees-child", "t": [["軍官", "jūnguān", "officer"], ["看見", "kànjiàn", "see"], ["孩子", "háizi", "child"]], "end": "。"}
+{"sentence": "captain-sees-ship", "t": [["船長", "chuánzhǎng", "captain"], ["看見", "kànjiàn", "see"], ["船", "chuán", "ship"]], "end": "。"}
+{"sentence": "i-see-ship", "t": [["我", "wǒ", "i"], ["看見", "kànjiàn", "see"], ["船", "chuán", "ship"]], "end": "。"}
+{"sentence": "print-word", "t": [["顯示", "xiǎnshì", "print"], ["單字", "dānzì", "word"]], "end": "。"}
+{"sentence": "show-number", "t": [["顯示", "xiǎnshì", "print"], ["數字", "shùzì", "number"]], "end": "。"}
+{"sentence": "print-screen", "t": [["在", "zài", "@place"], ["螢幕上", "yíngmù shang", "screen"], ["顯示", "xiǎnshì", "print"], ["單字", "dānzì", "word"]], "end": "。"}
+{"sentence": "start-loop", "t": [["開始", "kāishǐ", "start"], ["迴圈", "huíquān", "loop"]], "end": "。"}
+{"sentence": "end-loop", "t": [["結束", "jiéshù", "end"], ["迴圈", "huíquān", "loop"]], "end": "。"}
+{"sentence": "repeat-three", "t": [["重複", "chóngfù", "repeat"], ["三", "sān", "three"], ["次", "cì", "times"]], "end": "。"}
+{"sentence": "count-to-ten", "t": [["從", "cóng", "from"], ["一", "yī", "one"], ["數", "shǔ", "count"], ["到", "dào", "@until"], ["十", "shí", "ten"]], "end": "。"}
+{"sentence": "set-value", "t": [["設定", "shèzhì", "set"], ["值", "zhí", "value"]], "end": "。"}
+{"sentence": "create-variable", "t": [["建立", "jiànlì", "create"], ["變數", "biànshù", "variable"]], "end": "。"}
+{"sentence": "return-value", "t": [["返回", "fǎnhuí", "return"], ["值", "zhí", "value"]], "end": "。"}
+{"sentence": "load-data", "t": [["載入", "zǎirù", "load"], ["資料", "zīliào", "data"]], "end": "。"}
+{"sentence": "add-one", "t": [["加", "jiā", "add"], ["一", "yī", "one"]], "end": "。"}
+{"sentence": "sort-list", "t": [["排序", "páixù", "sort"], ["清單", "qīngdān", "list"]], "end": "。"}
+{"sentence": "run-program", "t": [["執行", "zhíxíng", "run"], ["程式", "chéngshì", "program"]], "end": "。"}
