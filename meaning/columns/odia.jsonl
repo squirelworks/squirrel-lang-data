@@ -1,0 +1,104 @@
+{"schema": "columns@1", "language": "odia", "notes": ["Odia column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. The romanization matches the simplified scheme in languages/odia (short a like the o in \"hot\"). Nominal sentences often omit a copula (ମୁଁ ଛାତ୍ର), so those rows have no @copula token.", "Sources: forms match languages/odia/vocab.jsonl, reference.json, and the Odia grammar pack (ମୁଁ ଛାତ୍ର, ମୋ ନାମ…, ଆପଣ ଇଂରାଜୀ କହନ୍ତି କି, ମୁଁ ବୁଝିପାରୁ ନାହିଁ, ଆପଣଙ୍କ ନାମ କଣ, ଶୌଚାଳୟ କେଉଁଠି, ଏହାର ମୂଲ୍ୟ କେତେ, ମୋର … ଅଛି, ଆପଣଙ୍କ ସହ ଭେଟି ଖୁସି ହେଲି). Forms match languages/odia/vocab.jsonl where a card exists; other lemmas follow standard Odia (Wiktionary CC BY-SA 4.0 and Wikipedia CC BY-SA 4.0 consulted for spelling and romanization)."], "sep": " "}
+{"sentence": "i-am-student", "t": [["ମୁଁ", "mun", "i"], ["ଛାତ୍ର", "chhatra", "student"]], "end": "।"}
+{"sentence": "name-tanaka", "t": [["ମୋର", "mora", "i"], ["ନାମ", "naama", "name"], ["ତାନାକା", "Tanaakaa", "tanaka"]], "end": "।"}
+{"sentence": "name-minjun", "t": [["ମୋର", "mora", "i"], ["ନାମ", "naama", "name"], ["ମିନଜୁନ", "Minjun", "minjun"]], "end": "।"}
+{"sentence": "name-anna", "t": [["ମୋର", "mora", "i"], ["ନାମ", "naama", "name"], ["ଆନା", "Anna", "anna"]], "end": "।"}
+{"sentence": "name-ravi", "t": [["ମୋର", "mora", "i"], ["ନାମ", "naama", "name"], ["ରବି", "Ravi", "ravi"]], "end": "।"}
+{"sentence": "name-sami", "t": [["ମୋର", "mora", "i"], ["ନାମ", "naama", "name"], ["ସାମି", "Sami", "sami"]], "end": "।"}
+{"sentence": "name-wang-ming", "t": [["ମୋର", "mora", "i"], ["ନାମ", "naama", "name"], ["ୱାଂ ମିଂ", "Wang Ming", "wang-ming"]], "end": "।"}
+{"sentence": "your-name", "t": [["ଆପଣଙ୍କ", "aapanka", "you"], ["ନାମ", "naama", "name"], ["କଣ", "kana", "what"]], "end": "?"}
+{"sentence": "hello", "t": [["ନମସ୍କାର", "namaskaara", "hello"]], "end": "।"}
+{"sentence": "nice-to-meet-you", "t": [["ଆପଣଙ୍କ ସହିତ ଦେଖା କରି ଖୁସି ହେଲି", "aapanka sahita dekha kari khushi heli", "nice-to-meet-you"]], "end": "।"}
+{"sentence": "good-morning", "t": [["ଶୁଭ", "shubha", "good"], ["ସକାଳ", "sakal", "morning"]], "end": "।"}
+{"sentence": "thank-you", "t": [["ଧନ୍ୟବାଦ", "dhanyabaada", "thanks"]], "end": "।"}
+{"sentence": "thank-you-very-much", "t": [["ଅନେକ", "aneka", "very-much"], ["ଧନ୍ୟବାଦ", "dhanyabaada", "thanks"]], "end": "।"}
+{"sentence": "success", "t": [["ସଫଳତା", "saphalataa", "success"]], "end": "!"}
+{"sentence": "dont-understand", "t": [["ମୁଁ", "mun", "i"], ["ବୁଝେ", "bujhe", "understand"], ["ନାହିଁ", "naahin", "not"]], "end": "।"}
+{"sentence": "dont-know", "t": [["ମୁଁ", "mun", "i"], ["ଜାଣେ", "jaane", "know"], ["ନାହିଁ", "naahin", "not"]], "end": "।"}
+{"sentence": "speak-english", "t": [["ଆପଣ", "aapana", "you"], ["କି", "ki", "@question"], ["ଇଂରାଜୀ", "ingraajii", "english"], ["କହନ୍ତି", "kahanti", "speak"]], "end": "?"}
+{"sentence": "speak-chinese", "t": [["ଆପଣ", "aapana", "you"], ["କି", "ki", "@question"], ["ଚୀନୀ", "chiinii", "chinese"], ["କହନ୍ତି", "kahanti", "speak"]], "end": "?"}
+{"sentence": "speak-arabic", "t": [["ଆପଣ", "aapana", "you"], ["କି", "ki", "@question"], ["ଆରବୀ", "aarabii", "arabic"], ["କହନ୍ତି", "kahanti", "speak"]], "end": "?"}
+{"sentence": "speak-klingon", "t": [["ଆପଣ", "aapana", "you"], ["କି", "ki", "@question"], ["କ୍ଲିଙ୍ଗନ", "klingan", "klingon"], ["କହନ୍ତି", "kahanti", "speak"]], "end": "?"}
+{"sentence": "speak-hindi", "t": [["ମୁଁ", "mun", "i"], ["ହିନ୍ଦୀ", "hindii", "hindi"], ["କହେ", "kahe", "speak"]], "end": "।"}
+{"sentence": "study-korean", "t": [["ମୁଁ", "mun", "i"], ["କୋରିଆନ୍", "korian", "korean"], ["ପଢ଼େ", "padhe", "study"]], "end": "।"}
+{"sentence": "like-sushi", "t": [["ମୋର", "mora", "i"], ["ସୁଶି", "sushi", "sushi"], ["ଭଲ", "bhala", "like"], ["ଲାଗେ", "laage", "@happen"]], "end": "।"}
+{"sentence": "like-coffee", "t": [["ମୋର", "mora", "i"], ["କଫି", "kofi", "coffee"], ["ଭଲ", "bhala", "like"], ["ଲାଗେ", "laage", "@happen"]], "end": "।"}
+{"sentence": "like-tea", "t": [["ମୋର", "mora", "i"], ["ଚା", "chaa", "tea"], ["ଭଲ", "bhala", "like"], ["ଲାଗେ", "laage", "@happen"]], "end": "।"}
+{"sentence": "love-you", "t": [["ମୁଁ", "mun", "i"], ["ତୋତେ", "tote", "you"], ["ଭଲପାଏ", "bhalapae", "love"]], "end": "।"}
+{"sentence": "met-friend", "t": [["ମୁଁ", "mun", "i"], ["ଗତକାଲି", "gatakaali", "yesterday"], ["ଜଣେ", "jane", "@one"], ["ବନ୍ଧୁର", "bandhura", "friend"], ["ସହିତ", "sahita", "@place"], ["ଦେଖା ହୋଇଥିଲା", "dekha hoithila", "meet+@past"]], "end": "।"}
+{"sentence": "my-friend", "t": [["ସେ", "se", "he"], ["ମୋର", "mora", "i"], ["ବନ୍ଧୁ", "bandhu", "friend"]], "end": "।"}
+{"sentence": "who-is-he", "t": [["ସେ", "se", "he"], ["କିଏ", "kie", "who"]], "end": "?"}
+{"sentence": "where-live", "t": [["ଆପଣ", "aapana", "you"], ["କେଉଁଠି", "keunthi", "where"], ["ରହନ୍ତି", "rahanti", "live"]], "end": "?"}
+{"sentence": "from-egypt", "t": [["ମୁଁ", "mun", "i"], ["ମିଶର", "mishora", "egypt"], ["ରୁ", "ru", "from"], ["ଆସିଛି", "aasichhi", "@copula"]], "end": "।"}
+{"sentence": "we-are-klingons", "t": [["ଆମେ", "aame", "we"], ["କ୍ଲିଙ୍ଗନ", "klingan", "klingon"]], "end": "।"}
+{"sentence": "this-is-book", "t": [["ଏହା", "ehaa", "this"], ["ବହି", "bahi", "book"]], "end": "।"}
+{"sentence": "this-is-my-book", "t": [["ଏହା", "ehaa", "this"], ["ମୋର", "mora", "i"], ["ବହି", "bahi", "book"]], "end": "।"}
+{"sentence": "drink-water", "t": [["ମୁଁ", "mun", "i"], ["ପାଣି", "paani", "water"], ["ଖାଏ", "khaae", "drink"]], "end": "।"}
+{"sentence": "drink-tea", "t": [["ମୁଁ", "mun", "i"], ["ଚା", "chaa", "tea"], ["ଖାଏ", "khaae", "drink"]], "end": "।"}
+{"sentence": "want-coffee", "t": [["ମୁଁ", "mun", "i"], ["କଫି", "kofi", "coffee"], ["ଚାହେ", "chaahe", "want"]], "end": "।"}
+{"sentence": "read-book", "t": [["ମୁଁ", "mun", "i"], ["ବହି", "bahi", "book"], ["ପଢ଼େ", "padhe", "read"]], "end": "।"}
+{"sentence": "eat-rice", "t": [["ଆମେ", "aame", "we"], ["ଭାତ", "bhaata", "rice"], ["ଖାଏ", "khaae", "eat"]], "end": "।"}
+{"sentence": "eat-food", "t": [["ମୁଁ", "mun", "i"], ["ଖାଦ୍ୟ", "khaadya", "food"], ["ଖାଏ", "khaae", "eat"]], "end": "।"}
+{"sentence": "lunch-restaurant", "t": [["ମୁଁ", "mun", "i"], ["ରେଷ୍ଟୁରାଁରେ", "restoraanre", "restaurant+@place"], ["ଦୁପହରର ଖାଦ୍ୟ", "dupaharara khaadya", "lunch"], ["ଖାଏ", "khaae", "eat"]], "end": "।"}
+{"sentence": "eat-restaurant", "t": [["ମୁଁ", "mun", "i"], ["ରେଷ୍ଟୁରାଁରେ", "restoraanre", "restaurant+@place"], ["ଖାଏ", "khaae", "eat"]], "end": "।"}
+{"sentence": "hot-today", "t": [["ଆଜି", "aaji", "today"], ["ଗରମ", "garama", "hot"]], "end": "।"}
+{"sentence": "cold-today", "t": [["ଆଜି", "aaji", "today"], ["ଥଣ୍ଡା", "thandaa", "cold"]], "end": "।"}
+{"sentence": "weather-hot", "t": [["ଆଜି", "aaji", "today"], ["ପାଣିପାଗ", "paanipaaga", "weather"], ["ଗରମ", "garama", "hot"]], "end": "।"}
+{"sentence": "weather-good", "t": [["ଆଜି", "aaji", "today"], ["ପାଣିପାଗ", "paanipaaga", "weather"], ["ଭଲ", "bhala", "good"]], "end": "।"}
+{"sentence": "raining", "t": [["ବର୍ଷା", "barshaa", "rain"], ["ହେଉଛି", "heuchhi", "@happen"]], "end": "।"}
+{"sentence": "monday", "t": [["ଆଜି", "aaji", "today"], ["ସୋମବାର", "somabaara", "monday"]], "end": "।"}
+{"sentence": "what-time", "t": [["କେତେ", "kete", "what"], ["ବାଜେ", "baaje", "time"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["ଏବେ", "ebe", "now"], ["କେତେ", "kete", "what"], ["ବାଜେ", "baaje", "time"]], "end": "?"}
+{"sentence": "no-time", "t": [["ସମୟ", "samaya", "time"], ["ନାହିଁ", "naahin", "none"]], "end": "।"}
+{"sentence": "there-is-cat", "t": [["ଗୋଟିଏ", "gotie", "@one"], ["ବିଡ଼ାଳ", "biraala", "cat"], ["ଅଛି", "achhi", "exist"]], "end": "।"}
+{"sentence": "have-cat", "t": [["ମୋର", "mora", "i"], ["ଗୋଟିଏ", "gotie", "@one"], ["ବିଡ଼ାଳ", "biraala", "cat"], ["ଅଛି", "achhi", "have"]], "end": "।"}
+{"sentence": "book-on-table", "t": [["ଟେବୁଲରେ", "tebulre", "table+on"], ["ଗୋଟିଏ", "gotie", "@one"], ["ବହି", "bahi", "book"], ["ଅଛି", "achhi", "exist"]], "end": "।"}
+{"sentence": "house-big", "t": [["ଘର", "ghara", "house"], ["ବଡ଼", "bada", "big"]], "end": "।"}
+{"sentence": "car-new", "t": [["ଗାଡ଼ି", "gaadi", "car"], ["ନୂଆ", "nuaa", "new"]], "end": "।"}
+{"sentence": "delicious", "t": [["ସୁଆଦିଆ", "suaadiaa", "delicious"]], "end": "।"}
+{"sentence": "food-tasty", "t": [["ଖାଦ୍ୟ", "khaadya", "food"], ["ବହୁତ", "bahuta", "very"], ["ସୁଆଦିଆ", "suaadiaa", "delicious"]], "end": "।"}
+{"sentence": "head-hurts", "t": [["ମୋର", "mora", "i"], ["ମୁଣ୍ଡ", "munda", "head"], ["ଯନ୍ତ୍ରଣା", "yantranaa", "hurt"], ["କରୁଛି", "karuchhi", "@happen"]], "end": "।"}
+{"sentence": "hungry", "t": [["ମୋର", "mora", "i"], ["କ୍ଷୁଧା", "kshudhaa", "hungry"], ["ଲାଗିଛି", "lagichhi", "@happen"]], "end": "।"}
+{"sentence": "give-water", "t": [["ଦୟାକରି", "dayaakari", "please"], ["ମୋତେ", "mote", "i"], ["ପାଣି", "paani", "water"], ["ଦିଅନ୍ତୁ", "diantu", "give"]], "end": "।"}
+{"sentence": "wait-moment", "t": [["ଦୟାକରି", "dayaakari", "please"], ["ଟିକେ", "tike", "@one"], ["ଅପେକ୍ଷା କରନ୍ତୁ", "apekshaa karantu", "wait+moment"]], "end": "।"}
+{"sentence": "sit-down", "t": [["ଦୟାକରି", "dayaakari", "please"], ["ବସନ୍ତୁ", "basantu", "sit"]], "end": "।"}
+{"sentence": "where-station", "t": [["ଷ୍ଟେସନ୍", "steshan", "station"], ["କେଉଁଠି", "keunthi", "where"]], "end": "?"}
+{"sentence": "where-toilet", "t": [["ଶୌଚାଳୟ", "shauchaalaya", "toilet"], ["କେଉଁଠି", "keunthi", "where"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["ହୋଟେଲ", "hotel", "hotel"], ["କେଉଁଠି", "keunthi", "where"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["ଏହା", "ehaa", "this"], ["କେତେ", "kete", "how-much"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["କେତେ", "kete", "how-much"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["ଏହାର ମୂଲ୍ୟ", "ehaara mulya", "cost"], ["କେତେ", "kete", "how-much"]], "end": "?"}
+{"sentence": "bill-please", "t": [["ବିଲ୍", "bil", "bill"], ["ଦୟାକରି", "dayaakari", "please"]], "end": "।"}
+{"sentence": "go-school", "t": [["ମୁଁ", "mun", "i"], ["ସ୍କୁଲ", "skul", "school"], ["-ରେ", "re", "@direction"], ["ଯାଏ", "jaae", "go"]], "end": "।"}
+{"sentence": "bus-school", "t": [["ମୁଁ", "mun", "i"], ["ବସରେ", "basare", "bus+@means"], ["ସ୍କୁଲ", "skul", "school"], ["-ରେ", "re", "@direction"], ["ଯାଏ", "jaae", "go"]], "end": "।"}
+{"sentence": "go-tokyo", "t": [["ମୁଁ", "mun", "i"], ["ଟୋକିଓ", "Tokio", "tokyo"], ["-କୁ", "ku", "@direction"], ["ଯିବାକୁ", "jibaaku", "go"], ["ଚାହେ", "chaahe", "want"]], "end": "।"}
+{"sentence": "came-train", "t": [["ମୁଁ", "mun", "i"], ["ଟ୍ରେନ୍ରେ", "trainre", "train+@means"], ["ଆସିଛି", "aasichhi", "come+@past"]], "end": "।"}
+{"sentence": "where-going", "t": [["ତୁମେ", "tume", "you"], ["କେଉଁଠି", "keunthi", "where"], ["ଯାଉଛ", "jauchha", "go"]], "end": "?"}
+{"sentence": "going-home", "t": [["ମୁଁ", "mun", "i"], ["ଘର", "ghara", "home"], ["ଯାଏ", "jaae", "go"]], "end": "।"}
+{"sentence": "we-going-home", "t": [["ଆମେ", "aame", "we"], ["ଘର", "ghara", "home"], ["ଯାଏ", "jaae", "go"]], "end": "।"}
+{"sentence": "lets-go", "t": [["ଚାଲ", "chaala", "let-us"], ["ଯାଏ", "jaae", "go"]], "end": "।"}
+{"sentence": "live-moscow", "t": [["ମୁଁ", "mun", "i"], ["ମସ୍କୋ", "Mosko", "moscow"], ["-ରେ", "re", "@place"], ["ରହେ", "rahe", "live"]], "end": "।"}
+{"sentence": "live-cairo", "t": [["ମୁଁ", "mun", "i"], ["କାଇରୋ", "Kairo", "cairo"], ["-ରେ", "re", "@place"], ["ରହେ", "rahe", "live"]], "end": "।"}
+{"sentence": "live-beijing", "t": [["ମୁଁ", "mun", "i"], ["ବେଜିଂ", "Beijing", "beijing"], ["-ରେ", "re", "@place"], ["ରହେ", "rahe", "live"]], "end": "।"}
+{"sentence": "i-sleep", "t": [["ମୁଁ", "mun", "i"], ["ଶୟନ କରେ", "shayana kare", "sleep"]], "end": "।"}
+{"sentence": "i-fight", "t": [["ମୁଁ", "mun", "i"], ["ଲଢ଼େ", "ladhe", "fight"]], "end": "।"}
+{"sentence": "we-fight", "t": [["ଆମେ", "aame", "we"], ["ଲଢ଼େ", "ladhe", "fight"]], "end": "।"}
+{"sentence": "sleep-command", "t": [["ଶୟନ କର", "shayana kara", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["ଶିଶୁ", "shishu", "child"], ["ଶୟନ କରେ", "shayana kare", "sleep"]], "end": "।"}
+{"sentence": "officer-sees-child", "t": [["ଅଧିକାରୀ", "adhikaarii", "officer"], ["ଶିଶୁକୁ", "shishuku", "child"], ["ଦେଖେ", "dekhe", "see"]], "end": "।"}
+{"sentence": "captain-sees-ship", "t": [["କ୍ୟାପ୍ଟେନ୍", "kyapten", "captain"], ["ଜାହାଜ", "jaahaaja", "ship"], ["ଦେଖେ", "dekhe", "see"]], "end": "।"}
+{"sentence": "i-see-ship", "t": [["ମୁଁ", "mun", "i"], ["ଜାହାଜ", "jaahaaja", "ship"], ["ଦେଖେ", "dekhe", "see"]], "end": "।"}
+{"sentence": "print-word", "t": [["ଶବ୍ଦଟି", "shabdoti", "word"], ["ପ୍ରିଣ୍ଟ କରନ୍ତୁ", "print karantu", "print"]], "end": "।"}
+{"sentence": "show-number", "t": [["ସଂଖ୍ୟାଟି", "sankhyati", "number"], ["ଦେଖାନ୍ତୁ", "dekhaantu", "print"]], "end": "।"}
+{"sentence": "print-screen", "t": [["ସ୍କ୍ରିନରେ", "skrinre", "screen+@place"], ["ଶବ୍ଦଟି", "shabdoti", "word"], ["ପ୍ରିଣ୍ଟ କରନ୍ତୁ", "print karantu", "print"]], "end": "।"}
+{"sentence": "start-loop", "t": [["ଲୁପ୍", "lup", "loop"], ["ଆରମ୍ଭ କରନ୍ତୁ", "aarambha karantu", "start"]], "end": "।"}
+{"sentence": "end-loop", "t": [["ଲୁପ୍", "lup", "loop"], ["ଶେଷ କରନ୍ତୁ", "shesa karantu", "end"]], "end": "।"}
+{"sentence": "repeat-three", "t": [["ତିନି", "tini", "three"], ["ଥର", "thara", "times"], ["ପୁନରାବୃତ୍ତି କରନ୍ତୁ", "punaraabrutti karantu", "repeat"]], "end": "।"}
+{"sentence": "count-to-ten", "t": [["ଏକ", "eka", "one"], ["ରୁ", "ru", "from"], ["ଦଶ", "dasha", "ten"], ["ପର୍ଯ୍ୟନ୍ତ", "paryyanta", "@until"], ["ଗଣନ୍ତୁ", "ganantu", "count"]], "end": "।"}
+{"sentence": "set-value", "t": [["ମୂଲ୍ୟ", "mulya", "value"], ["ନିର୍ଧାରଣ କରନ୍ତୁ", "nirdhaarana karantu", "set"]], "end": "।"}
+{"sentence": "create-variable", "t": [["ଗୋଟିଏ", "gotie", "@one"], ["ଚଳକ", "chalaka", "variable"], ["ତିଆରି କରନ୍ତୁ", "tiaari karantu", "create"]], "end": "।"}
+{"sentence": "return-value", "t": [["ମୂଲ୍ୟ", "mulya", "value"], ["ଫେରସ୍ତ ଦିଅନ୍ତୁ", "pherasta diantu", "return"]], "end": "।"}
+{"sentence": "load-data", "t": [["ଡାଟା", "daataa", "data"], ["ଲୋଡ୍ କରନ୍ତୁ", "lod karantu", "load"]], "end": "।"}
+{"sentence": "add-one", "t": [["ଏକ", "eka", "one"], ["ଯୋଗ କରନ୍ତୁ", "joga karantu", "add"]], "end": "।"}
+{"sentence": "sort-list", "t": [["ତାଲିକାଟି", "taalikati", "list"], ["ସଜାନ୍ତୁ", "sajaantu", "sort"]], "end": "।"}
+{"sentence": "run-program", "t": [["ପ୍ରୋଗ୍ରାମ୍", "program", "program"], ["ଚଲାନ୍ତୁ", "chalaantu", "run"]], "end": "।"}

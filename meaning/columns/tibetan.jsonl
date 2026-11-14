@@ -1,0 +1,104 @@
+{"schema": "columns@1", "language": "tibetan", "notes": ["Tibetan column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. Uchen script as in languages/tibetan/vocab.jsonl; romanization follows Lhasa pronunciation. Syllables carry a tsheg in running text when needed. Copulas ཡིན (speaker) and རེད (elsewhere) carry @copula; ཡོད and འདུག mark existence.", "Sources: forms match languages/tibetan/vocab.jsonl, reference.json, and the Tibetan grammar pack (ང་སློབ་ཕྲུག་ཡིན, ངའི་མིང་ལ…, བཀྲ་ཤིས་བདེ་ལེགས, ཁྱེད་རང་གི་མིང་ལ་ག་རེ་ཟེར, གཙང་སྦྲ་ག་པར་ཡོད). Forms match languages/tibetan/vocab.jsonl where a card exists; other lemmas follow standard Lhasa Tibetan (Wiktionary CC BY-SA 4.0 and Wikipedia CC BY-SA 4.0 consulted for spelling and romanization)."], "sep": " "}
+{"sentence": "i-am-student", "t": [["ང", "nga", "i"], ["སློབ་ཕྲུག", "loptruk", "student"], ["ཡིན", "yin", "@copula"]], "end": "."}
+{"sentence": "name-tanaka", "t": [["ངའི", "ngé", "i"], ["མིང", "ming", "name"], ["ཏ་ན་ཀ", "Tanaka", "tanaka"]], "end": "."}
+{"sentence": "name-minjun", "t": [["ངའི", "ngé", "i"], ["མིང", "ming", "name"], ["མིན་ཇུན", "Minjun", "minjun"]], "end": "."}
+{"sentence": "name-anna", "t": [["ངའི", "ngé", "i"], ["མིང", "ming", "name"], ["ཨ་ན", "Anna", "anna"]], "end": "."}
+{"sentence": "name-ravi", "t": [["ངའི", "ngé", "i"], ["མིང", "ming", "name"], ["ར་ཝི", "Ravi", "ravi"]], "end": "."}
+{"sentence": "name-sami", "t": [["ངའི", "ngé", "i"], ["མིང", "ming", "name"], ["ས་མི", "Sami", "sami"]], "end": "."}
+{"sentence": "name-wang-ming", "t": [["ངའི", "ngé", "i"], ["མིང", "ming", "name"], ["ཝང་མིང", "Wang Ming", "wang-ming"]], "end": "."}
+{"sentence": "your-name", "t": [["ཁྱེད་རང་གི", "khyerang gi", "you"], ["མིང", "ming", "name"], ["ག་ཏུ་ཟེར", "katu zer", "what"], ["རེད", "re", "@question"]], "end": "?"}
+{"sentence": "hello", "t": [["བཀྲ་ཤིས་བདེ་ལེགས", "tashi delek", "hello"]], "end": "."}
+{"sentence": "nice-to-meet-you", "t": [["ཁྱེད་རང་དང་མཇལ་བ་དགའ་པོ་ཡོད", "khyerang dang jelwa gaapo yö", "nice-to-meet-you"]], "end": "."}
+{"sentence": "good-morning", "t": [["སྔ་དྲོ", "ngatro", "good+morning"]], "end": "."}
+{"sentence": "thank-you", "t": [["ཐུགས་རྗེ་ཆེ", "thukje che", "thanks"]], "end": "."}
+{"sentence": "thank-you-very-much", "t": [["ཧ་ཅང", "hatsang", "very-much"], ["ཐུགས་རྗེ་ཆེ", "thukje che", "thanks"]], "end": "."}
+{"sentence": "success", "t": [["ལེགས་འགྲུབ", "lek drup", "success"]], "end": "!"}
+{"sentence": "dont-understand", "t": [["ང", "nga", "i"], ["གོ་མ་སོང", "go ma song", "not+understand"]], "end": "."}
+{"sentence": "dont-know", "t": [["ང", "nga", "i"], ["མི་ཤེས", "mi she", "not+know"]], "end": "."}
+{"sentence": "speak-english", "t": [["ཁྱེད་རང", "khyerang", "you"], ["དབྱིན་སྐད", "yingké", "english"], ["སྐད", "ké", "speak"], ["རེད", "re", "@question"]], "end": "?"}
+{"sentence": "speak-chinese", "t": [["ཁྱེད་རང", "khyerang", "you"], ["རྒྱ་སྐད", "gyaké", "chinese"], ["སྐད", "ké", "speak"], ["རེད", "re", "@question"]], "end": "?"}
+{"sentence": "speak-arabic", "t": [["ཁྱེད་རང", "khyerang", "you"], ["ཨ་རབ་སྐད", "arapké", "arabic"], ["སྐད", "ké", "speak"], ["རེད", "re", "@question"]], "end": "?"}
+{"sentence": "speak-klingon", "t": [["ཁྱེད་རང", "khyerang", "you"], ["ཁྰི་ལིང་གོན་སྐད", "klingonké", "klingon"], ["སྐད", "ké", "speak"], ["རེད", "re", "@question"]], "end": "?"}
+{"sentence": "speak-hindi", "t": [["ང", "nga", "i"], ["ཧིན་དི་སྐད", "hindiké", "hindi"], ["སྐད", "ké", "speak"]], "end": "."}
+{"sentence": "study-korean", "t": [["ང", "nga", "i"], ["ཁོ་རི་ཡ་སྐད", "koryaké", "korean"], ["སྦྱོང", "jong", "study"]], "end": "."}
+{"sentence": "like-sushi", "t": [["ང", "nga", "i"], ["སུ་ཞི", "sushi", "sushi"], ["དགའ", "ga", "like"]], "end": "."}
+{"sentence": "like-coffee", "t": [["ང", "nga", "i"], ["ཀོ་ཕི", "kofi", "coffee"], ["དགའ", "ga", "like"]], "end": "."}
+{"sentence": "like-tea", "t": [["ང", "nga", "i"], ["ཇ", "ja", "tea"], ["དགའ", "ga", "like"]], "end": "."}
+{"sentence": "love-you", "t": [["ང", "nga", "i"], ["ཁྱེད་རང", "khyerang", "you"], ["སེམས་ཤུགས", "sem shuk", "love"]], "end": "."}
+{"sentence": "met-friend", "t": [["ཁ་སང", "kasang", "yesterday"], ["ང", "nga", "i"], ["གྲོགས", "drok", "friend"], ["མཇལ", "jel", "meet+@past"]], "end": "."}
+{"sentence": "my-friend", "t": [["ཁོང", "khong", "he"], ["ངའི", "ngé", "i"], ["གྲོགས", "drok", "friend"]], "end": "."}
+{"sentence": "who-is-he", "t": [["ཁོང", "khong", "he"], ["སུ་རེད", "sured", "who"], ["?", "?", "@question"]], "end": "?"}
+{"sentence": "where-live", "t": [["ཁྱེད་རང", "khyerang", "you"], ["ག་པར", "kapar", "where"], ["སྡོད", "dö", "live"], ["རེད", "re", "@question"]], "end": "?"}
+{"sentence": "from-egypt", "t": [["ང", "nga", "i"], ["ཨི་ཇི་ཕི", "Egypt", "egypt"], ["ནས", "né", "from"], ["ཡིན", "yin", "@copula"]], "end": "."}
+{"sentence": "we-are-klingons", "t": [["ང་ཚོ", "ngatso", "we"], ["ཁྰི་ལིང་གོན", "klingon", "klingon"], ["རེད", "re", "@copula"]], "end": "."}
+{"sentence": "this-is-book", "t": [["འདི", "di", "this"], ["དེབ", "deb", "book"]], "end": "."}
+{"sentence": "this-is-my-book", "t": [["འདི", "di", "this"], ["ངའི", "ngé", "i"], ["དེབ", "deb", "book"]], "end": "."}
+{"sentence": "drink-water", "t": [["ང", "nga", "i"], ["ཆུ", "chu", "water"], ["འཐུང", "thung", "drink"]], "end": "."}
+{"sentence": "drink-tea", "t": [["ང", "nga", "i"], ["ཇ", "ja", "tea"], ["འཐུང", "thung", "drink"]], "end": "."}
+{"sentence": "want-coffee", "t": [["ང", "nga", "i"], ["ཀོ་ཕི", "kofi", "coffee"], ["དགོས", "go", "want"]], "end": "."}
+{"sentence": "read-book", "t": [["ང", "nga", "i"], ["དེབ", "deb", "book"], ["ལྟ", "ta", "read"]], "end": "."}
+{"sentence": "eat-rice", "t": [["ང་ཚོ", "ngatso", "we"], ["འབྲས", "dre", "rice"], ["ཟ", "za", "eat"]], "end": "."}
+{"sentence": "eat-food", "t": [["ང", "nga", "i"], ["ཟས", "sé", "food"], ["ཟ", "za", "eat"]], "end": "."}
+{"sentence": "lunch-restaurant", "t": [["ང", "nga", "i"], ["ཟ་ཁང", "zakang", "restaurant+@place"], ["ཉིན་གུང་ཟས", "nyingung zé", "lunch"], ["ཟ", "za", "eat"]], "end": "."}
+{"sentence": "eat-restaurant", "t": [["ང", "nga", "i"], ["ཟ་ཁང", "zakang", "restaurant+@place"], ["ཟ", "za", "eat"]], "end": "."}
+{"sentence": "hot-today", "t": [["དེ་རིང", "dering", "today"], ["ཚ་པོ", "tspo", "hot"], ["རེད", "re", "@copula"]], "end": "."}
+{"sentence": "cold-today", "t": [["དེ་རིང", "dering", "today"], ["གྲང་མོ", "trangmo", "cold"], ["རེད", "re", "@copula"]], "end": "."}
+{"sentence": "weather-hot", "t": [["དེ་རིང", "dering", "today"], ["གནམ་གཤིས", "namshik", "weather"], ["ཚ་པོ", "tspo", "hot"]], "end": "."}
+{"sentence": "weather-good", "t": [["དེ་རིང", "dering", "today"], ["གནམ་གཤིས", "namshik", "weather"], ["ཡག་པོ", "yakpo", "good"]], "end": "."}
+{"sentence": "raining", "t": [["ཆར་པ", "charpa", "rain"], ["འབབ", "bab", "@happen"], ["བཞིན", "zhin", "@ongoing"], ["འདུག", "duk", "@copula"]], "end": "."}
+{"sentence": "monday", "t": [["དེ་རིང", "dering", "today"], ["གཟའ་ཟླ་བ", "zala", "monday"]], "end": "."}
+{"sentence": "what-time", "t": [["ཆུ་ཚོད", "chutö", "time"], ["ག་ཚོད", "katö", "what+time"], ["རེད", "re", "@question"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["ད་ལྟ", "dta", "now"], ["ཆུ་ཚོད", "chutö", "time"], ["ག་ཚོད", "katö", "what+time"], ["རེད", "re", "@question"]], "end": "?"}
+{"sentence": "no-time", "t": [["དུས་ཚོད", "dutö", "time"], ["མེད", "méd", "none"]], "end": "."}
+{"sentence": "there-is-cat", "t": [["ཞི་མ", "zhima", "cat"], ["འདུག", "duk", "exist"]], "end": "."}
+{"sentence": "have-cat", "t": [["ང", "nga", "i"], ["ཞི་མ", "zhima", "cat"], ["ཡོད", "yö", "have"]], "end": "."}
+{"sentence": "book-on-table", "t": [["ཅོག་ཙེ", "tsoktsé", "table"], ["སྟེང", "teng", "on"], ["དེབ", "deb", "book"], ["ཡོད", "yö", "exist"]], "end": "."}
+{"sentence": "house-big", "t": [["ཁང་པ", "kangpa", "house"], ["ཆེན་པོ", "chenpo", "big"]], "end": "."}
+{"sentence": "car-new", "t": [["མོ་ཊ", "mot", "car"], ["གསར་པ", "sarwa", "new"]], "end": "."}
+{"sentence": "delicious", "t": [["ཞིམ་པོ", "zimpo", "delicious"]], "end": "."}
+{"sentence": "food-tasty", "t": [["ཟས", "sé", "food"], ["ཧ་ཅང", "hatsang", "very"], ["ཞིམ་པོ", "zimpo", "delicious"]], "end": "."}
+{"sentence": "head-hurts", "t": [["ངའི", "ngé", "i"], ["མགོ", "go", "head"], ["ན་བ", "nawa", "hurt"]], "end": "."}
+{"sentence": "hungry", "t": [["ང", "nga", "i"], ["སྟོས", "tö", "hungry"], ["རེད", "re", "@copula"]], "end": "."}
+{"sentence": "give-water", "t": [["ཞུ་གནང", "zhunang", "please"], ["ང", "nga", "i"], ["ཆུ", "chu", "water"], ["སྟེར", "ter", "give"]], "end": "."}
+{"sentence": "wait-moment", "t": [["ཞུ་གནང", "zhunang", "please"], ["སྐར་ཆ", "karcha", "moment"], ["སྒུག", "guk", "wait"]], "end": "."}
+{"sentence": "sit-down", "t": [["ཞུ་གནང", "zhunang", "please"], ["འདུག", "dug", "sit"]], "end": "."}
+{"sentence": "where-station", "t": [["འགྲུལ་འཁྱེར", "drulkyer", "station"], ["ག་པར", "kapar", "where"], ["ཡོད", "yö", "@copula"]], "end": "?"}
+{"sentence": "where-toilet", "t": [["གཙང་སྦྲ", "tsangdra", "toilet"], ["ག་པར", "kapar", "where"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["མགྲོན་ཁང", "drönkhang", "hotel"], ["ག་པར", "kapar", "where"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["འདི", "di", "this"], ["ག་ཚོད", "katö", "how-much"], ["རེད", "re", "@question"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["ག་ཚོད", "katö", "how-much"], ["རེད", "re", "@question"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["གོང་ཚད", "gongtsé", "cost"], ["ག་ཚོད", "katö", "how-much"], ["རེད", "re", "@question"]], "end": "?"}
+{"sentence": "bill-please", "t": [["རྩིས་ཕྲ", "tsidrong", "bill"], ["ཞུ་གནང", "zhunang", "please"]], "end": "."}
+{"sentence": "go-school", "t": [["ང", "nga", "i"], ["སློབ་གྲྭ", "lobdra", "school"], ["-ར", "r", "@direction"], ["འགྲོ", "dro", "go"]], "end": "."}
+{"sentence": "bus-school", "t": [["ང", "nga", "i"], ["བསྡད", "dé", "bus+@means"], ["སློབ་གྲྭ", "lobdra", "school"], ["-ར", "r", "@direction"], ["འགྲོ", "dro", "go"]], "end": "."}
+{"sentence": "go-tokyo", "t": [["ང", "nga", "i"], ["ཐོ་ཁྱི་ཡོ", "Tokyo", "tokyo"], ["-ར", "r", "@direction"], ["འགྲོ", "dro", "go"], ["དགོས", "go", "want"]], "end": "."}
+{"sentence": "came-train", "t": [["ང", "nga", "i"], ["མེ་འཁོར", "mekhor", "train+@means"], ["ཕེབས", "phep", "come+@past"]], "end": "."}
+{"sentence": "where-going", "t": [["ཁྱེད་རང", "khyerang", "you"], ["ག་པར", "kapar", "where"], ["ཕེབས", "phep", "go"], ["རེད", "re", "@question"]], "end": "?"}
+{"sentence": "going-home", "t": [["ང", "nga", "i"], ["ཁྱིམ", "khim", "home"], ["-ར", "r", "@direction"], ["ཕེབས", "phep", "go"], ["བཞིན", "zhin", "@ongoing"], ["ཡོད", "yö", "@copula"]], "end": "."}
+{"sentence": "we-going-home", "t": [["ང་ཚོ", "ngatso", "we"], ["ཁྱིམ", "khim", "home"], ["-ར", "r", "@direction"], ["ཕེབས", "phep", "go"], ["བཞིན", "zhin", "@ongoing"], ["ཡོད", "yö", "@copula"]], "end": "."}
+{"sentence": "lets-go", "t": [["འགྲོ", "dro", "go+let-us"]], "end": "."}
+{"sentence": "live-moscow", "t": [["ང", "nga", "i"], ["མོ་སི་ཁེ", "Moscow", "moscow+@place"], ["སྡོད", "dö", "live"]], "end": "."}
+{"sentence": "live-cairo", "t": [["ང", "nga", "i"], ["ཀའི་རོ", "Kairo", "cairo+@place"], ["སྡོད", "dö", "live"]], "end": "."}
+{"sentence": "live-beijing", "t": [["ང", "nga", "i"], ["པེ་ཅིང", "Beijing", "beijing+@place"], ["སྡོད", "dö", "live"]], "end": "."}
+{"sentence": "i-sleep", "t": [["ང", "nga", "i"], ["མལ", "mal", "sleep"]], "end": "."}
+{"sentence": "i-fight", "t": [["ང", "nga", "i"], ["རྩོད", "tsö", "fight"]], "end": "."}
+{"sentence": "we-fight", "t": [["ང་ཚོ", "ngatso", "we"], ["རྩོད", "tsö", "fight"]], "end": "."}
+{"sentence": "sleep-command", "t": [["མལ", "mal", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["ཕྲུ་གུ", "trugu", "child"], ["མལ", "mal", "sleep"]], "end": "."}
+{"sentence": "officer-sees-child", "t": [["པ་ལས", "palas", "officer"], ["ཕྲུ་གུ", "trugu", "child"], ["མཐོང", "thong", "see"]], "end": "."}
+{"sentence": "captain-sees-ship", "t": [["གྲ་རྗེ", "dranyé", "captain"], ["གྲུ", "dru", "ship"], ["མཐོང", "thong", "see"]], "end": "."}
+{"sentence": "i-see-ship", "t": [["ང", "nga", "i"], ["གྲུ", "dru", "ship"], ["མཐོང", "thong", "see"]], "end": "."}
+{"sentence": "print-word", "t": [["ཚིག", "tsik", "word"], ["པར", "par", "print"], ["བཏབ", "tap", "print"]], "end": "."}
+{"sentence": "show-number", "t": [["ཨང", "ng", "number"], ["སྟོན", "tön", "print"]], "end": "."}
+{"sentence": "print-screen", "t": [["བརྙན་ཤེལ", "nyenshel", "screen+@place"], ["ཚིག", "tsik", "word"], ["པར", "par", "print"], ["བཏབ", "tap", "print"]], "end": "."}
+{"sentence": "start-loop", "t": [["ལོོཔ", "loop", "loop"], ["འགོ", "go", "start"], ["རྩོམ", "tsom", "start"]], "end": "."}
+{"sentence": "end-loop", "t": [["ལོོཔ", "loop", "loop"], ["མཇུག", "juk", "end"], ["རྫོགས", "dzok", "end"]], "end": "."}
+{"sentence": "repeat-three", "t": [["གསུམ", "sum", "three"], ["ཐེང", "teng", "times"], ["བསྐྱར", "kyar", "repeat"]], "end": "."}
+{"sentence": "count-to-ten", "t": [["གཅིག", "chik", "one"], ["ནས", "né", "from"], ["བཅུ", "chu", "ten"], ["བར", "bar", "@until"], ["རྩིས", "tsi", "count"]], "end": "."}
+{"sentence": "set-value", "t": [["གྲངས", "tsang", "value"], ["སྒྲིག", "drik", "set"]], "end": "."}
+{"sentence": "create-variable", "t": [["གཅིག", "chik", "@one"], ["འགྱུར་བ", "gyurwa", "variable"], ["བཟོ", "zo", "create"]], "end": "."}
+{"sentence": "return-value", "t": [["གྲངས", "tsang", "value"], ["ཕྱིར", "chir", "return"], ["སློག", "lok", "return"]], "end": "."}
+{"sentence": "load-data", "t": [["གཞི", "zhi", "data"], ["འཇུག", "juk", "load"]], "end": "."}
+{"sentence": "add-one", "t": [["གཅིག", "chik", "one"], ["སྣོན", "nön", "add"]], "end": "."}
+{"sentence": "sort-list", "t": [["ཐོ", "tho", "list"], ["སྒྲིག", "drik", "sort"]], "end": "."}
+{"sentence": "run-program", "t": [["བཟོ་ལས", "zolé", "program"], ["འཁོར", "khor", "run"]], "end": "."}
