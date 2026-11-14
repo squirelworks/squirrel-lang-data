@@ -31,42 +31,66 @@ tags are never moved or reused, releases are never deleted.
       rewrites, Hangul stroke fixes.
 - [x] **v0.1.4** (2026-11-05, `d5e05a4`): the code pack and its columns,
       Latin, English and Klingon inflection tables, and the grammar
-      expansion to 72 lessons. LanguageStudentDesk and squirrelator both pin
+      expansion to 72 lessons.
+- [x] **v0.1.5** (2026-11-13, `ffd03a7`): French, German and Italian matrix
+      columns, Latin, Greek and Russian filled to every row, English
+      contractions and `@partitive` (#105, #109), and the Syriac
+      (Estrangela) alphabet (#106). LanguageStudentDesk
+      (squirelworks/LanguageStudentDesk#319) and squirrelator (squirelworks/squirrelator#49) both pin
       this tag.
 
-## Next: v0.1.5
+## Known caveats in v0.1.5
 
-Everything merged since v0.1.4 is collected in `release-notes/v0.1.5.md`: French, German and Italian matrix columns, Latin,
-Greek and Russian filled to every row, English contractions (#105), and
-the Syriac alphabet (#106).
+- **The Syriac strokes are a machine draft** from Noto Sans Syriac. They
+  pass the stroke checks but no person has compared them with a writing
+  primer, and `languages/aramaic/` has no `REVIEW.md` yet.
+- **The new French, German and Italian columns, and the Latin, Greek and
+  Russian fills, were written for this project.** They pass the validators
+  and squirrelator's round trip; no native speaker has reviewed them, and
+  the existing `REVIEW.md` logs for those languages predate them.
 
-It's due when all of these hold and the owner says "release":
+## Next (open, for the next agent)
 
-- [x] New and filled columns, English contractions (#105)
-- [x] Syriac alphabet (#106)
-- [x] CI green on `main`
-- [x] A PR that removes "Draft." from `release-notes/v0.1.5.md` and checks
-      every bullet against what merged, with nothing else in it
-- [ ] **Draft release** run by hand with `v0.1.5`; the owner publishes
-- [ ] Pin-bump PRs in LanguageStudentDesk (with the `data-pin` label) and
-      squirrelator, one each. squirrelator's comes with about 13 test
-      updates (Latin output follows the fuller column); the Desk's adds the
-      new Translation Learner columns and Syriac to SquirrelGo Alphabets.
+No tag is planned yet. Suggested order (the reasons are in
+LanguageStudentDesk `docs/FUTURE-WORK.md`). Open **few, sizeable PRs, one
+theme each, and merge them one after another**; batch several languages in
+one PR where the theme is the same.
 
-## After v0.1.5
+v0.1.6 (PATCH), when the owner wants it:
 
-- [ ] Code-pack columns for the other tested languages (#56)
-- [ ] Fill the meaning-matrix columns that have 20 to 42 of the 89 rows, then
-      add columns for the 22 languages without one (squirrelator#26). Latin,
-      Greek and Russian now render all 103 rows, and French, German and
-      Italian have new full columns; Arabic, Hindi, Hebrew, Thai, Georgian,
-      Armenian, Bengali, Tamil and Klingon are still partial.
-- [x] The Syriac alphabet for Aramaic (LanguageStudentDesk#201): a 22-letter
-      Estrangela course in `alphabets/syriac.json` with drafted strokes
-- [ ] Recorded reviews (`REVIEW.md`) for every language (see `REVIEWING.md`)
-- [ ] v0.2.0 (MINOR): programming courses and keyword maps (`programming/`),
-      character variants (`variants/`) and the first regional and historical
-      varieties (LanguageStudentDesk#200)
+- [ ] Review the 22 Syriac strokes against a published primer, redraw any
+      that are wrong, cite the primer in `SOURCES.md`, and add
+      `languages/aramaic/REVIEW.md`.
+- [ ] Fix the 23 characters in LanguageStudentDesk's stroke-check baseline
+      (13 kanji, 8 kana, ㅇ, ⴰ; squirelworks/LanguageStudentDesk#188).
+- [ ] Recorded reviews (`REVIEW.md`) for the languages without one, and a
+      dated entry for the new columns in French, German, Italian, Latin,
+      Greek and Russian (see `REVIEWING.md`; squirelworks/LanguageStudentDesk#198).
+
+v0.1.7 or later (more content, still PATCH or MINOR by size):
+
+- [ ] Fill the partial meaning-matrix columns: Arabic, Hindi, Bengali,
+      Armenian, Georgian, Hebrew, Thai, Tamil and Klingon, plus Klingon's
+      code-pack rows (#56 is closed; tracked in squirelworks/squirrelator#26).
+- [ ] Columns for the 19 languages without one (squirelworks/squirrelator#26). The
+      source-limited ones (Aramaic, Cherokee, Inuktitut, Manipuri,
+      Tamazight) only from published sources; leave rows empty rather than
+      invent.
+
+v0.2.0 (MINOR):
+
+- [ ] Programming courses and keyword maps (`programming/`), so the
+      Programming Learner and squirrelator's code generators share them
+      (squirelworks/LanguageStudentDesk#195, #196).
+- [ ] Character variants (`variants/`) from Unihan, with traditional and
+      simplified Chinese linked both ways (squirelworks/LanguageStudentDesk#200).
+- [ ] The first regional variety end to end: Cantonese (Jyutping)
+      (squirelworks/LanguageStudentDesk#200).
+- [ ] Serto and Madnhaya Syriac shapes, after the Estrangela review
+      (squirelworks/LanguageStudentDesk#201).
+
+After each tag: one pin-bump PR in LanguageStudentDesk (with the `data-pin`
+label), then one in squirrelator.
 
 `main` stays open between releases. LanguageStudentDesk and squirrelator move
 their `data/` pin only to a tagged release, never to an untagged commit, and

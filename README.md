@@ -130,4 +130,6 @@ Every change goes through a pull request. See `AGENTS.md` and
 - The platform roadmap is LanguageStudentDesk issue
   [#199](https://github.com/squirelworks/LanguageStudentDesk/issues/199), and
   its [`docs/HANDOFF.md`](https://github.com/squirelworks/LanguageStudentDesk/blob/main/docs/HANDOFF.md)
-  says what's in flight and on hold across all three repos.
+  says what's in flight and on hold across all three repos. Its
+  [`docs/FUTURE-WORK.md`](https://github.com/squirelworks/LanguageStudentDesk/blob/main/docs/FUTURE-WORK.md)
+  has the suggested order for what's next, known caveats and risks.
