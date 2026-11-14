@@ -1,32 +1,67 @@
-{"schema": "columns@1", "language": "armenian", "notes": ["Eastern Armenian column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. The romanization matches languages/armenian (ë is the short “uh”; an apostrophe marks an aspirate). Sentences end with ։; ՞ sits on the stressed vowel of a question word. Verb person is on the helper (եմ / ես / է…), so \"I\" and \"you\" are sometimes implied. Sources: forms match languages/armenian/vocab.js, reference.json phrases, and the Armenian grammar pack (Ես ուսանող եմ, իմ անունը…, Անգլերեն խոսու՞մ եք, չեմ հասկանում, չգիտեմ, Ես սուրճ եմ խմում, Զուգարանը որտե՞ղ է, Ինչքա՞ն արժե, հաշիվը խնդրեմ, բարի լույս)."], "sep": " "}
+{"schema": "columns@1", "language": "armenian", "notes": ["Eastern Armenian column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. The romanization matches languages/armenian (ë is the short “uh”; an apostrophe marks an aspirate). Sentences end with ։; ՞ sits on the stressed vowel of a question word. Verb person is on the helper (եմ / ես / է…), so \"I\" and \"you\" are sometimes implied. Sources: forms match languages/armenian/vocab.js, reference.json phrases, and the Armenian grammar pack (Ես ուսանող եմ, իմ անունը…, Անգլերեն խոսու՞մ եք, չեմ հասկանում, չգիտեմ, Ես սուրճ եմ խմում, Զուգարանը որտե՞ղ է, Ինչքա՞ն արժե, հաշիվը խնդրեմ, բարի լույս). Forms match languages/armenian/vocab.jsonl where a card exists; other lemmas follow Eastern Armenian (Wiktionary CC BY-SA 4.0 consulted for spelling and romanization)."], "sep": " "}
 {"sentence": "i-am-student", "t": [["Ես", "yes", "i"], ["ուսանող", "usanogh", "student"], ["եմ", "em", "@copula"]], "end": "։"}
+{"sentence": "name-tanaka", "t": [["Իմ", "im", "i"], ["անունը", "anunë", "name"], ["Տանակա", "Tanaka", "tanaka"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "name-minjun", "t": [["Իմ", "im", "i"], ["անունը", "anunë", "name"], ["Մինջուն", "Minjun", "minjun"], ["է", "e", "@copula"]], "end": "։"}
 {"sentence": "name-anna", "t": [["Իմ", "im", "i"], ["անունը", "anunë", "name"], ["Աննա", "Anna", "anna"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "name-ravi", "t": [["Իմ", "im", "i"], ["անունը", "anunë", "name"], ["Ռավի", "Ravi", "ravi"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "name-sami", "t": [["Իմ", "im", "i"], ["անունը", "anunë", "name"], ["Սամի", "Sami", "sami"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "name-wang-ming", "t": [["Իմ", "im", "i"], ["անունը", "anunë", "name"], ["Վանգ Մինգ", "Vang Ming", "wang-ming"], ["է", "e", "@copula"]], "end": "։"}
 {"sentence": "your-name", "t": [["Ձեր", "dzer", "you"], ["անունն", "anunn", "name"], ["ի՞նչ", "inch", "what"], ["է", "e", "@copula"]], "end": "։"}
 {"sentence": "hello", "t": [["Բարև", "barev", "hello"]], "end": "։"}
 {"sentence": "nice-to-meet-you", "t": [["Շատ ուրախ եմ", "shat urakh em", "nice-to-meet-you"]], "end": "։"}
 {"sentence": "good-morning", "t": [["Բարի լույս", "bari luys", "good+morning"]], "end": "։"}
 {"sentence": "thank-you", "t": [["Շնորհակալություն", "shnorhakalut'yun", "thanks"]], "end": "։"}
 {"sentence": "thank-you-very-much", "t": [["Շատ", "shat", "very-much"], ["շնորհակալություն", "shnorhakalut'yun", "thanks"]], "end": "։"}
+{"sentence": "success", "t": [["Հաջողություն", "hajoghut'yun", "success"]], "end": "!"}
 {"sentence": "dont-understand", "t": [["Ես", "yes", "i"], ["չեմ", "chem", "not"], ["հասկանում", "haskanum", "understand"]], "end": "։"}
 {"sentence": "dont-know", "t": [["Չգիտեմ", "chgitem", "not+know"]], "implied": ["i"], "end": "։"}
 {"sentence": "speak-english", "t": [["Անգլերեն", "angleren", "english"], ["խոսու՞մ", "khosum", "speak"], ["եք", "ek'", "@copula"]], "implied": ["you"], "end": "։"}
+{"sentence": "speak-chinese", "t": [["Չինարեն", "ch'inaren", "chinese"], ["խոսու՞մ", "khosum", "speak"], ["եք", "ek'", "@copula"]], "implied": ["you"], "end": "։"}
+{"sentence": "speak-arabic", "t": [["Արաբերեն", "araberën", "arabic"], ["խոսու՞մ", "khosum", "speak"], ["եք", "ek'", "@copula"]], "implied": ["you"], "end": "։"}
+{"sentence": "speak-klingon", "t": [["Կլինգոներեն", "klingonerën", "klingon"], ["խոսու՞մ", "khosum", "speak"], ["եք", "ek'", "@copula"]], "implied": ["you"], "end": "։"}
+{"sentence": "speak-hindi", "t": [["Ես", "yes", "i"], ["հինդի", "hindi", "hindi"], ["եմ", "em", "@copula"], ["խոսում", "khosum", "speak"]], "end": "։"}
+{"sentence": "study-korean", "t": [["Ես", "yes", "i"], ["կորեերեն", "koreeren", "korean"], ["եմ", "em", "@copula"], ["սովորում", "sovorum", "study"]], "end": "։"}
+{"sentence": "like-sushi", "t": [["Ես", "yes", "i"], ["սուշի", "sushi", "sushi"], ["եմ", "em", "@copula"], ["սիրում", "sirum", "like"]], "end": "։"}
 {"sentence": "like-coffee", "t": [["Ես", "yes", "i"], ["սուրճ", "surch", "coffee"], ["եմ", "em", "@copula"], ["սիրում", "sirum", "like"]], "end": "։"}
 {"sentence": "like-tea", "t": [["Ես", "yes", "i"], ["թեյ", "t'ey", "tea"], ["եմ", "em", "@copula"], ["սիրում", "sirum", "like"]], "end": "։"}
+{"sentence": "love-you", "t": [["Ես", "yes", "i"], ["քեզ", "k'ez", "you"], ["սիրում", "sirum", "love"], ["եմ", "em", "@copula"]], "end": "։"}
+{"sentence": "met-friend", "t": [["Ես", "yes", "i"], ["երեկ", "yerek", "yesterday"], ["ընկերոջս", "ënkerodzs", "friend"], ["հանդիպեցի", "handipets'i", "meet+@past"]], "end": "։"}
 {"sentence": "my-friend", "t": [["Նա", "na", "he"], ["իմ", "im", "i"], ["ընկերն", "ënkern", "friend"], ["է", "e", "@copula"]], "end": "։"}
 {"sentence": "who-is-he", "t": [["Ո՞վ", "vov", "who"], ["է", "e", "@copula"], ["նա", "na", "he"]], "end": "։"}
 {"sentence": "where-live", "t": [["Որտե՞ղ", "vortegh", "where"], ["ես", "es", "@copula"], ["ապրում", "aprum", "live"]], "implied": ["you"], "end": "։"}
+{"sentence": "from-egypt", "t": [["Ես", "yes", "i"], ["Եգիպտոսից", "Yegiptosits'", "egypt+from"], ["եմ", "em", "@copula"]], "end": "։"}
+{"sentence": "we-are-klingons", "t": [["Մենք", "menk'", "we"], ["կլինգոններ", "klingonner", "klingon"], ["ենք", "enk'", "@copula"]], "end": "։"}
 {"sentence": "this-is-book", "t": [["Սա", "sa", "this"], ["գիրք", "girk'", "book"], ["է", "e", "@copula"]], "end": "։"}
 {"sentence": "this-is-my-book", "t": [["Սա", "sa", "this"], ["իմ", "im", "i"], ["գիրքն", "girk'n", "book"], ["է", "e", "@copula"]], "end": "։"}
 {"sentence": "drink-water", "t": [["Ես", "yes", "i"], ["ջուր", "jur", "water"], ["եմ", "em", "@copula"], ["խմում", "khmum", "drink"]], "end": "։"}
 {"sentence": "drink-tea", "t": [["Ես", "yes", "i"], ["թեյ", "t'ey", "tea"], ["եմ", "em", "@copula"], ["խմում", "khmum", "drink"]], "end": "։"}
 {"sentence": "want-coffee", "t": [["Ես", "yes", "i"], ["սուրճ", "surch", "coffee"], ["եմ", "em", "@copula"], ["ուզում", "uzum", "want"]], "end": "։"}
 {"sentence": "read-book", "t": [["Ես", "yes", "i"], ["գիրք", "girk'", "book"], ["եմ", "em", "@copula"], ["կարդում", "kardum", "read"]], "end": "։"}
+{"sentence": "eat-rice", "t": [["Մենք", "menk'", "we"], ["բրինձ", "brindz", "rice"], ["ենք", "enk'", "@copula"], ["ուտում", "utum", "eat"]], "end": "։"}
+{"sentence": "eat-food", "t": [["Ես", "yes", "i"], ["ուտելիքը", "utelik'ë", "food"], ["եմ", "em", "@copula"], ["ուտում", "utum", "eat"]], "end": "։"}
+{"sentence": "lunch-restaurant", "t": [["Ես", "yes", "i"], ["ռեստորանում", "restoranum", "restaurant+@place"], ["ճաշ", "chash", "lunch"], ["եմ", "em", "@copula"], ["ուտում", "utum", "eat"]], "end": "։"}
+{"sentence": "eat-restaurant", "t": [["Ես", "yes", "i"], ["ռեստորանում", "restoranum", "restaurant+@place"], ["եմ", "em", "@copula"], ["ուտում", "utum", "eat"]], "end": "։"}
 {"sentence": "hot-today", "t": [["Այսօր", "aysor", "today"], ["տաք", "tak'", "hot"], ["է", "e", "@copula"]], "end": "։"}
 {"sentence": "cold-today", "t": [["Այսօր", "aysor", "today"], ["սառը", "sarë", "cold"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "weather-hot", "t": [["Այսօր", "aysor", "today"], ["եղանակը", "yeghanakë", "weather"], ["տաք", "tak'", "hot"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "weather-good", "t": [["Այսօր", "aysor", "today"], ["եղանակը", "yeghanakë", "weather"], ["լավ", "lav", "good"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "raining", "t": [["Անձրև", "andzrev", "rain"], ["է", "e", "@copula"], ["գալիս", "galis", "@happen"]], "end": "։"}
+{"sentence": "monday", "t": [["Այսօր", "aysor", "today"], ["երկուշաբթի", "yerkushabt'i", "monday"], ["է", "e", "@copula"]], "end": "։"}
 {"sentence": "what-time", "t": [["Ժամը", "zhamë", "time"], ["քանի՞սն", "k'anisn", "what"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "what-time-now", "t": [["Հիմա", "hima", "now"], ["ժամը", "zhamë", "time"], ["քանի՞սն", "k'anisn", "what"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "no-time", "t": [["Ժամանակ", "zhamanak", "time"], ["չկա", "ch'ka", "none"]], "end": "։"}
+{"sentence": "there-is-cat", "t": [["Կա", "ka", "exist"], ["մի", "mi", "@one"], ["կատու", "katu", "cat"]], "end": "։"}
+{"sentence": "have-cat", "t": [["Ես", "yes", "i"], ["կատու", "katu", "cat"], ["ունեմ", "unem", "have"]], "end": "։"}
+{"sentence": "book-on-table", "t": [["Սեղանին", "seghanin", "table+on"], ["գիրք", "girk'", "book"], ["կա", "ka", "exist"]], "end": "։"}
 {"sentence": "house-big", "t": [["Տունը", "tunë", "house"], ["մեծ", "mets", "big"], ["է", "e", "@copula"]], "end": "։"}
 {"sentence": "car-new", "t": [["Մեքենան", "mek'enan", "car"], ["նոր", "nor", "new"], ["է", "e", "@copula"]], "end": "։"}
 {"sentence": "delicious", "t": [["Համեղ", "hamegh", "delicious"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "food-tasty", "t": [["Ուտելիքը", "utelik'ë", "food"], ["շատ", "shat", "very"], ["համեղ", "hamegh", "delicious"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "head-hurts", "t": [["Իմ", "im", "i"], ["գլուխս", "glukhës", "head"], ["ցավում", "ts'avum", "hurt"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "hungry", "t": [["Ես", "yes", "i"], ["սոված", "sovats", "hungry"], ["եմ", "em", "@copula"]], "end": "։"}
+{"sentence": "give-water", "t": [["Խնդրեմ", "khndrem", "please"], ["ինձ", "indz", "i"], ["ջուր", "jur", "water"], ["տվեք", "tvek'", "give"]], "end": "։"}
+{"sentence": "wait-moment", "t": [["Խնդրեմ", "khndrem", "please"], ["մի", "mi", "@one"], ["պահ", "pah", "moment"], ["սպասեք", "spasek'", "wait"]], "end": "։"}
+{"sentence": "sit-down", "t": [["Խնդրեմ", "khndrem", "please"], ["նստեք", "nstek'", "sit"]], "end": "։"}
 {"sentence": "where-station", "t": [["Կայարանը", "kayaranë", "station"], ["որտե՞ղ", "vortegh", "where"], ["է", "e", "@copula"]], "end": "։"}
 {"sentence": "where-toilet", "t": [["Զուգարանը", "zugaranë", "toilet"], ["որտե՞ղ", "vortegh", "where"], ["է", "e", "@copula"]], "end": "։"}
 {"sentence": "where-hotel", "t": [["Հյուրանոցը", "hyuranots'ë", "hotel"], ["որտե՞ղ", "vortegh", "where"], ["է", "e", "@copula"]], "end": "։"}
@@ -35,9 +70,24 @@
 {"sentence": "how-much-cost", "t": [["Ինչքա՞ն", "inchk'an", "how-much"], ["արժե", "arzhe", "cost"]], "end": "։"}
 {"sentence": "bill-please", "t": [["Հաշիվը", "hashivë", "bill"], ["խնդրեմ", "khndrem", "please"]], "end": "։"}
 {"sentence": "go-school", "t": [["Ես", "yes", "i"], ["դպրոց", "dprots'", "school"], ["եմ", "em", "@copula"], ["գնում", "gnum", "go"]], "end": "։"}
+{"sentence": "bus-school", "t": [["Ես", "yes", "i"], ["ավտոբուսով", "avtobusov", "bus+@means"], ["դպրոց", "dprots'", "school"], ["եմ", "em", "@copula"], ["գնում", "gnum", "go"]], "end": "։"}
+{"sentence": "go-tokyo", "t": [["Ես", "yes", "i"], ["Տոկիո", "Tokio", "tokyo"], ["եմ", "em", "@copula"], ["ուզում", "uzum", "want"], ["գնալ", "gnal", "go"]], "end": "։"}
+{"sentence": "came-train", "t": [["Ես", "yes", "i"], ["գնացքով", "gnats'k'ov", "train+@means"], ["եկա", "yeka", "come+@past"]], "end": "։"}
+{"sentence": "where-going", "t": [["Որտե՞ղ", "vortegh", "where"], ["ես", "es", "@copula"], ["գնում", "gnum", "go"]], "implied": ["you"], "end": "։"}
 {"sentence": "going-home", "t": [["Ես", "yes", "i"], ["տուն", "tun", "home"], ["եմ", "em", "@copula"], ["գնում", "gnum", "go"]], "end": "։"}
 {"sentence": "we-going-home", "t": [["Մենք", "menk'", "we"], ["տուն", "tun", "home"], ["ենք", "enk'", "@copula"], ["գնում", "gnum", "go"]], "end": "։"}
-{"sentence": "where-going", "t": [["Որտե՞ղ", "vortegh", "where"], ["ես", "es", "@copula"], ["գնում", "gnum", "go"]], "implied": ["you"], "end": "։"}
+{"sentence": "lets-go", "t": [["Եկեք", "yekek'", "let-us"], ["գնանք", "gnank'", "go"]], "end": "։"}
+{"sentence": "live-moscow", "t": [["Ես", "yes", "i"], ["Մոսկվայում", "Moskvayum", "moscow+@place"], ["եմ", "em", "@copula"], ["ապրում", "aprum", "live"]], "end": "։"}
+{"sentence": "live-cairo", "t": [["Ես", "yes", "i"], ["Կահիրեում", "Kahireum", "cairo+@place"], ["եմ", "em", "@copula"], ["ապրում", "aprum", "live"]], "end": "։"}
+{"sentence": "live-beijing", "t": [["Ես", "yes", "i"], ["Պեկինում", "Pekinum", "beijing+@place"], ["եմ", "em", "@copula"], ["ապրում", "aprum", "live"]], "end": "։"}
+{"sentence": "i-sleep", "t": [["Ես", "yes", "i"], ["քնում", "k'num", "sleep"], ["եմ", "em", "@copula"]], "end": "։"}
+{"sentence": "i-fight", "t": [["Ես", "yes", "i"], ["կռվում", "krrvum", "fight"], ["եմ", "em", "@copula"]], "end": "։"}
+{"sentence": "we-fight", "t": [["Մենք", "menk'", "we"], ["կռվում", "krrvum", "fight"], ["ենք", "enk'", "@copula"]], "end": "։"}
+{"sentence": "sleep-command", "t": [["Քնիր", "k'nir", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["Երեխան", "yerekhan", "child"], ["քնում", "k'num", "sleep"], ["է", "e", "@copula"]], "end": "։"}
+{"sentence": "officer-sees-child", "t": [["Սպան", "span", "officer"], ["տեսնում", "tesnum", "see"], ["է", "e", "@copula"], ["երեխային", "yerekhayin", "child"]], "end": "։"}
+{"sentence": "captain-sees-ship", "t": [["Նավապետը", "navapetë", "captain"], ["տեսնում", "tesnum", "see"], ["է", "e", "@copula"], ["նավը", "navë", "ship"]], "end": "։"}
+{"sentence": "i-see-ship", "t": [["Ես", "yes", "i"], ["տեսնում", "tesnum", "see"], ["եմ", "em", "@copula"], ["նավը", "navë", "ship"]], "end": "։"}
 {"sentence": "print-word", "t": [["Տպիր", "tpir", "print"], ["բառը", "barë", "word"]], "end": "։"}
 {"sentence": "show-number", "t": [["Ցույց տուր", "ts'uyts' tur", "print"], ["թիվը", "t'ivë", "number"]], "end": "։"}
 {"sentence": "print-screen", "t": [["Տպիր", "tpir", "print"], ["բառը", "barë", "word"], ["էկրանին", "ekranin", "screen+@place"]], "end": "։"}

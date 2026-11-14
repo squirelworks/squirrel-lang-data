@@ -1,40 +1,93 @@
-{"schema": "columns@1", "language": "bengali", "notes": ["Bengali column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. The romanization matches the simplified scheme in languages/bengali (o for the inherent vowel; ch, th, kh for aspirates). Sources: forms match languages/bengali/vocab.js and the Bengali grammar pack (আমি ছাত্র, এটা আমার বই, আমি বুঝি না, আমি জানি না, আপনি কি ইংরেজি বলেন, আপনার নাম কী, বাথরুম কোথায়, এটার দাম কত, আমি ভাত খাই, তুমি কোথায় থাকো, আমি স্কুলে যাই, আমার … আছে)."], "sep": " "}
+{"schema": "columns@1", "language": "bengali", "notes": ["Bengali column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. The romanization matches the simplified scheme in languages/bengali (o for the inherent vowel; ch, th, kh for aspirates). Sources: forms match languages/bengali/vocab.js and the Bengali grammar pack (আমি ছাত্র, এটা আমার বই, আমি বুঝি না, আমি জানি না, আপনি কি ইংরেজি বলেন, আপনার নাম কী, বাথরুম কোথায়, এটার দাম কত, আমি ভাত খাই, তুমি কোথায় থাকো, আমি স্কুলে যাই, আমার … আছে). Forms match languages/bengali/vocab.jsonl where a card exists; other lemmas follow standard Bangla (Wiktionary CC BY-SA 4.0 consulted for spelling and romanization)."], "sep": " "}
 {"sentence": "i-am-student", "t": [["আমি", "ami", "i"], ["ছাত্র", "chhatro", "student"]], "end": "।"}
+{"sentence": "name-tanaka", "t": [["আমার", "amar", "i"], ["নাম", "nam", "name"], ["তানাকা", "Tanaka", "tanaka"]], "end": "।"}
+{"sentence": "name-minjun", "t": [["আমার", "amar", "i"], ["নাম", "nam", "name"], ["মিনজুন", "Minjun", "minjun"]], "end": "।"}
 {"sentence": "name-anna", "t": [["আমার", "amar", "i"], ["নাম", "nam", "name"], ["অ্যানা", "Aena", "anna"]], "end": "।"}
 {"sentence": "name-ravi", "t": [["আমার", "amar", "i"], ["নাম", "nam", "name"], ["রবি", "Robi", "ravi"]], "end": "।"}
+{"sentence": "name-sami", "t": [["আমার", "amar", "i"], ["নাম", "nam", "name"], ["সামি", "Sami", "sami"]], "end": "।"}
+{"sentence": "name-wang-ming", "t": [["আমার", "amar", "i"], ["নাম", "nam", "name"], ["ওয়াং মিং", "Wang Ming", "wang-ming"]], "end": "।"}
 {"sentence": "your-name", "t": [["আপনার", "apnar", "you"], ["নাম", "nam", "name"], ["কী", "ki", "what"]], "end": "?"}
 {"sentence": "hello", "t": [["নমস্কার", "nomoshkar", "hello"]], "end": "।"}
+{"sentence": "nice-to-meet-you", "t": [["আপনার সঙ্গে দেখা হয়ে খুশি হলাম", "apnar shonge dekha hoye khushi holam", "nice-to-meet-you"]], "end": "।"}
+{"sentence": "good-morning", "t": [["শুভ", "shubho", "good"], ["সকাল", "shokal", "morning"]], "end": "।"}
 {"sentence": "thank-you", "t": [["ধন্যবাদ", "dhonnobad", "thanks"]], "end": "।"}
+{"sentence": "thank-you-very-much", "t": [["অনেক", "onek", "very-much"], ["ধন্যবাদ", "dhonnobad", "thanks"]], "end": "।"}
+{"sentence": "success", "t": [["সাফল্য", "shafollo", "success"]], "end": "!"}
 {"sentence": "dont-understand", "t": [["আমি", "ami", "i"], ["বুঝি", "bujhi", "understand"], ["না", "na", "not"]], "end": "।"}
 {"sentence": "dont-know", "t": [["আমি", "ami", "i"], ["জানি", "jani", "know"], ["না", "na", "not"]], "end": "।"}
 {"sentence": "speak-english", "t": [["আপনি", "apni", "you"], ["কি", "ki", "@question"], ["ইংরেজি", "ingreji", "english"], ["বলেন", "bolen", "speak"]], "end": "?"}
+{"sentence": "speak-chinese", "t": [["আপনি", "apni", "you"], ["কি", "ki", "@question"], ["চীনা", "china", "chinese"], ["বলেন", "bolen", "speak"]], "end": "?"}
+{"sentence": "speak-arabic", "t": [["আপনি", "apni", "you"], ["কি", "ki", "@question"], ["আরবি", "arbi", "arabic"], ["বলেন", "bolen", "speak"]], "end": "?"}
+{"sentence": "speak-klingon", "t": [["আপনি", "apni", "you"], ["কি", "ki", "@question"], ["ক্লিনগন", "klingon", "klingon"], ["বলেন", "bolen", "speak"]], "end": "?"}
+{"sentence": "speak-hindi", "t": [["আমি", "ami", "i"], ["হিন্দি", "hindi", "hindi"], ["বলি", "boli", "speak"]], "end": "।"}
+{"sentence": "study-korean", "t": [["আমি", "ami", "i"], ["কোরিয়ান", "korean", "korean"], ["পড়ি", "pori", "study"]], "end": "।"}
+{"sentence": "like-sushi", "t": [["আমার", "amar", "i"], ["সুশি", "sushi", "sushi"], ["ভালো", "bhalo", "like"], ["লাগে", "lage", "@happen"]], "end": "।"}
+{"sentence": "like-coffee", "t": [["আমার", "amar", "i"], ["কফি", "kofi", "coffee"], ["ভালো", "bhalo", "like"], ["লাগে", "lage", "@happen"]], "end": "।"}
+{"sentence": "like-tea", "t": [["আমার", "amar", "i"], ["চা", "cha", "tea"], ["ভালো", "bhalo", "like"], ["লাগে", "lage", "@happen"]], "end": "।"}
 {"sentence": "love-you", "t": [["আমি", "ami", "i"], ["তোমাকে", "tomake", "you"], ["ভালোবাসি", "bhalobashi", "love"]], "end": "।"}
+{"sentence": "met-friend", "t": [["আমি", "ami", "i"], ["কাল", "kal", "yesterday"], ["একজন", "ekjon", "@one"], ["বন্ধুর", "bondhur", "friend"], ["সঙ্গে", "shonge", "@place"], ["দেখা করেছিলাম", "dekha korechhilam", "meet+@past"]], "end": "।"}
 {"sentence": "my-friend", "t": [["সে", "she", "he"], ["আমার", "amar", "i"], ["বন্ধু", "bondhu", "friend"]], "end": "।"}
 {"sentence": "who-is-he", "t": [["সে", "she", "he"], ["কে", "ke", "who"]], "end": "?"}
 {"sentence": "where-live", "t": [["আপনি", "apni", "you"], ["কোথায়", "kothay", "where"], ["থাকেন", "thaken", "live"]], "end": "?"}
+{"sentence": "from-egypt", "t": [["আমি", "ami", "i"], ["মিশর", "Mishor", "egypt"], ["থেকে", "theke", "from"], ["এসেছি", "eshechi", "@copula"]], "end": "।"}
+{"sentence": "we-are-klingons", "t": [["আমরা", "amra", "we"], ["ক্লিনগন", "klingon", "klingon"]], "end": "।"}
 {"sentence": "this-is-book", "t": [["এটা", "eta", "this"], ["বই", "boi", "book"]], "end": "।"}
 {"sentence": "this-is-my-book", "t": [["এটা", "eta", "this"], ["আমার", "amar", "i"], ["বই", "boi", "book"]], "end": "।"}
 {"sentence": "drink-water", "t": [["আমি", "ami", "i"], ["জল", "jol", "water"], ["খাই", "khai", "drink"]], "end": "।"}
 {"sentence": "drink-tea", "t": [["আমি", "ami", "i"], ["চা", "cha", "tea"], ["খাই", "khai", "drink"]], "end": "।"}
+{"sentence": "want-coffee", "t": [["আমি", "ami", "i"], ["কফি", "kofi", "coffee"], ["চাই", "chai", "want"]], "end": "।"}
 {"sentence": "read-book", "t": [["আমি", "ami", "i"], ["বই", "boi", "book"], ["পড়ি", "pori", "read"]], "end": "।"}
 {"sentence": "eat-rice", "t": [["আমরা", "amra", "we"], ["ভাত", "bhat", "rice"], ["খাই", "khai", "eat"]], "end": "।"}
+{"sentence": "eat-food", "t": [["আমি", "ami", "i"], ["খাবার", "khabar", "food"], ["খাই", "khai", "eat"]], "end": "।"}
+{"sentence": "lunch-restaurant", "t": [["আমি", "ami", "i"], ["রেস্তোরাঁয়", "restoray", "restaurant+@place"], ["দুপুরের খাবার", "dupurer khabar", "lunch"], ["খাই", "khai", "eat"]], "end": "।"}
+{"sentence": "eat-restaurant", "t": [["আমি", "ami", "i"], ["রেস্তোরাঁয়", "restoray", "restaurant+@place"], ["খাই", "khai", "eat"]], "end": "।"}
 {"sentence": "hot-today", "t": [["আজ", "aj", "today"], ["গরম", "gorom", "hot"]], "end": "।"}
 {"sentence": "cold-today", "t": [["আজ", "aj", "today"], ["ঠান্ডা", "thanda", "cold"]], "end": "।"}
-{"sentence": "have-cat", "t": [["আমার", "amar", "i"], ["একটা", "ekta", "@one"], ["বিড়াল", "biral", "cat"], ["আছে", "achhe", "have"]], "end": "।"}
+{"sentence": "weather-hot", "t": [["আজ", "aj", "today"], ["আবহাওয়া", "abohaoa", "weather"], ["গরম", "gorom", "hot"]], "end": "।"}
+{"sentence": "weather-good", "t": [["আজ", "aj", "today"], ["আবহাওয়া", "abohaoa", "weather"], ["ভালো", "bhalo", "good"]], "end": "।"}
+{"sentence": "raining", "t": [["বৃষ্টি", "brishti", "rain"], ["হচ্ছে", "hochchhe", "@happen"]], "end": "।"}
+{"sentence": "monday", "t": [["আজ", "aj", "today"], ["সোমবার", "shombar", "monday"]], "end": "।"}
+{"sentence": "what-time", "t": [["কয়টা", "koyta", "what"], ["বাজে", "baje", "time"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["এখন", "ekhon", "now"], ["কয়টা", "koyta", "what"], ["বাজে", "baje", "time"]], "end": "?"}
 {"sentence": "no-time", "t": [["সময়", "somoy", "time"], ["নেই", "nei", "none"]], "end": "।"}
+{"sentence": "there-is-cat", "t": [["একটা", "ekta", "@one"], ["বিড়াল", "biral", "cat"], ["আছে", "achhe", "exist"]], "end": "।"}
+{"sentence": "have-cat", "t": [["আমার", "amar", "i"], ["একটা", "ekta", "@one"], ["বিড়াল", "biral", "cat"], ["আছে", "achhe", "have"]], "end": "।"}
+{"sentence": "book-on-table", "t": [["টেবিলে", "tebile", "table+on"], ["একটা", "ekta", "@one"], ["বই", "boi", "book"], ["আছে", "achhe", "exist"]], "end": "।"}
 {"sentence": "house-big", "t": [["বাড়ি", "bari", "house"], ["বড়", "boro", "big"]], "end": "।"}
 {"sentence": "car-new", "t": [["গাড়ি", "gari", "car"], ["নতুন", "notun", "new"]], "end": "।"}
 {"sentence": "delicious", "t": [["সুস্বাদু", "susbadu", "delicious"]], "end": "।"}
 {"sentence": "food-tasty", "t": [["খাবার", "khabar", "food"], ["খুব", "khub", "very"], ["সুস্বাদু", "susbadu", "delicious"]], "end": "।"}
+{"sentence": "head-hurts", "t": [["আমার", "amar", "i"], ["মাথা", "matha", "head"], ["ব্যথা", "betha", "hurt"], ["করছে", "korchhe", "@happen"]], "end": "।"}
+{"sentence": "hungry", "t": [["আমার", "amar", "i"], ["ক্ষুধা", "khudha", "hungry"], ["পেয়েছে", "peyechhe", "@happen"]], "end": "।"}
 {"sentence": "give-water", "t": [["দয়া করে", "doya kore", "please"], ["আমাকে", "amake", "i"], ["জল", "jol", "water"], ["দিন", "din", "give"]], "end": "।"}
+{"sentence": "wait-moment", "t": [["দয়া করে", "doya kore", "please"], ["একটু", "ektu", "@one"], ["অপেক্ষা করুন", "opekkha korun", "wait+moment"]], "end": "।"}
+{"sentence": "sit-down", "t": [["দয়া করে", "doya kore", "please"], ["বসুন", "boshun", "sit"]], "end": "।"}
 {"sentence": "where-station", "t": [["স্টেশন", "steshon", "station"], ["কোথায়", "kothay", "where"]], "end": "?"}
 {"sentence": "where-toilet", "t": [["বাথরুম", "bathrum", "toilet"], ["কোথায়", "kothay", "where"]], "end": "?"}
 {"sentence": "where-hotel", "t": [["হোটেল", "hotel", "hotel"], ["কোথায়", "kothay", "where"]], "end": "?"}
 {"sentence": "how-much-this", "t": [["এটা", "eta", "this"], ["কত", "koto", "how-much"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["কত", "koto", "how-much"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["এটার দাম", "etar dam", "cost"], ["কত", "koto", "how-much"]], "end": "?"}
+{"sentence": "bill-please", "t": [["বিল", "bil", "bill"], ["দয়া করে", "doya kore", "please"]], "end": "।"}
 {"sentence": "go-school", "t": [["আমি", "ami", "i"], ["স্কুল", "skul", "school"], ["-ে", "e", "@direction"], ["যাই", "jai", "go"]], "end": "।"}
+{"sentence": "bus-school", "t": [["আমি", "ami", "i"], ["বাসে", "base", "bus+@means"], ["স্কুল", "skul", "school"], ["-ে", "e", "@direction"], ["যাই", "jai", "go"]], "end": "।"}
+{"sentence": "go-tokyo", "t": [["আমি", "ami", "i"], ["টোকিও", "Tokio", "tokyo"], ["-তে", "te", "@direction"], ["যেতে", "jete", "go"], ["চাই", "chai", "want"]], "end": "।"}
+{"sentence": "came-train", "t": [["আমি", "ami", "i"], ["ট্রেনে", "trene", "train+@means"], ["এসেছি", "eshechi", "come+@past"]], "end": "।"}
+{"sentence": "where-going", "t": [["তুমি", "tumi", "you"], ["কোথায়", "kothay", "where"], ["যাচ্ছ", "jachchho", "go"]], "end": "?"}
 {"sentence": "going-home", "t": [["আমি", "ami", "i"], ["বাড়ি", "bari", "home"], ["যাই", "jai", "go"]], "end": "।"}
 {"sentence": "we-going-home", "t": [["আমরা", "amra", "we"], ["বাড়ি", "bari", "home"], ["যাই", "jai", "go"]], "end": "।"}
-{"sentence": "where-going", "t": [["তুমি", "tumi", "you"], ["কোথায়", "kothay", "where"], ["যাচ্ছ", "jachchho", "go"]], "end": "?"}
+{"sentence": "lets-go", "t": [["চলো", "cholo", "let-us"], ["যাই", "jai", "go"]], "end": "।"}
+{"sentence": "live-moscow", "t": [["আমি", "ami", "i"], ["মস্কো", "Mosko", "moscow"], ["-তে", "te", "@place"], ["থাকি", "thaki", "live"]], "end": "।"}
+{"sentence": "live-cairo", "t": [["আমি", "ami", "i"], ["কায়রো", "Kairo", "cairo"], ["-তে", "te", "@place"], ["থাকি", "thaki", "live"]], "end": "।"}
+{"sentence": "live-beijing", "t": [["আমি", "ami", "i"], ["বেইজিং", "Beijing", "beijing"], ["-এ", "e", "@place"], ["থাকি", "thaki", "live"]], "end": "।"}
+{"sentence": "i-sleep", "t": [["আমি", "ami", "i"], ["ঘুমাই", "ghumai", "sleep"]], "end": "।"}
+{"sentence": "i-fight", "t": [["আমি", "ami", "i"], ["লড়ি", "lori", "fight"]], "end": "।"}
+{"sentence": "we-fight", "t": [["আমরা", "amra", "we"], ["লড়ি", "lori", "fight"]], "end": "।"}
+{"sentence": "sleep-command", "t": [["ঘুমাও", "ghumao", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["শিশু", "shishu", "child"], ["ঘুমায়", "ghumay", "sleep"]], "end": "।"}
+{"sentence": "officer-sees-child", "t": [["অফিসার", "ofisar", "officer"], ["শিশুকে", "shishuke", "child"], ["দেখে", "dekhe", "see"]], "end": "।"}
+{"sentence": "captain-sees-ship", "t": [["ক্যাপ্টেন", "kapten", "captain"], ["জাহাজ", "jahaj", "ship"], ["দেখে", "dekhe", "see"]], "end": "।"}
+{"sentence": "i-see-ship", "t": [["আমি", "ami", "i"], ["জাহাজ", "jahaj", "ship"], ["দেখি", "dekhi", "see"]], "end": "।"}
 {"sentence": "print-word", "t": [["শব্দটি", "shobdoti", "word"], ["প্রিন্ট করুন", "print korun", "print"]], "end": "।"}
 {"sentence": "show-number", "t": [["সংখ্যাটি", "shongkhati", "number"], ["দেখান", "dekhan", "print"]], "end": "।"}
 {"sentence": "print-screen", "t": [["স্ক্রিনে", "skrine", "screen+@place"], ["শব্দটি", "shobdoti", "word"], ["প্রিন্ট করুন", "print korun", "print"]], "end": "।"}
