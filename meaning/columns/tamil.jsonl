@@ -1,19 +1,36 @@
-{"schema": "columns@1", "language": "tamil", "notes": ["Tamil column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. The romanization matches the simplified scheme in languages/tamil (no diacritics; zh for ழ). Sources: forms match languages/tamil/vocab.js, reference.json phrases, and the Tamil grammar pack (நான் மாணவன், என் பெயர்…, நீங்கள் ஆங்கிலம் பேசுகிறீர்களா, உங்கள் பெயர் என்ன, கழிப்பறை எங்கே, இது எவ்வளவு, எனக்குப் புரியவில்லை, எனக்கு நேரம் இல்லை, நான் பள்ளிக்குப் போகிறேன், நான் காபி குடிக்கிறேன், எனக்கு … வேண்டும் / பிடிக்கும், ஒரு காபி கொடுங்கள்)."], "sep": " "}
+{"schema": "columns@1", "language": "tamil", "notes": ["Tamil column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. The romanization matches the simplified scheme in languages/tamil (no diacritics; zh for ழ). Sources: forms match languages/tamil/vocab.js, reference.json phrases, and the Tamil grammar pack (நான் மாணவன், என் பெயர்…, நீங்கள் ஆங்கிலம் பேசுகிறீர்களா, உங்கள் பெயர் என்ன, கழிப்பறை எங்கே, இது எவ்வளவு, எனக்குப் புரியவில்லை, எனக்கு நேரம் இல்லை, நான் பள்ளிக்குப் போகிறேன், நான் காபி குடிக்கிறேன், எனக்கு … வேண்டும் / பிடிக்கும், ஒரு காபி கொடுங்கள்). Forms match languages/tamil/vocab.jsonl where a card exists; other lemmas follow standard Tamil (Wiktionary CC BY-SA 4.0 consulted for spelling and romanization)."], "sep": " "}
 {"sentence": "i-am-student", "t": [["நான்", "naan", "i"], ["மாணவன்", "maanavan", "student"]], "end": "."}
+{"sentence": "name-tanaka", "t": [["என்", "en", "i"], ["பெயர்", "peyar", "name"], ["தனகா", "Thanakaa", "tanaka"]], "end": "."}
+{"sentence": "name-minjun", "t": [["என்", "en", "i"], ["பெயர்", "peyar", "name"], ["மின்ஜுன்", "Minjun", "minjun"]], "end": "."}
 {"sentence": "name-anna", "t": [["என்", "en", "i"], ["பெயர்", "peyar", "name"], ["அண்ணா", "Annaa", "anna"]], "end": "."}
 {"sentence": "name-ravi", "t": [["என்", "en", "i"], ["பெயர்", "peyar", "name"], ["ரவி", "Ravi", "ravi"]], "end": "."}
+{"sentence": "name-sami", "t": [["என்", "en", "i"], ["பெயர்", "peyar", "name"], ["சாமி", "Saami", "sami"]], "end": "."}
+{"sentence": "name-wang-ming", "t": [["என்", "en", "i"], ["பெயர்", "peyar", "name"], ["வாங் மிங்", "Vaang Ming", "wang-ming"]], "end": "."}
 {"sentence": "your-name", "t": [["உங்கள்", "ungal", "you"], ["பெயர்", "peyar", "name"], ["என்ன", "enna", "what"]], "end": "?"}
 {"sentence": "hello", "t": [["வணக்கம்", "vanakkam", "hello"]], "end": "."}
+{"sentence": "nice-to-meet-you", "t": [["உங்களைச் சந்தித்ததில் மகிழ்ச்சி", "ungalaich sandhiththathil magizhchi", "nice-to-meet-you"]], "end": "."}
+{"sentence": "good-morning", "t": [["காலை வணக்கம்", "kaalai vanakkam", "good+morning"]], "end": "."}
 {"sentence": "thank-you", "t": [["நன்றி", "nandri", "thanks"]], "end": "."}
 {"sentence": "thank-you-very-much", "t": [["ரொம்ப", "romba", "very-much"], ["நன்றி", "nandri", "thanks"]], "end": "."}
+{"sentence": "success", "t": [["வெற்றி", "vetri", "success"]], "end": "!"}
 {"sentence": "dont-understand", "t": [["எனக்கு", "enakku", "i"], ["புரியவில்லை", "puriyavillai", "not+understand"]], "end": "."}
 {"sentence": "dont-know", "t": [["எனக்கு", "enakku", "i"], ["தெரியாது", "theriyaadhu", "not+know"]], "end": "."}
 {"sentence": "speak-english", "t": [["நீங்கள்", "neengal", "you"], ["ஆங்கிலம்", "aangilam", "english"], ["பேசுகிறீர்கள்", "pesugireergal", "speak"], ["-ா", "aa", "@question"]], "end": "?"}
+{"sentence": "speak-chinese", "t": [["நீங்கள்", "neengal", "you"], ["சீனம்", "seenam", "chinese"], ["பேசுகிறீர்கள்", "pesugireergal", "speak"], ["-ா", "aa", "@question"]], "end": "?"}
+{"sentence": "speak-arabic", "t": [["நீங்கள்", "neengal", "you"], ["அரபு", "arabu", "arabic"], ["பேசுகிறீர்கள்", "pesugireergal", "speak"], ["-ா", "aa", "@question"]], "end": "?"}
+{"sentence": "speak-klingon", "t": [["நீங்கள்", "neengal", "you"], ["க்ளிங்கான்", "klingaan", "klingon"], ["பேசுகிறீர்கள்", "pesugireergal", "speak"], ["-ா", "aa", "@question"]], "end": "?"}
+{"sentence": "speak-hindi", "t": [["நான்", "naan", "i"], ["இந்தி", "hindhi", "hindi"], ["பேசுகிறேன்", "pesugiren", "speak"]], "end": "."}
+{"sentence": "study-korean", "t": [["நான்", "naan", "i"], ["கொரியன்", "koriyan", "korean"], ["படிக்கிறேன்", "padikkiren", "study"]], "end": "."}
+{"sentence": "like-sushi", "t": [["எனக்கு", "enakku", "i"], ["சுஷி", "sushi", "sushi"], ["பிடிக்கும்", "pidikkum", "like"]], "end": "."}
 {"sentence": "like-coffee", "t": [["எனக்கு", "enakku", "i"], ["காபி", "kaapi", "coffee"], ["பிடிக்கும்", "pidikkum", "like"]], "end": "."}
 {"sentence": "like-tea", "t": [["எனக்கு", "enakku", "i"], ["டீ", "tee", "tea"], ["பிடிக்கும்", "pidikkum", "like"]], "end": "."}
+{"sentence": "love-you", "t": [["நான்", "naan", "i"], ["உன்னை", "unnai", "you"], ["காதலிக்கிறேன்", "kaadhalikkiren", "love"]], "end": "."}
+{"sentence": "met-friend", "t": [["நான்", "naan", "i"], ["நேற்று", "netru", "yesterday"], ["ஒரு", "oru", "@one"], ["நண்பனைச்", "nanbanaich", "friend"], ["சந்தித்தேன்", "sandhiththen", "meet+@past"]], "end": "."}
 {"sentence": "my-friend", "t": [["அவன்", "avan", "he"], ["என்", "en", "i"], ["நண்பன்", "nanban", "friend"]], "end": "."}
 {"sentence": "who-is-he", "t": [["அவன்", "avan", "he"], ["யார்", "yaar", "who"]], "end": "?"}
 {"sentence": "where-live", "t": [["நீங்கள்", "neengal", "you"], ["எங்கே", "enge", "where"], ["வசிக்கிறீர்கள்", "vasikkireergal", "live"]], "end": "?"}
+{"sentence": "from-egypt", "t": [["நான்", "naan", "i"], ["எகிப்து", "Egipthu", "egypt"], ["-விலிருந்து", "vilirundhu", "from"]], "end": "."}
+{"sentence": "we-are-klingons", "t": [["நாங்கள்", "naangal", "we"], ["க்ளிங்கான்கள்", "klingaangal", "klingon"]], "end": "."}
 {"sentence": "this-is-book", "t": [["இது", "idhu", "this"], ["புத்தகம்", "puththagam", "book"]], "end": "."}
 {"sentence": "this-is-my-book", "t": [["இது", "idhu", "this"], ["என்", "en", "i"], ["புத்தகம்", "puththagam", "book"]], "end": "."}
 {"sentence": "drink-water", "t": [["நான்", "naan", "i"], ["தண்ணீர்", "thanneer", "water"], ["குடிக்கிறேன்", "kudikkiren", "drink"]], "end": "."}
@@ -21,22 +38,56 @@
 {"sentence": "want-coffee", "t": [["எனக்கு", "enakku", "i"], ["காபி", "kaapi", "coffee"], ["வேண்டும்", "vendum", "want"]], "end": "."}
 {"sentence": "read-book", "t": [["நான்", "naan", "i"], ["புத்தகம்", "puththagam", "book"], ["படிக்கிறேன்", "padikkiren", "read"]], "end": "."}
 {"sentence": "eat-rice", "t": [["நாங்கள்", "naangal", "we"], ["சாதம்", "saadham", "rice"], ["சாப்பிடுகிறோம்", "saappidugirom", "eat"]], "end": "."}
+{"sentence": "eat-food", "t": [["நான்", "naan", "i"], ["சாப்பாட்டைச்", "saappaattaich", "food"], ["சாப்பிடுகிறேன்", "saappidugiren", "eat"]], "end": "."}
+{"sentence": "lunch-restaurant", "t": [["நான்", "naan", "i"], ["உணவகத்தில்", "unavagaththil", "restaurant+@place"], ["மதிய உணவு", "madhiya unavu", "lunch"], ["சாப்பிடுகிறேன்", "saappidugiren", "eat"]], "end": "."}
+{"sentence": "eat-restaurant", "t": [["நான்", "naan", "i"], ["உணவகத்தில்", "unavagaththil", "restaurant+@place"], ["சாப்பிடுகிறேன்", "saappidugiren", "eat"]], "end": "."}
 {"sentence": "hot-today", "t": [["இன்று", "indru", "today"], ["சூடான", "soodaana", "hot"]], "end": "."}
 {"sentence": "cold-today", "t": [["இன்று", "indru", "today"], ["குளிர்ந்த", "kulirndha", "cold"]], "end": "."}
+{"sentence": "weather-hot", "t": [["இன்று", "indru", "today"], ["வானிலை", "vaanilai", "weather"], ["சூடான", "soodaana", "hot"]], "end": "."}
+{"sentence": "weather-good", "t": [["இன்று", "indru", "today"], ["வானிலை", "vaanilai", "weather"], ["நல்ல", "nalla", "good"]], "end": "."}
+{"sentence": "raining", "t": [["மழை", "mazhai", "rain"], ["பெய்யுகிறது", "peyyugiradhu", "@happen"]], "end": "."}
+{"sentence": "monday", "t": [["இன்று", "indru", "today"], ["திங்கள்", "thingal", "monday"]], "end": "."}
+{"sentence": "what-time", "t": [["என்ன", "enna", "what"], ["நேரம்", "neram", "time"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["இப்போது", "ippodhu", "now"], ["என்ன", "enna", "what"], ["நேரம்", "neram", "time"]], "end": "?"}
 {"sentence": "no-time", "t": [["நேரம்", "neram", "time"], ["இல்லை", "illai", "none"]], "end": "."}
+{"sentence": "there-is-cat", "t": [["ஒரு", "oru", "@one"], ["பூனை", "poonai", "cat"], ["இருக்கிறது", "irukkiradhu", "exist"]], "end": "."}
+{"sentence": "have-cat", "t": [["என்னிடம்", "ennidam", "i"], ["ஒரு", "oru", "@one"], ["பூனை", "poonai", "cat"], ["இருக்கிறது", "irukkiradhu", "have"]], "end": "."}
+{"sentence": "book-on-table", "t": [["மேசை", "mesai", "table"], ["மேல்", "mel", "on"], ["ஒரு", "oru", "@one"], ["புத்தகம்", "puththagam", "book"], ["இருக்கிறது", "irukkiradhu", "exist"]], "end": "."}
 {"sentence": "house-big", "t": [["வீடு", "veedu", "house"], ["பெரிய", "periya", "big"]], "end": "."}
 {"sentence": "car-new", "t": [["கார்", "kaar", "car"], ["புதிய", "pudhiya", "new"]], "end": "."}
 {"sentence": "delicious", "t": [["ருசி", "rusi", "delicious"]], "end": "."}
 {"sentence": "food-tasty", "t": [["சாப்பாடு", "saappaadu", "food"], ["ரொம்ப", "romba", "very"], ["ருசி", "rusi", "delicious"]], "end": "."}
+{"sentence": "head-hurts", "t": [["என்", "en", "i"], ["தலை", "thalai", "head"], ["வலிக்கிறது", "valikkiradhu", "hurt"]], "end": "."}
+{"sentence": "hungry", "t": [["எனக்கு", "enakku", "i"], ["பசி", "pasi", "hungry"], ["எடுக்கிறது", "edukkiradhu", "@happen"]], "end": "."}
 {"sentence": "give-water", "t": [["தயவுசெய்து", "dhayavuseydhu", "please"], ["எனக்கு", "enakku", "i"], ["தண்ணீர்", "thanneer", "water"], ["கொடுங்கள்", "kodungal", "give"]], "end": "."}
+{"sentence": "wait-moment", "t": [["தயவுசெய்து", "dhayavuseydhu", "please"], ["ஒரு", "oru", "@one"], ["நிமிடம்", "nimidam", "moment"], ["காத்திருங்கள்", "kaaththirungal", "wait"]], "end": "."}
+{"sentence": "sit-down", "t": [["தயவுசெய்து", "dhayavuseydhu", "please"], ["உட்காருங்கள்", "utkaarungal", "sit"]], "end": "."}
 {"sentence": "where-station", "t": [["ரயில் நிலையம்", "rayil nilaiyam", "station"], ["எங்கே", "enge", "where"]], "end": "?"}
 {"sentence": "where-toilet", "t": [["கழிப்பறை", "kazhipparai", "toilet"], ["எங்கே", "enge", "where"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["ஹோட்டல்", "hottal", "hotel"], ["எங்கே", "enge", "where"]], "end": "?"}
 {"sentence": "how-much-this", "t": [["இது", "idhu", "this"], ["எவ்வளவு", "evvalavu", "how-much"]], "end": "?"}
 {"sentence": "how-much-is-it", "t": [["எவ்வளவு", "evvalavu", "how-much"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["இதன் விலை", "idhan vilai", "cost"], ["எவ்வளவு", "evvalavu", "how-much"]], "end": "?"}
+{"sentence": "bill-please", "t": [["பில்", "bil", "bill"], ["தயவுசெய்து", "dhayavuseydhu", "please"]], "end": "."}
 {"sentence": "go-school", "t": [["நான்", "naan", "i"], ["பள்ளி", "palli", "school"], ["-க்கு", "kku", "@direction"], ["போகிறேன்", "pogiren", "go"]], "end": "."}
+{"sentence": "bus-school", "t": [["நான்", "naan", "i"], ["பேருந்தில்", "perundhil", "bus+@means"], ["பள்ளி", "palli", "school"], ["-க்கு", "kku", "@direction"], ["போகிறேன்", "pogiren", "go"]], "end": "."}
+{"sentence": "go-tokyo", "t": [["நான்", "naan", "i"], ["டோக்கியோ", "Tookkiyoo", "tokyo"], ["-வுக்கு", "vukku", "@direction"], ["போக", "poga", "go"], ["வேண்டும்", "vendum", "want"]], "end": "."}
+{"sentence": "came-train", "t": [["நான்", "naan", "i"], ["ரயிலில்", "rayilil", "train+@means"], ["வந்தேன்", "vandhen", "come+@past"]], "end": "."}
+{"sentence": "where-going", "t": [["நீங்கள்", "neengal", "you"], ["எங்கே", "enge", "where"], ["போகிறீர்கள்", "pogireergal", "go"]], "end": "?"}
 {"sentence": "going-home", "t": [["நான்", "naan", "i"], ["வீட்டு", "veettu", "home"], ["-க்கு", "kku", "@direction"], ["போகிறேன்", "pogiren", "go"]], "end": "."}
 {"sentence": "we-going-home", "t": [["நாங்கள்", "naangal", "we"], ["வீட்டு", "veettu", "home"], ["-க்கு", "kku", "@direction"], ["போகிறோம்", "pogirom", "go"]], "end": "."}
-{"sentence": "where-going", "t": [["நீங்கள்", "neengal", "you"], ["எங்கே", "enge", "where"], ["போகிறீர்கள்", "pogireergal", "go"]], "end": "?"}
+{"sentence": "lets-go", "t": [["போகலாம்", "pogalaam", "let-us+go"]], "end": "."}
+{"sentence": "live-moscow", "t": [["நான்", "naan", "i"], ["மாஸ்கோவில்", "Maaskovil", "moscow+@place"], ["வசிக்கிறேன்", "vasikkiren", "live"]], "end": "."}
+{"sentence": "live-cairo", "t": [["நான்", "naan", "i"], ["கெய்ரோவில்", "Keirovil", "cairo+@place"], ["வசிக்கிறேன்", "vasikkiren", "live"]], "end": "."}
+{"sentence": "live-beijing", "t": [["நான்", "naan", "i"], ["பெய்ஜிங்கில்", "Peijingil", "beijing+@place"], ["வசிக்கிறேன்", "vasikkiren", "live"]], "end": "."}
+{"sentence": "i-sleep", "t": [["நான்", "naan", "i"], ["தூங்குகிறேன்", "thoongugiren", "sleep"]], "end": "."}
+{"sentence": "i-fight", "t": [["நான்", "naan", "i"], ["சண்டையிடுகிறேன்", "sandaiyidugiren", "fight"]], "end": "."}
+{"sentence": "we-fight", "t": [["நாங்கள்", "naangal", "we"], ["சண்டையிடுகிறோம்", "sandaiyidugirom", "fight"]], "end": "."}
+{"sentence": "sleep-command", "t": [["தூங்கு", "thoongu", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["குழந்தை", "kuzhandhai", "child"], ["தூங்குகிறது", "thoongugiradhu", "sleep"]], "end": "."}
+{"sentence": "officer-sees-child", "t": [["அதிகாரி", "adhigaari", "officer"], ["குழந்தையைப்", "kuzhandhaiyaip", "child"], ["பார்க்கிறார்", "paarkkiraar", "see"]], "end": "."}
+{"sentence": "captain-sees-ship", "t": [["கேப்டன்", "keptan", "captain"], ["கப்பலைப்", "kappalaip", "ship"], ["பார்க்கிறார்", "paarkkiraar", "see"]], "end": "."}
+{"sentence": "i-see-ship", "t": [["நான்", "naan", "i"], ["கப்பலைப்", "kappalaip", "ship"], ["பார்க்கிறேன்", "paarkkiren", "see"]], "end": "."}
 {"sentence": "print-word", "t": [["சொல்லை", "sollai", "word"], ["அச்சிடவும்", "achchidavum", "print"]], "end": "."}
 {"sentence": "show-number", "t": [["எண்ணைக்", "ennaik", "number"], ["காட்டவும்", "kaattavum", "print"]], "end": "."}
 {"sentence": "print-screen", "t": [["திரையில்", "thiraiyil", "screen+@place"], ["சொல்லை", "sollai", "word"], ["அச்சிடவும்", "achchidavum", "print"]], "end": "."}

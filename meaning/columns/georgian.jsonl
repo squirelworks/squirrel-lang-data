@@ -1,33 +1,67 @@
-{"schema": "columns@1", "language": "georgian", "notes": ["Georgian column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. The romanization matches the national system in languages/georgian (apostrophe marks an ejective). Verb prefixes and endings mark the person, so \"I\" and \"you\" are often implied; inverted verbs (მინდა, მომწონს, მესმის, მიყვარს) mark the experiencer with მ- / გ-. Sources: forms match languages/georgian/vocab.js, reference.json phrases, and the Georgian grammar pack (მე სტუდენტი ვარ, ჩემი სახელია…, ინგლისურად ლაპარაკობთ?, არ მესმის, არ ვიცი, სკოლაში მივდივარ, ტუალეტი სად არის?, რამდენი ღირს?, დიდი მადლობა, ანგარიში, თუ შეიძლება)."], "sep": " "}
+{"schema": "columns@1", "language": "georgian", "notes": ["Georgian column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. The romanization matches the national system in languages/georgian (apostrophe marks an ejective). Verb prefixes and endings mark the person, so \"I\" and \"you\" are often implied; inverted verbs (მინდა, მომწონს, მესმის, მიყვარს) mark the experiencer with მ- / გ-. Sources: forms match languages/georgian/vocab.js, reference.json phrases, and the Georgian grammar pack (მე სტუდენტი ვარ, ჩემი სახელია…, ინგლისურად ლაპარაკობთ?, არ მესმის, არ ვიცი, სკოლაში მივდივარ, ტუალეტი სად არის?, რამდენი ღირს?, დიდი მადლობა, ანგარიში, თუ შეიძლება). Forms match languages/georgian/vocab.jsonl where a card exists; other lemmas follow standard Georgian (Wiktionary CC BY-SA 4.0 consulted for spelling and romanization)."], "sep": " "}
 {"sentence": "i-am-student", "t": [["მე", "me", "i"], ["სტუდენტი", "st'udent'i", "student"], ["ვარ", "var", "@copula"]], "end": "."}
+{"sentence": "name-tanaka", "t": [["ჩემი", "chemi", "i"], ["სახელი", "sakheli", "name"], ["-ა", "a", "@copula"], ["ტანაკა", "T'anak'a", "tanaka"]], "end": "."}
+{"sentence": "name-minjun", "t": [["ჩემი", "chemi", "i"], ["სახელი", "sakheli", "name"], ["-ა", "a", "@copula"], ["მინჯუნი", "Minjuni", "minjun"]], "end": "."}
 {"sentence": "name-anna", "t": [["ჩემი", "chemi", "i"], ["სახელი", "sakheli", "name"], ["-ა", "a", "@copula"], ["ანა", "Ana", "anna"]], "end": "."}
+{"sentence": "name-ravi", "t": [["ჩემი", "chemi", "i"], ["სახელი", "sakheli", "name"], ["-ა", "a", "@copula"], ["რავი", "Ravi", "ravi"]], "end": "."}
+{"sentence": "name-sami", "t": [["ჩემი", "chemi", "i"], ["სახელი", "sakheli", "name"], ["-ა", "a", "@copula"], ["საამი", "Saami", "sami"]], "end": "."}
+{"sentence": "name-wang-ming", "t": [["ჩემი", "chemi", "i"], ["სახელი", "sakheli", "name"], ["-ა", "a", "@copula"], ["ვანგ მინგი", "Vang Mingi", "wang-ming"]], "end": "."}
 {"sentence": "your-name", "t": [["თქვენი", "tkveni", "you"], ["სახელი", "sakheli", "name"], ["რა", "ra", "what"], ["არის", "aris", "@copula"]], "end": "?"}
 {"sentence": "hello", "t": [["გამარჯობა", "gamarjoba", "hello"]], "end": "."}
 {"sentence": "nice-to-meet-you", "t": [["სასიამოვნოა", "sasiamovnoa", "nice-to-meet-you"]], "end": "."}
 {"sentence": "good-morning", "t": [["დილა მშვიდობისა", "dila mshvidobisa", "good+morning"]], "end": "."}
 {"sentence": "thank-you", "t": [["მადლობა", "madloba", "thanks"]], "end": "."}
 {"sentence": "thank-you-very-much", "t": [["დიდი", "didi", "very-much"], ["მადლობა", "madloba", "thanks"]], "end": "."}
+{"sentence": "success", "t": [["წარმატება", "ts'armat'eba", "success"]], "end": "!"}
 {"sentence": "dont-understand", "t": [["არ", "ar", "not"], ["მესმის", "mesmis", "understand"]], "implied": ["i"], "end": "."}
 {"sentence": "dont-know", "t": [["არ", "ar", "not"], ["ვიცი", "vitsi", "know"]], "implied": ["i"], "end": "."}
 {"sentence": "speak-english", "t": [["ინგლისურად", "inglisurad", "english"], ["ლაპარაკობთ", "lap'arak'obt", "speak"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-chinese", "t": [["ჩინურად", "chinurad", "chinese"], ["ლაპარაკობთ", "lap'arak'obt", "speak"]], "end": "?", "implied": ["you"]}
+{"sentence": "speak-arabic", "t": [["არაბულად", "arabulad", "arabic"], ["ლაპარაკობთ", "lap'arak'obt", "speak"]], "end": "?", "implied": ["you"]}
+{"sentence": "speak-klingon", "t": [["კლინგონურად", "k'lingonurad", "klingon"], ["ლაპარაკობთ", "lap'arak'obt", "speak"]], "end": "?", "implied": ["you"]}
+{"sentence": "speak-hindi", "t": [["ჰინდურად", "hindurad", "hindi"], ["ვლაპარაკობ", "vlap'arak'ob", "speak"]], "end": ".", "implied": ["i"]}
+{"sentence": "study-korean", "t": [["კორეულს", "k'oreuls", "korean"], ["ვსწავლობ", "vsts'avlob", "study"]], "end": ".", "implied": ["i"]}
+{"sentence": "like-sushi", "t": [["სუში", "sushi", "sushi"], ["მომწონს", "momts'ons", "like"]], "end": ".", "implied": ["i"]}
 {"sentence": "like-coffee", "t": [["ყავა", "q'ava", "coffee"], ["მომწონს", "momts'ons", "like"]], "implied": ["i"], "end": "."}
 {"sentence": "like-tea", "t": [["ჩაი", "chai", "tea"], ["მომწონს", "momts'ons", "like"]], "implied": ["i"], "end": "."}
 {"sentence": "love-you", "t": [["შენ", "shen", "you"], ["მიყვარს", "miq'vars", "love"]], "implied": ["i"], "end": "."}
+{"sentence": "met-friend", "t": [["გუშინ", "gushin", "yesterday"], ["მეგობარი", "megobari", "friend"], ["შევხვდი", "shevkhvdi", "meet+@past"]], "end": ".", "implied": ["i"]}
 {"sentence": "my-friend", "t": [["ის", "is", "he"], ["ჩემი", "chemi", "i"], ["მეგობარი", "megobari", "friend"], ["-ა", "a", "@copula"]], "end": "."}
 {"sentence": "who-is-he", "t": [["ვინ", "vin", "who"], ["არის", "aris", "@copula"], ["ის", "is", "he"]], "end": "?"}
 {"sentence": "where-live", "t": [["სად", "sad", "where"], ["ცხოვრობთ", "tskhovrobt", "live"]], "implied": ["you"], "end": "?"}
+{"sentence": "from-egypt", "t": [["მე", "me", "i"], ["ეგვიპტე", "Egvip't'e", "egypt"], ["-დან", "dan", "from"], ["ვარ", "var", "@copula"]], "end": "."}
+{"sentence": "we-are-klingons", "t": [["ჩვენ", "chven", "we"], ["კლინგონები", "k'lingonebi", "klingon"], ["ვართ", "vart", "@copula"]], "end": "."}
 {"sentence": "this-is-book", "t": [["ეს", "es", "this"], ["წიგნი", "ts'igni", "book"], ["-ა", "a", "@copula"]], "end": "."}
 {"sentence": "this-is-my-book", "t": [["ეს", "es", "this"], ["ჩემი", "chemi", "i"], ["წიგნი", "ts'igni", "book"], ["-ა", "a", "@copula"]], "end": "."}
 {"sentence": "drink-water", "t": [["წყალს", "ts'q'als", "water"], ["ვსვამ", "vsvam", "drink"]], "implied": ["i"], "end": "."}
 {"sentence": "drink-tea", "t": [["ჩაის", "chais", "tea"], ["ვსვამ", "vsvam", "drink"]], "implied": ["i"], "end": "."}
 {"sentence": "want-coffee", "t": [["ყავა", "q'ava", "coffee"], ["მინდა", "minda", "want"]], "implied": ["i"], "end": "."}
 {"sentence": "read-book", "t": [["წიგნს", "ts'igns", "book"], ["ვკითხულობ", "vk'itkhulob", "read"]], "implied": ["i"], "end": "."}
+{"sentence": "eat-rice", "t": [["ჩვენ", "chven", "we"], ["ბრინჯს", "brinjis", "rice"], ["ვჭამთ", "vch'amt", "eat"]], "end": "."}
+{"sentence": "eat-food", "t": [["საჭმელს", "sach'mels", "food"], ["ვჭამ", "vch'am", "eat"]], "end": ".", "implied": ["i"]}
+{"sentence": "lunch-restaurant", "t": [["რესტორანი", "rest'orani", "restaurant"], ["-ში", "shi", "@place"], ["სადილს", "sadils", "lunch"], ["ვჭამ", "vch'am", "eat"]], "end": ".", "implied": ["i"]}
+{"sentence": "eat-restaurant", "t": [["რესტორანი", "rest'orani", "restaurant"], ["-ში", "shi", "@place"], ["ვჭამ", "vch'am", "eat"]], "end": ".", "implied": ["i"]}
 {"sentence": "hot-today", "t": [["დღეს", "dghes", "today"], ["ცხელი", "tskheli", "hot"], ["-ა", "a", "@copula"]], "end": "."}
 {"sentence": "cold-today", "t": [["დღეს", "dghes", "today"], ["ცივი", "tsivi", "cold"], ["-ა", "a", "@copula"]], "end": "."}
+{"sentence": "weather-hot", "t": [["დღეს", "dghes", "today"], ["ამინდი", "amindi", "weather"], ["ცხელი", "tskheli", "hot"], ["-ა", "a", "@copula"]], "end": "."}
+{"sentence": "weather-good", "t": [["დღეს", "dghes", "today"], ["ამინდი", "amindi", "weather"], ["კარგი", "k'argi", "good"], ["-ა", "a", "@copula"]], "end": "."}
+{"sentence": "raining", "t": [["წვიმს", "ts'vims", "rain"]], "end": "."}
+{"sentence": "monday", "t": [["დღეს", "dghes", "today"], ["ორშაბათი", "orshabati", "monday"], ["-ა", "a", "@copula"]], "end": "."}
 {"sentence": "what-time", "t": [["რა", "ra", "what"], ["საათი", "saati", "time"], ["-ა", "a", "@copula"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["ახლა", "akhla", "now"], ["რა", "ra", "what"], ["საათი", "saati", "time"], ["-ა", "a", "@copula"]], "end": "?"}
+{"sentence": "no-time", "t": [["დრო", "dro", "time"], ["არ", "ar", "none"], ["არის", "aris", "@copula"]], "end": "."}
+{"sentence": "there-is-cat", "t": [["კატა", "k'at'a", "cat"], ["არის", "aris", "exist"]], "end": "."}
+{"sentence": "have-cat", "t": [["კატა", "k'at'a", "cat"], ["მყავს", "mq'avs", "have"]], "end": ".", "implied": ["i"]}
+{"sentence": "book-on-table", "t": [["მაგიდა", "magida", "table"], ["-ზე", "ze", "on"], ["წიგნი", "ts'igni", "book"], ["არის", "aris", "exist"]], "end": "."}
 {"sentence": "house-big", "t": [["სახლი", "sakhli", "house"], ["დიდი", "didi", "big"], ["-ა", "a", "@copula"]], "end": "."}
 {"sentence": "car-new", "t": [["მანქანა", "mankana", "car"], ["ახალი", "akhali", "new"], ["-ა", "a", "@copula"]], "end": "."}
 {"sentence": "delicious", "t": [["გემრიელია", "gemrielia", "delicious"]], "end": "."}
+{"sentence": "food-tasty", "t": [["საჭმელი", "sach'meli", "food"], ["ძალიან", "dzalian", "very"], ["გემრიელი", "gemrieli", "delicious"], ["-ა", "a", "@copula"]], "end": "."}
+{"sentence": "head-hurts", "t": [["თავი", "tavi", "head"], ["მტკივა", "mt'k'iva", "hurt"]], "end": ".", "implied": ["i"]}
+{"sentence": "hungry", "t": [["მშია", "mshia", "hungry"]], "end": ".", "implied": ["i"]}
+{"sentence": "give-water", "t": [["გთხოვთ", "gtkhovt", "please"], ["წყალი", "ts'q'ali", "water"], ["მომეცით", "mometsit", "give+i"]], "end": "."}
+{"sentence": "wait-moment", "t": [["გთხოვთ", "gtkhovt", "please"], ["ერთი", "erti", "@one"], ["წუთი", "ts'uti", "moment"], ["მოიცადეთ", "moitsadet", "wait"]], "end": "."}
+{"sentence": "sit-down", "t": [["გთხოვთ", "gtkhovt", "please"], ["დაჯექით", "dajekit", "sit"]], "end": "."}
 {"sentence": "where-station", "t": [["სადგური", "sadguri", "station"], ["სად", "sad", "where"], ["არის", "aris", "@copula"]], "end": "?"}
 {"sentence": "where-toilet", "t": [["ტუალეტი", "t'ualet'i", "toilet"], ["სად", "sad", "where"], ["არის", "aris", "@copula"]], "end": "?"}
 {"sentence": "where-hotel", "t": [["სასტუმრო", "sast'umro", "hotel"], ["სად", "sad", "where"], ["არის", "aris", "@copula"]], "end": "?"}
@@ -36,9 +70,24 @@
 {"sentence": "how-much-cost", "t": [["რამდენი", "ramdeni", "how-much"], ["ღირს", "ghirs", "cost"]], "end": "?"}
 {"sentence": "bill-please", "t": [["ანგარიში", "angarishi", "bill"], ["თუ შეიძლება", "tu sheidzleba", "please"]], "end": "."}
 {"sentence": "go-school", "t": [["სკოლა", "sk'ola", "school"], ["-ში", "shi", "@direction"], ["მივდივარ", "mivdivar", "go"]], "implied": ["i"], "end": "."}
+{"sentence": "bus-school", "t": [["ავტობუსი", "avt'obusi", "bus"], ["-თ", "t", "@means"], ["სკოლა", "sk'ola", "school"], ["-ში", "shi", "@direction"], ["მივდივარ", "mivdivar", "go"]], "end": ".", "implied": ["i"]}
+{"sentence": "go-tokyo", "t": [["ტოკიო", "T'ok'io", "tokyo"], ["-ში", "shi", "@direction"], ["წასვლა", "ts'asvla", "go"], ["მინდა", "minda", "want"]], "end": ".", "implied": ["i"]}
+{"sentence": "came-train", "t": [["მატარებელი", "mat'arebeli", "train"], ["-თ", "t", "@means"], ["მოვედი", "movedi", "come+@past"]], "end": ".", "implied": ["i"]}
+{"sentence": "where-going", "t": [["სად", "sad", "where"], ["მიდიხართ", "midikhart", "go"]], "implied": ["you"], "end": "?"}
 {"sentence": "going-home", "t": [["სახლი", "sakhli", "home"], ["-ში", "shi", "@direction"], ["მივდივარ", "mivdivar", "go"]], "implied": ["i"], "end": "."}
 {"sentence": "we-going-home", "t": [["ჩვენ", "chven", "we"], ["სახლი", "sakhli", "home"], ["-ში", "shi", "@direction"], ["მივდივართ", "mivdivart", "go"]], "end": "."}
-{"sentence": "where-going", "t": [["სად", "sad", "where"], ["მიდიხართ", "midikhart", "go"]], "implied": ["you"], "end": "?"}
+{"sentence": "lets-go", "t": [["წავიდეთ", "ts'avidet", "let-us+go"]], "end": "."}
+{"sentence": "live-moscow", "t": [["მოსკოვი", "Mosk'ovi", "moscow"], ["-ში", "shi", "@place"], ["ვცხოვრობ", "vtskhovrob", "live"]], "end": ".", "implied": ["i"]}
+{"sentence": "live-cairo", "t": [["კაირო", "K'airo", "cairo"], ["-ში", "shi", "@place"], ["ვცხოვრობ", "vtskhovrob", "live"]], "end": ".", "implied": ["i"]}
+{"sentence": "live-beijing", "t": [["პეკინი", "P'ek'ini", "beijing"], ["-ში", "shi", "@place"], ["ვცხოვრობ", "vtskhovrob", "live"]], "end": ".", "implied": ["i"]}
+{"sentence": "i-sleep", "t": [["ვიძინებ", "vidzineb", "sleep"]], "end": ".", "implied": ["i"]}
+{"sentence": "i-fight", "t": [["ვიბრძვი", "vibirdzvi", "fight"]], "end": ".", "implied": ["i"]}
+{"sentence": "we-fight", "t": [["ჩვენ", "chven", "we"], ["ვიბრძვით", "vibirdzvit", "fight"]], "end": "."}
+{"sentence": "sleep-command", "t": [["დაიძინე", "daidzine", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["ბავშვი", "bavshvi", "child"], ["იძინებს", "idzinebs", "sleep"]], "end": "."}
+{"sentence": "officer-sees-child", "t": [["ოფიცერი", "opitseri", "officer"], ["ბავშვს", "bavshvs", "child"], ["ხედავს", "khedavs", "see"]], "end": "."}
+{"sentence": "captain-sees-ship", "t": [["კაპიტანი", "k'ap'it'ani", "captain"], ["გემს", "gems", "ship"], ["ხედავს", "khedavs", "see"]], "end": "."}
+{"sentence": "i-see-ship", "t": [["გემს", "gems", "ship"], ["ვხედავ", "vkhedav", "see"]], "end": ".", "implied": ["i"]}
 {"sentence": "print-word", "t": [["დაბეჭდე", "dabech'de", "print"], ["სიტყვა", "sit'q'va", "word"]], "end": "."}
 {"sentence": "show-number", "t": [["აჩვენე", "achvene", "print"], ["რიცხვი", "ritskhvi", "number"]], "end": "."}
 {"sentence": "print-screen", "t": [["დაბეჭდე", "dabech'de", "print"], ["სიტყვა", "sit'q'va", "word"], ["ეკრან", "ek'ran", "screen"], ["-ზე", "ze", "@place"]], "end": "."}
