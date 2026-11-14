@@ -1,24 +1,93 @@
-{"schema": "columns@1", "language": "arabic", "notes": ["Arabic (Modern Standard) column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. The article ال is its own token, romanized by the sun-letter rule (as-sayyāra, al-bayt). Verbs carry their subject, so \"I\" and \"you\" are often implied."], "sep": " "}
+{"schema": "columns@1", "language": "arabic", "notes": ["Arabic (Modern Standard) column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. The article ال is its own token, romanized by the sun-letter rule (as-sayyāra, al-bayt). Possessive suffixes glue with a leading \"-\" (-ي, -ك).", "Verb endings carry the person, so \"I\" and \"you\" are often implied. There is no present-tense \"to be\" in nominal sentences (أنا طالب, هذا كتاب), so those rows have no @copula token. Yes/no questions use هل.", "\"Hello\" is مرحبا. \"Nice to meet you\" is تشرفنا. \"Success!\" is نجاح!. Code rows use the imperative (اطبع الكلمة.), the usual form for instructions in Arabic software and manuals. The Arabic question mark is ؟.", "Forms match languages/arabic/vocab.jsonl where a card exists; other lemmas follow standard MSA (Wiktionary CC BY-SA 4.0 consulted for spelling and romanization)."], "sep": " "}
 {"sentence": "i-am-student", "t": [["أنا", "anā", "i"], ["طالب", "ṭālib", "student"]], "end": "."}
-{"sentence": "your-name", "t": [["ما", "mā", "what"], ["اسم", "ism", "name"], ["-ك", "uka", "you"]], "end": "؟"}
+{"sentence": "name-tanaka", "t": [["اسم", "ism", "name"], ["-ي", "ī", "i"], ["تانكا", "Tānkā", "tanaka"]], "end": "."}
+{"sentence": "name-minjun", "t": [["اسم", "ism", "name"], ["-ي", "ī", "i"], ["مينجون", "Mīnjūn", "minjun"]], "end": "."}
+{"sentence": "name-anna", "t": [["اسم", "ism", "name"], ["-ي", "ī", "i"], ["آنا", "Ānā", "anna"]], "end": "."}
+{"sentence": "name-ravi", "t": [["اسم", "ism", "name"], ["-ي", "ī", "i"], ["رافي", "Rāfī", "ravi"]], "end": "."}
 {"sentence": "name-sami", "t": [["اسم", "ism", "name"], ["-ي", "ī", "i"], ["سامي", "Sāmī", "sami"]], "end": "."}
-{"sentence": "thank-you", "t": [["شكرا", "shukran", "thanks"]], "end": "."}
-{"sentence": "from-egypt", "t": [["أنا", "anā", "i"], ["من", "min", "from"], ["مصر", "Miṣr", "egypt"]], "end": "."}
+{"sentence": "name-wang-ming", "t": [["اسم", "ism", "name"], ["-ي", "ī", "i"], ["وانغ مينغ", "Wāngh Mīngh", "wang-ming"]], "end": "."}
+{"sentence": "your-name", "t": [["ما", "mā", "what"], ["اسم", "ism", "name"], ["-ك", "uka", "you"]], "end": "؟"}
+{"sentence": "hello", "t": [["مرحبا", "marḥaban", "hello"]], "end": "."}
+{"sentence": "nice-to-meet-you", "t": [["تشرفنا", "tasharrafnā", "nice-to-meet-you"]], "end": "."}
 {"sentence": "good-morning", "t": [["صباح", "ṣabāḥ", "morning"], ["ال-", "al", "@the"], ["خير", "khayr", "good"]], "end": "."}
+{"sentence": "thank-you", "t": [["شكرا", "shukran", "thanks"]], "end": "."}
+{"sentence": "thank-you-very-much", "t": [["شكرا", "shukran", "thanks"], ["جزيلا", "jazīlan", "very-much"]], "end": "."}
+{"sentence": "success", "t": [["نجاح", "najāḥ", "success"]], "end": "!"}
 {"sentence": "dont-understand", "t": [["أنا", "anā", "i"], ["لا", "lā", "not"], ["أفهم", "afham", "understand"]], "end": "."}
+{"sentence": "dont-know", "t": [["أنا", "anā", "i"], ["لا", "lā", "not"], ["أعرف", "aʿrif", "know"]], "end": "."}
+{"sentence": "speak-english", "t": [["هل", "hal", "@question"], ["تتكلم", "tatakallam", "speak"], ["ال-", "al", "@the"], ["إنجليزية", "injilīziyya", "english"]], "implied": ["you"], "end": "؟"}
+{"sentence": "speak-chinese", "t": [["هل", "hal", "@question"], ["تتكلم", "tatakallam", "speak"], ["ال-", "aṣ", "@the"], ["صينية", "ṣīniyya", "chinese"]], "implied": ["you"], "end": "؟"}
 {"sentence": "speak-arabic", "t": [["هل", "hal", "@question"], ["تتكلم", "tatakallam", "speak"], ["ال-", "al", "@the"], ["عربية", "ʿarabiyya", "arabic"]], "implied": ["you"], "end": "؟"}
+{"sentence": "speak-klingon", "t": [["هل", "hal", "@question"], ["تتكلم", "tatakallam", "speak"], ["ال-", "al", "@the"], ["كلينغونية", "klingūniyya", "klingon"]], "implied": ["you"], "end": "؟"}
+{"sentence": "speak-hindi", "t": [["أتكلم", "atakallam", "speak"], ["ال-", "al", "@the"], ["هندية", "hindiyya", "hindi"]], "implied": ["i"], "end": "."}
+{"sentence": "study-korean", "t": [["أدرس", "adrus", "study"], ["ال-", "al", "@the"], ["كورية", "kūriyya", "korean"]], "implied": ["i"], "end": "."}
+{"sentence": "like-sushi", "t": [["أحب", "uḥibb", "like"], ["ال-", "as", "@the"], ["سوشي", "sūshī", "sushi"]], "implied": ["i"], "end": "."}
+{"sentence": "like-coffee", "t": [["أحب", "uḥibb", "like"], ["ال-", "al", "@the"], ["قهوة", "qahwa", "coffee"]], "implied": ["i"], "end": "."}
+{"sentence": "like-tea", "t": [["أحب", "uḥibb", "like"], ["ال-", "ash", "@the"], ["شاي", "shāy", "tea"]], "implied": ["i"], "end": "."}
+{"sentence": "love-you", "t": [["أحبك", "uḥibbuka", "love+you"]], "implied": ["i"], "end": "."}
+{"sentence": "met-friend", "t": [["قابلت", "qābaltu", "meet+@past"], ["صديقا", "ṣadīqan", "friend"], ["أمس", "ams", "yesterday"]], "implied": ["i"], "end": "."}
+{"sentence": "my-friend", "t": [["هو", "huwa", "he"], ["صديق", "ṣadīq", "friend"], ["-ي", "ī", "i"]], "end": "."}
+{"sentence": "who-is-he", "t": [["من", "man", "who"], ["هو", "huwa", "he"]], "end": "؟"}
+{"sentence": "where-live", "t": [["أين", "ayna", "where"], ["تسكن", "taskun", "live"]], "implied": ["you"], "end": "؟"}
+{"sentence": "from-egypt", "t": [["أنا", "anā", "i"], ["من", "min", "from"], ["مصر", "Miṣr", "egypt"]], "end": "."}
+{"sentence": "we-are-klingons", "t": [["نحن", "naḥnu", "we"], ["كلينغونيون", "klingūniyyūn", "klingon"]], "end": "."}
 {"sentence": "this-is-book", "t": [["هذا", "hādhā", "this"], ["كتاب", "kitāb", "book"]], "end": "."}
+{"sentence": "this-is-my-book", "t": [["هذا", "hādhā", "this"], ["كتاب", "kitāb", "book"], ["-ي", "ī", "i"]], "end": "."}
 {"sentence": "drink-water", "t": [["أشرب", "ashrab", "drink"], ["ال-", "al", "@the"], ["ماء", "māʾ", "water"]], "implied": ["i"], "end": "."}
+{"sentence": "drink-tea", "t": [["أشرب", "ashrab", "drink"], ["ال-", "ash", "@the"], ["شاي", "shāy", "tea"]], "implied": ["i"], "end": "."}
+{"sentence": "want-coffee", "t": [["أريد", "urīd", "want"], ["قهوة", "qahwa", "coffee"]], "implied": ["i"], "end": "."}
+{"sentence": "read-book", "t": [["أقرأ", "aqraʾ", "read"], ["كتابا", "kitāban", "book"]], "implied": ["i"], "end": "."}
+{"sentence": "eat-rice", "t": [["نأكل", "naʾkul", "eat"], ["أرزا", "aruzzan", "rice"]], "implied": ["we"], "end": "."}
+{"sentence": "eat-food", "t": [["آكل", "ākul", "eat"], ["ال-", "aṭ", "@the"], ["طعام", "ṭaʿām", "food"]], "implied": ["i"], "end": "."}
+{"sentence": "lunch-restaurant", "t": [["أتغدى", "ataghaddā", "lunch+eat"], ["في", "fī", "@place"], ["مطعم", "maṭʿam", "restaurant"]], "implied": ["i"], "end": "."}
+{"sentence": "eat-restaurant", "t": [["آكل", "ākul", "eat"], ["في", "fī", "@place"], ["مطعم", "maṭʿam", "restaurant"]], "implied": ["i"], "end": "."}
+{"sentence": "hot-today", "t": [["ال-", "al", "@the"], ["يوم", "yawm", "today"], ["حار", "ḥārr", "hot"]], "end": "."}
+{"sentence": "cold-today", "t": [["ال-", "al", "@the"], ["يوم", "yawm", "today"], ["بارد", "bārid", "cold"]], "end": "."}
+{"sentence": "weather-hot", "t": [["ال-", "aj", "@the"], ["جو", "jaww", "weather"], ["حار", "ḥārr", "hot"], ["ال-", "al", "@the"], ["يوم", "yawm", "today"]], "end": "."}
+{"sentence": "weather-good", "t": [["ال-", "aj", "@the"], ["جو", "jaww", "weather"], ["جميل", "jamīl", "good"], ["ال-", "al", "@the"], ["يوم", "yawm", "today"]], "end": "."}
+{"sentence": "raining", "t": [["تمطر", "tumṭir", "rain"]], "end": "."}
+{"sentence": "monday", "t": [["ال-", "al", "@the"], ["يوم", "yawm", "today"], ["الاثنين", "al-ithnayn", "monday"]], "end": "."}
+{"sentence": "what-time", "t": [["كم", "kam", "what"], ["ال-", "as", "@the"], ["ساعة", "sāʿa", "time"]], "end": "؟"}
+{"sentence": "what-time-now", "t": [["كم", "kam", "what"], ["ال-", "as", "@the"], ["ساعة", "sāʿa", "time"], ["الآن", "al-ān", "now"]], "end": "؟"}
+{"sentence": "no-time", "t": [["لا", "lā", "none"], ["وقت", "waqt", "time"]], "end": "."}
+{"sentence": "there-is-cat", "t": [["هناك", "hunāk", "exist"], ["قطة", "qiṭṭa", "cat"]], "end": "."}
+{"sentence": "have-cat", "t": [["لدي", "ladayya", "have"], ["قطة", "qiṭṭa", "cat"]], "implied": ["i"], "end": "."}
+{"sentence": "book-on-table", "t": [["هناك", "hunāk", "exist"], ["كتاب", "kitāb", "book"], ["على", "ʿalā", "on"], ["ال-", "aṭ", "@the"], ["طاولة", "ṭāwila", "table"]], "end": "."}
 {"sentence": "house-big", "t": [["ال-", "al", "@the"], ["بيت", "bayt", "house"], ["كبير", "kabīr", "big"]], "end": "."}
 {"sentence": "car-new", "t": [["ال-", "as", "@the"], ["سيارة", "sayyāra", "car"], ["جديدة", "jadīda", "new"]], "end": "."}
-{"sentence": "weather-hot", "t": [["ال-", "aj", "@the"], ["جو", "jaww", "weather"], ["حار", "ḥārr", "hot"], ["ال-", "al", "@the"], ["يوم", "yawm", "today"]], "end": "."}
-{"sentence": "want-coffee", "t": [["أريد", "urīd", "want"], ["قهوة", "qahwa", "coffee"]], "implied": ["i"], "end": "."}
+{"sentence": "delicious", "t": [["لذيذ", "ladhīdh", "delicious"]], "end": "."}
+{"sentence": "food-tasty", "t": [["ال-", "aṭ", "@the"], ["طعام", "ṭaʿām", "food"], ["لذيذ", "ladhīdh", "delicious"], ["جدا", "jiddan", "very"]], "end": "."}
+{"sentence": "head-hurts", "t": [["رأسي", "raʾsī", "i+head"], ["يؤلمني", "yuʾlimunī", "hurt"]], "end": "."}
+{"sentence": "hungry", "t": [["أنا", "anā", "i"], ["جائع", "jāʾiʿ", "hungry"]], "end": "."}
+{"sentence": "give-water", "t": [["من فضلك", "min faḍlik", "please"], ["أعطني", "aʿṭinī", "give+i"], ["ماء", "māʾ", "water"]], "end": "."}
+{"sentence": "wait-moment", "t": [["من فضلك", "min faḍlik", "please"], ["انتظر", "intaẓir", "wait"], ["لحظة", "laḥẓa", "moment"]], "end": "."}
 {"sentence": "sit-down", "t": [["تفضل", "tafaḍḍal", "please"], ["اجلس", "ijlis", "sit"]], "end": "."}
 {"sentence": "where-station", "t": [["أين", "ayna", "where"], ["ال-", "al", "@the"], ["محطة", "maḥaṭṭa", "station"]], "end": "؟"}
 {"sentence": "where-toilet", "t": [["أين", "ayna", "where"], ["ال-", "al", "@the"], ["حمام", "ḥammām", "toilet"]], "end": "؟"}
 {"sentence": "where-hotel", "t": [["أين", "ayna", "where"], ["ال-", "al", "@the"], ["فندق", "funduq", "hotel"]], "end": "؟"}
 {"sentence": "how-much-this", "t": [["بكم", "bikam", "how-much"], ["هذا", "hādhā", "this"]], "end": "؟"}
+{"sentence": "how-much-is-it", "t": [["بكم", "bikam", "how-much"]], "end": "؟"}
+{"sentence": "how-much-cost", "t": [["بكم", "bikam", "how-much"], ["يكلف", "yukallif", "cost"]], "end": "؟"}
+{"sentence": "bill-please", "t": [["ال-", "al", "@the"], ["حساب", "ḥisāb", "bill"], ["من فضلك", "min faḍlik", "please"]], "end": "."}
+{"sentence": "go-school", "t": [["أذهب", "adhhab", "go"], ["إلى", "ilā", "@direction"], ["ال-", "al", "@the"], ["مدرسة", "madrasa", "school"]], "implied": ["i"], "end": "."}
+{"sentence": "bus-school", "t": [["أذهب", "adhhab", "go"], ["إلى", "ilā", "@direction"], ["ال-", "al", "@the"], ["مدرسة", "madrasa", "school"], ["بـ", "bi", "@means"], ["ال-", "al", "@the"], ["حافلة", "ḥāfila", "bus"]], "implied": ["i"], "end": "."}
+{"sentence": "go-tokyo", "t": [["أريد", "urīd", "want"], ["أن أذهب", "an adhhab", "go"], ["إلى", "ilā", "@direction"], ["طوكيو", "Ṭūkyō", "tokyo"]], "implied": ["i"], "end": "."}
+{"sentence": "came-train", "t": [["جئت", "jiʾtu", "come+@past"], ["بـ", "bi", "@means"], ["ال-", "al", "@the"], ["قطار", "qiṭār", "train"]], "implied": ["i"], "end": "."}
+{"sentence": "where-going", "t": [["إلى أين", "ilā ayna", "where"], ["تذهب", "tadhhab", "go"]], "implied": ["you"], "end": "؟"}
+{"sentence": "going-home", "t": [["أذهب", "adhhab", "go"], ["إلى", "ilā", "@direction"], ["ال-", "al", "@the"], ["بيت", "bayt", "home"]], "implied": ["i"], "end": "."}
+{"sentence": "we-going-home", "t": [["نذهب", "nadhhab", "go"], ["إلى", "ilā", "@direction"], ["ال-", "al", "@the"], ["بيت", "bayt", "home"]], "implied": ["we"], "end": "."}
+{"sentence": "lets-go", "t": [["هيا", "hayyā", "let-us"], ["نذهب", "nadhhab", "go"]], "end": "."}
+{"sentence": "live-moscow", "t": [["أسكن", "askun", "live"], ["في", "fī", "@place"], ["موسكو", "Mūskū", "moscow"]], "implied": ["i"], "end": "."}
 {"sentence": "live-cairo", "t": [["أسكن", "askun", "live"], ["في", "fī", "@place"], ["القاهرة", "al-Qāhira", "cairo"]], "implied": ["i"], "end": "."}
+{"sentence": "live-beijing", "t": [["أسكن", "askun", "live"], ["في", "fī", "@place"], ["بكين", "Bikīn", "beijing"]], "implied": ["i"], "end": "."}
+{"sentence": "i-sleep", "t": [["أنام", "anām", "sleep"]], "implied": ["i"], "end": "."}
+{"sentence": "i-fight", "t": [["أقاتل", "uqātil", "fight"]], "implied": ["i"], "end": "."}
+{"sentence": "we-fight", "t": [["نقاتل", "nuqātil", "fight"]], "implied": ["we"], "end": "."}
+{"sentence": "sleep-command", "t": [["نم", "nam", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["ال-", "al", "@the"], ["طفل", "ṭifl", "child"], ["ينام", "yanām", "sleep"]], "end": "."}
+{"sentence": "officer-sees-child", "t": [["ال-", "aḍ", "@the"], ["ضابط", "ḍābiṭ", "officer"], ["يرى", "yarā", "see"], ["ال-", "aṭ", "@the"], ["طفل", "ṭifl", "child"]], "end": "."}
+{"sentence": "captain-sees-ship", "t": [["ال-", "al", "@the"], ["قبطان", "qubṭān", "captain"], ["يرى", "yarā", "see"], ["ال-", "as", "@the"], ["سفينة", "safīna", "ship"]], "end": "."}
+{"sentence": "i-see-ship", "t": [["أرى", "arā", "see"], ["ال-", "as", "@the"], ["سفينة", "safīna", "ship"]], "implied": ["i"], "end": "."}
 {"sentence": "print-word", "t": [["اطبع", "iṭbaʿ", "print"], ["ال-", "al", "@the"], ["كلمة", "kalima", "word"]], "end": "."}
 {"sentence": "show-number", "t": [["اعرض", "iʿriḍ", "print"], ["ال-", "ar", "@the"], ["رقم", "raqm", "number"]], "end": "."}
 {"sentence": "print-screen", "t": [["اطبع", "iṭbaʿ", "print"], ["ال-", "al", "@the"], ["كلمة", "kalima", "word"], ["على", "ʿalā", "@place"], ["ال-", "ash", "@the"], ["شاشة", "shāsha", "screen"]], "end": "."}
