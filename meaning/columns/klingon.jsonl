@@ -1,11 +1,85 @@
-{"schema": "columns@1", "language": "klingon", "notes": ["Klingon column of the meaning matrix. Written for this project. Tokens are [text, \"\", meaning id]: the text is already romanized and pIqaD is drawn from it. Prefixes end in \"-\", suffixes start with \"-\". Klingon puts the object first and the subject last: \"puq legh yaS\" is child, sees, officer, and means the officer sees the child."], "sep": " ", "caseSensitive": true}
+{"schema": "columns@1", "language": "klingon", "notes": ["Klingon column of the meaning matrix. Written for this project. Tokens are [text, \"\", meaning id]: the text is already romanized and pIqaD is drawn from it. Prefixes end in \"-\", suffixes start with \"-\". Klingon puts the object first and the subject last: \"puq legh yaS\" is child, sees, officer, and means the officer sees the child.", "Forms match languages/klingon/vocab.jsonl where a card exists (nuqneH, Qapla', jIyajbe', tlhIngan Hol Dajatlh'a', puchpa', qa'vIn, Dargh, DuSaQ, paq, raS, vIghro', chenmoH, chel, De', HaSta, tetlh, mu', mI'). Other lemmas are transparent project coinages or usual learner transliterations (puHDuj car/bus, lupDuj train, Dujpa' station, mebpa' hotel, ghojwI' student, qatlho' thanks, language names as X Hol).", "Code rows use the singular object imperative (mu' yIcha'.): cha' for print/show, tagh/mev for start/end, qIb for loop (circle), qa' for repeat, -logh for times, cher for set, chenmoH for create, chegh for return, qem for load, Sar for sort, Qap for run, choH for variable, lo'laH for value, Qu' for program.", "Bare Dajatlh'a' cannot be a second rendering of speak-klingon under columns@1 (one rendering per sentence; no Klingon-side also). Implying klingon on Da- jatlh -'a' alone would invent object-drop the usual phrase does not use, so speak-klingon stays tlhIngan Hol Dajatlh'a'."], "sep": " ", "caseSensitive": true}
+{"sentence": "i-am-student", "t": [["ghojwI'", "", "student"], ["jIH", "", "i"]], "end": ""}
+{"sentence": "name-tanaka", "t": [["Tanaka", "", "tanaka"], ["'oH", "", "@copula"], ["pong", "", "name"], ["-wIj", "", "i"], ["-'e'", "", "@topic"]], "end": ""}
+{"sentence": "name-minjun", "t": [["Minjun", "", "minjun"], ["'oH", "", "@copula"], ["pong", "", "name"], ["-wIj", "", "i"], ["-'e'", "", "@topic"]], "end": ""}
+{"sentence": "name-anna", "t": [["Anna", "", "anna"], ["'oH", "", "@copula"], ["pong", "", "name"], ["-wIj", "", "i"], ["-'e'", "", "@topic"]], "end": ""}
+{"sentence": "name-ravi", "t": [["Ravi", "", "ravi"], ["'oH", "", "@copula"], ["pong", "", "name"], ["-wIj", "", "i"], ["-'e'", "", "@topic"]], "end": ""}
+{"sentence": "name-sami", "t": [["Sami", "", "sami"], ["'oH", "", "@copula"], ["pong", "", "name"], ["-wIj", "", "i"], ["-'e'", "", "@topic"]], "end": ""}
+{"sentence": "name-wang-ming", "t": [["Wang Ming", "", "wang-ming"], ["'oH", "", "@copula"], ["pong", "", "name"], ["-wIj", "", "i"], ["-'e'", "", "@topic"]], "end": ""}
+{"sentence": "your-name", "t": [["nuq", "", "what"], ["'oH", "", "@copula"], ["pong", "", "name"], ["-lIj", "", "you"], ["-'e'", "", "@topic"]], "end": ""}
 {"sentence": "hello", "t": [["nuqneH", "", "hello"]], "end": ""}
+{"sentence": "nice-to-meet-you", "t": [["qaleghneS", "", "nice-to-meet-you"]], "end": ""}
+{"sentence": "good-morning", "t": [["QaQ", "", "good"], ["po", "", "morning"]], "end": ""}
+{"sentence": "thank-you", "t": [["qatlho'", "", "thanks"]], "end": ""}
+{"sentence": "thank-you-very-much", "t": [["qatlho'", "", "thanks"], ["-qu'", "", "very-much"]], "end": ""}
 {"sentence": "success", "t": [["Qapla'", "", "success"]], "end": "!"}
 {"sentence": "dont-understand", "t": [["jI-", "", "i"], ["yaj", "", "understand"], ["-be'", "", "not"]], "end": ""}
+{"sentence": "dont-know", "t": [["jI-", "", "i"], ["Sov", "", "know"], ["-be'", "", "not"]], "end": ""}
+{"sentence": "speak-english", "t": [["DIvI'", "", "english"], ["Hol", "", "@language"], ["Da-", "", "you"], ["jatlh", "", "speak"], ["-'a'", "", "@question"]], "end": ""}
+{"sentence": "speak-chinese", "t": [["jungwoq", "", "chinese"], ["Hol", "", "@language"], ["Da-", "", "you"], ["jatlh", "", "speak"], ["-'a'", "", "@question"]], "end": ""}
+{"sentence": "speak-arabic", "t": [["'arab", "", "arabic"], ["Hol", "", "@language"], ["Da-", "", "you"], ["jatlh", "", "speak"], ["-'a'", "", "@question"]], "end": ""}
 {"sentence": "speak-klingon", "t": [["tlhIngan", "", "klingon"], ["Hol", "", "@language"], ["Da-", "", "you"], ["jatlh", "", "speak"], ["-'a'", "", "@question"]], "end": ""}
-{"sentence": "where-toilet", "t": [["nuqDaq", "", "where"], ["'oH", "", "@copula"], ["puchpa'", "", "toilet"], ["-'e'", "", "@topic"]], "end": ""}
+{"sentence": "speak-hindi", "t": [["hinDI", "", "hindi"], ["Hol", "", "@language"], ["vI-", "", "i"], ["jatlh", "", "speak"]], "end": ""}
+{"sentence": "study-korean", "t": [["qoreya'", "", "korean"], ["Hol", "", "@language"], ["vI-", "", "i"], ["ghoj", "", "study"]], "end": ""}
+{"sentence": "like-sushi", "t": [["SuSI", "", "sushi"], ["vI-", "", "i"], ["parHa'", "", "like"]], "end": ""}
+{"sentence": "like-coffee", "t": [["qa'vIn", "", "coffee"], ["vI-", "", "i"], ["parHa'", "", "like"]], "end": ""}
+{"sentence": "like-tea", "t": [["Dargh", "", "tea"], ["vI-", "", "i"], ["parHa'", "", "like"]], "end": ""}
+{"sentence": "love-you", "t": [["qa-", "", "i"], ["muSHa'", "", "love"]], "implied": ["you"], "end": ""}
+{"sentence": "met-friend", "t": [["wa'Hu'", "", "yesterday"], ["jup", "", "friend"], ["vI-", "", "i"], ["ghom", "", "meet"], ["-pu'", "", "@past"]], "end": ""}
+{"sentence": "my-friend", "t": [["jup", "", "friend"], ["-wI'", "", "i"], ["ghaH", "", "he"]], "end": ""}
+{"sentence": "who-is-he", "t": [["'Iv", "", "who"], ["ghaH", "", "he"]], "end": ""}
+{"sentence": "where-live", "t": [["nuqDaq", "", "where"], ["bI-", "", "you"], ["Dab", "", "live"]], "end": ""}
+{"sentence": "from-egypt", "t": [["'IjIpIt", "", "egypt"], ["-vo'", "", "from"], ["jIH", "", "i"]], "end": ""}
 {"sentence": "we-are-klingons", "t": [["tlhIngan", "", "klingon"], ["maH", "", "we"]], "end": ""}
+{"sentence": "this-is-book", "t": [["paq", "", "book"], ["'oH", "", "@copula"], ["Dochvam", "", "this"], ["-'e'", "", "@topic"]], "end": ""}
+{"sentence": "this-is-my-book", "t": [["paq", "", "book"], ["-wIj", "", "i"], ["'oH", "", "@copula"], ["Dochvam", "", "this"], ["-'e'", "", "@topic"]], "end": ""}
+{"sentence": "drink-water", "t": [["bIQ", "", "water"], ["vI-", "", "i"], ["tlhutlh", "", "drink"]], "end": ""}
+{"sentence": "drink-tea", "t": [["Dargh", "", "tea"], ["vI-", "", "i"], ["tlhutlh", "", "drink"]], "end": ""}
+{"sentence": "want-coffee", "t": [["qa'vIn", "", "coffee"], ["vI-", "", "i"], ["neH", "", "want"]], "end": ""}
+{"sentence": "read-book", "t": [["paq", "", "book"], ["vI-", "", "i"], ["laD", "", "read"]], "end": ""}
+{"sentence": "eat-rice", "t": [["tIr", "", "rice"], ["wI-", "", "we"], ["Sop", "", "eat"]], "end": ""}
+{"sentence": "eat-food", "t": [["Soj", "", "food"], ["vI-", "", "i"], ["Sop", "", "eat"]], "end": ""}
+{"sentence": "lunch-restaurant", "t": [["Qe'", "", "restaurant"], ["-Daq", "", "@place"], ["nIQ", "", "lunch"], ["vI-", "", "i"], ["Sop", "", "eat"]], "end": ""}
+{"sentence": "eat-restaurant", "t": [["Qe'", "", "restaurant"], ["-Daq", "", "@place"], ["vI-", "", "i"], ["Sop", "", "eat"]], "end": ""}
+{"sentence": "hot-today", "t": [["DaHjaj", "", "today"], ["tuj", "", "hot"]], "end": ""}
+{"sentence": "cold-today", "t": [["DaHjaj", "", "today"], ["bIr", "", "cold"]], "end": ""}
+{"sentence": "weather-hot", "t": [["muD", "", "weather"], ["tuj", "", "hot"], ["DaHjaj", "", "today"]], "end": ""}
+{"sentence": "weather-good", "t": [["DaHjaj", "", "today"], ["muD", "", "weather"], ["QaQ", "", "good"]], "end": ""}
+{"sentence": "raining", "t": [["SIS", "", "rain"]], "end": ""}
+{"sentence": "monday", "t": [["DaSjaj", "", "monday"], ["'oH", "", "@copula"], ["DaHjaj", "", "today"], ["-'e'", "", "@topic"]], "end": ""}
+{"sentence": "what-time", "t": [["nuq", "", "what"], ["'oH", "", "@copula"], ["rep", "", "time"], ["-'e'", "", "@topic"]], "end": ""}
+{"sentence": "what-time-now", "t": [["DaH", "", "now"], ["nuq", "", "what"], ["'oH", "", "@copula"], ["rep", "", "time"], ["-'e'", "", "@topic"]], "end": ""}
+{"sentence": "no-time", "t": [["rep", "", "time"], ["pagh", "", "none"]], "end": ""}
+{"sentence": "there-is-cat", "t": [["vIghro'", "", "cat"], ["tu'lu'", "", "exist"]], "end": ""}
+{"sentence": "have-cat", "t": [["vIghro'", "", "cat"], ["vI-", "", "i"], ["ghaj", "", "have"]], "end": ""}
+{"sentence": "book-on-table", "t": [["raS", "", "table"], ["-Daq", "", "on"], ["paq", "", "book"], ["tu'lu'", "", "exist"]], "end": ""}
+{"sentence": "house-big", "t": [["qach", "", "house"], ["tIn", "", "big"]], "end": ""}
+{"sentence": "car-new", "t": [["puHDuj", "", "car"], ["chu'", "", "new"]], "end": ""}
+{"sentence": "delicious", "t": [["'ey", "", "delicious"]], "end": ""}
+{"sentence": "food-tasty", "t": [["Soj", "", "food"], ["'ey", "", "delicious"], ["-qu'", "", "very"]], "end": ""}
+{"sentence": "head-hurts", "t": [["nach", "", "head"], ["-wIj", "", "i"], ["'oy'", "", "hurt"]], "end": ""}
 {"sentence": "hungry", "t": [["jI-", "", "i"], ["ghung", "", "hungry"]], "end": ""}
+{"sentence": "give-water", "t": [["bIQ", "", "water"], ["HI-", "", "i"], ["nob", "", "give"], ["-neS", "", "please"]], "end": ""}
+{"sentence": "wait-moment", "t": [["lup", "", "moment"], ["yI-", "", "@command"], ["loS", "", "wait"], ["-neS", "", "please"]], "end": ""}
+{"sentence": "sit-down", "t": [["yI-", "", "@command"], ["ba'", "", "sit"], ["-neS", "", "please"]], "end": ""}
+{"sentence": "where-station", "t": [["nuqDaq", "", "where"], ["'oH", "", "@copula"], ["Dujpa'", "", "station"], ["-'e'", "", "@topic"]], "end": ""}
+{"sentence": "where-toilet", "t": [["nuqDaq", "", "where"], ["'oH", "", "@copula"], ["puchpa'", "", "toilet"], ["-'e'", "", "@topic"]], "end": ""}
+{"sentence": "where-hotel", "t": [["nuqDaq", "", "where"], ["'oH", "", "@copula"], ["mebpa'", "", "hotel"], ["-'e'", "", "@topic"]], "end": ""}
+{"sentence": "how-much-this", "t": [["Dochvam", "", "this"], ["'ar", "", "how-much"]], "end": ""}
+{"sentence": "how-much-is-it", "t": [["'ar", "", "how-much"]], "end": ""}
+{"sentence": "how-much-cost", "t": [["Dil", "", "cost"], ["'ar", "", "how-much"]], "end": ""}
+{"sentence": "bill-please", "t": [["tetlh", "", "bill"], ["neS", "", "please"]], "end": ""}
+{"sentence": "go-school", "t": [["DuSaQ", "", "school"], ["-Daq", "", "@direction"], ["jI-", "", "i"], ["jaH", "", "go"]], "end": ""}
+{"sentence": "bus-school", "t": [["puHDuj'a'", "", "bus"], ["-Daq", "", "@means"], ["DuSaQ", "", "school"], ["-Daq", "", "@direction"], ["jI-", "", "i"], ["jaH", "", "go"]], "end": ""}
+{"sentence": "go-tokyo", "t": [["tokyo", "", "tokyo"], ["-Daq", "", "@direction"], ["jaH", "", "go"], ["vI-", "", "i"], ["neH", "", "want"]], "end": ""}
+{"sentence": "came-train", "t": [["lupDuj", "", "train"], ["vI-", "", "i"], ["paw", "", "come"], ["-pu'", "", "@past"]], "end": ""}
+{"sentence": "where-going", "t": [["nuqDaq", "", "where"], ["bI-", "", "you"], ["jaH", "", "go"]], "end": ""}
+{"sentence": "going-home", "t": [["juH", "", "home"], ["-Daq", "", "@direction"], ["jI-", "", "i"], ["jaH", "", "go"]], "end": ""}
+{"sentence": "we-going-home", "t": [["juH", "", "home"], ["-Daq", "", "@direction"], ["ma-", "", "we"], ["jaH", "", "go"]], "end": ""}
+{"sentence": "lets-go", "t": [["ma-", "", "let-us"], ["jaH", "", "go"]], "end": ""}
+{"sentence": "live-moscow", "t": [["awSqow'", "", "moscow"], ["-Daq", "", "@place"], ["jI-", "", "i"], ["Dab", "", "live"]], "end": ""}
+{"sentence": "live-cairo", "t": [["qayro'", "", "cairo"], ["-Daq", "", "@place"], ["jI-", "", "i"], ["Dab", "", "live"]], "end": ""}
+{"sentence": "live-beijing", "t": [["beijing", "", "beijing"], ["-Daq", "", "@place"], ["jI-", "", "i"], ["Dab", "", "live"]], "end": ""}
 {"sentence": "i-sleep", "t": [["jI-", "", "i"], ["Qong", "", "sleep"]], "end": ""}
 {"sentence": "i-fight", "t": [["jI-", "", "i"], ["Suv", "", "fight"]], "end": ""}
 {"sentence": "we-fight", "t": [["ma-", "", "we"], ["Suv", "", "fight"]], "end": ""}
@@ -14,5 +88,17 @@
 {"sentence": "officer-sees-child", "t": [["puq", "", "child"], ["legh", "", "see"], ["yaS", "", "officer"]], "end": ""}
 {"sentence": "captain-sees-ship", "t": [["Duj", "", "ship"], ["legh", "", "see"], ["HoD", "", "captain"]], "end": ""}
 {"sentence": "i-see-ship", "t": [["Duj", "", "ship"], ["vI-", "", "i"], ["legh", "", "see"]], "end": ""}
-{"sentence": "eat-food", "t": [["Soj", "", "food"], ["vI-", "", "i"], ["Sop", "", "eat"]], "end": ""}
-{"sentence": "drink-water", "t": [["bIQ", "", "water"], ["vI-", "", "i"], ["tlhutlh", "", "drink"]], "end": ""}
+{"sentence": "print-word", "t": [["mu'", "", "word"], ["yI-", "", "@command"], ["cha'", "", "print"]], "end": ""}
+{"sentence": "show-number", "t": [["mI'", "", "number"], ["yI-", "", "@command"], ["cha'", "", "print"]], "end": ""}
+{"sentence": "print-screen", "t": [["HaSta", "", "screen"], ["-Daq", "", "@place"], ["mu'", "", "word"], ["yI-", "", "@command"], ["cha'", "", "print"]], "end": ""}
+{"sentence": "start-loop", "t": [["qIb", "", "loop"], ["yI-", "", "@command"], ["tagh", "", "start"]], "end": ""}
+{"sentence": "end-loop", "t": [["qIb", "", "loop"], ["yI-", "", "@command"], ["mev", "", "end"]], "end": ""}
+{"sentence": "repeat-three", "t": [["wej", "", "three"], ["-logh", "", "times"], ["yI-", "", "@command"], ["qa'", "", "repeat"]], "end": ""}
+{"sentence": "count-to-ten", "t": [["wa'", "", "one"], ["-vo'", "", "from"], ["wa'maH", "", "ten"], ["-Daq", "", "@until"], ["yI-", "", "@command"], ["mI'", "", "count"]], "end": ""}
+{"sentence": "set-value", "t": [["lo'laH", "", "value"], ["yI-", "", "@command"], ["cher", "", "set"]], "end": ""}
+{"sentence": "create-variable", "t": [["choH", "", "variable"], ["yI-", "", "@command"], ["chenmoH", "", "create"]], "end": ""}
+{"sentence": "return-value", "t": [["lo'laH", "", "value"], ["yI-", "", "@command"], ["chegh", "", "return"]], "end": ""}
+{"sentence": "load-data", "t": [["De'", "", "data"], ["yI-", "", "@command"], ["qem", "", "load"]], "end": ""}
+{"sentence": "add-one", "t": [["wa'", "", "one"], ["yI-", "", "@command"], ["chel", "", "add"]], "end": ""}
+{"sentence": "sort-list", "t": [["tetlh", "", "list"], ["yI-", "", "@command"], ["Sar", "", "sort"]], "end": ""}
+{"sentence": "run-program", "t": [["Qu'", "", "program"], ["yI-", "", "@command"], ["Qap", "", "run"]], "end": ""}
