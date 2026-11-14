@@ -1,0 +1,104 @@
+{"schema": "columns@1", "language": "gujarati", "notes": ["Gujarati column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. The romanization matches the simplified scheme in languages/gujarati (doubled long vowels; chh for છ). Gujarati uses the ordinary full stop, not the danda।", "Subject pronouns are usually written. The present auxiliaries છું / છે / છો / છીએ carry @copula or @present; progressive રહ્યો / રહી / રહ્યું carry @ongoing. Postpositions માં / પર / થી / ને / નું are their own tokens (@place, from, @object, @of).", "Sources: forms match languages/gujarati/vocab.jsonl, reference.json, and the Gujarati grammar pack (હું વિદ્યાર્થી છું, તમારું નામ શું છે?, શું તમે અંગ્રેજી બોલો છો?, હું સમજતો નથી, મને ખબર નથી, આ કેટલાનું છે?, વરસાદ પડી રહ્યો છે, મને … ગમે છે, મારે … જોઈએ / જવું છે, ચાલો જઈએ, તમને મળીને આનંદ થયો). Forms match languages/gujarati/vocab.jsonl where a card exists; other lemmas follow standard Gujarati (Wiktionary CC BY-SA 4.0 consulted for spelling and romanization)."], "sep": " "}
+{"sentence": "i-am-student", "t": [["હું", "hun", "i"], ["વિદ્યાર્થી", "vidyaarthii", "student"], ["છું", "chhun", "@copula"]], "end": "."}
+{"sentence": "name-tanaka", "t": [["મારું", "maarun", "i"], ["નામ", "naam", "name"], ["તનાકા", "Tanaakaa", "tanaka"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "name-minjun", "t": [["મારું", "maarun", "i"], ["નામ", "naam", "name"], ["મિનજુન", "Minjun", "minjun"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "name-anna", "t": [["મારું", "maarun", "i"], ["નામ", "naam", "name"], ["અન્ના", "Annaa", "anna"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "name-ravi", "t": [["મારું", "maarun", "i"], ["નામ", "naam", "name"], ["રવિ", "Ravi", "ravi"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "name-sami", "t": [["મારું", "maarun", "i"], ["નામ", "naam", "name"], ["સામી", "Saamii", "sami"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "name-wang-ming", "t": [["મારું", "maarun", "i"], ["નામ", "naam", "name"], ["વાંગ મિંગ", "Vaang Ming", "wang-ming"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "your-name", "t": [["તમારું", "tamaarun", "you"], ["નામ", "naam", "name"], ["શું", "shun", "what"], ["છે", "chhe", "@copula"]], "end": "?"}
+{"sentence": "hello", "t": [["નમસ્તે", "namaste", "hello"]], "end": "."}
+{"sentence": "nice-to-meet-you", "t": [["તમને મળીને આનંદ થયો", "tamne maliine aanand thayo", "nice-to-meet-you"]], "end": "."}
+{"sentence": "good-morning", "t": [["સુપ્રભાત", "suprabhaat", "good+morning"]], "end": "."}
+{"sentence": "thank-you", "t": [["આભાર", "aabhaar", "thanks"]], "end": "."}
+{"sentence": "thank-you-very-much", "t": [["ખૂબ", "khuub", "very-much"], ["આભાર", "aabhaar", "thanks"]], "end": "."}
+{"sentence": "success", "t": [["સફળતા", "saphaltaa", "success"]], "end": "!"}
+{"sentence": "dont-understand", "t": [["હું", "hun", "i"], ["સમજતો", "samajto", "understand"], ["નથી", "nathii", "not"]], "end": "."}
+{"sentence": "dont-know", "t": [["મને", "mane", "i"], ["ખબર", "khabar", "know"], ["નથી", "nathii", "not"]], "end": "."}
+{"sentence": "speak-english", "t": [["શું", "shun", "@question"], ["તમે", "tame", "you"], ["અંગ્રેજી", "angrejii", "english"], ["બોલો", "bolo", "speak"], ["છો", "chho", "@present"]], "end": "?"}
+{"sentence": "speak-chinese", "t": [["શું", "shun", "@question"], ["તમે", "tame", "you"], ["ચીની", "chiinii", "chinese"], ["બોલો", "bolo", "speak"], ["છો", "chho", "@present"]], "end": "?"}
+{"sentence": "speak-arabic", "t": [["શું", "shun", "@question"], ["તમે", "tame", "you"], ["અરબી", "arabii", "arabic"], ["બોલો", "bolo", "speak"], ["છો", "chho", "@present"]], "end": "?"}
+{"sentence": "speak-klingon", "t": [["શું", "shun", "@question"], ["તમે", "tame", "you"], ["ક્લિંગન", "klingan", "klingon"], ["બોલો", "bolo", "speak"], ["છો", "chho", "@present"]], "end": "?"}
+{"sentence": "speak-hindi", "t": [["હું", "hun", "i"], ["હિન્દી", "hindii", "hindi"], ["બોલું", "bolun", "speak"], ["છું", "chhun", "@present"]], "end": "."}
+{"sentence": "study-korean", "t": [["હું", "hun", "i"], ["કોરિયન", "koriyan", "korean"], ["ભણું", "bhanun", "study"], ["છું", "chhun", "@present"]], "end": "."}
+{"sentence": "like-sushi", "t": [["મને", "mane", "i"], ["સુશી", "sushii", "sushi"], ["ગમે", "game", "like"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "like-coffee", "t": [["મને", "mane", "i"], ["કૉફી", "kofii", "coffee"], ["ગમે", "game", "like"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "like-tea", "t": [["મને", "mane", "i"], ["ચા", "chaa", "tea"], ["ગમે", "game", "like"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "love-you", "t": [["હું", "hun", "i"], ["તને", "tane", "you"], ["પ્રેમ કરું છું", "prem karun chhun", "love"]], "end": "."}
+{"sentence": "met-friend", "t": [["હું", "hun", "i"], ["ગઈ કાલે", "gaii kaale", "yesterday"], ["એક", "ek", "@one"], ["મિત્રને", "mitrane", "friend"], ["મળ્યો", "malyo", "meet+@past"]], "end": "."}
+{"sentence": "my-friend", "t": [["તે", "te", "he"], ["મારો", "maaro", "i"], ["મિત્ર", "mitra", "friend"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "who-is-he", "t": [["તે", "te", "he"], ["કોણ", "kon", "who"], ["છે", "chhe", "@copula"]], "end": "?"}
+{"sentence": "where-live", "t": [["તમે", "tame", "you"], ["ક્યાં", "kyaan", "where"], ["રહો", "raho", "live"], ["છો", "chho", "@present"]], "end": "?"}
+{"sentence": "from-egypt", "t": [["હું", "hun", "i"], ["ઈજિપ્ત", "Iijipt", "egypt"], ["થી", "thii", "from"], ["છું", "chhun", "@copula"]], "end": "."}
+{"sentence": "we-are-klingons", "t": [["અમે", "ame", "we"], ["ક્લિંગન", "klingan", "klingon"], ["છીએ", "chhiie", "@copula"]], "end": "."}
+{"sentence": "this-is-book", "t": [["આ", "aa", "this"], ["પુસ્તક", "pustak", "book"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "this-is-my-book", "t": [["આ", "aa", "this"], ["મારું", "maarun", "i"], ["પુસ્તક", "pustak", "book"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "drink-water", "t": [["હું", "hun", "i"], ["પાણી", "paanii", "water"], ["પીઉં", "piiuun", "drink"], ["છું", "chhun", "@present"]], "end": "."}
+{"sentence": "drink-tea", "t": [["હું", "hun", "i"], ["ચા", "chaa", "tea"], ["પીઉં", "piiuun", "drink"], ["છું", "chhun", "@present"]], "end": "."}
+{"sentence": "want-coffee", "t": [["મને", "mane", "i"], ["કૉફી", "kofii", "coffee"], ["જોઈએ", "joiie", "want"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "read-book", "t": [["હું", "hun", "i"], ["પુસ્તક", "pustak", "book"], ["વાંચું", "vaanchun", "read"], ["છું", "chhun", "@present"]], "end": "."}
+{"sentence": "eat-rice", "t": [["અમે", "ame", "we"], ["ભાત", "bhaat", "rice"], ["ખાઈએ", "khaaiie", "eat"], ["છીએ", "chhiie", "@present"]], "end": "."}
+{"sentence": "eat-food", "t": [["હું", "hun", "i"], ["ખોરાક", "khoraak", "food"], ["ખાઉં", "khaaun", "eat"], ["છું", "chhun", "@present"]], "end": "."}
+{"sentence": "lunch-restaurant", "t": [["હું", "hun", "i"], ["રેસ્ટોરન્ટ", "restorant", "restaurant"], ["માં", "maan", "@place"], ["બપોરનું ભોજન", "bapornun bhojan", "lunch"], ["ખાઉં", "khaaun", "eat"], ["છું", "chhun", "@present"]], "end": "."}
+{"sentence": "eat-restaurant", "t": [["હું", "hun", "i"], ["રેસ્ટોરન્ટ", "restorant", "restaurant"], ["માં", "maan", "@place"], ["ખાઉં", "khaaun", "eat"], ["છું", "chhun", "@present"]], "end": "."}
+{"sentence": "hot-today", "t": [["આજે", "aaje", "today"], ["ગરમી", "garmii", "hot"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "cold-today", "t": [["આજે", "aaje", "today"], ["ઠંડી", "thandii", "cold"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "weather-hot", "t": [["આજે", "aaje", "today"], ["હવામાન", "havaamaan", "weather"], ["ગરમ", "garam", "hot"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "weather-good", "t": [["આજે", "aaje", "today"], ["હવામાન", "havaamaan", "weather"], ["સારું", "saarun", "good"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "raining", "t": [["વરસાદ", "varsaad", "rain"], ["પડી", "padii", "@happen"], ["રહ્યો", "rahyo", "@ongoing"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "monday", "t": [["આજે", "aaje", "today"], ["સોમવાર", "somvaar", "monday"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "what-time", "t": [["કેટલા વાગ્યા", "ketlaa vaagyaa", "what+time"], ["છે", "chhe", "@copula"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["હમણાં", "hamnaan", "now"], ["કેટલા વાગ્યા", "ketlaa vaagyaa", "what+time"], ["છે", "chhe", "@copula"]], "end": "?"}
+{"sentence": "no-time", "t": [["સમય", "samay", "time"], ["નથી", "nathii", "none"]], "end": "."}
+{"sentence": "there-is-cat", "t": [["એક", "ek", "@one"], ["બિલાડી", "bilaadii", "cat"], ["છે", "chhe", "exist"]], "end": "."}
+{"sentence": "have-cat", "t": [["મારી", "maarii", "i"], ["પાસે", "paase", "@possession"], ["એક", "ek", "@one"], ["બિલાડી", "bilaadii", "cat"], ["છે", "chhe", "have"]], "end": "."}
+{"sentence": "book-on-table", "t": [["ટેબલ", "tebal", "table"], ["પર", "par", "on"], ["એક", "ek", "@one"], ["પુસ્તક", "pustak", "book"], ["છે", "chhe", "exist"]], "end": "."}
+{"sentence": "house-big", "t": [["ઘર", "ghar", "house"], ["મોટું", "motun", "big"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "car-new", "t": [["ગાડી", "gaadii", "car"], ["નવી", "navii", "new"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "delicious", "t": [["સ્વાદિષ્ટ", "svaadisht", "delicious"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "food-tasty", "t": [["ખોરાક", "khoraak", "food"], ["ખૂબ", "khuub", "very"], ["સ્વાદિષ્ટ", "svaadisht", "delicious"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "head-hurts", "t": [["મને", "mane", "i"], ["માથું", "maathun", "head"], ["દુખે", "dukhe", "hurt"], ["છે", "chhe", "@copula"]], "end": "."}
+{"sentence": "hungry", "t": [["મને", "mane", "i"], ["ભૂખ", "bhuukh", "hungry"], ["લાગી છે", "laagii chhe", "@happen"]], "end": "."}
+{"sentence": "give-water", "t": [["મને", "mane", "i"], ["પાણી", "paanii", "water"], ["આપો", "aapo", "give+please"]], "end": "."}
+{"sentence": "wait-moment", "t": [["મહેરબાની કરીને", "maherbaanii kariine", "please"], ["એક", "ek", "@one"], ["ક્ષણ", "kshan", "moment"], ["રાહ જુઓ", "raah juo", "wait"]], "end": "."}
+{"sentence": "sit-down", "t": [["મહેરબાની કરીને", "maherbaanii kariine", "please"], ["બેસો", "beso", "sit"]], "end": "."}
+{"sentence": "where-station", "t": [["સ્ટેશન", "steshan", "station"], ["ક્યાં", "kyaan", "where"], ["છે", "chhe", "@copula"]], "end": "?"}
+{"sentence": "where-toilet", "t": [["બાથરૂમ", "baathruum", "toilet"], ["ક્યાં", "kyaan", "where"], ["છે", "chhe", "@copula"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["હોટલ", "hotal", "hotel"], ["ક્યાં", "kyaan", "where"], ["છે", "chhe", "@copula"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["આ", "aa", "this"], ["કેટલાનું", "ketlaanun", "how-much"], ["છે", "chhe", "@copula"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["કેટલાનું", "ketlaanun", "how-much"], ["છે", "chhe", "@copula"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["આની કિંમત", "aanii kimmat", "cost"], ["કેટલી", "ketlii", "how-much"], ["છે", "chhe", "@copula"]], "end": "?"}
+{"sentence": "bill-please", "t": [["બિલ", "bil", "bill"], ["મહેરબાની કરીને", "maherbaanii kariine", "please"]], "end": "."}
+{"sentence": "go-school", "t": [["હું", "hun", "i"], ["શાળા", "shaalaa", "school"], ["જાઉં", "jaaun", "go"], ["છું", "chhun", "@present"]], "end": "."}
+{"sentence": "bus-school", "t": [["હું", "hun", "i"], ["બસ", "bas", "bus"], ["થી", "thii", "@means"], ["શાળા", "shaalaa", "school"], ["જાઉં", "jaaun", "go"], ["છું", "chhun", "@present"]], "end": "."}
+{"sentence": "go-tokyo", "t": [["મારે", "maare", "i"], ["ટોક્યો", "Tookyo", "tokyo"], ["જવું", "javun", "go"], ["છે", "chhe", "want"]], "end": "."}
+{"sentence": "came-train", "t": [["હું", "hun", "i"], ["ટ્રેન", "tren", "train"], ["થી", "thii", "@means"], ["આવ્યો", "aavyo", "come+@past"]], "end": "."}
+{"sentence": "where-going", "t": [["તમે", "tame", "you"], ["ક્યાં", "kyaan", "where"], ["જઈ", "jaii", "go"], ["રહ્યા", "rahyaa", "@ongoing"], ["છો", "chho", "@copula"]], "end": "?"}
+{"sentence": "going-home", "t": [["હું", "hun", "i"], ["ઘરે", "ghare", "home"], ["જઈ", "jaii", "go"], ["રહ્યો", "rahyo", "@ongoing"], ["છું", "chhun", "@copula"]], "end": "."}
+{"sentence": "we-going-home", "t": [["અમે", "ame", "we"], ["ઘરે", "ghare", "home"], ["જઈ", "jaii", "go"], ["રહ્યા", "rahyaa", "@ongoing"], ["છીએ", "chhiie", "@copula"]], "end": "."}
+{"sentence": "lets-go", "t": [["ચાલો જઈએ", "chaalo jaiie", "let-us+go"]], "end": "."}
+{"sentence": "live-moscow", "t": [["હું", "hun", "i"], ["મોસ્કો", "Mosko", "moscow"], ["માં", "maan", "@place"], ["રહું", "rahun", "live"], ["છું", "chhun", "@present"]], "end": "."}
+{"sentence": "live-cairo", "t": [["હું", "hun", "i"], ["કાઇરો", "Kaairo", "cairo"], ["માં", "maan", "@place"], ["રહું", "rahun", "live"], ["છું", "chhun", "@present"]], "end": "."}
+{"sentence": "live-beijing", "t": [["હું", "hun", "i"], ["બેઇજિંગ", "Beiijing", "beijing"], ["માં", "maan", "@place"], ["રહું", "rahun", "live"], ["છું", "chhun", "@present"]], "end": "."}
+{"sentence": "i-sleep", "t": [["હું", "hun", "i"], ["સૂઈ", "suui", "sleep"], ["છું", "chhun", "@present"]], "end": "."}
+{"sentence": "i-fight", "t": [["હું", "hun", "i"], ["લડું", "ladun", "fight"], ["છું", "chhun", "@present"]], "end": "."}
+{"sentence": "we-fight", "t": [["અમે", "ame", "we"], ["લડીએ", "ladiie", "fight"], ["છીએ", "chhiie", "@present"]], "end": "."}
+{"sentence": "sleep-command", "t": [["સૂઈ જા", "suui jaa", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["બાળક", "baalak", "child"], ["સૂઈ", "suui", "sleep"], ["છે", "chhe", "@present"]], "end": "."}
+{"sentence": "officer-sees-child", "t": [["અધિકારી", "adhikaarii", "officer"], ["બાળકને", "baalakne", "child"], ["જુએ", "jue", "see"], ["છે", "chhe", "@present"]], "end": "."}
+{"sentence": "captain-sees-ship", "t": [["કપ્તાન", "kaptaan", "captain"], ["જહાજને", "jahaajne", "ship"], ["જુએ", "jue", "see"], ["છે", "chhe", "@present"]], "end": "."}
+{"sentence": "i-see-ship", "t": [["હું", "hun", "i"], ["જહાજને", "jahaajne", "ship"], ["જોઉં", "jovun", "see"], ["છું", "chhun", "@present"]], "end": "."}
+{"sentence": "print-word", "t": [["શબ્દ", "shabd", "word"], ["છાપો", "chhaapo", "print"]], "end": "."}
+{"sentence": "show-number", "t": [["આંકડો", "aankado", "number"], ["બતાવો", "bataavo", "print"]], "end": "."}
+{"sentence": "print-screen", "t": [["સ્ક્રીન", "skriin", "screen"], ["પર", "par", "@place"], ["શબ્દ", "shabd", "word"], ["છાપો", "chhaapo", "print"]], "end": "."}
+{"sentence": "start-loop", "t": [["લૂપ", "luup", "loop"], ["શરૂ કરો", "sharuu karo", "start"]], "end": "."}
+{"sentence": "end-loop", "t": [["લૂપ", "luup", "loop"], ["સમાપ્ત કરો", "samaapt karo", "end"]], "end": "."}
+{"sentence": "repeat-three", "t": [["ત્રણ", "tran", "three"], ["વાર", "vaar", "times"], ["પુનરાવર્તન કરો", "punaraavartan karo", "repeat"]], "end": "."}
+{"sentence": "count-to-ten", "t": [["એક", "ek", "one"], ["થી", "thii", "from"], ["દસ", "das", "ten"], ["સુધી", "sudhii", "@until"], ["ગણો", "gano", "count"]], "end": "."}
+{"sentence": "set-value", "t": [["કિંમત", "kimmat", "value"], ["સેટ કરો", "set karo", "set"]], "end": "."}
+{"sentence": "create-variable", "t": [["એક", "ek", "@one"], ["ચલ", "chal", "variable"], ["બનાવો", "banaavo", "create"]], "end": "."}
+{"sentence": "return-value", "t": [["કિંમત", "kimmat", "value"], ["પરત આપો", "parat aapo", "return"]], "end": "."}
+{"sentence": "load-data", "t": [["ડેટા", "detaa", "data"], ["લોડ કરો", "lod karo", "load"]], "end": "."}
+{"sentence": "add-one", "t": [["એક", "ek", "one"], ["ઉમેરો", "umero", "add"]], "end": "."}
+{"sentence": "sort-list", "t": [["યાદી", "yaadii", "list"], ["ક્રમબદ્ધ કરો", "krambaddh karo", "sort"]], "end": "."}
+{"sentence": "run-program", "t": [["પ્રોગ્રામ", "programaam", "program"], ["ચલાવો", "chalaavo", "run"]], "end": "."}
