@@ -58,7 +58,8 @@ including the code pack (#113), the 21 kana/kanji stroke redraws (#114),
 mechanical reviews for Armenian/Bengali/Georgian/Tamil/Klingon (#116),
 Gujarati/Kannada/Malayalam/Telugu columns (#117), `gen_features.py`
 `--check` payload-only (#118), and Burmese/Khmer/Lao/Mongolian columns
-(#119). Tip of `main` for this set is `d46e32d`.
+(#119), and Odia/Punjabi/Sinhala/Tibetan columns (#121). Tip of `main`
+for this set is `63cc73d`.
 
 It's due when all of these hold and the owner says "release":
 
@@ -72,6 +73,7 @@ It's due when all of these hold and the owner says "release":
 - [x] Gujarati / Kannada / Malayalam / Telugu columns (#117)
 - [x] `gen_features.py --check` ignores header SHA drift (#118)
 - [x] Burmese / Khmer / Lao / Mongolian columns (#119)
+- [x] Odia / Punjabi / Sinhala / Tibetan columns (#121)
 - [ ] CI green on `main`
 - [ ] A PR that removes "Draft." from `release-notes/v0.1.6.md` and checks
       every bullet against what merged, with nothing else in it
