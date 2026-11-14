@@ -1,0 +1,104 @@
+{"schema": "columns@1", "language": "sinhala", "notes": ["Sinhala column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. Spoken Sinhala forms as in languages/sinhala/vocab.jsonl and the grammar pack; yes/no questions use -da on the verb or @question.", "Sources: forms match languages/sinhala/vocab.jsonl, reference.json, and the Sinhala grammar pack (මම ශිෂ්‍යයෙක්, මගේ නම…, ඔබ ඉංග්‍රීසි කතා කරනවාද, මට තේරෙන්නේ නැහැ, මගේ නම කීයද, වැසිකිළිය කොහෙද, මේක කීයද, අපි යමු). Forms match languages/sinhala/vocab.jsonl where a card exists; other lemmas follow standard spoken Sinhala (Wiktionary CC BY-SA 4.0 and Wikipedia CC BY-SA 4.0 consulted for spelling and romanization)."], "sep": " "}
+{"sentence": "i-am-student", "t": [["මම", "mama", "i"], ["ශිෂ්‍යයෙක්", "shishyayek", "student"]], "end": "."}
+{"sentence": "name-tanaka", "t": [["මගේ", "mage", "i"], ["නම", "nama", "name"], ["තනකා", "Tanakaa", "tanaka"]], "end": "."}
+{"sentence": "name-minjun", "t": [["මගේ", "mage", "i"], ["නම", "nama", "name"], ["මින්ජුන්", "Minjun", "minjun"]], "end": "."}
+{"sentence": "name-anna", "t": [["මගේ", "mage", "i"], ["නම", "nama", "name"], ["ආනා", "Aanaa", "anna"]], "end": "."}
+{"sentence": "name-ravi", "t": [["මගේ", "mage", "i"], ["නම", "nama", "name"], ["රවි", "Ravi", "ravi"]], "end": "."}
+{"sentence": "name-sami", "t": [["මගේ", "mage", "i"], ["නම", "nama", "name"], ["සාමි", "Saami", "sami"]], "end": "."}
+{"sentence": "name-wang-ming", "t": [["මගේ", "mage", "i"], ["නම", "nama", "name"], ["වாंग් මිං", "Vaang Ming", "wang-ming"]], "end": "."}
+{"sentence": "your-name", "t": [["ඔබේ", "obee", "you"], ["නම", "nama", "name"], ["මොනවාද", "monavaada", "what"]], "end": "?"}
+{"sentence": "hello", "t": [["ආයුබෝවන්", "aayubovan", "hello"]], "end": "."}
+{"sentence": "nice-to-meet-you", "t": [["ඔබව හමුවීම ගැන සතුටුයි", "obava hamuwiima gana satutuyi", "nice-to-meet-you"]], "end": "."}
+{"sentence": "good-morning", "t": [["සුබ", "suba", "good"], ["උදෑසනක්", "udaesanak", "morning"]], "end": "."}
+{"sentence": "thank-you", "t": [["ස්තූතියි", "stuutiyi", "thanks"]], "end": "."}
+{"sentence": "thank-you-very-much", "t": [["බොහොම", "bohoma", "very-much"], ["ස්තූතියි", "stuutiyi", "thanks"]], "end": "."}
+{"sentence": "success", "t": [["සාර්ථකත්වය", "saarthakathvaya", "success"]], "end": "!"}
+{"sentence": "dont-understand", "t": [["මට", "mata", "i"], ["තේරෙන්නේ නැහැ", "terennee naeha", "not+understand"]], "end": "."}
+{"sentence": "dont-know", "t": [["මට", "mata", "i"], ["දන්නේ නැහැ", "dannee naeha", "not+know"]], "end": "."}
+{"sentence": "speak-english", "t": [["ඔබ", "oba", "you"], ["ඉංග්‍රීසි", "ingriisi", "english"], ["කතා කරනවාද", "kathaa karanavaada", "speak"], ["?", "?", "@question"]], "end": "?"}
+{"sentence": "speak-chinese", "t": [["ඔබ", "oba", "you"], ["චීන", "chiina", "chinese"], ["කතා කරනවාද", "kathaa karanavaada", "speak"], ["?", "?", "@question"]], "end": "?"}
+{"sentence": "speak-arabic", "t": [["ඔබ", "oba", "you"], ["අරාබි", "araabi", "arabic"], ["කතා කරනවාද", "kathaa karanavaada", "speak"], ["?", "?", "@question"]], "end": "?"}
+{"sentence": "speak-klingon", "t": [["ඔබ", "oba", "you"], ["ක්ලින්ගන්", "klingan", "klingon"], ["කතා කරනවාද", "kathaa karanavaada", "speak"], ["?", "?", "@question"]], "end": "?"}
+{"sentence": "speak-hindi", "t": [["මම", "mama", "i"], ["හින්දි", "hindhi", "hindi"], ["කතා කරනවා", "kathaa karanavaa", "speak"]], "end": "."}
+{"sentence": "study-korean", "t": [["මම", "mama", "i"], ["කොරියානු", "koriyaanu", "korean"], ["ඉගෙන ගනිමි", "igena ganimi", "study"]], "end": "."}
+{"sentence": "like-sushi", "t": [["මට", "mata", "i"], ["සුෂි", "sushi", "sushi"], ["කැමතියි", "kaematiyi", "like"]], "end": "."}
+{"sentence": "like-coffee", "t": [["මට", "mata", "i"], ["කෝපි", "koopi", "coffee"], ["කැමතියි", "kaematiyi", "like"]], "end": "."}
+{"sentence": "like-tea", "t": [["මට", "mata", "i"], ["තේ", "the", "tea"], ["කැමතියි", "kaematiyi", "like"]], "end": "."}
+{"sentence": "love-you", "t": [["මම", "mama", "i"], ["ඔබව", "obava", "you"], ["ආදරෙයි", "aadareyi", "love"]], "end": "."}
+{"sentence": "met-friend", "t": [["මම", "mama", "i"], ["ඊයේ", "iiyee", "yesterday"], ["යාළුවෙක්", "yaaluvek", "@one"], ["යාළුවෙක්", "yaaluvek", "friend"], ["වුණා", "vunaa", "meet+@past"]], "end": "."}
+{"sentence": "my-friend", "t": [["එයා", "eyaa", "he"], ["මගේ", "mage", "i"], ["යාළුවා", "yaaluvaa", "friend"]], "end": "."}
+{"sentence": "who-is-he", "t": [["එයා", "eyaa", "he"], ["කවුද", "kavuda", "who"]], "end": "?"}
+{"sentence": "where-live", "t": [["ඔබ", "oba", "you"], ["කොහෙද", "koheda", "where"], ["ජීවත් වෙනවා", "jeevath venavaa", "live"]], "end": "?"}
+{"sentence": "from-egypt", "t": [["මම", "mama", "i"], ["ඊජිප්තුවේ", "Ejiptuve", "egypt"], ["සිට", "sita", "from"]], "end": "."}
+{"sentence": "we-are-klingons", "t": [["අපි", "api", "we"], ["ක්ලින්ගන්", "klingan", "klingon"]], "end": "."}
+{"sentence": "this-is-book", "t": [["මේක", "meeka", "this"], ["පොත", "potha", "book"]], "end": "."}
+{"sentence": "this-is-my-book", "t": [["මේක", "meeka", "this"], ["මගේ", "mage", "i"], ["පොත", "potha", "book"]], "end": "."}
+{"sentence": "drink-water", "t": [["මම", "mama", "i"], ["වතුර", "vathura", "water"], ["බොනවා", "bonavaa", "drink"]], "end": "."}
+{"sentence": "drink-tea", "t": [["මම", "mama", "i"], ["තේ", "the", "tea"], ["බොනවා", "bonavaa", "drink"]], "end": "."}
+{"sentence": "want-coffee", "t": [["මට", "mata", "i"], ["කෝපි", "koopi", "coffee"], ["ඕනේ", "onee", "want"]], "end": "."}
+{"sentence": "read-book", "t": [["මම", "mama", "i"], ["පොත", "potha", "book"], ["කියවනවා", "kiyavanavaa", "read"]], "end": "."}
+{"sentence": "eat-rice", "t": [["අපි", "api", "we"], ["බත්", "bath", "rice"], ["කනවා", "kanavaa", "eat"]], "end": "."}
+{"sentence": "eat-food", "t": [["මම", "mama", "i"], ["කෑම", "kaema", "food"], ["කනවා", "kanavaa", "eat"]], "end": "."}
+{"sentence": "lunch-restaurant", "t": [["මම", "mama", "i"], ["ආපන ශාලාවේ", "aapana shaalaave", "restaurant+@place"], ["දිවා ආහාරය", "divaa aahaaraya", "lunch"], ["කනවා", "kanavaa", "eat"]], "end": "."}
+{"sentence": "eat-restaurant", "t": [["මම", "mama", "i"], ["ආපන ශාලාවේ", "aapana shaalaave", "restaurant+@place"], ["කනවා", "kanavaa", "eat"]], "end": "."}
+{"sentence": "hot-today", "t": [["අද", "ada", "today"], ["උණුසුරුයි", "unusuruyi", "hot"]], "end": "."}
+{"sentence": "cold-today", "t": [["අද", "ada", "today"], ["සීතලයි", "seetalayi", "cold"]], "end": "."}
+{"sentence": "weather-hot", "t": [["අද", "ada", "today"], ["කාලගුණය", "kaalagunaya", "weather"], ["උණුසුරුයි", "unusuruyi", "hot"]], "end": "."}
+{"sentence": "weather-good", "t": [["අද", "ada", "today"], ["කාලගුණය", "kaalagunaya", "weather"], ["හොඳයි", "hondayi", "good"]], "end": "."}
+{"sentence": "raining", "t": [["වැස්ස", "vaessa", "rain"], ["වෙනවා", "venavaa", "@happen"]], "end": "."}
+{"sentence": "monday", "t": [["අද", "ada", "today"], ["සඳුදා", "sandudaa", "monday"]], "end": "."}
+{"sentence": "what-time", "t": [["කීයටද", "keeyatada", "what+time"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["දැන්", "dan", "now"], ["කීයටද", "keeyatada", "what+time"]], "end": "?"}
+{"sentence": "no-time", "t": [["වෙලාවක්", "velaawak", "time"], ["නැහැ", "naeha", "none"]], "end": "."}
+{"sentence": "there-is-cat", "t": [["පූසෙක්", "poosek", "cat"], ["ඉන්නවා", "innavaa", "exist"]], "end": "."}
+{"sentence": "have-cat", "t": [["මට", "mata", "i"], ["පූසෙක්", "poosek", "cat"], ["ඉන්නවා", "innavaa", "have"]], "end": "."}
+{"sentence": "book-on-table", "t": [["මේසයක්", "meesayak", "table"], ["මත", "matha", "on"], ["පොතක්", "pothak", "book"], ["ඉන්නවා", "innavaa", "exist"]], "end": "."}
+{"sentence": "house-big", "t": [["ගෙදර", "gedara", "house"], ["ලොකු", "loku", "big"]], "end": "."}
+{"sentence": "car-new", "t": [["කාරය", "kaaraya", "car"], ["අලුත්", "aluth", "new"]], "end": "."}
+{"sentence": "delicious", "t": [["රසවත්", "rasavath", "delicious"]], "end": "."}
+{"sentence": "food-tasty", "t": [["කෑම", "kaema", "food"], ["හරි", "hari", "very"], ["රසවත්", "rasavath", "delicious"]], "end": "."}
+{"sentence": "head-hurts", "t": [["මගේ", "mage", "i"], ["තലය", "thalaya", "head"], ["අයි", "ayi", "hurt"]], "end": "."}
+{"sentence": "hungry", "t": [["මට", "mata", "i"], ["බඩගිනි", "badagini", "hungry"]], "end": "."}
+{"sentence": "give-water", "t": [["කරුණාකර", "karunaakara", "please"], ["මට", "mata", "i"], ["වතුර", "vathura", "water"], ["දෙන්න", "denna", "give"]], "end": "."}
+{"sentence": "wait-moment", "t": [["කරුණාකර", "karunaakara", "please"], ["ටිකක්", "tikak", "@one"], ["පොඩ්ඩක් බලන්න", "poddak balanna", "wait+moment"]], "end": "."}
+{"sentence": "sit-down", "t": [["කරුණාකර", "karunaakara", "please"], ["වාඩි වෙන්න", "vaadi venna", "sit"]], "end": "."}
+{"sentence": "where-station", "t": [["ස්ථානය", "sthaanaya", "station"], ["කොහෙද", "koheda", "where"]], "end": "?"}
+{"sentence": "where-toilet", "t": [["වැසිකිළිය", "vaesikiiliya", "toilet"], ["කොහෙද", "koheda", "where"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["හෝටලය", "hotalaya", "hotel"], ["කොහෙද", "koheda", "where"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["මේක", "meeka", "this"], ["කීයද", "keeyada", "how-much"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["කීයද", "keeyada", "how-much"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["මිල", "mila", "cost"], ["කීයද", "keeyada", "how-much"]], "end": "?"}
+{"sentence": "bill-please", "t": [["බිල", "bila", "bill"], ["කරුණාකර", "karunaakara", "please"]], "end": "."}
+{"sentence": "go-school", "t": [["මම", "mama", "i"], ["පාසලට", "paasalata", "school+@direction"], ["යනවා", "yanavaa", "go"]], "end": "."}
+{"sentence": "bus-school", "t": [["මම", "mama", "i"], ["බස් එකේ", "bas ekee", "bus+@means"], ["පාසලට", "paasalata", "school+@direction"], ["යනවා", "yanavaa", "go"]], "end": "."}
+{"sentence": "go-tokyo", "t": [["මම", "mama", "i"], ["ටෝකියෝවට", "Tokiyovata", "tokyo+@direction"], ["යන්න", "yanna", "go"], ["ඕනේ", "onee", "want"]], "end": "."}
+{"sentence": "came-train", "t": [["මම", "mama", "i"], ["දුම්රියෙන්", "dumriyen", "train+@means"], ["ආවා", "aavaa", "come+@past"]], "end": "."}
+{"sentence": "where-going", "t": [["ඔබ", "oba", "you"], ["කොහේද", "koheda", "where"], ["යනවාද", "yanavaada", "go"]], "end": "?"}
+{"sentence": "going-home", "t": [["මම", "mama", "i"], ["ගෙදරට", "gedarata", "home+@direction"], ["යනවා", "yanavaa", "go"]], "end": "."}
+{"sentence": "we-going-home", "t": [["අපි", "api", "we"], ["ගෙදරට", "gedarata", "home+@direction"], ["යනවා", "yanavaa", "go"]], "end": "."}
+{"sentence": "lets-go", "t": [["අපි යමු", "api yamu", "let-us+go"]], "end": "."}
+{"sentence": "live-moscow", "t": [["මම", "mama", "i"], ["මොස්කව්", "Moskav", "moscow"], ["වල", "vala", "@place"], ["ජීවත් වෙනවා", "jeevath venavaa", "live"]], "end": "."}
+{"sentence": "live-cairo", "t": [["මම", "mama", "i"], ["කයිරෝ", "Kairo", "cairo"], ["වල", "vala", "@place"], ["ජීවත් වෙනවා", "jeevath venavaa", "live"]], "end": "."}
+{"sentence": "live-beijing", "t": [["මම", "mama", "i"], ["බීජිං", "Bijing", "beijing"], ["වල", "vala", "@place"], ["ජීවත් වෙනවා", "jeevath venavaa", "live"]], "end": "."}
+{"sentence": "i-sleep", "t": [["මම", "mama", "i"], ["නිදාගනිමි", "nidaaganimi", "sleep"]], "end": "."}
+{"sentence": "i-fight", "t": [["මම", "mama", "i"], ["ලොපුවනවා", "lopuwanavaa", "fight"]], "end": "."}
+{"sentence": "we-fight", "t": [["අපි", "api", "we"], ["ලොපුවනවා", "lopuwanavaa", "fight"]], "end": "."}
+{"sentence": "sleep-command", "t": [["නිදාගන්න", "nidaaganna", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["ළමයා", "lamayaa", "child"], ["නිදාගනී", "nidaaganii", "sleep"]], "end": "."}
+{"sentence": "officer-sees-child", "t": [["නිලධාරියා", "niladhaariyaa", "officer"], ["ළමයා", "lamayaa", "child"], ["බලනවා", "balanavaa", "see"]], "end": "."}
+{"sentence": "captain-sees-ship", "t": [["නායකයා", "naayakayaa", "captain"], ["නැව", "naeva", "ship"], ["බලනවා", "balanavaa", "see"]], "end": "."}
+{"sentence": "i-see-ship", "t": [["මම", "mama", "i"], ["නැව", "naeva", "ship"], ["බලනවා", "balanavaa", "see"]], "end": "."}
+{"sentence": "print-word", "t": [["වචනය", "vachanaya", "word"], ["මුද්‍රණය කරන්න", "muddanaya karanna", "print"]], "end": "."}
+{"sentence": "show-number", "t": [["අංකය", "ankaya", "number"], ["පෙන්වන්න", "penvanna", "print"]], "end": "."}
+{"sentence": "print-screen", "t": [["තිරයේ", "thiraye", "screen+@place"], ["වචනය", "vachanaya", "word"], ["මුද්‍රණය කරන්න", "muddanaya karanna", "print"]], "end": "."}
+{"sentence": "start-loop", "t": [["ලූපය", "loopaya", "loop"], ["ආරම්භ කරන්න", "aarambha karanna", "start"]], "end": "."}
+{"sentence": "end-loop", "t": [["ලූපය", "loopaya", "loop"], ["අවසන් කරන්න", "avasan karanna", "end"]], "end": "."}
+{"sentence": "repeat-three", "t": [["තුන්", "thun", "three"], ["වරක්", "varak", "times"], ["නැවත කරන්න", "naevath karanna", "repeat"]], "end": "."}
+{"sentence": "count-to-ten", "t": [["එක", "eka", "one"], ["සිට", "sita", "from"], ["දහය", "dahaya", "ten"], ["දක්වා", "dakvaa", "@until"], ["ගණන් කරන්න", "ganan karanna", "count"]], "end": "."}
+{"sentence": "set-value", "t": [["අගය", "agaya", "value"], ["සකස් කරන්න", "sakas karanna", "set"]], "end": "."}
+{"sentence": "create-variable", "t": [["එක", "eka", "@one"], ["විචල්‍යයක්", "vichalyayak", "variable"], ["සාදන්න", "saadanna", "create"]], "end": "."}
+{"sentence": "return-value", "t": [["අගය", "agaya", "value"], ["ආපසු දෙන්න", "aapasu denna", "return"]], "end": "."}
+{"sentence": "load-data", "t": [["දත්ත", "daththa", "data"], ["පූරණය කරන්න", "pooranaya karanna", "load"]], "end": "."}
+{"sentence": "add-one", "t": [["එක", "eka", "one"], ["එකතු කරන්න", "ekathu karanna", "add"]], "end": "."}
+{"sentence": "sort-list", "t": [["ලැයිස්තුව", "laayisthuva", "list"], ["අනුපිළිවෙලට දමන්න", "anuplicvelata damanna", "sort"]], "end": "."}
+{"sentence": "run-program", "t": [["ප්‍රෝග්‍රැමය", "programaya", "program"], ["ධාවනය කරන්න", "dhaavanaya karanna", "run"]], "end": "."}

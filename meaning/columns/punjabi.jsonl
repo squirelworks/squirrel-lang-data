@@ -1,0 +1,104 @@
+{"schema": "columns@1", "language": "punjabi", "notes": ["Punjabi column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. Text is in Gurmukhi as in languages/punjabi/vocab.jsonl. ਹਾਂ / ਹੈ / ਹੋ / ਹਨ carry @copula or @present; postpositions ਵਿੱਚ / ਤੇ / ਤੋਂ are their own tokens.", "Sources: forms match languages/punjabi/vocab.jsonl, reference.json, and the Punjabi grammar pack (ਮੈਂ ਵਿਦਿਆਰਥੀ ਹਾਂ, ਮੇਰਾ ਨਾਮ…, ਕੀ ਤੁਸੀਂ ਅੰਗਰੇਜ਼ੀ ਬੋਲਦੇ ਹੋ?, ਮੈਨੂੰ ਸਮਝ ਨਹੀਂ ਆਉਂਦੀ, ਤੁਹਾਡਾ ਨਾਮ ਕੀ ਹੈ?, ਟਾਇਲਟ ਕਿੱਥੇ ਹੈ?, ਇਹ ਕਿੰਨੇ ਦਾ ਹੈ?). Forms match languages/punjabi/vocab.jsonl where a card exists; other lemmas follow standard Punjabi in Gurmukhi (Wiktionary CC BY-SA 4.0 and Wikipedia CC BY-SA 4.0 consulted for spelling and romanization)."], "sep": " "}
+{"sentence": "i-am-student", "t": [["ਮੈਂ", "main", "i"], ["ਵਿਦਿਆਰਥੀ", "vidiaarthii", "student"], ["ਹਾਂ", "haan", "@copula"]], "end": "।"}
+{"sentence": "name-tanaka", "t": [["ਮੇਰਾ", "meraa", "i"], ["ਨਾਮ", "naam", "name"], ["ਤਨਾਕਾ", "Tanaakaa", "tanaka"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "name-minjun", "t": [["ਮੇਰਾ", "meraa", "i"], ["ਨਾਮ", "naam", "name"], ["ਮਿਨਜੁਨ", "Minjun", "minjun"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "name-anna", "t": [["ਮੇਰਾ", "meraa", "i"], ["ਨਾਮ", "naam", "name"], ["ਅੰਨਾ", "Annā", "anna"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "name-ravi", "t": [["ਮੇਰਾ", "meraa", "i"], ["ਨਾਮ", "naam", "name"], ["ਰਵਿ", "Ravi", "ravi"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "name-sami", "t": [["ਮੇਰਾ", "meraa", "i"], ["ਨਾਮ", "naam", "name"], ["ਸਾਮੀ", "Saamii", "sami"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "name-wang-ming", "t": [["ਮੇਰਾ", "meraa", "i"], ["ਨਾਮ", "naam", "name"], ["ਵਾਂਗ ਮਿੰਗ", "Vaang Ming", "wang-ming"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "your-name", "t": [["ਤੁਹਾਡਾ", "tuhaadaa", "you"], ["ਨਾਮ", "naam", "name"], ["ਕੀ", "kii", "what"], ["ਹੈ", "hai", "@copula"]], "end": "?"}
+{"sentence": "hello", "t": [["ਸਤ ਸ੍ਰੀ ਅਕਾਲ", "sat srii akaal", "hello"]], "end": "।"}
+{"sentence": "nice-to-meet-you", "t": [["ਤੁਹਾਨੂੰ ਮਿਲ ਕੇ ਖੁਸ਼ੀ ਹੋਈ", "tuhaanoon mil ke khushii hoii", "nice-to-meet-you"]], "end": "।"}
+{"sentence": "good-morning", "t": [["ਸ਼ੁਭ", "shubh", "good"], ["ਸਵੇਰ", "saver", "morning"]], "end": "।"}
+{"sentence": "thank-you", "t": [["ਧੰਨਵਾਦ", "dhannvaad", "thanks"]], "end": "।"}
+{"sentence": "thank-you-very-much", "t": [["ਬਹੁਤ", "bahut", "very-much"], ["ਧੰਨਵਾਦ", "dhannvaad", "thanks"]], "end": "।"}
+{"sentence": "success", "t": [["ਸਫਲਤਾ", "safaltaa", "success"]], "end": "!"}
+{"sentence": "dont-understand", "t": [["ਮੈਂ", "main", "i"], ["ਸਮਝਦਾ", "samajhdaa", "understand"], ["ਨਹੀਂ", "nahiin", "not"]], "end": "।"}
+{"sentence": "dont-know", "t": [["ਮੈਨੂੰ", "mainoon", "i"], ["ਪਤਾ", "pataa", "know"], ["ਨਹੀਂ", "nahiin", "not"]], "end": "।"}
+{"sentence": "speak-english", "t": [["ਕੀ", "kii", "@question"], ["ਤੁਸੀਂ", "tusiin", "you"], ["ਅੰਗਰੇਜ਼ੀ", "angrezi", "english"], ["ਬੋਲਦੇ", "bolde", "speak"], ["ਹੋ", "ho", "@present"]], "end": "?"}
+{"sentence": "speak-chinese", "t": [["ਕੀ", "kii", "@question"], ["ਤੁਸੀਂ", "tusiin", "you"], ["ਚੀਨੀ", "chiinii", "chinese"], ["ਬੋਲਦੇ", "bolde", "speak"], ["ਹੋ", "ho", "@present"]], "end": "?"}
+{"sentence": "speak-arabic", "t": [["ਕੀ", "kii", "@question"], ["ਤੁਸੀਂ", "tusiin", "you"], ["ਅਰਬੀ", "arabii", "arabic"], ["ਬੋਲਦੇ", "bolde", "speak"], ["ਹੋ", "ho", "@present"]], "end": "?"}
+{"sentence": "speak-klingon", "t": [["ਕੀ", "kii", "@question"], ["ਤੁਸੀਂ", "tusiin", "you"], ["ਕਲਿੰਗਨ", "klingan", "klingon"], ["ਬੋਲਦੇ", "bolde", "speak"], ["ਹੋ", "ho", "@present"]], "end": "?"}
+{"sentence": "speak-hindi", "t": [["ਮੈਂ", "main", "i"], ["ਹਿੰਦੀ", "hindii", "hindi"], ["ਬੋਲਦਾ", "boldaa", "speak"], ["ਹਾਂ", "haan", "@present"]], "end": "।"}
+{"sentence": "study-korean", "t": [["ਮੈਂ", "main", "i"], ["ਕੋਰੀਅਨ", "korian", "korean"], ["ਪੜ੍ਹਦਾ", "parhdaa", "study"], ["ਹਾਂ", "haan", "@present"]], "end": "।"}
+{"sentence": "like-sushi", "t": [["ਮੈਨੂੰ", "mainoon", "i"], ["ਸੁਸ਼ੀ", "sushii", "sushi"], ["ਪਸੰਦ", "pasand", "like"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "like-coffee", "t": [["ਮੈਨੂੰ", "mainoon", "i"], ["ਕੌਫੀ", "kaufii", "coffee"], ["ਪਸੰਦ", "pasand", "like"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "like-tea", "t": [["ਮੈਨੂੰ", "mainoon", "i"], ["ਚਾਹ", "chaah", "tea"], ["ਪਸੰਦ", "pasand", "like"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "love-you", "t": [["ਮੈਂ", "main", "i"], ["ਤੁਹਾਨੂੰ", "tuhaanoon", "you"], ["ਪਿਆਰ ਕਰਦਾ", "piaar kardaa", "love"], ["ਹਾਂ", "haan", "@copula"]], "end": "।"}
+{"sentence": "met-friend", "t": [["ਮੈਂ", "main", "i"], ["ਕੱਲ੍ਹ", "kallh", "yesterday"], ["ਇੱਕ", "ikk", "@one"], ["ਦੋਸਤ", "dost", "friend"], ["ਨਾਲ", "naal", "@place"], ["ਮਿਲਿਆ", "miliaa", "meet+@past"]], "end": "।"}
+{"sentence": "my-friend", "t": [["ਉਹ", "uh", "he"], ["ਮੇਰਾ", "meraa", "i"], ["ਦੋਸਤ", "dost", "friend"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "who-is-he", "t": [["ਉਹ", "uh", "he"], ["ਕੌਣ", "kaun", "who"], ["ਹੈ", "hai", "@copula"]], "end": "?"}
+{"sentence": "where-live", "t": [["ਤੁਸੀਂ", "tusiin", "you"], ["ਕਿੱਥੇ", "kitthe", "where"], ["ਰਹਿੰਦੇ", "rahinde", "live"], ["ਹੋ", "ho", "@present"]], "end": "?"}
+{"sentence": "from-egypt", "t": [["ਮੈਂ", "main", "i"], ["ਮਿਸਰ", "misar", "egypt"], ["ਤੋਂ", "ton", "from"], ["ਹਾਂ", "haan", "@copula"]], "end": "।"}
+{"sentence": "we-are-klingons", "t": [["ਅਸੀਂ", "asiin", "we"], ["ਕਲਿੰਗਨ", "klingan", "klingon"], ["ਹਾਂ", "haan", "@copula"]], "end": "।"}
+{"sentence": "this-is-book", "t": [["ਇਹ", "ih", "this"], ["ਕਿਤਾਬ", "kitaab", "book"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "this-is-my-book", "t": [["ਇਹ", "ih", "this"], ["ਮੇਰੀ", "merii", "i"], ["ਕਿਤਾਬ", "kitaab", "book"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "drink-water", "t": [["ਮੈਂ", "main", "i"], ["ਪਾਣੀ", "paanii", "water"], ["ਪੀਂਦਾ", "piindaa", "drink"]], "end": "।"}
+{"sentence": "drink-tea", "t": [["ਮੈਂ", "main", "i"], ["ਚਾਹ", "chaah", "tea"], ["ਪੀਂਦਾ", "piindaa", "drink"]], "end": "।"}
+{"sentence": "want-coffee", "t": [["ਮੈਂ", "main", "i"], ["ਕੌਫੀ", "kaufii", "coffee"], ["ਚਾਹੁੰਦਾ", "chaahundaa", "want"]], "end": "।"}
+{"sentence": "read-book", "t": [["ਮੈਂ", "main", "i"], ["ਕਿਤਾਬ", "kitaab", "book"], ["ਪੜ੍ਹਦਾ", "parhdaa", "read"]], "end": "।"}
+{"sentence": "eat-rice", "t": [["ਅਸੀਂ", "asiin", "we"], ["ਚਾਵਲ", "chaaval", "rice"], ["ਖਾਂਦੇ", "khaande", "eat"]], "end": "।"}
+{"sentence": "eat-food", "t": [["ਮੈਂ", "main", "i"], ["ਖਾਣਾ", "khaanaa", "food"], ["ਖਾਂਦਾ", "khaandaa", "eat"]], "end": "।"}
+{"sentence": "lunch-restaurant", "t": [["ਮੈਂ", "main", "i"], ["ਰੈਸਟੋਰੈਂਟ", "restoraint", "restaurant+@place"], ["ਦੁਪਹਿਰ ਦਾ ਖਾਣਾ", "dupahir daa khaanaa", "lunch"], ["ਖਾਂਦਾ", "khaandaa", "eat"]], "end": "।"}
+{"sentence": "eat-restaurant", "t": [["ਮੈਂ", "main", "i"], ["ਰੈਸਟੋਰੈਂਟ", "restoraint", "restaurant+@place"], ["ਖਾਂਦਾ", "khaandaa", "eat"]], "end": "।"}
+{"sentence": "hot-today", "t": [["ਅੱਜ", "ajj", "today"], ["ਗਰਮ", "garam", "hot"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "cold-today", "t": [["ਅੱਜ", "ajj", "today"], ["ਠੰਢਾ", "thandhaa", "cold"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "weather-hot", "t": [["ਅੱਜ", "ajj", "today"], ["ਮੌਸਮ", "mausam", "weather"], ["ਗਰਮ", "garam", "hot"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "weather-good", "t": [["ਅੱਜ", "ajj", "today"], ["ਮੌਸਮ", "mausam", "weather"], ["ਚੰਗਾ", "changaa", "good"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "raining", "t": [["ਮੀਂਹ", "miinh", "rain"], ["ਪੈ", "pai", "@ongoing"], ["ਰਿਹਾ", "rihaa", "@happen"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "monday", "t": [["ਅੱਜ", "ajj", "today"], ["ਸੋਮਵਾਰ", "somvaar", "monday"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "what-time", "t": [["ਸਮਾਂ", "samaan", "time"], ["ਕਿੰਨਾ", "kinna", "what+time"], ["ਹੈ", "hai", "@copula"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["ਹੁਣ", "hun", "now"], ["ਸਮਾਂ", "samaan", "time"], ["ਕਿੰਨਾ", "kinna", "what+time"], ["ਹੈ", "hai", "@copula"]], "end": "?"}
+{"sentence": "no-time", "t": [["ਸਮਾਂ", "samaan", "time"], ["ਨਹੀਂ", "nahiin", "none"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "there-is-cat", "t": [["ਇੱਕ", "ikk", "@one"], ["ਬਿੱਲੀ", "billii", "cat"], ["ਹੈ", "hai", "exist"]], "end": "।"}
+{"sentence": "have-cat", "t": [["ਮੇਰੇ ਕੋਲ", "mere kol", "i"], ["ਇੱਕ", "ikk", "@one"], ["ਬਿੱਲੀ", "billii", "cat"], ["ਹੈ", "hai", "have"]], "end": "।"}
+{"sentence": "book-on-table", "t": [["ਮੇਜ਼", "mez", "table"], ["ਤੇ", "te", "on"], ["ਇੱਕ", "ikk", "@one"], ["ਕਿਤਾਬ", "kitaab", "book"], ["ਹੈ", "hai", "exist"]], "end": "।"}
+{"sentence": "house-big", "t": [["ਘਰ", "ghar", "house"], ["ਵੱਡਾ", "vaddaa", "big"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "car-new", "t": [["ਗੱਡੀ", "gaddii", "car"], ["ਨਵੀਂ", "navin", "new"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "delicious", "t": [["ਸੁਆਦ", "suaad", "delicious"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "food-tasty", "t": [["ਖਾਣਾ", "khaanaa", "food"], ["ਬਹੁਤ", "bahut", "very"], ["ਸੁਆਦ", "suaad", "delicious"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "head-hurts", "t": [["ਮੈਨੂੰ", "mainoon", "i"], ["ਸਿਰ", "sir", "head"], ["ਦਰਦ", "dard", "hurt"], ["ਹੋ", "ho", "@happen"], ["ਰਿਹਾ", "rihaa", "@ongoing"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "hungry", "t": [["ਮੈਨੂੰ", "mainoon", "i"], ["ਭੁੱਖ", "bhukkh", "hungry"], ["ਲੱਗ", "lagg", "@happen"], ["ਰਹੀ", "rahi", "@ongoing"], ["ਹੈ", "hai", "@copula"]], "end": "।"}
+{"sentence": "give-water", "t": [["ਕਿਰਪਾ ਕਰਕੇ", "kirpaa karke", "please"], ["ਮੈਨੂੰ", "mainoon", "i"], ["ਪਾਣੀ", "paanii", "water"], ["ਦਿਓ", "dio", "give"]], "end": "।"}
+{"sentence": "wait-moment", "t": [["ਕਿਰਪਾ ਕਰਕੇ", "kirpaa karke", "please"], ["ਥੋੜ੍ਹਾ", "thorrhaa", "@one"], ["ਇੰਤਜ਼ਾਰ", "intazaar", "wait+moment"], ["ਕਰੋ", "karo", "wait"]], "end": "।"}
+{"sentence": "sit-down", "t": [["ਕਿਰਪਾ ਕਰਕੇ", "kirpaa karke", "please"], ["ਬੈਠੋ", "baitho", "sit"]], "end": "।"}
+{"sentence": "where-station", "t": [["ਸਟੇਸ਼ਨ", "steshan", "station"], ["ਕਿੱਥੇ", "kitthe", "where"], ["ਹੈ", "hai", "@copula"]], "end": "?"}
+{"sentence": "where-toilet", "t": [["ਟਾਇਲਟ", "taiilt", "toilet"], ["ਕਿੱਥੇ", "kitthe", "where"], ["ਹੈ", "hai", "@copula"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["ਹੋਟਲ", "hotl", "hotel"], ["ਕਿੱਥੇ", "kitthe", "where"], ["ਹੈ", "hai", "@copula"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["ਇਹ", "ih", "this"], ["ਕਿੰਨਾ", "kinna", "how-much"], ["ਹੈ", "hai", "@copula"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["ਕਿੰਨਾ", "kinna", "how-much"], ["ਹੈ", "hai", "@copula"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["ਇਸ ਦੀ ਕੀਮਤ", "is dii kiimat", "cost"], ["ਕਿੰਨੀ", "kinnii", "how-much"], ["ਹੈ", "hai", "@copula"]], "end": "?"}
+{"sentence": "bill-please", "t": [["ਬਿੱਲ", "bill", "bill"], ["ਕਿਰਪਾ ਕਰਕੇ", "kirpaa karke", "please"]], "end": "।"}
+{"sentence": "go-school", "t": [["ਮੈਂ", "main", "i"], ["ਸਕੂਲ", "skul", "school"], ["ਜਾਂਦਾ", "jaandaa", "go"]], "end": "।"}
+{"sentence": "bus-school", "t": [["ਮੈਂ", "main", "i"], ["ਬੱਸ", "bas", "bus"], ["ਨਾਲ", "naal", "@means"], ["ਸਕੂਲ", "skul", "school"], ["ਜਾਂਦਾ", "jaandaa", "go"]], "end": "।"}
+{"sentence": "go-tokyo", "t": [["ਮੈਂ", "main", "i"], ["ਟੋਕਿਓ", "Tokio", "tokyo"], ["ਜਾਣਾ", "jaanaa", "go"], ["ਚਾਹੁੰਦਾ", "chaahundaa", "want"]], "end": "।"}
+{"sentence": "came-train", "t": [["ਮੈਂ", "main", "i"], ["ਟ੍ਰੇਨ", "train", "train"], ["ਨਾਲ", "naal", "@means"], ["ਆਇਆ", "aaiaa", "come+@past"]], "end": "।"}
+{"sentence": "where-going", "t": [["ਤੁਸੀਂ", "tusiin", "you"], ["ਕਿੱਥੇ", "kitthe", "where"], ["ਜਾ", "jaa", "go"], ["ਰਹੇ", "rahe", "@ongoing"], ["ਹੋ", "ho", "@present"]], "end": "?"}
+{"sentence": "going-home", "t": [["ਮੈਂ", "main", "i"], ["ਘਰ", "ghar", "home"], ["ਜਾ", "jaa", "go"], ["ਰਿਹਾ", "rihaa", "@ongoing"], ["ਹਾਂ", "haan", "@copula"]], "end": "।"}
+{"sentence": "we-going-home", "t": [["ਅਸੀਂ", "asiin", "we"], ["ਘਰ", "ghar", "home"], ["ਜਾ", "jaa", "go"], ["ਰਹੇ", "rahe", "@ongoing"], ["ਹਾਂ", "haan", "@copula"]], "end": "।"}
+{"sentence": "lets-go", "t": [["ਚਲੋ", "chalo", "let-us"], ["ਚੱਲੀਏ", "challiie", "go"]], "end": "।"}
+{"sentence": "live-moscow", "t": [["ਮੈਂ", "main", "i"], ["ਮਾਸਕੋ", "maasko", "moscow"], ["ਵਿੱਚ", "vich", "@place"], ["ਰਹਿੰਦਾ", "rahindaa", "live"]], "end": "।"}
+{"sentence": "live-cairo", "t": [["ਮੈਂ", "main", "i"], ["ਕਾਹਿਰਾ", "kaahiraa", "cairo"], ["ਵਿੱਚ", "vich", "@place"], ["ਰਹਿੰਦਾ", "rahindaa", "live"]], "end": "।"}
+{"sentence": "live-beijing", "t": [["ਮੈਂ", "main", "i"], ["ਬੀਜਿੰਗ", "biijing", "beijing"], ["ਵਿੱਚ", "vich", "@place"], ["ਰਹਿੰਦਾ", "rahindaa", "live"]], "end": "।"}
+{"sentence": "i-sleep", "t": [["ਮੈਂ", "main", "i"], ["ਸੌਂਦਾ", "saundaa", "sleep"]], "end": "।"}
+{"sentence": "i-fight", "t": [["ਮੈਂ", "main", "i"], ["ਲੜਦਾ", "larrdaa", "fight"]], "end": "।"}
+{"sentence": "we-fight", "t": [["ਅਸੀਂ", "asiin", "we"], ["ਲੜਦੇ", "larrde", "fight"]], "end": "।"}
+{"sentence": "sleep-command", "t": [["ਸੌਂ", "saun", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["ਬੱਚਾ", "bachchaa", "child"], ["ਸੌਂਦਾ", "saundaa", "sleep"]], "end": "।"}
+{"sentence": "officer-sees-child", "t": [["ਅਫ਼ਸਰ", "afsar", "officer"], ["ਬੱਚੇ", "bachche", "child"], ["ਨੂੰ", "noon", "@object"], ["ਵੇਖਦਾ", "vekhdadaa", "see"]], "end": "।"}
+{"sentence": "captain-sees-ship", "t": [["ਕੈਪਟਨ", "kaiptan", "captain"], ["ਜਹਾਜ਼", "jahaaz", "ship"], ["ਵੇਖਦਾ", "vekhdadaa", "see"]], "end": "।"}
+{"sentence": "i-see-ship", "t": [["ਮੈਂ", "main", "i"], ["ਜਹਾਜ਼", "jahaaz", "ship"], ["ਵੇਖਦਾ", "vekhdadaa", "see"]], "end": "।"}
+{"sentence": "print-word", "t": [["ਸ਼ਬਦ", "shabad", "word"], ["ਪ੍ਰਿੰਟ ਕਰੋ", "print karo", "print"]], "end": "।"}
+{"sentence": "show-number", "t": [["ਸੰਖਿਆ", "sankhyaa", "number"], ["ਦਿਖਾਓ", "dikhaao", "print"]], "end": "।"}
+{"sentence": "print-screen", "t": [["ਸਕ੍ਰੀਨ", "skriin", "screen"], ["ਤੇ", "te", "@place"], ["ਸ਼ਬਦ", "shabad", "word"], ["ਪ੍ਰਿੰਟ ਕਰੋ", "print karo", "print"]], "end": "।"}
+{"sentence": "start-loop", "t": [["ਲੂਪ", "luup", "loop"], ["ਸ਼ੁਰੂ ਕਰੋ", "shuruu karo", "start"]], "end": "।"}
+{"sentence": "end-loop", "t": [["ਲੂਪ", "luup", "loop"], ["ਖਤਮ ਕਰੋ", "khatam karo", "end"]], "end": "।"}
+{"sentence": "repeat-three", "t": [["ਤਿੰਨ", "tinn", "three"], ["ਵਾਰ", "vaar", "times"], ["ਦੁਹਰਾਓ", "duharaao", "repeat"]], "end": "।"}
+{"sentence": "count-to-ten", "t": [["ਇੱਕ", "ikk", "one"], ["ਤੋਂ", "ton", "from"], ["ਦਸ", "das", "ten"], ["ਤਕ", "tak", "@until"], ["ਗਿਣੋ", "gino", "count"]], "end": "।"}
+{"sentence": "set-value", "t": [["ਮਾਨ", "maan", "value"], ["ਸੈੱਟ ਕਰੋ", "sait karo", "set"]], "end": "।"}
+{"sentence": "create-variable", "t": [["ਇੱਕ", "ikk", "@one"], ["ਚਰ", "char", "variable"], ["ਬਣਾਓ", "banaao", "create"]], "end": "।"}
+{"sentence": "return-value", "t": [["ਮਾਨ", "maan", "value"], ["ਵਾਪਸ ਕਰੋ", "vaapas karo", "return"]], "end": "।"}
+{"sentence": "load-data", "t": [["ਡਾਟਾ", "daataa", "data"], ["ਲੋਡ ਕਰੋ", "lod karo", "load"]], "end": "।"}
+{"sentence": "add-one", "t": [["ਇੱਕ", "ikk", "one"], ["ਜੋੜੋ", "jorro", "add"]], "end": "।"}
+{"sentence": "sort-list", "t": [["ਸੂਚੀ", "suuchii", "list"], ["ਕ੍ਰਮਬੱਧ ਕਰੋ", "kramabaddh karo", "sort"]], "end": "।"}
+{"sentence": "run-program", "t": [["ਪ੍ਰੋਗਰਾਮ", "program", "program"], ["ਚਲਾਓ", "chalaao", "run"]], "end": "।"}
