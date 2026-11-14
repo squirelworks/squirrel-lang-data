@@ -7,7 +7,7 @@ only imported when its license fits that.
 
 | Source | Used for | License | Attribution |
 |---|---|---|---|
-| Wiktionary | Lemmas and grammar notes behind the grammar courses (examples are original) | CC BY-SA 4.0 | Wiktionary contributors, https://www.wiktionary.org |
+| Wiktionary | Lemmas and grammar notes behind the grammar courses (examples are original); spelling and romanization checks when filling the Arabic and Hindi meaning-matrix columns | CC BY-SA 4.0 | Wiktionary contributors, https://www.wiktionary.org |
 | Wikipedia and Simple English Wikipedia | Grammar overviews behind the grammar courses (examples are original) | CC BY-SA 4.0 | Wikipedia contributors, https://www.wikipedia.org |
 | Wikibooks, "Modern Meitei/Common phrases" | Manipuri grammar course phrases | CC BY-SA 4.0 | Wikibooks contributors, https://en.wikibooks.org/wiki/Modern_Meitei |
 | FSI Amharic Basic Course; FSI Italian | Amharic and Italian grammar courses | Public domain (US government work) | Foreign Service Institute |
