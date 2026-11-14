@@ -7,8 +7,8 @@ only imported when its license fits that.
 
 | Source | Used for | License | Attribution |
 |---|---|---|---|
-| Wiktionary | Lemmas and grammar notes behind the grammar courses (examples are original); spelling/romanization/lemma checks when filling the Arabic, Hindi, Hebrew and Thai meaning-matrix columns | CC BY-SA 4.0 | Wiktionary contributors, https://www.wiktionary.org |
-| Wikipedia and Simple English Wikipedia | Grammar overviews behind the grammar courses (examples are original); lemma checks for the Arabic, Hindi, Hebrew and Thai meaning-matrix columns | CC BY-SA 4.0 | Wikipedia contributors, https://www.wikipedia.org |
+| Wiktionary | Lemmas and grammar notes behind the grammar courses (examples are original); spelling/romanization/lemma checks when filling the Arabic, Hindi, Hebrew, Thai, Bengali, Armenian, Georgian and Tamil meaning-matrix columns | CC BY-SA 4.0 | Wiktionary contributors, https://www.wiktionary.org |
+| Wikipedia and Simple English Wikipedia | Grammar overviews behind the grammar courses (examples are original); lemma checks for the Arabic, Hindi, Hebrew, Thai, Bengali, Armenian, Georgian and Tamil meaning-matrix columns | CC BY-SA 4.0 | Wikipedia contributors, https://www.wikipedia.org |
 | Wiktionary (Klingon entries) | Lemma checks when filling the Klingon meaning-matrix column and its code-pack rows (renderings written for this project) | CC BY-SA 4.0 | Wiktionary contributors, https://www.wiktionary.org |
 | Wikibooks, "Modern Meitei/Common phrases" | Manipuri grammar course phrases | CC BY-SA 4.0 | Wikibooks contributors, https://en.wikibooks.org/wiki/Modern_Meitei |
 | FSI Amharic Basic Course; FSI Italian | Amharic and Italian grammar courses | Public domain (US government work) | Foreign Service Institute |
