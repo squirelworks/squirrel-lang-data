@@ -54,8 +54,11 @@ tags are never moved or reused, releases are never deleted.
 Everything merged since v0.1.5 is collected in `release-notes/v0.1.6.md`
 (still marked Draft): Arabic, Hindi, Hebrew and Thai filled (#111),
 Bengali, Armenian, Georgian and Tamil filled (#112), Klingon filled
-including the code pack (#113), and the 21 kana/kanji stroke redraws
-(#114). Tip of `main` for this set is `69b3888`.
+including the code pack (#113), the 21 kana/kanji stroke redraws (#114),
+mechanical reviews for Armenian/Bengali/Georgian/Tamil/Klingon (#116),
+Gujarati/Kannada/Malayalam/Telugu columns (#117), `gen_features.py`
+`--check` payload-only (#118), and Burmese/Khmer/Lao/Mongolian columns
+(#119). Tip of `main` for this set is `d46e32d`.
 
 It's due when all of these hold and the owner says "release":
 
@@ -64,6 +67,11 @@ It's due when all of these hold and the owner says "release":
 - [x] Bengali / Armenian / Georgian / Tamil matrix fills (#112)
 - [x] Klingon matrix fill and code-pack rows (#113)
 - [x] Kana and kanji stroke redraws for the final-frame check (#114)
+- [x] Mechanical REVIEW.md for Armenian, Bengali, Georgian, Tamil, Klingon
+      (#116)
+- [x] Gujarati / Kannada / Malayalam / Telugu columns (#117)
+- [x] `gen_features.py --check` ignores header SHA drift (#118)
+- [x] Burmese / Khmer / Lao / Mongolian columns (#119)
 - [ ] CI green on `main`
 - [ ] A PR that removes "Draft." from `release-notes/v0.1.6.md` and checks
       every bullet against what merged, with nothing else in it
