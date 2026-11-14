@@ -59,8 +59,9 @@ mechanical reviews for Armenian/Bengali/Georgian/Tamil/Klingon (#116),
 Gujarati/Kannada/Malayalam/Telugu columns (#117), `gen_features.py`
 `--check` payload-only (#118), and Burmese/Khmer/Lao/Mongolian columns
 (#119), Odia/Punjabi/Sinhala/Tibetan columns (#121), and
-Amharic/Cherokee/Taiwanese columns (#123). Tip of `main` for this set
-is `d0904bf`.
+Amharic/Cherokee/Taiwanese columns (#123), and
+Aramaic/Manipuri/Tamazight columns (#125). Tip of `main` for this set
+is `c3f78fb`.
 
 It's due when all of these hold and the owner says "release":
 
@@ -76,6 +77,7 @@ It's due when all of these hold and the owner says "release":
 - [x] Burmese / Khmer / Lao / Mongolian columns (#119)
 - [x] Odia / Punjabi / Sinhala / Tibetan columns (#121)
 - [x] Amharic / Cherokee / Taiwanese columns (#123)
+- [x] Aramaic / Manipuri / Tamazight columns (#125)
 - [ ] CI green on `main`
 - [ ] A PR that removes "Draft." from `release-notes/v0.1.6.md` and checks
       every bullet against what merged, with nothing else in it
