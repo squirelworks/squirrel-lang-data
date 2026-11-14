@@ -62,8 +62,8 @@ Gujarati/Kannada/Malayalam/Telugu columns (#117), `gen_features.py`
 Amharic/Cherokee/Taiwanese columns (#123),
 Aramaic/Manipuri/Tamazight columns (#125), Inuktitut column (#127), and
 mechanical reviews for Gujarati/Kannada/Malayalam/Telugu/Burmese/Khmer
-(#128). Tip of `main` for this set is `8086a24`. Syriac Estrangela
-stroke review is open as #129.
+(#128). Tip of `main` for this set is `361c55c`. Syriac Estrangela
+stroke review (#129) and Tifinagh ⴰ redraw (#131) are merged.
 
 It's due when all of these hold and the owner says "release":
 
@@ -83,7 +83,8 @@ It's due when all of these hold and the owner says "release":
 - [x] Inuktitut column (#127)
 - [x] Mechanical REVIEW.md for Gujarati, Kannada, Malayalam, Telugu,
       Burmese, Khmer (#128)
-- [ ] Syriac Estrangela stroke review (#129)
+- [x] Syriac Estrangela stroke review (#129)
+- [x] Tifinagh ⴰ redraw (#131)
 - [ ] CI green on `main`
 - [ ] A PR that removes "Draft." from `release-notes/v0.1.6.md` and checks
       every bullet against what merged, with nothing else in it
@@ -100,11 +101,11 @@ another**; batch several languages in one PR where the theme is the same.
 
 Still PATCH-sized unless noted:
 
-- [ ] Review the 22 Syriac strokes against a published primer, redraw any
-      that are wrong, cite the primer in `SOURCES.md`, and add
-      `languages/aramaic/REVIEW.md` (in flight as #129).
-- [ ] Fix hangul ㅇ and Tifinagh ⴰ in LanguageStudentDesk's stroke-check
-      baseline (the remaining two of the 23; squirelworks/LanguageStudentDesk#188).
+- [x] Review the 22 Syriac strokes against a published primer (#129).
+- [x] Tifinagh ⴰ redraw (#131). Hangul ㅇ cleared on the Desk via
+      min_coverage (squirelworks/LanguageStudentDesk#326). Drop
+      kana/kanji and `tifinagh.ⴰ` from baseline on the pin bump
+      (squirelworks/LanguageStudentDesk#188).
 - [ ] Recorded reviews (`REVIEW.md`) for the languages without one, and a
       dated entry for the new and filled columns (see `REVIEWING.md`;
       squirelworks/LanguageStudentDesk#198). Mechanical-only entries now
