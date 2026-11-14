@@ -1,0 +1,104 @@
+{"schema": "columns@1", "language": "kannada", "notes": ["Kannada column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. The romanization matches the simplified scheme in languages/kannada (doubled long vowels). There is often no present-tense \"to be\" in nominal sentences (ನಾನು ವಿದ್ಯಾರ್ಥಿ), so those rows have no @copula token. Case endings -ಗೆ / -ಅಲ್ಲಿ / -ಇಂದ / -ಅನ್ನು may glue with a leading \"-\".", "Sources: forms match languages/kannada/vocab.jsonl, reference.json, and the Kannada grammar pack (ನಾನು ವಿದ್ಯಾರ್ಥಿ, ನಿಮ್ಮ ಹೆಸರು ಏನು?, ನೀವು ಇಂಗ್ಲಿಷ್ ಮಾತಾಡುತ್ತೀರಾ?, ನನಗೆ ಗೊತ್ತಿಲ್ಲ, ನನಗೆ ಸಮಯ ಇಲ್ಲ, ಇದು ಎಷ್ಟು?, ಮಳೆ ಬರುತ್ತಿದೆ, ನನಗೆ … ಇಷ್ಟ / ಬೇಕು, ನಾನು ಶಾಲೆಗೆ ಹೋಗುತ್ತೇನೆ, ಬನ್ನಿ ಹೋಗೋಣ). Forms match languages/kannada/vocab.jsonl where a card exists; other lemmas follow standard Kannada (Wiktionary CC BY-SA 4.0 consulted for spelling and romanization)."], "sep": " "}
+{"sentence": "i-am-student", "t": [["ನಾನು", "naanu", "i"], ["ವಿದ್ಯಾರ್ಥಿ", "vidyaarthi", "student"]], "end": "."}
+{"sentence": "name-tanaka", "t": [["ನನ್ನ", "nanna", "i"], ["ಹೆಸರು", "hesaru", "name"], ["ತನಾಕಾ", "Tanaakaa", "tanaka"]], "end": "."}
+{"sentence": "name-minjun", "t": [["ನನ್ನ", "nanna", "i"], ["ಹೆಸರು", "hesaru", "name"], ["ಮಿನ್ಜುನ್", "Minjun", "minjun"]], "end": "."}
+{"sentence": "name-anna", "t": [["ನನ್ನ", "nanna", "i"], ["ಹೆಸರು", "hesaru", "name"], ["ಅನ್ನಾ", "Annaa", "anna"]], "end": "."}
+{"sentence": "name-ravi", "t": [["ನನ್ನ", "nanna", "i"], ["ಹೆಸರು", "hesaru", "name"], ["ರವಿ", "Ravi", "ravi"]], "end": "."}
+{"sentence": "name-sami", "t": [["ನನ್ನ", "nanna", "i"], ["ಹೆಸರು", "hesaru", "name"], ["ಸಾಮಿ", "Saami", "sami"]], "end": "."}
+{"sentence": "name-wang-ming", "t": [["ನನ್ನ", "nanna", "i"], ["ಹೆಸರು", "hesaru", "name"], ["ವಾಂಗ್ ಮಿಂಗ್", "Vaang Ming", "wang-ming"]], "end": "."}
+{"sentence": "your-name", "t": [["ನಿಮ್ಮ", "nimma", "you"], ["ಹೆಸರು", "hesaru", "name"], ["ಏನು", "enu", "what"]], "end": "?"}
+{"sentence": "hello", "t": [["ನಮಸ್ಕಾರ", "namaskaara", "hello"]], "end": "."}
+{"sentence": "nice-to-meet-you", "t": [["ನಿಮ್ಮನ್ನು ಭೇಟಿಯಾಗಿ ಸಂತೋಷವಾಯಿತು", "nimmannu bheetiyaagi santoshavaayitu", "nice-to-meet-you"]], "end": "."}
+{"sentence": "good-morning", "t": [["ಶುಭೋದಯ", "shubhodaya", "good+morning"]], "end": "."}
+{"sentence": "thank-you", "t": [["ಧನ್ಯವಾದ", "dhanyavaada", "thanks"]], "end": "."}
+{"sentence": "thank-you-very-much", "t": [["ತುಂಬಾ", "tumbaa", "very-much"], ["ಧನ್ಯವಾದ", "dhanyavaada", "thanks"]], "end": "."}
+{"sentence": "success", "t": [["ಯಶಸ್ಸು", "yashassu", "success"]], "end": "!"}
+{"sentence": "dont-understand", "t": [["ನನಗೆ", "nanage", "i"], ["ಅರ್ಥವಾಗುತ್ತಿಲ್ಲ", "arthavaaguttilla", "not+understand"]], "end": "."}
+{"sentence": "dont-know", "t": [["ನನಗೆ", "nanage", "i"], ["ಗೊತ್ತಿಲ್ಲ", "gottilla", "not+know"]], "end": "."}
+{"sentence": "speak-english", "t": [["ನೀವು", "niivu", "you"], ["ಇಂಗ್ಲಿಷ್", "inglish", "english"], ["ಮಾತಾಡುತ್ತೀರಿ", "maataaduttiiri", "speak"], ["-ಾ", "aa", "@question"]], "end": "?"}
+{"sentence": "speak-chinese", "t": [["ನೀವು", "niivu", "you"], ["ಚೈನೀಸ್", "chainees", "chinese"], ["ಮಾತಾಡುತ್ತೀರಿ", "maataaduttiiri", "speak"], ["-ಾ", "aa", "@question"]], "end": "?"}
+{"sentence": "speak-arabic", "t": [["ನೀವು", "niivu", "you"], ["ಅರಬಿಕ್", "arabik", "arabic"], ["ಮಾತಾಡುತ್ತೀರಿ", "maataaduttiiri", "speak"], ["-ಾ", "aa", "@question"]], "end": "?"}
+{"sentence": "speak-klingon", "t": [["ನೀವು", "niivu", "you"], ["ಕ್ಲಿಂಗನ್", "klingan", "klingon"], ["ಮಾತಾಡುತ್ತೀರಿ", "maataaduttiiri", "speak"], ["-ಾ", "aa", "@question"]], "end": "?"}
+{"sentence": "speak-hindi", "t": [["ನಾನು", "naanu", "i"], ["ಹಿಂದಿ", "hindi", "hindi"], ["ಮಾತಾಡುತ್ತೇನೆ", "maataaduttene", "speak"]], "end": "."}
+{"sentence": "study-korean", "t": [["ನಾನು", "naanu", "i"], ["ಕೊರಿಯನ್", "koriyan", "korean"], ["ಓದುತ್ತೇನೆ", "oduttene", "study"]], "end": "."}
+{"sentence": "like-sushi", "t": [["ನನಗೆ", "nanage", "i"], ["ಸುಷಿ", "sushi", "sushi"], ["ಇಷ್ಟ", "ishta", "like"]], "end": "."}
+{"sentence": "like-coffee", "t": [["ನನಗೆ", "nanage", "i"], ["ಕಾಫಿ", "kaafi", "coffee"], ["ಇಷ್ಟ", "ishta", "like"]], "end": "."}
+{"sentence": "like-tea", "t": [["ನನಗೆ", "nanage", "i"], ["ಟೀ", "tii", "tea"], ["ಇಷ್ಟ", "ishta", "like"]], "end": "."}
+{"sentence": "love-you", "t": [["ನಾನು", "naanu", "i"], ["ನಿನ್ನನ್ನು", "ninnannu", "you"], ["ಪ್ರೀತಿಸುತ್ತೇನೆ", "priitisuttene", "love"]], "end": "."}
+{"sentence": "met-friend", "t": [["ನಾನು", "naanu", "i"], ["ನಿನ್ನೆ", "ninne", "yesterday"], ["ಒಬ್ಬ", "obba", "@one"], ["ಸ್ನೇಹಿತನನ್ನು", "snehitanannu", "friend"], ["ಭೇಟಿಯಾದೆ", "bheetiyaade", "meet+@past"]], "end": "."}
+{"sentence": "my-friend", "t": [["ಅವನು", "avanu", "he"], ["ನನ್ನ", "nanna", "i"], ["ಸ್ನೇಹಿತ", "snehita", "friend"]], "end": "."}
+{"sentence": "who-is-he", "t": [["ಅವನು", "avanu", "he"], ["ಯಾರು", "yaaru", "who"]], "end": "?"}
+{"sentence": "where-live", "t": [["ನೀವು", "niivu", "you"], ["ಎಲ್ಲಿ", "elli", "where"], ["ಇರುತ್ತೀರಿ", "iruttiiri", "live"]], "end": "?"}
+{"sentence": "from-egypt", "t": [["ನಾನು", "naanu", "i"], ["ಈಜಿಪ್ಟ್", "Iijipt", "egypt"], ["-ಇಂದ", "inda", "from"]], "end": "."}
+{"sentence": "we-are-klingons", "t": [["ನಾವು", "naavu", "we"], ["ಕ್ಲಿಂಗನ್ನರು", "klingannaru", "klingon"]], "end": "."}
+{"sentence": "this-is-book", "t": [["ಇದು", "idu", "this"], ["ಪುಸ್ತಕ", "pustaka", "book"]], "end": "."}
+{"sentence": "this-is-my-book", "t": [["ಇದು", "idu", "this"], ["ನನ್ನ", "nanna", "i"], ["ಪುಸ್ತಕ", "pustaka", "book"]], "end": "."}
+{"sentence": "drink-water", "t": [["ನಾನು", "naanu", "i"], ["ನೀರು", "niiru", "water"], ["ಕುಡಿಯುತ್ತೇನೆ", "kudiyuttene", "drink"]], "end": "."}
+{"sentence": "drink-tea", "t": [["ನಾನು", "naanu", "i"], ["ಟೀ", "tii", "tea"], ["ಕುಡಿಯುತ್ತೇನೆ", "kudiyuttene", "drink"]], "end": "."}
+{"sentence": "want-coffee", "t": [["ನನಗೆ", "nanage", "i"], ["ಕಾಫಿ", "kaafi", "coffee"], ["ಬೇಕು", "beku", "want"]], "end": "."}
+{"sentence": "read-book", "t": [["ನಾನು", "naanu", "i"], ["ಪುಸ್ತಕ", "pustaka", "book"], ["ಓದುತ್ತೇನೆ", "oduttene", "read"]], "end": "."}
+{"sentence": "eat-rice", "t": [["ನಾವು", "naavu", "we"], ["ಅನ್ನ", "anna", "rice"], ["ತಿನ್ನುತ್ತೇವೆ", "tinnutteve", "eat"]], "end": "."}
+{"sentence": "eat-food", "t": [["ನಾನು", "naanu", "i"], ["ಊಟವನ್ನು", "uutavannu", "food"], ["ತಿನ್ನುತ್ತೇನೆ", "tinnuttene", "eat"]], "end": "."}
+{"sentence": "lunch-restaurant", "t": [["ನಾನು", "naanu", "i"], ["ರೆಸ್ಟೋರೆಂಟ್‌ನಲ್ಲಿ", "restoreantnalli", "restaurant+@place"], ["ಮಧ್ಯಾಹ್ನದ ಊಟ", "madhyaahnada uuta", "lunch"], ["ತಿನ್ನುತ್ತೇನೆ", "tinnuttene", "eat"]], "end": "."}
+{"sentence": "eat-restaurant", "t": [["ನಾನು", "naanu", "i"], ["ರೆಸ್ಟೋರೆಂಟ್‌ನಲ್ಲಿ", "restoreantnalli", "restaurant+@place"], ["ತಿನ್ನುತ್ತೇನೆ", "tinnuttene", "eat"]], "end": "."}
+{"sentence": "hot-today", "t": [["ಇವತ್ತು", "ivattu", "today"], ["ಬಿಸಿ", "bisi", "hot"]], "end": "."}
+{"sentence": "cold-today", "t": [["ಇವತ್ತು", "ivattu", "today"], ["ತಣ್ಣಗಿದೆ", "tannagide", "cold"]], "end": "."}
+{"sentence": "weather-hot", "t": [["ಇವತ್ತು", "ivattu", "today"], ["ಹವಾಮಾನ", "havaamaana", "weather"], ["ಬಿಸಿ", "bisi", "hot"]], "end": "."}
+{"sentence": "weather-good", "t": [["ಇವತ್ತು", "ivattu", "today"], ["ಹವಾಮಾನ", "havaamaana", "weather"], ["ಒಳ್ಳೆಯದು", "olleyadu", "good"]], "end": "."}
+{"sentence": "raining", "t": [["ಮಳೆ", "male", "rain"], ["ಬರುತ್ತಿದೆ", "baruttide", "@happen"]], "end": "."}
+{"sentence": "monday", "t": [["ಇವತ್ತು", "ivattu", "today"], ["ಸೋಮವಾರ", "somavaara", "monday"]], "end": "."}
+{"sentence": "what-time", "t": [["ಗಂಟೆ", "gante", "time"], ["ಎಷ್ಟು", "eshtu", "what"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["ಈಗ", "iiga", "now"], ["ಗಂಟೆ", "gante", "time"], ["ಎಷ್ಟು", "eshtu", "what"]], "end": "?"}
+{"sentence": "no-time", "t": [["ಸಮಯ", "samaya", "time"], ["ಇಲ್ಲ", "illa", "none"]], "end": "."}
+{"sentence": "there-is-cat", "t": [["ಒಂದು", "ondu", "@one"], ["ಬೆಕ್ಕು", "bekku", "cat"], ["ಇದೆ", "ide", "exist"]], "end": "."}
+{"sentence": "have-cat", "t": [["ನನ್ನ", "nanna", "i"], ["ಹತ್ತಿರ", "hattira", "@possession"], ["ಒಂದು", "ondu", "@one"], ["ಬೆಕ್ಕು", "bekku", "cat"], ["ಇದೆ", "ide", "have"]], "end": "."}
+{"sentence": "book-on-table", "t": [["ಮೇಜಿನ", "mejina", "table"], ["ಮೇಲೆ", "mele", "on"], ["ಒಂದು", "ondu", "@one"], ["ಪುಸ್ತಕ", "pustaka", "book"], ["ಇದೆ", "ide", "exist"]], "end": "."}
+{"sentence": "house-big", "t": [["ಮನೆ", "mane", "house"], ["ದೊಡ್ಡದು", "doddadu", "big"]], "end": "."}
+{"sentence": "car-new", "t": [["ಕಾರು", "kaaru", "car"], ["ಹೊಸದು", "hosadu", "new"]], "end": "."}
+{"sentence": "delicious", "t": [["ರುಚಿಯಾಗಿದೆ", "ruchiyaagide", "delicious"]], "end": "."}
+{"sentence": "food-tasty", "t": [["ಊಟ", "uuta", "food"], ["ತುಂಬಾ", "tumbaa", "very"], ["ರುಚಿಯಾಗಿದೆ", "ruchiyaagide", "delicious"]], "end": "."}
+{"sentence": "head-hurts", "t": [["ನನ್ನ", "nanna", "i"], ["ತಲೆ", "tale", "head"], ["ನೋಯುತ್ತಿದೆ", "noyuttide", "hurt"]], "end": "."}
+{"sentence": "hungry", "t": [["ನನಗೆ", "nanage", "i"], ["ಹಸಿವಾಗಿದೆ", "hasivaagide", "hungry"]], "end": "."}
+{"sentence": "give-water", "t": [["ದಯವಿಟ್ಟು", "dayavittu", "please"], ["ನನಗೆ", "nanage", "i"], ["ನೀರು", "niiru", "water"], ["ಕೊಡಿ", "kodi", "give"]], "end": "."}
+{"sentence": "wait-moment", "t": [["ದಯವಿಟ್ಟು", "dayavittu", "please"], ["ಒಂದು", "ondu", "@one"], ["ಕ್ಷಣ", "kshana", "moment"], ["ಕಾಯಿರಿ", "kaayiri", "wait"]], "end": "."}
+{"sentence": "sit-down", "t": [["ದಯವಿಟ್ಟು", "dayavittu", "please"], ["ಕುಳಿತುಕೊಳ್ಳಿ", "kulitukolli", "sit"]], "end": "."}
+{"sentence": "where-station", "t": [["ನಿಲ್ದಾಣ", "nildaana", "station"], ["ಎಲ್ಲಿ", "elli", "where"]], "end": "?"}
+{"sentence": "where-toilet", "t": [["ಶೌಚಾಲಯ", "shauchaalaya", "toilet"], ["ಎಲ್ಲಿ", "elli", "where"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["ಹೋಟೆಲ್", "hotel", "hotel"], ["ಎಲ್ಲಿ", "elli", "where"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["ಇದು", "idu", "this"], ["ಎಷ್ಟು", "eshtu", "how-much"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["ಎಷ್ಟು", "eshtu", "how-much"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["ಇದರ ಬೆಲೆ", "idara bele", "cost"], ["ಎಷ್ಟು", "eshtu", "how-much"]], "end": "?"}
+{"sentence": "bill-please", "t": [["ಬಿಲ್", "bil", "bill"], ["ದಯವಿಟ್ಟು", "dayavittu", "please"]], "end": "."}
+{"sentence": "go-school", "t": [["ನಾನು", "naanu", "i"], ["ಶಾಲೆ", "shaale", "school"], ["-ಗೆ", "ge", "@direction"], ["ಹೋಗುತ್ತೇನೆ", "hoguttene", "go"]], "end": "."}
+{"sentence": "bus-school", "t": [["ನಾನು", "naanu", "i"], ["ಬಸ್‌ನಲ್ಲಿ", "basnalli", "bus+@means"], ["ಶಾಲೆ", "shaale", "school"], ["-ಗೆ", "ge", "@direction"], ["ಹೋಗುತ್ತೇನೆ", "hoguttene", "go"]], "end": "."}
+{"sentence": "go-tokyo", "t": [["ನನಗೆ", "nanage", "i"], ["ಟೋಕಿಯೊ", "Tookiyo", "tokyo"], ["-ಗೆ", "ge", "@direction"], ["ಹೋಗಬೇಕು", "hogabeku", "go+want"]], "end": "."}
+{"sentence": "came-train", "t": [["ನಾನು", "naanu", "i"], ["ರೈಲಿನಲ್ಲಿ", "railinalli", "train+@means"], ["ಬಂದೆ", "bande", "come+@past"]], "end": "."}
+{"sentence": "where-going", "t": [["ನೀವು", "niivu", "you"], ["ಎಲ್ಲಿ", "elli", "where"], ["ಹೋಗುತ್ತೀರಿ", "hoguttiiri", "go"]], "end": "?"}
+{"sentence": "going-home", "t": [["ನಾನು", "naanu", "i"], ["ಮನೆ", "mane", "home"], ["-ಗೆ", "ge", "@direction"], ["ಹೋಗುತ್ತಿದ್ದೇನೆ", "hoguttiddene", "go"]], "end": "."}
+{"sentence": "we-going-home", "t": [["ನಾವು", "naavu", "we"], ["ಮನೆ", "mane", "home"], ["-ಗೆ", "ge", "@direction"], ["ಹೋಗುತ್ತಿದ್ದೇವೆ", "hoguttiddeve", "go"]], "end": "."}
+{"sentence": "lets-go", "t": [["ಹೋಗೋಣ", "hogona", "let-us+go"]], "end": "."}
+{"sentence": "live-moscow", "t": [["ನಾನು", "naanu", "i"], ["ಮಾಸ್ಕೋದಲ್ಲಿ", "Maaskodalli", "moscow+@place"], ["ಇರುತ್ತೇನೆ", "iruttene", "live"]], "end": "."}
+{"sentence": "live-cairo", "t": [["ನಾನು", "naanu", "i"], ["ಕೈರೋದಲ್ಲಿ", "Kairodalli", "cairo+@place"], ["ಇರುತ್ತೇನೆ", "iruttene", "live"]], "end": "."}
+{"sentence": "live-beijing", "t": [["ನಾನು", "naanu", "i"], ["ಬೀಜಿಂಗ್‌ನಲ್ಲಿ", "Biijingnalli", "beijing+@place"], ["ಇರುತ್ತೇನೆ", "iruttene", "live"]], "end": "."}
+{"sentence": "i-sleep", "t": [["ನಾನು", "naanu", "i"], ["ಮಲಗುತ್ತೇನೆ", "malaguttene", "sleep"]], "end": "."}
+{"sentence": "i-fight", "t": [["ನಾನು", "naanu", "i"], ["ಹೋರಾಡುತ್ತೇನೆ", "horaaduttene", "fight"]], "end": "."}
+{"sentence": "we-fight", "t": [["ನಾವು", "naavu", "we"], ["ಹೋರಾಡುತ್ತೇವೆ", "horaadutteve", "fight"]], "end": "."}
+{"sentence": "sleep-command", "t": [["ಮಲಗು", "malagu", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["ಮಗು", "magu", "child"], ["ಮಲಗುತ್ತದೆ", "malaguttade", "sleep"]], "end": "."}
+{"sentence": "officer-sees-child", "t": [["ಅಧಿಕಾರಿ", "adhikaari", "officer"], ["ಮಗುವನ್ನು", "maguvannu", "child"], ["ನೋಡುತ್ತಾನೆ", "noduttaane", "see"]], "end": "."}
+{"sentence": "captain-sees-ship", "t": [["ಕ್ಯಾಪ್ಟನ್", "kyaaptan", "captain"], ["ಹಡಗನ್ನು", "hadagannu", "ship"], ["ನೋಡುತ್ತಾನೆ", "noduttaane", "see"]], "end": "."}
+{"sentence": "i-see-ship", "t": [["ನಾನು", "naanu", "i"], ["ಹಡಗನ್ನು", "hadagannu", "ship"], ["ನೋಡುತ್ತೇನೆ", "noduttene", "see"]], "end": "."}
+{"sentence": "print-word", "t": [["ಪದವನ್ನು", "padavannu", "word"], ["ಮುದ್ರಿಸಿ", "mudrisi", "print"]], "end": "."}
+{"sentence": "show-number", "t": [["ಸಂಖ್ಯೆಯನ್ನು", "sankhyeyannu", "number"], ["ತೋರಿಸಿ", "torisi", "print"]], "end": "."}
+{"sentence": "print-screen", "t": [["ಪರದೆಯಲ್ಲಿ", "paradealli", "screen+@place"], ["ಪದವನ್ನು", "padavannu", "word"], ["ಮುದ್ರಿಸಿ", "mudrisi", "print"]], "end": "."}
+{"sentence": "start-loop", "t": [["ಲೂಪ್ ಅನ್ನು", "luup annu", "loop"], ["ಪ್ರಾರಂಭಿಸಿ", "praarambhisi", "start"]], "end": "."}
+{"sentence": "end-loop", "t": [["ಲೂಪ್ ಅನ್ನು", "luup annu", "loop"], ["ಮುಗಿಸಿ", "mugisi", "end"]], "end": "."}
+{"sentence": "repeat-three", "t": [["ಮೂರು", "muuru", "three"], ["ಬಾರಿ", "baari", "times"], ["ಪುನರಾವರ್ತಿಸಿ", "punaraavartisi", "repeat"]], "end": "."}
+{"sentence": "count-to-ten", "t": [["ಒಂದು", "ondu", "one"], ["ಇಂದ", "inda", "from"], ["ಹತ್ತು", "hattu", "ten"], ["ವರೆಗೆ", "varege", "@until"], ["ಎಣಿಸಿ", "enisi", "count"]], "end": "."}
+{"sentence": "set-value", "t": [["ಮೌಲ್ಯವನ್ನು", "maulyavannu", "value"], ["ಹೊಂದಿಸಿ", "hondisi", "set"]], "end": "."}
+{"sentence": "create-variable", "t": [["ಒಂದು", "ondu", "@one"], ["ಚರವನ್ನು", "charavannu", "variable"], ["ರಚಿಸಿ", "rachisi", "create"]], "end": "."}
+{"sentence": "return-value", "t": [["ಮೌಲ್ಯವನ್ನು", "maulyavannu", "value"], ["ಹಿಂತಿರುಗಿಸಿ", "hintirugisi", "return"]], "end": "."}
+{"sentence": "load-data", "t": [["ಡೇಟಾವನ್ನು", "detaavannu", "data"], ["ಲೋಡ್ ಮಾಡಿ", "lod maadi", "load"]], "end": "."}
+{"sentence": "add-one", "t": [["ಒಂದನ್ನು", "ondannu", "one"], ["ಸೇರಿಸಿ", "serisi", "add"]], "end": "."}
+{"sentence": "sort-list", "t": [["ಪಟ್ಟಿಯನ್ನು", "pattiyannu", "list"], ["ವಿಂಗಡಿಸಿ", "vingadisi", "sort"]], "end": "."}
+{"sentence": "run-program", "t": [["ಪ್ರೋಗ್ರಾಮ್ ಅನ್ನು", "programaam annu", "program"], ["ಚಲಾಯಿಸಿ", "chalaayisi", "run"]], "end": "."}

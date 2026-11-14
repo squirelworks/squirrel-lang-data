@@ -1,0 +1,104 @@
+{"schema": "columns@1", "language": "telugu", "notes": ["Telugu column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. The romanization matches the simplified scheme in languages/telugu (doubled long vowels). Nominal sentences often omit \"to be\" (నా పేరు రవి), so those rows have no @copula token. Case endings -కి / -లో / నుండి / -ని may glue with a leading \"-\". Yes/no questions often end with -ా (@question).", "Sources: forms match languages/telugu/vocab.jsonl, reference.json, and the Telugu grammar pack (నా పేరు రవి, మీ పేరు ఏమిటి?, మీరు ఇంగ్లీష్ మాట్లాడతారా?, నాకు తెలియదు, నాకు సమయం లేదు, ఇది ఎంత?, వర్షం పడుతోంది, నాకు … ఇష్టం / కావాలి, నేను బడికి వెళ్తాను, పదండి వెళ్దాం, దయచేసి కూర్చోండి). Forms match languages/telugu/vocab.jsonl where a card exists; other lemmas follow standard Telugu (Wiktionary CC BY-SA 4.0 consulted for spelling and romanization)."], "sep": " "}
+{"sentence": "i-am-student", "t": [["నేను", "nenu", "i"], ["విద్యార్థి", "vidyaarthi", "student"]], "end": "."}
+{"sentence": "name-tanaka", "t": [["నా", "naa", "i"], ["పేరు", "peru", "name"], ["తనాకా", "Tanaakaa", "tanaka"]], "end": "."}
+{"sentence": "name-minjun", "t": [["నా", "naa", "i"], ["పేరు", "peru", "name"], ["మిన్జున్", "Minjun", "minjun"]], "end": "."}
+{"sentence": "name-anna", "t": [["నా", "naa", "i"], ["పేరు", "peru", "name"], ["అన్నా", "Annaa", "anna"]], "end": "."}
+{"sentence": "name-ravi", "t": [["నా", "naa", "i"], ["పేరు", "peru", "name"], ["రవి", "Ravi", "ravi"]], "end": "."}
+{"sentence": "name-sami", "t": [["నా", "naa", "i"], ["పేరు", "peru", "name"], ["సామి", "Saami", "sami"]], "end": "."}
+{"sentence": "name-wang-ming", "t": [["నా", "naa", "i"], ["పేరు", "peru", "name"], ["వాంగ్ మింగ్", "Vaang Ming", "wang-ming"]], "end": "."}
+{"sentence": "your-name", "t": [["మీ", "mii", "you"], ["పేరు", "peru", "name"], ["ఏమిటి", "emiti", "what"]], "end": "?"}
+{"sentence": "hello", "t": [["నమస్కారం", "namaskaaram", "hello"]], "end": "."}
+{"sentence": "nice-to-meet-you", "t": [["మిమ్మల్ని కలవడం సంతోషం", "mimmalni kalavadam santosham", "nice-to-meet-you"]], "end": "."}
+{"sentence": "good-morning", "t": [["శుభోదయం", "shubhodayam", "good+morning"]], "end": "."}
+{"sentence": "thank-you", "t": [["ధన్యవాదాలు", "dhanyavaadaalu", "thanks"]], "end": "."}
+{"sentence": "thank-you-very-much", "t": [["చాలా", "chaalaa", "very-much"], ["ధన్యవాదాలు", "dhanyavaadaalu", "thanks"]], "end": "."}
+{"sentence": "success", "t": [["విజయం", "vijayam", "success"]], "end": "!"}
+{"sentence": "dont-understand", "t": [["నాకు", "naaku", "i"], ["అర్థం కావడం లేదు", "artham kaavadam ledu", "not+understand"]], "end": "."}
+{"sentence": "dont-know", "t": [["నాకు", "naaku", "i"], ["తెలియదు", "teliyadu", "not+know"]], "end": "."}
+{"sentence": "speak-english", "t": [["మీరు", "miiru", "you"], ["ఇంగ్లీష్", "ingliish", "english"], ["మాట్లాడతారు", "maatlaadataaru", "speak"], ["-ా", "aa", "@question"]], "end": "?"}
+{"sentence": "speak-chinese", "t": [["మీరు", "miiru", "you"], ["చైనీస్", "chainees", "chinese"], ["మాట్లాడతారు", "maatlaadataaru", "speak"], ["-ా", "aa", "@question"]], "end": "?"}
+{"sentence": "speak-arabic", "t": [["మీరు", "miiru", "you"], ["అరబిక్", "arabik", "arabic"], ["మాట్లాడతారు", "maatlaadataaru", "speak"], ["-ా", "aa", "@question"]], "end": "?"}
+{"sentence": "speak-klingon", "t": [["మీరు", "miiru", "you"], ["క్లింగన్", "klingan", "klingon"], ["మాట్లాడతారు", "maatlaadataaru", "speak"], ["-ా", "aa", "@question"]], "end": "?"}
+{"sentence": "speak-hindi", "t": [["నేను", "nenu", "i"], ["హిందీ", "hindii", "hindi"], ["మాట్లాడతాను", "maatlaadataanu", "speak"]], "end": "."}
+{"sentence": "study-korean", "t": [["నేను", "nenu", "i"], ["కొరియన్", "koriyan", "korean"], ["చదువుతాను", "chaduvutaanu", "study"]], "end": "."}
+{"sentence": "like-sushi", "t": [["నాకు", "naaku", "i"], ["సుషి", "sushi", "sushi"], ["ఇష్టం", "ishtam", "like"]], "end": "."}
+{"sentence": "like-coffee", "t": [["నాకు", "naaku", "i"], ["కాఫీ", "kaafii", "coffee"], ["ఇష్టం", "ishtam", "like"]], "end": "."}
+{"sentence": "like-tea", "t": [["నాకు", "naaku", "i"], ["టీ", "tii", "tea"], ["ఇష్టం", "ishtam", "like"]], "end": "."}
+{"sentence": "love-you", "t": [["నేను", "nenu", "i"], ["నిన్ను", "ninnu", "you"], ["ప్రేమిస్తున్నాను", "premistunnaanu", "love"]], "end": "."}
+{"sentence": "met-friend", "t": [["నేను", "nenu", "i"], ["నిన్న", "ninna", "yesterday"], ["ఒక", "oka", "@one"], ["స్నేహితుడిని", "snehitudini", "friend"], ["కలిశాను", "kalishaanu", "meet+@past"]], "end": "."}
+{"sentence": "my-friend", "t": [["అతను", "atanu", "he"], ["నా", "naa", "i"], ["స్నేహితుడు", "snehitudu", "friend"]], "end": "."}
+{"sentence": "who-is-he", "t": [["అతను", "atanu", "he"], ["ఎవరు", "evaru", "who"]], "end": "?"}
+{"sentence": "where-live", "t": [["మీరు", "miiru", "you"], ["ఎక్కడ", "ekkada", "where"], ["ఉంటారు", "untaaru", "live"]], "end": "?"}
+{"sentence": "from-egypt", "t": [["నేను", "nenu", "i"], ["ఈజిప్ట్", "Iijipt", "egypt"], ["నుండి", "nundi", "from"]], "end": "."}
+{"sentence": "we-are-klingons", "t": [["మేము", "memu", "we"], ["క్లింగన్లు", "klinganlu", "klingon"]], "end": "."}
+{"sentence": "this-is-book", "t": [["ఇది", "idi", "this"], ["పుస్తకం", "pustakam", "book"]], "end": "."}
+{"sentence": "this-is-my-book", "t": [["ఇది", "idi", "this"], ["నా", "naa", "i"], ["పుస్తకం", "pustakam", "book"]], "end": "."}
+{"sentence": "drink-water", "t": [["నేను", "nenu", "i"], ["నీళ్ళు", "niillu", "water"], ["తాగుతాను", "taagutaanu", "drink"]], "end": "."}
+{"sentence": "drink-tea", "t": [["నేను", "nenu", "i"], ["టీ", "tii", "tea"], ["తాగుతాను", "taagutaanu", "drink"]], "end": "."}
+{"sentence": "want-coffee", "t": [["నాకు", "naaku", "i"], ["కాఫీ", "kaafii", "coffee"], ["కావాలి", "kaavaali", "want"]], "end": "."}
+{"sentence": "read-book", "t": [["నేను", "nenu", "i"], ["పుస్తకం", "pustakam", "book"], ["చదువుతాను", "chaduvutaanu", "read"]], "end": "."}
+{"sentence": "eat-rice", "t": [["మేము", "memu", "we"], ["అన్నం", "annam", "rice"], ["తింటాము", "tintamu", "eat"]], "end": "."}
+{"sentence": "eat-food", "t": [["నేను", "nenu", "i"], ["భోజనం", "bhojanam", "food"], ["తింటాను", "tintaanu", "eat"]], "end": "."}
+{"sentence": "lunch-restaurant", "t": [["నేను", "nenu", "i"], ["రెస్టారెంట్‌లో", "restaarentlo", "restaurant+@place"], ["మధ్యాహ్న భోజనం", "madhyaahna bhojanam", "lunch"], ["తింటాను", "tintaanu", "eat"]], "end": "."}
+{"sentence": "eat-restaurant", "t": [["నేను", "nenu", "i"], ["రెస్టారెంట్‌లో", "restaarentlo", "restaurant+@place"], ["తింటాను", "tintaanu", "eat"]], "end": "."}
+{"sentence": "hot-today", "t": [["ఈరోజు", "iiroju", "today"], ["వేడిగా ఉంది", "vedigaa undi", "hot"]], "end": "."}
+{"sentence": "cold-today", "t": [["ఈరోజు", "iiroju", "today"], ["చల్లగా ఉంది", "challagaa undi", "cold"]], "end": "."}
+{"sentence": "weather-hot", "t": [["ఈరోజు", "iiroju", "today"], ["వాతావరణం", "vaataavaranam", "weather"], ["వేడిగా ఉంది", "vedigaa undi", "hot"]], "end": "."}
+{"sentence": "weather-good", "t": [["ఈరోజు", "iiroju", "today"], ["వాతావరణం", "vaataavaranam", "weather"], ["బాగుంది", "baagundi", "good"]], "end": "."}
+{"sentence": "raining", "t": [["వర్షం", "varsham", "rain"], ["పడుతోంది", "padutondi", "@happen"]], "end": "."}
+{"sentence": "monday", "t": [["ఈరోజు", "iiroju", "today"], ["సోమవారం", "somavaaram", "monday"]], "end": "."}
+{"sentence": "what-time", "t": [["టైం", "taim", "time"], ["ఎంత", "enta", "what"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["ఇప్పుడు", "ippudu", "now"], ["టైం", "taim", "time"], ["ఎంత", "enta", "what"]], "end": "?"}
+{"sentence": "no-time", "t": [["సమయం", "samayam", "time"], ["లేదు", "ledu", "none"]], "end": "."}
+{"sentence": "there-is-cat", "t": [["ఒక", "oka", "@one"], ["పిల్లి", "pilli", "cat"], ["ఉంది", "undi", "exist"]], "end": "."}
+{"sentence": "have-cat", "t": [["నాకు", "naaku", "i"], ["ఒక", "oka", "@one"], ["పిల్లి", "pilli", "cat"], ["ఉంది", "undi", "have"]], "end": "."}
+{"sentence": "book-on-table", "t": [["బల్ల", "balla", "table"], ["మీద", "miida", "on"], ["ఒక", "oka", "@one"], ["పుస్తకం", "pustakam", "book"], ["ఉంది", "undi", "exist"]], "end": "."}
+{"sentence": "house-big", "t": [["ఇల్లు", "illu", "house"], ["పెద్దది", "peddadi", "big"]], "end": "."}
+{"sentence": "car-new", "t": [["కారు", "kaaru", "car"], ["కొత్తది", "kottadi", "new"]], "end": "."}
+{"sentence": "delicious", "t": [["రుచిగా ఉంది", "ruchigaa undi", "delicious"]], "end": "."}
+{"sentence": "food-tasty", "t": [["భోజనం", "bhojanam", "food"], ["చాలా", "chaalaa", "very"], ["రుచిగా ఉంది", "ruchigaa undi", "delicious"]], "end": "."}
+{"sentence": "head-hurts", "t": [["నా", "naa", "i"], ["తల", "tala", "head"], ["నొప్పి పెడుతోంది", "noppi pedutondi", "hurt"]], "end": "."}
+{"sentence": "hungry", "t": [["నాకు", "naaku", "i"], ["ఆకలేస్తోంది", "aakalestondi", "hungry"]], "end": "."}
+{"sentence": "give-water", "t": [["దయచేసి", "dayachesi", "please"], ["నాకు", "naaku", "i"], ["నీళ్ళు", "niillu", "water"], ["ఇవ్వండి", "ivvandi", "give"]], "end": "."}
+{"sentence": "wait-moment", "t": [["దయచేసి", "dayachesi", "please"], ["ఒక", "oka", "@one"], ["క్షణం", "kshanam", "moment"], ["ఆగండి", "aagandi", "wait"]], "end": "."}
+{"sentence": "sit-down", "t": [["దయచేసి", "dayachesi", "please"], ["కూర్చోండి", "kuurchondi", "sit"]], "end": "."}
+{"sentence": "where-station", "t": [["స్టేషన్", "steshan", "station"], ["ఎక్కడ", "ekkada", "where"]], "end": "?"}
+{"sentence": "where-toilet", "t": [["బాత్రూమ్", "baatruum", "toilet"], ["ఎక్కడ", "ekkada", "where"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["హోటల్", "hotal", "hotel"], ["ఎక్కడ", "ekkada", "where"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["ఇది", "idi", "this"], ["ఎంత", "enta", "how-much"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["ఎంత", "enta", "how-much"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["దీని ధర", "diini dhara", "cost"], ["ఎంత", "enta", "how-much"]], "end": "?"}
+{"sentence": "bill-please", "t": [["బిల్లు", "billu", "bill"], ["దయచేసి", "dayachesi", "please"]], "end": "."}
+{"sentence": "go-school", "t": [["నేను", "nenu", "i"], ["బడి", "badi", "school"], ["-కి", "ki", "@direction"], ["వెళ్తాను", "veltaanu", "go"]], "end": "."}
+{"sentence": "bus-school", "t": [["నేను", "nenu", "i"], ["బస్సులో", "bassulo", "bus+@means"], ["బడి", "badi", "school"], ["-కి", "ki", "@direction"], ["వెళ్తాను", "veltaanu", "go"]], "end": "."}
+{"sentence": "go-tokyo", "t": [["నాకు", "naaku", "i"], ["టోక్యో", "Tookyo", "tokyo"], ["-కి", "ki", "@direction"], ["వెళ్ళాలి", "vellaali", "go+want"]], "end": "."}
+{"sentence": "came-train", "t": [["నేను", "nenu", "i"], ["రైలులో", "railulo", "train+@means"], ["వచ్చాను", "vachchaanu", "come+@past"]], "end": "."}
+{"sentence": "where-going", "t": [["మీరు", "miiru", "you"], ["ఎక్కడికి", "ekkadiki", "where"], ["వెళ్తున్నారు", "veltunnaaru", "go"]], "end": "?"}
+{"sentence": "going-home", "t": [["నేను", "nenu", "i"], ["ఇంటికి", "intiki", "home+@direction"], ["వెళ్తున్నాను", "veltunnaanu", "go"]], "end": "."}
+{"sentence": "we-going-home", "t": [["మేము", "memu", "we"], ["ఇంటికి", "intiki", "home+@direction"], ["వెళ్తున్నాము", "veltunnaamu", "go"]], "end": "."}
+{"sentence": "lets-go", "t": [["వెళ్దాం", "veldaam", "let-us+go"]], "end": "."}
+{"sentence": "live-moscow", "t": [["నేను", "nenu", "i"], ["మాస్కోలో", "Maaskolo", "moscow+@place"], ["ఉంటాను", "untaanu", "live"]], "end": "."}
+{"sentence": "live-cairo", "t": [["నేను", "nenu", "i"], ["కైరోలో", "Kairolo", "cairo+@place"], ["ఉంటాను", "untaanu", "live"]], "end": "."}
+{"sentence": "live-beijing", "t": [["నేను", "nenu", "i"], ["బీజింగ్‌లో", "Biijinglo", "beijing+@place"], ["ఉంటాను", "untaanu", "live"]], "end": "."}
+{"sentence": "i-sleep", "t": [["నేను", "nenu", "i"], ["నిద్రపోతాను", "nidrapotaanu", "sleep"]], "end": "."}
+{"sentence": "i-fight", "t": [["నేను", "nenu", "i"], ["పోరాడతాను", "poraadataanu", "fight"]], "end": "."}
+{"sentence": "we-fight", "t": [["మేము", "memu", "we"], ["పోరాడతాము", "poraadataamu", "fight"]], "end": "."}
+{"sentence": "sleep-command", "t": [["నిద్రపో", "nidrapo", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["పిల్లవాడు", "pillavaadu", "child"], ["నిద్రపోతాడు", "nidrapotaadu", "sleep"]], "end": "."}
+{"sentence": "officer-sees-child", "t": [["అధికారి", "adhikaari", "officer"], ["పిల్లవాడిని", "pillavaadini", "child"], ["చూస్తాడు", "chuustaadu", "see"]], "end": "."}
+{"sentence": "captain-sees-ship", "t": [["కెప్టెన్", "kepten", "captain"], ["ఓడను", "odanu", "ship"], ["చూస్తాడు", "chuustaadu", "see"]], "end": "."}
+{"sentence": "i-see-ship", "t": [["నేను", "nenu", "i"], ["ఓడను", "odanu", "ship"], ["చూస్తాను", "chuustaanu", "see"]], "end": "."}
+{"sentence": "print-word", "t": [["పదాన్ని", "padaanni", "word"], ["ముద్రించండి", "mudrinchandi", "print"]], "end": "."}
+{"sentence": "show-number", "t": [["సంఖ్యను", "sankhyanu", "number"], ["చూపండి", "chuupandi", "print"]], "end": "."}
+{"sentence": "print-screen", "t": [["స్క్రీన్‌పై", "skriinpai", "screen+@place"], ["పదాన్ని", "padaanni", "word"], ["ముద్రించండి", "mudrinchandi", "print"]], "end": "."}
+{"sentence": "start-loop", "t": [["లూప్‌ని", "luupni", "loop"], ["ప్రారంభించండి", "praarambhinchandi", "start"]], "end": "."}
+{"sentence": "end-loop", "t": [["లూప్‌ని", "luupni", "loop"], ["ముగించండి", "muginchandi", "end"]], "end": "."}
+{"sentence": "repeat-three", "t": [["మూడు", "muudu", "three"], ["సార్లు", "saarlu", "times"], ["పునరావృతం చేయండి", "punaraavrtam cheyandi", "repeat"]], "end": "."}
+{"sentence": "count-to-ten", "t": [["ఒకటి", "okati", "one"], ["నుండి", "nundi", "from"], ["పది", "padi", "ten"], ["వరకు", "varaku", "@until"], ["లెక్కించండి", "lekkinchandi", "count"]], "end": "."}
+{"sentence": "set-value", "t": [["విలువను", "viluvanu", "value"], ["సెట్ చేయండి", "set cheyandi", "set"]], "end": "."}
+{"sentence": "create-variable", "t": [["ఒక", "oka", "@one"], ["చరాన్ని", "charaanni", "variable"], ["సృష్టించండి", "srushtinchandi", "create"]], "end": "."}
+{"sentence": "return-value", "t": [["విలువను", "viluvanu", "value"], ["తిరిగి ఇవ్వండి", "tirigi ivvandi", "return"]], "end": "."}
+{"sentence": "load-data", "t": [["డేటాను", "detaanu", "data"], ["లోడ్ చేయండి", "lod cheyandi", "load"]], "end": "."}
+{"sentence": "add-one", "t": [["ఒకటి", "okati", "one"], ["జోడించండి", "jodinchandi", "add"]], "end": "."}
+{"sentence": "sort-list", "t": [["జాబితాను", "jaabitaanu", "list"], ["క్రమబద్ధం చేయండి", "kramabaddham cheyandi", "sort"]], "end": "."}
+{"sentence": "run-program", "t": [["ప్రోగ్రామ్‌ని", "programaamni", "program"], ["నడపండి", "nadapandi", "run"]], "end": "."}
