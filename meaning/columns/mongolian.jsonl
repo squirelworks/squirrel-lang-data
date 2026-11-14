@@ -1,0 +1,104 @@
+{"schema": "columns@1", "language": "mongolian", "notes": ["Mongolian column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. The text uses Cyrillic as in languages/mongolian/vocab.jsonl and everyday Mongolia.", "Mongolian marks case on nouns; yes/no questions often end with вэ / уу on @question. The copula байна appears where the matrix needs @copula. Code rows use the polite imperative, the usual form for instructions in Mongolian software.", "Forms match languages/mongolian/vocab.jsonl where a card exists; other lemmas follow standard Khalkha Mongolian (Wiktionary CC BY-SA 4.0 and Wikipedia CC BY-SA 4.0 consulted for spelling and romanization)."], "sep": " "}
+{"sentence": "i-am-student", "t": [["Би", "bi", "i"], ["оюутан", "oyuutan", "student"], ["байна", "baina", "@copula"]], "end": "."}
+{"sentence": "name-tanaka", "t": [["Миний", "minii", "i"], ["нэр", "ner", "name"], ["Танака", "Tanaka", "tanaka"]], "end": "."}
+{"sentence": "name-minjun", "t": [["Миний", "minii", "i"], ["нэр", "ner", "name"], ["Минжүн", "Minjun", "minjun"]], "end": "."}
+{"sentence": "name-anna", "t": [["Миний", "minii", "i"], ["нэр", "ner", "name"], ["Анна", "Anna", "anna"]], "end": "."}
+{"sentence": "name-ravi", "t": [["Миний", "minii", "i"], ["нэр", "ner", "name"], ["Рави", "Ravi", "ravi"]], "end": "."}
+{"sentence": "name-sami", "t": [["Миний", "minii", "i"], ["нэр", "ner", "name"], ["Сами", "Sami", "sami"]], "end": "."}
+{"sentence": "name-wang-ming", "t": [["Миний", "minii", "i"], ["нэр", "ner", "name"], ["Ван Мин", "Van Min", "wang-ming"]], "end": "."}
+{"sentence": "your-name", "t": [["Таны", "tany", "you"], ["нэр", "ner", "name"], ["юу", "yuu", "what"], ["вэ", "ve", "@question"]], "end": "?"}
+{"sentence": "hello", "t": [["Сайн байна уу", "sain baina uu", "hello"]], "end": "."}
+{"sentence": "nice-to-meet-you", "t": [["Танилцсандаа баяртай байна", "taniltsandaa bayartai baina", "nice-to-meet-you"]], "end": "."}
+{"sentence": "good-morning", "t": [["Өглөөний", "öglöönii", "good"], ["мэнд", "mend", "morning"]], "end": "."}
+{"sentence": "thank-you", "t": [["Баярлалаа", "bayarlalaa", "thanks"]], "end": "."}
+{"sentence": "thank-you-very-much", "t": [["Их", "ikh", "very-much"], ["баярлалаа", "bayarlalaa", "thanks"]], "end": "."}
+{"sentence": "success", "t": [["Амжилт", "amjilt", "success"]], "end": "!"}
+{"sentence": "dont-understand", "t": [["Би", "bi", "i"], ["ойлгохгүй", "oilgokhüi", "not+understand"], ["байна", "baina", "@copula"]], "end": "."}
+{"sentence": "dont-know", "t": [["Би", "bi", "i"], ["мэдэхгүй", "medekhüi", "not+know"], ["байна", "baina", "@copula"]], "end": "."}
+{"sentence": "speak-english", "t": [["Та", "ta", "you"], ["англи", "angli", "english"], ["ярьдаг", "yaridag", "speak"], ["уу", "uu", "@question"]], "end": "?"}
+{"sentence": "speak-chinese", "t": [["Та", "ta", "you"], ["хятад", "khyatad", "chinese"], ["ярьдаг", "yaridag", "speak"], ["уу", "uu", "@question"]], "end": "?"}
+{"sentence": "speak-arabic", "t": [["Та", "ta", "you"], ["араб", "arab", "arabic"], ["ярьдаг", "yaridag", "speak"], ["уу", "uu", "@question"]], "end": "?"}
+{"sentence": "speak-klingon", "t": [["Та", "ta", "you"], ["клингон", "klingon", "klingon"], ["ярьдаг", "yaridag", "speak"], ["уу", "uu", "@question"]], "end": "?"}
+{"sentence": "speak-hindi", "t": [["Би", "bi", "i"], ["хинди", "khindi", "hindi"], ["ярьдаг", "yaridag", "speak"]], "end": "."}
+{"sentence": "study-korean", "t": [["Би", "bi", "i"], ["солонгос", "solongos", "korean"], ["сурдаг", "surdag", "study"]], "end": "."}
+{"sentence": "like-sushi", "t": [["Би", "bi", "i"], ["суши", "sushi", "sushi"], ["дуртай", "durtai", "like"]], "end": "."}
+{"sentence": "like-coffee", "t": [["Би", "bi", "i"], ["кофе", "kofe", "coffee"], ["дуртай", "durtai", "like"]], "end": "."}
+{"sentence": "like-tea", "t": [["Би", "bi", "i"], ["цай", "tsai", "tea"], ["дуртай", "durtai", "like"]], "end": "."}
+{"sentence": "love-you", "t": [["Би", "bi", "i"], ["чамд", "chamd", "you"], ["хайртай", "khairtai", "love"]], "end": "."}
+{"sentence": "met-friend", "t": [["Өчигдөр", "öchigdör", "yesterday"], ["би", "bi", "i"], ["найз", "naiz", "friend"], ["уулзсан", "uulsan", "meet+@past"]], "end": "."}
+{"sentence": "my-friend", "t": [["Тэр", "ter", "he"], ["миний", "minii", "i"], ["найз", "naiz", "friend"]], "end": "."}
+{"sentence": "who-is-he", "t": [["Тэр", "ter", "he"], ["хэн", "khen", "who"], ["бэ", "be", "@question"]], "end": "?"}
+{"sentence": "where-live", "t": [["Та", "ta", "you"], ["хаана", "khaana", "where"], ["амьдардаг", "amiddardag", "live"], ["вэ", "ve", "@question"]], "end": "?"}
+{"sentence": "from-egypt", "t": [["Би", "bi", "i"], ["Египтээс", "Egipetes", "from+egypt"]], "end": "."}
+{"sentence": "we-are-klingons", "t": [["Бид", "bid", "we"], ["клингонууд", "klingonuud", "klingon"]], "end": "."}
+{"sentence": "this-is-book", "t": [["Энэ", "ene", "this"], ["ном", "nom", "book"]], "end": "."}
+{"sentence": "this-is-my-book", "t": [["Энэ", "ene", "this"], ["миний", "minii", "i"], ["ном", "nom", "book"]], "end": "."}
+{"sentence": "drink-water", "t": [["Би", "bi", "i"], ["ус", "us", "water"], ["уудаг", "uudag", "drink"]], "end": "."}
+{"sentence": "drink-tea", "t": [["Би", "bi", "i"], ["цай", "tsai", "tea"], ["уудаг", "uudag", "drink"]], "end": "."}
+{"sentence": "want-coffee", "t": [["Би", "bi", "i"], ["кофе", "kofe", "coffee"], ["хүсдэг", "khüsdag", "want"]], "end": "."}
+{"sentence": "read-book", "t": [["Би", "bi", "i"], ["ном", "nom", "book"], ["уншдаг", "unshdag", "read"]], "end": "."}
+{"sentence": "eat-rice", "t": [["Бид", "bid", "we"], ["будаа", "budaa", "rice"], ["иддэг", "iddag", "eat"]], "end": "."}
+{"sentence": "eat-food", "t": [["Би", "bi", "i"], ["хоол", "khool", "food"], ["иддэг", "iddag", "eat"]], "end": "."}
+{"sentence": "lunch-restaurant", "t": [["Би", "bi", "i"], ["ресторанд", "restorand", "restaurant"], ["өдрийн хоол", "ödriin khool", "lunch"], ["иддэг", "iddag", "eat"]], "end": "."}
+{"sentence": "eat-restaurant", "t": [["Би", "bi", "i"], ["ресторанд", "restorand", "restaurant"], ["иддэг", "iddag", "eat"]], "end": "."}
+{"sentence": "hot-today", "t": [["Өнөөдөр", "önöödör", "today"], ["халуун", "khaluun", "hot"], ["байна", "baina", "@copula"]], "end": "."}
+{"sentence": "cold-today", "t": [["Өнөөдөр", "önöödör", "today"], ["хүйтэн", "khüiten", "cold"], ["байна", "baina", "@copula"]], "end": "."}
+{"sentence": "weather-hot", "t": [["Өнөөдөр", "önöödör", "today"], ["агаар", "agaar", "weather"], ["халуун", "khaluun", "hot"]], "end": "."}
+{"sentence": "weather-good", "t": [["Өнөөдөр", "önöödör", "today"], ["агаар", "agaar", "weather"], ["сайхан", "saikhan", "good"]], "end": "."}
+{"sentence": "raining", "t": [["Бороо", "boroo", "rain"], ["орж", "orzh", "@ongoing"], ["байна", "baina", "@copula"]], "end": "."}
+{"sentence": "monday", "t": [["Өнөөдөр", "önöödör", "today"], ["даваа гариг", "davaa garig", "monday"]], "end": "."}
+{"sentence": "what-time", "t": [["Цаг", "tsag", "time"], ["хэд", "khed", "what+time"], ["вэ", "ve", "@question"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["Одоо", "odoo", "now"], ["цаг", "tsag", "time"], ["хэд", "khed", "what+time"], ["вэ", "ve", "@question"]], "end": "?"}
+{"sentence": "no-time", "t": [["Цаг", "tsag", "time"], ["алга", "alga", "none"]], "end": "."}
+{"sentence": "there-is-cat", "t": [["Муур", "muur", "cat"], ["байна", "baina", "exist"]], "end": "."}
+{"sentence": "have-cat", "t": [["Надад", "nadad", "i"], ["муур", "muur", "cat"], ["байна", "baina", "have"]], "end": "."}
+{"sentence": "book-on-table", "t": [["Ширээн", "shireen", "table"], ["дээр", "deer", "on"], ["ном", "nom", "book"], ["байна", "baina", "exist"]], "end": "."}
+{"sentence": "house-big", "t": [["Гэр", "ger", "house"], ["том", "tom", "big"]], "end": "."}
+{"sentence": "car-new", "t": [["Машин", "mashin", "car"], ["шинэ", "shine", "new"]], "end": "."}
+{"sentence": "delicious", "t": [["Амттай", "amttai", "delicious"]], "end": "."}
+{"sentence": "food-tasty", "t": [["Хоол", "khool", "food"], ["маш", "mash", "very"], ["амттай", "amttai", "delicious"]], "end": "."}
+{"sentence": "head-hurts", "t": [["Надад", "nadad", "i"], ["толгой", "tolgoi", "head"], ["өвддөг", "övdög", "hurt"]], "end": "."}
+{"sentence": "hungry", "t": [["Би", "bi", "i"], ["өлсөж", "ölsözh", "hungry"], ["байна", "baina", "@copula"]], "end": "."}
+{"sentence": "give-water", "t": [["Надад", "nadad", "i"], ["ус", "us", "water"], ["өгнө", "ögne", "give"], ["үү", "üü", "please"]], "end": "."}
+{"sentence": "wait-moment", "t": [["Түр", "tür", "moment"], ["хүлээнэ", "khülee", "wait"], ["үү", "üü", "please"]], "end": "."}
+{"sentence": "sit-down", "t": [["Сууж", "suuj", "sit"], ["байгаарай", "baigaarai", "please"]], "end": "."}
+{"sentence": "where-station", "t": [["Буудал", "buudal", "station"], ["хаана", "khaana", "where"], ["байна", "baina", "@copula"]], "end": "?"}
+{"sentence": "where-toilet", "t": [["Жорлон", "jorlon", "toilet"], ["хаана", "khaana", "where"], ["байна", "baina", "@copula"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["Зочид", "zochid", "hotel"], ["буудал", "buudal", "@place"], ["хаана", "khaana", "where"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["Энэ", "ene", "this"], ["хэд", "khed", "how-much"], ["вэ", "ve", "@question"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["Хэд", "khed", "how-much"], ["вэ", "ve", "@question"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["Үнэ", "üne", "cost"], ["хэд", "khed", "how-much"], ["вэ", "ve", "@question"]], "end": "?"}
+{"sentence": "bill-please", "t": [["Төлбөр", "tölbör", "bill"], ["үү", "üü", "please"]], "end": "."}
+{"sentence": "go-school", "t": [["Би", "bi", "i"], ["сургууль", "surguuli", "school"], ["руу", "ruu", "@place"], ["явдаг", "yavdag", "go"]], "end": "."}
+{"sentence": "bus-school", "t": [["Би", "bi", "i"], ["автобусаар", "avtobusaar", "bus+@means"], ["сургууль", "surguuli", "school"], ["явдаг", "yavdag", "go"]], "end": "."}
+{"sentence": "go-tokyo", "t": [["Би", "bi", "i"], ["Токио", "Tokio", "tokyo"], ["очихыг", "ochikhyg", "go"], ["хүсдэг", "khüsdag", "want"]], "end": "."}
+{"sentence": "came-train", "t": [["Би", "bi", "i"], ["галт", "galt", "train"], ["тэргээр", "tergeer", "@means"], ["ирсэн", "irsen", "come+@past"]], "end": "."}
+{"sentence": "where-going", "t": [["Та", "ta", "you"], ["хаашаа", "khaashaa", "where"], ["явах", "yavakh", "go"], ["вэ", "ve", "@question"]], "end": "?"}
+{"sentence": "going-home", "t": [["Би", "bi", "i"], ["гэр", "ger", "home"], ["руу", "ruu", "@place"], ["явах", "yavakh", "go"], ["гэж", "gezh", "@ongoing"], ["байна", "baina", "@copula"]], "end": "."}
+{"sentence": "we-going-home", "t": [["Бид", "bid", "we"], ["гэр", "ger", "home"], ["руу", "ruu", "@place"], ["явах", "yavakh", "go"], ["гэж", "gezh", "@ongoing"], ["байна", "baina", "@copula"]], "end": "."}
+{"sentence": "lets-go", "t": [["Явцгаая", "yavtsgaaya", "go+let-us"]], "end": "."}
+{"sentence": "live-moscow", "t": [["Би", "bi", "i"], ["Москвад", "Moskvad", "moscow+@place"], ["амьдардаг", "amiddardag", "live"]], "end": "."}
+{"sentence": "live-cairo", "t": [["Би", "bi", "i"], ["Каирт", "Kairt", "cairo+@place"], ["амьдардаг", "amiddardag", "live"]], "end": "."}
+{"sentence": "live-beijing", "t": [["Би", "bi", "i"], ["Бээжинг", "Beejing", "beijing+@place"], ["амьдардаг", "amiddardag", "live"]], "end": "."}
+{"sentence": "i-sleep", "t": [["Би", "bi", "i"], ["унтдаг", "untdag", "sleep"]], "end": "."}
+{"sentence": "i-fight", "t": [["Би", "bi", "i"], ["туулдаж", "tuuldazh", "fight"], ["байна", "baina", "@copula"]], "end": "."}
+{"sentence": "we-fight", "t": [["Бид", "bid", "we"], ["туулдаж", "tuuldazh", "fight"], ["байна", "baina", "@copula"]], "end": "."}
+{"sentence": "sleep-command", "t": [["Унт", "unt", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["Хүүхэд", "khüükhed", "child"], ["унтдаг", "untdag", "sleep"]], "end": "."}
+{"sentence": "officer-sees-child", "t": [["Цэрэг", "tsereg", "officer"], ["хүүхдийг", "khüükhediig", "child+@object"], ["хардаг", "khardag", "see"]], "end": "."}
+{"sentence": "captain-sees-ship", "t": [["Капитан", "kaptan", "captain"], ["хөлгийг", "kholgiig", "ship+@object"], ["хардаг", "khardag", "see"]], "end": "."}
+{"sentence": "i-see-ship", "t": [["Би", "bi", "i"], ["хөлгийг", "kholgiig", "ship+@object"], ["хардаг", "khardag", "see"]], "end": "."}
+{"sentence": "print-word", "t": [["Үгийг", "ügiig", "word+@object"], ["хэвлэ", "khevle", "print"]], "end": "."}
+{"sentence": "show-number", "t": [["Тоог", "toog", "number+@object"], ["харуул", "kharuul", "print"]], "end": "."}
+{"sentence": "print-screen", "t": [["Дэлгэц", "delgets", "screen"], ["дээр", "deer", "@place"], ["үгийг", "ügiig", "word+@object"], ["хэвлэ", "khevle", "print"]], "end": "."}
+{"sentence": "start-loop", "t": [["Давталтыг", "davtaltyg", "loop+@object"], ["эхлэ", "ekhle", "start"]], "end": "."}
+{"sentence": "end-loop", "t": [["Давталтыг", "davtaltyg", "loop+@object"], ["дуусга", "duusga", "end"]], "end": "."}
+{"sentence": "repeat-three", "t": [["Гурван", "gurvan", "three"], ["удаа", "udaa", "times"], ["давт", "davt", "repeat"]], "end": "."}
+{"sentence": "count-to-ten", "t": [["Нэг", "neg", "one"], ["ээс", "ees", "from"], ["арав", "arav", "ten"], ["хүртэл", "khürtele", "@until"], ["тоол", "tool", "count"]], "end": "."}
+{"sentence": "set-value", "t": [["Утгыг", "utgyg", "value+@object"], ["тохируул", "tokhiruul", "set"]], "end": "."}
+{"sentence": "create-variable", "t": [["Хувьсагч", "khuvsagch", "variable"], ["үүсгэ", "üüsg", "create"]], "end": "."}
+{"sentence": "return-value", "t": [["Утгыг", "utgyg", "value+@object"], ["буцаа", "butsa", "return"]], "end": "."}
+{"sentence": "load-data", "t": [["Өгөгдлийг", "ögögdliig", "data+@object"], ["ачаал", "achal", "load"]], "end": "."}
+{"sentence": "add-one", "t": [["Нэгийг", "negiig", "one+@object"], ["нэм", "nem", "add"]], "end": "."}
+{"sentence": "sort-list", "t": [["Жагсаалтыг", "jagsaaltyg", "list+@object"], ["эрэмлэ", "eremle", "sort"]], "end": "."}
+{"sentence": "run-program", "t": [["Програмыг", "programyg", "program+@object"], ["ажиллуул", "ajilluul", "run"]], "end": "."}
