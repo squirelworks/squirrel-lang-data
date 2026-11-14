@@ -1,24 +1,93 @@
-{"schema": "columns@1", "language": "hindi", "notes": ["Hindi column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]."], "sep": " "}
+{"schema": "columns@1", "language": "hindi", "notes": ["Hindi column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. Hindi is written in Devanagari; the danda । closes statements and \"?\" closes questions.", "Subject pronouns are usually written. The present auxiliaries हूँ / है / हैं carry @copula or @present; progressive रहा / रही / रहे carry @ongoing. Postpositions में / पर / से / को / का are their own tokens (@place, @of, from, and so on).", "\"Hello\" is नमस्ते. \"Nice to meet you\" is आपसे मिलकर खुशी हुई. \"Let's go\" is चलो (let-us+go). Code rows use the polite imperative with करें / दिखाएँ, the usual form for instructions in Hindi software and manuals.", "Forms match languages/hindi/vocab.jsonl where a card exists; other lemmas follow standard Hindi (Wiktionary CC BY-SA 4.0 consulted for spelling and romanization)."], "sep": " "}
 {"sentence": "i-am-student", "t": [["मैं", "main", "i"], ["छात्र", "chhātra", "student"], ["हूँ", "hūn", "@copula"]], "end": "।"}
+{"sentence": "name-tanaka", "t": [["मेरा", "merā", "i"], ["नाम", "nām", "name"], ["तनाका", "Tanākā", "tanaka"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "name-minjun", "t": [["मेरा", "merā", "i"], ["नाम", "nām", "name"], ["मिनजुन", "Minjun", "minjun"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "name-anna", "t": [["मेरा", "merā", "i"], ["नाम", "nām", "name"], ["अन्ना", "Annā", "anna"], ["है", "hai", "@copula"]], "end": "।"}
 {"sentence": "name-ravi", "t": [["मेरा", "merā", "i"], ["नाम", "nām", "name"], ["रवि", "Ravi", "ravi"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "name-sami", "t": [["मेरा", "merā", "i"], ["नाम", "nām", "name"], ["सामी", "Sāmī", "sami"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "name-wang-ming", "t": [["मेरा", "merā", "i"], ["नाम", "nām", "name"], ["वांग मिंग", "Vāng Ming", "wang-ming"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "your-name", "t": [["आपका", "āpkā", "you"], ["नाम", "nām", "name"], ["क्या", "kyā", "what"], ["है", "hai", "@copula"]], "end": "?"}
+{"sentence": "hello", "t": [["नमस्ते", "namaste", "hello"]], "end": "।"}
+{"sentence": "nice-to-meet-you", "t": [["आपसे मिलकर खुशी हुई", "āpse milkar khushī huī", "nice-to-meet-you"]], "end": "।"}
+{"sentence": "good-morning", "t": [["सुप्रभात", "suprabhāt", "good+morning"]], "end": "।"}
 {"sentence": "thank-you", "t": [["धन्यवाद", "dhanyavād", "thanks"]], "end": "।"}
-{"sentence": "where-live", "t": [["आप", "āp", "you"], ["कहाँ", "kahān", "where"], ["रहते", "rahte", "live"], ["हैं", "hain", "@present"]], "end": "?"}
-{"sentence": "who-is-he", "t": [["वह", "vah", "he"], ["कौन", "kaun", "who"], ["है", "hai", "@copula"]], "end": "?"}
-{"sentence": "speak-hindi", "t": [["मैं", "main", "i"], ["हिंदी", "hindī", "hindi"], ["बोलता", "boltā", "speak"], ["हूँ", "hūn", "@present"]], "end": "।"}
+{"sentence": "thank-you-very-much", "t": [["बहुत", "bahut", "very-much"], ["धन्यवाद", "dhanyavād", "thanks"]], "end": "।"}
+{"sentence": "success", "t": [["सफलता", "saphaltā", "success"]], "end": "!"}
 {"sentence": "dont-understand", "t": [["मैं", "main", "i"], ["नहीं", "nahīn", "not"], ["समझा", "samjhā", "understand"]], "end": "।"}
-{"sentence": "this-is-book", "t": [["यह", "yah", "this"], ["किताब", "kitāb", "book"], ["है", "hai", "@copula"]], "end": "।"}
-{"sentence": "drink-water", "t": [["मैं", "main", "i"], ["पानी", "pānī", "water"], ["पीता", "pītā", "drink"], ["हूँ", "hūn", "@present"]], "end": "।"}
-{"sentence": "hot-today", "t": [["आज", "āj", "today"], ["गर्मी", "garmī", "hot"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "dont-know", "t": [["मैं", "main", "i"], ["नहीं", "nahīn", "not"], ["जानता", "jāntā", "know"]], "end": "।"}
+{"sentence": "speak-english", "t": [["क्या", "kyā", "@question"], ["आप", "āp", "you"], ["अंग्रेज़ी", "angrezī", "english"], ["बोलते", "bolte", "speak"], ["हैं", "hain", "@present"]], "end": "?"}
+{"sentence": "speak-chinese", "t": [["क्या", "kyā", "@question"], ["आप", "āp", "you"], ["चीनी", "chīnī", "chinese"], ["बोलते", "bolte", "speak"], ["हैं", "hain", "@present"]], "end": "?"}
+{"sentence": "speak-arabic", "t": [["क्या", "kyā", "@question"], ["आप", "āp", "you"], ["अरबी", "arabī", "arabic"], ["बोलते", "bolte", "speak"], ["हैं", "hain", "@present"]], "end": "?"}
+{"sentence": "speak-klingon", "t": [["क्या", "kyā", "@question"], ["आप", "āp", "you"], ["क्लिंगन", "klingan", "klingon"], ["बोलते", "bolte", "speak"], ["हैं", "hain", "@present"]], "end": "?"}
+{"sentence": "speak-hindi", "t": [["मैं", "main", "i"], ["हिंदी", "hindī", "hindi"], ["बोलता", "boltā", "speak"], ["हूँ", "hūn", "@present"]], "end": "।"}
+{"sentence": "study-korean", "t": [["मैं", "main", "i"], ["कोरियाई", "koriyāī", "korean"], ["पढ़ता", "paṛhtā", "study"], ["हूँ", "hūn", "@present"]], "end": "।"}
+{"sentence": "like-sushi", "t": [["मुझे", "mujhe", "i"], ["सुशी", "sushī", "sushi"], ["पसंद", "pasand", "like"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "like-coffee", "t": [["मुझे", "mujhe", "i"], ["कॉफ़ी", "kofī", "coffee"], ["पसंद", "pasand", "like"], ["है", "hai", "@copula"]], "end": "।"}
 {"sentence": "like-tea", "t": [["मुझे", "mujhe", "i"], ["चाय", "chāy", "tea"], ["पसंद", "pasand", "like"], ["है", "hai", "@copula"]], "end": "।"}
-{"sentence": "head-hurts", "t": [["मेरे", "mere", "i"], ["सिर", "sir", "head"], ["में", "men", "@place"], ["दर्द", "dard", "hurt"], ["है", "hai", "@copula"]], "end": "।"}
-{"sentence": "food-tasty", "t": [["खाना", "khānā", "food"], ["बहुत", "bahut", "very"], ["स्वादिष्ट", "svādisht", "delicious"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "love-you", "t": [["मैं", "main", "i"], ["तुमसे", "tumse", "you"], ["प्यार करता हूँ", "pyār kartā hūn", "love"]], "end": "।"}
+{"sentence": "met-friend", "t": [["मैं", "main", "i"], ["कल", "kal", "yesterday"], ["एक", "ek", "@one"], ["दोस्त", "dost", "friend"], ["से", "se", "@place"], ["मिला", "milā", "meet+@past"]], "end": "।"}
+{"sentence": "my-friend", "t": [["वह", "vah", "he"], ["मेरा", "merā", "i"], ["दोस्त", "dost", "friend"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "who-is-he", "t": [["वह", "vah", "he"], ["कौन", "kaun", "who"], ["है", "hai", "@copula"]], "end": "?"}
+{"sentence": "where-live", "t": [["आप", "āp", "you"], ["कहाँ", "kahān", "where"], ["रहते", "rahte", "live"], ["हैं", "hain", "@present"]], "end": "?"}
+{"sentence": "from-egypt", "t": [["मैं", "main", "i"], ["मिस्र", "Misr", "egypt"], ["से", "se", "from"], ["हूँ", "hūn", "@copula"]], "end": "।"}
+{"sentence": "we-are-klingons", "t": [["हम", "ham", "we"], ["क्लिंगन", "klingan", "klingon"], ["हैं", "hain", "@copula"]], "end": "।"}
+{"sentence": "this-is-book", "t": [["यह", "yah", "this"], ["किताब", "kitāb", "book"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "this-is-my-book", "t": [["यह", "yah", "this"], ["मेरी", "merī", "i"], ["किताब", "kitāb", "book"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "drink-water", "t": [["मैं", "main", "i"], ["पानी", "pānī", "water"], ["पीता", "pītā", "drink"], ["हूँ", "hūn", "@present"]], "end": "।"}
+{"sentence": "drink-tea", "t": [["मैं", "main", "i"], ["चाय", "chāy", "tea"], ["पीता", "pītā", "drink"], ["हूँ", "hūn", "@present"]], "end": "।"}
+{"sentence": "want-coffee", "t": [["मुझे", "mujhe", "i"], ["कॉफ़ी", "kofī", "coffee"], ["चाहिए", "chāhie", "want"]], "end": "।"}
+{"sentence": "read-book", "t": [["मैं", "main", "i"], ["एक", "ek", "@one"], ["किताब", "kitāb", "book"], ["पढ़ता", "paṛhtā", "read"], ["हूँ", "hūn", "@present"]], "end": "।"}
+{"sentence": "eat-rice", "t": [["हम", "ham", "we"], ["चावल", "chāval", "rice"], ["खाते", "khāte", "eat"], ["हैं", "hain", "@present"]], "end": "।"}
+{"sentence": "eat-food", "t": [["मैं", "main", "i"], ["खाना", "khānā", "food"], ["खाता", "khātā", "eat"], ["हूँ", "hūn", "@present"]], "end": "।"}
+{"sentence": "lunch-restaurant", "t": [["मैं", "main", "i"], ["रेस्तराँ", "restarā̃", "restaurant"], ["में", "men", "@place"], ["दोपहर का खाना", "dopahar kā khānā", "lunch"], ["खाता", "khātā", "eat"], ["हूँ", "hūn", "@present"]], "end": "।"}
+{"sentence": "eat-restaurant", "t": [["मैं", "main", "i"], ["रेस्तराँ", "restarā̃", "restaurant"], ["में", "men", "@place"], ["खाता", "khātā", "eat"], ["हूँ", "hūn", "@present"]], "end": "।"}
+{"sentence": "hot-today", "t": [["आज", "āj", "today"], ["गर्मी", "garmī", "hot"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "cold-today", "t": [["आज", "āj", "today"], ["सर्दी", "sardī", "cold"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "weather-hot", "t": [["आज", "āj", "today"], ["मौसम", "mausam", "weather"], ["गर्म", "garm", "hot"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "weather-good", "t": [["आज", "āj", "today"], ["मौसम", "mausam", "weather"], ["अच्छा", "acchā", "good"], ["है", "hai", "@copula"]], "end": "।"}
 {"sentence": "raining", "t": [["बारिश", "bārish", "rain"], ["हो", "ho", "@happen"], ["रही", "rahī", "@ongoing"], ["है", "hai", "@copula"]], "end": "।"}
 {"sentence": "monday", "t": [["आज", "āj", "today"], ["सोमवार", "somvār", "monday"], ["है", "hai", "@copula"]], "end": "।"}
-{"sentence": "where-station", "t": [["स्टेशन", "steshan", "station"], ["कहाँ", "kahān", "where"], ["है", "hai", "@copula"]], "end": "?"}
-{"sentence": "how-much-this", "t": [["यह", "yah", "this"], ["कितने", "kitne", "how-much"], ["का", "kā", "@of"], ["है", "hai", "@copula"]], "end": "?"}
-{"sentence": "going-home", "t": [["मैं", "main", "i"], ["घर", "ghar", "home"], ["जा", "jā", "go"], ["रहा", "rahā", "@ongoing"], ["हूँ", "hūn", "@copula"]], "end": "।"}
+{"sentence": "what-time", "t": [["क्या", "kyā", "what"], ["समय", "samay", "time"], ["है", "hai", "@copula"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["अभी", "abhī", "now"], ["क्या", "kyā", "what"], ["समय", "samay", "time"], ["है", "hai", "@copula"]], "end": "?"}
+{"sentence": "no-time", "t": [["समय", "samay", "time"], ["नहीं", "nahīn", "none"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "there-is-cat", "t": [["एक", "ek", "@one"], ["बिल्ली", "billī", "cat"], ["है", "hai", "exist"]], "end": "।"}
+{"sentence": "have-cat", "t": [["मेरे", "mere", "i"], ["पास", "pās", "@possession"], ["एक", "ek", "@one"], ["बिल्ली", "billī", "cat"], ["है", "hai", "have"]], "end": "।"}
+{"sentence": "book-on-table", "t": [["मेज़", "mez", "table"], ["पर", "par", "on"], ["एक", "ek", "@one"], ["किताब", "kitāb", "book"], ["है", "hai", "exist"]], "end": "।"}
+{"sentence": "house-big", "t": [["घर", "ghar", "house"], ["बड़ा", "baṛā", "big"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "car-new", "t": [["गाड़ी", "gāṛī", "car"], ["नई", "naī", "new"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "delicious", "t": [["स्वादिष्ट", "svādisht", "delicious"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "food-tasty", "t": [["खाना", "khānā", "food"], ["बहुत", "bahut", "very"], ["स्वादिष्ट", "svādisht", "delicious"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "head-hurts", "t": [["मेरे", "mere", "i"], ["सिर", "sir", "head"], ["में", "men", "@place"], ["दर्द", "dard", "hurt"], ["है", "hai", "@copula"]], "end": "।"}
+{"sentence": "hungry", "t": [["मुझे", "mujhe", "i"], ["भूख", "bhūkh", "hungry"], ["लग रही है", "lag rahī hai", "@happen"]], "end": "।"}
 {"sentence": "give-water", "t": [["मुझे", "mujhe", "i"], ["पानी", "pānī", "water"], ["दीजिए", "dījie", "give+please"]], "end": "।"}
+{"sentence": "wait-moment", "t": [["कृपया", "kripayā", "please"], ["एक", "ek", "@one"], ["क्षण", "kṣaṇ", "moment"], ["रुकिए", "rukie", "wait"]], "end": "।"}
+{"sentence": "sit-down", "t": [["कृपया", "kripayā", "please"], ["बैठिए", "baiṭhie", "sit"]], "end": "।"}
+{"sentence": "where-station", "t": [["स्टेशन", "steshan", "station"], ["कहाँ", "kahān", "where"], ["है", "hai", "@copula"]], "end": "?"}
+{"sentence": "where-toilet", "t": [["शौचालय", "shauchālay", "toilet"], ["कहाँ", "kahān", "where"], ["है", "hai", "@copula"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["होटल", "hoṭal", "hotel"], ["कहाँ", "kahān", "where"], ["है", "hai", "@copula"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["यह", "yah", "this"], ["कितने", "kitne", "how-much"], ["का", "kā", "@of"], ["है", "hai", "@copula"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["कितना", "kitnā", "how-much"], ["है", "hai", "@copula"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["इसकी कीमत", "iskī kīmat", "cost"], ["कितनी", "kitnī", "how-much"], ["है", "hai", "@copula"]], "end": "?"}
+{"sentence": "bill-please", "t": [["बिल", "bil", "bill"], ["कृपया", "kripayā", "please"]], "end": "।"}
+{"sentence": "go-school", "t": [["मैं", "main", "i"], ["स्कूल", "skūl", "school"], ["जाता", "jātā", "go"], ["हूँ", "hūn", "@present"]], "end": "।"}
+{"sentence": "bus-school", "t": [["मैं", "main", "i"], ["बस", "bas", "bus"], ["से", "se", "@means"], ["स्कूल", "skūl", "school"], ["जाता", "jātā", "go"], ["हूँ", "hūn", "@present"]], "end": "।"}
+{"sentence": "go-tokyo", "t": [["मैं", "main", "i"], ["टोक्यो", "Ṭokyo", "tokyo"], ["जाना", "jānā", "go"], ["चाहता", "chāhtā", "want"], ["हूँ", "hūn", "@present"]], "end": "।"}
+{"sentence": "came-train", "t": [["मैं", "main", "i"], ["ट्रेन", "ṭren", "train"], ["से", "se", "@means"], ["आया", "āyā", "come+@past"]], "end": "।"}
+{"sentence": "where-going", "t": [["आप", "āp", "you"], ["कहाँ", "kahān", "where"], ["जा", "jā", "go"], ["रहे", "rahe", "@ongoing"], ["हैं", "hain", "@copula"]], "end": "?"}
+{"sentence": "going-home", "t": [["मैं", "main", "i"], ["घर", "ghar", "home"], ["जा", "jā", "go"], ["रहा", "rahā", "@ongoing"], ["हूँ", "hūn", "@copula"]], "end": "।"}
+{"sentence": "we-going-home", "t": [["हम", "ham", "we"], ["घर", "ghar", "home"], ["जा", "jā", "go"], ["रहे", "rahe", "@ongoing"], ["हैं", "hain", "@copula"]], "end": "।"}
 {"sentence": "lets-go", "t": [["चलो", "chalo", "let-us+go"]], "end": "।"}
+{"sentence": "live-moscow", "t": [["मैं", "main", "i"], ["मॉस्को", "Māsko", "moscow"], ["में", "men", "@place"], ["रहता", "rahtā", "live"], ["हूँ", "hūn", "@present"]], "end": "।"}
+{"sentence": "live-cairo", "t": [["मैं", "main", "i"], ["काहिरा", "Kāhirā", "cairo"], ["में", "men", "@place"], ["रहता", "rahtā", "live"], ["हूँ", "hūn", "@present"]], "end": "।"}
+{"sentence": "live-beijing", "t": [["मैं", "main", "i"], ["बीजिंग", "Bījing", "beijing"], ["में", "men", "@place"], ["रहता", "rahtā", "live"], ["हूँ", "hūn", "@present"]], "end": "।"}
+{"sentence": "i-sleep", "t": [["मैं", "main", "i"], ["सोता", "sotā", "sleep"], ["हूँ", "hūn", "@present"]], "end": "।"}
+{"sentence": "i-fight", "t": [["मैं", "main", "i"], ["लड़ता", "laṛtā", "fight"], ["हूँ", "hūn", "@present"]], "end": "।"}
+{"sentence": "we-fight", "t": [["हम", "ham", "we"], ["लड़ते", "laṛte", "fight"], ["हैं", "hain", "@present"]], "end": "।"}
+{"sentence": "sleep-command", "t": [["सोओ", "soo", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["बच्चा", "bacchā", "child"], ["सोता", "sotā", "sleep"], ["है", "hai", "@present"]], "end": "।"}
+{"sentence": "officer-sees-child", "t": [["अधिकारी", "adhikārī", "officer"], ["बच्चे", "bacche", "child"], ["को", "ko", "@object"], ["देखता", "dekhtā", "see"], ["है", "hai", "@present"]], "end": "।"}
+{"sentence": "captain-sees-ship", "t": [["कप्तान", "kaptān", "captain"], ["जहाज़", "jahāz", "ship"], ["को", "ko", "@object"], ["देखता", "dekhtā", "see"], ["है", "hai", "@present"]], "end": "।"}
+{"sentence": "i-see-ship", "t": [["मैं", "main", "i"], ["जहाज़", "jahāz", "ship"], ["को", "ko", "@object"], ["देखता", "dekhtā", "see"], ["हूँ", "hūn", "@present"]], "end": "।"}
 {"sentence": "print-word", "t": [["शब्द", "shabd", "word"], ["प्रिंट करें", "print karen", "print"]], "end": "।"}
 {"sentence": "show-number", "t": [["संख्या", "sankhyā", "number"], ["दिखाएँ", "dikhāen", "print"]], "end": "।"}
 {"sentence": "print-screen", "t": [["स्क्रीन", "skrīn", "screen"], ["पर", "par", "@place"], ["शब्द", "shabd", "word"], ["प्रिंट करें", "print karen", "print"]], "end": "।"}
