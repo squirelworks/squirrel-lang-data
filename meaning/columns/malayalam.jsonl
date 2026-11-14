@@ -1,0 +1,104 @@
+{"schema": "columns@1", "language": "malayalam", "notes": ["Malayalam column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. The romanization matches the simplified scheme in languages/malayalam (doubled long vowels). ആണ് carries @copula; ഉണ്ട് / ഇല്ല mark existence. Case endings -ഇൽ / -ക്ക് / -എ may glue with a leading \"-\". Modern Malayalam verbs do not change for person.", "Sources: forms match languages/malayalam/vocab.jsonl, reference.json, and the Malayalam grammar pack (ഞാൻ വിദ്യാർത്ഥി ആണ്, നിങ്ങളുടെ പേര് എന്താണ്?, എനിക്ക് അറിയില്ല, നിങ്ങൾ എവിടെ താമസിക്കുന്നു?, ഇതിന് എത്ര ആണ്?, മഴ പെയ്യുകയാണ്, എനിക്ക് … ഇഷ്ടം / വേണം, ഞാൻ സ്കൂളിലേക്ക് പോകുന്നു, നമുക്ക് പോകാം, നിങ്ങളെ കണ്ടതിൽ സന്തോഷം). Forms match languages/malayalam/vocab.jsonl where a card exists; other lemmas follow standard Malayalam (Wiktionary CC BY-SA 4.0 consulted for spelling and romanization)."], "sep": " "}
+{"sentence": "i-am-student", "t": [["ഞാൻ", "njaan", "i"], ["വിദ്യാർത്ഥി", "vidyaarthi", "student"], ["ആണ്", "aanu", "@copula"]], "end": "."}
+{"sentence": "name-tanaka", "t": [["എന്റെ", "ente", "i"], ["പേര്", "peru", "name"], ["തനാക", "Thanaaka", "tanaka"], ["ആണ്", "aanu", "@copula"]], "end": "."}
+{"sentence": "name-minjun", "t": [["എന്റെ", "ente", "i"], ["പേര്", "peru", "name"], ["മിൻജുൻ", "Minjun", "minjun"], ["ആണ്", "aanu", "@copula"]], "end": "."}
+{"sentence": "name-anna", "t": [["എന്റെ", "ente", "i"], ["പേര്", "peru", "name"], ["അന്ന", "Anna", "anna"], ["ആണ്", "aanu", "@copula"]], "end": "."}
+{"sentence": "name-ravi", "t": [["എന്റെ", "ente", "i"], ["പേര്", "peru", "name"], ["രവി", "Ravi", "ravi"], ["ആണ്", "aanu", "@copula"]], "end": "."}
+{"sentence": "name-sami", "t": [["എന്റെ", "ente", "i"], ["പേര്", "peru", "name"], ["സാമി", "Saami", "sami"], ["ആണ്", "aanu", "@copula"]], "end": "."}
+{"sentence": "name-wang-ming", "t": [["എന്റെ", "ente", "i"], ["പേര്", "peru", "name"], ["വാങ് മിങ്", "Vaang Ming", "wang-ming"], ["ആണ്", "aanu", "@copula"]], "end": "."}
+{"sentence": "your-name", "t": [["നിങ്ങളുടെ", "ningalude", "you"], ["പേര്", "peru", "name"], ["എന്ത്", "enthu", "what"], ["ആണ്", "aanu", "@copula"]], "end": "?"}
+{"sentence": "hello", "t": [["നമസ്കാരം", "namaskaaram", "hello"]], "end": "."}
+{"sentence": "nice-to-meet-you", "t": [["നിങ്ങളെ കണ്ടതിൽ സന്തോഷം", "ningale kandathil santhosham", "nice-to-meet-you"]], "end": "."}
+{"sentence": "good-morning", "t": [["സുപ്രഭാതം", "suprabhaatham", "good+morning"]], "end": "."}
+{"sentence": "thank-you", "t": [["നന്ദി", "nandi", "thanks"]], "end": "."}
+{"sentence": "thank-you-very-much", "t": [["വളരെ", "valare", "very-much"], ["നന്ദി", "nandi", "thanks"]], "end": "."}
+{"sentence": "success", "t": [["വിജയം", "vijayam", "success"]], "end": "!"}
+{"sentence": "dont-understand", "t": [["എനിക്ക്", "enikku", "i"], ["മനസ്സിലാകുന്നില്ല", "manassilaakunnilla", "not+understand"]], "end": "."}
+{"sentence": "dont-know", "t": [["എനിക്ക്", "enikku", "i"], ["അറിയില്ല", "ariyilla", "not+know"]], "end": "."}
+{"sentence": "speak-english", "t": [["നിങ്ങൾ", "ningal", "you"], ["ഇംഗ്ലീഷ്", "ingliish", "english"], ["സംസാരിക്കുന്നുണ്ടോ", "samsaarikkunnundo", "speak+@question"]], "end": "?"}
+{"sentence": "speak-chinese", "t": [["നിങ്ങൾ", "ningal", "you"], ["ചൈനീസ്", "chainees", "chinese"], ["സംസാരിക്കുന്നുണ്ടോ", "samsaarikkunnundo", "speak+@question"]], "end": "?"}
+{"sentence": "speak-arabic", "t": [["നിങ്ങൾ", "ningal", "you"], ["അറബി", "arabi", "arabic"], ["സംസാരിക്കുന്നുണ്ടോ", "samsaarikkunnundo", "speak+@question"]], "end": "?"}
+{"sentence": "speak-klingon", "t": [["നിങ്ങൾ", "ningal", "you"], ["ക്ലിംഗോൺ", "klingon", "klingon"], ["സംസാരിക്കുന്നുണ്ടോ", "samsaarikkunnundo", "speak+@question"]], "end": "?"}
+{"sentence": "speak-hindi", "t": [["ഞാൻ", "njaan", "i"], ["ഹിന്ദി", "hindi", "hindi"], ["സംസാരിക്കുന്നു", "samsaarikkunnu", "speak"]], "end": "."}
+{"sentence": "study-korean", "t": [["ഞാൻ", "njaan", "i"], ["കൊറിയൻ", "koriyan", "korean"], ["പഠിക്കുന്നു", "padikkunnu", "study"]], "end": "."}
+{"sentence": "like-sushi", "t": [["എനിക്ക്", "enikku", "i"], ["സുഷി", "sushi", "sushi"], ["ഇഷ്ടമാണ്", "ishtamaanu", "like"]], "end": "."}
+{"sentence": "like-coffee", "t": [["എനിക്ക്", "enikku", "i"], ["കാപ്പി", "kaappi", "coffee"], ["ഇഷ്ടമാണ്", "ishtamaanu", "like"]], "end": "."}
+{"sentence": "like-tea", "t": [["എനിക്ക്", "enikku", "i"], ["ചായ", "chaaya", "tea"], ["ഇഷ്ടമാണ്", "ishtamaanu", "like"]], "end": "."}
+{"sentence": "love-you", "t": [["ഞാൻ", "njaan", "i"], ["നിന്നെ", "ninne", "you"], ["സ്നേഹിക്കുന്നു", "snehikkunnu", "love"]], "end": "."}
+{"sentence": "met-friend", "t": [["ഞാൻ", "njaan", "i"], ["ഇന്നലെ", "innale", "yesterday"], ["ഒരു", "oru", "@one"], ["സുഹൃത്തിനെ", "suhruththine", "friend"], ["കണ്ടു", "kandu", "meet+@past"]], "end": "."}
+{"sentence": "my-friend", "t": [["അവൻ", "avan", "he"], ["എന്റെ", "ente", "i"], ["സുഹൃത്ത്", "suhruthu", "friend"], ["ആണ്", "aanu", "@copula"]], "end": "."}
+{"sentence": "who-is-he", "t": [["അവൻ", "avan", "he"], ["ആര്", "aaru", "who"], ["ആണ്", "aanu", "@copula"]], "end": "?"}
+{"sentence": "where-live", "t": [["നിങ്ങൾ", "ningal", "you"], ["എവിടെ", "evide", "where"], ["താമസിക്കുന്നു", "thaamasikkunnu", "live"]], "end": "?"}
+{"sentence": "from-egypt", "t": [["ഞാൻ", "njaan", "i"], ["ഈജിപ്തിൽ", "Iijipthil", "egypt"], ["നിന്ന്", "ninnu", "from"], ["ആണ്", "aanu", "@copula"]], "end": "."}
+{"sentence": "we-are-klingons", "t": [["ഞങ്ങൾ", "njangal", "we"], ["ക്ലിംഗോണുകൾ", "klingonukal", "klingon"], ["ആണ്", "aanu", "@copula"]], "end": "."}
+{"sentence": "this-is-book", "t": [["ഇത്", "ithu", "this"], ["പുസ്തകം", "pusthakam", "book"], ["ആണ്", "aanu", "@copula"]], "end": "."}
+{"sentence": "this-is-my-book", "t": [["ഇത്", "ithu", "this"], ["എന്റെ", "ente", "i"], ["പുസ്തകം", "pusthakam", "book"], ["ആണ്", "aanu", "@copula"]], "end": "."}
+{"sentence": "drink-water", "t": [["ഞാൻ", "njaan", "i"], ["വെള്ളം", "vellam", "water"], ["കുടിക്കുന്നു", "kudikkunnu", "drink"]], "end": "."}
+{"sentence": "drink-tea", "t": [["ഞാൻ", "njaan", "i"], ["ചായ", "chaaya", "tea"], ["കുടിക്കുന്നു", "kudikkunnu", "drink"]], "end": "."}
+{"sentence": "want-coffee", "t": [["എനിക്ക്", "enikku", "i"], ["കാപ്പി", "kaappi", "coffee"], ["വേണം", "venam", "want"]], "end": "."}
+{"sentence": "read-book", "t": [["ഞാൻ", "njaan", "i"], ["പുസ്തകം", "pusthakam", "book"], ["വായിക്കുന്നു", "vaayikkunnu", "read"]], "end": "."}
+{"sentence": "eat-rice", "t": [["ഞങ്ങൾ", "njangal", "we"], ["ചോറ്", "choru", "rice"], ["കഴിക്കുന്നു", "kazhikkunnu", "eat"]], "end": "."}
+{"sentence": "eat-food", "t": [["ഞാൻ", "njaan", "i"], ["ഭക്ഷണം", "bhakshanam", "food"], ["കഴിക്കുന്നു", "kazhikkunnu", "eat"]], "end": "."}
+{"sentence": "lunch-restaurant", "t": [["ഞാൻ", "njaan", "i"], ["റെസ്റ്റോറന്റിൽ", "restorantil", "restaurant+@place"], ["ഉച്ചഭക്ഷണം", "uchchabhakshanam", "lunch"], ["കഴിക്കുന്നു", "kazhikkunnu", "eat"]], "end": "."}
+{"sentence": "eat-restaurant", "t": [["ഞാൻ", "njaan", "i"], ["റെസ്റ്റോറന്റിൽ", "restorantil", "restaurant+@place"], ["കഴിക്കുന്നു", "kazhikkunnu", "eat"]], "end": "."}
+{"sentence": "hot-today", "t": [["ഇന്ന്", "innu", "today"], ["ചൂടാണ്", "chuudaanu", "hot"]], "end": "."}
+{"sentence": "cold-today", "t": [["ഇന്ന്", "innu", "today"], ["തണുപ്പാണ്", "thanuppaanu", "cold"]], "end": "."}
+{"sentence": "weather-hot", "t": [["ഇന്ന്", "innu", "today"], ["കാലാവസ്ഥ", "kaalaavastha", "weather"], ["ചൂടാണ്", "chuudaanu", "hot"]], "end": "."}
+{"sentence": "weather-good", "t": [["ഇന്ന്", "innu", "today"], ["കാലാവസ്ഥ", "kaalaavastha", "weather"], ["നല്ലതാണ്", "nallathaanu", "good"]], "end": "."}
+{"sentence": "raining", "t": [["മഴ", "mazha", "rain"], ["പെയ്യുകയാണ്", "peyyukayaanu", "@happen"]], "end": "."}
+{"sentence": "monday", "t": [["ഇന്ന്", "innu", "today"], ["തിങ്കളാഴ്ച", "thingalaazhcha", "monday"], ["ആണ്", "aanu", "@copula"]], "end": "."}
+{"sentence": "what-time", "t": [["സമയം", "samayam", "time"], ["എത്ര", "ethra", "what"], ["ആണ്", "aanu", "@copula"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["ഇപ്പോൾ", "ippol", "now"], ["സമയം", "samayam", "time"], ["എത്ര", "ethra", "what"], ["ആണ്", "aanu", "@copula"]], "end": "?"}
+{"sentence": "no-time", "t": [["സമയം", "samayam", "time"], ["ഇല്ല", "illa", "none"]], "end": "."}
+{"sentence": "there-is-cat", "t": [["ഒരു", "oru", "@one"], ["പൂച്ച", "puuchcha", "cat"], ["ഉണ്ട്", "undu", "exist"]], "end": "."}
+{"sentence": "have-cat", "t": [["എനിക്ക്", "enikku", "i"], ["ഒരു", "oru", "@one"], ["പൂച്ച", "puuchcha", "cat"], ["ഉണ്ട്", "undu", "have"]], "end": "."}
+{"sentence": "book-on-table", "t": [["മേശയുടെ", "meshayude", "table"], ["മുകളിൽ", "mukalil", "on"], ["ഒരു", "oru", "@one"], ["പുസ്തകം", "pusthakam", "book"], ["ഉണ്ട്", "undu", "exist"]], "end": "."}
+{"sentence": "house-big", "t": [["വീട്", "viidu", "house"], ["വലുതാണ്", "valuthaanu", "big"]], "end": "."}
+{"sentence": "car-new", "t": [["കാർ", "kaar", "car"], ["പുതിയതാണ്", "puthiyathaanu", "new"]], "end": "."}
+{"sentence": "delicious", "t": [["രുചിയാണ്", "ruchiyaanu", "delicious"]], "end": "."}
+{"sentence": "food-tasty", "t": [["ഭക്ഷണം", "bhakshanam", "food"], ["വളരെ", "valare", "very"], ["രുചിയാണ്", "ruchiyaanu", "delicious"]], "end": "."}
+{"sentence": "head-hurts", "t": [["എന്റെ", "ente", "i"], ["തല", "thala", "head"], ["വേദനിക്കുന്നു", "vedanikkunnu", "hurt"]], "end": "."}
+{"sentence": "hungry", "t": [["എനിക്ക്", "enikku", "i"], ["വിശപ്പുണ്ട്", "vishappundu", "hungry"]], "end": "."}
+{"sentence": "give-water", "t": [["ദയവായി", "dayavaayi", "please"], ["എനിക്ക്", "enikku", "i"], ["വെള്ളം", "vellam", "water"], ["തരൂ", "tharuu", "give"]], "end": "."}
+{"sentence": "wait-moment", "t": [["ദയവായി", "dayavaayi", "please"], ["ഒരു", "oru", "@one"], ["നിമിഷം", "nimisham", "moment"], ["കാത്തിരിക്കൂ", "kaaththirikkuu", "wait"]], "end": "."}
+{"sentence": "sit-down", "t": [["ദയവായി", "dayavaayi", "please"], ["ഇരിക്കൂ", "irikkuu", "sit"]], "end": "."}
+{"sentence": "where-station", "t": [["സ്റ്റേഷൻ", "steshan", "station"], ["എവിടെ", "evide", "where"], ["ആണ്", "aanu", "@copula"]], "end": "?"}
+{"sentence": "where-toilet", "t": [["ശുചിമുറി", "shuchimuri", "toilet"], ["എവിടെ", "evide", "where"], ["ആണ്", "aanu", "@copula"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["ഹോട്ടൽ", "hottal", "hotel"], ["എവിടെ", "evide", "where"], ["ആണ്", "aanu", "@copula"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["ഇതിന്", "ithinu", "this"], ["എത്ര", "ethra", "how-much"], ["ആണ്", "aanu", "@copula"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["എത്ര", "ethra", "how-much"], ["ആണ്", "aanu", "@copula"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["ഇതിന്റെ വില", "ithinte vila", "cost"], ["എത്ര", "ethra", "how-much"], ["ആണ്", "aanu", "@copula"]], "end": "?"}
+{"sentence": "bill-please", "t": [["ബിൽ", "bil", "bill"], ["ദയവായി", "dayavaayi", "please"]], "end": "."}
+{"sentence": "go-school", "t": [["ഞാൻ", "njaan", "i"], ["സ്കൂളിലേക്ക്", "skuulilekku", "school+@direction"], ["പോകുന്നു", "pokunnu", "go"]], "end": "."}
+{"sentence": "bus-school", "t": [["ഞാൻ", "njaan", "i"], ["ബസ്സിൽ", "bassil", "bus+@means"], ["സ്കൂളിലേക്ക്", "skuulilekku", "school+@direction"], ["പോകുന്നു", "pokunnu", "go"]], "end": "."}
+{"sentence": "go-tokyo", "t": [["എനിക്ക്", "enikku", "i"], ["ടോക്കിയോയിലേക്ക്", "Tookkiyoyilekku", "tokyo+@direction"], ["പോകണം", "pokanam", "go+want"]], "end": "."}
+{"sentence": "came-train", "t": [["ഞാൻ", "njaan", "i"], ["ട്രെയിനിൽ", "treyinil", "train+@means"], ["വന്നു", "vannu", "come+@past"]], "end": "."}
+{"sentence": "where-going", "t": [["നിങ്ങൾ", "ningal", "you"], ["എവിടെ", "evide", "where"], ["പോകുന്നു", "pokunnu", "go"]], "end": "?"}
+{"sentence": "going-home", "t": [["ഞാൻ", "njaan", "i"], ["വീട്ടിലേക്ക്", "viittilekku", "home+@direction"], ["പോകുന്നു", "pokunnu", "go"]], "end": "."}
+{"sentence": "we-going-home", "t": [["ഞങ്ങൾ", "njangal", "we"], ["വീട്ടിലേക്ക്", "viittilekku", "home+@direction"], ["പോകുന്നു", "pokunnu", "go"]], "end": "."}
+{"sentence": "lets-go", "t": [["നമുക്ക് പോകാം", "namukku pokaam", "let-us+go"]], "end": "."}
+{"sentence": "live-moscow", "t": [["ഞാൻ", "njaan", "i"], ["മോസ്കോയിൽ", "Moskoyil", "moscow+@place"], ["താമസിക്കുന്നു", "thaamasikkunnu", "live"]], "end": "."}
+{"sentence": "live-cairo", "t": [["ഞാൻ", "njaan", "i"], ["കെയ്‌റോയിൽ", "Keiroyil", "cairo+@place"], ["താമസിക്കുന്നു", "thaamasikkunnu", "live"]], "end": "."}
+{"sentence": "live-beijing", "t": [["ഞാൻ", "njaan", "i"], ["ബെയ്ജിങ്ങിൽ", "Beijingil", "beijing+@place"], ["താമസിക്കുന്നു", "thaamasikkunnu", "live"]], "end": "."}
+{"sentence": "i-sleep", "t": [["ഞാൻ", "njaan", "i"], ["ഉറങ്ങുന്നു", "urangunnu", "sleep"]], "end": "."}
+{"sentence": "i-fight", "t": [["ഞാൻ", "njaan", "i"], ["പോരാടുന്നു", "poraadunnu", "fight"]], "end": "."}
+{"sentence": "we-fight", "t": [["ഞങ്ങൾ", "njangal", "we"], ["പോരാടുന്നു", "poraadunnu", "fight"]], "end": "."}
+{"sentence": "sleep-command", "t": [["ഉറങ്ങൂ", "uranguu", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["കുട്ടി", "kutti", "child"], ["ഉറങ്ങുന്നു", "urangunnu", "sleep"]], "end": "."}
+{"sentence": "officer-sees-child", "t": [["ഉദ്യോഗസ്ഥൻ", "udyogasthan", "officer"], ["കുട്ടിയെ", "kuttiye", "child"], ["കാണുന്നു", "kaanunnu", "see"]], "end": "."}
+{"sentence": "captain-sees-ship", "t": [["ക്യാപ്റ്റൻ", "kyaaptan", "captain"], ["കപ്പലിനെ", "kappaline", "ship"], ["കാണുന്നു", "kaanunnu", "see"]], "end": "."}
+{"sentence": "i-see-ship", "t": [["ഞാൻ", "njaan", "i"], ["കപ്പലിനെ", "kappaline", "ship"], ["കാണുന്നു", "kaanunnu", "see"]], "end": "."}
+{"sentence": "print-word", "t": [["വാക്ക്", "vaakku", "word"], ["അച്ചടിക്കുക", "achchadikkuka", "print"]], "end": "."}
+{"sentence": "show-number", "t": [["സംഖ്യ", "sankhya", "number"], ["കാണിക്കുക", "kaanikkuka", "print"]], "end": "."}
+{"sentence": "print-screen", "t": [["സ്ക്രീനിൽ", "skriinil", "screen+@place"], ["വാക്ക്", "vaakku", "word"], ["അച്ചടിക്കുക", "achchadikkuka", "print"]], "end": "."}
+{"sentence": "start-loop", "t": [["ലൂപ്പ്", "luupp", "loop"], ["ആരംഭിക്കുക", "aarambhikkuka", "start"]], "end": "."}
+{"sentence": "end-loop", "t": [["ലൂപ്പ്", "luupp", "loop"], ["അവസാനിപ്പിക്കുക", "avasaanippikkuka", "end"]], "end": "."}
+{"sentence": "repeat-three", "t": [["മൂന്ന്", "muunnu", "three"], ["തവണ", "thavana", "times"], ["ആവർത്തിക്കുക", "aavarththikkuka", "repeat"]], "end": "."}
+{"sentence": "count-to-ten", "t": [["ഒന്ന്", "onnu", "one"], ["മുതൽ", "muthal", "from"], ["പത്ത്", "pathu", "ten"], ["വരെ", "vare", "@until"], ["എണ്ണുക", "ennuka", "count"]], "end": "."}
+{"sentence": "set-value", "t": [["മൂല്യം", "muulyam", "value"], ["സജ്ജമാക്കുക", "sajjamaakkuka", "set"]], "end": "."}
+{"sentence": "create-variable", "t": [["ഒരു", "oru", "@one"], ["ചരം", "charam", "variable"], ["സൃഷ്ടിക്കുക", "srushtikkuka", "create"]], "end": "."}
+{"sentence": "return-value", "t": [["മൂല്യം", "muulyam", "value"], ["തിരികെ നൽകുക", "thirike nalkuka", "return"]], "end": "."}
+{"sentence": "load-data", "t": [["ഡാറ്റ", "daattaa", "data"], ["ലോഡ് ചെയ്യുക", "lod cheyyuka", "load"]], "end": "."}
+{"sentence": "add-one", "t": [["ഒന്ന്", "onnu", "one"], ["ചേർക്കുക", "cherkkuka", "add"]], "end": "."}
+{"sentence": "sort-list", "t": [["പട്ടിക", "pattika", "list"], ["അടുക്കുക", "adukkuka", "sort"]], "end": "."}
+{"sentence": "run-program", "t": [["പ്രോഗ്രാം", "programaam", "program"], ["പ്രവർത്തിപ്പിക്കുക", "pravartthippikkuka", "run"]], "end": "."}
