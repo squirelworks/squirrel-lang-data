@@ -6,6 +6,10 @@ features.json as a plain script that sets window.LSD_FEATURES.
 
     python3 tools/gen_features.py OUT.js            write it
     python3 tools/gen_features.py OUT.js --check    exit 1 if OUT.js is out of date
+
+--check compares the window.LSD_FEATURES payload only. The comment header may
+embed a git SHA of features.json that shallow submodule checkouts omit, so an
+exact file compare would fail in CI even when the JSON matches.
 """
 import json
 import subprocess
@@ -28,6 +32,14 @@ def render():
     return head + "window.LSD_FEATURES = " + json.dumps(data, ensure_ascii=False, indent=2) + ";\n"
 
 
+def payload(text: str) -> str:
+    marker = "window.LSD_FEATURES ="
+    i = text.find(marker)
+    if i < 0:
+        return text
+    return text[i:].strip()
+
+
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     if len(args) != 1:
@@ -36,7 +48,7 @@ def main():
     want = render()
     if "--check" in sys.argv:
         have = out.read_text(encoding="utf-8") if out.exists() else ""
-        if have != want:
+        if payload(have) != payload(want):
             print(f"{out}: out of date; run tools/gen_features.py {out}")
             return 1
         print(f"{out}: up to date")
