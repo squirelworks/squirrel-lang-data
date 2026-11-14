@@ -1,0 +1,104 @@
+{"schema": "columns@1", "language": "burmese", "notes": ["Burmese column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. Burmese is written with spaces between words (sep: \" \"). The romanization has no tone marks, matching languages/burmese.", "The default speaker is a man (ကျွန်တော်), matching the other columns' default. Verb endings carry time and politeness; yes/no questions end with လား or pauses marked with @question. Burmese has no copula in nominal sentences (ကျွန်တော် ကျောင်းသားပါ), so many rows omit @copula.", "Forms match languages/burmese/vocab.jsonl where a card exists; other lemmas follow standard Burmese (Wiktionary CC BY-SA 4.0 and Wikipedia CC BY-SA 4.0 consulted for spelling and romanization)."], "sep": " "}
+{"sentence": "i-am-student", "t": [["ကျွန်တော်", "kyanaw", "i"], ["ကျောင်းသား", "kyaungtha", "student"]], "end": "."}
+{"sentence": "name-tanaka", "t": [["ကျွန်တော့်", "kyanaw", "i"], ["နာမည်", "nanme", "name"], ["တာနာကာ", "Tanaka", "tanaka"]], "end": "."}
+{"sentence": "name-minjun", "t": [["ကျွန်တော့်", "kyanaw", "i"], ["နာမည်", "nanme", "name"], ["မင်ဂျွန်", "Minjun", "minjun"]], "end": "."}
+{"sentence": "name-anna", "t": [["ကျွန်တော့်", "kyanaw", "i"], ["နာမည်", "nanme", "name"], ["အန်နာ", "Anna", "anna"]], "end": "."}
+{"sentence": "name-ravi", "t": [["ကျွန်တော့်", "kyanaw", "i"], ["နာမည်", "nanme", "name"], ["ရာဗီ", "Ravi", "ravi"]], "end": "."}
+{"sentence": "name-sami", "t": [["ကျွန်တော့်", "kyanaw", "i"], ["နာမည်", "nanme", "name"], ["ဆမိ", "Sami", "sami"]], "end": "."}
+{"sentence": "name-wang-ming", "t": [["ကျွန်တော့်", "kyanaw", "i"], ["နာမည်", "nanme", "name"], ["ဝမ် မင်း", "Wang Ming", "wang-ming"]], "end": "."}
+{"sentence": "your-name", "t": [["ခင်ဗျား", "khinbya", "you"], ["နာမည်", "nanme", "name"], ["ဘာ", "ba", "what"], ["လဲ", "le", "@question"]], "end": "?"}
+{"sentence": "hello", "t": [["မင်္ဂလာပါ", "mingalaba", "hello"]], "end": "."}
+{"sentence": "nice-to-meet-you", "t": [["တွေ့ရတာ ဝမ်းသာပါတယ်", "twe ya da wun tha ba de", "nice-to-meet-you"]], "end": "."}
+{"sentence": "good-morning", "t": [["မင်္ဂလာနံနက်ခင်းပါ", "mingala nane khain ba", "good+morning"]], "end": "."}
+{"sentence": "thank-you", "t": [["ကျေးဇူးတင်ပါတယ်", "kyay zu tin ba de", "thanks"]], "end": "."}
+{"sentence": "thank-you-very-much", "t": [["ကျေးဇူးအများကြီးတင်ပါတယ်", "kyay zu a myar gyi tin ba de", "thanks+very-much"]], "end": "."}
+{"sentence": "success", "t": [["အောင်မြင်ပါစေ", "aung myin ba se", "success"]], "end": "!"}
+{"sentence": "dont-understand", "t": [["ကျွန်တော်", "kyanaw", "i"], ["နားမလည်ဘူး", "na ma le bu", "not+understand"]], "end": "."}
+{"sentence": "dont-know", "t": [["ကျွန်တော်", "kyanaw", "i"], ["မသိဘူး", "ma thi bu", "not+know"]], "end": "."}
+{"sentence": "speak-english", "t": [["အင်္ဂလိပ်စာ", "Inglezasa", "english"], ["ပြောတတ်လား", "pyaw tat la", "speak+@question"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-chinese", "t": [["တရုတ်စာ", "Tayotsa", "chinese"], ["ပြောတတ်လား", "pyaw tat la", "speak+@question"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-arabic", "t": [["အာရပ်စာ", "Aratsa", "arabic"], ["ပြောတတ်လား", "pyaw tat la", "speak+@question"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-klingon", "t": [["ကလင်းဂွန်", "Klingon", "klingon"], ["စကားပြောတတ်လား", "sa ka pyaw tat la", "speak+@question"]], "implied": ["you"], "end": "?"}
+{"sentence": "speak-hindi", "t": [["ကျွန်တော်", "kyanaw", "i"], ["ဟိန်ဒီစာ", "Hindisa", "hindi"], ["ပြောတတ်တယ်", "pyaw tat de", "speak"]], "end": "."}
+{"sentence": "study-korean", "t": [["ကျွန်တော်", "kyanaw", "i"], ["ကိုရီးယားစာ", "Koreyasa", "korean"], ["သင်တယ်", "thin de", "study"]], "end": "."}
+{"sentence": "like-sushi", "t": [["ကျွန်တော်", "kyanaw", "i"], ["ဆူရှီ", "sushi", "sushi"], ["ကြိုက်တယ်", "kyaik de", "like"]], "end": "."}
+{"sentence": "like-coffee", "t": [["ကျွန်တော်", "kyanaw", "i"], ["ကော်ဖီ", "kawpi", "coffee"], ["ကြိုက်တယ်", "kyaik de", "like"]], "end": "."}
+{"sentence": "like-tea", "t": [["ကျွန်တော်", "kyanaw", "i"], ["လက်ဖက်ရည်", "laphet ye", "tea"], ["ကြိုက်တယ်", "kyaik de", "like"]], "end": "."}
+{"sentence": "love-you", "t": [["ကျွန်တော်", "kyanaw", "i"], ["ခင်ဗျားကို", "khinbya go", "you"], ["ချစ်တယ်", "chit de", "love"]], "end": "."}
+{"sentence": "met-friend", "t": [["ကျွန်တော်", "kyanaw", "i"], ["မနေ့က", "mane ga", "yesterday"], ["သူငယ်ချင်း", "thangechin", "friend"], ["တွေ့ခဲ့တယ်", "twe khe de", "meet+@past"]], "end": "."}
+{"sentence": "my-friend", "t": [["သူ", "thu", "he"], ["ကျွန်တော့်", "kyanaw", "i"], ["သူငယ်ချင်း", "thangechin", "friend"], ["ပါ", "ba", "@copula"]], "end": "."}
+{"sentence": "who-is-he", "t": [["သူ", "thu", "he"], ["ဘယ်သူလဲ", "be thu le", "who"]], "end": "?"}
+{"sentence": "where-live", "t": [["ခင်ဗျား", "khinbya", "you"], ["ဘယ်မှာနေလဲ", "be hma ne le", "where+live"]], "end": "?"}
+{"sentence": "from-egypt", "t": [["ကျွန်တော်", "kyanaw", "i"], ["အီဂျစ်က", "Egypt ga", "from+egypt"]], "end": "."}
+{"sentence": "we-are-klingons", "t": [["ကျွန်တော်တို့", "kyanaw do", "we"], ["ကလင်းဂွန်", "Klingon", "klingon"], ["ဖြစ်ကြတယ်", "hpyit kya de", "@copula"]], "end": "."}
+{"sentence": "this-is-book", "t": [["ဒီ", "di", "this"], ["စာအုပ်", "sa ap", "book"], ["ပါ", "ba", "@copula"]], "end": "."}
+{"sentence": "this-is-my-book", "t": [["ဒီ", "di", "this"], ["စာအုပ်", "sa ap", "book"], ["ကျွန်တော့်ရဲ့", "kyanaw ye", "i+@possessive"]], "end": "."}
+{"sentence": "drink-water", "t": [["ကျွန်တော်", "kyanaw", "i"], ["ရေ", "ye", "water"], ["သောက်တယ်", "thauk de", "drink"]], "end": "."}
+{"sentence": "drink-tea", "t": [["ကျွန်တော်", "kyanaw", "i"], ["လက်ဖက်ရည်", "laphet ye", "tea"], ["သောက်တယ်", "thauk de", "drink"]], "end": "."}
+{"sentence": "want-coffee", "t": [["ကျွန်တော်", "kyanaw", "i"], ["ကော်ဖီ", "kawpi", "coffee"], ["လိုချင်တယ်", "lo chin de", "want"]], "end": "."}
+{"sentence": "read-book", "t": [["ကျွန်တော်", "kyanaw", "i"], ["စာအုပ်", "sa ap", "book"], ["ဖတ်တယ်", "hpat de", "read"]], "end": "."}
+{"sentence": "eat-rice", "t": [["ကျွန်တော်တို့", "kyanaw do", "we"], ["ထမင်း", "htamin", "rice"], ["စားတယ်", "sa de", "eat"]], "end": "."}
+{"sentence": "eat-food", "t": [["ကျွန်တော်", "kyanaw", "i"], ["အစားအသောက်", "asar athauk", "food"], ["စားတယ်", "sa de", "eat"]], "end": "."}
+{"sentence": "lunch-restaurant", "t": [["ကျွန်တော်", "kyanaw", "i"], ["စားသောက်ဆိုင်", "sathauk hsain", "restaurant"], ["မှာ", "hma", "@place"], ["နေ့လယ်စာ", "ne le za", "lunch"], ["စားတယ်", "sa de", "eat"]], "end": "."}
+{"sentence": "eat-restaurant", "t": [["ကျွန်တော်", "kyanaw", "i"], ["စားသောက်ဆိုင်", "sathauk hsain", "restaurant"], ["မှာ", "hma", "@place"], ["စားတယ်", "sa de", "eat"]], "end": "."}
+{"sentence": "hot-today", "t": [["ဒီနေ့", "di ne", "today"], ["ပူတယ်", "pu de", "hot"]], "end": "."}
+{"sentence": "cold-today", "t": [["ဒီနေ့", "di ne", "today"], ["အေးတယ်", "ay de", "cold"]], "end": "."}
+{"sentence": "weather-hot", "t": [["ဒီနေ့", "di ne", "today"], ["ရာသီဥတု", "yathi yu tu", "weather"], ["ပူတယ်", "pu de", "hot"]], "end": "."}
+{"sentence": "weather-good", "t": [["ဒီနေ့", "di ne", "today"], ["ရာသီဥတု", "yathi yu tu", "weather"], ["ကောင်းတယ်", "kaung de", "good"]], "end": "."}
+{"sentence": "raining", "t": [["မိုးရွာနေတယ်", "mo ywe ne de", "rain"]], "end": "."}
+{"sentence": "monday", "t": [["ဒီနေ့", "di ne", "today"], ["တနင်္လာနေ့", "taninla ne", "monday"]], "end": "."}
+{"sentence": "what-time", "t": [["ဘယ်အချိန်လဲ", "be achin le", "what+time"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["အခု", "akhu", "now"], ["ဘယ်အချိန်လဲ", "be achin le", "what+time"]], "end": "?"}
+{"sentence": "no-time", "t": [["အချိန်", "achin", "time"], ["မရှိဘူး", "ma shi bu", "none"]], "end": "."}
+{"sentence": "there-is-cat", "t": [["ကြောင်", "kyaung", "cat"], ["ရှိတယ်", "shi de", "exist"]], "end": "."}
+{"sentence": "have-cat", "t": [["ကျွန်တော့်", "kyanaw", "i"], ["ဆီ", "shi", "@place"], ["ကြောင်", "kyaung", "cat"], ["ရှိတယ်", "shi de", "have"]], "end": "."}
+{"sentence": "book-on-table", "t": [["စားပွဲပေါ်", "sabei paw", "table+on"], ["စာအုပ်", "sa ap", "book"], ["ရှိတယ်", "shi de", "exist"]], "end": "."}
+{"sentence": "house-big", "t": [["အိမ်", "ein", "house"], ["ကြီးတယ်", "kyi de", "big"]], "end": "."}
+{"sentence": "car-new", "t": [["ကား", "ka", "car"], ["အသစ်", "athit", "new"]], "end": "."}
+{"sentence": "delicious", "t": [["အရသာရှိတယ်", "ayatha shi de", "delicious"]], "end": "."}
+{"sentence": "food-tasty", "t": [["အစားအသောက်", "asar athauk", "food"], ["အရမ်းအရသာရှိတယ်", "a myan ayatha shi de", "very+delicious"]], "end": "."}
+{"sentence": "head-hurts", "t": [["ကျွန်တော့်", "kyanaw", "i"], ["ခေါင်း", "khaung", "head"], ["လည်တယ်", "le de", "hurt"]], "end": "."}
+{"sentence": "hungry", "t": [["ကျွန်တော်", "kyanaw", "i"], ["ဗိုက်ဆာတယ်", "baik sa de", "hungry"]], "end": "."}
+{"sentence": "give-water", "t": [["ကျေးဇူးပြု", "kyay zu pyu", "please"], ["ကျွန်တော်", "kyanaw", "i"], ["ရေ", "ye", "water"], ["ပေးပါ", "pe ba", "give"]], "end": "."}
+{"sentence": "wait-moment", "t": [["ကျေးဇူးပြု", "kyay zu pyu", "please"], ["ခဏ", "khan", "moment"], ["စောင့်ပါ", "saung ba", "wait"]], "end": "."}
+{"sentence": "sit-down", "t": [["ကျေးဇူးပြု", "kyay zu pyu", "please"], ["ထိုင်ပါ", "htaing ba", "sit"]], "end": "."}
+{"sentence": "where-station", "t": [["ဘူတာ", "bu ta", "station"], ["ဘယ်မှာလဲ", "be hma le", "where"]], "end": "?"}
+{"sentence": "where-toilet", "t": [["အိမ်သာ", "ein tha", "toilet"], ["ဘယ်မှာလဲ", "be hma le", "where"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["ဟိုတယ်", "hotel", "hotel"], ["ဘယ်မှာလဲ", "be hma le", "where"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["ဒါ", "da", "this"], ["ဘယ်လောက်လဲ", "be lauk le", "how-much"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["ဘယ်လောက်လဲ", "be lauk le", "how-much"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["ဈေး", "zay", "cost"], ["ဘယ်လောက်လဲ", "be lauk le", "how-much"]], "end": "?"}
+{"sentence": "bill-please", "t": [["ပိုက်ဆံရှင်းမယ်", "paik hcan shin me", "bill+please"]], "end": "."}
+{"sentence": "go-school", "t": [["ကျွန်တော်", "kyanaw", "i"], ["ကျောင်း", "kyaung", "school"], ["သွားတယ်", "thwa de", "go"]], "end": "."}
+{"sentence": "bus-school", "t": [["ကျွန်တော်", "kyanaw", "i"], ["ဘတ်စ်ကား", "bat saka", "bus"], ["နဲ့", "ne", "@means"], ["ကျောင်း", "kyaung", "school"], ["သွားတယ်", "thwa de", "go"]], "end": "."}
+{"sentence": "go-tokyo", "t": [["ကျွန်တော်", "kyanaw", "i"], ["တိုကျို", "Tokyo", "tokyo"], ["သွားချင်တယ်", "thwa chin de", "go+want"]], "end": "."}
+{"sentence": "came-train", "t": [["ကျွန်တော်", "kyanaw", "i"], ["ရထား", "yatha", "train"], ["နဲ့", "ne", "@means"], ["လာခဲ့တယ်", "la khe de", "come+@past"]], "end": "."}
+{"sentence": "where-going", "t": [["ခင်ဗျား", "khinbya", "you"], ["ဘယ်ကိုသွားမလဲ", "be ko thwa ma le", "where+go"]], "end": "?"}
+{"sentence": "going-home", "t": [["ကျွန်တော်", "kyanaw", "i"], ["အိမ်", "ein", "home"], ["သွားတယ်", "thwa de", "go"]], "end": "."}
+{"sentence": "we-going-home", "t": [["ကျွန်တော်တို့", "kyanaw do", "we"], ["အိမ်", "ein", "home"], ["သွားတယ်", "thwa de", "go"]], "end": "."}
+{"sentence": "lets-go", "t": [["လိုက်ကြရအောင်", "laik kya ya aung", "go+let-us"]], "end": "."}
+{"sentence": "live-moscow", "t": [["ကျွန်တော်", "kyanaw", "i"], ["မော်စကို", "Mosko", "moscow"], ["မှာနေတယ်", "hma ne de", "live+@place"]], "end": "."}
+{"sentence": "live-cairo", "t": [["ကျွန်တော်", "kyanaw", "i"], ["ကိုင်ရို", "Kairo", "cairo"], ["မှာနေတယ်", "hma ne de", "live+@place"]], "end": "."}
+{"sentence": "live-beijing", "t": [["ကျွန်တော်", "kyanaw", "i"], ["ပေကျင်း", "Beijing", "beijing"], ["မှာနေတယ်", "hma ne de", "live+@place"]], "end": "."}
+{"sentence": "i-sleep", "t": [["ကျွန်တော်", "kyanaw", "i"], ["အိပ်တယ်", "ait de", "sleep"]], "end": "."}
+{"sentence": "i-fight", "t": [["ကျွန်တော်", "kyanaw", "i"], ["တိုက်ခိုက်တယ်", "taik khaik de", "fight"]], "end": "."}
+{"sentence": "we-fight", "t": [["ကျွန်တော်တို့", "kyanaw do", "we"], ["တိုက်ခိုက်ကြတယ်", "taik khaik kya de", "fight"]], "end": "."}
+{"sentence": "sleep-command", "t": [["အိပ်ပါ", "ait ba", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["ကလေး", "kalay", "child"], ["အိပ်တယ်", "ait de", "sleep"]], "end": "."}
+{"sentence": "officer-sees-child", "t": [["အရာရှိ", "ayashi", "officer"], ["ကလေး", "kalay", "child"], ["ကို", "go", "@object"], ["တွေ့တယ်", "twe de", "see"]], "end": "."}
+{"sentence": "captain-sees-ship", "t": [["ကပ္ပတိန်", "kaptan", "captain"], ["သင်္ဘော", "thin baw", "ship"], ["ကို", "go", "@object"], ["တွေ့တယ်", "twe de", "see"]], "end": "."}
+{"sentence": "i-see-ship", "t": [["ကျွန်တော်", "kyanaw", "i"], ["သင်္ဘော", "thin baw", "ship"], ["ကို", "go", "@object"], ["တွေ့တယ်", "twe de", "see"]], "end": "."}
+{"sentence": "print-word", "t": [["စကား", "sa ka", "word"], ["ပြပါ", "pya ba", "print"]], "end": "."}
+{"sentence": "show-number", "t": [["ဂဏန်း", "ga ne", "number"], ["ပြပါ", "pya ba", "print"]], "end": "."}
+{"sentence": "print-screen", "t": [["ဖန်သားပြင်", "phan sa pyin", "screen"], ["ပေါ်", "paw", "@place"], ["စကား", "sa ka", "word"], ["ပြပါ", "pya ba", "print"]], "end": "."}
+{"sentence": "start-loop", "t": [["လှည့်ပတ်မှု", "hlwe pat hmu", "loop"], ["စတင်ပါ", "satin ba", "start"]], "end": "."}
+{"sentence": "end-loop", "t": [["လှည့်ပတ်မှု", "hlwe pat hmu", "loop"], ["ရပ်ပါ", "yat ba", "end"]], "end": "."}
+{"sentence": "repeat-three", "t": [["သုံး", "thon", "three"], ["ကြိမ်", "kain", "times"], ["ထပ်ခါ", "hta kha", "repeat"]], "end": "."}
+{"sentence": "count-to-ten", "t": [["တစ်", "tit", "one"], ["မှ", "hma", "from"], ["ဆယ်", "se", "ten"], ["ထိ", "hse", "@until"], ["ရေတွက်ပါ", "ye twet ba", "count"]], "end": "."}
+{"sentence": "set-value", "t": [["တန်ဖိုး", "tan phe", "value"], ["သတ်မှတ်ပါ", "that hmat ba", "set"]], "end": "."}
+{"sentence": "create-variable", "t": [["ကိန်းရှင်", "kain shin", "variable"], ["ဖန်တီးပါ", "hpan ti ba", "create"]], "end": "."}
+{"sentence": "return-value", "t": [["တန်ဖိုး", "tan phe", "value"], ["ပြန်ပေးပါ", "pyan pe ba", "return"]], "end": "."}
+{"sentence": "load-data", "t": [["ဒေတာ", "data", "data"], ["တင်ပါ", "tin ba", "load"]], "end": "."}
+{"sentence": "add-one", "t": [["တစ်", "tit", "one"], ["ပေါင်းပါ", "paung ba", "add"]], "end": "."}
+{"sentence": "sort-list", "t": [["စာရင်း", "sa yin", "list"], ["အစဉ်လိုက်", "asin loik", "sort"]], "end": "."}
+{"sentence": "run-program", "t": [["ပရိုဂရမ်", "program", "program"], ["အလုပ်လုပ်ပါ", "alot lot ba", "run"]], "end": "."}
