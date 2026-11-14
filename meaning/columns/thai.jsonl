@@ -1,21 +1,36 @@
-{"schema": "columns@1", "language": "thai", "notes": ["Thai column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. Thai is written without spaces between words (sep: \"\"), so tokens glue together in the written sentence. The romanization has no tone marks, matching languages/thai. Sources: forms match languages/thai/vocab.js and the Thai grammar pack (ผมเป็นนักเรียน, สวัสดี, ขอบคุณ, ผมไม่เข้าใจ, คุณพูดภาษาอังกฤษไหม, ห้องน้ำอยู่ที่ไหน, อันนี้เท่าไร, เช็คบิล)."], "sep": ""}
+{"schema": "columns@1", "language": "thai", "notes": ["Thai column of the meaning matrix. Written for this project. Tokens are [text, romanization, meaning id]. Thai is written without spaces between words (sep: \"\"), so tokens glue together in the written sentence. The romanization has no tone marks, matching languages/thai.", "The default speaker is male (ผม), matching the other columns' default. Yes/no questions end with ไหม (@question). Code rows use the bare verb (แสดงคำ.), the usual form for instructions in Thai software.", "Sources: forms match languages/thai/vocab.jsonl and the Thai grammar pack; lemmas checked against Wiktionary (CC BY-SA) and Wikipedia (CC BY-SA) — e.g. ซูชิ, ภาษาเกาหลี, ภาษาจีน, ภาษาอาหรับ, ภาษาฮินดี, ภาษาคลิงงอน, อียิปต์, มอสโก, ไคโร, ปักกิ่ง, โตเกียว, แมว, โต๊ะ, ฝนตก, อากาศ, วันจันทร์, หิว, หัว, รอ, นั่ง, ให้, นอน, สู้, กัปตัน, เรือ, เจ้าหน้าที่, อาหารกลางวัน, อรุณสวัสดิ์, กี่โมง, ราคา, พบ, ไม่มี."], "sep": ""}
 {"sentence": "i-am-student", "t": [["ผม", "phom", "i"], ["เป็น", "pen", "@copula"], ["นักเรียน", "nakrian", "student"]], "end": "."}
+{"sentence": "name-tanaka", "t": [["ผม", "phom", "i"], ["ชื่อ", "chue", "name"], ["ทานากะ", "Thanaka", "tanaka"]], "end": "."}
+{"sentence": "name-minjun", "t": [["ผม", "phom", "i"], ["ชื่อ", "chue", "name"], ["มินจุน", "Minchun", "minjun"]], "end": "."}
 {"sentence": "name-anna", "t": [["ผม", "phom", "i"], ["ชื่อ", "chue", "name"], ["แอนนา", "Aenna", "anna"]], "end": "."}
+{"sentence": "name-ravi", "t": [["ผม", "phom", "i"], ["ชื่อ", "chue", "name"], ["ราวี", "Rawi", "ravi"]], "end": "."}
+{"sentence": "name-sami", "t": [["ผม", "phom", "i"], ["ชื่อ", "chue", "name"], ["ซามี", "Sami", "sami"]], "end": "."}
+{"sentence": "name-wang-ming", "t": [["ผม", "phom", "i"], ["ชื่อ", "chue", "name"], ["หวังหมิง", "Wang Ming", "wang-ming"]], "end": "."}
 {"sentence": "your-name", "t": [["คุณ", "khun", "you"], ["ชื่อ", "chue", "name"], ["อะไร", "arai", "what"]], "end": "?"}
 {"sentence": "hello", "t": [["สวัสดี", "sawatdi", "hello"]], "end": "."}
 {"sentence": "nice-to-meet-you", "t": [["ยินดีที่ได้รู้จัก", "yin di thi dai ru chak", "nice-to-meet-you"]], "end": "."}
+{"sentence": "good-morning", "t": [["อรุณสวัสดิ์", "arun sawat", "good+morning"]], "end": "."}
 {"sentence": "thank-you", "t": [["ขอบคุณ", "khop khun", "thanks"]], "end": "."}
 {"sentence": "thank-you-very-much", "t": [["ขอบคุณ", "khop khun", "thanks"], ["มาก", "mak", "very-much"]], "end": "."}
 {"sentence": "success", "t": [["โชคดี", "chok di", "success"]], "end": "!"}
 {"sentence": "dont-understand", "t": [["ผม", "phom", "i"], ["ไม่", "mai", "not"], ["เข้าใจ", "khao chai", "understand"]], "end": "."}
 {"sentence": "dont-know", "t": [["ผม", "phom", "i"], ["ไม่", "mai", "not"], ["รู้", "ru", "know"]], "end": "."}
 {"sentence": "speak-english", "t": [["คุณ", "khun", "you"], ["พูด", "phut", "speak"], ["ภาษาอังกฤษ", "phasa Angkrit", "english"], ["ไหม", "mai", "@question"]], "end": "?"}
-{"sentence": "love-you", "t": [["ผม", "phom", "i"], ["รัก", "rak", "love"], ["คุณ", "khun", "you"]], "end": "."}
+{"sentence": "speak-chinese", "t": [["คุณ", "khun", "you"], ["พูด", "phut", "speak"], ["ภาษาจีน", "phasa Chin", "chinese"], ["ไหม", "mai", "@question"]], "end": "?"}
+{"sentence": "speak-arabic", "t": [["คุณ", "khun", "you"], ["พูด", "phut", "speak"], ["ภาษาอาหรับ", "phasa Arap", "arabic"], ["ไหม", "mai", "@question"]], "end": "?"}
+{"sentence": "speak-klingon", "t": [["คุณ", "khun", "you"], ["พูด", "phut", "speak"], ["ภาษาคลิงงอน", "phasa Klingon", "klingon"], ["ไหม", "mai", "@question"]], "end": "?"}
+{"sentence": "speak-hindi", "t": [["ผม", "phom", "i"], ["พูด", "phut", "speak"], ["ภาษาฮินดี", "phasa Hindi", "hindi"]], "end": "."}
+{"sentence": "study-korean", "t": [["ผม", "phom", "i"], ["เรียน", "rian", "study"], ["ภาษาเกาหลี", "phasa Kaoli", "korean"]], "end": "."}
+{"sentence": "like-sushi", "t": [["ผม", "phom", "i"], ["ชอบ", "chop", "like"], ["ซูชิ", "sushi", "sushi"]], "end": "."}
 {"sentence": "like-coffee", "t": [["ผม", "phom", "i"], ["ชอบ", "chop", "like"], ["กาแฟ", "kafae", "coffee"]], "end": "."}
 {"sentence": "like-tea", "t": [["ผม", "phom", "i"], ["ชอบ", "chop", "like"], ["ชา", "cha", "tea"]], "end": "."}
+{"sentence": "love-you", "t": [["ผม", "phom", "i"], ["รัก", "rak", "love"], ["คุณ", "khun", "you"]], "end": "."}
+{"sentence": "met-friend", "t": [["ผม", "phom", "i"], ["พบ", "phop", "meet"], ["เพื่อน", "phuean", "friend"], ["เมื่อวาน", "muea wan", "yesterday"]], "end": "."}
 {"sentence": "my-friend", "t": [["เขา", "khao", "he"], ["เป็น", "pen", "@copula"], ["เพื่อน", "phuean", "friend"], ["ของ", "khong", "@possessive"], ["ผม", "phom", "i"]], "end": "."}
 {"sentence": "who-is-he", "t": [["เขา", "khao", "he"], ["เป็น", "pen", "@copula"], ["ใคร", "khrai", "who"]], "end": "?"}
 {"sentence": "where-live", "t": [["คุณ", "khun", "you"], ["อยู่", "yu", "live"], ["ที่ไหน", "thi nai", "where"]], "end": "?"}
+{"sentence": "from-egypt", "t": [["ผม", "phom", "i"], ["มาจาก", "ma chak", "from"], ["อียิปต์", "Iyip", "egypt"]], "end": "."}
+{"sentence": "we-are-klingons", "t": [["เรา", "rao", "we"], ["เป็น", "pen", "@copula"], ["คลิงงอน", "Klingon", "klingon"]], "end": "."}
 {"sentence": "this-is-book", "t": [["นี่", "ni", "this"], ["คือ", "khue", "@copula"], ["หนังสือ", "nangsue", "book"]], "end": "."}
 {"sentence": "this-is-my-book", "t": [["นี่", "ni", "this"], ["คือ", "khue", "@copula"], ["หนังสือ", "nangsue", "book"], ["ของ", "khong", "@possessive"], ["ผม", "phom", "i"]], "end": "."}
 {"sentence": "drink-water", "t": [["ผม", "phom", "i"], ["ดื่ม", "duem", "drink"], ["น้ำ", "nam", "water"]], "end": "."}
@@ -23,23 +38,56 @@
 {"sentence": "want-coffee", "t": [["ผม", "phom", "i"], ["อยาก", "yak", "want"], ["กาแฟ", "kafae", "coffee"]], "end": "."}
 {"sentence": "read-book", "t": [["ผม", "phom", "i"], ["อ่าน", "an", "read"], ["หนังสือ", "nangsue", "book"]], "end": "."}
 {"sentence": "eat-rice", "t": [["เรา", "rao", "we"], ["กิน", "kin", "eat"], ["ข้าว", "khao", "rice"]], "end": "."}
+{"sentence": "eat-food", "t": [["ผม", "phom", "i"], ["กิน", "kin", "eat"], ["อาหาร", "ahan", "food"]], "end": "."}
+{"sentence": "lunch-restaurant", "t": [["ผม", "phom", "i"], ["กิน", "kin", "eat"], ["อาหารกลางวัน", "ahan klang wan", "lunch"], ["ที่", "thi", "@place"], ["ร้านอาหาร", "ran ahan", "restaurant"]], "end": "."}
+{"sentence": "eat-restaurant", "t": [["ผม", "phom", "i"], ["กิน", "kin", "eat"], ["ที่", "thi", "@place"], ["ร้านอาหาร", "ran ahan", "restaurant"]], "end": "."}
 {"sentence": "hot-today", "t": [["วันนี้", "wan ni", "today"], ["ร้อน", "ron", "hot"]], "end": "."}
 {"sentence": "cold-today", "t": [["วันนี้", "wan ni", "today"], ["หนาว", "nao", "cold"]], "end": "."}
+{"sentence": "weather-hot", "t": [["อากาศ", "akat", "weather"], ["ร้อน", "ron", "hot"], ["วันนี้", "wan ni", "today"]], "end": "."}
+{"sentence": "weather-good", "t": [["อากาศ", "akat", "weather"], ["ดี", "di", "good"], ["วันนี้", "wan ni", "today"]], "end": "."}
+{"sentence": "raining", "t": [["ฝนตก", "fon tok", "rain"]], "end": "."}
+{"sentence": "monday", "t": [["วันนี้", "wan ni", "today"], ["วันจันทร์", "wan chan", "monday"]], "end": "."}
+{"sentence": "what-time", "t": [["กี่โมง", "ki mong", "what+time"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["ตอนนี้", "ton ni", "now"], ["กี่โมง", "ki mong", "what+time"]], "end": "?"}
+{"sentence": "no-time", "t": [["ไม่มี", "mai mi", "none"], ["เวลา", "wela", "time"]], "end": "."}
+{"sentence": "there-is-cat", "t": [["มี", "mi", "exist"], ["แมว", "maeo", "cat"]], "end": "."}
 {"sentence": "have-cat", "t": [["ผม", "phom", "i"], ["มี", "mi", "have"], ["แมว", "maeo", "cat"]], "end": "."}
+{"sentence": "book-on-table", "t": [["มี", "mi", "exist"], ["หนังสือ", "nangsue", "book"], ["บน", "bon", "on"], ["โต๊ะ", "to", "table"]], "end": "."}
 {"sentence": "house-big", "t": [["บ้าน", "ban", "house"], ["ใหญ่", "yai", "big"]], "end": "."}
 {"sentence": "car-new", "t": [["รถ", "rot", "car"], ["ใหม่", "mai", "new"]], "end": "."}
 {"sentence": "delicious", "t": [["อร่อย", "aroi", "delicious"]], "end": "."}
 {"sentence": "food-tasty", "t": [["อาหาร", "ahan", "food"], ["อร่อย", "aroi", "delicious"], ["มาก", "mak", "very"]], "end": "."}
+{"sentence": "head-hurts", "t": [["ผม", "phom", "i"], ["ปวด", "puat", "hurt"], ["หัว", "hua", "head"]], "end": "."}
+{"sentence": "hungry", "t": [["ผม", "phom", "i"], ["หิว", "hio", "hungry"]], "end": "."}
+{"sentence": "give-water", "t": [["กรุณา", "karuna", "please"], ["ให้", "hai", "give"], ["ผม", "phom", "i"], ["น้ำ", "nam", "water"]], "end": "."}
+{"sentence": "wait-moment", "t": [["กรุณา", "karuna", "please"], ["รอ", "ro", "wait"], ["แป๊บหนึ่ง", "paep nueng", "moment"]], "end": "."}
+{"sentence": "sit-down", "t": [["กรุณา", "karuna", "please"], ["นั่ง", "nang", "sit"]], "end": "."}
 {"sentence": "where-station", "t": [["สถานี", "sathani", "station"], ["อยู่", "yu", "@place"], ["ที่ไหน", "thi nai", "where"]], "end": "?"}
 {"sentence": "where-toilet", "t": [["ห้องน้ำ", "hong nam", "toilet"], ["อยู่", "yu", "@place"], ["ที่ไหน", "thi nai", "where"]], "end": "?"}
 {"sentence": "where-hotel", "t": [["โรงแรม", "rong raem", "hotel"], ["อยู่", "yu", "@place"], ["ที่ไหน", "thi nai", "where"]], "end": "?"}
 {"sentence": "how-much-this", "t": [["อันนี้", "an ni", "this"], ["เท่าไร", "thao rai", "how-much"]], "end": "?"}
 {"sentence": "how-much-is-it", "t": [["เท่าไร", "thao rai", "how-much"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["ราคา", "rakha", "cost"], ["เท่าไร", "thao rai", "how-much"]], "end": "?"}
 {"sentence": "bill-please", "t": [["เช็คบิล", "chek bin", "bill+please"]], "end": "."}
 {"sentence": "go-school", "t": [["ผม", "phom", "i"], ["ไป", "pai", "go"], ["โรงเรียน", "rong rian", "school"]], "end": "."}
+{"sentence": "bus-school", "t": [["ผม", "phom", "i"], ["ไป", "pai", "go"], ["โรงเรียน", "rong rian", "school"], ["โดย", "doi", "@means"], ["รถเมล์", "rot me", "bus"]], "end": "."}
+{"sentence": "go-tokyo", "t": [["ผม", "phom", "i"], ["อยาก", "yak", "want"], ["ไป", "pai", "go"], ["โตเกียว", "Tokyo", "tokyo"]], "end": "."}
+{"sentence": "came-train", "t": [["ผม", "phom", "i"], ["มา", "ma", "come"], ["โดย", "doi", "@means"], ["รถไฟ", "rot fai", "train"]], "end": "."}
+{"sentence": "where-going", "t": [["คุณ", "khun", "you"], ["ไป", "pai", "go"], ["ที่ไหน", "thi nai", "where"]], "end": "?"}
 {"sentence": "going-home", "t": [["ผม", "phom", "i"], ["ไป", "pai", "go"], ["บ้าน", "ban", "home"]], "end": "."}
 {"sentence": "we-going-home", "t": [["เรา", "rao", "we"], ["ไป", "pai", "go"], ["บ้าน", "ban", "home"]], "end": "."}
-{"sentence": "where-going", "t": [["คุณ", "khun", "you"], ["ไป", "pai", "go"], ["ที่ไหน", "thi nai", "where"]], "end": "?"}
+{"sentence": "lets-go", "t": [["ไปกัน", "pai kan", "go+let-us"]], "end": "."}
+{"sentence": "live-moscow", "t": [["ผม", "phom", "i"], ["อยู่", "yu", "live"], ["ที่", "thi", "@place"], ["มอสโก", "Mosko", "moscow"]], "end": "."}
+{"sentence": "live-cairo", "t": [["ผม", "phom", "i"], ["อยู่", "yu", "live"], ["ที่", "thi", "@place"], ["ไคโร", "Khairo", "cairo"]], "end": "."}
+{"sentence": "live-beijing", "t": [["ผม", "phom", "i"], ["อยู่", "yu", "live"], ["ที่", "thi", "@place"], ["ปักกิ่ง", "Pakking", "beijing"]], "end": "."}
+{"sentence": "i-sleep", "t": [["ผม", "phom", "i"], ["นอน", "non", "sleep"]], "end": "."}
+{"sentence": "i-fight", "t": [["ผม", "phom", "i"], ["สู้", "su", "fight"]], "end": "."}
+{"sentence": "we-fight", "t": [["เรา", "rao", "we"], ["สู้", "su", "fight"]], "end": "."}
+{"sentence": "sleep-command", "t": [["นอน", "non", "sleep"]], "end": "!"}
+{"sentence": "child-sleeps", "t": [["เด็ก", "dek", "child"], ["นอน", "non", "sleep"]], "end": "."}
+{"sentence": "officer-sees-child", "t": [["เจ้าหน้าที่", "chao nathi", "officer"], ["เห็น", "hen", "see"], ["เด็ก", "dek", "child"]], "end": "."}
+{"sentence": "captain-sees-ship", "t": [["กัปตัน", "kapta", "captain"], ["เห็น", "hen", "see"], ["เรือ", "ruea", "ship"]], "end": "."}
+{"sentence": "i-see-ship", "t": [["ผม", "phom", "i"], ["เห็น", "hen", "see"], ["เรือ", "ruea", "ship"]], "end": "."}
 {"sentence": "print-word", "t": [["แสดง", "sadaeng", "print"], ["คำ", "kham", "word"]], "end": "."}
 {"sentence": "show-number", "t": [["แสดง", "sadaeng", "print"], ["ตัวเลข", "tualek", "number"]], "end": "."}
 {"sentence": "print-screen", "t": [["แสดง", "sadaeng", "print"], ["คำ", "kham", "word"], ["บน", "bon", "@place"], ["หน้าจอ", "nacho", "screen"]], "end": "."}
