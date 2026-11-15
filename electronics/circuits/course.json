@@ -1,0 +1,768 @@
+{
+  "schema": "electronics-course@1",
+  "id": "circuits",
+  "name": "Circuits",
+  "title": "Series, parallel, Kirchhoff and building blocks",
+  "intro": "Once you know parts, you wire them. These lessons cover series and parallel networks, Kirchhoff's laws, dividers, RC timing, filter intuition, a first look at amplifiers, and how to read a schematic without getting lost.",
+  "lessons": [
+    {
+      "id": "series",
+      "title": "Series circuits",
+      "summary": "One path: shared current, voltages add.",
+      "sections": [
+        {
+          "p": "In a <b>series</b> circuit, components share one current path. The same current flows through each part. Voltages across the parts add up to the source voltage (Kirchhoff's voltage law in a single loop)."
+        },
+        {
+          "h": "Resistors in series",
+          "p": "R_total = R1 + R2 + … Two 1 kΩ in series make 2 kΩ. Stringing resistors raises resistance and shares voltage."
+        },
+        {
+          "h": "Failure mode",
+          "p": "If any series element goes open, the whole loop stops. Christmas lights of old failed this way when one bulb opened."
+        },
+        {
+          "code": "  +V ---[R1]---[R2]---[R3]--- GND\n\nI same through R1,R2,R3\nV1+V2+V3 = Vsource\nRtot = R1+R2+R3"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "the same current",
+          "why": "One path means one current.",
+          "q": "Series elements share…",
+          "options": [
+            "the same current",
+            "the same voltage always",
+            "no relationship",
+            "only magnetic fields"
+          ]
+        },
+        {
+          "answer": "4 kΩ",
+          "why": "Series resistances add.",
+          "q": "Two 2 kΩ resistors in series equal…",
+          "options": ["4 kΩ", "1 kΩ", "2 kΩ", "0 Ω"]
+        },
+        {
+          "answer": "add to the source voltage",
+          "why": "KVL around the loop.",
+          "q": "Voltages across series resistors…",
+          "options": [
+            "add to the source voltage",
+            "are each equal to the source",
+            "must each be zero",
+            "subtract electrons"
+          ]
+        },
+        {
+          "answer": "stops current in the whole loop",
+          "why": "The path is broken.",
+          "q": "An open in a series loop…",
+          "options": [
+            "stops current in the whole loop",
+            "doubles current",
+            "affects only the next part downstream magically",
+            "shorts the source safely"
+          ]
+        },
+        {
+          "answer": "4 V",
+          "why": "Equal R share voltage equally.",
+          "q": "Three equal resistors in series across 12 V each drop…",
+          "options": ["4 V", "12 V", "36 V", "0 V"]
+        },
+        {
+          "answer": "the same current flows through both",
+          "why": "One loop through both parts.",
+          "q": "LED + series resistor is a series circuit because…",
+          "options": [
+            "the same current flows through both",
+            "they share voltage equally always",
+            "LEDs cancel ohms",
+            "order does not exist"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parallel",
+      "title": "Parallel circuits",
+      "summary": "Shared voltage, currents add.",
+      "sections": [
+        {
+          "p": "In a <b>parallel</b> circuit, components share the same two nodes — the same voltage appears across each branch. Branch currents add to the total supply current."
+        },
+        {
+          "h": "Resistors in parallel",
+          "p": "1/R_total = 1/R1 + 1/R2 + … Two equal resistors in parallel make half the resistance. Two 1 kΩ in parallel → 500 Ω."
+        },
+        {
+          "h": "Loads on a supply rail",
+          "p": "Every module on a 5 V rail is roughly in parallel on that rail. Total current is the sum of module currents. Undersized supplies brown out when the sum exceeds rating."
+        },
+        {
+          "code": "  +V ---+---[R1]---+\n       |          |\n       +---[R2]---+\n       |          |\n      GND        GND\n\nV same on both; I_total = I1+I2"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "the same voltage",
+          "why": "Same two nodes means same V.",
+          "q": "Parallel branches share…",
+          "options": [
+            "the same voltage",
+            "the same current always",
+            "no common nodes",
+            "only temperature"
+          ]
+        },
+        {
+          "answer": "500 Ω",
+          "why": "Equal parallels halve R.",
+          "q": "Two 1 kΩ in parallel equal…",
+          "options": ["500 Ω", "2 kΩ", "1 kΩ", "0 Ω"]
+        },
+        {
+          "answer": "add to the total current",
+          "why": "KCL at the supply node.",
+          "q": "Branch currents in a parallel network…",
+          "options": [
+            "add to the total current",
+            "must each equal the total",
+            "cancel to zero always",
+            "are measured in farads"
+          ]
+        },
+        {
+          "answer": "increases total current draw",
+          "why": "Each branch draws its own I.",
+          "q": "Adding more parallel loads on a rail usually…",
+          "options": [
+            "increases total current draw",
+            "decreases total current",
+            "raises rail voltage unboundedly",
+            "removes the need for ground"
+          ]
+        },
+        {
+          "answer": "1 kΩ",
+          "why": "1/R = 1/1000 → R = 1 kΩ.",
+          "q": "1/R = 1/2k + 1/2k gives R…",
+          "options": ["1 kΩ", "4 kΩ", "2 kΩ", "500 Ω"]
+        },
+        {
+          "answer": "other branches can still run",
+          "why": "Other paths remain.",
+          "q": "If one parallel bulb burns open…",
+          "options": [
+            "other branches can still run",
+            "all branches must go dark",
+            "voltage becomes infinite",
+            "series law takes over automatically"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kirchhoff",
+      "title": "Kirchhoff's laws",
+      "summary": "KCL and KVL as bookkeeping for circuits.",
+      "sections": [
+        {
+          "p": "<b>Kirchhoff's Current Law (KCL):</b> the sum of currents into a node equals the sum leaving it (charge does not pile up at an ideal node). <b>Kirchhoff's Voltage Law (KVL):</b> the signed sum of voltages around a closed loop is zero."
+        },
+        {
+          "h": "Using KCL",
+          "p": "If 20 mA enters a node and 5 mA leaves on one wire, 15 mA must leave on the others combined. Power-rail planning is KCL with bigger numbers."
+        },
+        {
+          "h": "Using KVL",
+          "p": "From battery + through drops and back: all drops account for the battery rise. If your calculated drops do not close the loop, a sign or a missing element is wrong."
+        },
+        {
+          "h": "Signs",
+          "p": "Pick a loop direction and stick to it. Crossing a resistor with current gives a voltage drop that way; a source rise depends on whether you go − to + or the reverse."
+        },
+        {
+          "code": "KCL: Σ I_in = Σ I_out\nKVL: Σ V_loop = 0\n\n  I1 →  node  → I2\n         ↓\n         I3\n  I1 = I2 + I3"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "currents in equal currents out",
+          "why": "Charge conservation at the node.",
+          "q": "KCL says at a node…",
+          "options": [
+            "currents in equal currents out",
+            "voltages must all be zero",
+            "power is conserved as charge",
+            "resistance disappears"
+          ]
+        },
+        {
+          "answer": "signed voltages sum to zero",
+          "why": "Potential returns to its start.",
+          "q": "KVL says around a loop…",
+          "options": [
+            "signed voltages sum to zero",
+            "currents sum to zero always",
+            "only resistors can exist",
+            "AC is forbidden"
+          ]
+        },
+        {
+          "answer": "15 mA",
+          "why": "20 − 5 = 15 mA.",
+          "q": "20 mA in, 5 mA out one way ⇒ other out paths total…",
+          "options": ["15 mA", "25 mA", "5 mA", "0 mA"]
+        },
+        {
+          "answer": "check signs and missing drops",
+          "why": "Bookkeeping errors are common.",
+          "q": "If KVL does not close in your calculation…",
+          "options": [
+            "check signs and missing drops",
+            "delete Ohm's law",
+            "add random current",
+            "ignore the battery"
+          ]
+        },
+        {
+          "answer": "charge conservation",
+          "why": "Charge does not accumulate at an ideal node.",
+          "q": "KCL is really about…",
+          "options": [
+            "charge conservation",
+            "magnetic monopoles",
+            "LED colour",
+            "solder brand"
+          ]
+        },
+        {
+          "answer": "KVL plus Ohm's law",
+          "why": "Classic loop analysis.",
+          "q": "A single series loop with one battery and resistors is solved with…",
+          "options": [
+            "KVL plus Ohm's law",
+            "only antenna theory",
+            "Maxwell's equations numerically always",
+            "no voltage concepts"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dividers",
+      "title": "Voltage and current dividers",
+      "summary": "Tapping a fraction of a voltage or steering current.",
+      "sections": [
+        {
+          "p": "A resistive <b>voltage divider</b> makes a lower voltage from a higher one: Vout = Vin × R2 / (R1 + R2) when R2 is the grounded leg and almost no current is drawn from the tap."
+        },
+        {
+          "h": "Loading",
+          "p": "If something draws current from the tap, the divider equation changes. Keep the load resistance much larger than the divider resistors, or buffer with an op-amp / use a regulator."
+        },
+        {
+          "h": "Example",
+          "p": "Vin = 5 V, R1 = 10 kΩ (top), R2 = 20 kΩ (bottom) → Vout = 5 × 20/30 ≈ 3.33 V. Handy for level hints — still check ADC loading."
+        },
+        {
+          "h": "Current dividers",
+          "p": "Parallel resistors split current inversely to resistance: the smaller resistor takes more current. Two equal branches split current equally."
+        },
+        {
+          "code": "Vin ---[R1]---+--- Vout\n             |\n            [R2]\n             |\n            GND\n\nVout = Vin * R2 / (R1+R2)  (unloaded)"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "Vin × R2/(R1+R2)",
+          "why": "Grounded R2 sets the fraction.",
+          "q": "Unloaded voltage divider: Vout = …",
+          "options": [
+            "Vin × R2/(R1+R2)",
+            "Vin × R1/R2",
+            "Vin × (R1+R2)",
+            "Vin / R2 only"
+          ]
+        },
+        {
+          "answer": "3.33 V",
+          "why": "20/30 of 5 V.",
+          "q": "5 V with 10k top and 20k bottom gives about…",
+          "options": ["3.33 V", "1.67 V", "5 V", "0 V"]
+        },
+        {
+          "answer": "pulls Vout down from the unloaded prediction",
+          "why": "Loading adds a parallel path on R2.",
+          "q": "Heavy load on the tap…",
+          "options": [
+            "pulls Vout down from the unloaded prediction",
+            "raises Vout above Vin",
+            "removes R1 from the circuit magically",
+            "converts DC to RF"
+          ]
+        },
+        {
+          "answer": "takes more of the current",
+          "why": "Current prefers the easier path.",
+          "q": "In a current divider, the smaller resistor…",
+          "options": [
+            "takes more of the current",
+            "takes less of the current",
+            "takes zero always",
+            "becomes an open"
+          ]
+        },
+        {
+          "answer": "load current varies and sags the tap",
+          "why": "Use a regulator for power rails.",
+          "q": "A divider is a poor precision rail for motors because…",
+          "options": [
+            "load current varies and sags the tap",
+            "resistors cannot drop voltage",
+            "KVL forbids dividers",
+            "motors need open circuits"
+          ]
+        },
+        {
+          "answer": "equally",
+          "why": "Same R → same I.",
+          "q": "Equal parallel resistors split current…",
+          "options": [
+            "equally",
+            "all into one branch",
+            "by voltage squared only",
+            "into AC and DC halves"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rc-time",
+      "title": "RC timing",
+      "summary": "Charging curves and the time constant τ = R C.",
+      "sections": [
+        {
+          "p": "A resistor feeding a capacitor creates an <b>RC</b> circuit. The time constant τ = R C (ohms × farads = seconds). After about one τ, a charging capacitor toward a fixed voltage reaches ~63% of the final value; after ~5τ it is essentially settled."
+        },
+        {
+          "h": "Example",
+          "p": "R = 10 kΩ, C = 100 nF → τ = 10e3 × 100e-9 = 1 ms. Useful for debounce, reset timing, and simple delays (crystal clocks are better when you need accuracy)."
+        },
+        {
+          "h": "Discharge",
+          "p": "The same τ governs discharge toward 0 V through R. Scope the curve: it is exponential, not a straight ramp (unless current is forced constant)."
+        },
+        {
+          "h": "Series vs parallel intuition",
+          "p": "Larger R or larger C slows the transient. That is how you soften edges or hold a supply up briefly — within limits of leakage and load."
+        },
+        {
+          "code": "τ = R * C\n\n~63% at 1τ, ~95% at 3τ, ~99% at 5τ\n\n5V ---[10k]---+--- Vcap\n             |\n           [100n]\n             |\n            GND"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "R × C",
+          "why": "τ = RC in seconds.",
+          "q": "The RC time constant τ equals…",
+          "options": ["R × C", "R / C", "R + C", "C / R²"]
+        },
+        {
+          "answer": "1 ms",
+          "why": "1e4 × 1e-7 = 1e-3 s.",
+          "q": "10 kΩ and 100 nF give τ…",
+          "options": ["1 ms", "1 s", "10 µs", "100 s"]
+        },
+        {
+          "answer": "63% of final",
+          "why": "Classic exponential step response.",
+          "q": "After about one τ of charging toward a DC level, Vcap is about…",
+          "options": ["63% of final", "10% of final", "100% of final", "0% always"]
+        },
+        {
+          "answer": "~5τ",
+          "why": "e^(−5) is tiny.",
+          "q": "About how many τ to be essentially settled?",
+          "options": ["~5τ", "0.1τ", "50τ for every circuit", "exactly 2τ always"]
+        },
+        {
+          "answer": "increase R or C",
+          "why": "τ grows with R and C.",
+          "q": "To slow an RC rise, you can…",
+          "options": [
+            "increase R or C",
+            "only decrease both",
+            "remove the capacitor and keep R",
+            "short C with a wire for more delay"
+          ]
+        },
+        {
+          "answer": "exponential, not a perfect linear ramp",
+          "why": "Constant-R charging is exponential.",
+          "q": "RC charging from a voltage through R is…",
+          "options": [
+            "exponential, not a perfect linear ramp",
+            "a perfect triangle forever",
+            "independent of R",
+            "only defined for AC mains"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filters",
+      "title": "Filters intuition",
+      "summary": "Letting some frequencies through, attenuating others.",
+      "sections": [
+        {
+          "p": "A <b>filter</b> favours some frequencies over others. A series resistor and shunt capacitor to ground is a simple <b>low-pass</b>: slow changes appear at the output; fast spikes are shorted by the capacitor."
+        },
+        {
+          "h": "High-pass",
+          "p": "Swap the roles: series capacitor and shunt resistor passes fast edges / AC and blocks steady DC — useful for coupling audio while rejecting DC bias."
+        },
+        {
+          "h": "Cutoff (ballpark)",
+          "p": "For a first-order RC low-pass, f_c ≈ 1 / (2π R C). R = 1 kΩ, C = 1 µF → f_c ≈ 160 Hz. Order-of-magnitude thinking beats false precision on a breadboard."
+        },
+        {
+          "h": "Where you meet filters",
+          "p": "ADC anti-alias RC, EMI ferrites, speaker crossovers, radio IF chains. Start by asking: do I want to keep slow, keep fast, or keep a band?"
+        },
+        {
+          "code": "Low-pass RC:\n  Vin ---[R]---+--- Vout\n              |\n             [C]\n              |\n             GND\n\nfc ≈ 1 / (2π R C)"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "low-pass filter",
+          "why": "C bypasses high frequencies.",
+          "q": "A series R and shunt C to ground is a…",
+          "options": [
+            "low-pass filter",
+            "high-pass filter",
+            "short circuit for DC forever only",
+            "transformer"
+          ]
+        },
+        {
+          "answer": "high-pass filter",
+          "why": "C blocks DC, passes changing signals.",
+          "q": "A series C and shunt R is a…",
+          "options": ["high-pass filter", "low-pass filter", "battery", "pure inductor"]
+        },
+        {
+          "answer": "a first-order RC low-pass (ballpark)",
+          "why": "Standard −3 dB frequency.",
+          "q": "f_c ≈ 1/(2πRC) for…",
+          "options": [
+            "a first-order RC low-pass (ballpark)",
+            "every crystal oscillator exactly",
+            "only antennas",
+            "Ohm's law replacement"
+          ]
+        },
+        {
+          "answer": "160 Hz",
+          "why": "1/(2π·1e3·1e-6) ≈ 159 Hz.",
+          "q": "1 kΩ and 1 µF low-pass f_c is about…",
+          "options": ["160 Hz", "160 kHz", "1 Hz", "16 MHz"]
+        },
+        {
+          "answer": "high-pass (series capacitor)",
+          "why": "Series C is classic AC coupling.",
+          "q": "Coupling audio while blocking DC bias uses…",
+          "options": [
+            "high-pass (series capacitor)",
+            "only a shunt short",
+            "a bare wire link",
+            "a fuse"
+          ]
+        },
+        {
+          "answer": "frequency-dependent behaviour",
+          "why": "That is the point of filtering.",
+          "q": "Filters are about…",
+          "options": [
+            "frequency-dependent behaviour",
+            "removing Kirchhoff's laws",
+            "increasing charge without limit",
+            "renaming resistors"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amplifiers",
+      "title": "Amplifiers intro",
+      "summary": "Making a small signal larger — with power from a supply.",
+      "sections": [
+        {
+          "p": "An <b>amplifier</b> takes a small input and produces a larger output, using energy from a power supply. Gain might be voltage gain Vout/Vin. A transistor stage or an op-amp IC are common building blocks."
+        },
+        {
+          "h": "Op-amp first look",
+          "p": "An ideal op-amp has huge gain, tiny input current, and is used with feedback. In negative feedback, the output moves so the inputs stay nearly equal — that is how we set precise gains with resistors."
+        },
+        {
+          "h": "Non-inverting gain",
+          "p": "With R1 from − input to ground and Rf from output to − input, gain ≈ 1 + Rf/R1 (ideal). Example: Rf = 9 kΩ, R1 = 1 kΩ → gain ≈ 10."
+        },
+        {
+          "h": "Limits",
+          "p": "Outputs cannot exceed the supply rails (and often cannot reach them fully). Slew rate and bandwidth limit fast signals. Clipping sounds harsh in audio and ruins measurement peaks."
+        },
+        {
+          "code": "Non-inverting (ideal):\n  Vin --> +\\\n           >---- Vout\n      +--> -/   |\n      |        [Rf]\n     [R1]       |\n      |---------+\n     GND\n\nG ≈ 1 + Rf/R1"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "the power supply",
+          "why": "Gain uses supply power.",
+          "q": "Amplifiers get the extra output energy from…",
+          "options": [
+            "the power supply",
+            "creating charge from nothing",
+            "the colour of the PCB",
+            "Kirchhoff violating nodes"
+          ]
+        },
+        {
+          "answer": "Vout / Vin",
+          "why": "That ratio is voltage gain.",
+          "q": "Voltage gain is…",
+          "options": [
+            "Vout / Vin",
+            "Vin / Vout always as definition of power",
+            "Iout only",
+            "R × C"
+          ]
+        },
+        {
+          "answer": "set a stable, predictable gain",
+          "why": "Feedback tames huge open-loop gain.",
+          "q": "Negative feedback around an op-amp is used to…",
+          "options": [
+            "set a stable, predictable gain",
+            "maximize uncontrolled oscillation always",
+            "remove the need for supplies",
+            "turn Rf into 0 Ω magically"
+          ]
+        },
+        {
+          "answer": "10",
+          "why": "1 + 9/1 = 10.",
+          "q": "Rf = 9k, R1 = 1k non-inverting gain ≈…",
+          "options": ["10", "9", "1", "90"]
+        },
+        {
+          "answer": "the output hits supply limits",
+          "why": "Rails bound the swing.",
+          "q": "Clipping happens when…",
+          "options": [
+            "the output hits supply limits",
+            "gain is exactly 1",
+            "only DC is present",
+            "feedback resistors are equal in every circuit"
+          ]
+        },
+        {
+          "answer": "nearly zero",
+          "why": "High input impedance idealization.",
+          "q": "Ideal op-amp input current is modeled as…",
+          "options": [
+            "nearly zero",
+            "infinite",
+            "exactly 1 A",
+            "equal to supply current always"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "schematics",
+      "title": "Reading schematics",
+      "summary": "Symbols, nets, and finding your way on a diagram.",
+      "sections": [
+        {
+          "p": "A <b>schematic</b> shows electrical connections with symbols, not physical layout. Wires that meet at a dot are connected; crossing wires without a dot are not (styles vary — check the drawing rules)."
+        },
+        {
+          "h": "Reference designators",
+          "p": "R12 is a resistor, C3 a capacitor, U1 an IC, Q1 a transistor, J1 a connector, D4 a diode. Values sit beside the symbol: 10k, 100n, 0.1µF."
+        },
+        {
+          "h": "Nets and labels",
+          "p": "Named nets like +3V3, GND, SDA connect across pages without drawing spaghetti. Same name means same node. Ground symbols usually tie together unless multiple grounds are explicitly separated."
+        },
+        {
+          "h": "Reading order",
+          "p": "Find the power rails first, then the MCU or central IC, then peripherals. Trace one signal: where it starts, what series parts it hits, where it ends."
+        },
+        {
+          "code": "  +5V\n   |\n  [R1]\n   |\n   +----|>|---- GND     LED + resistor\n\n  U1 pin12  labeled  SDA  → same net elsewhere"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "electrical connections via symbols",
+          "why": "Schematics are about connectivity.",
+          "q": "A schematic emphasizes…",
+          "options": [
+            "electrical connections via symbols",
+            "exact millimetre part placement only",
+            "solder mask colour",
+            "enclosure paint"
+          ]
+        },
+        {
+          "answer": "capacitor",
+          "why": "C-prefix is capacitor.",
+          "q": "Reference designator C7 is almost certainly a…",
+          "options": ["capacitor", "connector", "crystal speaker", "chassis screw"]
+        },
+        {
+          "answer": "are the same electrical net",
+          "why": "Net names join nodes.",
+          "q": "Two wires labeled +3V3 on different pages…",
+          "options": [
+            "are the same electrical net",
+            "must be different voltages",
+            "cannot connect without a transformer",
+            "are only mechanical"
+          ]
+        },
+        {
+          "answer": "power rails and the main IC",
+          "why": "Orient yourself before details.",
+          "q": "A good first read of a complex schematic is to find…",
+          "options": [
+            "power rails and the main IC",
+            "only the title block font",
+            "the fabrication house phone number",
+            "silk-screen art"
+          ]
+        },
+        {
+          "answer": "not connected (in common modern style)",
+          "why": "Confirm the drawing convention.",
+          "q": "Crossing lines without a junction dot usually mean…",
+          "options": [
+            "not connected (in common modern style)",
+            "always connected",
+            "a short intentional",
+            "AC only"
+          ]
+        },
+        {
+          "answer": "diode (or LED)",
+          "why": "D-prefix is diode family.",
+          "q": "D3 typically denotes a…",
+          "options": [
+            "diode (or LED)",
+            "resistor",
+            "only a push-button",
+            "mounting hole"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thevenin",
+      "title": "Thévenin intuition",
+      "summary": "Replacing a network with Vth and Rth.",
+      "sections": [
+        {
+          "p": "<b>Thévenin's theorem</b> says that from the point of view of one load, a linear network of sources and resistors can be replaced by one voltage Vth in series with one resistance Rth. That is why \"looking into\" a divider matters."
+        },
+        {
+          "h": "Divider example",
+          "p": "Unloaded divider Vout is Vth. Rth is what you measure at the tap with sources zeroed (voltage sources shorted, current sources opened): for two resistors, Rth = R1 ∥ R2."
+        },
+        {
+          "h": "Why care",
+          "p": "If Rload ≫ Rth, the tap barely sags. If Rload ≈ Rth, you lose half the voltage to Rth. ADC pins, comparator inputs and scopes all load the node a little."
+        },
+        {
+          "h": "Mental model",
+          "p": "Every real signal source has some Rth (output impedance). Cables and op-amp outputs are not perfect stiff voltage sources."
+        },
+        {
+          "code": "Network  ≡  Vth ---[Rth]--- tap ---- Rload ---- GND\n\nDivider: Vth = Vin*R2/(R1+R2),  Rth = R1||R2"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "one Vth and one Rth",
+          "why": "Classic equivalent.",
+          "q": "Thévenin replaces a linear network with…",
+          "options": [
+            "one Vth and one Rth",
+            "only a current source forever",
+            "two capacitors",
+            "a diode bridge only"
+          ]
+        },
+        {
+          "answer": "R1 in parallel with R2",
+          "why": "With Vin shorted for the Rth step.",
+          "q": "For a simple divider, Rth at the tap is…",
+          "options": [
+            "R1 in parallel with R2",
+            "R1 + R2 always",
+            "0 Ω",
+            "infinite always"
+          ]
+        },
+        {
+          "answer": "stays close to Vth",
+          "why": "Light loading.",
+          "q": "If Rload ≫ Rth, the loaded voltage…",
+          "options": [
+            "stays close to Vth",
+            "falls to zero",
+            "becomes 2 Vth",
+            "ignores Ohm's law"
+          ]
+        },
+        {
+          "answer": "Rth looking back into the source",
+          "why": "Output impedance ≈ Thévenin R.",
+          "q": "Output impedance of a source is another name for ideas like…",
+          "options": [
+            "Rth looking back into the source",
+            "only the LED Vf",
+            "mains frequency",
+            "solder melting point"
+          ]
+        },
+        {
+          "answer": "slightly loaded — Vout may shift",
+          "why": "Finite input impedance loads the tap.",
+          "q": "ADC pin current means the divider is…",
+          "options": [
+            "slightly loaded — Vout may shift",
+            "immune to all loading",
+            "converted to magnetic only",
+            "shorted to mains"
+          ]
+        },
+        {
+          "answer": "it simplifies what the load \"sees\"",
+          "why": "One equivalent is easier to reason about.",
+          "q": "Thévenin helps because…",
+          "options": [
+            "it simplifies what the load \"sees\"",
+            "it deletes KCL",
+            "it invents charge",
+            "it replaces safety rules"
+          ]
+        }
+      ]
+    }
+  ]
+}

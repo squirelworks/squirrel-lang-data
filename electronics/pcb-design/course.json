@@ -1,0 +1,742 @@
+{
+  "schema": "electronics-course@1",
+  "id": "pcb-design",
+  "name": "PCB design",
+  "title": "From schematic to fab files",
+  "intro": "Printed circuit boards turn schematics into copper. These lessons walk through schematic capture, footprints, layout rules, copper pours, design-rule checks, fabrication outputs and a look at assembly — enough to order a first prototype without guessing every acronym.",
+  "lessons": [
+    {
+      "id": "schematic-capture",
+      "title": "Schematic capture",
+      "summary": "Drawing the circuit cleanly before layout.",
+      "sections": [
+        {
+          "p": "<b>Schematic capture</b> is drawing the circuit in EDA software (KiCad, Eagle, Altium…). Hierarchy, named nets and readable symbols prevent layout disasters. The schematic is the electrical contract; the PCB is the physical one."
+        },
+        {
+          "h": "Habits",
+          "p": "Left-to-right signal flow, top power rails, bottom grounds when practical. Label important nets. Put decoupling capacitors next to their IC on the schematic so you remember them in layout."
+        },
+        {
+          "h": "ERC",
+          "p": "Electrical rule checks catch undriven inputs, two outputs fighting, and missing power flags. Fix ERC before layout — copper will not heal a shorted net name."
+        },
+        {
+          "h": "Annotations",
+          "p": "Reference designators must be unique. Values must match what you will buy. A schematic that says 0.1 µF but a BOM that says 100 pF wastes a spin."
+        }
+      ],
+      "practice": [
+        {
+          "answer": "electrical connectivity and intent",
+          "why": "Schematic first.",
+          "q": "Schematic capture defines…",
+          "options": [
+            "electrical connectivity and intent",
+            "exact copper millimetres only",
+            "solder paste chemistry",
+            "box colour"
+          ]
+        },
+        {
+          "answer": "undriven pins and power conflicts",
+          "why": "Electrical rules.",
+          "q": "ERC helps catch…",
+          "options": [
+            "undriven pins and power conflicts",
+            "silk font beauty only",
+            "shipping prices",
+            "flux brand"
+          ]
+        },
+        {
+          "answer": "on the schematic near their IC",
+          "why": "If it is not drawn, it is forgotten.",
+          "q": "Decoupling caps should appear…",
+          "options": [
+            "on the schematic near their IC",
+            "only in a text email",
+            "never",
+            "as mechanical holes only"
+          ]
+        },
+        {
+          "answer": "they connect across the sheet without spaghetti",
+          "why": "Net names join nodes.",
+          "q": "Named nets are useful because…",
+          "options": [
+            "they connect across the sheet without spaghetti",
+            "they replace footprints",
+            "they set reflow profiles",
+            "they measure ESR"
+          ]
+        },
+        {
+          "answer": "BOM and layout confusion",
+          "why": "Each R/C/U needs a unique id.",
+          "q": "Unique reference designators prevent…",
+          "options": [
+            "BOM and layout confusion",
+            "Ohm's law",
+            "soldering",
+            "gerber generation entirely"
+          ]
+        },
+        {
+          "answer": "before spending hours on layout",
+          "why": "Garbage in, garbage out.",
+          "q": "Fix schematic errors…",
+          "options": [
+            "before spending hours on layout",
+            "only after the fab ships",
+            "by mirroring copper oddly",
+            "with more vias randomly"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "footprints",
+      "title": "Footprints and land patterns",
+      "summary": "The copper the part actually sits on.",
+      "sections": [
+        {
+          "p": "A <b>footprint</b> (land pattern) is the pads, courtyard and silk that match a physical part. The schematic symbol is logical; the footprint is geometric. Mismatches are a top cause of unusable boards."
+        },
+        {
+          "h": "Datasheet land patterns",
+          "p": "Component datasheets recommend pad sizes. IPC guidelines refine them for density vs manufacturability. Measure a sample part if the library looks suspicious."
+        },
+        {
+          "h": "Courtyard and 3D",
+          "p": "Courtyards keep parts from colliding. 3D models catch connector overhangs into enclosures before you order aluminium milled boxes."
+        },
+        {
+          "h": "Pin 1",
+          "p": "Mark pin 1 in silk consistently. Polarised parts (diodes, electrolytics, connectors) need clear markings on both schematic and board."
+        },
+        {
+          "code": "Symbol (logic)  →  Footprint (geometry)\n  U1 74HC00     →  SOIC-14 pads + silk + courtyard"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "the copper/silk geometry for a part",
+          "why": "Land pattern.",
+          "q": "A footprint is…",
+          "options": [
+            "the copper/silk geometry for a part",
+            "the Boolean equation",
+            "the baud rate",
+            "the enclosure colour"
+          ]
+        },
+        {
+          "answer": "datasheets and measurement",
+          "why": "Libraries can be wrong.",
+          "q": "Trust but verify footprints using…",
+          "options": [
+            "datasheets and measurement",
+            "only part name vibes",
+            "random pad sizes",
+            "LED brightness"
+          ]
+        },
+        {
+          "answer": "prevent physical collisions",
+          "why": "Keep bodies apart.",
+          "q": "Courtyards help…",
+          "options": [
+            "prevent physical collisions",
+            "set logic levels",
+            "choose solder alloy",
+            "define UART parity"
+          ]
+        },
+        {
+          "answer": "assemblers orient the part correctly",
+          "why": "Orientation errors are costly.",
+          "q": "Pin 1 marking matters so…",
+          "options": [
+            "assemblers orient the part correctly",
+            "copper pours look nicer only",
+            "DRC ignores spacing",
+            "flux becomes optional"
+          ]
+        },
+        {
+          "answer": "logic vs geometry",
+          "why": "Two linked views.",
+          "q": "Schematic symbol vs footprint…",
+          "options": [
+            "logic vs geometry",
+            "identical always",
+            "both are only BOM text",
+            "neither is needed"
+          ]
+        },
+        {
+          "answer": "which way the part goes",
+          "why": "Prevent reverse insertion.",
+          "q": "Polarised footprints must show…",
+          "options": [
+            "which way the part goes",
+            "only the value text upside down randomly",
+            "no silk ever",
+            "mains rating on every resistor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "layout-rules",
+      "title": "Layout rules",
+      "summary": "Clearance, width, and where parts sit.",
+      "sections": [
+        {
+          "p": "<b>Layout</b> places footprints and routes copper. Respect clearance (space between copper) and track width (current + fab limits). A 0.3 mm trace may be fine for signals; power paths need wider copper or pours."
+        },
+        {
+          "h": "Current and width",
+          "p": "Rough ballpark: a 1 mm trace on outer 1 oz copper carries on the order of a couple of amps with modest temperature rise — use a trace-width calculator for real designs. Vias add resistance; parallel vias help."
+        },
+        {
+          "h": "Return paths",
+          "p": "Every signal has a return. A solid ground plane under signal traces keeps loops small. Slots that force returns to detour create noise and EMI headaches."
+        },
+        {
+          "h": "Placement",
+          "p": "Place connectors on edges, crystals close to MCU with short traces, decoupling caps tight to power pins. Think assembly and probing — can a human debug this?"
+        },
+        {
+          "code": "Clearance: copper-to-copper gap (fab min + your margin)\nWidth: set by current + impedance needs\n\nDecoupling: VCC pin ---[via]--- cap --- GND plane"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "minimum space between copper features",
+          "why": "Keep copper from shorting.",
+          "q": "Clearance means…",
+          "options": [
+            "minimum space between copper features",
+            "solder melting point",
+            "LED viewing angle",
+            "baud spacing"
+          ]
+        },
+        {
+          "answer": "wider traces or pours",
+          "why": "Lower resistance, less heat.",
+          "q": "Higher current generally needs…",
+          "options": [
+            "wider traces or pours",
+            "thinner traces always",
+            "only silk text",
+            "floating returns"
+          ]
+        },
+        {
+          "answer": "close to IC power pins",
+          "why": "Short loops.",
+          "q": "Decoupling capacitors should be…",
+          "options": [
+            "close to IC power pins",
+            "at the far corner always",
+            "optional art",
+            "only on the schematic never laid out"
+          ]
+        },
+        {
+          "answer": "provide short return paths",
+          "why": "Small loops, quieter circuits.",
+          "q": "A ground plane helps…",
+          "options": [
+            "provide short return paths",
+            "increase loop area on purpose",
+            "replace all capacitors",
+            "remove the need for VCC"
+          ]
+        },
+        {
+          "answer": "near the MCU with short traces",
+          "why": "Keep sensitive clocks tight.",
+          "q": "Crystals should sit…",
+          "options": [
+            "near the MCU with short traces",
+            "across the board on long antennas",
+            "on a separate unconnected PCB",
+            "only as silk drawings"
+          ]
+        },
+        {
+          "answer": "add resistance — use enough of them",
+          "why": "Parallel vias share current.",
+          "q": "Vias on power paths…",
+          "options": [
+            "add resistance — use enough of them",
+            "have zero resistance always",
+            "block DC",
+            "set logic HIGH"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "copper-pour",
+      "title": "Copper pour and planes",
+      "summary": "Fills, zones and stitching.",
+      "sections": [
+        {
+          "p": "A <b>copper pour</b> (zone) fills an area with copper tied to a net — often GND or a power rail. Pours lower impedance, help heat spreading and simplify routing of returns."
+        },
+        {
+          "h": "Thermal reliefs",
+          "p": "Pads in a pour may use thermal relief spokes so hand soldering is possible. Solid connections sink heat into the plane and can make soldering harder."
+        },
+        {
+          "h": "Stitching vias",
+          "p": "Multi-layer boards stitch ground pours with vias so return currents can change layers. Around board edges, via fences sometimes help EMC — with thought, not superstition."
+        },
+        {
+          "h": "Islands",
+          "p": "Unconnected copper islands can float and cause surprises — remove orphans or connect them deliberately. DRC/zone refill after edits."
+        }
+      ],
+      "practice": [
+        {
+          "answer": "GND or a power net",
+          "why": "Planes/pours need a net.",
+          "q": "A copper pour is often tied to…",
+          "options": [
+            "GND or a power net",
+            "a random unnamed net always",
+            "silk only",
+            "the logo bitmap"
+          ]
+        },
+        {
+          "answer": "make pads solderable despite plane heat sinking",
+          "why": "Spokes limit heat flow while soldering.",
+          "q": "Thermal reliefs exist mainly to…",
+          "options": [
+            "make pads solderable despite plane heat sinking",
+            "increase inductance unboundedly for fun",
+            "remove ground",
+            "etch the board number"
+          ]
+        },
+        {
+          "answer": "connect pours across layers",
+          "why": "Layer transitions for returns.",
+          "q": "Stitching vias help…",
+          "options": [
+            "connect pours across layers",
+            "cut all grounds",
+            "replace solder mask",
+            "set baud rate"
+          ]
+        },
+        {
+          "answer": "removed or deliberately tied down",
+          "why": "Avoid accidental radiators/antennas.",
+          "q": "Floating copper islands should be…",
+          "options": [
+            "removed or deliberately tied down",
+            "maximised always",
+            "powered from mains",
+            "used as antennas only by accident without thought"
+          ]
+        },
+        {
+          "answer": "lowering impedance vs skinny traces",
+          "why": "Wide copper carries current better.",
+          "q": "Pours help power delivery by…",
+          "options": [
+            "lowering impedance vs skinny traces",
+            "raising resistance on purpose",
+            "blocking DC",
+            "deleting decoupling needs entirely always"
+          ]
+        },
+        {
+          "answer": "refill zones and re-run DRC",
+          "why": "Keep copper in sync.",
+          "q": "After moving pours/tracks…",
+          "options": [
+            "refill zones and re-run DRC",
+            "ship immediately without checks",
+            "delete the ground net",
+            "ignore clearance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drc",
+      "title": "Design rule checks",
+      "summary": "Letting the computer find spacing mistakes.",
+      "sections": [
+        {
+          "p": "<b>DRC</b> (design rule check) compares your layout to constraints: clearance, track width, annular ring, hole size, courtyard overlap. Set rules to your fab's capabilities plus margin."
+        },
+        {
+          "h": "Fab capabilities",
+          "p": "A cheap proto house might allow 0.15 mm clearance and 0.15 mm tracks. Tighter needs cost more. Do not design to the absolute minimum on a first board without reason."
+        },
+        {
+          "h": "Unconnected copper / shorting",
+          "p": "DRC and connectivity checks find shorts between nets and unrouted ratsnest airwires. Clear every airwire before celebrating."
+        },
+        {
+          "h": "Silk and mask",
+          "p": "Silk on pads is a classic nuisance. Solder-mask expansion rules keep mask from covering pads. Run the checks your EDA offers for manufacturing layers too."
+        }
+      ],
+      "practice": [
+        {
+          "answer": "design rule check",
+          "why": "Automated geometry/electrical rules.",
+          "q": "DRC stands for…",
+          "options": [
+            "design rule check",
+            "direct resistance coupling",
+            "diode reverse clamp",
+            "drill radius constant"
+          ]
+        },
+        {
+          "answer": "your fab's process + margin",
+          "why": "Design for manufacturability.",
+          "q": "Rules should match…",
+          "options": [
+            "your fab's process + margin",
+            "wishful thinking only",
+            "mains wiring code exclusively",
+            "LED Vf"
+          ]
+        },
+        {
+          "answer": "an unfinished connection",
+          "why": "Still to route (or to connect via pour).",
+          "q": "An airwire in the ratsnest means…",
+          "options": [
+            "an unfinished connection",
+            "a completed pour",
+            "a silk line",
+            "a mounting hole"
+          ]
+        },
+        {
+          "answer": "it interferes with soldering",
+          "why": "Keep silk off pads.",
+          "q": "Silk on pads is bad because…",
+          "options": [
+            "it interferes with soldering",
+            "it improves wetting always",
+            "fabs require it on every pad",
+            "it replaces mask"
+          ]
+        },
+        {
+          "answer": "copper around a drilled hole",
+          "why": "Pad copper surrounding the hole.",
+          "q": "Annular ring refers to…",
+          "options": [
+            "copper around a drilled hole",
+            "flux chemistry",
+            "clock jitter",
+            "battery chemistry"
+          ]
+        },
+        {
+          "answer": "DRC errors and unrouted connections",
+          "why": "Fix first.",
+          "q": "Before ordering boards, clear…",
+          "options": [
+            "DRC errors and unrouted connections",
+            "only the schematic title",
+            "nothing at all",
+            "just the README"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fab-files",
+      "title": "Fab files and BOM",
+      "summary": "Gerbers, drill files and what to send.",
+      "sections": [
+        {
+          "p": "Fabricators need <b>Gerber</b> (or equivalent) layer plots, <b>drill</b> files, and usually a README noting layer stack, thickness and colour. Many shops also accept native KiCad/Eagle with caveats — Gerbers remain the lingua franca."
+        },
+        {
+          "h": "Layers",
+          "p": "Typical two-layer set: top copper, bottom copper, top/bottom silk, top/bottom mask, board outline, drills. Four-layer adds inner planes. Name files clearly."
+        },
+        {
+          "h": "BOM and CPL",
+          "p": "A <b>BOM</b> (bill of materials) lists every part to buy. For assembly services, a <b>CPL/centroid</b> file gives pick-and-place coordinates and rotations."
+        },
+        {
+          "h": "Check plots",
+          "p": "View Gerbers in a Gerber viewer before upload. Confirm outline, holes land on pads, and layers are not mirrored by mistake."
+        },
+        {
+          "code": "Send typically:\n  Gerbers + drill + stackup notes\n  BOM (for assembly)\n  Centroid/CPL (for SMT assembly)"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "each manufacturing layer's artwork",
+          "why": "Plots for fab cameras/plotters.",
+          "q": "Gerber files describe…",
+          "options": [
+            "each manufacturing layer's artwork",
+            "C source code",
+            "only the schematic PDF",
+            "flux type"
+          ]
+        },
+        {
+          "answer": "hole locations and sizes",
+          "why": "CNC drilling data.",
+          "q": "Drill files define…",
+          "options": [
+            "hole locations and sizes",
+            "silk fonts only",
+            "LED colours",
+            "baud rates"
+          ]
+        },
+        {
+          "answer": "the list of parts to purchase/assemble",
+          "why": "Bill of materials.",
+          "q": "A BOM is…",
+          "options": [
+            "the list of parts to purchase/assemble",
+            "a copper pour",
+            "a DRC error",
+            "a crystal package only"
+          ]
+        },
+        {
+          "answer": "catch mirrored/missing layers",
+          "why": "Viewer QA.",
+          "q": "View Gerbers before ordering to…",
+          "options": [
+            "catch mirrored/missing layers",
+            "increase board cost always",
+            "remove the need for drills",
+            "program the MCU"
+          ]
+        },
+        {
+          "answer": "centroid positions and rotations",
+          "why": "CPL/centroid file.",
+          "q": "Pick-and-place needs…",
+          "options": [
+            "centroid positions and rotations",
+            "only the box art",
+            "mains frequency",
+            "solder brand lore"
+          ]
+        },
+        {
+          "answer": "clear in the mechanical/outline layer",
+          "why": "Fabs cut to outline.",
+          "q": "Board outline must be…",
+          "options": [
+            "clear in the mechanical/outline layer",
+            "guessed by the fab from silk",
+            "optional always",
+            "drawn only in copper as shorts"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assembly",
+      "title": "Assembly basics",
+      "summary": "Hand stuff, stencil paste and order of operations.",
+      "sections": [
+        {
+          "p": "<b>Assembly</b> puts parts on the fabricated board. Hobbyists hand-solder; services use solder paste stencils, pick-and-place, and reflow ovens. Design choices (fiducials, spacing) affect how easy assembly is."
+        },
+        {
+          "h": "Hand assembly order",
+          "p": "Often: low parts first, then taller. Or all SMD reflow first, then through-hole. Polarised parts get double-checked before heat."
+        },
+        {
+          "h": "Stencils",
+          "p": "A stainless stencil aligns to pads; paste is squeegeed through apertures. Paste volume depends on aperture design — another reason footprints matter."
+        },
+        {
+          "h": "Inspection",
+          "p": "Check bridges, tombstoned passives, polarity marks and missing parts. Power up with current limit on a first article. Smoke is a teacher; prefer not to summon it."
+        },
+        {
+          "h": "Panelisation",
+          "p": "Small boards may be panelised with mouse bites or V-grooves. Add fiducials for machines. Ask the assembler what they need."
+        }
+      ],
+      "practice": [
+        {
+          "answer": "through a stencil onto pads",
+          "why": "Stencil printing.",
+          "q": "Solder paste is commonly applied…",
+          "options": [
+            "through a stencil onto pads",
+            "with a paint roller on silk",
+            "only after full reflow",
+            "into mounting holes only"
+          ]
+        },
+        {
+          "answer": "machines align the board",
+          "why": "Optical alignment marks.",
+          "q": "Fiducials help…",
+          "options": [
+            "machines align the board",
+            "humans read Boolean",
+            "increase inductance",
+            "set USB-C pinouts"
+          ]
+        },
+        {
+          "answer": "current-limited supply when possible",
+          "why": "Survive first mistakes.",
+          "q": "First power-up should use…",
+          "options": [
+            "current-limited supply when possible",
+            "unlimited car battery always",
+            "mains directly on 3.3 V rails",
+            "no ground"
+          ]
+        },
+        {
+          "answer": "a passive standing up on one pad",
+          "why": "Uneven paste/heat.",
+          "q": "Tombstoning refers to…",
+          "options": [
+            "a passive standing up on one pad",
+            "extra vias",
+            "silk text",
+            "a type of connector"
+          ]
+        },
+        {
+          "answer": "orientation checks before soldering",
+          "why": "Prevent reverse install.",
+          "q": "Polarised parts need…",
+          "options": [
+            "orientation checks before soldering",
+            "random placement",
+            "no markings",
+            "AC only"
+          ]
+        },
+        {
+          "answer": "hand soldering and inspection",
+          "why": "Design for humans too.",
+          "q": "Good spacing between parts helps…",
+          "options": [
+            "hand soldering and inspection",
+            "only the marketing photos",
+            "DRC fail on purpose",
+            "remove ground planes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stackup",
+      "title": "Layers and stackup",
+      "summary": "Two-layer vs four-layer and what changes.",
+      "sections": [
+        {
+          "p": "<b>Stackup</b> is how copper and insulating layers are ordered. A two-layer board has top and bottom copper. A four-layer board often puts signals on outside layers and continuous ground/power planes inside — quieter and easier for dense designs."
+        },
+        {
+          "h": "When to go four-layer",
+          "p": "Tight routing, fast edges, or picky analog sections benefit from planes. Cost is higher than two-layer but prototypes are still affordable. Controlled impedance needs specified stackup dielectric thickness."
+        },
+        {
+          "h": "Impedance (preview)",
+          "p": "USB, HDMI and RF traces may need 50 Ω or 90 Ω differential controlled impedance. That is a conversation with the fab's stackup chart — not a guess at track width alone."
+        },
+        {
+          "h": "Start simple",
+          "p": "Many first projects succeed on two-layer with a poured ground bottom and careful routing on top. Master that before chasing exotic RF stackups."
+        }
+      ],
+      "practice": [
+        {
+          "answer": "signal / plane / plane / signal",
+          "why": "Classic friendly stackup.",
+          "q": "A common four-layer idea is…",
+          "options": [
+            "signal / plane / plane / signal",
+            "silk / silk / silk / silk",
+            "only solder mask layers",
+            "four disconnected antennas"
+          ]
+        },
+        {
+          "answer": "return paths and shielding",
+          "why": "Planes quiet a board.",
+          "q": "Inner ground planes help…",
+          "options": [
+            "return paths and shielding",
+            "increase every loop to board size",
+            "replace all parts",
+            "remove DRC"
+          ]
+        },
+        {
+          "answer": "known stackup geometry + dielectric",
+          "why": "Width alone is not enough.",
+          "q": "Controlled impedance requires…",
+          "options": [
+            "known stackup geometry + dielectric",
+            "only silk colour",
+            "random width",
+            "no fab involvement"
+          ]
+        },
+        {
+          "answer": "pour ground and route carefully",
+          "why": "Many hobby boards succeed thus.",
+          "q": "Two-layer boards can still work well if you…",
+          "options": [
+            "pour ground and route carefully",
+            "ignore returns entirely",
+            "skip decoupling",
+            "cross every trace over slots"
+          ]
+        },
+        {
+          "answer": "the ordered copper/dielectric sandwich",
+          "why": "Layer cake of the PCB.",
+          "q": "Stackup means…",
+          "options": [
+            "the ordered copper/dielectric sandwich",
+            "the BOM sorted by price only",
+            "flux activation temp only",
+            "UART pin swap"
+          ]
+        },
+        {
+          "answer": "density/noise/impedance needs justify cost",
+          "why": "Use complexity when needed.",
+          "q": "Move to more layers when…",
+          "options": [
+            "density/noise/impedance needs justify cost",
+            "you want slower shipping only",
+            "LEDs are red",
+            "the schematic has a title"
+          ]
+        }
+      ]
+    }
+  ]
+}

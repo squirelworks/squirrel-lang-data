@@ -1,0 +1,727 @@
+{
+  "schema": "electronics-course@1",
+  "id": "digital",
+  "name": "Digital",
+  "title": "Logic, flip-flops and talking to microcontrollers",
+  "intro": "Digital electronics deals in discrete levels and timing. These lessons cover logic levels, gates, Boolean basics, flip-flops and clocks, then MCU pins and a first look at UART, SPI and I²C — enough to read a breakout-board hookup guide with confidence.",
+  "lessons": [
+    {
+      "id": "logic-levels",
+      "title": "Logic levels",
+      "summary": "HIGH, LOW, thresholds and voltage families.",
+      "sections": [
+        {
+          "p": "Digital pins speak in <b>levels</b>: a voltage band meaning 0 (LOW) and a band meaning 1 (HIGH). Between them sits an illegal/undefined region where behaviour is unreliable. Never leave a CMOS input floating — it can chatter and waste power."
+        },
+        {
+          "h": "Families",
+          "p": "5 V TTL and 3.3 V CMOS are common. A 5 V output can damage a 3.3 V-only input. A 3.3 V HIGH may be too low for an old 5 V TTL input's VIH minimum — check datasheets or use level shifters."
+        },
+        {
+          "h": "Noise margins",
+          "p": "VOL max and VIL max, VOH min and VIH min define noise margins. Strong drivers and short wires improve margins; long lines may need termination or slower edges."
+        },
+        {
+          "h": "Pull-ups and pull-downs",
+          "p": "A resistor to VCC or GND defines the level when a switch opens or an open-drain device floats. I²C relies on pull-ups; typical values are 2.2–10 kΩ depending on speed and capacitance."
+        },
+        {
+          "code": "Example 3.3 V CMOS (typical idea):\n  LOW  < ~0.8 V\n  HIGH > ~2.0 V\n  (check YOUR datasheet)\n\nFloating input = trouble"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "it can chatter and draw current unpredictably",
+          "why": "Define unused inputs.",
+          "q": "A floating CMOS input is risky because…",
+          "options": [
+            "it can chatter and draw current unpredictably",
+            "it always reads solid LOW forever",
+            "it charges batteries",
+            "it equals a perfect 0 Ω short"
+          ]
+        },
+        {
+          "answer": "damage the pin",
+          "why": "Respect absolute maximum ratings.",
+          "q": "5 V logic into a 3.3 V-only pin can…",
+          "options": [
+            "damage the pin",
+            "always be safe",
+            "convert automatically to I²C",
+            "raise VIH magically"
+          ]
+        },
+        {
+          "answer": "define HIGH when drivers release the bus",
+          "why": "Open-drain needs pull-ups.",
+          "q": "Pull-ups on I²C exist to…",
+          "options": [
+            "define HIGH when drivers release the bus",
+            "power the MCU from SDA",
+            "remove the need for ground",
+            "generate clocks from resistors alone"
+          ]
+        },
+        {
+          "answer": "undefined / unreliable",
+          "why": "Stay out of the middle.",
+          "q": "The region between valid LOW and HIGH is…",
+          "options": [
+            "undefined / unreliable",
+            "the best place to bias forever",
+            "called VCC",
+            "used for analog audio only"
+          ]
+        },
+        {
+          "answer": "how much noise you can tolerate and still read correctly",
+          "why": "Margins come from VOL/VIL and VOH/VIH gaps.",
+          "q": "Noise margin is about…",
+          "options": [
+            "how much noise you can tolerate and still read correctly",
+            "only solder temperature",
+            "LED brightness",
+            "battery mAh"
+          ]
+        },
+        {
+          "answer": "be too low to meet VIH",
+          "why": "Level shifting may be required.",
+          "q": "A 3.3 V HIGH into some 5 V TTL inputs may…",
+          "options": [
+            "be too low to meet VIH",
+            "always exceed 5 V",
+            "erase flash",
+            "replace the crystal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gates",
+      "title": "Logic gates",
+      "summary": "AND, OR, NOT, NAND, NOR, XOR.",
+      "sections": [
+        {
+          "p": "<b>Gates</b> compute Boolean functions on HIGH/LOW inputs. NOT inverts. AND is HIGH only if all inputs are HIGH. OR is HIGH if any input is HIGH. NAND and NOR are AND/OR with an inversion — they are universal building blocks."
+        },
+        {
+          "h": "XOR",
+          "p": "XOR is HIGH when inputs differ. Useful for comparison, parity and adders. XNOR is HIGH when inputs match."
+        },
+        {
+          "h": "CMOS packaging",
+          "p": "Chips like 74HC00 (quad NAND) still teach fundamentals. Inside MCUs, the same ideas appear as GPIO configurations and programmable logic."
+        },
+        {
+          "h": "Propagation delay",
+          "p": "Outputs do not change instantly. Gate delays stack in deep combinational chains and limit clock speed — flip-flops come next for sequential logic."
+        },
+        {
+          "code": "AND:  Y = A · B\nOR:   Y = A + B\nNOT:  Y = ¬A\nNAND: Y = ¬(A · B)\nXOR:  Y = A ⊕ B\n\nA B | AND OR XOR\n0 0 |  0   0  0\n0 1 |  0   1  1\n1 0 |  0   1  1\n1 1 |  1   1  0"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "all inputs are HIGH",
+          "why": "AND requires every input true.",
+          "q": "AND output is HIGH when…",
+          "options": [
+            "all inputs are HIGH",
+            "any input is HIGH",
+            "all inputs are LOW",
+            "inputs differ"
+          ]
+        },
+        {
+          "answer": "inverts the level",
+          "why": "NOT is inversion.",
+          "q": "NOT does what?",
+          "options": [
+            "inverts the level",
+            "ANDs two signals",
+            "stores a bit",
+            "makes AC"
+          ]
+        },
+        {
+          "answer": "AND followed by NOT",
+          "why": "NAND = inverted AND.",
+          "q": "NAND is…",
+          "options": [
+            "AND followed by NOT",
+            "OR followed by AND",
+            "only XOR",
+            "a capacitor"
+          ]
+        },
+        {
+          "answer": "inputs differ",
+          "why": "XOR detects difference.",
+          "q": "XOR is HIGH when…",
+          "options": [
+            "inputs differ",
+            "inputs are both HIGH only",
+            "inputs are both LOW only",
+            "never"
+          ]
+        },
+        {
+          "answer": "quad NAND gates",
+          "why": "Famous NAND package.",
+          "q": "74HC00 is classically…",
+          "options": [
+            "quad NAND gates",
+            "a voltage regulator",
+            "an OLED panel",
+            "a lithium charger"
+          ]
+        },
+        {
+          "answer": "slow chains limit timing",
+          "why": "Delays accumulate.",
+          "q": "Propagation delay matters because…",
+          "options": [
+            "slow chains limit timing",
+            "gates have zero delay always",
+            "Boolean ignores time",
+            "power supplies remove delay"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boolean",
+      "title": "Boolean basics",
+      "summary": "Truth, simplification, and De Morgan.",
+      "sections": [
+        {
+          "p": "<b>Boolean algebra</b> manipulates true/false values. Write expressions with AND, OR, NOT. Simplifying logic can mean fewer gates, less delay and less power — or clearer firmware if statements."
+        },
+        {
+          "h": "Identities",
+          "p": "A + 0 = A, A · 1 = A, A + 1 = 1, A · 0 = 0, A + A = A, A · A = A, A + ¬A = 1, A · ¬A = 0. These are the reflexes you use constantly."
+        },
+        {
+          "h": "De Morgan",
+          "p": "¬(A · B) = ¬A + ¬B and ¬(A + B) = ¬A · ¬B. Bubble pushing on schematics is De Morgan in pictures: NANDs can implement other functions."
+        },
+        {
+          "h": "From words to gates",
+          "p": "\"Alarm if door open AND armed\" is AND. \"Fault if sensor A OR sensor B\" is OR. Translate requirements before wiring or coding."
+        },
+        {
+          "code": "De Morgan:\n  NOT(A AND B) = (NOT A) OR (NOT B)\n  NOT(A OR B)  = (NOT A) AND (NOT B)\n\nA OR 0 = A\nA AND 1 = A"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "0",
+          "why": "AND with 0 forces 0.",
+          "q": "A AND 0 equals…",
+          "options": ["0", "1", "A", "NOT A"]
+        },
+        {
+          "answer": "1",
+          "why": "OR with 1 forces 1.",
+          "q": "A OR 1 equals…",
+          "options": ["1", "0", "A", "NOT A"]
+        },
+        {
+          "answer": "(NOT A) OR (NOT B)",
+          "why": "Break the bar and change AND to OR.",
+          "q": "De Morgan: NOT(A AND B) equals…",
+          "options": ["(NOT A) OR (NOT B)", "(NOT A) AND (NOT B)", "A OR B", "A AND B"]
+        },
+        {
+          "answer": "0",
+          "why": "A value and its complement cannot both be true.",
+          "q": "A AND NOT A equals…",
+          "options": ["0", "1", "A", "A OR 1"]
+        },
+        {
+          "answer": "reduce gates / clarify firmware",
+          "why": "Less logic, clearer intent.",
+          "q": "Simplifying Boolean expressions can…",
+          "options": [
+            "reduce gates / clarify firmware",
+            "increase undefined voltages on purpose",
+            "remove the clock forever",
+            "replace power rails"
+          ]
+        },
+        {
+          "answer": "an OR gate (or || in firmware)",
+          "why": "OR matches that requirement.",
+          "q": "\"Fault if A OR B\" maps to…",
+          "options": [
+            "an OR gate (or || in firmware)",
+            "only an AND gate",
+            "a capacitor",
+            "UART baud"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flip-flops",
+      "title": "Flip-flops",
+      "summary": "One-bit memory and edge-triggered state.",
+      "sections": [
+        {
+          "p": "Combinational logic forgets when inputs change. A <b>flip-flop</b> stores a bit. A common D flip-flop copies D to Q on a clock edge and holds it until the next edge."
+        },
+        {
+          "h": "SR latch (idea)",
+          "p": "Set/Reset latches are level-sensitive memory cells. They teach feedback, but edge-triggered flip-flops are what most clocked designs use to avoid transparent races."
+        },
+        {
+          "h": "Registers",
+          "p": "N flip-flops side by side make an N-bit register. MCUs are packed with registers: configuration bits and data you read/write in software are flip-flops underneath."
+        },
+        {
+          "h": "Setup and hold",
+          "p": "D must be stable a little before (setup) and after (hold) the clock edge. Violate timing and you get metastability — rare but real on async inputs; synchronize external async signals."
+        },
+        {
+          "code": "D flip-flop (rising edge):\n  D ----|>D  Q----\n  CLK ---|>\n\nQ becomes D when CLK rises; then holds."
+        }
+      ],
+      "practice": [
+        {
+          "answer": "one bit, updated on a clock edge",
+          "why": "Edge-triggered 1-bit memory.",
+          "q": "A D flip-flop stores…",
+          "options": [
+            "one bit, updated on a clock edge",
+            "unlimited analog voltage",
+            "only AC waveforms",
+            "solder temperature"
+          ]
+        },
+        {
+          "answer": "several flip-flops in parallel",
+          "why": "One flop per bit.",
+          "q": "A register is basically…",
+          "options": [
+            "several flip-flops in parallel",
+            "a single resistor",
+            "an LED",
+            "a fuse"
+          ]
+        },
+        {
+          "answer": "before the clock edge",
+          "why": "Meet setup or risk bad capture.",
+          "q": "Setup time means D must be stable…",
+          "options": [
+            "before the clock edge",
+            "a minute after power fails",
+            "only during reset",
+            "never"
+          ]
+        },
+        {
+          "answer": "synchronized (e.g. two flip-flops)",
+          "why": "Reduce metastability risk.",
+          "q": "Async inputs into clocked logic should be…",
+          "options": [
+            "synchronized (e.g. two flip-flops)",
+            "tied to mid-supply",
+            "driven at 230 V",
+            "left floating"
+          ]
+        },
+        {
+          "answer": "remember state",
+          "why": "That is sequential logic.",
+          "q": "Unlike combinational logic, flip-flops…",
+          "options": [
+            "remember state",
+            "cannot hold bits",
+            "ignore clocks always",
+            "replace power supplies"
+          ]
+        },
+        {
+          "answer": "a latch (level-sensitive), not an edge flop",
+          "why": "Transparent latches differ from edge flops.",
+          "q": "Q following D only while CLK is high describes…",
+          "options": [
+            "a latch (level-sensitive), not an edge flop",
+            "a perfect crystal",
+            "NAND only",
+            "UART"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clocks",
+      "title": "Clocks and timing",
+      "summary": "Edges that step digital systems forward.",
+      "sections": [
+        {
+          "p": "A <b>clock</b> is a periodic signal whose edges advance synchronous logic. Frequency is in hertz: a 16 MHz crystal means 16 million cycles per second. Period T = 1/f."
+        },
+        {
+          "h": "Sources",
+          "p": "Crystals / oscillators are accurate. RC oscillators are cheaper and less accurate. MCUs often boot on an internal oscillator then switch to a crystal when configured."
+        },
+        {
+          "h": "Clock domains",
+          "p": "Signals crossing between differently clocked regions need careful synchronisation. Hobby boards hide this; FPGA and SoC work confront it daily."
+        },
+        {
+          "h": "Jitter and edges",
+          "p": "Clean, monotonic edges matter. Ringing from long wires can double-clock a pin. Series damping resistors and short traces help."
+        },
+        {
+          "code": "f = 16 MHz  →  T = 62.5 ns\n\nMCU: crystal + load caps → OSC pins\nInternal osc: easier, less accurate"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "1 / f",
+          "why": "T = 1/f.",
+          "q": "Period T equals…",
+          "options": ["1 / f", "f × 2", "f / 2π always as definition", "RC only"]
+        },
+        {
+          "answer": "62.5 ns",
+          "why": "1/16e6 = 62.5e-9 s.",
+          "q": "A 16 MHz clock has period…",
+          "options": ["62.5 ns", "16 s", "16 µs", "1 ms"]
+        },
+        {
+          "answer": "frequency-accurate references",
+          "why": "Stable frequency.",
+          "q": "Crystals are used because they are…",
+          "options": [
+            "frequency-accurate references",
+            "perfect current sources",
+            "LED drivers",
+            "pull-up resistors"
+          ]
+        },
+        {
+          "answer": "edges bounce around the threshold",
+          "why": "Clean up edges / shorten wires.",
+          "q": "Double-clocking from ringing is a risk when…",
+          "options": [
+            "edges bounce around the threshold",
+            "VCC is exact",
+            "only DC is present",
+            "software prints Hello"
+          ]
+        },
+        {
+          "answer": "clock edges",
+          "why": "That is the sync discipline.",
+          "q": "Synchronous logic advances mainly on…",
+          "options": [
+            "clock edges",
+            "random solder blobs",
+            "LED colour changes",
+            "battery chemistry alone"
+          ]
+        },
+        {
+          "answer": "convenient but less accurate than crystals",
+          "why": "Trade convenience for accuracy.",
+          "q": "Internal MCU oscillators are typically…",
+          "options": [
+            "convenient but less accurate than crystals",
+            "always better than ovenized references",
+            "illegal to use",
+            "exactly 0 ppm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mcu-pins",
+      "title": "MCU pins (GPIO)",
+      "summary": "Inputs, outputs, and not frying the chip.",
+      "sections": [
+        {
+          "p": "<b>GPIO</b> (general-purpose input/output) pins are software-configurable digital pins on a microcontroller. As outputs they drive HIGH/LOW (within current limits). As inputs they read levels — often with optional pull-ups."
+        },
+        {
+          "h": "Current limits",
+          "p": "A pin might source/sink 5–20 mA absolute max; budgets per port and per chip apply. Drive LEDs with resistors; drive motors and relays with transistors/MOSFETs/drivers."
+        },
+        {
+          "h": "Alternate functions",
+          "p": "The same ball/pad may be UART TX, PWM, ADC input or GPIO. Pinmux tables in the datasheet tell you what each pin can do. Conflict = frustration."
+        },
+        {
+          "h": "Analog and open-drain",
+          "p": "ADC pins want clean analog references and often quiet layout. Open-drain outputs can share lines with pull-ups (I²C-style)."
+        },
+        {
+          "h": "Absolute maximums",
+          "p": "Voltage above VDD or below ground (beyond clamp ratings) kills pins. Level-shift external 5 V devices when using a 3.3 V MCU."
+        },
+        {
+          "code": "LED: GPIO ---[R]---|>|--- GND   (check sink/source rating)\nButton: VCC ---[sw]--- GPIO ---[pull-down]--- GND\n     or: GPIO with internal pull-up, sw to GND"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "general-purpose input/output",
+          "why": "Configurable digital pins.",
+          "q": "GPIO stands for…",
+          "options": [
+            "general-purpose input/output",
+            "ground-power inverted output",
+            "gate-pass inductive oscillator",
+            "gold-plated iron oxide"
+          ]
+        },
+        {
+          "answer": "current and inductive spikes exceed pin ratings",
+          "why": "Use a driver stage.",
+          "q": "Motors on a GPIO directly are a bad idea because…",
+          "options": [
+            "current and inductive spikes exceed pin ratings",
+            "motors need floating gates",
+            "GPIO cannot switch LOW",
+            "Ohm's law fails"
+          ]
+        },
+        {
+          "answer": "pins share multiple possible functions",
+          "why": "Choose functions carefully.",
+          "q": "Pinmux matters because…",
+          "options": [
+            "pins share multiple possible functions",
+            "all pins are only ADC",
+            "silk-screen sets baud rate",
+            "soldering defines SPI"
+          ]
+        },
+        {
+          "answer": "buttons to ground and idle HIGH levels",
+          "why": "Common button wiring.",
+          "q": "Internal pull-ups help with…",
+          "options": [
+            "buttons to ground and idle HIGH levels",
+            "generating 12 V from 3.3 V",
+            "heatsinking CPUs",
+            "replacing crystals"
+          ]
+        },
+        {
+          "answer": "permanent damage",
+          "why": "Use shifters / 5 V-tolerant pins only if rated.",
+          "q": "Driving 5 V into a 3.3 V MCU pin risks…",
+          "options": [
+            "permanent damage",
+            "faster code",
+            "more flash",
+            "automatic level shifting always"
+          ]
+        },
+        {
+          "answer": "a series resistor (or constant current)",
+          "why": "Limit current.",
+          "q": "An LED on GPIO still needs…",
+          "options": [
+            "a series resistor (or constant current)",
+            "no resistor ever",
+            "AC coupling only",
+            "a transformer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "serial-buses",
+      "title": "UART, SPI and I²C at a glance",
+      "summary": "Three ways chips talk on a board.",
+      "sections": [
+        {
+          "p": "Board-level serial links move bytes without a parallel cable of address lines. Three workhorses: <b>UART</b>, <b>SPI</b> and <b>I²C</b>."
+        },
+        {
+          "h": "UART",
+          "p": "Two signal wires: TX and RX (plus ground). Asynchronous: both sides agree baud (e.g. 115200). No clock wire. Great for debug consoles and GPS modules. Point-to-point unless you add extra hardware."
+        },
+        {
+          "h": "SPI",
+          "p": "Clock (SCK), controller-out (MOSI), controller-in (MISO), and a chip-select per device. Fast and simple electrically; wire count grows with device count. Mode (CPOL/CPHA) must match the peripheral."
+        },
+        {
+          "h": "I²C",
+          "p": "Two wires: SDA and SCL, both open-drain with pull-ups. Addresses select devices. Fewer pins, shared bus, but capacitance and pull-ups limit speed; acknowledge bits matter when debugging."
+        },
+        {
+          "code": "UART:  MCU TX -> Dev RX ; MCU RX <- Dev TX ; GND\nSPI:   SCK, MOSI, MISO, CSn\nI2C:   SDA, SCL (+ pull-ups to VCC), 7-bit addr"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "baud rate (and frame format)",
+          "why": "Async links share timing by convention.",
+          "q": "UART needs agreement on…",
+          "options": [
+            "baud rate (and frame format)",
+            "only chip-select lines",
+            "I²C addresses",
+            "solder alloy"
+          ]
+        },
+        {
+          "answer": "SCK, MOSI, MISO, and CS",
+          "why": "Classic four-wire SPI.",
+          "q": "SPI commonly uses…",
+          "options": [
+            "SCK, MOSI, MISO, and CS",
+            "only SDA/SCL",
+            "TX/RX without clocks always",
+            "one wire total"
+          ]
+        },
+        {
+          "answer": "open-drain with pull-ups",
+          "why": "Devices release the line to go HIGH.",
+          "q": "I²C lines are typically…",
+          "options": [
+            "open-drain with pull-ups",
+            "push-pull without pull-ups always",
+            "coax 75 Ω",
+            "mains referenced"
+          ]
+        },
+        {
+          "answer": "unique addresses",
+          "why": "Address selects the target.",
+          "q": "Multiple I²C devices share a bus using…",
+          "options": [
+            "unique addresses",
+            "unique baud crystals only",
+            "separate TX pins for each bit",
+            "different ground voltages intentionally"
+          ]
+        },
+        {
+          "answer": "higher speed / simple shifting",
+          "why": "SPI is fast and straightforward.",
+          "q": "SPI tends to be chosen when you want…",
+          "options": [
+            "higher speed / simple shifting",
+            "fewest possible pins always",
+            "long multi-drop cables like RS-485 automatically",
+            "wireless only"
+          ]
+        },
+        {
+          "answer": "signal voltages need a common reference",
+          "why": "Return path matters.",
+          "q": "A shared ground is required because…",
+          "options": [
+            "signal voltages need a common reference",
+            "UART invents its own ground in the air",
+            "SPI runs on light alone",
+            "I²C uses only magnetic coupling"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pull-open-drain",
+      "title": "Open-drain and wired logic",
+      "summary": "Shared lines, pull-ups, and why release ≠ drive HIGH.",
+      "sections": [
+        {
+          "p": "<b>Open-drain</b> (or open-collector) outputs can pull a wire LOW actively but do not drive HIGH; a pull-up resistor does that. Several devices can share one wire: any device may pull LOW; the line goes HIGH only when all release."
+        },
+        {
+          "h": "Wired-AND",
+          "p": "That shared behaviour is wired-AND for active-high logic: the bus is HIGH only if everyone agrees. I²C ACK and clock stretching build on this physical layer."
+        },
+        {
+          "h": "Choosing pull-up value",
+          "p": "Too weak (large R) and rise times get slow on capacitive buses. Too strong (small R) and devices struggle to pull LOW, wasting current. Start near 4.7 kΩ for short 100 kHz I²C; adjust with a scope if you have one."
+        },
+        {
+          "h": "Level shifting",
+          "p": "Open-drain buses level-shift with MOSFET discrete shifters or dedicated chips — a common 3.3 V ↔ 5 V trick on SDA/SCL."
+        },
+        {
+          "code": "VCC ---[4.7k]---+---- bus wire ----+\n               |                  |\n            [od drv]           [od drv]\n               |                  |\n              GND                GND"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "LOW actively; HIGH via pull-up",
+          "why": "That is open-drain.",
+          "q": "Open-drain outputs drive…",
+          "options": [
+            "LOW actively; HIGH via pull-up",
+            "HIGH actively only",
+            "both rails strongly always",
+            "AC mains"
+          ]
+        },
+        {
+          "answer": "may safely share if only pulling LOW",
+          "why": "Wired-AND style sharing.",
+          "q": "Several open-drain devices on one wire…",
+          "options": [
+            "may safely share if only pulling LOW",
+            "will short VCC if any pulls LOW",
+            "need unique TX resistors to ground only",
+            "cannot coexist"
+          ]
+        },
+        {
+          "answer": "slow the rising edge",
+          "why": "RC rise time grows with R.",
+          "q": "A too-large I²C pull-up tends to…",
+          "options": [
+            "slow the rising edge",
+            "speed edges unboundedly",
+            "remove ACKs magically",
+            "raise VCC"
+          ]
+        },
+        {
+          "answer": "make LOW harder / waste current",
+          "why": "Drivers must overcome the pull-up.",
+          "q": "A too-small pull-up tends to…",
+          "options": [
+            "make LOW harder / waste current",
+            "always improve signal integrity with no downside",
+            "delete capacitance",
+            "stop needing ground"
+          ]
+        },
+        {
+          "answer": "a device can pull SDA LOW on the ACK bit",
+          "why": "Open-drain ACK.",
+          "q": "I²C ACK pulses work because…",
+          "options": [
+            "a device can pull SDA LOW on the ACK bit",
+            "UART baud creates ACKs",
+            "SPI CS invents I²C",
+            "pull-ups store henries"
+          ]
+        },
+        {
+          "answer": "open-drain behaviour with pull-ups on each side",
+          "why": "Classic bidirectional shifter.",
+          "q": "MOSFET level shifters on SDA/SCL exploit…",
+          "options": [
+            "open-drain behaviour with pull-ups on each side",
+            "push-pull fighting 5 V and 3.3 V hard",
+            "transformer isolation only",
+            "LED optical links only"
+          ]
+        }
+      ]
+    }
+  ]
+}

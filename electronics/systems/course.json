@@ -1,0 +1,657 @@
+{
+  "schema": "electronics-course@1",
+  "id": "systems",
+  "name": "Systems",
+  "title": "Power, noise, batteries and embedded overview",
+  "intro": "Parts and boards become systems when power, grounding and noise enter the story. These lessons introduce supplies, grounding, noise coupling, EMC intuition, batteries and a map of embedded systems — how hardware and firmware share responsibility.",
+  "lessons": [
+    {
+      "id": "power-supplies",
+      "title": "Power supplies",
+      "summary": "Linear vs switching, and clean rails.",
+      "sections": [
+        {
+          "p": "Circuits need energy at the right voltage. A <b>linear regulator</b> drops excess voltage as heat (simple, quiet). A <b>switching regulator</b> chops and filters to waste less heat (efficient, noisier if poorly laid out)."
+        },
+        {
+          "h": "Dropout",
+          "p": "Linear regulators need Vin above Vout by a dropout margin. An LDO (low dropout) might hold 3.3 V from 3.6 V; an old 7805 needs more headroom above 5 V."
+        },
+        {
+          "h": "Heat",
+          "p": "Linear: P ≈ (Vin − Vout) × I. 12 V in to 5 V at 0.5 A wastes ~3.5 W — that needs a heatsink or a rethink toward a buck switcher."
+        },
+        {
+          "h": "Switchers",
+          "p": "Buck (step-down), boost (step-up), buck-boost… Follow the datasheet layout: short hot loops, recommended inductors/caps. A bad switcher layout radiates noise into everything."
+        },
+        {
+          "code": "Linear:  Vin --> LDO --> Vout   heat ≈ (Vin-Vout)*I\nBuck:    Vin --> switcher+L+C --> Vout  (efficient)"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "(Vin−Vout)×I as heat",
+          "why": "Dropout voltage times current.",
+          "q": "Linear regulators dissipate…",
+          "options": [
+            "(Vin−Vout)×I as heat",
+            "zero heat always",
+            "only magnetic energy",
+            "light exclusively"
+          ]
+        },
+        {
+          "answer": "efficiency",
+          "why": "Less waste heat.",
+          "q": "Switching regulators are chosen mainly for…",
+          "options": [
+            "efficiency",
+            "maximum heat",
+            "removing inductors",
+            "eliminating capacitors"
+          ]
+        },
+        {
+          "answer": "low-dropout linear regulator",
+          "why": "Works with small Vin−Vout.",
+          "q": "LDO means…",
+          "options": [
+            "low-dropout linear regulator",
+            "large discrete oscillator",
+            "logic diode output",
+            "lithium discharge only"
+          ]
+        },
+        {
+          "answer": "3.5 W",
+          "why": "7 V × 0.5 A = 3.5 W.",
+          "q": "12 V → 5 V at 0.5 A linearly wastes about…",
+          "options": ["3.5 W", "0 W", "60 W", "0.5 W"]
+        },
+        {
+          "answer": "step voltage down efficiently",
+          "why": "Buck = step-down switcher.",
+          "q": "Buck converters…",
+          "options": [
+            "step voltage down efficiently",
+            "only step up",
+            "are always linear",
+            "forbid inductors"
+          ]
+        },
+        {
+          "answer": "poor layout radiates noise / hurts regulation",
+          "why": "Hot loops must be tight.",
+          "q": "Switcher layout matters because…",
+          "options": [
+            "poor layout radiates noise / hurts regulation",
+            "inductors ignore geometry",
+            "copper cannot carry switching current",
+            "DRC disables switchers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grounding",
+      "title": "Grounding",
+      "summary": "Reference nodes, star points and ground loops.",
+      "sections": [
+        {
+          "p": "<b>Ground</b> is the reference node your voltages are measured against — not mystical earth magic on a battery gadget. On a PCB it is usually a pour or plane. Poor grounding shows up as noise, resets and \"impossible\" analog readings."
+        },
+        {
+          "h": "Star vs plane",
+          "p": "A star ground joins noisy and sensitive returns at one point. A solid plane is often better for high-speed digital if not shredded by slots. Mixed designs may split analog/digital regions that meet at a single bridge."
+        },
+        {
+          "h": "Ground loops",
+          "p": "Multiple paths between grounded points can pick up interference. Audio systems hum; sensor systems drift. Isolation, careful cabling and single-point bonds are tools."
+        },
+        {
+          "h": "Earth vs circuit ground",
+          "p": "Mains earth is a safety conductor. Circuit GND may connect to earth through a PSU — or float on a battery. Know which you have before probing with earthed scopes (scope-grounding mistakes are a classic smoke source on mains-referenced gear)."
+        },
+        {
+          "h": "Safety note",
+          "p": "Do not defeat safety earth on mains equipment. Battery-powered learning kits avoid most of these hazards — stay there until you train for mains work."
+        }
+      ],
+      "practice": [
+        {
+          "answer": "the voltage reference node",
+          "why": "Measurements need a reference.",
+          "q": "Circuit ground is primarily…",
+          "options": [
+            "the voltage reference node",
+            "always identical to soil earth",
+            "a type of fuse",
+            "an LED colour"
+          ]
+        },
+        {
+          "answer": "giving low-impedance returns",
+          "why": "Planes keep returns short.",
+          "q": "A ground plane helps by…",
+          "options": [
+            "giving low-impedance returns",
+            "maximising loop area",
+            "removing the need for VCC",
+            "storing water"
+          ]
+        },
+        {
+          "answer": "hum and interference",
+          "why": "Loop area picks up noise.",
+          "q": "Ground loops can cause…",
+          "options": [
+            "hum and interference",
+            "perfect ADC readings always",
+            "higher solder melting points",
+            "faster crystals"
+          ]
+        },
+        {
+          "answer": "create dangerous shorts via the probe ground",
+          "why": "Know your references.",
+          "q": "Probing mains-referenced circuits with an earthed scope can…",
+          "options": [
+            "create dangerous shorts via the probe ground",
+            "always be perfectly safe",
+            "charge Li-ion safely",
+            "replace isolation transformers"
+          ]
+        },
+        {
+          "answer": "carefully, often meeting at one point",
+          "why": "Controlled joining beats accidental loops.",
+          "q": "Splitting analog/digital grounds is done…",
+          "options": [
+            "carefully, often meeting at one point",
+            "by never connecting them ever in any design",
+            "with antenna coils only",
+            "using solder mask as a conductor"
+          ]
+        },
+        {
+          "answer": "floating circuit ground relative to earth",
+          "why": "No earth wire on many portables.",
+          "q": "Battery gadgets often have…",
+          "options": [
+            "floating circuit ground relative to earth",
+            "mandatory earth stakes",
+            "no reference node at all",
+            "only AC grounds"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noise",
+      "title": "Noise coupling",
+      "summary": "How unwanted signals sneak in.",
+      "sections": [
+        {
+          "p": "<b>Noise</b> is any unwanted electrical disturbance. It couples by conduction along wires, by electric fields (capacitive coupling), by magnetic fields (inductive coupling), or as radio waves. Debugging starts by asking which path is plausible."
+        },
+        {
+          "h": "Conducted",
+          "p": "Motors and relays put spikes on shared supplies. Decoupling, separate supplies and snubbers help. Measure at the victim with a scope relative to a sensible ground."
+        },
+        {
+          "h": "Radiated / coupled",
+          "p": "Long parallel wires form accidental transformers and capacitors. Twist pairs, shorten loops, separate sensitive analog from noisy digitals/PWM cables."
+        },
+        {
+          "h": "Bypass and filtering",
+          "p": "0.1 µF near IC power pins handles fast edges; bulk electrolytics/ceramics handle slower demand. Ferrite beads and RC snubbers tame specific bands — measure, don't only sprinkle."
+        },
+        {
+          "code": "Victim ADC <--coupled--> motor PWM cable\nFix ideas: separate returns, twist, filter, distance,\n           snubber on motor, star power feeds"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "electric fields between conductors",
+          "why": "dV/dt through stray C.",
+          "q": "Capacitive coupling involves…",
+          "options": [
+            "electric fields between conductors",
+            "only solder chemistry",
+            "nuclear decay",
+            "baud rate tables"
+          ]
+        },
+        {
+          "answer": "magnetic fields / loop area",
+          "why": "di/dt through mutual inductance.",
+          "q": "Inductive coupling involves…",
+          "options": [
+            "magnetic fields / loop area",
+            "only silk-screen ink",
+            "LED colour",
+            "file names"
+          ]
+        },
+        {
+          "answer": "supply bounce from fast current demand",
+          "why": "Local charge reservoir.",
+          "q": "Decoupling caps near ICs fight…",
+          "options": [
+            "supply bounce from fast current demand",
+            "crystal packaging",
+            "solder alloy choice",
+            "enclosure paint"
+          ]
+        },
+        {
+          "answer": "reduces loop area / pickup",
+          "why": "Classic cable hygiene.",
+          "q": "Twisting a signal with its return…",
+          "options": [
+            "reduces loop area / pickup",
+            "increases antenna gain always",
+            "removes the need for ground",
+            "doubles voltage"
+          ]
+        },
+        {
+          "answer": "conducted noise",
+          "why": "Noise on the wires.",
+          "q": "Shared supply spikes from motors are…",
+          "options": [
+            "conducted noise",
+            "always radiated light only",
+            "boolean errors",
+            "DRC failures"
+          ]
+        },
+        {
+          "answer": "how is it coupling into the victim?",
+          "why": "Path matters.",
+          "q": "A first debug question for noise is…",
+          "options": [
+            "how is it coupling into the victim?",
+            "which font is on the silk?",
+            "is Ohm's law false?",
+            "did copper change element?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "emc",
+      "title": "EMC intuition",
+      "summary": "Not failing emissions or immunity tests — in spirit.",
+      "sections": [
+        {
+          "p": "<b>EMC</b> (electromagnetic compatibility) means your device neither emits too much interference nor misbehaves in the presence of interference. Formal testing uses standards; intuition still helps hobby and product design."
+        },
+        {
+          "h": "Emissions",
+          "p": "Fast edges and large loop areas radiate. Slow edges when you can, small loops, filters on cables, and solid return planes cut emissions. Cables are antennas."
+        },
+        {
+          "h": "Immunity",
+          "p": "ESD into a connector, radiated RF from a phone, conducted surges on power — design margins, TVS diodes, filtering and watchdog timers improve survival."
+        },
+        {
+          "h": "Practical mindset",
+          "p": "You may not own a TEM cell, but you can keep loops small, terminate cables sensibly, and avoid spraying 50 MHz harmonics from a sloppy switcher layout."
+        },
+        {
+          "h": "Safety vs EMC",
+          "p": "Safety isolation and creepage are separate from EMC filters. Mains designs need both — and trained practice. Stay on SELV/low-voltage projects while learning."
+        }
+      ],
+      "practice": [
+        {
+          "answer": "emissions and immunity",
+          "why": "Don't emit too much; don't wilt from others.",
+          "q": "EMC is about…",
+          "options": [
+            "emissions and immunity",
+            "only solder temperature",
+            "only LED efficiency",
+            "only BOM cost"
+          ]
+        },
+        {
+          "answer": "antennas",
+          "why": "Long wires radiate/receive.",
+          "q": "Cables often act as…",
+          "options": [
+            "antennas",
+            "perfect Faraday bricks",
+            "crystal ovens",
+            "power meters"
+          ]
+        },
+        {
+          "answer": "reduces radiation and pickup",
+          "why": "Loop area is a lever.",
+          "q": "Smaller loop area generally…",
+          "options": [
+            "reduces radiation and pickup",
+            "increases emissions always",
+            "removes the need for ground",
+            "slows light"
+          ]
+        },
+        {
+          "answer": "clamping ESD/transients on I/O",
+          "why": "Transient protection.",
+          "q": "TVS diodes are often used for…",
+          "options": [
+            "clamping ESD/transients on I/O",
+            "generating clocks",
+            "raising baud",
+            "etching PCBs"
+          ]
+        },
+        {
+          "answer": "create more high-frequency content",
+          "why": "Slower edges can be kinder.",
+          "q": "Fast edges tend to…",
+          "options": [
+            "create more high-frequency content",
+            "always reduce EMI",
+            "eliminate harmonics",
+            "remove the need for returns"
+          ]
+        },
+        {
+          "answer": "low-voltage projects before mains EMC/safety designs",
+          "why": "Skills before hazards.",
+          "q": "While learning, prefer…",
+          "options": [
+            "low-voltage projects before mains EMC/safety designs",
+            "open mains PSUs on the carpet",
+            "defeating earth \"for measurements\"",
+            "unfiltered motor leads around ADCs for fun"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batteries",
+      "title": "Batteries",
+      "summary": "Cells, packs, charging and safe handling.",
+      "sections": [
+        {
+          "p": "<b>Batteries</b> store chemical energy. Alkaline AA cells are simple for learning. <b>Li-ion/LiPo</b> packs offer high energy density but need proper charge circuits and gentle handling. <b>Warning:</b> shorted or punctured lithium cells can catch fire."
+        },
+        {
+          "h": "Voltage and capacity",
+          "p": "Nominal voltage × amp-hours ≈ watt-hours (rough). A 3.7 V 2 Ah cell is about 7.4 Wh. Capacity depends on discharge rate and temperature."
+        },
+        {
+          "h": "Charging",
+          "p": "Lithium cells need CC/CV chargers and usually protection circuits (PCM/BMS). Do not trickle-charge Li-ion like NiMH. Never charge unattended on a flammable surface."
+        },
+        {
+          "h": "Series and parallel",
+          "p": "Series adds voltage; parallel adds capacity — but cells must be matched and properly managed. Random parallel of unknown scrap cells is a bad idea."
+        },
+        {
+          "h": "Storage",
+          "p": "Store LiPo partly charged in a safe bag/container. Recycle damaged packs at proper facilities — do not bin them in household trash."
+        }
+      ],
+      "practice": [
+        {
+          "answer": "a proper CC/CV charger / BMS",
+          "why": "Chemistry demands control.",
+          "q": "Li-ion charging should use…",
+          "options": [
+            "a proper CC/CV charger / BMS",
+            "a bare 12 V car battery across one cell",
+            "unlimited current forever",
+            "AC mains on the cell tabs"
+          ]
+        },
+        {
+          "answer": "pack voltage",
+          "why": "Voltages add in series.",
+          "q": "Series cells increase…",
+          "options": [
+            "pack voltage",
+            "only capacity, never voltage",
+            "solder melting point",
+            "baud rate"
+          ]
+        },
+        {
+          "answer": "retired and recycled properly",
+          "why": "Swelling = end of life.",
+          "q": "A puffed LiPo should be…",
+          "options": [
+            "retired and recycled properly",
+            "punctured outdoors for fun",
+            "charged hotter",
+            "used as a heatsink"
+          ]
+        },
+        {
+          "answer": "they are simple and relatively forgiving",
+          "why": "Good beginner energy source.",
+          "q": "Alkaline AA cells are handy for learning because…",
+          "options": [
+            "they are simple and relatively forgiving",
+            "they need BMS balancing always",
+            "they are 48 V nominal",
+            "they are rechargeable like Li-ion without caveats"
+          ]
+        },
+        {
+          "answer": "huge current / fire risk",
+          "why": "Energy dumps fast.",
+          "q": "Shorting a lithium pack is dangerous because…",
+          "options": [
+            "huge current / fire risk",
+            "voltage becomes safer",
+            "capacity increases",
+            "ESD disappears"
+          ]
+        },
+        {
+          "answer": "V × Ah",
+          "why": "Order-of-magnitude pack energy.",
+          "q": "Rough energy in Wh is…",
+          "options": ["V × Ah", "V / Ah", "A × Ω only", "C × R"]
+        }
+      ]
+    },
+    {
+      "id": "embedded",
+      "title": "Embedded systems overview",
+      "summary": "Hardware + firmware as one product.",
+      "sections": [
+        {
+          "p": "An <b>embedded system</b> is a computer inside a product: MCU/SoC, sensors, actuators, power and firmware that may run for years. Electronics Learner courses give the hardware vocabulary; firmware makes pins do useful work."
+        },
+        {
+          "h": "Layers",
+          "p": "Hardware abstraction → drivers → application logic. Watchdogs reset hung software. Brown-out detectors stop code running at illegal voltages. These features are part of system design."
+        },
+        {
+          "h": "Interfaces revisited",
+          "p": "GPIO, ADC, PWM, UART, SPI, I²C connect the chip to the world. Timing deadlines (motor control, communications) dictate architecture choices — polling vs interrupts vs RTOS."
+        },
+        {
+          "h": "Bring-up",
+          "p": "Power rails correct → clock running → debug probe connects → blink an LED → then talk on a bus. Incremental bring-up beats flashing a full app onto untested hardware."
+        },
+        {
+          "h": "Documentation",
+          "p": "Schematics, pin tables, power budgets and a README save future-you. Version the firmware with the board revision it expects."
+        },
+        {
+          "code": "Bring-up ladder:\n  1) rails & current limit\n  2) reset/clock\n  3) SWD/JTAG or UART boot\n  4) blink\n  5) buses/sensors\n  6) application"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "hardware and dedicated firmware",
+          "why": "Computer inside a product.",
+          "q": "Embedded systems combine…",
+          "options": [
+            "hardware and dedicated firmware",
+            "only cloud spreadsheets",
+            "mains wiring without software ever",
+            "solder flux chemistry alone"
+          ]
+        },
+        {
+          "answer": "resetting runaway software",
+          "why": "Recovery from hangs.",
+          "q": "A watchdog timer helps by…",
+          "options": [
+            "resetting runaway software",
+            "raising battery voltage",
+            "etching PCBs",
+            "setting silk colour"
+          ]
+        },
+        {
+          "answer": "power rails, then simple proofs like blink",
+          "why": "Incremental trust.",
+          "q": "Good bring-up order starts with…",
+          "options": [
+            "power rails, then simple proofs like blink",
+            "full GUI apps first",
+            "motor full-power tests first",
+            "radiated EMC chamber booking only"
+          ]
+        },
+        {
+          "answer": "running at illegal low voltage",
+          "why": "MCUs misbehave when VCC sags.",
+          "q": "Brown-out detection protects against…",
+          "options": [
+            "running at illegal low voltage",
+            "too much flash storage",
+            "bright LEDs",
+            "cold solder alone"
+          ]
+        },
+        {
+          "answer": "drive motors/LEDs with duty cycle control",
+          "why": "Pulse-width modulation.",
+          "q": "PWM is often used to…",
+          "options": [
+            "drive motors/LEDs with duty cycle control",
+            "measure resistance directly",
+            "replace crystals",
+            "create USB data automatically"
+          ]
+        },
+        {
+          "answer": "pins and parts change between spins",
+          "why": "Hardware/software contracts.",
+          "q": "Matching firmware to board revision matters because…",
+          "options": [
+            "pins and parts change between spins",
+            "C always ignores hardware",
+            "Git replaces schematics",
+            "baud is independent of wiring always"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "decoupling",
+      "title": "Decoupling and power integrity",
+      "summary": "Keeping rails quiet when chips switch.",
+      "sections": [
+        {
+          "p": "<b>Power integrity</b> is keeping supply voltage within bounds when currents jump. <b>Decoupling capacitors</b> right at IC power pins supply brief bursts so the rail does not dip each clock edge."
+        },
+        {
+          "h": "Multiple values",
+          "p": "A bulk capacitor (e.g. 10 µF) plus local 100 nF ceramics is a common pattern. The small ceramics handle fast edges; bulk handles longer dips. Follow IC datasheets for recommended counts."
+        },
+        {
+          "h": "Loop inductance",
+          "p": "Long thin paths between cap and pins add inductance — the cap \"arrives late\". Place caps close, use short vias to planes, avoid skinny necks."
+        },
+        {
+          "h": "Symptoms",
+          "p": "Random resets, flaky ADCs, eye diagrams falling apart: sometimes it is software, sometimes the rail is bouncing. Scope VCC at the pins with a short ground spring if you can."
+        },
+        {
+          "code": "Plane --- via --- VCC pin\n              |\n            [100n]\n              |\nPlane --- via --- GND pin   (keep this loop tiny)"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "close to IC power/ground pins",
+          "why": "Minimise loop inductance.",
+          "q": "Decoupling capacitors should sit…",
+          "options": [
+            "close to IC power/ground pins",
+            "only at the far connector",
+            "off-board in another room",
+            "in series with every data line always"
+          ]
+        },
+        {
+          "answer": "fast transient current demand",
+          "why": "High-frequency bypass.",
+          "q": "100 nF ceramics near pins mainly help with…",
+          "options": [
+            "fast transient current demand",
+            "setting UART baud",
+            "mechanical stiffness only",
+            "silk adhesion"
+          ]
+        },
+        {
+          "answer": "slower / larger energy dips",
+          "why": "Energy reservoir.",
+          "q": "Bulk capacitors help with…",
+          "options": [
+            "slower / larger energy dips",
+            "replacing all ceramics always",
+            "generating clocks",
+            "ESD bags"
+          ]
+        },
+        {
+          "answer": "inductance delays the capacitor's help",
+          "why": "Loop L matters.",
+          "q": "Long cap leads/traces hurt because…",
+          "options": [
+            "inductance delays the capacitor's help",
+            "resistance becomes zero",
+            "flux vanishes",
+            "DRC passes automatically"
+          ]
+        },
+        {
+          "answer": "random resets / flaky analog",
+          "why": "Power integrity symptoms.",
+          "q": "Rail bounce can look like…",
+          "options": [
+            "random resets / flaky analog",
+            "perfectly stable logic always",
+            "increased solder strength",
+            "higher crystal purity"
+          ]
+        },
+        {
+          "answer": "keeping VCC within limits under transient loads",
+          "why": "That is the goal.",
+          "q": "Power integrity focuses on…",
+          "options": [
+            "keeping VCC within limits under transient loads",
+            "only the colour of LEDs",
+            "silkscreen fonts",
+            "enclosure branding"
+          ]
+        }
+      ]
+    }
+  ]
+}

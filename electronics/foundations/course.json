@@ -1,0 +1,750 @@
+{
+  "schema": "electronics-course@1",
+  "id": "foundations",
+  "name": "Foundations",
+  "title": "Charge, current, voltage and Ohm's law",
+  "intro": "Electronics starts with a few measurable quantities: charge, current, voltage, resistance and power. These lessons build those ideas with concrete numbers, then contrast AC and DC and cover the safety habits that keep beginners alive. You do not need calculus — arithmetic and careful units are enough.",
+  "lessons": [
+    {
+      "id": "charge",
+      "title": "Electric charge",
+      "summary": "Electrons, coulombs, and why charge is conserved.",
+      "sections": [
+        {
+          "p": "Electric <b>charge</b> is a property of matter. Electrons carry a negative charge; protons carry a positive charge of equal size. The SI unit is the <b>coulomb</b> (C). One electron has about −1.6 × 10<sup>−19</sup> C, so one coulomb is roughly 6.25 × 10<sup>18</sup> electrons."
+        },
+        {
+          "h": "Conservation",
+          "p": "Charge is conserved: it can move from place to place, but it is not created or destroyed in ordinary circuits. When a capacitor \"charges\", charge separates onto its plates; the total charge of the closed system stays the same."
+        },
+        {
+          "h": "Static vs circuit",
+          "p": "Static cling is charge sitting on an insulator. In a wire, charge is free to move. Electronics mostly cares about <b>moving</b> charge — that motion is current — but static charge still matters for ESD damage to chips."
+        },
+        {
+          "h": "Order of magnitude",
+          "p": "One ampere-hour is 3600 C. A phone battery around 3000 mAh stores about 10 800 C of separable charge at its terminals — a tiny mass of electrons, but a useful electrical packet."
+        }
+      ],
+      "practice": [
+        {
+          "answer": "coulomb (C)",
+          "why": "Charge is measured in coulombs. Amperes are charge per second.",
+          "q": "What is the SI unit of electric charge?",
+          "options": ["coulomb (C)", "ampere (A)", "volt (V)", "ohm (Ω)"]
+        },
+        {
+          "answer": "6.25 × 10¹⁸",
+          "why": "Each electron is about 1.6×10⁻¹⁹ C.",
+          "q": "About how many electrons make one coulomb?",
+          "options": ["6.25 × 10¹⁸", "6.25 × 10³", "1.6 × 10⁻¹⁹", "Exactly one million"]
+        },
+        {
+          "answer": "is conserved; it can only move",
+          "why": "Heating converts energy, not charge itself.",
+          "q": "In ordinary circuits, total charge…",
+          "options": [
+            "is conserved; it can only move",
+            "is destroyed when a light turns off",
+            "is created by resistors",
+            "becomes heat and vanishes as charge"
+          ]
+        },
+        {
+          "answer": "Equal and opposite charge separates on the plates",
+          "why": "Net charge of the pair is unchanged.",
+          "q": "Why does a charged capacitor not violate charge conservation?",
+          "options": [
+            "Equal and opposite charge separates on the plates",
+            "Charge is created on both plates",
+            "The dielectric makes new electrons",
+            "Coulombs turn into volts"
+          ]
+        },
+        {
+          "answer": "3600 C",
+          "why": "1 A × 3600 s = 3600 C.",
+          "q": "One ampere-hour equals how many coulombs?",
+          "options": ["3600 C", "1 C", "60 C", "1000 C"]
+        },
+        {
+          "answer": "sitting on an insulator",
+          "why": "Static charge stays put until it discharges.",
+          "q": "Static cling is mainly charge that is…",
+          "options": [
+            "sitting on an insulator",
+            "flowing steadily through copper",
+            "the same as a 5 V USB supply",
+            "measured only in amperes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "current",
+      "title": "Electric current",
+      "summary": "Amperes, direction of flow, and typical sizes.",
+      "sections": [
+        {
+          "p": "<b>Current</b> is the rate of charge flow. One <b>ampere</b> (A) means one coulomb passes a point each second: I = Q / t. A milliampere (mA) is 0.001 A; a microampere (µA) is 0.000001 A."
+        },
+        {
+          "h": "Conventional current",
+          "p": "Schematics draw current from the positive terminal through the load back to the negative terminal. Electrons in metal drift the other way. Datasheets and Ohm's law use conventional current — stay consistent."
+        },
+        {
+          "h": "Typical sizes",
+          "p": "An LED indicator might draw 5–20 mA. USB charging at 1 A is a thousand milliamps. A car starter can pull hundreds of amps briefly. A microcontroller GPIO often sources or sinks only a few milliamps."
+        },
+        {
+          "h": "Series fact",
+          "p": "In a single loop with no branches, the same current flows through every series element. Current is not \"used up\" by a resistor; the resistor drops voltage while the same amperes continue around the loop."
+        },
+        {
+          "code": "I = Q / t\n1 A = 1 C / s\n20 mA = 0.020 A"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "1 coulomb of charge per second",
+          "why": "By definition I = Q/t.",
+          "q": "What does 1 ampere mean?",
+          "options": [
+            "1 coulomb of charge per second",
+            "1 volt per ohm only",
+            "1 joule of charge",
+            "1 electron per hour"
+          ]
+        },
+        {
+          "answer": "0.020 A",
+          "why": "Milli means 1/1000.",
+          "q": "20 mA equals…",
+          "options": ["0.020 A", "20 A", "0.20 A", "2000 A"]
+        },
+        {
+          "answer": "the same",
+          "why": "With one path, series current is identical everywhere.",
+          "q": "In a simple series loop, current through each part is…",
+          "options": [
+            "the same",
+            "largest at the battery and zero at the load",
+            "half after each resistor",
+            "only present in wires, not resistors"
+          ]
+        },
+        {
+          "answer": "from + toward − through the load",
+          "why": "Schematics use the + to − convention.",
+          "q": "Conventional current is drawn…",
+          "options": [
+            "from + toward − through the load",
+            "only as electron drift direction",
+            "from ground into the sky",
+            "clockwise regardless of polarity"
+          ]
+        },
+        {
+          "answer": "10 mA",
+          "why": "Many indicators run around 5–20 mA.",
+          "q": "Which is a plausible LED indicator current?",
+          "options": ["10 mA", "10 A", "10 kA", "10 µA as the only forever answer"]
+        },
+        {
+          "answer": "0.5 A",
+          "why": "I = 2/4 = 0.5 A.",
+          "q": "If 2 C pass a point in 4 s, the current is…",
+          "options": ["0.5 A", "8 A", "2 A", "4 A"]
+        }
+      ]
+    },
+    {
+      "id": "voltage",
+      "title": "Voltage (potential difference)",
+      "summary": "Volts as energy per charge, and common supply levels.",
+      "sections": [
+        {
+          "p": "<b>Voltage</b> is electric potential difference: energy available per unit charge. One <b>volt</b> (V) means one joule per coulomb: V = W / Q. A voltage at a point always implies a reference — often circuit ground."
+        },
+        {
+          "h": "Analogy",
+          "p": "Think of voltage as pressure difference and current as flow rate. High pressure with a closed valve means high voltage and nearly zero current."
+        },
+        {
+          "h": "Common levels",
+          "p": "Logic boards often use 3.3 V or 5 V. AA alkaline cells start near 1.5 V. A car battery is nominally 12 V. Mains is about 120 V or 230 V AC — treat mains as lethal."
+        },
+        {
+          "h": "Polarity",
+          "p": "DC has a defined + and −. Reverse a polarized capacitor or many ICs and you can destroy them. On a meter, red on the more positive node gives a positive reading."
+        },
+        {
+          "code": "V = W / Q\n1 V = 1 J / C\nUSB rail ≈ 5 V DC"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "one joule per coulomb",
+          "why": "1 V = 1 J/C.",
+          "q": "One volt equals…",
+          "options": [
+            "one joule per coulomb",
+            "one coulomb per second",
+            "one watt per ohm",
+            "one ampere per metre"
+          ]
+        },
+        {
+          "answer": "between two points (a difference)",
+          "why": "Potential difference needs a reference.",
+          "q": "Voltage is always measured…",
+          "options": [
+            "between two points (a difference)",
+            "as an absolute property of one atom",
+            "only across resistors, never batteries",
+            "in coulombs"
+          ]
+        },
+        {
+          "answer": "1.5 V",
+          "why": "Single alkaline cells are nominally 1.5 V.",
+          "q": "A fresh AA alkaline cell is about…",
+          "options": ["1.5 V", "12 V", "120 V", "5 V exactly always"]
+        },
+        {
+          "answer": "You need the reference node (often ground)",
+          "why": "Voltage is a difference.",
+          "q": "Why can \"5 V on this pin\" be incomplete?",
+          "options": [
+            "You need the reference node (often ground)",
+            "Volts are not used on pins",
+            "Pins only carry current",
+            "5 V means 5 A"
+          ]
+        },
+        {
+          "answer": "mains AC (e.g. 120 V or 230 V)",
+          "why": "Mains can kill.",
+          "q": "Which supply is treated as lethally dangerous here?",
+          "options": [
+            "mains AC (e.g. 120 V or 230 V)",
+            "a single AA cell",
+            "a 3.3 V regulator output",
+            "USB 5 V from a limited port"
+          ]
+        },
+        {
+          "answer": "5 V",
+          "why": "V = 10/2 = 5 V.",
+          "q": "If 2 C gains 10 J, the voltage rise is…",
+          "options": ["5 V", "20 V", "10 V", "2 V"]
+        }
+      ]
+    },
+    {
+      "id": "resistance",
+      "title": "Resistance",
+      "summary": "Ohms, conductors, insulators, and what resistors do.",
+      "sections": [
+        {
+          "p": "<b>Resistance</b> opposes current. The unit is the <b>ohm</b> (Ω). A <b>resistor</b> is built to a chosen resistance. For many materials at fixed temperature, voltage and current stay proportional."
+        },
+        {
+          "h": "Conductors and insulators",
+          "p": "Copper has very low resistance for short wires. Glass and most plastics are insulators. A short is an unintended low-resistance path; an open is a broken path."
+        },
+        {
+          "h": "Wire still matters",
+          "p": "Thin long wire has more resistance than thick short wire. At high current, even a fraction of an ohm drops voltage and heats up."
+        },
+        {
+          "h": "Prefixes",
+          "p": "1 kΩ = 1000 Ω. 1 MΩ = 1 000 000 Ω. A pull-up might be 10 kΩ; an LED series resistor on 5 V might be a few hundred ohms."
+        },
+        {
+          "code": "R in ohms (Ω)\n1 kΩ = 1000 Ω\n1 MΩ = 1e6 Ω"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "ohm (Ω)",
+          "why": "Resistance is measured in ohms.",
+          "q": "The unit of resistance is the…",
+          "options": ["ohm (Ω)", "volt", "ampere", "farad"]
+        },
+        {
+          "answer": "1000 Ω",
+          "why": "Kilo means one thousand.",
+          "q": "1 kΩ equals…",
+          "options": ["1000 Ω", "0.001 Ω", "1 000 000 Ω", "10 Ω"]
+        },
+        {
+          "answer": "low resistance for practical lengths",
+          "why": "Copper lets charge move with little drop when sized correctly.",
+          "q": "Copper wire is used because it has…",
+          "options": [
+            "low resistance for practical lengths",
+            "infinite resistance",
+            "no electrons",
+            "only capacitance"
+          ]
+        },
+        {
+          "answer": "very high (ideally infinite) resistance",
+          "why": "A break stops current.",
+          "q": "An open circuit behaves like…",
+          "options": [
+            "very high (ideally infinite) resistance",
+            "0 Ω",
+            "a perfect short",
+            "exactly 1 Ω"
+          ]
+        },
+        {
+          "answer": "Its resistance dissipates power (I²R)",
+          "why": "Small R at large I still means heat.",
+          "q": "Why might a long thin jumper heat at high current?",
+          "options": [
+            "Its resistance dissipates power (I²R)",
+            "Resistance always falls as current rises",
+            "Jumpers store coulombs until they melt",
+            "Insulation color creates ohms"
+          ]
+        },
+        {
+          "answer": "very low resistance",
+          "why": "A short bypasses the intended load.",
+          "q": "A short circuit is an unintended path with…",
+          "options": [
+            "very low resistance",
+            "infinite resistance",
+            "exactly the design load",
+            "only inductance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ohms-law",
+      "title": "Ohm's law",
+      "summary": "V = I R with worked numbers.",
+      "sections": [
+        {
+          "p": "<b>Ohm's law</b> for a resistor is V = I R, also I = V / R and R = V / I. V is the voltage across the resistor, I the current through it, R its resistance."
+        },
+        {
+          "h": "LED example",
+          "p": "A red LED drops about 2.0 V when lit, from a 5.0 V supply. The series resistor must drop 3.0 V. For 10 mA: R = 3.0 / 0.010 = 300 Ω. A standard 330 Ω part is common."
+        },
+        {
+          "h": "What Ohm's law is not",
+          "p": "Ideal diodes, LEDs and transistors are not linear resistors. Size the resistor around them with Ohm's law; do not treat the LED itself as a fixed R for all voltages."
+        },
+        {
+          "h": "Check both ways",
+          "p": "12 V across 2.2 kΩ gives I = 12 / 2200 ≈ 5.45 mA. A wildly different meter reading suggests a parallel path or wrong part."
+        },
+        {
+          "code": "V = I * R\nI = V / R\nR = V / I\n\nExample: 3 V / 0.010 A = 300 Ω"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "V = I R",
+          "why": "Voltage equals current times resistance.",
+          "q": "Ohm's law is…",
+          "options": ["V = I R", "P = I R only", "Q = C V only", "V = I / R"]
+        },
+        {
+          "answer": "5 mA",
+          "why": "I = 5/1000 = 5 mA.",
+          "q": "5 V across 1 kΩ gives…",
+          "options": ["5 mA", "5 A", "0.5 mA", "500 A"]
+        },
+        {
+          "answer": "300 Ω",
+          "why": "R = 3/0.01 = 300 Ω.",
+          "q": "For 3 V drop at 10 mA, R should be…",
+          "options": ["300 Ω", "30 Ω", "3 Ω", "3 kΩ"]
+        },
+        {
+          "answer": "LEDs are nonlinear after forward voltage",
+          "why": "Use forward drop plus a series resistor.",
+          "q": "Why not treat an LED as a fixed ohm value for all voltages?",
+          "options": [
+            "LEDs are nonlinear after forward voltage",
+            "LEDs never drop voltage",
+            "Ohm's law is false for copper",
+            "LEDs only work on AC"
+          ]
+        },
+        {
+          "answer": "5.5 mA",
+          "why": "12/2200 ≈ 5.5 mA.",
+          "q": "12 V across 2.2 kΩ is about…",
+          "options": ["5.5 mA", "55 mA", "2.2 A", "12 A"]
+        },
+        {
+          "answer": "doubles",
+          "why": "I = V/R scales with V.",
+          "q": "If voltage doubles across a fixed resistor, current…",
+          "options": ["doubles", "halves", "stays the same", "becomes zero"]
+        }
+      ]
+    },
+    {
+      "id": "power",
+      "title": "Power and energy",
+      "summary": "Watts, P = V I, and heating.",
+      "sections": [
+        {
+          "p": "<b>Power</b> is the rate of energy use. One <b>watt</b> (W) is one joule per second. In DC circuits, P = V I. For a resistor: P = I² R or P = V² / R. Energy E = P × t."
+        },
+        {
+          "h": "Resistor ratings",
+          "p": "A common through-hole resistor is rated 1/4 W (0.25 W). At 5 V across 100 Ω, I = 50 mA and P = 0.25 W — at the limit, so pick higher wattage or larger R for comfort."
+        },
+        {
+          "h": "Where power goes",
+          "p": "In a resistor, electrical energy becomes heat. In a motor, much becomes mechanical work plus heat. In an LED, some becomes light; most still becomes heat."
+        },
+        {
+          "h": "Battery energy",
+          "p": "A 3.7 V, 2000 mAh lithium cell stores roughly 3.7 × 2.0 = 7.4 Wh (order of magnitude; usable energy depends on discharge limits)."
+        },
+        {
+          "code": "P = V * I\nP = I^2 * R\nP = V^2 / R\nE = P * t"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "P = V I",
+          "why": "Power equals voltage times current.",
+          "q": "DC electrical power is…",
+          "options": ["P = V I", "P = V / I", "P = V + I", "P = Q / t"]
+        },
+        {
+          "answer": "0.25 W",
+          "why": "Quarter-watt is 0.25 W.",
+          "q": "A 1/4 W resistor may dissipate up to about…",
+          "options": ["0.25 W", "4 W", "25 W", "0.025 W"]
+        },
+        {
+          "answer": "2 W",
+          "why": "P = I²R = 4 × 0.5 = 2 W.",
+          "q": "2 A through 0.5 Ω dissipates…",
+          "options": ["2 W", "1 W", "0.5 W", "4 W"]
+        },
+        {
+          "answer": "power × time",
+          "why": "E = P t.",
+          "q": "Energy equals…",
+          "options": [
+            "power × time",
+            "power / time",
+            "voltage × charge only as current",
+            "ohms × amperes"
+          ]
+        },
+        {
+          "answer": "I²R heating",
+          "why": "Power in a resistor becomes heat.",
+          "q": "Why does a small resistor get hot at high current?",
+          "options": [
+            "I²R heating",
+            "Ohms create photons only",
+            "Current destroys charge inside R",
+            "Voltage cannot exist across R"
+          ]
+        },
+        {
+          "answer": "0.5 W",
+          "why": "P = 5 × 0.1 = 0.5 W.",
+          "q": "5 V at 100 mA is…",
+          "options": ["0.5 W", "5 W", "50 W", "0.05 W"]
+        }
+      ]
+    },
+    {
+      "id": "ac-dc",
+      "title": "AC versus DC",
+      "summary": "Steady polarity vs alternating, and why both exist.",
+      "sections": [
+        {
+          "p": "<b>DC</b> keeps the same polarity: batteries, USB rails, most logic supplies. <b>AC</b> reverses polarity over time. Mains is AC at 50 Hz or 60 Hz depending on region."
+        },
+        {
+          "h": "Why AC for mains",
+          "p": "Transformers need changing magnetic fields, so AC made long-distance voltage conversion practical. Household outlets remain AC even though modern DC links exist."
+        },
+        {
+          "h": "RMS",
+          "p": "AC voltage is often quoted as RMS. About 120 V RMS has peak near 170 V. Do not treat RMS as the peak when rating capacitors on the AC side."
+        },
+        {
+          "h": "Rectification",
+          "p": "Power supplies turn AC into DC with diodes, capacitors and regulators. A phone brick's USB cable carries DC even though the wall side is AC."
+        },
+        {
+          "h": "Safety",
+          "p": "Never probe mains casually. Capacitors on the AC side can stay charged after unplugging. Prefer batteries, USB power banks, or current-limited lab supplies."
+        },
+        {
+          "code": "DC: polarity fixed (e.g. +5 V to GND)\nAC: polarity alternates (mains 50/60 Hz)\nVpeak ≈ Vrms * √2  (sine)"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "DC",
+          "why": "Cells have fixed polarity.",
+          "q": "A battery provides…",
+          "options": [
+            "DC",
+            "50 Hz AC only",
+            "RMS without polarity",
+            "only magnetic fields"
+          ]
+        },
+        {
+          "answer": "AC at 50 or 60 Hz",
+          "why": "Line frequency is 50 or 60 Hz.",
+          "q": "Household mains is typically…",
+          "options": [
+            "AC at 50 or 60 Hz",
+            "pure DC at 5 V",
+            "DC at 120 V with no ripple",
+            "only static charge"
+          ]
+        },
+        {
+          "answer": "Vpeak ≈ Vrms × √2",
+          "why": "Peak is √2 times RMS for a sine.",
+          "q": "For a sine wave, peak relates to RMS by…",
+          "options": [
+            "Vpeak ≈ Vrms × √2",
+            "Vpeak = Vrms / 2",
+            "Vpeak = Vrms",
+            "Vpeak = 2π Vrms as a definition"
+          ]
+        },
+        {
+          "answer": "DC (regulated)",
+          "why": "The brick rectifies and regulates.",
+          "q": "A phone charger's USB output is…",
+          "options": [
+            "DC (regulated)",
+            "raw 230 V AC",
+            "only RF",
+            "a 60 Hz square wave on VBUS normally"
+          ]
+        },
+        {
+          "answer": "mains can kill; limited low voltage is safer",
+          "why": "Learn on low voltage first.",
+          "q": "Why prefer lab supplies and batteries for practice?",
+          "options": [
+            "mains can kill; limited low voltage is safer",
+            "AC cannot light an LED",
+            "batteries have no voltage",
+            "Ohm's law fails on DC"
+          ]
+        },
+        {
+          "answer": "changing current enables transformer action",
+          "why": "Transformers need time-varying flux.",
+          "q": "Transformers historically favored AC because…",
+          "options": [
+            "changing current enables transformer action",
+            "AC has no frequency",
+            "DC cannot exist in wires",
+            "ohms only apply to AC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meters",
+      "title": "Measuring with a multimeter",
+      "summary": "Voltage, current and resistance the safe way.",
+      "sections": [
+        {
+          "p": "A <b>digital multimeter</b> (DMM) measures voltage, current and resistance. Wrong jack or mode can blow a fuse — or worse on mains. Start on a battery-powered circuit."
+        },
+        {
+          "h": "Voltage mode",
+          "p": "Select V DC. Put probes in parallel with the part. You do not open the circuit to measure voltage."
+        },
+        {
+          "h": "Current mode",
+          "p": "Put the meter in series. Move the red lead to the current jack if required. Start on a high range. Never put current-mode probes across a supply like a voltmeter."
+        },
+        {
+          "h": "Resistance and continuity",
+          "p": "Measure resistance with power off. Continuity beep finds low-resistance paths — also power off. Charged capacitors confuse ohm readings."
+        }
+      ],
+      "practice": [
+        {
+          "answer": "in parallel with the resistor",
+          "why": "Voltmeters share the part's two nodes.",
+          "q": "Measure voltage across a resistor by connecting…",
+          "options": [
+            "in parallel with the resistor",
+            "in series after breaking one lead for volts",
+            "only AC mode for DC batteries",
+            "between earth and the moon"
+          ]
+        },
+        {
+          "answer": "in series with the LED",
+          "why": "Ammeters become part of the loop.",
+          "q": "Measure LED current with the meter…",
+          "options": [
+            "in series with the LED",
+            "in parallel with the supply rails",
+            "on ohms mode while powered",
+            "disconnected from both jacks"
+          ]
+        },
+        {
+          "answer": "it shorts the battery through the meter",
+          "why": "An ammeter is nearly a short.",
+          "q": "Current-mode across a battery is dangerous because…",
+          "options": [
+            "it shorts the battery through the meter",
+            "batteries have no current",
+            "voltage mode is a short",
+            "probes cancel coulombs"
+          ]
+        },
+        {
+          "answer": "unpowered",
+          "why": "Live voltages wreck ohm readings.",
+          "q": "Resistance should be measured with the circuit…",
+          "options": [
+            "unpowered",
+            "at full load current",
+            "connected to mains",
+            "only while soldering"
+          ]
+        },
+        {
+          "answer": "shorts or unbroken connections (power off)",
+          "why": "Low resistance makes the beeper sound.",
+          "q": "Continuity beep helps find…",
+          "options": [
+            "shorts or unbroken connections (power off)",
+            "exact watt-hours",
+            "AC frequency only",
+            "magnetic north"
+          ]
+        },
+        {
+          "answer": "the reference / COM / ground side",
+          "why": "COM is the meter's common jack.",
+          "q": "Black probe is conventionally on…",
+          "options": [
+            "the reference / COM / ground side",
+            "only the + of a battery",
+            "the soldering iron tip",
+            "antenna connectors only"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "safety",
+      "title": "Safety basics",
+      "summary": "Mains, heat, batteries, and eye protection.",
+      "sections": [
+        {
+          "p": "<b>Safety first.</b> Low-voltage battery and USB projects are the right place to learn. Mains can kill. Even low voltage can start fires with a shorted lithium pack."
+        },
+        {
+          "h": "Mains and wall warts",
+          "p": "Do not open mains-powered equipment unless trained. Capacitors can hold charge after unplugging. Prefer isolated lab supplies and sealed commercial USB adapters."
+        },
+        {
+          "h": "Heat and soldering",
+          "p": "Soldering irons are typically 300–400 °C. Use a stand, never catch a falling iron, and work with ventilation. See the soldering course for joint and fume detail."
+        },
+        {
+          "h": "Eyes, skin, lithium",
+          "p": "Wear eye protection when clipping leads or desoldering. Do not puncture or short Li-ion cells; charge only with proper chargers. A puffed pack is scrap."
+        },
+        {
+          "h": "Current-limited supplies",
+          "p": "A bench supply limited to 100–200 mA turns many wiring mistakes into teachable moments instead of smoked traces."
+        }
+      ],
+      "practice": [
+        {
+          "answer": "battery, USB, or current-limited lab supplies",
+          "why": "Keep energy and voltage forgiving.",
+          "q": "For first circuits, prefer…",
+          "options": [
+            "battery, USB, or current-limited lab supplies",
+            "bare mains from a wall outlet",
+            "microwave oven transformers",
+            "unprotected jump-start packs on a breadboard"
+          ]
+        },
+        {
+          "answer": "filter capacitors may remain charged",
+          "why": "Stored charge is a classic hazard.",
+          "q": "An unplugged supply can still shock you because…",
+          "options": [
+            "filter capacitors may remain charged",
+            "AC becomes safe the instant the plug moves",
+            "copper forgets voltage after 1 s",
+            "ohms disappear when unplugged"
+          ]
+        },
+        {
+          "answer": "hundreds of °C — use a stand",
+          "why": "Treat the iron as a burn hazard.",
+          "q": "A soldering iron tip is typically…",
+          "options": [
+            "hundreds of °C — use a stand",
+            "warm like tea",
+            "safe to test with fingers",
+            "only dangerous on AC mode"
+          ]
+        },
+        {
+          "answer": "taken out of service and recycled properly",
+          "why": "Swelling means the cell is unsafe.",
+          "q": "A puffed lithium pack should be…",
+          "options": [
+            "taken out of service and recycled properly",
+            "punctured to relieve pressure",
+            "charged faster to reshape it",
+            "shorted to reset it"
+          ]
+        },
+        {
+          "answer": "clipping leads or desoldering",
+          "why": "Leads and solder blobs can fly.",
+          "q": "Eye protection matters especially when…",
+          "options": [
+            "clipping leads or desoldering",
+            "only reading datasheets",
+            "measuring 1.5 V",
+            "drawing schematics"
+          ]
+        },
+        {
+          "answer": "faults hit the limit instead of dumping huge current",
+          "why": "Limits turn shorts into recoverable mistakes.",
+          "q": "A current-limited bench supply helps because…",
+          "options": [
+            "faults hit the limit instead of dumping huge current",
+            "it removes the need for resistors",
+            "it makes mains abstractly safe",
+            "it disables Ohm's law"
+          ]
+        }
+      ]
+    }
+  ]
+}
