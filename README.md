@@ -21,6 +21,7 @@ variants/            links between character forms (traditional and simplified,
 meaning/             the meaning network
 programming/<id>/    programming courses and keyword maps
 math/<id>/           Math Learner courses (arithmetic, algebra, …)
+electronics/<id>/    Electronics Learner courses (foundations through systems)
 features.json        every user-facing feature switch
 schemas/             a versioned JSON Schema for every content type
 tools/               importers, validators, generators and checks

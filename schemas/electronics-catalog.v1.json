@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/squirelworks/squirrel-lang-data/schemas/electronics-catalog.v1.json",
+  "title": "electronics-catalog@1: Electronics Learner course list",
+  "description": "electronics/catalog.json: every course id with display name, era, blurb, group and tags.",
+  "type": "object",
+  "required": [
+    "schema",
+    "courses"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    }
+  },
+  "properties": {
+    "schema": {
+      "const": "electronics-catalog@1"
+    },
+    "courses": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "era",
+          "blurb",
+          "group"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "$ref": "#/$defs/id"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "era": {
+            "type": "string",
+            "minLength": 1
+          },
+          "blurb": {
+            "type": "string",
+            "minLength": 1
+          },
+          "group": {
+            "enum": [
+              "foundations",
+              "components",
+              "circuits",
+              "digital",
+              "practical",
+              "advanced"
+            ]
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          }
+        }
+      }
+    }
+  }
+}

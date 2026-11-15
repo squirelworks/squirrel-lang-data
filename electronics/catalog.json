@@ -1,0 +1,61 @@
+{
+  "schema": "electronics-catalog@1",
+  "courses": [
+    {
+      "id": "foundations",
+      "name": "Foundations",
+      "era": "Core · units and laws",
+      "blurb": "Charge, current, voltage, resistance, Ohm's law, power, AC vs DC, meters and safety.",
+      "group": "foundations",
+      "tags": ["Basics", "Safety"]
+    },
+    {
+      "id": "components",
+      "name": "Components",
+      "era": "Parts · passives to sensors",
+      "blurb": "Resistors, capacitors, inductors, diodes, LEDs, BJT/MOSFET intro and sensors.",
+      "group": "components",
+      "tags": ["Passives", "Semiconductors"]
+    },
+    {
+      "id": "circuits",
+      "name": "Circuits",
+      "era": "Networks · analysis building blocks",
+      "blurb": "Series/parallel, Kirchhoff, dividers, RC timing, filters, amplifiers and schematics.",
+      "group": "circuits",
+      "tags": ["Analysis", "Schematics"]
+    },
+    {
+      "id": "digital",
+      "name": "Digital",
+      "era": "Logic · MCU interfaces",
+      "blurb": "Logic levels, gates, Boolean, flip-flops, clocks, GPIO and UART/SPI/I²C.",
+      "group": "digital",
+      "tags": ["Logic", "MCU"]
+    },
+    {
+      "id": "soldering",
+      "name": "Soldering",
+      "era": "Bench · hand assembly",
+      "blurb": "Tools, through-hole technique, flux, joint quality, ESD, desoldering and rework.",
+      "group": "practical",
+      "tags": ["Bench", "Safety"]
+    },
+    {
+      "id": "pcb-design",
+      "name": "PCB design",
+      "era": "CAD · fabricate and assemble",
+      "blurb": "Schematic capture, footprints, layout, pours, DRC, fab files and assembly.",
+      "group": "practical",
+      "tags": ["CAD", "Manufacturing"]
+    },
+    {
+      "id": "systems",
+      "name": "Systems",
+      "era": "Integration · power and noise",
+      "blurb": "Supplies, grounding, noise, EMC intuition, batteries and embedded bring-up.",
+      "group": "advanced",
+      "tags": ["Power", "EMC", "Embedded"]
+    }
+  ]
+}

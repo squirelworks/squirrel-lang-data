@@ -1,0 +1,649 @@
+{
+  "schema": "electronics-course@1",
+  "id": "soldering",
+  "name": "Soldering",
+  "title": "Tools, joints, flux and rework",
+  "intro": "Soldering joins metal parts with a fusible alloy. These lessons cover tools, through-hole technique, flux, how to recognise good and bad joints, ESD care, desoldering and practical rework tips. Irons are hot; fumes need ventilation; eye protection is not optional.",
+  "lessons": [
+    {
+      "id": "tools",
+      "title": "Soldering tools",
+      "summary": "Iron, tip, stand, sponge/brass and solder.",
+      "sections": [
+        {
+          "p": "A temperature-controlled <b>soldering iron</b> (often 300–370 °C for electronics solder) with interchangeable tips is the core tool. Use a stand; never leave a hot iron loose on the bench. <b>Warning:</b> tips cause instant burns."
+        },
+        {
+          "h": "Tips and cleaning",
+          "p": "Chisel and conical tips cover most through-hole work. Keep the tip tinned (shiny with solder). Clean on brass wool or a damp sponge — brass wool is gentler on plating."
+        },
+        {
+          "h": "Solder",
+          "p": "Electronics solder is usually a tin-based alloy, sometimes with lead (Pb) in older/some hobby stock, often lead-free (e.g. SAC305) in modern work. Use resin/flux-cored solder for electronics — never acid plumbing flux on circuits."
+        },
+        {
+          "h": "Extras",
+          "p": "Helping hands, tweezers, flush cutters, fume extraction or a fan out a window, and safety glasses round out a starter kit."
+        },
+        {
+          "h": "Safety",
+          "p": "Work ventilated. Wash hands after handling leaded solder. Unplug irons when finished. Keep cords from snagging the iron off the stand."
+        }
+      ],
+      "practice": [
+        {
+          "answer": "in a stand",
+          "why": "Prevent burns and fires.",
+          "q": "A soldering iron should rest…",
+          "options": ["in a stand", "on paper", "in your pocket", "on the PCB silk"]
+        },
+        {
+          "answer": "flux-cored electronics solder",
+          "why": "Acid flux attacks electronics.",
+          "q": "Electronics work uses…",
+          "options": [
+            "flux-cored electronics solder",
+            "acid plumbing flux paste",
+            "hot glue as solder",
+            "only pure water"
+          ]
+        },
+        {
+          "answer": "tinned and clean",
+          "why": "Tinning protects the tip.",
+          "q": "Keep the tip…",
+          "options": [
+            "tinned and clean",
+            "bare steel always dry of solder",
+            "painted",
+            "above 600 °C always"
+          ]
+        },
+        {
+          "answer": "clean the tip",
+          "why": "Wipes oxides/old solder.",
+          "q": "Brass wool is used to…",
+          "options": [
+            "clean the tip",
+            "replace solder alloy",
+            "etch PCBs",
+            "measure ohms"
+          ]
+        },
+        {
+          "answer": "somewhat higher temperature than tin-lead",
+          "why": "SAC alloys melt higher.",
+          "q": "Lead-free solder typically needs…",
+          "options": [
+            "somewhat higher temperature than tin-lead",
+            "cryogenic cooling",
+            "no flux ever",
+            "mains voltage on the tip"
+          ]
+        },
+        {
+          "answer": "clipped leads and solder can fly",
+          "why": "Protect your eyes.",
+          "q": "Eye protection matters because…",
+          "options": [
+            "clipped leads and solder can fly",
+            "irons emit UV only",
+            "solder is explosive TNT",
+            "flux is magnetic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "through-hole",
+      "title": "Through-hole soldering",
+      "summary": "Heat the joint, feed solder, inspect.",
+      "sections": [
+        {
+          "p": "<b>Through-hole</b> parts have leads that pass through PCB pads. The reliable method: heat the pad <i>and</i> the lead together with the iron tip, then feed solder into the hot joint — not onto the iron alone."
+        },
+        {
+          "h": "Steps",
+          "p": "1) Insert and secure the part. 2) Touch tip to pad+lead. 3) Feed solder opposite the tip so it flows onto both metals. 4) Remove solder, then iron. 5) Let it cool without moving. 6) Trim leads with cutters — eye protection on."
+        },
+        {
+          "h": "Time and heat",
+          "p": "A few seconds of good contact beats ten seconds of a dirty cold tip. Too much heat lifts pads; too little makes cold joints. Practice on scrap boards."
+        },
+        {
+          "h": "Board holding",
+          "p": "A stable board (vice or helping hands) frees both hands for iron and solder. Wobbly joints become bad joints."
+        },
+        {
+          "code": "   iron tip\n      |\n   pad + lead  <--- heat both\n      ^\n   feed solder into the joint"
+        }
+      ],
+      "practice": [
+        {
+          "answer": "the pad and the lead together",
+          "why": "Both metals must get hot.",
+          "q": "You should heat…",
+          "options": [
+            "the pad and the lead together",
+            "only the solder blob in mid-air",
+            "only the plastic body",
+            "the room thermostat"
+          ]
+        },
+        {
+          "answer": "into the hot joint",
+          "why": "Solder flows onto heated metal.",
+          "q": "Feed solder…",
+          "options": [
+            "into the hot joint",
+            "only onto the iron tip forever",
+            "onto cold pads as solid wire left there",
+            "into the USB port"
+          ]
+        },
+        {
+          "answer": "remove solder, then iron, then hold still",
+          "why": "Motion while freezing = cold joint.",
+          "q": "After applying solder…",
+          "options": [
+            "remove solder, then iron, then hold still",
+            "shake the board immediately",
+            "blow hard and flex the lead",
+            "add water"
+          ]
+        },
+        {
+          "answer": "with cutters while wearing eye protection",
+          "why": "Leads become projectiles.",
+          "q": "Trim leads…",
+          "options": [
+            "with cutters while wearing eye protection",
+            "with your teeth",
+            "while power is applied at 12 V",
+            "using the iron tip as scissors"
+          ]
+        },
+        {
+          "answer": "poor heat transfer and bad joints",
+          "why": "Clean and tin the tip.",
+          "q": "A dirty cold tip causes…",
+          "options": [
+            "poor heat transfer and bad joints",
+            "perfect joints every time",
+            "lower melting points of copper",
+            "automatic flux generation"
+          ]
+        },
+        {
+          "answer": "excessive heat/time or force",
+          "why": "Respect the laminate.",
+          "q": "Pad lifting is often from…",
+          "options": [
+            "excessive heat/time or force",
+            "correct few-second joints",
+            "using flux",
+            "tinning the tip"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flux",
+      "title": "Flux and wetting",
+      "summary": "Cleaning oxides so solder can flow.",
+      "sections": [
+        {
+          "p": "<b>Flux</b> chemically cleans oxides so molten solder can <b>wet</b> the metal — spread and bond instead of beading up. Cored solder already contains flux; extra liquid or paste flux helps rework and stubborn joints."
+        },
+        {
+          "h": "Wetting",
+          "p": "Good wetting looks like solder feathering out onto pad and lead with a shiny (tin-lead) or satin (many lead-free) fillet. Balling up on dirty metal means more heat/flux/cleaning — not more brute force."
+        },
+        {
+          "h": "Residues",
+          "p": "Rosin fluxes may leave amber residue; some \"no-clean\" fluxes are meant to stay. Water-soluble fluxes must be cleaned — conductive residue causes leakage and corrosion."
+        },
+        {
+          "h": "Never",
+          "p": "Never use plumber's acid flux on electronics. It is corrosive and will ruin boards over time even if the joint looks pretty today."
+        }
+      ],
+      "practice": [
+        {
+          "answer": "clean oxides so solder wets",
+          "why": "Wetting needs clean metal.",
+          "q": "Flux's job is to…",
+          "options": [
+            "clean oxides so solder wets",
+            "raise melting point unboundedly",
+            "replace copper",
+            "insulate the iron"
+          ]
+        },
+        {
+          "answer": "poor wetting / dirty surfaces",
+          "why": "Fix cleanliness and heat.",
+          "q": "Solder beading up usually means…",
+          "options": [
+            "poor wetting / dirty surfaces",
+            "perfect technique",
+            "too much flux always good forever",
+            "Ohm's law failure"
+          ]
+        },
+        {
+          "answer": "cleaned off",
+          "why": "It can stay conductive/corrosive.",
+          "q": "Water-soluble flux residue should be…",
+          "options": [
+            "cleaned off",
+            "ignored forever always",
+            "painted with latex",
+            "eaten"
+          ]
+        },
+        {
+          "answer": "not acceptable",
+          "why": "Corrosive acid flux ruins electronics.",
+          "q": "Plumber's acid flux on PCBs is…",
+          "options": [
+            "not acceptable",
+            "required by IPC for all SMT",
+            "the same as rosin",
+            "a type of solder alloy"
+          ]
+        },
+        {
+          "answer": "contains flux in the core",
+          "why": "That is why it works on clean parts.",
+          "q": "Cored electronics solder already…",
+          "options": [
+            "contains flux in the core",
+            "contains acid for pipes",
+            "contains no flux ever",
+            "contains sand"
+          ]
+        },
+        {
+          "answer": "wets both pad and lead",
+          "why": "Look for a bonded fillet.",
+          "q": "A good fillet…",
+          "options": [
+            "wets both pad and lead",
+            "sits as a ball on dirty copper",
+            "covers the entire PCB in solder",
+            "fills vias from a meter away without heat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "joints",
+      "title": "Good and bad joints",
+      "summary": "What to look for under a bright light.",
+      "sections": [
+        {
+          "p": "Inspect every joint. A <b>good through-hole joint</b> shows a concave or smooth fillet wetting the pad and lead, no cracks, and lead not moving when cooled. Lead-free may look less mirror-like than tin-lead — satin can still be good."
+        },
+        {
+          "h": "Cold joint",
+          "p": "Dull, lumpy, poor wetting — the metals never got properly hot together, or the joint moved while solidifying. Reflow with flux and proper heat."
+        },
+        {
+          "h": "Insufficient solder / dry joint",
+          "p": "Pad not covered, or lead barely tacked. Add heat and a little solder — do not blob from afar."
+        },
+        {
+          "h": "Bridges and blobs",
+          "p": "Solder shorting adjacent pads is a bridge — remove with braid or a pump. Huge blobs hide bad wetting underneath; aesthetic excess is not strength."
+        },
+        {
+          "h": "Overheat damage",
+          "p": "Charred flux, lifted pads, melted plastic connectors: too much heat. Let the board cool; repair lifted pads with care or scrap the board if traces tear."
+        }
+      ],
+      "practice": [
+        {
+          "answer": "dull/lumpy with poor wetting",
+          "why": "Classic cold-joint look.",
+          "q": "A cold joint often looks…",
+          "options": [
+            "dull/lumpy with poor wetting",
+            "perfectly feathered and shiny/satin",
+            "like bare copper only",
+            "like conformal coat"
+          ]
+        },
+        {
+          "answer": "unwanted short between pads",
+          "why": "Remove extras.",
+          "q": "A solder bridge is…",
+          "options": [
+            "unwanted short between pads",
+            "required for every IC",
+            "flux residue only",
+            "a type of via"
+          ]
+        },
+        {
+          "answer": "it may be unreliable — reflow it",
+          "why": "Disturbance causes fractures.",
+          "q": "If a joint moved while solidifying…",
+          "options": [
+            "it may be unreliable — reflow it",
+            "it becomes stronger than copper",
+            "it turns into a diode",
+            "ignore it"
+          ]
+        },
+        {
+          "answer": "may look satin and still be good",
+          "why": "Do not judge only by old tin-lead shine.",
+          "q": "Lead-free joints…",
+          "options": [
+            "may look satin and still be good",
+            "must mirror like chrome always",
+            "never wet copper",
+            "require acid flux"
+          ]
+        },
+        {
+          "answer": "can hide a bad bond underneath",
+          "why": "Quality over quantity.",
+          "q": "A huge solder blob…",
+          "options": [
+            "can hide a bad bond underneath",
+            "guarantees aerospace reliability",
+            "reduces need for flux forever",
+            "increases resistance to zero always"
+          ]
+        },
+        {
+          "answer": "heat or mechanical abuse",
+          "why": "Pads tear when overstressed.",
+          "q": "Lifted pads indicate…",
+          "options": [
+            "heat or mechanical abuse",
+            "perfect process control",
+            "insufficient solder alloy tinning only as success",
+            "correct IPC always"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "esd",
+      "title": "ESD awareness",
+      "summary": "Static can kill chips before you smell smoke.",
+      "sections": [
+        {
+          "p": "<b>ESD</b> (electrostatic discharge) is a tiny spark from static charge. You may not feel it, yet MOSFET gates and IC inputs can be damaged. Humidity, flooring and clothing all change risk."
+        },
+        {
+          "h": "Basic precautions",
+          "p": "Work on a grounded ESD mat when possible. Wear a wrist strap clipped to ground (through a safety resistor). Handle boards by edges. Store parts in ESD bags/foam — not loose in plastic junk drawers."
+        },
+        {
+          "h": "Iron and tools",
+          "p": "Use an ESD-safe iron and grounded workstation. Don't shuffle across carpet then touch bare CMOS pins on a dry winter day."
+        },
+        {
+          "h": "Perspective",
+          "p": "Through-hole discretes are tougher than fine CMOS. Still, good habits cost little. Assume modern ICs deserve respect."
+        }
+      ],
+      "practice": [
+        {
+          "answer": "can happen without a shock you feel",
+          "why": "Chips are more sensitive than skin.",
+          "q": "ESD damage…",
+          "options": [
+            "can happen without a shock you feel",
+            "always knocks you across the room",
+            "only affects resistors",
+            "requires mains voltage"
+          ]
+        },
+        {
+          "answer": "ground through a safety resistor",
+          "why": "Bleed charge safely.",
+          "q": "A wrist strap should connect to…",
+          "options": [
+            "ground through a safety resistor",
+            "live mains neutral",
+            "the soldering tip directly at full mains",
+            "an antenna"
+          ]
+        },
+        {
+          "answer": "ESD-safe packaging",
+          "why": "Bags/foam designed for ESD.",
+          "q": "ICs should be stored in…",
+          "options": [
+            "ESD-safe packaging",
+            "loose polystyrene peanuts as ideal",
+            "pockets with keys",
+            "wet sponges"
+          ]
+        },
+        {
+          "answer": "the edges when practical",
+          "why": "Reduce contact with pins.",
+          "q": "Handle boards by…",
+          "options": [
+            "the edges when practical",
+            "scraping all pins on carpet",
+            "licking connectors",
+            "swinging by USB leads"
+          ]
+        },
+        {
+          "answer": "ESD sensitive",
+          "why": "Gate oxide is delicate.",
+          "q": "MOSFET gates are…",
+          "options": [
+            "ESD sensitive",
+            "immune to all static",
+            "only damaged by magnets",
+            "protected by silk-screen"
+          ]
+        },
+        {
+          "answer": "properly grounded",
+          "why": "Mats need a ground path.",
+          "q": "An ESD mat works best when…",
+          "options": [
+            "properly grounded",
+            "floating fully isolated always",
+            "covered in vinyl tape insulating it totally",
+            "powered from USB data lines"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "desoldering",
+      "title": "Desoldering",
+      "summary": "Braid, pumps and removing parts whole.",
+      "sections": [
+        {
+          "p": "Removing solder is part of the craft. Two basic tools: <b>desoldering braid</b> (wick) and a <b>solder sucker</b> (pump). Flux helps both. <b>Warning:</b> boards and pads are easy to wreck with patience-loss and excess heat."
+        },
+        {
+          "h": "Braid",
+          "p": "Place fluxed braid on the joint, heat on top of the braid, watch solder wick up, then remove iron and braid together. Do not drag hot braid sideways across pads."
+        },
+        {
+          "h": "Pump",
+          "p": "Heat until solder melts, then trigger the pump with the tip at the joint. Cleared holes let through-hole leads exit. Multiple heat cycles need cooling pauses."
+        },
+        {
+          "h": "Multi-lead parts",
+          "p": "For DIP ICs, alternate pins or use clips/hot-air with care. Chip-quic / low-melt alloys can help advanced rework. If a pad lifts, stop and reassess — forcing makes tears worse."
+        }
+      ],
+      "practice": [
+        {
+          "answer": "wicking molten solder into copper braid",
+          "why": "Capillary action in the braid.",
+          "q": "Desoldering braid works by…",
+          "options": [
+            "wicking molten solder into copper braid",
+            "magnetically pulling lead",
+            "dissolving FR4",
+            "cooling solder into dust"
+          ]
+        },
+        {
+          "answer": "it improves heat transfer and wetting into the braid/pump",
+          "why": "Flux helps clearing.",
+          "q": "Add flux when desoldering because…",
+          "options": [
+            "it improves heat transfer and wetting into the braid/pump",
+            "it raises pad adhesion unboundedly without heat",
+            "it replaces the need for an iron",
+            "it is decorative"
+          ]
+        },
+        {
+          "answer": "together to avoid redepositing solder",
+          "why": "Standard wick technique.",
+          "q": "Remove iron and braid…",
+          "options": [
+            "together to avoid redepositing solder",
+            "separately with a wipe across all pins",
+            "after the board freezes with braid stuck",
+            "never"
+          ]
+        },
+        {
+          "answer": "stop forcing the part",
+          "why": "Save the pad.",
+          "q": "If a pad starts to lift…",
+          "options": [
+            "stop forcing the part",
+            "pull harder",
+            "raise temperature to 500 °C",
+            "twist the lead as a hinge"
+          ]
+        },
+        {
+          "answer": "vacuum/sudden suction when molten",
+          "why": "Mechanical pump.",
+          "q": "A solder sucker removes solder by…",
+          "options": [
+            "vacuum/sudden suction when molten",
+            "sanding the PCB",
+            "ultraviolet light",
+            "increasing resistance"
+          ]
+        },
+        {
+          "answer": "damage pads and parts",
+          "why": "Let things cool.",
+          "q": "Many heat cycles without pause can…",
+          "options": [
+            "damage pads and parts",
+            "improve FR4 strength",
+            "charge capacitors safely from heat",
+            "tin the tip automatically"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rework",
+      "title": "Rework tips",
+      "summary": "Fixing mistakes without making new ones.",
+      "sections": [
+        {
+          "p": "<b>Rework</b> is deliberate repair: remove bridges, replace a wrong resistor, swap a damaged connector. Plan the heat path. Use fresh flux. Support connectors so you do not tear pads when pulling."
+        },
+        {
+          "h": "Bridges on fine pitch",
+          "p": "Add flux, touch with a clean tip, and draw excess along the row — or use braid. A little solder plus flux often clears bridges better than a dry tip."
+        },
+        {
+          "h": "Replacing a through-hole part",
+          "p": "Clear each hole, pull the part, clean pads, insert the new part, solder. Verify orientation (diodes, electrolytics, ICs) before soldering all pins."
+        },
+        {
+          "h": "Hot air (preview)",
+          "p": "SMD rework often uses hot air at controlled temperature/flow. Aim evenly, use nozzles that fit, and mind nearby plastic connectors. Practice on scrap first — this is a skill of its own."
+        },
+        {
+          "h": "Know when to stop",
+          "p": "A board with shredded pads and lifted vias may cost more in time than a new board. Good judgement is part of rework."
+        }
+      ],
+      "practice": [
+        {
+          "answer": "confirm orientation",
+          "why": "Pin 1 mistakes are painful.",
+          "q": "Before soldering a replacement IC…",
+          "options": [
+            "confirm orientation",
+            "bend all pins randomly",
+            "skip pin 1 checks",
+            "power the board at 24 V"
+          ]
+        },
+        {
+          "answer": "flux plus heat / braid",
+          "why": "Flux is your friend.",
+          "q": "Clearing a fine-pitch bridge often needs…",
+          "options": [
+            "flux plus heat / braid",
+            "more solder only without flux",
+            "water immersion while powered",
+            "a hammer"
+          ]
+        },
+        {
+          "answer": "avoid lifting pads",
+          "why": "Mechanical stress kills pads.",
+          "q": "Support connectors during removal to…",
+          "options": [
+            "avoid lifting pads",
+            "increase ESD",
+            "melt plastic faster on purpose",
+            "short power rails"
+          ]
+        },
+        {
+          "answer": "scrap boards first",
+          "why": "Build skill safely.",
+          "q": "Practice hot air on…",
+          "options": [
+            "scrap boards first",
+            "your only production board",
+            "mains PSUs live",
+            "lithium packs"
+          ]
+        },
+        {
+          "answer": "helps wetting and heat transfer",
+          "why": "Rework loves flux.",
+          "q": "Fresh flux during rework…",
+          "options": [
+            "helps wetting and heat transfer",
+            "is never used",
+            "replaces solder alloy entirely",
+            "must be acid plumbing flux"
+          ]
+        },
+        {
+          "answer": "replace the board / stop digging",
+          "why": "Time vs value.",
+          "q": "Sometimes the best rework decision is…",
+          "options": [
+            "replace the board / stop digging",
+            "heat until the FR4 carbonises",
+            "add jumpers on every pin blindly",
+            "ignore bridges"
+          ]
+        }
+      ]
+    }
+  ]
+}
