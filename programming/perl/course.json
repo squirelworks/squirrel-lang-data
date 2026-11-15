@@ -1,0 +1,567 @@
+{
+  "schema": "programming-course@1",
+  "id": "perl",
+  "name": "Perl",
+  "title": "Perl, the text-wrangling language",
+  "intro": "Larry Wall released Perl in 1987 to pull reports out of messy text files, and it became the glue of early web servers and system administration: CGI scripts, log crunchers, build tools. Its motto is \"there's more than one way to do it\", and its regular expressions were so good that most other languages copied them. Variable names carry a sigil that says what they hold: <code>$</code> for one value, <code>@</code> for a list, <code>%</code> for a hash. These lessons use Perl 5, which still ships with most Linux and macOS systems. Every example is a whole script and shows exactly what it prints. To run one yourself, save it as <code>hello.pl</code> and type <code>perl hello.pl</code>.",
+  "comment": "#",
+  "keywords": [
+    "my",
+    "our",
+    "use",
+    "strict",
+    "warnings",
+    "feature",
+    "sub",
+    "return",
+    "if",
+    "elsif",
+    "else",
+    "unless",
+    "foreach",
+    "for",
+    "while",
+    "until",
+    "last",
+    "next",
+    "and",
+    "or",
+    "not",
+    "eq",
+    "ne",
+    "lt",
+    "gt",
+    "cmp",
+    "package",
+    "bless",
+    "local",
+    "die"
+  ],
+  "builtins": [
+    "print",
+    "say",
+    "push",
+    "pop",
+    "shift",
+    "sort",
+    "reverse",
+    "keys",
+    "values",
+    "exists",
+    "join",
+    "split",
+    "length",
+    "uc",
+    "lc",
+    "scalar",
+    "sprintf",
+    "printf",
+    "map",
+    "grep",
+    "open",
+    "close",
+    "chomp",
+    "bless",
+    "ref",
+    "die"
+  ],
+  "lessons": [
+    {
+      "id": "first",
+      "title": "Your first script",
+      "summary": "print, say, strict, and strings.",
+      "sections": [
+        {
+          "p": "Start every script with <code>use strict;</code> and <code>use warnings;</code>: they make Perl complain about typos and mistakes instead of guessing. <code>print</code> prints exactly what it is given, so you add <code>\"\\n\"</code> yourself. <code>use feature 'say';</code> turns on <code>say</code>, which is <code>print</code> with the newline added.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nprint \"Hello, squirrel!\\n\";\nsay \"Nuts: \", 42;",
+          "out": "Hello, squirrel!\nNuts: 42"
+        },
+        {
+          "h": "Variables and strings",
+          "p": "<code>my</code> creates a variable. A single value, called a <b>scalar</b>, has a <code>$</code> in front. The dot <code>.</code> joins strings and <code>x</code> repeats one. Inside double quotes a variable is replaced by its value; single quotes keep the text exactly as written.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nmy $name = \"Hazel\";\nmy $nuts = 7;\nsay \"Hi, \" . $name . \"!\";\nsay \"$name has $nuts nuts\";\nsay '$name has $nuts nuts';\nsay \"-\" x 10;",
+          "out": "Hi, Hazel!\nHazel has 7 nuts\n$name has $nuts nuts\n----------"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\n\nmy $tree = \"oak\";\nprint \"Up the $tree\\n\";\nprint 'Up the $tree';",
+          "options": [
+            "Up the oak\nUp the $tree",
+            "Up the oak\nUp the oak",
+            "Up the $tree\nUp the $tree",
+            "Up the $tree\nUp the oak"
+          ],
+          "answer": "Up the oak\nUp the $tree",
+          "why": "Double quotes put the variable's value in. Single quotes print the text as written."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nsay \"ab\" x 3;\nsay \"ab\" . 3;",
+          "options": ["ababab\nab3", "ab3\nababab", "ababab\nababab", "ab ab ab\nab3"],
+          "answer": "ababab\nab3",
+          "why": "x repeats a string the given number of times. The dot just joins."
+        },
+        {
+          "q": "What does use strict make Perl do?",
+          "options": [
+            "Refuse variables that weren't declared with my",
+            "Run faster",
+            "Turn on the say command",
+            "Print every line as it runs"
+          ],
+          "answer": "Refuse variables that weren't declared with my",
+          "why": "Without it, a misspelled variable name quietly becomes a new, empty variable."
+        }
+      ]
+    },
+    {
+      "id": "values",
+      "title": "Numbers, strings and comparing",
+      "summary": "One scalar type, two sets of comparison operators.",
+      "sections": [
+        {
+          "p": "A scalar can hold a number or a string, and Perl converts between them as needed: <code>\"4\" + 3</code> is 7, and <code>4 . 3</code> is the string \"43\". Division gives a fraction when one is needed. <code>int</code> drops the fraction and <code>%</code> gives the remainder; <code>**</code> raises to a power.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nsay 17 / 5;\nsay int(17 / 5);\nsay 17 % 5;\nsay 2 ** 10;\nsay \"4\" + 3;\nsay 4 . 3;",
+          "out": "3.4\n3\n2\n1024\n7\n43"
+        },
+        {
+          "h": "Two kinds of comparison",
+          "p": "Because a scalar may be either, Perl has separate operators for comparing numbers and strings. Numbers use symbols: <code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>. Strings use words: <code>eq</code>, <code>ne</code>, <code>lt</code>, <code>gt</code>. Picking the wrong one gives a surprising answer: as strings, <code>\"10\"</code> comes before <code>\"9\"</code>, because <code>1</code> sorts before <code>9</code>.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nsay 10 > 9 ? \"bigger\" : \"smaller\";\nsay \"10\" gt \"9\" ? \"bigger\" : \"smaller\";\nsay \"1.0\" == 1 ? \"same number\" : \"different\";\nsay \"1.0\" eq \"1\" ? \"same text\" : \"different text\";",
+          "out": "bigger\nsmaller\nsame number\ndifferent text"
+        },
+        {
+          "h": "Truth",
+          "p": "Perl has no separate true and false values. The number <code>0</code>, the strings <code>\"\"</code> and <code>\"0\"</code>, and <code>undef</code> (no value at all) count as false; everything else is true. <code>//</code> gives a fallback when a value is <code>undef</code>.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nfor my $v (0, 1, \"\", \"0\", \"0.0\", \"nuts\") {\n    say \"'$v' is \", ($v ? \"true\" : \"false\");\n}\nmy $found;\nsay $found // \"nothing yet\";",
+          "out": "'0' is false\n'1' is true\n'' is false\n'0' is false\n'0.0' is true\n'nuts' is true\nnothing yet"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nsay \"abc\" lt \"abd\" ? \"yes\" : \"no\";\nsay 100 < 20 ? \"yes\" : \"no\";",
+          "options": ["yes\nno", "no\nyes", "yes\nyes", "no\nno"],
+          "answer": "yes\nno",
+          "why": "lt compares letter by letter, and c comes before d. 100 < 20 compares numbers, and it is false."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nsay \"3 nuts\" =~ /^\\d/ ? \"starts with a digit\" : \"no digit\";\nsay 7 . 7 + 1;",
+          "options": [
+            "starts with a digit\n78",
+            "starts with a digit\n15",
+            "no digit\n78",
+            "starts with a digit\n771"
+          ],
+          "answer": "starts with a digit\n78",
+          "why": "Dot and + have the same priority and go left to right: 7 . 7 is \"77\", and \"77\" + 1 is 78."
+        },
+        {
+          "q": "Which of these values is true in Perl?",
+          "options": ["\"0.0\"", "0", "\"0\"", "\"\""],
+          "answer": "\"0.0\"",
+          "why": "Only 0, \"0\", \"\" and undef are false. \"0.0\" is a non-empty string that isn't exactly \"0\"."
+        }
+      ]
+    },
+    {
+      "id": "collections",
+      "title": "Arrays and hashes",
+      "summary": "@lists, %hashes, push, sort and keys.",
+      "sections": [
+        {
+          "p": "An array holds a list and its name starts with <code>@</code>. To read one element you write <code>$trees[0]</code>, with a <code>$</code>, because one element is a scalar. <code>push</code> adds to the end, <code>pop</code> takes from the end, and <code>scalar(@trees)</code> counts the elements. <code>$trees[-1]</code> is the last one.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nmy @trees = (\"oak\", \"ash\");\npush @trees, \"hazel\";\nsay scalar(@trees);\nsay $trees[0], \" \", $trees[-1];\nsay join(\", \", @trees);\nsay \"@trees\";\nmy $last = pop @trees;\nsay \"$last; left: @trees\";",
+          "out": "3\noak hazel\noak, ash, hazel\noak ash hazel\nhazel; left: oak ash"
+        },
+        {
+          "h": "Hashes",
+          "p": "A hash maps keys to values and its name starts with <code>%</code>. One value is <code>$stash{oak}</code>, again with a <code>$</code>. A hash keeps no order, so code that prints one usually walks through <code>sort keys %stash</code>. <code>exists</code> checks whether a key is there.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nmy %stash = (oak => 4, hazel => 9);\n$stash{beech} = 2;\n$stash{oak}++;\nfor my $tree (sort keys %stash) {\n    say \"$tree: $stash{$tree}\";\n}\nsay exists $stash{pine} ? \"pine found\" : \"no pine\";",
+          "out": "beech: 2\nhazel: 9\noak: 5\nno pine"
+        },
+        {
+          "h": "sort, map and grep",
+          "p": "<code>sort</code> on its own sorts as strings. For numbers, give it a block: <code>sort { $a &lt;=&gt; $b }</code>, where <code>&lt;=&gt;</code> compares two numbers. <code>grep</code> keeps the items whose block is true and <code>map</code> changes each one; inside both, <code>$_</code> is the current item.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nmy @nuts = (5, 12, 3, 8, 20);\nsay join \" \", sort @nuts;\nsay join \" \", sort { $a <=> $b } @nuts;\nmy @big = grep { $_ > 4 } @nuts;\nmy @doubled = map { $_ * 2 } @big;\nsay \"@doubled\";",
+          "out": "12 20 3 5 8\n3 5 8 12 20\n10 24 16 40"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nmy @a = (\"x\", \"y\", \"z\");\nsay scalar(@a), $a[1], $a[-1];",
+          "options": ["3yz", "2yz", "3xz", "3zy"],
+          "answer": "3yz",
+          "why": "There are three elements. Index 1 is the second one, y, and -1 is the last, z."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nsay join \",\", sort (9, 10, 100);",
+          "options": ["10,100,9", "9,10,100", "100,10,9", "9,100,10"],
+          "answer": "10,100,9",
+          "why": "Plain sort compares as strings, character by character, so anything starting with 1 comes before 9."
+        },
+        {
+          "q": "Why is one element of @trees written $trees[0]?",
+          "options": [
+            "One element is a single scalar value",
+            "It is a typo Perl forgives",
+            "$ means the first element",
+            "Arrays can't be indexed with @"
+          ],
+          "answer": "One element is a single scalar value",
+          "why": "The sigil tells you what you get back: $ for one value, @ for a list."
+        }
+      ]
+    },
+    {
+      "id": "control",
+      "title": "Decisions and loops",
+      "summary": "if, unless, statement modifiers, foreach, last and next.",
+      "sections": [
+        {
+          "p": "<code>if</code>, <code>elsif</code> and <code>else</code> work as in other languages, and the braces are always required. <code>unless</code> is the opposite of <code>if</code>. For one short statement Perl lets you put the condition after it, which reads like English: <code>say \"feast\" if $nuts &gt; 20;</code>.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nmy $nuts = 12;\nif ($nuts > 20) {\n    say \"feast\";\n} elsif ($nuts > 10) {\n    say \"good day\";\n} else {\n    say \"keep looking\";\n}\nsay \"time to bury some\" if $nuts > 10;\nsay \"still hungry\" unless $nuts > 5;",
+          "out": "good day\ntime to bury some"
+        },
+        {
+          "h": "Loops",
+          "p": "<code>foreach</code> (or just <code>for</code>) walks a list; <code>1..5</code> is the list of numbers from 1 to 5. <code>while</code> repeats while its test holds. <code>next</code> skips to the next pass and <code>last</code> leaves the loop.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nfor my $i (1..6) {\n    next if $i == 3;\n    last if $i == 5;\n    print \"$i \";\n}\nprint \"\\n\";\nmy $height = 1;\n$height *= 3 while $height < 20;\nsay $height;",
+          "out": "1 2 4 \n27"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nmy $n = 0;\n$n += $_ for 1..4;\nsay $n;",
+          "options": ["10", "4", "1234", "0"],
+          "answer": "10",
+          "why": "The modifier form of for runs the statement once per item with $_ set, so it adds 1, 2, 3 and 4."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nmy $cold = 0;\nsay \"go out\" unless $cold;\nsay \"stay in\" if $cold;",
+          "options": ["go out", "stay in", "go out\nstay in", "nothing"],
+          "answer": "go out",
+          "why": "$cold is 0, which is false, so unless runs its statement and if does not."
+        }
+      ]
+    },
+    {
+      "id": "regex",
+      "title": "Regular expressions",
+      "summary": "Matching, captures, substitution and split.",
+      "sections": [
+        {
+          "p": "Regular expressions are where Perl shines. <code>$text =~ /pattern/</code> is true when the pattern is found. <code>\\d</code> matches a digit, <code>\\w</code> a letter, digit or underscore, <code>+</code> means one or more, and brackets <b>capture</b> what they matched into <code>$1</code>, <code>$2</code> and so on.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nmy $line = \"Hazel buried 12 nuts on day 3\";\nif ($line =~ /(\\w+) buried (\\d+) nuts/) {\n    say \"who: $1\";\n    say \"how many: $2\";\n}\nsay \"mentions a day\" if $line =~ /day \\d/;",
+          "out": "who: Hazel\nhow many: 12\nmentions a day"
+        },
+        {
+          "h": "Substitution and every match",
+          "p": "<code>s/old/new/</code> replaces the first match; add <code>g</code> to replace them all, and <code>i</code> to ignore case. In list context a match with <code>g</code> returns every capture at once, which makes pulling all the numbers out of a line a one-liner.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nmy $note = \"Oak oak OAK\";\n(my $quiet = $note) =~ s/oak/elm/gi;\nsay $quiet;\nmy @numbers = (\"3 nuts, 12 seeds, 7 berries\" =~ /(\\d+)/g);\nsay \"@numbers\";",
+          "out": "elm elm elm\n3 12 7"
+        },
+        {
+          "h": "split and join",
+          "p": "<code>split</code> breaks a string apart wherever a pattern matches, and <code>join</code> glues a list back together. Together with a hash they turn a line of a data file into named fields.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nmy $row = \"hazel:9:autumn\";\nmy ($tree, $nuts, $season) = split /:/, $row;\nsay \"$tree gave $nuts in $season\";\nmy @words = split /\\s+/, \"  up   the   tree \";\nsay scalar(@words), \": \", join(\"|\", @words);",
+          "out": "hazel gave 9 in autumn\n4: |up|the|tree"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nmy $s = \"nut nut nut\";\n$s =~ s/nut/acorn/;\nsay $s;",
+          "options": [
+            "acorn nut nut",
+            "acorn acorn acorn",
+            "nut nut acorn",
+            "nut nut nut"
+          ],
+          "answer": "acorn nut nut",
+          "why": "Without the g flag, s/// replaces only the first match."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\n\"2026-11-04\" =~ /(\\d+)-(\\d+)-(\\d+)/;\nsay \"$3/$2/$1\";",
+          "options": ["04/11/2026", "2026/11/04", "11/04/2026", "$3/$2/$1"],
+          "answer": "04/11/2026",
+          "why": "The three brackets capture year, month and day into $1, $2 and $3, and the line prints them in reverse."
+        },
+        {
+          "q": "What does \\d+ match?",
+          "options": [
+            "One or more digits",
+            "Exactly one digit",
+            "The letter d and a plus sign",
+            "Any character"
+          ],
+          "answer": "One or more digits",
+          "why": "\\d is any digit and + means one or more of the thing before it."
+        }
+      ]
+    },
+    {
+      "id": "subs",
+      "title": "Subroutines and references",
+      "summary": "sub, @_, returning lists, and nested data with references.",
+      "sections": [
+        {
+          "p": "<code>sub</code> defines a subroutine. The arguments arrive in the array <code>@_</code>; the usual first line copies them into named variables with <code>my ($a, $b) = @_;</code>. A sub can return a list, and the caller can unpack it straight into variables.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nsub share {\n    my ($nuts, $squirrels) = @_;\n    $squirrels //= 2;\n    return (int($nuts / $squirrels), $nuts % $squirrels);\n}\n\nmy ($each, $left) = share(17, 5);\nsay \"$each each, $left left over\";\nsay join \" \", share(9);",
+          "out": "3 each, 2 left over\n4 1"
+        },
+        {
+          "h": "References",
+          "p": "An array or hash can't sit directly inside another one, so Perl uses <b>references</b>: a scalar that points at the real data. <code>[...]</code> makes a reference to a new array and <code>{...}</code> to a new hash. <code>-&gt;</code> follows the reference, and <code>@{...}</code> gets the whole list back. This is how Perl builds records and nested data.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nmy %squirrel = (\n    name  => \"Hazel\",\n    stash => [3, 4, 5],\n    home  => { tree => \"oak\", height => 12 },\n);\nsay $squirrel{name};\nsay $squirrel{stash}->[1];\nsay $squirrel{home}->{tree};\npush @{ $squirrel{stash} }, 6;\nsay scalar @{ $squirrel{stash} };",
+          "out": "Hazel\n4\noak\n4"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nsub biggest {\n    my $max = shift;\n    for (@_) { $max = $_ if $_ > $max }\n    return $max;\n}\nsay biggest(4, 19, 7);",
+          "options": ["19", "4", "7", "30"],
+          "answer": "19",
+          "why": "shift takes the first argument as the starting max, and the loop checks the rest."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nmy $list = [10, 20, 30];\nmy $copy = $list;\npush @$copy, 40;\nsay scalar @$list;",
+          "options": ["4", "3", "40", "1"],
+          "answer": "4",
+          "why": "Copying a reference copies the pointer, not the array. Both names point at the same array, which now has four items."
+        }
+      ]
+    },
+    {
+      "id": "files",
+      "title": "Reading and writing files",
+      "summary": "open, readline, chomp, and the diamond operator.",
+      "sections": [
+        {
+          "p": "<code>open</code> ties a filehandle to a path. The mode <code>'&gt;'</code> writes (replacing any old file), <code>'&lt;'</code> reads, and <code>'&gt;&gt;'</code> appends. Always check the open with <code>or die $!</code>: <code>$!</code> holds the system error. <code>&lt;$in&gt;</code> reads one line, and <code>chomp</code> strips the newline.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nopen my $out, '>', 'stash.txt' or die $!;\nprint {$out} \"acorn 6\\nhazelnut 2\\nwalnut 1\\n\";\nclose $out;\n\nopen my $in, '<', 'stash.txt' or die $!;\nwhile (my $line = <$in>) {\n    chomp $line;\n    my ($nut, $n) = split / /, $line;\n    say \"$nut => $n\";\n}\nclose $in;",
+          "out": "acorn => 6\nhazelnut => 2\nwalnut => 1"
+        },
+        {
+          "h": "The diamond operator",
+          "p": "<code>&lt;&gt;</code> reads from each file named in <code>@ARGV</code>, the same way a one-liner does. Inside a block you can set <code>@ARGV</code> for a moment with <code>local</code>, so a script can point the diamond at a chosen file.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nopen my $out, '>', 'stash.txt' or die $!;\nprint {$out} \"acorn 6\\nhazelnut 2\\nwalnut 1\\n\";\nclose $out;\n\n{\n    local @ARGV = ('stash.txt');\n    my $total = 0;\n    while (<>) {\n        chomp;\n        my ($nut, $n) = split;\n        $total += $n;\n    }\n    say \"total $total\";\n}",
+          "out": "total 9"
+        },
+        {
+          "h": "Appending",
+          "p": "Mode <code>'&gt;&gt;'</code> adds to the end. <code>say {$log} ...</code> prints to that handle with a newline. Reading the file back afterwards shows both lines.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nopen my $log, '>>', 'log.txt' or die $!;\nsay {$log} \"day 1\";\nsay {$log} \"day 2\";\nclose $log;\n\nopen my $r, '<', 'log.txt' or die $!;\nprint while <$r>;\nclose $r;",
+          "out": "day 1\nday 2"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nopen my $fh, '>', 't.txt' or die $!;\nprint {$fh} \"a\\nb\\n\";\nclose $fh;\nopen my $in, '<', 't.txt' or die $!;\nmy @lines = <$in>;\nclose $in;\nsay scalar @lines;",
+          "options": ["2", "1", "3", "0"],
+          "answer": "2",
+          "why": "Two lines were written, and reading in list context returns one element per line."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nopen my $fh, '>', 'n.txt' or die $!;\nprint {$fh} \"x\";\nclose $fh;\nopen my $fh2, '>>', 'n.txt' or die $!;\nprint {$fh2} \"y\";\nclose $fh2;\nopen my $in, '<', 'n.txt' or die $!;\nlocal $/; say <$in>;\nclose $in;",
+          "options": ["xy", "y", "x", "x\ny"],
+          "answer": "xy",
+          "why": ">> appends y after x. Setting $/ to undef makes one read return the whole file."
+        },
+        {
+          "q": "What does chomp do to a line read with <>?",
+          "options": [
+            "Removes the trailing newline",
+            "Removes all spaces",
+            "Lowercases the line",
+            "Splits the line into words"
+          ],
+          "answer": "Removes the trailing newline",
+          "why": "<> keeps the newline; chomp strips it so the string is just the text."
+        }
+      ]
+    },
+    {
+      "id": "packages",
+      "title": "Packages and modules",
+      "summary": "package names, qualified subs, and use for core modules.",
+      "sections": [
+        {
+          "p": "A <code>package</code> gives a namespace for subroutines. <code>MathNuts::share</code> calls <code>share</code> inside package <code>MathNuts</code>. Switching back to <code>package main</code> returns to the default namespace where the script began. Several packages can live in one file while you are learning; real modules usually get their own <code>.pm</code> file.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\npackage MathNuts;\nuse strict;\nuse warnings;\n\nsub share {\n    my ($nuts, $squirrels) = @_;\n    $squirrels //= 2;\n    return int($nuts / $squirrels);\n}\n\npackage main;\nsay MathNuts::share(17, 5);\nsay MathNuts::share(9);",
+          "out": "3\n4"
+        },
+        {
+          "h": "use loads a module",
+          "p": "<code>use List::Util qw(sum max);</code> loads a core module and imports the named subs into the current package. After that, <code>sum</code> and <code>max</code> work like built-ins. <code>qw(...)</code> is just a tidy list of words.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\nuse List::Util qw(sum max);\n\nmy @nuts = (5, 12, 3, 8);\nsay sum(@nuts);\nsay max(@nuts);\nsay sum(grep { $_ > 4 } @nuts);",
+          "out": "28\n12\n25"
+        },
+        {
+          "h": "our for package variables",
+          "p": "<code>my</code> is private to a block. <code>our</code> declares a package variable that other code can reach by name. They are handy for a shared setting; for most data, passing arguments is clearer.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\npackage Config;\nour $LIMIT = 10;\n\npackage main;\nsay \"limit $Config::LIMIT\";\n$Config::LIMIT = 4;\nsay \"limit $Config::LIMIT\";",
+          "out": "limit 10\nlimit 4"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\npackage Greeter;\nsub hello { my ($name) = @_; return \"Hi, $name\"; }\n\npackage main;\nsay Greeter::hello(\"Pip\");",
+          "options": ["Hi, Pip", "hello Pip", "Greeter", "Pip"],
+          "answer": "Hi, Pip",
+          "why": "Greeter::hello calls the sub in that package with Pip as $_[0]."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\nuse List::Util qw(min);\n\nsay min(9, 2, 7);",
+          "options": ["2", "9", "7", "18"],
+          "answer": "2",
+          "why": "min from List::Util returns the smallest number."
+        },
+        {
+          "q": "What is the difference between my $x and our $x?",
+          "options": [
+            "my is private to the block; our is a package variable others can name",
+            "our is faster",
+            "my is only for numbers",
+            "They are the same under strict"
+          ],
+          "answer": "my is private to the block; our is a package variable others can name",
+          "why": "our puts the name in the package symbol table; my does not."
+        }
+      ]
+    },
+    {
+      "id": "objects",
+      "title": "Blessed objects",
+      "summary": "bless, methods with ->, and a tiny class.",
+      "sections": [
+        {
+          "p": "Perl's classic objects are hashes (or other references) that have been <code>bless</code>ed into a package. <code>$class->new(...)</code> calls <code>new</code> as a <b>class method</b>; inside it, <code>bless $hash, $class</code> marks the hash as belonging to that package. Afterwards <code>$obj->add(4)</code> calls <code>add</code> with the object as the first argument.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\npackage Stash;\nuse strict;\nuse warnings;\n\nsub new {\n    my ($class, %args) = @_;\n    return bless {\n        name => $args{name} // 'anon',\n        nuts => $args{nuts} // 0,\n    }, $class;\n}\n\nsub add {\n    my ($self, $n) = @_;\n    $self->{nuts} += $n;\n    return $self->{nuts};\n}\n\nsub report {\n    my ($self) = @_;\n    return \"$self->{name} has $self->{nuts}\";\n}\n\npackage main;\nmy $s = Stash->new(name => 'Hazel', nuts => 3);\nsay $s->add(4);\nsay $s->report;",
+          "out": "7\nHazel has 7"
+        },
+        {
+          "h": "Methods that return the object",
+          "p": "Returning <code>$self</code> lets the caller chain calls. Each method still receives the same blessed hash.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\npackage Counter;\nuse strict;\nuse warnings;\n\nsub new { bless { n => 0 }, $_[0] }\nsub tick { my ($self) = @_; $self->{n}++; return $self; }\nsub value { $_[0]{n} }\n\npackage main;\nsay Counter->new->tick->tick->tick->value;",
+          "out": "3"
+        },
+        {
+          "h": "ref and inheritance with @ISA",
+          "p": "<code>ref $obj</code> gives the package name a reference was blessed into (or the plain type for an unblessed reference). A package can list parents in <code>@ISA</code>; method lookup walks that list.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\npackage Animal;\nsub sound { '...' }\n\npackage Squirrel;\nour @ISA = ('Animal');\nsub sound { 'chitter' }\n\npackage main;\nmy $a = bless {}, 'Animal';\nmy $s = bless {}, 'Squirrel';\nsay ref $a, ' ', $a->sound;\nsay ref $s, ' ', $s->sound;\nsay ref [];",
+          "out": "Animal ...\nSquirrel chitter\nARRAY"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\npackage Box;\nsub new { bless { n => $_[1] }, $_[0] }\nsub n { $_[0]{n} }\n\npackage main;\nmy $b = Box->new(5);\nsay ref($b), ' ', $b->n;",
+          "options": ["Box 5", "HASH 5", "Box n", "5 5"],
+          "answer": "Box 5",
+          "why": "bless tags the hash as Box, so ref returns Box, and n reads the field."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\npackage T;\nsub new { bless { v => 0 }, shift }\nsub bump { my ($s) = @_; $s->{v} += 2; $s }\nsub v { $_[0]{v} }\n\npackage main;\nsay T->new->bump->bump->v;",
+          "options": ["4", "2", "0", "T"],
+          "answer": "4",
+          "why": "Two bumps add 2 each; returning $s keeps the chain on one object."
+        },
+        {
+          "q": "What does bless $href, $class do?",
+          "options": [
+            "Marks the reference as an object of that package so -> finds its methods",
+            "Copies the hash into a new class",
+            "Converts the hash into a string",
+            "Imports the class into main"
+          ],
+          "answer": "Marks the reference as an object of that package so -> finds its methods",
+          "why": "That tag is what turns a plain hash reference into a Perl object."
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Project: a nut ledger",
+      "summary": "Parse lines into hashes, total with a hash, and print a table.",
+      "sections": [
+        {
+          "p": "This script walks a ledger of lines such as <code>day 3: acorn x9</code>. A regex pulls each good line into a hash; bad lines are reported and skipped. A hash of totals feeds a sorted table with percentages, and a final pass picks the biggest single find — the same shape as a small report you might write for a log file.",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nmy @ledger = (\n    'day 1: acorn x6',\n    'day 1: hazelnut x2',\n    'day 2: walnut x1',\n    'day two: acorn x3',\n    'day 3: acorn x9',\n    'day 3: hazelnut x4',\n    'day 4 acorn x5',\n);\n\nmy @entries;\nmy $num = 0;\nfor my $line (@ledger) {\n    $num++;\n    if ($line =~ /^day (\\d+): ([a-z]+) x(\\d+)$/) {\n        push @entries, { day => $1, nut => $2, count => $3 };\n    } else {\n        say \"skipped line $num: cannot read \\\"$line\\\"\";\n    }\n}\n\nmy %totals;\n$totals{ $_->{nut} } += $_->{count} for @entries;\nmy $all = 0;\n$all += $_ for values %totals;\n\nfor my $nut (sort { $totals{$b} <=> $totals{$a} || $a cmp $b } keys %totals) {\n    printf \"%-9s%3d%7.1f%%\\n\", $nut, $totals{$nut}, 100 * $totals{$nut} / $all;\n}\n\nmy ($best) = sort { $b->{count} <=> $a->{count} } @entries;\nsay \"best find: $best->{count} $best->{nut} on day $best->{day}\";",
+          "out": "skipped line 4: cannot read \"day two: acorn x3\"\nskipped line 7: cannot read \"day 4 acorn x5\"\nacorn     15   68.2%\nhazelnut   6   27.3%\nwalnut     1    4.5%\nbest find: 9 acorn on day 3"
+        },
+        {
+          "h": "Ideas to try",
+          "p": "Read the ledger from a file with <code>while (&lt;&gt;)</code>, wrap the parser in a <code>package Ledger</code> with a blessed object that holds the totals, or warn when a nut name is not in a fixed list."
+        }
+      ],
+      "practice": [
+        {
+          "q": "Why store each entry as a hash like { day => 1, nut => \"acorn\", count => 6 }?",
+          "options": [
+            "Named fields stay clear when you sort and total later",
+            "Hashes are the only way to store numbers",
+            "Arrays cannot hold three values",
+            "Perl requires hashes for printf"
+          ],
+          "answer": "Named fields stay clear when you sort and total later",
+          "why": "$_->{count} reads better than $_->[2] once the script grows."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nmy %t = (acorn => 3, walnut => 3, hazel => 1);\nsay join ',', sort { $t{$b} <=> $t{$a} || $a cmp $b } keys %t;",
+          "options": [
+            "acorn,walnut,hazel",
+            "walnut,acorn,hazel",
+            "hazel,acorn,walnut",
+            "acorn,hazel,walnut"
+          ],
+          "answer": "acorn,walnut,hazel",
+          "why": "Count 3 ties are broken by name, so acorn before walnut, then hazel with 1."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use strict;\nuse warnings;\nuse feature 'say';\n\nmy @e = ({ n => 2 }, { n => 9 }, { n => 4 });\nmy ($best) = sort { $b->{n} <=> $a->{n} } @e;\nsay $best->{n};",
+          "options": ["9", "2", "4", "15"],
+          "answer": "9",
+          "why": "Sorting by n descending puts 9 first, and list assignment takes that one hash."
+        }
+      ]
+    }
+  ]
+}
