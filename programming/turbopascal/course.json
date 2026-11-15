@@ -1,0 +1,672 @@
+{
+  "schema": "programming-course@1",
+  "id": "turbopascal",
+  "name": "Turbo Pascal",
+  "title": "Turbo Pascal: structured programming on DOS",
+  "intro": "Turbo Pascal was Borland's Pascal for CP/M and DOS, first released in 1983. It was fast and cheap, and it came with an editor, compiler and debugger in one blue screen, so for a decade it was how a great many people learned to program, at school and at home. Pascal itself was designed by Niklaus Wirth to teach structured programming: declare everything first, keep blocks clearly nested, and let the compiler catch type mistakes. Turbo Pascal grew into Borland Pascal and then into Delphi, whose courses are in this learner too. These lessons use Turbo Pascal 7 style. Every example is a whole program and shows exactly what it prints. To run one today, use Free Pascal (<code>fpc -Mtp hello.pas</code>), or the original IDE in a DOS emulator such as DOSBox.",
+  "comment": "//",
+  "keywords": [
+    "PROGRAM",
+    "USES",
+    "TYPE",
+    "RECORD",
+    "VAR",
+    "CONST",
+    "BEGIN",
+    "END",
+    "PROCEDURE",
+    "FUNCTION",
+    "IF",
+    "THEN",
+    "ELSE",
+    "FOR",
+    "TO",
+    "DOWNTO",
+    "DO",
+    "WHILE",
+    "REPEAT",
+    "UNTIL",
+    "CASE",
+    "OF",
+    "AND",
+    "OR",
+    "NOT",
+    "DIV",
+    "MOD",
+    "IN",
+    "ARRAY",
+    "SET",
+    "STRING",
+    "INTEGER",
+    "LONGINT",
+    "REAL",
+    "CHAR",
+    "BOOLEAN",
+    "BYTE",
+    "TRUE",
+    "FALSE",
+    "WITH",
+    "UNIT",
+    "INTERFACE",
+    "IMPLEMENTATION",
+    "TEXT",
+    "FILE",
+    "OBJECT",
+    "NIL"
+  ],
+  "builtins": [
+    "WRITELN",
+    "WRITE",
+    "READLN",
+    "LENGTH",
+    "COPY",
+    "POS",
+    "CONCAT",
+    "UPCASE",
+    "ORD",
+    "CHR",
+    "INC",
+    "DEC",
+    "SIZEOF",
+    "CLRSCR",
+    "GOTOXY",
+    "TEXTCOLOR",
+    "ASSIGN",
+    "RESET",
+    "REWRITE",
+    "APPEND",
+    "CLOSE",
+    "EOF",
+    "EOLN",
+    "VAL",
+    "NEW",
+    "DISPOSE"
+  ],
+  "lessons": [
+    {
+      "id": "first",
+      "title": "Your first program",
+      "summary": "program, begin ... end., Write and WriteLn, comments.",
+      "sections": [
+        {
+          "p": "A Pascal program has a name, then a block between <code>begin</code> and <code>end.</code> (with a full stop at the very end). Statements are separated by semicolons. <code>WriteLn</code> prints its items and ends the line; <code>Write</code> prints without ending it. Comments go between <code>{ }</code> or <code>(* *)</code>.",
+          "code": "program Hello;\n{ Prints two lines }\nbegin\n  WriteLn('Hello, squirrel!');\n  Write('Nuts ');\n  WriteLn('are ready.');\nend.",
+          "out": "Hello, squirrel!\nNuts are ready."
+        },
+        {
+          "h": "Case does not matter",
+          "p": "Pascal ignores upper and lower case in keywords and names, so <code>WRITELN</code>, <code>writeln</code> and <code>WriteLn</code> are the same. Strings are written with single quotes, and a quote inside a string is doubled.",
+          "code": "program Quotes;\nbegin\n  WRITELN('It''s Pascal');\n  writeln('one', 'two');\nend.",
+          "out": "It's Pascal\nonetwo"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "program Q1;\nbegin\n  Write('A');\n  Write('B');\n  WriteLn('C');\nend.",
+          "options": ["ABC", "A\nB\nC", "AB\nC", "A B C"],
+          "answer": "ABC",
+          "why": "Write does not end the line, so A, B and C all land on one line, and WriteLn ends it.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "program Q2;\nbegin\n  { WriteLn('hidden'); }\n  WriteLn('shown');\nend.",
+          "options": [
+            "shown",
+            "hidden\nshown",
+            "{ WriteLn('hidden'); }\nshown",
+            "Nothing"
+          ],
+          "answer": "shown",
+          "why": "Everything between { and } is a comment.",
+          "kind": "output"
+        },
+        {
+          "q": "What ends a Pascal program?",
+          "options": ["end. with a full stop", "end;", "stop", "halt"],
+          "answer": "end. with a full stop",
+          "why": "Inner blocks end with end; but the main block ends with end. and the compiler stops reading there."
+        },
+        {
+          "q": "Which company made Turbo Pascal?",
+          "options": ["Borland", "Microsoft", "IBM", "Apple"],
+          "answer": "Borland",
+          "why": "Borland released it in 1983. Its line continued as Borland Pascal and then Delphi."
+        }
+      ]
+    },
+    {
+      "id": "types",
+      "title": "Variables and types",
+      "summary": "var blocks, Integer, Real, Char, Boolean, and field widths.",
+      "sections": [
+        {
+          "p": "Every variable is declared in a <code>var</code> section before <code>begin</code>. Assignment is <code>:=</code>, and <code>=</code> is only for comparing. <code>/</code> always gives a Real; <code>div</code> and <code>mod</code> are whole-number division and remainder.",
+          "code": "program Vars;\nvar\n  Nuts, Trees: Integer;\n  Name: string;\nbegin\n  Nuts := 17;\n  Trees := 5;\n  Name := 'Hazel';\n  WriteLn(Name, ' has ', Nuts, ' nuts');\n  WriteLn(Nuts div Trees, ' each, ', Nuts mod Trees, ' left over');\nend.",
+          "out": "Hazel has 17 nuts\n3 each, 2 left over"
+        },
+        {
+          "h": "Field widths",
+          "p": "In <code>Write</code> and <code>WriteLn</code>, <code>x:8</code> prints <code>x</code> right-aligned in 8 characters, and for a Real, <code>x:8:2</code> also sets 2 digits after the point. This is how Pascal programs lined up columns of numbers. Always give a Real a width; without one it prints in scientific notation.",
+          "code": "program Widths;\nvar\n  Price: Real;\nbegin\n  Price := 2 / 3;\n  WriteLn('[', 42:5, ']');\n  WriteLn('[', Price:8:3, ']');\n  WriteLn('[', 'ab':4, ']');\nend.",
+          "out": "[   42]\n[   0.667]\n[  ab]"
+        },
+        {
+          "h": "Integer is 16 bits",
+          "p": "On DOS, <code>Integer</code> is only 16 bits, from −32768 to 32767. Go past the top and it wraps round to the bottom without any warning, unless range checking is switched on with <code>{$R+}</code> and <code>{$Q+}</code>. Use <code>LongInt</code> (32 bits) for bigger numbers.",
+          "code": "program Wrap;\nvar\n  I: Integer;\n  L: LongInt;\nbegin\n  I := 32767;\n  I := I + 1;\n  WriteLn(I);\n  L := 32767;\n  L := L + 1;\n  WriteLn(L);\nend.",
+          "out": "-32768\n32768"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "program Q1;\nbegin\n  WriteLn(17 div 5, ' ', 17 mod 5);\nend.",
+          "options": ["3 2", "3.4 0", "2 3", "3 0"],
+          "answer": "3 2",
+          "why": "div gives the whole number of times 5 fits into 17, and mod gives what is left.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "program Q2;\nbegin\n  WriteLn('[', 7:3, ']');\nend.",
+          "options": ["[  7]", "[7  ]", "[007]", "[7]"],
+          "answer": "[  7]",
+          "why": "A width of 3 right-aligns the number in three characters, padding with spaces on the left.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "program Q3;\nvar\n  X: Real;\nbegin\n  X := 10 / 4;\n  WriteLn(X:0:2);\nend.",
+          "options": ["2.50", "2", "2.5", "2.00"],
+          "answer": "2.50",
+          "why": "/ always gives a Real, and :0:2 prints it with exactly two decimals and no padding.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "program Q4;\nvar\n  I: Integer;\nbegin\n  I := -32768;\n  I := I - 1;\n  WriteLn(I);\nend.",
+          "options": ["32767", "-32769", "0", "-32768"],
+          "answer": "32767",
+          "why": "A 16-bit Integer wraps at both ends: one below −32768 is 32767.",
+          "kind": "output"
+        },
+        {
+          "q": "What is the difference between := and = in Pascal?",
+          "options": [
+            ":= assigns, = compares",
+            "They are the same",
+            "= assigns, := compares",
+            ":= is only for constants"
+          ],
+          "answer": ":= assigns, = compares",
+          "why": "Pascal keeps them apart on purpose, so if X = 1 can never accidentally change X."
+        }
+      ]
+    },
+    {
+      "id": "control",
+      "title": "Decisions and loops",
+      "summary": "if, case, for, while and repeat ... until.",
+      "sections": [
+        {
+          "p": "<code>if ... then ... else</code> picks between two statements. To run several statements, wrap them in <code>begin ... end</code>. There is no semicolon before <code>else</code>. <code>case</code> picks by value, with ranges written <code>1..5</code>.",
+          "code": "program Decide;\nvar\n  Score: Integer;\nbegin\n  Score := 82;\n  if Score >= 50 then\n    WriteLn('Pass')\n  else\n    WriteLn('Try again');\n  case Score of\n    90..100: WriteLn('A');\n    80..89: WriteLn('B');\n    70..79: WriteLn('C');\n  else\n    WriteLn('Below C');\n  end;\nend.",
+          "out": "Pass\nB"
+        },
+        {
+          "h": "Three kinds of loop",
+          "p": "<code>for I := 1 to 3 do</code> counts up, and <code>downto</code> counts down. <code>while</code> checks before each pass, so it may not run at all. <code>repeat ... until</code> checks after each pass, so it always runs at least once, and it needs no <code>begin ... end</code>.",
+          "code": "program Loops;\nvar\n  I, N: Integer;\nbegin\n  for I := 1 to 3 do\n    Write(I, ' ');\n  WriteLn;\n  for I := 3 downto 1 do\n    Write(I, ' ');\n  WriteLn;\n  N := 1;\n  while N < 20 do\n    N := N * 2;\n  WriteLn(N);\n  N := 100;\n  repeat\n    N := N - 30;\n  until N < 0;\n  WriteLn(N);\nend.",
+          "out": "1 2 3\n3 2 1\n32\n-20"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "program Q1;\nvar\n  I, Total: Integer;\nbegin\n  Total := 0;\n  for I := 1 to 4 do\n    Total := Total + I;\n  WriteLn(Total);\nend.",
+          "options": ["10", "4", "6", "24"],
+          "answer": "10",
+          "why": "1 + 2 + 3 + 4 is 10.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "program Q2;\nvar\n  N: Integer;\nbegin\n  N := 5;\n  repeat\n    WriteLn('once');\n  until N > 3;\nend.",
+          "options": ["once", "Nothing", "once\nonce", "It loops forever"],
+          "answer": "once",
+          "why": "repeat checks its condition after the body, so the body runs once even though N > 3 is already true.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "program Q3;\nvar\n  C: Char;\nbegin\n  C := 'e';\n  case C of\n    'a', 'e', 'i', 'o', 'u': WriteLn('vowel');\n  else\n    WriteLn('consonant');\n  end;\nend.",
+          "options": ["vowel", "consonant", "e", "vowel\nconsonant"],
+          "answer": "vowel",
+          "why": "A case label can list several values. 'e' is one of them.",
+          "kind": "output"
+        },
+        {
+          "q": "Why does if X > 1 then WriteLn('a'); else WriteLn('b'); not compile?",
+          "options": [
+            "There must be no semicolon before else",
+            "else needs begin",
+            "WriteLn cannot be used in if",
+            "X must be declared as Boolean"
+          ],
+          "answer": "There must be no semicolon before else",
+          "why": "The semicolon ends the if statement, so the compiler then finds an else with no if."
+        }
+      ]
+    },
+    {
+      "id": "procedures",
+      "title": "Procedures and functions",
+      "summary": "Declaring them before use, var parameters and nesting.",
+      "sections": [
+        {
+          "p": "Procedures and functions are declared before the main <code>begin</code>. A function returns its value by assigning to its own name. Parameters are copied in by default; mark one <code>var</code> and the procedure works on the caller's variable instead.",
+          "code": "program Procs;\nvar\n  Stash: Integer;\n\nfunction Square(N: Integer): Integer;\nbegin\n  Square := N * N;\nend;\n\nprocedure AddNuts(var Total: Integer; Extra: Integer);\nbegin\n  Total := Total + Extra;\nend;\n\nbegin\n  WriteLn(Square(6));\n  Stash := 10;\n  AddNuts(Stash, 5);\n  WriteLn(Stash);\nend.",
+          "out": "36\n15"
+        },
+        {
+          "h": "Nested procedures",
+          "p": "Pascal lets you declare a procedure inside another one. The inner procedure can use the outer one's variables and is invisible everywhere else, which keeps helpers close to the only place they are used.",
+          "code": "program Nested;\n\nprocedure Report(Count: Integer);\n  procedure Line(Ch: Char);\n  var\n    I: Integer;\n  begin\n    for I := 1 to Count do\n      Write(Ch);\n    WriteLn;\n  end;\nbegin\n  Line('=');\n  WriteLn(Count, ' acorns');\n  Line('=');\nend;\n\nbegin\n  Report(9);\nend.",
+          "out": "=========\n9 acorns\n========="
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "program Q1;\nvar\n  N: Integer;\n\nprocedure Bump(X: Integer);\nbegin\n  X := X + 10;\nend;\n\nbegin\n  N := 1;\n  Bump(N);\n  WriteLn(N);\nend.",
+          "options": ["1", "11", "10", "0"],
+          "answer": "1",
+          "why": "X is a copy of N because it is not a var parameter, so N is unchanged.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "program Q2;\nvar\n  N: Integer;\n\nprocedure Bump(var X: Integer);\nbegin\n  X := X + 10;\nend;\n\nbegin\n  N := 1;\n  Bump(N);\n  Bump(N);\n  WriteLn(N);\nend.",
+          "options": ["21", "11", "1", "20"],
+          "answer": "21",
+          "why": "With var, X is N itself, so each call adds 10 to it.",
+          "kind": "output"
+        },
+        {
+          "q": "How does a Turbo Pascal function return its value?",
+          "options": [
+            "By assigning to the function's own name",
+            "With a return statement",
+            "By printing it",
+            "With the result of the last line"
+          ],
+          "answer": "By assigning to the function's own name",
+          "why": "Square := N * N sets the result. Delphi later added the Result variable as well."
+        }
+      ]
+    },
+    {
+      "id": "strings",
+      "title": "Strings",
+      "summary": "Short strings, Length, Copy, Pos, Concat and the length byte.",
+      "sections": [
+        {
+          "p": "A Turbo Pascal <code>string</code> holds up to 255 characters, and <code>string[10]</code> holds at most 10; anything longer is cut off. Characters are numbered from 1. <code>Length</code>, <code>Copy(S, Start, Count)</code>, <code>Pos(Sub, S)</code> and <code>+</code> or <code>Concat</code> cover most needs, and <code>UpCase</code> capitalises one character.",
+          "code": "program Strs;\nvar\n  S: string;\n  Short: string[5];\nbegin\n  S := 'Hazelnut';\n  WriteLn(Length(S));\n  WriteLn(Copy(S, 1, 5));\n  WriteLn(Pos('nut', S));\n  WriteLn(S[1], UpCase(S[2]));\n  Short := 'Squirrel';\n  WriteLn(Short);\n  WriteLn('Oak' + 'Tree');\nend.",
+          "out": "8\nHazel\n6\nHA\nSquir\nOakTree"
+        },
+        {
+          "h": "The length byte",
+          "p": "A short string stores its length in position 0, as a character, followed by the text. <code>Ord(S[0])</code> is the same as <code>Length(S)</code>. Old programs sometimes set <code>S[0]</code> directly to shorten a string, which is fast but easy to get wrong.",
+          "code": "program LenByte;\nvar\n  S: string;\nbegin\n  S := 'Pinecone';\n  WriteLn(Ord(S[0]));\n  S[0] := Chr(4);\n  WriteLn(S);\nend.",
+          "out": "8\nPine"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "program Q1;\nvar\n  S: string;\nbegin\n  S := 'Squirrel';\n  WriteLn(Copy(S, 3, 4));\nend.",
+          "options": ["uirr", "quir", "irre", "Squi"],
+          "answer": "uirr",
+          "why": "Copy starts at position 3 (characters count from 1) and takes 4 characters.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "program Q2;\nvar\n  S: string[3];\nbegin\n  S := 'Acorn';\n  WriteLn(S, Length(S));\nend.",
+          "options": ["Aco3", "Acorn5", "Aco5", "Acorn3"],
+          "answer": "Aco3",
+          "why": "string[3] holds at most three characters, so the rest is cut off.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "program Q3;\nbegin\n  WriteLn(Pos('z', 'Hazel'), Pos('q', 'Hazel'));\nend.",
+          "options": ["30", "3-1", "20", "3"],
+          "answer": "30",
+          "why": "z is the third character, and Pos returns 0 when the text is not found. The two numbers are printed side by side.",
+          "kind": "output"
+        },
+        {
+          "q": "What is the longest a plain Turbo Pascal string can be?",
+          "options": [
+            "255 characters",
+            "65535 characters",
+            "As long as memory allows",
+            "80 characters"
+          ],
+          "answer": "255 characters",
+          "why": "The length is kept in one byte at position 0, so it can't go above 255."
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "title": "Arrays, records and sets",
+      "summary": "Typed arrays with any range, records, enumerations and sets.",
+      "sections": [
+        {
+          "p": "An array's index range is part of its type, and it can start anywhere: <code>array[1..5]</code>, <code>array[0..9]</code> or <code>array['A'..'Z']</code>. A <code>record</code> groups named fields, and <code>with</code> lets you use the fields without repeating the record's name.",
+          "code": "program DataTypes;\ntype\n  TTree = record\n    Name: string[10];\n    Nuts: Integer;\n  end;\nvar\n  Counts: array[1..3] of Integer;\n  Oak: TTree;\n  I, Total: Integer;\nbegin\n  Counts[1] := 12;\n  Counts[2] := 30;\n  Counts[3] := 5;\n  Total := 0;\n  for I := 1 to 3 do\n    Total := Total + Counts[I];\n  WriteLn(Total);\n  with Oak do\n  begin\n    Name := 'Oak';\n    Nuts := Total;\n  end;\n  WriteLn(Oak.Name, ': ', Oak.Nuts);\nend.",
+          "out": "47\nOak: 47"
+        },
+        {
+          "h": "Enumerations and sets",
+          "p": "An enumerated type lists its own values, and <code>Ord</code> gives each value's position, counting from 0. A <code>set</code> holds any group of values of a small type, and <code>in</code> tests whether a value is in it. Sets make checks like \"is this a vowel?\" short and fast.",
+          "code": "program Sets;\ntype\n  TSeason = (Spring, Summer, Autumn, Winter);\nvar\n  S: TSeason;\n  Busy: set of TSeason;\n  C: Char;\nbegin\n  Busy := [Autumn];\n  for S := Spring to Winter do\n    if S in Busy then\n      WriteLn(Ord(S), ' is busy');\n  C := 'e';\n  if C in ['a', 'e', 'i', 'o', 'u'] then\n    WriteLn(C, ' is a vowel');\nend.",
+          "out": "2 is busy\ne is a vowel"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "program Q1;\nvar\n  A: array[5..7] of Integer;\n  I: Integer;\nbegin\n  for I := 5 to 7 do\n    A[I] := I * 2;\n  WriteLn(A[6]);\nend.",
+          "options": ["12", "6", "14", "10"],
+          "answer": "12",
+          "why": "The array is indexed 5 to 7, so A[6] is the middle element, set to 6 × 2.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "program Q2;\ntype\n  TColour = (Red, Green, Blue);\nbegin\n  WriteLn(Ord(Blue));\nend.",
+          "options": ["2", "3", "1", "Blue"],
+          "answer": "2",
+          "why": "Enumerated values count from 0: Red is 0, Green 1, Blue 2.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "program Q3;\nvar\n  D: set of 1..9;\nbegin\n  D := [2, 4, 6];\n  if 4 in D then Write('yes ') else Write('no ');\n  if 5 in D then WriteLn('yes') else WriteLn('no');\nend.",
+          "options": ["yes no", "no yes", "yes yes", "no no"],
+          "answer": "yes no",
+          "why": "4 is in the set and 5 is not.",
+          "kind": "output"
+        }
+      ]
+    },
+    {
+      "id": "units",
+      "title": "Units and the DOS screen",
+      "summary": "uses Crt, writing your own unit, and the IDE.",
+      "sections": [
+        {
+          "p": "This lesson is reading material: the Crt unit needs a DOS text screen, so the examples show no output here."
+        },
+        {
+          "h": "The Crt unit",
+          "p": "<code>uses Crt;</code> gives a program control of the text screen: <code>ClrScr</code> clears it, <code>GotoXY(X, Y)</code> moves the cursor, <code>TextColor</code> and <code>TextBackground</code> pick from 16 colours, <code>ReadKey</code> waits for a key without echoing it, and <code>Delay</code> pauses for some milliseconds. Menus, games and the famous blue-and-yellow screens of the era were built this way.",
+          "code": "program Menu;\nuses Crt;\nvar\n  Key: Char;\nbegin\n  TextBackground(Blue);\n  ClrScr;\n  TextColor(Yellow);\n  GotoXY(30, 10);\n  Write('Press any key...');\n  Key := ReadKey;\n  TextColor(LightGray);\n  TextBackground(Black);\n  ClrScr;\nend."
+        },
+        {
+          "h": "Writing a unit",
+          "p": "A unit is a separately compiled module. Its <code>interface</code> part lists what other programs may use, and its <code>implementation</code> part holds the code. Change the implementation and the programs that use it do not need to change.",
+          "code": "unit Nuts;\n\ninterface\n\nfunction Share(Total, Squirrels: Integer): Integer;\n\nimplementation\n\nfunction Share(Total, Squirrels: Integer): Integer;\nbegin\n  Share := Total div Squirrels;\nend;\n\nend."
+        },
+        {
+          "h": "The IDE",
+          "p": "Turbo Pascal's IDE kept the editor, compiler and debugger in one program. F9 compiles, Ctrl+F9 runs, F7 and F8 step through the code a line at a time, and Ctrl+F7 adds a watch on a variable. Compiling took seconds even on slow machines, which is a big part of why it was loved."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does the interface part of a unit contain?",
+          "options": [
+            "What other programs may use",
+            "The code of every procedure",
+            "The program's main block",
+            "Comments only"
+          ],
+          "answer": "What other programs may use",
+          "why": "The interface is the public list. The code itself goes in the implementation part."
+        },
+        {
+          "q": "Which unit gives ClrScr and GotoXY?",
+          "options": ["Crt", "Dos", "System", "Graph"],
+          "answer": "Crt",
+          "why": "Crt handles the text screen and keyboard. Dos has file and system calls, and Graph draws in graphics modes."
+        },
+        {
+          "q": "What did Turbo Pascal's line eventually become?",
+          "options": ["Delphi", "Visual Basic", "C++Builder", "Lazarus"],
+          "answer": "Delphi",
+          "why": "Borland Pascal with Objects was followed by Delphi in 1995. Lazarus is a later, separate project built on Free Pascal."
+        }
+      ]
+    },
+    {
+      "id": "files",
+      "title": "Text files",
+      "summary": "Assign, Rewrite, Reset, Append, ReadLn and Close.",
+      "sections": [
+        {
+          "p": "A <code>Text</code> variable is a text file. <code>Assign</code> ties it to a path, <code>Rewrite</code> creates or replaces it, <code>Reset</code> opens it for reading, and <code>Close</code> finishes. <code>WriteLn(F, ...)</code> writes a line; <code>ReadLn(F, ...)</code> reads one. <code>Eof(F)</code> is true when there is nothing left to read. Parsing a line of words often means <code>ReadLn</code> into a string, then <code>Pos</code>, <code>Copy</code> and <code>Val</code>.",
+          "code": "program NutFile;\nvar\n  F: Text;\n  Line: string;\n  SpacePos, N, Code, Total: Integer;\n  Name: string;\nbegin\n  Assign(F, 'nuts.txt');\n  Rewrite(F);\n  WriteLn(F, 'acorn 12');\n  WriteLn(F, 'walnut 5');\n  WriteLn(F, 'hazel 9');\n  Close(F);\n  Assign(F, 'nuts.txt');\n  Reset(F);\n  Total := 0;\n  while not Eof(F) do\n  begin\n    ReadLn(F, Line);\n    SpacePos := Pos(' ', Line);\n    Name := Copy(Line, 1, SpacePos - 1);\n    Val(Copy(Line, SpacePos + 1, 255), N, Code);\n    WriteLn(Name, ' => ', N);\n    Total := Total + N;\n  end;\n  Close(F);\n  WriteLn('total ', Total);\nend.",
+          "out": "acorn => 12\nwalnut => 5\nhazel => 9\ntotal 26"
+        },
+        {
+          "h": "Append",
+          "p": "<code>Append</code> opens an existing text file so new <code>WriteLn</code> calls add at the end. After writing, close it and <code>Reset</code> again if you need to read the whole log back.",
+          "code": "program AppendDemo;\nvar\n  F: Text;\n  S: string;\nbegin\n  Assign(F, 'log.txt');\n  Rewrite(F);\n  WriteLn(F, 'day 1');\n  Close(F);\n  Assign(F, 'log.txt');\n  Append(F);\n  WriteLn(F, 'day 2');\n  Close(F);\n  Assign(F, 'log.txt');\n  Reset(F);\n  while not Eof(F) do\n  begin\n    ReadLn(F, S);\n    WriteLn(S);\n  end;\n  Close(F);\nend.",
+          "out": "day 1\nday 2"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "program Q1;\nvar\n  F: Text;\n  S: string;\nbegin\n  Assign(F, 't.txt');\n  Rewrite(F);\n  WriteLn(F, 'x');\n  WriteLn(F, 'y');\n  Close(F);\n  Assign(F, 't.txt');\n  Reset(F);\n  while not Eof(F) do\n  begin\n    ReadLn(F, S);\n    Write(S);\n  end;\n  Close(F);\n  WriteLn;\nend.",
+          "options": ["xy", "x\ny", "yx", "x y"],
+          "answer": "xy",
+          "why": "Write prints without a newline, so x and y land on one line.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "program Q2;\nvar\n  F: Text;\n  S: string;\nbegin\n  Assign(F, 'a.txt');\n  Rewrite(F);\n  WriteLn(F, 'oak');\n  Close(F);\n  Assign(F, 'a.txt');\n  Append(F);\n  WriteLn(F, 'elm');\n  Close(F);\n  Assign(F, 'a.txt');\n  Reset(F);\n  while not Eof(F) do\n  begin\n    ReadLn(F, S);\n    WriteLn(S);\n  end;\n  Close(F);\nend.",
+          "options": ["oak\nelm", "elm", "oak", "oakelm"],
+          "answer": "oak\nelm",
+          "why": "Append adds elm after the line already written by Rewrite.",
+          "kind": "output"
+        },
+        {
+          "q": "What does Assign do?",
+          "options": [
+            "Ties a file variable to a path, without opening it yet",
+            "Opens the file for reading",
+            "Deletes the file",
+            "Creates a unit"
+          ],
+          "answer": "Ties a file variable to a path, without opening it yet",
+          "why": "Rewrite, Reset or Append is what actually opens the file."
+        },
+        {
+          "q": "What does Val(S, N, Code) do?",
+          "options": [
+            "Converts text S into number N; Code is 0 when it worked",
+            "Only uppercases S",
+            "Opens file S",
+            "Splits S on spaces"
+          ],
+          "answer": "Converts text S into number N; Code is 0 when it worked",
+          "why": "Val is the Turbo Pascal way to parse a number from a string."
+        }
+      ]
+    },
+    {
+      "id": "pointers",
+      "title": "Pointers and linked lists",
+      "summary": "New, Dispose, ^ and a short chain of records.",
+      "sections": [
+        {
+          "p": "A pointer type is written <code>^T</code>: it holds the address of a <code>T</code>. <code>New(P)</code> allocates one on the heap and points <code>P</code> at it; <code>P^</code> is the value itself; <code>Dispose(P)</code> frees it. Linked structures use a pointer field inside a record. Always dispose what you new, in reverse order for a chain, or the heap leaks — on DOS that mattered quickly.",
+          "code": "program Ptrs;\ntype\n  PNode = ^TNode;\n  TNode = record\n    Nuts: Integer;\n    Next: PNode;\n  end;\nvar\n  Head, P: PNode;\n  Sum: Integer;\nbegin\n  New(Head);\n  Head^.Nuts := 3;\n  New(Head^.Next);\n  Head^.Next^.Nuts := 5;\n  New(Head^.Next^.Next);\n  Head^.Next^.Next^.Nuts := 7;\n  Head^.Next^.Next^.Next := nil;\n  Sum := 0;\n  P := Head;\n  while P <> nil do\n  begin\n    WriteLn(P^.Nuts);\n    Sum := Sum + P^.Nuts;\n    P := P^.Next;\n  end;\n  WriteLn('sum ', Sum);\n  Dispose(Head^.Next^.Next);\n  Dispose(Head^.Next);\n  Dispose(Head);\nend.",
+          "out": "3\n5\n7\nsum 15"
+        },
+        {
+          "h": "Forward type names",
+          "p": "Notice <code>PNode = ^TNode</code> before <code>TNode</code> is fully defined. Pascal allows that so a record can contain a pointer to its own type. <code>nil</code> means \"no node\", and is how the list ends."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "program Q1;\ntype\n  PInt = ^Integer;\nvar\n  P: PInt;\nbegin\n  New(P);\n  P^ := 9;\n  WriteLn(P^);\n  Dispose(P);\nend.",
+          "options": ["9", "0", "P", "nil"],
+          "answer": "9",
+          "why": "P^ is the Integer on the heap, set to 9.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "program Q2;\ntype\n  PNode = ^TNode;\n  TNode = record\n    N: Integer;\n    Next: PNode;\n  end;\nvar\n  A, B: PNode;\nbegin\n  New(A);\n  A^.N := 1;\n  New(B);\n  B^.N := 2;\n  B^.Next := nil;\n  A^.Next := B;\n  WriteLn(A^.Next^.N);\n  Dispose(B);\n  Dispose(A);\nend.",
+          "options": ["2", "1", "0", "nil"],
+          "answer": "2",
+          "why": "A^.Next is B, so A^.Next^.N is B's N.",
+          "kind": "output"
+        },
+        {
+          "q": "What does nil mean for a pointer?",
+          "options": [
+            "It points at nothing",
+            "It points at zero",
+            "It is uninitialized memory",
+            "It is the same as Dispose"
+          ],
+          "answer": "It points at nothing",
+          "why": "nil is the empty pointer value. Dispose frees memory; it does not by itself assign nil unless you do."
+        },
+        {
+          "q": "What does New(P) do?",
+          "options": [
+            "Allocates a value on the heap and points P at it",
+            "Creates a file named P",
+            "Zeros P^ only",
+            "Declares a new type"
+          ],
+          "answer": "Allocates a value on the heap and points P at it",
+          "why": "New is heap allocation. The matching free is Dispose."
+        }
+      ]
+    },
+    {
+      "id": "objects",
+      "title": "Objects",
+      "summary": "Turbo Pascal object types, methods and Init.",
+      "sections": [
+        {
+          "p": "From Turbo Pascal 5.5, an <code>object</code> type holds fields and <b>methods</b> (procedures and functions declared inside the type). Method bodies are written later as <code>TypeName.MethodName</code>. You call them with a dot on a variable of that object type. This is the OOP style that led toward Delphi; it is not yet the later <code>class</code> model.",
+          "code": "program Objs;\ntype\n  TStash = object\n    Name: string[12];\n    Count: Integer;\n    procedure Init(AName: string; ACount: Integer);\n    procedure Add(N: Integer);\n    function Share(Parts: Integer): Integer;\n    procedure Report;\n  end;\n\nprocedure TStash.Init(AName: string; ACount: Integer);\nbegin\n  Name := AName;\n  Count := ACount;\nend;\n\nprocedure TStash.Add(N: Integer);\nbegin\n  Count := Count + N;\nend;\n\nfunction TStash.Share(Parts: Integer): Integer;\nbegin\n  Share := Count div Parts;\nend;\n\nprocedure TStash.Report;\nbegin\n  WriteLn(Name, ': ', Count);\nend;\n\nvar\n  S: TStash;\nbegin\n  S.Init('Hazel', 10);\n  S.Add(5);\n  S.Report;\n  WriteLn('each ', S.Share(3));\nend.",
+          "out": "Hazel: 15\neach 5"
+        },
+        {
+          "h": "Static objects on the stack",
+          "p": "A plain <code>var S: TStash</code> lives like a record: no <code>New</code> needed. You can also allocate objects dynamically with <code>New</code> when you want polymorphism and virtual methods; that is a step further than this lesson."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "program Q1;\ntype\n  TBox = object\n    N: Integer;\n    procedure Inc;\n  end;\nprocedure TBox.Inc;\nbegin\n  N := N + 1;\nend;\nvar\n  B: TBox;\nbegin\n  B.N := 2;\n  B.Inc;\n  B.Inc;\n  WriteLn(B.N);\nend.",
+          "options": ["4", "2", "3", "0"],
+          "answer": "4",
+          "why": "Inc runs twice, so N goes from 2 to 4.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "program Q2;\ntype\n  TCounter = object\n    N: Integer;\n    procedure Init;\n    procedure Tick;\n  end;\nprocedure TCounter.Init;\nbegin\n  N := 0;\nend;\nprocedure TCounter.Tick;\nbegin\n  N := N + 10;\nend;\nvar\n  C: TCounter;\nbegin\n  C.Init;\n  C.Tick;\n  C.Tick;\n  WriteLn(C.N);\nend.",
+          "options": ["20", "10", "0", "2"],
+          "answer": "20",
+          "why": "Init sets 0, then two Tick calls add 10 each.",
+          "kind": "output"
+        },
+        {
+          "q": "How is a method body named?",
+          "options": [
+            "TypeName.MethodName",
+            "MethodName only",
+            "object.MethodName",
+            "implementation MethodName"
+          ],
+          "answer": "TypeName.MethodName",
+          "why": "TStash.Add tells the compiler which object type the method belongs to."
+        },
+        {
+          "q": "How does Turbo Pascal object differ from a later Delphi class?",
+          "options": [
+            "object is the older TP model; Delphi's class is reference-based with constructors",
+            "They are identical",
+            "object cannot have methods",
+            "class cannot have fields"
+          ],
+          "answer": "object is the older TP model; Delphi's class is reference-based with constructors",
+          "why": "These lessons stay with object, which Turbo Pascal 7 understands."
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Project: a nut ledger",
+      "summary": "Enums, event records and a small stock report.",
+      "sections": [
+        {
+          "p": "A ledger of six events updates a stock array indexed by nut kind. Each event is a record with a kind (found, ate or gift), a nut and a count. Applying an event either adds stock, subtracts it, or prints <code>skipped</code> when there are not enough nuts — the same shape as the inventory projects in the other courses, in Turbo Pascal 7 style.",
+          "code": "program NutLedger;\ntype\n  TKind = (Acorn, Walnut, Hazelnut);\n  TEventKind = (Found, Ate, Gift);\n  TEvent = record\n    Kind: TEventKind;\n    Nut: TKind;\n    Count: Integer;\n  end;\nvar\n  Stock: array[TKind] of Integer;\n  Events: array[1..6] of TEvent;\n  I: Integer;\n  K: TKind;\n  Names: array[TKind] of string[10];\n\nprocedure Apply(E: TEvent);\nbegin\n  case E.Kind of\n    Found: Stock[E.Nut] := Stock[E.Nut] + E.Count;\n    Ate, Gift:\n      if Stock[E.Nut] >= E.Count then\n        Stock[E.Nut] := Stock[E.Nut] - E.Count\n      else\n        WriteLn('skipped ', Names[E.Nut]);\n  end;\nend;\n\nbegin\n  Names[Acorn] := 'acorn';\n  Names[Walnut] := 'walnut';\n  Names[Hazelnut] := 'hazelnut';\n  for K := Acorn to Hazelnut do\n    Stock[K] := 0;\n  Events[1].Kind := Found; Events[1].Nut := Acorn; Events[1].Count := 8;\n  Events[2].Kind := Found; Events[2].Nut := Walnut; Events[2].Count := 3;\n  Events[3].Kind := Ate; Events[3].Nut := Acorn; Events[3].Count := 2;\n  Events[4].Kind := Gift; Events[4].Nut := Walnut; Events[4].Count := 5;\n  Events[5].Kind := Found; Events[5].Nut := Hazelnut; Events[5].Count := 4;\n  Events[6].Kind := Gift; Events[6].Nut := Acorn; Events[6].Count := 1;\n  for I := 1 to 6 do\n    Apply(Events[I]);\n  for K := Acorn to Hazelnut do\n    WriteLn(Names[K], ': ', Stock[K]);\nend.",
+          "out": "skipped walnut\nacorn: 5\nwalnut: 3\nhazelnut: 4"
+        },
+        {
+          "h": "Ideas to try",
+          "p": "Load the events from a text file with <code>Reset</code> and <code>Val</code>, store the stock in an <code>object</code> with <code>Apply</code> as a method, or keep the events in a linked list of pointers."
+        }
+      ],
+      "practice": [
+        {
+          "q": "Why is walnut skipped?",
+          "options": [
+            "The gift asks for 5 but only 3 are in stock",
+            "Walnut is not in TKind",
+            "Ate runs after Gift",
+            "Names[Walnut] is empty"
+          ],
+          "answer": "The gift asks for 5 but only 3 are in stock",
+          "why": "Found adds 3 walnuts; Gift 5 fails the Stock >= Count check."
+        },
+        {
+          "q": "What is the final acorn count?",
+          "options": ["5", "8", "6", "7"],
+          "answer": "5",
+          "why": "Start 0, found 8, ate 2, gift 1 leaves 5."
+        },
+        {
+          "q": "What does this print?",
+          "code": "program Q1;\ntype\n  TKind = (Acorn, Walnut);\nvar\n  Stock: array[TKind] of Integer;\nbegin\n  Stock[Acorn] := 4;\n  Stock[Walnut] := 1;\n  Stock[Acorn] := Stock[Acorn] - 2;\n  WriteLn(Stock[Acorn], ' ', Stock[Walnut]);\nend.",
+          "options": ["2 1", "4 1", "2 0", "4 2"],
+          "answer": "2 1",
+          "why": "Acorn drops by 2; Walnut is untouched.",
+          "kind": "output"
+        }
+      ]
+    }
+  ]
+}
