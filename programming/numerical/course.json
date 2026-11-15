@@ -1,0 +1,850 @@
+{
+  "schema": "programming-course@1",
+  "id": "numerical",
+  "name": "Numerical methods",
+  "title": "Numerical methods, one idea at a time",
+  "intro": "Numerical methods are the recipes computers use to get numbers out of maths that has no neat formula: the root of an equation, the area under a curve, the solution of a system of equations. This track explains each method in plain words, shows why it works and when it fails, and then implements it in several languages side by side, so you can compare how Python, C and Fortran say the same thing. Every implementation is tested against known values, and the versions in different languages must print the same answer. It assumes you can already write loops and functions in at least one of the languages. Topics arrive one at a time, starting with floating-point numbers and root finding. <br><br><b>Further reading:</b> W. H. Press, S. A. Teukolsky, W. T. Vetterling and B. P. Flannery, <i>Numerical Recipes: The Art of Scientific Computing</i>, 3rd edition, Cambridge University Press, 2007, covers these topics and many more in depth. The explanations and code in this track are our own and are not taken from that book.",
+  "lessons": [
+    {
+      "id": "floats",
+      "title": "Floating-point numbers",
+      "summary": "Why 0.1 + 0.2 is not 0.3, machine epsilon, and comparing with a tolerance.",
+      "sections": [
+        {
+          "p": "Almost every numerical method works on <b>floating-point</b> numbers: the <code>float</code> in Python, <code>double</code> in C and <code>real(real64)</code> in Fortran. They store a number in binary with about 16 significant decimal digits. Most decimal fractions, such as 0.1, have no exact binary form, so they are stored as the nearest value that fits, and small errors creep into every result. Printing more digits than usual shows the error."
+        },
+        {
+          "code": "a = 0.1 + 0.2\nprint(f\"{a:.17f}\")\nprint(a == 0.3)",
+          "out": "0.30000000000000004\nFalse"
+        },
+        {
+          "code": "#include <stdio.h>\nint main(void) {\n    double a = 0.1 + 0.2;\n    printf(\"%.17f\\n\", a);\n    printf(\"%s\\n\", a == 0.3 ? \"True\" : \"False\");\n    return 0;\n}",
+          "out": "0.30000000000000004\nFalse"
+        },
+        {
+          "h": "Machine epsilon",
+          "p": "<b>Machine epsilon</b> is the gap between 1 and the next number a double can hold, about 2.2 × 10<sup>−16</sup>. It sets the best relative accuracy you can hope for: answers are only ever right to roughly 15 or 16 significant digits. Adding something much smaller than epsilon to 1 changes nothing at all."
+        },
+        {
+          "code": "import sys\neps = sys.float_info.epsilon\nprint(f\"{eps:.3e}\")\nprint(1.0 + eps / 4 == 1.0)",
+          "out": "2.220e-16\nTrue"
+        },
+        {
+          "code": "program eps\n  use iso_fortran_env, only: real64\n  implicit none\n  real(real64) :: e\n  e = epsilon(1.0_real64)\n  print '(es10.3)', e\n  print '(l1)', 1.0_real64 + e / 4 == 1.0_real64\nend program eps",
+          "out": " 2.220E-16\nT"
+        },
+        {
+          "h": "Compare with a tolerance",
+          "p": "Because of these errors, never test two computed floats with <code>==</code>. Check that they are close instead: <code>abs(a - b) &lt; tol</code>, where the tolerance suits the size of the numbers. The methods in this track stop the same way, when a change gets smaller than a tolerance you choose.",
+          "code": "a = 0.1 + 0.2\ntol = 1e-12\nprint(abs(a - 0.3) < tol)",
+          "out": "True"
+        }
+      ],
+      "practice": [
+        {
+          "q": "Why does 0.1 + 0.2 == 0.3 come out false?",
+          "options": [
+            "0.1 and 0.2 have no exact binary form, so small errors add up",
+            "The computer adds wrongly",
+            "== does not work on numbers",
+            "0.3 is too big for a double"
+          ],
+          "answer": "0.1 and 0.2 have no exact binary form, so small errors add up",
+          "why": "Each value is stored as the nearest binary fraction, and the tiny errors make the sum differ from the stored 0.3 in the last digit."
+        },
+        {
+          "q": "About how many significant decimal digits does a double hold?",
+          "options": ["15 to 16", "6 to 7", "32", "As many as you need"],
+          "answer": "15 to 16",
+          "why": "A 64-bit double has a 53-bit mantissa, which is a little under 16 decimal digits. A 32-bit float has about 7."
+        },
+        {
+          "q": "What does this print?",
+          "code": "print(abs((0.1 + 0.2) - 0.3) < 1e-9)",
+          "options": ["True", "False", "0.0", "Error"],
+          "answer": "True",
+          "why": "The difference is about 5.6 × 10⁻¹⁷, far below the tolerance.",
+          "kind": "output"
+        },
+        {
+          "q": "How should you check that two computed doubles a and b are equal?",
+          "options": [
+            "abs(a - b) < tol, with a suitable tolerance",
+            "a == b",
+            "a - b == 0",
+            "int(a) == int(b)"
+          ],
+          "answer": "abs(a - b) < tol, with a suitable tolerance",
+          "why": "Computed values carry rounding errors, so exact equality fails when the maths says they should match."
+        }
+      ]
+    },
+    {
+      "id": "bisection",
+      "title": "Root finding: bisection",
+      "summary": "Halving an interval that brackets a sign change.",
+      "sections": [
+        {
+          "p": "A <b>root</b> of a function <i>f</i> is a value <i>x</i> where <i>f</i>(<i>x</i>) = 0. Finding √2, for example, is finding the root of <i>f</i>(<i>x</i>) = <i>x</i>² − 2. Many equations have no formula for their roots, so we search for them."
+        },
+        {
+          "h": "The idea",
+          "p": "If <i>f</i> is continuous and <i>f</i>(<i>a</i>) and <i>f</i>(<i>b</i>) have opposite signs, the curve must cross zero somewhere between <i>a</i> and <i>b</i>; the interval <b>brackets</b> a root. Look at the midpoint <i>m</i>. Whichever half still has a sign change keeps the root, so throw the other half away and repeat. Each step halves the interval, so after <i>n</i> steps it is (<i>b</i> − <i>a</i>) / 2<sup><i>n</i></sup> wide. Shrinking a width of 1 below 10<sup>−12</sup> takes 40 steps, because 2<sup>40</sup> is just over 10<sup>12</sup>."
+        },
+        {
+          "h": "Why use it",
+          "p": "Bisection always works once you have a bracket, and you know in advance how many steps it will take. It is slow, gaining one binary digit per step, and it needs a sign change, so it cannot find a root where the curve only touches zero, such as <i>x</i>² = 0. Below, the same function finds √2 and the root of cos <i>x</i> = <i>x</i> (about 0.739, the number you get by pressing cos over and over on a calculator)."
+        },
+        {
+          "code": "import math\n\ndef bisect(f, a, b, tol=1e-12):\n    fa = f(a)\n    if fa * f(b) > 0:\n        raise ValueError(\"f(a) and f(b) must have opposite signs\")\n    steps = 0\n    while b - a > tol:\n        m = (a + b) / 2\n        fm = f(m)\n        if fa * fm <= 0:    # the sign change is in [a, m]\n            b = m\n        else:               # the sign change is in [m, b]\n            a, fa = m, fm\n        steps += 1\n    return (a + b) / 2, steps\n\nroot, steps = bisect(lambda x: x * x - 2, 1.0, 2.0)\nprint(f\"{root:.10f} after {steps} steps\")\nroot, steps = bisect(lambda x: math.cos(x) - x, 0.0, 1.0)\nprint(f\"{root:.10f} after {steps} steps\")",
+          "out": "1.4142135624 after 40 steps\n0.7390851332 after 40 steps"
+        },
+        {
+          "p": "In C the function is passed as a pointer, and the step count comes back through a pointer argument.",
+          "code": "#include <math.h>\n#include <stdio.h>\n\ntypedef double (*func)(double);\n\ndouble bisect(func f, double a, double b, double tol, int *steps) {\n    double fa = f(a);\n    *steps = 0;\n    while (b - a > tol) {\n        double m = (a + b) / 2;\n        double fm = f(m);\n        if (fa * fm <= 0) {\n            b = m;\n        } else {\n            a = m;\n            fa = fm;\n        }\n        (*steps)++;\n    }\n    return (a + b) / 2;\n}\n\ndouble square_minus_two(double x) { return x * x - 2; }\ndouble cos_minus_x(double x) { return cos(x) - x; }\n\nint main(void) {\n    int steps;\n    double root = bisect(square_minus_two, 1.0, 2.0, 1e-12, &steps);\n    printf(\"%.10f after %d steps\\n\", root, steps);\n    root = bisect(cos_minus_x, 0.0, 1.0, 1e-12, &steps);\n    printf(\"%.10f after %d steps\\n\", root, steps);\n    return 0;\n}",
+          "out": "1.4142135624 after 40 steps\n0.7390851332 after 40 steps"
+        },
+        {
+          "p": "In Fortran an <code>abstract interface</code> describes the kind of function <code>bisect</code> accepts, and <code>procedure(fn)</code> declares the argument.",
+          "code": "program bisection\n  use iso_fortran_env, only: real64\n  implicit none\n  abstract interface\n    function fn(x) result(y)\n      import :: real64\n      real(real64), intent(in) :: x\n      real(real64) :: y\n    end function fn\n  end interface\n  real(real64) :: root\n  integer :: steps\n\n  call bisect(square_minus_two, 1.0_real64, 2.0_real64, 1.0e-12_real64, root, steps)\n  print '(f12.10, a, i0, a)', root, ' after ', steps, ' steps'\n  call bisect(cos_minus_x, 0.0_real64, 1.0_real64, 1.0e-12_real64, root, steps)\n  print '(f12.10, a, i0, a)', root, ' after ', steps, ' steps'\ncontains\n  subroutine bisect(f, a0, b0, tol, root, steps)\n    procedure(fn) :: f\n    real(real64), intent(in) :: a0, b0, tol\n    real(real64), intent(out) :: root\n    integer, intent(out) :: steps\n    real(real64) :: a, b, m, fa, fm\n    a = a0\n    b = b0\n    fa = f(a)\n    steps = 0\n    do while (b - a > tol)\n      m = (a + b) / 2\n      fm = f(m)\n      if (fa * fm <= 0) then\n        b = m\n      else\n        a = m\n        fa = fm\n      end if\n      steps = steps + 1\n    end do\n    root = (a + b) / 2\n  end subroutine bisect\n\n  function square_minus_two(x) result(y)\n    real(real64), intent(in) :: x\n    real(real64) :: y\n    y = x * x - 2\n  end function square_minus_two\n\n  function cos_minus_x(x) result(y)\n    real(real64), intent(in) :: x\n    real(real64) :: y\n    y = cos(x) - x\n  end function cos_minus_x\nend program bisection",
+          "out": "1.4142135624 after 40 steps\n0.7390851332 after 40 steps"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What must be true of f(a) and f(b) before bisection can start?",
+          "options": [
+            "They have opposite signs",
+            "They are equal",
+            "Both are positive",
+            "f(a) is zero"
+          ],
+          "answer": "They have opposite signs",
+          "why": "A sign change guarantees that a continuous function crosses zero between a and b."
+        },
+        {
+          "q": "The interval starts 1 wide. How many bisection steps make it narrower than 0.001?",
+          "options": ["10", "3", "100", "1000"],
+          "answer": "10",
+          "why": "After n steps the width is 1 / 2ⁿ, and 2¹⁰ = 1024 is the first power of two above 1000."
+        },
+        {
+          "q": "Bisection on f(x) = x − 0.3 over [0, 1]. Which half is kept after the first step?",
+          "code": "f = lambda x: x - 0.3\na, b = 0.0, 1.0\nm = (a + b) / 2\nif f(a) * f(m) <= 0:\n    b = m\nelse:\n    a = m\nprint(a, b)",
+          "options": ["0.0 0.5", "0.5 1.0", "0.0 1.0", "0.3 0.5"],
+          "answer": "0.0 0.5",
+          "why": "f(0) = −0.3 and f(0.5) = 0.2 have opposite signs, so the root is in the left half.",
+          "kind": "output"
+        },
+        {
+          "q": "Why can bisection not find the root of f(x) = x² at 0?",
+          "options": [
+            "The function touches zero without changing sign",
+            "The root is too small",
+            "x² is not continuous",
+            "It needs a derivative"
+          ],
+          "answer": "The function touches zero without changing sign",
+          "why": "x² is never negative, so no interval has a sign change for bisection to start from."
+        },
+        {
+          "q": "What is bisection's main strength?",
+          "options": [
+            "Once started, it always converges",
+            "It is the fastest method",
+            "It needs no starting values",
+            "It finds every root at once"
+          ],
+          "answer": "Once started, it always converges",
+          "why": "A bracket can only shrink around the root, so it cannot wander off. The cost is speed: one binary digit per step."
+        }
+      ]
+    },
+    {
+      "id": "newton",
+      "title": "Root finding: Newton's method",
+      "summary": "Following the tangent line, and why it is fast but fragile.",
+      "sections": [
+        {
+          "p": "Newton's method uses the slope as well as the value. At a guess <i>x</i>, draw the tangent line to the curve and see where it crosses zero; that crossing is the next guess. The tangent crosses at <i>x</i> − <i>f</i>(<i>x</i>) / <i>f</i>′(<i>x</i>), so each step is <i>x</i><sub>new</sub> = <i>x</i> − <i>f</i>(<i>x</i>) / <i>f</i>′(<i>x</i>). Stop when the step gets smaller than a tolerance."
+        },
+        {
+          "h": "Fast when it works",
+          "p": "Close to a simple root, Newton's method roughly <b>doubles the number of correct digits</b> each step (this is called quadratic convergence). For √2 with <i>f</i>(<i>x</i>) = <i>x</i>² − 2 and <i>f</i>′(<i>x</i>) = 2<i>x</i>, starting from 1, watch the correct digits grow: 1, 3, 6, then all of them. Bisection needed 40 steps for the same accuracy. (This particular case is also the old \"divide and average\" way of working out square roots by hand.)"
+        },
+        {
+          "code": "def newton(f, df, x, tol=1e-12, max_steps=50):\n    for step in range(1, max_steps + 1):\n        dx = f(x) / df(x)\n        x -= dx\n        print(f\"step {step}: {x:.12f}\")\n        if abs(dx) < tol:\n            return x\n    raise RuntimeError(\"Newton's method did not converge\")\n\nroot = newton(lambda x: x * x - 2, lambda x: 2 * x, 1.0)\nprint(f\"root {root:.10f}\")",
+          "out": "step 1: 1.500000000000\nstep 2: 1.416666666667\nstep 3: 1.414215686275\nstep 4: 1.414213562375\nstep 5: 1.414213562373\nstep 6: 1.414213562373\nroot 1.4142135624"
+        },
+        {
+          "code": "#include <math.h>\n#include <stdio.h>\n\ntypedef double (*func)(double);\n\nint newton(func f, func df, double *x, double tol, int max_steps) {\n    for (int step = 1; step <= max_steps; step++) {\n        double dx = f(*x) / df(*x);\n        *x -= dx;\n        printf(\"step %d: %.12f\\n\", step, *x);\n        if (fabs(dx) < tol) return 1;\n    }\n    return 0;  /* did not converge */\n}\n\ndouble f(double x) { return x * x - 2; }\ndouble df(double x) { return 2 * x; }\n\nint main(void) {\n    double x = 1.0;\n    if (newton(f, df, &x, 1e-12, 50))\n        printf(\"root %.10f\\n\", x);\n    else\n        printf(\"did not converge\\n\");\n    return 0;\n}",
+          "out": "step 1: 1.500000000000\nstep 2: 1.416666666667\nstep 3: 1.414215686275\nstep 4: 1.414213562375\nstep 5: 1.414213562373\nstep 6: 1.414213562373\nroot 1.4142135624"
+        },
+        {
+          "code": "program newton_demo\n  use iso_fortran_env, only: real64\n  implicit none\n  real(real64) :: x, dx\n  integer :: step\n  logical :: converged\n\n  x = 1.0_real64\n  converged = .false.\n  do step = 1, 50\n    dx = f(x) / df(x)\n    x = x - dx\n    print '(a, i0, a, f14.12)', 'step ', step, ': ', x\n    if (abs(dx) < 1.0e-12_real64) then\n      converged = .true.\n      exit\n    end if\n  end do\n  if (converged) then\n    print '(a, f12.10)', 'root ', x\n  else\n    print '(a)', 'did not converge'\n  end if\ncontains\n  function f(x) result(y)\n    real(real64), intent(in) :: x\n    real(real64) :: y\n    y = x * x - 2\n  end function f\n\n  function df(x) result(y)\n    real(real64), intent(in) :: x\n    real(real64) :: y\n    y = 2 * x\n  end function df\nend program newton_demo",
+          "out": "step 1: 1.500000000000\nstep 2: 1.416666666667\nstep 3: 1.414215686275\nstep 4: 1.414213562375\nstep 5: 1.414213562373\nstep 6: 1.414213562373\nroot 1.4142135624"
+        },
+        {
+          "h": "Fragile when it doesn't",
+          "p": "Newton's method needs a good start. Where the slope is zero the step divides by zero, and where the slope is small the step can throw the guess far away. Some starting points make it bounce between two values forever. That is why real code always caps the number of steps, as <code>max_steps</code> does above, and why a common robust approach brackets the root first and uses Newton steps only while they stay inside the bracket, falling back to bisection otherwise. Newton's method also needs the derivative; when that is hard to write down, the <b>secant method</b> replaces it with the slope through the last two guesses."
+        },
+        {
+          "h": "Another known root",
+          "p": "<i>x</i>³ − 2<i>x</i> − 5 = 0 is a classic test equation; its real root is 2.0945514815… Starting from 2, Newton's method gets there in a handful of steps.",
+          "code": "def newton(f, df, x, tol=1e-12, max_steps=50):\n    for step in range(1, max_steps + 1):\n        dx = f(x) / df(x)\n        x -= dx\n        if abs(dx) < tol:\n            return x, step\n    raise RuntimeError(\"did not converge\")\n\nroot, steps = newton(lambda x: x**3 - 2*x - 5, lambda x: 3*x**2 - 2, 2.0)\nprint(f\"{root:.10f} in {steps} steps\")",
+          "out": "2.0945514815 in 5 steps"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What is one Newton step for f(x)?",
+          "options": ["x − f(x) / f′(x)", "x − f′(x) / f(x)", "(a + b) / 2", "x + f(x)"],
+          "answer": "x − f(x) / f′(x)",
+          "why": "It is where the tangent line at x crosses zero."
+        },
+        {
+          "q": "One Newton step for f(x) = x² − 9, starting at x = 5. What does it print?",
+          "code": "x = 5.0\nx = x - (x * x - 9) / (2 * x)\nprint(x)",
+          "options": ["3.4", "3.0", "4.6", "2.5"],
+          "answer": "3.4",
+          "why": "f(5) = 16 and f′(5) = 10, so the step is 5 − 16 / 10 = 3.4. The next step lands near 3.02.",
+          "kind": "output"
+        },
+        {
+          "q": "Near a simple root, roughly what happens to the number of correct digits each Newton step?",
+          "options": [
+            "It doubles",
+            "It goes up by one",
+            "It halves",
+            "It stays the same"
+          ],
+          "answer": "It doubles",
+          "why": "That is quadratic convergence: the new error is about the square of the old one."
+        },
+        {
+          "q": "Why does good Newton code limit the number of steps?",
+          "options": [
+            "A bad start can make it wander or cycle forever",
+            "Computers can only loop 50 times",
+            "The answer gets worse after 50 steps",
+            "To save memory"
+          ],
+          "answer": "A bad start can make it wander or cycle forever",
+          "why": "Unlike bisection, Newton's method has no bracket to keep it near the root."
+        },
+        {
+          "q": "What does the secant method use instead of the derivative?",
+          "options": [
+            "The slope through the last two guesses",
+            "The midpoint of a bracket",
+            "A random number",
+            "The second derivative"
+          ],
+          "answer": "The slope through the last two guesses",
+          "why": "It needs no derivative formula, and still converges faster than bisection."
+        }
+      ]
+    },
+    {
+      "id": "integration",
+      "title": "Integration: trapezoids and Simpson's rule",
+      "summary": "Adding up thin slices to find the area under a curve, and how fast the error shrinks.",
+      "sections": [
+        {
+          "p": "The integral of <i>f</i> from <i>a</i> to <i>b</i> is the area under its curve. Many integrals have no formula, so we cut the interval into <i>n</i> thin slices of width <i>h</i> = (<i>b</i> − <i>a</i>) / <i>n</i>, estimate the area of each slice, and add them up. This is called <b>quadrature</b>."
+        },
+        {
+          "h": "The trapezoid rule",
+          "p": "Join the curve's values at the ends of each slice with a straight line, so each slice becomes a trapezoid with area <i>h</i> × (<i>f</i>(left) + <i>f</i>(right)) / 2. Adding them up, every inside point is counted twice and the two end points once, which gives <i>h</i> × (<i>f</i>(<i>a</i>)/2 + <i>f</i>(<i>x</i><sub>1</sub>) + … + <i>f</i>(<i>x</i><sub><i>n</i>−1</sub>) + <i>f</i>(<i>b</i>)/2). The error shrinks like <i>h</i>²: twice as many slices make it about four times smaller."
+        },
+        {
+          "h": "Simpson's rule",
+          "p": "Fit a parabola through each pair of slices instead of a straight line. That works out to the weights 1, 4, 2, 4, 2, …, 4, 1, times <i>h</i>/3, and needs an even number of slices. Its error shrinks like <i>h</i>⁴: twice as many slices make it about sixteen times smaller, for the same number of function evaluations. Below, both rules integrate sin <i>x</i> from 0 to π, whose exact area is 2. Each time <i>n</i> grows four times, the trapezoid error falls about 16 times and Simpson's about 256 times. The last line also finds π as the integral of 4 / (1 + <i>x</i>²) from 0 to 1."
+        },
+        {
+          "code": "import math\n\ndef trapezoid(f, a, b, n):\n    h = (b - a) / n\n    total = (f(a) + f(b)) / 2\n    for i in range(1, n):\n        total += f(a + i * h)\n    return total * h\n\ndef simpson(f, a, b, n):    # n must be even\n    h = (b - a) / n\n    total = f(a) + f(b)\n    for i in range(1, n):\n        weight = 4 if i % 2 == 1 else 2\n        total += weight * f(a + i * h)\n    return total * h / 3\n\nprint(\"   n  trapezoid error  Simpson error\")\nfor n in (4, 16, 64):\n    t = abs(trapezoid(math.sin, 0.0, math.pi, n) - 2)\n    s = abs(simpson(math.sin, 0.0, math.pi, n) - 2)\n    print(f\"{n:4d}  {t:.10f}     {s:.10f}\")\narea = simpson(math.sin, 0.0, math.pi, 256)\npi = simpson(lambda x: 4 / (1 + x * x), 0.0, 1.0, 256)\nprint(f\"{area:.8f} {pi:.8f}\")",
+          "out": "   n  trapezoid error  Simpson error\n   4  0.1038811021     0.0045597550\n  16  0.0064296562     0.0000165910\n  64  0.0004016114     0.0000000645\n2.00000000 3.14159265"
+        },
+        {
+          "p": "In C, <code>sin</code> from the maths library can be passed straight in as a function pointer. C has no π constant in the standard, so <code>acos(-1.0)</code> gives it.",
+          "code": "#include <math.h>\n#include <stdio.h>\n\ntypedef double (*func)(double);\n\ndouble trapezoid(func f, double a, double b, int n) {\n    double h = (b - a) / n;\n    double total = (f(a) + f(b)) / 2;\n    for (int i = 1; i < n; i++)\n        total += f(a + i * h);\n    return total * h;\n}\n\ndouble simpson(func f, double a, double b, int n) {  /* n must be even */\n    double h = (b - a) / n;\n    double total = f(a) + f(b);\n    for (int i = 1; i < n; i++) {\n        int weight = (i % 2 == 1) ? 4 : 2;\n        total += weight * f(a + i * h);\n    }\n    return total * h / 3;\n}\n\ndouble quarter_circle(double x) { return 4 / (1 + x * x); }\n\nint main(void) {\n    const double pi = acos(-1.0);\n    int sizes[] = {4, 16, 64};\n    printf(\"   n  trapezoid error  Simpson error\\n\");\n    for (int k = 0; k < 3; k++) {\n        int n = sizes[k];\n        double t = fabs(trapezoid(sin, 0.0, pi, n) - 2);\n        double s = fabs(simpson(sin, 0.0, pi, n) - 2);\n        printf(\"%4d  %.10f     %.10f\\n\", n, t, s);\n    }\n    double area = simpson(sin, 0.0, pi, 256);\n    double p = simpson(quarter_circle, 0.0, 1.0, 256);\n    printf(\"%.8f %.8f\\n\", area, p);\n    return 0;\n}",
+          "out": "   n  trapezoid error  Simpson error\n   4  0.1038811021     0.0045597550\n  16  0.0064296562     0.0000165910\n  64  0.0004016114     0.0000000645\n2.00000000 3.14159265"
+        },
+        {
+          "p": "Fortran can't pass the generic <code>sin</code> intrinsic as an argument, so a small <code>sine</code> function wraps it. <code>i * h</code> mixes an integer and a real, and Fortran converts the integer first, just as C and Python do.",
+          "code": "program integration\n  use iso_fortran_env, only: real64\n  implicit none\n  abstract interface\n    function fn(x) result(y)\n      import :: real64\n      real(real64), intent(in) :: x\n      real(real64) :: y\n    end function fn\n  end interface\n  real(real64), parameter :: pi = acos(-1.0_real64)\n  integer, parameter :: sizes(3) = [4, 16, 64]\n  real(real64) :: t, s\n  integer :: k\n\n  print '(a)', '   n  trapezoid error  Simpson error'\n  do k = 1, 3\n    t = abs(trapezoid(sine, 0.0_real64, pi, sizes(k)) - 2)\n    s = abs(simpson(sine, 0.0_real64, pi, sizes(k)) - 2)\n    print '(i4, 2x, f12.10, 5x, f12.10)', sizes(k), t, s\n  end do\n  print '(f10.8, 1x, f10.8)', simpson(sine, 0.0_real64, pi, 256), &\n                              simpson(quarter_circle, 0.0_real64, 1.0_real64, 256)\ncontains\n  function trapezoid(f, a, b, n) result(total)\n    procedure(fn) :: f\n    real(real64), intent(in) :: a, b\n    integer, intent(in) :: n\n    real(real64) :: h, total\n    integer :: i\n    h = (b - a) / n\n    total = (f(a) + f(b)) / 2\n    do i = 1, n - 1\n      total = total + f(a + i * h)\n    end do\n    total = total * h\n  end function trapezoid\n\n  function simpson(f, a, b, n) result(total)   ! n must be even\n    procedure(fn) :: f\n    real(real64), intent(in) :: a, b\n    integer, intent(in) :: n\n    real(real64) :: h, total\n    integer :: i, weight\n    h = (b - a) / n\n    total = f(a) + f(b)\n    do i = 1, n - 1\n      if (mod(i, 2) == 1) then\n        weight = 4\n      else\n        weight = 2\n      end if\n      total = total + weight * f(a + i * h)\n    end do\n    total = total * h / 3\n  end function simpson\n\n  function sine(x) result(y)\n    real(real64), intent(in) :: x\n    real(real64) :: y\n    y = sin(x)\n  end function sine\n\n  function quarter_circle(x) result(y)\n    real(real64), intent(in) :: x\n    real(real64) :: y\n    y = 4 / (1 + x * x)\n  end function quarter_circle\nend program integration",
+          "out": "   n  trapezoid error  Simpson error\n   4  0.1038811021     0.0045597550\n  16  0.0064296562     0.0000165910\n  64  0.0004016114     0.0000000645\n2.00000000 3.14159265"
+        },
+        {
+          "h": "Choosing n",
+          "p": "In practice you rarely know the error in advance. A common approach is to double <i>n</i> until two answers agree to the accuracy you need; with the trapezoid rule, each doubling can reuse every point already computed. Both rules assume a smooth function: a corner, a jump or an infinite value inside the interval spoils the error estimates, and the interval should be split at that point."
+        }
+      ],
+      "practice": [
+        {
+          "q": "With the trapezoid rule, you double the number of slices. Roughly what happens to the error?",
+          "options": [
+            "It becomes about 4 times smaller",
+            "It halves",
+            "It becomes about 16 times smaller",
+            "It stays the same"
+          ],
+          "answer": "It becomes about 4 times smaller",
+          "why": "The trapezoid error shrinks like h², and halving h divides h² by 4."
+        },
+        {
+          "q": "What weights does Simpson's rule give the points, before multiplying by h/3?",
+          "options": [
+            "1, 4, 2, 4, …, 2, 4, 1",
+            "1, 2, 2, …, 2, 1",
+            "1, 1, 1, …, 1",
+            "4, 1, 4, …, 1, 4"
+          ],
+          "answer": "1, 4, 2, 4, …, 2, 4, 1",
+          "why": "Each parabola over two slices weighs its ends 1 and its middle 4. Neighbouring parabolas share an end, which gives the inner 2s."
+        },
+        {
+          "q": "Why does Simpson's rule need an even number of slices?",
+          "options": [
+            "Each parabola covers two slices",
+            "It divides by n",
+            "Odd numbers give negative weights",
+            "It doesn't; any n works"
+          ],
+          "answer": "Each parabola covers two slices",
+          "why": "The slices are taken in pairs, one parabola per pair, so they must pair up exactly."
+        },
+        {
+          "q": "The trapezoid rule with one slice on f(x) = x² from 0 to 2. What does it print?",
+          "code": "f = lambda x: x * x\na, b = 0.0, 2.0\nprint((b - a) * (f(a) + f(b)) / 2)",
+          "options": ["4.0", "2.6666666666666665", "8.0", "2.0"],
+          "answer": "4.0",
+          "why": "One trapezoid: width 2 times the average of f(0) = 0 and f(2) = 4. The true area is 8/3, so one slice overshoots badly.",
+          "kind": "output"
+        }
+      ]
+    },
+    {
+      "id": "linear",
+      "title": "Linear systems: Gaussian elimination",
+      "summary": "Solving several equations at once by elimination, back substitution and pivoting.",
+      "sections": [
+        {
+          "p": "A <b>linear system</b> is a set of equations such as 2<i>x</i> + <i>y</i> − <i>z</i> = 8, where each unknown is only multiplied by a number and added. Written as a table of coefficients, it becomes <i>A</i><b>x</b> = <b>b</b>: the matrix <i>A</i> holds the numbers in front of the unknowns, <b>x</b> is the list of unknowns, and <b>b</b> is the right-hand sides. Systems like this are everywhere: circuits, structures, statistics, and inside most other numerical methods."
+        },
+        {
+          "h": "Elimination and back substitution",
+          "p": "Take the first equation and subtract a multiple of it from every row below, chosen so that the first unknown disappears from them. Repeat with the second row on the rows below it, and so on. What is left is <b>upper triangular</b>: the last equation has one unknown, the one above it two, and so on. Solve the last equation, put that value into the one above, and work upwards. This is <b>back substitution</b>. For <i>n</i> equations elimination takes about <i>n</i>³/3 multiplications, so doubling the size makes it about eight times slower."
+        },
+        {
+          "h": "Why pivoting matters",
+          "p": "Each step divides by the number on the diagonal, the <b>pivot</b>. If the pivot is zero the method stops, and if it is merely tiny, the multipliers become huge and rounding errors swamp the answer. <b>Partial pivoting</b> fixes this cheaply: before clearing a column, swap in the row whose entry in that column is largest in size. Below, a system whose answer is almost exactly <i>x</i> = 1, <i>y</i> = 1 comes out completely wrong without the swap.",
+          "code": "def solve2(A, b, pivot):\n    A = [row[:] for row in A]\n    b = b[:]\n    if pivot and abs(A[1][0]) > abs(A[0][0]):\n        A[0], A[1] = A[1], A[0]\n        b[0], b[1] = b[1], b[0]\n    m = A[1][0] / A[0][0]\n    A[1][1] -= m * A[0][1]\n    b[1] -= m * b[0]\n    y = b[1] / A[1][1]\n    x = (b[0] - A[0][1] * y) / A[0][0]\n    return x, y\n\n# 0.00000000000000000001 x + y = 1\n#                      x + y = 2     (the answer is very close to x = 1, y = 1)\nA = [[1e-20, 1.0], [1.0, 1.0]]\nb = [1.0, 2.0]\nprint(\"without pivoting:\", solve2(A, b, pivot=False))\nprint(\"with pivoting:   \", solve2(A, b, pivot=True))",
+          "out": "without pivoting: (0.0, 1.0)\nwith pivoting:    (1.0, 1.0)"
+        },
+        {
+          "h": "The full method",
+          "p": "Here is elimination with partial pivoting for any size, solving 2<i>x</i> + <i>y</i> − <i>z</i> = 8, −3<i>x</i> − <i>y</i> + 2<i>z</i> = −11, −2<i>x</i> + <i>y</i> + 2<i>z</i> = −3, whose answer is <i>x</i> = 2, <i>y</i> = 3, <i>z</i> = −1. The function works on copies so the caller's matrix is left alone.",
+          "code": "def solve(A, b):\n    n = len(b)\n    A = [row[:] for row in A]   # work on copies\n    b = b[:]\n    for k in range(n):\n        # Partial pivoting: bring the row with the largest entry in column k up to row k.\n        p = max(range(k, n), key=lambda i: abs(A[i][k]))\n        if A[p][k] == 0:\n            raise ValueError(\"the matrix is singular\")\n        A[k], A[p] = A[p], A[k]\n        b[k], b[p] = b[p], b[k]\n        # Elimination: clear column k below the pivot.\n        for i in range(k + 1, n):\n            m = A[i][k] / A[k][k]\n            for j in range(k, n):\n                A[i][j] -= m * A[k][j]\n            b[i] -= m * b[k]\n    # Back substitution, from the last row up.\n    x = [0.0] * n\n    for i in range(n - 1, -1, -1):\n        s = b[i]\n        for j in range(i + 1, n):\n            s -= A[i][j] * x[j]\n        x[i] = s / A[i][i]\n    return x\n\nA = [[2.0, 1.0, -1.0],\n     [-3.0, -1.0, 2.0],\n     [-2.0, 1.0, 2.0]]\nb = [8.0, -11.0, -3.0]\nfor i, value in enumerate(solve(A, b)):\n    print(f\"x{i + 1} = {value:.10f}\")",
+          "out": "x1 = 2.0000000000\nx2 = 3.0000000000\nx3 = -1.0000000000"
+        },
+        {
+          "p": "In C the size is fixed with <code>#define</code> to keep the code short, and the function reports a singular matrix by returning −1 rather than stopping the program.",
+          "code": "#include <math.h>\n#include <stdio.h>\n\n#define N 3\n\n/* Solves A x = b. A and b are changed; returns 0, or -1 if A is singular. */\nint solve(double A[N][N], double b[N], double x[N]) {\n    for (int k = 0; k < N; k++) {\n        /* Partial pivoting: find the largest entry in column k, from row k down. */\n        int p = k;\n        for (int i = k + 1; i < N; i++)\n            if (fabs(A[i][k]) > fabs(A[p][k]))\n                p = i;\n        if (A[p][k] == 0)\n            return -1;\n        for (int j = 0; j < N; j++) {\n            double t = A[k][j]; A[k][j] = A[p][j]; A[p][j] = t;\n        }\n        double t = b[k]; b[k] = b[p]; b[p] = t;\n        /* Elimination: clear column k below the pivot. */\n        for (int i = k + 1; i < N; i++) {\n            double m = A[i][k] / A[k][k];\n            for (int j = k; j < N; j++)\n                A[i][j] -= m * A[k][j];\n            b[i] -= m * b[k];\n        }\n    }\n    /* Back substitution, from the last row up. */\n    for (int i = N - 1; i >= 0; i--) {\n        double s = b[i];\n        for (int j = i + 1; j < N; j++)\n            s -= A[i][j] * x[j];\n        x[i] = s / A[i][i];\n    }\n    return 0;\n}\n\nint main(void) {\n    double A[N][N] = {{2, 1, -1}, {-3, -1, 2}, {-2, 1, 2}};\n    double b[N] = {8, -11, -3};\n    double x[N];\n    if (solve(A, b, x) != 0) {\n        printf(\"the matrix is singular\\n\");\n        return 1;\n    }\n    for (int i = 0; i < N; i++)\n        printf(\"x%d = %.10f\\n\", i + 1, x[i]);\n    return 0;\n}",
+          "out": "x1 = 2.0000000000\nx2 = 3.0000000000\nx3 = -1.0000000000"
+        },
+        {
+          "p": "Fortran was built for this kind of work. Whole rows can be swapped with array sections such as <code>A(k, :)</code>, and <code>maxloc</code> finds the pivot. Fortran stores matrices column by column, so <code>reshape</code> takes the numbers a column at a time.",
+          "code": "program linear_system\n  use iso_fortran_env, only: real64\n  implicit none\n  integer, parameter :: n = 3\n  real(real64) :: A(n, n), b(n), x(n)\n  integer :: i\n\n  ! Fortran fills arrays column by column, so reshape takes the columns.\n  A = reshape([2.0_real64, -3.0_real64, -2.0_real64, &\n               1.0_real64, -1.0_real64, 1.0_real64, &\n               -1.0_real64, 2.0_real64, 2.0_real64], [n, n])\n  b = [8.0_real64, -11.0_real64, -3.0_real64]\n  call solve(A, b, x)\n  do i = 1, n\n    print '(a, i0, a, f0.10)', 'x', i, ' = ', x(i)\n  end do\ncontains\n  subroutine solve(A, b, x)\n    real(real64), intent(inout) :: A(:, :), b(:)\n    real(real64), intent(out) :: x(:)\n    real(real64) :: row(size(b)), t, m, s\n    integer :: k, p, i, j, n\n    n = size(b)\n    do k = 1, n\n      ! Partial pivoting: the largest entry in column k, from row k down.\n      p = k - 1 + maxloc(abs(A(k:n, k)), dim=1)\n      if (A(p, k) == 0) error stop 'the matrix is singular'\n      row = A(k, :)\n      A(k, :) = A(p, :)\n      A(p, :) = row\n      t = b(k)\n      b(k) = b(p)\n      b(p) = t\n      ! Elimination: clear column k below the pivot.\n      do i = k + 1, n\n        m = A(i, k) / A(k, k)\n        do j = k, n\n          A(i, j) = A(i, j) - m * A(k, j)\n        end do\n        b(i) = b(i) - m * b(k)\n      end do\n    end do\n    ! Back substitution, from the last row up.\n    do i = n, 1, -1\n      s = b(i)\n      do j = i + 1, n\n        s = s - A(i, j) * x(j)\n      end do\n      x(i) = s / A(i, i)\n    end do\n  end subroutine solve\nend program linear_system",
+          "out": "x1 = 2.0000000000\nx2 = 3.0000000000\nx3 = -1.0000000000"
+        },
+        {
+          "h": "In real programs",
+          "p": "Writing elimination yourself is the best way to understand it, but for real work use a tested library such as LAPACK, which <code>numpy.linalg.solve</code> and most languages' maths libraries call underneath. They are faster and handle the awkward cases. Two warnings carry over to every library. A matrix can be <b>singular</b> (no unique answer) or nearly so (<b>ill-conditioned</b>), and then tiny changes in <b>b</b> cause huge changes in <b>x</b>. And to solve <i>A</i><b>x</b> = <b>b</b>, don't compute the inverse of <i>A</i> and multiply: elimination is cheaper and more accurate."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What shape is the matrix after elimination, before back substitution?",
+          "options": [
+            "Upper triangular: zeros below the diagonal",
+            "Diagonal: zeros everywhere off the diagonal",
+            "Lower triangular: zeros above the diagonal",
+            "All ones"
+          ],
+          "answer": "Upper triangular: zeros below the diagonal",
+          "why": "Each step clears one column below the diagonal, so only the diagonal and the entries above it are left."
+        },
+        {
+          "q": "Partial pivoting swaps rows so that the pivot is…",
+          "options": [
+            "the largest in size in its column, from the current row down",
+            "the smallest non-zero entry",
+            "always 1",
+            "the first entry of the row"
+          ],
+          "answer": "the largest in size in its column, from the current row down",
+          "why": "A large pivot keeps the multipliers at 1 or below, so rounding errors can't grow out of control."
+        },
+        {
+          "q": "Solving a 100-equation system takes 1 second. Roughly how long does a 200-equation system take?",
+          "options": ["8 seconds", "2 seconds", "4 seconds", "100 seconds"],
+          "answer": "8 seconds",
+          "why": "Elimination costs about n³/3 operations, and 2³ = 8."
+        },
+        {
+          "q": "Back substitution on 2x + y = 7 and 3y = 9. What does it print?",
+          "code": "y = 9 / 3\nx = (7 - y) / 2\nprint(x, y)",
+          "options": ["2.0 3.0", "3.0 2.0", "3.5 3.0", "2.0 9.0"],
+          "answer": "2.0 3.0",
+          "why": "The last equation gives y = 3; putting it into the first gives 2x = 4, so x = 2.",
+          "kind": "output"
+        }
+      ]
+    },
+    {
+      "id": "interpolation",
+      "title": "Interpolation: Newton's divided differences",
+      "summary": "Fitting one polynomial through given points, evaluating it quickly, and why more points can make it worse.",
+      "sections": [
+        {
+          "p": "Often a function is known only at some points: measurements, a table, or values that are expensive to compute. <b>Interpolation</b> finds a function that passes exactly through those points, so you can estimate the values in between. The classic choice is a polynomial: through <i>n</i> + 1 points with different <i>x</i> values there is exactly one polynomial of degree at most <i>n</i>."
+        },
+        {
+          "h": "Newton's form",
+          "p": "Newton writes that polynomial as <i>c</i><sub>0</sub> + <i>c</i><sub>1</sub>(<i>x</i> − <i>x</i><sub>0</sub>) + <i>c</i><sub>2</sub>(<i>x</i> − <i>x</i><sub>0</sub>)(<i>x</i> − <i>x</i><sub>1</sub>) + …. The coefficients are <b>divided differences</b>: <i>c</i><sub>1</sub> is the slope between the first two points, <i>c</i><sub>2</sub> is how fast that slope changes, and so on, each built from the level before. They fit in a single list that is updated in place. Adding a new point only adds one new coefficient, and the polynomial can be evaluated by <b>nesting</b>, like Horner's rule, with one multiplication per coefficient."
+        },
+        {
+          "h": "The method",
+          "p": "Below, four points come from <i>x</i>² + <i>x</i> + 1, though the code is never told that. The coefficients come out as 1, 2, 1 and 0. The last one is zero because the points really lie on a parabola, so the interpolating polynomial is that parabola, and its values in between are exact: <i>p</i>(3) = 13 and <i>p</i>(2.5) = 9.75.",
+          "code": "def divided_differences(xs, ys):\n    \"\"\"Returns Newton's coefficients c0, c1, ... for the points (xs, ys).\"\"\"\n    n = len(xs)\n    c = ys[:]\n    for level in range(1, n):\n        # Work from the bottom up so each c[i] still holds the previous level.\n        for i in range(n - 1, level - 1, -1):\n            c[i] = (c[i] - c[i - 1]) / (xs[i] - xs[i - level])\n    return c\n\ndef newton_value(xs, c, x):\n    \"\"\"Evaluates c0 + c1(x - x0) + c2(x - x0)(x - x1) + ... by nesting.\"\"\"\n    result = c[-1]\n    for i in range(len(c) - 2, -1, -1):\n        result = result * (x - xs[i]) + c[i]\n    return result\n\nxs = [0.0, 1.0, 2.0, 4.0]\nys = [1.0, 3.0, 7.0, 21.0]      # from x*x + x + 1, but the code doesn't know that\nc = divided_differences(xs, ys)\nprint(\"coefficients:\", \" \".join(f\"{v:.6f}\" for v in c))\nfor x in (3.0, 2.5):\n    print(f\"p({x:.1f}) = {newton_value(xs, c, x):.6f}\")",
+          "out": "coefficients: 1.000000 2.000000 1.000000 0.000000\np(3.0) = 13.000000\np(2.5) = 9.750000"
+        },
+        {
+          "p": "In C the coefficients overwrite the array of <i>y</i> values, which is how the method is usually written when memory matters.",
+          "code": "#include <stdio.h>\n\n#define N 4\n\n/* Replaces c (which starts as the y values) with Newton's coefficients. */\nvoid divided_differences(const double xs[N], double c[N]) {\n    for (int level = 1; level < N; level++)\n        for (int i = N - 1; i >= level; i--)\n            c[i] = (c[i] - c[i - 1]) / (xs[i] - xs[i - level]);\n}\n\n/* Evaluates the Newton form by nesting, from the last coefficient back. */\ndouble newton_value(const double xs[N], const double c[N], double x) {\n    double result = c[N - 1];\n    for (int i = N - 2; i >= 0; i--)\n        result = result * (x - xs[i]) + c[i];\n    return result;\n}\n\nint main(void) {\n    double xs[N] = {0, 1, 2, 4};\n    double c[N] = {1, 3, 7, 21};    /* from x*x + x + 1, but the code doesn't know that */\n    divided_differences(xs, c);\n    printf(\"coefficients:\");\n    for (int i = 0; i < N; i++)\n        printf(\" %.6f\", c[i]);\n    printf(\"\\n\");\n    double points[] = {3.0, 2.5};\n    for (int k = 0; k < 2; k++)\n        printf(\"p(%.1f) = %.6f\\n\", points[k], newton_value(xs, c, points[k]));\n    return 0;\n}",
+          "out": "coefficients: 1.000000 2.000000 1.000000 0.000000\np(3.0) = 13.000000\np(2.5) = 9.750000"
+        },
+        {
+          "p": "In Fortran the arrays start at 1, so the loops run one higher. Assumed-shape arguments such as <code>xs(:)</code> let the same routines work for any number of points.",
+          "code": "program interpolation\n  use iso_fortran_env, only: real64\n  implicit none\n  real(real64) :: xs(4), c(4), points(2)\n  integer :: k\n\n  xs = [0.0_real64, 1.0_real64, 2.0_real64, 4.0_real64]\n  c = [1.0_real64, 3.0_real64, 7.0_real64, 21.0_real64]   ! from x*x + x + 1\n  call divided_differences(xs, c)\n  print '(a, 4(1x, f8.6))', 'coefficients:', c\n  points = [3.0_real64, 2.5_real64]\n  do k = 1, 2\n    print '(a, f3.1, a, f0.6)', 'p(', points(k), ') = ', newton_value(xs, c, points(k))\n  end do\ncontains\n  ! Replaces c (which starts as the y values) with Newton's coefficients.\n  subroutine divided_differences(xs, c)\n    real(real64), intent(in) :: xs(:)\n    real(real64), intent(inout) :: c(:)\n    integer :: level, i, n\n    n = size(xs)\n    do level = 1, n - 1\n      do i = n, level + 1, -1\n        c(i) = (c(i) - c(i - 1)) / (xs(i) - xs(i - level))\n      end do\n    end do\n  end subroutine divided_differences\n\n  ! Evaluates the Newton form by nesting, from the last coefficient back.\n  function newton_value(xs, c, x) result(total)\n    real(real64), intent(in) :: xs(:), c(:), x\n    real(real64) :: total\n    integer :: i\n    total = c(size(c))\n    do i = size(c) - 1, 1, -1\n      total = total * (x - xs(i)) + c(i)\n    end do\n  end function newton_value\nend program interpolation",
+          "out": "coefficients: 1.000000 2.000000 1.000000 0.000000\np(3.0) = 13.000000\np(2.5) = 9.750000"
+        },
+        {
+          "h": "More points is not always better",
+          "p": "It seems that more points must give a better fit, but with <b>equally spaced</b> points a high-degree polynomial can swing wildly near the ends of the interval. This is called <b>Runge's phenomenon</b>, after Carl Runge, who showed it with 1 / (1 + 25<i>x</i>²) on [−1, 1]. The cure is to bunch the points towards the ends: <b>Chebyshev points</b>, cos((2<i>i</i> + 1)π / (2<i>n</i> + 2)), keep the error small as <i>n</i> grows. In practice it is often better still to use many low-degree pieces joined smoothly, called <b>splines</b>, rather than one high-degree polynomial.",
+          "code": "import math\n\ndef interpolate(xs, ys, x):\n    \"\"\"Lagrange form: the sum of ys[i] times a polynomial that is 1 at xs[i] and 0 at the others.\"\"\"\n    total = 0.0\n    for i in range(len(xs)):\n        term = ys[i]\n        for j in range(len(xs)):\n            if j != i:\n                term *= (x - xs[j]) / (xs[i] - xs[j])\n        total += term\n    return total\n\nf = lambda x: 1 / (1 + 25 * x * x)\ntest = [-1 + k / 500 for k in range(1001)]\nfor n in (5, 10, 20):\n    even = [-1 + 2 * i / n for i in range(n + 1)]\n    cheb = [math.cos((2 * i + 1) * math.pi / (2 * n + 2)) for i in range(n + 1)]\n    worst_even = max(abs(interpolate(even, [f(x) for x in even], t) - f(t)) for t in test)\n    worst_cheb = max(abs(interpolate(cheb, [f(x) for x in cheb], t) - f(t)) for t in test)\n    print(f\"{n + 1:2d} points: equally spaced {worst_even:6.2f}, Chebyshev {worst_cheb:4.2f}\")",
+          "out": " 6 points: equally spaced   0.43, Chebyshev 0.56\n11 points: equally spaced   1.92, Chebyshev 0.11\n21 points: equally spaced  59.77, Chebyshev 0.02"
+        }
+      ],
+      "practice": [
+        {
+          "q": "Through how many points does a polynomial of degree 3 pass, in general?",
+          "options": ["4", "3", "6", "As many as you like"],
+          "answer": "4",
+          "why": "A degree-3 polynomial has four coefficients, so four points fix it."
+        },
+        {
+          "q": "The highest divided difference of some points comes out exactly 0. What does that tell you?",
+          "options": [
+            "The points lie on a polynomial of lower degree",
+            "The points are equally spaced",
+            "There was a rounding error",
+            "Two x values are equal"
+          ],
+          "answer": "The points lie on a polynomial of lower degree",
+          "why": "The last coefficient multiplies the highest power, so if it's 0 a lower-degree polynomial already fits every point."
+        },
+        {
+          "q": "Interpolating 1 / (1 + 25x²) at 21 equally spaced points gives huge errors near ±1. What helps most?",
+          "options": [
+            "Using Chebyshev points, bunched towards the ends",
+            "Using even more equally spaced points",
+            "Using double precision",
+            "Using Newton's form instead of Lagrange's"
+          ],
+          "answer": "Using Chebyshev points, bunched towards the ends",
+          "why": "The swings come from where the points are placed, not from rounding or the form of the polynomial; more equally spaced points make it worse."
+        },
+        {
+          "q": "The first divided difference between (1, 4) and (3, 10). What does it print?",
+          "code": "x0, y0 = 1.0, 4.0\nx1, y1 = 3.0, 10.0\nprint((y1 - y0) / (x1 - x0))",
+          "options": ["3.0", "6.0", "2.0", "7.0"],
+          "answer": "3.0",
+          "why": "It is the slope between the points: a rise of 6 over a run of 2.",
+          "kind": "output"
+        }
+      ]
+    },
+    {
+      "id": "odes",
+      "title": "Differential equations: Euler and Runge–Kutta",
+      "summary": "Following a quantity through time from the rule for how fast it changes.",
+      "sections": [
+        {
+          "p": "An <b>ordinary differential equation</b> (ODE) gives the rate of change of something in terms of its current value and the time: <i>y</i>′ = <i>f</i>(<i>t</i>, <i>y</i>). A population that grows in proportion to its size obeys <i>y</i>′ = <i>y</i>; a cooling cup of tea obeys <i>y</i>′ = −<i>k</i>(<i>y</i> − room temperature). Given a starting value <i>y</i>(<i>t</i><sub>0</sub>), we want <i>y</i> at later times. Most ODEs have no formula for the answer, so we step forward in small time steps of size <i>h</i>."
+        },
+        {
+          "h": "Euler's method",
+          "p": "The simplest step uses the slope at the start of the step as if it stayed the same: <i>y</i><sub>new</sub> = <i>y</i> + <i>h</i> <i>f</i>(<i>t</i>, <i>y</i>). It is easy to understand but crude. Its error is proportional to <i>h</i>, so halving the step only halves the error, and getting six correct digits can take a million steps."
+        },
+        {
+          "h": "The classic Runge–Kutta method",
+          "p": "<b>RK4</b>, from Carl Runge and Wilhelm Kutta around 1900, samples the slope four times per step: at the start (<i>k</i><sub>1</sub>), twice at the middle (<i>k</i><sub>2</sub> and <i>k</i><sub>3</sub>, each using the slope just found), and at the end (<i>k</i><sub>4</sub>). It then moves with the weighted average (<i>k</i><sub>1</sub> + 2<i>k</i><sub>2</sub> + 2<i>k</i><sub>3</sub> + <i>k</i><sub>4</sub>) / 6. Its error is proportional to <i>h</i>⁴, so halving the step makes it 16 times smaller. Below, both methods solve <i>y</i>′ = <i>y</i> with <i>y</i>(0) = 1 up to <i>t</i> = 1, where the exact answer is <i>e</i>. Each time the number of steps doubles, Euler's error halves while RK4's drops 16 times, even though RK4 does four times the work per step.",
+          "code": "import math\n\ndef euler(f, t, y, h, steps):\n    for _ in range(steps):\n        y = y + h * f(t, y)\n        t = t + h\n    return y\n\ndef rk4(f, t, y, h, steps):\n    for _ in range(steps):\n        k1 = f(t, y)\n        k2 = f(t + h / 2, y + h / 2 * k1)\n        k3 = f(t + h / 2, y + h / 2 * k2)\n        k4 = f(t + h, y + h * k3)\n        y = y + h / 6 * (k1 + 2 * k2 + 2 * k3 + k4)\n        t = t + h\n    return y\n\ngrowth = lambda t, y: y        # y' = y with y(0) = 1, so y(1) = e\nprint(\"  steps  Euler error   RK4 error\")\nfor steps in (10, 20, 40):\n    h = 1.0 / steps\n    e1 = abs(euler(growth, 0.0, 1.0, h, steps) - math.e)\n    e4 = abs(rk4(growth, 0.0, 1.0, h, steps) - math.e)\n    print(f\"{steps:7d}  {e1:.10f}  {e4:.10f}\")\nprint(f\"RK4 with 100 steps: {rk4(growth, 0.0, 1.0, 0.01, 100):.8f}\")",
+          "out": "  steps  Euler error   RK4 error\n     10  0.1245393684  0.0000020843\n     20  0.0649841233  0.0000001358\n     40  0.0332179901  0.0000000087\nRK4 with 100 steps: 2.71828183"
+        },
+        {
+          "p": "In C the right-hand side <i>f</i>(<i>t</i>, <i>y</i>) is passed as a function pointer, just as in the root-finding lessons. <code>(void)t;</code> tells the compiler that ignoring <code>t</code> is deliberate.",
+          "code": "#include <math.h>\n#include <stdio.h>\n\ntypedef double (*deriv)(double t, double y);\n\ndouble euler(deriv f, double t, double y, double h, int steps) {\n    for (int i = 0; i < steps; i++) {\n        y = y + h * f(t, y);\n        t = t + h;\n    }\n    return y;\n}\n\ndouble rk4(deriv f, double t, double y, double h, int steps) {\n    for (int i = 0; i < steps; i++) {\n        double k1 = f(t, y);\n        double k2 = f(t + h / 2, y + h / 2 * k1);\n        double k3 = f(t + h / 2, y + h / 2 * k2);\n        double k4 = f(t + h, y + h * k3);\n        y = y + h / 6 * (k1 + 2 * k2 + 2 * k3 + k4);\n        t = t + h;\n    }\n    return y;\n}\n\n/* y' = y with y(0) = 1, so y(1) = e */\ndouble growth(double t, double y) { (void)t; return y; }\n\nint main(void) {\n    const double e = exp(1.0);\n    int sizes[] = {10, 20, 40};\n    printf(\"  steps  Euler error   RK4 error\\n\");\n    for (int k = 0; k < 3; k++) {\n        int steps = sizes[k];\n        double h = 1.0 / steps;\n        double e1 = fabs(euler(growth, 0.0, 1.0, h, steps) - e);\n        double e4 = fabs(rk4(growth, 0.0, 1.0, h, steps) - e);\n        printf(\"%7d  %.10f  %.10f\\n\", steps, e1, e4);\n    }\n    printf(\"RK4 with 100 steps: %.8f\\n\", rk4(growth, 0.0, 1.0, 0.01, 100));\n    return 0;\n}",
+          "out": "  steps  Euler error   RK4 error\n     10  0.1245393684  0.0000020843\n     20  0.0649841233  0.0000001358\n     40  0.0332179901  0.0000000087\nRK4 with 100 steps: 2.71828183"
+        },
+        {
+          "p": "In Fortran an <code>abstract interface</code> describes the right-hand side, and the step size and number of steps are passed in, so the same routines work for any equation.",
+          "code": "program odes\n  use iso_fortran_env, only: real64\n  implicit none\n  abstract interface\n    function deriv(t, y) result(dy)\n      import :: real64\n      real(real64), intent(in) :: t, y\n      real(real64) :: dy\n    end function deriv\n  end interface\n  real(real64), parameter :: e = exp(1.0_real64)\n  integer, parameter :: sizes(3) = [10, 20, 40]\n  real(real64) :: h, e1, e4\n  integer :: k\n\n  print '(a)', '  steps  Euler error   RK4 error'\n  do k = 1, 3\n    h = 1.0_real64 / sizes(k)\n    e1 = abs(euler(growth, 0.0_real64, 1.0_real64, h, sizes(k)) - e)\n    e4 = abs(rk4(growth, 0.0_real64, 1.0_real64, h, sizes(k)) - e)\n    print '(i7, 2x, f12.10, 2x, f12.10)', sizes(k), e1, e4\n  end do\n  print '(a, f10.8)', 'RK4 with 100 steps: ', rk4(growth, 0.0_real64, 1.0_real64, 0.01_real64, 100)\ncontains\n  function euler(f, t0, y0, h, steps) result(y)\n    procedure(deriv) :: f\n    real(real64), intent(in) :: t0, y0, h\n    integer, intent(in) :: steps\n    real(real64) :: t, y\n    integer :: i\n    t = t0\n    y = y0\n    do i = 1, steps\n      y = y + h * f(t, y)\n      t = t + h\n    end do\n  end function euler\n\n  function rk4(f, t0, y0, h, steps) result(y)\n    procedure(deriv) :: f\n    real(real64), intent(in) :: t0, y0, h\n    integer, intent(in) :: steps\n    real(real64) :: t, y, k1, k2, k3, k4\n    integer :: i\n    t = t0\n    y = y0\n    do i = 1, steps\n      k1 = f(t, y)\n      k2 = f(t + h / 2, y + h / 2 * k1)\n      k3 = f(t + h / 2, y + h / 2 * k2)\n      k4 = f(t + h, y + h * k3)\n      y = y + h / 6 * (k1 + 2 * k2 + 2 * k3 + k4)\n      t = t + h\n    end do\n  end function rk4\n\n  ! y' = y with y(0) = 1, so y(1) = e\n  function growth(t, y) result(dy)\n    real(real64), intent(in) :: t, y\n    real(real64) :: dy\n    dy = y\n  end function growth\nend program odes",
+          "out": "  steps  Euler error   RK4 error\n     10  0.1245393684  0.0000020843\n     20  0.0649841233  0.0000001358\n     40  0.0332179901  0.0000000087\nRK4 with 100 steps: 2.71828183"
+        },
+        {
+          "h": "Beyond one equation",
+          "p": "The same steps work for several quantities at once: make <i>y</i> a list (a vector) and <i>f</i> return a list of rates, such as predators and prey that depend on each other. A second-order equation such as a swinging pendulum, θ″ = −(<i>g</i>/<i>L</i>) sin θ, becomes two first-order ones by tracking both the angle and its speed. Real solvers, such as <code>scipy.integrate.solve_ivp</code>, also change <i>h</i> as they go, taking big steps where the solution is smooth and small ones where it changes fast. Some equations, called <b>stiff</b>, mix very fast and very slow changes, and need special <i>implicit</i> methods to stay stable."
+        }
+      ],
+      "practice": [
+        {
+          "q": "With Euler's method you halve the step size. Roughly what happens to the error at the end?",
+          "options": [
+            "It halves",
+            "It becomes 16 times smaller",
+            "It becomes 4 times smaller",
+            "It doubles"
+          ],
+          "answer": "It halves",
+          "why": "Euler's error is proportional to h, so it shrinks in step with h."
+        },
+        {
+          "q": "How many times does RK4 evaluate f in each step?",
+          "options": ["4", "1", "2", "6"],
+          "answer": "4",
+          "why": "k1 at the start, k2 and k3 at the middle, and k4 at the end."
+        },
+        {
+          "q": "How do you solve a second-order equation such as θ″ = −sin θ with these methods?",
+          "options": [
+            "Track θ and θ′ together as a pair of first-order equations",
+            "Apply Euler twice in a row",
+            "Use a smaller step size",
+            "They can't solve second-order equations"
+          ],
+          "answer": "Track θ and θ′ together as a pair of first-order equations",
+          "why": "θ′ = ω and ω′ = −sin θ is a first-order system, and the methods work on vectors as well as single numbers."
+        },
+        {
+          "q": "One Euler step of y′ = 2y from y(0) = 3 with h = 0.5. What does it print?",
+          "code": "y, h = 3.0, 0.5\ny = y + h * (2 * y)\nprint(y)",
+          "options": ["6.0", "4.5", "9.0", "3.0"],
+          "answer": "6.0",
+          "why": "The slope at the start is 2 × 3 = 6, and moving for 0.5 adds 3.",
+          "kind": "output"
+        }
+      ]
+    },
+    {
+      "id": "minimize",
+      "title": "Minimization: golden-section search",
+      "summary": "Finding the lowest point of a function by squeezing a bracket around it.",
+      "sections": [
+        {
+          "p": "Many problems ask for the input that makes something as small as possible: the cheapest design, the shortest path, the model that fits data with the least error. For a function of one variable, <i>f</i>(<i>x</i>), we want the <i>x</i> where <i>f</i> is lowest. Root finding looked for where <i>f</i> crosses zero; here we look for where it bottoms out. The function below, <i>f</i>(<i>x</i>) = <i>x</i>² − 4 sin <i>x</i>, dips to a minimum somewhere between 0 and 3."
+        },
+        {
+          "h": "Bracketing a minimum",
+          "p": "Bisection trapped a root between two points where <i>f</i> had opposite signs. A minimum needs three points instead: <i>a</i> &lt; <i>c</i> &lt; <i>b</i> with <i>f</i>(<i>c</i>) lower than both ends, which guarantees a dip in between (for a function without jumps). To shrink the bracket we try a fourth point <i>d</i> inside it. If <i>f</i>(<i>c</i>) &lt; <i>f</i>(<i>d</i>), the minimum is in [<i>a</i>, <i>d</i>]; otherwise it is in [<i>c</i>, <i>b</i>]. Either way one end is cut off and a lower inner point remains."
+        },
+        {
+          "h": "Why the golden ratio",
+          "p": "Where should the inner points go? If they sit at fractions 0.382 and 0.618 of the way across the bracket, then after cutting, the surviving inner point lands exactly at 0.382 or 0.618 of the new, smaller bracket. So each step reuses one old value and needs only <b>one new evaluation</b> of <i>f</i>, and the bracket shrinks by the same factor 0.618 every time. That number is (√5 − 1)/2, the golden ratio minus one, which gives the method its name. Starting from a bracket 3 wide, 41 steps bring it below 10⁻⁸, since 3 × 0.618⁴¹ ≈ 10⁻⁸.",
+          "code": "import math\n\nR = (math.sqrt(5) - 1) / 2   # 0.618..., the golden ratio minus one\n\n\ndef golden(f, a, b, tol):\n    c = b - R * (b - a)\n    d = a + R * (b - a)\n    fc, fd = f(c), f(d)\n    steps = 0\n    while b - a > tol:\n        if fc < fd:          # the minimum is in [a, d]\n            b, d, fd = d, c, fc\n            c = b - R * (b - a)\n            fc = f(c)\n        else:                # the minimum is in [c, b]\n            a, c, fc = c, d, fd\n            d = a + R * (b - a)\n            fd = f(d)\n        steps += 1\n    return (a + b) / 2, steps\n\n\ndef f(x):\n    return x * x - 4 * math.sin(x)\n\n\nx, steps = golden(f, 0.0, 3.0, 1e-8)\nprint(f\"{steps} steps\")\nprint(f\"minimum at x = {x:.8f}\")\nprint(f\"f(x) = {f(x):.8f}\")",
+          "out": "41 steps\nminimum at x = 1.02986653\nf(x) = -2.36829601"
+        },
+        {
+          "p": "The C version passes the function as a pointer and returns the number of steps through a pointer argument, since a C function can only return one value.",
+          "code": "#include <math.h>\n#include <stdio.h>\n\ntypedef double (*func)(double x);\n\n/* Golden-section search for a minimum of f in [a, b].\n   Returns the middle of the final bracket and stores the step count. */\ndouble golden(func f, double a, double b, double tol, int *steps) {\n    const double r = (sqrt(5.0) - 1.0) / 2.0;\n    double c = b - r * (b - a), d = a + r * (b - a);\n    double fc = f(c), fd = f(d);\n    *steps = 0;\n    while (b - a > tol) {\n        if (fc < fd) {            /* the minimum is in [a, d] */\n            b = d; d = c; fd = fc;\n            c = b - r * (b - a);\n            fc = f(c);\n        } else {                  /* the minimum is in [c, b] */\n            a = c; c = d; fc = fd;\n            d = a + r * (b - a);\n            fd = f(d);\n        }\n        (*steps)++;\n    }\n    return (a + b) / 2;\n}\n\ndouble f(double x) { return x * x - 4 * sin(x); }\n\nint main(void) {\n    int steps;\n    double x = golden(f, 0.0, 3.0, 1e-8, &steps);\n    printf(\"%d steps\\n\", steps);\n    printf(\"minimum at x = %.8f\\n\", x);\n    printf(\"f(x) = %.8f\\n\", f(x));\n    return 0;\n}",
+          "out": "41 steps\nminimum at x = 1.02986653\nf(x) = -2.36829601"
+        },
+        {
+          "p": "In Fortran an <code>abstract interface</code> describes the function to minimize, and <code>steps</code> is an <code>intent(out)</code> argument. The edit descriptors print the same digits as the other two versions.",
+          "code": "module minimize\n  implicit none\n  abstract interface\n    function func(x) result(y)\n      double precision, intent(in) :: x\n      double precision :: y\n    end function func\n  end interface\ncontains\n  ! Golden-section search for a minimum of f in [a, b].\n  function golden(f, a0, b0, tol, steps) result(x)\n    procedure(func) :: f\n    double precision, intent(in) :: a0, b0, tol\n    integer, intent(out) :: steps\n    double precision :: x, a, b, c, d, fc, fd, r\n    r = (sqrt(5d0) - 1d0) / 2d0\n    a = a0\n    b = b0\n    c = b - r * (b - a)\n    d = a + r * (b - a)\n    fc = f(c)\n    fd = f(d)\n    steps = 0\n    do while (b - a > tol)\n      if (fc < fd) then        ! the minimum is in [a, d]\n        b = d\n        d = c\n        fd = fc\n        c = b - r * (b - a)\n        fc = f(c)\n      else                     ! the minimum is in [c, b]\n        a = c\n        c = d\n        fc = fd\n        d = a + r * (b - a)\n        fd = f(d)\n      end if\n      steps = steps + 1\n    end do\n    x = (a + b) / 2\n  end function golden\n\n  function f(x) result(y)\n    double precision, intent(in) :: x\n    double precision :: y\n    y = x * x - 4 * sin(x)\n  end function f\nend module minimize\n\nprogram main\n  use minimize\n  implicit none\n  integer :: steps\n  double precision :: x\n  x = golden(f, 0d0, 3d0, 1d-8, steps)\n  print '(i0, a)', steps, ' steps'\n  print '(a, f10.8)', 'minimum at x = ', x\n  print '(a, f11.8)', 'f(x) = ', f(x)\nend program main",
+          "out": "41 steps\nminimum at x = 1.02986653\nf(x) = -2.36829601"
+        },
+        {
+          "h": "How close can you get?",
+          "p": "We stopped at a bracket of 10⁻⁸, not 10⁻¹⁶, and that is not laziness. Near a minimum a smooth function is shaped like a parabola, so moving a distance δ away only raises <i>f</i> by about δ². A step of 10⁻⁸ raises it by about 10⁻¹⁶, which is at the limit of what a double can tell apart from <i>f</i> itself (see the floating point lesson). Below that, comparing <i>f</i>(<i>c</i>) with <i>f</i>(<i>d</i>) is just comparing rounding errors. So a minimum can only be located to about the square root of the machine precision, roughly 8 digits, while its <i>value</i> <i>f</i>(<i>x</i>) is still good to nearly full precision.",
+          "code": "import math\n\n\ndef f(x):\n    return x * x - 4 * math.sin(x)\n\n\nbest = 1.0298665293222589    # the true minimum\nfor dx in [1e-2, 1e-4, 1e-6, 1e-8]:\n    print(f\"step {dx:.0e} away: f grows by {f(best + dx) - f(best):.1e}\")",
+          "out": "step 1e-02 away: f grows by 2.7e-04\nstep 1e-04 away: f grows by 2.7e-08\nstep 1e-06 away: f grows by 2.7e-12\nstep 1e-08 away: f grows by 8.9e-16"
+        },
+        {
+          "h": "Beyond golden sections",
+          "p": "Golden-section search is slow but cannot fail once the minimum is bracketed. <b>Brent's method</b> speeds it up by fitting a parabola through the three points and jumping to its lowest point, falling back to a golden step when the parabola misbehaves; this is what <code>scipy.optimize.minimize_scalar</code> uses. If you can compute the derivative, you can instead find the root of <i>f</i>′ with Newton's method. With many variables, methods follow the downhill direction (gradient descent, the workhorse of machine learning) or move a small shape of points around (Nelder–Mead). All of these find a <b>local</b> minimum, the bottom of the nearest valley; finding the lowest point overall, the <b>global</b> minimum, is much harder and usually means trying many starting points."
+        }
+      ],
+      "practice": [
+        {
+          "q": "How many points does a bracket around a minimum need?",
+          "options": [
+            "Three, with the middle one lowest",
+            "Two, with opposite signs",
+            "One, plus the derivative",
+            "Four, evenly spaced"
+          ],
+          "answer": "Three, with the middle one lowest",
+          "why": "If f(c) is below f(a) and f(b), the function must dip somewhere between a and b."
+        },
+        {
+          "q": "By what factor does golden-section search shrink the bracket each step?",
+          "options": ["About 0.618", "0.5", "About 0.382", "It depends on the function"],
+          "answer": "About 0.618",
+          "why": "The inner points are placed so that each step keeps 0.618 of the bracket and reuses one old point."
+        },
+        {
+          "q": "Why can a minimum only be located to about 8 digits in double precision?",
+          "options": [
+            "Near the minimum f changes by only about δ², which disappears in rounding below δ ≈ 10⁻⁸",
+            "Golden-section search always stops after 41 steps",
+            "Doubles only hold 8 digits",
+            "The golden ratio is irrational"
+          ],
+          "answer": "Near the minimum f changes by only about δ², which disappears in rounding below δ ≈ 10⁻⁸",
+          "why": "The function is flat at the bottom, so differences in x of 10⁻⁸ give differences in f near 10⁻¹⁶, the limit of double precision."
+        },
+        {
+          "q": "One golden-section step on f(x) = (x − 1)² with a = 0, b = 4. Which bracket is left?",
+          "code": "r = 0.618\na, b = 0.0, 4.0\nc, d = b - r * (b - a), a + r * (b - a)\nf = lambda x: (x - 1) ** 2\nif f(c) < f(d):\n    b = d\nelse:\n    a = c\nprint(round(a, 3), round(b, 3))",
+          "options": ["0.0 2.472", "1.528 4.0", "0.0 1.528", "2.472 4.0"],
+          "answer": "0.0 2.472",
+          "why": "c = 1.528 and d = 2.472; f(c) ≈ 0.28 is lower than f(d) ≈ 2.17, so the minimum is in [a, d].",
+          "kind": "output"
+        }
+      ]
+    },
+    {
+      "id": "random",
+      "title": "Random numbers and Monte Carlo",
+      "summary": "How a computer makes numbers that look random, how to test one, and using them to estimate π.",
+      "sections": [
+        {
+          "p": "Computers follow instructions exactly, so they can't produce true randomness on their own. Instead, a <b>pseudo-random number generator</b> keeps a hidden number, its <b>state</b>, and each call scrambles the state into a new one and hands out the result. The sequence looks random but is completely determined by the starting state, the <b>seed</b>. That is a feature: a simulation started from the same seed gives exactly the same results, which makes bugs repeatable."
+        },
+        {
+          "h": "A linear congruential generator",
+          "p": "The oldest kind multiplies the state by a constant and keeps the remainder: <i>state</i> ← <i>a</i> × <i>state</i> mod <i>m</i>. With <i>m</i> = 2³¹ − 1 (a prime) and <i>a</i> = 16807, every state from 1 to <i>m</i> − 1 appears once before the sequence repeats. Stephen Park and Keith Miller proposed this in 1988 as a <b>minimal standard</b>, and published a check: starting from 1, the 10000th state must be 1043618065. Dividing the state by <i>m</i> gives a number between 0 and 1. Because the generator uses only whole-number arithmetic, every language gives exactly the same sequence, so the same check works everywhere."
+        },
+        {
+          "h": "Monte Carlo",
+          "p": "<b>Monte Carlo</b> methods, named after the casino, answer questions by random sampling. Throw random points into the unit square: the fraction that lands inside the quarter circle <i>x</i>² + <i>y</i>² &lt; 1 is about π/4. The error shrinks only like 1/√<i>N</i>, so 100 times more points buy just one more correct digit. For a smooth one-dimensional integral the methods in the integration lesson are far better, but for integrals in many dimensions Monte Carlo is often the only practical method.",
+          "code": "M = 2147483647      # 2**31 - 1, a prime\nA = 16807           # 7**5, the \"minimal standard\" multiplier\n\ndef next_state(state):\n    return A * state % M\n\n# The published check: starting from 1, the 10000th state is 1043618065.\nstate = 1\nfor _ in range(10000):\n    state = next_state(state)\nprint(f\"state after 10000 steps: {state}, as a fraction {state / M:.10f}\")\n\n# Monte Carlo: the fraction of random points in the unit square that land\n# inside the quarter circle x*x + y*y < 1 is about pi / 4.\ninside = 0\ntrials = 100000\nfor _ in range(trials):\n    state = next_state(state)\n    x = state / M\n    state = next_state(state)\n    y = state / M\n    if x * x + y * y < 1:\n        inside += 1\nprint(f\"pi is about {4 * inside / trials:.4f}\")",
+          "out": "state after 10000 steps: 1043618065, as a fraction 0.4859725318\npi is about 3.1406"
+        },
+        {
+          "p": "In C, <i>a</i> × <i>state</i> can be as large as about 2⁴⁵, which overflows a 32-bit <code>int</code>, so the state is an <code>int64_t</code>. Python's integers never overflow, so it needs no such care.",
+          "code": "#include <stdint.h>\n#include <stdio.h>\n\n#define M 2147483647      /* 2^31 - 1, a prime */\n#define A 16807           /* 7^5, the \"minimal standard\" multiplier */\n\n/* A * state can reach about 2^45, so it needs a 64-bit integer. */\nint64_t next_state(int64_t state) {\n    return A * state % M;\n}\n\nint main(void) {\n    /* The published check: starting from 1, the 10000th state is 1043618065. */\n    int64_t state = 1;\n    for (int i = 0; i < 10000; i++)\n        state = next_state(state);\n    printf(\"state after 10000 steps: %lld, as a fraction %.10f\\n\",\n           (long long)state, (double)state / M);\n\n    /* Monte Carlo: points in the unit square inside the quarter circle. */\n    int inside = 0;\n    const int trials = 100000;\n    for (int i = 0; i < trials; i++) {\n        state = next_state(state);\n        double x = (double)state / M;\n        state = next_state(state);\n        double y = (double)state / M;\n        if (x * x + y * y < 1)\n            inside++;\n    }\n    printf(\"pi is about %.4f\\n\", 4.0 * inside / trials);\n    return 0;\n}",
+          "out": "state after 10000 steps: 1043618065, as a fraction 0.4859725318\npi is about 3.1406"
+        },
+        {
+          "p": "Fortran asks for a 64-bit integer kind with <code>int64</code> from <code>iso_fortran_env</code>, and <code>real(state, real64)</code> converts it to a double before dividing.",
+          "code": "program random_numbers\n  use iso_fortran_env, only: int64, real64\n  implicit none\n  integer(int64), parameter :: m = 2147483647_int64   ! 2**31 - 1, a prime\n  integer(int64), parameter :: a = 16807_int64        ! 7**5, the \"minimal standard\" multiplier\n  integer(int64) :: state\n  real(real64) :: x, y\n  integer :: i, inside\n  integer, parameter :: trials = 100000\n\n  ! The published check: starting from 1, the 10000th state is 1043618065.\n  state = 1\n  do i = 1, 10000\n    state = next_state(state)\n  end do\n  print '(a, i0, a, f12.10)', 'state after 10000 steps: ', state, ', as a fraction ', &\n        real(state, real64) / m\n\n  ! Monte Carlo: points in the unit square inside the quarter circle.\n  inside = 0\n  do i = 1, trials\n    state = next_state(state)\n    x = real(state, real64) / m\n    state = next_state(state)\n    y = real(state, real64) / m\n    if (x * x + y * y < 1) inside = inside + 1\n  end do\n  print '(a, f6.4)', 'pi is about ', 4.0_real64 * inside / trials\ncontains\n  ! a * state can reach about 2**45, so it needs a 64-bit integer.\n  function next_state(s) result(n)\n    integer(int64), intent(in) :: s\n    integer(int64) :: n\n    n = mod(a * s, m)\n  end function next_state\nend program random_numbers",
+          "out": "state after 10000 steps: 1043618065, as a fraction 0.4859725318\npi is about 3.1406"
+        },
+        {
+          "h": "In real programs",
+          "p": "The minimal standard is good for learning and for checking code, but it is weak by modern standards: its period of about two billion is used up in seconds, and neighbouring values are related in ways careful tests can detect. Use your language's library instead. Python's <code>random</code> uses the Mersenne Twister, and newer generators such as PCG and xoshiro are fast and pass much stronger tests. None of these are safe for passwords or keys, because their next output can be predicted from earlier ones; for that use a cryptographic source such as Python's <code>secrets</code> module."
+        }
+      ],
+      "practice": [
+        {
+          "q": "Two runs of a simulation use the same pseudo-random generator and the same seed. What happens?",
+          "options": [
+            "They produce exactly the same numbers",
+            "They produce different numbers",
+            "The second run fails",
+            "Only the first number matches"
+          ],
+          "answer": "They produce exactly the same numbers",
+          "why": "The sequence is fully determined by the seed, which is what makes runs repeatable."
+        },
+        {
+          "q": "A Monte Carlo estimate with 10,000 points has an error of about 0.01. Roughly how many points bring it down to 0.001?",
+          "options": ["1,000,000", "100,000", "20,000", "10,000,000"],
+          "answer": "1,000,000",
+          "why": "The error falls like 1/√N, so a tenth of the error needs 100 times as many points."
+        },
+        {
+          "q": "Which of these should you use to make a password?",
+          "options": [
+            "A cryptographic source such as Python's secrets module",
+            "The minimal standard generator",
+            "Python's random module",
+            "Any generator, seeded with the time"
+          ],
+          "answer": "A cryptographic source such as Python's secrets module",
+          "why": "Ordinary generators are predictable from their earlier outputs; cryptographic sources are designed not to be."
+        },
+        {
+          "q": "Three steps of the minimal standard from seed 1. What does it print?",
+          "code": "state = 1\nfor _ in range(3):\n    state = 16807 * state % 2147483647\nprint(state)",
+          "options": ["1622650073", "282475249", "16807", "50421"],
+          "answer": "1622650073",
+          "why": "The states are 16807, then 16807² = 282475249, then 16807³ mod (2³¹ − 1) = 1622650073.",
+          "kind": "output"
+        }
+      ]
+    },
+    {
+      "id": "eigen",
+      "title": "Eigenvalues: power iteration",
+      "summary": "Finding the direction a matrix stretches most, by multiplying again and again.",
+      "sections": [
+        {
+          "p": "Multiplying a vector by a matrix usually turns it and stretches it. But for most square matrices there are special directions that only get stretched: <i>A</i><i>v</i> = λ<i>v</i>. Such a <i>v</i> is an <b>eigenvector</b> and the stretch factor λ is its <b>eigenvalue</b>. They describe how a system behaves on its own: the ways a bridge or a guitar string vibrates and at what frequencies, which web pages a random surfer ends up on (the idea behind PageRank), and the main directions of variation in a cloud of data points."
+        },
+        {
+          "h": "Multiply, normalize, repeat",
+          "p": "Start with almost any vector and keep multiplying it by <i>A</i>. Each multiplication stretches the part along each eigenvector by that eigenvector's eigenvalue, so the part with the largest eigenvalue (in size) grows fastest and soon dominates. Dividing by the vector's length after each step stops the numbers from overflowing. Once the direction settles, the stretch tells us the eigenvalue. For a symmetric matrix the best estimate is the <b>Rayleigh quotient</b> <i>v</i> · <i>A</i><i>v</i>, which is accurate to twice as many digits as the direction itself. The matrix below, with 2 on the diagonal and −1 beside it, describes a chain of three masses joined by springs; its largest eigenvalue is 2 + √2.",
+          "code": "import math\n\nA = [[2.0, -1.0, 0.0],\n     [-1.0, 2.0, -1.0],\n     [0.0, -1.0, 2.0]]\n\n\ndef times(A, v):\n    return [sum(A[i][j] * v[j] for j in range(len(v))) for i in range(len(A))]\n\n\ndef dot(u, v):\n    return sum(a * b for a, b in zip(u, v))\n\n\nv = [1.0, 0.0, 0.0]\nestimate = 0.0\nfor step in range(1, 101):\n    w = times(A, v)\n    new = dot(v, w)                      # Rayleigh quotient, since v has length 1\n    size = math.sqrt(dot(w, w))\n    v = [x / size for x in w]\n    if step in (1, 2, 5, 10, 20):\n        print(f\"step {step:2d}: {new:.10f}\")\n    if abs(new - estimate) < 1e-13:\n        break\n    estimate = new\nprint(f\"after {step} steps the largest eigenvalue is {new:.10f}\")\nprint(\"eigenvector:\" + \"\".join(f\"{x:10.6f}\" for x in v))",
+          "out": "step  1: 2.0000000000\nstep  2: 2.8000000000\nstep  5: 3.3760539629\nstep 10: 3.4140270123\nstep 20: 3.4142135581\nafter 31 steps the largest eigenvalue is 3.4142135624\neigenvector:  0.500000 -0.707107  0.500000"
+        },
+        {
+          "p": "In C the matrix is a fixed-size two-dimensional array, and the result vector is passed in for the function to fill, since C functions cannot return arrays.",
+          "code": "#include <math.h>\n#include <stdio.h>\n\n#define N 3\n\n/* w = A v */\nvoid times(double A[N][N], const double v[N], double w[N]) {\n    for (int i = 0; i < N; i++) {\n        w[i] = 0.0;\n        for (int j = 0; j < N; j++) w[i] += A[i][j] * v[j];\n    }\n}\n\ndouble dot(const double u[N], const double v[N]) {\n    double s = 0.0;\n    for (int i = 0; i < N; i++) s += u[i] * v[i];\n    return s;\n}\n\nint main(void) {\n    double A[N][N] = {{2, -1, 0}, {-1, 2, -1}, {0, -1, 2}};\n    double v[N] = {1, 0, 0}, w[N];\n    double estimate = 0.0, now = 0.0;\n    int step;\n    for (step = 1; step <= 100; step++) {\n        times(A, v, w);\n        now = dot(v, w);               /* Rayleigh quotient, since v has length 1 */\n        double size = sqrt(dot(w, w));\n        for (int i = 0; i < N; i++) v[i] = w[i] / size;\n        if (step == 1 || step == 2 || step == 5 || step == 10 || step == 20)\n            printf(\"step %2d: %.10f\\n\", step, now);\n        if (fabs(now - estimate) < 1e-13) break;\n        estimate = now;\n    }\n    printf(\"after %d steps the largest eigenvalue is %.10f\\n\", step, now);\n    printf(\"eigenvector:\");\n    for (int i = 0; i < N; i++) printf(\"%10.6f\", v[i]);\n    printf(\"\\n\");\n    return 0;\n}",
+          "out": "step  1: 2.0000000000\nstep  2: 2.8000000000\nstep  5: 3.3760539629\nstep 10: 3.4140270123\nstep 20: 3.4142135581\nafter 31 steps the largest eigenvalue is 3.4142135624\neigenvector:  0.500000 -0.707107  0.500000"
+        },
+        {
+          "p": "Fortran has whole-array operations, so <code>v = w / size</code> divides every element at once. It also has <code>matmul</code> and <code>dot_product</code> built in; we write the loops out here so the sums happen in exactly the same order as in Python and C, and the three print identical digits.",
+          "code": "program power\n  implicit none\n  integer, parameter :: n = 3\n  double precision :: a(n, n), v(n), w(n), estimate, now, size\n  integer :: step\n  ! Fortran fills arrays column by column; A is symmetric, so it reads the same.\n  a = reshape([2d0, -1d0, 0d0, -1d0, 2d0, -1d0, 0d0, -1d0, 2d0], [n, n])\n  v = [1d0, 0d0, 0d0]\n  estimate = 0d0\n  do step = 1, 100\n    w = times(a, v)\n    now = dot(v, w)              ! Rayleigh quotient, since v has length 1\n    size = sqrt(dot(w, w))\n    v = w / size\n    if (any(step == [1, 2, 5, 10, 20])) print '(a, i2, a, f12.10)', 'step ', step, ': ', now\n    if (abs(now - estimate) < 1d-13) exit\n    estimate = now\n  end do\n  print '(a, i0, a, f12.10)', 'after ', step, ' steps the largest eigenvalue is ', now\n  print '(a, 3f10.6)', 'eigenvector:', v\ncontains\n  ! w = A v, with the sums in the same order as the other languages\n  function times(a, v) result(w)\n    double precision, intent(in) :: a(n, n), v(n)\n    double precision :: w(n)\n    integer :: i, j\n    do i = 1, n\n      w(i) = 0d0\n      do j = 1, n\n        w(i) = w(i) + a(i, j) * v(j)\n      end do\n    end do\n  end function times\n\n  function dot(u, v) result(s)\n    double precision, intent(in) :: u(n), v(n)\n    double precision :: s\n    integer :: i\n    s = 0d0\n    do i = 1, n\n      s = s + u(i) * v(i)\n    end do\n  end function dot\nend program power",
+          "out": "step  1: 2.0000000000\nstep  2: 2.8000000000\nstep  5: 3.3760539629\nstep 10: 3.4140270123\nstep 20: 3.4142135581\nafter 31 steps the largest eigenvalue is 3.4142135624\neigenvector:  0.500000 -0.707107  0.500000"
+        },
+        {
+          "h": "When it is slow",
+          "p": "Each step shrinks the unwanted part by the ratio of the second-largest eigenvalue to the largest. When the two are far apart that ratio is small and a few dozen steps are enough; when they are close, the method crawls. In this demo the largest eigenvalue is always 3 and only the second one changes.",
+          "code": "import math\n\n\ndef steps_needed(second):\n    # A = [[3, 0], [0, second]] has eigenvalues 3 and second\n    v = [1.0, 1.0]\n    for step in range(1, 100000):\n        w = [3 * v[0], second * v[1]]\n        size = math.sqrt(w[0] ** 2 + w[1] ** 2)\n        v = [w[0] / size, w[1] / size]\n        if abs(v[1]) < 1e-10:            # the second direction has died out\n            return step\n\n\nfor second in [1.0, 2.0, 2.7, 2.97]:\n    print(f\"eigenvalues 3 and {second}: {steps_needed(second)} steps\")",
+          "out": "eigenvalues 3 and 1.0: 21 steps\neigenvalues 3 and 2.0: 57 steps\neigenvalues 3 and 2.7: 219 steps\neigenvalues 3 and 2.97: 2292 steps"
+        },
+        {
+          "h": "Beyond the largest eigenvalue",
+          "p": "Two small changes reach the other eigenvalues. <b>Inverse iteration</b> multiplies by <i>A</i><sup>−1</sup> instead (in practice, solving a linear system each step, as in the linear systems lesson), which finds the eigenvalue <i>smallest</i> in size. Shifting first, by working with <i>A</i> − σ<i>I</i>, finds the eigenvalue closest to any guess σ, and updating σ from the Rayleigh quotient each step converges extremely fast. To get every eigenvalue at once, libraries use the <b>QR algorithm</b> (or Jacobi rotations for small symmetric matrices); in Python that is <code>numpy.linalg.eigh</code> for symmetric matrices and <code>numpy.linalg.eig</code> otherwise, both built on LAPACK."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does A v = λ v say about the vector v?",
+          "options": [
+            "Multiplying by A only stretches v, without turning it",
+            "v is perpendicular to every row of A",
+            "A has no inverse",
+            "v has length λ"
+          ],
+          "answer": "Multiplying by A only stretches v, without turning it",
+          "why": "An eigenvector keeps its direction; the eigenvalue λ is the stretch factor."
+        },
+        {
+          "q": "Which eigenvalue does plain power iteration find?",
+          "options": [
+            "The one largest in size",
+            "The smallest one",
+            "The one closest to zero",
+            "All of them"
+          ],
+          "answer": "The one largest in size",
+          "why": "Repeated multiplication makes the part with the largest |λ| grow fastest until it dominates."
+        },
+        {
+          "q": "What decides how fast power iteration converges?",
+          "options": [
+            "The ratio of the second-largest eigenvalue to the largest",
+            "The size of the matrix",
+            "The length of the starting vector",
+            "How many zeros the matrix has"
+          ],
+          "answer": "The ratio of the second-largest eigenvalue to the largest",
+          "why": "Each step shrinks the unwanted part by that ratio, so close eigenvalues mean slow progress."
+        },
+        {
+          "q": "One multiplication of v = [1, 0] by A = [[2, 1], [1, 2]]. What does it print?",
+          "code": "A = [[2, 1], [1, 2]]\nv = [1, 0]\nw = [A[0][0] * v[0] + A[0][1] * v[1], A[1][0] * v[0] + A[1][1] * v[1]]\nprint(w)",
+          "options": ["[2, 1]", "[1, 2]", "[2, 0]", "[3, 3]"],
+          "answer": "[2, 1]",
+          "why": "Multiplying by [1, 0] picks out the first column of A, which is [2, 1].",
+          "kind": "output"
+        }
+      ]
+    },
+    {
+      "id": "fft",
+      "title": "The fast Fourier transform",
+      "summary": "Taking a signal apart into the waves it is made of, in n log n steps.",
+      "sections": [
+        {
+          "p": "A sound, a day of temperatures or a row of pixels is a list of <i>n</i> samples. The <b>discrete Fourier transform</b> (DFT) rewrites that list as a sum of waves: for each frequency <i>k</i> (<i>k</i> full cycles across the samples) it gives a complex number <i>X</i>(<i>k</i>) = Σ<sub><i>j</i></sub> <i>x<sub>j</sub></i> e<sup>−2π<i>ijk</i>/<i>n</i></sup>. Its size |<i>X</i>(<i>k</i>)| says how much of that wave is in the signal, and its angle says where the wave starts. This is how an equalizer shows bass and treble, how MP3 and JPEG decide what detail to drop, and how a tuner hears which note you play."
+        },
+        {
+          "h": "From n² to n log n",
+          "p": "Computing every <i>X</i>(<i>k</i>) straight from the formula takes <i>n</i> multiplications for each of <i>n</i> frequencies: <i>n</i>² in all. The <b>fast Fourier transform</b> (FFT) notices that the transform of <i>n</i> samples can be built from the transforms of the even-numbered and the odd-numbered samples, each of size <i>n</i>/2, with one extra multiplication per pair. Splitting again and again down to single samples leaves log₂ <i>n</i> levels of <i>n</i> operations each. Gauss used the idea in 1805; James Cooley and John Tukey published it in 1965, and it became one of the most used algorithms in computing. For a million samples it is the difference between a trillion steps and twenty million:",
+          "code": "print(\"     n    direct n*n    FFT n*log2(n)\")\nfor p in [3, 10, 20]:\n    n = 2 ** p\n    print(f\"{n:7d}  {n * n:14d}  {n * p:12d}\")",
+          "out": "     n    direct n*n    FFT n*log2(n)\n      8              64            24\n   1024         1048576         10240\n1048576   1099511627776      20971520"
+        },
+        {
+          "h": "Bit reversal and butterflies",
+          "p": "Instead of splitting recursively, the version below works in place. It first reorders the samples so that index <i>i</i> moves to the index whose binary digits are those of <i>i</i> backwards (with 16 samples, 0001 swaps with 1000); after that, the halves that the splitting would produce sit next to each other. Then it combines neighbours in pairs, pairs into fours, fours into eights, and so on. Each combining step, called a <b>butterfly</b>, takes two values <i>u</i> and <i>t</i> (the second already multiplied by a <i>twiddle factor</i> <i>w</i> = e<sup>−2π<i>ik</i>/size</sup>) and replaces them by <i>u</i> + <i>t</i> and <i>u</i> − <i>t</i>. The signal is 1 + sin(2 cycles) + 0.5 cos(5 cycles), and the transform finds exactly those parts: 16 at <i>k</i> = 0 (the constant 1, added up 16 times), 8 at <i>k</i> = 2 and 4 at <i>k</i> = 5 (a wave of height <i>A</i> shows up as <i>A</i>·<i>n</i>/2).",
+          "code": "import math\n\nPI = math.acos(-1.0)\n\n\ndef fft(a):\n    \"\"\"Replace the list a (length a power of 2) by its discrete Fourier transform.\"\"\"\n    n = len(a)\n    # 1. put the samples in bit-reversed order\n    j = 0\n    for i in range(1, n):\n        bit = n // 2\n        while j & bit:\n            j ^= bit\n            bit //= 2\n        j |= bit\n        if i < j:\n            a[i], a[j] = a[j], a[i]\n    # 2. combine pairs, then fours, then eights, ... (butterflies)\n    span = 2\n    while span <= n:\n        half = span // 2\n        for start in range(0, n, span):\n            for k in range(half):\n                angle = -2 * PI * k / span\n                w = complex(math.cos(angle), math.sin(angle))\n                t = w * a[start + k + half]\n                u = a[start + k]\n                a[start + k] = u + t\n                a[start + k + half] = u - t\n        span *= 2\n\n\n# 16 samples of 1 + sin(2 cycles) + 0.5 cos(5 cycles)\nn = 16\nx = [complex(1 + math.sin(2 * PI * 2 * j / n)\n             + 0.5 * math.cos(2 * PI * 5 * j / n), 0) for j in range(n)]\nfft(x)\nprint(\"  k      |X(k)|\")\nfor k in range(n // 2 + 1):\n    print(f\"{k:3d}  {abs(x[k]):10.6f}\")",
+          "out": "  k      |X(k)|\n  0   16.000000\n  1    0.000000\n  2    8.000000\n  3    0.000000\n  4    0.000000\n  5    4.000000\n  6    0.000000\n  7    0.000000\n  8    0.000000"
+        },
+        {
+          "p": "C99 has complex numbers built in through <code>&lt;complex.h&gt;</code>: <code>double complex</code> is the type, <code>I</code> is the imaginary unit, and <code>cabs</code> gives the size. The loops are the same as in Python.",
+          "code": "#include <complex.h>\n#include <math.h>\n#include <stdio.h>\n\n/* Replace a[0..n-1] (n a power of 2) by its discrete Fourier transform. */\nvoid fft(double complex *a, int n) {\n    const double pi = acos(-1.0);\n    /* 1. put the samples in bit-reversed order */\n    for (int i = 1, j = 0; i < n; i++) {\n        int bit = n / 2;\n        while (j & bit) {\n            j ^= bit;\n            bit /= 2;\n        }\n        j |= bit;\n        if (i < j) {\n            double complex tmp = a[i];\n            a[i] = a[j];\n            a[j] = tmp;\n        }\n    }\n    /* 2. combine pairs, then fours, then eights, ... (butterflies) */\n    for (int span = 2; span <= n; span *= 2) {\n        int half = span / 2;\n        for (int start = 0; start < n; start += span) {\n            for (int k = 0; k < half; k++) {\n                double angle = -2 * pi * k / span;\n                double complex w = cos(angle) + sin(angle) * I;\n                double complex t = w * a[start + k + half];\n                double complex u = a[start + k];\n                a[start + k] = u + t;\n                a[start + k + half] = u - t;\n            }\n        }\n    }\n}\n\nint main(void) {\n    enum { N = 16 };\n    const double pi = acos(-1.0);\n    double complex x[N];\n    /* 16 samples of 1 + sin(2 cycles) + 0.5 cos(5 cycles) */\n    for (int j = 0; j < N; j++)\n        x[j] = 1 + sin(2 * pi * 2 * j / N) + 0.5 * cos(2 * pi * 5 * j / N);\n    fft(x, N);\n    printf(\"  k      |X(k)|\\n\");\n    for (int k = 0; k <= N / 2; k++)\n        printf(\"%3d  %10.6f\\n\", k, cabs(x[k]));\n    return 0;\n}",
+          "out": "  k      |X(k)|\n  0   16.000000\n  1    0.000000\n  2    8.000000\n  3    0.000000\n  4    0.000000\n  5    4.000000\n  6    0.000000\n  7    0.000000\n  8    0.000000"
+        },
+        {
+          "p": "Fortran has had a <code>complex</code> type since the 1960s, and arrays can start at 0 with <code>a(0:)</code>, which keeps the index arithmetic the same as in C and Python. One trap: a variable called <code>size</code> would hide the built-in <code>size</code> function, so this version calls the block width <code>span</code>.",
+          "code": "module fourier\n  implicit none\ncontains\n  ! Replace a (its size a power of 2) by its discrete Fourier transform.\n  subroutine fft(a)\n    complex(kind(1d0)), intent(inout) :: a(0:)\n    complex(kind(1d0)) :: w, t, u, tmp\n    double precision :: pi, angle\n    integer :: n, i, j, bit, span, half, start, k\n    pi = acos(-1d0)\n    n = size(a)\n    ! 1. put the samples in bit-reversed order\n    j = 0\n    do i = 1, n - 1\n      bit = n / 2\n      do while (iand(j, bit) /= 0)\n        j = ieor(j, bit)\n        bit = bit / 2\n      end do\n      j = ior(j, bit)\n      if (i < j) then\n        tmp = a(i)\n        a(i) = a(j)\n        a(j) = tmp\n      end if\n    end do\n    ! 2. combine pairs, then fours, then eights, ... (butterflies)\n    span = 2\n    do while (span <= n)\n      half = span / 2\n      do start = 0, n - 1, span\n        do k = 0, half - 1\n          angle = -2 * pi * k / span\n          w = cmplx(cos(angle), sin(angle), kind(1d0))\n          t = w * a(start + k + half)\n          u = a(start + k)\n          a(start + k) = u + t\n          a(start + k + half) = u - t\n        end do\n      end do\n      span = span * 2\n    end do\n  end subroutine fft\nend module fourier\n\nprogram main\n  use fourier\n  implicit none\n  integer, parameter :: n = 16\n  complex(kind(1d0)) :: x(0:n-1)\n  double precision :: pi\n  integer :: j, k\n  pi = acos(-1d0)\n  ! 16 samples of 1 + sin(2 cycles) + 0.5 cos(5 cycles)\n  do j = 0, n - 1\n    x(j) = cmplx(1 + sin(2 * pi * 2 * j / n) + 0.5d0 * cos(2 * pi * 5 * j / n), 0d0, kind(1d0))\n  end do\n  call fft(x)\n  print '(a)', '  k      |X(k)|'\n  do k = 0, n / 2\n    print '(i3, 2x, f10.6)', k, abs(x(k))\n  end do\nend program main",
+          "out": "  k      |X(k)|\n  0   16.000000\n  1    0.000000\n  2    8.000000\n  3    0.000000\n  4    0.000000\n  5    4.000000\n  6    0.000000\n  7    0.000000\n  8    0.000000"
+        },
+        {
+          "h": "Using it for real",
+          "p": "In practice you call a library: <code>numpy.fft</code> in Python, or FFTW from C and Fortran, which handle any length (not only powers of 2) and real-valued input at half the cost. A few things to know when reading a spectrum: only frequencies up to <i>n</i>/2 can be told apart, and a wave faster than that <b>aliases</b>, showing up as a slower one, which is why audio is sampled at more than twice the highest pitch we hear. A wave that does not fit a whole number of cycles in the window leaks into neighbouring frequencies, so signals are often tapered at the ends first (a <i>window function</i>). The FFT also makes <b>convolution</b> fast, since convolving is just multiplying transforms, which speeds up blurring images, filtering sound and even multiplying huge integers."
+        }
+      ],
+      "practice": [
+        {
+          "q": "How many operations does the FFT need for n samples, compared with n² for the direct formula?",
+          "options": ["About n log₂ n", "About n", "About n²/2", "About 2ⁿ"],
+          "answer": "About n log₂ n",
+          "why": "There are log₂ n levels of splitting, each doing work proportional to n."
+        },
+        {
+          "q": "A signal is 3 cos(4 cycles) sampled 32 times. What is |X(4)|?",
+          "options": ["48", "3", "96", "12"],
+          "answer": "48",
+          "why": "A wave of height A appears as A·n/2 = 3 × 32 / 2 = 48."
+        },
+        {
+          "q": "With 16 samples, which index does 3 (binary 0011) swap with in the bit-reversal step?",
+          "options": [
+            "12 (binary 1100)",
+            "3, it stays put",
+            "13 (binary 1101)",
+            "6 (binary 0110)"
+          ],
+          "answer": "12 (binary 1100)",
+          "why": "Reading 0011 backwards gives 1100, which is 12."
+        },
+        {
+          "q": "One butterfly with u = 3 and t = 1. What does it print?",
+          "code": "u, t = 3, 1\nprint(u + t, u - t)",
+          "options": ["4 2", "2 4", "3 1", "4 -2"],
+          "answer": "4 2",
+          "why": "A butterfly replaces the pair by their sum and their difference.",
+          "kind": "output"
+        }
+      ]
+    }
+  ]
+}
