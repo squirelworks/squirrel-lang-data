@@ -1,0 +1,828 @@
+{
+  "schema": "programming-course@1",
+  "id": "chisel",
+  "name": "Chisel",
+  "title": "Chisel, hardware written in Scala",
+  "intro": "Chisel is a hardware construction language embedded in Scala. A Chisel program is a Scala program that <em>builds a circuit</em>. It does not step through that circuit the way a C or Python program steps through statements. When the Scala finishes, what remains is a module of wires, registers and operations, which a later tool turns into Verilog. The spelling below is the <code>chisel3</code> API (UC Berkeley, now maintained as chipsalliance/chisel). These lessons do not run the examples: generating hardware needs a Scala build with the Chisel library on it, and the simulator calls have changed between releases.",
+  "comment": "//",
+  "keywords": [
+    "class",
+    "extends",
+    "val",
+    "import",
+    "when",
+    "otherwise",
+    "elsewhen",
+    "Module",
+    "switch",
+    "is",
+    "for"
+  ],
+  "builtins": [
+    "Input",
+    "Output",
+    "UInt",
+    "Bool",
+    "IO",
+    "Wire",
+    "Reg",
+    "RegInit",
+    "Mux",
+    "MuxCase",
+    "MuxLookup",
+    "Vec",
+    "VecInit",
+    "Mem",
+    "SyncReadMem",
+    "Flipped",
+    "Decoupled",
+    "Enum"
+  ],
+  "lessons": [
+    {
+      "id": "generator",
+      "title": "A generator, not a program",
+      "summary": "Scala runs once and leaves a circuit behind.",
+      "sections": [
+        {
+          "p": "You write Chisel inside an ordinary Scala program. Scala’s own <code>if</code>, <code>for</code> and <code>val</code> run while the circuit is being <b>elaborated</b>: they decide which hardware exists. They do not re-run on every clock. A <code>println</code> in Scala fires once, at elaboration. A Chisel <code>printf</code> is different: it is hardware, and it prints later, when a simulator runs the circuit."
+        },
+        {
+          "h": "What comes out",
+          "p": "Elaboration produces an intermediate form (FIRRTL) that a compiler lowers to Verilog. The Verilog is what you simulate in a Verilog simulator or give to a chip tool. The Scala source is the generator, not the netlist."
+        }
+      ],
+      "practice": [
+        {
+          "q": "When does the Scala in a Chisel generator run?",
+          "options": [
+            "Once, while the circuit is being built",
+            "On every clock cycle",
+            "Only when the chip is fabricated",
+            "Never; Scala is ignored"
+          ],
+          "answer": "Once, while the circuit is being built",
+          "why": "Elaboration runs the Scala to decide what hardware exists. The circuit then runs on its own."
+        },
+        {
+          "q": "What is the difference between println and a Chisel printf?",
+          "options": [
+            "println runs once at elaboration; printf prints when the circuit is simulated",
+            "They print at the same time",
+            "printf runs at elaboration and println runs every cycle",
+            "Neither can print"
+          ],
+          "answer": "println runs once at elaboration; printf prints when the circuit is simulated",
+          "why": "println is Scala. Chisel printf is a piece of the circuit."
+        },
+        {
+          "q": "What does elaboration produce, before Verilog?",
+          "options": [
+            "An intermediate circuit description (FIRRTL)",
+            "A running program",
+            "A Scala class the CPU executes every cycle",
+            "A timing diagram"
+          ],
+          "answer": "An intermediate circuit description (FIRRTL)",
+          "why": "FIRRTL is the circuit Chisel built. A later compiler turns that into Verilog."
+        },
+        {
+          "q": "A Scala if around a connection decides what?",
+          "options": [
+            "Whether that hardware is generated at all",
+            "Which input wins on each clock",
+            "The reset value",
+            "The module’s name"
+          ],
+          "answer": "Whether that hardware is generated at all",
+          "why": "Scala if is elaboration-time. It is not a mux. A mux is when, in the next lessons."
+        },
+        {
+          "q": "Why does this course not run the examples?",
+          "options": [
+            "Generating hardware needs the Chisel library, and the simulator API has changed between releases",
+            "Chisel cannot describe hardware",
+            "Scala cannot print",
+            "Circuits have no ports"
+          ],
+          "answer": "Generating hardware needs the Chisel library, and the simulator API has changed between releases",
+          "why": "The chisel3 generator API below is stable enough to teach. Driving a simulation is a separate toolchain."
+        }
+      ]
+    },
+    {
+      "id": "modules",
+      "title": "Modules and ports",
+      "summary": "Module, IO, and a bundle of directions.",
+      "sections": [
+        {
+          "p": "Hardware lives in a <code>Module</code>. Ports are declared together as <code>val io = IO(new Bundle { ... })</code>. Each field is an <code>Input</code> or an <code>Output</code>. <code>UInt(8.W)</code> is an unsigned value, 8 bits wide. <code>8.W</code> is the width. A width is part of the type of the wire.",
+          "code": "import chisel3._\n\nclass Add extends Module {\n  val io = IO(new Bundle {\n    val a = Input(UInt(8.W))\n    val b = Input(UInt(8.W))\n    val y = Output(UInt(8.W))\n  })\n  io.y := io.a + io.b\n}"
+        },
+        {
+          "h": "Directions",
+          "p": "<code>Input</code> is driven from outside the module. <code>Output</code> is driven from inside. <code>Flip</code> on a bundle swaps every direction, which is how a child module’s ports line up with the parent’s. Forgetting a direction, or driving an input from the inside, is an elaboration error."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What is a Chisel Module?",
+          "options": [
+            "A piece of hardware with ports",
+            "A Scala function that returns an Int",
+            "A Verilog simulator",
+            "A clock cycle"
+          ],
+          "answer": "A piece of hardware with ports",
+          "why": "class Add extends Module describes a component. The Scala class is the generator for that component."
+        },
+        {
+          "q": "What does UInt(8.W) mean?",
+          "options": [
+            "An unsigned value, 8 bits wide",
+            "A Scala Int limited to 8",
+            "A signed value, 8 bits wide",
+            "An 8-element vector of Bools, always"
+          ],
+          "answer": "An unsigned value, 8 bits wide",
+          "why": "UInt is unsigned. 8.W is the width. SInt is the signed form."
+        },
+        {
+          "q": "Who drives an Input port?",
+          "options": [
+            "Logic outside the module",
+            "Only the module’s own body",
+            "The reset signal",
+            "Nobody; inputs are constants"
+          ],
+          "answer": "Logic outside the module",
+          "why": "Input is the module’s view of a signal someone else provides. The body drives Outputs."
+        },
+        {
+          "q": "In the adder, what does io.y := io.a + io.b build?",
+          "options": [
+            "An 8-bit adder connecting a and b to y",
+            "A Scala method named +",
+            "A print of a and b",
+            "A register that stores the sum"
+          ],
+          "answer": "An 8-bit adder connecting a and b to y",
+          "why": "+ on UInt is hardware. := connects that adder’s result to the output port. There is no register unless you ask for one."
+        },
+        {
+          "q": "Where are a module’s ports declared?",
+          "options": [
+            "Together, as io = IO(new Bundle { ... })",
+            "As separate Scala vars anywhere in the file",
+            "Only in Verilog, after elaboration",
+            "Inside println"
+          ],
+          "answer": "Together, as io = IO(new Bundle { ... })",
+          "why": "IO wraps the bundle so Chisel treats those fields as the module’s ports."
+        }
+      ]
+    },
+    {
+      "id": "connect",
+      "title": "Wires and :=",
+      "summary": "A connection, and last-connect-wins.",
+      "sections": [
+        {
+          "p": "<code>:=</code> is a connection, not a Scala assignment you can update over time. <code>io.y := io.a</code> wires <code>a</code> to <code>y</code>. If the same sink is connected again, the later connection wins. That “last connect wins” rule is how Chisel builds multiplexers: a default connection, then a conditional one that overrides it."
+        },
+        {
+          "h": "Wire",
+          "p": "A <code>Wire</code> is a combinational node you can name. It has no memory. Until something is connected to it, it is an error to read it. <code>val sum = Wire(UInt(8.W)); sum := io.a + io.b</code> names the adder’s result.",
+          "code": "val sum = Wire(UInt(8.W))\nsum := io.a + io.b\nio.y := sum"
+        },
+        {
+          "h": "Literals",
+          "p": "<code>1.U</code> is an unsigned literal one. <code>1.U(8.W)</code> is that one, 8 bits wide. <code>true.B</code> and <code>false.B</code> are Bool literals. A bare Scala <code>1</code> is not a hardware value; the <code>.U</code> is what makes it one."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does := mean?",
+          "options": [
+            "Connect a hardware source to a sink",
+            "Update a Scala var",
+            "Compare two values",
+            "Declare a port"
+          ],
+          "answer": "Connect a hardware source to a sink",
+          "why": ":= is a wire. It is not the assignment you use to change a Scala variable over time."
+        },
+        {
+          "q": "Two connections drive the same wire. Which one is kept?",
+          "options": [
+            "The later one",
+            "The earlier one",
+            "Both, added together",
+            "Neither; elaboration always fails"
+          ],
+          "answer": "The later one",
+          "why": "Last connect wins. Conditional overrides of a default connection are how muxes get built."
+        },
+        {
+          "q": "What does a Wire remember between clocks?",
+          "options": [
+            "Nothing; it is combinational",
+            "The last value written",
+            "Its reset value",
+            "The first value connected"
+          ],
+          "answer": "Nothing; it is combinational",
+          "why": "A Wire is a name for a combinational result. Memory is a Reg."
+        },
+        {
+          "q": "Which of these is a hardware literal?",
+          "options": ["1.U", "1", "\"1\"", "UInt"],
+          "answer": "1.U",
+          "why": "The .U turns a Scala number into a Chisel unsigned literal. A bare 1 is only a Scala Int."
+        },
+        {
+          "q": "What is wrong with reading a Wire that nothing drives?",
+          "options": [
+            "It has no source, so elaboration should reject it",
+            "It reads as 0",
+            "It reads as the last clock’s value",
+            "It prints a warning and continues"
+          ],
+          "answer": "It has no source, so elaboration should reject it",
+          "why": "A Wire is not a register and it does not default to zero. Something must be connected to it."
+        }
+      ]
+    },
+    {
+      "id": "registers",
+      "title": "Registers",
+      "summary": "Reg and RegInit update on the clock.",
+      "sections": [
+        {
+          "p": "A <code>Reg</code> is state. The connection <code>r := r + 1.U</code> does not change <code>r</code> during elaboration. It builds an adder from the register’s output back to its input. The register captures that result on the clock. A <code>Module</code> has an implicit clock and reset.",
+          "code": "val r = RegInit(0.U(8.W))\nr := r + 1.U"
+        },
+        {
+          "h": "RegInit",
+          "p": "<code>RegInit(0.U(8.W))</code> resets to zero. A plain <code>Reg(UInt(8.W))</code> has no specified reset value. The value you pass to <code>RegInit</code> is the reset value, not a value that updates when the Scala runs."
+        },
+        {
+          "h": "Reading your own next value",
+          "p": "On the right-hand side, <code>r</code> means the value stored now, the output of the register. The left-hand side is the input, what will be stored at the next clock. So <code>r := r + 1.U</code> is a counter, not an infinite Scala loop."
+        }
+      ],
+      "practice": [
+        {
+          "q": "When does r := r + 1.U change the stored value?",
+          "options": [
+            "On the clock, in the circuit",
+            "Immediately, as the Scala line runs",
+            "Only at reset",
+            "Never; + is not allowed on a Reg"
+          ],
+          "answer": "On the clock, in the circuit",
+          "why": "The Scala line builds the adder and the connection. The register updates when the clock edge arrives."
+        },
+        {
+          "q": "What does RegInit(0.U(8.W)) set?",
+          "options": [
+            "The reset value, an 8-bit zero",
+            "A Scala var that starts at 0 and grows during elaboration",
+            "The clock frequency",
+            "An output port"
+          ],
+          "answer": "The reset value, an 8-bit zero",
+          "why": "RegInit takes the value the register holds when reset is asserted."
+        },
+        {
+          "q": "On the right-hand side of r := r + 1.U, what is r?",
+          "options": [
+            "The value currently stored in the register",
+            "The value about to be stored",
+            "A Scala Int counting elaborations",
+            "The reset signal"
+          ],
+          "answer": "The value currently stored in the register",
+          "why": "Reading a Reg yields its output. Writing it sets the input that will be captured next."
+        },
+        {
+          "q": "How is a Reg different from a Wire?",
+          "options": [
+            "A Reg holds state across clocks; a Wire does not",
+            "A Wire holds state; a Reg does not",
+            "They are the same",
+            "A Reg can only be 1 bit"
+          ],
+          "answer": "A Reg holds state across clocks; a Wire does not",
+          "why": "Registers are the memory. Wires are names for combinational results."
+        },
+        {
+          "q": "Where do a Module’s clock and reset come from?",
+          "options": [
+            "They are implicit on Module",
+            "You must declare them as ordinary Inputs named clock and reset in every bundle",
+            "From println",
+            "From the width of the first UInt"
+          ],
+          "answer": "They are implicit on Module",
+          "why": "Module provides clock and reset. You can use an explicit clock if you need a second one, but the simple counter does not declare them in io."
+        }
+      ]
+    },
+    {
+      "id": "when",
+      "title": "when, not if",
+      "summary": "A hardware mux, versus elaboration.",
+      "sections": [
+        {
+          "p": "<code>when</code> is a hardware condition. The test is a Chisel <code>Bool</code>, and both branches exist in the circuit. <code>otherwise</code> is the other input of the mux. <code>elsewhen</code> adds another.",
+          "code": "when(io.en) {\n  io.y := io.a\n}.otherwise {\n  io.y := io.b\n}"
+        },
+        {
+          "h": "Scala if is the other tool",
+          "p": "A Scala <code>if</code> runs at elaboration, on a Scala <code>Boolean</code>. Use it to decide whether to generate a piece of hardware (“if this parameter is true, add a register”). Use <code>when</code> when the choice depends on a signal in the circuit. Writing <code>if (io.en)</code> does not compile: <code>io.en</code> is hardware, not a Scala Boolean."
+        },
+        {
+          "h": "Last connect still applies",
+          "p": "Inside <code>when</code>, a connection overrides the default only on the cycles where the condition is true. A common pattern is a default <code>io.y := 0.U</code>, then <code>when(io.en) { io.y := io.a }</code>."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does when(io.en) build?",
+          "options": [
+            "A multiplexer chosen by the signal en",
+            "Hardware that exists only if en is a Scala true",
+            "A register enable with no mux",
+            "An elaboration-time branch"
+          ],
+          "answer": "A multiplexer chosen by the signal en",
+          "why": "when is hardware. Both the true and the false connections are in the circuit, and en selects."
+        },
+        {
+          "q": "Why does if (io.en) fail?",
+          "options": [
+            "io.en is a Chisel Bool, not a Scala Boolean",
+            "if is not a Scala keyword",
+            "en is a reserved word",
+            "Chisel has no conditionals"
+          ],
+          "answer": "io.en is a Chisel Bool, not a Scala Boolean",
+          "why": "Scala if wants a Boolean known at elaboration. A port is a signal. The hardware conditional is when."
+        },
+        {
+          "q": "What is otherwise?",
+          "options": [
+            "The other input of the when mux",
+            "A Scala else that deletes hardware",
+            "A reset",
+            "A comment"
+          ],
+          "answer": "The other input of the when mux",
+          "why": "when { }.otherwise { } is the two-way mux. elsewhen adds further conditions."
+        },
+        {
+          "q": "A default connection, then a when that connects the same wire. When the condition is false, what is driven?",
+          "options": ["The default", "Nothing", "Zero, always", "The when value anyway"],
+          "answer": "The default",
+          "why": "The when overrides the default only while its condition is true. Last-connect-wins is conditional here."
+        },
+        {
+          "q": "You want a register only if a Scala parameter includeReg is true. Which do you use?",
+          "options": [
+            "A Scala if",
+            "when",
+            "otherwise",
+            "RegInit alone, which checks the parameter"
+          ],
+          "answer": "A Scala if",
+          "why": "includeReg is known when the generator runs. Scala if includes or omits the register. when would put a mux in the circuit instead."
+        }
+      ]
+    },
+    {
+      "id": "mux",
+      "title": "Mux and switch",
+      "summary": "Named multiplexers, and a multi-way case.",
+      "sections": [
+        {
+          "p": "<code>Mux(sel, in1, in0)</code> is the same two-way choice as <code>when</code>, written as an expression. When <code>sel</code> is true you get <code>in1</code>; otherwise <code>in0</code>. <code>MuxCase</code> and <code>MuxLookup</code> build wider muxes from a default and a list of conditions or keys.",
+          "code": "val y = Mux(io.en, io.a, io.b)\nval z = MuxLookup(io.sel, 0.U)(\n  Seq(0.U -> io.a, 1.U -> io.b, 2.U -> io.c)\n)"
+        },
+        {
+          "h": "switch and is",
+          "p": "<code>switch (io.sel) { is (0.U) { ... } is (1.U) { ... } }</code> is a multi-way <code>when</code>. Each <code>is</code> arm may connect sinks; last-connect-wins still applies. Prefer <code>Mux</code> when you need a value in an expression, and <code>switch</code> when each arm does several connections.",
+          "code": "switch (io.sel) {\n  is (0.U) { io.y := io.a }\n  is (1.U) { io.y := io.b }\n  is (2.U) { io.y := io.c }\n}"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does Mux(sel, in1, in0) return when sel is true?",
+          "options": ["in1", "in0", "sel", "0.U"],
+          "answer": "in1",
+          "why": "The true arm is the middle argument; the false arm is the last."
+        },
+        {
+          "q": "When is Mux a better fit than when?",
+          "options": [
+            "When you need the chosen value as an expression",
+            "When you want to omit hardware at elaboration",
+            "When sel is a Scala Boolean",
+            "Never; they cannot express the same circuit"
+          ],
+          "answer": "When you need the chosen value as an expression",
+          "why": "Mux returns a hardware value you can wire or nest. when is a statement that connects sinks."
+        },
+        {
+          "q": "What does MuxLookup pick with?",
+          "options": [
+            "A key matched against a Seq of key -> value pairs",
+            "Only a single Bool",
+            "A Scala if",
+            "The reset signal"
+          ],
+          "answer": "A key matched against a Seq of key -> value pairs",
+          "why": "MuxLookup(sel, default)(Seq(...)) is a lookup mux. Unmatched keys give the default."
+        },
+        {
+          "q": "What is switch / is?",
+          "options": [
+            "A multi-way when over a hardware selector",
+            "A Scala match that deletes unused arms at elaboration",
+            "A clock divider",
+            "A Verilog simulator"
+          ],
+          "answer": "A multi-way when over a hardware selector",
+          "why": "Every is arm is hardware. The selector chooses which connections apply."
+        },
+        {
+          "q": "After a default io.y := 0.U and an is arm that assigns io.y, when the key misses, what is driven?",
+          "options": ["The default 0.U", "Nothing", "The last is arm anyway", "X"],
+          "answer": "The default 0.U",
+          "why": "An unmatched switch leaves earlier connections in place. Last-connect-wins is still conditional."
+        }
+      ]
+    },
+    {
+      "id": "vec",
+      "title": "Vec and VecInit",
+      "summary": "Bundles of wires indexed by a signal.",
+      "sections": [
+        {
+          "p": "A <code>Vec</code> is a fixed-length collection of the same hardware type. <code>Vec(4, UInt(8.W))</code> is four 8-bit unsigned wires. Indexing with a hardware <code>UInt</code> builds a mux (read) or a demux of writes. A Scala <code>Int</code> index is resolved at elaboration and picks one element with no mux.",
+          "code": "val banks = Wire(Vec(4, UInt(8.W)))\nbanks(0) := 1.U\nbanks(1) := 2.U\nbanks(2) := 3.U\nbanks(3) := 4.U\nio.y := banks(io.sel)"
+        },
+        {
+          "h": "VecInit",
+          "p": "<code>VecInit(1.U, 2.U, 3.U)</code> builds a Vec already connected to those values. A Scala <code>for</code> over <code>0 until n</code> at elaboration can fill a Vec element by element — that loop runs once while the circuit is built, not every clock.",
+          "code": "val rom = VecInit(5.U(8.W), 7.U, 9.U, 11.U)\nio.y := rom(io.addr)"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What is Vec(4, UInt(8.W))?",
+          "options": [
+            "Four 8-bit unsigned elements",
+            "A single 32-bit wire",
+            "A Scala Array of Int",
+            "Four Modules"
+          ],
+          "answer": "Four 8-bit unsigned elements",
+          "why": "Vec(n, T) is n copies of type T in one hardware collection."
+        },
+        {
+          "q": "Indexing a Vec with a hardware UInt builds what?",
+          "options": [
+            "A mux (or demux of writes)",
+            "A Scala for-loop that runs every clock",
+            "A new Module",
+            "Nothing; only Int indexes are allowed"
+          ],
+          "answer": "A mux (or demux of writes)",
+          "why": "A signal index must pick among elements in the circuit. A literal Int index is wired at elaboration."
+        },
+        {
+          "q": "What does VecInit(1.U, 2.U, 3.U) do?",
+          "options": [
+            "Builds a Vec already driven by those literals",
+            "Allocates empty Wires you must connect later",
+            "Creates three separate Modules",
+            "Prints 1 2 3 at elaboration"
+          ],
+          "answer": "Builds a Vec already driven by those literals",
+          "why": "VecInit connects each argument to an element. It is a handy ROM or constant table."
+        },
+        {
+          "q": "A Scala for (i <- 0 until 4) { banks(i) := ... } runs when?",
+          "options": [
+            "Once, at elaboration",
+            "Every clock cycle",
+            "Only at reset",
+            "Never; for is banned in Chisel"
+          ],
+          "answer": "Once, at elaboration",
+          "why": "Scala for unrolls into hardware. The circuit then has four connections, not a looping CPU."
+        },
+        {
+          "q": "Why can a Vec replace a pile of MuxLookup arms?",
+          "options": [
+            "A hardware index into the Vec is already a mux",
+            "Vec deletes unused elements",
+            "Vec is only for registers",
+            "It cannot"
+          ],
+          "answer": "A hardware index into the Vec is already a mux",
+          "why": "banks(io.sel) is the lookup. Tables of constants are often VecInit."
+        }
+      ]
+    },
+    {
+      "id": "mem",
+      "title": "Mem and SyncReadMem",
+      "summary": "Addressable storage, async and sync read.",
+      "sections": [
+        {
+          "p": "<code>Mem(n, T)</code> is a memory of <code>n</code> elements of type <code>T</code>. A write is <code>mem.write(addr, data)</code> or <code>mem(addr) := data</code>. A combinational (asynchronous) read is <code>mem.read(addr)</code> or <code>mem(addr)</code>: the data can change in the same cycle as the address.",
+          "code": "val mem = Mem(32, UInt(8.W))\nwhen (io.wen) {\n  mem.write(io.waddr, io.wdata)\n}\nio.rdata := mem.read(io.raddr)"
+        },
+        {
+          "h": "SyncReadMem",
+          "p": "<code>SyncReadMem</code> models a synchronous-read RAM: you present an address, and the data appears on the next clock. That matches most FPGA block RAMs. Mixing up <code>Mem</code> and <code>SyncReadMem</code> is a common source of off-by-one-cycle bugs in testbenches.",
+          "code": "val ram = SyncReadMem(32, UInt(8.W))\nwhen (io.wen) {\n  ram.write(io.waddr, io.wdata)\n}\nio.rdata := ram.read(io.raddr, io.ren)"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What is Mem(32, UInt(8.W))?",
+          "options": [
+            "32 addressable 8-bit elements",
+            "A single 32-bit register",
+            "32 Modules",
+            "A Vec that cannot be written"
+          ],
+          "answer": "32 addressable 8-bit elements",
+          "why": "Mem is a memory array. The first argument is the depth."
+        },
+        {
+          "q": "When can a Mem async read return new data?",
+          "options": [
+            "In the same cycle as the address",
+            "Only one cycle later",
+            "Only after reset",
+            "Never; Mem is write-only"
+          ],
+          "answer": "In the same cycle as the address",
+          "why": "Combinational read follows the address immediately. SyncReadMem waits a clock."
+        },
+        {
+          "q": "What does SyncReadMem model better than Mem?",
+          "options": [
+            "FPGA block RAMs with a one-cycle read latency",
+            "Combinational ROMs only",
+            "Scala Arrays",
+            "Clock generators"
+          ],
+          "answer": "FPGA block RAMs with a one-cycle read latency",
+          "why": "Synchronous read matches the hardware. Expect data on the cycle after the address."
+        },
+        {
+          "q": "How do you write Mem under a condition?",
+          "options": [
+            "when (io.wen) { mem.write(addr, data) }",
+            "mem.write always ignores wen",
+            "Only with SyncReadMem",
+            "With println"
+          ],
+          "answer": "when (io.wen) { mem.write(addr, data) }",
+          "why": "Guard the write with when so the memory is not written every cycle."
+        },
+        {
+          "q": "Why might a testbench that worked with Mem fail after switching to SyncReadMem?",
+          "options": [
+            "The read data arrives one cycle later",
+            "SyncReadMem cannot hold UInt",
+            "Addresses become signed",
+            "Writes are forbidden"
+          ],
+          "answer": "The read data arrives one cycle later",
+          "why": "The address-to-data path gained a register. Checks must wait a clock."
+        }
+      ]
+    },
+    {
+      "id": "bundles",
+      "title": "Flipped and Decoupled",
+      "summary": "Direction swaps and ready–valid handshakes.",
+      "sections": [
+        {
+          "p": "<code>Flipped(bundle)</code> swaps every <code>Input</code> and <code>Output</code> inside a bundle. A child module’s producer port is the flip of the parent’s consumer view, so you connect them field-by-field (or with <code>&lt;&gt;</code>) without renaming directions by hand.",
+          "code": "class Host extends Module {\n  val io = IO(new Bundle {\n    val out = Decoupled(UInt(8.W))\n  })\n  io.out.valid := true.B\n  io.out.bits  := 7.U\n}"
+        },
+        {
+          "h": "Decoupled",
+          "p": "<code>Decoupled(T)</code> is a ready–valid handshake carrying a payload of type <code>T</code>. The producer drives <code>valid</code> and <code>bits</code>; the consumer drives <code>ready</code>. A transfer happens when both <code>valid</code> and <code>ready</code> are high in the same cycle. <code>Irrevocable</code> is the stricter cousin that promises <code>bits</code> will not change while <code>valid</code> stays high and <code>ready</code> is low."
+        },
+        {
+          "h": "Connecting",
+          "p": "<code>sink &lt;&gt; source</code> bulk-connects matching fields, flipping directions as needed. Forgetting <code>ready</code> (tying it high forever) can hide back-pressure bugs; forgetting <code>valid</code> stalls the consumer forever."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does Flipped do to a bundle?",
+          "options": [
+            "Swaps every Input and Output inside it",
+            "Deletes the bundle",
+            "Converts UInt to SInt",
+            "Adds a clock port"
+          ],
+          "answer": "Swaps every Input and Output inside it",
+          "why": "Flip lines a producer up with a consumer without rewriting each field."
+        },
+        {
+          "q": "Who drives Decoupled.valid and bits?",
+          "options": ["The producer", "The consumer", "Only the clock", "Reset"],
+          "answer": "The producer",
+          "why": "valid and bits come from the source. ready comes from the sink."
+        },
+        {
+          "q": "When does a Decoupled transfer occur?",
+          "options": [
+            "When valid and ready are both high",
+            "When valid is high, ignoring ready",
+            "On every clock, always",
+            "Only at reset"
+          ],
+          "answer": "When valid and ready are both high",
+          "why": "Both sides must agree in the same cycle. That is the handshake."
+        },
+        {
+          "q": "Who drives Decoupled.ready?",
+          "options": [
+            "The consumer",
+            "The producer",
+            "The FIRRTL compiler",
+            "Nobody; ready is a constant"
+          ],
+          "answer": "The consumer",
+          "why": "ready is back-pressure from the sink. Producers must respect it."
+        },
+        {
+          "q": "What is <> between two bundles?",
+          "options": [
+            "A bulk connect of matching fields",
+            "A Scala not-equal test",
+            "A mingle of bits",
+            "A reset"
+          ],
+          "answer": "A bulk connect of matching fields",
+          "why": "<> wires corresponding names and handles flipped directions."
+        }
+      ]
+    },
+    {
+      "id": "fsm",
+      "title": "State machines with Enum",
+      "summary": "Named states, switch, and next-state logic.",
+      "sections": [
+        {
+          "p": "<code>Enum(n)</code> (or <code>ChiselEnum</code> in newer code) gives <code>n</code> distinct state values. Hold the current state in a <code>RegInit</code>, then use <code>switch (state)</code> both to decide outputs and to choose the next state. The next-state assignment is just another connection into that register.",
+          "code": "val idle :: load :: done :: Nil = Enum(3)\nval state = RegInit(idle)\n\nswitch (state) {\n  is (idle) {\n    when (io.start) { state := load }\n  }\n  is (load) {\n    state := done\n  }\n  is (done) {\n    io.finished := true.B\n    state := idle\n  }\n}"
+        },
+        {
+          "h": "Default outputs",
+          "p": "Set defaults before the <code>switch</code> (<code>io.finished := false.B</code>, and so on) so every state has a defined drive. Only the active state overrides what it cares about. That pattern avoids latches and missing connections."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does Enum(3) provide?",
+          "options": [
+            "Three distinct state values",
+            "Three clocks",
+            "A Vec of length 3",
+            "Three Modules"
+          ],
+          "answer": "Three distinct state values",
+          "why": "Enum(n) is a list of n unique UInt constants for states."
+        },
+        {
+          "q": "Where does the current state live?",
+          "options": [
+            "In a Reg (often RegInit to the idle value)",
+            "In a Wire only",
+            "In Scala var that changes every clock by itself",
+            "In the width of UInt"
+          ],
+          "answer": "In a Reg (often RegInit to the idle value)",
+          "why": "State must survive between clocks. A register holds it."
+        },
+        {
+          "q": "How do you move from one state to another?",
+          "options": [
+            "Connect the next value into the state register inside switch / when",
+            "Call a Scala goto",
+            "Change Enum at elaboration each cycle",
+            "Use println"
+          ],
+          "answer": "Connect the next value into the state register inside switch / when",
+          "why": "state := load is next-state logic. The register updates on the clock."
+        },
+        {
+          "q": "Why assign default outputs before switch?",
+          "options": [
+            "So every signal is driven even when a state does not mention it",
+            "So Enum becomes a Wire",
+            "So reset is ignored",
+            "Defaults are required by Scala"
+          ],
+          "answer": "So every signal is driven even when a state does not mention it",
+          "why": "Defaults plus overrides keep the circuit fully connected and predictable."
+        },
+        {
+          "q": "Is the next-state assignment combinatorial or registered?",
+          "options": [
+            "The logic is combinatorial into the Reg; the Reg updates on the clock",
+            "The state changes during elaboration only",
+            "There is no register",
+            "It updates on valid only"
+          ],
+          "answer": "The logic is combinatorial into the Reg; the Reg updates on the clock",
+          "why": "switch builds muxes into the Reg’s input. The stored state flips on the edge."
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Project: a nut sorter",
+      "summary": "An FSM that tallies acorns and walnuts on a Decoupled input.",
+      "sections": [
+        {
+          "p": "A tiny sorter accepts a stream of nut codes on a <code>Decoupled</code> input: <code>0</code> means acorn, <code>1</code> means walnut, and any other code is ignored. While <code>io.start</code> is high the machine sits in <code>run</code>, handshake-accepting each beat and adding one to the matching counter. When <code>start</code> falls it moves to <code>report</code>, freezes the totals on the outputs, then returns to idle. The sketch uses <code>Enum</code>, <code>when</code>, registers and a ready–valid port together — the same pieces as a small streaming peripheral.",
+          "code": "import chisel3._\nimport chisel3.util._\n\nclass NutSorter extends Module {\n  val io = IO(new Bundle {\n    val start  = Input(Bool())\n    val in     = Flipped(Decoupled(UInt(2.W)))\n    val acorns = Output(UInt(8.W))\n    val walnuts = Output(UInt(8.W))\n    val done   = Output(Bool())\n  })\n\n  val idle :: run :: report :: Nil = Enum(3)\n  val state = RegInit(idle)\n  val acorns  = RegInit(0.U(8.W))\n  val walnuts = RegInit(0.U(8.W))\n\n  io.in.ready := false.B\n  io.done     := false.B\n  io.acorns   := acorns\n  io.walnuts  := walnuts\n\n  switch (state) {\n    is (idle) {\n      when (io.start) {\n        acorns  := 0.U\n        walnuts := 0.U\n        state   := run\n      }\n    }\n    is (run) {\n      io.in.ready := true.B\n      when (io.in.fire) {\n        when (io.in.bits === 0.U) { acorns  := acorns + 1.U }\n        .elsewhen (io.in.bits === 1.U) { walnuts := walnuts + 1.U }\n      }\n      when (!io.start) { state := report }\n    }\n    is (report) {\n      io.done := true.B\n      when (!io.start) { state := idle }\n    }\n  }\n}"
+        },
+        {
+          "h": "Ideas to try",
+          "p": "Add a hazelnut code, reject beats with an error flag instead of ignoring them, or replace the two counters with a <code>Vec(3, UInt(8.W))</code> indexed by the code. On a real Chisel install, drive <code>in</code> from a testbench poke/peek loop and check <code>done</code>."
+        }
+      ],
+      "practice": [
+        {
+          "q": "When does the sorter accept an input beat?",
+          "options": [
+            "In run, when in.valid and in.ready are both high (in.fire)",
+            "In idle on every clock",
+            "Only in report",
+            "Never; Decoupled is display-only"
+          ],
+          "answer": "In run, when in.valid and in.ready are both high (in.fire)",
+          "why": "ready is tied true only in run. fire is the Chisel helper for valid && ready."
+        },
+        {
+          "q": "What happens to a beat whose bits are 2.U?",
+          "options": [
+            "It is accepted but neither counter moves",
+            "It crashes elaboration",
+            "It clears both counters",
+            "It forces state back to idle"
+          ],
+          "answer": "It is accepted but neither counter moves",
+          "why": "ready is high, so the handshake completes; only 0 and 1 increment."
+        },
+        {
+          "q": "When are the counters cleared?",
+          "options": [
+            "On the idle → run transition when start rises",
+            "Every time report is entered",
+            "On every accepted beat",
+            "They never clear"
+          ],
+          "answer": "On the idle → run transition when start rises",
+          "why": "The idle arm zeroes both registers before entering run."
+        },
+        {
+          "q": "Why is io.in a Flipped(Decoupled(...))?",
+          "options": [
+            "The sorter is the consumer: it sees ready as an Output and valid/bits as Inputs",
+            "Flip makes the port a register",
+            "Decoupled cannot be an Input otherwise",
+            "Flipped turns UInt into Bool"
+          ],
+          "answer": "The sorter is the consumer: it sees ready as an Output and valid/bits as Inputs",
+          "why": "Decoupled’s default view is producer-sided. Flipped swaps it for a sink."
+        },
+        {
+          "q": "What does the report state do?",
+          "options": [
+            "Holds done high and shows the totals until start is low, then returns to idle",
+            "Keeps accepting nuts",
+            "Deletes the counters",
+            "Prints Roman numerals"
+          ],
+          "answer": "Holds done high and shows the totals until start is low, then returns to idle",
+          "why": "report freezes the result on the outputs; leaving start low sends the FSM home."
+        }
+      ]
+    }
+  ]
+}
