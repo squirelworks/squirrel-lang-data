@@ -1,0 +1,970 @@
+{
+  "schema": "programming-course@1",
+  "id": "win16",
+  "name": "Win16",
+  "title": "Programming Windows 3.x",
+  "intro": "Windows 3.0 and 3.1 programs were usually written in C against the 16-bit Windows API. Everything happens through <b>messages</b>: Windows tells your program that a key was pressed, the window needs painting or the user wants to quit, and your code reacts. The same model still sits under modern Windows, so this is also a tour of how Win32 works. To build Win16 code today you need an old compiler such as Borland C++ 3.1, Microsoft C/C++ 7 or Open Watcom, run under Windows 3.1 in an emulator like 86Box, DOSBox-X or Bochs.",
+  "comment": "//",
+  "keywords": [
+    "int",
+    "char",
+    "long",
+    "void",
+    "unsigned",
+    "short",
+    "static",
+    "struct",
+    "return",
+    "if",
+    "else",
+    "switch",
+    "case",
+    "default",
+    "break",
+    "while",
+    "for",
+    "sizeof",
+    "NULL",
+    "FAR",
+    "NEAR",
+    "PASCAL",
+    "CALLBACK",
+    "WINAPI",
+    "EXPORTS",
+    "NAME",
+    "EXETYPE"
+  ],
+  "builtins": [
+    "HWND",
+    "HINSTANCE",
+    "HDC",
+    "UINT",
+    "WPARAM",
+    "LPARAM",
+    "LRESULT",
+    "LPSTR",
+    "MSG",
+    "WNDCLASS",
+    "PAINTSTRUCT",
+    "RECT",
+    "BOOL",
+    "WinMain",
+    "RegisterClass",
+    "CreateWindow",
+    "ShowWindow",
+    "UpdateWindow",
+    "GetMessage",
+    "TranslateMessage",
+    "DispatchMessage",
+    "DefWindowProc",
+    "PostQuitMessage",
+    "BeginPaint",
+    "EndPaint",
+    "TextOut",
+    "MessageBox",
+    "LoadCursor",
+    "GetStockObject",
+    "InvalidateRect",
+    "GetClientRect",
+    "CreatePen",
+    "CreateSolidBrush",
+    "SelectObject",
+    "DeleteObject",
+    "Rectangle",
+    "Ellipse",
+    "MoveTo",
+    "LineTo",
+    "SetTimer",
+    "KillTimer",
+    "DialogBox",
+    "EndDialog",
+    "MakeProcInstance",
+    "FreeProcInstance",
+    "GlobalAlloc",
+    "GlobalLock",
+    "GlobalUnlock",
+    "GlobalFree",
+    "wsprintf",
+    "lstrlen",
+    "LOWORD",
+    "HIWORD",
+    "SendMessage",
+    "SetWindowText",
+    "GetWindowText",
+    "HGLOBAL",
+    "HPEN",
+    "HBRUSH",
+    "FARPROC",
+    "DWORD",
+    "WORD",
+    "OpenClipboard",
+    "CloseClipboard",
+    "EmptyClipboard",
+    "SetClipboardData",
+    "GetClipboardData",
+    "IsClipboardFormatAvailable",
+    "CF_TEXT",
+    "lstrcpyn",
+    "LoadLibrary",
+    "GetProcAddress",
+    "LibMain",
+    "UnlockData",
+    "LIBRARY",
+    "HEAPSIZE",
+    "STACKSIZE",
+    "STUB"
+  ],
+  "lessons": [
+    {
+      "id": "skeleton",
+      "title": "WinMain and the message loop",
+      "summary": "Register a class, create a window, pump messages.",
+      "sections": [
+        {
+          "p": "A Windows program starts in <code>WinMain</code>, not <code>main</code>. It registers a <b>window class</b> (which says which function handles its messages), creates a window of that class, and then loops, fetching messages and handing them on.",
+          "code": "#include <windows.h>\n\nLRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);\n\nint PASCAL WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,\n                   LPSTR lpszCmdLine, int nCmdShow)\n{\n    WNDCLASS wc;\n    HWND hwnd;\n    MSG msg;\n\n    if (!hPrevInstance) {               /* first copy registers the class */\n        wc.style         = CS_HREDRAW | CS_VREDRAW;\n        wc.lpfnWndProc   = WndProc;\n        wc.cbClsExtra    = 0;\n        wc.cbWndExtra    = 0;\n        wc.hInstance     = hInstance;\n        wc.hIcon         = LoadIcon(NULL, IDI_APPLICATION);\n        wc.hCursor       = LoadCursor(NULL, IDC_ARROW);\n        wc.hbrBackground = GetStockObject(WHITE_BRUSH);\n        wc.lpszMenuName  = NULL;\n        wc.lpszClassName = \"Nutshell\";\n        if (!RegisterClass(&wc))\n            return 0;\n    }\n\n    hwnd = CreateWindow(\"Nutshell\", \"Hello, Windows 3.1\",\n                        WS_OVERLAPPEDWINDOW,\n                        CW_USEDEFAULT, CW_USEDEFAULT,\n                        CW_USEDEFAULT, CW_USEDEFAULT,\n                        NULL, NULL, hInstance, NULL);\n    ShowWindow(hwnd, nCmdShow);\n    UpdateWindow(hwnd);\n\n    while (GetMessage(&msg, NULL, 0, 0)) {\n        TranslateMessage(&msg);\n        DispatchMessage(&msg);\n    }\n    return msg.wParam;\n}"
+        },
+        {
+          "p": "<code>hPrevInstance</code> is a Win16 detail: if another copy of the program is already running, its class is already registered, so only the first copy registers it (on Win32 this is always <code>NULL</code>). <code>GetMessage</code> waits for the next message and returns 0 when it gets <code>WM_QUIT</code>, which ends the loop. <code>TranslateMessage</code> turns key presses into character messages, and <code>DispatchMessage</code> calls your window procedure.",
+          "h": "Reading it"
+        },
+        {
+          "p": "Windows 3.x programs share the CPU by taking turns: another program can only run while yours is waiting inside <code>GetMessage</code>. A long loop that never returns to the message loop freezes the whole desktop, not just your window.",
+          "h": "Cooperative multitasking"
+        }
+      ],
+      "practice": [
+        {
+          "q": "When does the message loop end?",
+          "why": "GetMessage returns 0 for WM_QUIT, and the while loop stops.",
+          "options": [
+            "When GetMessage receives WM_QUIT",
+            "When the window is minimised",
+            "After 1000 messages",
+            "When WinMain returns 1"
+          ],
+          "answer": "When GetMessage receives WM_QUIT"
+        },
+        {
+          "q": "What tells Windows which function handles a window's messages?",
+          "why": "Every window of a registered class sends its messages to that class's window procedure.",
+          "options": [
+            "lpfnWndProc in the window class",
+            "The window title",
+            "The return value of WinMain",
+            "TranslateMessage"
+          ],
+          "answer": "lpfnWndProc in the window class"
+        },
+        {
+          "q": "Why check hPrevInstance in Win16?",
+          "why": "In Win16, instances of one program share registered classes.",
+          "options": [
+            "Only the first running copy needs to register the class",
+            "It holds the command line",
+            "It is the window handle",
+            "It decides the window size"
+          ],
+          "answer": "Only the first running copy needs to register the class"
+        },
+        {
+          "q": "A Win16 program runs a 10-second loop without checking messages. What happens?",
+          "why": "Windows 3.x multitasking is cooperative: no other program runs until yours yields.",
+          "options": [
+            "The whole desktop stops responding",
+            "Only its window freezes",
+            "Windows ends it at once",
+            "Nothing noticeable"
+          ],
+          "answer": "The whole desktop stops responding"
+        },
+        {
+          "q": "What does TranslateMessage do in the message loop?",
+          "why": "TranslateMessage converts virtual-key presses into character messages before DispatchMessage.",
+          "options": [
+            "Turns key-down messages into WM_CHAR",
+            "Draws the window",
+            "Registers the window class",
+            "Ends the program"
+          ],
+          "answer": "Turns key-down messages into WM_CHAR"
+        },
+        {
+          "q": "Where does a Windows program start instead of main?",
+          "why": "Windows looks for WinMain as the entry point of a GUI program.",
+          "options": ["WinMain", "WndProc", "GetMessage", "RegisterClass"],
+          "answer": "WinMain"
+        }
+      ]
+    },
+    {
+      "id": "wndproc",
+      "title": "The window procedure",
+      "summary": "Handling WM_PAINT, WM_DESTROY and friends.",
+      "sections": [
+        {
+          "p": "The window procedure is a big <code>switch</code> on the message number. Handle what you care about and pass everything else to <code>DefWindowProc</code>, which gives standard behaviour such as moving, resizing and closing.",
+          "code": "LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)\n{\n    PAINTSTRUCT ps;\n    HDC hdc;\n\n    switch (msg) {\n    case WM_PAINT:\n        hdc = BeginPaint(hwnd, &ps);\n        TextOut(hdc, 10, 10, \"Hello from Win16\", 16);\n        EndPaint(hwnd, &ps);\n        return 0;\n\n    case WM_LBUTTONDOWN:\n        MessageBox(hwnd, \"You clicked!\", \"Nutshell\", MB_OK);\n        return 0;\n\n    case WM_DESTROY:\n        PostQuitMessage(0);\n        return 0;\n    }\n    return DefWindowProc(hwnd, msg, wParam, lParam);\n}"
+        },
+        {
+          "p": "<code>WM_CREATE</code> arrives once when the window is made. <code>WM_PAINT</code> arrives whenever part of the window must be redrawn, so all drawing belongs there, between <code>BeginPaint</code> and <code>EndPaint</code>. <code>WM_DESTROY</code> means the window is going away; posting <code>WM_QUIT</code> with <code>PostQuitMessage</code> ends the message loop. <code>wParam</code> and <code>lParam</code> carry extra details, such as which key was pressed or where the mouse was.",
+          "h": "Key messages"
+        }
+      ],
+      "practice": [
+        {
+          "q": "Where should a program draw its window's contents?",
+          "why": "Windows asks for repainting whenever the window is uncovered or resized, so drawing must happen on each WM_PAINT.",
+          "options": [
+            "In WM_PAINT, between BeginPaint and EndPaint",
+            "In WinMain before the loop",
+            "In WM_CREATE only",
+            "Anywhere, once"
+          ],
+          "answer": "In WM_PAINT, between BeginPaint and EndPaint"
+        },
+        {
+          "q": "What should WM_DESTROY usually do in a main window?",
+          "why": "That posts WM_QUIT, which ends the message loop and the program.",
+          "options": [
+            "Call PostQuitMessage(0)",
+            "Call DefWindowProc only",
+            "Call CreateWindow again",
+            "Return 1"
+          ],
+          "answer": "Call PostQuitMessage(0)"
+        },
+        {
+          "q": "What happens to messages your switch does not handle?",
+          "why": "DefWindowProc supplies the standard behaviour; returning 0 for everything would break moving, sizing and closing.",
+          "options": [
+            "Pass them to DefWindowProc",
+            "Ignore them by returning 0",
+            "Send them back with PostMessage",
+            "They crash the program"
+          ],
+          "answer": "Pass them to DefWindowProc"
+        },
+        {
+          "q": "Which message arrives once when the window is first made?",
+          "why": "WM_CREATE is sent during CreateWindow, before the window is shown.",
+          "options": ["WM_CREATE", "WM_PAINT", "WM_QUIT", "WM_TIMER"],
+          "answer": "WM_CREATE"
+        },
+        {
+          "q": "What does BeginPaint return for use while drawing?",
+          "why": "BeginPaint prepares the window for painting and gives you the HDC to draw with.",
+          "options": ["An HDC (device context)", "A brush", "A window handle", "A menu"],
+          "answer": "An HDC (device context)"
+        }
+      ]
+    },
+    {
+      "id": "input",
+      "title": "Keyboard and mouse",
+      "summary": "WM_CHAR, WM_KEYDOWN, mouse positions and asking for a repaint.",
+      "sections": [
+        {
+          "p": "Input arrives as messages. <code>WM_KEYDOWN</code> reports a key by its <b>virtual-key code</b> (<code>VK_LEFT</code>, <code>VK_F1</code>), which is right for arrows and function keys. <code>WM_CHAR</code>, made by <code>TranslateMessage</code>, reports the character typed, which is right for text. Mouse messages such as <code>WM_LBUTTONDOWN</code> pack the position into <code>lParam</code>: x in the low word, y in the high word.",
+          "code": "static int x = 10, y = 10;     /* where the squirrel is */\n\ncase WM_KEYDOWN:\n    switch (wParam) {\n    case VK_LEFT:  x -= 8; break;\n    case VK_RIGHT: x += 8; break;\n    case VK_UP:    y -= 8; break;\n    case VK_DOWN:  y += 8; break;\n    }\n    InvalidateRect(hwnd, NULL, TRUE);\n    return 0;\n\ncase WM_LBUTTONDOWN:\n    x = LOWORD(lParam);\n    y = HIWORD(lParam);\n    InvalidateRect(hwnd, NULL, TRUE);\n    return 0;\n\ncase WM_PAINT:\n    hdc = BeginPaint(hwnd, &ps);\n    TextOut(hdc, x, y, \"S\", 1);\n    EndPaint(hwnd, &ps);\n    return 0;"
+        },
+        {
+          "p": "The handlers above do not draw. They change the program's state and call <code>InvalidateRect</code>, which marks the window as needing a repaint; Windows then sends <code>WM_PAINT</code> when the queue is quiet. Keeping all drawing in one place means the window always looks right, even after another window has covered it.",
+          "h": "Don't draw from input"
+        },
+        {
+          "p": "The window procedure is called afresh for every message, so ordinary local variables forget their values between calls. <code>static</code> locals (or globals) keep state from one message to the next.",
+          "h": "Static variables"
+        }
+      ],
+      "practice": [
+        {
+          "q": "Which message is best for reading typed text?",
+          "why": "WM_CHAR gives the actual character, with Shift and keyboard layout already applied.",
+          "options": ["WM_CHAR", "WM_KEYDOWN", "WM_PAINT", "WM_COMMAND"],
+          "answer": "WM_CHAR"
+        },
+        {
+          "q": "Where is the mouse x position in WM_LBUTTONDOWN?",
+          "why": "lParam packs x in its low word and y in its high word.",
+          "options": ["LOWORD(lParam)", "HIWORD(lParam)", "wParam", "LOWORD(wParam)"],
+          "answer": "LOWORD(lParam)"
+        },
+        {
+          "q": "What does InvalidateRect(hwnd, NULL, TRUE) do?",
+          "why": "It marks the area as invalid; Windows later sends WM_PAINT to redraw it.",
+          "options": [
+            "Asks for the whole window to be repainted soon",
+            "Draws a rectangle",
+            "Hides the window",
+            "Clears the message queue"
+          ],
+          "answer": "Asks for the whole window to be repainted soon"
+        },
+        {
+          "q": "Why are the position variables static?",
+          "why": "Each message is a new call to the window procedure; static keeps the values.",
+          "options": [
+            "Ordinary locals are lost between messages",
+            "Windows requires it",
+            "So other programs can read them",
+            "To make them faster"
+          ],
+          "answer": "Ordinary locals are lost between messages"
+        },
+        {
+          "q": "Which message is best for arrow keys such as VK_LEFT?",
+          "why": "Arrow and function keys arrive as virtual-key codes in WM_KEYDOWN, not as characters.",
+          "options": ["WM_KEYDOWN", "WM_CHAR", "WM_COMMAND", "WM_TIMER"],
+          "answer": "WM_KEYDOWN"
+        },
+        {
+          "q": "Where is the mouse y position in WM_LBUTTONDOWN?",
+          "why": "lParam packs x low and y high.",
+          "options": ["HIWORD(lParam)", "LOWORD(lParam)", "wParam", "HIWORD(wParam)"],
+          "answer": "HIWORD(lParam)"
+        }
+      ]
+    },
+    {
+      "id": "gdi",
+      "title": "Drawing with the GDI",
+      "summary": "Device contexts, pens, brushes and shapes.",
+      "sections": [
+        {
+          "p": "The <b>GDI</b> (Graphics Device Interface) draws through a <b>device context</b>, the <code>HDC</code> that <code>BeginPaint</code> hands you. To draw in a colour, create a pen (for lines) or a brush (for fills), select it into the DC, draw, then select the old one back and delete yours.",
+          "code": "case WM_PAINT:\n    hdc = BeginPaint(hwnd, &ps);\n    GetClientRect(hwnd, &rc);              /* size of the inside */\n\n    hPen   = CreatePen(PS_SOLID, 2, RGB(128, 64, 0));\n    hBrush = CreateSolidBrush(RGB(255, 200, 0));\n    hOldPen   = SelectObject(hdc, hPen);\n    hOldBrush = SelectObject(hdc, hBrush);\n\n    Ellipse(hdc, 20, 20, 120, 100);        /* an acorn-coloured oval */\n    Rectangle(hdc, 140, 20, 240, 100);\n    MoveTo(hdc, 0, rc.bottom / 2);         /* a line across the middle */\n    LineTo(hdc, rc.right, rc.bottom / 2);\n\n    SelectObject(hdc, hOldPen);\n    SelectObject(hdc, hOldBrush);\n    DeleteObject(hPen);\n    DeleteObject(hBrush);\n    EndPaint(hwnd, &ps);\n    return 0;"
+        },
+        {
+          "p": "GDI objects come from a small shared pool in Windows 3.x (the GDI heap is 64 KB for the whole system). A program that creates a pen on every paint and never deletes it slowly starves every other program, and the desktop starts drawing wrongly. You must not delete an object while it is still selected into a DC, which is why the old ones are put back first.",
+          "h": "Why all the clean-up"
+        },
+        {
+          "p": "Win16 has <code>MoveTo(hdc, x, y)</code>, which returns the old position packed into a <code>DWORD</code>. Win32 replaced it with <code>MoveToEx(hdc, x, y, NULL)</code>, because 32-bit coordinates no longer fit two to a <code>DWORD</code>. Coordinates in Win16 are 16-bit, from −32768 to 32767.",
+          "h": "Win16 and Win32 differ here"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What must happen before DeleteObject(hPen)?",
+          "why": "An object still selected into a DC must not be deleted.",
+          "options": [
+            "Select the old pen back into the DC",
+            "Call EndPaint",
+            "Call InvalidateRect",
+            "Nothing"
+          ],
+          "answer": "Select the old pen back into the DC"
+        },
+        {
+          "q": "Which object fills the inside of a Rectangle?",
+          "why": "Pens draw outlines and lines; brushes fill areas.",
+          "options": [
+            "The selected brush",
+            "The selected pen",
+            "The window class",
+            "The font"
+          ],
+          "answer": "The selected brush"
+        },
+        {
+          "q": "What replaced MoveTo in Win32?",
+          "why": "MoveTo returned two 16-bit coordinates packed in a DWORD, which does not work with 32-bit coordinates.",
+          "options": ["MoveToEx", "LineTo", "SetPixel", "MoveWindow"],
+          "answer": "MoveToEx"
+        },
+        {
+          "q": "A program creates a brush on every WM_PAINT and never deletes it. What happens over time?",
+          "why": "In Windows 3.x the GDI heap is shared by every program, so leaks hurt everyone.",
+          "options": [
+            "The shared GDI heap fills and other programs draw wrongly",
+            "Nothing; Windows frees it",
+            "Only that window gets slower",
+            "The brush colour fades"
+          ],
+          "answer": "The shared GDI heap fills and other programs draw wrongly"
+        },
+        {
+          "q": "What does CreatePen create?",
+          "why": "Pens stroke paths; CreateSolidBrush makes a fill colour.",
+          "options": [
+            "A pen for drawing lines and outlines",
+            "A brush for filling areas",
+            "A new window",
+            "A font"
+          ],
+          "answer": "A pen for drawing lines and outlines"
+        },
+        {
+          "q": "What does GetClientRect fill in?",
+          "why": "GetClientRect returns the client rectangle in a RECT, used for layout and drawing.",
+          "options": [
+            "The size of the window's inside area",
+            "The screen resolution",
+            "The menu bar size",
+            "The GDI heap free space"
+          ],
+          "answer": "The size of the window's inside area"
+        }
+      ]
+    },
+    {
+      "id": "resources",
+      "title": "Menus, resources and WM_COMMAND",
+      "summary": "The .rc file, menu IDs and handling commands.",
+      "sections": [
+        {
+          "p": "Menus, dialog layouts, icons and strings live in a <b>resource script</b> (<code>.rc</code>), compiled by the resource compiler and attached to the <code>.exe</code>. Each menu item has an ID number, usually named in a shared header.",
+          "code": "/* nutshell.h */\n#define IDM_NEW    100\n#define IDM_ABOUT  101\n#define IDM_EXIT   102\n\n/* nutshell.rc */\n#include <windows.h>\n#include \"nutshell.h\"\n\nNutshellMenu MENU\nBEGIN\n    POPUP \"&File\"\n    BEGIN\n        MENUITEM \"&New\",       IDM_NEW\n        MENUITEM SEPARATOR\n        MENUITEM \"E&xit\",      IDM_EXIT\n    END\n    POPUP \"&Help\"\n    BEGIN\n        MENUITEM \"&About...\",  IDM_ABOUT\n    END\nEND"
+        },
+        {
+          "p": "Name the menu in the window class (<code>wc.lpszMenuName = \"NutshellMenu\";</code>). Choosing an item sends <code>WM_COMMAND</code> with the item's ID in <code>wParam</code>. The <code>&amp;</code> marks the underlined letter for keyboard use.",
+          "h": "Hooking the menu up",
+          "code": "case WM_COMMAND:\n    switch (wParam) {\n    case IDM_NEW:\n        /* start again */\n        return 0;\n    case IDM_ABOUT:\n        MessageBox(hwnd, \"Nutshell 1.0\", \"About\", MB_OK | MB_ICONINFORMATION);\n        return 0;\n    case IDM_EXIT:\n        DestroyWindow(hwnd);       /* leads to WM_DESTROY */\n        return 0;\n    }\n    break;"
+        },
+        {
+          "p": "A Win16 program also needs a <code>.def</code> file. It names the program, says how its code and data segments behave in memory, sets the heap and stack sizes, and <b>exports</b> every function that Windows calls back, such as the window procedure.",
+          "h": "The module definition file",
+          "code": "NAME         NUTSHELL\nDESCRIPTION  'Nutshell for Windows 3.1'\nEXETYPE      WINDOWS\nSTUB         'WINSTUB.EXE'\nCODE         PRELOAD MOVEABLE DISCARDABLE\nDATA         PRELOAD MOVEABLE MULTIPLE\nHEAPSIZE     1024\nSTACKSIZE    8192\nEXPORTS      WndProc"
+        },
+        {
+          "p": "<code>WINSTUB.EXE</code> is a tiny DOS program built into the front of every Windows <code>.exe</code>. Run the program from plain DOS and the stub prints “This program requires Microsoft Windows.” instead of crashing.",
+          "h": "The stub"
+        }
+      ],
+      "practice": [
+        {
+          "q": "Which message does choosing a menu item send?",
+          "why": "Menu choices and control notifications both arrive as WM_COMMAND.",
+          "options": ["WM_COMMAND", "WM_MENU", "WM_CLICK", "WM_PAINT"],
+          "answer": "WM_COMMAND"
+        },
+        {
+          "q": "In Win16, where is the menu item's ID?",
+          "why": "In Win16, wParam holds the ID of the menu item or control.",
+          "options": ["wParam", "LOWORD(lParam)", "HIWORD(lParam)", "The message number"],
+          "answer": "wParam"
+        },
+        {
+          "q": "Why list WndProc under EXPORTS?",
+          "why": "Win16 callbacks must be exported so Windows can set up the program's data segment when it calls them.",
+          "options": [
+            "Windows calls it from outside the program",
+            "To make it public to other programs",
+            "To speed it up",
+            "So it appears in the menu"
+          ],
+          "answer": "Windows calls it from outside the program"
+        },
+        {
+          "q": "What does the & in \"E&xit\" do?",
+          "why": "The letter after & is underlined and can be pressed with Alt or while the menu is open.",
+          "options": [
+            "Underlines x as the keyboard shortcut",
+            "Joins two strings",
+            "Makes the item bold",
+            "Disables the item"
+          ],
+          "answer": "Underlines x as the keyboard shortcut"
+        },
+        {
+          "q": "Where do menus and dialog layouts live before they are built into the .exe?",
+          "why": "The resource compiler turns the .rc into resources attached to the executable.",
+          "options": [
+            "A resource script (.rc)",
+            "WinMain",
+            "The message loop",
+            "A .COM file"
+          ],
+          "answer": "A resource script (.rc)"
+        },
+        {
+          "q": "What does WINSTUB.EXE do?",
+          "why": "The stub is a tiny DOS program at the front of the .exe that refuses to run without Windows.",
+          "options": [
+            "Prints a message if the program is run from plain DOS",
+            "Starts Windows",
+            "Registers the window class",
+            "Draws the icon"
+          ],
+          "answer": "Prints a message if the program is run from plain DOS"
+        }
+      ]
+    },
+    {
+      "id": "dialogs",
+      "title": "Dialog boxes and controls",
+      "summary": "Dialog templates, dialog procedures, MakeProcInstance and child controls.",
+      "sections": [
+        {
+          "p": "A dialog box is laid out in the <code>.rc</code> file and driven by a <b>dialog procedure</b>, which looks like a window procedure but returns <code>TRUE</code> for messages it handled and <code>FALSE</code> otherwise. <code>WM_INITDIALOG</code> arrives before it is shown; <code>EndDialog</code> closes it.",
+          "code": "AboutBox DIALOG 20, 20, 160, 70\nSTYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU\nCAPTION \"About Nutshell\"\nBEGIN\n    CTEXT         \"Nutshell 1.0\", -1, 0, 12, 160, 8\n    CTEXT         \"Gathers nuts since 1992\", -1, 0, 24, 160, 8\n    DEFPUSHBUTTON \"OK\", IDOK, 64, 48, 32, 14\nEND"
+        },
+        {
+          "p": "In Win16 a callback such as a dialog procedure cannot be passed straight to Windows. <code>MakeProcInstance</code> builds a small piece of code (a <b>thunk</b>) that loads the right data segment for this copy of the program and then jumps to your function. Free it again with <code>FreeProcInstance</code>. The dialog procedure must also be exported in the <code>.def</code> file.",
+          "h": "Showing it, Win16 style",
+          "code": "BOOL CALLBACK AboutDlgProc(HWND hdlg, UINT msg, WPARAM wParam, LPARAM lParam)\n{\n    switch (msg) {\n    case WM_INITDIALOG:\n        return TRUE;                   /* let Windows set the focus */\n    case WM_COMMAND:\n        if (wParam == IDOK || wParam == IDCANCEL) {\n            EndDialog(hdlg, 0);\n            return TRUE;\n        }\n        break;\n    }\n    return FALSE;\n}\n\n/* in WndProc, for IDM_ABOUT: */\n    lpfnDlg = MakeProcInstance((FARPROC) AboutDlgProc, hInst);\n    DialogBox(hInst, \"AboutBox\", hwnd, lpfnDlg);\n    FreeProcInstance(lpfnDlg);"
+        },
+        {
+          "p": "Buttons, edit boxes and list boxes are child windows of predefined classes such as <code>\"BUTTON\"</code> and <code>\"EDIT\"</code>. They tell their parent about events with <code>WM_COMMAND</code>. In Win16 the control's ID is in <code>wParam</code>, its window handle in <code>LOWORD(lParam)</code> and the notification code (such as <code>BN_CLICKED</code>) in <code>HIWORD(lParam)</code>. Win32 moved the notification code into <code>HIWORD(wParam)</code>, one of the classic porting traps.",
+          "h": "Controls are windows",
+          "code": "hwndBtn = CreateWindow(\"BUTTON\", \"Gather\",\n                       WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,\n                       10, 10, 80, 24,\n                       hwnd, (HMENU) IDC_GATHER, hInst, NULL);\n\ncase WM_COMMAND:\n    if (wParam == IDC_GATHER && HIWORD(lParam) == BN_CLICKED) {\n        nuts++;\n        InvalidateRect(hwnd, NULL, TRUE);\n    }\n    return 0;"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What should a dialog procedure return for a message it did not handle?",
+          "why": "Dialog procedures return TRUE or FALSE; the dialog manager does the default work when you return FALSE.",
+          "options": ["FALSE", "DefWindowProc(...)", "TRUE", "0 always means handled"],
+          "answer": "FALSE"
+        },
+        {
+          "q": "Why does Win16 code call MakeProcInstance?",
+          "why": "Several running copies share code but each has its own data segment; the thunk loads the right one.",
+          "options": [
+            "To make a thunk that sets up the data segment before the callback runs",
+            "To create a new instance of the program",
+            "To make the dialog modal",
+            "To load the dialog template"
+          ],
+          "answer": "To make a thunk that sets up the data segment before the callback runs"
+        },
+        {
+          "q": "In Win16 WM_COMMAND from a button, where is BN_CLICKED?",
+          "why": "Win16 puts the notification code in the high word of lParam; Win32 moved it to HIWORD(wParam).",
+          "options": ["HIWORD(lParam)", "HIWORD(wParam)", "wParam", "LOWORD(lParam)"],
+          "answer": "HIWORD(lParam)"
+        },
+        {
+          "q": "Which message lets a dialog fill in its controls before it appears?",
+          "why": "Dialogs get WM_INITDIALOG after their controls exist but before they are shown.",
+          "options": ["WM_INITDIALOG", "WM_CREATE", "WM_PAINT", "WM_SHOWWINDOW"],
+          "answer": "WM_INITDIALOG"
+        },
+        {
+          "q": "What closes a modal dialog started with DialogBox?",
+          "why": "EndDialog ends the dialog's own message loop and returns from DialogBox.",
+          "options": [
+            "EndDialog",
+            "DestroyWindow only",
+            "PostQuitMessage",
+            "FreeProcInstance"
+          ],
+          "answer": "EndDialog"
+        },
+        {
+          "q": "After DialogBox returns, what should you do with the MakeProcInstance result?",
+          "why": "The thunk is no longer needed; FreeProcInstance releases it.",
+          "options": [
+            "Call FreeProcInstance",
+            "Call GlobalFree",
+            "Call KillTimer",
+            "Nothing"
+          ],
+          "answer": "Call FreeProcInstance"
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "title": "Segments and memory",
+      "summary": "16-bit ints, near and far pointers, and moveable global memory.",
+      "sections": [
+        {
+          "p": "Win16 runs on the 8086 family's <b>segmented</b> memory: an address is a 16-bit segment plus a 16-bit offset, and one segment holds at most 64 KB. A <code>NEAR</code> pointer is just an offset inside the current data segment (2 bytes); a <code>FAR</code> pointer carries a segment too (4 bytes). Win16 API calls that take strings or buffers use far pointers such as <code>LPSTR</code>.",
+          "code": "int      n;          /* 16 bits: -32768 to 32767 */\nlong     big;        /* 32 bits */\nchar NEAR *pn;       /* 2-byte pointer within our data segment */\nchar FAR  *pf;       /* 4-byte segment:offset pointer */\nLPSTR    text;       /* the same as char FAR * */"
+        },
+        {
+          "p": "Large or long-lived blocks come from the global heap. <code>GlobalAlloc</code> returns a <b>handle</b>, not an address, because Windows may move the block to make room. <code>GlobalLock</code> pins it and gives a far pointer; <code>GlobalUnlock</code> lets it move again. Keep blocks unlocked between messages so Windows can shuffle memory.",
+          "h": "Global memory",
+          "code": "HGLOBAL hMem;\nchar FAR *p;\n\nhMem = GlobalAlloc(GMEM_MOVEABLE | GMEM_ZEROINIT, 4096);\nif (hMem) {\n    p = GlobalLock(hMem);\n    lstrcpy(p, \"acorn store\");\n    /* ... use p ... */\n    GlobalUnlock(hMem);\n}\n/* later, when finished: */\nGlobalFree(hMem);"
+        },
+        {
+          "p": "Windows 3.x might run in real mode (3.0), standard mode or 386 enhanced mode, often on machines with 1 or 2 MB of RAM. Moveable and discardable memory let it compact the heap and throw away code segments it can load again from disk. Handles are what made that possible, and they are why so much of the API passes <code>HWND</code>, <code>HDC</code>, <code>HGLOBAL</code> rather than pointers.",
+          "h": "Why handles"
+        },
+        {
+          "p": "The C library's <code>sprintf</code> works, but Windows has its own smaller <code>wsprintf</code> that writes into a far buffer. <code>TextOut</code> needs the length, which <code>lstrlen</code> gives.",
+          "h": "Formatting text",
+          "code": "char buf[40];\nwsprintf(buf, \"Nuts: %d\", nuts);\nTextOut(hdc, 10, 10, buf, lstrlen(buf));"
+        }
+      ],
+      "practice": [
+        {
+          "q": "How big is an int in a Win16 C compiler?",
+          "why": "Win16 compilers target 16-bit processors, so int runs from −32768 to 32767; use long for bigger numbers.",
+          "options": ["16 bits", "32 bits", "8 bits", "64 bits"],
+          "answer": "16 bits"
+        },
+        {
+          "q": "Why does GlobalAlloc return a handle rather than a pointer?",
+          "why": "Moveable memory is pinned with GlobalLock only while you use it.",
+          "options": [
+            "Windows may move the block, so its address can change",
+            "Pointers are not allowed in C",
+            "Handles are faster",
+            "To hide the size"
+          ],
+          "answer": "Windows may move the block, so its address can change"
+        },
+        {
+          "q": "What is a FAR pointer?",
+          "why": "A far pointer can reach any segment; a near one only the current data segment.",
+          "options": [
+            "A segment plus an offset: 4 bytes",
+            "An offset in the current segment: 2 bytes",
+            "A pointer to the end of memory",
+            "A handle"
+          ],
+          "answer": "A segment plus an offset: 4 bytes"
+        },
+        {
+          "q": "What is the most one segment can hold?",
+          "why": "A 16-bit offset reaches 65,536 bytes.",
+          "options": ["64 KB", "640 KB", "1 MB", "16 KB"],
+          "answer": "64 KB"
+        },
+        {
+          "q": "What does GlobalLock do?",
+          "why": "While locked, Windows will not move the block; unlock it when you are done using the pointer.",
+          "options": [
+            "Pins a moveable block and returns a far pointer",
+            "Frees the block",
+            "Allocates a new segment",
+            "Starts the message loop"
+          ],
+          "answer": "Pins a moveable block and returns a far pointer"
+        },
+        {
+          "q": "What is LPSTR?",
+          "why": "Win16 API string parameters use far pointers so they can reach any segment.",
+          "options": [
+            "char FAR * — a far pointer to a string",
+            "A near pointer to an int",
+            "A window handle",
+            "A GDI pen"
+          ],
+          "answer": "char FAR * — a far pointer to a string"
+        }
+      ]
+    },
+    {
+      "id": "timers",
+      "title": "Timers and animation",
+      "summary": "SetTimer, WM_TIMER, KillTimer and staying cooperative.",
+      "sections": [
+        {
+          "p": "A program cannot sit in a loop waiting for time to pass: that would freeze Windows 3.x. Instead it asks for <code>WM_TIMER</code> messages with <code>SetTimer</code> and does a little work each time one arrives. Timers are a shared, limited resource, so check that <code>SetTimer</code> succeeded and kill the timer when the window goes away.",
+          "code": "#define ID_TICK 1\n\ncase WM_CREATE:\n    if (!SetTimer(hwnd, ID_TICK, 500, NULL)) {   /* every half second */\n        MessageBox(hwnd, \"Too many timers!\", \"Nutshell\", MB_OK);\n        return -1;                               /* window is not created */\n    }\n    return 0;\n\ncase WM_TIMER:\n    frame = (frame + 1) % 4;                     /* next animation frame */\n    InvalidateRect(hwnd, NULL, FALSE);\n    return 0;\n\ncase WM_DESTROY:\n    KillTimer(hwnd, ID_TICK);\n    PostQuitMessage(0);\n    return 0;"
+        },
+        {
+          "p": "<code>WM_TIMER</code> is a low-priority message: it is only delivered when the queue has nothing else, and several missed ticks arrive as one. The PC clock also ticks only about 18.2 times a second, so intervals shorter than about 55 ms are not honoured. For a clock, read the actual time on each tick instead of counting ticks.",
+          "h": "Timers are not exact"
+        },
+        {
+          "p": "For a long calculation, either split it into small steps done on each <code>WM_TIMER</code>, or call <code>PeekMessage</code> now and then inside the loop to let other programs run. Both keep the desktop alive.",
+          "h": "Long jobs"
+        }
+      ],
+      "practice": [
+        {
+          "q": "How should a Win16 program do something every second?",
+          "why": "Loops and sleeping block cooperative multitasking; Windows 3.x has no threads.",
+          "options": [
+            "SetTimer and handle WM_TIMER",
+            "A while loop that checks the clock",
+            "Sleep(1000) in WinMain",
+            "A second thread"
+          ],
+          "answer": "SetTimer and handle WM_TIMER"
+        },
+        {
+          "q": "Ten ticks were due while the program was busy. How many WM_TIMER messages arrive?",
+          "why": "Timer messages are not queued up; missed ticks are combined.",
+          "options": ["One", "Ten", "None", "Eleven"],
+          "answer": "One"
+        },
+        {
+          "q": "Why call KillTimer in WM_DESTROY?",
+          "why": "A timer that is never killed keeps one of the few system-wide slots busy.",
+          "options": [
+            "Timers are a shared, limited resource",
+            "Otherwise the window will not close",
+            "To stop the clock for every program",
+            "It is only tidiness"
+          ],
+          "answer": "Timers are a shared, limited resource"
+        },
+        {
+          "q": "What should you do if SetTimer fails in WM_CREATE?",
+          "why": "Returning -1 from WM_CREATE cancels window creation when a needed timer cannot be allocated.",
+          "options": [
+            "Return -1 so the window is not created",
+            "Ignore it and keep going",
+            "Call KillTimer",
+            "Call PostQuitMessage at once"
+          ],
+          "answer": "Return -1 so the window is not created"
+        },
+        {
+          "q": "How can a long calculation stay cooperative without SetTimer?",
+          "why": "PeekMessage lets other programs run while you keep working through a long job.",
+          "options": [
+            "Call PeekMessage now and then inside the loop",
+            "Use Sleep between steps",
+            "Spawn a second thread",
+            "Disable the message loop"
+          ],
+          "answer": "Call PeekMessage now and then inside the loop"
+        }
+      ]
+    },
+    {
+      "id": "porting",
+      "title": "From Win16 to Win32",
+      "summary": "What changed on the way to Windows 95 and NT.",
+      "sections": [
+        {
+          "p": "Most of the API kept its name when Windows went 32-bit, so a lot of Win16 code compiles for Win32 after a tidy-up. The things that bite are the ones that depended on 16-bit sizes and segments."
+        },
+        {
+          "p": "<code>int</code> and <code>WPARAM</code> grew to 32 bits, so <code>WM_COMMAND</code>'s fields moved: the control ID is now <code>LOWORD(wParam)</code>, the notification <code>HIWORD(wParam)</code> and the control handle <code>lParam</code>. <code>NEAR</code> and <code>FAR</code> mean nothing in the flat 32-bit address space. <code>MakeProcInstance</code> is no longer needed. <code>hPrevInstance</code> is always <code>NULL</code>, because every program runs in its own address space. Functions that packed two coordinates into one return value gained <code>Ex</code> versions (<code>MoveToEx</code>, <code>SetWindowOrgEx</code>).",
+          "h": "The classic changes",
+          "code": "/* Win16 */\ncase WM_COMMAND:\n    if (wParam == IDC_GATHER && HIWORD(lParam) == BN_CLICKED) ...\n\n/* Win32 */\ncase WM_COMMAND:\n    if (LOWORD(wParam) == IDC_GATHER && HIWORD(wParam) == BN_CLICKED) ..."
+        },
+        {
+          "p": "Win32 programs are pre-empted: a long loop freezes only their own window. But a window that stops reading messages still looks hung to the user, so the habits from Win16 (short handlers, timers for slow work) are still good ones. Win32 adds threads for work that really must run for a long time.",
+          "h": "Pre-emptive multitasking"
+        }
+      ],
+      "practice": [
+        {
+          "q": "In Win32 WM_COMMAND, where is the control ID?",
+          "why": "With a 32-bit wParam, the ID and notification code share it: ID low, code high.",
+          "options": [
+            "LOWORD(wParam)",
+            "wParam as a whole",
+            "HIWORD(lParam)",
+            "LOWORD(lParam)"
+          ],
+          "answer": "LOWORD(wParam)"
+        },
+        {
+          "q": "What is hPrevInstance in a Win32 program?",
+          "why": "Each Win32 process has its own address space, so it cannot share another's instance.",
+          "options": [
+            "Always NULL",
+            "The previous copy's instance",
+            "The parent window",
+            "The DLL handle"
+          ],
+          "answer": "Always NULL"
+        },
+        {
+          "q": "Which Win16 call is simply unnecessary in Win32?",
+          "why": "There are no per-instance data segments to set up in a flat address space.",
+          "options": ["MakeProcInstance", "RegisterClass", "GetMessage", "BeginPaint"],
+          "answer": "MakeProcInstance"
+        },
+        {
+          "q": "Why did MoveTo become MoveToEx?",
+          "why": "With 32-bit coordinates the old position no longer fits, so MoveToEx returns it through a POINT pointer.",
+          "options": [
+            "The old return value packed two 16-bit coordinates into 32 bits",
+            "MoveTo was too slow",
+            "To add colour",
+            "Ex means for Excel"
+          ],
+          "answer": "The old return value packed two 16-bit coordinates into 32 bits"
+        },
+        {
+          "q": "In Win32 WM_COMMAND, where is the notification code such as BN_CLICKED?",
+          "why": "Win32 packs ID and notification into wParam; the control handle is lParam.",
+          "options": [
+            "HIWORD(wParam)",
+            "HIWORD(lParam)",
+            "LOWORD(lParam)",
+            "wParam as a whole"
+          ],
+          "answer": "HIWORD(wParam)"
+        },
+        {
+          "q": "What happened to NEAR and FAR in Win32?",
+          "why": "Win32 uses a single linear address space, so segment:offset pointers go away.",
+          "options": [
+            "They mean nothing in the flat 32-bit address space",
+            "They became larger",
+            "NEAR is required for strings",
+            "FAR replaced HWND"
+          ],
+          "answer": "They mean nothing in the flat 32-bit address space"
+        }
+      ]
+    },
+    {
+      "id": "clipboard",
+      "title": "The clipboard",
+      "summary": "Share text between programs with OpenClipboard and CF_TEXT.",
+      "sections": [
+        {
+          "p": "Windows 3.x programs share selected text (and later bitmaps and other formats) through the <b>clipboard</b>. Only one program owns it at a time. You open it, optionally empty it, put data in or take data out, then close it. The data lives in a global memory block with a format tag such as <code>CF_TEXT</code>.",
+          "code": "/* Copy a C string to the clipboard as CF_TEXT */\nvoid CopyText(HWND hwnd, char FAR *text)\n{\n    HGLOBAL hMem;\n    char FAR *p;\n    int len;\n\n    len = lstrlen(text) + 1;\n    hMem = GlobalAlloc(GMEM_MOVEABLE, len);\n    if (!hMem)\n        return;\n    p = GlobalLock(hMem);\n    lstrcpy(p, text);\n    GlobalUnlock(hMem);\n\n    if (OpenClipboard(hwnd)) {\n        EmptyClipboard();\n        SetClipboardData(CF_TEXT, hMem);   /* ownership passes to Windows */\n        CloseClipboard();\n    } else {\n        GlobalFree(hMem);                  /* open failed: free it ourselves */\n    }\n}"
+        },
+        {
+          "p": "Check that the format you want is available, then lock the handle Windows gives you. Do not free clipboard data while it is on the clipboard — Windows owns it after a successful <code>SetClipboardData</code>.",
+          "h": "Reading text back",
+          "code": "void PasteText(HWND hwnd, char FAR *buf, int buflen)\n{\n    HGLOBAL hMem;\n    char FAR *p;\n\n    if (!IsClipboardFormatAvailable(CF_TEXT))\n        return;\n    if (!OpenClipboard(hwnd))\n        return;\n    hMem = GetClipboardData(CF_TEXT);\n    if (hMem) {\n        p = GlobalLock(hMem);\n        if (p) {\n            /* copy out; leave the block locked only briefly */\n            lstrcpyn(buf, p, buflen);\n            GlobalUnlock(hMem);\n        }\n    }\n    CloseClipboard();\n}"
+        },
+        {
+          "p": "After <code>SetClipboardData</code>, do not <code>GlobalFree</code> that handle: the clipboard will free it when something else empties the clipboard. Other common formats include <code>CF_BITMAP</code> and <code>CF_METAFILE</code>. Programs can register private formats with <code>RegisterClipboardFormat</code> when they need a custom structure.",
+          "h": "Ownership and formats"
+        },
+        {
+          "p": "Hold the clipboard open only for the few lines that empty, set or get data. Another program cannot open it while yours holds it, and a crash with the clipboard open can leave the desktop awkward until restart. Copy into your own buffer, close, then work with the copy.",
+          "h": "Keep the open short"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What must you call before SetClipboardData?",
+          "why": "The clipboard is a shared resource; OpenClipboard claims it for your window.",
+          "options": ["OpenClipboard", "BeginPaint", "RegisterClass", "CreateWindow"],
+          "answer": "OpenClipboard"
+        },
+        {
+          "q": "Who owns the memory after a successful SetClipboardData?",
+          "why": "Do not GlobalFree that handle yourself; EmptyClipboard or a later Set will free it.",
+          "options": [
+            "Windows (the clipboard)",
+            "Your program forever",
+            "The previous owner",
+            "Nobody"
+          ],
+          "answer": "Windows (the clipboard)"
+        },
+        {
+          "q": "Which format is plain null-terminated text?",
+          "why": "CF_TEXT is the classic ANSI text format on Win16.",
+          "options": ["CF_TEXT", "CF_BITMAP", "CF_METAFILE", "CF_OWNERDISPLAY"],
+          "answer": "CF_TEXT"
+        },
+        {
+          "q": "What should you do if OpenClipboard fails after GlobalAlloc for a copy?",
+          "why": "Ownership never passed to the clipboard, so your program must free the allocation.",
+          "options": [
+            "GlobalFree the block yourself",
+            "Call SetClipboardData anyway",
+            "Ignore the failure",
+            "Call PostQuitMessage"
+          ],
+          "answer": "GlobalFree the block yourself"
+        },
+        {
+          "q": "Why keep OpenClipboard … CloseClipboard as short as possible?",
+          "why": "The clipboard is exclusive; a long hold blocks paste and copy elsewhere.",
+          "options": [
+            "Other programs cannot open the clipboard while you hold it",
+            "Windows deletes your window otherwise",
+            "Timers stop",
+            "GDI pens leak"
+          ],
+          "answer": "Other programs cannot open the clipboard while you hold it"
+        },
+        {
+          "q": "Before GetClipboardData for text, what is a good check?",
+          "why": "Avoid opening and finding nothing useful when the user has only a bitmap on the clipboard.",
+          "options": [
+            "IsClipboardFormatAvailable(CF_TEXT)",
+            "hPrevInstance != NULL",
+            "PeekMessage",
+            "KillTimer"
+          ],
+          "answer": "IsClipboardFormatAvailable(CF_TEXT)"
+        }
+      ]
+    },
+    {
+      "id": "module-def",
+      "title": "Module definition and DLLs",
+      "summary": "The .DEF file, EXPORTS, and a tiny Win16 DLL.",
+      "sections": [
+        {
+          "p": "A Win16 program is a <b>module</b>. Besides the .C sources you usually ship a <code>.DEF</code> file that names the module, says it is a Windows app, and lists functions that other modules may call. The linker reads that file when it builds the .EXE or .DLL.",
+          "code": "; nutshell.def — for an ordinary Windows program\nNAME        NUTSHELL\nDESCRIPTION 'Gather nuts under Windows 3.1'\nEXETYPE     WINDOWS\nSTUB        'WINSTUB.EXE'\nCODE        PRELOAD MOVEABLE DISCARDABLE\nDATA        PRELOAD MOVEABLE MULTIPLE\nHEAPSIZE    1024\nSTACKSIZE   8192"
+        },
+        {
+          "p": "<code>NAME</code> is the module name Windows shows. <code>EXETYPE WINDOWS</code> marks a Windows program rather than a DOS one. <code>STUB</code> is a tiny DOS program that prints an error if someone runs the EXE from plain DOS. <code>CODE</code> and <code>DATA</code> say how segments load; <code>MOVEABLE DISCARDABLE</code> lets Windows throw code away and reload it from disk when RAM is tight. <code>MULTIPLE</code> data gives each running copy its own data segment — that is why <code>hPrevInstance</code> mattered in WinMain.",
+          "h": "What the lines mean"
+        },
+        {
+          "p": "A DLL is also a module, but it uses <code>LIBRARY</code> instead of <code>NAME</code>, and it exports entry points. Other programs load it with <code>LoadLibrary</code> / <code>GetProcAddress</code>, or the linker binds the import at build time.",
+          "h": "A tiny DLL",
+          "code": "; nuts.dll — nutshell.def for a library\nLIBRARY     NUTS\nDESCRIPTION 'Shared helpers for Nutshell'\nEXETYPE     WINDOWS\nCODE        PRELOAD MOVEABLE DISCARDABLE\nDATA        PRELOAD MOVEABLE SINGLE\nHEAPSIZE    1024\nEXPORTS\n    AddNuts   @1\n    ClearNuts @2\n\n/* nuts.c */\n#include <windows.h>\n\nint FAR PASCAL AddNuts(int a, int b)\n{\n    return a + b;\n}\n\nvoid FAR PASCAL ClearNuts(int FAR *p)\n{\n    if (p)\n        *p = 0;\n}\n\nint FAR PASCAL LibMain(HINSTANCE hInstance, WORD wDataSeg,\n                       WORD cbHeapSize, LPSTR lpCmdLine)\n{\n    if (cbHeapSize != 0)\n        UnlockData(0);\n    return 1;   /* success */\n}"
+        },
+        {
+          "p": "Declare the DLL function with the same calling convention the export used (<code>FAR PASCAL</code> on Win16), and either link an import library or load it by hand. Always match the ordinal or name you put under <code>EXPORTS</code>.",
+          "h": "Calling from the EXE",
+          "code": "/* In the EXE */\nint FAR PASCAL AddNuts(int, int);   /* from NUTS.DLL */\n\ncase WM_COMMAND:\n    if (wParam == IDC_GATHER)\n        nuts = AddNuts(nuts, 1);\n    break;"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does a .DEF file tell the linker?",
+          "why": "NAME/LIBRARY, EXETYPE, CODE/DATA and EXPORTS are the usual contents.",
+          "options": [
+            "Module name, type, segment flags and exports",
+            "Only the icon",
+            "The colour of the title bar",
+            "Which compiler to use"
+          ],
+          "answer": "Module name, type, segment flags and exports"
+        },
+        {
+          "q": "Which .DEF keyword starts a DLL instead of an EXE?",
+          "why": "EXE modules use NAME; DLLs use LIBRARY.",
+          "options": ["LIBRARY", "NAME", "STUB", "HEAPSIZE"],
+          "answer": "LIBRARY"
+        },
+        {
+          "q": "Why mark CODE as DISCARDABLE?",
+          "why": "On small RAM machines discardable code frees memory when another program needs it.",
+          "options": [
+            "Windows can throw the segment away and reload it from disk",
+            "It runs faster",
+            "It shares data between copies",
+            "It disables the message loop"
+          ],
+          "answer": "Windows can throw the segment away and reload it from disk"
+        },
+        {
+          "q": "What does DATA MULTIPLE mean for an EXE?",
+          "why": "That is why the first instance registers the class and later copies see a non-NULL hPrevInstance.",
+          "options": [
+            "Each running copy gets its own data segment",
+            "Data is read-only",
+            "Data is shared with every DLL",
+            "The stack is unlimited"
+          ],
+          "answer": "Each running copy gets its own data segment"
+        },
+        {
+          "q": "Where do you list AddNuts so other modules can call it?",
+          "why": "EXPORTS publishes the names or ordinals other modules may import.",
+          "options": [
+            "Under EXPORTS in the .DEF file",
+            "Only in WinMain",
+            "In the resource .RC file",
+            "In WINSTUB.EXE"
+          ],
+          "answer": "Under EXPORTS in the .DEF file"
+        },
+        {
+          "q": "What should LibMain return on success?",
+          "why": "A zero return means the DLL failed to initialise and Windows unloads it.",
+          "options": ["1", "0", "-1", "WM_QUIT"],
+          "answer": "1"
+        }
+      ]
+    }
+  ]
+}
