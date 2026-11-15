@@ -20,6 +20,7 @@ variants/            links between character forms (traditional and simplified,
                      shinjitai and kyūjitai, and so on)
 meaning/             the meaning network
 programming/<id>/    programming courses and keyword maps
+math/<id>/           Math Learner courses (arithmetic, algebra, …)
 features.json        every user-facing feature switch
 schemas/             a versioned JSON Schema for every content type
 tools/               importers, validators, generators and checks

@@ -1,0 +1,589 @@
+{
+  "intro": "Linear algebra studies vectors, matrices and linear maps — the language of systems of equations, computer graphics, data and much of advanced maths. These lessons build intuition for vectors and matrices, solving Ax = b, determinants, eigenvalues and what a linear transformation does to space. Comfort with high-school algebra is enough to begin.",
+  "name": "Linear algebra",
+  "title": "Linear algebra essentials",
+  "lessons": [
+    {
+      "id": "vectors",
+      "title": "Vectors",
+      "sections": [
+        {
+          "p": "A <b>vector</b> in the plane or space can be drawn as an arrow and written as a column (or row) of components. In R², v = ⟨v₁, v₂⟩. Two vectors are equal when corresponding components match; position of the arrow can slide (free vector)."
+        },
+        {
+          "h": "Addition and scaling",
+          "p": "Add componentwise; scale by multiplying each component. Geometrically, addition is tip-to-tail; scaling stretches or flips.",
+          "code": "⟨1, 2⟩ + ⟨3, −1⟩ = ⟨4, 1⟩\n3⟨1, 2⟩ = ⟨3, 6⟩\n−⟨1, 2⟩ = ⟨−1, −2⟩"
+        },
+        {
+          "h": "Zero and length",
+          "p": "The zero vector 0 has all components 0. Length (Euclidean norm) ‖v‖ = √(v₁² + v₂² + …). A <b>unit vector</b> has length 1."
+        },
+        {
+          "h": "Dot product",
+          "p": "u · v = u₁v₁ + u₂v₂ + … = ‖u‖ ‖v‖ cos θ. Zero dot product means orthogonal (perpendicular) when neither is zero.",
+          "code": "⟨1, 2⟩ · ⟨2, −1⟩ = 2 − 2 = 0  → perpendicular"
+        }
+      ],
+      "summary": "Arrows and lists of numbers; addition and scalar multiplication.",
+      "practice": [
+        {
+          "why": "Componentwise sum.",
+          "options": ["⟨4, 1⟩", "⟨3, 1⟩", "⟨4, 3⟩", "⟨2, 2⟩"],
+          "q": "⟨1, 2⟩ + ⟨3, −1⟩ =",
+          "answer": "⟨4, 1⟩"
+        },
+        {
+          "why": "Scale each component.",
+          "options": ["⟨3, 6⟩", "⟨1, 6⟩", "⟨3, 2⟩", "9"],
+          "q": "3⟨1, 2⟩ =",
+          "answer": "⟨3, 6⟩"
+        },
+        {
+          "why": "√(9+16)=5.",
+          "options": ["5", "7", "12", "25"],
+          "q": "‖⟨3, 4⟩‖ =",
+          "answer": "5"
+        },
+        {
+          "why": "1·2 + 2·(−1)=0.",
+          "options": ["0", "4", "1", "−1"],
+          "q": "⟨1, 2⟩ · ⟨2, −1⟩ =",
+          "answer": "0"
+        },
+        {
+          "why": "Dot product zero.",
+          "options": ["Orthogonal", "Parallel always", "Equal", "Unit length"],
+          "q": "If u · v = 0 and u,v ≠ 0, they are:",
+          "answer": "Orthogonal"
+        },
+        {
+          "why": "All components zero.",
+          "options": ["0", "1", "Undefined", "∞"],
+          "q": "The zero vector has length:",
+          "answer": "0"
+        }
+      ]
+    },
+    {
+      "id": "matrices",
+      "title": "Matrices",
+      "sections": [
+        {
+          "p": "An <b>m × n matrix</b> has m rows and n columns. Entry a<sub>ij</sub> sits in row i, column j. Matrices store linear data: coefficients of systems, pixel grids, or the action of a linear map."
+        },
+        {
+          "h": "Addition and scalar multiplication",
+          "p": "Same shape required for addition: add entrywise. Scale entrywise. These match vector operations on the “big vector” of all entries."
+        },
+        {
+          "h": "Matrix times vector",
+          "p": "If A is m × n and x is in Rⁿ (column), Ax is in Rᵐ. Each entry of Ax is a dot product of a row of A with x. Columns of A are the images of the standard basis vectors.",
+          "code": "A = [2 1; 0 3],  x = ⟨1, 4⟩\nAx = ⟨2·1+1·4, 0·1+3·4⟩ = ⟨6, 12⟩"
+        },
+        {
+          "h": "Matrix multiplication",
+          "p": "AB is defined when A is m × n and B is n × p; result is m × p. Entry (i,j) is row i of A dot column j of B. In general AB ≠ BA.",
+          "code": "[1 2; 0 1][0 1; 1 0] = [2 1; 1 0]\n(other order differs)"
+        }
+      ],
+      "summary": "Rectangular arrays; addition, scalar mult and matrix–vector products.",
+      "practice": [
+        {
+          "why": "m×n → n columns.",
+          "options": ["3", "2", "6", "5"],
+          "q": "A 2 × 3 matrix has how many columns?",
+          "answer": "3"
+        },
+        {
+          "why": "Row dots as in the example.",
+          "options": ["⟨6, 12⟩", "⟨2, 12⟩", "⟨6, 3⟩", "⟨5, 4⟩"],
+          "q": "For A = [2 1; 0 3] and x=⟨1,4⟩, Ax =",
+          "answer": "⟨6, 12⟩"
+        },
+        {
+          "why": "n in m×n and n×p.",
+          "options": ["Match", "Both be 1", "Sum to 0", "Be square"],
+          "q": "AB requires the middle dimensions to:",
+          "answer": "Match"
+        },
+        {
+          "why": "Matrix mult is not commutative.",
+          "options": [
+            "Need not be equal",
+            "Always equal",
+            "Always undefined",
+            "Always zero"
+          ],
+          "q": "In general AB and BA:",
+          "answer": "Need not be equal"
+        },
+        {
+          "why": "Aeᵢ = i-th column.",
+          "options": [
+            "Standard basis vectors",
+            "Only the zero vector",
+            "Eigenvalues",
+            "Determinants"
+          ],
+          "q": "Columns of A are images of:",
+          "answer": "Standard basis vectors"
+        },
+        {
+          "why": "Scale every entry.",
+          "options": ["[2 0; 0 2]", "[2 2; 2 2]", "[1 0; 0 1]", "[0 0; 0 0]"],
+          "q": "Scalar 2 times [1 0; 0 1] equals:",
+          "answer": "[2 0; 0 2]"
+        },
+        {
+          "why": "m×n times n-vector → m-vector.",
+          "options": ["Vector in R³", "Vector in R²", "2×3 matrix", "Scalar"],
+          "q": "Shape of Ax when A is 3×2 and x ∈ R²:",
+          "answer": "Vector in R³"
+        }
+      ]
+    },
+    {
+      "id": "systems-axb",
+      "title": "Systems Ax = b",
+      "sections": [
+        {
+          "p": "The system 2x + y = 5, x − y = 1 is Ax = b with A = [2 1; 1 −1], x = ⟨x,y⟩, b = ⟨5,1⟩. Solving the system means finding x (if any) mapped by A to b."
+        },
+        {
+          "h": "Row operations",
+          "p": "Swap rows, scale a row by a nonzero constant, or add a multiple of one row to another. These do not change the solution set and lead to row-echelon or reduced row-echelon form (Gaussian / Gauss–Jordan elimination).",
+          "code": "2x + y = 5\nx − y = 1\n→ eliminate: e.g. add twice row2 to row1 ideas…\nSolution: x=2, y=1"
+        },
+        {
+          "h": "Solution types",
+          "p": "Unique solution (pivot in every variable column); infinitely many (free variables); none (inconsistent row like 0 = 1)."
+        },
+        {
+          "h": "Span and consistency",
+          "p": "Ax = b is solvable iff b lies in the <b>column space</b> (span of columns of A). The span of vectors is all their linear combinations."
+        }
+      ],
+      "summary": "Linear systems as matrix equations; row reduction idea.",
+      "practice": [
+        {
+          "why": "Check: 4+1=5; 2−1=1.",
+          "options": ["x=2, y=1", "x=1, y=2", "x=3, y=−1", "No solution"],
+          "q": "The system 2x+y=5, x−y=1 has solution:",
+          "answer": "x=2, y=1"
+        },
+        {
+          "why": "Central viewpoint.",
+          "options": [
+            "One matrix equation",
+            "Only graphs",
+            "Determinants alone",
+            "Eigenvalues alone"
+          ],
+          "q": "Ax = b packs a linear system into:",
+          "answer": "One matrix equation"
+        },
+        {
+          "why": "Inconsistent.",
+          "options": [
+            "No solution",
+            "Unique solution",
+            "Free variable only",
+            "Infinite pivots"
+          ],
+          "q": "A row 0 = 1 after elimination means:",
+          "answer": "No solution"
+        },
+        {
+          "why": "Parameter family.",
+          "options": [
+            "Infinitely many solutions",
+            "No solutions",
+            "Exactly one",
+            "Complex only"
+          ],
+          "q": "Free variables typically yield:",
+          "answer": "Infinitely many solutions"
+        },
+        {
+          "why": "Definition of column space membership.",
+          "options": ["Ax=b has a solution", "A is zero", "det A = 1 always", "b = 0"],
+          "q": "b is in the column space of A iff:",
+          "answer": "Ax=b has a solution"
+        },
+        {
+          "why": "Elementary row op.",
+          "options": [
+            "Add multiple of one row to another",
+            "Multiply a row by 0 always",
+            "Square every entry",
+            "Delete a pivot column"
+          ],
+          "q": "Allowed row operation:",
+          "answer": "Add multiple of one row to another"
+        }
+      ]
+    },
+    {
+      "id": "determinants",
+      "title": "Determinants",
+      "sections": [
+        {
+          "p": "For a square matrix A, the <b>determinant</b> det(A) is a scalar. Among other roles: A is invertible iff det(A) ≠ 0; |det(A)| is the factor by which A scales areas (2D) or volumes (3D)."
+        },
+        {
+          "h": "2 × 2 formula",
+          "code": "det[a b; c d] = ad − bc\ndet[2 1; 0 3] = 6 − 0 = 6\ndet[1 2; 2 4] = 4 − 4 = 0  (singular)"
+        },
+        {
+          "h": "Invertibility",
+          "p": "If det(A) ≠ 0, there is A⁻¹ with A A⁻¹ = I. For 2×2: A⁻¹ = (1/det)[d −b; −c a]. If det = 0, columns are linearly dependent and Ax = b fails for some b."
+        },
+        {
+          "h": "Products",
+          "p": "det(AB) = det(A) det(B). So det(A⁻¹) = 1/det(A) when A is invertible."
+        }
+      ],
+      "summary": "A number that detects invertibility and signed volume scaling.",
+      "practice": [
+        {
+          "why": "ad−bc=6−0.",
+          "options": ["6", "5", "0", "3"],
+          "q": "det[2 1; 0 3] =",
+          "answer": "6"
+        },
+        {
+          "why": "4−4=0; rows dependent.",
+          "options": ["0", "8", "−1", "2"],
+          "q": "det[1 2; 2 4] =",
+          "answer": "0"
+        },
+        {
+          "why": "Standard criterion.",
+          "options": ["Nonzero", "Zero", "Negative only", "Equal to 1 only"],
+          "q": "A is invertible when det(A) is:",
+          "answer": "Nonzero"
+        },
+        {
+          "why": "Multiplicativity.",
+          "options": ["det(A) det(B)", "det(A)+det(B)", "det(A)−det(B)", "1 always"],
+          "q": "det(AB) equals:",
+          "answer": "det(A) det(B)"
+        },
+        {
+          "why": "Geometric meaning.",
+          "options": [
+            "Area scaling factor",
+            "Trace",
+            "Only the slope",
+            "Eigenvector count"
+          ],
+          "q": "|det(A)| in 2D measures:",
+          "answer": "Area scaling factor"
+        },
+        {
+          "why": "det(A)det(A⁻¹)=det(I)=1.",
+          "options": ["1/det(A)", "det(A)", "0", "−det(A)"],
+          "q": "For invertible A, det(A⁻¹) =",
+          "answer": "1/det(A)"
+        },
+        {
+          "why": "Product of diagonal 1s / definition.",
+          "options": ["1", "0", "n", "−1"],
+          "q": "det[I] for identity I is:",
+          "answer": "1"
+        }
+      ]
+    },
+    {
+      "id": "eigenvalues",
+      "title": "Eigenvalues intuition",
+      "sections": [
+        {
+          "p": "A nonzero vector v is an <b>eigenvector</b> of A if Av = λv for some scalar λ (the <b>eigenvalue</b>). A stretches or flips along that line without rotating it off the line."
+        },
+        {
+          "h": "Characteristic equation",
+          "p": "Av = λv ⇒ (A − λI)v = 0 needs a nontrivial solution ⇒ det(A − λI) = 0. Roots λ are the eigenvalues.",
+          "code": "A = [2 0; 0 3]\nEigenvalues 2 and 3\nAxes e₁, e₂ are eigenvectors"
+        },
+        {
+          "h": "Why care",
+          "p": "Diagonalizable matrices act simply in an eigenbasis: stretch by λᵢ along each axis. Used in differential equations, PCA, vibration modes and PageRank-style ranking."
+        },
+        {
+          "h": "Trace and det (2×2 hint)",
+          "p": "For 2×2, eigenvalues satisfy λ₁+λ₂ = trace(A) and λ₁λ₂ = det(A)."
+        }
+      ],
+      "summary": "Directions that matrices only stretch; Av = λv.",
+      "practice": [
+        {
+          "why": "Definition.",
+          "options": ["Eigenvector", "Determinant", "Row reduced form", "Pivot"],
+          "q": "Av = λv with v ≠ 0 means v is an:",
+          "answer": "Eigenvector"
+        },
+        {
+          "why": "Characteristic equation.",
+          "options": ["det(A − λI)=0", "det(A)=λ", "A=λI only", "Ax=0 only"],
+          "q": "Eigenvalues solve:",
+          "answer": "det(A − λI)=0"
+        },
+        {
+          "why": "Diagonal entries.",
+          "options": ["2 and 3", "5 and 6", "0 and 1", "2 and 2"],
+          "q": "For diag(2,3), eigenvalues are:",
+          "answer": "2 and 3"
+        },
+        {
+          "why": "Product of eigenvalues.",
+          "options": ["det(A)", "trace(A)", "‖A‖", "0 always"],
+          "q": "λ₁λ₂ for 2×2 equals:",
+          "answer": "det(A)"
+        },
+        {
+          "why": "Sum of eigenvalues.",
+          "options": ["trace(A)", "det(A)", "rank(A)", "1"],
+          "q": "λ₁+λ₂ for 2×2 equals:",
+          "answer": "trace(A)"
+        },
+        {
+          "why": "Definition requires nonzero v.",
+          "options": ["No", "Yes always", "Only if λ=0", "Only in 3D"],
+          "q": "Can v = 0 be called an eigenvector?",
+          "answer": "No"
+        }
+      ]
+    },
+    {
+      "id": "linear-maps",
+      "title": "Linear maps",
+      "sections": [
+        {
+          "p": "A map T: Rⁿ → Rᵐ is <b>linear</b> when T(u+v) = T(u)+T(v) and T(cv) = c T(v). Equivalently T(0)=0 and T preserves all linear combinations. Every such map is multiplication by some matrix A: T(x) = Ax."
+        },
+        {
+          "h": "Examples",
+          "p": "Rotations about the origin, reflections through a line through the origin, projections onto a subspace, and scalings are linear. Translations x ↦ x + b (b ≠ 0) are not linear.",
+          "code": "Rotation by 90° CCW in R²:\nA = [0 −1; 1 0]\n⟨1,0⟩ ↦ ⟨0,1⟩,  ⟨0,1⟩ ↦ ⟨−1,0⟩"
+        },
+        {
+          "h": "Kernel and image",
+          "p": "ker(T) = {x : T(x)=0} (null space of A). im(T) = column space of A. Rank–nullity: dim(ker) + dim(im) = n for T: Rⁿ → Rᵐ."
+        },
+        {
+          "h": "Composition",
+          "p": "Doing S then T is matrix product (matrices for the maps, in the appropriate order). This is why AB ≠ BA can matter geometrically: rotate-then-reflect ≠ reflect-then-rotate in general."
+        }
+      ],
+      "summary": "Functions that preserve addition and scaling; matrices represent them.",
+      "practice": [
+        {
+          "why": "T(0)=T(0+0)=T(0)+T(0).",
+          "options": ["0", "1", "Any fixed vector", "Infinity"],
+          "q": "Linear maps must send 0 to:",
+          "answer": "0"
+        },
+        {
+          "why": "Translation; T(0)≠0.",
+          "options": ["Not linear", "Linear", "Only orthogonal", "An eigenvalue"],
+          "q": "x ↦ x + ⟨1,0⟩ is:",
+          "answer": "Not linear"
+        },
+        {
+          "why": "Standard rotation.",
+          "options": ["⟨0,1⟩", "⟨1,0⟩", "⟨−1,0⟩", "⟨0,−1⟩"],
+          "q": "Rotation by 90° CCW sends ⟨1,0⟩ to:",
+          "answer": "⟨0,1⟩"
+        },
+        {
+          "why": "Null space.",
+          "options": ["0", "1", "x", "λx always"],
+          "q": "ker(T) is where T(x) equals:",
+          "answer": "0"
+        },
+        {
+          "why": "Representation theorem in finite dimensions.",
+          "options": [
+            "Multiplication by a matrix",
+            "A translation",
+            "Nonlinear",
+            "Only diagonal"
+          ],
+          "q": "Every linear map Rⁿ→Rᵐ is:",
+          "answer": "Multiplication by a matrix"
+        },
+        {
+          "why": "For T: Rⁿ → Rᵐ.",
+          "options": ["n (domain dimension)", "m always", "det(A)", "0"],
+          "q": "Rank–nullity: dim(ker)+dim(im) =",
+          "answer": "n (domain dimension)"
+        },
+        {
+          "why": "T(S(x)) = A_T A_S x.",
+          "options": [
+            "Matrix multiplication",
+            "Matrix addition",
+            "Determinants only",
+            "Dot products only"
+          ],
+          "q": "Composition of linear maps corresponds to:",
+          "answer": "Matrix multiplication"
+        }
+      ]
+    },
+    {
+      "id": "independence-basis",
+      "title": "Independence, basis and dimension",
+      "sections": [
+        {
+          "p": "Vectors v₁,…,vₖ are <b>linearly dependent</b> if some nontrivial combination gives 0 (one is redundant). They are <b>independent</b> if c₁v₁+…+cₖvₖ = 0 forces all cᵢ = 0."
+        },
+        {
+          "h": "Basis",
+          "p": "A <b>basis</b> of a subspace V is an independent spanning set. Every vector in V has unique coordinates relative to a basis. All bases of V have the same number of vectors: the <b>dimension</b> dim(V)."
+        },
+        {
+          "h": "Standard examples",
+          "p": "Standard basis of R³: e₁,e₂,e₃. The plane x+y+z=0 in R³ has dimension 2. Columns of an invertible n×n matrix form a basis of Rⁿ."
+        },
+        {
+          "h": "Test with matrices",
+          "p": "Columns of A are independent iff Ax = 0 has only the zero solution iff (for square A) det(A) ≠ 0."
+        }
+      ],
+      "summary": "When vectors are redundant; coordinate systems that fit a subspace.",
+      "practice": [
+        {
+          "why": "Definition of independence.",
+          "options": ["0", "1", "A pivot", "det=1"],
+          "q": "Independent vectors: only the trivial combo gives:",
+          "answer": "0"
+        },
+        {
+          "why": "Three standard basis vectors.",
+          "options": ["3", "2", "1", "9"],
+          "q": "Dimension of R³ is:",
+          "answer": "3"
+        },
+        {
+          "why": "Definition.",
+          "options": [
+            "Span and be independent",
+            "Only be orthogonal",
+            "Include 0",
+            "Have det 0"
+          ],
+          "q": "A basis must:",
+          "answer": "Span and be independent"
+        },
+        {
+          "why": "Full rank.",
+          "options": [
+            "Form a basis of Rⁿ",
+            "Are dependent",
+            "Span only 0",
+            "Number fewer than n"
+          ],
+          "q": "Columns of invertible n×n A:",
+          "answer": "Form a basis of Rⁿ"
+        },
+        {
+          "why": "One is redundant.",
+          "options": ["Dependent", "A basis of R²", "Always orthogonal", "Unit length"],
+          "q": "If two vectors in R² are scalar multiples, they are:",
+          "answer": "Dependent"
+        },
+        {
+          "why": "Independence + spanning.",
+          "options": [
+            "Each vector has one coordinate tuple",
+            "No coordinates exist",
+            "Infinite coords always",
+            "Only integers allowed"
+          ],
+          "q": "Unique coordinates relative to a basis mean:",
+          "answer": "Each vector has one coordinate tuple"
+        }
+      ]
+    },
+    {
+      "id": "geometry-maps",
+      "title": "Geometry of maps in the plane",
+      "sections": [
+        {
+          "p": "A 2×2 matrix is determined by where e₁ and e₂ go: those images become the columns. Watching the unit square helps you see area change (|det|) and orientation (sign of det)."
+        },
+        {
+          "h": "Gallery",
+          "code": "Scale: [2 0; 0 3]  stretches x by 2, y by 3\nShear: [1 1; 0 1]  pushes horizontally by y\nReflect over x-axis: [1 0; 0 −1]\nRotate θ: [cosθ −sinθ; sinθ cosθ]"
+        },
+        {
+          "h": "Singular maps",
+          "p": "If det = 0, the image collapses to a line or a point (lower dimension). Information is lost; you cannot invert the map."
+        },
+        {
+          "h": "Orthogonal matrices (preview)",
+          "p": "Matrices with AᵀA = I represent rotations/reflections: they preserve lengths and angles. Columns are orthonormal."
+        }
+      ],
+      "summary": "Stretch, shear, rotate, reflect — reading a 2×2 matrix.",
+      "practice": [
+        {
+          "why": "Ae₁, Ae₂.",
+          "options": ["e₁ and e₂", "Only 0", "Eigenvalues", "Rows of I³"],
+          "q": "Columns of a 2×2 matrix are images of:",
+          "answer": "e₁ and e₂"
+        },
+        {
+          "why": "Horizontal shear.",
+          "options": [
+            "Shear",
+            "Pure rotation by 90°",
+            "Projection to 0",
+            "Reflection over y=x only"
+          ],
+          "q": "[1 1; 0 1] is a:",
+          "answer": "Shear"
+        },
+        {
+          "why": "Preserve area; orientation-preserving ⇒ det=1.",
+          "options": ["1", "0", "2", "θ"],
+          "q": "Rotation matrices have |det| =",
+          "answer": "1"
+        },
+        {
+          "why": "Singular.",
+          "options": [
+            "Collapses dimension",
+            "Is always rotation",
+            "Is invertible",
+            "Preserves all areas"
+          ],
+          "q": "det = 0 means the map:",
+          "answer": "Collapses dimension"
+        },
+        {
+          "why": "x stays, y flips.",
+          "options": ["[1 0; 0 −1]", "[−1 0; 0 −1]", "[0 1; 1 0]", "[2 0; 0 2]"],
+          "q": "Reflect over x-axis matrix:",
+          "answer": "[1 0; 0 −1]"
+        },
+        {
+          "why": "Reflection-type behaviour.",
+          "options": [
+            "Orientation reversal",
+            "Zero area always",
+            "No eigenvalues",
+            "Nonlinearity"
+          ],
+          "q": "Sign of det negative suggests:",
+          "answer": "Orientation reversal"
+        }
+      ]
+    }
+  ],
+  "id": "linear-algebra",
+  "schema": "math-course@1"
+}

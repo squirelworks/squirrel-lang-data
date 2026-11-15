@@ -1,0 +1,523 @@
+{
+  "intro": "Trigonometry studies relationships between angles and side lengths. It starts with right triangles, then extends the same ratios to any angle through the unit circle and graphs of sine, cosine and tangent. These lessons also introduce basic identities and how to solve triangles when some sides or angles are known.",
+  "name": "Trigonometry",
+  "title": "Trigonometry",
+  "lessons": [
+    {
+      "id": "angles",
+      "title": "Angles and measure",
+      "sections": [
+        {
+          "p": "An <b>angle</b> is formed by two rays sharing a vertex. In standard position on the coordinate plane, the initial side lies on the positive x-axis; positive angles rotate counterclockwise."
+        },
+        {
+          "h": "Degrees and radians",
+          "p": "A full turn is 360° or 2π radians. Convert: radians = degrees × (π/180); degrees = radians × (180/π). Common: 180° = π, 90° = π/2, 45° = π/4, 30° = π/6, 60° = π/3.",
+          "code": "90° = π/2 rad\n60° = π/3 rad\nπ rad = 180°"
+        },
+        {
+          "h": "Coterminal angles",
+          "p": "Angles that share the same terminal side differ by full turns: θ and θ + 360°k (or + 2πk) for integer k. Example: 30° and 390° are coterminal."
+        },
+        {
+          "h": "Reference angle",
+          "p": "The acute angle between the terminal side and the x-axis. It helps evaluate trig functions of angles outside the first quadrant."
+        }
+      ],
+      "summary": "Degrees, radians and coterminal angles.",
+      "practice": [
+        {
+          "why": "Quarter turn of 2π.",
+          "options": ["π/2", "π", "π/4", "2π"],
+          "q": "90° in radians:",
+          "answer": "π/2"
+        },
+        {
+          "why": "Half turn.",
+          "options": ["180°", "90°", "360°", "45°"],
+          "q": "π radians in degrees:",
+          "answer": "180°"
+        },
+        {
+          "why": "60 × π/180 = π/3.",
+          "options": ["π/3", "π/6", "π/4", "2π/3"],
+          "q": "60° in radians:",
+          "answer": "π/3"
+        },
+        {
+          "why": "30 + 360 = 390.",
+          "options": ["390°", "60°", "150°", "−30° only"],
+          "q": "An angle coterminal with 30°:",
+          "answer": "390°"
+        },
+        {
+          "why": "Or 360°.",
+          "options": ["2π radians", "π radians", "1 radian", "180 radians"],
+          "q": "A full turn equals:",
+          "answer": "2π radians"
+        },
+        {
+          "why": "Standard convention.",
+          "options": ["Counterclockwise", "Clockwise", "Only upward", "Randomly"],
+          "q": "Positive angles in standard position rotate:",
+          "answer": "Counterclockwise"
+        }
+      ]
+    },
+    {
+      "id": "right-triangles",
+      "title": "Right-triangle trig",
+      "sections": [
+        {
+          "p": "In a right triangle, for an acute angle θ: opposite side faces θ; adjacent is next to θ (not the hypotenuse); hypotenuse is the longest side (opposite the right angle)."
+        },
+        {
+          "h": "Definitions",
+          "p": "sin θ = opposite/hypotenuse; cos θ = adjacent/hypotenuse; tan θ = opposite/adjacent. Memory aid: <b>SOH-CAH-TOA</b>.",
+          "code": "sin θ = opp/hyp\ncos θ = adj/hyp\ntan θ = opp/adj"
+        },
+        {
+          "h": "Special triangles",
+          "p": "45°-45°-90°: legs equal; hyp = leg√2. 30°-60°-90°: sides 1 : √3 : 2 (opposite 30°, opposite 60°, hypotenuse).",
+          "code": "sin 30° = 1/2,  cos 30° = √3/2,  tan 30° = 1/√3\nsin 45° = √2/2, cos 45° = √2/2, tan 45° = 1\nsin 60° = √3/2, cos 60° = 1/2,  tan 60° = √3"
+        },
+        {
+          "h": "Solving a side",
+          "p": "If you know one acute angle and one side, pick the ratio that links the known side to the unknown and solve."
+        }
+      ],
+      "summary": "SOH-CAH-TOA: sine, cosine, tangent of acute angles.",
+      "practice": [
+        {
+          "why": "SOH.",
+          "options": ["opp/hyp", "adj/hyp", "opp/adj", "hyp/opp"],
+          "q": "sin θ = ?",
+          "answer": "opp/hyp"
+        },
+        {
+          "why": "Standard 30-60-90 value.",
+          "options": ["1/2", "√3/2", "1", "0"],
+          "q": "cos 60° =",
+          "answer": "1/2"
+        },
+        {
+          "why": "Opposite equals adjacent in 45-45-90.",
+          "options": ["1", "0", "√2", "√3"],
+          "q": "tan 45° =",
+          "answer": "1"
+        },
+        {
+          "why": "Opposite/hyp = 1/2.",
+          "options": ["1/2", "√3/2", "√2/2", "1"],
+          "q": "sin 30° =",
+          "answer": "1/2"
+        },
+        {
+          "why": "Longest side.",
+          "options": ["Hypotenuse", "Adjacent", "Altitude only", "Median"],
+          "q": "In a right triangle, the side opposite 90° is the:",
+          "answer": "Hypotenuse"
+        },
+        {
+          "why": "opp/hyp.",
+          "options": ["3/5", "4/5", "3/4", "5/3"],
+          "q": "If opp=3, adj=4, hyp=5, then sin θ =",
+          "answer": "3/5"
+        },
+        {
+          "why": "(opp/hyp)/(adj/hyp)=opp/adj.",
+          "options": ["cos θ", "sin θ", "1", "hyp"],
+          "q": "tan θ = sin θ / ?",
+          "answer": "cos θ"
+        }
+      ]
+    },
+    {
+      "id": "unit-circle",
+      "title": "The unit circle",
+      "sections": [
+        {
+          "p": "The <b>unit circle</b> is x² + y² = 1. For angle θ in standard position, the terminal ray meets the circle at (cos θ, sin θ). That defines sine and cosine for all real θ, not only acute angles."
+        },
+        {
+          "h": "Quadrants and signs",
+          "p": "QI: sin+, cos+. QII: sin+, cos−. QIII: sin−, cos−. QIV: sin−, cos+. Tangent is sin/cos where cos ≠ 0."
+        },
+        {
+          "h": "Key points",
+          "code": "0:   (1, 0)      → cos=1, sin=0\nπ/2: (0, 1)      → cos=0, sin=1\nπ:   (−1, 0)     → cos=−1, sin=0\n3π/2:(0, −1)     → cos=0, sin=−1\nπ/4: (√2/2, √2/2)"
+        },
+        {
+          "h": "Pythagorean identity",
+          "p": "Because the point lies on the circle: cos²θ + sin²θ = 1 for all θ."
+        }
+      ],
+      "summary": "Extending sine and cosine to any angle via a circle of radius 1.",
+      "practice": [
+        {
+          "why": "Point is (cos θ, sin θ).",
+          "options": ["sin θ", "cos θ", "tan θ", "θ"],
+          "q": "On the unit circle, the y-coordinate is:",
+          "answer": "sin θ"
+        },
+        {
+          "why": "Point (−1, 0).",
+          "options": ["−1", "1", "0", "π"],
+          "q": "cos π =",
+          "answer": "−1"
+        },
+        {
+          "why": "Point (0, 1).",
+          "options": ["1", "0", "−1", "1/2"],
+          "q": "sin(π/2) =",
+          "answer": "1"
+        },
+        {
+          "why": "x-coordinates are negative.",
+          "options": ["Negative", "Positive", "Zero always", "Undefined"],
+          "q": "In QII, cosine is:",
+          "answer": "Negative"
+        },
+        {
+          "why": "Unit circle identity.",
+          "options": ["1", "0", "θ", "2"],
+          "q": "cos²θ + sin²θ =",
+          "answer": "1"
+        },
+        {
+          "why": "45° point on the unit circle.",
+          "options": ["√2/2", "1/2", "√3/2", "0"],
+          "q": "cos(π/4) =",
+          "answer": "√2/2"
+        }
+      ]
+    },
+    {
+      "id": "sine-cosine-graphs",
+      "title": "Sine and cosine graphs",
+      "sections": [
+        {
+          "p": "y = sin x oscillates between −1 and 1 with period 2π, starting at 0. y = cos x is the same wave shifted left by π/2 (starts at 1)."
+        },
+        {
+          "h": "Transformations",
+          "p": "For y = A sin(Bx − C) + D (B > 0): |A| is <b>amplitude</b>; period is 2π/B; phase shift is C/B; vertical shift is D.",
+          "code": "y = 3 sin(2x)\namplitude 3, period 2π/2 = π"
+        },
+        {
+          "h": "Reading a graph",
+          "p": "Amplitude is half the distance from max to min. Period is the horizontal length of one full cycle. Midline is the horizontal line through the middle (value D)."
+        },
+        {
+          "h": "Cosine vs sine",
+          "p": "cos x = sin(x + π/2). Same shape; different starting point on a cycle."
+        }
+      ],
+      "summary": "Amplitude, period, shifts of y = A sin(Bx − C) + D.",
+      "practice": [
+        {
+          "why": "|A|=3.",
+          "options": ["3", "1", "π", "6"],
+          "q": "Amplitude of y = 3 sin x:",
+          "answer": "3"
+        },
+        {
+          "why": "2π/B = 2π/2 = π.",
+          "options": ["π", "2π", "4π", "2"],
+          "q": "Period of y = sin(2x):",
+          "answer": "π"
+        },
+        {
+          "why": "Unit circle y- and x-coords stay in [−1,1]; cosine is the x-coord.",
+          "options": ["[−1, 1]", "[0, 1]", "All reals", "[0, 2π]"],
+          "q": "Range of y = cos x:",
+          "answer": "[−1, 1]"
+        },
+        {
+          "why": "Vertical shift D=2.",
+          "options": ["y = 2", "y = 0", "y = 1", "x = 2"],
+          "q": "y = sin x + 2 has midline:",
+          "answer": "y = 2"
+        },
+        {
+          "why": "One full turn on the unit circle.",
+          "options": ["2π", "π", "π/2", "1"],
+          "q": "Period of basic y = cos x:",
+          "answer": "2π"
+        },
+        {
+          "why": "Horizontal stretch/compression by B.",
+          "options": ["2π/B", "2πB", "B", "A"],
+          "q": "For y = A sin(Bx), period equals:",
+          "answer": "2π/B"
+        },
+        {
+          "why": "−2 times cos reaches −2×(−1)=2.",
+          "options": ["2", "−2", "1", "0"],
+          "q": "Max of y = −2 cos x:",
+          "answer": "2"
+        }
+      ]
+    },
+    {
+      "id": "tangent-graph",
+      "title": "Tangent and its graph",
+      "sections": [
+        {
+          "p": "tan θ = sin θ / cos θ wherever cos θ ≠ 0. On the unit circle that is where x ≠ 0, i.e. θ ≠ π/2 + πk."
+        },
+        {
+          "h": "Period and asymptotes",
+          "p": "Tangent has period π (not 2π). Vertical asymptotes where cosine is zero. Between −π/2 and π/2, tan goes from −∞ to ∞, passing through 0 at 0."
+        },
+        {
+          "h": "Key values",
+          "code": "tan 0 = 0\ntan(π/4) = 1\ntan(π/6) = 1/√3\ntan(π/3) = √3\ntan(π/2) undefined"
+        },
+        {
+          "h": "Odd function",
+          "p": "tan(−θ) = −tan θ. The graph is rotationally symmetric about the origin."
+        }
+      ],
+      "summary": "tan θ = sin θ/cos θ; period π and vertical asymptotes.",
+      "practice": [
+        {
+          "why": "Definition.",
+          "options": ["sin θ / cos θ", "cos θ / sin θ", "sin θ × cos θ", "1/sin θ"],
+          "q": "tan θ =",
+          "answer": "sin θ / cos θ"
+        },
+        {
+          "why": "Repeats every π.",
+          "options": ["π", "2π", "π/2", "1"],
+          "q": "Period of y = tan x:",
+          "answer": "π"
+        },
+        {
+          "why": "sin and cos equal at π/4.",
+          "options": ["1", "0", "√3", "Undefined"],
+          "q": "tan(π/4) =",
+          "answer": "1"
+        },
+        {
+          "why": "cos(π/2)=0.",
+          "options": ["Undefined", "0", "1", "−1"],
+          "q": "tan(π/2) is:",
+          "answer": "Undefined"
+        },
+        {
+          "why": "Odd function.",
+          "options": ["−tan θ", "tan θ", "1/tan θ", "cot θ only"],
+          "q": "tan(−θ) equals:",
+          "answer": "−tan θ"
+        },
+        {
+          "why": "Division by zero in sin/cos.",
+          "options": ["cos x = 0", "sin x = 0", "tan x = 0", "x = 0"],
+          "q": "Asymptotes of tan x occur when:",
+          "answer": "cos x = 0"
+        }
+      ]
+    },
+    {
+      "id": "identities",
+      "title": "Identities introduction",
+      "sections": [
+        {
+          "p": "An <b>identity</b> is an equation true for all allowed values of the variable. Trig identities rewrite expressions without changing values — useful for simplifying and solving equations."
+        },
+        {
+          "h": "Pythagorean family",
+          "p": "cos²θ + sin²θ = 1. Divide by cos²θ: 1 + tan²θ = sec²θ. Divide by sin²θ: cot²θ + 1 = csc²θ."
+        },
+        {
+          "h": "Reciprocal and quotient",
+          "code": "csc θ = 1/sin θ\nsec θ = 1/cos θ\ncot θ = 1/tan θ = cos θ/sin θ\ntan θ = sin θ/cos θ"
+        },
+        {
+          "h": "Even/odd",
+          "p": "cos(−θ) = cos θ (even). sin(−θ) = −sin θ and tan(−θ) = −tan θ (odd)."
+        },
+        {
+          "h": "A simplification",
+          "code": "(1 − cos²θ)/sin θ = sin²θ / sin θ = sin θ   (sin θ ≠ 0)"
+        }
+      ],
+      "summary": "Pythagorean and reciprocal identities; simple rewrites.",
+      "practice": [
+        {
+          "why": "Fundamental Pythagorean identity.",
+          "options": ["1", "0", "tan θ", "2"],
+          "q": "cos²θ + sin²θ =",
+          "answer": "1"
+        },
+        {
+          "why": "Reciprocal of cosine.",
+          "options": ["1/cos θ", "1/sin θ", "sin/cos", "cos/sin"],
+          "q": "sec θ =",
+          "answer": "1/cos θ"
+        },
+        {
+          "why": "Divide Pythagorean by cos²θ.",
+          "options": ["sec²θ", "csc²θ", "cos²θ", "1"],
+          "q": "1 + tan²θ =",
+          "answer": "sec²θ"
+        },
+        {
+          "why": "Sine is odd.",
+          "options": ["−sin θ", "sin θ", "cos θ", "1/sin θ"],
+          "q": "sin(−θ) =",
+          "answer": "−sin θ"
+        },
+        {
+          "why": "Cosine is even.",
+          "options": ["cos θ", "−cos θ", "sin θ", "sec θ"],
+          "q": "cos(−θ) =",
+          "answer": "cos θ"
+        },
+        {
+          "why": "1/sin θ.",
+          "options": ["sin θ = 0", "cos θ = 0", "tan θ = 1", "θ = π/4"],
+          "q": "csc θ is undefined when:",
+          "answer": "sin θ = 0"
+        },
+        {
+          "why": "Rearrange Pythagorean.",
+          "options": ["sin²θ", "tan²θ", "sec²θ", "1"],
+          "q": "(1 − cos²θ) equals:",
+          "answer": "sin²θ"
+        }
+      ]
+    },
+    {
+      "id": "solving-triangles",
+      "title": "Solving triangles",
+      "sections": [
+        {
+          "p": "<b>Solving a triangle</b> means finding all unknown sides and angles. For right triangles, SOH-CAH-TOA plus the fact that acute angles sum to 90° is enough when you know two pieces of data (with at least one side)."
+        },
+        {
+          "h": "Law of Sines",
+          "p": "In any triangle: a/sin A = b/sin B = c/sin C. Useful for ASA, AAS and sometimes SSA (ambiguous case).",
+          "code": "a/sin A = b/sin B\nIf A=30°, a=5, B=40°:\nb = 5 × sin40° / sin30°"
+        },
+        {
+          "h": "Law of Cosines",
+          "p": "c² = a² + b² − 2ab cos C. Generalizes Pythagoras (when C=90°, cos C=0). Useful for SAS and SSS.",
+          "code": "If a=3, b=4, C=60°:\nc² = 9 + 16 − 2·3·4·cos60° = 25 − 12 = 13\nc = √13"
+        },
+        {
+          "h": "Angle sum",
+          "p": "In any Euclidean triangle, A + B + C = 180°. Once two angles are known, the third is determined."
+        }
+      ],
+      "summary": "Right triangles with trig; Law of Sines and Cosines for oblique triangles.",
+      "practice": [
+        {
+          "why": "Total 180° minus the right angle.",
+          "options": ["90°", "180°", "45°", "360°"],
+          "q": "In a right triangle, the two acute angles sum to:",
+          "answer": "90°"
+        },
+        {
+          "why": "Common ratio of side to sine of opposite angle.",
+          "options": ["b/sin B", "b/sin A", "sin B / b", "a/b"],
+          "q": "Law of Sines says a/sin A equals:",
+          "answer": "b/sin B"
+        },
+        {
+          "why": "cos 90° = 0; Pythagoras.",
+          "options": ["c² = a² + b²", "c² = a² − b²", "c = a + b", "c² = 2ab"],
+          "q": "When C = 90°, Law of Cosines becomes:",
+          "answer": "c² = a² + b²"
+        },
+        {
+          "why": "Two sides and included angle feed c² = a²+b²−2ab cos C.",
+          "options": ["SAS", "AAA only", "Two angles only", "No sides known"],
+          "q": "Law of Cosines is a natural fit for:",
+          "answer": "SAS"
+        },
+        {
+          "why": "Euclidean geometry.",
+          "options": ["180°", "90°", "360°", "100°"],
+          "q": "Angles in any triangle sum to:",
+          "answer": "180°"
+        },
+        {
+          "why": "9+16−24·(1/2)=25−12=13.",
+          "options": ["13", "25", "7", "12"],
+          "q": "If a=3, b=4, C=60°, then c² =",
+          "answer": "13"
+        }
+      ]
+    },
+    {
+      "id": "applications",
+      "title": "Applications",
+      "sections": [
+        {
+          "p": "Trig shows up wherever angles meet lengths: surveying, navigation, ramps, and waves. The same ratios apply; only the story changes."
+        },
+        {
+          "h": "Height via angle of elevation",
+          "p": "From a point d meters from a tree base, the angle of elevation to the top is θ. Height h = d tan θ (level ground).",
+          "code": "d = 20 m, θ = 30°\nh = 20 × tan30° = 20/√3 ≈ 11.5 m"
+        },
+        {
+          "h": "Angle of depression",
+          "p": "Looking down from a height, the angle below horizontal equals the elevation angle in the right triangle formed with the ground (alternate interior angles with a transversal)."
+        },
+        {
+          "h": "Waves (preview)",
+          "p": "A vertical displacement like y = A sin(ωt) models simple oscillation: amplitude A, angular frequency ω. Period T = 2π/ω. This links the sine graph lesson to physics."
+        }
+      ],
+      "summary": "Heights, bearings and simple harmonic ideas.",
+      "practice": [
+        {
+          "why": "opp = adj × tan.",
+          "options": ["h = d tan θ", "h = d sin θ", "h = d / tan θ", "h = d cos θ"],
+          "q": "Height h from distance d and elevation θ:",
+          "answer": "h = d tan θ"
+        },
+        {
+          "why": "tan30°=1/√3.",
+          "options": ["20/√3", "20√3", "10", "20"],
+          "q": "If d=20 and θ=30°, h = 20 × tan30° =",
+          "answer": "20/√3"
+        },
+        {
+          "why": "Same as period 2π/B with B=ω.",
+          "options": ["2π/ω", "ω/2π", "A", "2πω"],
+          "q": "Period of y = A sin(ωt) is:",
+          "answer": "2π/ω"
+        },
+        {
+          "why": "Standard surveying definition.",
+          "options": [
+            "Horizontal up to the line of sight",
+            "Vertical down",
+            "The hypotenuse only",
+            "True north always"
+          ],
+          "q": "Angle of elevation is measured from:",
+          "answer": "Horizontal up to the line of sight"
+        },
+        {
+          "why": "|A|=4.",
+          "options": ["4", "3", "12", "2π/3"],
+          "q": "Amplitude in y = 4 sin(3t) is:",
+          "answer": "4"
+        },
+        {
+          "why": "sin = opp/hyp.",
+          "options": ["hyp × sin θ", "hyp × cos θ", "hyp × tan θ", "hyp / sin θ"],
+          "q": "If you know hyp and an acute angle, opposite side is:",
+          "answer": "hyp × sin θ"
+        }
+      ]
+    }
+  ],
+  "id": "trigonometry",
+  "schema": "math-course@1"
+}
