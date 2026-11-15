@@ -33,6 +33,7 @@ only imported when its license fits that.
 | David Morgan-Mar, Piet | Colour command table and language shape taught in `programming/piet/` (course text written for this project; not a copy of the Piet specification) | Referenced for the published language shape; course text is original under this repo's license | https://www.dangermouse.net/esoteric/piet.html |
 | Edwin Brady and Chris Morris, Whitespace | Instruction groups and language shape taught in `programming/whitespace/` (course text written for this project; not a copy of the Whitespace specification) | Referenced for the published language shape; course text is original under this repo's license | https://web.archive.org/web/20150618184706/http://compsoc.dur.ac.uk/whitespace/tutorial.html |
 | Urban Müller, brainfuck (1993) | Eight-command tape machine taught in `programming/brainfood/` under the Desk's kid-friendly name brainFOOD (course text written for this project; not a copy of any brainfuck implementation) | Referenced for the published language shape; course text is original under this repo's license | https://esolangs.org/wiki/Brainfuck |
+| Adam Lindsay / LOLCODE 1.2 | Language shape taught in `programming/lolcode/` (course text written for this project; not a copy of the LOLCODE specification) | Referenced for the published language shape; course text is original under this repo's license | https://github.com/justinmeza/lolcode-spec/blob/master/v1.2/lolcode-spec-v1.2.md |
 
 Content written for this project is marked as original in its file and isn't
 listed here.

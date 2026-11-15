@@ -1,0 +1,1040 @@
+{
+  "schema": "programming-course@1",
+  "id": "lolcode",
+  "name": "LOLCODE",
+  "title": "LOLCODE 1.2",
+  "intro": "LOLCODE was made in 2007 as a joke about lolcat captions, but it is a complete language with variables, loops, functions and a written specification (version 1.2). Under the silly words it works much like a small scripting language, which makes it a fun way to practise ideas you already know, or to meet them for the first time. To run code yourself, build the <code>lci</code> interpreter from its source (github.com/justinmeza/lci), save a program in a file ending in <code>.lol</code> and run <code>lci file.lol</code>. Every example shows exactly what it prints.",
+  "comment": "BTW",
+  "keywords": [
+    "HAI",
+    "KTHXBYE",
+    "CAN",
+    "HAS",
+    "I",
+    "A",
+    "ITZ",
+    "R",
+    "VISIBLE",
+    "GIMMEH",
+    "O",
+    "RLY?",
+    "RLY",
+    "YA",
+    "NO",
+    "WAI",
+    "MEBBE",
+    "OIC",
+    "WTF?",
+    "OMG",
+    "OMGWTF",
+    "GTFO",
+    "IM",
+    "IN",
+    "YR",
+    "OUTTA",
+    "UPPIN",
+    "NERFIN",
+    "TIL",
+    "WILE",
+    "HOW",
+    "IZ",
+    "IF",
+    "U",
+    "SAY",
+    "SO",
+    "FOUND",
+    "AN",
+    "MKAY",
+    "NOT",
+    "BOTH",
+    "SAEM",
+    "DIFFRINT",
+    "EITHER",
+    "OF",
+    "WON",
+    "ALL",
+    "ANY",
+    "SUM",
+    "DIFF",
+    "PRODUKT",
+    "QUOSHUNT",
+    "MOD",
+    "BIGGR",
+    "SMALLR",
+    "SMOOSH",
+    "MAEK",
+    "IS",
+    "NOW",
+    "WIN",
+    "FAIL",
+    "NOOB",
+    "YARN",
+    "NUMBR",
+    "NUMBAR",
+    "TROOF",
+    "OBTW",
+    "TLDR"
+  ],
+  "builtins": ["IT"],
+  "lessons": [
+    {
+      "id": "basics",
+      "title": "HAI and VISIBLE",
+      "summary": "Program bounds, printing, comments and special characters.",
+      "sections": [
+        {
+          "p": "Every program starts with <code>HAI 1.2</code> (the version) and ends with <code>KTHXBYE</code>. <code>VISIBLE</code> prints and then starts a new line. <code>BTW</code> starts a comment that runs to the end of the line.",
+          "code": "HAI 1.2\nBTW this is a comment\nVISIBLE \"OH HAI\"\nVISIBLE \"I CAN HAS CHEEZBURGER?\"\nKTHXBYE",
+          "out": "OH HAI\nI CAN HAS CHEEZBURGER?"
+        },
+        {
+          "h": "Several things in one line",
+          "p": "Give <code>VISIBLE</code> several values and it prints them one after another with nothing in between, so put any spaces inside the quotes. A <code>!</code> at the very end stops the new line, so the next <code>VISIBLE</code> carries on the same line.",
+          "code": "HAI 1.2\nVISIBLE \"NUTZ = \" 3\nVISIBLE \"SQUIR\"!\nVISIBLE \"REL\"\nKTHXBYE",
+          "out": "NUTZ = 3\nSQUIRREL"
+        },
+        {
+          "h": "Long comments",
+          "p": "<code>OBTW</code> starts a comment that can cover many lines, and <code>TLDR</code> (“too long, didn't read”) ends it.",
+          "code": "HAI 1.2\nOBTW\n  This whole part is ignored.\n  Even this line.\nTLDR\nVISIBLE \"STILL HERE\"\nKTHXBYE",
+          "out": "STILL HERE"
+        },
+        {
+          "h": "Special characters",
+          "p": "Inside a string the colon is the escape character. <code>:)</code> is a new line, <code>:&gt;</code> a tab, <code>:\"</code> a double quote and <code>::</code> a colon.",
+          "code": "HAI 1.2\nVISIBLE \"ONE:)TWO\"\nVISIBLE \"SHE SED :\"HAI:\"\"\nVISIBLE \"TIME:: 3 OCLOCK\"\nKTHXBYE",
+          "out": "ONE\nTWO\nSHE SED \"HAI\"\nTIME: 3 OCLOCK"
+        },
+        {
+          "h": "Commas join lines",
+          "p": "A comma works like a line break, so short statements can share a line.",
+          "code": "HAI 1.2\nVISIBLE \"A\", VISIBLE \"B\"\nKTHXBYE",
+          "out": "A\nB"
+        }
+      ],
+      "practice": [
+        {
+          "q": "Which line prints KITTEH?",
+          "options": [
+            "VISIBLE \"KITTEH\"",
+            "PRINT \"KITTEH\"",
+            "GIMMEH \"KITTEH\"",
+            "SAY \"KITTEH\""
+          ],
+          "answer": "VISIBLE \"KITTEH\"",
+          "why": "VISIBLE is LOLCODE's print."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE \"UP\" \"TREE\"\nKTHXBYE",
+          "options": ["UPTREE", "UP TREE", "UP\nTREE", "\"UP\" \"TREE\""],
+          "answer": "UPTREE",
+          "why": "VISIBLE joins its values with nothing in between."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE \"HAI\"!\nVISIBLE \"2U\"\nKTHXBYE",
+          "options": ["HAI2U", "HAI\n2U", "HAI!\n2U", "HAI! 2U"],
+          "answer": "HAI2U",
+          "why": "The ! at the end stops the new line, so 2U follows straight on."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nBTW VISIBLE \"SECRET\"\nVISIBLE \"PUBLIC\"\nKTHXBYE",
+          "options": ["PUBLIC", "SECRET\nPUBLIC", "SECRET", "Nothing"],
+          "answer": "PUBLIC",
+          "why": "The first line is a comment, so it never runs."
+        },
+        {
+          "q": "How do you put a new line inside a string?",
+          "options": [":)", "\\n", ":>", "::"],
+          "answer": ":)",
+          "why": "The colon is LOLCODE's escape character, and :) means a new line."
+        },
+        {
+          "q": "Which word ends a multi-line comment?",
+          "options": ["TLDR", "OBTW", "BTW", "KTHXBYE"],
+          "answer": "TLDR",
+          "why": "OBTW opens the comment and TLDR closes it."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE \"ONE:)TWO\"\nKTHXBYE",
+          "options": ["ONE\nTWO", "ONE:)TWO", "ONETWO", "ONE TWO"],
+          "answer": "ONE\nTWO",
+          "why": ":) inside a string is a new line."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE \"A\", VISIBLE \"B\", VISIBLE \"C\"\nKTHXBYE",
+          "options": ["A\nB\nC", "ABC", "A B C", "A,B,C"],
+          "answer": "A\nB\nC",
+          "why": "A comma acts like a line break, so each VISIBLE runs on its own."
+        },
+        {
+          "q": "What does a ! at the end of VISIBLE do?",
+          "options": [
+            "Stops the new line so the next print continues on the same line",
+            "Prints an exclamation mark",
+            "Ends the program",
+            "Starts a comment"
+          ],
+          "answer": "Stops the new line so the next print continues on the same line",
+          "why": "Without !, VISIBLE always finishes with a new line."
+        }
+      ]
+    },
+    {
+      "id": "variables",
+      "title": "Variables and types",
+      "summary": "I HAS A, R, the five types and changing between them.",
+      "sections": [
+        {
+          "p": "<code>I HAS A name ITZ value</code> makes a variable; <code>name R value</code> changes it. A variable made without <code>ITZ</code> holds <code>NOOB</code>, which means “nothing yet”.",
+          "code": "HAI 1.2\nI HAS A nuts ITZ 3\nVISIBLE \"I HAS \" nuts \" NUTZ\"\nnuts R 10\nVISIBLE \"NAO I HAS \" nuts \" NUTZ\"\nKTHXBYE",
+          "out": "I HAS 3 NUTZ\nNAO I HAS 10 NUTZ"
+        },
+        {
+          "h": "Five types",
+          "p": "<code>NUMBR</code> is a whole number, <code>NUMBAR</code> a number with a decimal point, <code>YARN</code> text, <code>TROOF</code> is <code>WIN</code> or <code>FAIL</code>, and <code>NOOB</code> is nothing. A variable can hold any type and switch to another later. A <code>NUMBAR</code> is always shown with two decimal places.",
+          "code": "HAI 1.2\nI HAS A n ITZ 42\nI HAS A f ITZ 2.5\nI HAS A s ITZ \"ACORN\"\nI HAS A t ITZ WIN\nVISIBLE n \" \" f \" \" s \" \" t\nKTHXBYE",
+          "out": "42 2.50 ACORN WIN"
+        },
+        {
+          "h": "Putting variables in strings",
+          "p": "<code>:{name}</code> inside a string is replaced by the variable's value. It saves splitting the string into pieces.",
+          "code": "HAI 1.2\nI HAS A who ITZ \"CEILING CAT\"\nVISIBLE \"HAI, :{who}!\"\nKTHXBYE",
+          "out": "HAI, CEILING CAT!"
+        },
+        {
+          "h": "MAEK and IS NOW A",
+          "p": "<code>MAEK value A type</code> gives a copy of the value as another type. <code>name IS NOW A type</code> changes the variable itself. A <code>YARN</code> of digits becomes a number this way, and a <code>NUMBAR</code> made into a <code>NUMBR</code> loses everything after the point.",
+          "code": "HAI 1.2\nI HAS A typed ITZ \"12\"\nI HAS A num ITZ MAEK typed A NUMBR\nVISIBLE SUM OF num AN 1\nI HAS A f ITZ 7.9\nf IS NOW A NUMBR\nVISIBLE f\nKTHXBYE",
+          "out": "13\n7"
+        },
+        {
+          "h": "SMOOSH joins text",
+          "p": "<code>SMOOSH a AN b AN c MKAY</code> joins its values into one <code>YARN</code>. <code>MKAY</code> marks where the list ends.",
+          "code": "HAI 1.2\nI HAS A name ITZ SMOOSH \"SQUIR\" AN \"REL\" MKAY\nVISIBLE name\nVISIBLE SMOOSH name AN \" NO. \" AN 1 MKAY\nKTHXBYE",
+          "out": "SQUIRREL\nSQUIRREL NO. 1"
+        }
+      ],
+      "practice": [
+        {
+          "q": "How do you set an existing variable x to 5?",
+          "options": ["x R 5", "I HAS A x ITZ 5 again", "x ITZ 5", "x = 5"],
+          "answer": "x R 5",
+          "why": "R assigns to a variable that already exists; I HAS A declares a new one."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nI HAS A x ITZ 1\nx R 7\nVISIBLE x\nKTHXBYE",
+          "options": ["7", "1", "17", "x"],
+          "answer": "7",
+          "why": "R replaces the value, so x holds 7 when it is printed."
+        },
+        {
+          "q": "What does a variable hold after I HAS A thing?",
+          "options": ["NOOB", "0", "\"\"", "FAIL"],
+          "answer": "NOOB",
+          "why": "Without ITZ there is no value yet, which LOLCODE calls NOOB."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE 3.5\nKTHXBYE",
+          "options": ["3.50", "3.5", "3", "4"],
+          "answer": "3.50",
+          "why": "A NUMBAR is shown with two decimal places."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nI HAS A pet ITZ \"KITTEH\"\nVISIBLE \"MAH :{pet}\"\nKTHXBYE",
+          "options": ["MAH KITTEH", "MAH :{pet}", "MAH pet", "MAH"],
+          "answer": "MAH KITTEH",
+          "why": ":{pet} is swapped for the value of pet."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE SMOOSH \"A\" AN 1 AN \"B\" MKAY\nKTHXBYE",
+          "options": ["A1B", "A 1 B", "2", "A1"],
+          "answer": "A1B",
+          "why": "SMOOSH turns each value into text and joins them with nothing between."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nI HAS A n ITZ 5\nn IS NOW A YARN\nVISIBLE SMOOSH n AN \"!\" MKAY\nKTHXBYE",
+          "options": ["5!", "5", "!", "NOOB!"],
+          "answer": "5!",
+          "why": "IS NOW A YARN changes n itself; SMOOSH then joins it with \"!\"."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nI HAS A typed ITZ \"9\"\nVISIBLE MAEK typed A NUMBR\nKTHXBYE",
+          "options": ["9", "\"9\"", "9.00", "NOOB"],
+          "answer": "9",
+          "why": "MAEK gives a NUMBR copy of the digit string; VISIBLE shows 9."
+        },
+        {
+          "q": "What does MKAY mark?",
+          "options": [
+            "The end of a SMOOSH (or ALL OF / ANY OF) list",
+            "The end of the program",
+            "A comment",
+            "A new variable"
+          ],
+          "answer": "The end of a SMOOSH (or ALL OF / ANY OF) list",
+          "why": "Variable-length operator lists need MKAY so LOLCODE knows where they stop."
+        }
+      ]
+    },
+    {
+      "id": "maths",
+      "title": "Maths",
+      "summary": "Operators that come first, whole and decimal numbers, nesting.",
+      "sections": [
+        {
+          "p": "Operators come before their two values, joined by <code>AN</code>: <code>SUM OF</code>, <code>DIFF OF</code>, <code>PRODUKT OF</code>, <code>QUOSHUNT OF</code>, <code>MOD OF</code> (remainder), <code>BIGGR OF</code> and <code>SMALLR OF</code>.",
+          "code": "HAI 1.2\nVISIBLE SUM OF 7 AN 3\nVISIBLE DIFF OF 7 AN 3\nVISIBLE PRODUKT OF 7 AN 3\nVISIBLE QUOSHUNT OF 7 AN 3\nVISIBLE MOD OF 7 AN 3\nVISIBLE BIGGR OF 7 AN 3\nKTHXBYE",
+          "out": "10\n4\n21\n2\n1\n7"
+        },
+        {
+          "h": "Whole or decimal",
+          "p": "Two <code>NUMBR</code>s give a <code>NUMBR</code>, so <code>QUOSHUNT OF 7 AN 2</code> is 3: the remainder is dropped. If either side is a <code>NUMBAR</code>, the answer is a <code>NUMBAR</code>.",
+          "code": "HAI 1.2\nVISIBLE QUOSHUNT OF 7 AN 2\nVISIBLE QUOSHUNT OF 7.0 AN 2\nVISIBLE SUM OF 1 AN 0.25\nKTHXBYE",
+          "out": "3\n3.50\n1.25"
+        },
+        {
+          "h": "Nesting",
+          "p": "An operator can be the value of another. Read from the left: the outer operator waits for both of its values to be worked out. There are no brackets and no precedence to learn.",
+          "code": "HAI 1.2\nVISIBLE PRODUKT OF SUM OF 2 AN 3 AN 4\nVISIBLE SUM OF 2 AN PRODUKT OF 3 AN 4\nKTHXBYE",
+          "out": "20\n14"
+        },
+        {
+          "h": "Changing a variable",
+          "p": "To add to a variable, assign the sum back to it. Text that holds a number is turned into one when maths needs it.",
+          "code": "HAI 1.2\nI HAS A score ITZ 10\nscore R SUM OF score AN 5\nscore R PRODUKT OF score AN 2\nVISIBLE score\nVISIBLE SUM OF \"4\" AN 4\nKTHXBYE",
+          "out": "30\n8"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What is DIFF OF 10 AN 4?",
+          "options": ["6", "14", "40", "-6"],
+          "answer": "6",
+          "why": "DIFF OF subtracts the second value from the first."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE QUOSHUNT OF 9 AN 2\nKTHXBYE",
+          "options": ["4", "4.50", "4.5", "5"],
+          "answer": "4",
+          "why": "Both values are NUMBRs, so the answer is a NUMBR and the remainder is dropped."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE MOD OF 17 AN 5\nKTHXBYE",
+          "options": ["2", "3", "12", "85"],
+          "answer": "2",
+          "why": "17 is 3 × 5 with 2 left over."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE DIFF OF PRODUKT OF 3 AN 3 AN 1\nKTHXBYE",
+          "options": ["8", "6", "9", "2"],
+          "answer": "8",
+          "why": "The first value of DIFF OF is PRODUKT OF 3 AN 3, which is 9; 9 − 1 = 8."
+        },
+        {
+          "q": "What does BIGGR OF 3 AN 8 give?",
+          "options": ["8", "3", "11", "WIN"],
+          "answer": "8",
+          "why": "BIGGR OF returns the larger of the two."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE SUM OF 1.5 AN 1\nKTHXBYE",
+          "options": ["2.50", "2", "2.5", "3"],
+          "answer": "2.50",
+          "why": "One side is a NUMBAR, so the sum is a NUMBAR, shown with two decimal places."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE PRODUKT OF 5 AN SUM OF 1 AN 1\nKTHXBYE",
+          "options": ["10", "6", "7", "51"],
+          "answer": "10",
+          "why": "The second value of PRODUKT OF is SUM OF 1 AN 1, which is 2; 5 × 2 = 10."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE SMALLR OF 9 AN 2\nKTHXBYE",
+          "options": ["2", "9", "7", "11"],
+          "answer": "2",
+          "why": "SMALLR OF returns the lesser of the two."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE QUOSHUNT OF 9.0 AN 2\nKTHXBYE",
+          "options": ["4.50", "4", "4.5", "5"],
+          "answer": "4.50",
+          "why": "One side is a NUMBAR, so the quotient is a NUMBAR shown with two decimal places."
+        }
+      ]
+    },
+    {
+      "id": "troofs",
+      "title": "TROOFs and comparisons",
+      "summary": "WIN and FAIL, comparing values, and the IT variable.",
+      "sections": [
+        {
+          "p": "<code>BOTH SAEM a AN b</code> is <code>WIN</code> when the values are equal; <code>DIFFRINT a AN b</code> is <code>WIN</code> when they differ. There is no “greater than”: instead ask whether a value is the same as the bigger of the two.",
+          "code": "HAI 1.2\nVISIBLE BOTH SAEM 4 AN 4\nVISIBLE DIFFRINT 4 AN 5\nI HAS A x ITZ 9\nVISIBLE BOTH SAEM x AN BIGGR OF x AN 5\nKTHXBYE",
+          "out": "WIN\nWIN\nWIN"
+        },
+        {
+          "h": "Types matter",
+          "p": "<code>BOTH SAEM</code> does not turn text into numbers, so the <code>YARN</code> <code>\"3\"</code> is not the same as the <code>NUMBR</code> 3. A <code>NUMBR</code> and a <code>NUMBAR</code> with the same value are equal.",
+          "code": "HAI 1.2\nVISIBLE BOTH SAEM 3 AN \"3\"\nVISIBLE BOTH SAEM 3 AN 3.0\nKTHXBYE",
+          "out": "FAIL\nWIN"
+        },
+        {
+          "h": "AND, OR, NOT",
+          "p": "<code>BOTH OF</code> is “and”, <code>EITHER OF</code> is “or”, <code>WON OF</code> is “one but not both”, and <code>NOT</code> flips a value. <code>ALL OF ... MKAY</code> and <code>ANY OF ... MKAY</code> take a whole list.",
+          "code": "HAI 1.2\nVISIBLE BOTH OF WIN AN FAIL\nVISIBLE EITHER OF WIN AN FAIL\nVISIBLE WON OF WIN AN WIN\nVISIBLE NOT FAIL\nVISIBLE ALL OF WIN AN WIN AN FAIL MKAY\nKTHXBYE",
+          "out": "FAIL\nWIN\nFAIL\nWIN\nFAIL"
+        },
+        {
+          "h": "Truthy values",
+          "p": "When a <code>TROOF</code> is needed, other values are turned into one: 0, 0.0, the empty string <code>\"\"</code> and <code>NOOB</code> are <code>FAIL</code>; everything else is <code>WIN</code>.",
+          "code": "HAI 1.2\nVISIBLE NOT 0\nVISIBLE NOT \"\"\nVISIBLE NOT \"FAIL\"\nKTHXBYE",
+          "out": "WIN\nWIN\nFAIL"
+        },
+        {
+          "h": "IT",
+          "p": "A line that is just a value, with no <code>VISIBLE</code> or <code>R</code>, stores that value in a special variable called <code>IT</code>. The decisions in the next lessons look at <code>IT</code>.",
+          "code": "HAI 1.2\nSUM OF 20 AN 22\nVISIBLE IT\nKTHXBYE",
+          "out": "42"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE DIFFRINT 2 AN 2\nKTHXBYE",
+          "options": ["FAIL", "WIN", "0", "2"],
+          "answer": "FAIL",
+          "why": "The values are the same, so DIFFRINT is FAIL."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE BOTH SAEM \"7\" AN 7\nKTHXBYE",
+          "options": ["FAIL", "WIN", "7", "NOOB"],
+          "answer": "FAIL",
+          "why": "A YARN and a NUMBR are different types, so they are not the same."
+        },
+        {
+          "q": "How do you ask whether x is at least 10?",
+          "options": [
+            "BOTH SAEM x AN BIGGR OF x AN 10",
+            "BIGGR x AN 10",
+            "x > 10",
+            "BOTH SAEM x AN 10"
+          ],
+          "answer": "BOTH SAEM x AN BIGGR OF x AN 10",
+          "why": "If x is the bigger of x and 10, then x is 10 or more."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE EITHER OF FAIL AN NOT FAIL\nKTHXBYE",
+          "options": ["WIN", "FAIL", "NOOB", "NOT"],
+          "answer": "WIN",
+          "why": "NOT FAIL is WIN, and EITHER OF needs only one WIN."
+        },
+        {
+          "q": "Which value counts as FAIL?",
+          "options": ["\"\"", "\"0.0\"", "-1", "\"FAIL\""],
+          "answer": "\"\"",
+          "why": "Only 0, 0.0, the empty string and NOOB are FAIL; any non-empty text is WIN."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nPRODUKT OF 6 AN 7\nVISIBLE IT\nKTHXBYE",
+          "options": ["42", "NOOB", "IT", "13"],
+          "answer": "42",
+          "why": "A bare value goes into IT, so IT holds 42."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE BOTH OF WIN AN WIN\nKTHXBYE",
+          "options": ["WIN", "FAIL", "BOTH", "2"],
+          "answer": "WIN",
+          "why": "BOTH OF is “and”: both sides are WIN."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE WON OF WIN AN FAIL\nKTHXBYE",
+          "options": ["WIN", "FAIL", "WON", "NOOB"],
+          "answer": "WIN",
+          "why": "WON OF is “one but not both”; exactly one side is WIN."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE NOT \"FAIL\"\nKTHXBYE",
+          "options": ["FAIL", "WIN", "\"FAIL\"", "NOOB"],
+          "answer": "FAIL",
+          "why": "Any non-empty YARN counts as WIN, so NOT flips it to FAIL."
+        }
+      ]
+    },
+    {
+      "id": "flow",
+      "title": "O RLY? decisions",
+      "summary": "YA RLY, NO WAI, MEBBE and OIC.",
+      "sections": [
+        {
+          "p": "Work out a <code>TROOF</code> on its own line so it lands in <code>IT</code>, then <code>O RLY?</code> branches on it: <code>YA RLY</code> runs when <code>IT</code> is <code>WIN</code>, <code>NO WAI</code> otherwise, and <code>OIC</code> (“oh, I see”) closes the block.",
+          "code": "HAI 1.2\nI HAS A temp ITZ 4\nBOTH SAEM temp AN SMALLR OF temp AN 10\nO RLY?\n  YA RLY\n    VISIBLE \"CHILLY\"\n  NO WAI\n    VISIBLE \"WARM\"\nOIC\nKTHXBYE",
+          "out": "CHILLY"
+        },
+        {
+          "h": "Without NO WAI",
+          "p": "The <code>NO WAI</code> part is optional. If <code>IT</code> is <code>FAIL</code> and there is no <code>NO WAI</code>, nothing happens.",
+          "code": "HAI 1.2\nI HAS A nuts ITZ 0\nnuts\nO RLY?\n  YA RLY\n    VISIBLE \"SNACK TIME\"\nOIC\nVISIBLE \"DONE\"\nKTHXBYE",
+          "out": "DONE"
+        },
+        {
+          "h": "MEBBE for more choices",
+          "p": "<code>MEBBE expression</code> is “else if”: when the earlier tests fail, its expression is worked out and its part runs if that is <code>WIN</code>. Only the first matching part runs.",
+          "code": "HAI 1.2\nI HAS A n ITZ 15\nBOTH SAEM n AN 0\nO RLY?\n  YA RLY\n    VISIBLE \"NONE\"\n  MEBBE BOTH SAEM n AN SMALLR OF n AN 9\n    VISIBLE \"FEW\"\n  MEBBE BOTH SAEM n AN SMALLR OF n AN 99\n    VISIBLE \"LOTS\"\n  NO WAI\n    VISIBLE \"TOO MANY\"\nOIC\nKTHXBYE",
+          "out": "LOTS"
+        },
+        {
+          "h": "Nesting",
+          "p": "A whole <code>O RLY?</code> block can sit inside a part of another one. Indenting is optional, but it makes the shape easy to see.",
+          "code": "HAI 1.2\nI HAS A hungry ITZ WIN\nI HAS A nuts ITZ 2\nhungry\nO RLY?\n  YA RLY\n    nuts\n    O RLY?\n      YA RLY\n        VISIBLE \"NOM NOM\"\n      NO WAI\n        VISIBLE \"GO FIND NUTZ\"\n    OIC\nOIC\nKTHXBYE",
+          "out": "NOM NOM"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What closes an O RLY? block?",
+          "options": ["OIC", "KTHXBYE", "NO WAI", "GTFO"],
+          "answer": "OIC",
+          "why": "OIC (“oh, I see”) ends the conditional."
+        },
+        {
+          "q": "Where does the result of BOTH SAEM go when it stands alone on a line?",
+          "options": ["Into IT", "Into WIN", "It is printed", "Nowhere"],
+          "answer": "Into IT",
+          "why": "A bare expression is stored in the special variable IT, which O RLY? tests."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nI HAS A x ITZ 3\nBOTH SAEM x AN 4\nO RLY?\n  YA RLY\n    VISIBLE \"FOUR\"\n  NO WAI\n    VISIBLE \"NOT FOUR\"\nOIC\nKTHXBYE",
+          "options": ["NOT FOUR", "FOUR", "FOUR\nNOT FOUR", "Nothing"],
+          "answer": "NOT FOUR",
+          "why": "3 is not 4, so IT is FAIL and the NO WAI part runs."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nI HAS A n ITZ 5\nBOTH SAEM n AN 1\nO RLY?\n  YA RLY\n    VISIBLE \"ONE\"\n  MEBBE BOTH SAEM n AN 5\n    VISIBLE \"FIVE\"\n  MEBBE BOTH SAEM n AN BIGGR OF n AN 2\n    VISIBLE \"BIG\"\nOIC\nKTHXBYE",
+          "options": ["FIVE", "FIVE\nBIG", "BIG", "ONE"],
+          "answer": "FIVE",
+          "why": "Only the first part whose test is WIN runs, even though the last test would also be WIN."
+        },
+        {
+          "q": "Which word means “else if”?",
+          "options": ["MEBBE", "NO WAI", "YA RLY", "OMG"],
+          "answer": "MEBBE",
+          "why": "MEBBE has its own test and is tried only when the parts above it failed."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nI HAS A x ITZ 10\nBOTH SAEM x AN BIGGR OF x AN 10\nO RLY?\n  YA RLY\n    VISIBLE \"GE10\"\n  NO WAI\n    VISIBLE \"LT10\"\nOIC\nKTHXBYE",
+          "options": ["GE10", "LT10", "GE10\nLT10", "10"],
+          "answer": "GE10",
+          "why": "x equals BIGGR OF x AN 10, so x is at least 10 and YA RLY runs."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nFAIL\nO RLY?\n  YA RLY\n    VISIBLE \"YES\"\n  NO WAI\n    VISIBLE \"NO\"\nOIC\nKTHXBYE",
+          "options": ["NO", "YES", "FAIL", "Nothing"],
+          "answer": "NO",
+          "why": "Putting FAIL alone stores FAIL in IT, so the NO WAI part runs."
+        }
+      ]
+    },
+    {
+      "id": "wtf",
+      "title": "WTF? for many cases",
+      "summary": "Matching IT against values with OMG, OMGWTF and GTFO.",
+      "sections": [
+        {
+          "p": "<code>WTF?</code> compares <code>IT</code> with each <code>OMG</code> value in turn. Running starts at the first match and <b>keeps going</b> into the cases below until it meets <code>GTFO</code>. <code>OMGWTF</code> is the case for anything not listed.",
+          "code": "HAI 1.2\nI HAS A colour ITZ \"GREEN\"\ncolour\nWTF?\n  OMG \"RED\"\n    VISIBLE \"STOP\"\n    GTFO\n  OMG \"GREEN\"\n    VISIBLE \"GO\"\n    GTFO\n  OMGWTF\n    VISIBLE \"WAIT\"\nOIC\nKTHXBYE",
+          "out": "GO"
+        },
+        {
+          "h": "Falling through",
+          "p": "Leave out <code>GTFO</code> and running carries on into the next case. That is handy when several values should share some steps.",
+          "code": "HAI 1.2\n3\nWTF?\n  OMG 3\n    VISIBLE \"THREE\"\n  OMG 2\n    VISIBLE \"TWO\"\n  OMG 1\n    VISIBLE \"ONE\"\n    GTFO\n  OMG 0\n    VISIBLE \"ZERO\"\nOIC\nKTHXBYE",
+          "out": "THREE\nTWO\nONE"
+        },
+        {
+          "h": "Cases are values",
+          "p": "Each <code>OMG</code> must be a plain value written out, such as a number or a string, not a sum or a variable. For ranges, use <code>O RLY?</code> with <code>MEBBE</code> instead."
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\n\"B\"\nWTF?\n  OMG \"A\"\n    VISIBLE \"APPLE\"\n    GTFO\n  OMG \"B\"\n    VISIBLE \"BANANA\"\n    GTFO\n  OMGWTF\n    VISIBLE \"HUH\"\nOIC\nKTHXBYE",
+          "options": ["BANANA", "BANANA\nHUH", "HUH", "APPLE"],
+          "answer": "BANANA",
+          "why": "IT matches the second case, and GTFO stops before OMGWTF."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\n1\nWTF?\n  OMG 1\n    VISIBLE \"A\"\n  OMG 2\n    VISIBLE \"B\"\nOIC\nKTHXBYE",
+          "options": ["A\nB", "A", "B", "Nothing"],
+          "answer": "A\nB",
+          "why": "There is no GTFO, so running falls through from case 1 into case 2."
+        },
+        {
+          "q": "What does GTFO do inside WTF?",
+          "options": [
+            "Leaves the WTF? block",
+            "Ends the program",
+            "Goes to OMGWTF",
+            "Restarts the block"
+          ],
+          "answer": "Leaves the WTF? block",
+          "why": "GTFO breaks out of the case block, like break in other languages."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\n7\nWTF?\n  OMG 1\n    VISIBLE \"ONE\"\n    GTFO\n  OMGWTF\n    VISIBLE \"SOMETHING ELSE\"\nOIC\nKTHXBYE",
+          "options": ["SOMETHING ELSE", "ONE", "ONE\nSOMETHING ELSE", "7"],
+          "answer": "SOMETHING ELSE",
+          "why": "7 matches no OMG, so the OMGWTF case runs."
+        },
+        {
+          "q": "Which can be written after OMG?",
+          "options": ["\"YES\"", "SUM OF 1 AN 2", "x", "BOTH SAEM x AN 1"],
+          "answer": "\"YES\"",
+          "why": "Cases must be plain values, not expressions or variables."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\n2\nWTF?\n  OMG 1\n    VISIBLE \"ONE\"\n    GTFO\n  OMG 2\n    VISIBLE \"TWO\"\n  OMG 3\n    VISIBLE \"THREE\"\n    GTFO\nOIC\nKTHXBYE",
+          "options": ["TWO\nTHREE", "TWO", "THREE", "ONE\nTWO\nTHREE"],
+          "answer": "TWO\nTHREE",
+          "why": "Match starts at OMG 2 with no GTFO, so it falls through into OMG 3."
+        },
+        {
+          "q": "What is OMGWTF for?",
+          "options": [
+            "The case that runs when no OMG matched",
+            "Ending the program",
+            "Printing an error",
+            "A second GTFO"
+          ],
+          "answer": "The case that runs when no OMG matched",
+          "why": "OMGWTF is the default case, like else in a switch."
+        }
+      ]
+    },
+    {
+      "id": "loops",
+      "title": "Loops",
+      "summary": "IM IN YR, UPPIN and NERFIN, TIL and WILE, and GTFO.",
+      "sections": [
+        {
+          "p": "<code>IM IN YR name</code> starts a loop and <code>IM OUTTA YR name</code> ends it. <code>UPPIN YR var</code> adds 1 to a counter after each round, and <code>TIL</code> says when to stop. The counter always starts at 0 and belongs to the loop: it is gone once the loop ends, so give it a name of its own.",
+          "code": "HAI 1.2\nIM IN YR hop UPPIN YR i TIL BOTH SAEM i AN 3\n  VISIBLE \"HOP \" i\nIM OUTTA YR hop\nKTHXBYE",
+          "out": "HOP 0\nHOP 1\nHOP 2"
+        },
+        {
+          "h": "Counting down and WILE",
+          "p": "<code>NERFIN</code> takes 1 away, so the counter goes 0, −1, −2 and so on. <code>WILE</code> is the opposite of <code>TIL</code>: keep going while the test is <code>WIN</code>. The test is checked before every round, so a loop can run zero times.",
+          "code": "HAI 1.2\nIM IN YR count NERFIN YR i WILE DIFFRINT i AN -3\n  VISIBLE SUM OF 3 AN i \"...\"\nIM OUTTA YR count\nVISIBLE \"LIFTOFF\"\nKTHXBYE",
+          "out": "3...\n2...\n1...\nLIFTOFF"
+        },
+        {
+          "h": "Adding up",
+          "p": "A variable made before the loop can collect a total. This adds 1 + 2 + 3 + 4 + 5.",
+          "code": "HAI 1.2\nI HAS A total ITZ 0\nIM IN YR add UPPIN YR k TIL BOTH SAEM k AN 6\n  total R SUM OF total AN k\nIM OUTTA YR add\nVISIBLE total\nKTHXBYE",
+          "out": "15"
+        },
+        {
+          "h": "GTFO and loops with no test",
+          "p": "A loop with no <code>UPPIN</code> and no <code>TIL</code> runs until a <code>GTFO</code> inside it. Here the program doubles a number until it passes 100.",
+          "code": "HAI 1.2\nI HAS A x ITZ 1\nIM IN YR grow\n  x R PRODUKT OF x AN 2\n  BOTH SAEM x AN BIGGR OF x AN 100\n  O RLY?\n    YA RLY\n      GTFO\n  OIC\nIM OUTTA YR grow\nVISIBLE x\nKTHXBYE",
+          "out": "128"
+        },
+        {
+          "h": "Loops in loops",
+          "p": "Give each loop its own name and counter. The inner loop runs all the way through on every round of the outer one.",
+          "code": "HAI 1.2\nIM IN YR row UPPIN YR r TIL BOTH SAEM r AN 3\n  IM IN YR col UPPIN YR c TIL BOTH SAEM c AN 4\n    VISIBLE \"*\"!\n  IM OUTTA YR col\n  VISIBLE \"\"\nIM OUTTA YR row\nKTHXBYE",
+          "out": "****\n****\n****"
+        }
+      ],
+      "practice": [
+        {
+          "q": "How many times does VISIBLE run in IM IN YR l UPPIN YR i TIL BOTH SAEM i AN 3?",
+          "options": ["3", "4", "2", "Forever"],
+          "answer": "3",
+          "why": "i starts at 0 and the loop stops when it reaches 3: rounds 0, 1 and 2."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nIM IN YR l UPPIN YR i TIL BOTH SAEM i AN 4\n  VISIBLE i!\nIM OUTTA YR l\nKTHXBYE",
+          "options": ["0123", "1234", "01234", "0\n1\n2\n3"],
+          "answer": "0123",
+          "why": "The counter starts at 0 and stops before printing 4; the ! keeps it on one line."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nIM IN YR l NERFIN YR n WILE DIFFRINT n AN -2\n  VISIBLE n\nIM OUTTA YR l\nKTHXBYE",
+          "options": ["0\n-1", "0\n-1\n-2", "-1\n-2", "2\n1"],
+          "answer": "0\n-1",
+          "why": "n starts at 0 and counts down; the loop stops as soon as n is −2, before printing it."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nI HAS A t ITZ 0\nIM IN YR l UPPIN YR k TIL BOTH SAEM k AN 4\n  t R SUM OF t AN 2\nIM OUTTA YR l\nVISIBLE t\nKTHXBYE",
+          "options": ["8", "6", "10", "4"],
+          "answer": "8",
+          "why": "The body runs four times (k = 0 to 3), adding 2 each time."
+        },
+        {
+          "q": "What stops a loop that has no TIL or WILE?",
+          "options": ["GTFO", "OIC", "KTHXBYE inside it", "Nothing can"],
+          "answer": "GTFO",
+          "why": "GTFO inside a loop breaks out of it."
+        },
+        {
+          "q": "What is the difference between TIL and WILE?",
+          "options": [
+            "TIL stops when the test is WIN; WILE stops when it is FAIL",
+            "They are the same",
+            "WILE only counts down",
+            "TIL runs at least once"
+          ],
+          "answer": "TIL stops when the test is WIN; WILE stops when it is FAIL",
+          "why": "TIL means “until” and WILE means “while”."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nI HAS A t ITZ 1\nIM IN YR l UPPIN YR i TIL BOTH SAEM i AN 3\n  t R PRODUKT OF t AN 2\nIM OUTTA YR l\nVISIBLE t\nKTHXBYE",
+          "options": ["8", "6", "4", "3"],
+          "answer": "8",
+          "why": "The body runs three times (i = 0, 1, 2), doubling 1 → 2 → 4 → 8."
+        },
+        {
+          "q": "What does UPPIN YR i do each round?",
+          "options": [
+            "Adds 1 to i after the body",
+            "Sets i to 0",
+            "Subtracts 1 from i",
+            "Prints i"
+          ],
+          "answer": "Adds 1 to i after the body",
+          "why": "UPPIN is the loop's increment; NERFIN subtracts 1 instead."
+        }
+      ]
+    },
+    {
+      "id": "functions",
+      "title": "Functions",
+      "summary": "HOW IZ I, FOUND YR, several parameters and recursion.",
+      "sections": [
+        {
+          "p": "<code>HOW IZ I name YR param</code> defines a function, <code>FOUND YR value</code> hands back a result, and <code>IF U SAY SO</code> ends it. Call it with <code>I IZ name YR value MKAY</code>.",
+          "code": "HAI 1.2\nHOW IZ I dubbl YR n\n  FOUND YR PRODUKT OF n AN 2\nIF U SAY SO\nVISIBLE I IZ dubbl YR 21 MKAY\nKTHXBYE",
+          "out": "42"
+        },
+        {
+          "h": "Several parameters",
+          "p": "Join extra parameters with <code>AN YR</code>, both when defining and when calling.",
+          "code": "HAI 1.2\nHOW IZ I area YR w AN YR h\n  FOUND YR PRODUKT OF w AN h\nIF U SAY SO\nVISIBLE I IZ area YR 3 AN YR 4 MKAY\nKTHXBYE",
+          "out": "12"
+        },
+        {
+          "h": "Functions keep to themselves",
+          "p": "Inside a function you can only see its parameters, the variables it makes, and its own <code>IT</code>. Variables from the main program are out of reach, so pass in anything it needs. A function does not have to hand anything back: this one just prints. <code>GTFO</code> leaves a function early with no value (<code>NOOB</code>).",
+          "code": "HAI 1.2\nHOW IZ I greet YR who\n  VISIBLE \"HAI \" who\nIF U SAY SO\nI IZ greet YR \"BUCKY\" MKAY\nI IZ greet YR \"ROCKY\" MKAY\nKTHXBYE",
+          "out": "HAI BUCKY\nHAI ROCKY"
+        },
+        {
+          "h": "Deciding inside a function",
+          "p": "<code>FOUND YR</code> can sit inside an <code>O RLY?</code>. It leaves the function straight away.",
+          "code": "HAI 1.2\nHOW IZ I sign YR n\n  BOTH SAEM n AN 0\n  O RLY?\n    YA RLY\n      FOUND YR \"ZERO\"\n  OIC\n  BOTH SAEM n AN BIGGR OF n AN 0\n  O RLY?\n    YA RLY\n      FOUND YR \"PLUS\"\n  OIC\n  FOUND YR \"MINUS\"\nIF U SAY SO\nVISIBLE I IZ sign YR 5 MKAY\nVISIBLE I IZ sign YR -2 MKAY\nVISIBLE I IZ sign YR 0 MKAY\nKTHXBYE",
+          "out": "PLUS\nMINUS\nZERO"
+        },
+        {
+          "h": "Recursion",
+          "p": "A function may call itself, as long as some case stops it. The factorial of n is n × (n − 1) × … × 1.",
+          "code": "HAI 1.2\nHOW IZ I fact YR n\n  BOTH SAEM n AN SMALLR OF n AN 1\n  O RLY?\n    YA RLY\n      FOUND YR 1\n  OIC\n  FOUND YR PRODUKT OF n AN I IZ fact YR DIFF OF n AN 1 MKAY\nIF U SAY SO\nVISIBLE I IZ fact YR 5 MKAY\nKTHXBYE",
+          "out": "120"
+        }
+      ],
+      "practice": [
+        {
+          "q": "How does a LOLCODE function return a value?",
+          "options": ["FOUND YR value", "RETURN value", "GTFO value", "VISIBLE value"],
+          "answer": "FOUND YR value",
+          "why": "GTFO leaves without a value; FOUND YR hands one back."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nHOW IZ I plus1 YR n\n  FOUND YR SUM OF n AN 1\nIF U SAY SO\nVISIBLE I IZ plus1 YR I IZ plus1 YR 1 MKAY MKAY\nKTHXBYE",
+          "options": ["3", "2", "1", "11"],
+          "answer": "3",
+          "why": "The inner call gives 2, and the outer call adds one more."
+        },
+        {
+          "q": "Which line ends a function definition?",
+          "options": ["IF U SAY SO", "OIC", "KTHXBYE", "MKAY"],
+          "answer": "IF U SAY SO",
+          "why": "HOW IZ I opens the function and IF U SAY SO closes it."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nHOW IZ I smaller YR a AN YR b\n  FOUND YR SMALLR OF a AN b\nIF U SAY SO\nVISIBLE I IZ smaller YR 8 AN YR 3 MKAY\nKTHXBYE",
+          "options": ["3", "8", "11", "5"],
+          "answer": "3",
+          "why": "The function hands back the smaller of its two parameters."
+        },
+        {
+          "q": "Can a function read a variable made in the main program?",
+          "options": [
+            "No, pass it in as a parameter",
+            "Yes, always",
+            "Only with IT",
+            "Only if it is a YARN"
+          ],
+          "answer": "No, pass it in as a parameter",
+          "why": "A function has its own scope: its parameters, its own variables and its own IT."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nHOW IZ I sum YR n\n  BOTH SAEM n AN 0\n  O RLY?\n    YA RLY\n      FOUND YR 0\n  OIC\n  FOUND YR SUM OF n AN I IZ sum YR DIFF OF n AN 1 MKAY\nIF U SAY SO\nVISIBLE I IZ sum YR 4 MKAY\nKTHXBYE",
+          "options": ["10", "4", "24", "0"],
+          "answer": "10",
+          "why": "4 + 3 + 2 + 1 + 0, stopping when n reaches 0."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nHOW IZ I sq YR n\n  FOUND YR PRODUKT OF n AN n\nIF U SAY SO\nVISIBLE I IZ sq YR 6 MKAY\nKTHXBYE",
+          "options": ["36", "12", "6", "42"],
+          "answer": "36",
+          "why": "The function returns n × n; 6 × 6 = 36."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nHOW IZ I add3 YR a AN YR b AN YR c\n  FOUND YR SUM OF a AN SUM OF b AN c\nIF U SAY SO\nVISIBLE I IZ add3 YR 1 AN YR 2 AN YR 3 MKAY\nKTHXBYE",
+          "options": ["6", "123", "5", "3"],
+          "answer": "6",
+          "why": "Extra parameters use AN YR; 1 + 2 + 3 = 6."
+        },
+        {
+          "q": "How do you add a second parameter when defining a function?",
+          "options": ["AN YR name", "AND name", "YR name twice", "MKAY name"],
+          "answer": "AN YR name",
+          "why": "HOW IZ I f YR a AN YR b … matches the call I IZ f YR … AN YR … MKAY."
+        }
+      ]
+    },
+    {
+      "id": "fizzbuzz",
+      "title": "Putting it together: FizzBuzz",
+      "summary": "Loops, MOD, decisions and SMOOSH in one program.",
+      "sections": [
+        {
+          "p": "FizzBuzz counts from 1, but says <b>FIZZ</b> for multiples of 3, <b>BUZZ</b> for multiples of 5 and <b>FIZZBUZZ</b> for both. The loop counter starts at 0, so <code>k</code> holds the number to say, one more than the counter. <code>MOD OF k AN 3</code> is 0 exactly when k divides by 3. Testing for 15 first stops the single words from winning.",
+          "code": "HAI 1.2\nI HAS A k\nIM IN YR count UPPIN YR n TIL BOTH SAEM n AN 15\n  k R SUM OF n AN 1\n  BOTH SAEM MOD OF k AN 15 AN 0\n  O RLY?\n    YA RLY\n      VISIBLE \"FIZZBUZZ\"\n    MEBBE BOTH SAEM MOD OF k AN 3 AN 0\n      VISIBLE \"FIZZ\"\n    MEBBE BOTH SAEM MOD OF k AN 5 AN 0\n      VISIBLE \"BUZZ\"\n    NO WAI\n      VISIBLE k\n  OIC\nIM OUTTA YR count\nKTHXBYE",
+          "out": "1\n2\nFIZZ\n4\nBUZZ\nFIZZ\n7\n8\nFIZZ\nBUZZ\n11\nFIZZ\n13\n14\nFIZZBUZZ"
+        },
+        {
+          "h": "Building text in a loop",
+          "p": "<code>SMOOSH</code> can grow a <code>YARN</code> one piece at a time. This builds a times-table row and prints it once at the end.",
+          "code": "HAI 1.2\nI HAS A row ITZ \"\"\nIM IN YR t UPPIN YR i TIL BOTH SAEM i AN 5\n  row R SMOOSH row AN PRODUKT OF 3 AN SUM OF i AN 1 AN \" \" MKAY\nIM OUTTA YR t\nVISIBLE \"3 TIMEZ = \" row\nKTHXBYE",
+          "out": "3 TIMEZ = 3 6 9 12 15 "
+        },
+        {
+          "h": "Where to go next",
+          "p": "You have met nearly all of LOLCODE 1.2. Try changing these programs in <code>lci</code>: FizzBuzz up to 100, a function that says whether a number is prime, or a countdown that reads its start with <code>GIMMEH</code>, which reads a line the user types into a variable as a <code>YARN</code>."
+        }
+      ],
+      "practice": [
+        {
+          "q": "Why test for 15 before 3 and 5?",
+          "options": [
+            "Otherwise 15 would match 3 first and print only FIZZ",
+            "MOD OF needs the biggest number first",
+            "MEBBE only works once",
+            "15 is the last number"
+          ],
+          "answer": "Otherwise 15 would match 3 first and print only FIZZ",
+          "why": "Only the first matching part of an O RLY? runs."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE MOD OF 12 AN 3\nKTHXBYE",
+          "options": ["0", "4", "3", "1"],
+          "answer": "0",
+          "why": "12 divides by 3 exactly, so there is no remainder."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nI HAS A s ITZ \"\"\nIM IN YR l UPPIN YR i TIL BOTH SAEM i AN 3\n  s R SMOOSH s AN i MKAY\nIM OUTTA YR l\nVISIBLE s\nKTHXBYE",
+          "options": ["012", "0 1 2", "3", "123"],
+          "answer": "012",
+          "why": "Each round adds the counter to the end of s: 0, then 1, then 2."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nIM IN YR l UPPIN YR n TIL BOTH SAEM n AN 6\n  BOTH SAEM MOD OF n AN 2 AN 0\n  O RLY?\n    YA RLY\n      VISIBLE n!\n  OIC\nIM OUTTA YR l\nKTHXBYE",
+          "options": ["024", "135", "0246", "246"],
+          "answer": "024",
+          "why": "n runs from 0 to 5, and only the even ones print."
+        },
+        {
+          "q": "What does GIMMEH x do?",
+          "options": [
+            "Reads a typed line into x",
+            "Prints x",
+            "Makes x a NUMBR",
+            "Deletes x"
+          ],
+          "answer": "Reads a typed line into x",
+          "why": "GIMMEH is LOLCODE's input; the value is always a YARN."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nI HAS A s ITZ \"\"\nIM IN YR l UPPIN YR i TIL BOTH SAEM i AN 4\n  BOTH SAEM MOD OF SUM OF i AN 1 AN 2 AN 0\n  O RLY?\n    YA RLY\n      s R SMOOSH s AN \"E\" MKAY\n    NO WAI\n      s R SMOOSH s AN \"O\" MKAY\n  OIC\nIM OUTTA YR l\nVISIBLE s\nKTHXBYE",
+          "options": ["OEOE", "EOEO", "OOOO", "EEEE"],
+          "answer": "OEOE",
+          "why": "For i = 0..3 the values 1..4 alternate odd/even: O, E, O, E."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nVISIBLE BOTH SAEM MOD OF 10 AN 5 AN 0\nKTHXBYE",
+          "options": ["WIN", "FAIL", "0", "2"],
+          "answer": "WIN",
+          "why": "10 divides by 5 with remainder 0, so BOTH SAEM … AN 0 is WIN."
+        }
+      ]
+    },
+    {
+      "id": "strings2",
+      "title": "More SMOOSH and numbers as yarn",
+      "summary": "Build longer strings and turn numbers into text.",
+      "sections": [
+        {
+          "p": "<code>SMOOSH</code> joins values into one YARN. Numbers are printed in decimal when smooshed, so you can build a label and a count in one go.",
+          "code": "HAI 1.2\nI HAS A n ITZ 3\nI HAS A msg ITZ SMOOSH \"NUTZ = \" AN n MKAY\nVISIBLE msg\nKTHXBYE",
+          "out": "NUTZ = 3"
+        },
+        {
+          "h": "SMOOSH in a loop",
+          "p": "Grow a string across a loop by smooshing the old value with a new piece each time.",
+          "code": "HAI 1.2\nI HAS A s ITZ \"\"\nIM IN YR l UPPIN YR i TIL BOTH SAEM i AN 3\n  s R SMOOSH s AN \"HA\" MKAY\nIM OUTTA YR l\nVISIBLE s\nKTHXBYE",
+          "out": "HAHAHA"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nI HAS A x ITZ 2\nVISIBLE SMOOSH \"X\" AN x MKAY\nKTHXBYE",
+          "options": ["X2", "X 2", "2X", "Xx"],
+          "answer": "X2",
+          "why": "SMOOSH joins with nothing in between."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nI HAS A s ITZ \"A\"\ns R SMOOSH s AN \"B\" AN \"C\" MKAY\nVISIBLE s\nKTHXBYE",
+          "options": ["ABC", "A B C", "A", "BC"],
+          "answer": "ABC",
+          "why": "Each AN piece is appended in order."
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Project: fizz-buzz lines",
+      "summary": "A tiny loop that builds labelled lines with SMOOSH.",
+      "sections": [
+        {
+          "p": "Count from 1 to 5. For each number, print a line that starts with the number and then either FIZZ (multiples of 3), BUZZ (multiples of 5), or NUTZ (everything else). Use <code>MOD OF</code>, <code>O RLY?</code> and <code>SMOOSH</code> together.",
+          "code": "HAI 1.2\nI HAS A n ITZ 0\nI HAS A line ITZ \"\"\nIM IN YR l UPPIN YR i TIL BOTH SAEM i AN 5\n  n R SUM OF i AN 1\n  line R SMOOSH n AN \" \" MKAY\n  BOTH SAEM MOD OF n AN 3 AN 0\n  O RLY?\n    YA RLY\n      line R SMOOSH line AN \"FIZZ\" MKAY\n    MEBBE BOTH SAEM MOD OF n AN 5 AN 0\n      line R SMOOSH line AN \"BUZZ\" MKAY\n    NO WAI\n      line R SMOOSH line AN \"NUTZ\" MKAY\n  OIC\n  VISIBLE line\nIM OUTTA YR l\nKTHXBYE",
+          "out": "1 NUTZ\n2 NUTZ\n3 FIZZ\n4 NUTZ\n5 BUZZ"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "HAI 1.2\nI HAS A n ITZ 6\nBOTH SAEM MOD OF n AN 3 AN 0\nO RLY?\n  YA RLY\n    VISIBLE \"FIZZ\"\n  NO WAI\n    VISIBLE \"NUTZ\"\nOIC\nKTHXBYE",
+          "options": ["FIZZ", "NUTZ", "6", "WIN"],
+          "answer": "FIZZ",
+          "why": "6 mod 3 is 0."
+        },
+        {
+          "q": "Which operator joins strings in LOLCODE?",
+          "options": ["SMOOSH", "SUM OF", "BOTH SAEM", "VISIBLE"],
+          "answer": "SMOOSH",
+          "why": "SMOOSH concatenates yarns."
+        }
+      ]
+    }
+  ]
+}
