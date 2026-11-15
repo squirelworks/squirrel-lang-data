@@ -1,0 +1,678 @@
+{
+  "schema": "programming-course@1",
+  "id": "cobol",
+  "name": "COBOL",
+  "title": "COBOL: records, money and plain English",
+  "intro": "COBOL (COmmon Business-Oriented Language) was designed in 1959 for business data: names, amounts, dates and records. It is still in daily use at banks, insurers and government agencies, where it runs payroll, payments and benefits on mainframes, and those systems need people who can read and maintain it. COBOL reads like stiff English: <code>ADD TAX TO TOTAL</code>. These lessons use free format, which modern compilers accept; older code puts each part of a line in fixed columns, and lesson 1 shows how. Every example is a whole program and shows exactly what it prints. To run one yourself with GnuCOBOL, save it as <code>hello.cob</code> and type <code>cobc -x -free hello.cob && ./hello</code>.",
+  "comment": "*>",
+  "keywords": [
+    "IDENTIFICATION",
+    "DIVISION",
+    "PROGRAM-ID",
+    "ENVIRONMENT",
+    "INPUT-OUTPUT",
+    "FILE-CONTROL",
+    "SELECT",
+    "ASSIGN",
+    "ORGANIZATION",
+    "SEQUENTIAL",
+    "DATA",
+    "FILE",
+    "FD",
+    "WORKING-STORAGE",
+    "SECTION",
+    "PROCEDURE",
+    "PIC",
+    "VALUE",
+    "MOVE",
+    "TO",
+    "ADD",
+    "SUBTRACT",
+    "FROM",
+    "MULTIPLY",
+    "BY",
+    "DIVIDE",
+    "INTO",
+    "GIVING",
+    "COMPUTE",
+    "IF",
+    "ELSE",
+    "END-IF",
+    "EVALUATE",
+    "WHEN",
+    "OTHER",
+    "END-EVALUATE",
+    "PERFORM",
+    "END-PERFORM",
+    "VARYING",
+    "UNTIL",
+    "TIMES",
+    "STOP",
+    "RUN",
+    "OCCURS",
+    "REMAINDER",
+    "ROUNDED",
+    "AND",
+    "OR",
+    "NOT",
+    "SET",
+    "TRUE",
+    "STRING",
+    "UNSTRING",
+    "DELIMITED",
+    "SIZE",
+    "SPACE",
+    "INSPECT",
+    "TALLYING",
+    "REPLACING",
+    "ALL",
+    "OPEN",
+    "CLOSE",
+    "INPUT",
+    "OUTPUT",
+    "READ",
+    "WRITE",
+    "AT",
+    "END",
+    "SEARCH",
+    "INDEXED"
+  ],
+  "builtins": ["DISPLAY", "ZERO", "ZEROS", "SPACES"],
+  "lessons": [
+    {
+      "id": "first",
+      "title": "Your first program",
+      "summary": "Divisions, DISPLAY and STOP RUN.",
+      "sections": [
+        {
+          "p": "A COBOL program is split into <b>divisions</b>. The <code>IDENTIFICATION DIVISION</code> names the program. The <code>PROCEDURE DIVISION</code> holds the statements that run, top to bottom. <code>DISPLAY</code> prints a line, and <code>STOP RUN</code> ends the program. Sentences end with a full stop.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. HELLO.\nPROCEDURE DIVISION.\n    DISPLAY \"Hello, squirrel!\".\n    DISPLAY \"Nuts are ready.\".\n    STOP RUN.",
+          "out": "Hello, squirrel!\nNuts are ready."
+        },
+        {
+          "h": "Several items on one line",
+          "p": "<code>DISPLAY</code> prints every item you give it, one after the other with nothing in between, and then ends the line. <code>*&gt;</code> starts a comment that runs to the end of the line.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. JOIN.\nPROCEDURE DIVISION.\n    *> Two items, no space added between them\n    DISPLAY \"Acorn\" \"Bank\".\n    DISPLAY \"Acorn \" \"Bank\".\n    STOP RUN.",
+          "out": "AcornBank\nAcorn Bank"
+        },
+        {
+          "h": "Fixed columns in older code",
+          "p": "Code written for older compilers uses a fixed layout from the days of punched cards. Columns 1 to 6 hold a sequence number, column 7 marks a comment with <code>*</code>, division and paragraph names start in column 8 (area A), and statements start in column 12 or later (area B). Anything past column 72 is ignored. You will meet this layout in nearly every existing system, so it is worth recognising, even though the lessons here use free format."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q1.\nPROCEDURE DIVISION.\n    DISPLAY \"Pay\" \"day\".\n    STOP RUN.",
+          "options": ["Payday", "Pay day", "Pay\nday", "\"Pay\" \"day\""],
+          "answer": "Payday",
+          "why": "DISPLAY puts the items right next to each other. Add a space inside one of the strings if you want one.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q2.\nPROCEDURE DIVISION.\n    DISPLAY \"One\".\n    *> DISPLAY \"Two\".\n    DISPLAY \"Three\".\n    STOP RUN.",
+          "options": ["One\nThree", "One\nTwo\nThree", "OneThree", "One"],
+          "answer": "One\nThree",
+          "why": "The middle line is a comment, so it never runs. Each DISPLAY ends its own line.",
+          "kind": "output"
+        },
+        {
+          "q": "Which division holds the statements that run?",
+          "options": [
+            "PROCEDURE DIVISION",
+            "IDENTIFICATION DIVISION",
+            "DATA DIVISION",
+            "RUN DIVISION"
+          ],
+          "answer": "PROCEDURE DIVISION",
+          "why": "The IDENTIFICATION DIVISION names the program, the DATA DIVISION describes data, and the PROCEDURE DIVISION is the code."
+        },
+        {
+          "q": "Where is COBOL still widely used today?",
+          "options": [
+            "Bank, insurance and government systems",
+            "Phone games",
+            "Web browsers",
+            "Graphics cards"
+          ],
+          "answer": "Bank, insurance and government systems",
+          "why": "Much of the world's payment, payroll and benefits processing still runs on COBOL."
+        },
+        {
+          "q": "In fixed-format code, what does a * in column 7 mean?",
+          "options": [
+            "The line is a comment",
+            "Multiply",
+            "The line continues",
+            "Start of a division"
+          ],
+          "answer": "The line is a comment",
+          "why": "Column 7 is the indicator area. * marks a comment line, and - marks a continued line."
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "title": "Data and pictures",
+      "summary": "WORKING-STORAGE, PIC 9 and PIC X, MOVE.",
+      "sections": [
+        {
+          "p": "Every variable is declared up front in the <code>DATA DIVISION</code>, under <code>WORKING-STORAGE SECTION</code>. A <b>picture</b> (<code>PIC</code>) says exactly what the field holds. <code>9</code> is one digit and <code>X</code> is one character, and a number in brackets repeats it: <code>PIC 9(3)</code> is three digits, <code>PIC X(8)</code> is eight characters. <code>01</code> is the level number of a stand-alone item.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. PICS.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 NUTS PIC 9(3) VALUE 42.\n01 OWNER PIC X(8) VALUE \"Squirrel\".\nPROCEDURE DIVISION.\n    DISPLAY OWNER \" has \" NUTS \" nuts\".\n    STOP RUN.",
+          "out": "Squirrel has 042 nuts"
+        },
+        {
+          "h": "Fields have a fixed size",
+          "p": "A field always shows its full width. A three-digit number prints with leading zeros, and a short text value is padded with spaces on the right. A value that is too long is cut off: text loses its right end, and a number loses its leftmost digits.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. SIZES.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 CODE-A PIC X(4).\n01 AMOUNT PIC 9(2).\nPROCEDURE DIVISION.\n    MOVE \"AB\" TO CODE-A.\n    DISPLAY \"[\" CODE-A \"]\".\n    MOVE \"OAKTREE\" TO CODE-A.\n    DISPLAY \"[\" CODE-A \"]\".\n    MOVE 1234 TO AMOUNT.\n    DISPLAY AMOUNT.\n    STOP RUN.",
+          "out": "[AB  ]\n[OAKT]\n34"
+        },
+        {
+          "h": "Edited pictures for printing",
+          "p": "An edited picture formats a number for people. <code>Z</code> is a digit that shows as a space when it is a leading zero. Move a plain number into an edited field to print it neatly.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. EDITED.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 NUTS PIC 9(4) VALUE 42.\n01 NUTS-OUT PIC ZZZ9.\nPROCEDURE DIVISION.\n    MOVE NUTS TO NUTS-OUT.\n    DISPLAY \"[\" NUTS \"]\".\n    DISPLAY \"[\" NUTS-OUT \"]\".\n    STOP RUN.",
+          "out": "[0042]\n[  42]"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q1.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 N PIC 9(3) VALUE 7.\nPROCEDURE DIVISION.\n    DISPLAY N.\n    STOP RUN.",
+          "options": ["007", "7", "  7", "700"],
+          "answer": "007",
+          "why": "PIC 9(3) is always three digits wide, so 7 shows with two leading zeros.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q2.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 T PIC X(3).\nPROCEDURE DIVISION.\n    MOVE \"PINECONE\" TO T.\n    DISPLAY T.\n    STOP RUN.",
+          "options": ["PIN", "CONE", "PINECONE", "ONE"],
+          "answer": "PIN",
+          "why": "Text is cut off on the right when it does not fit, so only the first three characters stay.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q3.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 N PIC 9(2).\nPROCEDURE DIVISION.\n    MOVE 365 TO N.\n    DISPLAY N.\n    STOP RUN.",
+          "options": ["65", "36", "365", "99"],
+          "answer": "65",
+          "why": "A number that is too big loses its leftmost digits. This silent truncation is a classic COBOL bug, so size fields generously.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q4.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 N PIC 9(3) VALUE 5.\n01 E PIC ZZ9.\nPROCEDURE DIVISION.\n    MOVE N TO E.\n    DISPLAY \"[\" E \"]\".\n    STOP RUN.",
+          "options": ["[  5]", "[005]", "[5]", "[5  ]"],
+          "answer": "[  5]",
+          "why": "Each Z turns a leading zero into a space. The final 9 always shows a digit.",
+          "kind": "output"
+        },
+        {
+          "q": "What does PIC X(10) hold?",
+          "options": ["Ten characters", "Ten digits", "A number up to 10", "Ten lines"],
+          "answer": "Ten characters",
+          "why": "X is one character of any kind, and (10) repeats it ten times."
+        }
+      ]
+    },
+    {
+      "id": "arithmetic",
+      "title": "Arithmetic",
+      "summary": "ADD, SUBTRACT, MULTIPLY, DIVIDE, COMPUTE and decimals.",
+      "sections": [
+        {
+          "p": "COBOL has an English verb for each operation. <code>ADD A TO B</code> changes <code>B</code>. With <code>GIVING</code>, the result goes into a separate field and the inputs are left alone.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. VERBS.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 TOTAL PIC 9(3) VALUE 10.\n01 RESULT PIC 9(3).\nPROCEDURE DIVISION.\n    ADD 5 TO TOTAL.\n    DISPLAY TOTAL.\n    SUBTRACT 3 FROM TOTAL.\n    DISPLAY TOTAL.\n    MULTIPLY TOTAL BY 2 GIVING RESULT.\n    DISPLAY RESULT.\n    DIVIDE RESULT BY 4 GIVING RESULT.\n    DISPLAY RESULT.\n    STOP RUN.",
+          "out": "015\n012\n024\n006"
+        },
+        {
+          "h": "COMPUTE and the remainder",
+          "p": "<code>COMPUTE</code> takes an ordinary formula with <code>+ - * /</code> and brackets. Whole-number fields drop any fraction, they do not round it. <code>DIVIDE ... REMAINDER</code> gives you what is left over.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. COMP.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 Q PIC 9(3).\n01 R PIC 9(3).\nPROCEDURE DIVISION.\n    COMPUTE Q = (2 + 3) * 4.\n    DISPLAY Q.\n    DIVIDE 17 BY 5 GIVING Q REMAINDER R.\n    DISPLAY Q \" remainder \" R.\n    STOP RUN.",
+          "out": "020\n003 remainder 002"
+        },
+        {
+          "h": "Decimals for money",
+          "p": "<code>V</code> in a picture marks where the decimal point is assumed to be. <code>PIC 9(3)V99</code> holds amounts like 123.45 exactly, without the rounding errors of floating point, which is why banks like it. To print the point, move the value into an edited picture with a real <code>.</code> in it. <code>ROUNDED</code> rounds instead of cutting off.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. MONEY.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 PRICE PIC 9(3)V99 VALUE 19.99.\n01 TOTAL PIC 9(4)V99.\n01 SHARE PIC 9(3)V99.\n01 SHOW PIC ZZZ9.99.\nPROCEDURE DIVISION.\n    MULTIPLY PRICE BY 3 GIVING TOTAL.\n    MOVE TOTAL TO SHOW.\n    DISPLAY \"Total:\" SHOW.\n    COMPUTE SHARE ROUNDED = 10 / 3.\n    MOVE SHARE TO SHOW.\n    DISPLAY \"Share:\" SHOW.\n    STOP RUN.",
+          "out": "Total:  59.97\nShare:   3.33"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q1.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 N PIC 9(2) VALUE 8.\nPROCEDURE DIVISION.\n    ADD 4 TO N.\n    DISPLAY N.\n    STOP RUN.",
+          "options": ["12", "4", "8", "84"],
+          "answer": "12",
+          "why": "ADD 4 TO N adds 4 to N and stores the result back in N.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q2.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 N PIC 9(2).\nPROCEDURE DIVISION.\n    DIVIDE 9 BY 2 GIVING N.\n    DISPLAY N.\n    STOP RUN.",
+          "options": ["04", "05", "4.5", "45"],
+          "answer": "04",
+          "why": "N has no decimal places, so the .5 is dropped. Without ROUNDED, COBOL cuts off, it does not round.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q3.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 N PIC 9(2).\nPROCEDURE DIVISION.\n    DIVIDE 9 BY 2 GIVING N ROUNDED.\n    DISPLAY N.\n    STOP RUN.",
+          "options": ["05", "04", "4.5", "09"],
+          "answer": "05",
+          "why": "ROUNDED rounds 4.5 up to 5.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q4.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 Q PIC 9.\n01 R PIC 9.\nPROCEDURE DIVISION.\n    DIVIDE 7 BY 3 GIVING Q REMAINDER R.\n    DISPLAY Q R.\n    STOP RUN.",
+          "options": ["21", "12", "23", "2"],
+          "answer": "21",
+          "why": "7 is 3 twice with 1 left over, so Q is 2 and R is 1, printed side by side.",
+          "kind": "output"
+        },
+        {
+          "q": "Why is PIC 9(5)V99 good for money?",
+          "options": [
+            "It stores the cents exactly, with no floating-point rounding",
+            "It makes numbers print in colour",
+            "It allows negative amounts automatically",
+            "It stores numbers in binary"
+          ],
+          "answer": "It stores the cents exactly, with no floating-point rounding",
+          "why": "V marks an assumed decimal point and the digits are stored exactly, so 0.10 + 0.20 is exactly 0.30."
+        }
+      ]
+    },
+    {
+      "id": "decisions",
+      "title": "Decisions",
+      "summary": "IF, EVALUATE and level-88 condition names.",
+      "sections": [
+        {
+          "p": "<code>IF</code> runs statements when a condition is true, <code>ELSE</code> when it is not, and <code>END-IF</code> closes it. Conditions can be written with symbols (<code>&gt; &lt; =</code>) or words (<code>GREATER THAN</code>), and joined with <code>AND</code>, <code>OR</code> and <code>NOT</code>.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. CHECK.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 BALANCE PIC 9(4) VALUE 250.\nPROCEDURE DIVISION.\n    IF BALANCE > 100\n        DISPLAY \"Plenty saved\"\n    ELSE\n        DISPLAY \"Save more\"\n    END-IF.\n    STOP RUN.",
+          "out": "Plenty saved"
+        },
+        {
+          "h": "EVALUATE",
+          "p": "<code>EVALUATE</code> picks one branch out of many. The first <code>WHEN</code> that matches runs, and <code>WHEN OTHER</code> catches everything else. <code>THRU</code> matches a range.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. GRADE.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 SCORE PIC 9(3) VALUE 82.\nPROCEDURE DIVISION.\n    EVALUATE SCORE\n        WHEN 90 THRU 100 DISPLAY \"A\"\n        WHEN 80 THRU 89 DISPLAY \"B\"\n        WHEN 70 THRU 79 DISPLAY \"C\"\n        WHEN OTHER DISPLAY \"Try again\"\n    END-EVALUATE.\n    STOP RUN.",
+          "out": "B"
+        },
+        {
+          "h": "Condition names",
+          "p": "A level-<code>88</code> item gives a name to some values of the field above it. The name then reads like a true-or-false question, and <code>SET ... TO TRUE</code> moves the matching value in. Real programs use these everywhere for status codes.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. STATUS.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 ACCOUNT-STATUS PIC X VALUE \"O\".\n   88 ACCOUNT-OPEN VALUE \"O\".\n   88 ACCOUNT-CLOSED VALUE \"C\".\nPROCEDURE DIVISION.\n    IF ACCOUNT-OPEN\n        DISPLAY \"Open\"\n    END-IF.\n    SET ACCOUNT-CLOSED TO TRUE.\n    DISPLAY ACCOUNT-STATUS.\n    STOP RUN.",
+          "out": "Open\nC"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q1.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 N PIC 9(2) VALUE 10.\nPROCEDURE DIVISION.\n    IF N > 10\n        DISPLAY \"big\"\n    ELSE\n        DISPLAY \"small\"\n    END-IF.\n    STOP RUN.",
+          "options": ["small", "big", "big\nsmall", "Nothing"],
+          "answer": "small",
+          "why": "10 is not greater than 10, so the ELSE branch runs.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q2.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 DAY-NO PIC 9 VALUE 6.\nPROCEDURE DIVISION.\n    EVALUATE DAY-NO\n        WHEN 1 THRU 5 DISPLAY \"Weekday\"\n        WHEN 6 WHEN 7 DISPLAY \"Weekend\"\n        WHEN OTHER DISPLAY \"No such day\"\n    END-EVALUATE.\n    STOP RUN.",
+          "options": ["Weekend", "Weekday", "No such day", "Weekday\nWeekend"],
+          "answer": "Weekend",
+          "why": "Two WHENs in a row share one action, so 6 or 7 prints Weekend. Only the first matching branch runs.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q3.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 LIGHT PIC X VALUE \"G\".\n   88 STOP-NOW VALUE \"R\".\n   88 GO-ON VALUE \"G\".\nPROCEDURE DIVISION.\n    IF STOP-NOW\n        DISPLAY \"Stop\"\n    ELSE\n        DISPLAY \"Go\"\n    END-IF.\n    STOP RUN.",
+          "options": ["Go", "Stop", "G", "R"],
+          "answer": "Go",
+          "why": "STOP-NOW is true only when LIGHT holds R. It holds G, so the ELSE branch runs.",
+          "kind": "output"
+        },
+        {
+          "q": "What closes an IF statement?",
+          "options": ["END-IF", "FI", "}", "ENDIF."],
+          "answer": "END-IF",
+          "why": "Modern COBOL closes IF with END-IF. Older code ended the whole IF with a full stop instead, which made nested IFs easy to get wrong."
+        }
+      ]
+    },
+    {
+      "id": "loops",
+      "title": "Loops and paragraphs",
+      "summary": "PERFORM TIMES, UNTIL and VARYING, and named paragraphs.",
+      "sections": [
+        {
+          "p": "Loops are written with <code>PERFORM</code>. An inline <code>PERFORM ... END-PERFORM</code> repeats the statements inside it. <code>TIMES</code> gives a fixed count, and <code>VARYING ... FROM ... BY ... UNTIL</code> is a counting loop.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. COUNT.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 I PIC 9(2).\nPROCEDURE DIVISION.\n    PERFORM 2 TIMES\n        DISPLAY \"Hop\"\n    END-PERFORM.\n    PERFORM VARYING I FROM 1 BY 1 UNTIL I > 3\n        DISPLAY \"Step \" I\n    END-PERFORM.\n    STOP RUN.",
+          "out": "Hop\nHop\nStep 01\nStep 02\nStep 03"
+        },
+        {
+          "h": "UNTIL is checked first",
+          "p": "<code>PERFORM UNTIL</code> tests the condition before each pass, so the body might not run at all. It stops as soon as the condition is true.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. DOUBLE.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 N PIC 9(3) VALUE 1.\nPROCEDURE DIVISION.\n    PERFORM UNTIL N > 20\n        DISPLAY N\n        MULTIPLY 2 BY N\n    END-PERFORM.\n    STOP RUN.",
+          "out": "001\n002\n004\n008\n016"
+        },
+        {
+          "h": "Paragraphs",
+          "p": "A <b>paragraph</b> is a named block of statements, a little like a procedure with no parameters. <code>PERFORM NAME</code> runs it and comes back. Put <code>STOP RUN</code> before the paragraphs, or the program falls into them after the main part.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. PARAS.\nPROCEDURE DIVISION.\nMAIN-PARA.\n    PERFORM GREET.\n    PERFORM GREET 2 TIMES.\n    STOP RUN.\nGREET.\n    DISPLAY \"Hello from GREET\".",
+          "out": "Hello from GREET\nHello from GREET\nHello from GREET"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q1.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 I PIC 9.\nPROCEDURE DIVISION.\n    PERFORM VARYING I FROM 2 BY 2 UNTIL I > 6\n        DISPLAY I\n    END-PERFORM.\n    STOP RUN.",
+          "options": ["2\n4\n6", "2\n4", "2\n4\n6\n8", "0\n2\n4\n6"],
+          "answer": "2\n4\n6",
+          "why": "I takes 2, 4 and 6. When it reaches 8 the UNTIL test is true and the loop stops before printing.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q2.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 N PIC 9 VALUE 5.\nPROCEDURE DIVISION.\n    PERFORM UNTIL N > 3\n        DISPLAY \"inside\"\n    END-PERFORM.\n    DISPLAY \"done\".\n    STOP RUN.",
+          "options": ["done", "inside\ndone", "inside", "Nothing"],
+          "answer": "done",
+          "why": "N is already greater than 3, and PERFORM UNTIL checks before the first pass, so the body never runs.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q3.\nPROCEDURE DIVISION.\nMAIN-PARA.\n    DISPLAY \"A\".\n    PERFORM SAY-B.\n    DISPLAY \"C\".\n    STOP RUN.\nSAY-B.\n    DISPLAY \"B\".",
+          "options": ["A\nB\nC", "A\nC\nB", "A\nC", "B\nA\nC"],
+          "answer": "A\nB\nC",
+          "why": "PERFORM SAY-B jumps to the paragraph, runs it, and comes back to the next statement.",
+          "kind": "output"
+        },
+        {
+          "q": "What happens if you leave out STOP RUN before the paragraphs?",
+          "options": [
+            "The program carries on into the paragraphs below",
+            "Nothing, it stops anyway",
+            "It will not compile",
+            "It loops forever from the top"
+          ],
+          "answer": "The program carries on into the paragraphs below",
+          "why": "Statements run top to bottom, so without STOP RUN the paragraphs run once more after the main part."
+        }
+      ]
+    },
+    {
+      "id": "records",
+      "title": "Records and tables",
+      "summary": "Group items, OCCURS and subscripts.",
+      "sections": [
+        {
+          "p": "Data is described as <b>records</b>. A group item at level <code>01</code> holds smaller fields at higher levels such as <code>05</code>. You can work with one field, or with the whole record as a single string of characters. This is how COBOL lays out each line of a bank file.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. RECORD.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 CUSTOMER.\n   05 CUST-ID PIC 9(4) VALUE 17.\n   05 CUST-NAME PIC X(6) VALUE \"Hazel\".\n   05 CUST-NUTS PIC 9(3) VALUE 120.\nPROCEDURE DIVISION.\n    DISPLAY CUST-NAME.\n    DISPLAY CUSTOMER.\n    STOP RUN.",
+          "out": "Hazel\n0017Hazel 120"
+        },
+        {
+          "h": "Tables with OCCURS",
+          "p": "<code>OCCURS</code> repeats a field to make a table (an array). Subscripts are written in brackets and <b>start at 1</b>, not 0.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. TABLE.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 STASH.\n   05 NUTS PIC 9(2) OCCURS 3 TIMES.\n01 I PIC 9.\n01 TOTAL PIC 9(3) VALUE 0.\nPROCEDURE DIVISION.\n    MOVE 12 TO NUTS(1).\n    MOVE 30 TO NUTS(2).\n    MOVE 5 TO NUTS(3).\n    PERFORM VARYING I FROM 1 BY 1 UNTIL I > 3\n        ADD NUTS(I) TO TOTAL\n    END-PERFORM.\n    DISPLAY \"Total \" TOTAL.\n    DISPLAY \"Second \" NUTS(2).\n    STOP RUN.",
+          "out": "Total 047\nSecond 30"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q1.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 DATE-REC.\n   05 YYYY PIC 9(4) VALUE 1959.\n   05 MM PIC 9(2) VALUE 5.\nPROCEDURE DIVISION.\n    DISPLAY DATE-REC.\n    STOP RUN.",
+          "options": ["195905", "1959 5", "1959-05", "19595"],
+          "answer": "195905",
+          "why": "A group item is all its fields side by side. MM is two digits wide, so 5 shows as 05.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q2.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 T.\n   05 W PIC X(3) OCCURS 3 TIMES.\nPROCEDURE DIVISION.\n    MOVE \"OAK\" TO W(1).\n    MOVE \"ELM\" TO W(2).\n    MOVE \"ASH\" TO W(3).\n    DISPLAY W(1).\n    STOP RUN.",
+          "options": ["OAK", "ELM", "ASH", "OAKELMASH"],
+          "answer": "OAK",
+          "why": "COBOL subscripts start at 1, so W(1) is the first entry.",
+          "kind": "output"
+        },
+        {
+          "q": "What does OCCURS 10 TIMES make?",
+          "options": [
+            "A table of ten entries",
+            "A loop that runs ten times",
+            "A ten-character field",
+            "Ten separate programs"
+          ],
+          "answer": "A table of ten entries",
+          "why": "OCCURS repeats the field to make an array. PERFORM is what loops."
+        },
+        {
+          "q": "What is the first subscript of a COBOL table?",
+          "options": ["1", "0", "-1", "It depends on the compiler"],
+          "answer": "1",
+          "why": "COBOL counts table entries from 1."
+        }
+      ]
+    },
+    {
+      "id": "strings",
+      "title": "STRING, UNSTRING and INSPECT",
+      "summary": "Joining fields, splitting lines and counting characters.",
+      "sections": [
+        {
+          "p": "<code>STRING ... INTO</code> builds one field from several pieces. <code>DELIMITED BY SPACE</code> stops at the first space (so trailing padding is skipped); <code>DELIMITED BY SIZE</code> takes the whole sending item. The destination is not cleared first unless you <code>MOVE SPACES</code> into it yourself.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. STRJOIN.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 FIRST-NAME PIC X(8) VALUE \"Hazel\".\n01 LAST-NAME PIC X(8) VALUE \"Oak\".\n01 FULL-NAME PIC X(16).\nPROCEDURE DIVISION.\n    STRING FIRST-NAME DELIMITED BY SPACE\n           \" \" DELIMITED BY SIZE\n           LAST-NAME DELIMITED BY SPACE\n           INTO FULL-NAME.\n    DISPLAY \"[\" FULL-NAME \"]\".\n    STOP RUN.",
+          "out": "[Hazel Oak       ]"
+        },
+        {
+          "h": "UNSTRING",
+          "p": "<code>UNSTRING</code> splits a line on a delimiter into several fields. It is the usual way to pull apart a CSV-style record held in working storage.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. UNSTR.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 LINE-IN PIC X(24) VALUE \"acorn,walnut,pecan\".\n01 N1 PIC X(8).\n01 N2 PIC X(8).\n01 N3 PIC X(8).\nPROCEDURE DIVISION.\n    UNSTRING LINE-IN DELIMITED BY \",\"\n        INTO N1 N2 N3.\n    DISPLAY N1.\n    DISPLAY N2.\n    DISPLAY N3.\n    STOP RUN.",
+          "out": "acorn\nwalnut\npecan"
+        },
+        {
+          "h": "INSPECT",
+          "p": "<code>INSPECT ... TALLYING</code> counts characters or runs of characters. <code>INSPECT ... REPLACING</code> rewrites them in place. Both are common on status codes and fixed-width records.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. INSP.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 MSG PIC X(12) VALUE \"aaabaa\".\n01 N PIC 9(2) VALUE 0.\nPROCEDURE DIVISION.\n    INSPECT MSG TALLYING N FOR ALL \"a\".\n    DISPLAY \"count \" N.\n    INSPECT MSG REPLACING ALL \"a\" BY \"x\".\n    DISPLAY MSG.\n    STOP RUN.",
+          "out": "count 05\nxxxbxx"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q1.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 A PIC X(6) VALUE \"Oak\".\n01 B PIC X(6) VALUE \"Tree\".\n01 C PIC X(12).\nPROCEDURE DIVISION.\n    STRING A DELIMITED BY SPACE\n           B DELIMITED BY SPACE\n           INTO C.\n    DISPLAY C.\n    STOP RUN.",
+          "options": ["OakTree", "Oak Tree", "Oak   Tree", "TreeOak"],
+          "answer": "OakTree",
+          "why": "DELIMITED BY SPACE drops the padding on each field, and nothing puts a space between them.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q2.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 S PIC X(8) VALUE \"abacab\".\n01 N PIC 9 VALUE 0.\nPROCEDURE DIVISION.\n    INSPECT S TALLYING N FOR ALL \"a\".\n    DISPLAY N.\n    STOP RUN.",
+          "options": ["3", "2", "6", "0"],
+          "answer": "3",
+          "why": "There are three a characters in abacab.",
+          "kind": "output"
+        },
+        {
+          "q": "What does DELIMITED BY SIZE mean on a STRING sender?",
+          "options": [
+            "Take the whole field, including trailing spaces",
+            "Stop at the first space",
+            "Cut the field to one character",
+            "Skip empty fields"
+          ],
+          "answer": "Take the whole field, including trailing spaces",
+          "why": "SIZE means the full picture width. SPACE stops at the first space."
+        },
+        {
+          "q": "What is UNSTRING for?",
+          "options": [
+            "Splitting one field into several on a delimiter",
+            "Joining fields together",
+            "Sorting a table",
+            "Opening a file"
+          ],
+          "answer": "Splitting one field into several on a delimiter",
+          "why": "STRING joins; UNSTRING splits."
+        }
+      ]
+    },
+    {
+      "id": "files",
+      "title": "Sequential files",
+      "summary": "SELECT, FD, OPEN, WRITE, READ and CLOSE.",
+      "sections": [
+        {
+          "p": "Real COBOL work is mostly files of records. <code>SELECT</code> in the <code>ENVIRONMENT DIVISION</code> names a file and how it is organised. <code>LINE SEQUENTIAL</code> is a plain text file, one record per line — fine for learning and for many reports. The <code>FD</code> in the <code>FILE SECTION</code> describes each record. <code>OPEN OUTPUT</code> creates or replaces; <code>WRITE</code> adds a record; <code>OPEN INPUT</code> and <code>READ</code> walk the file; <code>CLOSE</code> finishes.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. NUTFILE.\nENVIRONMENT DIVISION.\nINPUT-OUTPUT SECTION.\nFILE-CONTROL.\n    SELECT NUT-FILE ASSIGN TO \"nuts.dat\"\n        ORGANIZATION IS LINE SEQUENTIAL.\nDATA DIVISION.\nFILE SECTION.\nFD NUT-FILE.\n01 NUT-REC PIC X(16).\nWORKING-STORAGE SECTION.\n01 DONE PIC X VALUE \"N\".\n   88 FINISHED VALUE \"Y\".\nPROCEDURE DIVISION.\n    OPEN OUTPUT NUT-FILE.\n    MOVE \"acorn 12\" TO NUT-REC.\n    WRITE NUT-REC.\n    MOVE \"walnut 5\" TO NUT-REC.\n    WRITE NUT-REC.\n    CLOSE NUT-FILE.\n    OPEN INPUT NUT-FILE.\n    PERFORM UNTIL FINISHED\n        READ NUT-FILE\n            AT END SET FINISHED TO TRUE\n            NOT AT END DISPLAY NUT-REC\n        END-READ\n    END-PERFORM.\n    CLOSE NUT-FILE.\n    STOP RUN.",
+          "out": "acorn 12\nwalnut 5"
+        },
+        {
+          "h": "AT END on every READ",
+          "p": "A <code>READ</code> needs an <code>AT END</code> path (or an equivalent status check). The usual pattern is a level-88 flag, set when the read hits the end, and a <code>PERFORM UNTIL</code> that stops on that flag. Forgetting <code>AT END</code> is a classic beginner bug."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q1.\nENVIRONMENT DIVISION.\nINPUT-OUTPUT SECTION.\nFILE-CONTROL.\n    SELECT F ASSIGN TO \"t.dat\"\n        ORGANIZATION IS LINE SEQUENTIAL.\nDATA DIVISION.\nFILE SECTION.\nFD F.\n01 REC PIC X(8).\nWORKING-STORAGE SECTION.\n01 DONE PIC X VALUE \"N\".\n   88 FINISHED VALUE \"Y\".\nPROCEDURE DIVISION.\n    OPEN OUTPUT F.\n    MOVE \"one\" TO REC.\n    WRITE REC.\n    MOVE \"two\" TO REC.\n    WRITE REC.\n    CLOSE F.\n    OPEN INPUT F.\n    PERFORM UNTIL FINISHED\n        READ F\n            AT END SET FINISHED TO TRUE\n            NOT AT END DISPLAY REC\n        END-READ\n    END-PERFORM.\n    CLOSE F.\n    STOP RUN.",
+          "options": ["one\ntwo", "two\none", "one two", "Nothing"],
+          "answer": "one\ntwo",
+          "why": "Records are written in order and read back the same way.",
+          "kind": "output"
+        },
+        {
+          "q": "What does ORGANIZATION IS LINE SEQUENTIAL mean?",
+          "options": [
+            "A text file with one record per line",
+            "A database index",
+            "Records stored in memory only",
+            "A sorted binary file"
+          ],
+          "answer": "A text file with one record per line",
+          "why": "LINE SEQUENTIAL maps each WRITE to a line of text. Mainframe shops often use plain SEQUENTIAL with fixed-length records instead."
+        },
+        {
+          "q": "Where do you declare SELECT and ASSIGN?",
+          "options": [
+            "ENVIRONMENT DIVISION, under FILE-CONTROL",
+            "PROCEDURE DIVISION",
+            "IDENTIFICATION DIVISION",
+            "Only in WORKING-STORAGE"
+          ],
+          "answer": "ENVIRONMENT DIVISION, under FILE-CONTROL",
+          "why": "SELECT links the COBOL file name to an external path before the FD describes the record."
+        },
+        {
+          "q": "What should every READ provide?",
+          "options": [
+            "An AT END path (or status check)",
+            "A WRITE afterwards",
+            "A new FD",
+            "A STRING"
+          ],
+          "answer": "An AT END path (or status check)",
+          "why": "Without AT END, hitting the end of the file is undefined behaviour in many compilers."
+        }
+      ]
+    },
+    {
+      "id": "search",
+      "title": "SEARCH on tables",
+      "summary": "INDEXED BY, SET and SEARCH.",
+      "sections": [
+        {
+          "p": "A table can be searched with <code>SEARCH</code> when it has an <code>INDEXED BY</code> index name. <code>SET index TO 1</code> starts at the first entry. <code>SEARCH</code> walks forward until a <code>WHEN</code> condition matches, or <code>AT END</code> if nothing does. This is the COBOL way to look up a code in a small in-memory table.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. SRCH.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 STASH.\n   05 NUT-ROW OCCURS 4 TIMES INDEXED BY NIX.\n      10 N-NAME PIC X(8).\n      10 N-QTY PIC 9(3).\n01 WANT PIC X(8).\nPROCEDURE DIVISION.\n    MOVE \"acorn\" TO N-NAME(1)\n    MOVE 12 TO N-QTY(1)\n    MOVE \"walnut\" TO N-NAME(2)\n    MOVE 5 TO N-QTY(2)\n    MOVE \"hazel\" TO N-NAME(3)\n    MOVE 9 TO N-QTY(3)\n    MOVE \"pecan\" TO N-NAME(4)\n    MOVE 2 TO N-QTY(4)\n    MOVE \"hazel\" TO WANT\n    SET NIX TO 1\n    SEARCH NUT-ROW\n        AT END DISPLAY \"missing\"\n        WHEN N-NAME(NIX) = WANT\n            DISPLAY \"found \" N-QTY(NIX)\n    END-SEARCH.\n    MOVE \"oak\" TO WANT\n    SET NIX TO 1\n    SEARCH NUT-ROW\n        AT END DISPLAY \"missing\"\n        WHEN N-NAME(NIX) = WANT\n            DISPLAY \"found \" N-QTY(NIX)\n    END-SEARCH.\n    STOP RUN.",
+          "out": "found 009\nmissing"
+        },
+        {
+          "h": "SEARCH ALL",
+          "p": "For a large table that is kept sorted, <code>SEARCH ALL</code> does a binary search. The table needs a <code>KEY IS</code> clause and the data must already be in key order. Day-to-day code often uses plain <code>SEARCH</code> on small tables and file lookups for big ones."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q1.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 T.\n   05 R OCCURS 3 TIMES INDEXED BY IX.\n      10 K PIC X.\n      10 Q PIC 9.\n01 WANT PIC X VALUE \"B\".\nPROCEDURE DIVISION.\n    MOVE \"A\" TO K(1)\n    MOVE 1 TO Q(1)\n    MOVE \"B\" TO K(2)\n    MOVE 7 TO Q(2)\n    MOVE \"C\" TO K(3)\n    MOVE 3 TO Q(3)\n    SET IX TO 1\n    SEARCH R\n        AT END DISPLAY \"no\"\n        WHEN K(IX) = WANT\n            DISPLAY \"yes \" Q(IX)\n    END-SEARCH.\n    STOP RUN.",
+          "options": ["yes 7", "yes 1", "yes 3", "no"],
+          "answer": "yes 7",
+          "why": "B is the second row, whose Q is 7.",
+          "kind": "output"
+        },
+        {
+          "q": "What must you do before SEARCH?",
+          "options": [
+            "SET the index to the starting entry (often 1)",
+            "SORT the table always",
+            "OPEN a file",
+            "MOVE SPACES to the table"
+          ],
+          "answer": "SET the index to the starting entry (often 1)",
+          "why": "SEARCH continues from the current index. Starting at 1 scans the whole table."
+        },
+        {
+          "q": "What does INDEXED BY name on OCCURS declare?",
+          "options": [
+            "An index for SEARCH (and subscripting)",
+            "A file key",
+            "A paragraph name",
+            "A PIC for numbers"
+          ],
+          "answer": "An index for SEARCH (and subscripting)",
+          "why": "The index is not a PIC 9 field; SET and SEARCH manage it."
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Project: a nut-crew payroll",
+      "summary": "Tables, EVALUATE, edited money and a full-time bonus.",
+      "sections": [
+        {
+          "p": "A tiny payroll for three squirrels: each has a name, an hourly rate and hours worked. Gross pay is rate times hours. Anyone on 8.0 hours or more is full-time and gets a 10% bonus; the others are part-time with no bonus. The program prints each name, the final amount and an F/P status, then the crew total — the same shape as a payslip summary from a batch job.",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. NUTPAY.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 CREW-SIZE PIC 9 VALUE 3.\n01 CREW.\n   05 WORKER OCCURS 3 TIMES.\n      10 W-NAME PIC X(8).\n      10 W-RATE PIC 9(2)V99.\n      10 W-HOURS PIC 9(2)V9.\n      10 W-GROSS PIC 9(4)V99.\n01 I PIC 9.\n01 TOTAL PIC 9(5)V99 VALUE 0.\n01 MONEY-OUT PIC ZZZ9.99.\n01 NAME-OUT PIC X(8).\n01 BONUS PIC 9(3)V99.\n01 STATUS-CODE PIC X.\n   88 FULL-TIME VALUE \"F\".\n   88 PART-TIME VALUE \"P\".\nPROCEDURE DIVISION.\n    MOVE \"Hazel\" TO W-NAME(1)\n    MOVE 12.50 TO W-RATE(1)\n    MOVE 8.0 TO W-HOURS(1)\n    MOVE \"Pip\" TO W-NAME(2)\n    MOVE 10.00 TO W-RATE(2)\n    MOVE 6.5 TO W-HOURS(2)\n    MOVE \"Rowan\" TO W-NAME(3)\n    MOVE 11.25 TO W-RATE(3)\n    MOVE 7.0 TO W-HOURS(3)\n    PERFORM VARYING I FROM 1 BY 1 UNTIL I > CREW-SIZE\n        MULTIPLY W-RATE(I) BY W-HOURS(I) GIVING W-GROSS(I)\n        EVALUATE TRUE\n            WHEN W-HOURS(I) >= 8.0\n                SET FULL-TIME TO TRUE\n                COMPUTE BONUS = W-GROSS(I) * 0.10\n            WHEN OTHER\n                SET PART-TIME TO TRUE\n                MOVE 0 TO BONUS\n        END-EVALUATE\n        ADD BONUS TO W-GROSS(I)\n        ADD W-GROSS(I) TO TOTAL\n        MOVE W-NAME(I) TO NAME-OUT\n        MOVE W-GROSS(I) TO MONEY-OUT\n        DISPLAY NAME-OUT MONEY-OUT \" \" STATUS-CODE\n    END-PERFORM.\n    MOVE TOTAL TO MONEY-OUT\n    DISPLAY \"TOTAL   \" MONEY-OUT\n    STOP RUN.",
+          "out": "Hazel    110.00 F\nPip       65.00 P\nRowan     78.75 P\nTOTAL    253.75"
+        },
+        {
+          "h": "Ideas to try",
+          "p": "Write each payslip line with <code>STRING</code>, save the report to a <code>LINE SEQUENTIAL</code> file, or look up a tax rate from a small table with <code>SEARCH</code>."
+        }
+      ],
+      "practice": [
+        {
+          "q": "Why does Hazel print 110.00 instead of 100.00?",
+          "options": [
+            "An 8.0-hour day gets a 10% bonus on top of rate × hours",
+            "The rate was wrong",
+            "PIC ZZZ9.99 rounds up",
+            "STATUS-CODE adds 10"
+          ],
+          "answer": "An 8.0-hour day gets a 10% bonus on top of rate × hours",
+          "why": "12.50 × 8.0 is 100.00, plus 10.00 bonus is 110.00."
+        },
+        {
+          "q": "What does EVALUATE TRUE buy you here?",
+          "options": [
+            "A clear multi-way branch on conditions, not on one variable",
+            "Faster arithmetic",
+            "File I/O",
+            "Automatic tax"
+          ],
+          "answer": "A clear multi-way branch on conditions, not on one variable",
+          "why": "EVALUATE TRUE with WHEN conditions is COBOL's structured way to choose among rules."
+        },
+        {
+          "q": "What status letter does Pip get?",
+          "code": "IDENTIFICATION DIVISION.\nPROGRAM-ID. Q1.\nDATA DIVISION.\nWORKING-STORAGE SECTION.\n01 HOURS PIC 9(2)V9 VALUE 6.5.\n01 STATUS-CODE PIC X.\n   88 FULL-TIME VALUE \"F\".\n   88 PART-TIME VALUE \"P\".\nPROCEDURE DIVISION.\n    EVALUATE TRUE\n        WHEN HOURS >= 8.0 SET FULL-TIME TO TRUE\n        WHEN OTHER SET PART-TIME TO TRUE\n    END-EVALUATE.\n    DISPLAY STATUS-CODE.\n    STOP RUN.",
+          "options": ["P", "F", "6.5", "PART-TIME"],
+          "answer": "P",
+          "why": "6.5 is below 8.0, so the OTHER branch sets PART-TIME.",
+          "kind": "output"
+        }
+      ]
+    }
+  ]
+}
