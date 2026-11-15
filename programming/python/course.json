@@ -1,0 +1,1214 @@
+{
+  "schema": "programming-course@1",
+  "id": "python",
+  "name": "Python",
+  "title": "Python from the first line",
+  "intro": "Python reads almost like plain English, which makes it a gentle first language and a serious everyday tool: it runs websites, science, spreadsheets-on-steroids and the scripts that glue other programs together. These lessons go from your first <code>print</code> to writing small classes. Every example shows exactly what it prints. To run code yourself, install Python 3 from python.org and type <code>python</code> (or <code>py</code> on Windows) in a terminal, or save the code in a file ending in <code>.py</code> and run <code>python file.py</code>.",
+  "comment": "#",
+  "keywords": [
+    "False",
+    "None",
+    "True",
+    "and",
+    "as",
+    "assert",
+    "break",
+    "class",
+    "continue",
+    "def",
+    "del",
+    "elif",
+    "else",
+    "except",
+    "finally",
+    "for",
+    "from",
+    "global",
+    "if",
+    "import",
+    "in",
+    "is",
+    "lambda",
+    "nonlocal",
+    "not",
+    "or",
+    "pass",
+    "raise",
+    "return",
+    "try",
+    "while",
+    "with",
+    "yield"
+  ],
+  "builtins": [
+    "print",
+    "len",
+    "range",
+    "input",
+    "int",
+    "float",
+    "str",
+    "bool",
+    "list",
+    "dict",
+    "set",
+    "tuple",
+    "type",
+    "sorted",
+    "sum",
+    "min",
+    "max",
+    "abs",
+    "round",
+    "enumerate",
+    "zip",
+    "open",
+    "isinstance",
+    "self"
+  ],
+  "lessons": [
+    {
+      "id": "first",
+      "title": "Your first program",
+      "summary": "print, strings and comments.",
+      "sections": [
+        {
+          "p": "<code>print</code> shows whatever you put between its brackets. Text goes in quotes; single and double quotes mean the same thing. Each <code>print</code> starts a new line.",
+          "code": "print(\"Hello, squirrel!\")\nprint('Nuts are ready.')\nprint(7)",
+          "out": "Hello, squirrel!\nNuts are ready.\n7"
+        },
+        {
+          "h": "Several things at once",
+          "p": "Separate values with commas and <code>print</code> puts a space between them. Text in quotes is a <b>string</b>; numbers need no quotes.",
+          "code": "print(\"I have\", 3, \"acorns\")\nprint(\"a\", \"b\", \"c\", sep=\"-\")",
+          "out": "I have 3 acorns\na-b-c"
+        },
+        {
+          "h": "Comments",
+          "p": "Everything after a <code>#</code> is a comment: Python ignores it. Comments are notes for people reading the code, including you next month.",
+          "code": "# This line does nothing.\nprint(\"Only this shows\")  # a comment can follow code too",
+          "out": "Only this shows"
+        },
+        {
+          "h": "Special characters",
+          "p": "Inside a string, <code>\\n</code> starts a new line and <code>\\t</code> is a tab. To put a quote inside, use the other kind of quote around the string.",
+          "code": "print(\"one\\ntwo\")\nprint(\"She said 'hi'\")",
+          "out": "one\ntwo\nShe said 'hi'"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(\"Up\", \"the\", \"tree\")",
+          "options": [
+            "Up the tree",
+            "Upthetree",
+            "Up,the,tree",
+            "\"Up\" \"the\" \"tree\""
+          ],
+          "answer": "Up the tree",
+          "why": "Commas between values become single spaces, and the quotes are not printed."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "# print(\"hidden\")\nprint(\"shown\")",
+          "options": ["shown", "hidden\nshown", "# print(\"hidden\")\nshown", "Nothing"],
+          "answer": "shown",
+          "why": "The first line is a comment because it starts with #, so it never runs."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(\"x\", \"y\", sep=\"\")",
+          "options": ["xy", "x y", "x\ny", "x,y"],
+          "answer": "xy",
+          "why": "sep sets what goes between the values; an empty string means nothing at all."
+        },
+        {
+          "q": "Which line is a valid string with an apostrophe in it?",
+          "options": ["\"It's mine\"", "'It's mine'", "It's mine", "('It's mine')"],
+          "answer": "\"It's mine\"",
+          "why": "Double quotes around the text let the single quote inside be an ordinary character."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(\"a\\nb\")",
+          "options": ["a\nb", "a b", "anb", "a\\nb"],
+          "answer": "a\nb",
+          "why": "\\n inside a string is a newline, so b lands on the next line."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(\"Hi\", end=\"\")\nprint(\"!\")",
+          "options": ["Hi!", "Hi\n!", "Hi !", "Hi"],
+          "answer": "Hi!",
+          "why": "end=\"\" stops print from adding its usual newline, so the next print carries on the same line."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(\"one\", \"two\", sep=\"\\n\")",
+          "options": ["one\ntwo", "one two", "one\\ntwo", "onetwo"],
+          "answer": "one\ntwo",
+          "why": "sep can be a newline, so the two values land on separate lines."
+        }
+      ]
+    },
+    {
+      "id": "variables",
+      "title": "Variables and types",
+      "summary": "Names for values, and the four basic kinds of value.",
+      "sections": [
+        {
+          "p": "A <b>variable</b> is a name that points at a value. <code>=</code> means “make this name point at this value”, not “is equal to”. You can point the name somewhere else later.",
+          "code": "nuts = 5\nprint(nuts)\nnuts = nuts + 2\nprint(nuts)",
+          "out": "5\n7"
+        },
+        {
+          "h": "Four basic types",
+          "p": "Whole numbers are <code>int</code>, numbers with a decimal point are <code>float</code>, text is <code>str</code>, and <code>True</code>/<code>False</code> are <code>bool</code>. <code>type()</code> tells you which one you have.",
+          "code": "print(type(42))\nprint(type(4.2))\nprint(type(\"42\"))\nprint(type(True))",
+          "out": "<class 'int'>\n<class 'float'>\n<class 'str'>\n<class 'bool'>"
+        },
+        {
+          "h": "Converting",
+          "p": "<code>int()</code>, <code>float()</code> and <code>str()</code> turn one type into another. This matters because <code>\"2\" + \"3\"</code> joins text while <code>2 + 3</code> adds numbers.",
+          "code": "print(\"2\" + \"3\")\nprint(int(\"2\") + int(\"3\"))\nprint(\"Score: \" + str(10))",
+          "out": "23\n5\nScore: 10"
+        },
+        {
+          "h": "f-strings",
+          "p": "Put an <code>f</code> before the quotes and anything in <code>{braces}</code> is filled in from your variables. This is the everyday way to build a message.",
+          "code": "name = \"Hazel\"\nage = 3\nprint(f\"{name} is {age} years old\")\nprint(f\"Next year: {age + 1}\")",
+          "out": "Hazel is 3 years old\nNext year: 4"
+        },
+        {
+          "h": "Naming rules",
+          "p": "Names use letters, digits and underscores, and cannot start with a digit. Case matters: <code>Nuts</code> and <code>nuts</code> are different. Python style is lowercase words joined by underscores: <code>nuts_buried</code>."
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "x = 4\nx = x * 2\nprint(x)",
+          "options": ["8", "4", "x * 2", "16"],
+          "answer": "8",
+          "why": "x starts at 4; the second line takes the current 4, doubles it and points x at 8."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(\"5\" + \"5\")",
+          "options": ["55", "10", "5 5", "An error"],
+          "answer": "55",
+          "why": "Both are strings, so + joins them end to end."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(type(3.0))",
+          "options": ["<class 'float'>", "<class 'int'>", "<class 'str'>", "3.0"],
+          "answer": "<class 'float'>",
+          "why": "The decimal point makes 3.0 a float, even though it is a whole number."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "tree = \"oak\"\nprint(f\"I live in an {tree}\")",
+          "options": [
+            "I live in an oak",
+            "I live in an {tree}",
+            "I live in an tree",
+            "f\"I live in an oak\""
+          ],
+          "answer": "I live in an oak",
+          "why": "The f before the quotes makes {tree} get replaced by the variable's value."
+        },
+        {
+          "q": "Which is a valid variable name?",
+          "options": ["seeds_2", "2seeds", "my seeds", "seeds-2"],
+          "answer": "seeds_2",
+          "why": "Names cannot start with a digit or contain spaces or hyphens; underscores and later digits are fine."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "a = 1\nb = a\na = 9\nprint(b)",
+          "options": ["1", "9", "a", "An error"],
+          "answer": "1",
+          "why": "b was pointed at the value 1. Moving a to 9 afterwards does not move b."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(int(3.9) + float(\"2\"))",
+          "options": ["5.0", "5", "3.92", "An error"],
+          "answer": "5.0",
+          "why": "int chops 3.9 down to 3; float(\"2\") is 2.0; 3 + 2.0 is the float 5.0."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "ready = True\nprint(type(ready))",
+          "options": ["<class 'bool'>", "<class 'True'>", "<class 'int'>", "True"],
+          "answer": "<class 'bool'>",
+          "why": "True and False are bool values."
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "title": "Numbers and arithmetic",
+      "summary": "+ − * /, whole-number division, remainders and powers.",
+      "sections": [
+        {
+          "p": "The usual operators work as on a calculator. Note that <code>/</code> always gives a float, even when the division is exact.",
+          "code": "print(7 + 3)\nprint(7 - 3)\nprint(7 * 3)\nprint(6 / 3)",
+          "out": "10\n4\n21\n2.0"
+        },
+        {
+          "h": "Floor division and remainder",
+          "p": "<code>//</code> divides and drops the fraction. <code>%</code> gives what is left over. Together they answer “how many full groups, and how many spare?”.",
+          "code": "acorns = 17\nprint(acorns // 5)   # full bags of 5\nprint(acorns % 5)    # left over",
+          "out": "3\n2"
+        },
+        {
+          "h": "Powers and order",
+          "p": "<code>**</code> raises to a power. Python follows maths order: powers first, then <code>* / // %</code>, then <code>+ -</code>. Brackets go first of all.",
+          "code": "print(2 ** 3)\nprint(2 + 3 * 4)\nprint((2 + 3) * 4)",
+          "out": "8\n14\n20"
+        },
+        {
+          "h": "Handy helpers",
+          "p": "<code>round</code>, <code>abs</code>, <code>min</code> and <code>max</code> are built in. Shortcuts like <code>+=</code> update a variable in place.",
+          "code": "print(round(3.14159, 2))\nprint(abs(-8))\nprint(max(4, 9, 2))\ntotal = 10\ntotal += 5\nprint(total)",
+          "out": "3.14\n8\n9\n15"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(10 / 2)",
+          "options": ["5.0", "5", "5.00", "An error"],
+          "answer": "5.0",
+          "why": "/ always produces a float."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(14 % 4)",
+          "options": ["2", "3", "3.5", "0"],
+          "answer": "2",
+          "why": "4 fits into 14 three times (12) with 2 left over."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(14 // 4)",
+          "options": ["3", "3.5", "2", "4"],
+          "answer": "3",
+          "why": "// keeps only the whole part of 3.5."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(1 + 2 * 3)",
+          "options": ["7", "9", "6", "123"],
+          "answer": "7",
+          "why": "Multiplication comes first: 2 * 3 = 6, then 1 + 6."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "n = 3\nn *= 4\nprint(n)",
+          "options": ["12", "7", "3", "34"],
+          "answer": "12",
+          "why": "n *= 4 is short for n = n * 4."
+        },
+        {
+          "q": "How would you test whether a number n is even?",
+          "options": ["n % 2 == 0", "n / 2 == 0", "n // 2 == 1", "n ** 2 == 0"],
+          "answer": "n % 2 == 0",
+          "why": "An even number leaves no remainder when divided by 2."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(2 ** 4)",
+          "options": ["16", "8", "6", "24"],
+          "answer": "16",
+          "why": "** raises to a power: 2 to the 4th is 16."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(round(3.6), abs(-2), max(1, 9, 4))",
+          "options": ["4 2 9", "3 2 9", "4 -2 9", "3.6 2 9"],
+          "answer": "4 2 9",
+          "why": "round goes to the nearest whole number, abs drops the sign, max picks the largest."
+        }
+      ]
+    },
+    {
+      "id": "strings",
+      "title": "Working with strings",
+      "summary": "Indexing, slicing, length and string methods.",
+      "sections": [
+        {
+          "p": "A string is a sequence of characters, numbered from <b>0</b>. Square brackets pick one out. Negative numbers count from the end.",
+          "code": "word = \"squirrel\"\nprint(word[0])\nprint(word[3])\nprint(word[-1])\nprint(len(word))",
+          "out": "s\ni\nl\n8"
+        },
+        {
+          "h": "Slices",
+          "p": "<code>word[a:b]</code> takes characters from position <code>a</code> up to, but not including, <code>b</code>. Leave a side empty to mean “from the start” or “to the end”.",
+          "code": "word = \"squirrel\"\nprint(word[0:3])\nprint(word[3:])\nprint(word[:-1])",
+          "out": "squ\nirrel\nsquirre"
+        },
+        {
+          "h": "Methods",
+          "p": "Strings come with tools called with a dot. They return a new string; the original never changes (strings are <b>immutable</b>).",
+          "code": "s = \"  Pine Cone  \"\nprint(s.strip())\nprint(s.strip().upper())\nprint(s.strip().replace(\"Cone\", \"Nut\"))\nprint(\"a,b,c\".split(\",\"))",
+          "out": "Pine Cone\nPINE CONE\nPine Nut\n['a', 'b', 'c']"
+        },
+        {
+          "h": "Searching",
+          "p": "<code>in</code> checks whether one string appears inside another. <code>find</code> gives the position, or <code>-1</code> if it is missing.",
+          "code": "print(\"nut\" in \"chestnut\")\nprint(\"chestnut\".find(\"nut\"))\nprint(\"chestnut\".find(\"pea\"))",
+          "out": "True\n5\n-1"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(\"forest\"[1])",
+          "options": ["o", "f", "r", "fo"],
+          "answer": "o",
+          "why": "Counting starts at 0: f is 0, o is 1."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(\"forest\"[-2])",
+          "options": ["s", "t", "e", "r"],
+          "answer": "s",
+          "why": "-1 is the last character (t); -2 is the one before it."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(\"branches\"[2:5])",
+          "options": ["anc", "ranc", "an", "anch"],
+          "answer": "anc",
+          "why": "Positions 2, 3 and 4; the slice stops before 5."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "s = \"leaf\"\ns.upper()\nprint(s)",
+          "options": ["leaf", "LEAF", "Leaf", "None"],
+          "answer": "leaf",
+          "why": "upper() returns a new string, but nothing keeps it. s itself never changes."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(len(\"a b\"))",
+          "options": ["3", "2", "1", "4"],
+          "answer": "3",
+          "why": "The space counts as a character."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(\"tree house\".split())",
+          "options": [
+            "['tree', 'house']",
+            "['tree house']",
+            "tree house",
+            "['t', 'r', 'e', 'e']"
+          ],
+          "answer": "['tree', 'house']",
+          "why": "split() with no argument splits on whitespace and returns a list."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(\"chestnut\".find(\"nut\"))",
+          "options": ["5", "4", "-1", "0"],
+          "answer": "5",
+          "why": "c-h-e-s-t are positions 0–4; nut starts at 5."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(\"  Pine  \".strip().replace(\"Pine\", \"Oak\"))",
+          "options": ["Oak", "  Oak  ", "Pine", "Oak  "],
+          "answer": "Oak",
+          "why": "strip removes the spaces first; then replace swaps Pine for Oak."
+        }
+      ]
+    },
+    {
+      "id": "decisions",
+      "title": "Making decisions",
+      "summary": "if, elif, else, comparisons and logic.",
+      "sections": [
+        {
+          "p": "<code>if</code> runs a block only when a condition is true. The block is the indented lines after the colon; indentation is how Python knows where it ends. Four spaces is the norm.",
+          "code": "nuts = 12\nif nuts > 10:\n    print(\"Enough for winter\")\nprint(\"Done counting\")",
+          "out": "Enough for winter\nDone counting"
+        },
+        {
+          "h": "elif and else",
+          "p": "Add <code>elif</code> for more conditions and <code>else</code> for everything left. Python checks them top to bottom and runs only the <b>first</b> match.",
+          "code": "temp = 4\nif temp < 0:\n    print(\"Freezing\")\nelif temp < 10:\n    print(\"Chilly\")\nelse:\n    print(\"Mild\")",
+          "out": "Chilly"
+        },
+        {
+          "h": "Comparisons",
+          "p": "<code>==</code> equal, <code>!=</code> not equal, <code>&lt;</code> <code>&gt;</code> <code>&lt;=</code> <code>&gt;=</code>. Remember: one <code>=</code> assigns, two compare. Combine conditions with <code>and</code>, <code>or</code>, <code>not</code>.",
+          "code": "age = 15\nprint(age >= 13 and age <= 19)\nprint(age == 15)\nprint(not age > 20)",
+          "out": "True\nTrue\nTrue"
+        },
+        {
+          "h": "Truthiness",
+          "p": "Empty things count as false: <code>0</code>, <code>\"\"</code>, <code>[]</code>, <code>None</code>. Almost everything else counts as true, so <code>if name:</code> means “if name is not empty”.",
+          "code": "name = \"\"\nif name:\n    print(\"Hi\", name)\nelse:\n    print(\"No name given\")",
+          "out": "No name given"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "x = 7\nif x > 5:\n    print(\"big\")\nelse:\n    print(\"small\")",
+          "options": ["big", "small", "big\nsmall", "Nothing"],
+          "answer": "big",
+          "why": "7 > 5 is true, so only the if block runs."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "n = 50\nif n > 10:\n    print(\"A\")\nelif n > 40:\n    print(\"B\")\nelse:\n    print(\"C\")",
+          "options": ["A", "B", "A\nB", "C"],
+          "answer": "A",
+          "why": "Only the first true branch runs. n > 10 is already true, so elif is never checked."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(3 == 3.0)",
+          "options": ["True", "False", "An error", "3"],
+          "answer": "True",
+          "why": "== compares values, and 3 and 3.0 are the same number."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(True and not True)",
+          "options": ["False", "True", "None", "An error"],
+          "answer": "False",
+          "why": "not True is False, and True and False is False."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "items = []\nif items:\n    print(\"full\")\nelse:\n    print(\"empty\")",
+          "options": ["empty", "full", "[]", "An error"],
+          "answer": "empty",
+          "why": "An empty list counts as false."
+        },
+        {
+          "q": "Why does `if x = 5:` fail?",
+          "options": [
+            "One = assigns; comparing needs ==",
+            "Numbers cannot follow if",
+            "The colon is wrong",
+            "x must be a string"
+          ],
+          "answer": "One = assigns; comparing needs ==",
+          "why": "Python refuses assignment inside an if condition, which catches a very common slip."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "n = 3\nif n < 0 or n > 10:\n    print(\"out\")\nelif n == 3 and n != 4:\n    print(\"three\")\nelse:\n    print(\"other\")",
+          "options": ["three", "out", "other", "three\nout"],
+          "answer": "three",
+          "why": "n is not out of range, so the first if is false; both parts of the elif are true."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(0 or \"fallback\")",
+          "options": ["fallback", "0", "True", "False"],
+          "answer": "fallback",
+          "why": "0 counts as false, so or moves on and gives the next value."
+        }
+      ]
+    },
+    {
+      "id": "loops",
+      "title": "Loops",
+      "summary": "for, range, while, break and continue.",
+      "sections": [
+        {
+          "p": "A <code>for</code> loop runs its block once for each item in a sequence. A string is a sequence of characters.",
+          "code": "for letter in \"nut\":\n    print(letter)",
+          "out": "n\nu\nt"
+        },
+        {
+          "h": "range",
+          "p": "<code>range(n)</code> counts 0, 1, … up to but not including <code>n</code>. <code>range(a, b)</code> starts at <code>a</code>; a third number sets the step.",
+          "code": "for i in range(3):\n    print(i)\nfor i in range(10, 0, -3):\n    print(i)",
+          "out": "0\n1\n2\n10\n7\n4\n1"
+        },
+        {
+          "h": "while",
+          "p": "<code>while</code> repeats as long as its condition is true. Make sure something inside changes, or the loop never ends.",
+          "code": "stash = 1\nwhile stash < 20:\n    stash = stash * 3\nprint(stash)",
+          "out": "27"
+        },
+        {
+          "h": "break and continue",
+          "p": "<code>break</code> leaves the loop at once. <code>continue</code> skips to the next round.",
+          "code": "for n in range(1, 10):\n    if n % 2 == 0:\n        continue\n    if n > 6:\n        break\n    print(n)",
+          "out": "1\n3\n5"
+        },
+        {
+          "h": "Adding up",
+          "p": "A common pattern: start a total at zero and add to it inside the loop.",
+          "code": "total = 0\nfor n in range(1, 5):\n    total += n\nprint(total)",
+          "out": "10"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "How many lines does this print?",
+          "code": "for i in range(4):\n    print(\"hop\")",
+          "options": ["4", "3", "5", "1"],
+          "answer": "4",
+          "why": "range(4) gives 0, 1, 2, 3: four rounds.",
+          "check": "hop\nhop\nhop\nhop"
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "for i in range(2, 5):\n    print(i)",
+          "options": ["2\n3\n4", "2\n3\n4\n5", "3\n4\n5", "2\n5"],
+          "answer": "2\n3\n4",
+          "why": "range(2, 5) starts at 2 and stops before 5."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "n = 0\nwhile n < 3:\n    n += 1\nprint(n)",
+          "options": ["3", "2", "4", "0"],
+          "answer": "3",
+          "why": "The loop stops as soon as n < 3 is false, which first happens at 3."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "for c in \"acorn\":\n    if c == \"o\":\n        break\n    print(c)",
+          "options": ["a\nc", "a\nc\no", "a\nc\nr\nn", "o"],
+          "answer": "a\nc",
+          "why": "The loop stops at o before printing it."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "s = 0\nfor i in range(5):\n    s += i\nprint(s)",
+          "options": ["10", "15", "5", "4"],
+          "answer": "10",
+          "why": "0 + 1 + 2 + 3 + 4 = 10. range(5) never reaches 5."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "for i in range(5, 0, -2):\n    print(i)",
+          "options": ["5\n3\n1", "5\n3", "5\n4\n3\n2\n1", "1\n3\n5"],
+          "answer": "5\n3\n1",
+          "why": "Start at 5, step −2, stop before 0."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "for n in range(1, 6):\n    if n % 2 == 0:\n        continue\n    print(n)",
+          "options": ["1\n3\n5", "2\n4", "1\n2\n3\n4\n5", "1\n3"],
+          "answer": "1\n3\n5",
+          "why": "continue skips the even numbers before print runs."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "n = 1\nwhile n < 8:\n    n *= 2\nprint(n)",
+          "options": ["8", "4", "16", "7"],
+          "answer": "8",
+          "why": "1 → 2 → 4 → 8; once n is 8 the while test fails."
+        }
+      ]
+    },
+    {
+      "id": "lists",
+      "title": "Lists",
+      "summary": "Ordered collections you can change.",
+      "sections": [
+        {
+          "p": "A <b>list</b> holds several values in order, inside square brackets. Indexing and slicing work just like strings.",
+          "code": "trees = [\"oak\", \"beech\", \"pine\"]\nprint(trees[0])\nprint(trees[-1])\nprint(len(trees))",
+          "out": "oak\npine\n3"
+        },
+        {
+          "h": "Changing a list",
+          "p": "Unlike strings, lists are <b>mutable</b>: you can change them in place.",
+          "code": "trees = [\"oak\", \"beech\"]\ntrees.append(\"pine\")\ntrees[0] = \"elm\"\ntrees.remove(\"beech\")\nprint(trees)",
+          "out": "['elm', 'pine']"
+        },
+        {
+          "h": "Looping and sorting",
+          "p": "Loop straight over the items. <code>sorted()</code> gives a new sorted list; <code>.sort()</code> sorts the list itself. <code>enumerate</code> hands you the position too.",
+          "code": "scores = [7, 2, 9]\nprint(sorted(scores))\nprint(sum(scores), max(scores))\nfor i, s in enumerate(scores):\n    print(i, s)",
+          "out": "[2, 7, 9]\n18 9\n0 7\n1 2\n2 9"
+        },
+        {
+          "h": "List comprehensions",
+          "p": "A compact way to build one list from another: <code>[expression for item in sequence if condition]</code>.",
+          "code": "nums = [1, 2, 3, 4, 5, 6]\nsquares = [n * n for n in nums]\nevens = [n for n in nums if n % 2 == 0]\nprint(squares)\nprint(evens)",
+          "out": "[1, 4, 9, 16, 25, 36]\n[2, 4, 6]"
+        },
+        {
+          "h": "Two names, one list",
+          "p": "Assigning a list to a second name does not copy it. Both names point at the same list, so a change through one shows through the other. Use <code>.copy()</code> for a separate list.",
+          "code": "a = [1, 2]\nb = a\nc = a.copy()\na.append(3)\nprint(b)\nprint(c)",
+          "out": "[1, 2, 3]\n[1, 2]"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "x = [4, 5, 6]\nprint(x[1])",
+          "options": ["5", "4", "6", "[5]"],
+          "answer": "5",
+          "why": "Index 1 is the second item."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "x = [1, 2]\nx.append([3])\nprint(len(x))",
+          "options": ["3", "4", "2", "An error"],
+          "answer": "3",
+          "why": "append adds one item, and here that item is the list [3]."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print([n * 2 for n in range(3)])",
+          "options": ["[0, 2, 4]", "[2, 4, 6]", "[0, 1, 2]", "[0, 2, 4, 6]"],
+          "answer": "[0, 2, 4]",
+          "why": "range(3) is 0, 1, 2; each is doubled."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "a = [1]\nb = a\nb.append(2)\nprint(a)",
+          "options": ["[1, 2]", "[1]", "[2]", "An error"],
+          "answer": "[1, 2]",
+          "why": "a and b are two names for the same list."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "x = [3, 1, 2]\ny = sorted(x)\nprint(x)",
+          "options": ["[3, 1, 2]", "[1, 2, 3]", "None", "[3, 2, 1]"],
+          "answer": "[3, 1, 2]",
+          "why": "sorted() returns a new list and leaves the original alone."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print([1, 2, 3, 4][1:3])",
+          "options": ["[2, 3]", "[1, 2, 3]", "[2, 3, 4]", "[1, 2]"],
+          "answer": "[2, 3]",
+          "why": "Positions 1 and 2; the slice stops before 3."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "x = [3, 1, 2]\nx.sort()\nprint(x)",
+          "options": ["[1, 2, 3]", "[3, 1, 2]", "None", "[3, 2, 1]"],
+          "answer": "[1, 2, 3]",
+          "why": ".sort() changes the list itself, unlike sorted() which returns a new one."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print([n for n in range(6) if n % 2 == 1])",
+          "options": ["[1, 3, 5]", "[0, 2, 4]", "[1, 3, 5, 6]", "[2, 4]"],
+          "answer": "[1, 3, 5]",
+          "why": "The if keeps only the odd numbers from range(6)."
+        }
+      ]
+    },
+    {
+      "id": "dicts",
+      "title": "Dictionaries, tuples and sets",
+      "summary": "Look things up by key; fixed pairs; unique items.",
+      "sections": [
+        {
+          "p": "A <b>dictionary</b> maps keys to values, like words to definitions. Look up, add or change a value with its key in square brackets.",
+          "code": "stash = {\"acorn\": 12, \"hazelnut\": 5}\nprint(stash[\"acorn\"])\nstash[\"walnut\"] = 2\nstash[\"acorn\"] -= 1\nprint(stash)",
+          "out": "12\n{'acorn': 11, 'hazelnut': 5, 'walnut': 2}"
+        },
+        {
+          "h": "Missing keys",
+          "p": "Asking for a key that is not there raises a <code>KeyError</code>. <code>.get()</code> returns a default instead, and <code>in</code> checks first.",
+          "code": "stash = {\"acorn\": 12}\nprint(stash.get(\"pecan\", 0))\nprint(\"pecan\" in stash)",
+          "out": "0\nFalse"
+        },
+        {
+          "h": "Looping over a dictionary",
+          "p": "<code>.items()</code> gives key and value together. Dictionaries keep the order you inserted things.",
+          "code": "ages = {\"Hazel\": 3, \"Rowan\": 5}\nfor name, age in ages.items():\n    print(f\"{name}: {age}\")",
+          "out": "Hazel: 3\nRowan: 5"
+        },
+        {
+          "h": "Tuples",
+          "p": "A <b>tuple</b> is like a list in round brackets that cannot be changed. It is handy for fixed groups, and for returning several values at once. Unpack it into separate names.",
+          "code": "point = (3, 4)\nx, y = point\nprint(x + y)",
+          "out": "7"
+        },
+        {
+          "h": "Sets",
+          "p": "A <b>set</b> keeps each value once. It is the quickest way to drop duplicates or test membership.",
+          "code": "seen = set([\"oak\", \"pine\", \"oak\", \"elm\", \"pine\"])\nprint(len(seen))\nprint(\"elm\" in seen)",
+          "out": "3\nTrue"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "d = {\"a\": 1, \"b\": 2}\nprint(d[\"b\"])",
+          "options": ["2", "1", "b", "An error"],
+          "answer": "2",
+          "why": "The key \"b\" maps to 2."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "d = {\"a\": 1}\nd[\"a\"] = 5\nprint(len(d))",
+          "options": ["1", "2", "5", "An error"],
+          "answer": "1",
+          "why": "Assigning to an existing key replaces its value; there is still one key."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "d = {}\nprint(d.get(\"x\", \"none\"))",
+          "options": ["none", "None", "An error", "x"],
+          "answer": "none",
+          "why": "get returns the default you gave when the key is missing."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "print(len({1, 1, 2, 2, 3}))",
+          "options": ["3", "5", "2", "An error"],
+          "answer": "3",
+          "why": "A set keeps each value once: {1, 2, 3}."
+        },
+        {
+          "q": "What happens with `t = (1, 2); t[0] = 9`?",
+          "options": [
+            "A TypeError: tuples cannot be changed",
+            "t becomes (9, 2)",
+            "t becomes (9, 1, 2)",
+            "Nothing happens"
+          ],
+          "answer": "A TypeError: tuples cannot be changed",
+          "why": "Tuples are immutable. Build a new tuple instead."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "a, b = 1, 2\na, b = b, a\nprint(a, b)",
+          "options": ["2 1", "1 2", "2 2", "1 1"],
+          "answer": "2 1",
+          "why": "The right side builds the tuple (2, 1) first, then unpacks it, so the swap works."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "d = {\"oak\": 2, \"pine\": 5}\nprint(\"oak\" in d, d.get(\"elm\", -1))",
+          "options": ["True -1", "False -1", "True None", "2 -1"],
+          "answer": "True -1",
+          "why": "in checks keys; get returns the default −1 when elm is missing."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "point = (10, 20)\nx, y = point\nprint(x * y)",
+          "options": ["200", "30", "(10, 20)", "An error"],
+          "answer": "200",
+          "why": "Unpacking fills x and y from the tuple; 10 × 20 = 200."
+        }
+      ]
+    },
+    {
+      "id": "functions",
+      "title": "Functions",
+      "summary": "def, parameters, return values and scope.",
+      "sections": [
+        {
+          "p": "A <b>function</b> is a named block you can run whenever you need it. <code>def</code> defines it; calling it by name with brackets runs it.",
+          "code": "def greet(name):\n    print(f\"Hello, {name}!\")\n\ngreet(\"Hazel\")\ngreet(\"Rowan\")",
+          "out": "Hello, Hazel!\nHello, Rowan!"
+        },
+        {
+          "h": "return",
+          "p": "<code>return</code> sends a value back to whoever called the function. A function with no <code>return</code> gives back <code>None</code>.",
+          "code": "def area(width, height):\n    return width * height\n\nbig = area(4, 5)\nprint(big)\nprint(area(2, 3) + 1)",
+          "out": "20\n7"
+        },
+        {
+          "h": "Defaults and names",
+          "p": "Give a parameter a default and callers can leave it out. Callers can also name arguments, which keeps long calls readable.",
+          "code": "def bag(nuts, size=10):\n    return nuts // size\n\nprint(bag(35))\nprint(bag(35, size=5))",
+          "out": "3\n7"
+        },
+        {
+          "h": "Scope",
+          "p": "Variables made inside a function are <b>local</b>: they exist only while it runs and do not touch names outside. Pass values in as parameters and get results out with <code>return</code>.",
+          "code": "count = 1\n\ndef bump():\n    count = 100\n    return count\n\nprint(bump())\nprint(count)",
+          "out": "100\n1"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "def double(n):\n    return n * 2\n\nprint(double(double(3)))",
+          "options": ["12", "6", "9", "36"],
+          "answer": "12",
+          "why": "double(3) is 6, and double(6) is 12."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "def f():\n    print(\"hi\")\n\nx = f()\nprint(x)",
+          "options": ["hi\nNone", "hi", "None", "hi\nhi"],
+          "answer": "hi\nNone",
+          "why": "Calling f prints hi. f has no return, so x is None."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "def p(a, b=2):\n    return a + b\n\nprint(p(1), p(1, 5))",
+          "options": ["3 6", "3 3", "1 6", "An error"],
+          "answer": "3 6",
+          "why": "The first call uses the default b=2; the second passes 5."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "x = 5\ndef change():\n    x = 10\nchange()\nprint(x)",
+          "options": ["5", "10", "None", "An error"],
+          "answer": "5",
+          "why": "x = 10 inside the function makes a separate local x."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "def first_two(word):\n    return word[:2]\n    print(\"unreached\")\n\nprint(first_two(\"pine\"))",
+          "options": ["pi", "pi\nunreached", "pine", "unreached"],
+          "answer": "pi",
+          "why": "return ends the function immediately; the line after it never runs."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "def pair(a, b=1):\n    return a, a + b\n\nx, y = pair(4)\nprint(x, y)",
+          "options": ["4 5", "4 1", "(4, 5)", "An error"],
+          "answer": "4 5",
+          "why": "Returning two values makes a tuple that unpacks into x and y; b defaults to 1."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "def label(kind, count=1):\n    return f\"{count} {kind}\"\n\nprint(label(\"acorn\", count=3))",
+          "options": ["3 acorn", "1 acorn", "acorn 3", "count=3 acorn"],
+          "answer": "3 acorn",
+          "why": "The named argument count=3 overrides the default."
+        }
+      ]
+    },
+    {
+      "id": "errors",
+      "title": "Errors and exceptions",
+      "summary": "Reading tracebacks and handling problems with try.",
+      "sections": [
+        {
+          "p": "When something goes wrong Python stops and prints a <b>traceback</b>. Read its last line first: it names the error and gives a short reason. The lines above show where it happened.",
+          "code": "Traceback (most recent call last):\n  File \"stash.py\", line 2, in <module>\n    print(stash[\"pecan\"])\nKeyError: 'pecan'"
+        },
+        {
+          "h": "Common errors",
+          "p": "<b>SyntaxError</b>: the code is not valid Python (missing colon or bracket). <b>IndentationError</b>: the spaces at the start of a line do not line up. <b>NameError</b>: a name is used before it exists, often a typo. <b>TypeError</b>: an operation on the wrong kind of value, like <code>\"3\" + 4</code>. <b>ValueError</b>: right type, bad value, like <code>int(\"abc\")</code>. <b>IndexError</b>/<b>KeyError</b>: a position or key that is not there. <b>ZeroDivisionError</b>: dividing by zero."
+        },
+        {
+          "h": "try and except",
+          "p": "Wrap risky code in <code>try</code>. If a matching error happens, the <code>except</code> block runs instead of the program crashing.",
+          "code": "for text in [\"12\", \"twelve\"]:\n    try:\n        n = int(text)\n        print(\"Got\", n)\n    except ValueError:\n        print(\"Not a number:\", text)",
+          "out": "Got 12\nNot a number: twelve"
+        },
+        {
+          "h": "else, finally and raise",
+          "p": "<code>else</code> runs when no error happened; <code>finally</code> always runs. <code>raise</code> signals an error yourself when a value makes no sense.",
+          "code": "def split_stash(nuts, squirrels):\n    if squirrels <= 0:\n        raise ValueError(\"need at least one squirrel\")\n    return nuts // squirrels\n\ntry:\n    print(split_stash(10, 0))\nexcept ValueError as e:\n    print(\"Problem:\", e)\nfinally:\n    print(\"Checked\")",
+          "out": "Problem: need at least one squirrel\nChecked"
+        }
+      ],
+      "practice": [
+        {
+          "q": "Which error does `int(\"ten\")` raise?",
+          "options": ["ValueError", "TypeError", "NameError", "SyntaxError"],
+          "answer": "ValueError",
+          "why": "int accepts a string, so the type is fine; the value cannot be read as a number."
+        },
+        {
+          "q": "Which error does `\"a\" + 1` raise?",
+          "options": ["TypeError", "ValueError", "NameError", "IndexError"],
+          "answer": "TypeError",
+          "why": "You cannot add a str and an int; convert one first."
+        },
+        {
+          "q": "Which error does `prnt(\"hi\")` raise?",
+          "options": ["NameError", "SyntaxError", "TypeError", "KeyError"],
+          "answer": "NameError",
+          "why": "prnt is a name Python has never seen; it is a typo for print."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "try:\n    print(1 / 0)\nexcept ZeroDivisionError:\n    print(\"oops\")",
+          "options": ["oops", "inf", "0", "An error"],
+          "answer": "oops",
+          "why": "Dividing by zero raises ZeroDivisionError, which the except block catches."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "try:\n    x = [1, 2][5]\nexcept IndexError:\n    x = 0\nfinally:\n    print(\"end\")\nprint(x)",
+          "options": ["end\n0", "0\nend", "end", "An error"],
+          "answer": "end\n0",
+          "why": "The IndexError is caught and x set to 0; finally prints end; then x is printed."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "try:\n    n = int(\"7\")\nexcept ValueError:\n    n = -1\nelse:\n    n = n + 1\nprint(n)",
+          "options": ["8", "7", "-1", "An error"],
+          "answer": "8",
+          "why": "int succeeds, so else runs and adds 1; except is skipped."
+        },
+        {
+          "q": "Which error does `{\"a\": 1}[\"b\"]` raise?",
+          "options": ["KeyError", "IndexError", "NameError", "TypeError"],
+          "answer": "KeyError",
+          "why": "Dictionaries raise KeyError for a missing key; IndexError is for sequences."
+        }
+      ]
+    },
+    {
+      "id": "modules-files",
+      "title": "Modules and files",
+      "summary": "import, the standard library, reading and writing files.",
+      "sections": [
+        {
+          "p": "Python ships with a large <b>standard library</b>. <code>import</code> brings a module in; use its contents with a dot, or import names directly with <code>from</code>.",
+          "code": "import math\nfrom datetime import date\n\nprint(math.sqrt(81))\nprint(math.pi > 3)\nprint(date(2024, 3, 1).strftime(\"%A\"))",
+          "out": "9.0\nTrue\nFriday"
+        },
+        {
+          "h": "Writing a file",
+          "p": "<code>open(name, \"w\")</code> opens a file for writing (replacing it). The <code>with</code> statement closes the file for you when the block ends, even after an error.",
+          "code": "with open(\"nuts.txt\", \"w\") as f:\n    f.write(\"acorn\\n\")\n    f.write(\"hazelnut\\n\")\nprint(\"saved\")",
+          "out": "saved"
+        },
+        {
+          "h": "Reading a file",
+          "p": "Open with <code>\"r\"</code> (the default) to read. Looping over a file gives one line at a time, each ending in a newline, which <code>.strip()</code> removes. Use <code>\"a\"</code> to add to the end instead of replacing.",
+          "code": "with open(\"nuts.txt\", \"w\") as f:\n    f.write(\"acorn\\nhazelnut\\n\")\n\nwith open(\"nuts.txt\") as f:\n    for line in f:\n        print(line.strip().title())",
+          "out": "Acorn\nHazelnut"
+        },
+        {
+          "h": "Your own modules",
+          "p": "Any <code>.py</code> file is a module. Save functions in <code>helpers.py</code> and <code>import helpers</code> from a file next to it. Code under <code>if __name__ == \"__main__\":</code> runs only when the file is run directly, not when it is imported.",
+          "code": "def shout(text):\n    return text.upper() + \"!\"\n\nif __name__ == \"__main__\":\n    print(shout(\"hello\"))",
+          "out": "HELLO!"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "import math\nprint(math.floor(4.7))",
+          "options": ["4", "5", "4.7", "4.0"],
+          "answer": "4",
+          "why": "floor rounds down to the nearest whole number."
+        },
+        {
+          "q": "Why use `with open(...) as f:` rather than plain `f = open(...)`?",
+          "options": [
+            "It closes the file automatically",
+            "It reads faster",
+            "It is the only way to write",
+            "It creates folders"
+          ],
+          "answer": "It closes the file automatically",
+          "why": "Leaving the with block always closes the file, even if an error happens inside."
+        },
+        {
+          "q": "Which mode adds to the end of an existing file?",
+          "options": ["\"a\"", "\"w\"", "\"r\"", "\"x\""],
+          "answer": "\"a\"",
+          "why": "a is append. w empties the file first; r only reads; x fails if the file exists."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "from math import sqrt\nprint(sqrt(16) + 1)",
+          "options": ["5.0", "5", "17", "An error"],
+          "answer": "5.0",
+          "why": "sqrt returns a float, 4.0, and 4.0 + 1 is 5.0."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "with open(\"t.txt\", \"w\") as f:\n    f.write(\"a\\nb\\n\")\nwith open(\"t.txt\") as f:\n    print(len(f.readlines()))",
+          "options": ["2", "4", "1", "3"],
+          "answer": "2",
+          "why": "The file holds two lines, a and b; readlines returns a list of both."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "import math\nprint(math.ceil(4.1))",
+          "options": ["5", "4", "4.0", "5.0"],
+          "answer": "5",
+          "why": "ceil rounds up to the next whole number."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "with open(\"note.txt\", \"w\") as f:\n    f.write(\"oak\")\nwith open(\"note.txt\") as f:\n    print(f.read().upper())",
+          "options": ["OAK", "oak", "Oak", ""],
+          "answer": "OAK",
+          "why": "read() pulls the whole file as one string; upper makes it OAK."
+        }
+      ]
+    },
+    {
+      "id": "classes",
+      "title": "Classes and objects",
+      "summary": "Bundling data with the functions that use it.",
+      "sections": [
+        {
+          "p": "A <b>class</b> is a blueprint; each <b>object</b> made from it carries its own data. <code>__init__</code> runs when an object is created and stores values on <code>self</code>, the object being built.",
+          "code": "class Squirrel:\n    def __init__(self, name):\n        self.name = name\n        self.nuts = 0\n\nhazel = Squirrel(\"Hazel\")\nrowan = Squirrel(\"Rowan\")\nhazel.nuts = 4\nprint(hazel.name, hazel.nuts)\nprint(rowan.name, rowan.nuts)",
+          "out": "Hazel 4\nRowan 0"
+        },
+        {
+          "h": "Methods",
+          "p": "Functions defined inside a class are <b>methods</b>. Their first parameter is always <code>self</code>, and Python fills it in for you.",
+          "code": "class Squirrel:\n    def __init__(self, name):\n        self.name = name\n        self.nuts = 0\n\n    def gather(self, n):\n        self.nuts += n\n        return self.nuts\n\ns = Squirrel(\"Hazel\")\ns.gather(3)\nprint(s.gather(2))",
+          "out": "5"
+        },
+        {
+          "h": "Printing objects",
+          "p": "Define <code>__str__</code> to choose what <code>print</code> shows for your object.",
+          "code": "class Tree:\n    def __init__(self, kind, height):\n        self.kind = kind\n        self.height = height\n\n    def __str__(self):\n        return f\"{self.kind} ({self.height} m)\"\n\nprint(Tree(\"oak\", 20))",
+          "out": "oak (20 m)"
+        },
+        {
+          "h": "Inheritance",
+          "p": "A class can build on another. The new class gets every method of its parent and can add or replace some.",
+          "code": "class Animal:\n    def __init__(self, name):\n        self.name = name\n\n    def speak(self):\n        return \"...\"\n\nclass Squirrel(Animal):\n    def speak(self):\n        return \"chitter\"\n\nfor a in [Animal(\"rock\"), Squirrel(\"Hazel\")]:\n    print(a.name, a.speak())",
+          "out": "rock ...\nHazel chitter"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "class Box:\n    def __init__(self, n):\n        self.n = n\n\na = Box(1)\nb = Box(2)\nprint(a.n + b.n)",
+          "options": ["3", "12", "2", "An error"],
+          "answer": "3",
+          "why": "Each object keeps its own n: 1 and 2."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "class C:\n    def __init__(self):\n        self.v = 0\n    def inc(self):\n        self.v += 1\n\nc = C()\nc.inc()\nc.inc()\nprint(c.v)",
+          "options": ["2", "1", "0", "None"],
+          "answer": "2",
+          "why": "Each call to inc adds 1 to the same object's v."
+        },
+        {
+          "q": "What is `self` inside a method?",
+          "options": [
+            "The object the method was called on",
+            "The class itself",
+            "The first argument you pass",
+            "A global variable"
+          ],
+          "answer": "The object the method was called on",
+          "why": "c.inc() runs inc with self set to c."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "class A:\n    def hi(self):\n        return \"A\"\nclass B(A):\n    pass\n\nprint(B().hi())",
+          "options": ["A", "B", "None", "An error"],
+          "answer": "A",
+          "why": "B inherits hi from A unchanged; pass just means the body is empty."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "class P:\n    def __str__(self):\n        return \"pine\"\n\nprint(P())",
+          "options": ["pine", "P", "<P object>", "None"],
+          "answer": "pine",
+          "why": "print uses __str__ when the class defines it."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "class Animal:\n    def speak(self):\n        return \"...\"\nclass Bird(Animal):\n    def speak(self):\n        return \"chirp\"\n\nprint(Bird().speak())",
+          "options": ["chirp", "...", "None", "An error"],
+          "answer": "chirp",
+          "why": "Bird replaces speak; the parent's version is not used."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "class Counter:\n    def __init__(self):\n        self.n = 0\n    def add(self, k):\n        self.n += k\n        return self.n\n\nc = Counter()\nprint(c.add(2), c.add(3))",
+          "options": ["2 5", "2 3", "5 5", "0 5"],
+          "answer": "2 5",
+          "why": "add returns the new total each time: 0+2 then 2+3."
+        }
+      ]
+    }
+  ]
+}
