@@ -1,0 +1,855 @@
+{
+  "schema": "programming-course@1",
+  "id": "brainfood",
+  "name": "brainFOOD",
+  "title": "Eight commands and a row of boxes",
+  "intro": "Picture a long row of boxes, each holding a number that starts at 0, and a pointer that sits under one box. brainFOOD has just eight commands to move the pointer, change the number in a box, read and print characters, and loop. That is enough to compute anything a bigger language can, just very slowly and with a lot of plus signs. Every other character is ignored, so you can write notes anywhere.",
+  "lessons": [
+    {
+      "id": "commands",
+      "title": "The eight commands",
+      "summary": "Move, change, print, read and loop.",
+      "sections": [
+        {
+          "p": "<code>&gt;</code> move right to the next box · <code>&lt;</code> move left · <code>+</code> add 1 to this box · <code>-</code> take 1 away · <code>.</code> print this box as a character · <code>,</code> read a typed character into this box · <code>[</code> if this box is 0, skip past the matching <code>]</code> · <code>]</code> if this box is not 0, go back to the matching <code>[</code>."
+        },
+        {
+          "h": "Numbers are characters",
+          "p": "<code>.</code> prints the character whose code is in the box: 65 is <code>A</code>, 97 is <code>a</code>, 48 is <code>0</code>, 10 is a new line. So to print a letter you first count up to its code.",
+          "code": "+++++ +++++ +++++ +++++ +++++ +++++ +++++\n+++++ +++++ +++++ +++++ +++++ +++++ +++++\n++.",
+          "out": "H"
+        },
+        {
+          "h": "Loops multiply",
+          "p": "Seventy-two plus signs is a lot. A loop does it faster: put 8 in box 0, and each time round add 9 to box 1 and take 1 from box 0. When box 0 reaches 0 the loop stops and box 1 holds 8 × 9 = 72.",
+          "code": "++++++++[>+++++++++<-]>.   H is 72\n+++++++++++++++++++++++++++++++++.   i is 105",
+          "out": "Hi"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++++++++[>++++++++<-]>+.",
+          "options": ["A", "@", "B", "64"],
+          "answer": "A",
+          "why": "8 × 8 = 64, plus one is 65, the code for A."
+        },
+        {
+          "q": "What does [-] do?",
+          "options": [
+            "Sets the current box to 0",
+            "Deletes the program",
+            "Moves to box 0",
+            "Prints a minus sign"
+          ],
+          "answer": "Sets the current box to 0",
+          "why": "It keeps taking 1 away until the box is 0, then the loop ends."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++++++[>++++++++<-]>.+.+.",
+          "options": ["012", "000", "0", "123"],
+          "answer": "012",
+          "why": "6 × 8 = 48 is the character 0; each +. adds one and prints again."
+        },
+        {
+          "q": "How many boxes does the pointer move in >>><?",
+          "options": [
+            "2 to the right",
+            "4 to the right",
+            "3 to the right",
+            "1 to the left"
+          ],
+          "answer": "2 to the right",
+          "why": "Three steps right, one step left."
+        },
+        {
+          "q": "What happens to a letter like x in a program?",
+          "options": [
+            "It is ignored",
+            "It prints x",
+            "It is an error",
+            "It ends the program"
+          ],
+          "answer": "It is ignored",
+          "why": "Only the eight command symbols mean anything."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "+++++[>+++++++++++++<-]>.",
+          "options": ["A", "E", "M", "@"],
+          "answer": "A",
+          "why": "5 × 13 = 65, the code for A."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "+++++++[>+++++++<-]>.",
+          "options": ["1", "0", "7", "A"],
+          "answer": "1",
+          "why": "7 × 7 = 49, the code for the character 1."
+        },
+        {
+          "q": "What does the , command do?",
+          "options": [
+            "Reads one typed character into the current box",
+            "Prints a comma",
+            "Clears the box",
+            "Moves left"
+          ],
+          "answer": "Reads one typed character into the current box",
+          "why": "Comma is input; the box gets the character's code."
+        }
+      ]
+    },
+    {
+      "id": "hello",
+      "title": "Hello World, step by step",
+      "summary": "Setting up several boxes with one loop.",
+      "sections": [
+        {
+          "p": "A classic trick: one loop fills several boxes at once with handy starting values, and then small nudges reach each letter. Here box 0 counts down from 10 while boxes 1 to 4 grow by 7, 10, 3 and 1, giving 70, 100, 30 and 10. Those are close to <code>H</code> (72), the lowercase letters (around 100), a space (32) and a new line (10).",
+          "code": "++++++++++[>+++++++>++++++++++>+++>+<<<<-]\n>++.          H\n>+.           e\n+++++++..     l l\n+++.          o\n>++.          space\n<<+++++++++++++++.  W\n>.            o\n+++.          r\n------.       l\n--------.     d\n>+.           !\n>.            new line",
+          "out": "Hello World!"
+        },
+        {
+          "h": "Reading input",
+          "p": "<code>,</code> stores the code of one typed character. This program echoes each character until it reads a 0 (end of input on most interpreters).",
+          "code": ",[.,]"
+        }
+      ],
+      "practice": [
+        {
+          "q": "After ++++++++++[>+++++++<-] which box holds 70?",
+          "options": ["Box 1", "Box 0", "Box 7", "Box 10"],
+          "answer": "Box 1",
+          "why": "Box 0 counts the 10 rounds down to 0; box 1 gains 7 each round."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "+++++[>+++++++++++++<-]>.+++.",
+          "options": ["AD", "AB", "A", "BE"],
+          "answer": "AD",
+          "why": "5 × 13 = 65 is A; three more is 68, D."
+        },
+        {
+          "q": "Why is the program text full of words like H and space?",
+          "options": [
+            "They are notes; non-commands are ignored",
+            "They print themselves",
+            "They name the boxes",
+            "They are required labels"
+          ],
+          "answer": "They are notes; non-commands are ignored",
+          "why": "Any character that is not one of the eight commands is skipped."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "+++++[>+++++++++++++<-]>.++++.",
+          "options": ["AE", "AD", "A", "EI"],
+          "answer": "AE",
+          "why": "5 × 13 = 65 is A; four more is 69, E."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "+++++[>+++++++++++++<-]>+.+.+.",
+          "options": ["BCD", "ABC", "AAA", "DEF"],
+          "answer": "BCD",
+          "why": "65 + 1 is B; each +. prints the next letter."
+        },
+        {
+          "q": "What does the program ,[.,] do?",
+          "options": [
+            "Echoes each typed character until it reads a 0",
+            "Prints a comma forever",
+            "Clears every box",
+            "Reads one character and stops"
+          ],
+          "answer": "Echoes each typed character until it reads a 0",
+          "why": "It reads, then loops printing and reading until a 0 ends the loop."
+        }
+      ]
+    },
+    {
+      "id": "moving",
+      "title": "Moving and copying",
+      "summary": "Clearing a box, moving a value and copying it with a helper box.",
+      "sections": [
+        {
+          "p": "Most brainFOOD programs are built from a few small patterns. The first: <code>[-]</code> sets a box to 0, whatever it held. The second moves a value: <code>[-&gt;+&lt;]</code> takes 1 from this box and adds 1 to the next, over and over, until this box is empty.",
+          "code": "++++++++[>++++++++<-]>+    box 1 is 65\n[->>+<<]                   move it two boxes along\n>>.                        box 3 prints A",
+          "out": "A"
+        },
+        {
+          "h": "Adding",
+          "p": "Moving one value onto another adds them. Box 0 holds 3, box 1 holds 4; moving box 0 into box 1 leaves 7 there. Adding 48 then turns the number 7 into the character 7.",
+          "code": "+++>++++<     box 0 is 3 and box 1 is 4\n[->+<]        move box 0 into box 1\n>             box 1 is 7\n>++++++[<++++++++>-]<     add 6 times 8 to box 1\n.",
+          "out": "7"
+        },
+        {
+          "h": "Copying needs a helper",
+          "p": "Moving empties the box you move from. To copy, move into <b>two</b> boxes at once, then move one of them back. Afterwards box 0 still holds 5 and box 1 holds a copy.",
+          "code": "+++++          box 0 is 5\n[->+>+<<]      box 1 and box 2 both get 5 and box 0 is empty\n>>[-<<+>>]     move box 2 back into box 0\n++++++[<++++++++<++++++++>>-]     add 48 to boxes 0 and 1\n<<.>.",
+          "out": "55"
+        },
+        {
+          "h": "Keep the pointer balanced",
+          "p": "Inside a loop, count your arrows. If the body moves right two and left two, the pointer is back on the counting box when <code>]</code> checks it. If they do not balance, the loop tests a different box each round, which is almost always a bug."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does [-] do to the current box?",
+          "options": ["Sets it to 0", "Takes 1 away", "Moves it right", "Nothing"],
+          "answer": "Sets it to 0",
+          "why": "It keeps taking 1 away until the box is 0, then the loop ends."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++++++++[>++++++++<-]>++[->+<]>.",
+          "options": ["B", "A", "@", "C"],
+          "answer": "B",
+          "why": "Box 1 gets 66 (8 × 8 + 2), which is then moved to box 2 and printed: B."
+        },
+        {
+          "q": "After +++[->+<] which box holds 3?",
+          "options": ["Box 1", "Box 0", "Both", "Neither"],
+          "answer": "Box 1",
+          "why": "Moving empties box 0 into box 1."
+        },
+        {
+          "q": "Why does copying use a third box?",
+          "options": [
+            "Moving empties the source, so one copy has to be moved back",
+            "Boxes can only hold one value",
+            "The loop needs three arrows",
+            "It is faster"
+          ],
+          "answer": "Moving empties the source, so one copy has to be moved back",
+          "why": "The value goes into two boxes, then one of them refills the original."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++>+++<[->+<]>>++++++[>++++++++<-]>[-<<+>>]<<.",
+          "options": ["5", "6", "2", "3"],
+          "answer": "5",
+          "why": "2 moved onto 3 gives 5; then 48 is built two boxes along and moved on top, giving the character 5."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "+++[->+<]>>++++++[<++++++++>-]<.",
+          "options": ["3", "0", "C", "6"],
+          "answer": "3",
+          "why": "3 is moved into box 1, then 48 is added so it prints as the character 3."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++++++++[>++++++++<-]>+[->>+<<]>>.",
+          "options": ["A", "B", "@", "Nothing"],
+          "answer": "A",
+          "why": "65 is built in box 1, moved two boxes along, and printed from box 3."
+        },
+        {
+          "q": "After ++>+++<[->+<] what does box 0 hold?",
+          "options": ["0", "2", "3", "5"],
+          "answer": "0",
+          "why": "Moving empties the source box into the next one."
+        }
+      ]
+    },
+    {
+      "id": "arithmetic",
+      "title": "Subtracting and multiplying",
+      "summary": "Taking one box from another, and loops inside loops.",
+      "sections": [
+        {
+          "p": "Subtracting is moving with a minus: <code>[-&gt;-&lt;]</code> takes 1 from both boxes until the first is empty. Here box 0 holds 7 and box 1 holds 3; taking box 1 away from box 0 leaves 4.",
+          "code": "+++++++>+++    box 0 is 7 and box 1 is 3\n[-<->]<        take box 1 away from box 0\n>++++++[<++++++++>-]<     add 48\n.",
+          "out": "4"
+        },
+        {
+          "h": "Multiplying",
+          "p": "To multiply box 0 by box 1, add box 1 into box 2 once for every unit in box 0. Each round copies box 1 (using box 3 as the helper) so it survives for the next round. That is a loop inside a loop.",
+          "code": "++>++++<       box 0 is 2 and box 1 is 4\n[\n  >[->+>+<<]   add box 1 to box 2 and box 3\n  >>[-<<+>>]   move box 3 back to box 1\n  <<<-         one round done\n]\n>>>++++++[<++++++++>-]<.  box 2 is 8",
+          "out": "8"
+        },
+        {
+          "h": "Wrapping around",
+          "p": "Each box holds 0 to 255. Taking 1 from 0 gives 255, and adding 1 to 255 gives 0. Some interpreters do not wrap, so careful programs avoid relying on it."
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "+++++++++>++++[-<->]<>++++++[<++++++++>-]<.",
+          "options": ["5", "4", "9", "3"],
+          "answer": "5",
+          "why": "9 take away 4 is 5, plus 48 is the character 5."
+        },
+        {
+          "q": "In the multiply program, why is box 1 copied each round?",
+          "options": [
+            "Adding it to box 2 would otherwise empty it",
+            "To print it",
+            "To count the rounds",
+            "Box 1 must stay at 0"
+          ],
+          "answer": "Adding it to box 2 would otherwise empty it",
+          "why": "Moving empties the source; copying keeps box 1 ready for the next round."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "+++[>+++<-]>>++++++[>++++++++<-]>[-<<+>>]<<.",
+          "options": ["9", "6", "3", "0"],
+          "answer": "9",
+          "why": "The first loop makes 3 × 3 = 9 in box 1; then 48 is built and added to it."
+        },
+        {
+          "q": "With wrapping, what is in a box after 0 then -?",
+          "options": ["255", "-1", "0", "It stops the program"],
+          "answer": "255",
+          "why": "Boxes hold 0 to 255 and wrap around at both ends."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++++++++>+++[-<->]<>++++++[<++++++++>-]<.",
+          "options": ["5", "8", "3", "11"],
+          "answer": "5",
+          "why": "8 take away 3 is 5, plus 48 is the character 5."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++>++++<[>[->+>+<<]>>[-<<+>>]<<<-]>>>++++++[<++++++++>-]<.",
+          "options": ["8", "6", "4", "2"],
+          "answer": "8",
+          "why": "2 × 4 is built in box 2 by the nested loops; then 48 turns it into the character 8."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "+++[>++<-]>>++++++[>++++++++<-]>[-<<+>>]<<.",
+          "options": ["6", "5", "3", "2"],
+          "answer": "6",
+          "why": "3 × 2 = 6 in box 1; adding 48 prints the digit 6."
+        }
+      ]
+    },
+    {
+      "id": "loops",
+      "title": "Counting loops",
+      "summary": "A counter box, a working box, and loops inside loops.",
+      "sections": [
+        {
+          "p": "A counting loop keeps the count in one box and does its work in another. Here box 0 counts 5 rounds and box 1 starts at A, printing and growing by one each round.",
+          "code": "+++++                       box 0 counts 5\n>++++++++[>++++++++<-]>+    box 2 is 65 which is A\n<<[>>.+<<-]                 print and step five times",
+          "out": "ABCDE"
+        },
+        {
+          "h": "Counting down",
+          "p": "The same shape works backwards. Box 0 counts 10 rounds and box 2 starts at the character 9 (57).",
+          "code": "++++++++++                   box 0 counts 10\n>++++++[>++++++++++<-]>---   box 2 is 57\n<<[>>.-<<-]",
+          "out": "9876543210"
+        },
+        {
+          "h": "Rows and columns",
+          "p": "Put one counting loop inside another to draw a grid. Box 0 counts rows, box 1 holds a star (42), box 2 a new line (10), and box 3 counts the stars on each row.",
+          "code": "+++                         box 0 counts 3 rows\n>>++++++[<+++++++>-]         box 1 is 42\n++++++++++                   box 2 is 10\n<<[\n  >>>++++[<<.>>-]            four stars\n  <.                         new line\n  <<-\n]",
+          "out": "****\n****\n****"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "+++>++++++++[>++++++++<-]>+<<[>>.<<-]",
+          "options": ["AAA", "ABC", "A", "CBA"],
+          "answer": "AAA",
+          "why": "The loop prints box 2 three times but never changes it."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++++>++++++++[>++++++++<-]>++++<<[>>.+<<-]",
+          "options": ["DEFG", "ABCD", "DCBA", "D"],
+          "answer": "DEFG",
+          "why": "Box 2 starts at 68 (D) and grows by one each of the four rounds."
+        },
+        {
+          "q": "Why does the grid program use box 3 for the stars on each row?",
+          "options": [
+            "Box 3 is refilled every row, while box 0 keeps the row count",
+            "Box 3 holds the star",
+            "Box 3 prints the new line",
+            "It does not need to"
+          ],
+          "answer": "Box 3 is refilled every row, while box 0 keeps the row count",
+          "why": "Each loop needs its own counter, or the inner loop would use up the outer one."
+        },
+        {
+          "q": "A loop body moves right three times and left twice. What goes wrong?",
+          "options": [
+            "The loop checks a different box each round",
+            "Nothing",
+            "It runs one extra time",
+            "The program will not start"
+          ],
+          "answer": "The loop checks a different box each round",
+          "why": "The pointer drifts one box right per round, so ] no longer tests the counter."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "+++>++++++++[>++++++++<-]>+<<[>>.+<<-]",
+          "options": ["ABC", "AAA", "CBA", "A"],
+          "answer": "ABC",
+          "why": "Box 2 starts at A and grows by one across three counted rounds."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++++>++++++[>+++++++<-]<[>>.<<-]",
+          "options": ["****", "*", "****\n", "AAAA"],
+          "answer": "****",
+          "why": "Box 2 holds a star (42) and the outer count prints it four times."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "+++++>++++++++[>++++++++<-]>+<<[>>.<<-]",
+          "options": ["AAAAA", "ABCDE", "A", "AAAA"],
+          "answer": "AAAAA",
+          "why": "Five rounds print the same box without changing it."
+        }
+      ]
+    },
+    {
+      "id": "decisions",
+      "title": "Decisions",
+      "summary": "Doing something only if a box is not zero, and if/else with a flag.",
+      "sections": [
+        {
+          "p": "brainFOOD has no <code>if</code>, but a loop that empties its own box runs at most once. <code>[ do something [-] ]</code> means “if this box is not 0, do something”. Here box 0 holds 1, so the letter is printed; with 0 it would be skipped.",
+          "code": "+                            box 0 is 1\n>++++++++[>+++++++++++<-]>+  box 2 is 89 which is Y\n<<[>>.<<[-]]                 if box 0 then print",
+          "out": "Y"
+        },
+        {
+          "h": "If and else",
+          "p": "For an else, keep a <b>flag</b> box set to 1. The “then” part clears the flag; afterwards, a second one-time loop on the flag runs only if the “then” part did not. This program subtracts box 1 from box 0 and says Y if they were equal, N if not. Box 3 holds N and box 4 holds Y.",
+          "code": ">>++++++++[>++++++++++>+++++++++++<<-]>-->+<<<<\n+++++>+++++    box 0 and box 1 are both 5\n[-<->]<        box 0 is the difference\n>+<            box 1 is the flag\n[>>>.<<<[-]>-<]    not zero so print N and clear the flag\n>[>>>.<<<-]<       flag still set so print Y",
+          "out": "Y"
+        },
+        {
+          "h": "Both paths end in the same place",
+          "p": "Each one-time loop must finish on the box it started from, with that box at 0. Otherwise the program carries on from a different box depending on which way it went, and the rest of the program breaks."
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": ">++++++++[>+++++++++++<-]>+<<[>>.<<[-]]",
+          "options": ["Nothing", "Y", "YY", "0"],
+          "answer": "Nothing",
+          "why": "Box 0 is 0, so the one-time loop is skipped entirely."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": ">>++++++++[>++++++++++>+++++++++++<<-]>-->+<<<<+++++>+++[-<->]<>+<[>>>.<<<[-]>-<]>[>>>.<<<-]<",
+          "options": ["N", "Y", "NY", "Nothing"],
+          "answer": "N",
+          "why": "5 take away 3 is 2, not zero, so N is printed and the flag is cleared."
+        },
+        {
+          "q": "Why does an if-loop end with [-]?",
+          "options": [
+            "So the loop runs at most once",
+            "To print the box",
+            "To move the pointer",
+            "To set a flag"
+          ],
+          "answer": "So the loop runs at most once",
+          "why": "Emptying its own box makes the ] check fail, so the loop exits."
+        },
+        {
+          "q": "What is the flag box for?",
+          "options": [
+            "Remembering whether the then part ran, so the else part can be skipped",
+            "Counting rounds",
+            "Holding the answer",
+            "Printing Y"
+          ],
+          "answer": "Remembering whether the then part ran, so the else part can be skipped",
+          "why": "The then part clears the flag; the else part runs only if it is still set."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++>++++++++[>++++++++<-]>+<<[>>.<<[-]]",
+          "options": ["A", "AA", "Nothing", "B"],
+          "answer": "A",
+          "why": "Box 0 holds 2, so the one-time loop still runs once: it prints A and then clears itself."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "+>++++++++[>++++++++<-]>+<<[>>.<<[-]]",
+          "options": ["A", "Nothing", "AA", "B"],
+          "answer": "A",
+          "why": "The flag box is 1, so the if-loop prints A and empties itself."
+        }
+      ]
+    },
+    {
+      "id": "strings",
+      "title": "Words in memory",
+      "summary": "Storing letters in a row of boxes and walking along them.",
+      "sections": [
+        {
+          "p": "A word can live in a row of boxes with a 0 at each end. <code>[.&gt;]</code> prints boxes and moves right until it reaches a 0; <code>[&lt;]</code> or <code>[.&lt;]</code> goes back the other way. Here one loop builds o, a and k (111, 97, 107) together.",
+          "code": "++++++++++[>+++++++++++>++++++++++>+++++++++++<<<-]\n>+>--->---     boxes 1 to 3 hold o a k\n<<[.>]         print forwards until box 4\n<[.<]          print backwards until box 0",
+          "out": "oakkao"
+        },
+        {
+          "h": "Changing every letter",
+          "p": "Walking a word lets you change each letter. Lowercase letters are 32 above their capitals, so taking 32 from each box shouts the word. The loop stops at the 0 after the last letter.",
+          "code": "++++++++++[>+++++++++++>++++++++++>+++++++++++<<<-]\n>+>--->---<<           o a k again\n[-------- -------- -------- -------->]   take 32 from each box\n<[<]>[.>]              back to the start and print",
+          "out": "OAK"
+        }
+      ],
+      "practice": [
+        {
+          "q": "When does [.>] stop?",
+          "options": [
+            "When the pointer reaches a box holding 0",
+            "After 10 boxes",
+            "When it prints a space",
+            "Never"
+          ],
+          "answer": "When the pointer reaches a box holding 0",
+          "why": "The loop test checks the current box; a 0 ends the walk."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++++++++[>++++++++>++++++++<<-]>+>++<[.>]",
+          "options": ["AB", "A", "BA", "@A"],
+          "answer": "AB",
+          "why": "Boxes 1 and 2 become 65 and 66, and the walk prints both before stopping at box 3."
+        },
+        {
+          "q": "Why keep a 0 box before the start of a word?",
+          "options": [
+            "So a backwards walk like [<] knows where to stop",
+            "Boxes must start at 1",
+            "To hold the length",
+            "So the word prints in capitals"
+          ],
+          "answer": "So a backwards walk like [<] knows where to stop",
+          "why": "Walks stop at 0, so zeros at both ends mark the edges of the word."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++++++++[>++++++++>++++++++>++++++++<<<-]>+>++>+++<<[.>]",
+          "options": ["ABC", "CBA", "AAA", "ABCD"],
+          "answer": "ABC",
+          "why": "Boxes 1–3 hold 65–67; [.>] walks right printing until the trailing 0."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++++++++[>++++++++>++++++++<<-]>+>++<[.>]<[.<]",
+          "options": ["ABBA", "AB", "BA", "ABAB"],
+          "answer": "ABBA",
+          "why": "A forward walk prints AB, then a backward walk prints BA."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++++++++[>++++++++>++++++++>++++++++<<<-]>+>++>+++<<[.>]<[.<]",
+          "options": ["ABCCBA", "ABCABC", "CBACBA", "ABC"],
+          "answer": "ABCCBA",
+          "why": "Forwards to the end prints ABC; backwards prints CBA."
+        }
+      ]
+    },
+    {
+      "id": "alphabet",
+      "title": "Putting it together: the alphabet",
+      "summary": "Building numbers with loops and printing a whole sequence.",
+      "sections": [
+        {
+          "p": "To print the alphabet, a counter of 26 and a letter that starts at A are enough. Building 26 as 5 × 5 + 1 and 65 as 8 × 8 + 1 keeps the program short.",
+          "code": "+++++[>+++++<-]>+            box 1 counts 26\n>>++++++++[<++++++++>-]<+    box 2 is 65\n<[>.+<-]                     print and step 26 times",
+          "out": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        },
+        {
+          "h": "Where to go next",
+          "p": "Everything bigger in brainFOOD is built from the patterns in this course: clear, move, copy, count, if and walk. Good next challenges: print the alphabet backwards, print the lowercase alphabet with a new line every 13 letters, or read characters with <code>,</code> and print them in capitals. An online visualiser that shows the row of boxes as the program runs makes debugging much easier."
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "+++++>>++++++++[<++++++++>-]<++++++++++++++++++++++++++<[>.-<-]",
+          "options": ["ZYXWV", "ABCDE", "VWXYZ", "Z"],
+          "answer": "ZYXWV",
+          "why": "Box 1 starts at 90 (Z) and the loop prints it, then takes 1 away, five times."
+        },
+        {
+          "q": "Which is the shortest way to put 64 in a box?",
+          "options": [
+            "A loop of 8 rounds adding 8",
+            "64 plus signs",
+            "A loop of 64 rounds adding 1",
+            "Reading it with ,"
+          ],
+          "answer": "A loop of 8 rounds adding 8",
+          "why": "++++++++[>++++++++<-] is 19 commands instead of 64."
+        },
+        {
+          "q": "Which pattern prints every box until a 0?",
+          "options": ["[.>]", "[-]", "[->+<]", ".+."],
+          "answer": "[.>]",
+          "why": "Print, move right, and repeat while the box is not 0."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "+++>++++++++[>++++++++<-]>+<<[>>.+<<-]",
+          "options": ["ABC", "AAA", "CBA", "ABCD"],
+          "answer": "ABC",
+          "why": "Three counted rounds print A, then B, then C."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++++>++++++++[>++++++++<-]>+++<<[>>.+<<-]",
+          "options": ["CDEF", "ABCD", "EFGH", "C"],
+          "answer": "CDEF",
+          "why": "Box 2 starts at 67 (C) and steps up across four rounds."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "+++>++++++++[>++++++++<-]>++++++++++++++++++++++++++<<[>>.-<<-]",
+          "options": ["ZYX", "ABC", "XYZ", "Z"],
+          "answer": "ZYX",
+          "why": "Box 2 starts at Z and counts down three times."
+        }
+      ]
+    },
+    {
+      "id": "compare",
+      "title": "Comparing two boxes",
+      "summary": "Subtract to test equality, then choose Y or N with a flag.",
+      "sections": [
+        {
+          "p": "To ask whether two boxes hold the same number, subtract one from the other until the second is empty: <code>[-&lt;-&gt;]&lt;</code> leaves the difference in the first box. Zero means equal. Combine that with the flag pattern from the decisions lesson: print <b>Y</b> when the difference is 0, <b>N</b> otherwise.",
+          "code": ">>++++++++[>++++++++++>+++++++++++<<-]>-->+<<<<\n+++++>+++++\n[-<->]<\n>+<\n[>>>.<<<[-]>-<]\n>[>>>.<<<-]<",
+          "out": "Y"
+        },
+        {
+          "h": "When they differ",
+          "p": "Same scaffolding, but box 1 starts at 3 instead of 5. The difference is not zero, so <b>N</b> prints and the flag is cleared.",
+          "code": ">>++++++++[>++++++++++>+++++++++++<<-]>-->+<<<<\n+++++>+++\n[-<->]<\n>+<\n[>>>.<<<[-]>-<]\n>[>>>.<<<-]<",
+          "out": "N"
+        },
+        {
+          "h": "Pointer discipline",
+          "p": "Both branches must finish on the same box with the tested cells cleared. If the “equal” path leaves the pointer two cells further right than the “not equal” path, every later command is aimed at the wrong box."
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": ">>++++++++[>++++++++++>+++++++++++<<-]>-->+<<<<+++++>+++++[-<->]<>+<[>>>.<<<[-]>-<]>[>>>.<<<-]<",
+          "options": ["Y", "N", "YN", "Nothing"],
+          "answer": "Y",
+          "why": "5 − 5 = 0, so the flag path prints Y."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": ">>++++++++[>++++++++++>+++++++++++<<-]>-->+<<<<+++++>+++[-<->]<>+<[>>>.<<<[-]>-<]>[>>>.<<<-]<",
+          "options": ["N", "Y", "NY", "Nothing"],
+          "answer": "N",
+          "why": "5 − 3 ≠ 0, so N prints and the flag clears."
+        },
+        {
+          "q": "What does [-<->]< leave in the first box?",
+          "options": [
+            "The difference of the two boxes",
+            "Their sum",
+            "Always 0",
+            "Always 255"
+          ],
+          "answer": "The difference of the two boxes",
+          "why": "Each round takes one from both until the second is empty."
+        },
+        {
+          "q": "Why clear the flag in the “not equal” branch?",
+          "options": [
+            "So the equal/Y branch does not also run",
+            "To print N twice",
+            "Flags must be 255",
+            "The loop needs a non-zero flag"
+          ],
+          "answer": "So the equal/Y branch does not also run",
+          "why": "The Y loop runs only while the flag is still set."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": ">>++++++++[>++++++++++>+++++++++++<<-]>-->+<<<<+++>+++[-<->]<>+<[>>>.<<<[-]>-<]>[>>>.<<<-]<",
+          "options": ["Y", "N", "Nothing", "YY"],
+          "answer": "Y",
+          "why": "3 and 3 are equal."
+        },
+        {
+          "q": "What must both branches agree on before the program continues?",
+          "options": [
+            "Pointer position and which boxes are zero",
+            "The value of every box in memory",
+            "That a is 65",
+            "Nothing"
+          ],
+          "answer": "Pointer position and which boxes are zero",
+          "why": "Otherwise later code depends on which way you branched."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": ">>++++++++[>++++++++++>+++++++++++<<-]>-->+<<<<++++++++>++++[-<->]<>+<[>>>.<<<[-]>-<]>[>>>.<<<-]<",
+          "options": ["N", "Y", "Nothing", "NY"],
+          "answer": "N",
+          "why": "8 − 4 ≠ 0."
+        }
+      ]
+    },
+    {
+      "id": "case",
+      "title": "Capitals and small letters",
+      "summary": "Adding or taking 32, and walking a word to shout it.",
+      "sections": [
+        {
+          "p": "In ASCII, a lowercase letter is 32 above its capital. Adding 32 turns <code>A</code> (65) into <code>a</code> (97). A short loop of four rounds adding eight builds that 32, then a move adds it onto the letter.",
+          "code": "++++++++[>++++++++<-]>+>++++[<++++++++>-]<[>+<-]>.",
+          "out": "a"
+        },
+        {
+          "h": "Shouting a whole word",
+          "p": "Store a lowercase word with zeros at the ends, take 32 from each letter, then walk and print. Here <b>oak</b> becomes <b>OAK</b>.",
+          "code": "++++++++++[>+++++++++++>++++++++++>+++++++++++<<<-]\n>+>--->---<<\n[-------- -------- -------- -------->]\n<[<]>[.>]",
+          "out": "OAK"
+        },
+        {
+          "h": "Digits are different",
+          "p": "Digit characters sit at 48–57. They are not 32 away from letters, so the ±32 trick is only for A–Z. To show a numeric value as a digit character, add 48 (six rounds of eight) as in earlier lessons."
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++++++++[>++++++++<-]>+>++++[<++++++++>-]<[>+<-]>.",
+          "options": ["a", "A", "b", "`"],
+          "answer": "a",
+          "why": "65 + 32 = 97."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++++++++++[>+++++++++++>++++++++++>+++++++++++<<<-]>+>--->---<<[-------- -------- -------- -------->]<[<]>[.>]",
+          "options": ["OAK", "oak", "KAO", "O"],
+          "answer": "OAK",
+          "why": "Each letter loses 32, then a forward walk prints them."
+        },
+        {
+          "q": "How far apart are A and a in ASCII?",
+          "options": ["32", "26", "48", "65"],
+          "answer": "32",
+          "why": "97 − 65 = 32."
+        },
+        {
+          "q": "Why does the shout program take 32 from every box before printing?",
+          "options": [
+            "To turn lowercase codes into capitals",
+            "To clear the word",
+            "To add a new line",
+            "To move the pointer home"
+          ],
+          "answer": "To turn lowercase codes into capitals",
+          "why": "Minus 32 maps a→A, b→B, and so on."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++++++++[>++++++++<-]>+.",
+          "options": ["A", "a", "@", "B"],
+          "answer": "A",
+          "why": "8 × 8 + 1 = 65."
+        },
+        {
+          "q": "What number do you add to turn a count like 7 into the character 7?",
+          "options": ["48", "32", "65", "10"],
+          "answer": "48",
+          "why": "Digit characters start at code 48 for 0."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++++++++[>++++++++<-]>++++++.",
+          "options": ["F", "A", "f", "G"],
+          "answer": "F",
+          "why": "64 in the box plus 6 is 70, the code for F."
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Project: HI then a newline",
+      "summary": "Two letters and a line break from one short tape.",
+      "sections": [
+        {
+          "p": "Build H and i the usual way, print them, then set a box to 10 and print the newline. A tiny complete program that moves, loops and prints.",
+          "code": "++++++++[>+++++++++<-]>.   H\n>++++++++++[>++++++++++<-]>+++++.  i\n>++++++++++.",
+          "out": "Hi"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "++++++++[>+++++++++<-]>.",
+          "options": ["H", "I", "A", "X"],
+          "answer": "H",
+          "why": "8×9 = 72."
+        },
+        {
+          "q": "What character code is a newline?",
+          "options": ["10", "13", "32", "0"],
+          "answer": "10",
+          "why": "ASCII line feed is 10."
+        }
+      ]
+    }
+  ]
+}
