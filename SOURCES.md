@@ -36,6 +36,7 @@ only imported when its license fits that.
 | Adam Lindsay / LOLCODE 1.2 | Language shape taught in `programming/lolcode/` (course text written for this project; not a copy of the LOLCODE specification) | Referenced for the published language shape; course text is original under this repo's license | https://github.com/justinmeza/lolcode-spec/blob/master/v1.2/lolcode-spec-v1.2.md |
 | Ben Olmstead, Malbolge (1998) | Language shape taught in `programming/malbolge/` (course text written for this project; not a copy of any Malbolge implementation) | Referenced for the published language shape; course text is original under this repo's license | https://esolangs.org/wiki/Malbolge |
 | Don Woods and James Lyon, INTERCAL (1972) | Language shape taught in `programming/intercal/` (course text written for this project; not a copy of the INTERCAL manual) | Referenced for the published language shape; course text is original under this repo's license | https://www.muppetlabs.com/~breadbox/intercal/ |
+| Zilog Z80 CPU (1976) and CP/M BDOS calling convention | Language shape taught in `programming/z80/` (course text written for this project; not a copy of any Z80 manual or CP/M documentation) | Referenced for the published language shape; course text is original under this repo's license | https://en.wikipedia.org/wiki/Zilog_Z80 |
 
 Content written for this project is marked as original in its file and isn't
 listed here.
