@@ -1,0 +1,641 @@
+{
+  "schema": "programming-course@1",
+  "id": "kotlin",
+  "name": "Kotlin",
+  "title": "Kotlin: a modern language for the JVM and Android",
+  "intro": "Kotlin was made by JetBrains, the company behind IntelliJ IDEA, and released in 2016. It runs on the Java virtual machine and can use any Java library, but it needs far less typing than Java: no semicolons, types that are worked out for you, and one-line data classes. In 2019 Google made it the preferred language for Android apps, and it is now used for servers and desktop programs too. Its best-known feature is <b>null safety</b>: the compiler knows which values may be missing and won't let you forget to check. Every example here is a whole file and shows exactly what it prints. To run one yourself, install the Kotlin compiler, save the example as <code>Main.kt</code>, and type <code>kotlinc Main.kt -include-runtime -d main.jar</code> and then <code>java -jar main.jar</code>. Or paste it into the Kotlin Playground at play.kotlinlang.org.",
+  "comment": "//",
+  "keywords": [
+    "fun",
+    "val",
+    "var",
+    "if",
+    "else",
+    "when",
+    "for",
+    "in",
+    "while",
+    "do",
+    "return",
+    "class",
+    "data",
+    "object",
+    "sealed",
+    "interface",
+    "open",
+    "override",
+    "private",
+    "is",
+    "as",
+    "null",
+    "true",
+    "false",
+    "this",
+    "it",
+    "init",
+    "companion",
+    "enum",
+    "import",
+    "throw",
+    "try",
+    "catch",
+    "step",
+    "until",
+    "downTo",
+    "vararg"
+  ],
+  "builtins": [
+    "println",
+    "print",
+    "main",
+    "Int",
+    "Double",
+    "String",
+    "Boolean",
+    "Char",
+    "List",
+    "Map",
+    "listOf",
+    "mutableListOf",
+    "mapOf",
+    "mutableMapOf",
+    "setOf",
+    "Unit",
+    "Any",
+    "require",
+    "let",
+    "apply",
+    "also",
+    "run",
+    "repeat",
+    "Result",
+    "runCatching",
+    "groupBy",
+    "fold",
+    "flatMap",
+    "associateWith",
+    "groupingBy"
+  ],
+  "lessons": [
+    {
+      "id": "first",
+      "title": "Your first program",
+      "summary": "main, println, val and var, string templates.",
+      "sections": [
+        {
+          "p": "A Kotlin program starts in a function called <code>main</code>. Functions are declared with <code>fun</code>, and they don't have to live inside a class. <code>println</code> prints a value and ends the line; <code>print</code> prints without ending it. Lines don't need semicolons.",
+          "code": "fun main() {\n    println(\"Hello, squirrel!\")\n    print(\"Nuts: \")\n    println(42)\n}",
+          "out": "Hello, squirrel!\nNuts: 42"
+        },
+        {
+          "h": "val and var",
+          "p": "<code>val</code> makes a name that can't be given a new value, and <code>var</code> one that can. Use <code>val</code> unless you need to change it; most Kotlin code is mostly <code>val</code>. The type comes after a colon, but usually you leave it out and Kotlin works it out from the value: <code>val nuts = 7</code> is an <code>Int</code>.",
+          "code": "fun main() {\n    val name: String = \"Hazel\"\n    var nuts = 7\n    nuts = nuts + 3\n    // name = \"Bob\"   <- error: val cannot be reassigned\n    val hungry = nuts < 20\n    println(name)\n    println(nuts)\n    println(hungry)\n}",
+          "out": "Hazel\n10\ntrue"
+        },
+        {
+          "h": "String templates",
+          "p": "Inside a string, <code>$name</code> puts in the value of a variable, and <code>${...}</code> puts in the value of any expression. This replaces most of the <code>+</code> joining other languages need.",
+          "code": "fun main() {\n    val name = \"Hazel\"\n    val nuts = 7\n    println(\"$name has $nuts nuts\")\n    println(\"Next week: ${nuts * 2}\")\n    println(\"Name length: ${name.length}\")\n}",
+          "out": "Hazel has 7 nuts\nNext week: 14\nName length: 5"
+        },
+        {
+          "h": "Numbers",
+          "p": "<code>Int</code> holds whole numbers and <code>Double</code> numbers with a fractional part. Dividing two <code>Int</code>s drops the remainder, which <code>%</code> gives you. A <code>Double</code> always prints with a decimal point, even when it is whole. Kotlin never converts between number types by itself: call <code>toDouble()</code> or <code>toInt()</code>.",
+          "code": "fun main() {\n    val nuts = 17\n    val squirrels = 5\n    println(nuts / squirrels)\n    println(nuts % squirrels)\n    println(nuts.toDouble() / squirrels)\n    val weight = 6.0\n    println(weight)\n    println(weight.toInt() + 1)\n}",
+          "out": "3\n2\n3.4\n6.0\n7"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fun main() {\n    var acorns = 4\n    acorns += 2\n    val tree = \"oak\"\n    println(\"$acorns from the $tree\")\n}",
+          "options": [
+            "6 from the oak",
+            "$acorns from the $tree",
+            "42 from the oak",
+            "4 from the oak"
+          ],
+          "answer": "6 from the oak",
+          "why": "$acorns and $tree are replaced by their values, and acorns is 6 after += 2."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fun main() {\n    println(7 / 2)\n    println(7.0 / 2)\n}",
+          "options": ["3\n3.5", "3.5\n3.5", "3\n3", "4\n3.5"],
+          "answer": "3\n3.5",
+          "why": "Int divided by Int drops the remainder. With a Double on one side the answer is a Double."
+        },
+        {
+          "q": "What happens when you give a val a new value?",
+          "options": [
+            "The compiler reports an error",
+            "It changes, like a var",
+            "It is ignored",
+            "The program stops when it reaches that line"
+          ],
+          "answer": "The compiler reports an error",
+          "why": "A val can be set only once. The mistake is caught before the program runs."
+        }
+      ]
+    },
+    {
+      "id": "decisions",
+      "title": "Decisions and loops",
+      "summary": "if as an expression, when, ranges and for.",
+      "sections": [
+        {
+          "p": "<code>if</code> works as in most languages, but in Kotlin it is also an <b>expression</b>: it gives back a value, so you can put it straight into a <code>val</code>. That replaces the <code>? :</code> operator that other languages have.",
+          "code": "fun main() {\n    val nuts = 12\n    if (nuts > 10) {\n        println(\"Big stash\")\n    } else {\n        println(\"Keep looking\")\n    }\n    val mood = if (nuts > 10) \"happy\" else \"worried\"\n    println(mood)\n}",
+          "out": "Big stash\nhappy"
+        },
+        {
+          "h": "when",
+          "p": "<code>when</code> picks the first branch that matches. A branch can list several values, test a range with <code>in</code>, or be any condition. <code>else</code> catches everything left. Like <code>if</code>, <code>when</code> gives back a value.",
+          "code": "fun describe(nuts: Int): String = when (nuts) {\n    0 -> \"none\"\n    1, 2 -> \"a few\"\n    in 3..9 -> \"some\"\n    else -> \"lots\"\n}\n\nfun main() {\n    println(describe(0))\n    println(describe(2))\n    println(describe(5))\n    println(describe(40))\n}",
+          "out": "none\na few\nsome\nlots"
+        },
+        {
+          "h": "Ranges and for",
+          "p": "<code>1..5</code> is a <b>range</b> from 1 to 5, both ends included. <code>for</code> walks through a range or a list. <code>until</code> leaves out the last number, <code>downTo</code> counts backwards, and <code>step</code> jumps by more than one. <code>while</code> loops as long as its condition holds.",
+          "code": "fun main() {\n    for (i in 1..5) print(\"$i \")\n    println()\n    for (i in 0 until 3) print(\"$i \")\n    println()\n    for (i in 10 downTo 0 step 5) print(\"$i \")\n    println()\n    var nuts = 1\n    while (nuts < 50) nuts *= 3\n    println(nuts)\n}",
+          "out": "1 2 3 4 5 \n0 1 2 \n10 5 0 \n81"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fun main() {\n    var total = 0\n    for (i in 1..4) total += i\n    println(total)\n}",
+          "options": ["10", "6", "4", "1234"],
+          "answer": "10",
+          "why": "1..4 includes both ends: 1 + 2 + 3 + 4 = 10."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fun main() {\n    val n = 7\n    val size = when {\n        n < 5 -> \"small\"\n        n < 10 -> \"medium\"\n        else -> \"large\"\n    }\n    println(size)\n}",
+          "options": ["medium", "small", "large", "small\nmedium"],
+          "answer": "medium",
+          "why": "when without a value tests each condition in turn and takes the first true one. 7 < 5 is false, 7 < 10 is true."
+        },
+        {
+          "q": "How many times does  for (i in 0 until 4)  run?",
+          "options": ["4", "5", "3", "0"],
+          "answer": "4",
+          "why": "until leaves out the end, so i takes 0, 1, 2 and 3."
+        }
+      ]
+    },
+    {
+      "id": "functions",
+      "title": "Functions",
+      "summary": "Parameters, default and named arguments, one-line functions, lambdas.",
+      "sections": [
+        {
+          "p": "Parameters need their types, and the return type goes after the brackets. A parameter can have a default value, so callers can leave it out. Callers can also name arguments, which makes a call with several numbers easier to read and lets them come in any order.",
+          "code": "fun share(nuts: Int, squirrels: Int = 2): Int {\n    return nuts / squirrels\n}\n\nfun main() {\n    println(share(10))\n    println(share(10, 5))\n    println(share(squirrels = 3, nuts = 12))\n}",
+          "out": "5\n2\n4"
+        },
+        {
+          "h": "One-line functions",
+          "p": "When a function just returns one expression, write <code>=</code> and the expression instead of braces and <code>return</code>. Kotlin works out the return type. A function that returns nothing useful returns <code>Unit</code>, which you don't write.",
+          "code": "fun square(n: Int) = n * n\nfun isEven(n: Int) = n % 2 == 0\n\nfun greet(name: String) {\n    println(\"Hi, $name\")\n}\n\nfun main() {\n    println(square(6))\n    println(isEven(7))\n    greet(\"Acorn\")\n}",
+          "out": "36\nfalse\nHi, Acorn"
+        },
+        {
+          "h": "Lambdas",
+          "p": "A <b>lambda</b> is a function without a name, written in braces: <code>{ n: Int -&gt; n * 3 }</code>. You can keep one in a <code>val</code> and pass it to other functions. When a lambda has one parameter you can leave it out and call it <code>it</code>. When a lambda is the last argument, it goes after the brackets.",
+          "code": "fun twice(x: Int, f: (Int) -> Int): Int = f(f(x))\n\nfun main() {\n    val triple = { n: Int -> n * 3 }\n    println(triple(4))\n    println(twice(2, triple))\n    println(twice(5) { it + 10 })\n    repeat(3) { print(\"nut \") }\n    println()\n}",
+          "out": "12\n18\n25\nnut nut nut "
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fun label(tree: String, count: Int = 1) = \"$tree x$count\"\n\nfun main() {\n    println(label(\"oak\"))\n    println(label(count = 3, tree = \"ash\"))\n}",
+          "options": [
+            "oak x1\nash x3",
+            "oak x0\nash x3",
+            "oak\nash x3",
+            "oak x1\n3 xash"
+          ],
+          "answer": "oak x1\nash x3",
+          "why": "count defaults to 1. Named arguments can come in any order."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fun apply(n: Int, f: (Int) -> Int) = f(n)\n\nfun main() {\n    println(apply(5) { it * it })\n}",
+          "options": ["25", "10", "5", "it * it"],
+          "answer": "25",
+          "why": "The lambda after the brackets is f, and it stands for its one parameter, 5."
+        }
+      ]
+    },
+    {
+      "id": "nulls",
+      "title": "Null safety",
+      "summary": "String?, ?., ?: and the !! warning.",
+      "sections": [
+        {
+          "p": "In Kotlin a plain <code>String</code> can never be <code>null</code>. When a value may be missing, add a question mark to the type: <code>String?</code>. The compiler then won't let you use it as if it were there. Inside an <code>if (x != null)</code> check, Kotlin knows it is there and lets you use it normally; this is called a <b>smart cast</b>.",
+          "code": "fun shout(name: String?) {\n    // println(name.length)   <- error: name might be null\n    if (name != null) {\n        println(name.uppercase())\n    } else {\n        println(\"nobody\")\n    }\n}\n\nfun main() {\n    shout(\"hazel\")\n    shout(null)\n}",
+          "out": "HAZEL\nnobody"
+        },
+        {
+          "h": "?. and ?:",
+          "p": "<code>?.</code> is the <b>safe call</b>: <code>name?.length</code> gives the length, or <code>null</code> if <code>name</code> is null. <code>?:</code>, the <b>Elvis operator</b>, gives a fallback when the left side is null. Together they replace most null checks. <code>!!</code> says \"I'm sure this isn't null\" and crashes if you're wrong, so use it rarely.",
+          "code": "fun main() {\n    val names: List<String?> = listOf(\"Hazel\", null, \"Acorn\")\n    for (n in names) {\n        println(n?.length)\n    }\n    for (n in names) {\n        println(n ?: \"unknown\")\n    }\n    val first = names[0]!!\n    println(first.lowercase())\n}",
+          "out": "5\nnull\n5\nHazel\nunknown\nAcorn\nhazel"
+        },
+        {
+          "h": "Functions that may find nothing",
+          "p": "Many library functions return a nullable value when there may be no answer. <code>toIntOrNull()</code> turns text into a number, or <code>null</code> if the text isn't one. <code>firstOrNull</code> finds the first matching item, or <code>null</code>. <code>?.let { ... }</code> runs a block only when the value is there.",
+          "code": "fun main() {\n    println(\"42\".toIntOrNull())\n    println(\"forty\".toIntOrNull())\n    val trees = listOf(\"oak\", \"ash\", \"beech\")\n    val long = trees.firstOrNull { it.length > 4 }\n    long?.let { println(\"Found $it\") }\n    val huge = trees.firstOrNull { it.length > 10 }\n    println(huge ?: \"no huge tree\")\n}",
+          "out": "42\nnull\nFound beech\nno huge tree"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fun main() {\n    val a: String? = null\n    val b: String? = \"pine\"\n    println((a?.length ?: 0) + (b?.length ?: 0))\n}",
+          "options": ["4", "null", "0", "An error"],
+          "answer": "4",
+          "why": "a?.length is null, so ?: gives 0. b?.length is 4. 0 + 4 = 4."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fun main() {\n    val inputs = listOf(\"3\", \"x\", \"5\")\n    var sum = 0\n    for (s in inputs) sum += s.toIntOrNull() ?: 0\n    println(sum)\n}",
+          "options": ["8", "3x5", "0", "An error"],
+          "answer": "8",
+          "why": "\"x\" isn't a number, so toIntOrNull gives null and ?: turns it into 0: 3 + 0 + 5."
+        },
+        {
+          "q": "What is the difference between String and String? ?",
+          "options": [
+            "Only String? may hold null",
+            "String? is a shorter string",
+            "Only String may hold null",
+            "There is none"
+          ],
+          "answer": "Only String? may hold null",
+          "why": "Kotlin keeps null out of plain types, so a missing value can only appear where the type says it may."
+        }
+      ]
+    },
+    {
+      "id": "collections",
+      "title": "Lists and maps",
+      "summary": "listOf and mutableListOf, maps, filter, map and friends.",
+      "sections": [
+        {
+          "p": "<code>listOf</code> makes a list that can't be changed. <code>mutableListOf</code> makes one you can <code>add</code> to and <code>remove</code> from. Read an item with <code>list[0]</code>; the first item is number 0. Printing a list shows its items in square brackets.",
+          "code": "fun main() {\n    val trees = listOf(\"oak\", \"ash\", \"beech\")\n    println(trees)\n    println(trees[1])\n    println(trees.size)\n    val stash = mutableListOf(3, 5)\n    stash.add(8)\n    stash.remove(3)\n    println(stash)\n    println(\"ash\" in trees)\n}",
+          "out": "[oak, ash, beech]\nash\n3\n[5, 8]\ntrue"
+        },
+        {
+          "h": "Maps",
+          "p": "A <b>map</b> stores values under keys. <code>\"oak\" to 4</code> makes a key and value pair. Looking up a key that isn't there gives <code>null</code>, so the result type is nullable and <code>?:</code> is handy. In a <code>for</code> loop, <code>(key, value)</code> takes each pair apart.",
+          "code": "fun main() {\n    val stash = mutableMapOf(\"oak\" to 4, \"hazel\" to 9)\n    stash[\"beech\"] = 2\n    stash[\"oak\"] = stash[\"oak\"]!! + 1\n    println(stash)\n    println(stash[\"pine\"] ?: 0)\n    for ((tree, nuts) in stash) {\n        println(\"$tree: $nuts\")\n    }\n}",
+          "out": "{oak=5, hazel=9, beech=2}\n0\noak: 5\nhazel: 9\nbeech: 2"
+        },
+        {
+          "h": "filter, map and friends",
+          "p": "Lists come with many functions that take a lambda. <code>filter</code> keeps the items that pass a test, <code>map</code> turns each item into something else, and <code>sum</code>, <code>count</code>, <code>maxOrNull</code> and <code>sortedBy</code> do what their names say. Chaining them often replaces a whole loop.",
+          "code": "fun main() {\n    val nuts = listOf(4, 11, 7, 2, 9)\n    println(nuts.filter { it > 5 })\n    println(nuts.map { it * 10 })\n    println(nuts.filter { it % 2 == 1 }.sum())\n    println(nuts.count { it < 5 })\n    println(nuts.maxOrNull())\n    val trees = listOf(\"beech\", \"oak\", \"chestnut\")\n    println(trees.sortedBy { it.length })\n    println(trees.joinToString(\" / \") { it.uppercase() })\n}",
+          "out": "[11, 7, 9]\n[40, 110, 70, 20, 90]\n27\n2\n11\n[oak, beech, chestnut]\nBEECH / OAK / CHESTNUT"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fun main() {\n    val n = listOf(1, 2, 3, 4, 5, 6)\n    println(n.filter { it % 2 == 0 }.map { it * it })\n}",
+          "options": ["[4, 16, 36]", "[1, 9, 25]", "[2, 4, 6]", "56"],
+          "answer": "[4, 16, 36]",
+          "why": "filter keeps 2, 4 and 6, and map squares each of them."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fun main() {\n    val ages = mapOf(\"Hazel\" to 3, \"Acorn\" to 1)\n    println(ages[\"Acorn\"])\n    println(ages[\"Bob\"])\n}",
+          "options": ["1\nnull", "1\n0", "1\nAn error", "Acorn\nBob"],
+          "answer": "1\nnull",
+          "why": "Looking up a missing key gives null rather than an error."
+        },
+        {
+          "q": "What does  listOf(1, 2).add(3)  do?",
+          "options": [
+            "It doesn't compile: listOf makes a read-only list",
+            "Makes [1, 2, 3]",
+            "Returns a new list [1, 2, 3]",
+            "Crashes when it runs"
+          ],
+          "answer": "It doesn't compile: listOf makes a read-only list",
+          "why": "A List has no add. Use mutableListOf when you need to change it."
+        }
+      ]
+    },
+    {
+      "id": "classes",
+      "title": "Classes and data classes",
+      "summary": "Constructors, properties, methods and data classes.",
+      "sections": [
+        {
+          "p": "A class's main constructor goes right after its name. Writing <code>val</code> or <code>var</code> in front of a parameter makes it a property in one step. Create an object by calling the class like a function; Kotlin has no <code>new</code>. <code>private</code> hides a property from code outside the class.",
+          "code": "class Squirrel(val name: String, private var nuts: Int = 0) {\n    fun gather(found: Int) {\n        nuts += found\n    }\n    fun report() = \"$name has $nuts nuts\"\n}\n\nfun main() {\n    val s = Squirrel(\"Hazel\")\n    s.gather(3)\n    s.gather(4)\n    println(s.report())\n    println(s.name)\n    // println(s.nuts)   <- error: nuts is private\n}",
+          "out": "Hazel has 7 nuts\nHazel"
+        },
+        {
+          "h": "Data classes",
+          "p": "Classes that mainly hold data are so common that Kotlin has <code>data class</code>. It writes the boring parts for you: a readable <code>toString</code>, <code>==</code> that compares the contents, and <code>copy</code> to make a changed copy. Data classes can also be taken apart into separate <code>val</code>s.",
+          "code": "data class Nut(val kind: String, val grams: Int)\n\nfun main() {\n    val a = Nut(\"hazel\", 3)\n    val b = Nut(\"hazel\", 3)\n    println(a)\n    println(a == b)\n    val big = a.copy(grams = 5)\n    println(big)\n    val (kind, grams) = big\n    println(\"$kind weighs $grams g\")\n}",
+          "out": "Nut(kind=hazel, grams=3)\ntrue\nNut(kind=hazel, grams=5)\nhazel weighs 5 g"
+        },
+        {
+          "h": "Interfaces and inheritance",
+          "p": "An <code>interface</code> lists what a class must provide, and <code>override</code> marks each function that provides it. Kotlin classes are closed by default: another class can extend one only if it is marked <code>open</code>. A <code>List</code> of the interface type can hold any class that implements it.",
+          "code": "interface Animal {\n    val name: String\n    fun sound(): String\n}\n\nclass Squirrel(override val name: String) : Animal {\n    override fun sound() = \"chitter\"\n}\n\nclass Owl(override val name: String) : Animal {\n    override fun sound() = \"hoo\"\n}\n\nfun main() {\n    val wood: List<Animal> = listOf(Squirrel(\"Hazel\"), Owl(\"Sage\"))\n    for (a in wood) println(\"${a.name} says ${a.sound()}\")\n}",
+          "out": "Hazel says chitter\nSage says hoo"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "data class Point(val x: Int, val y: Int)\n\nfun main() {\n    val p = Point(1, 2)\n    val q = p.copy(y = 5)\n    println(q)\n    println(p == Point(1, 2))\n}",
+          "options": [
+            "Point(x=1, y=5)\ntrue",
+            "Point(x=1, y=2)\ntrue",
+            "Point(x=1, y=5)\nfalse",
+            "Point@1b6d3586\nfalse"
+          ],
+          "answer": "Point(x=1, y=5)\ntrue",
+          "why": "copy changes only y. A data class compares its contents with ==, so an equal Point counts as equal."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "class Counter {\n    var count = 0\n    fun tick(): Int {\n        count++\n        return count\n    }\n}\n\nfun main() {\n    val a = Counter()\n    val b = Counter()\n    a.tick()\n    println(\"${a.tick()} ${b.tick()}\")\n}",
+          "options": ["2 1", "1 1", "2 2", "1 2"],
+          "answer": "2 1",
+          "why": "Each object has its own count. a has ticked twice and b once."
+        }
+      ]
+    },
+    {
+      "id": "sealed",
+      "title": "Sealed classes and when",
+      "summary": "A fixed set of cases, is checks, and when that covers them all.",
+      "sections": [
+        {
+          "p": "A <code>sealed</code> class or interface has a fixed list of subclasses, all in the same file. That lets <code>when</code> check that every case is handled: no <code>else</code> is needed, and adding a new case makes the compiler point at every <code>when</code> that misses it. Inside a branch, <code>is</code> has already smart-cast the value, so its own properties can be used.",
+          "code": "sealed interface Shape\ndata class Circle(val r: Double) : Shape\ndata class Rect(val w: Double, val h: Double) : Shape\n\nfun area(s: Shape): Double = when (s) {\n    is Circle -> 3.0 * s.r * s.r\n    is Rect -> s.w * s.h\n}\n\nfun main() {\n    println(area(Circle(2.0)))\n    println(area(Rect(3.0, 4.5)))\n}",
+          "out": "12.0\n13.5"
+        },
+        {
+          "h": "Results that can fail",
+          "p": "Sealed types are a good way to return either a value or a reason it failed, instead of throwing an exception. The caller has to look at which one it got. An <code>object</code> is a class with exactly one instance, useful for a case with no data.",
+          "code": "sealed interface Lookup\ndata class Found(val nuts: Int) : Lookup\ndata class Empty(val tree: String) : Lookup\nobject Unknown : Lookup\n\nfun look(tree: String): Lookup = when (tree) {\n    \"oak\" -> Found(12)\n    \"ash\" -> Empty(\"ash\")\n    else -> Unknown\n}\n\nfun main() {\n    for (t in listOf(\"oak\", \"ash\", \"elm\")) {\n        val msg = when (val r = look(t)) {\n            is Found -> \"found ${r.nuts}\"\n            is Empty -> \"nothing in the ${r.tree}\"\n            Unknown -> \"never heard of it\"\n        }\n        println(msg)\n    }\n}",
+          "out": "found 12\nnothing in the ash\nnever heard of it"
+        },
+        {
+          "h": "Enums",
+          "p": "An <code>enum class</code> is a type with a fixed list of named values. Each value knows its <code>name</code> and its position, <code>ordinal</code>, and <code>entries</code> lists them all. Like sealed types, a <code>when</code> over an enum can cover every value without <code>else</code>.",
+          "code": "enum class Season { SPRING, SUMMER, AUTUMN, WINTER }\n\nfun task(s: Season) = when (s) {\n    Season.SPRING, Season.SUMMER -> \"eat\"\n    Season.AUTUMN -> \"bury nuts\"\n    Season.WINTER -> \"dig them up\"\n}\n\nfun main() {\n    for (s in Season.entries) println(\"${s.ordinal} ${s.name}: ${task(s)}\")\n}",
+          "out": "0 SPRING: eat\n1 SUMMER: eat\n2 AUTUMN: bury nuts\n3 WINTER: dig them up"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "sealed interface Pet\ndata class Dog(val name: String) : Pet\ndata class Fish(val count: Int) : Pet\n\nfun say(p: Pet) = when (p) {\n    is Dog -> \"dog ${p.name}\"\n    is Fish -> \"${p.count} fish\"\n}\n\nfun main() {\n    println(say(Fish(3)))\n    println(say(Dog(\"Rex\")))\n}",
+          "options": [
+            "3 fish\ndog Rex",
+            "dog Rex\n3 fish",
+            "Fish(count=3)\nDog(name=Rex)",
+            "It doesn't compile without else"
+          ],
+          "answer": "3 fish\ndog Rex",
+          "why": "Pet is sealed, so the compiler knows Dog and Fish are the only cases and no else is needed."
+        },
+        {
+          "q": "Why does a when over a sealed type not need an else branch?",
+          "options": [
+            "The compiler knows every possible subclass",
+            "else is never needed in Kotlin",
+            "Sealed classes can't be null",
+            "when picks the first branch anyway"
+          ],
+          "answer": "The compiler knows every possible subclass",
+          "why": "All subclasses of a sealed type are known when it is compiled, so the compiler can check that each one is handled."
+        }
+      ]
+    },
+    {
+      "id": "extensions",
+      "title": "Extensions and generics",
+      "summary": "Adding functions to existing types, type parameters, and scope functions.",
+      "sections": [
+        {
+          "p": "An <b>extension function</b> adds a function to a type you didn't write, even <code>String</code> or <code>Int</code>. Inside it, <code>this</code> is the value it was called on. It doesn't really change the type; it's a normal function that is called with a dot.",
+          "code": "fun String.shout() = uppercase() + \"!\"\nfun Int.isBig() = this > 100\n\nfun main() {\n    println(\"hello squirrel\".shout())\n    println(250.isBig())\n    println(7.isBig())\n}",
+          "out": "HELLO SQUIRREL!\ntrue\nfalse"
+        },
+        {
+          "h": "Generics",
+          "p": "A <b>generic</b> function has a type parameter in angle brackets, <code>&lt;T&gt;</code>, standing for whatever type the caller uses. <code>List&lt;String&gt;</code> and <code>Map&lt;String, Int&gt;</code> are generic types you have already met. Kotlin works out <code>T</code> from the arguments, and the result keeps the right type.",
+          "code": "fun <T> middle(items: List<T>): T = items[items.size / 2]\n\nfun <T> List<T>.everyOther(): List<T> = filterIndexed { i, _ -> i % 2 == 0 }\n\ndata class Box<T>(val item: T)\n\nfun main() {\n    println(middle(listOf(\"oak\", \"ash\", \"elm\")))\n    println(middle(listOf(1, 2, 3, 4)) * 10)\n    println(listOf('a', 'b', 'c', 'd', 'e').everyOther())\n    println(Box(42))\n}",
+          "out": "ash\n30\n[a, c, e]\nBox(item=42)"
+        },
+        {
+          "h": "Scope functions",
+          "p": "<code>let</code>, <code>apply</code> and <code>also</code> run a block with a value. <code>let</code> calls it <code>it</code> and gives back the block's result, which suits nullable values. <code>apply</code> calls it <code>this</code> and gives back the value itself, which suits setting up an object. <code>also</code> does a side job, like printing, and passes the value on.",
+          "code": "class Nest {\n    var tree = \"\"\n    var height = 0\n}\n\nfun main() {\n    val nest = Nest().apply {\n        tree = \"oak\"\n        height = 12\n    }\n    println(\"${nest.tree} ${nest.height}\")\n    val doubled = nest.height.let { it * 2 }\n    println(doubled)\n    val nuts = mutableListOf(3, 1).also { println(\"start: $it\") }\n    nuts.add(4)\n    println(nuts)\n}",
+          "out": "oak 12\n24\nstart: [3, 1]\n[3, 1, 4]"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fun Int.squared() = this * this\n\nfun main() {\n    println(3.squared() + 4.squared())\n}",
+          "options": ["25", "7", "49", "34"],
+          "answer": "25",
+          "why": "squared is an extension on Int, so 3.squared() is 9 and 4.squared() is 16."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fun <T> pairUp(a: T, b: T): List<T> = listOf(a, b, a)\n\nfun main() {\n    println(pairUp(\"x\", \"y\"))\n    println(pairUp(1, 2).sum())\n}",
+          "options": ["[x, y, x]\n4", "[x, y]\n3", "[x, y, x]\n3", "xyx\n4"],
+          "answer": "[x, y, x]\n4",
+          "why": "T is String in the first call and Int in the second, so sum works: 1 + 2 + 1."
+        }
+      ]
+    },
+    {
+      "id": "errors",
+      "title": "Errors and Result",
+      "summary": "try and catch, require, Result and runCatching.",
+      "sections": [
+        {
+          "p": "When something goes wrong, Kotlin <b>throws</b> an exception and the nearest matching <code>catch</code> handles it. Code in <code>finally</code> runs either way. <code>require</code> checks a condition and throws an <code>IllegalArgumentException</code> with your message when it fails, which is the usual way to reject bad arguments.",
+          "code": "fun take(stash: Int, want: Int): Int {\n    require(want >= 0) { \"want must be non-negative\" }\n    if (want > stash) throw IllegalStateException(\"asked for $want, only $stash left\")\n    return stash - want\n}\n\nfun main() {\n    for (want in listOf(3, 12, -1)) {\n        try {\n            val left = take(10, want)\n            println(\"left: $left\")\n        } catch (e: IllegalArgumentException) {\n            println(\"bad input: ${e.message}\")\n        } catch (e: IllegalStateException) {\n            println(\"refused: ${e.message}\")\n        } finally {\n            println(\"checked $want\")\n        }\n    }\n}",
+          "out": "left: 7\nchecked 3\nrefused: asked for 12, only 10 left\nchecked 12\nbad input: want must be non-negative\nchecked -1"
+        },
+        {
+          "h": "Result instead of throwing",
+          "p": "<code>Result&lt;T&gt;</code> is either a success holding a value or a failure holding an exception. Callers look at it with <code>getOrNull</code>, <code>getOrElse</code> or <code>getOrDefault</code>, so a failure can't be forgotten the way an uncaught exception can. <code>Result.success</code> and <code>Result.failure</code> build the two cases.",
+          "code": "fun divide(a: Int, b: Int): Result<Int> =\n    if (b == 0) Result.failure(ArithmeticException(\"divide by zero\"))\n    else Result.success(a / b)\n\nfun main() {\n    for ((a, b) in listOf(10 to 4, 3 to 0)) {\n        val r = divide(a, b)\n        println(r.getOrElse { e -> \"${e.message}\" })\n    }\n    val ok = Result.success(42)\n    val bad: Result<Int> = Result.failure(IllegalArgumentException(\"nope\"))\n    println(ok.getOrNull())\n    println(bad.getOrDefault(-1))\n}",
+          "out": "2\ndivide by zero\n42\n-1"
+        },
+        {
+          "h": "runCatching, map and recover",
+          "p": "<code>runCatching { ... }</code> runs a block and wraps either its value or the exception it threw in a <code>Result</code>. <code>map</code> transforms a successful value and leaves a failure alone; <code>recover</code> turns a failure into a value. <code>isSuccess</code> and <code>isFailure</code> ask which case you have.",
+          "code": "fun main() {\n    val parsed = listOf(\"12\", \"x\", \"5\").map { runCatching { it.toInt() } }\n    println(parsed.map { it.getOrDefault(0) }.sum())\n    println(parsed.count { it.isFailure })\n    val doubled = runCatching { \"7\".toInt() }.map { it * 2 }\n    println(doubled.getOrNull())\n    val recovered = runCatching { \"nope\".toInt() }.recover { 0 }\n    println(recovered.getOrThrow())\n}",
+          "out": "17\n1\n14\n0"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fun main() {\n    try {\n        println(\"a\")\n        require(false) { \"x\" }\n        println(\"b\")\n    } catch (e: IllegalArgumentException) {\n        println(\"c\")\n    } finally {\n        println(\"d\")\n    }\n}",
+          "options": ["a\nc\nd", "a\nb\nd", "a\nc", "c\nd"],
+          "answer": "a\nc\nd",
+          "why": "require throws before b prints; the catch runs, then finally."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fun main() {\n    val rs = listOf(\n        Result.success(2),\n        Result.failure<Int>(Exception(\"x\")),\n        Result.success(5),\n    )\n    println(rs.map { it.getOrDefault(0) }.sum())\n}",
+          "options": ["7", "2", "5", "0"],
+          "answer": "7",
+          "why": "The failure becomes 0, so 2 + 0 + 5 = 7."
+        },
+        {
+          "q": "What does runCatching { ... } return when the block throws?",
+          "options": [
+            "A Result.failure holding the exception",
+            "null",
+            "An empty Result",
+            "It always rethrows"
+          ],
+          "answer": "A Result.failure holding the exception",
+          "why": "runCatching catches the throw and wraps it, so the caller can decide what to do."
+        }
+      ]
+    },
+    {
+      "id": "grouping",
+      "title": "Grouping and folding",
+      "summary": "groupBy, fold, flatMap, associateWith and friends.",
+      "sections": [
+        {
+          "p": "<code>groupBy</code> builds a map from a key to the list of items that share it. Chaining <code>mapValues</code> turns each list into a total. <code>groupingBy { ... }.eachCount()</code> counts how many times each key appears without building the lists first.",
+          "code": "data class Find(val tree: String, val nuts: Int)\n\nfun main() {\n    val finds = listOf(\n        Find(\"oak\", 3), Find(\"ash\", 5), Find(\"oak\", 2), Find(\"hazel\", 4), Find(\"ash\", 1)\n    )\n    println(finds.groupBy { it.tree }.mapValues { (_, v) -> v.sumOf { it.nuts } })\n    println(finds.groupingBy { it.tree }.eachCount())\n    println(finds.map { it.tree }.distinct().sorted())\n}",
+          "out": "{oak=5, ash=6, hazel=4}\n{oak=2, ash=2, hazel=1}\n[ash, hazel, oak]"
+        },
+        {
+          "h": "fold and flatMap",
+          "p": "<code>fold</code> walks the list with a running total, starting from the value you give it: each step gets the total so far and the next item. <code>flatMap</code> turns each item into a list and concatenates the results, so one item can become several.",
+          "code": "fun main() {\n    val finds = listOf(3, 5, 2, 4, 1)\n    println(finds.fold(0) { acc, n -> acc + n })\n    println(finds.fold(1) { acc, n -> acc * n })\n    println(listOf(1, 2, 3).flatMap { n -> listOf(n, n * 10) })\n    println((1..5).map { it * it }.joinToString(\"-\"))\n}",
+          "out": "15\n120\n[1, 10, 2, 20, 3, 30]\n1-4-9-16-25"
+        },
+        {
+          "h": "associateWith and filterValues",
+          "p": "<code>associateWith</code> makes a map whose keys are the list items and whose values come from a lambda. <code>associate</code> builds each key–value pair itself. On a map, <code>filterValues</code> keeps the entries whose values pass a test.",
+          "code": "fun main() {\n    val sizes = listOf(\"oak\", \"beech\", \"ash\").associateWith { it.length }\n    println(sizes)\n    println(sizes.filterValues { it > 3 })\n    println(listOf(\"a\", \"bb\").associate { it to it.uppercase() })\n}",
+          "out": "{oak=3, beech=5, ash=3}\n{beech=5}\n{a=A, bb=BB}"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fun main() {\n    val words = listOf(\"oak\", \"ash\", \"elm\", \"oak\")\n    println(words.groupingBy { it }.eachCount())\n}",
+          "options": [
+            "{oak=2, ash=1, elm=1}",
+            "{oak=1, ash=1, elm=1}",
+            "[oak, ash, elm, oak]",
+            "{2, 1, 1}"
+          ],
+          "answer": "{oak=2, ash=1, elm=1}",
+          "why": "eachCount counts how many times each key appears; oak appears twice."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fun main() {\n    println(listOf(2, 3, 4).fold(1) { acc, n -> acc * n })\n}",
+          "options": ["24", "9", "10", "1"],
+          "answer": "24",
+          "why": "fold starts at 1 and multiplies by each item: 1×2×3×4 = 24."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fun main() {\n    println(listOf(1, 2).flatMap { listOf(it, it + 10) })\n}",
+          "options": ["[1, 11, 2, 12]", "[1, 2, 11, 12]", "[1, 2]", "[[1, 11], [2, 12]]"],
+          "answer": "[1, 11, 2, 12]",
+          "why": "flatMap concatenates the small lists into one list."
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Project: a nut inventory",
+      "summary": "Data classes, sealed events and a Result-style apply together.",
+      "sections": [
+        {
+          "p": "An inventory is built by replaying a list of events. Each event is one case of a sealed interface, so <code>when</code> must handle every kind. Taking more nuts than you have is a failure returned as a sealed result, not thrown. A gift that asks for more walnuts than you have is skipped and reported; the rest become a sorted table.",
+          "code": "enum class NutKind { ACORN, WALNUT, HAZELNUT }\n\nsealed interface InventoryEvent {\n    val nut: NutKind\n    val count: Int\n}\ndata class Found(override val nut: NutKind, override val count: Int) : InventoryEvent\ndata class Ate(override val nut: NutKind, override val count: Int) : InventoryEvent\ndata class Gift(override val nut: NutKind, override val count: Int, val to: String) : InventoryEvent\n\ndata class Stock(val counts: Map<NutKind, Int> = NutKind.entries.associateWith { 0 }) {\n    operator fun get(n: NutKind) = counts.getValue(n)\n    fun with(n: NutKind, v: Int) = Stock(counts + (n to v))\n}\n\nsealed interface ApplyResult\ndata class Ok(val stock: Stock) : ApplyResult\ndata class Err(val error: String) : ApplyResult\n\nfun apply(stock: Stock, e: InventoryEvent): ApplyResult = when (e) {\n    is Found -> Ok(stock.with(e.nut, stock[e.nut] + e.count))\n    is Ate, is Gift -> {\n        val action = e::class.simpleName!!.lowercase()\n        if (stock[e.nut] < e.count) {\n            Err(\"cannot $action ${e.count} ${e.nut.name.lowercase()}: only ${stock[e.nut]}\")\n        } else {\n            Ok(stock.with(e.nut, stock[e.nut] - e.count))\n        }\n    }\n}\n\nfun main() {\n    val events: List<InventoryEvent> = listOf(\n        Found(NutKind.ACORN, 8),\n        Found(NutKind.WALNUT, 3),\n        Ate(NutKind.ACORN, 2),\n        Gift(NutKind.WALNUT, 5, \"Pip\"),\n        Found(NutKind.HAZELNUT, 4),\n        Gift(NutKind.ACORN, 1, \"Pip\"),\n    )\n    var stock = Stock()\n    val gifts = mutableSetOf<String>()\n    for (e in events) {\n        when (val r = apply(stock, e)) {\n            is Ok -> {\n                stock = r.stock\n                if (e is Gift) gifts += e.to\n            }\n            is Err -> println(\"skipped: ${r.error}\")\n        }\n    }\n    stock.counts.entries.sortedByDescending { it.value }.forEach { (nut, n) ->\n        println(\"%-9s %2d\".format(nut.name.lowercase(), n))\n    }\n    println(\"gifts to: ${gifts.sorted().joinToString(\", \")}\")\n}",
+          "out": "skipped: cannot gift 5 walnut: only 3\nacorn      5\nhazelnut   4\nwalnut     3\ngifts to: Pip"
+        },
+        {
+          "h": "Ideas to try",
+          "p": "Add a <code>Traded</code> event that swaps one nut for another and see the compiler point at the unhandled case, keep a history of every stock along the way, or switch the sealed <code>ApplyResult</code> for the built-in <code>Result</code> type."
+        }
+      ],
+      "practice": [
+        {
+          "q": "Why does apply return ApplyResult instead of throwing?",
+          "options": [
+            "So a bad event can be skipped and reported without stopping the whole replay",
+            "Kotlin cannot throw inside a when",
+            "Sealed types cannot be thrown",
+            "Strings are faster than exceptions"
+          ],
+          "answer": "So a bad event can be skipped and reported without stopping the whole replay",
+          "why": "Returning an error value keeps the loop in charge, the same idea as Result."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "enum class Nut { ACORN, WALNUT }\nfun main() {\n    val stock = Nut.entries.associateWith { 0 }.toMutableMap()\n    stock[Nut.ACORN] = stock.getValue(Nut.ACORN) + 3\n    println(stock.keys.joinToString(\",\") { it.name.lowercase() } + \" \" + stock.getValue(Nut.ACORN))\n}",
+          "options": ["acorn,walnut 3", "ACORN,WALNUT 3", "acorn 3", "0,0 3"],
+          "answer": "acorn,walnut 3",
+          "why": "entries() gives both enums in order, name.lowercase() makes the keys readable, and acorn is then increased."
+        },
+        {
+          "q": "What does Stock.with return?",
+          "options": [
+            "A new Stock with one count changed, leaving the old Stock alone",
+            "The same Stock, mutated in place",
+            "Only the new count as an Int",
+            "null when the nut is missing"
+          ],
+          "answer": "A new Stock with one count changed, leaving the old Stock alone",
+          "why": "counts + (n to v) builds a new map; data classes are usually treated as values."
+        }
+      ]
+    }
+  ]
+}
