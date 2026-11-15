@@ -52,10 +52,10 @@ def course_script(course: dict, commit: str, command: str) -> str:
 
 def build(data: Path, command: str) -> dict[str, str]:
     commit = lib.data_commit(data)
-    math = data / "math"
-    catalog = lib.read(math / "catalog.json")
+    electronics = data / "electronics"
+    catalog = lib.read(electronics / "catalog.json")
     out: dict[str, str] = {"catalog.js": catalog_script(catalog, commit, command)}
-    for course_path in sorted(math.glob("*/course.json")):
+    for course_path in sorted(electronics.glob("*/course.json")):
         course = lib.read(course_path)
         cid = course["id"]
         out[f"{cid}.js"] = course_script(course, commit, command)
@@ -68,8 +68,8 @@ def main(argv=None) -> int:
     ap.add_argument("--data", type=Path, default=lib.ROOT, help="this repo's checkout")
     ap.add_argument("--check", action="store_true", help="write nothing; exit 1 if any file differs")
     args = ap.parse_args(argv)
-    if not (args.data / "math" / "catalog.json").is_file():
-        print(f"{args.data / 'math' / 'catalog.json'}: missing")
+    if not (args.data / "electronics" / "catalog.json").is_file():
+        print(f"{args.data / 'electronics' / 'catalog.json'}: missing")
         return 1
     command = "python3 data/tools/gen_electronics.py --out electronics-learner/data"
     return lib.write_outputs(build(args.data, command), args.out, args.check, command)
