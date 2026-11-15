@@ -30,6 +30,7 @@ only imported when its license fits that.
 | Theodor Nöldeke, *Compendious Syriac Grammar* (1904), Part 1, Ch. 1 | Estrangela letter forms when cross-checking `strokes/syriac.jsonl` | Public domain | via Wikisource, https://en.wikisource.org/wiki/Compendious_Syriac_Grammar/Part_1/Chapter_1 |
 | wordfreq (Robyn Speer and contributors) | Frequency tags (core, common, rare) on vocabulary | CC BY-SA 4.0 (data) | https://github.com/rspeer/wordfreq |
 | Pascal Costanza / ExaScience, Slick (s-expression surface for Go) | Shape of the Hello World and the listed deviations taught in `programming/slick/` (course text written for this project; not a copy of the Slick sources) | Referenced for the published language shape; course text is original under this repo's license | https://github.com/ExaScience/slick |
+| David Morgan-Mar, Piet | Colour command table and language shape taught in `programming/piet/` (course text written for this project; not a copy of the Piet specification) | Referenced for the published language shape; course text is original under this repo's license | https://www.dangermouse.net/esoteric/piet.html |
 
 Content written for this project is marked as original in its file and isn't
 listed here.

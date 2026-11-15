@@ -1,0 +1,493 @@
+{
+  "schema": "programming-course@1",
+  "id": "piet",
+  "name": "Piet",
+  "title": "Programs as paintings",
+  "intro": "Piet (David Morgan-Mar, 2001, named after the painter Piet Mondrian) uses pictures as source code. The program is a grid of coloured squares called <b>codels</b>. An interpreter walks from one block of colour to the next, and the change in colour between them decides what happens. To play with it, try the npiet interpreter or one of the online Piet editors, which let you paint and step through a program.",
+  "lessons": [
+    {
+      "id": "colours",
+      "title": "Colours and commands",
+      "summary": "Hue steps and lightness steps choose the instruction.",
+      "sections": [
+        {
+          "p": "Piet uses 18 colours: six hues (red, yellow, green, cyan, blue, magenta) in three lightnesses (light, normal, dark), plus white and black. The command is not set by a colour itself but by how far you move between two colours: steps around the hue cycle, and steps darker in lightness (both wrap around)."
+        },
+        {
+          "h": "The command table",
+          "p": "<table class=\"ops\"><tr><th>Hue steps</th><th>Same lightness</th><th>1 darker</th><th>2 darker</th></tr><tr><td>0</td><td>–</td><td>push</td><td>pop</td></tr><tr><td>1</td><td>add</td><td>subtract</td><td>multiply</td></tr><tr><td>2</td><td>divide</td><td>mod</td><td>not</td></tr><tr><td>3</td><td>greater</td><td>pointer</td><td>switch</td></tr><tr><td>4</td><td>duplicate</td><td>roll</td><td>in (number)</td></tr><tr><td>5</td><td>in (char)</td><td>out (number)</td><td>out (char)</td></tr></table>"
+        },
+        {
+          "h": "Size is data",
+          "p": "<code>push</code> pushes the number of codels in the block you just left. A block of 5 red squares followed by a darker red block pushes 5. Arithmetic then works on the stack, like a calculator that uses reverse Polish notation."
+        },
+        {
+          "h": "Moving around",
+          "p": "The interpreter keeps a <b>direction pointer</b> (right, down, left or up) and a <b>codel chooser</b> (left or right) to decide which edge of a block to leave from. Black squares and the image edge are walls; when every way out is blocked eight times running, the program stops. White is free space that can be crossed without doing anything."
+        },
+        {
+          "h": "How these lessons write a program",
+          "p": "Each program is drawn in colour and also written out as text, one row per line. Every codel is two letters: the lightness (<code>l</code> light, <code>n</code> normal, <code>d</code> dark) and the hue (<code>r</code> red, <code>y</code> yellow, <code>g</code> green, <code>c</code> cyan, <code>b</code> blue, <code>m</code> magenta). <code>ww</code> is white and <code>kk</code> is black. The run starts at the top-left codel heading right.<table class=\"codels\"><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ffffc0\" title=\"ly\"></td><td style=\"background:#c0ffc0\" title=\"lg\"></td><td style=\"background:#c0ffff\" title=\"lc\"></td><td style=\"background:#c0c0ff\" title=\"lb\"></td><td style=\"background:#ffc0ff\" title=\"lm\"></td></tr><tr><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#ffff00\" title=\"ny\"></td><td style=\"background:#00ff00\" title=\"ng\"></td><td style=\"background:#00ffff\" title=\"nc\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#ff00ff\" title=\"nm\"></td></tr><tr><td style=\"background:#c00000\" title=\"dr\"></td><td style=\"background:#c0c000\" title=\"dy\"></td><td style=\"background:#00c000\" title=\"dg\"></td><td style=\"background:#00c0c0\" title=\"dc\"></td><td style=\"background:#0000c0\" title=\"db\"></td><td style=\"background:#c000c0\" title=\"dm\"></td></tr><tr><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr></table>",
+          "code": "lr ly lg lc lb lm\nnr ny ng nc nb nm\ndr dy dg dc db dm\nww ww ww kk kk kk"
+        }
+      ],
+      "practice": [
+        {
+          "q": "Light red to normal red. What happens?",
+          "options": ["push", "pop", "add", "Nothing"],
+          "answer": "push",
+          "why": "No hue change and one step darker is push."
+        },
+        {
+          "q": "Red to yellow at the same lightness. What happens?",
+          "options": ["add", "push", "multiply", "out (char)"],
+          "answer": "add",
+          "why": "Red to yellow is one hue step with no lightness change: add."
+        },
+        {
+          "q": "What number does push put on the stack?",
+          "options": [
+            "The size of the block just left",
+            "The colour's number",
+            "Always 1",
+            "The row number"
+          ],
+          "answer": "The size of the block just left",
+          "why": "Block size in codels is how Piet gets numbers into a program."
+        },
+        {
+          "q": "What do black codels do?",
+          "options": [
+            "Block movement, like walls",
+            "End the program at once",
+            "Print a space",
+            "Push 0"
+          ],
+          "answer": "Block movement, like walls",
+          "why": "The pointer cannot enter black; it turns and tries another way."
+        },
+        {
+          "q": "Dark red to light red. How many steps darker is that?",
+          "options": ["1", "2", "0", "It is lighter, so none"],
+          "answer": "1",
+          "why": "Lightness wraps around: light, normal, dark, then light again, so dark to light is one step darker."
+        },
+        {
+          "q": "Which change in colour is multiply?",
+          "options": [
+            "One hue step and two darker",
+            "One hue step, same lightness",
+            "Two hue steps, same lightness",
+            "No hue change, one darker"
+          ],
+          "answer": "One hue step and two darker",
+          "why": "Look in the hue-step 1 row, two-darker column."
+        },
+        {
+          "q": "How many coloured hues does Piet use (not counting white and black)?",
+          "options": ["6", "3", "18", "8"],
+          "answer": "6",
+          "why": "Red, yellow, green, cyan, blue and magenta; each comes in three lightnesses."
+        },
+        {
+          "q": "What do the letters ww mean in these lessons?",
+          "options": ["A white codel", "Write and wait", "Two pushes", "A wall"],
+          "answer": "A white codel",
+          "why": "ww is white free space; kk is black."
+        },
+        {
+          "q": "Red to green at the same lightness. What happens?",
+          "options": ["divide", "add", "multiply", "greater"],
+          "answer": "divide",
+          "why": "Red to green is two hue steps with no lightness change: divide."
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "title": "Numbers and arithmetic",
+      "summary": "Push block sizes, then add, subtract and multiply.",
+      "sections": [
+        {
+          "p": "Read this program from the left. The first block has 5 codels; moving from light red to normal red is push, so 5 goes on the stack. The normal red block has 3 codels, and normal red to dark red pushes 3. Dark red to dark yellow is one hue step: add, leaving 8. Dark yellow to light red is five hue steps and one darker: out (number). The white path and the blue bar at the bottom are where the program stops; the last lesson explains how.<table class=\"codels\"><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#c00000\" title=\"dr\"></td><td style=\"background:#c0c000\" title=\"dy\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td></tr></table>",
+          "code": "lr lr nr dr dy lr kk\nlr lr nr kk kk ww kk\nlr kk nr kk kk ww kk\nkk kk kk kk kk ww kk\nkk kk kk kk nb nb nb",
+          "out": "8"
+        },
+        {
+          "h": "Order matters",
+          "p": "For subtract, divide and mod, the value pushed first is on the left: push 5, push 3, subtract gives 5 − 3.<table class=\"codels\"><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#c00000\" title=\"dr\"></td><td style=\"background:#ffffc0\" title=\"ly\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td></tr></table>",
+          "code": "lr lr nr dr ly nr kk\nlr lr nr kk kk ww kk\nlr kk nr kk kk ww kk\nkk kk kk kk kk ww kk\nkk kk kk kk nb nb nb",
+          "out": "2"
+        },
+        {
+          "h": "Blocks can be any shape",
+          "p": "Only the number of codels counts. Here a 2×2 block pushes 4, and 3 × 4 is printed.<table class=\"codels\"><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#c00000\" title=\"dr\"></td><td style=\"background:#ffff00\" title=\"ny\"></td><td style=\"background:#c00000\" title=\"dr\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td></tr></table>",
+          "code": "lr lr nr nr dr ny dr kk\nlr kk nr nr kk kk ww kk\nkk kk kk kk kk kk ww kk\nkk kk kk kk kk nb nb nb",
+          "out": "12"
+        },
+        {
+          "h": "Several results",
+          "p": "Each out (number) prints and removes the top of the stack. Nothing is printed between results, so 2 and then 4 come out as 24.<table class=\"codels\"><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#c000c0\" title=\"dm\"></td><td style=\"background:#ffc0ff\" title=\"lm\"></td><td style=\"background:#ff00ff\" title=\"nm\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ff00ff\" title=\"nm\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#c000c0\" title=\"dm\"></td><td style=\"background:#ffc0ff\" title=\"lm\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td></tr></table>",
+          "code": "lr nr dm lm nm lr nm kk\nlr kk dm lm kk kk ww kk\nkk kk kk kk kk kk ww kk\nkk kk kk kk kk nb nb nb",
+          "out": "24"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr lr lr nr dr dg ly kk\nlr lr kk nr kk kk ww kk\nlr lr kk kk kk kk ww kk\nkk kk kk kk kk kk ww kk\nkk kk kk kk kk nb nb nb",
+          "options": ["3", "3.5", "4", "5"],
+          "answer": "3",
+          "why": "Push 7, push 2, divide: whole-number division gives 3."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr lr lr nr dr lg ny kk\nlr lr kk nr kk kk ww kk\nlr lr kk kk kk kk ww kk\nkk kk kk kk kk kk ww kk\nkk kk kk kk kk nb nb nb",
+          "options": ["1", "3", "0", "5"],
+          "answer": "1",
+          "why": "Push 7, push 2, mod: the remainder of 7 ÷ 2 is 1."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr lr nr nr dr nr dm kk\nlr lr nr nr kk kk ww kk\nlr lr nr kk kk kk ww kk\nkk kk kk kk kk kk ww kk\nkk kk kk kk kk nb nb nb",
+          "options": ["6", "5", "65", "11"],
+          "answer": "6",
+          "why": "Push 6, push 5, then pop throws the 5 away, leaving 6 to print."
+        },
+        {
+          "q": "Which change in colour is subtract?",
+          "options": [
+            "One hue step and one darker",
+            "One hue step, same lightness",
+            "Two hue steps, same lightness",
+            "No hue change, one darker"
+          ],
+          "answer": "One hue step and one darker",
+          "why": "Look in the hue-step 1 row, one-darker column."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr lr lr lr nr nr dr dy lr kk\nkk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk nb nb nb",
+          "options": ["6", "4", "2", "8"],
+          "answer": "6",
+          "why": "Push 4, push 2, add: 4 + 2 = 6."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr lr lr lr lr lr lr lr nr nr nr dr ly nr kk\nkk kk kk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk kk nb nb nb",
+          "options": ["5", "8", "3", "11"],
+          "answer": "5",
+          "why": "Push 8, push 3, subtract: 8 − 3 = 5."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr lr nr nr nr nr nr dr ny dr kk\nkk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk nb nb nb",
+          "options": ["10", "7", "25", "2"],
+          "answer": "10",
+          "why": "Push 2, push 5, multiply: 2 × 5 = 10."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr lr lr lr lr lr lr lr nr nr dr dg ly kk\nkk kk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk nb nb nb",
+          "options": ["4", "8", "2", "6"],
+          "answer": "4",
+          "why": "Push 8, push 2, divide: whole-number division gives 4."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr lr lr lr lr lr lr lr nr nr nr dr lg ny kk\nkk kk kk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk kk nb nb nb",
+          "options": ["2", "0", "3", "8"],
+          "answer": "2",
+          "why": "Push 8, push 3, mod: the remainder of 8 ÷ 3 is 2."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr lr lr lr nr nr nr dr nr dm kk\nkk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk nb nb nb",
+          "options": ["4", "3", "7", "1"],
+          "answer": "4",
+          "why": "Push 4, push 3, then pop throws the 3 away, leaving 4 to print."
+        }
+      ]
+    },
+    {
+      "id": "characters",
+      "title": "Printing characters",
+      "summary": "Build a character code, then out (char).",
+      "sections": [
+        {
+          "p": "out (char) prints the character whose code is on top of the stack. H is 72, which is 8 × 9, so push an 8-codel block and a 9-codel block, multiply, and print.<table class=\"codels\"><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#c00000\" title=\"dr\"></td><td style=\"background:#ffff00\" title=\"ny\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td></tr></table>",
+          "code": "lr lr lr nr nr nr dr ny lr kk\nlr lr lr nr nr nr kk kk ww kk\nlr lr kk nr nr nr kk kk ww kk\nkk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk nb nb nb",
+          "out": "H"
+        },
+        {
+          "h": "Reusing a value",
+          "p": "i is 105, which is 72 + 33. Duplicate keeps a copy of the 72, the copy is printed, then 3 × 11 = 33 is added to what is left.<table class=\"codels\"><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#c00000\" title=\"dr\"></td><td style=\"background:#ffff00\" title=\"ny\"></td><td style=\"background:#ff00ff\" title=\"nm\"></td><td style=\"background:#c0c0ff\" title=\"lb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000c0\" title=\"db\"></td><td style=\"background:#ff00ff\" title=\"nm\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#ffc0ff\" title=\"lm\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#c0c0ff\" title=\"lb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#c0c0ff\" title=\"lb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td></tr></table>",
+          "code": "lr lr lr nr nr nr dr ny nm lb nb nb nb nb db nm nr lm kk\nlr lr lr nr nr nr kk kk kk lb nb nb nb nb kk kk kk ww kk\nlr lr kk nr nr nr kk kk kk lb nb nb nb kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk nb nb nb",
+          "out": "Hi"
+        },
+        {
+          "h": "Big numbers, small pictures",
+          "p": "A block of 105 codels works, but most Piet programmers build numbers by multiplying small blocks, just as above. Painting programs that also look good is part of the fun."
+        }
+      ],
+      "practice": [
+        {
+          "q": "Which character code does out (char) need to print A?",
+          "options": ["65", "1", "97", "41"],
+          "answer": "65",
+          "why": "A is 65 in ASCII; 97 is a lowercase a."
+        },
+        {
+          "q": "How would you get 72 on the stack with small blocks?",
+          "options": [
+            "Push 8, push 9, multiply",
+            "Push 7, push 2",
+            "Push 72 times",
+            "Push 9, push 8, subtract"
+          ],
+          "answer": "Push 8, push 9, multiply",
+          "why": "8 × 9 = 72, using two small blocks instead of one 72-codel block."
+        },
+        {
+          "q": "What does duplicate do?",
+          "options": [
+            "Pushes a copy of the top value",
+            "Prints the top value twice",
+            "Doubles the top value",
+            "Copies a block of codels"
+          ],
+          "answer": "Pushes a copy of the top value",
+          "why": "Afterwards the same number is on the stack twice."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr lr lr lr lr nr nr nr nr nr nr nr nr nr nr nr nr nr dr ny lr kk\nkk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk nb nb nb",
+          "options": ["A", "a", "65", "H"],
+          "answer": "A",
+          "why": "Push 5, push 13, multiply: 65 is the code for A, then out (char)."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr lr lr nr nr nr nr nr nr nr nr nr nr nr dr ny lr kk\nkk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk kk kk kk kk nb nb nb",
+          "options": ["!", "3", "33", "B"],
+          "answer": "!",
+          "why": "Push 3, push 11, multiply: 33 is the code for an exclamation mark."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr lr lr lr lr lr nr nr nr nr nr nr nr nr dr ny lr kk\nkk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk kk kk kk kk nb nb nb",
+          "options": ["0", "48", "6", "8"],
+          "answer": "0",
+          "why": "Push 6, push 8, multiply: 48 is the code for the digit character 0."
+        },
+        {
+          "q": "How does out (char) differ from out (number)?",
+          "options": [
+            "It prints the top value as a character code",
+            "It prints twice",
+            "It leaves the value on the stack",
+            "It only works with red"
+          ],
+          "answer": "It prints the top value as a character code",
+          "why": "out (number) writes digits; out (char) writes the character for that code."
+        }
+      ]
+    },
+    {
+      "id": "stack",
+      "title": "Working the stack",
+      "summary": "Duplicate, roll, greater and not.",
+      "sections": [
+        {
+          "p": "Duplicate followed by multiply squares a number.<table class=\"codels\"><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#ffc0ff\" title=\"lm\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td></tr></table>",
+          "code": "lr nr nb lm nb kk\nlr kk kk kk ww kk\nlr kk kk kk ww kk\nkk kk kk kk ww kk\nkk kk kk nb nb nb",
+          "out": "9"
+        },
+        {
+          "h": "Roll",
+          "p": "Roll pops two values: the number of rolls on top, and below it the depth. One roll to depth 3 buries the top value three deep. Push 1, 2, 3, then roll with depth 3 and 1 roll: the stack becomes 3, 1, 2 (top last). Printing three times gives 2, then 1, then 3.<table class=\"codels\"><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#c00000\" title=\"dr\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#c00000\" title=\"dr\"></td><td style=\"background:#c0c0ff\" title=\"lb\"></td><td style=\"background:#00ffff\" title=\"nc\"></td><td style=\"background:#00c000\" title=\"dg\"></td><td style=\"background:#ffffc0\" title=\"ly\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#c00000\" title=\"dr\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#c00000\" title=\"dr\"></td><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td></tr></table>",
+          "code": "lr nr dr lr nr dr lb nc dg ly kk\nkk nr dr lr kk kk kk kk kk ww kk\nkk kk dr lr kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk nb nb nb",
+          "out": "213"
+        },
+        {
+          "h": "Greater and not",
+          "p": "Greater pops two values and pushes 1 if the first is bigger than the second, otherwise 0. Not turns 0 into 1 and anything else into 0. They are how Piet makes decisions, together with pointer and switch.<table class=\"codels\"><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#c00000\" title=\"dr\"></td><td style=\"background:#00c0c0\" title=\"dc\"></td><td style=\"background:#c0ffc0\" title=\"lg\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td></tr></table>",
+          "code": "lr nr dr dc lg kk\nlr nr kk kk ww kk\nkk nr kk kk ww kk\nkk kk kk kk ww kk\nkk kk kk nb nb nb",
+          "out": "0"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr lr nr dr dc lg kk\nlr kk nr kk kk ww kk\nlr kk nr kk kk ww kk\nkk kk kk kk kk ww kk\nkk kk kk kk nb nb nb",
+          "options": ["1", "0", "4", "7"],
+          "answer": "1",
+          "why": "Push 4, push 3, greater: 4 is bigger than 3, so 1."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr lr nr lg ny kk\nlr lr kk kk ww kk\nkk kk kk kk ww kk\nkk kk kk nb nb nb",
+          "options": ["0", "1", "4", "-4"],
+          "answer": "0",
+          "why": "Push 4, then not: any value other than 0 becomes 0."
+        },
+        {
+          "q": "Stack (bottom to top) 5, 6, 7. Push 2 and 1, then roll. What is the stack?",
+          "options": ["5, 7, 6", "6, 7, 5", "7, 5, 6", "5, 6, 7"],
+          "answer": "5, 7, 6",
+          "why": "Depth 2, one roll: the top value 7 is buried two deep, under the 6."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr nr nb lm nb kk\nlr kk kk kk ww kk\nlr kk kk kk ww kk\nlr kk kk kk ww kk\nlr kk kk kk nb nb nb",
+          "options": ["25", "5", "10", "0"],
+          "answer": "25",
+          "why": "Push 5, duplicate, multiply: 5 × 5 = 25."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr lr lr lr lr lr lr nr nr dr dc lg kk\nkk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk nb nb nb",
+          "options": ["1", "0", "7", "2"],
+          "answer": "1",
+          "why": "Push 7, push 2, greater: 7 is bigger than 2, so 1."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr lr nr nr nr nr nr dr dc lg kk\nkk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk nb nb nb",
+          "options": ["0", "1", "2", "5"],
+          "answer": "0",
+          "why": "Push 2, push 5, greater: 2 is not bigger than 5, so 0."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr nr lg ny kk\nkk kk kk ww kk\nkk kk kk ww kk\nkk kk kk ww kk\nkk kk nb nb nb",
+          "options": ["0", "1", "2", "-1"],
+          "answer": "0",
+          "why": "Push 1, then not: any value other than 0 becomes 0."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr lr lr nr nr nr nr nr dr ny dr kk\nkk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk nb nb nb",
+          "options": ["15", "8", "35", "3"],
+          "answer": "15",
+          "why": "Push 3, push 5, multiply: 3 × 5 = 15."
+        }
+      ]
+    },
+    {
+      "id": "flow",
+      "title": "Turning and stopping",
+      "summary": "Pointer, white space, and how a program ends.",
+      "sections": [
+        {
+          "p": "Pointer pops a number and turns the direction pointer clockwise that many times (anticlockwise for a negative number). Here push 1 then pointer turns the run from right to down, and it carries on down the cyan column: push 5, out (number).<table class=\"codels\"><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#00c0c0\" title=\"dc\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#00c0c0\" title=\"dc\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#00c0c0\" title=\"dc\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#00c0c0\" title=\"dc\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#00c0c0\" title=\"dc\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#c0ffff\" title=\"lc\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#00ff00\" title=\"ng\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td></tr></table>",
+          "code": "lr nr dc kk\nkk kk dc kk\nkk kk dc kk\nkk kk dc kk\nkk kk dc kk\nkk kk lc kk\nkk kk ng kk\nkk kk ww kk\nkk nb nb nb",
+          "out": "5"
+        },
+        {
+          "h": "White is free",
+          "p": "Moving into white does nothing, and the run slides straight across it to the next colour without running a command. Here the white gap separates two normal red blocks, so nothing happens between them; the second one pushes 4.<table class=\"codels\"><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#c00000\" title=\"dr\"></td><td style=\"background:#ffff00\" title=\"ny\"></td><td style=\"background:#c00000\" title=\"dr\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#ffc0c0\" title=\"lr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ff0000\" title=\"nr\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#ffffff\" title=\"ww\"></td><td style=\"background:#000000\" title=\"kk\"></td></tr><tr><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#000000\" title=\"kk\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td><td style=\"background:#0000ff\" title=\"nb\"></td></tr></table>",
+          "code": "lr nr ww ww nr nr dr ny dr kk\nlr kk kk kk nr kk kk kk ww kk\nlr kk kk kk nr kk kk kk ww kk\nkk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk nb nb nb",
+          "out": "12"
+        },
+        {
+          "h": "Stopping",
+          "p": "A program stops when every way out of a block is blocked eight times in a row, with the codel chooser and the direction pointer taking turns to change. The blue bar at the bottom of these programs is entered in the middle from the white path. Its corners are under black codels, and the codel chooser only ever picks the end codels of an edge, so there is no way back up and the run ends."
+        },
+        {
+          "h": "Switch",
+          "p": "Switch pops a number and flips the codel chooser that many times. With greater, not, pointer and switch, a program can choose a path depending on a value, and that is how Piet programs loop and decide."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does pointer do with a 1 on the stack?",
+          "options": [
+            "Turns clockwise once",
+            "Turns anticlockwise once",
+            "Moves one codel",
+            "Stops the program"
+          ],
+          "answer": "Turns clockwise once",
+          "why": "A positive number turns the direction pointer clockwise that many times."
+        },
+        {
+          "q": "What happens when the run crosses white codels?",
+          "options": [
+            "No command runs",
+            "The block size is pushed",
+            "The program stops",
+            "The colour resets to red"
+          ],
+          "answer": "No command runs",
+          "why": "White is free space; only colour-to-colour moves run commands."
+        },
+        {
+          "q": "When does a Piet program stop?",
+          "options": [
+            "After eight blocked attempts in a row",
+            "At the last codel of the image",
+            "When it reaches a white codel",
+            "When the stack is empty"
+          ],
+          "answer": "After eight blocked attempts in a row",
+          "why": "The interpreter tries every combination of the direction pointer and codel chooser before giving up."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr nr dc kk\nkk kk dc kk\nkk kk dc kk\nkk kk lc kk\nkk kk ng kk\nkk kk ww kk\nkk nb nb nb",
+          "options": ["3", "1", "5", "0"],
+          "answer": "3",
+          "why": "Push 1, pointer turns the run downward, then a 3-codel cyan block is pushed and printed."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr nr ww ww nr nr nr dr ny dr kk\nlr kk kk kk kk kk kk kk kk ww kk\nlr kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk kk ww kk\nkk kk kk kk kk kk kk kk nb nb nb",
+          "options": ["9", "3", "6", "12"],
+          "answer": "9",
+          "why": "White separates the two pushes; push 3, push 3, multiply gives 9."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "lr nr dm lm nm lr nm kk\nlr kk dm lm kk kk ww kk\nlr kk dm lm kk kk ww kk\nkk kk kk kk kk kk ww kk\nkk kk kk kk kk nb nb nb",
+          "options": ["39", "33", "93", "6"],
+          "answer": "39",
+          "why": "Push 3 and print it, then push 3, push 3, multiply and print 9, so the output is 39."
+        },
+        {
+          "q": "What does switch do?",
+          "options": [
+            "Flips the codel chooser",
+            "Turns the direction pointer",
+            "Swaps the top two stack values",
+            "Stops the program"
+          ],
+          "answer": "Flips the codel chooser",
+          "why": "Switch pops a number and flips the chooser that many times; with pointer it picks a path."
+        }
+      ]
+    }
+  ]
+}
