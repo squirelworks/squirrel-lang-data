@@ -1,0 +1,689 @@
+{
+  "schema": "programming-course@1",
+  "id": "c",
+  "name": "C",
+  "title": "C from the first line",
+  "intro": "C is the language underneath a great deal of everything else: operating systems, the Python and Rust runtimes, and most of the programs on a small computer. It is small, close to the machine, and strict about types. These lessons use C11. Every example is a whole program and shows exactly what it prints. To run one yourself, save it as <code>hello.c</code> and type <code>gcc -std=c11 -o hello hello.c && ./hello</code>.",
+  "comment": "//",
+  "keywords": [
+    "int",
+    "void",
+    "char",
+    "return",
+    "if",
+    "else",
+    "for",
+    "while",
+    "include",
+    "define"
+  ],
+  "builtins": ["printf", "main"],
+  "lessons": [
+    {
+      "id": "first",
+      "title": "Your first program",
+      "summary": "main, printf and comments.",
+      "sections": [
+        {
+          "p": "A C program starts in <code>main</code>. <code>printf</code> prints text, but only what you ask for: it does not add a newline unless you write <code>\\n</code>. The line <code>#include &lt;stdio.h&gt;</code> brings <code>printf</code> in. <code>return 0</code> tells the operating system the program finished cleanly.",
+          "code": "#include <stdio.h>\nint main(void) {\n    printf(\"Hello, squirrel!\\n\");\n    printf(\"Nuts are ready.\\n\");\n    return 0;\n}",
+          "out": "Hello, squirrel!\nNuts are ready."
+        },
+        {
+          "h": "Comments",
+          "p": "Everything after <code>//</code> on a line is a comment. A comment between <code>/*</code> and <code>*/</code> can span lines. Comments are for people; the compiler throws them away.",
+          "code": "#include <stdio.h>\nint main(void) {\n    // This line does nothing.\n    printf(\"Only this shows\\n\"); /* and neither does this */\n    return 0;\n}",
+          "out": "Only this shows"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nint main(void) {\n    printf(\"Up\");\n    printf(\" the tree\\n\");\n    return 0;\n}",
+          "options": ["Up the tree", "Up\nthe tree", "Upthe tree", "Up the tree\\n"],
+          "answer": "Up the tree",
+          "why": "printf does not add a space or a newline unless you write them. The second call starts right where the first stopped, then \\n ends the line."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nint main(void) {\n    // printf(\"hidden\\n\");\n    printf(\"shown\\n\");\n    return 0;\n}",
+          "options": [
+            "shown",
+            "hidden\nshown",
+            "// printf(\"hidden\\n\");\nshown",
+            "Nothing"
+          ],
+          "answer": "shown",
+          "why": "The first printf is inside a comment, so it never runs."
+        },
+        {
+          "q": "Where does a C program start?",
+          "options": ["main", "start", "begin", "printf"],
+          "answer": "main",
+          "why": "The operating system calls main. printf only prints."
+        },
+        {
+          "q": "What does return 0 from main mean?",
+          "options": [
+            "The program finished without reporting an error",
+            "Print a zero",
+            "Stop after zero seconds",
+            "Return to the top of main"
+          ],
+          "answer": "The program finished without reporting an error",
+          "why": "The number returned from main is the program's exit status. Zero is the usual success code."
+        },
+        {
+          "q": "Which line brings printf into the program?",
+          "options": [
+            "#include <stdio.h>",
+            "import stdio",
+            "using printf",
+            "load stdio.h"
+          ],
+          "answer": "#include <stdio.h>",
+          "why": "stdio.h is the standard header that declares printf."
+        }
+      ]
+    },
+    {
+      "id": "variables",
+      "title": "Variables and arithmetic",
+      "summary": "int, assignment, and why 7 / 2 is 3.",
+      "sections": [
+        {
+          "p": "A variable has a type and a name. <code>int</code> holds a whole number. <code>=</code> stores a value; it does not ask whether two things are equal.",
+          "code": "#include <stdio.h>\nint main(void) {\n    int nuts = 5;\n    nuts = nuts + 2;\n    printf(\"%d\\n\", nuts);\n    return 0;\n}",
+          "out": "7"
+        },
+        {
+          "h": "Integer division",
+          "p": "When both sides of <code>/</code> are integers, the result is an integer. The fraction is dropped, not rounded. <code>%</code> is the remainder.",
+          "code": "#include <stdio.h>\nint main(void) {\n    printf(\"%d %d\\n\", 7 / 2, 7 % 2);\n    return 0;\n}",
+          "out": "3 1"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nint main(void) {\n    int n = 10;\n    n = n - 3;\n    printf(\"%d\\n\", n);\n    return 0;\n}",
+          "options": ["7", "10", "13", "n"],
+          "answer": "7",
+          "why": "n starts at 10 and then becomes 10 − 3."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nint main(void) {\n    printf(\"%d\\n\", 5 / 2);\n    return 0;\n}",
+          "options": ["2", "2.5", "3", "2.0"],
+          "answer": "2",
+          "why": "Both 5 and 2 are ints, so / drops the fraction."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nint main(void) {\n    printf(\"%d\\n\", 5 % 2);\n    return 0;\n}",
+          "options": ["1", "2", "0", "2.5"],
+          "answer": "1",
+          "why": "% is the remainder. 5 is two 2s, with 1 left over."
+        },
+        {
+          "q": "What does = mean in int n = 4?",
+          "options": ["Store 4 in n", "Ask whether n equals 4", "Print 4", "Add 4 to n"],
+          "answer": "Store 4 in n",
+          "why": "One equals sign assigns. Two equals signs, ==, compare."
+        },
+        {
+          "q": "Which type holds a whole number?",
+          "options": ["int", "string", "text", "word"],
+          "answer": "int",
+          "why": "int is the basic integer type. C has no string type of its own; text is an array of char."
+        }
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "Choices",
+      "summary": "if, else, and ==.",
+      "sections": [
+        {
+          "p": "<code>if</code> runs the next block only when the test is true. <code>==</code> compares two numbers. A single <code>=</code> would store a value instead, which is a different job.",
+          "code": "#include <stdio.h>\nint main(void) {\n    int nuts = 3;\n    if (nuts > 2) {\n        printf(\"plenty\\n\");\n    } else {\n        printf(\"few\\n\");\n    }\n    return 0;\n}",
+          "out": "plenty"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nint main(void) {\n    int n = 2;\n    if (n == 2) {\n        printf(\"yes\\n\");\n    } else {\n        printf(\"no\\n\");\n    }\n    return 0;\n}",
+          "options": ["yes", "no", "2", "yes\nno"],
+          "answer": "yes",
+          "why": "n == 2 is true, so only the first branch runs."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nint main(void) {\n    int n = 0;\n    if (n) {\n        printf(\"yes\\n\");\n    } else {\n        printf(\"no\\n\");\n    }\n    return 0;\n}",
+          "options": ["no", "yes", "0", "yes\nno"],
+          "answer": "no",
+          "why": "In a test, zero is false and any other number is true. n is 0, so the else branch runs."
+        },
+        {
+          "q": "Which operator asks whether two ints are equal?",
+          "options": ["==", "=", "!=", "eq"],
+          "answer": "==",
+          "why": "= stores a value. == compares. != asks whether they differ."
+        },
+        {
+          "q": "When does the else block run?",
+          "options": [
+            "When the if test is false",
+            "Always, after the if block",
+            "When the if test is true",
+            "Only if you write return"
+          ],
+          "answer": "When the if test is false",
+          "why": "else is the other branch. It is skipped when the test succeeds."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nint main(void) {\n    int n = 4;\n    if (n > 5) {\n        printf(\"big\\n\");\n    } else if (n > 3) {\n        printf(\"mid\\n\");\n    } else {\n        printf(\"small\\n\");\n    }\n    return 0;\n}",
+          "options": ["mid", "big", "small", "big\nmid"],
+          "answer": "mid",
+          "why": "4 is not greater than 5, but it is greater than 3, so the else if branch runs and the rest is skipped."
+        }
+      ]
+    },
+    {
+      "id": "loops",
+      "title": "Loops",
+      "summary": "for and while.",
+      "sections": [
+        {
+          "p": "A <code>for</code> loop has three parts in the brackets: where to start, when to keep going, and what to do after each pass. This prints 0, 1 and 2. When <code>i</code> reaches 3 the test <code>i &lt; 3</code> fails and the loop stops. <code>continue</code> skips the rest of the current pass and goes straight to the step.",
+          "code": "#include <stdio.h>\nint main(void) {\n    int i;\n    for (i = 0; i < 3; i = i + 1) {\n        printf(\"%d\\n\", i);\n    }\n    return 0;\n}",
+          "out": "0\n1\n2"
+        },
+        {
+          "h": "while",
+          "p": "<code>while</code> repeats as long as its test is true. The counter has to change inside the loop, or it never ends.",
+          "code": "#include <stdio.h>\nint main(void) {\n    int n = 3;\n    while (n > 0) {\n        printf(\"%d\\n\", n);\n        n = n - 1;\n    }\n    return 0;\n}",
+          "out": "3\n2\n1"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nint main(void) {\n    int i;\n    for (i = 1; i <= 3; i = i + 1) {\n        printf(\"%d\", i);\n    }\n    printf(\"\\n\");\n    return 0;\n}",
+          "options": ["123", "012", "1\n2\n3", "123\n123"],
+          "answer": "123",
+          "why": "i runs through 1, 2 and 3, and each printf adds a digit with no newline. The newline comes after the loop."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nint main(void) {\n    int n = 0;\n    while (n < 2) {\n        printf(\"x\");\n        n = n + 1;\n    }\n    printf(\"\\n\");\n    return 0;\n}",
+          "options": ["xx", "x", "xxx", "x\nx"],
+          "answer": "xx",
+          "why": "The body runs for n = 0 and n = 1, then n is 2 and the test fails."
+        },
+        {
+          "q": "What are the three parts inside for ( ... )?",
+          "options": [
+            "Start, keep-going test, step",
+            "Start, step, stop-now",
+            "Test, test, test",
+            "Type, name, value"
+          ],
+          "answer": "Start, keep-going test, step",
+          "why": "for (i = 0; i < 3; i = i + 1) sets i, checks it, then moves it after each pass."
+        },
+        {
+          "q": "Why must a while loop change something it tests?",
+          "options": [
+            "Otherwise the test stays true and the loop never ends",
+            "The compiler rejects an unchanged variable",
+            "while can run only once",
+            "The change is what gets printed"
+          ],
+          "answer": "Otherwise the test stays true and the loop never ends",
+          "why": "The test is checked every pass. If nothing it depends on changes, it keeps succeeding."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nint main(void) {\n    int i;\n    for (i = 0; i < 4; i = i + 1) {\n        if (i == 2) {\n            continue;\n        }\n        printf(\"%d\", i);\n    }\n    printf(\"\\n\");\n    return 0;\n}",
+          "options": ["013", "0123", "01", "23"],
+          "answer": "013",
+          "why": "continue skips the rest of the body for that pass. When i is 2 the printf is skipped, then the loop carries on with 3."
+        }
+      ]
+    },
+    {
+      "id": "functions",
+      "title": "Functions",
+      "summary": "Naming a calculation.",
+      "sections": [
+        {
+          "p": "A function has a return type, a name, and parameters. <code>add</code> takes two <code>int</code>s and returns an <code>int</code>. The call <code>add(2, 3)</code> runs the body with those values and gives back whatever it <code>return</code>s.",
+          "code": "#include <stdio.h>\nint add(int a, int b) {\n    return a + b;\n}\nint main(void) {\n    printf(\"%d\\n\", add(2, 3));\n    return 0;\n}",
+          "out": "5"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nint twice(int n) {\n    return n * 2;\n}\nint main(void) {\n    printf(\"%d\\n\", twice(4));\n    return 0;\n}",
+          "options": ["8", "4", "2", "44"],
+          "answer": "8",
+          "why": "twice returns n * 2, and it is called with 4."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nint sign(int n) {\n    if (n < 0) {\n        return -1;\n    }\n    return 1;\n}\nint main(void) {\n    printf(\"%d %d\\n\", sign(-3), sign(3));\n    return 0;\n}",
+          "options": ["-1 1", "1 1", "-1 -1", "-3 3"],
+          "answer": "-1 1",
+          "why": "A negative argument hits the first return. A positive one falls through to return 1."
+        },
+        {
+          "q": "What does the int before the function name say?",
+          "options": [
+            "The type of the value it returns",
+            "How many parameters it takes",
+            "That it runs only once",
+            "That its parameters are ints"
+          ],
+          "answer": "The type of the value it returns",
+          "why": "int add(...) returns an int. The parameter types are written inside the brackets."
+        },
+        {
+          "q": "What happens at return?",
+          "options": [
+            "The function stops and hands a value back to the caller",
+            "The whole program stops",
+            "The value is printed",
+            "The function starts again"
+          ],
+          "answer": "The function stops and hands a value back to the caller",
+          "why": "return leaves the function. main's return is special only because main is where the program started."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nvoid greet(void) {\n    printf(\"hi\\n\");\n}\nint main(void) {\n    greet();\n    greet();\n    return 0;\n}",
+          "options": ["hi\nhi", "hi", "greet\ngreet", "hi hi"],
+          "answer": "hi\nhi",
+          "why": "void means the function returns nothing. Each call prints one line."
+        }
+      ]
+    },
+    {
+      "id": "arrays",
+      "title": "Arrays",
+      "summary": "Many values of one type, side by side.",
+      "sections": [
+        {
+          "p": "An array holds a fixed number of values of the same type, one after another in memory. <code>int nuts[5]</code> makes room for five <code>int</code>s. They are numbered from <b>0</b>, so the last one is <code>nuts[4]</code>. Braces give the starting values.",
+          "code": "#include <stdio.h>\nint main(void) {\n    int nuts[5] = {3, 1, 4, 1, 5};\n    printf(\"first %d, last %d\\n\", nuts[0], nuts[4]);\n    nuts[1] = 9;\n    printf(\"second is now %d\\n\", nuts[1]);\n    return 0;\n}",
+          "out": "first 3, last 5\nsecond is now 9"
+        },
+        {
+          "h": "Looping over an array",
+          "p": "A <code>for</code> loop from 0 up to (but not including) the length visits every element. C does not store an array's length for you. Inside the function where the array is declared, <code>sizeof nuts / sizeof nuts[0]</code> works it out: the size of the whole array in bytes divided by the size of one element.",
+          "code": "#include <stdio.h>\nint main(void) {\n    int nuts[] = {3, 1, 4, 1, 5, 9};\n    int count = sizeof nuts / sizeof nuts[0];\n    int total = 0;\n    for (int i = 0; i < count; i++) {\n        total += nuts[i];\n    }\n    printf(\"%d days, %d nuts\\n\", count, total);\n    return 0;\n}",
+          "out": "6 days, 23 nuts"
+        },
+        {
+          "h": "Passing an array to a function",
+          "p": "When you pass an array to a function, the function receives only where the array starts, not its length. So C functions that take an array almost always take the length as a second parameter. The function can change the caller's elements, because it works on the same memory.",
+          "code": "#include <stdio.h>\nint biggest(const int values[], int count) {\n    int best = values[0];\n    for (int i = 1; i < count; i++) {\n        if (values[i] > best) {\n            best = values[i];\n        }\n    }\n    return best;\n}\nvoid double_all(int values[], int count) {\n    for (int i = 0; i < count; i++) {\n        values[i] *= 2;\n    }\n}\nint main(void) {\n    int nuts[] = {3, 8, 2};\n    printf(\"biggest %d\\n\", biggest(nuts, 3));\n    double_all(nuts, 3);\n    printf(\"now %d %d %d\\n\", nuts[0], nuts[1], nuts[2]);\n    return 0;\n}",
+          "out": "biggest 8\nnow 6 16 4"
+        },
+        {
+          "h": "No bounds checks",
+          "p": "C does not check that an index is inside the array. Reading <code>nuts[5]</code> from a five-element array is not an error message; it is <b>undefined behaviour</b>: the program may print rubbish, crash, or seem to work and fail later. Many security holes in C programs started this way. Keep the length next to the array and test your loop bounds. Compiling with <code>-fsanitize=address</code> makes gcc and clang stop the program at the first bad access while you test."
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nint main(void) {\n    int a[4] = {10, 20, 30, 40};\n    printf(\"%d\\n\", a[1] + a[3]);\n    return 0;\n}",
+          "options": ["60", "40", "30", "70"],
+          "answer": "60",
+          "why": "Indexes start at 0, so a[1] is 20 and a[3] is 40."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nint main(void) {\n    int a[5] = {1, 2};\n    printf(\"%d %d\\n\", a[1], a[4]);\n    return 0;\n}",
+          "options": ["2 0", "2 2", "1 0", "2 rubbish"],
+          "answer": "2 0",
+          "why": "Elements without a starting value in the braces are set to 0."
+        },
+        {
+          "q": "Why do C functions that take an array usually take its length too?",
+          "options": [
+            "The function only receives where the array starts",
+            "Arrays must always be passed in pairs",
+            "To make the call faster",
+            "sizeof is not allowed inside functions"
+          ],
+          "answer": "The function only receives where the array starts",
+          "why": "Inside the function the array is just a pointer to its first element, so sizeof cannot tell how many there are."
+        },
+        {
+          "q": "What happens if you read past the end of a C array?",
+          "options": [
+            "Undefined behaviour: anything can happen",
+            "The program always stops with an error",
+            "You get 0",
+            "C makes the array bigger"
+          ],
+          "answer": "Undefined behaviour: anything can happen",
+          "why": "C does not check indexes. Tools such as -fsanitize=address can catch it while testing."
+        }
+      ]
+    },
+    {
+      "id": "strings",
+      "title": "Strings",
+      "summary": "Characters in an array, ending with a zero.",
+      "sections": [
+        {
+          "p": "C has no separate string type. A string is an array of <code>char</code> that ends with a zero byte, written <code>'\\0'</code>. A literal such as <code>\"acorn\"</code> takes six bytes: five letters and the zero. <code>%s</code> in <code>printf</code> prints characters until it reaches that zero, and <code>strlen</code> from <code>&lt;string.h&gt;</code> counts them.",
+          "code": "#include <stdio.h>\n#include <string.h>\nint main(void) {\n    char name[] = \"acorn\";\n    printf(\"%s has %zu letters\\n\", name, strlen(name));\n    printf(\"the array takes %zu bytes\\n\", sizeof name);\n    printf(\"first letter %c\\n\", name[0]);\n    return 0;\n}",
+          "out": "acorn has 5 letters\nthe array takes 6 bytes\nfirst letter a"
+        },
+        {
+          "h": "Changing letters",
+          "p": "Because a string is an array, you can loop over it and change single characters. The loop stops at the zero. <code>toupper</code> from <code>&lt;ctype.h&gt;</code> turns one letter into a capital.",
+          "code": "#include <ctype.h>\n#include <stdio.h>\nint main(void) {\n    char word[] = \"hazelnut\";\n    for (int i = 0; word[i] != '\\0'; i++) {\n        word[i] = toupper((unsigned char)word[i]);\n    }\n    printf(\"%s\\n\", word);\n    return 0;\n}",
+          "out": "HAZELNUT"
+        },
+        {
+          "h": "Comparing and building strings",
+          "p": "<code>==</code> on two strings compares where they are stored, not their letters, so use <code>strcmp</code>: it returns 0 when they are equal. To build a string, <code>snprintf</code> works like <code>printf</code> but writes into an array, and it never writes more than the size you give it, so it cannot run past the end. It returns how many characters the whole text needed, so a result at least as big as the size tells you it was cut short. Older functions such as <code>strcpy</code> and <code>strcat</code> do not check the size, which is why careful code avoids them.",
+          "code": "#include <stdio.h>\n#include <string.h>\nint make_label(char *out, size_t size, const char *tree, int number) {\n    return snprintf(out, size, \"%s tree #%d\", tree, number);\n}\nint main(void) {\n    char a[] = \"oak\";\n    char b[] = \"oak\";\n    if (strcmp(a, b) == 0) {\n        printf(\"same letters\\n\");\n    }\n    char label[16];\n    make_label(label, sizeof label, a, 7);\n    printf(\"%s\\n\", label);\n    int needed = make_label(label, sizeof label, \"Douglas fir\", 12345);\n    printf(\"%s (needed %d)\\n\", label, needed);\n    return 0;\n}",
+          "out": "same letters\noak tree #7\nDouglas fir tre (needed 23)"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\n#include <string.h>\nint main(void) {\n    char s[] = \"pine\";\n    printf(\"%zu %zu\\n\", strlen(s), sizeof s);\n    return 0;\n}",
+          "options": ["4 5", "4 4", "5 5", "5 4"],
+          "answer": "4 5",
+          "why": "strlen counts the 4 letters. The array also holds the zero at the end, so it is 5 bytes."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nint main(void) {\n    char s[] = \"squirrel\";\n    s[3] = '\\0';\n    printf(\"%s\\n\", s);\n    return 0;\n}",
+          "options": ["squ", "squirrel", "squ rrel", "sq"],
+          "answer": "squ",
+          "why": "%s stops at the first zero byte, which is now at index 3."
+        },
+        {
+          "q": "How should you check whether two C strings have the same letters?",
+          "options": [
+            "strcmp(a, b) == 0",
+            "a == b",
+            "strlen(a) == strlen(b)",
+            "sizeof a == sizeof b"
+          ],
+          "answer": "strcmp(a, b) == 0",
+          "why": "== compares the addresses where the strings are stored, not their contents."
+        },
+        {
+          "q": "Why is snprintf safer than strcpy for building a string?",
+          "options": [
+            "It never writes more than the size you pass",
+            "It is faster",
+            "It adds a newline",
+            "It allocates memory for you"
+          ],
+          "answer": "It never writes more than the size you pass",
+          "why": "strcpy keeps copying until the source ends, even past the end of the destination."
+        }
+      ]
+    },
+    {
+      "id": "pointers",
+      "title": "Pointers",
+      "summary": "Variables that hold where something is.",
+      "sections": [
+        {
+          "p": "Every variable lives at an <b>address</b> in memory. <code>&amp;x</code> gives the address of <code>x</code>, and a <b>pointer</b> is a variable that stores such an address. <code>int *p</code> declares a pointer to an <code>int</code>. Writing <code>*p</code> follows the pointer to the value it points at, so <code>*p = 7</code> changes <code>x</code> itself.",
+          "code": "#include <stdio.h>\nint main(void) {\n    int x = 3;\n    int *p = &x;\n    printf(\"x is %d, *p is %d\\n\", x, *p);\n    *p = 7;\n    printf(\"x is now %d\\n\", x);\n    return 0;\n}",
+          "out": "x is 3, *p is 3\nx is now 7"
+        },
+        {
+          "h": "Letting a function change your variables",
+          "p": "C passes arguments by value: a function gets copies. To let it change the caller's variables, pass their addresses. This is how <code>scanf</code> stores what it reads, and how a function can hand back more than one result.",
+          "code": "#include <stdio.h>\nvoid swap(int *a, int *b) {\n    int t = *a;\n    *a = *b;\n    *b = t;\n}\nvoid split(int total, int *bags, int *left) {\n    *bags = total / 6;\n    *left = total % 6;\n}\nint main(void) {\n    int x = 1, y = 2;\n    swap(&x, &y);\n    printf(\"x=%d y=%d\\n\", x, y);\n    int bags, left;\n    split(20, &bags, &left);\n    printf(\"%d bags, %d left over\\n\", bags, left);\n    return 0;\n}",
+          "out": "x=2 y=1\n3 bags, 2 left over"
+        },
+        {
+          "h": "Pointers and arrays",
+          "p": "An array's name used in an expression becomes a pointer to its first element. Adding 1 to a pointer moves it to the next <i>element</i>, not the next byte, so <code>*(p + 2)</code> and <code>p[2]</code> mean the same thing. That is why passing an array to a function passes only its start.",
+          "code": "#include <stdio.h>\nint main(void) {\n    int nuts[] = {5, 6, 7, 8};\n    int *p = nuts;\n    printf(\"%d %d %d\\n\", *p, *(p + 2), p[3]);\n    p++;\n    printf(\"after p++: %d\\n\", *p);\n    for (int *q = nuts; q < nuts + 4; q++) {\n        printf(\"%d \", *q);\n    }\n    printf(\"\\n\");\n    return 0;\n}",
+          "out": "5 7 8\nafter p++: 6\n5 6 7 8 "
+        },
+        {
+          "h": "NULL",
+          "p": "A pointer that points at nothing is set to <code>NULL</code>. Following a NULL pointer, or one that points at memory that no longer exists, is undefined behaviour and usually crashes the program. Functions that may fail to find something often return NULL, so check before you use the result.",
+          "code": "#include <stdio.h>\n#include <string.h>\nint main(void) {\n    const char *trees = \"oak, beech, hazel\";\n    const char *found = strstr(trees, \"beech\");\n    if (found != NULL) {\n        printf(\"found at position %d\\n\", (int)(found - trees));\n    }\n    if (strstr(trees, \"palm\") == NULL) {\n        printf(\"no palm\\n\");\n    }\n    return 0;\n}",
+          "out": "found at position 5\nno palm"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nint main(void) {\n    int a = 5;\n    int *p = &a;\n    *p = *p + 10;\n    printf(\"%d\\n\", a);\n    return 0;\n}",
+          "options": ["15", "5", "10", "an address"],
+          "answer": "15",
+          "why": "p points at a, so *p = *p + 10 changes a itself."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nvoid bump(int n) {\n    n = n + 1;\n}\nvoid bump_ptr(int *n) {\n    *n = *n + 1;\n}\nint main(void) {\n    int x = 1;\n    bump(x);\n    bump_ptr(&x);\n    printf(\"%d\\n\", x);\n    return 0;\n}",
+          "options": ["2", "3", "1", "0"],
+          "answer": "2",
+          "why": "bump changes only its own copy. bump_ptr follows the address to x, so only that call counts."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\nint main(void) {\n    int v[] = {2, 4, 6, 8};\n    int *p = v + 1;\n    printf(\"%d %d\\n\", *p, p[1]);\n    return 0;\n}",
+          "options": ["4 6", "2 4", "4 8", "6 8"],
+          "answer": "4 6",
+          "why": "v + 1 points at the second element (4), and p[1] is the one after it (6)."
+        },
+        {
+          "q": "What does & do in &x?",
+          "options": [
+            "Gives the address of x",
+            "Follows a pointer",
+            "Means logical and",
+            "Makes a copy of x"
+          ],
+          "answer": "Gives the address of x",
+          "why": "& takes an address; * follows one."
+        }
+      ]
+    },
+    {
+      "id": "structs",
+      "title": "Structs",
+      "summary": "Grouping related values under one name.",
+      "sections": [
+        {
+          "p": "A <code>struct</code> bundles several values, each with its own name and type, into one. Fields are reached with a dot. <code>typedef</code> gives the struct a short name so you can write <code>Tree</code> instead of <code>struct tree</code>. Structs can be copied with <code>=</code> and passed to and returned from functions like any other value.",
+          "code": "#include <stdio.h>\ntypedef struct {\n    char name[16];\n    int nuts;\n    double height;\n} Tree;\nint main(void) {\n    Tree t = {\"oak\", 120, 18.5};\n    printf(\"%s: %d nuts, %.1f m\\n\", t.name, t.nuts, t.height);\n    Tree copy = t;\n    copy.nuts = 0;\n    printf(\"copy has %d, original still has %d\\n\", copy.nuts, t.nuts);\n    return 0;\n}",
+          "out": "oak: 120 nuts, 18.5 m\ncopy has 0, original still has 120"
+        },
+        {
+          "h": "Arrays of structs",
+          "p": "An array of structs is the C way to keep a table of records. Designated initializers such as <code>.nuts = 40</code> name each field, which reads well and keeps working if the fields are reordered.",
+          "code": "#include <stdio.h>\ntypedef struct {\n    const char *name;\n    int nuts;\n} Tree;\nint main(void) {\n    Tree park[] = {\n        {.name = \"oak\", .nuts = 40},\n        {.name = \"beech\", .nuts = 75},\n        {.name = \"hazel\", .nuts = 60},\n    };\n    int count = sizeof park / sizeof park[0];\n    int best = 0;\n    for (int i = 1; i < count; i++) {\n        if (park[i].nuts > park[best].nuts) {\n            best = i;\n        }\n    }\n    printf(\"most nuts: %s (%d)\\n\", park[best].name, park[best].nuts);\n    return 0;\n}",
+          "out": "most nuts: beech (75)"
+        },
+        {
+          "h": "Pointers to structs",
+          "p": "Passing a big struct by value copies all of it, and the function cannot change the caller's copy. Passing a pointer avoids both problems. <code>p-&gt;nuts</code> is shorthand for <code>(*p).nuts</code>: follow the pointer, then take the field. Mark the pointer <code>const</code> when the function only reads.",
+          "code": "#include <stdio.h>\ntypedef struct {\n    const char *name;\n    int nuts;\n} Tree;\nvoid harvest(Tree *t, int amount) {\n    if (amount > t->nuts) {\n        amount = t->nuts;\n    }\n    t->nuts -= amount;\n}\nvoid show(const Tree *t) {\n    printf(\"%s has %d nuts\\n\", t->name, t->nuts);\n}\nint main(void) {\n    Tree oak = {\"oak\", 30};\n    harvest(&oak, 12);\n    show(&oak);\n    harvest(&oak, 50);\n    show(&oak);\n    return 0;\n}",
+          "out": "oak has 18 nuts\noak has 0 nuts"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\ntypedef struct {\n    int x, y;\n} Point;\nint main(void) {\n    Point a = {1, 2};\n    Point b = a;\n    b.x = 10;\n    printf(\"%d %d\\n\", a.x, b.x);\n    return 0;\n}",
+          "options": ["1 10", "10 10", "1 1", "10 1"],
+          "answer": "1 10",
+          "why": "b = a copies the whole struct, so changing b leaves a alone."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\ntypedef struct {\n    int count;\n} Box;\nvoid add(Box *b) {\n    b->count += 5;\n}\nint main(void) {\n    Box b = {1};\n    add(&b);\n    add(&b);\n    printf(\"%d\\n\", b.count);\n    return 0;\n}",
+          "options": ["11", "6", "1", "10"],
+          "answer": "11",
+          "why": "add receives a pointer, so both calls change the same Box: 1 + 5 + 5."
+        },
+        {
+          "q": "What does p->field mean?",
+          "options": [
+            "(*p).field: follow the pointer, then take the field",
+            "Copy the struct p into field",
+            "Compare p with field",
+            "The address of field"
+          ],
+          "answer": "(*p).field: follow the pointer, then take the field",
+          "why": "-> is shorthand for following a pointer to a struct and reading one field."
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "title": "Memory with malloc and free",
+      "summary": "Asking for memory while the program runs.",
+      "sections": [
+        {
+          "p": "Local variables disappear when their function returns, and arrays need a size fixed when you write the program. When you only know the size while running, ask for memory with <code>malloc</code> from <code>&lt;stdlib.h&gt;</code>. It returns a pointer to a block of the size you ask for, or <code>NULL</code> if there is none. The memory stays yours until you hand it back with <code>free</code>.",
+          "code": "#include <stdio.h>\n#include <stdlib.h>\nint main(void) {\n    int days = 7;\n    int *nuts = malloc(days * sizeof *nuts);\n    if (nuts == NULL) {\n        printf(\"out of memory\\n\");\n        return 1;\n    }\n    for (int i = 0; i < days; i++) {\n        nuts[i] = (i + 1) * 3;\n    }\n    printf(\"day 7: %d nuts\\n\", nuts[6]);\n    free(nuts);\n    return 0;\n}",
+          "out": "day 7: 21 nuts"
+        },
+        {
+          "h": "Growing with realloc",
+          "p": "<code>realloc</code> resizes a block, moving it if it has to, and returns the new address. A common pattern is a list that doubles its capacity whenever it fills up, so adding n items costs only about 2n copies in total. Keep the old pointer until realloc succeeds, so a failure does not lose your data.",
+          "code": "#include <stdio.h>\n#include <stdlib.h>\ntypedef struct {\n    int *items;\n    int count, capacity;\n} List;\nint push(List *list, int value) {\n    if (list->count == list->capacity) {\n        int bigger = list->capacity ? list->capacity * 2 : 2;\n        int *moved = realloc(list->items, bigger * sizeof *moved);\n        if (moved == NULL) {\n            return 0;\n        }\n        list->items = moved;\n        list->capacity = bigger;\n        printf(\"grew to %d\\n\", bigger);\n    }\n    list->items[list->count++] = value;\n    return 1;\n}\nint main(void) {\n    List list = {NULL, 0, 0};\n    for (int i = 1; i <= 9; i++) {\n        push(&list, i * i);\n    }\n    printf(\"%d items, last %d\\n\", list.count, list.items[list.count - 1]);\n    free(list.items);\n    return 0;\n}",
+          "out": "grew to 2\ngrew to 4\ngrew to 8\ngrew to 16\n9 items, last 81"
+        },
+        {
+          "h": "What can go wrong",
+          "p": "The C compiler does not track who owns which block, so a few mistakes are easy to make. Forgetting <code>free</code> is a <b>leak</b>: the memory stays taken until the program ends. Using a pointer after <code>free</code> (a <b>dangling pointer</b>) or freeing the same block twice is undefined behaviour. A good habit is that whoever calls <code>malloc</code> is responsible for the matching <code>free</code>, and to set the pointer to <code>NULL</code> afterwards. Tools such as Valgrind and <code>-fsanitize=address</code> find these mistakes while you test. Languages such as Rust were designed largely to make them impossible."
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\n#include <stdlib.h>\nint main(void) {\n    int *p = calloc(3, sizeof *p);\n    if (p == NULL) {\n        return 1;\n    }\n    p[1] = 4;\n    printf(\"%d %d %d\\n\", p[0], p[1], p[2]);\n    free(p);\n    return 0;\n}",
+          "options": ["0 4 0", "rubbish 4 rubbish", "4 4 4", "0 0 0"],
+          "answer": "0 4 0",
+          "why": "calloc, unlike malloc, fills the new block with zeros."
+        },
+        {
+          "q": "What does malloc return when there is no memory left?",
+          "options": [
+            "NULL",
+            "0 bytes of memory",
+            "It stops the program",
+            "The previous block"
+          ],
+          "answer": "NULL",
+          "why": "Always check the result before using it."
+        },
+        {
+          "q": "What is a memory leak?",
+          "options": [
+            "Memory taken with malloc that is never freed",
+            "Reading past the end of an array",
+            "Using a pointer after free",
+            "Running out of stack space"
+          ],
+          "answer": "Memory taken with malloc that is never freed",
+          "why": "The block stays reserved until the program ends, so a long-running program slowly uses more and more."
+        },
+        {
+          "q": "Why keep the old pointer when calling realloc?",
+          "options": [
+            "If realloc fails it returns NULL and the old block is still yours",
+            "realloc always frees the old block",
+            "The new pointer is always the same",
+            "To call free twice"
+          ],
+          "answer": "If realloc fails it returns NULL and the old block is still yours",
+          "why": "Writing p = realloc(p, ...) would lose the only pointer to your data when it fails."
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Project: a nut ledger",
+      "summary": "Structs, arrays, strings and sorting in one small program.",
+      "sections": [
+        {
+          "p": "This small program puts the earlier lessons together. It reads a day-by-day record of where nuts were buried, adds up each tree with a loop over an array of structs, sorts the totals with the standard library's <code>qsort</code>, and prints a report. <code>qsort</code> sorts any array: you give it the start, the number of elements, the size of one, and a <b>comparison function</b> that says which of two elements comes first. The function gets <code>const void *</code> pointers, which can point at anything, so it converts them back to <code>const Total *</code> first.",
+          "code": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\ntypedef struct {\n    const char *tree;\n    int nuts;\n} Entry;\ntypedef struct {\n    char tree[16];\n    int nuts;\n} Total;\n/* More nuts first; ties in alphabetical order. */\nint by_nuts(const void *a, const void *b) {\n    const Total *x = a, *y = b;\n    if (x->nuts != y->nuts) {\n        return y->nuts - x->nuts;\n    }\n    return strcmp(x->tree, y->tree);\n}\nint main(void) {\n    Entry log[] = {\n        {\"oak\", 12}, {\"hazel\", 7}, {\"oak\", 5}, {\"beech\", 9},\n        {\"hazel\", 10}, {\"beech\", 8}, {\"pine\", 2},\n    };\n    int entries = sizeof log / sizeof log[0];\n    Total totals[8];\n    int trees = 0;\n    for (int i = 0; i < entries; i++) {\n        int j = 0;\n        while (j < trees && strcmp(totals[j].tree, log[i].tree) != 0) {\n            j++;\n        }\n        if (j == trees) {\n            snprintf(totals[j].tree, sizeof totals[j].tree, \"%s\", log[i].tree);\n            totals[j].nuts = 0;\n            trees++;\n        }\n        totals[j].nuts += log[i].nuts;\n    }\n    qsort(totals, trees, sizeof totals[0], by_nuts);\n    int all = 0;\n    for (int i = 0; i < trees; i++) {\n        printf(\"%-6s %3d\\n\", totals[i].tree, totals[i].nuts);\n        all += totals[i].nuts;\n    }\n    printf(\"%-6s %3d\\n\", \"total\", all);\n    return 0;\n}",
+          "out": "beech   17\nhazel   17\noak     17\npine     2\ntotal   53"
+        },
+        {
+          "h": "Ideas to try",
+          "p": "Change the program and check the output still makes sense: add a column with each tree's share of the total as a percentage, read the entries from a file with <code>fopen</code> and <code>fscanf</code> instead of an array, or replace the fixed <code>totals[8]</code> with the growing list from the memory lesson so any number of trees fits."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What should a qsort comparison function return when a should come before b?",
+          "options": ["A negative number", "A positive number", "Zero", "true"],
+          "answer": "A negative number",
+          "why": "Negative means a first, positive means b first, and zero means they are equal for sorting."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "#include <stdio.h>\n#include <stdlib.h>\nint up(const void *a, const void *b) {\n    return *(const int *)a - *(const int *)b;\n}\nint main(void) {\n    int v[] = {4, 1, 3};\n    qsort(v, 3, sizeof v[0], up);\n    printf(\"%d %d %d\\n\", v[0], v[1], v[2]);\n    return 0;\n}",
+          "options": ["1 3 4", "4 3 1", "4 1 3", "1 4 3"],
+          "answer": "1 3 4",
+          "why": "up returns a negative number when a is smaller, so smaller values come first."
+        },
+        {
+          "q": "Why does by_nuts take const void * parameters?",
+          "options": [
+            "qsort works with any element type, so it passes untyped pointers",
+            "void means the function returns nothing",
+            "To make the sort faster",
+            "Because Total cannot be passed to functions"
+          ],
+          "answer": "qsort works with any element type, so it passes untyped pointers",
+          "why": "The comparison converts them back to the real type before reading the fields."
+        }
+      ]
+    }
+  ]
+}
