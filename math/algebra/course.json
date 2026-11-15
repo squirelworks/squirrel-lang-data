@@ -1,0 +1,623 @@
+{
+  "schema": "math-course@1",
+  "id": "algebra",
+  "name": "Algebra",
+  "title": "Algebra essentials",
+  "intro": "Algebra replaces unknown or changing numbers with letters and builds rules for rewriting expressions and solving equations. These lessons go from simplifying expressions through linear equations, inequalities, systems, polynomials, factoring and quadratics. Each lesson stands alone, but earlier arithmetic ideas (fractions, signed numbers, order of operations) are assumed.",
+  "lessons": [
+    {
+      "id": "expressions",
+      "title": "Expressions and variables",
+      "summary": "Letters for numbers; combining like terms and the distributive property.",
+      "sections": [
+        {
+          "p": "A <b>variable</b> is a symbol (often x) that stands for a number. An <b>expression</b> combines numbers, variables and operations: 3x + 2. It has no equals sign yet — it is a recipe for a value once x is known."
+        },
+        {
+          "h": "Evaluating",
+          "p": "Substitute the known value and compute with the usual order of operations.",
+          "code": "If x = 4, then 3x + 2 = 3(4) + 2 = 14"
+        },
+        {
+          "h": "Like terms",
+          "p": "Terms with the same variable part can be combined: 5x + 2x = 7x. Constants combine among themselves: 5x + 3 + 2x − 1 = 7x + 2. You cannot merge 5x and 5 into one term."
+        },
+        {
+          "h": "Distributive property",
+          "p": "a(b + c) = ab + ac. Useful both to expand and (in reverse) to factor out a common factor.",
+          "code": "3(x + 4) = 3x + 12\n2(3x − 1) + 5 = 6x − 2 + 5 = 6x + 3"
+        }
+      ],
+      "practice": [
+        {
+          "why": "2×5 − 3 = 10 − 3 = 7.",
+          "options": ["7", "10", "13", "2"],
+          "q": "If x = 5, what is 2x − 3?",
+          "answer": "7"
+        },
+        {
+          "why": "Like terms: (5+2)x.",
+          "options": ["7x", "10x", "5x²", "7"],
+          "q": "Simplify 5x + 2x.",
+          "answer": "7x"
+        },
+        {
+          "why": "Distribute 4 to both terms.",
+          "options": ["4x − 8", "4x − 2", "x − 8", "4x + 8"],
+          "q": "Expand 4(x − 2).",
+          "answer": "4x − 8"
+        },
+        {
+          "why": "3x+x=4x; 5−2=3.",
+          "options": ["4x + 3", "4x + 7", "3x + 3", "2x + 3"],
+          "q": "Simplify 3x + 5 + x − 2.",
+          "answer": "4x + 3"
+        },
+        {
+          "why": "No equals sign.",
+          "options": ["2x + 1", "2x + 1 = 7", "x = 3", "2 + 2 = 4"],
+          "q": "Which is an expression (not an equation)?",
+          "answer": "2x + 1"
+        },
+        {
+          "why": "6x − 2 + 5 = 6x + 3.",
+          "options": ["6x + 3", "6x − 2", "5x + 5", "6x − 5"],
+          "q": "2(3x − 1) + 5 simplified:",
+          "answer": "6x + 3"
+        }
+      ]
+    },
+    {
+      "id": "linear-equations",
+      "title": "Solving linear equations",
+      "summary": "Isolate the variable with inverse operations.",
+      "sections": [
+        {
+          "p": "A <b>linear equation</b> in one variable has the form ax + b = c (after simplifying). Solving means finding the number that makes both sides equal."
+        },
+        {
+          "h": "Balance rules",
+          "p": "Do the same operation to both sides: add/subtract the same number, multiply/divide by the same nonzero number. Goal: get x alone on one side.",
+          "code": "3x + 5 = 17\n3x = 12      (subtract 5)\nx = 4        (divide by 3)"
+        },
+        {
+          "h": "Variables on both sides",
+          "p": "Collect variable terms on one side and constants on the other.",
+          "code": "5x − 2 = 2x + 10\n3x − 2 = 10   (subtract 2x)\n3x = 12\nx = 4"
+        },
+        {
+          "h": "Checking",
+          "p": "Substitute the answer back into the original equation. Both sides should match."
+        }
+      ],
+      "practice": [
+        {
+          "why": "3x=12; x=4.",
+          "options": ["4", "3", "5", "12"],
+          "q": "Solve 3x + 5 = 17.",
+          "answer": "4"
+        },
+        {
+          "why": "Add 7: x=9.",
+          "options": ["9", "5", "−5", "14"],
+          "q": "Solve x − 7 = 2.",
+          "answer": "9"
+        },
+        {
+          "why": "3x=12; x=4.",
+          "options": ["4", "2", "6", "8"],
+          "q": "Solve 5x − 2 = 2x + 10.",
+          "answer": "4"
+        },
+        {
+          "why": "x+3=7; x=4.",
+          "options": ["4", "7", "5", "11"],
+          "q": "Solve 2(x + 3) = 14.",
+          "answer": "4"
+        },
+        {
+          "why": "Only 0 times 4 is 0.",
+          "options": ["0", "4", "1", "Undefined"],
+          "q": "If 4x = 0, then x =",
+          "answer": "0"
+        },
+        {
+          "why": "Divide both sides by −2.",
+          "options": ["−5", "5", "−10", "8"],
+          "q": "Solve −2x = 10.",
+          "answer": "−5"
+        },
+        {
+          "why": "Inverse of dividing by 3.",
+          "options": [
+            "Multiply both sides by 3",
+            "Divide both sides by 3",
+            "Subtract 3",
+            "Add 3"
+          ],
+          "q": "Which step isolates x in x/3 = 6?",
+          "answer": "Multiply both sides by 3"
+        }
+      ]
+    },
+    {
+      "id": "inequalities",
+      "title": "Inequalities",
+      "summary": "Greater/less than; when multiplying by a negative flips the sign.",
+      "sections": [
+        {
+          "p": "An inequality compares two expressions with <, >, ≤ or ≥. Solutions are often intervals on the number line, not a single point."
+        },
+        {
+          "h": "Same steps as equations — almost",
+          "p": "You may add or subtract the same number on both sides. You may multiply or divide by a positive number. If you multiply or divide by a <b>negative</b> number, reverse the inequality sign.",
+          "code": "−2x > 6\nx < −3     (divide by −2 and flip)"
+        },
+        {
+          "h": "Interval language",
+          "p": "x > 2 means all numbers larger than 2 (open ray). x ≤ −1 means −1 and everything left of it. Compound: 1 < x ≤ 4 is between 1 and 4, including 4 but not 1."
+        },
+        {
+          "h": "Graphing",
+          "p": "Open circle for < or >; filled circle for ≤ or ≥. Shade the side that satisfies the inequality."
+        }
+      ],
+      "practice": [
+        {
+          "why": "Subtract 3 from both sides.",
+          "options": ["x > 4", "x < 4", "x > 10", "x ≥ 4"],
+          "q": "Solve x + 3 > 7.",
+          "answer": "x > 4"
+        },
+        {
+          "why": "Divide by −2 and flip the inequality.",
+          "options": ["x < −3", "x > −3", "x < 3", "x > 3"],
+          "q": "Solve −2x > 6.",
+          "answer": "x < −3"
+        },
+        {
+          "why": "≤ includes the endpoint −1.",
+          "options": ["−1", "0", "2", "−0.5"],
+          "q": "Which number satisfies x ≤ −1?",
+          "answer": "−1"
+        },
+        {
+          "why": "3x ≥ 9; x ≥ 3.",
+          "options": ["x ≥ 3", "x ≤ 3", "x > 3", "x ≥ 9"],
+          "q": "3x − 1 ≥ 8 implies:",
+          "answer": "x ≥ 3"
+        },
+        {
+          "why": "That reverses order on the number line.",
+          "options": [
+            "Multiply/divide by a negative",
+            "Add a negative",
+            "Subtract anything",
+            "Always"
+          ],
+          "q": "When must you flip an inequality?",
+          "answer": "Multiply/divide by a negative"
+        },
+        {
+          "why": "Strict on the left, inclusive on the right.",
+          "options": ["4 only", "1 only", "Both 1 and 4", "Neither"],
+          "q": "1 < x ≤ 4 includes which endpoint?",
+          "answer": "4 only"
+        }
+      ]
+    },
+    {
+      "id": "linear-functions",
+      "title": "Linear functions",
+      "summary": "Slope-intercept form y = mx + b and graphs of lines.",
+      "sections": [
+        {
+          "p": "A <b>linear function</b> has constant rate of change. In slope-intercept form, <b>y = mx + b</b>: m is the <b>slope</b> (rise/run), b is the <b>y-intercept</b> (where the line meets the y-axis)."
+        },
+        {
+          "h": "Slope",
+          "p": "Between two points (x₁,y₁) and (x₂,y₂): m = (y₂ − y₁)/(x₂ − x₁) when x₂ ≠ x₁. Positive slope rises to the right; negative falls; zero is horizontal.",
+          "code": "Through (1,2) and (3,6):\nm = (6−2)/(3−1) = 4/2 = 2"
+        },
+        {
+          "h": "Graphing from y = mx + b",
+          "p": "Plot (0, b), then use slope: from that point, rise and run to the next lattice point. Example: y = 2x − 1 crosses at (0,−1) and goes up 2, right 1."
+        },
+        {
+          "h": "Horizontal and vertical",
+          "p": "y = 3 is horizontal (slope 0). x = 2 is vertical (undefined slope) and is not a function of x in the y = f(x) sense."
+        }
+      ],
+      "practice": [
+        {
+          "why": "m is the coefficient of x.",
+          "options": ["3", "−2", "2", "−3"],
+          "q": "In y = 3x − 2, the slope is:",
+          "answer": "3"
+        },
+        {
+          "why": "b = 5; point (0,5).",
+          "options": ["5", "−1", "−5", "0"],
+          "q": "y-intercept of y = −x + 5:",
+          "answer": "5"
+        },
+        {
+          "why": "(6−2)/(3−1)=2.",
+          "options": ["2", "4", "1", "1/2"],
+          "q": "Slope through (1,2) and (3,6):",
+          "answer": "2"
+        },
+        {
+          "why": "Rise is zero.",
+          "options": ["0", "1", "Undefined", "Infinity"],
+          "q": "A horizontal line has slope:",
+          "answer": "0"
+        },
+        {
+          "why": "Negative slope.",
+          "options": [
+            "Falls to the right",
+            "Rises to the right",
+            "Is vertical",
+            "Is horizontal"
+          ],
+          "q": "If m < 0, the line:",
+          "answer": "Falls to the right"
+        },
+        {
+          "why": "Fixed x, any y.",
+          "options": ["x = 2", "y = 2", "y = 2x", "y = −2"],
+          "q": "Which equation is vertical?",
+          "answer": "x = 2"
+        },
+        {
+          "why": "2(2)−1=3.",
+          "options": ["3", "1", "−1", "4"],
+          "q": "For y = 2x − 1, when x = 2, y =",
+          "answer": "3"
+        }
+      ]
+    },
+    {
+      "id": "systems",
+      "title": "Systems of linear equations",
+      "summary": "Two equations, two unknowns: graphing, substitution and elimination.",
+      "sections": [
+        {
+          "p": "A <b>system</b> asks for values that satisfy two (or more) equations at once. Geometrically, two lines may meet at one point (unique solution), be parallel (none) or coincide (infinitely many)."
+        },
+        {
+          "h": "Substitution",
+          "p": "Solve one equation for a variable, plug into the other.",
+          "code": "y = 2x + 1\nx + y = 7\nx + (2x+1) = 7 → 3x = 6 → x = 2, y = 5"
+        },
+        {
+          "h": "Elimination",
+          "p": "Add or subtract multiples of the equations so one variable cancels.",
+          "code": "2x + y = 8\nx − y = 1\nAdd: 3x = 9 → x = 3, then y = 2"
+        },
+        {
+          "h": "No solution / many",
+          "p": "If you reach 0 = 5, the system is inconsistent (parallel lines). If you reach 0 = 0, the equations are dependent (same line)."
+        }
+      ],
+      "practice": [
+        {
+          "why": "x+(2x+1)=7 → x=2.",
+          "options": ["2", "3", "5", "1"],
+          "q": "For y = 2x + 1 and x + y = 7, the solution x is:",
+          "answer": "2"
+        },
+        {
+          "why": "y=2(2)+1=5.",
+          "options": ["5", "2", "7", "4"],
+          "q": "Corresponding y for that system:",
+          "answer": "5"
+        },
+        {
+          "why": "Add: 3x=9.",
+          "options": ["3", "2", "4", "1"],
+          "q": "2x + y = 8 and x − y = 1: x =",
+          "answer": "3"
+        },
+        {
+          "why": "They never meet.",
+          "options": ["No solution", "One solution", "Infinitely many", "Two solutions"],
+          "q": "Parallel distinct lines mean:",
+          "answer": "No solution"
+        },
+        {
+          "why": "Every point on the line works.",
+          "options": [
+            "Infinitely many solutions",
+            "No solution",
+            "Exactly one",
+            "Exactly two"
+          ],
+          "q": "Same line twice means:",
+          "answer": "Infinitely many solutions"
+        },
+        {
+          "why": "Plug the expression into the other equation.",
+          "options": [
+            "Substitution",
+            "Guess and check only",
+            "Always graph",
+            "Ignore that equation"
+          ],
+          "q": "Best first step if one equation is already y = …?",
+          "answer": "Substitution"
+        }
+      ]
+    },
+    {
+      "id": "polynomials",
+      "title": "Polynomials",
+      "summary": "Degree, adding and multiplying polynomials.",
+      "sections": [
+        {
+          "p": "A <b>polynomial</b> in x is a sum of terms aₙxⁿ + … + a₁x + a₀ with nonnegative integer powers. The <b>degree</b> is the highest power with nonzero coefficient. Linear degree 1; quadratic degree 2; cubic degree 3."
+        },
+        {
+          "h": "Standard form",
+          "p": "Write powers descending: 3x² − 2x + 7, not scattered. Leading coefficient is the one on the highest power."
+        },
+        {
+          "h": "Adding",
+          "p": "Combine like terms (same power of x).",
+          "code": "(2x² + 3x − 1) + (x² − 5x + 4) = 3x² − 2x + 3"
+        },
+        {
+          "h": "Multiplying",
+          "p": "Distribute each term of the first across the second (FOIL for two binomials), then combine like terms.",
+          "code": "(x + 2)(x + 3) = x² + 3x + 2x + 6 = x² + 5x + 6\n(x + 2)(x − 2) = x² − 4"
+        }
+      ],
+      "practice": [
+        {
+          "why": "Highest power is 3.",
+          "options": ["3", "4", "1", "0"],
+          "q": "Degree of 4x³ − x + 1:",
+          "answer": "3"
+        },
+        {
+          "why": "2+1=3 for x²; 3−5=−2 for x.",
+          "options": ["3x² − 2x", "3x² + 8x", "x² − 2x", "2x² − 2x"],
+          "q": "(2x² + 3x) + (x² − 5x) =",
+          "answer": "3x² − 2x"
+        },
+        {
+          "why": "FOIL: x²+3x+2x+6.",
+          "options": ["x² + 5x + 6", "x² + 6x + 5", "x² + 5", "2x + 6"],
+          "q": "(x + 2)(x + 3) =",
+          "answer": "x² + 5x + 6"
+        },
+        {
+          "why": "Difference of squares.",
+          "options": ["x² − 4", "x² + 4", "x² − 2", "x² − 4x"],
+          "q": "(x + 2)(x − 2) =",
+          "answer": "x² − 4"
+        },
+        {
+          "why": "Coefficient of highest degree term.",
+          "options": ["−2", "9", "4", "−2x"],
+          "q": "Leading coefficient of −2x⁴ + 9x:",
+          "answer": "−2"
+        },
+        {
+          "why": "The term with no x.",
+          "options": ["7", "5", "−3", "0"],
+          "q": "Constant term of 5x² − 3x + 7:",
+          "answer": "7"
+        },
+        {
+          "why": "Degrees add when multiplying (nonzero leading coeffs).",
+          "options": ["4", "2", "3", "0"],
+          "q": "Product of two degree-2 polynomials has degree:",
+          "answer": "4"
+        }
+      ]
+    },
+    {
+      "id": "factoring",
+      "title": "Factoring",
+      "summary": "Greatest common factor, trinomials and difference of squares.",
+      "sections": [
+        {
+          "p": "Factoring rewrites a polynomial as a product. It undoes expansion and is the main tool for solving many polynomial equations."
+        },
+        {
+          "h": "Common factor",
+          "p": "Pull out the greatest common factor (GCF) of all terms.",
+          "code": "6x² + 9x = 3x(2x + 3)"
+        },
+        {
+          "h": "x² + bx + c",
+          "p": "Find integers p, q with p+q = b and p×q = c. Then x² + bx + c = (x + p)(x + q).",
+          "code": "x² + 5x + 6 = (x + 2)(x + 3)\nx² − 5x + 6 = (x − 2)(x − 3)"
+        },
+        {
+          "h": "Difference of squares",
+          "p": "a² − b² = (a − b)(a + b).",
+          "code": "x² − 9 = (x − 3)(x + 3)\n4x² − 25 = (2x − 5)(2x + 5)"
+        },
+        {
+          "h": "Zero product property",
+          "p": "If AB = 0, then A = 0 or B = 0. So after factoring, set each factor to zero."
+        }
+      ],
+      "practice": [
+        {
+          "why": "GCF is 3x.",
+          "options": ["3x(2x + 3)", "6x(x + 9)", "3(2x² + 3x)", "x(6x + 9)"],
+          "q": "Factor 6x² + 9x.",
+          "answer": "3x(2x + 3)"
+        },
+        {
+          "why": "2+3=5, 2×3=6.",
+          "options": ["(x+2)(x+3)", "(x+1)(x+6)", "(x−2)(x−3)", "(x+5)(x+1)"],
+          "q": "Factor x² + 5x + 6.",
+          "answer": "(x+2)(x+3)"
+        },
+        {
+          "why": "Difference of squares.",
+          "options": ["(x−3)(x+3)", "(x−9)(x+1)", "(x−3)²", "x(x−9)"],
+          "q": "Factor x² − 9.",
+          "answer": "(x−3)(x+3)"
+        },
+        {
+          "why": "Zero product: each factor zero.",
+          "options": ["4 or −1", "−4 or 1", "4 or 1", "0"],
+          "q": "If (x−4)(x+1)=0, then x =",
+          "answer": "4 or −1"
+        },
+        {
+          "why": "−2+(−3)=−5; (−2)(−3)=6.",
+          "options": ["(x−2)(x−3)", "(x+2)(x+3)", "(x−6)(x+1)", "(x−1)(x−5)"],
+          "q": "Factor x² − 5x + 6.",
+          "answer": "(x−2)(x−3)"
+        },
+        {
+          "why": "(2x)² − 5².",
+          "options": ["(2x−5)(2x+5)", "(4x−5)(x+5)", "(2x−25)(2x+1)", "(2x−5)²"],
+          "q": "4x² − 25 factors as:",
+          "answer": "(2x−5)(2x+5)"
+        }
+      ]
+    },
+    {
+      "id": "quadratics",
+      "title": "Quadratic equations",
+      "summary": "ax² + bx + c = 0 via factoring, square roots and the quadratic formula.",
+      "sections": [
+        {
+          "p": "A <b>quadratic equation</b> has the form ax² + bx + c = 0 with a ≠ 0. The graph of y = ax² + bx + c is a parabola; solutions are x-intercepts when they are real."
+        },
+        {
+          "h": "Factoring route",
+          "p": "Factor, then use the zero product property.",
+          "code": "x² − 5x + 6 = 0\n(x−2)(x−3) = 0\nx = 2 or x = 3"
+        },
+        {
+          "h": "Square-root route",
+          "p": "If the equation is x² = k with k ≥ 0, then x = ±√k. Complete the square or shift first when needed: (x−1)² = 4 → x−1 = ±2."
+        },
+        {
+          "h": "Quadratic formula",
+          "p": "For ax² + bx + c = 0: x = (−b ± √(b² − 4ac)) / (2a). The discriminant D = b² − 4ac: D>0 two real roots; D=0 one (repeated); D<0 no real roots.",
+          "code": "x² − 5x + 6 = 0\nD = 25 − 24 = 1\nx = (5 ± 1)/2 → 3 or 2"
+        }
+      ],
+      "practice": [
+        {
+          "why": "(x−2)(x−3)=0.",
+          "options": ["2 and 3", "−2 and −3", "1 and 6", "5 and 6"],
+          "q": "Roots of x² − 5x + 6 = 0:",
+          "answer": "2 and 3"
+        },
+        {
+          "why": "Both square roots.",
+          "options": ["±7", "7 only", "±49", "24.5"],
+          "q": "If x² = 49, then x =",
+          "answer": "±7"
+        },
+        {
+          "why": "25 − 4(1)(6)=1.",
+          "options": ["1", "25", "0", "−1"],
+          "q": "Discriminant of x² − 5x + 6:",
+          "answer": "1"
+        },
+        {
+          "why": "Square root of negative is not real.",
+          "options": [
+            "No real roots",
+            "One real root",
+            "Two real roots",
+            "Infinitely many"
+          ],
+          "q": "If D < 0 for a quadratic with real coefficients:",
+          "answer": "No real roots"
+        },
+        {
+          "why": "x = (−b ± √D)/(2a).",
+          "options": ["−b", "b", "2a", "c"],
+          "q": "Quadratic formula numerator starts with:",
+          "answer": "−b"
+        },
+        {
+          "why": "x−1 = ±2.",
+          "options": ["x = 3 or x = −1", "x = 5 or x = −3", "x = 2 only", "x = 4"],
+          "q": "Solve (x−1)² = 4.",
+          "answer": "x = 3 or x = −1"
+        },
+        {
+          "why": "2x²=0 ⇒ x²=0 ⇒ x=0 (repeated).",
+          "options": ["x = 0", "x = 2", "No solution", "x = ±2"],
+          "q": "For 2x² = 0, the solution is:",
+          "answer": "x = 0"
+        }
+      ]
+    },
+    {
+      "id": "word-problems",
+      "title": "From words to equations",
+      "summary": "Translate phrases into algebra and solve simple models.",
+      "sections": [
+        {
+          "p": "Word problems become equations when you name the unknown, translate English into operations and write a relation that must hold. Units and a quick check for reasonableness matter as much as the algebra."
+        },
+        {
+          "h": "Common phrases",
+          "p": "“Sum” → +; “difference” → −; “product” → ×; “quotient” → ÷; “is” / “equals” → =; “two more than x” → x+2; “twice x” → 2x; “5 less than x” → x−5 (order matters)."
+        },
+        {
+          "h": "Example: consecutive integers",
+          "p": "Three consecutive integers summing to 54: n + (n+1) + (n+2) = 54 → 3n + 3 = 54 → n = 17. The integers are 17, 18, 19.",
+          "code": "n + (n+1) + (n+2) = 54\n3n + 3 = 54\n3n = 51\nn = 17"
+        },
+        {
+          "h": "Example: percent",
+          "p": "A price after 20% discount is $48. Original p satisfies 0.8p = 48 → p = 60."
+        }
+      ],
+      "practice": [
+        {
+          "why": "Start from x, subtract 5.",
+          "options": ["x − 5", "5 − x", "5x", "x/5"],
+          "q": "“Five less than x” as an expression:",
+          "answer": "x − 5"
+        },
+        {
+          "why": "n+(n+1)+(n+2)=54 → n=17.",
+          "options": ["17", "18", "16", "15"],
+          "q": "Three consecutive integers sum to 54; the smallest is:",
+          "answer": "17"
+        },
+        {
+          "why": "0.8p=48 → p=60.",
+          "options": ["$60", "$48", "$40", "$57.60"],
+          "q": "After 20% off, price is $48. Original price:",
+          "answer": "$60"
+        },
+        {
+          "why": "2n+3=11 → 2n=8 → n=4.",
+          "options": ["4", "7", "5", "8"],
+          "q": "Twice a number plus 3 is 11. The number is:",
+          "answer": "4"
+        },
+        {
+          "why": "Product means multiply.",
+          "options": ["7x", "x+7", "x/7", "7−x"],
+          "q": "“Product of x and 7” is:",
+          "answer": "7x"
+        },
+        {
+          "why": "2(w + w+3)=26 → 2(2w+3)=26 → 2w+3=13 → 2w=10.",
+          "options": ["5", "8", "10", "4"],
+          "q": "A rectangle’s length is 3 more than its width w; perimeter 26. Then w =",
+          "answer": "5"
+        }
+      ]
+    }
+  ]
+}

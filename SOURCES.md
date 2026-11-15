@@ -38,6 +38,7 @@ only imported when its license fits that.
 | Don Woods and James Lyon, INTERCAL (1972) | Language shape taught in `programming/intercal/` (course text written for this project; not a copy of the INTERCAL manual) | Referenced for the published language shape; course text is original under this repo's license | https://www.muppetlabs.com/~breadbox/intercal/ |
 | Zilog Z80 CPU (1976) and CP/M BDOS calling convention | Language shape taught in `programming/z80/` (course text written for this project; not a copy of any Z80 manual or CP/M documentation) | Referenced for the published language shape; course text is original under this repo's license | https://en.wikipedia.org/wiki/Zilog_Z80 |
 | Microsoft Windows 16-bit APIs (Win16) | Language shape taught in `programming/win16/` (course text written for this project; not a copy of any Windows SDK manual) | Referenced for the published language shape; course text is original under this repo's license | https://en.wikipedia.org/wiki/Windows_API |
+| — (original) | Math Learner course text in `math/` | Original under this repo's license | — |
 
 Content written for this project is marked as original in its file and isn't
 listed here.

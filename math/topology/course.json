@@ -1,0 +1,537 @@
+{
+  "schema": "math-course@1",
+  "id": "topology",
+  "name": "Topology",
+  "title": "Topology intuition",
+  "intro": "Topology studies shapes up to continuous deformation — stretching and bending without tearing or gluing. These lessons build intuition for open and closed sets, continuity, homeomorphisms, connectedness and compactness, with examples on the real line and the circle. The tone is conceptual: enough precision to be honest, without a full axiomatic course.",
+  "lessons": [
+    {
+      "id": "open-closed",
+      "title": "Open and closed sets",
+      "summary": "Neighbourhoods on the line; interiors, boundaries and complements.",
+      "sections": [
+        {
+          "p": "On the real line R, an <b>open interval</b> (a,b) does not include its endpoints. A set U ⊆ R is <b>open</b> if every point of U has some open interval around it still inside U. Open sets are unions of open intervals."
+        },
+        {
+          "h": "Closed sets",
+          "p": "A set is <b>closed</b> if its complement is open. Closed intervals [a,b] include endpoints. Finite sets of points are closed in R. Being closed is not the opposite of “not open”: [0,1) is neither open nor closed in R."
+        },
+        {
+          "h": "Boundary intuition",
+          "p": "The boundary of [0,1] is {0,1}. Interior points have a whole interval of neighbours inside the set; boundary points do not.",
+          "code": "Open: (0,1), (0,∞), empty set, R\nClosed: [0,1], {0}, empty set, R\nNeither: [0,1)"
+        },
+        {
+          "h": "Both empty and R",
+          "p": "In R (usual topology), ∅ and R are both open and closed (“clopen”). That is allowed by the definitions."
+        }
+      ],
+      "practice": [
+        {
+          "why": "Open interval; every point has a subinterval inside.",
+          "options": ["Yes", "No", "Only at 0.5", "Only if closed too"],
+          "q": "Is (0,1) open in R?",
+          "answer": "Yes"
+        },
+        {
+          "why": "Complement (−∞,0)∪(1,∞) is open.",
+          "options": ["Yes", "No", "Neither", "Only open"],
+          "q": "Is [0,1] closed in R?",
+          "answer": "Yes"
+        },
+        {
+          "why": "0 blocks openness; 1 missing blocks closedness.",
+          "options": ["Neither open nor closed", "Open", "Closed", "Clopen"],
+          "q": "[0,1) in R is:",
+          "answer": "Neither open nor closed"
+        },
+        {
+          "why": "Endpoints.",
+          "options": ["{0,1}", "(0,1)", "∅", "R"],
+          "q": "Boundary of [0,1] is:",
+          "answer": "{0,1}"
+        },
+        {
+          "why": "Complement R is open; empty is open by convention/definition.",
+          "options": ["Both open and closed", "Only open", "Only closed", "Neither"],
+          "q": "In R, the empty set is:",
+          "answer": "Both open and closed"
+        },
+        {
+          "why": "Interior definition.",
+          "options": [
+            "A neighbourhood inside the set",
+            "Only boundary neighbours",
+            "No neighbours",
+            "Infinite complement"
+          ],
+          "q": "An interior point of a set has:",
+          "answer": "A neighbourhood inside the set"
+        }
+      ]
+    },
+    {
+      "id": "continuity",
+      "title": "Continuity",
+      "summary": "No jumps: ε–δ idea and preimages of open sets.",
+      "sections": [
+        {
+          "p": "A function f: R → R is <b>continuous at a</b> if values f(x) stay close to f(a) whenever x is close to a. Formally: for every ε > 0 there is δ > 0 so that |x−a| < δ implies |f(x)−f(a)| < ε."
+        },
+        {
+          "h": "Pictures",
+          "p": "Polynomials, sin, cos, exp and rational functions on their domains (where the denominator ≠ 0) are continuous. A step function with a jump is discontinuous at the jump."
+        },
+        {
+          "h": "Open-set view",
+          "p": "f is continuous (everywhere) iff for every open U in the codomain, the preimage f⁻¹(U) is open in the domain. This definition extends cleanly beyond R.",
+          "code": "f(x)=x² continuous on R\nf(x)=1/x continuous on R\\{0}\nstep at 0: discontinuous at 0"
+        },
+        {
+          "h": "Composition",
+          "p": "Composition of continuous maps is continuous. Limits and continuity match when the limit equals the function value."
+        }
+      ],
+      "practice": [
+        {
+          "why": "ε–δ idea.",
+          "options": [
+            "Nearby outputs",
+            "Exactly f(a) only",
+            "Infinite outputs",
+            "Open complements"
+          ],
+          "q": "Continuity at a means nearby inputs give:",
+          "answer": "Nearby outputs"
+        },
+        {
+          "why": "Standard fact.",
+          "options": [
+            "Continuous",
+            "Never continuous",
+            "Only differentiable nowhere",
+            "Only closed maps"
+          ],
+          "q": "Polynomials on R are:",
+          "answer": "Continuous"
+        },
+        {
+          "why": "Undefined at 0; continuous elsewhere.",
+          "options": ["R excluding 0", "All of R", "Only {0}", "Empty set only"],
+          "q": "f(x)=1/x is continuous on:",
+          "answer": "R excluding 0"
+        },
+        {
+          "why": "Topological definition.",
+          "options": ["Open", "Closed always", "Finite", "Compact always"],
+          "q": "Global continuity ↔ preimages of open sets are:",
+          "answer": "Open"
+        },
+        {
+          "why": "Closure under composition.",
+          "options": ["Continuous", "Discontinuous", "Open only", "Constant"],
+          "q": "Composition of continuous functions is:",
+          "answer": "Continuous"
+        },
+        {
+          "why": "Classic failure of continuity.",
+          "options": [
+            "Left/right limits disagree or miss f(a)",
+            "f is differentiable",
+            "f is constant",
+            "Domain is empty"
+          ],
+          "q": "A jump discontinuity means at that point:",
+          "answer": "Left/right limits disagree or miss f(a)"
+        },
+        {
+          "why": "Limit characterisation.",
+          "options": [
+            "Continuous at a",
+            "Open at a",
+            "Compact at a",
+            "Homeomorphic at a"
+          ],
+          "q": "If lim x→a f(x) = f(a), then f is:",
+          "answer": "Continuous at a"
+        }
+      ]
+    },
+    {
+      "id": "homeomorphism",
+      "title": "Homeomorphism idea",
+      "summary": "Continuous bijections with continuous inverse — “same shape” topologically.",
+      "sections": [
+        {
+          "p": "A <b>homeomorphism</b> is a continuous bijection f: X → Y whose inverse is also continuous. If one exists, X and Y are <b>homeomorphic</b>: topologically the same for the purposes of continuous deformation."
+        },
+        {
+          "h": "Rubber-sheet slogan",
+          "p": "You may stretch, bend and reshape, but not cut, tear or glue distant points together. A coffee cup and a doughnut (solid torus) are the classic cartoon — one hole each."
+        },
+        {
+          "h": "Examples on the line",
+          "p": "(0,1) is homeomorphic to R (e.g. via tan stretched, or x ↦ (2x−1)/(x(x−1)) variants). [0,1] is <b>not</b> homeomorphic to (0,1): endpoints behave differently (removing an endpoint from [0,1] can leave a connected set; removing a point from (0,1) always splits it).",
+          "code": "(0,1) ~ R  (homeomorphic)\n[0,1] not ~ (0,1)\nCircle S¹ not ~ R"
+        },
+        {
+          "h": "Invariants",
+          "p": "Properties preserved by homeomorphism are <b>topological invariants</b>: connectedness, compactness, “number of pieces,” presence of a hole (informally). If an invariant differs, spaces are not homeomorphic."
+        }
+      ],
+      "practice": [
+        {
+          "why": "Definition.",
+          "options": [
+            "Continuous inverse",
+            "Linear inverse only",
+            "No inverse",
+            "Constant inverse"
+          ],
+          "q": "A homeomorphism is a continuous bijection with:",
+          "answer": "Continuous inverse"
+        },
+        {
+          "why": "Standard example.",
+          "options": ["Homeomorphic", "Never related", "The same set", "Both compact"],
+          "q": "(0,1) and R are:",
+          "answer": "Homeomorphic"
+        },
+        {
+          "why": "Endpoint / cut-point behaviour differs.",
+          "options": ["Not homeomorphic", "Homeomorphic", "Equal", "Both open in R"],
+          "q": "[0,1] and (0,1) are:",
+          "answer": "Not homeomorphic"
+        },
+        {
+          "why": "That is their point.",
+          "options": [
+            "Topological invariants",
+            "Exact distances always",
+            "Straightness of lines",
+            "Polynomial degree"
+          ],
+          "q": "Homeomorphisms preserve:",
+          "answer": "Topological invariants"
+        },
+        {
+          "why": "Tearing is not a homeomorphism.",
+          "options": [
+            "Breaks a homeomorphism type",
+            "Is always allowed",
+            "Preserves all invariants",
+            "Creates linearity"
+          ],
+          "q": "Cutting a space typically:",
+          "answer": "Breaks a homeomorphism type"
+        },
+        {
+          "why": "Removing a point from S¹ leaves it connected; from R does not.",
+          "options": ["No", "Yes", "Only in 3D", "Only if open"],
+          "q": "The circle S¹ is homeomorphic to R?",
+          "answer": "No"
+        }
+      ]
+    },
+    {
+      "id": "connectedness",
+      "title": "Connectedness",
+      "summary": "One piece versus many; intervals on R.",
+      "sections": [
+        {
+          "p": "A space is <b>connected</b> if it is not the union of two disjoint nonempty open (in the subspace) sets that cover it — informally, it comes in one piece. On R, the connected subsets are exactly the intervals (including rays, points, R itself)."
+        },
+        {
+          "h": "Examples",
+          "p": "[0,1] connected; (0,1)∪(2,3) disconnected. The circle is connected. Q (rationals) as a subspace of R is totally disconnected in a strong sense: between any two rationals sits an irrational cut."
+        },
+        {
+          "h": "Continuous images",
+          "p": "Continuous image of a connected set is connected. Intermediate Value Theorem is the special case for f: [a,b] → R: the image is an interval, so every intermediate value is hit.",
+          "code": "IVT: f continuous on [a,b], f(a)<L<f(b)\n⇒ some c with f(c)=L"
+        },
+        {
+          "h": "Path-connectedness",
+          "p": "Stronger notion: any two points joined by a continuous path. Open disks in R² are path-connected. Path-connected ⇒ connected; converse can fail in exotic spaces, but for open sets in Rⁿ they agree."
+        }
+      ],
+      "practice": [
+        {
+          "why": "Classification on the line.",
+          "options": ["Intervals", "Only open intervals", "Only finite sets", "Only Q"],
+          "q": "Connected subsets of R are:",
+          "answer": "Intervals"
+        },
+        {
+          "why": "Two separate pieces.",
+          "options": ["Disconnected", "Connected", "Compact", "A singleton"],
+          "q": "(0,1)∪(2,3) is:",
+          "answer": "Disconnected"
+        },
+        {
+          "why": "Preservation theorem.",
+          "options": ["Connected", "Disconnected", "Finite", "Open always"],
+          "q": "Continuous image of a connected set is:",
+          "answer": "Connected"
+        },
+        {
+          "why": "Image of connected is connected.",
+          "options": [
+            "[a,b] and its image interval",
+            "Only open covers",
+            "Eigenvalues",
+            "Matrices"
+          ],
+          "q": "IVT uses connectedness of:",
+          "answer": "[a,b] and its image interval"
+        },
+        {
+          "why": "Paths glue the space into one piece.",
+          "options": ["Connected", "Compact", "Discrete", "Finite"],
+          "q": "Path-connected implies:",
+          "answer": "Connected"
+        },
+        {
+          "why": "One piece; path-connected even.",
+          "options": ["Connected", "Disconnected", "A pair of points only", "Empty"],
+          "q": "The circle S¹ is:",
+          "answer": "Connected"
+        }
+      ]
+    },
+    {
+      "id": "compactness",
+      "title": "Compactness intuition",
+      "summary": "Closed and bounded in Rⁿ; open covers and finite subcovers.",
+      "sections": [
+        {
+          "p": "Compactness is a finiteness property for infinite spaces. In Rⁿ with the usual metric, Heine–Borel says: a set is <b>compact</b> iff it is closed and bounded. So [0,1] is compact; (0,1) is not (not closed); Z is not (not bounded)."
+        },
+        {
+          "h": "Open cover definition",
+          "p": "A collection of open sets covers K if their union contains K. K is compact if every open cover has a <b>finite</b> subcover. Intuition: infinitely many opens are never all needed; finitely many always suffice."
+        },
+        {
+          "h": "Why (0,1) fails",
+          "p": "Cover (0,1) by (1/(n+1), 1−1/(n+1)) for n = 1,2,… — or simpler: unions of (1/n, 1). No finite subcollection reaches down to 0’s neighbourhood inside (0,1).",
+          "code": "Compact in R: [0,1], finite sets, empty set\nNot compact: (0,1), R, [0,∞), Q∩[0,1]"
+        },
+        {
+          "h": "Useful consequences",
+          "p": "Continuous image of a compact set is compact. Continuous f: [a,b] → R attains max and min (Extreme Value Theorem). Compact + Hausdorff ⇒ closed."
+        }
+      ],
+      "practice": [
+        {
+          "why": "Heine–Borel.",
+          "options": [
+            "Closed and bounded",
+            "Open and bounded",
+            "Only bounded",
+            "Only closed"
+          ],
+          "q": "By Heine–Borel in Rⁿ, compact ↔",
+          "answer": "Closed and bounded"
+        },
+        {
+          "why": "Closed and bounded.",
+          "options": ["Yes", "No", "Only open", "Only if discrete"],
+          "q": "Is [0,1] compact in R?",
+          "answer": "Yes"
+        },
+        {
+          "why": "Not closed / open-cover failure.",
+          "options": ["No", "Yes", "Only at rationals", "Yes iff closed"],
+          "q": "Is (0,1) compact in R?",
+          "answer": "No"
+        },
+        {
+          "why": "Definition.",
+          "options": [
+            "Finite subcover",
+            "Countable complement",
+            "Unique maximum",
+            "Metric"
+          ],
+          "q": "Compactness via covers: every open cover has a:",
+          "answer": "Finite subcover"
+        },
+        {
+          "why": "Continuous image compact ⇒ attains bounds in R.",
+          "options": ["Compact (e.g. [a,b])", "Only open", "Only Q", "Empty"],
+          "q": "Extreme Value Theorem needs domain:",
+          "answer": "Compact (e.g. [a,b])"
+        },
+        {
+          "why": "Preservation.",
+          "options": [
+            "Compact",
+            "Always open",
+            "Always disconnected",
+            "Unbounded always"
+          ],
+          "q": "Continuous image of a compact set is:",
+          "answer": "Compact"
+        },
+        {
+          "why": "Closed but unbounded.",
+          "options": ["Bounded", "Closed", "Discrete", "Countable"],
+          "q": "Z ⊆ R is not compact because it is not:",
+          "answer": "Bounded"
+        }
+      ]
+    },
+    {
+      "id": "circle",
+      "title": "The circle",
+      "summary": "S¹ as a compact connected space; loops and cutting points.",
+      "sections": [
+        {
+          "p": "The circle S¹ = {(x,y): x² + y² = 1} (or R/Z, angles mod 2π) is the simplest space with a hole. It is compact, connected and path-connected."
+        },
+        {
+          "h": "Not a line",
+          "p": "Remove one point from S¹: what remains is homeomorphic to an open interval — still connected. Remove one point from R: two rays, disconnected. So S¹ ≇ R."
+        },
+        {
+          "h": "Winding",
+          "p": "A loop on the circle can wind around the hole n times (integer winding number). You cannot continuously shrink a loop that winds once to a point while staying on the circle — informal hint of fundamental group π₁(S¹) ≅ Z."
+        },
+        {
+          "h": "Maps from the circle",
+          "p": "Continuous f: S¹ → R must attain max/min and cannot be bijective onto R (compact image in R is closed and bounded). Continuous f: S¹ → S¹ can be classified up to homotopy by degree (winding)."
+        }
+      ],
+      "practice": [
+        {
+          "why": "Closed bounded in R²; one piece.",
+          "options": [
+            "Compact and connected",
+            "Neither compact nor connected",
+            "Only discrete",
+            "Homeomorphic to R"
+          ],
+          "q": "S¹ is:",
+          "answer": "Compact and connected"
+        },
+        {
+          "why": "Like an open interval.",
+          "options": ["Connected", "Two components", "Empty", "Compact and equal to S¹"],
+          "q": "S¹ minus one point is:",
+          "answer": "Connected"
+        },
+        {
+          "why": "Two rays.",
+          "options": ["Disconnected", "Connected", "Compact", "A circle"],
+          "q": "R minus one point is:",
+          "answer": "Disconnected"
+        },
+        {
+          "why": "Compact image would be compact in R; R is not.",
+          "options": [
+            "Cannot exist",
+            "Always exists",
+            "Exists iff linear",
+            "Exists via tan only"
+          ],
+          "q": "A continuous bijection S¹ → R:",
+          "answer": "Cannot exist"
+        },
+        {
+          "why": "How many times a loop wraps.",
+          "options": ["Integers (informally)", "Only {0}", "R only", "Matrices"],
+          "q": "Winding number around the hole is valued in:",
+          "answer": "Integers (informally)"
+        },
+        {
+          "why": "Identify angles differing by full turns.",
+          "options": ["R / 2πZ (or R/Z)", "Only [0,1]", "Q", "Empty set"],
+          "q": "S¹ as angles is often written:",
+          "answer": "R / 2πZ (or R/Z)"
+        }
+      ]
+    },
+    {
+      "id": "examples-r",
+      "title": "More examples on R",
+      "summary": "Subspaces, relative topology and quick classification drills.",
+      "sections": [
+        {
+          "p": "A subset A ⊆ R inherits a <b>subspace topology</b>: opens in A are intersections of opens in R with A. So (0,1] is open as a subset of (0,1]? — actually (0,1] is open in itself as a whole space, but as a subset of R it is neither open nor closed. Context matters."
+        },
+        {
+          "h": "Relative open",
+          "p": "In A = [0,1], the set [0,1/2) is open in A (relative to A) because it is (−1/2, 1/2) ∩ A, even though it is not open in R.",
+          "code": "In R: [0,½) neither open nor closed\nIn [0,1]: [0,½) is relatively open"
+        },
+        {
+          "h": "Quick invariants on subsets of R",
+          "p": "Ask: connected? (interval?) compact? (closed and bounded?) homeomorphic to which model interval? Endpoints and whether the set is open/closed in R are the usual clues."
+        },
+        {
+          "h": "Takeaway",
+          "p": "Topology tracks qualitative shape: pieces, holes, boundaries and finiteness of covers — not exact distances. Once those words feel natural on R and S¹, the same vocabulary applies to surfaces, knots and data-shape ideas later."
+        }
+      ],
+      "practice": [
+        {
+          "why": "Subspace topology.",
+          "options": [
+            "U ∩ A for U open in R",
+            "Only open intervals in R",
+            "Only closed sets",
+            "Only finite sets"
+          ],
+          "q": "Opens in a subspace A ⊆ R are:",
+          "answer": "U ∩ A for U open in R"
+        },
+        {
+          "why": "Intersection of an open interval with [0,1].",
+          "options": ["Yes", "No", "Only if compact", "Only in Q"],
+          "q": "In [0,1], is [0,1/2) relatively open?",
+          "answer": "Yes"
+        },
+        {
+          "why": "Connected ⇒ interval; compact ⇒ closed bounded.",
+          "options": [
+            "Closed bounded intervals",
+            "Only open intervals",
+            "Only Z",
+            "All subsets"
+          ],
+          "q": "Compact connected subsets of R are:",
+          "answer": "Closed bounded intervals"
+        },
+        {
+          "why": "Course theme.",
+          "options": [
+            "Qualitative shape under continuous deformation",
+            "Exact centimetres only",
+            "Only algebra",
+            "Only matrices"
+          ],
+          "q": "Topology cares most about:",
+          "answer": "Qualitative shape under continuous deformation"
+        },
+        {
+          "why": "Missing 0 for closed; includes 1 for not open.",
+          "options": ["Neither open nor closed", "Open", "Closed", "Compact"],
+          "q": "As a subset of R, (0,1] is:",
+          "answer": "Neither open nor closed"
+        },
+        {
+          "why": "(0,1), [0,1], [0,1) are different types.",
+          "options": [
+            "Endpoints / open vs closed type",
+            "Only length",
+            "Only midpoint",
+            "Prime factors"
+          ],
+          "q": "Homeomorphic classification of intervals depends on:",
+          "answer": "Endpoints / open vs closed type"
+        }
+      ]
+    }
+  ]
+}

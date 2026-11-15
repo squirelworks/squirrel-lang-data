@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/squirelworks/squirrel-lang-data/schemas/math-catalog.v1.json",
+  "title": "math-catalog@1: Math Learner course list",
+  "description": "math/catalog.json: every course id with its display name, era, blurb, group and tags. Order here does not matter; the Desk sorts by name inside each group.",
+  "type": "object",
+  "required": [
+    "schema",
+    "courses"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    }
+  },
+  "properties": {
+    "schema": {
+      "const": "math-catalog@1"
+    },
+    "courses": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "era",
+          "blurb",
+          "group"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "$ref": "#/$defs/id"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "era": {
+            "type": "string",
+            "minLength": 1
+          },
+          "blurb": {
+            "type": "string",
+            "minLength": 1
+          },
+          "group": {
+            "enum": [
+              "foundations",
+              "algebra",
+              "geometry-trig",
+              "calculus",
+              "linear-algebra",
+              "topology"
+            ]
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          }
+        }
+      }
+    }
+  }
+}
