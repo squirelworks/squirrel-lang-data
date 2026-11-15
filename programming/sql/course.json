@@ -34,7 +34,6 @@
     "PRIMARY",
     "KEY",
     "REFERENCES",
-    "NOT",
     "NULL",
     "IS",
     "IN",
@@ -85,7 +84,6 @@
       "sections": [
         {
           "p": "A database holds <b>tables</b>. Each table has named <b>columns</b>, each with a type, and any number of <b>rows</b>. Here is the sample database every lesson uses: a table of trees, a table of squirrels (each living in one tree), and a table of the nuts each squirrel has buried. <code>PRIMARY KEY</code> marks the column that identifies a row, and <code>REFERENCES</code> says a column holds the key of a row in another table. You don't need to type this in to follow the lessons; it is here so you know what the tables hold.",
-          "setup": true,
           "code": "CREATE TABLE trees (\n    id       INTEGER PRIMARY KEY,\n    kind     TEXT NOT NULL,\n    height_m REAL\n);\nCREATE TABLE squirrels (\n    id      INTEGER PRIMARY KEY,\n    name    TEXT NOT NULL UNIQUE,\n    tree_id INTEGER REFERENCES trees(id),\n    born    INTEGER\n);\nCREATE TABLE stashes (\n    id          INTEGER PRIMARY KEY,\n    squirrel_id INTEGER NOT NULL REFERENCES squirrels(id),\n    nut         TEXT NOT NULL,\n    count       INTEGER NOT NULL CHECK (count > 0),\n    buried_on   TEXT\n);\nINSERT INTO trees VALUES\n    (1, 'oak', 21.5), (2, 'hazel', 6.0), (3, 'beech', 30.0), (4, 'ash', NULL);\nINSERT INTO squirrels VALUES\n    (1, 'Hazel', 1, 2022), (2, 'Acorn', 1, 2024), (3, 'Bramble', 3, 2021),\n    (4, 'Pip', 2, 2025), (5, 'Rowan', NULL, 2023);\nINSERT INTO stashes VALUES\n    (1, 1, 'acorn', 12, '2026-10-02'), (2, 1, 'hazelnut', 5, '2026-10-09'),\n    (3, 2, 'acorn', 3, '2026-10-05'), (4, 3, 'beechnut', 20, '2026-09-28'),\n    (5, 3, 'acorn', 7, '2026-10-11'), (6, 4, 'hazelnut', 2, '2026-10-12'),\n    (7, 1, 'beechnut', 4, '2026-10-15');"
         },
         {
