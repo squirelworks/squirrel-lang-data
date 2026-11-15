@@ -1,0 +1,586 @@
+{
+  "schema": "programming-course@1",
+  "id": "cpp",
+  "name": "C++",
+  "title": "Modern C++ from the first line",
+  "intro": "C++ began in the 1980s as C with classes and grew into one of the most widely used languages for programs that must be fast: games and game engines, browsers, databases, trading systems, embedded devices and much of the software other programs run on. Modern C++ (C++11 and later) is a different experience from the old style: the standard library manages memory and collections for you, and you rarely write <code>new</code> or <code>delete</code>. These lessons use C++20. Every example is a whole program and shows exactly what it prints. To run one yourself, save it as <code>hello.cpp</code> and type <code>g++ -std=c++20 -o hello hello.cpp && ./hello</code>.",
+  "comment": "//",
+  "keywords": [
+    "int",
+    "double",
+    "char",
+    "bool",
+    "void",
+    "auto",
+    "const",
+    "return",
+    "if",
+    "else",
+    "for",
+    "while",
+    "include",
+    "class",
+    "struct",
+    "public",
+    "private",
+    "template",
+    "typename",
+    "using",
+    "namespace",
+    "new",
+    "delete",
+    "true",
+    "false",
+    "this",
+    "virtual",
+    "override"
+  ],
+  "builtins": [
+    "std",
+    "cout",
+    "string",
+    "vector",
+    "map",
+    "unique_ptr",
+    "make_unique",
+    "sort",
+    "main"
+  ],
+  "lessons": [
+    {
+      "id": "first",
+      "title": "Your first program",
+      "summary": "main, std::cout and the << operator.",
+      "sections": [
+        {
+          "p": "A C++ program starts in <code>main</code>. <code>#include &lt;iostream&gt;</code> brings in the input/output library, and <code>std::cout &lt;&lt; ...</code> sends values to the screen, one <code>&lt;&lt;</code> after another. Nothing ends the line unless you print <code>'\\n'</code>. <code>std::</code> says the name comes from the standard library.",
+          "code": "#include <iostream>\n\nint main() {\n    std::cout << \"Hello, squirrel!\\n\";\n    std::cout << \"Nuts: \" << 42 << '\\n';\n}",
+          "out": "Hello, squirrel!\nNuts: 42"
+        },
+        {
+          "h": "Strings",
+          "p": "<code>std::string</code> is a real text type that grows as needed. <code>+</code> joins strings, <code>size()</code> gives the length, and you can compare them with <code>==</code>.",
+          "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string name = \"Hazel\";\n    std::string greeting = \"Hi, \" + name + \"!\";\n    std::cout << greeting << ' ' << greeting.size() << '\\n';\n    std::cout << (name == \"Hazel\") << '\\n';\n}",
+          "out": "Hi, Hazel! 10\n1"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\n\nint main() {\n    std::cout << \"Up\" << \" the\" << \" tree\" << '\\n';\n}",
+          "options": [
+            "Up the tree",
+            "Upthetree",
+            "Up\nthe\ntree",
+            "\"Up\" \" the\" \" tree\""
+          ],
+          "answer": "Up the tree",
+          "why": "Each << adds the next piece right after the last one. The spaces are inside the strings.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\n\nint main() {\n    std::cout << 2 + 3 << '\\n';\n    std::cout << \"2 + 3\" << '\\n';\n}",
+          "options": ["5\n2 + 3", "5\n5", "2 + 3\n2 + 3", "23\n2 + 3"],
+          "answer": "5\n2 + 3",
+          "why": "2 + 3 outside quotes is arithmetic. Inside quotes it is just text.",
+          "kind": "output"
+        },
+        {
+          "q": "Why do lessons write std::cout and not just cout?",
+          "options": [
+            "cout lives in the std namespace",
+            "It is a different, faster cout",
+            "std means standard output",
+            "It is required on Windows only"
+          ],
+          "answer": "cout lives in the std namespace",
+          "why": "The standard library puts its names in namespace std so they don't clash with yours."
+        }
+      ]
+    },
+    {
+      "id": "values",
+      "title": "Types, auto and const",
+      "summary": "int, double, bool, integer division, auto and const.",
+      "sections": [
+        {
+          "p": "Every variable has a type that is fixed when it is declared. Dividing two <code>int</code>s drops the fraction; if either side is a <code>double</code>, you get a fractional answer. <code>auto</code> lets the compiler work the type out from the value. <code>bool</code> prints as 1 or 0 unless you ask for <code>std::boolalpha</code>.",
+          "code": "#include <iostream>\n\nint main() {\n    int nuts = 17;\n    int trees = 5;\n    double share = static_cast<double>(nuts) / trees;\n    auto ok = nuts > 10;\n    std::cout << nuts / trees << ' ' << nuts % trees << '\\n';\n    std::cout << share << '\\n';\n    std::cout << ok << ' ' << std::boolalpha << ok << '\\n';\n}",
+          "out": "3 2\n3.4\n1 true"
+        },
+        {
+          "h": "const",
+          "p": "<code>const</code> means a value cannot change after it is set; the compiler refuses any attempt. Make things <code>const</code> by default and you get fewer surprises. <code>constexpr</code> goes further and computes the value while compiling.",
+          "code": "#include <iostream>\n\nconstexpr int square(int n) { return n * n; }\n\nint main() {\n    const int days = 7;\n    constexpr int cells = square(8);\n    std::cout << days * 2 << ' ' << cells << '\\n';\n}",
+          "out": "14 64"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\n\nint main() {\n    std::cout << 9 / 2 << ' ' << 9.0 / 2 << '\\n';\n}",
+          "options": ["4 4.5", "4.5 4.5", "4 4", "5 4.5"],
+          "answer": "4 4.5",
+          "why": "9 / 2 divides two ints and drops the fraction. With 9.0 the arithmetic is done in double.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\n\nint main() {\n    bool b = 3 > 2;\n    std::cout << b << '\\n';\n}",
+          "options": ["1", "true", "3", "0"],
+          "answer": "1",
+          "why": "Without std::boolalpha, a bool prints as 1 for true and 0 for false.",
+          "kind": "output"
+        },
+        {
+          "q": "What type does auto x = 2.5; give x?",
+          "options": ["double", "int", "float", "auto"],
+          "answer": "double",
+          "why": "A literal with a decimal point is a double, so x is a double."
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "title": "Functions and references",
+      "summary": "Passing by value, by reference and by const reference.",
+      "sections": [
+        {
+          "p": "Arguments are <b>copied</b> by default, so a function cannot change the caller's variable. A <b>reference</b> parameter, written <code>int&amp;</code>, is another name for the caller's variable, so changes stick. For big values you only read, use <code>const T&amp;</code>: no copy, and no changes allowed.",
+          "code": "#include <iostream>\n#include <string>\n\nvoid bump_copy(int n) { n += 10; }\nvoid bump_ref(int& n) { n += 10; }\nstd::size_t letters(const std::string& s) { return s.size(); }\n\nint main() {\n    int stash = 1;\n    bump_copy(stash);\n    std::cout << stash << '\\n';\n    bump_ref(stash);\n    std::cout << stash << '\\n';\n    std::cout << letters(\"Pinecone\") << '\\n';\n}",
+          "out": "1\n11\n8"
+        },
+        {
+          "h": "Overloading",
+          "p": "Several functions can share a name if their parameter types differ. The compiler picks the one that matches the arguments.",
+          "code": "#include <iostream>\n#include <string>\n\nstd::string describe(int n) { return \"number \" + std::to_string(n); }\nstd::string describe(const std::string& s) { return \"text \" + s; }\n\nint main() {\n    std::cout << describe(3) << '\\n';\n    std::cout << describe(std::string(\"oak\")) << '\\n';\n}",
+          "out": "number 3\ntext oak"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\n\nvoid twice(int& x) { x *= 2; }\n\nint main() {\n    int n = 3;\n    twice(n);\n    twice(n);\n    std::cout << n << '\\n';\n}",
+          "options": ["12", "6", "3", "9"],
+          "answer": "12",
+          "why": "x is a reference to n, so each call doubles n itself: 3, 6, 12.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\n\nvoid reset(int x) { x = 0; }\n\nint main() {\n    int n = 5;\n    reset(n);\n    std::cout << n << '\\n';\n}",
+          "options": ["5", "0", "An error", "Nothing"],
+          "answer": "5",
+          "why": "x is a copy, so setting it to 0 doesn't touch n.",
+          "kind": "output"
+        },
+        {
+          "q": "Why pass a std::string as const std::string&?",
+          "options": [
+            "To avoid copying it while promising not to change it",
+            "So the function can change it",
+            "Because strings can't be copied",
+            "To make it a global"
+          ],
+          "answer": "To avoid copying it while promising not to change it",
+          "why": "A reference avoids the copy, and const keeps the caller's string safe."
+        }
+      ]
+    },
+    {
+      "id": "containers",
+      "title": "Vectors, maps and algorithms",
+      "summary": "std::vector, range-for, std::map and the <algorithm> header.",
+      "sections": [
+        {
+          "p": "<code>std::vector&lt;int&gt;</code> is a growable array: <code>push_back</code> adds to the end, <code>size()</code> counts, and <code>v[i]</code> reads by index from 0. A <b>range-for</b> loop, <code>for (int n : v)</code>, visits every element. <code>&lt;algorithm&gt;</code> and <code>&lt;numeric&gt;</code> have ready-made loops such as <code>std::sort</code> and <code>std::accumulate</code>.",
+          "code": "#include <algorithm>\n#include <iostream>\n#include <numeric>\n#include <vector>\n\nint main() {\n    std::vector<int> nuts = {30, 12, 5};\n    nuts.push_back(8);\n    std::sort(nuts.begin(), nuts.end());\n    for (int n : nuts) std::cout << n << ' ';\n    std::cout << '\\n';\n    std::cout << nuts.size() << ' ' << nuts[0] << ' '\n              << std::accumulate(nuts.begin(), nuts.end(), 0) << '\\n';\n}",
+          "out": "5 8 12 30 \n4 5 55"
+        },
+        {
+          "h": "Maps",
+          "p": "<code>std::map&lt;K, V&gt;</code> stores keys with values, <b>sorted by key</b>. <code>m[key]</code> reads or creates an entry (a new <code>int</code> starts at 0), and <code>contains</code> (C++20) checks without creating one. A range-for over a map gives key-value pairs, which <b>structured bindings</b> can unpack.",
+          "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> trees;\n    trees[\"oak\"] += 3;\n    trees[\"elm\"] += 1;\n    trees[\"oak\"] += 2;\n    for (const auto& [name, count] : trees)\n        std::cout << name << '=' << count << '\\n';\n    std::cout << trees.contains(\"ash\") << '\\n';\n}",
+          "out": "elm=1\noak=5\n0"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> v = {4, 5, 6};\n    v.push_back(7);\n    std::cout << v.size() << ' ' << v[1] << '\\n';\n}",
+          "options": ["4 5", "3 5", "4 4", "4 6"],
+          "answer": "4 5",
+          "why": "Adding 7 makes four elements, and index 1 is the second one, 5.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> m;\n    m[\"b\"] = 2;\n    m[\"a\"] = 1;\n    for (const auto& [k, v] : m) std::cout << k;\n    std::cout << '\\n';\n}",
+          "options": ["ab", "ba", "12", "a1b2"],
+          "answer": "ab",
+          "why": "std::map keeps its keys sorted, whatever order they were added in.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> v = {1, 2, 3};\n    for (int x : v) x *= 10;\n    std::cout << v[0] << '\\n';\n}",
+          "options": ["1", "10", "0", "An error"],
+          "answer": "1",
+          "why": "int x is a copy of each element. Write int& x to change the vector itself.",
+          "kind": "output"
+        }
+      ]
+    },
+    {
+      "id": "classes",
+      "title": "Classes and RAII",
+      "summary": "Members, constructors, destructors, and virtual functions.",
+      "sections": [
+        {
+          "p": "A <code>class</code> bundles data with the functions that work on it, and <code>private</code> members can only be touched by those functions. A <b>constructor</b> sets an object up; the <b>destructor</b> (<code>~Name</code>) runs automatically when the object goes out of scope. Tying cleanup to the destructor is called <b>RAII</b>, and it is how C++ manages files, locks and memory without forgetting to release them.",
+          "code": "#include <iostream>\n#include <string>\n\nclass Stash {\npublic:\n    explicit Stash(std::string owner) : owner_(std::move(owner)) {\n        std::cout << \"open \" << owner_ << '\\n';\n    }\n    ~Stash() { std::cout << \"close \" << owner_ << '\\n'; }\n    void add(int n) { nuts_ += n; }\n    int nuts() const { return nuts_; }\n\nprivate:\n    std::string owner_;\n    int nuts_ = 0;\n};\n\nint main() {\n    {\n        Stash s(\"Hazel\");\n        s.add(4);\n        std::cout << s.nuts() << '\\n';\n    }\n    std::cout << \"done\\n\";\n}",
+          "out": "open Hazel\n4\nclose Hazel\ndone"
+        },
+        {
+          "h": "Inheritance and virtual",
+          "p": "A class can inherit from another. Mark a function <code>virtual</code> in the base class and <code>override</code> in the derived one, and calls through a base reference reach the derived version.",
+          "code": "#include <iostream>\n#include <string>\n\nstruct Animal {\n    virtual ~Animal() = default;\n    virtual std::string sound() const { return \"...\"; }\n};\nstruct Squirrel : Animal {\n    std::string sound() const override { return \"chitter\"; }\n};\n\nvoid speak(const Animal& a) { std::cout << a.sound() << '\\n'; }\n\nint main() {\n    Squirrel s;\n    Animal a;\n    speak(s);\n    speak(a);\n}",
+          "out": "chitter\n..."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\n\nstruct Noisy {\n    ~Noisy() { std::cout << \"bye\\n\"; }\n};\n\nint main() {\n    std::cout << \"start\\n\";\n    {\n        Noisy n;\n        std::cout << \"inside\\n\";\n    }\n    std::cout << \"end\\n\";\n}",
+          "options": [
+            "start\ninside\nbye\nend",
+            "start\ninside\nend\nbye",
+            "start\nbye\ninside\nend",
+            "start\ninside\nend"
+          ],
+          "answer": "start\ninside\nbye\nend",
+          "why": "n is destroyed at the closing brace of its block, before end is printed.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\n\nstruct Base {\n    virtual int id() const { return 1; }\n};\nstruct Child : Base {\n    int id() const override { return 2; }\n};\n\nint main() {\n    Child c;\n    const Base& b = c;\n    std::cout << b.id() << '\\n';\n}",
+          "options": ["2", "1", "12", "An error"],
+          "answer": "2",
+          "why": "id is virtual, so the call through a Base reference reaches Child's version.",
+          "kind": "output"
+        },
+        {
+          "q": "What does RAII mean in practice?",
+          "options": [
+            "Cleanup happens in destructors, automatically at the end of scope",
+            "All memory is garbage collected",
+            "Every class must be abstract",
+            "Objects can only be created with new"
+          ],
+          "answer": "Cleanup happens in destructors, automatically at the end of scope",
+          "why": "Resource Acquisition Is Initialisation: an object owns its resource and its destructor releases it."
+        }
+      ]
+    },
+    {
+      "id": "modern",
+      "title": "Templates and smart pointers",
+      "summary": "Generic functions, unique_ptr and lambdas.",
+      "sections": [
+        {
+          "p": "A <b>template</b> is code with a type left open: the compiler writes a version for each type you use. The standard containers are templates, which is why you write <code>std::vector&lt;int&gt;</code>.",
+          "code": "#include <iostream>\n#include <string>\n\ntemplate <typename T>\nT biggest(T a, T b) {\n    return a > b ? a : b;\n}\n\nint main() {\n    std::cout << biggest(3, 9) << '\\n';\n    std::cout << biggest(2.5, 1.5) << '\\n';\n    std::cout << biggest(std::string(\"oak\"), std::string(\"elm\")) << '\\n';\n}",
+          "out": "9\n2.5\noak"
+        },
+        {
+          "h": "Smart pointers and lambdas",
+          "p": "When you do need an object on the heap, hold it in a <code>std::unique_ptr</code>: it deletes the object when it goes out of scope, so you never call <code>delete</code> yourself. A <b>lambda</b>, <code>[capture](params) { body }</code>, is a small unnamed function, often passed to algorithms; the capture list says which outside variables it may use.",
+          "code": "#include <algorithm>\n#include <iostream>\n#include <memory>\n#include <vector>\n\nstruct Tree {\n    int nuts;\n};\n\nint main() {\n    auto t = std::make_unique<Tree>(Tree{12});\n    t->nuts += 3;\n    std::cout << t->nuts << '\\n';\n\n    std::vector<int> v = {5, 12, 30, 8};\n    int limit = 10;\n    auto big = std::count_if(v.begin(), v.end(), [limit](int n) { return n > limit; });\n    std::cout << big << '\\n';\n}",
+          "out": "15\n2"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\n\ntemplate <typename T>\nT twice(T x) { return x + x; }\n\nint main() {\n    std::cout << twice(4) << ' ' << twice(1.5) << '\\n';\n}",
+          "options": ["8 3", "8 3.0", "44 1.51.5", "8 2"],
+          "answer": "8 3",
+          "why": "The template makes an int version and a double version. 1.5 + 1.5 is 3, which prints as 3.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\n\nint main() {\n    int base = 10;\n    auto add = [base](int n) { return base + n; };\n    base = 100;\n    std::cout << add(1) << '\\n';\n}",
+          "options": ["11", "101", "1", "An error"],
+          "answer": "11",
+          "why": "[base] captures a copy of base when the lambda is made, so changing base afterwards has no effect. [&base] would capture by reference.",
+          "kind": "output"
+        },
+        {
+          "q": "Why prefer std::unique_ptr over new and delete?",
+          "options": [
+            "It deletes the object automatically, so nothing leaks",
+            "It makes the object faster",
+            "It allows many owners at once",
+            "It stores the object on the stack"
+          ],
+          "answer": "It deletes the object automatically, so nothing leaks",
+          "why": "unique_ptr owns the object and frees it in its destructor. std::shared_ptr is the one for shared ownership."
+        }
+      ]
+    },
+    {
+      "id": "strings",
+      "title": "Strings and formatting",
+      "summary": "std::string, string_view and std::format.",
+      "sections": [
+        {
+          "p": "<code>std::string</code> owns its characters and grows as needed, so the C worries about sizes and zero bytes go away. It knows its <code>size()</code>, joins with <code>+</code>, compares with <code>==</code>, and has members such as <code>find</code> (which returns <code>std::string::npos</code> when nothing is found) and <code>substr</code>.",
+          "code": "#include <iostream>\n#include <string>\nint main() {\n    std::string tree = \"hazel\";\n    std::string label = tree + \"nut\";\n    std::cout << label << \" has \" << label.size() << \" letters\\n\";\n    std::cout << std::boolalpha << (tree == \"hazel\") << \"\\n\";\n    auto at = label.find(\"nut\");\n    std::cout << \"nut starts at \" << at << \": \" << label.substr(0, at) << \"\\n\";\n    if (label.find(\"oak\") == std::string::npos) {\n        std::cout << \"no oak\\n\";\n    }\n    return 0;\n}",
+          "out": "hazelnut has 8 letters\ntrue\nnut starts at 5: hazel\nno oak"
+        },
+        {
+          "h": "std::string_view",
+          "p": "A <code>std::string_view</code> is a cheap window onto characters that live somewhere else: a pointer and a length, nothing copied. It is the usual parameter type for a function that only reads text, because a <code>std::string</code>, a literal or part of either can be passed without making a copy. The one rule is that the characters must outlive the view.",
+          "code": "#include <iostream>\n#include <string>\n#include <string_view>\nint count_vowels(std::string_view text) {\n    int n = 0;\n    for (char c : text) {\n        if (std::string_view(\"aeiou\").find(c) != std::string_view::npos) {\n            n++;\n        }\n    }\n    return n;\n}\nint main() {\n    std::string owned = \"sycamore\";\n    std::cout << count_vowels(owned) << \"\\n\";\n    std::cout << count_vowels(\"beech\") << \"\\n\";\n    std::string_view first_four(owned.data(), 4);\n    std::cout << first_four << \" \" << count_vowels(first_four) << \"\\n\";\n    return 0;\n}",
+          "out": "3\n2\nsyca 1"
+        },
+        {
+          "h": "std::format",
+          "p": "C++20's <code>std::format</code> builds a string from a pattern, like Python's f-strings. Each <code>{}</code> is replaced by the next argument; inside the braces <code>:&gt;6</code> right-aligns in 6 columns, <code>:&lt;8</code> left-aligns, and <code>:.2f</code> gives two decimals. Unlike <code>printf</code>, it checks the types when it compiles.",
+          "code": "#include <format>\n#include <iostream>\nint main() {\n    std::cout << std::format(\"{} found {} nuts\\n\", \"Sam\", 42);\n    std::cout << std::format(\"[{:<8}] [{:>6}]\\n\", \"oak\", 17);\n    std::cout << std::format(\"{:.2f} kg each\\n\", 0.0333 * 3);\n    std::cout << std::format(\"{0} and {0} again\\n\", \"echo\");\n    return 0;\n}",
+          "out": "Sam found 42 nuts\n[oak     ] [    17]\n0.10 kg each\necho and echo again"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\n#include <string>\nint main() {\n    std::string s = \"acorn\";\n    s += \"s\";\n    std::cout << s.size() << \" \" << s.substr(1, 3) << \"\\n\";\n    return 0;\n}",
+          "options": ["6 cor", "5 cor", "6 aco", "6 corn"],
+          "answer": "6 cor",
+          "why": "Adding \"s\" makes 6 letters. substr(1, 3) takes 3 characters starting at index 1.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "#include <format>\n#include <iostream>\nint main() {\n    std::cout << std::format(\"|{:>4}|{:<4}|\", 7, 8) << \"\\n\";\n    return 0;\n}",
+          "options": ["|   7|8   |", "|7   |   8|", "|7|8|", "|   7|   8|"],
+          "answer": "|   7|8   |",
+          "why": "> pads on the left so the value sits on the right; < does the opposite.",
+          "kind": "output"
+        },
+        {
+          "q": "Why is std::string_view a good parameter type for a function that only reads text?",
+          "options": [
+            "Strings and literals can be passed without copying",
+            "It can change the caller's string",
+            "It adds a zero byte at the end",
+            "It is the only type std::format accepts"
+          ],
+          "answer": "Strings and literals can be passed without copying",
+          "why": "A view is just a pointer and a length to characters stored elsewhere."
+        }
+      ]
+    },
+    {
+      "id": "errors",
+      "title": "Errors: exceptions and std::optional",
+      "summary": "Reporting failure, and cleaning up when it happens.",
+      "sections": [
+        {
+          "p": "When a function cannot do its job, it can <code>throw</code> an exception. The function stops at once, and so does every caller, until a <code>try</code> block with a matching <code>catch</code> is found. The standard library's exceptions derive from <code>std::exception</code>, and <code>what()</code> returns the message. <code>std::stoi</code>, which turns text into an <code>int</code>, throws <code>std::invalid_argument</code> when the text is not a number.",
+          "code": "#include <iostream>\n#include <stdexcept>\n#include <string>\nint take(int stored, int wanted) {\n    if (wanted > stored) {\n        throw std::runtime_error(\"only \" + std::to_string(stored) + \" nuts left\");\n    }\n    return stored - wanted;\n}\nint main() {\n    try {\n        int left = take(10, 4);\n        std::cout << \"left: \" << left << \"\\n\";\n        left = take(left, 9);\n        std::cout << \"never printed\\n\";\n    } catch (const std::exception& e) {\n        std::cout << \"error: \" << e.what() << \"\\n\";\n    }\n    try {\n        std::stoi(\"twelve\");\n    } catch (const std::invalid_argument&) {\n        std::cout << \"not a number\\n\";\n    }\n    return 0;\n}",
+          "out": "left: 6\nerror: only 6 nuts left\nnot a number"
+        },
+        {
+          "h": "Cleanup happens anyway",
+          "p": "When an exception passes through a function, every local object in it is destroyed, so its destructor runs. This is why RAII (from the classes lesson) matters: a file, a lock or memory owned by an object is released however the function ends, with no <code>finally</code> needed.",
+          "code": "#include <iostream>\n#include <stdexcept>\nstruct Guard {\n    const char* name;\n    explicit Guard(const char* n) : name(n) { std::cout << \"open \" << name << \"\\n\"; }\n    ~Guard() { std::cout << \"close \" << name << \"\\n\"; }\n};\nvoid work() {\n    Guard g(\"store\");\n    throw std::runtime_error(\"squirrel startled\");\n}\nint main() {\n    try {\n        work();\n    } catch (const std::exception& e) {\n        std::cout << \"caught: \" << e.what() << \"\\n\";\n    }\n    return 0;\n}",
+          "out": "open store\nclose store\ncaught: squirrel startled"
+        },
+        {
+          "h": "std::optional for answers that may be missing",
+          "p": "Not finding something is often normal, not exceptional. <code>std::optional&lt;T&gt;</code> holds either a <code>T</code> or nothing (<code>std::nullopt</code>). Test it like a bool, read it with <code>*</code>, or use <code>value_or</code> to supply a default.",
+          "code": "#include <iostream>\n#include <map>\n#include <optional>\n#include <string>\nstd::optional<int> nuts_in(const std::map<std::string, int>& stores, const std::string& tree) {\n    auto it = stores.find(tree);\n    if (it == stores.end()) {\n        return std::nullopt;\n    }\n    return it->second;\n}\nint main() {\n    std::map<std::string, int> stores = {{\"oak\", 12}, {\"beech\", 7}};\n    if (auto n = nuts_in(stores, \"oak\")) {\n        std::cout << \"oak: \" << *n << \"\\n\";\n    }\n    std::cout << \"pine: \" << nuts_in(stores, \"pine\").value_or(0) << \"\\n\";\n    return 0;\n}",
+          "out": "oak: 12\npine: 0"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\n#include <stdexcept>\nint main() {\n    try {\n        std::cout << \"a\";\n        throw std::runtime_error(\"b\");\n        std::cout << \"c\";\n    } catch (const std::exception& e) {\n        std::cout << e.what();\n    }\n    std::cout << \"d\\n\";\n    return 0;\n}",
+          "options": ["abd", "abcd", "acd", "ab"],
+          "answer": "abd",
+          "why": "throw jumps straight to the catch, skipping \"c\"; the program then carries on after the try block.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\n#include <optional>\nint main() {\n    std::optional<int> a = 5;\n    std::optional<int> b;\n    std::cout << a.value_or(0) + b.value_or(10) << \"\\n\";\n    return 0;\n}",
+          "options": ["15", "5", "10", "0"],
+          "answer": "15",
+          "why": "a holds 5; b is empty, so value_or gives 10.",
+          "kind": "output"
+        },
+        {
+          "q": "Why don't C++ programs need a finally block to release resources?",
+          "options": [
+            "Destructors of local objects run when an exception passes through",
+            "Exceptions never leave a function",
+            "The operating system frees everything immediately",
+            "catch blocks free memory automatically"
+          ],
+          "answer": "Destructors of local objects run when an exception passes through",
+          "why": "With RAII, owning a resource in an object guarantees it is released however the scope ends."
+        }
+      ]
+    },
+    {
+      "id": "operators",
+      "title": "Value types and operators",
+      "summary": "Making your own types behave like built-in ones.",
+      "sections": [
+        {
+          "p": "You can define what <code>+</code>, <code>==</code> or <code>&lt;&lt;</code> mean for your own types. A small type that holds a value, such as an amount of money or a point, then reads as naturally as an <code>int</code>. Overload operators only where the meaning is obvious; a <code>+</code> that does something surprising makes code harder to read.",
+          "code": "#include <iostream>\nstruct Stash {\n    int acorns = 0;\n    int hazelnuts = 0;\n};\nStash operator+(Stash a, Stash b) {\n    return {a.acorns + b.acorns, a.hazelnuts + b.hazelnuts};\n}\nstd::ostream& operator<<(std::ostream& out, const Stash& s) {\n    return out << s.acorns << \" acorns, \" << s.hazelnuts << \" hazelnuts\";\n}\nint main() {\n    Stash monday{3, 1};\n    Stash tuesday{2, 4};\n    std::cout << monday + tuesday << \"\\n\";\n    return 0;\n}",
+          "out": "5 acorns, 5 hazelnuts"
+        },
+        {
+          "h": "Comparisons for free",
+          "p": "C++20 can write comparisons for you. Declaring <code>operator==</code> and <code>operator&lt;=&gt;</code> (the \"spaceship\") as <code>= default</code> compares the members in order, and from those the compiler provides <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code> and <code>&gt;=</code>. Sorting a vector of such values then needs no extra code.",
+          "code": "#include <algorithm>\n#include <compare>\n#include <iostream>\n#include <vector>\nstruct Version {\n    int major = 0;\n    int minor = 0;\n    bool operator==(const Version&) const = default;\n    auto operator<=>(const Version&) const = default;\n};\nint main() {\n    std::vector<Version> v = {{1, 10}, {1, 2}, {0, 9}, {2, 0}};\n    std::sort(v.begin(), v.end());\n    for (const auto& x : v) {\n        std::cout << x.major << \".\" << x.minor << \" \";\n    }\n    std::cout << \"\\n\" << std::boolalpha << (Version{1, 2} < Version{1, 10}) << \"\\n\";\n    return 0;\n}",
+          "out": "0.9 1.2 1.10 2.0 \ntrue"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\nstruct Point {\n    int x, y;\n};\nPoint operator*(Point p, int k) {\n    return {p.x * k, p.y * k};\n}\nint main() {\n    Point p = Point{2, 3} * 4;\n    std::cout << p.x << \",\" << p.y << \"\\n\";\n    return 0;\n}",
+          "options": ["8,12", "2,3", "6,7", "24"],
+          "answer": "8,12",
+          "why": "The operator multiplies each member by k.",
+          "kind": "output"
+        },
+        {
+          "q": "What does = default on operator<=> do?",
+          "options": [
+            "Compares the members one by one, in the order they are declared",
+            "Makes every comparison return true",
+            "Compares the objects' addresses",
+            "Deletes the comparison operators"
+          ],
+          "answer": "Compares the members one by one, in the order they are declared",
+          "why": "The first member that differs decides; that is why 1.2 comes before 1.10 here."
+        },
+        {
+          "q": "Why does operator<< return the std::ostream&?",
+          "options": [
+            "So that calls can be chained: cout << a << b",
+            "To print a newline",
+            "Because operators must return references",
+            "To close the stream"
+          ],
+          "answer": "So that calls can be chained: cout << a << b",
+          "why": "cout << a returns cout, and the next << is applied to it."
+        }
+      ]
+    },
+    {
+      "id": "lambdas",
+      "title": "Lambdas and algorithms",
+      "summary": "Small functions written in place, and the algorithms that use them.",
+      "sections": [
+        {
+          "p": "A <b>lambda</b> is a function written where it is used: <code>[](int n) { return n * 2; }</code>. The square brackets list what it <b>captures</b> from around it: <code>[limit]</code> copies <code>limit</code> in, <code>[&amp;total]</code> uses <code>total</code> by reference so the lambda can change it. Lambdas are how you tell standard algorithms what to do.",
+          "code": "#include <algorithm>\n#include <iostream>\n#include <vector>\nint main() {\n    std::vector<int> nuts = {5, 12, 3, 8, 15};\n    int limit = 7;\n    auto big = std::count_if(nuts.begin(), nuts.end(), [limit](int n) { return n > limit; });\n    std::cout << big << \" days above \" << limit << \"\\n\";\n    int total = 0;\n    std::for_each(nuts.begin(), nuts.end(), [&total](int n) { total += n; });\n    std::cout << \"total \" << total << \"\\n\";\n    std::sort(nuts.begin(), nuts.end(), [](int a, int b) { return a > b; });\n    std::cout << \"largest first: \" << nuts[0] << \" \" << nuts[1] << \"\\n\";\n    return 0;\n}",
+          "out": "3 days above 7\ntotal 43\nlargest first: 15 12"
+        },
+        {
+          "h": "Ranges and views",
+          "p": "C++20 ranges let algorithms take a whole container instead of a begin/end pair: <code>std::ranges::sort(v)</code>. <b>Views</b> describe a lazy pipeline joined with <code>|</code>: <code>filter</code> keeps some elements and <code>transform</code> changes each one. Nothing is copied; the work happens as you loop over the result.",
+          "code": "#include <algorithm>\n#include <iostream>\n#include <ranges>\n#include <string>\n#include <vector>\nint main() {\n    std::vector<std::string> trees = {\"oak\", \"beech\", \"fir\", \"hazel\", \"yew\"};\n    std::ranges::sort(trees);\n    for (const auto& t : trees) {\n        std::cout << t << \" \";\n    }\n    std::cout << \"\\n\";\n    auto long_names = trees\n        | std::views::filter([](const std::string& t) { return t.size() > 3; })\n        | std::views::transform([](const std::string& t) { return t.size(); });\n    for (auto n : long_names) {\n        std::cout << n << \" \";\n    }\n    std::cout << \"\\n\";\n    return 0;\n}",
+          "out": "beech fir hazel oak yew \n5 5 "
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\nint main() {\n    int count = 0;\n    auto add = [&count](int n) { count += n; };\n    add(3);\n    add(4);\n    std::cout << count << \"\\n\";\n    return 0;\n}",
+          "options": ["7", "0", "4", "3"],
+          "answer": "7",
+          "why": "[&count] captures by reference, so the lambda changes the real count.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\nint main() {\n    int x = 1;\n    auto f = [x]() { return x * 10; };\n    x = 5;\n    std::cout << f() << \"\\n\";\n    return 0;\n}",
+          "options": ["10", "50", "1", "5"],
+          "answer": "10",
+          "why": "[x] copies x when the lambda is created, while it is still 1.",
+          "kind": "output"
+        },
+        {
+          "q": "What does std::views::filter do?",
+          "options": [
+            "Gives a lazy view of only the elements that pass a test",
+            "Removes elements from the vector",
+            "Sorts the elements",
+            "Copies matching elements into a new vector"
+          ],
+          "answer": "Gives a lazy view of only the elements that pass a test",
+          "why": "Views don't change or copy the container; they decide what you see as you iterate."
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Project: counting words",
+      "summary": "Strings, maps, lambdas and formatting in one program.",
+      "sections": [
+        {
+          "p": "This program counts how often each word appears in a short text, ignoring case and punctuation, and prints the most common ones in a table. It reads words with a <code>std::istringstream</code>, cleans each one, counts with a <code>std::map</code>, copies the pairs into a vector, sorts them with a lambda (most frequent first, then alphabetically), and prints with <code>std::format</code>.",
+          "code": "#include <algorithm>\n#include <cctype>\n#include <format>\n#include <iostream>\n#include <map>\n#include <sstream>\n#include <string>\n#include <utility>\n#include <vector>\nstd::string clean(const std::string& word) {\n    std::string out;\n    for (unsigned char c : word) {\n        if (std::isalpha(c)) {\n            out += static_cast<char>(std::tolower(c));\n        }\n    }\n    return out;\n}\nint main() {\n    std::string text =\n        \"The squirrel hid a nut. Then the squirrel forgot the nut, \"\n        \"and the nut became a tree. The tree grew nuts.\";\n    std::map<std::string, int> counts;\n    std::istringstream in(text);\n    std::string word;\n    int total = 0;\n    while (in >> word) {\n        std::string w = clean(word);\n        if (!w.empty()) {\n            counts[w]++;\n            total++;\n        }\n    }\n    std::vector<std::pair<std::string, int>> rows(counts.begin(), counts.end());\n    std::sort(rows.begin(), rows.end(), [](const auto& a, const auto& b) {\n        if (a.second != b.second) {\n            return a.second > b.second;\n        }\n        return a.first < b.first;\n    });\n    std::cout << std::format(\"{} words, {} different\\n\", total, counts.size());\n    for (std::size_t i = 0; i < 4 && i < rows.size(); i++) {\n        std::cout << std::format(\"{:<9}{:>2}\\n\", rows[i].first, rows[i].second);\n    }\n    return 0;\n}",
+          "out": "21 words, 12 different\nthe       5\nnut       3\na         2\nsquirrel  2"
+        },
+        {
+          "h": "Ideas to try",
+          "p": "Skip short words such as \"a\" and \"the\" with a set of stop words, or read the text from a file with <code>std::ifstream</code>. If you need the order of first appearance rather than alphabetical ties, record the position where each word was first seen."
+        }
+      ],
+      "practice": [
+        {
+          "q": "Why copy the map's pairs into a vector before sorting?",
+          "options": [
+            "A std::map always keeps its keys in order, so it cannot be re-sorted by count",
+            "Maps cannot be looped over",
+            "std::sort is faster on maps",
+            "To remove duplicate words"
+          ],
+          "answer": "A std::map always keeps its keys in order, so it cannot be re-sorted by count",
+          "why": "The map's order is fixed by its keys; a vector can be put in any order."
+        },
+        {
+          "q": "What does this print?",
+          "code": "#include <iostream>\n#include <map>\n#include <string>\nint main() {\n    std::map<std::string, int> m;\n    m[\"nut\"]++;\n    m[\"nut\"]++;\n    m[\"oak\"]++;\n    std::cout << m.size() << \" \" << m[\"nut\"] << \"\\n\";\n    return 0;\n}",
+          "options": ["2 2", "3 2", "2 1", "1 2"],
+          "answer": "2 2",
+          "why": "m[\"nut\"] creates the entry with 0 the first time, then ++ counts; there are two different keys.",
+          "kind": "output"
+        },
+        {
+          "q": "What does in >> word do with an std::istringstream?",
+          "options": [
+            "Reads the next word, skipping spaces",
+            "Reads the next line",
+            "Reads one character",
+            "Reads the rest of the text"
+          ],
+          "answer": "Reads the next word, skipping spaces",
+          "why": ">> into a std::string stops at whitespace, and the loop ends when no words are left."
+        }
+      ]
+    }
+  ]
+}
