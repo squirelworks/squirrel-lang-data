@@ -6,7 +6,7 @@
 {"sentence": "name-ravi", "t": [["ᐊᑎᕋ", "atira", "i+name"], ["ᕋᕕ", "Ravi", "ravi"]], "end": "."}
 {"sentence": "name-sami", "t": [["ᐊᑎᕋ", "atira", "i+name"], ["ᓵᒥ", "Sami", "sami"]], "end": "."}
 {"sentence": "name-wang-ming", "t": [["ᐊᑎᕋ", "atira", "i+name"], ["ᕙᐊᙵ ᒥᖕ", "Wang Ming", "wang-ming"]], "end": "."}
-{"sentence": "your-name", "t": [["ᐊᑎᖓ", "atinga", "name"], ["ᓱᓇ", "suna", "what"], ["?", "?", "@question"]], "implied": ["you"], "end": "."}
+{"sentence": "your-name", "t": [["ᐊᑎᖓ", "atinga", "name"], ["ᓱᓇ", "suna", "what"]], "implied": ["you"], "end": "?"}
 {"sentence": "hello", "t": [["ᐊᐃ", "ai", "hello"]], "end": "."}
 {"sentence": "nice-to-meet-you", "t": [["ᖁᕕᐊᓱᒃᑯᑦ", "quviasukkut", "nice-to-meet-you"]], "end": "."}
 {"sentence": "good-morning", "t": [["ᐅᓪᓛᒃᑯᑦ", "ullaakkut", "good+morning"]], "end": "."}
@@ -27,7 +27,7 @@
 {"sentence": "love-you", "t": [["ᓇᒡᓕᒋᕙᒋᑦ", "nagligivagit", "love+you"]], "implied": ["i"], "end": "."}
 {"sentence": "met-friend", "t": [["ᐃᑉᐸᒃᓴᖅ", "ippaksaq", "yesterday"], ["ᐱᖃᑎᒃ", "piqatik", "friend"], ["ᑕᑯᓚᐅᖅᑐᖓ", "takulauqtunga", "meet+@past"]], "implied": ["i"], "end": "."}
 {"sentence": "my-friend", "t": [["ᐅᓇ", "una", "he"], ["ᐱᖃᑎᖓ", "piqatinga", "i+friend"]], "end": "."}
-{"sentence": "who-is-he", "t": [["ᑭᓇᐅᓇ", "kinauna", "who"], ["?", "?", "@question"]], "implied": ["he"], "end": "."}
+{"sentence": "who-is-he", "t": [["ᑭᓇᐅᓇ", "kinauna", "who"]], "implied": ["he"], "end": "?"}
 {"sentence": "where-live", "t": [["ᓇᓂ", "nani", "where"], ["ᓄᓇᖃᕐᕕᑦ", "nunaqaravit", "live"]], "implied": ["you"], "end": "."}
 {"sentence": "from-egypt", "t": [["ᐃᒡᐱᑎᒥᑦ", "Igjiptimit", "from+egypt"]], "implied": ["i"], "end": "."}
 {"sentence": "we-are-klingons", "t": [["ᑭᓚᐅᖑᓐᓄᑦ", "Klingonnut", "klingon+we"]], "implied": ["we"], "end": "."}
@@ -47,8 +47,8 @@
 {"sentence": "weather-good", "t": [["ᐅᓪᓗᒥ", "ullumi", "today"], ["ᓯᓚ", "sila", "weather"], ["ᐊᑲᐅᔪᖅ", "akaujuq", "good"]], "end": "."}
 {"sentence": "raining", "t": [["ᓯᓚᓗᑦᑐᖅ", "silaluttuq", "rain"]], "end": "."}
 {"sentence": "monday", "t": [["ᐅᓪᓗᒥ", "ullumi", "today"], ["ᒫᓐᑖᐃ", "mantai", "monday"]], "end": "."}
-{"sentence": "what-time", "t": [["ᓇᒨᔭᐅᕋ", "namuajara", "time"], ["ᓱᓇ", "suna", "what"], ["?", "?", "@question"]], "end": "."}
-{"sentence": "what-time-now", "t": [["ᒫᓇᓇ", "maanna", "now"], ["ᓇᒨᔭᐅᕋ", "namuajara", "time"], ["ᓱᓇ", "suna", "what"], ["?", "?", "@question"]], "end": "."}
+{"sentence": "what-time", "t": [["ᓇᒨᔭᐅᕋ", "namuajara", "time"], ["ᓱᓇ", "suna", "what"]], "end": "?"}
+{"sentence": "what-time-now", "t": [["ᒫᓇᓇ", "maanna", "now"], ["ᓇᒨᔭᐅᕋ", "namuajara", "time"], ["ᓱᓇ", "suna", "what"]], "end": "?"}
 {"sentence": "no-time", "t": [["ᓇᒨᔭᐅᕋ", "namuajara", "time"], ["ᐱᓐᓇᖅᑎᒻᒥᔪᖅ", "pinnaqtimmiuq", "none"]], "end": "."}
 {"sentence": "there-is-cat", "t": [["ᐱᖅᓯᖅ", "piqsiq", "cat"], ["ᐅᔭᖅ", "ujjuaq", "exist"]], "end": "."}
 {"sentence": "have-cat", "t": [["ᐱᖅᓯᖅ", "piqsiq", "cat"], ["ᐱᖅᓯᖃᖅᑐᖓ", "piqsiqaqtunga", "have"]], "implied": ["i"], "end": "."}
@@ -62,12 +62,12 @@
 {"sentence": "give-water", "t": [["ᐋᔅᓱᐃ", "aassui", "please"], ["ᐃᒥᖅ", "imiq", "water"], ["ᑐᓂᔪᖓ", "tunijunga", "give"]], "implied": ["i"], "end": "."}
 {"sentence": "wait-moment", "t": [["ᐋᔅᓱᐃ", "aassui", "please"], ["ᐃᓯᕛᑦ", "isivit", "wait+moment"]], "end": "."}
 {"sentence": "sit-down", "t": [["ᐋᔅᓱᐃ", "aassui", "please"], ["ᐃᖕᐃᑦ", "ingiq", "sit"]], "end": "."}
-{"sentence": "where-station", "t": [["ᓇᓂ", "nani", "where"], ["ᓴᑎᓲᓇ", "satituuna", "station"], ["?", "?", "@question"]], "end": "."}
-{"sentence": "where-toilet", "t": [["ᓇᓂ", "nani", "where"], ["ᐊᖅᓱᓂᒃᕕᒃ", "aqsanikvik", "toilet"], ["?", "?", "@question"]], "end": "."}
-{"sentence": "where-hotel", "t": [["ᓇᓂ", "nani", "where"], ["ᑎᓪᓚᐅᕋᖅ", "tillaraaq", "hotel"], ["?", "?", "@question"]], "end": "."}
-{"sentence": "how-much-this", "t": [["ᐅᓇ", "una", "this"], ["ᐊᕕᐊᖅ", "aviaq", "how-much"], ["?", "?", "@question"]], "end": "."}
-{"sentence": "how-much-is-it", "t": [["ᐊᕕᐊᖅ", "aviaq", "how-much"], ["?", "?", "@question"]], "end": "."}
-{"sentence": "how-much-cost", "t": [["ᐊᕕᐊᖅ", "aviaq", "how-much"], ["ᐊᖅᖢᑎ", "aquti", "cost"], ["?", "?", "@question"]], "end": "."}
+{"sentence": "where-station", "t": [["ᓇᓂ", "nani", "where"], ["ᓴᑎᓲᓇ", "satituuna", "station"]], "end": "?"}
+{"sentence": "where-toilet", "t": [["ᓇᓂ", "nani", "where"], ["ᐊᖅᓱᓂᒃᕕᒃ", "aqsanikvik", "toilet"]], "end": "?"}
+{"sentence": "where-hotel", "t": [["ᓇᓂ", "nani", "where"], ["ᑎᓪᓚᐅᕋᖅ", "tillaraaq", "hotel"]], "end": "?"}
+{"sentence": "how-much-this", "t": [["ᐅᓇ", "una", "this"], ["ᐊᕕᐊᖅ", "aviaq", "how-much"]], "end": "?"}
+{"sentence": "how-much-is-it", "t": [["ᐊᕕᐊᖅ", "aviaq", "how-much"]], "end": "?"}
+{"sentence": "how-much-cost", "t": [["ᐊᕕᐊᖅ", "aviaq", "how-much"], ["ᐊᖅᖢᑎ", "aquti", "cost"]], "end": "?"}
 {"sentence": "bill-please", "t": [["ᐋᔅᓱᐃ", "aassui", "please"], ["ᐊᕕᐊᖅ", "aviaq", "bill"]], "end": "."}
 {"sentence": "go-school", "t": [["ᐃᓕᓐᓂᐊᕕᒃᒥ", "ilinniarvimmi", "school+@place"], ["ᐊᓱᒍᑎᕐᔪᖓ", "asugutirjunga", "go"]], "implied": ["i"], "end": "."}
 {"sentence": "bus-school", "t": [["ᐱᐊᔅᒃᒧᑦ", "biaskmut", "bus+@means"], ["ᐃᓕᓐᓂᐊᕕᒃᒥ", "ilinniarvimmi", "school+@place"], ["ᐊᓱᒍᑎᕐᔪᖓ", "asugutirjunga", "go"]], "implied": ["i"], "end": "."}
