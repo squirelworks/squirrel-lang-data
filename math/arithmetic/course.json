@@ -1,11 +1,14 @@
 {
-  "intro": "Arithmetic is the craft of working with numbers: how they are written, how the four operations combine them, and how fractions, decimals and percentages describe parts of a whole. These lessons build from place value through ratios, with enough practice that each idea stands on its own. Use pencil and paper; calculators are optional after you can do the steps by hand.",
+  "schema": "math-course@1",
+  "id": "arithmetic",
   "name": "Arithmetic",
   "title": "Arithmetic foundations",
+  "intro": "Arithmetic is the craft of working with numbers: how they are written, how the four operations combine them, and how fractions, decimals and percentages describe parts of a whole. These lessons build from place value through ratios, with enough practice that each idea stands on its own. Use pencil and paper; calculators are optional after you can do the steps by hand.",
   "lessons": [
     {
       "id": "place-value",
       "title": "Place value",
+      "summary": "Ones, tens, hundreds and how a digit’s place changes its value.",
       "sections": [
         {
           "p": "In the base-ten system, each digit’s value depends on its place. Moving one place left multiplies by 10; moving one place right divides by 10."
@@ -24,7 +27,6 @@
           "p": "To compare two numbers of the same length, compare digits from the left. The first place that differs decides which is larger. Extra leading zeros do not change the value: 0042 = 42."
         }
       ],
-      "summary": "Ones, tens, hundreds and how a digit’s place changes its value.",
       "practice": [
         {
           "why": "The 7 sits in the hundreds place, so it contributes 7 × 100 = 700.",
@@ -72,6 +74,7 @@
     {
       "id": "addition-subtraction",
       "title": "Addition and subtraction",
+      "summary": "Combining and taking away, with regrouping (carrying and borrowing).",
       "sections": [
         {
           "p": "<b>Addition</b> combines quantities. <b>Subtraction</b> finds how much is left or how far apart two numbers are. Addition and subtraction undo each other: if a + b = c, then c − b = a."
@@ -91,7 +94,6 @@
           "p": "Check subtraction by adding the difference back to the subtrahend. Check addition by estimating: 278 + 156 is near 280 + 160 = 440."
         }
       ],
-      "summary": "Combining and taking away, with regrouping (carrying and borrowing).",
       "practice": [
         {
           "why": "7+8=15 write 5 carry 1; 4+3+1=8.",
@@ -134,6 +136,7 @@
     {
       "id": "multiplication",
       "title": "Multiplication",
+      "summary": "Repeated addition, the times table and multi-digit products.",
       "sections": [
         {
           "p": "Multiplication <b>a × b</b> means b groups of a (or a groups of b). It is repeated addition: 4 × 3 = 4 + 4 + 4 = 12."
@@ -152,7 +155,6 @@
           "p": "×10 appends a zero to a whole number; ×100 appends two zeros. 45 × 100 = 4500."
         }
       ],
-      "summary": "Repeated addition, the times table and multi-digit products.",
       "practice": [
         {
           "why": "Standard times-table fact.",
@@ -201,6 +203,7 @@
     {
       "id": "division",
       "title": "Division",
+      "summary": "Sharing into equal groups, quotients and remainders.",
       "sections": [
         {
           "p": "Division asks how many equal groups, or how large each group is. <b>a ÷ b</b> (or a/b) is the number of times b fits into a. If it does not fit evenly, there is a <b>remainder</b>."
@@ -219,7 +222,6 @@
           "p": "If a ÷ b = q with no remainder, then b × q = a. Division by zero is undefined: there is no number q with 0 × q = a when a ≠ 0, and every q works when a = 0."
         }
       ],
-      "summary": "Sharing into equal groups, quotients and remainders.",
       "practice": [
         {
           "why": "7 × 8 = 56.",
@@ -262,6 +264,7 @@
     {
       "id": "fractions",
       "title": "Fractions",
+      "summary": "Parts of a whole: equivalent fractions, comparing, add and multiply.",
       "sections": [
         {
           "p": "A fraction <b>a/b</b> (b ≠ 0) means a equal parts when the whole is split into b equal parts. The top number is the <b>numerator</b>; the bottom is the <b>denominator</b>."
@@ -281,7 +284,6 @@
           "code": "1/4 + 1/6 = 3/12 + 2/12 = 5/12\n(2/3)×(3/5) = 6/15 = 2/5"
         }
       ],
-      "summary": "Parts of a whole: equivalent fractions, comparing, add and multiply.",
       "practice": [
         {
           "why": "Multiply top and bottom of 1/2 by 3.",
@@ -330,6 +332,7 @@
     {
       "id": "decimals",
       "title": "Decimals",
+      "summary": "Tenths and hundredths, linking decimals to fractions and place value.",
       "sections": [
         {
           "p": "Digits after the decimal point are tenths, hundredths, thousandths, … So 0.35 = 3/10 + 5/100 = 35/100 = 7/20."
@@ -352,7 +355,6 @@
           "p": "You may move the decimal in divisor and dividend the same number of places to make the divisor a whole number, then divide."
         }
       ],
-      "summary": "Tenths and hundredths, linking decimals to fractions and place value.",
       "practice": [
         {
           "why": "One digit after the point means tenths.",
@@ -395,6 +397,7 @@
     {
       "id": "percentages",
       "title": "Percentages",
+      "summary": "Per hundred: converting among percents, fractions and decimals.",
       "sections": [
         {
           "p": "<b>Percent</b> means “per hundred”. 25% = 25/100 = 0.25. Percents are a convenient language for discounts, tax and test scores."
@@ -413,7 +416,6 @@
           "p": "Increase of p% means multiply by (1 + p/100). Decrease of p% means multiply by (1 − p/100). A 20% off sale on $50 costs 0.8×50 = $40."
         }
       ],
-      "summary": "Per hundred: converting among percents, fractions and decimals.",
       "practice": [
         {
           "why": "Divide by 100.",
@@ -462,6 +464,7 @@
     {
       "id": "order-of-operations",
       "title": "Order of operations",
+      "summary": "Parentheses, exponents, multiply/divide, then add/subtract.",
       "sections": [
         {
           "p": "When an expression mixes operations, evaluate in a fixed order so everyone gets the same answer. A common mnemonic is <b>PEMDAS</b> / <b>BODMAS</b>: parentheses (brackets) first, then exponents (orders), then multiplication and division left to right, then addition and subtraction left to right."
@@ -479,7 +482,6 @@
           "p": "Without a shared order, 3 + 4 × 2 could mean 14 or 11. The rule is a convention, but it is the convention used in algebra and calculators (scientific mode)."
         }
       ],
-      "summary": "Parentheses, exponents, multiply/divide, then add/subtract.",
       "practice": [
         {
           "why": "Multiply first: 4×2=8, then 3+8.",
@@ -527,6 +529,7 @@
     {
       "id": "integers",
       "title": "Integers",
+      "summary": "Negative numbers, absolute value and signed arithmetic.",
       "sections": [
         {
           "p": "Integers are …, −2, −1, 0, 1, 2, … Negatives sit to the left of zero on the number line. Temperature below zero, debt and elevation below sea level all use negatives."
@@ -549,7 +552,6 @@
           "p": "Same signs → positive product/quotient. Different signs → negative. (−2)×(−3)=6; (−2)×3=−6."
         }
       ],
-      "summary": "Negative numbers, absolute value and signed arithmetic.",
       "practice": [
         {
           "why": "Absolute value is distance from zero.",
@@ -598,6 +600,7 @@
     {
       "id": "ratios",
       "title": "Ratios and rates",
+      "summary": "Comparing quantities by division; proportions and unit rates.",
       "sections": [
         {
           "p": "A <b>ratio</b> a:b (or a/b) compares two quantities of the same kind. A <b>rate</b> compares different kinds (km per hour, price per kg). A <b>unit rate</b> has a denominator of 1."
@@ -616,7 +619,6 @@
           "p": "If 3 apples cost $1.50, the unit price is $1.50 ÷ 3 = $0.50 per apple. Unit rates make comparisons easy."
         }
       ],
-      "summary": "Comparing quantities by division; proportions and unit rates.",
       "practice": [
         {
           "why": "Divide both parts by 4.",
@@ -656,7 +658,5 @@
         }
       ]
     }
-  ],
-  "id": "arithmetic",
-  "schema": "math-course@1"
+  ]
 }

@@ -1,11 +1,14 @@
 {
-  "intro": "Linear algebra studies vectors, matrices and linear maps — the language of systems of equations, computer graphics, data and much of advanced maths. These lessons build intuition for vectors and matrices, solving Ax = b, determinants, eigenvalues and what a linear transformation does to space. Comfort with high-school algebra is enough to begin.",
+  "schema": "math-course@1",
+  "id": "linear-algebra",
   "name": "Linear algebra",
   "title": "Linear algebra essentials",
+  "intro": "Linear algebra studies vectors, matrices and linear maps — the language of systems of equations, computer graphics, data and much of advanced maths. These lessons build intuition for vectors and matrices, solving Ax = b, determinants, eigenvalues and what a linear transformation does to space. Comfort with high-school algebra is enough to begin.",
   "lessons": [
     {
       "id": "vectors",
       "title": "Vectors",
+      "summary": "Arrows and lists of numbers; addition and scalar multiplication.",
       "sections": [
         {
           "p": "A <b>vector</b> in the plane or space can be drawn as an arrow and written as a column (or row) of components. In R², v = ⟨v₁, v₂⟩. Two vectors are equal when corresponding components match; position of the arrow can slide (free vector)."
@@ -25,7 +28,6 @@
           "code": "⟨1, 2⟩ · ⟨2, −1⟩ = 2 − 2 = 0  → perpendicular"
         }
       ],
-      "summary": "Arrows and lists of numbers; addition and scalar multiplication.",
       "practice": [
         {
           "why": "Componentwise sum.",
@@ -68,6 +70,7 @@
     {
       "id": "matrices",
       "title": "Matrices",
+      "summary": "Rectangular arrays; addition, scalar mult and matrix–vector products.",
       "sections": [
         {
           "p": "An <b>m × n matrix</b> has m rows and n columns. Entry a<sub>ij</sub> sits in row i, column j. Matrices store linear data: coefficients of systems, pixel grids, or the action of a linear map."
@@ -87,7 +90,6 @@
           "code": "[1 2; 0 1][0 1; 1 0] = [2 1; 1 0]\n(other order differs)"
         }
       ],
-      "summary": "Rectangular arrays; addition, scalar mult and matrix–vector products.",
       "practice": [
         {
           "why": "m×n → n columns.",
@@ -146,6 +148,7 @@
     {
       "id": "systems-axb",
       "title": "Systems Ax = b",
+      "summary": "Linear systems as matrix equations; row reduction idea.",
       "sections": [
         {
           "p": "The system 2x + y = 5, x − y = 1 is Ax = b with A = [2 1; 1 −1], x = ⟨x,y⟩, b = ⟨5,1⟩. Solving the system means finding x (if any) mapped by A to b."
@@ -164,7 +167,6 @@
           "p": "Ax = b is solvable iff b lies in the <b>column space</b> (span of columns of A). The span of vectors is all their linear combinations."
         }
       ],
-      "summary": "Linear systems as matrix equations; row reduction idea.",
       "practice": [
         {
           "why": "Check: 4+1=5; 2−1=1.",
@@ -227,6 +229,7 @@
     {
       "id": "determinants",
       "title": "Determinants",
+      "summary": "A number that detects invertibility and signed volume scaling.",
       "sections": [
         {
           "p": "For a square matrix A, the <b>determinant</b> det(A) is a scalar. Among other roles: A is invertible iff det(A) ≠ 0; |det(A)| is the factor by which A scales areas (2D) or volumes (3D)."
@@ -244,7 +247,6 @@
           "p": "det(AB) = det(A) det(B). So det(A⁻¹) = 1/det(A) when A is invertible."
         }
       ],
-      "summary": "A number that detects invertibility and signed volume scaling.",
       "practice": [
         {
           "why": "ad−bc=6−0.",
@@ -298,6 +300,7 @@
     {
       "id": "eigenvalues",
       "title": "Eigenvalues intuition",
+      "summary": "Directions that matrices only stretch; Av = λv.",
       "sections": [
         {
           "p": "A nonzero vector v is an <b>eigenvector</b> of A if Av = λv for some scalar λ (the <b>eigenvalue</b>). A stretches or flips along that line without rotating it off the line."
@@ -316,7 +319,6 @@
           "p": "For 2×2, eigenvalues satisfy λ₁+λ₂ = trace(A) and λ₁λ₂ = det(A)."
         }
       ],
-      "summary": "Directions that matrices only stretch; Av = λv.",
       "practice": [
         {
           "why": "Definition.",
@@ -359,6 +361,7 @@
     {
       "id": "linear-maps",
       "title": "Linear maps",
+      "summary": "Functions that preserve addition and scaling; matrices represent them.",
       "sections": [
         {
           "p": "A map T: Rⁿ → Rᵐ is <b>linear</b> when T(u+v) = T(u)+T(v) and T(cv) = c T(v). Equivalently T(0)=0 and T preserves all linear combinations. Every such map is multiplication by some matrix A: T(x) = Ax."
@@ -377,7 +380,6 @@
           "p": "Doing S then T is matrix product (matrices for the maps, in the appropriate order). This is why AB ≠ BA can matter geometrically: rotate-then-reflect ≠ reflect-then-rotate in general."
         }
       ],
-      "summary": "Functions that preserve addition and scaling; matrices represent them.",
       "practice": [
         {
           "why": "T(0)=T(0+0)=T(0)+T(0).",
@@ -436,6 +438,7 @@
     {
       "id": "independence-basis",
       "title": "Independence, basis and dimension",
+      "summary": "When vectors are redundant; coordinate systems that fit a subspace.",
       "sections": [
         {
           "p": "Vectors v₁,…,vₖ are <b>linearly dependent</b> if some nontrivial combination gives 0 (one is redundant). They are <b>independent</b> if c₁v₁+…+cₖvₖ = 0 forces all cᵢ = 0."
@@ -453,7 +456,6 @@
           "p": "Columns of A are independent iff Ax = 0 has only the zero solution iff (for square A) det(A) ≠ 0."
         }
       ],
-      "summary": "When vectors are redundant; coordinate systems that fit a subspace.",
       "practice": [
         {
           "why": "Definition of independence.",
@@ -511,6 +513,7 @@
     {
       "id": "geometry-maps",
       "title": "Geometry of maps in the plane",
+      "summary": "Stretch, shear, rotate, reflect — reading a 2×2 matrix.",
       "sections": [
         {
           "p": "A 2×2 matrix is determined by where e₁ and e₂ go: those images become the columns. Watching the unit square helps you see area change (|det|) and orientation (sign of det)."
@@ -528,7 +531,6 @@
           "p": "Matrices with AᵀA = I represent rotations/reflections: they preserve lengths and angles. Columns are orthonormal."
         }
       ],
-      "summary": "Stretch, shear, rotate, reflect — reading a 2×2 matrix.",
       "practice": [
         {
           "why": "Ae₁, Ae₂.",
@@ -583,7 +585,5 @@
         }
       ]
     }
-  ],
-  "id": "linear-algebra",
-  "schema": "math-course@1"
+  ]
 }

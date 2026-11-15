@@ -1,11 +1,14 @@
 {
-  "intro": "Topology studies shapes up to continuous deformation — stretching and bending without tearing or gluing. These lessons build intuition for open and closed sets, continuity, homeomorphisms, connectedness and compactness, with examples on the real line and the circle. The tone is conceptual: enough precision to be honest, without a full axiomatic course.",
+  "schema": "math-course@1",
+  "id": "topology",
   "name": "Topology",
   "title": "Topology intuition",
+  "intro": "Topology studies shapes up to continuous deformation — stretching and bending without tearing or gluing. These lessons build intuition for open and closed sets, continuity, homeomorphisms, connectedness and compactness, with examples on the real line and the circle. The tone is conceptual: enough precision to be honest, without a full axiomatic course.",
   "lessons": [
     {
       "id": "open-closed",
       "title": "Open and closed sets",
+      "summary": "Neighbourhoods on the line; interiors, boundaries and complements.",
       "sections": [
         {
           "p": "On the real line R, an <b>open interval</b> (a,b) does not include its endpoints. A set U ⊆ R is <b>open</b> if every point of U has some open interval around it still inside U. Open sets are unions of open intervals."
@@ -24,7 +27,6 @@
           "p": "In R (usual topology), ∅ and R are both open and closed (“clopen”). That is allowed by the definitions."
         }
       ],
-      "summary": "Neighbourhoods on the line; interiors, boundaries and complements.",
       "practice": [
         {
           "why": "Open interval; every point has a subinterval inside.",
@@ -72,6 +74,7 @@
     {
       "id": "continuity",
       "title": "Continuity",
+      "summary": "No jumps: ε–δ idea and preimages of open sets.",
       "sections": [
         {
           "p": "A function f: R → R is <b>continuous at a</b> if values f(x) stay close to f(a) whenever x is close to a. Formally: for every ε > 0 there is δ > 0 so that |x−a| < δ implies |f(x)−f(a)| < ε."
@@ -90,7 +93,6 @@
           "p": "Composition of continuous maps is continuous. Limits and continuity match when the limit equals the function value."
         }
       ],
-      "summary": "No jumps: ε–δ idea and preimages of open sets.",
       "practice": [
         {
           "why": "ε–δ idea.",
@@ -159,6 +161,7 @@
     {
       "id": "homeomorphism",
       "title": "Homeomorphism idea",
+      "summary": "Continuous bijections with continuous inverse — “same shape” topologically.",
       "sections": [
         {
           "p": "A <b>homeomorphism</b> is a continuous bijection f: X → Y whose inverse is also continuous. If one exists, X and Y are <b>homeomorphic</b>: topologically the same for the purposes of continuous deformation."
@@ -177,7 +180,6 @@
           "p": "Properties preserved by homeomorphism are <b>topological invariants</b>: connectedness, compactness, “number of pieces,” presence of a hole (informally). If an invariant differs, spaces are not homeomorphic."
         }
       ],
-      "summary": "Continuous bijections with continuous inverse — “same shape” topologically.",
       "practice": [
         {
           "why": "Definition.",
@@ -235,6 +237,7 @@
     {
       "id": "connectedness",
       "title": "Connectedness",
+      "summary": "One piece versus many; intervals on R.",
       "sections": [
         {
           "p": "A space is <b>connected</b> if it is not the union of two disjoint nonempty open (in the subspace) sets that cover it — informally, it comes in one piece. On R, the connected subsets are exactly the intervals (including rays, points, R itself)."
@@ -253,7 +256,6 @@
           "p": "Stronger notion: any two points joined by a continuous path. Open disks in R² are path-connected. Path-connected ⇒ connected; converse can fail in exotic spaces, but for open sets in Rⁿ they agree."
         }
       ],
-      "summary": "One piece versus many; intervals on R.",
       "practice": [
         {
           "why": "Classification on the line.",
@@ -301,6 +303,7 @@
     {
       "id": "compactness",
       "title": "Compactness intuition",
+      "summary": "Closed and bounded in Rⁿ; open covers and finite subcovers.",
       "sections": [
         {
           "p": "Compactness is a finiteness property for infinite spaces. In Rⁿ with the usual metric, Heine–Borel says: a set is <b>compact</b> iff it is closed and bounded. So [0,1] is compact; (0,1) is not (not closed); Z is not (not bounded)."
@@ -319,7 +322,6 @@
           "p": "Continuous image of a compact set is compact. Continuous f: [a,b] → R attains max and min (Extreme Value Theorem). Compact + Hausdorff ⇒ closed."
         }
       ],
-      "summary": "Closed and bounded in Rⁿ; open covers and finite subcovers.",
       "practice": [
         {
           "why": "Heine–Borel.",
@@ -383,6 +385,7 @@
     {
       "id": "circle",
       "title": "The circle",
+      "summary": "S¹ as a compact connected space; loops and cutting points.",
       "sections": [
         {
           "p": "The circle S¹ = {(x,y): x² + y² = 1} (or R/Z, angles mod 2π) is the simplest space with a hole. It is compact, connected and path-connected."
@@ -400,7 +403,6 @@
           "p": "Continuous f: S¹ → R must attain max/min and cannot be bijective onto R (compact image in R is closed and bounded). Continuous f: S¹ → S¹ can be classified up to homotopy by degree (winding)."
         }
       ],
-      "summary": "S¹ as a compact connected space; loops and cutting points.",
       "practice": [
         {
           "why": "Closed bounded in R²; one piece.",
@@ -453,6 +455,7 @@
     {
       "id": "examples-r",
       "title": "More examples on R",
+      "summary": "Subspaces, relative topology and quick classification drills.",
       "sections": [
         {
           "p": "A subset A ⊆ R inherits a <b>subspace topology</b>: opens in A are intersections of opens in R with A. So (0,1] is open as a subset of (0,1]? — actually (0,1] is open in itself as a whole space, but as a subset of R it is neither open nor closed. Context matters."
@@ -471,7 +474,6 @@
           "p": "Topology tracks qualitative shape: pieces, holes, boundaries and finiteness of covers — not exact distances. Once those words feel natural on R and S¹, the same vocabulary applies to surfaces, knots and data-shape ideas later."
         }
       ],
-      "summary": "Subspaces, relative topology and quick classification drills.",
       "practice": [
         {
           "why": "Subspace topology.",
@@ -531,7 +533,5 @@
         }
       ]
     }
-  ],
-  "id": "topology",
-  "schema": "math-course@1"
+  ]
 }

@@ -1,11 +1,14 @@
 {
-  "intro": "Calculus studies change and accumulation. Limits make precise what happens as you zoom in; derivatives measure instantaneous rate of change; integrals add up infinitely many small pieces. These lessons build intuition and the core rules — product, chain, and the Fundamental Theorem — with simple techniques for everyday problems. Algebra fluency with functions and graphs is assumed.",
+  "schema": "math-course@1",
+  "id": "calculus",
   "name": "Calculus",
   "title": "Calculus intuition",
+  "intro": "Calculus studies change and accumulation. Limits make precise what happens as you zoom in; derivatives measure instantaneous rate of change; integrals add up infinitely many small pieces. These lessons build intuition and the core rules — product, chain, and the Fundamental Theorem — with simple techniques for everyday problems. Algebra fluency with functions and graphs is assumed.",
   "lessons": [
     {
       "id": "limits",
       "title": "Limits intuition",
+      "summary": "What value a function approaches as the input approaches a point.",
       "sections": [
         {
           "p": "The limit lim<sub>x→a</sub> f(x) = L means: as x gets arbitrarily close to a (from either side, in the two-sided limit), f(x) gets arbitrarily close to L. The function need not equal L at a — or even be defined there."
@@ -24,7 +27,6 @@
           "p": "lim<sub>x→∞</sub> 1/x = 0: values approach 0 as x grows without bound. Vertical asymptotes often mean a limit is infinite (grows without bound), which is a useful description even though ∞ is not a real number."
         }
       ],
-      "summary": "What value a function approaches as the input approaches a point.",
       "practice": [
         {
           "why": "Simplifies to x+1 → 2.",
@@ -77,6 +79,7 @@
     {
       "id": "derivative-idea",
       "title": "The derivative idea",
+      "summary": "Instantaneous rate of change as a limit of slopes.",
       "sections": [
         {
           "p": "Average rate of change of f from a to a+h is [f(a+h) − f(a)] / h — the slope of a secant. The <b>derivative</b> f′(a) is the limit of that quotient as h → 0: slope of the tangent line, when the limit exists."
@@ -95,7 +98,6 @@
           "p": "If f is position (meters) and x is time (seconds), f′ is velocity (m/s). If f is cost and x is items, f′ is marginal cost."
         }
       ],
-      "summary": "Instantaneous rate of change as a limit of slopes.",
       "practice": [
         {
           "why": "Two points on the curve.",
@@ -149,6 +151,7 @@
     {
       "id": "basic-rules",
       "title": "Basic differentiation rules",
+      "summary": "Power, constant, sum and constant-multiple rules.",
       "sections": [
         {
           "p": "Once you trust the limit definition, shortcuts save time. These rules hold on intervals where the functions are differentiable."
@@ -166,7 +169,6 @@
           "p": "(eˣ)′ = eˣ. (ln x)′ = 1/x for x > 0. These are the natural pair for growth and accumulation."
         }
       ],
-      "summary": "Power, constant, sum and constant-multiple rules.",
       "practice": [
         {
           "why": "Power rule.",
@@ -209,6 +211,7 @@
     {
       "id": "product-chain",
       "title": "Product and chain rules",
+      "summary": "Differentiating products and compositions.",
       "sections": [
         {
           "p": "Products and nested functions need their own rules. The product rule is not “derivative of each times each” alone — there is a cross of terms."
@@ -228,7 +231,6 @@
           "code": "y = (3x+1)⁵\ndy/dx = 5(3x+1)⁴ · 3 = 15(3x+1)⁴\n\ny = sin(x²) → cos(x²)·2x"
         }
       ],
-      "summary": "Differentiating products and compositions.",
       "practice": [
         {
           "why": "Product rule.",
@@ -277,6 +279,7 @@
     {
       "id": "applications",
       "title": "Applications of derivatives",
+      "summary": "Tangents, motion, related rates sketch and max/min.",
       "sections": [
         {
           "p": "Derivatives answer “how fast?” and “which way is the graph bending?” They also locate candidates for maximum and minimum values."
@@ -299,7 +302,6 @@
           "p": "Express the quantity to optimize as a function of one variable, find critical points, compare values. Example: maximize area for fixed fence length."
         }
       ],
-      "summary": "Tangents, motion, related rates sketch and max/min.",
       "practice": [
         {
           "why": "Definition.",
@@ -347,6 +349,7 @@
     {
       "id": "integrals-area",
       "title": "Integrals as area",
+      "summary": "Riemann sums and the definite integral as net signed area.",
       "sections": [
         {
           "p": "To approximate the area under y = f(x) from x = a to x = b, slice [a,b] into n strips, form rectangles of height f(at a sample point) and width Δx, and add. As n → ∞ and Δx → 0, the sum approaches the <b>definite integral</b> ∫<sub>a</sub><sup>b</sup> f(x) dx when f is nice enough."
@@ -364,7 +367,6 @@
           "p": "Under y = 1 from 0 to 2: area 2. Under y = x from 0 to 2: triangle area (1/2)×2×2 = 2. Under y = x² the exact value needs antiderivatives (next lessons)."
         }
       ],
-      "summary": "Riemann sums and the definite integral as net signed area.",
       "practice": [
         {
           "why": "Classic construction.",
@@ -423,6 +425,7 @@
     {
       "id": "ftc",
       "title": "Fundamental Theorem intuition",
+      "summary": "Derivatives and integrals undo each other.",
       "sections": [
         {
           "p": "The <b>Fundamental Theorem of Calculus (FTC)</b> links the two halves of calculus. If F′ = f, then ∫<sub>a</sub><sup>b</sup> f(x) dx = F(b) − F(a). Accumulation from a to b is the net change of an antiderivative."
@@ -441,7 +444,6 @@
           "p": "∫ f(x) dx = F(x) + C denotes the family of antiderivatives. The +C matters until limits fix the constant."
         }
       ],
-      "summary": "Derivatives and integrals undo each other.",
       "practice": [
         {
           "why": "FTC evaluation.",
@@ -489,6 +491,7 @@
     {
       "id": "techniques",
       "title": "Simple integration techniques",
+      "summary": "Power rule reverse, substitution hint and splitting sums.",
       "sections": [
         {
           "p": "Many integrals reduce to reversing differentiation rules. Start with linearity and the power rule; use substitution when a chain-rule pattern appears."
@@ -508,7 +511,6 @@
           "code": "∫ 2x cos(x²) dx\nu = x², du = 2x dx\n→ sin(x²) + C"
         }
       ],
-      "summary": "Power rule reverse, substitution hint and splitting sums.",
       "practice": [
         {
           "why": "Power rule reverse.",
@@ -559,7 +561,5 @@
         }
       ]
     }
-  ],
-  "id": "calculus",
-  "schema": "math-course@1"
+  ]
 }

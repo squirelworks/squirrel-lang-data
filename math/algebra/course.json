@@ -1,11 +1,14 @@
 {
-  "intro": "Algebra replaces unknown or changing numbers with letters and builds rules for rewriting expressions and solving equations. These lessons go from simplifying expressions through linear equations, inequalities, systems, polynomials, factoring and quadratics. Each lesson stands alone, but earlier arithmetic ideas (fractions, signed numbers, order of operations) are assumed.",
+  "schema": "math-course@1",
+  "id": "algebra",
   "name": "Algebra",
   "title": "Algebra essentials",
+  "intro": "Algebra replaces unknown or changing numbers with letters and builds rules for rewriting expressions and solving equations. These lessons go from simplifying expressions through linear equations, inequalities, systems, polynomials, factoring and quadratics. Each lesson stands alone, but earlier arithmetic ideas (fractions, signed numbers, order of operations) are assumed.",
   "lessons": [
     {
       "id": "expressions",
       "title": "Expressions and variables",
+      "summary": "Letters for numbers; combining like terms and the distributive property.",
       "sections": [
         {
           "p": "A <b>variable</b> is a symbol (often x) that stands for a number. An <b>expression</b> combines numbers, variables and operations: 3x + 2. It has no equals sign yet — it is a recipe for a value once x is known."
@@ -25,7 +28,6 @@
           "code": "3(x + 4) = 3x + 12\n2(3x − 1) + 5 = 6x − 2 + 5 = 6x + 3"
         }
       ],
-      "summary": "Letters for numbers; combining like terms and the distributive property.",
       "practice": [
         {
           "why": "2×5 − 3 = 10 − 3 = 7.",
@@ -68,6 +70,7 @@
     {
       "id": "linear-equations",
       "title": "Solving linear equations",
+      "summary": "Isolate the variable with inverse operations.",
       "sections": [
         {
           "p": "A <b>linear equation</b> in one variable has the form ax + b = c (after simplifying). Solving means finding the number that makes both sides equal."
@@ -87,7 +90,6 @@
           "p": "Substitute the answer back into the original equation. Both sides should match."
         }
       ],
-      "summary": "Isolate the variable with inverse operations.",
       "practice": [
         {
           "why": "3x=12; x=4.",
@@ -141,6 +143,7 @@
     {
       "id": "inequalities",
       "title": "Inequalities",
+      "summary": "Greater/less than; when multiplying by a negative flips the sign.",
       "sections": [
         {
           "p": "An inequality compares two expressions with <, >, ≤ or ≥. Solutions are often intervals on the number line, not a single point."
@@ -159,7 +162,6 @@
           "p": "Open circle for < or >; filled circle for ≤ or ≥. Shade the side that satisfies the inequality."
         }
       ],
-      "summary": "Greater/less than; when multiplying by a negative flips the sign.",
       "practice": [
         {
           "why": "Subtract 3 from both sides.",
@@ -207,6 +209,7 @@
     {
       "id": "linear-functions",
       "title": "Linear functions",
+      "summary": "Slope-intercept form y = mx + b and graphs of lines.",
       "sections": [
         {
           "p": "A <b>linear function</b> has constant rate of change. In slope-intercept form, <b>y = mx + b</b>: m is the <b>slope</b> (rise/run), b is the <b>y-intercept</b> (where the line meets the y-axis)."
@@ -225,7 +228,6 @@
           "p": "y = 3 is horizontal (slope 0). x = 2 is vertical (undefined slope) and is not a function of x in the y = f(x) sense."
         }
       ],
-      "summary": "Slope-intercept form y = mx + b and graphs of lines.",
       "practice": [
         {
           "why": "m is the coefficient of x.",
@@ -279,6 +281,7 @@
     {
       "id": "systems",
       "title": "Systems of linear equations",
+      "summary": "Two equations, two unknowns: graphing, substitution and elimination.",
       "sections": [
         {
           "p": "A <b>system</b> asks for values that satisfy two (or more) equations at once. Geometrically, two lines may meet at one point (unique solution), be parallel (none) or coincide (infinitely many)."
@@ -298,7 +301,6 @@
           "p": "If you reach 0 = 5, the system is inconsistent (parallel lines). If you reach 0 = 0, the equations are dependent (same line)."
         }
       ],
-      "summary": "Two equations, two unknowns: graphing, substitution and elimination.",
       "practice": [
         {
           "why": "x+(2x+1)=7 → x=2.",
@@ -351,6 +353,7 @@
     {
       "id": "polynomials",
       "title": "Polynomials",
+      "summary": "Degree, adding and multiplying polynomials.",
       "sections": [
         {
           "p": "A <b>polynomial</b> in x is a sum of terms aₙxⁿ + … + a₁x + a₀ with nonnegative integer powers. The <b>degree</b> is the highest power with nonzero coefficient. Linear degree 1; quadratic degree 2; cubic degree 3."
@@ -370,7 +373,6 @@
           "code": "(x + 2)(x + 3) = x² + 3x + 2x + 6 = x² + 5x + 6\n(x + 2)(x − 2) = x² − 4"
         }
       ],
-      "summary": "Degree, adding and multiplying polynomials.",
       "practice": [
         {
           "why": "Highest power is 3.",
@@ -419,6 +421,7 @@
     {
       "id": "factoring",
       "title": "Factoring",
+      "summary": "Greatest common factor, trinomials and difference of squares.",
       "sections": [
         {
           "p": "Factoring rewrites a polynomial as a product. It undoes expansion and is the main tool for solving many polynomial equations."
@@ -443,7 +446,6 @@
           "p": "If AB = 0, then A = 0 or B = 0. So after factoring, set each factor to zero."
         }
       ],
-      "summary": "Greatest common factor, trinomials and difference of squares.",
       "practice": [
         {
           "why": "GCF is 3x.",
@@ -486,6 +488,7 @@
     {
       "id": "quadratics",
       "title": "Quadratic equations",
+      "summary": "ax² + bx + c = 0 via factoring, square roots and the quadratic formula.",
       "sections": [
         {
           "p": "A <b>quadratic equation</b> has the form ax² + bx + c = 0 with a ≠ 0. The graph of y = ax² + bx + c is a parabola; solutions are x-intercepts when they are real."
@@ -505,7 +508,6 @@
           "code": "x² − 5x + 6 = 0\nD = 25 − 24 = 1\nx = (5 ± 1)/2 → 3 or 2"
         }
       ],
-      "summary": "ax² + bx + c = 0 via factoring, square roots and the quadratic formula.",
       "practice": [
         {
           "why": "(x−2)(x−3)=0.",
@@ -559,6 +561,7 @@
     {
       "id": "word-problems",
       "title": "From words to equations",
+      "summary": "Translate phrases into algebra and solve simple models.",
       "sections": [
         {
           "p": "Word problems become equations when you name the unknown, translate English into operations and write a relation that must hold. Units and a quick check for reasonableness matter as much as the algebra."
@@ -577,7 +580,6 @@
           "p": "A price after 20% discount is $48. Original p satisfies 0.8p = 48 → p = 60."
         }
       ],
-      "summary": "Translate phrases into algebra and solve simple models.",
       "practice": [
         {
           "why": "Start from x, subtract 5.",
@@ -617,7 +619,5 @@
         }
       ]
     }
-  ],
-  "id": "algebra",
-  "schema": "math-course@1"
+  ]
 }

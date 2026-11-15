@@ -1,11 +1,14 @@
 {
-  "intro": "Trigonometry studies relationships between angles and side lengths. It starts with right triangles, then extends the same ratios to any angle through the unit circle and graphs of sine, cosine and tangent. These lessons also introduce basic identities and how to solve triangles when some sides or angles are known.",
+  "schema": "math-course@1",
+  "id": "trigonometry",
   "name": "Trigonometry",
   "title": "Trigonometry",
+  "intro": "Trigonometry studies relationships between angles and side lengths. It starts with right triangles, then extends the same ratios to any angle through the unit circle and graphs of sine, cosine and tangent. These lessons also introduce basic identities and how to solve triangles when some sides or angles are known.",
   "lessons": [
     {
       "id": "angles",
       "title": "Angles and measure",
+      "summary": "Degrees, radians and coterminal angles.",
       "sections": [
         {
           "p": "An <b>angle</b> is formed by two rays sharing a vertex. In standard position on the coordinate plane, the initial side lies on the positive x-axis; positive angles rotate counterclockwise."
@@ -24,7 +27,6 @@
           "p": "The acute angle between the terminal side and the x-axis. It helps evaluate trig functions of angles outside the first quadrant."
         }
       ],
-      "summary": "Degrees, radians and coterminal angles.",
       "practice": [
         {
           "why": "Quarter turn of 2π.",
@@ -67,6 +69,7 @@
     {
       "id": "right-triangles",
       "title": "Right-triangle trig",
+      "summary": "SOH-CAH-TOA: sine, cosine, tangent of acute angles.",
       "sections": [
         {
           "p": "In a right triangle, for an acute angle θ: opposite side faces θ; adjacent is next to θ (not the hypotenuse); hypotenuse is the longest side (opposite the right angle)."
@@ -86,7 +89,6 @@
           "p": "If you know one acute angle and one side, pick the ratio that links the known side to the unknown and solve."
         }
       ],
-      "summary": "SOH-CAH-TOA: sine, cosine, tangent of acute angles.",
       "practice": [
         {
           "why": "SOH.",
@@ -135,6 +137,7 @@
     {
       "id": "unit-circle",
       "title": "The unit circle",
+      "summary": "Extending sine and cosine to any angle via a circle of radius 1.",
       "sections": [
         {
           "p": "The <b>unit circle</b> is x² + y² = 1. For angle θ in standard position, the terminal ray meets the circle at (cos θ, sin θ). That defines sine and cosine for all real θ, not only acute angles."
@@ -152,7 +155,6 @@
           "p": "Because the point lies on the circle: cos²θ + sin²θ = 1 for all θ."
         }
       ],
-      "summary": "Extending sine and cosine to any angle via a circle of radius 1.",
       "practice": [
         {
           "why": "Point is (cos θ, sin θ).",
@@ -195,6 +197,7 @@
     {
       "id": "sine-cosine-graphs",
       "title": "Sine and cosine graphs",
+      "summary": "Amplitude, period, shifts of y = A sin(Bx − C) + D.",
       "sections": [
         {
           "p": "y = sin x oscillates between −1 and 1 with period 2π, starting at 0. y = cos x is the same wave shifted left by π/2 (starts at 1)."
@@ -213,7 +216,6 @@
           "p": "cos x = sin(x + π/2). Same shape; different starting point on a cycle."
         }
       ],
-      "summary": "Amplitude, period, shifts of y = A sin(Bx − C) + D.",
       "practice": [
         {
           "why": "|A|=3.",
@@ -262,6 +264,7 @@
     {
       "id": "tangent-graph",
       "title": "Tangent and its graph",
+      "summary": "tan θ = sin θ/cos θ; period π and vertical asymptotes.",
       "sections": [
         {
           "p": "tan θ = sin θ / cos θ wherever cos θ ≠ 0. On the unit circle that is where x ≠ 0, i.e. θ ≠ π/2 + πk."
@@ -279,7 +282,6 @@
           "p": "tan(−θ) = −tan θ. The graph is rotationally symmetric about the origin."
         }
       ],
-      "summary": "tan θ = sin θ/cos θ; period π and vertical asymptotes.",
       "practice": [
         {
           "why": "Definition.",
@@ -322,6 +324,7 @@
     {
       "id": "identities",
       "title": "Identities introduction",
+      "summary": "Pythagorean and reciprocal identities; simple rewrites.",
       "sections": [
         {
           "p": "An <b>identity</b> is an equation true for all allowed values of the variable. Trig identities rewrite expressions without changing values — useful for simplifying and solving equations."
@@ -343,7 +346,6 @@
           "code": "(1 − cos²θ)/sin θ = sin²θ / sin θ = sin θ   (sin θ ≠ 0)"
         }
       ],
-      "summary": "Pythagorean and reciprocal identities; simple rewrites.",
       "practice": [
         {
           "why": "Fundamental Pythagorean identity.",
@@ -392,6 +394,7 @@
     {
       "id": "solving-triangles",
       "title": "Solving triangles",
+      "summary": "Right triangles with trig; Law of Sines and Cosines for oblique triangles.",
       "sections": [
         {
           "p": "<b>Solving a triangle</b> means finding all unknown sides and angles. For right triangles, SOH-CAH-TOA plus the fact that acute angles sum to 90° is enough when you know two pieces of data (with at least one side)."
@@ -411,7 +414,6 @@
           "p": "In any Euclidean triangle, A + B + C = 180°. Once two angles are known, the third is determined."
         }
       ],
-      "summary": "Right triangles with trig; Law of Sines and Cosines for oblique triangles.",
       "practice": [
         {
           "why": "Total 180° minus the right angle.",
@@ -454,6 +456,7 @@
     {
       "id": "applications",
       "title": "Applications",
+      "summary": "Heights, bearings and simple harmonic ideas.",
       "sections": [
         {
           "p": "Trig shows up wherever angles meet lengths: surveying, navigation, ramps, and waves. The same ratios apply; only the story changes."
@@ -472,7 +475,6 @@
           "p": "A vertical displacement like y = A sin(ωt) models simple oscillation: amplitude A, angular frequency ω. Period T = 2π/ω. This links the sine graph lesson to physics."
         }
       ],
-      "summary": "Heights, bearings and simple harmonic ideas.",
       "practice": [
         {
           "why": "opp = adj × tan.",
@@ -517,7 +519,5 @@
         }
       ]
     }
-  ],
-  "id": "trigonometry",
-  "schema": "math-course@1"
+  ]
 }
