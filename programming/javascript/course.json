@@ -1,0 +1,688 @@
+{
+  "schema": "programming-course@1",
+  "id": "javascript",
+  "name": "JavaScript",
+  "title": "JavaScript: the language of the web",
+  "intro": "JavaScript runs in every web browser, so it is the language behind interactive web pages. With Node.js it also runs servers, command-line tools and desktop apps. It was designed in a hurry in 1995 and has some famous oddities, but modern JavaScript, with <code>let</code>, <code>const</code>, arrow functions, classes and <code>async</code>, is a pleasant and very capable language. These lessons teach the language itself, not web pages. Every example is a whole script and shows exactly what it prints. To try one, open your browser's developer console (F12) and paste it in, or save it as <code>hello.js</code> and run <code>node hello.js</code>.",
+  "comment": "//",
+  "keywords": [
+    "let",
+    "const",
+    "var",
+    "function",
+    "return",
+    "if",
+    "else",
+    "for",
+    "of",
+    "in",
+    "while",
+    "do",
+    "switch",
+    "case",
+    "break",
+    "continue",
+    "default",
+    "class",
+    "extends",
+    "new",
+    "this",
+    "super",
+    "async",
+    "await",
+    "true",
+    "false",
+    "null",
+    "undefined",
+    "typeof",
+    "try",
+    "catch",
+    "throw",
+    "static"
+  ],
+  "builtins": [
+    "console",
+    "log",
+    "Math",
+    "JSON",
+    "Number",
+    "String",
+    "Array",
+    "Object",
+    "Promise",
+    "setTimeout"
+  ],
+  "lessons": [
+    {
+      "id": "first",
+      "title": "Your first script",
+      "summary": "console.log, comments and the three kinds of string.",
+      "sections": [
+        {
+          "p": "<code>console.log</code> prints its arguments, separated by spaces, and ends the line. <code>//</code> starts a comment to the end of the line, and <code>/* ... */</code> can span lines. Statements usually end with a semicolon.",
+          "code": "console.log(\"Hello, squirrel!\");\nconsole.log(\"Nuts:\", 42);\n// console.log(\"not shown\");",
+          "out": "Hello, squirrel!\nNuts: 42"
+        },
+        {
+          "h": "Strings",
+          "p": "Strings can use double quotes, single quotes or backticks. Backtick strings are <b>template literals</b>: <code>${...}</code> inside them is replaced by the value of the expression, and they may span several lines.",
+          "code": "const name = \"Hazel\";\nconst nuts = 3;\nconsole.log('single', \"double\");\nconsole.log(`${name} has ${nuts * 2} nuts`);",
+          "out": "single double\nHazel has 6 nuts"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "console.log(\"Up\", \"the\", \"tree\");",
+          "options": ["Up the tree", "Uptheteree", "Up,the,tree", "Up\nthe\ntree"],
+          "answer": "Up the tree",
+          "why": "console.log puts a space between its arguments."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "const n = 4;\nconsole.log(`${n} + 1 = ${n + 1}`);",
+          "options": ["4 + 1 = 5", "n + 1 = n + 1", "4 + 1 = 41", "${n} + 1 = ${n + 1}"],
+          "answer": "4 + 1 = 5",
+          "why": "Each ${...} is replaced by its value. n + 1 is computed as a number, 5."
+        },
+        {
+          "q": "Where does JavaScript run?",
+          "options": [
+            "In every web browser, and on servers with Node.js",
+            "Only on Windows",
+            "Only inside Java programs",
+            "Only on phones"
+          ],
+          "answer": "In every web browser, and on servers with Node.js",
+          "why": "It is built into browsers, and Node.js runs it outside them. Despite the name, it is not related to Java."
+        }
+      ]
+    },
+    {
+      "id": "values",
+      "title": "Values and variables",
+      "summary": "let and const, numbers, strings, booleans, null and undefined.",
+      "sections": [
+        {
+          "p": "Declare variables with <code>const</code> when they never get a new value, and <code>let</code> when they do. (Old code uses <code>var</code>, which has looser rules; avoid it.) Values carry their own type, which <code>typeof</code> reports.",
+          "code": "const tree = \"Oak\";\nlet nuts = 10;\nnuts = nuts + 5;\nconsole.log(tree, nuts);\nconsole.log(typeof tree, typeof nuts, typeof true);",
+          "out": "Oak 15\nstring number boolean"
+        },
+        {
+          "h": "One kind of number",
+          "p": "JavaScript has a single <code>number</code> type, a 64-bit floating-point value, for both whole numbers and fractions. So <code>7 / 2</code> is 3.5, and decimal fractions carry tiny rounding errors. <code>Math.floor</code>, <code>Math.round</code> and <code>toFixed</code> help. Whole numbers are exact up to about 9 × 10<sup>15</sup>; beyond that, use <code>BigInt</code>.",
+          "code": "console.log(7 / 2);\nconsole.log(Math.floor(7 / 2), 7 % 2);\nconsole.log(0.1 + 0.2);\nconsole.log((0.1 + 0.2).toFixed(2));",
+          "out": "3.5\n3 1\n0.30000000000000004\n0.30"
+        },
+        {
+          "h": "Nothing, two ways",
+          "p": "<code>undefined</code> means \"no value was ever given\": a variable declared without a value, or a missing property. <code>null</code> is a value you set on purpose to mean \"empty\".",
+          "code": "let later;\nconst box = { nuts: 3 };\nconsole.log(later);\nconsole.log(box.acorns);\nconsole.log(null);",
+          "out": "undefined\nundefined\nnull"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "console.log(9 / 2);",
+          "options": ["4.5", "4", "5", "4.0"],
+          "answer": "4.5",
+          "why": "There is only one number type, so dividing two whole numbers can give a fraction."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "console.log(typeof 42, typeof \"42\");",
+          "options": ["number string", "number number", "string string", "int string"],
+          "answer": "number string",
+          "why": "42 is a number, while \"42\" in quotes is a string."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "const squirrel = { name: \"Hazel\" };\nconsole.log(squirrel.age);",
+          "options": ["undefined", "null", "0", "An error"],
+          "answer": "undefined",
+          "why": "Reading a property that does not exist gives undefined, not an error."
+        },
+        {
+          "q": "When should you use const instead of let?",
+          "options": [
+            "When the variable will never be given a new value",
+            "For numbers only",
+            "For global variables only",
+            "Never, they are the same"
+          ],
+          "answer": "When the variable will never be given a new value",
+          "why": "const stops reassignment, which makes code easier to follow. Use let only for values that change."
+        }
+      ]
+    },
+    {
+      "id": "equality",
+      "title": "Equality and conversions",
+      "summary": "=== versus ==, truthy and falsy, and turning text into numbers.",
+      "sections": [
+        {
+          "p": "<code>===</code> is true only when both sides have the same type and value. <code>==</code> converts types first, which gives surprising results, so modern code uses <code>===</code> and <code>!==</code> almost everywhere.",
+          "code": "console.log(5 === 5, 5 === \"5\");\nconsole.log(5 == \"5\", 0 == \"\", null == undefined);",
+          "out": "true false\ntrue true true"
+        },
+        {
+          "h": "Plus joins, minus subtracts",
+          "p": "If either side of <code>+</code> is a string, it joins strings. The other arithmetic operators always convert to numbers. To convert text on purpose, use <code>Number(...)</code>; it gives <code>NaN</code> (\"not a number\") when the text is not a number.",
+          "code": "console.log(\"5\" + 3);\nconsole.log(\"5\" - 3);\nconsole.log(Number(\"42\") + 1);\nconsole.log(Number(\"acorn\"));",
+          "out": "53\n2\n43\nNaN"
+        },
+        {
+          "h": "Truthy and falsy",
+          "p": "In an <code>if</code>, any value counts as true or false. Only six values are <b>falsy</b>: <code>false</code>, <code>0</code>, <code>\"\"</code> (empty string), <code>null</code>, <code>undefined</code> and <code>NaN</code>. Everything else, including <code>\"0\"</code> and empty arrays, is truthy. <code>??</code> picks a fallback only for <code>null</code> or <code>undefined</code>.",
+          "code": "for (const v of [0, \"0\", \"\", [], null]) {\n  console.log(JSON.stringify(v), v ? \"truthy\" : \"falsy\");\n}\nconst count = 0;\nconsole.log(count || 10, count ?? 10);",
+          "out": "0 falsy\n\"0\" truthy\n\"\" falsy\n[] truthy\nnull falsy\n10 0"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "console.log(\"2\" + 2);",
+          "options": ["22", "4", "NaN", "\"2\"2"],
+          "answer": "22",
+          "why": "With a string on one side, + joins the two as text."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "console.log(\"10\" - 4);",
+          "options": ["6", "104", "NaN", "\"6\""],
+          "answer": "6",
+          "why": "Minus only works on numbers, so \"10\" is converted to 10 first."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "console.log(1 === \"1\", 1 == \"1\");",
+          "options": ["false true", "true true", "false false", "true false"],
+          "answer": "false true",
+          "why": "=== needs the same type, so a number and a string are never equal. == converts first."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "const name = \"\";\nconsole.log(name || \"anonymous\");",
+          "options": ["anonymous", "\"\"", "undefined", "false"],
+          "answer": "anonymous",
+          "why": "An empty string is falsy, so || falls back to the right-hand side."
+        }
+      ]
+    },
+    {
+      "id": "control",
+      "title": "Decisions and loops",
+      "summary": "if, switch, for, for...of and while.",
+      "sections": [
+        {
+          "p": "<code>if (...) { ... } else { ... }</code> and the ternary <code>cond ? a : b</code> make choices. <code>switch</code> compares with <code>===</code>; each <code>case</code> needs a <code>break</code>, or it falls through into the next one.",
+          "code": "const score = 82;\nif (score >= 90) {\n  console.log(\"A\");\n} else if (score >= 80) {\n  console.log(\"B\");\n} else {\n  console.log(\"Keep going\");\n}\nconst day = \"Sat\";\nswitch (day) {\n  case \"Sat\":\n  case \"Sun\":\n    console.log(\"Weekend\");\n    break;\n  default:\n    console.log(\"Weekday\");\n}",
+          "out": "B\nWeekend"
+        },
+        {
+          "h": "Loops",
+          "p": "The classic <code>for (let i = 0; i &lt; n; i++)</code> counts. <code>for (const x of list)</code> walks through the values of an array or string, and is usually what you want. <code>while</code> repeats as long as a condition holds.",
+          "code": "for (let i = 1; i <= 3; i++) {\n  console.log(\"step\", i);\n}\nfor (const tree of [\"oak\", \"elm\"]) {\n  console.log(tree);\n}\nlet n = 1;\nwhile (n < 20) n *= 2;\nconsole.log(n);",
+          "out": "step 1\nstep 2\nstep 3\noak\nelm\n32"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "let total = 0;\nfor (let i = 1; i <= 4; i++) total += i;\nconsole.log(total);",
+          "options": ["10", "4", "6", "1234"],
+          "answer": "10",
+          "why": "1 + 2 + 3 + 4 is 10."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "const n = 2;\nswitch (n) {\n  case 1: console.log(\"one\");\n  case 2: console.log(\"two\");\n  case 3: console.log(\"three\");\n}",
+          "options": ["two\nthree", "two", "one\ntwo\nthree", "three"],
+          "answer": "two\nthree",
+          "why": "Without break, a matching case falls through into the cases below it."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "const age = 15;\nconsole.log(age >= 18 ? \"adult\" : \"young\");",
+          "options": ["young", "adult", "true", "15"],
+          "answer": "young",
+          "why": "The ternary gives the part after : when the condition is false."
+        },
+        {
+          "q": "What does for (const x of [1, 2, 3]) give x?",
+          "options": [
+            "Each value: 1, then 2, then 3",
+            "Each index: 0, 1, 2",
+            "The whole array",
+            "Nothing, const can't be used in loops"
+          ],
+          "answer": "Each value: 1, then 2, then 3",
+          "why": "for...of gives values. for...in gives keys (indexes, as strings), which is rarely what you want for an array."
+        }
+      ]
+    },
+    {
+      "id": "functions",
+      "title": "Functions",
+      "summary": "Declarations, arrow functions, default parameters and closures.",
+      "sections": [
+        {
+          "p": "A function can be declared with <code>function</code>, or written as an <b>arrow function</b>: <code>(a, b) =&gt; a + b</code>. An arrow with a single expression returns it without <code>return</code>. Parameters can have default values. Functions are values: you can store them and pass them to other functions.",
+          "code": "function square(n) {\n  return n * n;\n}\nconst add = (a, b) => a + b;\nconst greet = (name = \"friend\") => \"Hello, \" + name;\nconsole.log(square(6), add(2, 3));\nconsole.log(greet(), greet(\"Hazel\"));\nconst twice = (f, x) => f(f(x));\nconsole.log(twice(square, 3));",
+          "out": "36 5\nHello, friend Hello, Hazel\n81"
+        },
+        {
+          "h": "Closures",
+          "p": "A function remembers the variables around it when it was made, even after the outer function has returned. That pairing is a <b>closure</b>, and it is how JavaScript keeps private state.",
+          "code": "function makeCounter() {\n  let count = 0;\n  return () => {\n    count += 1;\n    return count;\n  };\n}\nconst next = makeCounter();\nnext();\nnext();\nconsole.log(next());\nconst other = makeCounter();\nconsole.log(other());",
+          "out": "3\n1"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "const double = (n) => n * 2;\nconsole.log(double(double(5)));",
+          "options": ["20", "10", "25", "52"],
+          "answer": "20",
+          "why": "double(5) is 10, and doubling that gives 20."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "function f(a, b = 10) {\n  return a + b;\n}\nconsole.log(f(1), f(1, 2));",
+          "options": ["11 3", "1 3", "NaN 3", "11 12"],
+          "answer": "11 3",
+          "why": "b uses its default of 10 only when no second argument is given."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "function makeAdder(x) {\n  return (y) => x + y;\n}\nconst addFive = makeAdder(5);\nconsole.log(addFive(10));",
+          "options": ["15", "5", "10", "undefined"],
+          "answer": "15",
+          "why": "The returned arrow function keeps x = 5 from when it was made: that is a closure."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "const f = (n) => { n * 2 };\nconsole.log(f(4));",
+          "options": ["undefined", "8", "4", "An error"],
+          "answer": "undefined",
+          "why": "With braces the arrow has a body, and the body has no return, so the function returns undefined."
+        }
+      ]
+    },
+    {
+      "id": "collections",
+      "title": "Arrays and objects",
+      "summary": "map, filter and reduce, destructuring, spread and JSON.",
+      "sections": [
+        {
+          "p": "An array is a list: <code>push</code> adds to the end and <code>length</code> counts. <code>map</code> makes a new array by transforming each item, <code>filter</code> keeps the items that pass a test, and <code>reduce</code> combines them into one value. They leave the original array alone. (The output shows arrays the way Node.js prints them; a browser console shows the same values as a list you can expand.)",
+          "code": "const nuts = [12, 30, 5];\nnuts.push(8);\nconsole.log(nuts.length, nuts[0]);\nconsole.log(nuts.map((n) => n * 2));\nconsole.log(nuts.filter((n) => n > 10));\nconsole.log(nuts.reduce((sum, n) => sum + n, 0));",
+          "out": "4 12\n[ 24, 60, 10, 16 ]\n[ 12, 30 ]\n55"
+        },
+        {
+          "h": "Objects",
+          "p": "An object holds named properties. <b>Destructuring</b> pulls values out into variables, and the <b>spread</b> syntax <code>...</code> copies arrays and objects into new ones. <code>JSON.stringify</code> turns data into text, the format web services exchange.",
+          "code": "const squirrel = { name: \"Hazel\", nuts: 3 };\nsquirrel.nuts += 1;\nconst { name, nuts } = squirrel;\nconsole.log(name, nuts);\nconst copy = { ...squirrel, tree: \"oak\" };\nconsole.log(JSON.stringify(copy));\nconst [first, ...rest] = [1, 2, 3];\nconsole.log(first, rest);",
+          "out": "Hazel 4\n{\"name\":\"Hazel\",\"nuts\":4,\"tree\":\"oak\"}\n1 [ 2, 3 ]"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "console.log([1, 2, 3].map((x) => x * 10).join(\",\"));",
+          "options": ["10,20,30", "1,2,3", "60", "[10, 20, 30]"],
+          "answer": "10,20,30",
+          "why": "map multiplies each item, and join puts the results in one string with commas between them."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "const words = [\"oak\", \"pine\", \"elm\", \"birch\"];\nconsole.log(words.filter((w) => w.length > 3).length);",
+          "options": ["2", "4", "3", "1"],
+          "answer": "2",
+          "why": "Only pine and birch have more than three letters."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "const a = [1, 2];\nconst b = a;\nb.push(3);\nconsole.log(a.length);",
+          "options": ["3", "2", "1", "An error"],
+          "answer": "3",
+          "why": "b is not a copy: a and b are two names for the same array. Use [...a] to copy."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "const { x, y = 5 } = { x: 1 };\nconsole.log(x + y);",
+          "options": ["6", "1", "NaN", "15"],
+          "answer": "6",
+          "why": "Destructuring can give defaults. y is missing from the object, so it takes 5."
+        }
+      ]
+    },
+    {
+      "id": "classes-async",
+      "title": "Classes and async code",
+      "summary": "class and extends, then promises, async and await.",
+      "sections": [
+        {
+          "p": "A <code>class</code> bundles data and methods. The <code>constructor</code> runs when you call <code>new</code>, and <code>extends</code> builds on another class, with <code>super</code> calling the parent.",
+          "code": "class Animal {\n  constructor(name) {\n    this.name = name;\n  }\n  speak() {\n    return this.name + \" makes a sound\";\n  }\n}\nclass Squirrel extends Animal {\n  speak() {\n    return super.speak() + \": chitter!\";\n  }\n}\nconst s = new Squirrel(\"Hazel\");\nconsole.log(s.speak());",
+          "out": "Hazel makes a sound: chitter!"
+        },
+        {
+          "h": "Doing things later",
+          "p": "JavaScript runs one thing at a time, so slow work (a network request, a timer) is started and finished later instead of blocking. A <b>promise</b> stands for a result that will arrive later. Inside an <code>async</code> function, <code>await</code> pauses that function until the promise settles, while the rest of the program carries on, which is why \"after the call\" prints first below.",
+          "code": "const wait = (ms, value) => new Promise((resolve) => setTimeout(() => resolve(value), ms));\n\nasync function gather() {\n  console.log(\"start gathering\");\n  const nuts = await wait(10, 12);\n  console.log(\"gathered\", nuts);\n  return nuts * 2;\n}\n\ngather().then((total) => console.log(\"total\", total));\nconsole.log(\"after the call\");",
+          "out": "start gathering\nafter the call\ngathered 12\ntotal 24"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "class Box {\n  constructor(n) { this.n = n; }\n  add(k) { this.n += k; return this; }\n}\nconsole.log(new Box(1).add(2).add(3).n);",
+          "options": ["6", "3", "1", "An error"],
+          "answer": "6",
+          "why": "Each add returns the same box, so the calls chain: 1 + 2 + 3."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "setTimeout(() => console.log(\"A\"), 0);\nconsole.log(\"B\");",
+          "options": ["B\nA", "A\nB", "A", "B"],
+          "answer": "B\nA",
+          "why": "Even a 0 ms timer runs only after the current script has finished."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "async function f() {\n  return 5;\n}\nf().then((v) => console.log(v + 1));\nconsole.log(\"first\");",
+          "options": ["first\n6", "6\nfirst", "first\n5", "6"],
+          "answer": "first\n6",
+          "why": "An async function returns a promise, and .then runs after the current code finishes."
+        },
+        {
+          "q": "What does await do?",
+          "options": [
+            "Pauses the async function until the promise settles",
+            "Stops the whole program",
+            "Makes code run faster",
+            "Turns a number into a promise"
+          ],
+          "answer": "Pauses the async function until the promise settles",
+          "why": "Only that function waits. The rest of the program keeps running."
+        }
+      ]
+    },
+    {
+      "id": "errors",
+      "title": "Errors",
+      "summary": "throw, try...catch...finally, and your own error types.",
+      "sections": [
+        {
+          "p": "When something goes wrong, JavaScript <b>throws</b> an error object, and the script stops unless a <code>try</code> block catches it. The error has a <code>name</code> and a <code>message</code>. A <code>finally</code> block runs whether or not anything was thrown. <code>JSON.parse</code> throws a <code>SyntaxError</code> for text that isn't valid JSON.",
+          "code": "for (const text of ['{\"nuts\": 4}', \"{nuts: 4}\"]) {\n  try {\n    const data = JSON.parse(text);\n    console.log(\"parsed\", data.nuts);\n  } catch (err) {\n    console.log(\"could not parse:\", err.name);\n  } finally {\n    console.log(\"checked\", text);\n  }\n}",
+          "out": "parsed 4\nchecked {\"nuts\": 4}\ncould not parse: SyntaxError\nchecked {nuts: 4}"
+        },
+        {
+          "h": "Throwing your own",
+          "p": "You can <code>throw</code> any value, but throw an <code>Error</code> (or a subclass) so you get a message and a stack trace. A class that <code>extends Error</code> lets callers tell kinds of failure apart with <code>instanceof</code>. Errors you don't expect should usually be re-thrown, not swallowed.",
+          "code": "class NotEnoughNuts extends Error {\n  constructor(asked, stored) {\n    super(`asked for ${asked}, only ${stored} stored`);\n    this.name = \"NotEnoughNuts\";\n  }\n}\n\nfunction take(stored, asked) {\n  if (!Number.isInteger(asked) || asked < 0) {\n    throw new TypeError(\"asked must be a whole number\");\n  }\n  if (asked > stored) {\n    throw new NotEnoughNuts(asked, stored);\n  }\n  return stored - asked;\n}\n\nfor (const asked of [3, 12, -1]) {\n  try {\n    console.log(\"left:\", take(10, asked));\n  } catch (err) {\n    if (err instanceof NotEnoughNuts) {\n      console.log(\"refused:\", err.message);\n    } else {\n      console.log(`${err.name}: ${err.message}`);\n    }\n  }\n}",
+          "out": "left: 7\nrefused: asked for 12, only 10 stored\nTypeError: asked must be a whole number"
+        },
+        {
+          "h": "Optional chaining and ??",
+          "p": "Many errors come from reading a property of <code>undefined</code>. <code>?.</code> stops and gives <code>undefined</code> if the value before it is <code>null</code> or <code>undefined</code>, and <code>??</code> supplies a default only for those two (unlike <code>||</code>, which also replaces <code>0</code> and <code>\"\"</code>).",
+          "code": "const squirrels = [\n  { name: \"Sam\", store: { nuts: 12 } },\n  { name: \"Pip\" },\n  { name: \"Ada\", store: { nuts: 0 } },\n];\nfor (const s of squirrels) {\n  const nuts = s.store?.nuts;\n  console.log(s.name, nuts ?? \"no store\", nuts || \"none\");\n}",
+          "out": "Sam 12 12\nPip no store none\nAda 0 none"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "try {\n  console.log(\"a\");\n  null.length;\n  console.log(\"b\");\n} catch (e) {\n  console.log(e.name);\n} finally {\n  console.log(\"c\");\n}",
+          "options": ["a\nTypeError\nc", "a\nb\nc", "a\nc", "TypeError\nc"],
+          "answer": "a\nTypeError\nc",
+          "why": "Reading a property of null throws a TypeError, which skips \"b\"; finally always runs."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "const a = 0;\nconsole.log(a ?? 5, a || 5);",
+          "options": ["0 5", "5 5", "0 0", "5 0"],
+          "answer": "0 5",
+          "why": "?? only replaces null and undefined; || replaces every falsy value, including 0."
+        },
+        {
+          "q": "Why extend Error rather than throwing a plain string?",
+          "options": [
+            "You get a message and stack trace, and callers can test the type with instanceof",
+            "Strings cannot be thrown",
+            "It makes the code run faster",
+            "catch only receives Error objects"
+          ],
+          "answer": "You get a message and stack trace, and callers can test the type with instanceof",
+          "why": "Any value can be thrown, but Error objects carry much more useful information."
+        }
+      ]
+    },
+    {
+      "id": "strings",
+      "title": "Strings and regular expressions",
+      "summary": "Everyday string methods, and patterns for finding text.",
+      "sections": [
+        {
+          "p": "Strings can't be changed in place; methods return new strings. The everyday ones are <code>includes</code>, <code>startsWith</code>, <code>slice</code>, <code>split</code>, <code>trim</code>, <code>padStart</code>/<code>padEnd</code> and <code>replaceAll</code>. <code>join</code> on an array is the opposite of <code>split</code>.",
+          "code": "const line = \"  oak, beech, hazel  \";\nconst trees = line.trim().split(\", \");\nconsole.log(trees, trees.length);\nconsole.log(trees.join(\" / \"));\nconsole.log(\"hazelnut\".slice(0, 5), \"hazelnut\".slice(-3));\nconsole.log(\"acorn\".includes(\"cor\"), \"acorn\".startsWith(\"ac\"));\nconsole.log(\"7\".padStart(3, \"0\"), \"[\" + \"ok\".padEnd(5) + \"]\");\nconsole.log(\"a-b-c\".replaceAll(\"-\", \"+\"));",
+          "out": "[ 'oak', 'beech', 'hazel' ] 3\noak / beech / hazel\nhazel nut\ntrue true\n007 [ok   ]\na+b+c"
+        },
+        {
+          "h": "Regular expressions",
+          "p": "A <b>regular expression</b> describes a pattern of text, written between slashes. <code>\\d+</code> means one or more digits, <code>\\w</code> a letter, digit or underscore, and brackets <code>( )</code> capture parts. <code>test</code> asks whether a string matches, <code>match</code> with the <code>g</code> flag finds every match, and <code>replace</code> can use the captured parts as <code>$1</code>, <code>$2</code>.",
+          "code": "const log = \"day 3: 9 acorns, day 4: 12 hazelnuts, day 5: 2 acorns\";\nconsole.log(/\\d+ acorns/.test(log));\nconsole.log(log.match(/\\d+/g));\nfor (const m of log.matchAll(/day (\\d+): (\\d+) (\\w+)/g)) {\n  console.log(`day ${m[1]} -> ${m[2]} ${m[3]}`);\n}\nconsole.log(\"2026-11-04\".replace(/(\\d+)-(\\d+)-(\\d+)/, \"$3/$2/$1\"));",
+          "out": "true\n[ '3', '9', '4', '12', '5', '2' ]\nday 3 -> 9 acorns\nday 4 -> 12 hazelnuts\nday 5 -> 2 acorns\n04/11/2026"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "console.log(\"a,b,,c\".split(\",\").length);",
+          "options": ["4", "3", "5", "6"],
+          "answer": "4",
+          "why": "Splitting on every comma gives \"a\", \"b\", \"\" and \"c\"."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "console.log(\"room 12, row 7\".match(/\\d+/g).join(\"+\"));",
+          "options": ["12+7", "12", "127", "1+2+7"],
+          "answer": "12+7",
+          "why": "\\d+ matches each run of digits, and g finds them all."
+        },
+        {
+          "q": "Why does s.toUpperCase() not change s?",
+          "options": [
+            "Strings are immutable, so the method returns a new string",
+            "It only works on the first letter",
+            "It needs to be called twice",
+            "It changes s only inside functions"
+          ],
+          "answer": "Strings are immutable, so the method returns a new string",
+          "why": "Assign the result: s = s.toUpperCase()."
+        }
+      ]
+    },
+    {
+      "id": "mapset",
+      "title": "Map, Set and iteration",
+      "summary": "Better collections than plain objects, and generators.",
+      "sections": [
+        {
+          "p": "A <code>Map</code> is a dictionary whose keys can be anything, which remembers the order keys were added and knows its <code>size</code>. A <code>Set</code> holds each value at most once, so it is the quickest way to remove duplicates. Both work with <code>for...of</code> and spread.",
+          "code": "const finds = [\"acorn\", \"hazelnut\", \"acorn\", \"walnut\", \"acorn\"];\nconst counts = new Map();\nfor (const f of finds) {\n  counts.set(f, (counts.get(f) ?? 0) + 1);\n}\nconsole.log(counts.get(\"acorn\"), counts.size, counts.has(\"pine\"));\nfor (const [nut, n] of counts) {\n  console.log(nut, n);\n}\nconst kinds = new Set(finds);\nconsole.log([...kinds], kinds.size);",
+          "out": "3 3 false\nacorn 3\nhazelnut 1\nwalnut 1\n[ 'acorn', 'hazelnut', 'walnut' ] 3"
+        },
+        {
+          "h": "Sorting",
+          "p": "<code>sort</code> changes the array, and without a comparison it sorts as <b>text</b>, so 10 comes before 9. Pass a function that returns a negative number when <code>a</code> should come first: <code>(a, b) =&gt; a - b</code> for numbers. <code>toSorted</code> returns a sorted copy and leaves the original alone.",
+          "code": "const days = [9, 10, 1, 25];\nconsole.log(days.toSorted());\nconsole.log(days.toSorted((a, b) => a - b));\nconst trees = [\n  { name: \"oak\", nuts: 40 },\n  { name: \"beech\", nuts: 75 },\n  { name: \"hazel\", nuts: 40 },\n];\ntrees.sort((a, b) => b.nuts - a.nuts || a.name.localeCompare(b.name));\nconsole.log(trees.map((t) => `${t.name}:${t.nuts}`).join(\" \"));\nconsole.log(days);",
+          "out": "[ 1, 10, 25, 9 ]\n[ 1, 9, 10, 25 ]\nbeech:75 hazel:40 oak:40\n[ 9, 10, 1, 25 ]"
+        },
+        {
+          "h": "Generators",
+          "p": "A <b>generator</b> function, written <code>function*</code>, can <code>yield</code> values one at a time, pausing in between. Its result works with <code>for...of</code> and spread. Values are produced only when asked for, so a generator can even run forever.",
+          "code": "function* countdown(n) {\n  while (n > 0) {\n    yield n;\n    n--;\n  }\n  yield \"go!\";\n}\nconsole.log([...countdown(3)].join(\" \"));\n\nfunction* fibonacci() {\n  let [a, b] = [0, 1];\n  while (true) {\n    yield a;\n    [a, b] = [b, a + b];\n  }\n}\nconst first = [];\nfor (const f of fibonacci()) {\n  if (f > 50) break;\n  first.push(f);\n}\nconsole.log(first.join(\",\"));",
+          "out": "3 2 1 go!\n0,1,1,2,3,5,8,13,21,34"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "console.log([3, 20, 100].toSorted().join(\" \"));",
+          "options": ["100 20 3", "3 20 100", "100 3 20", "20 3 100"],
+          "answer": "100 20 3",
+          "why": "Without a comparison, the numbers are compared as text: \"1\" < \"2\" < \"3\"."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "const s = new Set([1, 2, 2, 3, 3, 3]);\ns.add(2);\nconsole.log(s.size);",
+          "options": ["3", "6", "7", "4"],
+          "answer": "3",
+          "why": "A Set keeps one copy of each value."
+        },
+        {
+          "q": "What does yield do in a generator?",
+          "options": [
+            "Hands out one value and pauses until the next is requested",
+            "Ends the generator",
+            "Returns all values at once",
+            "Waits for a promise"
+          ],
+          "answer": "Hands out one value and pauses until the next is requested",
+          "why": "That is why an endless generator is fine as long as the loop breaks."
+        }
+      ]
+    },
+    {
+      "id": "async",
+      "title": "Async in depth",
+      "summary": "Promise.all, errors with await, and when callbacks run.",
+      "sections": [
+        {
+          "p": "JavaScript runs one piece of code at a time. Waiting (for a timer, a file, the network) is handed off, and the code that continues afterwards is queued. A <code>setTimeout</code> callback, even with a delay of 0, runs only after the current code has finished, and after any promise reactions already queued.",
+          "code": "console.log(\"1 start\");\nsetTimeout(() => console.log(\"4 timer\"), 0);\nPromise.resolve().then(() => console.log(\"3 promise\"));\nconsole.log(\"2 end of script\");",
+          "out": "1 start\n2 end of script\n3 promise\n4 timer"
+        },
+        {
+          "h": "Running things side by side",
+          "p": "<code>await</code> in a loop waits for each task before starting the next. <code>Promise.all</code> starts them together and waits for all, so three 100 ms tasks take about 100 ms, not 300. If any of them fails, <code>Promise.all</code> fails; <code>Promise.allSettled</code> instead reports every result.",
+          "code": "const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));\n\nasync function fetchNuts(tree, ms, fail = false) {\n  await sleep(ms);\n  if (fail) throw new Error(`${tree} is guarded by an owl`);\n  return `${tree}: ${ms / 10} nuts`;\n}\n\nasync function main() {\n  let t = Date.now();\n  for (const tree of [\"oak\", \"beech\", \"hazel\"]) {\n    await fetchNuts(tree, 100);\n  }\n  console.log(\"one by one took at least 300 ms:\", Date.now() - t >= 300);\n\n  t = Date.now();\n  const all = await Promise.all([fetchNuts(\"oak\", 100), fetchNuts(\"beech\", 100), fetchNuts(\"hazel\", 100)]);\n  console.log(all.join(\", \"));\n  console.log(\"together took under 250 ms:\", Date.now() - t < 250);\n\n  const results = await Promise.allSettled([fetchNuts(\"oak\", 50), fetchNuts(\"pine\", 50, true)]);\n  for (const r of results) {\n    console.log(r.status, r.value ?? r.reason.message);\n  }\n}\n\nmain();",
+          "out": "one by one took at least 300 ms: true\noak: 10 nuts, beech: 10 nuts, hazel: 10 nuts\ntogether took under 250 ms: true\nfulfilled oak: 5 nuts\nrejected pine is guarded by an owl"
+        },
+        {
+          "h": "Errors with await",
+          "p": "When an awaited promise is rejected, <code>await</code> throws, so ordinary <code>try...catch</code> works. Forgetting to <code>await</code> (or to add <code>.catch</code>) leaves an <b>unhandled rejection</b>, which Node reports and which ends the program.",
+          "code": "async function risky(n) {\n  if (n > 2) throw new RangeError(`${n} is too many`);\n  return n * 10;\n}\n\nasync function main() {\n  for (const n of [1, 5]) {\n    try {\n      console.log(\"ok\", await risky(n));\n    } catch (err) {\n      console.log(\"caught\", err.message);\n    }\n  }\n  const value = await risky(9).catch(() => -1);\n  console.log(\"with .catch:\", value);\n}\n\nmain();",
+          "out": "ok 10\ncaught 5 is too many\nwith .catch: -1"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "setTimeout(() => console.log(\"c\"), 0);\nPromise.resolve().then(() => console.log(\"b\"));\nconsole.log(\"a\");",
+          "options": ["a\nb\nc", "c\nb\na", "a\nc\nb", "b\na\nc"],
+          "answer": "a\nb\nc",
+          "why": "The script finishes first, then queued promise reactions, then timers."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "async function f() {\n  return 5;\n}\nf().then((v) => console.log(v + 1));\nconsole.log(\"first\");",
+          "options": ["first\n6", "6\nfirst", "first\n5", "Promise\nfirst"],
+          "answer": "first\n6",
+          "why": "An async function returns a promise, and .then runs after the current script."
+        },
+        {
+          "q": "When is Promise.allSettled better than Promise.all?",
+          "options": [
+            "When you want every result even if some tasks fail",
+            "When the tasks must run one at a time",
+            "When there is only one task",
+            "Never; they are the same"
+          ],
+          "answer": "When you want every result even if some tasks fail",
+          "why": "Promise.all rejects as soon as any task fails."
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Project: a nut ledger",
+      "summary": "Strings, regular expressions, Map, sorting and errors together.",
+      "sections": [
+        {
+          "p": "This script reads a small ledger written as text, one entry per line such as <code>day 3: acorn x9</code>. A regular expression with named groups, <code>(?&lt;day&gt;\\d+)</code>, pulls each line apart; lines that don't match are reported and skipped. Totals go in a <code>Map</code>, are sorted, and are printed as a table with <code>padEnd</code> and <code>padStart</code>.",
+          "code": "const ledger = `day 1: acorn x6\nday 1: hazelnut x2\nday 2: walnut x1\nday two: acorn x3\nday 3: acorn x9\nday 3: hazelnut x4\nday 4 acorn x5`;\n\nconst pattern = /^day (?<day>\\d+): (?<nut>[a-z]+) x(?<count>\\d+)$/;\n\nfunction parse(line, number) {\n  const m = line.match(pattern);\n  if (!m) throw new SyntaxError(`line ${number}: cannot read \"${line}\"`);\n  return { day: Number(m.groups.day), nut: m.groups.nut, count: Number(m.groups.count) };\n}\n\nconst entries = [];\nledger.split(\"\\n\").forEach((line, i) => {\n  try {\n    entries.push(parse(line, i + 1));\n  } catch (err) {\n    console.log(\"skipped\", err.message);\n  }\n});\n\nconst totals = new Map();\nfor (const e of entries) {\n  totals.set(e.nut, (totals.get(e.nut) ?? 0) + e.count);\n}\nconst all = entries.reduce((sum, e) => sum + e.count, 0);\nconst rows = [...totals].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));\nfor (const [nut, n] of rows) {\n  const share = ((100 * n) / all).toFixed(1);\n  console.log(nut.padEnd(9) + String(n).padStart(3) + share.padStart(6) + \"%\");\n}\nconst best = entries.reduce((a, b) => (b.count > a.count ? b : a));\nconsole.log(`best find: ${best.count} ${best.nut} on day ${best.day}`);",
+          "out": "skipped line 4: cannot read \"day two: acorn x3\"\nskipped line 7: cannot read \"day 4 acorn x5\"\nacorn     15  68.2%\nhazelnut   6  27.3%\nwalnut     1   4.5%\nbest find: 9 acorn on day 3"
+        },
+        {
+          "h": "Ideas to try",
+          "p": "Read the ledger from a file with <code>fs.readFileSync</code> from <code>node:fs</code>, add a per-day total, or turn the report into an HTML table and open it in a browser."
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "const m = \"x12\".match(/x(?<n>\\d+)/);\nconsole.log(Number(m.groups.n) + 1);",
+          "options": ["13", "121", "x13", "NaN"],
+          "answer": "13",
+          "why": "The named group captures \"12\", and Number turns it into 12 before adding 1."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "console.log([1, 2, 3, 4].reduce((sum, n) => sum + n, 0));",
+          "options": ["10", "1234", "0", "24"],
+          "answer": "10",
+          "why": "reduce carries the running total from 0 through every element."
+        },
+        {
+          "q": "Why spread the Map into an array with [...totals] before sorting?",
+          "options": [
+            "A Map has no sort method, but an array of [key, value] pairs does",
+            "Maps cannot be looped over",
+            "Spreading removes duplicates",
+            "It converts the counts to strings"
+          ],
+          "answer": "A Map has no sort method, but an array of [key, value] pairs does",
+          "why": "The Map keeps insertion order; the array can be put in any order."
+        }
+      ]
+    }
+  ]
+}
