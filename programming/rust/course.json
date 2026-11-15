@@ -1,0 +1,708 @@
+{
+  "schema": "programming-course@1",
+  "id": "rust",
+  "name": "Rust",
+  "title": "Rust from the first line",
+  "intro": "Rust is a systems language in the same neighbourhood as C, with a compiler that refuses a large class of memory mistakes before the program ever runs. These lessons use the 2021 edition: printing, names, choices, loops and functions, then the rule that a value has one owner. Every example is a whole program and shows exactly what it prints. To run one yourself, save it as <code>hello.rs</code> and type <code>rustc hello.rs && ./hello</code>, or use <code>cargo new</code> for a project.",
+  "comment": "//",
+  "keywords": [
+    "fn",
+    "let",
+    "mut",
+    "if",
+    "else",
+    "for",
+    "in",
+    "while",
+    "return",
+    "true",
+    "false",
+    "struct"
+  ],
+  "builtins": ["println", "main", "String"],
+  "lessons": [
+    {
+      "id": "first",
+      "title": "Your first program",
+      "summary": "fn main and println!.",
+      "sections": [
+        {
+          "p": "A Rust program starts in <code>fn main</code>. <code>println!</code> prints a line. The <code>!</code> means it is a macro, not an ordinary function: it checks the format string when the program is compiled. Text goes in double quotes.",
+          "code": "fn main() {\n    println!(\"Hello, squirrel!\");\n    println!(\"Nuts are ready.\");\n}",
+          "out": "Hello, squirrel!\nNuts are ready."
+        },
+        {
+          "h": "Placeholders",
+          "p": "<code>{}</code> is a hole in the string. Each value after the string fills the next hole. <code>{:?}</code> is the debugging form, useful for seeing exactly what a value is.",
+          "code": "fn main() {\n    println!(\"I have {} acorns\", 3);\n    println!(\"{}-{}\", \"a\", \"b\");\n}",
+          "out": "I have 3 acorns\na-b"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn main() {\n    println!(\"Up the tree\");\n}",
+          "options": [
+            "Up the tree",
+            "Up the tree\\n",
+            "println!(Up the tree)",
+            "Nothing"
+          ],
+          "answer": "Up the tree",
+          "why": "println! prints the text and then ends the line. The quotes and the ! are not printed."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn main() {\n    println!(\"{} {}\", \"two\", \"words\");\n}",
+          "options": ["two words", "two\nwords", "{} {}", "twowords"],
+          "answer": "two words",
+          "why": "Each {} is replaced by the next argument, and the space between them is an ordinary character in the string."
+        },
+        {
+          "q": "Why does println! end with an exclamation mark?",
+          "options": [
+            "It is a macro, checked at compile time",
+            "It prints a louder line",
+            "It returns a number",
+            "It is optional decoration"
+          ],
+          "answer": "It is a macro, checked at compile time",
+          "why": "The ! marks a macro. println! can reject a format string that does not match its arguments before the program runs."
+        },
+        {
+          "q": "Where does a Rust program start?",
+          "options": ["fn main", "start()", "begin", "println!"],
+          "answer": "fn main",
+          "why": "main is the entry point. println! only prints."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn main() {\n    // println!(\"hidden\");\n    println!(\"shown\");\n}",
+          "options": [
+            "shown",
+            "hidden\nshown",
+            "// println!(\"hidden\");\nshown",
+            "Nothing"
+          ],
+          "answer": "shown",
+          "why": "A line starting with // is a comment and never runs."
+        }
+      ]
+    },
+    {
+      "id": "names",
+      "title": "Names and mut",
+      "summary": "let, and why the default is immutable.",
+      "sections": [
+        {
+          "p": "<code>let</code> gives a name to a value. By default the name cannot be pointed at a new value later. <code>let mut</code> allows that. Rust figures out the type from the value: <code>5</code> is an integer.",
+          "code": "fn main() {\n    let nuts = 5;\n    let mut more = nuts;\n    more = more + 2;\n    println!(\"{}\", more);\n}",
+          "out": "7"
+        },
+        {
+          "h": "Shadowing",
+          "p": "You can <code>let</code> the same name again. That is a new binding, not a change to the old one, so it is allowed even without <code>mut</code>. The new binding can even have a different type.",
+          "code": "fn main() {\n    let n = 3;\n    let n = n + 1;\n    println!(\"{}\", n);\n}",
+          "out": "4"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn main() {\n    let mut n = 10;\n    n = n - 3;\n    println!(\"{}\", n);\n}",
+          "options": ["7", "10", "13", "n"],
+          "answer": "7",
+          "why": "mut allows the assignment. n becomes 10 − 3."
+        },
+        {
+          "q": "Which line will the compiler reject?",
+          "options": [
+            "let n = 1; n = 2;",
+            "let mut n = 1; n = 2;",
+            "let n = 1; let n = 2;",
+            "let n = 1; println!(\"{}\", n);"
+          ],
+          "answer": "let n = 1; n = 2;",
+          "why": "Without mut, a name cannot be assigned again. Shadowing with a second let is a different, legal, thing."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn main() {\n    let n = 2;\n    let n = n * 5;\n    println!(\"{}\", n);\n}",
+          "options": ["10", "2", "5", "25"],
+          "answer": "10",
+          "why": "The second let hides the first. Its value is 2 * 5."
+        },
+        {
+          "q": "What does mut stand for?",
+          "options": [
+            "The name may be assigned a new value",
+            "The value is shared with other threads",
+            "The value is a string",
+            "The name is public"
+          ],
+          "answer": "The name may be assigned a new value",
+          "why": "mut means mutable. The default, without mut, is that the binding does not change."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn main() {\n    let a = 1;\n    let b = a + 1;\n    println!(\"{} {}\", a, b);\n}",
+          "options": ["1 2", "2 2", "1 1", "a b"],
+          "answer": "1 2",
+          "why": "a is still 1. b is a new name holding a + 1. Reading a does not use it up, because i32 is copied."
+        }
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "Choices",
+      "summary": "if is an expression.",
+      "sections": [
+        {
+          "p": "<code>if</code> does not use brackets around the test. The branch is a block. <code>==</code> compares; <code>=</code> assigns, and an assignment is not a test.",
+          "code": "fn main() {\n    let nuts = 3;\n    if nuts > 2 {\n        println!(\"plenty\");\n    } else {\n        println!(\"few\");\n    }\n}",
+          "out": "plenty"
+        },
+        {
+          "h": "if gives a value",
+          "p": "A block can end in an expression with no semicolon, and that expression is the block's value. So <code>if</code> can be used on the right of <code>let</code>. Both branches must produce the same type.",
+          "code": "fn main() {\n    let n = 4;\n    let word = if n > 3 { \"mid\" } else { \"small\" };\n    println!(\"{}\", word);\n}",
+          "out": "mid"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn main() {\n    let n = 2;\n    if n == 2 {\n        println!(\"yes\");\n    } else {\n        println!(\"no\");\n    }\n}",
+          "options": ["yes", "no", "2", "yes\nno"],
+          "answer": "yes",
+          "why": "n == 2 is true, so only the first branch runs."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn main() {\n    let n = 1;\n    let label = if n > 5 { \"big\" } else { \"small\" };\n    println!(\"{}\", label);\n}",
+          "options": ["small", "big", "1", "small\nbig"],
+          "answer": "small",
+          "why": "1 is not greater than 5, so the else expression is the value of the if."
+        },
+        {
+          "q": "Which is a comparison?",
+          "options": ["n == 2", "n = 2", "let n == 2", "n := 2"],
+          "answer": "n == 2",
+          "why": "== compares. = is assignment, and it is not allowed as the test of if."
+        },
+        {
+          "q": "What must be true when if is used as a value?",
+          "options": [
+            "Both branches produce the same type",
+            "Both branches print something",
+            "The test is always true",
+            "The branches are empty"
+          ],
+          "answer": "Both branches produce the same type",
+          "why": "The if expression has one type. A branch that ends in a number and a branch that ends in text do not match."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn main() {\n    let n = 4;\n    if n > 5 {\n        println!(\"big\");\n    } else if n > 3 {\n        println!(\"mid\");\n    } else {\n        println!(\"small\");\n    }\n}",
+          "options": ["mid", "big", "small", "big\nmid"],
+          "answer": "mid",
+          "why": "4 fails the first test and passes the second. The else is not reached."
+        }
+      ]
+    },
+    {
+      "id": "loops",
+      "title": "Loops",
+      "summary": "for, ranges and while.",
+      "sections": [
+        {
+          "p": "<code>for</code> walks a range. <code>0..3</code> is 0, 1 and 2: the end is left out. <code>0..=3</code> includes 3. <code>print!</code> is <code>println!</code> without the newline. <code>continue</code> skips the rest of the current pass.",
+          "code": "fn main() {\n    for i in 0..3 {\n        println!(\"{}\", i);\n    }\n}",
+          "out": "0\n1\n2"
+        },
+        {
+          "h": "while",
+          "p": "<code>while</code> repeats while a test is true. Something in the test has to change, or the loop does not end.",
+          "code": "fn main() {\n    let mut n = 3;\n    while n > 0 {\n        println!(\"{}\", n);\n        n = n - 1;\n    }\n}",
+          "out": "3\n2\n1"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn main() {\n    for i in 1..=3 {\n        print!(\"{}\", i);\n    }\n    println!();\n}",
+          "options": ["123", "0123", "1\n2\n3", "123\n123"],
+          "answer": "123",
+          "why": "1..=3 includes 3. print! does not add a newline, so the digits sit on one line, and println!() ends it."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn main() {\n    let mut n = 0;\n    while n < 2 {\n        print!(\"x\");\n        n = n + 1;\n    }\n    println!();\n}",
+          "options": ["xx", "x", "xxx", "x\nx"],
+          "answer": "xx",
+          "why": "The body runs for n = 0 and n = 1. Then n is 2 and the test fails."
+        },
+        {
+          "q": "What numbers are in 0..3?",
+          "options": ["0, 1 and 2", "0, 1, 2 and 3", "1, 2 and 3", "3 only"],
+          "answer": "0, 1 and 2",
+          "why": "A range written with .. leaves out the end. ..= would include it."
+        },
+        {
+          "q": "Why is n declared mut in the while example?",
+          "options": [
+            "The loop assigns a new value to n",
+            "while requires mut on every name",
+            "n is shared with another thread",
+            "println! needs mut"
+          ],
+          "answer": "The loop assigns a new value to n",
+          "why": "n = n - 1 changes the binding, so it must be mut. The test reads n; reading alone would not need mut."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn main() {\n    for i in 0..4 {\n        if i == 2 {\n            continue;\n        }\n        print!(\"{}\", i);\n    }\n    println!();\n}",
+          "options": ["013", "0123", "01", "23"],
+          "answer": "013",
+          "why": "continue skips the rest of this pass. 2 is not printed, then the loop goes on to 3."
+        }
+      ]
+    },
+    {
+      "id": "functions",
+      "title": "Functions and ownership",
+      "summary": "Parameters, return values, and one owner.",
+      "sections": [
+        {
+          "p": "A function names its parameter types and, after <code>-&gt;</code>, its return type. The last expression of the body, with no semicolon, is the value returned. A semicolon would turn it into a statement that returns nothing.",
+          "code": "fn add(a: i32, b: i32) -> i32 {\n    a + b\n}\nfn main() {\n    println!(\"{}\", add(2, 3));\n}",
+          "out": "5"
+        },
+        {
+          "h": "One owner",
+          "p": "A <code>String</code> has one owner. Assigning it to another name <b>moves</b> it: the old name may no longer be used. Integers are <code>Copy</code>, so assigning an <code>i32</code> copies it and both names stay usable. Passing <code>&amp;name</code> lends a reference without moving the string.",
+          "code": "fn main() {\n    let name = String::from(\"ada\");\n    println!(\"{}\", name);\n    let n = 3;\n    let m = n;\n    println!(\"{} {}\", n, m);\n}",
+          "out": "ada\n3 3"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn twice(n: i32) -> i32 {\n    n * 2\n}\nfn main() {\n    println!(\"{}\", twice(4));\n}",
+          "options": ["8", "4", "2", "44"],
+          "answer": "8",
+          "why": "twice returns n * 2, and the call passes 4. The missing semicolon means that expression is the return value."
+        },
+        {
+          "q": "Which function body returns the sum?",
+          "options": ["a + b", "a + b;", "return a + b;", "println!(\"{}\", a + b)"],
+          "answer": "a + b",
+          "why": "An expression without a semicolon is the block's value. A semicolon throws the value away. println! prints but returns ()."
+        },
+        {
+          "q": "What happens to a String when you assign it to a new name?",
+          "options": [
+            "It moves, and the old name can no longer be used",
+            "Both names share it freely",
+            "It is copied, like an i32",
+            "The program prints it"
+          ],
+          "answer": "It moves, and the old name can no longer be used",
+          "why": "String is not Copy. The new name becomes the owner. An i32 is copied instead, which is why both names still work for numbers."
+        },
+        {
+          "q": "What does &name pass to a function?",
+          "options": [
+            "A borrow, leaving you as the owner",
+            "The string, which you then lose",
+            "A copy of every character",
+            "Nothing; & is a comment"
+          ],
+          "answer": "A borrow, leaving you as the owner",
+          "why": "A reference lets the function look at the value without taking ownership."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn greet() {\n    println!(\"hi\");\n}\nfn main() {\n    greet();\n    greet();\n}",
+          "options": ["hi\nhi", "hi", "greet\ngreet", "hi hi"],
+          "answer": "hi\nhi",
+          "why": "A function with no -> returns (). Each call prints one line."
+        }
+      ]
+    },
+    {
+      "id": "borrowing",
+      "title": "Borrowing and references",
+      "summary": "Using a value without taking it.",
+      "sections": [
+        {
+          "p": "Passing a <code>String</code> to a function moves it, and the caller can't use it any more. Usually you only want to let the function <b>look</b>. Writing <code>&amp;name</code> lends a <b>reference</b>, and the parameter type <code>&amp;String</code> (or better, <code>&amp;str</code>) says the function borrows. When the function returns, the loan ends and the owner carries on.",
+          "code": "fn letters(text: &str) -> usize {\n    text.chars().count()\n}\n\nfn main() {\n    let name = String::from(\"hazelnut\");\n    let n = letters(&name);\n    println!(\"{} has {} letters\", name, n);\n    println!(\"a literal works too: {}\", letters(\"acorn\"));\n}",
+          "out": "hazelnut has 8 letters\na literal works too: 5"
+        },
+        {
+          "h": "Mutable borrows",
+          "p": "To let a function change a value, lend it with <code>&amp;mut</code>. Rust's central rule is that at any moment you may have <b>either</b> any number of shared references <b>or</b> exactly one mutable one, never both. That rule, checked by the compiler, is what rules out data races and many of C's pointer bugs.",
+          "code": "fn add_nuts(store: &mut Vec<u32>, n: u32) {\n    store.push(n);\n}\n\nfn total(store: &Vec<u32>) -> u32 {\n    store.iter().sum()\n}\n\nfn main() {\n    let mut store = vec![3, 5];\n    add_nuts(&mut store, 7);\n    add_nuts(&mut store, 1);\n    let first = &store[0];\n    let last = &store[store.len() - 1];\n    println!(\"first {}, last {}, total {}\", first, last, total(&store));\n}",
+          "out": "first 3, last 1, total 16"
+        },
+        {
+          "h": "Slices",
+          "p": "A <b>slice</b> borrows part of a collection: <code>&amp;v[1..3]</code> is elements 1 and 2 of a vector, and <code>&amp;s[0..3]</code> is the first three bytes of a string. A <code>&amp;str</code> is a string slice. Functions that take slices work with whole collections and parts of them alike.",
+          "code": "fn biggest(values: &[i32]) -> i32 {\n    let mut best = values[0];\n    for &v in values {\n        if v > best {\n            best = v;\n        }\n    }\n    best\n}\n\nfn main() {\n    let days = [4, 9, 2, 12, 6];\n    println!(\"{}\", biggest(&days));\n    println!(\"{}\", biggest(&days[2..]));\n    let tree = String::from(\"sycamore\");\n    let start: &str = &tree[0..3];\n    println!(\"{}\", start);\n}",
+          "out": "12\n12\nsyc"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn shout(s: &mut String) {\n    s.push('!');\n}\n\nfn main() {\n    let mut s = String::from(\"nuts\");\n    shout(&mut s);\n    shout(&mut s);\n    println!(\"{}\", s);\n}",
+          "options": ["nuts!!", "nuts!", "nuts", "!nuts!"],
+          "answer": "nuts!!",
+          "why": "Each call borrows s mutably and adds one character."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn main() {\n    let v = vec![10, 20, 30, 40];\n    let part = &v[1..3];\n    println!(\"{} {}\", part.len(), part[0]);\n}",
+          "options": ["2 20", "3 20", "2 10", "3 10"],
+          "answer": "2 20",
+          "why": "1..3 includes index 1 but not 3, so the slice is [20, 30]."
+        },
+        {
+          "q": "Which borrows can exist at the same time?",
+          "options": [
+            "Many shared (&) references, or one mutable (&mut) reference",
+            "Any number of each",
+            "One shared and one mutable",
+            "Only one reference of any kind"
+          ],
+          "answer": "Many shared (&) references, or one mutable (&mut) reference",
+          "why": "Readers can share, but a writer needs exclusive access."
+        }
+      ]
+    },
+    {
+      "id": "structs",
+      "title": "Structs and methods",
+      "summary": "Your own types, with impl blocks.",
+      "sections": [
+        {
+          "p": "A <code>struct</code> groups named fields. Methods go in an <code>impl</code> block. A method's first parameter says how it uses the value: <code>&amp;self</code> to read, <code>&amp;mut self</code> to change it. A function in the block without <code>self</code>, such as <code>new</code>, is called with <code>::</code> and is often used as a constructor.",
+          "code": "struct Squirrel {\n    name: String,\n    nuts: u32,\n}\n\nimpl Squirrel {\n    fn new(name: &str) -> Squirrel {\n        Squirrel { name: name.to_string(), nuts: 0 }\n    }\n\n    fn gather(&mut self, found: u32) {\n        self.nuts += found;\n    }\n\n    fn report(&self) -> String {\n        format!(\"{} has {} nuts\", self.name, self.nuts)\n    }\n}\n\nfn main() {\n    let mut sam = Squirrel::new(\"Sam\");\n    sam.gather(4);\n    sam.gather(6);\n    println!(\"{}\", sam.report());\n}",
+          "out": "Sam has 10 nuts"
+        },
+        {
+          "h": "Deriving traits",
+          "p": "<code>#[derive(...)]</code> asks the compiler to write common behaviour for you. <code>Debug</code> lets <code>{:?}</code> print the value, <code>Clone</code> adds <code>.clone()</code>, and <code>PartialEq</code> adds <code>==</code>. Struct update syntax, <code>..other</code>, fills the remaining fields from another value.",
+          "code": "#[derive(Debug, Clone, PartialEq)]\nstruct Tree {\n    kind: String,\n    height: f64,\n    nuts: u32,\n}\n\nfn main() {\n    let oak = Tree { kind: \"oak\".to_string(), height: 18.5, nuts: 120 };\n    let twin = oak.clone();\n    let young = Tree { height: 2.0, nuts: 0, ..oak.clone() };\n    println!(\"{:?}\", young);\n    println!(\"{}\", oak == twin);\n    println!(\"{}\", oak == young);\n}",
+          "out": "Tree { kind: \"oak\", height: 2.0, nuts: 0 }\ntrue\nfalse"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "struct Counter {\n    n: u32,\n}\n\nimpl Counter {\n    fn tick(&mut self) -> u32 {\n        self.n += 1;\n        self.n\n    }\n}\n\nfn main() {\n    let mut c = Counter { n: 0 };\n    c.tick();\n    c.tick();\n    println!(\"{}\", c.tick());\n}",
+          "options": ["3", "1", "2", "0"],
+          "answer": "3",
+          "why": "Each tick adds one and returns the new count."
+        },
+        {
+          "q": "What does &mut self in a method's parameters mean?",
+          "options": [
+            "The method may change the value it is called on",
+            "The method takes ownership and destroys the value",
+            "The method can only read",
+            "The method is a constructor"
+          ],
+          "answer": "The method may change the value it is called on",
+          "why": "&self reads, &mut self changes, and self (without &) takes ownership."
+        },
+        {
+          "q": "What does #[derive(Debug)] give you?",
+          "options": [
+            "The ability to print the value with {:?}",
+            "Automatic error handling",
+            "A faster compile",
+            "A default constructor"
+          ],
+          "answer": "The ability to print the value with {:?}",
+          "why": "The compiler writes the formatting code for every field."
+        }
+      ]
+    },
+    {
+      "id": "enums",
+      "title": "Enums, match and Option",
+      "summary": "A value that is one of several kinds.",
+      "sections": [
+        {
+          "p": "A Rust <code>enum</code> lists the kinds a value can be, and each kind can carry its own data. <code>match</code> picks code for each kind and pulls the data out. The compiler checks that every kind is handled, so adding a new one shows you every place that needs updating.",
+          "code": "enum Find {\n    Nothing,\n    Nuts(u32),\n    Seeds { kind: String, count: u32 },\n}\n\nfn describe(f: &Find) -> String {\n    match f {\n        Find::Nothing => \"nothing today\".to_string(),\n        Find::Nuts(1) => \"a single nut\".to_string(),\n        Find::Nuts(n) => format!(\"{} nuts\", n),\n        Find::Seeds { kind, count } => format!(\"{} {} seeds\", count, kind),\n    }\n}\n\nfn main() {\n    let days = vec![\n        Find::Nuts(5),\n        Find::Nothing,\n        Find::Seeds { kind: \"sunflower\".to_string(), count: 12 },\n        Find::Nuts(1),\n    ];\n    for d in &days {\n        println!(\"{}\", describe(d));\n    }\n}",
+          "out": "5 nuts\nnothing today\n12 sunflower seeds\na single nut"
+        },
+        {
+          "h": "Option instead of null",
+          "p": "Rust has no null. A value that may be missing has type <code>Option&lt;T&gt;</code>, an enum with two kinds: <code>Some(value)</code> or <code>None</code>. You can't use the value without handling <code>None</code> first, with <code>match</code>, <code>if let</code>, or a helper such as <code>unwrap_or</code>.",
+          "code": "fn find_tree<'a>(trees: &[&'a str], first: char) -> Option<&'a str> {\n    for t in trees {\n        if t.starts_with(first) {\n            return Some(t);\n        }\n    }\n    None\n}\n\nfn main() {\n    let trees = [\"oak\", \"beech\", \"hazel\"];\n    match find_tree(&trees, 'b') {\n        Some(t) => println!(\"found {}\", t),\n        None => println!(\"none\"),\n    }\n    if let Some(t) = find_tree(&trees, 'h') {\n        println!(\"{} has {} letters\", t, t.len());\n    }\n    println!(\"{}\", find_tree(&trees, 'z').unwrap_or(\"no tree\"));\n    let first = trees.first().map(|t| t.to_uppercase());\n    println!(\"{:?}\", first);\n}",
+          "out": "found beech\nhazel has 5 letters\nno tree\nSome(\"OAK\")"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn main() {\n    let a: Option<u32> = Some(4);\n    let b: Option<u32> = None;\n    println!(\"{} {}\", a.unwrap_or(0) * 2, b.unwrap_or(7));\n}",
+          "options": ["8 7", "8 0", "4 7", "0 7"],
+          "answer": "8 7",
+          "why": "a holds 4, so 4 * 2 = 8; b is None, so unwrap_or gives 7."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "enum Light {\n    Red,\n    Amber,\n    Green,\n}\n\nfn main() {\n    let l = Light::Amber;\n    let s = match l {\n        Light::Red => \"stop\",\n        Light::Amber => \"wait\",\n        Light::Green => \"go\",\n    };\n    println!(\"{}\", s);\n}",
+          "options": ["wait", "stop", "go", "Amber"],
+          "answer": "wait",
+          "why": "match is an expression; the Amber arm gives \"wait\"."
+        },
+        {
+          "q": "What happens if a match does not handle every kind of an enum?",
+          "options": [
+            "The program does not compile",
+            "The missing cases do nothing",
+            "It panics at run time",
+            "It returns None"
+          ],
+          "answer": "The program does not compile",
+          "why": "Matches must be exhaustive; _ can stand for all remaining kinds."
+        }
+      ]
+    },
+    {
+      "id": "errors",
+      "title": "Errors with Result and ?",
+      "summary": "Failures you have to deal with.",
+      "sections": [
+        {
+          "p": "Operations that can fail return <code>Result&lt;T, E&gt;</code>: <code>Ok(value)</code> on success or <code>Err(error)</code> on failure. Turning text into a number with <code>parse</code> is one. As with <code>Option</code>, the compiler makes you look at the result before using the value.",
+          "code": "fn main() {\n    for text in [\"42\", \"forty-two\", \"-3\"] {\n        match text.parse::<u32>() {\n            Ok(n) => println!(\"{} -> {}\", text, n),\n            Err(e) => println!(\"{} -> error: {}\", text, e),\n        }\n    }\n}",
+          "out": "42 -> 42\nforty-two -> error: invalid digit found in string\n-3 -> error: invalid digit found in string"
+        },
+        {
+          "h": "Passing errors on with ?",
+          "p": "Inside a function that itself returns <code>Result</code>, the <code>?</code> operator means: if this is an <code>Err</code>, return it from the function now; otherwise take the value out and carry on. That keeps the happy path readable. You can define your own error type, often an enum, and <code>map_err</code> converts one error into another.",
+          "code": "#[derive(Debug)]\nenum TakeError {\n    NotANumber(String),\n    TooMany { asked: u32, stored: u32 },\n}\n\nfn take(stored: u32, request: &str) -> Result<u32, TakeError> {\n    let asked: u32 = request\n        .trim()\n        .parse()\n        .map_err(|_| TakeError::NotANumber(request.to_string()))?;\n    if asked > stored {\n        return Err(TakeError::TooMany { asked, stored });\n    }\n    Ok(stored - asked)\n}\n\nfn main() {\n    println!(\"{:?}\", take(10, \" 4 \"));\n    println!(\"{:?}\", take(10, \"lots\"));\n    println!(\"{:?}\", take(10, \"12\"));\n}",
+          "out": "Ok(6)\nErr(NotANumber(\"lots\"))\nErr(TooMany { asked: 12, stored: 10 })"
+        },
+        {
+          "h": "When to panic",
+          "p": "<code>unwrap()</code> takes the value out of an <code>Ok</code> or <code>Some</code> and <b>panics</b>, stopping the program, if there is none. <code>expect(\"message\")</code> does the same with a clearer message. Use them in quick experiments and where failure would be a bug in your own code, and return a <code>Result</code> where the failure comes from outside, such as user input or a missing file."
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn half(n: i32) -> Result<i32, String> {\n    if n % 2 == 0 {\n        Ok(n / 2)\n    } else {\n        Err(format!(\"{} is odd\", n))\n    }\n}\n\nfn quarter(n: i32) -> Result<i32, String> {\n    let h = half(n)?;\n    half(h)\n}\n\nfn main() {\n    println!(\"{:?} {:?}\", quarter(12), quarter(6));\n}",
+          "options": [
+            "Ok(3) Err(\"3 is odd\")",
+            "Ok(3) Ok(1)",
+            "Ok(3) Err(\"6 is odd\")",
+            "Ok(6) Ok(3)"
+          ],
+          "answer": "Ok(3) Err(\"3 is odd\")",
+          "why": "12 halves to 6 and then to 3. 6 halves to 3, and halving 3 fails, so quarter returns that Err."
+        },
+        {
+          "q": "What does ? do on an Err value?",
+          "options": [
+            "Returns that error from the current function",
+            "Panics",
+            "Replaces it with a default",
+            "Ignores it"
+          ],
+          "answer": "Returns that error from the current function",
+          "why": "On Ok it unwraps the value; on Err it returns early."
+        },
+        {
+          "q": "Where is unwrap() a reasonable choice?",
+          "options": [
+            "In quick experiments, or where failure would be a bug in your own code",
+            "When reading user input",
+            "When opening files chosen by the user",
+            "Never, it does not compile"
+          ],
+          "answer": "In quick experiments, or where failure would be a bug in your own code",
+          "why": "For failures that come from outside, return a Result so the caller can decide."
+        }
+      ]
+    },
+    {
+      "id": "collections",
+      "title": "Collections, iterators and closures",
+      "summary": "Vec, HashMap, and chains of iterator methods.",
+      "sections": [
+        {
+          "p": "A <b>closure</b> is a function written in place: <code>|n| n * 2</code>. Iterators take closures in methods such as <code>filter</code>, <code>map</code> and <code>sum</code>. The chain does nothing until something consumes it, such as <code>sum</code>, <code>count</code> or <code>collect</code>, which builds a new collection.",
+          "code": "fn main() {\n    let days = vec![5, 12, 3, 8, 15, 1];\n    let big: Vec<u32> = days.iter().filter(|&&n| n > 4).cloned().collect();\n    println!(\"{:?}\", big);\n    let doubled: Vec<u32> = days.iter().map(|n| n * 2).collect();\n    println!(\"{:?}\", doubled);\n    let total: u32 = days.iter().sum();\n    let best = days.iter().max().unwrap();\n    println!(\"total {}, best {}\", total, best);\n    let limit = 10;\n    let over = days.iter().filter(|&&n| n > limit).count();\n    println!(\"{} days over {}\", over, limit);\n    for (i, n) in days.iter().enumerate().take(2) {\n        println!(\"day {}: {}\", i + 1, n);\n    }\n}",
+          "out": "[5, 12, 8, 15]\n[10, 24, 6, 16, 30, 2]\ntotal 44, best 15\n2 days over 10\nday 1: 5\nday 2: 12"
+        },
+        {
+          "h": "HashMap and the entry API",
+          "p": "<code>HashMap</code> stores values by key. <code>entry(key).or_insert(0)</code> gives a mutable reference to the value for a key, inserting 0 first if it is missing, which makes counting a one-liner. A hash map keeps no particular order, so copy the pairs into a <code>Vec</code> and sort them before printing.",
+          "code": "use std::collections::HashMap;\n\nfn main() {\n    let finds = [\"acorn\", \"hazelnut\", \"acorn\", \"walnut\", \"acorn\", \"hazelnut\"];\n    let mut counts: HashMap<&str, u32> = HashMap::new();\n    for f in finds {\n        *counts.entry(f).or_insert(0) += 1;\n    }\n    let mut rows: Vec<(&str, u32)> = counts.into_iter().collect();\n    rows.sort_by(|a, b| b.1.cmp(&a.1).then(a.0.cmp(b.0)));\n    for (nut, n) in &rows {\n        println!(\"{:<9}{}\", nut, n);\n    }\n}",
+          "out": "acorn    3\nhazelnut 2\nwalnut   1"
+        },
+        {
+          "h": "Strings",
+          "p": "<code>String</code> is growable, owned text; <code>&amp;str</code> is borrowed text. Both are UTF-8, so <code>len()</code> counts bytes and <code>chars()</code> walks real characters. <code>split_whitespace</code>, <code>to_uppercase</code>, <code>contains</code> and <code>format!</code> cover most daily needs.",
+          "code": "fn main() {\n    let line = \"the squirrel buried an acorn\";\n    let words: Vec<&str> = line.split_whitespace().collect();\n    println!(\"{} words, longest: {}\", words.len(), words.iter().max_by_key(|w| w.len()).unwrap());\n    let caps: Vec<String> = words.iter().map(|w| w.to_uppercase()).collect();\n    println!(\"{}\", caps.join(\"-\"));\n    let word = \"naïve\";\n    println!(\"{} bytes, {} chars\", word.len(), word.chars().count());\n    println!(\"{}\", line.contains(\"acorn\"));\n}",
+          "out": "5 words, longest: squirrel\nTHE-SQUIRREL-BURIED-AN-ACORN\n6 bytes, 5 chars\ntrue"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn main() {\n    let v = vec![1, 2, 3, 4, 5, 6];\n    let s: i32 = v.iter().filter(|&&n| n % 2 == 0).map(|n| n * 10).sum();\n    println!(\"{}\", s);\n}",
+          "options": ["120", "21", "12", "60"],
+          "answer": "120",
+          "why": "The even numbers 2, 4 and 6 become 20, 40 and 60, which add up to 120."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "use std::collections::HashMap;\n\nfn main() {\n    let mut m = HashMap::new();\n    for w in [\"a\", \"b\", \"a\", \"a\"] {\n        *m.entry(w).or_insert(0) += 1;\n    }\n    println!(\"{} {}\", m[\"a\"], m.len());\n}",
+          "options": ["3 2", "3 4", "1 2", "2 2"],
+          "answer": "3 2",
+          "why": "\"a\" appears three times, and there are two different keys."
+        },
+        {
+          "q": "When does a chain like v.iter().map(...).filter(...) do its work?",
+          "options": [
+            "Only when something consumes it, such as sum, count or collect",
+            "As soon as map is called",
+            "When the program starts",
+            "Never; it must be in a for loop"
+          ],
+          "answer": "Only when something consumes it, such as sum, count or collect",
+          "why": "Iterators are lazy, which also lets them stop early with take."
+        }
+      ]
+    },
+    {
+      "id": "traits",
+      "title": "Traits and generics",
+      "summary": "Shared behaviour, and code that works for many types.",
+      "sections": [
+        {
+          "p": "A <b>trait</b> names behaviour that types can share, like an interface in other languages. Each type implements it in an <code>impl Trait for Type</code> block. A trait can give a <b>default</b> method that types get for free. Implementing the standard <code>Display</code> trait lets a type be printed with <code>{}</code>.",
+          "code": "use std::fmt;\n\ntrait Store {\n    fn name(&self) -> String;\n    fn capacity(&self) -> u32;\n    fn describe(&self) -> String {\n        format!(\"{} holds {}\", self.name(), self.capacity())\n    }\n}\n\nstruct Hollow;\nstruct Burrow {\n    depth: u32,\n}\n\nimpl Store for Hollow {\n    fn name(&self) -> String {\n        \"tree hollow\".to_string()\n    }\n    fn capacity(&self) -> u32 {\n        120\n    }\n}\n\nimpl Store for Burrow {\n    fn name(&self) -> String {\n        format!(\"burrow {} cm deep\", self.depth)\n    }\n    fn capacity(&self) -> u32 {\n        self.depth * 2\n    }\n}\n\nimpl fmt::Display for Burrow {\n    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {\n        write!(f, \"Burrow({})\", self.depth)\n    }\n}\n\nfn main() {\n    println!(\"{}\", Hollow.describe());\n    let b = Burrow { depth: 30 };\n    println!(\"{}\", b.describe());\n    println!(\"{}\", b);\n}",
+          "out": "tree hollow holds 120\nburrow 30 cm deep holds 60\nBurrow(30)"
+        },
+        {
+          "h": "Generic functions and trait objects",
+          "p": "A generic function such as <code>fn largest&lt;T: PartialOrd + Copy&gt;</code> works for any type with the listed traits; the compiler makes a fast copy for each type it is used with. When a collection must hold <i>different</i> types that share a trait, use a <b>trait object</b>, <code>Box&lt;dyn Store&gt;</code>, and the right method is chosen while the program runs.",
+          "code": "trait Sound {\n    fn sound(&self) -> &str;\n}\n\nstruct Squirrel;\nstruct Owl;\n\nimpl Sound for Squirrel {\n    fn sound(&self) -> &str {\n        \"chitter\"\n    }\n}\n\nimpl Sound for Owl {\n    fn sound(&self) -> &str {\n        \"hoot\"\n    }\n}\n\nfn largest<T: PartialOrd + Copy>(items: &[T]) -> T {\n    let mut best = items[0];\n    for &i in items {\n        if i > best {\n            best = i;\n        }\n    }\n    best\n}\n\nfn main() {\n    println!(\"{} {}\", largest(&[3, 9, 4]), largest(&[1.5, 0.2]));\n    let wood: Vec<Box<dyn Sound>> = vec![Box::new(Squirrel), Box::new(Owl), Box::new(Squirrel)];\n    let sounds: Vec<&str> = wood.iter().map(|a| a.sound()).collect();\n    println!(\"{}\", sounds.join(\" \"));\n}",
+          "out": "9 1.5\nchitter hoot chitter"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "trait Greet {\n    fn name(&self) -> String;\n    fn hello(&self) -> String {\n        format!(\"hi {}\", self.name())\n    }\n}\n\nstruct Sam;\n\nimpl Greet for Sam {\n    fn name(&self) -> String {\n        \"Sam\".to_string()\n    }\n}\n\nfn main() {\n    println!(\"{}\", Sam.hello());\n}",
+          "options": ["hi Sam", "Sam", "hi", "It does not compile"],
+          "answer": "hi Sam",
+          "why": "Sam only supplies name; hello comes from the trait's default."
+        },
+        {
+          "q": "When do you need Box<dyn Trait> instead of a generic T: Trait?",
+          "options": [
+            "When one collection must hold values of different types",
+            "Whenever a trait has methods",
+            "When the types are numbers",
+            "Never; they are the same"
+          ],
+          "answer": "When one collection must hold values of different types",
+          "why": "A Vec<T> holds one type; a Vec<Box<dyn Trait>> can mix any types that implement the trait."
+        },
+        {
+          "q": "What does implementing fmt::Display for a type allow?",
+          "options": [
+            "Printing it with {} in println! and format!",
+            "Comparing it with ==",
+            "Copying it",
+            "Sorting it"
+          ],
+          "answer": "Printing it with {} in println! and format!",
+          "why": "{:?} needs Debug; {} needs Display."
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Project: a nut ledger",
+      "summary": "Structs, enums, Result, HashMap and iterators together.",
+      "sections": [
+        {
+          "p": "This program reads a small ledger written as text, one entry per line, such as <code>day 3: acorn x9</code>. It parses each line into a struct, collecting errors for bad lines instead of stopping, totals each kind of nut in a <code>HashMap</code>, and prints a sorted report. Notice how <code>?</code> keeps the parser short, and how <code>split_once</code> returns an <code>Option</code> that <code>ok_or</code> turns into an error.",
+          "code": "use std::collections::HashMap;\n\n#[derive(Debug)]\nstruct Entry {\n    day: u32,\n    nut: String,\n    count: u32,\n}\n\nfn parse(line: &str) -> Result<Entry, String> {\n    let (day_part, rest) = line.split_once(':').ok_or(\"missing ':'\")?;\n    let day = day_part\n        .trim()\n        .strip_prefix(\"day \")\n        .ok_or(\"line must start with 'day'\")?\n        .parse::<u32>()\n        .map_err(|e| format!(\"bad day: {}\", e))?;\n    let (nut, count) = rest.trim().split_once(\" x\").ok_or(\"missing ' x'\")?;\n    let count = count.parse::<u32>().map_err(|e| format!(\"bad count: {}\", e))?;\n    Ok(Entry { day, nut: nut.to_string(), count })\n}\n\nfn main() {\n    let ledger = \"day 1: acorn x6\nday 1: hazelnut x2\nday 2: walnut x1\nday two: acorn x3\nday 3: acorn x9\nday 3: hazelnut x4\nday 4 acorn x5\";\n\n    let mut entries = Vec::new();\n    for (i, line) in ledger.lines().enumerate() {\n        match parse(line) {\n            Ok(e) => entries.push(e),\n            Err(msg) => println!(\"line {} skipped: {}\", i + 1, msg),\n        }\n    }\n\n    let mut totals: HashMap<&str, u32> = HashMap::new();\n    for e in &entries {\n        *totals.entry(e.nut.as_str()).or_insert(0) += e.count;\n    }\n    let mut rows: Vec<_> = totals.into_iter().collect();\n    rows.sort_by(|a, b| b.1.cmp(&a.1).then(a.0.cmp(b.0)));\n\n    let all: u32 = entries.iter().map(|e| e.count).sum();\n    for (nut, n) in &rows {\n        println!(\"{:<9}{:>3} {:>5.1}%\", nut, n, 100.0 * *n as f64 / all as f64);\n    }\n    let best = entries.iter().max_by_key(|e| e.count).unwrap();\n    println!(\"best find: {} {} on day {}\", best.count, best.nut, best.day);\n}",
+          "out": "line 4 skipped: bad day: invalid digit found in string\nline 7 skipped: missing ':'\nacorn     15  68.2%\nhazelnut   6  27.3%\nwalnut     1   4.5%\nbest find: 9 acorn on day 3"
+        },
+        {
+          "h": "Ideas to try",
+          "p": "Read the ledger from a file with <code>std::fs::read_to_string</code> (which returns a <code>Result</code> too), replace the <code>String</code> errors with an error enum, or add a <code>Display</code> implementation for <code>Entry</code> so it can print itself."
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "fn main() {\n    let line = \"oak: 12\";\n    match line.split_once(\": \") {\n        Some((tree, n)) => println!(\"{} {}\", n, tree),\n        None => println!(\"none\"),\n    }\n}",
+          "options": ["12 oak", "oak 12", "none", "oak: 12"],
+          "answer": "12 oak",
+          "why": "split_once returns the parts before and after the first \": \", and the program prints them swapped."
+        },
+        {
+          "q": "Why does the program collect errors per line instead of using ? in main?",
+          "options": [
+            "So one bad line is reported and skipped instead of stopping the whole report",
+            "Because ? only works in main",
+            "Because Result cannot be printed",
+            "To make it faster"
+          ],
+          "answer": "So one bad line is reported and skipped instead of stopping the whole report",
+          "why": "? passes the error up; here main decides to log it and carry on."
+        },
+        {
+          "q": "What does ok_or do?",
+          "options": [
+            "Turns an Option into a Result, using the given error for None",
+            "Unwraps or panics",
+            "Turns a Result into an Option",
+            "Returns true when the value is Some"
+          ],
+          "answer": "Turns an Option into a Result, using the given error for None",
+          "why": "That lets ? be used on Options inside a function that returns Result."
+        }
+      ]
+    }
+  ]
+}
