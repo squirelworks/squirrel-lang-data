@@ -1,0 +1,867 @@
+{
+  "schema": "programming-course@1",
+  "id": "malbolge",
+  "name": "Malbolge",
+  "title": "The language from the eighth circle",
+  "intro": "Ben Olmstead designed Malbolge in 1998 to be as hard to program as possible, and named it after the eighth circle of Hell in Dante's Inferno. It took two years before anyone produced a working program, and that first Hello World was found by a computer search, not written by hand. The interesting part is not writing Malbolge but understanding why it fights back.",
+  "lessons": [
+    {
+      "id": "machine",
+      "title": "How the machine works",
+      "summary": "Base 3, three registers, and code that changes as it runs.",
+      "sections": [
+        {
+          "h": "Ternary memory",
+          "p": "Malbolge counts in base 3. Each memory cell holds a 10-trit number (0 to 59048), and there are 3<sup>10</sup> = 59049 cells. There are three registers: <code>a</code> (the accumulator), <code>c</code> (the code pointer) and <code>d</code> (the data pointer)."
+        },
+        {
+          "h": "Instructions depend on where they are",
+          "p": "To decide what to do, the machine adds the character at <code>[c]</code> to the address <code>c</code> itself and takes the remainder after dividing by 94. Only eight results mean anything, such as jump, print, read, rotate, the “crazy” operation, and stop. So the same character means different things at different positions."
+        },
+        {
+          "h": "Self-encrypting code",
+          "p": "After each instruction runs, the character at <code>[c]</code> is replaced using a fixed scrambling table. The next time the program passes that spot, the instruction is different. Loops therefore have to be designed so the code returns to a useful state, which is a big part of why Malbolge is so hard."
+        },
+        {
+          "h": "The crazy operation",
+          "p": "Malbolge has no add or subtract. Its only arithmetic is the “crazy” operation, which combines two numbers trit by trit using a 3×3 table that matches no familiar logic gate. Rotating a number's trits right is the only other way to change data."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What number base does Malbolge use?",
+          "options": ["Base 3", "Base 2", "Base 10", "Base 94"],
+          "answer": "Base 3",
+          "why": "Its memory and arithmetic are ternary, built from trits."
+        },
+        {
+          "q": "What happens to an instruction after it runs?",
+          "options": [
+            "It is scrambled into a different one",
+            "It is deleted",
+            "It stays the same",
+            "It is printed"
+          ],
+          "answer": "It is scrambled into a different one",
+          "why": "Each executed cell is encrypted with a fixed table, so code changes as it runs."
+        },
+        {
+          "q": "How was the first Malbolge Hello World made?",
+          "options": [
+            "A computer search found it",
+            "Ben Olmstead wrote it by hand",
+            "It was translated from C",
+            "It came with the specification"
+          ],
+          "answer": "A computer search found it",
+          "why": "Andrew Cooke's program was found by a beam search, two years after the language was released."
+        },
+        {
+          "q": "Why does the same character mean different things in different places?",
+          "options": [
+            "The instruction is (character + address) mod 94",
+            "Characters are randomly chosen",
+            "Each line has its own alphabet",
+            "It does not; it is always the same"
+          ],
+          "answer": "The instruction is (character + address) mod 94",
+          "why": "The address is mixed in before the instruction is decoded."
+        },
+        {
+          "q": "How many memory cells does Malbolge have?",
+          "options": ["59049", "256", "65536", "94"],
+          "answer": "59049",
+          "why": "Each cell is 10 trits, so there are 3 to the power 10 cells."
+        },
+        {
+          "q": "What is the largest value a memory cell can hold?",
+          "options": ["59048", "255", "65535", "93"],
+          "answer": "59048",
+          "why": "A 10-trit number ranges from 0 to 3^10 − 1."
+        },
+        {
+          "q": "Which three registers does the machine keep?",
+          "options": ["a, c and d", "A, B and C", "pc, sp and acc", "x, y and z"],
+          "answer": "a, c and d",
+          "why": "a is the accumulator, c the code pointer and d the data pointer."
+        },
+        {
+          "q": "Who designed Malbolge?",
+          "options": ["Ben Olmstead", "Andrew Cooke", "Dante Alighieri", "Chris Pressey"],
+          "answer": "Ben Olmstead",
+          "why": "Olmstead published it in 1998; Cooke found the first Hello World later."
+        }
+      ]
+    },
+    {
+      "id": "decode",
+      "title": "Reading an instruction",
+      "summary": "(c + [c]) mod 94, and the eight that count.",
+      "sections": [
+        {
+          "p": "To find out what the cell at address <code>c</code> does, take its character code, add the address, and keep the remainder after dividing by 94. Only eight remainders are instructions:<table class=\"ops\"><tr><th>Remainder</th><th>Letter</th><th>What it does</th></tr><tr><td>4</td><td>i</td><td>jump: <code>c</code> becomes <code>[d]</code></td></tr><tr><td>5</td><td>&lt;</td><td>print <code>a</code> mod 256 as a character</td></tr><tr><td>23</td><td>/</td><td>read a character into <code>a</code></td></tr><tr><td>39</td><td>*</td><td>rotate <code>[d]</code> one trit right and copy it to <code>a</code></td></tr><tr><td>40</td><td>j</td><td><code>d</code> becomes <code>[d]</code></td></tr><tr><td>62</td><td>p</td><td>crazy operation on <code>a</code> and <code>[d]</code>, result to both</td></tr><tr><td>68</td><td>o</td><td>do nothing</td></tr><tr><td>81</td><td>v</td><td>stop</td></tr></table>"
+        },
+        {
+          "h": "A worked example",
+          "p": "The character <code>c</code> has code 99. At address 0, 99 + 0 = 99, and 99 mod 94 = 5, so it prints. Move the same <code>c</code> to address 1 and the sum is 100, remainder 6, which is not an instruction. To print from address 1 you need code 98, the character <code>b</code>."
+        },
+        {
+          "h": "Normalized Malbolge",
+          "p": "Because the meaning depends on the address, people often rewrite a program as the letters in the table above, one per cell. This is called <b>normalized</b> Malbolge, and it is far easier to read. For example, <code>'C&lt;A@9&gt;=&lt;;4XE</code> normalizes to <code>*opoopoooop&lt;v</code>, a program you will meet again in the last lesson."
+        },
+        {
+          "h": "Only real instructions may be loaded",
+          "p": "The original interpreter refuses to load a program if any character is not one of the eight instructions at its own address. The registers <code>a</code>, <code>c</code> and <code>d</code> all start at 0, so the first instruction is the one at address 0, and <code>d</code> starts out pointing at the program itself."
+        }
+      ],
+      "practice": [
+        {
+          "q": "At address 0, what does the character c (code 99) do?",
+          "options": ["Prints a", "Jumps", "Stops", "Nothing"],
+          "answer": "Prints a",
+          "why": "99 mod 94 = 5, the print instruction."
+        },
+        {
+          "q": "At address 2, which character prints?",
+          "options": ["a", "c", "b", "<"],
+          "answer": "a",
+          "why": "a is code 97, and 97 + 2 = 99, which leaves 5 after dividing by 94."
+        },
+        {
+          "q": "At address 0, what does D (code 68) do?",
+          "options": ["Nothing", "Stops", "Rotates", "Reads a character"],
+          "answer": "Nothing",
+          "why": "68 mod 94 is 68, the no-op."
+        },
+        {
+          "q": "What is normalized Malbolge?",
+          "options": [
+            "The program rewritten as one instruction letter per cell",
+            "A newer, easier version of the language",
+            "A program with its comments removed",
+            "The program after it has run once"
+          ],
+          "answer": "The program rewritten as one instruction letter per cell",
+          "why": "It shows what each cell does at its own address, which the raw characters hide."
+        },
+        {
+          "q": "Where does d point when a program starts?",
+          "options": [
+            "Address 0, the start of the program",
+            "The end of memory",
+            "Nowhere until j runs",
+            "The last character of the program"
+          ],
+          "answer": "Address 0, the start of the program",
+          "why": "All three registers start at 0, so code and data begin in the same place."
+        },
+        {
+          "q": "At address 0, what does Q (code 81) do?",
+          "options": ["Stops", "Prints a", "Nothing", "Jumps"],
+          "answer": "Stops",
+          "why": "81 mod 94 is 81, the halt instruction."
+        },
+        {
+          "q": "In normalized Malbolge, which letter means print?",
+          "options": ["<", "*", "p", "v"],
+          "answer": "<",
+          "why": "Remainder 5 is written as < in the normalized form."
+        },
+        {
+          "q": "What does remainder 39 (normalized *) do?",
+          "options": [
+            "Rotates [d] one trit right and copies it to a",
+            "Prints a",
+            "Jumps",
+            "Stops"
+          ],
+          "answer": "Rotates [d] one trit right and copies it to a",
+          "why": "That is the rotate instruction."
+        },
+        {
+          "q": "What does remainder 62 (normalized p) do?",
+          "options": [
+            "Crazy of a and [d], written to both",
+            "Prints a",
+            "Reads a character",
+            "Does nothing"
+          ],
+          "answer": "Crazy of a and [d], written to both",
+          "why": "p is the crazy operation."
+        }
+      ]
+    },
+    {
+      "id": "crazy",
+      "title": "Rotate and crazy",
+      "summary": "The only two ways to change a number.",
+      "sections": [
+        {
+          "p": "Numbers are written with 10 trits (ternary digits). <b>Rotate</b> moves every trit one place right, and the trit that falls off the end comes back at the front. 5 is <code>0000000012</code>; rotated it becomes <code>2000000001</code>, which is 2 × 3<sup>9</sup> + 1 = 39367."
+        },
+        {
+          "h": "The crazy table",
+          "p": "The crazy operation works trit by trit, using this table for each pair of trits:<table class=\"ops\"><tr><th></th><th>a = 0</th><th>a = 1</th><th>a = 2</th></tr><tr><th>[d] = 0</th><td>1</td><td>0</td><td>0</td></tr><tr><th>[d] = 1</th><td>1</td><td>0</td><td>2</td></tr><tr><th>[d] = 2</th><td>2</td><td>2</td><td>1</td></tr></table>It is not addition, AND, OR or anything else familiar, and it does not give the same answer if you swap the inputs."
+        },
+        {
+          "h": "Worked through",
+          "p": "Take <code>a</code> = 5 (<code>0000000012</code>) and <code>[d]</code> = 7 (<code>0000000021</code>). The last trits are a = 2 and [d] = 1, giving 2. The next pair is a = 1 and [d] = 2, giving 2. The other eight pairs are both 0, giving 1 each. The answer is <code>1111111122</code>, which is 29528, and it goes into both <code>a</code> and <code>[d]</code>."
+        },
+        {
+          "h": "Why zero is not zero",
+          "p": "Crazy of 0 and 0 is <code>1111111111</code>, not 0. A cleared register is hard to come by, so even simple arithmetic takes searching."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What is 3 rotated one trit right?",
+          "options": ["1", "9", "0", "19683"],
+          "answer": "1",
+          "why": "3 is 0000000010; the 0 at the end moves to the front, leaving 0000000001."
+        },
+        {
+          "q": "What is 1 rotated one trit right?",
+          "options": ["19683", "3", "0", "1"],
+          "answer": "19683",
+          "why": "The 1 falls off the end and comes back as the first trit: 3 to the power 9."
+        },
+        {
+          "q": "Using the table, what is the crazy result for the trits a = 2 and [d] = 1?",
+          "options": ["2", "1", "0", "3"],
+          "answer": "2",
+          "why": "Row [d] = 1, column a = 2."
+        },
+        {
+          "q": "What is crazy of a = 0 and [d] = 0?",
+          "options": ["1111111111 in ternary", "0", "2222222222 in ternary", "1"],
+          "answer": "1111111111 in ternary",
+          "why": "Every trit pair is 0 and 0, which gives 1."
+        },
+        {
+          "q": "What is 9 rotated one trit right?",
+          "options": ["3", "1", "27", "19683"],
+          "answer": "3",
+          "why": "9 is 0000000100 in ternary; the trailing 0 moves to the front, leaving 0000000010."
+        },
+        {
+          "q": "Using the table, what is the crazy result for the trits a = 1 and [d] = 0?",
+          "options": ["0", "1", "2", "3"],
+          "answer": "0",
+          "why": "Row [d] = 0, column a = 1."
+        },
+        {
+          "q": "Using the table, what is the crazy result for the trits a = 0 and [d] = 2?",
+          "options": ["2", "0", "1", "3"],
+          "answer": "2",
+          "why": "Row [d] = 2, column a = 0."
+        },
+        {
+          "q": "Is the crazy operation the same if you swap a and [d]?",
+          "options": [
+            "No; the table is not symmetric",
+            "Yes; it is addition",
+            "Yes; it is XOR",
+            "Only when both are zero"
+          ],
+          "answer": "No; the table is not symmetric",
+          "why": "Crazy(a,[d]) and crazy([d],a) can differ; the table is read by [d] row and a column."
+        }
+      ]
+    },
+    {
+      "id": "encrypt",
+      "title": "Code that rewrites itself",
+      "summary": "The scrambling table and the memory beyond the program.",
+      "sections": [
+        {
+          "p": "After every instruction, the character in the cell <code>c</code> points to is replaced by looking it up in a fixed 94-character table. Then <code>c</code> and <code>d</code> both move on by one. If you follow the table from any character, you come back to it after a cycle. The cycles have lengths 2, 4, 5, 6, 9 and 68, so most characters take 68 runs to return."
+        },
+        {
+          "h": "Jumps",
+          "p": "The jump instruction sets <code>c</code> to <code>[d]</code>, then the usual scrambling and step happen. So if <code>[d]</code> is 100, the next instruction to run is the one at 101. A loop only works if every cell inside it still does something useful after being scrambled, which is the heart of Malbolge's difficulty."
+        },
+        {
+          "h": "The rest of memory",
+          "p": "The program fills the first cells. Every later cell is filled with the crazy operation of the two cells before it, all the way to 59048. So a program must be at least two characters long, and memory past the end is not empty."
+        }
+      ],
+      "practice": [
+        {
+          "q": "When is a cell's character scrambled?",
+          "options": [
+            "Right after it runs as an instruction",
+            "When the program loads",
+            "Only when it is printed",
+            "Never"
+          ],
+          "answer": "Right after it runs as an instruction",
+          "why": "The cell c points to is replaced after each step."
+        },
+        {
+          "q": "If [d] is 100 when the jump runs, where is the next instruction?",
+          "options": ["101", "100", "99", "0"],
+          "answer": "101",
+          "why": "c becomes 100, then c moves on by one before the next instruction."
+        },
+        {
+          "q": "What fills memory after the program?",
+          "options": [
+            "Crazy of the two cells before each one",
+            "Zeros",
+            "Copies of the program",
+            "Random numbers"
+          ],
+          "answer": "Crazy of the two cells before each one",
+          "why": "Each cell is crazy(previous, one before that), up to address 59048."
+        },
+        {
+          "q": "A character in a cycle of length 2 runs twice. What is in its cell?",
+          "options": [
+            "The original character again",
+            "A space",
+            "Its scrambled form",
+            "The number 2"
+          ],
+          "answer": "The original character again",
+          "why": "After a full cycle the table brings the character back."
+        },
+        {
+          "q": "After each instruction, what happens to c and d?",
+          "options": [
+            "Both move on by one",
+            "Only c moves",
+            "Only d moves",
+            "Neither moves"
+          ],
+          "answer": "Both move on by one",
+          "why": "The usual step advances both pointers after scrambling."
+        },
+        {
+          "q": "What is the shortest program the loader will accept?",
+          "options": [
+            "Two characters",
+            "One character",
+            "Eight characters",
+            "Zero; empty memory is fine"
+          ],
+          "answer": "Two characters",
+          "why": "Memory past the program is filled from the two cells before each address, so at least two are needed."
+        },
+        {
+          "q": "Which pointer names the cell that gets scrambled after a step?",
+          "options": ["c", "d", "a", "None; every cell is scrambled"],
+          "answer": "c",
+          "why": "The instruction just run, at [c], is replaced from the encryption table."
+        },
+        {
+          "q": "Why are Malbolge loops so hard to write?",
+          "options": [
+            "Each cell must still be useful after being scrambled",
+            "There is no jump instruction",
+            "Memory is read-only",
+            "Registers reset every step"
+          ],
+          "answer": "Each cell must still be useful after being scrambled",
+          "why": "Coming back to a cell finds a different character until a full cycle returns."
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "Writing a program",
+      "summary": "Printing letters without loops.",
+      "sections": [
+        {
+          "p": "Without jumps or <code>j</code>, <code>c</code> and <code>d</code> move together, so <code>[d]</code> is always the cell being run. That gives a way in: <code>*</code> loads a rotated copy of its own cell into <code>a</code>, <code>p</code> mixes its own cell into <code>a</code> with crazy, and <code>o</code> just waits a step so the next instruction lands on a different address. Try combinations until <code>a</code> mod 256 is the code you want, then print it with <code>&lt;</code>.",
+          "code": "*opoopoooop<v",
+          "out": "A"
+        },
+        {
+          "h": "The same program, unnormalized",
+          "p": "This is what the interpreter actually loads. Each character was chosen so that it means the right letter at its address.",
+          "code": "'C<A@9>=<;4XE",
+          "out": "A"
+        },
+        {
+          "h": "Two letters",
+          "p": "After the first letter, <code>a</code> keeps its value, so the search for the second letter starts from there. This program was found by a short computer search, the same way the first Hello World was found.",
+          "code": "oooooooopoooop<oooooooooppop<v",
+          "out": "Hi"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this normalized program print? (Count the print instructions.)",
+          "code": "*opoopoooop<v",
+          "options": ["A", "AA", "AAA", "Hi"],
+          "answer": "A",
+          "why": "There is one < before v, so one character is printed: a mod 256 is 65 at that point, the code for A."
+        },
+        {
+          "q": "Why are c and d equal in these programs?",
+          "options": [
+            "Both step by one and nothing changes d",
+            "d is copied from c each step",
+            "The program sets them equal",
+            "They are always equal"
+          ],
+          "answer": "Both step by one and nothing changes d",
+          "why": "Only j (and jumps, for c) break the pairing."
+        },
+        {
+          "q": "What does o do in these programs?",
+          "options": [
+            "Waits a step so later cells land on other addresses",
+            "Prints a zero",
+            "Clears a",
+            "Ends the program"
+          ],
+          "answer": "Waits a step so later cells land on other addresses",
+          "why": "It is a no-op, but the address of every later instruction changes."
+        },
+        {
+          "q": "How was the first Malbolge Hello World made?",
+          "options": [
+            "A computer search",
+            "By hand over a weekend",
+            "Translated from C",
+            "Ben Olmstead wrote it"
+          ],
+          "answer": "A computer search",
+          "why": "Andrew Cooke's program was found by a search program, two years after the language appeared."
+        },
+        {
+          "kind": "output",
+          "q": "What does this unnormalized program print?",
+          "code": "'C<A@9>=<;4XE",
+          "options": ["A", "Hi", "C", "XE"],
+          "answer": "A",
+          "why": "It is the same program as *opoopoooop<v, written with the raw characters the loader expects."
+        },
+        {
+          "kind": "output",
+          "q": "What does this normalized program print?",
+          "code": "oooooooopoooop<oooooooooppop<v",
+          "options": ["Hi", "A", "Ho", "ii"],
+          "answer": "Hi",
+          "why": "Two print instructions run; a is adjusted between them so the characters are H then i."
+        },
+        {
+          "q": "What does * do when c and d point at the same cell?",
+          "options": [
+            "Rotates that cell and copies the result into a",
+            "Prints the cell",
+            "Clears the cell",
+            "Jumps to the cell"
+          ],
+          "answer": "Rotates that cell and copies the result into a",
+          "why": "Rotate reads [d], and here [d] is the instruction cell itself."
+        },
+        {
+          "q": "What does < print?",
+          "options": [
+            "a mod 256 as a character",
+            "The character at [c]",
+            "d as a number",
+            "The whole program"
+          ],
+          "answer": "a mod 256 as a character",
+          "why": "Print takes the low eight bits of the accumulator."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "title": "How people program Malbolge",
+      "summary": "Searches, normalized form, and known working seeds.",
+      "sections": [
+        {
+          "p": "Almost nobody writes Malbolge by hand. Useful programs come from beam searches, genetic algorithms, or careful editing of a known seed in normalized form. Once you have a normalized string of <code>i&lt;/*jpov</code> letters, a converter expands it back into loadable characters for each address."
+        },
+        {
+          "h": "Why searches work",
+          "p": "The self-encrypting tape means a small change early on cascades. Search tools explore many candidates and keep those that print the next desired character without crashing, building longer outputs step by step."
+        },
+        {
+          "h": "Reading someone else's program",
+          "p": "Start from the normalized form. Mark where <code>&lt;</code> prints and where <code>p</code> and <code>*</code> reshape <code>a</code>. The raw character soup is secondary once you can see the instruction stream."
+        }
+      ],
+      "practice": [
+        {
+          "q": "How are most Malbolge programs made?",
+          "options": [
+            "By automated search from a seed",
+            "By typing ASCII art",
+            "By compiling C",
+            "By hand in one sitting"
+          ],
+          "answer": "By automated search from a seed",
+          "why": "Hand-writing long Malbolge is impractical; searches and seeds dominate."
+        },
+        {
+          "q": "What alphabet does normalized Malbolge use?",
+          "options": [
+            "i < / * j p o v",
+            "Only digits",
+            "A to Z",
+            "BrainFOOD's eight symbols"
+          ],
+          "answer": "i < / * j p o v",
+          "why": "Those eight letters name the instructions at each cell."
+        },
+        {
+          "q": "Why does an early edit often break a later print?",
+          "options": [
+            "Encryption cascades as the tape runs",
+            "The printer ignores later cells",
+            "Malbolge has no jumps",
+            "Registers cannot change"
+          ],
+          "answer": "Encryption cascades as the tape runs",
+          "why": "Each step scrambles the instruction cell, so early changes reshape everything after."
+        }
+      ]
+    },
+    {
+      "id": "limits",
+      "title": "What Malbolge can and cannot do easily",
+      "summary": "I/O, halting, and why “hello” was a milestone.",
+      "sections": [
+        {
+          "p": "Input is possible (<code>/</code>) but awkward: end of input yields 59048, and interactive programs are rare. Halting is the <code>v</code> instruction. There is no standard library — every string is a custom tape dance."
+        },
+        {
+          "h": "Hello World as a milestone",
+          "p": "Andrew Cooke's 2000 program proved Malbolge could print a phrase at all. Later authors shortened and varied that seed. Studying those programs teaches more than trying to invent one from scratch."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does end of input put in a?",
+          "options": ["59048", "0", "255", "94"],
+          "answer": "59048",
+          "why": "The classic interpreter uses 59048 for EOF."
+        },
+        {
+          "q": "Which normalized letter stops the machine?",
+          "options": ["v", "o", "p", "<"],
+          "answer": "v",
+          "why": "v is halt."
+        },
+        {
+          "q": "Why was the first Hello World important?",
+          "options": [
+            "It showed Malbolge could print a phrase at all",
+            "It added floating point",
+            "It removed encryption",
+            "It ran on Windows only"
+          ],
+          "answer": "It showed Malbolge could print a phrase at all",
+          "why": "For two years nobody had produced working output."
+        }
+      ]
+    },
+    {
+      "id": "dataptr",
+      "title": "Moving the data pointer",
+      "summary": "The j instruction, and why writing so far kept c and d together.",
+      "sections": [
+        {
+          "p": "So far every program let <code>c</code> and <code>d</code> step together, so <code>[d]</code> was always the cell being run. Normalized <code>j</code> (remainder 40) breaks that: it sets <code>d</code> to whatever <code>[d]</code> holds, then the usual scramble and +1 still happen. After a well-chosen <code>j</code>, rotate and crazy can touch cells that are not the instruction stream."
+        },
+        {
+          "h": "Why it is hard",
+          "p": "The value you need in <code>[d]</code> before <code>j</code> is itself a Malbolge number, often built with crazy and rotate. One wrong trit and <code>d</code> lands in the crazy-filled tail of memory, where the next <code>*</code> or <code>p</code> shreds whatever you hoped to read. That is why short printable demos stick to the <code>c == d</code> style from the last lesson."
+        },
+        {
+          "h": "A reading rule",
+          "p": "When you see normalized Malbolge, ask two questions at each cell: what does this instruction do to <code>a</code>, and does it change <code>d</code>? Only <code>j</code> rewrites <code>d</code> on purpose; everything else leaves the +1 step as the only motion."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does normalized j do?",
+          "options": ["Sets d to [d]", "Prints a", "Stops the program", "Rotates a"],
+          "answer": "Sets d to [d]",
+          "why": "Remainder 40 is the data-pointer hop."
+        },
+        {
+          "q": "After j runs, what still happens?",
+          "options": [
+            "The cell at c is scrambled and both pointers step by one",
+            "Nothing; j skips the usual step",
+            "Only a is cleared",
+            "Memory is wiped"
+          ],
+          "answer": "The cell at c is scrambled and both pointers step by one",
+          "why": "Every instruction, including j, finishes with encrypt-and-step."
+        },
+        {
+          "q": "Why did the printing programs keep c and d equal?",
+          "options": [
+            "Nothing changed d, so both only stepped by one",
+            "j runs automatically",
+            "Malbolge forbids j in short programs",
+            "d is a copy of a"
+          ],
+          "answer": "Nothing changed d, so both only stepped by one",
+          "why": "Without j, d tracks c."
+        },
+        {
+          "q": "What fills cells after the loaded program?",
+          "options": [
+            "Crazy of the two cells before each address",
+            "Zeros",
+            "Copies of a",
+            "Random bytes"
+          ],
+          "answer": "Crazy of the two cells before each address",
+          "why": "A bad j often lands in that tail."
+        },
+        {
+          "q": "Which normalized letter moves the data pointer?",
+          "options": ["j", "i", "p", "o"],
+          "answer": "j",
+          "why": "i is jump for c; j retargets d."
+        },
+        {
+          "q": "Why is a mistaken j so painful?",
+          "options": [
+            "d may land in crazy-filled memory and the next * or p destroys the plan",
+            "j deletes the program",
+            "j cannot be scrambled",
+            "j prints an error"
+          ],
+          "answer": "d may land in crazy-filled memory and the next * or p destroys the plan",
+          "why": "The tail is not empty and not under your control."
+        },
+        {
+          "q": "Does rotate read the instruction cell or the data cell?",
+          "options": [
+            "Whatever d points at",
+            "Always the instruction cell",
+            "Always cell 0",
+            "The accumulator only"
+          ],
+          "answer": "Whatever d points at",
+          "why": "* rotates [d]; with c==d that happens to be the instruction."
+        },
+        {
+          "q": "Which register does j change on purpose?",
+          "options": ["d", "c", "a", "None"],
+          "answer": "d",
+          "why": "j is the data-pointer instruction."
+        }
+      ]
+    },
+    {
+      "id": "letters",
+      "title": "More letters from search",
+      "summary": "Other one-character printers in the same c==d style.",
+      "sections": [
+        {
+          "p": "The same search that found <code>*opoopoooop&lt;v</code> for <b>A</b> finds other letters. Each program is a string of <code>o</code>, <code>*</code> and <code>p</code>, one print, then halt. The shapes look random because crazy and rotate do not match ordinary arithmetic — but every example below is checked by the course runner.",
+          "code": "ooppooooop<v",
+          "out": "B"
+        },
+        {
+          "h": "Punctuation too",
+          "p": "The same method prints symbols. This one leaves <code>a</code> mod 256 equal to 33.",
+          "code": "oopop<v",
+          "out": "!"
+        },
+        {
+          "h": "Unnormalized twin",
+          "p": "The loader still wants raw characters. This is the <b>B</b> program written for real addresses.",
+          "code": "DC<;@?>=<5YF",
+          "out": "B"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "ooppooooop<v",
+          "options": ["B", "A", "!", "BB"],
+          "answer": "B",
+          "why": "One < before v; a mod 256 is 66."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "oopop<v",
+          "options": ["!", "A", "B", "?"],
+          "answer": "!",
+          "why": "a mod 256 is 33, the code for !."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "DC<;@?>=<5YF",
+          "options": ["B", "A", "YF", "D"],
+          "answer": "B",
+          "why": "Unnormalized form of ooppooooop<v."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "*opoopoooop<v",
+          "options": ["A", "B", "!", "AA"],
+          "answer": "A",
+          "why": "The familiar one-letter printer from the writing lesson."
+        },
+        {
+          "q": "Which three building instructions do these printers use?",
+          "options": ["o, * and p", "i, j and /", "v, < and /", "Only o"],
+          "answer": "o, * and p",
+          "why": "No-ops, rotate and crazy build a; then < prints."
+        },
+        {
+          "q": "Why do the programs look random?",
+          "options": [
+            "Crazy and rotate do not match ordinary letter arithmetic",
+            "The runner picks characters at random each time",
+            "Normalized Malbolge shuffles output",
+            "Comments are mixed into the code"
+          ],
+          "answer": "Crazy and rotate do not match ordinary letter arithmetic",
+          "why": "Search finds combinations that land on the ASCII code you want."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "oooooo*pop<v",
+          "options": ["O", "K", "OK", "o"],
+          "answer": "O",
+          "why": "Single print of O — the first half of a word you will meet next."
+        }
+      ]
+    },
+    {
+      "id": "words",
+      "title": "Two letters in a row",
+      "summary": "Adjusting a between prints without jumps.",
+      "sections": [
+        {
+          "p": "After the first <code>&lt;</code>, <code>a</code> still holds its value. More <code>o</code>/<code>*</code>/<code>p</code> steps nudge it to the next character code, then another print fires. You already saw <b>Hi</b>; here are two more words found the same way.",
+          "code": "oooooo*pop<oppopp<v",
+          "out": "OK"
+        },
+        {
+          "h": "No",
+          "p": "Same pattern, different nudges between the two prints.",
+          "code": "oooooooopop<oopopp<v",
+          "out": "No"
+        },
+        {
+          "h": "Hi again",
+          "p": "The course’s earlier two-letter sample, for comparison.",
+          "code": "oooooooopoooop<oooooooooppop<v",
+          "out": "Hi"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "oooooo*pop<oppopp<v",
+          "options": ["OK", "Hi", "No", "O"],
+          "answer": "OK",
+          "why": "Two prints: O then K."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "oooooooopop<oopopp<v",
+          "options": ["No", "OK", "Hi", "On"],
+          "answer": "No",
+          "why": "Two prints: N then o."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "oooooooopoooop<oooooooooppop<v",
+          "options": ["Hi", "OK", "No", "Ho"],
+          "answer": "Hi",
+          "why": "The familiar Hi printer."
+        },
+        {
+          "q": "What stays in a after the first print?",
+          "options": [
+            "The same value, ready to be nudged for the next letter",
+            "Zero",
+            "59048",
+            "The character that was printed is cleared"
+          ],
+          "answer": "The same value, ready to be nudged for the next letter",
+          "why": "Print does not clear the accumulator."
+        },
+        {
+          "q": "How many < instructions does a two-letter word need?",
+          "options": ["Two", "One", "Four", "None"],
+          "answer": "Two",
+          "why": "Each printed character needs its own <."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "oooooooopppop<p<v",
+          "options": ["In", "Hi", "OK", "No"],
+          "answer": "In",
+          "why": "I then n, with only a short nudge between prints."
+        },
+        {
+          "q": "Do these word programs use j or i?",
+          "options": ["No", "Yes, both", "Only j", "Only i"],
+          "answer": "No",
+          "why": "They are still straight-line c==d searches."
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Project: read a Hi program",
+      "summary": "Trace a short normalized program that prints Hi.",
+      "sections": [
+        {
+          "p": "This normalized program prints <code>Hi</code> then stops. Count the <code>&lt;</code> print steps and notice the <code>p</code> and <code>o</code> cells that reshape <code>a</code> between them. You do not have to invent Malbolge — you have to read it.",
+          "code": "oooooooopoooop<oooooooooppop<v",
+          "out": "Hi"
+        },
+        {
+          "h": "Your turn on paper",
+          "p": "Write the normalized letters in a column with addresses 0… and mark which cells print. That reading habit is the real project skill Malbolge teaches."
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this normalized program print?",
+          "code": "oooooooopoooop<oooooooooppop<v",
+          "options": ["Hi", "Ho", "ii", "H"],
+          "answer": "Hi",
+          "why": "Two print instructions emit H then i."
+        },
+        {
+          "q": "How many print instructions are in that program?",
+          "options": ["2", "1", "3", "0"],
+          "answer": "2",
+          "why": "There are two < letters."
+        },
+        {
+          "q": "What does the final v do?",
+          "options": [
+            "Stops the machine",
+            "Prints v",
+            "Resets encryption",
+            "Reads input"
+          ],
+          "answer": "Stops the machine",
+          "why": "v is halt."
+        }
+      ]
+    }
+  ]
+}
