@@ -1,0 +1,582 @@
+{
+  "schema": "programming-course@1",
+  "id": "go",
+  "name": "Go",
+  "title": "Go from the first line",
+  "intro": "Go is a small language from Google for programs that stay running: servers, tools and services. It compiles quickly, has a garbage collector, and keeps the grammar short on purpose. These lessons cover printing, names, choices, the one looping keyword, functions and slices. Every example is a whole program and shows exactly what it prints. To run one yourself, save it as <code>hello.go</code> and type <code>go run hello.go</code>.",
+  "comment": "//",
+  "keywords": ["package", "import", "func", "var", "if", "else", "for", "return", "range"],
+  "builtins": ["println", "main", "fmt", "Println", "Printf"],
+  "lessons": [
+    {
+      "id": "first",
+      "title": "Your first program",
+      "summary": "package, import and fmt.Println.",
+      "sections": [
+        {
+          "p": "Every file starts with <code>package</code>. A program you can run is <code>package main</code> and has <code>func main</code>. <code>fmt.Println</code> prints its arguments separated by spaces, then a newline. The import path is a string.",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, squirrel!\")\n    fmt.Println(\"Nuts are ready.\")\n}",
+          "out": "Hello, squirrel!\nNuts are ready."
+        },
+        {
+          "h": "Printf",
+          "p": "<code>fmt.Printf</code> does not add a newline. <code>%d</code> is an integer and <code>%s</code> is a string. <code>\\n</code> starts the next line.",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Printf(\"I have %d acorns\\n\", 3)\n}",
+          "out": "I have 3 acorns"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Up\", \"the\", \"tree\")\n}",
+          "options": [
+            "Up the tree",
+            "Upthetree",
+            "Up\nthe\ntree",
+            "\"Up\" \"the\" \"tree\""
+          ],
+          "answer": "Up the tree",
+          "why": "Println puts a space between arguments and a newline after them. The quotes are not printed."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    // fmt.Println(\"hidden\")\n    fmt.Println(\"shown\")\n}",
+          "options": [
+            "shown",
+            "hidden\nshown",
+            "// fmt.Println(\"hidden\")\nshown",
+            "Nothing"
+          ],
+          "answer": "shown",
+          "why": "A line starting with // is a comment and never runs."
+        },
+        {
+          "q": "Which package can you run with go run?",
+          "options": ["package main", "package fmt", "package hello", "package lib"],
+          "answer": "package main",
+          "why": "main is the package the go command builds into a program. Other names are libraries."
+        },
+        {
+          "q": "What is the difference between Println and Printf?",
+          "options": [
+            "Println adds spaces and a newline; Printf follows the format string",
+            "Printf is for numbers only",
+            "Println cannot print numbers",
+            "They print the same thing"
+          ],
+          "answer": "Println adds spaces and a newline; Printf follows the format string",
+          "why": "Printf prints exactly the format you write, including whether there is a newline."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Printf(\"%s-%s\\n\", \"a\", \"b\")\n}",
+          "options": ["a-b", "a b", "a\nb", "%s-%s"],
+          "answer": "a-b",
+          "why": "Each %s is replaced by the next string. The hyphen is an ordinary character."
+        }
+      ]
+    },
+    {
+      "id": "names",
+      "title": "Names",
+      "summary": "var and :=.",
+      "sections": [
+        {
+          "p": "<code>var</code> declares a name. Inside a function, <code>:=</code> is a shorter form that both declares and assigns, and Go infers the type. <code>=</code> assigns to a name that already exists.",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    nuts := 5\n    nuts = nuts + 2\n    fmt.Println(nuts)\n}",
+          "out": "7"
+        },
+        {
+          "h": "Zero values",
+          "p": "A <code>var</code> with no value starts at the zero for its type: <code>0</code> for a number, <code>\"\"</code> for a string, <code>false</code> for a bool. Go does not leave a number uninitialized.",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Println(n)\n}",
+          "out": "0"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    n := 10\n    n = n - 3\n    fmt.Println(n)\n}",
+          "options": ["7", "10", "13", "n"],
+          "answer": "7",
+          "why": ":= declares n. The next line assigns n - 3 back to it."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    var s string\n    fmt.Printf(\"[%s]\\n\", s)\n}",
+          "options": ["[]", "[string]", "[nil]", "[0]"],
+          "answer": "[]",
+          "why": "A string's zero value is empty, so the brackets have nothing between them."
+        },
+        {
+          "q": "Which line declares a new name and stores 4 in it?",
+          "options": ["n := 4", "n = 4", "var = 4", "let n = 4"],
+          "answer": "n := 4",
+          "why": ":= declares and assigns. = only assigns, and it needs a name that already exists."
+        },
+        {
+          "q": "What is the zero value of an int?",
+          "options": ["0", "nil", "undefined", "1"],
+          "answer": "0",
+          "why": "Numbers start at zero. There is no undefined."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    a := 1\n    b := a + 1\n    fmt.Println(a, b)\n}",
+          "options": ["1 2", "2 2", "1 1", "a b"],
+          "answer": "1 2",
+          "why": "a stays 1. b is a new name holding a + 1. Println puts a space between them."
+        }
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "Choices",
+      "summary": "if without brackets.",
+      "sections": [
+        {
+          "p": "<code>if</code> does not use brackets around the test. The body is always a block. <code>==</code> compares; <code>=</code> assigns.",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    nuts := 3\n    if nuts > 2 {\n        fmt.Println(\"plenty\")\n    } else {\n        fmt.Println(\"few\")\n    }\n}",
+          "out": "plenty"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    n := 2\n    if n == 2 {\n        fmt.Println(\"yes\")\n    } else {\n        fmt.Println(\"no\")\n    }\n}",
+          "options": ["yes", "no", "2", "yes\nno"],
+          "answer": "yes",
+          "why": "n == 2 is true, so only the first branch runs."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    n := 4\n    if n > 5 {\n        fmt.Println(\"big\")\n    } else if n > 3 {\n        fmt.Println(\"mid\")\n    } else {\n        fmt.Println(\"small\")\n    }\n}",
+          "options": ["mid", "big", "small", "big\nmid"],
+          "answer": "mid",
+          "why": "4 fails the first test and passes the second."
+        },
+        {
+          "q": "Which is a comparison?",
+          "options": ["n == 2", "n = 2", "n := 2", "n eq 2"],
+          "answer": "n == 2",
+          "why": "== compares. = assigns. := declares."
+        },
+        {
+          "q": "What surrounds the body of an if?",
+          "options": [
+            "Braces, which are required",
+            "Indentation only",
+            "Parentheses",
+            "A semicolon"
+          ],
+          "answer": "Braces, which are required",
+          "why": "Go always uses braces for the body, even for a single line. There are no brackets around the test."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    n := 0\n    if n == 0 {\n        fmt.Println(\"zero\")\n    }\n}",
+          "options": ["zero", "0", "Nothing", "false"],
+          "answer": "zero",
+          "why": "The test succeeds, so the block runs. There is no else."
+        }
+      ]
+    },
+    {
+      "id": "loops",
+      "title": "The one loop",
+      "summary": "for does every kind of repetition.",
+      "sections": [
+        {
+          "p": "Go has no <code>while</code> and no <code>do</code>. <code>for</code> covers all of them. The three-part form is start, test, step. <code>fmt.Print</code> does not add a newline. <code>continue</code> skips the rest of the current pass.",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    for i := 0; i < 3; i++ {\n        fmt.Println(i)\n    }\n}",
+          "out": "0\n1\n2"
+        },
+        {
+          "h": "for as while",
+          "p": "A <code>for</code> with only a test repeats while the test is true. <code>range</code> walks a collection.",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    n := 3\n    for n > 0 {\n        fmt.Println(n)\n        n = n - 1\n    }\n}",
+          "out": "3\n2\n1"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    for i := 1; i <= 3; i++ {\n        fmt.Print(i)\n    }\n    fmt.Println()\n}",
+          "options": ["123", "012", "1\n2\n3", "123\n123"],
+          "answer": "123",
+          "why": "i runs through 1, 2 and 3. Print adds no newline, and Println() adds one at the end."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    word := \"go\"\n    for _, ch := range word {\n        fmt.Printf(\"%c\", ch)\n    }\n    fmt.Println()\n}",
+          "options": ["go", "g\no", "0 1", "word"],
+          "answer": "go",
+          "why": "range on a string yields each byte's index and the rune. The index is ignored with _. %c prints the character."
+        },
+        {
+          "q": "How do you write a while loop in Go?",
+          "options": ["for with only a test", "while (test)", "loop test", "do test"],
+          "answer": "for with only a test",
+          "why": "for is the only looping keyword. for n > 0 { } is the while shape."
+        },
+        {
+          "q": "What does i++ do?",
+          "options": [
+            "Adds 1 to i, as a statement",
+            "Returns i + 1 as a value you can embed anywhere",
+            "Compares i to 1",
+            "Declares i"
+          ],
+          "answer": "Adds 1 to i, as a statement",
+          "why": "++ is a statement in Go, not an expression. You cannot write n = i++."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    for i := 0; i < 4; i++ {\n        if i == 2 {\n            continue\n        }\n        fmt.Print(i)\n    }\n    fmt.Println()\n}",
+          "options": ["013", "0123", "01", "23"],
+          "answer": "013",
+          "why": "continue skips the rest of this pass. 2 is not printed."
+        }
+      ]
+    },
+    {
+      "id": "functions",
+      "title": "Functions and slices",
+      "summary": "Multiple results, and a slice's length.",
+      "sections": [
+        {
+          "p": "Parameter types come after the names. The return type comes after the parameter list. A function can return more than one value; the usual second value is an error, ignored here with <code>_</code>.",
+          "code": "package main\nimport \"fmt\"\nfunc add(a int, b int) int {\n    return a + b\n}\nfunc main() {\n    fmt.Println(add(2, 3))\n}",
+          "out": "5"
+        },
+        {
+          "h": "Slices",
+          "p": "A slice is a view of a row of values. <code>len</code> is the number of elements. Indexes start at 0. The slice literal <code>[]int{10, 20, 30}</code> builds one.",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    nums := []int{10, 20, 30}\n    fmt.Println(len(nums), nums[1])\n}",
+          "out": "3 20"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\nimport \"fmt\"\nfunc twice(n int) int {\n    return n * 2\n}\nfunc main() {\n    fmt.Println(twice(4))\n}",
+          "options": ["8", "4", "2", "44"],
+          "answer": "8",
+          "why": "twice returns n * 2, called with 4."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\nimport \"fmt\"\nfunc main() {\n    nums := []int{5, 6, 7}\n    fmt.Println(nums[0], len(nums))\n}",
+          "options": ["5 3", "6 3", "5 2", "7 3"],
+          "answer": "5 3",
+          "why": "Index 0 is the first element. len counts all three."
+        },
+        {
+          "q": "Where is the return type written?",
+          "options": [
+            "After the parameter list",
+            "Before the function name",
+            "Inside the parameter list",
+            "It is not written"
+          ],
+          "answer": "After the parameter list",
+          "why": "func add(a int, b int) int — the final int is what comes back."
+        },
+        {
+          "q": "What is nums[1] in []int{10, 20, 30}?",
+          "options": ["20", "10", "30", "1"],
+          "answer": "20",
+          "why": "Indexes start at 0, so 1 is the second element."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\nimport \"fmt\"\nfunc greet() {\n    fmt.Println(\"hi\")\n}\nfunc main() {\n    greet()\n    greet()\n}",
+          "options": ["hi\nhi", "hi", "greet\ngreet", "hi hi"],
+          "answer": "hi\nhi",
+          "why": "A function with no result type returns nothing. Each call prints one line."
+        }
+      ]
+    },
+    {
+      "id": "collections",
+      "title": "Slices and maps in depth",
+      "summary": "append, sharing, ranges and maps.",
+      "sections": [
+        {
+          "p": "A slice is a window onto an underlying array: it has a <b>length</b> (how many elements you can see) and a <b>capacity</b> (how far the array goes). <code>append</code> adds to the end and returns the slice, growing the array when it is full, so always write <code>s = append(s, x)</code>. <code>range</code> gives the index and the value of each element; use <code>_</code> for the one you don't need.",
+          "code": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar nuts []int\n\tfor i := 1; i <= 5; i++ {\n\t\tnuts = append(nuts, i*i)\n\t}\n\tfmt.Println(nuts, len(nuts))\n\ttotal := 0\n\tfor _, n := range nuts {\n\t\ttotal += n\n\t}\n\tfmt.Println(\"total\", total)\n\tfirstTwo := nuts[:2]\n\tfmt.Println(firstTwo, nuts[3:])\n}",
+          "out": "[1 4 9 16 25] 5\ntotal 55\n[1 4] [16 25]"
+        },
+        {
+          "h": "Slices share their array",
+          "p": "Slicing does not copy. Two slices of the same array see each other's changes, which is fast but can surprise you. <code>copy</code> or <code>slices.Clone</code> makes an independent copy when you need one.",
+          "code": "package main\n\nimport (\n\t\"fmt\"\n\t\"slices\"\n)\n\nfunc main() {\n\tdays := []int{4, 9, 2, 7}\n\tview := days[1:3]\n\tview[0] = 99\n\tfmt.Println(days)\n\town := slices.Clone(days)\n\town[0] = 0\n\tfmt.Println(days[0], own[0])\n\tslices.Sort(own)\n\tfmt.Println(own, slices.Contains(own, 7))\n}",
+          "out": "[4 99 2 7]\n4 0\n[0 2 7 99] true"
+        },
+        {
+          "h": "Maps",
+          "p": "A map stores values by key: <code>map[string]int</code>. Reading a missing key gives the zero value; the two-value form <code>v, ok := m[k]</code> tells you whether it was there. <code>delete</code> removes a key. Go deliberately visits map entries in a random order, so sort the keys when the order matters.",
+          "code": "package main\n\nimport (\n\t\"fmt\"\n\t\"slices\"\n)\n\nfunc main() {\n\tstores := map[string]int{\"oak\": 12, \"beech\": 7}\n\tstores[\"hazel\"] += 5\n\tif n, ok := stores[\"pine\"]; !ok {\n\t\tfmt.Println(\"no pine, zero value is\", n)\n\t}\n\tdelete(stores, \"beech\")\n\tvar trees []string\n\tfor tree := range stores {\n\t\ttrees = append(trees, tree)\n\t}\n\tslices.Sort(trees)\n\tfor _, tree := range trees {\n\t\tfmt.Println(tree, stores[tree])\n\t}\n\tfmt.Println(len(stores), \"trees\")\n}",
+          "out": "no pine, zero value is 0\nhazel 5\noak 12\n2 trees"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\ts := []int{1, 2, 3}\n\tt := s[:2]\n\tt[1] = 20\n\tfmt.Println(s)\n}",
+          "options": ["[1 20 3]", "[1 2 3]", "[1 20]", "[20 2 3]"],
+          "answer": "[1 20 3]",
+          "why": "t is a window onto the same array as s."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tm := map[string]int{\"a\": 1}\n\t_, ok := m[\"b\"]\n\tfmt.Println(m[\"b\"], ok, len(m))\n}",
+          "options": ["0 false 1", "0 true 1", "1 false 2", "nil false 1"],
+          "answer": "0 false 1",
+          "why": "A missing key gives the zero value 0, ok is false, and reading does not add the key."
+        },
+        {
+          "q": "Why write s = append(s, x) rather than just append(s, x)?",
+          "options": [
+            "append may make a new, bigger array and returns the slice that points to it",
+            "append prints the slice",
+            "append only works on maps otherwise",
+            "It is only a style rule"
+          ],
+          "answer": "append may make a new, bigger array and returns the slice that points to it",
+          "why": "Discarding the result loses the new element when the array had to grow."
+        }
+      ]
+    },
+    {
+      "id": "structs",
+      "title": "Structs, methods and interfaces",
+      "summary": "Your own types, and behaviour they share.",
+      "sections": [
+        {
+          "p": "A <code>struct</code> groups named fields. Methods are functions with a <b>receiver</b> written before the name. A pointer receiver, <code>(s *Squirrel)</code>, lets the method change the value; a value receiver works on a copy. Go has no classes or constructors; a function named <code>NewSomething</code> is the usual way to build a value.",
+          "code": "package main\n\nimport \"fmt\"\n\ntype Squirrel struct {\n\tName string\n\tNuts int\n}\n\nfunc NewSquirrel(name string) *Squirrel {\n\treturn &Squirrel{Name: name}\n}\n\nfunc (s *Squirrel) Gather(n int) {\n\ts.Nuts += n\n}\n\nfunc (s Squirrel) Report() string {\n\treturn fmt.Sprintf(\"%s has %d nuts\", s.Name, s.Nuts)\n}\n\nfunc main() {\n\tsam := NewSquirrel(\"Sam\")\n\tsam.Gather(4)\n\tsam.Gather(6)\n\tfmt.Println(sam.Report())\n\tfmt.Printf(\"%+v\\n\", *sam)\n}",
+          "out": "Sam has 10 nuts\n{Name:Sam Nuts:10}"
+        },
+        {
+          "h": "Interfaces",
+          "p": "An interface lists methods. Any type that has those methods satisfies the interface automatically; there is no <code>implements</code> keyword. The standard <code>fmt.Stringer</code> interface has one method, <code>String() string</code>, and <code>fmt</code> uses it whenever it prints a value of that type.",
+          "code": "package main\n\nimport \"fmt\"\n\ntype Store interface {\n\tCapacity() int\n}\n\ntype Hollow struct{}\n\ntype Burrow struct {\n\tDepth int\n}\n\nfunc (Hollow) Capacity() int   { return 120 }\nfunc (b Burrow) Capacity() int { return b.Depth * 2 }\nfunc (b Burrow) String() string {\n\treturn fmt.Sprintf(\"burrow %d cm deep\", b.Depth)\n}\n\nfunc main() {\n\tstores := []Store{Hollow{}, Burrow{Depth: 30}}\n\ttotal := 0\n\tfor _, s := range stores {\n\t\ttotal += s.Capacity()\n\t}\n\tfmt.Println(\"room for\", total)\n\tfmt.Println(Burrow{Depth: 15})\n}",
+          "out": "room for 180\nburrow 15 cm deep"
+        },
+        {
+          "h": "Type switches and embedding",
+          "p": "A <b>type switch</b> runs different code depending on the concrete type inside an interface value. <b>Embedding</b> one struct in another, by naming only its type, promotes its fields and methods, which is how Go reuses behaviour instead of inheritance.",
+          "code": "package main\n\nimport \"fmt\"\n\ntype Animal struct {\n\tName string\n}\n\nfunc (a Animal) Hello() string { return \"I am \" + a.Name }\n\ntype Squirrel struct {\n\tAnimal\n\tNuts int\n}\n\nfunc describe(v any) string {\n\tswitch x := v.(type) {\n\tcase int:\n\t\treturn fmt.Sprintf(\"int %d\", x)\n\tcase string:\n\t\treturn \"string \" + x\n\tcase Squirrel:\n\t\treturn x.Hello()\n\tdefault:\n\t\treturn \"something else\"\n\t}\n}\n\nfunc main() {\n\ts := Squirrel{Animal{\"Pip\"}, 3}\n\tfmt.Println(s.Name, s.Nuts)\n\tfor _, v := range []any{7, \"oak\", s, 2.5} {\n\t\tfmt.Println(describe(v))\n\t}\n}",
+          "out": "Pip 3\nint 7\nstring oak\nI am Pip\nsomething else"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\n\nimport \"fmt\"\n\ntype Box struct{ N int }\n\nfunc (b Box) AddValue()    { b.N++ }\nfunc (b *Box) AddPointer() { b.N++ }\n\nfunc main() {\n\tb := Box{}\n\tb.AddValue()\n\tb.AddPointer()\n\tb.AddPointer()\n\tfmt.Println(b.N)\n}",
+          "options": ["2", "3", "1", "0"],
+          "answer": "2",
+          "why": "The value receiver changes a copy; only the two pointer-receiver calls count."
+        },
+        {
+          "q": "How does a Go type satisfy an interface?",
+          "options": [
+            "By having all the interface's methods; nothing else is needed",
+            "By writing implements after the type",
+            "By embedding the interface",
+            "By registering it with the interface"
+          ],
+          "answer": "By having all the interface's methods; nothing else is needed",
+          "why": "Go interfaces are satisfied implicitly."
+        },
+        {
+          "q": "What does a String() string method on a type change?",
+          "options": [
+            "How fmt prints values of that type",
+            "How the type is compared",
+            "Nothing unless you call it",
+            "How the type is stored in memory"
+          ],
+          "answer": "How fmt prints values of that type",
+          "why": "It satisfies fmt.Stringer, which fmt checks for."
+        }
+      ]
+    },
+    {
+      "id": "errors",
+      "title": "Errors",
+      "summary": "Errors are values you check.",
+      "sections": [
+        {
+          "p": "Go has no exceptions for ordinary failures. A function that can fail returns an <code>error</code> as its last result, and the caller checks it right away: <code>if err != nil</code>. <code>strconv.Atoi</code>, which turns text into an <code>int</code>, works like this. It is more typing, but you can always see where failures are handled.",
+          "code": "package main\n\nimport (\n\t\"fmt\"\n\t\"strconv\"\n)\n\nfunc main() {\n\tfor _, text := range []string{\"42\", \"forty-two\"} {\n\t\tn, err := strconv.Atoi(text)\n\t\tif err != nil {\n\t\t\tfmt.Println(\"error:\", err)\n\t\t\tcontinue\n\t\t}\n\t\tfmt.Println(\"got\", n)\n\t}\n}",
+          "out": "got 42\nerror: strconv.Atoi: parsing \"forty-two\": invalid syntax"
+        },
+        {
+          "h": "Making and wrapping errors",
+          "p": "<code>errors.New</code> makes a simple error, and <code>fmt.Errorf</code> builds one with a message. A <code>%w</code> in <code>fmt.Errorf</code> <b>wraps</b> another error, adding context while keeping the original inside. <code>errors.Is</code> then checks whether a particular error is anywhere in the chain.",
+          "code": "package main\n\nimport (\n\t\"errors\"\n\t\"fmt\"\n)\n\nvar ErrEmpty = errors.New(\"the store is empty\")\n\nfunc take(stored, wanted int) (int, error) {\n\tif stored == 0 {\n\t\treturn 0, ErrEmpty\n\t}\n\tif wanted > stored {\n\t\treturn stored, fmt.Errorf(\"asked for %d, only %d stored\", wanted, stored)\n\t}\n\treturn stored - wanted, nil\n}\n\nfunc takeFromOak(wanted int) (int, error) {\n\tleft, err := take(0, wanted)\n\tif err != nil {\n\t\treturn 0, fmt.Errorf(\"oak: %w\", err)\n\t}\n\treturn left, nil\n}\n\nfunc main() {\n\tleft, err := take(10, 4)\n\tfmt.Println(left, err)\n\t_, err = take(3, 8)\n\tfmt.Println(err)\n\t_, err = takeFromOak(1)\n\tfmt.Println(err)\n\tfmt.Println(errors.Is(err, ErrEmpty))\n}",
+          "out": "6 <nil>\nasked for 8, only 3 stored\noak: the store is empty\ntrue"
+        },
+        {
+          "h": "defer",
+          "p": "<code>defer</code> schedules a call to run when the surrounding function returns, however it returns. It keeps clean-up, such as closing a file, right next to the code that opened it. Deferred calls run in reverse order, last one first.",
+          "code": "package main\n\nimport \"fmt\"\n\nfunc work() {\n\tfmt.Println(\"open store\")\n\tdefer fmt.Println(\"close store\")\n\tdefer fmt.Println(\"count nuts\")\n\tfmt.Println(\"bury three nuts\")\n}\n\nfunc main() {\n\twork()\n\tfmt.Println(\"done\")\n}",
+          "out": "open store\nbury three nuts\ncount nuts\nclose store\ndone"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tfor i := 1; i <= 3; i++ {\n\t\tdefer fmt.Print(i)\n\t}\n\tfmt.Print(\"go \")\n}",
+          "options": ["go 321", "go 123", "123go ", "321go "],
+          "answer": "go 321",
+          "why": "Deferred calls run when main returns, last one first."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\n\nimport (\n\t\"errors\"\n\t\"fmt\"\n)\n\nfunc main() {\n\tbase := errors.New(\"no nuts\")\n\terr := fmt.Errorf(\"day 3: %w\", base)\n\tfmt.Println(err, errors.Is(err, base))\n}",
+          "options": [
+            "day 3: no nuts true",
+            "day 3: no nuts false",
+            "no nuts true",
+            "day 3: %w true"
+          ],
+          "answer": "day 3: no nuts true",
+          "why": "%w puts the original error's text in the message and keeps it in the chain for errors.Is."
+        },
+        {
+          "q": "How does a Go function usually report failure?",
+          "options": [
+            "By returning an error as its last result",
+            "By throwing an exception",
+            "By returning -1",
+            "By calling panic"
+          ],
+          "answer": "By returning an error as its last result",
+          "why": "panic is kept for bugs and truly unrecoverable situations."
+        }
+      ]
+    },
+    {
+      "id": "concurrency",
+      "title": "Goroutines and channels",
+      "summary": "Doing several things at once, safely.",
+      "sections": [
+        {
+          "p": "Writing <code>go f()</code> starts <code>f</code> in a new <b>goroutine</b>, a very lightweight thread; a program can run thousands. Goroutines talk through <b>channels</b>: <code>ch &lt;- v</code> sends a value and <code>v := &lt;-ch</code> receives one, waiting until a value arrives. \"Share memory by communicating\" is the Go motto.",
+          "code": "package main\n\nimport \"fmt\"\n\nfunc count(tree string, nuts []int, results chan<- string) {\n\ttotal := 0\n\tfor _, n := range nuts {\n\t\ttotal += n\n\t}\n\tresults <- fmt.Sprintf(\"%s: %d\", tree, total)\n}\n\nfunc main() {\n\tresults := make(chan string)\n\tgo count(\"oak\", []int{3, 4, 5}, results)\n\tgo count(\"beech\", []int{10, 2}, results)\n\ta, b := <-results, <-results\n\tif a > b {\n\t\ta, b = b, a\n\t}\n\tfmt.Println(a)\n\tfmt.Println(b)\n}",
+          "out": "beech: 12\noak: 12"
+        },
+        {
+          "h": "WaitGroup and Mutex",
+          "p": "<code>sync.WaitGroup</code> waits for a group of goroutines to finish. When several goroutines change the same variable, protect it with a <code>sync.Mutex</code>: only the goroutine holding the lock may touch the data. Without it, updates can be lost. <code>go run -race</code> finds such bugs.",
+          "code": "package main\n\nimport (\n\t\"fmt\"\n\t\"sync\"\n)\n\nfunc main() {\n\tvar (\n\t\tmu    sync.Mutex\n\t\twg    sync.WaitGroup\n\t\ttotal int\n\t)\n\tfor squirrel := 1; squirrel <= 10; squirrel++ {\n\t\twg.Add(1)\n\t\tgo func(id int) {\n\t\t\tdefer wg.Done()\n\t\t\tfor i := 0; i < 1000; i++ {\n\t\t\t\tmu.Lock()\n\t\t\t\ttotal++\n\t\t\t\tmu.Unlock()\n\t\t\t}\n\t\t}(squirrel)\n\t}\n\twg.Wait()\n\tfmt.Println(\"nuts counted:\", total)\n}",
+          "out": "nuts counted: 10000"
+        },
+        {
+          "h": "Pipelines",
+          "p": "A goroutine can read from one channel and write to another, forming a pipeline. <code>close(ch)</code> says no more values are coming, and <code>for v := range ch</code> reads until the channel is closed. A buffered channel, <code>make(chan int, 3)</code>, holds a few values so the sender need not wait.",
+          "code": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tdays := make(chan int, 3)\n\tdoubled := make(chan int, 3)\n\tgo func() {\n\t\tfor _, n := range []int{4, 9, 2, 7} {\n\t\t\tdays <- n\n\t\t}\n\t\tclose(days)\n\t}()\n\tgo func() {\n\t\tfor n := range days {\n\t\t\tdoubled <- n * 2\n\t\t}\n\t\tclose(doubled)\n\t}()\n\tfor n := range doubled {\n\t\tfmt.Print(n, \" \")\n\t}\n\tfmt.Println()\n}",
+          "out": "8 18 4 14 "
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tch := make(chan int, 2)\n\tch <- 5\n\tch <- 7\n\tclose(ch)\n\tsum := 0\n\tfor v := range ch {\n\t\tsum += v\n\t}\n\tfmt.Println(sum)\n}",
+          "options": ["12", "5", "7", "It waits forever"],
+          "answer": "12",
+          "why": "The buffer holds both values, and range stops once the closed channel is empty."
+        },
+        {
+          "q": "Why protect a shared counter with a sync.Mutex?",
+          "options": [
+            "Without it, goroutines can overwrite each other's updates",
+            "It makes goroutines start faster",
+            "Channels require it",
+            "Go will not compile otherwise"
+          ],
+          "answer": "Without it, goroutines can overwrite each other's updates",
+          "why": "total++ reads, adds and writes; two goroutines doing it at once can lose a count."
+        },
+        {
+          "q": "What does close(ch) tell receivers?",
+          "options": [
+            "No more values will be sent",
+            "The channel is empty right now",
+            "The program should stop",
+            "The values should be discarded"
+          ],
+          "answer": "No more values will be sent",
+          "why": "range over the channel ends after the remaining values are read."
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Project: counting words",
+      "summary": "Strings, maps, sorting and formatting together.",
+      "sections": [
+        {
+          "p": "This program counts the words in a short text, ignoring case and punctuation, and prints the most common ones. It splits the text with <code>strings.FieldsFunc</code>, counts in a map, copies the counts into a slice of structs, and sorts that with <code>slices.SortFunc</code> and <code>cmp.Compare</code>: most frequent first, then alphabetically.",
+          "code": "package main\n\nimport (\n\t\"cmp\"\n\t\"fmt\"\n\t\"slices\"\n\t\"strings\"\n\t\"unicode\"\n)\n\ntype count struct {\n\tword string\n\tn    int\n}\n\nfunc main() {\n\ttext := \"The squirrel hid a nut. Then the squirrel forgot the nut, \" +\n\t\t\"and the nut became a tree. The tree grew nuts.\"\n\n\twords := strings.FieldsFunc(strings.ToLower(text), func(r rune) bool {\n\t\treturn !unicode.IsLetter(r)\n\t})\n\tcounts := map[string]int{}\n\tfor _, w := range words {\n\t\tcounts[w]++\n\t}\n\tvar rows []count\n\tfor w, n := range counts {\n\t\trows = append(rows, count{w, n})\n\t}\n\tslices.SortFunc(rows, func(a, b count) int {\n\t\tif c := cmp.Compare(b.n, a.n); c != 0 {\n\t\t\treturn c\n\t\t}\n\t\treturn strings.Compare(a.word, b.word)\n\t})\n\tfmt.Printf(\"%d words, %d different\\n\", len(words), len(counts))\n\tfor _, r := range rows[:4] {\n\t\tfmt.Printf(\"%-9s%2d\\n\", r.word, r.n)\n\t}\n}",
+          "out": "21 words, 12 different\nthe       5\nnut       3\na         2\nsquirrel  2"
+        },
+        {
+          "h": "Ideas to try",
+          "p": "Read the text from a file with <code>os.ReadFile</code> (checking its error), skip stop words such as \"a\" and \"the\" with a <code>map[string]bool</code>, or count several files at once, one goroutine each, sending their maps down a channel to be merged."
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "package main\n\nimport (\n\t\"fmt\"\n\t\"strings\"\n)\n\nfunc main() {\n\tf := strings.Fields(\"  oak   beech hazel \")\n\tfmt.Println(len(f), f[1])\n}",
+          "options": ["3 beech", "5 beech", "3 oak", "4 beech"],
+          "answer": "3 beech",
+          "why": "Fields splits on runs of spaces and ignores spaces at the ends."
+        },
+        {
+          "q": "Why copy the map into a slice before printing the top words?",
+          "options": [
+            "Maps have no order, and a slice can be sorted",
+            "Maps cannot be printed",
+            "Slices use less memory",
+            "range does not work on maps"
+          ],
+          "answer": "Maps have no order, and a slice can be sorted",
+          "why": "Go even randomizes map order on purpose so that code does not rely on it."
+        },
+        {
+          "q": "In slices.SortFunc, what should the comparison return when a should come first?",
+          "options": ["A negative number", "A positive number", "Zero", "true"],
+          "answer": "A negative number",
+          "why": "cmp.Compare(b.n, a.n) is negative when a has the bigger count, so bigger counts come first."
+        }
+      ]
+    }
+  ]
+}
