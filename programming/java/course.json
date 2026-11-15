@@ -1,0 +1,553 @@
+{
+  "schema": "programming-course@1",
+  "id": "java",
+  "name": "Java",
+  "title": "Java from the first class",
+  "intro": "Java arrived in 1995 with a promise: compile once, run on any machine that has a Java virtual machine. It became the language of big business systems, Android apps, university courses and tools like Minecraft's original edition. Everything in Java lives inside a class, every variable has a type the compiler checks, and memory is cleaned up for you by the garbage collector. These lessons use Java 21, which added records, switch expressions and <code>var</code> to cut down the typing older Java was known for. Every example is a whole file and shows exactly what it prints. To run one yourself, save it as <code>Main.java</code> and type <code>java Main.java</code>.",
+  "comment": "//",
+  "keywords": [
+    "class",
+    "public",
+    "private",
+    "static",
+    "void",
+    "int",
+    "double",
+    "boolean",
+    "char",
+    "long",
+    "var",
+    "final",
+    "new",
+    "return",
+    "if",
+    "else",
+    "for",
+    "while",
+    "switch",
+    "case",
+    "default",
+    "yield",
+    "record",
+    "interface",
+    "implements",
+    "extends",
+    "this",
+    "true",
+    "false",
+    "null",
+    "import",
+    "throw",
+    "try",
+    "catch"
+  ],
+  "builtins": [
+    "System",
+    "out",
+    "println",
+    "print",
+    "printf",
+    "String",
+    "Math",
+    "List",
+    "Map",
+    "ArrayList",
+    "HashMap",
+    "main",
+    "Integer"
+  ],
+  "lessons": [
+    {
+      "id": "first",
+      "title": "Your first program",
+      "summary": "class, main and System.out.println.",
+      "sections": [
+        {
+          "p": "A Java program is a class with a <code>main</code> method. The line <code>public static void main(String[] args)</code> looks like a lot, but every program starts with it, so it soon reads as one word. <code>System.out.println</code> prints a value and ends the line; <code>System.out.print</code> prints without ending it. Statements end with a semicolon.",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, squirrel!\");\n        System.out.print(\"Nuts: \");\n        System.out.println(42);\n    }\n}",
+          "out": "Hello, squirrel!\nNuts: 42"
+        },
+        {
+          "h": "Joining text",
+          "p": "<code>+</code> between a string and anything else joins them into a longer string. Java reads <code>+</code> from left to right, so numbers before the first string are still added as numbers.",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        String name = \"Hazel\";\n        System.out.println(\"Hi, \" + name + \"!\");\n        System.out.println(1 + 2 + \" nuts\");\n        System.out.println(\"nuts \" + 1 + 2);\n    }\n}",
+          "out": "Hi, Hazel!\n3 nuts\nnuts 12"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        System.out.print(\"Up\");\n        System.out.print(\" the\");\n        System.out.println(\" tree\");\n    }\n}",
+          "options": ["Up the tree", "Up\n the\n tree", "Upthetree", "Up the\ntree"],
+          "answer": "Up the tree",
+          "why": "print does not end the line, so the three pieces land on one line. Only the last call, println, ends it."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"total \" + 4 + 5);\n    }\n}",
+          "options": ["total 45", "total 9", "total 4 5", "9 total"],
+          "answer": "total 45",
+          "why": "Java works left to right. \"total \" + 4 is already a string, so + 5 joins another character instead of adding."
+        },
+        {
+          "q": "Where does a Java program start running?",
+          "options": [
+            "In the main method",
+            "At the first line of the file",
+            "In the class constructor",
+            "In a method called start"
+          ],
+          "answer": "In the main method",
+          "why": "The launcher looks for public static void main(String[] args) and calls it."
+        }
+      ]
+    },
+    {
+      "id": "values",
+      "title": "Types and variables",
+      "summary": "int, double, boolean, String, var and final.",
+      "sections": [
+        {
+          "p": "Every variable has a type, written before its name: <code>int</code> for whole numbers, <code>double</code> for numbers with a fraction, <code>boolean</code> for <code>true</code> or <code>false</code>, <code>char</code> for one character in single quotes, and <code>String</code> for text in double quotes. Dividing one <code>int</code> by another throws away the fraction; <code>%</code> gives the remainder.",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        int nuts = 17;\n        int squirrels = 5;\n        double share = 17.0 / 5;\n        boolean plenty = nuts > 10;\n        char grade = 'A';\n        System.out.println(nuts / squirrels);\n        System.out.println(nuts % squirrels);\n        System.out.println(share);\n        System.out.println(plenty + \" \" + grade);\n    }\n}",
+          "out": "3\n2\n3.4\ntrue A"
+        },
+        {
+          "h": "var and final",
+          "p": "<code>var</code> lets the compiler work out the type from the value, so <code>var count = 3;</code> is still an <code>int</code> and can only ever hold ints. <code>final</code> means the variable can't be given a new value. A cast like <code>(int) 3.9</code> turns a double into an int by cutting off the fraction, not by rounding.",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        var count = 3;\n        final double PRICE = 1.25;\n        count = count + 1;\n        System.out.println(count * PRICE);\n        System.out.println((int) 3.9);\n        System.out.println(Math.round(3.9));\n    }\n}",
+          "out": "5.0\n3\n4"
+        },
+        {
+          "h": "Strings are objects",
+          "p": "A <code>String</code> has methods you call with a dot: <code>length()</code>, <code>toUpperCase()</code>, <code>charAt(i)</code> (counting from 0) and <code>contains</code>. Compare strings with <code>equals</code>, not <code>==</code>: <code>==</code> asks whether two variables point at the very same object, which is not the same question as whether they hold the same text.",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        String tree = \"Oak\";\n        System.out.println(tree.length());\n        System.out.println(tree.toUpperCase());\n        System.out.println(tree.charAt(0));\n        String typed = new String(\"Oak\");\n        System.out.println(tree.equals(typed));\n        System.out.println(tree == typed);\n    }\n}",
+          "out": "3\nOAK\nO\ntrue\nfalse"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(7 / 2);\n        System.out.println(7 / 2.0);\n    }\n}",
+          "options": ["3\n3.5", "3.5\n3.5", "3\n3", "4\n3.5"],
+          "answer": "3\n3.5",
+          "why": "7 / 2 is int division and drops the .5. Once one side is a double, the result is a double."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        String a = \"acorn\";\n        System.out.println(a.charAt(1) + \"\" + a.length());\n    }\n}",
+          "options": ["c5", "a5", "c6", "o5"],
+          "answer": "c5",
+          "why": "charAt counts from 0, so position 1 is 'c'. The empty string in the middle makes + join text instead of adding character codes."
+        },
+        {
+          "q": "How should you check whether two Strings hold the same text?",
+          "options": ["a.equals(b)", "a == b", "a = b", "a.same(b)"],
+          "answer": "a.equals(b)",
+          "why": "equals compares the characters. == compares whether both names refer to the same object."
+        }
+      ]
+    },
+    {
+      "id": "control",
+      "title": "Decisions and loops",
+      "summary": "if, switch expressions, for, for-each and while.",
+      "sections": [
+        {
+          "p": "<code>if</code> takes a condition in brackets and runs the block in braces when it is true. <code>&amp;&amp;</code> means and, <code>||</code> means or and <code>!</code> means not. A <b>switch expression</b> picks a value by matching cases with <code>-&gt;</code>; there is no fall-through to worry about.",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        int nuts = 12;\n        if (nuts > 20) {\n            System.out.println(\"feast\");\n        } else if (nuts > 10 && nuts % 2 == 0) {\n            System.out.println(\"even dozen-ish\");\n        } else {\n            System.out.println(\"keep looking\");\n        }\n        String day = \"SAT\";\n        String plan = switch (day) {\n            case \"SAT\", \"SUN\" -> \"nap in the drey\";\n            case \"MON\" -> \"bury nuts\";\n            default -> \"forage\";\n        };\n        System.out.println(plan);\n    }\n}",
+          "out": "even dozen-ish\nnap in the drey"
+        },
+        {
+          "h": "Loops",
+          "p": "The classic <code>for</code> loop has three parts: a start, a condition checked before each pass, and a step. The <b>for-each</b> loop, <code>for (int n : nuts)</code>, visits every item of an array or list. <code>while</code> repeats as long as its condition holds.",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        for (int i = 1; i <= 3; i++) {\n            System.out.print(i + \" \");\n        }\n        System.out.println();\n        int[] nuts = {4, 9, 2};\n        int total = 0;\n        for (int n : nuts) {\n            total += n;\n        }\n        System.out.println(total);\n        int height = 1;\n        while (height < 20) {\n            height *= 3;\n        }\n        System.out.println(height);\n    }\n}",
+          "out": "1 2 3 \n15\n27"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        int n = 3;\n        String size = switch (n) {\n            case 1 -> \"one\";\n            case 2, 3 -> \"a few\";\n            default -> \"many\";\n        };\n        System.out.println(size);\n    }\n}",
+          "options": ["a few", "one", "many", "a few\nmany"],
+          "answer": "a few",
+          "why": "The arrow form runs only the matching case. 3 is listed with 2, so the value is \"a few\"."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        int count = 0;\n        for (int i = 0; i < 10; i += 3) {\n            count++;\n        }\n        System.out.println(count);\n    }\n}",
+          "options": ["4", "3", "10", "9"],
+          "answer": "4",
+          "why": "i takes the values 0, 3, 6 and 9 before reaching 12, which fails the test. That is four passes."
+        }
+      ]
+    },
+    {
+      "id": "methods",
+      "title": "Methods and arrays",
+      "summary": "static methods, return values, overloading and arrays.",
+      "sections": [
+        {
+          "p": "A method is a named block of code. Its header gives the return type, the name and the parameters with their types. <code>static</code> means you call it on the class itself, without making an object first. Two methods may share a name if their parameters differ; this is called <b>overloading</b>, and Java picks the one that fits the arguments.",
+          "code": "public class Main {\n    static int square(int x) {\n        return x * x;\n    }\n\n    static String describe(int nuts) {\n        return nuts + \" nuts\";\n    }\n\n    static String describe(String kind, int nuts) {\n        return nuts + \" \" + kind + \" nuts\";\n    }\n\n    public static void main(String[] args) {\n        System.out.println(square(6));\n        System.out.println(describe(3));\n        System.out.println(describe(\"hazel\", 5));\n    }\n}",
+          "out": "36\n3 nuts\n5 hazel nuts"
+        },
+        {
+          "h": "Arrays",
+          "p": "An array holds a fixed number of values of one type. <code>new int[4]</code> makes four zeros; <code>{3, 1, 2}</code> lists the values directly. <code>length</code> (no brackets on arrays) gives the size, and indexes run from 0 to length minus 1. Reading past the end stops the program with an <code>ArrayIndexOutOfBoundsException</code>. <code>java.util.Arrays</code> has helpers to sort and print arrays.",
+          "code": "import java.util.Arrays;\n\npublic class Main {\n    public static void main(String[] args) {\n        int[] stash = {30, 12, 5, 8};\n        Arrays.sort(stash);\n        System.out.println(Arrays.toString(stash));\n        System.out.println(stash.length + \" \" + stash[0]);\n        int[] empty = new int[3];\n        System.out.println(Arrays.toString(empty));\n    }\n}",
+          "out": "[5, 8, 12, 30]\n4 5\n[0, 0, 0]"
+        },
+        {
+          "h": "Arrays are shared, ints are copied",
+          "p": "Passing an <code>int</code> to a method hands over a copy, so the method can't change the caller's variable. An array variable holds a reference to the array, so a method that is given it changes the same array the caller sees.",
+          "code": "import java.util.Arrays;\n\npublic class Main {\n    static void addOne(int n) {\n        n = n + 1;\n    }\n\n    static void addOneToAll(int[] ns) {\n        for (int i = 0; i < ns.length; i++) {\n            ns[i] = ns[i] + 1;\n        }\n    }\n\n    public static void main(String[] args) {\n        int nuts = 5;\n        addOne(nuts);\n        System.out.println(nuts);\n        int[] piles = {1, 2};\n        addOneToAll(piles);\n        System.out.println(Arrays.toString(piles));\n    }\n}",
+          "out": "5\n[2, 3]"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "public class Main {\n    static int twice(int x) {\n        return x * 2;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(twice(twice(3)));\n    }\n}",
+          "options": ["12", "6", "9", "33"],
+          "answer": "12",
+          "why": "The inner call gives 6, and twice(6) is 12."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "public class Main {\n    static void reset(int[] a) {\n        a[0] = 0;\n    }\n\n    public static void main(String[] args) {\n        int[] nuts = {7, 8};\n        reset(nuts);\n        System.out.println(nuts[0] + nuts[1]);\n    }\n}",
+          "options": ["8", "15", "78", "0"],
+          "answer": "8",
+          "why": "The method changes the caller's array, so nuts is {0, 8}, and 0 + 8 is 8."
+        },
+        {
+          "q": "What is the last valid index of an array of length 5?",
+          "options": ["4", "5", "6", "-1"],
+          "answer": "4",
+          "why": "Indexes start at 0, so five items use 0 to 4."
+        }
+      ]
+    },
+    {
+      "id": "classes",
+      "title": "Classes, records and interfaces",
+      "summary": "Objects with fields and methods, records for plain data, interfaces for shared behaviour.",
+      "sections": [
+        {
+          "p": "A class describes a kind of object: its <b>fields</b> (the data each object keeps) and its <b>methods</b> (what it can do). The <b>constructor</b> has the class's name and sets up a new object; <code>new</code> calls it. Fields are usually <code>private</code>, so other code changes them only through the class's own methods. <code>this</code> means the object the method was called on.",
+          "code": "public class Main {\n    static class Squirrel {\n        private final String name;\n        private int nuts;\n\n        Squirrel(String name) {\n            this.name = name;\n            this.nuts = 0;\n        }\n\n        void gather(int found) {\n            nuts += found;\n        }\n\n        String report() {\n            return name + \" has \" + nuts;\n        }\n    }\n\n    public static void main(String[] args) {\n        Squirrel s = new Squirrel(\"Hazel\");\n        s.gather(3);\n        s.gather(4);\n        System.out.println(s.report());\n    }\n}",
+          "out": "Hazel has 7"
+        },
+        {
+          "h": "Records",
+          "p": "A <b>record</b> is a class for plain data. From one line Java writes the constructor, a method to read each field, <code>equals</code> that compares the values, and a <code>toString</code> for printing. Records can't be changed after they are made.",
+          "code": "public class Main {\n    record Nut(String kind, int grams) {}\n\n    public static void main(String[] args) {\n        Nut a = new Nut(\"hazel\", 3);\n        Nut b = new Nut(\"hazel\", 3);\n        System.out.println(a);\n        System.out.println(a.grams());\n        System.out.println(a.equals(b));\n    }\n}",
+          "out": "Nut[kind=hazel, grams=3]\n3\ntrue"
+        },
+        {
+          "h": "Interfaces",
+          "p": "An <b>interface</b> lists methods that a class promises to have. Code can then work with any class that <code>implements</code> it without knowing which one it got. Each class gives its own version of the method, and Java calls the right one when the program runs.",
+          "code": "import java.util.List;\n\npublic class Main {\n    interface Animal {\n        String sound();\n    }\n\n    record Squirrel() implements Animal {\n        public String sound() { return \"chitter\"; }\n    }\n\n    record Owl() implements Animal {\n        public String sound() { return \"hoo\"; }\n    }\n\n    public static void main(String[] args) {\n        List<Animal> wood = List.of(new Squirrel(), new Owl(), new Squirrel());\n        for (Animal a : wood) {\n            System.out.print(a.sound() + \" \");\n        }\n        System.out.println();\n    }\n}",
+          "out": "chitter hoo chitter "
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "public class Main {\n    static class Counter {\n        private int count;\n        void tick() { count++; }\n        int value() { return count; }\n    }\n\n    public static void main(String[] args) {\n        Counter a = new Counter();\n        Counter b = new Counter();\n        a.tick();\n        a.tick();\n        b.tick();\n        System.out.println(a.value() + \" \" + b.value());\n    }\n}",
+          "options": ["2 1", "3 3", "1 2", "0 0"],
+          "answer": "2 1",
+          "why": "Each object has its own count field. a ticked twice and b once. A field starts at 0 when it isn't given a value."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "public class Main {\n    record Point(int x, int y) {}\n\n    public static void main(String[] args) {\n        Point p = new Point(2, 5);\n        System.out.println(p.x() + p.y());\n    }\n}",
+          "options": ["7", "25", "Point[x=2, y=5]", "2 5"],
+          "answer": "7",
+          "why": "x() and y() are ints, so + adds them."
+        },
+        {
+          "q": "What does a record give you automatically?",
+          "options": [
+            "A constructor, field readers, equals and toString",
+            "Only a constructor",
+            "Setters for every field",
+            "A main method"
+          ],
+          "answer": "A constructor, field readers, equals and toString",
+          "why": "Records are for plain, unchanging data, so they have no setters."
+        }
+      ]
+    },
+    {
+      "id": "collections",
+      "title": "Lists, maps and streams",
+      "summary": "ArrayList, HashMap, generics and stream pipelines.",
+      "sections": [
+        {
+          "p": "Arrays have a fixed size, so most Java code uses the collection classes instead. <code>ArrayList</code> grows as you <code>add</code>, and <code>get(i)</code> reads by index. The type in angle brackets, as in <code>List&lt;String&gt;</code>, says what the list holds; this is called a <b>generic</b> type. Collections hold objects, so whole numbers go in as <code>Integer</code>, which Java converts to and from <code>int</code> for you.",
+          "code": "import java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        List<String> trees = new ArrayList<>();\n        trees.add(\"oak\");\n        trees.add(\"beech\");\n        trees.add(0, \"hazel\");\n        System.out.println(trees);\n        System.out.println(trees.size() + \" \" + trees.get(1));\n        trees.remove(\"beech\");\n        System.out.println(trees.contains(\"beech\"));\n    }\n}",
+          "out": "[hazel, oak, beech]\n3 oak\nfalse"
+        },
+        {
+          "h": "Maps",
+          "p": "A <code>Map</code> stores values under keys. <code>put</code> adds or replaces, <code>get</code> reads (giving <code>null</code> for a missing key), and <code>getOrDefault</code> gives a fallback instead. <code>HashMap</code> doesn't keep any order; <code>TreeMap</code> keeps keys sorted, which makes printed output predictable.",
+          "code": "import java.util.Map;\nimport java.util.TreeMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        Map<String, Integer> stash = new TreeMap<>();\n        stash.put(\"oak\", 4);\n        stash.put(\"hazel\", 9);\n        stash.put(\"oak\", stash.get(\"oak\") + 1);\n        System.out.println(stash);\n        System.out.println(stash.getOrDefault(\"pine\", 0));\n        for (var entry : stash.entrySet()) {\n            System.out.println(entry.getKey() + \": \" + entry.getValue());\n        }\n    }\n}",
+          "out": "{hazel=9, oak=5}\n0\nhazel: 9\noak: 5"
+        },
+        {
+          "h": "Streams and lambdas",
+          "p": "A <b>stream</b> passes the items of a collection through a pipeline of steps. <code>filter</code> keeps the items that pass a test, <code>map</code> changes each item, and a final step such as <code>toList()</code> or <code>sum()</code> collects the result. The tests and changes are <b>lambdas</b>: small unnamed functions written <code>n -&gt; n * 2</code>.",
+          "code": "import java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        List<Integer> nuts = List.of(5, 12, 3, 8, 20);\n        List<Integer> big = nuts.stream()\n            .filter(n -> n > 4)\n            .map(n -> n * 2)\n            .toList();\n        System.out.println(big);\n        int total = nuts.stream().mapToInt(n -> n).sum();\n        System.out.println(total);\n    }\n}",
+          "out": "[10, 24, 16, 40]\n48"
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "import java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        List<String> a = new ArrayList<>();\n        a.add(\"x\");\n        a.add(\"y\");\n        a.add(1, \"z\");\n        System.out.println(a);\n    }\n}",
+          "options": ["[x, z, y]", "[x, y, z]", "[z, x, y]", "[x, z]"],
+          "answer": "[x, z, y]",
+          "why": "add(1, \"z\") inserts at index 1 and moves y along one place."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "import java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        long count = List.of(\"oak\", \"ash\", \"elm\", \"beech\").stream()\n            .filter(t -> t.length() == 3)\n            .count();\n        System.out.println(count);\n    }\n}",
+          "options": ["3", "4", "1", "0"],
+          "answer": "3",
+          "why": "oak, ash and elm have three letters. beech has five."
+        },
+        {
+          "q": "Why does a list of whole numbers use List<Integer> and not List<int>?",
+          "options": [
+            "Collections hold objects, and Integer is the object form of int",
+            "int is too small for lists",
+            "List<int> is the old name",
+            "Integer is faster than int"
+          ],
+          "answer": "Collections hold objects, and Integer is the object form of int",
+          "why": "Java converts between int and Integer automatically, so you can still add plain numbers."
+        }
+      ]
+    },
+    {
+      "id": "exceptions",
+      "title": "Exceptions",
+      "summary": "try, catch and finally, your own exceptions, and try-with-resources.",
+      "sections": [
+        {
+          "p": "When something goes wrong, Java <b>throws</b> an exception, and the nearest matching <code>catch</code> handles it. Code in <code>finally</code> runs either way. <code>Integer.parseInt</code> throws a <code>NumberFormatException</code> for text that isn't a number.",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        String[] inputs = {\"42\", \"forty\", \"7\"};\n        int total = 0;\n        for (String s : inputs) {\n            try {\n                total += Integer.parseInt(s);\n            } catch (NumberFormatException e) {\n                System.out.println(\"not a number: \" + s);\n            } finally {\n                System.out.println(\"checked \" + s);\n            }\n        }\n        System.out.println(\"total \" + total);\n    }\n}",
+          "out": "checked 42\nnot a number: forty\nchecked forty\nchecked 7\ntotal 49"
+        },
+        {
+          "h": "Checked and unchecked",
+          "p": "Java has two kinds. A <b>checked</b> exception (a subclass of <code>Exception</code>) must be caught or listed with <code>throws</code> on the method, so callers can't ignore it. An <b>unchecked</b> one (a subclass of <code>RuntimeException</code>) is for programming mistakes and needs no declaration. Your own exception is a class like any other.",
+          "code": "public class Main {\n    static class StashFullException extends Exception {\n        StashFullException(int limit) {\n            super(\"the stash holds at most \" + limit);\n        }\n    }\n\n    static int stored = 0;\n\n    static void store(int count) throws StashFullException {\n        if (stored + count > 10) {\n            throw new StashFullException(10);\n        }\n        stored += count;\n    }\n\n    public static void main(String[] args) {\n        int[] loads = {4, 5, 3};\n        for (int load : loads) {\n            try {\n                store(load);\n                System.out.println(\"stored \" + load + \", now \" + stored);\n            } catch (StashFullException e) {\n                System.out.println(\"refused \" + load + \": \" + e.getMessage());\n            }\n        }\n    }\n}",
+          "out": "stored 4, now 4\nstored 5, now 9\nrefused 3: the stash holds at most 10"
+        },
+        {
+          "h": "try-with-resources",
+          "p": "Anything that implements <code>AutoCloseable</code> (files, network connections) can be opened in the parentheses after <code>try</code>. Java closes it when the block ends, even if an exception is thrown, and closes several in reverse order.",
+          "code": "public class Main {\n    static class Burrow implements AutoCloseable {\n        private final String name;\n        Burrow(String name) {\n            this.name = name;\n            System.out.println(\"open \" + name);\n        }\n        public void close() {\n            System.out.println(\"close \" + name);\n        }\n    }\n\n    public static void main(String[] args) {\n        try (Burrow a = new Burrow(\"north\"); Burrow b = new Burrow(\"south\")) {\n            System.out.println(\"working\");\n            throw new IllegalStateException(\"roof fell in\");\n        } catch (IllegalStateException e) {\n            System.out.println(\"caught: \" + e.getMessage());\n        }\n    }\n}",
+          "out": "open north\nopen south\nworking\nclose south\nclose north\ncaught: roof fell in"
+        }
+      ],
+      "practice": [
+        {
+          "q": "Which kind of exception must be caught or declared with throws?",
+          "options": [
+            "A checked exception (a subclass of Exception but not RuntimeException)",
+            "Any RuntimeException",
+            "Only NullPointerException",
+            "None; Java never requires it"
+          ],
+          "answer": "A checked exception (a subclass of Exception but not RuntimeException)",
+          "why": "The compiler checks that checked exceptions are handled or passed on."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        try {\n            System.out.println(\"a\");\n            int x = 1 / 0;\n            System.out.println(\"b\");\n        } catch (ArithmeticException e) {\n            System.out.println(\"c\");\n        } finally {\n            System.out.println(\"d\");\n        }\n    }\n}",
+          "options": ["a\nc\nd", "a\nb\nd", "a\nc", "c\nd"],
+          "answer": "a\nc\nd",
+          "why": "Dividing by zero throws before b prints; the catch runs, then finally."
+        },
+        {
+          "q": "When does try-with-resources close what it opened?",
+          "options": [
+            "When the try block ends, normally or by an exception",
+            "Only if no exception is thrown",
+            "When the program exits",
+            "Only when you call close yourself"
+          ],
+          "answer": "When the try block ends, normally or by an exception",
+          "why": "That is its point: the resource can't be left open by mistake."
+        }
+      ]
+    },
+    {
+      "id": "strings",
+      "title": "Strings and text",
+      "summary": "StringBuilder, formatting, text blocks, split and join.",
+      "sections": [
+        {
+          "p": "Strings in Java never change: every <code>+</code> makes a new one. To build text in a loop, use a <code>StringBuilder</code>, which grows in place. <code>String.format</code> (or <code>\"...\".formatted(...)</code>) lays out numbers with widths and decimals, like C's printf.",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        StringBuilder sb = new StringBuilder();\n        for (int i = 1; i <= 5; i++) {\n            if (sb.length() > 0) sb.append(\"-\");\n            sb.append(i * i);\n        }\n        System.out.println(sb);\n        System.out.println(sb.reverse());\n\n        double share = 7.0 / 12;\n        System.out.println(String.format(\"%-8s|%5d|%6.2f%%\", \"acorn\", 7, share * 100));\n        System.out.println(\"%s has %d nuts\".formatted(\"Hazel\", 12));\n    }\n}",
+          "out": "1-4-9-16-25\n52-61-9-4-1\nacorn   |    7| 58.33%\nHazel has 12 nuts"
+        },
+        {
+          "h": "Splitting, joining and text blocks",
+          "p": "<code>split</code> cuts a string on a regular expression and <code>String.join</code> glues pieces back. A <b>text block</b>, between <code>\"\"\"</code> marks, holds several lines as written, with the common indentation removed.",
+          "code": "import java.util.Arrays;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        String csv = \"acorn, walnut,pecan ,  hazelnut\";\n        String[] parts = csv.split(\"\\\\s*,\\\\s*\");\n        System.out.println(Arrays.toString(parts));\n        System.out.println(String.join(\" | \", List.of(parts).reversed()));\n\n        String poem = \"\"\"\n            Nuts in autumn,\n            buried deep;\n            found in spring.\n            \"\"\";\n        for (String line : poem.strip().split(\"\\n\")) {\n            System.out.println(line.length() + \" \" + line.toUpperCase());\n        }\n    }\n}",
+          "out": "[acorn, walnut, pecan, hazelnut]\nhazelnut | pecan | walnut | acorn\n15 NUTS IN AUTUMN,\n12 BURIED DEEP;\n16 FOUND IN SPRING."
+        },
+        {
+          "h": "Characters",
+          "p": "<code>charAt</code> gives a <code>char</code>, and <code>chars()</code> gives a stream of them as numbers. <code>Character</code> has tests such as <code>isUpperCase</code> and <code>isDigit</code>.",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        String s = \"Squirrel 42 Nuts\";\n        long upper = s.chars().filter(Character::isUpperCase).count();\n        long digits = s.chars().filter(Character::isDigit).count();\n        System.out.println(upper + \" capitals, \" + digits + \" digits\");\n        System.out.println(s.charAt(0) + \"\" + s.charAt(s.length() - 1));\n        System.out.println(s.indexOf(\"42\") + \" \" + s.contains(\"nuts\") + \" \" + s.toLowerCase().contains(\"nuts\"));\n    }\n}",
+          "out": "2 capitals, 2 digits\nSs\n9 false true"
+        }
+      ],
+      "practice": [
+        {
+          "q": "Why use StringBuilder to build a long string in a loop?",
+          "options": [
+            "Strings never change, so each + makes a new copy; StringBuilder grows in place",
+            "StringBuilder is the only way to join strings",
+            "+ doesn't work in loops",
+            "StringBuilder sorts the text"
+          ],
+          "answer": "Strings never change, so each + makes a new copy; StringBuilder grows in place",
+          "why": "Many + in a loop copies the text again and again."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(String.format(\"[%4d][%-4s]\", 7, \"ab\"));\n    }\n}",
+          "options": ["[   7][ab  ]", "[7   ][  ab]", "[0007][ab]", "[7][ab]"],
+          "answer": "[   7][ab  ]",
+          "why": "%4d pads the number on the left to 4 places; %-4s pads the text on the right."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "public class Main {\n    public static void main(String[] args) {\n        String[] p = \"a:b::c\".split(\":\");\n        System.out.println(p.length + \" \" + String.join(\"+\", p));\n    }\n}",
+          "options": ["4 a+b++c", "3 a+b+c", "4 a+b+c", "5 a+b++c"],
+          "answer": "4 a+b++c",
+          "why": "The empty piece between the two colons is kept, so there are four pieces."
+        }
+      ]
+    },
+    {
+      "id": "sealed",
+      "title": "Sealed types and pattern matching",
+      "summary": "sealed interfaces, records and switch with patterns (Java 21).",
+      "sections": [
+        {
+          "p": "A <b>sealed</b> interface lists every class allowed to implement it. With records for the cases, it describes data with a fixed set of shapes. A <code>switch</code> can then match on the type and pull out the record's parts in one go, and since the compiler knows every case, it needs no <code>default</code>.",
+          "code": "public class Main {\n    sealed interface Shape permits Circle, Square, Rect {}\n    record Circle(double r) implements Shape {}\n    record Square(double side) implements Shape {}\n    record Rect(double w, double h) implements Shape {}\n\n    static double area(Shape s) {\n        return switch (s) {\n            case Circle(double r) -> Math.PI * r * r;\n            case Square(double side) -> side * side;\n            case Rect(double w, double h) -> w * h;\n        };\n    }\n\n    public static void main(String[] args) {\n        Shape[] shapes = {new Circle(1), new Square(3), new Rect(2, 5)};\n        for (Shape s : shapes) {\n            System.out.printf(\"%s -> %.2f%n\", s, area(s));\n        }\n    }\n}",
+          "out": "Circle[r=1.0] -> 3.14\nSquare[side=3.0] -> 9.00\nRect[w=2.0, h=5.0] -> 10.00"
+        },
+        {
+          "h": "Guards and instanceof patterns",
+          "p": "A case can add a condition with <code>when</code>. Outside a switch, <code>instanceof</code> can name the matched value, so there's no separate cast.",
+          "code": "public class Main {\n    record Nut(String kind, int weight) {}\n\n    static String grade(Object o) {\n        return switch (o) {\n            case Nut n when n.weight() >= 10 -> \"big \" + n.kind();\n            case Nut n -> \"small \" + n.kind();\n            case Integer i -> \"a number, \" + i;\n            case null -> \"nothing\";\n            default -> \"something else\";\n        };\n    }\n\n    public static void main(String[] args) {\n        Object[] things = {new Nut(\"walnut\", 12), new Nut(\"acorn\", 4), 7, null, \"leaf\"};\n        for (Object t : things) System.out.println(grade(t));\n\n        Object o = new Nut(\"pecan\", 6);\n        if (o instanceof Nut n && n.weight() > 5) {\n            System.out.println(\"heavy enough: \" + n.kind());\n        }\n    }\n}",
+          "out": "big walnut\nsmall acorn\na number, 7\nnothing\nsomething else\nheavy enough: pecan"
+        }
+      ],
+      "practice": [
+        {
+          "q": "Why does a switch over a sealed interface not need a default case?",
+          "options": [
+            "The compiler knows every permitted type, so it can check all are handled",
+            "switch never needs default",
+            "Sealed types can't be null",
+            "default is added automatically at run time"
+          ],
+          "answer": "The compiler knows every permitted type, so it can check all are handled",
+          "why": "If a new permitted type is added, the switch stops compiling until it handles it."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "public class Main {\n    record P(int x, int y) {}\n    public static void main(String[] args) {\n        Object o = new P(3, 4);\n        if (o instanceof P(int x, int y)) System.out.println(x * y);\n    }\n}",
+          "options": ["12", "7", "P[x=3, y=4]", "nothing"],
+          "answer": "12",
+          "why": "The record pattern takes x and y out of the P directly."
+        },
+        {
+          "q": "What does a record give you without writing it?",
+          "options": [
+            "A constructor, accessors, equals, hashCode and toString",
+            "Setters for every field",
+            "A main method",
+            "Inheritance from another record"
+          ],
+          "answer": "A constructor, accessors, equals, hashCode and toString",
+          "why": "Records are for plain data, and Java writes the usual methods for them."
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Project: a nut ledger",
+      "summary": "Parsing text, records, exceptions, maps and streams together.",
+      "sections": [
+        {
+          "p": "This program reads a ledger written as text, one entry per line such as <code>day 3: acorn x9</code>. A regular expression pulls each line apart into a record; lines it can't read throw an exception that is caught and reported. Totals per nut are grouped with streams and printed as a sorted table.",
+          "code": "import java.util.*;\nimport java.util.regex.*;\nimport java.util.stream.*;\n\npublic class Main {\n    record Entry(int day, String nut, int count) {}\n\n    static final Pattern LINE = Pattern.compile(\"day (\\\\d+): ([a-z]+) x(\\\\d+)\");\n\n    static Entry parse(String line, int number) {\n        Matcher m = LINE.matcher(line);\n        if (!m.matches()) {\n            throw new IllegalArgumentException(\"line \" + number + \": cannot read \\\"\" + line + \"\\\"\");\n        }\n        return new Entry(Integer.parseInt(m.group(1)), m.group(2), Integer.parseInt(m.group(3)));\n    }\n\n    public static void main(String[] args) {\n        String ledger = \"\"\"\n            day 1: acorn x6\n            day 1: hazelnut x2\n            day 2: walnut x1\n            day two: acorn x3\n            day 3: acorn x9\n            day 3: hazelnut x4\n            day 4 acorn x5\"\"\";\n\n        List<Entry> entries = new ArrayList<>();\n        String[] lines = ledger.split(\"\\n\");\n        for (int i = 0; i < lines.length; i++) {\n            try {\n                entries.add(parse(lines[i], i + 1));\n            } catch (IllegalArgumentException e) {\n                System.out.println(\"skipped \" + e.getMessage());\n            }\n        }\n\n        Map<String, Integer> totals = entries.stream()\n            .collect(Collectors.groupingBy(Entry::nut, TreeMap::new, Collectors.summingInt(Entry::count)));\n        int all = totals.values().stream().mapToInt(Integer::intValue).sum();\n\n        totals.entrySet().stream()\n            .sorted(Map.Entry.<String, Integer>comparingByValue().reversed())\n            .forEach(e -> System.out.printf(\"%-9s%3d%7.1f%%%n\", e.getKey(), e.getValue(), 100.0 * e.getValue() / all));\n\n        Entry best = Collections.max(entries, Comparator.comparingInt(Entry::count));\n        System.out.println(\"best find: \" + best.count() + \" \" + best.nut() + \" on day \" + best.day());\n    }\n}",
+          "out": "skipped line 4: cannot read \"day two: acorn x3\"\nskipped line 7: cannot read \"day 4 acorn x5\"\nacorn     15   68.2%\nhazelnut   6   27.3%\nwalnut     1    4.5%\nbest find: 9 acorn on day 3"
+        },
+        {
+          "h": "Ideas to try",
+          "p": "Read the ledger from a file with <code>Files.readAllLines(Path.of(\"ledger.txt\"))</code>, add a total per day with another <code>groupingBy</code>, or turn the nut names into an <code>enum</code> so a typo can't sneak in."
+        }
+      ],
+      "practice": [
+        {
+          "q": "Why is the map built with TreeMap::new?",
+          "options": [
+            "So the totals are kept sorted by nut name before the value sort",
+            "TreeMap is the only Map streams can make",
+            "It makes the sums faster",
+            "To allow duplicate keys"
+          ],
+          "answer": "So the totals are kept sorted by nut name before the value sort",
+          "why": "Ties in the value sort then keep alphabetical order, so the output is always the same."
+        },
+        {
+          "kind": "output",
+          "q": "What does this print?",
+          "code": "import java.util.*;\nimport java.util.stream.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Map<Boolean, Long> m = Stream.of(1, 2, 3, 4, 5)\n            .collect(Collectors.partitioningBy(n -> n % 2 == 0, Collectors.counting()));\n        System.out.println(m.get(true) + \" \" + m.get(false));\n    }\n}",
+          "options": ["2 3", "3 2", "5 0", "{false=3, true=2}"],
+          "answer": "2 3",
+          "why": "partitioningBy splits into evens (2 and 4) and odds (1, 3 and 5) and counts each."
+        },
+        {
+          "q": "What does matcher.matches() check, compared with find()?",
+          "options": [
+            "That the whole line fits the pattern, not just part of it",
+            "Only the first character",
+            "That the pattern appears anywhere",
+            "Nothing; they are the same"
+          ],
+          "answer": "That the whole line fits the pattern, not just part of it",
+          "why": "find() looks for the pattern anywhere; matches() needs the entire input to match."
+        }
+      ]
+    }
+  ]
+}
