@@ -40,6 +40,7 @@ only imported when its license fits that.
 | Microsoft Windows 16-bit APIs (Win16) | Language shape taught in `programming/win16/` (course text written for this project; not a copy of any Windows SDK manual) | Referenced for the published language shape; course text is original under this repo's license | https://en.wikipedia.org/wiki/Windows_API |
 | Microsoft QuickBASIC | Language shape taught in `programming/quickbasic/` (course text written for this project; not a copy of any QuickBASIC manual) | Referenced for the published language shape; course text is original under this repo's license | https://en.wikipedia.org/wiki/QuickBASIC |
 | Python Software Foundation, Python | Language shape taught in `programming/python/` (course text written for this project; not a copy of any Python docs) | Referenced for the published language shape; course text is original under this repo's license | https://docs.python.org/ |
+| Rust project | Language shape taught in `programming/rust/` (course text written for this project; not a copy of The Rust Book) | Referenced for the published language shape; course text is original under this repo's license | https://doc.rust-lang.org/book/ |
 | — (original) | Math Learner course text in `math/` | Original under this repo's license | — |
 | — (original) | Electronics Learner course text in `electronics/` | Original under this repo's license | — |
 
