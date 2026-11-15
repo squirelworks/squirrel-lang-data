@@ -1,0 +1,1068 @@
+{
+  "schema": "programming-course@1",
+  "id": "z80",
+  "name": "Z80 Assembly",
+  "title": "Z80 assembly, register by register",
+  "intro": "The Zilog Z80 is an 8-bit processor from 1976 that powered the ZX Spectrum, MSX computers, the TRS-80, CP/M business machines and the Game Boy's close cousin. Assembly language is a readable spelling of the processor's own instructions, so every line does one small, exact thing. This course writes small programs for <b>CP/M</b>, the disk operating system most Z80 business machines ran, because CP/M gives you an easy way to print text. To run them, assemble a file with an assembler such as <code>pasmo</code>, <code>z80asm</code> or <code>sjasmplus</code> into a <code>.COM</code> file, then start it inside a CP/M emulator such as RunCPM. Every complete program here shows exactly what it prints.",
+  "comment": ";",
+  "keywords": [
+    "LD",
+    "PUSH",
+    "POP",
+    "EX",
+    "EXX",
+    "ADD",
+    "ADC",
+    "SUB",
+    "SBC",
+    "AND",
+    "OR",
+    "XOR",
+    "CP",
+    "INC",
+    "DEC",
+    "JP",
+    "JR",
+    "DJNZ",
+    "CALL",
+    "RET",
+    "RST",
+    "NOP",
+    "HALT",
+    "DI",
+    "EI",
+    "IN",
+    "OUT",
+    "RLA",
+    "RRA",
+    "RLCA",
+    "RRCA",
+    "RL",
+    "RR",
+    "RLC",
+    "RRC",
+    "SLA",
+    "SRA",
+    "SRL",
+    "BIT",
+    "SET",
+    "RES",
+    "NEG",
+    "CPL",
+    "SCF",
+    "CCF",
+    "LDIR",
+    "LDDR",
+    "LDI",
+    "LDD",
+    "CPIR",
+    "CPI",
+    "ORG",
+    "EQU",
+    "DB",
+    "DW",
+    "DS",
+    "DEFB",
+    "DEFW",
+    "DEFS",
+    "END"
+  ],
+  "builtins": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "H",
+    "L",
+    "F",
+    "AF",
+    "BC",
+    "DE",
+    "HL",
+    "IX",
+    "IY",
+    "SP",
+    "PC",
+    "NZ",
+    "Z",
+    "NC",
+    "PO",
+    "PE",
+    "P",
+    "M"
+  ],
+  "lessons": [
+    {
+      "id": "registers",
+      "title": "Registers and LD",
+      "summary": "The processor's own tiny variables, and moving data between them.",
+      "sections": [
+        {
+          "p": "The Z80 has a handful of 8-bit <b>registers</b>: <code>A</code> (the accumulator, where most arithmetic happens), <code>B</code>, <code>C</code>, <code>D</code>, <code>E</code>, <code>H</code> and <code>L</code>. They pair up into 16-bit registers <code>BC</code>, <code>DE</code> and <code>HL</code>, which usually hold addresses. 8 bits hold 0–255; 16 bits hold 0–65535, the whole memory map."
+        },
+        {
+          "h": "LD copies",
+          "code": "        LD   A, 5        ; A = 5\n        LD   B, A        ; B = 5 too\n        LD   HL, 8000h   ; HL = address 8000 (hex)\n        LD   (HL), A     ; memory[8000h] = 5\n        LD   A, (HL)     ; A = memory[8000h]",
+          "p": "<code>LD destination, source</code> copies a value. The destination always comes first. Brackets mean “the memory at this address”."
+        },
+        {
+          "h": "Hex, binary and characters",
+          "code": "        LD   A, 65       ; decimal\n        LD   A, 41h      ; the same, in hex\n        LD   A, 01000001b ; the same, in binary\n        LD   A, 'A'      ; the same, as a character",
+          "p": "Assembly programmers write numbers in whichever base is clearest. <code>255</code>, <code>0FFh</code> and <code>11111111b</code> are the same value. A hex number that starts with a letter needs a leading 0 so the assembler does not mistake it for a name. A character in quotes, like <code>'A'</code>, means its code: 65."
+        },
+        {
+          "h": "Pairs share their halves",
+          "code": "        LD   HL, 1234h   ; H = 12h, L = 34h\n        LD   L, 0        ; HL is now 1200h\n        LD   DE, 300     ; 300 = 012Ch, so D = 01h, E = 2Ch",
+          "p": "<code>H</code> is the high byte of <code>HL</code> and <code>L</code> the low byte. Changing one changes the pair. The same goes for <code>B</code>/<code>C</code> and <code>D</code>/<code>E</code>."
+        }
+      ],
+      "practice": [
+        {
+          "why": "LD copies the source (A, holding 5) into the destination (B).",
+          "q": "After LD A, 5 then LD B, A, what is in B?",
+          "options": ["5", "0", "A", "Whatever was in B before"],
+          "answer": "5"
+        },
+        {
+          "why": "The destination comes first, and brackets mean memory at that address.",
+          "q": "What does LD (HL), A do?",
+          "options": [
+            "Stores A into memory at the address in HL",
+            "Copies HL into A",
+            "Loads A from address HL",
+            "Adds A to HL"
+          ],
+          "answer": "Stores A into memory at the address in HL"
+        },
+        {
+          "why": "H is the high byte of the pair, L the low byte.",
+          "q": "HL holds 1234h. What is in H?",
+          "options": ["12h", "34h", "1234h", "0"],
+          "answer": "12h"
+        },
+        {
+          "why": "10h, 16 and 00010000b are all sixteen; 0Ah is ten.",
+          "q": "Which value is not the same as the others?",
+          "options": ["10h", "16", "00010000b", "0Ah"],
+          "answer": "0Ah"
+        },
+        {
+          "why": "A word that starts with a letter looks like a label; the leading 0 marks it as a number.",
+          "q": "Why write 0FFh instead of FFh?",
+          "options": [
+            "So the assembler reads a number, not a name",
+            "It is a bigger number",
+            "It means a negative number",
+            "FFh is a different value"
+          ],
+          "answer": "So the assembler reads a number, not a name"
+        },
+        {
+          "why": "Changing L only replaces the low byte; H stays 80h, so HL becomes 8005h.",
+          "q": "After LD HL, 8000h then LD L, 5, what is in HL?",
+          "options": ["8005h", "0005h", "8500h", "8000h"],
+          "answer": "8005h"
+        },
+        {
+          "why": "Brackets mean memory; the destination A comes first, so A receives the byte.",
+          "q": "What does LD A, (HL) do?",
+          "options": [
+            "Loads A from the memory byte HL points at",
+            "Stores A into memory at HL",
+            "Copies HL into A",
+            "Adds (HL) to A"
+          ],
+          "answer": "Loads A from the memory byte HL points at"
+        }
+      ]
+    },
+    {
+      "id": "hello",
+      "title": "Hello, CP/M",
+      "summary": "The shape of a whole program, and printing with the BDOS.",
+      "sections": [
+        {
+          "out": "Hello, squirrel!",
+          "code": "        ORG  100h\n        LD   DE, msg     ; DE = address of the text\n        LD   C, 9        ; BDOS function 9: print string\n        CALL 5\n        RET              ; back to CP/M\nmsg:    DB   'Hello, squirrel!$'",
+          "p": "A CP/M program is loaded at address <code>100h</code>, so it starts with <code>ORG 100h</code>. To print, you ask the operating system: put a function number in <code>C</code> and <code>CALL 5</code>, the address of the <b>BDOS</b> (Basic Disk Operating System). Function 9 prints the string whose address is in <code>DE</code>, up to a <code>$</code> sign. <code>RET</code> at the end goes back to CP/M."
+        },
+        {
+          "out": "Line one\nLine two",
+          "h": "DB puts bytes in memory",
+          "code": "        ORG  100h\n        LD   DE, msg\n        LD   C, 9\n        CALL 5\n        RET\nmsg:    DB   'Line one', 13, 10\n        DB   'Line two$'",
+          "p": "<code>DB</code> (define byte) is not an instruction. It tells the assembler to place bytes right there in the program: characters from quoted text, and numbers as they are. 13 and 10 are carriage return and line feed, which together start a new line on CP/M."
+        },
+        {
+          "out": "OK",
+          "h": "One character at a time",
+          "code": "        ORG  100h\n        LD   E, 'O'\n        LD   C, 2        ; BDOS function 2: print the character in E\n        CALL 5\n        LD   E, 'K'\n        LD   C, 2\n        CALL 5\n        RET",
+          "p": "Function 2 prints the single character in <code>E</code>. The BDOS is allowed to change any register, so set <code>C</code> and <code>E</code> again before every call."
+        },
+        {
+          "out": "Named and tidy",
+          "h": "EQU names a number",
+          "code": "BDOS    EQU  5\nPRINT   EQU  9\n        ORG  100h\n        LD   DE, msg\n        LD   C, PRINT\n        CALL BDOS\n        RET\nmsg:    DB   'Named and tidy$'",
+          "p": "<code>name EQU value</code> gives a number a name, so the program says what it means. Labels like <code>msg:</code> are names too: they stand for the address where they appear."
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "why": "Function 9 stops at the first $ and does not print it.",
+          "q": "What does this print?",
+          "options": ["Nuts", "Nuts$ and more", "Nuts and more", "msg"],
+          "code": "        ORG  100h\n        LD   DE, msg\n        LD   C, 9\n        CALL 5\n        RET\nmsg:    DB   'Nuts$ and more'",
+          "answer": "Nuts"
+        },
+        {
+          "why": "CP/M reads the function number from C; DE or E holds what it works on.",
+          "q": "Which register holds the BDOS function number?",
+          "options": ["C", "A", "E", "DE"],
+          "answer": "C"
+        },
+        {
+          "kind": "output",
+          "why": "Each call to function 2 prints the character in E, in program order.",
+          "q": "What does this print?",
+          "options": ["HI", "H", "I", "IH"],
+          "code": "        ORG  100h\n        LD   E, 'H'\n        LD   C, 2\n        CALL 5\n        LD   E, 'I'\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "HI"
+        },
+        {
+          "why": "CP/M loads every .COM program at 100h, so labels must be counted from there.",
+          "q": "What does ORG 100h tell the assembler?",
+          "options": [
+            "The program will be loaded at address 100h",
+            "Print 100h characters",
+            "The program is 100h bytes long",
+            "Start a loop"
+          ],
+          "answer": "The program will be loaded at address 100h"
+        },
+        {
+          "why": "CP/M makes no promise to keep registers, so a careful program reloads them.",
+          "q": "Why set C again before a second CALL 5?",
+          "options": [
+            "The BDOS may have changed it",
+            "CALL always clears C",
+            "C counts the calls",
+            "It is only needed for style"
+          ],
+          "answer": "The BDOS may have changed it"
+        },
+        {
+          "kind": "output",
+          "why": "13 and 10 start a new line; function 9 then prints OK and stops at $.",
+          "q": "What does this print?",
+          "options": ["Z80\nOK", "Z80OK", "Z80", "OK"],
+          "code": "        ORG  100h\n        LD   DE, msg\n        LD   C, 9\n        CALL 5\n        RET\nmsg:    DB   'Z80', 13, 10\n        DB   'OK$'",
+          "answer": "Z80\nOK"
+        },
+        {
+          "kind": "output",
+          "why": "Each function-2 call prints the character currently in E.",
+          "q": "What does this print?",
+          "options": ["Z80", "Z", "80", "0Z8"],
+          "code": "        ORG  100h\n        LD   E, 'Z'\n        LD   C, 2\n        CALL 5\n        LD   E, '8'\n        LD   C, 2\n        CALL 5\n        LD   E, '0'\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "Z80"
+        }
+      ]
+    },
+    {
+      "id": "arithmetic",
+      "title": "Arithmetic and the carry",
+      "summary": "ADD, SUB, INC and DEC; the carry flag; 16-bit sums.",
+      "sections": [
+        {
+          "out": "6",
+          "code": "        ORG  100h\n        LD   A, 3\n        ADD  A, 4        ; A = 7\n        SUB  2           ; A = 5\n        INC  A           ; A = 6\n        ADD  A, '0'      ; A = '6'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "p": "<code>ADD A, x</code> and <code>SUB x</code> work on the accumulator. <code>INC</code> and <code>DEC</code> add or take one from any register. Adding the character code of <code>'0'</code> (48) to a number from 0 to 9 gives the digit to print."
+        },
+        {
+          "h": "Wrapping and the carry flag",
+          "code": "        LD   A, 250\n        ADD  A, 10       ; A = 4, carry set\n        LD   A, 3\n        SUB  5           ; A = 254, carry set (borrow)\n        LD   A, 255\n        INC  A           ; A = 0, carry unchanged",
+          "p": "An 8-bit register wraps: 250 + 10 is 4, not 260. When that happens the <b>carry flag</b> (C) is set, as if the ninth bit fell out into it. Subtraction that goes below 0 also wraps and sets carry (a “borrow”). <code>INC</code> and <code>DEC</code> wrap too, but leave carry alone."
+        },
+        {
+          "h": "ADC and SBC carry it on",
+          "code": "        ; 300 + 500 using 8-bit steps: 012Ch + 01F4h\n        LD   A, 2Ch      ; low byte of 300\n        ADD  A, 0F4h     ; low byte of 500: A = 20h, carry set\n        LD   L, A\n        LD   A, 01h      ; high byte of 300\n        ADC  A, 01h      ; high byte of 500, plus the carry: A = 03h\n        LD   H, A        ; HL = 0320h = 800",
+          "p": "<code>ADC</code> (add with carry) adds the carry flag as an extra 1. That is how you add numbers wider than 8 bits: add the low bytes, then <code>ADC</code> the high bytes. <code>SBC</code> does the same for subtraction."
+        },
+        {
+          "h": "16-bit sums in HL",
+          "code": "        LD   HL, 1000\n        LD   DE, 234\n        ADD  HL, DE      ; HL = 1234\n        OR   A           ; clear the carry flag\n        SBC  HL, DE      ; HL = 1000 again",
+          "p": "<code>ADD HL, rr</code> adds a whole register pair in one go. <code>INC HL</code> and <code>DEC HL</code> step a pointer. There is no 16-bit <code>SUB</code>; use <code>OR A</code> to clear carry and then <code>SBC HL, DE</code>."
+        },
+        {
+          "out": "2",
+          "h": "NEG flips the sign",
+          "code": "        ORG  100h\n        LD   A, 7\n        NEG              ; A = 249, which is -7\n        ADD  A, 9        ; 249 + 9 wraps to 2\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "p": "<code>NEG</code> turns A into 0 − A. In 8 bits, −1 is written 255, −2 is 254, and so on (<b>two's complement</b>). The same bits can be read as 0 to 255 or as −128 to 127; it is the program that decides which."
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "why": "9 − 4 is 5, DEC makes it 4, and adding '0' makes the character 4.",
+          "q": "What does this print?",
+          "options": ["4", "5", "3", "9"],
+          "code": "        ORG  100h\n        LD   A, 9\n        SUB  4\n        DEC  A\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "4"
+        },
+        {
+          "why": "300 does not fit in 8 bits; it wraps to 300 − 256 = 44 and sets carry.",
+          "q": "A holds 200. After ADD A, 100, what is in A?",
+          "options": ["44", "300", "255", "0"],
+          "answer": "44"
+        },
+        {
+          "why": "ADC means add with carry; it is how wider numbers are added byte by byte.",
+          "q": "Which instruction adds the carry flag in as well?",
+          "options": ["ADC", "ADD", "INC", "SUB"],
+          "answer": "ADC"
+        },
+        {
+          "why": "INC wraps to 0 and sets the zero flag, but it never touches carry.",
+          "q": "A holds 255 and carry is clear. After INC A?",
+          "options": [
+            "A = 0, carry still clear",
+            "A = 0, carry set",
+            "A = 256",
+            "A = 255"
+          ],
+          "answer": "A = 0, carry still clear"
+        },
+        {
+          "kind": "output",
+          "why": "NEG makes A −2 (254); 254 + 7 wraps to 5.",
+          "q": "What does this print?",
+          "options": ["5", "9", "7", "3"],
+          "code": "        ORG  100h\n        LD   A, 2\n        NEG\n        ADD  A, 7\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "5"
+        },
+        {
+          "why": "SBC subtracts the carry as well; OR A leaves A alone but always clears carry.",
+          "q": "Why OR A before SBC HL, DE?",
+          "options": [
+            "To clear carry so it is not subtracted too",
+            "To set A to 0",
+            "To make HL positive",
+            "SBC needs A to be 0"
+          ],
+          "answer": "To clear carry so it is not subtracted too"
+        },
+        {
+          "kind": "output",
+          "why": "5 + 3 is 8; INC makes 9; adding '0' makes the character 9.",
+          "q": "What does this print?",
+          "options": ["9", "8", "5", "3"],
+          "code": "        ORG  100h\n        LD   A, 5\n        ADD  A, 3\n        INC  A\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "9"
+        },
+        {
+          "kind": "output",
+          "why": "ADD A, A doubles A: 4 becomes 8.",
+          "q": "What does this print?",
+          "options": ["8", "4", "6", "0"],
+          "code": "        ORG  100h\n        LD   A, 4\n        ADD  A, A\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "8"
+        }
+      ]
+    },
+    {
+      "id": "flow",
+      "title": "Flags and decisions",
+      "summary": "CP, the zero and carry flags, and conditional jumps.",
+      "sections": [
+        {
+          "code": "        CP   10          ; compare A with 10\n        JR   Z, ten      ; jump if A was 10\n        JR   C, small    ; jump if A was less than 10\n        ; otherwise A is bigger than 10 here",
+          "p": "Arithmetic sets <b>flags</b>. The most used are <b>Z</b> (the result was zero) and <b>C</b> (carry). <code>CP x</code> compares A with x by subtracting without keeping the answer, only the flags. Jumps then test them: <code>JP Z</code>, <code>JR NZ</code>, <code>JR C</code>, <code>JR NC</code>."
+        },
+        {
+          "out": "big",
+          "h": "Reading CP",
+          "code": "        ORG  100h\n        LD   A, 7\n        CP   5\n        JR   C, less     ; not taken: 7 is not below 5\n        LD   DE, big\n        JR   show\nless:   LD   DE, small\nshow:   LD   C, 9\n        CALL 5\n        RET\nbig:    DB   'big$'\nsmall:  DB   'small$'",
+          "p": "After <code>CP x</code>: <b>Z</b> set means A = x. <b>C</b> set means A &lt; x (unsigned). Neither set means A &gt; x. <b>NC</b> means A ≥ x."
+        },
+        {
+          "h": "JR or JP",
+          "p": "<code>JR</code> (jump relative) is one byte shorter and can reach about 127 bytes forward or back; it only tests Z, NZ, C and NC. <code>JP</code> reaches anywhere and can also test the sign (<code>P</code>, <code>M</code>) and parity/overflow (<code>PE</code>, <code>PO</code>). Use <code>JR</code> for short hops."
+        },
+        {
+          "out": "none",
+          "h": "If, else if, else",
+          "code": "        ORG  100h\n        LD   A, 0        ; try 0, 1 or 2\n        CP   0\n        JR   NZ, not0\n        LD   DE, zero\n        JR   done\nnot0:   CP   1\n        JR   NZ, other\n        LD   DE, one\n        JR   done\nother:  LD   DE, many\ndone:   LD   C, 9\n        CALL 5\n        RET\nzero:   DB   'none$'\none:    DB   'one$'\nmany:   DB   'lots$'",
+          "p": "A chain of compares makes a decision with several branches. Each branch ends with a jump past the others."
+        },
+        {
+          "h": "Testing for zero cheaply",
+          "code": "        OR   A           ; is A zero?\n        JR   Z, empty\n        DEC  B           ; DEC sets Z when B reaches 0\n        JR   Z, last",
+          "p": "<code>OR A</code> leaves A unchanged but sets Z if A is 0, so you do not need <code>CP 0</code>. <code>AND A</code> works the same way. Many instructions set flags as a side effect, so you can often jump straight after <code>DEC</code> or <code>SUB</code>."
+        }
+      ],
+      "practice": [
+        {
+          "why": "10 − 10 is zero, so Z is set; there is no borrow, so C is clear.",
+          "q": "After CP 10 with A = 10, which flag is set?",
+          "options": ["Z", "C", "Neither", "Both"],
+          "answer": "Z"
+        },
+        {
+          "why": "4 − 10 borrows, setting the carry flag, so A is less than 10.",
+          "q": "After CP 10 with A = 4, which jump is taken?",
+          "options": ["JR C", "JR Z", "JR NC", "JR NZ and JR Z"],
+          "answer": "JR C"
+        },
+        {
+          "kind": "output",
+          "why": "A equals 3, so Z is set and JR NZ is not taken; E gets Y.",
+          "q": "What does this print?",
+          "options": ["Y", "N", "YN", "3"],
+          "code": "        ORG  100h\n        LD   A, 3\n        CP   3\n        JR   NZ, no\n        LD   E, 'Y'\n        JR   say\nno:     LD   E, 'N'\nsay:    LD   C, 2\n        CALL 5\n        RET",
+          "answer": "Y"
+        },
+        {
+          "kind": "output",
+          "why": "12 − 20 borrows, so carry is set and JR NC is not taken.",
+          "q": "What does this print?",
+          "options": ["low", "high", "lowhigh", "12"],
+          "code": "        ORG  100h\n        LD   A, 12\n        CP   20\n        JR   NC, isbig\n        LD   DE, lomsg\n        JR   say\nisbig:  LD   DE, himsg\nsay:    LD   C, 9\n        CALL 5\n        RET\nlomsg:  DB   'low$'\nhimsg:  DB   'high$'",
+          "answer": "low"
+        },
+        {
+          "why": "JR only tests Z, NZ, C and NC; the sign condition M needs JP.",
+          "q": "Which jump cannot be written with JR?",
+          "options": ["JP M, label", "JR Z, label", "JR NC, label", "JR label"],
+          "answer": "JP M, label"
+        },
+        {
+          "why": "A OR A is A; the point is that Z and S now describe A, and carry is cleared.",
+          "q": "What does OR A do to A?",
+          "options": [
+            "Nothing, but it sets the flags from A",
+            "Clears A",
+            "Sets A to 255",
+            "Doubles A"
+          ],
+          "answer": "Nothing, but it sets the flags from A"
+        },
+        {
+          "kind": "output",
+          "why": "A equals 5, so Z is set and JR Z takes the yes branch.",
+          "q": "What does this print?",
+          "options": ["Y", "N", "5", "YN"],
+          "code": "        ORG  100h\n        LD   A, 5\n        CP   5\n        JR   Z, yes\n        LD   E, 'N'\n        JR   say\nyes:    LD   E, 'Y'\nsay:    LD   C, 2\n        CALL 5\n        RET",
+          "answer": "Y"
+        },
+        {
+          "kind": "output",
+          "why": "9 is not below 4, so carry is clear and JR C is skipped.",
+          "q": "What does this print?",
+          "options": ["hi", "lo", "hilo", "9"],
+          "code": "        ORG  100h\n        LD   A, 9\n        CP   4\n        JR   C, lo\n        LD   DE, hi\n        JR   out\nlo:     LD   DE, lom\nout:    LD   C, 9\n        CALL 5\n        RET\nhi:     DB   'hi$'\nlom:    DB   'lo$'",
+          "answer": "hi"
+        }
+      ]
+    },
+    {
+      "id": "loops",
+      "title": "Loops",
+      "summary": "DJNZ, counting up, and 16-bit counters.",
+      "sections": [
+        {
+          "out": "6",
+          "code": "        ORG  100h\n        LD   B, 3        ; loop three times\n        LD   A, 0\nagain:  ADD  A, 2        ; A = 2, 4, 6\n        DJNZ again\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "p": "<code>DJNZ label</code> means “decrement B, jump if not zero”. Put the count in <code>B</code> and the loop runs exactly that many times. Here the BDOS call is outside the loop, so nothing else disturbs B."
+        },
+        {
+          "out": "*****",
+          "h": "Keep B safe across calls",
+          "code": "        ORG  100h\n        LD   B, 5\nstar:   PUSH BC\n        LD   E, '*'\n        LD   C, 2\n        CALL 5\n        POP  BC\n        DJNZ star\n        RET",
+          "p": "If the loop body calls the BDOS, B may come back changed. <code>PUSH BC</code> before the call and <code>POP BC</code> after keep the counter safe. This loop prints five stars."
+        },
+        {
+          "out": "12345",
+          "h": "Counting up with CP",
+          "code": "        ORG  100h\n        LD   D, '1'\nnext:   PUSH DE\n        LD   E, D\n        LD   C, 2\n        CALL 5\n        POP  DE\n        INC  D\n        LD   A, D\n        CP   '6'         ; stop after 5\n        JR   NZ, next\n        RET",
+          "p": "To count up, keep the number in a register, print or use it, add one, and compare with the end value. Here the digit itself is the counter, kept in <code>D</code> and saved around the call."
+        },
+        {
+          "h": "Longer loops with BC",
+          "code": "        LD   BC, 1000\nslow:   ; ... loop body ...\n        DEC  BC\n        LD   A, B\n        OR   C\n        JR   NZ, slow    ; runs 1000 times",
+          "p": "DJNZ only counts to 256. For more, count down a register pair. <code>DEC BC</code> does not set any flags, so test for zero by hand: <code>LD A, B</code> then <code>OR C</code> sets Z only when both halves are 0."
+        },
+        {
+          "out": "....\n....\n....",
+          "h": "Loops inside loops",
+          "code": "        ORG  100h\n        LD   D, 3\nrow:    LD   B, 4\ndot:    PUSH BC\n        PUSH DE\n        LD   E, '.'\n        LD   C, 2\n        CALL 5\n        POP  DE\n        POP  BC\n        DJNZ dot\n        PUSH DE\n        LD   DE, crlf\n        LD   C, 9\n        CALL 5\n        POP  DE\n        DEC  D\n        JR   NZ, row\n        RET\ncrlf:   DB   13, 10, '$'",
+          "p": "An inner loop needs its own counter, or the outer counter must be saved. This one prints three rows of four dots, with the outer count in D and the inner count in B."
+        }
+      ],
+      "practice": [
+        {
+          "why": "B goes 3 → 2 → 1 → 0; the jump is taken until B reaches 0.",
+          "q": "How many times does a DJNZ loop run when it starts with LD B, 3?",
+          "options": ["3", "2", "4", "255"],
+          "answer": "3"
+        },
+        {
+          "kind": "output",
+          "why": "B starts at 4, so the body runs four times.",
+          "q": "What does this print?",
+          "options": ["####", "###", "#", "#####"],
+          "code": "        ORG  100h\n        LD   B, 4\nlp:     PUSH BC\n        LD   E, '#'\n        LD   C, 2\n        CALL 5\n        POP  BC\n        DJNZ lp\n        RET",
+          "answer": "####"
+        },
+        {
+          "kind": "output",
+          "why": "ADD A, A doubles: 1 → 2 → 4 → 8 over three passes.",
+          "q": "What does this print?",
+          "options": ["8", "6", "4", "3"],
+          "code": "        ORG  100h\n        LD   B, 3\n        LD   A, 1\nlp:     ADD  A, A\n        DJNZ lp\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "8"
+        },
+        {
+          "why": "16-bit INC and DEC leave the flags alone, so you check both halves for zero yourself.",
+          "q": "Why test LD A, B / OR C after DEC BC?",
+          "options": [
+            "DEC BC sets no flags",
+            "DEC BC clears A",
+            "OR C adds C to B",
+            "It makes the loop faster"
+          ],
+          "answer": "DEC BC sets no flags"
+        },
+        {
+          "why": "The first DEC turns 0 into 255, so the loop goes all the way round: 256 passes.",
+          "q": "What does LD B, 0 then a DJNZ loop do?",
+          "options": ["Runs 256 times", "Runs 0 times", "Runs once", "Never stops"],
+          "answer": "Runs 256 times"
+        },
+        {
+          "why": "The BDOS may change B; saving BC on the stack and restoring it keeps the counter.",
+          "q": "The loop body calls the BDOS. What keeps the DJNZ count safe?",
+          "options": [
+            "PUSH BC before, POP BC after",
+            "Nothing is needed",
+            "Using DEC B instead",
+            "Putting the count in C"
+          ],
+          "answer": "PUSH BC before, POP BC after"
+        },
+        {
+          "kind": "output",
+          "why": "Two passes add 2 each time: 3 → 5 → 7.",
+          "q": "What does this print?",
+          "options": ["7", "5", "3", "9"],
+          "code": "        ORG  100h\n        LD   B, 2\n        LD   A, 3\nlp:     ADD  A, 2\n        DJNZ lp\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "7"
+        },
+        {
+          "kind": "output",
+          "why": "B starts at 3 and PUSH/POP keep it safe across each BDOS call.",
+          "q": "What does this print?",
+          "options": ["+++", "++", "+", "++++"],
+          "code": "        ORG  100h\n        LD   B, 3\nlp:     PUSH BC\n        LD   E, '+'\n        LD   C, 2\n        CALL 5\n        POP  BC\n        DJNZ lp\n        RET",
+          "answer": "+++"
+        }
+      ]
+    },
+    {
+      "id": "stack",
+      "title": "Subroutines and the stack",
+      "summary": "CALL, RET, PUSH, POP and keeping registers safe.",
+      "sections": [
+        {
+          "out": "4",
+          "code": "        ORG  100h\n        LD   A, 1\n        CALL double      ; A = 2\n        CALL double      ; A = 4\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET\ndouble: ADD  A, A\n        RET",
+          "p": "<code>CALL label</code> pushes the return address on the stack and jumps; <code>RET</code> pops it and goes back. A <b>subroutine</b> is just code that ends in <code>RET</code>. This one doubles A."
+        },
+        {
+          "h": "Last in, first out",
+          "code": "        LD   BC, 1111h\n        LD   DE, 2222h\n        PUSH BC\n        PUSH DE\n        POP  BC          ; BC = 2222h (DE went on last)\n        POP  DE          ; DE = 1111h",
+          "p": "The stack grows downward in memory. <code>PUSH</code> puts a register pair on top and <code>POP</code> takes the top one off, so they come back in reverse order. Here the pops are crossed on purpose, which swaps the two pairs."
+        },
+        {
+          "out": "abcde",
+          "h": "A print-character routine",
+          "code": "        ORG  100h\n        LD   A, 'a'\n        LD   B, 5\nlp:     CALL putc\n        INC  A\n        DJNZ lp\n        RET\n\nputc:   PUSH AF          ; print the character in A\n        PUSH BC\n        PUSH DE\n        PUSH HL\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        POP  HL\n        POP  DE\n        POP  BC\n        POP  AF\n        RET",
+          "p": "A routine that saves every register it uses can be called from anywhere without surprises. <code>putc</code> prints the character in A and keeps all registers, which makes the loop simple."
+        },
+        {
+          "out": "up the tree",
+          "h": "Passing values",
+          "code": "        ORG  100h\n        LD   HL, m1\n        CALL print\n        LD   HL, m2\n        CALL print\n        RET\n\n; print: HL = address of a $-ended string\nprint:  EX   DE, HL      ; the BDOS wants it in DE\n        LD   C, 9\n        CALL 5\n        RET\n\nm1:     DB   'up the $'\nm2:     DB   'tree$'",
+          "p": "Assembly has no parameters; you agree which registers carry what. Here <code>print</code> takes the address of a <code>$</code>-ended string in HL. Write that agreement in a comment above the routine."
+        },
+        {
+          "h": "Balance every PUSH",
+          "p": "<code>RET</code> pops whatever is on top of the stack. If a routine pushes something and forgets to pop it, <code>RET</code> jumps to that value instead of going home, and the program crashes. Every <code>PUSH</code> needs a matching <code>POP</code> on every path out."
+        }
+      ],
+      "practice": [
+        {
+          "why": "The stack is last in, first out: DE went on last, so it comes off first.",
+          "q": "You PUSH BC then PUSH DE. Which POP gets DE back?",
+          "options": ["The first POP", "The second POP", "Either", "Neither"],
+          "answer": "The first POP"
+        },
+        {
+          "kind": "output",
+          "why": "triple adds A twice and then the copy in B: 2 + 2 + 2.",
+          "q": "What does this print?",
+          "options": ["6", "4", "2", "8"],
+          "code": "        ORG  100h\n        LD   A, 2\n        CALL triple\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET\ntriple: LD   B, A\n        ADD  A, A\n        ADD  A, B\n        RET",
+          "answer": "6"
+        },
+        {
+          "why": "That return address is what RET pops so the program carries on after the CALL.",
+          "q": "What does CALL put on the stack?",
+          "options": [
+            "The address of the next instruction",
+            "The value of A",
+            "The address of the routine",
+            "Nothing"
+          ],
+          "answer": "The address of the next instruction"
+        },
+        {
+          "kind": "output",
+          "why": "POP DE restores the pair saved earlier, so E is Y again.",
+          "q": "What does this print?",
+          "options": ["Y", "B", "X", "A"],
+          "code": "        ORG  100h\n        LD   D, 'X'\n        LD   E, 'Y'\n        PUSH DE\n        LD   D, 'A'\n        LD   E, 'B'\n        POP  DE\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "Y"
+        },
+        {
+          "why": "RET pops the top of the stack, which is now HL's old value, not the return address.",
+          "q": "A routine does PUSH HL but returns without POP HL. What happens at RET?",
+          "options": [
+            "It jumps to the address that was in HL",
+            "It returns normally",
+            "HL is restored",
+            "The assembler refuses"
+          ],
+          "answer": "It jumps to the address that was in HL"
+        },
+        {
+          "kind": "output",
+          "why": "Each CALL adds 3: 1 → 4 → 7.",
+          "q": "What does this print?",
+          "options": ["7", "4", "1", "6"],
+          "code": "        ORG  100h\n        LD   A, 1\n        CALL plus3\n        CALL plus3\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET\nplus3:  ADD  A, 3\n        RET",
+          "answer": "7"
+        },
+        {
+          "kind": "output",
+          "why": "POP DE restores the saved pair, so function 2 prints E, which is Q again.",
+          "q": "What does this print?",
+          "options": ["Q", "S", "P", "R"],
+          "code": "        ORG  100h\n        LD   D, 'P'\n        LD   E, 'Q'\n        PUSH DE\n        LD   D, 'R'\n        LD   E, 'S'\n        POP  DE\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "Q"
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "title": "Memory, tables and strings",
+      "summary": "Walking through memory with HL, lookup tables and LDIR.",
+      "sections": [
+        {
+          "out": "acorn",
+          "code": "        ORG  100h\n        LD   HL, text\nnext:   LD   A, (HL)\n        OR   A           ; the 0 at the end?\n        RET  Z           ; then we are finished\n        PUSH HL\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        POP  HL\n        INC  HL\n        JR   next\ntext:   DB   'acorn', 0",
+          "p": "HL is the usual pointer. <code>LD A, (HL)</code> reads the byte it points at and <code>INC HL</code> moves to the next. Strings in assembly often end with a 0 byte; a loop prints until it finds it."
+        },
+        {
+          "h": "Conditional RET",
+          "p": "<code>RET Z</code> returns only if Z is set. That and <code>RET NZ</code>, <code>RET C</code>, <code>RET NC</code> make tidy exits from loops and routines. At the top level of a CP/M program a return ends the program."
+        },
+        {
+          "out": "F",
+          "h": "Lookup tables",
+          "code": "        ORG  100h\n        LD   E, 3        ; which entry (counting from 0)\n        LD   D, 0\n        LD   HL, table\n        ADD  HL, DE      ; HL = table + 3\n        LD   E, (HL)\n        LD   C, 2\n        CALL 5\n        RET\ntable:  DB   'ZOTF'      ; entries 0..3",
+          "p": "To turn a number into something else, keep the answers in a table and add the number to the table's address. <code>ADD HL, DE</code> does the indexing; D must be 0 so only E is added."
+        },
+        {
+          "out": "cat",
+          "h": "Writing to memory",
+          "code": "        ORG  100h\n        LD   HL, buf\n        LD   A, 'c'\n        LD   (HL), A\n        INC  HL\n        LD   (HL), 'a'\n        INC  HL\n        LD   (HL), 't'\n        INC  HL\n        LD   (HL), '$'\n        LD   DE, buf\n        LD   C, 9\n        CALL 5\n        RET\nbuf:    DS   4",
+          "p": "<code>LD (HL), A</code> stores. <code>DS n</code> reserves n bytes of space for the program to fill in. Here the program writes three characters and a <code>$</code> into a buffer, then prints it."
+        },
+        {
+          "out": "copy!",
+          "h": "LDIR copies a block",
+          "code": "        ORG  100h\n        LD   HL, src\n        LD   DE, dst\n        LD   BC, 6       ; five letters and the $\n        LDIR\n        LD   DE, dst\n        LD   C, 9\n        CALL 5\n        RET\nsrc:    DB   'copy!$'\ndst:    DS   6",
+          "p": "<code>LDIR</code> copies BC bytes from the address in HL to the address in DE, moving both forward. It is a whole copy loop in one instruction."
+        },
+        {
+          "out": "7",
+          "h": "Named addresses",
+          "code": "        ORG  100h\n        LD   A, (count)\n        ADD  A, 2\n        LD   (count), A  ; count is now 7\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET\ncount:  DB   5",
+          "p": "<code>LD A, (count)</code> and <code>LD (count), A</code> read and write a byte at a labelled address. That is how you keep a variable in memory when you run out of registers."
+        }
+      ],
+      "practice": [
+        {
+          "kind": "output",
+          "why": "HL starts at n; two INC HL move it to t (n, u, t).",
+          "q": "What does this print?",
+          "options": ["t", "u", "n", "s"],
+          "code": "        ORG  100h\n        LD   HL, word\n        INC  HL\n        INC  HL\n        LD   E, (HL)\n        LD   C, 2\n        CALL 5\n        RET\nword:   DB   'nuts'",
+          "answer": "t"
+        },
+        {
+          "why": "LDIR copies from (HL) to (DE), counting BC down to 0.",
+          "q": "What does LDIR use as its byte count?",
+          "options": ["BC", "B", "A", "HL"],
+          "answer": "BC"
+        },
+        {
+          "kind": "output",
+          "why": "Entries count from 0, so table + 1 is the second byte, b.",
+          "q": "What does this print?",
+          "options": ["b", "a", "c", "1"],
+          "code": "        ORG  100h\n        LD   E, 1\n        LD   D, 0\n        LD   HL, t\n        ADD  HL, DE\n        LD   E, (HL)\n        LD   C, 2\n        CALL 5\n        RET\nt:      DB   'abc'",
+          "answer": "b"
+        },
+        {
+          "why": "A conditional RET only returns when its condition holds.",
+          "q": "What does RET Z do if the Z flag is clear?",
+          "options": [
+            "Nothing; the program carries on",
+            "Returns anyway",
+            "Jumps to 0",
+            "Clears Z"
+          ],
+          "answer": "Nothing; the program carries on"
+        },
+        {
+          "kind": "output",
+          "why": "The loop counts bytes until the 0: o, a and k.",
+          "q": "What does this print?",
+          "options": ["3", "4", "0", "2"],
+          "code": "        ORG  100h\n        LD   HL, s\n        LD   B, 0\ncnt:    LD   A, (HL)\n        OR   A\n        JR   Z, done\n        INC  B\n        INC  HL\n        JR   cnt\ndone:   LD   A, B\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET\ns:      DB   'oak', 0",
+          "answer": "3"
+        },
+        {
+          "why": "DS (define space) leaves room in the program for data written later.",
+          "q": "What does DS 10 do?",
+          "options": [
+            "Reserves 10 bytes of space",
+            "Prints 10 characters",
+            "Defines the string 10",
+            "Delays 10 steps"
+          ],
+          "answer": "Reserves 10 bytes of space"
+        },
+        {
+          "kind": "output",
+          "why": "HL starts at O; after printing, INC HL moves to K. PUSH/POP keep HL across the first CALL.",
+          "q": "What does this print?",
+          "options": ["OK", "O", "KO", "K"],
+          "code": "        ORG  100h\n        LD   HL, w\n        LD   E, (HL)\n        PUSH HL\n        LD   C, 2\n        CALL 5\n        POP  HL\n        INC  HL\n        LD   E, (HL)\n        LD   C, 2\n        CALL 5\n        RET\nw:      DB   'OK'",
+          "answer": "OK"
+        },
+        {
+          "kind": "output",
+          "why": "LDIR copies four bytes including the $; function 9 prints up to that $.",
+          "q": "What does this print?",
+          "options": ["hi!", "hi!$", "src", "dst"],
+          "code": "        ORG  100h\n        LD   HL, src\n        LD   DE, dst\n        LD   BC, 4\n        LDIR\n        LD   DE, dst\n        LD   C, 9\n        CALL 5\n        RET\nsrc:    DB   'hi!$'\ndst:    DS   4",
+          "answer": "hi!"
+        }
+      ]
+    },
+    {
+      "id": "bits",
+      "title": "Bits and logic",
+      "summary": "AND, OR, XOR, BIT/SET/RES and shifting.",
+      "sections": [
+        {
+          "out": "Qz",
+          "code": "        ORG  100h\n        LD   A, 'q'\n        AND  0DFh        ; clear bit 5: 'q' becomes 'Q'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        LD   A, 'Z'\n        OR   20h         ; set bit 5: 'Z' becomes 'z'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "p": "<code>AND</code> keeps only the bits set in both values, <code>OR</code> turns bits on, <code>XOR</code> flips them. A value used to pick bits is called a <b>mask</b>. In ASCII, lowercase and uppercase letters differ by one bit (20h), so clearing it uppercases a letter."
+        },
+        {
+          "h": "XOR A",
+          "code": "        XOR  A           ; A = 0, Z set, carry clear\n        XOR  0FFh        ; flips every bit: A = 255",
+          "p": "Any value XOR itself is 0, so <code>XOR A</code> is the shortest way to set A to 0 (and clear carry). You will see it everywhere in real Z80 code."
+        },
+        {
+          "out": "0",
+          "h": "BIT, SET and RES",
+          "code": "        ORG  100h\n        LD   A, 5        ; 00000101b\n        BIT  1, A        ; bit 1 is 0, so Z is set\n        JR   Z, off\n        LD   E, '1'\n        JR   say\noff:    LD   E, '0'\nsay:    LD   C, 2\n        CALL 5\n        RET",
+          "p": "Bits are numbered 0 (the 1s place) to 7 (the 128s place). <code>BIT n, r</code> tests one bit and sets Z if it is 0. <code>SET n, r</code> turns it on and <code>RES n, r</code> turns it off. They work on any register or on <code>(HL)</code>."
+        },
+        {
+          "out": "6",
+          "h": "Shifting multiplies and divides",
+          "code": "        ORG  100h\n        LD   B, 3\n        SLA  B           ; 6\n        SLA  B           ; 12\n        SRL  B           ; 6\n        LD   A, B\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "p": "<code>SLA r</code> shifts every bit left, which doubles the number; the bit that falls out goes into carry. <code>SRL r</code> shifts right, halving it and dropping the remainder into carry. <code>ADD A, A</code> is a quick way to double A."
+        },
+        {
+          "out": "10100101",
+          "h": "Printing in binary",
+          "code": "        ORG  100h\n        LD   A, 0A5h     ; 10100101b\n        LD   B, 8\nbitlp:  RLCA             ; top bit into carry\n        PUSH AF\n        PUSH BC\n        LD   E, '0'\n        JR   NC, zero\n        LD   E, '1'\nzero:   LD   C, 2\n        CALL 5\n        POP  BC\n        POP  AF\n        DJNZ bitlp\n        RET",
+          "p": "Shift A left eight times. Each time, the top bit drops into carry, and the program prints 0 or 1 depending on it. <code>RLCA</code> rotates A left, copying the top bit into both carry and bit 0."
+        }
+      ],
+      "practice": [
+        {
+          "why": "11110000 AND 00111100 keeps only bits on in both: 00110000, which is 30h.",
+          "q": "What is 0F0h AND 3Ch?",
+          "options": ["30h", "0FCh", "0CCh", "3Ch"],
+          "answer": "30h"
+        },
+        {
+          "kind": "output",
+          "why": "Clearing bit 5 (20h) turns a lowercase ASCII letter into uppercase.",
+          "q": "What does this print?",
+          "options": ["M", "m", "-", "0"],
+          "code": "        ORG  100h\n        LD   A, 'm'\n        AND  0DFh\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "M"
+        },
+        {
+          "why": "Any value XOR itself is 0; XOR A is one byte, shorter than LD A, 0.",
+          "q": "Why do programmers write XOR A?",
+          "options": [
+            "It sets A to 0 in one short instruction",
+            "It doubles A",
+            "It flips the sign of A",
+            "It tests bit 0"
+          ],
+          "answer": "It sets A to 0 in one short instruction"
+        },
+        {
+          "kind": "output",
+          "why": "Each left shift doubles: 1 → 2 → 4 → 8.",
+          "q": "What does this print?",
+          "options": ["8", "3", "4", "6"],
+          "code": "        ORG  100h\n        LD   A, 1\n        SLA  A\n        SLA  A\n        SLA  A\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "8"
+        },
+        {
+          "why": "4 is 00000100b: bit 2 is on, so BIT clears Z.",
+          "q": "After LD A, 4 then BIT 2, A, is Z set?",
+          "options": [
+            "No, bit 2 is 1",
+            "Yes, bit 2 is 0",
+            "Only if carry is set",
+            "BIT does not change Z"
+          ],
+          "answer": "No, bit 2 is 1"
+        },
+        {
+          "kind": "output",
+          "why": "Shifting right halves and drops the remainder: 9 → 4, with 1 in carry.",
+          "q": "What does this print?",
+          "options": ["4", "5", "9", "3"],
+          "code": "        ORG  100h\n        LD   A, 9\n        SRL  A\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "4"
+        },
+        {
+          "kind": "output",
+          "why": "OR 20h leaves a lowercase letter alone; AND 0DFh then clears bit 5 to make A.",
+          "q": "What does this print?",
+          "options": ["A", "a", " ", "0"],
+          "code": "        ORG  100h\n        LD   A, 'a'\n        OR   20h\n        AND  0DFh\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "A"
+        },
+        {
+          "kind": "output",
+          "why": "SLA doubles: 3 becomes 6.",
+          "q": "What does this print?",
+          "options": ["6", "3", "7", "4"],
+          "code": "        ORG  100h\n        LD   A, 3\n        SLA  A\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "6"
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "title": "Printing numbers",
+      "summary": "Turning a byte into decimal and hex digits, and multiplying.",
+      "sections": [
+        {
+          "out": "142",
+          "code": "        ORG  100h\n        LD   A, 142\n        CALL printd\n        RET\n\n; printd: print A (0-255) in decimal\nprintd: LD   D, 0        ; D = 1 once a digit has been printed\n        LD   B, 100\n        CALL digit\n        LD   B, 10\n        CALL digit\n        ADD  A, '0'      ; units are always printed\n        JP   putc\ndigit:  LD   C, '0'      ; count how many B's fit in A\ndlp:    CP   B\n        JR   C, dend\n        SUB  B\n        INC  C\n        JR   dlp\ndend:   PUSH AF\n        LD   A, C\n        CP   '0'\n        JR   NZ, show\n        BIT  0, D        ; a leading zero? skip it\n        JR   Z, skip\nshow:   LD   D, 1\n        CALL putc\nskip:   POP  AF\n        RET\nputc:   PUSH AF          ; print the character in A\n        PUSH BC\n        PUSH DE\n        PUSH HL\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        POP  HL\n        POP  DE\n        POP  BC\n        POP  AF\n        RET",
+          "p": "CP/M only prints characters, so a number has to be split into digits. For 0–255: count how many times 100 fits (subtract until it would go below 0), then 10, and what is left is the units. <code>printd</code> below skips the leading zeros."
+        },
+        {
+          "h": "JP to a routine",
+          "p": "<code>printd</code> ends with <code>JP putc</code> instead of <code>CALL putc</code> then <code>RET</code>. When a routine's last job is calling another routine, jumping to it lets that routine's <code>RET</code> return straight to the original caller. This is called a <b>tail call</b>."
+        },
+        {
+          "out": "3C",
+          "h": "Hex digits",
+          "code": "        ORG  100h\n        LD   A, 3Ch\n        CALL printh\n        RET\n\n; printh: print A as two hex digits\nprinth: PUSH AF\n        RRCA\n        RRCA\n        RRCA\n        RRCA\n        CALL nib         ; high half first\n        POP  AF\nnib:    AND  0Fh\n        CP   10\n        JR   C, dig\n        ADD  A, 7        ; 10..15 become 'A'..'F'\ndig:    ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        JP   5           ; the BDOS returns for us",
+          "p": "A byte is two hex digits, one per half (a <b>nibble</b>). Shift the top half down with four <code>RRCA</code>s, mask with <code>AND 0Fh</code>, and turn 0–15 into <code>0</code>–<code>9</code> or <code>A</code>–<code>F</code>. The letters start 7 places after <code>'9'+1</code>, hence the <code>ADD A, 7</code>."
+        },
+        {
+          "out": "42",
+          "h": "Multiplying by adding",
+          "code": "        ORG  100h\n        LD   B, 6        ; 6 x 7\n        LD   C, 7\n        XOR  A\nmul:    ADD  A, C\n        DJNZ mul         ; A = 42\n        CALL printd\n        RET\n\nprintd: LD   B, 10       ; print A (0-99) as two digits\n        LD   C, '0'\ntens:   CP   B\n        JR   C, units\n        SUB  B\n        INC  C\n        JR   tens\nunits:  PUSH AF\n        LD   E, C\n        LD   C, 2\n        CALL 5\n        POP  AF\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        JP   5",
+          "p": "The Z80 has no multiply instruction. The simple way is a loop that adds one number B times. Faster programs shift and add, but this is easy to check."
+        }
+      ],
+      "practice": [
+        {
+          "why": "Printing goes left to right, so the hundreds digit has to be worked out first.",
+          "q": "To print 142 one digit at a time, what do you find first?",
+          "options": [
+            "How many 100s fit",
+            "The units digit",
+            "How many 2s fit",
+            "The hex digits"
+          ],
+          "answer": "How many 100s fit"
+        },
+        {
+          "kind": "output",
+          "why": "10 fits into 37 three times before A drops below 10; the units (7) are never printed.",
+          "q": "What does this print?",
+          "options": ["3", "7", "37", "0"],
+          "code": "        ORG  100h\n        LD   A, 37\n        LD   B, 10\n        LD   C, '0'\ntens:   CP   B\n        JR   C, show\n        SUB  B\n        INC  C\n        JR   tens\nshow:   LD   E, C\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "3"
+        },
+        {
+          "why": "11 is not below 10, so 7 is added: 11 + 7 + '0' is the code for B.",
+          "q": "What is 0Bh as a printed hex digit?",
+          "options": ["B", "11", ";", "b"],
+          "answer": "B"
+        },
+        {
+          "kind": "output",
+          "why": "AND 0Fh keeps only the low nibble, which is 7.",
+          "q": "What does this print?",
+          "options": ["7", "A", "0", "G"],
+          "code": "        ORG  100h\n        LD   A, 0A7h\n        AND  0Fh\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "7"
+        },
+        {
+          "why": "A tail call saves an instruction and a little stack; the result is the same.",
+          "q": "Why end printd with JP putc instead of CALL putc then RET?",
+          "options": [
+            "putc's RET returns straight to printd's caller",
+            "JP is required after a CALL",
+            "CALL cannot reach putc",
+            "It prints twice otherwise"
+          ],
+          "answer": "putc's RET returns straight to printd's caller"
+        },
+        {
+          "kind": "output",
+          "why": "Adding 3 three times is 3 × 3.",
+          "q": "What does this print?",
+          "options": ["9", "6", "3", "0"],
+          "code": "        ORG  100h\n        LD   B, 3\n        XOR  A\nmul:    ADD  A, 3\n        DJNZ mul\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "9"
+        },
+        {
+          "kind": "output",
+          "why": "Four RRCA moves bring the high nibble down; AND 0Fh keeps 3.",
+          "q": "What does this print?",
+          "options": ["3", "7", "37", "0"],
+          "code": "        ORG  100h\n        LD   A, 37h\n        RRCA\n        RRCA\n        RRCA\n        RRCA\n        AND  0Fh\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "3"
+        },
+        {
+          "kind": "output",
+          "why": "XOR A clears the total; three adds of C (3) make 9.",
+          "q": "What does this print?",
+          "options": ["9", "6", "3", "0"],
+          "code": "        ORG  100h\n        LD   B, 3\n        LD   C, 3\n        XOR  A\nmul:    ADD  A, C\n        DJNZ mul\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        CALL 5\n        RET",
+          "answer": "9"
+        }
+      ]
+    },
+    {
+      "id": "fizzbuzz",
+      "title": "Putting it together: FizzBuzz",
+      "summary": "A whole program from the pieces: loops, compares, routines and printing.",
+      "sections": [
+        {
+          "out": "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz",
+          "code": "        ORG  100h\n        LD   A, 1\n        LD   (n), A\n        LD   A, 3\n        LD   (three), A\n        LD   A, 5\n        LD   (five), A\nloop:   LD   D, 0        ; D = 1 if a word was printed\n        LD   HL, three\n        DEC  (HL)\n        JR   NZ, no3\n        LD   (HL), 3\n        LD   HL, fizz\n        CALL print\n        LD   D, 1\nno3:    LD   HL, five\n        DEC  (HL)\n        JR   NZ, no5\n        LD   (HL), 5\n        LD   HL, buzz\n        CALL print\n        LD   D, 1\nno5:    LD   A, D\n        OR   A\n        JR   NZ, eol\n        LD   A, (n)\n        CALL printd\neol:    LD   HL, crlf\n        CALL print\n        LD   A, (n)\n        INC  A\n        LD   (n), A\n        CP   16          ; 1 to 15\n        JR   NZ, loop\n        RET\n\nprint:  PUSH DE          ; HL = $-ended string\n        EX   DE, HL\n        LD   C, 9\n        CALL 5\n        POP  DE\n        RET\nprintd: LD   B, 10       ; A = 0-99\n        LD   C, '0'\ntens:   CP   B\n        JR   C, units\n        SUB  B\n        INC  C\n        JR   tens\nunits:  PUSH AF\n        LD   A, C\n        CP   '0'\n        JR   Z, notens\n        LD   E, C\n        LD   C, 2\n        CALL 5\nnotens: POP  AF\n        ADD  A, '0'\n        LD   E, A\n        LD   C, 2\n        JP   5\n\nn:      DB   0\nthree:  DB   0\nfive:   DB   0\nfizz:   DB   'Fizz$'\nbuzz:   DB   'Buzz$'\ncrlf:   DB   13, 10, '$'",
+          "p": "FizzBuzz prints the numbers from 1 up, but says <b>Fizz</b> for multiples of 3, <b>Buzz</b> for multiples of 5 and <b>FizzBuzz</b> for both. Instead of dividing, this version keeps two countdowns that reset to 3 and 5: when one reaches 0, it is time for that word."
+        },
+        {
+          "h": "How to read a longer program",
+          "p": "Start at the labels: they name the parts. <code>loop</code> is one pass per number. <code>three</code> and <code>five</code> are the countdowns, kept in memory because there are not enough registers to go round. <code>DEC (HL)</code> counts a memory byte down and sets Z at 0, just as <code>DEC B</code> would. The routines at the bottom each save what they must and say in a comment what they expect."
+        },
+        {
+          "h": "Where to go next",
+          "p": "You now know enough to read most Z80 listings. Good next steps: run these programs in RunCPM and change them; read a reference card for the full instruction set (exchange registers <code>EXX</code>, index registers <code>IX</code>/<code>IY</code>, block searches <code>CPIR</code>); then try a machine with a screen of its own, such as the ZX Spectrum in the Fuse emulator, where writing bytes to video memory draws pictures."
+        }
+      ],
+      "practice": [
+        {
+          "why": "The BDOS may change registers, and the program needs several values at once, so it parks them in memory.",
+          "q": "Why does this FizzBuzz keep its countdowns in memory?",
+          "options": [
+            "There are not enough registers for everything",
+            "Memory is faster than registers",
+            "DEC only works on memory",
+            "The BDOS needs them there"
+          ],
+          "answer": "There are not enough registers for everything"
+        },
+        {
+          "why": "Brackets mean memory; DEC (HL) changes the byte and sets Z when it reaches 0.",
+          "q": "What does DEC (HL) do?",
+          "options": [
+            "Takes 1 from the byte HL points at",
+            "Takes 1 from HL",
+            "Takes 1 from H and L",
+            "Moves HL back one byte"
+          ],
+          "answer": "Takes 1 from the byte HL points at"
+        },
+        {
+          "why": "Every 15th pass is a multiple of both 3 and 5, so Fizz and then Buzz print.",
+          "q": "For the number 15, why are both words printed?",
+          "options": [
+            "Both countdowns reach 0 on the same pass",
+            "15 is checked twice",
+            "FizzBuzz is stored as one word",
+            "The loop ends at 15"
+          ],
+          "answer": "Both countdowns reach 0 on the same pass"
+        },
+        {
+          "kind": "output",
+          "why": "The countdown in D hits 0 on passes 3 and 6, so ! prints twice.",
+          "q": "What does this print?",
+          "options": ["!!", "!", "!!!", "!!!!!!"],
+          "code": "        ORG  100h\n        LD   B, 6\n        LD   D, 3\nlp:     DEC  D\n        JR   NZ, skip\n        LD   D, 3\n        PUSH BC\n        PUSH DE\n        LD   E, '!'\n        LD   C, 2\n        CALL 5\n        POP  DE\n        POP  BC\nskip:   DJNZ lp\n        RET",
+          "answer": "!!"
+        },
+        {
+          "why": "HL is the main address register: (HL) works with almost every instruction.",
+          "q": "Which register pair is most often used as a memory pointer?",
+          "options": ["HL", "AF", "BC only", "PC"],
+          "answer": "HL"
+        },
+        {
+          "kind": "output",
+          "why": "The countdown in D hits 0 on passes 2 and 4, so * prints twice in five loops.",
+          "q": "What does this print?",
+          "options": ["**", "*", "***", "*****"],
+          "code": "        ORG  100h\n        LD   B, 5\n        LD   D, 2\nlp:     DEC  D\n        JR   NZ, skip\n        LD   D, 2\n        PUSH BC\n        PUSH DE\n        LD   E, '*'\n        LD   C, 2\n        CALL 5\n        POP  DE\n        POP  BC\nskip:   DJNZ lp\n        RET",
+          "answer": "**"
+        },
+        {
+          "why": "D starts at 0 each pass and becomes 1 if Fizz or Buzz printed, so the number can be skipped.",
+          "q": "In the FizzBuzz loop, what is D used for?",
+          "options": [
+            "Remembering whether a word was printed this pass",
+            "Counting to 15",
+            "Holding the current number",
+            "The BDOS function number"
+          ],
+          "answer": "Remembering whether a word was printed this pass"
+        }
+      ]
+    }
+  ]
+}
