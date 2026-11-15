@@ -1,0 +1,581 @@
+{
+  "schema": "programming-course@1",
+  "id": "csharp",
+  "name": "C#",
+  "title": "C# from the first line",
+  "intro": "C# (said \"C sharp\") is Microsoft's main language, released in 2000 with the .NET platform. It looks like Java and C++, but it has grown quickly: properties, LINQ queries, async code, records and pattern matching all arrived in C# before most of its neighbours. It runs Windows desktop programs, web services on any system, and games made with the Unity engine. Modern C# lets a program start straight away with <b>top-level statements</b>, without the class and <code>Main</code> wrapper older examples have. These lessons use C# 12 on .NET 8. Every example is a whole program and shows exactly what it prints. To run one yourself, install the .NET SDK, type <code>dotnet new console -o hello</code>, paste the example into <code>hello/Program.cs</code> and type <code>dotnet run --project hello</code>.",
+  "comment": "//",
+  "keywords": [
+    "var",
+    "int",
+    "double",
+    "decimal",
+    "bool",
+    "char",
+    "string",
+    "void",
+    "const",
+    "new",
+    "return",
+    "if",
+    "else",
+    "switch",
+    "case",
+    "default",
+    "for",
+    "foreach",
+    "in",
+    "while",
+    "class",
+    "record",
+    "struct",
+    "interface",
+    "public",
+    "private",
+    "static",
+    "readonly",
+    "get",
+    "set",
+    "init",
+    "this",
+    "null",
+    "true",
+    "false",
+    "using",
+    "async",
+    "await",
+    "is",
+    "and",
+    "or",
+    "not",
+    "when",
+    "override"
+  ],
+  "builtins": [
+    "Console",
+    "WriteLine",
+    "Write",
+    "Math",
+    "List",
+    "Dictionary",
+    "Task",
+    "Where",
+    "Select",
+    "OrderBy",
+    "Sum",
+    "ToList",
+    "string"
+  ],
+  "lessons": [
+    {
+      "id": "first",
+      "title": "Your first program",
+      "summary": "Top-level statements, Console.WriteLine and interpolated strings.",
+      "sections": [
+        {
+          "p": "A C# program can start with statements at the top of the file; the compiler wraps them in a <code>Main</code> method for you. <code>Console.WriteLine</code> prints a line and <code>Console.Write</code> prints without ending it. Statements end with a semicolon.",
+          "code": "Console.WriteLine(\"Hello, squirrel!\");\nConsole.Write(\"Nuts: \");\nConsole.WriteLine(42);",
+          "out": "Hello, squirrel!\nNuts: 42"
+        },
+        {
+          "h": "Interpolated strings",
+          "p": "A string with a <code>$</code> in front can hold expressions in braces, which are worked out and put in place. After a colon you can give a format: <code>{price:F2}</code> shows two decimals and <code>{n,4}</code> pads to four characters. A string with <code>@</code> in front keeps backslashes as they are, which suits Windows paths.",
+          "code": "string name = \"Hazel\";\nint nuts = 7;\ndouble price = 1.5;\nConsole.WriteLine($\"{name} has {nuts} nuts\");\nConsole.WriteLine($\"{nuts * 2} after a good day\");\nConsole.WriteLine($\"Cost: {price:F2} [{nuts,4}]\");\nConsole.WriteLine(@\"C:\\Stash\\nuts.txt\");",
+          "out": "Hazel has 7 nuts\n14 after a good day\nCost: 1.50 [   7]\nC:\\Stash\\nuts.txt"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "Console.Write(\"Up\");\nConsole.Write(\" the\");\nConsole.WriteLine(\" tree\");",
+          "options": ["Up the tree", "Up\n the\n tree", "Upthetree", "Up the\ntree"],
+          "answer": "Up the tree",
+          "why": "Write doesn't end the line, so all three pieces land on one line.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "int a = 3, b = 4;\nConsole.WriteLine($\"{a} + {b} = {a + b}\");\nConsole.WriteLine(\"{a} + {b}\");",
+          "options": [
+            "3 + 4 = 7\n{a} + {b}",
+            "3 + 4 = 7\n3 + 4",
+            "{a} + {b} = {a + b}\n{a} + {b}",
+            "7\n{a} + {b}"
+          ],
+          "answer": "3 + 4 = 7\n{a} + {b}",
+          "why": "Only the string with $ in front fills in the braces. The second is plain text.",
+          "kind": "output"
+        }
+      ]
+    },
+    {
+      "id": "values",
+      "title": "Types and variables",
+      "summary": "int, double, decimal, bool, string, var and null.",
+      "sections": [
+        {
+          "p": "Every variable has a type. <code>int</code> holds whole numbers, <code>double</code> numbers with a fraction, <code>decimal</code> exact decimal amounts such as money, <code>bool</code> true or false, <code>char</code> one character and <code>string</code> text. <code>var</code> lets the compiler take the type from the value. Dividing two ints drops the fraction. A <code>double</code> can't hold 0.1 exactly, which is why sums of money use <code>decimal</code> (numbers written with an <code>m</code>).",
+          "code": "int nuts = 17;\nvar squirrels = 5;\nConsole.WriteLine(nuts / squirrels);\nConsole.WriteLine(nuts % squirrels);\nConsole.WriteLine(nuts / 5.0);\nConsole.WriteLine(0.1 + 0.2 == 0.3);\nConsole.WriteLine(0.1m + 0.2m == 0.3m);",
+          "out": "3\n2\n3.4\nFalse\nTrue"
+        },
+        {
+          "h": "Strings",
+          "p": "Strings have methods and properties: <code>Length</code>, <code>ToUpper()</code>, <code>Contains</code>, <code>Replace</code>, and <code>[i]</code> for one character counting from 0. In C#, <code>==</code> on strings compares the text, so it does what you would expect. Strings can't be changed; each method returns a new one.",
+          "code": "string tree = \"Silver birch\";\nConsole.WriteLine(tree.Length);\nConsole.WriteLine(tree.ToUpper());\nConsole.WriteLine(tree[0]);\nConsole.WriteLine(tree.Contains(\"birch\"));\nConsole.WriteLine(tree.Replace(\"Silver\", \"Downy\"));\nConsole.WriteLine(tree == \"Silver \" + \"birch\");",
+          "out": "12\nSILVER BIRCH\nS\nTrue\nDowny birch\nTrue"
+        },
+        {
+          "h": "null",
+          "p": "<code>null</code> means no object. With nullable checks turned on (the default in new projects), a <code>string</code> can't be null, but a <code>string?</code> can, and the compiler warns you before you use one without checking. <code>?.</code> calls a method only if the value isn't null, and <code>??</code> gives a fallback.",
+          "code": "string? favourite = null;\nConsole.WriteLine(favourite?.Length);\nConsole.WriteLine(favourite ?? \"no favourite yet\");\nfavourite = \"hazelnut\";\nConsole.WriteLine(favourite?.Length);",
+          "out": "\nno favourite yet\n8"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "Console.WriteLine(7 / 2);\nConsole.WriteLine(7 / 2.0);\nConsole.WriteLine(7 % 2);",
+          "options": ["3\n3.5\n1", "3.5\n3.5\n1", "3\n3\n1", "4\n3.5\n1"],
+          "answer": "3\n3.5\n1",
+          "why": "7 / 2 is integer division. Once one side is a double, the result has a fraction. % is the remainder.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "string s = \"acorn\";\nConsole.WriteLine(s[1] + \"\" + s.Length);\nConsole.WriteLine(s.ToUpper() == \"ACORN\");",
+          "options": ["c5\nTrue", "a5\nTrue", "c5\nFalse", "c6\nTrue"],
+          "answer": "c5\nTrue",
+          "why": "Index 1 is the second character. == compares the text of the two strings.",
+          "kind": "output"
+        },
+        {
+          "q": "Which type should hold a price like 19.99?",
+          "options": ["decimal", "double", "int", "float"],
+          "answer": "decimal",
+          "why": "decimal stores decimal fractions exactly. double and float use binary fractions, so 0.1 + 0.2 isn't exactly 0.3."
+        }
+      ]
+    },
+    {
+      "id": "control",
+      "title": "Decisions and loops",
+      "summary": "if, switch expressions with patterns, for, foreach and while.",
+      "sections": [
+        {
+          "p": "<code>if</code> and <code>else</code> take a condition in brackets; <code>&amp;&amp;</code> is and, <code>||</code> is or and <code>!</code> is not. A <b>switch expression</b> picks a value by matching <b>patterns</b>: an exact value, a comparison like <code>&lt; 5</code>, or several joined with <code>and</code> and <code>or</code>. <code>_</code> matches anything else.",
+          "code": "int nuts = 12;\nif (nuts > 20)\n{\n    Console.WriteLine(\"feast\");\n}\nelse if (nuts > 10 && nuts % 2 == 0)\n{\n    Console.WriteLine(\"even dozen-ish\");\n}\n\nstring Describe(int n) => n switch\n{\n    0 => \"none\",\n    < 5 => \"a few\",\n    >= 5 and < 20 => \"plenty\",\n    _ => \"a hoard\",\n};\nConsole.WriteLine(Describe(0) + \", \" + Describe(3) + \", \" + Describe(12) + \", \" + Describe(50));",
+          "out": "even dozen-ish\nnone, a few, plenty, a hoard"
+        },
+        {
+          "h": "Loops",
+          "p": "<code>for</code> has a start, a test and a step. <code>foreach</code> visits every item in an array or list. <code>while</code> repeats as long as its condition holds. <code>break</code> leaves a loop and <code>continue</code> skips to the next pass.",
+          "code": "for (int i = 1; i <= 5; i++)\n{\n    if (i == 3) continue;\n    Console.Write(i + \" \");\n}\nConsole.WriteLine();\nint[] stash = { 4, 9, 2 };\nint total = 0;\nforeach (int n in stash)\n{\n    total += n;\n}\nConsole.WriteLine(total);\nint height = 1;\nwhile (height < 20) height *= 3;\nConsole.WriteLine(height);",
+          "out": "1 2 4 5 \n15\n27"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "string Season(int month) => month switch\n{\n    12 or 1 or 2 => \"winter\",\n    >= 9 and <= 11 => \"autumn\",\n    _ => \"other\",\n};\nConsole.WriteLine(Season(10) + \" \" + Season(1) + \" \" + Season(5));",
+          "options": [
+            "autumn winter other",
+            "other winter other",
+            "autumn other other",
+            "autumn winter autumn"
+          ],
+          "answer": "autumn winter other",
+          "why": "10 falls in 9 to 11, 1 is listed with the winter months, and 5 matches only the _ case.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "int count = 0;\nfor (int i = 0; i < 10; i += 4)\n{\n    count++;\n}\nConsole.WriteLine(count);",
+          "options": ["3", "2", "4", "10"],
+          "answer": "3",
+          "why": "i is 0, 4 and 8, then 12 fails the test.",
+          "kind": "output"
+        }
+      ]
+    },
+    {
+      "id": "methods",
+      "title": "Methods and collections",
+      "summary": "Methods, out and named arguments, List and Dictionary.",
+      "sections": [
+        {
+          "p": "A method has a return type, a name and typed parameters. In a program with top-level statements you can write methods right there, among the statements. Parameters can have default values, and callers can pass arguments by name. A method that has nothing to return uses <code>void</code>. A one-line method can use <code>=&gt;</code> instead of braces.",
+          "code": "int Share(int nuts, int squirrels = 2) => nuts / squirrels;\n\nvoid Report(string who, int nuts)\n{\n    Console.WriteLine($\"{who}: {nuts}\");\n}\n\nReport(\"Hazel\", Share(10));\nReport(\"Acorn\", Share(10, 3));\nReport(nuts: Share(squirrels: 5, nuts: 20), who: \"Pip\");",
+          "out": "Hazel: 5\nAcorn: 3\nPip: 4"
+        },
+        {
+          "h": "List and Dictionary",
+          "p": "<code>List&lt;T&gt;</code> is a list that grows as you <code>Add</code>; <code>Count</code> gives its size and <code>[i]</code> reads by index. <code>Dictionary&lt;TKey, TValue&gt;</code> stores values under keys. <code>TryGetValue</code> looks a key up without failing when it is missing. A <b>collection expression</b> like <code>[3, 1, 2]</code> fills a collection in one go.",
+          "code": "List<string> trees = [\"oak\", \"ash\"];\ntrees.Add(\"hazel\");\ntrees.Insert(0, \"beech\");\nConsole.WriteLine($\"{trees.Count} {trees[0]} {string.Join(\",\", trees)}\");\n\nvar stash = new Dictionary<string, int> { [\"oak\"] = 4, [\"hazel\"] = 9 };\nstash[\"oak\"] += 1;\nstash[\"beech\"] = 2;\nConsole.WriteLine(stash[\"oak\"]);\nConsole.WriteLine(stash.TryGetValue(\"pine\", out int pine) ? pine : -1);\nConsole.WriteLine(stash.ContainsKey(\"beech\"));",
+          "out": "4 beech beech,oak,ash,hazel\n5\n-1\nTrue"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "int Twice(int x) => x * 2;\nConsole.WriteLine(Twice(Twice(3)));",
+          "options": ["12", "6", "9", "33"],
+          "answer": "12",
+          "why": "The inner call gives 6 and the outer one doubles it again.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "List<int> a = [1, 2, 3];\nList<int> b = a;\nb.Add(4);\nConsole.WriteLine(a.Count);",
+          "options": ["4", "3", "1", "7"],
+          "answer": "4",
+          "why": "A List is an object. b = a copies the reference, so both names point at the same list.",
+          "kind": "output"
+        }
+      ]
+    },
+    {
+      "id": "classes",
+      "title": "Classes, records and interfaces",
+      "summary": "Properties, constructors, records, interfaces and inheritance.",
+      "sections": [
+        {
+          "p": "A class describes a kind of object. C# uses <b>properties</b>, which look like fields from outside but can control who may change them: <code>{ get; private set; }</code> can be read by anyone and changed only inside the class. A <b>primary constructor</b>, written in brackets after the class name, gives the class its constructor parameters directly.",
+          "code": "var s = new Squirrel(\"Hazel\");\ns.Gather(3);\ns.Gather(4);\nConsole.WriteLine($\"{s.Name} has {s.Nuts}\");\n\nclass Squirrel(string name)\n{\n    public string Name { get; } = name;\n    public int Nuts { get; private set; }\n\n    public void Gather(int found) => Nuts += found;\n}",
+          "out": "Hazel has 7"
+        },
+        {
+          "h": "Records",
+          "p": "A <code>record</code> is a type for plain data. One line gives you a constructor, read-only properties, equality that compares the values, and a readable <code>ToString</code>. <code>with</code> makes a copy with some values changed.",
+          "code": "var a = new Nut(\"hazel\", 3);\nvar b = new Nut(\"hazel\", 3);\nConsole.WriteLine(a);\nConsole.WriteLine(a == b);\nvar bigger = a with { Grams = 5 };\nConsole.WriteLine(bigger);\n\nrecord Nut(string Kind, int Grams);",
+          "out": "Nut { Kind = hazel, Grams = 3 }\nTrue\nNut { Kind = hazel, Grams = 5 }"
+        },
+        {
+          "h": "Interfaces and inheritance",
+          "p": "An <code>interface</code> lists members a type promises to have, and code can work with any type that implements it. A class can also <b>inherit</b> from one base class; an <code>abstract</code> member has no body in the base and must be supplied with <code>override</code>. The right version is chosen when the program runs.",
+          "code": "List<IAnimal> wood = [new Squirrel(), new Owl(), new Squirrel()];\nforeach (var a in wood) Console.Write(a.Sound() + \" \");\nConsole.WriteLine();\nConsole.WriteLine(new Owl().Describe());\n\ninterface IAnimal\n{\n    string Sound();\n}\n\nabstract class Animal : IAnimal\n{\n    public abstract string Sound();\n    public string Describe() => $\"{GetType().Name} says {Sound()}\";\n}\n\nclass Squirrel : Animal\n{\n    public override string Sound() => \"chitter\";\n}\n\nclass Owl : Animal\n{\n    public override string Sound() => \"hoo\";\n}",
+          "out": "chitter hoo chitter \nOwl says hoo"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "var p = new Point(2, 5);\nvar q = p with { Y = 1 };\nConsole.WriteLine($\"{p.X + p.Y} {q.Y} {p == q}\");\n\nrecord Point(int X, int Y);",
+          "options": ["7 1 False", "7 5 True", "3 1 False", "7 1 True"],
+          "answer": "7 1 False",
+          "why": "with makes a new record and leaves p alone. The two now differ in Y, so == is False.",
+          "kind": "output"
+        },
+        {
+          "q": "What does { get; private set; } on a property mean?",
+          "options": [
+            "Anyone can read it; only the class can change it",
+            "Nobody can change it",
+            "Anyone can change it; only the class can read it",
+            "It is a field, not a property"
+          ],
+          "answer": "Anyone can read it; only the class can change it",
+          "why": "Each accessor can have its own access level. This is the usual way to keep an object in charge of its own data."
+        }
+      ]
+    },
+    {
+      "id": "linq",
+      "title": "LINQ and async",
+      "summary": "Where, Select, OrderBy, GroupBy, and async methods with Task.",
+      "sections": [
+        {
+          "p": "<b>LINQ</b> (Language-Integrated Query) adds query methods to every collection. <code>Where</code> keeps items that pass a test, <code>Select</code> changes each item, <code>OrderBy</code> sorts, and <code>Sum</code>, <code>Count</code> and <code>Max</code> boil a sequence down to one value. The tests are <b>lambdas</b>, small functions written <code>n =&gt; n * 2</code>.",
+          "code": "int[] nuts = [5, 12, 3, 8, 20];\nvar big = nuts.Where(n => n > 4).Select(n => n * 2).ToList();\nConsole.WriteLine(string.Join(\" \", big));\nConsole.WriteLine(nuts.Sum() + \" \" + nuts.Max() + \" \" + nuts.Count(n => n % 2 == 0));\nstring[] trees = [\"oak\", \"beech\", \"ash\", \"hazel\"];\nConsole.WriteLine(string.Join(\",\", trees.OrderBy(t => t.Length).ThenBy(t => t)));",
+          "out": "10 24 16 40\n48 20 3\nash,oak,beech,hazel"
+        },
+        {
+          "h": "Grouping",
+          "p": "<code>GroupBy</code> collects items that share a key. Each group has a <code>Key</code> and can be counted or summed like any sequence. LINQ works the same way on lists in memory and, through libraries like Entity Framework, on database tables.",
+          "code": "var stashes = new[]\n{\n    new { Nut = \"acorn\", Count = 12 },\n    new { Nut = \"hazelnut\", Count = 5 },\n    new { Nut = \"acorn\", Count = 3 },\n};\nforeach (var g in stashes.GroupBy(s => s.Nut).OrderBy(g => g.Key))\n{\n    Console.WriteLine($\"{g.Key}: {g.Count()} stashes, {g.Sum(s => s.Count)} nuts\");\n}",
+          "out": "acorn: 2 stashes, 15 nuts\nhazelnut: 1 stashes, 5 nuts"
+        },
+        {
+          "h": "async and await",
+          "p": "An <code>async</code> method returns a <code>Task</code>, or <code>Task&lt;T&gt;</code> when it produces a value. <code>await</code> waits for a task without blocking the thread, which keeps apps responsive while they wait for files or the network. <code>Task.WhenAll</code> waits for several at once. Top-level statements may use <code>await</code> directly.",
+          "code": "async Task<int> CountNutsAsync(string tree)\n{\n    await Task.Delay(10);\n    return tree.Length;\n}\n\nint oak = await CountNutsAsync(\"oak\");\nint[] rest = await Task.WhenAll(CountNutsAsync(\"ash\"), CountNutsAsync(\"hazel\"));\nConsole.WriteLine(oak + rest.Sum());",
+          "out": "11"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "string[] trees = [\"oak\", \"ash\", \"elm\", \"beech\"];\nConsole.WriteLine(trees.Count(t => t.Length == 3));\nConsole.WriteLine(trees.First(t => t.StartsWith(\"b\")));",
+          "options": ["3\nbeech", "4\nbeech", "3\nash", "1\nbeech"],
+          "answer": "3\nbeech",
+          "why": "oak, ash and elm have three letters, and beech is the first that starts with b.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "var evens = Enumerable.Range(1, 6).Where(n => n % 2 == 0).Select(n => n * n);\nConsole.WriteLine(string.Join(\"+\", evens) + \"=\" + evens.Sum());",
+          "options": ["4+16+36=56", "2+4+6=12", "1+4+9=14", "4+16+36=36"],
+          "answer": "4+16+36=56",
+          "why": "Range(1, 6) is 1 to 6. The even ones are 2, 4 and 6, and their squares add to 56.",
+          "kind": "output"
+        }
+      ]
+    },
+    {
+      "id": "valueref",
+      "title": "Value types and reference types",
+      "summary": "struct versus class, and what = really copies.",
+      "sections": [
+        {
+          "p": "C# has two kinds of types. A <b>value type</b> (<code>int</code>, <code>double</code>, <code>bool</code> and any <code>struct</code>) holds its data directly, so <code>=</code> copies the data. A <b>reference type</b> (any <code>class</code>, arrays, <code>string</code>) is reached through a reference, so <code>=</code> copies the reference and both names then point at the same object.",
+          "code": "var p1 = new PointS { X = 1 };\nvar p2 = p1;\np2.X = 99;\nConsole.WriteLine($\"struct: {p1.X} {p2.X}\");\n\nvar c1 = new PointC { X = 1 };\nvar c2 = c1;\nc2.X = 99;\nConsole.WriteLine($\"class:  {c1.X} {c2.X}\");\n\nstruct PointS { public int X; }\nclass PointC { public int X; }",
+          "out": "struct: 1 99\nclass:  99 99"
+        },
+        {
+          "h": "Passing to methods",
+          "p": "Arguments are copied in the same way. A method that gets a class object can change that object, but giving its parameter a new object does not affect the caller. Marking a parameter <code>ref</code> passes the caller's variable itself, so even a value type can be changed.",
+          "code": "int[] stash = [1, 2, 3];\nAddNut(stash);\nConsole.WriteLine(string.Join(\",\", stash));\nReplace(stash);\nConsole.WriteLine(string.Join(\",\", stash));\n\nint count = 5;\nBump(count);\nConsole.WriteLine(count);\nBumpRef(ref count);\nConsole.WriteLine(count);\n\nstatic void AddNut(int[] a) => a[0] += 10;\nstatic void Replace(int[] a) => a = [0, 0, 0];\nstatic void Bump(int n) => n++;\nstatic void BumpRef(ref int n) => n++;",
+          "out": "11,2,3\n11,2,3\n5\n6"
+        },
+        {
+          "h": "Equality",
+          "p": "<code>==</code> on two class objects asks whether they are the <i>same object</i>. Records, structs and strings compare their contents instead. That is a good reason to use a <code>record</code> for plain data.",
+          "code": "var a = new Box(3);\nvar b = new Box(3);\nConsole.WriteLine(a == b);\nConsole.WriteLine(ReferenceEquals(a, a));\n\nvar r1 = new Crate(3);\nvar r2 = new Crate(3);\nConsole.WriteLine(r1 == r2);\n\nstring s1 = \"oak\";\nstring s2 = string.Concat(\"o\", \"ak\");\nConsole.WriteLine(s1 == s2);\n\nclass Box(int n) { public int N { get; } = n; }\nrecord Crate(int N);",
+          "out": "False\nTrue\nTrue\nTrue"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "var a = new List<int> { 1 };\nvar b = a;\nb.Add(2);\nConsole.WriteLine(a.Count);",
+          "options": ["2", "1", "0", "3"],
+          "answer": "2",
+          "why": "List is a class, so a and b refer to the same list.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "var x = new Pair { A = 1 };\nvar y = x;\ny.A = 5;\nConsole.WriteLine(x.A);\n\nstruct Pair { public int A; }",
+          "options": ["1", "5", "0", "6"],
+          "answer": "1",
+          "why": "Pair is a struct, so y is an independent copy.",
+          "kind": "output"
+        },
+        {
+          "q": "What does ref on a parameter do?",
+          "options": [
+            "Passes the caller's variable itself, so the method can change it",
+            "Makes the parameter read-only",
+            "Copies the object deeply",
+            "Turns a struct into a class"
+          ],
+          "answer": "Passes the caller's variable itself, so the method can change it",
+          "why": "Without ref the method gets a copy of the value (or of the reference)."
+        }
+      ]
+    },
+    {
+      "id": "errors",
+      "title": "Exceptions and null safety",
+      "summary": "try, catch, using, and the ?. and ?? operators.",
+      "sections": [
+        {
+          "p": "When something goes wrong, .NET <b>throws</b> an exception, and it travels up through the callers until a <code>catch</code> handles it. Catch the specific type you expect, such as <code>FormatException</code> from <code>int.Parse</code>. A <code>finally</code> block runs whether or not anything was thrown. For input that is often bad, <code>int.TryParse</code> avoids exceptions altogether.",
+          "code": "foreach (var text in new[] { \"12\", \"twelve\" })\n{\n    try\n    {\n        int n = int.Parse(text);\n        Console.WriteLine($\"got {n}\");\n    }\n    catch (FormatException)\n    {\n        Console.WriteLine($\"'{text}' is not a number\");\n    }\n    finally\n    {\n        Console.WriteLine(\"checked\");\n    }\n}\n\nif (int.TryParse(\"7\", out int seven))\n{\n    Console.WriteLine(seven * 2);\n}",
+          "out": "got 12\nchecked\n'twelve' is not a number\nchecked\n14"
+        },
+        {
+          "h": "Throwing your own",
+          "p": "<code>throw</code> starts an exception. Pick a standard type that fits (<code>ArgumentException</code> for a bad argument, <code>InvalidOperationException</code> when the object is in the wrong state) and give a clear message. A <code>when</code> clause lets a <code>catch</code> handle only some cases.",
+          "code": "var store = new Store();\nstore.Add(5);\ntry\n{\n    store.Take(8);\n}\ncatch (InvalidOperationException e) when (e.Message.Contains(\"only\"))\n{\n    Console.WriteLine($\"refused: {e.Message}\");\n}\ntry\n{\n    store.Add(-1);\n}\ncatch (ArgumentException e)\n{\n    Console.WriteLine(e.Message);\n}\n\nclass Store\n{\n    int nuts;\n    public void Add(int n)\n    {\n        if (n < 0) throw new ArgumentException(\"cannot add a negative number\");\n        nuts += n;\n    }\n    public void Take(int n)\n    {\n        if (n > nuts) throw new InvalidOperationException($\"only {nuts} nuts stored\");\n        nuts -= n;\n    }\n}",
+          "out": "refused: only 5 nuts stored\ncannot add a negative number"
+        },
+        {
+          "h": "using and IDisposable",
+          "p": "Objects that hold something outside .NET's memory, such as an open file or a network connection, implement <code>IDisposable</code>. A <code>using</code> declaration calls <code>Dispose</code> when the variable goes out of scope, even if an exception is thrown, so the resource is always released.",
+          "code": "try\n{\n    using var log = new Log(\"nuts.log\");\n    log.Write(\"buried 3\");\n    throw new Exception(\"owl!\");\n}\ncatch (Exception e)\n{\n    Console.WriteLine($\"caught {e.Message}\");\n}\n\nclass Log(string name) : IDisposable\n{\n    public void Write(string line) => Console.WriteLine($\"{name}: {line}\");\n    public void Dispose() => Console.WriteLine($\"{name} closed\");\n}",
+          "out": "nuts.log: buried 3\nnuts.log closed\ncaught owl!"
+        },
+        {
+          "h": "Nullable references",
+          "p": "Modern C# projects turn on <b>nullable reference types</b>: <code>string</code> means never null, and <code>string?</code> means it may be null, and the compiler warns when you use a maybe-null value without checking. <code>?.</code> reads a member only if the value is not null, giving null otherwise, and <code>??</code> supplies a fallback.",
+          "code": "#nullable enable\nstring? Lookup(string tree) => tree == \"oak\" ? \"acorn\" : null;\n\nstring? a = Lookup(\"oak\");\nstring? b = Lookup(\"pine\");\nConsole.WriteLine(a?.Length);\nConsole.WriteLine(b?.Length ?? -1);\nConsole.WriteLine(b ?? \"nothing\");\nif (a is not null)\n{\n    Console.WriteLine(a.ToUpper());\n}",
+          "out": "5\n-1\nnothing\nACORN"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "try\n{\n    Console.Write(\"a\");\n    throw new Exception(\"b\");\n}\ncatch (Exception e)\n{\n    Console.Write(e.Message);\n}\nfinally\n{\n    Console.Write(\"c\");\n}\nConsole.WriteLine(\"d\");",
+          "options": ["abcd", "acd", "abd", "ab"],
+          "answer": "abcd",
+          "why": "The catch prints the message, finally always runs, and the program then carries on.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "#nullable enable\nstring? name = null;\nConsole.WriteLine(name?.Length ?? 0);",
+          "options": ["0", "null", "An exception", "4"],
+          "answer": "0",
+          "why": "name?.Length is null because name is null, and ?? replaces it with 0.",
+          "kind": "output"
+        },
+        {
+          "q": "Why use int.TryParse instead of int.Parse for user input?",
+          "options": [
+            "It reports failure with a bool instead of throwing",
+            "It is the only one that handles negative numbers",
+            "It rounds decimals",
+            "It never accepts spaces"
+          ],
+          "answer": "It reports failure with a bool instead of throwing",
+          "why": "Bad input is expected, not exceptional, so checking a bool is simpler and cheaper."
+        }
+      ]
+    },
+    {
+      "id": "generics",
+      "title": "Generics, delegates and lambdas",
+      "summary": "Code that works for many types, and functions as values.",
+      "sections": [
+        {
+          "p": "A <b>generic</b> type or method has a type parameter, written in angle brackets, that is filled in when it is used. <code>List&lt;T&gt;</code> is one. You can write your own, and a constraint such as <code>where T : IComparable&lt;T&gt;</code> says what the type must be able to do.",
+          "code": "Console.WriteLine(Largest([3, 9, 4]));\nConsole.WriteLine(Largest([\"oak\", \"yew\", \"beech\"]));\nvar pair = new Pair<string, int>(\"hazel\", 12);\nConsole.WriteLine(pair);\n\nstatic T Largest<T>(List<T> items) where T : IComparable<T>\n{\n    T best = items[0];\n    foreach (var item in items)\n    {\n        if (item.CompareTo(best) > 0) best = item;\n    }\n    return best;\n}\n\nrecord Pair<A, B>(A First, B Second);",
+          "out": "9\nyew\nPair { First = hazel, Second = 12 }"
+        },
+        {
+          "h": "Delegates and lambdas",
+          "p": "A <b>delegate</b> is a value that holds a method. The built-in <code>Func&lt;int, int&gt;</code> takes an <code>int</code> and returns one; <code>Action&lt;string&gt;</code> takes a string and returns nothing. A <b>lambda</b> such as <code>n =&gt; n * 2</code> writes the method in place. Lambdas can use variables from around them, which is called <b>capturing</b>.",
+          "code": "Func<int, int> twice = n => n * 2;\nFunc<int, int, int> add = (a, b) => a + b;\nAction<string> shout = s => Console.WriteLine(s.ToUpper() + \"!\");\n\nConsole.WriteLine(twice(21));\nConsole.WriteLine(add(2, 3));\nshout(\"nuts\");\n\nint total = 0;\nAction<int> collect = n => total += n;\ncollect(4);\ncollect(6);\nConsole.WriteLine(total);\n\nConsole.WriteLine(ApplyTwice(twice, 5));\nstatic int ApplyTwice(Func<int, int> f, int x) => f(f(x));",
+          "out": "42\n5\nNUTS!\n10\n20"
+        },
+        {
+          "h": "Events",
+          "p": "An <code>event</code> is a list of delegates that a class calls when something happens. Other code subscribes with <code>+=</code>. This is how buttons in a user interface tell your code they were clicked. <code>?.Invoke</code> calls the event only if someone subscribed.",
+          "code": "var feeder = new Feeder();\nfeeder.Emptied += () => Console.WriteLine(\"refill the feeder\");\nfeeder.Emptied += () => Console.WriteLine(\"squirrels are sad\");\nfeeder.Eat(3);\nfeeder.Eat(2);\n\nclass Feeder\n{\n    int seeds = 5;\n    public event Action? Emptied;\n    public void Eat(int n)\n    {\n        seeds -= n;\n        Console.WriteLine($\"{seeds} seeds left\");\n        if (seeds <= 0) Emptied?.Invoke();\n    }\n}",
+          "out": "2 seeds left\n0 seeds left\nrefill the feeder\nsquirrels are sad"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "Func<int, int> inc = n => n + 1;\nFunc<int, int> sq = n => n * n;\nConsole.WriteLine(sq(inc(3)));",
+          "options": ["16", "10", "9", "7"],
+          "answer": "16",
+          "why": "inc(3) is 4, and sq(4) is 16.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "var actions = new List<Action>();\nint x = 1;\nactions.Add(() => Console.Write(x));\nx = 2;\nactions.Add(() => Console.Write(x));\nforeach (var a in actions) a();\nConsole.WriteLine();",
+          "options": ["22", "12", "11", "21"],
+          "answer": "22",
+          "why": "Lambdas capture the variable itself, not its value at the time, so both see x = 2 when they run.",
+          "kind": "output"
+        },
+        {
+          "q": "What does where T : IComparable<T> allow inside a generic method?",
+          "options": [
+            "Calling CompareTo on values of type T",
+            "Using T only with numbers",
+            "Creating new T objects with new T()",
+            "Nothing; it is only documentation"
+          ],
+          "answer": "Calling CompareTo on values of type T",
+          "why": "The constraint promises every T has that method, so the compiler lets you call it."
+        }
+      ]
+    },
+    {
+      "id": "iterators",
+      "title": "Iterators and lazy sequences",
+      "summary": "IEnumerable, yield return and deferred LINQ.",
+      "sections": [
+        {
+          "p": "<code>foreach</code> works on anything that is <code>IEnumerable&lt;T&gt;</code>. The easiest way to make one is a method with <code>yield return</code>: each time the loop asks for the next item, the method runs until the next <code>yield return</code> and then pauses there. Items are made only when needed, so a sequence can even be endless.",
+          "code": "foreach (var n in Countdown(3))\n{\n    Console.Write(n + \" \");\n}\nConsole.WriteLine();\n\nforeach (var f in Fibonacci().Take(10))\n{\n    Console.Write(f + \" \");\n}\nConsole.WriteLine();\n\nstatic IEnumerable<int> Countdown(int from)\n{\n    for (int i = from; i > 0; i--) yield return i;\n    yield return 0;\n}\n\nstatic IEnumerable<long> Fibonacci()\n{\n    long a = 0, b = 1;\n    while (true)\n    {\n        yield return a;\n        (a, b) = (b, a + b);\n    }\n}",
+          "out": "3 2 1 0 \n0 1 1 2 3 5 8 13 21 34 "
+        },
+        {
+          "h": "LINQ is lazy too",
+          "p": "Most LINQ methods (<code>Where</code>, <code>Select</code>, <code>Take</code>) do not run when you call them. They build a recipe that runs when you loop over it. So the query below reads the list as it is <i>when it is used</i>, and the printing shows the steps happen one item at a time. <code>ToList()</code> runs the recipe immediately and keeps the results.",
+          "code": "var nuts = new List<int> { 4, 9, 2 };\nvar big = nuts.Where(n =>\n{\n    Console.WriteLine($\"  checking {n}\");\n    return n > 3;\n});\nnuts.Add(12);\nConsole.WriteLine(\"before the loop\");\nforeach (var n in big) Console.WriteLine($\"big: {n}\");\n\nvar snapshot = nuts.Where(n => n > 3).ToList();\nnuts.Add(50);\nConsole.WriteLine(snapshot.Count);",
+          "out": "before the loop\n  checking 4\nbig: 4\n  checking 9\nbig: 9\n  checking 2\n  checking 12\nbig: 12\n3"
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "foreach (var x in Evens().Take(3)) Console.Write(x);\nConsole.WriteLine();\n\nstatic IEnumerable<int> Evens()\n{\n    for (int i = 0; ; i += 2) yield return i;\n}",
+          "options": ["024", "246", "02", "An endless loop"],
+          "answer": "024",
+          "why": "Take(3) stops asking after three items, so the endless method only runs that far.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "var list = new List<int> { 1, 2 };\nvar q = list.Select(n => n * 10);\nlist.Add(3);\nConsole.WriteLine(q.Count());",
+          "options": ["3", "2", "0", "30"],
+          "answer": "3",
+          "why": "The query runs when Count() is called, after 3 was added.",
+          "kind": "output"
+        },
+        {
+          "q": "What happens at yield return?",
+          "options": [
+            "The method hands back one item and pauses until the next is asked for",
+            "The method ends",
+            "All items are produced at once",
+            "The item is printed"
+          ],
+          "answer": "The method hands back one item and pauses until the next is asked for",
+          "why": "That is what makes iterators lazy, and why endless sequences work with Take."
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Project: a nut inventory",
+      "summary": "Records, LINQ, pattern matching and formatting together.",
+      "sections": [
+        {
+          "p": "This program keeps a small inventory of stores, each with nuts of different kinds and ages. It uses a <code>record</code> for the data, LINQ to group and total, a <code>switch</code> expression with patterns to label freshness, and format specifiers such as <code>{name,-8}</code> (left-aligned in 8 columns) and <code>{n,4}</code> (right-aligned in 4) to print a tidy table.",
+          "code": "List<Cache> caches =\n[\n    new(\"oak\", \"acorn\", 14, 3),\n    new(\"oak\", \"acorn\", 6, 40),\n    new(\"hazel\", \"hazelnut\", 9, 10),\n    new(\"beech\", \"beechnut\", 20, 2),\n    new(\"hazel\", \"hazelnut\", 4, 75),\n];\n\nConsole.WriteLine($\"{\"tree\",-8}{\"nuts\",5}  freshest\");\nforeach (var g in caches.GroupBy(c => c.Tree).OrderByDescending(g => g.Sum(c => c.Count)))\n{\n    int total = g.Sum(c => c.Count);\n    int youngest = g.Min(c => c.AgeDays);\n    Console.WriteLine($\"{g.Key,-8}{total,5}  {Freshness(youngest)}\");\n}\nConsole.WriteLine($\"{\"all\",-8}{caches.Sum(c => c.Count),5}\");\n\nvar old = caches.Where(c => c.AgeDays > 30).Select(c => $\"{c.Kind} at the {c.Tree}\");\nConsole.WriteLine(\"eat soon: \" + string.Join(\", \", old));\n\nstatic string Freshness(int days) => days switch\n{\n    < 7 => \"fresh\",\n    < 30 => \"fine\",\n    _ => \"old\",\n};\n\nrecord Cache(string Tree, string Kind, int Count, int AgeDays);",
+          "out": "tree     nuts  freshest\noak        20  fresh\nbeech      20  fresh\nhazel      13  fine\nall        53\neat soon: acorn at the oak, hazelnut at the hazel"
+        },
+        {
+          "h": "Ideas to try",
+          "p": "Add a method that moves nuts from one store to another and throws if there are not enough, read the caches from a CSV file with <code>File.ReadLines</code> and <code>Split(',')</code>, or make <code>Freshness</code> depend on the kind of nut as well, using a tuple pattern such as <code>(\"acorn\", &lt; 60)</code>."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does this print?",
+          "code": "Console.WriteLine($\"[{\"ab\",-4}][{7,3}]\");",
+          "options": ["[ab  ][  7]", "[  ab][7  ]", "[ab][7]", "[ab  ][7  ]"],
+          "answer": "[ab  ][  7]",
+          "why": "A negative width left-aligns, a positive one right-aligns.",
+          "kind": "output"
+        },
+        {
+          "q": "What does this print?",
+          "code": "string Size(int n) => n switch\n{\n    0 => \"none\",\n    < 10 => \"few\",\n    _ => \"many\",\n};\nConsole.WriteLine($\"{Size(0)} {Size(4)} {Size(40)}\");",
+          "options": ["none few many", "none none many", "few few many", "none few few"],
+          "answer": "none few many",
+          "why": "The arms are tried from the top; _ catches everything left.",
+          "kind": "output"
+        },
+        {
+          "q": "What does GroupBy(c => c.Tree) give you?",
+          "options": [
+            "One group per tree, each with a Key and the caches for that tree",
+            "The caches sorted by tree",
+            "Only the first cache of each tree",
+            "A dictionary of counts"
+          ],
+          "answer": "One group per tree, each with a Key and the caches for that tree",
+          "why": "Each group can be totalled or searched with LINQ, as the program does with Sum and Min."
+        }
+      ]
+    }
+  ]
+}
