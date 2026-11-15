@@ -71,7 +71,7 @@ def main(argv=None) -> int:
     if not (args.data / "math" / "catalog.json").is_file():
         print(f"{args.data / 'math' / 'catalog.json'}: missing")
         return 1
-    command = f"python3 data/tools/gen_math.py --out {args.out.name}"
+    command = "python3 data/tools/gen_math.py --out math-learner/data"
     return lib.write_outputs(build(args.data, command), args.out, args.check, command)
 
 
