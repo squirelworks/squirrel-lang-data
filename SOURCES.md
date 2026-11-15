@@ -32,6 +32,7 @@ only imported when its license fits that.
 | Pascal Costanza / ExaScience, Slick (s-expression surface for Go) | Shape of the Hello World and the listed deviations taught in `programming/slick/` (course text written for this project; not a copy of the Slick sources) | Referenced for the published language shape; course text is original under this repo's license | https://github.com/ExaScience/slick |
 | David Morgan-Mar, Piet | Colour command table and language shape taught in `programming/piet/` (course text written for this project; not a copy of the Piet specification) | Referenced for the published language shape; course text is original under this repo's license | https://www.dangermouse.net/esoteric/piet.html |
 | Edwin Brady and Chris Morris, Whitespace | Instruction groups and language shape taught in `programming/whitespace/` (course text written for this project; not a copy of the Whitespace specification) | Referenced for the published language shape; course text is original under this repo's license | https://web.archive.org/web/20150618184706/http://compsoc.dur.ac.uk/whitespace/tutorial.html |
+| Urban Müller, brainfuck (1993) | Eight-command tape machine taught in `programming/brainfood/` under the Desk's kid-friendly name brainFOOD (course text written for this project; not a copy of any brainfuck implementation) | Referenced for the published language shape; course text is original under this repo's license | https://esolangs.org/wiki/Brainfuck |
 
 Content written for this project is marked as original in its file and isn't
 listed here.
