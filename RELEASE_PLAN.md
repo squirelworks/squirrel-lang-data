@@ -62,8 +62,10 @@ Gujarati/Kannada/Malayalam/Telugu columns (#117), `gen_features.py`
 Amharic/Cherokee/Taiwanese columns (#123),
 Aramaic/Manipuri/Tamazight columns (#125), Inuktitut column (#127), and
 mechanical reviews for Gujarati/Kannada/Malayalam/Telugu/Burmese/Khmer
-(#128). Tip of `main` for this set is `0115f4a`. Syriac Estrangela
-stroke review (#129) and Tifinagh ⴰ redraw (#131) are merged.
+(#128). Syriac Estrangela stroke review (#129) and Tifinagh ⴰ redraw
+(#131) are merged. Programming courses (#140–#178), Math/Electronics
+trees (#147–#150), and the Inuktitut `?` `@question` cleanup sit on
+`main` too; tip SHA is refreshed when the notes finalize PR lands.
 
 It's due when all of these hold and the owner says "release":
 
