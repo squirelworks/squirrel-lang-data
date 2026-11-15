@@ -1,0 +1,222 @@
+{
+  "schema": "programming-course@1",
+  "id": "slick",
+  "name": "Slick",
+  "title": "Slick, Go in s-expressions",
+  "intro": "Slick, in the form published by Pascal Costanza, is a Lisp-shaped way of writing Go. The same language is underneath: types, packages, and the split between statements and expressions. What changes is the surface, which is s-expressions, plus a few Lisp features (macros, quotation, reader tables). It is an early project and its authors do not recommend it for production, because details may still change. The Hello World below is the one in the project README. This course does not run programs; it teaches that published shape and the differences the project itself lists.",
+  "comment": ";",
+  "keywords": ["package", "import", "func", "fmt"],
+  "lessons": [
+    {
+      "id": "hello",
+      "title": "Hello, in brackets",
+      "summary": "The published Hello World, and what an s-expression is.",
+      "sections": [
+        {
+          "p": "An s-expression is a list in brackets. The first item is what you are doing; the rest are its parts. Slick writes a Go program that way. This is the Hello World from the project README. <code>fmt:Println</code> is the qualified call that in Go would be <code>fmt.Println</code>.",
+          "code": "(package main)\n\n(import \"fmt\")\n\n(func main () ()\n  (fmt:Println \"Hello, World!\"))"
+        },
+        {
+          "h": "The pieces",
+          "p": "<code>(package main)</code> is Go's <code>package main</code>. <code>(import \"fmt\")</code> imports the formatting package. <code>(func main () () ...)</code> defines <code>main</code> with an empty parameter list and an empty result list, then a body. The body is one call."
+        },
+        {
+          "h": "What it is not",
+          "p": "Other experiments have used the name Slick, including a functional language aimed at JavaScript and a small Haskell-like tutorial language. They are not this language and they do not share this syntax. When this course says Slick, it means the s-expression notation for Go."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What is Slick, in this course?",
+          "options": [
+            "An s-expression way of writing Go",
+            "A dialect of Python",
+            "A picture language, like Piet",
+            "A replacement for the Go standard library"
+          ],
+          "answer": "An s-expression way of writing Go",
+          "why": "The published language maps Go into s-expressions. The Go language is still what runs underneath."
+        },
+        {
+          "q": "How is fmt.Println written in the Hello World?",
+          "options": [
+            "(fmt:Println \"Hello, World!\")",
+            "fmt.Println(\"Hello, World!\")",
+            "(fmt.Println \"Hello, World!\")",
+            "print Hello, World!"
+          ],
+          "answer": "(fmt:Println \"Hello, World!\")",
+          "why": "A qualified name uses a colon, and the call is a list whose first item is that name."
+        },
+        {
+          "q": "What does (package main) correspond to?",
+          "options": ["package main", "import main", "func main", "package fmt"],
+          "answer": "package main",
+          "why": "The package clause is one list: the word package, then the name."
+        },
+        {
+          "q": "Why does the course not run these programs?",
+          "options": [
+            "The published language is an early release and may still change",
+            "Slick cannot print",
+            "Brackets are not a real syntax",
+            "Go cannot be compiled"
+          ],
+          "answer": "The published language is an early release and may still change",
+          "why": "The project itself says it is work in progress and not for production. Teaching the published shape is safer than pretending a moving compiler is stable."
+        },
+        {
+          "q": "Which of these is a different language that happens to share the name?",
+          "options": [
+            "A functional language transpiled toward JavaScript",
+            "The Hello World in the README",
+            "(import \"fmt\")",
+            "(func main () ())"
+          ],
+          "answer": "A functional language transpiled toward JavaScript",
+          "why": "That project is also called Slick, and its syntax (bindings with a colon, functions with ƒ) is not this one."
+        }
+      ]
+    },
+    {
+      "id": "shape",
+      "title": "Go, still Go",
+      "summary": "What the mapping keeps.",
+      "sections": [
+        {
+          "p": "Apart from the extras below, the project describes Slick as a faithful mapping of Go into s-expressions, with a few small intentional exceptions. Like Go, it is statically typed, and it still distinguishes statements from expressions. A name that is exported from a package is still the Go name; only the way you write the call changes."
+        },
+        {
+          "h": "Calls",
+          "p": "In Go you write <code>fmt.Println(\"Hello, World!\")</code>. In Slick the function and its arguments are items in one list, and the dot becomes a colon: <code>(fmt:Println \"Hello, World!\")</code>. Strings stay in double quotes, as in Go."
+        },
+        {
+          "h": "Extras, named but not detailed here",
+          "p": "The project also adds Lisp-style macros, Scheme-style quotation and quasiquotation, Common-Lisp-style reader tables, and spliced blocks and declarations. Those are real parts of the language, and they are exactly where an early implementation is most likely to move. This course does not invent examples of them."
+        }
+      ],
+      "practice": [
+        {
+          "q": "What does the colon in fmt:Println stand in for?",
+          "options": [
+            "The dot in fmt.Println",
+            "A type declaration",
+            "A comment",
+            "A string quote"
+          ],
+          "answer": "The dot in fmt.Println",
+          "why": "Qualified names use a colon in the s-expression form."
+        },
+        {
+          "q": "Which Go habit does Slick keep, according to the project?",
+          "options": [
+            "Static types, and a split between statements and expressions",
+            "Dynamic types, like Python",
+            "Only expressions, like a pure Lisp",
+            "No packages"
+          ],
+          "answer": "Static types, and a split between statements and expressions",
+          "why": "The mapping is of Go, not a rewrite of Go's type system."
+        },
+        {
+          "q": "Which feature does the project add on top of the Go mapping?",
+          "options": [
+            "Lisp-style macros",
+            "A built-in picture type",
+            "Python indentation",
+            "Java classes"
+          ],
+          "answer": "Lisp-style macros",
+          "why": "Macros, quotation and reader tables are the listed extras. They are not Go syntax."
+        },
+        {
+          "q": "How is a string written?",
+          "options": [
+            "In double quotes, as in Go",
+            "In single quotes only",
+            "Between brackets",
+            "After a hash"
+          ],
+          "answer": "In double quotes, as in Go",
+          "why": "The Hello World uses \"Hello, World!\", the same quote style as Go."
+        },
+        {
+          "q": "What is (func main () () ...) declaring?",
+          "options": [
+            "main, with no parameters and no results",
+            "A function called func",
+            "An import of main",
+            "A test with two arguments"
+          ],
+          "answer": "main, with no parameters and no results",
+          "why": "The two empty lists are the parameter list and the result list. The body follows."
+        }
+      ]
+    },
+    {
+      "id": "deviations",
+      "title": "Where it is not quite Go",
+      "summary": "The three differences the project lists.",
+      "sections": [
+        {
+          "p": "The project lists three deviations and says they are the only ones. Everything else is meant to follow Go."
+        },
+        {
+          "h": "Comments and numbers",
+          "p": "Block comments nest. A comment opened inside a comment does not accidentally close the outer one. Numbers must start with a digit, so a floating-point literal cannot start with a dot: write <code>0.5</code>, not a leading dot."
+        },
+        {
+          "h": "Names",
+          "p": "An identifier cannot start with <code>_</code> if it is more than one character. A single underscore can still be the blank identifier, as in Go. A longer name such as <code>_hidden</code> is not allowed."
+        }
+      ],
+      "practice": [
+        {
+          "q": "How many deviations from Go does the project say there are?",
+          "options": [
+            "Three, and it lists them",
+            "None",
+            "Dozens, one per keyword",
+            "It does not say"
+          ],
+          "answer": "Three, and it lists them",
+          "why": "Nested block comments, numbers that must start with a digit, and the identifier rule. The project calls these the only ones."
+        },
+        {
+          "q": "Which floating-point literal is allowed?",
+          "options": ["0.5", ".5", "half", ". 5"],
+          "answer": "0.5",
+          "why": "A number has to start with a digit. A leading dot is rejected."
+        },
+        {
+          "q": "What is special about block comments?",
+          "options": [
+            "They nest",
+            "They are not allowed",
+            "They only last one line",
+            "They must say PLEASE"
+          ],
+          "answer": "They nest",
+          "why": "An inner block comment does not close the outer one. Go's block comments do not nest."
+        },
+        {
+          "q": "Which name is disallowed?",
+          "options": ["_hidden", "_", "main", "Println"],
+          "answer": "_hidden",
+          "why": "A name may not start with _ when it is longer than one character. The single underscore is still the blank identifier."
+        },
+        {
+          "q": "Who is the published language aimed at, in the project's own words?",
+          "options": [
+            "Adventurous users; it is not for production yet",
+            "Beginners as their first language",
+            "Only people writing Windows forms",
+            "Replacing Rust"
+          ],
+          "answer": "Adventurous users; it is not for production yet",
+          "why": "The README calls it an early release that may still change, and says not to use it in production unless you are adventurous."
+        }
+      ]
+    }
+  ]
+}

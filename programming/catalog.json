@@ -1,0 +1,278 @@
+{
+  "schema": "programming-catalog@1",
+  "courses": [
+    {
+      "id": "bash",
+      "name": "Bash",
+      "era": "1989 · the Unix shell",
+      "blurb": "The language of the terminal. Variables, tests, loops and pipelines that glue other programs together.",
+      "group": "modern",
+      "tags": ["Scripting"]
+    },
+    {
+      "id": "brainfood",
+      "name": "brainFOOD",
+      "era": "Esoteric · 8 commands",
+      "blurb": "A row of boxes, a pointer and eight symbols. Tiny, strange and surprisingly powerful.",
+      "group": "joke"
+    },
+    {
+      "id": "c",
+      "name": "C",
+      "era": "1972 · systems",
+      "blurb": "The small language under operating systems and most other languages. Types, loops and functions.",
+      "group": "modern",
+      "tags": ["Compiled programs"]
+    },
+    {
+      "id": "csharp",
+      "name": "C#",
+      "era": "2000 · .NET, Windows and Unity",
+      "blurb": "Microsoft's main language: properties, records, pattern matching, LINQ queries and async code.",
+      "group": "modern",
+      "tags": ["Compiled programs"]
+    },
+    {
+      "id": "cpp",
+      "name": "C++",
+      "era": "1985 · systems and games",
+      "blurb": "C with classes grown up: references, the standard library, RAII and modern C++20.",
+      "group": "modern",
+      "tags": ["Compiled programs"]
+    },
+    {
+      "id": "chisel",
+      "name": "Chisel",
+      "era": "2012 · hardware",
+      "blurb": "A hardware construction language in Scala. The program builds a circuit; it does not step through one.",
+      "group": "modern",
+      "tags": ["Hardware"]
+    },
+    {
+      "id": "basic",
+      "name": "Classic BASIC",
+      "era": "1964 · home computers",
+      "blurb": "Numbered lines, PRINT and GOTO: the BASIC that home computers of the late 1970s and 1980s switched on into.",
+      "group": "older",
+      "tags": ["Scripting"]
+    },
+    {
+      "id": "cobol",
+      "name": "COBOL",
+      "era": "1959 · business data",
+      "blurb": "Records, money and plain-English statements. Still runs payments and payroll at banks, insurers and government agencies.",
+      "group": "older",
+      "tags": ["Compiled programs"]
+    },
+    {
+      "id": "moderndelphi",
+      "name": "Delphi",
+      "era": "Today · Embarcadero",
+      "blurb": "Current Object Pascal: Unicode strings, generics, records with methods and anonymous methods, for Windows, macOS, Linux and phones.",
+      "group": "modern",
+      "tags": ["Compiled programs"]
+    },
+    {
+      "id": "delphi",
+      "name": "Delphi 5/6/7",
+      "era": "1999–2002 · Windows",
+      "blurb": "Object Pascal with drag-and-drop forms. Fast to build real Windows programs.",
+      "group": "older",
+      "tags": ["Compiled programs"]
+    },
+    {
+      "id": "fortran",
+      "name": "Fortran",
+      "era": "1957 · science and engineering",
+      "blurb": "The first high-level language, now modern and array-friendly. Still behind weather models, physics codes and fast maths libraries.",
+      "group": "older",
+      "tags": ["Compiled programs"]
+    },
+    {
+      "id": "go",
+      "name": "Go",
+      "era": "2009 · servers",
+      "blurb": "A small language for services and tools. One looping keyword, and slices instead of a pile of collection types.",
+      "group": "modern",
+      "tags": ["Compiled programs"]
+    },
+    {
+      "id": "html",
+      "name": "HTML and CSS",
+      "era": "1991 · the web",
+      "blurb": "The two languages every web page is made of: HTML for what each part is, CSS for how it looks. Each example has a live preview.",
+      "group": "modern",
+      "tags": ["Web"]
+    },
+    {
+      "id": "intercal",
+      "name": "INTERCAL",
+      "era": "Esoteric · 1972",
+      "blurb": "The first joke language: politeness is mandatory and numbers come out in Roman numerals.",
+      "group": "joke"
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "era": "1995 · business and Android",
+      "blurb": "Classes, strong types and a huge standard library. Runs bank systems, Android apps and countless university courses.",
+      "group": "modern",
+      "tags": ["Compiled programs"]
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "era": "1995 · the web",
+      "blurb": "The language every web browser runs, and with Node.js, servers and tools too. Modern syntax, closures, classes and async.",
+      "group": "modern",
+      "tags": ["Scripting", "Web"]
+    },
+    {
+      "id": "kotlin",
+      "name": "Kotlin",
+      "era": "2016 · Android and the JVM",
+      "blurb": "Google's preferred language for Android apps. Null safety, data classes, lambdas and far less typing than Java.",
+      "group": "modern",
+      "tags": ["Compiled programs"]
+    },
+    {
+      "id": "lolcode",
+      "name": "LOLCODE",
+      "era": "Esoteric · 2007",
+      "blurb": "A real, working language written in lolcat speak. HAI to KTHXBYE.",
+      "group": "joke"
+    },
+    {
+      "id": "malbolge",
+      "name": "Malbolge",
+      "era": "Esoteric · 1998",
+      "blurb": "Built to be nearly impossible to program, and it rewrites itself as it runs.",
+      "group": "joke"
+    },
+    {
+      "id": "numerical",
+      "name": "Numerical methods",
+      "era": "Track · Python, C and Fortran",
+      "blurb": "How computers find roots, areas and solutions when there is no formula. Each method explained, then built and tested in several languages.",
+      "group": "tracks"
+    },
+    {
+      "id": "perl",
+      "name": "Perl",
+      "era": "1987 · text and the early web",
+      "blurb": "Sigils, regular expressions and hashes. The glue language of log files, CGI scripts and system tools.",
+      "group": "modern",
+      "tags": ["Scripting"]
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "era": "1994 · the web",
+      "blurb": "The server-side language behind a large share of websites. Echo a page, handle forms and print safe HTML.",
+      "group": "modern",
+      "tags": ["Scripting", "Web"]
+    },
+    {
+      "id": "piet",
+      "name": "Piet",
+      "era": "Esoteric · 2001",
+      "blurb": "Programs are pictures. Colour changes between blocks are the instructions.",
+      "group": "joke"
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "era": "1991 · general purpose",
+      "blurb": "A friendly, readable language used everywhere from web servers to science. The full beginner course.",
+      "group": "modern",
+      "tags": ["Scripting"]
+    },
+    {
+      "id": "quickbasic",
+      "name": "QuickBASIC",
+      "era": "1985 · DOS",
+      "blurb": "Microsoft's structured BASIC with a full-screen editor. Where many people wrote their first game.",
+      "group": "older",
+      "tags": ["Compiled programs"]
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "era": "2015 · systems",
+      "blurb": "A modern systems language. The compiler keeps track of who owns each value.",
+      "group": "modern",
+      "tags": ["Compiled programs"]
+    },
+    {
+      "id": "slick",
+      "name": "Slick",
+      "era": "Experimental · Go in brackets",
+      "blurb": "Pascal Costanza's s-expression notation for Go. Same language underneath, Lisp-shaped on the page.",
+      "group": "modern",
+      "tags": ["Compiled programs"]
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "era": "1974 · databases",
+      "blurb": "Ask questions of a database: SELECT, filtering, grouping, joins and changes, on a small sample database.",
+      "group": "modern",
+      "tags": ["Data", "Web"]
+    },
+    {
+      "id": "swift",
+      "name": "Swift",
+      "era": "2014 · iPhone and Mac apps",
+      "blurb": "Apple's language for apps on every Apple device. Optionals, structs, enums with values, and closures.",
+      "group": "modern",
+      "tags": ["Compiled programs"]
+    },
+    {
+      "id": "turbopascal",
+      "name": "Turbo Pascal",
+      "era": "1983 · DOS",
+      "blurb": "Borland's fast, friendly Pascal with the blue IDE. Where structured programming was learned for a decade.",
+      "group": "older",
+      "tags": ["Compiled programs"]
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "era": "2012 · large web apps",
+      "blurb": "JavaScript with types checked before it runs. Interfaces, unions, generics and typed async code.",
+      "group": "modern",
+      "tags": ["Scripting", "Web"]
+    },
+    {
+      "id": "vbnet",
+      "name": "Visual Basic .NET",
+      "era": "2002 · .NET and Windows",
+      "blurb": "The BASIC of the .NET platform: English-like blocks, Option Strict, classes, LINQ queries and the whole .NET library.",
+      "group": "modern",
+      "tags": ["Compiled programs"]
+    },
+    {
+      "id": "whitespace",
+      "name": "Whitespace",
+      "era": "Esoteric · 2003",
+      "blurb": "Only spaces, tabs and newlines mean anything. Everything you can see is a comment.",
+      "group": "joke"
+    },
+    {
+      "id": "win16",
+      "name": "Win16",
+      "era": "1990–1995 · Windows 3.x",
+      "blurb": "C and the 16-bit Windows API: WinMain, the message loop and window procedures.",
+      "group": "older",
+      "tags": ["Compiled programs"]
+    },
+    {
+      "id": "z80",
+      "name": "Z80 Assembly",
+      "era": "1976 · 8-bit CPUs",
+      "blurb": "Talk to the processor directly: registers, flags, loops and the stack.",
+      "group": "older",
+      "tags": ["Assembly"]
+    }
+  ]
+}

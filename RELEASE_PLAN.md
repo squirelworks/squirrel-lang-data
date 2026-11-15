@@ -120,7 +120,10 @@ v0.2.0 (MINOR):
 
 - [ ] Programming courses and keyword maps (`programming/`), so the
       Programming Learner and squirrelator's code generators share them
-      (squirelworks/LanguageStudentDesk#195, #196).
+      (squirelworks/LanguageStudentDesk#195, #196). Schemas
+      (`programming-course@1`, `programming-catalog@1`), `programming/catalog.json`
+      and a pilot `programming/slick/` course start the move; remaining courses
+      follow a few per PR.
 - [ ] Character variants (`variants/`) from Unihan, with traditional and
       simplified Chinese linked both ways (squirelworks/LanguageStudentDesk#200).
 - [ ] The first regional variety end to end: Cantonese (Jyutping)
