@@ -140,6 +140,28 @@ label), then one in squirrelator.
 their `data/` pin only to a tagged release, never to an untagged commit, and
 each move is its own PR.
 
+## Dictionary packs: a separate release track
+
+Dictionary packs (#181) release on their own, independent of the data tags
+above and of the SquirrelGo app releases. Apps download or update packs
+without an app update; the Japanese Dictionary also bundles one.
+
+- **Tags:** `dictionaries-vMAJOR.MINOR.PATCH`. MAJOR: a `dictpack@N` change
+  apps must be updated for. MINOR: new packs, languages or sources. PATCH:
+  source refreshes (a new JMdict) and fixes.
+- **Assets:** `dictionaries.json` (the manifest: each pack's id, definition
+  language, tier, format, version, sizes, SHA-256 and sources), one
+  `dict-<id>.sqlite.gz` per pack, the starter packs and `SHA256SUMS.txt`.
+- **Made by** a hand-started `dictionary-packs.yml` workflow (#186) that
+  fetches the sources pinned in `tools/dictionaries/sources.json`, builds and
+  checks the packs, and makes a **draft**. The owner publishes. Never marked
+  latest, so `releases/latest` stays the data release. Tags are never moved
+  or reused, releases never deleted.
+- **Notes:** `release-notes/dictionaries-v<version>.md`, naming source
+  versions and pack sizes, in its own PR before the run.
+- Data releases don't attach dictionary packs, and a pack release doesn't
+  need a data tag; it records the `main` commit it was built from.
+
 ## How a release is made
 
 1. When the checklist above is done, a PR adds `release-notes/<version>.md`
