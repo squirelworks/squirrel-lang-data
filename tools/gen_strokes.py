@@ -12,8 +12,9 @@ the app's stroke player reads:
     kanji   window.KANJI_STROKES = {char: [[path, ...], [[x, y], ...]]}
     kana    window.KANA_STROKES, the same, merged into KANJI_STROKES
 
-A set with no TARGETS entry is a SquirrelGo Alphabets script. Where an app also
-commits a copy of its www/ under android/, both are written.
+A set with no TARGETS entry is a SquirrelGo Alphabets script. Archived WebView
+shells are not written: Kana, Bopomofo, Alphabets, and Kanji no longer have an
+android/ copy.
 """
 import argparse
 import json
@@ -29,7 +30,7 @@ TARGETS = {
     "hiragana": ("keyed", [f"{C}/squirrelgo-kana/www/data/strokes/hiragana.js"]),
     "katakana": ("keyed", [f"{C}/squirrelgo-kana/www/data/strokes/katakana.js"]),
     "kana": ("kana", [f"{C}/squirrelgo-kana/www/data/kana-strokes.js"]),
-    "kanji": ("kanji", [f"{C}/squirrelgo-kanji/www/data/strokes.js", f"{C}/squirrelgo-kanji/{ANDROID}/data/strokes.js"]),
+    "kanji": ("kanji", [f"{C}/squirrelgo-kanji/www/data/strokes.js"]),
     "klingon": ("plain", [f"{C}/squirrelgo-klingon/www/data/strokes.js"]),
     "zhuyin": ("keyed", [f"{C}/squirrelgo-bopomofo/www/data/strokes/zhuyin.js"]),
 }
