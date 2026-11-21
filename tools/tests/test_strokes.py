@@ -104,10 +104,11 @@ class Strokes(unittest.TestCase):
         c = "squirrelgo-characters"
         greek = apps / c / "squirrelgo-alphabets/www/data/strokes/greek.js"
         kanji = apps / c / "squirrelgo-kanji/www/data/strokes.js"
-        both = [apps / c / f"squirrelgo-bopomofo/{d}/data/strokes/zhuyin.js" for d in ("www", gen_strokes.ANDROID)]
-        self.assertTrue(all(p.is_file() for p in both))
+        zhuyin = apps / c / "squirrelgo-bopomofo/www/data/strokes/zhuyin.js"
+        self.assertTrue(zhuyin.is_file())
+        self.assertFalse((apps / c / f"squirrelgo-bopomofo/{gen_strokes.ANDROID}/data/strokes/zhuyin.js").exists())
         self.assertIn("// Drawn over Noto Sans.", greek.read_text(encoding="utf-8"))
-        js = ("global.window = global;" + "".join(f"eval(require('fs').readFileSync({json.dumps(str(f))}, 'utf8'));" for f in (greek, kanji, both[1]))
+        js = ("global.window = global;" + "".join(f"eval(require('fs').readFileSync({json.dumps(str(f))}, 'utf8'));" for f in (greek, kanji, zhuyin))
               + "process.stdout.write(JSON.stringify([SG_STROKES, KANJI_STROKES]))")
         sg, kj = json.loads(subprocess.run(["node", "-e", js], capture_output=True, text=True, check=True).stdout)
         self.assertEqual(sg["greek"]["Γ"], GREEK[1]["strokes"])

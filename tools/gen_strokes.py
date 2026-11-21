@@ -31,8 +31,7 @@ TARGETS = {
     "kana": ("kana", [f"{C}/squirrelgo-kana/www/data/kana-strokes.js"]),
     "kanji": ("kanji", [f"{C}/squirrelgo-kanji/www/data/strokes.js", f"{C}/squirrelgo-kanji/{ANDROID}/data/strokes.js"]),
     "klingon": ("plain", [f"{C}/squirrelgo-klingon/www/data/strokes.js"]),
-    "zhuyin": ("keyed", [f"{C}/squirrelgo-bopomofo/www/data/strokes/zhuyin.js",
-                         f"{C}/squirrelgo-bopomofo/{ANDROID}/data/strokes/zhuyin.js"]),
+    "zhuyin": ("keyed", [f"{C}/squirrelgo-bopomofo/www/data/strokes/zhuyin.js"]),
 }
 ALL = None
 
