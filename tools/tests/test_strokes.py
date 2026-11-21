@@ -107,6 +107,7 @@ class Strokes(unittest.TestCase):
         zhuyin = apps / c / "squirrelgo-bopomofo/www/data/strokes/zhuyin.js"
         self.assertTrue(zhuyin.is_file())
         self.assertFalse((apps / c / f"squirrelgo-bopomofo/{gen_strokes.ANDROID}/data/strokes/zhuyin.js").exists())
+        self.assertFalse((apps / c / f"squirrelgo-kanji/{gen_strokes.ANDROID}/data/strokes.js").exists())
         self.assertIn("// Drawn over Noto Sans.", greek.read_text(encoding="utf-8"))
         js = ("global.window = global;" + "".join(f"eval(require('fs').readFileSync({json.dumps(str(f))}, 'utf8'));" for f in (greek, kanji, zhuyin))
               + "process.stdout.write(JSON.stringify([SG_STROKES, KANJI_STROKES]))")
