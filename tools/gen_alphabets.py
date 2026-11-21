@@ -6,8 +6,7 @@
 
 Writes a classic script that pushes each course onto window.SG_SCRIPTS:
 squirrelgo-characters/squirrelgo-alphabets/www/data/<id>.js under --apps, or
-the file TARGETS names (Kana's two scripts share kana.js; Bopomofo also commits
-an Android copy). alphabets/klingon.json (klingon@1) becomes SquirrelGo
+the file TARGETS names (Kana's two scripts share kana.js). alphabets/klingon.json (klingon@1) becomes SquirrelGo
 Klingon's www/data/klingon.js, which sets window.SG_KLINGON. Each character card becomes the array the app reads,
 [char, roman, hint, example, exampleRoman, meaning, speak, ipa, exampleLang,
 exampleIpa], cut after the last field the card gives. The app's index.html
@@ -28,8 +27,7 @@ OUT = C / "squirrelgo-alphabets" / "www" / "data"
 TARGETS = {
     "hiragana": [C / "squirrelgo-kana/www/data/kana.js"],
     "katakana": [C / "squirrelgo-kana/www/data/kana.js"],
-    "zhuyin": [C / "squirrelgo-bopomofo/www/data/bopomofo.js",
-               C / "squirrelgo-bopomofo/android/app/src/main/assets/www/data/bopomofo.js"],
+    "zhuyin": [C / "squirrelgo-bopomofo/www/data/bopomofo.js"],
 }
 FIELDS = ["char", "roman", "hint", "example", "exampleRoman", "meaning", "speak", "ipa", "exampleLang", "exampleIpa"]
 
